@@ -4,7 +4,8 @@ title: XIO Command Codes DOS Handler
 # XIO Command Codes DOS Handler (D:)  
   
   
-|| code  || ATARIDos 2.5       || MyDOS              || BeweDOS            || TurboDOS           || XDOS               || BiboDos            || SpartaDOS 2.3/3.2, Real.DOS[3](../3/README.md)  || SpartaDOS X[4](../4/README.md)     || SuperDOS  
+|| code  || ATARIDos 2.5       || MyDOS              || BeweDOS            || TurboDOS           || XDOS               || BiboDos            || SpartaDOS 2.3/3.2, Real.DOS[^3] || SpartaDOS X[^4]( || SuperDOS  
+|-|-|-|-|-|-|-|-|-|-|
 |  3     | OPEN                | OPEN                | OPEN                | OPEN                | OPEN                | OPEN                | OPEN                | OPEN                | OPEN  
 |  5     | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD  
 |  7     | GET CHARACTERS      | GET CHARACTERS      | GET CHARACTERS      | GET CHARACTERS      | GET CHARACTERS      | GET CHARACTERS      | GET CHARACTERS      | GET CHARACTERS      | GET CHARACTERS  
@@ -17,8 +18,8 @@ title: XIO Command Codes DOS Handler
 | 34     |                     | CREATE DIRECTORY    |                     | CLEAR DISK          | GET DENSITY         |                     | LOCK DISK           |                     | RESTORE  
 | 35     | LOCK FILE           | LOCK FILE           | LOCK FILE           | LOCK FILE           | LOCK FILE           | LOCK FILE           | LOCK FILE           | LOCK FILE           | LOCK FILE  
 | 36     | UNLOCK FILE         | UNLOCK FILE         | UNLOCK FILE         | UNLOCK FILE         | UNLOCK FILE         | UNLOCK FILE         | UNLOCK FILE         | UNLOCK FILE         | UNLOCK FILE  
-| 37     | POINT[1](../1/README.md)            | POINT[1](../1/README.md)            | POINT[2](../2/README.md)            | POINT               | POINT[1](../1/README.md)            | POINT               | SEEK                | SEEK                | POINT  
-| 38     | NOTE[1](../1/README.md)             | NOTE[1](../1/README.md)             | NOTE[2](../2/README.md)             | NOTE                | NOTE[1](../1/README.md)             | NOTE                | TELL                | TELL                | NOTE  
+| 37     | POINT[^1]            | POINT[^1]            | POINT[^2]            | POINT               | POINT[^1]            | POINT               | SEEK                | SEEK                | POINT  
+| 38     | NOTE[^1]             | NOTE[^1]             | NOTE[^2]            | NOTE                | NOTE[^1]             | NOTE                | TELL                | TELL                | NOTE  
 | 39     |                     | LOAD BINARY FILE&RUN| GET FILE LENGTH     |                     | EXEC COMMAND        |                     | GET FILE LENGTH     | GET FILE LENGTH     |  
 | 40     |                     | LOAD BINARY FILE&RUN| (0)LOAD (128)L&RUN  |                     | LOAD BINARY FILE    |                     |                     | LOAD BINARY FILE    |  
 | 41     |                     | CHANGE DIRECTORY    |                     |                     |                     |                     | SAVE BINARY FILE    |                     |  
@@ -55,14 +56,14 @@ We need an update on this list for
 - other DOS Versions you use  
   
 ### Credits  
-- [Stefan Dorndorf](http://www.abbuc.de/~bernd/friends/stefan-dietrich-dorndorf.html)  
+- Stefan Dorndorf
 - Mathy van Nisselroy  
 - Freddy Offenga  
 - Ron Hamilton for finding the Error in Command "PUT RECORD"  
 - Konrad M. Kokoszkiewicz  
   
   
-[1](../1/README.md) Note und Point - der absolute Sector und das Byte innerhalb des Sectors müssen angegeben werden/ werden zurück gegeben.  
-[2](../2/README.md) Note und Point - das Byteoffset innerhalb der geöffneten Datei müssen angegeben werden/ werden zurück gegeben.  
-[3](../3/README.md) Real.DOS is based on SpartaDOS 3.3  
-[4](../4/README.md) See Atariki [Lista funkcji specjalnych CIO według urządzeń](http://atariki.krap.pl/index.php/Lista_funkcji_specjalnych_CIO_według_urządzeń)  
+[1] Note und Point - der absolute Sector und das Byte innerhalb des Sectors müssen angegeben werden/ werden zurück gegeben.  
+[2] Note und Point - das Byteoffset innerhalb der geöffneten Datei müssen angegeben werden/ werden zurück gegeben.  
+[3] Real.DOS is based on SpartaDOS 3.3  
+[4] See Atariki [Lista funkcji specjalnych CIO według urządzeń](http://atariki.krap.pl/index.php/Lista_funkcji_specjalnych_CIO_według_urządzeń)  
