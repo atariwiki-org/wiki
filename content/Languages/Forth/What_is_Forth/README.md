@@ -1,9 +1,6 @@
----
-title: What is Forth
----
-# WHAT IS FORTH  
+# What is Forth
   
-## Introduction to FORTH  
+## Introduction to Forth
   
 (this text seems to be coming from the old F-PC homepage, and might be written by [Tom Zimmer](http://tomzimmer.blogspot.com/), the Author of F-PC and other great Forth Systems)  
   
