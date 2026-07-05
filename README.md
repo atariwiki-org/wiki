@@ -13,4 +13,4 @@ Folder Structure
 | content/                    | Content root folder                |
 | content/\<topic\>             | Topic folder, use title case, use "_" instead of space, use "and" instead of "&". |
 | content/\<topic\>/attachments | Topic attachments folder, use only for attachments smaller than 5 MB that are not ´*.avi´,´*.flac´,´*.mp3´,´*.mp4´,´*.wav´. |
-| content/\<topic\>/attachments | Topic media attachments folder, use for attachments with 5 MB or more and for ´*.avi´,´*.flac´,´*.mp3´,´*.mp4´,´*.wav´. This folder is not part of the repository to keeps the size manageable. |
+| media/\<topic\>/attachments | Topic media attachments folder, use for attachments with 5 MB or more and for ´*.avi´,´*.flac´,´*.mp3´,´*.mp4´,´*.wav´. This folder is not part of the repository to keeps the size manageable. |
