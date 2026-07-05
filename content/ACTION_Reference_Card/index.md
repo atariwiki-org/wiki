@@ -1,8 +1,5 @@
----
-title: ACTION Reference Card
----
-# ACTION! Reference Card  
+# Action! Reference Card  
   
-unter der Lasche "Anhänge" liegt die Datei als PDF zum Herunterladen.  
+Click [Action! Reference Card](attachments/Action_Reference_Card.pdf) to download the reference card as PDF.
   
-![](attachments/Action_Reference+Card.png)  
+![Action! Reference Card](attachments/Action_Reference_Card.png)
