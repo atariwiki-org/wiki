@@ -1,6 +1,5 @@
----
-title: 6502 bugs
----
+# 6502 bugs
+
   
 I found this document somewhere on a gopher archive in an Apple2's  
 programming directory and I think this could be very useful information  
