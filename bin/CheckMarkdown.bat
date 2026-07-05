@@ -1,4 +1,7 @@
+setlocal
 cd /D "%~dp0"
 cd ..
-markdown-checker.exe . -f check_broken_paths -o CheckResult
+set RESULT=CheckResult
+if exist %RESULT%.md del %RESULT%.md
+markdown-checker.exe . -f check_broken_paths -o %RESULT%
 pause
