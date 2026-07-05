@@ -1,7 +1,4 @@
----
-title: WSFN
----
-# WSFN  
+# WSFN - Which Stands for Nothing
 Harry Stewart, APX, 1981  
   
 ### Background  

@@ -1,7 +1,4 @@
----
-title: A pseudo Assembler in Action
----
-### A pseudo Assembler in Action!  
+### A Pseudo Assembler in Action!  
   
 General Information   
 Author: 	Allan D. Doum   
