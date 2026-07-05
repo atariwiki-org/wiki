@@ -1,6 +1,7 @@
 # AtariWiki
 
-See [Table of Contents](content/TOC.md) for all articles.
+This is the new AtariWiki, the successor of [https://atariwiki.org/wiki](https://atariwiki.org/wiki).
+See the [Table of Contents](content/README.md) for all articles.
 
 See [Basic writing and formatting syntax](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages) and [GitHub Flavored Markdown Spec](https://github.github.com/gfm/) for the Markdown (.md) syntax.
 
