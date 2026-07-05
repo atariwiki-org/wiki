@@ -1,0 +1,425 @@
+- DEBUGGER -
+- GENERAL INFORMATION -
+
+Filenames default to the current drive number which can be changed.
+(input of 'FILE' = 'D1:FILE') A full filespec will override the default.
+
+Non destructive prompt character (.) for ease in full screen editing.
+Also, the prompt does not interfere with command decoding.  If the cursor
+is moved up to redo a prior command, the '.' does not need to be deleted.
+
+Upper and Lower case accepted.
+
+The debugger is ZP clean, so all of ZP is available for the user.
+
+You can look at RAM under the OS, by resetting the bit in $D301, as long
+as you are using SpartaDOS or some method of handling interrupts when
+the OS is disabled.
+
+The debugger uses the E: handler, which can allow two screen debugging
+with some 80 column devices.  (Your program is displayed through the Atari,
+while debugging output is on the 80 column device.)  Currently, the XEP80
+does not work very well in this manner, because its screen drivers require
+the Atari DMA to be turned off.  You can partially support this by adding
+an external user function to toggle DMA.  More information about this will
+be given in a later section.  For machines without an 80 column device, the
+debugger supports flipping between two display lists, one for the E:
+screen, and one for your program.  In all cases, there can be potential
+conflicts when trying to debug programs that use the E: handler themselves,
+as both the debugger and your program struggle for the same locations.  The
+debugger's design is admittedly not ideal for use in this situation, but it
+works out well for programs that create their own screen.
+
+Any continuous displays can be paused and stepped one line at a time with
+the space bar.  Press 'C' to return to continuous display.  ESC, RETURN, or
+BREAK will stop the display.  While the display is paused, the V command
+for switching view screens, and also the U user function, can both be used.
+
+ALL addresses and data bytes can be entered in HEX (default), in DECIMAL
+with # (#1234), in BINARY with % (%10011010), in ASCII with ' ('A) or as a
+label currently defined in the MAE symbol table with . (.LABEL).
+Arithmetic operators +-*/&!\^  can also be used, and will be performed
+left to right.  Any combination of these can be mixed at any time in a
+completely free format scheme, with no limits on length.
+(Ex: 2000-#256+'W/100)  Very little will be mentioned about this feature
+later on, but ALL numbers for ALL commands accept this versatile entry
+system.
+
+All commands use spaces as delimiters.  A '?' indicates a command error.
+Parameter uses for commands are abbreviated to:
+
+adr:  a 16 bit address.
+by:   an 8 bit byte. ('by' with numbers indicates a string of bytes.)
+bit:  a 0 or a 1.
+char: an ASCII character.
+
+Quantities in [brackets] are optional parameters.  Default values will be
+used if they are not entered.  All non-bracketted values must be entered.
+Any other upper case characters or symbols should be entered as stated.
+
+'Current address' refers to the last displayed or changed address, (+$1),
+and is separate from the current program counter or PC.
+
+- COMMANDS -
+
+          Display Memory.     M[M] [adr] [adr][/]
+Displays 8 bytes of hex and ASCII when using M, or 16 bytes of ASCII only
+when using MM.  Displays 3 lines worth if you enter only one address,
+otherwise it will display up to the second address, if entered.  Displays
+from current address if no parameters.  '/' = to $FFFF.  The '/' can be
+used on all other commands as well.  Does not display ASCII control
+characters when output is being sent to an external device.
+
+The hex bytes in the hex and ASCII display (but not the ASCII bytes), or
+the ASCII bytes in the ASCII-only display, may be changed using standard
+screen editing.
+
+When displaying hex and ASCII from a 24-bit address, the last two bytes of
+ASCII will not be displayed, due to screen width limitations.
+
+          Peek Memory.        P adr1 [adr2..] [*]
+Special memory display that allows multiple addresses to be entered, and
+only prints one byte per address.  * causes a continuous print of the list
+of addresses, and is really useful for finding keycodes from $D209, or
+examining any locations that have changing data.  Push Break to abort the
+continuous peek.
+
+          Change Memory.      :adr by1 [by2..by8]
+The change memory command ':' can be entered directly, or edited from the
+display memory command.  Only 8 data bytes will be changed.  You can
+substitute the character = for the adr, which will then use the current
+address.  This allows you to enter successive lines of bytes without
+requiring any other addresses.  Ex:
+
+:600 1 2 3 4 5 6 7 8
+:= 9 A B C D E F
+
+          ASCII Mem Change    C adr ASCII_STRING
+Stores ASCII string at adr.
+
+          Disassemble D [M][X][R] [adr]
+Disassembles memory starting at adr, or the current adr if not entered.
+When disassembling 65816 code, instructions that change the register
+sizes will automatically be detected, and adjust the immediate operands
+in the listing accordingly.  When beginning a disassembly however, it
+will not know the current state of the register sizes and will default
+to 8 bits.  The M, X, and R options in the command line will force 16-bit
+M, X, and both Registers to be used at the starting address.  The single
+instruction that gets disassembled as part of the register display or
+trace mode will always be correct, since the register sizes can be
+obtained directly from the processor status register.
+
+The disassembly code, (the instructions -- not the hex bytes), can be
+modified using normal screen editing.  This gives you a single line
+assembler process that is a direct link to the syntax processor in the
+main assembler section.  Therefore, it uses the same format, and has all
+of the same features as any one line of code that you could enter in the
+assembler section.  You can use labels, < and > operators, and even
+pseudo-ops!  You can enter branch instructions with an address like "*+8",
+which means the current PC +8.  The only restriction is that you cannot use
+a macro call.
+
+Single line assembly can be started from scratch, (as opposed to editing
+an existing disassembly), by typing, "-adr ." followed by an Assembly
+mnemonic.  (The '.' is necessary).  Such as:
+
+-600 .LDA #0
+
+Because the period is a marker for the beginning of the instruction field,
+entering a pseudo-op will require two periods.  Such as:
+
+-600 ..HE 55 AA FF
+
+This gives you additional methods for putting bytes into memory.  Since the
+regular Change Memory command is limited to 8 bytes, you can use the above
+.HE format when you want to enter more bytes than that.  Or use .BY when
+you want to enter mixed strings of ASCII, HEX, and DECIMAL.  Maximum line
+entry length is always limited to 80 characters though.  Other pseudo-ops
+that can be useful are, .DC for blocks of constant data, and .SB for
+ATASCII screen code bytes.  You can also enter the .24, .AB, .AW, .IB, and
+.IW pseudo-ops to control the size of the operands that you enter, just as
+you would need to do in the assembler.  None of the other pseudo-ops
+produce useful results, and some can be hazardous to use.
+
+From within the single line assembler, you may enter '*' as the first
+mnemonic character to continue disassembly from that address forward.
+
+          Display Registers   R
+Displays 6502 registers in this form:
+
+ ,A  X  Y  NV-BDIZC SP
+ ;AB 5D FA 10110001 FF 7014 LDA #$00
+
+The 65816 version of MAE displays registers in this form:
+
+,NVMXDIZCE 0000 00 00
+;00AB 005D 00FA FF 7014 LDA #$00
+
+Status flags will be inverse when they are set, and normal when clear.
+The remaining numbers on the top line are the Direct Page register, the
+DBR, and the PBR.  The upper byte of the stack pointer is not displayed.
+16-bit numbers for registers A, X, and Y are displayed on the next line,
+however only the A register will currently show the correct 16-bit value.
+Full 16-bit support for X and Y will be provided when there is an OS
+upgrade readily available to handle the native mode interrupts.
+
+Note: The Direct Page register and DBR are currently inactive, and will
+always display 0.  The PBR will display the proper value, but can not be
+changed by editing the register display.  Currently, it can only be set
+by entering a 24-bit address into the G or I debugger commands.
+
+          Change Registers    ; register bytes
+Supports screen editing of R command.  Status flags can be modified in bit
+form.  When entering values directly, a comma will skip to the next
+register, and you don't need to enter all the values.  EX: ';55' will
+change the A register to 55.  ';,,20' will change Y to 20.
+
+When setting flags in the 65816 version, you can enter either normal or
+inverse flag characters, or enter 0's or 1's, and can freely mix the two.
+
+          Goto                G[S] [adr] [*brkpt] [C by] [r by] [Pf bit]
+Run program at adr, or PC if not entered.  At any time during execution,
+the Break key will return to the debugger and display the current
+registers and PC.  Use the 'S' option to run code that ends in an RTS.
+(Note:  When using the S option, the PC adr in the register display on
+return is an internal address, not the address where the actual RTS
+occurred.)
+
+A breakpoint will create a return point to the debugger whenever a
+particular address or condition is reached.  *brkpt will place a 00 (BRK)
+at the breakpoint address.  For this reason, breakpoints can not be used
+for programs in ROM.  A '?' will be printed in this case.  The breakpoint
+must also be set at an opcode rather than an operand location so that it
+will execute.  The rest of the parameters add conditions to the
+breakpoint.
+
+C + by Counts the number of times the breakpoint is reached.  Execution
+continues until the BRK is passed the specified number of times.
+Breakpoints can also test for specific conditions by specifying (r) reg
+name and (by) byte it must contain in order to BRK.  Processor flags can
+also be tested by 'P' + flag character + (bit) for condition.  Use the
+flag characters as in the register display.
+
+The breakpoint will be skipped over until the specific condition is
+reached.  When both count and condition options are used, the count will
+apply to the number of times the condition is met.  Execution speed will
+be slightly slower than real time in this mode.  Actual speed will depend
+on how often the program is interrupted to check conditions.
+
+NOTE:  A peculiar bug in the 6502 chip causes breakpoints to be
+intermittently skipped over.  When the BRK interrupt occurs, the program
+counter+2 is pushed on the stack, but instead of jumping through the
+interrupt vector, the OS will occasionally just return to the program at
+PC+2.  This is usually a very rare occurrence, but can happen more often
+when using conditional breakpoints on very small and quick loops, thus BRK
+interrupts are occurring very rapidly.  It took many years before I was
+able to really understand what was going on, and be assured that the
+problem was indeed in the 6502, and not a bug in the debugger.  I
+eventually found written documentation of the problem from other sources.
+
+ADDITIONAL NOTE: This bug does not occur on the 65816 processor!
+
+     Go command examples.
+G 2000          = Run program at $2000
+G 4000 *4124    = Run at $4000, and break at $4124
+G *3100 A'Q     = Run at current PC and break at 3100 when A register
+                  equals ASCII 'Q'
+G *4200 C10 PZ1 = Run at PC and break at 4200 the 16th time the zero
+                  flag is set
+
+          Remove Breakpt      *
+Brkpts remove themselves, and replace what was there when the BRK is
+executed.  However, in case the program stops at other than the brkpt, *
+will remove it.  This can occur when the Break key is pressed, conditional
+or count values are not reached, or when the BRK is set in an operand
+rather than an opcode.  Setting a new brkpt with the G command will also
+remove an unused BRK.
+
+          Exit to DOS         X [char]
+
+When no additional characters are entered, the BRK vector at $206 will be
+restored to whatever it was when MAE was started.  If you would like to keep
+the BRK vector trapped by the debugger, you may enter any character after
+the X.  (I could not come up with a decisive and memorable letter to use
+for this purpose, so I leave it to you to choose your own.)
+
+          Return to Assembler A
+
+          Fill Memory         F adr1 adr2 [by1] [by2 by3...]
+Fill memory with 0 if no data bytes.  Otherwise enter 1 byte, or a sequence
+of any number of bytes to fill with.
+
+          Transfer Mem        T adr1 adr2 adr3
+Move memory from adr1 through adr2 to adr3.  Handles overlapping moves.
+
+          Hunt for chars      H adr1 adr2 by1 [by2...][?]
+          Hunt for String     H adr1 adr2 'ASCII string [?]
+Hunt memory for ASCII string or string of hex bytes up to length of 30.
+Use '?' for a wildcard to match anything.  Note that the default wild
+card byte is also $3F hex, meaning that any searches with 3F in a hex
+string will be treated as a wildcard as well.  See the next command for
+changing the wildcard character in cases of interference.  Realize the
+number entry system will let you search for things like "A9 'A", (as in
+LDA #'A), but not the reverse of this.  Entering "'A A9" will put the hunt
+into full ASCII form, and search for the literal string that you typed in.
+The second example can actually be entered in the form "? 'A A9", using a
+wildcard to avoid the initial ' identifier.  For one more example, let's
+say you wanted to search for a JSR to a MAE defined label.  This can be
+entered as "20 .<LABEL .>LABEL".
+
+Searches through the OS ROM area will automatically skip $D000-$D7FF.  So
+you may simply enter a search range of $C000-FFFF.
+
+          Change wild card    ? char
+Change the wild card for the Hunt command to 'char'.  This is used in case
+a character in the search string needs to be '?' or HEX 3F.
+
+          Compare mem         K adr1 adr2 adr3
+Compare memory from adr1 to adr2 with memory starting at adr3.  Displays
+all addresses with differences.
+
+          DEC to HEX          # decimal number
+          HEX to DEC          $ by
+Displays hex values of decimal numbers and vice versa.
+
+          Change Output       O [filespec]
+Send output to screen and filespec.  O by itself returns to just screen
+output.  Use "O P:" to send output to the printer.
+
+          Re-open Editor IOCB     E
+This is useful for returning to the text screen from a graphics mode, or
+80-column display, or to reset the screen after changing RAMTOP.  The
+other IOCB's used are:  #3 disk reads, #4 disk writes, and #6 external
+output.
+
+          Change View             V
+When debugging a program that creates a new display list, the V command can
+toggle between the program's screen and the debugging text screen.  The
+debugger stores the display list address for the text screen, initially at
+$BC20, and updates this whenever the E command is used.  The V command
+checks this address against what is currently in the display list pointer,
+to decide whether it needs to restore the text screen, (saving the previous
+value), or return to the last saved value of your program's screen.  While
+the debugger doesn't initially know where your program's screen is going to
+be, it picks this information up the first time you issue the V command
+with your program's screen active.
+
+In some cases, swapping the display list pointer may not be sufficient to
+display both screens in their proper format.  Such as when using different
+character sets, or different GPRIOR modes.  For this reason, operation of
+the V function can be extended through two user accessible vectors at
+$BFF7 and $BFFA.  $BFFA will be called when switching to your program's
+screen, and $BFF7 will be called when switching back to the debugger's
+screen.  You can insert JMP intructions here that point to extra routines
+that update whichever other hardware locations are needed.
+
+          Query MAE symbol table  Q adr
+                                     (Sorry, I was running out of letters)
+Search the current symbol table for a label that matches the value entered
+for adr.  If found, the label will be printed.  This is basically the
+reverse procedure for symbol table lookup, and as such will only work well
+when the requested value has only one label associated to it.
+
+          Trace Instr         I [adr]
+Traces program an instruction at a time.  Trace normally works on programs
+in ROM, except 'G' and 'R' options as noted below.  After each step, the
+debugger will wait for one of the following keypresses to control the
+tracing mode:
+
+Space - Steps one instruction at a time.
+C - Continuous trace.
+D - Disassemble next instructions.  Useful for previewing code that
+    you are about to step through.  The program counter will remain
+    at its current location.
+G - Execute all instructions up to current 'D' command listing.  Use
+    to quickly execute loops or other structures.  First use 'D' to
+    find a spot past the structure, then 'G' will execute everything
+    up to that point.  This command puts a Breakpoint at the end
+    position, and therefore cannot be used if the program is in ROM.
+S - Execute entire subroutine as one step.
+R - Return from subroutine.  Use this command if you are already in a
+    subroutine, and wish to return to the previous level.  A BRK will
+    be placed at the instruction the subroutine returns to, and
+    therefore cannot be used for programs in ROM.
+L - Like the return from subroutine, but does an RTL return from 24-bit
+    subroutine calls.
+P - Peek the value of the operand of the current instruction.
+    Operand calculation is crude, using simple absolute or direct page
+    addressing on the operand value.  It does not attempt to calculate
+    indexed or indirect operand addressing.  Thus, if you do a P on an
+    instruction like "STA ($80),Y", it will return the contents of
+    location $80 -- which can theoretically be useful, but the function
+    is intended for use on instructions with simple absolute or direct
+    page addressing modes.
+Q - Perform a Q debugger command on the operand of the current
+    instruction.  If the operand value is defined in the current MAE
+    symbol table, the label name will be printed.  You can use this
+    on JMP, JSR and branch instructions to get an idea where you're
+    going, and also on any memory references that have you thinking,
+    "What the heck is *that*?"
+U - Execute the user function.  The carry will be clear, and $F0 will
+    contain the PC for the currently displayed instruction.
+V - Execute the V command to change DLIST views.
+X - Ignore instruction.  Skip to the next one without executing.
+ESC, RETURN, or BREAK exits trace mode.
+
+          Change Default Drv  / 1-9
+All default drive accesses change to drive number entered, including uses
+in the assembler section.  The starting default drive number will be the
+same as the current SpartaDOS drive.
+
+          Binary Load         L [@adr][-adr] filename
+Load DOS II binary file where it was saved, or at @adr if entered.  Prints
+a '?' if the file is not DOS II format.  Loads appended files, but @adr
+only works on 1st part.  -adr loads raw data with no header using a
+straight CIO transfer.  Both PC and default address are set to the load
+address.
+
+          Binary Save         S [-]adr1 adr2 [@adr3] [+]file
+Save DOS II binary file from adr1 to adr2.  If @adr3 is entered, it will
+be used as the header allowing the file to load in at a different address
+than where it was saved.  Use '-' for a CIO save without header.  If + is
+entered, append to existing file.
+
+          Directory           \ [name or spec]
+                                           (Sorry, I *am* out of letters)
+Displays disk directory.  Default of Dn:*.*.  A filespec of D2: = D2:*.*
+
+          Sector Read         R adr sector# [ending sector]
+          Sector Write        W adr sector# [ending sector]
+Direct sector I/O to default drive.  Reads single and double density disks
+automatically including single density sectors 1-3 of a DD disk.
+
+          Evaluate Exp.       = by1(+-*/&!^\)[by2..]   (no spaces)
+Prints hex and decimal values of expression evaluated left to right.
+Can also be used for ASCII convert. (='A)
+
+          User Function       U [adr1] [adr2] [adr3]
+Accepts up to 3 24-bit parameters, which will be stored at $F0, $F7, and
+$F3.  $F7 and $F3 will be 0 if not entered, while $F0 will have the current
+address if not entered.  In addition, the carry flag will be set if no
+parms.  Then jumps to the end address of the debugger-3.  ($BBFD in top of
+RAM version)  User function expects an RTS return.
+
+When the user function is called from a paused Trace or other display, the
+carry will be clear, and $F0 will contain the PC or current address
+respectively.
+
+- THE DEBUG80 USER FUNCTION -
+
+There is a file on the disk called DEBUG80.  This loads into the area for
+the debugger's user function, and can be loaded either from DOS, or from
+the debugger with the L command.  This function is intended to help debug
+Atari programs while using the XEP80.  As mentioned earlier, the driver for
+the XEP80 will not run unless the Atari's DMA turned off.  DEBUG80 provides
+a toggle for the DMA control, so that the program screen can be turned on
+or off as needed.
+
+XEP80 debugging is still very limited, because you cannot issue any
+commands while the Atari DMA is enabled.  Any attempts to do so, will
+corrupt the XEP80 screen, and probably require turning the power to the
+XEP80 off and on to recover it.  You can only toggle the DMA when the
+screen display is paused, like from a memory dump or trace mode.  Still,
+you may find applications where it is very helpful to view debugging
+information and the screen display at the same time, and this extension
+will let you do this.

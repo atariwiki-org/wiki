@@ -1,0 +1,476 @@
+SUPERDOS
+
+SuperDOS V5.1 was designed for the more advanced user who needs a DOS 
+with true double sided, double density operation. The aim was to keep 
+the program short and powerful. Until now Atari DOS 2 seemed to be the 
+most convienient DOS to use but was only capable of single density and 
+was memory inefficient. Other double density DOS's are available but 
+they use heaps of memory or are extremely slow because you need to load 
+a file to perform each function.
+
+SuperDOS combines many functions (and more) from some of these giant 
+DOS's into an easy to use, menu driven DOS needing slightly more memory 
+than Atari DOS 2.0S but using seven sectors less on the disk and therefore 
+taking less time to load.  With 64K RAM XL/XE and all SUPERRAM models, 
+DUP is hidden in RAM under the OS or in the ramdisk and available 
+imediately with NO loss of the resident program. The 256K SuperRAM ramdisk, 
+plus 130XE, Axlon, Bucholtz, Newell, Peterson and RAMbo ramdisks are 
+supported.
+
+Features
+ 1. SuperDOS for Atari 400/800/600XL/800XL/65XE/130XE computers, Atari 810, 
+    1050, XF551 and compatible disk drives.
+ 2. Single, Enhanced and Double density plus double sided, double density
+    operation.
+ 3. Handles up to 4 disk drives plus a ramdisk plus up to 8 concurrent files.
+ 4. Auto density enables SuperDos to automatically configure to the density 
+    of the disk in the drive.
+ 5. With auto density you can copy files from single to double density (or 
+    vice versa) with only one drive.
+ 6. RESTORE deleted or open files, either from SDUP menu or BASIC with XIO 
+    commands.
+ 7. Use upper, lower case, inverse characters or numbers even as the first 
+    char of a filename.
+ 8. Short SYS files allows maximum use of disk space and memory.
+ 9. Variable XL/XE key delay and repeat rate.
+10. Ramdisks: SuperRAM & Peterson with 256K, 130XE with 64K or Axlon, 
+    Bucholtz, Newell, or RAMbo with 180K. Enables instant loading of files.
+11. Autoload all files with "RAM" filename extenders from drive one to the 
+    ramdisk during boot process.
+12. With SuperRAM or 64K RAM, SDUP is available the instant you type DOS and 
+    the resident program is saved. No MEM.SAV waiting.
+13. Use single keystrokes to list drrectory or select items.
+14. Copy to or from casstette "C:" device using long or short IRG. Copy all 
+    SYS files except DOS.SYS using wildcards.
+15. A verification prompt message gives you a chance to change your mind 
+    about copying a file.
+16. Write DOS.SYS file only or format a disk with skewed sectors using
+    SuperMAX, US Doubler or Atari XF551.
+17. Copy sectors and display bad sector numbers. Copy only the used sectors.
+18. Option to format destination disk during disk copy. It formats in the 
+    same density as the source disk.
+19. Enter sector numbers in hex or decimal. Default is hex use # for decimal.
+    eg #370.
+20. Write with or without verify. Toggled from SDUP menu.
+21. Drive status (density, sides) is displayed on top of the screen above 
+    SDUP menu.
+22. Concise menu with plenty of room for directory listings. There are 2 
+    columns on dirs.
+23. Annoying Atari 4 line scroll removed.
+24. A red screen border indicates next operation may write to the disk. 
+    Purple for format.
+25. A red or green screen border to indicate write or read in next operation 
+    of copy file disk or sectors.
+26. A binary save that even saves carts.
+27. A copy from DOS 3 using 1 or 2 drives and wildcards.
+28. SuperBIN - a boot program to display a menu of file names and load and 
+    run the bin file you choose.
+29. Display the conmfiguration block of drives. (not 810 or 1050)
+30. Trace and link data of files and patch around bad sectors.
+31. Option to display deleted or open filenames.
+32. Alter the number of open file or drive buffers from the AUX menu.
+33. Choice of resident or non-resident SDUP. Enables instant access to DOS 
+    menu on 400/800 or option to disable the ramdisk.
+34. SUPERBAS - an AUTORUN.SYS file to display a menu of BASIC programs to 
+    load and run.
+35. I/O defaults to the ramdisk if one is available.
+36. Use ESCAPE when booting to format a ramdisk leaving all normal 130XE 
+    banks free (requires 128K)
+
+
+THE VARIOUS DENSITIES
+There are 4 standard disk formats used by SuperDos, Atari and Atari 
+compatible disk drives.
+1. (S)INGLE - 720 sectors of 128 bytes. 810 format.
+2. (E)NHANCED - 1024 sectors of 128 bytes. 1050 format.
+3. (D)OUBLE - 720 sectors of 256 bytes. SuperMax, Us Doubler, Happy format.
+4. (X)TENDED - 1024 sectors of 256 bytes. SuperRAM, 130XE & Peterson 
+   ramdisks.
+5. (2) SIDES - 1440 sectors of 256 bytes. Atari XF551 format.
+
+
+LOADING SUPERDOS
+Works the same way as DOS 2 with these extra steps:
+
+1. During the boot process (after about 5 sectors) a test is made for 
+   SuperMAX or Atari XF551 and the baud rate is adjusted.
+2. With 64K RAM XL/XE, the "SDUP.SYS" file is now loaded and hidden in the 
+   RAM under the OS or in the ramdisk.
+3. With SuperRAM, the 130XE or other ramdisk, the ramdisk is initialized 
+   (if ESC was pressed the 1st 4 130XE banks are not used) and all files with 
+   the ".RAM" extention are copied to the ramdisk.
+   Press BREAK to abort it.
+4. Continue as DOS 2. Load and run "AUTORUN.SYS" and pass control to 
+   cartridge or SDUP.SYS.
+
+
+WHAT HAPPENS WHEN YOU TYPE DOS
+The same thing happens no matter how much RAM your Atari has.
+
+1. A check is made to see if "SDUP.SYS" is still intact in RAM under the OS 
+   OR in bank 2 of the SuperRAM ramdisk OR it is in the resident program 
+   area. If it is then the DOS menu appears instantly.
+2. If SDUP.SYS in not in RAM then it is loaded from drive 1.
+3. If the disk in drive 1 does not have SDUP you are returned to the calling 
+   program.
+
+
+GUIDE TO THE SUPERDOS MENU
+At the top of screen you'll see the status line. It indicates which drives 
+are available and the density of each of them.
+
+At the prompt "SELECT ITEM OR RETURN" the following commands are available. 
+Only one keystroke is required.
+
+#1-4            List the directory of drive 1 to 4.
+
+#5-8            List the contents of the ramdisk.
+
+A. DIRECTORY    Also may be used with the ramdisk. The directory listing may 
+		have some info you have not seen before.
+		"- DELETED .TXT 014"  Deleted file
+		"? OPEN    .TXT 000"  File opened but never closed.
+		" <TWO     .TXT>011"  This file uses sectors beyond 720 and 
+				      only available in Enhanced density or 
+				      2 sided.
+		Use the /N option to skip OPEN and DELETED files 
+		(eg "D1:*.*/N,E:")
+
+B. CARTRIDGE    XL/XE users have the option of enabling or disabling BASIC.
+
+C. COPY FILE    Copy AND duplicate file. A red or green border will indicate 
+		the next read/write operation.
+		1. You may enter one OR two filenames seperated by a comma.
+		   a. Enter one filename for one drive copy. eg "D:TEST"
+		   b. Enter two filenames for two drive copy. 
+		      eg "D1:TEST,2:TEST"
+		   c. Enter two filenames (one or two drive copy) to APPEND 
+		      or RENAME while copying.
+		2. Auto-density configures SUPERDOS and the drive to the 
+		   density of the DISK in the drive. You can then copy
+		   between densities with one drive.
+		3. The cassette "C:" device may also be used. The default is
+		   short IRG (Inter Record Gap). This is the same as BASIC's
+		   CLOAD and CSAVE. To specify long IRG use /L.
+		   eg "D:TEST,C:/L" copies the file from disk to cassette
+		   using long IRG.
+		4. Wildcards may be used in both source and destination
+		   filenames. 
+		5. All "SYS" files except "DOS.SYS" may be copied using
+		   wildcards.
+		6. The wildcard mode displays the verification prompt "TYPE 
+		   "Y" TO COPY - D1:TEST". Press "Y" to copy the file or any
+		   other key to go onto the next file.
+		7. To use the wildcard mode to copy all the matching files 
+		   after the first "Y" response enter the /N option in the
+		   destination filename. eg "D:*,2:*/N"
+		8. To use the wildcard without any verification prompts enter
+		   the /N option in both filenames.  eg "D:*/N,2:*/N"
+
+D. DELETE       Same as DOS 2
+
+E. RENAME       You can rename using wildcards. "*.DAT,*.BYT" renames all the
+		files with the extender "DAT" to "BYT". However, you still 
+		need to be careful not to specify a file that already exists.
+
+F. LOCK         Same as DOS 2
+
+G. UNLOCK       Same as DOS 2
+
+H. WRITE DOS    You can write both "DOS.SYS" and "SDUP.SYS" or "DOS.SYS"
+		only. Just follow the prompts.
+
+I. FORMAT       You may select the formatting density: Single, Enhanced, 
+		Double, Extended or 2 sides. Follow the prompts.
+		1. You can only format with skewed sectors in Double or 2
+		   sides with the Atari XF551 or in Single or Double density
+		   if your drive is fitted with SuperMax or the US Doubler,
+		   thus allowing extremely fast read/write speeds.
+		2. The Enhanced density format is compatible with DOS 2.5 
+		   but with 1011 free sectors. (Dos 2.5 doesn't use sect 720)
+		3. The 2 sides format is upwardly compatible with standard 
+		   DOUBLE density. (ie the files and free sectors on side 2 
+		   are invisible to single sided drives.)
+		4. You may format the ramdisk, as you would a floppy disk, 
+		   but memory requirements limit the type of format. If you 
+		   pressed ESC during the boot process then you must reboot 
+		   if you want to recover the reserved 64K. See NEW DISK 
+		   COMMANDS for ramdisk formatting details.
+
+J. DUP. DISK    Copy disk or sectors. Unlike DOS 2 this option copies ALL the
+		used sectors of a disk. It even copies boot disks. If all the 
+		bytes of a sector are the same value then the sector is not 
+		copied.
+		1. If no sectors are specified then the entire disk is copied
+		   and you have the option of formatting the destination
+		   disk. The formatting density is taken from the source.
+		2. If sector numbers are entered then only that range of
+		   sectors is copied.
+		3. If any disk erros are encounted you'll see the message 
+		   "BAD SECTOR - XXX "Y" TO RETRY". A "Y" will retry as many
+		   times as you want or any other key will continue with
+		   the next sector.
+		4. You may copy disk or sectors to or from the ramdisk 
+		   provided your ramdisk can match the density of the disk.
+		5. You may enter sector numbers in hex or decimal. (Default
+		   is hex, use "#" to specify decimal. eg #370)
+		6. A red or green border indicates the next read/write.
+
+K. BIN. SAVE    Same as DOS 2. Memory addresses may be decimal. eg #20788. 
+		You can even save roms without error.
+
+L. BIN. LOAD    Same as DOS2
+
+M. GO ADDRESS   Memory addresses may also be decimal. 
+		1. If you type RETURN only, you can run at the address of a
+		   previously loaded binary file. Note: the run address is 
+		   destroyed when the program area is destroyed.
+
+N. RESTORE      or "undelete" restores OPEN or DELETED files. You'll see the
+		prompt "RESTORE FILE SPEC?"
+		Type in the name of an open or deleted file (wildcards may
+		be used). These files are indicated by - or ? in the dir
+		list. CAUTION: A directory list may show a used, deleted 
+		and/or open file with the same name. If you RESTORE this file
+		you may finish with two files with the same name. To avoid 
+		this RENAME the file currently in use then RESTORE. If you
+		have written to the disk since deleting a file then RESTORE
+		may encounter errors. If so, then only those sectors BEFORE
+		the error will be restored and you'll see an error message.
+		If the first sector does not belong to the file then the file
+		will remain deleted.
+
+O. VERIFY       Toggles the SIO write command between write with verify "W"
+		and write without verify "P".
+
+
+THE AUX.SYS FILE
+This file has some seldom used commands and is loaded using the "L" command
+from the SDUP menu.
+
+#. LIST DIRECTORY  Type 1 thru 8 to list the directory of drives 1 to 8. 
+
+P. INITIALIZE DOS  After you have altered the number of open files or drive
+		   buffers or toggled the resident SDUP option you will need
+		   to initialize DOS. This will destroy any BASIC programs.
+
+Q. COPY FROM DOS 3 Copy files from an Atari DOS 3 disk to a DOS 2 disk. It is
+		   used exactly as the C. COPY FILE command.
+
+R. WRITE SUPERBIN  For a description of SUPERBIN see WHAT IS SUPERBIN?
+		   Follow the prompts.
+		   1. SUPERBIN may not work with every BINARY LOAD file
+		      because it requires some memory. SUPERBIN errors cause
+		      a cold start.
+		   2. The correct density will be selected for you. You can 
+		      delete "DOS.SYS" and "SDUP.SYS" as they are not used.
+		   3. CAUTION: The SUPERBIN menu displays only 24 files and,
+		      as there are only three directory sectors allocated,
+		      writting more than 24 files may overwrite existing
+		      files.
+
+S. CONFIG. BLOCK   The config block is a set of 12 bytes in the disk control
+		   microprocessors memory inside the disk drive. This 
+		   command merely displays this information to the screen.
+		   Note: Atari 810 and 1050 drives do not have config blocks
+		   (unless upgraded) and sending this command produces an
+		   SIO error.
+
+T. TRACE AND PATCH Use this command to PATCH around bad sectors (ie SIO
+		   errors only) on a disk. You may have noticed DELETE does
+		   not delete a file with bad sectors.  (DOS 2 doesn't
+		   either). TRACE AND PATCH will trace a file until it 
+		   encounters a bad sector and then look look for the next 
+		   sector on the disk belonging to that file. It then points 
+		   (alters sector link data) the sectore before the bad 
+		   sector to the next matching sector and decrements the 
+		   number of sectors belonging to that file. If there are bad 
+		   sectors in a file then you'll loose the data in the bad 
+		   sectors but you can access the remaining data or delete 
+		   the entire file.
+
+U. XL/XE KEY RATE  Alter the key delay and repeat rates for the XL/XE OS 
+		   only. To alter the rates in DOS on the disk, you'll need
+		   to write the DOS files.
+
+V. FILE BUFFERS    Alter the number of open file buffers. You need one file
+		   buffer for each concurrently open file. To alter the file 
+		   buffers in DOS on the disk, you'll need to write the DOS 
+		   files.
+
+W. DRIVE BUFFERS   Alter the number of drive buffers. You need one for each 
+		   disk drive. To alter the drive buffers in DOS on the disk, 
+		   you'll need to write the DOS files.
+
+X. RAMDISK ENABLE  Toggles the ramdisk. "1" indicates that during the boot
+		   process the ramdisk is to be initialized.
+
+Y. RESIDENT SDUP   Toggles between the resident and non-resident SDUP.
+		   1. The value of the OS variable MEMLO ($2E7) is altered so
+		      the user program will be destroyed. 
+		   2. With less than 64K RAM a resident SDUP ensures that
+		      your user program is always safe and DOS appears
+		      instantly. Unfortunately this also means less memory.
+		   3. With SUPERRAM or 64K (or more) SDUP is always loaded
+		      during the boot process and hidden under the OS or in
+		      the ramdisk. With a resident SDUP you can reserve 
+		      memory from the DOS buffers (usual MEMLO) to the end of 
+		      SDUP for your own use (see Memory Map for addresses).
+		      This could be usful for co-resident machine language 
+		      and BASIC programs.
+
+Z. EXIT TO SDUP   Returns you to the SDUP menu.
+
+
+NEW DISK COMMANDS
+
+CmdNo      Operation       BASIC Examples
+  34 $22   RESTORE         XIO 34,#1,0,0,"D:RESTORE.BAS"
+
+ 253 $FD   SPECIFY FORMAT  XIO 253,#1,AUX1,AUX2,"D1:FILENAME DATA"
+
+	   AUX1 - FLOPPY DISKS
+	      0  $00  Format in the current density of the drive.
+	     33  $21  Format in the current density of the drive except if in
+		      enhanced then format single.
+	     34  $22  Format in enhanced density.
+	    102  $66  US Doubler only. Format using AUX2 (set to 1 or 129),
+		      AUX3, AUX4 (skew table) and FILENAME DATA.
+	    105  $69  SUPERMAX only. Format in the current density (not
+		      available in enhanced) with skewed sectors.
+	    161  $A1  Atari XF551 only. Format in the current density using
+		      skewed sectors.
+	   
+	   AUX1 - RAMDISK
+	      0  $00  Format ramdisk using maximum density and memory avail.
+	      1  $01  Format ramdisk single density, 64K, 502 free sectors.
+		      (SuperRAM, 130XE or Axlon)
+	      2  $02  Format ramdisk single density, 90K, 707 free sectors.
+		      (SuperRAM or Axlon)
+	      3  $03  Format ramdisk enhanced density, 128K, 1011 free sec.
+		      (SuperRAM)
+	      4  $04  Format ramdisk double density, 180K, 707 free sectors.
+		      (SuperRAM)
+	      5  $05  Format ramdisk Xtended density, 256K, 1011 free sec.
+		      (130XE SuperRAM only)
+
+	   AUX2 - FLOPPY AND RAMDISK
+	      0  $00  Ignored
+	      1  $01  Set density using the information in FILENAME DATA and 
+		      then format.
+	    128  $80  Format but don't write boot sectors, VTOC or directory.
+	    129  $81  Set density using FILENAME DATA, format but don't write
+		      boot sectors, VTOC or directory.
+
+	   AUX3 AND AUX 4
+		      US Doubler only. Low and high byte pointer to a skewed
+		      sector layout table.
+
+	   FILENAME DATA
+	   Used only if bit 0 set in AUX2 and if the disk drive has a config.
+	   block. eg SuperMAX.
+
+	     "D:h??R?@@#"  Set single density.
+	     "D:h??Z?D@#"  Set enhanced density.
+	     "D:h??R@DA@"  Set double density.
+	     "D:H??RADA@"  Set 2 sides, double density.
+
+	   Note:  # represents an inverse @.
+
+
+WHAT IS SUPERBIN?
+Superbin is a binary loader that resides on the boot and directory sectors of
+a disk. It is used to LOAD and RUN games or any other program that will load
+using the "L. BIN. LOAD" option of the SDUP menu. You won't need any "SYS" 
+files on a Superbin disk and only three directory sectors (24 files) are 
+allowed. You will fill the rest of the disk with your binary load files. 
+(They must have a RUN address). When you boot a Superbin disk it will
+display a menu of files on the disk. You make your selection by pressing the
+appropriate key and the file is loaded and exectued for you.
+
+
+WHAT IS SUPERBAS?
+Superbas displays a menu of BASIC programs and you can select a program to
+LOAD and RUN. To create a Superbas disk:
+1. Format a disk and write DOS.SYS only.
+2. Copy the SBAS.SYS from your SuperDOS master disk and rename the file
+   to AUTORUN.SYS.
+3. Copy your BASIC programs onto the disk.
+4. Rename the BASIC programs with exteners to filenames without extenders.
+5. Lock the programs you wish to be displayed on the menu.
+
+
+ALLOCATION OF DRIVE AND FILE BUFFERS
+Superdos always allocates buffers for double density operation. It is
+initally set for two drives and three concurrently open files. Use the
+AUX.SYS menu to alter Superdos to your own requirements. You'll need to write
+the DOS files on the disk the keep the change. These options affect the
+of memory you have available.
+
+
+SUPERDOS AND RAMDISKS
+If you have extra memory for a ramdisk, the ramdisk will be initalized using
+the maximum format available when you load Superdos. You can keep the first
+64K free (ie the normal 130XE RAM) by pressing ESC during the boot process.
+If you don't have enough RAM this may result in no ramdisk but allows you to
+run programs that require this RAM. The ramdisk is accessed using DOS and is
+assigned as drives 5 to 8. Some programs (eg AtariWriter) only provide access
+to drive one. To use these programs:
+1. Remove the disk in drive one and turn it off. You may now load and save
+   but all IO is diverted to the ramdisk.
+2. Turn drive one on to use it again.
+
+
+MEMORY MAP OF SUPERDOS
+ Address           Contents
+ 0000-05FF   RAM   Operating System
+ 0600-06FF   RAM   Unused
+ 0700-1CCD   RAM   Disk Operating System (File Management System)
+ 1CCE-22CD*  RAM   Drive and File Buffers. MEMLO Min - $1ECE, Max - $28CE
+*22CE-3749   RAM   User program area or SDUP
+ 374A-7FFF   RAM   User program area or SDUP buffer area. If resident SDUP,
+							  then MEMLO=$374A.
+ 8C00-BFFF   RAM   User program area or screen display.
+	     ROM   Cartridge.
+ C000-DFFF   RAM   Unused.
+ E000-FFFF   RAM   SDUP or temporary storage of user program
+ C000-FFFF   ROM   Operating System and Hardware Registers
+
+ * Varies according to the number of drive and file buffers allocated.
+
+
+ RAMDISK MEMORY MAP
+ 130XE banks not reserved.
+ Type of ramdisk                         Single  Enhanced  Double  Extended
+ Superram, Axlon                    800   0-7       0-9     0-14      NA
+ Superram, Bucholtz, Newell, RAMbo  XL    0-5       0-7     0-12      NA
+ Superram, Peterson                 XE    0-5       0-7     0-12     0-15
+
+ 130XE banks 0-3 reserved.
+ Type of ramdisk                         Single  Enhanced  Double  Extended
+ Superram, Axlon                    800    NA       NA       NA       NA
+ Superram, Bucholtz, Newell, RAMbo  XL    4-9      4-11      NA       NA
+ Superram, Peterson                 XE    4-9      4-11     4-15      NA 
+ 
+
+ADVANCED USER NOTES
+1. Some key DOS 2 addresses remain unchanged in SuperDOS to allow programs
+   that use illegal entry points to run.
+   $07E0 DOS initialization
+   $1540 SDUP initialization
+   $179F entry point on DOS call
+
+2. Two new vectors have been added to Superdos.
+   $07DA - Binary Load vector. Entry: A=Filename address lo byte   
+				      Y=Filename address hi byte
+			       Exit:  Y=CIO code.
+   $07DD - SIO superspeed and ramdisk vector.
+	   Set up the DCB ($0300-$030B) as for any SIO (as you would for 
+	   $E459). All commands may be used with disk drives. Ramdisk
+	   commands are: STATUS "S" (ramdisk format type), READ "R" and
+	   WRITE "W". Entry: Parameters in DCB. Set DUNIT to 5-8.
+	   Exit: status in DSTATS ($0303).
+
+3. Version byte is at $07D9. $50 is Version 5.0
+
+

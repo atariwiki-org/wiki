@@ -1,0 +1,149 @@
+Install notes for the MAE assembler.
+
+MAE.COM as supplied in the archive will
+run as-is on a 128K+ machine, in
+standard 40 column mode.  Instructions
+for creating a version for 64K machines
+and/or 64/80 column versions follow.
+
+Please backup the original MAE.COM file
+or keep the archive itself before
+making any customized versions.
+
+Some of these installations require
+changing the buffer addresses for MAE's
+source text and symbol table.  For
+these cases you should run the config
+utility CONFIG.COM.  It will try to
+open the file D:MAE.COM, and will save
+any configuration changes back to the
+MAE executable.  Thus, you should make
+sure MAE.COM is on the current working
+drive, (or on drive 1, depending upon
+the DOS you are using), before running
+CONFIG.COM.  An error message will be
+displayed if it fails to load MAE.COM.
+
+- CONFIG.COM OPERATION -
+
+Once the loading is successful, CONFIG
+will display a screen full of editable
+parameters.  You may use up and down
+arrows to move the cursor to different
+fields, and then type in your new
+values.  Return will advance to the
+next field.  Backspace and left/right
+arrows are supported within the field.
+
+Press 'Esc' when you are finished with
+your changes.  If no errors are found
+in the data, CONFIG will prompt if you
+wish to save the changes back to the
+MAE.COM file.  Press 'Y' to save them,
+'Esc' to keep editing, or any other key
+to exit the program without saving.
+
+If an error is detected, press 'Esc' to
+revert to the previous value at the
+start of the session, or any other key
+to keep editing.  The cursor will be
+placed on the field that had the error.
+
+Please refer to MAE.DOC for details on
+the parameters themselves, in the
+section titled "MEMORY USAGE AND
+CONFIGURATION".
+
+- 64K VERSION -
+
+The bulk of the MAE executable resides
+in the $4000-$7FFF address range,
+designed to be in bank select memory.
+If you do not have banked memory, you
+must reconfigure MAE's buffer addresses
+to not overwrite the program.  Free
+memory will be in two segments, from
+LOMEM-$3FFF, and from $8000-$B6FF.  You
+should probably set the source buffer
+to the latter, since it is the larger
+segment.  Use CONFIG.COM to set the
+first four addresses to $8000, $B6FF,
+$0000 (MAE will use the current LOMEM),
+and $3FFF.  You should also change the
+three bank select bytes to $FF, and
+then save your changes.
+
+- 64 & 80 COLUMN DRIVERS -
+
+64 and 80 column modes are not
+available on 64K machines.
+
+HAND64.OBJ and HAND80.OBJ are drivers
+for 64 and 80 column screens.  They
+take advantage of ANTIC memory banking
+so that their use does not reduce the
+available memory for source and symbol
+table.  They reside in the base memory
+range of $5600-$7FFF.  If you have a
+memory upgrade that is not ANTIC-bit
+compatible, then you must use
+HAND64X.OBJ and HAND80X.OBJ.  These
+versions will have to place the screen
+and dislay list from $9500-$B6FF.
+Code and data will be $6FF0-$79FF.  To
+run the X versions of the handlers, you
+will need to reconfigure MAE's text
+buffer to end at $94FF instead of $B6FF
+using CONFIG.COM.
+
+Copy either HAND64.OBJ or HAND64X.OBJ
+to a new file named COL64.OBJ, and copy
+HAND80.OBJ OR HAND80X.OBJ to COL80.OBJ.
+You now need to add character sets to
+these files.
+
+There are two character set choices for
+both the 64 and 80 column handlers.
+A character set must be appended to the
+end of the handler's .OBJ file before
+the handler can be used.  These files
+are COL64A.FNT, COL64B.FNT, COL80A.FNT,
+AND COL80B.FNT.  These files should be
+viewable and editable in standard font
+editing packages.  Choose a font file
+for each handler, and copy-with-append
+the fonts to the COL64.OBJ and
+COL80.OBJ files that you created above.
+The handlers are now ready for use.
+
+The 64 and 80 column screen handlers
+can be used in two different ways.  The
+files can be loaded from the debugger,
+and then when you reenter the assembler
+the new handler will be active.  To do
+this, press 'B' from MAE's main menu
+and then use a debugger command like
+"L COL64.OBJ".  Then enter 'A' to
+enter the assembler again and you
+should see a 64 column screen.  The
+file "COL40.OBJ" can be loaded to
+return to 40 column mode.  Another
+option, especially if you find that you
+want to use an extended column mode
+most of the time, is simply to append
+one of the COL64.OBJ or COL80.OBJ files
+to the end of the MAE.COM executable.
+In this way, MAE will always start up
+in the mode you choose, and you are
+still free to load different modes
+using the debugger.  Personally, I
+think the 64 column mode works very
+well for Assembly source, while
+maintaining much better readability
+than the 80 column mode.
+
+Note that the debugger will always run
+on the 40 column screen regardless of
+which handler is loaded for the
+assembler/editor.
+

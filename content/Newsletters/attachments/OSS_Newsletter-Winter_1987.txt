@@ -1,0 +1,2112 @@
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+                         The Next Step -- by Mike Fitch
+                         ------------------------------
+     
+          The mere fact that you have subscribed to this newsletter
+     indicates that you have taken up the challenge to use your computer as
+     more than a game machine.  What's more, you are more serious about it
+     than most:  you laid out the extra cash to buy a programming language
+     other than the one provided with your computer.  Just what you do with
+     that language varies wildly, from collecting dust to writing
+     commercial software, based on your inclination and perserverence.
+     
+          Most of you fall into the "programmer" category:  you write small
+     programs for your own or your children's use, you explore the limits
+     of your computer, and/or you type in programs you find in Atari
+     magazines.  Don't get me wrong--this category is much better than the
+     "game player" category.  The only thing against it is that it's
+     stagnant;  once you have found all the "tricks" of whatever computer
+     and language you're using, the programming isn't fun any more...it's a
+     chore.
+     
+          When you get to this point, you have to make a choice:  give up
+     programming altogether, or find some way to expand your programming
+     skills.  You could try a new language or a new computer, but these
+     novelties become boring quite quickly.  You might try to expand in a
+     different direction, but what could that direction be?  The answer
+     isn't obvious simply because you learned programming on Atari
+     computers and from Atari-oriented articles, books, and magazines.
+     Unfortunately, this "different direction" is almost unknown in the
+     Atari world.
+     
+          The name of this unknown direction?  Design.  That's right,
+     design...just like "artistic design" and "designer jeans", but just
+     like "mechanical design" too.  A word like that -- one that has ties
+     to the arts as well as to the sciences -- just has to have some
+     interesting applications in the world of programming.
+     
+          Indeed it does; every program ever written has some design.  In
+     fact, there are actually two types (or phases) of program design.  To
+     make things easier, I'll use the terms "conceptual design" and
+     "concrete design" to distinguish between these two types of design.
+     
+          Wait a minute...I just contradicted myself!  I said that "design"
+     was unheard of in the Atari world, and then I said that every program
+     had some design.  Which is the truth?  Both!  The loophole that gets
+     me out of the jam is this:  although every program has some design,
+     the design is not necessarily conscious.  The Atari world is a perfect
+     example of this, so I'll use it as a example.
+     
+          To begin with, 99.9% of Atari programs are for the programmer's
+     personal use.  This means that how well they look or work (i.e. their
+     design) is unimportant; theirs is an ad hoc or off-the-cuff design
+     that comes into being as the program is written.  The mere fact that
+     
+     Volume 1, Issue 2                                               Page 1
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     they actually work is enough for the author.  The other .1% of Atari
+     programs are commercial products or magazine software.  Unfortunately,
+     a good 90% of these programs started out in the "personal use" group
+     above, but became big enough or complex enough that someone thought
+     that they could sell them.  The salesmen obviously didn't look at
+     program design, they were too busy selling the product.  So what are
+     we left with?  .01%.  In other words, only once in every 10,000 Atari
+     programs did someone consciously consider the design of the program.
+     No wonder Atari programmers have never heard of design!
+     
+          Now, back to design.  Before I get into techniques that will help
+     you improve your design skills, I'd like to give meanings to the two
+     types of design I mentioned above.
+     
+          Conceptual design is sometimes called the "artistic" part of
+     program design, because it is the phase in which you let your
+     imagination run wild.  As soon as you get a program idea, the
+     conceptual design phase begins.  Some of the questions that come up in
+     conceptual design are:
+          
+          What functions does this application require?
+          What functions would make it exceptional?
+          How should these functions be presented to the user?
+     
+     After brainstorming for a while, you usually end up with a "need"
+     list, a "wish" list, and a bunch of pictures outlining the interface.
+     Once you've gotten these items, it's time to get your head out of the
+     clouds and work on the concrete design.
+     
+          In the concrete design phase you search for "algorithms" and
+     "techniques" that will allow your conceptual design to become a
+     reality.  "Algorithm" is a common term, but I'll give a definition
+     anyway, just so we all understand how I use the word.  An algorithm is
+     simply a list of steps that describe how to accomplish some task.
+     Neither the steps nor the task itself are dependent upon a specific
+     language or computer.  Some people don't add that second sentence, but
+     I consider it very important.  Later you will see my reasoning, but
+     for now let me simply say that I use "technique" to describe an
+     algorithm that is required by or designed for a specific language or
+     computer.
+     
+          The picture I've painted is very balanced and ordered:
+     
+     1.   You get a program idea
+     2.   You brainstorm a conceptual design
+     3.   You develop a concrete design from the conceptual design.
+     4.   You write the program based on the concrete design's "map".
+     
+     Unfortunately, this order of events never really happens.  Why?
+     Because steps 2 and 3, although separate in my description, are
+     actually rolled together and interdependent.  What I mean by this is
+     that certain concepts require certain algorithms, and certain
+     
+     Volume 1, Issue 2                                               Page 2
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     alogorithms provide certain functions.  In the end, what you see above
+     as a direct progression from step 2 to step 3 actually looks something
+     like:
+     
+          2 3 2 3 2 3 3 2 2 3 2 3 2 3 2 3 2 3 2 3 3 2 3,
+     
+     except longer.
+     
+          So much for the "simple beauty" of design.  Now, let's look at
+     some techniques that will help you recognize and improve you design
+     skills.  Please don't take these techniques as gospel, since I'm only
+     going to describe techniques that have helped me or friends of mine.
+     
+     Human Interface Design
+     ----------------------
+     
+          I address this topic first because I feel that the human
+     interface (or "user interface" if you desire) is the weakest part of
+     almost every Atari program.  This topic is too big to cover here, but
+     there is one book will get you thinking about human interface:
+     Elements of Friendly Software Design, by Paul Heckel.  If nothing
+     else, this book will make you feel better as a user.
+     
+     Design Theory
+     -------------
+     
+          Whenever you take the notion to write a major program, you will
+     most likely find that someone somewhere has already written such an
+     program.  In fact, someone has probably written a book about it.  If,
+     for example, you wanted to write a database, I am sure that you could
+     find at least 20 books on database theory.  Even if you understand
+     only 1% of what's said in these tomes, you will still know a little
+     more about databases than when you started, and that "little more"
+     might be enough to make you select a better design or choose a quicker
+     algorithm.
+     
+          Keep in mind, however, that these books are not computer or
+     language specific, even though they may use a certain language in
+     their examples, or discuss the problems of each design theory with
+     respect to real computers.
+     
+     Algorithms
+     ----------
+     
+          There are lots of algorithm books available.  A good one is
+     called Software Tools (it has various incarnations:  Software Tools in
+     Pascal, Software Tools in C, etc.), but it's a bit dense.  For a less
+     strenuous way to increase your general knowledge of algorithms,
+     subscribe to BYTE magazine and/or Dr. Dobb's Journal of Software
+     Tools.  These two generally have articles describing new (or improved)
+     algorithms.
+     
+     
+     Volume 1, Issue 2                                               Page 3
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+          Really, the only trick to learning algorithms is to find some
+     source that doesn't mix what I call "techniques" in with the real
+     algorithms.  If you can't find that, look for some source that at
+     least tells you which is which.  The result of not caring about this
+     is tragic:  I know someone who translated an algorithm from BASIC into
+     ACTION!, and kept several extraneous statements simply because they
+     were in the BASIC code.  The book never mentioned that these
+     statements were necessary only in Atari BASIC!
+     
+     Techniques
+     ----------
+     
+          Almost every book for the Atari is a technique improver, but some
+     are much better than others.  For the computer itself, I consider the
+     following books indispensable aids in understanding, improving and/or
+     developing techniques:
+     
+          Atari 400/800 Hardware Manual
+          Atari 400/800 Technical Reference (including OS listing)
+          De Re Atari
+          Mapping the Atari
+     
+     What you should use to understand the language you use better depends
+     entirely upon what's available for that language.  In most cases,
+     examples from other programmers work best, but sometimes you can
+     actually find a book the says stuff like "To recalibrate the frobisher
+     in Martian BASIC, simply use the following piece of code (and notice
+     our use of the XYZZY statement)".  These books can be a great help,
+     but you may frequently find that they discuss every technique but the
+     one you need to know about!
+     
+     
+          My final hint?  It's very simple, but very difficult to fulfill:
+     keep an open mind.  If someone tells you that she knows a better way,
+     pay attention!  You may just find that she can solve a lot of those
+     problems that you've been pushing to the back of your mind.
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 2                                               Page 4
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+                              General Information
+                              -------------------
+     
+     
+          We have some extra goodies available for Writer's Tool users:
+     Print-to-disk and printer drivers for SG10, LQ800, and other printers.
+     They are free, and they will be on our BBS.  Or Newsletter subscribers
+     may have the files copied on their newsletter disk by sending it back
+     to us.
+     
+          In looking over the contents of this quarter's newsletter, we
+     find that we seem to have a preponderance of BASIC XL/XE material.
+     There's a good reason for this:  we haven't received a lot of
+     submissions in other categories.
+     
+          We already have some things in the works for the next newsletter
+     that should make many more of you happy.  But remember, we DO want you
+     to submit articles, hints, etc.  And we DO pay a nominal amount upon
+     publication.
+     
+     
+     
+                          Tech Support Goes High-Tech
+                          ---------------------------
+     
+          As most of you are aware, OSS is a small company that works hard
+     to put out quality tools for the Atari community.  We try to do a lot
+     with our limited staff.
+     
+          Fortunately, we enjoy a reputation for good support.  We do try
+     to help customers with programming problems (even when the problems
+     are not related to our products--so often true in the ST world!).  We
+     don't always get updates out as quickly as we would like, but we try.
+     And besides, keep reading.
+     
+          Unfortunately, one thing that eats up massive amounts of our time
+     is the telephone.  When someone calls with a technical question,
+     somebody on our staff loses more than just the time required to talk
+     on the phone.  Just the process of interrupting a task often adds many
+     minutes to our job, trying to remember where we left off, etc.
+     
+          The net result of all this is that we have decided to try to
+     de-emphasize phone support.  It is much more efficient for us to
+     receive messages on our bulletin board system and then answer a batch
+     of questions all at once.  To this end, we are doing two things:
+     
+          (1) We are changing the hours of telephone-based technical
+          support.  Free phone support will now be available only at these
+          times:
+                  MONDAY     1:00PM to 5:00PM
+                  WEDNESDAY  1:00PM to 5:00PM
+                  FRIDAY     1:00PM to 5:00PM
+     
+     Volume 1, Issue 2                                               Page 5
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+          
+          (2) We are completely overhauling the BBS.  We will probably
+          install EXPRESS BBS (by Keith Ledbetter) as we believe it comes
+          closest to meeting our unique needs.  In any case, the BBS will
+          give us the ability to leave EMAIL for individual users so that
+          we can distribute answers more efficiently that we do now.  Call
+          408-446-3451 and watch us change.  But don't be surprised if it
+          takes a while.  Sigh.
+          
+     We think that we will be better able to serve more people with these
+     changes, and we certainly encourage you to become modem-active if you
+     are not already.
+     
+     
+     
+                          Changes to the OSS User BBS
+                          ---------------------------
+     
+          As a result of the new Technical Support policy, we have decided
+     to make some massive changes to the OSS User BBS to make it easier for
+     you to leave a question.  If you call the BBS number (408-446-3451)
+     and nothing happens, don't fret.  The system isn't broken, it's just
+     being worked on.  We will try to keep it up during peak hours, but
+     there is still a chance that you'll catch us off-guard.
+     
+          When you do get through, please make sure that you give us enough
+     information to solve the problem!  Make sure that you include the
+     following:
+          Your name, address, and phone number (voice, please),
+          The model of your Atari,
+          Any enhancements you've added to it,
+          The product and version of that product,
+          A quick description of the problem,
+          The exact steps that produce the problem, and
+          Patience.
+     
+     If the problem regards a specific program of yours, upload the program
+     in its entirety.  The time it takes us to respond depends entirely
+     upon the problem:  some have easy solutions while others are quite
+     difficult.  Obviously, it behooves you to isolate the problem as much
+     as possible -- a 10-line program that exhibits the problem is much
+     easier to scrutinize that a 700-line one!
+     
+     
+     
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 2                                               Page 6
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+                                Dare to be Bare!
+                                ----------------
+     
+          You may recall our announcement of BareWare in the last
+     newsletter.  As you may recall, we mentioned that we would be glad to
+     review any of your software that you thought would fit the BareWare
+     idea.  The response?  Zilch.  Does that mean that not a single one of
+     you has ever written a useful program?  We don't believe that for a
+     moment, so we think that modesty or fear of rejection must be holding
+     you back.
+     
+          So, until some of you decide that your stuff is useful, BareWare
+     products will remain restricted to stuff written by OSS associates and
+     employees.
+     
+     
+     
+                     Shape Editor and Animator for ACTION!
+                     -------------------------------------
+     
+          Are you tired of using monotone player missile graphics?  Don't
+     you wish there was some way you could create multicolored shapes and
+     them animate them without a lot of fuss?  Guess what...The Shape
+     Editor and Animator (SEA) for ACTION! is the answer to your prayers.
+     
+          SEA lets you create up to eight views, or frames, of a single
+     shape using a full-featured interactive editor.  Once you've made your
+     shape(s), you INCLUDE it and the provided shape animation routines in
+     your ACTION! program, and away you go!
+     
+     And, because SEA is BareWare, it costs you only $20!  To order, call
+     us at (408)446-3099.
+     
+     
+     
+                     Graphics Utilities Library for ACTION!
+                     --------------------------------------
+     
+          For years we've been touting the speed of ACTION! and extolling
+     its fitness for graphics applications.  Now we're backing up our
+     claims with hard evidence--a set of graphics routines written entirely
+     in ACTION!.  With the Graphics Utilities Library (GUL) kyou can add
+     those special touches to you ACTION! application without spending a
+     lot of time developing your own graphics core.
+     
+          So just what does GUL provide?  If it's advanced text-plotting
+     you want, GUL's got the answer: with its text handling routines you
+     can personalize your text using a variety of mix-and-match options
+     like bold, italic, lightened, artifacted, and even flipped!  If it's
+     advanced graphics you want, GUL's got that too:  with its graphics
+     routines you can access any graphics mode on any ACTION!-compatible
+     machine (including text windows in the GTIA modes!), and then frame,
+     
+     Volume 1, Issue 2                                               Page 7
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     paint, or invert various shapes at ACTION!'s lightning-fast speed.
+     
+     So just what does GUL cost?  That's the beauty of it; because GUL is
+     BareWare, it costs you only $20!  To order GUL, call us at
+     (408)446-3099.
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 2                                               Page 8
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+            Autorunning ACTION! Programs without the Runtime Library
+            --------------------------------------------------------
+     
+          As most of you ACTION! users know, DOS can load and execute
+     compiled ACTION! programs.  If you compiled the program with the
+     runtime library you don't even need to have the ACTION! cartridge in.
+     If you didn't compile with the runtime library, you can still run
+     compiled ACTION! code from DOS, provided that the cartridge is in and
+     has been initialized.
+     
+          This initialization is done when you first enter the cartridge,
+     but what if you want to run a compiled ACTION! program before then
+     (for example, as an AUTORUN.SYS file)?  The answer is simple:  do
+     ACTION!'s initialization yourself.  The piece of code below does just
+     that!  Simply insert it at the beginning of your main routine and
+     recompile the program.  Once you write out the new code (the "W"
+     command in the monitor) you can use it as an AUTORUN.SYS file!
+     
+     Here's the code you add to your main routine:
+          
+          ;add these local variable declarations:
+          BYTE errJmp = Error
+          CARD opnBuf = $9B
+          
+          ;and then start your routine with this code:
+          device = 0
+          errJmp = $4C
+          Error  = $B883 ;For ACTION! 3.6 only!
+          opnBuf = $580
+          Close(7)
+          Open(7,"K:",4,0)
+          ;now comes your "real" code
+     
+     P.S. - you might want to add a "Close(1)" after opening channel 7, as
+     this closes the channel DOS used to load your code!
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 2                                               Page 9
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+                             Using Dpeek and Dpoke
+                             ---------------------
+     
+          Any Atari magazine (Analog, Antic, etc.) you open will contain at
+     least one type-in BASIC program.  After typing in the program I
+     dutifully used the magazine's typo-checker to insure proper entry, and
+     then tested the program.
+     
+          Like any good BASIC programmer, I wanted to know what made the
+     program work.  Once I knew that I had typed in the program properly, I
+     began to break it down into its components so that I could learn how
+     it worked.  Unfortunately, these programs tended to have an amazing
+     number of PEEKs and POKEs, and lots of bizarre math to make them even
+     more confusing.  Then I discovered Dpeek and Dpoke.
+     
+          It only took me about a month to understand just what these two
+     new commands did, but it was time well spent.  Now I can take those
+     nightmarish PEEKs and POKEs in magazines and cut them down to size.
+     My technique is simple:  find a pair of sequential PEEKs or POKEs and
+     convert them to a Dpeek or a Dpoke.  Recognizing such a pair is easy
+     once you know what to look for.
+     
+     Converting Two PEEKs to a Dpeek
+     -------------------------------
+     
+     1.   Look for two sequential PEEKs of the form
+               PEEK(A)+PEEK(A+1)*256
+          where "A" is a variable or a number.  A common example is
+               RAMTOP=PEEK(741)+PEEK(742)*256
+     2.   Change the expression to
+               Dpeek(A)
+          Hence my example becomes
+               Ramtop=Dpeek(741)
+     
+     Converting Two POKEs to a Dpoke
+     -------------------------------
+     
+     1.   Look for two sequential POKEs of the form
+               POKE A,V-(INT(V/256)*256):POKE A+1,INT(V/256)
+          where "A" and "V" are variables or numbers.  Sometimes the math
+          is done in different statements, as in this example:
+               V1=INT(V/256)
+               POKE 741,V-V1*256:POKE 742,V1
+     2.   Replace the math and the two POKEs with
+               Dpoke A,V
+          Hence my example becomes
+               Dpoke 741,V
+     
+     
+          As you might have noticed, the giveaway that makes finding the
+     proper PEEKs and POKEs easy is the use of the magic number 256.  99%
+     of the time you find this number in PEEK or POKE math, you have found
+     
+     Volume 1, Issue 2                                              Page 10
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     a Dpeek or Dpoke in disguise.  And believe me, revealing these
+     disguised commands can make a magazine program lots easier to
+     understand!
+     
+     
+                          AUTORUN with BASIC XL or XE
+                          ---------------------------
+     
+          There are many different programs floating around that are
+     designed to produce an AUTORUN.SYS file for Atari BASIC programs.
+     Generally, the idea behind this is to allow you, as the programmer, to
+     create a "boot" disk that will automatically load and run a BASIC
+     program when your machine is turned on.
+     
+          Some of these programs use "secret" locations with Atari BASIC in
+     order to accomplish their missions.  Others "print" data to the screen
+     and then put the screen editor into forced read mode (don't worry
+     about what that means if you don't know).  Both of these methods may
+     fail with BASIC XL and/or BASIC XE (though most versions of the screen
+     read method should work with BASIC XE and newer BASIC XL cartridges).
+     
+          The best of these programs are the ones that do it "cleanly" and
+     "legally."  The actually replace the "E:" driver temporarily and
+     "feed" characters to BASIC until the appropriate commands, etc., have
+     been given.  This implies that such an AUTORUN.SYS program could feed
+     an entire string of BASIC commands to a program (e.g., to change
+     graphics modes, put up a "Please Wait" message, and then load and run
+     a program).  We suggest you find and use a program of this form, since
+     it will work with almost any cartridge based product (including MAC/65
+     but NOT ACTION).
+     
+          If you can't locate any better source of such an AUTORUN.SYS
+     file, look no further than DOS 2.5 from Atari.  The program called
+     "SETUP.COM" which is part of a normal DOS 2.5 master disk will create
+     an AUTORUN.SYS file for you, giving you several options.  (You can
+     even ask it to have the AUTORUN.SYS file set up the 850's "R:" driver
+     for you.)  It does not allow an arbitrary set of commands to be
+     passed, but it does allow you to choose the name of the BASIC program
+     to run.  Try it; you may like it.  (Besides, we wrote it--in ACTION!
+     of course.)
+     
+     
+                              RunTime for BASIC XE
+                              --------------------
+     
+          Many people have asked us about the possibility of a runtime
+     version of BASIC XE, similar to the runtime version of BASIC XL that
+     is found on the BASIC XL ToolKit.  Sorry, but it just can't be done.
+     
+          The BASIC XL runtime is 11K bytes.  Assuming little change in
+     strategy, a BASIC XE runtime would be 21K bytes!  There is simply no
+     room in memory for such an interpreter.  (See, there really IS a
+     
+     Volume 1, Issue 2                                              Page 11
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     reason for our bank-selected cartridges.)
+     
+          If you would like to distribute and/or sell BASIC programs, we
+     encourage you to investigate the BASIC XL runtime version on the
+     ToolKit.  All you pay for is the ToolKit itself; there are no
+     additional royalties, fees, etc.
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 2                                              Page 12
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+                          "Skipping" Macros for MAC/65
+                          ----------------------------
+     
+          In the course of your assembly language programming you have
+     probably run into the following scenario at least once -- "Based on
+     some test, I want to perform one of two small actions, but then
+     continue with the same code."  In psuedo-code this looks like:
+     
+               CMP #Test  ;Make Test
+               BEQ A2     ;Branch to action 2
+          A1              ;Do action 1
+               JMP CONT   ;Jump around action 2
+          A2              ;Do action 2
+          
+          CONT            ;Continue combined code
+     
+          The jump (or branch, if you're lucky) around the alternate action
+     is unsightly, time consuming, and a general pain.  Isn't there a way
+     around it?  YES, but only under certain conditions.  If one of the
+     "small actions" is a one- or two-byte instruction, you can make the
+     other action skip over it without a jump or a branch.  For example,
+     look at this code:
+     
+     1000       LDA SHORTEN    ;Shorten response?
+     1010       BNE SHORT      ;Yes, set up length
+     1020       LDA LENGTHS,X  ;No, get length
+     1030       TAY
+     1040       JMP CONT1      ;No branch: can't guarantee value
+     1050 SHORT LDY #5         ;Use short length
+     1060 CONT1 LDA (PTR),Y
+     1070       ...
+     
+     One of the actions (line 1050) produces only two bytes of code, and
+     yet we used three bytes (line 1040) just to jump around it!  What we
+     need is to change line 1040 to
+     
+     1040       SKIP2
+     
+     where "SKIP2" is a macro that simply skips the next two bytes of code.
+     Looking through our trusty 6502 instruction set, we find that "BIT
+     absolute" operates on two bytes, and changes only the processor status
+     flags.  Hence our "SKIP2" macro is:
+     
+          .MACRO SKIP2
+          .BYTE $2C ;Op code for BIT absolute
+          .ENDM
+     
+          How does this work?  Well, what is seen as "LDY #5" in line 1050
+     of our source becomes the address used by the BIT absolute in our
+     SKIP2 macro if the "long response" code (lines 1020-1040) gets
+     executed.  This effectively "skips" the "LDY #5" instruction.
+     
+     
+     Volume 1, Issue 2                                              Page 13
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+          "But what about the status flags?"  Good question, because the
+     BIT instruction, if executed, will alter the N, V, and Z flags.  This
+     means that this skip technique can only be used in places where you
+     aren't depending upon these flags.
+     
+          The SKIP1 macro uses this same principle, but uses the op code
+     for "BIT Zero Page" ($24) instead of the BIT absolute.
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 2                                              Page 14
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+                    Make Outlines with "The Writer's Tool"!
+                    ---------------------------------------
+     
+          It seems almost impossible to get the indention right when you're
+     creating an outline, because it's hard to keep indention in mind when
+     you are busy deciding just what goes in the outline!  Dwight Collin of
+     Pittsford, NY has a simple solution to this problem -- he used the
+     "phrase buffer" capacity of the Writer's Tool to make "Phrase Files"
+     for two standard types of outlines.  (If you've forgotten what phrase
+     buffers are, or just need a refresher, please consult your WT manual
+     before continuing.)
+     
+          Dwight's own words sum up his technique the best, so we'll quote
+     his submission letter:  "My solution is to load phrase buffers at the
+     beginning of the document -- phrase buffers that will automatically
+     insert the correct indentation at the beginning of each section in the
+     outline.  For example, if I am going to write a paragraph at the Roman
+     Numeral I, II, III, etc. level (which is called 'level 1'), I simply
+     press 'Option 1' and the spacing for the first line indent and the
+     indentation for all following lines are set for that paragraph."
+     
+     Using the Outline Files
+     ------------------------
+     
+          Dwight provides two different phrase files -- one for the
+     standard "hanging outdent" style and one for the less common
+     "paragraph indent" style.  (These files are named OUTLN1.PHR and
+     OUTLN2.PHR on the newsletter disk.)
+     
+          To use one of these outline files, simply load it at the absolute
+     beginning of your document.  This is easy if you are just beginning an
+     outline:  load the outline file, move to the end of the text buffer,
+     and start writing the outline.  When you want to save your outline,
+     make sure you save it using a different file name; otherwise you will
+     overwrite the outline phrase file!
+     
+          If you have already started an outline, don't despair!  Simply
+     load the phrase file for the style you want to use, move to the end of
+     the text buffer, and then return to the "DiskIO" menu.  Now load your
+     outline.  Voila -- you now have the outline phrases at the beginning
+     of your outline.
+     
+          Now you are ready to make use of the outline phrases.  Whenever
+     you want to move to a different level in your outline, simply press
+     the "Option" key and then the numeral which corresponds to the level
+     you want.  For example, let's say that you are at the second level and
+     want to go into the third level to add more detail.  Press "Option"
+     and then "3" before starting the third level text, and the indention
+     will be set up automatically!  This scheme works in reverse as well.
+     To return to level 1 (from, say, level 4), simply press "Option" and
+     then "1".
+     
+     
+     Volume 1, Issue 2                                              Page 15
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 2                                              Page 16
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+                          Atari at CES:  New Computers
+                          ----------------------------
+     
+          At CES (Jan 8-11 in Las Vegas) Atari announced several new
+     computers.  Unfortunately, none of them are in the XE line.  (Don't
+     fret -- the "Game Machines" article has some good news for you 8-bit
+     programmers.)
+     
+     New St's
+     --------
+     
+          As expected, three of the new arrivals are ST's, but with several
+     news twists.  To begin with, the computer and keyboard are separate
+     (with a phone jack connector ala IBM).  This has one distinct
+     advantage:  when you spill coffee on the keyboard you won't fry the
+     CPU.  The mouse and joystick ports are on the back of the keyboard
+     (near the center for you lefties!), while the rest of the ports (DMA,
+     floppy disk, MIDI, etc.) are on the back of the CPU box.  The CPU box
+     is designed as a monitor stand, and has a built-in 3 1/2" drive.  If
+     you think that all of the changes are cosmetic, you're wrong!  These
+     new machines come with the blitter chip and use 1-Meg DRAMs.
+     
+          So what makes these new ST's different from each other?  Only one
+     thing:  memory.  They come with 1, 2, or 4 Meg of memory.
+     
+     More ST Goodies
+     ---------------
+     
+          As if this were not enough to spur ST sales, Atari showed their
+     new 20-Meg hard disk (which just happens to sit nicely atop the new
+     CPU boxes, adding only 1" to the stack height) and showed a 300
+     dot-per-inch laser printer for under $1500.  Atari got the price on
+     the printer so low by letting the ST run it, via the DMA port, thus
+     cutting out the onboard CPU and memory normally required in a laser
+     printer.  If third-party producers (like OSS) get hopping, you'll soon
+     see a complete desktop publishing system for same price as Apple's
+     LaserWriter.
+     
+     An Atari PC?
+     ------------
+     
+          The shocker at CES was Atari's announcement of an IBM PC clone.
+     That's right, we said "IBM PC clone".  And, true to Tramiel form, this
+     clone offers more features for less money.  For those of you who know
+     IBM jargon, some of the features are:
+               8.0/4.77 MHz 8088 CPU (switch selectable)
+               Socket for 8087 Coprocessor
+               512K system RAM (expandable to 640K on motherboard)
+               256K display RAM
+               Built-in 5 1/4" DS/SD disk drive
+               Built-in EGA, CGA, Hercules, and mono video
+               Hi-res EGA monitor (720 x 348)
+     
+     Volume 1, Issue 2                                              Page 17
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+               Mouse port and mouse
+               Standard parallel and RS232C serial ports
+               84 key PC/XT keyboard
+     
+     Want to guess at the price?  Would you believe $699.99?  We didn't,
+     considering that most EGA monitors alone cost that much!  Just to add
+     to the "sounds too good to be true" atmosphere, Atari says that you
+     can hook a 3 1/2" ST drive to it and read (and write) disks from IBM
+     laptop computers!  Just to set the hook, Atari also said that they
+     would be producing an expansion box for it.  Even more unbelievable
+     are the rumors that GEM and Microsoft Windows will be part of the
+     final package.  Maybe it's finally time to buy that PC compatible
+     you've always wanted.
+     
+     
+     
+                          Atari at CES:  Game Machines
+                          ----------------------------
+     
+          Believe it or not, Atari is back into video games and game
+     machines.  The 2600 is back, and, with the new packaging, who can
+     resist its "under $50" retail price?  Its ability to keep the kids
+     occupied is well worth that price.
+     
+          Atari also showed the elusive 7800 game machine.  Those hardcore
+     Atari enthusiasts among you may remember that this machine was
+     introduced just before the Tramiels' take-over.  Its graphics and
+     sound are better than the XE's, and can use the "Supergame" cartridges
+     from Broderbund, Electronic Arts, and the like.  It will sell for
+     "under $90" and include the famous Pole Position from Atari.
+     
+          Now, the announcement you've been waiting for:  an XE game
+     system.  Although it looks very different, it is actually a 65XE
+     without the keyboard.  That means that you can write games for it
+     (provided you don't require a keyboard).  This machine has the console
+     keys, joystick ports, and an I/O connector (which means that
+     disk-based games aren't out of the question).  Also included will be a
+     gun, which makes us think that this machine is designed to compete
+     with the Nintendo game system.  Unlike the Nintendo system, the XE
+     system will convert into a "real" computer with the addition of a
+     plug-in keyboard!
+     
+          It may seem that Atari is turning its back on its 6502 computers,
+     but this new game system means that you still have a market, as long
+     as you write games.
+     
+     
+     
+
+
+
+
+     
+     Volume 1, Issue 2                                              Page 18
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+                            An ACTION! Menu Manager
+                            -----------------------
+     
+          On your newsletter disk you will find a file titled MENU.ACT.
+     This file contains several support routines and one access routine,
+     DoMenu.  So what is this useful for?  Well, it makes menus like those
+     in this newsletter a piece of cake!  You simply provide the DoMenu
+     routine with a menu title, subtitle, and a list of options, and the
+     routine will display them, solicit a response, and return the index of
+     that response.
+     
+     How it All Works
+     ----------------
+     
+          Using DoMenu is quite simple:  pass it a title, subtitle, and
+     options list (in that order), and it will return the number of the
+     option the user selected (as a BYTE value).  Here's an example:
+     
+          PROC Main()
+          
+            BYTE choice
+          
+            BYTE ARRAY
+              title(0)="Welcome to Greezle-Drab",
+              prompt(0)="Would you like to"
+          
+            choice=DoMenu(title,prompt,Options)
+            ...
+     
+     So far so good, but how do you get the menu options into "Options"?
+     The answer itself is simple, "you compile them in", but the technique
+     used to accomplish this is somewhat unusual.  Take this PROCedure as
+     an example:
+     
+          PROC Chores()
+          
+            BYTE ARRAY
+              s1(0)="Do Homework",
+              s2(0)="Wash the car",
+              s3(0)="Feed the dog",
+              s4(0)="Empty the trash",
+              s5(0)="Fix your bike",
+              s6(0)="Mow the lawn"
+          
+            [ 6 $00
+              s1 s2 s3 s4 s5 s6
+            ]
+          RETURN
+     
+          What does this strange looking procedure accomplish?  Each of the
+     local variables (s1..s6) declares a fixed string (the '(0)' is
+     required to insure that ACTION! treats the following '="string"'
+     
+     Volume 1, Issue 2                                              Page 19
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     properly), and there's nothing too exciting or confusing about them.
+     When we look at the code for the routine, however, our hearts quaiver
+     -- it's obviously a code block, but what does it do?
+     
+          Believe it or not, this code block is a CARD ARRAY!  The 0th
+     element of this array is '6 $00', which is the same as saying "the
+     CARD, or two-byte, representation of the number six."  Elements 1
+     through 6 are the addresses of the strings we just declared as local
+     variables!  In essence, we have a String Array:  the 0th element tells
+     us how many strings are in the array (6 in this case), and the
+     following elements are the addresses of the strings themselves!
+     
+          This String Array disguised as a CARD ARRAY is exactly the sort
+     of thing we want to pass as the "Options" parameter to DoMenu.  In
+     fact, we could use our "PROC Chores()" pseudo-array as the options
+     list in the first example simply by changing the DoMenu call to
+     
+            choice=DoMenu(title,prompt,Chores)
+     
+     That's right -- we simply use the name of our now familiar String
+     Array PROC in our DoMenu call.  Now notice that all of the parameters
+     in this DoMenu call are compiled directly into the program:  it didn't
+     take a single execution-time statement to set up the data for the
+     menu, and it only takes one to perform the menu.
+     
+     DoMenu Particulars
+     ------------------
+     
+     Usage Example:
+     
+          index=DoMenu(title,subtitle,options)
+     
+     Parameters/Return Values:
+     
+          title  A string (BYTE ARRAY) denoting the title of the menu.
+               This string is centered and printed on line 0.  If the value
+               0 is used instead of a string, DoMenu will print no title.
+          subtitle  A string (BYTE ARRAY) denoting the subtitle of the
+               menu.  This string is centered and printed on line 2.  If
+               the value 0 is used instead of a string, DoMenu will print
+               no title.
+          options  A CARD ARRAY that is interpreted as a String Array (i.e.
+               element 0 denotes the number of strings, and elements 1
+               through that number are the addresses of the strings) whose
+               elements are the ordered options of the menu.
+          index  A BYTE value RETURNed by DoMenu, corresponding to the
+               index of the menu option chosen by the user.  If the user
+               exited the menu by pressing ESCape rather than making a menu
+               selection, the value returned is 0.
+     
+     Purpose/Usage Notes:
+     
+     
+     Volume 1, Issue 2                                              Page 20
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+          This routine puts a menu on the screen and then waits for and
+          responds to the user's actions.  In putting up the menu, DoMenu
+          follows these steps:
+               Make a Graphics(0) call.
+               Center and print the title (if any) on line 0.
+               Center and print the subtitle (if any) on line 2.
+               Determine whether the options should be single or double
+               spaced.
+               Center and print the options, keeping track of the longest
+               one.
+               Center and print the menu instructions.
+          
+          Once it has drawn the menu, DoMenu inverts the first option and
+          then waits for the user.  The active keys and their effects are:
+               Up        Moves bar up one option (with wraparound)
+               Down      Moves bar down one option (with wraparound)
+               Return    Exits menu, selecting the inverted option
+               Escape    Exits menu without selecting an option
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 2                                              Page 21
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+                         Find and Replace with BASIC XL
+                         ------------------------------
+     
+     
+          Many of you have asked for the ability to search for a variable
+     or string or whatever in your BASIC XL or BASIC XE program.  And, of
+     course, most of you really need the ability to replace text, also.
+     Well, the listing on this disk titled "FINDREP.LIS" is not a cure-all,
+     but it should help in some situations.
+     
+          To use FINDREP, LOAD the program you want to work with first.
+     Then use this command
+             ENTER D:FINDREP
+     (You did remember that you don't need quotes, didn't you?)  Next, type
+     in:
+             GOTO 32000
+     
+          FINDREP will prompt you for five pieces of information:
+          
+          SEARCH FOR::
+               You should respond with the string of characters you want to
+          find or change, followed by RETURN.
+          
+          CHANGE  TO::
+               If you want to make a change, enter the new string of
+          characters here, followed by RETURN.  If you only want to find a
+          string, enter ESC-ESC here (that is, press the ESCape key twice,
+          so that the little ESC character appears on the screen) followed
+          by RETURN.
+          
+          QUERY EACH? 
+               Proper answers are "Y" or "N" (without the quotes, of
+          course), but you can enter the lower case and/or inverse video
+          version of those characters.  Do NOT hit RETURN after this
+          response.  (Note: You will not see this prompt if you are not
+          making changes.)
+          
+          START LINE::
+               Give the first line number at which to begin looking for the
+          string.  Hitting just RETURN causes FINDREP to begin looking at
+          the start of your program.
+          
+          END LINE::
+               Give the last line number to use in the search.  Hitting
+          just RETURN causes FINDREP to look to the end of your program.
+          
+          And that's about it!  It works.  And even though it is written in
+     BASIC, it works reasonably fast.
+     
+     
+                                     BUT...
+                                     ------
+     
+     Volume 1, Issue 2                                              Page 22
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     
+          However, there are some things to be aware of when using FINDREP.
+     
+     1.   FINDREP uses line numbers from 32000 to 32046.  You can not use
+     it if your program uses any of these same line numbers.  You can not
+     use it to find or change anything in lines numbered 32000 or higher.
+     
+     2.   FINDREP uses BASIC XL's "LIST" command to do its work.  As you
+     are no doubt aware, LIST normally displays a program in mixed upper
+     and lower case.  We found it more convenient to use upper case only
+     for this program, so FINDREP does a "SET 5,0" in line 32002.  If you
+     prefer the mixed cases, remove or change this statement.
+     
+     3.   FINDREP uses up space in memory.  If your program is a large one,
+     you may not be able to use FINDREP.
+     
+     4.   The biggest weakness of FINDREP is that, because it is written in
+     BASIC, it uses up many of your variable slots (and remember that you
+     are limited to 128, total).  Specifically, it uses 12 variables.  All
+     start with the letter "Q" except for one called "PC".  If your program
+     uses more than 116 different variables, you won't be able to use
+     FINDREP.
+     
+     5.   In the same vein:  If you use FINDREP to change the name of a
+     variable, you will end up with BOTH variables in your variable name
+     table.  Again, the 128 maximum applies, so we recommend using FINDREP
+     only with programs using no more than 100 to 110 different variables.
+     
+     6.   When you have finished making changes in your program, you CAN
+     get rid of FINDREP by simply giving the command
+            DELETE 32000,32046
+     However, this will leave all of FINDREP's variables sitting around in
+     your variable name table.  We suggest that you follow that DELETE with
+     a command such as
+            LIST "D:TEMP"
+     (quotes ARE needed with LIST!) followed by another pair of commands
+     (which must be on separate lines):
+            NEW
+            ENTER D:TEMP
+     
+          This will clean up your variable table and free up a little bit
+     of memory, so it is a good idea in any case.
+     
+     7.   You CAN use this routine for some unusual purposes.  For example,
+     you can duplicate a range of lines by changing the line numbers!
+     
+     
+                                    BASIC XE
+                                    --------
+     
+          You CAN use FINDREP with BASIC XE, but NOT when BASIC XE is in
+     extended mode.  Sorry, but that's the limitation.  We are not sure
+     
+     Volume 1, Issue 2                                              Page 23
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     that a version to work in extended mode is worthwhile, since a program
+     big enough to need extending probably uses too many variables for
+     FINDREP anyway.  However, if enough of you ask for it, we will attempt
+     to modify FINDREP for extended BASIC XE in a future newsletter.
+     
+     
+                                  How it Works
+                                  ------------
+     
+          The principle behind FINDREP is actually pretty simple:
+     
+          1. We LIST a line to the screen.
+          
+          2. We used forced screen read mode to INPUT that line into a
+          string variable.
+          
+          3. We look for your target string in the string variable and
+          replace it, if necessary.  We build the replacement string in
+          another variable.
+          
+          4. If we modified the line, we PRINT it on the screen and again
+          use forced read mode to ENTER the line back into the program.
+          
+          Some of the programming "tricks" we used in FINDREP are worth
+     studying, we think, so have fun!  Especially, you might be interested
+     in our method of "blanking" the screen (lines 32034) and our use of
+     the third parameter of the FIND function (lines 32020 and 32031).
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 2                                              Page 24
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+                        Leases and Loans are Interesting
+                        --------------------------------
+     
+     
+     NOTE:  This program may be used with most fixed-rate loans and leases.
+     It is not appropriate for use with variable interest rate loans.  It
+     will calculate loan interest rates in the range 1% APR to 99% APR.
+     
+     
+          The program accompanying this documentation seems especially
+     timely.  Since the interest on an auto loan is no longer fully
+     deductible on your income tax (and it will soon become completely
+     non-deductible), many automobile dealers are really pushing leases as
+     a good alternative.  Obviously, we don't know your particular tax
+     situation, and we certainly would not want you to rely solely on a
+     program we have supplied you for something vital like this, yet still
+     you might find our program interesting.
+     
+          The file "LEASE.LIS" on this newsletter disk is a listed form of
+     a BASIC XL/XE program that will calculate the interest rate of an
+     automobile lease.  The most common form of an auto lease provides for
+     all or most of the following:
+     
+          (1) A vehicle lease is "worth" a certain amount.  If you were to
+          try to "pay off" the lease one minute after you signed on the
+          dotted line, this is the amount you would have to pay.  (Although
+          early pre-payment penalties might also be assessed; we ignore
+          such penalties.)
+          
+          (2) The "worth" of the lease is usually based on the "retail"
+          price of the auto minus any down payments, etc., that you might
+          be required to make.  (Watch out, here!  It is strange how the
+          "retail price" of a leased auto is often higher that the "retail
+          price" of that same auto if it is sold for cash.  The mysteries
+          of automobile shopping.)  In any case, we will call the "worth"
+          the "capitalized value" of the lease.
+          
+          (3) You are generally required to make monthly payments of a
+          certain amount over a certain period of time.  For comparison
+          purposes, you should probably not consider that portion of the
+          payment which goes towards sales tax, insurance, etc.
+          (Exception:  If you want to compare lease terms versus--for
+          example only--a bank loan, and if the bank loan will be used to
+          finance sales tax and insurance, then you should include these
+          amounts in your calculations on the lease, also.  This is an
+          unusual situation, however.)
+          
+          (4) At the end of the lease, the auto is assumed to be worth
+          something.  Depending on the terms of the lease, you may have to
+          satisfy this "bring-back" value in one of several ways.  In some
+          leases, so long as the vehicle is in good condition and so long
+          as you have not exceeded a specified milage on the auto, then you
+     
+     Volume 1, Issue 2                                              Page 25
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+          simply walk away from the car.  With other leases, the car is
+          sold to the highest bidder (often the dealer himself!) and you
+          owe the difference between the price paid and the bring-back
+          value stated in the lease.  (In theory, the lessor could owe you.
+          Any bets?)  Still other leases make similar provisions, except
+          that you may pay the dealer the bring-back value and keep the
+          car.  In specifying the "bring-back" value to this program, you
+          may or may not want to use the official value in the lease
+          agreement.  (For example, if you expect to drive many more miles
+          than are called for in the lease, the auto's value at the end of
+          the lease will almost certainly be less than that called for in
+          the agreement.)
+          
+          As you can see, a lease is not always as simple and "clean" a
+     deal as a loan is.  Still, you might be surprised at how good some
+     lease terms and interest rates really are, once you start using our
+     program to make comparisons.
+     
+     
+                        Calculating Loan Interest Rates
+                        -------------------------------
+     
+     
+          Speaking of which.  One nice feature of this program is that it
+     can be used for most fixed interest rate loans and leases!
+     
+          One thing that might be obvious immediately is that balloon
+     payment loans (common in some parts of the country as "seconds" on
+     houses and land) are essentially identical in structure to an auto
+     lease!  If you think of the balloon payment at the end of the term as
+     the "bring-back" value of that loan, then you can use this program for
+     such loans.
+     
+          Not so obvious is that even a standard, fully-amortized loan
+     (where the entire amount of the loan is repaid at the end of the term
+     of the loan) can be calculated in the same way.  After all, who said
+     that the "bring-back" value has to be greater than zero?!?  Simply
+     enter zero (0) for the bring-back value and this program does it all
+     for you.
+     
+     
+                              It Goes Down Slowly
+                              -------------------
+     
+     
+          This simple program adds one other feature of interest:  the
+     ability to display an amortization schedule for your lease or loan!
+     In other words, you can see just how much of that auto or house you
+     actually own after making 17 monthly payments.  (Shockingly little, in
+     the case of a 30-year house loan!)
+     
+          Since this is a "self-help" disk, we will leave you a simple
+     
+     Volume 1, Issue 2                                              Page 26
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     task.  If you would like the program to print the results of its
+     calculations to a printer, then you need to make some modifications to
+     it.  Generally, this is a simple matter of changing several PRINT
+     statements to LPRINTs (in the last 25 lines or so).
+     
+     
+                                If You Want More
+                                ----------------
+     
+     
+          This program does one and only one thing:  it calculates the
+     interest rate of a fixed-rate loan or lease, given the starting and
+     ending values of the loan/lease, the amount of the monthly payment,
+     and the number of payments.  If we were to provide you with the
+     "ultimate" program, it would handle variable rate loans, would allow
+     you to calculate any one of the variables, etc.
+     
+          The only real toughie is a variable rate loan.  When a loan is
+     tied to an index (e.g., the prime rate or the rate on U.S. Treasury
+     certificates), the best anyone can do is try to predict what the
+     interest rate in any given period will be.  In the past, we have
+     written programs that allow you to make certain assumptions about such
+     loans and which then attempt to guesstimate your overall interest rate
+     and/or monthly payments.  If there is enough interest, we could
+     publish such a program here, but we caution that using it is usually a
+     trial and error procedure.
+     
+          On the other hand, the most common thing that most people want to
+     know about a loan is "What will my payments be?"  For most fixed-rate
+     loans, you already know the value of the loan (called "present value"
+     in many circles), the interest rate, and the duration (number of
+     payments) of the loan.  Given this wealth of information, the
+     calculation of the payment is straightforward.  The mathematical
+     formula is:
+     
+                         Value  *  I
+          Payment = _______________________
+                                     -N
+                        1 - ( 1 + I )
+          
+     Where "I" is the "periodic interest rate" and "N" is the "number of
+     periods."  Watch out:  "periodic interest rate" means, for example the
+     MONTHLY rate if "N" is given as a number of months.  Further, "I" is
+     NOT expressed as a percent, but as a fraction (that is, the percentage
+     divided by 100).  All this is not really as bad as it sounds:  Most
+     consumer loans are based on monthly payments and a given "APR" (Annual
+     Percentage Rate), and in that case you can try this little program:
+          
+          10 Input "Value of loan ? ",Value
+          20 Input "% APR of loan ? ",Apr
+          30 Input "How many monthly payments ? ",N
+          40 I=Apr/1200 : REM 12 months per year & convert from %
+     
+     Volume 1, Issue 2                                              Page 27
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+          50 Payment=Value*I/(1-(1+I)^-N)
+          60 Print Using "Monthly payment will be $$$,$$$.##",Payment
+     
+          BASIC XL and BASIC XE are especially well suited for quicky
+     programs of this type.  Try them.  Try your hand at some simple math.
+     You might be surprised at how easy it can be.
+     
+     
+                       Commentary on the Program Listing
+                       ---------------------------------
+     
+     
+          This part is for those of you interested in the programming
+     techniques we used.
+     
+          If you examine the formula for a loan payment used above, you may
+     note that it the algebra to calculate "Value" given the other three
+     numbers is trivial.
+     
+                                            -N
+                               1 - ( 1 + I )
+          Value = Payment * ___________________
+                                     I
+     
+          On the other hand, you may have to work a while to figure out how
+     to calculate "N" when it is the only unknown.
+     
+                   Log( 1 - Value*I/Payment )
+          N = -  ______________________________
+                         Log( 1 + I )
+     
+          And we won't even tease you:  You can NOT use algebra to find "I"
+     when it is the only unknown.  The easiest way to solve for "I" is
+     (what else!) with a computer by doing successive approximations.
+     Thus, if you look in the listing, you will see a section of code
+     headed by the REMark "FIND RATE BY TRIAL AND ERROR."
+     
+          Immediately after that remark is the line which starts off our
+     trial and error solution.  We "assume" that the APR of the lease/loan
+     is 50%.  This is a pretty ridiculous assumption (we hope!), but it
+     doesn't really matter as we shall se.
+     
+          In the loop that follows, the assumed APR is used to test whether
+     the conditions of the loan terms are fulfilled.  First, we pretend
+     that the loan is actually a fixed-rate, fully amortized loan; and, by
+     using our known payment, assumed interest rate, and value, we can
+     calculate the number of months it will take to pay off the loan.
+     
+          If the number of months is less than the term of the lease, then
+     obviously the assumed APR is too low, so we must increase it.
+     
+          When the number of months is greater than the term of the lease,
+     
+     Volume 1, Issue 2                                              Page 28
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     we then find out what the balance on the loan will be at the
+     expiration of the term.  This is done by finding an artificial value
+     ("Temp") of an artificial loan that starts at the expiration of the
+     real loan and runs to the end of the assumed, fully-amortized loan.
+     
+          If this balance is too high, then the APR is too high.  If it is
+     too low, then the APR is too low.  In any case, we use the value of
+     "Inc" to adjust our assumed "Apr" accordingly.
+     
+          We then decrease the value of "Inc" by half and do this entire
+     process again, until the APR is close enough to actual for our
+     purposes.  (Notice that we use the sign of "Inc" to control which
+     direction we will adjust "Apr"--this is a cute trick, but it could
+     have been done several other ways.)
+     
+          All fairly straightforward.  All fairly simple.  Once you
+     understand the principles involved.  There are a couple of "PRINT"
+     lines which have been turned into remarks in the listing.  You might
+     wish to change them back to PRINTs to see the program in action.  It's
+     almost fun.
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 2                                              Page 29
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+                            Just Another Pretty Face
+                            ------------------------
+     
+     
+          The BASIC XL/XE program titled "FACES.LIS" on this disk was
+     written to demonstrate several programming techniques.  It is NOT a
+     "failsafe" program, and you should not expand on it without
+     understanding it.
+     
+          There are only four players and four missiles in the Atari
+     graphics hardware, and sometimes it is nice to have many more than
+     that number of objects jumping around on the screen at the same time.
+     ("Space Invaders" is the earliest example that comes to mind.)  How
+     can we move several objects at once?  The answer comes from redefined
+     characters.
+     
+          This program establishes a custom character set and then randomly
+     places a particular group of characters on the screen.  By changing
+     what characters are in that group, we thus animate the screen.  In and
+     of itself, that is not very exciting.  It is pretty much equivalent to
+     writing a program that looks like this:
+     
+          10 X=Random(0,39) : Y=Random(0,22)
+          20 Position X,Y : Print "A";
+          30 For I=1 To 200:Next I
+          40 Position X,Y : Print "B";
+          50 For I=1 To 200:Next I
+          60 Position X,Y : Print "C";
+          70 For I=1 To 200:Next I
+          80 Position X,Y : Print "D";
+          90 For I=1 To 200:Next I
+          100 Position X,Y : Print "E";
+          110 For I=1 To 200:Next I
+          120 Position X,Y : Print "F";
+          130 For I=1 To 200:Next I
+          140 Goto 10
+          
+          Ah!  But suppose that instead of simply letters we were
+     "printing" little pictures.  And further suppose that the little
+     pictures showed some object moving.  (A little man jumping up and
+     down?)  All of a sudden, we have animation!
+     
+          This program goes just a little ways beyond that.  First of all,
+     it uses four characters to make one screen figure.  This way, we can
+     get more detail.  Secondly, we make space for the screen figure to be
+     three characters high.  This allows us to move the figure up and down
+     through a larger part of the screen.
+     
+          Enough.  Let's go through the program by lines.
+     
+          1000-1040 You should know all this stuff.  If not, get "Mapping
+     the Atari" or an equivalent book.
+     
+     Volume 1, Issue 2                                              Page 30
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     
+          1050 This is a bad place for a character set, in general.  We
+     used it because it will work for our example.  Find a better way for
+     you own programs, though.
+     
+          1060 A trick to quickly clear a chunk of memory.
+     
+          1100,1120 The variable "Ch$" is used to exhibit two of the neat
+     features of BASIC XL/XE.  First, you can READ from a DATA statement
+     into any part of a string.  (Atari BASIC makes you use the entire
+     string.)  Second, you can take the VALue of a hex number if it is
+     preceded by a dollar sign!  (But BASIC XE user can use SET to get rid
+     of this capability on those rare occasions when it would cause
+     problems.  See your manual.)
+     
+          1110-1150 We are reading in four of the set of six basic
+     redefined characters.  The other two characters in our basic set are
+     all zero bits, so they were cleared properly in line 1060.
+     
+          1170-1190 Now we generate the other "positions" for our character
+     in other groups of six redefined characters.  Notice that we are
+     shifting our figure one line "down" in each group.
+     
+          1192-1194 If you look at the DATA (end of the program), you will
+     notice that each hex digit is made up of only 1's and 4' or
+     combinations thereof.  By doubling each value (as line 1193 does),
+     each character in this final redefined group of six will consist of
+     only 2's and 8's.  Don't know the significance of this?  Wait.
+     
+          1220-1280 To print a figure on the screen, we have to print a
+     group of six characters in the following pattern:
+           AD
+           BE
+           CF
+     (This is a pattern, only.  This sequence is not actually used.)  So we
+     set up a string array with nine possible character sequences.  We use
+     control characters to move the cursor back and down rather than
+     repositioning the cursor each time, since this means that all
+     positioning is relative to the starting point of our pattern.
+     
+          1320 An easy way to check for the START button being pressed.
+     
+          1330 Don't forget the power of the RANDOM function!
+     
+          1340 We let the figures move either slowly or quickly.
+     
+          1350-1430 And this is about equivalent to the dumb little program
+     we showed at the start of this discussion.  We are printing a pattern
+     of six characters instead of a single character, but the principle is
+     the same.
+     
+          1440 You have to see the display in color to appreciate what this
+     
+     Volume 1, Issue 2                                              Page 31
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                             Winter 1987
+     --------------                                               ---------
+     
+     (along with line 1192 to 1194) are doing.  We are demonstrating a
+     "feature" of color TV known as "artifacts."  We really are sending a
+     pattern of "white" dots to the screen, and if you have a black and
+     white monitor or a very good color monitor (e.g., Commodore 1702, with
+     separate chroma and luminance inputs from your computer), that is what
+     you will see.
+     
+     However, on an ordinary TV, the dots are so short that they appear as
+     colors.  Where in a byte the dot appears determines what color it will
+     show as.  The 4's and 1's are purple.  The 8's and 2's are green.
+     (See "Mario Brothers" for a commercial program that uses this to
+     advantage.  Notice how the turtles, etc., are always purple, green, or
+     white.)
+     
+          And that's about it.  This is a dumb example program, but maybe
+     it gave you some programming ideas.  There are other ways to animate
+     selected characters, such as changing the contents of the character
+     set (rather than the actual characters on the screen).  All methods
+     have their advantages; all have disadvantages.  Let us know what you
+     have discovered.
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 2                                              Page 32
+
+
+
+
+
+
+
+
+

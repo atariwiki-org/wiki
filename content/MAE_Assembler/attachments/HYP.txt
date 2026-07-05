@@ -1,0 +1,146 @@
+The Hyper E: accelerator will double
+your screen display speed, while taking
+up only 150 bytes or so of low memory.
+If you are using a DOS other than
+SpartaDOS, it will take up an addtional
+30 bytes, but that's still a pretty
+small amount.
+
+The Hyper E: accelerator was originally
+written by Doug Wokoun.  I found some
+compatability problems with it, and
+have released modified versions.
+
+There are three versions of the Hyper
+E: screen accelerator in this archive.
+
+HYP.COM is the normal version.
+
+HYPS.COM includes a routine to set the
+screen color to a user defined value
+any time the E: device is opened.  The
+color values are preset to $82 and $0C
+intensity, and the only way to change
+them right now is with a disk file
+editor.  The change is almost at the
+end of the file, and will start with
+the bytes, $A9,$82,$8D,$C6,$02.
+
+Finally, for the hackers out there, I
+included version HYP.ROM that can be
+burned directly into the OS ROM.  There
+are a few advantages to this.  It won't
+take up any memory.  It will accelerate
+any programs that use the $E400 vectors
+directly, and there are alot of those.
+RAM loaded versions will only speed up
+programs that use CIO though E:, or use
+the vector at $346.  Also, the ROM
+version can be more secure since it
+doesn't have to worry about having its
+handlers overwritten in low memory.
+
+Installation of the ROM version will be
+described at the end of this file.
+
+Use of HYP.COM and HYPS.COM is as
+simple as loading the program.  Hyper E
+is relocatable, and will position
+itself right above MEMLO.  When it
+installs, it will check to see if the
+E: handler has already been patched, as
+is the case with SpartaDOS, and if so
+it will install into the patched
+handler.  This allows Hyper E: to
+remain compatable with Sparta's I/O
+redirection abilities.  If no patched
+handler is found, Hyper E: will create
+it's own, along with a DOSINI routine
+to reinstall it after a system reset.
+
+It is possible that Hyper E: may find a
+patched handler, but be unable to
+integrate itself into it.  If this
+happens, Hyper E: will display the
+message, "Can't Install", and you will
+be unable to use the program.  Please
+contact me if you see this message, let
+me know what is running in your system,
+and I will try to adapt Hyper E:.
+
+- ROM version install -
+
+The HYP.ROM file is 131 bytes long, and
+is designed to execute as the start of
+the OS's E: PUT routine.  You will need
+to know the location of this routine in
+your particular ROM, as well as a free
+149 byte area.  In my 130XE ROM, the E:
+PUT routine is at $F2B0, and there is
+an unused space at $CB65.  This is
+where the supplied file is set to work,
+but it can easily be changed to other
+locations.
+
+The first step is to copy the ROM image
+to someplace in RAM, and then find 131
+bytes of space that you can use.  You
+can try searching for a long string of
+0's.  The HYP.ROM file has a load
+address of $4B65.  If you have moved
+the ROM down to $4000, and have free
+space at $CB65/$4B65, you may simply
+load the binary file HYP.ROM.
+Otherwise, use whatever method you are
+comfortable with to place the contents
+of the HYP.ROM file into your empty
+space area.  The code is relocatable,
+so you do not have to worry about
+moving it.
+
+Next, the existing PUT routine needs to
+be changed to jump to this new code.
+Right now, the first instruction of the
+PUT should be "STA $2FB".  This needs
+to be changed to a JMP to the new code
+we just loaded.  The first instruction
+of HYP.ROM is "STA $2FB", so that will
+take the place of the existing one that
+you are about to overwrite.  The byte
+values you want to store, are $4C, then
+the low byte of HYP.ROM, and then the
+high byte.  In my example, these bytes
+would be $4C, $65, $CB.  (Make sure you
+use the upper ROM address like '$CB',
+and not the '$4B' temporary RAM
+address!)
+
+The final step is a JMP instrustion
+back to the OS ROM.  The JMP is located
+in the HYP.ROM code, $66 bytes from the
+beginning.  In our example, that would
+be location $4BCB.  This JMP needs to
+point to the location *after* the
+original "STA $2FB" in the OS PUT
+routine -- the one you replaced with a
+JMP in the previous step.  In other
+words, this location will be the
+original PUT address +3.  In the
+HYP.ROM file supplied, this JMP is set
+to $F2B3.  If this is the right place,
+leave it alone.  Otherwise, change the
+address to point to the correct spot.
+
+You should be able to save the binary
+image of the ROM file now, and burn a
+27128 EPROM.
+
+If you hae any questions or comments,
+please feel free to contact me.
+
+John Harris
+45346 Graceway Dr.
+Ahwahnee, CA 93601
+USA
+internet: jharris@poboxes.com
+

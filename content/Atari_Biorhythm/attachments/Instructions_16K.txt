@@ -1,0 +1,83 @@
+
+  The 'Biorhythm' theory states that
+human lives move in predictable
+wavelike patterns involving three
+separate cycles:
+
+ (A) Physical      23 days
+ (B) Emotional     28 days
+ (C) Intellectual  33 days
+
+There are three major areas to this
+chart to be observed:
+
+  LOW   CRITICAL   PEAK
+
+** CRITICAL **
+
+The day that the cycle switches from
+peak to low or low to peak is a 
+critical day. It is defined as
+critical because you are neither up
+or down, but in a neutral state.
+
+(A) Physical cycle: People tend to be
+    accident prone.
+(B) Emotional cycle: Emotional out-
+    bursts are possible.
+(C) Intellectual cycle: Not as impor-
+    tant by itself. It does coincide
+    with the other two cycles and
+    has a contributary effect.
+
+** PEAK **
+
+(A) During the 11-1/2 peak days, is 
+    a good time for intensive
+    training in athletics or for any
+    activity requiring physical
+    stamina.
+(B) During the 14 peak days, both men
+    and women are prone to
+    cheerfulness, cooperation, and a
+    positive outlook on life.
+(C) During the 16-1/2 peak days of
+    this cycle, a person finds it
+    easier to study, write creatively
+    understand mathematics or pursue
+    any intellectual efforts.
+
+ ** LOW **
+
+(A) During the 16-1/2 low days,
+    people are aware of a reduced
+    vitality and endurance. In short,
+    you will tire easily on these
+    days.
+(B) During the 14 low days, people
+    have tendencies toward moodiness
+    and negativism.
+(C) During the 11-1/2 low days,
+    capacities are lessened. These are
+    days better spent in review or
+    practice.
+
+  The biorhythm can be printed on the
+screen, printer or both. You select
+an option at this time. Only numeric
+entries can be entered.
+(1) Enter your name. If full name
+    is more than 15 characters, then
+    enter only first name.
+(2) Enter your birthdate.
+    Format of MM/DD/YY
+(3) Enter the range of the printout.
+    Format of MM/DD/YY to MM/DD/YY
+    The two dates must be in the 
+    same year and the first earlier
+    than the second date.
+After entry the biorhythm will
+proceed to printout.
+Use CONTROL 1 to halt printout:
+     20 characters on the screen
+     40 characters on the printer

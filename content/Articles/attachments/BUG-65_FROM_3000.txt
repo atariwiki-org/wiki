@@ -1,0 +1,4661 @@
+PAGE 1   BUG 65 FROM 3000
+
+
+                                    
+START ADDR = 32OO   END ADDR = 4FFF 
+                                    
+3200  4C 47 32     JMP   $3247      
+3203  4C 52 32     JMP   $3252      
+3206  4C 9B 32     JMP   $329B      
+3209  4C 13 36     JMP   $3613      
+320C  4C 16 36     JMP   $3616      
+320F  4C 81 33     JMP   $3381      
+3212  4C 9C 33     JMP   $339C      
+3215  4C 53 37     JMP   $3753      
+3218  08           PHP              
+3219  02           ???              
+321A  2C 0D 00     BIT   $000D      
+321D  00           BRK              
+321E  FF           ???              
+321F  50 A9        BVC   $31CA      
+3221  FF           ???              
+3222  60           RTS              
+3223  4C 93 33     JMP   $3393      
+3226  4C E3 32     JMP   $32E3      
+3229  4C FC 32     JMP   $32FC      
+322C  4C F1 32     JMP   $32F1      
+322F  4C E6 32     JMP   $32E6      
+3232  4C 08 33     JMP   $3308      
+3235  4C 16 33     JMP   $3316      
+3238  4C 07 36     JMP   $3607      
+323B  4C 1B 33     JMP   $331B      
+323E  79 3E B5     ADC   $B53E,Y    
+3241  4C 24 33     JMP   $3324      
+3244  4C 2A 33     JMP   $332A      
+3247  A2 3F        LDX  #$3F        
+3249  9A           TXS              
+324A  20 6B 37     JSR   $376B      
+324D  A9 9B        LDA  #$9B        
+324F  8D 6C 30     STA   $306C      
+3252  A2 3F        LDX  #$3F        
+3254  9A           TXS              
+3255  20 7A 37     JSR   $377A      
+3258  20 76 3E     JSR   $3E76      
+325B  A9 00        LDA  #$00        
+325D  8D F0 02     STA   CRSINH     
+3260  A2 00        LDX  #$00        
+3262  20 10 36     JSR   $3610      
+3265  20 96 33     JSR   $3396      
+3268  30 E8        BMI   $3252      
+326A  F0 24        BEQ   $3290      
+326C  C9 7E        CMP  #$7E        
+326E  F0 F5        BEQ   $3265      
+3270  20 5C 37     JSR   $375C      
+3273  D0 14        BNE   $3289      
+3275  C9 3D        CMP  #$3D        
+3277  D0 0A        BNE   $3283      
+3279  A2 6C        LDX  #$6C        
+327B  A0 30        LDY  #$30        
+327D  20 EC 35     JSR   $35EC      
+
+
+
+
+
+
+
+PAGE 2   BUG 65 FROM 3000
+
+
+3280  4C 52 32     JMP   $3252      
+3283  20 D5 32     JSR   $32D5      
+3286  4C 52 32     JMP   $3252      
+3289  20 84 33     JSR   $3384      
+328C  C9 1B        CMP  #$1B        
+328E  F0 BD        BEQ   $324D      
+3290  EE F0 02     INC   CRSINH     
+3293  20 01 36     JSR   $3601      
+3296  A9 7E        LDA  #$7E        
+3298  20 E6 35     JSR   $35E6      
+329B  A0 00        LDY  #$00        
+329D  20 8C 37     JSR   $378C      
+32A0  20 69 33     JSR   $3369      
+32A3  20 99 33     JSR   $3399      
+32A6  C9 9B        CMP  #$9B        
+32A8  F0 A8        BEQ   $3252      
+32AA  C9 2C        CMP  #$2C        
+32AC  F0 F2        BEQ   $32A0      
+32AE  C9 2F        CMP  #$2F        
+32B0  F0 E9        BEQ   $329B      
+32B2  48           PHA              
+32B3  20 5C 37     JSR   $375C      
+32B6  D0 05        BNE   $32BD      
+32B8  A2 04        LDX  #$04        
+32BA  4C 68 37     JMP   $3768      
+32BD  68           PLA              
+32BE  C9 41        CMP  #$41        
+32C0  90 04        BCC   $32C6      
+32C2  C9 5B        CMP  #$5B        
+32C4  90 09        BCC   $32CF      
+32C6  20 20 32     JSR   $3220      
+32C9  F0 D5        BEQ   $32A0      
+32CB  A2 03        LDX  #$03        
+32CD  D0 EB        BNE   $32BA      
+32CF  20 D5 32     JSR   $32D5      
+32D2  4C A0 32     JMP   $32A0      
+32D5  38           SEC              
+32D6  E9 41        SBC  #$41        
+32D8  0A           ASL   A          
+32D9  AA           TAX              
+32DA  BD 7A 3E     LDA   $3E7A,X    
+32DD  48           PHA              
+32DE  BD 79 3E     LDA   $3E79,X    
+32E1  48           PHA              
+32E2  60           RTS              
+32E3  C6 9F        DEC   $9F        
+32E5  60           RTS              
+32E6  20 7E 33     JSR   $337E      
+32E9  A5 84        LDA   VNTD       
+32EB  85 FA        STA   $FA        
+32ED  A5 85        LDA   $85        
+32EF  85 FB        STA   RADFLG     
+32F1  20 7E 33     JSR   $337E      
+32F4  A5 84        LDA   VNTD       
+32F6  85 FC        STA   $FC        
+32F8  A5 85        LDA   $85        
+
+
+
+
+
+
+
+PAGE 3   BUG 65 FROM 3000
+
+
+32FA  85 FD        STA   $FD        
+32FC  20 7E 33     JSR   $337E      
+32FF  A5 84        LDA   VNTD       
+3301  85 FE        STA   $FE        
+3303  A5 85        LDA   $85        
+3305  85 FF        STA   $FF        
+3307  60           RTS              
+3308  86 80        STX   LOMEM      
+330A  84 81        STY   $81        
+330C  A2 00        LDX  #$00        
+330E  20 56 37     JSR   $3756      
+3311  A6 86        LDX   VVTP       
+3313  A4 87        LDY   $87        
+3315  60           RTS              
+3316  A2 06        LDX  #$06        
+3318  4C 68 37     JMP   $3768      
+331B  86 80        STX   LOMEM      
+331D  84 81        STY   $81        
+331F  A2 00        LDX  #$00        
+3321  4C 04 36     JMP   $3604      
+3324  20 89 37     JSR   $3789      
+3327  4C 80 37     JMP   $3780      
+332A  20 86 37     JSR   $3786      
+332D  4C 83 37     JMP   $3783      
+3330  00           BRK              
+3331  00           BRK              
+3332  00           BRK              
+3333  00           BRK              
+3334  00           BRK              
+3335  00           BRK              
+3336  00           BRK              
+3337  00           BRK              
+3338  00           BRK              
+3339  00           BRK              
+333A  00           BRK              
+333B  00           BRK              
+333C  00           BRK              
+333D  00           BRK              
+333E  00           BRK              
+333F  00           BRK              
+3340  00           BRK              
+3341  00           BRK              
+3342  00           BRK              
+3343  00           BRK              
+3344  00           BRK              
+3345  00           BRK              
+3346  00           BRK              
+3347  00           BRK              
+3348  00           BRK              
+3349  00           BRK              
+334A  00           BRK              
+334B  00           BRK              
+334C  00           BRK              
+334D  00           BRK              
+334E  00           BRK              
+334F  00           BRK              
+
+
+
+
+
+
+
+PAGE 4   BUG 65 FROM 3000
+
+
+3350  00           BRK              
+3351  00           BRK              
+3352  00           BRK              
+3353  00           BRK              
+3354  00           BRK              
+3355  00           BRK              
+3356  00           BRK              
+3357  00           BRK              
+3358  00           BRK              
+3359  00           BRK              
+335A  00           BRK              
+335B  00           BRK              
+335C  00           BRK              
+335D  00           BRK              
+335E  00           BRK              
+335F  00           BRK              
+3360  4C A2 33     JMP   $33A2      
+3363  4C B2 33     JMP   $33B2      
+3366  4C B4 33     JMP   $33B4      
+3369  4C C8 33     JMP   $33C8      
+336C  4C E5 33     JMP   $33E5      
+336F  4C 06 34     JMP   $3406      
+3372  4C 18 34     JMP   $3418      
+3375  4C 1A 34     JMP   $341A      
+3378  4C 60 34     JMP   $3460      
+337B  4C 67 34     JMP   $3467      
+337E  4C 6D 34     JMP   $346D      
+3381  4C 81 34     JMP   $3481      
+3384  4C 89 34     JMP   $3489      
+3387  4C 90 34     JMP   $3490      
+338A  4C 9B 34     JMP   $349B      
+338D  4C AC 34     JMP   $34AC      
+3390  4C ED 34     JMP   $34ED      
+3393  4C F7 34     JMP   $34F7      
+3396  4C 32 35     JMP   $3532      
+3399  4C 8C 35     JMP   $358C      
+339C  4C 94 35     JMP   $3594      
+339F  4C A5 35     JMP   $35A5      
+33A2  20 8C 35     JSR   $358C      
+33A5  C6 9F        DEC   $9F        
+33A7  C9 9B        CMP  #$9B        
+33A9  F0 06        BEQ   $33B1      
+33AB  C9 2C        CMP  #$2C        
+33AD  F0 02        BEQ   $33B1      
+33AF  C9 2F        CMP  #$2F        
+33B1  60           RTS              
+33B2  A0 9B        LDY  #$9B        
+33B4  85 A0        STA   $A0        
+33B6  C4 A0        CPY   $A0        
+33B8  F0 09        BEQ   $33C3      
+33BA  A2 01        LDX  #$01        
+33BC  C9 1B        CMP  #$1B        
+33BE  D0 02        BNE   $33C2      
+33C0  A2 FF        LDX  #$FF        
+33C2  8A           TXA              
+33C3  08           PHP              
+
+
+
+
+
+
+
+PAGE 5   BUG 65 FROM 3000
+
+
+33C4  A5 A0        LDA   $A0        
+33C6  28           PLP              
+33C7  60           RTS              
+33C8  20 12 32     JSR   $3212      
+33CB  F0 17        BEQ   $33E4      
+33CD  20 0F 32     JSR   $320F      
+33D0  20 E5 33     JSR   $33E5      
+33D3  F0 05        BEQ   $33DA      
+33D5  10 0D        BPL   $33E4      
+33D7  4C 03 32     JMP   $3203      
+33DA  20 0F 32     JSR   $320F      
+33DD  20 E5 33     JSR   $33E5      
+33E0  30 F5        BMI   $33D7      
+33E2  D0 F6        BNE   $33DA      
+33E4  60           RTS              
+33E5  A0 20        LDY  #$20        
+33E7  D0 CB        BNE   $33B4      
+33E9  20 F7 34     JSR   $34F7      
+33EC  38           SEC              
+33ED  E9 30        SBC  #$30        
+33EF  30 12        BMI   $3403      
+33F1  C9 0A        CMP  #$0A        
+33F3  90 06        BCC   $33FB      
+33F5  E9 07        SBC  #$07        
+33F7  C9 0A        CMP  #$0A        
+33F9  90 08        BCC   $3403      
+33FB  C5 A3        CMP   $A3        
+33FD  B0 04        BCS   $3403      
+33FF  A2 00        LDX  #$00        
+3401  F0 02        BEQ   $3405      
+3403  A2 FF        LDX  #$FF        
+3405  60           RTS              
+3406  20 0F 32     JSR   $320F      
+3409  20 B2 33     JSR   $33B2      
+340C  30 09        BMI   $3417      
+340E  F0 07        BEQ   $3417      
+3410  C9 7E        CMP  #$7E        
+3412  F0 03        BEQ   $3417      
+3414  20 E6 35     JSR   $35E6      
+3417  60           RTS              
+3418  A2 00        LDX  #$00        
+341A  86 9E        STX   $9E        
+341C  20 5F 37     JSR   $375F      
+341F  20 8C 35     JSR   $358C      
+3422  C9 2B        CMP  #$2B        
+3424  F0 04        BEQ   $342A      
+3426  C9 2D        CMP  #$2D        
+3428  D0 19        BNE   $3443      
+342A  48           PHA              
+342B  20 0F 35     JSR   $350F      
+342E  A6 9E        LDX   $9E        
+3430  A0 08        LDY  #$08        
+3432  68           PLA              
+3433  C9 2B        CMP  #$2B        
+3435  D0 06        BNE   $343D      
+3437  20 50 37     JSR   $3750      
+
+
+
+
+
+
+
+PAGE 6   BUG 65 FROM 3000
+
+
+343A  4C 52 34     JMP   $3452      
+343D  20 8F 37     JSR   $378F      
+3440  4C 52 34     JMP   $3452      
+3443  C6 9F        DEC   $9F        
+3445  20 0F 35     JSR   $350F      
+3448  A6 9E        LDX   $9E        
+344A  A5 88        LDA   STMTAB     
+344C  95 80        STA   LOMEM,X    
+344E  A5 89        LDA   $89        
+3450  95 81        STA   $81,X      
+3452  20 8C 35     JSR   $358C      
+3455  C9 2B        CMP  #$2B        
+3457  F0 D1        BEQ   $342A      
+3459  C9 2D        CMP  #$2D        
+345B  F0 CD        BEQ   $342A      
+345D  C6 9F        DEC   $9F        
+345F  60           RTS              
+3460  20 18 34     JSR   $3418      
+3463  A2 02        LDX  #$02        
+3465  D0 B3        BNE   $341A      
+3467  20 60 34     JSR   $3460      
+346A  4C 77 34     JMP   $3477      
+346D  A2 04        LDX  #$04        
+346F  20 5F 37     JSR   $375F      
+3472  20 A2 33     JSR   $33A2      
+3475  F0 05        BEQ   $347C      
+3477  A2 04        LDX  #$04        
+3479  20 1A 34     JSR   $341A      
+347C  A5 84        LDA   VNTD       
+347E  05 85        ORA   $85        
+3480  60           RTS              
+3481  20 3C 35     JSR   $353C      
+3484  85 A9        STA   $A9        
+3486  4C 92 37     JMP   $3792      
+3489  8D 6C 30     STA   $306C      
+348C  A0 01        LDY  #$01        
+348E  D0 02        BNE   $3492      
+3490  A0 00        LDY  #$00        
+3492  20 8C 37     JSR   $378C      
+3495  A2 64        LDX  #$64        
+3497  A0 00        LDY  #$00        
+3499  F0 11        BEQ   $34AC      
+349B  8D D0 30     STA   $30D0      
+349E  A9 01        LDA  #$01        
+34A0  85 9F        STA   $9F        
+34A2  A9 D0        LDA  #$D0        
+34A4  85 92        STA   $92        
+34A6  A9 30        LDA  #$30        
+34A8  85 93        STA   $93        
+34AA  A2 20        LDX  #$20        
+34AC  86 A6        STX   $A6        
+34AE  84 A7        STY   $A7        
+34B0  20 0F 32     JSR   $320F      
+34B3  20 B2 33     JSR   $33B2      
+34B6  30 2C        BMI   $34E4      
+34B8  F0 2A        BEQ   $34E4      
+
+
+
+
+
+
+
+PAGE 7   BUG 65 FROM 3000
+
+
+34BA  C5 A7        CMP   $A7        
+34BC  F0 26        BEQ   $34E4      
+34BE  C9 7E        CMP  #$7E        
+34C0  D0 0C        BNE   $34CE      
+34C2  A6 9F        LDX   $9F        
+34C4  F0 EA        BEQ   $34B0      
+34C6  C6 9F        DEC   $9F        
+34C8  20 E6 35     JSR   $35E6      
+34CB  4C B0 34     JMP   $34B0      
+34CE  A4 9F        LDY   $9F        
+34D0  C4 A6        CPY   $A6        
+34D2  B0 0A        BCS   $34DE      
+34D4  91 92        STA  ($92),Y     
+34D6  E6 9F        INC   $9F        
+34D8  20 E6 35     JSR   $35E6      
+34DB  4C B0 34     JMP   $34B0      
+34DE  20 15 32     JSR   $3215      
+34E1  4C B0 34     JMP   $34B0      
+34E4  48           PHA              
+34E5  A9 9B        LDA  #$9B        
+34E7  A4 9F        LDY   $9F        
+34E9  91 92        STA  ($92),Y     
+34EB  68           PLA              
+34EC  60           RTS              
+34ED  20 A2 33     JSR   $33A2      
+34F0  D0 05        BNE   $34F7      
+34F2  A2 06        LDX  #$06        
+34F4  4C 68 37     JMP   $3768      
+34F7  A4 9F        LDY   $9F        
+34F9  B1 92        LDA  ($92),Y     
+34FB  E6 9F        INC   $9F        
+34FD  60           RTS              
+34FE  20 8C 35     JSR   $358C      
+3501  C9 2E        CMP  #$2E        
+3503  D0 04        BNE   $3509      
+3505  A2 0A        LDX  #$0A        
+3507  D0 46        BNE   $354F      
+3509  C6 9F        DEC   $9F        
+350B  A2 10        LDX  #$10        
+350D  D0 40        BNE   $354F      
+350F  20 8C 35     JSR   $358C      
+3512  C9 58        CMP  #$58        
+3514  D0 16        BNE   $352C      
+3516  20 F7 34     JSR   $34F7      
+3519  20 01 35     JSR   $3501      
+351C  18           CLC              
+351D  A5 88        LDA   STMTAB     
+351F  65 A1        ADC   $A1        
+3521  85 88        STA   STMTAB     
+3523  A5 89        LDA   $89        
+3525  65 A2        ADC   $A2        
+3527  85 89        STA   $89        
+3529  4C 31 35     JMP   $3531      
+352C  C6 9F        DEC   $9F        
+352E  20 FE 34     JSR   $34FE      
+3531  60           RTS              
+
+
+
+
+
+
+
+PAGE 8   BUG 65 FROM 3000
+
+
+3532  20 06 34     JSR   $3406      
+3535  C9 20        CMP  #$20        
+3537  F0 F9        BEQ   $3532      
+3539  4C B2 33     JMP   $33B2      
+353C  20 12 32     JSR   $3212      
+353F  F0 FB        BEQ   $353C      
+3541  A2 24        LDX  #$24        
+3543  A0 E4        LDY  #$E4        
+3545  20 77 37     JSR   $3777      
+3548  C0 80        CPY  #$80        
+354A  D0 02        BNE   $354E      
+354C  A9 1B        LDA  #$1B        
+354E  60           RTS              
+354F  86 A3        STX   $A3        
+3551  A2 08        LDX  #$08        
+3553  20 5F 37     JSR   $375F      
+3556  20 E9 33     JSR   $33E9      
+3559  F0 0B        BEQ   $3566      
+355B  C6 9F        DEC   $9F        
+355D  A2 FF        LDX  #$FF        
+355F  D0 2A        BNE   $358B      
+3561  20 E9 33     JSR   $33E9      
+3564  D0 21        BNE   $3587      
+3566  85 9B        STA   $9B        
+3568  A5 A3        LDA   $A3        
+356A  85 8C        STA   STARP      
+356C  A9 00        LDA  #$00        
+356E  85 8D        STA   $8D        
+3570  A2 0C        LDX  #$0C        
+3572  A0 08        LDY  #$08        
+3574  20 71 37     JSR   $3771      
+3577  18           CLC              
+3578  A5 8C        LDA   STARP      
+357A  65 9B        ADC   $9B        
+357C  85 88        STA   STMTAB     
+357E  A5 8D        LDA   $8D        
+3580  69 00        ADC  #$00        
+3582  85 89        STA   $89        
+3584  4C 61 35     JMP   $3561      
+3587  C6 9F        DEC   $9F        
+3589  A9 00        LDA  #$00        
+358B  60           RTS              
+358C  20 F7 34     JSR   $34F7      
+358F  C9 20        CMP  #$20        
+3591  F0 F9        BEQ   $358C      
+3593  60           RTS              
+3594  AE FC 02     LDX   CH         
+3597  E8           INX              
+3598  D0 0A        BNE   $35A4      
+359A  A6 11        LDX   BRKKEY     
+359C  F0 04        BEQ   $35A2      
+359E  A2 00        LDX  #$00        
+35A0  F0 02        BEQ   $35A4      
+35A2  A2 FF        LDX  #$FF        
+35A4  60           RTS              
+35A5  A0 20        LDY  #$20        
+
+
+
+
+
+
+
+PAGE 9   BUG 65 FROM 3000
+
+
+35A7  20 9B 34     JSR   $349B      
+35AA  C9 1B        CMP  #$1B        
+35AC  F0 09        BEQ   $35B7      
+35AE  48           PHA              
+35AF  A0 00        LDY  #$00        
+35B1  84 9F        STY   $9F        
+35B3  20 18 34     JSR   $3418      
+35B6  68           PLA              
+35B7  60           RTS              
+35B8  00           BRK              
+35B9  00           BRK              
+35BA  00           BRK              
+35BB  00           BRK              
+35BC  00           BRK              
+35BD  00           BRK              
+35BE  00           BRK              
+35BF  00           BRK              
+35C0  00           BRK              
+35C1  00           BRK              
+35C2  00           BRK              
+35C3  00           BRK              
+35C4  00           BRK              
+35C5  00           BRK              
+35C6  00           BRK              
+35C7  00           BRK              
+35C8  00           BRK              
+35C9  00           BRK              
+35CA  00           BRK              
+35CB  00           BRK              
+35CC  00           BRK              
+35CD  00           BRK              
+35CE  00           BRK              
+35CF  00           BRK              
+35D0  00           BRK              
+35D1  00           BRK              
+35D2  00           BRK              
+35D3  00           BRK              
+35D4  00           BRK              
+35D5  00           BRK              
+35D6  00           BRK              
+35D7  00           BRK              
+35D8  00           BRK              
+35D9  00           BRK              
+35DA  00           BRK              
+35DB  00           BRK              
+35DC  00           BRK              
+35DD  00           BRK              
+35DE  00           BRK              
+35DF  00           BRK              
+35E0  4C 19 36     JMP   $3619      
+35E3  4C 1E 36     JMP   $361E      
+35E6  4C 20 36     JMP   $3620      
+35E9  4C 92 36     JMP   $3692      
+35EC  4C B4 36     JMP   $36B4      
+35EF  4C CA 36     JMP   $36CA      
+35F2  4C CE 36     JMP   $36CE      
+
+
+
+
+
+
+
+PAGE 10   BUG 65 FROM 3000
+
+
+35F5  4C D2 36     JMP   $36D2      
+35F8  4C D6 36     JMP   $36D6      
+35FB  4C D9 36     JMP   $36D9      
+35FE  4C E0 36     JMP   $36E0      
+3601  4C E3 36     JMP   $36E3      
+3604  4C E7 36     JMP   $36E7      
+3607  4C EE 36     JMP   $36EE      
+360A  4C F7 36     JMP   $36F7      
+360D  4C 03 37     JMP   $3703      
+3610  4C 09 37     JMP   $3709      
+3613  4C 84 36     JMP   $3684      
+3616  4C 8B 36     JMP   $368B      
+3619  A2 12        LDX  #$12        
+361B  4C 09 37     JMP   $3709      
+361E  A9 9B        LDA  #$9B        
+3620  85 A0        STA   $A0        
+3622  48           PHA              
+3623  8A           TXA              
+3624  48           PHA              
+3625  98           TYA              
+3626  48           PHA              
+3627  A5 AB        LDA   $AB        
+3629  F0 0C        BEQ   $3637      
+362B  A5 A0        LDA   $A0        
+362D  20 09 32     JSR   $3209      
+3630  C0 80        CPY  #$80        
+3632  D0 03        BNE   $3637      
+3634  4C 03 32     JMP   $3203      
+3637  A5 AC        LDA   $AC        
+3639  F0 43        BEQ   $367E      
+363B  A5 A0        LDA   $A0        
+363D  C9 9B        CMP  #$9B        
+363F  D0 05        BNE   $3646      
+3641  AD 1B 32     LDA   $321B      
+3644  D0 0A        BNE   $3650      
+3646  C9 20        CMP  #$20        
+3648  90 04        BCC   $364E      
+364A  C9 80        CMP  #$80        
+364C  90 02        BCC   $3650      
+364E  A9 2E        LDA  #$2E        
+3650  48           PHA              
+3651  20 0C 32     JSR   $320C      
+3654  68           PLA              
+3655  88           DEY              
+3656  F0 05        BEQ   $365D      
+3658  A2 09        LDX  #$09        
+365A  4C 68 37     JMP   $3768      
+365D  CD 1B 32     CMP   $321B      
+3660  D0 1C        BNE   $367E      
+3662  AE 1C 32     LDX   $321C      
+3665  F0 05        BEQ   $366C      
+3667  A9 0A        LDA  #$0A        
+3669  20 0C 32     JSR   $320C      
+366C  AD 1D 32     LDA   $321D      
+366F  F0 0D        BEQ   $367E      
+3671  A9 28        LDA  #$28        
+
+
+
+
+
+
+
+PAGE 11   BUG 65 FROM 3000
+
+
+3673  85 B5        STA   $B5        
+3675  A9 00        LDA  #$00        
+3677  20 0C 32     JSR   $320C      
+367A  C6 B5        DEC   $B5        
+367C  D0 F7        BNE   $3675      
+367E  68           PLA              
+367F  A8           TAY              
+3680  68           PLA              
+3681  AA           TAX              
+3682  68           PLA              
+3683  60           RTS              
+3684  A2 06        LDX  #$06        
+3686  A0 E4        LDY  #$E4        
+3688  4C 77 37     JMP   $3777      
+368B  A2 36        LDX  #$36        
+368D  A0 E4        LDY  #$E4        
+368F  4C 77 37     JMP   $3777      
+3692  48           PHA              
+3693  A2 A3        LDX  #$A3        
+3695  A0 36        LDY  #$36        
+3697  20 6E 37     JSR   $376E      
+369A  D0 02        BNE   $369E      
+369C  A9 2E        LDA  #$2E        
+369E  20 20 36     JSR   $3620      
+36A1  68           PLA              
+36A2  60           RTS              
+36A3  1C           ???              
+36A4  1D 1E 1F     ORA   $1F1E,X    
+36A7  7D 7E 9F     ADC   $9F7E,X    
+36AA  9E           ???              
+36AB  7F           ???              
+36AC  9D 9C FE     STA   $FE9C,X    
+36AF  1B           ???              
+36B0  FD 9B FF     SBC   $FF9B,X    
+36B3  00           BRK              
+36B4  86 88        STX   STMTAB     
+36B6  84 89        STY   $89        
+36B8  20 1E 36     JSR   $361E      
+36BB  A0 00        LDY  #$00        
+36BD  B1 88        LDA  (STMTAB),Y  
+36BF  C9 9B        CMP  #$9B        
+36C1  F0 06        BEQ   $36C9      
+36C3  20 20 36     JSR   $3620      
+36C6  C8           INY              
+36C7  D0 F4        BNE   $36BD      
+36C9  60           RTS              
+36CA  A9 3D        LDA  #$3D        
+36CC  D0 32        BNE   $3700      
+36CE  A9 28        LDA  #$28        
+36D0  D0 2E        BNE   $3700      
+36D2  A9 29        LDA  #$29        
+36D4  D0 2A        BNE   $3700      
+36D6  20 1E 36     JSR   $361E      
+36D9  B5 81        LDA   $81,X      
+36DB  20 EE 36     JSR   $36EE      
+36DE  B5 80        LDA   LOMEM,X    
+
+
+
+
+
+
+
+PAGE 12   BUG 65 FROM 3000
+
+
+36E0  20 EE 36     JSR   $36EE      
+36E3  A9 20        LDA  #$20        
+36E5  D0 19        BNE   $3700      
+36E7  B5 81        LDA   $81,X      
+36E9  20 EE 36     JSR   $36EE      
+36EC  B5 80        LDA   LOMEM,X    
+36EE  48           PHA              
+36EF  4A           LSR   A          
+36F0  4A           LSR   A          
+36F1  4A           LSR   A          
+36F2  4A           LSR   A          
+36F3  20 F7 36     JSR   $36F7      
+36F6  68           PLA              
+36F7  29 0F        AND  #$0F        
+36F9  F8           SED              
+36FA  18           CLC              
+36FB  69 90        ADC  #$90        
+36FD  69 40        ADC  #$40        
+36FF  D8           CLD              
+3700  4C 20 36     JMP   $3620      
+3703  24 A8        BIT   $A8        
+3705  10 E7        BPL   $36EE      
+3707  30 89        BMI   $3692      
+3709  A0 00        LDY  #$00        
+370B  8A           TXA              
+370C  F0 0C        BEQ   $371A      
+370E  B9 10 3A     LDA   $3A10,Y    
+3711  F0 03        BEQ   $3716      
+3713  C8           INY              
+3714  D0 F8        BNE   $370E      
+3716  C8           INY              
+3717  CA           DEX              
+3718  D0 F4        BNE   $370E      
+371A  B9 10 3A     LDA   $3A10,Y    
+371D  F0 06        BEQ   $3725      
+371F  20 20 36     JSR   $3620      
+3722  C8           INY              
+3723  D0 F5        BNE   $371A      
+3725  60           RTS              
+3726  00           BRK              
+3727  00           BRK              
+3728  00           BRK              
+3729  00           BRK              
+372A  00           BRK              
+372B  00           BRK              
+372C  00           BRK              
+372D  00           BRK              
+372E  00           BRK              
+372F  00           BRK              
+3730  00           BRK              
+3731  00           BRK              
+3732  00           BRK              
+3733  00           BRK              
+3734  00           BRK              
+3735  00           BRK              
+3736  00           BRK              
+
+
+
+
+
+
+
+PAGE 13   BUG 65 FROM 3000
+
+
+3737  00           BRK              
+3738  00           BRK              
+3739  00           BRK              
+373A  00           BRK              
+373B  00           BRK              
+373C  00           BRK              
+373D  00           BRK              
+373E  00           BRK              
+373F  00           BRK              
+3740  00           BRK              
+3741  00           BRK              
+3742  00           BRK              
+3743  00           BRK              
+3744  00           BRK              
+3745  00           BRK              
+3746  00           BRK              
+3747  00           BRK              
+3748  00           BRK              
+3749  00           BRK              
+374A  00           BRK              
+374B  00           BRK              
+374C  00           BRK              
+374D  00           BRK              
+374E  00           BRK              
+374F  00           BRK              
+3750  4C 98 37     JMP   $3798      
+3753  4C A8 37     JMP   $37A8      
+3756  4C AD 37     JMP   $37AD      
+3759  4C C5 37     JMP   $37C5      
+375C  4C D2 37     JMP   $37D2      
+375F  4C DF 37     JMP   $37DF      
+3762  4C E6 37     JMP   $37E6      
+3765  4C EB 37     JMP   $37EB      
+3768  4C 3B 38     JMP   $383B      
+376B  4C 4F 38     JMP   $384F      
+376E  4C E3 38     JMP   $38E3      
+3771  4C F8 38     JMP   $38F8      
+3774  4C 23 39     JMP   $3923      
+3777  4C 2C 39     JMP   $392C      
+377A  4C 3C 39     JMP   $393C      
+377D  4C 4F 39     JMP   $394F      
+3780  4C 70 39     JMP   $3970      
+3783  4C 7B 39     JMP   $397B      
+3786  4C 86 39     JMP   $3986      
+3789  4C 91 39     JMP   $3991      
+378C  4C 9C 39     JMP   $399C      
+378F  4C A9 39     JMP   $39A9      
+3792  4C B9 39     JMP   $39B9      
+3795  4C C4 39     JMP   $39C4      
+3798  18           CLC              
+3799  B5 80        LDA   LOMEM,X    
+379B  71 90        ADC  (MEMTOP),Y  
+379D  95 80        STA   LOMEM,X    
+379F  B5 81        LDA   $81,X      
+37A1  C8           INY              
+37A2  71 90        ADC  (MEMTOP),Y  
+
+
+
+
+
+
+
+PAGE 14   BUG 65 FROM 3000
+
+
+37A4  95 81        STA   $81,X      
+37A6  88           DEY              
+37A7  60           RTS              
+37A8  A9 FD        LDA  #$FD        
+37AA  4C E6 35     JMP   $35E6      
+37AD  AD 1E 32     LDA   $321E      
+37B0  F0 10        BEQ   $37C2      
+37B2  B5 81        LDA   $81,X      
+37B4  C9 30        CMP  #$30        
+37B6  90 0A        BCC   $37C2      
+37B8  CD 1F 32     CMP   $321F      
+37BB  B0 05        BCS   $37C2      
+37BD  A2 05        LDX  #$05        
+37BF  4C 3B 38     JMP   $383B      
+37C2  4C C4 39     JMP   $39C4      
+37C5  A5 83        LDA   $83        
+37C7  C5 81        CMP   $81        
+37C9  90 06        BCC   $37D1      
+37CB  D0 04        BNE   $37D1      
+37CD  A5 82        LDA   VNTP       
+37CF  C5 80        CMP   LOMEM      
+37D1  60           RTS              
+37D2  A2 D9        LDX  #$D9        
+37D4  A0 37        LDY  #$37        
+37D6  4C E3 38     JMP   $38E3      
+37D9  3D 41 53     AND   $5341,X    
+37DC  58           CLI              
+37DD  5A           ???              
+37DE  00           BRK              
+37DF  A9 00        LDA  #$00        
+37E1  95 80        STA   LOMEM,X    
+37E3  95 81        STA   $81,X      
+37E5  60           RTS              
+37E6  A9 7D        LDA  #$7D        
+37E8  4C E6 35     JMP   $35E6      
+37EB  A9 00        LDA  #$00        
+37ED  85 8E        STA   RUNSTK     
+37EF  85 8F        STA   $8F        
+37F1  A9 10        LDA  #$10        
+37F3  85 A4        STA   $A4        
+37F5  18           CLC              
+37F6  36 80        ROL   LOMEM,X    
+37F8  36 81        ROL   $81,X      
+37FA  26 8E        ROL   RUNSTK     
+37FC  26 8F        ROL   $8F        
+37FE  90 05        BCC   $3805      
+3800  18           CLC              
+3801  A9 00        LDA  #$00        
+3803  F0 03        BEQ   $3808      
+3805  38           SEC              
+3806  A9 FF        LDA  #$FF        
+3808  48           PHA              
+3809  59 80 00     EOR   LOMEM,Y    
+380C  65 8E        ADC   RUNSTK     
+380E  85 8E        STA   RUNSTK     
+3810  68           PLA              
+
+
+
+
+
+
+
+PAGE 15   BUG 65 FROM 3000
+
+
+3811  59 81 00     EOR   $0081,Y    
+3814  65 8F        ADC   $8F        
+3816  85 8F        STA   $8F        
+3818  90 02        BCC   $381C      
+381A  F6 80        INC   LOMEM,X    
+381C  C6 A4        DEC   $A4        
+381E  D0 D5        BNE   $37F5      
+3820  B0 0E        BCS   $3830      
+3822  A5 8E        LDA   RUNSTK     
+3824  79 80 00     ADC   LOMEM,Y    
+3827  85 8E        STA   RUNSTK     
+3829  A5 8F        LDA   $8F        
+382B  79 81 00     ADC   $0081,Y    
+382E  85 8F        STA   $8F        
+3830  A5 8E        LDA   RUNSTK     
+3832  99 80 00     STA   LOMEM,Y    
+3835  A5 8F        LDA   $8F        
+3837  99 81 00     STA   $0081,Y    
+383A  60           RTS              
+383B  20 E3 35     JSR   $35E3      
+383E  20 10 36     JSR   $3610      
+3841  A2 01        LDX  #$01        
+3843  20 10 36     JSR   $3610      
+3846  20 76 3E     JSR   $3E76      
+3849  20 15 32     JSR   $3215      
+384C  4C 03 32     JMP   $3203      
+384F  AD 63 E4     LDA   $E463      
+3852  8D 24 02     STA   VVBLKD     
+3855  AD 64 E4     LDA   $E464      
+3858  8D 25 02     STA   $0225      
+385B  A2 00        LDX  #$00        
+385D  8E 44 02     STX   COLDST     
+3860  86 08        STX   WARMST     
+3862  E8           INX              
+3863  86 09        STX   BOOT       
+3865  20 E0 07     JSR   $07E0      
+3868  AD 18 32     LDA   $3218      
+386B  8D C6 02     STA   COLOR2     
+386E  AD 19 32     LDA   $3219      
+3871  8D C5 02     STA   COLOR1     
+3874  AD 1A 32     LDA   $321A      
+3877  8D C8 02     STA   COLOR4     
+387A  A5 0C        LDA   DOSINI     
+387C  C9 00        CMP  #$00        
+387E  D0 06        BNE   $3886      
+3880  A5 0D        LDA   $0D        
+3882  C9 32        CMP  #$32        
+3884  F0 1E        BEQ   $38A4      
+3886  A9 00        LDA  #$00        
+3888  AA           TAX              
+3889  9D 00 30     STA   $3000,X    
+388C  9D 00 31     STA   $3100,X    
+388F  CA           DEX              
+3890  D0 F7        BNE   $3889      
+3892  A5 0C        LDA   DOSINI     
+3894  8D F0 30     STA   $30F0      
+
+
+
+
+
+
+
+PAGE 16   BUG 65 FROM 3000
+
+
+3897  A5 0D        LDA   $0D        
+3899  8D F1 30     STA   $30F1      
+389C  A9 00        LDA  #$00        
+389E  85 0C        STA   DOSINI     
+38A0  A9 32        LDA  #$32        
+38A2  85 0D        STA   $0D        
+38A4  20 91 39     JSR   $3991      
+38A7  A2 FF        LDX  #$FF        
+38A9  86 AB        STX   $AB        
+38AB  E8           INX              
+38AC  86 AC        STX   $AC        
+38AE  20 E6 37     JSR   $37E6      
+38B1  A2 02        LDX  #$02        
+38B3  20 10 36     JSR   $3610      
+38B6  A2 00        LDX  #$00        
+38B8  BD C6 38     LDA   $38C6,X    
+38BB  F0 06        BEQ   $38C3      
+38BD  20 E6 35     JSR   $35E6      
+38C0  E8           INX              
+38C1  D0 F5        BNE   $38B8      
+38C3  4C 15 32     JMP   $3215      
+38C6  20 20 43     JSR   $4320      
+38C9  6F           ???              
+38CA  70 79        BVS   $3945      
+38CC  72           ???              
+38CD  69 67        ADC  #$67        
+38CF  68           PLA              
+38D0  74           ???              
+38D1  20 31 39     JSR   $3931      
+38D4  38           SEC              
+38D5  32           ???              
+38D6  20 4D 63     JSR   $634D      
+38D9  53           ???              
+38DA  74           ???              
+38DB  75 66        ADC   $66,X      
+38DD  66 20        ROR   ICHIDZ     
+38DF  43           ???              
+38E0  6F           ???              
+38E1  2E 00 86     ROL   $8600      
+38E4  88           DEY              
+38E5  84 89        STY   $89        
+38E7  A0 00        LDY  #$00        
+38E9  AA           TAX              
+38EA  B1 88        LDA  (STMTAB),Y  
+38EC  F0 08        BEQ   $38F6      
+38EE  8A           TXA              
+38EF  D1 88        CMP  (STMTAB),Y  
+38F1  F0 04        BEQ   $38F7      
+38F3  C8           INY              
+38F4  D0 F3        BNE   $38E9      
+38F6  8A           TXA              
+38F7  60           RTS              
+38F8  A9 00        LDA  #$00        
+38FA  85 8E        STA   RUNSTK     
+38FC  85 8F        STA   $8F        
+38FE  A9 10        LDA  #$10        
+
+
+
+
+
+
+
+PAGE 17   BUG 65 FROM 3000
+
+
+3900  85 A4        STA   $A4        
+3902  18           CLC              
+3903  26 8E        ROL   RUNSTK     
+3905  26 8F        ROL   $8F        
+3907  36 80        ROL   LOMEM,X    
+3909  36 81        ROL   $81,X      
+390B  90 09        BCC   $3916      
+390D  8A           TXA              
+390E  48           PHA              
+390F  A2 0E        LDX  #$0E        
+3911  20 98 37     JSR   $3798      
+3914  68           PLA              
+3915  AA           TAX              
+3916  C6 A4        DEC   $A4        
+3918  D0 E8        BNE   $3902      
+391A  A5 8E        LDA   RUNSTK     
+391C  95 80        STA   LOMEM,X    
+391E  A5 8F        LDA   $8F        
+3920  95 81        STA   $81,X      
+3922  60           RTS              
+3923  E6 80        INC   LOMEM      
+3925  D0 02        BNE   $3929      
+3927  E6 81        INC   $81        
+3929  4C C5 37     JMP   $37C5      
+392C  86 94        STX   $94        
+392E  84 95        STY   $95        
+3930  AA           TAX              
+3931  A0 01        LDY  #$01        
+3933  B1 94        LDA  ($94),Y     
+3935  48           PHA              
+3936  88           DEY              
+3937  B1 94        LDA  ($94),Y     
+3939  48           PHA              
+393A  8A           TXA              
+393B  60           RTS              
+393C  D8           CLD              
+393D  58           CLI              
+393E  A9 00        LDA  #$00        
+3940  8D F9 30     STA   $30F9      
+3943  20 4F 39     JSR   $394F      
+3946  A9 80        LDA  #$80        
+3948  85 90        STA   MEMTOP     
+394A  A9 00        LDA  #$00        
+394C  85 91        STA   $91        
+394E  60           RTS              
+394F  A0 00        LDY  #$00        
+3951  AD F2 30     LDA   $30F2      
+3954  85 86        STA   VVTP       
+3956  0D F3 30     ORA   $30F3      
+3959  F0 0E        BEQ   $3969      
+395B  AD F3 30     LDA   $30F3      
+395E  85 87        STA   $87        
+3960  B1 86        LDA  (VVTP),Y    
+3962  D0 05        BNE   $3969      
+3964  AD 01 31     LDA   $3101      
+3967  91 86        STA  (VVTP),Y    
+
+
+
+
+
+
+
+PAGE 18   BUG 65 FROM 3000
+
+
+3969  8C F2 30     STY   $30F2      
+396C  8C F3 30     STY   $30F3      
+396F  60           RTS              
+3970  A2 36        LDX  #$36        
+3972  BD 35 30     LDA   $3035,X    
+3975  95 7F        STA   $7F,X      
+3977  CA           DEX              
+3978  D0 F8        BNE   $3972      
+397A  60           RTS              
+397B  A2 36        LDX  #$36        
+397D  BD FF 2F     LDA   $2FFF,X    
+3980  95 7F        STA   $7F,X      
+3982  CA           DEX              
+3983  D0 F8        BNE   $397D      
+3985  60           RTS              
+3986  A2 36        LDX  #$36        
+3988  B5 7F        LDA   $7F,X      
+398A  9D 35 30     STA   $3035,X    
+398D  CA           DEX              
+398E  D0 F8        BNE   $3988      
+3990  60           RTS              
+3991  A2 36        LDX  #$36        
+3993  B5 7F        LDA   $7F,X      
+3995  9D FF 2F     STA   $2FFF,X    
+3998  CA           DEX              
+3999  D0 F8        BNE   $3993      
+399B  60           RTS              
+399C  84 9F        STY   $9F        
+399E  48           PHA              
+399F  A9 6C        LDA  #$6C        
+39A1  85 92        STA   $92        
+39A3  A9 30        LDA  #$30        
+39A5  85 93        STA   $93        
+39A7  68           PLA              
+39A8  60           RTS              
+39A9  38           SEC              
+39AA  B5 80        LDA   LOMEM,X    
+39AC  F1 90        SBC  (MEMTOP),Y  
+39AE  95 80        STA   LOMEM,X    
+39B0  B5 81        LDA   $81,X      
+39B2  C8           INY              
+39B3  F1 90        SBC  (MEMTOP),Y  
+39B5  95 81        STA   $81,X      
+39B7  88           DEY              
+39B8  60           RTS              
+39B9  C9 61        CMP  #$61        
+39BB  90 06        BCC   $39C3      
+39BD  C9 7B        CMP  #$7B        
+39BF  B0 02        BCS   $39C3      
+39C1  29 DF        AND  #$DF        
+39C3  60           RTS              
+39C4  B5 80        LDA   LOMEM,X    
+39C6  85 86        STA   VVTP       
+39C8  A8           TAY              
+39C9  B5 81        LDA   $81,X      
+39CB  85 87        STA   $87        
+
+
+
+
+
+
+
+PAGE 19   BUG 65 FROM 3000
+
+
+39CD  D0 14        BNE   $39E3      
+39CF  98           TYA              
+39D0  C9 80        CMP  #$80        
+39D2  90 0F        BCC   $39E3      
+39D4  C9 B6        CMP  #$B6        
+39D6  B0 0B        BCS   $39E3      
+39D8  18           CLC              
+39D9  69 80        ADC  #$80        
+39DB  85 86        STA   VVTP       
+39DD  A5 87        LDA   $87        
+39DF  69 2F        ADC  #$2F        
+39E1  85 87        STA   $87        
+39E3  A0 00        LDY  #$00        
+39E5  60           RTS              
+39E6  00           BRK              
+39E7  00           BRK              
+39E8  00           BRK              
+39E9  00           BRK              
+39EA  00           BRK              
+39EB  00           BRK              
+39EC  00           BRK              
+39ED  00           BRK              
+39EE  00           BRK              
+39EF  00           BRK              
+39F0  00           BRK              
+39F1  00           BRK              
+39F2  00           BRK              
+39F3  00           BRK              
+39F4  00           BRK              
+39F5  00           BRK              
+39F6  00           BRK              
+39F7  00           BRK              
+39F8  00           BRK              
+39F9  00           BRK              
+39FA  00           BRK              
+39FB  00           BRK              
+39FC  00           BRK              
+39FD  00           BRK              
+39FE  00           BRK              
+39FF  00           BRK              
+3A00  00           BRK              
+3A01  00           BRK              
+3A02  00           BRK              
+3A03  00           BRK              
+3A04  00           BRK              
+3A05  00           BRK              
+3A06  00           BRK              
+3A07  00           BRK              
+3A08  00           BRK              
+3A09  00           BRK              
+3A0A  00           BRK              
+3A0B  00           BRK              
+3A0C  00           BRK              
+3A0D  00           BRK              
+3A0E  00           BRK              
+3A0F  00           BRK              
+
+
+
+
+
+
+
+PAGE 20   BUG 65 FROM 3000
+
+
+3A10  9B           ???              
+3A11  3E 00 20     ROL   $2000,X    
+3A14  45 52        EOR   LMARGN     
+3A16  52           ???              
+3A17  4F           ???              
+3A18  52           ???              
+3A19  21 00        AND  ($00,X)     
+3A1B  42           ???              
+3A1C  55 47        EOR   $47,X      
+3A1E  2F           ???              
+3A1F  36 35        ROL   $35,X      
+3A21  20 56 65     JSR   $6556      
+3A24  72           ???              
+3A25  73           ???              
+3A26  69 6F        ADC  #$6F        
+3A28  6E 20 32     ROR   $3220      
+3A2B  2E 30 9B     ROL   $9B30      
+3A2E  00           BRK              
+3A2F  43           ???              
+3A30  4F           ???              
+3A31  4D 4D 41     EOR   $414D      
+3A34  4E 44 00     LSR   $0044      
+3A37  49 4D        EOR  #$4D        
+3A39  4D 4D 45     EOR   $454D      
+3A3C  44           ???              
+3A3D  49 41        EOR  #$41        
+3A3F  54           ???              
+3A40  45 20        EOR   ICHIDZ     
+3A42  43           ???              
+3A43  4D 44 00     EOR   $0044      
+3A46  50 52        BVC   $3A9A      
+3A48  4F           ???              
+3A49  54           ???              
+3A4A  45 43        EOR   $43        
+3A4C  54           ???              
+3A4D  49 4F        EOR  #$4F        
+3A4F  4E 00 50     LSR   $5000      
+3A52  41 52        EOR  (LMARGN,X)  
+3A54  41 4D        EOR  (ATRACT,X)  
+3A56  00           BRK              
+3A57  52           ???              
+3A58  45 47        EOR   $47        
+3A5A  49 53        EOR  #$53        
+3A5C  54           ???              
+3A5D  45 52        EOR   LMARGN     
+3A5F  00           BRK              
+3A60  42           ???              
+3A61  52           ???              
+3A62  45 41        EOR   SOUNDR     
+3A64  4B           ???              
+3A65  50 4F        BVC   $3AB6      
+3A67  49 4E        EOR  #$4E        
+3A69  54           ???              
+3A6A  00           BRK              
+3A6B  50 52        BVC   $3ABF      
+3A6D  49 4E        EOR  #$4E        
+
+
+
+
+
+
+
+PAGE 21   BUG 65 FROM 3000
+
+
+3A6F  54           ???              
+3A70  45 52        EOR   LMARGN     
+3A72  00           BRK              
+3A73  53           ???              
+3A74  59 4E 54     EOR   $544E,Y    
+3A77  41 58        EOR  (SAVMSC,X)  
+3A79  00           BRK              
+3A7A  9B           ???              
+3A7B  2A           ROL   A          
+3A7C  2A           ROL   A          
+3A7D  2A           ROL   A          
+3A7E  20 45 52     JSR   $5245      
+3A81  52           ???              
+3A82  4F           ???              
+3A83  52           ???              
+3A84  20 2D 20     JSR   $202D      
+3A87  00           BRK              
+3A88  4D 4E 45     EOR   $454E      
+3A8B  4D 4F 4E     EOR   $4E4F      
+3A8E  49 43        EOR  #$43        
+3A90  00           BRK              
+3A91  4F           ???              
+3A92  50 45        BVC   $3AD9      
+3A94  52           ???              
+3A95  41 4E        EOR  (DRKMSK,X)  
+3A97  44           ???              
+3A98  00           BRK              
+3A99  52           ???              
+3A9A  41 4E        EOR  (DRKMSK,X)  
+3A9C  47           ???              
+3A9D  45 00        EOR   $00        
+3A9F  54           ???              
+3AA0  4F           ???              
+3AA1  4F           ???              
+3AA2  20 4D 41     JSR   $414D      
+3AA5  4E 59 20     LSR   $2059      
+3AA8  4C 41 42     JMP   $4241      
+3AAB  45 4C        EOR   $4C        
+3AAD  20 52 45     JSR   $4552      
+3AB0  46 53        LSR   RMARGN     
+3AB2  00           BRK              
+3AB3  9B           ???              
+3AB4  55 4E        EOR   DRKMSK,X   
+3AB6  44           ???              
+3AB7  45 46        EOR   $46        
+3AB9  49 4E        EOR  #$4E        
+3ABB  45 44        EOR   $44        
+3ABD  20 2D 20     JSR   $202D      
+3AC0  00           BRK              
+3AC1  9B           ???              
+3AC2  49 2F        EOR  #$2F        
+3AC4  4F           ???              
+3AC5  20 45 52     JSR   $5245      
+3AC8  52           ???              
+3AC9  4F           ???              
+3ACA  52           ???              
+
+
+
+
+
+
+
+PAGE 22   BUG 65 FROM 3000
+
+
+3ACB  20 2D 20     JSR   $202D      
+3ACE  00           BRK              
+3ACF  3D 20 00     AND   ICHIDZ,X   
+3AD2  9B           ???              
+3AD3  55 53        EOR   RMARGN,X   
+3AD5  45 52        EOR   LMARGN     
+3AD7  20 52 55     JSR   $5552      
+3ADA  4E 9B 00     LSR   $009B      
+3ADD  42           ???              
+3ADE  52           ???              
+3ADF  45 41        EOR   SOUNDR     
+3AE1  4B           ???              
+3AE2  21 00        AND  ($00,X)     
+3AE4  9B           ???              
+3AE5  20 41 20     JSR   $2041      
+3AE8  20 58 20     JSR   $2058      
+3AEB  20 59 20     JSR   $2059      
+3AEE  53           ???              
+3AEF  50 20        BVC   $3B11      
+3AF1  4E 56 5F     LSR   $5F56      
+3AF4  42           ???              
+3AF5  44           ???              
+3AF6  49 5A        EOR  #$5A        
+3AF8  43           ???              
+3AF9  20 20 20     JSR   $2020      
+3AFC  50 43        BVC   $3B41      
+3AFE  20 20 49     JSR   $4920      
+3B01  4E 53 54     LSR   $5453      
+3B04  52           ???              
+3B05  9B           ???              
+3B06  00           BRK              
+3B07  00           BRK              
+3B08  00           BRK              
+3B09  00           BRK              
+3B0A  00           BRK              
+3B0B  00           BRK              
+3B0C  00           BRK              
+3B0D  00           BRK              
+3B0E  00           BRK              
+3B0F  00           BRK              
+3B10  41 44        EOR  ($44,X)     
+3B12  C3           ???              
+3B13  41 4E        EOR  (DRKMSK,X)  
+3B15  C4 41        CPY   SOUNDR     
+3B17  53           ???              
+3B18  CC 42 43     CPY   $4342      
+3B1B  C3           ???              
+3B1C  42           ???              
+3B1D  43           ???              
+3B1E  D3           ???              
+3B1F  42           ???              
+3B20  45 D1        EOR   $D1        
+3B22  42           ???              
+3B23  49 D4        EOR  #$D4        
+3B25  42           ???              
+3B26  4D C9 42     EOR   $42C9      
+
+
+
+
+
+
+
+PAGE 23   BUG 65 FROM 3000
+
+
+3B29  4E C5 42     LSR   $42C5      
+3B2C  50 CC        BVC   $3AFA      
+3B2E  42           ???              
+3B2F  52           ???              
+3B30  CB           ???              
+3B31  42           ???              
+3B32  56 C3        LSR   ERRSAV,X   
+3B34  42           ???              
+3B35  56 D3        LSR   $D3,X      
+3B37  43           ???              
+3B38  4C C3 43     JMP   $43C3      
+3B3B  4C C4 43     JMP   $43C4      
+3B3E  4C C9 43     JMP   $43C9      
+3B41  4C D6 43     JMP   $43D6      
+3B44  4D D0 43     EOR   $43D0      
+3B47  50 D8        BVC   $3B21      
+3B49  43           ???              
+3B4A  50 D9        BVC   $3B25      
+3B4C  44           ???              
+3B4D  45 C3        EOR   ERRSAV     
+3B4F  44           ???              
+3B50  45 D8        EOR   $D8        
+3B52  44           ???              
+3B53  45 D9        EOR   $D9        
+3B55  45 4F        EOR   COLRSH     
+3B57  D2           ???              
+3B58  49 4E        EOR  #$4E        
+3B5A  C3           ???              
+3B5B  49 4E        EOR  #$4E        
+3B5D  D8           CLD              
+3B5E  49 4E        EOR  #$4E        
+3B60  D9 4A 4D     CMP   $4D4A,Y    
+3B63  D0 4A        BNE   $3BAF      
+3B65  53           ???              
+3B66  D2           ???              
+3B67  4C 44 C1     JMP   $C144      
+3B6A  4C 44 D8     JMP   $D844      
+3B6D  4C 44 D9     JMP   $D944      
+3B70  4C 53 D2     JMP   $D253      
+3B73  4E 4F D0     LSR   $D04F      
+3B76  4F           ???              
+3B77  52           ???              
+3B78  C1 50        CMP  ($50,X)     
+3B7A  48           PHA              
+3B7B  C1 50        CMP  ($50,X)     
+3B7D  48           PHA              
+3B7E  D0 50        BNE   $3BD0      
+3B80  4C C1 50     JMP   $50C1      
+3B83  4C D0 52     JMP   $52D0      
+3B86  4F           ???              
+3B87  CC 52 4F     CPY   $4F52      
+3B8A  D2           ???              
+3B8B  52           ???              
+3B8C  54           ???              
+3B8D  C9 52        CMP  #$52        
+3B8F  54           ???              
+
+
+
+
+
+
+
+PAGE 24   BUG 65 FROM 3000
+
+
+3B90  D3           ???              
+3B91  53           ???              
+3B92  42           ???              
+3B93  C3           ???              
+3B94  53           ???              
+3B95  45 C3        EOR   ERRSAV     
+3B97  53           ???              
+3B98  45 C4        EOR   $C4        
+3B9A  53           ???              
+3B9B  45 C9        EOR   $C9        
+3B9D  53           ???              
+3B9E  54           ???              
+3B9F  C1 53        CMP  (RMARGN,X)  
+3BA1  54           ???              
+3BA2  D8           CLD              
+3BA3  53           ???              
+3BA4  54           ???              
+3BA5  D9 54 41     CMP   $4154,Y    
+3BA8  D8           CLD              
+3BA9  54           ???              
+3BAA  41 D9        EOR  ($D9,X)     
+3BAC  54           ???              
+3BAD  53           ???              
+3BAE  D8           CLD              
+3BAF  54           ???              
+3BB0  58           CLI              
+3BB1  C1 54        CMP  (ROWCRS,X)  
+3BB3  58           CLI              
+3BB4  D3           ???              
+3BB5  54           ???              
+3BB6  59 C1 2A     EOR   $2AC1,Y    
+3BB9  2A           ROL   A          
+3BBA  AA           TAX              
+3BBB  00           BRK              
+3BBC  61 21        ADC  (ICDNOZ,X)  
+3BBE  02           ???              
+3BBF  90 B0        BCC   $3B71      
+3BC1  F0 20        BEQ   $3BE3      
+3BC3  30 D0        BMI   $3B95      
+3BC5  10 00        BPL   $3BC7      
+3BC7  50 70        BVC   $3C39      
+3BC9  18           CLC              
+3BCA  D8           CLD              
+3BCB  58           CLI              
+3BCC  B8           CLV              
+3BCD  C1 E0        CMP  ($E0,X)     
+3BCF  C0 C2        CPY  #$C2        
+3BD1  CA           DEX              
+3BD2  88           DEY              
+3BD3  41 E2        EOR  ($E2,X)     
+3BD5  E8           INX              
+3BD6  C8           INY              
+3BD7  4C 20 A1     JMP   $A120      
+3BDA  A2 A0        LDX  #$A0        
+3BDC  42           ???              
+3BDD  EA           NOP              
+
+
+
+
+
+
+
+PAGE 25   BUG 65 FROM 3000
+
+
+3BDE  01 48        ORA  ($48,X)     
+3BE0  08           PHP              
+3BE1  68           PLA              
+3BE2  28           PLP              
+3BE3  22           ???              
+3BE4  62           ???              
+3BE5  40           RTI              
+3BE6  60           RTS              
+3BE7  E1 38        SBC  ($38,X)     
+3BE9  F8           SED              
+3BEA  78           SEI              
+3BEB  81 82        STA  (VNTP,X)    
+3BED  80           ???              
+3BEE  AA           TAX              
+3BEF  A8           TAY              
+3BF0  BA           TSX              
+3BF1  8A           TXA              
+3BF2  9A           TXS              
+3BF3  98           TYA              
+3BF4  03           ???              
+3BF5  03           ???              
+3BF6  06 00        ASL   $00        
+3BF8  00           BRK              
+3BF9  00           BRK              
+3BFA  09 00        ORA  #$00        
+3BFC  00           BRK              
+3BFD  00           BRK              
+3BFE  01 00        ORA  ($00,X)     
+3C00  00           BRK              
+3C01  01 01        ORA  ($01,X)     
+3C03  01 01        ORA  ($01,X)     
+3C05  03           ???              
+3C06  07           ???              
+3C07  07           ???              
+3C08  08           PHP              
+3C09  01 01        ORA  ($01,X)     
+3C0B  03           ???              
+3C0C  08           PHP              
+3C0D  01 01        ORA  ($01,X)     
+3C0F  05 02        ORA   CASINI     
+3C11  03           ???              
+3C12  0A           ASL   A          
+3C13  0B           ???              
+3C14  06 01        ASL   $01        
+3C16  03           ???              
+3C17  01 01        ORA  ($01,X)     
+3C19  01 01        ORA  ($01,X)     
+3C1B  06 06        ASL   TRAMSZ     
+3C1D  01 01        ORA  ($01,X)     
+3C1F  03           ???              
+3C20  01 01        ORA  ($01,X)     
+3C22  01 04        ORA  ($04,X)     
+3C24  0C           ???              
+3C25  0D 01 01     ORA   $0101      
+3C28  01 01        ORA  ($01,X)     
+3C2A  01 01        ORA  ($01,X)     
+
+
+
+
+
+
+
+PAGE 26   BUG 65 FROM 3000
+
+
+3C2C  00           BRK              
+3C2D  FF           ???              
+3C2E  08           PHP              
+3C2F  FF           ???              
+3C30  00           BRK              
+3C31  FF           ???              
+3C32  00           BRK              
+3C33  01 02        ORA  (CASINI,X)  
+3C35  06 07        ASL   $07        
+3C37  0A           ASL   A          
+3C38  FF           ???              
+3C39  00           BRK              
+3C3A  01 02        ORA  (CASINI,X)  
+3C3C  06 07        ASL   $07        
+3C3E  FF           ???              
+3C3F  00           BRK              
+3C40  0C           ???              
+3C41  FF           ???              
+3C42  00           BRK              
+3C43  01 09        ORA  (BOOT,X)    
+3C45  FF           ???              
+3C46  00           BRK              
+3C47  0A           ASL   A          
+3C48  FF           ???              
+3C49  00           BRK              
+3C4A  01 FF        ORA  ($FF,X)     
+3C4C  00           BRK              
+3C4D  FF           ???              
+3C4E  00           BRK              
+3C4F  02           ???              
+3C50  0A           ASL   A          
+3C51  FF           ???              
+3C52  00           BRK              
+3C53  01 0A        ORA  (DOSVEC,X)  
+3C55  FF           ???              
+3C56  00           BRK              
+3C57  02           ???              
+3C58  FF           ???              
+3C59  00           BRK              
+3C5A  01 FF        ORA  ($FF,X)     
+3C5C  4A           LSR   A          
+3C5D  08           PHP              
+3C5E  A2 06        LDX  #$06        
+3C60  78           SEI              
+3C61  0D 78 0D     ORA   $0D78      
+3C64  78           SEI              
+3C65  0D A2 03     ORA   ICCOM6     
+3C68  82           ???              
+3C69  03           ???              
+3C6A  78           SEI              
+3C6B  0D 64 08     ORA   $0864      
+3C6E  A2 0A        LDX  #$0A        
+3C70  42           ???              
+3C71  09 78        ORA  #$78        
+3C73  0D 78 0D     ORA   $0D78      
+3C76  E2           ???              
+
+
+
+
+
+
+
+PAGE 27   BUG 65 FROM 3000
+
+
+3C77  00           BRK              
+3C78  C2           ???              
+3C79  00           BRK              
+3C7A  78           SEI              
+3C7B  0D 89 0B     ORA   $0B89      
+3C7E  A2 07        LDX  #$07        
+3C80  78           SEI              
+3C81  0D 78 0D     ORA   $0D78      
+3C84  78           SEI              
+3C85  0D A2 04     ORA   $04A2      
+3C88  82           ???              
+3C89  04           ???              
+3C8A  78           SEI              
+3C8B  0D 4D 08     ORA   $084D      
+3C8E  E2           ???              
+3C8F  02           ???              
+3C90  78           SEI              
+3C91  0D 78 0D     ORA   $0D78      
+3C94  78           SEI              
+3C95  0D E2 01     ORA   $01E2      
+3C98  C2           ???              
+3C99  01 78        ORA  ($78,X)     
+3C9B  0D DC 00     ORA   $00DC      
+3C9E  81 06        STA  (TRAMSZ,X)  
+3CA0  78           SEI              
+3CA1  0D 78 0D     ORA   $0D78      
+3CA4  86 03        STX   $03        
+3CA6  81 03        STA  ($03,X)     
+3CA8  A7           ???              
+3CA9  03           ???              
+3CAA  78           SEI              
+3CAB  0D 66 08     ORA   $0866      
+3CAE  81 0A        STA  (DOSVEC,X)  
+3CB0  67           ???              
+3CB1  09 78        ORA  #$78        
+3CB3  0D C6 00     ORA   $00C6      
+3CB6  C1 00        CMP  ($00,X)     
+3CB8  E7           ???              
+3CB9  00           BRK              
+3CBA  78           SEI              
+3CBB  0D 87 0B     ORA   $0B87      
+3CBE  81 07        STA  ($07,X)     
+3CC0  78           SEI              
+3CC1  0D 78 0D     ORA   $0D78      
+3CC4  78           SEI              
+3CC5  0D 81 04     ORA   $0481      
+3CC8  A7           ???              
+3CC9  04           ???              
+3CCA  78           SEI              
+3CCB  0D 6C 08     ORA   $086C      
+3CCE  C1 02        CMP  (CASINI,X)  
+3CD0  78           SEI              
+3CD1  0D 78 0D     ORA   $0D78      
+3CD4  78           SEI              
+3CD5  0D C1 01     ORA   $01C1      
+3CD8  E7           ???              
+
+
+
+
+
+
+
+PAGE 28   BUG 65 FROM 3000
+
+
+3CD9  01 78        ORA  ($78,X)     
+3CDB  0D 69 08     ORA   $0869      
+3CDE  97           ???              
+3CDF  06 78        ASL   $78        
+3CE1  0D 78 0D     ORA   $0D78      
+3CE4  78           SEI              
+3CE5  0D 97 03     ORA   ICPTH5     
+3CE8  A0 03        LDY  #$03        
+3CEA  78           SEI              
+3CEB  0D 63 08     ORA   $0863      
+3CEE  97           ???              
+3CEF  0A           ASL   A          
+3CF0  60           RTS              
+3CF1  09 78        ORA  #$78        
+3CF3  0D DB 00     ORA   $00DB      
+3CF6  D7           ???              
+3CF7  00           BRK              
+3CF8  E0 00        CPX  #$00        
+3CFA  78           SEI              
+3CFB  0D 8B 0B     ORA   $0B8B      
+3CFE  97           ???              
+3CFF  07           ???              
+3D00  78           SEI              
+3D01  0D 78 0D     ORA   $0D78      
+3D04  78           SEI              
+3D05  0D 97 04     ORA   $0497      
+3D08  A0 04        LDY  #$04        
+3D0A  78           SEI              
+3D0B  0D 4F 08     ORA   $084F      
+3D0E  D7           ???              
+3D0F  02           ???              
+3D10  78           SEI              
+3D11  0D 78 0D     ORA   $0D78      
+3D14  78           SEI              
+3D15  0D D7 01     ORA   $01D7      
+3D18  E0 01        CPX  #$01        
+3D1A  78           SEI              
+3D1B  0D 6A 08     ORA   $086A      
+3D1E  80           ???              
+3D1F  06 78        ASL   $78        
+3D21  0D 78 0D     ORA   $0D78      
+3D24  78           SEI              
+3D25  0D 80 03     ORA   ICHID4     
+3D28  A8           TAY              
+3D29  03           ???              
+3D2A  78           SEI              
+3D2B  0D 65 08     ORA   $0865      
+3D2E  80           ???              
+3D2F  0A           ASL   A          
+3D30  68           PLA              
+3D31  09 78        ORA  #$78        
+3D33  0D DB 0C     ORA   $0CDB      
+3D36  C0 00        CPY  #$00        
+3D38  E8           INX              
+3D39  00           BRK              
+3D3A  78           SEI              
+
+
+
+
+
+
+
+PAGE 29   BUG 65 FROM 3000
+
+
+3D3B  0D 8C 0B     ORA   $0B8C      
+3D3E  80           ???              
+3D3F  07           ???              
+3D40  78           SEI              
+3D41  0D 78 0D     ORA   $0D78      
+3D44  78           SEI              
+3D45  0D 80 04     ORA   $0480      
+3D48  A8           TAY              
+3D49  04           ???              
+3D4A  78           SEI              
+3D4B  0D 6E 08     ORA   $086E      
+3D4E  C0 02        CPY  #$02        
+3D50  78           SEI              
+3D51  0D 78 0D     ORA   $0D78      
+3D54  78           SEI              
+3D55  0D C0 01     ORA   $01C0      
+3D58  E8           INX              
+3D59  01 78        ORA  ($78,X)     
+3D5B  0D 78 0D     ORA   $0D78      
+3D5E  AF           ???              
+3D5F  06 78        ASL   $78        
+3D61  0D 78 0D     ORA   $0D78      
+3D64  B1 03        LDA  ($03),Y     
+3D66  AF           ???              
+3D67  03           ???              
+3D68  B0 03        BCS   $3D6D      
+3D6A  78           SEI              
+3D6B  0D 56 08     ORA   $0856      
+3D6E  78           SEI              
+3D6F  0D 75 08     ORA   $0875      
+3D72  78           SEI              
+3D73  0D F1 00     ORA   $00F1      
+3D76  EF           ???              
+3D77  00           BRK              
+3D78  F0 00        BEQ   $3D7A      
+3D7A  78           SEI              
+3D7B  0D 83 0B     ORA   $0B83      
+3D7E  AF           ???              
+3D7F  07           ???              
+3D80  78           SEI              
+3D81  0D 78 0D     ORA   $0D78      
+3D84  B1 04        LDA  ($04),Y     
+3D86  AF           ???              
+3D87  04           ???              
+3D88  B0 05        BCS   $3D8F      
+3D8A  78           SEI              
+3D8B  0D 77 08     ORA   $0877      
+3D8E  EF           ???              
+3D8F  02           ???              
+3D90  76           ???              
+3D91  08           PHP              
+3D92  78           SEI              
+3D93  0D 78 0D     ORA   $0D78      
+3D96  EF           ???              
+3D97  01 78        ORA  ($78,X)     
+3D99  0D 78 0D     ORA   $0D78      
+
+
+
+
+
+
+
+PAGE 30   BUG 65 FROM 3000
+
+
+3D9C  9F           ???              
+3D9D  0A           ASL   A          
+3D9E  9D 06 9E     STA   $9E06,X    
+3DA1  0A           ASL   A          
+3DA2  78           SEI              
+3DA3  0D 9F 03     ORA   ICAX65     
+3DA6  9D 03 9E     STA   $9E03,X    
+3DA9  03           ???              
+3DAA  78           SEI              
+3DAB  0D 73 08     ORA   $0873      
+3DAE  9D 0A 72     STA   $720A,X    
+3DB1  08           PHP              
+3DB2  78           SEI              
+3DB3  0D DF 00     ORA   $00DF      
+3DB6  DD 00 DE     CMP   $DE00,X    
+3DB9  00           BRK              
+3DBA  78           SEI              
+3DBB  0D 84 0B     ORA   $0B84      
+3DBE  9D 07 78     STA   $7807,X    
+3DC1  0D 78 0D     ORA   $0D78      
+3DC4  9F           ???              
+3DC5  04           ???              
+3DC6  9D 04 9E     STA   $9E04,X    
+3DC9  05 78        ORA   $78        
+3DCB  0D 50 08     ORA   $0850      
+3DCE  DD 02 74     CMP   $7402,X    
+3DD1  08           PHP              
+3DD2  78           SEI              
+3DD3  0D DF 01     ORA   $01DF      
+3DD6  DD 01 DE     CMP   $DE01,X    
+3DD9  02           ???              
+3DDA  78           SEI              
+3DDB  0D 93 0A     ORA   $0A93      
+3DDE  91 06        STA  (TRAMSZ),Y  
+3DE0  78           SEI              
+3DE1  0D 78 0D     ORA   $0D78      
+3DE4  93           ???              
+3DE5  03           ???              
+3DE6  91 03        STA  ($03),Y     
+3DE8  94 03        STY   $03,X      
+3DEA  78           SEI              
+3DEB  0D 5A 08     ORA   $085A      
+3DEE  91 0A        STA  (DOSVEC),Y  
+3DF0  55 08        EOR   WARMST,X   
+3DF2  78           SEI              
+3DF3  0D D3 00     ORA   $00D3      
+3DF6  D1 00        CMP  ($00),Y     
+3DF8  D4           ???              
+3DF9  00           BRK              
+3DFA  78           SEI              
+3DFB  0D 88 0B     ORA   $0B88      
+3DFE  91 07        STA  ($07),Y     
+3E00  78           SEI              
+3E01  0D 78 0D     ORA   $0D78      
+3E04  78           SEI              
+3E05  0D 91 04     ORA   $0491      
+
+
+
+
+
+
+
+PAGE 31   BUG 65 FROM 3000
+
+
+3E08  94 04        STY   $04,X      
+3E0A  78           SEI              
+3E0B  0D 4E 08     ORA   $084E      
+3E0E  D1 02        CMP  (CASINI),Y  
+3E10  78           SEI              
+3E11  0D 78 0D     ORA   $0D78      
+3E14  78           SEI              
+3E15  0D D1 01     ORA   $01D1      
+3E18  D4           ???              
+3E19  01 78        ORA  ($78,X)     
+3E1B  0D 92 0A     ORA   $0A92      
+3E1E  AB           ???              
+3E1F  06 78        ASL   $78        
+3E21  0D 78 0D     ORA   $0D78      
+3E24  92           ???              
+3E25  03           ???              
+3E26  AB           ???              
+3E27  03           ???              
+3E28  98           TYA              
+3E29  03           ???              
+3E2A  78           SEI              
+3E2B  0D 59 08     ORA   $0859      
+3E2E  AB           ???              
+3E2F  0A           ASL   A          
+3E30  61 08        ADC  (WARMST,X)  
+3E32  78           SEI              
+3E33  0D D2 00     ORA   $00D2      
+3E36  EB           ???              
+3E37  00           BRK              
+3E38  D8           CLD              
+3E39  00           BRK              
+3E3A  78           SEI              
+3E3B  0D 85 0B     ORA   $0B85      
+3E3E  AB           ???              
+3E3F  07           ???              
+3E40  78           SEI              
+3E41  0D 78 0D     ORA   $0D78      
+3E44  78           SEI              
+3E45  0D AB 04     ORA   $04AB      
+3E48  98           TYA              
+3E49  04           ???              
+3E4A  78           SEI              
+3E4B  0D 6D 08     ORA   $086D      
+3E4E  EB           ???              
+3E4F  02           ???              
+3E50  78           SEI              
+3E51  0D 78 0D     ORA   $0D78      
+3E54  78           SEI              
+3E55  0D EB 01     ORA   $01EB      
+3E58  D8           CLD              
+3E59  01 78        ORA  ($78,X)     
+3E5B  0D 00 00     ORA   $0000      
+3E5E  00           BRK              
+3E5F  00           BRK              
+3E60  00           BRK              
+3E61  00           BRK              
+
+
+
+
+
+
+
+PAGE 32   BUG 65 FROM 3000
+
+
+3E62  00           BRK              
+3E63  00           BRK              
+3E64  00           BRK              
+3E65  00           BRK              
+3E66  00           BRK              
+3E67  00           BRK              
+3E68  00           BRK              
+3E69  00           BRK              
+3E6A  00           BRK              
+3E6B  00           BRK              
+3E6C  00           BRK              
+3E6D  00           BRK              
+3E6E  00           BRK              
+3E6F  00           BRK              
+3E70  4C F5 42     JMP   $42F5      
+3E73  4C FE 43     JMP   $43FE      
+3E76  4C 67 44     JMP   $4467      
+3E79  B1 3E        LDA  ($3E),Y     
+3E7B  31 3F        AND  ($3F),Y     
+3E7D  3D 3F 8B     AND   $8B3F,X    
+3E80  3F           ???              
+3E81  20 40 49     JSR   $4940      
+3E84  40           RTI              
+3E85  67           ???              
+3E86  40           RTI              
+3E87  6A           ROR   A          
+3E88  40           RTI              
+3E89  8A           TXA              
+3E8A  40           RTI              
+3E8B  B9 40 D7     LDA   $D740,Y    
+3E8E  40           RTI              
+3E8F  05 41        ORA   SOUNDR     
+3E91  9B           ???              
+3E92  41 AC        EOR  ($AC,X)     
+3E94  3E AC 3E     ROL   $3EAC,X    
+3E97  27           ???              
+3E98  42           ???              
+3E99  4B           ???              
+3E9A  42           ???              
+3E9B  62           ???              
+3E9C  42           ???              
+3E9D  B5 3E        LDA   $3E,X      
+3E9F  D3           ???              
+3EA0  42           ???              
+3EA1  D6 42        DEC   CRITIC,X   
+3EA3  F4           ???              
+3EA4  42           ???              
+3EA5  48           PHA              
+3EA6  43           ???              
+3EA7  A2 43        LDX  #$43        
+3EA9  1C           ???              
+3EAA  44           ???              
+3EAB  1F           ???              
+3EAC  44           ???              
+3EAD  A2 03        LDX  #$03        
+3EAF  4C 68 37     JMP   $3768      
+
+
+
+
+
+
+
+PAGE 33   BUG 65 FROM 3000
+
+
+3EB2  A9 FF        LDA  #$FF        
+3EB4  D0 02        BNE   $3EB8      
+3EB6  A9 00        LDA  #$00        
+3EB8  85 A8        STA   $A8        
+3EBA  20 96 33     JSR   $3396      
+3EBD  30 72        BMI   $3F31      
+3EBF  F0 70        BEQ   $3F31      
+3EC1  20 9F 33     JSR   $339F      
+3EC4  20 63 33     JSR   $3363      
+3EC7  30 68        BMI   $3F31      
+3EC9  F0 66        BEQ   $3F31      
+3ECB  A5 80        LDA   LOMEM      
+3ECD  85 82        STA   VNTP       
+3ECF  A5 81        LDA   $81        
+3ED1  85 83        STA   $83        
+3ED3  20 01 36     JSR   $3601      
+3ED6  A2 02        LDX  #$02        
+3ED8  20 56 37     JSR   $3756      
+3EDB  B1 86        LDA  (VVTP),Y    
+3EDD  20 0D 36     JSR   $360D      
+3EE0  20 EF 35     JSR   $35EF      
+3EE3  20 6F 33     JSR   $336F      
+3EE6  20 63 33     JSR   $3363      
+3EE9  30 46        BMI   $3F31      
+3EEB  D0 08        BNE   $3EF5      
+3EED  A2 02        LDX  #$02        
+3EEF  20 F8 35     JSR   $35F8      
+3EF2  4C D3 3E     JMP   $3ED3      
+3EF5  C9 5F        CMP  #$5F        
+3EF7  D0 0D        BNE   $3F06      
+3EF9  C6 82        DEC   VNTP       
+3EFB  A5 82        LDA   VNTP       
+3EFD  C9 FF        CMP  #$FF        
+3EFF  D0 02        BNE   $3F03      
+3F01  C6 83        DEC   $83        
+3F03  4C ED 3E     JMP   $3EED      
+3F06  C9 20        CMP  #$20        
+3F08  F0 1B        BEQ   $3F25      
+3F0A  24 A8        BIT   $A8        
+3F0C  10 0A        BPL   $3F18      
+3F0E  C9 40        CMP  #$40        
+3F10  D0 03        BNE   $3F15      
+3F12  20 6F 33     JSR   $336F      
+3F15  4C 21 3F     JMP   $3F21      
+3F18  20 9F 33     JSR   $339F      
+3F1B  C9 1B        CMP  #$1B        
+3F1D  F0 12        BEQ   $3F31      
+3F1F  A5 80        LDA   LOMEM      
+3F21  A0 00        LDY  #$00        
+3F23  91 86        STA  (VVTP),Y    
+3F25  E6 82        INC   VNTP       
+3F27  D0 02        BNE   $3F2B      
+3F29  E6 83        INC   $83        
+3F2B  A5 A9        LDA   $A9        
+3F2D  C9 9B        CMP  #$9B        
+3F2F  D0 A2        BNE   $3ED3      
+
+
+
+
+
+
+
+PAGE 34   BUG 65 FROM 3000
+
+
+3F31  60           RTS              
+3F32  20 7E 33     JSR   $337E      
+3F35  A5 84        LDA   VNTD       
+3F37  85 A1        STA   $A1        
+3F39  A5 85        LDA   $85        
+3F3B  85 A2        STA   $A2        
+3F3D  60           RTS              
+3F3E  20 7B 33     JSR   $337B      
+3F41  20 69 33     JSR   $3369      
+3F44  20 59 37     JSR   $3759      
+3F47  90 42        BCC   $3F8B      
+3F49  A2 00        LDX  #$00        
+3F4B  20 95 37     JSR   $3795      
+3F4E  A5 86        LDA   VVTP       
+3F50  85 8C        STA   STARP      
+3F52  A5 87        LDA   $87        
+3F54  85 8D        STA   $8D        
+3F56  A2 04        LDX  #$04        
+3F58  20 95 37     JSR   $3795      
+3F5B  B1 86        LDA  (VVTP),Y    
+3F5D  D1 8C        CMP  (STARP),Y   
+3F5F  F0 1E        BEQ   $3F7F      
+3F61  A2 00        LDX  #$00        
+3F63  20 F8 35     JSR   $35F8      
+3F66  20 E0 35     JSR   $35E0      
+3F69  A0 00        LDY  #$00        
+3F6B  B1 8C        LDA  (STARP),Y   
+3F6D  20 FE 35     JSR   $35FE      
+3F70  A2 04        LDX  #$04        
+3F72  20 FB 35     JSR   $35FB      
+3F75  20 E0 35     JSR   $35E0      
+3F78  A0 00        LDY  #$00        
+3F7A  B1 86        LDA  (VVTP),Y    
+3F7C  20 07 36     JSR   $3607      
+3F7F  20 74 37     JSR   $3774      
+3F82  E6 84        INC   VNTD       
+3F84  D0 02        BNE   $3F88      
+3F86  E6 85        INC   $85        
+3F88  4C 41 3F     JMP   $3F41      
+3F8B  60           RTS              
+3F8C  20 72 33     JSR   $3372      
+3F8F  20 7E 33     JSR   $337E      
+3F92  D0 15        BNE   $3FA9      
+3F94  18           CLC              
+3F95  A5 80        LDA   LOMEM      
+3F97  69 07        ADC  #$07        
+3F99  85 84        STA   VNTD       
+3F9B  A5 81        LDA   $81        
+3F9D  69 00        ADC  #$00        
+3F9F  85 85        STA   $85        
+3FA1  90 06        BCC   $3FA9      
+3FA3  A9 FF        LDA  #$FF        
+3FA5  85 84        STA   VNTD       
+3FA7  85 85        STA   $85        
+3FA9  A5 84        LDA   VNTD       
+3FAB  85 82        STA   VNTP       
+
+
+
+
+
+
+
+PAGE 35   BUG 65 FROM 3000
+
+
+3FAD  A5 85        LDA   $85        
+3FAF  85 83        STA   $83        
+3FB1  20 69 33     JSR   $3369      
+3FB4  20 59 37     JSR   $3759      
+3FB7  90 67        BCC   $4020      
+3FB9  A2 00        LDX  #$00        
+3FBB  20 F8 35     JSR   $35F8      
+3FBE  A9 08        LDA  #$08        
+3FC0  85 A4        STA   $A4        
+3FC2  A5 80        LDA   LOMEM      
+3FC4  85 88        STA   STMTAB     
+3FC6  A5 81        LDA   $81        
+3FC8  85 89        STA   $89        
+3FCA  A2 00        LDX  #$00        
+3FCC  20 95 37     JSR   $3795      
+3FCF  B1 86        LDA  (VVTP),Y    
+3FD1  20 FE 35     JSR   $35FE      
+3FD4  C6 A4        DEC   $A4        
+3FD6  20 74 37     JSR   $3774      
+3FD9  90 0A        BCC   $3FE5      
+3FDB  A5 80        LDA   LOMEM      
+3FDD  05 81        ORA   $81        
+3FDF  F0 04        BEQ   $3FE5      
+3FE1  A5 A4        LDA   $A4        
+3FE3  D0 E5        BNE   $3FCA      
+3FE5  A5 A4        LDA   $A4        
+3FE7  F0 0D        BEQ   $3FF6      
+3FE9  20 01 36     JSR   $3601      
+3FEC  20 01 36     JSR   $3601      
+3FEF  20 01 36     JSR   $3601      
+3FF2  C6 A4        DEC   $A4        
+3FF4  D0 EF        BNE   $3FE5      
+3FF6  A9 08        LDA  #$08        
+3FF8  85 A4        STA   $A4        
+3FFA  A5 88        LDA   STMTAB     
+3FFC  85 80        STA   LOMEM      
+3FFE  A5 89        LDA   $89        
+4000  85 81        STA   $81        
+4002  A2 00        LDX  #$00        
+4004  20 95 37     JSR   $3795      
+4007  B1 86        LDA  (VVTP),Y    
+4009  20 E9 35     JSR   $35E9      
+400C  C6 A4        DEC   $A4        
+400E  20 74 37     JSR   $3774      
+4011  90 0D        BCC   $4020      
+4013  A5 80        LDA   LOMEM      
+4015  05 81        ORA   $81        
+4017  F0 07        BEQ   $4020      
+4019  A5 A4        LDA   $A4        
+401B  D0 E5        BNE   $4002      
+401D  4C B1 3F     JMP   $3FB1      
+4020  60           RTS              
+4021  A9 04        LDA  #$04        
+4023  20 23 44     JSR   $4423      
+4026  A0 00        LDY  #$00        
+4028  20 8C 37     JSR   $378C      
+
+
+
+
+
+
+
+PAGE 36   BUG 65 FROM 3000
+
+
+402B  20 87 44     JSR   $4487      
+402E  A4 9F        LDY   $9F        
+4030  C0 64        CPY  #$64        
+4032  B0 11        BCS   $4045      
+4034  91 92        STA  ($92),Y     
+4036  E6 9F        INC   $9F        
+4038  C9 9B        CMP  #$9B        
+403A  D0 EF        BNE   $402B      
+403C  20 67 44     JSR   $4467      
+403F  A2 3F        LDX  #$3F        
+4041  9A           TXS              
+4042  4C 06 32     JMP   $3206      
+4045  88           DEY              
+4046  A9 9B        LDA  #$9B        
+4048  D0 EA        BNE   $4034      
+404A  20 78 33     JSR   $3378      
+404D  20 7E 33     JSR   $337E      
+4050  20 69 33     JSR   $3369      
+4053  A2 00        LDX  #$00        
+4055  20 56 37     JSR   $3756      
+4058  A5 84        LDA   VNTD       
+405A  91 86        STA  (VVTP),Y    
+405C  20 74 37     JSR   $3774      
+405F  90 06        BCC   $4067      
+4061  A5 80        LDA   LOMEM      
+4063  05 81        ORA   $81        
+4065  D0 E9        BNE   $4050      
+4067  60           RTS              
+4068  4C 60 45     JMP   $4560      
+406B  20 72 33     JSR   $3372      
+406E  20 7E 33     JSR   $337E      
+4071  A5 80        LDA   LOMEM      
+4073  85 82        STA   VNTP       
+4075  A5 81        LDA   $81        
+4077  85 83        STA   $83        
+4079  A2 00        LDX  #$00        
+407B  A0 04        LDY  #$04        
+407D  20 50 37     JSR   $3750      
+4080  20 F8 35     JSR   $35F8      
+4083  A2 02        LDX  #$02        
+4085  20 8F 37     JSR   $378F      
+4088  4C 04 36     JMP   $3604      
+408B  20 E3 35     JSR   $35E3      
+408E  A2 05        LDX  #$05        
+4090  BD B4 40     LDA   $40B4,X    
+4093  9D 52 31     STA   $3152,X    
+4096  CA           DEX              
+4097  10 F7        BPL   $4090      
+4099  A9 06        LDA  #$06        
+409B  20 76 44     JSR   $4476      
+409E  10 03        BPL   $40A3      
+40A0  4C 4B 44     JMP   $444B      
+40A3  20 8D 44     JSR   $448D      
+40A6  30 09        BMI   $40B1      
+40A8  20 E6 35     JSR   $35E6      
+40AB  20 69 33     JSR   $3369      
+
+
+
+
+
+
+
+PAGE 37   BUG 65 FROM 3000
+
+
+40AE  4C A3 40     JMP   $40A3      
+40B1  4C 76 3E     JMP   $3E76      
+40B4  44           ???              
+40B5  3A           ???              
+40B6  2A           ROL   A          
+40B7  2E 2A 9B     ROL   $9B2A      
+40BA  A9 08        LDA  #$08        
+40BC  20 23 44     JSR   $4423      
+40BF  20 93 33     JSR   $3393      
+40C2  C9 9B        CMP  #$9B        
+40C4  F0 0C        BEQ   $40D2      
+40C6  20 93 33     JSR   $3393      
+40C9  48           PHA              
+40CA  20 99 44     JSR   $4499      
+40CD  68           PLA              
+40CE  C9 9B        CMP  #$9B        
+40D0  D0 F4        BNE   $40C6      
+40D2  20 67 44     JSR   $4467      
+40D5  4C 03 32     JMP   $3203      
+40D8  20 72 33     JSR   $3372      
+40DB  20 E3 35     JSR   $35E3      
+40DE  A9 00        LDA  #$00        
+40E0  48           PHA              
+40E1  A9 0A        LDA  #$0A        
+40E3  85 88        STA   STMTAB     
+40E5  A9 00        LDA  #$00        
+40E7  85 89        STA   $89        
+40E9  A2 00        LDX  #$00        
+40EB  A0 08        LDY  #$08        
+40ED  20 65 37     JSR   $3765      
+40F0  A5 88        LDA   STMTAB     
+40F2  18           CLC              
+40F3  69 30        ADC  #$30        
+40F5  48           PHA              
+40F6  A5 80        LDA   LOMEM      
+40F8  05 81        ORA   $81        
+40FA  D0 E5        BNE   $40E1      
+40FC  68           PLA              
+40FD  F0 06        BEQ   $4105      
+40FF  20 E6 35     JSR   $35E6      
+4102  4C FC 40     JMP   $40FC      
+4105  60           RTS              
+4106  20 E3 35     JSR   $35E3      
+4109  20 78 33     JSR   $3378      
+410C  20 60 33     JSR   $3360      
+410F  F0 F4        BEQ   $4105      
+4111  A5 9F        LDA   $9F        
+4113  85 AA        STA   $AA        
+4115  20 69 33     JSR   $3369      
+4118  20 59 37     JSR   $3759      
+411B  90 71        BCC   $418E      
+411D  A5 80        LDA   LOMEM      
+411F  85 8A        STA   STMCUR     
+4121  A5 81        LDA   $81        
+4123  85 8B        STA   $8B        
+4125  A5 AA        LDA   $AA        
+
+
+
+
+
+
+
+PAGE 38   BUG 65 FROM 3000
+
+
+4127  85 9F        STA   $9F        
+4129  A5 9F        LDA   $9F        
+412B  48           PHA              
+412C  20 60 33     JSR   $3360      
+412F  08           PHP              
+4130  68           PLA              
+4131  AA           TAX              
+4132  68           PLA              
+4133  85 9F        STA   $9F        
+4135  8A           TXA              
+4136  48           PHA              
+4137  28           PLP              
+4138  F0 44        BEQ   $417E      
+413A  A5 83        LDA   $83        
+413C  C5 8B        CMP   $8B        
+413E  90 4E        BCC   $418E      
+4140  D0 06        BNE   $4148      
+4142  A5 82        LDA   VNTP       
+4144  C5 8A        CMP   STMCUR     
+4146  90 46        BCC   $418E      
+4148  20 99 33     JSR   $3399      
+414B  C9 2A        CMP  #$2A        
+414D  F0 26        BEQ   $4175      
+414F  C6 9F        DEC   $9F        
+4151  A2 08        LDX  #$08        
+4153  20 75 33     JSR   $3375      
+4156  A2 0A        LDX  #$0A        
+4158  20 95 37     JSR   $3795      
+415B  E6 8A        INC   STMCUR     
+415D  D0 02        BNE   $4161      
+415F  E6 8B        INC   $8B        
+4161  B1 86        LDA  (VVTP),Y    
+4163  C5 88        CMP   STMTAB     
+4165  F0 C2        BEQ   $4129      
+4167  E6 80        INC   LOMEM      
+4169  D0 02        BNE   $416D      
+416B  E6 81        INC   $81        
+416D  A5 80        LDA   LOMEM      
+416F  05 81        ORA   $81        
+4171  D0 A2        BNE   $4115      
+4173  F0 19        BEQ   $418E      
+4175  E6 8A        INC   STMCUR     
+4177  D0 02        BNE   $417B      
+4179  E6 8B        INC   $8B        
+417B  4C 29 41     JMP   $4129      
+417E  A2 00        LDX  #$00        
+4180  20 FB 35     JSR   $35FB      
+4183  A5 8A        LDA   STMCUR     
+4185  85 80        STA   LOMEM      
+4187  A5 8B        LDA   $8B        
+4189  85 81        STA   $81        
+418B  4C 15 41     JMP   $4115      
+418E  A5 AA        LDA   $AA        
+4190  85 9F        STA   $9F        
+4192  20 60 33     JSR   $3360      
+4195  F0 04        BEQ   $419B      
+
+
+
+
+
+
+
+PAGE 39   BUG 65 FROM 3000
+
+
+4197  E6 9F        INC   $9F        
+4199  D0 F7        BNE   $4192      
+419B  60           RTS              
+419C  20 7B 33     JSR   $337B      
+419F  A5 82        LDA   VNTP       
+41A1  05 83        ORA   $83        
+41A3  F0 7E        BEQ   $4223      
+41A5  A5 84        LDA   VNTD       
+41A7  05 85        ORA   $85        
+41A9  F0 78        BEQ   $4223      
+41AB  A5 82        LDA   VNTP       
+41AD  85 88        STA   STMTAB     
+41AF  A5 83        LDA   $83        
+41B1  85 89        STA   $89        
+41B3  A2 08        LDX  #$08        
+41B5  A0 00        LDY  #$00        
+41B7  20 8F 37     JSR   $378F      
+41BA  E6 88        INC   STMTAB     
+41BC  D0 02        BNE   $41C0      
+41BE  E6 89        INC   $89        
+41C0  A2 01        LDX  #$01        
+41C2  A0 00        LDY  #$00        
+41C4  A5 85        LDA   $85        
+41C6  C5 81        CMP   $81        
+41C8  90 27        BCC   $41F1      
+41CA  D0 08        BNE   $41D4      
+41CC  A5 84        LDA   VNTD       
+41CE  C5 80        CMP   LOMEM      
+41D0  90 1F        BCC   $41F1      
+41D2  F0 1D        BEQ   $41F1      
+41D4  A2 04        LDX  #$04        
+41D6  A0 08        LDY  #$08        
+41D8  20 50 37     JSR   $3750      
+41DB  C6 84        DEC   VNTD       
+41DD  A5 84        LDA   VNTD       
+41DF  C9 FF        CMP  #$FF        
+41E1  D0 02        BNE   $41E5      
+41E3  C6 85        DEC   $85        
+41E5  A5 82        LDA   VNTP       
+41E7  85 80        STA   LOMEM      
+41E9  A5 83        LDA   $83        
+41EB  85 81        STA   $81        
+41ED  A2 FF        LDX  #$FF        
+41EF  A0 FF        LDY  #$FF        
+41F1  86 8C        STX   STARP      
+41F3  84 8D        STY   $8D        
+41F5  20 69 33     JSR   $3369      
+41F8  A2 00        LDX  #$00        
+41FA  20 95 37     JSR   $3795      
+41FD  B1 86        LDA  (VVTP),Y    
+41FF  48           PHA              
+4200  A2 04        LDX  #$04        
+4202  20 56 37     JSR   $3756      
+4205  68           PLA              
+4206  91 86        STA  (VVTP),Y    
+4208  A2 00        LDX  #$00        
+
+
+
+
+
+
+
+PAGE 40   BUG 65 FROM 3000
+
+
+420A  A0 0C        LDY  #$0C        
+420C  20 50 37     JSR   $3750      
+420F  A2 04        LDX  #$04        
+4211  20 50 37     JSR   $3750      
+4214  C6 88        DEC   STMTAB     
+4216  A5 88        LDA   STMTAB     
+4218  C9 FF        CMP  #$FF        
+421A  D0 02        BNE   $421E      
+421C  C6 89        DEC   $89        
+421E  05 89        ORA   $89        
+4220  D0 D3        BNE   $41F5      
+4222  60           RTS              
+4223  A2 06        LDX  #$06        
+4225  4C 68 37     JMP   $3768      
+4228  A9 00        LDA  #$00        
+422A  85 AB        STA   $AB        
+422C  85 AC        STA   $AC        
+422E  20 60 33     JSR   $3360      
+4231  F0 13        BEQ   $4246      
+4233  20 93 33     JSR   $3393      
+4236  C9 53        CMP  #$53        
+4238  D0 04        BNE   $423E      
+423A  C6 AB        DEC   $AB        
+423C  D0 F0        BNE   $422E      
+423E  C9 50        CMP  #$50        
+4240  D0 05        BNE   $4247      
+4242  C6 AC        DEC   $AC        
+4244  D0 E8        BNE   $422E      
+4246  60           RTS              
+4247  A2 06        LDX  #$06        
+4249  4C 68 37     JMP   $3768      
+424C  AD F0 30     LDA   $30F0      
+424F  85 0C        STA   DOSINI     
+4251  AD F1 30     LDA   $30F1      
+4254  85 0D        STA   $0D        
+4256  A9 00        LDA  #$00        
+4258  85 08        STA   WARMST     
+425A  20 60 42     JSR   $4260      
+425D  6C 0A 00     JMP  (DOSVEC)    
+4260  6C 0C 00     JMP  (DOSINI)    
+4263  A9 52        LDA  #$52        
+4265  20 A1 44     JSR   $44A1      
+4268  20 7E 33     JSR   $337E      
+426B  A9 04        LDA  #$04        
+426D  20 23 44     JSR   $4423      
+4270  20 87 44     JSR   $4487      
+4273  C9 FF        CMP  #$FF        
+4275  D0 5A        BNE   $42D1      
+4277  20 87 44     JSR   $4487      
+427A  C9 FF        CMP  #$FF        
+427C  D0 53        BNE   $42D1      
+427E  A2 00        LDX  #$00        
+4280  86 9C        STX   $9C        
+4282  20 87 44     JSR   $4487      
+4285  A6 9C        LDX   $9C        
+4287  95 80        STA   LOMEM,X    
+
+
+
+
+
+
+
+PAGE 41   BUG 65 FROM 3000
+
+
+4289  E8           INX              
+428A  E0 04        CPX  #$04        
+428C  90 F2        BCC   $4280      
+428E  A5 80        LDA   LOMEM      
+4290  8D FE 30     STA   $30FE      
+4293  A5 81        LDA   $81        
+4295  8D FF 30     STA   $30FF      
+4298  18           CLC              
+4299  A5 80        LDA   LOMEM      
+429B  65 84        ADC   VNTD       
+429D  85 80        STA   LOMEM      
+429F  A5 81        LDA   $81        
+42A1  65 85        ADC   $85        
+42A3  85 81        STA   $81        
+42A5  18           CLC              
+42A6  A5 82        LDA   VNTP       
+42A8  65 84        ADC   VNTD       
+42AA  85 82        STA   VNTP       
+42AC  A5 83        LDA   $83        
+42AE  65 85        ADC   $85        
+42B0  85 83        STA   $83        
+42B2  20 87 44     JSR   $4487      
+42B5  48           PHA              
+42B6  A2 00        LDX  #$00        
+42B8  20 56 37     JSR   $3756      
+42BB  68           PLA              
+42BC  91 86        STA  (VVTP),Y    
+42BE  20 74 37     JSR   $3774      
+42C1  B0 EF        BCS   $42B2      
+42C3  20 8D 44     JSR   $448D      
+42C6  30 06        BMI   $42CE      
+42C8  A2 00        LDX  #$00        
+42CA  86 9C        STX   $9C        
+42CC  F0 B7        BEQ   $4285      
+42CE  4C 67 44     JMP   $4467      
+42D1  4C 4B 44     JMP   $444B      
+42D4  4C 63 45     JMP   $4563      
+42D7  20 78 33     JSR   $3378      
+42DA  20 86 37     JSR   $3786      
+42DD  20 83 37     JSR   $3783      
+42E0  AE 38 30     LDX   $3038      
+42E3  AC 39 30     LDY   $3039      
+42E6  A9 42        LDA  #$42        
+42E8  48           PHA              
+42E9  A9 EE        LDA  #$EE        
+42EB  48           PHA              
+42EC  6C 36 30     JMP  ($3036)     
+42EF  20 89 37     JSR   $3789      
+42F2  4C 80 37     JMP   $3780      
+42F5  A2 15        LDX  #$15        
+42F7  20 10 36     JSR   $3610      
+42FA  A2 00        LDX  #$00        
+42FC  BD FA 30     LDA   $30FA,X    
+42FF  20 FE 35     JSR   $35FE      
+4302  E8           INX              
+4303  E0 04        CPX  #$04        
+
+
+
+
+
+
+
+PAGE 42   BUG 65 FROM 3000
+
+
+4305  D0 F5        BNE   $42FC      
+4307  A2 08        LDX  #$08        
+4309  BD 40 43     LDA   $4340,X    
+430C  A0 30        LDY  #$30        
+430E  2D 00 31     AND   $3100      
+4311  F0 02        BEQ   $4315      
+4313  A0 31        LDY  #$31        
+4315  98           TYA              
+4316  20 E6 35     JSR   $35E6      
+4319  CA           DEX              
+431A  D0 ED        BNE   $4309      
+431C  20 01 36     JSR   $3601      
+431F  AD FE 30     LDA   $30FE      
+4322  85 80        STA   LOMEM      
+4324  AD FF 30     LDA   $30FF      
+4327  85 81        STA   $81        
+4329  A2 00        LDX  #$00        
+432B  20 FB 35     JSR   $35FB      
+432E  20 01 36     JSR   $3601      
+4331  AD FE 30     LDA   $30FE      
+4334  85 80        STA   LOMEM      
+4336  AD FF 30     LDA   $30FF      
+4339  85 81        STA   $81        
+433B  20 69 45     JSR   $4569      
+433E  4C E3 35     JMP   $35E3      
+4341  01 02        ORA  (CASINI,X)  
+4343  04           ???              
+4344  08           PHP              
+4345  10 20        BPL   $4367      
+4347  40           RTI              
+4348  80           ???              
+4349  A9 57        LDA  #$57        
+434B  20 A1 44     JSR   $44A1      
+434E  20 99 33     JSR   $3399      
+4351  C9 3A        CMP  #$3A        
+4353  D0 0B        BNE   $4360      
+4355  20 93 33     JSR   $3393      
+4358  C9 41        CMP  #$41        
+435A  D0 42        BNE   $439E      
+435C  A9 09        LDA  #$09        
+435E  D0 04        BNE   $4364      
+4360  A9 08        LDA  #$08        
+4362  C6 9F        DEC   $9F        
+4364  48           PHA              
+4365  20 78 33     JSR   $3378      
+4368  68           PLA              
+4369  48           PHA              
+436A  20 23 44     JSR   $4423      
+436D  68           PLA              
+436E  C9 09        CMP  #$09        
+4370  F0 0A        BEQ   $437C      
+4372  A9 FF        LDA  #$FF        
+4374  20 99 44     JSR   $4499      
+4377  A9 FF        LDA  #$FF        
+4379  20 99 44     JSR   $4499      
+437C  A2 00        LDX  #$00        
+
+
+
+
+
+
+
+PAGE 43   BUG 65 FROM 3000
+
+
+437E  86 9C        STX   $9C        
+4380  B5 80        LDA   LOMEM,X    
+4382  20 99 44     JSR   $4499      
+4385  A6 9C        LDX   $9C        
+4387  E8           INX              
+4388  E0 04        CPX  #$04        
+438A  90 F2        BCC   $437E      
+438C  A2 00        LDX  #$00        
+438E  20 95 37     JSR   $3795      
+4391  B1 86        LDA  (VVTP),Y    
+4393  20 99 44     JSR   $4499      
+4396  20 74 37     JSR   $3774      
+4399  B0 F1        BCS   $438C      
+439B  4C 67 44     JMP   $4467      
+439E  A2 06        LDX  #$06        
+43A0  4C 68 37     JMP   $3768      
+43A3  20 96 33     JSR   $3396      
+43A6  20 63 33     JSR   $3363      
+43A9  30 50        BMI   $43FB      
+43AB  F0 4E        BEQ   $43FB      
+43AD  20 FE 43     JSR   $43FE      
+43B0  84 A5        STY   $A5        
+43B2  20 01 36     JSR   $3601      
+43B5  B9 10 44     LDA   $4410,Y    
+43B8  20 E6 35     JSR   $35E6      
+43BB  20 EF 35     JSR   $35EF      
+43BE  20 0F 32     JSR   $320F      
+43C1  20 63 33     JSR   $3363      
+43C4  30 35        BMI   $43FB      
+43C6  F0 33        BEQ   $43FB      
+43C8  C9 20        CMP  #$20        
+43CA  F0 24        BEQ   $43F0      
+43CC  20 E6 35     JSR   $35E6      
+43CF  20 9F 33     JSR   $339F      
+43D2  20 63 33     JSR   $3363      
+43D5  30 24        BMI   $43FB      
+43D7  48           PHA              
+43D8  A4 A5        LDY   $A5        
+43DA  BE 17 44     LDX   $4417,Y    
+43DD  A5 80        LDA   LOMEM      
+43DF  9D FA 30     STA   $30FA,X    
+43E2  E0 04        CPX  #$04        
+43E4  D0 05        BNE   $43EB      
+43E6  A5 81        LDA   $81        
+43E8  8D FF 30     STA   $30FF      
+43EB  68           PLA              
+43EC  C9 9B        CMP  #$9B        
+43EE  F0 0B        BEQ   $43FB      
+43F0  A4 A5        LDY   $A5        
+43F2  C8           INY              
+43F3  C0 06        CPY  #$06        
+43F5  90 B9        BCC   $43B0      
+43F7  A0 00        LDY  #$00        
+43F9  F0 B5        BEQ   $43B0      
+43FB  4C F5 42     JMP   $42F5      
+43FE  A2 10        LDX  #$10        
+
+
+
+
+
+
+
+PAGE 44   BUG 65 FROM 3000
+
+
+4400  A0 44        LDY  #$44        
+4402  20 6E 37     JSR   $376E      
+4405  F0 05        BEQ   $440C      
+4407  A2 07        LDX  #$07        
+4409  4C 68 37     JMP   $3768      
+440C  BE 17 44     LDX   $4417,Y    
+440F  60           RTS              
+4410  41 58        EOR  (SAVMSC,X)  
+4412  59 53 50     EOR   $5053,Y    
+4415  46 00        LSR   $00        
+4417  00           BRK              
+4418  01 02        ORA  (CASINI,X)  
+441A  03           ???              
+441B  04           ???              
+441C  06 4C        ASL   $4C        
+441E  66 45        ROR   $45        
+4420  4C 40 4A     JMP   $4A40      
+4423  48           PHA              
+4424  20 99 33     JSR   $3399      
+4427  C9 23        CMP  #$23        
+4429  D0 37        BNE   $4462      
+442B  A2 00        LDX  #$00        
+442D  20 60 33     JSR   $3360      
+4430  F0 0D        BEQ   $443F      
+4432  20 93 33     JSR   $3393      
+4435  9D 52 31     STA   $3152,X    
+4438  E8           INX              
+4439  E0 0F        CPX  #$0F        
+443B  90 F0        BCC   $442D      
+443D  B0 23        BCS   $4462      
+443F  A9 9B        LDA  #$9B        
+4441  9D 52 31     STA   $3152,X    
+4444  68           PLA              
+4445  20 76 44     JSR   $4476      
+4448  30 01        BMI   $444B      
+444A  60           RTS              
+444B  84 80        STY   LOMEM      
+444D  A9 00        LDA  #$00        
+444F  85 81        STA   $81        
+4451  A2 11        LDX  #$11        
+4453  20 10 36     JSR   $3610      
+4456  20 DE 40     JSR   $40DE      
+4459  20 67 44     JSR   $4467      
+445C  20 15 32     JSR   $3215      
+445F  4C 03 32     JMP   $3203      
+4462  A2 06        LDX  #$06        
+4464  4C 68 37     JMP   $3768      
+4467  A2 0C        LDX  #$0C        
+4469  A9 00        LDA  #$00        
+446B  8D 5A 03     STA   ICAX11     
+446E  8E 52 03     STX   ICCOM1     
+4471  A2 10        LDX  #$10        
+4473  4C 56 E4     JMP   CIOV       
+4476  8D 5A 03     STA   ICAX11     
+4479  A9 52        LDA  #$52        
+447B  8D 54 03     STA   ICBAL1     
+
+
+
+
+
+
+
+PAGE 45   BUG 65 FROM 3000
+
+
+447E  A9 31        LDA  #$31        
+4480  8D 55 03     STA   ICBAH1     
+4483  A2 03        LDX  #$03        
+4485  D0 E7        BNE   $446E      
+4487  20 8D 44     JSR   $448D      
+448A  30 BF        BMI   $444B      
+448C  60           RTS              
+448D  A2 07        LDX  #$07        
+448F  A0 00        LDY  #$00        
+4491  8C 58 03     STY   ICBLL1     
+4494  8C 59 03     STY   ICBLH1     
+4497  F0 D5        BEQ   $446E      
+4499  A2 0B        LDX  #$0B        
+449B  20 8F 44     JSR   $448F      
+449E  30 AB        BMI   $444B      
+44A0  60           RTS              
+44A1  48           PHA              
+44A2  20 99 33     JSR   $3399      
+44A5  C9 25        CMP  #$25        
+44A7  F0 04        BEQ   $44AD      
+44A9  68           PLA              
+44AA  C6 9F        DEC   $9F        
+44AC  60           RTS              
+44AD  68           PLA              
+44AE  8D 02 03     STA   DCOMND     
+44B1  68           PLA              
+44B2  68           PLA              
+44B3  A9 01        LDA  #$01        
+44B5  8D 01 03     STA   DUNIT      
+44B8  8D 0A 03     STA   DAUX1      
+44BB  A2 00        LDX  #$00        
+44BD  8E 0B 03     STX   DAUX2      
+44C0  85 B3        STA   $B3        
+44C2  86 B4        STX   $B4        
+44C4  A9 00        LDA  #$00        
+44C6  8D 04 03     STA   DBUFLO     
+44C9  A9 40        LDA  #$40        
+44CB  8D 05 03     STA   DBUFHI     
+44CE  20 7E 33     JSR   $337E      
+44D1  F0 26        BEQ   $44F9      
+44D3  A5 84        LDA   VNTD       
+44D5  8D 0A 03     STA   DAUX1      
+44D8  A5 85        LDA   $85        
+44DA  8D 0B 03     STA   DAUX2      
+44DD  20 7E 33     JSR   $337E      
+44E0  F0 17        BEQ   $44F9      
+44E2  A5 84        LDA   VNTD       
+44E4  8D 04 03     STA   DBUFLO     
+44E7  A5 85        LDA   $85        
+44E9  8D 05 03     STA   DBUFHI     
+44EC  20 7E 33     JSR   $337E      
+44EF  F0 08        BEQ   $44F9      
+44F1  A5 84        LDA   VNTD       
+44F3  85 B3        STA   $B3        
+44F5  A5 85        LDA   $85        
+44F7  85 B4        STA   $B4        
+
+
+
+
+
+
+
+PAGE 46   BUG 65 FROM 3000
+
+
+44F9  20 53 E4     JSR   DSKINV     
+44FC  10 03        BPL   $4501      
+44FE  4C 4B 44     JMP   $444B      
+4501  18           CLC              
+4502  AD 04 03     LDA   DBUFLO     
+4505  69 80        ADC  #$80        
+4507  8D 04 03     STA   DBUFLO     
+450A  AD 05 03     LDA   DBUFHI     
+450D  69 00        ADC  #$00        
+450F  8D 05 03     STA   DBUFHI     
+4512  EE 0A 03     INC   DAUX1      
+4515  D0 03        BNE   $451A      
+4517  EE 0B 03     INC   DAUX2      
+451A  C6 B3        DEC   $B3        
+451C  D0 DB        BNE   $44F9      
+451E  C6 B4        DEC   $B4        
+4520  10 D7        BPL   $44F9      
+4522  60           RTS              
+4523  00           BRK              
+4524  00           BRK              
+4525  00           BRK              
+4526  00           BRK              
+4527  00           BRK              
+4528  00           BRK              
+4529  00           BRK              
+452A  00           BRK              
+452B  00           BRK              
+452C  00           BRK              
+452D  00           BRK              
+452E  00           BRK              
+452F  00           BRK              
+4530  00           BRK              
+4531  00           BRK              
+4532  00           BRK              
+4533  00           BRK              
+4534  00           BRK              
+4535  00           BRK              
+4536  00           BRK              
+4537  00           BRK              
+4538  00           BRK              
+4539  00           BRK              
+453A  00           BRK              
+453B  00           BRK              
+453C  00           BRK              
+453D  00           BRK              
+453E  00           BRK              
+453F  00           BRK              
+4540  00           BRK              
+4541  00           BRK              
+4542  00           BRK              
+4543  00           BRK              
+4544  00           BRK              
+4545  00           BRK              
+4546  00           BRK              
+4547  00           BRK              
+4548  00           BRK              
+
+
+
+
+
+
+
+PAGE 47   BUG 65 FROM 3000
+
+
+4549  00           BRK              
+454A  00           BRK              
+454B  00           BRK              
+454C  00           BRK              
+454D  00           BRK              
+454E  00           BRK              
+454F  00           BRK              
+4550  00           BRK              
+4551  00           BRK              
+4552  00           BRK              
+4553  00           BRK              
+4554  00           BRK              
+4555  00           BRK              
+4556  00           BRK              
+4557  00           BRK              
+4558  00           BRK              
+4559  00           BRK              
+455A  00           BRK              
+455B  00           BRK              
+455C  00           BRK              
+455D  00           BRK              
+455E  00           BRK              
+455F  00           BRK              
+4560  4C 6C 45     JMP   $456C      
+4563  4C 3E 46     JMP   $463E      
+4566  4C 6C 46     JMP   $466C      
+4569  4C C3 46     JMP   $46C3      
+456C  20 7D 37     JSR   $377D      
+456F  A2 FF        LDX  #$FF        
+4571  86 98        STX   $98        
+4573  E8           INX              
+4574  86 96        STX   $96        
+4576  86 97        STX   $97        
+4578  86 85        STX   $85        
+457A  E8           INX              
+457B  86 84        STX   VNTD       
+457D  20 26 46     JSR   $4626      
+4580  C9 40        CMP  #$40        
+4582  F0 1B        BEQ   $459F      
+4584  C6 9F        DEC   $9F        
+4586  20 72 33     JSR   $3372      
+4589  A5 80        LDA   LOMEM      
+458B  8D FE 30     STA   $30FE      
+458E  A5 81        LDA   $81        
+4590  8D FF 30     STA   $30FF      
+4593  20 26 46     JSR   $4626      
+4596  C9 40        CMP  #$40        
+4598  F0 05        BEQ   $459F      
+459A  A2 06        LDX  #$06        
+459C  4C 68 37     JMP   $3768      
+459F  20 72 33     JSR   $3372      
+45A2  A5 80        LDA   LOMEM      
+45A4  85 96        STA   $96        
+45A6  A5 81        LDA   $81        
+45A8  85 97        STA   $97        
+45AA  05 80        ORA   LOMEM      
+
+
+
+
+
+
+
+PAGE 48   BUG 65 FROM 3000
+
+
+45AC  F0 EC        BEQ   $459A      
+45AE  20 26 46     JSR   $4626      
+45B1  C9 52        CMP  #$52        
+45B3  D0 19        BNE   $45CE      
+45B5  20 90 33     JSR   $3390      
+45B8  20 73 3E     JSR   $3E73      
+45BB  E0 04        CPX  #$04        
+45BD  F0 DB        BEQ   $459A      
+45BF  86 98        STX   $98        
+45C1  20 33 46     JSR   $4633      
+45C4  20 72 33     JSR   $3372      
+45C7  A5 80        LDA   LOMEM      
+45C9  85 99        STA   $99        
+45CB  20 26 46     JSR   $4626      
+45CE  C9 49        CMP  #$49        
+45D0  D0 C8        BNE   $459A      
+45D2  20 33 46     JSR   $4633      
+45D5  20 7E 33     JSR   $337E      
+45D8  A5 84        LDA   VNTD       
+45DA  05 85        ORA   $85        
+45DC  D0 02        BNE   $45E0      
+45DE  E6 84        INC   VNTD       
+45E0  A2 13        LDX  #$13        
+45E2  20 10 36     JSR   $3610      
+45E5  A5 96        LDA   $96        
+45E7  8D F2 30     STA   $30F2      
+45EA  A5 97        LDA   $97        
+45EC  8D F3 30     STA   $30F3      
+45EF  A9 FF        LDA  #$FF        
+45F1  8D F9 30     STA   $30F9      
+45F4  A2 FB        LDX  #$FB        
+45F6  A0 45        LDY  #$45        
+45F8  4C CD 49     JMP   $49CD      
+45FB  A6 98        LDX   $98        
+45FD  30 07        BMI   $4606      
+45FF  A5 99        LDA   $99        
+4601  DD FA 30     CMP   $30FA,X    
+4604  D0 0E        BNE   $4614      
+4606  C6 84        DEC   VNTD       
+4608  A5 84        LDA   VNTD       
+460A  C9 FF        CMP  #$FF        
+460C  D0 02        BNE   $4610      
+460E  C6 85        DEC   $85        
+4610  05 85        ORA   $85        
+4612  F0 0A        BEQ   $461E      
+4614  A9 FF        LDA  #$FF        
+4616  85 9A        STA   $9A        
+4618  20 A2 48     JSR   $48A2      
+461B  4C E5 45     JMP   $45E5      
+461E  A2 14        LDX  #$14        
+4620  20 10 36     JSR   $3610      
+4623  4C 70 3E     JMP   $3E70      
+4626  20 60 33     JSR   $3360      
+4629  D0 05        BNE   $4630      
+462B  68           PLA              
+462C  68           PLA              
+
+
+
+
+
+
+
+PAGE 49   BUG 65 FROM 3000
+
+
+462D  4C E0 45     JMP   $45E0      
+4630  4C 93 33     JMP   $3393      
+4633  20 90 33     JSR   $3390      
+4636  C9 3D        CMP  #$3D        
+4638  F0 03        BEQ   $463D      
+463A  4C 9A 45     JMP   $459A      
+463D  60           RTS              
+463E  A9 00        LDA  #$00        
+4640  85 9A        STA   $9A        
+4642  20 93 33     JSR   $3393      
+4645  C9 53        CMP  #$53        
+4647  F0 04        BEQ   $464D      
+4649  C6 9A        DEC   $9A        
+464B  C6 9F        DEC   $9F        
+464D  20 7E 33     JSR   $337E      
+4650  D0 02        BNE   $4654      
+4652  E6 84        INC   VNTD       
+4654  20 69 33     JSR   $3369      
+4657  20 A2 48     JSR   $48A2      
+465A  20 70 3E     JSR   $3E70      
+465D  C6 84        DEC   VNTD       
+465F  A5 84        LDA   VNTD       
+4661  C9 FF        CMP  #$FF        
+4663  D0 02        BNE   $4667      
+4665  C6 85        DEC   $85        
+4667  05 85        ORA   $85        
+4669  D0 E9        BNE   $4654      
+466B  60           RTS              
+466C  20 72 33     JSR   $3372      
+466F  20 7E 33     JSR   $337E      
+4672  20 69 33     JSR   $3369      
+4675  A2 00        LDX  #$00        
+4677  20 F8 35     JSR   $35F8      
+467A  20 01 36     JSR   $3601      
+467D  20 01 36     JSR   $3601      
+4680  A5 80        LDA   LOMEM      
+4682  48           PHA              
+4683  A5 81        LDA   $81        
+4685  48           PHA              
+4686  20 C3 46     JSR   $46C3      
+4689  68           PLA              
+468A  85 81        STA   $81        
+468C  68           PLA              
+468D  85 80        STA   LOMEM      
+468F  20 01 36     JSR   $3601      
+4692  E6 A4        INC   $A4        
+4694  A5 A4        LDA   $A4        
+4696  C9 0F        CMP  #$0F        
+4698  90 F5        BCC   $468F      
+469A  A5 B1        LDA   $B1        
+469C  20 C6 49     JSR   $49C6      
+469F  85 B1        STA   $B1        
+46A1  A2 00        LDX  #$00        
+46A3  20 95 37     JSR   $3795      
+46A6  B1 86        LDA  (VVTP),Y    
+46A8  20 FE 35     JSR   $35FE      
+
+
+
+
+
+
+
+PAGE 50   BUG 65 FROM 3000
+
+
+46AB  E6 80        INC   LOMEM      
+46AD  D0 02        BNE   $46B1      
+46AF  E6 81        INC   $81        
+46B1  C6 B1        DEC   $B1        
+46B3  D0 EC        BNE   $46A1      
+46B5  A5 84        LDA   VNTD       
+46B7  85 82        STA   VNTP       
+46B9  A5 85        LDA   $85        
+46BB  85 83        STA   $83        
+46BD  20 59 37     JSR   $3759      
+46C0  B0 B0        BCS   $4672      
+46C2  60           RTS              
+46C3  20 A8 47     JSR   $47A8      
+46C6  98           TYA              
+46C7  48           PHA              
+46C8  8A           TXA              
+46C9  29 3F        AND  #$3F        
+46CB  AA           TAX              
+46CC  A0 00        LDY  #$00        
+46CE  8A           TXA              
+46CF  F0 0C        BEQ   $46DD      
+46D1  B9 10 3B     LDA   $3B10,Y    
+46D4  30 03        BMI   $46D9      
+46D6  C8           INY              
+46D7  D0 F8        BNE   $46D1      
+46D9  C8           INY              
+46DA  CA           DEX              
+46DB  D0 F4        BNE   $46D1      
+46DD  B9 10 3B     LDA   $3B10,Y    
+46E0  48           PHA              
+46E1  29 7F        AND  #$7F        
+46E3  20 E6 35     JSR   $35E6      
+46E6  C8           INY              
+46E7  68           PLA              
+46E8  10 F3        BPL   $46DD      
+46EA  20 01 36     JSR   $3601      
+46ED  20 01 36     JSR   $3601      
+46F0  68           PLA              
+46F1  A8           TAY              
+46F2  0A           ASL   A          
+46F3  AA           TAX              
+46F4  B9 02 47     LDA   $4702,Y    
+46F7  85 A4        STA   $A4        
+46F9  BD 11 47     LDA   $4711,X    
+46FC  48           PHA              
+46FD  BD 10 47     LDA   $4710,X    
+4700  48           PHA              
+4701  60           RTS              
+4702  09 0B        ORA  #$0B        
+4704  0B           ???              
+4705  07           ???              
+4706  09 09        ORA  #$09        
+4708  0B           ???              
+4709  0B           ???              
+470A  05 05        ORA   $05        
+470C  08           PHP              
+
+
+
+
+
+
+
+PAGE 51   BUG 65 FROM 3000
+
+
+470D  09 0B        ORA  #$0B        
+470F  07           ???              
+4710  2B           ???              
+4711  47           ???              
+4712  33           ???              
+4713  47           ???              
+4714  37           ???              
+4715  47           ???              
+4716  41 47        EOR  ($47,X)     
+4718  47           ???              
+4719  47           ???              
+471A  4B           ???              
+471B  47           ???              
+471C  57           ???              
+471D  47           ???              
+471E  68           PLA              
+471F  47           ???              
+4720  00           BRK              
+4721  47           ???              
+4722  00           BRK              
+4723  47           ???              
+4724  79 47 81     ADC   $8147,Y    
+4727  47           ???              
+4728  89           ???              
+4729  47           ???              
+472A  92           ???              
+472B  47           ???              
+472C  20 9D 47     JSR   $479D      
+472F  A2 02        LDX  #$02        
+4731  4C 04 36     JMP   $3604      
+4734  A9 58        LDA  #$58        
+4736  D0 02        BNE   $473A      
+4738  A9 59        LDA  #$59        
+473A  48           PHA              
+473B  20 2C 47     JSR   $472C      
+473E  68           PLA              
+473F  4C 59 48     JMP   $4859      
+4742  20 63 48     JSR   $4863      
+4745  4C 07 36     JMP   $3607      
+4748  A9 58        LDA  #$58        
+474A  D0 02        BNE   $474E      
+474C  A9 59        LDA  #$59        
+474E  48           PHA              
+474F  20 63 48     JSR   $4863      
+4752  20 07 36     JSR   $3607      
+4755  4C 3E 47     JMP   $473E      
+4758  20 F2 35     JSR   $35F2      
+475B  20 63 48     JSR   $4863      
+475E  20 07 36     JSR   $3607      
+4761  A9 58        LDA  #$58        
+4763  20 59 48     JSR   $4859      
+4766  4C F5 35     JMP   $35F5      
+4769  20 F2 35     JSR   $35F2      
+476C  20 63 48     JSR   $4863      
+476F  20 07 36     JSR   $3607      
+4772  20 F5 35     JSR   $35F5      
+
+
+
+
+
+
+
+PAGE 52   BUG 65 FROM 3000
+
+
+4775  A9 59        LDA  #$59        
+4777  4C 59 48     JMP   $4859      
+477A  A9 23        LDA  #$23        
+477C  20 E6 35     JSR   $35E6      
+477F  4C 42 47     JMP   $4742      
+4782  20 A3 49     JSR   $49A3      
+4785  A2 02        LDX  #$02        
+4787  4C 04 36     JMP   $3604      
+478A  20 F2 35     JSR   $35F2      
+478D  20 2C 47     JSR   $472C      
+4790  4C F5 35     JMP   $35F5      
+4793  A2 00        LDX  #$00        
+4795  20 95 37     JSR   $3795      
+4798  B1 86        LDA  (VVTP),Y    
+479A  4C 07 36     JMP   $3607      
+479D  20 63 48     JSR   $4863      
+47A0  85 82        STA   VNTP       
+47A2  20 63 48     JSR   $4863      
+47A5  85 83        STA   $83        
+47A7  60           RTS              
+47A8  A2 00        LDX  #$00        
+47AA  20 95 37     JSR   $3795      
+47AD  B1 86        LDA  (VVTP),Y    
+47AF  85 82        STA   VNTP       
+47B1  84 83        STY   $83        
+47B3  A9 5C        LDA  #$5C        
+47B5  85 88        STA   STMTAB     
+47B7  A9 3C        LDA  #$3C        
+47B9  85 89        STA   $89        
+47BB  18           CLC              
+47BC  26 82        ROL   VNTP       
+47BE  26 83        ROL   $83        
+47C0  A2 02        LDX  #$02        
+47C2  A0 08        LDY  #$08        
+47C4  20 50 37     JSR   $3750      
+47C7  A0 00        LDY  #$00        
+47C9  B1 82        LDA  (VNTP),Y    
+47CB  AA           TAX              
+47CC  85 B1        STA   $B1        
+47CE  C8           INY              
+47CF  B1 82        LDA  (VNTP),Y    
+47D1  A8           TAY              
+47D2  60           RTS              
+47D3  8A           TXA              
+47D4  48           PHA              
+47D5  98           TYA              
+47D6  48           PHA              
+47D7  A5 80        LDA   LOMEM      
+47D9  48           PHA              
+47DA  A5 81        LDA   $81        
+47DC  48           PHA              
+47DD  D8           CLD              
+47DE  BA           TSX              
+47DF  8A           TXA              
+47E0  18           CLC              
+47E1  69 07        ADC  #$07        
+
+
+
+
+
+
+
+PAGE 53   BUG 65 FROM 3000
+
+
+47E3  AA           TAX              
+47E4  86 80        STX   LOMEM      
+47E6  A0 01        LDY  #$01        
+47E8  84 81        STY   $81        
+47EA  88           DEY              
+47EB  B1 80        LDA  (LOMEM),Y   
+47ED  38           SEC              
+47EE  E9 02        SBC  #$02        
+47F0  4D F2 30     EOR   $30F2      
+47F3  D0 0C        BNE   $4801      
+47F5  E8           INX              
+47F6  86 80        STX   LOMEM      
+47F8  B1 80        LDA  (LOMEM),Y   
+47FA  E9 00        SBC  #$00        
+47FC  4D F3 30     EOR   $30F3      
+47FF  F0 0D        BEQ   $480E      
+4801  68           PLA              
+4802  85 81        STA   $81        
+4804  68           PLA              
+4805  85 80        STA   LOMEM      
+4807  68           PLA              
+4808  A8           TAY              
+4809  68           PLA              
+480A  AA           TAX              
+480B  6C F4 30     JMP  ($30F4)     
+480E  68           PLA              
+480F  85 81        STA   $81        
+4811  68           PLA              
+4812  85 80        STA   LOMEM      
+4814  68           PLA              
+4815  8D FC 30     STA   $30FC      
+4818  68           PLA              
+4819  8D FB 30     STA   $30FB      
+481C  68           PLA              
+481D  8D FA 30     STA   $30FA      
+4820  68           PLA              
+4821  29 EF        AND  #$EF        
+4823  8D 00 31     STA   $3100      
+4826  68           PLA              
+4827  38           SEC              
+4828  E9 02        SBC  #$02        
+482A  8D FE 30     STA   $30FE      
+482D  68           PLA              
+482E  E9 00        SBC  #$00        
+4830  8D FF 30     STA   $30FF      
+4833  BA           TSX              
+4834  8E FD 30     STX   $30FD      
+4837  AE F8 30     LDX   $30F8      
+483A  9A           TXS              
+483B  A9 00        LDA  #$00        
+483D  8D F9 30     STA   $30F9      
+4840  AD F4 30     LDA   $30F4      
+4843  8D 06 02     STA   VBREAK     
+4846  AD F5 30     LDA   $30F5      
+4849  8D 07 02     STA   $0207      
+484C  58           CLI              
+
+
+
+
+
+
+
+PAGE 54   BUG 65 FROM 3000
+
+
+484D  20 89 37     JSR   $3789      
+4850  20 80 37     JSR   $3780      
+4853  20 7D 37     JSR   $377D      
+4856  6C F6 30     JMP  ($30F6)     
+4859  48           PHA              
+485A  A9 2C        LDA  #$2C        
+485C  20 E6 35     JSR   $35E6      
+485F  68           PLA              
+4860  4C E6 35     JMP   $35E6      
+4863  E6 80        INC   LOMEM      
+4865  D0 02        BNE   $4869      
+4867  E6 81        INC   $81        
+4869  A2 00        LDX  #$00        
+486B  20 95 37     JSR   $3795      
+486E  B1 86        LDA  (VVTP),Y    
+4870  60           RTS              
+4871  AD F2 30     LDA   $30F2      
+4874  0D F3 30     ORA   $30F3      
+4877  F0 23        BEQ   $489C      
+4879  AD F2 30     LDA   $30F2      
+487C  85 88        STA   STMTAB     
+487E  AD F3 30     LDA   $30F3      
+4881  85 89        STA   $89        
+4883  A2 08        LDX  #$08        
+4885  20 56 37     JSR   $3756      
+4888  B1 86        LDA  (VVTP),Y    
+488A  8D 01 31     STA   $3101      
+488D  A9 FF        LDA  #$FF        
+488F  91 86        STA  (VVTP),Y    
+4891  D1 86        CMP  (VVTP),Y    
+4893  D0 08        BNE   $489D      
+4895  98           TYA              
+4896  91 86        STA  (VVTP),Y    
+4898  D1 86        CMP  (VVTP),Y    
+489A  D0 01        BNE   $489D      
+489C  60           RTS              
+489D  A2 08        LDX  #$08        
+489F  4C 68 37     JMP   $3768      
+48A2  AD FE 30     LDA   $30FE      
+48A5  85 80        STA   LOMEM      
+48A7  AD FF 30     LDA   $30FF      
+48AA  85 81        STA   $81        
+48AC  20 A8 47     JSR   $47A8      
+48AF  C0 0B        CPY  #$0B        
+48B1  F0 40        BEQ   $48F3      
+48B3  8A           TXA              
+48B4  29 3F        AND  #$3F        
+48B6  C9 0A        CMP  #$0A        
+48B8  F0 76        BEQ   $4930      
+48BA  C9 1B        CMP  #$1B        
+48BC  F0 7F        BEQ   $493D      
+48BE  C9 1C        CMP  #$1C        
+48C0  D0 03        BNE   $48C5      
+48C2  4C 63 49     JMP   $4963      
+48C5  C9 29        CMP  #$29        
+48C7  D0 03        BNE   $48CC      
+
+
+
+
+
+
+
+PAGE 55   BUG 65 FROM 3000
+
+
+48C9  4C 89 49     JMP   $4989      
+48CC  C9 2A        CMP  #$2A        
+48CE  D0 03        BNE   $48D3      
+48D0  4C 6A 49     JMP   $496A      
+48D3  8A           TXA              
+48D4  20 C6 49     JSR   $49C6      
+48D7  18           CLC              
+48D8  65 80        ADC   LOMEM      
+48DA  85 80        STA   LOMEM      
+48DC  A5 81        LDA   $81        
+48DE  69 00        ADC  #$00        
+48E0  85 81        STA   $81        
+48E2  A5 80        LDA   LOMEM      
+48E4  8D F2 30     STA   $30F2      
+48E7  A5 81        LDA   $81        
+48E9  8D F3 30     STA   $30F3      
+48EC  A2 6B        LDX  #$6B        
+48EE  A0 46        LDY  #$46        
+48F0  4C CD 49     JMP   $49CD      
+48F3  A0 00        LDY  #$00        
+48F5  B1 86        LDA  (VVTP),Y    
+48F7  48           PHA              
+48F8  20 A3 49     JSR   $49A3      
+48FB  68           PLA              
+48FC  48           PHA              
+48FD  20 C6 49     JSR   $49C6      
+4900  AA           TAX              
+4901  68           PLA              
+4902  29 20        AND  #$20        
+4904  F0 11        BEQ   $4917      
+4906  BD 2C 49     LDA   $492C,X    
+4909  2D 00 31     AND   $3100      
+490C  D0 11        BNE   $491F      
+490E  E6 80        INC   LOMEM      
+4910  D0 02        BNE   $4914      
+4912  E6 81        INC   $81        
+4914  4C E2 48     JMP   $48E2      
+4917  BD 2C 49     LDA   $492C,X    
+491A  2D 00 31     AND   $3100      
+491D  D0 EF        BNE   $490E      
+491F  A5 82        LDA   VNTP       
+4921  8D F2 30     STA   $30F2      
+4924  A5 83        LDA   $83        
+4926  8D F3 30     STA   $30F3      
+4929  4C EC 48     JMP   $48EC      
+492C  80           ???              
+492D  40           RTI              
+492E  01 02        ORA  (CASINI,X)  
+4930  AD FE FF     LDA   $FFFE      
+4933  85 80        STA   LOMEM      
+4935  AD FF FF     LDA   $FFFF      
+4938  85 81        STA   $81        
+493A  4C E2 48     JMP   $48E2      
+493D  C0 0C        CPY  #$0C        
+493F  F0 06        BEQ   $4947      
+4941  20 9D 47     JSR   $479D      
+
+
+
+
+
+
+
+PAGE 56   BUG 65 FROM 3000
+
+
+4944  4C 1F 49     JMP   $491F      
+4947  20 9D 47     JSR   $479D      
+494A  A2 02        LDX  #$02        
+494C  20 95 37     JSR   $3795      
+494F  B1 86        LDA  (VVTP),Y    
+4951  85 80        STA   LOMEM      
+4953  E6 82        INC   VNTP       
+4955  D0 02        BNE   $4959      
+4957  E6 83        INC   $83        
+4959  20 95 37     JSR   $3795      
+495C  B1 86        LDA  (VVTP),Y    
+495E  85 81        STA   $81        
+4960  4C E2 48     JMP   $48E2      
+4963  A5 9A        LDA   $9A        
+4965  D0 D6        BNE   $493D      
+4967  4C D3 48     JMP   $48D3      
+496A  AE FD 30     LDX   $30FD      
+496D  E8           INX              
+496E  86 82        STX   VNTP       
+4970  A0 01        LDY  #$01        
+4972  84 83        STY   $83        
+4974  88           DEY              
+4975  B1 82        LDA  (VNTP),Y    
+4977  85 80        STA   LOMEM      
+4979  E8           INX              
+497A  86 82        STX   VNTP       
+497C  B1 82        LDA  (VNTP),Y    
+497E  85 81        STA   $81        
+4980  E6 80        INC   LOMEM      
+4982  D0 02        BNE   $4986      
+4984  E6 81        INC   $81        
+4986  4C E2 48     JMP   $48E2      
+4989  AE FD 30     LDX   $30FD      
+498C  E8           INX              
+498D  E8           INX              
+498E  86 82        STX   VNTP       
+4990  A0 01        LDY  #$01        
+4992  84 83        STY   $83        
+4994  88           DEY              
+4995  B1 82        LDA  (VNTP),Y    
+4997  85 80        STA   LOMEM      
+4999  E8           INX              
+499A  86 82        STX   VNTP       
+499C  B1 82        LDA  (VNTP),Y    
+499E  85 81        STA   $81        
+49A0  4C E2 48     JMP   $48E2      
+49A3  20 63 48     JSR   $4863      
+49A6  48           PHA              
+49A7  A5 80        LDA   LOMEM      
+49A9  85 82        STA   VNTP       
+49AB  A5 81        LDA   $81        
+49AD  85 83        STA   $83        
+49AF  A0 00        LDY  #$00        
+49B1  68           PLA              
+49B2  10 01        BPL   $49B5      
+49B4  88           DEY              
+
+
+
+
+
+
+
+PAGE 57   BUG 65 FROM 3000
+
+
+49B5  18           CLC              
+49B6  65 82        ADC   VNTP       
+49B8  85 82        STA   VNTP       
+49BA  98           TYA              
+49BB  65 83        ADC   $83        
+49BD  85 83        STA   $83        
+49BF  E6 82        INC   VNTP       
+49C1  D0 02        BNE   $49C5      
+49C3  E6 83        INC   $83        
+49C5  60           RTS              
+49C6  4A           LSR   A          
+49C7  4A           LSR   A          
+49C8  4A           LSR   A          
+49C9  4A           LSR   A          
+49CA  4A           LSR   A          
+49CB  4A           LSR   A          
+49CC  60           RTS              
+49CD  8E F6 30     STX   $30F6      
+49D0  8C F7 30     STY   $30F7      
+49D3  20 71 48     JSR   $4871      
+49D6  20 86 37     JSR   $3786      
+49D9  20 83 37     JSR   $3783      
+49DC  BA           TSX              
+49DD  8E F8 30     STX   $30F8      
+49E0  AD 06 02     LDA   VBREAK     
+49E3  8D F4 30     STA   $30F4      
+49E6  AD 07 02     LDA   $0207      
+49E9  8D F5 30     STA   $30F5      
+49EC  A9 D3        LDA  #$D3        
+49EE  8D 06 02     STA   VBREAK     
+49F1  A9 47        LDA  #$47        
+49F3  8D 07 02     STA   $0207      
+49F6  AE FD 30     LDX   $30FD      
+49F9  9A           TXS              
+49FA  AD FF 30     LDA   $30FF      
+49FD  48           PHA              
+49FE  AD FE 30     LDA   $30FE      
+4A01  48           PHA              
+4A02  AD 00 31     LDA   $3100      
+4A05  48           PHA              
+4A06  AD FA 30     LDA   $30FA      
+4A09  AE FB 30     LDX   $30FB      
+4A0C  AC FC 30     LDY   $30FC      
+4A0F  40           RTI              
+4A10  00           BRK              
+4A11  00           BRK              
+4A12  00           BRK              
+4A13  00           BRK              
+4A14  00           BRK              
+4A15  00           BRK              
+4A16  00           BRK              
+4A17  00           BRK              
+4A18  00           BRK              
+4A19  00           BRK              
+4A1A  00           BRK              
+4A1B  00           BRK              
+
+
+
+
+
+
+
+PAGE 58   BUG 65 FROM 3000
+
+
+4A1C  00           BRK              
+4A1D  00           BRK              
+4A1E  00           BRK              
+4A1F  00           BRK              
+4A20  00           BRK              
+4A21  00           BRK              
+4A22  00           BRK              
+4A23  00           BRK              
+4A24  00           BRK              
+4A25  00           BRK              
+4A26  00           BRK              
+4A27  00           BRK              
+4A28  00           BRK              
+4A29  00           BRK              
+4A2A  00           BRK              
+4A2B  00           BRK              
+4A2C  00           BRK              
+4A2D  00           BRK              
+4A2E  00           BRK              
+4A2F  00           BRK              
+4A30  00           BRK              
+4A31  00           BRK              
+4A32  00           BRK              
+4A33  00           BRK              
+4A34  00           BRK              
+4A35  00           BRK              
+4A36  00           BRK              
+4A37  00           BRK              
+4A38  00           BRK              
+4A39  00           BRK              
+4A3A  00           BRK              
+4A3B  00           BRK              
+4A3C  00           BRK              
+4A3D  00           BRK              
+4A3E  00           BRK              
+4A3F  00           BRK              
+4A40  4C 43 4A     JMP   $4A43      
+4A43  20 96 33     JSR   $3396      
+4A46  30 43        BMI   $4A8B      
+4A48  F0 41        BEQ   $4A8B      
+4A4A  20 9F 33     JSR   $339F      
+4A4D  C9 1B        CMP  #$1B        
+4A4F  F0 3A        BEQ   $4A8B      
+4A51  20 E3 35     JSR   $35E3      
+4A54  A2 50        LDX  #$50        
+4A56  A9 00        LDA  #$00        
+4A58  85 B3        STA   $B3        
+4A5A  9D 01 31     STA   $3101,X    
+4A5D  CA           DEX              
+4A5E  D0 FA        BNE   $4A5A      
+4A60  A2 00        LDX  #$00        
+4A62  20 F8 35     JSR   $35F8      
+4A65  20 01 36     JSR   $3601      
+4A68  20 01 36     JSR   $3601      
+4A6B  20 6F 33     JSR   $336F      
+4A6E  20 63 33     JSR   $3363      
+
+
+
+
+
+
+
+PAGE 59   BUG 65 FROM 3000
+
+
+4A71  30 15        BMI   $4A88      
+4A73  F0 13        BEQ   $4A88      
+4A75  A0 00        LDY  #$00        
+4A77  20 8A 33     JSR   $338A      
+4A7A  C9 1B        CMP  #$1B        
+4A7C  F0 0A        BEQ   $4A88      
+4A7E  A0 00        LDY  #$00        
+4A80  84 9F        STY   $9F        
+4A82  20 8C 4A     JSR   $4A8C      
+4A85  4C 60 4A     JMP   $4A60      
+4A88  20 75 4F     JSR   $4F75      
+4A8B  60           RTS              
+4A8C  A9 00        LDA  #$00        
+4A8E  85 AD        STA   $AD        
+4A90  20 99 33     JSR   $3399      
+4A93  C9 2F        CMP  #$2F        
+4A95  F0 1C        BEQ   $4AB3      
+4A97  C9 2B        CMP  #$2B        
+4A99  F0 28        BEQ   $4AC3      
+4A9B  C6 9F        DEC   $9F        
+4A9D  20 E7 4A     JSR   $4AE7      
+4AA0  20 B7 4B     JSR   $4BB7      
+4AA3  D0 0D        BNE   $4AB2      
+4AA5  20 F8 4B     JSR   $4BF8      
+4AA8  D0 08        BNE   $4AB2      
+4AAA  20 F6 4E     JSR   $4EF6      
+4AAD  D0 25        BNE   $4AD4      
+4AAF  20 45 4F     JSR   $4F45      
+4AB2  60           RTS              
+4AB3  20 E4 4E     JSR   $4EE4      
+4AB6  D0 18        BNE   $4AD0      
+4AB8  A5 84        LDA   VNTD       
+4ABA  85 80        STA   LOMEM      
+4ABC  A5 85        LDA   $85        
+4ABE  85 81        STA   $81        
+4AC0  4C AA 4A     JMP   $4AAA      
+4AC3  20 EE 4E     JSR   $4EEE      
+4AC6  D0 08        BNE   $4AD0      
+4AC8  A5 84        LDA   VNTD       
+4ACA  20 36 4F     JSR   $4F36      
+4ACD  4C AA 4A     JMP   $4AAA      
+4AD0  A9 0D        LDA  #$0D        
+4AD2  D0 02        BNE   $4AD6      
+4AD4  A9 0A        LDA  #$0A        
+4AD6  48           PHA              
+4AD7  A2 0B        LDX  #$0B        
+4AD9  20 10 36     JSR   $3610      
+4ADC  68           PLA              
+4ADD  AA           TAX              
+4ADE  20 10 36     JSR   $3610      
+4AE1  A2 00        LDX  #$00        
+4AE3  86 AD        STX   $AD        
+4AE5  CA           DEX              
+4AE6  60           RTS              
+4AE7  20 F6 4E     JSR   $4EF6      
+4AEA  F0 41        BEQ   $4B2D      
+
+
+
+
+
+
+
+PAGE 60   BUG 65 FROM 3000
+
+
+4AEC  A4 9F        LDY   $9F        
+4AEE  B1 92        LDA  ($92),Y     
+4AF0  C9 4C        CMP  #$4C        
+4AF2  D0 39        BNE   $4B2D      
+4AF4  C8           INY              
+4AF5  B1 92        LDA  ($92),Y     
+4AF7  C9 30        CMP  #$30        
+4AF9  90 32        BCC   $4B2D      
+4AFB  C9 3A        CMP  #$3A        
+4AFD  B0 2E        BCS   $4B2D      
+4AFF  29 0F        AND  #$0F        
+4B01  85 B4        STA   $B4        
+4B03  C8           INY              
+4B04  B1 92        LDA  ($92),Y     
+4B06  C9 20        CMP  #$20        
+4B08  D0 23        BNE   $4B2D      
+4B0A  84 9F        STY   $9F        
+4B0C  A5 B4        LDA   $B4        
+4B0E  0A           ASL   A          
+4B0F  AA           TAX              
+4B10  BD 02 31     LDA   $3102,X    
+4B13  85 82        STA   VNTP       
+4B15  BD 03 31     LDA   $3103,X    
+4B18  85 83        STA   $83        
+4B1A  A5 80        LDA   LOMEM      
+4B1C  9D 02 31     STA   $3102,X    
+4B1F  A5 81        LDA   $81        
+4B21  9D 03 31     STA   $3103,X    
+4B24  A6 82        LDX   VNTP       
+4B26  CA           DEX              
+4B27  D0 04        BNE   $4B2D      
+4B29  A5 83        LDA   $83        
+4B2B  F0 01        BEQ   $4B2E      
+4B2D  60           RTS              
+4B2E  A2 00        LDX  #$00        
+4B30  E4 B3        CPX   $B3        
+4B32  F0 F9        BEQ   $4B2D      
+4B34  BD 16 31     LDA   $3116,X    
+4B37  C5 B4        CMP   $B4        
+4B39  F0 05        BEQ   $4B40      
+4B3B  E8           INX              
+4B3C  E8           INX              
+4B3D  E8           INX              
+4B3E  D0 F0        BNE   $4B30      
+4B40  BD 17 31     LDA   $3117,X    
+4B43  85 82        STA   VNTP       
+4B45  BD 18 31     LDA   $3118,X    
+4B48  85 83        STA   $83        
+4B4A  A5 80        LDA   LOMEM      
+4B4C  85 84        STA   VNTD       
+4B4E  A5 81        LDA   $81        
+4B50  85 85        STA   $85        
+4B52  8A           TXA              
+4B53  48           PHA              
+4B54  A0 00        LDY  #$00        
+4B56  B1 82        LDA  (VNTP),Y    
+
+
+
+
+
+
+
+PAGE 61   BUG 65 FROM 3000
+
+
+4B58  29 1F        AND  #$1F        
+4B5A  C9 10        CMP  #$10        
+4B5C  D0 17        BNE   $4B75      
+4B5E  20 FE 4E     JSR   $4EFE      
+4B61  D0 37        BNE   $4B9A      
+4B63  48           PHA              
+4B64  E6 82        INC   VNTP       
+4B66  D0 02        BNE   $4B6A      
+4B68  E6 83        INC   $83        
+4B6A  A2 02        LDX  #$02        
+4B6C  20 56 37     JSR   $3756      
+4B6F  68           PLA              
+4B70  91 86        STA  (VVTP),Y    
+4B72  4C 91 4B     JMP   $4B91      
+4B75  E6 82        INC   VNTP       
+4B77  D0 02        BNE   $4B7B      
+4B79  E6 83        INC   $83        
+4B7B  A2 02        LDX  #$02        
+4B7D  20 56 37     JSR   $3756      
+4B80  A5 80        LDA   LOMEM      
+4B82  91 86        STA  (VVTP),Y    
+4B84  E6 82        INC   VNTP       
+4B86  D0 02        BNE   $4B8A      
+4B88  E6 83        INC   $83        
+4B8A  20 56 37     JSR   $3756      
+4B8D  A5 81        LDA   $81        
+4B8F  91 86        STA  (VVTP),Y    
+4B91  68           PLA              
+4B92  AA           TAX              
+4B93  A9 FF        LDA  #$FF        
+4B95  9D 16 31     STA   $3116,X    
+4B98  D0 A1        BNE   $4B3B      
+4B9A  20 FD 4C     JSR   $4CFD      
+4B9D  20 01 36     JSR   $3601      
+4BA0  A9 41        LDA  #$41        
+4BA2  20 E6 35     JSR   $35E6      
+4BA5  A9 54        LDA  #$54        
+4BA7  20 E6 35     JSR   $35E6      
+4BAA  20 01 36     JSR   $3601      
+4BAD  A2 02        LDX  #$02        
+4BAF  20 04 36     JSR   $3604      
+4BB2  68           PLA              
+4BB3  AA           TAX              
+4BB4  4C 3B 4B     JMP   $4B3B      
+4BB7  20 F6 4E     JSR   $4EF6      
+4BBA  F0 37        BEQ   $4BF3      
+4BBC  A2 00        LDX  #$00        
+4BBE  86 B1        STX   $B1        
+4BC0  A4 9F        LDY   $9F        
+4BC2  BD 10 3B     LDA   $3B10,X    
+4BC5  29 7F        AND  #$7F        
+4BC7  D1 92        CMP  ($92),Y     
+4BC9  D0 0A        BNE   $4BD5      
+4BCB  C8           INY              
+4BCC  BD 10 3B     LDA   $3B10,X    
+4BCF  30 13        BMI   $4BE4      
+
+
+
+
+
+
+
+PAGE 62   BUG 65 FROM 3000
+
+
+4BD1  E8           INX              
+4BD2  D0 EE        BNE   $4BC2      
+4BD4  E8           INX              
+4BD5  BD 10 3B     LDA   $3B10,X    
+4BD8  10 FA        BPL   $4BD4      
+4BDA  E6 B1        INC   $B1        
+4BDC  E8           INX              
+4BDD  BD 10 3B     LDA   $3B10,X    
+4BE0  C9 2A        CMP  #$2A        
+4BE2  D0 DC        BNE   $4BC0      
+4BE4  B1 92        LDA  ($92),Y     
+4BE6  C9 20        CMP  #$20        
+4BE8  F0 04        BEQ   $4BEE      
+4BEA  C9 9B        CMP  #$9B        
+4BEC  D0 05        BNE   $4BF3      
+4BEE  84 9F        STY   $9F        
+4BF0  A9 00        LDA  #$00        
+4BF2  60           RTS              
+4BF3  A9 0C        LDA  #$0C        
+4BF5  4C D6 4A     JMP   $4AD6      
+4BF8  20 72 4D     JSR   $4D72      
+4BFB  D0 65        BNE   $4C62      
+4BFD  A6 B1        LDX   $B1        
+4BFF  BC F4 3B     LDY   $3BF4,X    
+4C02  A2 00        LDX  #$00        
+4C04  98           TYA              
+4C05  F0 0B        BEQ   $4C12      
+4C07  BD 2C 3C     LDA   $3C2C,X    
+4C0A  E8           INX              
+4C0B  C9 FF        CMP  #$FF        
+4C0D  D0 F5        BNE   $4C04      
+4C0F  88           DEY              
+4C10  D0 F2        BNE   $4C04      
+4C12  BD 2C 3C     LDA   $3C2C,X    
+4C15  C9 FF        CMP  #$FF        
+4C17  F0 07        BEQ   $4C20      
+4C19  C5 B2        CMP   $B2        
+4C1B  F0 16        BEQ   $4C33      
+4C1D  E8           INX              
+4C1E  D0 F2        BNE   $4C12      
+4C20  A6 B1        LDX   $B1        
+4C22  BD F4 3B     LDA   $3BF4,X    
+4C25  C9 06        CMP  #$06        
+4C27  D0 39        BNE   $4C62      
+4C29  A5 B2        LDA   $B2        
+4C2B  C9 08        CMP  #$08        
+4C2D  D0 33        BNE   $4C62      
+4C2F  A9 09        LDA  #$09        
+4C31  85 B2        STA   $B2        
+4C33  A6 B1        LDX   $B1        
+4C35  BD F4 3B     LDA   $3BF4,X    
+4C38  0A           ASL   A          
+4C39  AA           TAX              
+4C3A  BD 44 4C     LDA   $4C44,X    
+4C3D  48           PHA              
+4C3E  BD 43 4C     LDA   $4C43,X    
+
+
+
+
+
+
+
+PAGE 63   BUG 65 FROM 3000
+
+
+4C41  48           PHA              
+4C42  60           RTS              
+4C43  78           SEI              
+4C44  4C 6C 4C     JMP   $4C6C      
+4C47  6C 4C 66     JMP  ($664C)     
+4C4A  4C 66 4C     JMP   $4C66      
+4C4D  6C 4C 66     JMP  ($664C)     
+4C50  4C 69 4C     JMP   $4C69      
+4C53  66 4C        ROR   $4C        
+4C55  69 4C        ADC  #$4C        
+4C57  6F           ???              
+4C58  4C 66 4C     JMP   $4C66      
+4C5B  7E           ???              
+4C5C  4C 8C 4C     JMP   $4C8C      
+4C5F  A9 00        LDA  #$00        
+4C61  60           RTS              
+4C62  A9 0D        LDA  #$0D        
+4C64  4C D6 4A     JMP   $4AD6      
+4C67  20 AA 4C     JSR   $4CAA      
+4C6A  20 9B 4C     JSR   $4C9B      
+4C6D  4C C6 4C     JMP   $4CC6      
+4C70  20 9B 4C     JSR   $4C9B      
+4C73  20 B8 4C     JSR   $4CB8      
+4C76  4C C6 4C     JMP   $4CC6      
+4C79  A9 0B        LDA  #$0B        
+4C7B  85 B2        STA   $B2        
+4C7D  D0 47        BNE   $4CC6      
+4C7F  20 9B 4C     JSR   $4C9B      
+4C82  20 B8 4C     JSR   $4CB8      
+4C85  A5 B2        LDA   $B2        
+4C87  C9 02        CMP  #$02        
+4C89  F0 D7        BEQ   $4C62      
+4C8B  D0 39        BNE   $4CC6      
+4C8D  20 9B 4C     JSR   $4C9B      
+4C90  20 AA 4C     JSR   $4CAA      
+4C93  A5 B2        LDA   $B2        
+4C95  C9 01        CMP  #$01        
+4C97  F0 C9        BEQ   $4C62      
+4C99  D0 2B        BNE   $4CC6      
+4C9B  A5 85        LDA   $85        
+4C9D  D0 0A        BNE   $4CA9      
+4C9F  A5 B2        LDA   $B2        
+4CA1  C9 00        CMP  #$00        
+4CA3  D0 04        BNE   $4CA9      
+4CA5  A9 03        LDA  #$03        
+4CA7  85 B2        STA   $B2        
+4CA9  60           RTS              
+4CAA  A5 85        LDA   $85        
+4CAC  D0 FB        BNE   $4CA9      
+4CAE  A5 B2        LDA   $B2        
+4CB0  C9 01        CMP  #$01        
+4CB2  D0 F5        BNE   $4CA9      
+4CB4  A9 04        LDA  #$04        
+4CB6  D0 EF        BNE   $4CA7      
+4CB8  A5 85        LDA   $85        
+4CBA  D0 ED        BNE   $4CA9      
+
+
+
+
+
+
+
+PAGE 64   BUG 65 FROM 3000
+
+
+4CBC  A5 B2        LDA   $B2        
+4CBE  C9 02        CMP  #$02        
+4CC0  D0 E7        BNE   $4CA9      
+4CC2  A9 05        LDA  #$05        
+4CC4  D0 E1        BNE   $4CA7      
+4CC6  A5 B2        LDA   $B2        
+4CC8  0A           ASL   A          
+4CC9  AA           TAX              
+4CCA  BD D4 4C     LDA   $4CD4,X    
+4CCD  48           PHA              
+4CCE  BD D3 4C     LDA   $4CD3,X    
+4CD1  48           PHA              
+4CD2  60           RTS              
+4CD3  01 4D        ORA  (ATRACT,X)  
+4CD5  23           ???              
+4CD6  4D 27 4D     EOR   $4D27      
+4CD9  37           ???              
+4CDA  4D 41 4D     EOR   $4D41      
+4CDD  41 4D        EOR  (ATRACT,X)  
+4CDF  45 4D        EOR   ATRACT     
+4CE1  49 4D        EOR  #$4D        
+4CE3  4D 4D 53     EOR   $534D      
+4CE6  4D 5B 4D     EOR   $4D5B      
+4CE9  EC 4C 6C     CPX   $6C4C      
+4CEC  4D A5 80     EOR   $80A5      
+4CEF  85 82        STA   VNTP       
+4CF1  A5 81        LDA   $81        
+4CF3  85 83        STA   $83        
+4CF5  20 3D 4F     JSR   $4F3D      
+4CF8  20 FE 4E     JSR   $4EFE      
+4CFB  F0 21        BEQ   $4D1E      
+4CFD  A9 0E        LDA  #$0E        
+4CFF  4C D6 4A     JMP   $4AD6      
+4D02  A0 00        LDY  #$00        
+4D04  A6 B1        LDX   $B1        
+4D06  BD F4 3B     LDA   $3BF4,X    
+4D09  C9 02        CMP  #$02        
+4D0B  F0 06        BEQ   $4D13      
+4D0D  C9 05        CMP  #$05        
+4D0F  F0 02        BEQ   $4D13      
+4D11  A0 0C        LDY  #$0C        
+4D13  98           TYA              
+4D14  20 31 4F     JSR   $4F31      
+4D17  A5 84        LDA   VNTD       
+4D19  20 36 4F     JSR   $4F36      
+4D1C  A5 85        LDA   $85        
+4D1E  20 36 4F     JSR   $4F36      
+4D21  4C 5F 4C     JMP   $4C5F      
+4D24  A9 1C        LDA  #$1C        
+4D26  D0 EC        BNE   $4D14      
+4D28  A0 18        LDY  #$18        
+4D2A  A6 B1        LDX   $B1        
+4D2C  BD F4 3B     LDA   $3BF4,X    
+4D2F  C9 0A        CMP  #$0A        
+4D31  D0 02        BNE   $4D35      
+4D33  A0 1C        LDY  #$1C        
+
+
+
+
+
+
+
+PAGE 65   BUG 65 FROM 3000
+
+
+4D35  98           TYA              
+4D36  D0 DC        BNE   $4D14      
+4D38  A9 04        LDA  #$04        
+4D3A  20 31 4F     JSR   $4F31      
+4D3D  A5 84        LDA   VNTD       
+4D3F  4C 1E 4D     JMP   $4D1E      
+4D42  A9 14        LDA  #$14        
+4D44  D0 F4        BNE   $4D3A      
+4D46  A9 00        LDA  #$00        
+4D48  F0 F0        BEQ   $4D3A      
+4D4A  A9 10        LDA  #$10        
+4D4C  D0 EC        BNE   $4D3A      
+4D4E  20 3D 4F     JSR   $4F3D      
+4D51  4C 5F 4C     JMP   $4C5F      
+4D54  A9 08        LDA  #$08        
+4D56  20 31 4F     JSR   $4F31      
+4D59  4C 5F 4C     JMP   $4C5F      
+4D5C  A0 00        LDY  #$00        
+4D5E  A6 B1        LDX   $B1        
+4D60  BD F4 3B     LDA   $3BF4,X    
+4D63  C9 03        CMP  #$03        
+4D65  D0 02        BNE   $4D69      
+4D67  A0 08        LDY  #$08        
+4D69  98           TYA              
+4D6A  4C 3A 4D     JMP   $4D3A      
+4D6D  A9 20        LDA  #$20        
+4D6F  4C 14 4D     JMP   $4D14      
+4D72  A2 04        LDX  #$04        
+4D74  20 5F 37     JSR   $375F      
+4D77  A9 08        LDA  #$08        
+4D79  85 B2        STA   $B2        
+4D7B  20 F6 4E     JSR   $4EF6      
+4D7E  F0 0D        BEQ   $4D8D      
+4D80  20 40 4E     JSR   $4E40      
+4D83  F0 08        BEQ   $4D8D      
+4D85  20 23 4E     JSR   $4E23      
+4D88  F0 03        BEQ   $4D8D      
+4D8A  20 88 4E     JSR   $4E88      
+4D8D  60           RTS              
+4D8E  A5 9F        LDA   $9F        
+4D90  48           PHA              
+4D91  20 99 33     JSR   $3399      
+4D94  C9 4C        CMP  #$4C        
+4D96  D0 12        BNE   $4DAA      
+4D98  20 93 33     JSR   $3393      
+4D9B  C9 30        CMP  #$30        
+4D9D  90 0B        BCC   $4DAA      
+4D9F  C9 3A        CMP  #$3A        
+4DA1  B0 07        BCS   $4DAA      
+4DA3  29 0F        AND  #$0F        
+4DA5  85 B4        STA   $B4        
+4DA7  4C AD 4D     JMP   $4DAD      
+4DAA  4C 3A 4E     JMP   $4E3A      
+4DAD  0A           ASL   A          
+4DAE  AA           TAX              
+4DAF  BD 02 31     LDA   $3102,X    
+
+
+
+
+
+
+
+PAGE 66   BUG 65 FROM 3000
+
+
+4DB2  85 84        STA   VNTD       
+4DB4  BD 03 31     LDA   $3103,X    
+4DB7  85 85        STA   $85        
+4DB9  D0 61        BNE   $4E1C      
+4DBB  A4 84        LDY   VNTD       
+4DBD  F0 03        BEQ   $4DC2      
+4DBF  88           DEY              
+4DC0  D0 5A        BNE   $4E1C      
+4DC2  A9 01        LDA  #$01        
+4DC4  9D 02 31     STA   $3102,X    
+4DC7  A9 00        LDA  #$00        
+4DC9  9D 03 31     STA   $3103,X    
+4DCC  A2 00        LDX  #$00        
+4DCE  E4 B3        CPX   $B3        
+4DD0  F0 0A        BEQ   $4DDC      
+4DD2  BD 16 31     LDA   $3116,X    
+4DD5  30 17        BMI   $4DEE      
+4DD7  E8           INX              
+4DD8  E8           INX              
+4DD9  E8           INX              
+4DDA  D0 F2        BNE   $4DCE      
+4DDC  E0 3C        CPX  #$3C        
+4DDE  90 08        BCC   $4DE8      
+4DE0  A9 0F        LDA  #$0F        
+4DE2  20 D6 4A     JSR   $4AD6      
+4DE5  4C 03 32     JMP   $3203      
+4DE8  8A           TXA              
+4DE9  18           CLC              
+4DEA  69 03        ADC  #$03        
+4DEC  85 B3        STA   $B3        
+4DEE  A5 B4        LDA   $B4        
+4DF0  9D 16 31     STA   $3116,X    
+4DF3  A5 80        LDA   LOMEM      
+4DF5  9D 17 31     STA   $3117,X    
+4DF8  85 84        STA   VNTD       
+4DFA  A5 81        LDA   $81        
+4DFC  9D 18 31     STA   $3118,X    
+4DFF  85 85        STA   $85        
+4E01  E6 84        INC   VNTD       
+4E03  D0 02        BNE   $4E07      
+4E05  E6 85        INC   $85        
+4E07  E6 84        INC   VNTD       
+4E09  D0 02        BNE   $4E0D      
+4E0B  E6 85        INC   $85        
+4E0D  A6 B1        LDX   $B1        
+4E0F  BD F4 3B     LDA   $3BF4,X    
+4E12  C9 00        CMP  #$00        
+4E14  F0 06        BEQ   $4E1C      
+4E16  E6 84        INC   VNTD       
+4E18  D0 02        BNE   $4E1C      
+4E1A  E6 85        INC   $85        
+4E1C  A9 00        LDA  #$00        
+4E1E  85 B2        STA   $B2        
+4E20  4C 34 4E     JMP   $4E34      
+4E23  A5 9F        LDA   $9F        
+4E25  48           PHA              
+
+
+
+
+
+
+
+PAGE 67   BUG 65 FROM 3000
+
+
+4E26  20 99 33     JSR   $3399      
+4E29  C9 23        CMP  #$23        
+4E2B  D0 0D        BNE   $4E3A      
+4E2D  20 EE 4E     JSR   $4EEE      
+4E30  D0 08        BNE   $4E3A      
+4E32  A9 0A        LDA  #$0A        
+4E34  85 B2        STA   $B2        
+4E36  68           PLA              
+4E37  A9 00        LDA  #$00        
+4E39  60           RTS              
+4E3A  68           PLA              
+4E3B  85 9F        STA   $9F        
+4E3D  A9 FF        LDA  #$FF        
+4E3F  60           RTS              
+4E40  A5 9F        LDA   $9F        
+4E42  48           PHA              
+4E43  20 8E 4D     JSR   $4D8E      
+4E46  F0 26        BEQ   $4E6E      
+4E48  68           PLA              
+4E49  A5 9F        LDA   $9F        
+4E4B  48           PHA              
+4E4C  20 99 33     JSR   $3399      
+4E4F  C9 2E        CMP  #$2E        
+4E51  F0 14        BEQ   $4E67      
+4E53  C9 58        CMP  #$58        
+4E55  F0 10        BEQ   $4E67      
+4E57  C9 30        CMP  #$30        
+4E59  90 2A        BCC   $4E85      
+4E5B  C9 3A        CMP  #$3A        
+4E5D  90 08        BCC   $4E67      
+4E5F  C9 41        CMP  #$41        
+4E61  90 22        BCC   $4E85      
+4E63  C9 47        CMP  #$47        
+4E65  B0 1E        BCS   $4E85      
+4E67  C6 9F        DEC   $9F        
+4E69  A2 04        LDX  #$04        
+4E6B  20 75 33     JSR   $3375      
+4E6E  20 CA 4E     JSR   $4ECA      
+4E71  D0 04        BNE   $4E77      
+4E73  A9 01        LDA  #$01        
+4E75  D0 0B        BNE   $4E82      
+4E77  20 CE 4E     JSR   $4ECE      
+4E7A  D0 04        BNE   $4E80      
+4E7C  A9 02        LDA  #$02        
+4E7E  D0 02        BNE   $4E82      
+4E80  A9 00        LDA  #$00        
+4E82  4C 34 4E     JMP   $4E34      
+4E85  4C 3A 4E     JMP   $4E3A      
+4E88  A5 9F        LDA   $9F        
+4E8A  48           PHA              
+4E8B  20 99 33     JSR   $3399      
+4E8E  C9 28        CMP  #$28        
+4E90  D0 35        BNE   $4EC7      
+4E92  20 49 4E     JSR   $4E49      
+4E95  D0 30        BNE   $4EC7      
+4E97  A5 B2        LDA   $B2        
+
+
+
+
+
+
+
+PAGE 68   BUG 65 FROM 3000
+
+
+4E99  C9 00        CMP  #$00        
+4E9B  F0 0F        BEQ   $4EAC      
+4E9D  C9 02        CMP  #$02        
+4E9F  F0 26        BEQ   $4EC7      
+4EA1  20 93 33     JSR   $3393      
+4EA4  C9 29        CMP  #$29        
+4EA6  D0 1F        BNE   $4EC7      
+4EA8  A9 06        LDA  #$06        
+4EAA  D0 14        BNE   $4EC0      
+4EAC  20 93 33     JSR   $3393      
+4EAF  C9 29        CMP  #$29        
+4EB1  D0 14        BNE   $4EC7      
+4EB3  20 CE 4E     JSR   $4ECE      
+4EB6  D0 04        BNE   $4EBC      
+4EB8  A9 07        LDA  #$07        
+4EBA  D0 04        BNE   $4EC0      
+4EBC  A9 0C        LDA  #$0C        
+4EBE  D0 04        BNE   $4EC4      
+4EC0  A6 85        LDX   $85        
+4EC2  D0 03        BNE   $4EC7      
+4EC4  4C 34 4E     JMP   $4E34      
+4EC7  4C 3A 4E     JMP   $4E3A      
+4ECA  A2 58        LDX  #$58        
+4ECC  D0 02        BNE   $4ED0      
+4ECE  A2 59        LDX  #$59        
+4ED0  A4 9F        LDY   $9F        
+4ED2  B1 92        LDA  ($92),Y     
+4ED4  C9 2C        CMP  #$2C        
+4ED6  D0 0B        BNE   $4EE3      
+4ED8  C8           INY              
+4ED9  8A           TXA              
+4EDA  D1 92        CMP  ($92),Y     
+4EDC  D0 05        BNE   $4EE3      
+4EDE  C8           INY              
+4EDF  84 9F        STY   $9F        
+4EE1  A9 00        LDA  #$00        
+4EE3  60           RTS              
+4EE4  20 49 4E     JSR   $4E49      
+4EE7  D0 04        BNE   $4EED      
+4EE9  A5 B2        LDA   $B2        
+4EEB  C9 00        CMP  #$00        
+4EED  60           RTS              
+4EEE  20 E4 4E     JSR   $4EE4      
+4EF1  D0 02        BNE   $4EF5      
+4EF3  A5 85        LDA   $85        
+4EF5  60           RTS              
+4EF6  20 99 33     JSR   $3399      
+4EF9  C6 9F        DEC   $9F        
+4EFB  C9 9B        CMP  #$9B        
+4EFD  60           RTS              
+4EFE  A2 04        LDX  #$04        
+4F00  A0 02        LDY  #$02        
+4F02  20 8F 37     JSR   $378F      
+4F05  C6 84        DEC   VNTD       
+4F07  A5 84        LDA   VNTD       
+4F09  C9 FF        CMP  #$FF        
+
+
+
+
+
+
+
+PAGE 69   BUG 65 FROM 3000
+
+
+4F0B  D0 02        BNE   $4F0F      
+4F0D  C6 85        DEC   $85        
+4F0F  C6 84        DEC   VNTD       
+4F11  A5 84        LDA   VNTD       
+4F13  C9 FF        CMP  #$FF        
+4F15  D0 02        BNE   $4F19      
+4F17  C6 85        DEC   $85        
+4F19  A5 85        LDA   $85        
+4F1B  30 09        BMI   $4F26      
+4F1D  D0 0F        BNE   $4F2E      
+4F1F  A5 84        LDA   VNTD       
+4F21  30 0B        BMI   $4F2E      
+4F23  A2 00        LDX  #$00        
+4F25  60           RTS              
+4F26  C9 FF        CMP  #$FF        
+4F28  D0 04        BNE   $4F2E      
+4F2A  A5 84        LDA   VNTD       
+4F2C  30 F5        BMI   $4F23      
+4F2E  A9 FF        LDA  #$FF        
+4F30  60           RTS              
+4F31  A6 B1        LDX   $B1        
+4F33  1D BC 3B     ORA   $3BBC,X    
+4F36  A6 AD        LDX   $AD        
+4F38  95 AE        STA   $AE,X      
+4F3A  E6 AD        INC   $AD        
+4F3C  60           RTS              
+4F3D  A6 B1        LDX   $B1        
+4F3F  BD BC 3B     LDA   $3BBC,X    
+4F42  4C 36 4F     JMP   $4F36      
+4F45  A5 AD        LDA   $AD        
+4F47  F0 2B        BEQ   $4F74      
+4F49  A6 9F        LDX   $9F        
+4F4B  E0 10        CPX  #$10        
+4F4D  B0 06        BCS   $4F55      
+4F4F  20 01 36     JSR   $3601      
+4F52  E8           INX              
+4F53  D0 F6        BNE   $4F4B      
+4F55  A0 00        LDY  #$00        
+4F57  84 82        STY   VNTP       
+4F59  A2 00        LDX  #$00        
+4F5B  20 56 37     JSR   $3756      
+4F5E  A6 82        LDX   VNTP       
+4F60  B5 AE        LDA   $AE,X      
+4F62  91 86        STA  (VVTP),Y    
+4F64  E8           INX              
+4F65  86 82        STX   VNTP       
+4F67  20 FE 35     JSR   $35FE      
+4F6A  E6 80        INC   LOMEM      
+4F6C  D0 02        BNE   $4F70      
+4F6E  E6 81        INC   $81        
+4F70  C6 AD        DEC   $AD        
+4F72  D0 E5        BNE   $4F59      
+4F74  60           RTS              
+4F75  A9 00        LDA  #$00        
+4F77  85 B4        STA   $B4        
+4F79  A5 B4        LDA   $B4        
+
+
+
+
+
+
+
+PAGE 70   BUG 65 FROM 3000
+
+
+4F7B  0A           ASL   A          
+4F7C  AA           TAX              
+4F7D  BD 03 31     LDA   $3103,X    
+4F80  D0 36        BNE   $4FB8      
+4F82  BD 02 31     LDA   $3102,X    
+4F85  C9 01        CMP  #$01        
+4F87  D0 2F        BNE   $4FB8      
+4F89  A2 10        LDX  #$10        
+4F8B  20 10 36     JSR   $3610      
+4F8E  A9 4C        LDA  #$4C        
+4F90  20 E6 35     JSR   $35E6      
+4F93  A5 B4        LDA   $B4        
+4F95  09 30        ORA  #$30        
+4F97  20 E6 35     JSR   $35E6      
+4F9A  20 01 36     JSR   $3601      
+4F9D  A2 12        LDX  #$12        
+4F9F  20 10 36     JSR   $3610      
+4FA2  A9 3F        LDA  #$3F        
+4FA4  20 E6 35     JSR   $35E6      
+4FA7  20 96 33     JSR   $3396      
+4FAA  30 0C        BMI   $4FB8      
+4FAC  F0 0A        BEQ   $4FB8      
+4FAE  20 9F 33     JSR   $339F      
+4FB1  C9 1B        CMP  #$1B        
+4FB3  F0 03        BEQ   $4FB8      
+4FB5  20 2E 4B     JSR   $4B2E      
+4FB8  E6 B4        INC   $B4        
+4FBA  A5 B4        LDA   $B4        
+4FBC  C9 0A        CMP  #$0A        
+4FBE  90 B9        BCC   $4F79      
+4FC0  60           RTS              
+4FC1  00           BRK              
+4FC2  00           BRK              
+4FC3  00           BRK              
+4FC4  00           BRK              
+4FC5  00           BRK              
+4FC6  00           BRK              
+4FC7  00           BRK              
+4FC8  00           BRK              
+4FC9  00           BRK              
+4FCA  00           BRK              
+4FCB  00           BRK              
+4FCC  00           BRK              
+4FCD  00           BRK              
+4FCE  00           BRK              
+4FCF  00           BRK              
+4FD0  00           BRK              
+4FD1  00           BRK              
+4FD2  00           BRK              
+4FD3  00           BRK              
+4FD4  00           BRK              
+4FD5  00           BRK              
+4FD6  00           BRK              
+4FD7  00           BRK              
+4FD8  00           BRK              
+4FD9  00           BRK              
+
+
+
+
+
+
+
+PAGE 71   BUG 65 FROM 3000
+
+
+4FDA  00           BRK              
+4FDB  00           BRK              
+4FDC  00           BRK              
+4FDD  00           BRK              
+4FDE  00           BRK              
+4FDF  00           BRK              
+4FE0  00           BRK              
+4FE1  00           BRK              
+4FE2  00           BRK              
+4FE3  00           BRK              
+4FE4  00           BRK              
+4FE5  00           BRK              
+4FE6  00           BRK              
+4FE7  00           BRK              
+4FE8  00           BRK              
+4FE9  00           BRK              
+4FEA  00           BRK              
+4FEB  00           BRK              
+4FEC  00           BRK              
+4FED  00           BRK              
+4FEE  00           BRK              
+4FEF  00           BRK              
+4FF0  00           BRK              
+4FF1  00           BRK              
+4FF2  00           BRK              
+4FF3  00           BRK              
+4FF4  00           BRK              
+4FF5  00           BRK              
+4FF6  00           BRK              
+4FF7  00           BRK              
+4FF8  00           BRK              
+4FF9  00           BRK              
+4FFA  00           BRK              
+4FFB  00           BRK              
+4FFC  00           BRK              
+4FFD  00           BRK              
+4FFE  00           BRK              
+4FFF  00           BRK              

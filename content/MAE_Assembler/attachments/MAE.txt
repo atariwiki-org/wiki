@@ -1,0 +1,355 @@
+Welcome to the MAE assembler.
+
+The design goal of MAE was to provide a highly integrated environment for
+an editor, assembler, and debugger.  It is very easy to use, and contains
+many features to save the programmer keystrokes, and development time.  It
+does not take the approach of, "If I make the assembly speed fast enough,
+nothing else matters."  I believe that only a small portion of a project's
+development time is spent waiting for the assembler to assemble your file.
+Therefore, programming efforts were mainly concentrated on making the
+editing and debugging processes easier.  MAE is fairly quick, but not the
+fastest assembler available.  For example, the editor module of MAE is
+2850 lines of source, and assembles to a disk file in 18 seconds.
+
+MAE uses the standard E: device to allow easy compatibility with the XEP80
+and other 80 column devices or software drivers.  The speed of Atari's
+built-in 40 column device is not the greatest, and so you will also find
+the HYPER E: screen accelerator on the disk.  This will more than double
+the screen performance when it is installed, and it is highly recommended.
+MAE also includes software drivers that allow 64 column and 80 column
+editing on a high-speed Gr.8 screen.  Thanks goes to Itay Chamiel for his
+work on these drivers.
+
+I am always interested in hearing comments or suggestions about MAE.  You
+can reach me at:
+John Harris
+45346 Graceway Dr
+Ahwahnee CA 93601
+USA
+internet: jharris@poboxes.com
+
+Here are some of the features of the MAE development system.
+
+MAE provides an excellent full-screen type editor with many features such
+as key macros, automatic 'JSR' and return to subroutine labels, block moves
+and copies, and multiple undo.
+
+Compatible with the XEP80, and probably most other video boards that
+provide an E: handler interface.  Software drivers for 64 and 80 column
+screens are also provided.
+
+High level of integration between editor, assembler, and debugger.  The
+editor can take you directly to lines that had assembly errors.  The
+debugger can reference labels in the symbol table and assemble single
+program lines.
+
+Very efficient -- it will save you a lot of typing.
+
+True local labels that are referenced between global labels.
+
+Full text substitution macros.
+
+Can assemble directly to bank select memory or bank select cartridges.
+
+Uses very little system RAM.  Most of the code resides in bank select
+memory.
+
+Full 65816 and 24 bit support.
+
+- MEMORY USAGE AND CONFIGURATION -
+
+This assembler is designed to run in up to 3 banks of the extended memory
+available on the 130XE or other memory expanded Atari.  The bank numbers
+are configurable.  A portion of the assembler must reside outside of bank
+select RAM, and in this version, it will occupy $B700-$BBFC.
+
+Memory usage for the source file and symbol table is configurable.  In
+addition, they can use bank select RAM for addresses within the $4000-$7FFF
+range, which keeps this area in main RAM free for the user.  Having the
+symbol table in bank select RAM has one other benefit.  It will usually stay
+intact so that the labels can be used from the debugger.  The default values
+for memory usage will place the symbol table in one bank by itself, and the
+source buffer from LOMEM to $B6FF, with the segment from $4000-$7FFF in
+another bank of extended RAM.  $4000-$7FFF in main RAM is free to the user,
+unless running the 64 or 80 column handlers which use part of this space,
+from $5600-$7FFF.
+
+This assembler isn't designed for a 64K machine, but it can be configured
+to operate in a limited fashion.  Because the bulk of the code sits at
+$4000-$7FFF, it is right in the middle of RAM if you don't have bank
+select memory.  The best you will be able to do, is set the text buffer
+from $8000-$B6FF, and the symbol table from LOMEM to $3FFF.  That will
+only give you about 14K for your text buffer, and your symbol table may
+not always be available for the debugger, but otherwise, all functions
+should work as described.  See INSTALL.DOC for more details.
+
+Zero page memory is saved and restored from the editor and assembler, so
+that they will effectively leave all of ZP available to the user.
+
+Buffer memory addresses and several configurable parameters are stored at
+the beginning of the program file.  The parameters are located at +3 bytes
+from the start address, which will be +9 bytes when counting the DOS binary
+header.  A utility, CONFIG.COM, is now provided to edit these parameters.
+A description of them follows.  (Words are 6502 standard Lo,Hi)
+
+Word - Text buffer start adr.  If 0, the editor will use MEMLO.  (Default)
+Word - Text buffer end.  If 0, the editor will use MEMTOP.  Default $B6FF.
+Word - Symbol table start adr.  Default $4000, in bank select memory.
+Word - Symbol table end.  Default $7EFF.  (The code for symbol table search
+       is at $7F00).
+Byte - Assembly CPU mode.  0=65816, $80=6502.  Other bits may be used in
+       the future.
+Byte - Editor mode.  Two bits are currently defined:
+       When bit 7 is on ($80), Insert mode is active.
+       When bit 6 is on ($40), spaces are converted into Tabs.
+       When bit 5 is on ($20), editor will start with Caps lock on.
+       Other bits may be used in the future.
+Byte - Debugger mode.  Currently unused, but reserved for future options.
+3 Bytes - Tab settings for Assembly code fields.
+Byte - When drawing the screen for a particular location, such as a
+       Find or Goto command, this byte sets the screen row where the
+       desired line will be located.  If you set this to 0, the line
+       will be on the top row.  $0C will put the line in the middle
+       of the screen.  Default is 6.
+Byte - # of lines the PgUp & PgDn command will move by.  Setting
+       this to $18 gives single screen paging.  If you normally use
+       scrolling for short moves, you can set this value to something
+       like $60 to jump through the file in larger steps.
+Byte - Line length saved in the Undo buffers.  Default is 39.  You
+       can increase this to 79, if you want entire 80 column lines saved.
+       You can also decrease this number to something like 25, if you
+       want to increase the number of history buffers without using
+       extra memory.  You would only lose the comment field for any
+       restored lines.
+Byte - # of Undo buffers.  This number sets how many lines of history
+       can be undo'ed.  Default is 16.  Multiplied by the number above,
+       equals the total size needed for undo storage, located at the end
+       of the text buffer.
+Byte - Sets what bank of extended memory to put the assembler.  It should
+       be a value appropriate for the $D301 register.  Default is $E3.
+Byte - Sets what bank to put the symbol table.  Default is $E7.  Be aware
+       that there is a small piece of code from $7F00-$7FFF that gets
+       stored in the same bank as the symbol table.
+Byte - Sets what bank to put part of the source text.  Default is $EB.
+       If source memory is configured from LOMEM to $B6FF, the segment
+       from $4000-$7FFF will be put in this bank, leaving that region of
+       main RAM free for object code or other uses.
+2 Bytes - An optimistic number of bytes for future expansion.
+String - Default drive and dir spec.  Must be in the form Dn:?????,
+       like "D3:*.*", or "D3:*.S" if you want dir listings to only
+       show a certain file type.  Filenames for loading and saving
+       do not require a full "Dn:" filespec.  If you type just a
+       name, it will be preceded with the default drive selected here.
+
+- THE MAIN MENU -
+
+The program will display the main menu once it has loaded.  During an
+editing session, the Esc key will return to this menu, and Esc will also
+return to the editor when you are in the menu.
+
+Main Menu Commands:
+
+A - Assemble current file.  Hold the Shift key when pressing A to turn on
+    the assembler listing.  The only current way to send an assembler
+    listing to the printer, is to first use the "O" debugger command to
+    enable output echo to the printer.
+
+B - Break to the monitor.  Actually issues a 00 BRK instruction.
+
+D - Go to DOS.  If you return to the editor by running at the start address,
+    the source file will still be intact.  This is automatic in SpartaDOS
+    by using the RUN command.  For other DOSes, you will need to supply the
+    starting address which is currently $B800, but may change in later
+    versions.
+
+L - Load file.  You do not need to type an entire filespec.  The default
+    drive 'Dn:' will be prepended if the entered name doesn't have a ':'.
+    Press Shift-L to append to the end of an existing file.
+
+M - Macro load and save.  The contents of the keyboard macro buffer can be
+    saved to and loaded from disk files.  This allows you to create useful
+    key macros and save them to disk for later use.
+
+P - Do Pass 2 only of the assembly.  A full assembly must have already been
+    performed, and then this function may be used if the source code was
+    changed in such a way that didn't effect any label addresses.  This can
+    save a lot of assembly time, but please do not use it unless you
+    understand what it does and are certain that no label addresses have
+    been changed since the last assembly.
+
+S - Save File.  Save displays the last loaded filename.  Press Return to
+    accept it, or backspace and change.  Press Shift-S to save a marked
+    text block.  To do this, mark the starting line with ^Z, then move to
+    the ending line and enter the Esc-Shift-S command.  To print a file or
+    text block, you may need to convert the text to spaces only, and then
+    save to P:.
+
+T - Tab convert.  It will prompt to convert to Tabs or Spaces.  Tab
+    converted text will have $7F TAB characters for any sequences of
+    spaces that can be compressed.  The conversion is done from back to
+    front for best speed, but it can still take awhile.  It is also
+    possible to run out of RAM when converting to spaces.  After this
+    command is entered, the editor will remain in the specified mode.  In
+    other words, if you do a tab convert to spaces, all future entered
+    lines will remain in an expanded space format.
+
+V - (Value)  Will allow you to enter any expression, and then displays the
+    calculated value in both hex and decimal.  This can be handy for
+    getting the value of labels, or as a simple calculator.
+
+X - Perform cross reference listing.  The source file must already have
+    been assembled with the A command.  It allows you to enter a label name
+    to start from, or just press return to create a cross reference for the
+    entire symbol table.  Be prepared for this to take awhile.  This is a
+    simple implementation that requires a full pass of assembly for each
+    label.  On the positive side, it doesn't require any memory to build an
+    XRef table, and so generating an XRef on large files should not have
+    any problems running out of memory.  Plus, being able to specify label
+    names directly makes it very easy, and much quicker, to get a report
+    for one or two labels of immediate interest.
+
+1-9 Get directory, and set default drive.  If you just want to change the
+    default drive without getting a dir listing, press Esc after pressing
+    the desired number.
+
+Shift-Clear - Clear text buffer.
+
+- EDITOR FILE FORMAT -
+
+The editor saves files in straight ATASCII.  It can either keep all spaces
+expanded, or can use $7F TAB characters to reduce the size of the file.
+The text can be freely converted between these formats.  TAB compression
+and expansion is done on a line by line basis while you are editing, which
+is different from the way most editors handle TABs.  While you are editing
+a line, TAB characters are not present, and the line will edit in the same
+way as if it had only spaces.  When the line is saved back into the file,
+the program will see if it can convert any sequences of spaces into TABs,
+based on the configured TAB fields.  TABs are not rigidly enforced.
+Meaning, if you slide a comment field a little to the left to make more
+room, that spacing will be retained, and that particular place simply won't
+be TAB converted.  Thus, it is simply a manner of saving memory and file
+space.  The editor will actually run faster with the TAB setting on,
+especially with the XEP80.
+
+The editor allows line lengths up to 79 columns, and will scroll
+horizontally for displays that are narrower than this.
+
+- EDITING COMMANDS -
+
+Standard Atari editing keys apply, with a few exceptions.  Clr & Set Tab
+have no effect.  Use the configure bytes to change tabs.  Pressing the
+Caps key without Shift will always set lower case instead of toggling.
+Use Shift-Caps to set upper case.  1200XL function keys, as well as the
+standard Atari arrow keys, can be used to move the cursor.
+
+Return will insert a new line if pressed at the end of the current line.
+Otherwise, it will just move to the line below.  Return does not break a
+line in the middle, which works out better when entering source code.
+
+In the following tables, a "^" symbol means to press Control along with the
+key after the "^".  "S^" means press both the Shift and Control keys.
+
+- MOVING AROUND -
+
+S^Up Scroll Up
+S^Dn Scroll Down.  These two commands are handy, because they scroll
+     immediately, without waiting for the cursor to reach the screen's
+     edge.
+S^<  Page up by configurable # of lines
+S^>  Page Down
+^,   Start of line
+^.   End of line
+^T   Top of file
+^B   Bottom of file
+^S   Set mark at current location
+^M   Go to Mark
+^G   Goto line number.  When entering the line number at the prompt, you
+     can also enter a '+' or '-' as the first character to move a number
+     of lines relative to the current location.
+
+- FIND & REPLACE -
+
+^F   Find text -- not case sensitive.  '?' can be used as a wildcard.
+^?   Change the wildcard character.  After issuing the command, press
+     any other key to set the wildcard to that character.  The wildcard
+     character is shared between the editor and debugger, and changing
+     it within either module will affect uses in both modules.
+S^F  Find by searching backwards towards the start of the file.
+^R   Replace -- forward direction only.  It will ask for a Find string
+     and then a Replace string.  For all matches of the find string, the
+     editor will display an inverse '>' symbol in front of the occurrence.
+     You may press Y to replace it, N to skip it, A to replace all
+     occurrences to the end of the text, or Esc to abort.
+     Max length for Find or Replace is 15 characters.
+^N   Next.  If the previous operation was a replace, then you will be in
+     the prompted replace mode if the string is found.  Otherwise, if the
+     previous operation was a Find, then you will simply be taken to the
+     next occurrence.
+^P   Find Previous match, by searching backwards.
+^L   Enter a label name, and the editor will jump to where the label is
+     defined.  (By searching from the first column only.)
+^J   The editor's version of a JSR.  It looks at the operand field of the
+     current line, and jumps to where that label is defined.  It also
+     sets a mark at the current line so that you can return with a ^H.
+     The use of this function is not limited to JSR instructions.  JMPs,
+     branches, even data variable locations can be traced with this
+     command.  Basically, for any line that contains an operand field,
+     ^J will attempt to find the location where that label is defined.
+^H   Return to previous position where a ^J command was entered.
+     ^H is also used to jump to locations that gave assembly errors.
+     During the assembly, up to 16 error positions will be remembered.
+     All bookmarks, and marks set from the ^J and error position
+     reporting, will auto-adjust to any changes in the source text, so
+     that they will always point to the correct line in the source file.
+
+- BLOCK MOVES & COPIES -
+
+^Z   Set block start.
+^X   Cut from block start to current line, in a forwards direction only.
+     If you find you want to mark a block backwards, the easiest way to
+     do this, is to set the mark at the current line, then move backwards
+     to the start of the block.  Press ^Z, then press ^M to return to
+     where you started, and give the ^X or ^C command.  A clear to end of
+     file operation can be done by pressing the keys, ^Z, ^B, ^X.
+^C   Copy text from block start to current line, into the cut buffer.
+     The text is left unchanged.
+^V   Paste the cut buffer at current line.
+^D   If there is a ^Z block mark set, ^D will duplicate the text block.
+     Effectively, it does a ^C followed by a ^V.  Because this process
+     clears the ^Z mark, multiple presses of ^D will not produce multiple
+     copies of the same block.  Use ^V to paste additional blocks.  If
+     there is no ^Z mark, then ^D will duplicate only the current line.
+
+- KEY MACROS -
+
+^W   (Write) Begin key macro recording.  When done, press ^3.  Up to 80
+     keystrokes can be recorded, including Esc-Menu commands.
+^E   Execute Macro
+^K   Prompts for a number, and then will repeat the next entered key
+     that number of times.  ^K cannot be used within a macro, but it can
+     be used to execute ^E multiple times.
+
+- MISC OTHER STUFF -
+
+S^Del Delete to end of line
+^I   Toggle Insert/Replace mode.
+^A   Accept next keypress as literal ATASCII value.  This lets you enter
+     Control graphic or international characters that would otherwise be
+     treated as editor commands.
+^U   Undo line deletes, or changed lines.  Does not undo block operations.
+     A handy way to move one or more lines from one place to another, is
+     to delete the original lines, move to the destination, and then use
+     the Undo operation.
+S^(  If a label exists on the current text line, move it up to the previous
+     line.  (lines that already contain labels or comments are skipped over)
+S^)  Same as above, but moves the label down.
+S^[  Move the current line up one position relative to the lines around it.
+S^]  Move the current line down one position.
+^;   Comments or uncomments a block of text.  You can first mark the start
+     of a text block with ^Z, and then press ^; on the last line of the
+     block.  If the block does not start with a commented line, then ";"
+     characters will be added to the front of all lines in the block.  If
+     the block is already commented, then the ";"s will be removed.  If
+     you do not set a ^Z block mark first, then this command will process
+     only the current line, and move the cursor down.  This can be a
+     faster way of commenting just a few lines.

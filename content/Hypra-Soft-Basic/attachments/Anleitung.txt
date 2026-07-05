@@ -1,0 +1,556 @@
+HYPRA-SOFT-BASIC V1.0
+Dieses Programm stellt Ihnen kurz
+die neuen Befehle des Hypra-Soft-
+Basics vor. Dieses neue Basic ist
+ein modifiziertes Atari-Basic.
+Das heisst fuer den Benutzer, da
+die Geschwindigkeit original die
+des Atari-Basic ist und das alle
+alten bekannten Befehle auch hier
+noch gueltig sind.
+Hypra-Soft-Basic hat rund 60 neue
+Befehle/Funktionen, die einen
+schnelleren Programmfluss und ein
+Speicherplatz optimiertes
+Programmieren ermoeglichen.
+*
+HYPRA-SOFT-BASIC V1.0
+Es wurde insbesondere darauf
+geachtet, dass Befehle die im
+staendigen Umgang mit dem Basic
+notwendig sind, endlich eingefuehrt
+wurden. Dies sind z.B. die Disk-
+Befehle, die Player/Missile-Befehle
+und die Speicherbefehle zum Ver-
+schieben und Fuellen von Speicher-
+bereichen. 
+Dazu kommen dann noch zahlreiche
+Luxusbefehle wie der Multicolor-
+modus in GR.0
+*
+HYPRA-SOFT-BASIC V1.0
+Da Sie nun mit einem
+Befehl ausfuehren koennen, was frueher
+nur durch aufwendige Routinen
+moeglich war, koennen viele Programme
+schneller ablaufen und belegen
+weniger Speicherplatz.
+Die Benutzung von HS-BASIC kostet
+Sie zwar ganze 8 Kilobytes, die das
+Hypra-Soft-Basic mehr belegt als
+das Atari-Basic, doch ist das
+HS-Basic dafuer in einigen Bereichen
+leistungsstaerker als selbst das
+Turbo-Basic-XL oder das BASIC-XL.
+*
+HYPRA-SOFT-BASIC V1.0
+Es folgt nun eine kurze
+Beschreibung der neuen Befehle.
+
+Damit die Anwendung klarer wird,
+sehen Sie sich bitte auch die
+DEMO-Programme an.
+*
+INFO
+Der Befehl INFO zeigt an welche
+Speicherbereiche vom BASIC wie
+belegt sind. Der User muss diese
+Bereiche meiden, wenn er eigene
+Datenmengen im Speicher ablegen
+will.
+
+Syntax:
+INFO
+*
+VAR
+VAR listet die aktuelle Variablen-
+tabelle aus. Es werden bei Zahlen-
+variablen der Inhalt, bei Strings
+die tatsaechliche und die maximale
+Laenge und bei Arrays die
+Dimensionierung mit angegeben.
+
+Syntax:
+VAR
+*
+Diskettenbefehle
+DIR
+LOCK
+UNLOCK
+ERASE
+RENAME
+
+Mit diesen Befehlen koennen die
+gaengigsten DOS-Befehle nun direkt
+angesprochen werden.
+
+Syntax:
+DIR "D:FILENAME.EXT"
+DIR FILE$
+*
+HELP
+Der Befehl HELP listet alle neuen
+Befehle und Funktionen des Hypra-
+Soft-Basics auf, die das alte
+Atari-Basic nicht kannte.
+
+Syntax:
+HELP
+*
+BOOT
+Der Befehel BOOT loest einen
+Kaltstart aus, nachdem die Rueck-
+frage positiv beantwortet wurde.
+Bei der Cartridge oder ROM-Version
+des Hypra-Soft-Basic bleibt diese
+im Speicher erhalten.
+
+Syntax:
+BOOT
+*
+BREAK
+Mit diesem Befehl laesst sich die
+BREAK-Taste an und ausschalten.
+Hinter dem Befehl wird als
+Parameter ein boolescher Ausdruck
+gefordert. Ist dieser wahr=1, so
+ist die Taste an;
+ist er falsch=0, so ist die Taste
+aus.
+
+Syntax:
+BREAK 1  -  BREAK 12=12      = an
+BREAK 0  -  BREAK  2=3       = aus
+*
+HANDLER
+Der Befehl Handler listet alle
+aktiven Handler wie z.B. Editor,
+Keybord, Screen oder DOS auf.
+Zum jeweiligen Identifikations-
+zeichen (D: E: S: K:) wird noch
+der Anfang der zugehoerigen Treiber
+tabelle angegeben.
+
+Syntax:
+HANDLER
+*
+IOCB
+Der Befehl IOCB zeigt an welcher
+IO-Kanal von welchem Geraet belegt
+ist, und fuer welche Datenrichtung
+er geoeffnet wurde.
+
+Syntax:
+IOCB
+*
+UHR
+Der Befehl UHR bewirkt, dass bei
+Rechnern, die mit einem 16K-Bibomon
+vom Compyshop ausgeruestet sind, oberhalb des
+Bildschirms die Uhrzeile ein- und
+ausgeblendet werden kann.
+
+Syntax:
+UHR 1   =an
+UHR 0   =aus
+*
+SYSTEM
+Der Befehl SYSTEM gibt wichtige
+Adress-Vektoren des Betriebsystems
+an. Der User kann hier sehen, ob
+und wie Interrupts eingesetzt
+werden, wo die Display-List liegt
+und einiges mehr.
+
+Syntax:
+SYSTEM
+*
+BGET / BPUT
+Mit diesen Befehlen kann ein Daten-
+block geladen oder gespeichert
+werden. Dazu muss einer Variablen
+die Anfangsadresse der Daten und
+einer anderen die Laenge des Blocks
+zugewiesen werden.
+Achtung es koennen nur Variablen,
+nicht aber Zahlen eingesetzt
+werden.
+
+Syntax:
+BGET #1,AD,LN
+BPUT #1,AD,LN
+*
+MOVE+ / MOVE-
+Mit diesen Befehlen kann ich einen
+Datenblock im Speicher verschieben.
+Bei MOVE+ wird mit dem ersten Byte
+begonnen und mit dem letzten Byte
+aufgehoert. Bei MOVE- ist dies genau
+andersherum. Der erste Parameter
+gibt die Quell Adresse, der zweite
+die Ziel-Adresse und der dritte die
+Laenge des Blocks an.
+
+Syntax:
+MOVE+ Quell,Ziel,Len
+MOVE- Quell,Ziel,Len
+*
+STORE
+Mit dem Befehl STORE kann ein
+bestimmter Speicherbereich mit
+einem Wert gefllt werden. Der
+erste Parameter ist hier die Start-
+adresse, der zweite die Laenge und
+der dritte das Fuell-Byte.
+
+Syntax:
+STORE Start,Len,Byte
+*
+DPOKE
+Viele Vektoren enthalten 16-Bit
+Adressen. Um nun einen solchen
+Vektor zu aendern mussten bislang
+Low und Highbyte der neuen Adresse
+ermittelt werden und getrennt in
+die jeweiligen Adressen geschrieben
+werden. Der DPOKE Befehl erledigt
+dies alles selbst.
+
+Syntax:
+DPOKE AD,BYTE    0<= BYTE <= 65535
+*
+SCREEN
+Mit dem Befehl SCREEN kann der
+Bildschirm aus- und wieder ein-
+geschaltet werden. Ist der Bild-
+schirm aus, so ist der Rechner bis
+zu 30% schneller.
+
+Syntax:
+SCREEN 0      =aus
+SCREEN 1      =an
+*
+BIB
+Besitzer eines 16K-Bibomon koennen
+mithilfe dieses Befehls in den
+Monitor springen. Wenn Sie den
+Monitor dann mit dem Befehl Q ver-
+lassen, koennen Sie sogar ein unter-
+brochenes Basic-Programm
+fortsetzen.
+
+Syntax:
+BIB
+*
+SHELTER
+Der Befehl SHELTER speichert ein
+BASIC-Programm in der Art und Weise
+ab, dass es nur noch mit RUN"D:*.*"
+geladen und gestartet werden kann.
+Solche Programme koennen dann nicht
+mehr gelistet oder veraendert
+werden.
+
+Syntax:
+SHELTER"D:FILENAME.BAS"
+*
+CLS
+CLS steht fuer CLear Screen. Dieser
+Befehl loescht in Gr.0 den Bild-
+schirm und in den anderen Grafik-
+stufen das Textfenster.
+
+Syntax:
+CLS
+*
+DO / OD
+Mit DO und OD koennen Sie eine neue
+Schleife einrichten.
+Stoesst das Basic auf den Befehl OD,
+so beginnt das Programm wieder bei
+dem letzten DO. OD ohne vorheriges
+DO loest eine Fehlermeldung aus.
+Diese Schleife kann nur mit EXIT
+verlassen werden.
+
+Syntax:
+DO:... ... ... :OD
+*
+EXIT
+Mit EXIT kann eine DO-OD Schleife
+verlassen werden. Nach EXIT muss
+die Zeilennummer stehen, an der das
+Programm fortgefuehrt werden soll.
+
+Syntax:
+EXIT Zeile
+*
+REPEAT - UNTIL
+Die Befehle oder Zeilen, die
+zwischen REPEAT und UNTIL stehen,
+werden solange wiederholt, bis der
+boolesche Ausdruck hinter UNTIL
+wahr also 1 ist.
+Bsp.:
+REPEAT:?A:A=A+1:UNTIL A=11
+
+Syntax:
+REPEAT:.... .... ....:UNTIL bool
+*
+REN
+REN steht fuer Renumber. Mit diesem
+Befehl koennen die Zeilennummern
+neu durchnummeriert werden.
+Der erste Parameter gibt die erste
+Zeile des "neuen" Programms an.
+Der zweite Parameter ist der
+Abstand zwischen den Zeilen.
+
+Syntax:
+REN Anfang,Abstand
+*
+BASIC 0
+Hypra-Soft-Basic und ATARI-Basic
+sind bis auf einen Unterschied
+kompatibel. Damit ein Hypra-Soft
+Basic Programm, in dem keiner der
+neuen Befehle benutzt wurde auch
+in ATARI-BASIC laeuft, muss vor dem
+Abspeichern BASIC 0 eingegeben
+werden. Aus den Zuordnungen wie
+A=10 wird dann Let A=10. Wird ein
+solches Programm dann vom ATARI
+Basic geladen sieht alles wieder
+normal aus und funktioniert
+richtig.
+*
+BASIC 1
+Hat man ein normales Atari-Basic
+Programm geladen, so laeuft dies
+natuerlich einwandfrei auch in HS-
+Basic. Listet man aber ein solches
+Programm, so sieht man bei Wert-
+zuordnungen anstelle von A=10
+Let A=10. Der Befehl BASIC 1 macht
+daraus dann die normale Form A=10.
+*
+Player-Missile Grafik
+Es folgen nun einige Befehle, die
+Ihnen das Arbeiten mit PM-Grafik
+erheblich vereinfachen.
+Die meisten Befehle funktionieren
+aber nur dann, wenn ganz zu Beginn
+der Befehl PMGRAPHICS 1 oder 2
+ausgefuehrt wurde, da dieser Befehl
+neben der Initialisierung der
+PM-Grafik auch den Speicherbereich
+der PM-Grafik festlegt.
+Die Player haben die Nummern 0
+bis 3; Missiles die von 4 bis 7.
+*
+PMGRAPHICS
+Mit PMGRAPHICS wird die PM-Grafik
+ein und ausgeschaltet.
+PMGR.0 schaltet die PM-Grafik aus.
+PMGR.1 schaltet die zweizeilige,
+Auflsung ein.
+PMGR.2 aktiviert die einzeilige,
+feinere Aufloesung.
+
+Syntax:
+PMGRAPHICS modus
+*
+PMCLR
+Der verlangte Parameter ist die
+Playernummer. Ist er zwischen
+0 und 3 so wird der entsprechende
+Player geloescht. Ist er groesser als
+3 so wird der gesamte Missile-
+Speicher geloescht.
+
+Syntax:
+PMCLR nr
+*
+PMCOLOR
+Der Befehl PMCOLOR legt die Farbe
+von Player und Missiles fest. Ein
+Paar wie Player 0 und Missile 0
+etc. hat dabei immer die gleiche
+Farbe. Der erste Parameter ist die
+Player/Missile Nummer, dann folgt
+die Farbe 0-15 und die Helligkeit
+ebenfalls im Bereich von 0-15.
+
+Syntax:
+PMCOLOR nr,col,lum
+*
+PMWIDTH
+Mit PMWIDTH wird die Breite eines
+Players/Missile festgelegt.
+0 ist einfach, 1 ist doppelt und
+2 ist vierfach.
+
+Syntax:
+PMWIDTH nr,breite
+*
+PMPOS
+Mit PMPOS kann die horizontale
+Position der Objekte festgelegt
+werden.
+
+Syntax:
+PMPOS nr,x
+*
+PMDOWN / PMUP
+Mit diesen Befehlen kann ein
+Player/Missile um eine bestimmte
+'Strecke' nach oben oder unten
+bewegt werden. Der erste Parameter
+ist wie immer die Player Nummer,
+der zweite gibt an um wieviele
+Bytes das Objekt nach oben
+verschoben werden soll.
+
+Syntax:
+PMUP nr,anz      nach oben
+PMDOWN nr,anz    nach unten
+*
+MULTICOL
+Dieser Befehl funktioniert nur in
+Gr.0. Er aktiviert eine ganze Reihe
+von Interrupts (24 DLIs und 1 VBI).
+Es kann nun fuer jede einzelne Gr.0
+Zeile eine eigene Hintergrundfarbe
+definiert werden. Dies geschieht
+ueber den Befehl LINECOL.
+
+
+Syntax:
+MULTICOL 0       aus
+MULTICOL 1       an
+*
+LINECOL
+Ist MULTICOL aktiv, so kann nun
+fuer jede Zeile eine eigene Hinter-
+grundfarbe gewaehlt werden.
+Der erste Parameter gibt dabei die
+Zeile (0 bis 23), der zweite die
+Farbe (0 bis 15) und der dritte die
+Helligkeit (0 bis 15) an.
+
+Syntax:
+LINECOL zeile,col,lum
+*
+KLICK
+Mit diesem Befehl laesst sich bei den
+XL/XE-Geraeten der Tastaturklick
+an- und abschalten.
+
+Syntax:
+KLICK 0        aus
+KLICK 1        an
+*
+FUNKTIONEN
+
+Es folgen nun die zusaetzlichen
+Funktionen.
+*
+DPEEK
+Dies ist das Gegenstueck zu dem
+Befehl DPOKE. Mit dieser Funktion
+kann ein 16 bit Adress-Vektor
+direkt ausgelesen werden, ohne erst
+High und Low-Byte getrennt zu
+ermitteln und umzurechnen.
+
+Syntax:
+A=DPEEK(adr)
+*
+ERR / ERL
+Mit diesen Funktionen laesst sich die
+Fehlernummer und die Zeilennummer
+nach einem Error ermitteln.
+ERR = Fehler - ERL = Zeile
+
+Syntax:
+A=ERR(0)
+A=ERL(0)
+*
+HSTICK
+Mit HSTICK laesst sich der
+horizontale Bewegungsanteil des
+Joysticks ermitteln.
+links, links-oben, links-unten = -1
+keine horizontale Bewegung     =  0
+rechts, rechts-oben, r.-unten  =  1
+
+Syntax:
+A=HSTICK(0):B=HSTICK(1)
+*
+VSTICK
+Mit VSTICK laesst sich der
+vertikale Bewegungsanteil des
+Joysticks ermitteln.
+hoch, l.-hoch, r-hoch       = -1
+keine vertikale Bewegung    =  0
+runter, l-runter, r-runter  =  1
+
+Syntax:
+A=VSTICK(0):B=VSTICK(1)
+*
+PMADR
+Wurde mit PMGRAPHICS die PM-Grafik
+aktiviert, so laesst sich mit
+PMADR(nr) die Startadresse eines
+des Players/Missiles mit der Nummer
+nr ermitteln.
+Player haben die Nummern 0-3;
+Missiles die von 4 bis 7.
+
+Syntax:
+AD=PMADR(0):AD1=PMADR(1):....
+*
+PM
+Mit PM(0) laesst sich ermitteln,
+ob und welche PM-Aufloesung aktiv
+ist.
+0 PM=aus
+1 PM grob (zweizeilig)
+2 PM fein (einzeilig)
+
+Syntax:
+A=PM(0)
+*
+RAND
+RAND(zahl) erzeugt eine Zufallszahl
+zwischen 0 und zahl.
+
+Syntax:
+A=RAND(16)
+*
+WSL
+Die Funktion WSL kann nur 0 und 1
+werden. Der Parameter von WSL muss
+zwischen 0 und 1 liegen. Dieser
+Parameter gibt die Wahrscheinlich-
+keit an mit der WSL 1 wird.
+Bei WSL(0.25) liegt diese bei 0.25,
+oder besser gesagt bei 1 zu 3.
+Die Funktion kann nun 0 oder 1
+werden, aber es ist hier 3 mal so
+wahrscheinlich, dass sie 0 wird.
+WSL(0) ist immer 0 und WSL(1) ist
+immer 1.
+
+Syntax:
+A=WSL(zahl)         0<=zahl<=1
+*
+HYPRA-SOFT-BASIC V1.0
+Dies ist erst einmal alles.
+Mehr Informationen entnehmen Sie
+bitte dem zugehoerigen Artikel im
+Compy-Shop-Magazin August '89.
+
+Ihr Uwe Roeder
+*
+

@@ -1,0 +1,113 @@
+
+Building the OSS DOS 2.5 sources on the Atari
+---------------------------------------------
+
+These instructions assume you have two drives. If you only have one, you'll
+have to edit FMS.M65 and DUP.M65, and change all the .INCLUDE #D2:xxxx to
+use D1: instead.
+
+You will need 48K of RAM and the Mac/65 v1.01 or 1.02 cart inserted.
+
+To build:
+
+Boot some DOS in drive 1. For convenience, you'll want a copy of
+SAVEDOS.XEX on this disk (you can use BUILDDOS.ATR if you like, it's
+DOS 2.0S plus SAVEDOS.XEX). At the Mac/65 Edit prompt, type DOS.
+
+Make copies of source disks A and B!
+Unlock FMS.M65 and FMSEQU.M65 on (your copy of) disk A.
+Unlock DUP.M65 on your copy of disk B.
+Insert your copy of disk A in D2: and run Mac/65 (option B, run cartridge)
+
+LOAD #D2:FMSEQU.M65
+3650                  <--- delete this line
+SAVE #D2:FMSEQU.M65
+LOAD #D2:FMS.M65
+9  .SET 6,$5900       <--- add this line (see below)
+10  .OPT OBJ,NO LIST  <--- change line 10 to this [*]
+SAVE #D2:FMS.M65      <--- optional but recommended
+ASM
+
+Wait a while...
+
+The reason you have to delete line 3650 is that it uses syntax not
+supported in either of the 1.01 or 1.02 cart versions. I tried disk
+versions 2.00 and 4.2, neither of which worked (4.2 didn't give any
+error messages, but it didn't assemble anything either!)
+
+What's the ".SET 6" line for? It tells Mac/65 to offset the code in
+memory (in this case by $5900 bytes). So the code is assembled as though
+it's going to start at $700, but it actually gets stored at $700+$5900
+(aka $6000). This is necessary because there is already a DOS loaded
+into memory at $0700 and up, and we don't want to step on it during
+assembly (we need it, since the source files get loaded from disk!)
+
+Now to build DUP:
+
+Insert your copy of disk B in D2:
+LOAD #D2:DUP.M65
+10  .OPT OBJ,NO LIST  <--- add this line [*]
+20  .SET 6,$5900      <--- add this line
+SAVE #D2:DUP.M65      <--- optional
+ASM
+
+[*] Leave off the "NO LIST" of course, if you want/need an assembly
+listing. If you do, you probably want the ASM command to be something
+like "ASM ,#D:FMS.LST,"
+
+At this point, you have all of FMS and DUP assembled, and stored in
+memory from $6000 up. To actually run it, you'll have to create a
+bootable DOS disk containing the code. Part of the code belongs in the
+boot sectors of the disk, part in DOS.SYS, and part in DUP.SYS. In fact,
+part of the code in DOS.SYS is actually from the DUP sources. Also,
+the boot sector code needs to have the "DOS.SYS present" flag set,
+and the starting sector of DOS.SYS set.
+
+Also, most Atari DOSes (probably including the one you're running right
+now) include special handling for the filename DOS.SYS: if you open this
+file for output, DOS will immediately fill it with the parts of memory
+that belong in it (try in BASIC: 'OPEN #1,8,0,"D:DOS.SYS":CLOSE #1').
+Also the boot sectors will be updated to point to the first sector of
+the new DOS.SYS. In normal operation, it's a convenient way to make a
+disk bootable without having to enter the DUP menu, but since we are
+trying to build a different DOS.SYS from the one that's running now,
+our new DOS.SYS has to be called something else...
+
+The source disk comes with a BUG4000.COM program, which somehow can be
+used to turn the object code into usable DOS.SYS and DUP.SYS files and
+boot sectors. Unfortunately I don't know how to do this, and there are
+no instructions on the disk... and it'd be a completely manual process
+anyway.
+
+So to automate things, I've written a little program called SAVEDOS. What
+it does is:
+
+- Create a file NEWDOS.SYS, which contains the code that belongs in DOS.SYS
+
+- Create a file DUP.SYS, containing the correct code, plus binary load header
+  and run address.
+
+- Write the contents of $6000-617F to the boot sectors of the disk, after
+  fixing up the "DOS present" and starting sector pointer. Note: the
+  boot sector code doesn't actually check the filename, so it doesn't
+  matter that our "DOS.SYS" file is actually called "NEWDOS.SYS".
+
+- Create an AUTORUN.SYS that deletes NEWDOS.SYS, then recreates DOS.SYS,
+  then deletes itself.
+
+SAVEDOS requires a blank (just-formatted) disk, since it's pretty dumb
+and blindly assumes the first file it writes will always start on
+sector 4.
+
+To use SAVEDOS, go to the DOS menu, format a new disk if needed, load
+SAVEDOS.XEX, enter the drive number, insert freshly-formatted disk in
+that drive, and press Return. After it's done, boot the new disk and
+wait... when the DUP menu comes up (or the Mac/65 Edit prompt, if you
+left the cartridge in), you're done: you now have a working DOS disk
+that was built entirely from sources.
+
+If you're modifying FMS and/or DUP, you should check the addresses in
+SAVEDOS.M65 against your assembly listing. Depending on what you've
+changed, the addresses might need updating. The comments explain how to
+do this... then reassemble SAVEDOS.XEX and you should be good to go.
+

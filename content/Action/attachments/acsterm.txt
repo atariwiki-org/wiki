@@ -1,0 +1,1818 @@
+!<arch>
+acsterm.rem     508123728   146   33    100600  1432      `
+ACSTERM is a terminal emulator for the Atari 800, 800xl, 1200xl, 130xe.
+It provides cursor motion, insert, delete, etc. The 'termcap' file tells
+UNIX systems how to manipulate your screen. With 'more' and screen editors
+like 'vi', this does near the best that can be done with a 40 column screen.
+	The tilde and curly brace characters are provided using a redefined
+character set; ^M etc. have their usual ascii meanings.
+	ACSTERM was written by Clint Parker, author of the Action system.
+All sources are in the Action language.
+    As downloaded from the bbs he maintained, you must use the Action cartridge.
+Here there is also a modification that compiles with the run-time library
+to make an executable file that needs no cartridge.
+
+	NB! R-Verter owners: The RHAND1C modem handler converts tilde and
+brace characters. Since they provide the source, I deleted those parts.
+I also cured occasional glitches it had running full tilt at 9600 baud,
+and improved its handling of S/Reset. As that software is copyright, I
+can't upload my version. However I am willing to upload a 'diff' file
+that shows the changes I made. 
+
+	These are the files:
+TERM.DOC 	read this
+TERMCAP.ACS	get this into your UNIX
+TERM.AC0	Compile this file.
+TERM1.AC0	these files will
+TERM2.ACT	be INCLUDEd
+TERM.AC2	My modifications
+TERM1.ACT	of TERM, TERM1.
+BLKIO.ACT	CIO caller and fast I/O.
+
+I wrote an XMODEM module but never got it integrated into ACSTERM.
+termcap.acs     507588522   146   33    100600  194       `
+aa|aacs|Atari ACS:al=^B:am:bc=\036:bs:ce=^T:cl=^L:cm=^R%+ %+ :co#40:\
+dc=^X:dl=^E:do=\035:ei=:ho=^K:ic=^F:im=:kd=\035:kh=^L:kl=\036:kr=\037:ku=\034:\
+li#24:ll=^Y:nd=\037:pt:se=^W:so=^V:up=\034:
+term.doc        507588594   146   33    100600  5089      `
+
+Documentation for ACS Term
+version 1.0
+
+Copyright 1983 
+by Action Computer Services (ACS)
+
+Permission to make copies of this
+document for non-profit purposes is
+granted so long as this notice is
+reproduced on all copies.
+
+
+ACTION! is a trademark of
+    Action Computer Services
+Atari is a trademark of Atari, Inc.
+All references should be so noted.
+
+
+ACS Term is a full function terminal
+program written in ACTION! for Atari
+computers.
+ 
+features:
+    24 lines of 40 columns format
+    originate/answer modes
+    full/half duplex
+    upload/download capabilities
+    ASCII/ATASCII support
+    screen handling:
+       insert/delete line
+       insert/delete character
+       cursor positioning
+       clear screen
+       clear to end of line
+       start/stop inverse video
+       home to top/bottom left
+       cursor key support
+       bell, tabulation, line feeds
+    buffering for printer
+    XOFF/XON support (CTRL-S/CTRL-Q)
+
+Most of the features of ACS Term are
+selected by depressing the SELECT key
+on the Atari.  This causes ACS Term
+to send an XOFF and then display a
+menu of available features.  Features
+are selected by depressing the key
+which represents the first letter in
+the name of the feature.  Most of the
+featute selections are toggles
+between two (or more) different modes
+that are supported (such as ASCII/
+ATASCII, originate/answer).  The
+upload and download features will
+work to some degree in all modes, but
+do not support XOFF and XON in the
+ATASCII mode (this means that you can
+not buffer for the printer or upload/
+download files bigger than the size
+of the transfer buffer).  In general,
+ASCII should be used at all times.
+Up/down loading are described later
+in this document.  An XON is trans-
+mitted at the end of the selection
+process.
+
+Buffering for the printer is selected
+by depressing the OPTION key.  If ACS
+Term is currently buffering, then the
+contents of the buffer are dumped to
+the printer and buffering is turned
+off.  If buffering is off, then it is
+turned on when the OPTION key is
+depressed.  The print buffer is about
+1K in size and whenever it fills up,
+it is dumped to the printer.  An XOFF
+is sent before doing this and an XON
+is sent when done.  Control codes are
+not stored in the print buffer and as
+such are not sent to the printer.  A
+backspace causes the last character
+placed in the buffer to be removed.
+
+The START key is used for starting
+up/down loads and for ending down
+loads.
+
+The Quit command in the SELECTion
+menu will exit ACS Term (after
+closing any open buffers) and return
+control to the ACTION! monitor.  The
+BREAK key is not supported by ACS
+Term.  DELETE can be used to send an
+ASCII DEL.  The following table is a
+list of CTRL keys used to send ASCII
+codes not represented on the Atari
+keyboard:
+
+    BEL (bell)         CTRL-G
+    LF  (line feed)    CTRL-J
+    DC1 (XON)          CTRL-Q
+    DC3 (XOFF)         CTRL-S
+
+; the following codes are sent by the
+; cursor keys
+    FS                 (cursor up)
+    GS                 (cursor down)
+    RS                 (cursor left)
+    US                 (cursor right)
+
+    grave accent       CTRL-2
+    opening brace      CTRL-[/CTRL-,
+    closing brace      CTRL-]/CTRL-.
+    tilde              CTRL-;
+
+When uploading a file, you will be
+asked for a delay (slow?) that is
+used to slow down transmittion for
+host which cannot support transfers
+at full baud rate.  Simply hit RETURN
+to use the default value displayed or
+enter a value of your choice.  A
+value of zero means no delay.  After
+this you will be prompted for the
+upload file name.  If no device is
+given, D: is assumed.  The routine
+will convert your input to uppercase,
+so you can enter the name as lower-
+case if you want.  If the file cannot
+be opened, you will be prompted for
+the name again.  If any other error
+occurs, the upload will be aborted.
+Hit the START key to then start the
+upload.  Hitting the START key again
+while the upload is in progress will
+abort it.
+
+When downloading a file, you will be
+prompted for a file name as described
+for uploading above.  Once the file
+name is given, you can begin the
+downloading by hitting the START key.
+When the down load is complete, hit
+the START key again flush the rest of
+the characters remaining in the
+buffer.
+
+The following table describes the
+CTRL characters used by the screen
+commands.  A termcap entry is
+available for UNIX users.
+
+    CTRL-B  insert line
+    CTRL-E  delete line
+    CTRL-F  insert character
+    CTRL-G  bell
+    CTRL-H  backspace
+    CTRL-I  tab
+    CTRL-J  line feed
+    CTRL-K  cursor to top left (home)
+    CTRL-L  clear screen
+    CTRL-M  carriage return
+    CTRL-Q  XON
+    CTRL-R  cursor position, next two
+            bytes are column+32 and
+            row+32 addresses.
+    CTRL-S  XOFF
+    CTRL-T  clear to end of line
+    CTRL-V  start inverse video
+    CTRL-W  stop inverse video
+    CTRL-X  delete character
+    CTRL-Y  cursor to bottom left
+; the following codes are also sent
+; by the corresponding cursor keys
+    CTRL-\  cursor up
+    CTRL-]  cursor down
+    CTRL-^  cursor left
+    CTRL-_  cursor right
+
+term.ac2        497500404   146   33    100600  8543      `
+; Modfied for running without cartridge, by A.B.Langdon
+; 9/15/85
+; Before compile, SET $495=16
+; Other changes to make it run better for me.
+
+SET $491=$3000  SET 14=$491^
+BYTE rts=[$60]
+;MODULE ; TERM.ACT
+
+; (c) 1983 ACS
+
+; Copyright (c) 1983
+; by Action Computer Services (ACS)
+;
+; No portion of this software may be
+; incorporated within or included with
+; another computer program that is to
+; be sold to other parties in any
+; manner without the express written
+; permission of Action Computer
+; Services.  Under no circumstances is
+; this copyright notice or others
+; contained within this software to be
+; removed.
+
+; version 1.0
+; last modified October 27, 1983
+
+CARD ARRAY end(1) ; just to get ending address
+
+; Additions & deletions for run-time version:
+;DEFINE STRING = "CHAR ARRAY"
+;DEFINE EOL="$9B"
+INCLUDE "D2:SYS.ACT"
+;MODULE ; avoids error 165 !?
+
+INCLUDE "D2:BLKIO.ACT"
+
+DEFINE file="3", printer="4",
+       modem="5", key="7"
+DEFINE ASCII="$0"
+
+DEFINE MARGIN="0"
+DEFINE PMAX="1100"
+DEFINE SLOP="30"
+DEFINE PTIMEOUT="500"
+DEFINE FTIMEOUT="500"
+
+CHAR keyboard, OLDCHR=$5D
+BYTE LMARGN=$52, COL=$55, ROW=$54
+BYTE escflag, RMARGN=$53, CHBAS=$2F4
+BYTE pos, io_err, hold, inverse, lf
+BYTE pflag, fflag, fmode, run, ans
+BYTE baud, translation, pincr, fincr
+CARD pindex, findex, pcounter, slow
+CARD fcounter, fsize, old_Error, fmax
+CARD OLDADR=$5E, MEMTOP=$2E5
+BYTE ARRAY modes(256)
+STRING Rdev(0)="R:", Pdev(0)="P:"
+STRING fname(40)
+CHAR ARRAY pbuf(PMAX), fbuf
+CHAR ARRAY line, font
+BYTE font_hi=font+1
+
+PROC MyError(BYTE err, chan)
+  PrintF("%EERROR - %I, channel %I%E", err, chan RSH 4)
+  io_err = err
+RETURN
+
+BYTE FUNC MStatus=*()
+  BYTE num_chars=$2EB ; DVSTAT+1
+  XIO(modem,0,$D,0,0,Rdev)
+RETURN(num_chars)
+
+PROC Delay(BYTE count)
+  BYTE RTC=20
+  count = count + RTC + 1
+  WHILE (count-RTC)>0 DO OD
+RETURN
+
+PROC OpenModem(BYTE trans)
+  CARD POINTER aux
+
+  Close(modem)
+  Open(modem, Rdev, 13, 0)
+  XIO(modem,0,36,baud,0,Rdev)
+  XIO(modem,0,38,trans,0,Rdev)
+; set concurrent IO and no user buf.
+  aux = $34A + (modem LSH 4)
+  aux^ = 0 ; make sure aux = 0
+  XIO(modem,0,40,0,0,Rdev)
+RETURN
+
+
+PROC XOn()
+  IF translation=ASCII THEN
+    PutD(modem, $11) ; XON
+  FI
+RETURN
+
+
+PROC XOff()
+  IF translation=ASCII THEN
+    PutD(modem, $13) ; XOFF
+  FI
+RETURN
+
+
+; routines to get char from modem
+INCLUDE "TERM1.ACT"
+
+
+; buffering and IO routines
+INCLUDE "TERM2.ACT"
+
+
+PROC Init()
+  BYTE POKMSK=$10, SHFLOK=$2BE
+  CARD i
+  BYTE ARRAY sfont
+  BYTE ARRAY ga(0)=[$30$18$C$4$0$0$0$0]
+  BYTE ARRAY tilde(0)=[$0$0$0$72$9C$0$0$0]
+  BYTE ARRAY ob(0)=[$C$18$18$30$18$18$C$0]
+  BYTE ARRAY cb(0)=[$30$18$18$C$18$18$30$0]
+
+; this should really be done with
+; interrupts off, Oh well!!!
+  POKMSK = POKMSK & $7F ; no break key
+
+  LMARGN = MARGIN
+  SHFLOK = 0
+  device = 0
+
+  pos = 0
+  pflag = 0
+  pcounter = 0
+  pincr = 0
+  fflag = 0
+  fmode = 0
+  fcounter = 0
+  fincr = 0
+  inverse = 0
+  escflag = 0
+
+  ans = 0 ; originate
+  hold = 0 ; XOff received flag
+  translation = ASCII
+  lf = 1
+  run = 1
+  baud = 10 ; for 1200 baud
+  slow = 4000
+
+  Graphics(0)
+
+  font = (MEMTOP - $3FF) & $FC00
+  MEMTOP = font - 1
+  fmax = MEMTOP - fbuf
+
+; get ASCII font
+  sfont = $E000
+  FOR i = 0 TO $3FF DO ; get around MoveBlock bug
+    font(i) = sfont(i)
+  OD
+  MoveBlock(font+768, ga, 8) ; grave accent
+  MoveBlock(font+1008, tilde, 8)
+  MoveBlock(font+984, ob, 8) ; opening brace
+  MoveBlock(font+1000, cb, 8) ; closing brace
+  CHBAS = font_hi
+
+  Zero(modes, 256)
+  modes($1B) = 2 ; escape 
+  modes($1C) = 1 ; cursor up
+  modes($1D) = 1 ; cursor down
+  modes($1E) = 1 ; cursor left
+  modes($1F) = 1 ; cursor right
+  modes($7D) = 1 ; clear screen
+  modes($7E) = 1 ; back space
+  modes($7F) = 3 ; tab
+  modes($9B) = 1 ; EOL
+  modes($9C) = 1 ; delete line
+  modes($9D) = 1 ; insert line
+  modes($9E) = 1 ; clear tab
+  modes($9F) = 1 ; set tab
+  modes($FD) = 1 ; bell
+  modes($FE) = 1 ; delete char
+  modes($FF) = 4 ; insert char
+  modes($7) = 5  ; ^G, bell
+  modes($8) = 6  ; ^H, backspace
+  modes($C) = 7  ; ^L, clear screen
+
+  PrintF("%EACS Term    version 1.0%E")
+  PrintF("%ECopyright 1983%E")
+  PrintE("Action Computer Services")
+  PrintF("%Ebuffer size = %U%E", fmax)
+  Close(key) : Open(key,"K:",4,0) ; needed with no cart
+RETURN
+
+
+PROC Functions()
+  CHAR ch
+  BYTE ARRAY baudvlist(0)=[8 10 12 14]
+  BYTE CONSOL=$D01F
+
+  IF (CONSOL&$4)=0 THEN ; printer toggle
+    XOff()     
+    IF pflag THEN ; turn off
+      ClosePrinter()
+    ELSE ; turn on
+      MyOpen(printer, Pdev, 8)
+      IF CIO_status<128 THEN
+        PrintF("%Ebuffering for printer%E")
+        pindex = 0
+        pflag = 1
+      ELSE
+        PrintF("%EERROR - %I%E", CIO_status)
+      FI
+    FI
+
+    WHILE (CONSOL&$4)=0 DO OD
+    XOn()
+  FI
+
+  IF (CONSOL&$2)=0 THEN ; SELECT
+    XOff()
+
+    PrintF("%Ecommands:%E")
+    PrintE("  ASCII/ATASCII toggle")
+    PrintE("  Baud rate set")
+    PrintE("  Down load")
+    PrintE("  Margin toggle")
+    PrintE("  Originate/answer toggle")
+    PrintE("  Quit")
+    PrintE("  Up load")
+
+    ch = GetD(key) % $20
+    IF ch='a THEN ; ASCII/ATASCII
+      IF translation=ASCII THEN
+        PrintE("ATASCII MODE")
+        translation = 32
+        CHBAS = $E0
+        lf = 0
+      ELSE
+        PrintE("ASCII MODE")
+        translation = ASCII
+        CHBAS = font_hi
+        lf = 1
+      FI
+;     CloseModem()
+      OpenModem(translation)
+    ELSEIF ch='b THEN ; set baud rate
+      PrintF("1:300%E2:1200%E3:2400%E4:9600%EChoose 1-4:")
+      ch = (GetD(key)-'1)&3
+      baud = baudvlist(ch)
+      CloseModem()
+      OpenModem(translation)
+    ELSEIF ch='d THEN ; down load
+      fmode = 8
+      OpenFile("down load file name - ")
+      IF fmode THEN
+        PrintE("press START to begin down load")
+        PrintE("press START again when done.")
+      FI
+    ELSEIF ch='m THEN ; toggle margin
+      IF LMARGN THEN 
+        LMARGN = 0
+      ELSE
+        LMARGN = 2
+      FI
+    ELSEIF ch='o THEN ; ans/org
+      IF ans THEN
+        PrintE("ORIGINATE MODE")
+        ans = 0
+      ELSE
+        PrintE("ANSWER MODE")
+        ans = $FF
+      FI
+    ELSEIF ch='q THEN ; quit
+      run = 0
+    ELSEIF ch='u THEN ; up load
+      fmode = 4
+      OpenFile("up load file name - ")
+      IF fmode THEN
+      ; set transmit delay
+        Print("slow? ")
+        ch = COL
+        PrintC(slow)
+        COL = ch+1  Put($1E)
+        slow = InputC()
+
+        ReadFile()
+        PrintE("press START to begin up load")
+      FI
+    ELSE
+      hold = 0
+      PrintE("illegal selection")
+    FI
+
+    WHILE (CONSOL&$2)=0 DO OD
+    XOn()
+  FI
+
+  IF (CONSOL&$1)=0 THEN ; START
+    XOff()
+
+    IF fflag THEN ; turn off
+      IF fmode=8 THEN ; down load
+        CloseFile()
+      ELSE
+        PrintF("%Eup load aborted%E")
+      FI
+      fflag = 0
+      fmode = 0
+    ELSE
+      hold = 0
+      findex = 0
+      IF fmode=8 THEN ; down load
+        PrintF("%Edown loading%E")
+        fflag = fmode
+      ELSEIF fmode=4 THEN ; up load
+        PrintF("%Eup loading%E")
+        fflag = fmode
+      ELSE
+        PrintF("%Euse SELECT to select mode%E")
+      FI
+    FI
+
+    WHILE (CONSOL&$1)=0 DO OD
+    XOn()
+  FI
+RETURN
+
+
+PROC GetKey()
+  CHAR ch, CHFLAG=$2FC, INVFLG=$2B6, BRKKEY=$11
+
+  IF fflag=4 AND hold=0 THEN
+    ch = FileChar()
+  ELSE
+    IF CHFLAG=$FF THEN RETURN FI
+    INVFLG = 0 ; kill inverse video
+    ch = GetD(key)
+  FI
+
+  IF ans THEN MyPut(ch) FI
+
+  IF translation=ASCII THEN
+    IF ch=$7D THEN ; clear screen
+      Put($7D) ; don't send just clear
+      RETURN
+    ELSEIF ch=$7E THEN ; backspace
+      ch = $8
+    ELSEIF ch=$7F THEN ; tab
+      ch = $9
+    ELSEIF ch=$0 THEN ; left brace
+      ch = $7B
+    ELSEIF ch=$60 THEN  ; right brace
+      ch = $7D
+    ELSEIF ch=$7B THEN ; tilde
+      ch = $7E
+    ELSEIF ch=$FD THEN
+      ch = $60 ; grave accent
+    ELSEIF ch=$FE OR ch=$9C THEN
+      ch = $7F ; DEL
+    FI
+  FI
+  PutD(modem, ch) ; send char
+RETURN
+
+
+PROC Main()
+  CHAR ch, POKMSK=$10, SHFLOK=$2BE, bank=$D500
+
+  bank = 0
+  fbuf = end
+  Init()
+
+  old_Error = Error
+  Error = MyError
+  io_err = 0
+ 
+  OpenModem(translation)
+
+  PrintF("%Eready%E%E")
+  WHILE run DO
+    MGet() ; get chars from modem
+
+    Functions()
+
+    GetKey() ; send chars from keyboard
+             ;  or file
+
+    pcounter ==+ pincr
+    IF pcounter>PTIMEOUT THEN
+      FlushPrinter()
+    FI
+
+    fcounter ==+ fincr
+    IF fcounter>FTIMEOUT THEN
+      FlushFile()
+    FI
+  OD
+
+  XOff()
+  IF pflag THEN ClosePrinter() FI
+  IF fflag=8 THEN CloseFile() FI
+  Close(modem)
+  Close(file)
+  Error = old_Error
+  CHBAS = $E0 ; reset font
+  SHFLOK = $40 ; upper case
+  POKMSK ==% $80 ; restore break interrupt
+RETURN
+
+term.ac0        497500089   146   33    100600  7628      `
+PROC rts=*()[$60]
+
+MODULE ; TERM.ACT
+
+; (c) 1983 ACS
+
+; Copyright (c) 1983
+; by Action Computer Services (ACS)
+;
+; No portion of this software may be
+; incorporated within or included with
+; another computer program that is to
+; be sold to other parties in any
+; manner without the express written
+; permission of Action Computer
+; Services.  Under no circumstances is
+; this copyright notice or others
+; contained within this software to be
+; removed.
+
+; version 1.0
+; last modified October 27, 1983
+
+CARD ARRAY end(1) ; just to get ending address
+
+INCLUDE "BLKIO.ACT"
+
+DEFINE STRING = "CHAR ARRAY"
+
+DEFINE file="3", printer="4",
+       modem="5", key="7"
+DEFINE EOL="$9B"
+DEFINE ASCII="$0"
+
+DEFINE MARGIN="0"
+DEFINE PMAX="1100"
+DEFINE SLOP="30"
+DEFINE PTIMEOUT="500"
+DEFINE FTIMEOUT="500"
+
+CHAR keyboard, OLDCHR=$5D
+BYTE LMARGN=$52, COL=$55, ROW=$54
+BYTE escflag, RMARGN=$53, CHBAS=$2F4
+BYTE pos, io_err, hold, inverse, lf
+BYTE pflag, fflag, fmode, run, ans
+BYTE baud, translation, pincr, fincr
+CARD pindex, findex, pcounter, slow
+CARD fcounter, fsize, old_Error, fmax
+CARD OLDADR=$5E, MEMTOP=$2E5
+BYTE ARRAY modes(256)
+STRING Rdev(0)="R:", Pdev(0)="P:"
+STRING fname(40)
+CHAR ARRAY pbuf(PMAX), fbuf
+CHAR ARRAY line, font
+BYTE font_hi=font+1
+
+PROC MyError(BYTE err, chan)
+  PrintF("%EERROR - %I, channel %I%E", err, chan RSH 4)
+  io_err = err
+RETURN
+
+PROC MStatus=*()
+  XIO(modem,0,$D,0,0,Rdev)
+RETURN
+
+PROC Delay(BYTE count)
+  BYTE RTC=20
+  count = count + RTC + 1
+  WHILE (count-RTC)>0 DO OD
+RETURN
+
+PROC OpenModem(BYTE trans)
+  CARD POINTER aux
+
+  Close(modem)
+  Open(modem, Rdev, 13)
+  XIO(modem,0,36,baud,0,Rdev)
+  XIO(modem,0,38,trans,0,Rdev)
+; set concurrent IO and no user buf.
+  aux = $34A + (modem LSH 4)
+  aux^ = 0 ; make sure aux = 0
+  XIO(modem,0,40,0,0,Rdev)
+RETURN
+
+
+PROC XOn()
+  IF translation=ASCII THEN
+    PutD(modem, $11) ; XON
+  FI
+RETURN
+
+
+PROC XOff()
+  IF translation=ASCII THEN
+    PutD(modem, $13) ; XOFF
+  FI
+RETURN
+
+
+; routines to get char from modem
+INCLUDE "TERM1.ACT"    
+
+
+; buffering and IO routines
+INCLUDE "TERM2.ACT"    
+
+
+PROC Init()
+  BYTE POKMSK=$10        
+  CARD i
+  BYTE ARRAY sfont
+  BYTE ARRAY ga(0)=[$30$18$C$4$0$0$0$0]
+  BYTE ARRAY tilde(0)=[$0$0$0$72$9C$0$0$0]
+  BYTE ARRAY ob(0)=[$C$18$18$30$18$18$C$0]
+  BYTE ARRAY cb(0)=[$30$18$18$C$18$18$30$0]
+
+; this should really be done with
+; interrupts off, Oh well!!!
+  POKMSK = POKMSK & $7F ; no break key
+
+  LMARGN = MARGIN
+
+  pos = 0
+  pflag = 0
+  pcounter = 0
+  pincr = 0
+  fflag = 0
+  fmode = 0
+  fcounter = 0
+  fincr = 0
+  inverse = 0
+  escflag = 0
+
+  ans = 0 ; originate
+  hold = 0 ; XOff received flag
+  translation = ASCII
+  lf = 1
+  run = 1
+  baud = 10 ; for 1200 baud
+  slow = 4000
+
+  Graphics(0)
+
+  font = (MEMTOP - $3FF) & $FC00
+  MEMTOP = font - 1
+  fmax = MEMTOP - fbuf
+
+; get ASCII font
+  sfont = $E000
+  FOR i = 0 TO $3FF DO ; get around MoveBlock bug
+    font(i) = sfont(i)
+  OD
+  MoveBlock(font+768, ga, 8) ; grave accent
+  MoveBlock(font+1008, tilde, 8)
+  MoveBlock(font+984, ob, 8) ; opening brace
+  MoveBlock(font+1000, cb, 8) ; closing brace
+  CHBAS = font_hi
+
+  Zero(modes, 256)
+  modes($1B) = 2 ; escape 
+  modes($1C) = 1 ; cursor up
+  modes($1D) = 1 ; cursor down
+  modes($1E) = 1 ; cursor left
+  modes($1F) = 1 ; cursor right
+  modes($7D) = 1 ; clear screen
+  modes($7E) = 1 ; back space
+  modes($7F) = 3 ; tab
+  modes($9B) = 1 ; EOL
+  modes($9C) = 1 ; delete line
+  modes($9D) = 1 ; insert line
+  modes($9E) = 1 ; clear tab
+  modes($9F) = 1 ; set tab
+  modes($FD) = 1 ; bell
+  modes($FE) = 1 ; delete char
+  modes($FF) = 4 ; insert char
+  modes($7) = 5  ; ^G, bell
+  modes($8) = 6  ; ^H, backspace
+  modes($C) = 7  ; ^L, clear screen
+
+  PrintF("%EACS Term    version 1.0%E")
+  PrintF("%ECopyright 1983%E")
+  PrintE("Action Computer Services")
+  PrintF("%Ebuffer size = %U%E", fmax)
+  Close(key) : Open(key,"K:")
+RETURN
+
+
+PROC Functions()
+  CHAR ch
+  BYTE CONSOL=$D01F
+
+  IF (CONSOL&$4)=0 THEN ; printer toggle
+    XOff()     
+    IF pflag THEN ; turn off
+      ClosePrinter()
+    ELSE ; turn on
+      MyOpen(printer, Pdev, 8)
+      IF CIO_status<128 THEN
+        PrintF("%Ebuffering for printer%E")
+        pindex = 0
+        pflag = 1
+      ELSE
+        PrintF("%EERROR - %I%E", CIO_status)
+      FI
+    FI
+
+    WHILE (CONSOL&$4)=0 DO OD
+    XOn()
+  FI
+
+  IF (CONSOL&$2)=0 THEN ; SELECT
+    XOff()     
+
+    PrintF("%Ecommands:%E")         
+    PrintE("  ASCII/ATASCII toggle")
+    PrintE("  Down load")
+    PrintE("  Originate/answer toggle")
+    PrintE("  Quit")
+    PrintE("  Up load")
+
+    ch = GetD(key) % $20
+    IF ch='a THEN ; ASCII/ATASCII
+      IF translation=ASCII THEN
+        PrintE("ATASCII MODE")
+        translation = 32
+        CHBAS = $E0
+        lf = 0
+      ELSE
+        PrintE("ASCII MODE")
+        translation = ASCII
+        CHBAS = font_hi
+        lf = 1
+      FI
+      CloseModem()
+      OpenModem(translation)
+    ELSEIF ch='d THEN ; down load
+      fmode = 8
+      OpenFile("down load file name - ")
+      IF fmode THEN
+        PrintE("press START to begin down load")
+        PrintE("press START again when done.")
+      FI
+    ELSEIF ch='o THEN ; ans/org
+      IF ans THEN
+        PrintE("ORIGINATE MODE")
+        ans = 0
+      ELSE
+        PrintE("ANSWER MODE")
+        ans = $FF
+      FI
+    ELSEIF ch='q THEN ; quit
+      run = 0
+    ELSEIF ch='u THEN ; up load
+      fmode = 4
+      OpenFile("up load file name - ")
+      IF fmode THEN
+      ; set transmit delay
+        Print("slow? ")
+        ch = COL
+        PrintC(slow)
+        COL = ch+1  Put($1E)
+        slow = InputC()
+
+        ReadFile()
+        PrintE("press START to begin up load")
+      FI
+    ELSE
+      hold = 0
+      PrintE("illegal selection")
+    FI
+
+    WHILE (CONSOL&$2)=0 DO OD
+    XOn()
+  FI
+
+  IF (CONSOL&$1)=0 THEN ; START
+    XOff()     
+
+    IF fflag THEN ; turn off
+      IF fmode=8 THEN ; down load
+        CloseFile()
+      ELSE
+        PrintF("%Eup load aborted%E")
+      FI
+      fflag = 0
+      fmode = 0
+    ELSE
+      hold = 0
+      findex = 0
+      IF fmode=8 THEN ; down load
+        PrintF("%Edown loading%E")
+        fflag = fmode
+      ELSEIF fmode=4 THEN ; up load
+        PrintF("%Eup loading%E")
+        fflag = fmode
+      ELSE
+        PrintF("%Euse SELECT to select mode%E")
+      FI
+    FI
+
+    WHILE (CONSOL&$1)=0 DO OD
+    XOn()
+  FI
+RETURN
+
+
+PROC GetKey()
+  CHAR ch, CHFLAG=$2FC, BRKKEY=$11
+
+  IF fflag=4 AND hold=0 THEN
+    ch = FileChar()
+  ELSE
+    IF CHFLAG=$FF THEN RETURN FI
+    ch = GetD(key)
+  FI
+
+  IF ans THEN MyPut(ch) FI
+
+  IF translation=ASCII THEN
+    IF ch=$7D THEN ; clear screen
+      Put($7D) ; don't send just clear
+      RETURN
+    ELSEIF ch=$7E THEN ; backspace
+      ch = $8
+    ELSEIF ch=$7F THEN ; tab
+      ch = $9
+    ELSEIF ch=$0 THEN ; left brace
+      ch = $7B
+    ELSEIF ch=$60 THEN  ; right brace
+      ch = $7D
+    ELSEIF ch=$7B THEN ; tilde
+      ch = $7E
+    ELSEIF ch=$FD THEN
+      ch = $60 ; grave accent
+    ELSEIF ch=$FE OR ch=$9C THEN
+      ch = $7F ; DEL
+    FI
+  FI
+  PutD(modem, ch) ; send char
+RETURN
+
+
+PROC Main()
+  CHAR ch, bank=$D500
+
+  bank = 0
+  fbuf = end
+  Init()
+
+  old_Error = Error
+  Error = MyError
+  io_err = 0
+ 
+  OpenModem(translation)
+
+  PrintF("%Eready%E%E")
+  WHILE run DO
+    MGet() ; get chars from modem
+
+    Functions()
+
+    GetKey() ; send chars from keyboard
+             ;  or file
+
+    pcounter ==+ pincr
+    IF pcounter>PTIMEOUT THEN
+      FlushPrinter()
+    FI
+
+    fcounter ==+ fincr
+    IF fcounter>FTIMEOUT THEN
+      FlushFile()
+    FI
+  OD
+
+  XOff()
+  IF pflag THEN ClosePrinter() FI
+  IF fflag=8 THEN CloseFile() FI
+  Close(modem)
+  Close(file)
+  Error = old_Error
+  CHBAS = $E0 ; reset font
+RETURN
+term1.act       497500629   146   33    100600  5470      `
+
+MODULE ; TERM1.ACT
+
+; (c) 1983 ACS
+
+; Copyright (c) 1983
+; by Action Computer Services (ACS)
+;
+; No portion of this software may be
+; incorporated within or included with
+; another computer program that is to
+; be sold to other parties in any
+; manner without the express written
+; permission of Action Computer
+; Services.  Under no circumstances is
+; this copyright notice or others
+; contained within this software to be
+; removed.
+
+; ABL last modified 10/6/85.
+; ACS last modified October 24, 1983
+
+PROC LineFeed()
+  BYTE oldcol
+
+  IF ROW#23 THEN
+    Put($1D)
+  ELSE
+    oldcol = COL
+    Put(EOL)
+    COL = oldcol
+    Put($1E) Put($1F) ; show cursor
+  FI
+RETURN
+
+; OOPS! Can't use sound with modem open!
+PROC Bell=*()
+  BYTE CDTMV3=$21C
+  BYTE AUDF1=$D200, AUDC1=$D201, AUDCTL=$D208
+  AUDF1=48
+  CDTMV3=$AC
+  DO AUDC1=CDTMV3 UNTIL CDTMV3=$A0 OD
+  AUDC1=0 AUDF1=0
+RETURN
+
+
+PROC MyPut(BYTE ch)
+  BYTE mode, i, COLOR4=$2C8
+
+  mode = modes(ch)
+  IF mode=0 OR escflag#0 THEN
+    IF ch=EOL THEN
+      COL = LMARGN
+      Put($1F) Put($1E) ; show cursor
+    ELSEIF ch#$7D OR translation#ASCII THEN
+      IF COL>=RMARGN THEN
+        IF ch<$20 THEN
+          OLDCHR = ch + $40
+        ELSEIF ch<$60 THEN
+          OLDCHR = ch - $20
+        ELSE
+          OLDCHR = ch
+        FI
+        ch = EOL
+      FI
+      Put($1B) ; escape
+      Put(ch)
+    ELSE ; closing brace
+      OLDCHR = $7D
+      IF COL>=RMARGN THEN
+        PutE()
+      ELSE
+        Put($1F) ; left
+      FI
+    FI
+    escflag = 0
+    RETURN
+  FI
+
+  IF mode=1 THEN
+    Put(ch)
+  ELSEIF ch=$FF THEN ; insert char
+    IF COL<RMARGN THEN
+      line = OLDADR
+      i = RMARGN - COL
+      WHILE i>1 DO
+        line(i) = line(i-1)
+        i = i - 1
+      OD
+      line(1) = OLDCHR
+      line(0) = $80
+    FI
+    OLDCHR = 0
+    Put($1E)  Put($1F)
+  ELSEIF ch=$1B THEN ; escape
+    escflag = 1
+  ELSEIF ch=$7F THEN ; tab
+    COL = (COL + 8) & $F8
+    IF COL<LMARGN THEN COL = LMARGN FI
+    IF COL>RMARGN THEN COL = RMARGN FI
+    Put($1F) Put($1E)
+  ELSEIF translation=ASCII THEN
+    IF ch=$7 THEN
+      COLOR4=36; bell
+      Delay(6) 
+      COLOR4=0
+    ELSEIF ch=$8 THEN
+      Put($7E) ; backspace
+    ELSEIF ch=$C THEN
+      Put($7D) ; clear screen
+    FI
+  ELSE
+    Put(ch)
+  FI
+RETURN
+
+
+PROC PutCh(CHAR ch)
+  STRING lostmsg(0)="%Echaracters lost%E"
+
+  MyPut(ch)
+
+  IF pflag#0 AND ch>=$20 AND (ch<$80 OR ch=EOL) THEN
+    pbuf(pindex) = ch
+    pindex = pindex + 1
+    IF pindex>PMAX-SLOP THEN
+      IF pindex>=PMAX THEN
+        pindex = PMAX ; drop characters
+        Close(modem)
+        PrintF(lostmsg)
+        pcounter = PTIMEOUT
+      ELSEIF pcounter=0 THEN
+        XOff()
+        pcounter = 1
+        pincr = 1
+      FI
+    FI
+  FI
+
+  IF fflag=8 THEN
+    fbuf(findex) = ch
+    findex = findex + 1
+    IF findex>fmax-SLOP THEN
+      IF findex>=fmax THEN
+        findex = fmax ; drop characters
+        Close(modem)
+        PrintF(lostmsg)
+        fcounter = FTIMEOUT
+      ELSEIF fcounter=0 THEN
+        XOff()
+        fcounter = 1
+        fincr = 1
+      FI
+    FI
+  FI
+RETURN
+
+
+PROC PutM(CHAR ch)
+  PutD(modem, ch)
+  IF ch=EOL AND lf#0 THEN
+    PutD(modem, $A) ; output LF
+  FI
+RETURN
+
+
+PROC PutCtrl(CHAR ch, cha)
+  MyPut(cha)
+  IF ans THEN PutM(ch) FI
+RETURN
+
+
+PROC PutChar(CHAR ch)
+  BYTE i
+
+  IF pos THEN ; position X and Y bytes
+    ch = ch - 32
+    IF pos=1 THEN ; row
+      ROW = ch
+      IF ROW>23 THEN ROW = 23 FI
+      pos = 2
+    ELSE ; column
+      COL = LMARGN + ch
+      IF COL>39 THEN COL = 39 FI
+      Put($1E) Put($1F) ; show cursor
+      pos = 0
+    FI
+    RETURN
+  FI
+
+  IF ch<$1B THEN
+    IF ch=$2 THEN ; ^B, insert line
+      Put($9D)
+    ELSEIF ch=$5 THEN ; ^E, delete line
+      Put($9C)
+    ELSEIF ch=$6 THEN ; ^F, insert char
+      MyPut($FF)
+    ELSEIF ch=$7 THEN ; bell
+      PutCtrl($7, $7)
+    ELSEIF ch=$8 THEN ; backspace
+      PutCtrl($8, $8)
+      IF pflag#0 AND pindex#0 AND pbuf(pindex-1)#EOL THEN
+        ; delete prev char from buffer
+        pindex = pindex - 1
+      FI
+    ELSEIF ch=$9 THEN ; tab
+      PutCtrl($9, $7F)
+    ELSEIF ch=$A THEN ; line feed
+      LineFeed()
+      IF ans THEN PutD(modem, $A) FI
+    ELSEIF ch=$B THEN ; ^K, home top
+      Position(LMARGN+1, 0) Put($1E)
+    ELSEIF ch=$C THEN ; form feed
+      PutCtrl($C, $C) ; clear screen
+    ELSEIF ch=$11 THEN ; ^Q, XON
+      hold = 0
+      PrintF("%EXON")
+    ELSEIF ch=$12 THEN ; ^R, position
+      pos = 1
+    ELSEIF ch=$13 THEN ; ^S, XOFF
+      hold = 1
+      PrintF("%EXOFF")
+    ELSEIF ch=$14 THEN ; ^T, clear to end of line
+      line = OLDADR
+      line(0) = $80
+      FOR i = 1 TO RMARGN-COL DO
+        line(i) = 0 ; fill in spaces
+      OD
+      OLDCHR = 0
+    ELSEIF ch=$16 THEN ; ^V, inverse on
+      inverse = $80
+    ELSEIF ch=$17 THEN ; ^W, inverse off
+      inverse = $0
+    ELSEIF ch=$18 THEN ; ^X, delete char
+      Put($FE)
+    ELSEIF ch=$19 THEN ; ^Y, home bottom
+      Position(LMARGN+1, 23) Put($1E)
+    ELSEIF ch=$1B THEN ; ESC
+      IF escflag THEN
+        MyPut($1B)
+      ELSE
+        escflag = 1
+      FI
+    ELSEIF ans THEN
+      PutD(modem, '^)
+      PutD(modem, ch+('A-1))
+    FI
+  ELSEIF ch<$20 THEN ; cursor keys
+    Put(ch)
+  ELSE
+    escflag = 1
+    PutCh(ch % inverse)
+    IF ans THEN PutM(ch) FI
+  FI
+RETURN
+
+
+BYTE FUNC MGet()
+  CHAR ch
+  BYTE res
+
+  res = 0
+  WHILE MStatus() DO
+    res = 1
+
+    ch = GetD(modem)
+
+    ; handle input character
+    IF translation=ASCII THEN
+      PutChar(ch)
+    ELSE
+      PutCh(ch)
+      IF ans THEN PutM(ch) FI
+    FI
+  OD
+RETURN(res)
+term1.ac0       497500534   146   33    100600  5230      `
+
+MODULE ; TERM1.ACT
+
+; (c) 1983 ACS
+
+; Copyright (c) 1983
+; by Action Computer Services (ACS)
+;
+; No portion of this software may be
+; incorporated within or included with
+; another computer program that is to
+; be sold to other parties in any
+; manner without the express written
+; permission of Action Computer
+; Services.  Under no circumstances is
+; this copyright notice or others
+; contained within this software to be
+; removed.
+
+; last modified October 24, 1983
+
+PROC LineFeed()
+  BYTE oldcol
+
+  IF ROW#23 THEN
+    Put($1D)
+  ELSE
+    oldcol = COL
+    Put(EOL)
+    COL = oldcol
+    Put($1E) Put($1F) ; show cursor
+  FI
+RETURN
+
+
+PROC MyPut(BYTE ch)
+  BYTE mode, i
+
+  mode = modes(ch)
+  IF mode=0 OR escflag#0 THEN
+    IF ch=EOL THEN
+      COL = LMARGN
+      Put($1F) Put($1E) ; show cursor
+    ELSEIF ch#$7D OR translation#ASCII THEN
+      IF COL>=RMARGN THEN
+        IF ch<$20 THEN
+          OLDCHR = ch + $40
+        ELSEIF ch<$60 THEN
+          OLDCHR = ch - $20
+        ELSE
+          OLDCHR = ch
+        FI
+        ch = EOL
+      FI
+      Put($1B) ; escape
+      Put(ch)
+    ELSE ; closing brace
+      OLDCHR = $7D
+      IF COL>=RMARGN THEN
+        PutE()
+      ELSE
+        Put($1F) ; left
+      FI
+    FI
+    escflag = 0
+    RETURN
+  FI
+
+  IF mode=1 THEN
+    Put(ch)
+  ELSEIF ch=$FF THEN ; insert char
+    IF COL<RMARGN THEN
+      line = OLDADR
+      i = RMARGN - COL
+      WHILE i>1 DO
+        line(i) = line(i-1)
+        i = i - 1
+      OD
+      line(1) = OLDCHR
+      line(0) = $80
+    FI
+    OLDCHR = 0
+    Put($1E)  Put($1F)
+  ELSEIF ch=$1B THEN ; escape
+    escflag = 1
+  ELSEIF ch=$7F THEN ; tab
+    COL = (COL + 8) & $F8
+    IF COL<LMARGN THEN COL = LMARGN FI
+    IF COL>RMARGN THEN COL = RMARGN FI
+    Put($1F) Put($1E)
+  ELSEIF translation=ASCII THEN
+    IF ch=$7 THEN
+      Put($FD) ; bell
+    ELSEIF ch=$8 THEN
+      Put($7E) ; backspace
+    ELSEIF ch=$C THEN
+      Put($7D) ; clear screen
+    FI
+  ELSE
+    Put(ch)
+  FI
+RETURN
+
+
+PROC PutCh(CHAR ch)
+  STRING lostmsg(0)="%Echaracters lost%E"
+
+  MyPut(ch)
+
+  IF pflag#0 AND ch>=$20 AND (ch<$80 OR ch=EOL) THEN
+    pbuf(pindex) = ch
+    pindex = pindex + 1
+    IF pindex>PMAX-SLOP THEN
+      IF pindex>=PMAX THEN
+        pindex = PMAX ; drop characters
+        Close(modem)
+        PrintF(lostmsg)
+        pcounter = PTIMEOUT
+      ELSEIF pcounter=0 THEN
+        XOff()
+        pcounter = 1
+        pincr = 1
+      FI
+    FI
+  FI
+
+  IF fflag=8 THEN
+    fbuf(findex) = ch
+    findex = findex + 1
+    IF findex>fmax-SLOP THEN
+      IF findex>=fmax THEN
+        findex = fmax ; drop characters
+        Close(modem)
+        PrintF(lostmsg)
+        fcounter = FTIMEOUT
+      ELSEIF fcounter=0 THEN
+        XOff()
+        fcounter = 1
+        fincr = 1
+      FI
+    FI
+  FI
+RETURN
+
+
+PROC PutM(CHAR ch)
+  PutD(modem, ch)
+  IF ch=EOL AND lf#0 THEN
+    PutD(modem, $A) ; output LF
+  FI
+RETURN
+
+
+PROC PutCtrl(CHAR ch, cha)
+  MyPut(cha)
+  IF ans THEN PutM(ch) FI
+RETURN
+
+
+PROC PutChar(CHAR ch)
+  BYTE i
+
+  IF pos THEN ; position X and Y bytes
+    ch = ch - 32
+    IF pos=1 THEN ; row
+      ROW = ch
+      IF ROW>23 THEN ROW = 23 FI
+      pos = 2
+    ELSE ; column
+      COL = LMARGN + ch
+      IF COL>39 THEN COL = 39 FI
+      Put($1E) Put($1F) ; show cursor
+      pos = 0
+    FI
+    RETURN
+  FI
+
+  IF ch<$1B THEN
+    IF ch=$2 THEN ; ^B, insert line
+      Put($9D)
+    ELSEIF ch=$5 THEN ; ^E, delete line
+      Put($9C)
+    ELSEIF ch=$6 THEN ; ^F, insert char
+      MyPut($FF)
+    ELSEIF ch=$7 THEN ; bell
+      PutCtrl($7, $7)
+    ELSEIF ch=$8 THEN ; backspace
+      PutCtrl($8, $8)
+      IF pflag#0 AND pindex#0 AND pbuf(pindex-1)#EOL THEN
+        ; delete prev char from buffer
+        pindex = pindex - 1
+      FI
+    ELSEIF ch=$9 THEN ; tab
+      PutCtrl($9, $7F)
+    ELSEIF ch=$A THEN ; line feed
+      LineFeed()
+      IF ans THEN PutD(modem, $A) FI
+    ELSEIF ch=$B THEN ; ^K, home top
+      Position(LMARGN+1, 0) Put($1E)
+    ELSEIF ch=$C THEN ; form feed
+      PutCtrl($C, $C) ; clear screen
+    ELSEIF ch=$11 THEN ; ^Q, XON
+      hold = 0
+      PrintF("%EXON")
+    ELSEIF ch=$12 THEN ; ^R, position
+      pos = 1
+    ELSEIF ch=$13 THEN ; ^S, XOFF
+      hold = 1
+      PrintF("%EXOFF")
+    ELSEIF ch=$14 THEN ; ^T, clear to end of line
+      line = OLDADR
+      line(0) = $80
+      FOR i = 1 TO RMARGN-COL DO
+        line(i) = 0 ; fill in spaces
+      OD
+      OLDCHR = 0
+    ELSEIF ch=$16 THEN ; ^V, inverse on
+      inverse = $80
+    ELSEIF ch=$17 THEN ; ^W, inverse off
+      inverse = $0
+    ELSEIF ch=$18 THEN ; ^X, delete char
+      Put($FE)
+    ELSEIF ch=$19 THEN ; ^Y, home bottom
+      Position(LMARGN+1, 23) Put($1E)
+    ELSEIF ch=$1B THEN ; ESC
+      IF escflag THEN
+        MyPut($1B)
+      ELSE
+        escflag = 1
+      FI
+    ELSEIF ans THEN
+      PutD(modem, '^)
+      PutD(modem, ch+('A-1))
+    FI
+  ELSEIF ch<$20 THEN ; cursor keys
+    Put(ch)
+  ELSE
+    escflag = 1
+    PutCh(ch % inverse)
+    IF ans THEN PutM(ch) FI
+  FI
+RETURN
+
+
+BYTE FUNC MGet()
+  CHAR ch
+  BYTE res, num_chars=747
+
+  res = 0
+  DO
+    MStatus()
+    IF num_chars=0 THEN EXIT FI
+    res = 1
+
+    ch = GetD(modem)
+
+    ; handle input character
+    IF translation=ASCII THEN
+      PutChar(ch)
+    ELSE
+      PutCh(ch)
+      IF ans THEN PutM(ch) FI
+    FI
+  OD
+RETURN(res)
+term2.act       496977686   146   33    100600  2765      `
+MODULE ; TERM2.ACT
+
+; (c) 1983 ACS
+
+; Copyright (c) 1983
+; by Action Computer Services (ACS)
+;
+; No portion of this software may be
+; incorporated within or included with
+; another computer program that is to
+; be sold to other parties in any
+; manner without the express written
+; permission of Action Computer
+; Services.  Under no circumstances is
+; this copyright notice or others
+; contained within this software to be
+; removed.
+
+; last modified October 24, 1983
+
+
+PROC CloseModem()
+  XOff()
+  
+  Delay(5)
+  WHILE MGet() DO ; flush buffer
+    Delay(3)
+  OD
+  Close(modem)
+RETURN
+
+
+PROC Flush(BYTE chan, CHAR ARRAY addr, CARD size)
+  IF size THEN
+    WriteBlock(chan, addr, size)
+    OpenModem(translation)
+    XOn()
+  FI
+RETURN
+
+
+PROC FlushPrinter()
+  CloseModem()
+  Flush(printer, pbuf, pindex)
+  pindex = 0
+  pcounter = 0
+  pincr = 0
+RETURN
+
+
+PROC FlushFile()
+  CloseModem()
+  Flush(file, fbuf, findex)
+  findex = 0
+  fcounter = 0
+  fincr = 0
+RETURN
+
+
+PROC MyClose(BYTE chan)
+  CloseModem()
+  Close(chan)
+  OpenModem(translation)
+RETURN
+
+
+PROC ClosePrinter()
+  pbuf(pindex) = EOL
+  pindex = pindex + 1
+  FlushPrinter()
+  MyClose(printer)
+  PrintF("%Ebuffering off%E")
+  pflag = 0
+RETURN
+
+
+PROC CloseFile()
+  FlushFile()
+  MyClose(file)
+  PrintF("%Edown load stopped%E")
+RETURN
+
+
+PROC MyOpen(BYTE chan, STRING dev, BYTE mode, aux2)
+  CloseModem()
+  Close(chan)
+  CIO(chan,dev+1,dev(0),$3,mode,aux2)
+  EOF(chan) = 0
+  OpenModem(translation)
+RETURN
+
+
+PROC OpenFile(STRING msg)
+  CHAR ch
+  BYTE i
+
+  DO
+    CIO_status = 0
+
+    Print(msg)
+    Zero(fname, 3)
+    InputMD(0, fname, 37)
+    IF fname(0)#0 THEN
+      IF fname(2)#': AND fname(3)#': THEN
+       ; fill in device name
+        fname(0)==+ 1 ; copy EOL as well
+        SAssign(fname,fname,3,$FF)
+        fname(1) = 'D
+        fname(2) = ':
+      FI
+
+      ; make upper case
+      FOR i = 1 TO fname(0) DO
+        IF fname(i)>='a AND fname(i)<='z THEN
+          fname(i) ==& $DF
+        FI
+      OD
+
+      MyOpen(file, fname, fmode, 0)
+      IF CIO_status>127 THEN
+        PrintF("%EERROR - %I, try again? ", CIO_status)
+        ch = GetD(key)
+        Put(ch) PutE()
+        IF (ch % $20)#'y THEN
+          fmode = 0
+          RETURN
+        FI
+      FI
+    ELSE
+      fmode = 0
+    FI
+  UNTIL CIO_status<128 OD
+RETURN
+
+
+PROC ReadFile()
+  CloseModem()
+  fsize = ReadBlock(file, fbuf, fmax)
+  OpenModem(translation)
+  XOn()
+RETURN
+
+
+CHAR FUNC FileChar()
+  CHAR ch
+  CARD i
+
+  ch = fbuf(findex)
+  findex = findex + 1
+
+  FOR i = 1 TO slow DO OD
+
+  IF findex>=fsize THEN ; end of buffer
+    IF EOF(file) THEN ; end of file
+      MyClose(file)
+      PrintF("%Eup load done%E")
+      fflag = 0
+      fmode = 0
+    ELSE ; get another buffer worth
+      ReadFile()
+      findex = 0
+    FI
+  FI
+RETURN(ch)
+
+MODULE
+
+blkio.act       507796921   146   33    100600  1953      `
+MODULE ; BLKIO.ACT
+
+; Copyright (c) 1983, 1984, 1985
+; by Action Computer Services (ACS)
+;
+; This software may be incorporated in
+; other software packages providing
+; that this copyright notice is also
+; incorporated as well.
+
+; version 1.1
+; last modified May 8, 1985
+
+BYTE CIO_status
+
+
+CHAR FUNC CIO=*(BYTE dev, CARD addr,
+          size, BYTE cmd, aux1, aux2)
+; see hardware manual for description
+; of CIOV.
+;   IOCB# = dev
+;   ICCOM = cmd
+;   ICBA  = addr
+;   ICBL  = size
+;   ICAX1 = aux1
+;   ICAX2 = aux2
+; ICAX1 and ICAX2 are not set if aux1=0
+; The first byte of addr is passed to
+; CIO in the A register.  The status
+; on return from CIO is stored in
+; CIO_status.  If status=$88 then
+; EOF(dev) is set to a non-zero value.
+; No other error checking is performed
+; and the result of the CIOV call is
+; returned as the result of this FUNC.
+[$29$F$85$A0$86$A1$A$A$A$A$AA$A5$A5
+$9D$342$A5$A3$9D$348$A5$A4$9D$349
+$A5$A6$F0$8$9D$34A$A5$A7$9D$34B$98
+$9D$345$A5$A1$9D$344$20$E456
+$8C CIO_status$C0$88$D0$6$98$A4$A0
+$99 EOF$A085$60]
+
+
+CARD FUNC ReadBlock=*(BYTE dev,
+                    CARD addr, size)
+; Reads size bytes from dev into addr.
+; Returns number of bytes read (may
+; be < size if EOF).  Set EOF flag if
+; EOF is encountered.  Status is  
+; saved in CIO_status.
+[$48$A9$7$85$A5$A9$0$85$A6$A5$A3$5$A4
+$D0$6$85$A0$85$A1$68$60$68$20 CIO
+$BD$348$85$A0$BD$349$85$A1$60]
+
+
+PROC WriteBlock=*(BYTE dev,
+                    CARD addr, size)
+; Writes size bytes from addr to dev.
+; Status is saved in CIO_status.
+[$48$A9$B$85$A5$A9$0$85$A6$A5$A3$5$A4
+$D0$2$68$60$68$4C CIO]
+
+
+PROC PutCD=*(BYTE chan, CARD n)
+  BYTE c=$AA, lo=$AB, hi=$AC
+
+; save args
+  [
+    $85 c
+    $86 lo
+    $84 hi
+  ]
+
+; PutD(c, lo)
+; PutD(c, hi)
+  CIO(c,lo,0,11,0)
+  CIO(c,hi,0,11,0)
+RETURN
+
+
+CARD FUNC GetCD(BYTE chan)
+  CARD out
+  BYTE lo=out, hi=out+1
+
+; lo = GetD(chan)
+; hi = GetD(chan)
+  lo = CIO(chan,0,0,7,0)
+  hi = CIO(chan,0,0,7,0)
+RETURN(out)
+
+MODULE ; for user

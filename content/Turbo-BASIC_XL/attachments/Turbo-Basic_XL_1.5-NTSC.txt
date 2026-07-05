@@ -1,0 +1,77 @@
+The NTSC version of Turbo-Basic XL 1.5 in not functionally different from the PAL version.
+The contains the following adaptations
+- Change the "READY" prompt to "Turbo"
+- Change background color during loading to normal editor blue instead of red-brown
+- Change the TIME and TIME$ statements to work with 60Hz instead of 50Hz
+
+File differences
+================
+
+Name of change
+PAL Offset in file: Bytes
+NTSC Offset in file: Bytes
+
+Change background color during loading to normal editor blue instead of red-brown
+AF: A9 10 8D C6 02
+AF: A9 94 8D C6 02
+
+Change "READY" message to "Turbo"
+1C38: 59 44 41 45 52  YDAER
+1C38: 6F 62 72 75 54  obroT
+
+Change computation factors for TIME$ (50/60 Hz)
+4235: 04 32 00
+4235: 05 18 40
+Match found at: FB6F (ba r FB6F L3)
+
+Change computation routine for TIME (50/60 Hz)
+426B: 20 F2 FB 20 EC FB	;FR1=FR1*50
+426B: 20 13 FC EA EA EA ;FR1=FR1*60
+s 2000 LE000 20 13 FC EA EA EA
+Match found at: FBA5 (b FBA5)
+
+MUL10
+    FBEC: 06 E0     LFBEC   ASL FR1  FR1=(FR1*2)+(FR1*2*4) = FR1*10
+    FBEE: 26 E1             ROL $E1
+    FBF0: 26 E2             ROL $E2
+MUL5
+    FBF2: A4 E2             LDY $E2 ; FR1=FR1+FR1*4 = FR1*5
+    FBF4: A5 E0             LDA FR1
+    FBF6: A6 E1     LFBF6   LDX $E1
+    FBF8: 06 E0             ASL FR1
+    FBFA: 26 E1             ROL $E1
+    FBFC: 26 E2             ROL $E2
+    FBFE: 06 E0             ASL FR1
+    FC00: 26 E1             ROL $E1
+    FC02: 26 E2             ROL $E2
+    FC04: 65 E0             ADC FR1
+    FC06: 85 E0             STA FR1
+    FC08: 8A                TXA
+    FC09: 65 E1             ADC $E1
+    FC0B: 85 E1             STA $E1
+    FC0D: 98                TYA
+    FC0E: 65 E2             ADC $E2
+    FC10: 85 E2             STA $E2
+    FC12: 60                RTS
+
+MUL60
+    FC13: 20 EC FB  LFC13   JSR $FBEC	;JSR MUL10
+MUL6
+    FC16: A4 E2             LDY $E2	;FR1=(FR1+FR1*2)*2=FR1*6
+    FC18: A5 E0             LDA FR1
+    FC1A: A6 E1             LDX $E1
+    FC1C: 06 E0             ASL FR1
+    FC1E: 26 E1             ROL $E1
+    FC20: 26 E2             ROL $E2
+    FC22: 65 E0             ADC FR1
+    FC24: 85 E0             STA FR1
+    FC26: 8A                TXA
+    FC27: 65 E1             ADC $E1
+    FC29: 85 E1             STA $E1
+    FC2B: 98                TYA
+    FC2C: 65 E2             ADC $E2
+    FC2E: 06 E0             ASL FR1
+    FC30: 26 E1             ROL $E1
+    FC32: 2A                ROL
+    FC33: 85 E2             STA $E2
+    FC35: 60                RTS

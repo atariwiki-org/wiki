@@ -1,0 +1,445 @@
+
+
+ATARI
+DISK OPERATING SYSTEM
+2.5 
+
+Every effort has been made to ensure the accuracy of the product 
+documentation in this manual. However, because we are constantly improving and 
+updating our computer software and hardware, Atari Corp. is unable to guarantee 
+the accuracy of printed material after the date of publication and disclaims 
+liability for changes, errors, and omissions.
+
+ATARI, ATARI BASIC, AtariWriter, 1050, 810, 130XE, 65XE, and 800XL are 
+trademarks or registered trademarks of Atari Corp.
+
+No reproduction of this document or any portion of its contents is allowed 
+without the specific written permission of Atari Corp., Sunnyvale, CA 94086.
+
+Copyright 1985 Atari Corp. Sunnyvale, CA 94086   
+
+
+          
+                            INTRODUCING ATARI DOS 2.5
+          
+          
+          In an ongoing effort to provide the highest quality of
+          products for use with your ATARI Computer, the new ATARI
+          Corp. is supplying you with the enclosed DOS 2.5 Master
+          Diskette.  Its advantages over ATARI DOS 3 include ease and
+          convenience of use (most utilities are contained within a
+          single file and need not be loaded from disk) and
+          compatibility with DOS 2.0S.  DOS 2.5 also allows you to use
+          the full capacity of your ATARI 1050 Disk Drive and to access
+          the full RAM potential of the ATARI 130 XE.
+          
+          
+          This short manual provides you with instructions for getting
+          started with DOS 2.5.  For complete information on DOS 2.5,
+          including detailed discussions on the menu items,
+          compatibility with DOS 3 and 2.0S, the RamDisk, and the 2.5
+          Utilities, you may consider obtaining the new ATARI DOS 2.5
+          Manual. Available from ATARI Customer Relations, P.O. Box
+          61657, Sunnyvale, CA  94088.  Cost: $10 plus $2.50 for
+          shipping and handling.  California residents add 6.5% tax.
+          Please write ATARI DOS 2.5 Manual on the outside of your
+          envelope when you order the book.
+          
+          
+          Getting Started With DOS 2.5
+          
+          DOS 2.5 allows you to format diskettes and store information
+          in either single or enhanced density.  With enhanced density
+          you can record about 50 percent more data on each diskette
+          than you can with DOS 2.0S.  Enhanced-density storage is only
+          possible if you have an ATARI 1050 Disk Drive; the 810 Disk
+          Drive is not capable of formatting or managing data stored in
+          enhanced density.  You need a 1050 Disk Drive to begin
+          working with DOS 2.5 because your DOS 2.5 Master Diskette is
+          recorded in enhanced density.  If you often use an 810 Disk
+          Drive to access your files, you may want to format all your
+          diskettes in single density.
+          
+          
+          DOS 2.5 works with any cartridge-based program that runs on
+          your Atari Computer and uses DOS--even programs that predate
+          DOS 2.5, including the AtariWriter word processor and ATARI
+          BASIC.  With such programs you can always use DOS 2.5 instead
+          of DOS 2.0S to prepare data diskettes and manage files.
+          
+          
+          Many diskette-based programs designed for use with the
+          earlier DOS 2.0S can also be used with DOS 2.5.  However, you
+          may have to continue to use DOS 2.0S with certain protected
+          diskette programs (see your program user's manual if you are
+          unsure whether a program is protected.)
+          
+          
+                                  THE DOS MENU
+          
+          
+          Load DOS into your ATARI Computer using the same procedures
+          you use for either DOS 3 or DOS 2.0S. (If you have an ATARI
+          130XE, 65XE, or 800XL with built-in BASIC, type DOS and press
+          [RETURN] to go from BASIC to DOS).  The DOS Menu on your TV
+          or monitor screen presents a list of the DOS 2.5 options.
+          The prompt below the menu invites you to make a selection.
+          You choose the function you want to use by pressing the
+          letter corresponding to your selection and pressing [RETURN].
+          DOS then asks you for the information it needs to proceed.
+          
+          
+          Summary of DOS 2.5 Menu Options
+          
+          If you have used DOS 2.0S, you will be familiar with most
+          options.  Note the change in Option J, and the new Option P.
+          If you have only used DOS 3, read this section for an
+          introduction to DOS functions.
+          
+          A. DISK DIRECTORY Allows you to call up a complete or
+          selective list of the files on a diskette, showing the
+          filenames, extenders (if any), the number of sectors
+          allocated to each file, and the number of free sectors still
+          available on the diskette.
+          
+          B. RUN CARTRIDGE (Can ONLY be used with built-in BASIC or
+          with a cartridge installed in the computer).  This option
+          allows you to return control of your system to built-in BASIC
+          or to the cartridge inserted in the cartridge slot.
+          
+          C. COPY FILE For use when you have two or more disk drives
+          and you want to copy files from one diskette to another.
+          Also use this option to copy a file on the same diskette,
+          assigning a different name to the copy.
+          
+          D. DELETE FILES Lets you erase a file from a diskette,
+          increasing the available space on a diskette.
+          
+          E. RENAME FILE Use when you want to change the name of a
+          file.
+          
+          F. LOCK FILE Can be used to prevent you from changing,
+          renaming, or accidentally erasing a file.  You will still be
+          able to read the file, but will not be able to write to it.
+          An asterisk is placed in front of the filename in the
+          directory to indicate that the file is locked.
+          
+          G. UNLOCK FILE This removes the asterisk in front of the
+          filename and allows you to make changes to the file, rename
+          it, or delete it.
+          
+          H. WRITE DOS FILES Lets you add the DOS files (DOS.SYS and
+          DUP.SYS) on your Master Diskette or System Diskette to a
+          diskette in any disk drive.
+          
+          I. FORMAT DISK Used to format a blank diskette, which is
+          necessary before you can record any information on it.  Be
+          sure you do not have any files you want to keep on a diskette
+          before formatting it. This option will format a diskette in
+          enhanced density provided you are using a 1050 Disk Drive;
+          otherwise, it will format in single density.
+          
+          J. DUPLICATE DISK Use when you want to create an exact
+          duplicate of a diskette.  This option will automatically
+          format the destination disk.
+          
+          K. BINARY SAVE Saves the contents of specified memory
+          locations on a diskette. 
+          
+          L. BINARY LOAD Lets you retrieve an object file from
+          diskette.
+          
+          M. RUN AT ADDRESS Use to enter the hexadecimal starting
+          address of an object program after it has been loaded into
+          RAM with BINARY LOAD.
+          
+          N. CREATE MEM.SAV Reserves space on a diskette for the
+          program in RAM to be stored while the DUP.SYS file is being
+          used.  For some applications like programming, it is a good
+          idea to create a MEM.SAV file on each new diskette you intend
+          to use as a System Diskette.  As you become more familiar
+          with DOS, you may find there are cases where a MEM.SAV file
+          serves no useful function.  The inconvenience of waiting for
+          MEM.SAV to load into memory may warrant deleting it from the
+          disk.
+          
+          O. DUPLICATE FILE Copies a file from one diskette to another,
+          even if you have only a single disk drive.
+          
+          F. FORMAT SINGLE Formats a diskette in single density using a
+          1050 Disk Drive.
+          
+                       DOS 2.5 AND THE ATARI 130XE RAMDISK
+          
+          
+          The ATARI 130XE Computer is equipped with 131,072
+          bytes--128K-- of Random Access Memory (RAM), twice the
+          maximum 64K available with earlier model ATARI Computers.
+          The additional 64K RAM can be useful for many purposes: fast
+          exchange of screen images for animation, additional storage
+          for large data bases, and so forth.
+          
+          
+          You can also use the extra RAM of the 130XE as a very fast
+          "virtual" disk drive.  Set up as a "RamDisk"--recognized by
+          DOS 2.5 as Drive 8 in your system--it can accommodate up to
+          the equivalent of 499 sectors on a diskette.  That is about
+          half what you can store on a diskette formated in enhanced
+          density.
+          
+          
+          The "storage" capacity offered by the RamDisk is volatile
+          memory.  Information stored in it will be lost when you turn
+          off your computer system.  So before turning off your system,
+          be sure that any data currently in the RamDisk that you want
+          to save permanently is recorded on an actual diskette.
+          
+          
+          The RamDisk can be a very convenient tool.  It allows you to
+          switch almost instantaneously between BASIC (or any other
+          programming language) and DOS, and back again.  Use it to
+          work with files "stored" on Drive 8--a technique that might
+          prove especially useful when you are transferring large
+          amounts of data between two programs that are chained
+          together (that is, when one program RUNs the other).
+          
+          
+          To Activate the RamDisk
+          
+          Your DOS 2.5 Master Diskette contains a file called
+          RAMDISK.COM that automatically sets up the extra 64K RAM of
+          the 130XE as a RamDisk.
+          
+          
+          When you boot your 130XE system with a DOS 2.5 Master or
+          System Diskette containing RAMDISK.COM, DOS will:
+          
+          
+          - Display a message that it is initializing the RamDisk;
+          
+          
+          - Set up your computer's extra 64K of memory to act very much
+          as a disk drive, telling DOS to regard it as Drive 8; and 
+          
+          
+          - Copy the DOS file DUP.SYS and establish MEM.SAV on the
+          RamDisk, and use the versions of these files on the RamDisk
+          rather than those on your Master Diskette.
+          
+          
+          If you wish to expand the usable capacity of your RamDisk,
+          you may recover the memory used by DUP.SYS and MEM.SAV by:
+          
+          
+          - Changing the contents of location 5439 ($153F) to ATASCII 1
+          -- for example, POKE 5439,ASC("1"); and
+          
+          
+          - Deleting the files DUP.SYS and MEM.SAV from the "diskette"
+          in Drive 8--that is, the RamDisk.  Use option D., DELETE
+          FILE(S), on the DOS Menu and enter D8:*.* in response to the
+          DELETE FILESPEC prompt.
+          
+          
+          Note: Booting a disk which doesn't contain DUP.SYS will cause
+          RAMDISK.COM to initialize the RamDisk, but DUP.SYS and
+          MEM.SAV will not be moved to the RamDisk.
+          
+          
+          Using DOS With the RamDisk
+          
+          Because of the size of the RamDisk, you may not use DOS Menu
+          option J., DUPLICATE DISK, to copy either a single-density or
+          enhanced-density diskette to the RamDisk.  Instead, you must
+          copy individual files, taking care that they do not exceed in
+          size the capacity of the RamDisk.  You can ask DOS to
+          duplicate the contents of the RamDisk on an actual diskette.
+          From then on, however, that diskette will be capable under
+          DOS of accessing only 499 sectors worth of data--though you
+          can always duplicate its contents back to the RamDisk.
+          
+          
+          If You Do Not Want to Use the RamDisk
+          
+          If you do not want to use the ATARI 130XE RamDisk, you can
+          either delete or rename the RAMDISK.COM file on your DOS 2.5
+          Master or System Diskette.  You may then use the extra RAM
+          for other purposes.
+          
+          
+          If you have applications for which you do not wish to use the
+          RamDisk, it is recommended that you leave the RAMDISK.COM
+          file intact on your DOS 2.5 Master Diskette.  You might wish
+          to make one working copy of DOS (System Diskette) that
+          contains RAMDISK.COM, and one that does not.  Or you can
+          simply rename the RAMDISK.COM file on your System Diskette,
+          then rename it back to RAMDISK.COM when you wish to use it.
+          
+          
+                           THE DOS 2.5 DISK UTILITIES
+          
+          
+          Your DOS 2.5 Master Diskette contains three new utility
+          programs in addition to the standard disk utilities handled
+          by the DUP.SYS file--those available from the DOS Menu.  The
+          programs, each of which appears on the disk directory with a
+          .COM extender, function as follows:
+          
+          
+          COPY32.COM allows you to copy files from diskettes formatted
+          and written to from ATARI DOS 3 to DOS 2.5 diskettes,
+          converting the files in the process from DOS 3 to DOS 2.5.
+          
+          
+          DISKFIX.COM allows you to correct some problems that may
+          occur with files on DOS 2.5 and 2.0S diskettes.  Under
+          certain conditions, you can also use this utility to recover
+          deleted files.
+          
+          
+          SETUP.COM allows you to change certain DOS parameters.  You
+          can also use it to create an AUTORUN.SYS file that will
+          automatically load and run a BASIC program when you boot your
+          system.
+          
+          
+          Note: RAMDISK.COM is not a disk utility.  It is used only to
+          set up the RamDisk on a 130XE Computer.
+          
+          
+          Selecting and Loading a Utility
+          
+          All three utilities are binary files that are loaded and run
+          using option L., BINARY LOAD, from the DOS 2.5 Menu.  For
+          example, to begin using the COPY32.COM program, with the DOS
+          2.5 Menu on your screen, you would type L and press [RETURN].
+          For more detailed instructions for the latter two utilities,
+          consult the ATARI DOS 2.5 Manual (see the Getting Started
+          section of this manual for ordering instructions).
+          
+          
+          COPY32.COM
+          
+          Using this utility is much like using the COPY FILE function
+          on the DOS Menu.  After you load the COPY32.COM program, you
+          are prompted to specify which drive will hold your DOS 3
+          (source) disk and which drive will hold your DOS 2.5
+          (destination) disk.  If you have only one drive, type 1 in
+          response to both prompts.  In this case, you will have to
+          swap your DOS 3 and DOS 2.5 diskettes during the copying
+          process.  If you have more than one disk drive, you may
+          select one to hold your DOS 3 diskette and another to hold
+          your DOS 2.5 diskette. 
+          
+          
+          At this point, if you have only one drive, the utility
+          prompts you to insert your DOS 3 disk in Drive 1. For safety,
+          place a write-protect tab on your DOS 3 disk so that you will
+          not erase valuable data if you make an error while swapping
+          diskettes.
+          
+          
+          If you specified two different drives, the utility prompts
+          you to insert both your DOS 3 and DOS 2.5 disks.
+          
+          
+          After you insert the diskette or diskettes, press [START].
+          The COPY32.COM program reads the directory of the DOS 3
+          diskette an` displays the files it contains, sixteen at a
+          time, by number.  Press [RETURN] to see the next sixteen
+          files. When all the files on the diskette have been listed,
+          you have the options to restart, return to DOS, or view the
+          files again.
+          
+          
+          To convert a file, enter the number of the file you wish to
+          convert.  The utility prompts you to confirm your choice by
+          pressing [START].
+          
+          
+          When you press [START], the program begins the conversion
+          process by reading the specified file from the DOS 3
+          diskette.  After COPY32.COM reads the entire file (or as much
+          data as it can accommodate in its memory buffer), it asks you
+          to swap disks if you specified the same drive for your DOS 3
+          and DOS 2.5 disks. With very large files, you may have to
+          swap diskettes several times.  If you are using two drives,
+          the program copies and converts the file in a single
+          operation.
+          
+          
+          After the file has been copied and converted, press [START]
+          to return to the listing of files on your DOS 3 diskette,
+          from which you may choose another file to convert.
+          
+          
+          If an error occurs during the copy process, COPY32.COM
+          displays an error number and prompts you press [START] to
+          restart, or [SELECT] to return to the DOS 2.5 menu.
+          
+          
+          Note: Unless you have two disk drives, you will be unable to
+          convert files of more than 124,700 bytes (300 bytes less than
+          the maximum file length possible under DOS 2.5).
+          
+          
+          DISKFIX.COM
+          
+          This program begins by showing you the current drive number
+          and a menu with these five options:
+          
+          
+          1. Change Drive #
+          2. Unerase File
+          3. Verify Disk
+          4. Rename File by #
+          5. Quit to DOS
+          
+          
+          Type the number of the function you wish to use but do not
+          press [RETURN] after typing your choice.  After activating an
+          option, follow the prompts.
+          
+          
+          SETUP.COM
+          
+          This program begins by showing you a menu with these four
+          options:
+          
+          
+          1. Change current drive number
+          2. Change system configuration
+          3. Set up an AUTORUN for Boot
+          0. Quit - Return to DOS
+          
+          
+          Menu selections 1 and 0 are used for "housekeeping" purposes.
+          The two main functions of this utility are menu selections 2
+          and 3.  Press the number key that corresponds to the function
+          you wish to use, then follow the prompts.
+          
+          
+          Customer Support
+          
+          Atari Corp. welcomes any questions you might have about your
+          Atari Computer product.
+          
+          
+          Write to:
+          
+          Atari Customer Relations
+          P.O. Box 61657
+          Sunnyvale, CA  94088
+          
+          Please write the subject of your letter on the outside of the
+          envelope.
+          
+          We suggest that you contact your local Atari User Group.
+          They are outstanding sources of information on how to get the
+          most out of your Atari Computer.  To receive a list of the
+          user groups in your area, send a self-addressed stamped
+          envelope to:
+          
+          Atari User Group List
+          P.O. Box 61657
+          Sunnyvale, CA  94088

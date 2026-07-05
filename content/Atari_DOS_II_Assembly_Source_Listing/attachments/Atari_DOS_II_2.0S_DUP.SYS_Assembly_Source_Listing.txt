@@ -1,0 +1,2105 @@
+1000         .TITLE  'DISK UTILITY PROGRAMS (DUP)  VER 2.9  11/18/80'
+1001             LIST X
+1002 ;*************************************************************************
+1003 ;               THIS IS FINAL VERSION OF DUP  ---- 2.0S ----
+1004 ;*************************************************************************
+1005 ;                   FILENAME = DOS2.DUP29Q ON TANDEM
+1006 ;-------------------------------------------------------------------------
+1007 ;CHANGED FOR SYSTEM RESET:            DUPFLG                               
+1008 ;ADDED INTERRUPT ROUTINES FROM SIO:   KB
+1009 ;ADDED SAVE/RESTORE OF DOSINI VECTOR: KB
+1010 ;-------------------------------------------------------------------------
+1011 ;SCANNED BY:                          MR.ATARI   JAN-2004 
+1012 ;PRETTY PRINTED & FIXED ALL COMMENTS: UNIXcoffee 16-JUN-2011 
+1013 ;-------------------------------------------------------------------------
+1014         .PAGE
+1015 ;
+1016 ;=========================================================================
+1017 ;  ****  EQUATES  ****
+1018 ;=========================================================================
+1019 CIO     =       $E456
+1020 DKHND   =       $E453
+1021 SETVBV  =       $E45C
+1022 SYSVBV  =       $E45F
+1023 XITVBV  =       $E462
+1024 CIOINV  =       $E46E
+1025 MEMTOP  =       $2E5
+1026 BRKKEY  =       $11
+1027 DOSVEC  =       $A
+1028 DOSINI  =       $C              ;DOS INIT VECTOR
+1029 WARMST  =       8
+1030 LMARGN  =       $52
+1031 RMARGN  =       $53
+1032 CARTST  =       $BFFA
+1033 INTRVEC =       $20A            ;INTERRUPT VECTOR LOC FOR SIO PATCH
+1034 MEMLO   =       $2E7
+1035 SHFLOK  =       $2BE
+1036 INITAD  =       $2E2
+1037 RUNAD   =       $2E0
+1038 ICHIDZ  =       $20
+1039 ICDNOZ  =       $21
+1040 ICBALZ  =       $24
+1041 ICBAHZ  =       $25
+1042 ICIDNO  =       $2E
+1043 MAXDEV  =       $21
+1044 HATABS  =       $31A
+1045 USRDOS  =       $1700
+1046 FMS     =       $700
+1047 FMINIT  =       FMS+$E0
+1048 DOS     =       FMS+$E40
+1049 WRMSTR  =       $E474           ;WARM START VECTOR
+1050 BSIOR   =       $772            ;ENTRY POINT TO FMS DISK HANDLER USED BY DUP DISK
+1051 CDTMV3  =       $21C            ;ADDRESS OF SYSTEM TIMER # 3
+1052 CDTMF3  =       $22A            ;ADDRESS OF SYS TIMER # 3 TIME OUT FLAG
+1053 ;
+1054 CR      =       $9B
+1055 CUP     =       $1C
+1056 CDN     =       $1D
+1057 CLF     =       $1E
+1058 CRT     =       $1F
+1059 DLL     =       $9C
+1060 CLSCR   =       $7D
+1061 EOF     =       $88             ;ENDFILE RETURN CODE FROM CIO
+1062 ;
+1063 ;
+1064 OPEN    =       $03
+1065 CLOSE   =       $0C
+1066 PUTCHR  =       $0B
+1067 GETCHR  =       $07
+1068 GETREC  =       $05
+1069 PUTREC  =       $09
+1070 RENAME  =       $20
+1071 DELETE  =       $21
+1072 FORMAT  =       $FE
+1073 LOCK    =       $23
+1074 UNLOCK  =       $24
+1075 STAREQ  =       $53             ;STATUS COMMAND TO DISK CONTROLER
+1076 ;
+1077 IOCB1   =       $10
+1078 ;
+1079 DVSTAT  =       $2EA            ;ADDRESS OF STATUS INFO STORED BY OS
+1080 ;.........................................................................
+1081 ;
+1082 DCB     =       $300
+1083 DUNIT   =       DCB+1
+1084 DCOMND  =       DCB+2
+1085 DSTATS  =       DCB+3
+1086 DBUFLO  =       DCB+4
+1087 DBUFHI  =       DCB+5
+1088 DSLO    =       DCB+$A
+1089 DSHI    =       DCB+$B
+1090 ;.........................................................................
+1091 IOCB    =       $340
+1092 ICHID   =       IOCB+0
+1093 ICDNO   =       IOCB+1
+1094 ICCOM   =       IOCB+2
+1095 ICSTA   =       IOCB+3
+1096 ICBAL   =       IOCB+4
+1097 ICBAH   =       IOCB+5
+1098 ICBLL   =       IOCB+8
+1099 ICBLH   =       IOCB+9
+1100 ICAX1   =       IOCB+10
+1101 ICAX2   =       IOCB+11
+1102 ;.........................................................................
+1103 SYSED   =       $0
+1104 OWRIT   =       $08
+1105 ORDWRT  =       $0C
+1106 ;.........................................................................
+1107 HILO    .MACRO  P1
+1108 P1&H     =       P1&/256
+1109 P1&L     =       (-256)*&P1&H+&P1
+1110         .ENDM
+1111         .PAGE
+1112 ;=========================================================================
+1113 ;  ****  ZERO  PAGE  VARIABLES  **** 
+1114 ;=========================================================================
+1115         *=$18
+1116 JMPTBL  *=*+2
+1117 RAMLO   *=*+2
+1118 BUFADR  =       RAMLO           ;SAVE AREA FOR BUFFER ADDRESS USED BY USER
+1119         .PAGE
+1120 ;=========================================================================
+1121 ;  ****  INIT CODE FOR DUP  ****
+1122 ;=========================================================================
+1123 ;       INITIALIZATION CODE FOR DUP - CALLS FMS INIT CODE.
+1124 ;       CALLED ON WARM START AND COLD START.
+1125 ;-------------------------------------------------------------------------
+1126         *=DOS
+1127         LDA     #0
+1128         STA     OPT
+1129         LDA     #.LOW.MNDUPL
+1130         STA     DOSVEC
+1131         LDA     #.LOW.MNDUPH
+1132         STA     DOSVEC+1
+1133         LDA     #.LOW.ISRSIR    ;SET UP INTERRUPT VECTORS FOR SIO PA
+1134         STA     INTRVEC         ;INSTEAD OF USING THE SERIAL INPUT READY
+1135         LDA     #.HIGH.ISRSIR   ;SERVICE ROUTINE AND THE SERIAL OUTPUT
+1136         STA     INTRVEC+1       ;INTERRUPT SERVICE ROUTINE IN THE OS ROM
+1137         LDA     #.LOW.ISRODN    ;USE THE VERSIONS IN RAM FOLLOWING THE
+1138         STA     INTRVEC+2       ;RESIDENT PORTION OF DUP.
+1139         LDA     #.HIGH.ISRODN
+1140         STA     INTRVEC+3
+1141         JSR     FMINIT
+1142         LDA     WARMST          ;ON COLDSTART, LOAD AUTORUN.SYS
+1143         BNE     CKMDOS          ;WARMSTART CHECK IF DUP WAS RUNNING
+1144         LDA     #.LOW.AFL
+1145         STA     ICBAL+$10
+1146         LDA     #.LOW.AFH
+1147         STA     ICBAH+$10
+1148         JSR     INITX           ;CLEAR DUPFLG SHOW DUP NOT IN MEMORY.
+1149         LDA     #$C0
+1150         JSR     STLOAD          ;LOAD, INIT AND RUN THE AUTORUN FILE
+1151         JMP     CLOSX           ;MAKE SURE IOCB #1 IS CLOSED & RETURN
+1152 ;
+1153 CKMDOS  LDA     DUPFLG          ;SEE IF DUP WAS IN MEMORY
+1154         BEQ     INITX           ;=ZERO THEN WASN'T
+1155 ;.........................................................................
+1156         LDA     MEMFLG          ;SEE IF USER AREA WRITTEN TO MEM.SAV
+1157         BEQ     CLDSET          ;=ZERO THEN WASN'T
+1158         JSR     LDMEM1          ;ELSE GET USER MEMORY BACK IN
+1159 ;.........................................................................
+1160         JSR     RELDIN          ;RELOAD SAVED DOSINI VECTOR
+1161         JSR     INITX           ;CLEAR DUP IN MEMORY FLAG
+1162         JSR     WRMSTR          ;REDO WARMSTART
+1163 ;.........................................................................
+1164 INITX   LDA     #0              ;SAY DUP NOT IN MEMORY
+1165         STA     DUPFLG          ;CLEAR FLAG
+1166         RTS
+1167 ;.........................................................................
+1168 CLDSET  STA     WARMST          ;NO VALID USER MEMORY
+1169         BEQ     INITX           ;SET TO COLD START
+1170         .PAGE
+1171 ;=========================================================================
+1172 ;  ****  LOADER ROUTINE  *** 
+1173 ;=========================================================================
+1174 ;       LOADS FROM THE FILE (MUST BE LOAD FORMAT)
+1175 ;       INTO MEMORY. RETURNS:
+1176 ;         X=0 LOAD OK
+1177 ;         X=1 OPEN ERRORS Y=CIO CODE
+1178 ;         X=2 READ ERRORS Y=CIO CODE
+1179 ;         X=3 BAD LOAD FILE
+1180 ; ON ENTRY, IOCB 1 POINTS TO FILENAME.
+1181 ;-------------------------------------------------------------------------
+1182 DUPFLG  .BYTE   0               ;FLAG -IF DUP IN MEMORY NOT ZERO
+1183 OPT     .BYTE   0               ;HOLDS VALUE OF OPTION GIVEN BY USER
+1184 LOADFG  .BYTE   0               ;FLAG = $80 IF MEMORY FILE DOESN'T HAVE
+1185 HDBUF   *=*+4
+1186         HILO    HDBUF
+1187 HDBUFH     =       HDBUF/256
+1188 HDBUFL     =       (-256)*HDBUFH+HDBUF
+1189 SFLOAD  LDA     #$80
+1190 STLOAD  STA     LOADFG
+1191 LOAD    LDA     #.LOW.RTS
+1192         STA     RUNAD
+1193         LDA     #.HIGH.RTS
+1194         STA     RUNAD+1         ;MAKE RUN AT EOF DEFAULT TO RTS
+1195         LDX     #$10
+1196         LDA     #OPEN
+1197         STA     ICCOM,X
+1198         LDA     #4              ;OPEN TYPE=INPUT
+1199         STA     ICAX1,X
+1200         JSR     CIO             ;TRY TO OPEN FILE
+1201         BPL     RDLF            ;CONT IF OK
+1202         LDA     #1              ;OPEN ERRORS
+1203         BNE     CLFX            ;CLOSE AND EXIT
+1204 RDLF    LDX     #$10
+1205         LDA     #.LOW.DBUFL
+1206         STA     ICBAL,X
+1207         LDA     #.LOW.DBUFH
+1208         STA     ICBAH,X
+1209         LDA     #2
+1210         STA     ICBLL,X
+1211         LDA     #0
+1212         STA     ICBLH,X
+1213         STA     MEMLDD          ;CLEAR MEM.SAV LOADED FLAG
+1214         LDA     #GETCHR
+1215         STA     ICCOM,X
+1216         JSR     CIO
+1217         BMI     ERST            ;IF ERRS
+1218         LDA     #$FF
+1219         CMP     DBUF            ;CHECK FOR VALID LOAD FILE
+1220         BNE     LNLF
+1221         CMP     DBUF+1
+1222         BNE     LNLF            ;BRANCH IF NOT A LOAD FILE
+1223 RDDRC   LDX     #$10
+1224         LDA     #.LOW.HDBUFL
+1225         STA     ICBAL,X
+1226         LDA     #.LOW.HDBUFH
+1227         STA     ICBAH,X
+1228         LDA     #4
+1229 RDDRC1  STA     ICBLL,X
+1230         LDA     #0
+1231         STA     ICBLH,X
+1232         JSR     CIO             ;NO ERROR CHECK SO CAN CATCH EOF
+1233         BPL     STOK            ;IF NO ERROR
+1234         CPY     #$88            ;SEE IF EOF
+1235         BNE     ERST            ;IF SOME ERROR STATUS
+1236 ;=========================================================================
+1237 ;EOF SO DONE, EXIT
+1238 ;=========================================================================
+1239         JSR     CLOSX           ;CLOSE IOCB'S 1 AND 2
+1240         BIT     OPT
+1241         BMI     DRUN            ;BRANCH IF NO RUN OPTION
+1242         JSR     JMPRUN          ;JUMP THROUGH RUN VECTOR
+1243 DRUN    LDA     #0              ;OK STATUS
+1244         BIT     LOADFG          ;WAS MEMORY SWAPPED?
+1245         STA     LOADFG
+1246         BMI     CLFX            ;BRANCH IF MEMORY WASN'T SWAPPED
+1247         JSR     MEMSVQ          ;DOES MEMORY SAVE FILE EXIST?
+1248         BMI     DRUN1           ;BRANCH IF NOT
+1249         PLA
+1250         PLA
+1251         JMP     GOOD            ;WRITE MEMORY AND RELOAD DUP
+1252 ;=========================================================================
+1253 ;       SEE IF DUP WRITTEN OVER. IF IS RELOAD & TELL USER NEED MEM.SAV TO
+1254 ;       LOAD THIS FILE.
+1255 ;=========================================================================
+1256 DRUN1   LDA     DUPFLG          ;SEE IF DUP CLOBBERED
+1257         BNE     DRUN2           ;NO, THEN RETURN
+1258         LDA     #.LOW.NMSFL     ;ELSE TELL USER NEED MEM.SAV
+1259         LDX     #.LOW.NMSFH
+1260         JSR     PRNTMSG         ;PRINT MSG
+1261         JMP     RRDUP           ;RELOAD & RUN DUP
+1262 ;=========================================================================
+1263 ;       RETURN TO CALLING ROUTINE
+1264 ;=========================================================================
+1265 DRUN2   LDA     #0              ;NO DUP ERR MSG ON EOF
+1266 CLFX    TAX
+1267 RTS     RTS
+1268 ;=========================================================================
+1269 ;       ERROR RETURNS
+1270 ;=========================================================================
+1271 LNLF    JSR     CLOSX
+1272         LDA     #3              ;BAD LOAD FILE
+1273         BNE     CLFX
+1274 ERST    TYA
+1275         PHA
+1276         JSR     CLOSX
+1277         PLA
+1278         TAY
+1279         BNE     CLFX
+1280 ;=========================================================================
+1281 ;       CONTINUE WITH LOAD - CHECK LOAD ADDRESS FOR HEADER
+1282 ;       HEADER IF HAVE CONCATENATED LOAD FILES
+1283 ;=========================================================================
+1284 STOK    LDX     #$10
+1285         LDA     HDBUF           ;MOVE PARAMS TO IOCB
+1286         STA     ICBAL,X
+1287         PHA
+1288         LDA     HDBUF+1
+1289         STA     ICBAH,X
+1290         TAY
+1291         PLA
+1292         INY                     ;WAS ADDRESS FF?
+1293         BNE     ADOK            ;BRANCH IF NOT
+1294         TAY
+1295         INY                     ;OTHER BYTE FF?
+1296         BNE     ADOK            ;BRANCH IF NOT
+1297 ;=========================================================================
+1298 ;       HAVE A HEADER & START ADDRESS - GET END ADDRESS FOR TEXT & DO AG
+1299 ;=========================================================================
+1300         LDA     HDBUF+2
+1301         STA     HDBUF
+1302         LDA     HDBUF+3
+1303         STA     HDBUF+1         ;MOVE LOAD ADDRESS
+1304         LDA     #.LOW.HDBUF+2
+1305         STA     ICBAL,X
+1306         LDA     #.HIGH.(HDBUF+2)
+1307         STA     ICBAH,X         ;SO LOAD ADDRESS DOESN'T GET WIPED OUT B
+1308         LDA     #2
+1309         JMP     RDDRC1
+1310 ;=========================================================================
+1311 ;       GET LENGTH OF TEXT. THEN DETERMINE IF IN DUP
+1312 ;=========================================================================
+1313 ADOK    LDA     HDBUF+2
+1314         SEC
+1315         SBC     HDBUF
+1316         STA     ICBLL,X
+1317         LDA     HDBUF+3
+1318         SBC     HDBUF+1
+1319         STA     ICBLH,X
+1320         LDA     HDBUF+1
+1321         JSR     AWDQ            ;IS BEGINNING ADDRESS WITHIN DUP?
+1322         BCS     AWD             ;BRANCH IF SO
+1323         LDA     HDBUF+3
+1324         JSR     AWDQ            ;IS ENDING ADDRESS WITHIN DUP?
+1325         BCS     AWD             ;BRANCH IF SO
+1326 ;=========================================================================
+1327 ;       SINCE TEXT IN DUP, LOAD MEM.SAV IF NECCESARY
+1328 ;=========================================================================
+1329 ANWD    LDA     MEMLDD
+1330         BMI     AWD             ;BRANCH IF MEM.SAV ALREADY LOADED
+1331         LDA     #$80
+1332         ORA     LOADFG
+1333         STA     LOADFG          ;SET MEM.SAV DOESN'T HAVE TO BE LOADED F
+1334 AWD     INC     ICBLL,X
+1335         BNE     *+5
+1336         INC     ICBLH,X
+1337         BIT     LOADFG          ;DOES MEMORY HAVE TO BE LOADED?
+1338         BMI     DLM             ;BRANCH IF NOT
+1339         LDA     MEMLDD          ;WAS MEM.SAV ALREADY LOADED?
+1340         BMI     DLM             ;BRANCH IF SO
+1341         DEC     MEMLDD
+1342         JSR     LDMEM           ;LOAD MEM.SAVE FILE (IF IT EXISTS)
+1343         LDA     #0              ;SHOW USER AREA NOT DUP IN MEMORY
+1344         STA     DUPFLG
+1345         JSR     RELDIN          ;RESTORE DOSINI VECTOR FROM SAVED LOC
+1346 ;=========================================================================
+1347 ;       SET NO INIT ADDR DEFAULT THEN READ IN TEXT & ATTEMPT INIT
+1348 ;=========================================================================
+1349 DLM     LDX     #$10
+1350         LDA     #.LOW.RTS
+1351         STA     INITAD
+1352         LDA     #.HIGH.RTS
+1353         STA     INITAD+1        ;INIT DEFAULTS TO AN RTS
+1354         JSR     CIO             ;READ DATA DIRECTLY TO MEMORY
+1355         BPL     DLM1
+1356         JMP     ERST            ;IF ERRORS
+1357 DLM1    BIT     OPT
+1358         BMI     DINIT           ;BRANCH IF NOGO OPTION
+1359         JSR     JMPINT          ;DO INIT
+1360 DINIT   JMP     RDDRC           ;GET NEXT SECTION OF LOAD FILE
+1361 ;=========================================================================
+1362 ;       SUBROUTINE TO DETERMINE IF ADDRESS IS WITHIN DUP ADDRESS SPACE.
+1363 ;               ENTRY - HI BYTE OF ADDRESS IN REG. A
+1364 ;               RETURNS - CARRY SET : WITHIN DUP
+1365 ;                         CARRY CLR : NOT WITHIN DUP
+1366 ;=========================================================================
+1367 AWDQ    CMP     #.LOW.NDOSH
+1368         BCC     AWDQR           ;BRANCH IF HI BYTE LT DUP START
+1369         CMP     #.LOW.NMDUPH+1
+1370         ROL     A
+1371         EOR     #1
+1372         LSR     A               ;COMPLEMENT CARRY
+1373 AWDQR   RTS
+1374 ;.........................................................................
+1375 ;
+1376 JMPINT  JMP     (INITAD)
+1377 JMPRUN  JMP     (RUNAD)
+1378 ;.........................................................................
+1379 ;
+1380 MEMLDD  .BYTE   0
+1381 AF      .BYTE   'D1:AUTORUN.SYS',CR
+1382         HILO    AF
+1383 AFH     =       AF/256
+1384 AFL     =       (-256)*AFH+AF
+1385 NMSF    .BYTE   'NEED MEM.SAV TO LOAD THIS FILE.',CR
+1386         HILO    NMSF
+1387 NMSFH     =       NMSF/256
+1388 NMSFL     =       (-256)*NMSFH+NMSF
+1389         .PAGE
+1390 ;=========================================================================
+1391 ;  ****  CREATE  MEM.SAV  FILE  ****
+1392 ;=========================================================================
+1393 ;ROUTINE WRITTEN BY MICHAEL EKBERG,APRIL 21,1980
+1394 ;-------------------------------------------------------------------------
+1395 ;THIS ROUTINE CREATES A FILE ON DISK OF DATA FROM MEMORY
+1396 ;CREATE FILE CALLED 'D1:MEM.SAV',SET Y=1
+1397 ;
+1398 ;ABLE TO CREATE FILE THEN SET REG.Y=ERROR RETURNED FROM CIO
+1399 ;THE RAM TO BE OCCUPIED BY DUP IS STORED BY THIS ROUTINE INTO 'MEMORY.SAV'
+1400 ;-------------------------------------------------------------------------
+1401 NAME    .BYTE   'D1:MEM.SAV',CR
+1402         HILO    NAME
+1403 NAMEH     =       NAME/256
+1404 NAMEL     =       (-256)*NAMEH+NAME
+1405 MWRITE  JSR     CLOSX           ;CLOSE IOCB AND OPEN IT TO WRITE
+1406         LDA     #OWRIT          ;
+1407         STA     ICAX1,X         ;
+1408         JSR     OREST           ;OPEN FOR WRITE
+1409         BMI     ERRWR           ;IF ERROR THEN JMP AND RET
+1410 ;
+1411 ;=========================================================================
+1412 ;WRITE MEMORY BLOCK
+1413 ;=========================================================================
+1414         LDA     #PUTCHR
+1415         STA     ICCOM,X
+1416         LDA     #.LOW.NDOSL     ;STORE START OF BLOCK FOR CIO
+1417         STA     ICBAL,X
+1418         LDA     #.LOW.NDOSH     ;START ADDR (HIGH)
+1419         STA     ICBAH,X
+1420         LDA     #.LOW.MLENL+1   ;LENGTH OF BLOCK
+1421         STA     ICBLL,X
+1422         LDA     #.LOW.MLENH     ;LENGTH(HIGH)
+1423         STA     ICBLH,X
+1424         JSR     CIO             ;WRITE DATA BLOCK
+1425         BMI     ERRWR           ;IF WRITE ERROR THEN JMP
+1426         JSR     CLOSX
+1427         BMI     ERRWR
+1428         LDY     #0
+1429 RET     RTS
+1430 ;-------------------------------------------------------------------------
+1431 OREST   LDA     #.LOW.OPEN
+1432         STA     ICCOM,X
+1433         LDA     #.LOW.NAMEL     ;ROUTINE TO COMPLETE OPEN OF 'D1:MEMORY.
+1434         STA     ICBAL,X         ;CALLING SUB SUPPLIES 'READ' OR 'WRITE'
+1435         LDA     #.LOW.NAMEH     ;IN ICAX1
+1436         STA     ICBAH,X
+1437         JMP     CIO
+1438 ;-------------------------------------------------------------------------
+1439 ERRWR   STY     TEMP+1          ;TEMP STORE FOR Y FLAG
+1440         JSR     CLOSX           ;CLOSE #$20
+1441         LDA     #.LOW.DELETE    ;DELETE PART OF MENSAV
+1442         STA     ICCOM,X
+1443         JSR     OREST
+1444 TEMP    LDY     #0              ;RESTORE FLAG
+1445         RTS                     ;RETURN TO MAIN CALLER
+1446         .PAGE
+1447 ;=========================================================================
+1448 ;  ****  ENTRY  POINT  ON  'DOS'  CALL  ****
+1449 ;=========================================================================
+1450 INISAV  .DBYTE 0                ;DOSINI VECTOR SAVE LOC
+1451 MEMFLG  .BYTE   0
+1452 MNDUP   LDX     #0
+1453         STX     MEMFLG
+1454         STX     LOADFG
+1455         DEX
+1456         STX     WARMST
+1457         JSR     INITIO
+1458 ;.........................................................................
+1459         JSR     MEMSVQ          ;FIND OUT IF FILE D1:MEM.SAV EXISTS
+1460         BPL     GOOD            ;BRANCH IF MEM.SAV FILE EXITS
+1461         LDA     #0
+1462         STA     WARMST          ;CLEAR WARM START FLAG
+1463         BEQ     FINAL
+1464 ;.........................................................................
+1465 ;
+1466 GOOD    JSR     MWRITE          ;WRITE USER AREA TO MEM.SAV
+1467         BMI     ERROR
+1468         DEC     MEMFLG          ;SHOW MEMORY WRITTEN
+1469         BMI     FINAL
+1470 ;.........................................................................
+1471 ERROR   LDA     #.LOW.ERRMES    ;PRINT ERROR OCCURED MSG
+1472         LDX     #.HIGH.ERRMES
+1473         JSR     PRNTMSG         ;GOTO MSG PRINTER
+1474 ;
+1475         LDA     #.LOW.ERR       ;PRINT QUERY TO RUN DOS
+1476         LDX     #.HIGH.ERR
+1477         JSR     PRNTMSG         ;GOTO MSG PRINTER
+1478 ;
+1479 ;                               ;WAIT FOR Y TO RUN DOS
+1480 ;.........................................................................
+1481         LDA     #GETREC
+1482         STA     ICCOM
+1483         LDA     #.LOW.STAKL
+1484         STA     ICBAL
+1485         LDA     #.LOW.STAKH
+1486         STA     ICBAH
+1487         LDA     #2
+1488         STA     ICBLL
+1489         LDA     #0
+1490         STA     ICBLH
+1491         JSR     CIO
+1492         LDA     STAK            ;SEE IF Y TYPED
+1493         CMP     #'Y
+1494         BNE     RTCART          ;BRANCH IF NOT
+1495         LDA     #0
+1496         STA     WARMST
+1497 ;-------------------------------------------------------------------------
+1498 FINAL   LDX     #$20
+1499         LDA     #CLOSE
+1500         STA     ICCOM,X         ;SET UP CLOSE COMMAND
+1501         JSR     CIO             ;PERFORM CLOSE COMMAND
+1502 ;-------------------------------------------------------------------------
+1503 RRDUP   LDA     DOSINI          ;SAVE DOS INIT VECTOR
+1504         STA     INISAV
+1505         LDA     DOSINI+1
+1506         STA     INISAV+1
+1507 ;.........................................................................
+1508         LDA     #.LOW.DOS       ;SET UP DUP INIT ADDR AS
+1509         STA     DOSINI          ;DOS INIT VECTOR
+1510         LDA     #.HIGH.DOS
+1511         STA     DOSINI+1
+1512 ;-------------------------------------------------------------------------
+1513 RRDUP1  LDA     #.LOW.DUPSYS
+1514         LDX     #$10
+1515         STA     ICBAL,X
+1516         LDA     #.HIGH.DUPSYS
+1517         STA     ICBAH,X
+1518         LDY     #0
+1519         STY     OPT             ;ASSURE NO /N OPTION IN EFFECT
+1520         DEY                     ;SHOW THAT DUP IS IN MEMORY
+1521         STY     DUPFLG
+1522         JSR     SFLOAD          ;LOAD DUP.SYS AND RUN IT
+1523 RTCART  RTS
+1524 EC      .BYTE   'E:',CR
+1525         HILO    EC
+1526 ECH     =       EC/256
+1527 ECL     =       (-256)*ECH+EC
+1528         HILO    MNDUP
+1529 MNDUPH     =       MNDUP/256
+1530 MNDUPL     =       (-256)*MNDUPH+MNDUP
+1531 DUPSYS  .BYTE   'D1:DUP.SYS',CR
+1532 ;.........................................................................
+1533 ERRMES  .BYTE   'ERROR-SAVING USER MEMORY ON DISK',CR
+1534 ERR     .BYTE   'TYPE Y TO STILL RUN DOS',CR
+1535 ;=========================================================================
+1536 ;  ****  SUBROUTINES  FOR  RESIDENT  DUP  **** 
+1537 ;=========================================================================
+1538 ;       ROUTINE TESTS IF MEM.SAV IS PRESENT ON THE DISK.
+1539 ;       RETURNS - MINUS IF MEM.SAV IS NOT THERE
+1540 ;                 PLUS  IF MEM.SAV IS THERE
+1541 ;-------------------------------------------------------------------------
+1542 MEMSVQ  JSR     CLOS20          ;CLOSE IOCB # 2
+1543         LDA     #OPEN
+1544         STA     ICCOM,X
+1545         LDA     #.LOW.NAMEL
+1546         STA     ICBAL,X
+1547         LDA     #.LOW.NAMEH
+1548         STA     ICBAH,X
+1549         LDA     #ORDWRT
+1550         STA     ICAX1,X         ;TRY TO OPEN D1:MEM.SAV FOR READ/WRITE
+1551         JSR     CIO
+1552         PHP                     ;SAVE STATUS
+1553         JSR     CLOS20          ;CLOSE MEM.SAV
+1554         PLP                     ;RESTORE STATUS
+1555         RTS
+1556 ;
+1557 ;=========================================================================
+1558 ;       SAVE FILE SUBROUTINE - WRITE FILE BODY, INIT, & RUN VECTORS
+1559 ;=========================================================================
+1560 WDR1    LDA     #0              ;THIS IMMEDIATE VALUE MODIFIED
+1561         BEQ     WDR2            ;BRANCH IF MEMORY FILE DOESN'T HAVE TO B
+1562         JSR     LDMEM
+1563 WDR2    LDX     #$10
+1564         JSR     CIO             ;DO SAVE - WRITE BODY TO DISK
+1565 INITQ   LDA     #0              ;THIS IMMEDIATE VALUE CHANGED DURING SAV
+1566         BEQ     RUNQ            ;SET TO FF WHEN AN INIT VECTOR IS PRESENT
+1567         INC     INITQ+1
+1568         LDA     INITAD
+1569         STA     VECTR           ;IF INIT VECTOR FOR FILE SAVE IT
+1570         LDA     INITAD+1
+1571         STA     VECTR+1
+1572         LDA     #.LOW.INITAD
+1573         TAX
+1574         STA     LDST
+1575         LDA     #.HIGH.INITAD
+1576         JSR     WRVEC
+1577 RUNQ    LDA     #0              ;THIS IMMEDIATE VALUE MODIFIED
+1578         BEQ     NORNAD          ;SET TO FF WHEN A RUN VECTOR IS PRESENT
+1579         INC     RUNQ+1
+1580         LDA     RUNAD
+1581         STA     VECTR           ;IF RUN VECTOR FOR FILE SAVE IT
+1582         LDA     RUNAD+1
+1583         STA     VECTR+1
+1584         LDA     #.LOW.RUNAD
+1585         TAX
+1586         STA     LDST
+1587         LDA     #.HIGH.RUNAD
+1588         JSR     WRVEC
+1589 NORNAD  JSR     CLOSX           ;CLOSE IOCBS 1 &2
+1590         LDA     MEMFLG
+1591         AND     WDR1+1
+1592         BEQ     DRRDUP
+1593         INC     WDR1+1          ;RESET MEM.NEEDS TO BE LOADED FLAG
+1594         JMP     RRDUP1          ;RELOAD & RUN DUP
+1595 DRRDUP  JMP     DOSOS           ;RUN THE SWAPPED IN DUP
+1596 ;-------------------------------------------------------------------------
+1597 ;
+1598 ;
+1599 WRVEC   STA     LDST+1
+1600         INX
+1601         STX     LDND
+1602         STA     LDND+1
+1603         LDX     #$10
+1604         LDA     #.LOW.LDST
+1605         STA     ICBAL,X
+1606         LDA     #.HIGH.LDST
+1607         STA     ICBAH,X
+1608         LDA     #6
+1609         STA     ICBLL,X
+1610         LDA     #0
+1611         STA     ICBLH,X
+1612         JMP     CIO             ;WRITE INIT OR RUN ADDRESS
+1613 ;
+1614 ;=========================================================================
+1615 ;       JUMP TO CARTRIDGE
+1616 ;=========================================================================
+1617 CLMJMP  JSR     LDMEM
+1618         LDA     #0              ;SHOW DUP NO LONGER IN MEMORY
+1619         STA     DUPFLG
+1620         JSR     RELDIN          ;RESTORE DOS INIT VECTOR SAVED
+1621         JMP     (CARTST)        ;JUMP TO CARTRIDGE
+1622 ;
+1623 ;=========================================================================
+1624 ;       LOAD MEM.SAV (IF IT EXISTS) BEFORE RUN AT ADDRESS
+1625 ;=========================================================================
+1626 LMTR    JSR     LDMEM           ;LOAD MEM.SAVE IF IT EXISTS
+1627         LDA     #0              ;SHOW THAT DUP NO LONGER IN MEMORY
+1628         STA     DUPFLG
+1629         JSR     RELDIN          ;RESTORE DOS INIT VECTOR SAVED
+1630         JMP     (RAMLO)         ;RUN AT ADDRESS
+1631 ;=========================================================================
+1632 ;       RESTORE DOSINI VECTOR FROM SAVED LOCATION
+1633 ;=========================================================================
+1634 RELDIN  LDA     INISAV
+1635         STA     DOSINI
+1636         LDA     INISAV+1
+1637         STA     DOSINI+1
+1638         RTS
+1639 ;
+1640 ;=========================================================================
+1641 ;       SUBROUTINE - LDMEM
+1642 ;       LOAD MEM.SAV IF IT EXISTS
+1643 ;=========================================================================
+1644 LDMEM   LDA     MEMFLG
+1645         BNE     LDMEM1          ;BRANCH IF MEMORY WAS SAVED
+1646         RTS
+1647 LDMEM1  JSR     MEMSVQ
+1648         BPL     LDMEM2          ;BRANCH IF MEM.SAV FILE DOES EXIST
+1649         LDA     #0              ;TELL CART PGM AREA CLOBBERED
+1650         STA     WARMST
+1651         BEQ     CLOS2           ;GO CLOSE AND GOTO CART
+1652 ;-------------------------------------------------------------------------
+1653 LDMEM2  LDA     #OPEN
+1654         STA     ICCOM,X
+1655         JSR     CIO             ;REOPEN MEM.SAV
+1656         LDA     #GETCHR
+1657         STA     ICCOM,X
+1658         LDA     #.LOW.MLENL+1
+1659         STA     ICBLL,X
+1660         LDA     #.LOW.MLENH
+1661         STA     ICBLH,X
+1662         LDA     #.LOW.NDOSL
+1663         STA     ICBAL,X
+1664         LDA     #.LOW.NDOSH
+1665         STA     ICBAH,X
+1666         JSR     CIO
+1667 CLOS2   LDA     #CLOSE
+1668         STA     ICCOM,X
+1669         JMP     CIO             ;CLOSE MEM.SAV
+1670 ;=========================================================================
+1671 ;       CLOSE ALL IOCBS & RE-OPEN ZERO AS SCREEN EDITOR
+1672 ;=========================================================================
+1673 INITIO  JSR     CIOINV          ;THIS ROUTINE CLOSES ALL IOCB'S
+1674 ;                               ;THEN REOPENS THE SCREEN EDITOR
+1675         LDX     #0
+1676         LDA     #OPEN
+1677         STA     ICCOM,X
+1678         LDA     #.LOW.ECL
+1679         STA     ICBAL,X
+1680         LDA     #.LOW.ECH
+1681         STA     ICBAH,X
+1682         LDA     #ORDWRT
+1683         STA     ICAX1,X
+1684         JSR     CIO
+1685 ;.........................................................................
+1686         LDX     #0              ;DELAY UNTIL DMA (SCREEN) IS RESTORED
+1687         STX     CDTMV3          ;CLEAR TIMER NUMBER 3
+1688         STX     CDTMV3+1
+1689         LDY     #1              ;WAIT FOR ONE VBLANK
+1690         LDA     #3              ;USE TIMER # 3
+1691         STA     CDTMF3          ;SET TIMER DONE FLAG TO NOT DONE
+1692         JSR     SETVBV          ;SYSTEM CALL TO SET TIMER
+1693 WAITIM  LDA     CDTMF3          ;WAIT UNTIL TIMER IS DONE
+1694         BNE     WAITIM
+1695 ;.........................................................................
+1696         RTS
+1697 ;=========================================================================
+1698 ;  CLOSX - CLOSE IOCBS 10,20
+1699 ;=========================================================================
+1700 CLOSX   LDA     #CLOSE
+1701         LDX     #$10
+1702         STA     ICCOM,X
+1703         JSR     CIO
+1704 ;=========================================================================
+1705 ;       ENTRY TO CLOSE IOCB # 2 ONLY
+1706 ;=========================================================================
+1707 CLOS20  LDX     #$20
+1708         LDA     #CLOSE
+1709         STA     ICCOM,X
+1710         JMP     CIO
+1711 ;=========================================================================
+1712 ;       SUBROUTINE - PRNTMSG
+1713 ;=========================================================================
+1714 ;       PUTS A CHARACTER STRING TERMINATED BY A CARRIAGE RETURN CHAR TO
+1715 ;       SCREEN EDITOR.
+1716 ;               ENTRY - REG A : LOW BYTE MSG ADDRESS
+1717 ;                       REG X : HI BYTE MSG ADDRESS
+1718 ;=========================================================================
+1719 ;       PUT PARAMS IN IOCB - USE IOCB 0 FOR SCREEN EDITOR
+1720 ;=========================================================================
+1721 PRNTMSG STA     ICBAL           ;SET MSG ADDR IN IOCB BUFF ADDR
+1722         STX     ICBAH
+1723 ;=========================================================================
+1724 ;       SET UP REST OF IOCB
+1725 ;=========================================================================
+1726         LDA     #$80            ;SET IN BUFFER LENGTH
+1727         STA     ICBLL           ;ASSUME 128 BYTES MAX
+1728         LDX     #0              ;USE REG X TO SET IN IOCB INDEX FOR CIO
+1729         STX     ICBLH
+1730         LDA     #PUTREC         ;PUT MSG
+1731         STA     ICCOM
+1732 ;=========================================================================
+1733 ;       TEST IF DUP IS RESIDENT - IF IS THEN USE INDIRECT CIO ROUTINE TO
+1734 ;       FOR BREAK KEY ABORT
+1735 ;=========================================================================
+1736         LDA     DUPFLG          ;=ZERO IF NON-RESIDENT DUP NOT IN MEMORY
+1737         BNE     INMEM           ;IN MEMORY THEN USE INDIRECT CIO CALL
+1738 ;.........................................................................
+1739         JMP     CIO             ;ELSE GO DIRECT TO CIO & RETURN
+1740 ;-------------------------------------------------------------------------
+1741 INMEM   JMP     CIO1            ;USE CIO CALL WITH TEST FOR BREAK KEY ABORT
+1742 ;-------------------------------------------------------------------------
+1743 ;
+1744 SAVH    .BYTE   $FF,$FF
+1745         HILO    SAVH
+1746 SAVHH     =       SAVH/256
+1747 SAVHL     =       (-256)*SAVHH+SAVH
+1748 LDST    *=*+2
+1749         HILO    LDST
+1750 LDSTH     =       LDST/256
+1751 LDSTL     =       (-256)*LDSTH+LDST
+1752 LDND    *=*+2
+1753 VECTR   *=*+2
+1754         .PAGE
+1755 ;=========================================================================
+1756 ;  ****  SIO  INTERRUPT  SERVICE  ROUTINES  ****
+1757 ;=========================================================================
+1758 ;       EQUATES FOR INTERRUPT ROUTINES MOVED FROM SIO ZERO PAGE
+1759 ;
+1760 ;       
+1761 ;-------------------------------------------------------------------------
+1762 BUFRLO  =       $32             ;POINTER TO BYTE TO SEND OR RECEIVE
+1763 BUFRHI  =       $33
+1764 BFENLO  =       $34             ;POINTER TO BYTE AFTER END OF BUFFER
+1765 BFENHI  =       $35
+1766 CHKSUM  =       $31             ;LOC TO STORE DATA FRAME CHECKSUM
+1767 CHKSNT  =       $3B             ;CHECKSUM SENT FLAG- =FF SENT
+1768 NOCKSM  =       $3C             ;FLAG NO CHECK SUM TO BE RECEIVED-NOT ZERO
+1769 STATUS  =       $30             ;HOLD FOR STATUS TO BE PUT IN DCB
+1770 BUFRFL  =       $38             ;FLAG-IF FF RECEIVE BUFFER IS FULL
+1771 RECVDN  =       $39             ;FLAG RECEIVE NOT DONE. USED BY WAIT LOOP
+1772 POKMSK  =       $10             ;POKEY INTERRUPT MASK SHADOW FOR IRQEN
+1773 ;=========================================================================
+1774 ;       HARDWARE REGISTERS USED IN SIO INTERRUPT ROUTINES
+1775 ;=========================================================================
+1776 SKRES   =       $D20A           ;SERIAL PORT STATUS RESET ON POKEY
+1777 SEROUT  =       $D20D           ;SERIAL OUTPUT REGISTER
+1778 SERIN   =       SEROUT          ;SERIAL PORT INPUT REG ON POKEY
+1779 IRQEN   =       $D20E           ;IRQ INTERRUPT ENABLE ON POKEY
+1780 SKSTAT  =       $D20F           ;SERIAL PORT STATUS REG ON POKEY
+1781 ;=========================================================================
+1782 ;       ERROR CODES RETURNED BY SIO
+1783 ;=========================================================================
+1784 FRMERR  =       $8C             ;FRAMING ERROR ON INPUT
+1785 OVRRUN  =       $8E             ;DATA FRAME OVER RUN-BIT D5 IN SKSTAT
+1786 CHKERR  =       $8F             ;DATA FRAME CHECKSUM ERROR
+1787         .PAGE
+1788 ;=========================================================================
+1789 ;  ****  INTERRUPT  SERVICE  ROUTINE  TO  OUTPUT  DATA  NEEDED  ****
+1790 ;=========================================================================
+1791 ;       KEITH BALL 6/10/80
+1792 ;-------------------------------------------------------------------------
+1793 ;       IT UPDATES THE BYTE TO PUT ON SERIAL I/O BUS POINTER
+1794 ;       UNTIL END OF BUFFER.  AFTER EACH UPDATE OF THE PTR ADDS THE
+1795 ;       VALUE OF THE BYTE TO THE CHECKSUM.  OUTPUTS THE CHECKSUM WHEN
+1796 ;       PTR EQUALS THE END OF BUFFER PTR (POINTS TO BYTE AFTER BUFFER).
+1797 ;       RETURNS TO THIS ROUTINE AFTER CHECKSUM PASSED AND RESETS POKEY
+1798 ;       INTERRUPT REG TO HAVE THE TRANSMIT DONE ROUTINE CALLED TO END
+1799 ;       WAIT LOOP (SEE SIO LISTING).
+1800 ;-------------------------------------------------------------------------
+1801 ;
+1802 ISRODN  TYA                     ;SAVE Y REG ON STACK
+1803         PHA
+1804 ;.........................................................................
+1805         INC     BUFRLO
+1806         BNE     NOWRP0          ;INCREMENT PTR TO NEXT BYTE
+1807         INC     BUFRHI          ;TO SEND
+1808 ;=========================================================================
+1809 ;       PATCH TO ROUTINE        CHANGED CHECK
+1810 ;=========================================================================
+1811 NOWRP0  LDA     BUFRLO          ;CHECK IF PTR IS WITHIN BUFFER
+1812         CMP     BFENLO          ;DO A DOUBLE PRECISION SUBTRACT
+1813         LDA     BUFRHI
+1814         SBC     BFENHI
+1815         BCC     NOTEND          ;BRANCH IF (BUFR) < (BFEN)-MORE TO SEND
+1816 ;.........................................................................
+1817         LDA     CHKSNT          ;TEST IF CHECKSUM ALREADY SENT
+1818         BNE     RELONE          ;BRANCH IF ALREADY SENT
+1819 ;=========================================================================
+1820 ;       SEND CHECKSUM AND SET FLAG
+1821 ;=========================================================================
+1822         LDA     CHKSUM
+1823         STA     SEROUT          ;PUT CHECKSUM IN SERIAL OUT REG
+1824         DEC     CHKSNT          ;SET FLAG TO FF HEX
+1825         BNE     CHKDON          ;RETURN
+1826 ;=========================================================================
+1827 ;       AFTER CHECKSUM SENT AND CAUSE NEXT INTERRUPT THEN CHANGE POKEY
+1828 ;       MASK TO ENABLE TRANSMIT DONE INTERRUPT AND TERMINATE WAIT LOOP.
+1829 ;=========================================================================
+1830 RELONE  LDA     POKMSK          ;GET POKEY MASK
+1831         ORA     #$08            ;OR IN ENABLE
+1832         STA     POKMSK
+1833         STA     IRQEN           ;ENABLE THE INTERRUPTS
+1834 ;=========================================================================
+1835 ;       RESTORE REGS AND RETURN
+1836 ;=========================================================================
+1837 CHKDON  PLA
+1838         TAY                     ;RESTOR Y REG
+1839         PLA                     ;RESTORE A REG SAVED IN OS IRQ INTERRUPT
+1840         RTI
+1841 ;=========================================================================
+1842 ;       MORE TO SEND.  SEND NEXT BYTE POINTED AT BY BUFR.
+1843 ;=========================================================================
+1844 NOTEND  LDY     #0
+1845         LDA     (BUFRLO),Y      ;GET NEXT BYTE
+1846         STA     SEROUT          ;PUT IN SERIAL OUT REG
+1847 ;.........................................................................
+1848         CLC
+1849         ADC     CHKSUM          ;ADD BYTE TO CHECKSUM
+1850         ADC     #0
+1851         STA     CHKSUM
+1852 ;-------------------------------------------------------------------------
+1853         JMP     CHKDON          ;GO RETURN AND WAIT FOR NEXT BYTE
+1854 ;-------------------------------------------------------------------------
+1855 ;        END OF OUT SERVICE ROUTINE **************************************
+1856         .PAGE
+1857 ;=========================================================================
+1858 ;  ****  SERIAL  INPUT  READY  INTERRUPT  SERVICE  ROUTINE  ****
+1859 ;=========================================================================
+1860 ;       KEITH BALL    6/11/80
+1861 ;-------------------------------------------------------------------------
+1862 ;       AFTER SERIAL RECEIVE IS ENABLED ROUTINE IS USED TO COLLECT
+1863 ;       BYTES FROM THE SERIAL INPUT REG AND PUT THEM IN BUFFER. 
+1864 ;       WILL STOP WHEN BUFFER IS FULL.  IF A CHECKSUM IS EXPECTED
+1865 ;       ROUTINE WILL MARK BUFFER FULL AND CONTINUE. WHEN CHECKSUM
+1866 ;       RECEIVED IT WILL CHECK IF = TO CHECKSUM IT WAS MAKING.
+1867 ;       WILL STORE ERRORS FOUND IN STATUS LOCATION.
+1868 ;       
+1869 ;       THE IRQ INTERRUPT HANDLER IN THE OS PUSHES THE USER'S A REGISTER 
+1870 ;       ONTO THE STACK BEFORE CALLING THIS ROUTINE.
+1871 ;       
+1872 ;-------------------------------------------------------------------------
+1873 ISRSIR  TYA                     ;SAVE Y REG ON STACK
+1874         PHA
+1875 ;=========================================================================
+1876 ;       GET STATUS FROM POKEY THEN RESET IT.
+1877 ;=========================================================================
+1878         LDA     SKSTAT
+1879         STA     SKRES           ;IGNORES VALUE- JUST STROBED
+1880 ;=========================================================================
+1881 ;       CHECK FOR ERRORS
+1882 ;=========================================================================
+1883         BMI     NTFRAM          ;BIT 8 SET IF NO FRAMING ERROR
+1884         LDY     #FRMERR
+1885         STY     STATUS          ;SET FRAME ERROR STATUS
+1886 ;-------------------------------------------------------------------------
+1887 NTFRAM  AND     #$20            ;IF BIT 5 CLEAR THEN FRAME OVER RUN
+1888         BNE     NTOVRN          ;BRANCH IF NO OVER RUN
+1889         LDY     #OVRRUN
+1890         STY     STATUS          ;ELSE SET OVERRUN ERROR STATUS
+1891 ;=========================================================================
+1892 ;       CHECK IF BUFFER FULL AND THIS IS A CHECKSUM.  IF IT IS, THEN CHECK
+1893 ;       IF DATA SENT WAS VALID.
+1894 ;=========================================================================
+1895 NTOVRN  LDA     BUFRFL          ;TEST FOR BUFFER FULL (NOT ZERO)
+1896         BEQ     NOTYET          ;IF ZERO THEN NOT YET, THIS IS DATA.
+1897         LDA     SERIN           ;ELSE THIS IS CHECKSUM
+1898         CMP     CHKSUM          ;ARE THEY EQUAL?
+1899         BEQ     SRETRN          ;YES,THEN RETURN
+1900         LDY     #CHKERR         ;ELSE SET CHECK SUM ERROR STATUS
+1901         STY     STATUS
+1902 ;=========================================================================
+1903 ;       SET RECEIVE DONE TO END WAIT LOOP
+1904 ;=========================================================================
+1905 SRETRN  LDA     #$FF            ;DONE VALUE
+1906         STA     RECVDN
+1907 ;=========================================================================
+1908 ;       RESTORE REGS AND RETURN
+1909 ;=========================================================================
+1910 SUSUAL  PLA
+1911         TAY                     ;RESTORE Y REG
+1912         PLA                     ;RESTORE A REG
+1913         RTI
+1914 ;=========================================================================
+1915 ;       IF BYTE IS DATA, THEN GET HERE.  PUT BYTE IN BUFFER AND CHECK IF
+1916 ;       AT END OF BUFFER.
+1917 ;=========================================================================
+1918 NOTYET  LDA     SERIN           ;GET DATA BYTE
+1919         LDY     #0
+1920         STA     (BUFRLO),Y      ;STORE IT IN THE BUFFER
+1921 ;.........................................................................
+1922         CLC
+1923         ADC     CHKSUM          ;ADD DATA BYTE TO CHECKSUM
+1924         ADC     #0
+1925         STA     CHKSUM
+1926 ;.........................................................................
+1927         INC     BUFRLO          ;INCREMENT POINTER TO LOCATION
+1928         BNE     NTWRP1          ;FOR NEXT BYTE INPUT
+1929         INC     BUFRHI
+1930 ;=========================================================================
+1931 ;       THE PATCH CHANGED THE TEST FOR END OF BUFFER
+1932 ;=========================================================================
+1933 NTWRP1  LDA     BUFRLO          ;DO DOUBLE PRECISION SUBTRACT
+1934         CMP     BFENLO
+1935         LDA     BUFRHI
+1936         SBC     BFENHI          ;CARRY CLEAR IF BORROW
+1937         BCC     SUSUAL          ;BRANCH IF (BUFR) < (BFEN)-WITHIN BUFFER
+1938 ;=========================================================================
+1939 ;       DONE WITH DATA.  SEE IF CHECKSUM TO BE SENT
+1940 ;=========================================================================
+1941         LDA     NOCKSM          ;IF = ZERO THEN A CHECKSUM
+1942         BEQ     GOON            ;WILL FOLLOW THE DATA
+1943 ;.........................................................................
+1944         LDA     #0              ;ELSE NO CHECKSUM TO FOLLOW
+1945         STA     NOCKSM          ;CLEAR NO CHECKSUM FLAG
+1946         BEQ     SRETRN          ;RETURN AFTER SET RECEIVE DONE FLAG
+1947 ;=========================================================================
+1948 ;       SET BUFFER FULL AND THEN GO GET CHECKSUM
+1949 ;=========================================================================
+1950 GOON    DEC     BUFRFL          ;SET BUFFER FULL FLAG TO FF
+1951         BNE     SUSUAL          ;GO RETURN
+1952 ;.........................................................................
+1953 ;       END OF RECEIVE SERIAL INPUT INTERRUPT ROUTINE*********************
+1954 MDEND   =       *
+1955         HILO MDEND
+1956 MDENDH     =       MDEND/256
+1957 MDENDL     =       (-256)*MDENDH+MDEND
+1958         *=$70C
+1959         .BYTE   MDENDL,MDENDH   ;SET END ADDRESS IN FMS PAST RESIDENT DUP
+1960                                 ;BUFFERS DON'T CLOBBER IT.
+1961 STAK    =       $100
+1962         HILO    STAK
+1963 STAKH     =       STAK/256
+1964 STAKL     =       (-256)*STAKH+STAK
+1965         .PAGE
+1966 ;=========================================================================
+1967 ;  ****  BEGINNING  OF  NON-RESIDENT  PORTION  OF  DUP  **** 
+1968 ;=========================================================================
+1969 NDOS    =       MDEND+$300      ;END OF THE SYSTEM BUFFERS AND M
+1970         HILO    NDOS
+1971 NDOSH     =       NDOS/256
+1972 NDOSL     =       (-256)*NDOSH+NDOS
+1973         *=NDOS
+1974 PAR     *=*+40  PARAMETER AREA
+1975 PARH    =       PAR/256
+1976 PARL    =       (-256)*PARH+PAR
+1977 LINE    *=*+80  TYPEIN LINE BUFFER
+1978 LBUFH   =       LINE/256
+1979 LBUFL   =       (-256)*LBUFH+LINE
+1980 DBUF    *=*+$100        DATA BUFFER FOR COPY
+1981 DB1     =       DBUF+$80
+1982 DB3     =       DBUF-3
+1983         HILO    DBUF
+1984 DBUFH     =       DBUF/256
+1985 DBUFL     =       (-256)*DBUFH+DBUF
+1986         HILO    DB1
+1987 DB1H     =       DB1/256
+1988 DB1L     =       (-256)*DB1H+DB1
+1989         HILO    DB3
+1990 DB3H     =       DB3/256
+1991 DB3L     =       (-256)*DB3H+DB3
+1992 DBLL    =       0
+1993 DBLH    =       1               ;DATA BUFFER LENGTH=$100
+1994 EDBLL   =       $FA             ;DATA BUFFER LENGTH USED IN USEPGM
+1995 EDBLH   =       0               ;MUST BE A MULTIPLE OF 125, SECTOR DATA L
+1996 MENUSZ  *=*+1
+1997 PER     *=*+1
+1998 UNNO    *=*+1
+1999 RCNT    *=*+1
+2000 SSTAT   *=*+1
+2001 SWDP    *=*+5
+2002 CSRC    *=*+1
+2003 CDES    *=*+1
+2004 SAVX    *=*+1
+2005 PTR     *=*+1
+2006 IPTR    *=*+1
+2007 CTR     *=*+1
+2008 T1      *=*+2
+2009 BUFLEN  =       T1              ;SAVE AREA FOR BUFFER LENGTH, USED IN USE
+2010 STVEC   *=*+2                   ;A TEMP OF SOME KIND
+2011 MLT125  =       STVEC           ;TEMP STORE FOR MULTIPLE OF 125, USEPGM
+2012 SECSIZ  *=*+2                   ;USED TO STORE SECTOR SIZE IN BYTES FOR DUP DISK
+2013 EOFFLG  *=*+1                   ;ENDFILE FLAG FOR SOURCE IN DUPFIL
+2014 FTRF    *=*+1                   ;FIRST TIME READ FLAG USED IN DUPFIL
+2015 TWODRV  =       FTRF            ;FLAG TO SHOW IF 1 OR 2 DRIVES. USED IN DUPDISK
+2016 DTH     =*
+2017         HILO    DTH
+2018 DTHH     =       DTH/256
+2019 DTHL     =       (-256)*DTHH+DTH
+2020 EDN     .BYTE   'E:',CR
+2021 EDH     =       EDN/256
+2022 EDL     =       (-256)*EDH+EDN
+2023         .PAGE
+2024 ;=========================================================================
+2025 ;  ****  DOS  MENU  ****
+2026 ;=========================================================================
+2027 DMENU   .BYTE   CLSCR
+2028         .BYTE   'DISK OPERATING SYSTEM II VERSION 2.0S',CR
+2029         .BYTE   'COPYRIGHT 1980 ATARI',CR,CR
+2030         .BYTE   'A. DISK DIRECTORY I. FORMAT DISK',CR
+2031         .BYTE   'B. RUN CARTRIDGE  J. DUPLICATE DISK',CR
+2032         .BYTE   'C. COPY FILE      K. BINARY SAVE',CR
+2033         .BYTE   'D. DELETE FILE(S) L. BINARY LOAD',CR
+2034         .BYTE   'E. RENAME FILE    M. RUN AT ADDRESS',CR
+2035         .BYTE   'F. LOCK FILE      N. CREATE MEM.SAV',CR
+2036         .BYTE   'G. UNLOCK FILE    O. DUPLICATE FILE',CR
+2037         .BYTE   'H. WRITE DOS FILES',CR
+2038         .BYTE   CDN,CDN,CDN,CDN,CDN
+2039 DMEND   =*
+2040 DULEN   =       DMEND-DMENU
+2041         HILO    DULEN
+2042 DULENH     =       DULEN/256
+2043 DULENL     =       (-256)*DULENH+DULEN
+2044         HILO    DMENU
+2045 DMENUH     =       DMENU/256
+2046 DMENUL     =       (-256)*DMENUH+DMENU
+2047 ;
+2048 DUJPT   .WORD   DIRLST,STCAR,CPYFIL,DELFIL,RENFIL,LKFIL,ULFIL
+2049         .WORD   WBOOT,FMTDSK,DUPDSK,SAVFIL,LDFIL,BRUN,MEMSAV
+2050         .WORD   DUPFIL
+2051         HILO    DUJPT
+2052 DUJPTH     =       DUJPT/256
+2053 DUJPTL     =       (-256)*DUJPTH+DUJPT
+2054 DUNUM      =       15           ;NUMBER OF FUNCTIONS
+2055         .PAGE
+2056 ;=========================================================================
+2057 ;  ****  DISK  OPERATING  SYS  MONITOR  ****
+2058 ;=========================================================================
+2059 DOSOS   LDX     #$FF
+2060         HILO    DOSOS
+2061 DOSOSH     =       DOSOS/256
+2062 DOSOSL     =       (-256)*DOSOSH+DOSOS
+2063         CLD                     ;MAKE SURE DECIMAL MODE OFF
+2064         STX     BRKKEY
+2065         INX
+2066         STX     LOADFG
+2067         LDA     #2
+2068         STA     LMARGN
+2069         LDA     #39
+2070         STA     RMARGN          ;SET MARGINS
+2071         LDA     POKMSK          ;ENABLE BREAK INTERRRUPTS
+2072         ORA     #$80
+2073         STA     POKMSK
+2074         STA     IRQEN
+2075         JSR     INITIO          ;CLOSE FILES
+2076 ;=========================================================================
+2077 ;       DISK UTILITY MONITOR
+2078 ;=========================================================================
+2079 DSKUTL
+2080 DU1     LDA     #DUNUM
+2081         STA     MENUSZ          ;SET MENU SIZE.
+2082         LDA     #.LOW.DUJPTL
+2083         STA     JMPTBL
+2084         LDA     #.LOW.DUJPTH
+2085         STA     JMPTBL+1        ;SET UP JUMP TABLE ADDRESS
+2086 ;------------------------------------------------------------------------- 
+2087 ; FALL THRU TO MENU SELECT
+2088 ;
+2089 ;=========================================================================
+2090 ;       MENU SELECT MONITOR -- VECTORS TO ROUTINE SELECTED FROM MENU.
+2091 ;=========================================================================
+2092 SHMEN   LDA     #.LOW.DMENUL    ;GET MENU ADDRESS
+2093         STA     ICBAL
+2094         LDA     #.LOW.DMENUH
+2095         STA     ICBAH
+2096         LDA     #.LOW.DULENL    ;GET MENU LENGTH
+2097         STA     ICBLL
+2098         LDA     #.LOW.DULENH
+2099         STA     ICBLH
+2100         JSR     DSPMSG          ;SHOW MENU
+2101 ;.........................................................................
+2102 ;SELECT ITEM FROM MENU
+2103         .PAGE
+2104 ;=========================================================================
+2105 ;  ****  FUNCTIONS COME HERE WHEN THEY ARE DONE  **** 
+2106 MENUSL  LDX     #$FF            ;RESET STACK AT THIS POINT
+2107         TXS
+2108         INX
+2109         STX     WCFLAG          ;CLEAR WILD-CARD FLAG
+2110         LDA     #.LOW.SITL      ;SELECT ITEM MESSAGE
+2111         LDX     #.LOW.SITH
+2112         JSR     PRNTMSG
+2113         LDA     #$40            ;MAKE SURE UPPER CASE
+2114         STA     SHFLOK
+2115         JSR     CHRGET          ;GO GET KEYBOARD CHAR.
+2116 ;.........................................................................
+2117         CMP     #CR             ;IF CR REDISPLAY MENU
+2118         BEQ     SHMEN
+2119 ;.........................................................................
+2120         SEC
+2121         SBC     #'A             ;CONVERT ASCII CHAR. TO BINARY # & SUBTRACT
+2122         BMI     RANGE           ;IF ASCII CHAR NOT A #, GO READ AGAIN
+2123         CMP     MENUSZ          ;IS THE # ENTERED > MENU SIZE?
+2124         BPL     RANGE           ;IF YES, GO READ AGAIN.
+2125         ASL     A
+2126         TAY                     ;SET INDEX TO (MENU # - 1) * 2
+2127         LDA     (JMPTBL),Y
+2128         INY
+2129         STA     RAMLO           ;GET STRING POINTER
+2130         LDA     (JMPTBL),Y
+2131         STA     RAMLO+1
+2132         LDY     #1              ;LOAD STRING POINTER INTO REGISTERS
+2133         LDA     (RAMLO),Y       ;FOR DSPLIN
+2134         TAX
+2135         DEY
+2136         LDA     (RAMLO),Y
+2137         JSR     DSPLIN          ;PRINT MODULES INITIAL STRING
+2138         JSR     SCROL           ;SCROLL INPUT WINDOW
+2139         LDA     RAMLO           ;INC BY 2 TO POINT PAST STRING POINTER
+2140         CLC
+2141         ADC     #2
+2142         STA     RAMLO
+2143         LDA     RAMLO+1
+2144         ADC     #0      CARRY
+2145         STA     RAMLO+1         ;PUT HI BYTE.
+2146         JMP     (RAMLO)         ;JUMP TO ROUTINE SELECTED BY MENU.
+2147 RANGE   LDA     #.LOW.NSIL
+2148         LDX     #.LOW.NSIH
+2149         JSR     DSPLIN          ;NO SUCH ITEM MESSAGE
+2150         JMP     MENUSL
+2151         .PAGE
+2152 NSI     .BYTE   'NO SUCH ITEM',CR
+2153 ;=========================================================================
+2154 ;       PROMPT FOR MENU SELECTION OR REDISPLAY MENU - RETURN IS IN INVER
+2155 ;=========================================================================
+2156 SIT     .BYTE   'SELECT ITEM OR ',$D2,$C5,$D4,$D5,$D2,$CE
+2157         .BYTE   ' FOR MENU',CR
+2158         HILO    NSI
+2159 NSIH     =       NSI/256
+2160 NSIL     =       (-256)*NSIH+NSI
+2161         HILO    SIT
+2162 SITH     =       SIT/256
+2163 SITL     =       (-256)*SITH+SIT
+2164 MNSL    =       MENUSL
+2165         HILO    MNSL
+2166 MNSLH     =       MNSL/256
+2167 MNSLL     =       (-256)*MNSLH+MNSL
+2168         .PAGE
+2169 ;=========================================================================
+2170 ;  ****  DIRECTORY  LISTING  ROUTINE  ****
+2171 ;=========================================================================
+2172 DIRLST  .WORD   DLMG
+2173         JSR     GETIC1
+2174         JSR     USEBUF          ;INIT BUFADR & BUFLEN
+2175         LDX     PTR
+2176         LDA     #CR
+2177         STA     PAR-1,X         ;ASSURE GOOD TERM
+2178         LDA     PAR-2,X         ;LAST CHAR OF SEARCH SPEC
+2179         CMP     #':             ;IF COLON, ADD *.*
+2180         BNE     GLF
+2181         LDA     #'*
+2182         STA     PAR-1,X
+2183         STA     PAR+1,X
+2184         LDA     #'.
+2185         STA     PAR,X
+2186         LDA     #CR
+2187         STA     PAR+2,X
+2188         INX
+2189         INX
+2190         INX
+2191         STX     PTR
+2192 GLF     STX     SAVX
+2193         LDX     #$20
+2194         JSR     PIOCB
+2195         JSR     GETFIL
+2196         JSR     PERX
+2197         LDA     #6              ;READ DIR INFO
+2198         LDX     #$10
+2199         STA     ICAX1,X
+2200         LDA     #OPEN           ;OPEN
+2201         STA     ICCOM,X
+2202         STX     CSRC            ;COPY SOURCE=DIRECTORY INFO
+2203         CPX     #$10
+2204         BNE     *+3
+2205         JSR     CIOCL
+2206         LDA     PTR
+2207         SEC
+2208         SBC     SAVX
+2209         CMP     #3              ;IF ONLY 3 CHARS, IS 'D:'CR, USE DEFAULT
+2210         BEQ     DLST1
+2211 DLST0   JMP     PDES            ;GO INTO COPY
+2212 DLST1   LDX     SAVX
+2213         LDA     PAR,X
+2214         CMP     #'D
+2215         BNE     DLST0
+2216         JMP     PDES1           ;GO INTO COPY WITH DES='E:'
+2217         .PAGE
+2218 DLMG    .BYTE   'DIRECTORY--SEARCH SPEC,LIST FILE?',CR
+2219 ;=========================================================================
+2220 ;  ****  DELETE  FILE  ROUTINE  ****
+2221 ;=========================================================================
+2222 DELFIL  .WORD   DEMG
+2223         JSR     GETIC1
+2224         JSR     PERX            ;EXIT IF PARAM ERRORS
+2225 ;-------------------------------------------------------------------------
+2226         JSR     CHKVER          ;BE SURE THAT IT IS VER. 2 DISKETTE
+2227 ;=========================================================================
+2228 ;       CONTINUE WITH DELETE - ALLOW ONLY FOR DISK DEVICE ID
+2229 ;=========================================================================
+2230         LDA     PAR             ;GET DEVICE
+2231         CMP     #'D             ;ONLY ALLOW DELETE FOR D:
+2232         BEQ     DF1
+2233         LDA     #.LOW.NDFL
+2234         LDX     #.LOW.NDFH
+2235         JSR     DSPLIN
+2236         JMP     MENUSL
+2237 NDF     .BYTE   'NOT A DISK FILE',CR
+2238         HILO    NDF
+2239 NDFH     =       NDF/256
+2240 NDFL     =       (-256)*NDFH+NDF
+2241 DF1     LDX     #$10
+2242         LDA     OPT
+2243         CMP     #'N             ;IF OPTION=N, NO QUERY
+2244         BNE     DWQ             ;NO, DELETE WITH QUERY
+2245         LDA     #DELETE
+2246         STA     ICCOM,X
+2247         JSR     CIOCL
+2248         JMP     MENUSL
+2249 DWQ     LDA     #.LOW.TYQL
+2250         LDX     #.LOW.TYQH
+2251         JSR     DSPLIN  SAY TYPE Y TO DELETE...
+2252         LDA     #0
+2253         STA     IPTR            ;HOW MANY FILES TO SKIP, NONE AT FIRST
+2254         LDX     #$20            ;SET UP DELETE IOCB
+2255         LDA     #DELETE
+2256         STA     ICCOM,X
+2257         LDA     #.LOW.DB3L
+2258         STA     ICBAL,X
+2259         LDA     #.LOW.DB3H
+2260         STA     ICBAH,X
+2261         LDA     #'D
+2262         STA     DBUF-3
+2263         LDA     #':
+2264         STA     DBUF-1
+2265         LDA     PAR+1           ;DEVICE NUMBER OR : FROM OP INPUT
+2266         CMP     #':
+2267         BNE     *+4
+2268         LDA     #'1
+2269         STA     DBUF-2          ;KLUDGE KLUDGE KLUDGE
+2270 IDRD    LDX     #$10
+2271         LDA     #OPEN
+2272         STA     ICCOM,X
+2273         LDA     #6
+2274         STA     ICAX1,X         ;DIR READ OPEN
+2275         LDA     #PARL
+2276         STA     ICBAL,X
+2277         LDA     #PARH
+2278         STA     ICBAH,X
+2279         JSR     CIOCL
+2280         LDA     #.LOW.DBUFL
+2281         STA     ICBAL,X
+2282         LDA     #.LOW.DBUFH
+2283         STA     ICBAH,X
+2284         LDA     #GETREC
+2285         STA     ICCOM,X
+2286         LDA     #0
+2287         STA     PTR             ;HOW MANY FILES WE HAVE SKIPPED
+2288 ;READ FILENAME FROM DIR, QUERY AND DELETE
+2289 RDFN    LDX     #$10
+2290         LDA     #0
+2291         STA     ICBLL,X
+2292         LDA     #1
+2293         STA     ICBLH,X
+2294         JSR     CIOCL           ;READ A LINE FROM DIRECTORY
+2295         LDA     DBUF+1          ;IF FILE LINE, THIS IS BLANK
+2296         CMP     #'
+2297         BNE     DELX            ;THIS IS FREE BLOCKS LINE
+2298         INC     PTR             ;COUNT THIS FILE
+2299         LDA     PTR             ;HAVE WE SKIPPED ENUF YET
+2300         CMP     IPTR
+2301         BMI     RDFN            ;BR IF NO
+2302         LDX     #0              ;PUT PTR
+2303         LDY     #2              ;GET PTR
+2304 ;MASSAGE DELETE FILE NAMES
+2305 MDN1    LDA     DBUF,Y
+2306         CMP     #'              ;END OF FILENAME
+2307         BEQ     MDN2
+2308         STA     DBUF,X
+2309         INX
+2310         INY
+2311         CPX     #8
+2312         BMI     MDN1
+2313 ;FILENAME IS MOVED, PUT .EXT
+2314 MDN2    LDA     #'.
+2315         STA     DBUF,X
+2316         INX
+2317         LDY     #10             ;WHERE EXT IS
+2318 MDN3    LDA     DBUF,Y
+2319         STA     DBUF,X
+2320         INY
+2321         INX
+2322         CPY     #13
+2323         BMI     MDN3
+2324         STX     SAVX            ;PUT CR HERE LATER
+2325         LDA     #'?             ;FOR QUERY
+2326         STA     DBUF,X
+2327         INX
+2328         LDA     #CR
+2329         STA     DBUF,X
+2330         LDA     #.LOW.DB3L
+2331         LDX     #.LOW.DB3H
+2332         JSR     DSPLIN          ;GO ASK ABOUT THIS FILE
+2333         JSR     CHRGET
+2334         CMP     #'Y
+2335         BNE     RDFN            ;GO DO NEXT FILENAME
+2336         LDA     PTR             ;NUMBER FILES WE HAVE GONE THRU SO FAR
+2337         STA     IPTR            ;IS NEW NUMBER TO SKIP.
+2338         LDX     SAVX
+2339         LDA     #CR
+2340         STA     DBUF,X
+2341         LDX     #$20            ;DELETE IOCB
+2342         JSR     CIOCL
+2343         JSR     CLOS1
+2344         JMP     IDRD            ;CLOSE AND REOPEN DIR READ FILE
+2345 DELX    JSR     CLOS1           ;CLOSE DIR READ FILE
+2346         JMP     MENUSL
+2347 CLOS1   LDX     #$10
+2348         LDA     #CLOSE
+2349         STA     ICCOM,X
+2350         JMP     CIOCL           ;DO CLOSE AND RETURN
+2351 TYQ     .BYTE   'TYPE ',$22,'Y',$22,' TO DELETE...',CR
+2352         HILO    TYQ
+2353 TYQH     =       TYQ/256
+2354 TYQL     =       (-256)*TYQH+TYQ
+2355 DEMG    .BYTE   'DELETE FILE SPEC',CR
+2356 ;LIST
+2357         .PAGE
+2358 ;=========================================================================
+2359 ;  ****  COPY FILE ROUTINE  ****
+2360 ;=========================================================================
+2361 CPMG    .BYTE   'COPY--FROM, TO?',CR
+2362 OE      .BYTE   'OPTION NOT ALLOWED',CR
+2363         HILO    OE
+2364 OEH     =       OE/256
+2365 OEL     =       (-256)*OEH+OE
+2366 ;.........................................................................
+2367 ;
+2368 ;
+2369 ;
+2370 ;
+2371 WCFLAG  *=*+1
+2372 WCSKP1  *=*+1
+2373 WCSKP2  *=*+1
+2374 WCBUFL  =       20
+2375 WCBUF   *=*+WCBUFL
+2376 WCOPYM  .BYTE   '  COPYING---'
+2377 WCBUF2  .BYTE   'DN:'
+2378         *=*+WCBUFL-3
+2379 CPYFIL  .WORD   CPMG            ;COPY FILE PROMPT
+2380         JSR     GETIC1          ;GET SOURCE DEVICE, ETC.
+2381         LDA     PTR
+2382         STA     SAVX
+2383         LDA     PAR             ;GET 1ST CHAR. OF DEVICE
+2384         CMP     #'D             ;TEST IF IT IS THE DISK
+2385         BNE     JMPNWC          ;BRANCH IF NOT THE DISK (THEN USE OLD CODE)
+2386         LDX     #0              ;LOOK AT SOURCE FILE SPEC.
+2387         JSR     LOOKWC          ;LOOK FOR WILDCARDS IN FILE SPEC.
+2388         BEQ     CPYFL1          ;BRANCH IF WILDCARDS USED IN DISK SPEC.
+2389 JMPNWC  JMP     NOTWC           ;USE OLD CODE
+2390 CPYFL1  LDA     #$80
+2391 ;.........................................................................
+2392 ;
+2393 WCINIT  STA     WCFLAG          ;SET 'WILDCARD' MODE  (COPY-FILE OR DUPLICATE)
+2394         LDA     #0
+2395         STA     WCSKP1
+2396 ;-------------------------------------------------------------------------
+2397 WCOPYL  LDA     #0
+2398         STA     WCSKP2
+2399         LDX     #$10            ;OPEN DIRECTORY
+2400         LDA     #6
+2401         STA     ICAX1,X
+2402         LDA     #OPEN
+2403         STA     ICCOM,X
+2404         LDA     #.LOW.PAR
+2405         STA     ICBAL,X
+2406         LDA     #.HIGH.PAR
+2407         STA     ICBAH,X
+2408         JSR     CIOCL
+2409 ;
+2410 ;-------------------------------------------------------------------------
+2411 WCOPYR  LDA     #GETREC         ;READ DIRECTORY
+2412         STA     ICCOM,X
+2413         LDA     #WCBUFL
+2414         STA     ICBLL,X
+2415         LDA     #0
+2416         STA     ICBLH,X
+2417         LDA     #.LOW.WCBUF
+2418         STA     ICBAL,X
+2419         LDA     #.HIGH.WCBUF
+2420         STA     ICBAH,X
+2421         JSR     CIOCL
+2422 ;.........................................................................
+2423         LDA     WCBUF           ;IF 1ST CHAR. OF DIRECTORY READ IS AN # -
+2424         CMP     #'0
+2425         BCC     WCGOT
+2426         CMP     #':
+2427         BCS     WCGOT
+2428 ;.........................................................................
+2429         LDA     #CLOSE          ;ALL DONE -- NORMAL EXIT OF WILDCARDED CMD
+2430         STA     ICCOM,X
+2431         JSR     CIOCL
+2432         JMP     MENUSL
+2433 ;
+2434 ;-------------------------------------------------------------------------
+2435 WCGOT   LDA     WCSKP1          ;IF ALREADY COPIED OR SKIPPED THIS FILE
+2436         CMP     WCSKP2
+2437         BEQ     SKIP1
+2438 ;.........................................................................
+2439         INC     WCSKP2
+2440         BNE     WCOPYR
+2441 ;-------------------------------------------------------------------------
+2442 SKIP1   INC     WCSKP1
+2443 ;
+2444         LDA     #CLOSE          ;CLOSE DIRECTORY READ FILE
+2445         STA     ICCOM,X
+2446         JSR     CIOCL
+2447 ;
+2448 ;-------------------------------------------------------------------------
+2449         LDY     #2              ;DON'T COPY .SYS FILES
+2450 SYSLOP  LDA     WCBUF+10,Y
+2451         CMP     DOTSYS,Y
+2452         BNE     NOSYS
+2453         DEY
+2454         BPL     SYSLOP
+2455         BMI     WCOPYL
+2456 ;-------------------------------------------------------------------------
+2457 DOTSYS  .BYTE   'SYS'
+2458 ;-------------------------------------------------------------------------
+2459 NOSYS   LDY     #'1             ;CALC SOURCE DRIVE NUMBER
+2460         LDA     PAR+1
+2461         CMP     #':
+2462         BEQ     WCGOT1
+2463         TAY
+2464 WCGOT1  STY     WCBUF2+1
+2465 ;
+2466 ;.........................................................................
+2467         LDX     #2              ;COMPRESS SPACES, ADD ':', ADD 'CR'
+2468         LDY     #3
+2469 ;-------------------------------------------------------------------------
+2470 COMPR1  LDA     WCBUF,X
+2471         CMP     #'
+2472         BEQ     COMPR2
+2473         STA     WCBUF2,Y
+2474         INY
+2475 ;-------------------------------------------------------------------------
+2476 COMPR2  INX
+2477         CPX     #10
+2478         BNE     COMPR1
+2479 ;.........................................................................
+2480         LDA     WCBUF,X
+2481         CMP     #'
+2482         BEQ     COMPR5
+2483         LDA     #'.
+2484         STA     WCBUF2,Y
+2485         INY
+2486 COMPR3  LDA     WCBUF,X
+2487         CMP     #'
+2488         BEQ     COMPR4
+2489         STA     WCBUF2,Y
+2490         INY
+2491 COMPR4  INX
+2492         CPX     #13
+2493         BNE     COMPR3
+2494 ;-------------------------------------------------------------------------
+2495 COMPR5  LDA     #CR
+2496         STA     WCBUF2,Y
+2497 ;.........................................................................
+2498 ;
+2499         LDA     #.LOW.WCOPYM    ;PRINT 'COPYING---DEV:FILENAME.EXT' MESSAGE
+2500         LDX     #.HIGH.WCOPYM
+2501         JSR     DSPLIN
+2502 ;.........................................................................
+2503         BIT     WCFLAG
+2504         BVC     WCOPY           ;BRANCH TO MIDDLE OF DUPLICATE FILE ROUTINE
+2505 ;
+2506         LDX     #$10            ;SET UP BUFFER ADDRESS TO POINT TO WILDCARD
+2507         LDA     #.LOW.WCBUF2
+2508         STA     ICBAL,X
+2509         LDA     #.HIGH.WCBUF2
+2510         STA     ICBAH,X
+2511         JMP     WCDUPS
+2512 ;-------------------------------------------------------------------------
+2513 WCOPY   JSR     USEPGM          ;SET BUFFER SIZES
+2514         LDX     #$10            ;OPEN COPY SORCE FILE
+2515         LDA     #OPEN
+2516         STA     ICCOM,X
+2517         LDA     #4
+2518         STA     ICAX1,X
+2519         LDA     #.LOW.WCBUF2
+2520         STA     ICBAL,X
+2521         LDA     #.HIGH.WCBUF2
+2522         STA     ICBAH,X
+2523         STX     CSRC
+2524         JSR     CIOCL
+2525 ;.........................................................................
+2526         LDX     #$20
+2527         JSR     PIOCB           ;GET COPY DESTINATION FILE
+2528         LDA     PTR             ;SAVE  PTR,IPTR BECAUSE MIGHT REPEAT GETTING
+2529 MES
+2530         PHA
+2531         LDA     IPTR
+2532         PHA
+2533         JSR     GETFIL          ;GET 2ND FILE NAME TO PAR
+2534         PLA                     ;RECOVER  IPTR,PTR
+2535         STA     IPTR
+2536         PLA
+2537         STA     PTR
+2538         LDX     SAVX
+2539         LDA     PAR,X
+2540         CMP     #'D
+2541         BEQ     WCOPY0
+2542         JMP     PDES            ;JUMP TO OLD COPY-FILE CODE IF NOT A DISK
+2543 ;-------------------------------------------------------------------------
+2544 WCOPY0  LDY     #'1             ;CALCULATE DESTINATION DRIVE #
+2545         LDA     PAR+1,X
+2546         CMP     #':
+2547         BEQ     WCOPY1
+2548 ;-------------------------------------------------------------------------
+2549         TAY
+2550 WCOPY1  CPY     WCBUF2+1
+2551         BNE     WCOPY2
+2552         JSR     CLOSX           ;CAN NOT COPY TO SAME DRIVE NUMBER -- ERROR
+2553 ;.........................................................................
+2554         JMP     ODMS
+2555 ;
+2556 ;-------------------------------------------------------------------------
+2557 WCOPY2  LDX     #$20
+2558         STY     WCBUF2+1        ;CHANGE FILESPEC TO DESTINATION
+2559         LDA     #.LOW.WCBUF2
+2560         STA     ICBAL,X
+2561         LDA     #.HIGH.WCBUF2
+2562         STA     ICBAH,X
+2563         JMP     OPDES1          ;CONTINUE INTO OLD COPY-FILE CODE
+2564 ;
+2565 ;-------------------------------------------------------------------------
+2566 NOTWC   =       *
+2567         LDX     #$20    IOCB 3
+2568         JSR     PIOCB
+2569         JSR     GETFIL          ;GET SECOND FILENAME
+2570 ;=========================================================================
+2571 ;       MAKE SURE DESTINATION IS NOT DOS.SYS
+2572 ;=========================================================================
+2573         LDX     SAVX            ;ENTRY-INDEX TO DEST FILE SPEC
+2574         JSR     TSTDOS          ;WON'T RETURN IF IS DOS.SYS
+2575 ;.........................................................................
+2576         LDX     SAVX
+2577         JSR     LOOKWC
+2578         BNE     NWCIND          ;BRANCH IF NO WILDCARDS IN DESTINATION
+2579         LDA     #.LOW.NWAL
+2580         LDX     #.LOW.NWAH
+2581         JSR     DSPLIN
+2582         JMP     MENUSL
+2583 NWA     .BYTE   'WILD CARDS NOT ALLOWED IN DESTINATION',CR
+2584         HILO    NWA
+2585 NWAH     =       NWA/256
+2586 NWAL     =       (-256)*NWAH+NWA
+2587 NWCIND  =       *
+2588         JSR     PERX            ;IF PARAM ERRS, EXIT
+2589         JSR     USEPGM          ;ASK USER IF CAN USE PGM AREA OR DATA BUF
+2590 PSRC    =       *
+2591         LDA     PAR             ;GET 1ST LETR OF PARAM
+2592         CMP     #'K
+2593         BEQ     ODMS            ;K: GETS 'OPTION DOES NOT MAKE SENSE' FOR NOW
+2594         CMP     #'C
+2595         BEQ     ODMS            ;C: GETS 'OPTION DOES NOT MAKE SENSE' FOR NOW
+2596         CMP     #'E             ;E: AS SOURCE IS SPECIAL
+2597         BNE     OPSRC           ;IF NO THEN OPEN SOURCE FILE
+2598         LDX     #0
+2599         STX     CSRC
+2600         JMP     PDES
+2601 OPSRC   CMP     #'S
+2602         BEQ     ODMS            ;S: AS SOURCE GETS 'OPTION DOES NOT MAKE SENSE' FOR NOW
+2603 ;=========================================================================
+2604 ;       OPEN SOURCE FILE
+2605 ;=========================================================================
+2606         LDX     #$10
+2607         LDA     #OPEN
+2608         STA     ICCOM,X
+2609         LDA     #4              ;OPEN IN
+2610         STA     ICAX1,X
+2611         STX     CSRC
+2612         CPX     #$10
+2613         BNE     *+33
+2614         JSR     CIOCL           ;OPEN SOURCE FILE HERE
+2615 ;=========================================================================
+2616 ;       READY FOR OPEN OF DESTINATION
+2617 ;=========================================================================
+2618 PDES    LDX     SAVX
+2619         LDA     PAR,X
+2620 ;.........................................................................
+2621         CMP     #'K             ;IS DEST KEYBOARD?
+2622         BEQ     ODMS            ;YES, THEN CAN'T DO IT
+2623 ;.........................................................................
+2624         CMP     #'E             ;CHECK FOR SPECIAL CASE
+2625         BNE     OPDES           ;IF NOT
+2626 PDES1   LDA     #0              ;SPECIAL CASE - DONT OPEN, USE EXISTING IOCB
+2627         STA     CDES
+2628         JMP     DOCPY
+2629 ODMS    LDA     #OEL
+2630         LDX     #OEH            ;SAY OPTION NOT ALLOWED
+2631         JSR     DSPLIN
+2632         JSR     CLOSX           ;CLOSE IOCB 1 & 2
+2633         JMP     MENUSL
+2634 ;-------------------------------------------------------------------------
+2635 OPDES   CMP     #'C
+2636         BEQ     ODMS            ;C: GETS 'OPTION DOESNOT MAKE SENSE' FOR NOW
+2637         LDX     OPT             ;GET 2ND FILE OPTION
+2638 ;.........................................................................
+2639         CPX     #'A             ;APPEND TO DISK FILE
+2640         BNE     OPDES1
+2641         CMP     #'D
+2642         BNE     ODMS
+2643         LDA     #9
+2644         BNE     OPDES3
+2645 OPDES1  LDA     #8
+2646 OPDES3  LDX     #$20
+2647         STA     ICAX1,X OPEN TYPE OUT
+2648         LDA     #OPEN
+2649         STA     ICCOM,X OPEN
+2650         STX     CDES
+2651         JSR     CIOCL
+2652         LDA     #0
+2653         STA     ICAX2,X
+2654 ;COPY FROM CSRC TO CDES
+2655 DOCPY   LDA     #GETCHR
+2656 GC1     LDX     CSRC
+2657         LDY     CDES
+2658         STA     ICCOM,X
+2659         LDA     #PUTCHR
+2660         STA     ICCOM,Y
+2661         LDA     BUFADR          ;ADDRESS OF BUFFER - EITHER
+2662         STA     ICBAL,X         ;PGM AREA (MEMLO) OR DATA BUFFER (DBUF)
+2663         STA     ICBAL,Y
+2664         LDA     BUFADR+1        ;BUFADR IN LSB,MSB ORDER
+2665         STA     ICBAH,X
+2666         STA     ICBAH,Y
+2667 CLOOP   LDX     CSRC
+2668         LDA     BUFLEN          ;LENGTH OF BUFFER ADDRESSED
+2669         STA     ICBLL,X         ;BY BUFADR
+2670         LDA     BUFLEN+1        ;BOTH BUFADR & BUFLEN ARE ASSIGNED
+2671         STA     ICBLH,X         ;IN SUBROUTINE USEPGM
+2672         JSR     CIO             ;READ FROM INPUT
+2673         STY     SSTAT
+2674         LDX     CDES
+2675         LDY     CSRC
+2676         LDA     ICBLL,Y
+2677         STA     ICBLL,X
+2678         LDA     ICBLH,Y
+2679         STA     ICBLH,X
+2680         ORA     ICBLL,Y         ;IF SOURCE FILE LENGTH = 0
+2681         BEQ     CKRS            ;DONT DO WRITE
+2682         JSR     CIOCL           ;WRITE, ABORT IF ERROR
+2683 CKRS    LDA     SSTAT           ;GET READ OPERATION STATUS BACK
+2684         BPL     CLOOP           ;IF OK, GO READ SOME MORE
+2685         CMP     #$88            ;EOF STATUS
+2686         BEQ     *+5
+2687         JMP     CIOER           ;IF NOT, ABORT
+2688 CLOC    LDX     CSRC
+2689         BEQ     DU4             ;IF E:, DONT CLOSE
+2690 ;=========================================================================
+2691 ;CLOSE SOURCE FILE
+2692 ;=========================================================================
+2693         LDA     #CLOSE
+2694         STA     ICCOM,X
+2695         JSR     CIO
+2696 DU4     LDX     CDES
+2697         BEQ     DU3             ;IF DES=E:
+2698         LDA     #CLOSE
+2699         STA     ICCOM,X
+2700         JSR     CIO
+2701 DU3     LDX     CDES
+2702         BNE     DU6
+2703         LDA     #.LOW.DDSK+1
+2704         LDX     #.HIGH.(DDSK+1)
+2705         JSR     PRNTMSG         ;PRINT A CR BEFORE SELECT OR WILDCARD PRO
+2706 DU6     =       *
+2707 ;.........................................................................
+2708         BIT     WCFLAG
+2709         BPL     DU5
+2710         JMP     WCOPYL          ;BRANCH BACK TO WILD CARD LOOP
+2711 DU5     JMP     MENUSL
+2712         .PAGE
+2713 ;=========================================================================
+2714 ;  ****  RENAME  FILE  ROUTINE  **** 
+2715 ;=========================================================================
+2716 ;       RENAME SETS UP IOCB #1 WITH THE OLD FILE NAME AND THE BUFFER ADD
+2717 ;       POINTS TO THE NEW FILE NAME.  THE NEW FILE SPECIFICATION CANNOT
+2718 ;       A DEVICE ID.  THE DEVICE ID IS THE SAME AS SPECIFIED FOR THE OLD
+2719 ;               EG D2:ABC.S2,QQQ.R3     THIS RENAMES ABC.S2 ON DRIVE #2
+2720 ;                                       QQQ.R3
+2721 ;-------------------------------------------------------------------------
+2722 RENFIL  .WORD   RNMG
+2723         JSR     GETIC1          ;GET OLD FILE SPEC & PUT ADDR IN IOCB
+2724         JSR     GETNAME         ;GET NEW FILE NAME
+2725         JSR     PERX            ;EXIT IF PARAMETER ERRORS
+2726 ;.........................................................................
+2727         JSR     CHKVER          ;MAKE SURE VER 2 DISKETTE
+2728 ;=========================================================================
+2729 ;       CONTINUE WITH RENAME
+2730 ;=========================================================================
+2731         LDA     #RENAME
+2732         LDX     #$10
+2733         STA     ICCOM,X
+2734         JSR     CIOCL
+2735         JMP     MENUSL
+2736 RNMG    .BYTE   'RENAME - GIVE OLD NAME, NEW',CR
+2737 ;=========================================================================
+2738 ;*******************   SUBROUTINE   *******************
+2739 ;
+2740 ;       MAKE SURE THIS IS A VERSION 2 FORMAT DISK
+2741 ;=========================================================================
+2742 CHKVER  LDY     #1              ;ASSUME DRIVE 1- GET DRIVE #
+2743         LDA     PAR+1           ;TEST CHAR 2 OF FILE SPEC FOR SEMICOLON
+2744         CMP     #':             ;IF IS, USING DEFAULT DRIVE (1)
+2745         BEQ     DRV1            ;IT IS, SO SAVE DRIVE #
+2746         AND     #$0F            ;ELSE CHAR 2 IS ASCII REP OF DRIVE #
+2747         TAY                     ;CONVERT TO BINARY & SAVE IT
+2748 DRV1    STY     UNNO            ;SAVE DRIVE #
+2749 ;.........................................................................
+2750         JMP     TSTVER2         ;TEST FOR VERSION 2 DISK- WON'T RETURN IF
+2751 ;.........................................................................
+2752         .PAGE
+2753 ;=========================================================================
+2754 ;  ****  FORMAT  DISK  ROUTINE  ****
+2755 ;=========================================================================
+2756 FMTDSK  .WORD   WHD
+2757         JSR     GETLIN
+2758         JSR     GETDN
+2759         CLC
+2760         ADC     #'0
+2761         STA     DDSK
+2762         STA     CDSK
+2763         JSR     PERX
+2764         LDA     #.LOW.VFML      ;QUERY TO VERIFY DRIVE NUMBER
+2765         LDX     #.LOW.VFMH
+2766         JSR     DSPLIN
+2767         JSR     CHRGET
+2768         CMP     #'Y             ;SEE IF OK
+2769         BNE     FMX
+2770         LDA     #.LOW.FDPL
+2771         LDX     #$10
+2772         STA     ICBAL,X
+2773         LDA     #.LOW.FDPH
+2774         STA     ICBAH,X
+2775         LDA     #FORMAT
+2776         STA     ICCOM,X
+2777         JSR     CIOCL           ;CALL CIO TO DO FORMAT
+2778 FMX     JMP     MENUSL          ;EXIT.
+2779 WHD     .BYTE   'WHICH DRIVE TO FORMAT?',CR
+2780 VFM     .BYTE   'TYPE ',$22,'Y',$22,' TO FORMAT DISK '
+2781 DDSK    *=*+1
+2782         .BYTE   CR
+2783 FDP     .BYTE   'D'
+2784 CDSK    *=*+1
+2785         .BYTE   ':',CR
+2786         HILO    WHD
+2787 WHDH     =       WHD/256
+2788 WHDL     =       (-256)*WHDH+WHD
+2789         HILO    VFM
+2790 VFMH     =       VFM/256
+2791 VFML     =       (-256)*VFMH+VFM
+2792         HILO    FDP
+2793 FDPH     =       FDP/256
+2794 FDPL     =       (-256)*FDPH+FDP
+2795         .PAGE
+2796 ;=========================================================================
+2797 ;  ****  START  CARTRIDGE  ROUTINE  ****
+2798 ;=========================================================================
+2799 SYVBL   =       SYSVBV
+2800         HILO    SYVBL
+2801 SYVBLH     =       SYVBL/256
+2802 SYVBLL     =       (-256)*SYVBLH+SYVBL
+2803 XTVBL   =       XITVBV
+2804         HILO    XTVBL
+2805 XTVBLH     =       XTVBL/256
+2806 XTVBLL     =       (-256)*XTVBLH+XTVBL
+2807 STCAR   .WORD   SCMG            NO MSG, PRINT A <CR>
+2808 ROMTST  =       $BFFD
+2809         LDY     ROMTST          ;TEST IF RAM OR OTHER
+2810         LDA     #$AA            ;PATTERN #1
+2811         STA     ROMTST
+2812         CMP     ROMTST
+2813         BNE     NOTRAM          ;BRANCH IF NOT RAM
+2814         LDA     #$55            ;PATTERN #2
+2815         STA     ROMTST
+2816         CMP     ROMTST
+2817         BNE     NOTRAM          ;BRANCH IF NOT RAM
+2818 ;-------------------------------------------------------------------------
+2819         STY     ROMTST          ;THERE IS VALID RAM - SAY NO CART
+2820 NOCART  LDA     #.LOW.NCAL
+2821         LDX     #.LOW.NCAH      ;SAY NO CART
+2822         JSR     DSPLIN
+2823         JMP     MENUSL
+2824 ;=========================================================================
+2825 ;       CHECK IF ROM OR EMPTY ADDRESS SPACE
+2826 ;=========================================================================
+2827 NOTRAM  LDA     $BFFC           ;KNOWN ROM ZERO BYTE
+2828         BNE     NOCART          ;BRANCH IF EMPTY ADDRESS SPACE
+2829 ;-------------------------------------------------------------------------
+2830         TAX                     ;SINCE EMPTY ADDRESS SPACE GIVES A RANDOM
+2831 CKCART  LDA     ROMTST          ;VALUE, TEST THE SAME LOCATION MANY TIMES
+2832         BEQ     NOCART          ;BRANCH IF NO CARTRIDGE
+2833         CMP     ROMTST
+2834         BNE     NOCART          ;BRANCH IF NO CARTRIDGE
+2835         INX
+2836         BNE     CKCART          ;LOOP BACK
+2837 ;
+2838 ;=========================================================================
+2839 ;       RESET VERTICAL BLANK VECTORS BEFORE ENTERING CART
+2840 ;=========================================================================
+2841         JSR     INITIO
+2842         LDA     #6              ;SET VVBLKI
+2843         LDX     #.LOW.SYVBLH    ;HI BYTE
+2844         LDY     #.LOW.SYVBLL
+2845         JSR     SETVBV
+2846         LDA     #7              ;SET VVBLKD
+2847         LDX     #.LOW.XTVBLH
+2848         LDY     #.LOW.XTVBLL
+2849         JSR     SETVBV
+2850         JMP     CLMJMP
+2851         .PAGE
+2852 NCA     .BYTE   'NO CARTRIDGE'
+2853 SCMG    .BYTE   CR
+2854         HILO    NCA
+2855 NCAH     =       NCA/256
+2856 NCAL     =       (-256)*NCAH+NCA
+2857 ;
+2858 ;=========================================================================
+2859 ;       *******  RUN AT ADDRESS *******   
+2860 ;=========================================================================
+2861 ;
+2862 ;
+2863 BRUN    .WORD   BRMG
+2864         JSR     GETLIN
+2865         JSR     GETNO
+2866         JSR     PERX
+2867         STA     RAMLO
+2868         STX     RAMLO+1
+2869         LDA     CTR
+2870         CMP     #4
+2871         BEQ     MOUT1           ;RETURN TO MENU IF NO RUN ADDRESS GIVEN
+2872         JSR     INITIO          ;CLOSE ALL IOCB'S, THEN REOPEN S/E
+2873         JMP     LMTR            ;LOAD MEM.SAV & JUMP TO ADDRESS
+2874 ;
+2875 ;-------------------------------------------------------------------------
+2876 BRMG    .BYTE   'RUN FROM WHAT ADDRESS?',CR
+2877 ;=========================================================================
+2878 ;  ****  CREATE  MEM.SAV  FILE  ON  DISK  **** 
+2879 ;=========================================================================
+2880 MEMS    .BYTE   'TYPE ',$22,'Y',$22,' TO CREATE MEM.SAV',CR
+2881 MEMSAV  .WORD   MEMS
+2882         JSR     CHRGET          ; GET CHAR (CR)
+2883         CMP     #'Y
+2884         BNE     MOUT            ;BRANCH IF USER'S ANSWER NOT A Y
+2885         JSR     MEMSVQ          ;TRY TO OPEN MEM.SAV
+2886         BMI     MCONT           ; IF FILE DOESN'T EXIST THEN JUMP
+2887         LDA     #.LOW.MEMSGL    ; ELSE 'MEMORY.SAVE' AREADY EXIST
+2888         LDX     #.LOW.MEMSGH    ;
+2889         JSR     DSPLIN          ;DISPLAY THIS FACT
+2890 MOUT    JSR     CLOSX           ;EXIT AFTER CLOSING IOCB1
+2891 MOUT1   JMP     MENUSL          ;
+2892 ;=========================================================================
+2893 ; WRITE MEMORY.SAVE TO DISK
+2894 ;=========================================================================
+2895 MCONT   JSR     MWRITE          ; WRITE FILE
+2896         BPL     MOUT
+2897 MERR    JMP     CIOER1          ; DISPLAY ERROR
+2898 ;-------------------------------------------------------------------------
+2899 MEMSG   .BYTE   'MEM.SAV FILE ALREADY EXISTS',CR
+2900         HILO    MEMSG
+2901 MEMSGH     =       MEMSG/256
+2902 MEMSGL     =       (-256)*MEMSGH+MEMSG
+2903         .PAGE
+2904 ;=========================================================================
+2905 ;  ****  WRITE  DOS  &  DUP  **** 
+2906 ;=========================================================================
+2907 WBOOT   .WORD   DOSDRV          ADDRESS OF DRIVE # PROMPT
+2908 ;=========================================================================
+2909 ;       RETREIVE DRIVE NUMBER FROM USER.
+2910 ;=========================================================================
+2911         JSR     GETLIN          ;GET INPUT
+2912         JSR     GETDN           ;GET DRIVE AS NUMBER, VERIFY IT
+2913         JSR     PERX            ;EXIT IF ERROR
+2914         STA     UNNO            ;SAVE IT FOR TSTVER2
+2915         ORA     #'0             ;TURN BACK TO ASCII REP
+2916         STA     DS+1            ;STORE IN DOS.SYS FILE SPEC
+2917         STA     QWMG+31         ;& IN PROMPT
+2918 ;.........................................................................
+2919         JSR     TSTVER2         ;TEST IF VERSION 2 DISK - IF ISN'T WON'T
+2920 ;=========================================================================
+2921 ;       ASK USER IF CAN WRITE DOS & DUP TO SPECIFIED DRIVE
+2922 ;=========================================================================
+2923         LDA     #.LOW.QWMGL     ;PRINT PROMPT
+2924         LDX     #.LOW.QWMGH
+2925         JSR     DSPLIN
+2926         JSR     CHRGET
+2927         CMP     #'Y
+2928         BNE     WBX             ;EXIT UNLESS Y
+2929 ;=========================================================================
+2930 ;       TELL USER WRITING DOS FILES AND WRITE DOS.SYS FIRST- JUST OPEN IT
+2931 ;=========================================================================
+2932         LDA     #.LOW.WBMGL
+2933         LDX     #.LOW.WBMGH
+2934         JSR     DSPLIN
+2935 ;.........................................................................
+2936         LDA     #OPEN
+2937         LDX     #$10            ;OPEN DOS.SYS ON IOCB #1
+2938         STA     ICCOM,X         ;WILL CAUSE FMS TO REWRITE BOOT SECTOR
+2939         LDA     #.LOW.DSL       ;& A COPY OF DOS.SYS
+2940         STA     ICBAL,X
+2941         LDA     #.LOW.DSH
+2942         STA     ICBAH,X
+2943         LDA     #8
+2944         STA     ICAX1,X
+2945         JSR     CIOCL           ;DO OPEN, IF ERROR GOTO MENU
+2946 ;.........................................................................
+2947         LDX     #$10
+2948         LDA     #CLOSE
+2949         STA     ICCOM,X
+2950         JSR     CIOCL           ;DONE CLOSE IT.
+2951 ;=========================================================================
+2952 ;       WRITE DUP.SYS - SWAP AREA FILE
+2953 ;=========================================================================
+2954         LDX     #11             ;MOVE 11 CHARS
+2955 MDUPBL  LDA     DUPSYS-1,X
+2956         STA     PAR-1,X         ;MOVE FILE NAME TO PARAMETER LIST
+2957         DEX
+2958         BNE     MDUPBL
+2959         LDA     DS+1            ;GET DRIVE NUMBER
+2960         STA     PAR+1           ;PUT IT IN DUP.SYS FILE SPEC
+2961 ;.........................................................................
+2962         STX     PTR
+2963         LDX     #$10
+2964         JSR     PIOCB           ;PUT FILE NAME POINTER IN IOCB
+2965         LDA     #.LOW.DTHL
+2966         STA     LDST
+2967         LDA     #.LOW.DTHH
+2968         STA     LDST+1
+2969         LDA     #.LOW.NMDUP
+2970         STA     LDND
+2971         LDA     #.LOW.LENL
+2972         STA     WDRL+1
+2973         LDA     #.LOW.LENH
+2974         STA     WDRH+1
+2975         LDA     #.HIGH.NMDUP
+2976         STA     LDND+1
+2977         PHA                     ;NO /A
+2978         LDA     #.LOW.DOSOS
+2979         STA     RUNAD
+2980         LDA     #.HIGH.DOSOS
+2981         STA     RUNAD+1         ;SET DUP.SYS RUN ADDRESS
+2982         DEC     RUNQ+1          ;SET RUN FLAG
+2983         JMP     NRUNAD          ;WRITE DUP.SYS
+2984 WBX     JMP     MENUSL
+2985 DOSDRV  .BYTE   'DRIVE TO WRITE DOS FILES TO?',CR
+2986 WBMG    .BYTE   'WRITING NEW DOS FILES',CR
+2987         HILO    WBMG
+2988 WBMGH     =       WBMG/256
+2989 WBMGL     =       (-256)*WBMGH+WBMG
+2990         .PAGE
+2991 QWMG    .BYTE   'TYPE ',$22,'Y',$22,' TO WRITE DOS TO DRIVE  .',CR
+2992         HILO    QWMG
+2993 QWMGH     =       QWMG/256
+2994 QWMGL     =       (-256)*QWMGH+QWMG
+2995 DS      .BYTE   'D1:DOS.SYS',CR
+2996         HILO    DS
+2997 DSH     =       DS/256
+2998 DSL     =       (-256)*DSH+DS
+2999 WVD     .BYTE   'ERROR - NOT VERSION 2 FORMAT.',CR
+3000         HILO    WVD
+3001 WVDH     =       WVD/256
+3002 WVDL     =       (-256)*WVDH+WVD
+3003         .PAGE
+3004 ;=========================================================================
+3005 ;  **** TEST FOR VERSION 2 FORMAT - SUBROUTINE ****
+3006 ;=========================================================================
+3007 ;       SUBROUTINE - TSTVER2
+3008 ;-------------------------------------------------------------------------
+3009 ;       
+3010 ;       READS THE DISK'S VTOC AND CHECKS IF VERSION BYTE IS SET AS 2.
+3011 ;                                                                    
+3012 ;               ENTRY     - DRIVE # STORED IN UNNO                   
+3013 ;               EXIT      - RETURNS ONLY IF IS A VERSION 2 DISK      
+3014 ;                           ELSE DOES AN ERROR EXIT BACK TO MENU     
+3015 ;               CALLS     - DRVSTAT AND RVTOC                        
+3016 ;               CALLED BY - DELFIL, RENFIL, WBOOT.                   
+3017 ;
+3018 ;=========================================================================
+3019 ;       GET DRIVE TYPE SO KNOW CORRECT SECTOR SIZE - NEEDED FOR RVTOC
+3020 ;=========================================================================
+3021 TSTVER2 =       *
+3022         LDA     #0              ;GET DRIVE TYPE IN SECSIZ
+3023         STA     SECSIZ          ;ASSUME 256 - NEEDED BY RVTOC
+3024         LDA     UNNO            ;GET DRIVE #
+3025         JSR     DRVSTAT         ;FIND OUT TYPE - CARRY FLAG
+3026         BCS     OKTYP           ;BRANCH IF 256 TYPE
+3027         LDA     #$80            ;ELSE SET AS 128 BYTE DEVICE
+3028         STA     SECSIZ
+3029 ;=========================================================================
+3030 ;       READ THE VTOC & CHECK IF VERSION 2
+3031 ;=========================================================================
+3032 OKTYP   JSR     RVTOC           ;READ IN VTOC TO DBUF
+3033         LDA     DBUF            ;1ST BYTE IS VERSION #
+3034         CMP     #2              ;IS IT VERSION 2?
+3035         BEQ     SMVRS           ;YES, SAME VERSION - RETURN
+3036 ;=========================================================================
+3037 ;       NOT A VERSION 2 DISK - PRINT MSG & GOTO MENU
+3038 ;=========================================================================
+3039         LDA     #.LOW.WVDL      ;ELSE, NOT SAME VERSION
+3040         LDX     #.LOW.WVDH      ;PRINT INCOMPATIBLE MSG
+3041         JSR     DSPLIN
+3042         JMP     MENUSL          ;GOTO MENU
+3043 ;=========================================================================
+3044 ;       DISK IS VERSION TWO SO RETURN
+3045 ;=========================================================================
+3046 SMVRS   RTS                     ;RETURN
+3047         .PAGE
+3048 ;=========================================================================
+3049 ;  ****  LOAD  USER  FILE  FUNCTION  ****
+3050 ;=========================================================================
+3051 LDFIL   .WORD   LFMG
+3052         JSR     GETIC1
+3053         LDA     #0
+3054         LDX     OPT
+3055         STA     OPT
+3056         CPX     #'N             ;IS OPTION N FOR DON'T LOAD AND GO?
+3057         BNE     NOTN            ;BRANCH IF NOT
+3058         DEC     OPT
+3059 NOTN    JSR     PERX
+3060         JSR     LOAD
+3061         CPX     #0              ;PROCESS LOAD SUBR RESPONSE
+3062         BEQ     LDFX            ;BRANCH IF LOAD WAS OK
+3063         CPX     #3
+3064         BEQ     NLF             ;IF BAD LOAD FILE
+3065         TYA                     ;OTHERWISE WE GOT A CIO ERROR
+3066         JMP     CIOER           ;GO SAY WHAT IT IS
+3067 NLF     LDA     #.LOW.BLFL
+3068         LDX     #.LOW.BLFH
+3069         JSR     DSPLIN          ;BAD LOAD FILE MSG
+3070         JSR     CLOSX           ;CLOSE THE FILE
+3071 LDFX    JMP     MENUSL          ;EXIT
+3072 BLF     .BYTE   'BAD LOAD FILE',CR
+3073         HILO    BLF
+3074 BLFH     =       BLF/256
+3075 BLFL     =       (-256)*BLFH+BLF
+3076 LFMG    .BYTE   'LOAD FROM WHAT FILE?',CR
+3077 ;=========================================================================
+3078 ;  ****  LOCK  &  UNLOCK  FILE  COMMANDS  **** 
+3079 ;=========================================================================
+3080 LKFIL   .WORD   LKMG            ;DO LOCK
+3081         JSR     GETIC1
+3082         JSR     PERX
+3083         LDA     #LOCK
+3084         LDX     #$10
+3085         STA     ICCOM,X
+3086         JSR     CIOCL
+3087         JMP     MENUSL
+3088 LKMG    .BYTE   'WHAT FILE TO LOCK?',CR
+3089 ;-------------------------------------------------------------------------
+3090 ULFIL   .WORD   ULMG            ;DO UNLOCK
+3091         JSR     GETIC1
+3092         JSR     PERX
+3093         LDA     #UNLOCK
+3094         LDX     #$10
+3095         STA     ICCOM,X
+3096         JSR     CIOCL
+3097         JMP     MENUSL
+3098 ULMG    .BYTE   'WHAT FILE TO UNLOCK?',CR
+3099 ;=========================================================================
+3100 ;  ****  DUPLICATE  DISK  ROUTINE  ****
+3101 ;=========================================================================
+3102 DDMG    .BYTE   'DUP DISK-SOURCE,DEST DRIVES?',CR
+3103 OK      .BYTE   'TYPE ',$22,'Y',$22,' IF OK TO USE PROGRAM AREA',CR
+3104         HILO    OK

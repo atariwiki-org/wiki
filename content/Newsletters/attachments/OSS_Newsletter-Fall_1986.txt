@@ -1,0 +1,2838 @@
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+                     Where the New Software Will Come From
+                         An Editorial by David Plotkin
+                     -------------------------------------
+     
+          It has become increasingly obvious that the production of new,
+     useful software for the 8-bit Atari computers has slowed to a trickle,
+     if not ceased altogether.  By useful, I mean utility and productivity
+     programs such as spreadsheets, databases, and other such programs
+     which enable you to do substantive work on your Atari.  This category
+     does NOT include games, production of which has also slowed, although
+     some new ones continue to be announced.  This editorial will attempt
+     to analyze why the software flow for the Atari home computers has
+     reached the current state, and where any new software is going to have
+     to come from.
+     
+          The question of availability of new software is an important one.
+     Sales of software tend to drive sales of hardware (computers), and so
+     an important measure of the viability of a home or business computer
+     is the flow of software.  The classic example of this is the case of
+     the Apple II and Visicalc.  As the story goes, people actually went
+     out and bought Apples (which, remember, sold for over $2500 in those
+     days) to have the machine that the spreadsheet Visicalc ran on.  This
+     maxim is still true today.  The Amiga computer from Commodore is
+     probably the most technologicially advanced home computer available.
+     Yet it languishes, and sales lag far behind the Atari ST and Apple
+     MacIntosh.  Reasons for this have been proposed in the literature
+     which supports Commodore machines:  the machine is too expensive, or
+     it is marketed poorly.  These are contributing factors, no doubt.  But
+     I think there are a lot of people who would willingly pay the high
+     price of the Amiga if there was something they could do with it.  The
+     real problem is that there is no software, and this situation doesn't
+     appear ready to change in the near future.  So software is the driving
+     force behind computer sales--as you have heard, without software,
+     computers are just doorstops.  Now, there is a lot of software
+     available for the Atari.  However, very little of it fits our
+     definition of "useful".  Also, human beings like new things--witness
+     the popularity of Christmas.  It is very depressing to search the
+     catalogs and shelves of the software stores for a new piece of
+     software to take home and play with.  As the months (and years) go by
+     with little new software, owners have the tendency to give up and
+     maybe even move to another machine which has a more active software
+     producing community.  At the very least, they may stop using their
+     Atari regularly.
+     
+          So--there is not very much "useful" software available for your
+     Atari, and little likelihood for the production of more.  In contrast,
+     the Apple II has a multitude of productivity programs, and new
+     programs are constantly being announced.  Yet, to hear tell, the Atari
+     is a more advanced computer, possessing more sophisticated sound and
+     graphics.  Why the difference?  Part of the answer has to do with
+     history.  The Apple computer was available about one and a half years
+     
+     Volume 1, Issue 1                                               Page 1
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     before the Atari, and had a sizeable installed base when the Atari
+     first appeared on the market.  Despite the fact that it was VERY
+     expensive, it was virtually the "only game in town".  Software
+     developers, encouraged actively by Apple, began writing programs quite
+     early on.  The historical reputation of Atari as the manufacturer of
+     the 2600 game machine also hurt.  I would guess that every Atari owner
+     at some time has had to explain that his or her cherished computer is
+     "not a toy!".  Atari was the first of the computer makers to try
+     mass-marketing techniques, making their computers available from
+     places such as K-Mart and Toys-R-Us.  This alienated the computer
+     stores, and also helped convince people that these computers were not
+     to be taken seriously.  Game software prevailed, and the soft voices
+     of the people who realized that their Ataris could also do "serious"
+     work were lost in the roar of explosions and sound effects.
+     
+          Another part of the answer has to do with the technology.  The
+     Atari does support more advanced sound and graphics--which
+     unfortunately helps promote the image of it as a game machine.  But
+     the Apple is an "open" system--that is, there is easy access to the
+     system buss.  Even today, Atari computers have no way to add hardware
+     "cards".  These cards can add a multitude of features that the basic
+     system didn't have.  Need more sound?  Use a sound card, capable of 6
+     voices in stereo.  Need more memory or 80 columns?  Buy a card and add
+     it in.  You get the idea.  The Apple computers had 128K of memory and
+     80 columns early on, and current cards can expand the Apple to 4
+     megabytes.  Atari is just now beginning to catch up, with the
+     announcement of additional memory and Atari's 80 column box.  Thus, in
+     the features which are important to productive uses of a computer,
+     Apple has an almost insurmountable lead.
+     
+          Finally, there is the question of the programming languages.
+     Pascal, Fortran, a compiled Basic and C were available very early for
+     Apple owners.  Atari owners had Basic A+ (now Basic XL and XE), but
+     until the advent of ACTION, there was no fast, easy-to-use language
+     for Atari programmers.  This explains in large part why the programs
+     in the Atari public domain are almost all written in Basic, and a lot
+     of them are pretty mediocre.
+     
+          Where, then, does this leave us?  We have the productivity series
+     from Synapse (Syncalc, Synfile+, etc.) as the primary productivity
+     tools for the Atari, as well as some packages from other companies,
+     some good, some not so good.  Synapse is no more.  Broderbund,
+     Synapse's parent company, does not appear to be actively supporting
+     the series, even to correcting some of the nasty bugs which crept into
+     the 130XE versions of the programs.  And don't hold your breath for
+     Broderbund to upgrade the programs to 80 columns.  Most of the other
+     major software houses, including some that have historically supported
+     the Atari, seem to be also ignoring us.
+     
+          So far, I seem to be painting a pretty grim picture.  Let me put
+     this in perspective.  What I am saying is that there ARE programs for
+     doing useful work on your Atari available.  Many are quite powerful,
+     
+     Volume 1, Issue 1                                               Page 2
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     and some are very cheap--even to the cover price of a magazine and a
+     few hours of typing.  But I doubt that many of the older commercial
+     programs will be updated for the new features of the Atari computers,
+     and I also doubt that much effort will be put into publishing new
+     programs.  There ARE exceptions.  XLENT Software has their line of
+     printer utilities, and just produced a new word processor.  Its claim
+     to fame is the ability to include "Typesetter" graphics in the text
+     and use multiple fonts.  Batteries Included has consistently been
+     updating "Paper Clip", which is the word processor I happen to be
+     using for this article.  And, of course, OSS has BASIC XE.
+     
+          The most promising source of the new software necessary to keep
+     the 8-bit Atari line alive is the users themselves.  Very early on,
+     Atari made an effort (APX: Atari Program Exchange) to market
+     user-written software at good prices.  Chris Crawford's classic,
+     "Eastern Front", was first published this way, along with a multitude
+     of other games and utilities, including the C programming language and
+     a two-drive version of Pascal.  I still use Sheldon Leemon's Instedit,
+     a character set editor, and play "Caverns of Mars" on occasion.  APX
+     did encourage programmers to get working and made these programs
+     available for very little money.  But APX was a victim of the Atari
+     upheaval, and is no more.  ANTIC Magazine now publishes a catalog of
+     some of the old APX line, and includes some new material as well.
+     Unfortunately, the prices have gone up, and the standards for
+     acceptance of programs are very stiff.  Provided a suitable way to
+     distribute programs can be found, however, the users are still the
+     best source of new software.  This is especially true of the people
+     reading this editorial--the customers of OSS.  You are the people who
+     take programming seriously.  You must:  you laid out quite a lot of
+     your hard-earned dollars to purchase OSS products.  In general, these
+     products are programming languages.  MAC65 is quite likely the best
+     assembler ever published for an eight-bit computer.  It is quite
+     possible to produce very good software using BASIC XL, BASIC XE, and
+     ACTION.  Many of you have seen my ACTION games in ANTIC and ANALOG,
+     and my commercial "MINIATURE GOLF PLUS", available from XLENT
+     Software, was written in BASIC XL!  With runtime packages available
+     for both BASIC XL and ACTION, they are prime candidates for
+     programming new software.
+     
+          The question then remains: if you have written a good utility or
+     productivity program, how do you get it out there and maybe even make
+     a little money from it?  OSS will be announcing the details of a new
+     software line, entitled "BareWare" (racy, huh?).  Its primary purpose
+     will be to make new software, primarily written by OSS customers,
+     available to others at a reasonable price.  Look for the announcement
+     in this newsletter.
+     
+          We have analyzed how the state of Atari software has gotten to
+     where it is now, and looked at some hopes for the future.  I firmly
+     believe that the majority of useful software will come from all of you
+     out there.  You have the tools--the excellent programming languages
+     and utilities from OSS (and others).  And OSS will provide the
+     
+     Volume 1, Issue 1                                               Page 3
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     distribution.  It is time for all of you (and me) to get busy and
+     begin turning the software ideas that have been bouncing around our
+     brains for a while into reality.  The Atari community is depending on
+     us, and OSS can't do it all alone.
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                               Page 4
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+                                 OSS has a BBS!
+                                 --------------
+     
+          We were very surprised to discover that almost half of you have
+     modems.  This fact pushed us into getting around to one of those items
+     on the back burner: a Bulletin Board System (BBS).  Thanks to Clinton
+     Parker and Mark Rose we now have a functional BBS.
+     
+          First of all, our BBS is private.  This means that you send
+     messages and programs to us here at OSS, and not to other users.  We
+     screen all incoming messages and programs, and will make anything of
+     interest available to everyone else via either a system message or a
+     download-able library file.  This restriction helps to keep gossips
+     from hogging the BBS.
+     
+     Here's what the BBS lets you do:
+          
+     1.   Read system messages.  These messages give information on bugs,
+          updates, and new releases, and answer commonly asked technical
+          questions.
+          
+     2.   Download library files.  Our library contains both program and
+          documentation files, organized by product.
+          
+     3.   Upload files.  You can upload files that you think are worthwhile
+          enough to put in our library.  These programs must be public
+          domain.  You might also want to upload programs with which you
+          are having some problem so that we can inspect them.  These must
+          be programs that relate to one of our products.
+          
+     4.   Leave messages for us.  If you think you've found a bug, or are
+          having a problem with one of our products, or just want to give
+          us a piece of your mind, leave us a message.  It's your dime (or
+          dollar).
+     
+          The BBS phone number is (408) 446-3451, and is active 24 hours a
+     day.  There is no password system, so getting on should not be a
+     problem.  This BBS runs in ASCII (not ATASCII) mode, and supports
+     XON/OFF and XMODEM protocols at both 300 and 1200 baud.  If you don't
+     have access to a modem, or don't want to spend a fortune downloading,
+     you can still get the BBS files from us.  Simply send us a check
+     (outside US send postal money order) for $7.50 per disk (minimum of 2
+     disks), and specify which disks you want on the order form.  Choices
+     are:
+          
+          A1   (ACTION! #1)
+          A2   (ACTION! #2)
+          BXL  (BASIC XL)
+          CDM  (C/65, DOS XL, and MAC/65)
+          WT   (Writer's Tool).
+     
+     
+     Volume 1, Issue 1                                               Page 5
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+                           Technical Support from OSS
+                           --------------------------
+     
+          For those of you who are new to OSS, you might be interested to
+     know that we do offer full support.  If you have a problem using one
+     of our products, simply give us a call or write us a letter.  Our
+     technical support staff is on duty from 8:30 to 12:00 and 1:30 to 5:00
+     (Pacific time), Monday through Thursday.  When calling, please be
+     prepared to provide us with the following:
+          
+          The model of your Atari,
+          Any enhancements you've added to it,
+          The version of the product with which you're having problems,
+          The exact steps that produce the problem, and
+          Patience.
+     
+     If you write us, include all of the above, plus a disk containing an
+     example of the problem and (if possible) a listing.
+     
+     If you want info about a product of ours that you might purchase, ask
+     the receptionist for a product brochure.  If you have questions
+     regarding our sales or update policies, ask to speak with the sales
+     department.
+     
+     
+                                 OSS Bug Sheets
+                                 --------------
+     
+     So just what is a "bug sheet"?  It's simply a list of all the known
+     bugs in a given product.  If you would like to get the bug sheet from
+     us, please send us five domestic 22-cent stamps or $1 (per bug sheet),
+     and we'll send you the list of known bugs and their fixes for the
+     product you specify.  Simply print which bug sheet you want on the
+     front of the envelope that contains the stamps or money.  We currently
+     have the following bug sheets:
+          
+          ACTION!, PAD, ATK, RunTime Bug Sheet   DOS XL and OS/A+ Bug Sheet
+          
+          BASIC XL and BTK Bug Sheet             C/65 Bug Sheet            
+          
+          MAC/65, MTK, BUG/65, DDT Bug Sheet
+          
+     P.S. - These bug sheets are also in the BBS files library, and on our
+     BBS (see BBS info).
+     
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                               Page 6
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+                          Programming Contest Winners
+                          ---------------------------
+     
+     [Editors Note:  In our last printed newsletter, we announced a
+     programming contest.  Unfortunately, we never published a follow-up
+     newsletter to announce the winners!  We hope that you will forgive us
+     for the delay!]
+     
+     You surprised us again!  We expected that most of the 1K program
+     contest entries would be games, but you proved us wrong.  Over 80% of
+     them were utility programs.  Due to this we decided to have four
+     categories: ACTION!, BASIC XL, MAC/65, and games.  The winner in each
+     of these categories received a $100 credit toward the purchase of any
+     OSS products.  The winners are:
+     
+     ACTION!:  Claude Galinsky of Watertown, MA won with his program that
+          prints program listings on a serial printer.  Joseph Santorelli
+          receives an Honorable Mention.
+          
+     BASIC XL:  Gary Baker of Dearborn, MI won with his program that sorts
+          the variable list produced by the LVAR command.  Honorable
+          Mentions go to Tim Roulo and Eric Alchowiak.
+          
+     MAC/65:  Donald Seay of Palmyra, VA won with his program that allows
+          users to initialize their FX-100's to special print-out
+          configurations.  Honorable Mentions go to James Granger, Evan
+          Arnerich, and Rich Andrews.
+          
+     Games:  Greg Anderson of Los Gatos, CA won with his BASIC XL game
+          "Squish".  Honorable Mentions go to Steven Grimm and Cheney Bath.
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                               Page 7
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+                            BASIC XL Bugs and Fixes
+                            -----------------------
+     
+     BUG: Version 1.03 doesn't seem to work with the extensions on the
+          ToolKit.
+     FIX: This is true only for early versions of the ToolKit.  If you have
+          Vers. 1.03 and the ToolKit extensions work, then don't apply this
+          fix.
+               100 F$="D:EXTEND.COM":N=$02d6:Gosub 130
+               110 F$="D:AUTORUN.SYS":N=$039f:Gosub 130
+               120 End 
+               130 Unprotect F$:Open #1,12,0,F$
+               140   For I=1 To N:Get #1,C:Next I
+               150 Put #1,9:Close #1:Protect F$
+               160 Return
+          
+     BUG: Any program reference to line number 0 (e.g. Goto 0, If X=1 Then
+          0) will not be RENUMbered.  This applies even if a previous RENUM
+          created the reference (i.e. you did a RENUM 0,xx).
+     FIX: There is no practicable solution.  Simply don't use a starting
+          line number of 0 when you NUM or RENUM.
+          
+     BUG: You want to make sure that you're not in FAST mode.
+     FIX: Make the following the first line in your program:
+               10 IF PEEK($B9)&$80 THEN DEL 0
+          $B9 is BASIC XL's FAST flag, and the DEL statement turns off FAST
+          mode.  You can't have a line 0 in your program if you want to use
+          this fix.
+     
+     
+                             BUG/65 Bugs and Fixes
+                             ---------------------
+     
+     BUG: The "P" option doesn't work with the newer Atari OS ROMs.
+     FIX: On BBS and Bug Sheet, or refer to p. 7 of the Spring 1984
+          newsletter.  This fix works with one exception: the last line
+          doesn't get printed, so make sure your last line is just a
+          RETURN.
+          
+     BUG: If you try to go into BUG immediately after you boot using
+          DOSXL.XL, you get back to DOS instead of going into BUG.
+     FIX: Press SYSTEM RESET and then run BUG.
+     
+     
+                             DOS XL Bugs and Fixes
+                             ---------------------
+     
+     BUG: The patch to convert version 2.30 to version 2.30p in our Spring
+          1984 newsletter didn't work.
+     FIX: Run the following program and then use INIT with the "Write
+          DOS.SYS Only" option to write out the patched DOS.  Make sure
+     
+     Volume 1, Issue 1                                               Page 8
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+          that you don't have DOSXL.SYS (either .SUP or .XL version) active
+          when you do this.
+               100 READ CNT:IF CNT=0 THEN END 
+               110 READ START
+               120 FOR ADDR=START TO START+CNT-1
+               130 READ BYTE:POKE ADDR,BYTE:NEXT ADDR
+               140 GOTO 100
+               150 DATA 3,5481,32,1,21
+               160 DATA 29,5377,141,217,22,169,16
+               170 DATA 141,23,22,169,23,141,24,22
+               180 DATA 169,49,141,30,22,169,64,141
+               190 DATA 12,0,169,21,141,13,0,96
+               200 DATA 1,7425,112,0
+          
+     BUG: INIT does not work if you use drive numbers 4 through 8.
+     FIX: Run the following program:
+               10 OPEN #1,12,0,"D:INIT.COM"
+               20 FOR I=1 TO 116 : GET #1,C : NEXT I
+               30 PUT #1,ASC("9") : CLOSE #1
+          
+     BUG: Bill's DOS 2.0S patch for 1050's in his 8/84 - 9/84 Insight:
+          Atari articles doesn't work with DOSXL.SYS.
+     FIX: There isn't one, but don't despair: Bill's patch isn't compatible
+          with DOS 2.5 anyway, so the problem becomes moot.
+     
+     
+                        The Writer's Tool Bugs and Fixes
+                        --------------------------------
+     
+     BUG: Version 2.2 LinkPrint crashes the system if you try to link an
+          invalid or non- existent file.
+     FIX: Run the following BASIC program  this program, first making sure
+          that your WT file is called AUTORUN.SYS.  This will convert
+          version 2.2 to 2.21.
+               100 ? :? "Put a Backup of WT disk in Drive 1,":? "and hit
+               START"
+               110 IF PEEK(53279)<>6 THEN 110
+               120 XIO 36,#1,0,0,"D:AUTORUN.SYS"
+               130 OPEN #1,12,0,"D:AUTORUN.SYS"
+               140 FOR I=1 TO 346:GET #1,X:NEXT I
+               150 PRINT #1;"VERSION 2.21":CLOSE #1
+               160 OPEN #1,12,0,"D:AUTORUN.SYS"
+               170 FOR I=1 TO 14278:GET #1,X:NEXT I
+               180 PUT #1,90:GET #1,X:PUT #1,91
+               190 CLOSE #1:XIO 35,#1,0,0,"D:AUTORUN.SYS":END
+     
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                               Page 9
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+                         ACTION! Questions and Answers
+                         -----------------------------
+     
+     Q:   What is the best way to declare an ARRAY?
+     A:   Always give the array a size or an address (unless you really
+          want a floating pointer).  If you give it neither a size nor an
+          address, your array will point to some arbitrary location, and
+          could easily cause your system to lock-up or crash.
+          
+     Q:   What is the ACTION! RunTime disk, and what will it do for me?
+     A:   The RunTime disk contains files that you INCLUDE in your ACTION!
+          programs so that they will work without an ACTION! cartridge.
+          This is useful if you want to distribute copies of utility or
+          game programs to people who don't have the cartridge.  If you
+          plan on giving away these programs, the RunTime license is
+          $30.00.  If you're going to sell these programs, the publisher's
+          license is $200.00.  You pay these fees once, and then may use
+          the RunTime package with as many programs as you wish.
+     
+     
+                         BASIC XE Questions and Answers
+                         ------------------------------
+     
+     Q:   Why won't BASIC XE work properly with my 1030 or XM301 modem?
+          
+     A:   Without going into too much detail, it has to do with the way the
+          1030 and XM301 handle the carrier detect signal.  When the modem
+          answers the phone and connects with the calling modem, the 1030
+          or XM301 uses a previously unused signal to tell the Atari
+          computer that another modem has connected.  This line causes an
+          interrupt and sometimes results in the handler failing to
+          recognize the incoming call.  A fix for this problem is in the
+          works, and will be included in the next version of BASIC XE to go
+          into production.  Watch these pages for the news!
+          
+          
+     Q:   What is Error #33?
+          
+     A:   Error #33 was left out of the manual, but if you look for error
+          100, you will see that the manual says "Extensions not
+          installed".  This usually happens when you have booted up a disk
+          that does not have the BASICXE.OSS file on it, and try to use
+          EXTEND or FAST or some other Extended Command.  The solution:
+          Copy the file BASICXE.OSS onto the disks that you boot your
+          system from.  DO NOT rename it to AUTORUN.SYS!!  It must be named
+          BASICXE.OSS for BASIC XE to properly load the extensions.
+     
+     
+
+
+
+     
+     Volume 1, Issue 1                                              Page 10
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+                         BASIC XL Questions and Answers
+                         ------------------------------
+     
+     Q:   Do the extensions on the ToolKit work with the RunTime package?
+     A:   Not as shipped, because it would make the RunTime package
+          unacceptably large for those who do not use the extensions.
+          There is, however, a simple program available on the BBS that
+          will allow you to use the extensions in conjunction with the
+          RunTime package.
+          
+     Q:   How can I toggle my Bit3 board between 40 and 80 columns from
+          BASIC XL?
+     A:   It's possible if you have the Bit3 patch to DOS XL.  Simply run
+          the patch from DOS, go into BASIC XL, and run the following
+          program:
+               10   For I=$100 TO $12F
+               20   If Peek(I)=$68 Then Pop :Goto 50
+               30   Next I
+               40 Print "Can't Find Bit3 Toggle":End
+               50 Toggle=I:Rem "Use USR(Toggle) to toggle 40/80 columns"
+     
+     
+                          BUG/65 Questions and Answers
+                          ----------------------------
+     
+     Q:   Why do I lose my program when I load BUG?
+     A:   BUG doesn't know where your program resides so, if you don't
+          specify where you want BUG to load, it can wipe out your program.
+          There are two solutions to this: assemble to disk instead of
+          memory, and then load your object file once you're in BUG, or
+          specify a load address for BUG (your program can't reside above
+          about $9800 since BUG loads there before relocating itself).
+          
+     Q:   Why does the system lock up when I trace ROM with BUG?
+     A:   BUG cannot trace ROM, but (since ROM can't be changed) you might
+          just use a "TS" command at the point where your code JSR's or
+          JMP's to ROM.
+     
+     
+                          DOS XL Questions and Answers
+                          ----------------------------
+     
+     Q:   Can I get TYP to work with binary files as well as text files?  I
+          could then use it instead of COPY to copy files from one drive to
+          another.
+     A:   There is a patch program on the BBS and in the DOS XL Bug Sheet
+          that makes TYP work with binary files.
+          
+     Q:   Is there a RamDisk for the 130XE that works with DOS XL?
+     A:   Yes, one similar to Atari DOS 2.5's RamDisk.  The file and
+          documentation are on the BBS.
+     
+     Volume 1, Issue 1                                              Page 11
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+     
+                          MAC/65 Questions and Answers
+                          ----------------------------
+     
+     Q:   How do I turn off the listing as a program assembles?
+     A:   Either put a .OPT NOLIST at the beginning of your source file, or
+          use #- as the list device in the ASM command, as in
+               ASM ,#-,#D:FILE.OBJ
+          
+     Q:   How many labels are permitted in MAC?
+     A:   The number of labels is limited only by memory size, but watch
+          out - it is possible to have a symbol table so big that it can't
+          be cross-referenced.  Also, there is a maximum of 63 .LOCAL
+          sections.
+          
+     Q:   How can I change MAC's default screen colors?
+     A:   With Disk MAC this is easy.  Version 4.20's screen colors are at
+          $8B3F (background/playfield) and $8B44 (character luminance).
+          Change these using the "C" command, and then BSAVE $8800 to $BC1F
+          to MAC65.COM.  With cartridge MAC the process is a little more
+          difficult.  Assemble the following program (making sure you write
+          the object to disk), and then simply BLOAD it when you first
+          enter MAC.  Change the two .BYTE values to get different default
+          colors.
+               100       .ORG $483
+               110 BAK   .BYTE $00 ;Background Color
+               120 LUM   .BYTE $06 ;Character Luminance
+          
+     Q:   Where can I get subroutines that turn the supercartridges on and
+          off?
+     A:   On our BBS.
+          
+     Q:   What memory is available for machine language programs and
+          variables?
+     A:   Parts of page 0 above $80, page 6 (most of the time), and between
+          MEMLO ($2E7) and MEMHI ($2E5).  The size of the last area varies
+          with DOS and graphics mode.  However, all of this depends upon
+          what application program (if any) you are trying to interface
+          with.  (See Bill's 12/84 Insight: Atari article.)
+          
+     Q:   How can I use the disk version of MAC/65 with Atari DOS?
+     A:   Use the "L" option to load MAC65.COM, and then use the "M" option
+          with 8800 (hex) as the address to run it.  (This applies only to
+          vers. 4.2 of MAC.)
+          
+     Q:   Why does MAC "hang" for a while at the end of a large assembly?
+     A:   MAC is sorting the symbol table so that the symbol listing is in
+          alphabetical order.
+          
+     Q:   Why doesn't a JMP or JSR to zero page produce proper code in the
+          MAC cart?
+     
+     Volume 1, Issue 1                                              Page 12
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     A:   Version 1.01 and 1.02 are fixed to produce the proper code (PS -
+          1.02 is the latest version).  For update information see the
+          update info sheet.
+          
+     Q:   Why do I get an Out-Of-Phase error (#13) during assembly?
+     A:   For a complete discussion of phase errors and what they mean see
+          Bill's 12/84 Insight: Atari article, or send us a SASE asking for
+          it.
+          
+     Q:   How can I specify a RUN or INIT vector address within my object
+          file?
+     A:   Put the following at the end of your source file:
+               *=        <vector>
+               .WORD     <label>
+          For a RUN vector, <vector> is $2E0 and <label> is the run address
+          of your program.  For an INIT vector, <vector> is $2E2 and
+          <label> is the init address of your program.  Also, a program can
+          have both RUN and INIT vectors.
+          
+     Q:   How can I make my MAC program return to DOS when it's finished
+          executing?
+     A:   End your code either with an RTS (if you haven't messed with the
+          stack) or an indirect jump through DOSVEC ($0A).
+          
+     Q:   Is there some location that controls how MAC works?
+     A:   Yes and no.  The MAC cart uses bits of $CF to control some
+          functions:
+               $80 Bit   If 1, the space after a line number can be used as
+                         a REP or FIND character (e.g. FIND/ LABEL/ will
+                         find 10 LABEL).
+               $40 Bit   If 1, MAC will not list lines changed by REP.
+               $20 Bit   If 1, local variables will appear in the symbol
+                         listing.
+          When you enter DDT, it saves this flag at (LOMEM)+$CF, so you can
+          change as follows: use the "E" command to find the contents of
+          LOMEM ($80 & $81), add $CF to this two-byte value, and then use
+          "D" to change the contents of this computed address.  When you
+          return to MAC, your change is automatically copied into $CF.
+          
+     Q:   Why doesn't my RX-80 work with MAC?
+     A:   The RX-80 (and some other printers) takes so long to do a form
+          feed that MAC thinks that the printer has gone off-line.  To
+          solve this problem, either press CONTROL 1 whenever the RX-80
+          form feeds, or use .SET 3,0 in your program to force MAC to use
+          multiple line feeds instead of form feed.
+     
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                              Page 13
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+                               News You Can Use:
+                               -----------------
+     
+     
+     In this section we present items of interest to all Atari computer
+     users.
+     
+                            Atari Corp. to go Public
+     
+     By now, most of you have probably heard the news:  Atari has filed
+     with the SEC for an initial public offering of 4,500,000 shares of
+     Common Stock through an underwriting group to be managed by Paine
+     Webber.  The price range is anticipated to be between $11.50 and
+     $13.50 per share, and offering is scheduled for mid- to late October.
+     
+     Atari Corp reports that total sales during the period from January 1,
+     1986 to June 30, 1986 were $105,000,000, and profits were running over
+     12%.  The average company typically aims for a 5% to 7% profit margin.
+     
+     
+                               Atari Expositions
+     
+     The Atari Exposition shows appear to be doing quite well, generating a
+     lot of interest in the capabilities of the Atari product line,
+     including the 8-bit XE computers.  At the San Jose Atari Expo we
+     recently attended, there were fairly huge crowds of people pushing
+     their way around the auditorium.  Not bad for a show dedicated to the
+     products of a company that was "on the skids" a few years back!
+     
+     We heard a lot of requests for "more software for the 8-bit Ataris."
+     Some visitors to our booth felt that software producers had given up
+     on the 8-bit computers.  I feel that the interest shown at these Expos
+     can only help remind software companies that there are still a LOT of
+     8-bit users out there and that they are VERY hungry for quality
+     software.  One thing to remember is that YOU have to get involved.
+     Make your desires known to the software companies--they won't bother
+     producing software for a machine if they think the users have no need
+     for it!  Write letters, make calls, join a users group!  Make NOISE!
+     
+     OSS has plans to introduce new software products for the 8-bit Atari
+     computers.  We will be announcing these products in the near future.
+     
+     
+                            XEP80 80 Column Adaptor
+     
+     The long awaited 80 Column adaptor is finally a reality.  We should be
+     playing with one in-house here at OSS by the time you get this.
+     
+     The XEP80 has an 80 column by 25 line display, redefinable character
+     sets, some form of bit-image graphics (I don't know what resolution),
+     standard ATASCII block graphics characters, and a printer port built
+     
+     Volume 1, Issue 1                                              Page 14
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     in.  It will work with any composite video monitor, but for best
+     results it should be used with a monochrome monitor.  The unit plugs
+     into joystick port 1 or 2.
+     
+     Price has not been announced as of this writing.
+     
+     
+                          New Atari Explorer Magazine
+     
+     The new Atari Explorer Magazine is here, put together by David Ahl (of
+     Creative Computing fame) and friends.  It has a totally new look, and
+     has some really useful information.  We just received our first copy
+     the other day, and we are impressed!  It is right up there with the
+     other Atari magazines in quality and content.  I for one am wishing
+     Mr. Ahl the greatest of success in his new endeavor!
+     
+     
+                              Pirate BBS Shut Down
+     
+     A group of software publishers working under the aegis of the Software
+     Publishers Association have shut down a BBS in Cincinnati known as the
+     Star Chamber.  The Star Chamber allegedly had 40-50 megabytes (!!) of
+     copyrighted software available for downloads, mostly 8-bit and 16-bit
+     Atari software.  Among the copyrighted material was a disassembled
+     listing of the Apple Macintosh operating system, which could be used
+     by some ST owners to build Macintosh emulators.
+     
+     Among the group of software publishers involved in the action were:
+     Antic Software, Batteries Included, Digital Research, Hippopotamus
+     Software, Infocom, Michtron, Megamax, Quickview Systems, Quantum
+     Microsystems, Procopy, Regent Software, and Xlent Software.
+     
+     In a joint statement issued after the BBS was closed down, the members
+     of the consortium vowed to continue pursuing legal action against
+     pirate boards and any other centers of the illicit trade.
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                              Page 15
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+                               What is BareWare?
+                               -----------------
+     
+          We feel that there is still a demand for high-quality, reasonably
+     priced software for the Atari computers, both 8 and 16 bit. By
+     reasonably priced, I mean under $30.
+     
+     So what's the problem?  Support!  
+     
+          While we understand the need for continued high-quality support
+     for our products, we cannot profitably market software for under $40
+     and still provide our normal level of support.
+     
+          So -- what's a company like OSS to do?
+     
+          Well, we could just charge $35-$50 for these programs, but that
+     just wouldn't be right!
+     
+          Why not sell the software at a minimal cost, just enough to cover
+     advertising and materials, and the royalty to the programmer?  How
+     about offering no telephone support on those products?  That way we
+     aren't "adding in" a fee for support when the product is purchased.
+     People who don't need or want the support (there are a lot of those!)
+     aren't penalized up front!
+     
+          This is why we started BareWare.  BareWare is a new way for us to
+     market software.  BareWare will bring to market all those programs
+     that people would love to have but can't justify paying the high
+     prices for them.
+     
+          As of this writing, we are still putting the finishing touches on
+     BareWare products for the 8 bit line, including an ACTION! Graphics
+     ToolKit!  In the meantime, if you are (or anyone you know is) working
+     on a great piece of software that you think others would love to use,
+     let us know!  Don't be shy!  We have only a few rules for BareWare
+     products:  Programs must be bug-free, well documented, and they must
+     be a good solution to a problem.  We are happy to review any and all
+     programs which fit these qualities.
+     
+     
+     
+                           OSS Has T-Shirts for sale!
+                           --------------------------
+     
+     Be the first one on your block (or in your users group) to wear the
+     incredible  all-new OSS T-Shirt!  Amaze your friends, impress your
+     boss, improve your love life!*
+     
+     High quality Haynes all-cotton t-shirts: Navy blue, yellow
+     silk-screened with the slogan "OSS Programmers do it top down".
+     
+     
+     Volume 1, Issue 1                                              Page 16
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     The price?  A mere $7.50 each, plus $2.00 postage and handling.  Be
+     sure to specify Small, Medium, Large, or Extra Large.
+     
+                                  *DISCLAIMER:
+     
+     OSS does not really mean to suggest that buying our t-shirt will cause
+     these things to happen, but you never can tell!
+     
+     
+     
+                                Update Policies
+                                ---------------
+     
+     We at OSS have always tried to maintain a reputation for taking care
+     of our customers.  To that end, we would like to say that we can
+     provide free updates of all our products to all our loyal customers.
+     
+     Unfortunately, because of our low prices (compared to other systems
+     software companies) and deep dealer and distributor discounts, we
+     really don't make enough of a profit on our products to be able to do
+     this and still remain in business.  However, we do endeavour to price
+     our updates as reasonably as possible.  We try to come close to
+     breaking even on these updates, as prices reflect only our costs plus
+     shipping and packaging expenses.
+     
+     In any case, then, here is our update price list.  Cartridge updates
+     are returned to you via U.S. Mail (1st Class) unless otherwise
+     specified.  Shipping charges are $5.00 unless payment is made via
+     check or money order in which case shipping charges are waived.
+     Foreign users should estimate shipping costs or use a credit card.
+     
+                               UPDATE PRICE LIST
+                               -----------------
+     
+     All OSS Cartridges may be updated to the latest version by returning
+     the old cartridge and a check or money order for $20.00.  Current
+     revision levels are as follows:  BASIC XE--4.1;  ACTION!--3.6;
+     MAC/65--1.01;  BASIC XL--1.03;  Writer's Tool--2.1
+     
+     California Residents please add 7.0% sales tax.
+     
+     
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                              Page 17
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+                       CELLS written in ACTION! from OSS
+                                by David Plotkin
+                       ---------------------------------
+     
+          When I was in college taking computer science, we were required
+     to program a simulation called LIFE.  The idea is to try to duplicate
+     the conditions in a culture of cells.  This is fairly common, and
+     there are quite a number of algorithims that can be used as part of
+     this simulation.  What follows is just one of the many variations of
+     LIFE.
+     
+          CELLS is a graphic demo in ANTIC mode 4 (four color character
+     mode) which illustrates some of ACTION's blinding speed.  Using a
+     custom designed character set and fast PLOT routine it "grows" and
+     "kills" cells on the screen creating multicolored, everchanging
+     patterns which are fun to watch, with a  relaxing sound track in the
+     backround.  The actual algorithim for cell growth is quite simple, and
+     was developed by Bill Atkinson, of MACPAINT fame.  Essentially, if a
+     cell has more than three or less than two neighbors occupying the
+     eight adjoining squares, it dies.  If an empty space has three
+     neighbors, then a new cell grows.  This demo is even more impressive
+     on the Macintosh, which runs at eight times the Atari's speed, but
+     with some programming tricks and a redefined character set, it looks
+     pretty nice on the Atari.  Note the use of elements of an array in
+     PROC GrowEm to determine what occupies the surrounding cell locations.
+     This works much faster than using eight LOCATEs.
+     
+          To play with CELLS, compile and run it from the ACTION monitor.
+     The title screen will prompt you to press SELECT, and you will have a
+     blank screen with a cursor.  You move the cursor with your joystick,
+     pressing the fire button on a blank space lays down one of thirteen
+     colorful cells, pressing the fire button where there is already a cell
+     erases it.  When you are done laying down your initial cell pattern,
+     just press START and the cell growth will start.  The patterns will
+     continue to shift until either all the cells have died, or no further
+     changes in the cell patterns can occur.  This last can happen, for
+     example, when cells are grouped in a square of four cells--no new
+     cells will grow under these circumstances.  At this point, the program
+     will prompt you to press FIRE to play again.  At any time while the
+     cells are growing and dying, you may press SELECT to return to the
+     screen where you can add and delete cells.  If you do this, the cursor
+     won't become visible until you move it with your joystick.  Pressing
+     START will once again return you to the "growing and dying" screen.
+     Note that the prompts for changing screens (START or SELECT) are
+     printed in the lower right corner of the screen so you won't forget
+     how the program works.  The program records the current number of live
+     cells, as well as the maximum number of cells that have been alive at
+     any point during the current game.  You can even compete by trying to
+     come up with initial patterns that produce the highest number of
+     maximum cells. My highest number of cells is 369.  Beat it if you can!
+     
+     
+     Volume 1, Issue 1                                              Page 18
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+     
+                       Print Using & Scientific Notation
+                                 with BASIC XE
+                                 by Tom Pitman
+                       ---------------------------------
+     
+          BASIC XE is by far the best BASIC available for the Atari 8-bit
+     line of computers (and arguably for any 8-bit computer anywhere!)
+     After using this fine product for several weeks, I found myself at
+     home needing to do some calculations for work.  I sat down, threw
+     together the code, prepared to format my output, and HORRORS(!!?)
+     There was no format to use scientific notation with PRINT USING.  But
+     being a resourceful character, and having a reasonable knowledge of
+     how BASIC stores numbers I proceded to write "ScientificNotation", a
+     procedure that, given a number, returns an integer part (IPART), a
+     decimal part (DPART), and an exponent part (EPART).  These three
+     numbers can then easily be incorporated into a PRINT USING statement.
+     
+                                   Breakdown
+                                   ---------
+     
+          First, at line 30010 we trap to make sure we don't get an error
+     for dimensioning our strings, and array more than once.
+     
+          At 30020, we dimension GARBAGE$, and TRASH(0).  The trick here is
+     that the 1 element long string will help us access the address of the
+     PARAMETER of the procedure.
+     
+          At 30040, we assign TRASH(0) equal to PARAMETER.  The address of
+     this array is found in line 30050.  (The internal format of numbers is
+     discussed on page 23 of the BASIC XE manual.)
+     
+          From 30080 to 30110, we check the high order bit of the Exponent
+     byte to see if the Mantissa (integer part) is positive or negative,
+     and adjust the exponent accordingly.
+     
+          Next, from 30130 to 30210, we check to see if the mantissa is 10
+     or more.  If it isn't, we need to adjust the last character of Dec$
+     accordingly.  If it is, we need to adjust IPART, Dec$, and flag
+     ourselves that EPART needs to be 1 greater.
+     
+          Finally, Dec$ is filled with the decimal values and is converted
+     to DPART, and the 3 values are returned.  These values can now be used
+     accurately in a PRINT USING statement.  The program SCINOTE.DEM
+     illustrates the procedure at work, and how to set up the PRINT USING
+     format.
+     
+          This procedure can easily be altered for use with a smaller
+     field, or to print in Engineering notation.  If you really have no
+     need for this type of feature, maybe it gave you a deeper insight into
+     some of the inner workings of your computer.  Happy trails.
+     
+     Volume 1, Issue 1                                              Page 19
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+     
+                                  3-D FRACTALS
+                                by David Plotkin
+                                ----------------
+     
+          One of the hottest topics in mathematics today is FRACTALS.
+     Invented by Benoit Mandelbrot, Fractal theory seeks to link
+     mathematics and nature.  A popular example of a fractal shape in
+     nature is a coastline.  No matter how closely you scrutinize and
+     measure a coastline, you can never get its exact length, due to the
+     infinite number of irregularities in it.  The closer you zoom in on
+     the coastline, the more accurate your measure of its length.  But each
+     time you zoom in closer, you discover more irregularities, so the
+     measured length of the coastline will increase.  Fractals are like
+     this coastline, except that they are described by a complex series of
+     equations.  No matter how close you "zoom in" on your fractal shape,
+     you will discover more irregularities in its shape.  In this, it
+     imitates nature.  Another seeming oddity of fractals is that although
+     a fractal shape may be able to be confined within a finite area (you
+     can draw a circle around the shape which completely contains it), the
+     length of the fractal is infinite, because of the infinite
+     irregularities.
+     
+          Various examples of two dimensional fractals have appeared in
+     past issues of various computer magazines, as well as the Scientific
+     American and Discover.  Computer generated 3-D fractals are especially
+     useful for producing artificial landscapes.  That is, landscapes,
+     including mountain ranges, peaks, and valleys, which look real and can
+     be "traveled over" using a computer simulation, but which don't
+     actually exist.  The highly popular simulation/game "Rescue on
+     Fractulus" from Epyx uses this tecnique.
+     
+          The algorithim for producing an artificial landscape using
+     fractals can be something like this:
+     
+     1.   Start with a triangle.  Connect the centers of each of the
+          triangle's sides together with lines.  This breaks the larger
+          triangle into 4 smaller triangles.
+          
+     2.   Move the vertices (points) of each of the trianges so formed
+          either up or down a random amount.
+          
+     3.   Repeat the above two procedures on each of the triangles formed
+          by step 1, creating more (and smaller triangles).
+     
+          The series of steps outlined above can be repeated as many times
+     as there is available memory in your computer.  Each time, the
+     resolution gets higher, and the "landscape" formed looks closer to a
+     natural landscape.  The limits to this process are two-fold.  First,
+     as mentioned above, the available memory of your computer will
+     eventually cause you to have to stop.  Each of the coordinates of the
+     
+     Volume 1, Issue 1                                              Page 20
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     triangles must be stored in an array, and arrays take up memory.
+     Also, the screen resolution of your computer makes it pointless to
+     continue beyond a certain point.
+     
+          The listing included will generate a 3-D landscape on the screen,
+     using the algorithim detailed above.  Each time the program is run,
+     the landscape generated will be different.  The program will ask you
+     how many levels you want.  The higher the number of levels, the better
+     the resolution.  Do not ask for more than six levels, or you will get
+     an error.  Also, be warned, that each additional level adds
+     considerably to the time it takes to draw the fractal shape on the
+     screen.
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                              Page 21
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+                       ASCII/ATASCII Text File Converter
+                            By Christopher M. Kelley
+                       ---------------------------------
+     
+          How many times have you downloaded a file from your local BBS
+     only to find that instead of the normal ATASCII return, there is a
+     CTRL-M, CTRL-J pair(the ASCII carriage return - line feed pair)?  And
+     how many times have you then loaded that file into your favorite text
+     editor and changed them by hand because you couldn't REPLACE with a
+     return?  Or waited and waited for a BASIC program to search through a
+     file byte by byte and replace those CTRL-M, CTRL-J pairs with returns?
+     Or maybe like me you also own an ST or other ASCII-based computer and
+     would like to transfer text files back and forth, but hate the thought
+     of having to convert the returns?
+     
+          Well, this program is the answer.  CONVERT.COM is simple to use,
+     and since it was written and assembled with Mac/65, it is VERY fast.
+     It should work on any Atari 8-bit computer, so XL owners can use it
+     too.  To use CONVERT.COM, load it from any DOS, with or without a
+     cartridge (any program in memory will be lost, however).  Three
+     chocies will be displayed:
+                         [1] ASCII To ATASCII
+                         [2] ATASCII To ASCII
+                         [Q] Quit
+                         
+          The menu items are, I feel, very straightforward.  ASCII to
+     ATASCII searches for CTRL-M, CTRL-J pairs and replaces them with
+     ATASCII returns.  ATASCII to ASCII searches for ATASCII returns and
+     replaces them with CTRL-M, CTRL-J pairs.  If you choose either of the
+     first two options, you will be prompted for a filename to convert.
+     The Dn: specifier (where n is the drive number) can be used, but if it
+     is not entered, D1: will be assumed.  The program will then try to
+     open the file.  If the file cannot be found or there is an error, it
+     will ask again for a filename.
+     
+          Next, it will ask for an output file.
+     
+          WARNING:  DO NOT USE THE SAME FILE NAME FOR THE OUTPUT FILE AS
+     GIVEN FOR THE FILE TO CONVERT OR THE FILE WILL BE LOST AND OTHER DATA
+     ON THE DISK MAY BE LOST! You mus supply two different file names for
+     correct operation of this program!
+     
+          Again, the Dn: prefix is not necessary, but may be used.  The
+     program will try to open the file, and if there is some problem, it
+     will ask again for an output filename.  If all goes well it will
+     convert the text file.  If there is some error during the conversion,
+     an error message will be displayed and the conversion will be
+     cancelled.  At this point, press RETURN to return to the options menu.
+     If there is no error, a message to that effect will be printed, and
+     pressing RETURN will again return to the options menu.  Please note
+     that the program can ONLY be used to convert text files, it cannot
+     
+     Volume 1, Issue 1                                              Page 22
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     convert programs.  The Quit option, of course, returns to DOS.
+     
+          The source code for the program is called CONVERT.M65 and is in
+     LISTed form. The program breaks down as follows:
+     
+               1000 - 1300 ; set up program  labels and start program
+               labels from Mapping The Atari)
+               1310 - 1830 ; .BYTE statements
+               1840 - 2050 ; open channel 1 to the editor
+               2060 - 2540 ; print menu, get and analyze answer
+               2550 - 2800 ; print text subroutine
+               2810 - 2990 ; get answer/filename subroutine
+               3000 - 4630 ; get and open input/output files
+               4640 - 5750 ; conversion routines
+               5120 - 5410 ; get/put bytes from files
+               5760 - 6040 ; end conversion normally
+               6050 - 6310 ; end conversion after fatal error
+               6320 - 6370 ; set up run address, end assembly
+     
+          If you examine the code, you will notice that instead of loading
+     the file into a buffer, then converting and writing, the program reads
+     a byte, checks it, then writes either the  byte or the appropriate
+     return sequence.  The reason for this is twofold.  First, the program
+     is much easier to write this way, and second, a file of any length can
+     be converted, even if it is too big to fit into memory.  In addition,
+     because it is written in assembly, there is little sacrifice in speed.
+     
+          I have tried to make the program modular, using subroutines to
+     put messages and data, and to get choices, filenames, and data.  This
+     means the program can be much smaller and the code easier to read (it
+     is also good programming style, or so I am told).  I believe that
+     someone who has not used CIO in assembly language might learn
+     something from reading the code.  I know I learned a whole lot writing
+     it! I would like to add that writing the program was made much easier
+     by the use of DDT in the Mac/65 cartridge and OMNIMON! from CDY
+     Consulting.
+     
+     [Editor's Note:  For those of you who do not have MAC/65 and would
+     like to use the CONVERT program, we have included the CONVERT.COM file
+     on the newsletter disk for you to use.  Use the (L)oad binary file
+     from DOS 2.5 or just type in "CONVERT" from DOSXL.]
+     
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                              Page 23
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     MODULE; CELLS by David Plotkin
+     BYTE ChrBase=756,Bkgrnd=710,X,Y,
+          Fate=53770,Level=[1],CursIn=752,
+          Stick=632,Ps,Loud=[0],Indx=[0],
+          Snd1=$D208,Snd2=$D20F,Freq=[169],
+          Wsync=$D40A,Colbk=$D018,     
+          Nmien=$D40E,Consol=53279,
+          Colints=$D017,Atract=77,L1=[0],
+          L2
+     
+     CARD Scrn=88,RamSet,HiMem=$2E5,
+          Score=[0],Sdlst=560,
+          Vdslst=512,Cells=[0],Max=[0]
+     
+     INT  Xdir,Ydir
+     
+     CARD ARRAY Linept(24)
+     
+     BYTE ARRAY Charset,Dlist,
+         ShapeTable(0)=[
+         0 20 20 85 85 20 20 0;  1
+         40 150 150 190 190 150 150 40;2
+         40 190 150 170 170 150 190 40;3
+         60 235 235 215 215 235 235 60;4
+         60 215 215 235 235 215 215 60;5
+         60 215 235 255 255 235 215 60;6
+         20 125 105 85 85 105 125 20;7
+         20 105 105 125 125 105 105 20;8
+         130 40 60 20 20 60 40 130;  9
+         195 60 20 40 40 20 60 195;  10
+         65 20 40 60 60 40 20 60   ; 11
+         190 235 215 195 195 215 235 190;12
+         235 130 150 170 170 150 130 235;13
+         ]
+     
+     PROC Download()
+     ;Step back HiMem and move the
+     ;character set into RAM
+     RamSet=(HiMem-$400)&$FC00;1K boundary
+     ChrBase=RamSet RSH 8
+     HiMem=RamSet
+     MOVEBLOCK(RamSet,57344,1024)
+     Charset=RamSet
+     RETURN
+     
+     PROC Modify()
+     ;Modify the RAM character set
+     CARD xx
+     FOR xx=0 TO 103
+     DO
+       Charset(xx+8)=ShapeTable(xx)
+     OD
+     
+     Volume 1, Issue 1                                              Page 24
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     RETURN
+     
+     PROC Dlint()
+     ;the display list interrupt routine
+     [$48 $8A $48 $98 $48]
+     Wsync=1 Colbk=50 Colints=12
+     [$68 $A8 $68 $AA $68 $40]
+     
+     PROC ScoreLine()
+     ;set up the dli
+     Vdslst=Dlint Dlist(27)=132 Nmien=$C0
+     RETURN
+     
+     PROC Title()
+     BYTE colpf0=53270,colpf1=53271,
+          colpf2=53273,colpf3=53273,
+          rtclock=20,vcount=54283
+     GRAPHICS(18)
+     POSITION(7,4) PRINTD(6,"CELLS")
+     POSITION(8,5) PRINTD(6,"BY")
+     POSITION(3,7)
+     PRINTD(6,"david plotkin")
+     POSITION(3,9)
+     PRINTD(6,"PRESS select")
+     WHILE Consol<>5
+     DO colpf3=Fate Wsync=0
+       colpf0=128-vcount+rtclock RSH 2
+       colpf1=vcount+rtclock RSH 2
+     OD
+     RETURN
+     
+     PROC Gr4Init()
+     ;Set up the address of each screen
+     ;line,initialize and set up Gr. 4
+     CARD xx
+     BYTE clr1=709
+     GRAPHICS(0) CursIn=1 PRINT(" ")
+     FOR xx=0 TO 23
+     DO Linept(xx)=Scrn+(40*xx) OD
+     Dlist=Sdlst Dlist(3)=68
+     FOR xx=6 TO 27
+     DO Dlist(xx)=4 OD X=10 Y=10 clr1=68
+     RETURN
+     
+     PROC Update()
+     ;print data on the text line
+     POSITION(0,23) PRINT("Cells: ")
+     POSITION(7,23) PRINTC(Cells)
+     POSITION(15,23) PRINT("Max Cells: ")
+     POSITION(26,23) PRINTC(Max)
+     Atract=0
+     RETURN
+     
+     Volume 1, Issue 1                                              Page 25
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     
+     PROC Plot4(BYTE x,y,ch)
+     ;Plot a char at location x,y
+     BYTE ARRAY line
+     line=Linept(y) line(x)=ch
+     RETURN
+     
+     BYTE FUNC Locate4(BYTE x,y)
+     ;Returns the value of the char at x,y
+     BYTE ARRAY line
+     line=Linept(y)
+     RETURN(line(x))
+     
+     INT FUNC HStick(BYTE port)
+     BYTE ARRAY ports(4)=$278
+     INT ARRAY value(4)=[0 1 $FFFF 0]
+     port==&3
+     RETURN (value((ports(port)&$C) RSH 2))
+     
+     INT FUNC VStick(BYTE port)
+     BYTE ARRAY ports(4)=$278
+     INT ARRAY value(4)=[0 1 $FFFF 0]
+     port==&3
+     RETURN (value(ports(port)&3))
+     
+     PROC MoveCursor()
+     ;move cursor under joystick control
+     BYTE time=20,xx,yy,trig=644,flg1=[0]
+     IF flg1=0 THEN flg1=1
+       L2=Locate4(xx,yy) Plot4(X,Y,1)
+       L1=L2
+     FI
+     IF trig=0 THEN Xdir=1 Ydir=0 ELSE
+       Xdir=HStick(0) Ydir=VStick(0)
+     FI
+     IF Xdir=0 AND Ydir=0 THEN 
+       Plot4(X,Y,L2) flg1=0 RETURN
+     FI
+     xx=X+Xdir yy=Y+Ydir
+     IF xx>38 THEN xx=1 ELSEIF
+       xx<1 THEN xx=38
+     FI
+     IF yy>22 THEN yy=1 ELSEIF
+       yy<1 THEN yy=22
+     FI 
+     IF trig=0 THEN
+       IF L1=0 THEN L1=RAND(12)+2 Cells==+1
+         ELSE L1=0 Cells==-1
+       FI
+     FI
+     L2=Locate4(xx,yy) Plot4(X,Y,L1)
+     L1=L2 X=xx Y=yy Plot4(X,Y,1) time=0 
+     
+     Volume 1, Issue 1                                              Page 26
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     DO SOUND(0,xx LSH 2+yy LSH 2,10,     
+                    4+(1-trig)LSH 3)
+       UNTIL time=2
+     OD SOUND(0,0,0,0)
+     DO UNTIL trig=1 OD
+     RETURN
+     
+     PROC AllDone()
+     ;all the cells are dead
+     BYTE trig=644,wsync=$D40A,rtclock=20,
+          lm=53271,vcount=54283
+     SNDRST() Bkgrnd=0 Dlist(10)=2
+     Update()
+     POSITION(7,5)
+     PRINT("All DONE  Press FIRE") 
+     DO vcount=0  lm=vcount+rtclock RSH 2
+       UNTIL trig=0
+     OD
+     DO UNTIL trig=1 OD
+     Bkgrnd=148 Dlist(10)=4 PUT(125)
+     Cells=0 Max=0 Update()
+     POSITION(33,23) PRINT("START ")
+     DO MoveCursor() UNTIL Consol=6 OD
+     POSITION(33,23) PRINT("SELECT")
+     RETURN
+     
+     PROC GrowEm()
+     ;grow and kill the cells
+     BYTE xx,yy,lp,wh,test,cell,flg,ind=[0]
+     BYTE ARRAY line,hold(8), 
+     tune(0)=[243 243 162 182 162 182 193
+     243 243],tune1(0)=[162 96 108 121 108
+     121 128 162 162]
+     flg=0
+     FOR yy=1 TO 21; each row
+     DO FOR xx=1 TO 38; each column
+      DO line=Linept(yy-1)+(xx-1)
+       hold(0)=line(0) hold(1)=line(1)
+       hold(2)=line(2) hold(3)=line(42)
+       hold(4)=line(82) hold(5)=line(81)
+       hold(6)=line(80) hold(7)=line(40)
+       test=0 wh=line(41)
+       FOR lp=0 TO 7
+       DO IF hold(lp)>0 THEN test==+1 FI OD
+       IF wh=0 AND test=3 THEN
+        cell=RAND(12)+2 Cells==+1 flg=1
+        Plot4(xx,yy,cell) ELSEIF
+        wh>0 AND (test<2 OR test>3) THEN
+        Plot4(xx,yy,0) Cells==-1
+       FI
+      OD
+     OD 
+     
+     Volume 1, Issue 1                                              Page 27
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     IF Cells=0 OR flg=0 THEN AllDone() FI
+     POSITION(7,23) PRINTC(Cells)         
+     PRINT(" ")
+     ;SOUND(0,tune(ind),10,4)
+     ;SOUND(1,tune1(ind),10,4) ind==+1
+     ;IF ind=8 THEN ind=0 FI
+     IF Max<Cells THEN Max=Cells 
+       POSITION(26,23) PRINTC(Max)
+     FI
+     IF Consol=5 THEN SNDRST()
+       POSITION(33,23) PRINT("START ")
+       DO MoveCursor() UNTIL Consol=6 OD
+       POSITION(33,23) PRINT("SELECT")
+     FI
+     RETURN
+     
+     PROC Main()
+     BYTE time=20,lp,ch=764
+     Title() Gr4Init() Snd1=0 Snd2=3
+     Download() Modify() ScoreLine()
+     Plot4(X,Y,1) Update()
+     POSITION(33,23) PRINT("START ")
+     DO MoveCursor() UNTIL Consol=6 OD
+     POSITION(33,23) PRINT("SELECT")
+     DO GrowEm() OD
+     RETURN
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                              Page 28
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     30000 Procedure "ScientificNotation" Using Parameter
+     30010   Trap 30300
+     30020   Dim Garbage$(1),Trash(0),Dec$(9)
+     30030   Local Dpart,Ipart,Epart,Flag,Temp,Sign,Parmadr
+     30040   Trash(0)=Parameter
+     30050   Parmadr=Adr(Garbage$)+1
+     30060   Flag=0:Sign=1
+     30070   Epart=Peek(Parmadr)
+     30080   If Epart&128=128
+     30090     Sign=-1
+     30100     Epart=Epart-128
+     30110   Endif 
+     30120   Ipart=Val(Hex$(Peek(Parmadr+1)))
+     30130   If Ipart>9
+     30140     Temp=Ipart/10
+     30150     Ipart=Int(Temp)
+     30160     Temp=(Temp-Ipart)*10
+     30170     Flag=1
+     30180     Dec$(1,1)=Right$(Str$(Temp),1)
+     30190   Else 
+     30200     Dec$(9,9)="0"
+     30210   Endif 
+     30220   Epart=(Epart-64)*2+Flag
+     30230   Ipart=Ipart*Sign
+     30240   Dec$(Flag+1,Flag+2)=Right$(Hex$(Peek(Parmadr+2)),2)
+     30250   Dec$(Flag+3,Flag+4)=Right$(Hex$(Peek(Parmadr+3)),2)
+     30260   Dec$(Flag+5,Flag+6)=Right$(Hex$(Peek(Parmadr+4)),2)
+     30270   Dec$(Flag+7,Flag+8)=Right$(Hex$(Peek(Parmadr+5)),2)
+     30280   Dpart=Val(Dec$)
+     30290 Exit Ipart,Dpart,Epart
+     30300 Cont 
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                              Page 29
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     10 Rem DEMO USING "ScientificNotation"
+     15 Rem by Thomas C. Pitman
+     20 For Ax=1 To 10
+     30   Trap 30:Input "ENTER A NUMBER->",Digit
+     40   Call "ScientificNotation" Using Digit To Ip,Dp,Ep
+     50   Print  Using "#######.####  -# /.&&&&&&&&&E+&&",Digit,Ip,Dp,Ep
+     60 Next Ax
+     70 End 
+     30000 Procedure "ScientificNotation" Using Parameter
+     30010   Trap 30300
+     30020   Dim Garbage$(1),Trash(0),Dec$(9)
+     30030   Local Dpart,Ipart,Epart,Flag,Temp,Sign,Parmadr
+     30040   Trash(0)=Parameter
+     30050   Parmadr=Adr(Garbage$)+1
+     30060   Flag=0:Sign=1
+     30070   Epart=Peek(Parmadr)
+     30080   If Epart&128=128
+     30090     Sign=-1
+     30100     Epart=Epart-128
+     30110   Endif 
+     30120   Ipart=Val(Hex$(Peek(Parmadr+1)))
+     30130   If Ipart>9
+     30140     Temp=Ipart/10
+     30150     Ipart=Int(Temp)
+     30160     Temp=(Temp-Ipart)*10
+     30170     Flag=1
+     30180     Dec$(1,1)=Right$(Str$(Temp),1)
+     30190   Else 
+     30200     Dec$(9,9)="0"
+     30210   Endif 
+     30220   Epart=(Epart-64)*2+Flag
+     30230   Ipart=Ipart*Sign
+     30240   Dec$(Flag+1,Flag+2)=Right$(Hex$(Peek(Parmadr+2)),2)
+     30250   Dec$(Flag+3,Flag+4)=Right$(Hex$(Peek(Parmadr+3)),2)
+     30260   Dec$(Flag+5,Flag+6)=Right$(Hex$(Peek(Parmadr+4)),2)
+     30270   Dec$(Flag+7,Flag+8)=Right$(Hex$(Peek(Parmadr+5)),2)
+     30280   Dpart=Val(Dec$)
+     30290 Exit Ipart,Dpart,Epart
+     30300 Cont 
+     
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                              Page 30
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     10 Fast :Color 1
+     20 Dim D(64,33),Pr$(1):Bx=0:By=0
+     30 Graphics 0:Poke 752,1:Position 5,10:Print "Number of Levels";:Input
+     Le
+     40 Ds=2^Le+1
+     50 Mx=Ds-1:My=Mx/2:Pi=3.1416:Rh=Pi/6:Vt=-Pi/5
+     51 Rc=Cos(Rh):Rs=Sin(Rh)
+     52 Vc=Cos(Vt):Vs=Sin(Vt)
+     60   For N=1 To Le:L=10000/1.8^N
+     70   Print "WORKING ON LEVEL ";N
+     80   Ib=Mx/2^N:Sk=Ib*2
+     90   Print "";:Gosub 150:Rem ASSIGN HEIGHTS ALONG    X IN ARRAY
+     100   Print "";:Gosub 220:Rem ASSIGN HEIGHTS ALONG   Y IN ARRAY
+     110   Print "";:Gosub 290:Rem ASSIGN HEIGHTS ALONG   DIAG. IN ARRAY
+     120   Next N
+     130 Goto 640:Rem DRAW
+     140 Rem HEIGHTS ALONG X
+     150   For Ye=0 To Mx-1 Step Sk
+     160     For Xe=Ib+Ye To Mx Step Sk
+     170     Ax=Xe-Ib:Ay=Ye:Gosub 370:D1=D:Ax=Xe+Ib:Gosub 370:D2=D
+     180     D=(D1+D2)/2+(Rnd(0)-0.5)*L/2:Ax=Xe:Ay=Ye:Gosub 420
+     190     Next Xe
+     200   Next Ye:Return 
+     210 Rem HEIGHTS ALONG Y
+     220   For Xe=Mx To 1 Step -Sk
+     230     For Ye=Ib To Xe Step Sk
+     240     Ax=Xe:Ay=Ye+Ib:Gosub 370:D1=D:Ay=Ye-Ib:Gosub 370:D2=D
+     250     D=(D1+D2)/2+(Rnd(0)-0.5)*L/2:Ax=Xe:Ay=Ye:Gosub 420
+     260     Next Ye
+     270   Next Xe:Return 
+     280 Rem HEIGHTS ALONG DIAGONAL
+     290   For Xe=0 To Mx-1 Step Sk
+     300     For Ye=Ib To Mx-Xe Step Sk
+     310     Ax=Xe+Ye-Ib:Ay=Ye-Ib:Gosub 370:D1=D
+     320     Ax=Xe+Ye+Ib:Ay=Ye+Ib:Gosub 370:D2=D
+     330     Ax=Xe+Ye:Ay=Ye:D=(D1+D2)/2+(Rnd(0)-0.5)*L/2:Gosub 420
+     340     Next Ye
+     350   Next Xe:Return 
+     360 Rem RETURN DATA FROM ARRAY
+     370 If Ay>My Then 390
+     380 By=Ay:Bx=Ax:Goto 400
+     390 By=Mx+1-Ay:Bx=Mx-Ax
+     400 D=D(Abs(Int(Bx)),By):Return 
+     410 Rem PUT DATA INTO ARRAY
+     420 If Ay>My Then 440
+     430 By=Ay:Bx=Ax:Goto 450
+     440 By=Mx+1-Ay:Bx=Mx-Ax
+     450 D(Bx,By)=D:Return 
+     630 Rem DISPLAY HERE
+     640 Gosub 1110:Rem SET UP SCREEN
+     650 Xs=0.04:Ys=0.04:Zs=0.04:Rem SCALING      FACTORS
+     660   For Ax=0 To Mx:X0=-999:  For Ay=0 To Ax
+     
+     Volume 1, Issue 1                                              Page 31
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     670     Gosub 370:Zz=D:Yy=Ay/Mx*10000:Xx=Ax/Mx*10000-Yy/2
+     680     Gosub 940:Next Ay:Next Ax
+     690   For Ay=0 To Mx:X0=-999:  For Ax=Ay To Mx
+     700     Gosub 370:Zz=D:Yy=Ay/Mx*10000:Xx=Ax/Mx*10000-Yy/2
+     710     Gosub 940:Next Ax:Next Ay
+     720   For Ex=0 To Mx:X0=-999:  For Ey=0 To Mx-Ex
+     730     Ax=Ex+Ey:Ay=Ey:Gosub 370:Zz=D:Yy=Ay/Mx*10000
+     740     Xx=Ax/Mx*10000-Yy/2:Gosub 940:Next Ey:Next Ex
+     750 Goto 1130
+     760 Rem ROTATE
+     770 Ox=Xx
+     780 Xx=Xx*Rc-Yy*Rs
+     790 Yy=Ox*Rs+Yy*Rc
+     800 Return 
+     850 Rem TILT DOWN
+     860 Ox=Xx
+     870 Xx=Vc*Xx-Vs*Zz
+     880 Zz=Vs*Ox+Vc*Zz
+     890 Return 
+     930 Rem MOVE OR DRAWTO (XP,YP)
+     940 Rem 
+     950 Xx=Xx*Xs:Yy=Yy*Ys:Zz=Zz*Zs
+     960 Gosub 770:Rem ROTATE
+     970 Gosub 860:Rem TILT UP
+     990 Xp=Int(Yy)+Cx:Yp=Int(Zz)
+     1000 Gosub 1030
+     1010 Return 
+     1020 Rem PLOT LINE HERE
+     1030 Xp=Xp*0.625:Yp=33.14-0.663*Yp
+     1040 If X0=-999 Then X8=Xp:Y8=Yp:X0=X
+     1045 If Y8>179 Or Y8<0 Or Yp>179 Or Yp<0 Then Return 
+     1050 Plot X8,Y8:Drawto Xp,Yp:X8=Xp:Y8=Yp:Return 
+     1060 Rem SWITCH TO SEA COLOR
+     1070 Color 2:Return 
+     1080 Rem SWITCH TO LAND COLOR
+     1090 Color 1:Return 
+     1100 Rem SET UP SCREEN
+     1110 Graphics 8:Poke 710,0:Return 
+     1130   For Wait=150 To 10 Step -10:Sound 0,Wait,10,Wait/10:Next
+     Wait:Sound 0,0,0,0
+     1135 Poke 656,0:Poke 657,0:Print "PRESS ANY KEY...";:Poke 754,255
+     1140 If Peek(754)=255 Then Poke 77,0:Goto 1140
+     1150 Goto 30
+     
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                              Page 32
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     1000 ;LIST#D:CONVERT.M65
+     1010 ;
+     1020 ;
+     1030 ;
+     1040 ;ASM,,#D:CONVERT.COM
+     1050 ;
+     1060 ; ===========================
+     1070 ;  ASCII - ATASCII Converter
+     1080 ;  by: Christopher M. Kelley
+     1090 ;  for: OSS, Inc. Newsletter
+     1100 ; ===========================
+     1110 ;
+     1120     .OPT NO LIST
+     1130 ;
+     1140 ;Labels
+     1150 ;
+     1160 DOSVEC = $0A
+     1170 LMARGN = $52
+     1180 SAVLOC = $CB
+     1190 INVFLG = $02B6
+     1200 SHFLOK = $02BE
+     1210 ICCOM = $0342
+     1220 ICBAL = $0344
+     1230 ICBAH = $0345
+     1240 ICBLL = $0348
+     1250 ICBLH = $0349
+     1260 ICAX1 = $034A
+     1270 CIOV =  $E456
+     1280 ;
+     1290 ;Start
+     1300 ;
+     1310     *=  $4000
+     1320 BEGIN
+     1330     JMP START
+     1340 ;
+     1350 ;Text
+     1360 ;
+     1370 TEXT
+     1380     .BYTE $7D,$9B,"   ASCII/ATASCII Text File Converter",$9B
+     1390     .BYTE " (c)1986 Christopher M. Kelley and
+     OSS.",$9B,$9B,$9B,$9B
+     1400     .BYTE $7F,"Conversion Type:",$9B
+     1410     .BYTE $7F,"  [1]ASCII To ATASCII",$9B
+     1420     .BYTE $7F,"  [2]ATASCII To ASCII",$9B
+     1430     .BYTE $7F,"  [Q]Quit",$9B,$9B,$9B
+     1440 ;
+     1450 QUSTN
+     1460     .BYTE $1C,$9C,$7F,"Please Choose:",$00
+     1470 ;
+     1480 RETURN
+     1490     .BYTE $9B,$9B,$00
+     1500 ;
+     
+     Volume 1, Issue 1                                              Page 33
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     1510 INFILE
+     1520     .BYTE $1C,$9C,"    File To Convert:",$00
+     1530 ;
+     1540 OUTFILE
+     1550     .BYTE $1C,$9C,"    Output File:",$00
+     1560 ;
+     1570 DONE
+     1580     .BYTE $9B,$9B,$7F,"DONE! - [RETURN] To Continue",$00 $
+     1590 ;
+     1600 ERR
+     1610     .BYTE $7F,"ERROR - [RETURN] To Retry",$00
+     1620 ;
+     1630 EDIT
+     1640     .BYTE "E:"
+     1650 ;
+     1660 INNAME
+     1670     .BYTE "D:               "
+     1680 ;
+     1690 OUTNAME
+     1700     .BYTE "D:               "
+     1710 ;
+     1720 ANSWER
+     1730     .BYTE $00,$00
+     1740 ;
+     1750 FLAG
+     1760     .BYTE $00,$00,$00
+     1770 ;
+     1780 TLEN
+     1790     .BYTE $00
+     1800 ;
+     1810 ATRET
+     1820     .BYTE $9B
+     1830 ;
+     1840 ASCRET
+     1850     .BYTE $0D,$0A
+     1860 ;
+     1870 SAVLM
+     1880     .BYTE $00
+     1890 ;
+     1900 ;Open Channel 1 To E:
+     1910 ;
+     1920 START
+     1930     LDA LMARGN  ;SAVE ORIGINAL
+     1940     STA SAVLM   ;LEFT MARGIN
+     1950     LDA #$00
+     1960     STA LMARGN
+     1970 ;
+     1980     LDX #$10    ;CHANNEL 1
+     1990     LDA #$0C    ;CLOSE
+     2000     STA ICCOM,X ;JUST IN CASE
+     2010     JSR CIOV
+     2020 ;
+     
+     Volume 1, Issue 1                                              Page 34
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     2030     LDX #$10    ;CHANNEL 1
+     2040     LDA #$03    ;OPEN
+     2050     STA ICCOM,X ;EDITOR
+     2060     LDA # <EDIT
+     2070     STA ICBAL,X
+     2080     LDA # >EDIT
+     2090     STA ICBAH,X
+     2100     LDA #$0C    ;READ,WRITE
+     2110     STA ICAX1,X
+     2120     JSR CIOV    ;DO IT
+     2130 ;
+     2140 ;Print Text
+     2150 ;
+     2160 PRG
+     2170     LDA # <TEXT ;HOLD ADDR OF
+     2180     STA SAVLOC  ;TEXT FOR USE
+     2190     LDA # >TEXT
+     2200     STA SAVLOC+1
+     2210     JSR PRNTIC1
+     2220 ;
+     2230 ;Get Answer
+     2240 ;
+     2250 GETNUM
+     2260     LDA # <ANSWER ;HOLD ADDR OF
+     2270     STA SAVLOC  ;ANSWER FOR USE
+     2280     LDA # >ANSWER
+     2290     STA SAVLOC+1
+     2300     LDA #$02    ;ANSWER LENGTH
+     2310     STA TLEN
+     2320     JSR GETIC1
+     2330 ;
+     2340     LDA ANSWER  ;FIND OUT WHAT
+     2350     CMP #$31    ;ANSWER WAS
+     2360     BNE TRY2    ;NOT 1
+     2370     LDA #$00    ;IT IS 1
+     2380     STA FLAG    ;SET FLAG FOR
+     2390     JMP CONVRT  ;ASCII - ATASCII
+     2400     LDA #$40    ;SET UP CAPS
+     2410     STA SHFLOK
+     2420 ;
+     2430 TRY2
+     2440     CMP #$32
+     2450     BNE TRYQ    ;NOT 2
+     2460     LDA #$01    ;IT IS 2
+     2470     STA FLAG    ;SET FLAG FOR
+     2480     JMP CONVRT  ;ATASCII - ASCII
+     2490 ;
+     2500 TRYQ
+     2510     CMP #$51
+     2520     BNE TRYAGN  ;NOT Q
+     2530     LDA SAVLM   ;RESTORE LEFT
+     2540     STA LMARGN  ;MARGIN
+     
+     Volume 1, Issue 1                                              Page 35
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     2550     JMP (DOSVEC) ;BACK TO DOS
+     2560 ;
+     2570 TRYAGN
+     2580     LDA # <QUSTN ;REPRINT JUST
+     2590     STA SAVLOC  ;THE QUESTION
+     2600     LDA # >QUSTN
+     2610     STA SAVLOC+1
+     2620     JSR PRNTIC1 ;PRINT IT
+     2630     JMP GETNUM  ;TRY AGAIN
+     2640 ;
+     2650 ;Print Routine
+     2660 ;
+     2670 PRNTIC1
+     2680     LDY #$00
+     2690     LDA (SAVLOC),Y ;$00=TEXT END
+     2700     CMP #$00    ;SAVLOC=ADDR OF
+     2710     BEQ ENDPRNT ;TEXT
+     2720     LDX #$10    ;CHANEL 1
+     2730     LDA #$0B    ;PUT BINARY REC
+     2740     STA ICCOM,X
+     2750     LDA SAVLOC  ;TEXT ADDR
+     2760     STA ICBAL,X
+     2770     LDA SAVLOC+1
+     2780     STA ICBAH,X
+     2790     LDA #$01    ;1 CHAR ONLY
+     2800     STA ICBLL,X
+     2810     LDA #$00
+     2820     STA ICBLH,X
+     2830     JSR CIOV    ;DO IT
+     2840     INC SAVLOC  ;NEXT CHAR
+     2850     BNE PRNTIC1
+     2860     INC SAVLOC+1
+     2870     JMP PRNTIC1 ;DO IT AGAIN
+     2880 ENDPRNT
+     2890     RTS 
+     2900 ;
+     2910 ;Get Answer
+     2920 ;
+     2930 GETIC1
+     2940     LDA #$00    ;SET NO INVERSE
+     2950     STA INVFLG
+     2960     LDX #$10    ;CHANNEL 1
+     2970     LDA #$05    ;GET TEXT REC
+     2980     STA ICCOM,X
+     2990     LDA SAVLOC  ;BUFFER ADDR
+     3000     STA ICBAL,X
+     3010     LDA SAVLOC+1
+     3020     STA ICBAH,X
+     3030     LDA TLEN    ;GET LENGTH
+     3040     STA ICBLL,X
+     3050     LDA #$00
+     3060     STA ICBLH,X
+     
+     Volume 1, Issue 1                                              Page 36
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     3070     JSR CIOV    ;DO IT
+     3080     RTS 
+     3090 ;
+     3100 ;Get Filenames
+     3110 ;
+     3120 CONVRT
+     3130     LDA # <RETURN ;HOLD ADDR OF
+     3140     STA SAVLOC  ;TEXT FOR USE
+     3150     LDA # >RETURN
+     3160     STA SAVLOC+1
+     3170     JSR PRNTIC1
+     3180 ;
+     3190 GETIN
+     3200     LDA # <INFILE ;PRINT SOME
+     3210     STA SAVLOC  ;MORE TEXT
+     3220     LDA # >INFILE
+     3230     STA SAVLOC+1
+     3240     JSR PRNTIC1
+     3250 ;
+     3260     LDA #$00
+     3270     TAX 
+     3280 ;
+     3290 CLRIN
+     3300     STA INNAME+2,X
+     3310     INX 
+     3320     CPX #$0F
+     3330     BNE CLRIN
+     3340 ;
+     3350     LDA # <INNAME+2 ;GET
+     3360     STA SAVLOC  ;FILE TO CONVERT
+     3370     LDA # >INNAME+2
+     3380     STA SAVLOC+1
+     3390     LDA #$0F    ;TEXT LENGTH
+     3400     STA TLEN
+     3410     JSR GETIC1
+     3420 ;
+     3430     LDA INNAME+3 ;FIND COLON
+     3440     CMP #$3A
+     3450     BNE TRYNXT
+     3460     LDA #$00    ;FOUND IT, SET
+     3470     STA FLAG+1  ;FLAG
+     3480     JMP OPENIN
+     3490 ;
+     3500 TRYNXT
+     3510     LDA INNAME+4 ;TRY AGAIN FOR
+     3520     CMP #$3A    ;COLON
+     3530     BNE NOTHERE
+     3540     LDA #$00    ;FOUNT IT, SET
+     3550     STA FLAG+1  ;FLAG
+     3560     JMP OPENIN
+     3570 ;
+     3580 NOTHERE
+     
+     Volume 1, Issue 1                                              Page 37
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     3590     LDA #$01    ;IT'S NOT HERE
+     3600     STA FLAG+1  ;SET FLAG
+     3610 ;
+     3620 OPENIN
+     3630     LDX #$20    ;CHANNEL 2
+     3640     LDA #$0C    ;CLOSE - JUST
+     3650     STA ICCOM,X ;IN CASE
+     3660     JSR CIOV
+     3670 ;
+     3680     LDX #$20    ;CHANNEL 2
+     3690     LDA #$03    ;OPEN
+     3700     STA ICCOM,X
+     3710     LDA FLAG+1  ;CHECK FLAG
+     3720     CMP #$00
+     3730     BNE NOTSET
+     3740     LDA # <INNAME+2 ;FILENAME
+     3750     STA ICBAL,X ;ADDR
+     3760     LDA # >INNAME+2
+     3770     STA ICBAH,X
+     3780     JMP CONT
+     3790 ;
+     3800 NOTSET
+     3810     LDA # <INNAME ;FILENAME ADDR
+     3820     STA ICBAL,X
+     3830     LDA # >INNAME
+     3840     STA ICBAH,X
+     3850 ;
+     3860 CONT
+     3870     LDA #$04    ;READ FILE
+     3880     STA ICAX1,X
+     3890     JSR CIOV
+     3900     BPL GETOUT  ;IT WORKED
+     3910     JMP GETIN   ;FAILED - RETRY
+     3920 ;
+     3930 GETOUT
+     3940     LDA # <RETURN ;HOLD ADDR OF
+     3950     STA SAVLOC  ;TEXT FOR USE
+     3960     LDA # >RETURN
+     3970     STA SAVLOC+1
+     3980     JSR PRNTIC1
+     3990 ;
+     4000 GETOUT1
+     4010     LDA # <OUTFILE ;PRINT SOME
+     4020     STA SAVLOC  ;MORE TEXT
+     4030     LDA # >OUTFILE
+     4040     STA SAVLOC+1
+     4050     JSR PRNTIC1
+     4060 ;
+     4070     LDA #$00
+     4080     TAX 
+     4090 ;
+     4100 CLROUT
+     
+     Volume 1, Issue 1                                              Page 38
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     4110     STA OUTNAME+2,X
+     4120     INX 
+     4130     CPX #$10
+     4140     BNE CLROUT
+     4150 ;
+     4160     LDA # <OUTNAME+2 ;GET
+     4170     STA SAVLOC  ;FILE TO CONVERT
+     4180     LDA # >OUTNAME+2
+     4190     STA SAVLOC+1
+     4200     LDA #$0F    ;TEXT LENGTH
+     4210     STA TLEN
+     4220     JSR GETIC1
+     4230 ;
+     4240     LDA OUTNAME+3 ;FIND COLON
+     4250     CMP #$3A
+     4260     BNE TRYNXT1
+     4270     LDA #$00    ;FOUND IT, SET
+     4280     STA FLAG+2  ;FLAG
+     4290     JMP OPENOUT
+     4300 ;
+     4310 TRYNXT1
+     4320     LDA OUTNAME+4 ;TRY AGAIN FOR
+     4330     CMP #$3A    ;COLON
+     4340     BNE NOTHERE1
+     4350     LDA #$00    ;FOUNT IT, SET
+     4360     STA FLAG+2  ;FLAG
+     4370     JMP OPENOUT
+     4380 ;
+     4390 NOTHERE1
+     4400     LDA #$01    ;IT'S NOT HERE
+     4410     STA FLAG+2  ;SET FLAG
+     4420 ;
+     4430 OPENOUT
+     4440     LDX #$30    ;CHANNEL 3
+     4450     LDA #$0C    ;CLOSE - JUST
+     4460     STA ICCOM,X ;IN CASE
+     4470     JSR CIOV
+     4480 ;
+     4490     LDX #$30    ;CHANNEL 2
+     4500     LDA #$03    ;OPEN
+     4510     STA ICCOM,X
+     4520     LDA FLAG+2  ;CHECK FLAG
+     4530     CMP #$00
+     4540     BNE NOTSET1
+     4550     LDA # <OUTNAME+2 ;FILENAME
+     4560     STA ICBAL,X ;ADDR
+     4570     LDA # >OUTNAME+2
+     4580     STA ICBAH,X
+     4590     JMP CONT1
+     4600 ;
+     4610 NOTSET1
+     4620     LDA # <OUTNAME ;FILENAME
+     
+     Volume 1, Issue 1                                              Page 39
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     4630     STA ICBAL,X ;ADDR
+     4640     LDA # >OUTNAME
+     4650     STA ICBAH,X
+     4660 ;
+     4670 CONT1
+     4680     LDA #$08    ;WRITE FILE
+     4690     STA ICAX1,X
+     4700     JSR CIOV
+     4710     BPL DOIT
+     4720     JMP GETOUT1
+     4730 ;
+     4740 ;Do Conversion
+     4750 ;
+     4760 DOIT
+     4770     LDA FLAG    ;FIND OUT WHICH
+     4780     CMP #$00    ;CONVERSION
+     4790     BEQ ASCAT
+     4800     JMP ATASC
+     4810 ;
+     4820 ASCAT
+     4830     LDA # <ANSWER ;STORE ADDR
+     4840     STA SAVLOC
+     4850     LDA # >ANSWER
+     4860     STA SAVLOC+1
+     4870     JSR GETIC2
+     4880     BPL GETCHAR
+     4890     JMP END
+     4900 ;
+     4910 GETCHAR
+     4920     LDA ANSWER  ;IS IT CTRL-M?
+     4930     CMP #$0D
+     4940     BEQ GOTIT   ;YES, REPLACE IT
+     4950     LDA # <ANSWER ;NO, PUT CHAR
+     4960     STA SAVLOC  ;BACK
+     4970     LDA # >ANSWER
+     4980     STA SAVLOC+1
+     4990     LDA #$01
+     5000     STA TLEN
+     5010     JSR PUTIC3
+     5020     BPL ASCAT
+     5030     JMP ERROR
+     5040 ;
+     5050 GOTIT
+     5060     LDA # <ANSWER ;YES, GET
+     5070     STA SAVLOC  ;SECOND PART
+     5080     LDA # >ANSWER
+     5090     STA SAVLOC+1
+     5100     JSR GETIC2
+     5110 ;
+     5120     LDA # <ATRET ;PUT ATASCII
+     5130     STA SAVLOC  ;C/R TO OUTPUT
+     5140     LDA # >ATRET
+     
+     Volume 1, Issue 1                                              Page 40
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     5150     STA SAVLOC+1
+     5160     LDA #$01
+     5170     STA TLEN
+     5180     JSR PUTIC3
+     5190     BPL ASCAT
+     5200     JMP ERROR
+     5210 ;
+     5220 GETIC2
+     5230     LDX #$20    ;CHANNEL #2
+     5240     LDA #$07    ;GET BINARY REC
+     5250     STA ICCOM,X
+     5260     LDA SAVLOC  ;BUFFER ADDR
+     5270     STA ICBAL,X
+     5280     LDA SAVLOC+1
+     5290     STA ICBAH,X
+     5300     LDA #$01    ;LENGTH = 1
+     5310     STA ICBLL,X
+     5320     LDA #$00
+     5330     STA ICBLH,X
+     5340     JSR CIOV
+     5350     RTS 
+     5360 ;
+     5370 PUTIC3
+     5380     LDX #$30    ;CHANNEL #3
+     5390     LDA #$0B    ;PUT BINARY REC
+     5400     STA ICCOM,X
+     5410     LDA SAVLOC  ;TEXT ADDR
+     5420     STA ICBAL,X
+     5430     LDA SAVLOC+1
+     5440     STA ICBAH,X
+     5450     LDA TLEN    ;TEXT LENGTH
+     5460     STA ICBLL,X
+     5470     LDA #$00
+     5480     STA ICBLH,X
+     5490     JSR CIOV
+     5500     RTS 
+     5510 ;
+     5520 ATASC
+     5530     LDA # <ANSWER ;STORE ADDR
+     5540     STA SAVLOC
+     5550     LDA # >ANSWER
+     5560     STA SAVLOC+1
+     5570     JSR GETIC2
+     5580     BPL GETCHAR1
+     5590     JMP END
+     5600 ;
+     5610 GETCHAR1
+     5620     LDA ANSWER
+     5630     CMP #$9B    ;IS IT C/R?
+     5640     BEQ GOTIT1  ;YES, REPLACE IT
+     5650     LDA # <ANSWER ;NO, PUT IT
+     5660     STA SAVLOC  ;BACK
+     
+     Volume 1, Issue 1                                              Page 41
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     5670     LDA # >ANSWER
+     5680     STA SAVLOC+1
+     5690     LDA #$01
+     5700     STA TLEN
+     5710     JSR PUTIC3
+     5720     BPL ATASC
+     5730     JMP ERROR
+     5740 ;
+     5750 GOTIT1
+     5760     LDA # <ASCRET ;PUT ASCII
+     5770     STA SAVLOC  ;C/R,LF PAIR IN
+     5780     LDA # >ASCRET
+     5790     STA SAVLOC+1
+     5800     LDA #$02
+     5810     STA TLEN
+     5820     JSR PUTIC3
+     5830     BPL ATASC
+     5840     JMP ERROR
+     5850 ;
+     5860 ;End Of Run
+     5870 ;
+     5880 END
+     5890     LDX #$20    ;CHANNEL 2
+     5900     LDA #$0C    ;CLOSE
+     5910     STA ICCOM,X
+     5920     JSR CIOV
+     5930 ;
+     5940     LDX #$30    ;CHANNEL 3
+     5950     LDA #$0C    ;CLOSE
+     5960     STA ICCOM,X
+     5970     JSR CIOV
+     5980 ;
+     5990     LDA # <DONE ;LET USER KNOW
+     6000     STA SAVLOC
+     6010     LDA # >DONE
+     6020     STA SAVLOC+1
+     6030     JSR PRNTIC1
+     6040 ;
+     6050     LDA # <ANSWER ;GET C/R
+     6060     STA SAVLOC
+     6070     LDA # >ANSWER
+     6080     STA SAVLOC+1
+     6090     LDA #$02
+     6100     STA TLEN
+     6110     JSR GETIC1
+     6120 ;
+     6130     JMP PRG
+     6140 ;
+     6150 ERROR
+     6160     LDX #$20    ;CHANNEL 2
+     6170     LDA #$0C    ;CLOSE
+     6180     STA ICCOM,X
+     
+     Volume 1, Issue 1                                              Page 42
+
+
+
+
+
+
+
+
+
+     OSS Newsletter                                               Fall 1986
+     --------------                                               ---------
+     
+     6190     JSR CIOV
+     6200 ;
+     6210     LDA #$30    ;CHANNEL 3
+     6220     LDA #$0C    ;CLOSE
+     6230     STA ICCOM,X
+     6240     JSR CIOV
+     6250 ;
+     6260     LDA # <ERR  ;THERE'S A PROB
+     6270     STA SAVLOC
+     6280     LDA # >ERR
+     6290     STA SAVLOC+1
+     6300     JSR PRNTIC1
+     6310 ;
+     6320     LDA # <ANSWER ;GET C/R
+     6330     STA SAVLOC
+     6340     LDA # >ANSWER
+     6350     STA SAVLOC+1
+     6360     LDA #$02
+     6370     STA TLEN
+     6380     JSR GETIC1
+     6390 ;
+     6400     JMP PRG
+     6410 ;
+     6420 ;End Of Program
+     6430 ;
+     6440     *=  $02E0
+     6450     .WORD BEGIN
+     6460 ;
+     6470     .END 
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Volume 1, Issue 1                                              Page 43
+
+
+
+
+
+
+
+
+

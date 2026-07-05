@@ -1,0 +1,355 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16620\viewh19420\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 10       .PAGE "OPERATOR TABLE"\
+20 CFPN  =   $0E\
+30 CSLIT =   $0F\
+40 ;\
+50 OPNTAB\
+60 ?     .= CSLIT+1  ; FIRST ENTRY = 1\
+70       ;           PAST STRING CONST\
+80 CCOM  =   ?\
+90 JCOM  =   ?\
+0100     .CBYTE ","\
+0110 ;\
+0120 ?   .= ?+1\
+0130 CEOS =  ?\
+0140 JEOS =  ?\
+0150     .CBYTE ":"\
+0160 ;\
+0170 ?   .= ?+1\
+0180 CSC =   ?\
+0190 JSC =   ?\
+0200     .CBYTE ";"\
+0210 ;\
+0220 ?   .= ?+1\
+0230 CCR =   ?       ; CARRIAGE RETURN\
+0240 JCR =   ?\
+0250     .BYTE CR!$80\
+0260 ;\
+0270 ?   .= ?+1\
+0280 CGTO =  ?\
+0290 JGTO =  ?\
+0300     .CBYTE "GOTO"\
+0310 ;\
+0320 ?   .= ?+1\
+0330 CGS =   ?\
+0340 JGS =   ?\
+0350     .CBYTE "GOSUB"\
+0360 ;\
+0370 ?   .= ?+1\
+0380 CTO =   ?\
+0390     .CBYTE "TO"\
+0400 ;\
+0410 ?   .= ?+1\
+0420 CSTEP = ?\
+0430     .CBYTE "STEP"\
+0440 ;\
+0450 ?   .= ?+1\
+0460 CSOE =  ?\
+0470 JSOE =  ?\
+0480 CEQ =   ?\
+0490 CAASN = ?\
+0500     .CBYTE "="\
+0510 ;\
+0520 ?   .= ?+1\
+0530 CSASN = ?\
+0540     .CBYTE "="\
+0550 ;\
+0560 ?   .= ?+1\
+0570 CTHEN = ?\
+0580 JTHEN = ?\
+0590     .CBYTE "THEN"\
+0600 ;\
+0610 ?   .= ?+1\
+0620 CPND =  ?\
+0630 JPND =  ?\
+0640     .CBYTE "#"\
+0650     .PAGE \
+0660     ; \
+0670 JSROP = ?+1     START OF REAL OPS\
+0680 ;\
+0690 ?   .= ?+1\
+0700 CBNAND = ?\
+0710     .CBYTE "^&"\
+0720 ;\
+0730 ?   .= ?+1\
+0740 CBNOR = ?\
+0750     .CBYTE "^!"\
+0760 ;\
+0770 ?   .= ?+1\
+0780 CBNEOR = ?\
+0790     .CBYTE "^%"\
+0800 ;\
+0810 ?   .= ?+1\
+0820 CLSR =  ?\
+0830     .CBYTE ">>"\
+0840 ;\
+0850 ?   .= ?+1\
+0860 CLSL =  ?\
+0870     .CBYTE "<<"\
+0880 ;\
+0890 ?   .= ?+1\
+0900 CLE =   ?\
+0910     .CBYTE "<="\
+0920 ;\
+0930 ?   .= ?+1\
+0940 CNE =   ?\
+0950     .CBYTE "<>"\
+0960 ;\
+0970 ?   .= ?+1\
+0980 CGE =   ?\
+0990     .CBYTE ">="\
+1000 ;\
+1010 ?   .= ?+1\
+1020 CLT =   ?\
+1030     .CBYTE "<"\
+1040 ;\
+1050 ?   .= ?+1\
+1060 CGT =   ?\
+1070     .CBYTE ">"\
+1080 ;\
+1090 ?   .= ?+1\
+1100 CAEQ =  ?\
+1110     .CBYTE "="\
+1120 ;\
+1130 ?   .= ?+1\
+1140 CMOD =  ?\
+1150     .CBYTE "\\"\
+1160 ;\
+1170 ?   .= ?+1\
+1180 CMUL =  ?\
+1190     .CBYTE "*"\
+1200 ;\
+1210 ?   .= ?+1\
+1220 CPLUS = ?\
+1230     .CBYTE "+"\
+1240 ;\
+1250 ?   .= ?+1\
+1260 CMINUS = ?\
+1270     .CBYTE "-"\
+1280 ;\
+1290 ?   .= ?+1\
+1300 CDIV =  ?\
+1310     .CBYTE "/"\
+1320 ;\
+1330 ?   .= ?+1\
+1340 CBEOR = ?\
+1350 JBEOR = ?\
+1360     .CBYTE "%"\
+1370 ;\
+1380 ?   .= ?+1\
+1390 CNOT =  ?\
+1400     .CBYTE "NOT"\
+1410 ;\
+1420 ?   .= ?+1\
+1430 COR =   ?\
+1440 JOR =   ?\
+1450     .CBYTE "OR"\
+1460 ;\
+1470 ?   .= ?+1\
+1480 CAND =  ?\
+1490 JAND =  ?\
+1500     .CBYTE "AND"\
+1510 ?   .= ?+1\
+1520 CBOR =  ?\
+1530 JBOR =  ?\
+1540     .CBYTE "!"\
+1550 ?   .= ?+1\
+1560 CBAND = ?\
+1570 JBAND = ?\
+1580     .CBYTE "&"\
+1590 ;\
+1600 ?   .= ?+1\
+1610 CLPRN = ?\
+1620 JLPRN = ?\
+1630     .CBYTE "("\
+1640 ;\
+1650 ?   .= ?+1\
+1660 CRPRN = ?\
+1670 JRPRN = ?\
+1680     .CBYTE ")"\
+1690     .PAGE\
+1700 ;\
+1710 ;FOLLOWING ENTRIES ARE COMPRISED\
+1720 ;OF CHARACTERS SIMILAR TO SOME OF\
+1730 ;THOSE ABOVE BUT HAVE DIFFERENT\
+1740 ;SYNTACTICAL OR SEMANTIC MEANING.\
+1750 ;\
+1760 ?   .= ?+1\
+1770 CSLE =  ?\
+1780     .CBYTE "<="\
+1790 ;\
+1800 ?   .= ?+1\
+1810 CSNE =  ?\
+1820     .CBYTE "<>"\
+1830 ;\
+1840 ?   .= ?+1\
+1850 CSGE =  ?\
+1860     .CBYTE ">="\
+1870 ;\
+1880 ?   .= ?+1\
+1890 CSLT =  ?\
+1900     .CBYTE "<"\
+1910 ;\
+1920 ?   .= ?+1\
+1930 CSGT =  ?\
+1940     .CBYTE ">"\
+1950 ;\
+1960 ?   .= ?+1\
+1970 CSEQ =  ?\
+1980     .CBYTE "="\
+1990 ;\
+2000 ?   .= ?+1\
+2010 CUPLUS = ?      UNARY +\
+2020     .CBYTE "+"\
+2030 ;\
+2040 ?   .= ?+1\
+2050 CUMINUS = ?     UNARY -\
+2060     .CBYTE "-"\
+2070 ;\
+2080 ?   .= ?+1\
+2090 CSLPRN = ?      STRING (\
+2100 JSLPRN = ?\
+2110     .CBYTE "("\
+2120 ;\
+2130 ?   .= ?+1\
+2140 CALPRN = ?      ARRARY (\
+2150 JALPRN = ?\
+2160     .BYTE $80   DOES NOT PRINT\
+2170 ?   .= ?+1\
+2180 CDLPRN = ?      DIM (\
+2190 JDLPRN = ?\
+2200     .BYTE $80   DOES NOT PRINT\
+2210 ;\
+2220 ?   .= ?+1\
+2230 CFLPRN = ?      FUNCTION (\
+2240 JFLPRN = ?\
+2250     .CBYTE "("\
+2260 ;\
+2270 ?   .= ?+1\
+2280 CDSLPR = ?      STRING DIM (\
+2290 JDSLPR = ?\
+2300     .CBYTE "("\
+2310 ;\
+2320 ?   .= ?+1\
+2330 CACOM = ?       ARRAY COMMA\
+2340 JACOM = ?\
+2350     .CBYTE ","\
+2360 ;\
+2370 ?   .= ?+1\
+2380 CACSC = ?       ARRAY SEMI-COLON\
+2390 JACSC = ?\
+2400     .CBYTE ";"\
+2410 ;\
+2420 ;FNTAB - FUNCTION NAME TABLE\
+2430 ; PART OF ONTAB\
+2440 ;\
+2450 ?   .= ?+1\
+2460 CFFUN = ?       ; 1ST FUNCTION CODE\
+2470 ;\
+2480 CLEFT = ?\
+2490     .CBYTE "LEFT$("\
+2500 ?   .= ?+1\
+2510 CRIGHT = ?\
+2520     .CBYTE "RIGHT$("\
+2530 ?   .= ?+1\
+2540 CMID =  ?\
+2550     .CBYTE "MID$("\
+2560 ?   .= ?+1\
+2570 CSTR =  ?\
+2580     .CBYTE "STR$("\
+2590 ?   .= ?+1\
+2600 CCHR =  ?\
+2610     .CBYTE "CHR$("\
+2620 ?   .= ?+1\
+2630 CUSR =  ?       ;USR FUNCTION CODE\
+2640     .CBYTE "USR("\
+2650 ?   .= ?+1\
+2660 CASC =  ?\
+2670     .CBYTE "ASC("\
+2680 ?   .= ?+1\
+2690 CVAL =  ?\
+2700     .CBYTE "VAL("\
+2710 ?   .= ?+1\
+2720 CLEN =  ?\
+2730     .CBYTE "LEN("\
+2740 ?   .= ?+1\
+2750 CADR =  ?\
+2760     .CBYTE "ADR("\
+2770 ?   .= ?+1\
+2780 CBUMP = ?\
+2790     .CBYTE "BUMP("\
+2800 ?   .= ?+1\
+2810 CFIND = ?\
+2820     .CBYTE "FIND("\
+2830 ?   .= ?+1\
+2840 CHEX =  ?\
+2850     .CBYTE "HEX$("\
+2860 ?   .= ?+1\
+2870 CRANDOM = ?\
+2880     .CBYTE "RANDOM("\
+2890 ?   .= ?+1\
+2900 CNFNP = ?\
+2910     ;           ***\
+2920 CDPEEK = ?\
+2930 ?   .= ?+1\
+2940 CRUN =  ?\
+2950     .CBYTE "DPEEK(","RUN("\
+2960 ?   .= ?+1\
+2970 CCOS =  ?\
+2980 ?   .= ?+1\
+2990 CPEEK = ?\
+3000     .CBYTE "    ","PEEK("\
+3010 ?   .= ?+1\
+3020 CSIN =  ?\
+3030 ?   .= ?+1\
+3040 CRND =  ?\
+3050     .CBYTE "    ","RND("\
+3060 ?   .= ?+1\
+3070 CFRE =  ?\
+3080     .CBYTE "FRE("\
+3090 ?   .= ?+1\
+3100 CSQR =  ?\
+3110 ?   .= ?+1\
+3120 CSGN =  ?\
+3130     .CBYTE "SQR(","SGN("\
+3140 ?   .= ?+1\
+3150 CABS =  ?\
+3160 ?   .= ?+1\
+3170 CINT =  ?\
+3180     .CBYTE "ABS(","INT("\
+3190 ?   .= ?+1\
+3200 CSYS =  ?\
+3210 ?   .= ?+1\
+3220 CPADDLE = ?\
+3230     .CBYTE "SYS(","PADDLE("\
+3240 ?   .= ?+1\
+3250 CSTICK = ?\
+3260 ?   .= ?+1\
+3270 CPTRIG = ?\
+3280     .CBYTE "STICK(","PTRIG("\
+3290 ?   .= ?+1\
+3300 CSTRIG = ?\
+3310 ?   .= ?+1\
+3320 CVSTICK = ?\
+3330     .CBYTE "STRIG(","VSTICK("\
+3340 ?   .= ?+1\
+3350 CHSTICK = ?\
+3360 ?   .= ?+1\
+3370 CPMADR = ?\
+3380     .CBYTE "HSTICK(","PMADR("\
+3390 ?   .= ?+1\
+3400 CRR =   ?\
+3410 ?   .= ?+1\
+3420 CTAB =  ?\
+3430 ?   .= ?+1\
+3440 CPEN =  ?\
+3450     .CBYTE "ERR(","TAB(","PEN(",0\
+3460 ;\
+}

@@ -1,0 +1,218 @@
+
+Kurzreferenz zur TurboBASIC-Erweiterung
+
+PLAYER-Befehle:
+===============
+
+- INIT PMG <page>
+Initialisiert die PM-Grafik und das Speicherfeld fuer Hochaufloesende PM-Grafik.Ab <page> muessen 2KB frei sein. Beispiel:
+POKE 106,160:GR.0:INIT PMG 160
+
+- PSIZE <nummer>,<groesse>
+Legt die Groesse (Breite) eines Players fest.
+
+- PCOLOR <nummer>,<farbe>,<helligkeit>
+Bestimt die Farbe eines Players. Farbwerte wie bei SETCOLOR.
+
+- PMODE <nummer>,<0 oder 1>
+Setzt den Ausgabemode der Player-routinen. Bei PMODE 2,1 wird z.B. bei einem neuen Player-Befehl (fuer Player 2) das alte Player-Speicherfeld geloescht bevor der neue Player gesetzt wird. Dies verlangsamt aber die Playerdarstellung und fuehrt mitunter zu einem Flackern. Bei PMODE 2,0 waere man fuer das Loeschen der Ueberreste selbst verantwortlich.
+
+- PLAYER #<nummer>,<x>,<y>,<muster$>
+Setzt den Player <nummer> auf die X-Position <x> und kopiert die in <muster$> enthaltene Playerdefinition ab position <y> in das Player-Datenfeld fuer Player <nummer>. Beispiel:
+
+PMODE 2,0:PLAYER #2,100,50,"ABCDEF":PLAYER #2,130,130,"FGDJSLLW"
+
+Es erscheint ein Player mit 2 Mustern, da das mit dem ersten Befehl erzeugte Muster nicht geloescht wurde.
+
+
+VARIABLEN-Verarbeitung:
+=======================
+
+- ROUND <var>
+Schneidet die Nachkommastellen der Variablen <var> ab. Beispiel:
+A=1.23:ROUND A:PRINT A
+bringt als Ergebnis 1.
+A=-2.4091:ROUND A:PRINT A
+bringt als Ergebnis -2, im gegensatz zu INT(x), welches zur naechst kleineren Zahl rundet (also aus -2.212 wuerde -3).
+
+- INC <var>(,<var>,<var>...)
+Die angegebende(n) Variable(n) wird/werden um den Wert 1 INCrementiert und gerundet, d.h. Nachkommastellen abgeschnitten.
+
+- DEC <var>(,var>...)
+Die Variablen werden um 1 DECrementiert.
+- LCASE <string>
+Verwandelt Grossbuchstaben in Kleine...
+
+- UCASE <string>
+Gegenteil zu LCASE.
+
+- SETADR <string>,<adresse>,<laenge>
+Ermoeglicht es, einen STRING auf einen beliebigen Speicherbereich zu setzen und so auf diesen Speicherbereich mit Stringoperationen zuzugreifen. Der String muss aber vorher DIMensioniert sein (i.d.R. auf ein Zeichen, da der DIMenstionierte Speicherplatz vom BASIC abgezogen wird). Beispiel:
+DIM A$(1):SETADR A$,53770,1:DO:PRINT A$:LOOP
+gibt zufaellige Zeichen aus. Oder
+SETADR A$,18,3
+und A$ enthaelt die komplette Software-Uhr aus Speicherstelle 18-20!
+GR.8:SETADR A$,DPEEK(88),7680:...:OPEN #1,8,0,"D:GRAFIK":PRINT #1;A$;:CLOSE #1
+speichert den Inhalt des Graphics-8-Screens.
+
+ACHTUNG!!!
+BASIC Speichert die String-Adressen als Offset zum Programmende. Dieser aendert sich aber im Direktmodus je nach laenge der eingegebenen Zeile! Ausserdem kann hiermit auch ein String auf mehr als 32767 Zeichen DIMenstioniert werden! Die laengenangabe bei SETADR berifft die Dimensionierung als auch die Tatsaechliche Laenge. Der String kann spaeter auch kuerzer sein, aber niemals laenger!
+
+Ansprechen einer Speichererweiterung:
+=====================================
+
+Achtung! Da jetzt auch Teile dieser BASIC-Erweiterung in dem Bereich der RAMDisk liegen, kann nicht mehr mit POKE $D301,x die RAMDisk eingeschaltet werden. Ausserdem liegt der BASIC-Anfang jetzt im RAMDisk-Bereich. Um trotzdem auf die Speichererweiterung zugreifen zu koennen, habe ich zwei Spezialbefehle intergiert:
+
+XMEMREAD <block>,<bank>,<adresse>
+XMEMWRITE <block>,<bank>,<adresse>
+
+Der Datenaustausch mit der RAMDisk erfolgt dabei in Bloecken zu je 64 Byte! Die 16KB einer Bank werden in 256 Bloecke zu je 64 Byte unterteilt. <Bank> muss einen gueltigen wert fur das PortB-Register enthalten. Beispiel:
+XMEMREAD 0,$E3,DPEEK(88)
+liest die ersten 64 Byte aus der RAMDisk in den Bildschirm. Der Datenaustausch erfolgt dabei ueber den Prozessorstack, die Quell/Zieladresse kann auch im Bereich von $4000-$7FFF liegen.
+Sollte es keine RAMDisk geben, erhaelt man einen MEM-Error (ERROR 2).
+Beispiel:
+GRAPHICS 8
+FOR I=0 TO 119
+  XMEMREAD I,$E3,DPEEK(88)+I*64
+NEXT I
+liest 120*64 bytes aus der RAMDisk in den Bildschirmspeicher.
+
+Ereignis-Abfrage:
+=================
+
+- EVENT INSERT #<nummer>,<adresse>,<maske>,<wert>,<NumVar>
+- EVENT REMOVE (#<nummer>)
+- EVENT CLEAR
+- EVENT DO
+
+Es gibt die Moeglichkeit, bestimmte Ereignisse, sogenannte EVENTs, abzufragen und "fast" automatisch bestimmte Variablen zu setzen. Diese EVENTs (maximal 16) werden beim Befehl EVENT DO abgefragt, danach sind alle Variablen gemaess der Definition gesetzt. Beispiel:
+
+EVENT INSERT #0,53279,1,0,START
+EVENT INSERT #1,53279,2,0,SELECT
+EVENT INSERT #2,53279,4,0,OPTION
+DO
+  EVENT DO
+  PRINT START,SELECT,OPTION
+  IF OPTION>10 THEN EVENT CLEAR
+LOOP
+
+Das EVENT DO entspricht nun einem
+
+- IF (PEEK(53279) AND 1)=0 THEN START=START+1
+- IF (PEEK(53279) AND 2)=0 THEN SELECT=SELECT+1
+- IF (PEEK(53279) AND 4)=0 THEN OPTION=OPTION+1
+
+hier muss allerdings beruecksichtigt werden, dass der Atari XL nur sog. Boolsche Logik kennt (Null=0: Ungleich Null=1). So ist beim XL z.b. (1 AND 4) wahr, aber nicht bei Binaerer Logik wie im Beispiel gemeint!!!
+
+Einfacher ausgedrueck:
+IF (PEEK(Adresse) AND Maske)=Wert THEN variable=variable+1
+
+Die Routinen sind aber sehr abgespeckt (aus Geschwindigkeitsgruenden). So kann z.B. die Variable nur bis 99 zaehlen und bleibt dann bei 99 stehen, bis sie mit EVENT CLEAR (oder Variable=0) geloescht wird.
+
+- EVENT REMOVE (#nummer)
+
+Hiermit wird eine EVENT-Abfrage (oder alle, wenn keine Nummer angegeben wurde) aus der Tabelle geloescht.
+
+- EVENT CLEAR
+
+Dieser Befehl loescht alle in der EVENT-Liste stehenden Variablen!
+
+- EVENT DO
+
+Alle wahren Ereignisse werden in den angegebenen Variablen gezaehlt.
+
+
+Andere Befehle:
+===============
+
+- ALERT "Text",NumVar
+
+Dieser Befehl erzeugt ein Alert-Fenster ueber dem Bildschirm und wartet auf eine Tastatureingabe.
+Der Aufbau von "Text":
+"Text 1. Zeile@Text 2. Zeile|ATASCII"
+Dieser Befehl erwartet einen String mit dem darzustellenden, 2-Zeiligen Text (die Zeilen werden dabei mit dem Klammeraffen getrennt), sowie 1 bis 8 Zeichen zur Tastaturabfrage nach dem Senkrechten Trennstrich. Beispiel:
+ALERT "Soll ich wirklich die Diskette in@Laufwerk 1 formatieren?|JN",ANSWER
+Es wird nun auf die Taste J oder N gewartet und dann der Variablen ANSWER der ATASCII-Code der gedrueckten Taste zugewiesen. Die routine kann auch mit BREAK beendet werden, sowerd die BREAK-Taste nicht abgeschaltet ist.
+
+- TXTPOS <x>,<y>
+
+Positioniert den Cursor im Textfenster bei einem Grafikbildschirm.
+
+- WAIT <adresse>,<maske>,<wert>
+
+Wartet bis PEEK(adresse) AND maske=wert
+
+- ERROR <num>
+
+Erzeugt einen "Pseudoerror", der in eigenen Fehlerbehandlungsroutinen (mit TRAP) bearbeitet werden kann. Beispiel:
+IF TIM1>TIME THEN ERROR 80...
+... IF ERR=80 THEN PRINT "Sorry, Zeit ist abgelaufen!":NEW
+
+- GOODBYE
+
+Entfernt die TurboBASIC-Erweiterung und stellt Normalzustand wieder her! Achtung, Programmverlust!
+
+- BREAK OFF
+
+"Echtes" Ausschalten der BREAK-Taste. Auch nach GRAPHICS wirksam.
+
+- BREAK ON
+
+Schaltet die BREAK-Taste wieder ein!
+
+- CALL (adresse,accu,xreg,yreg)
+
+Startet ein MC-Programm ohne Muell auf dem Stack. Es muessen ALLE Werte uebergeben werden. Wird als Kurzform nur CALL ohne Parameter eingegeben, werden die zuletzt eingegebenen Werte benutzt.
+
+Sollte der Prozessor einen BRK ausfuehren, tritt ein sogenannter "Shutdown" auf. Der Programmablauf wird angehalten, die Abbruchstelle wird angezeigt sowie die Registerinhalte und die Flags. Gesetzte Flags blinken. Nun kann man mit
+- A)boart das MC-PROGRAMM abbrechen. Sollte der CALL-Befehl (oder USR) teil eines Programmes sein, wird mit dem naechsten BASIC-Befehl weitergemacht!
+- C)ont das MC-Programm an der naechsten Speicherstelle fortsetzen.
+- Q)uit prg die TurboBASIC-Erweiterung verlassen (siehe GOODBYE).
+- R)eboot neu booten!
+- SPACE einen Warmstart ausloesen (entspricht RESET)
+
+Sollte das MC-Programm den Stack fuellen, so wird (bei einem BRK) der Stack geprueft und wenn er "ueberlaeuft" wird mit einem ERROR 10 STACK abgebrochen!
+
+Software-Blitter:
+=================
+
+Ein paar neue Grafik-Manipulationsbefehle wurden auf definiert. Diese beruhen auf der Blitter-Routine im alten Atari-Magazin. ALLE Koordinaten sind BIT-Positionen (bzw. PIXEL-Position in GR.8) oder in Zeilen!
+
+Der Aufruf der Blitter-Routinen ist:
+
+BITBLT #<funktion>(,parameter)
+
+- CUT
+- BITBLT #0,X1,Y1,X2,Y2,BUFAD(,NUMVAR)
+
+Schneidet (bzw. kopiert) den Grafik-8 Block von X1,Y1 bis X2,Y2 und schreibt die Daten nach BUFAD. In NUMVAR steht die Laenge in Bytes (wenn angegeben).
+
+- PASTE
+- BITBLT #(1/2/3),X,Y,BUFAD
+
+Setzt einen Grafikblock wieder in den Screen (an Position X,Y).
+1 = OR  (Oder-Verknuepft mit Screen)
+2 = SET (Ersetzt Screen)
+3 = EOR (Exklusiv-Oder verknuepft)
+
+- DEF. OBJECT MASK
+- BITBLT #4,BYTE0,...,BYTE7
+
+Definieren einer Maske, mit der die GRAFIK verknuepft wird, bevor sie auf den Screen kopiert wird. Die OBJECT-Maske wandert mit der Grafik mit, d.h. Die Objektdaten werden mit der Objekt-Maske verknuepft bevor sie in den Screen gelangen!
+Diese Maske bestimt die Bits der GRAFIK, die in den Screen gelangen koennen.
+Die groesse der Maske betraegt 8*8 Pixel!
+
+- DEF. SCREEN MASK
+- BITBLT #5,BYTE0,...,BYTE7
+
+Definiert die SCREEN-Maske. Diese Bestimmt, welche Bits in dem Screen beeinflusst werden koennen. Groesse=8*8 Pixel.
+
+- DEF. SCREEN SIZE (AND INIT MASK)
+- BITBLT #6,BytesPerLine
+
+Hier kann man die Bildschirmgroesse festlegen. Man kann so z.B. auch Bildschirme mit 32 Bytes/Zeile bearbeiten, oder mit 128 Bytes/Zeile. Eine 0 steht fuer 256 Bytes/Zeile! Als Nebeneffekt werden beide Maskentabellen reinitialisiert (alle Bits gesetzt)!
+
+- CALC. MEMORY
+- BITBLT #7,x1,Y1,X2,Y2,NumVar
+
+Berechnet die Laenge eines Grafikausschnittes in Bytes.

@@ -1,0 +1,2222 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12600\viewh7800\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Bedienungshandbuch f\'fcr\
+\
+A T M A S - I I\
+\
+Ein Makroassembler, Editor\
+und Maschinensprache-Monitor\
+f\'fcr ATARI-Computer 400/600XL/800/800XL\
+und ATARI 130XE\
+mit Diskettenstation und min. 48KByte RAM\
+\
+Die Programme, Disketten und Bedienungshandb\'fccher\
+des ATMAS-Systemes\
+unterliegen dem Copyright der\
+\
+Ing. W. Hofacker GmbH\
+und\
+Dipl.-Ing. Peter Finzel\
+\
+Jegliche Rechte vorbehalten\
+\
+\
+\
+LADEANWEISUNG\
+=============\
+\
+1.) Entfernen Sie eventuelle Steckmodule aus dem\
+Cartridge-Schacht Ihres ATARI\'97Computers.\
+\
+2.) Schalten Sie das Diskettenlaufwerk und den\
+Fernseher (bzw. Monitor) ein.\
+\
+3.) Sobald die rote LED des Diskettenlaufwerkes\
+erloschen ist, legen Sie die Programmdiskette mit der\
+Aufschrift oben und dem ovalen Ausschnitt nach hinten\
+in das Laufwerk ein. Schlie\'dfen Sie die T\'fcr des\
+Diskettenschachtes.\
+\
+4.) Schalten Sie dann Ihren ATARI-Computer ein. Bei\
+XL-Modellen mu\'df w\'e4hrend des Einschaltens die\
+OPTION\'97Taste gedr\'fcckt werden.\
+\
+5.) ATMAS-II wird jetzt geladen, nach kurzer Zeit\
+erscheint der Vorspann, dann meldet sich der Editor,\
+der Ladevorgang ist damit beendet.\
+\
+Falls die Meldung 'ATMAS-II ben\'f6tigt 48K\'97Speicher'\
+erscheint, so gibt es mehrere M\'f6glichkeiten:\
+\
+a) Es befinden sich noch Steckmodule im Schacht.\
+b) OPTION wurde nicht gedr\'fcckt (nur bei XL).\
+c) Ihr Computer hat zu wenig Speicherplatz. ATMAS-II\
+ben\'f6tigt mindestens 4BKByte.\
+\
+KURZBEISPIEL FUR DEMO-PROGRAMM\
+==============================\
+ \
+Wenn Sie sich vor dem Durchlesen des Bedienungs-\
+handbuches kurz ein Demoprogramm des ATMAS-II Systemes\
+ansehen m\'f6chten, so k\'f6nnen Sie das mit den folgenden\
+Befehlen erreichen:\
+\
+<ESC>RD:DEMO<ESC><ESC> (Demoprogramm wird geladen)\
+<CTRL>-Y (Programm assemblieren)\
+<ESC> (zur\'fcck in den Editor)\
+<ESC>U<ESC><ESC> (Programm starten)\
+<START> (Programm beenden)\
+Anmerkung: <ESC> Escape-Taste dr\'fccken.\
+<CTRL>\'97Y Control-Taste gedr\'fcckt halten und\
+die 'Y'-Taste bet\'e4tigen.\
+\
+\
+\
+EINLEITUNG\
+==========\
+\
+ATMAS-II ist ein leistungsf\'e4higes Entwicklungssystem\
+f\'fcr Maschinenprogramme auf Ihrem Atari-Computer.\
+ATMAS-II besteht aus drei integrierten Teilsystemen:\
+Editor, Makro\'97Assembler und Maschinensprache\'97Monitor.\
+Diese Komponenten zusammen erlauben eine komfortable\
+und schnelle Programmentwicklung auf Maschinenebene.\
+\
+Alle drei Teile dieser integrierten Programmierumgebung\
+sind aufeinander abgestimmt und jeweils nur einen\
+Tastendruck voneinander entfernt. Ein komfortabler,\
+bildschirmorientierter Editor, der \'fcber Funktionen wie\
+Kopier-Register, wiederholbare Befehlssequenzen und\
+platzsparende echte Tabulatoren verf\'fcgt, erleichtert\
+die Eingabe auch umfangreicher Programme. Der Makro-\
+Assembler arbeitet zur Erreichung einer k\'fcrzest-\
+m\'f6glichen Assemblierzeit mit modernen Hashing\'97\
+Algorithmen, so da\'df auch l\'e4ngere Programme in wenigen\
+Sekunden assembliert werden. Schlie\'dflich steht Ihnen\
+als Werkzeug zum Testen von Maschinenprogrammen ein\
+Monitor zur Verf\'fcgung.\
+\
+Obgleich sich jemand, der noch nie in Assembler\
+programmiert hat, mit ATMAS-II schnell vertraut f\'fchlen\
+wird, bietet er dem fortgeschrittenen Benutzer viele\
+M\'f6glichkeiten: Beginnend bei den leistungsf\'e4higen\
+Editorfunktionen bis hin zu der Programmierung von\
+Makrobefehlen.\
+\
+Es sollte noch angemerkt werden, da\'df dieses\
+Bedienungshandbuch kein Lehrbuch der 6502-\
+Maschinensprache ist und das auch nicht sein kann.\
+Hier wird auf weiterf\'fchrende Literatur verwiesen,\
+insbesondere auf ein im Herbst '85\
+erscheinendes Buch vom Autor dieses Bedienungs-\
+handbuches, das speziell auf den Atari-Computer\
+zugeschnitten ist. Zus\'e4tzlich bieten auch die\
+Beispiele im Teil 4 dieses Handbuches einen kleinen\
+Einblick in die Assemblerprogrammierung des\
+Atari-Computers.\
+\
+Teil 1: DER EDITOR\
+==================\
+\
+Beim ATMAS-II Editor handelt es sich um einen bild-\
+schirmorientierten Editor, der ohne jegliche\
+Zeilennummerierung auskommt, sich im wesentlichen\
+\'e4hnlich einem Textverarbeitungssystem verh\'e4lt.\
+Dadurch entf\'e4llt die umst\'e4ndliche Eingabe von LIST-\
+Befehlen wie Sie diese von verschiedenen anderen\
+Editoren kennen (z.B. in BASIC). Sie k\'f6nnen sich\
+einfach unter Zuhilfenahme der Cursortasten durch das\
+Listing bewegen, das dann von oben nach unten bzw. von\
+unten nach oben durch das Textfenster scrollt.\
+\
+1.1 Benutzung des Editors\
+-------------------------\
+\
+Sobald ATMAS-II von der Diskette geladen worden ist,\
+gelangen Sie direkt in den Editor, der gleichsam die\
+Steuerzentrale des ATMAS-II Systemes darstellt. Von\
+hier aus k\'f6nnen Sie den Makroassembler sowie den\
+Maschinensprache\'97Monitor aufrufen, au\'dferdem bringt Sie\
+die <RESET>-Taste stets in den Editor zur\'fcck.\
+\
+Nach dem Booten werden Sie die folgende Bildschirm-\
+Maske des Editors sehen:\
+\
+         +---------------------------+\
+         I P:00000 T:17408 C:1024 OK I <---Statuszeile\
+         +---------------------------+\
+Cursor ->I C                         I\
+         I                           I\
+         I       Textfenster         I\
+         I                           I\
+         I                           I\
+         +---------------------------+\
+         I ..........................I <---Kommandozeile\
+         +---------------------------+\
+\
+Die Statuszeile\
+---------------\
+\
+In der Statuszeile werden Ihnen st\'e4ndig Informationen\
+\'fcber Cursorposition, freien Textspeicherplatz,\
+Kopierreqister und Editorzustand mitgeteilt.\
+\
+Aus 'P:nnnnn' k\'f6nnen Sie die Entfernung (in Zeichen)\
+des Cursors vom Textanfang entnehmen, 'T:xxxxx' gibt\
+Ihnen Auskunft \'fcber den freien Textspeicherplatz,\
+(d.h. Sie k\'f6nnen noch maximal 'xxxxx' Anschl\'e4ge\
+eingeben). 'C:yyyy' informiert Sie \'fcber den freien\
+Speicherplatz des Kopier\'97Registers (des sog.\
+C-Registers) der im noch unbenutzten Zustand 1024\
+Zeichen umfa\'dft. Die letzten beiden Zeichen der\
+Statuszeile geben Ihnen eine Zustandsmeldung des\
+Editors wieder, wenn alles in Ordnung ist, werden Sie\
+dort 'OK' finden. Eventuelle Fehler- bzw. Zustands-\
+meldungen (z.B. wenn das Kopierregister ge\'f6ffnet ist)\
+werden dort ausgegeben, eine Liste der Meldungen\
+finden Sie im Anhang B.\
+\
+Textfenster\
+-----------\
+\
+Die n\'e4chsten 21 Zeilen bilden das Textfenster, hier\
+sehen Sie immer den aktuellen Text, den Sie mit den im\
+folgenden besprochenen Editierfunktionen bearbeiten\
+k\'f6nnen. In wahrsten Sinne des Wortes ist dieser Bild-\
+schirmteil als Fenster in den Text zu verstehen, das\
+u.a. mit den Cursortasten nach oben und unten \'fcber den\
+Text verschoben werden kann. Alle Editierfunktionen\
+werden sofort im Textfenster sichtbar.\
+\
+Kommandozeile\
+-------------\
+\
+Die letze Zeile des Bildschirms ist f\'fcr die Eingabe\
+von Kommandos reserviert. Neben einer Reihe von\
+Direkt\'97Befehlen, die unmittelbar im Textfenster\
+gegeben werden, gibt es zus\'e4tzlich noch einen\
+Kommando-Modus des Editors, der durch die <ESC>-Taste\
+aufgerufen wird. Hier werden in der Regel Befehle\
+eingegeben, die zus\'e4tzliche Information ben\'f6tigen, z.B.\
+ein Wort, nach dem zu suchen ist. Auch Befehle zur\
+Ein-/Ausgabe von Texten werden hier eingegeben.\
+\
+1.2 Texteingabe\
+---------------\
+\
+Sie k\'f6nnen ohne Vergabe von Zeilennummern gleich mit\
+der Eingabe des Textes beginnen. Jedes eingegebene\
+Zeichen wird an der momentanen Cursorposition abgelegt\
+und der Cursor bewegt sich eine Position nach rechts.\
+Sie k\'f6nnen jederzeit eine neue Zeile mit (RETURN)\
+beginnen. Nenn Sie mehr als 38 Zeichen in eine Zeile\
+eingeben, so verschwindet der Cursor von der rechten\
+Bildschirmseite, sobald Sie (RETURN) dr\'fccken taucht\
+dieser am Anfang der n\'e4chsten Zeile wieder auf. Dieses\
+Verhalten erscheint auf den ersten Blick ungew\'f6hnlich,\
+Sie werden jedoch bald feststellen, da\'df es bei\
+Assemblerprogrammen durchaus von Vorteil ist. Der\
+wesentliche Teil eines Assemblerprogrammes befindet\
+sich immer in den ersten 30 Zeichen, da dort der Assemblerbefehl zu finden ist. Wenn Sie l\'e4ngere Zeilen\
+editieren wollen, (z.B. das Kommentarfeld), so haben\
+Sie dazu eine Spezialfunktion zur Verf\'fcgung (<CTRL>-V,\
+siehe 1.2 / Spezialfunktionen), die maximal 76 Zeichen\
+in zwei Bildschirmzeilen darstellt. Sie werden\
+allerdings feststellen, da\'df sich der normale\
+38\'97Zeichen Bildschirm wesentlich besser zum Editieren\
+von Assemblerprogrammen eignet, da alle Assembler-\
+befehle im Gegensatz zum Zwei\'97Zeilenmodus ununter-\
+brochen untereinander stehen.\
+\
+Wie \'fcblich haben alle Tasten automatische Wieder-\
+holfunktion, Kleinbuchstaben k\'f6nnen mit der <CAPS>-\
+Taste erreicht werden.\
+\
+1.3 Editierbefehle im Textmodus\
+-------------------------------\
+\
+Wie bereits angesprochen, bietet Ihnen der ATMAS-II\
+Editor zwei verschiedene Ebenen der Befehlseingabe.\
+Die einfachere der beiden Ebenen bilden die sog.\
+Direkt\'97Befehle, oder auch Befehle im Textmodus\
+genannt. Diese Kommandos werden entweder durch\
+Spezialtasten, z.B. <BACK SPACE>, oder durch\
+Control\'97Funktionen ausgef\'fchrt. Letzteres bedeutet-\
+einfach, da\'df Sie die <CTRL>\'97Taste (Bei 600/8OOXL:\
+<CONTROL>) gedr\'fcckt halten, w\'e4hrend Sie eine andere\
+Taste bet\'e4tigen, ganz \'e4hnlich dem, wie Sie in\
+ATARI-BASIC den Cursor f\'fchren. Wenn Sie also im\
+folgenden <CTRL>-X lesen, so bedeutet das, da\'df Sie\
+<CTRL> niedergedr\'fcckt halten, und dabei die 'X'\'97Taste\
+dr\'fccken.\
+\
+Cursor\'97Steuerung\
+----------------\
+\
+Im Textmodus haben Sie die Cursor\'97Funktionen zur\
+Verf\'fcgung:\
+\
+Um den Cursor nach rechts zu verschieben dr\'fccken Sie\
+\
+	<CTRL>-<Pfeil rechts>\
+\
+Eine Cursorbewequng nach links erfolgt mit\
+\
+	<CTRL>-<Pfeil links>\
+\
+Wenn Sie dabei \'fcber das rechte Ende einer Zeile\
+gelangen, so wird der Cursor an den Anfang der\
+n\'e4chsten Zeile gesetzt. Fahren Sie \'fcber das linke\
+Ende hinaus, so befindet sich der Cursor am Ende der\
+vorherigen Zeile.\
+\
+Um den Cursor nach oben zu bewegen tippen Sie\
+\
+	<CTRL>-<Pfeil oben>\
+\
+Der Cursor wird dabei, falls er sich nicht schon am\
+linken Rand befindet, zuerst dorthin zur\'fcckgesetzt. In\
+diesem Falle f\'fchrt erst der zweite Tastendruck nach\
+oben.\
+\
+Der Cursor kann mit\
+\
+	<CTRL>-<Pfeil unten>\
+\
+um eine Zeile nach unten an den Anfang der n\'e4chsten\
+Zeile gesetzt werden. Bei allen Cursorbewegungen\
+k\'f6nnen Sie nicht \'fcber Anfang und Ende des Textes\
+hinaus. Im Unterschied zu anderen Editoren werden Sie\
+feststellen, da\'df der Cursor nicht \'fcber den Text l\'e4uft,\
+sondern eingef\'fcgt wird. Das hat den Vorteil, da\'df\
+Sie immer genau wissen, wo momentan eingef\'fcgt werden\
+kann.\
+\
+Zeichen l\'f6schen\
+---------------\
+\
+Um ein Zeichen links vom Cursor zu l\'f6schen dr\'fccken Sie\
+\
+	<BACK-SPACE>\
+\
+Wenn sich der Cursor dabei am Zeilenanfang befindet,\
+dann wird das Return-Zeichen gel\'f6scht, d.h. die Zeile,\
+in der sich der Cursor befand, wird an die vorherige\
+angeh\'e4ngt. Falls diese eine Leerzeile war und somit\
+nur aus einem Return-Zeichen bestand, wird die\
+Leerzeile gel\'f6scht.\
+\
+Um ein Zeichen rechts vom Cursor zu l\'f6schen tippen Sie\
+\
+	<CTRL>-<BACK-SPACE>\
+\
+wie im obigen Fall kann damit auch die n\'e4chste Zeile\
+unter dem Cursor an die momentane angeh\'e4ngt werden.\
+Ist diese eine Leerzeile, so wird sie gel\'f6scht.\
+\
+Zeilen l\'f6schen\
+--------------\
+\
+Wenn Sie eine Zeile l\'f6schen m\'f6chten, dann dr\'fccken Sie\
+\
+	<CTRL>-X\
+\
+Die Zeile wird von der momentanen Cursorposition bis\
+zum Zeilenanfang gel\'f6scht. Befindet sich der Cursor\
+schon am Anfang einer Zeile, so wird die ganze\
+vorhergehende Zeile gel\'f6scht.\
+\
+Cursor-Spr\'fcnge\
+--------------\
+\
+	<CTRL>-E bringt Sie an den Anfang des Textes\
+	<CTRL>-D bringt Sie ans Ende des Textes\
+\
+Tabulator\
+---------\
+\
+Der ATMAS\'97Editor verf\'fcgt \'fcber einen echten Tabulator,\
+der je nach Erfordernis 1 bis 9 Leerzeichen belegt,\
+aber nur als ein Zeichen abgespeichert wird. Um an\
+die n\'e4chste vortabulierte Stelle zu gelangen tippen\
+Sie einfach\
+\
+<TAB>\
+\
+Wenn Sie sp\'e4ter \'fcber einen solchen Tabulator mit dem\
+Cursor fahren, werden Sie feststellen, da\'df der Cursor\
+dar\'fcber 'springt', und auch Einf\'fcgungen vor einen\
+Tabulator den nachfolgenden Text nicht verschieben.\
+Der Tabulator wird nur als ein Zeichen abgespeichert,\
+so da\'df Sie damit gut lesbare Listings mit geringen\
+Speicherplatzbedarf anfertigen k\'f6nnen.\
+\
+Kopier\'97Register (C-Register)\
+----------------------------\
+\
+Das C\'97Register ist ein zweiter, 1024 Zeichen gro\'dfer\
+Textbuffer, den Sie zum Transferieren und Kopieren von\
+Textteilen benutzen k\'f6nnen. Positionieren Sie zuerst\
+den Cursor auf das untere Ende des zu bewegenden\
+Textteiles, dann \'f6ffnen Sie das C\'97Register mit\
+\
+	<CTRL>-R\
+\
+Im linken Teil der Statuszeile wird dieser Zustand mit\
+der Meldung 'CR' festgehalten . Nenn Sie jetzt den\
+Cursor r\'fcckw\'e4rts bewegen, so werden die \'fcberlaufenen\
+Textteile in das C-Register geschrieben. Sie k\'f6nnen\
+diesen Vorgang in der Statuszeile mit verfolgen, die\
+Zahl der freien Zeichen im Kopier\'97Register ('C:1024')\
+nimmt mit der Zahl der Cursorbewegungen ab.\
+\
+Befindet Sich der gesamte gew\'fcnschte Text im\
+C-Register, so schlie\'dfen Sie dieses mit dem Befehl\
+\
+	<CTRL>-F\
+\
+Jetzt k\'f6nnen Sie den Inhalt des Kopier-Registers an\
+jeder beliebigen Cursorposition einsetzen, indem Sie\
+\
+	<CTRL>-J\
+\
+eingeben. Der Inhalt des C-Registers wir dabei nicht\
+zerst\'f6rt, d.h. es sind auch komfortable Mehrfachkopien\
+m\'f6glich. L\'f6schen des Kopier-Registers ist mit dem\
+Befehl\
+\
+	<CTRL>-K\
+\
+m\'f6glich. Das C-Register wird selbstt\'e4tig durch Aufruf\
+des Assemblers sowie nach einem Ein-/Ausgabebefehl\
+geschlossen.\
+\
+Noch ein paar Anmerkungen zum C-Register: Sie k\'f6nnen\
+damit Textteile zum Kopieren vorbereiten, wenn Sie\
+diese r\'fcckw\'e4rts mit <CTRL>-<Pfeil oben> oder\
+<CTRL>-<Pfeil links> durchlaufen. Genauso gut k\'f6nnen\
+Sie Textbl\'f6cke transferieren, indem Sie den Cursor\
+durch die L\'f6schbefehle <BACK-SPACE> und <CTRL>-X\
+r\'fcckw\'e4rts bewegen. Der gel\'f6schte Text verbleibt im\
+Kopier\'97Register und kann an beliebigen anderen Stellen\
+wieder eingesetzt werden.\
+\
+Sie k\'f6nnen auch einen Textblock aus verschiedenen\
+Textteilen zusammensetzen, indem das C-Register an\
+verschiedenen Textstellen mehrfach ge\'f6ffnet und\
+geschlossen wird, ohne dazwischen seinen Inhalt mit\
+<CTRL>\'97K zu l\'f6schen.\
+\
+Ist das C\'97Register voll ('C:0000'), erscheint zu-\
+s\'e4tzlich links oben die Fehlermeldung 'C?'.\
+\
+Spezialbefehle des Editors\
+--------------------------\
+\
+Den Zwei\'97Zeilenmodus k\'f6nnen Sie mit\
+\
+	<CTRL>-V\
+\
+einschalten. Dadurch werden Zeilen, die l\'e4nger als 38\
+Zeichen sind, zweizeilig am Bildschirm dargestellt. Die\
+maximale Zeilenl\'e4nge diese Modus betr\'e4gt somit 76\
+Zeichen, wobei allerdings nur 11 Zeilen dargestellt\
+werden k\'f6nnen. Ein weiteres <CTRL>-V bringt Sie in den\
+normalen Ein\'97Zeilenmodus zur\'fcck.\
+\
+Control\'97Zeichen, insbesondere Tabulatoren und Return-\
+Zeichen k\'f6nnen mit\
+\
+	<CTRL>-T\
+\
+sichtbar gemacht werden. Alle Control\'97Zeichen werden\
+'revers' dargestellt. Ein weiteres <CTRL>-T schaltet\
+in den Normalmodus zur\'fcck.\
+\
+	<CTRL>-G\
+\
+dient zur Wiederholung der in der Kommandozeile\
+stehenden Befehlskette. Lesen Sie dazu bitte Abschnitt\
+1.4.\
+\
+Aufruf des Assemblers und des Monitors\
+--------------------------------------\
+\
+Der ATMAS-II Makroassembler wird durch\
+\
+	<CTRL>-Y\
+\
+aufgerufen. ATMAS-II beginnt nun sofort mit der\
+Assemblierung des im Textbuffer befindlichen\
+Quelltextes (siehe Abschnitt 2), nach Abschlu\'df der\
+Assemblierung bringt Sie ein beliebiger Tastendruck in\
+den Editor zur\'fcck.\
+\
+Der Maschinensprache-Monitor kann durch Eingabe von\
+\
+	<CTRL>-P\
+\
+aufgerufen werden. Er meldet sich mit 'MONITOR.' und\
+erwartet Ihre Eingabe (s. Abschnitt 3). Zur\'fcck in den\
+Editor gelangen Sie durch die Eingabe von 'E'.\
+\
+1.4 Befehle der Kommandozeile\
+=============================\
+\
+Au\'dfer den Direktbefehlen im Textmodus verf\'fcgt der\
+ATMAS-II Editor \'fcber einen weiteren leistungsf\'e4higen\
+Editiermodus: Die Kommandozeile. Sie werden hier in\
+erster Linie Befehle finden, die au\'dfer dem\
+eigentlichen Aufruf des Befehles noch weitere Angaben\
+ben\'f6tigen, etwa eine Zeichenkette nach der gesucht\
+werden soll. Weiterhin werden Sie einige Befehle\
+finden, die Sie schon vom Textmodus her kennen, diese\
+k\'f6nnen aber im Kommandomodus mit Wiederholungsfaktoren\
+versehen und verkettet werden, eine Art von\
+'Befehls-Makros'.\
+\
+Benutzung der Kommandozeile\
+---------------------------\
+\
+Sie betreten den Kommandomodus durch die <ESC>-Taste,\
+die als Dollar-Zeichen ('$') dargestellt wird. Jetzt\
+k\'f6nnen Sie einzelne Kommandos (siehe unten) eingeben\
+und dabei die <ESC>-Taste als Trennzeichen benutzen.\
+Die Kommandozeile wird ausgef\'fchrt, sobald Sie <ESC>\
+zweimal hintereinander bet\'e4tigen. Die Ausf\'fchrung wird\
+mit einem Doppelkreuz hinter der Kommandokette\
+quittiert, Sie befinden sich anschlie\'dfend wieder im\
+Textmodus. Sollte sich die Kommandozeile als\
+fehlerhaft erwiesen haben, so wird Ihnen das in der\
+linken oberen Ecke durch ein Fehlerk\'fcrzel angezeigt.\
+\
+Alle Befehle (mit Ausnahme der I/O-Kommandos R und W)\
+k\'f6nnen mit vorangestellten Wiederholungsfaktoren 2 bis\
+255 mal ausgef\'fchrt werden. Zus\'e4tzlich kann eine\
+vollst\'e4ndige Wiederholung einer eingegebenen\
+Kommandozeile vom Textmodus aus mit <CTRL>-G erfolgen.\
+\
+Eingabefehler in der Kommandozeile selbst k\'f6nnen mit\
+<BACK SPACE> korrigiert werden. <CTRL>-X f\'fchrt zum\
+L\'f6schen der Kommandozeile und zur R\'fcckkehr in den\
+Textmodus.\
+\
+Editierfunktionen im Kommandomodus\
+----------------------------------\
+\
+B : Cursor eine Position zur\'fcck\
+F : Cursor eine Position vorw\'e4rts\
+D : Ein Zeichen links vom Cursor l\'f6schen\
+T : vom Cursor bis Anfang der n\'e4chsten Zeile l\'f6schen\
+\
+Mit diesen Befehlen ist z.B. eine schnelle Cursor-\
+Bewegung im Text m\'f6glich. \'d6ffnen Sie die Kommando-\
+zeile mit <ESC> und geben Sie '200F' gefolgt von\
+zweimal <ESC>. Jede Wiederholung der Kommandozeile mit\
+<CTRL>-G bringt Sie nun 200 Zeichen im Textbuffer\
+weiter.\
+\
+Weitere Editierbefehle:\
+-----------------------\
+\
+H<Hex-Byte> :	Einsetzen eines beliebigen ATASCII-Codes\
+		in den Text, z.B. zur Druckersteuerung.\
+		BEISPIEL: $H0F$ schaltet EPSON-Drucker\
+			  auf Engschrift\
+\
+S<String> : 	Sucht nach der Zeichenkette (String) ab\
+		der momentanen Cursorposition bis zum\
+		Ende des Textes. Falls nicht vorhanden,\
+		erscheint 'S?' in der Statuszeile.\
+		BEISPIEL: $SLABEL$ sucht nach Wort LABEL.\
+\
+!<String> : 	Setzt Zeichenkette <String> an momentane\
+		Cursorposition ein. Kann im Zusammenhang\
+		mit dem S\'97Befehl zu einer Such- und\
+		Austausch-Funktion ausgebaut werden (s.u.).\
+\
+Spezialfunktionen\
+-----------------\
+\
+J : 		Wiederholt die gesamte Kommandozeile.\
+		Damit k\'f6nnen Sie z.B. eine Such- und\
+		Austausch\'97Funktion bis Textende wieder-\
+		holen.\
+\
+K : 		L\'f6scht den gesamten Textbuffer.\
+		VORSICHT: Der eingegebene Text wird\
+		gel\'f6scht!\
+\
+U : 		USER-Befehl. Ruft ein Maschinenprogramm,\
+		das ab $A8OO im Speicher stehen mu\'df, per\
+		JSR\'97Befehl auf. VORSICHT Nur verwenden\
+		wenn Sie dort auch ein Programm stehen\
+		haben.\
+\
+@<n> : 		Einstellung der Tabulatorweite auf <n>\
+		Zeichen (n von 0 bis 9). Ohne Angabe\
+		wird eine Weite von 8 verwendet.\
+		BEISPIEL: $@6$ : Tabulatorweite 6 Zeichen.\
+\
+M : 		R\'fcckkehr zum DOS. Mit 'B'-'* ATMAS-II *'\
+		kommen Sie wieder in ATMAS-II zur\'fcck.\
+\
+Noch zwei Befehle, die das C-Register betreffen:\
+\
+E : L\'f6scht C\'97Register (wie <CTRL>\'97K) _\
+G : C-Register in Text einf\'fcgen (<CTRL>\'97J)\
+\
+Befehle zur Ein-/Ausgabe von Text\
+---------------------------------\
+\
+Wenn Sie einen im Textbuffer befindlichen Text auf\
+Diskette abspeichern wollen, so k\'f6nnen Sie das mit dem\
+'W'-Kommando erledigen. Sie brauchen lediglich den\
+gew\'fcnschten Namen des Files mit einer Ger\'e4tebe\'97\
+zeichnung angeben.\
+\
+BEISPIEL: Sie wollen den momentanen Text unter dem\
+Namen TEST.SRC auf Laufwerk 1 speichern. Dazu geben\
+Sie folgendes ein:\
+\
+<ESC>WD1:TEST<ESC><ESC>\
+\
+Die Extension .SRC wird von ATHAS selbst hinzugef\'fcgt,\
+Sie k\'f6nnen selbstverst\'e4ndlich auch eine andere\
+Extension angeben, etwa $WD1:TEST.ATM$ <ESC>.\
+\
+VORSICHT: 	Der Text wird immer BEGINNEND bei der\
+========= 	momentanen POSITION DES CURSORS aufge-\
+		zeichnet. Deshalb immer zum Abspeichern\
+		des gesamten Textes zuvor <CTRL>-E eingeben.\
+\
+Auf \'e4hnlich Heise k\'f6nnen Sie ein Textfile von der\
+Diskette in den Speicher laden. Dazu wird der Befehl\
+'R' benutzt, der wie 'W' verwendet wird.\
+\
+BEISPIEL: Laden des Demo-Files DEHO.SRC von der\
+ATMAS-II Diskette (in Laufwerk 1):\
+\
+<ESC>RD1:DEMO<ESC><ESC>\
+\
+Der Extender .SRC wird wiederum automatisch angeh\'e4ngt.\
+Das File wird nun beginnend an der momentanen\
+Cursorposition eingelesen. Daraus ergeben sich zwei\
+M\'f6glichkeiten:\
+\
+1.) Wenn ein neues File geladen werden soll, dann\
+l\'f6schen Sie zuvor den Textbuffer vorher mit <ESC> K\
+<ESC> <ESC>.\
+\
+2.) Sie k\'f6nnen aber auch einzelne Files in den Text-\
+buffer einf\'fcgen (\'e4hnlich dem Kopier-Register), indem\
+Sie den Cursor an die gew\'fcnschte Stelle bringen und\
+dann den Lade\'97Befehl geben.\
+\
+Treten w\'e4hrend eines Ein-/Ausgabe-Befehles Fehler auf,\
+zu wird dies in der Statuszeile durch die Meldung 'RW'\
+angezeigt.\
+\
+Listings\
+--------\
+\
+Ausdrucke des Quelltextes k\'f6nnen mit dem 'L' Befehl\
+hergestellt werden. Dazu gibt es mehrere Optionen:\
+\
+'L'  : 	Listing scrollt \'fcber den Bildschirm\
+'L0' : 	Ausgabe auf RS232 Schnittstelle Nr. 1 des 850\
+	Interfacemodules (R1:)\
+'L1' : 	Ausgabe erfolgt \'fcber den normalen Printer\'97Handler\
+	'P:', also im Regelfall \'fcber das Atari 850\
+	interface-Modul.\
+'L7' : 	Listinq wird \'fcber Centronics\'97Schnittstelle aus\
+	den Joystick-Ports 3 und 4 ausgegeben. Diese\
+	M\'f6glichkeit besteht nur f\'fcr 400/800-Computer.\
+\
+Hinweise zur fortgeschrittenen Editorbenutzung\
+----------------------------------------------\
+\
+Die M\'f6glichkeit der Befehlsverkettung in der Kommando-\
+zeile erm\'f6glicht sehr komfortable Editierhilfen:\
+\
+	$SLDA$3D$ILDX$J$ <ESC>\
+\
+Diese Befehlskette w\'fcrde alle LDA-Befehle ab der\
+Cursorposition in LDX-Befehle umtauschen. Wie\
+funktioniert's? Zuerst wird ein LDA-Befehl gesucht\
+($SLDA), der Cursor kann man sich dann hinter dem\
+gesuchten String postiert denken. '$3D' l\'f6scht nun\
+drei Zeichen links vom Cursor (Sie erinnern sich: Der\
+Wiederholungsfaktor!), w\'e4hrend '$ILDX den String 'LDX'\
+einsetzt. '$J\'92 wiederum bewirkt, da\'df die gesamte\
+Kommandozeile solange ausgef\'fchrt wird, bis der Text zu\
+Ende ist, also ein 'S?'-Fehler (String nicht gefunden)\
+auftritt.\
+\
+Teil 2: Der Makro\'97Assembler\
+===========================\
+\
+2.1 Benutzung des Makroassemblers\
+----------------------------------\
+\
+Vom Editor aus wird der ATMAS-II Makroassembler mit\
+\
+	<CTRL>-Y\
+\
+aufgerufen. Er beginnt dann sofort mit der Assemblie\'97\
+rung des Quelltextes, der sich im Textbuffer des\
+Editors befinden mu\'df.\
+\
+Die Assemblierung wird in drei Durchg\'e4nge (sog.\
+Passes) unterteilt, wobei der zweite Durchgang seine\
+Aktivit\'e4t durch ein schnell ver\'e4nderndes Zeichen in\
+der linken oberen Bildschirmecke anzeigt. Der dritte\
+Pass kann ein Listing des assemblierten Programmes auf\
+dem Drucker oder dem Bildschirm ausgeben (s. OUT-\
+Direktive).\
+\
+Der Vorgang des Assemblierens wird so lange fort-\
+gesetzt, bis entweder der Quelltext zu Ende ist, ein\
+<CTRL>-Z Zeichen entdeckt wird (Assembler-Stop\
+Zeichen) oder ein Fehler erkannt worden ist. Im\
+letzteren Fall wird eine Fehlermeldung (s. Anhang B)\
+am Bildschirm ausgegeben. Ein beliebiger Tastendruck\
+bringt Sie in den Editor zur\'fcck, und zwar genau an die\
+Stelle, die den Fehler verursacht hat. Sie k\'f6nnen\
+sofort den Fehler verbessern und den Assembler mit\
+<CTRL>-Y neu starten.\
+\
+Dieses komfortable 'Hand\'97in\'97Hand' Arbeiten zwischen\
+Editor und Assembler ist ein wesentlicher Punkt, der\
+ATMAS-II als Entwicklungssystem f\'fcr Maschinenpro\'97\
+gramme so leistungsf\'e4hig macht, und doch dabei die\
+Bedienung einfach gestaltet.\
+\
+2.2 Eingabeformat des Assemblers\
+--------------------------------\
+\
+Der ATMAS-II Makroassembler kennt alle Opcodes der\
+6502-CPU, soweit diese im 'MOS-Technology 6502-Pro-\
+grammierhandbuch' beschrieben sind. Ebenso folgt die\
+Schreibweise der Adressierungsarten der in jenem Buch\
+vorgeschlagenen Notation (siehe unten).\
+\
+Eine Ouellteutzeile kann folgende Formate haben:\
+\
+A) Leerzeile:\
+-------------\
+Besteht nur aus einem <RETURN>-Zeichen.\
+\
+B) Kommentarzeile:\
+------------------\
+Beginnt mit einem '*' in der ersten Spalte.\
+Beispiel: * Copyright (c) M. Huber\
+\
+C) Befehlszeile mit Label:\
+--------------------------\
+\
+Beginnt mit einem Label, gefolgt von einem Trenn-\
+zeichen (Leerzeichen oder Tabulator), dann einem\
+6502-Opcode oder einer Assemblerdirektive, schlie\'dflich\
+kann noch nach einem weiteren Trennzeichen ein\
+Kommentar folgen.\
+\
+Beispiele:	LOOP	LDA #$10\
+		DOSVEC 	EQU $000C 	DOS-EINSPRUNG\
+\
+D) Befehlszeile:\
+----------------\
+\
+Mu\'df immer mit einem Trennzeichen beginnen: Um saubere\
+Listings zu bekommen empfiehlt es sich, diese mit\
+einem Tabulator beginnen zu lassen. Danach folgt ein\
+6502-Opcode oder eine Assemblerdirektive, wie im\
+voranstehenden Fall kann auch hier nach einem weiteren\
+Trennzeichen ein Kommentar stehen.\
+\
+Beispiele:	<TAB>STA COLOR0 	FARBE AENDERN\
+		<TAB>DFB 100,120,140\
+\
+Adressierungsarten:\
+-------------------\
+\
+Im folgenden eine kurze Zusammenfassung der Schreib-\
+weisen der einzelnen Adressierungsarten, jeweils mit\
+einem Beispiel versehen:\
+\
+Implied Akku 		<OPC> 			ASL\
+Immediate 		<OPC> #<AUSDR>		LDA #$FF\
+Absolut, Zeropage 	<OPC> <AUSDR> 		STA $600\
+Relativ 		<OPC> <AUSDR> 		BNE *+4\
+Absolut X-indiziert 	<OPC> <AUSDR>,X 	CMP $3000,X\
+Absolut Y-indiziert 	<OPC> <AUSDR>,Y 	LDA TABLE,Y\
+lndirekt-indiziert 	<OPC> (<AUSDR>),Y 	EOR ($F0),Y\
+Indiziert-indirekt 	<OPC> (<AUSDR>,X) 	STA ($F0,X)\
+\
+<OPC> 	: g\'fcltiger 6502\'97Assemblerbefehl (Op-Code)\
+<AUSDR>	: arithmetlscher Ausdruck\
+\
+Wie schon erw\'e4hnt, ist vor jedem <OPC> ein Label\
+m\'f6glich, nach jedem Assemblerbefehl kann ein Kommentar\
+stehen, der mit einem Trennzeichen abgesetzt ist.\
+AUSNAHME: Nach implied\'97Akku Befehlen mu\'df das Kommen-\
+tarfeld durch einen Strichpunkt abgetrennt sein.\
+\
+LABELS\
+------\
+\
+Labels bestehen aus Buchstaben und Zahlen, wobei das\
+erste Zeichen immer ein Buchstabe sein mu\'df. Die\
+maximale L\'e4nge betr\'e4gt 8 Zeichen, wobei alle Zeichen\
+signifikant sind.\
+\
+G\'fcltige Labels:		Ung\'fcltige Labels:\
+---------------		-----------------\
+SCHLEIF 		1LOOP\
+SCHLEIF1		SCHLEIFEN (9 Buchstaben!)\
+S12345\
+\
+Konstante:\
+----------\
+\
+ATMAS-II kennt vier Arten von Konstanten: Dezimal\'97,\
+Hexadezimal\'97, Bin\'e4r\'97 und Zeichen\'97Konstante.\
+\
+A) Dezimale Konstante\
+---------------------\
+Bestehen einfach aus der Zahl selbst (im Bereich 0 bis\
+65535).\
+\
+	Beispiele: 10, 100, 3000, 65535\
+\
+B) Hexadezimale Konstante\
+-------------------------\
+Bestehen aus einem Dollar-Zeichen ('$') und g\'fcltigen\
+Hexadezimalziffern (0-9,A-F).\
+\
+	Beispiele: $10, $FF, $AB00, $FFFF\
+\
+C) Binare Konstante\
+-------------------\
+Bestehen aus einem Prozent-Symbol mit nachfolgenden\
+g\'fcltigen Bin\'e4rziffern (0,1).\
+\
+	Beispiele: %1, %1001, %11110000\
+\
+D) Zeichen-Konstante\
+--------------------\
+Werden aus einem Apostroph mit nachfolgenden ASCII\
+(bzw. ATASCII)-Zeichen gebildet. Die Zeichen werden in\
+7-Bit\'97Werte umgewandelt (Bit 7 immer Null).\
+\
+	Beispiele: 'X, '#, 'e, '"\
+\
+Negative Konstante:\
+-------------------\
+Alle Konstanten k\'f6nnen durch ein vorangestelltes\
+Minus\'97Zeichen als negative Zahlen interpretiert\
+werden. Die Darstellung erfolgt im Zweierkomplement\
+(-1 := $FFFF).\
+\
+	Beispiele: -1, -$100, -%101101, -'B'\
+\
+Interner Adressz\'e4hler:\
+----------------------\
+\
+ATMAS-II f\'fchrt w\'e4hrend der Assemblierung einen\
+internen Adressz\'e4hler mit, der jeweils auf den Opcode.\
+der gerade \'fcbersetzten Anweisung zeigt (bzw. auf das\
+n\'e4chste freie Byte nach dem zuletzt berechneten\
+Ausdruck in DFB/DFW Direktiven). Dieser interne\
+Adressz\'e4hler kann jederzeit durch das '*'-Symbol\
+abgerufen werden. Dies kann in vielf\'e4ltigen Weisen\
+benutzt werden:\
+\
+A) Speicherplatz reservieren:\
+	ORG *+$100 reserviert 256 Bytes\
+B) relative Spr\'fcnge ohne Label:\
+	BNE *+4 \'fcberspringt die n\'e4chsten 4 Bytes\
+C) Adressversetzte Labels f\'fcr Software\'97Stackinq\
+	RETADR EQU *-1 momentane Adresse minus 1\
+\
+Ausdruck:\
+---------\
+\
+Ein Ausdruck kann eine Konstante, ein Label, ein\
+Makroparameter (siehe 2.4), der momentane Adress-\
+Z\'e4hler ('*') oder eine arithmetische Verkn\'fcpfung\
+derselben sein. Zugelassene Verkn\'fcpfungen sind: +, -,\
+*, /, der Rechenbereich betr\'e4gt O-65535. Einige\
+Beispiele dazu:\
+\
+	LDA #$FF 	Konstante\
+	LDA #LABEL1 	Label\
+	STA LABEL+$A0 	Verkn\'fcpfung\
+	LDA *+$10 	momentaner Adr.-Z\'e4hler+0ffset\
+\
+Zus\'e4tzlich sind auch Klammern zur Kl\'e4rung der Priori-\
+t\'e4t m\'f6glich:\
+\
+	LDA #($A0+5)/1O\
+	LDA #LAB1\'97(Lab1/256)*256\
+\
+2.3 Assembler-Direktiven\
+========================\
+\
+2.3.1 ORG\
+---------\
+\
+Zweck :		bestimmt den Inhalt des assemblerinternen Adress-\
+		Z\'e4hlers.\
+\
+Syntax : 	[<LABEL>] ORG <AL>[,<AP>] [<KOM>]\
+\
+Beispiel: 	ORG $A800\
+\
+ORG bestimmt die Anfangsadresse des Objektprogrammes,\
+im obigen Beispiel ist der f\'fcr diese Zwecke reser-\
+vierte Speicherbereich ab SABOO gew\'e4hlt.\
+In manchen F\'e4llen ist es aber nicht m\'f6glich, das\
+Objektprogramm direkt in den gew\'fcnschten Speicher-\
+bereich zu legen, wenn dieser 2.8. von ATMAS-ll belegt\
+wird (s. Memory\'97Map im Anhang!). Hierzu k\'f6nnen Sie\
+den zweiten Parameter der ORG\'97Direktive verwenden, die\
+sogenannte 'physikalische Adresse' <AP>.\
+\
+	ORG $3000,$A8OO\
+\
+Dieser 0RG\'97Befehl w\'fcrde ein Programm so assemblieren,\
+da\'df es an der Adresse $3000 (logische Adresse, <AL>)\
+lauff\'e4hig ist, w\'e4hrend der Assemblierung aber im\
+freien Speicherbereich ab der Adresse $A800 abgelegt\
+wird. Damit das Programm ausgef\'fchrt werden kann, mu\'df\
+es an die richtige Stelle verschoben werden, das kann\
+2.8. mit dem SAVE\'97Befehl des Monitors geschehen, der\
+ein Bin\'e4rfile so abspeichern kann, da\'df es beim erneu-\
+ten Einlesen an den richtigen Speicherplatz kommt. In\
+einfacheren F\'e4llen (2.8. wenn das Programm in dem\
+Adressbereich abgelegt werden soll, in dem ATMAS-II\
+seine Symboltabelle hat) hilft auch der\
+Blocktransfer-Befehl des Monitors.\
+\
+2.3.2 EQU, EPZ (Equates)\
+------------------------\
+\
+Zweck : 	Zuordnung eines Wertes zu einem Label. _\
+\
+Syntax : 	<LABEL> EQU <AUSDR> [<KOM>]\
+		<LABEL> EPZ <AUSDR> [<KOM>]\
+\
+Beispiel: 	GRUEN 	EQU $A0\
+		CIOV 	EQU $E456\
+		SAVHSC 	EPZ $58\
+		PLAYER 	EQU PHBASE+1024\
+\
+Die EQU\'97Direktive wird benutzt, um einen Label mit\
+einem bestimmten Wert zu definieren, es kann sich\
+dabei sowohl um ein Datum oder eine Adresse handeln.\
+Der erste Label des Beispieles wird z.B. sicher als\
+Datum f\'fcr einen immediate-Befehl verwendet werden (LDA\
+#GRUEN), w\'e4hrend das zweite Beispiel eine ROM-Ein-\
+sprungadresse bezeichent (JSR CIOV).\
+\
+EPZ (Equate Page Zero) hat prinzipiell die gleiche\
+Funktion, kann aber verwendet werden, wenn zum\
+Ausdruck gebracht werden soll, da\'df der Label einen\
+Zeropage-Speicherplatz darstellt. Es besteht aber\
+kein Zwang zur Verwendung von EPZ, da ATMAS-II\
+Zeropage-Adresslerungsarten selbstt\'e4tig erkennt. EPZ\
+dient hierbei nur der Verdeutlichung, Sie k\'f6nnen in\
+allen F\'e4llen auch EQU verwenden.\
+\
+2.3.3 DFB (Define Byte)\
+-----------------------\
+\
+Zweck : 	definiert den Inhalt einzelner Bytes im\
+		Objectcode\
+\
+Syntax : 	[<LABEL>] DFB <AUSDR>[,<AUSDR>][ <KOM>]\
+\
+Beispiel: 	TABELL 	DFB 1,2,4,8,16,32,64,128\
+\
+		DFB 'A, 'B, 'C\
+		DFB 'X+128\
+\
+Die navh DFB folgenden Ausdr\'fccke werden als 8-Bit\
+werte in den Objektcode abgelegt. Die erste Zeile des\
+Beispieles w\'fcrde folgende Sequenz erzeugen:\
+\
+	01 02 04 08 10 20 40 80\
+\
+ATASClI werte werden als 7-Bit Nerte abgelegt, das\
+h\'f6chstwertiqe Bit ist immer Null.\
+\
+2.3.4 DFW (Define Word)\
+-----------------------\
+\
+Zweck : 	definiert den Inhalt eines 16-Bit Wortes im\
+		Objektcode.\
+\
+Syntax : 	[<LABEL>] DFW <AUSDR>[,<AUSDR>...][ <KOM>]\
+\
+Beispiel: 	ADRTAB 	DFW $A900,$AA03,$AB06\
+			DFW ADRTAB-1,ADRTAB+2\
+\
+Die nach DFW folgenden Ausdr\'fccke werden als 16\'97Bit\
+Werte im Objektcode abgelegt. Dabei wird die Reihen-\
+folge der 6502-Adressen benutzt, d.h. zuerst das\
+niederwertige (LSB), dann das h\'f6herwertige Byte (MSB).\
+Die erste Zeile des Beispiels w\'fcrde demnach folgendes\
+erzeugen:\
+\
+	00 A9 03 AA 06 AB\
+\
+2.3.5 ASC (ASCII-String)\
+------------------------\
+\
+Zweck : 	f\'fcgt einen String in ATASCII- oder Bild-\
+		schirmcodierung in den Objektcode ein.\
+\
+Syntax : 	[<LABEL>] ASC 	<STZ><STRING)<STZ>\
+				[,<STZ><STRING><STZ>][ <KOM>]\
+\
+		<STZ>: String-Trennzeichen, ", /, \\, %, $\
+\
+Beispiel:	TEXT 	ASC "HALLO"\
+		MELD 	ASC /DISK-FEHLER/\
+			ASC "MAKRO",\\ASSEMBLER\\\
+			ASC Z Normaler Bildschirmcode Z\
+			ASC S Inverser Bildschirmcode S\
+\
+Strings nach einer ASC\'97Direktive werden Byte f\'fcr Byte\
+in den Objektcode \'fcbertragen. Abh\'e4ngig vom Trenn-\
+zeichen (<STZ>) k\'f6nnen verschiedene Funktionen _\
+angew\'e4hlt werden:\
+\
+	" : Text im ATASCII-Code eintragen\
+	/ : ATASCII-Code, aber Bit 7=1 (Invers)\
+	\\ : ATASCII-Code, beim letzten Zeichen wird Bit 7\
+	    gesetzt <Ende-Kennung>\
+	% : interner Bildschirmcode wird generiert!\
+	$ : Bildschirmcode mit Bit 7=1 (Invers)\
+\
+Jeder String mu\'df von zwei g\'fcltigen String\'97Trennzeichen\
+umschlossen werden. Anfangs- und Endtrennzeichen\
+m\'fcssen gleich sein.\
+\
+Statt dem Anf\'fchrungszeichen " (<SHIFT>-2) k\'f6nnen Sie\
+auch ein beliebiges anderes nicht alphanumerisches Zeichen\
+benutzen, die oben genannten nat\'fcrlich ausgeschlos-\
+sen. Denkbar w\'e4ren hier z. B. !, #, oder &, Bedingung\
+ist lediglich, da\'df der String mit dem gleichen\
+Trennzeichen abgeschlossen wird. Mit diesem Trick ist\
+es m\'f6glich, da\'df Sie ein Anf\'fchrungszeichen in den Text\
+bekommen.\
+\
+In Verbindung mit dem Displaylistkonzept der Atari-\
+Computer gestattet Ihnen der ASC\'97Befehl die komfor-\
+table Programmierung von Titeln und \'dcberschriften, da\
+direkter Bildschirmcode erzeugt werden kann. Das Bei-\
+spielprogramm ASCDEMO.SRC auf der ATMAS-II Diskette\
+zeigt Ihnen, wie's gemacht wird.\
+\
+2.3.6 OUT (Output Listing)\
+--------------------------\
+\
+Zweck : 	Ausgabe eines Assembler-Listings\
+Syntax : 	[<LABEL>] OUT [L][N][M][P][0][1][2][ <KOM>]\
+\
+Beispiel:	OUT L 		Listing auf Bildschirm\
+		OUT LP1 	Listing auf Drucker\
+		OUT LNMP1 	Listing auf Drucker, Symbole\
+				keine Makroexpansion\
+\
+Mit OUT k\'f6nnen Sie bestimmen, ob Sie ein Protokoll des\
+Assembliervorganges haben m\'f6chten und das zugeh\'f6rige\
+Ausgabeger\'e4t festlegen. Folgende Parameter werden\
+erkannt:\
+\
+	L : Listing wird erzeugt\
+	N : Symboltabelle wird ausgegeben\
+	M : Makros werden NICHT expandiert (ausgedruckt!)\
+	P : Druckeroptionen:\
+	PO: RS232 Schnittstelle\
+		P1: Atari-Drucker, Centonics\'97Schnittstelle (850)\
+		P2: Joystick-Interface Port 3&4 (nur 400/800)\
+\
+Nach jeweils 66 Zeilen wird ein Seitenvorschub\
+generiert.\
+\
+2.4 Mahrof\'e4higkeit\
+==================\
+\
+ATMAS-II gestattet Ihnen die Verwendung von Makro-\
+befehlen. Darunter versteht man eine Folge von\
+Assemblerbefehlen, denen im Rahmen einer Makrodefini-\
+tion ein Name zugeordnet wurde. Bei der Verwendung\
+dieses Makro-Namens im Quelltext werden die gesamten,\
+ihm zugeordneten Assemblerbefehle erzeugt, man sagt,\
+der Makro-Befehl wird expandiert. Mit Hilfe von Makros\
+k\'f6nnen Sie sich eine Art von zus\'e4tzlichen Assemblerbe\'97\
+fehlen schaffen, die in Wirklichkeit aus einer Sequenz\
+von einzelnen Maschinenbefehlen bestehen.\
+\
+2.4.1 Makro-Definition\
+----------------------\
+\
+Bevor Sie ein Makro verwenden k\'f6nnen, m\'fcssen Sie es\
+zuerst definieren. Zu diesem Zweck dienen die zwei\
+Assembler-Direktiven MACRO und MEND.\
+\
+Zum besseren Verst\'e4ndnis zuerst ein Beispiel, das den\
+Basic-Befehl POKE imitiert:\
+\
+	POKE 	MACRO ADRESS,DATA\
+		LDA #DATA\
+		STA ADRESS\
+		MEND\
+\
+Die Definition wird von der MACRO-Direktive mit\
+voranstehendem Namen des Makros (hier: POKE) einge-\
+leitet. Dieser Name wird sp\'e4ter zum Aufruf verwendet.\
+Nach der MACRO-Direktive folgen die sogenannten\
+formalen Parameter, das sind keine Labels im eigent-\
+lichen Sinn, sondern nur Platzhalter f\'fcr die beim\
+Aufruf angegebenen tats\'e4chlich einzusetzenden\
+Parameter. Dieser Vorgang der Parametersubstitution\
+wird bei der Besprechung des Makro-Aufrufes noch\
+genauer erl\'e4utert.\
+\
+Jetzt folgen die Assemblerbefehle, die als Operanten\
+sowohl gew\'f6hnliche Labels als auch die in der\
+MACRO-Direktive angegebenen formalen Parameter\
+benutzen k\'f6nnen. Abgeschlossen wird die Makro-\
+Definition durch die MEND (Makro-Ende)-Direktive\
+\
+Syntax : <MNAME> 	MACRO [<FPAR>][,<FPAR>...]\
+			MEND\
+\
+	<MNAME>: 	Name des Makros, Syntax wie Label\
+	<FPAR> : 	formale Parameter\
+\
+2.4.2 Makroaufruf, Makroexpansion\
+---------------------------------\
+\
+Das in 2.4.1 definierte Makro kann im Quelltext mit\
+\
+	POKE 752,1\
+\
+aufgerufen werden. Bei der Assemblierung findet dann\
+folgendes statt: ATMAS-II erkennt, da\'df es sich bei\
+POKE um ein bereits definiertes Makro handelt und f\'fcgt\
+die Maschinenbefehle der Definition in den Objektcode\
+ein. Dabei werden die formalen Parameter der Defini-\
+tion mit den tats\'e4chlichen Werten des Aufrufes er-\
+setzt. Im Beispiel wird folglich ADRESS durch 752, und\
+DATA durch 1 ersetzt. Nach der Makroexpansion ergibt\
+sich folgendes Maschinenprogramm:\
+\
+	LDA #1\
+	STA 752\
+\
+Die allgemeine Syntax f\'fcr den Makroaufruf lautet:\
+\
+	[<LABEL>] 	<MNAME> [<PAR>][,<PAR>...]\
+\
+Es m\'fcssen ebensoviele Parameter (<PAR>) \'fcbergeben\
+werden, wie formale Parameter in der Definition\
+angegeben wurden. Als Parameter k\'f6nnen Konstante,\
+Ausdr\'fccke und auch Strings verwendet werden. Ein\
+Beispiel zur Verwendung von Strings als Parameter\
+finden Sie im Teil 4.2 (Makro\'97Bibliotheken).\
+\
+2.4.3 Lokale Labels\
+-------------------\
+\
+Als n\'e4chstes Beispiel betrachten Sie bitte das Listing\
+des unten angegebenen Makros. Es handelt sich dabei\
+um ein Programm zum L\'f6schen eines Speicherbereiches\
+von max. 256 Bytes (einer Page). Da das Programm mit\
+einer Schleife arbeitet, enth\'e4lt es folgerichtig auch\
+einen Label. H\'fcrden Sie dieses Makro zweimal innerhalb\
+eines Programmes aufrufen, so w\'e4re das Label LOOP\
+doppelt verwendet, wodurch der Assembler den Fehler\
+'SAME LABEL TWICE' meldet.\
+\
+	LOESCH 	MACRO ADRESS,LAENGE\
+		LDY #LANGE\
+		LDX #0 \
+		LDA #0\
+	LOOP 	STA ADRESS,X\
+		INX\
+		DEY\
+		BNE LOOP\
+		MEND\
+\
+Auch hier bietet Ihnen ATMAS-II Unterst\'fctzung an: Ein\
+Label, das mit dem Happy-'a' Symbol (<SHlFT>-8) endet,\
+wird als lokales Label des Makros angesehen. Im\
+Beispiel: statt LOOP mu\'df der Label LOOP@ verwendet\
+werden (auch im BNE\'97Befehl!). Intern ersetzt ATMAS-II\
+das Happy-\'92a' Symbol durch eine vierstellige Zahl, die\
+bei jedem Makroaufruf um eins erh\'f6ht wird. Dadurch\
+erzeugt auch zweimalige Aufruf von LOESCH verschiedene\
+Labels (n\'e4mlich LOOP0001 und LOOP0002).\
+\
+2.4.4 verschachtelte Makros\
+---------------------------\
+\
+Eine Makrodefinition selbst kann wiederum einen Makro-\
+aufruf einschlie\'dflich der \'dcbergabe von Parametern\
+enthalten. Als Beispiel kann ein Double-Poke Befehl\
+dienen, der das bereits besprochene POKE-Makro be-\
+nutzt:\
+\
+	DPOKE	MACRO ADRESS,WORT\
+		POKE ADRESS,WORT\
+		POKE ADRESS+l,WORT/256\
+		MEND\
+\
+Diese Verschachtelungstechnik ist nur durch den Hard-\
+warestack begrenzt.\
+\
+2.4.5 Makros contra Unterprogramme\
+----------------------------------\
+\
+Sicherlich ist Ihnen bei der Beschreibung der Makros\
+die nahe Verwandtschaft zu Unterprogrammen aufgefallen.\
+Es gibt jedoch eine Reihe von wichtigen Unterschieden,\
+die Sie sich verdeutlichen sollten:\
+\
+Makros sind universeller in der Benutzung, da Sie \'fcber\
+den Mechanismus der Parameter\'fcbergabe verf\'fcgen. Sie\
+eignen sich daher gut zum Aufbau von Makro- (Programm)\
+Bibliotheken. Solche Makrosammlungen lassen sich\
+leicht mit dem flexiblen ATMAS-II Editor in den\
+Quelltext einbinden. Makros gestatten wesentlich\
+\'fcbersichtlichere Assemblerprogramme, man darf aller-\
+dings nicht \'fcbersehen, da\'df alle in der Definition des\
+Makros angegebenen Maschinenbefehle bei jedem Aufruf\
+des Makros in das Programm eingesetzt werden. Das \'b7\
+bedeutet, wenn Sie das LOESCH-Makro f\'fcnfmal im Pro-\
+gramm verwenden, da\'df es ebenso oft in Ihr Programm\
+eingesetzt wird, und nat\'fcrlich auch dementsprechend\
+Speicherplatz verbraucht.\
+\
+Die Verwendung von Unterprogrammen ist wesentlich\
+optimaler in Bezug auf Speicherplatz, wobei es aller-\
+dings schwieriger ist, die \'dcbergabe der Parameter so\
+elegant wie im Makro zu gestalten. Ein weiterer, in\
+manchen F\'e4llen entscheidender Gesichtspunkt ist die\
+Geschwindigkeit: W\'e4hrend Makros hier die bessere\
+L\'f6sung darstellen, dauert es bei Unterprogrammen etwas\
+l\'e4nger, da JSR und RTS-Befehle auch Zeit ben\'f6tigen.\
+\
+3. Der Maschinensprache-Monitor\
+===============================\
+\
+Vom Editor gelangen Sie durch die Eingabe von\
+\
+	<CTRL>-P\
+\
+in den Maschinensprache\'97Monitor. Der Bildschirm wird\
+gel\'f6scht und das "MONITOR."-Prompt erscheint in der\
+linkem oberen Bildschirmecke. Mit dem ATMAS-II Monitor\
+k\'f6nnen Sie Maschinenprogramme starten, auf Diskette\
+ablegen, den Speicherinhalt pr\'fcfen, ver\'e4ndern und\
+disassemblieren und dabei ein Protokoll am Drucker\
+mitf\'fchren. Da der Monitor \'fcber eine dialogorientierte\
+Eingabe verf\'fcgt, brauchen Sie sich keinerlei kompli-\
+zierte Befehlssyntax merken.\
+\
+3.1 Allgemeine Benutzungshinweise\
+---------------------------------\
+\
+Alle Eingaben innerhalb des Monitors erfolgen in hexa\'97\
+dezimaler Schreibweise (ohne vorangestelltes Dollar-\
+zeichen!). Sollten Sie sich bei der Eingabe vertippen,\
+so kann diese jederzeit mit 'X' abgebroched werden.\
+Wenn Fragen im Dialog auftreten, werden diese mit 'Y'\
+(Yes) positiv beantwortet, jeder andere Tastendruck\
+(auch <RETURN>) beantwortet die Frage verneinend. Auch\
+hier ist ein Abbruch mit 'X' m\'f6glich.\
+Filenamen m\'fcssen immer im Standard\'97Atari Format einge-\
+geben werden, d.h. zuerst einen Ger\'e4tenamen (D:, D1:,\
+D2:...) dann der Filename mit max. 8 Zeichen, der nach\
+einem Dezimalpunkt noch eine max. 3 Zeichen lange\
+Erweiterung haben darf.\
+\
+Beispiele:	D:TEST.OBJ, D2:CODE.COM, D1:FILE\
+\
+3.2 Befehlsvorat des Monitors\
+-----------------------------\
+\
+Die Befehle des Maschinensprache-Monitors bestehen aus\
+einfachen Buchstaben, die Parameter, soweit n\'f6tig,\
+werden im Dialog abgefragt.\
+\
+3.2.1 M - Memory-Dump\
+\
+Hit dem M-Befehl k\'f6nnen Sie einen Speicherbereich in\
+hexadezimaler Schreibweise auf Bildschirm oder Drucker\
+ausgehen, weiterhin k\'f6nnen Sie eine zus\'e4tzliche Dar-\
+stellung den Speicherinhaltes in ASCII-Zeichen\
+erhalten.\
+\
+Beispiel: 	Ihre Eingabe: 	Bildschirm:\
+		M 		DUMP\
+		D000 		FROM:D000\
+		D080		TO:D080\
+		Y		ASCII?Y\
+		<RETURN>	PRINT?\
+\
+Nun wird der Speicherbereich von $D000-D080 sowohl in\
+hexadezimaler Schreibeweise als auch in ASCII ausge-\
+geben. H\'e4tten Sie bei der Frage ASCII? einfach\
+<RETURN> gedr\'fcckt, so w\'fcrde nur die hexadezimale\
+Schreibweise ausgegeben. Antworten Sie auf die Frage\
+PRINT? mit 'Y', dann m\'fcssen Sie sich f\'fcr einen\
+Ausgabekanal entscheiden:\
+\
+(1):	w\'e4hlt die serielle Schnittstelle R1: des\
+	ATARI-Interfaces als Ausgabekanal\
+(2): 	Ausgabekanal ist die Centronics-Schnittstelle des\
+	ATARI-Interfaces (normaler 'P:'-Printer-Handler).\
+(3):	Ausgabe \'fcber Joystickinterface Port 3&4 (400/8OO)\
+\
+3.2.2 D \'97 Disassemble\
+---------------------\
+\
+Mit dem D\'97Befehl k\'f6nnen Sie den Inhalt eines Speicher-\
+bereiches als 6502-Befehle r\'fcck\'fcbersetzen (disassem-\
+blieren) lassen. Wie bei M k\'f6nnen Sie die Ausgabe auf\
+den Drucker umlenken.\
+\
+Beispiel:	Ihre Eingabe	Bildschirm\
+		D		DISASSEMBLER\
+		D000		START?D000\
+		<RETURN>	PRINT?\
+\
+Jetzt wird der Speicherinhalt ab der Adresse SDOOO in\
+disassemblierter Form ausgegeben, wobei immer nach\
+einer F\'fcllung des Bildschirmes unterbrochen wird.\
+Durch Dr\'fccken einer beliebigen Taste (au\'dfer 'X') wird\
+der n\'e4chste Bildschirm ausgegeben. 'X' beendet die\
+Disassemblierung. Bei Ausgabe auf Drucker findet keine\
+Unterbrechung des Listings statt, der Ausdruck kann\
+mit <RESET> abgebrochen werden.\
+\
+3.2.3 C - Change Memory\
+-----------------------\
+\
+Das C\'97Kommando erlaubt Ihnen die Ver\'e4nderung von\
+Speicherinhalten. Die Eingabe erfolgt in\
+hexadezimaler Schreibweise.\
+\
+Beispiel:	Ihre Eingabe	Bildschirm\
+		C		CHANGE\
+		A900		ADDRESS?A900\
+		FF		A900 => FF\
+		00		A901 => 00\
+		X		A902 =>\
+				MONITOR.\
+\
+Sie k\'f6nnen gezielt einzelne Bytes oder auch zusammen-\
+h\'e4ngende Speicherbl\'f6cke in hexadezimaler Form ein-\
+geben. Durch die Eingabe von 'X' kommen Sie wieder in\
+den Befehls-Eingabemodus des Monitors zur\'fcck.\
+\
+3.2.4 F - Fill Memory\
+---------------------\
+\
+Mit dem F\'97Befehl k\'f6nnen Sie einen Speicherbereich mit\
+einem gew\'fcnschten Wert vorbesetzen.\
+\
+Beispiel:	Ihre Eingabe:	Bildschirm:\
+		F		FILL\
+		A900		FROM:A900\
+		AFFF		TO:AFFF\
+		FF		WITH:FF\
+\
+Wirkung: Der Speicherbereich $A900 bis $AFFF wird mit\
+dem Wert $FF gef\'fcllt.\
+\
+3.2.5 B - Blocktransfer\
+-----------------------\
+\
+Das B-Kommando erlaubt die Verschiebung ganzer\
+Speicherbl\'f6cke. Dies kann n\'fctzlich sein, wenn Sie bei\
+der Assemblierung mit ATMAS-II eine unterschiedliche\
+logische und physikalische Adresse gew\'e4hlt haben. Der\
+B\'97Befehl ben\'f6tigt Anfangs- und Endadresse des zu ver-\
+schiebenden Bereiches, sowie die Anfangsadresse des\
+Zielbereiches.\
+\
+Beispiel:	Ihre Eingabe	Bildschirm\
+		B		BLOCKTRANSFER\
+		A800		FROM:A800\
+		A900		TO:A900\
+		AC00		INTO:AC00\
+\
+Wirkung: Der Speicherblock von $A800 bis $A900 wird in\
+den Speicherbereich von $AC00 bis $AD00 kopiert.\
+\
+3.2.6 G - Goto Address\
+----------------------\
+\
+Mit dem G-Befehl k\'f6nnen Sie ein Maschinenprogramm\
+starten, dessen Einsprungadresse Sie eingeben m\'fcssen.\
+\
+Beispiel:	Ihre Eingabe	Bildschirm\
+		G		GOTO\
+		A800		GOTO A800\
+\
+ACHTUNG: Sie m\'fcssen selbst daf\'fcr Sorge tragen, da\'df ein\
+ausf\'fchrbares Maschinenprogramm an der angegebenen\
+Stelle steht!\
+\
+Die Kontrolle wird an den Monitor zur\'fcckgegeben, wenn\
+das Maschinenprogramm entweder mit einem RTS (Return\
+from Subroutine) oder BRK (Break-Befehl, Hex-Byte $00)\
+endet. Im letzteren Fall bekommen Sie die Register-\
+inhalte und die Prozessor-Flags angezeigt, eine her-\
+vorragende M\'f6glichkeit, um ein Programm nach Fehlern\
+zu durchsuchen.\
+\
+3.2.7 S - Binary Save\
+---------------------\
+\
+Um ein vom Assembler erzeugtes Maschinenprogramm auf\
+Diskette abzuspeichern, k\'f6nnen Sie entweder ins DOS\
+gehen (\'fcber Editor, (ESC) M (ESC) <ESC>) oder den\
+Monitor\'97Befehl S benutzen. Der Monitor speichert\
+Maschinenprogramme so ab, da\'df Sie vom DOS-II (oder\
+dazu kompatiblen DOS-Versionen) wieder geladen werden\
+k\'f6nnen.\
+\
+Beispiel:\
+\
+	Ihre Eingabe	Bildschirm\
+	S		SAVE\
+	A800		FROM:A800\
+	AF00		TO:AF00\
+	<RETURN>	INTO:\
+	D:TEST.OBJ	FILENAME(D:FN.EXT)? D:TEST.OBJ\
+\
+Dieses Beispiel bewirkt, da\'df der Speicherbereich von\
+$A800 bis $AF00 als File TEST.OBJ im Laufwerk 1 abge-\
+speichert wird. Der Filename mu\'df immer im Standard-\
+Atari Format eingeben werden.\
+\
+Der SAVE-Befehl des ATMAS-II Monitors hat noch einige\
+Zus\'e4tze aufzuweisen, die \'fcber den Standard hinaus-\
+gehen:\
+\
+A) Adressversetztes Abspeichern: Sie k\'f6nnen ein Pro-\
+gramm so abspeichern, da\'df es beim erneuten Einlesen in\
+einen anderen Speicherbereich geladen wird. Das ist\
+sehr n\'fctzlich, wenn Sie Programme mit getrennter lo-\
+gischer und physikalischer Adresse (s. ORG\'97Direktive)\
+assembliert haben.\
+\
+Sie m\'fcssen dazu bei den Fragen FROM bzw. TO den physi-\
+kalischen Adressbereich angeben (wo das Programm momentan\
+abgelegt wurde) und bei der Frage INTO die logische\
+Adresse (an die das Programm geladen werden soll)\
+angeben.\
+\
+Beispiel:\
+\
+	Ihre Eingabe	Bildschirm\
+	S		SAVE\
+	A800		FROM:A800\
+	A780 		TO:A980\
+	4000		INTO:4000\
+	D:TEST.OBJ	Filename(D:FN.EXT)?D:TEST.OBJ\
+\
+Dieses Beispiel w\'fcrde ein Programm, das von $A800 bis\
+$A980 im Speicher steht, so auf die Diskette schrei-\
+ben, da\'df es beim erneuten Einlesen im Bereich von\
+$4000 bis $4180 liegt. Hatten Sie das Programm mit\
+ORG $4000,$A800 assembliert, so ist es jetzt ein\
+lauff\'e4higes Maschinenprogramm. ACHTUNG: Sie sollten\
+dieses File nicht mehr im Monitor einlesen, da sonst\
+ATMAS-II \'fcberschrieben w\'fcrde!\
+\
+B) Append-Option: Wenn Sie als letztes Zeichen des\
+Filenamens ein Gr\'f6\'dfer-Zeichen ('>') eingeben, so wird\
+das File an ein eventuell bereits bestehendes mit\
+gleichem Filenamen angeh\'e4ngt. Sie k\'f6nnen damit Com-\
+pound-Files (aus mehreren Bl\'f6cken zusammengesetzte\
+Files) oder Files mit INIT und RUN-Adresse erzeugen.\
+\
+Beispiel:\
+\
+	Ihre Eingabe	Bidschirm\
+	S		SAVE\
+	AA00		FROM:AA00\
+	AB00		TO:AB00\
+	<RETURN> 	INTO:\
+	D:TEST-OBJ>	FILENAME (D:FN.EXT)?D:TEST.OBJ>\
+\
+Das File TEST.OBJ (von vorhin) wird in diesem Beispiel\
+um den Speicherblock von $AA00 bis $AB00 verl\'e4ngert.\
+Mit derselben Methode k\'f6nnen Sie auch RUN und INIT-\
+Adressen an ein File anf\'fcgen: Sie tragen die RUN-\
+Adresse (LSB, MSB) in die Adressen $02E0, $02E1 (INIT:\
+$02E2, $02E3) ein und h\'e4ngen den jeweiligen 'Speicher-\
+block' (der nur aus zwei Bytes besteht FROM: 02E0 TO:\
+02E1) an das File an.\
+\
+3.2.9 L - Binary Load\
+---------------------\
+\
+Analog zum Save\'97Befehl kann hier ein Bin\'e4r-File von\
+der Diskette geladen werden. Es kann sich dabei um ein\
+vom Save-Befehl erzeugtes oder um ein DOS erzeugtes\
+Bin\'e4r-File handeln, auch zusammengesetzte Compound-\
+Files werden geladen. RUN und INlT Spr\'fcnge werden\
+nicht ausgef\'fchrt.\
+\
+Beispiel:\
+\
+	Ihre Eingabe	Bildschirm\
+	L		LOAD\
+	D:TEST.OBJ	FILENAME(D:FN.EXT)? D:TEST.OBJ\
+			FROM: 5000 TO: 5190\
+			FROM: AA00 TO: AB00\
+\
+Der Load\'97Befehl gibt Ihnen gleich an, in welchen\
+Speicherbereich das Bin\'e4r-File geladen wurde. Im\
+Beispiel wurde ein File geladen, welches \'e4hnlich\
+zu dem im Save-Beispiel erzeugten ist.\
+\
+3.2.9 E - Editor\
+----------------\
+\
+Mit dem E-Kommando gelangen Sie zur\'fcck in den Editor,\
+der Cursor befindet sich noch an der Stelle, wo Sie\
+den Editor Verlassen haben.\
+\
+3.2.1O I \'97 Disketteninhaltsverzeichnis\
+--------------------------------------\
+\
+Der I-Befehl zeigt Ihnen alle Filenamen des Laufwerks\
+1 auf dem Bildschirm an.\
+\
+4. Beispiele\
+============\
+\
+4.1 Demoprogramm Farb-Scrolling\
+------------------------------\
+\
+Das nachfolgende Beispiel soll Ihnen das Zusammenspiel\
+der einzelnen Komponenten von ATMAS-II verdeutlichen.\
+von Vorteil w\'e4re es, wenn Sie den Teil 1 (Der Editor)\
+dieses Handbuches schon durchgelesen h\'e4tten und mit dem\
+Editor schon etwas vertraut sind. Teil 2 und 3 w\'e4ren\
+nicht notwendigerweise Voraussetzung, tragen aber\
+sicherlich zum besseren Verst\'e4ndnis bei.\
+\
+Obwohl das nachtfolgende Demo-Programm auf der ATMAS-II\
+Diskette enthalten ist (DEMO.SRC) sollten Sie es den-\
+noch von Hand eintippen, um sich besser mit dem Editor\
+vertraut zu machen. Falls Schwierigkeiten auftreten\
+sollten, k\'f6nnen Sie dann immer noch auf das fertige\
+File Zuruckgreifen.\
+\
+************************************\
+* ATMAS-II Demo: Farb-Scrolling PF85\
+*\
+* Abbruch durch START-Taste\
+************************************\
+\
+COLPF2	EQU $D018 	Farbregister\
+HSYNC 	EQU $D40A 	Synchron.\
+VCOUNI 	EQU $D40B 	Rasterzeile\
+RTCLL 	EQU $14 		VBI-Uhr\
+CUNSDL 	EQU $D01F 	Fkt.\'97Tasten\
+\
+*\
+* Programm liegt im USER-Bereich\
+* (ab $A800)\
+*\
+\
+	ORG $A800	res. Platz\
+\
+	LDA #8		Abfrage der\
+	STA CONSOLD	START\'97Taste vorbereiten\
+SCRCOL	CLC\
+	LDA VCOUNT	Bild\'97Zaehler\
+	ADC RTCLK 	plus Raster-Zeile\
+	STA HSYNC 	syncronlsieren\
+	STA COLPF2 	in Farbreglster\
+	LDA CONSOL	Funktionstasten\
+	AND #1		START\'97Taste?\
+	BNE SCRCOL	nein, weiter-->\
+	RTS\
+\
+Zur Erinnerung einige Hinweise zum Eintippen des Pro-\
+grammes: Kommentarzeilen beginnen immer mit einem\
+Stern in der ersten Spalte. Ebenfalls m\'fcssen Zeilen,\
+die mit einem Label versehen sind in der ersten Spalte\
+beginnen. Bei allen anderen Zeilen ist es von Vorteil\
+am Zeilenanfang einen Tabulator zu verwenden.\
+\
+Beispiel:\
+---------\
+Die erste 'EQU' Zeile sollten Sie so eintippen:\
+\
+	COLPF2<TAB>EQU<LEERZ.>$D01B<RETURN>\
+\
+Nachdem Sie das ganze Programm eingetippt haben, k\'f6n-\
+nen Sie die erste Assemblierung durch die Eingabe von\
+<CTRL>-Y beginnen. Sie sehen den Copyrightvermerk des\
+Assemblers und, wenn der Assembler keinen Fehler\
+erkannt hat, die Endadresse des erzeugten Objektpro\'97\
+grammes.\
+\
+Sollten Fehler aufgetreten sein, so werden Ihnen diese\
+im Klartext am Bildschirm pr\'e4sentiert. Sie k\'f6nnen\
+diesen mit Hilfe der Fehlertabelle im Anhang B auf die\
+Spur kommen. Als Ursachen kommen hier nur Tippfehler\
+in Frage.\
+\
+Zuerst dr\'fccken Sie nun eine beliebige Taste um wieder\
+in den Editor zur\'fcck zu kommen. Der Cursor befindet\
+sich sofort in der fehlerhaften Zeile. Ein kleiner\
+Tip: Manchmal hilft die Eingabe von <CTRL>-T um zu\
+sehen, ob vielleicht ein Tabulator an der falschen\
+Stelle sitzt (Eine Zeile, die nur aus einem Tabulator\
+oder einem Leerzeichen besteht wird als SYNTAX-ERROR\
+gemeldet!).\
+\
+Meldet der Assembler keinen Fehler, so k\'f6nnen Sie\
+daran gehen, das gerade assemblierte Programm zu\
+starten. Dazu bet\'e4tigen Sie zuerst eine beliebige\
+Taste um in den Editor zur\'fcck zu gelangen, und geben\
+anschlie\'dfend <CTRL>-P zum Aufruf des Monitors ein.\
+\
+Im Monitor k\'f6nnen Sie sich das vom Assembler erzeugte\
+Programm ansehen. Zu diesem Zweck geben Sie 'D' (Dis-\
+assemble) gefolgt von 'A800' und <RETURN> ein. Sie\
+m\'fc\'dften jetzt ein disassembliertes Listing des Program-\
+mes am Bildschirm sehen. Dr\'fccken Sie jetzt 'X' um das\
+Disassembler-Listing abzubrechen.\
+\
+Zum Starten des Programmes geben Sie 'G' (GOTO) und\
+die Startadresse des Programmes, in unserem Falle\
+'A800' ein. Wenn Sie alles richtig gemacht haben, dann\
+m\'fc\'dften Sie jetzt 128 Farben \'fcber den Bildschirm laufen\
+sehen. Das Farbspektakel kann mit <START> oder <RESET>\
+abgebrochen werden. Wenn Sie <RESET> dr\'fccken, kommen\
+Sie automatisch in den Editor zur\'fcck, mit <START> wird\
+das Programm ordnungsgem\'e4\'df beendet, und die Kontrolle\
+geht an den Monitor zur\'fcck. 'E' reaktiviert schlie\'df-\
+lich den Editor.\
+\
+4.2 Makro Bibliotheken\
+----------------------\
+\
+Auf der ATMAS-II Diskette finden Sie zwei weitere\
+Files IOLIB.SRC sowie GRAFLIB.SRC, deren Listings auf\
+den n\'e4chsten Seiten wiedergegeben sind. Es handelt\
+sich dabei um sogenannte Makro\'97Bibliotheken, d.h. sie\
+enthalten (neben einen kleinem Demo) nur Makro-Defini-\
+tionen. Die Files enthalten reichlich Kommentar, so\
+da\'df eine genaue Beschreibung nicht n\'f6tig ist.\
+\
+GRAFLIB.SRC enth\'e4lt Makros die \'e4hnlich den BASlC-Be-\
+fehlen GRAPHICS, COLOR, PLOT und DRAWTO arbeiten. Ein\
+Demo k\'f6nnen Sie sich ansehen, wenn Sie GRAFLIB.SRC\
+laden, assemblieren und mit dem Monitor an der Adresse\
+$A800 starten.\
+\
+IOLIB.SRC enth\'e4lt Makros, die \'e4hnlich den BASIC-Be-\
+fehlen OPEN, CLOSE, PRINT und INPUT arbeiten, sowie\
+zwei weitere, BGET und BPUT, die Laden und Abspeichern\
+von bin\'e4ren Dateien erlauben. Auch hier ist ein\
+interessantes Demo enthalten, das Sie analog zur\
+Vorgehensweise bei GRAFLIB bekommen.\
+\
+In den Makro-Bibliotheken finden Sie Beispiele zur\
+Verschachtelung von Makros und zur \'dcbergabe von\
+String-Parametern. Verstehen Sie die beiden Files als\
+Anregung, was mit ATMAS-II machbar ist.\
+\
+Selbstverst\'e4ndlich sind Erweiterungen und Verbesse-\
+rungen Ihrer pers\'f6nlichen Intuition \'fcberlassen.\
+\
+************************************\
+* 	GRAFLIB.SRC\
+*\
+* 	Makro-Bibliothek\
+*\
+* 	GRAPHIK\
+*\
+*	Fuer ATMAS-II\
+*			PETER FINZEL\
+************************************\
+*\
+* IOCB-Struktur:\
+*\
+ICCOM	EQU $342\
+ICSTA	EQU $343\
+ICBAL	EQU $344\
+ICBAH	EQU $345\
+ICBLL	EQU $348\
+ICBLH	EQU $349\
+ICAX1	EQU $34A\
+ICAX2	EQU $34B\
+\
+CIOV	EQU $e456\
+\
+* CIO Befehl\
+\
+COPEN	EQU 3\
+CCLSE	EQU 12\
+CGTXT	EQU 5\
+CPTXT	EQU 9\
+CGBIN	EQU 7\
+CPBIN	EQU 11\
+CDRAW	EQU $11\
+\
+* ATARI Graphik-Variable\
+\
+ATACHR	EBU $2FB\
+ROWCRS	EBU $54		CURSOR-\
+COLCRS	EBU $55		POSITION\
+\
+*\
+* GRAPHICS-Befehl\
+*\
+* Aufruf: GRAPHICS <stufe>\
+*\
+* <stufe> 0 bis 15 (XLs)\
+*         0 bis 11 (400/800)\
+*\
+GRAPHICS MACRO STUFE\
+	JMP GR1@\
+\
+DEV@	ASC 'S:'\
+\
+GR1@	LDX #$60\
+	LDA #CCLSE	ZUERST KANAL 6\
+	STA ICCOM,X	SCHLIESSEN\
+	JSR CIOV\
+	LDA #STUFE	JETZT NEUE GRAPHIK\
+	STA ICAX2,X	STUFE ANWAEHLEN\
+	AND #$F0\
+	EOR #$10\
+	ORA #$0C\
+	STA ICAX1,X\
+	LDA #COPEN\
+	STA ICCOM,X\
+	LDA #DEV@\
+	STA ICBAL,X\
+	LDA #DEV@/256\
+	STA ICBAH,X\
+	JSR CIOV\
+	MEND\
+*\
+* Auswahl der Zeichenfarbe\
+*\
+* Aufruf: COLOR <farbe>\
+*\
+* <farbe> von 0 bis 255, je nach\
+* 	  Graphikmodus, muss eine\
+* 	  Konstante sein.\
+*\
+\
+COLOR	MACRO COL\
+	LDA #COL\
+	STA ATACHR\
+	MEND\
+\
+*\
+* Positionierung des Cursor:\
+*\
+* Aufruf: POSITION <x>,<y>\
+*\
+* <x>,<y> je nach Graphikmodus, beide\
+* 	  muessen Konstante sein\
+*\
+*\
+POSITION MACRO X,Y\
+	LDA #X\
+	STA COLCRS\
+	LDA #X/256\
+	STA COLCRS+l\
+	LDA #Y\
+	STA ROWCRS\
+	MEND\
+\
+* Graphik-Punkte setzen\
+*\
+* Aufruf: PLOT <x>,<y>\
+*\
+* <x>,<y> je nach Graphikmodus,\
+* 	  muss sich um Konstante\
+* 	  handeln\
+*\
+PLOT	MACRO X,Y\
+	POSITION X,Y\
+	LDX #$60	KANAL 6\
+	LDA #CPBIN\
+	STA ICCOH,X\
+	LDA #O\
+	STA ICBLL,X\
+	STA ICBLH,X \'b7\
+	LDA ATACHR\
+	JSR CIOV\
+	MEND\
+*\
+* Graphik-Linien Ziehen\
+*\
+* Aufruf: DRAWTO <x>,<y>\
+*\
+* <x>,<y> je nach Graphikmodus\
+* 	  Konstante\
+*\
+DRAWTO	MACRO X,Y\
+	POSITION X,Y\
+	LDX #$60	KANAL 6\
+	LDA #CDRAH\
+	STA ICCOM,X\
+	LDA #CCLSE\
+	STA ICAXl,X\
+	LDA #O\
+	STA ICAX2,I\
+	JSR CIOV\
+	MEND\
+\
+*************************************\
+* Demo-Programm f. Graphik-Bibliothek\
+*\
+* zeichnet Raute In GRAPHlCS 7\
+*************************************\
+\
+*\
+* befindet sich im reservierten\
+* Speicherplatz fuer Objektcode\
+*\
+	ORG $A800\
+\
+	GRAPHICS 7+16\
+	COLOR 1\
+	PLOT 79,0\
+	DRAWTO 159,47\
+	DRAWTO 79,95\
+	DRAWTO 0,47\
+	DRAWTO 79,0\
+\
+ENDLOS	JMP ENDLOS\
+*\
+* Abbruch mit <RESET>\
+*\
+\
+***********************************\
+* 	IOLIB.SRC\
+*\
+* 	MAKRO-BIBLIOTHEK\
+*\
+* 	Input/Output\
+*\
+* 	fuer ATMAS-II\
+*\
+*		von PETER FINZEL\
+***********************************\
+\
+* IOCB-Konstante\
+\
+CIOV	EQU $E456\
+\
+ICCOM	EQU $342\
+ICSTA	EQU $343\
+ICBAL	EQU $344\
+ICBAH	EQU $345\
+ICBLL	EQU $348\
+ICBLH	EQU $349\
+ICAX1	EQU $34A\
+lCAX2	EQU $34B\
+\
+* CIO-Befehle\
+\
+COPEN	EQU 3\
+CCLSE	EQU 12\
+CGTXT	EQU 5\
+CPTXT	EQU 9\
+CBBIN	EQU 7\
+CPBIN	EQU 11\
+\
+EOL	EQU $9B\
+\
+*\
+* MAKRO ZUR BERECHNUNG DER KANALNUMMER\
+* (hat nur interne Verwendung, ist\
+*  Beispiel zur Verwendung von ver-\
+*  schachtelten Makroaufrufen)\
+*\
+KANNUM	MACRO KANAL\
+	LDA #KANAL	IOCB-Offset\
+	ASL 		;aus Kanalnr.\
+	ASL 		;(mal 16)\
+	ASL\
+	ASL\
+	TAX 		; ERGEBNIS IM X-REG\
+	MEND\
+\
+*\
+* Name     : OPEN\
+* Zweck    : oeffnen eines Files\
+* Aufruf   : OPEN <Num>,<Aux1>,<Aux2>,<Filename>\
+* Beispiel : OPEN 1,4,0,"D:TEST.DBJ"\
+*\
+OPEN 	MACRO KANAL,AUX1,AUX2,FILENAME\
+	JHP OP1*\
+FNAME	ASC FILENAME\
+	DFB EOL\
+0P1*	KANNUM KANAL\
+	LDA #AUXI\
+	STA ICAX1,X\
+	LDA #AUX2\
+	STA ICAX2,X\
+	LOA #COPEN\
+	STA ICCOM,X\
+	LDA #FNAME\
+	STA ICBAL,X\
+	LDA #FNAME/256\
+	STA ICBAH,X\
+	JSR CIOV\
+	MEND\
+*\
+* Name     : CLOSE\
+* Zweck    : File schliessen\
+* Aufruf   : CLOSE <Num>\
+* Beispiel : CLOSE 1\
+*\
+CLOSE 	MACRO KANAL\
+	KANNUM KANAL\
+	LDA #CCLSE\
+	STA ICCOM,X\
+	JSR CIOV\
+	MEND\
+\
+*\
+* Name	   : PRINT\
+* Zweck    : Ausgabe eines mit 'ASC'\
+* 	     definierten Textes, muss\
+* 	     mit EOL beendet werden\
+* Aufruf   : PRINT <Kanal>,<Label>\
+* Beispiel : PRINT 0,TEXT1\
+*\
+PRINT	MACR0 KANAL,LABEL\
+	KANNUM KANAL\
+	LDA #CPTXT\
+	STA ICCOM,X\
+	LDA #LABEL\
+	STA ICBAL,X\
+	LDA #LABEL/256\
+	STA ICBAH,X\
+	LDA #127	max. Laenge\
+	SRA ICBLL,X\
+	LDA #0\
+	STA ICBLH,X\
+	JSR CIOV\
+	MEND\
+\
+*\
+* Name 	   : PRINTS\
+* Zweck	   : direkte Ausgabe eines\
+* 	     Strings auf den Bildschirm\
+* Aufruf   : PRINT <String>\
+* Beispiel : PRINTS "HALLO"\
+*\
+PRINTS	MACRO STRING\
+	JMP PR2@\
+PRI1@	ASC STRING\
+	DFB EOL\
+PR2@	PRINT 0,PRI1 	obiges Makro!\
+	MEND\
+*\
+* Name	   : INPUT\
+* Zweck    : String einlesen\
+* Aufruf   : INPUT <Kanal>,<Label>\
+* Beispiel : INPUT 0,TEXT1\
+*\
+INPUT	MACRO KANAL,LABEL\
+	KANNUM KANAL\
+	LDA #CGTXT\
+	STA ICCOM,X\
+	LDA #LABEL\
+	STA ICBAL,X\
+	LDA #LABEL/256\
+	STA ICBAN,X\
+	LDA #127	max. Laenge\
+	STA ICBLL,X\
+	LDA #0\
+	STA ICBLH,X\
+	JSR CIOV\
+	MEND\
+*\
+* Nanme     : BGET\
+* Zweck    : Einlesen eines Datenblockes\
+* 	     der Laenge L ab Adresse A\
+* Aufruf   : BGET <Num>,<L>,<A>\
+* Beispiel : BGET 1,$B000,$100\
+*\
+BGET	MACRO KANAL,LAENGE,BUFFER\
+	KANNUM KANAL\
+	LDA #CGBIN\
+	STA ICCOM,X\
+	LDA #LAENGE\
+	STA ICBLL,X\
+	LDA #LAENBE/256\
+	STA ICBLN,X\
+	LDA #BUFFER\
+	STA ICBAL,X\
+	LDA #BUFFER/256\
+	STA ICBAN,X\
+	JSR CIOV\
+	MEND\
+\
+* Name    : BPUT\
+* Zweck	  : Speichern eines Datenblockes\
+* 	    der Laenge L ab Adresse A\
+* Aufruf  : BPUT <Num>,<L>,<A>\
+* Beispiel: BPUT l,$B000,$100\
+*\
+BPUT	MACRO KANAL,LAENGE,BUFFER\
+	KANNUM KANAL\
+	LDA #CPBIN\
+	STA ICCOM,X\
+	LDA #LAENGE\
+	STA ICBLL,X\
+	LDA #LAENGE/256\
+	STA ICBLH,X\
+	LDA #BUFFER\
+	STA ICBAL,X\
+	LDA #BUFFER/255\
+	STA ICBAH,X\
+	JSR CIOV\
+	MEND\
+\
+**********************************\
+* Demo-Programm I/0-Bibliothek\
+* zeigt inhaltsverzeichnis des\
+* Laufwerks 1 an.\
+**********************************\
+\
+	ORB $A800\
+	PRINTS "Inhaltsverzeichnis Laufwerk 1:"\
+	OPEN 1,6,0,"D1:*.*"\
+\
+NEXT	INPUT 1,BUFFER		Dir-Zeile einlesen\
+	BMI ENDE		End of File?\
+	PRINT 0,BUFFER		und ausdrucken\
+	JMP NEXT		naechste Zeile\
+\
+ENDE	CLOSE 1			Fertig!\
+	RTS\
+\
+BUFFER ORG *+20			Platz freihalten\
+\
+**********************************\
+* START DES DEMOS:\
+* Mit <CTRL>-Y assemblieren,\
+* Monitor mit <CTRL>-P aktivieren\
+* und mit 'G'oto A800 starten.\
+**********************************\
+\
+Anhang A ATMAS-II Memory-Map\
+============================\
+\
+0000 \'97 007F:	Betriebssystem-Zeropaqe\
+0080 \'97 0085:	*** frei f\'fcr Benutzer ***\
+0086 \'97 00DF:	Editor/Monitor Zeropage\
+00E0 \'97 00FD:	Assembler\'97Zeropage, aber benutzbar\
+		(wird von ATMAS\'97II gel\'f6scht)\
+00FE \'97 047F:	Stack, Vektoren, IOCBs ...\
+0480 \'97 05FF:	*** frei f\'fcr Benutzer ***\
+0600 \'97 06FF:	*** frei (PAGE 6) ***\
+0700 \'97 <LOMEM>:	DOS, <LOMEM> DOSII:=$1F00\
+			     DOSXL:=$2700\
+<LO> \'97 27FF: 	*** frei f\'fcr Benutzer ***\
+2800 \'97 4AFF: 	ATMAS-II\
+4800 \'97 4BFF: 	Zeilenbuffer\
+4C00 - 5FFF: 	Symboltabelle\
+6000 \'97 63FF: 	Kopierregister\
+6400 \'97 A7FF: 	Textbuffer\
+A800 - <MEMTOP>:*** frei f\'fcr Benutzer ***\
+<ME> \'97 BFFF:	Display-List, Screen-RAM\
+\
+F\'fcr Objektcode stehen Ihnen mehrere Bereiche zur Ver-\
+f\'fcgung:\
+\
+A) $600 bis $6FF: die ber\'fchmte Page 6, besonders ge-\
+eignet, wenn Sie USR-Programme f\'fcr BASIC schreiben\
+wollen.\
+\
+B) $1F00 bis $27FF: dieser Bereich geht von der DOS-\
+Obergrenze (die in <LOMEM>, $2E7-$2E8 zu finden ist)\
+bis zum Beginn des ATMAS-II Programmes. Das die DOS-\
+Obergrenze von DOS zu DOS verschieden ist, m\'fcssen Sie\
+hier etwas vorsichtig sein, wenn Sie das Standard\
+DOS-II verwenden, dann beginnt dieser Bereich bei\
+$1F00\
+\
+C) $A800 bis $BC3F: Standard-Bereich f\'fcr Objekt-Code,\
+reicht bis zum Anfang des Bildschirmspeichers (bzw.\
+der Display-List).\
+\
+Zus\'e4tzlich besteht die M\'f6glichkeit, den Speicherplatz\
+der Symboltabelle ($4C00\'97$5FFF) nach dem Assemblieren\
+als Platz f\'fcr Felder, Zeichens\'e4tze oder als Player-\
+Missile-Bereich zu n\'fctzen. Die Symboltabelle wird\
+schlie\'dflich nach der Assemblierung nicht mehr be-\
+n\'f6tigt.\
+\
+Anhang B: Fehlermeldungen\
+=========================\
+\
+1. Assembler\'97Fehlermeldungen:\
+-----------------------------\
+\
+SYNTAX ERROR:	Formatfehler, z.B. wenn Zeilennummer\
+		verwendet, oder Label beginnt mit Ziffer,\
+		Zeile besteht nur aus Tabulator oder Space\
+\
+NAME UNKNOWN: 	Fehler im Befehlsfeld: z.B. SRA statt STA\
+\
+UNDEFINED EXPRESSION: Fehler im Operantenfeld. Tritt bei\
+		fehlerhaften arith. Ausdr\'fccken und nicht\
+		definierten Labels auf.\
+\
+ADDRESSING ERROR: Adressierungsart pa\'dft nicht zum\
+		Befehl, z.B STA #$6FF\
+\
+IMPOSSIBLE BRANCH: Verzweigungsbefehle (BNE, BCS...)\
+		reichen nur +127 bzw. -128 Bytes weit\
+		JMP verwenden!\
+\
+DIVISION BY ZERO: Divison durch Null, z.B. LDA #100/0\
+\
+NUMBER-ERROR:	Fehler in der Zahlendarstellung,\
+		z.B. LDA #%30\
+\
+WRONG DELIMITER: Trennzeichen bei ASC-Befehl falsch oder\
+		unterschiedlich. <SHIFT>-2 verwenden!\
+\
+NO ASCII: 	ASCII-Zeichen nach Zeichen-Konstante\
+		fehlt, z.B. LDA #'<RETURN>\
+\
+LINE TO LONG: 	eine Zeile darf nicht l\'e4nger als 127\
+		Zeichen sein.\
+\
+MACRO ERROR:	Fehler in der Makro-Definition bzw. im\
+		Makro-Aufruf (Parameter)\
+\
+ORG ERROR:	Fehler in der ORG-Direktive (z.B. ORG fehlt)\
+\
+TOO MANY LABELS: Symboltabelle ist voll\
+\
+OPCODE DIFFERENT: Pass 3 erkennt anderen Opcode als\
+		Pass 2, z.B. wenn sich das Programm durch\
+		zweiten, fehlerhaften ORG-Befehl selbst\
+		\'fcberschreibt.\
+\
+2. Editor-Fehlermeldungen:\
+--------------------------\
+RW : Fehler bei Disk-Ein/Ausgabe\
+CO : Kommandozeile zu lang\
+E? : Fehler in Kommandozeile\
+H? : fehlerhaftes Hex-Byte\
+I? : Textbuffer ist voll (T:00000)\
+L? : Ger\'e4tefehler bei Listingausgabe\
+S? : String nicht gefunden (Suchfunktion)\
+T? : falscher Tabulator-Wert (nur 1-9)\
+C? : Kopier-Register ist voll (C:00000)\
+#? : Wiederholungsfaktor ist falsch (nur 2-255)\
+OK : Es liegt kein Fehler vor, C-Reg. geschlossen\
+CR : Kopier-Register ist offen\
+\
+3. Monitor\'97Fehlermeldungen:\
+---------------------------\
+ADR ERROR: fehlerhafte Adresse beim Laden oder\
+	   Speichern eines Programmes. Tritt der\
+	   Fehler bei LDAD-Befehl auf, so ist das\
+	   gew\'fcnschte File nicht im Bin\'e4rformat (z.B.\
+	   ein Text\'97File).\
+\
+FEHLERCODE: <80-FF>: Betriebssytemfehler, laut DOS-\
+	    Handbuch. Fehlernummern sind hexadezimal.\
+\
+ATMAS-II REFERENZKARTE\
+======================\
+\
+EDITOR-BEFEHLE im Textmodus\
+---------------------------\
+<CTRL>-E : Cursor an den Tgxtanfang\
+<CTRL>-D : Cursor an_das Textende\
+<CTRL>-R : Kopier-Register \'f6ffnen\
+<CTRL>-F : Kopier-Register schliessen\
+<CTRL>-J : Kopierregister in Text einsetzen\
+<CTRL>-K : Kopierregister l\'f6schen\
+<CTRL>-V : Umschalten 1-Zeilen und 2-Zeilenmodus\
+<CTRL>-T : Umschaltung Control-Zeichendarstellung\
+<CTRL>-G : Wiederholung der Kommandozeile\
+<CTRL>-Y : Aufruf des ATMAS-II Makroassemblers\
+<CTRL>-P : Aufruf des Maschinensprache-Monitors\
+\
+EDITOR-BEFEHLE der Kommandozeile\
+--------------------------------\
+B 	 : Cursor eine Position zur\'fcck\
+F 	 : Cursor eine Position vorw\'e4rts\
+D 	 : Zeichen links vom Cursor l\'f6schen\
+T 	 : Von Cursorposition bis Zeilenende l\'f6schen\
+H<Hexbyt>: beliebigen ASCII\'97Code in den TEXT einf\'fcgen\
+S<String>: Sucht nach Zeichenkette (String)\
+I<String>: Zeichenkette (String) in Text einsetzen\
+J 	 : wiederholt Kommandozeile\
+K 	 : L\'f6scht Textbuffer\
+U 	 : User-Befehl, startet Maschinenpgm ab $A800\
+@<n> 	 : Setzt Tabulatorweite auf <n> Zeichen\
+M 	 : R\'fcckkehr zum DOS\
+E 	 : L\'f6scht Kopier-Register\
+\
+G	 : Kopier-Register in Text einf\'fcgen\
+N<D:FN>  : Text ab Cursorposition unter <FN> speichern\
+R<D:FN>	 : Text ab Cursorposition von File <FN> lesen\
+L<0,1,2> : Listing des Quelltextes ausgeben (1:=Drucker)\
+\
+ASSEMBLER-DIREKTIVEN:\
+---------------------\
+ORG	 : Anfangsadresse Qbjektcode festlegen\
+EQU	 : Konstanten definieren\
+EPZ	 : Zeropagekonstante definieren, nicht obligatorisch!\
+DFB	 : Byte-Werte in Objektcode einf\'fcgen\
+DFW	 : Wort-Werte in Objektcode einf\'fcgen\
+ASC	 : Texte in ASCII und Bildschirmcode ablegen\
+OUT	 : Kontrolle des Ausgabelistings\
+MACRO : Einleitung der  Makrodefinition\
+MEND	 : Abschlu\'df der Makrodefinition\
+\
+MONITOR-BEFEHLE:\
+----------------\
+M	 : Memory-Dump-Befehl\
+D	 : Disassemblieren\
+C	 : Change-Memory, Speicher editieren\
+F	 : Fill memory, Speicherblock mit Wert f\'fcllen\
+B	 : Blocktransfer\
+G	 : Goto, Maschinenprogramm starten\
+S	 : Binary-Save, Maschinenprogramm speichern\
+L	 : Binary-Load, Maschinenprogramm laden\
+E	 : R\'fcckkehr zum Editor\
+I	 : Inhaltsverzeichnis Laufwerk 1 anzeigen\
+\
+}

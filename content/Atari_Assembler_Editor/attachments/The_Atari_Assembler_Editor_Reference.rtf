@@ -1,0 +1,1185 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21840\viewh19420\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs34 \cf2 \expnd0\expndtw0\kerning0
+\
+                        The Atari Assembler Editor Reference\
+                        By Matthew J. W. Ratcliff\
+                        Released 20-NOV-89\
+\
+\
+          I teethed on the Atari Assembler Editor (Asm/Ed) cartridge way\
+          back in 1982.  Now, nearly seven years later, it is becoming more\
+          popular than ever.  Why?  Well, I have seen several mail order\
+          ads over the past year offering Asm/Ed for only $10 or even as\
+          little as $5.  Here's the hitch, no documentation.  A lot of\
+          Atari cartridges were left over from the Warner days, when the\
+          Tramiel family took over the company.  It seems that thousands of\
+          cartridges were sold "by the pound", with no boxes or\
+          documentation, just to clear out the warehouses.  Now many of you\
+          Atarians have decided that Asm/Ed was too good to pass up at such\
+          a low price, because you just know that someday you will learn\
+          assembly language programming.\
+           \
+          This article is for you, the Atarian who took the plunge and\
+          bought the Asm/Ed cartridge without documentation.  I won't\
+          pretend to teach you how to write your own assembly language\
+          programs (although I'm bound to toss in a bit of free advice\
+          along the way), our Boot Camp series will do that job well\
+          enough.  I hope to give you a quick comparison between BASIC and\
+          assembly language, to illustrate the major speed differences.  I\
+          will also cover the mechanics of writing a USR routine to help\
+          speed up BASIC programs and a stand alone assembly program that\
+          may be executed from DOS.\
+           \
+          The Asm/Ed cartridge will work with any DOS (disk operating\
+          system) from Atari DOS 2.0s all the way through DOS-XE and even\
+          the SpartaDOS X cartridge.  The Asm/Ed cartridge itself is made\
+          up of three basic components, the Editor, Assembler, and\
+          Debugger.  I will present a quick reference for all the commands\
+          of each section of the cartridge, and then lead you through the\
+          creation of your first program.\
+           \
+          After booting your Atari with Asm/Ed installed, and control is\
+          sent to the cartridge, the EDIT prompt will appear.  From here\
+          you can begin entering your assembly "source code", with line\
+          numbers, assembly mnemonics, and comments.  The editor is line\
+          oriented, requiring line numbers.  They are used for reference\
+          while editing only, and are not used as part of the program\
+          itself, as in BASIC.\
+           \
+                                       Editor\
+                                           \
+                                         NEW\
+           \
+          The NEW command clears all assembly source code from memory,\
+          providing a clean slate for entry of a new program.  NEW will\
+          irrevocably erase your program from memory, so always be certain\
+          to save important code before using this command to start\
+          something else.  I highly recommend using a comment as the first\
+          line of every program, similar to the following:\
+           \
+               10 ;LIST#D:USRTEST1.ASM\
+\
+          It is easy to forget what file you are working on, or make a\
+          typographical error when using the LIST command.  Saving a file\
+          to the wrong place can ruin a lot of work in a big hurry.  By\
+          placing the LIST command, followed by the correct file name, in a\
+          comment, you may simply displasy that line and use the full\
+          screen editor to eliminate the line number and comment character\
+          (the semicolon), press RETURN, and execute the proper save\
+          command every time.  This good habit has saved me countless hours\
+          of frustration.  Use it!\
+           \
+                                         DEL\
+           \
+          This command DELetes lines of code.  The format is:\
+           \
+               DEL xx    - Delete line xx from the program.\
+               DEL xx,yy - Delete lines xx through yy from the program.\
+           \
+                                         NUM\
+           \
+          NUMber lines automatically, for fast entry of source code.  If no\
+          starting number is specified, the program begins with the last\
+          line number currently in your program, plus 10.  Type your code\
+          and comments, pressing RETURN when each line is complete.  Press\
+          RETURN only to stop auto-entry of code.  Do NOT use full screen\
+          editing functions to change lines previously entered, while still\
+          in the NUM mode.  This will give unpredictable results.  The\
+          command format follows:\
+           \
+               NUM       - Increments by the number 10 after each line.\
+               NUM nn    - Begin line entry at line nn,increment by 10.\
+               NUM nn,mm - Forces the next statement number to be nn and\
+               the increment to be mm.\
+           \
+          The last command format may be used to insert new lines between\
+          code that already exists (e.g. NUM 11,1 to enter up to 9 lines of\
+          code between lines 10 and 20).\
+           \
+                                         REN\
+           \
+          RENumber the file.  It will resequence all the line numbers of\
+          the source file.  The command format is below:\
+           \
+               REN            - Renumber starting with 10, increment by 10.\
+               REN nn         - Renumber in icrement of nn, start with 10.\
+               REN nn,mm      - Renumber by nn, starting with mm.\
+           \
+          You might think that you can load a LISTed BASIC program, and use\
+          this to renumber it.  In fact you can, except that all the GOTO\
+          and GOSUB statements will not be resolved.  For very small BASIC\
+          programs you can do this, but you are better off using a renumber\
+          utility.  When inserting a lot of new code, REN may be used to\
+          space the line numbers wide apart, thus allowing entry of more\
+          new code with the NUM entry method between consecutive lines of\
+          source code.  This is a bit archaic by today's standards, but\
+          works well.  Should you move on to IBM PC based assemblers, or\
+          other sophisticated machines, you will find no such animal as a\
+          line number.  You simply create and edit your source code in a\
+          word processor like environment.  The assembler can easily\
+          resolve all the source code and labels without the need for those\
+          pesky line numbers.  Asm/Ed and Mac/65 users must continue to\
+          deal with them, however.\
+           \
+                                        FIND\
+           \
+          The FIND command can be used to help locate any string of text\
+          anywhere in the program.  This is the command format:\
+           \
+               FIND/THIS/     - Find the first occurrence of the characters\
+               "THIS", and display the line it is found on.\
+               FIND/THIS/A    - Find all occurrences of "THIS".  Each line\
+               is listed to the display as it is located.  Pressing\
+               control-1 will throttle screen scrolling.\
+               FIND/THIS/xx   - Find the string "THIS" on line number xx.\
+               The line is listed, if found.\
+               FIND/THIS/xx,yy,A - Find all occurrences of "THIS" from\
+               lines xx through yy, inclusive.\
+           \
+          Note that when searching, the line numbers themselves are ignored\
+          (you don't search the line numbers, when looking for a particular\
+          number).  In the examples above the string of interest was\
+          delimited by the slash (/) character.  Any matched pair of\
+          characters may be used as delimeters.  The following would be\
+          used to find all occurrences of the slash character in your\
+          program:\
+           \
+                                     FIND */*,A\
+           \
+                                         REP\
+           \
+          REPlace strings in the file:\
+           \
+               REP/OLD/NEW/   - Replace the first occurrence of "OLD" with\
+               "NEW".\
+               REP/OLD/NEW/,A - Replace ALL occurrences of "OLD" with\
+               "NEW".  Use the All option with care.\
+               REP/OLD/NEW/xx,yy - Replaces the first occurrence of "OLD"\
+               with "NEW", in the line number range xx to yy.\
+               REP/OLD/NEW/xx,yy,A - Replace all occurrences of "OLD" by\
+               "NEW" in lines xx through yy.\
+               REP/OLD/NEW/xx,yy,Q - Replace with query.  You will be\
+               prompted to press Y for each replace.\
+           \
+                                    File Commands\
+           \
+          The following commands may all be associated with files:\
+           \
+               LIST           - Display or save lines of source code\
+               PRINT          - Same as list but omit line numbers\
+               ENTER          - Retrieve source program\
+               SAVE           - Save an object program (assembled code)\
+               LOAD           - Load an object program\
+           \
+          In BASIC filenames are enclosed by quotes, such as\
+          SAVE"D:MYFILE.BAS".  In Asm/Ed the filename is preceded by the\
+          pound sign (#); no quotes are used.  Filenames you may use are\
+          shown here:\
+           \
+               #E:            - The screen editor, used by default with\
+               some commands such as LIST.\
+               #P:            - Refers to the printer.\
+               #C:            - This is used in reference to the Atari\
+               program recorder.\
+               #Dn:filename.ext - This is a disk file.  The 'n' refers to\
+               drive number, which may be from 1 to 8, depending on the DOS\
+               and drive configuration you employ.  If no drive number is\
+               specified, drive number 1 is defaulted.  The name of the\
+               file may be up to 8 alphanumeric characters, followed by a\
+               period and optional 3 character extender.  The extender may\
+               be anything you wish.  ASM or SRC is generally used for\
+               assembly source files, and OBJ or COM for executable object\
+               files.\
+           \
+                                        LIST\
+           \
+          The LIST command is used to display, print, or save to a file\
+          assembly source code.  The formats are:\
+           \
+               LIST           - List the entire program to the screen.\
+               LIST nn,mm     - Display lines nn through mm.\
+               LIST #P:       - Print the entire source program.\
+               LIST #C:       - List the source code to cassette.\
+               LIST #D:FL.ASM - List the entire program to FL.ASM on disk\
+               drive number 1.\
+               LIST #D:FT.SRC,10,100 - List lines 10 through 100 to file\
+               FT.SRC.\
+           \
+          Any filename or device specification may be followed by the line\
+          number range specification.  The PRINT command functions exactly\
+          like LIST, except that the line numbers are not output.  Since\
+          assembly source files REQUIRE line numbers, it won't be very\
+          useful to PRINT your program to disk and attempt to ENTER it\
+          later.  This would hopelessly confuse Asm/Ed; always LIST source\
+          code to disk.\
+           \
+                                        ENTER\
+           \
+          The ENTER command is used to retrieve a previously LISTed source\
+          file.  A valid input device must be specified such as:\
+           \
+               ENTER#D:MYFILE.ASM\
+               ENTER#C:\
+\
+          If you wish to merge a program, append a ",M" to the ENTER\
+          command, such as:\
+           \
+               ENTER #D:ROUTINES.ASM,M\
+           \
+          This merge works the same as the following sequence would in\
+          Atari BASIC:\
+           \
+               LOAD "D:MYPROG.BAS"\
+               ENTER "D:NEWSUBS.LST"\
+           \
+          The lines are merged.  If any line numbers in the file to be\
+          merged match those of the file already in memory, the merge file\
+          takes precedence.  If you wish to append a file to a current\
+          working program it may be best to ENTER the merge file first,\
+          RENumber it with some large range such as 20000,1 and then LIST\
+          it out to a temporary file.  Then ENTER your main program, and\
+          finally enter with the merge option this renumbered file.\
+           \
+                                        SAVE\
+           \
+          Use the SAVE command to write a block of memory, such as an\
+          object program, to a file.  Let's say your program begins at\
+          $4000 (with an *=$4000 at the top of your assembly code).  After\
+          the ASM command, you see the final address was $41FE.  Then, to\
+          create a binary image of this file, which may be loaded and run\
+          later, enter the following command:\
+           \
+               SAVE #D:MYFILE.OBJ < 4000,41FE\
+           \
+          Note that the addresses are always assumed to be in hexadecimal,\
+          and you do not specify a dollar sign ($) to indicate this on the\
+          SAVE command line.  You may also SAVE to the cassette (#C:).\
+          With the proper ASM command, your object files may be created\
+          automatically, as we will see.  Note that you may assemble your\
+          program in memory, and then go to DOS and use the DOS memory save\
+          command to create this object file as well.  (The advantage of\
+          the DOS memory save command is that you can specify the RUN\
+          address as well, so that your program automatically executes when\
+          you perform a binary load.  There are ways to set this up with\
+          the ASM command as well.)\
+           \
+                                         ASM\
+           \
+          Once you have created your assembly source code and LISTed it to\
+          a file for safe keeping, it is time to assemble it.  This is\
+          Asm/Ed's primary function, to convert your source code into\
+          executable object code.  When you issue the ASM command, the\
+          current file in memory is scanned for syntax errors.  If it\
+          understands all your source code, all the assembly mnemonics are\
+          converted into equivalent binary codes and written to memory or a\
+          file.\
+\
+          Care must be taken that your code assembles to an area of memory\
+          which does not conflict with your source code.  Before assembling\
+          a program for the first time always enter the SIZE command.\
+          Three hexadecimal numbers will be displayed, such as:\
+           \
+               10F4      1345      9C1F\
+           \
+          The first number indicates where in memory your source code\
+          begins, just above DOS's basic memory requirements.  The second\
+          number is where, in memory, your source code ends.  The final\
+          address is the top of useable RAM.  At the top of your program\
+          will always be a statement similar to the following:\
+           \
+               0  *=$4000\
+           \
+          This tells the assembler to start building your object code at\
+          memory location 4000 hexadecimal, the program origin.  This\
+          address may be any number between the second and third numbers\
+          reported by the SIZE command, with some notable limitations, when\
+          assembling to memory.  It may be any value above the first\
+          number, so long as you assemble to a file.\
+           \
+          If you wish for your program to assemble into lower memory, you\
+          may use the LOMEM command.  This must be the first command\
+          entered, once you start up Asm/Ed and receive the EDIT prompt.\
+          The format is: LOMEM xxxx, where xxxx is the hexadecimal address\
+          to set the new low memory value.  This is the first address value\
+          reported by the SIZE command detailed above.  For example, if you\
+          want your program to load at address $2400, and you know the\
+          object code will be 4K or less, then use LOMEM $3400 ($1000 is 4K\
+          bytes).  Then ENTER your program, and use *=$2400 at the top of\
+          the file to set the origin.  Then the program may be assembled in\
+          RAM to RAM safely, so long as your object code does not grow\
+          beyond 4K.\
+           \
+          If you plan to write stand alone assembly programs, which may be\
+          loaded from DOS with the binary 'L'oad command, I recommed an\
+          origin of $3400.  This will set the start address of your code\
+          above both DOS.SYS and DUP.SYS RAM in Atari DOS, any version\
+          through DOS-XE, as well as any version of SpartaDOS.\
+           \
+          Unlike BASIC, you must manage memory yourself.  If your program\
+          origin is too close to the second number from the size command\
+          the assembler may get confused.  The assembler must build a\
+          symbol table and assign some temporary storage as it processes\
+          your source code.  It starts building this information from the\
+          end of your source code, and grows upward.  If the symbol table\
+          runs into the area where the object code is being stored in RAM,\
+          the assembler is likely to generate a lot of erroneous PHASE\
+          errors.  If your origin is set too high, your object code will\
+          run into display memory and eventually out of room.\
+           \
+          These problems may be avoided in several ways.  The general form\
+          of the ASM command is:\
+\
+                          ASM #D:SOURCE, #D:LIST, #D:OBJECT\
+           \
+          The first filename in the ASM command represents the file your\
+          assembly source code is stored in.  This allows you to assemble\
+          from disk (but not cassette, since Asm/Ed requires multiple\
+          passes through the file).  If this field is empty (simply place a\
+          comma immediately after the ASM command), then the source code is\
+          assumed to be in memory.  The second filename specifies a listing\
+          file, where a complete "assembled listing" is routed.  This will\
+          usually be the printer (#P:).  If this field is left empty, the\
+          listing goes to the screen.  The listing always goes somewhere;\
+          it cannot be turned off as it can in Mac/65.  However, assembler\
+          "directives" may be used to control the output of a listing, as\
+          we shall see.  The third field is the filename where the object\
+          code will be stored.  If this field is not specified, your\
+          program is assembled to memory.  Always make a current listing of\
+          your program on disk or cassette before issuing the ASM command.\
+          If you have set up memory mapping improperly, the source code\
+          will get clobbered in a big hurry.\
+           \
+                                Assembler Directives\
+           \
+          Directives, or pseudo operations (pseudo-ops), are special\
+          instructions to the assembler.  They can be used to control\
+          listing format, program title for listing, allocation of memory,\
+          and more.  In general, assembler directives begin with a period\
+          (.), followed by some key word and associated parameters.\
+           \
+                                         OPT\
+           \
+          The OPTions directive controls assembler output.  They are as\
+          follows:\
+           \
+               .OPT NOLIST    - Suppress output of listing during assembly.\
+               .OPT LIST      - Output assembly listing, default.\
+                \
+               .OPT NOOBJ     - Do not generate any object code during\
+               assembly.\
+               .OPT OBJ       - Output object code, default.\
+                \
+               .OPT NOERR     - Do not display error messages while\
+               assembling.  There is no good reason to ever use this\
+               option.\
+               .OPT ERR       - Display error messages when assembling,\
+               default.\
+                \
+               .OPT NOEJECT   - Do not skip 4 lines at the bottom of each\
+               page, when outputting the listing.\
+               .OPT EJECT     - Skip 4 lines at the end of each page,\
+               default.\
+           \
+          More than one option may be placed on a single line, such as .OPT\
+          NOLIST,NOOBJ.  Note that the Mac/65 assembler defaults to .OPT\
+          NOOBJ; it does not generate object code unless explicitly told to\
+          with the .OPT OBJ directive.  Asm/Ed is just the opposite.\
+          Whenever you are assembling your program frequently, working out\
+          syntax and undefined label errors, it is generally wise to have a\
+          .OPT NOOBJ near the top of your program.  When you are ready to\
+          generate code and start test running it, then change it back to\
+          .OPT OBJ.\
+           \
+                                   Title and Page\
+           \
+          The title and page directives are designed to make your assembly\
+          listings easier to read.  The title directive is generally used\
+          to specify the name of your program, revision, and date.  The\
+          page directive can be used to force a page break and optionally\
+          output some text.  For example:\
+           \
+               10 .TITLE "Attack Of The Killer Dweebies, Version 1.0"\
+               20 .PAGE "Program equates"\
+               ...\
+               ...\
+               200 .PAGE "Graphics Routines"\
+               ...\
+               ...\
+               300 .PAGE "High Score Routine"\
+           \
+                                         Tab\
+           \
+          The TAB directive is used to set the spacing of the fields of\
+          your assembly code for listings.  The command format is:\
+           \
+               10  .TAB 12, 17, 27\
+           \
+          The above example illustrates the defaults used by Asm/Ed.  These\
+          may be set to any position you find most suitable for your\
+          printer listings.  The first number indicates the field where the\
+          mnemonics (assembly opcodes) will appear, the second for the\
+          operands, and the third for the comment field.  For example,\
+          suppose your program has a lot of long labels with a maximum of\
+          15 characters.  Then you may wish to set the tabs as follows:\
+           \
+               10  .TAB 20, 25, 40\
+           \
+          which would make for a prettier listing on the printer.\
+           \
+                                BYTE, DBYTE and WORD\
+           \
+          The BYTE, DBYTE, and WORD directives are used to reserve storage\
+          in memory, similar to variables in BASIC.  Labels may be\
+          associated with these directives for easy reference.  For\
+          example:\
+           \
+               100  LDA STORAGE\
+               110  LDX STORAGE+1\
+               ...\
+               500 STORAGE .BYTE 34, $45\
+           \
+          In the above the statement at line 100 will fetch the first value\
+          at location STORAGE, which is the number 34 following the BYTE\
+          directive.  In line 110 the X register will receive the data\
+          value 45 hexadecimal.  Note that the assembler will perform the\
+          address arithmetic "STORAGE+1" automatically.  The BYTE directive\
+          may also be used to reserve storage for strings, such as:\
+           \
+               100  LDA #STRING/$100\
+               110  LDX #STRING&$FF\
+               ...\
+               320 STRING .BYTE "This is a test", 155\
+           \
+          In line 320 the BYTE directive reserves storage for a string\
+          initialized to "This is a test" followed by a 155 (ATASCII\
+          carriage return).  The code in lines 100 and 110 fetches the\
+          address of the label STRING, placing its address high byte in A\
+          and low byte in X.  This technique will be commonly used to pass\
+          the address of data collections (such as strings or data tables)\
+          to subroutines.\
+           \
+          The DBYTE directive reserves two consecutive memory locations,\
+          generally used for numbers greater than 256, in high byte, low\
+          byte order.  For example:\
+           \
+               1000 DATA .DBYTE 258\
+           \
+          The above will result in two bytes of memory being reserved at\
+          location DATA, with the values 1 and 2 respectively (1*256 + 2\
+          equals 258).  Addresses are stored in low byte, high byte format\
+          as expected by the 6502 microprocessor.  The WORD directive is\
+          used for this, such as:\
+           \
+               100  *=$3400\
+               110 START LDA #45\
+               ...\
+               290  RTS        ;End of program\
+               300  *=$2E0\
+               310  .WORD START\
+           \
+          In line 100 the origin of the program, or program counter, is set\
+          to 3400 hexadecimal.  The first line of code, with the label\
+          START, will then be assembled into your computer's memory at\
+          $3400.  At line 300 the program counter is reset to $2E0.  At\
+          line 310 we have the WORD directive, immediately followed by the\
+          label START.  The assembler will "backtrack" as it processes your\
+          source code, realize that START refers to memory location $3400,\
+          and place this value (low byte, high byte sequence) in memory at\
+          $2E0, $2E1 respectively.  This is a special location, $2E0,\
+          commonly referred to by name as RUNAD in Atari memory maps.  When\
+          you assemble a program to disk, which will be loaded and run from\
+          DOS, you use the above technique to set the run address of your\
+          program.  When the program ends with an RTS, control is returned\
+          to DOS.  Most game programs do not end, but you will use this\
+          technique for many utilities.  As we will see later, a BRK\
+          instruction is used, instead of RTS, when testing programs from\
+          Asm/Ed's debugger.\
+           \
+                                   Label Directive\
+           \
+          You do not have string, integer, and floating point variables in\
+          assembly language, the way you do with Atari BASIC.  As we saw\
+          above, you must set up your own storage and interpret it\
+          properly.  There are no automatic mechanisms in assembly language\
+          for managing variables.  To make life easier, you will want to\
+          attach meaningful labels to constant values, such as:\
+           \
+               10 RUNAD = $2E0\
+               ...\
+               1000  *=RUNAD\
+               1010  .WORD START\
+           \
+          It is much easier to tell from this example that the intended run\
+          address of our program is defined at the label START.  In the\
+          previous example for the WORD directive, we simply had the number\
+          $2E0.  Unless you want to memorize a lot of memory locations,\
+          employ meaningful labels wherever practical.\
+           \
+          Labels are used for reference when you want to GOTO (JMP) or\
+          GOSUB (JSR) in assembly language.  For example:\
+           \
+               10 PROMPT .BYTE "PRESS RETURN TO CONTINUE",155\
+               ...\
+               100  LDA #PROMPT/$100\
+               110  LDX #PROMPT&$FF\
+               120  JSR PRINTSTRING\
+               ...\
+               500 PRINTSTRING STA ICBADR+1 ;Print the string pointed to\
+               510  STX ICBADR              ;by A  & X registers\
+               ...\
+           \
+          Labels may also be used in branch instructions such as:\
+           \
+               50 CONTINUE LDA TABLE,X\
+               ...\
+               100  DEX     ; Decrement our loop counter, x register\
+               110  BEQ EXITLOOP\
+               120  BNE CONTINUE\
+               130 EXITLOOP STA RESULT\
+               ...\
+           \
+          In the above example we have set up a loop, similar to a BASIC\
+          FOR/NEXT loop, between the labels CONTINUE and EXITLOOP.  In line\
+          100 the X register is decremented by 1 (we assume it was\
+          initialized by some code previous to line 50).  If the result of\
+          the DEX instruction is zero (BEQ) then control will be passed to\
+          EXITLOOP.  If the X register has not gone to zero (BNE) the\
+          control is sent back up to CONTINUE.  As a result of DEX the zero\
+          flag can only be set (BEQ) or cleared (BNE), so we have exhausted\
+          the possibilities.  It would have been equally valid to use:\
+           \
+               120  JMP CONTINUE\
+           \
+          Generally, whenever you have the choice between a JMP and Bxx\
+          (branch) instruction, use the branch.  It will require less\
+          memory and work faster.  The problem is that a branch is limited\
+          to plus or minus about 127 bytes from the current position.  If\
+          you try to branch too far, you will get an assembly error.  Then\
+          JMP instructions, or combinations of JMP and branch instructions\
+          may be required.\
+           \
+                                  Origin Directive\
+           \
+          We have already used the "*=" directive in many of the previous\
+          examples.  This tells the assembler to "set the program counter\
+          to the following address".  The address may be some number, or a\
+          label, or some expression (so long as the assembler may resolve\
+          it to a fixed value).  Some examples are:\
+           \
+               100  *=$3400   ; Always a safe place to start a program\
+               ...\
+               300 START = $4400\
+               310  *=START\
+               ...\
+               500  *=START + 439\
+               ...\
+               600 HERE *=*+45     ; Reserve 45 bytes of storage at HERE\
+           \
+          Take note of the spacing used in all of our examples.  Any label\
+          always begins one space after the line number, referred to as the\
+          label field.  The opcode field begins at least one space after\
+          the start of the label field.  If a line of code has no label on\
+          it, then your assembly mnemonics may begin two spaces after the\
+          line number.  At least one space after the op code field will\
+          begin the operand field.  This field is optional since not all\
+          assembly mnemonics have an opcode (such as DEX, or INY).\
+          Anything after the operand field is ignored by the assembler, and\
+          assumed to be the comment field.  A comment can take up an entire\
+          line, when the label field begins with a semicolon.  Below is a\
+          sample line of code with all four fields:\
+           \
+                  LABEL OP    OPERAND COMMENT\
+                        CODE\
+               --|-----|-----|-------|------------------------------\
+               10 START LDA   #155    ;Get Carriage return character\
+           \
+                                    IF Directive\
+           \
+          The IF directive is used for "conditional assembly".  This may be\
+          used to enable, or disable the generation of some "test code",\
+          for example, based on the value of a number, label, or\
+          expression.  For example:\
+           \
+               10 DEBUG = 0 ;Enable my debugging test code\
+               ...\
+               300  .IF DEBUG @ENDOFDEBUG\
+               310 ; Debugging test routines start here\
+               ...\
+               500 ENDOFDEBUG ; End of debugging code\
+           \
+          If the expression (DEBUG above) is equal to zero, then everything\
+          from the line following the IF directive to the specified label\
+          (ENDOFDEBUG) is assembled.  When you are satisfied that your code\
+          works, don't throw away all that useful testing code.  Simply\
+          change line 10 to DEBUG = 1 and reassemble your program.  If you\
+          do not understand the use of conditional assembly, don't worry.\
+          I have only used it a few times in the past seven years, and\
+          generally you don't need it at all.\
+           \
+                                    END Directive\
+           \
+          The Asm/Ed manual recommends that every program have one .END\
+          directive, as the last line.  It really isn't necessary, since\
+          the assembler knows when to stop (it runs out of source code to\
+          assemble).  If you place a .END in the middle of your program\
+          inadvertently, all code after it will be ignored and not be\
+          assembled.  I seldom use a .END in any of my assembly code.\
+           \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2                                       DEBUGGING\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2            \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2           Your assembly language programs are bound to have bugs in them.\
+          Asm/Ed provides a method for testing assembled object code.  When\
+          at the Asm/Ed EDIT prompt, type BUG and press return.  The next\
+          prompt will be DEBUG.  The commands for the debugger are all\
+          short one or two letter commands, some followed by an optional\
+          hexadecimal address.  To exit DEBUG type X and press return.\
+           \
+                                         DR\
+           \
+          The DR command is used to display the contents of the 6502\
+          registers:\
+           \
+               DR\
+                   A=BB  X=10  Y=20  P=B0  S=DF\
+           \
+          A is the accumulator, X and Y are the index registers, P is the\
+          processor status register (which includes the carry flag, zero\
+          flag, and etc.), and S is the stack pointer.\
+           \
+                                         CR\
+           \
+          The CR command is used to change the contents of any of the 6502\
+          registers.\
+\
+               CR<,1,2,,DE\
+           \
+          The values specified go into the registers in the same order they\
+          are displayed by the DR command.  In the above example the\
+          accumulator is unchanged, the X register receives a 1, the Y\
+          register a 2, the status register remains unchanged, and the\
+          stack pointer is adjusted to DE.\
+           \
+                                          D\
+           \
+          The D command is used to display memory.  D3000,0 tells the\
+          debugger to display memory location 3000 hexadecimal.  When the\
+          second parameter is less than or equal to the first, only one\
+          location is shown.  D3000,3010 requests the debugger to display\
+          memory from locations 3000 through 3010.  Enter D by itself and\
+          the next 8 locations (3011 through 3018) will be displayed.  If\
+          only the second parameter is omitted, a default of 8 memory\
+          locations are displayed:\
+           \
+               D3000\
+                \
+               3000    10  40  20  22  34  11  12  FE\
+           \
+          Note that the output of the debugger is always in hexadecimal.\
+          All input addresses and register values are to be specified in\
+          hex as well.\
+           \
+                                          C\
+           \
+          The C command is used to change memory.  The format is:\
+           \
+               C3034<21,23,,2E\
+           \
+          The command is immediately followed by the starting hexadecimal\
+          address to change.  The values to be placed in memory, starting\
+          at the first location, are separated by commas.  Two commas in a\
+          row tell the debugger to skip over that memory location, leaving\
+          it unchanged.  In the above example memory location 3034 receives\
+          21, 3035 receives 23, and 3037 gets 2E.  You may use the D\
+          command to display memory just changed, to verify the new values.\
+           \
+                                          M\
+           \
+          The memory move command, M, is used to copy a block of memory\
+          from one area to another.  The command format is:\
+           \
+               Mmmmm<yyyy,zzzz\
+           \
+          This tells the debugger to move memory from locations yyyy\
+          through zzzz to memory beginning at location mmmm.  The\
+          destination address (mmmm) must be less than the first source\
+          address (yyyy) or greater than the ending source address (zzzz).\
+          If the source and destination areas of memory overlap, you may\
+          get unexpected results.\
+\
+                                          V\
+           \
+          The verify memory command, V, is used to compare two blocks of\
+          memory.  You might use this to compare two slightly different\
+          versions of the same program to see where something has changed,\
+          for example.  The format is much like the move command:\
+           \
+               Vmmmm<yyyy,zzzz\
+           \
+          The above command tells the debugger to compare memory from yyyy\
+          through zzzz to memory at mmmm.  Any memory locations that do not\
+          match are shown side by side, as follows:\
+           \
+               V7000<7100,7123\
+                \
+               7101  00  7001  21\
+           \
+          In the above comparison all memory from 7100 through 7123 matched\
+          memory from 7000 through 7023, except at one location.  Memory\
+          location 7101 contained a 0 while 7001 contained a 21.\
+           \
+                                          L\
+           \
+          The list memory with disassembly, L, command is one of Asm/Ed's\
+          most powerful.  It can be used to disassemble your operating\
+          system ROM (beginning at $C000), to see what some of the routines\
+          look like.  It can be used to disassemble object files loaded\
+          into memory, to see how they work.  The command format is:\
+           \
+               L7000          - List a screen (20 lines of code) of memory\
+               beginning at memory location 7000\
+               L              - List a screen of memory with disassembly\
+               starting at the next location (pick up where the previous L\
+               command left off)\
+               L7000,7000     - These three forms disassemble one     \
+                              instruction at memory location 7000 only\
+               L7000,0\
+               L7000,6000\
+               L2300,2400          - Disassemble memory and list to the\
+               screen from locations 2300 through 2400\
+           \
+          When the debugger comes across data that will not disassemble\
+          into code (such as data tables or strings, for example) it will\
+          print a series of question marks to the display.  Otherwise, the\
+          data is shown in hexadecimal, as well as in its equivalent\
+          assembly mnemonic form:\
+           \
+               L5000,00  A9  8A  LDA #$8A\
+           \
+                                          A\
+           \
+          You may assemble one instruction at a time into memory with the\
+          debugger's A command.  This comes in handy when you want to test\
+          a small patch to a program.  Simply type A and press return to\
+          get into the single line assembly mode.  You must first specify\
+          an address followed by a less than character (<), and then the\
+          assembly instruction.  To assemble to successive memory\
+          locations, subsequent entries require only the less than\
+          character followed by the assembly instructions.  For example:\
+           \
+               A [RETURN]\
+               5001<LDY $1234 [RETURN]\
+               5001 AC3412                   Computer's response\
+               <INY\
+               5004 CB                       Computer's response\
+           \
+          In the above example we have assembled LDY $1234 and INY into\
+          consecutive memory, starting at 5001 hex.  Note that here your\
+          assembly instructions must use the dollar sign to indicate\
+          hexadecimal.  Press return on an empty line to exit the mini\
+          assembler.  You cannot refer to labels in the program, since the\
+          debugger doesn't keep track of them.  If you do not know the\
+          absolute address of a label required for reference, then it is\
+          time to go back to the source code, make the changes, and\
+          reassemble.\
+           \
+                                          G\
+           \
+          The debugger can be used to go to any address and begin executing\
+          your code with the go command, G.  Type the letter G followed by\
+          the first execution address.  The program will continue to run\
+          until the system crashes, you press the break key, or a BRK\
+          (break) instruction is executed.\
+           \
+                                          T\
+           \
+          Sometimes you need to test a few instructions at a time.  This is\
+          where the debugger's trace command, T, comes in.  Type the letter\
+          T followed by the address at which to begin execution.  The\
+          instruction will be executed, immediately followed by a dump of\
+          the instruction (list a single line with disassembly), and the\
+          cpu registers.  This continues until a BRK instruction is\
+          executed, or you press the break key.\
+           \
+                                          S\
+           \
+          Sometimes you need to test a single instruction at a time.  The\
+          debugger's step command, S, is used for this task.  Enter S\
+          followed by the address to begin execution.  The effects are the\
+          same as the trace command, except that the debugger stops\
+          execution after each assembly instruction.  Type S and return\
+          repeatedly to continue "single stepping" the program.\
+           \
+                                          X\
+           \
+          The X command is used to exit the debugger and return control to\
+          Asm/Ed's editor.\
+\
+                                     Error Codes\
+           \
+          The error codes between 128 and 255 are the same as those in your\
+          Atari BASIC reference manual.  These are generally input, output\
+          errors associated with CIO (central input output) utility\
+          operations, the heart of your Atari's operating system.  There\
+          are 19 error codes that you may encounter while assembling or\
+          debugging your programs:\
+           \
+               1  - The memory available is insufficient for the program to\
+               be assembled.\
+               2  - For the command "DEL xx,yy", the line number xx cannot\
+               be found.\
+               3  - There is an error in specifying an address (mini-\
+               assembler).\
+               4  - The file named cannot be loaded (wrong file format).\
+               5  - Undefined label reference (you probably misspelled a\
+               label in your program).\
+               6  - Error in syntax of a statement (missing operand, or\
+               misspelled assembly mnemonic).\
+               7  - Label defined more than once.\
+               8  - Buffer overflow.  (I'm not certain what this means.)\
+               9  - There is no label or * before "=".  (An equal sign was\
+               found in the first field of a line of code.  All equals must\
+               be preceded by either a valid label or the asterisk.)\
+               10 - The value of an expression is greater than 255 where\
+               only one byte was required.  (e.g. LDA #LABEL, where label\
+               is an address of some memory location greater than 255.)\
+               11 - A null string has been used where invalid.\
+               12 - The address or address type specified is incorrect.\
+               (e.g. LDA (PGZRO),Y would result in this assembly error if\
+               the label PGZRO was not an address of a memory location less\
+               than 256.)\
+               13 - Phase error.  An inconsistent result has been found\
+               from pass 1 to pass 2.  (e.g. Two bytes were reserved for\
+               some label on the first pass, but on the second pass only\
+               one byte was needed.  This is avoided by minimizing forward\
+               references, and defining all known labels at the top of the\
+               file before any assembly code.  You will get this error a\
+               lot, as you learn the language.)\
+               14 - Undefined forward reference.  (e.g. Misspelled label,\
+               or reference to a label not defined.)\
+               15 - Line is too large.\
+               16 - Assembler does not recognize the source statement.\
+               17 - The line number is too large (32767 is maximum).\
+               18 - LOMEM command was attempted after other command(s) or\
+               instruction(s).  LOMEM, if used, must be the first command\
+               after entering the Asm/Ed editor.\
+               19 - There is no starting address.  (e.g. You forgot the *=\
+               directive at the top of your program.)\
+           \
+                                     Expressions\
+\
+          The assembler can perform many useful computations for you.  The\
+          operators recognized and operations they perform are as follows:\
+           \
+               +    Addition\
+               -    Subtraction\
+               *    Multiplication\
+               /    Division\
+               &    Logical and\
+           \
+          Expressions may not contain parenthesis, and they are always\
+          evaluated left to right.  (There is no precedence placed on\
+          operators).  Some examples follow:\
+           \
+               100 STORAGE = $4000\
+               110  *= STORAGE + $10 ; Set program counter to $4010\
+               ...\
+               200  JMP START+20\
+               ...\
+               300  LDA #STORAGE&$0FF   ; Get low byte of STORAGE in A\
+               310  LDX #STORAGE/$100   ; Get high byte of STORAGE in X\
+               ...\
+               320  LDA #3*15  ; Load the number 45 into A\
+           \
+                                    USR Routines\
+           \
+          The USR command of Atari BASIC allows you to call assembly\
+          language routines.  These routines can perform special functions\
+          to vastly improve the performance of BASIC.  For example,\
+          assembly USR routines may be implemented for player missile\
+          graphics movement, sort algorithms, or high speed disk I/O\
+          functions.\
+           \
+          Assembly code won't normally be loaded as part of your BASIC\
+          program.  It must be loaded using a routine in BASIC by placing\
+          the data values into strings, or POKEing it into safe RAM, for\
+          example.  You may place up to 256 bytes of assembly code into\
+          page 6 (beginning at memory location 1536).  If you do not use\
+          the cassette (C:) then up to 128 bytes of code can go into page 4\
+          (beginning at memory location 1024), the cassette buffer.  If\
+          your code is "position independent" it may be loaded into a BASIC\
+          string.\
+           \
+          What is "position independent" assembly code?  Such a program may\
+          have no JMP or JSR instructions (with the exception of JSR's to\
+          ROM addresses that are guaranteed not to move).  So how to you\
+          implement loops?  Use branch instructions.  If your code gets\
+          much larger than 256 bytes, writing position independent code can\
+          be very difficult.  The largest routine I've ever written of this\
+          type was 410 bytes long.  You may also "relocate" your code.\
+          This requires a foreknowledge of all the JMP and JSR instructions\
+          in your code.  You may then load the object code into a string,\
+          determine its starting address, and then POKE adjusted address\
+          values in for all the JMP and JSR instructions.  This is no small\
+          task, and is seldom used.  Generally, your USR routines will be\
+          fairly small and can be written in a position independent manner.\
+           \
+          The format of a BASIC USR command is:\
+           \
+               10 A = USR(1536, PARAM1, PARAM2, PARAM3)\
+           \
+          The first parameter, 1536 above, must be the starting address of\
+          the assembly code you wish to execute.  The values following are\
+          parameters which are passed to the assembly code on the system\
+          stack, after being converted to integer.  The variable A takes on\
+          an integer from memory locations $D4 and $D5 (low byte, high\
+          byte).  This is the mechanism you would use to return a value to\
+          BASIC.\
+           \
+          Lets write a USR routine to add two integers, and return the\
+          result.  Our BASIC program might look like this:\
+           \
+               10 TRAP 1000\
+               20 OPEN #1,4,0,"D:MYUSR.OBJ":REM Our USR code in a file\
+               30 TRAP 70\
+               40 FOR I=1 TO 6:GET #1,A:NEXT I:REM Ignore 6 byte load\
+               header of file\
+               50 I=1536:REM USR routine was assembled for page 6\
+               60 GET #1,A:POKE I,A:I=I+1:GOTO 60:REM End of file error\
+               will terminate our entry of the program\
+               70 CLOSE #1\
+               80 PRINT "INPUT NUMBER 1 ";:INPUT N1\
+               90 IF N1<0 OR N1>65535 THEN ? "OUT OF RANGE":GOTO 80\
+               100 PRINT "INPUT NUMBER 2 ";:INPUT N2\
+               110 IF N2<0 OR N2>65535-N1 THEN ? "OUT OF RANGE":GOTO 100\
+               120 SUM = USR( 1536, N1, N2 )\
+               130 PRINT "NUMBER ";N1;" PLUS ";N2;" EQUALS ";SUM\
+               140 END\
+               1000 PRINT "COULD NOT FIND USR ROUTINE FILE"\
+               1010 PRINT "MYUSR.OBJ"\
+               1020 END\
+           \
+          Now we need to write an assembly language program with Asm/Ed\
+          that implements this USR routine.  It will accept parameters N1,\
+          and N2 off the stack (two, two byte integers), add them, and\
+          return the result to SUM through memory locations $D4 and $D5.\
+          Our code might appear as follows:\
+           \
+               0 ;LIST#D:MYUSR.ASM\
+               10 ;ASM ,,#D:MYUSR.OBJ\
+               11 SUM = $D4\
+               12 NUM1 = $E0\
+               13 NUM2 = $E2\
+               20  *=1536     ; Assemble for PAGE 6\
+               30 ADDTHEM PLA ; First off the stack is parameter count\
+               40  BEQ ERROR  ; Always check for no parameters ERROR\
+               50  CMP #2     ; Did we get exactly 2 parameters?\
+               60  BEQ AOK\
+               70  TAX        ; No, clean up stack and return safely\
+               80 CLEANUP PLA ; Two bytes per parameter\
+               90  PLA\
+               100  DEX       ; Get all the parameters off?\
+               110  BNE CLEANUP ; when all gone, just the valid return addr\
+               120 ERROR RTS  ; is at the top of the stack for the RTS\
+               130 ; We have valid input, compute the sum\
+               140 ; The first parameter in the USR call (after the addr)\
+               150 ; is the first parameter off the stack, high byte\
+               160 ; low byte sequence.  REMEMBER this!\
+               170 AOK PLA    ; Get NUM1, high byte\
+               180  STA NUM1+1\
+               190  PLA       ; Get NUM1, low byte\
+               200  STA NUM1\
+               210  PLA       ; Get NUM2, high byte\
+               220  STA NUM2+1\
+               230  PLA       ; Get NUM2, low byte\
+               240  STA NUM2\
+               250 ; Now we have the data in temporary storage\
+               260 ; and the stack is cleared of parameters.\
+               270 ; Just the return address (to get us back to BASIC)\
+               280 ; is at the top of the stack - which gets pulled off\
+               290 ; into the program counter automatically by the RTS\
+               300 ; instruction.\
+               310  CLC       ; Must clear the carry flag first\
+               320  LDA NUM1  ; Low byte of first integer to add\
+               330  ADC NUM2  ; Add to low byte of second integer\
+               340  STA SUM   ; And store in low byte of their SUM\
+               350  LDA NUM1+1 ; Now add high bytes, leave carry alone\
+               360  ADC NUM2+1 ; It "carries over" from previous add\
+               370  STA SUM+1  ; And their summation is complete\
+               380  RTS       ; Back to BASIC\
+           \
+          Enter this program with Asm/Ed and execute the instructions in\
+          the first two comment lines.  When you get an assembly with no\
+          errors, your file D:MYUSR.OBJ should be ready to test with the\
+          first BASIC program.\
+           \
+          Work at this until it performs as expected.  As you become more\
+          adept at writing USR routines, you may wish to develop utilities\
+          for converting OBJ files into a series of BASIC DATA statements,\
+          so you can simply READ and POKE them without using messy file I/O\
+          to initialize the USR routine.  It takes a relatively long time\
+          to install USR routines by poking them into memory or strings,\
+          but once in place they execute amazingly fast.\
+           \
+          You will find that USR routines are incredibly difficult to\
+          debug.  You need to initialize them and call them from BASIC.  If\
+          you mess up the stack or some other operation, the computer\
+          usually crashes inexplicably.  It isn't easy to debug USR\
+          routines from DEBUG, because you will have to write sophisticated\
+          test routines to stuff all sorts of test values on the stack.\
+           \
+                                Stand Alone Assembly\
+\
+          Sooner or later you will get tired of USR routines (mostly\
+          because they are so difficult to debug).  When you do, it is time\
+          to take the plunge into writing a stand alone assembly language\
+          program.  Then you will get into the complexities of keyboard\
+          input, screen output, disk I/O, and printer output from the\
+          Asm/Ed environment.  Complete libraries of routines, such as a\
+          "graphics package" that performs the equivalent of BASIC's\
+          GRAPHICS, COLOR, PLOT, and DRAWTO, will become a necessity.  This\
+          is where BOOT CAMP will help the most.  In the months to come you\
+          will learn everything from keyboard input to floating point\
+          processing, all from the assembly language level.  Most of our\
+          listings are in Mac/65 format.  With the exception of macros\
+          (Asm/Ed is not a macro assembler), most changes to Asm/Ed\
+          compatibility will be minor.\
+           \
+          As an example of a stand alone assembly language program, and an\
+          illustration of its raw speed, we present the following\
+          demonstration.  First type this BASIC program and run it.  While\
+          it executes (it will take about 12 minutes), read the remainder\
+          of this article to see how the same functions can be performed in\
+          assembly language:\
+           \
+               10 DINDEX=88:REM Screen RAM pointer\
+               20 SCREEN=PEEK(DINDEX)+256*PEEK(DINDEX+1)\
+               30 FOR X=0 TO 255\
+               40 A=X\
+               50 FOR Y=0 TO 255\
+               60 POKE SCREEN+Y,A\
+               70 NEXT Y\
+               80 NEXT X\
+           \
+          At location DINDEX is a two byte "pointer".  Memory locations 88\
+          and 89 hold the address of the beginning of screen RAM.  The\
+          equation in line 20 calculates the variable SCREEN, which we use\
+          as a direct pointer, for the POKE in line 60.  In our assembly\
+          language equivalent of the above program, this problem is even\
+          EASIER to solve.  (This is seldom the case however, most things\
+          are much harder to do in assembly language.  This demonstration\
+          is designed purposefully to show the strengths and speed of\
+          assembly language.)  Next two loops are setup.  The inner Y loop\
+          is used to poke the current value of X into the first 256 screen\
+          RAM locations.  You will see these characters fill the top\
+          portion of your display.  All ATASCII values from 0 through 255\
+          are poked, with the help of the X loop.  The variable A was used\
+          simply for a more symmetrical comparison with the assembly code\
+          to follow.\
+           \
+          Let this BASIC program run to completion.  Time it carefully,\
+          study the sweep second hand of your watch creep slowly along.\
+          Feel the annoying impatience of this terribly slow program creep\
+          up your spine.  When you finally get the READY prompt, reboot\
+          your computer with Asm/Ed and enter this equivalent assembly\
+          language program:\
+\
+               0 ;LIST#D:SCREEN.ASM\
+               1 ;ASM,,#D:SCREEN.OBJ\
+               2  *=$3400\
+               3 RUNAD=$2E0\
+               10 DINDEX = 88 ; Screen RAM pointer\
+               20 ; We don't have to compute SCREEN, we use post indexed\
+               addressing\
+               30 START LDX #0 ; Initialize variables for loops\
+               40  LDY #0\
+               50 STORE TXA   ; Place screen character into A register\
+               60 PUTIT STA (DINDEX),Y ; Place character on screen\
+               70  INY ; Next screen location\
+               80  BNE PUTIT ; Y register "wraps around" to zero after 255\
+               90  INX\
+               100  BNE STORE ; NEXT X\
+               110  RTS  ; Return control to DOS\
+               120  *= RUNAD\
+               130  .WORD START ; So we can load and run from DOS\
+           \
+          Now execute the two commands in the first two comment lines at\
+          the top of the listing.  If you get no assembly errors then you\
+          will have a file SCREEN.OBJ that is ready to load and run.  Go to\
+          DOS and execute a binary 'L'oad of the file SCREEN.OBJ.  It will\
+          run immediately after loading and return control back to DOS\
+          after performing all 65,536 "POKES" of characters to screen\
+          memory.  Did you catch it?  You probably didn't if you blinked.\
+          This version of the program takes barely a second to run!  If you\
+          want to watch the show for a while, and exit to DOS when a KEY is\
+          pressed, for example, modify your program as follows:\
+           \
+               15 CH = 764 ; Keyboard buffer\
+               ...\
+               101  LDA #255\
+               102  CMP CH    ; key pressed?\
+               103  BEQ START ; Nope, loop\
+               104  STA CH    ; Yes, clear out key buffer and exit to DOS\
+           \
+          List this version to disk and reassemble it.  When loaded from\
+          DOS, it will "poke" all those ATASCII patterns to the screen\
+          continuously until you press any key on the keyboard.  To\
+          RANDOMIZE the show, make these changes:\
+           \
+               16 RANDOM = 53770 ; Always a random number here\
+               ...\
+               50 STORE\
+               60 PUTIT LDA RANDOM ; Get a random fill character\
+               61  STA (DINDEX),Y ; Place character on screen\
+           \
+           \
+          Notice how I always added a meaningful label for each important\
+          memory location.  Avoid the use of code such as LDA 53770.  The\
+          proper use of labels makes it much easier to see exactly WHAT\
+          your program does and HOW it gets the job done.\
+\
+          If you didn't pay much attention to ANALOG's Master Memory Map\
+          series, I strongly recommend that you go back and read it all.\
+          Even if you do not understand all of it, you will learn a lot.  A\
+          good memory map is the key to unleashing all the power of your\
+          computer.  Compute!'s Mapping The Atari, Revised Edition is also\
+          a very good reference guide.  As a 6502 Assembly language\
+          reference manual, I use 6502 Assembly Language Programming by\
+          Leventhal.  This is a general reference for the 6502\
+          microprocessor, and does not have any specifics on the Atari\
+          computer.  It does detail all the 6502 assembly mnemonics, and\
+          provides examples of multiply, divide, and other useful routines.\
+           \
+          When you find that Asm/Ed is too slow to suit your tastes, as you\
+          build larger and more sophisticated programs, consider upgrading\
+          to Mac/65.  This macro assembler supports the use of INCLUDE\
+          files, allowing you to easily import "canned routines" that have\
+          already been debugged.  It's MACRO capabilities allow you to\
+          define high level constructs that vastly simplify the development\
+          of assembly programs.  With a good MACRO library (such as\
+          OSS/ICD's Mac/65 Toolkit or QuickCode from Stardust Software),\
+          your assembly source code will resemble BASIC or some other high\
+          level language, while retaining all the power and speed of pure\
+          assembly language.  Mac/65 is the absolute FASTEST native 6502\
+          assembler I have ever used, bar none.  (Mad Mac for the Atari ST\
+          will assemble 6502 code that blows the doors off Mac/65; but\
+          that's a whole new ball game.)\
+           \
+          Welcome to the fast and complicated world of assembly language\
+          programming.  I hope this guide will inspire you to put that\
+          inexpensive Asm/Ed cartridge to work on all those fantastic ideas\
+          that old faithful Atari BASIC never could handle.\
+           \
+          By: Matthew J. W. Ratcliff, Ratware Softworks, 32 S. Hartnett\
+          Ave., St. Louis, MO  63135\
+\
+}

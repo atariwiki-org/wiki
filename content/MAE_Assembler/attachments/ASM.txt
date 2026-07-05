@@ -1,0 +1,598 @@
+- ASSEMBLER SECTION -
+
+- EXPRESSIONS -
+
+Expressions can be made from decimal numbers, hex numbers by using "$",
+binary numbers by using "%", single ASCII characters with a "'" (single
+quote), and label names.
+
+Any of these values can be mixed with math operators +-*/, !  (bitwise
+OR), & (bitwise AND), ^ (exclusive OR), \ (modulo),  and unary -.
+The vertical bar | can be used in place of !.
+
+There are four logical operators that will return values of either 0
+(false) or 1 (true).  These are <, >, =, and # (not equal).  These
+operators are primarily for conditional assembly .IF statement use.
+
+There are also special unary operators that refer to the low byte, high
+byte, and bank byte (24-bit highest byte) of the calculated expression.
+these operators are <, >, and ^.
+
+There is no operator precedence.  All math is evaluated left to right,
+with the exception of leading unary operators <, >, ^, and - which are
+done after the rest of the expression has been evaluated.
+
+Do notputany spacesin the middle of expressions.  Spaces are
+consideredby MAE to be separators between different expressions.
+
+Examples of valid expressions:
+
+       LDA #'A-$20     ;= $21
+       LDA #-1         ;= $FF
+       LDA #-1+2       ;= $FD (the unary - is done last)
+       LDA #%101&3     ;= 1
+       LDA #>$1234+1   ;= $12
+       LDA #>$1234+256 ;= $13
+       LDA #^$123456   ;= $12
+       LDA #>$123456   ;= $34 (mid byte)
+       LDA #1>3        ;= 0 (false)
+
+All of these expression types can be used in .BY statements as well.
+Like:
+
+LOWS   .BY <LABEL1 <LABEL2 <LABEL3
+HIGHS  .BY >LABEL1 >LABEL2 >LABEL3
+       .BY 15+3!%1000
+       etc...
+
+- LABELS -
+
+The first character of a label may be any letter, or the symbols @, _,
+or ?.  All remaining characters may also include numbers plus the '.'
+symbol.  Labels may be up to 15 characters long.
+
+Label names, and for that matter all text entered with the assembler, can
+be entered in upper or lower case.  Labels are not case-sensitive.
+
+When the first character of a label is '?', the label is a 'local label'.
+Locals are defined only in the source code segment between two global
+(i.e. non-local) labels.  References to local labels cannot cross a
+global label definition.
+
+Internally, the assembler creates local labels by appending the local onto
+the end of the previous global label.  Thus in the following code segment:
+
+DELAY  LDX #100
+?L     DEX
+       BNE ?L
+
+'?L' is a local label, and will be entered in the symbol table as DELAY?L.
+Knowing how the label is stored, allows you to access it from the debugger
+or the Esc-V expression evaluator.  You can also code a direct reference
+to the label DELAY?L if you need to access the local from the other side
+of the global label DELAY.
+
+Locals are not printed in X-reference or symbol table listings, which
+makes them very useful for simple loop and branch structures where you
+don't want to think up unique label names for all occurrences.
+
+- ADDRESSING MODES -
+
+All 6502 and 65816 addressing modes are supported.  Any addresses that
+evaluate less than $100 will use zero page modes when possible.  Thus,
+zero page labels must be defined before being used, or assembly errors
+will result.
+
+There is also a way to force 8 bit, 16 bit, or 24 bit addresses using the
+operators <, !, and >.  (Yes, I know this is inconsistent with the
+immediate operators for low, high and bank bytes -- I didn't write the
+65816 assembler specifications).  This can be really useful for forcing
+absolute 16 bit addressing on zero page labels, to add 1 cycle in time
+critical applications.  For the 65816, it can force direct page addressing
+for non-ZP labels, (which of course requires you to move the direct page
+register to the proper page address).  ALL 24-bit addresses must be
+preceded by the > character.
+
+The operands for the 65816 MVP and MVN instructions should be simple bank
+bytes -- not full addresses.  Ex:
+
+       MVP $40 $80
+moves memory from bank $40 to bank $80, using the addresses in X and Y.
+
+Or:
+       MVP ^SRC ^DEST
+Use the bank byte of the source and destination addresses.
+
+- PSEUDO-OPS -
+
+Note that only 2 letters are required, but if additional letters are
+present they will be truncated without assembly errors.  For example, you
+may use pseudo-ops like '.byte' and '.org'.  Personally, I really like
+having the pseudo-ops the same width as all 6502 instructions, and only
+use 2 letters.
+
+       .02
+Set 6502-only mode.  In this mode, all 65816-specific instructions will
+be flagged as "NOT 6502" errors.  The code will still be assembled in
+these cases, however it will not run properly on 6502 based machines.
+
+       .24
+Sets the symbol table and program counter to use 24 bit addresses.
+This is only useful for 65816 programs, and may crash your machine if you
+try to use it without having a 65816 CPU.
+
+       .816
+Set 65816 mode, so that non-6502 instructions will not be flagged as errors.
+The initial setting of the .02 versus .816 assembly mode depends upon which
+processor version of MAE you are running.  The opening menu display shows
+the current version number, and also an indication of whether it is a 6502
+or 65816 version of the program.  The initial assembly mode will match this.
+
+       .AB
+The assembler will generate byte-sized values for accumulator-related
+immediate constants.  (Default)
+
+       .AW
+The assembler will generate word-sized values for accumulator-related
+immediate constants.  This is only useful for 65816 programs.
+
+       .BA byte
+For bank addressing, you can specify an operand to force assembler
+generated object code into bank select RAM.  This byte will be stored into
+location $D301 when storing bytes of object code into RAM.
+
+       .BI filename
+Includes the contents of a binary disk file into the assembly.  If this
+file does not contain a DOS binary header, it will be assembled as in-line
+data at the current PC.  Otherwise, a file that contains a header will be
+loaded at its load address.
+
+       .BY [+byte] bytes and/or ASCII
+Store byte values in memory.  ASCII strings can be specified by enclosing
+the string in either single or double quotes.
+
+If the first character of the operand field is a '+', then the following
+byte will be used as a constant and added to all remaining bytes of the
+instruction.
+
+Ex:
+       .BY +$80 1 10 $10 'Hello' $9B
+
+will generate:
+81 8A 90 C8 E5 EC EC EF 1B
+
+Values in .BY statements may also be separated with commas for
+compatibility with other assemblers.  Spaces are allowed since they are
+easier to type.
+
+See also .SB which creates ATASCII screen codes, and .CB which creates
+strings in which the last byte is EOR'ed with $80.
+
+       .CA byte
+This is to allow for assembly directly into a bank select cartridge
+environment.  The byte is placed in the X register, and a STA $D500,X is
+performed when object code bytes are stored into memory.  The only catch,
+is that the assembler needs to be able to return the bank select cartridge
+to normal.  There is currently a 'STA $D5DC' for this purpose, but this may
+not be the right address for your cartridge setup.  You should search the
+disk file for this instruction, ($8D $DC $D5), and replace it with the
+appropriate address.
+
+NOTE: The standard public version of MAE resides partially in the cartridge
+address space, and assuch this pseudo-op will not work properly.  Custom
+versions of MAE that reside in different areas of system RAM, such as just
+above yourLOMEM, canbe provided upon request.
+
+       .CB [+byte] bytes and/or ASCII
+This is in the same format as the .BY pseudo-op, except that the last
+character on the line will be EOR'ed with $80.
+
+       .CL
+Close output object code file.  When using the .OU pseudo-op to create
+object code files on disk, the file will normally be closed at the end of
+assembly.  However, if you wish to close the file before that, it can be
+forced closed with the .CL pseudo-op.  You may use this to create multiple
+output files in one assembly, or to place something in RAM in addition to
+the disk file.
+
+       .DC word byte
+Define constant-filled block.  This will fill an area of size 'word' with
+the constant 'byte'.
+
+       .DS word
+Define storage.  This will reserve an area of storage equal to size
+'word'.
+
+       .EC
+Do not display macro generated code in the assembly listing.  Only the
+macro call itself will appear.
+
+       .EL
+Used after a conditional .IF statement, this marks the "ELSE" portion
+of assembly.  See the section on conditional assembly for more details.
+
+       .EJ
+Eject -- Send a form feed code to eject the page in an assembly listing.
+
+       .EN
+This is an optional pseudo-op to mark the end of assembly.  It can be
+placed before the end of your source file to prevent a portion of it
+from being assembled.
+
+.EN can also be used to mark the end of a .IF conditional assembly
+section, (as in .ENDIF).  Because pseudo-ops are only recognized to
+two characters, the .EN command will perform an ENDIF function when
+encountered within a conditiona assembly section, and will end the
+assembly otherwise.  The "***" ENDIF operator used in pre-1.1 versions
+of MAE is still supported, and actually preferred since there is no
+ambiguity here.  It is also a little more visible at the source level.
+
+       .ES
+Display the object code resulting from Macro expansions.
+
+       .FL floating point numbers
+Stores 6-byte BCD floating point numbers for use with the OS FP ROM
+routines.
+
+       .HE hex bytes
+Store hex bytes in memory.  This is a convenient method to enter strings
+of hex bytes, since it does not require the use of the '$' character.  The
+bytes are still separated by spaces however, which I feel makes a much
+more readable layout than the 'all run together' form of hex statement
+that some other assemblers use.  Example:
+       .HE 0 55 AA FF
+
+       .IB
+The assembler will generate byte-sized values for index register-related
+immediate constants.  (Default)
+
+       .IW
+The assembler will generate word-sized values for index register-related
+immediate constants.  This is only useful for 65816 programs.
+
+       .IF expression
+The expression will be evaluated, and if true, (non-zero), the statements
+following the .IF, up to a .EL or .EN (or ***) will be assembled.  If the
+expression is false, then the block of statements will not be assembled.
+See the section on conditional assembly for more details.
+
+       .IN filename
+Include additional files in the assembly.  Only the main source file can
+contain .IN pseudo-ops.  You cannot nest them.  Default drive processing
+works the same here as it does when loading files from the editor, and so
+you will usually not need any 'Dn:' types of filespecs.  The file name
+only should be sufficient.  No quotes are needed either.
+
+       .LC
+Turn off (clear) the display of the assembly listing.  (Default)
+
+       .LL
+Display the assembly listing on this line only, even if the full listing
+is turned off.  This can be extremely handy to display the program counter
+value at important positions in the source file.
+
+       .LO longwords
+Stores longwords, (3 byte values) in memory.
+
+       .LS
+Turn on (set) the display of the assembly listing.
+
+       .MC adr
+Move Code to a different address than the .OR assembly origin.  If you are
+assembling to RAM, your code will be stored starting at the address after
+the .MC pseudo-op.  When assembling to disk, the .MC address will be used
+when creating the binary file headers, affecting where the code will be
+loaded into.
+
+!!!name .MD
+Begin macro definition.  Described in a separate section.
+
+       .ME
+End macro definition.
+
+       .MG
+Mark the current .IN include file as Macro Global.  This keeps this file
+in memory throughout the assembly, which is required if the file contains
+macros that are referenced in other included files.
+
+       .OC
+Turn off (clear) the storing of object code in memory.
+
+       .OR adr
+Sets the origin address for the assembly.
+
+Note:  If there is a label on this line, it will be given the value of the
+new origin.  This is not the same as in Mac/65 which could use its origin
+directive to reserve space (*= *+1).  You should use the .DS pseudo-op for
+reserving space.
+
+       .OS
+Turn on (set) the storing of object code in memory.  (Default)
+
+       .OU filename
+Create an output disk file for the object code.  Regretfully, this file is
+made up of individual 256 byte segments much like Mac/65 does.  I
+apologize for the laziness here on my part, but it really was a lot easier
+to do this way.  You should run some type of strip program to
+de-segment the file for optimal size and speed.  The .OU pseudo-op should
+be placed above the .OR pseudo-op.
+
+       .PR "text"
+Print a text message to the screen on pass 1 of the assembly.  This is
+generally used with the .VA pseudo-op when prompting for values to be
+entered from the keyboard.
+
+       .SB [+byte] bytes and/or ASCII
+This is in the same format as the .BY pseudo-op, except that it will
+convert all bytes into ATASCII screen codes before storing them.  The
+ATASCII conversion is done before any constant is added with the '+'
+modifier.
+
+label  .VA
+Will print a '?', and then accept input from the keyboard.  You may enter
+any value, which will be given to the label in front of the .VA.
+
+       .WO words
+Stores words in memory.  Multiple words can be entered.
+
+       SET label = expression
+Set the specified label to a new value.  This instruction allows a label
+to be redefined with different values during the assembly.  Any label can
+be SET.
+
+- CONDITIONAL ASSEMBLY -
+
+Conditional assembly allows the programmer to adapt the assembly process to
+different conditions.  Blocks of code can be included or skipped over based
+upon the value of an expression.  The format of conditional assembly is:
+
+       .IF expression
+                      ; This block of code is assembled if the
+                      ;expression is true.
+       .EL
+                      ; Else, this block of code gets assembled
+                      ;(when the expression is false)
+       .EN            ; Marks the end of the conditional block.
+
+The operand of the .IF instruction will be evaluated, and if the expression
+is true, then the source code following the .IF will be assembled until
+reaching a .EL or .EN pseudo-op.  (Once again, two-letter pseudo-ops are a
+convenience, not a requirement.  You are free to use the more standard
+.ELSE and .ENDIF if you prefer).  The .EL portion is optional, and is used
+when you want one block of code to be assembled when the condition is true,
+and a different block when the condition is false.  The end of the
+conditional is marked with either .EN or three asterisks ***.  '***' is
+equivalent to an ENDIF statement, and is somewhat preferable since .EN will
+be interpretted as 'end of assembly' when it occurs outside of a valid
+conditional assembly block.  '***' is non-ambiguous and will flag an
+assembly error if it does not have a matching .IF.
+
+Examples of Conditional Assembly:
+
+       .IF FLAG
+       .              ;This block of code gets asm'ed
+       .              ;when FLAG <> 0
+       ***
+
+       .IF FLAG=0
+       .              ;This block does when FLAG = 0
+       ***
+
+       .IF FLAG1!FLAG2
+       .              ;asm'ed if FLAG1 or FLAG2 <> 0
+       ***
+
+       .IF FLAG1^FLAG2
+       .              ;asm'ed if FLAG1
+       .              ;or FLAG2 <> 0,
+       .              ;but not both
+       ***
+
+       .IF WIDTH=40
+       .              ;This gets asm'ed when width = 40
+       ***
+
+       .IF WIDTH = 40 ;This is INVALID.  Do not put spaces in expressions.
+                      ;Spaces separate expressions from each other.
+
+       .IF WIDTH#40
+       .              ;This gets asm'ed when width <> 40
+       ***
+
+       .IF WIDTH<40
+       .              ;asm'ed if WIDTH less than 40
+       .EL
+       .              ;asm'ed if WIDTH greater or equal to 40
+       ***
+
+       .IF WIDTH>40
+       .              ;if WIDTH greater than 40
+       ***
+
+- MACROS -
+
+Macros must be defined before they are used in your source.  The
+definition looks like this:
+
+!!!name .MD
+        ; body of the macro
+        .ME
+
+Where 'name' is the name of the macro.  The 3 exclamation marks are a
+special macro identifier, and must preceed the macro name.  The body of
+the macro definition will follow, and should be ended with a .ME pseudo-op.
+
+The macro definition must be resident in memory when it is called.  If you
+link multiple source files with .INclude pseudo-ops, then you need to ensure
+that any macro definitions are forced to be memory resident by using .MG
+within the file that contains the macros.  Typically, you can put all your
+definitions in one file, put in the .MG option, and then include it at the
+beginning of your assembly.  The root source file, that is, the one that is
+in memory when you issue the Esc-A assemble command, is always memory
+resident anyway and thus macros defined in your root source file are always
+available to other included files without the need for .MG.
+
+Beginning with MAE version 1.1, the assembler now has free-format and full
+text substitution macros.  Macro parameters can be anything, and will be
+passed to the macro routine in their original text form.  The number of
+parameters passed by the macro call is not rigidly enforced, and in fact
+the macro definition no longer has to specify the number of expected
+parameters.  Within the body of the macro, parameters are accessed by
+using a ':' followed by a number from 1 to 9, corresponding to the order
+of parameters on the calling line.  (Parameters are separated by spaces,
+and nothing else).  A special macro parameter, ':0' can be used to get the
+actual number of parameters passed in.  When a macro is expanded, any ':n'
+strings that are not within quotes will be replaced with the text from the
+calling line.  Text within quotes will normally be left as-is, which means
+there needs to be a special method of getting a macro parameter expanded
+inside of quote marks.  Two double quotes in a row, "", will be replaced
+with one double quote, and subsequent macro parameters will be expanded.
+Then use another set of two double quotes to close.  See the macro
+examples below for more details on how this works.
+
+An individual macro may pass up to 9 parameters, but there is also a limit
+on the total number of parameters including all nesting levels.  This limit
+is 16.  If a macro uses 8 parameters, then any nested macros it calls can
+use at most 8 additional parameters.
+
+Any labels defined within a macro must use a special form.  Because macros
+can be expanded multiple times, a special label type exists to avoid
+errors from multiple label definitions.  These label types start with
+three periods, followed by any normal label name.  These special macro
+labels will be given unique numbers with each macro expansion to keep them
+separate.  You can consider them local labels to each macro expansion.
+
+Here's an example of a macro to increment a two byte value:
+
+!!!IND .MD
+       INC :1
+       BNE ...SKP
+       INC 1+:1
+...SKP .ME
+
+To call this macro, you would use:
+
+       IND $80
+
+Since a macro call will pass any text characters, you could call the
+same macro with:
+
+      IND $80,X
+
+Note that the structure of the second INC instruction in the macro body is
+important here for this to work correctly.  If the line were written
+"INC :1+1", it would get expanded to "INC $80,X+1" which is not valid.
+
+Here are more examples that don't do anything specific code-wise, but serve
+to demonstrate various macro techniques.  The calling line will be listed
+first, followed by the definition and what it will actually be expanded to.
+
+       PRT "HELLO" $9B "THERE" $9B
+
+!!!PRT .MD
+       JSR PRINT                        JSR PRINT
+       .BY :1 :2 :3 :4 :5 :6 :7 :8 0    .BY "HELLO" $9B "THERE" $9B 0
+       .ME
+
+Parameters that are not defined on the calling line are simply replaced
+with null strings.  They do got generate errors.  The PRINT subroutine
+in this example would pull the return address off the stack, display the
+string that it points to until 0 is reached, and then push that address
+back on the stack so program flow continues with the next line of code.
+
+       TST $80
+
+!!!TST .MD
+       .BY :1         .BY $80      ;direct substitution
+       .BY ":1"       .BY ":1"     ;strings inside quotes are not expanded
+       .BY "":1""     .BY "$80"    ;two quotes get converted to one, and the
+                                   ;parameter gets expanded since it is not
+                                   ;between quote marks.
+
+Here's a more complicated example that can be used as a debugging aide
+during development.
+
+       ASSERT INDEX CC #$80
+
+!!!ASSERT .MD
+       .IF DEBUG
+       PHP                            PHP
+       PHA                            PHA
+       LDA :1                         LDA INDEX
+       CMP :3                         CMP #$80
+       B:2 ...OK                      BCC ...OK
+       JSR PRINT                      JSR PRINT
+       .BY "Assert Failed: " "":1 :2 :3"" 0
+                                      .BY "Assert Failed: " "INDEX CC $80" 0
+...OK  PLA
+       PLP
+       ***
+
+The idea behind the ASSERT macro, is that it can be used to verify the value
+of key variables, notify the programmer when the value is not in range, and
+all the code disappears when you assemble the final version simply by setting
+the DEBUG flag to 0.
+
+There are more macro examples in the supplied include file MACROS.  If you
+createsome really useful macros, please send them to me and let me know if
+they can be included in future MAE distributions.
+
+- ERROR MESSAGES -
+
+These are the error messages that can be produced by the assembler.  Error
+messages are marked with an '!', and also include the source line number
+that they occurred on.  If you are assembling a single file, or if the
+errors occurs in your main file, you will be able to use the editor ^H
+command to jump directly to the errors.  For errors that occur in included
+files, you will need to load in that file, and jump to those line numbers
+manually using the ^G goto line number command.
+
+       BRANCH
+Branch instruction out of range.
+
+       OPCODE
+Error in opcode field.  This can be either a bad 65816 instruction, bad
+pseudo-op, or an undefined macro.
+
+       DUP
+Duplicate label definition.
+
+       EOF
+End of File error.  All assemblies must end with a .EN pseudo-op.  This
+should be in the main source file, not in any included files.  This error
+can also occur if a conditional or macro definition is pending at the .EN.
+
+       UNDEF
+Undefined label reference.
+
+       NEST
+Nesting error.  .MD macro definitions cannot contain additional definitions.
+.IN included files may not include additional .IN files.  Endif "***" mark
+without associated .IF statement.
+
+       OPERAND
+Error in operand field.
+
+       ADR MODE
+Addressing mode not supported.
+
+       BAD LABEL
+Bad characters in label name.
+
+       MACRO OV
+Macro overflow in either the number of expansions, or level of nested
+expansions.
+
+       SYM OV
+Symbol table overflow.
+
+       PARMS
+Number of macro parameters in the call does not match the definition.
+
+       LABEL MISSING
+Missing label on either a SET pseudo-op or in an = equate definition.
+
+       NOT 6502
+This instruction is only valid on 65816 processors, and will not run on
+6502-based computers.  This error is only generated if you have used the
+.02 pseudo-op to generate 6502-only code.

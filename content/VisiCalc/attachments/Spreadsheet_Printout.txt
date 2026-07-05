@@ -1,0 +1,23 @@
+Value    Result   Function          
+        1        0LN                
+        1        0LOG10             
+        4 2.000000SQRT              
+        3 8.000000Power b 2         
+        2 2.000000SQRT(Pow)         
+        1 2.718282EXP               
+        0 3.141593PI                
+                                    
+      .05                           
+     -.07                           
+      .02                           
+        0                           
+        0SUM(A10..                  
+                                    
+                  Mode              
+Value    Function DEG      RAD      
+       45SIN       .7071068 .8509035
+        0COS              1        1
+       45TAN             1. 1.619775
+ .7071068ASIN      45.00000 .7853982
+        1ACOS             0        0
+        1ATAN      45.00000 .7853982

@@ -1,0 +1,2334 @@
+1001     .PAGE "--- Copyright and Author Notice ---"
+1002 ;-------------------------------------------------------------------------
+1003 ;COPYRIGHT (C) 1978,1979,1980,1982
+1004 ;OPTIMIZED SYSTEMS SOFTWARE,              
+1005 ;CUPERTINO, CA.                           
+1006 ;                                         
+1007 ;THIS PROGRAM MAY NOT BE REPRODUCED,
+1008 ;STORED IN A RETRIEVAL SYSTEM, OR         
+1009 ;TRANSMITTED IN WHOLE OR IN PART,         
+1010 ;IN ANY FORM, OR BY ANY MEANS, BE IT      
+1011 ;ELECTRONIC, MECHANICAL, PHOTOCOPYING,    
+1012 ;RECORDING, OR OTHERWISE WITHOUT THE      
+1013 ;PRIOR WRITTEN PERMISSION OF:             
+1014 ;                                         
+1015 ;  OPTIMIZED SYSTEMS SOFTWARE, INC.       
+1016 ;  10379 LANSDALE AVENUE                  
+1017 ;  CUPERTINO, CALIFORNIA 95014 (U.S.A.)   
+1018 ;  PHONE: (408) 446-3099
+1019 ;
+1020 ;-------------------------------------------------------------------------
+1021 ;PROGRAMMER: PAUL LAUGHTON                                                 
+1023 ;UPDATED:    19-AUG-80                                                     
+1024 ;------------------------------------------------------------------------- 
+1025 ;SCANNED:    MR.ATARI   JAN-2004                                           
+1026 ;------------------------------------------------------------------------- 
+1027 ;EDITED:     UNIXCOFFEE 16-JUN-2011 (PRETTY PRINTED & FIXED ALL COMMENTS)
+1028 ;-------------------------------------------------------------------------
+1029     .PAGE "SYSTEM EQUATES"
+1030 ;=========================================================================
+1031 ;SYSTEM EQUATES
+1032 ;=========================================================================
+1033 ;
+1034 FMSORG = $0700
+1035 FMSZPG = $43
+1036 IOCBORG = $0340
+1037 LMASK = 3                     ;LINK MASK
+1038 DCBORG = $0300
+1039 DHADR = $E453
+1040 EOL =   $9B
+1041 DEVTAB = $031A
+1042 ZICB =  $20
+1043 LMADR = $02E7
+1044 DUPINIT = $1540               ;INIT ADDR FOR DUP
+1045 STAK =  $0102                 ;STACK LOC FOR PUT BYTE
+1046 OSBTM = $DF                   ;HI BYTE OF ADDR LESS THAN OS SPACE
+1047 DSKTIM = $0246                ;ADDR OF OS WORST CASE DISK TIME OUT
+1048 TIMOUT = 15                   ;TIME OUT VALUE OF 15 SECS.
+1049     .PAGE "IOCB"
+1050     *=  IOCBORG
+1051 ;=========================================================================
+1052 ;IOCB - I/O CONTROL BLOCK
+1053 ;=========================================================================
+1054 ;THERE ARE 8 I/O CONTROL BLOCKS 1 IOCB IS REQUIRED FOR EACH CURRENTLY OPEN
+1055 ;DEVICE OR FILE
+1056 ;-------------------------------------------------------------------------
+1057 IOCB
+1058 ICHID *= *+1                  ;DEVICE NUMBER
+1059 ICDNO *= *+1                  ;DEVICE HANDLER
+1060 ICCOM *= *+1                  ;I/O COMMAND
+1061 ICSTA *= *+1                  ;I/O STATUS
+1062 ICBAL *= *+1
+1063 ICBAH *= *+1                  ;BUFFER ADR (H,L)
+1064 ICPUT *= *+2                  ;PUT CHAR DH ADDR
+1065 ICBLL *= *+1
+1066 ICBLH *= *+1                  ;BUFFER LEN (H,L)
+1067 ICAUX1 *= *+1                 ;AUX 1
+1068 ICAUX2 *= *+1                 ;AUX 2
+1069 ICAUX3 *= *+1                 ;AUX 3
+1070 ICAUX4 *= *+1                 ;AUX 4
+1071 ICAUX5 *= *+1                 ;AUX 5
+1072 ICAUX6 *= *+1                 ;AUX 6
+1073 ICLEN = *-IOCB
+1074 ;-------------------------------------------------------------------------
+1075     *=  *+ICLEN*7             ;SPACE FOR 7 MORE IOCB'S
+1076 ;=========================================================================
+1077 ;ICCOM VALUE EQUATES
+1078 ;=========================================================================
+1079 ICOIN = $01                   ;OPEN INPUT
+1080 ICOOUT = $02                  ;OPEN OUTPUT
+1081 ICIO =  $03                   ;OPEN IN/OUT
+1082 ICGBR = $04                   ;GET BINARY RECORD
+1083 ICGTR = $05                   ;GET TEXT RECORD
+1084 ICGBC = $06                   ;GET BINARY CHAR
+1085 ICGTC = $07                   ;GET TEXT CHAR
+1086 ICPBR = $08                   ;GET BINARY RECORD
+1087 ICPTR = $09                   ;PUT TEXT RECORD
+1088 ICPBC = $0A                   ;PUT BINARY CHAR
+1089 ICPTC = $0B                   ;PUT TEXT CHAR
+1090 ICCLOSE = $0C                 ;CLOSE FILE
+1091 ICSTAT = $0D                  ;GET STATUS
+1092 ICDDC = $0E                   ;DEVICE DEPENDENT
+1093 ICMAX = $0E                   ;MAX VALUE
+1094 ICFREE = $0F                  ;IOCB FREE INDICATOR
+1095 ;=========================================================================
+1096 ;ICSTA VALUE EQUATES
+1097 ;=========================================================================
+1098 ICSOK = $01                   ;STATUS GOOD, NO ERRORS
+1099 ICSTR = $02                   ;TRUNCATATED RECORD
+1100 ICSEOF = $03                  ;END OF FILE
+1101 ICSBRK = $80                  ;BREAK KEY ABORT
+1102 ICSDNR = $81                  ;DEVICE NOT READY
+1103 ICSNED = $82                  ;NON-EXISTENT DEVICE
+1104 ICSDER = $83                  ;DATA ERROR
+1105 ICSIVC = $84                  ;INVALID COMMAND
+1106 ICSNOP = $85                  ;DEVICE/FILE NOT OPEN
+1107 ICSIVN = $86                  ;INVALID IOCB #
+1108 ICSWPC = $87                  ;WRITE PROTECT
+1109 ;-------------------------------------------------------------------------
+1110 ;ZERO PAGE IOCB LABELS
+1111 ;-------------------------------------------------------------------------
+1112 ICDNOZ = ICDNO-IOCB+ZICB
+1113 ICBLLZ = ICBLL-IOCB+ZICB      ;BUF LEN
+1114 ICBLHZ = ICBLH-IOCB+ZICB
+1115 ICBALZ = ICBAL-IOCB+ZICB      ;BUF ADDR
+1116 ICBAHZ = ICBAH-IOCB+ZICB
+1117 ICCOMZ = ICCOM-IOCB+ZICB
+1118 ICPUTZ = ICPUT-IOCB+ZICB      ;PUT RTN ADDR
+1119     .PAGE " DCB"
+1120     *=  DCBORG
+1121 ;=========================================================================
+1122 ;DCB - DATA CONTROL BLOCK
+1123 ;=========================================================================
+1124 ;THE DCB IS AN IOCB LIKE CONTROL BLOCK 
+1125 ;USED TO INTERFACE THE DISK FILE MANAGEMENT
+1126 ;SYSTEM TO THE DISK HANDLER
+1127 ;-------------------------------------------------------------------------
+1128 DCB
+1129 DCBSBI *= *+1                 ;SERIAL BUS ID
+1130 DCBDRV *= *+1                 ;DISK DRIVE #
+1131 DCBCMD *= *+1                 ;COMMAND
+1132 DCBSTA *= *+1                 ;I/O STATUS
+1133 DCBBUF *= *+2                 ;I/O BUFFER ADDR (H,L)
+1134 DCBTO *= *+2                  ;TIME OUT COUNT
+1135 DCBCNT *= *+2                 ;I/O BYTE COUNT
+1136 DCBSEC *= *+2                 ;I/O SECTOR NUMBER
+1137 ;-------------------------------------------------------------------------
+1138 ;DCBCMD VALUE EQUATES
+1139 ;-------------------------------------------------------------------------
+1140 DCBCRS = 'R                   ;READ SECTOR ($52)
+1141 DCBCWS = 'P                   ;PUT  SECTOR ($50)
+1142 DCBCST = 'S                   ;STATUS REQUEST  ($53)
+1143 DCBCFD = '!                   ;FORMAT DISKETTE ($21)
+1144 ;-------------------------------------------------------------------------
+1145 ;*** SPECIAL NOTE:
+1146 ;-------------------------------------------------------------------------
+1147 ;DCBCWS may be changed to 'W ($57)
+1148 ;if desired to have disk perform      
+1149 ;a verifying read after each write.   
+1150 ;Disk write ('W) operations will take 
+1151 ;longer, but will be more reliable.
+1152 ;-------------------------------------------------------------------------
+1153 ;DCBSTA VALUE EQUATES
+1154 ;-------------------------------------------------------------------------
+1155 DCBSOK = $01                  ;STATUS NORMAL
+1156 DCBDNR = $81                  ;DEVICE NOT READY
+1157 DCBCNR = $82                  ;CONTROLLER NOT READY
+1158 DCBDER = $83                  ;DATA ERROR
+1159 DCBIVC = $84                  ;INVALID COMMAND
+1160 DCBWPR = $87                  ;WRITE PROTECT
+1161     .PAGE " ZERO PAGE"
+1162     *=  FMSZPG
+1163 ;-------------------------------------------------------------------------
+1164 ZBUFP *= *+2                  ;BUFFER PTR
+1165 ZDRVA *= *+2                  ;ZERO PG DRIVE PTR
+1166 ZSBA *= *+2                   ;ZERO PG SECTOR BUF PTR
+1167 ERRNO *= *+1                  ;ERROR NUMBER
+1168 ;
+1169 ;-------------------------------------------------------------------------
+2000     .PAGE "BOOT RECORD"
+2001     *=  FMSORG
+2002 ;=========================================================================
+2003 ;BOOT RECORD - THE FOLLOWING BYTES ARE STORED ON DISK SECTOR 0
+2004 ;=========================================================================
+2005 ;THEY COMPRISE THE BOOT LOAD RECORD
+2006 ;-------------------------------------------------------------------------
+2007 BFLG .BYTE 0                  ;BOOT FLAG UNUSED=0
+2008 BRCNT .BYTE 3                 ;NO.CONSECTIVE BOOT RECORDS TO READ
+2009 BLDADR .WORD FMSORG           ;BOOT LOAD ADDR
+2010 BINTADR .WORD DUPINIT         ;INIT ADDR
+2011 BCONT JMP XBCONT              ;BOOT READ CONT PT
+2012 ;-------------------------------------------------------------------------
+2013 ;THE FOLLOWING BYTES ARE SET BY 
+2014 ;THE CONSOLE PROCESSOR. THEY ARE
+2015 ;ACTED UPON DURING FMS INIT ONLY.
+2016 ;THEY ARE PART OF THE BOOT RECORD
+2017 ;THUS DEFINING THE DEFAULT
+2018 ;INITIALIZATION PARMS
+2019 ;-------------------------------------------------------------------------
+2020 SABYTE .BYTE 3                ;MAX # CONCURRENT OPEN FILES
+2021 DRVBYT .BYTE 1                ;DRIVE BITS
+2022 SAFBFW .BYTE 0                ;STORAGE ALLOCATION DIR SW
+2023 SASA .WORD ENDFMS             ;STORAGE ALLOCATION START ADDR 
+2024 ;-------------------------------------------------------------------------
+2025 ;THE FOLLOWING CODE READS THE FMS
+2026 ;AND CONSOLE PROCESSOR (DOS) FROM
+2027 ;THE DOS.SYS FILE
+2028 ;-------------------------------------------------------------------------
+2029 DFSFLG .BYTE 0  ;DOS FLAG
+2030 ;-------------------------------------------------------------------------
+2031 ;00 NO DOS FILE
+2032 ;01 128 BYTE SECTOR DISK 
+2033 ;02 256 BYTE SECTOR DISK
+2034 ;-------------------------------------------------------------------------
+2035 DFLINK .BYTE 0,0              ;DOS FILE START SECTOR NUMBER
+2036 BLDISP .BYTE 125              ;DISPL TO SECTOR LINK
+2037 DFLADR .WORD DFMSDH           ;ADDR START OF DOS.SYS FILE
+2038 ;-------------------------------------------------------------------------
+2039 XBCONT
+2040     LDY DFSFLG                ;GET DOS FLAG
+2041     BEQ BFAIL                 ;BR IF NO DOS.SYS FILE
+2042 ;-------------------------------------------------------------------------
+2043     LDA DFLADR                ;MOVE LOAD START ADDR
+2044     STA ZBUFP                 ;TO ZERO PAGE PTR
+2045     STA DCBBUF                ;AND TO DCB
+2046     LDA DFLADR+1
+2047     STA ZBUFP+1
+2048     STA DCBBUF+1
+2049 ;
+2050 ;-------------------------------------------------------------------------
+2051     LDA DFLINK+1              ;GET 1ST SECTOR #
+2052     LDY DFLINK
+2053 XBC1 CLC 
+2054     LDX DFSFLG                ;LOAD DISK TYPE CODE
+2055     JSR BSIO                  ;GO READ BOOT SECTOR
+2056     BMI BFAIL
+2057 ;-------------------------------------------------------------------------
+2058     LDY BLDISP                ;POINT TO LINK
+2059     LDA (ZBUFP),Y             ;GET LINK HI
+2060     AND #LMASK                ;MASK TO LINK BITS
+2061     PHA 
+2062     INY 
+2063     ORA (ZBUFP),Y
+2064     BEQ BGOOD
+2065     LDA (ZBUFP),Y             ;GET LINK LOW
+2066     TAY 
+2067     JSR INCBA                 ;GO INCREMENT BUF ADR
+2068 ;-------------------------------------------------------------------------
+2069     PLA                       ;RESTORE LINK HI
+2070     JMP XBC1                  ;GO READ NEXT SECTOR
+2071 ;-------------------------------------------------------------------------
+2072 BFAIL LDA #$C0                ;SET FOR CARRY SET
+2073     BNE XBRTN                 ;ANY P,Y = $80
+2074 ;-------------------------------------------------------------------------
+2075 BGOOD PLA                     ;SET FOR CARRY CLEAR
+2076 ;-------------------------------------------------------------------------
+2077 XBRTN ASL A
+2078     TAY 
+2079     RTS 
+2080 ;-------------------------------------------------------------------------
+2081 INCBA CLC 
+2082     LDA ZBUFP                 ;INC BUFFER PTR
+2083     ADC BLDISP                ;BY DATA LINK (125)
+2084     STA DCBBUF
+2085     STA ZBUFP
+2086     LDA ZBUFP+1
+2087     ADC #0
+2088     STA DCBBUF+1
+2089     STA ZBUFP+1
+2090     RTS 
+2091 ;-------------------------------------------------------------------------
+2092     .PAGE "SECTOR I/O"
+2093 ;=========================================================================
+2094 ;BSIO - DO SECTOR I/O
+2095 ;-------------------------------------------------------------------------
+2096 BSIO =  *
+2097 ;-------------------------------------------------------------------------
+2098     STA DCBSEC+1              ;SET SECTOR HI
+2099     STY DCBSEC                ;SECTOR LO
+2100 ;-------------------------------------------------------------------------
+2101 BSIOR LDA #DCBCRS             ;ASSUME READ SECTOR
+2102     LDY #$40                  ;AND GET DATA
+2103     BCC DSIO1                 ;BR IF READ
+2104 ;-------------------------------------------------------------------------
+2105     LDA #DCBCWS               ;ELSE LOAD WRITE SECTOR
+2106     LDY #$80                  ;AND PUT DATA
+2107 ;-------------------------------------------------------------------------
+2108 DSIO1
+2109     STA DCBCMD                ;SET COMMAND
+2110     STY DCBSTA                ;AND SIO CMD
+2111 ;
+2112     LDA #$31                  ;DISK SERIAL BUS ID
+2113     LDY #TIMOUT               ;TIMEOUT DEFAULT LOADED
+2114 ;-------------------------------------------------------------------------
+2115 DSIO2
+2116     STA DCBSBI                ;SET ID
+2117     STY DCBTO                 ;SET TIME OUT
+2118 ;.........................................................................
+2119     LDA #3                    ;SET RETRY COUNT
+2120     STA RETRY
+2121 ;.........................................................................
+2122     LDA #0                    ;ASSUME 128 BYTE
+2123     LDY #$80                  ;SECTOR DISK
+2124     DEX 
+2125     BEQ DSIO3                 ;SO BR
+2126 ;.........................................................................
+2127     LDA #1                    ;ELSE IS 256
+2128     LDY #0
+2129 ;-------------------------------------------------------------------------
+2130 DSIO3 STA DCBCNT+1            ;SET I/O BYTE CNT
+2131     STY DCBCNT
+2132 ;-------------------------------------------------------------------------
+2133 DSIO4
+2134     JSR $E459                 ;CALL SERIAL I/O
+2135     BPL DSIO5                 ;IF GOOD I/O THEN RTS
+2136 ;.........................................................................
+2137     DEC RETRY                 ;TST IF ANOTHER RETRY AVAIL
+2138     BMI DSIO5                 ;NO THEN RTS WITH ERROR
+2139 ;.........................................................................
+2140     LDX #$40                  ;DO RETRY-RESET TYPE ACTION
+2141     LDA #DCBCRS               ;ASSUME READ-CK IF IS
+2142     CMP DCBCMD                ;IF COMMAND GET SECTOR
+2143     BEQ STRTYP                ;YES THEN STORE GETSECTOR IN 0
+2144     LDA #DCBCFD               ;TEST IF FORMAT CMD
+2145     CMP DCBCMD                ;IT ALSO RECIEVES DATA
+2146     BEQ STRTYP                ;YES THEN SET AS GET DATA
+2147     LDX #$80                  ;ELSE STORE PUTSECTOR
+2148 STRTYP STX DCBSTA
+2149 ;-------------------------------------------------------------------------
+2150     JMP DSIO4                 ;RETRY THE I/O
+2151 ;-------------------------------------------------------------------------
+2152 DSIO5 LDX CURFCB              ;RELOAD CURRENT FCB
+2153     LDA DCBSTA                ;AND I/O STATUS SET FLAGS 
+2154     RTS 
+2155 ;-------------------------------------------------------------------------
+2156     .PAGE "FILE MANGER ENTRY POINT"
+2157 ;=========================================================================
+2158 ;DFMSDH - DISK FILE MANAGEMENT DISK
+2159 ;HANDLER ENTRY POINT
+2160 ;=========================================================================
+2161 DFMSDH
+2162     .WORD DFMOPN-1            ;OPEN FILE
+2163     .WORD DFMCLS-1            ;CLOSE FILE
+2164     .WORD DFMGET-1            ;GET FILE
+2165     .WORD DFMPUT-1            ;PUT BYTE
+2166     .WORD DFMSTA-1            ;STATUS
+2167     .WORD DFMDDC-1            ;DEVICE DEPENDENT CMD
+2168 ;=========================================================================
+2169 ;INITIALIZATION CODE
+2170 ;=========================================================================
+2171 ;GIVE ROOM FOR BOOT EXPANSION !!!
+2172 ;-------------------------------------------------------------------------
+2173     *=  $07E0
+2174 DINIT = *
+2175 ;=========================================================================
+2176 ;SET UP DRIVE INFO
+2177 ;=========================================================================
+2178 ;DRVTBL - 8 BYTES-ONE FOR EACH POSSIBLE DRIVE 
+2179 ;-------------------------------------------------------------------------
+2180 ;0 = NO DRIVE
+2181 ;1 = 128 BYTE SECTOR DRIVE 
+2182 ;2 = 256 BYTE SECTOR DRIVE
+2183 ;-------------------------------------------------------------------------
+2184 ;DBUFA(L,H) 8 TWO BYTE ENTRYS THE
+2185 ;DRIVE (VTOC) BUFFER ADR FOR A DRIVE
+2186 ;-------------------------------------------------------------------------
+2187     LDA SASA                  ;MOVE START OF ALLOC
+2188     STA ZBUFP                 ;AREA TO ZBUFP
+2189     LDA SASA+1
+2190     STA ZBUFP+1
+2191 ;.........................................................................
+2192     LDA DRVBYT                ;TEMP 1 IS DRIVE
+2193     STA TEMP1                 ;EXCESS BITS FROM BOOT
+2194 ;.........................................................................
+2195     LDX #7                    ;TEMP 2 IS
+2196 ;-------------------------------------------------------------------------
+2197 DIA STX TEMP2                 ;DR # MINUS 1
+2198     ASL TEMP1                 ;SHIFT DR BIT TO CARRY
+2199     BCS DIHAVE                ;BR IF DR EXISTS
+2200 ;.........................................................................
+2201     LDA #0                    ;DRVTBL,X ;SET NO DRIVE
+2202     STA DRVTBL,X
+2203     STA DBUFAL,X
+2204     STA DBUFAH,X
+2205     BEQ DIDDEC                ;GO DEC DRIVE #
+2206 ;-------------------------------------------------------------------------
+2207 DIHAVE
+2208     LDY #DVDWRQ               ;SET WRITE READ OFF
+2209     LDA #0
+2210     STA (ZBUFP),Y             ;IN THE DRIVE BUFFER
+2211 ;.........................................................................
+2212     INX                       ;PUT DR # IN DCB
+2213     STX DCBDRV
+2214     LDA #DCBCST               ;GET DRIVE STATUS
+2215     STA DCBCMD
+2216     JSR DHADR
+2217 ;.........................................................................
+2218     LDY #2                    ;ASSUME 256 BYTE DRIVE
+2219     LDA $02EA                 ;GET STATUS BYTE
+2220     AND #$20
+2221     BNE DI256                 ;BR IF 256
+2222     DEY
+2223 ;-------------------------------------------------------------------------
+2224 DI256 TYA 
+2225     LDX TEMP2                 ;SET DR TYPE INTO
+2226     STA DRVTBL,X              ;TBL AT DRIVE DISPL
+2227     LDA ZBUFP                 ;MOVE CURRENT ALLOC
+2228     STA DBUFAL,X              ;ADDR TO DBUFA
+2229     LDA ZBUFP+1               ;AND INC ALLOC
+2230     STA DBUFAH,X              ;BY 128 BYTES
+2231     JSR DINCBP                ;VIA DINCBP
+2232 ;.........................................................................
+2233     DEY                       ;IF DR WAS A
+2234     BEQ DIDDEC                ;128 BYTES THEN DONE
+2235 ;-------------------------------------------------------------------------
+2236     JSR DINCBP                ;ELSE INC PTR BY 128
+2237 ;-------------------------------------------------------------------------
+2238 DIDDEC DEX                    ;DEC DRIVE
+2239     BPL DIA                   ;BR IF MORE TO TEST
+2240 ;=========================================================================
+2241 ;SET UP SECTOR ALLOCATION TABLE
+2242 ;=========================================================================
+2243 ;THE SECTOR ALLOCATION TABLE (SECTBL)
+2244 ;WAS 16 ONE BYTE ENTRIES ONE FOR
+2245 ;EACH POSSIBLE 128 BYTE BUFFER SABYTE
+2246 ;IN THE BOOT RECORD DETERMINES THE
+2247 ;NUMBER OF ENTRYS TO ALLOCATE
+2248 ;NON-ALLOCATED BYTE ARE MINUS
+2249 ;-------------------------------------------------------------------------
+2250 ;SABUF(L,H) CONTAINS THE ADDR OF THE SECTOR BUFFER
+2251 ;
+2252     LDY SABYTE                ;GET AND SAVE COUNT
+2253     LDX #0
+2254 ;-------------------------------------------------------------------------
+2255 DINXTS LDA #0                 ;ASSUME ALLOCATE
+2256     DEY                       ;DEC COUNT OF ALLOCATED
+2257     BPL DISETS                ;IF PLUS STILL ALLOCATE
+2258     TYA                       ;ELSE DE-ALLOCATE
+2259 ;-------------------------------------------------------------------------
+2260 DISETS STA SECTBL,X           ;SET ALLOCATE BYTE
+2261     TYA                       ;IF NO ALLOCATED
+2262     BMI DISNI                 ;THEN DON'T ALLOCATE BUF
+2263 ;.........................................................................
+2264     LDA ZBUFP                 ;MOVE BUFFER ADDR
+2265     STA SABUFL,X              ;TO SECTOR BUF PTR
+2266     LDA ZBUFP+1
+2267     STA SABUFH,X
+2268     JSR DINCBP                ;INC SECTOR ADDR
+2269 ;-------------------------------------------------------------------------
+2270 DISNI INX                     ;INC BUF #
+2271     CPX #16                   ;IF NOT ALL 16
+2272     BNE DINXTS                ;DO AGAIN
+2273 ;-------------------------------------------------------------------------
+2274 ;SET LOW MEM
+2275 ;-------------------------------------------------------------------------
+2276     LDA ZBUFP                 ;MOVE FINAL ADDR
+2277     STA LMADR                 ;TO LOW MEM PTR
+2278     LDA ZBUFP+1
+2279     STA LMADR+1
+2280 ;-------------------------------------------------------------------------
+2281     JMP CLRFCB                ;CONT INIT
+2282 ;=========================================================================
+2283 ;DINCBP - INC ZBUFP BY 128
+2284 ;=========================================================================
+2285 DINCBP CLC 
+2286     LDA ZBUFP
+2287     ADC #128
+2288     STA ZBUFP
+2289     LDA ZBUFP+1
+2290     ADC #0
+2291     STA ZBUFP+1
+2292     RTS 
+2293 ;=========================================================================
+2294 ;CLEAR FCBS TO ZERO
+2295 ;=========================================================================
+2296 CLRFCB = *
+2297     LDY #$7F                  ;128 OF FCB
+2298     LDA #0
+2299 CFCBX STA FCB,Y               ;TO BE CLEARED
+2300     DEY 
+2301     BNE CFCBX
+2302 ;-------------------------------------------------------------------------
+2303     .PAGE 
+2304 ;-------------------------------------------------------------------------
+2305     LDY #0
+2306 ADI1 LDA DEVTAB,Y             ;FIND AH
+2307     BEQ ADI2                  ;UNUSED
+2308     CMP #'D                   ;OR DISK
+2309     BEQ ADI2                  ;EMPTY
+2310     INY 
+2311     INY 
+2312     INY 
+2313     CPY #30
+2314     BNE ADI1
+2315     BRK                       ;ELSE BREAK
+2316 ;-------------------------------------------------------------------------
+2317 ADI2 LDA #'D                  ;SET DISK
+2318     STA DEVTAB,Y
+2319     LDA #DFMSDH&255           ;SET FMS ADDR
+2320     STA DEVTAB+1,Y
+2321     LDA #DFMSDH/256
+2322     STA DEVTAB+2,Y
+2323 ;-------------------------------------------------------------------------
+2324     RTS 
+2325     .PAGE "OPEN"
+2326 ;=========================================================================
+2327 ;DFMOPN - FILE OPEN EXECUTION ENTRY PT
+2328 ;=========================================================================
+2329 DFMOPN
+2330     JSR SETUP                 ;DO FCB SET UP
+2331     JSR FNDCODE               ;GO DECODE FILE NAME
+2332     LDA ICAUX1,X              ;GET AUX1 (OPEN TYPE CODES)
+2333     STA FCBOTC,X              ;PUT INTO FCB
+2334     AND #OPDIR                ;IS THIS LIST DIRECTORY
+2335     BEQ OPN1                  ;BR IF NOT
+2336     JMP LISTDIR               ;GOTO DIR LIST CODE
+2337 ;-------------------------------------------------------------------------
+2338 OPN1 JSR SFDIR                ;GO SEARCH FILE DIR
+2339     PHP 
+2340 ;-------------------------------------------------------------------------
+2341     LDA FCBOTC,X              ;GET OPEN TYPE CODE
+2342     CMP #OPIN                 ;INPUT
+2343     BEQ DFOIN
+2344     CMP #OPOUT                ;OUTPUT
+2345     BEQ DFOOUT
+2346     CMP #OPIN+OPOUT           ;UPDATE
+2347     BEQ DFOUPD
+2348     CMP #OPOUT+OPAPND         ;APPEND
+2349     BEQ DFOAPN
+2350     JMP ERDVDC                ;ERROR
+2351 ;=========================================================================
+2352 ;DFOIN - OPEN FOR INPUT
+2353 ;=========================================================================
+2354 DFOIN = *
+2355     PLP                       ;GET SEARCH FLAG
+2356     BCS OPNER1                ;ERROR IF NOT FOUND
+2357     BCC DFOUI
+2358 ;=========================================================================
+2359 ;DFOUPD - OPEN FOR UPDATA
+2360 ;=========================================================================
+2361 DFOUPD = *
+2362     PLP                       ;GET SEARCH FLAG
+2363     BCS OPNER1                ;BR NOT FOUND
+2364     JSR TSTLOCK               ;TEST LOCK
+2365 ;-------------------------------------------------------------------------
+2366 DFOUI = *
+2367     JSR DFRDSU                ;SET UP FOR READ
+2368     JMP GREAT                 ;DONE
+2369 ;-------------------------------------------------------------------------V
+2370 OPNER1 JMP ERFNF              ;FILE NOT FOUND
+2371     .PAGE 
+2372 ;=========================================================================
+2373 ;DFOAPN - OPEN APPEND
+2374 ;=========================================================================
+2375 DFOAPN = *
+2376     PLP                       ;GET READ STATUS
+2377     BCS OPNER1                ;BR NOT FOUND
+2378     LDY CDIRD                 ;IF OLD.
+2379     LDA FILDIR+DFDFL1,Y       ;FILE TYPE
+2380     AND #DFDNLD               ;THEN
+2381     BEQ APOER                 ;ERROR
+2382     JSR TSTLOCK               ;TEST LOCKED
+2383     JSR OPVTOC                ;READ VTOC
+2384     JSR GETSECTOR             ;GET A SECTOR
+2385     STA FCBSSN+1,X            ;MOVE START SECTOR #
+2386     LDA FCBLSN,X              ;TO START SECTOR #
+2387     STA FCBSSN,X
+2388     JMP DHFOX2                ;CONTINUE AS OPEN
+2389 APOER JMP ERAPO
+2390 ;=========================================================================
+2391 ;DFOOUT - OPEN FOR OUTPUT
+2392 ;=========================================================================
+2393 DFOOUT = *
+2394     PLP                       ;GET SEARCH FLAG
+2395     BCS DFOX1
+2396 ;.........................................................................
+2397     JSR XDEL0                 ;DELETE THE FILE OR FILES
+2398     LDY CDIRD
+2399     JMP OPN1A
+2400 ;-------------------------------------------------------------------------
+2401 DFOX1 = *
+2402     LDA DHOLES                ;WAS THERE A HOLE
+2403     BMI OPNER2                ;BR IF NO HOLE
+2404     STA CDIRS                 ;SAVE HOLE SECTOR AS CURRENT DIR SEC
+2405     JSR RDDIR                 ;GO READ CURRENT DIR SECTOR
+2406     LDA DHOLED                ;MOVE HOLE DISPL TO
+2407     STA CDIRD                 ;CUR DIR DISPL
+2408     LDA DHFNUM                ;MOVE HOLE FN
+2409     STA SFNUM                 ;TO CURRENT
+2410     JSR OPVTOC
+2411     LDY CDIRD
+2412     LDX #10
+2413     LDA #$20
+2414 OPN1B STA FILDIR+DFDPFN,Y     ;BLANK FILL FILE ENTRY FOR FILE NAME
+2415     INY 
+2416     DEX 
+2417     BPL OPN1B
+2418     LDX CURFCB
+2419 ;-------------------------------------------------------------------------
+2420 OPN1A = *
+2421     JSR GETSECTOR             ;GET A SECTOR
+2422     LDY CDIRD                 ;GET DIR DISPL
+2423     STA FILDIR+DFDSSN+1,Y     ;PUT SECTOR INTO DIR REC
+2424     LDA FCBLSN,X
+2425     STA FILDIR+DFDSSN,Y
+2426 ;.........................................................................
+2427     LDA #DFDINU+DFDOUT+DFDNLD ;SET DIR ENTRY IN USE 
+2428     STA FILDIR+DFDFL1,Y
+2429     LDA #0                    ;SET NOT LOCKED
+2430     STA FILDIR+DFDCNT+1,Y     ;SET COUNT = 0
+2431     STA FILDIR+DFDCNT,Y
+2432 ;-------------------------------------------------------------------------
+2433     LDX #0
+2434 OPN2 LDA FNAME,X              ;MOVE FILE NAME
+2435     CMP #'?                   ;IF WILD CARD
+2436     BEQ OPN2A                 ;CHANGE TO BLANK
+2437     STA FILDIR+DFDPFN,Y       ;TO DIRECTORY
+2438 OPN2A = *
+2439     INY 
+2440     INX 
+2441     CPX #11
+2442     BCC OPN2
+2443 ;-------------------------------------------------------------------------
+2444     LDX CURFCB                ;RESTORE X REG
+2445     JSR WRTDIR                ;GO WRITE DIRECTORY
+2446 DHFOX2 = *
+2447     JSR SETFCB
+2448     JSR WRTN6                 ;FIX UP AS IF WRITE
+2449 OPN3 LDA #FCBFAS              ;SET NEW FILE
+2450     STA FCBFLG,X
+2451     JSR TSTDOS                ;IF NOT DOS
+2452     BNE DHFOX3                ;BR
+2453     JMP WRTDOS                ;ELSE DO IT
+2454 DHFOX3 = *
+2455     JMP GREAT
+2456 ;-------------------------------------------------------------------------
+2457 OPNER2 JSR ERDFULL            ;DIRECTORY FULL
+2458 ;
+2459 ;-------------------------------------------------------------------------
+2460 SETFCB = *
+2461     LDA #0                    ;CLEAR
+2462     STA FCBFLG,X ;FLAG
+2463 OPNF1 LDA SFNUM               ;MOVE FILE NUM TO FCB
+2464     ASL A
+2465     ASL A
+2466     STA FCBFNO,X
+2467     LDA #0
+2468     STA FCBDLN,X              ;DATA LENGTH
+2469     STA FCBCNT,X              ;SET CNT = 0
+2470     STA FCBCNT+1,X
+2471     RTS 
+2472 DFRDSU JSR SETFCB             ;SET UP FCB
+2473     LDY CDIRD                 ;MOVE START SECTOR TO LINK
+2474     LDA DFDFL1+FILDIR,Y       ;SET NEW
+2475     AND #DFDNLD               ;SECTOR
+2476     STA FCBSLT,X ;FLAG
+2477     LDA FILDIR+DFDSSN,Y
+2478     STA FCBLSN,X
+2479     LDA FILDIR+DFDSSN+1,Y
+2480     STA FCBLSN+1,X
+2481     JSR RDNSO                 ;READ 1ST SECTOR
+2482     RTS 
+3000     .PAGE "PUT BYTE"
+3001 ;=========================================================================
+3002 ;DFMPUT - PUT A FILE BYTE
+3003 ;=========================================================================
+3004 DFMPUT
+3005     STA SVDBYT
+3006     LDA ICDNO,X
+3007     STA ICDNO-IOCB+ZICB
+3008     JSR SETUP
+3009     LDY ENTSTK                ;CHK TO SEE IF ENTRY WASN'T FROM CIO
+3010     LDA STAK,Y                ;IF HI BYTE RTS IS NOT IN OS ADDR
+3011     CMP #OSBTM                ;SPACE THEN A NON-CIO ENTRY
+3012     BCS FRMCIO                ;BR IF FROM CIO
+3013     LDA #0                    ;ELSE PREVENT FROM DOING BURST I/O
+3014     STA ICCOMZ
+3015 FRMCIO LDA FCBOTC,X           ;IF NOT OPEN
+3016     AND #OPOUT                ;OUTPUT
+3017     BEQ PUTER                 ;ERROR
+3018     LDY FCBDLN,X              ;GET DATA LENGTH
+3019     TYA 
+3020     CMP FCBMLN,X              ;IF SECTOR NOT FULL
+3021     BCC PUT1                  ;THEN BR
+3022     JSR WRTNXS                ;ELSE WRITE FULL SECTOR
+3023     BCS PEOF                  ;BR IF EOF
+3024     JSR WTBUR                 ;TEST BURST
+3025     LDY #0
+3026     BCS PUT1                  ;BR IF NOT BURST
+3027     LDA (ICBALZ),Y            ;PUT NEXT BYTE
+3028     STA SVDBYT                ;AFTER BURST AREA
+3029 ;-------------------------------------------------------------------------
+3030 PUT1 INC FCBDLN,X             ;INC DATA LEN
+3031     LDA SVDBYT                ;GET DATA BYTE
+3032     STA (ZSBA),Y              ;AND PUT IN SECTOR BUFFER
+3033 ;.........................................................................
+3034     LDA #FCBFSM               ;INDICATE SECTOR MODIFIED
+3035     ORA FCBFLG,X
+3036     STA FCBFLG,X
+3037 ;-------------------------------------------------------------------------
+3038     JMP GREAT                 ;DONE
+3039 ;-------------------------------------------------------------------------
+3040 PUTER JMP ERDVDC
+3041 PEOF JMP ERREOF
+3042     .PAGE "BURST I/O"
+3043 ;=========================================================================
+3044 ;TEST BURST I/O AND DO IF POSSIBLE
+3045 ;=========================================================================
+3046 WTBUR LDA FCBFLG,X            ;IF NOT AQUIRING SECTORS
+3047     BPL NOBURST               ;THEN UPDATE AND
+3048     BMI TBURST                ;NO BURST
+3049 ;-------------------------------------------------------------------------
+3050 RTBUR LDA #0                  ;SET READ TYPE
+3051 ;-------------------------------------------------------------------------
+3052 TBURST STA BURTYP             ;SET BURST TYPE
+3053     LDA ICCOMZ                ;IF CMD
+3054     AND #2                    ;IS TEXT MODE
+3055     BEQ NOBURST               ;THEN NO BURST
+3056 ;.........................................................................
+3057     JSR TBLEN                 ;IF USER BUFFER LESS
+3058     BCS NOBURST               ;THEN SECTOR, NO BURST
+3059 ;.........................................................................
+3060     LDA ICBALZ                ;MOVE USER BUFFER
+3061     STA ZSBA                  ;ADDR TO SECTPOR
+3062     LDA ICBAHZ                ;BUFFER PTR
+3063     STA ZSBA+1
+3064 ;-------------------------------------------------------------------------
+3065 NXTBUR LDA BURTYP             ;GET I/O TYPE
+3066     BMI WRBUR                 ;BR IF WRITE
+3067 ;.........................................................................
+3068     JSR RDNXTS                ;DO SECTOR READ
+3069     BCC BBINC                 ;BR IF EOF
+3070     BCS BUREOF                ;BR RD EOF
+3071 ;-------------------------------------------------------------------------
+3072 NOBURST SEC                   ;INDICATE NO BURST
+3073     RTS 
+3074 ;-------------------------------------------------------------------------
+3075 WRBUR LDA DRVMDL              ;WRITE FULL SECTOR
+3076     STA FCBDLN,X              ;DATA COUNT
+3077 ;.........................................................................
+3078     TAY 
+3079     LDA (ZSBA),Y              ;SAVE DATA TO BE
+3080     STA SVD1                  ;TO BE CLOBBERED
+3081     INY 
+3082     LDA (ZSBA),Y              ;BY WRTNXT
+3083     STA SVD2
+3084     INY 
+3085     LDA (ZSBA),Y
+3086     STA SVD3
+3087 ;-------------------------------------------------------------------------
+3088     JSR WRTNXS                ;WRITE SECTOR
+3089 ;-------------------------------------------------------------------------
+3090     LDY DRVMDL                ;RESTORE CLOBBERED DATA
+3091     LDA SVD1
+3092     STA (ZSBA),Y
+3093     INY 
+3094     LDA SVD2
+3095     STA (ZSBA),Y
+3096     INY 
+3097     LDA SVD3
+3098     STA (ZSBA),Y
+3099 ;
+3100 ;-------------------------------------------------------------------------
+3101 BBINC CLC 
+3102     LDA ZSBA                  ;INC SECTOR
+3103     ADC FCBMLN,X              ;BUFFER ADDR BY
+3104     STA ZSBA                  ;ACTUAL DATA LEN
+3105     LDA ZSBA+1                ;GOT OT PUT
+3106     ADC #0
+3107     STA ZSBA+1
+3108 ;.........................................................................
+3109     SEC 
+3110     LDA ICBLLZ                ;DEC USER
+3111     SBC FCBMLN,X              ;BUFFER LEN BY
+3112     STA ICBLLZ                ;ACTUAL DATA LEN
+3113     LDA ICBLHZ                ;GOT OR PUT
+3114     SBC #0
+3115     NOP 
+3116     STA ICBLHZ
+3117 ;.........................................................................
+3118     JSR TBLEN                 ;IF USER BUF LEN
+3119     BCC NXTBUR                ;NOW >= SECTOR, DO AGAIN
+3120 ;-------------------------------------------------------------------------
+3121 BUREOF = *                    ;END OF BURSTING
+3122     LDA ZSBA                  ;MOVE FINAL ADDR BACK
+3123     STA ICBALZ                ;TO USER BUF PTR
+3124     LDA ZSBA+1
+3125     STA ICBAHZ
+3126 ;.........................................................................
+3127     LDY FCBBUF,X              ;RESTORE ZSBA
+3128     DEY 
+3129     JSR SSBA
+3130 ;-------------------------------------------------------------------------
+3131 BURST CLC 
+3132     RTS 
+3133 ;=========================================================================
+3134 ;TEST USER BUF LEN FOR BURST
+3135 ;=========================================================================
+3136 TBLEN = *
+3137     LDA DRVTYP                ;IF DRIVE NOT
+3138     CMP #1                    ;128 BYTE SECTOR TYPE
+3139     BNE TBL256                ;THEN DO 256 BYTE TEST
+3140 ;.........................................................................
+3141     LDA ICBLLZ
+3142     BMI BURST
+3143 ;-------------------------------------------------------------------------
+3144 TBL256 LDA ICBLHZ             ;IF BUF LEN HI >= 256
+3145     BNE BURST                 ;THEN CAN BURST
+3146     SEC 
+3147     RTS 
+3148     .PAGE "GET BYTE"
+3149 ;
+3150 ;=========================================================================
+3151 ;DFMGET - GET A FILE BYTE
+3152 ;=========================================================================
+3153 DFMGET = *
+3154     JSR SETUP                 ;GO SET UP
+3155     LDA FCBOTC,X              ;IF OPEN FOR
+3156     AND #OPDIR                ;DIR CNT
+3157     BEQ GET1
+3158     JMP GDCHAR                ;THEN GO TO DIR RTN
+3159 ;-------------------------------------------------------------------------
+3160 GET1 LDA FCBDLN,X             ;GET DATA LEN
+3161     CMP FCBMLN,X              ;TEST EMPTY SECTOR
+3162     BCC GET2                  ;BR IF NOT EMPTY
+3163     JSR RTBUR                 ;DO BURST IF POSSIBLE
+3164     JSR RDNXTS                ;GET NEXT SECTOR
+3165     BCC GET1                  ;BR IF NOT EOF
+3166 GEOF =  *
+3167     JMP ERREOF                ;ELSE EOF ERROR
+3168 ;-------------------------------------------------------------------------
+3169 GET2 TAY 
+3170     LDA (ZSBA),Y              ;GET DATA BYTE
+3171     STA SVDBYT                ;SAVE THE BYTE
+3172     INY 
+3173     TYA 
+3174     STA FCBDLN,X              ;AND SET NEW VALUE
+3175 EFLOOK = *
+3176     LDY FCBLSN,X              ;DO EOF LOOK AHEAD
+3177     BNE GET3                  ;IF LSN NOT ZERO
+3178     LDY FCBLSN+1,X            ;THEN
+3179     BNE GET3                  ;NOT EOF
+3180     CMP FCBMLN,X              ;IF LSN=0 THEN CHECK FOR
+3181     BCC GET3                  ;LAST BYTE
+3182     LDA #$03                  ;IF LAST BYTE THEN RTS
+3183     JMP RETURN
+3184 ;-------------------------------------------------------------------------
+3185 GET3 JMP GREAT
+3186     .PAGE "STATUS"
+3187 ;=========================================================================
+3188 ;DFMSTA - GET A FILE STATUS
+3189 ;=========================================================================
+3190 DFMSTA
+3191     JSR SETUP                 ;SETUP
+3192     JSR FNDCODE               ;DECODE FILE NAME
+3193     JSR SFDIR                 ;SEARCH FOR FILE
+3194     BCS SFNF                  ;BR NOT FOUND
+3195     JSR TSTLOCK               ;TEST LOCKED
+3196     JMP GREAT                 ;FILE EXISTS AND UNLOCKED
+3197 ;-------------------------------------------------------------------------
+3198 SFNF JMP ERFNF
+3199     .PAGE "CLOSE"
+3200 ;=========================================================================
+3201 ;DFMCLOSE - CLOSE A FILE
+3202 ;=========================================================================
+3203 DFMCLS
+3204     JSR SETUP
+3205     LDA FCBOTC,X              ;GET OPEN CODE
+3206     AND #OPOUT                ;IF NOT OUTPUT
+3207     BEQ CLDONE                ;THEN DONE
+3208 ;.........................................................................
+3209     ROL FCBFLG,X              ;IF NOT ACQUIRING SECTORS
+3210     BCC CLUPDT                ;THEN IS UPDATE
+3211 ;-------------------------------------------------------------------------
+3212     JSR WRTLSEC               ;WRITE LAST SECTOR
+3213 ;-------------------------------------------------------------------------
+3214     JSR RRDIR                 ;GO GET DIRECTORY
+3215     LDA FCBCNT+1,X            ;GET CNT OF SECTORS
+3216     PHA 
+3217     LDA FCBCNT,X
+3218     PHA 
+3219 ;.........................................................................
+3220     LDA FCBOTC,X              ;GET OPEN CODE
+3221     AND #OPAPND               ;IF NOT APPEND
+3222     BEQ CLOUT                 ;BR
+3223 ;-------------------------------------------------------------------------
+3224     JSR DFRDSU                ;ELSE SET UP FOR READ
+3225 APP1 JSR RDNXTS               ;READ TO EOF
+3226     BCC APP1
+3227 ;.........................................................................
+3228     LDA FCBSSN,X              ;MOVE START SECTOR
+3229     STA FCBLSN,X              ;TO EOF LINK SECTOR
+3230     LDA FCBSSN+1,X
+3231     STA FCBLSN+1,X
+3232     JSR WRTN2                 ;THEN WRITE AS NOT EOF
+3233 ;------------------------------------------------------------------------- 
+3234 CLOUT LDY CDIRD               ;GET DIR DISPL
+3235     CLC 
+3236     PLA 
+3237     ADC FILDIR+DFDCNT,Y
+3238     STA FILDIR+DFDCNT,Y
+3239     PLA 
+3240     ADC FILDIR+DFDCNT+1,Y
+3241     STA FILDIR+DFDCNT+1,Y
+3242 ;.........................................................................
+3243     LDA #DFDINU+DFDNLD        ;SET ENTRY TO IN USE
+3244     STA FILDIR+DFDFL1,Y
+3245     JSR WRTDIR                ;WRITE DIR
+3246     JSR WRTVTOC ;WRITE VTOC
+3247 ;-------------------------------------------------------------------------
+3248 CLDONE LDA #0                 ;CLEAR OPEN CODE
+3249     STA FCBOTC,X
+3250     JMP FGREAT
+3251 ;-------------------------------------------------------------------------
+3252 CLUPDT = *
+3253     ROL FCBFLG,X              ;IF SECTOR NOT MODIFIED
+3254     BCC CLDONE                ;THEN DONE
+3255     JSR WRCSIO                ;ELSE WRITE IT
+3256     JMP CLDONE                ;THEN DONE
+3257 ;-------------------------------------------------------------------------
+3258     .PAGE 
+3259 ;-------------------------------------------------------------------------
+3260 ;RE-READ DIR RECORD
+3262 RRDIR = *
+3263     LDA FCBFNO,X              ;GET FILE NUMBER
+3264     LSR A
+3265     LSR A
+3266     STA SFNUM
+3267 ;
+3268 ;.........................................................................
+3269     JSR FNSHFT                ;SET ACU=FILE NO/64
+3270     STA CDIRS                 ;TO GET DIR SECTOR
+3271     JSR FNSHFT                ;SET ACU TO REM=16
+3272     JSR FNSHF1
+3273     ASL A
+3274     STA CDIRD                 ;TO GET DIR DISPL
+3275 ;-------------------------------------------------------------------------
+3276     JMP RDDIR
+3277 FNSHFT LDA #0
+3278 FNSHF1 LDY #3                 ;SHIFT 3 BITS OF
+3279 FNSHF2 ASL FCBFNO,X           ;FILE NO INTO ACU
+3280     ROL A
+3281     DEY 
+3282     BNE FNSHF2
+3283     RTS 
+3284     .PAGE "DEVICE DEPENDENT COMMAND"
+3285 ;=========================================================================
+3286 ;DFMDDC - DEVICE DEPENDENT CMD EXECUTION 
+3287 ;=========================================================================
+3288 DFMDDC
+3289     JSR SETUP                 ;SET UP FOR EXECUTION
+3290     LDA ICCOM,X               ;GET COMMAND
+3291     CMP #254                  ;IS IT FORMAT
+3292     BEQ XFV                   ;BR IF
+3293     CMP #MAXDDC               ;TEST RANGE
+3294     BCS DVDCER                ;BR OUT OF RANGE
+3295     SEC 
+3296     SBC #$20                  ;SUBTRACT BASE OF CMDS
+3297     BCC DVDCER                ;BR OUT OF RANGE
+3298     ASL A
+3299     TAY 
+3300     LDA DVDCVT,Y
+3301     PHA                       ;PUSH EXECUTION ADDR
+3302     LDA DVDCVT+1,Y
+3303     PHA 
+3304     RTS 
+3305 ;-------------------------------------------------------------------------
+3306 DVDCVT
+3307     .DBYTE XRENAME-1          ;20-RENAME
+3308     .DBYTE XDELETE-1          ;21-DELETE
+3309     .DBYTE DVDCER-1           ;INVALID CMD
+3310     .DBYTE XLOCK-1            ;23-LOCK
+3311     .DBYTE XUNLOCK-1          ;24-UNLOCK
+3312     .DBYTE XPOINT-1           ;25-POINT
+3313     .DBYTE XNOTE-1            ;26-NOTE
+3314 ;-------------------------------------------------------------------------
+3315 MAXDDC = $27                  ;MAX DVDC+1
+3316 ;-------------------------------------------------------------------------
+3317 DVDCER JMP ERDVDC
+3318 XFV JMP XFORMAT               ;FORMAT VECTOR
+3319     .PAGE "RENAME"
+3320 ;=========================================================================
+3321 ;XRENAME - RENAME A FILE OR FILES
+3322 ;=========================================================================
+3323 XRENAME
+3324     JSR FNDCODE               ;DECODE FILE NAME 
+3325     STY TEMP2                 ;SAVE FNAME INDEX
+3326     JSR SFDIR                 ;GO FINE FILE IN DIR
+3327     BCC XRN1                  ;BR IF FOUND
+3328     JMP ERFNF
+3329 ;-------------------------------------------------------------------------
+3330 XRN1 JSR TSTLOCK              ;TEST LOCK
+3331     JSR TSTDOS                ;IF NOT DOS
+3332     BNE XRN1A                 ;THEN
+3333     JSR DELDOS                ;DON'T CHANGE SO
+3334 XRN1A
+3335     LDY TEMP2                 ;GET INDEX FOR END FN1
+3336     JSR FNDCNX                ;GO DECODE NEXT FILE NAME
+3337     JSR TSTDOS                ;IF NOT DOS
+3338     BNE XRN1B                 ;THEN
+3339     LDY CDIRD
+3340     LDA FILDIR+DFDSSN+1,Y
+3341     PHA 
+3342     LDA FILDIR+DFDSSN,Y
+3343     TAY                       ;A, Y NEW DOS
+3344     PLA 
+3345     JSR SETDSO                ;GO WRITE SECTOR ZERO
+3346 ;-------------------------------------------------------------------------
+3347 XRN1B
+3348     LDX #0
+3349     LDY CDIRD
+3350 ;-------------------------------------------------------------------------
+3351 XRN2 LDA FNAME,X              ;MOVE FILE NAME
+3352     CMP #'?                   ;FROM FNAME TO DIR ENT
+3353     BEQ XRN3                  ;BUT DON'T CHANGE WILD CARD
+3354     STA FILDIR+DFDPFN,Y       ;CHARS INDICATED IN FNAME
+3355 XRN3 INY 
+3356     INX 
+3357     CPX #11
+3358     BCC XRN2
+3359     LDX CURFCB                ;RESTORE X-REG
+3360 ;-------------------------------------------------------------------------
+3361     JSR WRTDIR                ;GO WRITE CIR DIR RECORD
+3362 ;-------------------------------------------------------------------------
+3363     JSR FNDCODE               ;GET OLD FILENAME AGAIN
+3364     JSR CSFDIR                ;CONTINUE SEARCH OF DIR
+3365     BCC XRN1                  ;BR IF FOUND ANOTHER
+3366 ;-------------------------------------------------------------------------
+3367     JMP FGREAT                ;GO TO GOOD ENDING
+3368     .PAGE "DELETE"
+3369 ;=========================================================================
+3370 ;XDELETE - DELETE ALL FILENAMES THAT MATCH 
+3371 ;=========================================================================
+3372 XDELETE
+3373     JSR FNDCODE               ;GO DECODE FILENAME
+3374     JSR SFDIR                 ;SEARCH DIR FOR FILENAME
+3375     BCS DFNF                  ;BR NOT FOUND
+3376 XDELX = *
+3377     JSR XDEL0
+3378     JSR TSTDOS
+3379     BNE XDELY
+3380     JSR DELDOS
+3381 XDELY
+3382 ;-------------------------------------------------------------------------
+3383 XDEL3 JSR WRTDIR              ;WRITE DIR ENTRY
+3384     JSR CSFDIR                ;LOOK FOR NEXT MATCH
+3385     BCC XDELX                 ;BR IF FOUND
+3386     JSR WRTVTOC
+3387     JMP FGREAT
+3388 ;-------------------------------------------------------------------------
+3389 XDEL0 JSR OPVTOC
+3390 ;-------------------------------------------------------------------------
+3391 XDEL1 LDY CDIRD               ;GET DIR DISPL
+3392     JSR TSTLOCK               ;GO TEST LOCK
+3393     LDA #DFDEDE               ;LOAD DELETED FLAG
+3394     STA FILDIR+DFDFL1,Y       ;DELETE FILE
+3395 ;-------------------------------------------------------------------------
+3396     JSR DFRDSU
+3397     JMP XDEL2A
+3398 ;-------------------------------------------------------------------------
+3399 XDEL2 JSR RDNXTS              ;READ NEXT SECTOR
+3400     BCS XDEL4
+3401 XDEL2A = *
+3402     JSR FRESECT               ;FREE CURRENT SECTOR
+3403     JMP XDEL2
+3404 ;-------------------------------------------------------------------------
+3405 XDEL4 = *
+3406     LDY #DVDWRQ               ;TURN ON WRITE REQ'D
+3407     LDA #$FF
+3408     STA (ZDRVA),Y
+3409     RTS 
+3410 ;-------------------------------------------------------------------------
+3411 DFNF JMP ERFNF                ;FILE NOT FOUND
+3412     .PAGE "LOCK AND UNLOCK"
+3413 ;=========================================================================
+3414 ;XLOCK   - LOCK A FILE
+3415 ;XUNLOCK - UNLOCK A FILE
+3416 ;=========================================================================
+3417 XLOCK
+3418     LDA #DFDLOC               ;SET LOCK
+3419     STA TEMP4
+3420     BNE XLCOM                 ;GO TO COMMON
+3421 XUNLOCK
+3422     LDA #0                    ;SET UNLOCK
+3423     STA TEMP4
+3424 ;-------------------------------------------------------------------------
+3425 XLCOM JSR FNDCODE             ;DECODE FILE NAME
+3426     JSR SFDIR                 ;FIND 1ST MATCH
+3427     BCC XLC1                  ;BR MATCH FOUND
+3428     JMP ERFNF                 ;BR NOT FOUND
+3429 ;-------------------------------------------------------------------------
+3430 XLC1 LDY CDIRD                ;GET CURRENT DISPL
+3431     LDA FILDIR+DFDFL1,Y       ;GET LOCK BYTE
+3432     AND #$DF                  ;TURN OFF LOCK
+3433     ORA TEMP4                 ;OR IN LOCK/UNLOCK
+3434     STA FILDIR+DFDFL1,Y       ;SET NEW LOCK BYTE
+3435     JSR WRTDIR                ;GO WRITE
+3436 ;-------------------------------------------------------------------------
+3437     JSR CSFDIR                ;LOOK FOR NEXT MATCH
+3438     BCC XLC1                  ;BR FOUND
+3439     JMP FGREAT                ;ELSE DONE
+3440 ;=========================================================================
+3441 ;TSTLOCK - TEST FILE LOCKED
+3442 ;=========================================================================
+3443 TSTLOCK
+3444     LDY CDIRD                 ;GET DIR DISPL
+3445     LDA FILDIR+DFDFL1,Y       ;LOAD LOCK BYTE
+3446     AND #DFDLOC               ;MASK LOCK BIT
+3447     BNE TLF                   ;BR IF LOCKED
+3448     RTS 
+3449 ;-------------------------------------------------------------------------
+3450 TLF JMP ERFLOCK
+3451     .PAGE "POINT"
+3452 ;=========================================================================
+3453 ;XPOINT - POINT REQUEST
+3454 ;=========================================================================
+3455 XPOINT
+3456     LDA FCBFLG,X              ;IF ARQ SECTORS
+3457     BMI PERR1                 ;POINT INVALID
+3458     LDA ICAUX4,X              ;IF REQUEST IS NOT
+3459     CMP FCBCSN+1,X            ;SAME AS CURRENT
+3460     BNE XP1                   ;THEN BR
+3461     LDA ICAUX3,X
+3462     CMP FCBCSN,X
+3463     BEQ XP2                   ;ELSE NO NEED TO CHANGE
+3464 ;-------------------------------------------------------------------------
+3465 XP1 LDA FCBFLG,X              ;IF NOT MODIFIED
+3466     BEQ XP1A                  ;BR
+3467     JSR WRCSIO                ;ELSE WRITE IT
+3468     LDA #0
+3469     STA FCBFLG,X
+3470 XP1A =  *
+3471     LDA ICAUX4,X
+3472     STA FCBLSN+1,X
+3473     LDA ICAUX3,X
+3474     STA FCBLSN,X
+3475     JSR RDNSO                 ;READ REQ SECTOR
+3476     BCS XPERR
+3477 ;-------------------------------------------------------------------------
+3478 XP2 LDA ICAUX5,X              ;TEST REQ DATA LEN
+3479     CMP FCBMLN,X              ;LESS THEN MAX
+3480     BCC XP3
+3481     BEQ XP3
+3482 XPERR = *
+3483     JMP ERRPDL                ;IF NOT THEN ERROR
+3484 ;-------------------------------------------------------------------------
+3485 XP3 STA FCBDLN,X              ;SET NEW DATA LEN
+3486     JMP GREAT
+3487 ;-------------------------------------------------------------------------
+3488 PERR1 JMP ERRPOT
+3489     .PAGE "NOTE"
+3490 ;=========================================================================
+3491 ;XNOTE - EXECUTE NOTE REQUEST
+3492 ;=========================================================================
+3493 XNOTE
+3494     LDA FCBDLN,X              ;DATA LENGTH VALUE
+3495     STA ICAUX5,X              ;TO AUX 2
+3496     LDA FCBCSN,X              ;CUR SEC NO (LO)
+3497     STA ICAUX3,X              ;TO AUX 3
+3498     LDA FCBCSN+1,X            ;CUR SEC NO (HI)
+3499     STA ICAUX4,X              ;TO AUX 4
+3500     JMP GREAT
+3501     .PAGE "FORMAT"
+3502 ;=========================================================================
+3503 ;XFORMAT - FORMAT A DISKETTE
+3504 ;=========================================================================
+3505 XFORMAT
+3506     LDA ZSBA+1                ;MOVE VTOC BUF ADR
+3507     STA DCBBUF+1              ;TO DCB
+3508     LDA ZSBA
+3509     STA DCBBUF
+3510     LDA #DCBCFD               ;FORMAT
+3511     STA DCBCMD                ;TO DCB
+3512     LDA #$40                  ;TELL SIO RECEIVING DATA
+3513     STA DCBSTA
+3514     LDX DRVTYP                ;GET DR TYPE 128 OR 256
+3515     LDA #$31                  ;BUS I.D.
+3516     LDY DSKTIM                ;GET FORMAT TIME OUT VALUE
+3517     JSR DSIO2                 ;GOTO LOCAL DISK HANDLER THEN SIO
+3518 ;-------------------------------------------------------------------------
+3519     BPL XF0                   ;IF NO ERRORS CONT FORMATING
+3520     CPY #$90                  ;ELSE CK FOR DEVICE DONE ERROR
+3521     BNE XFERR                 ;NO, THEN ERROR EXIT
+3522 ;-------------------------------------------------------------------------
+3523 TSTFMT = *                    ;ELSE CK FOR BAD SECTOR INFO
+3524     LDY #0                    ;RETURNED BY CONTROLLER
+3525     LDA (ZSBA),Y
+3526     CMP #$FF
+3527     BNE XFBAD                 ;BAD SECTORS RET ERR MSG
+3528     INY 
+3529     LDA (ZSBA),Y
+3530     CMP #$FF
+3531     BEQ XFERR                 ;NOT BAD SEC ERR, REQ ERR EXIT
+3532 XFBAD JMP ERDBAD
+3533 ;-------------------------------------------------------------------------
+3534 XFERR JMP RETURN              ;DO ERROR EXIT
+3535 ;-------------------------------------------------------------------------
+3536 XF0
+3537     LDA #0
+3538     TAY 
+3539 XF1 STA (ZDRVA),Y
+3540     INY 
+3541     BPL XF1
+3542 ;.........................................................................
+3543     LDY #0                    ;SET
+3544     LDA #2                    ;TYPE = 2
+3545     STA (ZDRVA),Y
+3546     INY 
+3547     LDA #$C3                  ;SET MSN AND
+3548     STA (ZDRVA),Y             ;NSA=107=2C3
+3549     INY 
+3550     INY 
+3551     STA (ZDRVA),Y
+3552     LDA #$02
+3553     DEY 
+3554     STA (ZDRVA),Y
+3555     INY 
+3556     INY 
+3557     STA (ZDRVA),Y
+3558 ;-------------------------------------------------------------------------
+3559     LDY #DVDSMP
+3560     LDA #$FF                  ;SET SECTOR MAP TO
+3561 XF2 STA (ZDRVA),Y             ;ALL ONES
+3562     INY 
+3563     CPY #DVDSMP+90
+3564     BNE XF2
+3565 ;-------------------------------------------------------------------------
+3566     LDA #$0F                  ;DEALOCATE 1ST 4 SECTORS
+3567     LDY #DVDSMP               ;FOR BOOT
+3568     STA (ZDRVA),Y
+3569 ;.........................................................................
+3570     LDY #DVDSMP+45            ;DEALLOCATE MIDDLE 9
+3571     LDA #0
+3572     STA (ZDRVA),Y             ;FOR
+3573     INY                       ;VTOC AND FILE DIR
+3574     LDA #$7F
+3575     STA (ZDRVA),Y
+3576 ;-------------------------------------------------------------------------
+3577     JSR WRTVTOC               ;WRITE THE VTOC
+3578 ;-------------------------------------------------------------------------
+3579     LDA #0                    ;0 FILLE DIR SECTORS
+3580     TAY 
+3581 XF3 STA FILDIR,Y              ;USE FILE DIR BUFFER
+3582     INY 
+3583     BPL XF3
+3584 ;-------------------------------------------------------------------------
+3585     LDA #7                    ;WRITE TO ALL 8 DIR SECTORS
+3586     STA CDIRS
+3587 XF4 JSR WRTDIR
+3588     DEC CDIRS
+3589     BPL XF4
+3590 ;-------------------------------------------------------------------------
+3591     JSR DELDOS                ;SET NO DOS
+3592 ;-------------------------------------------------------------------------
+3593     JMP FGREAT                ;DONE
+3594     .PAGE "LIST DIRECTORY"
+3595 ;=========================================================================
+3596 ;LISTDIR - LIST THE DIRECTORY
+3597 ;-------------------------------------------------------------------------
+3598 ;GDCHAR  - GET NEXT DIR CHARACTER
+3599 ;=========================================================================
+3600 ;THE DIRECTORY IS LISTED VIA OPEN LIST DIRECTORY
+3601 ;FUNCTION. EACH DIR ENTRY THAT MATCHES THE
+3602 ;FILE SPEC IS CONVERTED TO A PRINTABLE FORMAT 
+3603 ;INTO A SECTOR BUFFER. THE GET BYTE ENTRY IS
+3604 ;USED TO GET THE PRINTABLE CHARACTERS ONE
+3605 ;AT A TIME. THE LAST LINE PRINTED IS ALWAYS
+3606 ;A COUNT OF THE NUMBET OF SECTORS IN USE
+3607 ;AND THE NUMBER REMAINING AVAILABLE SECTORS 
+3608 ;-------------------------------------------------------------------------
+3609 LISTDIR
+3610     LDA #0
+3611     STA TEMP4
+3612     JSR SFDIR                 ;SEARCH FOR A FILE NAME
+3613     BCC LDENT1                ;BR IF FOUND
+3614     BCS LDCNT                 ;BR IF NOT FOUND
+3615 ;-------------------------------------------------------------------------
+3616 GDCHAR
+3617     BIT TEMP4                 ;TEST FLAG
+3618     BMI LDDONE                ;BR IF ALL DONE
+3619 ;-------------------------------------------------------------------------
+3620     LDY TEMP4                 ;GET COUNT OF CHARS SENT
+3621     LDA (ZSBA),Y              ;GET NEXT CHAR
+3622     STA SVDBYT                ;IN SVDBYT
+3623     INC TEMP4                 ;INC COUNT
+3624     CMP #EOL                  ;TEST IF EOL DONE
+3625     BNE GDCRTN                ;BR NOT EOL
+3626     CPY #17                   ;WAS THIS AN ENTRY
+3627     BCS LDENT                 ;BR IF IT WAS
+3628     LDA #$80                  ;ELSE INDICATE END
+3629     STA TEMP4                 ;IN TEMP4
+3630 ;-------------------------------------------------------------------------
+3631 GDCRTN JMP GREAT              ;DONE
+3632 ;-------------------------------------------------------------------------
+3633 LDENT LDA #0                  ;CLEAR CHAR COUNTER
+3634     STA TEMP4
+3635     JSR CSFDIR                ;SEARCH FOR NEXT MATCH
+3636     BCS LDCNT                 ;BR NO MORE MATCHES
+3637 LDENT1
+3638     JSR FDENT                 ;FORMAT ENTRY
+3639     JMP GREAT                 ;DONE
+3640 ;-------------------------------------------------------------------------
+3641 LDCNT JSR RDVTOC              ;READ VTOC
+3642     LDY #DVDNSA+1             ;GET # SECTOR AVR
+3643     LDA (ZDRVA),Y
+3644     PHA 
+3645     DEY 
+3646     LDA (ZDRVA),Y
+3647     TAY 
+3648     PLA 
+3649 ;-------------------------------------------------------------------------
+3650     JSR CVDX                  ;AND CONVERT
+3651 ;-------------------------------------------------------------------------
+3652     LDY #3                    ;SET EOL
+3653     LDX #FSCML-1              ;PUT IN CUTE
+3654 MVFSCM LDA FSCM,X ;MSG
+3655     STA (ZSBA),Y
+3656     INY 
+3657     DEX 
+3658     BPL MVFSCM
+3659     JSR CVDY
+3660 ;-------------------------------------------------------------------------
+3661     LDA #0                    ;SET CHAR CNT
+3662     STA TEMP4
+3663     JMP FGREAT
+3664 ;-------------------------------------------------------------------------
+3665 LDDONE
+3666     JMP ERREOF                ;END OF FILE
+3667 ;-------------------------------------------------------------------------
+3668 FSCM .BYTE "SROTCES EERF "
+3669 FSCML = *-FSCM
+4000     .PAGE 
+4001 ;=========================================================================
+4002 ;FORMAT DIR ENTRY INTO A SECTOR BUFFER
+4003 ;=========================================================================
+4004 FDENT
+4005     LDY #0                    ;START AT DISPL ZERO
+4006     LDA #$20                  ;START WITH A BLANK
+4007     STA (ZSBA),Y
+4008     LDX CDIRD
+4009     LDA FILDIR+DFDFL1,X
+4010     AND #DFDLOC               ;BUT IF FILE LOCKED
+4011     BEQ LD1
+4012     LDA #'*                   ;CHANGE TO AST
+4013     STA (ZSBA),Y
+4014 LD1 INY 
+4015     LDA #$20                  ;FOLLOWED BY A BLANK
+4016     STA (ZSBA),Y
+4017     INY 
+4018 ;-------------------------------------------------------------------------
+4019 LD2 LDA FILDIR+DFDPFN,X       ;MOVE THE 12 CHAR
+4020     STA (ZSBA),Y              ;FILE NAME
+4021     INX 
+4022     INY 
+4023     CPY #13
+4024     BCC LD2
+4025 ;.........................................................................
+4026     LDA #$20                  ;FOLLOWED BY A BLANK
+4027     STA (ZSBA),Y
+4028     INY 
+4029     STY TEMP4                 ;SAVE INDEX = 15
+4030 ;.........................................................................
+4031     LDX CDIRD
+4032     LDY FILDIR+DFDCNT,X       ;SET A,Y
+4033     LDA FILDIR+DFDCNT+1,X     ;=SECTOR COUNT
+4034 ;-------------------------------------------------------------------------
+4035 CVDX
+4036     LDX #100                  ;CONVERT AND MOVE
+4037     JSR CVDIGIT               ;100S DIGIT
+4038     LDX #10
+4039     JSR CVDIGIT               ;10S DIGIT
+4040     TYA 
+4041     JSR STDIGIT               ;lS DIGIT
+4042 ;-------------------------------------------------------------------------
+4043     LDY #17                   ;THEN PUT OUT
+4044 CVDY LDA #EOL                 ;AND EOL
+4045     STA (ZSBA),Y
+4046     LDY #0
+4047     STY TEMP4                 ;SET CHAR CNT = 0
+4048     RTS 
+4049 ;-------------------------------------------------------------------------
+4050 CVDIGIT STX TEMP3             ;SAVE DIGIT VALUE
+4051     LDX #$FF
+4052 ;-------------------------------------------------------------------------
+4053 CVD1 STA TEMP2                ;SAVE CURR VALUE HI
+4054     STY TEMP1                 ;AND LOW
+4055     INX                       ;INC DIGIT COUNTER
+4056     SEC                       ;SUBRTACT DIGIT VALUE
+4057     LDA TEMP1                 ;FROM CUR VALUE
+4058     SBC TEMP3
+4059     TAY 
+4060     LDA TEMP2
+4061     SBC #0
+4062     BCS CVD1                  ;IF NOT GONE MINUS, DO AGAIN
+4063 ;-------------------------------------------------------------------------
+4064     TXA                       ;DIGIT TO ACU
+4065 STDIGIT ORA #$30              ;PLUS ASCII ZERO
+4066     LDY TEMP4                 ;GET OUTPUT INDEX
+4067     STA (ZSBA),Y              ;AND SET DIGIT
+4068     INC TEMP4                 ;INC OUTPUT INDEX
+4069     LDA TEMP2                 ;LOAD VALUE HI
+4070     LDY TEMP1                 ;AND VALUE LO
+4071     RTS 
+4072     .PAGE "FILE NAME DECODE"
+4073 ;=========================================================================
+4074 ;FNDCODE - DECODE A FILE NAME
+4075 ;=========================================================================
+4076 ;THE USER FILENAME IS POINTED TO BY 
+4077 ;ZBUFP, IT IS ON THE FORM P.X WHERE P
+4078 ;IS THE PRIMARY FILE NAME (I TO 8 CHARS)
+4079 ;AND X IS THE EXTENDED FILE NAME
+4080 ;(0 TO 4 CHARS). THE PERIOD IS OPTIONAL
+4081 ;(IF NOT PRESENT, THEN NO EXTENSION).
+4082 ;THE DECODED FILENAME WILL BE 12 CHARS
+4083 ;IN LENGTH. THE P FIELD WILL BE
+4084 ;LEFT JUSTIFIED IN THE 1ST 8 BYTES.
+4085 ;THE X FIELD WILL BE LEFT JUSTIFIED IN
+4086 ;THE LAST 4 BYTES. BLANKS ARE USED
+4087 ;TO PAD THE FIELDS TO FULL SIZE.
+4088 ;IF THE USER SPECIFIED P OR X FILEDS
+4089 ;CONTAIN MORE THAN 8 OR 4 CHARS, THEN THE 
+4090 ;EXTRA CHARS ARE IGNORED. THE '*'
+4091 ;WILD CARD CHAR WILL CAUSE THE REST
+4092 ;OF THE FIELDS TO FILLED WITH THE
+4093 ;'?' WILD CARD CHAR. ANY NON-ALPHANUMERIC 
+4094 ;CHAR TERMINATES THE FILENAME.
+4095 ;-------------------------------------------------------------------------
+4096 FNDCODE
+4097     LDA ICBAL,X
+4098     STA ZBUFP
+4099     LDA ICBAH,X
+4100     STA ZBUFP+1
+4101     LDY #2                    ;FIND THE 'D'
+4102 FD0A LDA (ZBUFP),Y
+4103     DEY 
+4104     BMI FNDERR                ;BR IF 256 CHARS SEEN
+4105     CMP #':
+4106     BNE FD0A
+4107 FD0B
+4108     INY 
+4109 ;-------------------------------------------------------------------------
+4110 FNDCNX
+4111     LDX #11                   ;CLEAR FILENAME TO BLANKS
+4112     LDA #$20
+4113 FD0 STA FNAME,X
+4114     DEX 
+4115     BPL FD0
+4116 ;.........................................................................
+4117     LDX #0                    ;SET FNAME CHAR CNT TO 0
+4118     STX EXTSW                 ;SET NOT IN EXTENSION
+4119 ;
+4120 ;-------------------------------------------------------------------------
+4121 FD1 INY                       ;INC ZBUFP INDEX
+4122     LDA (ZBUFP),Y             ;GET BUF CHAR
+4123 ;.........................................................................
+4124     CMP #'*                   ;TEST FOR WILD CARDS
+4125     BNE FD3                   ;BR NOT WILD CARD
+4126 ;-------------------------------------------------------------------------
+4127 FD2 LDA #'?                   ;LOAD ? WILD CARD
+4128     JSR FDSCHAR               ;GO STORE IT
+4129     BCC FD2                   ;BR IF PORX NOT FULL
+4130     BPL FD1                   ;BR IF AT START OF X
+4131     BMI FDEND                 ;BR IF AT X END
+4132 ;-------------------------------------------------------------------------
+4133 FD3 CMP #'.                   ;WAS CHAR FIELD SEPERATOR
+4134     BNE FD4                   ;BR IF NOT
+4135     BIT EXTSW                 ;WAS THERE ALREADY 1 CHAR
+4136     BMI FDEND                 ;BR IF WAS END
+4137     LDX #8                    ;ADV FNAME INDEX TO XFIELD
+4138     ROR EXTSW                 ;SET EXTSW - MINUS
+4139     BCC FD1                   ;CONT WITH NEXT CHAR
+4140 ;-------------------------------------------------------------------------
+4141 FD4 CMP #'?                   ;WAS IT WILD CARD
+4142     BEQ FD6                   ;BR IF WILD CARD
+4143 ;-------------------------------------------------------------------------
+4144     CMP #'A                   ;IS CHAR ALPHA
+4145     BCC FD5                   ;BR NOT ALPHA
+4146     CMP #$5B                  ;TEXT HI ALPHA
+4147     BCC FD6                   ;BR IF NOT APLHA
+4148 ;-------------------------------------------------------------------------
+4149 FD5 CPX #0                    ;IF FIRST CHAR NOT
+4150     BEQ FNDERR                ;ALPHA THEN ERROR
+4151 ;.........................................................................
+4152     CMP #$30                  ;IS CHAR NUMERIC
+4153     BCC FDEND                 ;BR NOT NUMERIC (END OF NAME)
+4154     CMP #$3A                  ;TEST NUMERIC HI
+4155     BCS FDEND                 ;BR NO NUMBER
+4156 ;-------------------------------------------------------------------------
+4157 FD6 JSR FDSCHAR               ;STORE THE CHAR
+4158     JMP FD1                   ;AND CONTINUE WITH NEXT
+4159 ;-------------------------------------------------------------------------
+4160 FDEND LDX CURFCB              ;RESTORE X REG
+4161     RTS 
+4162 ;-------------------------------------------------------------------------
+4163 FNDERR JMP ERRFN              ;INDICATE FILENAME ERROR
+4164     .PAGE 
+4165 ;=========================================================================
+4166 ;FDSCHAR - STORE FILENAME CHAR
+4167 ;=========================================================================
+4168 ;ON ENTRY 
+4169 ;A = CHAR
+4170 ;X = NEXT FN POSITION
+4171 ;
+4172 ;ON EXIT
+4173 ;CARRY - SET IF FIELD FULL
+4174 ;MINUS - IF START OF EXECUTION
+4175 ;PLUS  - IF END OF EXECUTION
+4176 ;-------------------------------------------------------------------------
+4177 FDSCHAR
+4178     CPX #8                    ;AT EXECUTION
+4179     BCC FDSC2                 ;BR IF NOT
+4180     BEQ FDSC1                 ;BR IF 1ST CHAR OF
+4181 ;-------------------------------------------------------------------------
+4182     CPX #12                   ;AT END OF EXIT
+4183     BCC FDSC2                 ;BR NOT AT END
+4184     RTS 
+4185 ;-------------------------------------------------------------------------
+4186 FDSC1 BIT EXTSW               ;DO NOT STORE CHAR UNLESS
+4187     BMI FDSC2                 ;PERIOD WAS SEEN
+4188     RTS 
+4189 ;-------------------------------------------------------------------------
+4190 FDSC2 STA FNAME,X             ;SET CHAR INTO NAME
+4191     INX                       ;INCTONEXTCHAR
+4192     CLC 
+4193     RTS 
+4194     .PAGE "DIRECTORY SEARCH"
+4195 ;=========================================================================
+4196 ;SFDIR  - SEARCH FILE DIRECTORY
+4197 ;CSFDIR - FILE DIRECTORY SEARCH
+4198 ;=========================================================================
+4199 ;THE FILE DIRECTORY IS SEARCHED FOR THE 
+4200 ;FILENAME IN FNAME. THE SEARCH STARTS
+4201 ;AT THE CENTRAL SECTOR+1 AND WILL CONTINUE 
+4202 ;FOR UP TO A TOTAL OF 8 SECTORS. WHEN
+4203 ;TESTING FOR FNAME MATCH, '?' FNAME
+4204 ;CHARS WILL ALWAYS MATCH THE CORESPONDING 
+4205 ;DIR FILENAME CHAR. IF A MATCH IS FOUND
+4206 ;CDIRS CONTAINS THE RELATIVE DIRECTORY SECTOR 
+4207 ;NUMBER (0-7) AND CDIRD (AND THE Y REG)
+4208 ;CONTAINS THE DISPLACEMENT OF THE ENTRY.
+4209 ;AFTER A MATCH HAS BEEN FOUND, THE DIRECTORY CAN
+4210 ;BE SEARCHED FOR ANOTHER MATCH VIA THE CSFDIR 
+4211 ;ENTRY POINT. IF A MATCH HAS NOT BEEN FOUND 
+4212 ;THEN DHOLES AND DHOLED WILL POINT TO A
+4213 ;DIRECTORY HOLE THAT CAN BE USED.
+4214 ;IF DHOLED = FF THEN THE DIRECTORY IS FULL.
+4215 ;THE CARRY IS RETURNED CLEAR IF FILE FOUND, 
+4216 ;SET IF FILE NOT FOUND.
+4217 ;-------------------------------------------------------------------------
+4218 SFDIR
+4219     LDA #$FF                  ;INIT TO -1
+4220     STA DHOLES                ;DIR HOLE SECTOR
+4221     STA CDIRS                 ;CUR DIR SECTOR
+4222     STA SFNUM                 ;FILE NUMBER
+4223     LDA #$70                  ;INIT TO -16 (-ENTRY LENGTH)
+4224     STA CDIRD                 ;CUR DIR DISPL
+4225 ;-------------------------------------------------------------------------
+4226 CSFDIR
+4227     INC SFNUM
+4228     CLC 
+4229     LDA CDIRD                 ;CDIRD=CDIRD+ENTRY LEN
+4230     ADC #DFDELN
+4231     BPL SFD2                  ;IF RESULT <128 THEN BR
+4232 ;ELSE AT END OF DIR SECT
+4233     INC CDIRS                 ;INC TO NEXT DIR SECTOR
+4234     LDA #8                    ;TEST END OF DIR
+4235     CMP CDIRS
+4236     BCC SFD1                  ;BR NOT END
+4237     BEQ SDRTN
+4238 ;-------------------------------------------------------------------------
+4239 SFD1 JSR RDDIR                ;READ THE NEXT DIR RECORD
+4240     LDA #0                    ;SET DIR DISPL = 0
+4241 ;-------------------------------------------------------------------------
+4242 SFD2 STA CDIRD                ;SET NEW DIR DISPL
+4243     TAY                       ;PUT DISPL IN Y AS INDEX
+4244 ;-------------------------------------------------------------------------
+4245     LDA FILDIR+DFDFL1,Y ;GET FLAG 1
+4246     BEQ SFDSH                 ;BR IF UNUSED (END OF USED ENTRIES)
+4247     BMI SFDSH                 ;BR IF DELETED
+4248     AND #DFDOUT               ;IF OPEN OUTPUT
+4249     BNE CSFDIR                ;DON'T FIND IT
+4250 ;-------------------------------------------------------------------------
+4251 ;ENTRY IN USE, TEST FOR MATCH
+4252     LDX #0                    ;TEST MATCH ON 12 CHARS
+4253 SFD3 LDA FNAME,X              ;FILE NAME CHAR
+4254     CMP #'?                   ;IS FNC WILD CARD
+4255     BEQ SFD4                  ;THEN IT MATCHES
+4256     CMP FILDIR+DFDPFN,Y       ;ELSE IT MUST MATCH FO
+4257     BNE CSFDIR                ;IF NOT MATCH THEN TRY NEXT
+4258 SFD4 INX                      ;INC CHAR CNT
+4259     INY 
+4260     CPX #11                   ;TEST ALL
+4261     BNE SFD3                  ;AND CONTINUE CHECK
+4262 ;-------------------------------------------------------------------------
+4263     CLC                       ;WE HAVE A MATCH
+4264     BCC SDRTN
+4265 ;-------------------------------------------------------------------------
+4266 SFDSH
+4267     LDA DHOLES                ;IF DHOLES NOT MINUS
+4268     BPL SFDSH1                ;THEN ALREADY HAVE A GOOD HO
+4269 ;-------------------------------------------------------------------------
+4270 ;ELSE
+4271 ;
+4272     LDA CDIRS                 ;MOVE CURR DISPL SECTOR
+4273     STA DHOLES                ;AND CURRENT DIR DISPL
+4274     LDA CDIRD                 ;TO HOLE SECTOR AND DISPL
+4275     STA DHOLED
+4276     LDA SFNUM                 ;SAVE HOLE
+4277     STA DHFNUM                ;FILE NUMBER
+4278 ;
+4279 SFDSH1 LDA FILDIR+DFDFL1,Y    ;IF HOLE WAS A DELETED
+4280     BMI CSFDIR                ;ENTRY THEN CONTINUE
+4281 ;-------------------------------------------------------------------------
+4282 ;ELSE WE ARE AT END OF
+4283 ;
+4284     SEC                       ;USED ENTRIES THUS FILE NOT FOUND
+4285 SDRTN LDX CURFCB              ;RESTORE X REG
+4286     RTS 
+4287     .PAGE "WRITE DATA SECTOR"
+4288 ;-------------------------------------------------------------------------
+4289 ;WRTNXS - WRITE NEXT SECTOR
+4290 ;-------------------------------------------------------------------------
+4291 WRTNXS
+4292     LDA FCBFLG,X              ;IF ACQUIRING SECTORS
+4293     BMI WRTN1                 ;THEN NOT UPDATE
+4294 ;-------------------------------------------------------------------------
+4295     ASL A                     ;IF SECTOR NOT MODIFIED
+4296     BPL WRU1                  ;THEN DON'T IT
+4297 ;-------------------------------------------------------------------------
+4298     ASL A
+4299     STA FCBFLG,X              ;TURN OFF FLAG BITS
+4300     JSR WRCSIO                ;WRITE CURRENT SECTOR
+4301     BMI WRNERR                ;BR IF BAD I/O
+4302 WRU1 JMP RDNXTS               ;ELSE READ NEXT SECTOR
+4303 ;-------------------------------------------------------------------------
+4304 WRTN1 JSR GETSECTOR           ;GET A NEW SECTOR
+4305 ;-------------------------------------------------------------------------
+4306 WRTLSEC LDA FCBDLN,X          ;GET DATA LEN
+4307 WRTLS1 LDY DRVLBT             ;INTO LAST BYTE
+4308     STA (ZSBA),Y              ;OF SECTOR
+4309 ;-------------------------------------------------------------------------
+4310 WRTN2 LDA FCBLSN+1,X          ;MOVE LINK SECTOR
+4311     ORA FCBFNO,X              ;PLUS FILE NUM
+4312     LDY DRVMDL                ;TO BYTES 126,127
+4313     STA (ZSBA),Y              ;OF SECTOR BUFF
+4314     INY 
+4315     LDA FCBLSN,X
+4316     STA (ZSBA),Y
+4317 ;-------------------------------------------------------------------------
+4318     JSR WRCSIO                ;WRITE SECTOR
+4319     BPL WRTN5                 ;BR NOT ERROR
+4320 ;-------------------------------------------------------------------------
+4321 WRNERR LDA DCBSTA             ;SAVE ERROR STATUS
+4322     STA TEMP4
+4323     LDA #0                    ;CLOSE FILE
+4324     STA FCBOTC,X
+4325     LDA TEMP4                 ;RECOVER ERROR CODE
+4326     JMP RETURN
+4327 ;-------------------------------------------------------------------------
+4328 WRTN5
+4329     INC FCBCNT,X              ;INC SECTOR CNT
+4330     BNE WRTN6
+4331     INC FCBCNT+1,X
+4332 WRTN6
+4333     JSR MVLSN                 ;LINK TO CUR
+4334     LDA #0
+4335     STA FCBLSN,X              ;LINK= 0
+4336     STA FCBLSN+1,X
+4337     STA FCBDLN,X              ;DLN = 0
+4338     LDA DRVMDL
+4339     STA FCBMLN,X
+4340 WRNRTS
+4341     CLC 
+4342     RTS 
+4343 ;-------------------------------------------------------------------------
+4344 WRCSIO SEC                    ;WRITE CUR SECTOR
+4345 RWCSIO LDA FCBCSN+1,X
+4346     LDY FCBCSN,X
+4347     JMP DSIO
+4348 ;-------------------------------------------------------------------------
+4349 MVLSN LDA FCBLSN,X            ;MOVE LINK
+4350     STA FCBCSN,X
+4351     LDA FCBLSN+1,X
+4352     STA FCBCSN+1,X
+4353     RTS 
+4354 ;-------------------------------------------------------------------------
+5000     .PAGE "READ DATA SECTOR"
+5001 ;=========================================================================
+5002 ;RDNXTS - READ NEXT SECTOR
+5003 ;=========================================================================
+5004 RDNXTS
+5005     LDA FCBFLG,X              ;IF NOT UPD MODE
+5006     BEQ RDNSO                 ;BR
+5007     JMP WRTNXS                ;ELSE WRITE FIRST
+5008 RDNSO = *
+5009     LDA FCBLSN,X              ;IF LSN NOT
+5010     ORA FCBLSN+1,X            ;ZERO
+5011     BNE RDNS1                 ;BR
+5012     SEC                       ;ELSE EOF
+5013     RTS 
+5014 RDNS1 JSR MVLSN               ;MOVE LINK TO CURRENT
+5015     CLC                       ;READ
+5016     JSR RWCSIO                ;CURRENT SECTOR
+5017     BMI RDIOER                ;BR IF OK READ
+5018 ;=========================================================================
+5019 ;ELSE GOTO I/O ERROR
+5020 ;=========================================================================
+5021     LDY DRVMDL
+5022     LDA (ZSBA),Y              ;TEST FOR SAME
+5023     AND #$FC                  ;FILE NO
+5024     CMP FCBFNO,X
+5025     BNE RDFNMM                ;IF NOT THEN ERROR
+5026 ;-------------------------------------------------------------------------
+5027     LDA (ZSBA),Y              ;MOVE LINK SECTOR
+5028     AND #$03
+5029     STA FCBLSN+1,X
+5030     INY 
+5031     LDA (ZSBA),Y
+5032     STA FCBLSN,X
+5033 ;.........................................................................
+5034     INY                       ;INC TO LEN BYTE
+5035     LDA (ZSBA),Y              ;GET LEN BYTE
+5036     PHA                       ;SAVE IT
+5037     LDA FCBSLT,X              ;GET SECTOR LEN TYPE
+5038     BNE RDNS3                 ;BR IF NEW TYPE
+5039 ;-------------------------------------------------------------------------
+5040     PLA                       ;GET LEN
+5041     BMI RDNS2                 ;BR IF OLD SHORT SECTOR
+5042     LDA #125                  ;ELSE SET FULL SECTOR
+5043 RDNS2 AND #$7F                ;TURN OFF MSB
+5044     PHA                       ;BALANCE STACK
+5045 ;-------------------------------------------------------------------------
+5046 RDNS3 PLA 
+5047     STA FCBMLN,X              ;SET MAX LEN
+5048 ;-------------------------------------------------------------------------
+5049     LDA #0                    ;SET CUR DATA LEN = 0
+5050     STA FCBDLN,X
+5051     CLC 
+5052     RTS 
+5053 RDIOER JSR ERRIO              ;1/0 ERROR
+5054 RDFNMM = *                    ;FILE NUMBER MISMATCH
+5055     LDA ICCOM,X
+5056     CMP #$21                  ;WAS THIS DELETE
+5057     BEQ RDDELE                ;BR IF DELETE
+5058     JSR ERFNMM                ;BR NOT DELETE
+5059 RDDELE SEC                    ;INDICATE EOF TO DELETE
+5060     RTS 
+5061 ;-------------------------------------------------------------------------
+5062     .PAGE "READ/WRITE DIR"
+5063 ;=========================================================================
+5064 ;RDDIR/WRDIR READ/WRITE DIRECTORY
+5065 ;=========================================================================
+5066 RDDIR CLC                     ;SET READ
+5067     BCC DIRIO
+5068 ;-------------------------------------------------------------------------
+5069 WRTDIR SEC                    ;SET WRITE
+5070 ;-------------------------------------------------------------------------
+5071 DIRIO PHP                     ;SAVE READ WRITE
+5072     LDA #FILDIR/256           ;MOVE BUF ADDR
+5073     STA DCBBUF+1              ;TO DCB
+5074     LDA #FILDIR&255
+5075     STA DCBBUF
+5076 ;.........................................................................
+5077     CLC 
+5078     LDA CDIRS                 ;CDIRS+
+5079     ADC #$69                  ;(40*18)/2)+1
+5080     TAY                       ;INTO A,Y
+5081     LDA #1                    ;IS DIR SECTOR NUMBER
+5082     ADC #0
+5083 ;-------------------------------------------------------------------------
+5084     JMP DSYSIO                ;GO DO SYSTEM I/O
+5085 ;-------------------------------------------------------------------------
+5086     .PAGE "READ/WRITE VTOC"
+5087 ;=========================================================================
+5088 ;RDVTOC/WRCTOC - READ/WRITE VTOC
+5089 ;=========================================================================
+5090 RDVTOC
+5091     LDY #DVDWRQ               ;IF WRITE REOD
+5092     LDA (ZDRVA),Y
+5093     BEQ RDVGO
+5094     RTS 
+5095 RDVGO CLC                     ;SET READ
+5096     BCC VTIO
+5097 ;-------------------------------------------------------------------------
+5098 WRTVTOC
+5099 WRVTOC LDY #DVDWRQ            ;TURN OFF
+5100     LDA #0                    ;WRITE READ
+5101     STA (ZDRVA),Y
+5102     SEC
+5103 ;
+5104 ;-------------------------------------------------------------------------
+5105 VTIO PHP                      ;SAVE R/W
+5106     LDA ZDRVA+1               ;MOVE BUF ADDR
+5107     STA DCBBUF+1              ;TO DCB
+5108     LDA ZDRVA
+5109     STA DCBBUF
+5110 ;.........................................................................
+5111     LDY #$68                  ;READ SECTOR
+5112     LDA #1                    ;(40 * 18 ) /2
+5113 ;-------------------------------------------------------------------------
+5114 DSYSIO
+5115     PLP 
+5116 DSYSIA
+5117     LDX DRVTYP                ;LOAD DRIVE TYPE
+5118     JSR BSIO                  ;GO DO I/O
+5119     BMI DSIOER                ;BR IF ERROR
+5120     RTS                       ;RETURN
+5121 ;
+5122 ;-------------------------------------------------------------------------
+5123 DSIOER CMP #DCBDER            ;WAS IT DATA ERROR
+5124     BEQ DEAD                  ;BR IF WAS
+5125     JMP ERRIO                 ;ELSE USER PROBLEM
+5126 ;-------------------------------------------------------------------------
+5127 DEAD JMP ERRSYS               ;FATAL ERROR
+5128 ;-------------------------------------------------------------------------
+5129 ;OPEN VTOC
+5130 ;-------------------------------------------------------------------------
+5131 OPVTOC
+5132     JSR RDVTOC                ;READ IT
+5133     JMP WRTVTOC               ;THEN WRITE IT
+5134 ;-------------------------------------------------------------------------
+5135 ;INSURES NOT PROTECTED
+5136 ;-------------------------------------------------------------------------
+5137     .PAGE "FREE SECTOR"
+5138 ;=========================================================================
+5139 ;FRESECT - FREE CURRENT SECTOR
+5141 FRESECT
+5142     LDA FCBCSN,X
+5143     ORA FCBCSN+1,X
+5144     BEQ FSRTS
+5145     LDA #0
+5146     LDY #3                    ;DIVIDE SECTOR #
+5147 FS1 LSR FCBCSN+1,X            ;BY 3 TO GET BYTE NO
+5148     ROR FCBCSN,X              ;WITH REM IN ACU
+5149     ROR A
+5150     DEY 
+5151     BNE FS1
+5152 ;-------------------------------------------------------------------------
+5153     LDY #5
+5154 FS2 ROR A                     ;TO FOR BYT BIT NO
+5155     DEY 
+5156     BNE FS2
+5157 ;-------------------------------------------------------------------------
+5158     TAY                       ;BIT NO (0-7) INTO Y
+5159     LDA #0
+5160     SEC                       ;SHIFT IN' A BIT
+5161 FS3 ROR A                     ;TO PROPER LOCATION
+5162     DEY 
+5163     BPL FS3
+5164     PHA                       ;SAVE MASK
+5165     LDA FCBCSN,X              ;GET BYTE NO
+5166     ADC #DVDSMP               ;ADD OFFSET TO SMAP
+5167     TAY                       ;RESULT IS VTOC INDEX
+5168 ;.........................................................................
+5169     PLA                       ;GET BIT MASK
+5170     ORA (ZDRVA),Y             ;OF BIT TO BIT MAP
+5171     STA (ZDRVA),Y             ;AND SET RESULTS
+5172 ;.........................................................................
+5173     LDY #DVDNSA               ;INC NO OF SECTORS AVAIL
+5174     LDA (ZDRVA),Y
+5175     CLC 
+5176     ADC #1
+5177     STA (ZDRVA),Y
+5178     INY 
+5179     LDA (ZDRVA),Y
+5180     ADC #0
+5181     STA (ZDRVA),Y
+5182 ;-------------------------------------------------------------------------
+5183 FSRTS = *
+5184     RTS 
+5185 ;-------------------------------------------------------------------------
+5186     .PAGE "GET SECTOR"
+5188 ;=========================================================================
+5189 ;GET SECTOR - GET A FREE SECTOR FOR USE IN FCB AT X REG.
+5190 ;=========================================================================
+5191 ;THE SECTOR NUMBER IS PLACED IN FCBLSN
+5192 ;THE SEARCH FOR A FREE SECTOR STARTS
+5193 ;AT THE DVDSMP BYTE. SECTORS ARE
+5194 ;NUMBERED SEQUENTIALLY FROM ZERO TO
+5195 ;MAXSM WITH THE LEFT BIT OF THE DVDSMP
+5196 ;BEING WITH ZERO.
+5197 ;-------------------------------------------------------------------------
+5198 GETSECTOR
+5199     LDY #DVDSMP-1             ;SET Y TO START MAP-l
+5200 ;-------------------------------------------------------------------------
+5201 GS1 INY                       ;INC SMAP INDEX
+5202     CPY #90+DVDSMP            ;AT END OF MAP?
+5203     BCS GSERR                 ;BR IF AT END
+5204     LDA (ZDRVA),Y             ;GET A MAP BYTE
+5205     BEQ GS1                   ;BR NO FREE SECTOR IN BYTE
+5206 ;-------------------------------------------------------------------------
+5207     STY TEMP1                 ;SAVE MAP INDEX
+5208     PHA                       ;DEC NO OF SECTORS AVAIL
+5209     SEC
+5210     LDY #DVDNSA
+5211     LDA (ZDRVA),Y
+5212     SBC #1
+5213     STA (ZDRVA),Y
+5214     INY 
+5215     LDA (ZDRVA),Y
+5216     SBC #0
+5217     STA (ZDRVA),Y
+5218 ;.........................................................................
+5219     INY                       ;SET READ REQD
+5220     LDA #$FF
+5221     STA (ZDRVA),Y
+5222 ;.........................................................................
+5223     PLA 
+5224     LDY #$FF                  ;SET BIT COUNTER =-1
+5225 ;-------------------------------------------------------------------------
+5226 GS2 INY                       ;SHIFT MAP BYTE
+5227     ASL A                     ;UNTIL A FREE SECTOR
+5228     BCC GS2                   ;FOUND
+5229     STY TEMP2                 ;SAVE BIT NUMBER
+5230 GS3 LSR A                     ;AND SHIFT BYTE
+5231     DEY                       ;BACKS TO ITS ORIGINAL
+5232     BPL GS3                   ;POSITION AND PUT IT
+5233     LDY TEMP1                 ;BACK INTO THE MAP
+5234     STA (ZDRVA),Y
+5235 ;
+5236 ;-------------------------------------------------------------------------
+5237     SEC                       ;SECTOR NAP BYTE
+5238     LDA TEMP1                 ;=DISPL-DVDSMP
+5239     SBC #DVDSMP
+5240 ;.........................................................................
+5241     LDY #0
+5242     STY TEMP1                 ;CLEAR SECT NO HI
+5243 ;-------------------------------------------------------------------------
+5244 GS4 ASL A                     ;MULT REL SECTOR MAP
+5245     ROL TEMP1
+5246     INY 
+5247     CPY #3
+5248     BCC GS4
+5249 ;.........................................................................
+5250     CLC 
+5251     ADC TEMP2                 ;ADD BIT NO TO
+5252     STA FCBLSN,X              ;SECTOR #
+5253     LDA TEMP1                 ;AND PUT INTO
+5254     ADC #0                    ;FCBLSN
+5255     STA FCBLSN+1,X
+5256 ;-------------------------------------------------------------------------
+5257     RTS 
+5258 ;-------------------------------------------------------------------------
+5259 GSERR JMP ERRNSA              ;NO SECTOR AVAIL
+5260 ;-------------------------------------------------------------------------
+5261     .PAGE "SETUP ROUTINE"
+5262 ;=========================================================================
+5263 ;SETUP - A ROUTINE USED FOR ALL COMMANDS 
+5264 ;=========================================================================
+5265 ;TO SET UP FMS CONTROL CELLS TO ACCESS A PARTICULAR FILE.
+5266 ;-------------------------------------------------------------------------
+5267 SETUP
+5268     LDA #$9F                  ;INIT ERROR CODE
+5269     STA ERRNO                 ;TO ZERO
+5270     STX CURFCB                ;SAVE FCB
+5271 ;.........................................................................
+5272     TSX 
+5273     INX 
+5274     INX 
+5275     STX ENTSTK
+5276 ;.........................................................................
+5277     LDX CURFCB                ;GET CURRENT FCB
+5278     LDY ICDNOZ                ;MOVE DRIVE NO
+5279     STY DCBDRV                ;TO DCB
+5280     DEY                       ;DEC FOR ACCESS TO TABLES
+5281     LDA DBUFAL,Y              ;MOVE WRITE BUFFER
+5282     STA ZDRVA                 ;ADD TO ZERO PAGE PTR
+5283     LDA DBUFAH,Y
+5284     STA ZDRVA+1
+5285 ;.........................................................................
+5286     LDA DRVTBL,Y              ;GET DRIVE TYPE
+5287     BEQ DERR1                 ;BR IF NOT EXISTS
+5288     STA DRVTYP                ;SAVE TYPE
+5289 ;.........................................................................
+5290     TAY                       ;MOVE MAX DATA LEN
+5291     LDA DRVMDL,Y              ;AND LAST SECTOR BYTE
+5292     STA DRVMDL                ;DISPL TO LAST OF
+5293     LDA DRVLBT,Y              ;TABLES
+5294     STA DRVLBT
+5295 ;.........................................................................
+5296     LDY FCBBUF,X              ;GET SECTOR BUF #
+5297     DEY                       ;DEC TO ACCESS TBL
+5298     BPL SSBA                  ;BR IF ONE IS ALLOCATED
+5299 ;.........................................................................
+5300     LDY #0                    ;IF NON ALLOCATED
+5301 GSB1 LDA SECTBL,Y             ;TRY TO FIND ONE
+5302     BEQ GSB4                  ;BR ONE FOUND
+5303 GSB2 INY                      ;DEC TRY COUNT
+5304     CPY #16
+5305     BCC GSB1                  ;BR MORE TO TRY
+5306 ;-------------------------------------------------------------------------
+5307 GSB3 JMP ERRNSB               ;NO SECTOR BUFFERS AVAIL
+5308 ;-------------------------------------------------------------------------
+5309 GSB4 LDA DRVTYP               ;FOUND ONE IF 256 BYTES
+5310     LSR A                     ;DRIVE NEEDED TO CONT
+5311     BCS GSB5                  ;BR NOT 256 BYTES
+5312     INY                       ;ELSE TRY NEXT CONTIG
+5313     CPY #16                   ;TEST END OF BUFFERS
+5314     BCS GSB3                  ;AND BR IF NO MORE
+5315     LDA SECTBL,Y              ;ELSE SEE IF ITS THREE
+5316     BNE GSB2                  ;BR NOT FREE
+5317     DEY 
+5318 ;.........................................................................
+5319     LDA #$80                  ;ALLOCATE SECOND OF 2
+5320     STA SECTBL+1,Y
+5321 ;-------------------------------------------------------------------------
+5322 GSB5 LDA #$80                 ;ALLOCATE FIRST OR ONLY
+5323     STA SECTBL,Y
+5324     TYA 
+5325     STA FCBBUF,X              ;PUT BUF NO INTO FCB
+5326     INC FCBBUF,X              ;INC BUF NO SO NOT ZERO
+5327 ;-------------------------------------------------------------------------
+5328 SSBA LDA SABUFL,Y             ;MOVE BUFFER ADDR
+5329     STA ZSBA                  ;TO ZERO PAGE PTR
+5330     LDA SABUFH,Y
+5331     STA ZSBA+1
+5332 ;
+5333 ;-------------------------------------------------------------------------
+5334     RTS 
+5335 ;-------------------------------------------------------------------------
+5336 DERR1 JMP ERRDNO ;BAD DRIVE NO
+5337     .PAGE 
+5338 ;=========================================================================
+5339 ;FREE SECTOR BUFFERS
+5340 ;=========================================================================
+5341 FRESBUF = 7
+5342     LDY FCBBUF,X              ;GET BUF NO
+5343     BEQ FSBR                  ;BR IF NONE
+5344     DEY                       ;DEC FOR TBL ACCESS
+5345     LDA #0                    ;FREE
+5346     STA FCBBUF,X              ;IN FCR
+5347     STA SECTBL,Y              ;AND TABLE
+5348     LDA DRVTYP                ;IF 128 BYTES
+5349     LSR A                     ;DRIVE
+5350     BCS FSBR                  ;FREE ONLY ONE
+5351     LSR A                     ;ELSE
+5352     STA SECTBL+1,Y            ;FREE 2
+5353 FSBR RTS 
+5354 ;-------------------------------------------------------------------------
+5355     .PAGE "DATA SECTOR I/O"
+5356 ;=========================================================================
+5357 ;DSIO - DATA SECTOR I/O
+5358 ;=========================================================================
+5359 DSIO
+5360     PHA                       ;SAVE ACU DATA
+5361     LDA ZSBA                  ;WRITE SECTOR BUF
+5362     STA DCBBUF                ;ADR MOVED TO
+5363     LDA ZSBA+1                ;DCB
+5364     STA DCBBUF+1
+5365     PLA                       ;RESTORE ACU
+5366 ;-------------------------------------------------------------------------
+5367     LDX DRVTYP
+5368     JSR BSIO                  ;DO THE I/O
+5369     RTS 
+5370 ;-------------------------------------------------------------------------
+5371     .PAGE "WRITE DOS"
+5372 ;=========================================================================
+5373 ;WRTDOS - WRITE DOS TO DISK
+5374 ;=========================================================================
+5375 WRTDOS
+5376     LDY FCBCSN,X              ;MOVE START ADDR
+5377     LDA FCBCSN+1,X
+5378     JSR SETDSO                ;WRITE SECTOR 0
+5379     JSR WD0                   ;WRITE DOS
+5380     JMP GREAT
+5381 ;-------------------------------------------------------------------------
+5382 DELDOS
+5383     LDA #0                    ;SET FILE NOT EXISTS
+5384 DD1
+5385     STA DFSFLG
+5386 ;-------------------------------------------------------------------------
+5387 WRTSCO
+5388     LDA #FMSORG/256           ;MOVE FMS START
+5389     STA DCBBUF+1              ;ADDR TO DCB
+5390     LDA #FMSORG&255
+5391     STA DCBBUF
+5392 ;.........................................................................
+5393     LDA #0                    ;CLEAR SECTOR NO TO ZERO
+5394     STA DCBSEC
+5395     STA DCBSEC+1
+5396 ;-------------------------------------------------------------------------
+5397 WRNBS INC DCBSEC              ;INC SECTOR NO
+5398     LDX #1                    ;GET DRIVE TYPE
+5399     SEC 
+5400     JSR BSIOR                 ;DO THE WRITE
+5401 ;
+5402 ;.........................................................................
+5403     CLC 
+5404     LDA DCBBUF                ;INC SECT ADDR
+5405     ADC #128
+5406     STA DCBBUF
+5407     LDA DCBBUF+1
+5408     ADC #0
+5409     STA DCBBUF+1
+5410 ;.........................................................................
+5411     LDA DCBSEC                ;TEST FOR WRITE
+5412     CMP BRCNT                 ;OF ALL BOOT SECTORS
+5413     BNE WRNBS                 ;BR NOT ALL
+5414 ;-------------------------------------------------------------------------
+5415     RTS 
+5416 ;-------------------------------------------------------------------------
+5417 SETDSO STY DFLINK             ;SET LINK START
+5418     STA DFLINK+1
+5419     LDA DRVTYP
+5420     STA DFSFLG
+5421     LDY DRVMDL
+5422     STY BLDISP
+5423     BNE DD1                   ;GO WRITE SECTOR 0
+5424 ;-------------------------------------------------------------------------
+5425     .PAGE 
+5426 WD0 LDA DFLADR                ;MOVE FILE START ADDR
+5427     STA ZBUFP                 ;TO ZBUFP
+5428     LDA DFLADR+1
+5429     STA ZBUFP+1
+5430 ;-------------------------------------------------------------------------
+5431 WD1 LDY #0                    ;MOVE 125
+5432 WD2 LDA (ZBUFP),Y             ;BYTES OF DOS
+5433     STA (ZSBA),Y              ;TO SECTOR BUFFER
+5434     INY 
+5435     CPY DRVMDL
+5436     BCC WD2
+5437     TYA 
+5438     STA FCBDLN,X              ;SET DATA LEN
+5439 ;.........................................................................
+5440     JSR INCBA                 ;INC ZBUFP BY 125
+5441     CMP SASA+1                ;IF NOT END OR
+5442     BCC WD3                   ;PAST END OF DOS
+5443     BNE WD4                   ;THEN WRTNXS
+5444     LDA ZBUFP                 ;ELSE
+5445     CMP SASA                  ;DONE
+5446     BCC WD3
+5447     BNE WD4
+5448 ;-------------------------------------------------------------------------
+5449 WD3 JSR WRTNXS                ;WRITE NEXT SECTOR
+5450     JMP WD1
+5451 ;-------------------------------------------------------------------------
+5452 WD4 RTS                       ;RETURN, CLOSE WILL WRITE FINAL SECTOR
+5453 ;AND RETURN
+5454 ;-------------------------------------------------------------------------
+5455     .PAGE "TEST DOS FILE NAME"
+5456 ;=========================================================================
+5457 ;TSTDOS - TEST FOR DOS SYS FILE NAME;
+5458 ;=========================================================================
+5459 TSTDOS
+5460     LDY #11                   ;LOOK AT 12 CHARS
+5461 TDF1 LDA FNAME-1,Y            ;TEST DECODE FILENAME CHAR
+5462     CMP DFN-1,Y               ;WITH DOS FILENAME CHAR
+5463     BNE TDFR                  ;BR NOT MATCH
+5464     DEY 
+5465     BNE TDF1                  ;BR IF MORE, ELSE RTN EQ
+5466 TDFR RTS 
+5467 ;-------------------------------------------------------------------------
+5468 DFN .BYTE "DOS     SYS "
+5469 ;=========================================================================
+5470 ;ERROR ROUTINES
+5471 ;=========================================================================
+5472 ERDBAD INC ERRNO              ;BAD SECTOR AT FORMAT TIME
+5473 ERAPO INC ERRNO               ;ATTEMPT APPEND TO OLD TYPE FILE
+5474 ERRPOT INC ERRNO              ;POINT INVALID
+5475 ERFNF INC ERRNO               ;FILE NOT FOUND
+5476 ERDFULL INC ERRNO             ;DIRECTORY FULL
+5477 ERDVDC INC ERRNO              ;DEVICE COMMAND INVALID
+5478 ERFLOCK INC ERRNO             ;FILE LOCKED
+5479 ERRPDL INC ERRNO              ;POINT DATA LENGTH
+5480 ERRFN INC ERRNO               ;FILE NAME ERROR
+5481 ERFNMM INC ERRNO              ;FILE NUMBER MISMATCH
+5482 ERRSYS INC ERRNO              ;FATAL SYS DATA I/O ERROR
+5483 ERRNSA INC ERRNO              ;NO SECTOR AVAIL
+5484 ERRNSB INC ERRNO              ;NO SECTOR BUFFERS AVAIL
+5485 ERRDNO INC ERRNO              ;DRIVE NO ERROR
+5486 ;-------------------------------------------------------------------------
+5487     LDA ERRNO                 ;GET ERROR NUMBER
+5488 RETURN LDX CURFCB             ;GET CUR FCB NO
+5489     STA ICSTA,X               ;PUT IN FCB
+5490     LDX ENTSTK                ;GET ENTRY STACK PTR
+5491     TXS                       ;AND RESTORE
+5492     LDX CURFCB
+5493     TAY 
+5494     LDA SVDBYT                ;GET SAVED DATA BYTE
+5495     RTS 
+5496 ;-------------------------------------------------------------------------
+5497 ERRIO LDA DCBSTA              ;GET I/O ERROR CODE
+5498     BMI RETURN
+5499 ;-------------------------------------------------------------------------
+5500 FGREAT LDX CURFCB
+5501     JSR FRESBUF               ;FREE SECTOR BUFFER
+5502 GREAT LDA #1                  ;SET ALL OK
+5503     BNE RETURN
+5504 ERREOF LDA #$88               ;SET EOF CODE
+5505     BMI RETURN
+5506 ;-------------------------------------------------------------------------
+5507     .PAGE "MISC STORAGE"
+5508 ;=========================================================================
+5509 ;MISC NON-ZERO-PAGE STORAGE AREA
+5510 ;=========================================================================
+5511 DRVMDL .BYTE 0                ;MAX DATA LEN
+5512     .BYTE 125                 ;128 BYTE SECTOR
+5513     .BYTE 253                 ;256 BYTE SECTOR
+5514 ;-------------------------------------------------------------------------
+5515 DRVLBT .BYTE 0                ;DISPL TO LAST SECTOR BYTE
+5516     .BYTE 127                 ;128 BYTE SECTOR
+5517     .BYTE 255                 ;256 BYTE SECTOR
+5518 DRVTYP *= *+1                 ;DRIVE TYPE
+5519 RETRY *= *+1                  ;1/0 RETRY COUNTER
+5520 ENTSTK *= *+1                 ;ENTRY STACK LEVEL
+5521 CURFCB *= *+1                 ;CURRENT FCB (IOCB ALSO)
+5522 DHOLES *= *+1                 ;DIR HOLE SECTOR
+5523 DHOLED *= *+1                 ;DIR HOLE DISPL
+5524 DHFNUM *= *+1                 ;DIR HOLE FILE NO
+5525 CDIRD *= *+1                  ;CURRENT DIR DISPL
+5526 CDIRS *= *+1                  ;CURRENT DIR SECTOR
+5527 SFNUM *= *+1                  ;FILE NUMBER
+5528 SVDBYT *= *+1                 ;SAVED OUTPUT DATA BYTE
+5529 SVD1 *= *+1                   ;SAVE DATA BYTES
+5530 SVD2 *= *+1                   ;FOR WRITE BURST
+5531 SVD3 *= *+1
+5532 EXTSW
+5533 TEMP1 *= *+1                  ;TEMP1
+5534 TEMP2 *= *+1                  ;TEMP2
+5535 TEMP3 *= *+1                  ;TEMP3
+5536 TEMP4 *= *+1                  ;TEMP4
+5537 BURTYP *= *+1                 ;BURST I/O TYPE
+5538 ;.........................................................................
+5539 DRVTBL *= *+8                 ;DRIVE TABLE
+5540 SECTBL *= *+16
+5541 DBUFAL *= *+8                 ;VTOC BUFFER
+5542 DBUFAH *= *+8                 ;PTR FOR DRIVE N
+5543 SABUFL *= *+16                ;SECTOR BUFFER
+5544 SABUFH *= *+16                ;FOR SECTOR N
+5545 FNAME *= *+12                 ;FILE NAME
+5546 AFNAME *= *+12                ;AUXILLARY FILE NAME
+5547 ;.........................................................................
+5548 MDRV *= *+1                   ;MAX DR NO
+5549 ;.........................................................................
+5550 Z   =   *                     ;PUT ON SAME BOUNDRY AS PRODUCTION
+5551     *=  $1381                 ;VERSION
+5552     .PAGE "FILE CONTROL BLOCKS"
+5553 ;=========================================================================
+5554 ;FILE CONTROL BLOCK
+5555 ;=========================================================================
+5556 ;ONE FILE CONTROL BLOCK IS USED FOR EACH OPEN FILE. 
+5557 ;THE RELATIVE FCB USED RELATES DIRECTLY TO THE IOCB #
+5558 ;THAT OPENED THE FILE. THUS THERE ARE 8 FCBS.
+5559 ;  
+5560 ;THE FCB ARE (CONVIENTLY) THE SAME SIZE AS IOCBS. 
+5561 ;EACH FCB CONTAINS ALL THE INFORMATION REQUIRED
+5562 ;TO CONTROL THE PROCESSING ON AN OPEN FILE
+5563 ;-------------------------------------------------------------------------
+5564 ;
+5565 FCB
+5566 FCBFNO *= *+1                 ;FILE # LEFT JUSTIFIED
+5567 FCBOTC *= *+1                 ;OPEN TYPE CODE
+5568     *=  *+1                   ;SPARE
+5569 FCBSLT *= *+1                 ;FLAG FOR NEW SECTOR LEN TYPE
+5570 FCBFLG *= *+1                 ;WORKING FLAG
+5571 FCBMLN *= *+1                 ;MAX SECTOR DATA LEN
+5572 FCBDLN *= *+1                 ;CUR SECTOR BUF DATA LEN
+5573 FCBBUF *= *+1                 ;SECTOR BUF NO
+5574 FCBCSN *= *+2                 ;CUR SECTOR #
+5575 FCBLSN *= *+2                 ;LINK/ALLOCATE SECTOR #
+5576 FCBSSN *= *+2                 ;CUR FILE RELATIVE SECTOR #
+5577 FCBCRS
+5578 FCBCNT *= *+2                 ;SECTOR COUNT
+5579 FCBLEN = *-FCB                ;FCB LEN
+5580 ;-------------------------------------------------------------------------
+5581     *=  FCBLEN*7+* ;ALLOCATE 7 MORE FCBS 
+5582 ;-------------------------------------------------------------------------
+5583 ;OPEN CODE BITS
+5584 ;USED IN IOCB AUX1
+5585 ;- AND FCBOTC
+5586 ;-------------------------------------------------------------------------
+5587 OPIN =  $04                   ;INPUT
+5588 OPOUT = $08                   ;OUTPUT
+5589 OPDIR = $02                   ;LIST DIRECTORY
+5590 OPAPND = $01                  ;APPEND
+5591 ;-------------------------------------------------------------------------
+5592 FCBFAS = $80                  ;FCBFLG - ACQ SECTORS
+5593 FCBFSM = $40                  ;FCBFLG - SECTOR MODIFIED
+5594     .PAGE "FILE DIRECTORY"
+5595 ;=========================================================================
+5596 ;DISK FILE DIRECTORY
+5597 ;=========================================================================
+5598 ;THE FILE DIRECTORY OCCUPIES 8 CONSECUTIVE 
+5599 ;SECTORS STARTING AT THE CENTRAL SECTOR+1. 
+5600 ;EACH FILE DIRECTORY SECTOR CONTAINS 8 ENTRIES. 
+5601 ;THERE IS 1 ENTRY FOR EACH NAMED FILE.
+5602 ;
+5603 ;THERE ARE A TOTAL OF 64 NAMED FILES PER VOLUME
+5604 ;
+5605 ;THE FILE NUMBER IS USED THROUGH THE 
+5606 ;THE SYSTEM IS THE RELATIVE (TO ONE)
+5607 ;FILE DIRECTORY ENTRY NUMBER.
+5608 ;
+5609 ;THE EQUATES BELOW ARE FOR A SINCE NAMED
+5610 ;FILE ENTRY
+5611 ;-------------------------------------------------------------------------
+5612 DFDFL1 = 0                    ;FLAG1 (1)
+5613 DFDCNT = 1                    ;SECTOR COUNTER (LOW)
+5614 DFDSSN = 3                    ;START SECTOR NO (2)
+5615 DFDPFN = 5                    ;PRIMARY FILE NAME (8)
+5616 DFDXFN = 13                   ;EXTENDED FILE NAME (4)
+5617 DFDELN = 16                   ;ENTRY LENGTH
+5618 ;-------------------------------------------------------------------------
+5619 ;DFDFL1 VALUE EQUATES
+5620 ;-------------------------------------------------------------------------
+5621 DFDEUU = 0                    ;ENTRY UNUSED
+5622 DFDEDE = $80                  ;ENTRY DELETED
+5623 DFDINU = $40                  ;ENTRY IN USE
+5624 DFDOUT = $01                  ;FILE OPEN FOR OUTPUT
+5625 DFDLOC = $20                  ;ENTRY LOCKED
+5626 DFDNLD = $02                  ;FILE HAS NEW TYPE SECTOR LEN BYTE
+5627 ;-------------------------------------------------------------------------
+5628 FILDIR *= *+256               ;RESUME FILE DIR SPACE
+5629 ;-------------------------------------------------------------------------
+5630     .PAGE "VOLUME DIRECTORY"
+5631 ;=========================================================================
+5632 ;DISK VOLUME DIRECTORY
+5633 ;=========================================================================
+5634 ;THE VOLUME DIRECTORY OCCUPIES THE CENTRAL VOLUME
+5635 ;SECTOR. THE VOLUME DIRECTORY CONTAINS INFORMATION
+5636 ;PERTAINING TO THE ENTIRE DISKETTE VOLUME.
+5637 ;-------------------------------------------------------------------------
+5638 ;THE LABELS BELOW, MAP THE VOLUME
+5639 ;DIRECTORY SECTOR.
+5640 ;-------------------------------------------------------------------------
+5641 DVDTCD = 0                    ;VOLUME DIRECTORY TYEP CODE (1)
+5642 ;-------------------------------------------------------------------------
+5643 ;USED TO DELI NATE MAJOR (1)
+5644 ;FMS SYSTEM FORMAT CHANGES
+5645 ;-------------------------------------------------------------------------
+5646 DVDMSN = 1                    ;MAX SECTOR NUMBER (1)
+5647 DVDNSA = 3                    ;NO SECTORS AVAIL
+5648 ;-------------------------------------------------------------------------
+5649 DVDWRQ = 5                    ;WRITE REQUIRED
+5650 DVDSMP = 10                   ;SECTOR MAP START
+5651 ;-------------------------------------------------------------------------
+5652 ;EACH BIT REPRESENTS A SECTOR
+5653 ;IF THE BIT IS ON THEN THE SECTOR
+5654 ;IS FREE AND AVAILABLE. IF THE
+5655 ;BIT IS OFF, THE SECTOR IS IN
+5656 ;USE OR BAD. THE MOST SIGNIFICANT
+5657 ;BIT OF THE FIRST BYTE IS SECTOR ZERO.
+5658     .PAGE "END OF FMS"
+5659 ;-------------------------------------------------------------------------
+5660 ENDFMS = *

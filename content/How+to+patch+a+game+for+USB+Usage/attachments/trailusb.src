@@ -1,0 +1,625 @@
+
+01000          .LI OFF
+01010 ****************************
+01020 ** 6502 USB DEVELOPMENT   **
+01030 ** (C) 2004 BY ABBUC      **
+01040 ** REGIONALGRUPPE FFM     **
+01050 ** USB HID BASE DRIVER    **
+01060 ** FOR USB SL811HS        **
+01070 ** VERSION 2.0 20041213   **
+01080 ** LICENSED UNDER THE     **
+01090 ** GNU PUBLIC LICENSE     **
+01100 ** (GPL) VERS. 2 OR LATER **
+01110 **                        **
+01120 ****************************
+01130 ;
+01140          .OR $9000
+01150          .OF "D:TRAILUSB.COM"
+01160 ;
+01170 ; SL811 MEMORY ADDRESSES
+01180 ; CHANGE ACCORDING TO YOUR
+01190 ; CONFIGURATION
+01200 USBSEL   = $D500
+01210 USBDTA   = $D501
+01220 ;
+01230 ; USB REGISTER SL811
+01240 ;
+01250 CTL      = $00 ; USBA HOST CTL
+01260 BUFADR   = $01 ; BUFFER ADDRESS
+01270 BUFLEN   = $02 ; BUFFER LEN
+01280 PIDEP    = $03 ; HOST PID
+01290 PKSTAT   = $03 ; PAKET STATUS
+01300 FNADDR   = $04 ; USB ADDR (WO)
+01310 MCNTRL   = $05 ; MAIN CONTROL
+01320 CDTASET  = $0E
+01330 SOFCNT   = $0F ; CNTRL 2 REG
+01340 SOFLOW   = $0E ; SOF LOW
+01350 INTSTAT  = $0D ; IRQ STATUS
+01360 ;
+01370 ; USB CONSTANTS
+01380 ;
+01390 ; INTENA AND INTSTAT MASKS
+01400 EP0DONE  = $01
+01410 EP1DONE  = $02
+01420 EP2DONE  = $04
+01430 EP3DONE  = $08
+01440 DMADONE  = $10
+01450 SOFRECV  = $20
+01460 USBRSET  = $40
+01470 DMASTAT  = $80
+01480 ;
+01490 ; ENDPOINT CONTROL REG
+01500 EPC0     = $00 ; ENDPOINT 0
+01510 EPC1     = $10 ; ENDPOINT 1
+01520 EPC2     = $20 ; ENDPOINT 2
+01530 EPC3     = $30 ; ENDPOINT 3
+01540 ;
+01550 ; ENDPOINT REGISTER OFFSET
+01560 ;
+01570 EPC      = $00 ; CONTROL
+01580 EPBA     = $01 ; BASE ADDRESS
+01590 EPBL     = $02 ; BASE LENGTH
+01600 EPPS     = $03 ; PACKET STATUS
+01610 EPTC     = $04 ; TRANSFERCOUNT
+01620 ;
+01630 ; PID VALUES
+01640 ;
+01650 SOFPID   = $05 ; SOF PID
+01660 INPID    = $90 ; PACKET ID
+01670 SETPID   = $D0 ; SET ADDRESS REQ
+01680 ;
+01690 ; SET ADDRESS PACKET
+01700 ;
+01710 SETADDR  .HX 0005010000000000
+01720 ;
+01730 ; SET CONFIG PACKET
+01740 ;
+01750 SETCONF  .HX 0009010000000000
+01760 ;
+01770 VCOUNT   = $D40B
+01780 CONSOL   = $D01F
+01790 ;
+01800 ------------------------------
+01810 USBRESET
+01820          LDA #$AE ; SET SOF
+01830          LDX #SOFCNT ; HIGH COUNT
+01840          JSR REGSTORE
+01850 ;
+01860          LDA #$08    ; RESET USB
+01870          LDX #MCNTRL ; FULLSPEED
+01880          JSR REGSTORE
+01890 ;
+01900          LDA #$10
+01910          JSR PAUSE
+01920 ;
+01930          LDA #00
+01940          LDX #MCNTRL
+01950          JSR REGSTORE
+01960 ;
+01970          RTS
+01980 ------------------------------
+01990 QUERYUSBRESET
+02000 ; OUT: A=0 NO USB RESET
+02010 ;    A!=0 USBRESET
+02020 ;
+02030          LDX #INTSTAT
+02040          JSR REGFETCH
+02050          AND #USBRSET
+02060          RTS
+02070 ------------------------------
+02080 CLEARIRQ
+02090          LDA #$FF
+02100          LDX #INTSTAT
+02110          JMP REGSTORE
+02120 ------------------------------
+02130 SPEED
+02140 ; OUT: A=0 LOW SPEED DEVICE
+02150 ;      A!=0 HIGH SPEED DEVICE
+02160 ;           OR ERROR
+02170 ;
+02180          JSR USBRESET
+02190          JSR CLEARIRQ
+02200          LDA #10
+02210          JSR PAUSE
+02220          JSR QUERYUSBRESET
+02230          BEQ .1 ; NO RESET
+02240          JSR CLEARIRQ
+02250          LDA #$FF
+02260          RTS
+02270 ;
+02280 .1       LDX #INTSTAT
+02290          JSR REGFETCH
+02300          AND #DMASTAT
+02310          BNE .2
+02320 ;
+02330 ; LOW SPEED
+02340 ;
+02350          LDA #$AE
+02360          LDX #SOFCNT
+02370          JSR REGSTORE
+02380 ;
+02390          LDA #$E0
+02400          LDX #CDTASET
+02410          JSR REGSTORE
+02420 ;
+02430          LDA #$05
+02440          LDX #MCNTRL
+02450          JSR REGSTORE
+02460 ;
+02470          JSR SETUPUSB
+02480          LDA #$00
+02490 ;
+02500 ; FULL SPEED OR ERROR
+02510 ;
+02520 .2
+02530          RTS
+02540 ------------------------------
+02550 SETUPUSB
+02560          LDA #$50
+02570          LDX #EPC0+EPPS
+02580          JSR REGSTORE
+02590 ;
+02600          LDA #$00
+02610          LDX #EPC0+EPTC
+02620          JSR REGSTORE
+02630 ;
+02640          LDA #$01
+02650          LDX #EPC0
+02660          JSR REGSTORE
+02670 ;
+02680          LDA #25
+02690          JSR PAUSE
+02700 ;
+02710          JSR CLEARIRQ
+02720          RTS
+02730 ------------------------------
+02740 INITDEVICE
+02750          LDA #08
+02760          LDX #MCNTRL
+02770          JSR REGSTORE
+02780 ;
+02790          LDA #14
+02800          JSR PAUSE
+02810 ;
+02820          LDA #$21
+02830          LDX #MCNTRL
+02840          JSR REGSTORE
+02850 ;
+02860          LDA #$10    ; $10 ADDR
+02870          LDX #BUFADR ; DATABUF
+02880          JSR REGSTORE
+02890 ;
+02900          LDA #$8     ; 8 BYTE
+02910          LDX #BUFLEN ; DATABUF
+02920          JSR REGSTORE
+02930 ;
+02940          LDA #$E0    ; 1MS EOP
+02950          LDX #SOFLOW
+02960          JSR REGSTORE
+02970 ;
+02980          LDA #$EE
+02990          LDX #SOFCNT
+03000          JSR REGSTORE
+03010 ;
+03020 ; SET BUFFER FOR SETUP-ADDRESS
+03030 ; REQUEST = 1
+03040 ;
+03050          LDY #8
+03060 .1       TYA
+03070          CLC
+03080          ADC #$F  ; BUF ADDR
+03090          TAX
+03100          LDA SETADDR-1,Y
+03110          JSR REGSTORE
+03120          DEY
+03130          BNE .1
+03140 ;
+03150          LDA #00     ; WE USE
+03160          LDX #FNADDR ; ADDR 0
+03170          JSR REGSTORE
+03180 ;
+03190          LDA #SETPID
+03200          LDX #PIDEP
+03210          JSR REGSTORE
+03220 ;
+03230 .2       LDA #07
+03240          JSR PROCESS
+03250          AND #04
+03260          BNE .2
+03270 ;
+03280          LDA #20
+03290          JSR PAUSE
+03300 ;
+03310          LDA #INPID
+03320          LDX #PIDEP
+03330          JSR REGSTORE
+03340 ;
+03350          LDA #03
+03360          JSR PROCESS
+03370 ;
+03380 ; SELECT CONFIGURATION 1
+03390 ;
+03400          LDY #8
+03410 .3       TYA
+03420          CLC
+03430          ADC #$F
+03440          TAX
+03450          LDA SETCONF-1,Y
+03460          JSR REGSTORE
+03470          DEY
+03480          BNE .3
+03490 ;
+03500          LDA #01
+03510          LDX #FNADDR ; NEW ADDR
+03520          JSR REGSTORE
+03530 ;
+03540          LDA #SETPID
+03550          LDX #PIDEP
+03560          JSR REGSTORE
+03570 ;
+03580 .4       LDA #07
+03590          JSR PROCESS
+03600          AND #04
+03610 ;
+03620          BNE .4
+03630 ;
+03640          LDA #INPID
+03650          LDX #PIDEP
+03660          JSR REGSTORE
+03670 ;
+03680          LDA #03
+03690          JSR PROCESS
+03700 ;
+03710          LDA #INPID
+03720          ORA #01
+03730          LDX #PIDEP
+03740          JSR REGSTORE
+03750 ;
+03760          RTS
+03770 ------------------------------
+03780 ; PRINT INLINE STRING
+03790 ; END MARKER '@'
+03800 ;
+03810 PRINT    PLA         get Return address
+03820          STA $D0     from Stack
+03830          PLA         and store
+03840          STA $D1     as pointer
+03850 ;
+03860 INCP     INC $D0     increase
+03870          BNE .1      pointer
+03880          INC $D1
+03890 .1       LDX #0      read Char from RAM
+03900          LDA ($D0,X)
+03910          CMP #'@     End?
+03920          BEQ ENDPR   yes==>
+03930          JSR PUTCHAR Print Char
+03940          JMP INCP    back to loop
+03950 ;
+03960 ENDPR    LDA $D1     store pointer
+03970          PHA         as new
+03980          LDA $D0     return address
+03990          PHA         on stack
+04000          RTS         continue pgm
+04010 ;            after text
+04020 ------------------------------
+04030 PUTCHAR  TAX         Print char
+04040          LDA $E407   with OS
+04050          PHA         Routine
+04060          LDA $E406
+04070          PHA
+04080          TXA
+04090          RTS         JUMP
+04100 ------------------------------
+04110 CR       LDA #$9B
+04120          JMP PUTCHAR
+04130 ------------------------------
+04140 WAITDEVICE
+04150          JSR PRINT
+04160          .HX 9B
+04170          .AS "ATARI USB HID DRIVER"
+04180          .HX 9B
+04190          .AS "Version 2.0 / GNU License"
+04200          .HX 9B
+04210          .AS "(c) 2004 ABBUC e.V."
+04220          .HX 9B
+04230          .AS "H. Reminder, T. Grasel, C. Strotmann"
+04240          .HX 9B9B40
+04250          JSR PRINTDEVICE
+04260          JSR CR
+04270          JSR PRINTVERSION
+04280          JSR CR
+04290          JSR PRINTCOPY
+04300          JSR CR
+04310          JSR CR
+04320          JSR PRINT
+04330          .AS "WAIT FOR DEVICE, [START] TO SKIP..."
+04340          .HX 9B40
+04350 .1       JSR SPEED
+04360          BEQ .2
+04370 ; QUERY CONSOL KEYS
+04380          LDA CONSOL
+04390          AND #1 ; START KEY
+04400          BEQ .3 ; SKIP USB
+04410          BNE .1
+04420 ;
+04430 .2       JSR PRINT
+04440          .AS "LOW SPEED DEVICE DETECTED!"
+04450          .HX 9B40
+04460 ;
+04470          JSR INITDEVICE
+04480          JSR PRINT
+04490          .AS "JOYSTICK INITILIZED."
+04500          .HX 9B40
+04510          JMP $E474
+04520 ;
+04530 .3       JSR PRINT
+04540          .AS "USB detection skipped,"
+04550          .HX 9B
+04560          .AS "no USB Driver installed!"
+04570          .HX 9B40
+04580          JMP $E474
+04590 ------------------------------
+04600 REGFETCH
+04610 ; IN:  X=USB REGISTER
+04620 ; OUT: A=USB DATA
+04630          STX USBSEL
+04640          LDA USBDTA
+04650          RTS
+04660 ------------------------------
+04670 REGSTORE
+04680 ; IN:  A=USB DATA
+04690 ;      X=USB REGISTER
+04700          STX USBSEL
+04710          STA USBDTA
+04720          RTS
+04730 ------------------------------
+04740 PAUSE
+04750 ; IN:  A=NUMBER OF 1/50 SEC
+04760          TAX
+04770 .1       LDA VCOUNT
+04780          BNE .1
+04790          DEX
+04800          BNE .1
+04810          RTS
+04820 ------------------------------
+04830 PROCESS
+04840 ; IN:  A=USB COMMAND
+04850 ; OUT: A=RETURNCODE
+04860          PHA
+04870          LDA #01
+04880          LDX #INTSTAT
+04890          JSR REGSTORE
+04900 ;
+04910          PLA
+04920          LDX #CTL
+04930          JSR REGSTORE
+04940 ;
+04950 .1       LDX #INTSTAT
+04960          JSR REGFETCH
+04970          AND #$01
+04980          BEQ .1
+04990 ;
+05000          LDX #PKSTAT
+05010          JSR REGFETCH
+05020          RTS
+05030 ------------------------------
+05040          .LI OFF
+05050 ****************************
+05060 ** 6502 USB DEVELOPMENT   **
+05070 ** (C) 2004 BY ABBUC      **
+05080 ** REGIONALGRUPPE FFM     **
+05090 ** DEVICE DRIVER FOR      **
+05100 ** LOGITECH RUMBLE PAD 2  **
+05110 ** VERSION 1.0 20041213   **
+05120 ** LICENSED UNDER THE     **
+05130 ** GNU PUBLIC LICENSE     **
+05140 ** (GPL) VERS. 2 OR LATER **
+05150 **                        **
+05160 ****************************
+05170 ; THIS FILE MUST BE INCLUDED
+05180 ; FROM USBHID.SRC!
+05190 ;
+05200 ; ATARI MEMORY LOCATIONS
+05210 ;
+05220 STICK0   = $0278
+05230 STICK1   = $0279
+05240 STRIG0   = $0284
+05250 STRIG1   = $0285
+05260 ;
+05270 ; USB JOYSTICK SHADOW REGISTER
+05280 ;
+05290 RPADLHH  = $0270
+05300 RPADLHV  = $0271
+05310 RPADRHH  = $0272
+05320 RPADRHV  = $0273
+05330 RPADDJY  = $0274
+05340 RPADBUT1 = $0275
+05350 RPADBUT2 = $0276
+05360 RPADMODE = $0277
+05370 ;
+05380 ------------------------------
+05390 ; THRESHOLD ANALOG->DIGITAL
+05400 THLEFT   .HX 60
+05410 THRIGHT  .HX A0
+05420 THUP     .HX 60
+05430 THDOWN   .HX A0
+05440 ------------------------------
+05450 POLLDEVICE
+05460 ;
+05470          LDA #03
+05480          JSR PROCESS
+05490 ;        AND #01
+05500 ;        BEQ .2  ; NO DATA
+05510 ;
+05520          LDX #$10
+05530          JSR REGFETCH
+05540          STA RPADLHH
+05550          LDX #$11
+05560          JSR REGFETCH
+05570          STA RPADLHV
+05580          LDX #$12
+05590          JSR REGFETCH
+05600          STA RPADRHH
+05610          LDX #$13
+05620          JSR REGFETCH
+05630          STA RPADRHV
+05640          LDX #$14
+05650          JSR REGFETCH
+05660          PHA         ; SAVE VALUE TO STACK
+05670          AND #$0F    ; CLEAR TO NIBBLE BIT 4-7
+05680          STA RPADDJY
+05690          PLA         ; RESTORE VALUE FROM STACK
+05700          LSR         ; MOVE TOP NIBBLE
+05710          LSR         ; DOWN
+05720          LSR
+05730          LSR
+05740          STA RPADBUT1 ; STORE IN SHADOW
+05750 ;
+05760          LDX #$15
+05770          JSR REGFETCH
+05780          STA RPADBUT2
+05790 ;
+05800          LDX #$16
+05810          JSR REGFETCH
+05820          STA RPADMODE
+05830 ;
+05840 .2       RTS
+05850 ------------------------------
+05860 USB2ATA
+05870          LDA #$0F
+05880          STA STICK0
+05890          STA STICK1
+05900          LDA #1
+05910          STA STRIG0
+05920          STA STRIG1
+05930 ;
+05940          LDA RPADBUT1
+05950          ORA RPADBUT2
+05960          BEQ GETSTICK1
+05970          LDA #0
+05980          STA STRIG0
+05990          STA STRIG1
+06000 ;
+06010 GETSTICK1
+06020          LDA STICK0
+06030          LDX RPADLHH
+06040          CPX THLEFT
+06050          BCC .1   ; LEFT
+06060          CPX THRIGHT
+06070          BCS .2   ; RIGHT
+06080          BCC .10
+06090 .1       EOR #$04 ; LEFT
+06100          BPL .3
+06110 .2       EOR #$08 ; RIGHT
+06120 .3       STA STICK0
+06130 .10
+06140          LDX RPADLHV
+06150          CPX THUP
+06160          BCC .11  ; UP
+06170          CPX THDOWN
+06180          BCS .12  ; DOWN
+06190          BCC GETSTICK2
+06200 .11      EOR #$01 ; UP
+06210          BNE .13
+06220 .12      EOR #$02 ; DOWN
+06230 .13      STA STICK0
+06240 GETSTICK2
+06250          LDA STICK1
+06260          LDX RPADRHH
+06270          CPX THLEFT
+06280          BCC .1   ; LEFT
+06290          CPX THRIGHT
+06300          BCS .2   ; RIGHT
+06310          BCC .10
+06320 .1       EOR #$04 ; LEFT
+06330          BPL .3
+06340 .2       EOR #$08 ; RIGHT
+06350 .3       STA STICK1
+06360 .10
+06370          LDX RPADRHV
+06380          CPX THUP
+06390          BCC .11  ; UP
+06400          CPX THDOWN
+06410          BCS .12  ; DOWN
+06420          BCC .20
+06430 .11      EOR #$01 ; UP
+06440          BNE .13
+06450 .12      EOR #$02 ; DOWN
+06460 .13      STA STICK1
+06470 .20      RTS
+06480 ------------------------------
+06490 LDASTICK
+06500          STX SAVE1
+06510          STY SAVE2
+06520          JSR POLLDEVICE
+06530          JSR USB2ATA
+06540          LDA STICK0
+06550          LDX SAVE1
+06560          LDY SAVE2
+06570          RTS
+06580 ------------------------------
+06590 LDXSTICK STA SAVE1
+06600          STY SAVE2
+06610          JSR POLLDEVICE
+06620          JSR USB2ATA
+06630          LDX STICK0
+06640          LDA SAVE1
+06650          LDY SAVE2
+06660          RTS
+06670 ------------------------------
+06680 LDASTRIG STX SAVE1
+06690          STY SAVE2
+06700          JSR POLLDEVICE
+06710          JSR USB2ATA
+06720          LDA STRIG0
+06730          LDX SAVE1
+06740          LDY SAVE2
+06750          RTS
+06760 ------------------------------
+06770 LDXSTRIG STA SAVE1
+06780          STY SAVE2
+06790          JSR POLLDEVICE
+06800          JSR USB2ATA
+06810          LDX STRIG0
+06820          LDA SAVE1
+06830          LDY SAVE2
+06840          RTS
+06850 ------------------------------
+06860 SAVE1    .HX 00
+06870 SAVE2    .HX 00
+06880 ------------------------------
+06890 PRINTDEVICE
+06900          JSR PRINT
+06910          .AS "Logitech analog Joypad Patch"
+06920          .HX 40
+06930          RTS
+06940 ------------------------------
+06950 PRINTVERSION
+06960          JSR PRINT
+06970 ------------------------------
+06980          .HX 40
+06990          RTS
+07000 ------------------------------
+07010 PRINTCOPY
+07020          JSR PRINT
+07030          .AS "(c) 20041214 C. Strotmann/ABBUC"
+07040          .HX 40
+07050          RTS
+07060 ------------------------------
+07070 PATCH
+07080 ; let's patch
+07090          .OR $26A9
+07100          JSR LDASTICK
+07110 ;
+07120          .OR $26BF
+07130          JSR LDXSTICK
+07140 ;
+07150          .OR $26A3
+07160          JSR LDASTRIG
+07170 ;
+07180          .OR $26B3
+07190          JSR LDXSTRIG
+07200 ------------------------------
+07210          .OR $02E0
+07220          .DA WAITDEVICE
+07230 ------------------------------

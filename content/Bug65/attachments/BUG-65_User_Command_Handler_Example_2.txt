@@ -1,0 +1,69 @@
+;**************************************************
+;  EQUATES INTO BUG/65:
+;
+LOADPOINT =  ????    ; to be determined by user!!
+LP       =   LOADPOINT ; just an abbreviation
+MCBEND   =   LP+$021F ; BUG/65 END CODE MSB
+DISPV    =   LP+$0209 ; DISPLAY CHAR
+USRCMD   =   LP+$0220 ; USER COMMAND VECTOR
+GET2HX   =   LP+$022C ; GET 2 HEX PARAMS
+HEXL     =   $FC     ; HEX PARAM 1 RESULT
+HEX2     =   $FE     ; HEX PARAM 2 RESULT
+ERRPAR   =   LP+$0235 ; REPORT PARAM ERROR
+DHXBYT   =   LP+$0238 ; DISPLAY HEX BYTE
+LSTPG0   =   LP+$0240 ; LAST BUG/65 P0 BYTE USED
+EOL      =   $9B     ; END OF LINE CHAR
+;
+;**************************************************
+         *=  USRCMD  ; PATCH US INTO BUG/65
+         JMP USERC1
+;
+         *=  LP+$2000 ; RIGHT AFTER BUG/65 CODE
+USERC1   CMP #'1     ; COMMAND "1" ?
+         BEQ CMDOK   ; YES
+         RTS         ; ELSE RTN EQUAL RESET - ERR
+;
+CMDOK    JSR GET2HX  ; GET START, END
+         LDA HEX1    ; MAKE SURE BOTH SPECIFIED
+         ORA HEX1+1
+         BEQ PARMER  ; OR ELSE ERROR
+         LDA HEX2
+         ORA HEX2+1
+         BNE PARMOK
+;
+PARMER   JMP ERRPAR  ; REPORT PARAM ERROR
+;
+PARMOK   LDX LSTPG0  ; LAST BUG/65 P0 BYTE
+;                         (WE'LL USE THE NEXT
+;                         FOR OUR ACCUMULATOR)
+         LDA #0      ; CLEAR ACCUMULATOR
+         STA 1,X
+         TAY         ; INIT Y PTR INDEX
+;
+LOOP     LDA HEX2+1  ; PAST END ADDRESS ?
+         CMP HEX1+1
+         BCC DONE    ; YES
+         BNE NXTEOR  ; NO
+         LDA HEX2
+         CMP HEX1
+         BCC DONE    ; YES
+;
+NXTEOR   LDA (HEX1),Y ; CALC EOR CHKSUM
+         EOR 1,X     ; EOR WITH ACCUM
+         STA 1,X     ; AND SAVE IN ACCUM
+         INC HEX1    ; BUMP PTR
+         BNE LOOP
+         INC HEX1+1
+         JMP LOOP
+;
+DONE     LDA #EOL    ; TO NEXT SCREEN LINE
+         JSR DISPV
+         LDX LSTPG0  ; RESTORE ACCUM ADDRESS
+         LDA 1,X     ; DISPLAY HEX RESULT
+         JSR DHXBYT
+         LDA #0      ; RTN OK (EQUAL SET)
+         RTS 
+;
+         *=  MCBEND  ; CHANGE BUG/65 CODE
+         .BYTE  >[*+$FF] ; END BYTE TO INCLUDE
+         .END        ; THAT'S ALL FOLKS

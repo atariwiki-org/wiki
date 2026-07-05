@@ -1,0 +1,74 @@
+            10 ; HELLO.ASM
+            20 ; ---------
+            30 ;
+            40 ; THIS ATARI ASSEMBLY PROGRAM
+            50 ; WILL PRINT THE "HELLO WORLD"
+            60 ; MESSAGE TO THE SCREEN
+            70 ;
+            0100 ; CIO EQUATES
+            0110 ; ===========
+0000        0120        *=   $0340     ;START OF IOCB
+            0130 IOCB
+            0140 ;
+0340        0150 ICHID  *=   *+1       ;DEVICE HANDLER
+0341        0160 ICDNO  *=   *+1       ;DEVICE NUMBER
+0342        0170 ICCOM  *=   *+1       ;I/O COMMAND
+0343        0180 ICSTA  *=   *+1       ;I/O STATUS
+0344        0190 ICBAL  *=   *+1       ;LSB BUFFER ADDR
+0345        0200 ICBAH  *=   *+1       ;MSB BUFFER ADDR
+0346        0210 ICPTL  *=   *+1       ;LSB PUT ROUTINE
+0347        0220 ICPTH  *=   *+1       ;MSB PUT ROUTINE
+0348        0230 ICBLL  *=   *+1       ;LSB BUFFER LEN
+0349        0240 ICBLH  *=   *+1       ;MSB BUFFER LEN
+034A        0250 ICAX1  *=   *+1       ;AUX BYTE 1
+034B        0260 ICAX2  *=   *+1       ;AUX BYTE 1
+            0270 ;
+0005        0280 GETREC =    5         ;GET TEXT RECORD
+0009        0290 PUTREC =    9         ;PUT TEXT RECORD
+            0300 ;
+E456        0310 CIOV   =    $E456     ;CIO ENTRY VECTOR
+02E0        0320 RUNAD  =    $02E0     ;RUN ADDRESS
+009B        0330 EOL    =    $9B       ;END OF LINE
+            0340 ;
+            0350 ; SETUP FOR CIO
+            0360 ; -------------
+034C        0370        *=   $0600     
+0600 A200   0380 START  LDX  #0        ;IOCB 0
+0602 A909   0390        LDA  #PUTREC   ;WANT OUTPUT
+0604 9D4203 0400        STA  ICCOM,X   ;ISSUE CMD
+0607 A91F   0410        LDA  #MSG&255  ;LOW BYTE OF MSG
+0609 9D4403 0420        STA  ICBAL,X   ; INTO ICBAL
+060C A906   0430        LDA  #MSG/256  ;HIGH BYTE
+060E 9D4503 0440        STA  ICBAH,X   ; INTO ICBAH
+0611 A900   0450        LDA  #0        ;LENGTH OF MSG
+0613 9D4903 0460        STA  ICBLH,X   ; HIGH BYTE
+0616 A9FF   0470        LDA  #$FF      ;255 CHAR LENGTH
+0618 9D4803 0480        STA  ICBLL,X   ; LOW BYTE
+            0490 ;
+            0500 ; CALL CIO TO PRINT
+            0510 ; -----------------
+061B 2056E4 0520        JSR  CIOV      ;CALL CIO
+061E 60     0530        RTS            ;EXIT TO DOS
+            0540 ;
+            0550 ; OUR MESSAGE
+            0560 ; -----------
+061F 48     0570 MSG    .BYTE "HELLO WORLD!",EOL
+0620 45
+0621 4C
+0622 4C
+0623 4F
+0624 20
+0625 57
+0626 4F
+0627 52
+0628 4C
+0629 44
+062A 21
+062B 9B
+            0580 ;
+            0590 ; INIT RUN ADDRESS
+            0600 ; ----------------
+062C        0610        *=   RUNAD     
+02E0 0006   0620        .WORD START    
+02E2        0630        .END           
+0 ERRORS

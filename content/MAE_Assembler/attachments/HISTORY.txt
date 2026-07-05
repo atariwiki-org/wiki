@@ -1,0 +1,334 @@
+- NEW FOR VERSION 1.1 -
+
+Cybergate, my ISP, discontinued their service in my area.  Thus, I have
+another new EMail address:  jharris@poboxes.com
+
+New distribution method and installation procedure.  Please read
+INSTALL.DOC for details.
+
+Configuration utility CONFIG.COM now provided.
+
+MAE now has full text substitution macros.  This adds a tremendous
+amount of power and flexibility to the macro processor.  The syntax is
+completely different, so please see the macro section of ASM.DOC.
+
+The ':' character can no longer be used in label names, due to conflicts
+with the new macro processing.  The ';' character can't be used either,
+but was mistakenly listed as a valid label character in the docs.  This
+hasn't been usable as a label character for many years.
+
+Conditional assembly has been changed to be more standard, and more
+complete.  IFE, IFN, IFP and IFM have been removed and replaced with .IF,
+.ELSE, and .ENDIF.  Complementing the .IF statement are four new
+expression operators, <, >, =, and # (not equal).  <, >, and = join the
+list of symbols that are no longer allowed as part of a label name.  I
+am sorry for any inconvenience or confusion these changes may be causing,
+but I suppose their use was non-standard to begin with.  Lastly, .IF
+statements can now be nested up to seven levels deep.  Please see the
+conditional assembly section of ASM.DOC for full details.
+
+Editor key macros can now be saved to and loaded from disk files.
+
+New config bit for editor to start with Caps lock on or off.
+
+Improved screen handling to do minimal text redraws when cutting and
+pasting.  Improves screen redraw speed, most noticably on XEP80 and
+software 64/80 column modes.
+
+- NEW FOR VERSION 1.0 -
+
+I have a new EMail address: jharris@cybergate.com
+
+40 column limit on source code lines has been removed, although text is
+still limited to 79 columns.  Lines will scroll horizontally to display
+the extra columns.
+
+There are two software screen drivers provided, that allow 64 column
+and 80 column editing on a high-speed Gr.8 screen.  If your machine has
+Antic-compatible bank select RAM, using the drivers will not decrease
+the size of your source text buffer!  The drivers were written by Itay
+Chamiel.  Thanks Itay!  Installation of these software drivers, as well
+as support for 64K machines, is described in the file INSTALL.DOC.
+
+Disassembly supports 16-bit operands.  See the D command in DEBUG.DOC
+for details.
+
+24-bit address support in debugger, including hex and decimal values
+for the "=" math function.
+
+Because of 24-bit address support, I had to move the locations of
+address variables.  This affects the User function parameters, and I
+apologize for any inconveniences.  The parameters that used to be at
+$F0, $F2, and $F4 are now at, $F0, $F7, and $F3.  I know the order is
+unusual, but there are internal reasons.
+
+Debugger memory display command changed somewhat due to screen width
+limitations with 24-bit addresses.  New ASCII-only mode supported.
+See DEBUG.DOC for details.
+
+While tracing, a new option L has been added to RTL from 24-bit
+subroutine calls.  (65816 version of MAE only).
+
+New assembler pseudo-ops .CByte for making ASCII strings with the most
+significant bit set on the last character.  Also .FLoat for defining
+constants in the OS floating point format.
+
+New editor command Ctrl-; can be used to comment or uncomment a block
+of text by adding or removing ";" characters at the start of each line.
+Mark the start of the block with Ctrl-Z, and then press Ctrl-; at the
+end of the block.  You can also mark one line at a time by using Ctrl-;
+without a Ctrl-Z block mark.
+
+Editor command Ctrl-D, which used to just duplicate a single line, can
+now be used to duplicate an entire block if there is a Ctrl-Z block
+mark set.  This makes it consistant with the operation of Ctrl-;.
+
+Shifted 1200XL function keys should now work for moving to the beginning
+or end of lines, or the beginning or end of the file.
+
+Cursor column position is retained while scrolling in the editor.
+
+MAE was not fully ZP clean, but should be now.
+
+The debugger will use High-speed SpartaDOS SIO routines, if present.
+Unfortunately, sector reading and writing will no longer work on the old
+400/800 operating system as a result, unless you are using SpartaDOS.
+
+In the editor, Ctrl-N did not work properly when pressed on a blank
+line.
+
+Conditional assembly could get messed up when source code contained a
+label on a line by itself.
+
+.BI pseudo-op was broken in version .99.
+
+New version of Hyper E: included, which fixes an incompatibility with
+TextPro, and adds support for the SDX CON: device.
+
+- NEW FOR VERSION .99 -
+
+65816 opcodes and tracing are now supported in the debugger.  There
+is still no support for 24-bit address entry, so technically, the
+debugger can be considered 65802-compatible.
+
+There are new pseudo-ops in the assembler.  ".02" can be used when you
+need to assemble 6502-only code.  When this opcode is active, all 65816
+specific instructions will be flagged with a "NOT 6502" error.  ".816"
+selects the 65816 assembly mode.  The initial assembly mode is set to
+whichever processor version of the MAE assembler you are using.  The
+initial version sign-on message shows the processor version of MAE,
+which will also be the default assembly mode.
+
+There has been a significant increase in assembly speed.  MAE will be
+about twice as fast, depending on the size of your source files.
+Small files will show less of an improvement, whereas larger files
+will show an even bigger difference.  Assembly time is closer to a
+linear relationship to source file size, whereas it used to be
+somewhat exponential.
+
+There have been big changes in memory configuration, resulting in
+twice as much symbol table space, a little more source space, and all
+of main memory from $4000-$7FFF free to the user.  The region from
+$400-$5FF is no longer used by MAE.  The debuger has been moved to
+bank select memory now, reducing the main memory usage to $B700-$BBFC.
+In its place however, MAE uses up to three banks of extended memory
+for optimal configuration.  Due to these and other changes, the format
+of the memory configuration bytes at the start of the file has changed.
+Consult MAE.DOC for full details.  MAE actually still runs in 64K
+machines, and will continue to do so, but the amount of RAM available
+for source text has dropped from 17K down to only 14K for 64K'ers.
+
+Two new operators have been added to the assembler and debugger
+expression evaluators.  You can now use "^" for exclusive or, and
+"\" for modulo.  Because of this, these characters can no longer be
+used in label names.
+
+There are two new editor functions.  You can move an individual line of
+text up or down with respect to surrounding lines.  Press Shift-Ctrl-[
+to move a line up, and Shift-Ctrl-] to move it down.  In a similar
+function, you can move a label by itself up or down to adjacent lines.
+Press Shift-Ctrl-( to move the label up, or Shift-Ctrl-) to move the
+label down.  Lines that start with comments or other labels will
+automatically be skipped.
+
+Full SpartaDOS directory listings are now supported.
+
+The "*" at the start of a marked text block would not get erased on
+lines that did not begin with a label.  Also, the location of the
+block start was not getting updated when surrounding text was edited.
+
+There was a bug which prevented macros from being recognized when they
+were defined after a .IN included files.
+
+JVC and JVS macros were missing from the example MACROS file.
+
+There was a bug that could sometimes clear your entire source text if
+you used the Esc-V menu option to get the value of a label which was
+undefined.  This bug only occurred after an assembly aborted with one
+of a few fatal error types.
+
+I didn't realize that MyDOS could use ':' characters as subdirectory
+path separators.  This confused MAE's ':' search routine to determine
+if full filespecs (or just file names) were being entered.  The
+effect was that MAE would not load files properly from subdirectories
+unless you used '>' for path separators.  It works better now, unless
+you have subdirectory names that are one or two characters long.  If
+you had a directory named "T", and tried to load "T:FILE", it would
+think you were referring to a T: device.  Thus, it is recommended that
+you either always use the '>' character as a path separator, or enter
+complete filespecs.  Either "T>FILE" or "D2:T:FILE" will work fine.
+
+Fixed two problems with using "." to get the value of defined labels
+from the debugger.  Because control was passed to the assembler's
+expression evaluator, the default number base became decimal instead
+of hex.  Thus, if you entered ".LABEL+10" in the debugger, you would
+get the value at LABEL+$A, and not LABEL+$10.  Processing is now
+returned to the debugger once the label has been decoded, making the
+rest of the line behave consistantly in regards to hex numbers.
+Also, expressions like ".>LABEL" were returning the wrong value.
+
+The debugger command V has been changed, and is easier to add user
+extensions into.  Please consult DEBUG.DOC for details.
+
+The editor could corrupt bookmarks and ^J marks if they were within a
+text block that got deleted, and close to the top of the file.
+
+MAE was not restoring the BRK IRQ vector when it exited, and it now does
+this by default.  Because it is sometimes desirable to leave the BRK
+vector installed, such as for trapping BRKs in programs called from DOS,
+you can follow the X command in the debugger with any other character to
+exit with BRK trapping still active.  Note that you must be careful to
+not overwrite any part of the MAE program, including bank select RAM, if
+you want MAE to successfully trap BRK instructions that occur after you
+leave the assembler.
+
+The debugger should no longer lock up if it encounters a BRK when output
+is redirected to an SIO device.  Also, the inconsistancy with supplying
+filespecs in the O command has been removed.  All filespecs are now
+treated the same way, for supplying Dn: in front of any input that does
+not in itself contain a ":" character.  To send output to the printer,
+you should now enter "O P:".
+
+- NEW SINCE VERSION .95 -
+
+Conditional breakpoints were not working in the .95 version.
+
+The 65816 version of MAE has a new register display that shows 16-bit
+registers for A, X, and Y.  Processor status bits are now displayed as
+normal characters for bits that are off, and inverse characters for
+bits that are on.  When changing bits, either normal/inverse, or 0's &
+1's may be typed, and are freely mixable.  The Emulation Mode shadow
+bit is also displayed, and can be changed.  Make sure you have native
+mode interrupt handlers available before changing this bit.  Also note
+that this bit, just like the rest of the status register display, only
+affects the state of programs run or traced from the debugger.
+Clearing the E bit will not instantly put the machine into native mode,
+but native mode will be set as soon as any user programs are run or
+traced.
+
+In the memory configuration bytes, entering 0 for the text buffer
+start or end would use the value from LOMEM or MEMTOP respectively.
+Now, this ability also applies to the symbol table addresses.
+
+1200XL function keys were not working, and should be fixed now.
+
+It was pointed out to me that memory expansions above 128K use the
+high bit of $D301, which is a problem for the way I programmed the
+.BA pseudo-op.  Thus, .BA now stores the entire byte at $D301, and a
+new pseudo-op, .CA, has been added for bank select cartridge support.
+I also realized that support for bank select carts is worthless when
+the assembler resides in the cartridge address space.  My personal
+version is located at my LOMEM, and so I didn't realize the problem
+here.  If anyone wants a custom version of the assembler located at a
+different address, please let me know and I will be happy to provide
+it for you.
+
+The .WO and .LO pseudo-ops support multiple addresses now.
+
+There are misc. small cleanups, such as .EN is no longer required at
+the end of the source text, "()" characters are no longer necessary
+for enclosing parameters of a macro definition, and other cosmetic
+changes.
+
+Disregard the earlier note about default drive detection being
+different in the .95 version.  MAE still detects Sparta's default
+drive correctly, even if MAE is started from a different drive.
+
+- New since version .93 -
+
+When assembling code to disk, the .MC pseudo-op can now be used to
+make the object code load at a different address than where it is
+assembled, much like the way the function already worked in RAM.
+
+When recording key macros in the editor, you must now use Ctrl-3 to
+end recording, instead of Esc.  This allows Esc menu commands to be
+entered into macros, primarily to support a chain of assemble
+commands when your program contains several modules.  The next
+version of the assembler should allow loading and saving macros to
+disk, which will further enhance the macro usefulness.
+
+Hunt routine in the monitor now automatically skips over the area
+from $D000-$D7FF.  So you can search the OS using $C000-$FFFF and
+not generate any hardware accesses.
+
+Hunt and Memory display routines would not always stop when the
+address reached $FFFF.  This has been fixed.
+
+I removed the automatic OS routine detection from the trace function.
+Now, you must use the S key to trace through OS functions in one
+step, just like any other subroutine.  You can also use the R key if
+you are already within the OS code.  The reason for doing this, is
+that it makes things more consistant, and also allows you to trace
+code in the $C000-$FFFF area if you need to.
+
+Pseudo-ops are now available in the debugger's single line assembler.
+
+The debugger now includes a built-in function for switching between
+display lists for the debugging text screen, and your program's
+screen.  It uses the letter "V", for change View.  Both V and the
+"U" user function can be called from both the trace mode, as well
+as any paused memory or disassembly listing.
+The "%" key did not work as a wildcard in the debugger, since it
+was interpretted as the start of a binary number.  I have changed
+the default wildcard to "?" in both the debugger and editor.  This
+propagated through a few of the debugger command key assignments,
+along with a few other changes as well.  Overall, I feel the key
+assignments have been improved, and they won't be changed from now
+on.  Here is a sumnmary of the changes:
+     ? - Change Wildcard
+     = - Evaluate expression
+     V - Change display view
+     \ - Disk Directory
+
+The editor uses the same wildcard configuration byte as the
+debugger.  You can use the debugger's "?" command, or a Cntl-?
+in the editor to change the wildcard character.  Both modules
+will use the new assignment.
+
+1200XL function keys are now supported for moving the cursor.
+
+You may enter Ctrl-key graphic symbols or international characters
+into the editor by pressing Ctrl-A, and then the key you wish to
+enter.
+
+Now uses an improved method for detecting the default drive when
+first loaded.  This should be compatible with all SpartaDOS
+versions, and cause no problems for non-Sparta DOSes.  It also
+allows you to specify a different default drive from the command
+line, such as, "MAE D2:".
+
+The MAE.COM file now comes with a RUNAD address installed.  The
+SpartaDOS bug that prevented using the RUN command to return to
+a program which used RUNAD has been fixed in 3.2g and later, so
+I have decided to include RUNAD in the file now.
+
+Fixed a stack corruption problem when disk I/O errors occurred
+during assembly with a .IN include file.
+
+Improved documentation.
+
+- New since version .92 -
+
+When dinosaurs ruled the Earth.  History has been removed to save
+space.  They didn't even have computers back then, did they?
+

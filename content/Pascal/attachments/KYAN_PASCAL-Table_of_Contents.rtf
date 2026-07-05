@@ -1,0 +1,580 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fmodern\fcharset0 Courier;\f2\fmodern\fcharset0 Courier-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue235;\red0\green0\blue0;\red109\green109\blue109;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid401\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+{\info
+{\title Atari/Apple Kyan Pascal Manual}}\vieww22660\viewh20060\viewkind0
+\deftab720
+\pard\pardeftab720\ql\qnatural
+
+\f0\b\fs24 \cf0 NOTE:
+\b0  What follws is the Kyan Pascal Manual for the Atari and Apple 8-bit computers. There isn't much right now, however, I will add sections as my time allows. If you wish to copy this file, please feel free to do so. Be aware that it will be periodically updated. My suggestion is to set a bookmark to this page if you find it important.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 My intentions are to start at the beginning of the manual and continue until it is finished. If anyone feels as though I am violating any copyrights, {\field{\*\fldinst{HYPERLINK "mailto:%20ryanr@one.net"}}{\fldrslt \cf2 \ul \ulc2 email}} me and we can discuss it.\
+\
+\pard\pardeftab720\sa120\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sa320\qc
+
+\b\fs48 \cf0 KYAN PASCAL - A PROGRAMMING LANGUAGE\
+\pard\pardeftab720\sa280\qc
+
+\fs36 \cf0 Table of Contents\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth6300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf2 \ul \ulc2 Preface\cf0 \ulnone \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth6300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf2 \ul \ulc2 Introduction\cf0 \ulnone \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth6300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf2 \ul \ulc2 Editor and Compiler Instructions\cf0 \ulnone \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth6300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 Sample Programs\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth6300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 Programming Techniques\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth6300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf2 \ul \ulc2 Appendix A\cf0 \ulnone  - Compiler, Assembler and Run-time Error Messages\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth6300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 Appendix B - Quick Guide to Kyan Pascal\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth6300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 Appendix C - Specifications\cell \lastrow\row
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sa280\ql\qnatural
+
+\b\fs36 \cf0 Preface\
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 \ul \ulc0 PASCAL,\ulnone  \ul A\ulnone  \ul Programming\ulnone  \ul Language\ulnone  provides beginning programmers with a step-by-step introduction to PASCAL, and advanced programmers with a convenient reference to the language.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 The first chapter, EDITOR AND COMPILER INSTRUCTIONS, explains how to enter, edit, and compile a PASCAL program. This material must be read prior to actual programming.\
+Readers with no previous experience with PASCAL should read the chapters in order. It is recommended that the example programs be entered, compiled, and run. It is not essential that every line be duplicated from these programs. In fact, rewriting the example programs not only is instructive but also can improve them.\
+Programmers who are already familiar with PASCAL need only read the sections on topics they wish to review. Appendix B provides a quick review of PASCAL vocabulary.\
+\
+\pard\pardeftab720\sa120\ql\qnatural
+\cf0 \
+\pard\pardeftab720\qc
+\cf2 \ul \ulc2 Table of Contents\cf0 \ulnone \
+\pard\pardeftab720\sa120\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sa280\ql\qnatural
+
+\b\fs36 \cf0 Introduction\
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 The history of Pascal goes back to the late 1960s, when Niklaus Wirth, a professor of computer science, decided that a new approach -- a new language -- was needed for teaching programming. Wirth introduced PASCAL as a formal language in 1971.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 The two principal aims of PASCAL are "..to make available a language suitable to teach programming as a systematic discipline based on certain fundamental concepts clearly and naturally reflected by the language.." and to "develop implementations of this language which are both reliable and efficient on presently available computers" (Jensen and Wirth, "Pascal User Manual and Report").\
+PASCAL has become a widely used language for both elementary and advanced programming. Its popularity derives from the clarity of programs written in it and the efficiency with which it can be implemented within the computer.\
+Kyan PASCAL is especially efficient in this regard, because the run time code and the compiler itself are written in assembly language, the language of the microprocessor integrated circuit. Unlike some other compiled languages, Kyan PASCAL includes the necessary tools for advanced programmers who wish to include assembly language routines in their PASCAL programs.\
+PASCAL is a self-documenting and self-structuring language. Top-down programming and modulization are natural outgrowths of its features. These features include, among others, user-defined functions and procedures of which modules are built.\
+Separation of the declaration section from the program body also enforces good programming technique. All the information on constants, types of variables, and names of variables and constants appears in a single section rather than being spread throughout the program.\
+Kyan PASCAL provides features that help the programmer to find the syntax errors that account for over 90% of the errors in programming. Over 30 error messages for syntax are in the compiler. These not only tell the programmer what types of errors were made but also on which lines the errors occurred.\
+Kyan PASCAL does not stop looking for errors or lose synchronization when an error is found. Instead, although some compilation halts, error detection continues and all the errors are displayed at one time.\
+One final reason for using PASCAL is its portability. PASCAL, one of today's most popular languages, is implemented on nearly every computer on the market. Kyan PASCAL is compatible with standard PASCAL. Programs and program modules written in Kyan PASCAL (using standard procedures and functions) will run on a multitude of computers: a programmer can develop software on a home computer, transport it to many other machines, and run the programs immediately.\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ql\qnatural
+\ls1\ilvl0\cf0 {\listtext	\'95	}\ul References -- Pascal Programming\ulnone \
+{\listtext	\'95	}\ul Programming in Pascal\ulnone , P. Grogono, Addison-Wesley Publishing, 1978.\
+{\listtext	\'95	}\ul Oh! Pascal\ulnone , D. Cooper, and M. Clancy, 2nd Edition, New York: Norton, 1985.\
+{\listtext	\'95	}\ul Software Tools in Pascal\ulnone , B.W. Kernighan and P.J. Plauger, Reading, MA: Addison-Wesley, 1981.\
+{\listtext	\'95	}\ul Pascal, A Problem Solving Approach\ulnone , E.B. Kaufman, Addison-Wesley, 1982.\
+{\listtext	\'95	}\ul Introduction to Pascal\ulnone ,R. Zaks, Sybex, Inc., Berkeley, CA 1981.\
+{\listtext	\'95	}\ul Pascal User Manual and Report\ulnone , K. Jensen and N. Wirth, Springer-Verlag, 1974.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ql\qnatural
+\ls2\ilvl0\cf0 {\listtext	\'95	}\ul References -- Assembly Language Programming\ulnone \
+{\listtext	\'95	}\ul Programming a Microcomputer: 6502\ulnone , C.C. Foster, Addison-Wesley, 1978.\
+{\listtext	\'95	}\ul 6502 Assembly Language Programming\ulnone , L.A. Leventhal, Osborne/McGraw-Hill, 1981.\
+{\listtext	\'95	}\ul Assembly Lines: The book\ulnone , R. Wagner, Santee, CA Roger Wagner Publishing.\
+\pard\pardeftab720\sa120\ql\qnatural
+\cf0 \
+\pard\pardeftab720\qc
+\cf2 \ul \ulc2 Previous Section\cf0 \ulnone  | \cf2 \ul \ulc2 Table of Contents\cf0 \ulnone \
+\pard\pardeftab720\sa120\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sa280\ql\qnatural
+
+\b\fs36 \cf0 Editor and Compiler Instructions\
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 Kyan PASCAL consists of two programs: the editor program (ED) and the compiler/assembler program (PC). When your Apple
+\fs20 \super tm
+\fs24 \nosupersub  [Atari
+\fs20 \super tm
+\fs24 \nosupersub ] is booted (to boot the Atari, push the <Option> key during power-up) with a Kyan PASCAL disk in the drive the following will be displayed:
+\f1 \
+            KYAN PASCAL VERSION 1.0\
+            COPYRIGHT 1985 BY KYAN SOFTWARE\
+            1850 UNION STREET, SUITE 183\
+            SAN FRANCISCO, CA 94123\
+\
+            >\
+
+\f0 If you have an Apple ][, to transfer the editor program from the disk to memory, type ED:
+\f1 \
+            >ED\
+
+\f0 followed by <RETURN>. Striking the <RETURN> key tells the computer that you have completed your command.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 If you have an Atari, to transfer the editor program from disk to memory, type D1:ED:\
+\pard\pardeftab720\ql\qnatural
+
+\f1 \cf0             >D1:ED\
+\pard\pardeftab720\ql\qnatural
+
+\f0 \cf0 follwed by <RETURN>. All commands that require disk access on the Atari, must have the prefic "D1:--" which stands for disk drive #1. If you have more than one disk drive, this prefix can change to D2, D3, etc.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 The prompt symbol (>) is a signal from the program, in this case from Kyan PASCAL, that the computer is waiting for your command. Unless instructed otherwise, you should always press <RETURN> when entering commands into the computer.\
+Your Apple [Atari] computer will search for the editor and load it. When loading is completed the following message will be displayed:\
+\pard\pardeftab720\ql\qnatural
+
+\f1 \cf0             PATHNAME?\
+\
+            [FILE NAME? if computer is an Atari]\
+\pard\pardeftab720\sa280\ql\qnatural
+
+\f0\b\fs28 \cf0 \ul \ulc0 Creating\ulnone  \ul a\ulnone  \ul File,\ulnone  \ul an\ulnone  \ul Example\ulnone \
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 Suppose the name of your program is TRIAL enter:
+\f1 \
+            PATHNAME? TRIAL\
+\
+            [FILE NAME? D1:TRIAL if your computer is an Atari]\
+
+\f0 Because the program trial is new the editor will prompt:
+\f1 \
+            FILE NOT FOUND, PRESS ANY KEY\
+
+\f0 When you press any key the screen will become blank. Notice that there is no prompt. All entries that you make will become part of your program file (TRIAL) just as you see them on the screen.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 Enter a string of six X:\
+\pard\pardeftab720\ql\qnatural
+
+\f1 \cf0             XXXXXX\
+\pard\pardeftab720\ql\qnatural
+
+\f0 \cf0 Follow the instructions in the next section to save TRIAL.
+\b\fs28 \
+\pard\pardeftab720\sa280\ql\qnatural
+\cf0 \ul \ulc0 End\ulnone  \ul of\ulnone  \ul Editing\ulnone \
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 The first step in editing is to press the <ESC> key. This will put you in a mode in which you can use the "special editor functions." A help menu wull be displayed. To leave this mode and resume normal editing press the <ESC> key again.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 If you wish to save TRIAL (the exapmle program above) type <ESC> S. This is one of the three ways to end editing:\
+\pard\pardeftab720\ql\qnatural
+
+\f1 \cf0             <ESC> S     (Save and Resume)\
+            <ESC> Q     (Quit without Save)\
+            <ESC> X     (Save and Exit)\
+\pard\pardeftab720\ql\qnatural
+
+\f0 \cf0 If you typed <ESC> S you saved the program you were editing and have returned to the editor so that you could add more lines.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 If you type <ESC> Q none of the changes or entries you did were saved. You just quit and left the file in the state it was before you started editing.\
+If you typed <ESC> X the prompt (>) reappeared because you saved your changes, left the editor to edit a different program (or to compile).\
+Remember before creating or saving programs, you should make backup copies of your Kyan PASCAL disk.\
+If you own an Atari, you can re-enter the editor by typing "!" and <RETURN> after the prompt.\
+\pard\pardeftab720\sa280\ql\qnatural
+
+\b\fs28 \cf0 \ul \ulc0 Files,\ulnone  \ul Pathnames\ulnone  \ul and\ulnone  \ul File\ulnone  \ul Names\ulnone \
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 Programs such as the TRIAL program above are stored in separate files. Each program added to the disk must have its own path or file name. An Apple pathname consists of 64 or fewer letters and/or characters. An Atari file name consists of D1: followed by an 8 character name followed by a 3 character extension (e.g., D1:XXXXXXXX.YYY). Spaces are not permitted within either pathnames or file names.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 PASCAL names, i.e., names of variables, types, etc., in a PASCAL program are not the same as ProDOS pathnames or DOS 2.5 file names!\
+To change the name of the file you are working with, type <ESC> P and the computer will prompt:\
+\pard\pardeftab720\ql\qnatural
+
+\f1 \cf0             PATHNAME:\
+\
+            [FILE NAME: if your computer is an Atari]\
+\pard\pardeftab720\ql\qnatural
+
+\f0 \cf0 Enter the new name, e.g. "Account", of the file followed by a carriage return and <ESC>:
+\f1 \
+            PATHNAME: Account <RETURN> <ESC>\
+\
+            FILE NAME:  D1:Account <RETURN> <ESC>   [Atari Version]\
+
+\f0 It should be noted that the new file name will be entered immediately after <RETURN>, whether or not the final <ESC> is typed. The final <ESC> causes the computer to leave the special functions mode.
+\b\fs28 \
+\pard\pardeftab720\sa280\ql\qnatural
+\cf0 \ul \ulc0 Cursor\ulnone  \ul Movement\ulnone \
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 Kyan PASCAL includes an easily learned, full-screen, insert mode editor. Anywhere you move the cursor, a letter, a number, a space, or even a new line break may be added. This greatly facilitates editing your program.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 All cursor movement commands are a combination of the [CNTL] key (Note: ^ is a shorthand notation for [CNTL] so [CNTL]-S is the same as ^S) and another key. The combinations are:\
+\pard\pardeftab720\ql\qnatural
+
+\f1 \cf0 ^S   move the cursor back 1 space (left)\
+^D   move the cursor forward 1 space (right)\
+^E   move the cursor back 1 line (up)\
+^X   move the cursor forward 1 line (down)\
+^A   move the cursor back 1 word (left)\
+^F   move the cursor forward 1 word (right)\
+^R   move the cursor back 20 lines (up)\
+^C   move the cursor forward 20 lines (down)\
+^T   move the cursor to the top of the file\
+^V   move the cursor to the bottom of the file\
+\pard\pardeftab720\ql\qnatural
+
+\f0 \cf0 Many Apple and Atari computers have cursor (arrow) keys. You may also use these to move the cursor right of left one space and up or down one line.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 If you hold the cursor keys pressed down the cursor movement will be repeated until you release the keys.\
+\pard\pardeftab720\sa280\ql\qnatural
+
+\b\fs28 \cf0 \ul \ulc0 Delete\ulnone  \ul Commands\ulnone \
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 To delete a letter, word or line use the following commands:
+\f1 \
+^G   delete the letter coincident to the cursor\
+^Q   delete the letter to the left of the cursor\
+^Y   delete the line in which the cursor is positioned\
+
+\f0 The delete key <DEL>, if present, accomplishes the same task as ^Q.
+\b\fs28 \
+\pard\pardeftab720\sa280\ql\qnatural
+\cf0 \ul \ulc0 Find\ulnone  \ul String\ulnone  \ul and\ulnone  \ul Change\ulnone  \ul String\ulnone  (\ul Search\ulnone  \ul and\ulnone  \ul Replace\ulnone )\
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 string is a combination of characters (letters, numbers, and symbols) and spaces. A string may be a certain word or a group of words.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 Sometimes you may wish to find a certain string within a program. Or you may wish tp replace a string with another string:\
+\pard\pardeftab720\ql\qnatural
+
+\f1 \cf0      <ESC>         enter the special editor function\
+     A                 set "A" (designate the string to be found)\
+     B                 set "B" (designate the replacement string)\
+     C                 change "A" string to "B" string\
+     ^W                search from cursor forward to end of file\
+     ^Z                search from cursor back to beginning of file\
+\pard\pardeftab720\ql\qnatural
+
+\f0 \cf0 \ul \ulc0 To\ulnone  \ul find\ulnone  \ul the\ulnone  \ul occurrence\ulnone  \ul of\ulnone  \ul any\ulnone  \ul string\ulnone  enter <ESC> A and the editor will prompt:
+\f1 \
+                          A:\
+\pard\pardeftab720\ql\qnatural
+
+\f0 \cf0 Next enter the string to be found. For example, if "look out" is to be found, enter "look out" followed by a carriage return:
+\f1 \
+                          A:look out <RETURN>\
+
+\f0 The final two steps are to leave the special editor functions mode by typing the <ESC> key and then typing ^W or ^Z. The cursor will go to the first occurrence of "look out" ahead of the present cursor position. To find the second occurrence, enter ^Z again. This process can be repeated until all occurrences of "look out" have been found.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 Maximum string size is 40 characters.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 \ul \ulc0 To\ulnone  \ul substitute\ulnone  \ul a\ulnone  \ul new\ulnone  \ul string\ulnone  \ul for\ulnone  \ul any\ulnone  \ul string\ulnone  both the old ("A") string and the new ("B") string must be designated. Use the "A" and "B" commands listed above. The "A" string consists of the words or lines the way they are before the substitution. The "B" string consists of the new words or lines that will take their place.\
+When both strings have been set, type the "C" command. The editor will prompt:\
+\pard\pardeftab720\ql\qnatural
+
+\f1 \cf0           CHANGE ALL STRINGS OR SOME (A/S/Q)?\
+\pard\pardeftab720\ql\qnatural
+
+\f0 \cf0 Choose "S" to0 have the editor stop at each possible string and question whether or not to make that substitution.\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 Choose "A" to replace all strings in the file. Choose "Q" to quit without making any substitutions.\
+Substitutions always start at the top of the file and continue to the end.\
+To replace the string "first" with the string "#1" everywhere in the file follow these steps:\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1780\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clmrg \clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 1. Type:\cell 
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 <ESC> A\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1780\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clmrg \clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 2. Prompt appears:\cell 
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 A:\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1780\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clmrg \clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 3. Type:\cell 
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 first <RETURN>\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1780\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 4. Type:\cell 
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 B\cell 
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1780\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clmrg \clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 5. Prompt appears:\cell 
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 B:\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1780\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clmrg \clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 6. Type:\cell 
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 #1 <RETURN>\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1780\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clmrg \clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 7. Type:\cell 
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 C\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1780\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clmrg \clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 8. Prompt appears:\cell 
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 CHANGE ALL STRINGS OR SOME (A/S/Q)?\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1780\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clmrg \clvertalc \clshdrawnil \clwWidth4700\clftsWidth3 \clmart50 \clmarl50 \clmarb50 \clmarr50 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 9. Type:\cell 
+\pard\intbl\itap1\pardeftab720\ql\qnatural
+\cf0 A\cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sa280\ql\qnatural
+
+\b\fs28 \cf0 \ul \ulc0 Edit\ulnone  \ul at\ulnone  \ul Line\ulnone  - \ul N\ulnone \
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 To edit a specific line use the command:
+\f1 \
+         <ESC> G\
+
+\f0 When the editor will prompts "LINE NUMBER" enter the number of the line which you wish to change. For example, if the compiler indicates that you have an error in line 3, enter 3 after the prompt:
+\f1 \
+         LINE NUMBER: 3 <RETURN>\
+
+\f0 Remember, if you add or delete lines before the one you are searching for, then the line number of that line will be increased or decreased, accordingly.
+\b\fs28 \
+\pard\pardeftab720\sa280\ql\qnatural
+\cf0 \ul \ulc0 Including\ulnone  \ul a\ulnone  \ul File\ulnone \
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 If you wish to include one file in another use the <ESC> I command. When you enter <ESC> I the editor will prompt"
+\f1 \
+         PATHNAME OF FILE TO INSERT (BLANK TO QUIT)\
+\
+         FILE NAME OF FILE TO INSERT (BLANK TO QUIT)     [Atari Version]\
+
+\f0 If you enter the pathname [or file name] of an existing file it will be inserted into the file you are editing. Atari users, remember to include the disk prefix.
+\b\fs28 \
+\pard\pardeftab720\sa280\ql\qnatural
+\cf0 \ul \ulc0 Block\ulnone  \ul Move\ulnone  \ul Commands
+\f2 \ulnone \
+\pard\pardeftab720\sa280\ql\qnatural
+\cf0 \ul \ulc0 List\ulnone  \ul of\ulnone  \ul Editor\ulnone  \ul Commands\ulnone \
+\pard\pardeftab720\ql\qnatural
+
+\f1\b0\fs24 \cf0      (Note: ^ is equivalent to CONTROL Key)\
+     ED          enter the editor program\
+\
+     ^S         move the cursor back 1 space (left)\
+     ^D         move the cursor forward 1 space (right)\
+     ^E         move the cursor back 1 line (up)\
+     ^X         move the cursor forward 1 line (down)\
+     ^A         move the cursor back 1 word (left)\
+     ^F         move the cursor forward 1 word (right)\
+     ^R         move the cursor back 20 lines (up)\
+     ^C         move the cursor forward 20 lines (down)\
+     ^V         move the cursor to the bottom of the file\
+     ^T         move the cursor to the top of the file\
+     ^Q         delete the letter to the left of the cursor\
+     ^G         delete the letter or keystroke coincident to the cursor\
+     ^Y         delete the line in which the cursor is positioned\
+\
+     ^W         find string backward direction\
+     ^Z         find string forward direction\
+\
+     ^O         mark/cut block\
+     ^P         paste/block\
+\
+     ^N         type "[" (left bracket) - Apple ][ only\
+     <SHIFT>M   type "]" (right bracket) - Apple ][ only\
+\
+Special Editor Functions Mode:\
+     <ESC>      enter/leave special functions mode\
+     S          remain in editing with save\
+     Q          exit from editing without save\
+     X          exit from editing with save\
+     A          designate string to be found\
+     B          designate replacement string\
+     C          set search/replace options\
+     I          include file\
+     P          set  pathname [or filename if you have an Atari]\
+     G          go to line\
+     H          get help menu\
+\
+\pard\pardeftab720\sa280\ql\qnatural
+
+\f2\b\fs28 \cf0 \
+\pard\pardeftab720\sa280\ql\qnatural
+\cf0 \ul \ulc0 List\ulnone  \ul of\ulnone  \ul Compiler/Assembler\ulnone  \ul Commands\ulnone  \
+\pard\pardeftab720\ql\qnatural
+
+\f1\b0\fs24 \cf0 \
+     PC         Enter the compiler and assembler programs\
+\
+Assembler/Compiler Options - Apple ][:\
+     -O         Omit object code\
+     -L         Generate assembly language listing\
+     -Sn        Send error listing to slot #n\
+\
+Assembler/Compiler Options - Atari:\
+     -O         Omit object code\
+     -E         Send error listing to screen only\
+     -EP        Send error listing to screen and printer\
+     -L         Send assembly listing to screen only\
+     -LP        Send assembly listing to screen and printer\
+\
+\pard\pardeftab720\sa280\ql\qnatural
+
+\f2\b\fs28 \cf0 \
+\pard\pardeftab720\sa280\ql\qnatural
+\cf0 \ul \ulc0 Other\ulnone  \ul Commands\ulnone \
+\pard\pardeftab720\ql\qnatural
+
+\f1\b0\fs24 \cf0 \
+     ^<RESET>   Stops program during run time -- Apple ][ Only\
+     <BREAK>    Stops program during run time -- Atari Only\
+\pard\pardeftab720\sa120\ql\qnatural
+
+\f0 \cf0 \
+\pard\pardeftab720\qc
+\cf2 \ul \ulc2 Previous Section\cf0 \ulnone  | \cf2 \ul \ulc2 Table of Contents\cf0 \ulnone \
+\pard\pardeftab720\sa120\ql\qnatural
+\cf0 \
+\pard\pardeftab720\sa280\ql\qnatural
+
+\b\fs36 \cf0 Appendix A - Compiler, Assembler, and Run-Time Error Messages\
+\pard\pardeftab720\ql\qnatural
+
+\b0\fs24 \cf0 \ul \ulc0 Compiler\ulnone  \ul Error\ulnone  \ul Messages\ulnone \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ql\qnatural
+\ls3\ilvl0\cf0 {\listtext	1.	}\'a0syntax error\
+{\listtext	2.	}\'a0unexpected end of input\
+{\listtext	3.	}\'a0array dimension expected\
+{\listtext	4.	}\'a0to or downto expected\
+{\listtext	5.	}\'a0type specification expected\
+{\listtext	6.	}\'a0ordinal type expected\
+{\listtext	7.	}\'a0:= expected\
+{\listtext	8.	}\'a0: expected\
+{\listtext	9.	}\'a0, expected\
+{\listtext	10.	}\'a0; or end expected\
+{\listtext	11.	}\'a0compiler directive expected\
+{\listtext	12.	}\'a0do expected\
+{\listtext	13.	}\'a0end expected\
+{\listtext	14.	}\'a0= expected\
+{\listtext	15.	}\'a0identifier expected\
+{\listtext	16.	}\'a0[ expected\
+{\listtext	17.	}\'a0constant expected\
+{\listtext	18.	}\'a0( expected\
+{\listtext	19.	}\'a0of expected\
+{\listtext	20.	}\'a0type identifier expected\
+{\listtext	21.	}\'a0. expected\
+{\listtext	22.	}\'a0program expected\
+{\listtext	23.	}\'a0] expected\
+{\listtext	24.	}\'a0) expected\
+{\listtext	25.	}\'a0; expected\
+{\listtext	26.	}\'a0.. expected\
+{\listtext	27.	}\'a0then expected\
+{\listtext	28.	}\'a0unsigned integer expected\
+{\listtext	29.	}\'a0file name expected\
+{\listtext	30.	}\'a0can't open file\
+{\listtext	31.	}\'a0illegal file name\
+{\listtext	32.	}\'a0; or until expected\
+{\listtext	33.	}\'a0missing end statement(s)\
+{\listtext	34.	}\'a0extraneous end statements(s)\
+{\listtext	35.	}\'a0; or case expected\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 \ul \ulc0 Assembler\ulnone  \ul Error\ulnone  \ul Messages\ulnone \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ql\qnatural
+\ls4\ilvl0\cf0 {\listtext	1.	}\'a0A addressing mode error\
+{\listtext	2.	}\'a0L label required with EQU\
+{\listtext	3.	}\'a0M multiply defined symbol\
+{\listtext	4.	}\'a0U undefined expression\
+{\listtext	5.	}\'a0O unrecognized opcode\
+{\listtext	6.	}\'a0S syntax error\
+{\listtext	7.	}\'a0J branch address is out of range\
+\pard\pardeftab720\sa240\ql\qnatural
+\cf0 \ul \ulc0 Run-Time\ulnone  \ul Error\ulnone  \ul Messages\ulnone \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ql\qnatural
+\ls5\ilvl0\cf0 {\listtext	1.	}\'a0bad subscript\
+{\listtext	2.	}\'a0too many active files (Maximum is 5 files)\
+{\listtext	3.	}\'a0file not active\
+{\listtext	4.	}\'a0set element out of range\
+{\listtext	5.	}\'a0heap overflow\
+{\listtext	6.	}\'a0bad ln(arguement)\
+{\listtext	7.	}\'a0bad exp(arguement)\
+{\listtext	8.	}\'a0read past eof (End of File)\
+{\listtext	9.	}\'a0out of memory\
+{\listtext	10.	}\'a0arithmetic overflow\
+}

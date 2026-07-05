@@ -1,0 +1,3949 @@
+        .TITLE  "TURTLE/WSFN"
+;
+; TURTLE GRAPHICS PROCESSOR FOR ATARI
+;
+; EDIT #28 -- MARCH 18, 1981
+;
+; BASED IN PART UPON 'WSFN' BY LICHEN WANG AS DESCRIBED IN
+; DDJ NUMBER 18, DEVELOPED BY HARRY B. STEWART 1978, 1979.
+;
+
+;
+; TURTLE GRAPHICS PROGRAM EQUATES
+;
+; EQUATE FOR BOOT VERSION OR CARTRIDGE VERSION
+;
+; BOOT = 0 & DLOAD = 0 PRODUCES THE CARTRIDGE VERSION.
+; BOOT = 1 & DLOAD = 0 PRODUCES THE CASSETTE/DISK BOOTABLE VERSION
+; BOOT = 1 & DLOAD = 1 PRODUCES THE DISK LOADABLE VERSION.
+; BOOT = 0 & DLOAD = 1 IS NOT A VALID COMBINATION!
+;
+DLOAD   = 1             DISK LOAD = 1, BOOT = 0
+BOOT    = 1             BOOTABLE = 1, CARTRIDGE = 0
+
+;
+;    COLLEEN I/O
+;
+CIO     = $E456
+
+IOVBAS  = $E400         COLLEEN VECTOR BASE ADDRESS
+EPUTC   = $E406         "E:" PUT CHARACTER
+SGETC   = $E414         "S:" GET CHARACTER
+SPUTC   = $E416         "S:" PUT CHARACTER
+
+IOCBSZ  = 16            16 BYTES PER IOCB
+IOCB0   = $00           TEXT OUTPUT
+IOCB1   = IOCB0+IOCBSZ  TEXT INPUT
+IOCB2   = IOCB1+IOCBSZ  GRAPHICS INPUT & OUTPUT
+IOCB3   = IOCB2+IOCBSZ  GET/PUT USER DEFINITIONS
+IOCB4   = IOCB3+IOCBSZ  (UNUSED)
+
+ICHID   = $0340         IOCB HANDLER I.D.
+ICDNO   = ICHID+1       DEVICE #
+ICCOM   = ICDNO+1       COMMAND BYTE
+ICSTA   = ICCOM+1       STATUS BYTE
+ICBAL   = ICSTA+1       BUFFER ADDRESS (LO)
+ICBAH   = ICBAL+1       BUFFER ADDRESS (HI)
+ICRLL   = ICBAH+1       RECORD LENGTH (LO)
+ICRLH   = ICRLL+1       RECORD LENGTH (HI)
+ICBLL   = ICRLH+1       BUFFER LENGTH (LO)
+ICBLH   = ICBLL+1       BUFFER LENGTH (HI)
+ICAUX1  = ICBLH+1       AUX1
+ICAUX2  = ICAUX1+1      AUX2
+
+OPEN    = $03           OPEN COMMAND
+CLOSE   = $0C           CLOSE COMMAND
+GETC    = $07           GET CHARACTER COMMAND
+PUTC    = $0B           PUT CHARACTER COMMAND
+
+OREAD   = $04           OPEN DIRECTION
+OWRIT   = $08           OPEN DIRECTION
+SPLIT   = $10           SPLIT SCREEN OPTION
+NOCLR   = $20           INHIBIT SCREEN CLEAR OPTION
+
+DEL     = $7F           USER COMMAND DELETE CHARACTER (INTERNAL)
+EOF     = $1A           INTERNAL END-GF-FILE CHARACTER (CTRL-Z)
+EOL     = $9B           ATASCII CARRIAGE RETURN
+CLEAR   = $7D           MONITOR CLEAR SCREEN
+BELL    = $FD           BELL CODE
+DELCH   = $FE           DELETE CHARACTER CODE
+
+;
+;    SIZING PARAMETERS
+;
+LINSIZ  = 80            # OF CHARACTERS PER SCREEN LINE (TEXT)
+ULINES  = 12            # OF LINES OF USER DEFINED FUNCTIONS
+VLINES  = 1             # OF LINES OF USER DEFINED VARIABLES
+USIZE   = ULINES*LINSIZ
+VSIZE   = VLINES*LINSIZ
+VLNGTH  = 8             # OF BYTES PER VARIABLE DEFINITION (MUST BE >= NL + 2)
+
+DNSIZE  = 15            DEVICE/FILENAME MAXIMUM SIZE
+NL      = 4             # OF DIGITS IN NUMERIC ASCII STRINGS (RECORDS)
+RH      = 1             # OF BYTES IN RECORD HEADER
+
+;
+;    INTERNAL OPTION VALUES
+;
+ERSTOP  = 0             'EDGRUL' = STOP
+ERWRAP  = 1             'EDGRUL' = WRAP SCREEN
+ERREFL  = 2             'EDGRUL' = REFLECT OFF WALL
+ERDIPR  = 3             'EDGRUL' = DISAPPEAR FROM SCREEN
+
+MDRAW   = 0             "MODE" = DRAW
+MDEBUG  = 1             "MODE" = DEBUG (ALL TEXT)
+MSPLIT  = 2             "MODE" = SPLIT SCREEN WITH REGISTERS
+MNORML  = 3             "MODE" = NORMAL -- SPLIT SCREEN W/O REGISTERS
+
+SCRUNF  = 0             "SPEED" = RUN FULL SPEED
+SCSTEP  = 1             "SPEED" = SINGLE STEP
+
+
+;
+;    COLLEEN DATA BASE
+;
+DOSVEC  = $000A         RESTART VECTOR LOCATION
+APPMHI  = $000E         APPLICATION HIGH RAM
+MEMLO   = $02E7         LOWEST AVAILABLE RAM POINTER
+MEMHI   = $02E5         HIGHEST AVAILABLE RAM POINTER
+BREAK   = $0011         BREAK KEY FLAG
+LMARGN  = $0052         SCREEN LEFT MARGIN
+RMARGN  = $0053         SCREEN RIGHT MARGIN
+COLCRS  = $0055         SCREEN CURSOR COLUMN # [WORD]
+ROWCRS  = $0054         SCREEN CURSOR ROW #
+SPTCOL  = $0291         SPLIT SCREEN TEXT COLUMN [WORD]
+SPTROW  = $0290         SPLIT SCREEN TEXT ROW
+PCOLR0  = $02C0         PLAYER/MISSILE COLORS
+PCOLR1  = $02C1
+PCOLR2  = $02C2
+PCOLR3  = $02C3
+COLOR0  = $02C4         COLOR REGISTER 0
+CH      = $02FC         KEYBOARD MATRIX CODE INPUT
+CRSINH  = $02F0         CURSOR INHIBIT FLAG
+DSPFLG  = $02FE         CONTROL BYTE DISPLAY FLAG
+RTCLOK  = $0012         REAL-TIME CLOCK (FRAME COUNTER) 60HZ
+DMACT   = $022F         DMA CONTROL BYTE
+GPRIOR  = $026F         PLAYER/PLAYFIELD PRIORITY
+PADDL0  = $0270         POT CONTROLLER 0 SENSE
+STICK0  = $0278         JOYSTICK 0 SENSE
+PTRIG0  = $027C         POT 0 TRIGGER SENSE
+STRIG0  = $0284         JOYSTICK 0 TRIGGER SENSE
+;
+;    HARDWARE EQUATES
+;
+
+
+HPOS0   = $D000         PLAYER 0 HORIZONTAL POSITION
+HPOSM0  = $D004         MISSILE 0 HORIZONTAL POSITION
+HPOSM1  = $D005         MISSILE 1 HORIZONTAL POSITION
+HPOSM2  = $D006         MISSILE 2 HORIZONTAL POSITION
+HPOSM3  = $D007         MISSILE 3 HORIZONTAL POSITION
+SIZEM   = $D00C         MISSILE SIZE CONTROL
+GRAFM   = $D011         MISSILE ???????
+GRACTL  = $D01D         ????????
+PMBASE  = $D407         PLAYER/MISSILE BASE ADDRESS REGISTER
+AUDF1   = $D200         AUDIO #1 FREQUENCY DIVIDER
+AUDC1   = $D201         AUDIO #1 TYPE/VOLUME
+PKYRND  = $D20A         POKEY RANDOM NUMBER
+PACTL   = $D302         CASSETTE ON/OFF AMONG OTHER THINGS
+
+GRAMON  = $01           'GRACTL' MISSILE DMA ON
+DMACON  = $04           'DMACT' MISSILE DMA ON
+;
+;    ERROR MESSAGE EQUATES
+;
+ECSTKO  = 'S            STACK OVERFLOW
+ECNEST  = 'N            NESTING ERROR -- UNMATCHED RIGHT BRACKET
+ECDEFR  = 'R            DEFINE COMMAND USES RESERVED NAME
+ECUOVF  = 'F            USER DEFINITION REGION FULL
+ECINCL  = 'P            INCOMPLETE (PARTIAL) LINE INPUT
+ECOLL   = 'O            OVERLENGTH INPUT LINE
+ECABRT  = 'A            OPERATOR ABORT (BREAK KEY)
+ECIOER  = 'I            SYSTEM I/O ERROR
+ECUNDV  = 'U            UNDEFINED VARIABLE NAME USED
+ECDNTL  = 'D            DEVICE NAME ERROR (TOO LONG)
+ECOPEN  = 'I            GET/PUT DEVICE OPEN ERROR
+ECLOAD  = 'L            LOAD ARGUMENT UNDEFINED
+;
+;   MISCELLANEOUS EQUATES
+;
+BUCKET  = $FFFFF        -1 INDICATES BIT BUCKET
+
+;
+; RAM DATA BASE FOR TURTLE GRAPHICS PROGRAM
+;
+
+;
+;   CONTROL REGION
+;
+*=$0080
+EXEC    *=*+1   0 = SCAN BUT DON'T EXECUTE, ELSE EXECUTE
+KBIN    *=*+1   0 = GET DATA FROM MEMORY, ELSE FROM KEYBOARD
+;
+;    START OF 'DTAB' REGION (USED FOR 'SXXXI' & 'DXXXI' ROUTINES)
+;
+DTAB    = *
+PTRSRH  *=*+RH  RECORD INCLUDES THE 1 FOLLOWING POINTERS
+        *=*+RH
+INPT    *=*+3   INPUT LINE POINTER & OFFSET BYTE
+        *=*+RH
+OUTPT   *=*+3   OUTPUT LINE POINTER & OFFSET BYTE
+        *=*+RH
+FLINE   *=*+3   USER COMMAND LINE POINTER & OFFSET BYTE
+
+        *=*+RH
+ACC     *=*+NL  ARITHMETIC ACCUMULATOR
+        *=*+RH
+NUMBER  *=*+NL  INTERNAL NUMBER REGISTER
+        *=*+RH
+LEVEL   *=*+NL  USER COMMAND NESTING LEVEL
+        *=*+RH
+CHAR    *=*+1   CURRENT COMMAND BYTE
+        *=*+RH
+ERR     *=*+1   COMMAND ERROR CODE
+SSTACK  *=*+2   SOFTWARE STACK POINTER
+XJUMP   *=*+3   JUMP VECTOR
+REDEF   *=*+1   USER COMMAND REDEFINED FLAG
+TEMP    *=*+3   TEMPORARY WORK STORAGE FOR BOTTOM LEVEL CODE SEQUENCES
+COUNT   *=*+1   WORK COUNTER
+FTSTAT  *=*+1   'FTEST' TEMP
+SWTEMP  *=*+3   'SCNWRT' TEMP
+XSTEMP  *=*+1   'XSENSE' TEMP
+AUDTMP  *=*+3   'XAUDIO' TEMP
+;
+;    TURTLE GRAPHICS REGION
+;
+        *=*+RH
+XCURS   *=*+2   X CURSOR (-32768 TO 32767)
+YCURS   *=*+2   Y CURSOR (-32768 TO 32767)
+COLORN  *=*+1   CURRENT COLOR # (NEGATIVE = PEN UP)
+MODE    *=*+1   CURRENT OPERATING MODE (0-3)
+EDGRUL  *=*+1   CURRENT EDGE RULE FOR COLLISIONS (0-3)
+TRTREP  *=*+1   CURRENT TURTLE REPRESENTATION (0-3)
+AUDIO   *=*+1   CURRENT AUDIO SELECT (0-15)
+SPEED   *=*+1   CURRENT TURTLE SPEED SELECTION (0-7)
+NXTSCN  *=*+1   NEXT SCREEN MODE (0-7)
+SCNMOD  *=*+1   CURRENT SCREEN MODE (0-7)
+ORIENT  *=*+1   CURRENT TURTLE ORIENTATION (0-7)
+EEDGE   *=*+1   EAST EDGE COLLISION SENSE
+SEDGE   *=*+1   SOUTH EDGE COLLISION SENSE
+WEDGE   *=*+1   WEST EDGE COLLISION SENSE
+NEDGE   *=*+1   NORTH EDGE COLLISION SENSE
+TRYPOS  *=*+1   TURTLE REPRESENTATION PLAYER POSITION (Y)
+;
+;    I/O DATA REGION
+;
+
+PDSPTB  *=*+2   POINTER TO CURRENT DISPLAY TABLE
+        *=*+RH
+PROMPT  *=*+1   USER PROMPT CHARACTER ('>' OR ' ')
+INSIZ   = $00FF-*-1     BUFFER SIZE
+        *=*+RH
+LININ   *=*+INSIZ
+
+P0END   = *-1           *** MUST BE < $0100 ***
+
+;
+;    END OF 'DTAB' REGION
+;
+;    TURTLE PLAYER BUFFER
+;
+*=$580          ORGED FOR MISSILES WITH BASE @ $0400
+
+TPBUFF *=*+128          MISSILES BUFFER AREA
+TVBUFF = TPBUFF+12      START OF VISIBLE REGION
+TRBUFF = TVBUFF-7       INCLUDES UNDERFLOW REGION
+;
+;       USER DEFINED VARIABLE REGION ('VDEF')
+;
+*=$0500
+
+        *=*+RH
+VDEF    *=*+VSIZE
+        *=*+1   TERMINATOR BYTE
+
+OPNBUF  *=*+DNSIZE+1    DEVICE NAME BUFFER FOR OPEN
+
+P5END   = *-1           *** MUST BE < $0580 ***
+
+;
+;   UNUSED PAGE (FREE FOR ANY USE)
+;
+*=$0600
+
+P6END   = *-1           *** MUST BE < $0700 ***
+
+
+        .IF     BOOT
+        .IF     DLOAD
+*=$3000
+        .ENDIF
+        .IF     DLOAD-1
+*=$0700
+        .ENDIF
+        .ENDIF
+        .IF     BOOT-1
+*=$A800
+        .ENDIF
+;
+; CASSETTE BOOT FILE INFORMATION
+;
+        .IF     BOOT
+        .IF     DLOAD-1
+PST=*
+        .BYTE   0               (DOESN'T MATTER)
+        .BYTE   PND-PST+127/128 NUMBER OF RECORDS.
+        .WORD   PST             MEMORY ADDRESS TO START LOAD
+        .WORD   PINIT           PROGRAM INIT VECTOR
+
+; ENTRY POINT FOR MULTI-STAGE BOOT PROCESS
+        CLC                     SET PROPER "NO ERROR" STATUS
+        RTS
+
+; ENTRY POINT FOR FIRST TIME INITIALIZATION
+
+PINIT   LDA     #$3C            TURN OFF CASSETTE
+        STA     PACTL
+
+        .ENDIF
+
+        LDA     #PND            ESTABLISH UPPER MEMORY LIMIT
+        STA     MEMLO
+        LDA     #PND/256
+        STA     MEMLO+1
+
+        LDA     #RESTRT         ESTABLISH JUMP VECTOR
+        STA     DOSVEC
+        LDA     #RESTRT/256
+        STA     DOSVEC+1
+
+        .IF      DLOAD-1
+        RTS
+        .ENDIF
+
+        .ENDIF
+
+;
+; TURTLE INITIALIZATION
+;
+
+; POWER-UP ENTRY POINT
+
+        .IF     BOOT-1
+INIT    RTS                     RETURN TO POWER-UP ROUTINE.
+        .ENDIF
+
+; WARMSTART ENTRY POINT (RESET KEY)
+
+RESTRT  LDX     #$FF            SETUP HARDWARE STACK POINTER
+        TXS
+
+        LDX     #$80            CLEAR ERROR ....
+        LDA     #0
+
+INI010  STA     0,X
+        INX
+        CPX     #0              PAGE WRAP POINT?
+        BNE     INI010          NO -- CONTINUE
+
+        LDA     #$4C            PUT "JMP" OPCODE IN JUMP VECTOR.
+        STA     XJUMP+0
+
+        LDA     #TWHAT          SETUP MESSAGE TABLE POINTER.
+        STA     PDSPTB
+        LDA     #TWHAT/256
+        STA     PDSPTB+1
+
+        LDX     #IOCB0          INIT IOCBS 0,1,2 & 3.
+
+INI020  LDA     #0
+        STA     ICRLL,X
+        STA     ICRLH,X
+        STA     ICBLL,X
+        STA     ICBLH,X
+        LDA     #OPNBUF
+        STA     ICBAL,X
+        LDA     #OPNBUF/256
+        STA     ICBAH,X
+        TXA
+        CLC
+        ADC     #IOCBSZ         BUMP TO NEXT IOCB.
+        TAX
+        CPX     #IOCB4          DONE?
+        BNE     INI020          NO -- DO NEXT IOCB.
+
+        LDA     #1              SET (NON-ZERO) OPTION DEFAULT VALUES.
+        STA     COLORN
+        LDA     #6              HARDWARE SCREEN MODE #7.
+        STA     NXTSCN
+        STA     SCNMOD
+        LDA     #MNORML
+        STA     MODE
+        LDA     #ERDIPR         EDGE RULE IS "REFLECT"
+        STA     EDGRUL
+        LDA     #3              TURTLE REPRESENTATION IS "ON".
+        STA     TRTREP
+
+        LDX     #128            CLEAR TURTLE REPRESENTATION BUFFER (PLAYER).
+        LDA     #0
+
+INI022  STA     TPBUFF-1,X
+        DEX
+        BNE     INI022
+
+        LDX     #8              INITIALIZE PLAYER/MISSILE HARDWARE.
+        LDA     #0
+
+INI027  STA     HPOS0,X         SET ALL HORIZONTAL POSITIONS TO ZERO.
+        DEX
+        BNE     INI027
+
+        LDA     #$00            ... PRIORITY
+        STA     GPRIOR          (GLOBAL RAM)
+        LDA     #TPBUFF-$180/256     PLAYER BASE ADDRESS REGISTER
+        STA     PMBASE
+        LDA     #$00            ... PLAYER SIZE.
+        STA     SIZEM
+        JSR     MODSEL          OPEN ALL IOCBS.
+
+        JSR     XHOME+2         HOME CURSOR (TURTLE).
+        JSR     XNORTH+2        FACE TURTLE NORTH.
+        JSR     XCLEAR+2        CLEAR SCREEN.
+
+        JSR     PLCTRT          PLACE TURTLE REPRESENTATION.
+
+        LDA     #1              SETUP ALL RECORD LENGTHS.
+        STA     CHAR-1
+        STA     PROMPT-1
+        STA     ERR-1
+        LDA     #3
+        STA     INPT-1
+        STA     OUTPT-1
+        STA     FLINE-1
+        LDA     #4
+        STA     XCURS-1
+        LDA     #NL
+        STA     LEVEL-1
+        STA     NUMBER-1
+        STA     ACC-1
+        LDA     #INSIZ
+        STA     LININ-1
+        LDA     #VSIZE
+        STA     VDEF-1
+        LDA     #3+RH*3
+        STA     PTRSRH
+
+        LDX     #ACC-DTAB       ZERO 'ACC'.
+        JSR     SCLRI
+
+        JSR     CLRUDF          CLEAR USER DEFINED COMMANDS ...
+        JSR     CLRVDF          ... AND VARIABLES.
+
+        LDA     #$FF            RESET BREAK KEY FLAG.
+        STA     BREAK
+
+        JSR     CLRINL          CLEAR INPUT LINE BUFFER.
+
+        LDA     #'              (BLANK)
+        STA     CHAR            BLANK TO 'CHAR' ...
+        JMP     DIRECT          ... & 'ERR'.
+
+;
+; THIS IS THE MAIN-LINE LOOP -- STACKS ARE INITIALIZED, DELETED
+; USER COMMANDS ARE CLEARED, AND A SINGLE COMMAND IS EXECUTED.
+; 'DIRECT' IS THE EXTERNAL ENTRY POINT FOR ABORT AND FATAL ERROR CONDITIONS
+;
+DIRECT  LDX     #$FF            RE-INIT HARDWARE STACK POINTER
+        TXS
+
+        STA     ERR             SAVE "ERROR" CODE.
+
+        LDA     MEMLO           INIT SOFTWARE STACK POINTER.
+        CLC
+        ADC     #USIZE+1        STARTS AFTER 'DDEF' AREA.
+        STA     SSTACK
+        LDA     MEMLO+1
+        ADC     #USIZE+1/256
+        STA     SSTACK+1
+
+        LDX     #LEVEL-DTAB     SET USER COMMAND LEVEL TO 0.
+        JSR     SCLRI
+
+        LDX     #NUMBER-DTAB    SET 'NUMBER' TO ZERO.
+        JSR     SCLRI
+
+ML=*                            MAIN-LINE LOOP.
+        LDA     REDEF           USER COMMAND REDEFINED?
+        BEQ     ML10            NO.
+
+        LDA     #0              YES -- RE-ALLOCATE MEMORY USED.
+        STA     REDEF
+
+ML05    LDA     #DEL            FIND DELETED COMMANDS
+        STA     CHAR
+        JSR     UFIND
+        BNE     ML10            NO MORE FOUND
+
+        LDY     #0
+        LDA     #EOL            EOL DEALLOCATES THE BUFFER AREA
+        STA     (FLINE),Y
+        JMP     ML05
+
+ML10    JSR     COMMND          EXECUTE ONE COMMAND
+        JMP     ML
+
+
+; THIS IS THE COMMAND INITIATER -- A COMMAND IS READ FROM THE KEYBOARD
+; AND STORED IN THE WORK BUFFER ('LININ') AS IT IS SYNTAX CHECKED. AND
+; THEN EXECUTED. SCREEN REPORTING IS HANDLED HERE ALSO.
+;
+COMMND  LDA     #'>             SETUP INPUT PROMPT
+        STA     PROMPT
+
+        JSR     XWHAT           PUT INFO TO SCREEN ...
+        JSR     CLRINL          ... THEN CLEAR INPUT LINE BUFFER.
+
+        LDA     #$FF            GET INPUT FROM KEYBOARD
+        STA     KBIN
+        LDA     #0              ... SCAN WITHOUT EXECUTING
+        STA     EXEC
+        LDA     #LININ          ... & STORE TO LINE BUFFER
+        STA     OUTPT
+        LDA     #LININ/256
+        STA     OUTPT+1
+        LDA     #0
+        STA     OUTPT+2
+
+        JSR     RCMD            GET (SCAN) ONE COMMAND
+
+        JSR     SCNEOL          SCAN TO "EOL" IF INPUT FROM "E:"
+
+        INC     KBIN            (=0) GET INPUT FROM LINE BUFFER
+        LDA     #LININ
+        STA     INPT
+        LDA     #LININ/256
+        STA     INPT+1
+        LDA     #0
+        STA     INPT+2
+
+        STA     OUTPT+2         ... & STORE TO BIT BUCKET
+        LDA     #BUCKET
+        STA     OUTPT
+        LDA     #BUCKET/256
+        STA     OUTPT+1
+        DEC     EXEC            (=-1) ... WHILE EXECUTING INPUT LINE.
+
+        LDA     #'              (BLANK) -- REMOVE PROMPT WHILE EXECUTING.
+        STA     PROMPT
+        STA     ERR             ALSO REMOVE ERROR CODE FROM PRIOR LINE.
+
+        JSR     XWHAT           SETUP REPORT TO SCREEN.
+
+        JSR     RCMD            EXECUTE ONE COMMAND.
+
+        RTS                     *** CHANGE ABOVE TO JMP WHEN DEBUGGED ***
+
+; SYNTAX SCANNER AND EXECUTER -- IF 'EXEC' = 0, THEN SCAN ONE COMMAND AND RETURN
+; IF 'EXEC' <> 0, THEN ONE COMMAND IS EXECUTED.  'CMD' IS AN EXTERNAL
+; ENTRY POINT THAT ASSUMES THAT A COMMAND IS IN 'CHAR'
+; COMMANDS ARE EITHER INTRINSIC (PART OF SYSTEM) OR USER DEFINED.
+;
+RCMD    JSR     GETCH           GET CHARACTER
+;
+; *** EXTERNAL ENTRY POINT ***
+;
+CMD     JSR     ABRTCK          CHECK FOR BREAK KEY.
+
+        JSR     PRICOM          CHECK FOR PRIORITY COMMAND PENDING.
+
+        JSR     RUNOPT          PROCESS RUN OPTIONS.
+
+        LDA     CHAR            EXPLICIT USER COMMAND INVOCATION?
+        CMP     #'*
+        BEQ     CMD015          YES -- IGNORE RESERVED WORD CHECK.
+
+        JSR     RESERV          NO -- CHECK FOR INTRINSIC COMMAND.
+        BNE     CMD020          NOT INTRINSIC -- SEE IF USER COMMAND.
+
+;   INTRINSIC COMMAND
+
+        LDA     EXEC            YES -- SET CC FOR EXEC/SCAN OPTION
+        JSR     XJUMP           EXECUTE X-ROUTINE.
+        RTS                     *** CHANGE ABOVE TO JMP WHEN DEBUGGED ***
+
+;   NOT INTRINSIC COMMAND
+
+CMD015  JSR     GETCH           GET USER COMMAND NAME (IGNORE *).
+
+CMD020  LDA     EXEC            EXECUTE?
+        BNE     CMD023          YES.
+
+CMD021  RTS                     NO.
+
+CMD023  JSR     UFIND           USER DEFINED COMMAND?
+        BNE     CMD021          NO -- IGNORE (SLOW NOP).
+
+;    USER DEFINED COMMAND
+
+        LDX     #INPT-DTAB      YES -- SAVE INPUT SCAN POINTER.
+        JSR     SPSHI           PUSH POINTER TO STACK.
+
+        TSX                     SEE IF STACK FULL ENOUGH TO WORRY ABOUT?
+        CPX     #$80
+        BCS     CMD032          NO.
+
+        JSR     PUSHHS          YES -- PUSH HARDWARE STACK TO SOFTWARE STACK.
+
+CMD032  LDA     FLINE           ESTABLISH USER COMMAND AS NEW INPUT SCAN LINE
+        STA     INPT
+        LDA     FLINE+1
+        STA     INPT+1
+        LDA     #2              SKIP OVER "X="
+        STA     INPT+2
+
+        LDX     #LEVEL-DTAB     INCREMENT USER LEVEL #.
+        JSR     SINCI
+
+;    EXECUTE USER COMMAND
+
+        JSR     RCMD            PROCESS USER DEFINITION
+
+        LDX     #LEVEL-DTAB     DECREMENT USER LEVEL #.
+        JSR     SDCRI
+
+        TSX                     HARDWARE STACK EMPTY?
+        CPX     #$FF
+        BNE     CMD040          NO.
+
+        JSR     PULLHS          YES -- PULL DATA FROM SOFTWARE STACK.
+
+CMD040  LDX     #INPT-DTAB      RE-ESTABLISH INPUT SCAN LINE
+        JSR     SPULI           PULL POINTER FROM STACK
+        RTS                     *** DON'T CHANGE ABOVE JSR TO JMP !!! ***
+
+; RESERV -- CHECK CHARACTER FOR SYSTEM INTRINSIC
+;
+; CALLING SEQUENCE:
+;
+;       'CHAR' = CHARACTER IN QUESTION
+;       'CTAB' = COMMAND JUMP TABLE
+;
+;       JSR     RESERV
+;       BNE     NOT RESERVED INTRINSIC
+;
+;       'XJUMP' = JUMP TO X-ROUTINE IF FOUND
+;
+RESERV  LDA     CHAR            GET COMMAND NAME.
+        SEC                     (CLEAR BORROW)
+        SBC     #$20            NORMALIZE BLANK TO 00
+        CMP     #$60            IN INTRINSIC SPACE?
+        BCC     RES010          YES -- COULD BE INTRINSIC.
+
+RES005  LDA     #$FF            NO -- NOT RESERVED WORD.
+        RTS
+
+
+RES010  ASL     A               X2 FOR ACCESS TO ADDRESS TABLE.
+        TAX
+        LDA     CTAB+1,X        GET MSB OF ADDRESS.
+        BEQ     RES005          NO ENTRY -- NOT RESERVED.
+
+        STA     XJUMP+2
+        LDA     CTAB+0,X        GET LSB OF ADDRESS
+        STA     XJUMP+1
+        LDA     #0              SET CC FOR EXIT.
+        RTS
+
+; COMMAND TABLE
+;
+; EACH ENTRY (ORDERED IN ATASCII SEQUENCE) IS THE ADDRESS
+; OF THE COMMAND PROCESSOR ROUTINE OR ZERO.
+;
+CTAB=*
+
+        .WORD   XNOP            BLANK = NOP
+        .WORD   XSTOP           ! = STOP ITERATION (ONE LEVEL)
+        .WORD   0               "
+        .WORD   XVAR            # = ITERATE BY VARIABLE
+        .WORD   XJOYS           $ = JOYSTICK TEST
+        .WORD   XPOT            % = READ POT CONTROLLER TO ACCUMULATOR
+        .WORD   XCOLOR          & = COLOR REGISTER UPDATE
+        .WORD   0               '
+        .WORD   XLPARN          ( = NESTING BRACKET
+        .WORD   XNERR           ) = ILLEGAL WITHOUT <
+        .WORD   0               * = RESERVED FOR COMMAND DELIMITER
+        .WORD   XPLUS           + = INCREMENT ACCUMULATOR
+        .WORD   0               ,
+        .WORD   XMINUS          - = DECREMENT ACCUMULATOR
+        .WORD   0               .
+        .WORD   0               /
+        .WORD   XITER           0 = ITERATE
+        .WORD   XITER           1 = ITERATE
+        .WORD   XITER           2 = ITERATE
+        .WORD   XITER           3 = ITERATE
+        .WORD   XITER           4 = ITERATE
+        .WORD   XITER           5 = ITERATE
+        .WORD   XITER           6 = ITERATE
+        .WORD   XITER           7 = ITERATE
+        .WORD   XITER           8 = ITERATE
+        .WORD   XITER           9 = ITERATE
+        .WORD   0               :
+        .WORD   XCMPAS          ; = DIRECTION SENSE
+        .WORD   0               <
+        .WORD   XDEFIN          = = DEFINE USER COMMAND OR VARIABLE
+        .WORD   0               >
+        .WORD   XQUEST          ? = RANDOM TEST
+
+        .WORD   XZERO           @ = SET ACC TO ZERO
+        .WORD   XA              A = ITERATE BY ACCUMULATOR
+        .WORD   XBEEP           B = BEEP
+        .WORD   XCLEAR          C = CLEAR SCREEN
+        .WORD   XDOWN           D = PEN DOWN
+        .WORD   XEDGE           E = EDGE TEST
+        .WORD   XFRWRD          F = TURTLE FORWARD
+        .WORD   0               G
+        .WORD   XHOME           H = TURTLE HOME
+        .WORD   0               I
+        .WORD   0               J
+        .WORD   0               K
+        .WORD   XROTL           L =  ROTATE TURTLE LEFT
+        .WORD   0               M
+        .WORD   XNORTH          N = FACE TURTLE NORTH
+        .WORD   0               O
+        .WORD   XPEN            P = PEN COLOR SELECT
+        .WORD   0               Q
+        .WORD   XROTR           R = ROTATE TURTLE RIGHT
+        .WORD   XSENSE          S = TURTLE COLOR SENSE
+        .WORD   XIF             T = ACCUMULATOR TEST
+        .WORD   XUP             U = PEN UP
+        .WORD   0               V
+        .WORD   XWAIT           W = WAIT FOR NEXT CLOCK TICK
+        .WORD   0               X
+        .WORD   0               Y
+        .WORD   0               Z
+        .WORD   XPUSHA          [ =  NESTING BRACKET WITH ACC PUSH
+        .WORD   0               \
+        .WORD   XNERR           ] = ILLEGAL WITHOUT [
+        .WORD   XBUMP           ^ = BUMP ITERATION COUNT
+        .WORD   XNOP            <UNDERSCORE> = NOP
+
+        .WORD   0               `
+        .WORD   XAUDIO          A = SELECT AUDIO OUTPUT
+        .WORD   0               B
+        .WORD   XCLRV           C = CLEAR USER VARIABLES
+        .WORD   XDSPMD          D = SELECT DISPLAY MODE
+        .WORD   XERULE          E = SELECT EDGE RULE
+        .WORD   0               F
+        .WORD   XGETFL          G = GET USER DEFS
+        .WORD   0               H
+        .WORD   0               I
+        .WORD   0               J
+        .WORD   0               K
+        .WORD   XLOAD           L = LOAD CANNED PROGRAMS
+        .WORD   XMODE           M = SELECT OPERATING MODE
+        .WORD   0               N
+        .WORD   0               O
+        .WORD   XPUTFL          P = PUT USER DEFS
+        .WORD   0               Q
+        .WORD   XRUN            R = LOAD & RUN CANNED PROGRAMS
+        .WORD   XSPEED          S = SELECT SPEED
+        .WORD   XTREP           T = SELECT TURTLE REPRESENTATION
+        .WORD   0               U
+        .WORD   0               V
+        .WORD   0               W
+        .WORD   0               X
+        .WORD   0               Y
+        .WORD   XRESET          Z = SOFT RESET
+        .WORD   0
+        .WORD   0
+        .WORD   0
+        .WORD   0
+        .WORD   0
+
+;
+; UFIND -- FIND USER COMMAND DEFINITION IF PRESENT
+;
+; CALLING SEQUENCE:
+;
+;       'CHAR' = COMMAND NAME
+;       'UDEF' AREA STARTS AT BOTTOM OF AVAILABLE MEMORY
+;
+;       JSR     UFIND
+;       BNE     NOT FOUND
+;
+;       'FLINE' = POINTER TO COMMAND DEFINITION. IF FOUND
+;
+;       REGISTER X IS CLOBBERED. Y = 0
+;
+UFIND   JSR     SETUDF          SETUP POINTER TO 'UDEF' AREA
+        LDA     #LINSIZ
+        STA     FLINE+2
+;
+; *** EXTERNAL ENTRY POINT ***
+;
+XFIND   LDY     #0              SEARCH 1ST CHAR OF EACH LINE.
+        LDA     (FLINE),Y       GET CHARACTER.
+        CMP     #$FF            END OF TABLE INDICATOR?
+        BNE     FND020          NO -- CHECK FOR MATCH.
+
+        LDA     #$FF            YES -- SET CC FOR EXIT.
+
+FND010  RTS                     RETURN WITH CC SET.
+
+FND020  CMP     CHAR            IS THIS THE ONE WE'RE LOOKING FOR?
+        BEQ     FND010          YES -- RETURN WITH CC SET.
+
+        LDX     #FLINE-DTAB     NO -- TRY AGAIN.
+        LDY     FLINE+2         GET INCREMENT TO NEXT DEFINITION
+        JSR     PADDY           INCREMENT 'FLINE'
+        JMP     XFIND
+
+; VFIND -- FIND USER DEFINED VARIABLE, IF PRESENT
+;
+; CALLING SEQUENCE:
+;
+;       'CHAR' = NAME OF VARIABLE
+;       'VDEF' AREA HAS VARIABLE VALUES
+;
+;       JSR     VFIND
+;       BNE     NOT FOUND
+;
+;       'FLINE' = POINTER TO VARIABLE DEFINTION, IF FOUND
+;
+;       REGISTER X IS CLOBBERED, Y = 0
+;
+VFIND   LDA     #VDEF           SETUP POINTER TO DEFINITIONS.
+        STA     FLINE
+        LDA     #VDEF/256
+        STA     FLINE+1
+        LDA     #VLNGTH         LENGTH OF EACH DEFINITION.
+        STA     FLINE+2
+        JMP     XFIND           GO TO COMMON CODE ('UFIND' & 'VFIND').
+
+;
+; RUNOPT -- PROCESS RUN-TIME OPTIONS
+;
+RUNOPT  LDA     EXEC            CHECK FOR EXECUTE ON SCAN
+        BEQ     RUN090          SCAN -- NO OPTION CONTROL
+
+        LDA     MODE            CHECK MODE.
+        CMP     #MDRAW          FULL GRAPHICS?
+        BEQ     RUN010          YES -- NO TEXT TO SCREEN
+
+        CMP     #MNORML         NORMAL MODE?
+        BEQ     RUN010          YES -- NO TEXT TO SCREEN
+
+        LDY     #TVARS-TWHAT    NO -- PUT VARIABLES TO SCREEN
+        JSR     SCNWRT
+
+;
+;    PROCESS SPEED OPTION
+;
+RUN010  LDA     SPEED           CHECK OPTION.
+        BEQ     RUN050          0 = FULL SPEED AHEAD.
+
+        CMP     #SCSTEP         SINGLE STEP?
+        BEQ     RUN030          YES
+
+        SEC                     (CLEAR BORROW)
+        SBC     #1              NO -- SYNCHRONIZE SPEED TO CLOCK.
+        JSR     CLKSYN
+        JMP     RUN050
+
+;    SINGLE STEP -- WAIT FOR ANY KEY STROKE
+
+RUN030  LDA     #$FF            KEYSTROKE?
+        CMP     CH
+        BNE     RUN033          YES
+
+        JSR     ABRTCK          BREAK KEY?
+        JMP     RUN030          NO -- WAIT FOR ONE OR THE OTHER
+
+RUN033  STA     CH              RESET KEYSTROKE
+
+; SET AUDIO IF SELECTED
+
+RUN050  LDA     AUDIO           AUDIO SELECTED?
+        BEQ     RUN090          NO
+
+        TSX
+        STX     AUDTMP+2        (FOR SOUND GENERATION)
+        ASL     A
+        TAX
+        LDA     AUDTAB,X        GET L.S.B. OF ADDRESS.
+        STA     AUDTMP
+        LDA     AUDTAB+1,X      GET M.S.B. OF ADDRESS.
+        STA     AUDTMP+1
+        LDY     #0
+        LDA     (AUDTMP),Y      GET VALUE AT THE ADDRESS
+        AND     #$FF
+        CLC
+        ADC     #$00
+        STA     AUDF1           FREQUENCY SELECT.
+        LDA     #$A0+8
+        STA     AUDC1
+
+RUN090  RTS
+
+AUDTAB  = *-2
+        .WORD   COLCRS          LSB     1       A
+        .WORD   ROWCRS          LSB     2       B
+        .WORD   SSTACK+1        MSB     3       C
+        .WORD   PADDL0          LSB     4       D
+        .WORD   PADDL0+1        LSB     5       E
+        .WORD   CHAR                    6       F
+        .WORD   TEMP                    7       G
+        .WORD   TEMP+1                  8       H
+        .WORD   COUNT                   9       I
+        .WORD   AUDTMP+2        S       10      J
+        .WORD   XCURS+1         MSB     11      K
+        .WORD   YCURS+1         MSB     12      L
+        .WORD   SSTACK          LSB     13      M
+        .WORD   INPT+2                  14      N
+        .WORD   ACC+NL-1        LSB     15      O
+
+;
+; CLRINL -- CLEAR INPUT LINE UTILITY
+;
+; CALLING SEQUENCE:
+;
+;       JSR     CLRINL
+;
+;       'LININ' IS SET TO BLANKS WITH AN EOL AT THE END
+;
+CLRINL  LDX     #INSIZ          CLEAR INPUT LINE.
+        LDA     #'              (BLANK)
+
+CIL010  STA     LININ-1,X
+        DEX
+        BNE     CIL010
+
+        LDA     #EOL            TERMINATE LINE FOR PRINTING
+        STA     LININ+INSIZ-1
+        RTS
+
+;
+; SCNEOL -- SCAN TO EOL CHARACTER IF INPUT FROM "E:" DEVICE
+;
+; CALLING SEQUENCE:
+;
+;       JSR     SCNEOL
+;
+
+SCNEOL  LDX     MODE            INPUT FROM "E:"?
+        LDA     TINX,X
+        CMP     #4
+        BNE     SCE090          NO
+
+SCE010  JSR     CHIN            YES -- SCAN
+        CMP     #EOL
+        BNE     SCE010          ... TO EOL CHARACTER
+
+SCE090  RTS
+
+; *** START OF LEVEL 2 PROCEDURES COMMAND PROCESSORS (X-ROUTINES) ***
+
+;  USER DEFINED COMMAND PROCEDURE -- <CHAR><COMMAND>
+;                                    *<NAME><COMMAND>
+;
+
+XDEFIN  JSR     GETCH           GET COMMAND/VARIABLE NAME
+        CMP     #'#             IS IT A USER VARIABLE DEFINITION?
+        BEQ     XDF100          YES
+
+        CMP     #'*             NO -- IS IT THE RESERVED WORD OVERRIDE CHAR?
+        BEQ     XDF005          YES
+
+        JSR     RESERV          IS IT RESERVED (INTRINSIC)?
+        BNE     XDF010          NO.
+
+        LDA     EXEC
+        BEQ     XDF015          NON-EXECUTE -- DEFER ERROR REPORTING
+
+        LDA     #ECDEFR
+        JMP     DIRECT          YES -- FATAL ERROR
+
+;    USER COMMAND DEFINITION -- =<NAME><COMMAND>
+
+XDF005  JSR     GETCH           GET COMMAND NAME (IGNORE *).
+
+XDF010  LDA     EXEC            EXECUTE MODE?
+        BNE     XDF020          YES.
+
+XDF015  JMP     RCMD            NO -- SCAN DEFINITION & RETURN.
+
+XDF020  JSR     UFIND           USER COMMAND ALREADY DEFINED?
+        BNE     XDF025          NO.
+
+        LDA     #DEL            YES -- MARK IT AS DELETED NOW.
+        STA     (FLINE),Y
+        STA     REDEF           SET FLAG FOR SPACE RECLAMATION LATER
+
+XDF025  LDA     CHAR            SAVE 'CHAR' (COMMAND NAME).
+        PHA
+        LDA     #EOL            NOW SCAN FOR BLANK ENTRY FOR NEW DEF
+        STA     CHAR
+        JSR     UFIND
+        BEQ     XDF030          GOOD -- FOUND A SPOT.
+
+        LDA     #ECUOVF
+        JMP     DIRECT          NO ROOM FOR DEFINITION -- ABORT
+
+XDF030  JSR     GETCH           GET 1ST CHARACTER OF DEFINITION
+        CMP     #'              IS IT BLANK (MEANS DELETE)?
+        BEQ     XDF050          YES -- NO MORE TO DO.
+
+        LDY     #0              NO -- ENTER NEW DEFINITION.
+        PLA                     GET AND STORE COMMAND NAME.
+        STA     (FLINE),Y
+        INY
+        LDA     #'=             STORE KEY
+        STA     (FLINE),Y
+        INY
+        LDA     CHAR            STORE 1ST BYTE OF DEFINITION.
+        STA     (FLINE),Y
+
+        LDX     #OUTPT-DTAB     SAVE OUTPUT POINTER
+        JSR     SPSHI
+
+        LDA     FLINE           ROUTE OUTPUT TO 'FLINE' ('UDEF' AREA)
+        STA     OUTPT
+        LDA     FLINE+1
+        STA     OUTPT+1
+        LDA     #3              SKIP OVER "X=X" ALREADY STORED.
+        STA     OUTPT+2
+        INC     EXEC            (=0) SET TO SCAN MODE (NO EXECUTE)
+
+        JSR     CMD             COPY DEFINTION TO BUFFER W/O EXECUTE.
+
+        LDY     OUTPT+2         NOW ADD EOL AT END OF DEFINITION.
+        LDA     #EOL
+        STA     (OUTPT),Y
+
+        DEC     EXEC            (=-1) SET BACK TO EXECUTE MODE.
+        LDX     #OUTPT-DTAB     RESTORE OUTPUT POINTER.
+        JSR     SPULI
+        RTS                     *** DON'T CHANGE ABOVE JSR TO JMP ***
+
+XDF050  PLA                     CLEAR STACK BEFORE LEAVING
+        RTS
+
+;
+;    VARIABLE ASSIGNMENT TO ACC CONTENTS  -- <TVAR>
+;
+
+XDF100  JSR     GETCH           GET VARIABLE NAME
+        LDA     EXEC            EXECUTE MODE?
+        BEQ     XDF190          NO.
+
+        JSR     VFIND           ALREADY DEFINED?
+        BEQ     XDF135          YES -- ASSIGN NEW VALUE.
+
+        LDA     CHAR            NO -- LOOK FOR FREE SPOT
+        PHA                     SAVE 'CHAR'.
+        LDA     #'              SEARCH FOR BLANK.
+        STA     CHAR
+        JSR     VFIND           FIND EMPTY SPOT?
+        BEQ     XDF130          YES.
+
+        LDA     #ECUOVF
+        JMP     DIRECT          NO -- ABORT.
+
+XDF130  PLA                     RESTORE 'CHAR'.
+        STA     CHAR
+        LDY     #0              SAVE IT AS VARIABLE NAME.
+        STA     (FLINE),Y
+        INY
+        LDA     #'=             SAVE '='
+        STA     (FLINE),Y
+
+XDF135  LDX     #0              NOW SAVE CURRENT 'ACC' CONTENT AS VALUE.
+        LDY     #2
+
+XDF140  LDA     ACC,X           GET DIGIT.
+        STA     (FLINE),Y       SAVE IN DEFINITION.
+        INX
+        INY
+        CPX     ACC-1           DONE YET?
+        BNE     XDF140          NO.
+
+XDF190  RTS                     YES.
+
+;
+; CLEAR USER DEFINED VARIABLE REGION -- CTRL-C
+;
+XCLRV   BEQ     XCV090          NON-EXECUTE.
+
+        JSR     CLRVDF          CLEAR VARIABLE REGION
+
+XCV090  RTS
+
+
+; COMMAND PROCESSOR FOR ACCUMULATOR NON-ZERO TEST -- T<THEN><ELSE>
+;
+; 'SKIP' & 'TEST' ARE EXTERNAL ENTRY POINTS USED BY THE
+; EDGE TEST AND RANDOM TEST ROUTINES ALSO.
+;
+XIF     BNE     XIF010          EXECUTE.
+
+;
+;    *** EXTERNAL ENTRY POINT ***
+;
+SKIP    JSR     RCMD            SCAN COMMAND (THEN).
+        JMP     RCMD            SCAN COMMAND (ELSE) & RETURN.
+
+XIF010  LDX     #ACC-DTAB       SEE IF 'ACC' = ZERO.
+        JSR     TSTNUM
+
+;
+;    *** EXTERNAL ENTRY POINT ***
+;
+TEST    BNE     XIF020          NO -- EXECUTE "THEN" COMMAND.
+
+;    EXECUTE ELSE
+;
+        INC     EXEC            (=0) SCAN 1ST COMMAND (THEN).
+        JSR     RCMD
+        DEC     EXEC            (=-1) EXECUTE 2ND COMMAND (ELSE)
+        JMP     RCMD                & RETURN
+
+;    EXECUTE THEN
+;
+XIF020  JSR     RCMD            EXECUTE 1ST COMMAND (THEN).
+        INC     EXEC            (=0) SCAN 2ND COMMAND (ELSE).
+        JSR     RCMD
+        DEC     EXEC            (=-1) RESTORE EXECUTE MODE.
+        RTS
+
+
+;
+; RANDOM TEST COMMAND PROCESSOR -- ?<THEN><ELSE>
+;
+XQUEST  BNE     XQU010          EXECUTE MODE.
+
+        JMP     SKIP            SCAN MODE -- SCAN BOTH THEN & ELSE COMMANDS.
+
+XQU010  LDA     PKYRND          GET RANDOM NUMBER FROM POKEY CHIP.
+        AND     #1              MASK DOWN TO BINARY DECISION (SET CC).
+        JMP     TEST            NOW PROCESS THEN OR ELSE BASED ON RESULT.
+
+;
+; COMMAND PROCESSOR FOR NESTING OPERATOR -- (<COMMAND>...<COMMAND>)
+;
+XLP010  JSR     CMD             PROCESS COMMAND.
+
+XLPARN  JSR     GETCH           GET NEXT COMMAND (OR CLOSING PAREN).
+        CMP     #')             CLOSING PAREN?
+        BNE     XLP010          NO -- PROCESS COMMAND.
+
+        JSR     RUNOPT          TREAT ")" AS A COMMAND.
+
+XNOP    RTS                     YES -- NESTING COMPLETE.
+
+
+;
+; COMMAND PROCESSOR FOR PUSH/POP OPERATORS -- [<COMMAND>...<COMMAND>]
+;
+XPUSHA  BEQ     XPA010          NON-EXECUTE.
+
+        LDX     #ACC-DTAB       EXECUTE -- PUSH ACCUMULATOR.
+        JSR     SPSHI
+
+XPA010  JSR     GETCH           GET NEXT COMMAND (OR MATCHING BRACKET).
+        CMP     #']             MATCHING BRACKET?
+        BEQ     XPA020          YES.
+
+        JSR     CMD             NO -- PROCESS COMMAND.
+        JMP     XPA010
+
+XPA020  JSR     RUNOPT          TREAT "]" AS COMMAND.
+        LDA     EXEC
+        BEQ     XPA090          NON-EXECUTE.
+
+        LDX     #ACC-DTAB       EXECUTE -- PULL ACCUMULATOR.
+        JSR     SPULI
+
+XPA090  RTS                     *** DON'T CHANGE ABOVE JSR TO JMP !!! ***
+
+XNERR   JSR     SCNEOL          SCAN TO EOL IF INPUT FROM "E:"
+        LDA     #ECNEST         NESTING ERROR -- UNMATCHED RIGHT BRACKET.
+        JMP     DIRECT
+
+; ACCUMULATOR ITERATE COMMAND PROCESSOR -- A<COMMAND>
+
+XA      BNE     XA010           EXECUTE
+
+        JMP     RCMD            SCAN COMMAND & RETURN
+
+XA010   LDX     #NUMBER-DTAB    SAVE CURRENT 'NUMBER' VALUE
+        JSR     SPSHI
+
+        LDX     #ACC-DTAB       MOVE 'ACC' TO 'NUMBER'
+        LDY     #NUMBER-DTAB
+        JSR     SMOVI
+
+        JSR     GETCH           GET NEXT COMMAND
+
+        JMP     ITER8           GO TO COMMON CODE TO ITERATE
+
+;
+; NUMBER ITERATE COMMAND PROCESSOR -- <NUMBER><COMMAND>
+
+XITER   LDX     #NUMBER-DTAB    SAVE CURRENT 'NUMBER' VALUE.
+        JSR     SPSHI
+
+        JSR     NUMB            GET NEW VALUE TO 'NUMBER' (SCANS TO NEXT COMMAND)
+        LDA     EXEC            EXECUTE MODE?
+        BNE     ITER8           YES -- GO TO COMMON CODE FOR ITERATION.
+
+        JSR     CMD             NO -- SKIP NEXT COMMAND ...
+        JMP     XIT070          ... & RESTORE 'NUMBER'.
+;
+;    *** EXTERNAL ENTRY POINT ***
+;
+ITER8   LDA     CHAR            SEE IF ASSIGNMENT OPERATOR
+        CMP     #'@
+        BNE     XIT050          NO -- ITERATION.
+
+        LDX     #NUMBER-DTAB    YES -- MOVE ITERATION COUNT TO ACC...
+        LDY     #ACC-DTAB
+        JSR     SMOVI
+        JMP     XIT060          ... & DON'T ITERATE.
+
+
+
+XIT050  LDX     #NUMBER-DTAB    COMMON CODE -- TEST NUMBER.
+        JSR     TSTNUM
+        BEQ     XIT060          = ZERO, DONE.
+
+        LDX     #INPT-DTAB      SAVE INPUT POINTER INFORMATION.
+        JSR     SPSHI
+        LDA     CHAR            SAVE 'CHAR'
+        PHA
+
+        JSR     CMD             EXECUTE COMMAND.
+
+        PLA                     RESTORE 'CHAR'.
+        STA     CHAR
+        LDX     #INPT-DTAB      RESTORE INPUT POINTER.
+        JSR     SPULI
+
+        LDX     #NUMBER-DTAB    DECREMENT 'NUMBER'
+        JSR     SDCRI
+        JMP     ITER8           CHECK FOR ANOTHER ITERATION.
+
+XIT060  INC     EXEC            (=0) ALL DONE -- SCAN OVER COMMAND
+        JSR     CMD
+        DEC     EXEC            (=-1) RESTORE EXECUTE MODE.
+
+
+XIT070  LDX     #NUMBER-DTAB    RESTORE ORIGINAL 'NUMBER' VALUE ...
+        JSR     SPULI           ... & CLEAN STACK).
+        RTS                     *** DON'T CHANGE ABOVE JSR TO JMP (X) ***
+
+;
+; STOP ITERATION (INNER LEVEL) COMMAND PROCESSOR -- !
+;
+XSTOP   BEQ     XST090          NON-EXECUTE
+
+        LDX     #NUMBER-DTAB    CLEAR 'NUMBER' TO STOP ITERATION
+        JSR     SCLRI
+
+XST090  RTS
+
+;
+; BUMP ITERATION COUNT (INNER LEVEL) COMMAND PROCESSOR -- ^
+;
+XBUMP   BEQ     XBM090          NON-EXECUTE
+
+        LDX     #NUMBER-DTAB    'NUMBER' = 'NUMBER' + 1
+        JSR     SINCI
+
+XBM090  RTS
+
+;
+; SOFT RESET (RESET KEY) COMMAND PROCESSOR -- CTRL-Z
+;
+XRESET  BEQ     XRS090
+
+        JMP     RESTRT
+
+XRS090  RTS
+
+;
+; COMMAND PROCESSOR FOR VARIABLE ITERATE -- #<VAR><COMMAND>
+;
+XVAR    JSR     GETCH           GET VARIABLE NAME
+        LDA     EXEC            EXECUTE MODE?
+        BNE     XVA010          YES.
+
+        JMP     RCMD            NO -- SCAN PAST COMMAND & RETURN
+
+XVA010  LDX     #NUMBER-DTAB    SAVE CURRENT VALUE OF 'NUMBER'.
+        JSR     SPSHI
+
+        JSR     VFIND           FIND VARIABLE.
+        BEQ     XVA020          FOUND.
+
+        LDX     #NUMBER-DTAB    NOT FOUND USE ZERO
+        JSR     SCLRI
+        LDA     #ECUNDV         ... & FLAG SOFT ERROR
+        STA     ERR
+        BNE     XVA040          (BRA)
+
+XVA020  LDY     #2              MOVE VARIABLE VALUE TO 'NUMBER'
+        LDX     #0
+
+XVA030  LDA     (FLINE),Y
+        STA     NUMBER,X
+        INX
+        INY
+        CPX     NUMBER-1        DONE?
+        BNE     XVA030          NO.
+
+XVA040  JSR     GETCH           GET COMMAND TO ITERATE.
+        JMP     ITER8           GO TO COMMON CODE FOR ITERATION
+
+;
+; PLUS AND MINUS ARITHMETIC COMMAND PROCESSORS -- + & -
+;
+XPLUS   BEQ     XPL090          NON-EXECUTE.
+
+        LDX     #ACC-DTAB       INCREMENT 'ACC'
+        JSR     SINCI
+
+XPL090  RTS
+
+XMINUS  BEQ     XMI090          NON-EXECUTE.
+
+        LDX     #ACC-DTAB DECREMENT 'ACC'
+        JSR     SDCRI
+
+XMI090  RTS
+
+XZERO   BEQ     XZE090          NON-EXECUTE.
+
+        LDX     #ACC-DTAB       ZERO 'ACC'.
+        JSR     SCLRI
+
+XZE090  RTS
+
+;
+; XWHAT -- INFORMATION DUMP COMMAND PROCESSOR -- W
+;
+XWHAT   BEQ     XWH090          NON-EXECUTE.
+
+        LDA     MODE            DO NOTHING IF FULL GRAPHICS.
+        CMP     #MDRAW
+        BEQ     XWH090
+
+        CMP     #MNORML         NORMAL MODE?
+        BNE     XWH005          NO.
+
+        LDA     #EOL            YES -- ECHO EOL TO SCREEN (TEXT AREA) ...
+        JSR     COUT
+        JMP     XWH090          ... & DO NOTHING ELSE.
+
+XWH005  LDA     #CLEAR
+        JSR     COUT
+
+        LDY     #TWHAT-TWHAT    MESSAGE TABLE INDEX
+        LDX     MODE
+        LDA     TTDX,X
+        CMP     #2              SPLIT SCREEN?
+        BNE     XWH010          NO -- FULL DUMP IS FINE.
+
+        LDY     #TSWHAT-TWHAT   YES -- SMALL DUMP IS IN ORDER.
+
+XWH010  JSR     SCNWRT          OUTPUT DATA TO SCREEN.
+
+        LDA     MODE            PUT USER FUNCTIONS OUT IF APPROP.
+        CMP     #MDEBUG
+        BNE     XWH030          NO.
+
+        LDA     #VLINES*2+7     SET CURSOR
+        STA     ROWCRS
+        LDA     #0
+        STA     COLCRS+1
+        LDA     LMARGN
+        STA     COLCRS
+        JSR     SETUDF          SET POINTER TO USER DEFINITIONS.
+
+XWH025  LDY     #0
+
+XWH027  LDA     (FLINE),Y       GET DATA.
+        INY
+        CMP     #$FF            END OF TABLE?
+        BEQ     XWH030          YES -- DONE WITH USER DEFS.
+
+        PHA
+        JSR     COUT            NO -- OUTPUT MORE DATA.
+        PLA
+        CMP     #EOL            END OF DEFINITION?
+        BNE     XWH027          NO -- KEEP PRINTING?
+
+        LDY     #LINSIZ         YES -- BUMP TO START OF NEXT ONE.
+        LDX     #FLINE-DTAB
+        JSR     PADDY
+        JMP     XWH025
+
+XWH030  LDY     #TPRMT-TWHAT    GET CURSOR BACK TO PROMPT.
+        JSR     SCNWRT
+        LDA     PROMPT          SEE IF PROMPT IS BLANK
+        CMP     #'              ... WHICH MEANS EXECUTING.
+        BEQ     XWH090          YES!
+
+        LDA     #DELCH          NO -- END OF EXECUTION ...
+        JSR     COUT            ... FORCE CURSOR TO SHOW.
+
+XWH090  RTS
+
+;
+; MESSAGE TABLE FOR 'WHAT' COMMAND
+;
+;    FIVE BYTES PER ENTRY:
+;
+;       0 - ENTRY TYPE ($FF = END OF TABLE)
+;       1 - CURSOR COLUMN (RELATIVE TO LEFT MARGIN)
+;       2 - CURSOR ROW
+;       3 - TEXT POINTER LSD
+;       4 - TEXT POINTER MSD
+
+TWHAT   .BYTE   0,2,4           SCANNED INPUT LINE (DEBUG MODE STARTS HERE)
+        .WORD   LININ-1
+        .BYTE   0,0,6           USER VARIABLES
+        .WORD   VDEF-1
+
+TSWHAT  .BYTE   0,2,0           "ACC=" (SPLIT SCREEN START HERE)
+        .WORD   MACC
+        .BYTE   0,12,0          "NUMBER="
+        .WORD   MNUM
+        .BYTE   0,25,0          "LEVEL="
+        .WORD   MLEV
+        .BYTE   0,2,1           "CHAR="
+        .WORD   MCHR
+
+        .BYTE   0,25,1          "ERROR="
+        .WORD   MERR
+        .BYTE   0,31,1          ERROR CODE
+        .WORD   ERR-1
+
+TVARS   .BYTE   0,6,0           ACC VALUE
+        .WORD   ACC-1
+        .BYTE   0,19,0          NUMBER VALUE
+        .WORD   NUMBER-1
+        .BYTE   0,31,0          LEVEL VALUE
+        .WORD   LEVEL-1
+        .BYTE   0,7,1           CHAR VALUE
+        .WORD   CHAR-1
+
+        .BYTE   $FF             END OF TABLE
+
+TPRMT   .BYTE   0,0,2           SCREEN ENTRY AREA PROMPT.
+        .WORD   PROMPT-1
+
+        .BYTE   $FF             END OF TABLE
+
+        *=*+30                  SPARES FOR PATCHING.
+
+MACC    .BYTE   4,"ACC="
+
+MNUM    .BYTE   7,"NUMBER="
+
+MLEV    .BYTE   6,"LEVEL="
+
+MCHR    .BYTE   5,"CHAR="
+
+MERR    .BYTE   6,"ERROR="
+
+;
+; XSPEED -- SPEED CONTROL COMMAND PROCESSOR -- CTRL-S <NUMBER>
+;
+XSPEED  JSR     GETCH           GET CHARACTER THAT FOLLOWS.
+        LDA     EXEC            SEE IF SCAN OR EXECUTE
+        BEQ     XSP090          NON-EXECUTE.
+
+        LDA     CHAR            EXECUTE -- CHANGE SPEED.
+        AND     #$07
+        STA     SPEED
+
+XSP090  RTS
+
+
+; EDGE RULE SELECT COMMAND PROCESSOR CTRL-E <NUMBER>
+
+XERULE  JSR     GETCH           GET CHARACTER THAT FOLLOWS.
+        LDA     EXEC            SEE IF SCAN OR EXECUTE.
+        BEQ     XER090          NON-EXECUTE.
+
+        LDA     CHAR            EXECUTE -- CHANGE EDGE RULE.
+        AND     #$03
+        STA     EDGRUL
+
+        JSR     CTEST           SEE IF TURTLE IN SCREEN LIMITS
+        BEQ     XER090          YES -- NO PROBLEM.
+
+        JSR     XHOME+2         NO -- HOME AS A PRECAUTION.
+
+XER090  RTS
+
+;
+; MODE SELECT COMMAND PROCESSOR -- CTRL-M <NUMBER>
+;
+XMODE   JSR     GETCH           GET CHARACTER THAT FOLLOWS.
+        LDA     EXEC            SEE IF SCAN OR EXECUTE.
+        BEQ     XMD090          NON-EXECUTE.
+
+        LDA     CHAR            EXECUTE -- CHANGE MODE.
+        AND     #$03
+        STA     MODE
+        JSR     XHOME+2         ENSURE THAT CURSOR IS IN SCREEN LIMITS.
+        LDA     NXTSCN          BRING FORWARD NEXT MODE TO CURRENT.
+        STA     SCNMOD
+        JSR     MODSEL
+
+XMD090  RTS
+
+;
+; SCREEN MODE SELECT COMMAND PROCESSOR -- CTRL-D <NUMBER>
+;
+XDSPMD  JSR     GETCH           GET CHARACTER THAT FOLLOWS.
+        LDA     EXEC            SEE IF SCAN OR EXECUTE
+        BEQ     XDM090          NON-EXECUTE.
+
+        LDA     CHAR            EXECUTE -- SET NEW MODE
+        AND     #$07
+        STA     NXTSCN          0-7 MAPS TO 1-8 LATER
+
+XDM090  RTS
+
+;
+; XTREP -- TURTLE REPRESENTATION COMMAND PROCESSOR -- CTRL-T <NUMBER>
+;
+XTREP   JSR     GETCH           GET CHARACTER THAT FOLLOWS.
+        LDA     EXEC            SEE IF SCAN OR EXECUTE.
+        BEQ     XTR090          NON-EXECUTE
+
+        LDA     CHAR            EXECUTE
+        AND     #$03
+        STA     TRTREP
+        JSR     TRONOF
+
+XTR090  RTS
+
+;
+; XAUDIO -- AUDIO SELECT COMMAND PROCESSOR -- CTRL-A <NUMBER>
+;
+XAUDIO  JSR     GETCH           GET CHARACTER THAT FOLLOWS.
+        LDA     EXEC            SEE IF SCAN OR EXECUTE.
+        BEQ     XAU090          NON-EXECUTE.
+
+        LDA     CHAR            EXECUTE
+        AND     #$0F
+        STA     AUDIO
+        STA     AUDF1
+
+XAU090  RTS
+
+
+
+
+;
+; FACE NORTH COMMAND PROCESSOR -- N
+;
+XNORTH  BEQ     XRO090          NON-EXECUTE.
+
+        LDA     #0              SET INDEX TO NORTH (ZERO).
+        BEQ     XRO020          (BRA).
+
+;
+; ROTATE RIGHT COMMAND PROCESSOR -- R
+;
+XROTR   BEQ     XRO090          NON-EXECUTE.
+        INC     ORIENT          EXECUTE -- BUMP INDEX.
+        BNE     XRO010          (BRA)
+
+;
+; ROTATE LEFT COMMAND PROCESSOR -- L
+;
+XROTL   BEQ     XRO090          NON-EXECUTE.
+        DEC     ORIENT          EXECUTE -- DECREMENT INDEX.
+
+XRO010  LDA     ORIENT          MASK RESULT TO 3 BITS.
+        AND     #$07
+
+XRO020  STA     ORIENT
+        JSR     PLCTRT          RE-ORIENT TURTLE REPRESENTATION.
+
+XRO090  RTS
+
+;
+; HOME COMMAND PROCESSOR -- H
+;
+XHOME   BEQ     XHM010          NON-EXECUTE.
+
+        LDA     #0              HOME = 0,0
+        STA     XCURS
+        STA     XCURS+1
+        STA     YCURS
+        STA     YCURS+1
+        JSR     PLCTRT          PLACE TURTLE REPRESENTATION.
+        JSR     PLTPNT          LEAVE TRACK ALSO.
+
+XHM010  RTS
+
+;
+; CLEAR SCREEN COMMAND PROCESSOR -- C
+;
+XCLEAR  BEQ     XCL090          NON-EXECUTE.
+
+        LDA     IOCB2+ICHID     "S:" OPEN?
+        BMI     XCL090          NO.
+
+        LDA     #CLEAR          YES -- SEND CLEAR SCREEN.
+        JSR     TOUT
+        JSR     TSTPLT          PLOT POINT IF IN LIMITS
+
+XCL090  RTS
+
+;
+; TURTLE SENSING COMMANDS
+;
+; EDGE SENSING COMMAND PROCESSOR -- E<THEN><ELSE>
+;
+XEDGE   BNE     XEG010          EXECUTE
+
+        JMP     SKIP            NON-EXECUTE.
+
+XEG010                            TEST FOR MODE WHERE ONE COLOR IS TO BE
+;                                 TREATED THE SAME AS THE EDGE.
+
+        JSR     FTEST           TEST PIXEL IN FRONT OF TURTLE.
+        AND     #$01            RESULT OF OPERATION <> 0 IF BEYOND EDGE.
+        JMP     TEST
+
+;
+; COLOR SENSING COMMAND PROCESSOR -- S (COLOR GOES TO 'ACC')
+;
+XSENSE  BEQ     XSN090          NON-EXECUTE.
+
+        LDA     IOCB2+ICHID     SEE IF IN A GRAPHICS MODE.
+        BMI     XSN005          NO -- IOCB2 IS CLOSED.
+
+        JSR     FTEST           SEE IF POINT IN FRONT OF TURTLE IS IN SCREEN LIMITS.
+        BEQ     XSN010          YES -- COLOR IS SENSE-ABLE.
+
+XSN005  LDA     #0              NO -- RETURN "BACKGROUND" VALUE.
+        BEQ     XSN020          (BRA).
+
+XSN010  LDX     #XCURS-DTAB     SAVE X & Y CURSOR VALUES.
+        JSR     SPSHI
+
+        JSR     CFRWRD          MOVE CURSOR FORWARD.
+        JSR     SETCUR
+
+        LDX     #ACC-DTAB       CLEAR 'ACC'
+        JSR     SCLRI
+        JSR     TIN             GET VALUE OF COLOR UNDER TURTLE.
+        AND     #$07
+        STA     XSTEMP          SAVE TEMPORARILY.
+
+        LDX     #XCURS-DTAB     RESTORE CURSOR X & Y VALUES.
+        JSR     SPULI
+        LDA     XSTEMP          RESTORE COLOR SENSE VALUE.
+;
+;    *** EXTERNAL ENTRY POINT ***
+;
+XSN020  CLC                     CONVERT TO ASCII ...
+        ADC     #'0
+        LDX     ACC-1           ... & STORE IN LSD OF 'ACC'.
+        STA     ACC-1,X
+
+XSN090  RTS
+
+;
+; PEN CONTROL COMMAND PROCESSOR -- P ('ACC' GOES TO COLOR)
+;
+XPEN    BEQ     XPN090          NON-EXECUTE
+
+        LDX     #ACC-DTAB
+        JSR     SATBI
+        AND     #$7F
+        CMP     #CLEAR          CLEAR SCREEN CODE?
+        BNE     XPN010          NO -- O.K.
+
+        LDA     #CLEAR+1        YES -- DON'T ALLOW
+
+XPN010  EOR     COLORN          MERGE UP/DOWN FLAG
+        AND     #$7F
+        EOR     COLORN
+        STA     COLORN
+        BMI     XPN090          PEN UP.
+
+        JSR     TSTPLT          PLOT POINT IF TURTLE IN LIMITS
+
+XPN090  RTS
+
+;
+; PEN UP COMMAND PROCESSOR -- U
+;
+XUP     BEQ     XUP090          NON-EXECUTE.
+
+        LDA     #$80            SIGN BIT IS FLAG FOR PEN UP
+        ORA     COLORN
+        STA     COLORN
+
+XUP090  RTS
+
+;
+; PEN DOWN COMMAND PROCESSOR -- D
+;
+XDOWN   BEQ     XDN090          NON-EXECUTE.
+
+        LDA     #$7F            SIGN BIT IS FLAG FOR UP/DOWN.
+        AND     COLORN
+        STA     COLORN
+
+        JSR     TSTPLT          PLOT POINT IF TURTLE IN LIMITS.
+XDN090  RTS
+
+;
+; TURTLE BEEP COMMAND PROCESSOR -- B
+;
+XBEEP   BEQ     XBP090          NON-EXECUTE
+
+        LDA     #$50            FREQUENCY ????HZ
+        STA     AUDF1
+        LDA     #$A0+8          TYPE * ????/ VOLUME * 1/2
+        STA     AUDC1
+
+        LDX     #128            DELAY OUTER LOOP CONTROL
+        LDY     #0              INNER LOOP = 256
+
+XBP010  DEY
+        BNE     XBP010
+
+        DEX
+        BNE     XBP010
+
+        STX     AUDC1           TURN OFF TONE (=0)
+XBP090  RTS
+
+;
+; JOYSTICK TEST COMMAND PROCESSOR -- $<LETTER><THEN><ELSE>
+;
+XJOYS   JSR     GETCH           GET CHARACTER THAT FOLLOWS
+        LDA     EXEC
+        BNE     XJY010          EXECUTE
+
+        JMP     SKIP            SCAN MODE -- SCAN BOTH THEN S< ELSE COMMANDS.
+
+XJY010  LDA     CHAR            GET JOYSTICK SELECTION.
+        CMP     #'Q             'Q TO 'X ARE TRIGGERS.
+        BCS     XJY030          TRIGGER TEST.
+
+        SEC                     JOYSTICK TEST -- NORMALIZE SELECT CHARACTER
+        SBC     #1
+        AND     #$03
+        TAX                     USE LOWER BITS TO SELECT BIT MASK.
+
+        LDA     CHAR            USE UPPER BITS TO SELECT JOYSTICK #.
+        SEC                     (CLEAR BORROW)
+        SBC     #1
+        LSR     A
+        LSR     A
+        AND     #$03
+        TAY
+
+        LDA     STICK0,Y        GET JOYSTICK DATA.
+        EOR     #$FF            DATA IS INVERTED -- CORRECT IT.
+        AND     BMASK,X         MASK DOWN TO SINGLE BIT.
+
+        JMP     TEST
+
+XJY030  SBC     #'Q             NORMALIZE SELECT CHARACTER.
+        AND     #$0F
+        TAX
+        LDA     PTRIG0,X
+        EOR     #$FF            DATA IS INVERTED -- CORRECT IT.
+        AND     #$01
+        JMP     TEST
+
+BMASK   .BYTE   $01,$08,$02,$04     F, R, B, L
+
+;
+; READ POT CONTROLLER TO ACCUMULATOR -- X<NUMBER>
+;
+XPOT    JSR     GETCH           GET CHARACTER THAT FOLLOWS
+
+        LDA     EXEC
+        BEQ     XPT090          NON-EXECUTE
+
+        LDA     CHAR            GET PUT SELECTION
+        AND     #$07
+        TAX
+
+        LDA     #228            RESULT - 228 - RADDLE READING
+        SEC                     (CLEAR BORROW)
+        SBC     PADDL0,X
+
+        LDX     #ACC-DTAB       CONVERT RESULT TO ASCII NUMBER ...
+        JSR     SBTAI           ... & STORE IN 'ACC'
+
+XPT090  RTS
+
+;
+; COLOR REGISTER UPDATE COMMAND PROCESSOR -- &<NUMBER>
+;
+XCOLOR  JSR     GETCH           GET CHARACTER THAT FOLLOWS.
+        LDA     EXEC
+        BEQ     XC0090          NON-EXECUTE.
+
+        LDX     #ACC-DTAB       CONVERT 'ACC' TO BINARY
+        JSR     SATBI
+        PHA                     SAVE RESULT.
+
+        LDA     CHAR            CALCULATE INDEX TO COLOR REGISTER
+        AND     #$07
+        CMP     #4+1            ONLY 0-4 VALID.
+        BCC     XCO010          O.K.
+
+        LDA     #'X             N.G.
+        JMP     DIRECT
+
+XCO010  TAX
+        PLA                     GET COLOR/LUM VALUE ...
+        STA     COLOR0,X        ... & STORE IN DATABASE.
+
+XC0090  RTS
+
+;
+; WAIT FOR NEXT CLOCK TICK COMMAND PROCESSOR -- W
+;
+XWAIT   BEQ     XWA090          NON-EXECUTE.
+
+        LDA     #1
+        JSR     CLKSYN          SYNC TO CLOCK
+
+XWA090  RTS
+
+;
+; SENSE TURTLE ORIENTATION COMMAND -- ;
+;
+XCMPAS  BEQ     XCM090          NON-EXECUTE.
+
+        LDX     #ACC-DTAB       SET 'ACC' TO ZERO.
+        JSR     SCLRI
+
+        LDA     ORIENT          THEN SET LSB TO ORIENTATION #
+        JMP     XSN020
+
+XCM090  RTS
+
+;
+; TURTLE FORWARD COMMAND PROCESSOR -- F
+;
+; HANDLES EDGE RULES FOR STOP AT EDGE. REBOUND AT EDGE. WRAP
+; AT EDGE AND DISAPPEAR AT EDGE.
+;
+; ALSO HANDLES PEN UP OR DOWN.
+;
+XFRWRD  BEQ     XFR017          NON-EXECUTE.
+
+XFR010  JSR     FTEST           TEST FOR EDGE IN FRONT OF TURTLE
+        BNE     XFR020          PAST EDGE.
+
+        JSR     CFRWRD          MOVE CURSOR (TURTLE) FORWARD.
+
+XFR012  JSR     PLCTRT          PLACE TURTLE REPRESENTATION.
+
+XFR015  JSR     PLTPNT          LEAVE TURTLE TRACK (IF VALID).
+
+XFR017  RTS
+
+XFR020  LDA     EDGRUL          OFF EDGE -- WHAT IS CURRENT EDGE !
+        CMP     #ERSTOP         STOP?
+        BEQ     XFR015          YES -- LEAVE TRACK WITHOUT MOVING
+
+        CMP     #ERDIPR         DISAPPEAR OFF EDGE
+        BEQ     XFR030          YES -- GO OFF EDGE.
+
+        CMP     #ERWRAP         WRAP SCREEN?
+        BEQ     XFR040          YES -- DO CALCULATION.
+
+;    REFLECT OFF WALL
+
+        LDA     WEDGE           NO -- MUST BE REFLECT (BY DEFAULT)
+        ORA     EEDGE           E/W WALL HIT?
+        BEQ     XFR025          NO -- CHECK FOR N/S.
+
+        LDA     #8              YES -- EAST OR WEST WALL COLLISION
+        SEC                     (CLEAR BORROW).
+        SBC     ORIENT          'ORIENT' = 8 - 'ORIENT'
+        STA     ORIENT
+
+XFR025  LDA     NEDGE           N/S WALL HIT?
+        ORA     SEDGE
+        BEQ     XFR029          NO.
+
+        LDA     #12             YES -- NORTH OR SOUTH WALL COLLISION.
+        SEC                     (CLEAR BORROW).
+        SBC     ORIENT          'ORIENT' = (12 - 'ORIENT') MOD 8.
+        AND     #$07
+        STA     ORIENT
+
+XFR029  JMP     XFR010          FINISH PROCESSING.
+;  NOTE: ABOVE CODE WILL LOOP INDEFINITELY IF CURSOR GETS OUTSIDE
+;        OF EDGE OF SCREEN.
+
+;   DISAPPEAR (WANDER)
+
+XFR030  JSR     CFRWRD          MOVE TURTLE BUT LEAVE NO TRACKS.
+        JSR     PLCTRT          REMOVE REP AS TURTLE GOES OFF SCREEN.
+        RTS
+
+; WRAP SCREEN
+
+XFR040  LDA     NEDGE           N/S WALL WRAP?
+        ORA     SEDGE
+        BEQ     XFR042          NO
+
+        LDA     #-1             YES -- COMPLEMENT Y CURSOR
+        SEC                     (CLEAR BORROW)
+        SBC     YCURS
+        STA     YCURS
+        LDA     #-1             (NON-SYMMETRICAL SCREEN)
+        SBC     YCURS+1
+        STA     YCURS+1
+        JMP     XFR045
+
+XFR042  LDY     ORIENT          NO WRAP -- INCREMENT NORMALLY
+        LDX     #YCURS-DTAB
+        LDA     DYTAB,Y
+        JSR     FORWRD
+
+XFR045  LDA     WEDGE           E/W WALL WRAP?
+        ORA     EEDGE
+        BEQ     XFR047          NO
+
+        LDA     #-1             YES -- COMPLEMENT X CURSOR
+        SEC                     (CLEAR BORROW)
+        SBC     XCURS
+        STA     XCURS
+        LDA     #-1             (NON-SYMMETRICAL SCREEN)
+        SBC     XCURS+1
+        STA     XCURS+1
+        JMP     XFR050
+
+XFR047  LDY     ORIENT          NO WRAP -- INCREMENT NORMALLY
+        LDX     #XCURS-DTAB
+        LDA     DXTAB,Y
+        JSR     FORWRD
+
+XFR050  JMP     XFR012          PLACE TURTLE
+
+;
+; GET USER DEFINITIONS FROM DEVICE -- CTRL-G <DEVICE SPEC>
+;
+XGETFL  JSR     DNAME           SCAN TO END OF DEVICE SPECIFICATION.
+        LDA     EXEC
+        BEQ     XGF090          NON-EXECUTE
+
+        LDA     #OREAD          OPEN DEVICE FOR INPUT.
+        JSR     DOPEN
+
+        JSR     CLRUDF          CLEAR CURRENT USER DEFINITION AREA
+
+        JSR     SETUDF          SETUP POINTER TO USER DEFS.
+
+XGF010  LDY     #0
+
+XGF015  JSR     DIN             READ A DATA BYTE
+        CMP     #EOF            END OF FILE?
+        BEQ     XGF030          YES.
+
+        STA     (FLINE),Y       NO -- STORE DATA.
+        INY
+        CMP     #EOL            END OF A DEFINITION?
+        BNE     XGF015          NO.
+
+        LDY     #LINSIZ         YES -- BUMP ADDRESS TO START OF NEXT.
+        LDX     #FLINE-DTAB
+        JSR     PADDY
+        JMP     XGF010
+
+XGF030  JSR     DCLOSE          CLOSE OPEN DEVICE.
+
+XGF090  RTS
+
+;
+; PUT USER DEFINITIONS TO DEVICE -- CTRL-P "<DEVICE SPEC>"
+;
+XPUTFL  JSR     DNAME           SCAN TO END OF DEVICE SPECIFICATION.
+        LDA     EXEC
+        BEQ     XPF090          NON-EXECUTE
+
+        LDA     #OWRIT          OPEN DEVICE FOR OUTPUT.
+        JSR     DOPEN
+
+        JSR     SETUDF          SETUP POINTER TO USER DEFINITION AREA
+
+XPF010  LDY     #0
+        LDA     (FLINE),Y       GET A DATA BYTE.
+
+XPF016  CMP     #$FF            END OF TABLE?
+        BEQ     XPF030          YES -- DONE
+
+        CMP     #EOL            END OF A DEFINITION?
+        BEQ     XPF020          YES.
+
+        LDA     (FLINE),Y       GET DEFINITION DATA.
+        INY
+        PHA
+        JSR     DOUT            OUTPUT TO DEVICE.
+        PLA
+        JMP     XPF016
+
+XPF020  LDY     #LINSIZ         BUMP POINTER TO NEXT DEFINITION START.
+        LDX     #FLINE-DTAB
+        JSR     PADDY
+        JMP     XPF010
+
+XPF030  LDA     #EOF            PUT END OF FILE AT END
+        JSR     DOUT
+        JSR     DCLOSE          CLOSE THE OPEN FILE
+
+XPF090  RTS
+
+;
+; LOAD PREDEFINED COMMANDS FROM ROM COMMAND -- CTRL-L. <CHAR>
+;
+XLOAD   JSR     GETCH           GET CHARACTER THAT FOLLOWS.
+        LDA     EXEC
+        BEQ     XLO090          NON-EXECUTE.
+
+;
+; *** EXTERNAL ENTRY POINT ***
+;
+
+XLOAD2  JSR     CLRUDF          CLEAR CURRENT USER DEFINITION AREA.
+
+        JSR     SETUDF          SET POINTERS TO USER AREA.
+
+        LDX     #0              INITIALIZE NAME TABLE INDEX.
+
+XLO010  LDA     LODTAB,X        SCAN TABLE FOR MATCH.
+        CMP     #$FF            END OF TABLE?
+        BNE     XLO030          NO.
+
+        LDA     #ECLOAD         YES -- ARGUMENT ERROR.
+        JMP     DIRECT
+
+XLO030  CMP     CHAR            MATCH FOUND?
+        BEQ     XLO050          YES.
+
+
+        INX                     NO -- GO TO NEXT ENTRY.
+        INX
+        INX
+        INX
+        JMP     XLO010
+
+
+XLO050  LDA     LODTAB+2,X      SETUP POINTER TO CANNED DEFINITIONS
+        STA     TEMP
+        LDA     LODTAB+3,X
+        STA     TEMP+1
+        LDA     LODTAB+1,X      GET TOP LEVEL COMMAND NAME.
+        STA     TEMP+2
+
+        LDY     #0              GET SET TO MOVE DEFINITIONS.
+
+XLO055  LDA     #0              START OF NEW DEFINITION.
+        STA     FLINE+2
+
+XLO060  LDA     (TEMP),Y
+        CMP     #EOF
+        BEQ     XLO090
+
+        INY
+        STY     COUNT
+        LDY     FLINE+2         DESTINATION INDEX.
+        STA     (FLINE),Y
+        INY
+        STY     FLINE+2         SAVE DESTINATION INDEX.
+        LDY     COUNT           SOURCE INDEX.
+        CMP     #EOL            END OF A SINGLE DEFINITION?
+        BNE     XLO060          NO.
+
+        LDY     #LINSIZ         YES BUMP ADDRESS TO START OF NEXT.
+        LDX     #FLINE-DTAB
+        JSR     PADDY
+        LDY     COUNT           SOURCE INDEX
+        JMP     XLO055
+
+XLO090  RTS
+
+;
+; LOAD AND RUN CANNED DEFINITIONS FROM ROM -- CTRL-R <CHARACTER>
+;
+XRUN    JSR     GETCH           GET CHARACTER THAT FOLLOWS.
+        LDA     EXEC
+        BEQ     XRN090          NON-EXECUTE.
+;
+; *** EXTERNAL ENTRY POINT ***
+;
+XRUN2   JSR     XLOAD2          LOAD CANNED DATA.
+
+        LDA     TEMP+2          GET TOP LEVEL COMMAND NAME.
+        STA     CHAR
+        JSR     CMD             EXECUTE IT.
+
+XRN090  RTS
+
+;
+; START OF LEVEL 0 ROUTINES -- SPECIAL PURPOSE UTILITIES
+;
+; NUMB -- SCAN INPUT TO END OF NUMERIC FIELD
+;
+; CALLING SEQUENCE
+;
+;       'CHAR' = 1ST NUMERIC DIGIT
+;
+;       JSR     NUMB
+;
+;       'NUMBER' = VALUE OF NUMERIC FIELD (IF INPUT TOO LONG, USES LAST N DIGITS)
+;       'CHAR' = CHARACTER AFTER END OF NUMERIC FIELD
+;
+NUMB    LDX     #NUMBER-DTAB    ZERO NUMBER FIRST.
+        JSR     SCLRI
+        LDX     ACC-1           GET RECORD LENGTH.
+
+NUM020  LDA     CHAR            STORE FIRST DIGIT IN LSD.
+        STA     NUMBER-1,X
+        JSR     GETCH           GET NEXT CHARACTER.
+        JSR     DECDIG          DECIMAL DIGIT?
+        BCS     NUM024          YES.
+
+        RTS                     NO -- ALL DONE.
+
+NUM024  LDX     #0              SHIFT DIGITS ONE TO LEFT
+
+NUM030  LDA     NUMBER+1,X      SHIFT LEFT ONE DIGIT.
+        STA     NUMBER,X
+        INX
+        CPX     NUMBER-1        (INTENTIONALLY MOVES ONE TOO MANY).
+        BNE     NUM030
+
+        BEQ     NUM020          ADD NEXT DIGIT.
+
+;
+; CFRWRD -- MOVE CURSOR (TURTLE) FORWARD
+;
+; CALLING SEQUENCE:
+;
+;       'ORIENT' = ORIENTATION VALUE (0-7)
+;       'XCURS' = CURSOR X POSITION
+;       'YCURS' = CURSOR Y POSITION
+;
+;       JSR     CFRWRD
+;
+;       'XCURS' = 'XCURS' + 'DXTAB'('ORIENT')
+;       'YCURS' = 'YCURS' + 'DYTAB'('ORIENT')
+;
+
+
+CFRWRD  LDY     ORIENT          GET ORIENTATION.
+        LDX     #XCURS-DTAB     X POSITION FIRST.
+        LDA     DXTAB,Y         GET INCREMENT.
+        JSR     FORWRD          ADJUST POSITION.
+
+        LDX     #YCURS-DTAB     THEN Y POSITION.
+        LDA     DYTAB,Y         GET INCREMENT.
+;
+; *** EXTERNAL ENTRY POINT ***
+;
+FORWRD  BEQ     CFR090          NO CHANGE.
+
+        BPL     CFR060          +1
+
+        JMP     DDCRI           -1 & RETURN.
+
+CFR060  JMP     DINCI           +1 & RETURN.
+
+CFR090  RTS
+;
+; X & Y INCREMENT TABLES (INDEXED BY 'ORIENT')
+;
+DYTAB   .BYTE   $FF,$FF         (NOTE: THIS TABLE OVERLAPS 'DXTAB'!!!)
+
+DXTAB   .BYTE   $00,$01,$01,$01,$00,$FF,$FF,$FF
+
+;
+; FTEST -- TEST FOR EDGE IN FRONT OF TURTLE
+;
+; CALLING SEQUENCE
+;
+;       'XCURS' & 'YCURS'  = CURSOR VALUES
+;
+;       JSR     FTEST
+;       BEQ     IN BOUNDS  (A = $00)
+;       ELSE OUT OF BOUNDS (A = $01)
+;
+;       SEE ALSO 'EDGTST'
+;
+FTEST   LDX     #XCURS-DTAB     SAVE X & Y CURSOR.
+        JSR     SPSHI
+
+        JSR     CFRWRD          MOVE TURTLE FORWARD.
+
+        JSR     CTEST           TEST FOR EDGE.
+        STA     FTSTAT          SAVE EDGE TEST STATUS.
+
+        LDX     #XCURS-DTAB     RESTORE X & Y CURSOR.
+        JSR     SPULI
+
+        LDA     FTSTAT          RESTORE STATUS & CC.
+        RTS                     RETURN WITH CC SET.
+
+;
+; CTEST -- TEST FOR EDGE UNDER CURSOR (TURTLE)
+;
+; CALLING SEQUENCE
+;
+;(SEE 'FTEST' AND 'EDGTST ')
+;
+;
+CTEST   JSR     EDGTST          PERFORM EDGE BOUNDS TEST.
+
+        LDA     NEDGE           SEE IF ALL IN BOUNDS.
+        ORA     SEDGE
+        ORA     WEDGE
+        ORA     EEDGE
+        RTS                     RETURN WITH A CC SET.
+
+;
+; EDGTST -- TEST FOR CURSOR ON EDGE OR OUT OF BOUNDS
+;
+; CALLING SEQUENCE
+;
+;       'XCURS' & 'YCURS' = TURTLE LOCATION
+;
+;       JSR     EDGTST
+;
+;       'NEDGE', 'SEDGE', 'WEDGE' & 'EEDGE' SET TO REPRESENT
+;       STATUS AT THE NORTH, SOUTH, WEST AND EAST WALLS.
+;           $00 = CURSOR IN BOUNDS
+;           $01 = CURSOR OUT OF BOUNDS
+;
+EDGTST  LDX     #YCURS-DTAB     CHECK NORTH WALL
+        LDY     #YMIN-MMTAB
+        JSR     CHKRNG
+        LSR     A
+        STA     NEDGE
+
+        LDY     #YMAX-MMTAB     CHECK SOUTH WALL
+        JSR     CHKRNG
+        AND     #01
+        STA     SEDGE
+
+        LDX     #XCURS-DTAB     CHECK WEST WALL
+        LDY     #XMIN-MMTAB
+        JSR     CHKRNG
+        LSR     A
+        STA     WEDGE
+
+        LDY     #XMAX-MMTAB     CHECK EAST WALL
+        JSR     CHKRNG
+        AND     #01
+        STA     EEDGE
+
+        RTS
+
+;
+; CHKRNG -- RANGE CHECK A SIGNED CURSOR COORDINATE WITH A MIN/MAX VALUE.
+;
+; CALLING SEQUENCE:
+;
+;       X = 'DTAG' INDEX TO CURSOR
+;       Y = 'MMTAB' INDEX TO TABLE ENTRY (FURTHER INDEXED BY 'SCNMOD' INTERNALLY)
+;
+;       JSR     CHKRNG
+;
+;       A = $00 IF 'DTAE'(X) = 'MMTAB'(Y,'SCNMOD')
+;           $01 IF "DTAB MX) > 'MMTAB'(Y,'SCNMOD')
+;           $02 IF 'DTAB'(X) < 'MMTAB'(Y,'SCNMOD')
+;           CC SET TO REFLECT REGISTER A VALUE
+;
+;       Y REGISTER IS CLOBBERED.
+;
+CHKRNG  ASL     SCNMOD          X2 FOR INDEX.
+        TYA                     MODIFY TABLE INDEX.
+
+        ADC     SCNMOD
+        TAY
+        LSR     SCNMOD          RESTORE 'SCNMOD'
+        LDA     DTAB+1,X        COMPARE CURSOR WITH TABLE ENTRY.
+        CMP     MMTAB+1,Y
+        BEQ     CKR030          MSBS ARE EQUAL.
+
+        BPL     CKR050          CURSOR > CHECK VALUE
+
+        BMI     CKR035          CURSOR < CHECK VALUE.
+
+CKR030  LDA     DTAB,X          CHECK LSBS.
+        SBC     MMTAB,Y
+        BEQ     CKR040          CURSOR = CHECK VALUE.
+
+        BCS     CKR050          CURSOR > CHECK VALUE.
+
+CKR035  LDA     #$02            CURSOR < CHECK VALUE.
+        RTS
+
+CKR040  LDA     #$00            CURSOR = CHECK VALUE.
+        RTS
+
+CKR050  LDA     #$01            CURSOR > CHECK VALUE.
+        RTS                     RETURN WITH CC & A SET.
+
+; MIN/MAX TABLES FOR CURSOR (ORDERED BY HARDWARE SCREEN MODES 1-11)
+; SEE ALSO 'SETCUR' & 'PLCTRT' FOR RELATED TABLES
+;
+MMTAB=*
+
+XMIN    .WORD   -10,-10,-20,-40,-40,-80,-80,-160,-40,-40,-40
+
+XMAX    .WORD   9,9,19,39,39,79,79,159,39,39,39
+
+YMIN    .WORD   -12,-6,-12,-24,-24,-48,-48,-96,-96,-96,-96
+
+YMAX    .WORD   11,5,11,23,23,47,47,95,95,95,95
+
+;
+; MODSEL -- OPERATING MODE I/O SELECTION
+;
+; CALLING SEQUENCE
+;
+;       'MODE' = OPERATING MODE (0-3)
+;       'SCNMOD' = SCREEN MODE SELECTION
+;
+;       JSR     MODSEL
+;
+;       SETS UP IOCBS 0,1 & 2 FOR MODE
+;
+MODSEL  JSR     TROFF           DISABLE TURTLE REP DURING CHANGES.
+        LDX     MODE            OPEN THE COMMAND INPUT DEVICE.
+        LDY     TINX,X
+        JSR     SETSCN
+
+        LDX     MODE            OPEN THE TEXT OUTPUT DEVICE.
+        LDY     TOTX,X
+        JSR     SETSCN
+
+        LDX     MODE            OPEN THE TURTLE GRAPHICS INPUT/OUTPUT DEVICE
+        LDY     TTDX,X
+        JSR     SETSCN
+
+        JSR     TRONOF          SETUP HARDWARE FOR TURTLE REP (ON OR OFF).
+
+        JSR     TSTPLT          LEAVE A TURTLE TRACE IF TURTLE IN SCREEN LIMITS.
+
+        RTS
+
+;
+; SETSCN -- SETUP THE IOCB FOR ONE DEVICE
+;           CLOSE THE IOCB, PUT IN NEW INFO, OPEN THE IOCB & SETUP FOR READ/WRITE
+;
+; CALLING SEQUENCE:
+;
+;       Y = INDEX TO IOCB SETUP TABLES
+;
+;       JSR     SETSCN
+;
+;       X IS CLOBBERED
+;
+SETSCN  STY     TEMP            SAVE INDEX.
+        TYA                     REMOVE "CLOSE ONLY" INDICATOR
+        AND     #$7F            (SIGN BIT).
+        TAY
+        LDX     TIO,Y           GET IOCB INDEX.
+        LDA     #CLOSE
+        STA     ICCOM,X
+        JSR     CIO             CLOSE THAT IOCB.
+
+;    RE-OPEN DEVICE IF SPECIFIED
+
+        LDY     TEMP
+        BMI     STS090          DEVICE NOT TO BE OPENED.
+
+        LDA     TDEV,Y          SETUP DEVICE NAME.
+        STA     OPNBUF
+        LDA     #':             SET 'OPNBUF' TO "X:<EOL>"
+        STA     OPNBUF+1
+        LDA     #EOL
+        STA     OPNBUF+2
+        LDA     #OPEN
+        STA     ICCOM,X
+        LDA     TAX1,Y          SETUP AUX 1
+        STA     ICAUX1,X
+        LDA     TAX2,Y          SETUP AUX2.
+        BEQ     STS020          FORCE SCREEN MODE TO ZERO.
+
+        CLC                     SCREEN MODE = INTERNAL MODE + CONSTANT
+        ADC     SCNMOD
+
+STS020  STA     ICAUX2,X
+
+        LDA     SSTACK          LET SCREEN HANDLER KNOW CURRENT UPPER ...
+        STA     APPMHI          ... BOUND
+        LDA     SSTACK+1
+        CLC
+        ADC     #1              LEAVE ONE PAGE MARGIN
+        STA     APPMHI+1
+
+        JSR     CIO             OPEN THE IOCB.
+
+        LDY     TEMP
+        LDA     TOP,Y           SETUP READ/WRITE OPERATION.
+        STA     ICCOM,X
+
+STS090  RTS
+
+
+TDEV    .BYTE   'E,'S,'S,'K,'E
+
+TAX1    .BYTE   OWRIT,OWRIT+OREAD+NOCLR,OWRIT+OREAD+SPLIT+NOCLR,OREAD,OREAD
+
+TAX2    .BYTE   0,1,1,0,0
+
+TOP     .BYTE   PUTC,PUTC,PUTC,GETC,GETC
+
+TIO     .BYTE   IOCB0,IOCB2,IOCB2,IOCB1,IOCB1
+
+; SIGN BIT SET INDICATES IOCB TO BE CLOSED & NOT RE-OPENED
+
+TINX    .BYTE   3,4,3,3         COMMAND INPUT IOCB (IOCB 1 ) 'CHIN'
+
+TOTX    .BYTE   $80,0,0,0       COMMAND OUTPUT IOCB (IOCB 0) 'COUT'
+
+TTDX    .BYTE   1,$81,2,2       TURTLE I/O IOCB (IOCB 2) 'TIN' & 'TOUT'
+
+; INDEX TO ABOVE: 0 = DRAW MODE
+;                 1 = DEBUG MODE
+;                 2 = SPLIT SCREEN DEBUG MODE
+;                 3 = NORMAL MODE (SPLIT SCREEN)
+
+;
+; SCNWRT -- WRITE DATA TO SCREEN FROM TABLE ENTRIES
+;
+; CALLING SEQUENCE:
+;
+;       'LMARGN' = LEFT MARGIN OFFSET
+;       'PDSPTB' = POINTER TO DISPLAY TABLE
+;       Y = DISPLAY TABLE INDEX
+;
+;       JSR     SCNWR
+;
+;       X IS CLOBBERED
+;
+; EACH DISPLAY TABLE ENTRY CONSISTS OF 5 BYTES AS FOLLOWS
+;
+;       0 = ENTRY TYPE (-1 = END OF TABLE)
+;       1 = CURSOR X POSITION (HARDWARE NOTATION)
+;       2 = CURSOR Y POSITION (HARDWARE NOTATION)
+;       3 = LSB OF ADDRESS OF DATA RECORD
+;       4 = MSB OF ADDRESS OF DATA RECORD
+;
+SCNWRT  LDA     IOCB0+ICHID     SEE IF OUTPUT DEVICE IS OPEN.
+        BMI     SCN007          DEVICE IS NOT OPEN.
+
+        LDA     #$FF            DISABLE CURSOR DURING RANDOM OUTPUTTING.
+        STA     CRSINH
+
+SCN005  LDA     (PDSPTB),Y      GET ENTRY TYPE
+        CMP     #$FF            END OF TABLE?
+        BNE     SCN010          NO.
+
+        INC     CRSINH          YES -- RE-ENABLE CURSOR (=0)
+
+SCN007  RTS
+
+SCN010  INY
+        LDA     (PDSPTB),Y      SET CURSOR
+        CLC
+        ADC     LMARGN          (CORRECT FOR LEFT MARGIN)
+        PHA                     (SAVE A)
+        LDX     MODE            (DETERMINE WHICH CURSOR SET)
+        LDA     TTDX,X
+        CMP     #2              SPLIT SCREEN?
+        BNE     SCN015
+
+        PLA                     (RESTORE A) ...
+        STA     SPTCOL          ... X POSITION ...
+        LDA     #0
+        STA     SPTCOL+1
+        INY
+        LDA     (PDSPTB),Y
+        STA     SPTROW          ... & X POSITION.
+        JMP     SCN017
+
+SCN015  PLA                     (RESTORE A)
+        STA     COLCRS          ... X POSITION
+        LDA     #0
+        STA     COLCRS+1
+        INY
+        LDA     (PDSPTB),Y
+        STA     ROWCRS          ... & X POSITION.
+
+SCN017  INY
+        LDA     (PDSPTB),Y      MOVE DATA RECORD ADDRESS TO 'SWTEMP'
+        STA     SWTEMP
+        INY
+        LDA     (PDSPTB),Y
+        STA     SWTEMP+1
+        INY
+        STY     SWTEMP+2        SAVE TABLE INDEX
+        LDY     #0              PREPARE TO GET DATA FROM RECORD
+        LDA     (SWTEMP),Y      GET RECORD LENGTH
+        TAX
+
+SCN020  INY                     BUMP TO NEXT BYTE.
+        LDA     (SWTEMP),Y      GET DATA.
+        JSR     COUT            OUTPUT TO DEVICE
+        DEX                     DONE?
+        BNE     SCN020          NO -- KEEP GOING
+
+        LDY     SWTEMP+2        YES -- RESTORE DISPLAY TABLE INDEX
+        JMP     SCN005          ... & PROCESS NEXT ENTRY
+
+;
+; SETCUR -- SET HARDWARE CURSOR
+;
+; CALLING SEQUENCE
+;
+;       'XCURS' & 'YCURS' = TURTLE CURSOR
+;       'SCNMOD' = SCREEN MODE
+;
+;       JSR     SETCUR
+;
+;       'COLCRS' & 'ROWCRS' = HARDWARE CURSOR VALUES
+;
+SETCUR  LDA     IOCB2+ICHID     SEE IF OUTPUT DEVICE IS OPEN.
+        BMI     STC090          NOT OPEN -- DO NOTHING.
+
+        LDX     SCNMOD          GET SCREEN MODE (DETERMINES SIZE)
+        CLC
+        LDA     XCURS
+        ADC     XCENTR,X        ADJUST FOR DIFFERENT ORIGINS.
+        STA     COLCRS
+        LDA     XCURS+1
+        ADC     #0
+        STA     COLCRS+1
+
+        CLC
+        LDA     YCURS
+        ADC     YCENTR,X        ADJUST FOR DIFFERENT ORIGINS.
+        STA     ROWCRS
+
+STC090  RTS
+
+; SCREEN CENTER TABLES FOR CURSOR (ORDERED BY SCREEN MODES 1-11)
+; SEE ALSO 'CHKRNG' & 'PLCTRT' FOR RELATED TABLES
+
+XCENTR  .BYTE   10,10,20,40,40,80,80,160,40,40,40
+
+YCENTR  .BYTE   12,6,12,24,24,48,48,96,96,96,96
+
+;
+; TURTLE REPRESENTATION ROUTINES
+;
+
+;
+; TRONOF -- TURN MISSILE DMA ON OR OFF
+;
+; CALLING SEQUENCE:
+;
+; 'TRTREP' = 0 IF OFF, ELSE ON
+;
+TRONOF  LDA     IOCB2+ICHID     "S:" OPEN?
+        BMI     TRO100          NO -- TURTLE REPRESENTATION OFF.
+
+        LDA     TRTREP          TURTLE REPRESENTATION SELECTED?
+        BEQ     TRO100          NO -- OFF.
+
+        TAX                     SET COLOR REGISTERS.
+        LDA     TCOLOR-1,X      GET COLOR FROM TABLE.
+        STA     PCOLR0
+        STA     PCOLR1
+        STA     PCOLR2
+        STA     PCOLR3
+
+        LDA     #GRAMON         EVERYTHING O. K. -- TURN HIM ON.
+        STA     GRACTL
+
+        LDA     DMACT
+        ORA     #DMACON         ENABLE MISSILE DMA (LOW RESOLUTION MODE)
+        STA     DMACT
+
+        JSR     PLCTRT          PLACE TURTLE REPRESENTATION ON SCREEN.
+
+        RTS
+
+TROFF=*                         *** EXTERNAL ENTRY POINT ***
+
+TRO100  LDA     DMACT           PLAYER DMA OFF.
+        AND     #$FF-DMACON
+        STA     DMACT
+
+        LDA     #0
+        STA     GRACTL
+        STA     GRAFM
+
+        RTS
+
+;
+; PLCTRT -- PLACE TURTLE REPRESENTATION ON SCREEN
+;
+; CALLING SEQUENCE:
+;       'TRTREP' = 0 IF DESELECTED, ELSE SELECTED
+;       'SCNMOD' = CURRENT SCREEN MODE SELECTED
+;       'ORIENT' = CURRENT TURTLE ORIENTATION
+;       'XCURS' = TURTLE POSITION, X COORDINATE
+;       'YCURS' = TURTLE POSITION, Y COORDINATE
+;
+;       JSR     PLCTRT
+;
+;       MISSILE ........
+PLCTRT  LDA     IOCB2+ICHID     "S:" OPEN?
+        BMI     PLC009          NO -- NO TURTLE
+
+        LDA     TRTREP          TURTLE REPRESENTATION SELECTED?
+        BNE     PLC010          YES.
+
+PLC009  RTS
+
+PLC010  LDX     TRYPOS          GET OLD POSITION
+        LDY     #8
+        LDA     #0
+
+PLC012  STA     TRBUFF,X        REMOVE OLD REPRESENTATION.
+        INX
+        DEY
+        BNE     PLC012
+
+        JSR     CTEST           TURTLE ON SCREEN?
+        BNE     PLC090          NO.
+
+;    CONVERT CURSOR X TO COLOR CLOCKS
+
+        JSR     SETCUR          CONVERT TURTLE CURSOR TO HANDLER COORDINATE SYSTEM
+        LDX     SCNMOD          DEPENDS UPON SCREEN MODE.
+        LDY     CCPXTB,X        GET # OF COLOR CLOCKS PER X POSITION.
+        BEQ     PLC030          1/2 CLOCK IS SPECIFIED BY O IN TABLE.
+
+        TYA
+        CLC
+        ROR     A               START WITH 1/2 POSITION OFFSET.
+        CLC
+
+PLC020  ADC     COLCRS          NOW DO MULTIPLY.
+        DEY
+        BNE     PLC020
+
+        BEQ     PLC040          (BRA)
+
+PLC030  LDA     COLCRS+1        DIVIDE BY 2 (1/2 COLOR CLOCK)
+        ROR     A
+        LDA     COLCRS
+        ROR     A
+
+PLC040  CLC
+        ADC     #$30            LEFT EDGE OFFSET.
+        LDY     ORIENT          SUBTRACT ORIENTATION OFFSET.
+        SEC                     (CLEAR BORROW)
+        SBC     TRDX,Y
+
+        CLC
+        STA     HPOSM3          RESULT IS MISSILE HORIZONTAL POSITION
+        ADC     #2
+        STA     HPOSM2
+        ADC     #2
+        STA     HPOSM1
+        ADC     #2
+        STA     HPOSM0
+
+; CONVERT CURSOR Y POSITION TO SCAN LINES
+
+        LDY     SLPYTB,X        GET # OF SCAN LINES PER Y POSITION.
+        BEQ     PLC053          1/2 CLOCK
+
+        TYA
+        CLC
+        ROR     A               START WITH 1/2 POSITION OFFSET
+        CLC
+
+PLC050  ADC     ROWCRS          MULTIPLY.
+        DEY
+        BNE     PLC050
+
+        BEQ     PLC055          (BRA).
+
+PLC053  LDA     ROWCRS          DIVIDE BY 2.
+        CLC
+        ROR     A
+
+PLC055  ADC     #TVBUFF-TRBUFF+4        *** MAGIC OFFSET ***
+        LDY     ORIENT          SUBTRACT ORIENTATIN OFFSET.
+        SEC                     (CLEAR BORROW)
+        SBC     TRDY,Y
+        STA     TRYPOS          SAVE FOR NEXT TIME IN.
+        TAY                     SETUP FOR NOW.
+
+        LDA     TRTREP          GET PATTERN FOR CURRENT SELECTION.
+        SEC                     (CLEAR BORROW)
+        SBC     #1
+        ASL     A               X8.
+        ASL     A
+        ASL     A
+        ADC     ORIENT          GET PATTERN FOR CURRENT ORIENTATION.
+        ASL     A               X8.
+        ASL     A
+        ASL     A
+        TAX                     INDEX TO TABLE OF PATTERNS
+
+        LDA     #8              # OF BYTES IN PATTERN.
+        STA     TEMP
+
+PLC060  LDA     TURTLE,X        MOVE PATTERN ...
+        STA     TRBUFF,Y        ... TO PLAYER BUFFER.
+        INX
+        INY
+        DEC     TEMP
+        BNE     PLC060
+
+PLC090  RTS
+; TURTLE MISSILE CHARACTERISTICS (BY MODE)
+; SEE 'CHKRNG' & 'PLCTRT' FOR RELATED TABLES.
+
+
+; SCAN LINES PER CURSOR VERTICAL UNIT (BY MODE 1-11)
+
+SLPYTB  .BYTE   4,8,4,2,2,1,1,0,0,0,0   (0 = 1/2)
+
+; COLOR CLOCKS PER HORIZONTAL UNIT (BY MODE 1-11)
+
+CCPXTB  .BYTE   8,8,4,2,2,1,1,0,2,2,2   (0 = 1/2)
+
+; ORIENTATION OFFSET VERTICAL (NOTE: TABLE OVERLAPS ONE THAT FOLLOWS)
+
+TRDY    .BYTE   0,0
+
+; ORIENTATION OFFSET HORIZONTAL DIRECTION
+
+TRDX    .BYTE   3,6,6,6,3,0,0,0
+
+; TURTLE PLAYER FOR THE ORIENTATION
+;
+TURTLE = *
+;
+; ARROW TURTLE
+;
+TURTL1  .BYTE   $10,$38,$10,$10,$10,$10,$10,$00 N
+        .BYTE   $06,$06,$08,$10,$20,$40,$80,$00 NE
+        .BYTE   $00,$00,$04,$FE,$04,$00,$00,$00 E
+        .BYTE   $80,$40,$20,$10,$08,$06,$06,$00 SE
+        .BYTE   $10,$10,$10,$10,$10,$38,$10,$00 S
+        .BYTE   $02,$04,$08,$10,$20,$C0,$C0,$00 SW
+        .BYTE   $00,$00,$40,$FE,$40,$00,$00,$00 W
+        .BYTE   $C0,$C0,$20,$10,$08,$04,$02,$00 NW
+;
+; TURTLE TURTLE
+;
+TURTL2  .BYTE   $10,$7C,$FE,$7C,$7C,$FE,$00,$00 N
+        .BYTE   $39,$1E,$BE,$7F,$3F,$1D,$08,$04 NE
+        .BYTE   $48,$7C,$7C,$7E,$7C,$7C,$48,$00 E
+        .BYTE   $04,$08,$1D,$3F,$7F,$BE,$1E,$39 SE
+        .BYTE   $00,$FE,$7C,$7C,$FE,$7C,$10,$00 S
+        .BYTE   $20,$10,$B8,$FC,$FE,$7D,$78,$9C SW
+        .BYTE   $24,$7C,$7C,$FC,$7C,$7C,$24,$00 W
+        .BYTE   $9C,$78,$7D,$FE,$FC,$B8,$10,$20 NW
+;
+; POINT TURTLE
+;
+TURTL3  .BYTE   $10,$00,$00,$00,$00,$00,$00,$00 N
+        .BYTE   $02,$00,$00,$00,$00,$00,$00,$00 NE
+        .BYTE   $00,$00,$00,$02,$00,$00,$00,$00 E
+        .BYTE   $00,$00,$00,$00,$00,$00,$02,$00 SE
+        .BYTE   $00,$00,$00,$00,$00,$00,$10,$00 S
+        .BYTE   $00,$00,$00,$00,$00,$00,$80,$00 SW
+        .BYTE   $00,$00,$00,$80,$00,$00,$00,$00 W
+        .BYTE   $80,$00,$00,$00,$00,$00,$00,$00 NW
+;
+; TURTLE COLOR/LUM FOR EACH REPRESENTATION
+;
+TCOLOR  .BYTE   $0E,$E4,$0E
+
+;
+; TSTPLT -- PLOT POINT IF TURTLE IN SCREEN LIMITS
+;
+; CALLING SEQUENCE:
+;
+;       JSR     TSTPLT
+;
+TSTPLT  JSR     CTEST           SEE IF TURTLE IN LIMITS.
+        BNE     PLT090          NO -- DON'T PLOT.
+                                YES -- FALL THROUGH TO 'PLTPNT'
+
+;
+; PLTPNT -- PLOT POINT (LEAVE TURTLE TRACK) IF VALID
+;
+; CALLING SEQUENCE:
+;
+;       'COLORN' = CURRENT PEN COLOR ($80 = PEN UP)
+;
+;       JSR     PLTPNT
+;
+;       NOTE : ASSUMES THAT THE CURSOR IS IN SCREEN LIMITS!!!
+;
+PLTPNT  LDA     COLORN          SEE IF PEN DOWN.
+        BMI     PLT090          NO -- UP.
+
+        LDA     IOCB2+ICHID     SEE IF IN A GRAPHICS MODE.
+        BMI     PLT090          NO.
+
+        JSR     SETCUR          O.K. -- ESTABLISH CURSOR.
+        LDA     COLORN          NOW PLOT POINT.
+        JSR     TOUT
+
+PLT090  RTS
+
+;
+; CLKSYN -- CLOCK SYNCHRONIZATION ROUTINE
+;
+; CALLING SEQUENCE:
+;
+;       A = DELAY FACTOR
+;
+;       JSR     CLKSYN
+;
+;       RETURNS ONLY AFTER CLOCK VALUE CONTAINS 0'S WHERE 1'S IN MASK
+;       MASK = (2 ** DELAY FACTOR) - 1
+
+CLKSYN  TAX                     DELAY FACTOR (=N) TO INDEX.
+
+RUN013  LDA     RTCLOK+2        GET LSB OF FRAME COUNTER.
+        AND     STABLE-1,X      LEAVE N-1 BITS.
+        BEQ     RUN013          WAIT FOR NON-ZERO.
+
+RUN017  LDA     RTCLOK+2        GET LSB OF FRAME COUNTER AGAIN
+        AND     STABLE-1,X      LEAVE N-1 BITS.
+        BNE     RUN017          WAIT FOR ZERO.
+
+        RTS
+
+STABLE  .BYTE   $01,$03,$07,$0F,$1F,$3F,$7F
+
+
+; START OF LEVEL 4 ROUTINES -- GENERAL PURPOSE UTILITIES
+
+;
+; DECDIG -- CHECK FOR LEGAL DECIMAL DIGIT
+;
+; CALLING SEQUENCE:
+;
+;       'CHAR' = CHARACTER IN QUESTION
+;
+;       JSR     DECDIG
+;       BCC     NOT A DECIMAL DIGIT
+;
+DECDIG  LDA     CHAR            IS CHARACTER = DIGIT?
+        CMP     #'0
+        BCC     DIG090          NO.
+
+        LDA     #'9             MAYBE.
+        CMP     CHAR            SET CC FOR EXIT.
+
+DIG090  RTS                     RETURN WITH CC SET
+
+;
+; ETUDF -- SET 'UDEF' ADDRESS IN 'FLINE' POINTER
+;
+; CALLING SEQUENCE:
+;
+;       JSR     SETUDF
+;
+;       'FLINE' = ADDRESS OF 1ST BYTE OF 'UDEF'
+;
+SETUDF  LDA     MEMLO           'UDEF' STARTS AT BOTTOM OF MEMORY
+        STA     FLINE
+        LDA     MEMLO+1
+        STA     FLINE+1
+        RTS
+;
+; LRUDF -- CLEAR USER DEFINITION AREA OF DEFINITIONS.
+;
+; CALLING SEQUENCE:
+;
+;       JSR     CLRUDF
+;
+CLRUDF  LDA     #ULINES         BLANK USER DEFINITION AREA BY DELETING ALL LINES.
+        STA     COUNT
+        JSR     SETUDF          SETUP POINTER TO UDEF REGION.
+
+CLU010  LDY     #0
+        LDA     #EOL            EOL AT BEGINNING DELETES DEFINITION.
+        STA     (FLINE),Y
+        LDX     #FLINE-DTAB     INCREMENT POINTER.
+        LDY     #LINSIZ
+        JSR     PADDY
+        DEC     COUNT           ALL LINES DELETED?
+        BNE     CLU010          NO
+
+        LDY     #0              YES -- TERMINATE 'UDEF' AREA
+        LDA     #$FF
+        STA     (FLINE),Y
+
+        RTS
+
+;
+; CLRVDF -- CLEAR USER VARIABLE DEFINTION AREA
+;
+; CALLING SEQUENCE:
+;
+;       JSR     CLRVDF
+;
+CLRVDF  LDA     #'              (BLANK).
+        LDX     #0
+
+CLV010  STA     VDEF,X
+        INX
+        CPX     #VSIZE          DONE?
+        BNE     CLV010          NO
+
+        LDA     #EOL            TERMINATE AREA WITH EOL.
+        STA     VDEF-1,X
+
+        LDA     #$FF            YES -- TERMINATE 'VDEF' AREA.
+        STA     VDEF,X
+
+        RTS
+
+;
+; DDCRI -- DOUBLE BYTE DECREMENT
+;
+; CALLING SEQUENCE:
+;
+;       X = 'DTAB' INDEX TO DOUBLE-BYTE (LO, HI)
+;
+;       JSR     DDCRI
+;
+;       'DTAB'(X) = 'DTAB'(X) - 1
+
+DDCRI   LDA     DTAB,X          CHECK FOR BORROW.
+        BNE     DDC030          NO BORROW.
+
+        DEC     DTAB+1,X        BORROW FROM MSB.
+
+DDC030  DEC     DTAB,X          DECREMENT LSB
+        RTS
+
+;
+; DINCI -- DOUBLE BYTE INCREMENT
+;
+; CALLING SEQUENCE:
+;
+;       X = 'DTAB' INDEX TO DOUBLE BYTE (LO, HI)
+;
+;       JSR     DINCI
+;
+;       'DTAB'(X) = 'DTAB'(X) + 1
+;
+DINCI   INC     DTAB,X          INCREMENT LSB.
+        BNE     DIN030          NO CARRY.
+
+        INC     DTAB+1,X        CARRY TO MSB.
+
+DIN030  RTS
+
+;
+; GETCH -- GET CHARACTER
+;
+; CALLING SEQUENCE:
+;
+;       'KBIN' = 0 MEANS GET DATA FROM MEMORY, ELSE FROM DEVICE
+;       'INPT' = POINTER TO MEMORY INPUT DATA (USED WHEN 'KBIN' = 0)
+;       'OUTPT' = POINTER TO MEMORY OUTPUT DATA
+;
+;       JSR     GETCH
+;
+;       A = 'CHAR' * CHARACTER OF ATASCI
+;       DATA DATA STORED IN OUTPUT BUFFER AS WELL
+;       'INPT' & 'OUTPT' INDICES UPDATED AS APPROPRIATE
+;
+;       Y REGISTER IS CLOBBERED
+;
+GETCH   LDA     KBIN            KEYBOARD INPUT DESIRED?
+        BEQ     GCH010          NO -- GET DATA FROM MEMORY.
+
+        JSR     CHIN            YES -- GET DATA FROM DEVICE.
+        CMP     #EOL            CHECK FOR PREMATURE TERMINATION.
+        BNE     GCH020          NO -- STORE DATA NOW.
+
+        LDA     #ECINCL
+        JMP     DIRECT          YES - FATAL ERROR.
+
+GCH010  LDY     INPT+2          GET INDEX.
+        LDA     (INPT),Y        SET MEMORY DMT.
+        INY
+        STY     INPT+2          SAVE NEW INDEX.
+
+GCH020  STA     CHAR            SAVE CHARACTER IN GLOBAL PLACE
+        LDY     OUTPT+1         DON'T STORE IF "BIT-BUCKET"
+        CPY     #BUCKET/256
+        BEQ     GCH090
+
+        LDY     OUTPT+2         GET INDEX.
+        CPY     #INSIZ          CHECK FOR LINE OVERFLOW
+        BNE     GCH025          NO OVERFLOW
+
+        LDA     #ECOLL
+        JMP     DIRECT          OVERFLOW -- FATAL ERROR
+
+GCH025  STA     (OUTPT),Y       SAVE DATA TO MEMORY
+        INY
+        STY     OUTPT+2         SAVE NEW INDEX
+
+GCH090  RTS
+
+
+; I/O UTILITIES
+
+; ABRTCK -- CHECK FOR ABORT FROM OPERATOR
+;
+; CALLING SEQUENCE:
+;
+;       JSR     ABRTCK
+;
+;       ROUTINE JUMPS TO 'DIRECT' IF ABORTED, ELSE RETURNS
+;
+ABRTCK  LDA     BREAK           TEST FOR BREAK KEY.
+        BNE     ABC090          NOT PRESSED.
+
+        LDA     #$FF            PRESSED -- CLEAR FLAG
+        STA     BREAK
+        LDA     #ECABRT
+        JMP     DIRECT          ABORT OPERATION.
+
+ABC090  RTS
+
+;
+; PRICOM -- PRIORITY COMMAND CHECK
+;
+; CALLING SEQUENCE:
+;
+;       JSR     PRICOM
+;
+; CHECKS FOR PENDING KEYSTROKE FROM KEYBOARD. IF SO, SUSPENDS
+; CURRENT COMMAND AND INITIATES THE ONE PENDING; AT COMPLETION IT
+; RESUMES THE PRIOR COMMAND AND RETURNS.
+;
+PRICOM  LDA     EXEC
+        BEQ     PRI090          NON-EXECUTE.
+
+        LDA     CH              KEYSTROKE?
+        CMP     #$FF
+        BEQ     PRI090          NO
+
+        LDA     SPEED           IGNORE IF IN SINGLE-STEP OPERATION.
+        CMP     #SCSTEP
+        BEQ     PRI090
+
+        JSR     PUSHHS          PUSH HARDWARE STACK TO SOFTWARE STACK
+
+        LDX     #PTRSRH+1-DTAB  SAVE KEY DATA:
+        JSR     SPSHI           ... ALL POINTERS
+
+        LDX     #LININ-DTAB     ... THE CURRENT COMMAND LINE
+        JSR     SPSHI
+
+        LDA     CHAR            ... & THE CURRENT COMMAND.
+        PHA
+
+        JSR     COMMND          GET & EXECUTE ONE COMMAND.
+
+        PLA                     RESTORE CURRENT COMMAND ...
+        STA     CHAR
+
+        LDX     #LININ-DTAB     ... CURRENT COMMAND LINE ...
+        JSR     SPULI
+
+        LDX     #PTRSRH+1-DTAB  ... & ALL POINTERS
+        JSR     SPULI
+
+        JSR     PULLHS          RESTORE HARDWARE STACK FROM SOFTWARE STACK.
+
+PRI090  RTS                     *** DON'T CHANGE ABOVE JSR TO JMP!!! ***
+
+;
+; CHIN -- CHARACTER IN FROM CONSOLE
+;
+; CALLING SEQUENCE
+;
+;       JSR     CHIN
+;
+;       A = CHARACTER
+;
+CHIN    STX     TEMP            SAVE X & Y REGISTERS.
+        STY     TEMP+1
+
+        LDX     #IOCB1          INPUT IOCB
+        JSR     CIO
+
+        CMP     #$1B            CONVERT CTRL-A TO CTRL-Z ...
+        BCS     CHI010
+
+        CMP     #$01            ... TO LOWER CASE EQUIVALENT
+        BCC     CHI010
+
+        EOR     #$60
+
+CHI010  PHA
+
+;     ECHO IF SPLIT MODE
+
+        LDX     MODE
+        LDA     TTDX,X
+        CMP     #2              SPLIT SCREEN?
+        BNE     CHI020          NO.
+
+        PLA                     YES -- GET CHARACTER.
+        PHA
+        JSR     COUT2
+
+CHI020  PLA
+        LDY     TEMP+1          RESTORE X & Y REGISTERS.
+        LDX     TEMP
+        RTS
+
+;
+; COUT -- CHARACTER OUT TO SCREEN DEVICE
+;
+; CALLING SEQUENCE:
+;
+;       A = CHARACTER
+;
+;       JSR     COUT
+;
+COUT    STX     TEMP            SAVE X & Y REGISTERS.
+        STY     TEMP+1
+
+;    *** EXTERNAL ENTRY POINT ***
+
+COUT2   LDX     #EPUTC-IOVBAS   OUTPUT TO "E:"
+        JSR     IOHAND
+
+        JMP     IOERCK          CHECK FOR I/O ERRORS & RETURN.
+
+;
+; TOUT -- TURTLE VALUE OUT TO DISPLAY DEVICE
+;
+; CALLING SEQUENCE:
+;
+;       A = TURTLE CHARACTER
+;
+;       JSR     TOUT
+;
+TOUT    STX     TEMP            SAVE X & Y REGISTERS.
+        STY     TEMP+1
+        DEC     DSPFLG          INHIBIT CONTROL CHARACTER PROCESSING.
+        LDX     #SPUTC-IOVBAS   OUTPUT TO "S:".
+        JSR     IOHAND
+        INC     DSPFLG          RE-ENABLE CONTROL CHARACTER PROCESSING.
+
+        JMP     IOERCK          CHECK FOR I/O ERRORS & RETURN.
+
+;
+; TIN -- TURTLE VALUE IN FROM DISPLAY DEVICE
+;
+; CALLING SEQUENCE:
+;
+;       JSR     TIN
+;
+;       A = COLOR VALUE UNDER TURTLE
+;
+TIN     STX     TEMP            SAVE X Y REGISTERS.
+        STY     TEMP+1
+        LDX     #SGETC-IOVBAS   INPUT FROM "S:".
+        JSR     IOHAND
+
+;    *** EXTERNAL ENTRY POINT ***
+
+IOERCK  CPY     #0              GOOD STATUS?
+        BPL     TIN010          NO
+
+        LDA     #ECIOER
+        JMP     DIRECT          NO -- DEBUG ONLY LOOP.
+
+TIN010  LDY     TEMP+1          RESTORE X & Y REGISTERS.
+        LDX     TEMP
+        RTS
+
+;
+; IOHAND -- DIRECT I/O INTERFACE ROUTINE
+;
+; CALLING SEQUENCE:
+;
+;       X = I/O ROUTINE OFFSET TO ADDRESS TABLE ENTRY (SYSTEM)
+;
+;       JSR     IOHAND
+;
+;       CLOBBERS Y REGISTER
+;
+IOHAND  TAY                     SAVE REGISTER A
+        LDA     IOVBAS+1,X      GET ADDRESS MSB.
+        PHA
+        LDA     IOVBAS+0,X      GET ADDRESS LSB.
+        PHA
+        TYA                     RESTORE REGISTER A
+        RTS                     (JMP).
+
+;
+; DNAME -- SCAN INPUT FOR DEVICE NAME < M CDEVICE NAME> "
+;
+; CALLING SEQUENCE:
+;
+;       JSR     DNAME
+;
+;       'OPNBUF' CONTAINS DEVICE SPECIFICATION
+;
+DNAME   JSR     GETCH           SCAN TO OPENING QUOTE
+        CMP     #'"
+        BNE     DNAME           KEEP ON SEARCHING.
+
+        LDA     EXEC
+        BNE     DNM020          EXECUTE
+
+DNM010  JSR     GETCH           NON-EXECUTE -- SCAN TO CLOSING QUOTE
+        CMP     #'"
+        BNE     DNM010
+
+        RTS
+
+DNM020  LDX     #0
+
+DNM025  JSR     GETCH           GET DEVICE SPECIFICATION
+        CMP     #'"             CLOSING QUOTE?
+        BEQ     DNM030          YES
+
+        STA     OPNBUF,X        NO -- STORE DATA
+        INX
+        CPX     #DNSIZE+2       CHECK NAME LENGTH.
+        BNE     DNM025          O.K.
+
+        LDA     #ECDNTL         DEVICE NAME TOO LONG
+        JMP     DIRECT
+
+DNM030  LDA     #EOL            TERMINATE NAME IN BUFFER
+        STA     OPNBUF,X
+
+        RTS
+
+;
+; DOPEN -- OPEN IOCB3 FOR SPECIFIED DIRECTION
+;
+; CALLING SEQUENCE:
+;
+;       A = OPEN DIRECTION
+;
+;       JSR     DOPEN
+;
+;       SETS UP COMMAND BYTE AFTER OPEN FOR GETCH OR PUTCH
+;       DOES NOT RETURN IF OPEN ERROR IS ENCOUNTERED
+;
+DOPEN   STA     IOCB3+ICAUX1    SAVE OPEN DIRECT
+        LDA     #0
+        STA     IOCB3+ICAUX2
+        LDA     #OPEN
+        STA     IOCB3+ICCOM
+
+        LDX     #IOCB3          OPEN DEVICE.
+        JSR     CIO
+
+        CPY     #0              CHECK STATUS.
+        BPL     DOP010          O.K.
+        JSR     DCLOSE          N.G. -- QUIT.
+        LDA     #ECOPEN         OPEN ERROR CODE.
+        JMP     DIRECT
+
+DOP010  LDA     #GETC           SETUP COMMAND FOR I/O THAT FOLLOWS
+        LDY     IOCB3+ICAUX1    ... BASED ON OPEN DIRECTION.
+        CPY     #OREAD          ASSUME READ.
+        BEQ     DOP020
+
+        LDA     #PUTC           NO -- WRITE.
+
+DOP020  STA     IOCB3+ICCOM
+        RTS
+
+;
+; DIN & DOUT -- IOCB3 DATA IN AND OUT
+;
+; CALLING SEQUENCES:
+;
+;       A = DATA
+;
+;       JSR     DOUT
+;
+; OR
+;
+;       JSR     DIN
+;
+;       A = DATA
+;
+DOUT
+DIN     STX     TEMP            SAVE X & Y REGISTERS.
+        STY     TEMP+1
+
+        LDX     #IOCB3          DO I/O OPERATION.
+        JSR     CIO
+
+        CPY     #0              CHECK STATUS.
+        BPL     DIO010          O.K.
+
+        JSR     DCLOSE          ERROR -- CLOSE DEVICE.
+        LDA     #ECIOER
+        JMP     DIRECT
+
+DIO010  LDY     TEMP+1          RESTORE X & Y REGISTERS.
+        LDX     TEMP
+        RTS
+
+;
+; DCLOSE -- CLOSE IOCB3
+;
+; CALLING SEQUENCE:
+;
+;       JSR     DCLOSE
+;
+DCLOSE  LDA     #CLOSE          CLOSE DEVICE
+        STA     IOCB3+ICCOM
+
+        LDX     #IOCB3
+        JSR     CIO
+
+        RTS
+;
+; PADDY -- ADD Y TO ADDRESS POINTER
+;
+; CALLING SEQUENCE:
+;
+;       Y = UNSIGNED NUMBER (0-255)
+;       X = 'DTAB' INDEX
+;
+;       JSR     PADDY
+;
+;       'DTAB'(X) = 'DTAB'(X) + Y
+;
+PADDY   CLC
+        TYA
+        ADC     DTAB,X
+        STA     DTAB,X
+
+        BCC     PAD090          NO CARRY -- ALL DONE.
+
+        INC     DTAB+1,X        CARRY TO MSD.
+
+PAD090  RTS
+
+;
+; SXXXI UTILITIES -- DEAL WITH 'DTAB'(X) STRING (RECORDS)
+;
+; SCLRI -- CLEAR RECORD TO ZEROS
+;
+; CALLING SEQUENCE:
+;
+;       X = 'DTAB' INDEX TO RECORD
+;
+;       JSR     SCLRI
+;
+;       CLEARS RECORD TO ASCII ZEROS
+;
+SCLRI   LDA     DTAB-1,X        GET STRING LENGTH.
+        STA     TEMP
+        LDA     #'0             FILL VALUE.
+
+SCL010  STA     DTAB,X          STORE A BYTE.
+        INX
+        DEC     TEMP            DONE?
+        BNE     SCL010          NO.
+
+        RTS                     YES.
+
+;
+; SDCRI -- STRING DECREMENT
+;
+; CALLING SEQUENCE:
+;
+;       X = 'DTAB' INDEX TO RECORD
+;
+;       JSR     SDCRI
+;
+;       DTAB(X) = DTAB(X) - 1 (UNLESS IT IS ZERO)
+;
+
+SDCRI   JSR     TSTNUM          SEE IF NUMBER IS ZERO
+        BNE     SDC030          NO -- DO DECREMENT.
+
+SDC020  RTS                     ALL DONE.
+
+SDC030  TXA                     CALCULATE INDEX TO END OF STRING.
+        CLC
+        ADC     DTAB-1,X        ADD LENGTH
+        TAX                     POINTS TO 1 PAST END OF STRING.
+
+SDC040  DEC     DTAB-1,X        DECREMENT DIGIT.
+        LDA     DTAB-1,X        CHECK FOR UNDERFLOW.
+        CMP     #'0
+        BCS     SDC020          O.K.
+
+        LDA     #'9             DIGIT UNDERFLOW -- SET TO 9 ...
+        STA     DTAB-1,X
+        DEX
+        JMP     SDC040          ... & BORROW.
+
+;
+; SINCI -- STRING INCREMENT
+;
+; CALLING SEGUENCE
+;
+;       X = 'DTAB' INDEX TO RECORD
+;
+;       JSR     SINCI
+;
+;       'DTAB'(X) = 'DTAB'(X) + 1 (UNLESS = ALL 9'S)
+;
+SINCI   STX     TEMP            SAVE INDEX.
+        LDA     DTAB-1,X        # OF DIGITS IN NUMBER
+        STA     TEMP+1
+
+SIN010  LDA     DTAB,X          CHECK FOR ALL 9'S FIRST.
+        CMP     #'9
+        BNE     SIN030          NOT ALL 9'S.
+
+        INX
+        DEC     TEMP+1
+        BNE     SIN010          MORE DIGITS TO CHECK.
+
+                                ALL 9'S -- DON'T INCREMENT.
+SIN020  RTS
+
+SIN030  LDX     TEMP            RESTORE STARTING INDEX.
+        TXA                     CALCULATE INDEX TO END OF STRING.
+        CLC
+        ADC     DTAB-1,X        ADD LENGTH.
+        TAX                     NOW POINTS 1 PAST END OF STRING.
+
+SIN040  INC     DTAB-1,X        INCREMENT DIGIT.
+        LDA     #'9             CHECK FOR OVERFLOW.
+        CMP     DTAB-1,X
+        BCS     SIN020          O.K.
+
+        LDA     #'0             DIGIT OVERFLOW -- SET TO 0 ...
+        STA     DTAB-1,X
+        DEX
+        JMP     SIN040          ... & CARRY TO NEXT DIGIT.
+
+;
+; SMOVI -- MOVE CONTENT OF ONE RECORD TO ANOTHER
+;
+; CALLING SEQUENCE:
+;
+;       X = 'DTAB' INDEX TO SOURCE RECORD
+;       Y = 'DTAB' INDEX TO DESTINATION RECORD
+;
+;       JSR     SMOVI
+;
+;       'DTAB'(Y) = 'DTAB'(X)
+;
+SMOVI   LDA     DTAB-1,X        GET RECORD LENGTH FROM SOURCE.
+        STA     TEMP
+
+SMV010  LDA     DTAB,X          MOVE DATA FROM SOURCE ...
+        STA     DTAB,Y          ... TO DESTINATION.
+        INX
+        INY
+        DEC     TEMP            DONE?
+        BNE     SMV010          NO.
+
+        RTS
+
+;
+; SPSHI -- PUSH STRING TO STACK
+;
+; CALLING SEQUENCE:
+;
+;       X = 'DTAB' INDEX OF STRING
+;
+;       JSR     SPHSI
+;
+;       HARDWARE STACK = STRING DATA
+;
+SPSHI   PLA                     REMOVE RETURN ADDRESS FROM STACK TEMPORARILY
+        STA     XJUMP+1
+        PLA
+        STA     XJUMP+2
+        LDA     DTAB-1,X        GET STRING LENGTH.
+        STA     TEMP
+
+SPH010  LDA     DTAB,X          GET DATA ...
+        PHA                     ... & PUSH TO STACK.
+        INX
+        DEC     TEMP
+        BNE     SPH010
+
+        JMP     SPLRET          COMMON CODE FOR RETURN.
+
+;
+; SPULI -- PULL STRING DATA FROM STACK
+;
+; CALLING SEQUENCE:
+;
+;       X = 'DTAB' INDEX TO STRING
+;
+;       JSR     SPULI
+;
+;       DTAB(X) = DATA FROM STACK
+;
+SPULI   PLA                     REMOVE RETURN ADDRESS FROM STACK TEMPORARILY
+        STA     XJUMP+1
+        PLA
+        STA     XJUMP+2
+        STX     TEMP            SAVE INDEX TO MSD.
+        TXA                     CALCULATE INDEX TO LSD + 1 ...
+        CLC
+        ADC     DTAB-1,X        ... BY ADDING STRING LENGTH TO START INDEX.
+        TAX
+
+SPL010  DEX
+        PLA
+        STA     DTAB,X          PULL DATA FROM STACK ...
+        CPX     TEMP            ... TO 'DTAB'
+        BNE     SPL010
+;
+; EXTERNAL ENTRY POINT
+;
+SPLRET  LDA     XJUMP+2         RESTORE RETURN ADDRESS TO STACK.
+        PHA
+        LDA     XJUMP+1
+        PHA
+        RTS                     RETURN.
+
+;
+; SSWAPI -- SWAP INDEXED RECORD WITH 'NUMBER'
+;
+; CALLING SEQUENCE:
+;
+;       X = DTAB INDEX OF RECORD
+;       'NUMBER' = NUMERIC STRING ( RECORD)
+;
+;       JSR     SSWAPI
+;
+;       'DTAB'(X) AND 'NUMBER' CONTENTS ARE SWAPPED
+;
+
+
+SSWAPI  LDY     #0              SETUP 'NUMBER' INDEX.
+
+SSW010  LDA     NUMBER,Y        GET 'NUMBER' DATA.
+        PHA
+        LDA     DTAB,X          MOVE 'DTAB' DATA ...
+        STA     NUMBER,Y        ... TO 'NUMBER' ...
+        PLA
+        STA     DTAB,X          ... & VICE VERSA.
+        INX
+        INY
+        CPY     NUMBER-1        DONE?
+        BNE     SSW010          NO.
+
+        RTS
+
+
+;
+; TSTNUM -- TEST RECORD FOR = ZEROS
+;
+; CALLING SEQUENCE:
+;
+;       X = 'DTAB' INDEX TO RECORD
+;
+;       JSR     TSTNUM
+;       BNE     NON-ZERO
+;
+TSTNUM  STX     TEMP            SAVE DATA INDEX.
+        LDA     DTAB-1,X        RECORD LENGTH.
+        STA     TEMP+1
+
+TST010  LDA     DTAB,X          GET A DIGIT.
+        CMP     #'0
+        BNE     TST020          NON-ZERO CC IS SET FOR EXIT.
+
+        INX
+        DEC     TEMP+1
+        BNE     TST010
+
+TST020  PHP                     SAVE CC
+        LDX     TEMP            RESTORE INDEX.
+        PLP                     RESTORE CC.
+        RTS                     RETURN WITH CC SET
+
+;
+; SBTAI -- CONVERT BINARY BYTE TO ASCII STRING (DECIMAL)
+;
+; CALLING SEQUENCE:
+;
+;       A = BINARY NUMBER (UNSIGNED 0-255)
+;       X = 'DTAB' INDEX TO RECORD
+;
+;       JSR     SBTAI
+;
+;       'DTAB'(X) = ASCII RESULT OF NUMBER CONVERSION
+;
+; ALGORITHM: SUCCESSIVE SUBTRACTION OF DECREASING POWERS OF TEN DECIMAL
+;
+SBTAI   PHA                      SAVE REGISTERS.
+        TXA
+        PHA
+
+        JSR     SCLRI           CLEAR RECORD.
+
+        PLA                     RESTORE REGISTERS
+        TAX
+        PLA
+
+        LDY     #0              INITIALIZE STRING INDEX
+
+
+SBA010  SEC                     (CLEAR BORROW)
+        INC     DTAB+NL-3,X     PRE-INCREMENT RESULT DIGIT.
+        SBC     BTATAB,Y        SUBTRACT A POWER OF TEN.
+        BCS     SBA010          NO UNDERFLOW -- TRY AGAIN.
+
+        ADC     BTATAB,Y        UNDERFLOW -- UNDO PRE-INCREMENT
+        INY
+        DEC     DTAB+NL-3,X     ... & UNDO UNDERFLOW.
+        INX
+        CPY     #3              ALL THREE DIGITS?
+        BNE     SBA010          NO -- CONTINUE.
+
+        RTS
+
+BTATAB  .BYTE   100,10,1        POWERS OF TEN.
+
+;
+; SATBI -- CONVERT ASCII STRING (DECIMAL) TO BINARY BYTE
+;
+; CALLING SEQUENCE:
+;
+;       X = 'DTAB' INDEX TO RECORD
+;
+;       JSR     SATBI
+;
+;       A = BINARY NUMBER (UNSIGNED), CONVERSION OF NUMERIC STRING
+;           MODULO 256.
+;
+; ALGORITHM:  ((MSD * 10) + NSD) * 10       = LSD
+;
+SATBI   LDA     DTAB-1,X        GET STRING LENGTH.
+        STA     TEMP
+
+        LDA     #0              INITIALIZE ...
+
+SAB010  STA     TEMP+1          ... RUNNING RESULT.
+        LDA     DTAB,X          GET AN ASCII DIGIT.
+
+        INX
+        SEC                     (CLEAR BORROW)
+        SBC     #'0             CONVERT TO BCD DIGIT.
+        CLC
+        ADC     TEMP+1          ADD TO PARTIAL RESULT.
+        DEC     TEMP            MORE DIGITS?
+        BEQ     SAB090          NO -- RESULT IN REGISTER A.
+
+        ASL     A               YES -- MULTIPLY BY TEN.
+        STA     TEMP+1          X2.
+        ASL     A
+        ASL     A               X8
+        CLC
+        ADC     TEMP+1          X10
+        JMP     SAB010          SAVE
+
+SAB090  RTS
+
+;
+; PUSHHS -- PUSH HARDWARE STACK TO SOFTWARE STACK
+;
+; CALLING SEQUENCE:
+;
+;       JSR     PUSHHS
+;
+PUSHHS  PLA                     GET RETURN ADDRESS ...
+        STA     XJUMP+1         ... & SAVE FOR EXIT.
+        PLA
+        STA     XJUMP+2
+        LDY     #3              INDEX TO SOFTWARE STACK.
+
+PHH030  PLA                     MOVE DATA FROM HARDWARE STACK ...
+        STA     (SSTACK),Y      ... TO SOFTWARE STACK.
+        INY
+        TSX                     STACK EMPTY?
+        CPX     #$FF
+        BNE     PHH030          NO
+
+                                NOW STORE STACK FRAME OVERHEAD.
+        LDA     SSTACK          OLD FRAME ADDRESS (LO).
+        STA     (SSTACK),Y
+        INY
+        LDA     SSTACK+1        OLD FRAME ADDRESS (HI).
+        STA     (SSTACK),Y
+        INY
+        TYA                     FRAME INDEX (SIZE + 3).
+        SEC                     (CLEAR BORROW).
+        SBC     #3
+        STA     (SSTACK),Y
+        TAY
+        INY
+        LDX     #SSTACK-DTAB    BUMP POINTER TO END OF NEW FRAME.
+        JSR     PADDY
+
+        LDA     MEMHI+1         CHECK FOR OVERFLOW ABOUT TO HAPPEN
+        CLC                     SET BORROW.
+        SBC     SSTACK+1
+        BNE     PHH032          NOT WITHIN A PAGE YET -- O.K.
+
+        LDA     #ECSTKO         STACK OVERFLOW -- ABORT.
+        JMP     DIRECT
+
+PHH032  JMP     SPLRET          RETURN TO CALLER.
+
+;
+; PULLHS -- PULL DATA FROM SOFTWARE STACK TO HARDWARE STACK
+;
+; CALLING SEQUENCE:
+;
+;       JSR     PULLHS
+;
+PULLHS  PLA                     GET RETURN ADDRESS ...
+        STA     XJUMP+1         ... & SAVE FOR EXIT.
+        PLA
+        STA     XJUMP+2
+        LDY     #0              INDEX TO SOFTWARE STACK.
+        LDA     (SSTACK),Y      POINTER ADDRESS (LO).
+        PHA                     SAVE TEMPORARILY.
+        INY
+        LDA     (SSTACK),Y      POINTER ADDRESS (HI).
+        PHA                     SAVE TEMPORARILY.
+        INY
+        LDA     (SSTACK),Y      DATA INDEX (DATA PORTION OF FRAME)
+        TAY
+        PLA                     POINTER ADDRESS (HI).
+        STA     SSTACK+1
+        PLA                     POINTER ADDRESS (LO).
+        STA     SSTACK
+
+PLH037  LDA     (SSTACK),Y      GET DATA FROM SOFTWARE STACK.
+        PHA                     PUSH TO HARDWARE STACK.
+        DEY                     DECREMENT INDEX.
+        CPY     #2              DONE?
+        BNE     PLH037          NO.
+
+        JMP     SPLRET          RETURN TO CALLER.
+
+;
+; WORKED USED DEFINITIONS FOR 'XLOAD' & '.....' COMMANDS
+;
+LODTAB  .BYTE   '1,'Y           SIERPINSKI = Y & HILBERT = J
+        .WORD   CAN1
+
+        .BYTE   '2,'Y           TRINARY TREE = Y & SPIRAL = J
+        .WORD   CAN2
+
+        .BYTE   '3,'K           SUPER SPIRAL = K
+        .WORD   CAN3
+
+        .BYTE   '4,'Y           ABS DRAW = Y, REL DRAW =
+        .WORD   CAN4
+
+        .BYTE   '5,'Y           WALLBANGER = Y, BREAKOUT = J
+        .WORD   CAN5
+
+        .BYTE   '6,'J           HOLLYWOOD SQUARES = J, W/O SQUARE = Y
+        .WORD   CAN6
+
+        .BYTE   '7,'Y           KOCH CURVE = Y
+        .WORD   CAN7
+
+        .BYTE   '8,'Y           THE ZAPPER = Y
+        .WORD   CAN8
+
+        .BYTE   '9,'Y           TURTLE DRAW = Y
+        .WORD   CAN9
+
+        .BYTE   'A,'Y           POSIES = Y
+        .WORD   CANA
+
+        .BYTE   'B,'J           SUPERTURTLE = J
+        .WORD   CANB
+
+        .BYTE   'C,'            COLORPOWER MACHINE
+        .WORD   CANC
+
+        .BYTE   'D,'Y           MAGIC CARPET = Y
+        .WORD   CAND
+
+
+        .BYTE   $FF             END OF TABLE
+
+        *=*+32                  *** SPARES FOR PATCHING ***
+
+CAN1    .BYTE   "I=T(-I2FI3LG3LI2FI+)2R",EOL
+        .BYTE   "G=4F",EOL
+        .BYTE   "Z=T(-VG2LZ2RGZG2LV+)2L",EOL
+        .BYTE   "V=T(-Z2RGVG2LV2RGZ+)2R",EOL
+        .BYTE   "Y=(X2L4+4(2FI))",EOL
+        .BYTE   "J=(XL5+Z)",EOL
+        .BYTE   "X=(UCHN@Q2RQ3R2GD)",EOL
+        .BYTE   "Q=E_(FQ)",EOL
+        .BYTE   EOF
+
+CAN2    .BYTE   "G=(-T(++Z-AF2R3(G2R)AFA+)(+4R))",EOL
+        .BYTE   "Z=T(2-Z+)_",EOL
+        .BYTE   "Y=(CHN@4+4(4(G2R)A+))",EOL
+        .BYTE   "I=(T(2-2(2LAF)I)_)",EOL
+        .BYTE   "V=(2+2(2RAF))",EOL
+        .BYTE   "J=(CHN@13V4R[@P2FSP]4RI)",EOL
+        .BYTE   EOF
+
+CAN3    .BYTE   "Q=(3R5(LIT_!)TZ_)",EOL
+        .BYTE   "I=(UF@2L5TR(SR)RTFD4R)",EOL
+        .BYTE   "Z=(B2L9999Y)",EOL
+        .BYTE   "Y=(3R5(LST(F!)(IT_!))T_!)",EOL
+        .BYTE   "K=1(^Q)",EOL
+        .BYTE   EOF
+
+CAN4    .BYTE   "Y=(H@+P"
+        .BYTE   CT,'3,CE,'2
+        .BYTE   "1(^N$YDU$AF_2R$BF_2R$CF_2R$DF_01W))",EOL
+        .BYTE   "J=1(^$YDUI01W)",EOL
+        .BYTE   "I=(AF$A+_$C-_$BR_$DL_)",EOL
+        .BYTE   EOF
+
+CAN5    .BYTE   "Y=(UNR"
+        .BYTE   CE,'2,CT,'3
+        .BYTE   "1(^ST(?2L2RST4R )FW))",EOL
+        .BYTE   "V=(LST(Z3R)(2RST(Z3L)(LST(Z?2L2R)F)))",EOL
+        .BYTE   "Z=(FDU4RF4R)",EOL
+        .BYTE   "J=(NR@PD"
+        .BYTE   CE,'2
+        .BYTE   "1(^VW))",EOL
+        .BYTE   EOF
+
+CAN6    .BYTE   "V=(13?13+13-?&0&1)",EOL
+        .BYTE   "X=(13?13+13-?&2&4)",EOL
+        .BYTE   "Y=(200?RFP?VX)",EOL
+        .BYTE   "J=("
+        .BYTE   CD,'2,CT,'0,CE,'1,CM,'0
+        .BYTE   "1(^YN[@13?+_=#I]4(#IF2R)15W))",EOL
+        .BYTE   EOF
+
+CAN7    .BYTE   "Z=T(-ZG4L3(2RGZG)3(GZG2L)4RGZ+)_",EOL
+        .BYTE   "G=1F",EOL
+        .BYTE   "J=4(GZG2R)",EOL
+        .BYTE   "Y=("
+        .BYTE   CD,'7,CM,'0,CT,'0
+        .BYTE   "@3+HN3LU55FNDCJ)",EOL
+        .BYTE   EOF
+
+CAN8    .BYTE   "G=(3R2F2R)",EOL
+        .BYTE   "Z=(&0[A+&1][T(AFG&2-Z&3)H])",EOL
+        .BYTE   "Y=("
+        .BYTE   CM,'0,CA,'G
+        .BYTE   "@1(^+P&1Z))",EOL
+        .BYTE   "I=(?(3R3F3L)(3L2F3L))",EOL
+        .BYTE   "J=[?7(AFR-)L]",EOL
+        .BYTE   "K=[T(7(AF2R)FR-)_]",EOL
+        .BYTE   EOF
+
+CAN9    .BYTE   "K=($A(FB)_$B(RB)_$D(LB)_$C(H5B)_)",EOL
+        .BYTE   "Y=("
+        .BYTE   CM,'0,CT,'2
+        .BYTE   "1(^K))",EOL
+        .BYTE   EOF
+
+CANA    .BYTE   "Y=("
+        .BYTE   CM,'0,CT,'2
+        .BYTE   "HN1(^K))",EOL
+        .BYTE   "K=(U$AF_$BR_$DL_$C(DIB)_2W)",EOL
+        .BYTE   "I=8(8(3FR)3L6F)",EOL
+        .BYTE   "Z=(8(8(3FRAAW)3L6F2RA0))",EOL
+        .BYTE   EOF
+
+CANB    .BYTE   "U=4F",EOL
+        .BYTE   "V=(2FRFLF)",EOL
+        .BYTE   "W=(FR2FLF)",EOL
+        .BYTE   "X=(R3FL)",EOL
+        .BYTE   "Y=(2RFL2FRF2L)",EOL
+        .BYTE   "Z=(2R2FLFRF2L)",EOL
+        .BYTE   "R=[@#Z+4-T(@=#Z2R)(#Z++=#Z)]",EOL
+        .BYTE   "L=[@#Z+T(-=#Z)(5+=#Z2L)]",EOL
+        .BYTE   "J=(HCN1(^$A*F_$B*R_$D*L_$CH_2W))",EOL
+        .BYTE   "F=[@#Z+T(-T(-T(-T(-T(-T_*Z)*Y)*X)*W)*V)*U]",EOL
+        .BYTE   "C=4(*U*V*W*X*Y*Z2R)",EOL
+        .BYTE   EOF
+
+CANC    .BYTE   "A=(@#A++=#A&1)",EOL
+        .BYTE   "B=(@#B++=#B&2)",EOL
+        .BYTE   "C=(@#A+-=#A&1)",EOL
+        .BYTE   "D=(@#B+-=#B&2)",EOL
+        .BYTE   "E=(@#C++=#C&4)",EOL
+        .BYTE   "F=(@#D++=#D&0)",EOL
+        .BYTE   "G=(@#C+-=#C&4)",EOL
+        .BYTE   "H=(@#D+-=#D&0)",EOL
+        .BYTE   "M=("
+        .BYTE   CM,'0,CT,'0
+        .BYTE   "HCN@=#A=#B=#C=#D*N)",EOL
+        .BYTE   "N=8(3+P[32(8(AFR)+)]R)",EOL
+        .BYTE   "J=1(^$A*A_$B*B_$C*C_$D*D_"
+        .BYTE   "$E*E_$F*F_$G*G_$H*H_3W)",EOL
+        .BYTE   EOF
+
+CAND    .BYTE   "J=1(^13?13+13-??&0&1?&2&410W)",EOL
+        .BYTE   "Y=(@"
+        .BYTE   CE,'2
+        .BYTE   "NR1000(10F+P)"
+        .BYTE   CE,'3
+        .BYTE   "@+PJ)",EOL
+        .BYTE   EOF
+
+;
+; CONTROL CODE EQUATES FOR CANNED PROGRAMS
+;
+CA      = $61           CTRL-A
+CD      = $64           CTRL-D
+CE      = $65           CTRL-E
+CM      = $6D           CTRL-M
+CT      = $74           CTRL-T
+
+        .IF     BOOT-1
+;
+; CARTRIDGE OVERHEAD BYTES FOR COLLEEN O.S.
+;
+*=$BFFA
+        .WORD   RESTRT
+        .BYTE   $00,$05
+        .WORD   INIT
+        .ENDIF
+        .IF     BOOT
+PND=*
+        .ENDIF
+
+        .END    0
+

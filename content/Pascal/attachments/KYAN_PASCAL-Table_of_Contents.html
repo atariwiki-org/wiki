@@ -1,0 +1,570 @@
+<html>
+<head>
+<title>Atari/Apple Kyan Pascal Manual</title>
+</head>
+<body bgcolor="#FFFFFF">
+<b>NOTE:</b> What follws is the Kyan Pascal Manual for the Atari and 
+Apple 8-bit computers. There isn't much right now, however, I will add 
+sections as my time allows. If you wish to copy this file, please feel 
+free to do so. Be aware that it will be periodically updated. My 
+suggestion is to set a bookmark to this page if you find it important.
+<p>
+My intentions are to start at the beginning of the manual and continue 
+until it is finished. If anyone feels as though I am violating any 
+copyrights, <a href="mailto: ryanr@one.net">email</a> me and we can 
+discuss it.
+<p>
+<hr width=50&#037; size=5>
+<center><h1>KYAN PASCAL - A PROGRAMMING LANGUAGE</h1></center>
+<a name="Contents"></a>
+<center><h2>Table of Contents</h2></center>
+<center>
+<table border=0>
+ <tr>
+  <td><a href="#Preface">Preface</a></td>
+ </tr>
+ <tr>
+  <td><a href="#Intro">Introduction</a></td>
+ </tr>
+ <tr>
+  <td><a href="#Instructions">Editor and Compiler Instructions</a></td>
+ </tr>
+ <tr>
+  <td>Sample Programs</td>
+ </tr>
+ <tr>
+  <td>Programming Techniques</td>
+ </tr>
+ <tr>
+  <td><a href="#AppendixA"">Appendix A</a> - Compiler, Assembler and Run-time Error Messages</td>
+ </tr>
+ <tr>
+  <td>Appendix B - Quick Guide to Kyan Pascal</td>
+ </tr>
+ <tr>
+  <td>Appendix C - Specifications</td>
+ </tr>
+</table>
+</center>
+<p>
+
+<a name="Preface"></a>
+<h2>Preface</h2>
+<u>PASCAL,</u> <u>A</u> <u>Programming</u> <u>Language</u> provides beginning
+ programmers with a step-by-step introduction to PASCAL, and advanced
+ programmers with a convenient reference to the language.
+<p>
+The first chapter, EDITOR AND COMPILER INSTRUCTIONS, explains how to enter,
+ edit, and compile a PASCAL program. This material must be read prior to
+ actual programming.
+<p>
+Readers with no previous experience with PASCAL should read the chapters in
+ order. It is recommended that the example programs be entered, compiled,
+ and run. It is not essential that every line be duplicated from these
+ programs. In fact, rewriting the example programs not only is instructive
+ but also can improve them.
+<p>
+Programmers who are already familiar with PASCAL need only read the sections
+ on topics they wish to review. Appendix B provides a quick review of
+ PASCAL vocabulary.
+<p>
+
+<hr width="80%" size=5>
+<center><a href="#Contents">Table of Contents</a></center>
+<hr width="80%" size=5>
+
+<a name="Intro"></a>
+<h2>Introduction</h2>
+The history of Pascal goes back to the late 1960s, when Niklaus Wirth, a
+ professor of computer science, decided that a new approach -- a new
+ language -- was needed for teaching programming. Wirth introduced PASCAL
+ as a formal language in 1971.
+<p>
+The two principal aims of PASCAL are "..to make available a language
+ suitable to teach programming as a systematic discipline based on certain
+ fundamental concepts clearly and naturally reflected by the language.."
+ and to "develop implementations of this language which are both reliable
+ and efficient on presently available computers" (Jensen and Wirth, "Pascal
+ User Manual and Report").
+<p>
+PASCAL has become a widely used language for both elementary and advanced
+ programming. Its popularity derives from the clarity of programs written
+ in it and the efficiency with which it can be implemented within the
+ computer.
+<p>
+Kyan PASCAL is especially efficient in this regard, because the run time
+ code and the compiler itself are written in assembly language, the
+ language of the microprocessor integrated circuit. Unlike some other
+ compiled languages, Kyan PASCAL includes the necessary tools for advanced
+ programmers who wish to include assembly language routines in their
+ PASCAL programs.
+<p>
+PASCAL is a self-documenting and self-structuring language. Top-down
+ programming and modulization are natural outgrowths of its features.
+ These features include, among others, user-defined functions and
+ procedures of which modules are built.
+<p>
+Separation of the declaration section from the program body also enforces
+ good programming technique. All the information on constants, types of
+ variables, and names of variables and constants appears in a single
+ section rather than being spread throughout the program.
+<p>
+Kyan PASCAL provides features that help the programmer to find the syntax
+ errors that account for over 90% of the errors in programming. Over 30
+ error messages for syntax are in the compiler. These not only tell the
+ programmer what types of errors were made but also on which lines the
+ errors occurred.
+<p>
+Kyan PASCAL does not stop looking for errors or lose synchronization 
+ when an error is found. Instead, although some compilation halts, error
+ detection continues and all the errors are displayed at one time.
+<p>
+One final reason for using PASCAL is its portability. PASCAL, one of today's
+ most popular languages, is implemented on nearly every computer on the
+ market. Kyan PASCAL is compatible with standard PASCAL. Programs and
+ program modules written in Kyan PASCAL (using standard procedures and
+ functions) will run on a multitude of computers: a programmer can develop
+ software on a home computer, transport it to many other machines, and run
+ the programs immediately.
+<p>
+<ul>
+<u>References -- Pascal Programming</u>
+<li><u>Programming in Pascal</u>, P. Grogono, Addison-Wesley Publishing, 1978.
+<li><u>Oh! Pascal</u>, D. Cooper, and M. Clancy, 2nd Edition, New York: Norton,
+ 1985.
+<li><u>Software Tools in Pascal</u>, B.W. Kernighan and P.J. Plauger, Reading,
+ MA: Addison-Wesley, 1981.
+<li><u>Pascal, A Problem Solving Approach</u>, E.B. Kaufman, Addison-Wesley,
+ 1982.
+<li><u>Introduction to Pascal</u>,R. Zaks, Sybex, Inc., Berkeley, CA 1981.
+<li><u>Pascal User Manual and Report</u>, K. Jensen and N. Wirth, Springer-Verlag, 1974.
+</ul>
+<ul>
+<u>References -- Assembly Language Programming</u>
+<li><u>Programming a Microcomputer: 6502</u>, C.C. Foster, Addison-Wesley, 1978.
+<li><u>6502 Assembly Language Programming</u>, L.A. Leventhal, Osborne/McGraw-Hill, 1981.
+<li><u>Assembly Lines: The book</u>, R. Wagner, Santee, CA Roger Wagner
+ Publishing.
+</ul>
+
+<hr width="80%" size=5>
+<center><a href="#Preface">Previous Section</a> | <a href="#Contents">Table of Contents
+  </a></center>
+<hr width="80%" size=5>
+
+<a name="Instructions"></a>
+<h2>Editor and Compiler Instructions</h2>
+Kyan PASCAL consists of two programs: the editor program (ED) and the compiler/assembler
+ program (PC). When your Apple<sup>tm</sup> [Atari<sup>tm</sup>] is booted (to boot the
+ Atari, push the &lt;Option&gt; key during power-up) with a Kyan PASCAL disk in the drive
+ the following will be displayed:
+<pre>
+            KYAN PASCAL VERSION 1.0
+            COPYRIGHT 1985 BY KYAN SOFTWARE
+            1850 UNION STREET, SUITE 183
+            SAN FRANCISCO, CA 94123
+
+            &gt;
+</pre>
+If you have an Apple ][, to transfer the editor program from the disk to memory,
+ type ED:
+<pre>
+            &gt;ED
+</pre>
+followed by &lt;RETURN&gt;. Striking the &lt;RETURN&gt; key tells the computer that you have
+ completed your command.
+<p>
+If you have an Atari, to transfer the editor program from disk to memory, type D1:ED:
+<pre>
+            &gt;D1:ED
+</pre>
+follwed by &lt;RETURN&gt;. All commands that require disk access on the Atari, must have
+ the prefic "D1:--" which stands for disk drive #1. If you have more than one disk
+ drive, this prefix can change to D2, D3, etc.
+<p>
+The prompt symbol (&gt;) is a signal from the program, in this case from Kyan PASCAL,
+ that the computer is waiting for your command. Unless instructed otherwise, you
+ should always press &lt;RETURN&gt; when entering commands into the computer.
+<p>
+Your Apple [Atari] computer will search for the editor and load it. When loading is
+ completed the following message will be displayed:
+<pre>
+            PATHNAME?
+
+            [FILE NAME? if computer is an Atari]
+</pre>
+
+<h3><u>Creating</u> <u>a</u> <u>File,</u> <u>an</u> <u>Example</u></h3>
+Suppose the name of your program is TRIAL enter:
+<pre>
+            PATHNAME? TRIAL
+
+            [FILE NAME? D1:TRIAL if your computer is an Atari]
+</pre>
+Because the program trial is new the editor will prompt:
+<pre>
+            FILE NOT FOUND, PRESS ANY KEY
+</pre>
+When you press any key the screen will become blank. Notice that there is no prompt.
+ All entries that you make will become part of your program file (TRIAL) just as you
+ see them on the screen.
+<p>
+Enter a string of six X:
+<pre>
+            XXXXXX
+</pre>
+Follow the instructions in the next section to save TRIAL.
+
+<h3><u>End</u> <u>of</u> <u>Editing</u></h3>
+The first step in editing is to press the &lt;ESC&gt; key. This will put you in a mode
+ in which you can use the "special editor functions." A help menu wull be displayed. To
+ leave this mode and resume normal editing press the &lt;ESC&gt; key again.
+<p>
+If you wish to save TRIAL (the exapmle program above) type &lt;ESC&gt; S. This is one of
+ the three ways to end editing:
+<pre>
+            &lt;ESC&gt; S     (Save and Resume)
+            &lt;ESC&gt; Q     (Quit without Save)
+            &lt;ESC&gt; X     (Save and Exit)
+</pre>
+If you typed &lt;ESC&gt; S you saved the program you were editing and have returned to the
+ editor so that you could add more lines.
+<p>
+If you type &lt;ESC&gt; Q none of the changes or entries you did were saved. You just quit
+ and left the file in the state it was before you started editing.
+<p>
+If you typed &lt;ESC&gt; X the prompt (&gt;) reappeared because you saved your changes,
+ left the editor to edit a different program (or to compile).
+<p>
+Remember before creating or saving programs, you should make backup copies of your Kyan
+ PASCAL disk.
+<p>
+If you own an Atari, you can re-enter the editor by typing "!" and &lt;RETURN&gt; after
+ the prompt.
+
+<h3><u>Files,</u> <u>Pathnames</u> <u>and</u> <u>File</u> <u>Names</u></h3>
+Programs such as the TRIAL program above are stored in separate files. Each program
+ added to the disk must have its own path or file name. An Apple pathname consists of 64
+ or fewer letters and/or characters. An Atari file name consists of D1: followed by an 8
+ character name followed by a 3 character extension (e.g., D1:XXXXXXXX.YYY). Spaces are
+ not permitted within either pathnames or file names.
+<p>
+PASCAL names, i.e., names of variables, types, etc., in a PASCAL program are not the
+ same as ProDOS pathnames or DOS 2.5 file names!
+<p>
+To change the name of the file you are working with, type &lt;ESC&gt; P and the computer
+ will prompt:
+<pre>
+            PATHNAME:
+
+            [FILE NAME: if your computer is an Atari]
+</pre>
+Enter the new name, e.g. "Account", of the file followed by a carriage return and
+ &lt;ESC&gt;:
+<pre>
+            PATHNAME: Account &lt;RETURN&gt; &lt;ESC&gt;
+
+            FILE NAME:  D1:Account &lt;RETURN&gt; &lt;ESC&gt;   [Atari Version]
+</pre>
+It should be noted that the new file name will be entered immediately after
+ &lt;RETURN&gt;, whether or not the final &lt;ESC&gt; is typed. The final &lt;ESC&gt;
+ causes the computer to leave the special functions mode.
+
+<h3><u>Cursor</u> <u>Movement</u></h3>
+Kyan PASCAL includes an easily learned, full-screen, insert mode editor. Anywhere
+ you move the cursor, a letter, a number, a space, or even a new line break may be
+ added. This greatly facilitates editing your program.
+<p>
+All cursor movement commands are a combination of the [CNTL] key (Note: ^ is
+ a shorthand notation for [CNTL] so [CNTL]-S is the same as ^S) and another
+ key. The combinations are:
+<pre>
+^S   move the cursor back 1 space (left)
+^D   move the cursor forward 1 space (right)
+^E   move the cursor back 1 line (up)
+^X   move the cursor forward 1 line (down)
+^A   move the cursor back 1 word (left)
+^F   move the cursor forward 1 word (right)
+^R   move the cursor back 20 lines (up)
+^C   move the cursor forward 20 lines (down)
+^T   move the cursor to the top of the file
+^V   move the cursor to the bottom of the file
+</pre>
+Many Apple and Atari computers have cursor (arrow) keys. You may also use these to
+ move the cursor right of left one space and up or down one line.
+<p>
+If you hold the cursor keys pressed down the cursor movement will be repeated until
+ you release the keys.
+
+<h3><u>Delete</u> <u>Commands</u></h3>
+To delete a letter, word or line use the following commands:
+<pre>
+^G   delete the letter coincident to the cursor
+^Q   delete the letter to the left of the cursor
+^Y   delete the line in which the cursor is positioned
+</pre>
+The delete key &lt;DEL&gt;, if present, accomplishes the same task as ^Q.
+
+<h3><u>Find</u> <u>String</u> <u>and</u> <u>Change</u> <u>String</u>
+ (<u>Search</u> <u>and</u> <u>Replace</u>)</h3>
+ string is a combination of characters (letters, numbers, and symbols) and spaces.
+ A string may be a certain word or a group of words.
+<p>
+Sometimes you may wish to find a certain string within a program. Or you may
+ wish tp replace a string with another string:
+<pre>
+     &lt;ESC&gt;         enter the special editor function
+     A                 set "A" (designate the string to be found)
+     B                 set "B" (designate the replacement string)
+     C                 change "A" string to "B" string
+     ^W                search from cursor forward to end of file
+     ^Z                search from cursor back to beginning of file
+</pre>
+<u>To</u> <u>find</u> <u>the</u> <u>occurrence</u> <u>of</u> <u>any</u> <u>string</u>
+ enter &lt;ESC&gt; A and the editor will prompt:
+<pre>
+                          A:
+</pre>
+Next enter the string to be found. For example, if "look out" is to be found, enter
+ "look out" followed by a carriage return:
+<pre>
+                          A:look out &lt;RETURN&gt;
+</pre>
+The final two steps are to leave the special editor functions mode by typing the
+ &ltESC&gt key and then typing ^W or ^Z. The cursor will go to the first occurrence
+ of "look out" ahead of the present cursor position. To find the second occurrence,
+ enter ^Z again. This process can be repeated until all occurrences of "look out"
+ have been found.
+<p>
+Maximum string size is 40 characters.
+<p>
+<u>To</u> <u>substitute</u> <u>a</u> <u>new</u> <u>string</u> <u>for</u> <u>any</u>
+ <u>string</u> both the old ("A") string and the new ("B") string must be designated.
+ Use the "A" and "B" commands listed above. The "A" string consists of the words or
+ lines the way they are before the substitution. The "B" string consists of the new
+ words or lines that will take their place.
+<p>
+When both strings have been set, type the "C" command. The editor will prompt:
+<pre>
+          CHANGE ALL STRINGS OR SOME (A/S/Q)?
+</pre>
+Choose "S" to0 have the editor stop at each possible string and question whether
+ or not to make that substitution.
+<p>
+Choose "A" to replace all strings in the file. Choose "Q" to quit without making
+ any substitutions.
+<p>
+Substitutions always start at the top of the file and continue to the end.
+<p>
+To replace the string "first" with the string "#1" everywhere in the file follow
+ these steps:
+<table cellspacing=5 border=0>
+<tr>
+ <td align=left>1. Type:</td>
+ <td>&lt;ESC&gt; A</td>
+</tr>
+<tr>
+ <td align=left>2. Prompt appears:</td>
+ <td>A:</td>
+</tr>
+<tr>
+ <td align=left>3. Type:</td>
+ <td>first &lt;RETURN&gt;</td>
+</tr>
+<tr>
+ <td align=left>4. Type:</td>
+ <td>B<td>
+</tr>
+<tr>
+ <td align=left>5. Prompt appears:</td>
+ <td>B:</td>
+</tr>
+<tr>
+ <td align=left>6. Type:</td>
+ <td>#1 &lt;RETURN&gt;</td>
+</tr>
+<tr>
+ <td align=left>7. Type:</td>
+ <td>C</td>
+</tr>
+<tr>
+ <td align=left>8. Prompt appears:</td>
+ <td>CHANGE ALL STRINGS OR SOME (A/S/Q)?</td>
+</tr>
+<tr>
+ <td align=left>9. Type:</td>
+ <td>A</td>
+</tr>
+</table>
+
+<h3><u>Edit</u> <u>at</u> <u>Line</u> - <u>N</u></h3>
+To edit a specific line use the command:
+<pre>
+         &lt;ESC&gt; G
+</pre>
+When the editor will prompts "LINE NUMBER" enter the number of the line which you
+ wish to change. For example, if the compiler indicates that you have an error in
+ line 3, enter 3 after the prompt:
+<pre>
+         LINE NUMBER: 3 &lt;RETURN&gt;
+</pre>
+Remember, if you add or delete lines before the one you are searching for, then
+ the line number of that line will be increased or decreased, accordingly.
+
+<h3><u>Including</u> <u>a</u> <u>File</u></h3>
+If you wish to include one file in another use the &lt;ESC&gt; I command. When you
+ enter &lt;ESC&gt; I the editor will prompt"
+<pre>
+         PATHNAME OF FILE TO INSERT (BLANK TO QUIT)
+
+         FILE NAME OF FILE TO INSERT (BLANK TO QUIT)     [Atari Version]
+</pre>
+If you enter the pathname [or file name] of an existing file it will be inserted
+ into the file you are editing. Atari users, remember to include the disk prefix.
+
+<h3><u>Block</u> <u>Move</u> <u>Commands</u></h3>
+
+
+
+
+
+
+
+
+<pre>
+<h3>
+<u>List</u> <u>of</u> <u>Editor</u> <u>Commands</u></h3>     (Note: ^ is equivalent to CONTROL Key)
+     ED          enter the editor program
+
+     ^S         move the cursor back 1 space (left)
+     ^D         move the cursor forward 1 space (right)
+     ^E         move the cursor back 1 line (up)
+     ^X         move the cursor forward 1 line (down)
+     ^A         move the cursor back 1 word (left)
+     ^F         move the cursor forward 1 word (right)
+     ^R         move the cursor back 20 lines (up)
+     ^C         move the cursor forward 20 lines (down)
+     ^V         move the cursor to the bottom of the file
+     ^T         move the cursor to the top of the file
+     ^Q         delete the letter to the left of the cursor
+     ^G         delete the letter or keystroke coincident to the cursor
+     ^Y         delete the line in which the cursor is positioned
+
+     ^W         find string backward direction
+     ^Z         find string forward direction
+
+     ^O         mark/cut block
+     ^P         paste/block
+
+     ^N         type "[" (left bracket) - Apple ][ only
+     &lt;SHIFT&gt;M   type "]" (right bracket) - Apple ][ only
+
+Special Editor Functions Mode:
+     &lt;ESC&gt;      enter/leave special functions mode
+     S          remain in editing with save
+     Q          exit from editing without save
+     X          exit from editing with save
+     A          designate string to be found
+     B          designate replacement string
+     C          set search/replace options
+     I          include file
+     P          set  pathname [or filename if you have an Atari]
+     G          go to line
+     H          get help menu
+
+<h3>
+<u>List</u> <u>of</u> <u>Compiler/Assembler</u> <u>Commands</u> 
+</h3>
+     PC         Enter the compiler and assembler programs
+
+Assembler/Compiler Options - Apple ][:
+     -O         Omit object code
+     -L         Generate assembly language listing
+     -Sn        Send error listing to slot #n
+
+Assembler/Compiler Options - Atari:
+     -O         Omit object code
+     -E         Send error listing to screen only
+     -EP        Send error listing to screen and printer
+     -L         Send assembly listing to screen only
+     -LP        Send assembly listing to screen and printer
+
+<h3>
+<u>Other</u> <u>Commands</u>
+</h3>
+     ^&lt;RESET&gt;   Stops program during run time -- Apple ][ Only
+     &lt;BREAK&gt;    Stops program during run time -- Atari Only
+</pre>
+
+<hr width="80%" size=5>
+<center><a href="#Intro">Previous Section</a> | <a href="#Contents">Table of Contents
+   </a></center>
+<hr width="80%" size=5>
+
+<a name="AppendixA"></a>
+<h2>Appendix A - Compiler, Assembler, and Run-Time Error Messages</h2>
+<u>Compiler</u> <u>Error</u> <u>Messages</u>
+<ol>
+<li>&nbsp;syntax error
+<li>&nbsp;unexpected end of input
+<li>&nbsp;array dimension expected
+<li>&nbsp;to or downto expected
+<li>&nbsp;type specification expected
+<li>&nbsp;ordinal type expected
+<li>&nbsp;:= expected
+<li>&nbsp;: expected
+<li>&nbsp;, expected
+<li>&nbsp;; or end expected
+<li>&nbsp;compiler directive expected
+<li>&nbsp;do expected
+<li>&nbsp;end expected
+<li>&nbsp;= expected
+<li>&nbsp;identifier expected
+<li>&nbsp;[ expected
+<li>&nbsp;constant expected
+<li>&nbsp;( expected
+<li>&nbsp;of expected
+<li>&nbsp;type identifier expected
+<li>&nbsp;. expected
+<li>&nbsp;program expected
+<li>&nbsp;] expected
+<li>&nbsp;) expected
+<li>&nbsp;; expected
+<li>&nbsp;.. expected
+<li>&nbsp;then expected
+<li>&nbsp;unsigned integer expected
+<li>&nbsp;file name expected
+<li>&nbsp;can't open file
+<li>&nbsp;illegal file name
+<li>&nbsp;; or until expected
+<li>&nbsp;missing end statement(s)
+<li>&nbsp;extraneous end statements(s)
+<li>&nbsp;; or case expected
+</ol>
+<p>
+<u>Assembler</u> <u>Error</u> <u>Messages</u>
+<ol>
+<li>&nbsp;A addressing mode error
+<li>&nbsp;L label required with EQU
+<li>&nbsp;M multiply defined symbol
+<li>&nbsp;U undefined expression
+<li>&nbsp;O unrecognized opcode
+<li>&nbsp;S syntax error
+<li>&nbsp;J branch address is out of range
+</ol>
+<p>
+<u>Run-Time</u> <u>Error</u> <u>Messages</u>
+<ol>
+<li>&nbsp;bad subscript
+<li>&nbsp;too many active files (Maximum is 5 files)
+<li>&nbsp;file not active
+<li>&nbsp;set element out of range
+<li>&nbsp;heap overflow
+<li>&nbsp;bad ln(arguement)
+<li>&nbsp;bad exp(arguement)
+<li>&nbsp;read past eof (End of File)
+<li>&nbsp;out of memory
+<li>&nbsp;arithmetic overflow
+</ol>
+</body>
+</html>
