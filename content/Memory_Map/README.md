@@ -6,7 +6,7 @@
   
 |Address|Hex-Address|Name|Description|OS|
 |-------|-----------|----|-----------|--|
-|0,1|$0000,$0001|[LINZBS](LINZBS/README.md)| |A  
+|0,1|$0000,$0001|[LINZBS](LINZBS/README.md)| |A|  
 |0|$0000|[LINFLG](LINFLG/README.md)| |X  
 |1|$0001|[NGFLAG](NGFLAG/README.md)| |X  
 |2,3|$0002,$0003|[CASINI](CASINI/README.md)| |  
@@ -146,14 +146,16 @@
 |252,253|$00FC,$00FD|[FLPTR](FLPTR/README.md)|Points to the user's FP number|  
 |254,255|$00FE,$00FF|[FPTR2](FPTR2/README.md)|Pointer to the user's second FP operation.|  
   
-%%commentbox [^](Memory_MapPage0/README.md) %%  
-### Page 1  
-||adress||hexaddress||NAME||description||OS  
+### Page 1
+  
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 |256-511|$0100-$01FF| |The OS/DOS/BASIC stack |  
   
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
-### Page 2  
-||address||hexaddress||NAME||description||OS  
+### Page 2
+  
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 |512,513|$0200,$0201|[VDSLST](VDSLST/README.md)|Vector to Display List Interrupt routine |  
 |514,515|$0202,$0203|[VPRCED](VPRCED/README.md)| |  
 |516,517|$0204,$0205|[VINTER](VINTER/README.md)| |  
@@ -321,9 +323,9 @@
 |766|$02FE|[DSPFLG](DSPFLG/README.md)| |both  
 |767|$02FF|[SSFLAG](SSFLAG/README.md)| |both  
   
-%%commentbox [^](Memory_MapTOP/README.md) %%  
 ### Page 3  
-||adress||hexaddress||NAME||description||OS  
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--| 
 |768|$0300|[DDEVIC](DDEVIC/README.md)| |both  
 |769|$0301|[DUNIT](DUNIT/README.md)| |both  
 |770|$0302|[DCOMND](DCOMND/README.md)| |both  
@@ -371,15 +373,15 @@
 |1018|$03FA|[GINTLK](GINTLK/README.md)| |X  
 |1019,1020|$3FB,$3FC|[CHLINK](CHLINK/README.md)| |X  
   
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
 ### Page 4  
-||adress||hexaddress||NAME||description||OS  
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 |1021-1151|$03FD-$047F|[CASBUF](CASBUF/README.md)| |both  
 |1152-1279|$0480-$04FF| |128 free bytes|   
-  
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
+
 ### Page 5  
-||address||hexaddress||NAME||description||OS  
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 |1280-1405|$0500-$057D| | |  
 |1406|$057E|[LBPR1](LBPR1/README.md)|LBUFF prefix one|  
 |1407|$057F|[LBPR2](LBPR2/README.md)|LBUFF prefix two|  
@@ -387,15 +389,15 @@
 |1504|$05E0|[PLYARG](PLYARG/README.md)|Polynominal arguments|  
 |1510-1515|$05E6-$05EB|[FPSCR](FPSCR/README.md)|Floating Point scratch pad use|  
 |1516-1535|$05EC-$05FF|[FPSCR1](FPSCR1/README.md)|Floating Point scratch pad use|  
-  
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
+ 
 ### Page 6  
-||address||hexaddress||NAME||description||OS  
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 |1536-1791|$0600-$06FF| |"Page 6" free for user|both  
   
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
 ### Right Cartridge (B) 8K  
-||address||hexaddress||NAME||description||OS  
+
+|Address|Hex-Address|Name|Description|OS| 
 |32768-40959|$8000-$9FFF| | |  
 |40954|$9FFA| |Cartridge Start Address low |  
 |40955|$9FFB| |Cartridge Start Address high |  
@@ -404,9 +406,9 @@
 |40958|$9FFE| |Cartridge Initialization Address low |  
 |40959|$9FFF| |Cartridge Initialization Address high |  
   
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
 ### Left Cartridge (A) 8K  
-||address||hexaddress||NAME||description||OS  
+
+|Address|Hex-Address|Name|Description|OS| 
 |40960-49151|$A000-$BFFF| | |  
 |43234|$A8E2| |[shows revision of BASIC](How_to_find_the_revision_number_of_Atari_Basic/README.md)|  
 |49146|$BFFA| |Cartridge Start Address low |  
@@ -416,9 +418,9 @@
 |49150|$BFFE| |Cartridge Initialization Address low |  
 |49151|$BFFF| |Cartridge Initialization Address high |  
   
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
 ### [GTIA](GTIA/README.md) (CTIA)  
-||adress||hexaddress||NAME||description||OS  
+
+|Address|Hex-Address|Name|Description|OS|
 |53248|$D000|[HPOSP0](HPOSP0/README.md),[M0PF](HPOSP0/README.md)| |both  
 |53249|$D001|[HPOSP1](HPOSP1/README.md),[M1PF](HPOSP1/README.md)| |both  
 |53250|$D002|[HPOSP2](HPOSP2/README.md),[M2PF](HPOSP2/README.md)| |both  
@@ -452,13 +454,14 @@
 |53278|$D01E|[HITCLR](HITCLR/README.md)| |both  
 |53279|$D01F|[CONSOL](CONSOL/README.md)| |both  
 |53280-53503|$D020-$D0FF| |repeats 53248-53279, do not use |  
+
+### Reserved 
   
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
 |53504-53759|$D100-$D1FF| |reserved for future use|B  
   
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
 ### POKEY  
-||address||hexaddress||NAME||description||OS  
+
+|Address|Hex-Address|Name|Description|OS| 
 |53760|$D200|[AUDF1](AUDF1/README.md),[POT0](POT0/README.md)| |  
 |53761|$D201|[AUDC1](AUDC1/README.md),[POT1](POT1/README.md)| |  
 |53762|$D202|[AUDF2](AUDF2/README.md),[POT2](POT2/README.md)| |  
@@ -476,18 +479,18 @@
 |53774|$D20E|[IRQEN](IRQEN/README.md),[IRQST](IRQEN/README.md)| |  
 |53775|$D20F|[SKCTL](SKCTL/README.md),[SKSTAT](SKCTL/README.md)| |  
 |53776-54015|$D210-$D2FF| |repeats 53760-53775, no special use|  
-  
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
+   
 ### PIA  
-||address||hexaddress||NAME||description||OS  
+
+|Address|Hex-Address|Name|Description|OS| 
 |54016|$D300|[PORTA](PORTA/README.md)| |   
 |54017|$D301|[PORTB](PORTB/README.md)| |  
 |54018|$D302|[PACTL](PACTL/README.md)| |  
 |54019|$D303|[PBCTL](PBCTL/README.md)| |  
 |54020-54271|$D304-$D3FF| |repeats 54016-54019, no special use |  
   
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
 ### ANTIC  
+
 ||adress||hexaddress||NAME||description||OS  
 |54272|$D400|[DMACTL](DMACTL/README.md)| |  
 |54273|$D401|[CHACTL](CHACTL/README.md)| |  
@@ -506,21 +509,18 @@
 |54287|$D40F|[NMIST](NMIST/README.md),[NMIRES](NMIST/README.md)| |  
 |54288-54303|$D410-$D41F| |repeats 54272-54287|  
   
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
-||address||hexaddress||NAME||description||OS  
+|Address|Hex-Address|Name|Description|OS| 
 | |$D500-$D5FF| |Any read or write to an address in this range enables the cartridge control line [CCNTL](CCNTL/README.md) on the cartridge interface (same as ATARI 400 and ATARI 800)|B  
   
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
-||address||hexaddress||NAME||description||OS  
+
+|Address|Hex-Address|Name|Description|OS| 
 | |$D600-$D6FF| |reserved for future use|B  
-  
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
-||address||hexaddress||NAME||description||OS  
+
+|Address|Hex-Address|Name|Description|OS| 
 | |$D700-$D7FF| |reserved for future use|B  
-  
-%%commentbox [^](Memory_MapPage_0/README.md) %%  
+
 ### OS ROM  
-||address||hexaddress||NAME||description||OS  
+|Address|Hex-Address|Name|Description|OS| 
 |55296|$D800|[AFP](AFP/README.md)|ASCII to Floating Point (FP) conversion|  
 |55526|$D8E6|[FASC](FASC/README.md)|FP value to ASCII conversion|  
 |55722|$D9AA|[IFP](IFP/README.md)|Integer to FP conversion|  
