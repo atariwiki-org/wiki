@@ -1,16 +1,13 @@
----
-title: The Atari Accountant Series
----
-# The Atari Accountant series, Copyright (C) 1981 by Atari, Inc. and BPI Systems, Inc. and Arthur Young & Co.  
+# The Atari Accountant
+
+Copyright (C) 1981 by Atari, Inc. and BPI Systems, Inc. and Arthur Young & Co.  
+    
   
-  
-  
-  
-The ATARI Accountant brings sophisticated computerized accounting to the small business or professional person and has been priced at $1,499.85. Each of its three components, which are available separately, is priced at $499.95. They include systems for accounts and inventory control. All prices mentioned are manufacturer's suggested retail prices in the U.S. only. The three packages are: General Accounting System CX401, Accounts Receivable System CX402 and Inventory Control System CX403. Each package consists of several diskettes, please see below. The software __requires__ an ATARI 800 Computer, [an Atari 815 Dual Disk](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20815), an Atari 850 Interface Module and an Atari 825 80-Column Printer. Minimum RAM requirement: 48 K  
+The Atari Accountant brings sophisticated computerized accounting to the small business or professional person and has been priced at $1,499.85. Each of its three components, which are available separately, is priced at $499.95. They include systems for accounts and inventory control. All prices mentioned are manufacturer's suggested retail prices in the U.S. only. The three packages are: General Accounting System CX401, Accounts Receivable System CX402 and Inventory Control System CX403. Each package consists of several diskettes, please see below. The software __requires__ an ATARI 800 Computer, [an Atari 815 Dual Disk](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20815), an Atari 850 Interface Module and an Atari 825 80-Column Printer. Minimum RAM requirement: 48 K  
   
 In sum The Atari Accountant Series consists out of 13 SSDD diskettes, which is equivalent to __26 SSSD diskettes__! This makes The Atari Accountant the most expansive Atari program of all times and the largest of it's time. Just box CX401 is found up to now only (2019). Any help in completing the 'The Atari Accountant' is very welcome, anytime, anyplace and everywhere.  
   
-![](attachments/328_.jpg)  
+![](attachments/328.jpg)  
 The Atari Accountant - binder, top view ; thanks to Kay Savetz for taking the picture!  
   
 ## Foreword  
@@ -60,7 +57,7 @@ The General Accounting System is all many business need to automate their accoun
 Estimated availability second quarter 1981  
   
 ![](attachments/401.jpg)  
-The ATARI Accountant - screenshot 2 from General Accounting System; Thank you so much Bill Lange! Great finding! :-)  
+The Atari Accountant - screenshot 2 from General Accounting System; Thank you so much Bill Lange! Great finding! :-)  
   
   
 ## CX402: Accounts Receivable System (4 SSDD Diskettes)  
@@ -70,7 +67,7 @@ The Accounts Receivable System is for businesses with a large volume of active a
 Estimated availability third quarter 1981  
   
 ![](attachments/402.jpg)  
-The ATARI Accountant - screenshot 3 from Accounts Receivable System; Thank you so much Bill Lange! Great finding! :-)  
+The Atari Accountant - screenshot 3 from Accounts Receivable System; Thank you so much Bill Lange! Great finding! :-)  
   
   
 ## CX403: Inventory Control System (5 SSDD Diskettes)  
@@ -80,7 +77,7 @@ The Inventory Control System allows you to monitor a large or rapidly turning in
 Estimated availability third quarter 1981  
   
 ![](attachments/403.jpg)  
-The ATARI Accountant - screenshot 4 from Inventory Control System; Thank you so much Bill Lange! Great finding! :-)  
+The Atari Accountant - screenshot 4 from Inventory Control System; Thank you so much Bill Lange! Great finding! :-)  
   
 ## ATR images  
 __- Originals (softsectored, one index hole):__ taken from a Happy ; __you need an Atari 815 Double Disk Drive to work with these images!__ Each sector #47 is not "feeling" that good... ;-)  
@@ -114,8 +111,8 @@ __- Working versions:__ created by DjayBee from AtariAge ; you __don't(!)__ need
   
 The below manuals can be refer to the amateur league, for ultra professional pdf files, AtariWiki highly recommends the created pdf files by GoodByteXL from AtariAge. You won't get better ones, worldwide! For an example, please see: [ACTION! manual 3rd edition](https://atariwiki.org/wiki/Wiki.jsp?page=Action#section-Action-ManualsAndDocs). On the other hand, sometimes this requires to retype letter by letter the whole book...  
   
-- [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-OCR-Index-Print.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Print.pdf) ; size: 22.4 MB (#) ; (*)  
-- [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-OCR-Index-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Screen.pdf) ; size: 14.5 MB (#) ; (*)  
+- [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-OCR-Index-Print.pdf](../../media/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Print.pdf) ; size: 22.4 MB (#) ; (*)  
+- [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-OCR-Index-Screen.pdf](../../media/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Screen.pdf) ; size: 14.5 MB (#) ; (*)  
 - [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-Original.pdf) ; size: 1.87 GB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)  
 - [The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager's_Companion_Guide-OCR-Print.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager_s_Companion_Guide-OCR-Print.pdf) ; size: 3.7 MB (#) ; (**)  
 - [The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager's_Companion_Guide-OCR-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager_s_Companion_Guide-OCR-Screen.pdf) ; size: 2.8 MB (#) ; (**)  
@@ -126,7 +123,7 @@ The below manuals can be refer to the amateur league, for ultra professional pdf
 - [The_Atari_Accountant-General_Accounting_System_CX401-Warranty_Repair_and_Register-OCR-Print.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Warranty_Repair_and_Register-OCR-Print.pdf) ; size: 347 KB (#)  
 - [The_Atari_Accountant-General_Accounting_System_CX401-Warranty_Repair_and_Register-OCR-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Warranty_Repair_and_Register-OCR-Screen.pdf) ; size: 239 KB (#)  
 - [The_Atari_Accountant-General_Accounting_System_CX401-Warranty,_Repair_&_Register-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-Warranty,_Repair_&_Register-Original.pdf) ; size: 11.2 MB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)  
-- [The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Print.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Print.pdf) ; size: 6.4 MB (#)  
+- [The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Print.pdf](../../media/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Print.pdf) ; size: 6.4 MB (#)  
 - [The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Screen.pdf) ; size: 1.7 MB (#)  
 - [The_Atari_Accountant-General_Accounting_System_CX401-Binder-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-Binder-Original.pdf) ; size: 464.6 MB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)  
 (#) big thank you to Kay Savetz for scanning all the pages at 600 dpi in color, great work ; we owe you one! :-)  
@@ -134,12 +131,12 @@ The below manuals can be refer to the amateur league, for ultra professional pdf
 (*) From 32 GB raw data down to the few MB shown above, with OCR, navigation menu, hyperlinks in the content and index pages. Each hyperlink has an invisible frame around the shown page number. In Adobe Reader the mouse pointer changes, when it is inside the invisible frame. Each formatted page number has the hyperlink to the shown number, so this makes the pdf file an edu-pdf file. Please take into account, that the manual has references to page xiii, which doesn't exist in the manual, to prohibit double page numbering. Therefore, page xiii matches to page 1, page xiv to page 2 and page xv to page 3. Further, there are up to 5 different hyperlinks in just one row, please see the colored arrows below:  
   
 ![](attachments/up_to_5_links_in_one_row.jpg)  
-The ATARI Accountant - General Accounting System - CX401 - User's Manual - hyperlinks in the index pages with frames made visible  
+The Atari Accountant - General Accounting System - CX401 - User's Manual - hyperlinks in the index pages with frames made visible  
   
 (**) With OCR, navigation menu and hyperlinks in the content pages. Each hyperlink has an invisible frame around the shown page number. In Adobe Reader the mouse pointer changes, when it is inside the invisible frame. Each formatted page number has the hyperlink to the shown number, so this makes the pdf file an edu-pdf file. The Business Manager's Companion Guide was made by Arthur Young & Company, please the picture below:  
   
-![](attachments/Arthur_Young_and_Company2.jpg)  
-The ATARI Accountant - Business Manager's Companion Guide - description from Arthur Young & Company  
+![](attachments/Arthur_Young_and_Company.jpg)  
+The Atari Accountant - Business Manager's Companion Guide - description from Arthur Young & Company  
   
 ## Afterword  
   
@@ -194,31 +191,31 @@ AtariWiki would like to thank the following persons for the help in this very sp
 - [Why inverted data? - Percom at88 s1pd](http://atariage.com/forums/topic/224072-percom-at88-s1pd/)  
   
 ## Images  
-![](attachments/329_.jpg)  
+![](attachments/329.jpg)  
 The Atari Accountant - binder, aft view ; thanks to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com) and Kay Savetz for scanning!  
   
-![](attachments/332_.jpg)  
+![](attachments/332.jpg)  
 The Atari Accountant - box open 1 ; thanks to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com) and Kay Savetz for scanning!  
   
-![](attachments/333_.jpg)  
+![](attachments/333.jpg)  
 The Atari Accountant - box open 2 ; thanks to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com) and Kay Savetz for scanning!  
   
 ![](attachments/2.jpg)  
 The Atari Accountant - box open 3 ; thanks to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com) and Kay Savetz for scanning!  
   
-![](attachments/334_.jpg)  
+![](attachments/334.jpg)  
 The Atari Accountant box CX401-1 ; thanks to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com) and Kay Savetz for scanning!  
   
-![](attachments/3_.jpg)  
+![](attachments/3.jpg)  
 The Atari Accountant box CX401-2 ; thanks to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com) and Kay Savetz for scanning!  
   
 ![](attachments/4.jpg)  
 The Atari Accountant box CX401-3 ; thanks to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com) and Kay Savetz for scanning!  
   
-![](attachments/330_.jpg)  
+![](attachments/330.jpg)  
 The Atari Accountant - Diskette Holder 1 ; thanks to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com) and Kay Savetz for scanning!  
   
-![](attachments/331_.jpg)  
+![](attachments/331.jpg)  
 The Atari Accountant - Diskette Holder 2 ; thanks to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com) and Kay Savetz for scanning!  
   
 ![](attachments/Disk1.jpg)  
@@ -242,21 +239,21 @@ The Atari Accountant - Diskette Label ; Giga thanks goes to Curt Vendel from the
 ![](attachments/atari-815.png)  
 The ATARI 815 Double Disk Drive ; The Atari 815 Dual Disk Drive was an absolute beast. It wasn’t just two Atari 810 single-sided, single-density (SSSD), 90K capacity, 5 ¼ inch drive mechanisms in one case, it was two single-sided, double-density (SSDD), 180K capacity drive mechanisms. It required Atari CX8202 certified double-density 5 ¼ floppy diskettes and the __Atari DOS 2.0D__ disk operating system.  
   
-![](attachments/DOS_II_2.0D_.jpg)  
+![](attachments/DOS_II_2.0D.jpg)  
 __Atari DOS 2.0D__ disk operating system - startscreen  
   
 ![](attachments/The_Atari_Accountant_CX401-1.jpg)  
-The ATARI Accountant - screenshot 1  
+The Atari Accountant - screenshot 1  
   
 ![](attachments/The_Atari_Accountant_CX401-2.jpg)  
-The ATARI Accountant - screenshot 2  
+The Atari Accountant - screenshot 2  
   
 ## ADs  
-![](attachments/Atari_Accountant_.jpg)  
+![](attachments/Atari_Accountant.jpg)  
 The Atari Accountant description  
   
 ![](attachments/ad8.jpg)  
-The ATARI Accountant in a price list of the early 80's ; Thank you so much Bill Lange! Great finding! :-)  
+The Atari Accountant in a price list of the early 80's ; Thank you so much Bill Lange! Great finding! :-)  
   
 ![](attachments/Atari_Preisliste.gif)  
 Atari price list from 1981  
@@ -267,26 +264,26 @@ The Atari Accountant - Ad from October 1981 about the end of the Atari Accountan
 ![](attachments/End_Home_Accounting_System.jpg)  
 The Atari Accountant - Ad from November 1981 about the end of the Atari Accountant ; Giga thanks goes to Bill Lange for finding the rare commercial! Thank you so much Bill! Great finding! :-)  
   
-![](attachments/Accountant-Bookkeeper_.jpg)  
+![](attachments/The_Atari_Accountant-Bookkeeper.jpg)  
 The Atari Accountant - Ad from early 1982 about the end of the Atari Accountant ; Giga thanks goes to Bill Lange for finding the rare commercial! Thank you so much Bill! Great finding! :-)  
   
 ![](attachments/ad1.jpg)  
-The ATARI Accountant - ad 1 ; Thank you so much Bill Lange! Great finding! :-)  
+The Atari Accountant - ad 1 ; Thank you so much Bill Lange! Great finding! :-)  
   
 ![](attachments/ad2.jpg)  
-The ATARI Accountant - ad 2 ; Thank you so much Bill Lange! Great finding! :-)  
+The Atari Accountant - ad 2 ; Thank you so much Bill Lange! Great finding! :-)  
   
 ![](attachments/ad3.jpg)  
-The ATARI Accountant - ad 3 ; Thank you so much Bill Lange! Great finding! :-)  
+The Atari Accountant - ad 3 ; Thank you so much Bill Lange! Great finding! :-)  
   
 ![](attachments/ad4.jpg)  
-The ATARI Accountant - ad 4 ; Thank you so much Bill Lange! Great finding! :-)  
+The Atari Accountant - ad 4 ; Thank you so much Bill Lange! Great finding! :-)  
   
 ![](attachments/ad5.png)  
-The ATARI Accountant - ad 5 ; Thank you so much Bill Lange! Great finding! :-)  
+The Atari Accountant - ad 5 ; Thank you so much Bill Lange! Great finding! :-)  
   
 ![](attachments/ad6.jpg)  
-The ATARI Accountant - sample printouts ; Thank you so much Bill Lange! Great finding! :-)  
+The Atari Accountant - sample printouts ; Thank you so much Bill Lange! Great finding! :-)  
   
 ![](attachments/ad9.jpg)  
-The ATARI Accountant - ad 6 ; Thank you so much Bill Lange! Great finding! :-)  
+The Atari Accountant - ad 6 ; Thank you so much Bill Lange! Great finding! :-)  
