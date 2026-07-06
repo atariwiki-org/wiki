@@ -5,7 +5,8 @@ title: Table of Modes and Screen Format
   
 This is the corrected version of 'Table of Modes and Screen Format' taken from the Atari Basic Errata  
   
-||Gr.Mode||Mode Type||Hor. Columns||Vert. Rows Split Screen||Vert. Rows Full Screen||Number of Color Regs.||Split Screen 1)||RAM Required (Bytes) Full Screen 1)||RAM required ScreenMem/ScreenMen w/ Split Screen  
+|Gr.Mode|Mode Type|Hor. Columns|Vert. Rows Split Screen|Vert. Rows Full Screen|Number of Color Regs.|Split Screen 1)|RAM Required (Bytes) Full Screen 1)|RAM required ScreenMem/ScreenMen w/ Split Screen|
+|-------|---------|------------|-----------------------|----------------------|---------------------|---------------|-----------------------------------|------------------------------------------------|
 |0|Text|40|-|24|1,5|-|992|dec:960/- hex:$03c0/-  
 |1|Text|20|20|24|5|674|672|dec:480/400 hex:$01E0/$0190  
 |2|Text|20|10|12|5|424|420|dec:240/200 hex:$00F0/$00C8  
@@ -20,8 +21,8 @@ Note 1) RAM required includes RAM for Display List
   
   
 ## Picture  
-![](attachments/Table+of+Modes+and+Screen+Format-corrected.jpg)  
-'Table of Modes and Screen Format' taken from the Atari Basic Errata  
+![](attachments/Table_of_Modes_and_Screen_Formats-Corrected.jpg)  
+'Table of Modes and Screen Formats' taken from the Atari Basic Errata  
   
 ---
-see [Color Topics](../Color_topics/README.md), [topic_list](../topic_list/README.md), [Display List Instruction Table](../Display_list_instruction_table/README.md)  
+see [Color Topics](Color_topics/README.md), [topic_list](topic_list/README.md), [Display List Instruction Table](Display_list_instruction_table/README.md)  
