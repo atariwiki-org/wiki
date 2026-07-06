@@ -1,9 +1,6 @@
----
-title: U.S. History CX6001
----
 # U.S. History CX6001  
 ## Content:  
-![](attachments/U.S.+History+CX6001.jpg)  
+![](attachments/U.S._History_CX6001.jpg)  
 Content of U.S. History CX6001  
   
   

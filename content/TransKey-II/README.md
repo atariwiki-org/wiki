@@ -1,9 +1,8 @@
----
-title: TransKey-II
----
+# TransKey-II
+
 An IBM keyboard and mouse to Atari interface via POKEY/GTIA connection  
   
-[http://atariage.com/forums/topic/240686-transkey-ii-in-development/](http://atariage.com/forums/topic/240686-transkey-ii-in-development/)  
+[https://forums.atariage.com/topic/240686-transkey-ii-in-development/] 
   
 ---
-see also: [Keyboard_topics](../Keyboard_topics/README.md)  
+see also: [Keyboard_topics](../Memory_Map/Keyboard_topics/README.md)  
