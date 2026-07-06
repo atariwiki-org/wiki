@@ -2,9 +2,10 @@
   
 [Differences Atari 400/800 - 1200XL - 600/800XL](DiffOldOs2XL/README.md)  
   
-### Page 0  
+### Page 0
+  
 |Address|Hex-Address|Name|Description|OS|
-|-------|-----------|----|-----------|A |
+|-------|-----------|----|-----------|--|
 |0,1|$0000,$0001|[LINZBS](LINZBS/README.md)| |A  
 |0|$0000|[LINFLG](LINFLG/README.md)| |X  
 |1|$0001|[NGFLAG](NGFLAG/README.md)| |X  
@@ -565,7 +566,7 @@
 |58472|$E468|[SENDEV](SENDEV/README.md)|Send enable routine, OS use only|  
 |58475|$E46B|[INTINV](INTINV/README.md)|Interrupt handler initialisation, OS use only|  
 |58478|$E46E|[CIOINV](CIOINV/README.md)|CIO utility initialisation, OS Use only|  
-|58481|$E471|[BLKBDV](BLKBDV/README.md)|Blackbaord Mode Entry|  
+|58481|$E471|[BLKBDV](BLKBDV/README.md)|Blackboard Mode Entry|  
 |58484|$E474|[WARMSV](WARMSV/README.md)|Warm Start Vector|  
 |58487|$E477|[COLDSV](COLDSV/README.md)|Cold Start Vector|  
 |58490|$E47A|[RBLOKV](RBLOKV/README.md)|reads block from C:|  
@@ -574,7 +575,7 @@
 |58499|$E483|[SLFTSV](SLFTSV/README.md)| |X  
 |58502|$E486|[PHENTV](PHENTV/README.md)| |X  
 |58505|$E489|[PHULNV](PHULNV/README.md)| |X  
-|58508|$E48C|[PHINIV]| |X  
+|58508|$E48C|[PHINIV](PHINIV/README.md)| |X  
 |58511|$E48F|[GPDVV](GPDVV/README.md)| |X  
 | | | | |  
 | | | | |to be completed ...  
