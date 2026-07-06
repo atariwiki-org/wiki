@@ -397,7 +397,8 @@
   
 ### Right Cartridge (B) 8K  
 
-|Address|Hex-Address|Name|Description|OS| 
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 |32768-40959|$8000-$9FFF| | |  
 |40954|$9FFA| |Cartridge Start Address low |  
 |40955|$9FFB| |Cartridge Start Address high |  
@@ -408,7 +409,8 @@
   
 ### Left Cartridge (A) 8K  
 
-|Address|Hex-Address|Name|Description|OS| 
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--| 
 |40960-49151|$A000-$BFFF| | |  
 |43234|$A8E2| |[shows revision of BASIC](How_to_find_the_revision_number_of_Atari_Basic/README.md)|  
 |49146|$BFFA| |Cartridge Start Address low |  
@@ -421,6 +423,7 @@
 ### [GTIA](GTIA/README.md) (CTIA)  
 
 |Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 |53248|$D000|[HPOSP0](HPOSP0/README.md),[M0PF](HPOSP0/README.md)| |both  
 |53249|$D001|[HPOSP1](HPOSP1/README.md),[M1PF](HPOSP1/README.md)| |both  
 |53250|$D002|[HPOSP2](HPOSP2/README.md),[M2PF](HPOSP2/README.md)| |both  
@@ -456,12 +459,14 @@
 |53280-53503|$D020-$D0FF| |repeats 53248-53279, do not use |  
 
 ### Reserved 
-  
+|Address|Hex-Address|Name|Description|OS| 
+|-------|-----------|----|-----------|--|
 |53504-53759|$D100-$D1FF| |reserved for future use|B  
   
 ### POKEY  
 
-|Address|Hex-Address|Name|Description|OS| 
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 |53760|$D200|[AUDF1](AUDF1/README.md),[POT0](POT0/README.md)| |  
 |53761|$D201|[AUDC1](AUDC1/README.md),[POT1](POT1/README.md)| |  
 |53762|$D202|[AUDF2](AUDF2/README.md),[POT2](POT2/README.md)| |  
@@ -482,7 +487,8 @@
    
 ### PIA  
 
-|Address|Hex-Address|Name|Description|OS| 
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 |54016|$D300|[PORTA](PORTA/README.md)| |   
 |54017|$D301|[PORTB](PORTB/README.md)| |  
 |54018|$D302|[PACTL](PACTL/README.md)| |  
@@ -491,7 +497,8 @@
   
 ### ANTIC  
 
-||adress||hexaddress||NAME||description||OS  
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 |54272|$D400|[DMACTL](DMACTL/README.md)| |  
 |54273|$D401|[CHACTL](CHACTL/README.md)| |  
 |54274,54275|$D402,$D403|[DLISTL](DLISTL/README.md),[DLISTH](DLISTL/README.md)| |  
@@ -508,19 +515,25 @@
 |54286|$D40E|[NMIEN](NMIEN/README.md)| |  
 |54287|$D40F|[NMIST](NMIST/README.md),[NMIRES](NMIST/README.md)| |  
 |54288-54303|$D410-$D41F| |repeats 54272-54287|  
+ 
+### Cartridge Port
   
-|Address|Hex-Address|Name|Description|OS| 
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 | |$D500-$D5FF| |Any read or write to an address in this range enables the cartridge control line [CCNTL](CCNTL/README.md) on the cartridge interface (same as ATARI 400 and ATARI 800)|B  
+ 
+### Reserved
   
 
-|Address|Hex-Address|Name|Description|OS| 
-| |$D600-$D6FF| |reserved for future use|B  
-
-|Address|Hex-Address|Name|Description|OS| 
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
+| |$D600-$D6FF| |reserved for future use|B
 | |$D700-$D7FF| |reserved for future use|B  
 
-### OS ROM  
-|Address|Hex-Address|Name|Description|OS| 
+### OS ROM
+
+|Address|Hex-Address|Name|Description|OS|
+|-------|-----------|----|-----------|--|
 |55296|$D800|[AFP](AFP/README.md)|ASCII to Floating Point (FP) conversion|  
 |55526|$D8E6|[FASC](FASC/README.md)|FP value to ASCII conversion|  
 |55722|$D9AA|[IFP](IFP/README.md)|Integer to FP conversion|  
