@@ -6,9 +6,9 @@ Version 2.25, (C) Copyright 1984, 1985 Madison Micro and Optimized Systems Softw
 - [The_Writer_s_Tool.car](attachments/The_Writer_s_Tool.car)  
   
 ## ATR-Images:  
-- [The_Writer_s_Tool_Master_Disk.atr](attachments/The_Writer_s_Tool-Master_Disk.atr)  
-- [The_Writer_s_Tool_Extension.atr](attachments/The_Writer_s_Tool-Extension_Disk.atr)  
-- [The_Writer_s_Tool_Dictionary.atr](attachments/The_Writer_s_Tool-Dictionary_Disk.atr)  
+- [The_Writer_s_Tool-Master_Disk.atr](attachments/The_Writer_s_Tool-Master_Disk.atr)  
+- [The_Writer_s_Tool-Extension.atr](attachments/The_Writer_s_Tool-Extension_Disk.atr)  
+- [The_Writer_s_Tool-Dictionary.atr](attachments/The_Writer_s_Tool-Dictionary_Disk.atr)  
   
 ## Manual:  
 - [The Writer's Tool, Version 2.2 Manual](../../media/The_Writer_s_Tool/attachments/The_Writer_s_Tool-Version-2.2_Manual_with_bookmarks.pdf) ; size: 22 MB ; mega-thanks goes to MrFish from AtariAge for creating such an excellent manual with links! :-)))  
