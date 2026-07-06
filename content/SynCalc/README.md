@@ -1,7 +1,6 @@
----
-title: SynCalc
----
-# SynCalc Copyright (C) 1983, 1985 Synapse Software Corp. and Mike Silva  
+# SynCalc
+
+Copyright (C) 1983, 1985 Synapse Software Corp. and Mike Silva  
   
   
 SynCalc from Synapse and programmed by Mike Silva is the(!) spreadsheet for the Atari 8 bit. No program of that kind reaches the performance SynCalc does.  
@@ -20,39 +19,44 @@ Versions:
 - 1983 Version, works with all models and Axlon (up to 256k) compatiable RAM expansions, ATX available  
 - 1985 Version, works with all models and Axlon (up to 256k) and XE (up to 64k) compatible RAM expansions, ATX available  
 - 1993 Version, works only with XL/XE models and XE (up to 256k) compatiable RAM expansions ATR available  
+
 ## 1983 Version  
 The 1983 version was the first one, it had some bugs, but was and still is marvelous. The only bug we know is as follows:  
 if you have a value in the 255th line and insert one line more, the Atari crashes and your work is lost. In my opinion a bug we can live with. __If you have a bug-list of the 1983 version, please let us know. Your help is very much appreciated in this case.__  
   
 ## 1985 Version  
-The 1985 version should be free of bugs, further, it was sold with a template disk, please see below. This version uses extended RAM, if available. For example, in an Atari 130XE there is more than 80 KB RAM available. But the user has to take care, because the limit for storing data on diskette is 90 KB. __The goal should be, to create an atr-image for all Ataris (Classic, XL, XE) free of bugs and just limited to the installed RAM. Further, to get rid of the 90 KB data storage limit.__  
+The 1985 version should be free of bugs, further, it was sold with a templates disk, please see below. This version uses extended RAM, if available. For example, in an Atari 130XE there is more than 80 KB RAM available. But the user has to take care, because the limit for storing data on diskette is 90 KB. __The goal should be, to create an atr-image for all Ataris (Classic, XL, XE) free of bugs and just limited to the installed RAM. Further, to get rid of the 90 KB data storage limit.__  
   
-## 1993 Version  
-  
+## 1993 Version
 Appears to be based on the 1983 version. All "STA $CFFF" bank select statements are replaced by "JSR $0101", pointing to a small subroutine that maps the Axlon bank number to and XE bank in PORTB.  
   
-||Port B |FF |EF|EB|E7|E3|AF|AB|A7|A3|8F|8B|87|83|FF|FF  
-||Model  | 800/XL |130 XE |130 XE | 130 XE | 130 XE  | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | n/a | n/a  
-|| Total RAM (k) | 48/64  |128    |128    | 128    | 128     | 192   | 192   | 192   | 192   | 256   | 256   | 256   | 256   | n/a | n/a  
+|Port B |FF|EF|EB|E7|E3|AF|AB|A7|A3|8F|8B|87|83|FF|FF|
+|-------|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|Model  | 800/XL |130 XE |130 XE | 130 XE | 130 XE  | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | n/a | n/a  
+| Total RAM (k) | 48/64  |128    |128    | 128    | 128     | 192   | 192   | 192   | 192   | 256   | 256   | 256   | 256   | n/a | n/a  
   
 See also [http://atariage.com/forums/topic/208094-who-can-crack-this-one](http://atariage.com/forums/topic/208094-who-can-crack-this-one).  
+
 ## Manuals  
-- [SynCalc-1983 Version](attachments/Synapse_SynCalc_1983.pdf) ; size: 7,6 MB  
-- [SynCalc-1985 Version](attachments/Synapse_SynCalc_1985.pdf) ; size: 13,3 MB  
-- [SynCalc Template Disk](attachments/SynCalc_Template_Disk_Synapse.pdf) ; size: 8 MB  
+- [SynCalc - 1983 Version](../../media/SynCalc/attachments/SynCalc-1983.pdf) ; size: 7,6 MB  
+- [SynCalc - 1985 Version](../../media/SynCalc/attachments/SynCalc-1985.pdf) ; size: 13,3 MB  
+- [SynCalc - 1985 Templates Disk](../../media/SynCalc/attachments/SynCalc-1985-Templates_Disk.pdf) ; size: 8 MB  
+
 ## ATR images  
-- [SynCalc_1983Synapse_SoftwareUS.atx](attachments/SynCalc_1983Synapse_SoftwareUS.atx) ; atx-image of the 1983 version which runs properly, icluding the VisiCalc import program, which is missed on nearly all(!) versions  
-- [SynCalc_1985Synapse_SoftwareUS.atx](attachments/SynCalc_1985Synapse_SoftwareUS.atx) ; atx-image of the 1985 version which runs properly, icluding the VisiCalc import program, which is missed on nearly all(!) versions  
+- [SynCalc-1983-Synapse_Software-US.atx](attachments/SynCalc-1983-Synapse_Software-US.atx) ; atx-image of the 1983 version which runs properly, icluding the VisiCalc import program, which is missed on nearly all(!) versions  
+- [SynCalc-1985-Synapse_Software-US.atx](attachments/SynCalc-1983-Synapse_Software-US.atx) ; atx-image of the 1985 version which runs properly, icluding the VisiCalc import program, which is missed on nearly all(!) versions  
 - [SynCalc 128K atx-version](attachments/SynCalc_128K_1985.atx) ; atx-image which runs on Altirra, but not with the Atari800MacX emulator (2016)  
 - [SynCalc 128K atr-version](attachments/SynCalc_128K_1993.atr) ; atr-image which runs on all emulators, but not verified yet regarding reliable calculations  
-- [SynCalc Template Disk](attachments/Syncalc_Template_original.atr) ; atr-image from the original diskette  
+- [SynCalc Templates Disks Original](attachments/SynCalc-Templates_Disk-Original.atr) ; atr-image from the original diskette  
 - [SynCalc Data Disk.atr](attachments/SynCalc_Data_Disk.atr) ; atr-image with some examples and templates  
   
 - [SynCalc Classic for 400-800 Ataris](attachments/SynCalc_Classic.atr) ; not yet tested, use on your own risk  
 - [SynCalc for XL-XE-Ataris](attachments/SynCalc_XL-XE.atr) ; not yet tested, use on your own risk  
 - [SynCalc with OSS DOS XL 2.30 as file version](attachments/SynCalc_with_OSS_DOS_XL_2.30.atr) ; not yet tested, use on your own risk  
+
 ## RAW files from the Kryoflux  
-- [Kryoflux-raw-no-flippy.zip](attachments/Kryoflux-raw-no-flippy.zip) ; size: 22.9 MB ; A very big thank you goes to Freddy Offenga for creating the raw files from our original SynCalc 128K diskette. Freddy, great work! Thank you so much! :-)  
+- [SynCalc-Kryoflux-raw-no-flippy.zip](../../media/SynCalc/attachments/SynCalc-Kryoflux-raw-no-flippy.zip) ; size: 22.9 MB ; A very big thank you goes to Freddy Offenga for creating the raw files from our original SynCalc 128K diskette. Freddy, great work! Thank you so much! :-)  
+
 ## RAM configuration; findings from JAC! from AtariAge  
 __From p. 5 of the documenation:__  
 "What You Will Need  
@@ -68,9 +72,10 @@ You can also use the Axlon Rampower 128K or Mosaic 64K Select to increase your c
   
 __From p. 9 of the documenation:__  
 "NOTE: The memory indicator will be nnn/NNN where nnn = amount of memory used in K bytes and NNN = total amount of memory available in K bytes (1 K byte is equal to 1024 characters). When you notice that the memory indicator shows that the worksheet is becoming full, you should save the worksheet to disk and then reload it. This may free up additional memory space. The amount of memory will vary according to the configuration of your computer."  
+
   
-  
-|| Hardware || Base RAM || Expansion || Free Memory in 1983 Version || Free Memory in 1985 Version || Free Memory in 1993 Version  
+| Hardware | Base RAM | Expansion | Free Memory in 1983 Version | Free Memory in 1985 Version | Free Memory in 1993 Version |
+|--------------|-----|--------------|------|------|---- | 
 | Atari 800    | 48k | none         |  21k |  21k | n/a  
 | Atari 800    | 52k | none         |  25k |  25k | n/a  
 | Atari 800    | 48k | 64k Axlon    |  69k |  69k | n/a  
@@ -177,7 +182,7 @@ SynCalc VC->SC option selected
 ![](attachments/2.jpg)  
 SynCalc asking for the program master disk  
   
-![](attachments/3_.jpg)  
+![](attachments/3.jpg)  
 SynCalc failed to load a program from the program master disk  
   
 Further, if you have really hard VisiCalc spreadsheets and the 1985 version even in original form fails to import, try the 1983 version, which works like a charm in these very rare cases.  
@@ -249,23 +254,23 @@ SynCalc 1985 version-back of box
 ![](attachments/SynCalc_128K-3.jpg)  
 SynCalc 1985 version-side of box  
   
-![](attachments/templates1.jpg)  
-SynCalc Template Diskette - image 1 ; thanks to Atarimania  
+![](attachments/SynCalc-Templates_Disk-1.jpg)  
+SynCalc Templates Diskette - image 1 ; thanks to Atarimania  
   
-![](attachments/templates2.jpg)  
-SynCalc Template Diskette - image 2 ; thanks to Atarimania  
+![](attachments/SynCalc-Templates_Disk-2.jpg)  
+SynCalc Templates Diskette - image 2 ; thanks to Atarimania  
   
-![](attachments/SynCalc_Templates_Disk_5.jpg)  
-SynCalc Template Diskette - image 3 ; thanks to RHOD  
+![](attachments/SynCalc-Templates_Disk-5.jpg)  
+SynCalc Templates Diskette - image 3 ; thanks to RHOD  
   
-![](attachments/SynCalc_Templates_Disk_4.jpg)  
-SynCalc Template Diskette - ad 1  
+![](attachments/SynCalc-Templates_Disk-4.jpg)  
+SynCalc Templates Diskette - ad 1  
   
-![](attachments/SynCalc_Templates_Disk_3.jpg)  
-SynCalc Template Diskette - ad 2  
+![](attachments/SynCalc-Templates_Disk-3.jpg)  
+SynCalc Templates Diskette - ad 2  
   
-![](attachments/syncalc_1985_ad.jpg)  
+![](attachments/SynCalc-1985-Ad.jpg)  
 SynCalc ad ; thanks to Atarimania  
   
-![](attachments/ad.jpg)  
+![](attachments/SynCalc_Ad.jpg)  
 SynCalc ad from eBay  
