@@ -15,7 +15,7 @@ Requires 24 KB minimum of RAM, Atari Basic and Atari Disk drive.
 - [Stock Charting Data Diskette 2](attachments/Stock_Charting_Data_Diskette.atr) ; Stock Charting Data Diskette from Wade Ripkowski, already formatted with some other data  
 ## Manuals  
 - [Stock_Charting_CX8108_Version_1.pdf](attachments/Stock_Charting_CX8108_Version_1.pdf) ; Stock Charting CX8111 manual with blank pages from the original manual ; size: 2.2 MB  
-- [Stock_Charting_CX8108_Version_2.pdf](attachments/Stock_Charting_CX8108_Version_2.pdf) ; Stock Charting CX8111 manual without blank pages from the original manual ; size: 7 MB  
+- [Stock_Charting_CX8108_Version_2.pdf](../../media/Stock_Charting/attachments/Stock_Charting_CX8108_Version_2.pdf) ; Stock Charting CX8111 manual without blank pages from the original manual ; size: 7 MB  
 ## Very important  
 The original program could not handle todays high stock volumes. Therefore, Wade Ripkowski did a deep investigation into the source code, could find out, what has to be changed and offered us a version, which works even toady (please see above). Thank you so much Wade for preserving and adapting the program to the modern times! For further information, please visit Wade's site:  
 - [Inverse ATASCII](http://inverseatascii.info/2015/02/10/s1e10-atari-stock-charting/)  

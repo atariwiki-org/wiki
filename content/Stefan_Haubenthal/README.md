@@ -1,12 +1,11 @@
----
-title: Stefan Haubenthal
----
+# Stefan Haubenthal
+
 ![](attachments/Koala.png)  
 Meine Hardware: [XEP80](../XEP80/README.md), [CX21](http://atariki.krap.pl/index.php/CX21), [CX75](http://www.atariarchives.org/ecp/chapter_6.php) [https://www.atariarchives.org/creativeatari/Build_Your_Own_Light_Pen.php](https://www.atariarchives.org/creativeatari/Build_Your_Own_Light_Pen.php)  
   
 [http://atariki.krap.pl/index.php/Strona_g%C5%82%C3%B3wna](http://atariki.krap.pl/index.php/Strona_g%C5%82%C3%B3wna)  
   
-[Converting_FIG-Forth_Programs_to_Forth-83](../Converting_FIG-Forth_Programs_to_Forth-83/README.md)  
+[Converting_FIG-Forth_Programs_to_Forth-83](../Languages/Forth/FigForth/Converting_FIG-Forth_Programs_to_Forth-83/README.md)  
   
 [Rastaconverter](../Rastaconverter/README.md) [PLATO](../PLATO/README.md) [C65Manual-Text](../C65Manual-Text/README.md)  
   
