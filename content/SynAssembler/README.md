@@ -5,7 +5,7 @@ title: Synapse Assembler
   
   
 ## Introduction  
-![](attachments/synapse.gif)  
+![](attachments/Synapse.gif)  
 SYNAPSE Software  
   
 SYNASSEMBLER is a convenient and powerful tool for software development on the Atari computer system. The assembler uses standard 6502 mnemonics and syntax, and includes many useful features for creating, editing, assembling and testing your assembly language programs. Now assembly language programming is almost as easy as programming in BASIC.  
@@ -34,7 +34,7 @@ Here is a summary of the most exciting features:
 Synassembler requires 48K of RAM and one disk drive to operate. Very large programs can now be developed, using the "INCLUDE" and "TARGET FILE" capabilities. These allow the assembly of multiple source files, and direct storage of object code on binary files.  
   
 ## Review  
-Synassembler  
+SynAssembler  
 Synapse Software  
 5327 Jacuzzi St., Suite 1  
 Richmond, CA 94804  
@@ -79,21 +79,21 @@ Synapse Assembler has been written by Steve Hales. Steve Hales was and still is 
 - [Interview with Ihor Wolosenko](http://mrbacardi.000space.com/games/Synapse/Ihor_Wolosenko.html) ; thanks to Mr. Bacardi  
   
 ## Manual  
-- [Synapse_Assembler_Manual](../Synapse_Assembler_Manual/README.md) ; online manual  
-- [Synapse Assembler Manual](attachments/Synassembler-Manual.pdf) ; size: 172 KB; pdf-file  
-- [Synapse Assembler Manual](attachments/Synassembler-Manual.doc) ; size: 197 KB; doc-file  
-- [Synapse Assembler Manual](attachments/SynAssembler-Manual-OCR-Bookmarks.pdf) ; size: 225 KB; pdf-file with OCR and bookmarks  
-- [Synassembler_Original_Manual_Synapse.pdf](attachments/Synassembler_Original_Manual_Synapse.pdf) ; size: 6.8 MB ; 62 pages, thank you so much Allan Bushman for preserving this original manual! :-)))  
+- [SynAssembler_Manual](SynAssembler_Manual/README.md) ; online manual  
+- [SynAssembler Manual](attachments/SynAssembler-Manual.pdf) ; size: 172 KB; pdf-file  
+- [SynAssembler Manual](attachments/SynAssembler-Manual.doc) ; size: 197 KB; doc-file  
+- [SynAssembler Manual](attachments/SynAssembler-Manual-OCR-Bookmarks.pdf) ; size: 225 KB; pdf-file with OCR and bookmarks  
+- [SynAssembler-Original_Manual.pdf](../../media/SynAssembler/attachments/SynAssembler-Original_Manual.pdf) ; size: 6.8 MB ; 62 pages, thank you so much Allan Bushman for preserving this original manual! :-)))  
   
 ## CAR-Images  
-- [Synassembler.car](attachments/Synassembler.car) ; cartridge image for Atari 400-800 with OS B  
-- [Synassembler_XL.car](attachments/Synassembler_XL.car) ; cartridge image for Atari XL-XE  
+- [Synassembler.car](attachments/SynAssembler.car) ; cartridge image for Atari 400-800 with OS B  
+- [Synassembler_XL.car](attachments/SynAssembler_XL.car) ; cartridge image for Atari XL-XE  
   
 ## ROM-Images  
-- [Synassembler.rom](attachments/Synassembler.rom) ; rom image for Atari 400-800 with OS B; md5: e5dd9f57ff9b807d52a99869dfbfcc17  
-- [Synassembler_XL.rom](attachments/Synassembler_XL.rom) ; rom image for Atari XL-XE; md5: 7375df1158ad81f52160f417a49ff78e  
-- [Synassemblerclassic.zip](attachments/Synassemblerclassic.zip) ; rom images for Atari 400-800 with OS B with different themes  
-- [SynassemblerXL-XE.zip](attachments/SynassemblerXL-XE.zip) ; rom images for Atari XL-XE with different themes  
+- [Synassembler.rom](attachments/SynAssembler.rom) ; rom image for Atari 400-800 with OS B; md5: e5dd9f57ff9b807d52a99869dfbfcc17  
+- [Synassembler_XL.rom](attachments/SynAssembler_XL.rom) ; rom image for Atari XL-XE; md5: 7375df1158ad81f52160f417a49ff78e  
+- [Synassemblerclassic.zip](attachments/SynAssemblerclassic.zip) ; rom images for Atari 400-800 with OS B with different themes  
+- [SynassemblerXL-XE.zip](attachments/SynAssemblerXL-XE.zip) ; rom images for Atari XL-XE with different themes  
   
 ## ATR-Image  
 - [SynAssembler.atr](attachments/SynAssembler.atr) ; atr image for all Atari computers ; with special DOS for direct jump back to the program  
@@ -116,33 +116,35 @@ There is a basic program in [ANTIC VOL. 3, NO. 2 / JUNE 1984 / PAGE 38](http://w
 - [Synapse_Assembler_Atari_800_OS_Equates](../Synapse_Assembler_Atari_800_OS_Equates/README.md)  
   
 ## Pictures and Themes  
-![](attachments/disk.jpg)  
+![](attachments/SynAssembler-Disk.jpg)  
 SynAssembler diskette  
   
 ![](attachments/SynAssembler.jpg)  
 SynAssembler startscreen-original after starting with $CA in $02C5 and $C2 in $02C6  
   
-![](attachments/BLUE.jpg)  
+![](attachments/SynAssembler-Background-Blue.jpg)  
 SynAssembler after starting with $CA in $02C5 and $94 in $02C6  
   
-![](attachments/DARK_BLUE.jpg)  
+![](attachments/SynAssembler-Background-Dark_Blue.jpg)  
 SynAssembler after starting with $CA in $02C5 and $90 in $02C6  
   
-![](attachments/BLACK.jpg)  
+![](attachments/SynAssembler-Background-Black.jpg)  
 SynAssembler after starting with $0F in $02C5 and $00 in $02C6  
   
-![](attachments/WHITE.jpg)  
+![](attachments/SynAssembler-Background-White.jpg)  
 SynAssembler after starting with $00 in $02C5 and $0F in $02C6  
   
-![](attachments/RED.jpg)  
+![](attachments/SynAssembler-Background-Red.jpg)  
 SynAssembler after starting with $CA in $02C5 and $34 in $02C6  
   
-![](attachments/PINK.jpg)  
+![](attachments/SynAssembler-Background-Pink.jpg)  
 SynAssembler after starting with $CA in $02C5 and $46 in $02C6  
   
-![](attachments/YELLOW.jpg)  
+![](attachments/SynAssembler-Background-Yellow.jpg)  
 SynAssembler after starting with $CA in $02C5 and $FF in $02C6  
-## Help File  
+
+## Help File
+
 ```
 00010 *
 00020 *  SYNASSEMBLER DIRECTIVES

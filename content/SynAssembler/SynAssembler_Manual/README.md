@@ -2,7 +2,7 @@
   
 ![](attachments/Synapse.gif)  
   
-SYNASSEMBLER  
+SynAssembler  
   
 SynAssembler by SYNAPSE SOFTWARE  
   
@@ -13,7 +13,7 @@ SynAssembler (c) 1982 SYNAPSE SOFTWARE
   
 ## Introduction  
   
-SYNASSEMBLER is a convenient and powerful tool for software development on the Atari computer system. The assembler uses standard 6502 mnemonics and syntax, and includes many useful features for creating, editing, assembling and testing your assembly language programs. Now assembly language programming is almost as easy as programming in BASIC.  
+SynAssembler is a convenient and powerful tool for software development on the Atari computer system. The assembler uses standard 6502 mnemonics and syntax, and includes many useful features for creating, editing, assembling and testing your assembly language programs. Now assembly language programming is almost as easy as programming in BASIC.  
   
 Here is a summary of the most exciting features:  
   
@@ -37,20 +37,20 @@ Here is a summary of the most exciting features:
 - Symbol table printed in alphabetical order  
   
   
-SYNASSEMBLER requires 48K of RAM and one disk drive to operate. Very large programs can now be developed, using the "INCLUDE" and "TARGET FILE" capabilities. These allow the assembly of multiple source files, and direct storage of object code on binary files.  
+SynAssembler requires 48K of RAM and one disk drive to operate. Very large programs can now be developed, using the "INCLUDE" and "TARGET FILE" capabilities. These allow the assembly of multiple source files, and direct storage of object code on binary files.  
   
 ---
   
 ## Manual  
   
-We have included several sample programs to illustrate the use of the SYNASSEMBLER as well as being useful routines. These include:  
+We have included several sample programs to illustrate the use of the SynAssembler as well as being useful routines. These include:  
   
 1. HARSH SCROLL	:A Utility to coarse scroll the Atari screen display  
 1. FINE SCROLL	 :A utility to fine scroll the Atari screen display  
 1. PM MOVER	:A utility to move players and missiles on the screen  
 1. BELL	:Ring the bell using Atari sound generators.  
   
-Blanks are compressed in source files to conserve memory and save space on disks. The compression algorithm replaces any string of consecutive blanks with a single code byte. Also, Atari assembler files are compatible and only require minor modification to assemble correctly. (See APPENDIX for further detail). SYNASSEMBLER uses a memory-efficient method of storing the symbol table, with variable length entries. The symbol table is maintained in alphabetical order, using a high speed hashing scheme. The symbol table is maintained in memory until a new assembly is started or the NEW command is typed. This allows the RUN and VAL commands to be more useful and effective.  
+Blanks are compressed in source files to conserve memory and save space on disks. The compression algorithm replaces any string of consecutive blanks with a single code byte. Also, Atari assembler files are compatible and only require minor modification to assemble correctly. (See APPENDIX for further detail). SynAssembler uses a memory-efficient method of storing the symbol table, with variable length entries. The symbol table is maintained in alphabetical order, using a high speed hashing scheme. The symbol table is maintained in memory until a new assembly is started or the NEW command is typed. This allows the RUN and VAL commands to be more useful and effective.  
   
 Assembler error messages are printed on the Screen and accompanied by a pleasant bell like tone on the speaker. (At least as pleasant as an ERROR message can be). After an assembly error is detected the offending line is listed to the screen automatically, in a position for easy editing.  
   
@@ -58,11 +58,11 @@ Assembler error messages are printed on the Screen and accompanied by a pleasant
 # EDITING FEATURES  
   
   
-Any time the cursor is at the beginning of a line, typing \[TAB\] will cause the next line number to be generated. Immediately after loading, the "next line number" will be 10. The number will be displayed as five digits and a trailing blank. The cursor will be in a position for the first character of a label, or the asterisk for a comment line, or a semi-colon.  
+Any time the cursor is at the beginning of a line, typing ´TAB´ will cause the next line number to be generated. Immediately after loading, the "next line number" will be 10. The number will be displayed as five digits and a trailing blank. The cursor will be in a position for the first character of a label, or the asterisk for a comment line, or a semi-colon.  
   
 The "next line number" is always the value of the previously entered line number plus the current "increment". The increment is normally 10, but you can set it to any reasonable value with the INCREMENT command.  
   
-If you type the \[TAB\] in any other position than the beginning of a line, it will cause a "tab" to the next tab stop.  
+If you type the ´TAB´ key in any other position than the beginning of a line, it will cause a "tab" to the next tab stop.  
   
 # TAB STOPS  
   
@@ -70,21 +70,21 @@ The standard tab stops have been changed to allow for a nine character label bef
   
 # CURSOR CONTROL  
   
-SYNASSMBLER allows continued use of the ATARI cursor controls by pressing the [CTRL](../CTRL/README.md) key plus one of the four arrow keys on the right side of the keyboard. In addition, SynAssembler makes full use of the ATARI screen editor.  
+SynAssembler allows continued use of the ATARI cursor controls by pressing the ´CONTROL´ key plus one of the four arrow keys on the right side of the keyboard. In addition, SynAssembler makes full use of the ATARI screen editor.  
   
 # MEMORY USAGE  
   
-The SYNASSEMBLER program is about 8000 bytes long, and occupies $9C00 through $BC1F in memory. The screen begins at $BC1F and goes through $BFFF, while the source program begins at the top of DOS and goes to $9C00.  
+The SynAssembler program is about 8000 bytes long, and occupies $9C00 through $BC1F in memory. The screen begins at $BC1F and goes through $BFFF, while the source program begins at the top of DOS and goes to $9C00.  
   
 During source program entry or editing, memory usage is monitored so that the source program does not grow so large as to overlap the symbol table. Overlapping will cause the "MEMORY FULL" error. message to print. During assembly, memory required by the symbol table is monitored to prevent the symbol table from overlapping the source program. Overlapping will generate the "MEMORY FULL" error message and abort the assembly.  
   
 In addition, memory usage by the object program is monitored, so that it will not destroy the source program, DOS, the Operating System, and hardware. Therefore, if the object program bytes are directed at any memory protected addresses the "MEMORY PROTECT" error message will be printed and assembly.  
   
-There are three types of commands in the SYNASSEMBLER: EDITING commands DOS commands and MONITOR commands. The EDITING commands are used to control the Editor and the assembler. Commands are typed immediately after the prompt symbol, which looks like this [Ok.](attachments/Ok.).  
+There are three types of commands in the SynAssembler: EDITING commands DOS commands and MONITOR commands. The EDITING commands are used to control the Editor and the assembler. Commands are typed immediately after the prompt symbol, which looks like this ´Ok.´.  
   
 # EDITING COMMANDS  
   
-There are seventeen editing commands in the SYNASSEMBLER. All editing commands may be abbreviated to the first three letters if you so desire.  
+There are seventeen editing commands in the SynAssembler. All editing commands may be abbreviated to the first three letters if you so desire.  
   
 || command || description  
 | ASM	| Assemble source program, put object program into memory, and produce assembly listing.  
@@ -108,15 +108,15 @@ There are seventeen editing commands in the SYNASSEMBLER. All editing commands m
 # EDITING COMMAND DETAIL  
   
   
-The SYNASSEMBLER editor, combines the powerful Atari screen editing features with a BASIC-like line editor, Source programs are entered and edited in almost exactly the same way you would enter and edit an Atari BASIC program.  
+The SynAssembler editor, combines the powerful Atari screen editing features with a BASIC-like line editor, Source programs are entered and edited in almost exactly the same way you would enter and edit an Atari BASIC program.  
   
 __ASM__ command:  
   
-SYNASSEMBLER is a two pass assembler. The ASM command initiates assembly of your source program. During the first pass it builds a symbol table with the definition of every label that is used in your program. During the second pass the assembler stores the object code into memory or disk and produces an assembly listing. At the end of the second pass a list, in alphabetical order, of all the labels and their definitions is produced.  
+SynAssembler is a two pass assembler. The ASM command initiates assembly of your source program. During the first pass it builds a symbol table with the definition of every label that is used in your program. During the second pass the assembler stores the object code into memory or disk and produces an assembly listing. At the end of the second pass a list, in alphabetical order, of all the labels and their definitions is produced.  
   
 If any errors are detected during either pass, an error message will be printed as well as the offending line. The error message will briefly explain the type of error encountered and the line will be positioned for easy editing. All of these messages abort the assembly process so that as soon as you correct the error condition you may immediately restart the assembly.  
   
-If you are listing the assembly to the screen you may use the \[CTRL\]+\[1\] control to start and stop your listing. You may abort the assembly process by hitting the \[BREAK\] key in pass two of the SYNASSEMBLER.  
+If you are listing the assembly to the screen you may use the ´CONTROL+1´ key to start and stop your listing. You may abort the assembly process by hitting the ´BREAK´ key in pass two of the SynAssembler.  
   
   
 __COPY L1 L2__  
@@ -139,7 +139,7 @@ __HID__e AND __MER__ge
 These two commands, when used with the LOAD command allow you to join a program from disk or tape to a program that is already in memory.  
   
   
-HIDe temporarily changes the HIMEM pointer so that it appears as if there were no source proaram in memory. To remind you that you are HIDe-ing, the prompt symbol changes to \[H\] ok. After HIDe-ing a program, you can load another one from disk or tape. Then you type MERge to join the two programs together.  
+HIDe temporarily changes the HIMEM pointer so that it appears as if there were no source proaram in memory. To remind you that you are HIDe-ing, the prompt symbol changes to ´[H] Ok´. After HIDe-ing a program, you can load another one from disk or tape. Then you type MERge to join the two programs together.  
   
 After this sequence of commands the program which was already in memory will follow after the program just LOADed. If the line numbers are not already as you wish them to be, you can use the RENUMBER command to assign new ones.  
   
@@ -188,7 +188,7 @@ The FINd command allows you to search through your source program for a given te
   
 __LIST L1 L2 __  
   
-Lists a single line, a range of lines or your entire program. It works just like the list command in BASIC. While a program or range of lines is listing you can use the standard Atari pause control \[CTRL1\], to start and stop the listing to the screen. You may abort the listing by pressing the \[BREAK\] key.  
+Lists a single line, a range of lines or your entire program. It works just like the list command in BASIC. While a program or range of lines is listing you can use the standard Atari pause control ´CONTROL+1´, to start and stop the listing to the screen. You may abort the listing by pressing the ´BREAK´ key.  
   
   
 __MEM__ory  
@@ -217,7 +217,7 @@ This command places a copy of lines L2 through L3 just before line L1 in the sou
   
 __NEW__  
   
-This command acts just like it's BASIC counterpart. It deletes the current source program from memory and restarts SYNASSEMBLER just as though you were to reboot the program.  
+This command acts just like it's BASIC counterpart. It deletes the current source program from memory and restarts SynAssembler just as though you were to reboot the program.  
   
   
 NOTE:	A source program must, of course, be assembled into memory before it can be executed with the RUN command.  
@@ -302,7 +302,7 @@ __REP__lace dSidS2dtP
   
 This command causes a search to be made for string S1. The search starts at the beginning of the source. Whenever S1 is found, the line containing it is listed and the user is prompted for 1 of 3 actions:  
 ```
-       Y or [RETURN]-relace S1 with S2 and continue.
+       Y or RETURN-replace S1 with S2 and continue.
        N do not replace S1 with S2 and continue search.
        X do not replace S1 with S2 and stop search.
 
@@ -315,10 +315,10 @@ __RES__tore
 Restores the root source program if an assembly is aborted while inside an "included" module.  
   
   
-The 'root source program" is the source program that is in memory at the time the "ASM" command is issued. If this source program uses the ".IN" directive to include additional source files, it is possible that assembly might be aborted either manually by typing a \[BREAK\] key during the listing phase, or automatically due to an error in the source program.  
+The 'root source program" is the source program that is in memory at the time the "ASM" command is issued. If this source program uses the ".IN" directive to include additional source files, it is possible that assembly might be aborted either manually by typing a ´BREAK´ key during the listing phase, or automatically due to an error in the source program.  
   
   
-If the assembly is aborted during the time that the root program is hidden, the prompt character changes from "Ok" to "[I](../I/README.md) Ok". The RESTORE command will reset the memory pointers so that the root program is no longer hidden, and change the prompt character back to "Ok".  
+If the assembly is aborted during the time that the root program is hidden, the prompt character changes from ´Ok´ to ´[I] Ok´. The RESTORE command will reset the memory pointers so that the root program is no longer hidden, and change the prompt character back to ´Ok´.  
   
   
 You do not have to use the REStore command after an abort unless you wish to get back to the root source program for editing purposes. If you type the ASM command, the assembler automatically restores before starting the assembly.  
@@ -329,7 +329,7 @@ If an assembly aborts due to an error in a source line, you may correct the sour
   
 __RUN__  
   
-Begins execution of your object program. An expression MUST follow the RUN command to define the place to begin execution of the program. For example, "RUN BEGIN" will cause execution to begin at the point in your program where the label BEGIN is defined. Your program will return to SYNASSEMBLER by using an RTS instruction in your program. You may abort your program by hitting the [RESET](../RESET/README.md) key. Or, you may use the \[BREAK\] key to break and fall back to the monitor.  
+Begins execution of your object program. An expression MUST follow the RUN command to define the place to begin execution of the program. For example, "RUN BEGIN" will cause execution to begin at the point in your program where the label BEGIN is defined. Your program will return to SynAssembler by using an RTS instruction in your program. You may abort your program by hitting the ´RESET´ key. Or, you may use the ´BREAK´ key to break and fall back to the monitor.  
   
   
 __VAL__ue  
@@ -382,7 +382,7 @@ NOTE: the $ always must precede a hexadecimal number. SYMASSEMBLER assumes a dec
   
 __ENT__er  
   
-This command allows you to enter ASCII text directly from tape or disk. It functions like the ENTER command in Atari BASIC. You can use this command to ENTER Atari assembler source files and then convert them to SYNASSEMBLER format.  
+This command allows you to enter ASCII text directly from tape or disk. It functions like the ENTER command in Atari BASIC. You can use this command to ENTER Atari assembler source files and then convert them to SynAssembler format.  
   
 ```
 EXAMPLE: ENTer "D:ATARIFIL.SRC" or ENTer"C:". 
@@ -411,12 +411,12 @@ The directory command is used to examine the contents of your diskettes.
   
 __DOS__  
   
-The DOS command jumps from SYNASSEMBLER into the resident DOS in your system.  
+The DOS command jumps from SynAssembler into the resident DOS in your system.  
   
   
 __OUT__put  
   
-The OUTput command is used to redirect the output of SYNASSEMBLER to another device; eg. printer, disk, screen etc.  
+The OUTput command is used to redirect the output of SynAssembler to another device; eg. printer, disk, screen etc.  
   
 ```
 EXAMPLE: OUT "P:" 
@@ -430,13 +430,13 @@ EXAMPLE: OUTput.
   
 ### ZYNAPSE MONITOR  
   
-The ZYNAPSE monitor in SYNASSEMBLER allows you to examine, change, move, and verify memory. You may read and write to disk and cassette, dis-assemble machine-language programs; execute programs; perform hexadecimal arithmetic; read and write sectors directly to and from disk; and monitor program execution for debugging purposes.  
+The ZYNAPSE monitor in SynAssembler allows you to examine, change, move, and verify memory. You may read and write to disk and cassette, dis-assemble machine-language programs; execute programs; perform hexadecimal arithmetic; read and write sectors directly to and from disk; and monitor program execution for debugging purposes.  
   
 ### MONITOR COMMANDS  
   
-DISPLAY MEMORY: adrs1.adrs2 \[RETURN\] This command allows you to display the memory from address1 to address2.  
+DISPLAY MEMORY: adrs1.adrs2 ´RETURN´ This command allows you to display the memory from address1 to address2.  
 ```
-EXAMPLE: 2000.4000 and [RETURN] 
+EXAMPLE: 2000.4000 and ´RETURN´
 ```
   
 CHANGE MEMORY: adrs;data data .....  
@@ -461,7 +461,7 @@ This command allows you to dis-assemble 20 instructions starting at the specifie
   
 ADDITION AND SUBTRACTION (HEX): data+data or data-data  
   
-You may add or subtract data (in HEX) simply by entering data and pressing [RETURN](../RETURN/README.md).  
+You may add or subtract data (in HEX) simply by entering data and pressing ´RETURN´.  
   
   
 MOVING MEMORY: adrs1&ltadrs2.adrs3M  
@@ -531,7 +531,7 @@ A=03 X=00 Y=00 P=90 S=F0
   
 At this point you may modify the register.  
   
-The T command will do the same thing as the S command except it will just repeat it forever. To get out of this mode, just tap the \[BREAK\] key.  
+The T command will do the same thing as the S command except it will just repeat it forever. To get out of this mode, just tap the ´BREAK´ key.  
   
 QUIT: Q  
   
@@ -541,7 +541,7 @@ The Q command will return you to the assembler.
   
 Source programs are entered a line at a time, with a five digit line number identifying each line. The line numbers may run from 00000 through 63999. Source program line numbers are kept sorted in line-number order; the numbers are used for editing purposes just as in BASIC. A blank must always follow the line number. After the blank, there are four fields of information: the label, opcode, operand, and comment fields. Adjacent fields must be separated by at least one blank.  
   
-Although the fields are not restricted to begin in any particular columns, it is convenient to enter them in this way for neatness. Therefore tab stops are built in to the SYNASSEMBLER at columns 9, 13, and 21.  
+Although the fields are not restricted to begin in any particular columns, it is convenient to enter them in this way for neatness. Therefore tab stops are built in to the SynAssembler at columns 9, 13, and 21.  
   
   
 ### LABEL FIELD:  
@@ -578,7 +578,7 @@ One to nine characters; the first character must be a letter, while the others m
   
 A problem can occur if you postpone the definition of page-zero variables until after their use in operand expressions. If these labels are used with instructions which could assume both absolute and zero-page address modes, a discrepancy in the location count will occur between pass 1 and pass 2, of the assembler. This discrepancy cannot be detected by the present design of the assembler, so make it a habit to always define your page-zero variables at the beginning of your program.  
   
-There are two types of labels used in SYNASSEMBLER: normal labels and local labels.  
+There are two types of labels used in SynAssembler: normal labels and local labels.  
   
   
 ### NORMAL LABELS:  
@@ -600,7 +600,7 @@ Tab stops are set up within the editor assuming that most of your labels will be
   
 ### LOCAL LABELS:  
   
-SYNASSEMBLER introduces a new kind of label called "local labels". The main purpose for the local labels is to make programs more readable by reducing the number of label names you must invent. As a side effect, local labels save considerable space in the symbol table during assembly; they only reqire two bytes each. The use of local labels also encourages structured programming habits.  
+SynAssembler introduces a new kind of label called "local labels". The main purpose for the local labels is to make programs more readable by reducing the number of label names you must invent. As a side effect, local labels save considerable space in the symbol table during assembly; they only reqire two bytes each. The use of local labels also encourages structured programming habits.  
   
 Local labels have a period as the first character followed by one or two digits. Any label from .0 through .99 may be used.  
   
@@ -687,7 +687,7 @@ It is considered VERY POOR programming practice to include branch instructions i
   
 ## DIRECTIVES  
   
-Twelve assembler directives are available through SYNASSEMBLER.  
+Twelve assembler directives are available through SynAssembler.  
   
 .AS (stores ASCII literals.)  
   
@@ -720,7 +720,7 @@ Twelve assembler directives are available through SYNASSEMBLER.
   
 The .AS directive stores the binary form of the ascii characters "aaa...a" in sequential locations beginning at the current location. If a label is present, it is defined as the address where the first character is stored. The string "aaa ... a" may contain any number of printing ASCII characters. You indicate the beginning and end of the string, by using any delimiter ("d" in the example), that you choose.  
   
-ASCII character codes are seven bit values. The .AS directive normally sets the high order bit (8th), to zero. Some people like to use ascii codes with the high order byte set to one, so SYNASSEMBLER includes an option for this.  
+ASCII character codes are seven bit values. The .AS directive normally sets the high order bit (8th), to zero. Some people like to use ascii codes with the high order byte set to one, so SynAssembler includes an option for this.  
   
 .AS daaa....d sets the high order bits=0  
 .AS -daaa...d sets the high order bits=1  
@@ -817,7 +817,7 @@ The \[filename\] portion of the directive is in standard FILESPEC format.
   
 ### ORIGIN: .OR  
   
-This sets the program origin and the target address to the value of the expression. Program orign, is the address at which the object program will be executed. Target address is the address is the memory address at which the object program will be stored during the assembly. The .OR directive sets both of these addresses to the same value, which is the normal way of operating. If you do not use the .OR directive the assembler will set both the program origin and the target address to $4000. If the is not defined during SYNASSEMBLERS pass 1 prior to it's use in the .OR directive, an error message is printed and assembly is aborted. The error message that appears is "UNDEFINED LABEL" and the offending line is listed for easy editing.  
+This sets the program origin and the target address to the value of the expression. Program orign, is the address at which the object program will be executed. Target address is the address is the memory address at which the object program will be stored during the assembly. The .OR directive sets both of these addresses to the same value, which is the normal way of operating. If you do not use the .OR directive the assembler will set both the program origin and the target address to $4000. If the is not defined during SynAssemblerS pass 1 prior to it's use in the .OR directive, an error message is printed and assembly is aborted. The error message that appears is "UNDEFINED LABEL" and the offending line is listed for easy editing.  
   
 ### TARGET ADDRESS: .TA \[expression\]  
   
@@ -897,7 +897,7 @@ The MOS Technology 6502 microprocessor used in the ATARI has many great features
 For a full explanation of the modes and how to use them, I refer you to the MOS Tecnology Hardware and Programming Manuals, as well as the other references mentioned in the bibliography in Appendix IV.  
   
   
-SYNASSEMBLER has one syntactical addition. The immediate mode may be indicated by either a pound sign (#) or a slash (/). The "#" means that the least significant byte of the 16-bit expression value should be used.  
+SynAssembler has one syntactical addition. The immediate mode may be indicated by either a pound sign (#) or a slash (/). The "#" means that the least significant byte of the 16-bit expression value should be used.  
   
 The "/" means that the most significant byte should be used.  
   
@@ -1038,7 +1038,7 @@ A=14  X=00 Y=00 P=30 S=FD
 S
 4007:  00          BRK
 A=14  X=00 Y=00 P=30 S=FD
-[*] OK.
+[*] Ok.
 ```
   
 ### TRACE EXAMPLE:  
@@ -1097,7 +1097,7 @@ This will display location 2FC until
 \[BREAK\] or \[SYSTEM RESET\] is pressed.  
   
   
-### SYNASSEMBLER Memory Map  
+### SynAssembler Memory Map  
 (assumes 48K memory)  
 ```
 0000-00EF	 : O.S. and Assembler zero page usage.
@@ -1111,7 +1111,7 @@ This will display location 2FC until
 0600-06FF	 : Free space (if REPlace not used)
 0700-1D00	 : DOS II
 1D00-9BFF	 : Free space for source, symbol table, and object code
-9C00-BC1F	 : SYNASSEMBLER
+9C00-BC1F	 : SynAssembler
 BC20-BFFF	 : Screen display list and data
 ```
   
@@ -1204,7 +1204,7 @@ Practical Microcomputer, Programming: the 6502, W.J. Weller, Northern Technology
   
 ```
 00010 *
-00020 *  SYNASSEMBLER DIRECTIVES
+00020 *  SynAssembler DIRECTIVES
 00030 *
 00040  .AS      ASCII STRING
 00050     .AS "TEST"
@@ -1231,7 +1231,7 @@ Practical Microcomputer, Programming: the 6502, W.J. Weller, Northern Technology
 00260  .TF      SEND OBJECT TO DISK
 00270     .TF "D:FILE NAME"
 00280 *
-00290 *  SYNASSEMBLER COMMAND
+00290 *  SynAssembler COMMAND
 00300 *
 00310 LOAD "D:FILE NAME"
 00320 SAVE "D:FILE NAME"
