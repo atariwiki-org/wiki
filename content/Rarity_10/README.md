@@ -35,7 +35,7 @@ we find:
 Page 8 of: 'All about Cassette Tapes from 1979'  
   
 ---
-•) From [The_Atari_Accountant_Series](../The_Atari_Accountant_Series/README.md) just:  
+•) From [The Atari Accountant](../The_Atari_Accountant/README.md) just:  
 - [CX402: Accounts Receivable System (4 SSDD Diskettes)](https://atariwiki.org/wiki/Wiki.jsp?page=The%20Atari%20Accountant%20Series#section-The+Atari+Accountant+Series-CX402AccountsReceivableSystem4SSDDDiskettes)  
 - [CX403: Inventory Control System (5 SSDD Diskettes)](https://atariwiki.org/wiki/Wiki.jsp?page=The%20Atari%20Accountant%20Series#section-The+Atari+Accountant+Series-CX403InventoryControlSystem5SSDDDiskettes)  
   
@@ -163,13 +163,13 @@ __Please take into account: the System Utilities Toolkit for Kyan Pascal version
 •) __Atari Datenbank DXG 5723 Copyright © 1983 Atari Elektronik Vertriebs GmbH__  
 Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. Es kann sich jedoch um die deutsche Version von SynFile+ handeln, welche exklusiv für Atari entwickelt worden ist. Das Jahr 1983 stimmt, ferner wird das Basic-Modul benötigt, auch das stimmt hier. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)  
   
-![](attachments/Atari+Datenbank+DXG+5723+%C2%A9+1983.jpg)  
+![](attachments/Atari_Datenbank_DXG_5723_c_1983.jpg)  
 Atari Datenbank DXG 5723 Copyright © 1983 Atari Elektronik Vertriebs GmbH ; Quelle: Atari ComputerSysteme--Software-Katalog (1983)  
   
 •) __Atari Music Spiele__  
 Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. In keinem Katalog, noch in einer Preisliste oder in einem Handbuch wurde hierzu eine Spur gefunden! Dennoch kommt die Information aus einer sehr seriösen Quelle, die wir ernst nehmen. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)  
   
-•) __[Super_Biorythmus](../Super_Biorythmus/README.md) (wurde es je fertig?)__  
+•) __[Super_Biorhythmus](../Super_Biorythmus/README.md) (wurde es je fertig?)__  
   
 Und als letztes noch das Modul, welches für den WDR hergestellt worden ist:  
   
@@ -177,26 +177,26 @@ Und als letztes noch das Modul, welches für den WDR hergestellt worden ist:
   
 ## Images of the lost things  
   
-[The_Atari_Accountant_Series](../The_Atari_Accountant_Series/README.md)  
+[The_Atari_Accountant](../The_Atari_Accountant/README.md)  
   
 [Atari_The_Dow_Jones_Investment_Evaluator](../Atari_The_Dow_Jones_Investment_Evaluator/README.md)  
   
 [Atari Home Finance or Personal Finance](../Atari_Home_Finance/README.md)  
   
-![](attachments/phoenix+400-800-front_box.jpg)  
+![](attachments/Phoenix-400_800-Box-Front.jpg)  
 Phoenix for the Atari box  
   
 ![](attachments/Phoenix.jpg)  
 Phoenix (Original)  
   
-![](attachments/Phoenix+1.bmp)  
+![](attachments/Phoenix_1.bmp)  
 Phoenix - fig. 1  
   
-![](attachments/Phoenix+2.bmp)  
+![](attachments/Phoenix_2.bmp)  
 Phoenix - fig. 2  
   
-![](attachments/Phoenix+3.jpg)  
+![](attachments/Phoenix_3.jpg)  
 Phoenix - fig. 3  
   
-![](attachments/Phoenix+4.bmp)  
+![](attachments/Phoenix_4.bmp)  
 Phoenix - fig. 4  
