@@ -236,30 +236,24 @@ title:
 - [Comprehension-Reading_CD](Comprehension-Reading_CD/README.md)  
 - [Computer_Chess_and_European_Countries_and_Capitals](Computer_Chess_and_European_Countries_and_Capitals/README.md)  
 - [Computer_Chess_CXL_4009](Computer_Chess_CXL_4009/README.md)  
-- [CompyShop](CompyShop/README.md)
- <details>
-
-- [CSM-Assembler_Kurs_-_CIO_und_DOS](CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_CIO_und_DOS/README.md)
+- [CompyShop](CompyShop/README.md)  
     - [CSM-Assembler_Kurs_-_CIO_und_DOS](CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_CIO_und_DOS/README.md)  
-  - [CSM-Assembler_Kurs_-_Displaylist](CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist/README.md)  
-  - [CSM-Assembler_Kurs_-_Displaylist-Interrupts](CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist-Interrupts/README.md)  
-  - [CSM_ASM_Teil1](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil1/README.md)  
-  - [CSM_ASM_Teil10](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil10/README.md)  
-  - [CSM_ASM_Teil11](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil11/README.md)  
-  - [CSM_ASM_Teil12](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil12/README.md)  
-  - [CSM_ASM_Teil14](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil14/README.md)  
-  - [CSM_ASM_Teil2](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil2/README.md)  
-  - [CSM_ASM_Teil3](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil3/README.md)  
-  - [CSM_ASM_Teil4](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil4/README.md)  
-  - [CSM_ASM_Teil5](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil5/README.md)  
-  - [CSM_ASM_Teil6](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil6/README.md)  
-  - [CSM_ASM_Teil7](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil7/README.md)  
-  - [CSM_ASM_Teil8](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil8/README.md)  
-  - [CSM_ASM_Teil9](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil9/README.md)  
- </details>
+    - [CSM-Assembler_Kurs_-_Displaylist](CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist/README.md)  
+    - [CSM-Assembler_Kurs_-_Displaylist-Interrupts](CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist-Interrupts/README.md)  
+    - [CSM_ASM_Teil1](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil1/README.md)  
+    - [CSM_ASM_Teil10](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil10/README.md)  
+    - [CSM_ASM_Teil11](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil11/README.md)  
+    - [CSM_ASM_Teil12](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil12/README.md)  
+    - [CSM_ASM_Teil14](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil14/README.md)  
+    - [CSM_ASM_Teil2](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil2/README.md)  
+    - [CSM_ASM_Teil3](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil3/README.md)  
+    - [CSM_ASM_Teil4](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil4/README.md)  
+    - [CSM_ASM_Teil5](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil5/README.md)  
+    - [CSM_ASM_Teil6](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil6/README.md)  
+    - [CSM_ASM_Teil7](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil7/README.md)  
+    - [CSM_ASM_Teil8](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil8/README.md)  
+    - [CSM_ASM_Teil9](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil9/README.md)  
   - [Speedy_1050_Upgrades](CompyShop/Speedy_1050_Upgrades/README.md)  
-<details>
-
     - [Custom_Disk_Format_Routine](CompyShop/Speedy_1050_Upgrades/Custom_Disk_Format_Routine/README.md)  
     - [Das_SPEEDY-System](CompyShop/Speedy_1050_Upgrades/Das_SPEEDY-System/README.md)  
     - [Direct_Jump_into_code_without_automatic_complete](CompyShop/Speedy_1050_Upgrades/Direct_Jump_into_code_without_automatic_complete/README.md)  
@@ -276,7 +270,6 @@ title:
     - [Speedy_1050_Backup](CompyShop/Speedy_1050_Upgrades/Speedy_1050_Backup/README.md)  
     - [Write_Sector_Example](CompyShop/Speedy_1050_Upgrades/Write_Sector_Example/README.md)  
     - [Write_Track](CompyShop/Speedy_1050_Upgrades/Write_Track/README.md)  
-</details>
 - [COM_File_Segment_Dump](COM_File_Segment_Dump/README.md)  
 - [Construction_OC](Construction_OC/README.md)  
 - [Conversational_FRENCH_CX4119](Conversational_FRENCH_CX4119/README.md)  
@@ -327,7 +320,6 @@ title:
 - [Divide](Divide/README.md)  
 - [Divide-mod](Divide-mod/README.md)  
 - [DLI_in_ACTION](DLI_in_ACTION/README.md)  
-<details>
   - [Dorsett_Educational_System_Lesson_Cassettes](Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)  
   - [Reading-Development_T](Dorsett Educational Systems/Reading-Development_T/README.md)  
   - [Reading-Development_U](Dorsett Educational Systems/Reading-Development_U/README.md)  
@@ -337,9 +329,7 @@ title:
   - [Reading-Development_Y](Dorsett Educational Systems/Reading-Development_Y/README.md)  
   - [Reading-Development_Z](Dorsett Educational Systems/Reading-Development_Z/README.md)  
   - [Reading-Mathematics_MR](Dorsett Educational Systems/Reading-Mathematics_MR/README.md)  
-</details>
 - [DOS](DOS/README.md)  
-<details>
   - [Atari_DOS_1](DOS/Atari_DOS_1/README.md)  
   - [Atari_DOS_2](DOS/Atari_DOS_2/README.md)  
   - [Atari_DOS_2.5_Source_Code](DOS/Atari_DOS_2.5_Source_Code/README.md)  
@@ -349,7 +339,6 @@ title:
   - [Atari_DOS_XE](DOS/Atari_DOS_XE/README.md)  
   - [MyDOS](DOS/MyDOS/README.md)  
   - [MyPicoDos](DOS/MyPicoDos/README.md)  
-</details>
 - [DOS_Command_Processor](DOS_Command_Processor/README.md)  
 - [DOS_Setup](DOS_Setup/README.md)  
 - [DOS_topics](DOS_topics/README.md)  
@@ -426,16 +415,12 @@ title:
 - [GTIA_Demonstration_Diskette_APX-20104](GTIA_Demonstration_Diskette_APX-20104/README.md)  
 - [Happy_Computers_Upgrades](Happy_Computers_Upgrades/README.md)  
 - [Hardware](Hardware/README.md)  
-<details>
     - [Atari_810](Hardware/Disk_Drives/Atari_810/README.md)  
     - [Atari_815](Hardware/Disk_Drives/Atari_815/README.md)  
-<details>
       - [Atari_815_DUAL_DISK_CONTROLLER](Hardware/Disk_Drives/Atari_815/Atari_815_DUAL_DISK_CONTROLLER/README.md)  
-</details>
     - [Floppy_2000](Hardware/Disk_Drives/Floppy_2000/README.md)  
     - [HDI_Interface](Hardware/Disk_Drives/HDI_Interface/README.md)  
     - [Interesting_USB_Devices](Hardware/USB/Interesting_USB_Devices/README.md)  
-<details>
       - [ProjUSBCartAtariMouse](Hardware/USB/ProjUSB/ProjUSBCartAtariMouse/README.md)  
       - [ProjUSBCartAtariWheelPolePosPics](Hardware/USB/ProjUSB/ProjUSBCartAtariWheelPolePosPics/README.md)  
       - [ProjUSBCartPic](Hardware/USB/ProjUSB/ProjUSBCartPic/README.md)  
@@ -447,10 +432,8 @@ title:
       - [ProjUSBConvThreePic](Hardware/USB/ProjUSB/ProjUSBConvThreePic/README.md)  
       - [ProjUSBConvTwoPic](Hardware/USB/ProjUSB/ProjUSBConvTwoPic/README.md)  
       - [ProjUSBVCFePic](Hardware/USB/ProjUSB/ProjUSBVCFePic/README.md)  
-</details>
     - [USB+Steering+Wheel+Driver](Hardware/USB/USB+Steering+Wheel+Driver/README.md)  
     - [USB_Cartridge](Hardware/USB/USB_Cartridge/README.md)  
-</details>
 - [Haushalts-Buch](Haushalts-Buch/README.md)  
 - [Haushalts-Planung](Haushalts-Planung/README.md)  
 - [HDISource](HDISource/README.md)  
@@ -481,12 +464,10 @@ title:
 - [Industrial_Solid-State_Electronics_PL](Industrial_Solid-State_Electronics_PL/README.md)  
 - [INDUS_CPM_2.2](INDUS_CPM_2.2/README.md)  
 - [Indus_GT](Indus_GT/README.md)  
-<details>
   - [Indus_GT_Field_Service_Manual](Indus_GT/Indus_GT_Field_Service_Manual/README.md)  
   - [Indus_GT_Firmware_ROM_Source](Indus_GT/Indus_GT_Firmware_ROM_Source/README.md)  
   - [Indus_GT_Schematics](Indus_GT/Indus_GT_Schematics/README.md)  
   - [INDUS_GT_Synchromesh](Indus_GT/INDUS_GT_Synchromesh/README.md)  
-</details>
 - [Infoline](Infoline/README.md)  
 - [Integer_Math](Integer_Math/README.md)  
 - [Intention_of_the_source_code_chapter](Intention_of_the_source_code_chapter/README.md)  
@@ -515,7 +496,6 @@ title:
 - [LangForthMesaDoc](LangForthMesaDoc/README.md)  
 - [LangForthQsScreens](LangForthQsScreens/README.md)  
 - [Languages](Languages/README.md)  
-<details>
     - [Action](Languages/Action/Action/README.md)  
     - [Action2band2bBBS2bExpress2bPRO2bTutorial](Languages/Action/Action2band2bBBS2bExpress2bPRO2bTutorial/README.md)  
     - [Action_and_BBS_Express_PRO_Tutorial](Languages/Action/Action_and_BBS_Express_PRO_Tutorial/README.md)  
@@ -535,51 +515,39 @@ title:
     - [Action_Workshop_3](Languages/Action/Action_Workshop_3/README.md)  
     - [ACTION_Zero_Free](Languages/Action/ACTION_Zero_Free/README.md)  
     - [A_pseudo_Assembler_in_Action](Languages/Action/A_pseudo_Assembler_in_Action/README.md)  
-<details>
       - [ERROR](Languages/Action/Examples/ERROR/README.md)  
-</details>
     - [Musik_in_ACTION](Languages/Action/Musik_in_ACTION/README.md)  
     - [Review_Action](Languages/Action/Review_Action/README.md)  
-</details>
   - [Assembler](Languages/Assembler/README.md)  
   - [Basic](Languages/Basic/README.md)  
-<details>
     - [Advan_Basic](Languages/Basic/Advan_Basic/README.md)  
     - [Altirra_Basic](Languages/Basic/Altirra_Basic/README.md)  
     - [Atari_BASIC](Languages/Basic/Atari_BASIC/README.md)  
-<details>
       - [ATARI_Basic_Autorun_Loader](Languages/Basic/Atari_BASIC/ATARI_Basic_Autorun_Loader/README.md)  
       - [Atari_Basic_Differences](Languages/Basic/Atari_BASIC/Atari_Basic_Differences/README.md)  
       - [ATARI_BASIC_FOR_GCC](Languages/Basic/Atari_BASIC/ATARI_BASIC_FOR_GCC/README.md)  
       - [Atari_Basic_Rev_C_Reference_Manual](Languages/Basic/Atari_BASIC/Atari_Basic_Rev_C_Reference_Manual/README.md)  
       - [Atari_Basic_Special_Clear_Screen](Languages/Basic/Atari_BASIC/Atari_Basic_Special_Clear_Screen/README.md)  
       - [Atari_Basic_vs._Commodore_C64_Basic_vs._Apple_II_Basic](Languages/Basic/Atari_BASIC/Atari_Basic_vs._Commodore_C64_Basic_vs._Apple_II_Basic/README.md)  
-</details>
     - [Basic_XE](Languages/Basic/Basic_XE/README.md)  
     - [Basic_XL](Languages/Basic/Basic_XL/README.md)  
     - [FastBasic](Languages/Basic/FastBasic/README.md)  
     - [Turbo-BASIC_XL](Languages/Basic/Turbo-BASIC_XL/README.md)  
-<details>
       - [TURBAN](Languages/Basic/Turbo-BASIC_XL/TURBAN/README.md)  
-</details>
     - [U-Basic](Languages/Basic/U-Basic/README.md)  
     - [Ultimate_Basic](Languages/Basic/Ultimate_Basic/README.md)  
-</details>
   - [C](Languages/C/README.md)  
   - [CHIP-8](Languages/CHIP-8/README.md)  
   - [Forth](Languages/Forth/README.md)  
-<details>
     - [6502_Assembler_in_Forth](Languages/Forth/6502_Assembler_in_Forth/README.md)  
     - [Accessing_Memory_PEEK+POKE](Languages/Forth/Accessing_Memory_PEEK+POKE/README.md)  
     - [ANTIC_Forth](Languages/Forth/ANTIC_Forth/README.md)  
     - [CoinOp_FORTH](Languages/Forth/CoinOp_FORTH/README.md)  
-<details>
       - [Converting_FIG-Forth_Programs_to_Forth-83](Languages/Forth/FigForth/Converting_FIG-Forth_Programs_to_Forth-83/README.md)  
       - [FIGForthDecompilerDefinition](Languages/Forth/FigForth/FIGForthDecompilerDefinition/README.md)  
       - [FigForth_Source_Listing](Languages/Forth/FigForth/FigForth_Source_Listing/README.md)  
       - [FIG_Forth_1.0D](Languages/Forth/FigForth/FIG_Forth_1.0D/README.md)  
       - [FIG_Forth_1.1](Languages/Forth/FigForth/FIG_Forth_1.1/README.md)  
-</details>
     - [Forth79](Languages/Forth/Forth79/README.md)  
     - [ForthAsciiDefinition](Languages/Forth/ForthAsciiDefinition/README.md)  
     - [ForthFlooredArithmetics](Languages/Forth/ForthFlooredArithmetics/README.md)  
@@ -597,7 +565,6 @@ title:
     - [SNAUT](Languages/Forth/SNAUT/README.md)  
     - [ValFORTH](Languages/Forth/ValFORTH/README.md)  
     - [VolksForth](Languages/Forth/VolksForth/README.md)  
-<details>
       - [VFHandbook6502Assembler](Languages/Forth/VolksForth/VFHandbook6502Assembler/README.md)  
       - [VFHandbookChapter1](Languages/Forth/VolksForth/VFHandbookChapter1/README.md)  
       - [VFHandbookChapter2](Languages/Forth/VolksForth/VFHandbookChapter2/README.md)  
@@ -618,26 +585,18 @@ title:
       - [VolksForthStackOperations](Languages/Forth/VolksForth/VolksForthStackOperations/README.md)  
       - [VolksForth_Kernel_Sourcecode](Languages/Forth/VolksForth/VolksForth_Kernel_Sourcecode/README.md)  
       - [VolksForth_MemoryMap_Atari_8bit](Languages/Forth/VolksForth/VolksForth_MemoryMap_Atari_8bit/README.md)  
-</details>
     - [What_is_Forth](Languages/Forth/What_is_Forth/README.md)  
-<details>
       - [ProjXForthAsm](Languages/Forth/XForth/ProjXForthAsm/README.md)  
       - [ProjXForthExtensions](Languages/Forth/XForth/ProjXForthExtensions/README.md)  
       - [ProjXForthShowstack](Languages/Forth/XForth/ProjXForthShowstack/README.md)  
       - [ProjXForthSieve](Languages/Forth/XForth/ProjXForthSieve/README.md)  
-</details>
   - [Fortran](Languages/Fortran/README.md)  
   - [Java](Languages/Java/README.md)  
-<details>
     - [InterLisp_commands](Languages/Lisp/InterLisp_commands/README.md)  
-</details>
   - [Pascal](Languages/Pascal/README.md)  
-<details>
     - [Draper_Pascal](Languages/Pascal/Draper_Pascal/README.md)  
-</details>
   - [PL65](Languages/PL65/README.md)  
   - [Quick](Languages/Quick/README.md)  
-<details>
     - [Abbuc_Magazin_73_Gametro](Languages/Quick/Abbuc_Magazin_73_Gametro/README.md)  
     - [QuickMagazin_1](Languages/Quick/QuickMagazin_1/README.md)  
     - [QuickMagazin_10](Languages/Quick/QuickMagazin_10/README.md)  
@@ -655,10 +614,8 @@ title:
     - [QuickMagazin_8](Languages/Quick/QuickMagazin_8/README.md)  
     - [QuickMagazin_9](Languages/Quick/QuickMagazin_9/README.md)  
     - [Quick_Demo_Disks](Languages/Quick/Quick_Demo_Disks/README.md)  
-</details>
   - [TCL](Languages/TCL/README.md)  
   - [WSFN](Languages/WSFN/README.md)  
-</details>
 - [Larrys_Action_Tutorial](Larrys_Action_Tutorial/README.md)  
 - [Laufwerksformate](Laufwerksformate/README.md)  
 - [LeftMenu](LeftMenu/README.md)  
@@ -695,7 +652,6 @@ title:
 - [Memopad_Demo](Memopad_Demo/README.md)  
 - [Memory_Expansion](Memory_Expansion/README.md)  
 - [Memory_Map](Memory_Map/README.md)  
-<details>
   - [4_color_character](Memory_Map/4_color_character/README.md)  
   - [ABUFPT](Memory_Map/ABUFPT/README.md)  
   - [ADRESS](Memory_Map/ADRESS/README.md)  
@@ -781,7 +737,6 @@ title:
   - [HPOSP2](Memory_Map/HPOSP2/README.md)  
   - [HPOSP3](Memory_Map/HPOSP3/README.md)  
   - [HSCROL](Memory_Map/HSCROL/README.md)  
-<details>
     - [PACTL](Memory_Map/HSCROL/PACTL/README.md)  
     - [PADDL0](Memory_Map/HSCROL/PADDL0/README.md)  
     - [PADDL1](Memory_Map/HSCROL/PADDL1/README.md)  
@@ -792,7 +747,6 @@ title:
     - [PADDL6](Memory_Map/HSCROL/PADDL6/README.md)  
     - [PADDL7](Memory_Map/HSCROL/PADDL7/README.md)  
     - [PALNTS](Memory_Map/HSCROL/PALNTS/README.md)  
-</details>
   - [ICCOMT](Memory_Map/ICCOMT/README.md)  
   - [ICCOMZ](Memory_Map/ICCOMZ/README.md)  
   - [ICDNOZ](Memory_Map/ICDNOZ/README.md)  
@@ -927,7 +881,6 @@ title:
   - [WSYNC](Memory_Map/WSYNC/README.md)  
   - [XITVBV](Memory_Map/XITVBV/README.md)  
   - [ZCHAIN](Memory_Map/ZCHAIN/README.md)  
-</details>
 - [Mesa_Forth](Mesa_Forth/README.md)  
 - [Microsoft_Basic_Handbook](Microsoft_Basic_Handbook/README.md)  
 - [Microsoft_Basic_I](Microsoft_Basic_I/README.md)  
