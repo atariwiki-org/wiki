@@ -1,23 +1,15 @@
----
-title: Synapse Assembler Manual
----
 # SynAssembler Manual  
   
-![](attachments/synapse.gif)  
+![](attachments/Synapse.gif)  
   
 SYNASSEMBLER  
   
 SynAssembler by SYNAPSE SOFTWARE  
   
-An Adaptation by Steve Hales  
-of the S.C. Assembler II - Version 4.0  
+An Adaptation by Steve Hales of the S.C. Assembler II - Version 4.0  
   
-  
-SynAssembler (c) 1982  
-SYNAPSE SOFTWARE  
-  
-  
-  
+
+SynAssembler (c) 1982 SYNAPSE SOFTWARE  
   
 ## Introduction  
   
@@ -45,7 +37,7 @@ Here is a summary of the most exciting features:
 - Symbol table printed in alphabetical order  
   
   
-Synassembler requires 48K of RAM and one disk drive to operate. Very large programs can now be developed, using the "INCLUDE" and "TARGET FILE" capabilities. These allow the assembly of multiple source files, and direct storage of object code on binary files.  
+SYNASSEMBLER requires 48K of RAM and one disk drive to operate. Very large programs can now be developed, using the "INCLUDE" and "TARGET FILE" capabilities. These allow the assembly of multiple source files, and direct storage of object code on binary files.  
   
 ---
   
@@ -58,7 +50,7 @@ We have included several sample programs to illustrate the use of the SYNASSEMBL
 1. PM MOVER	:A utility to move players and missiles on the screen  
 1. BELL	:Ring the bell using Atari sound generators.  
   
-Blanks are compressed in source files to conserve memory and save space on disks. The compression algorithm replaces any string of consecutive blanks with a single code byte. Also, Atari assembler files are compatible and only require minor modification to assemble correctly. (See APPENDIX for further detail). Synassembler uses a memory-efficient method of storing the symbol table, with variable length entries. The symbol table is maintained in alphabetical order, using a high speed hashing scheme. The symbol table is maintained in memory until a new assembly is started or the NEW command is typed. This allows the RUN and VAL commands to be more useful and effective.  
+Blanks are compressed in source files to conserve memory and save space on disks. The compression algorithm replaces any string of consecutive blanks with a single code byte. Also, Atari assembler files are compatible and only require minor modification to assemble correctly. (See APPENDIX for further detail). SYNASSEMBLER uses a memory-efficient method of storing the symbol table, with variable length entries. The symbol table is maintained in alphabetical order, using a high speed hashing scheme. The symbol table is maintained in memory until a new assembly is started or the NEW command is typed. This allows the RUN and VAL commands to be more useful and effective.  
   
 Assembler error messages are printed on the Screen and accompanied by a pleasant bell like tone on the speaker. (At least as pleasant as an ERROR message can be). After an assembly error is detected the offending line is listed to the screen automatically, in a position for easy editing.  
   
