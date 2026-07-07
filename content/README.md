@@ -238,23 +238,23 @@ title:
 - [Computer_Chess_CXL_4009](Computer_Chess_CXL_4009/README.md)  
 - [CompyShop](CompyShop/README.md)
   <details>
-
-- [CSM-Assembler_Kurs_-_CIO_und_DOS](CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_CIO_und_DOS/README.md)  
-- [CSM-Assembler_Kurs_-_Displaylist](CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist/README.md)  
+- [CSM-Assembler_Kurs_-_CIO_und_DOS](
+  - [CSM-Assembler_Kurs_-_CIO_und_DOS](CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_CIO_und_DOS/README.md)  
+  - [CSM-Assembler_Kurs_-_Displaylist](CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist/README.md)  
 - [CSM-Assembler_Kurs_-_Displaylist-Interrupts](CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist-Interrupts/README.md)  
 - [CSM_ASM_Teil1](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil1/README.md)  
-- [CSM_ASM_Teil10](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil10/README.md)  
-- [CSM_ASM_Teil11](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil11/README.md)  
+  - [CSM_ASM_Teil10](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil10/README.md)  
+  - [CSM_ASM_Teil11](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil11/README.md)  
 - [CSM_ASM_Teil12](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil12/README.md)  
 - [CSM_ASM_Teil14](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil14/README.md)  
 - [CSM_ASM_Teil2](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil2/README.md)  
 - [CSM_ASM_Teil3](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil3/README.md)  
 - [CSM_ASM_Teil4](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil4/README.md)  
- - [CSM_ASM_Teil5](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil5/README.md)  
- - [CSM_ASM_Teil6](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil6/README.md)  
- - [CSM_ASM_Teil7](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil7/README.md)  
- - [CSM_ASM_Teil8](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil8/README.md)  
- - [CSM_ASM_Teil9](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil9/README.md)  
+- [CSM_ASM_Teil5](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil5/README.md)  
+- [CSM_ASM_Teil6](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil6/README.md)  
+- [CSM_ASM_Teil7](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil7/README.md)  
+- [CSM_ASM_Teil8](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil8/README.md)  
+- [CSM_ASM_Teil9](CompyShop/CSM_Assembler_Course/CSM_ASM_Teil9/README.md)  
   </details>
   - [Speedy_1050_Upgrades](CompyShop/Speedy_1050_Upgrades/README.md)  
 <details>
