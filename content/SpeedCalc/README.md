@@ -1,10 +1,9 @@
----
-title: SpeedCalc
----
-# SpeedCalc for Atari ; Copyright (C) COMPUTE! and Kevin Martin & Charles Brannon, Program Editor  
+# SpeedCalc
+
+for Atari ; Copyright (C) COMPUTE! and Kevin Martin & Charles Brannon, Program Editor  
   
-![](attachments/Startscreen.jpg)  
-SpeedCalc Startscreen  
+![](attachments/SpeedCalc-Start_Screen.jpg)  
+SpeedCalc Start screen  
   
 ## Introduction  
 In response to popular request, COMPUTE! presents this professional-quality spreadsheet program for Atari 400, 800,  
@@ -226,8 +225,8 @@ SpeedCalc - Keyboard
 - [COMPUTE! ISSUE 76 / SEPTEMBER 1986 / PAGE 95](https://www.atarimagazines.com/compute/issue76/Enhance.php)  
   
 ## Images  
-![](attachments/Genauigkeit+Speedcalc.jpg)  
+![](attachments/SpeedCalc-Precision-1.jpg)  
 Speedcalc - precision 1  
   
-![](attachments/Genauigkeit+Speedcalc_.jpg)  
+![](attachments/SpeedCalc-Precision-2.jpg)  
 Speedcalc - precision 2  

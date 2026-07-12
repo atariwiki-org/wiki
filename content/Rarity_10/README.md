@@ -1,20 +1,18 @@
----
-title: Rarity 10
----
 # Rarity 10 and above up to impossible  
+
 ![](attachments/rarity_10.png)  
-This chapter is intended to make an outlook for programs which must exist, but seem to be lost over the decades. If you have any hint, idea or whatever else to help us to digitize this for generations to come, please let us know.  
+This chapter is intended to provide an overview of programs that must exist but seem to be lost over the decades. If you have any hint, idea or whatever else to help us to digitize this for generations to come, please let us know.  
   
-Below are the products AtariWiki is looking for, besides this, the worldwide community is looking for this [list of missing / undumped software on AtariAge](https://atariage.com/forums/topic/252943-list-of-missing-undumped-software/#comments), too.  
+Below are the products AtariWiki is looking for. Besides this, the worldwide community is looking for this [list of missing / undumped software on AtariAge](https://atariage.com/forums/topic/252943-list-of-missing-undumped-software/#comments), too.  
   
 ---
-•) __Atari OS Rev. B (PAL) for Atari 400/800 from 1981 ; PRINT PEEK (65528)  <RETURN> => 34__  
+•) __Atari OS Rev. B (PAL) for Atari 400/800 from 1981; PRINT PEEK (65528)  <RETURN> => 34__  
   
-There are more than rumors about this OS type, please see here:  
+There are more than rumors about this OS type; please see here:  
   
 [Atari XL OS full searchable](http://mixinc.net/atari/books/XL-OS_Full_Searchable.pdf) size: 14.8 MB  
   
-Page 31 in the PDF-file or page 28 in the manual itself.  
+Page 31 of the PDF file, or page 28 of the manual itself.  
   
 If you own an Atari 400 or 800 in the PAL version, please do us a favor and enter:  
   
@@ -22,13 +20,13 @@ If you own an Atari 400 or 800 in the PAL version, please do us a favor and ente
   
 in BASIC. If the result is 34, then you own the most expensive Atari in the world, which has an OS we do not have up to today. It is only a little step for you, but would be a giant leap for the Atari community. Everlasting fame is sure for you in that case.  
   
-Further we are looking for:  
+Further, we are looking for:  
   
 ---
 •) __OPERATING SYSTEM 255 for Atari 400/800 ; PRINT PEEK (65528)  <RETURN> => 255__  
   
-Many thanks to kr0tki who found the trace, that the OS 255 is for real!  
-In page 8 of:  
+Many thanks to kr0tki, who found the trace showing that OS 255 is for real!  
+On page 8 of:  
 [All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB  
 we find:  
 ![](attachments/Page_8_from_All_about_Cassette_Tapes_1979.jpg)  
@@ -161,17 +159,17 @@ __Please take into account: the System Utilities Toolkit for Kyan Pascal version
 ---
 ## German Atari software  
 •) __Atari Datenbank DXG 5723 Copyright © 1983 Atari Elektronik Vertriebs GmbH__  
-Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. Es kann sich jedoch um die deutsche Version von SynFile+ handeln, welche exklusiv für Atari entwickelt worden ist. Das Jahr 1983 stimmt, ferner wird das Basic-Modul benötigt, auch das stimmt hier. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)  
+Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. Es kann sich jedoch um die deutsche Version von SynFile+ handeln, die exklusiv für Atari entwickelt wurde. Das Jahr 1983 stimmt. Ferner wird das Basic-Modul benötigt; auch das stimmt hier. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)  
   
 ![](attachments/Atari_Datenbank_DXG_5723_c_1983.jpg)  
 Atari Datenbank DXG 5723 Copyright © 1983 Atari Elektronik Vertriebs GmbH ; Quelle: Atari ComputerSysteme--Software-Katalog (1983)  
   
 •) __Atari Music Spiele__  
-Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. In keinem Katalog, noch in einer Preisliste oder in einem Handbuch wurde hierzu eine Spur gefunden! Dennoch kommt die Information aus einer sehr seriösen Quelle, die wir ernst nehmen. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)  
+Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. In keinem Katalog, in keiner Preisliste und in keinem Handbuch wurde hierzu eine Spur gefunden! Dennoch stammt die Information aus einer sehr seriösen Quelle, die wir ernst nehmen. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)  
   
-•) __[Super_Biorhythmus](../Super_Biorythmus/README.md) (wurde es je fertig?)__  
+•) __[Super_Biorhythmus](../Super_Biorhythmus/README.md) (wurde es je fertig?)__  
   
-Und als letztes noch das Modul, welches für den WDR hergestellt worden ist:  
+Und als Letztes noch das Modul, welches für den WDR hergestellt worden ist:  
   
 •) __WWF-Club-Spiel - A cartridge used by German Television in the 80's for a call-in game via telephone - programmer has lived in Hattingen/Germany__  
   
