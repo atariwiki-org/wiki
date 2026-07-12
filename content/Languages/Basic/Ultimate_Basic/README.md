@@ -1,6 +1,3 @@
----
-title: Ultimate Basic
----
 # The Ultimate Basic  
   
 ### Background  
@@ -17,7 +14,7 @@ Some of the main features would include:
   
 Some of the nice-to-haves would include:  
 - enhanced math functions like TAN(X), SINH(X) etc.  
-- integer variables! these can save lots of memory in almost any program  
+- integer variables! These can save lots of memory in almost any program  
 - an integer math pack, which builds on top of the item above for vastly improved performance  
 - a new full-screen editor that allows scrolling instead of the constant LISTing now required  
 - perhaps a new E: driver that goes with that editor  
