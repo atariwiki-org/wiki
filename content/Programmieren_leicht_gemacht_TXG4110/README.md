@@ -18,8 +18,8 @@ Ein Beispiel der Tagesschau mit der wundervollen Dagmar Berghoff finden Sie weit
 - [Programmieren_leicht_gemacht_TXG4110.cas](attachments/Programmieren_leicht_gemacht_TXG4110.cas) ; Programmieren leicht gemacht - Lernen Sie BASIC mit [Dagmar Berghoff](https://de.wikipedia.org/wiki/Dagmar_Berghoff) - TXG4110 ; der komplette Kurs in einer CAS-Datei beinhaltet beide Seiten der Kassette, d. h. sowohl die Seite 1, als auch die Seite 2.  
   
 ## FLAC-Images  
-- [Programmieren_leicht_gemacht_TXG4110-Seite_A-deutsch.flac](attachments/Programmieren_leicht_gemacht_TXG4110-Seite_A-deutsch.flac) ; Teil 1 von 2 ; Größe: 190 MB  
-- [Programmieren_leicht_gemacht_TXG4110-Seite_B-deutsch.flac](attachments/Programmieren_leicht_gemacht_TXG4110-Seite_B-deutsch.flac) ; Teil 2 von 2 ; Größe: 144 MB  
+- [Programmieren_leicht_gemacht_TXG4110-Seite_A-deutsch.flac](../../media/Programmieren_leicht_gemacht/attachments/Programmieren_leicht_gemacht_TXG4110-Seite_A-deutsch.flac) ; Teil 1 von 2 ; Größe: 190 MB  
+- [Programmieren_leicht_gemacht_TXG4110-Seite_B-deutsch.flac](../../media/Programmieren_leicht_gemacht/attachments/Programmieren_leicht_gemacht_TXG4110-Seite_B-deutsch.flac) ; Teil 2 von 2 ; Größe: 144 MB  
 - [Programmieren leicht gemacht -  Seite 1 Teil 1.flac](https://data.atariwiki.org/FLAC/Programmieren leicht gemacht -  Seite 1 Teil 1.flac) ; Größe: 180,8 MB ; Vielen lieben Dank an Dirk Tröger für die Neudigitalisierung in besserer Qualität! Wir stehen tief in Deiner Schuld!  
 - [Programmieren leicht gemacht -  Seite 1 Teil 2.flac](https://data.atariwiki.org/FLAC/Programmieren leicht gemacht -  Seite 1 Teil 2.flac); Größe: 87,1 MB ; Vielen lieben Dank an Dirk Tröger für die Neudigitalisierung in besserer Qualität! Wir stehen tief in Deiner Schuld!  
 - [Programmieren leicht gemacht -  Seite 1 Teil 3.flac](https://data.atariwiki.org/FLAC/Programmieren leicht gemacht -  Seite 1 Teil 3.flac); Größe: 63,9 MB ; Vielen lieben Dank an Dirk Tröger für die Neudigitalisierung in besserer Qualität! Wir stehen tief in Deiner Schuld!  
@@ -33,16 +33,16 @@ Ein Beispiel der Tagesschau mit der wundervollen Dagmar Berghoff finden Sie weit
 - [Quelltexte des Kurses - Ausdrucke ohne Sonderzeichen als Textdateien](attachments/Quelltexte.zip) ; Größe: 25 KB  
   
 ## Bilder  
-![](attachments/Programmieren+leicht+gemacht+-+Box+-+TXG+4110+-+Cover.jpg)  
+![](attachments/Programmieren_leicht_gemacht_TXG_4110-Box.jpg)  
 Programmieren leicht gemacht - TXG 4110 - Box-Cover, Vorder- und Rückseite ; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)  
   
-![](attachments/Programmieren+leicht+gemacht+-+TXG+4110+-+Kassette.jpg)  
+![](attachments/Programmieren_leicht_gemacht_TXG_4110-_Kassette.jpg)  
 Programmieren leicht gemacht - TXG 4110 - Kassetten-Oberseite; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)  
   
 ![](attachments/Startbildschirm.jpg)  
 Programmieren leicht gemacht - TXG 4110 - Startbildschirm; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)  
   
-![](attachments/Erstes+Bild.jpg)  
+![](attachments/Erstes_Bild.jpg)  
 Programmieren leicht gemacht - TXG 4110 - Eröffnungsbild; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)  
   
 ![](attachments/Beispiel.jpg)  
