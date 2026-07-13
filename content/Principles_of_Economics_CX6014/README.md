@@ -1,9 +1,6 @@
----
-title: Principles of Economics CX6014
----
-# Principles of Economics CX6014  
+# Principles of Economics (CX6014)
 ## Content:  
-![](attachments/Principles+of+Economics+CX6014.jpg)  
+![](attachments/Principles_of_Economics-CX6014.jpg)  
 Content of Principles of Economics CX6014  
   
   

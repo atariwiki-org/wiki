@@ -24,11 +24,11 @@ Programmeren... Hoe Doe Je Dat (Deel 2) is the Dutch translation of An Invitatio
   
 ## MP3-Files of cassette 1  
 Low quality  
-- [Programmeren..._Hoe_Doe_Je_DatDeel2TXN4106a_side1.mp3](attachments/Programmeren..._Hoe_Doe_Je_DatDeel2TXN4106a_side1.mp3) Cassette A side 1  
-- [Programmeren..._Hoe_Doe_Je_DatDeel2TXN4106a_side2.mp3](attachments/Programmeren..._Hoe_Doe_Je_DatDeel2TXN4106a_side2.mp3) Cassette A side 2  
+- [Programmeren..._Hoe_Doe_Je_DatDeel2TXN4106a_side1.mp3](../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_2-TXN_4106/attachments/Programmeren..._Hoe_Doe_Je_DatDeel2TXN4106a_side1.mp3) Cassette A side 1  
+- [Programmeren..._Hoe_Doe_Je_DatDeel2TXN4106a_side2.mp3](../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_2-TXN_4106/attachments/Programmeren..._Hoe_Doe_Je_DatDeel2TXN4106a_side2.mp3) Cassette A side 2  
   
 ## Manual:  
-- [Programmeren_Hoe_Doe_Je_Dat_2_manual.pdf](attachments/Programmeren_Hoe_Doe_Je_Dat_2_manual.pdf)  
+- [Programmeren_Hoe_Doe_Je_Dat_2_manual.pdf](../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_2-TXN_4106/attachments/Programmeren_Hoe_Doe_Je_Dat_2_manual.pdf)  
   
 ## Screenshots:  
 ![](attachments/programmerendeel21.jpg)  

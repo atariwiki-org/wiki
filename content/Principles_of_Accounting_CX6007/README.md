@@ -1,9 +1,7 @@
----
-title: Principles of Accounting CX6007
----
-# Principles of Accounting CX6007  
+# Principles of Accounting - CX6007  
+
 ## Content:  
-![](attachments/Principles+of+Accounting+CX6007.jpg)  
+![](attachments/Principles_of_Accounting-CX6007.jpg)  
 Content of Principles of Accounting CX6007  
   
   
