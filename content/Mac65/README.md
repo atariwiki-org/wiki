@@ -4,7 +4,7 @@ Copyright (C) Stephen D. Lawrow; OSS, Inc.; ICD, Inc. & FTe
   
 MAC/65 is a 6502 macro assembler written by Stephen D. Lawrow and originally sold by [Optimized Systems Software](https://en.wikipedia.org/wiki/Optimized_Systems_Software) for the Atari 8-bit computers. It was first released on disk in 1982, then later on a 16 KiB bank-switched 'SuperCartridge'.  
   
-MAC/65 along with other OSS products became part of ICD's catalog of Atari products in January 1988. In 1994, Fine Tooned Engineering obtained limited rights to ICD's 8-bit products, including MAC/65.  
+MAC/65, along with other OSS products, became part of ICD's catalog of Atari products in January 1988. In 1994, Fine Tooned Engineering obtained limited rights to ICD's 8-bit products, including MAC/65.  
   
   
 # Disk versions  
@@ -113,11 +113,11 @@ Version 1.02 followed in the same year, with yet more bug fixes and a slightly d
 ## Images  
   
 - Photos of Fred Meijer's MAC/65 1.02 cartridge:  
-%%(float:left)![](attachments/mac65_102_1.jpg)%%  
-%%(float:left)![](attachments/mac65_102_2.jpg)%%  
-%%(float:left)![](attachments/mac65_102_3.jpg)%%  
-%%(float:left)![](attachments/mac65_102_4.jpg)%%  
-%%(float:left)![](attachments/mac65_102_5.jpg)%%  
+![](attachments/mac65_102_1.jpg)
+![](attachments/mac65_102_2.jpg)  
+![](attachments/mac65_102_3.jpg) 
+![](attachments/mac65_102_4.jpg)
+![](attachments/mac65_102_5.jpg)
   
   
 # MAC/65 ToolKit  
@@ -135,21 +135,24 @@ Although version 1.02 was the last one published commercially, Stephen Lawrow co
   
 In 2016, the AtariWiki team received a set of microfilms from an anonymous source,[3](../3/README.md)[4](../4/README.md) that contained hex printouts of source listings of 3 different versions of MAC/65. Through the painstaking process of digitizing the microfilms, the team managed to recover the original files, and combined them into ATR images provided below.  
   
-Note: while source files and binary images in the provided ATR images were restored from microfilms, the other contents of the disk images - e.g. DOS files - were added by the AtariWiki team for convenience.[5](../5/README.md)  
+Note: While source files and binary images in the provided ATR images were restored from microfilms, the other contents of the disk images - e.g. DOS files - were added by the AtariWiki team for convenience.[5](../5/README.md)  
   
 ## MAC/65 1.01 (1986)  
   
-### Source code  
-- MAC/65 1.01 (1986) source code (See [A call for help](../Mac65ACallForHelp/README.md) below):  
-** [Disk 1 (master)](attachments/mac-xl-master-icd.atr)  
-** [Disk 2 (slave)](attachments/mac-xl-slave-icd.atr)  
+### Source code
   
-This version, despite identifying itself as MAC/65 1.01 on the title screen, is actually a later development; comments in the master source file (NEWMAIN) identify this version interchangeably as "MAC XE" and "MAC XL", with the copyright year of 1986. This version is different than the commercially-released v. 1.01 (or any released version, actually), although the actual functional differences are yet to be investigated.  
+- MAC/65 1.01 (1986) source code (See [A call for help](../Mac65ACallForHelp/README.md) below):  
+   - [Disk 1 (master)](attachments/mac-xl-master-icd.atr)  
+   - [Disk 2 (slave)](attachments/mac-xl-slave-icd.atr)  
+  
+This version, despite identifying itself as MAC/65 1.01 on the title screen, is actually a later development; comments in the master source file (NEWMAIN) identify this version interchangeably as "MAC XE" and "MAC XL", with the copyright year of 1986. This version is different from the commercially released v. 1.01 (or any released version, for that matter), although the functional differences have yet to be investigated.  
   
 The sources are in MAC/65 format; they may be built using MAC/65 1.02. Two disk drives are needed. The master diskette should be placed in the D1: disk drive, and the slave diskette in D2:. The master source file is D2:NEWMAIN. Change RAM to 0 and EPROM to 1 in D2:NEWMAIN (lines 190-200) and then assemble from RAM to disk, by entering:  
   
-{{LOAD #D2:NEWMAIN  
-ASM ,,#D2:NEWMAIN.OBJ}}  
+```
+LOAD #D2:NEWMAIN
+ASM ,,#D2:NEWMAIN.OBJ
+```
   
 The resulting file NEWMAIN.OBJ is a binary DOS file that loads itself into the $3000-$6fff area; these are the 16 KB ROM data for the two-chip variant of the OSS SuperCartridge. To build a ROM image for the one-chip variant, additionally change BANK2 to $D509 and BANK3 to $D501 in D1:EQUATE.INC (lines 180-190).  
   
@@ -169,17 +172,19 @@ The "slave" source disk of MAC/65 v. 3.6 (described in a [later section](../Mac6
   
 This version is identical to the "Assembler v. 3.4" version (described in the [next section](../Mac65Assembler3.419871221/README.md)), the only difference being the text on the start screen. To build a version that is identical to MACXE.EPR, take the sources of Assembler 3.4 and change the lines 40-70 of D1:COPY:  
   
-{{40 MES   .BYTE $7D,"MAC XE",TAB,TAB  
+```
+40 MES   .BYTE $7D,"MAC XE",TAB,TAB  
 50       .CBYTE "Version 3.4i"  
 60 MES1  .BYTE "(c) 1985 Stephen D. Lawrow"  
-70       .CBYTE "   2/11/86 ",TAB}}  
+70       .CBYTE "   2/11/86 ",TAB
+```
   
 ### Cartridge images  
 The following cartridge images were created by building the Assembler 3.4 sources after modifying them as described above.  
   
 - MAC XE 3.4i with DDT - two-chip cartridge  
-** 043M bank order: [BIN image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US043M.bin), [CAR image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US043M.car)  
-** 034M bank order: [BIN image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US034M.bin), [CAR image](attachments/MAC_XE_v3.4i_with_DDT-034M.car)  
+   - 043M bank order: [BIN image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US043M.bin), [CAR image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US043M.car)  
+   - 034M bank order: [BIN image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US034M.bin), [CAR image](attachments/MAC_XE_v3.4i_with_DDT-034M.car)  
 - MAC XE v3.4i with DDT - one-chip cartridge: [BIN image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.USM091.bin), [CAR image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.USM091.car)  
   
 ## Assembler 3.4 (1987-12-21)  
