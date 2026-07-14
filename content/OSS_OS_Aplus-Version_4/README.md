@@ -31,20 +31,21 @@ There are several non-obvious advantages to this scheme, so bear with us as we t
 In order to keep track of what blocks on a particular disk are available for use, the file manager maintains a special section on each disk known as the volume table of contents, or VTOC. The VTOC on a disk consists of 1 or more sectors which contain the bitmap (a long string of bits in which the Nth bit represents the Nth block on the disk). Each bit may be turned on or off to free or allocate (respectively) the block it represents. Note that the VTOC is the only data area on the disk allocated by sectors instead of blocks. The format of the VTOC is as follows:  
   
   
-|| hex offset ||  value   ||  
-| 0              | unused |  
-| 1-2          | block no. of first directory sector |  
-| 3             | unused |  
-| 4-5          | unused |  
-| 6              | unused |  
+| hex offset  |  value   |
+|-------------|----------| 
+| 0           | unused |  
+| 1-2         | block no. of first directory sector |  
+| 3           | unused |  
+| 4-5         | unused |  
+| 6           | unused |  
 | 7-26        | unused  |  
-| 27            | max. number of pointers in file map sectors ($7A for disks with 256-byte sectors; $F4 for 512-byte sector disks) |  
+| 27          | max. number of pointers in file map sectors ($7A for disks with 256-byte sectors; $F4 for 512-byte sector disks) |  
 | 28-2F       | unused |  
-| 30-33      | unused |  
-| 34            | unused |  
-| 35            | unused |  
-| 36-37      | unused |  
-| 38-          | disk block bit map |  
+| 30-33       | unused |  
+| 34          | unused |  
+| 35          | unused |  
+| 36-37       | unused |  
+| 38-         | disk block bit map |  
   
   
 ### THE DIRECTORY  
@@ -63,21 +64,22 @@ BIT 7: file protection -- if this bit is set, then the file is protected from ac
   
 Format of directory sectors:  
   
-|| hex offset  ||  value  ||  
-| 0 |  unused  |  
-| 1-2  | block number of next directory block (0 if this is the last block)  |  
-| 3-A  | unused  |  
-| B-    | directory entries (35 bytes each)  |  
+| hex offset  |  value  |
+|-------------|---------| 
+| 0           | unused  |  
+| 1-2         | block number of next directory block (0 if this is the last block)  |  
+| 3-A         | unused  |  
+| B-          | directory entries (35 bytes each)  |  
   
   
 Format of directory entries:  
   
-  
-|| hex offset ||  value  ||  
-| 0-1 | block number of first block in file map |  
-| 2     | file type |  
-| 3-20 | file name |  
-| 21-22 | length of file in sectors |  
+| hex offset  |  value  |
+|-------------|---------|  
+| 0-1         | block number of first block in file map |  
+| 2           | file type |  
+| 3-20        | file name |  
+| 21-22       | length of file in sectors |  
   
   
 ### THE FILE MAP  
@@ -85,13 +87,14 @@ Format of directory entries:
 As previously mentioned OS/A+ version 4 utilizes a mapped file structure where special portions of a file point to the locations on the disk holding the actual data. These special sections comprise the file map, which is a singly linked list of disk blocks which contain pointers to the data blocks of a file. Each file map sector has the following format:  
   
   
-|| hex offset || value ||  
-| 0 | unused |  
-| 1-2 | block number of next file map block (zero if this block is the last) |  
-| 3-4 | unused |  
-| 5-6 | unused |  
-| 7-B | unused |  
-| c-   | sequential list of block numbers in file (2 bytes per block number) |  
+| hex offset  |  value  |
+|-------------|---------| 
+| 0           | unused |  
+| 1-2         | block number of next file map block (zero if this block is the last) |  
+| 3-4         | unused |  
+| 5-6         | unused |  
+| 7-B         | unused |  
+| c-          | sequential list of block numbers in file (2 bytes per block number) |  
   
 A pointer to a file block is merely the disk block number of the start of a file block. For most purposes, a file block is equivalent in size to a disk block, However, the file manager allows the user to specify a file blocking factor which alters the size of data blocks for a single file. A file blocking factor of zero implies that file blocks are equivalent to disk blocks. A file blocking factor of 1, though, makes file blocks equivalent to 8 disk blocks in length. Similarly, a factor of 2 creates file blocks which are 16 disk blocks in length. While the use of a file blocking factor has little or no consequence for sequentially accessed files, it offers 2 distinct advantages for random access files. First, the size of the file map will be reduced, thereby decreasing the average number of disk accesses required to access data. Second, the file's data sectors are likely to be less fragmented on the disk, thereby decresing the average head movement required to access data sectors. The only disadvantage of using a file blocking factor is that disk space is allocated much more rapidly than otherwise, making this technique undesirable for small files.  
   
@@ -108,28 +111,29 @@ EXAMPLE: Suppose a system has 2 disks, both with 256-byte sectors. There will be
   
 ### ADDING DRIVES  
   
-In order to integrate a new disk drive into the system the disk must first be initialized with the OS/A+ Version 4 file structure. Please refer to the section describing the INIT utility for instructions on using INIT. Source code of INIT is available for users contemplating adding their own disk devices.  
+In order to integrate a new disk drive into the system, the disk must first be initialized with the OS/A+ Version 4 file structure. Please refer to the section describing the INIT utility for instructions on using INIT. Source code of INIT is available for users contemplating adding their own disk devices.  
   
 In order to access a new drive, it must be installed into the disk drive table within the file manager. This table consists of 8 entries of 16 bytes each starting at location DRVTAB (see memory map). Each entry in this table contains the following information:  
-  
-|| byte(s) || value ||  
+
+| byte(s)   |  value  |
+|-----------|---------| 
 | 0         | drive type: 1=Apple Disk; O=other disk |  
 | 1         | reserved |  
 | 2         | size of disk sectors: 1=256 byte 2=512 byte |  
 | 3         | disk blocking factor; sectors/block |  
-| 4-5     | sector no. of disk's VTOC |  
+| 4-5       | sector no. of disk's VTOC |  
 | 6         | no. of sectors in VTOC |  
-| 7-8     | address of read/write sector routine minus one |  
-| 9-10   | (set by file manager) |  
-| 11       | file map sector size: $7A for 256 byte sectors; $F4 for 512 byte sectors |  
-| 12-15 | (set by file manager) |  
+| 7-8       | address of read/write sector routine minus one |  
+| 9-10      | (set by file manager) |  
+| 11        | file map sector size: $7A for 256 byte sectors; $F4 for 512 byte sectors |  
+| 12-15     | (set by file manager) |  
   
   
 As can be seen, the drive table entry contains the address of the routine to read and write sectors on the disk. This routine may be located anywhere in memory.  
   
 (see the next section for a description of the parameters to this routine).  
   
-Once the drive has been added to the drive table and the read write sector routine has been loaded, the system must be re-initialized by jumping to the system reset location. The new disk may then be accessed as Dn: where the disk is the nth entry in the drive table (n starts from 1).  
+Once the drive has been added to the drive table and the read/write sector routine has been loaded, the system must be re-initialized by jumping to the system reset location. The new disk may then be accessed as Dn: where the disk is the nth entry in the drive table (n starts from 1).  
   
 NOTE: more than one disk drive may be serviced by a single read/write sector routine.  
   
@@ -149,19 +153,20 @@ Each read/write sector routine receives its parameters through the Device Contro
 ## ATARI SYSTEM MEMORY MAP OS/A+ version 4:  
   
   
-|| location || usage ||  
-| 100-lFF  | 6502 stack area |  
-| 200-319 | system ram |  
-| 300-30B | DCB (device control block) |  
-| 31A-33F | device handler table |  
-| 340-3BF | IOCB's - 8 at 16 bytes each |  
-| 3CO-57F | system ram |  
-| 580-5FF | E: text buffer |  
-| 600- 6FF | user ram |  
-| 700-IC7F | OS/A+ file manager |  
-| 70F          | SASA address of start of buffers |  
-| 712          | SABYTE number of 256 byte buffers |  
-| 713          | disk drive table - 8 entries |  
+| location  | usage |
+|-----------|-------|
+| 100-lFF   | 6502 stack area |  
+| 200-319   | system ram |  
+| 300-30B   | DCB (device control block) |  
+| 31A-33F   | device handler table |  
+| 340-3BF   | IOCB's - 8 at 16 bytes each |  
+| 3CO-57F   | system ram |  
+| 580-5FF   | E: text buffer |  
+| 600- 6FF  | user ram |  
+| 700-IC7F  | OS/A+ file manager |  
+| 70F       | SASA address of start of buffers |  
+| 712       | SABYTE number of 256 byte buffers |  
+| 713       | disk drive table - 8 entries |  
 | 1C80-1CFF | read/write sector routine |  
 | 1DOO-23FF | OS/A+ CP -console processor |  
 | 2400-2BFF | file manager buffers-- default size |  
