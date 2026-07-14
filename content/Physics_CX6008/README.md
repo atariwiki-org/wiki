@@ -1,18 +1,14 @@
----
-title: Physics CX6008
----
 # Physics CX6008  
-## Boxcover:  
-![](attachments/Physics+CX6008-Cover.jpg)  
-Physics CX6008-Cover  
+
+## Box
+![](attachments/Physics_CX6008-BOX.jpg)  
+Physics CX6008 box
   
+## Content
+![](attachments/Physics_CX6008.jpg)  
+Physics CX6008 content
   
-## Content:  
-![](attachments/Physics+CX6008.jpg)  
-Physics CX6008-Content  
-  
-  
-## Cassette-Images in FLAC-format:  
+## Cassette-Images in FLAC-format 
 - [http://data.atariwiki.org/FLAC/P/Physics_CX6008-Cassette_A-Side_1.flac](http://data.atariwiki.org/FLAC/P/Physics_CX6008-Cassette_A-Side_1.flac) ; size: 62.7 MB  
   
 - [http://data.atariwiki.org/FLAC/P/Physics_CX6008-Cassette_A-Side_2.flac](http://data.atariwiki.org/FLAC/P/Physics_CX6008-Cassette_A-Side_2.flac) ; size: 53.7 MB  
