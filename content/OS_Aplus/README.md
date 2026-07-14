@@ -2,7 +2,7 @@
 
 Copyright (C) 1981-1984 Optimized Systems Software, OSS, Inc.
 
-OS/A+ is a Disk Operating System (DOS) for Atari 8-bit computers.
+OS/A+, later also published as DOS II+, is a Disk Operating System (DOS) for Atari 8-bit computers.
 
 ## Manuals
 - [OS/A+ Version 1.1, 1981](../../media/OS_Aplus/attachments/OS_Aplus-Manual-1981_Revision-Version_1.1.pdf) ; size: 4.9 MB ; thanks to Atarimania! :-)  

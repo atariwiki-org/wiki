@@ -1,6 +1,3 @@
----
-title: DOS XL 2.30 patch
----
 # DOS XL 2.30 patch  
   
 Version 2.30p was a newer version to 2.30 to fix two problems.  
