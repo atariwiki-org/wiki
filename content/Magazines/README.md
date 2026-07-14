@@ -1,17 +1,7 @@
----
-title: Magazines
----
 # Magazines  
   
 ## Currently Published  
-  
-### Pro(c) Atari  
-  
-Pro(c) Atari is a magazine which has been printed and distributed in both English and German since 2014. In 2017 Pro(c) Atari is planning two issues only in English.  
-  
-The main emphasis of the magazine is to look at nostalgia for old games, however it also looks at new homebrew games and demos.  
-  
-[Official Website](http://www.proc-atari.de)  
+
   
 ### Excel Magazine  
   
@@ -37,4 +27,13 @@ An American Atari magazine.
 ### Compute!  
 An American Atari magazine.  
   
-[View at AtariMagazines.com](http://www.atarimagazines.com/compute/)  
+[View at AtariMagazines.com](http://www.atarimagazines.com/compute/) 
+
+  
+### Pro(c) Atari  
+  
+Pro(c) Atari is a magazine which has been printed and distributed in both English and German since 2014. In 2017 Pro(c) Atari is planning two issues only in English.  
+  
+The main emphasis of the magazine is to look at nostalgia for old games, however it also looks at new homebrew games and demos.  
+  
+[Official Website](http://www.proc-atari.de)  

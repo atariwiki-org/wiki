@@ -1,7 +1,6 @@
----
-title: 130XE+ Makroassembler
----
-# 130XE+ Makroassembler Copyright (C) 1991 by Torsten Karwoth  
+# 130XE+ Makroassembler
+
+Copyright (C) 1991 by Torsten Karwoth  
   
 ## ATR images  
 - [130XE_Makroassembler_1991Torsten_KarwothSide_A.atr](attachments/130XE_Makroassembler_1991Torsten_KarwothSide_A.atr)  
