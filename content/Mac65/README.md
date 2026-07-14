@@ -38,11 +38,11 @@ This is the second disk version, released later in 1982.
 - MAC/65 4.20 disk with SpartaDOS 3.2g:  
 ** [180K disk (SS/DD)](attachments/Mac-65_SpartaDOS_3.2g_180K.atr)  
 ** [360K disk (DS/DD)](attachments/Mac-65_SpartaDOS_3.2g_360K.atr)  
-** [720K disk (DS/QD)](attachments/Mac-65_SpartaDOS_3.2g_720K.atr)[1](../1/README.md)  
+** [720K disk (DS/QD)](attachments/Mac-65_SpartaDOS_3.2g_720K.atr)[^1]
   
 ## MAC/65 4.20 - FTe re-release (1994)  
   
-After Fine Tooned Engineering obtained rights to MAC/65 from ICD, they re-released version 4.20 in 1994, as shareware to be used exclusively with the [PC_Xformer](../PC_Xformer/README.md) emulator. The disk contained additional documentation files and the program had modified copyright text, but was otherwise identical.  
+After Fine Tooned Engineering obtained rights to MAC/65 from ICD, they re-released version 4.20 in 1994 as shareware for use exclusively with the [PC_Xformer](../PC_Xformer/README.md) emulator. The disk contained additional documentation files and had modified copyright text, but was otherwise identical.  
   
 ![](attachments/MAC-65_Shareware.jpg)  
   
@@ -92,7 +92,7 @@ Soon after, OSS released version 1.01, with some bug fixes.
 - MAC/65 1.01 with DDT - one-chip cartridge (M091 bank order): [BIN image](attachments/MAC_65_1.01.rom), [CAR image](attachments/MAC_65_1.01_with_DDT.car)  
   
 ### Source code  
-In 2017 AtariAge user Alfred published source code for MAC/65 1.01 that he had obtained from ICD back in the day.[2](../2/README.md) Dated 1988, the sources are in the format of Mike Gustafson's cross-assembler that was used internally at ICD. When ICD bought the rights to the OSS portfolio, they apparently converted the sources from their original MAC/65 syntax to ICD's cross-assembler.  
+In 2017 AtariAge user Alfred published source code for MAC/65 1.01 that he had obtained from ICD back in the day.[^2] Dated 1988, the sources are in the format of Mike Gustafson's cross-assembler that was used internally at ICD. When ICD bought the rights to the OSS portfolio, they apparently converted the sources from their original MAC/65 syntax to ICD's cross-assembler.  
   
 - [MAC/65 1.01 sources from ICD 1988](attachments/Mac65.zip)  
 - [Helper package to assemble the ICD sources using ca65](attachments/mac65-ca65.zip)  
@@ -133,17 +133,17 @@ OSS offered a companion disk to MAC/65. MAC/65 ToolKit was sold either separatel
 # Later work-in-progress versions  
 Although version 1.02 was the last one published commercially, Stephen Lawrow continued development of MAC/65 - he kept fixing bugs and adding new features, all ultimately unpublished.  
   
-In 2016, the AtariWiki team received a set of microfilms from an anonymous source,[3](../3/README.md)[4](../4/README.md) that contained hex printouts of source listings of 3 different versions of MAC/65. Through the painstaking process of digitizing the microfilms, the team managed to recover the original files, and combined them into ATR images provided below.  
+In 2016, the AtariWiki team received a set of microfilms from an anonymous source [^3][^4] that contained hex printouts of source listings for 3 different versions of MAC/65. Through the painstaking process of digitizing the microfilms, the team managed to recover the original files and combine them into the ATR images provided below.  
   
-Note: While source files and binary images in the provided ATR images were restored from microfilms, the other contents of the disk images - e.g. DOS files - were added by the AtariWiki team for convenience.[5](../5/README.md)  
+Note: While source files and binary images in the provided ATR images were restored from microfilms, the other contents of the disk images - e.g. DOS files - were added by the AtariWiki team for convenience.[^5]
   
 ## MAC/65 1.01 (1986)  
   
 ### Source code
   
-- MAC/65 1.01 (1986) source code (See [A call for help](../Mac65ACallForHelp/README.md) below):  
-   - [Disk 1 (master)](attachments/mac-xl-master-icd.atr)  
-   - [Disk 2 (slave)](attachments/mac-xl-slave-icd.atr)  
+MAC/65 1.01 (1986) source code (See [A call for help](../Mac65ACallForHelp/README.md) below):  
+- [Disk 1 (master)](attachments/mac-xl-master-icd.atr)  
+- [Disk 2 (slave)](attachments/mac-xl-slave-icd.atr)  
   
 This version, despite identifying itself as MAC/65 1.01 on the title screen, is actually a later development; comments in the master source file (NEWMAIN) identify this version interchangeably as "MAC XE" and "MAC XL", with the copyright year of 1986. This version is different from the commercially released v. 1.01 (or any released version, for that matter), although the functional differences have yet to be investigated.  
   
@@ -198,8 +198,10 @@ This version of MAC/65 presents itself on the title screen as "Assembler version
   
 The sources are in MAC/65 format; they may be built using MAC/65 1.02. Two disk drives are needed. The master diskette should be placed in the D1: disk drive, and the slave diskette in D2:. The master source file is D1:MASTER. Change RAM to 0 and EPROM to 1 in D1:MASTER (lines 190-200) and then assemble from RAM to disk, by entering:  
   
-{{LOAD #D1:MASTER  
-ASM ,,#D1:MASTER.OBJ}}  
+```
+LOAD #D1:MASTER  
+ASM ,,#D1:MASTER.OBJ
+```  
   
 The resulting file MASTER.OBJ is a binary DOS file that loads itself into the $3000-$6fff area; these are the 16 KB ROM data for the two-chip variant of the OSS SuperCartridge. To build a ROM image for the one-chip variant, additionally change BANK2 to $D509 and BANK3 to $D501 in D1:EQUATE.INC (lines 180-190).  
   
@@ -228,12 +230,14 @@ The "slave" source disk also contains a file named MACXE.EPR, which is an assemb
   
 The sources are in MAC/65 format; they may be built using MAC/65 1.02. Two disk drives are needed. The master diskette should be placed in the D1: disk drive, and the slave diskette in D2:. The master source file is D1:MASTER. Change RAM to 0 and EPROM to 1 in D1:MASTER (lines 190-200) and then assemble from RAM to disk, by entering:  
   
-{{LOAD #D1:MASTER  
-ASM ,,#D1:MASTER.OBJ}}  
+```
+LOAD #D1:MASTER  
+ASM ,,#D1:MASTER.OBJ
+``` 
   
 The resulting file MASTER.OBJ is a binary DOS file that loads itself into the $3000-$6fff area; these are the 16 KB ROM data for the two-chip variant of the OSS SuperCartridge. To build a ROM image for the one-chip variant, additionally change BANK2 to $D509 and BANK3 to $D501 in D1:EQUATE.INC (lines 180-190).  
   
-- [MAC/65 3.6 assembly printout](attachments/MAC_XL_CARTRIDGE_c_1985_Stephen_D._Lawrow.txt) ; size: 660 KB ; generated while assembling the sources. Please check to build a new manual with the new function, thank you  
+- [MAC/65 3.6 assembly printout](attachments/MAC_XL_CARTRIDGE_c_1985_Stephen_D._Lawrow.txt) ; size: 660 KB ; generated while assembling the sources. Please check to build a new manual with the new function. Thank you.  
   
 ### Cartridge images  
 Here are cartridge images created by building the sources.  
@@ -270,35 +274,35 @@ Here are cartridge images created by building the sources.
 - [Sweet16Mac65](../Sweet16Mac65/README.md) a virtual 16bit machine for the 8bit ATARI  
 - [MAC/65 Text Generator v 1.0 (Basic)](attachments/MAC-65_Text_Generator_v1.0_1988Amte-BASIC.atr)  
   
-![](attachments/Mac+65+Dissassembler.jpg)  
+![](attachments/Mac_65_Dissassembler.jpg)  
   
 # A call for help  
   
-The source files of the work-in-progress versions of MAC/65 have not yet been analysed. It is unknown what are the new features introduced in each of the following versions:  
+The source files of the work-in-progress versions of MAC/65 have not yet been analyzed. It is unknown what new features introduced in each of the following versions:  
   
 - [MAC/65 1.01 (1986)](../Mac65MAC651.011986/README.md)  
 - [Assembler 3.4](../Mac65Assembler3.41987-12-21/README.md)  
 - [MAC/65 3.6](../Mac65MAC653.61988-01-07/README.md)  
   
-Comparing source codes of these versions to each other, and to the [source code of the released version 1.01](../Mac65SourceCode/README.md), would allow to discover the new features and document them. Yotta-thanks to all who help us here.  
+Comparing the source code of these versions with each other and with the [source code of the released version 1.01](../Mac65SourceCode/README.md) would allow us to discover the new features and document them. Yotta-thanks to all who help us here.  
   
 # Special thanks  
   
-The AtariWiki team would like to thank the following individuals for their invaluable contributions to preservation of the history of MAC/65:  
+The AtariWiki team would like to thank the following individuals for their invaluable contributions to the preservation of the history of MAC/65:  
   
-- Alfred from AtariAge - Giga-thanks for releasing the ICD sources of MAC/65 1.01[2](../2/README.md); we miss you!  
-- An anonymous contributor - thank you for providing microfilms with the source codes of WIP version of MAC/65 1.01 (1986), Assembler 3.4, and MAC/65 3.6.  
+- Alfred from AtariAge - Giga-thanks for releasing the ICD sources of MAC/65 1.01[^2] ; we miss you!  
+- An anonymous contributor - thank you for providing microfilms with the source codes of the WIP version of MAC/65 1.01 (1986), Assembler 3.4, and MAC/65 3.6.  
 - Atarimania - thanks for providing the scans of the Optimized Systems Software Software License Agreement.  
 - Allan Bushman - Thank you so much for scanning and saving the Rev. 1.0 and 1.1 manuals for MAC/65 disk versions. Greatly appreciated! :-)  
-- A good soul from AtariAge - for creating ROM images of MAC XE 3.4i and MAC/65 3.6 two-chip cartridge (034M bank order); thank you so much good soul! :-)))  
+- A good soul from AtariAge - for creating ROM images of MAC XE 3.4i and MAC/65 3.6 two-chip cartridge (034M bank order); thank you so much, good soul! :-)))  
 - A good soul from Germany - for creating the MAC/65 3.6 one-chip cartridge images; thank you so much good soul! :-)))  
 - Tomasz 'Kr0tki' Krasuski - for assembling source codes and creating cartridge images of MAC/65 1.01 (1986), MAC XE 3.4i, Assembler 3.4, and MAC/65 3.6, we owe you so much. :-)))  
-- Fred Meijer from the [Atarimuseum in the Netherlands](http://www.atarimuseum.nl) - Thank you so much for providing photos of an ultra rare MAC/65 1.02 cartridge.  
-- Wade Ripkowski - thank you for presenting the instructions to prepare a 720K SpartaDOS disk with MAC/65[1](../1/README.md); great work Wade, thank you very much! :-)  
+- Fred Meijer from the [Atarimuseum in the Netherlands](http://www.atarimuseum.nl) - Thank you so much for providing photos of an ultra-rare MAC/65 1.02 cartridge.  
+- Wade Ripkowski - thank you for presenting the instructions to prepare a 720K SpartaDOS disk with MAC/65[1]; great work Wade, thank you very much! :-)  
   
 # References  
-- [1](../1/README.md) Wade Ripkowski, ["MAC/65 with SpartaDOS](https://unfinishedbitness.info/2014/04/19/mac65-with-spartados/)  
-- [2](../2/README.md) ["MAC/65 Source Code" post #1, AtariAge forums](https://atariage.com/forums/topic/270944-mac65-source-code/)  
-- [3](../3/README.md) ["OSS-D-Day part 2-MAC/65 >1.02-cart&source now in PD" post #1, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/)  
-- [4](../4/README.md) ["OSS-D-Day part 2-MAC/65 >1.02-cart&source now in PD" post #33, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/?do=findComment&comment=3595454)  
-- [5](../5/README.md) ["OSS-D-Day part 2-MAC/65 >1.02-cart&source now in PD" post #22, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/?do=findComment&comment=3594656)  
+- [1] Wade Ripkowski, ["MAC/65 with SpartaDOS](https://unfinishedbitness.info/2014/04/19/mac65-with-spartados/)  
+- [2] ["MAC/65 Source Code" post #1, AtariAge forums](https://atariage.com/forums/topic/270944-mac65-source-code/)  
+- [3] ["OSS-D-Day part 2-MAC/65 >1.02-cart&source now in PD" post #1, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/)  
+- [4] ["OSS-D-Day part 2-MAC/65 >1.02-cart&source now in PD" post #33, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/?do=findComment&comment=3595454)  
+- [5] ["OSS-D-Day part 2-MAC/65 >1.02-cart&source now in PD" post #22, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/?do=findComment&comment=3594656)  
