@@ -267,8 +267,6 @@ Here are cartridge images created by building the sources.
   
 ## Examples - MAC/65 source files  
 - [Floating_Point_ROM_Library](../Floating_Point_ROM_Library/README.md)  
-- [Copy_OS_ROM_to_RAM](../Copy_OS_ROM_to_RAM/README.md)  
-- [CX85_Keyboard_Handler](../CX85_Keyboard_Handler/README.md)  
 - [MOUSE_ROUTINE_IN_AN_INTERRUPT](../MOUSE_ROUTINE_IN_AN_INTERRUPT/README.md)  
 - [RAF_Commander](../RAF_Commander/README.md) - a Norton Commander Clone for the 8bit Atari  
 - [Sweet16Mac65](../Sweet16Mac65/README.md) a virtual 16bit machine for the 8bit ATARI  

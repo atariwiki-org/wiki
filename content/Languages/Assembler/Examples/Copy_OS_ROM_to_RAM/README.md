@@ -1,10 +1,9 @@
----
-title: Copy OS ROM to RAM
----
 # Copy OS ROM to RAM  
-  
+
 by Russ Gilbert, found in comp.sys.atari.8bit  
-  
+
+Assembler: MAC/65
+
 ```
 'MOVEOS.M65'
 10       .TITLE      MOVE OS TO RAM
@@ -53,5 +52,3 @@ by Russ Gilbert, found in comp.sys.atari.8bit
 0440     .END 
 **************
 ```
-  
-Russ Gilbert  
