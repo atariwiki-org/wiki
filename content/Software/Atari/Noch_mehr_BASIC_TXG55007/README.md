@@ -1,8 +1,6 @@
----
-title: Noch mehr BASIC TXG 55007
----
-# Noch mehr BASIC - TXG 55007 ; Copyright (C) 1984 Atari Elektronik Vertriebsgesellschaft mbH & Dirk Beyelstein  
-  
+# Noch mehr BASIC (TXG55007)
+
+Copyright (C) 1984 Atari Elektronik Vertriebsgesellschaft mbH & Dirk Beyelstein  
   
   
 Die nachstehende Software wurde ursprünglich auf Kassette vertrieben und enthielt neben den Programmen auch die Stimme der damaligen Tagesschau-Sprecherin [Dagmar Berghoff](https://de.wikipedia.org/wiki/Dagmar_Berghoff), um den Atari Usern die Sprache BASIC näher zu bringen.  
@@ -104,16 +102,16 @@ CAS-Images mit den einzuladenden Basic-Programmen von Teil A bis D jeweils einsc
 ## Quelltexte  
   
 ## Bilder  
-![](attachments/Noch_mehr_Basic_a_.jpg)  
+![](attachments/Noch_mehr_Basic_a.jpg)  
 Noch mehr BASIC - TXG 55007 - Box - Seite 1  
   
-![](attachments/Noch_mehr_Basic_b_.jpg)  
+![](attachments/Noch_mehr_Basic_b.jpg)  
 Noch mehr BASIC - TXG 55007 - Box - Seite 2  
   
 ![](attachments/Info_.jpg)  
 Noch mehr BASIC - TXG 55007 - Info  
   
-![](attachments/Noch+mehr+Basic.jpg)  
+![](attachments/Noch_mehr_Basic-Preloader.jpg)  
 Noch mehr BASIC - TXG 55007 - Vorladeprogramm zum Kurs  
   
 ![](attachments/Lektion1.jpg)  

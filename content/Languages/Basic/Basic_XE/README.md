@@ -1,7 +1,5 @@
----
-title: Basic XE
----
 # Basic XE  
+
 OSS, 1984  
   
   
