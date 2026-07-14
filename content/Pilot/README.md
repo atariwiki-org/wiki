@@ -1,12 +1,12 @@
 ---
 title: Pilot
 ---
-# Atari PILOT with Turtle Graphics CX405  
+# PILOT with Turtle Graphics CX405  
   
 ### Background  
-PILOT is an extremely simple programming language written in 1968 explicitly for teaching programming to children. The language consists of one-letter commands followed by a colon, one command per line, and with a very limited set of commands and operations. Variables are prefixed with $, and labels with a *.  
+PILOT is an extremely simple programming language written in 1968 explicitly for teaching programming to children. The language consists of one-letter commands followed by a colon, one command per line, and a very limited set of commands and operations. Variables are prefixed with $, and labels with a *.  
   
-Atari PILOT is unique in that it added a set of commands for graphics and sound using two-letter commands, GR and SO. The graphics system used turtle graphics, with the string following the GR command containing multiple sub-commands like DRAW and TURN. The syntax for these commands is similar to [WSFN](../WSFN/README.md), allowing a series of commands to be repeated by placing them inside parenthesis and putting the number of times to perform it in front.  
+Atari PILOT is unique in that it added a set of commands for graphics and sound using two-letter mnemonics GR and SO. The graphics system used turtle graphics, with the string following the GR command containing multiple sub-commands like DRAW and TURN. The syntax for these commands is similar to [WSFN](../WSFN/README.md), allowing a series of commands to be repeated by placing them inside parentheses and putting the number of times to perform them in front.  
   
 For editing purposes, Atari PILOT uses line numbers, which were not part of the original language.  However, these can be skipped by using the AUTO feature, which adds these numbers automatically without displaying them on the screen. The screen turns a yellow color when AUTO is active. The editor includes features for renumbering, which suggests it might be the one from [Atari_Assembler_Editor](../Atari_Assembler_Editor/README.md).  
   
@@ -102,7 +102,7 @@ PILOT "Turtle Graphics" Demonstration - cassette B side 1 - thanks to Allan Bush
 PILOT Do-It-Yourself Slide Show - cassette B side 2 - thanks to Allan Bushman for scanning  
 - [Pilot_Education_Package-Cassette_B_side_2.cas](attachments/Pilot_Education_Package-Cassette_B_side_2.cas)  
   
-Both cassettes just include program data only! No audio! Therefore, we prefer to have it on diskette, please see above under: ATR-Images  
+Both cassettes include only program data and ao audio! Therefore, we prefer to have it on a diskette. Please see above under: ATR-Images  
   
 ## Atari Pilot Cassettes CX4113 Program Pictures  
 ![](attachments/Atari+PILOT+Demonstration+Program+Cassettes+CX4113-01.jpg)  
