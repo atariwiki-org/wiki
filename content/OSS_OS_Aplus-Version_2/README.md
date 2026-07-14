@@ -14,38 +14,15 @@ Copyright (C) 1981-1983 OSS, Inc.
 
 ## Version 2 File Structure  
   
-OS/A+ version 2 was produced to provide the maximum  
-compatibility possible with Atari's DOS 2.0s. In fact, the FMS  
-used is identical to that used by Atari (for a simple reason: OSS  
-wrote Atari's [DOS](../DOS/README.md)). For reasons known best to Atari, OSS were  
-instructed to create Atari's FMS around a linked-sector disk  
-space management scheme. In essence, this means that the last  
-three bytes of each sector in a disk file contain a link to the  
-next sector in that same file. The positive result of this is  
-that one produces a relatively small, memory-resident, disk  
-manager which is nevertheless capable of dynamically allocating  
-diskette space (unlike, for example, a contiguous file disk  
-manager). The biggest disadvantage of the scheme seems to be  
-that one may not do direct (random) access to the bytes of such  
-files, as one CAN do with either a contiguous or mapped file  
-allocation technique. Also, a disk error in the middle of a  
-linked file means a loss of access to the rest of the file.  
+OS/A+ version 2 was produced to provide the maximum compatibility possible with Atari's DOS 2.0s. In fact, the FMS used is identical to that used by Atari (for a simple reason: OSS wrote Atari's [DOS](../DOS/README.md)). For reasons known best to Atari, OSS were instructed to create Atari's FMS around a linked-sector disk space management scheme. In essence, this means that the last three bytes of each sector in a disk file contain a link to the next sector in that same file. The positive result of this is that one produces a relatively small, memory-resident disk manager which is nevertheless capable of dynamically allocating diskette space (unlike, for example, a contiguous file disk manager). The biggest disadvantage of the scheme seems to be that one may not do direct (random) access to the bytes of such files, as one CAN do with either a contiguous or mapped file allocation technique. Also, a disk error in the middle of a linked file means a loss of access to the rest of the file.  
   
-The purpose of the FMS is to organize the 720 data sectors  
-available on an 810 (or its double density equivalent) diskette  
-into a system of named data files. FMS has three primary data  
-structures that it uses to organize the disk:  
+The purpose of the FMS is to organize the 720 data sectors available on an 810 (or its double density equivalent) diskette into a system of named data files. FMS has three primary data structures that it uses to organize the disk:  
   
 1. Volume Table of Contents (VTOC): a single disk sector which keeps track of which disk sectors are available for use in data files.  
 1. Directory: a group of eight contiguous sectors used to associate file names with the location of the files' sectors on the disk. Each Directory entry contains a file name, a pointer to the first data sector in the file, and some miscellaneous information.  
 1. Data Sectors: sectors containing the actual data and some control information that links one data sector to the next data sector in the file.  
   
-NOTE: since double density diskette sectors contain 256 bytes  
-whereas single density (810 drive) sectors contain only 128,  
-certain absolute byte number references may vary depending upon  
-the diskette in use. Throughout this chapter, in such cases, the  
-single density number is given followed by the double density  
-number in square brackets \[thus~\].  
+NOTE: since double density diskette sectors contain 256 bytes whereas single density (810 drive) sectors contain only 128, certain absolute byte number references may vary depending upon the diskette in use. Throughout this chapter, in such cases, the single density number is given followed by the double density number in square brackets \[thus~\].  
   
 ## DATA SECTORS  
   
@@ -64,12 +41,13 @@ The Directory starts at disk sector $169 and continues for eight contiguous sect
 A Directory entry is 16 bytes in size, as illustrated by the Table below. The directory entry flag field gives specific status information about the current entry. The directory count field is used to store the number of sectors currently used by the file. The last eleven bytes of the entry are the actual file name. The primary name is left justified in the primary name field. The name extension is left justified in the extension field. Unused filename characters are blanks ($20). The Start Sector Number field points to the first sector of the data file.  
   
   
-|| Starting Byte # of Field || Length of Field (bytes) ||   Purpose of Field  ||  
-| 0                                 | 1                                  | Flag byte. Meanings of bits: $00 Entry never used $80 Entry was deleted $40 Entry in use $20 Entry protected $02 a version 2 file $01 Now writing file |  
-| 1                                 | 2                                  | Count (LSB, MSB) of sectors in file |  
-| 3                                 | 2                                  | Start sector (LSB, MSB) of link chain  |  
-| 5                                 | 8                                  | File name, primary  |  
-| 13                               | 3                                  | File name, extension |  
+| Starting Byte # of Field         | Length of Field (bytes)            |   Purpose of Field                     |
++----------------------------------+------------------------------------+
+| 0                                | 1                                  | Flag byte. Meanings of bits: $00 Entry never used $80 Entry was deleted $40 Entry in use $20 Entry protected $02 a version 2 file $01 Now writing file |  
+| 1                                | 2                                  | Count (LSB, MSB) of sectors in file    |  
+| 3                                | 2                                  | Start sector (LSB, MSB) of link chain  |  
+| 5                                | 8                                  | File name, primary                     |  
+| 13                               | 3                                  | File name, extension                   |  
   
   
   
