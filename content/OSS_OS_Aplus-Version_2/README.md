@@ -42,7 +42,7 @@ A Directory entry is 16 bytes in size, as illustrated by the Table below. The di
   
   
 | Starting Byte # of Field         | Length of Field (bytes)            |   Purpose of Field                     |
-+----------------------------------+------------------------------------+
++----------------------------------+------------------------------------+----------------------------------------|
 | 0                                | 1                                  | Flag byte. Meanings of bits: $00 Entry never used $80 Entry was deleted $40 Entry in use $20 Entry protected $02 a version 2 file $01 Now writing file |  
 | 1                                | 2                                  | Count (LSB, MSB) of sectors in file    |  
 | 3                                | 2                                  | Start sector (LSB, MSB) of link chain  |  
@@ -66,7 +66,7 @@ The sector bitmap is a contiguous string of 90 bytes, each containing 8 bits. Th
   
   
 | Starting Byte # of Field           | Length of Field (bytes)           |   Purpose of Field       |
-+------------------------------------+-----------------------------------+--------------------------+
+|------------------------------------+-----------------------------------+--------------------------|
 | 0                                  | 1                                 | Reserved (for type code) |  
 | 1                                  | 2                                 | Total number of sectors  |  
 | 3                                  | 2                                 | Number of unused sectors |  
