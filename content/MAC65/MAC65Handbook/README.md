@@ -1260,13 +1260,12 @@ characters ARE converted.
   
 directive:  .CBYTE  
   
-purpose:    same as .BYTE except that the most  
-significant bit of the last byte of a  
-string argument is inverted  
+purpose:    same as .BYTE except that the most significant bit of the last byte of a string argument is inverted  
   
-usage:  
-\[label\].CBYTE \[+exp\](exp)(strvar) \[(exp)(strvar)...\]  
-  
+usage: 
+\[label\] .CBYTE \[+exp\] (exp)(strvar) \[,(exp)(strvar)...\]  
+\[label\] .SBYTE \[+exp\] (exp)(strvar) \[,(exp)(strvar)...\]
+
 The .CBYTE directive may often be used to advantage when building tables of  
 strings, etc., where it is desirable to indicate the end of a string by some  
 method other than, for example, storing a following zero byte.  By inverting  
@@ -1347,7 +1346,7 @@ directive:  .ERROR
   
 purpose:    force an assembler error and message  
   
-usage:      \[label\] .ERROR [string](../string/README.md)  
+usage:      \[label\] .ERROR \[string\]
   
 The .ERROR directive allows the user to generate a pseudo error.  The string  
 specified by .ERROR will be sent to the screen as if it were an  
@@ -1364,7 +1363,7 @@ purpose:    specifies floating point constant values
 to be placed in the output object.  
   
 usage:  
-\[label\] .FLOAT floating-constant [flotation-constant...](attachments/flotation-constant...)  
+\[label\] .FLOAT floating-constant \[, flotation-constant...\]
   
 This directive would normally only be used by the programmer wishing to access  
 the built-in floating point routines of the Atari Operating System ROM's (or  
@@ -1400,7 +1399,7 @@ purpose:    choose to perform or not perform some portion of an assembly based
 on the "truth" of an expression.  
   
 usage:      .IF  exp  
-[.ELSE](../.ELSE/README.md)  
+\[.ELSE\]
 .ENDIF  
   
 usage note: there may be any number of lines of assembly language code or  
@@ -1594,14 +1593,14 @@ directive:  .PAGE
 purpose:    provides page headings and/or moves  
 to top of next page of listing  
   
-usage:      .PAGE [string](../string/README.md)  
+usage:      .PAGE \[string\]
   
 usage note: no label should be used with .PAGE  
   
 The .PAGE directive allows the user to specify a page heading.  The page  
 heading will be printed below the page number and title heading.  
   
-.PAGE will eject the next page, nd prints the most recent title and page  
+.PAGE will eject the next page, and prints the most recent title and page  
 headings.  
   
 Example:  300  .PAGE "EXECUTE LABEL SEARCH"  
@@ -1681,11 +1680,11 @@ number.
   
 ### Section 4.21  
   
-directive:  .WORD [See_also_.DBYTE](../See_also_.DBYTE/README.md)  
+directive:  .WORD, see also .DBYTE
   
 purpose:    place 16 bit word values in output object  
   
-usage:      \[label\] .WORD exp [exp_...](attachments/exp_...)  
+usage:      \[label\] .WORD exp \[,exp_...\]
   
 The .WORD and .DBYTE directives both put the value of each following expression  
 into the object code as tow bytes.  But where .WORD will assemble the  
@@ -1890,7 +1889,7 @@ EXAMPLE:
 12 ; This macro will increment the specified word  
 13 ;  
 14 ; The calling format is:  
-15 ;      BUMP address [increment](../increment/README.md).  
+15 ;      BUMP address \[increment\]
 16 ; If increment is not given, 1 is assumed  
 17 ;  
 18 .IF%0=0 .OR %0>2  
@@ -1987,7 +1986,7 @@ A Macro string example:
 13 ; parameter 1, but if no parameter string is  
 14 ; passed, only an EOL will be printed.  
 15 ;  
-16 ; The calling format is:  PRINT [string](../string/README.md)  
+16 ; The calling format is:  PRINT \[string\]
 17 ;  
 18  .IF %0 = 1 ; is there a string to print?  
 19  JMP PASTSTR ; yes, jump over string storage  

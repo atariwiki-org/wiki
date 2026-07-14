@@ -1,20 +1,19 @@
----
-title: Mac65
----
-# MAC/65 Macro Assembler; Copyright Stephen D. Lawrow; OSS, Inc.; ICD, Inc. & FTe  
+# MAC/65 Macro Assembler
+
+Copyright (C) Stephen D. Lawrow; OSS, Inc.; ICD, Inc. & FTe  
   
 MAC/65 is a 6502 macro assembler written by Stephen D. Lawrow and originally sold by [Optimized Systems Software](https://en.wikipedia.org/wiki/Optimized_Systems_Software) for the Atari 8-bit computers. It was first released on disk in 1982, then later on a 16 KiB bank-switched 'SuperCartridge'.  
   
-MAC/65 along with other OSS products became part of ICD's catalogue of Atari products in January 1988. In 1994, Fine Tooned Engineering obtained limited rights to ICD's 8-bit products, including MAC/65.  
+MAC/65 along with other OSS products became part of ICD's catalog of Atari products in January 1988. In 1994, Fine Tooned Engineering obtained limited rights to ICD's 8-bit products, including MAC/65.  
   
   
 # Disk versions  
   
-%%(float:right)![](attachments/MAC65-Disk.jpg)%%  
+![](attachments/MAC65-Disk.jpg) 
   
 MAC/65 was initially developed as a disk-based program. It replaced an earlier assembler, [EASMD](../EASMD/README.md), in OSS's product portfolio. The first version, 2.00, was released in 1982.  
   
-The MAC/65 disk also included a debugger, [BUG/65](../BUG65/README.md), developed by McStuff Company. The disk also contained a DOS; initially it was [OS/A+](../OSS_OS-A_/README.md), later replaced with [DOS XL](../OSS_DOS_XL/README.md).  
+The MAC/65 disk also included a debugger, [BUG/65](../BUG65/README.md), developed by McStuff Company. The disk also contained a DOS; initially it was [OS/A+](../OSS_OS-A_/README.md), later replaced with [DOS XL](../DOS_XL/README.md).  
   
 ## MAC/65 2.00 (1982)  
   
@@ -69,7 +68,7 @@ MAC/65 4.20 was not without bugs. OSS published a few patches for it in their Su
   
 # Cartridge versions  
   
-After version 4.20, Lawrow rewrote MAC/65 for cartridge medium. It utilized OSS's own "SuperCartridge" - a 16 KB bankswitched cartridge that occupied only 8 KB of Atari memory, and could be disabled or enabled at will. It provided much more comfortable experience than the disk version. MAC/65 cartridges were produced using both two-chip and one-chip variants of the SuperCartridge.  
+After version 4.20, Lawrow rewrote MAC/65 for cartridge medium. It utilized OSS's own "SuperCartridge" - a 16 KB bank-switched cartridge that occupied only 8 KB of Atari memory, and could be disabled or enabled at will. It provided a much more comfortable experience than the disk version. MAC/65 cartridges were produced using both two-chip and one-chip variants of the SuperCartridge.  
   
 The cartridge version replaced BUG/65 with another debugger - [DDT](../DDT/README.md) (Dunion's Debugging Tool) developed by James J. Dunion.  
   
@@ -85,7 +84,7 @@ The first cartridge version, numbered 1.00, was released in 1984.
 - MAC/65 1.00 with DDT - two-chip cartridge (043M bank order): [BIN image](attachments/MAC-65-Version_1.00.rom), [CAR image](attachments/MAC-65-Version_1.00.car)  
   
 ## MAC/65 1.01 (1984)  
-Soon after, OSS released version 1.01, with some bugfixes.  
+Soon after, OSS released version 1.01, with some bug fixes.  
   
 ![](attachments/MAC-65-Version+1.01.gif)  
   
@@ -93,13 +92,13 @@ Soon after, OSS released version 1.01, with some bugfixes.
 - MAC/65 1.01 with DDT - one-chip cartridge (M091 bank order): [BIN image](attachments/MAC_65_1.01.rom), [CAR image](attachments/MAC_65_1.01_with_DDT.car)  
   
 ### Source code  
-In 2017 AtariAge user Alfred published source code for MAC/65 1.01 that he had obtained from ICD back in the day.[2](../2/README.md) Dated 1988, the sources are in the format of Mike Gustafson's cross-assembler that was used internally at ICD. When ICD bought the rights to OSS portfolio, they apparently converted the sources from their original MAC/65 syntax to ICD's cross-assembler.  
+In 2017 AtariAge user Alfred published source code for MAC/65 1.01 that he had obtained from ICD back in the day.[2](../2/README.md) Dated 1988, the sources are in the format of Mike Gustafson's cross-assembler that was used internally at ICD. When ICD bought the rights to the OSS portfolio, they apparently converted the sources from their original MAC/65 syntax to ICD's cross-assembler.  
   
 - [MAC/65 1.01 sources from ICD 1988](attachments/Mac65.zip)  
 - [Helper package to assemble the ICD sources using ca65](attachments/mac65-ca65.zip)  
   
 ## MAC/65 1.02 (1984)  
-Version 1.02 followed still in the same year, with yet more bugfixes and a slightly-darkened background colour.  
+Version 1.02 followed in the same year, with yet more bug fixes and a slightly darkened background color.  
   
 ![](attachments/MAC-65-Version+1.02.gif)  
   
@@ -123,7 +122,7 @@ Version 1.02 followed still in the same year, with yet more bugfixes and a sligh
   
 # MAC/65 ToolKit  
   
-OSS offered a companion disk to MAC/65. MAC/65 ToolKit was sold either separately or in bundle with MAC/65, and contained a collection of helpful macros and routines implementing various common operations. The ToolKit supported both disk and cartridge versions of MAC/65.  
+OSS offered a companion disk to MAC/65. MAC/65 ToolKit was sold either separately or in a bundle with MAC/65, and contained a collection of helpful macros and routines implementing various common operations. The ToolKit supported both disk and cartridge versions of MAC/65.  
   
 ## Disk images  
 - [MAC/65 ToolKit](attachments/Mac_65_Toolkit.atr)  
@@ -216,7 +215,7 @@ Here are cartridge images created by building the sources.
 ** [Disk 1 (master)](attachments/mac-xl-master-3.6-1988.atr)  
 ** [Disk 2 (slave)](attachments/mac-xl-slave-3.6-1988.atr)  
   
-This version of MAC/65 presents itself on the title screen as "MAC/65 version 3.6" with date "01/07/88". Judging from the dates in the source code, this is chronologically the last known version of MAC/65. It is currently unknown what are the functional differences between this version and the other ones.  
+This version of MAC/65 appears on the title screen as "MAC/65 version 3.6" with the date "01/07/88". Judging from the dates in the source code, this is chronologically the last known version of MAC/65. It is currently unknown what the functional differences are between this version and the other ones.  
   
 ![](attachments/MAC-65_3.6.jpg)  
   
