@@ -1,29 +1,27 @@
----
-title: OSS A+ 4
----
-# OS/A+ Version 4 ; OSS DOS II+ Version 4.2 ; Copyright (C) 1984 OSS, Inc.  
-  
-  
+# OS/A+ Version 4 / OSS DOS II+ Version 4.2
+
+Copyright (C) 1984 OSS, Inc.  
+
 ( information from the OS/A+ Version 4 Handbook )  
   
 ## ATR image  
-- [OSS DOS II+/D V:4.2M](attachments/OSS_DOS_II__Version_4.2.atr)  
+- [OSS DOS II+/D V:4.2M](attachments/OSS_DOS_IIplus_Version_4.2.atr)  
   
 ## Version 4 File Structure  
   
-OS/A+ version 4 is an operating system which provides all the power and flexibility of the Atari CIO scheme and also uses an advanced File Management System (FMS) to provide fast and effective random access files. OS/A+ version 4, as it appears to the user, is virtually identical with OS/A+ version 2, except that it work with disk drives ranging in storage size from 128K bytes to over 15 Megabytes.  
+OS/A+ version 4 is an operating system which provides all the power and flexibility of the Atari CIO scheme and also uses an advanced File Management System (FMS) to provide fast and effective random access files. OS/A+ version 4, as it appears to the user, is virtually identical with OS/A+ version 2, except that it works with disk drives ranging in storage size from 128K bytes to over 15 Megabytes.  
   
-OS/A+ version 4 utilizes a mapped file structure which allows true random access to data files. In such a scheme, special segments of a file act as pointers to the blocks of data comprising a file. By allowing the user to specify the size of the data blocks pointed to, OS/A+ is able to handle large and small files and disks with unsurpasssed speed and utility.  
+OS/A+ version 4 utilizes a mapped file structure which allows true random access to data files. In such a scheme, special segments of a file act as pointers to the blocks of data comprising a file. By allowing the user to specify the size of the data blocks pointed to, OS/A+ is able to handle large and small files and disks with unsurpassed speed and utility.  
   
-The OS/A+ random access file managment system treats each disk under its control as a collection of contiguous physical- sectors of either 256 or 512 bytes in length, which are numbered starting with sector zero. These sectors are logically grouped into blocks of n sectors in length, where n is a power of two between I and 128. All files on a disk are allocated space in segments of at least one block in length.  
+The OS/A+ random access file management system treats each disk under its control as a collection of contiguous physical sectors of either 256 or 512 bytes in length, which are numbered starting with sector zero. These sectors are logically grouped into blocks of n sectors in length, where n is a power of two between I and 128. All files on a disk are allocated space in segments of at least one block in length.  
   
-![](attachments/version4layout.png)  
+![](attachments/OS_Aplus-Version_4-Directory_Entry_Structure.png)  
   
 There are several non-obvious advantages to this scheme, so bear with us as we try to explain some of them.  
   
-1. We are able to handle disks with 128, 256, or-512 bytes per sector. (To be truthful, with 128 bytes per sector drives we would use pairs of sectors to emulate 256 byte sectors, since a 128 byte file map is not really adequate.)  
+1. We are able to handle disks with 128, 256, or-512 bytes per sector. (To be truthful, with 128-byte-per-sector drives, we would use pairs of sectors to emulate 256-byte sectors, since a 128-byte file map is not really adequate.)  
 1. We allow each DISK DRIVE to be assigned its own "drive blocking factor". That means that a quadruple density floppy might have blocks consisting of two 256-byte sectors while a 10 MB disk might use blocks of four 512-byte sectors. Note that this concept of blocking factors is not new or unique: CP/M 2.2 allows blocking factors of IKB, 2KB, and 4KB, depending on disk size. We are simply a little more flexible.  
-1. We allow each FILE to be assigned its own "file blocking factor". Thus, even on a floppy with 512 byte blocks, a given FILE may use 8 KByte blocks, thus guaranteeing at most one disk read to access any given sector of the file. (On the Apple II version of this product, where the drive blocking factor is perforce 1 for standard Apple drives, a file blocking factor of 8 -- 2 KByte blocks -essentially doubles random access speed.)  
+1. We allow each FILE to be assigned its own "file blocking factor". Thus, even on a floppy with 512-byte blocks, a given FILE may use 8 KByte blocks, thus guaranteeing at most one disk read to access any given sector of the file. (On the Apple II version of this product, where the drive blocking factor is perforce 1 for standard Apple drives, a file blocking factor of 8 -- 2 KByte blocks -essentially doubles random access speed.)  
 1. Although not yet implemented nor planned for first release, the directory structure is set up in such a way that, if desired, we could implement multiple and/or hierarchical directories (ala UNIX, for example). Even CIO (on the Apple II) has been altered to support the concept of a default device and/or directory.  
 1. Random access files are easy and practical. Unix-like "LSEEKs" are accomplished (via the "POINT" XIO call in section x.xx) to any byte of any file.  
 1. Except for those rare programs that somehow depend on having 125 bytes of data per sector, current Atari application programs (including Atari BASIC and programs written thereunder) will notice NO CHANGE in their interface with the operating system. Of course, some of the currently unused options will be available to take advantage of such features as file blocking factors, but they will not be necessary to the proper functioning of the system.  
@@ -53,7 +51,7 @@ In order to keep track of what blocks on a particular disk are available for use
   
 The disk directory holds information describing the existing files on a particular disk. The directory is allocated on the disk by disk blocks, each sector of which holds information on a certain number of files (7 for 256-byte sectors, 14 for 512-byte sectors). The blocks themselves are linked, each one holding the disk address (block number) of its successor, with the last block having a null link (block number = 0). Each entry of the directory describes a particular file. An entry for a single file contains the file's name, its length in sectors (see exceptions for DOS 3.3 diskettes), its file type byte (see below), and a pointer to the start of the file map for that file.  
   
-The file name consists of a string of up to 30 characters excluding spaces, commas, carriage returns, or nulls. Characters within a directory entry will have their upper bit inverted. the file name will be padded at the right with inverse video blanks (hex $AO).  
+The file name consists of a string of up to 30 characters excluding spaces, commas, carriage returns, or nulls. Characters within a directory entry will have their upper bit inverted. The file name will be padded at the right with inverse video blanks (hex $AO).  
   
 The file type byte is used as follows:  
   
@@ -61,7 +59,7 @@ BITS 0-3: file use type -- values 0,1,2, and 4 are currently used on the Apple s
   
 BITS 4-6: file blocking factor -- a value from 0 to 7 (see next section)  
   
-BIT 7: file protection -- if this bit is set then the file is protected from accidental write access, erasure, or renaming. The pointer to the start of the file map is a two byte value which is the disk block number of the first file map map block.  
+BIT 7: file protection -- if this bit is set, then the file is protected from accidental write access, erasure, or renaming. The pointer to the start of the file map is a two byte value which is the disk block number of the first file map block.  
   
 Format of directory sectors:  
   
@@ -169,6 +167,3 @@ Each read/write sector routine receives its parameters through the Device Contro
 | 2400-2BFF | file manager buffers-- default size |  
 | 2COO-BFFF | user, language, and graphics memory |  
 | COOO-FFFF | I/0 locations and system rom |  
-  
-  
-  

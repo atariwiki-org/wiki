@@ -1,17 +1,17 @@
----
-title: OSS A+ 2
----
-# OSS OS/A+ Version 2.10; Copyright (C) 1981-1983 OSS, Inc.  
+# OS/A+ Version 2.10
+
+Copyright (C) 1981-1983 OSS, Inc.  
   
 ## ATR image  
-- [OSS OS/A+ Version 2.10](attachments/OSS_OS-Aplus_v2.atr)  
+- [OS/A+ Version 2.10](attachments/OS_Aplus_Version_2.atr)  
   
 ## Manuals  
-- [OSS OS/A+ manual](attachments/OS_A_Plus_manual.pdf) ; size: 7.2 MB ; thanks to Atarimania! :-)  
-- [OSS OS/A+ manual June 1983](attachments/OS_A_Plus_June_83_rev.pdf) ; size: 4.9 MB ; thanks to Atarimania! :-)  
-- [OSS OS/A+ bug sheet](attachments/OS_A_Plus_Bug_Sheet.pdf) ; thanks to Atarimania! :-)  
+- [OS/A+ Version 2 Manual, 1982](../../media/OSS_Aplus_Version_2/attachments/OS_Aplus_Manual-1982_Revision.pdf) ; size: 7.2 MB ; thanks to Atarimania! :-)  
+- [OS/A+ Version 2 Manual, June 1983](../../media/OSS_Aplus_Version_2/attachments/OS_Aplus_Manual-1983-06_Revision.pdf) ; size: 4.9 MB ; thanks to Atarimania! :-)  
+- [OS/A+ Version 2 Bug Sheet](attachments/OS_Aplus_Version_2-Bug_Sheet.pdf) ; thanks to Atarimania! :-)  
   
 (Information from the OSS/A+ 4.0 Handbook)  
+
 ## Version 2 File Structure  
   
 OS/A+ version 2 was produced to provide the maximum  
@@ -32,7 +32,7 @@ allocation technique. Also, a disk error in the middle of a
 linked file means a loss of access to the rest of the file.  
   
 The purpose of the FMS is to organize the 720 data sectors  
-avilable on an 810 (or its double density equivalent) diskette  
+available on an 810 (or its double density equivalent) diskette  
 into a system of named data files. FMS has three primary data  
 structures that it uses to organize the disk:  
   
@@ -53,9 +53,9 @@ A Data Sector is used to contain the file's data bytes. Each 128 \[256~\] byte d
   
 The sector byte count is contained in byte 127 \[255~\]. This value is the actual number of data bytes in this particular sector. The value may range from zero (no data) to 125 \[253~\] (a full sector). Any data sector in a file may be a short sector (contain less than 125 \[253~\] data bytes).  
   
-The left six bits of byte 125 \[253~\] contain the file number of the file. This number corresponds to the location of the file's entry in the Directory. Directory entry zero in Directory sector $169 has a file number of zero. Entry one in Directory sector $169 has a file number one, and so forth. The file number value may range from zero to 63 ($3F). The file number is used to insure that the sectors of one file do not get mixed up with the sectors of another file.  
+The left six bits of byte 125 \[253~\] contain the file number of the file. This number corresponds to the file's entry in the Directory. Directory entry zero in Directory sector $169 has a file number of zero. Entry one in Directory sector $169 has a file number one, and so forth. The file number value may range from zero to 63 ($3F). The file number is used to ensure that the sectors of one file do not get mixed up with the sectors of another file.  
   
-The right two bits of byte 125 \[253~\] (and all eight bits of byte 126 \[254~\]) are used to point to the next data sector in the file. The ten bit number contains the actual disk sector number of the next sector. Its value ranges from zero to 719 ($2CF). If the value is zero then there are no more sectors in the file sector chain. The last sector in the file sector chain is the End-Of-File sector. The End-of-File sector will almost always be a short sector.  
+The right two bits of byte 125 \[253~\] (and all eight bits of byte 126 \[254~\]) are used to point to the next data sector in the file. The ten-bit number contains the actual disk sector number of the next sector. Its value ranges from zero to 719 ($2CF). If the value is zero, then there are no more sectors in the file sector chain. The last sector in the file sector chain is the End-Of-File sector. The End-of-File sector will almost always be a short sector.  
   
 ## DISK DIRECTORY  
   
@@ -66,39 +66,38 @@ A Directory entry is 16 bytes in size, as illustrated by the Table below. The di
   
 || Starting Byte # of Field || Length of Field (bytes) ||   Purpose of Field  ||  
 | 0                                 | 1                                  | Flag byte. Meanings of bits: $00 Entry never used $80 Entry was deleted $40 Entry in use $20 Entry protected $02 a version 2 file $01 Now writing file |  
-| 1                                 | 2                                  | Count (LSB,MSB) of sectors in file |  
-| 3                                 | 2                                  | Start sector (LSB,MSB) of link chain  |  
+| 1                                 | 2                                  | Count (LSB, MSB) of sectors in file |  
+| 3                                 | 2                                  | Start sector (LSB, MSB) of link chain  |  
 | 5                                 | 8                                  | File name, primary  |  
 | 13                               | 3                                  | File name, extension |  
   
   
   
-NOTE: only eight file directory entries are stored per sector, even on double density diskettes.  
+NOTE: only eight file directory entries are stored per sector, even on double-density diskettes.  
   
-![](attachments/version2dir.png)  
-  
+![](attachments/OS_Aplus-Version_2-Directory_Entry_Structure.png)  
   
 Table: Directory Entry Structure  
   
 ## VOLUME TABLE OF CONTENTS (VTOC)  
   
-The VTOC sector ($168) is used to keep track of which disk sectors are available for data file usage. The Table below illustrates the organization of the VTOC sector. The most important part of the VTOC is the sector bit map.  
+The VTOC sector ($168) is used to track which disk sectors are available for data file use. The Table below illustrates the organization of the VTOC sector. The most important part of the VTOC is the sector bitmap.  
   
-The sector bit map is a contiguous string of 90 bytes, each of which contains eight bits. There are a total of 720 (90 x 8) bits in the bit map -- one for each possible sector on an 810 diskette. The 90 bytes of bit map start at VTOC byte ten ($OA). The leftmost bit ($80 bit) of byte $OA represents sector zero. The bit just to the right of the leftmost bit ($40 bit) represents sector one. The rightmost bit (bit $01) of byte $63 represents sector 719.  
+The sector bitmap is a contiguous string of 90 bytes, each containing 8 bits. There are a total of 720 (90 x 8) bits in the bitmap -- one for each possible sector on an 810 diskette. The 90 bytes of bitmap start at VTOC byte ten ($0A). The leftmost bit ($80 bit) of byte $OA represents sector zero. The bit just to the right of the leftmost bit ($40 bit) represents sector one. The rightmost bit (bit $01) of byte $63 represents sector 719.  
   
   
   
-|| Starting Byte # of Field || Length of Field (bytes) ||   Purpose of Field  ||  
+| Starting Byte # of Field           | Length of Field (bytes)           |   Purpose of Field       |
++------------------------------------+-----------------------------------+--------------------------+
 | 0                                  | 1                                 | Reserved (for type code) |  
-| 1                                  | 2                                 | Total number of sectors |  
+| 1                                  | 2                                 | Total number of sectors  |  
 | 3                                  | 2                                 | Number of unused sectors |  
-| 5                                  | 5                                 | Reserved   |  
-| 10                                | 90                               | Sector usage bit map. Each bit represents a particular sector: a 1 bit indicates an available sector, a 0 bit indicates a sector in use. |  
-| 100                              | 28                               | Reserved (could be used for version 2 type DOS with more than 720 sectors per disk) |  
-  
+| 5                                  | 5                                 | Reserved                 |  
+| 10                                 | 90                                | Sector usage bitmap. Each bit represents a particular sector: a 1 bit indicates an available sector, a 0 bit indicates a sector in use. |  
+| 100                                | 28                                | Reserved (could be used for version 2 type DOS with more than 720 sectors per disk) |  
   
 Table: Structure of the VTOC Sector  
   
 ## Picture  
-![](attachments/OS_A_Plus_d7.jpg)  
-OSS/A+ Version 2 diskette ; thanks to Atarimania! :-)  
+![](attachments/OS_Aplus_Version_2-Disk.jpg)  
+OS/A+ Version 2 diskette; thanks to Atarimania! :-)  
