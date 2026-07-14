@@ -43,7 +43,8 @@ A Directory entry is 16 bytes in size, as illustrated by the Table below. The di
   
 | Starting Byte # of Field         | Length of Field (bytes)            |   Purpose of Field                     |
 |----------------------------------|------------------------------------|----------------------------------------|
-| 0                                | 1                                  | Flag byte. Meanings of bits: $00 Entry never used $80 Entry was deleted $40 Entry in use $20 Entry protected $02 a version 2 file $01 Now writing file |  
+| 0                                | 1                                  | Flag byte. Meanings of bits: $00 Entry never used
+                                                                           $80 Entry was deleted, $40 Entry in use $20 Entry protected $02 a version 2 file $01 Now writing file |  
 | 1                                | 2                                  | Count (LSB, MSB) of sectors in file    |  
 | 3                                | 2                                  | Start sector (LSB, MSB) of link chain  |  
 | 5                                | 8                                  | File name, primary                     |  
