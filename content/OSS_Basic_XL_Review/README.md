@@ -1,10 +1,16 @@
----
-title: OSS Basic XL Review
----
-# OSS Basic XL Review (german)  
-  
-![](attachments/BasicXLTest_1_0001.png)  
-![](attachments/BasicXLTest_2_0001.png)  
+# BASIC XL Review
+
+Source: Happy Computer, 10/1985
+Language: German
+
+## Scan
+[BASIC XL for Atari im Test](attachments/BASIC_XL_Test.pdf)  
+
+![](attachments/BASIC_XL_Test-01.png)  
+![](attachments/BASIC_XL_Test-02.png) 
+
+
+
   
   
   
