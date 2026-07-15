@@ -13,7 +13,7 @@ MAC/65, along with other OSS products, became part of ICD's catalog of Atari pro
   
 MAC/65 was initially developed as a disk-based program. It replaced an earlier assembler, [EASMD](../EASMD/README.md), in OSS's product portfolio. The first version, 2.00, was released in 1982.  
   
-The MAC/65 disk also included a debugger, [BUG/65](../BUG65/README.md), developed by McStuff Company. The disk also contained a DOS; initially it was [OS/A+](../OSS_OS-A_/README.md), later replaced with [DOS XL](../DOS_XL/README.md).  
+The MAC/65 disk also included a debugger, [BUG/65](../BUG65/README.md), developed by McStuff Company. The disk also contained a DOS. Initially it was [OS/A+](../OS_Aplus/README.md), later replaced with [DOS XL](../DOS_XL/README.md).  
   
 ## MAC/65 2.00 (1982)  
   
@@ -106,8 +106,8 @@ Version 1.02 followed in the same year, with yet more bug fixes and a slightly d
 - MAC/65 1.02 with DDT - two-chip cartridge (034M bank order): [BIN image](attachments/MAC-65-Version_1.02.rom), [CAR image](attachments/MAC-65-Version_1.02.car)  
   
 ## Manual scans  
-- [Mac/65 Manual Rev. 1.2 - original scan](attachments/Mac-65_Rev._1.2_Manual.pdf) ; size: 2 MB  
-- [Mac/65 with DDT manual - good quality](attachments/Mac-65_with_DDT_manual_p._108-Rev_1.2.pdf) ; size: 25.4 MB  
+- [MAC/65 Manual Rev. 1.2 - original scan](attachments/Mac-65_Rev._1.2_Manual.pdf) ; size: 2 MB  
+- [MAC/65 with DDT manual - good quality](attachments/Mac-65_with_DDT_manual_p._108-Rev_1.2.pdf) ; size: 25.4 MB  
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf)  
   
 ## Images  
@@ -128,7 +128,7 @@ OSS offered a companion disk to MAC/65. MAC/65 ToolKit was sold either separatel
 - [MAC/65 ToolKit](attachments/Mac_65_Toolkit.atr)  
   
 ## Manual scans  
-- [Mac/65 ToolKit manual](attachments/MAC-65_ToolKit_Manual.pdf); size: 7 MB  
+- [MAC/65 ToolKit manual](attachments/MAC-65_ToolKit_Manual.pdf); size: 7 MB  
   
 # Later work-in-progress versions  
 Although version 1.02 was the last one published commercially, Stephen Lawrow continued development of MAC/65 - he kept fixing bugs and adding new features, all ultimately unpublished.  
@@ -141,7 +141,7 @@ Note: While source files and binary images in the provided ATR images were resto
   
 ### Source code
   
-MAC/65 1.01 (1986) source code (See [A call for help](../Mac65ACallForHelp/README.md) below):  
+MAC/65 1.01 (1986) source code (See [A call for help](#ACallForHelp) below):  
 - [Disk 1 (master)](attachments/mac-xl-master-icd.atr)  
 - [Disk 2 (slave)](attachments/mac-xl-slave-icd.atr)  
   
@@ -166,11 +166,11 @@ Here are cartridge images created by building the sources.
   
 ## MAC XE 3.4i (1986-02-11)  
   
-The "slave" source disk of MAC/65 v. 3.6 (described in a [later section](../Mac65MAC653.619880107/README.md)) contains a file named MACXE.EPR, which is an assembled binary of a version of MAC/65 that identifies itself as "MAC XE version 3.4i" with the date 2/11/86.  
+The "slave" source disk of MAC/65 v. 3.6 (described in a [later section](#MAC653.619880107)) contains a file named MACXE.EPR, which is an assembled binary of a version of MAC/65 that identifies itself as "MAC XE version 3.4i" with the date 2/11/86.  
   
 ![](attachments/MAC_XE_3.4i.jpg)  
   
-This version is identical to the "Assembler v. 3.4" version (described in the [next section](../Mac65Assembler3.419871221/README.md)), the only difference being the text on the start screen. To build a version that is identical to MACXE.EPR, take the sources of Assembler 3.4 and change the lines 40-70 of D1:COPY:  
+This version is identical to the "Assembler v. 3.4" version (described in the [next section](#Assembler3.419871221)), the only difference being the text on the start screen. To build a version that is identical to MACXE.EPR, take the sources of Assembler 3.4 and change the lines 40-70 of D1:COPY:  
   
 ```
 40 MES   .BYTE $7D,"MAC XE",TAB,TAB  
@@ -190,7 +190,7 @@ The following cartridge images were created by building the Assembler 3.4 source
 ## Assembler 3.4 (1987-12-21)  
   
 ### Source code  
-- Assembler 3.4 source code (See [A call for help](../Mac65ACallForHelp/README.md) below):  
+- Assembler 3.4 source code (See [A call for help](#ACallForHelp) below):  
 ** [Disk 1 (master)](attachments/mac-xl-1.atr)  
 ** [Disk 2(slave)](attachments/mac-xl-2.atr)  
   
@@ -205,7 +205,7 @@ ASM ,,#D1:MASTER.OBJ
   
 The resulting file MASTER.OBJ is a binary DOS file that loads itself into the $3000-$6fff area; these are the 16 KB ROM data for the two-chip variant of the OSS SuperCartridge. To build a ROM image for the one-chip variant, additionally change BANK2 to $D509 and BANK3 to $D501 in D1:EQUATE.INC (lines 180-190).  
   
-As noted in the [previous section](../Mac65MACXE3.4i19860211/README.md), the resulting file MASTER.OBJ differs from the MAC XL 3.4i binary (found on the MAC/65 v. 3.6 source disks) only in the copyright text.  
+As noted in the [previous section](#MACXE3.4i19860211), the resulting file MASTER.OBJ differs from the MAC XL 3.4i binary (found on the MAC/65 v. 3.6 source disks) only in the copyright text.  
   
 ### Cartridge images  
 Here are cartridge images created by building the sources.  
@@ -218,7 +218,7 @@ Here are cartridge images created by building the sources.
 ## MAC/65 3.6 (1988-01-07)  
   
 ### Source code  
-- MAC/65 3.6. source code (See [A call for help](../Mac65ACallForHelp/README.md) below):  
+- MAC/65 3.6. source code (See [A call for help](#ACallForHelp) below):  
 ** [Disk 1 (master)](attachments/mac-xl-master-3.6-1988.atr)  
 ** [Disk 2 (slave)](attachments/mac-xl-slave-3.6-1988.atr)  
   
@@ -226,7 +226,7 @@ This version of MAC/65 appears on the title screen as "MAC/65 version 3.6" with 
   
 ![](attachments/MAC-65_3.6.jpg)  
   
-The "slave" source disk also contains a file named MACXE.EPR, which is an assembled binary of MAC XE 3.4i (described in an [earlier section](../Mac65MACXE3.4i19860211/README.md)).  
+The "slave" source disk also contains a file named MACXE.EPR, which is an assembled binary of MAC XE 3.4i (described in an [earlier section](#MACXE3.4i19860211)).  
   
 The sources are in MAC/65 format; they may be built using MAC/65 1.02. Two disk drives are needed. The master diskette should be placed in the D1: disk drive, and the slave diskette in D2:. The master source file is D1:MASTER. Change RAM to 0 and EPROM to 1 in D1:MASTER (lines 190-200) and then assemble from RAM to disk, by entering:  
   
@@ -258,9 +258,9 @@ Here are cartridge images created by building the sources.
 - [MAC/65 Dissassembler](attachments/Mac_65_Dissassembler.atr)  
   
 ## Manuals  
-- [Mac/65 Manual-ABBUC version 2006](attachments/MAC65_Assembler.pdf) ; ABBUC version 2006 by Andreas Bertelmann ; size: 176 KB  
-- [Mac/65 Handbook](../Mac65Handbook/README.md)  
-- [Mac/65 Manual](http://www.mixinc.net/atari/mac65.htm) by Nick Kennedy (highly recommended!)  
+- [MAC/65 Manual-ABBUC version 2006](attachments/MAC65_Assembler.pdf) ; ABBUC version 2006 by Andreas Bertelmann ; size: 176 KB  
+- [MAC/65 Handbook](../Mac65Handbook/README.md)  
+- [MAC/65 Manual](http://www.mixinc.net/atari/mac65.htm) by Nick Kennedy (highly recommended!)  
 - [MAC/65 De-Tokenizer from ANALOG](attachments/MAC-65_Token_Converter.pdf)  
 - MAC/65 Bug Sheet [TXT](attachments/MAC-65_BUG_SHEET_1.txt)[PDF](attachments/MAC65_BUG_SHEET_1.pdf)  
 - Bug sheet of 01/07/94 version 1.02 [Scan](attachments/mac_65_bug_sheet.pdf) [PDF](attachments/MAC65_BUG_SHEET_01-07-1997.pdf)  
@@ -278,11 +278,11 @@ Here are cartridge images created by building the sources.
   
 The source files of the work-in-progress versions of MAC/65 have not yet been analyzed. It is unknown what new features introduced in each of the following versions:  
   
-- [MAC/65 1.01 (1986)](../Mac65MAC651.011986/README.md)  
-- [Assembler 3.4](../Mac65Assembler3.41987-12-21/README.md)  
-- [MAC/65 3.6](../Mac65MAC653.61988-01-07/README.md)  
+- [MAC/65 1.01 (1986)](#MAC651.011986)  
+- [Assembler 3.4](#Assembler3.41987-12-21)  
+- [MAC/65 3.6](#MAC653.61988-01-07)  
   
-Comparing the source code of these versions with each other and with the [source code of the released version 1.01](../Mac65SourceCode/README.md) would allow us to discover the new features and document them. Yotta-thanks to all who help us here.  
+Comparing the source code of these versions with each other and with the [source code of the released version 1.01](#SourceCode) would allow us to discover the new features and document them. Yotta-thanks to all who help us here.  
   
 # Special thanks  
   

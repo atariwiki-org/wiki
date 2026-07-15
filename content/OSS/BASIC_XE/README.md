@@ -1,7 +1,6 @@
-# Basic XE  
+# BASIC XE  
 
-OSS, 1984  
-  
+Copyright (C) 1984 Optimized Systems Software, Inc. (OSS) 
   
 ## Background  
 Basic XE is the ultimate development of the original [Atari_BASIC](../Atari_BASIC/README.md) code, after its development was taken over by Optimized Systems Software (OSS).  

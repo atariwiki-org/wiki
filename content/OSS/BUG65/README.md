@@ -1,11 +1,10 @@
----
-title: Bug65
----
-# Bug/65 Version 2.0 (C) 1982 McStuff Co. and Optimized Systems Software, Inc.  
-Powerful, individual adaptable debugger for Atari 8 bit computers  
+# Bug/65 Version 2.0
+
+Copyright (C) 1982 McStuff Co. and Optimized Systems Software, Inc.
   
-__If you own Rev. 1.1 of the software, not the manual, please let us know. We can make you an offer, you can't resist. ;-) The version we search for is maybe just from McStuff Co. and not from OSS. Thank you so much in advance for your help, greatly appreciated by the community.__  
+A powerful, individual, adaptable debugger for Atari 8-bit computers.  
   
+__If you own Rev. 1.1 of the software, not the manual, please let us know. We can make you an offer you can't resist. ;-) The version we're looking for may be only from McStuff Co., not from OSS. Thank you so much in advance for your help, greatly appreciated by the community.__  
   
   
 ## Image  
@@ -111,14 +110,14 @@ __Please take into account, that in the manuals above Rev. 1.1 is mentioned, whi
 0600     .BYTE  >[*+$FF]   ; END BYTE TO INCLUDE
 0610     .END              ; THAT'S ALL FOLKS
 ```
-The MAC/65 file of the 'User Command Handler Example': 'USRCOMHD.M65' is already on all of the atr images above.  
+The MAC/65 file of the 'User Command Handler Example': 'USRCOMHD.M65' is already on all of the ATR images above.  
   
 ## BUG/65 does not print with XL/XE OS  
 Mega-thanks to Erhard Pütz for the final solution of this problem! :-)  
   
-Device ID $3F instead $40. BUG/65 jumps indirect into the put-byte-routine of the OS ($E436 -> $FECA+1), therefore no IOCB-channel is opened and the device number is missing.  
-Patch (thank you ep for the solution!):  
-Load BUG/65 and change the following:  
+Use device ID $3F instead of $40. BUG/65 jumps indirectly into the OS's put-byte routine ($E436 -> $FECA+1). Therefore, no IOCB channel is open, and the device number is missing.
+ 
+Patch: Load BUG/65 and change the following:  
 ```
 ORG+$068B LDX #36
           LDY #E4
@@ -137,9 +136,9 @@ ORG+$068B JMP 0600
   
 ## BUG/65 version 4 patch  
 The version 4 patch is available in two different kinds:  
-a) a short BASIC program in form of a BAS-file.  
+a) a short BASIC program in the form of a BAS-file.  
 and  
-b) a short machine language program in form of a COM-file.  
+b) a short machine language program in the form of a COM-file.  
   
 a):  
 BASIC program:  
@@ -159,14 +158,14 @@ The above program named as "BUGV4FIX.BAS" is in form of a file already on all of
 To make the patch to BUG/65 do as follows:  
 1) Insert your BASIC cartridge or use BASIC A+ disk.  
 2) Place your BUG/65 disk into the disk drive.  
-3) Use this BASIC program above to apply the one byte patch so that BUG/65 will work with OS/A+ version 4.  
+3) Use this BASIC program above to apply the one-byte patch so that BUG/65 will work with OS/A+ version 4.  
   
 b):  
 machine language program:  
   
 name of file: BUGV4FIX.COM  
   
-BUGV4FIX.COM ; we are still searching for that file, it seems to be lost in time, like tears in rain. Any help, any hint in that case is very much appreciated. :-)  
+BUGV4FIX.COM ; we are still searching for that file. It seems to be lost in time, like tears in rain. Any help or hint in that case would be very much appreciated. :-)  
   
 At the end of the BUG/65 manual we can read:  
 1. Copy the files BUG65.COM and BUGV4FIX.COM to a version 4 disk using the COPY24 command (see the DOSXL manual for details on this command).  
@@ -176,13 +175,13 @@ At the end of the BUG/65 manual we can read:
 __WARNING: Do NOT perform the BUGV4FIX command on your version 2 master disk!__  
   
 ## BUG/65 patch from OSS Newsletter October 1984  
-When BUG gets control as the result of a BRK instruction being executed, it actually checks to see it the BRK instruction is one which it placed (as a result of a "G" command). If not, it assumes that it is a user breakpoint, to be handled by a user routine! Guess what? Most of us don't go around adding user BRK handlers to Atari’s OS, so the machine goes off into never-never-land.  
+When BUG gains control as a result of a BRK instruction being executed, it checks whether the BRK instruction is one it placed (as a result of a "G" command). If not, it assumes that it is a user breakpoint, to be handled by a user routine! Guess what? Most of us don't go around adding user BRK handlers to Atari’s OS, so the machine goes off into never-never-land.  
   
-Quick hix (again, not hor the faint of heart): After loading BUG/65 from CP, perform the following actions:  
+Quick fix (again, not for the faint of heart): After loading BUG/65 from CP, perform the following actions:  
   
 1. Display the contents of location $2E7 (LOMEM).  
 2. Use the "H" command to add $17EE to those contents. (Example: if $2E7 contains 2200, use "H 2200 17EE” to find the sum.) Call this value ADDSUM.  
-3. Display the memory at ADDSUM (via the "D" command. You should see the following bytes (if not, stop now): 39EE E9 02 4D . . . ("39EE" is arbitrary-value of ADDSUM if LOMEM is at $2200.)  
+3. Display the memory at ADDSUM (via the "D" command. You should see the following bytes (if not, stop now): 39EE E9 02 4D . . . ("39EE" is the arbitrary value of ADDSUM if LOMEM is at $2200.)  
 4. Use BUG/65 commands as follows:  
   
 Z 600  
@@ -193,7 +192,7 @@ STA addsum+1 (again, use an actual address)
 BRK (hit the BREAK key to exit miniassembler)  
 G 600  
   
-If you did everything correctly, BUG/65 should allow a "USER RUN" and then print a breakpoint message for the BRK at $60A. If it didn’t work, you may have an already-fixed version of BUG/65, so ignore all this.  
+If you did everything correctly, BUG/65 should allow a "USER RUN" and then print a breakpoint message for the BRK at $60A. If it didn’t work, you may already have a fixed version of BUG/65, so ignore all of this.  
   
 ## Creating a non-relocatable version  
   
@@ -205,13 +204,13 @@ Thus, if you had specified "BUG65 7000", you could save the non-relocatable vers
   
 SAVE BUG7000.COM 7200 8FFF  
   
-thus also giving it a name which will later remind you where it will load at. To execute this non-relocatable version, simply type in its name (BUG7000 in the example shown).  
+thus also giving it a name that will later remind you where it will load. To execute this non-relocatable version, simply type in its name (BUG7000 in the example shown).  
   
 ## Summary of major features of BUG/65  
-• A full set of debugging commands - change memory, display memory, goto user program with break points, etc.  
+• A full set of debugging commands: change memory, display memory, go to user program with breakpoints, etc.  
 • Binary file read and write, including appended write  
 • A disassembler  
-• An instant assembler providing labelling capability  
+• An instant assembler providing labeling capability  
 • Expanded command addressing capability: hex or decimal addresses, + and - operators supported, relocated addresses supported  
 • Read or write disk sector(s)  
 • Multiple commands permitted in a command line. Command lines can be repeated with a single keystroke or repeated forever with the special slash operator.  
@@ -222,6 +221,7 @@ thus also giving it a name which will later remind you where it will load at. To
 • Page zero sharing. BUG/65 shares page zero with a user program by keeping two copies of the shared page zero locations - one for the user and one for BUG/65 itself.  
   
 ## Command Summary of BUG/65  
-![](attachments/Command+Summary+1.jpg)  
-![](attachments/Command+Summary+2.jpg)  
+![](attachments/Command_Summary_1.jpg)  
+![](attachments/Command_Summary_2.jpg)  
+
 Command Summary of BUG/65 Version 2.0 (C) 1982 McStuff Company and Optimized Systems Software, Inc.  

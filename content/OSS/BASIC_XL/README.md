@@ -1,9 +1,6 @@
----
-title: Basic XL
----
-# Basic XL  
-OSS  
-  
+# BASIC XL  
+
+Copyright (C) 1983 Optimized Systems Software, Inc. (OSS)
   
 ## Background  
 The original [Atari_BASIC](../Atari_BASIC/README.md) was written at Shepardson Microsystems (SMI) shortly before the 8-bit machines were released. A short time later, Shepardson dissolved, and the Atari programmers re-formed as Optimized Systems Software (OSS), taking the source code to the Atari products with them. In 1981, they released [OSS_Basic_A_](../OSS_Basic_A_/README.md), based on the original Atari BASIC code but containing a number of bug fixes and a few expansions. This made it too large for the 8k ROM cartridges of the era, and A+ shipped only in disk form.  
@@ -56,7 +53,7 @@ This is(!) the source code for OSS Basic XL 1.02 on two DOS II Version 2.0D disk
   
 The source has a .bak-file from February 5th, 1985. You need Mac/65 to read in the file: "master", which is without any suffix.  
   
-Further you need two DD drives: D1 and D2. Both atr images are renamed with the corresponding D. While running, files on drive 2 are accessed. All files which can be read are in a .txt-file inside the archive. So you all can get a quick look at.  
+Further, you need two DD drives: D1 and D2. Both ATRimages are renamed with the corresponding D. While running, files on drive 2 are accessed. All files that can be read are in a .txt file inside the archive. So you can get a quick look at them.  
   
 DIR:  
 1 BASICXL102D1.atr  
@@ -72,12 +69,12 @@ DIR:
 11 D2-BASICC.923  
 12 D2-BASICC.APL  
   
-the txt files are coded in Win Latin 1. Hope the CRs are coming the right way. The content of the two disks are in a folder each, too. So, you can get a quick look at. Position 11 and 12: these two files are accessed from the file: "CONVRT.LIS", but they are not on the disks. Maybe someone can help us here? Further, a call goes out here to enhance the source code to the final version of Basic XL 1.03.  
+The txt files are coded in Win Latin 1. Hope the CRs are coming the right way. The content of the two disks are in a folder each, too. So, you can get a quick look at. Position 11 and 12: these two files are accessed from the file: "CONVRT.LIS", but they are not on the disks. Maybe someone can help us here? Further, a call goes out here to enhance the source code to the final version of Basic XL 1.03.  
   
 Bob, we are so deep in your debt. Thank you so much again. :-)  
   
 ## Articles  
-- [OSS_Basic_XL_Review](../OSS_Basic_XL_Review/README.md) (german)  
+- [OSS_Basic_XL_Review](../BASIC_XL_Review/README.md) (german)  
 - [Basic XL Information on Wikipedia](http://en.wikipedia.org/wiki/Optimized_Systems_Software#BASIC_XL)  
   
 ## Image  
