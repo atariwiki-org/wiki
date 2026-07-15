@@ -44,12 +44,12 @@ Atari Dow Jones Investment Evaluator CX8127
   
 •) [Atari Home Finance or Personal Finance](../Atari_Home_Finance/README.md)  
   
-•) [Atari_Learning_System_Software](../Atari_Learning_System_Software/README.md) ; complete missing!  
+•) [Atari_Learning_System_Software](../Companies/Atari/Atari_Learning_System_Software/README.md) ; completely missing!  
   
 ---
 •) Desperate call for help on missing Dorsett tapes  
   
-Some tapes had severe damage and therefore couldn't be digitized. If anyone is in the possession of the following tapes, please give us a message or a post [here](http://atariage.com/forums/topic/251713-desperate-call-for-help-on-missing-dorsett-tapes/). We really need your help and appreciate just any hint on the programs, who seem to be lost in time, like tears in rain.  
+Some tapes were severely damaged and therefore couldn't be digitized. If anyone is in possession of the following tapes, please give us a message or a post [here](http://atariage.com/forums/topic/251713-desperate-call-for-help-on-missing-dorsett-tapes/). We really need your help and appreciate just any hint on the programs, who seem to be lost in time, like tears in rain.  
   
 The left ones to digitize are as follows:  
   
