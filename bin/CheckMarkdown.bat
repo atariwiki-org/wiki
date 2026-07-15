@@ -4,5 +4,5 @@ cd /D "%~dp0"
 cd ..
 set RESULT=CheckResult
 if exist %RESULT%.md del %RESULT%.md
-markdown-checker.exe . -f check_broken_paths -o %RESULT%
+markdown-checker.exe . -f check_broken_paths -o %RESULT% | grep --invert-match volksFORTH
 dir %RESULT%.md
