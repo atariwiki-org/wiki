@@ -1,10 +1,5 @@
----
-title: VFHandbuchKapitel4
----
 # Programm-Strukturen  
-  
-  
-  
+    
 [Wil Baden](http://home.earthlink.net/~neilbawd/), auf den Sie in der englischsprachigen Literatur oft stoßen, hat in  
 seinem Beitrag ESCAPING FORTH folgendes dargelegt: Es gibt vier Arten von Steueranweisungen :  
   
@@ -20,20 +15,20 @@ flag IF <Anweisungen> THEN
 flag IF <Anweisungen> ELSE <Anweisungen> THEN
 ```
   
-Soll dagegen im Programm ein Rücksprung erfolgen, um Anweisungen wiederho1t auszuführen, wird bei einer gegebenen Anzahl von Durchläufen diese Anweisung eingesetzt, wobei der aktuelle Index über I und J zur Verfügung steht:  
+Soll dagegen im Programm ein Rücksprung erfolgen, um Anweisungen wiederholt auszuführen, wird bei einer gegebenen Anzahl von Durchläufen diese Anweisung eingesetzt, wobei der aktuelle Index über I und J zur Verfügung steht:  
   
 ```
 <Grenzen> DO / ?DO <Anweisungen> LOOP 
 <Grenzen> DO / ?DO <Anweisungen> <Schrittweite> +LOOP
 ```
   
-Wenn eine Wiederholung von Anweisungen ausgeführt werden soll, ohne daß die Anzahl der Durchläufe bekannt 1st, so ist eine Indexvariable mitzuführen oder sonstwie zum Resultat eines logischen Ausdrucks zu kommen. Die folgende Konstruktion ermöglicht eine Endlos-Schleife:  
+Wenn eine Wiederholung von Anweisungen ausgeführt werden soll, ohne dass die Anzahl der Durchläufe bekannt ist, so ist eine Indexvariable mitzuführen oder sonstwie zum Resultat eines logischen Ausdrucks zu kommen. Die folgende Konstruktion ermöglicht eine Endlosschleife:  
   
 ```
 BEGIN <Anweisungen> REPEAT
 ```
   
-Die Wiederholungsanweisungen sind insoweit symmetrisch, daß eine Anweisung so­ lange (while) ausgeführt wird, wie ein Ausdruck wahr ist, oder eine Anweisung wiederholt wird, bis (until) ein Ausdruck wahr wird.  
+Die Wiederholungsanweisungen sind insoweit symmetrisch, dass eine Anweisung solange (while) ausgeführt wird, wie ein Ausdruck wahr ist, oder eine Anweisung wiederholt wird, bis (until) ein Ausdruck wahr wird.  
   
 ```
 BEGIN <Anweisungen> flag UNTIL 
@@ -46,9 +41,9 @@ Beide Möglichkeiten lassen sich in volksFORTH auch kombinieren, wobei auch mehr
 BEGIN <Anweisungen> flag WHILE <Anweisungen> flag UNTIL
 ```
   
-Nun tritt in Anwendungen häufig der Fall auf, daß eine Steueranweisung verlassen werden soll, weil sich etwas ereignet hat.  
+Nun tritt in Anwendungen häufig der Fall auf, dass eine Steueranweisung verlassen werden soll, weil sich etwas ereignet hat.  
   
-Dann ist die vierte Situation, der Abbruch, gegeben, Die Programmiersprache "C" stellt dafür die Funktionen: ''break'', ''continue'', ''return'' und ''exit'' zur Verfügung; volksFORTH bietet hier ''exit'', ''leave'', ''endloop'', ''quit'', ''abort'', ''abort"'' und ''abort('' an. In FORTH wird EXIT dazu benutzt, um die Definition zu verlassen, in der es erscheint; LEAVE dagegen verläßt die kleinste umschließende DO...LOOP-Schleife.  
+Dann ist die vierte Situation, der Abbruch, gegeben, Die Programmiersprache "C" stellt dafür die Funktionen: ''break'', ''continue'', ''return'' und ''exit'' zur Verfügung; volksFORTH bietet hier ''exit'', ''leave'', ''endloop'', ''quit'', ''abort'', ''abort"'' und ''abort('' an. In FORTH wird EXIT dazu benutzt, um die Definition zu verlassen, in der es erscheint; LEAVE dagegen verlässt die kleinste umschließende DO...LOOP-Schleife.  
   
 ### Glossary  
   
@@ -58,35 +53,35 @@ Ab der Version 3.81.8 verfügt volksFORTH über eine zusätzliche Steueranweisun
 have <word> not .IF <action1> .ELSE <action2> .THEN
 ```
   
-DieseWorte werden außerhalb von Colon-Definitionen eingesetzt und ersetzen das ''needs'' früherer Versionen.  
+Diese Worte werden außerhalb von Colon-Definitionen eingesetzt und ersetzen das ''needs'' früherer Versionen.  
   
-- [have](../have/README.md)  
-- [exit](../exit/README.md)  
-- [?exit](../question-exit/README.md)  
-- [0=exit](../zero-equals-exit/README.md)  
-- [if](../if/README.md)  
-- [.IF](../.IF/README.md)  
-- [then](../then/README.md)  
-- [.THEN](../.THEN/README.md)  
-- [else](../else/README.md)  
-- [.ELSE](../.ELSE/README.md)  
-- [do](../do/README.md)  
-- [?do](../question-do/README.md)  
-- [loop](../loop/README.md)  
-- [+loop](../plus-loop/README.md)  
-- [I](../I/README.md)  
-- [J](../J/README.md)  
-- [leave](../leave/README.md)  
-- [endloop](../endloop/README.md)  
-- [bounds](../bounds/README.md)  
-- [begin](../begin/README.md)  
-- [repeat](../repeat/README.md)  
-- [until](../until/README.md)  
-- [while](../while/README.md)  
-- [execute](../execute/README.md)  
-- [perform](../perform/README.md)  
-- [case?](../case-question/README.md)  
-- [stop](../stop/README.md)  
+- [have](../Words/have/README.md)  
+- [exit](../Words/exit/README.md)  
+- [?exit](../Words/question-exit/README.md)  
+- [0=exit](../Words/zero-equals-exit/README.md)  
+- [if](../Words/if/README.md)  
+- [.IF](../Words/.IF/README.md)  
+- [then](../Words/then/README.md)  
+- [.THEN](../Words/.THEN/README.md)  
+- [else](../Words/else/README.md)  
+- [.ELSE](../Words/.ELSE/README.md)  
+- [do](../Words/do/README.md)  
+- [?do](../Words/question-do/README.md)  
+- [loop](../Words/loop/README.md)  
+- [+loop](../Words/plus-loop/README.md)  
+- [I](../Words/I/README.md)  
+- [J](../Words/J/README.md)  
+- [leave](../Words/leave/README.md)  
+- [endloop](../Words/endloop/README.md)  
+- [bounds](../Words/bounds/README.md)  
+- [begin](../Words/begin/README.md)  
+- [repeat](../Words/repeat/README.md)  
+- [until](../Words/until/README.md)  
+- [while](../Words/while/README.md)  
+- [execute](../Words/execute/README.md)  
+- [perform](../Words/perform/README.md)  
+- [case?](../Words/case-question/README.md)  
+- [stop](../Words/stop/README.md)  
   
 # Worte zur Fehlerbehandlung  
   
@@ -99,16 +94,16 @@ is-depth ( n — )
   
 IS-DEPTH überprüft den Stack auf eine gegebene Anzahl Stackelemente (depth) hin.  
   
-- [abort](../abort/README.md)  
-- ['abort](../tick-abort/README.md)  
-- [abort"](../abort-quote/README.md)  
-- [error"](../error-quote/README.md)  
-- [errorhandler](../errorhandler/README.md)  
-- [(error](../paren-error/README.md)  
-- [r#](../r-sharp/README.md)  
-- [scr](../scr/README.md)  
-- [quit](../quit/README.md)  
-- [?pairs](../question-pairs/README.md)  
+- [abort](../Words/abort/README.md)  
+- ['abort](../Words/tick-abort/README.md)  
+- [abort"](../Words/abort-quote/README.md)  
+- [error"](../Words/error-quote/README.md)  
+- [errorhandler](../Words/errorhandler/README.md)  
+- [(error](../Words/paren-error/README.md)  
+- [r#](../Words/r-sharp/README.md)  
+- [scr](../Words/scr/README.md)  
+- [quit](../Words/quit/README.md)  
+- [?pairs](../Words/question-pairs/README.md)  
   
 # Fallunterscheidung in FORTH  
   
@@ -253,7 +248,7 @@ Damit wurde ohne eine CASE-Anweisung eine sehr übersichtliche Steuerung des Pro
   
 Viele Programmiersprachen stellen eine CASE-Anweisung zur Verfügung, die wie in PASCAL mit Hilfe eines Fall-Indices eine Liste von Fall-Konstanten auswertet und eine entsprechende Anweisung ausführt.  
   
-Obwohl ein solches CASE-Konstrukt — wie oben gezeigt — nicht notwendig ist, macht es Programme besser lesbar und liegt bei Problemstellungen wie der Auswertung eines gegebenen Index eigentlich näher. Dies ist in ["Wil Baden - Ultimate CASE-Statement - VD 2/87, S.40 ff."](../Ultimate_CASE_Statement/README.md) ausführlich diskutiert worden, , wobei aber der ältere Esker-CASE (Dr. Charles Eaker -- Just in CASE (FORTH DIM II/3)) von Dr. Charles Eaker sicherlich der bekanntere ist, der auch in der Literatur und in Quelltexten häufig Erwähnung und Verwendung findet.  
+Obwohl ein solches CASE-Konstrukt — wie oben gezeigt — nicht notwendig ist, macht es Programme besser lesbar und liegt bei Problemstellungen wie der Auswertung eines gegebenen Index eigentlich näher. Dies ist in ["Wil Baden - Ultimate CASE-Statement - VD 2/87, S.40 ff."](../Words/Ultimate_CASE_Statement/README.md) ausführlich diskutiert worden, , wobei aber der ältere Esker-CASE (Dr. Charles Eaker -- Just in CASE (FORTH DIM II/3)) von Dr. Charles Eaker sicherlich der bekanntere ist, der auch in der Literatur und in Quelltexten häufig Erwähnung und Verwendung findet.  
   
 Herr H. Sehnitter hat diesen Eaker-CASE für das volks4TH implementiert und dabei Veränderungen in der Struktur und Verbesserungen in der Anwendung vorgenommen.  
   
@@ -354,7 +349,7 @@ Das vollständige Programm kann so geschrieben werden, wobei die typische drei­
 ;
 ```
   
-Wil Baden hat in "[Ultimate_CASE_Statement](../Ultimate_CASE_Statement/README.md)" ausgeführt, das eine CASE-Anweisung nur syntaktischer Zucker für ein Programm ist und letztendlich nichts weiter ist, als das Kompilieren einer verschachtelten IF...THEN-Anweisung. Eine solche Implemetierung fur das volksFORTH83 wurde von Herrn Klaus Schleisiek geschrieben:  
+Wil Baden hat in "[Ultimate_CASE_Statement](../Words/Ultimate_CASE_Statement/README.md)" ausgeführt, das eine CASE-Anweisung nur syntaktischer Zucker für ein Programm ist und letztendlich nichts weiter ist, als das Kompilieren einer verschachtelten IF...THEN-Anweisung. Eine solche Implemetierung fur das volksFORTH83 wurde von Herrn Klaus Schleisiek geschrieben:  
   
 ```
 \ CASE OF ENDOF ENDCASE

@@ -1,11 +1,8 @@
----
-title: Forth
----
 # Forth  
   
   
 ### Background  
-Forth is a cancatenative stack-based programming language.  
+Forth is a concatenative, stack-based programming language.  
   
 Stack-based languages simplify the language's parser considerably because the data for an instruction always appears in the source code before the instructions that will use it. To see why this helps, consider this typical line of [Basic](../Basic/README.md):  
   
@@ -30,7 +27,7 @@ Notice that the stack-based version ''has no temporary values'', and only reads 
 Another key aspect of the language is Forth's inherently multitasking design. The program could set up separate stacks and feed different code into each one. The Forth kernel would run each of these stacks in turn, so all Forth programs had access to these features. This made writing multithreaded code very easy, so one could, for instance, have a thread reading the joystick as it moved, and then read that value in a game loop in another stack.  
   
 ## Forth Standards  
-- [Forth79](../Forth79/README.md) (1979)  
+- [FORTH_79](../FORTH_79/README.md) (1979)  
 - [Forth83](http://forth.sourceforge.net/standard/fst83/) (1983)  
 - [ANSI Forth](http://www.taygeta.com/forth/dpans.html) (1994)  
 - [Forth 200x](http://www.forth200x.org/forth200x.html) (2009)  
@@ -40,24 +37,24 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
   
 - [FOCO65](https://github.com/piotr-wiszowaty/foco65) a Forth Cross-Compiler written in Python that translates into XASM assembly language  
 - [SPL](../SPL/README.md) (Simple Programming Language) a Forth-ish compiler written in Python that translates into Assembly language  
-- [X-FORTH](../X-FORTH/README.md) - a FIG Forth variant, currently maintained  
-- [VolksForth](../VolksForth/README.md) - a powerful Forth83 standards Forth for Atari 8bit, Atari ST, MS-DOS, CP/M, C=64, C=16/116/Plus4, still maintained  
-- [ANTIC_Forth](../ANTIC_Forth/README.md)  
-- [valFORTH](../valFORTH/README.md)  
-- [English_Software_Company_FORTH](../English_Software_Company_FORTH/README.md)  
+- [X_FORTH](X_FORTH/README.md) - a FIG Forth variant, currently maintained  
+- [volksFORTH]([volksFORTH]/README.md) - a powerful Forth83 standards Forth for Atari 8bit, Atari ST, MS-DOS, CP/M, C=64, C=16/116/Plus4, still maintained  
+- [ANTIC_Forth](ANTIC_Forth/README.md)  
+- [valFORTH](valFORTH/README.md)  
+- [English_Software_Company_FORTH](English_Software_Company_FORTH/README.md)  
 ** [Page 6 Review of ES Forth](http://page6.org/archive/issue_14/page_34.htm)  
-- [Extended_Atari_FIG-Forth_APX20029](../Extended_Atari_FIG-Forth_APX20029/README.md)  
-- [Mesa_Forth](../Mesa_Forth/README.md)  
-- [QS_Forth](../QS_Forth/README.md)  
-- [Graphic_Forth](../Graphic_Forth/README.md) - A ANTIC / Fig-FORTH 1.4s Version with special Graphics Extensions.  
-- [FIG_Forth_1.1](../FIG_Forth_1.1/README.md)  
-- [FIG_Forth_1.0D](../FIG_Forth_1.0D/README.md)  
+- [Extended_Atari_FIG-Forth_APX20029](Extended_Atari_FIG-Forth_APX20029/README.md)  
+- [Mesa_Forth](Mesa_Forth/README.md)  
+- [QS_Forth](QS_Forth/README.md)  
+- [Graphic_Forth](Graphic_Forth/README.md) - A ANTIC / Fig-FORTH 1.4s Version with special Graphics Extensions.  
+- [FIG_Forth_1.1](FigForth/FIG_Forth_1.1/README.md)  
+- [FIG_Forth_1.0D](FigForth/FIG_Forth_1.0D/README.md)  
 - [fig-FORTH1.4S-1.atr](attachments/fig-FORTH1.4S-1.atr)  
 - [fig-FORTH1.4S-2.atr](attachments/fig-FORTH1.4S-2.atr)  
-- [ProForth](../ProForth/README.md) Apple II (6502 Source)  
-- [SNAUT](../SNAUT/README.md)  
-- [Forth_Compiler_from_Frank_Ostrowski](../Forth_Compiler_from_Frank_Ostrowski/README.md)  
-- [CoinOp_FORTH](../CoinOp_FORTH/README.md)  
+- [ProForth](ProForth/README.md) Apple II (6502 Source)  
+- [SNAUT](SNAUT/README.md)  
+- [Forth_Compiler_from_Frank_Ostrowski](Forth_Compiler_from_Frank_Ostrowski/README.md)  
+- [CoinOp_FORTH](CoinOp_FORTH/README.md)  
 - [Elcomp_Forth_DOS_25.atr](attachments/Elcomp_Forth_DOS_25.atr); Atari Version of Elcomp-Forth by E.Floegel & H.C.Wagner, 1982  
 - [Grafs Atari-Forth DOS 2.5.atr](attachments/Grafs_Atari-Forth_DOS_2.5.atr); from Andreas Graf ca. 1990  
 - ATAFORTH; advertised as compatible with Atari-DOS; lost; from Dan Bloomquist, Nova Technology, 1982  
@@ -104,7 +101,7 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 - [Ultimate_CASE_Statement](../Ultimate_CASE_Statement/README.md) by Wil Baden, VD 2 1987  
   
 ## Tutorials  
-- [Einfuehrung_in_Forth_83](../Einfuehrung_in_Forth_83/README.md)  
+- [Einfuehrung_in_Forth_83](Tutorials/Einfuehrung_in_Forth_83/README.md)  
   
 ## Videos and Screencasts  
   

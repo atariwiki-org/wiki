@@ -1,6 +1,3 @@
----
-title: FIG Forth 1.1
----
 # FigForth 1.1  
   
 Enhanced FigForth, disk block based.  

@@ -1,6 +1,5 @@
----
-title: Divide
----
+# Divide
+
 __/__ "divide" ( n1 n2 -- n3 )  
   
   
@@ -19,6 +18,6 @@ n3 ist der Quotient aus der Division von n1 durch den Divisor n2. Eine Fehlerbed
 /%  
 /%  
   
-Forth83 and VolksForth is using floored division. Forth79 is using symmetric division. In ANSI Forth and Forth 200x the standard allows a system to provide either floored or symmetric division.  
+Forth83 and VolksForth use floored division. Forth79 is using symmetric division. In ANSI Forth and Forth 200x, the standard allows a system to provide either floored or symmetric division.  
   
-See [floored division](../ForthFlooredArithmetics/README.md)  
+See [floored division](../../ForthFlooredArithmetics/README.md)  

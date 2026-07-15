@@ -1,7 +1,4 @@
----
-title: VFHandbuchChapter6
----
-# Strings (strings) in state-FORTH  
+# Chapter 6: Strings (strings) in volksFORTH  
   
 Here are the basic routines for string processing. Above all, words were added that allow the handling of those required by some operating systems 0-terminated strings. FORTH has here over C has the disadvantage that FORTH-strings start with a default count byte that contains the length of the string. A final mark (eg a null byte) is therefore unnecessary. If the operating system but was written in C (Atari TOS, MS-DOS), have strings are converted accordingly.  
   
@@ -12,14 +9,14 @@ By default FORTH uses counted strings, which are only identified by an address. 
   
 This is what the string FORTH at the address addr in memory at FORTH.  
   
-- [. "](../_Dot-string/README.md)  
-- ["](../_String/README.md)  
-- [, "](../_Compile-string/README.md)  
-- [Null string? ](../_Null-string_question/README.md)  
-- ['Lit ](../_quote-literal/README.md)  
-- [. (](../_Dot-comment/README.md)  
-- [(](../_Comment/README.md)  
-- [) ](../_End-comment/README.md) - this is not a Forth word, but a stop sign  
+- [. "](../Words/_Dot-string/README.md)  
+- ["](../Words/_String/README.md)  
+- [, "](../Words/_Compile-string/README.md)  
+- [Null string? ](../Words/_Null-string_question/README.md)  
+- ['Lit ](../Words/_quote-literal/README.md)  
+- [. (](../Words/_Dot-comment/README.md)  
+- [(](../Words/_Comment/README.md)  
+- [) ](../Words/_End-comment/README.md) - this is not a Forth word, but a stop sign  
   
 # String manipulation  
   
@@ -30,28 +27,28 @@ No string variable? - Use:
 : String: Create dup, 0 c, DOES> allot 1 + count;
 ```
   
-- [Caps](../Caps/README.md)  
-- [Capital](../Capital/README.md)  
-- [Upper](../Upper/README.md)  
-- [Capitalitze](../Capitalitze/README.md)  
-- [/ String ](../_cut-string/README.md)  
-- [-Trailing ](../_minus-trailing/README.md)  
-- [Scan](../Scan/README.md)  
-- [Skip](../Skip/README.md)  
-- ["](../_Question-quote/README.md)  
-- [Bounds](../Bounds/README.md)  
-- [Type](../Type/README.md)  
-- [> Type ](../_to-type/README.md)  
-- [Place](../Place/README.md)  
-- [Attach](../Attach/README.md)  
+- [Caps](../Words/Caps/README.md)  
+- [Capital](../Words/Capital/README.md)  
+- [Upper](../Words/Upper/README.md)  
+- [Capitalitze](../Words/Capitalitze/README.md)  
+- [/ String ](../Words/_cut-string/README.md)  
+- [-Trailing ](../Words/_minus-trailing/README.md)  
+- [Scan](../Words/Scan/README.md)  
+- [Skip](../Words/Skip/README.md)  
+- ["](../Words/_Question-quote/README.md)  
+- [Bounds](../Words/Bounds/README.md)  
+- [Type](../Words/Type/README.md)  
+- [> Type ](../Words/_to-type/README.md)  
+- [Place](../Words/Place/README.md)  
+- [Attach](../Words/Attach/README.md)  
 - [] Append  
-- [Detract](../Detract/README.md)  
+- [Detract](../Words/Detract/README.md)  
 - [] Match  
-- [Search](../Search/README.md)  
+- [Search](../Words/Search/README.md)  
   
 ## The Dictionary  
   
-- [(Find ](../_paren-find/README.md)  
+- [(Find ](../Words/_paren-find/README.md)  
 - [] Find  
   
 ### 0-terminated strings  
@@ -60,20 +57,20 @@ There is another form of representation for strings, which is suitable for examp
   
 ![](attachments/zero-term-string.png)  
   
-- [asciz](../asciz/README.md)  
-- [>asciz](../to-asciz/README.md)  
-- [counted](../counted/README.md)  
+- [asciz](../Words/asciz/README.md)  
+- [>asciz](../Words/to-asciz/README.md)  
+- [counted](../Words/counted/README.md)  
   
 ## Conversions: Strings - Numbers  
   
 ### String to convert numbers  
   
-- [Digit? ](../_Digit-question/README.md)  
-- [Accumulate](../Accumulate/README.md)  
-- [Convert](../Convert/README.md)  
-- [Number? ](../_Number-question?/README.md)  
-- [Number](../Number/README.md)  
-- [Dpl](../Dpl/README.md)  
+- [Digit? ](../Words/_Digit-question/README.md)  
+- [Accumulate](../Words/Accumulate/README.md)  
+- [Convert](../Words/Convert/README.md)  
+- [Number? ](../Words/_Number-question?/README.md)  
+- [Number](../Words/Number/README.md)  
+- [Dpl](../Words/Dpl/README.md)  
   
 FORTH in the input of numbers is often realized with the general text and the commands for converting strings to numbers. In the literature it is often the solution with __QUERY__ available:  
   
@@ -103,8 +100,8 @@ So the user can evaluate the given flag and use the double-exact number as he se
   
 ### Convert numbers to strings  
   
-- [# ](../_Number/README.md)  
-- [# S ](../-s_number/README.md)  
-- [Hold](../Hold/README.md)  
-- [Sign](../Sign/README.md)  
-- [#> ](../_Number-greater/README.md)  
+- [# ](../Words/_Number/README.md)  
+- [# S ](../Words/-s_number/README.md)  
+- [Hold](../Words/Hold/README.md)  
+- [Sign](../Words/Sign/README.md)  
+- [#> ](../Words/_Number-greater/README.md)  

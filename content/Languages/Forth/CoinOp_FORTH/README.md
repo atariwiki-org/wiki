@@ -1,8 +1,7 @@
----
-title: CoinOp FORTH
----
-## Documentation for Atari Coin Op FORTH And Swarthmore Extensions by Brock A. Miller, David E. McIntyre, and Eugene A. Klotz. May 31, 1983.  
-  
+# Atari Coin Op FORTH 
+
+
+Including Swarthmore Extensions by Brock A. Miller, David E. McIntyre, and Eugene A. Klotz. May 31, 1983.  
   
 Images courtesy of Kay Savetz and his [AtariAge post](https://atariage.com/forums/topic/238258-atari-coin-op-forth-and-swarthmore-extensions/). See the *Attach* tab above for the images and a PDF of the manual.  
   

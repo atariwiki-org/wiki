@@ -1,7 +1,4 @@
----
-title: VFHandbookChapter3
----
-### Arithmetic  
+# Chapter 3: Arithmetic  
   
   
 ### Stack Notation  
@@ -22,7 +19,8 @@ In this notation, the top element of stack (tos) is written always right. Unless
   
 If the pronunciation of a word of English pronunciation from the natural, it is indicated in quotes. Occasionally, following a German translation. The names of the stack parameters follow, unless suggestive names have been elected, the following schedule. The names can be provided with a subsequent digit.  
   
-| | Stack notation | | Number type | | value range in decimal | | minimal width of the field  
+| Stack notation | Number type | value range in decimal | minimal width of the field |
+|----------------|-------------|------------------------|----------------------------|
 | Flag | logical value | 0 = flash, else = true | 16bit  
 | True (tf) | logical value | -1 (as a result) | 16bit  
 | False (ff) | logical value | 0 | 16bit  
@@ -56,66 +54,66 @@ Frequently used numbers were made constant. Defined in the form:
   
 This Syeicherplatz savings and reduces the execution time.  
   
-- [1 + ](../_one-plus/README.md)  
-- [1 - ](../_one-minus/README.md)  
-- [2 + ](../_two-plus/README.md)  
-- [2 - ](../_two-minus/README.md)  
-- [2 * ](../_two-times/README.md)  
-- [2 / ](../_two-divide/README.md)  
-- [3 + ](../_three-plus/README.md)  
-- [Abs ](../_absolute/README.md)  
+- [1 + ](../Words/one-plus/README.md)  
+- [1 - ](../Words/one-minus/README.md)  
+- [2 + ](../Words/two-plus/README.md)  
+- [2 - ](../Words/two-minus/README.md)  
+- [2 * ](../Words/two-times/README.md)  
+- [2 / ](../Words/two-divide/README.md)  
+- [3 + ](../Words/three-plus/README.md)  
+- [Abs ](../Words/absolute/README.md)  
 - [] Not  
 - [Negate](../Negate/README.md)  
 - [Even](../Even/README.md)  
-- [Max ](../_maximum/README.md)  
-- [Min ](../_minimum/README.md)  
-- [+ ](../_Plus/README.md)  
-- [- ](../_Minus/README.md)  
-- [* ](../_Times/README.md)  
-- [/ ](../_Divide/README.md)  
+- [Max ](../Words/maximum/README.md)  
+- [Min ](../Words/minimum/README.md)  
+- [+ ](../Words/Plus/README.md)  
+- [- ](../Words/Minus/README.md)  
+- [* ](../Words/Times/README.md)  
+- [/ ](../Words/Divide/README.md)  
 - [Mod](../Mod/README.md)  
-- [/ Mod ](../_divide-mod/README.md)  
-- [* / ](../_Times-divide/README.md)  
-- [* / Mod ](../_times-divide-mod/README.md)  
-- [W / mod ](../_u-divide-mod/README.md)  
-- [Umax ](../_u-maximum/README.md)  
-- [Umin ](../_u-minimum/README.md)  
+- [/ Mod ](../Words/divide-mod/README.md)  
+- [* / ](../Words/Times-divide/README.md)  
+- [* / Mod ](../Words/times-divide-mod/README.md)  
+- [W / mod ](../Words/u-divide-mod/README.md)  
+- [Umax ](../Words/u-maximum/README.md)  
+- [Umin ](../Words/u-minimum/README.md)  
   
 ### People Forth logic words  
   
 - [True](../True/README.md)  
 - [False](../False/README.md)  
-- [0 = ](../_Zero-equals/README.md)  
-- [0 <> ](../_Zero-noequal/README.md)  
-- [0 <](../_zero-less/README.md)  
-- [0> ](../_zero-greater/README.md)  
-- [= ](../_Equals/README.md)  
-- [<](../_Less-than/README.md)  
-- [> ](../_Greater-than/README.md)  
-- [U <](../_u-less-than/README.md)  
-- [U> ](../_u-greater-than/README.md)  
+- [0 = ](../Words/Zero-equals/README.md)  
+- [0 <> ](../Words/Zero-noequal/README.md)  
+- [0 <](../Words/zero-less/README.md)  
+- [0> ](../Words/zero-greater/README.md)  
+- [= ](../Words/Equals/README.md)  
+- [<](../Words/Less-than/README.md)  
+- [> ](../Words/Greater-than/README.md)  
+- [U <](../Words/u-less-than/README.md)  
+- [U> ](../Words/u-greater-than/README.md)  
 - [And](../And/README.md)  
 - [Or](../Or/README.md)  
 - [Xor](../Xor/README.md)  
 - [Uwithin](../Uwithin/README.md)  
-- [Case? ](../_Case-question/README.md)  
+- [Case? ](../Words/Case-question/README.md)  
   
 ### People Forth 32bit words  
   
 - [] Extend  
-- [Dabs ](../_d-absolute/README.md)  
-- [Dnegate ](../_d-negate/README.md)  
-- [D + ](../_d-plus/README.md)  
-- [D-](../_d-minus/README.md)  
-- [D * ](../_d-times/README.md)  
-- [D = ](../_d-equal/README.md)  
-- [D <](../_d-less-than/README.md)  
-- [D0 = ](../_d-equals-zero/README.md)  
-- [M * ](../_m-times/README.md)  
-- [* For ](../_u-m-times/README.md)  
-- [M / mod ](../_m-divide-mod/README.md)  
-- [Ud / mod ](../_u-d-divide-mod/README.md)  
-- [Um / mod ](../_u-m-divide-mod/README.md)  
+- [Dabs ](../Words/d-absolute/README.md)  
+- [Dnegate ](../Words/d-negate/README.md)  
+- [D + ](../Words/d-plus/README.md)  
+- [D-](../Words/d-minus/README.md)  
+- [D * ](../Words/d-times/README.md)  
+- [D = ](../Words/d-equal/README.md)  
+- [D <](../Words/d-less-than/README.md)  
+- [D0 = ](../Words/d-equals-zero/README.md)  
+- [M * ](../Words/m-times/README.md)  
+- [* For ](../Words/u-m-times/README.md)  
+- [M / mod ](../Words/m-divide-mod/README.md)  
+- [Ud / mod ](../Words/u-d-divide-mod/README.md)  
+- [Um / mod ](../Words/u-m-divide-mod/README.md)  
   
 ### Stack Operations  
   
@@ -153,24 +151,24 @@ The call of procedures done in FORTH is done implicitly by the mention of the na
   
   
 - [Drop](../Drop/README.md)  
-- [2drop ](../_two-drop/README.md)  
+- [2drop ](../Words/two-drop/README.md)  
 - [Dup](../Dup/README.md)  
-- [? Dup ](../_dup-question/README.md)  
-- [2dup ](../_two-dup/README.md)  
+- [? Dup ](../Words/dup-question/README.md)  
+- [2dup ](../Words/two-dup/README.md)  
 - [Swap](../Swap/README.md)  
-- [2swap ](../_two-swap/README.md)  
+- [2swap ](../Words/two-swap/README.md)  
 - [Nip](../Nip/README.md)  
 - [Over](../Over/README.md)  
-- [2over ](../_two-over/README.md)  
+- [2over ](../Words/two-over/README.md)  
 - [Under](../Under/README.md)  
 - [Red](../Red/README.md)  
-- [-Red ](../_red-minus/README.md)  
+- [-Red ](../Words/red-minus/README.md)  
 - [Roll](../Roll/README.md)  
-- [-Roll ](../_minus/README.md) roll  
+- [-Roll ](../Words/minus/README.md) roll  
 - [Pick](../Pick/README.md)  
-- [. S ](../_dos-s/README.md)  
+- [. S ](../Words/dos-s/README.md)  
 - [Clear_stack](../Clear_stack/README.md)  
 - [Depth](../Depth/README.md)  
-- [S0 ](../_s-zero/README.md)  
-- [Sp! ](../_S-p-store/README.md)  
-- [@ Sp ](../_s-p/README.md)-fetch  
+- [S0 ](../Words/s-zero/README.md)  
+- [Sp! ](../Words/S-p-store/README.md)  
+- [@ Sp ](../Words/s-p/README.md)-fetch  

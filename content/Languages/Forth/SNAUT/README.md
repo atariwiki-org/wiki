@@ -1,7 +1,5 @@
----
-title: SNAUT
----
 # SNAUT V. 1.2 - Ein FORTH 83 Compiler ; (P) H. Köhler ; (C) 1986 Compy-Shop  
+
 There are those who called it vaporware, but in 2017 Stefan proved once and for all, they were all wrong!  
 We do not know how Stefan did it, but he really made the dream come true! :-)))  
 After 31(!) years, we can offer you this believed to be lost part of Atari history. Therefore, enjoy! :-)))  

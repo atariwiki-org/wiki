@@ -1,12 +1,9 @@
----
-title: VFHandbuchKapitel3
----
-# Arithmetik  
+# Kapitel 3: Arithmetik  
   
   
 ## Stacknotation  
   
-Im folgenden werden hauptsählich Worte in ihrer Einzelfunktion beschrieben. In dieser Form der Beschreibung, die Sie bereits kennengelernt haben, wird die Wirkung eines Wortes auf den Stack in Klammern angegeben und zwar in folgender Form:  
+Im Folgenden werden hauptsächlich Worte in ihrer Einzelfunktion beschrieben. In dieser Form der Beschreibung, die Sie bereits kennengelernt haben, wird die Wirkung eines Wortes auf den Stack in Klammern angegeben, und zwar in folgender Form:  
   
 ```
 vorher - Werte auf dem Stack vor Ausführung des Wortes
@@ -14,14 +11,15 @@ nachher - Verte auf dem Stack nach Ausführung des Wortes
 
 In dieser Notation wird das oberste Element des Stacks (tos) immer ganz rechts geschrieben. Sofern nicht anders angegeben, beziehen sich alle Stacknotationen auf die spätere Ausführung des Wortes. Bei immediate Worten wird auch die Auswirkung des Wortes auf den Stack während der Kompilierung angegeben. Worte werden ferner durch folgende Symbole gekennzeichnet:
 
-| c | Dieses Wort kana nur während der Kompilation einer :-Definition benutzt werden.
+| c | Dieses Wort kann nur während der Kompilation einer :-Definition benutzt werden.
 | I | Dieses Wort ist ein immediate Wort, das auch im kompilierenden Zustand ausgeführt wird.
-| 83 | Dieses Wort wird im Forth83-Standard definiert und muß auf allen Standardsystemen äquivalent funktionieren.
+| 83 | Dieses Wort wird im Forth83-Standard definiert und muss auf allen Standardsystemen äquivalent funktionieren.
 | U | Kennzeichnet eine Uservariable.
 
-Weicht die Aussprache eines Wortes von der natürlichen englischen Aussprache ab, so wird sie in Anführungszeichen angegeben. Gelegentlich folgt auch eine deutsche Übersetzung. Die Namen der Stackparameter folgen, sofern nicht suggestive Bezeichnungen ge­wählt wurden, dem nachstehendem Schema. Die Bezeichnungen konnen mit einer nachfolgenden Ziffer versehen sein.
+Weicht die Aussprache eines Wortes von der natürlichen englischen Aussprache ab, so wird sie in Anführungszeichen gesetzt. Gelegentlich folgt auch eine deutsche Übersetzung. Die Namen der Stackparameter folgen, sofern keine suggestive Bezeichnungen gewählt wurden, dem nachstehenden Schema. Die Bezeichnungen können mit einer nachfolgenden Ziffer versehen sein.
 
-|| Stacknotation || Zahlentyp        || Wertebereich in Dezimal || minimale Feldbreite
+|  Stacknotation  | Zahlentyp         | Wertebereich in Dezimal  | minimale Feldbreite |
+|-----------------|-------------------|--------------------------|---------------------|
 | flag            | logischer Wert    | 0=flash, sonst=true      | 16bit
 | true (tf)       | logischer Wert    | -1 (als Ergebnis)        | 16bit
 | false (ff)      | logischer Wert    | 0                        | 16bit
@@ -53,7 +51,7 @@ Oft benutzte Zahlenwerte wurden zu Konstanten gemacht. Definiert in der Form :
 
 {{{ n Constant n }}}
 
-Dadurch	wird Syeicherplatz eingespart und die Ausführungszeit ver­kürzt.
+Dadurch	wird Speicherplatz eingespart und die Ausführungszeit verkürzt.
 
 * [1+|one-plus]
 * [1-|one-minus]
@@ -82,7 +80,7 @@ Dadurch	wird Syeicherplatz eingespart und die Ausführungszeit ver­kürzt.
 
 !!VolksForth Logik Worte
 
-* [true]
+* [true|true]
 * [false]
 * [0=|Zero-equals]
 * [0<>|Zero-noequal]
@@ -93,7 +91,7 @@ Dadurch	wird Syeicherplatz eingespart und die Ausführungszeit ver­kürzt.
 * [>|greater-than]
 * [u<|u-less-than]
 * [u>|u-greater-than]
-* [and]
+* [and|and]
 * [or]
 * [xor]
 * [uwithin]
@@ -139,37 +137,36 @@ FORTH benutzt zur gegenseitigen Übergabe von Parametern an Wörter hauptsächli
 
 Damit deutlich wird, welche und wieviele Parameter ein Wort benötigt, werden all­gemein STACK-KOMMENTARE verwendet:
 
-Der öffnenden runden Klammer folgt eine Aufzählung der Parameter. Dabei steht der Parameter, der als oberstes Stack-Element erwartet wird, ganz rechts. Dann folgt ein "--", das die Ausführung des Wortes symbolisieren soll. Anschließend wird der Zustand des Stacks nach der Ausführung des Wortes dargestellt, wobei das oberste Stackelement wieder ganz rechts steht. Die schließende runde Klammer beendet den Stack-Kommentar.
+Der öffnenden runden Klammer folgt eine Aufzählung der Parameter. Dabei steht der Parameter, der als oberstes Stack-Element erwartet wird, ganz rechts. Dann folgt ein "--", das die Ausführung des Wortes symbolisieren soll. Anschließend wird der Zustand des Stacks nach der Ausführung des Wortes dargestellt, wobei das oberste Stackelement wieder ganz rechts steht. Die abschließende runde Klammer beendet den Stack-Kommentar.
 
 Ein Wort SQRT, das die Quadratwurzel einer Integerzahl liefert, würde in FORTH so benannt und beschrieben:
-{{{
+```
 sqrt ( number -- sqrt )
 ```
   
 Wird dieses neue Wort aufgerufen, so werden alle darin enthaltenen Wörter ausgeführt, eventuell bereitgestellte Parameter bearbeitet und daraus resultierende Ergebnisse auf dem Stack übergeben.  
   
 Der Aufruf von Prozeduren erfolgt in FORTH implizit durch die Nennung des Namens, ebenso wie auch die Datenübergabe zwischen Wörtern meist implizit erfolgt.  
-  
-  
-- [drop](../drop/README.md)  
-- [2drop](../two-drop/README.md)  
-- [dup](../dup/README.md)  
-- [?dup](../question-dup/README.md)  
-- [2dup](../two-dup/README.md)  
-- [swap](../swap/README.md)  
-- [2swap](../two-swap/README.md)  
-- [nip](../nip/README.md)  
-- [over](../over/README.md)  
-- [2over](../two-over/README.md)  
-- [under](../under/README.md)  
-- [rot](../rot/README.md)  
-- [-rot](../minus-rot/README.md)  
-- [roll](../roll/README.md)  
-- [-roll](../minus-roll/README.md)  
-- [pick](../pick/README.md)  
-- [.s](../dos-s/README.md)  
-- [clearstack](../clearstack/README.md)  
-- [depth](../depth/README.md)  
-- [s0](../s-zero/README.md)  
-- [sp!](../s-p-store/README.md)  
-- [sp@](../s-p-fetch/README.md)  
+
+- [drop](../Words/drop/README.md)  
+- [2drop](../Words/two-drop/README.md)  
+- [dup](../Words/dup/README.md)  
+- [?dup](../Words/question-dup/README.md)  
+- [2dup](../Words/two-dup/README.md)  
+- [swap](../Words/swap/README.md)  
+- [2swap](../Words/two-swap/README.md)  
+- [nip](../Words/nip/README.md)  
+- [over](../Words/over/README.md)  
+- [2over](../Words/two-over/README.md)  
+- [under](../Words/under/README.md)  
+- [rot](../Words/rot/README.md)  
+- [-rot](../Words/minus-rot/README.md)  
+- [roll](../Words/roll/README.md)  
+- [-roll](../Words/minus-roll/README.md)  
+- [pick](../Words/pick/README.md)  
+- [.s](../Words/dos-s/README.md)  
+- [clearstack](../Words/clearstack/README.md)  
+- [depth](../Words/depth/README.md)  
+- [s0](../Words/s-zero/README.md)  
+- [sp!](../Words/s-p-store/README.md)  
+- [sp@](../Words/s-p-fetch/README.md)  
