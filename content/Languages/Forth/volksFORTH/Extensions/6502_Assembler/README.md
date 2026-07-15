@@ -1,9 +1,6 @@
----
-title: 6502 Assembler
----
-# 6502 Assembler for VolksForth  
+# 6502 Assembler for volksFORTH
   
-See [6502_Assembler_in_Forth](../6502_Assembler_in_Forth/README.md) for the original FIG-Forth version of this assembler  
+See [6502_Assembler_in_Forth](../../Tutotrial/A_6502_Assembler_in_FORTH/README.md) for the original FIG-Forth version of this assembler  
   
 ```
 \ 6502 Assembler  clv10oct87 

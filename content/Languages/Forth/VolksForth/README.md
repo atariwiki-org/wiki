@@ -19,25 +19,25 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 - [Forth_Benchmarks](Articles/Forth_Benchmarks/README.md)  
   
 ## volksFORTH Handbook (English)  
-- [Chapter 1](../Handbook/Chapter1/README.md)  
-- [Chapter 2](../Handbook/Chapter2/README.md)  
-- [Chapter 3: Arithmetic](../Handbook/Chapter3/README.md)
-- [Chapter 4: Program Structure](../Handbook/Chapter4/README.md) 
-- [Chapter 5: Input / Output](../VFHandbuchChapter5/README.md)
-- [Chapter 6: Strings](../VFHandbuchChapter6/README.md) 
+- [Chapter 1](Handbook/Chapter1/README.md)  
+- [Chapter 2](Handbook/Chapter2/README.md)  
+- [Chapter 3: Arithmetic](Handbook/Chapter3/README.md)
+- [Chapter 4: Program Structure](Handbook/Chapter4/README.md) 
+- [Chapter 5: Input / Output](Handbook/Chapter5/README.md)
+- [Chapter 6: Strings](Handbook/Chapter6/README.md) 
   
-- [6502 Assembler](../Handbook/6502Assembler/README.md)  
+- [6502 Assembler](Handbook/6502Assembler/README.md)  
   
 ## volksFORTH Handbuch (German)  
   
 - [Kapitel 1](../Handbuch/Chapter1/README.md)  
 - [Kapitel 2](../Handbuch/Chapter2/README.md)  
-- [Kapitel 3: Arithmetik](../Handbuch/Chapter3/README.md) 
-- [Kapitel 4: Programm-Strukturen](../Handbuch/Chapter4/README.md)  
-- [Kapitel 5: Ein-/Ausgabe](../Handbuch/Chapter5/README.md)   
-- [Kapitel 6: Zeichenketten](../Handbuch/Chapter6/README.md)
+- [Kapitel 3: Arithmetik](Handbuch/Chapter3/README.md) 
+- [Kapitel 4: Programm-Strukturen](Handbuch/Chapter4/README.md)  
+- [Kapitel 5: Ein-/Ausgabe](Handbuch/Chapter5/README.md)   
+- [Kapitel 6: Zeichenketten](Handbuch/Chapter6/README.md)
   
-- [6502 Assembler](../Handbuch/6502Assembler/README.md)  
+- [6502 Assembler](Handbuch/6502Assembler/README.md)  
   
 ## volksFORTH extensions
   
