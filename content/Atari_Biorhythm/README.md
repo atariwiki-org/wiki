@@ -1,7 +1,7 @@
----
-title: Atari Biorhythm
----
-# Atari Biorhythm CX4107 ; Copyright (C) 1980 Atari, Inc.  
+# Atari Biorhythm (CX4107)
+
+Copyright (C) 1980 Atari, Inc.
+
 The 'Biorhythm' theory states that human lives move in predictable wavelike patterns involving three separate cycles:  
   
 (A) Physical      23 days  
