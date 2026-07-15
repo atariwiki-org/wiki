@@ -1,13 +1,12 @@
----
-title: Lisp Utility Package
----
 # Lisp Utility Package  
   
-General Information  
+## General Information  
   
-Author: 	Datasoft   
-Language: 	LISP   
-Compiler/Interpreter: 	InterLisp/65   
+Author: 	Datasoft
+   
+Language: 	LISP
+  
+Compiler/Interpreter: 	Inter-LISP/65   
   
 ```
 (RAN GOXY VTAB TIME MOD HLIN VLIN REFLECT NORMAL)

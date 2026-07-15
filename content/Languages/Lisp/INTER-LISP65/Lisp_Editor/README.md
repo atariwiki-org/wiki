@@ -1,11 +1,12 @@
----
-title: LispEditor
----
-General Information  
+# Lisp Editor
+
+## General Information  
   
-Author: 	Datasoft   
-Language: 	LISP   
-Compiler/Interpreter: 	InterLisp/65   
+Author: 	Datasoft
+
+Language: 	LISP
+
+Compiler/Interpreter: 	InterLISP/65   
   
 ```
 {code}
