@@ -1,27 +1,28 @@
----
-title: Lisp
----
-# Inter-LISP/65 for the Atari 8 bit  
+# Inter-LISP
+ 
+Copyright (C) 1981 Special System Software.
+
+![](attachments/Inter-LISP.png)  
+Inter-LISP/65 V2.1 for Atari 8-bit computers. 
   
-[atari002.png](attachments/atari002.png)  
-Inter-LISP/65 V2.1 for the Atari 8 bit  
-  
-## Manuals:  
+## Manuals
 - [Inter-LISP.pdf](attachments/Inter-LISP.pdf) Inter-LISP for the Atari Computer  
-- [LISP-Patrick_Henry_Winston-Berthold_Klaus_Paul_Horn.pdf](attachments/LISP-Patrick_Henry_Winston-Berthold_Klaus_Paul_Horn.pdf)  
+- [LISP-Patrick_Henry_Winston-Berthold_Klaus_Paul_Horn.pdf](../attachments/LISP-Patrick_Henry_Winston-Berthold_Klaus_Paul_Horn.pdf)  
   
-## ATR-Image:  
+## ATR-Images
 - [Inter-LISP/65 V2.1](attachments/lisp.atr)  
 - [Inter-LISP/65 V2.5-side A](attachments/lispside1.atr)  
 - [Inter-LISP/65 V2.5-side B](attachments/lispside2.atr)  
   
-## Descriptions:  
-- [InterLisp_commands](../InterLisp_commands/README.md) Commands collected and documented by UNIXcoffee928  
-- [LispEditor](../LispEditor/README.md) for InterLisp/65  
-- [CLISP_Macros](../CLISP_Macros/README.md) for InterLisp/65  
-- [LispCalculator](../LispCalculator/README.md) A simple Calculator in LISP  
-- [Lisp_Macros](../Lisp_Macros/README.md)  
-- [Towers_of_Hanoi](../Towers_of_Hanoi/README.md)  
-- [Lisp_Utility_Package](../Lisp_Utility_Package/README.md)  
+## Descriptions
+- [CLISP Macros](CLISP_Macros/README.md) for InterLisp/65  
+- [InterLISP Commands](InterLIST-Commands/README.md) Commands collected and documented by UNIXcoffee928  
+- [Lisp Editor](Lisp_Editor/README.md) for InterLisp/65  
+- [Lisp Calculator](Lisp_Calculator/README.md) A simple Calculator in LISP  
+- [Lisp Macros](Lisp_Macros/README.md)  
+- [Lisp Utility Package](Lisp_Utility_Package/README.md)  
+
+# Examples
+- [Towers of Hanoi](Examples/Towers_of_Hanoi/README.md)  
   
   

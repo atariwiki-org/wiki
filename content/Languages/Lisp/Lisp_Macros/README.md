@@ -1,13 +1,12 @@
----
-title: Lisp Macros
----
 # Lisp Macros  
   
-General Information  
+## General Information  
   
-Author: 	Datasoft   
-Language: 	LISP   
-Compiler/Interpreter: 	InterLisp/65   
+Author: 	Datasoft
+
+Language: 	LISP
+
+Compiler/Interpreter: InterLISP/65   
   
 ```
 (FUNCALL DEFPROP PUTPROP NCONC GET MAPCAR EQUAL DELETE SUBST REVERSE REMPROP CONZ GENSYM DEFUN MACFNS)
