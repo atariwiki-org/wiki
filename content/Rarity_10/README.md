@@ -68,7 +68,7 @@ __- Physics:__
   
 Ph16 Theory of Relativity  
   
-Well, concerning Physics, we may can restore Ph16 from the Atari-Version of that course, Physics CX6008? Just loud thinking...  
+Well, concerning Physics, we may be able to restore Ph16 from the Atari version of that course, Physics CX6008? Just loud thinking...  
   
 ---
 •) __Atari Assembler Editor Cartridge Source Code__  
@@ -79,12 +79,12 @@ Well, concerning Physics, we may can restore Ph16 from the Atari-Version of that
   
 •) __Atari Statistics II CX8112 Disk__ (was it ever finished?)  
   
-•) __[Atari Pascal](../APX_Atari_Pascal/README.md)__  
-CXL4017 Pascal (cartridge, planned, but never released)  
-CX8109 Pascal (planned, but never released, because 128 KB RAM and 2 disk drives were needed)  
-CX8110 Pascal Database (planned, but never released, because 128 KB RAM and 2 disk drives were needed)  
-CX8115 Pascal-Native Code (planned, but never released, because 128 KB RAM and 2 disk drives were needed)  
-CX8116 Pascal-Linker (planned, but never released, because 128 KB RAM and 2 disk drives were needed)  
+•) __[Atari Pascal](../Companies/Atari/Atari_Pascal_APX-20102/README.md)__  
+- CXL4017 Pascal (cartridge, planned, but never released)  
+- CX8109 Pascal (planned, but never released, because 128 KB RAM and 2 disk drives were needed)  
+- CX8110 Pascal Database (planned, but never released, because 128 KB RAM and 2 disk drives were needed)  
+- CX8115 Pascal-Native Code (planned, but never released, because 128 KB RAM and 2 disk drives were needed)  
+- CX8116 Pascal-Linker (planned, but never released, because 128 KB RAM and 2 disk drives were needed)  
   
 ---
 •) __McStuff Co. OSS BUG/65 revision 1.1__  

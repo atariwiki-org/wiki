@@ -1,18 +1,21 @@
----
-title: Atari Learning System Software
----
-# Atari Learning System Software ; Copyright (C) Atari and Minnesota Educational Computing Consortium (MECC)  
+# Atari Learning System Software
+
+Copyright (C) Atari and Minnesota Educational Computing Consortium (MECC)  
+
 AtariWiki would like to thank all the users who upload these program packages and [Atarimania](http://www.atarimania.com) for hosting the files. Thank you all so much, we really appreciate your help, as always. :-)  
   
 ![](attachments/Logo.jpg)  
-Logo of the Atari Learning System Software  
+The logo of the Atari Learning System Software  
   
-![](attachments/Atari+Expeditions_.gif)  
-Logo of the Minnesota Educational Computing Consortium (MECC)  
+![](attachments/Atari_Expeditions.gif)  
+The logo of the Minnesota Educational Computing Consortium (MECC)  
   
-## Content of the educational program (status (2017): 11/85 packages: 12.94 % finished over all; 11/68 packages: 16.12 % of all packages minus not applicable packages and minus packages to investigate):  
+## Content of the educational program
+
+Status 2017: 11/85 packages: 12.94 % finished over all; 11/68 packages: 16.12 % of all packages minus not applicable packages and minus packages to investigate):  
   
-|| # || AED-Serial-Number|| Name|| Manual|| Image|| Digitized?|| Info   
+| # | AED-Serial-Number | Name| Manual | Image | Digitized? | Info |
+|---|-------------------|-----|--------|-------|------------|------|   
 | 1| AED-80001| Spelling in Context| X| X| yes| [Spelling in Context](http://www.atarimania.com/game-atari-400-800-xl-xe-spelling-in-context-level-1_12466.html)  
 | 2| AED-80002| Spelling in Context 2| | | |   
 | 3| AED-80003| Spelling in Context 3| | | |   
@@ -22,7 +25,7 @@ Logo of the Minnesota Educational Computing Consortium (MECC)
 | 7| AED-80007| Spelling in Context 7| | | |   
 | 8| AED-80008| Spelling in context 8| X| X| | [Spelling in context 8](http://www.atarimania.com/game-atari-400-800-xl-xe-spelling-in-context-8_12473.html)  
 | 9| AED-80009| Math Facts & Games| | | |   
-| 10| AED-80010| Concerntration| | | |   
+| 10| AED-80010| Concentration| | | |   
 | 11| AED-80011| Division Drill| X| X| | [Division Drill](http://www.atarimania.com/game-atari-400-800-xl-xe-division-drill_6696.html)  
 | 12| AED-80012| Atari Sentences| | | |   
 | 13| AED-80013| Atari Lab Starter Set| X| X| | [Atari Lab Starter Set](http://www.atarimania.com/game-atari-400-800-xl-xe-atarilab-starter-set_15989.html)  
@@ -98,14 +101,15 @@ Logo of the Minnesota Educational Computing Consortium (MECC)
 | 83| AED-80159| Wheeler Dealer / Commodore 64| /| /| | /  
 | 84| AED-80160| Wheeler Dealer / Apple II| /| /| | /  
 | 85| AED-80161| Wheeler Dealer / IBM PC| /| /| | /  
-__Legend:__  
-X already in the can  
-- not available, still searching for  
-/ not applicable for Atari computers  
-? investigation required  
+__Legend:__ 
+- X already in the can  
+- - not available, still searching for  
+- / not applicable for Atari computers  
+- ? investigation required  
   
-## Undetermined:  
-|| # || AED-Serial-Number|| Name|| Manual|| Image|| Digitized?|| Info   
+## Undetermined
+| # | AED-Serial-Number | Name | Manual | Image | Digitized? | Info |   
+|---|-------------------|------|--------|-------|------------|------|   
 | ?| ?| Animal World| | | |   
 | ?| ?| AtariLab Curriculum Module - Light| | | |   
 | ?| ?| AtariLab Curriculum Module - Temperature| | | |   
@@ -115,6 +119,6 @@ X already in the can
 | ?| ?| Pilots| | | |   
 | ?| ?| Swarthmore Trig| | | |   
   
-## Images:  
-![](attachments/graphing.jpg)  
+## Images
+![](attachments/Graphing.jpg)  
 AED-80058 Graphing  
