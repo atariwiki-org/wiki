@@ -67,7 +67,7 @@ Es gibt noch eine weitere Darstellungsform für Strings, die beispielsweise für
 - [digit?](../Words/digit-question/README.md)  
 - [accumulate](../Words/accumulate/README.md)  
 - [convert](../Words/convert/README.md)  
-- [number?](../Words/number-question?/README.md)  
+- [number?](../Words/number-question/README.md)  
 - [number](../Words/number/README.md)  
 - [dpl](../Words/dpl/README.md)  
   

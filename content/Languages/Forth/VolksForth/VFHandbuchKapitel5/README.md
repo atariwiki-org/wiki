@@ -117,7 +117,7 @@ Dann mochte ich Ihnen mit dem Texteingabe-Puffer __TIB__ einen weiteren wichtige
 - [expect](../Words/expect/README.md)  
 - [span](../Words/span/README.md)  
 - [>expect](../Words/to-expect/README.md)  
-- [nullstring?](../Words/nullstring-question?/README.md)  
+- [nullstring?](../Words/nullstring-question/README.md)  
 - [stop?](../Words/stop-question/README.md)  
 - [source](../Words/source/README.md)  
 - [word](../Words/word/README.md)  

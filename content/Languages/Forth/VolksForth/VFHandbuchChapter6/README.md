@@ -12,7 +12,7 @@ This is what the string FORTH at the address addr in memory at FORTH.
 - [. "](../Words/_Dot-string/README.md)  
 - ["](../Words/_String/README.md)  
 - [, "](../Words/_Compile-string/README.md)  
-- [Null string? ](../Words/_Null-string_question/README.md)  
+- [Null string? ](../Words/null-string_question/README.md)  
 - ['Lit ](../Words/_quote-literal/README.md)  
 - [. (](../Words/_Dot-comment/README.md)  
 - [(](../Words/_Comment/README.md)  
@@ -53,7 +53,7 @@ No string variable? - Use:
   
 ### 0-terminated strings  
   
-There is another form of representation for strings, which is suitable for example for MS-DOS. These strings are indeed also characterized by an address, this address does not include a byte count. Instead, these strings are terminated with a null byte.  
+There is another form of representation for strings, which is suitable, for example, for MS-DOS. These strings are indeed also characterized by an address, this address does not include a byte count. Instead, these strings are terminated with a null byte.  
   
 ![](attachments/zero-term-string.png)  
   
@@ -68,7 +68,7 @@ There is another form of representation for strings, which is suitable for examp
 - [Digit? ](../Words/_Digit-question/README.md)  
 - [Accumulate](../Words/Accumulate/README.md)  
 - [Convert](../Words/Convert/README.md)  
-- [Number? ](../Words/_Number-question?/README.md)  
+- [Number? ](../Words/Number-question/README.md)  
 - [Number](../Words/Number/README.md)  
 - [Dpl](../Words/Dpl/README.md)  
   
