@@ -1,6 +1,3 @@
----
-title: QuickMagazin 6
----
 # Quick Magazin 6  
   
 ### Articles  

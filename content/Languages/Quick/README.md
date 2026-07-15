@@ -1,89 +1,69 @@
----
-title: Quick
----
-# Quick  
+# QUICK  
+
 Copyright (C) 1989 RAINDORF SOFT & Andreas Binner and Harald Schönfeld  
   
 ### Background  
-Quick is a simple programming language intended to write high-performance code. It is similar to [Action](../Action/README.md) in basic concept, and differs primarily in its syntax. Like Action!, Quick is based on an ALGOL-like (and thus C- and Pascal-like) program structure, and like Action!, it allows variables to be assigned to specific locations in memory which makes it easy to interact with hardware registers. One might think of Quick as a public version of Action! in the same way one might consider [Turbo-BASIC_XL](../Turbo-BASIC_XL/README.md) to be a (greatly improved) public version of [Atari_BASIC](../Atari_BASIC/README.md).  
+QUICK is a simple programming language designed for writing high-performance code. It is similar to [Action](../Action/README.md) in basic concept, and differs primarily in its syntax. Like Action!, QUICK is based on an ALGOL-like (and thus C- and Pascal-like) program structure, and, like Action!, it allows variables to be assigned to specific memory locations, making it easy to interact with hardware registers. One might think of QUICK as a public version of Action! in the same way one might consider [Turbo-BASIC XL](../BASIC/Turbo-BASIC_XL/README.md) to be a (greatly improved) public version of [Atari BASIC](../BASIC/Atari_BASIC/README.md).  
   
-AtariWiki deeply thanks [CharlieChaplin from AtariAge](http://atariage.com/forums/topic/157358-quick-programming-language/#entry1931224), so we can offer the following info:  
-  
-'  
-Quick had been released as a type in listing in German Atari Magazin in 1989 by Raindorf-Soft (Harald Schoenfeld and Andreas Binner). It consists of three program files, the language, a compiler and a runtime (just like TURBO-Basic XL). The listing was version 1.6, but there were also updates available (e. g. via Quick-Magazines 1-15) for version 2.0 and 2.1. Alas, the versions are not fully compatible with each other, thus code used in version 1.6 does not necessarily run in version 2.0 or 2.1 (or vice versa)...  
-  
-There were also commercial sold versions, they were version 2.0 and 2.1 with printed manual and some programming examples. While Atari Magazin was German, its publisher made a deal in the 90s with Dean Garaghty in Scotland and thus some programs (like Quick, Screen Aided Management and others) are also available in English language and/or with English instructions. [dgs](http://www.dgs.clara.net/) still sells these English versions commercially...  
-  
-Last but not least, Abbuc once got permission from the copyright holder (Werner Raetz) to release Quick as an Abbuc Sondermagazin (special issue), but alas, the version released by Abbuc was the oldest one 1.6. Nevertheless, since the Quick Magazines are in PD right now, it is easy to use the magazines to update version 1.6 to 2.0 and to 2.1...  
+AtariWiki deeply thanks [CharlieChaplin from AtariAge](https://forums.atariage.com/topic/157358-quick-programming-language/#findComment-1931224), so we can offer the following info:  
   
 '  
-All German versions can be published here, except the English versions of 2.1 and 2.2.. These two versions have to be obtained from [dgs](http://www.dgs.clara.net/), please see below. On the other hand, AtariWiki is free to publish the English version of 1.6 for free and there is a type in listing on the version to upgrade legally to 2.1.  
+QUICK had been released as a type-in listing in the German Atari Magazin in 1989 by Raindorf-Soft (Harald Schoenfeld and Andreas Binner). It consists of three program files, the language, a compiler, and a runtime (just like TURBO-Basic XL). The listing was version 1.6, but there were also updates available (e. g. via QUICKmagazines 1-15) for version 2.0 and 2.1. Alas, the versions are not fully compatible; thus, code used in version 1.6 does not necessarily run in version 2.0 or 2.1 (or vice versa)...  
+  
+There were also commercially available versions: 2.0 and 2.1, with a printed manual and some programming examples. While Atari Magazin was German, its publisher made a deal in the 90s with Dean Garaghty in Scotland, so some programs (like QUICK, Screen Aided Management, and others) are also available in English and/or with English instructions. [dgs](http://www.dgs.clara.net/) still sells these English versions commercially...  
+  
+Last but not least, Abbuc once got permission from the copyright holder (Werner Raetz) to release QUICK as an Abbuc Sondermagazin (special issue), but alas, the version released by Abbuc was the oldest one, 1.6. Nevertheless, since the QUICK Magazines are in PD right now, it is easy to use them to update version 1.6 to 2.0 and then to 2.1...  
+  
+'  
+All German versions can be published here, except the English versions of 2.1 and 2.2.. These two versions must be obtained from [dgs](http://www.dgs.clara.net/). Please see below. On the other hand, AtariWiki is free to publish the English version of 1.6, and there is a type-in listing for the version to upgrade legally to 2.1.  
   
 ## ATR Images  
-- [QUICKV16.ATR](attachments/QUICKV16.ATR) ; QUICK version 1.6 with Editor, Compiler, Runtime and DOS II Version 2.75  
-- [QIK_SHEL.atr](attachments/QIK_SHEL.atr) ; Quick-Shell V1.1, includes Quick-Editor V1.3 and Quick-Compiler V1.6 in English  
+- [QUICKV16.ATR](attachments/QUICKV16.atr) ; QUICK version 1.6 with Editor, Compiler, Runtime and DOS II Version 2.75  
+- [QIK_SHEL.atr](attachments/QIK_SHEL.atr) ; QUICK-Shell V1.1, includes QUICK-Editor V1.3 and QUICK-Compiler V1.6 in English  
 - [QIK_001.atr](attachments/QIK_001.atr) ; QUICKmagazin Ausgabe 1 in German language  
 - [QIK_002.atr](attachments/QIK_002.atr) ; QUICKmagazin Ausgabe 2 in German language  
 - [QIK_003.atr](attachments/QIK_003.atr) ; QUICKmagazin Ausgabe 3 in German language  
   
-We are sorry, we can't offer the ATR images of version 2.1 and 2.2 in English for free, but the right holder: [dgs](http://www.dgs.clara.net/) offers them for a cheap price. Quick version 2.2 english currently costs US$5 on its own, or US$7 when included in the full DGS commercial software pack. Both are delivered as a ZIP file containing ATR files of the disks (including two support disks), along with a PDF of the English manual.  
+We are sorry, but we can't offer the ATR images for versions 2.1 and 2.2 in English for free. However, the right holder, [dgs](http://www.dgs.clara.net/), offers them at a low price. QUICK version 2.2 English currently costs US$5 on its own, or US$7 when included in the full DGS commercial software pack. Both are delivered as a ZIP file containing ATR files for the disks (including two support disks) and a PDF of the English manual.  
   
 ## Manual  
-- [Quick_v2_0_Handbuch_deutsch.pdf](attachments/Quick_v2_0_Handbuch_deutsch.pdf) ; size: 563 KB ; German Quick manual ; Thank you so much Mr. Barcardi for help in this, we really appreciate this. :-)  
+- [QUICK_V2.0-Manual-German.pdf](attachments/QUICK_V2.0-Manual-German.pdf) ; size: 563 KB ; German QUICK manual ; Thank you so much, Mr. Barcardi, for your help with this; we really appreciate it. :-)  
   
 ## Articles  
-- [original_Quick_Articles_from_german_Atari_Magazin](../original_Quick_Articles_from_german_Atari_Magazin/README.md)  
+- [QUICK Articles from German ATARImagazin](ATARImagazin/README.md)  
   
-## Quick Programs  
+## QUICK Programs  
   
-- [TIF2PIC](../TIF2PIC/README.md) TIF2PIC converter by Ralf Patschke (pps)  
-- [Abbuc_Magazin_73_Gametro](../Abbuc_Magazin_73_Gametro/README.md) by Ralf Patschke (pps)  
-- [Koung](../Koung/README.md) ; A simple PONG like game written in Quick  
-- [Quick_Demo_Disks](../Quick_Demo_Disks/README.md)  
+- [TIF2PIC](Examples/TIF2PIC/README.md) TIF2PIC converter by Ralf Patschke (pps)  
+- [Abbuc_Magazin_73_Gametro](Examples/Abbuc_Magazin_73_Gametro/README.md) by Ralf Patschke (pps)  
+- [Koung](Examples/Koung/README.md) ; A simple PONG like game written in QUICK  
+- [QUICK_Demo_Disks](Examples/QUICK_Demo_Disks/README.md)  
   
-## Quick Magazin  
+## QUICKmagazin
   
-These are the QUICK Magazin Disk 1 - 15.  
-  
-We thank Andreas Magenheimer for this donations. Andreas, we are deeep, very, very deep in your debt! Please go ahead! We really appreciate your help in so many cases that much! :-)))  
-  
-- [QuickMagazin_1](../QuickMagazin_1/README.md)  
-- [QuickMagazin_2](../QuickMagazin_2/README.md)  
-- [QuickMagazin_3](../QuickMagazin_3/README.md)  
-- [QuickMagazin_4](../QuickMagazin_4/README.md)  
-- [QuickMagazin_5](../QuickMagazin_5/README.md)  
-- [QuickMagazin_6](../QuickMagazin_6/README.md)  
-- [QuickMagazin_7](../QuickMagazin_7/README.md)  
-- [QuickMagazin_8](../QuickMagazin_8/README.md)  
-- [QuickMagazin_9](../QuickMagazin_9/README.md)  
-- [QuickMagazin_10](../QuickMagazin_10/README.md)  
-- [QuickMagazin_11](../QuickMagazin_11/README.md)  
-- [QuickMagazin_12](../QuickMagazin_12/README.md)  
-- [QuickMagazin_13](../QuickMagazin_13/README.md)  
-- [QuickMagazin_14](../QuickMagazin_14/README.md)  
-- [QuickMagazin_15](../QuickMagazin_15/README.md)  
+See [QUICKmagazin](QUICKmagazin/README.md). 
   
 ## Pictures  
 ![](attachments/RAINDORF_SOFT.jpg)  
 RAINDORF SOFT Logo  
   
-![](attachments/Logo.png)  
-Quick Logo  
+![](attachments/QUICK_Logo.png)  
+QUICK Logo  
   
 ![](attachments/Disk.jpg)  
-Quick Disk ; Verlag W. Raetz oder Rätz, Postfach 1640, 7510 (alte PLZ) Bretten , 75015 (neue PLZ) Bretten ; thank you Atarimania! :-)  
+QUICK Disk ; Verlag W. Raetz oder Rätz, Postfach 1640, 7510 (alte PLZ) Bretten , 75015 (neue PLZ) Bretten ; thank you Atarimania! :-)  
   
 ![](attachments/Handbuch.jpg)  
-Quick Handbuch ; thank you Atarimania! :-)  
+QUICK Handbuch ; thank you Atarimania! :-)  
   
-![](attachments/Quick-Shell-V1.1.jpg)  
-Quick-Shell V1.1  
+![](attachments/QUICK-Shell-V1.1.jpg)  
+QUICK-Shell V1.1  
   
 ![](attachments/Editor.jpg)  
-Quick Editor V1.3  
+QUICK Editor V1.3  
   
-![](attachments/Quick-Compiler-V1.6.jpg)  
-Quick-Compiler V1.6  
+![](attachments/QUICK-Compiler-V1.6.jpg)  
+QUICK-Compiler V1.6  
   
 ![](attachments/QUICKmagazin.jpg)  
 Das QUICKmagazin  
@@ -116,7 +96,7 @@ The new commands in QUICK V2.0
   
 We thank Fred Meijer from [Atarimuseum in the Netherlands](http://www.atarimuseum.nl) for this donation  
   
-- [Quick flyers](attachments/quick_flyers.pdf) ; size: 963 KB  
+- [QUICK flyers](attachments/QUICK_flyers.pdf) ; size: 963 KB  
   
-![](attachments/quick_ad.jpg)  
-Quick ad Christmas 1991  
+![](attachments/QUICK_ad.jpg)  
+QUICK ad Christmas 1991  

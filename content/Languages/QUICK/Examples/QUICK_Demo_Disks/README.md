@@ -1,11 +1,8 @@
----
-title: Quick Demo Disks
----
-# Quick Demo Disks  
+# QUICK Demo Disks  
   
-This are some Disks with Demos demonstrating the QUICK Capabilities.  
+These are some disks with demos demonstrating the QUICK Capabilities.  
   
-This Quick Demos where donated by Andreas Magenheimer.  
+These QUICK Demos were donated by Andreas Magenheimer.  
   
 - [Quick Demo Disk/QIKDEMO1.ATR](../Quick_Demo_Disks/README.md)  
 - [Quick Demo Disk/QIKDEMO2.ATR](../Quick_Demo_Disks/README.md)  

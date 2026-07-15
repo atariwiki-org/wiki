@@ -21,6 +21,6 @@ title: Operating System
   
 [Synapse Assembler Atari 800 OS Equates](../Synapse_Assembler_Atari_800_OS_Equates/README.md)  
   
-[Copy OS ROM to RAM](../Copy_OS_ROM_to_RAM/README.md)  
+[Copy OS ROM to RAM](../Languages/Assembler/Examples/Copy_OS_ROM_to_RAM/README.md)  
   
 [OS Vectors for Action!](../OS_Vectors/README.md)  

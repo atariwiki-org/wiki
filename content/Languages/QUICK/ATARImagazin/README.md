@@ -1,6 +1,6 @@
-# Quick Articles from German Atari Magazin  
+# Quick Articles from the German ATARImagazin
   
-These are scans of the original Quick article series published in the german Atari Magazin 8/89, 9/10/89, 11/12/89.  
+These are scans of the original Quick article series published in the German ATARImagazin 8/89, 9/10/89, 11/12/89.  
   
 ![](attachments/Quick.png)  
   
