@@ -101,9 +101,11 @@ Status 2017: 11/85 packages: 12.94 % finished over all; 11/68 packages: 16.12 % 
 | 83| AED-80159| Wheeler Dealer / Commodore 64| /| /| | /  
 | 84| AED-80160| Wheeler Dealer / Apple II| /| /| | /  
 | 85| AED-80161| Wheeler Dealer / IBM PC| /| /| | /  
+
+
 __Legend:__ 
 - X already in the can  
-- - not available, still searching for  
+- \- not available, still searching for  
 - / not applicable for Atari computers  
 - ? investigation required  
   
