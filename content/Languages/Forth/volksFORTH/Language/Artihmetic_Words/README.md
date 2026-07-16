@@ -16,7 +16,7 @@
 - [+](../Words/plus/README.md)
 - [-](../Words/minus/README.md)
 - [*](../Words/times/README.md)
-- [/](../Words/divide/README.md)
+- [Divide](../Words/divide/README.md)
 - [mod](../Words/mod/README.md)
 - [/mod](../Words/divide-mod/README.md)
 - [*/](../Words/times-divide/README.md)

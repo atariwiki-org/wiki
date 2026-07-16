@@ -17,7 +17,7 @@ Copyright (C) 1986 E. Reuss & Compy-Shop
 - [Fast_text_output_on_Graphics_0_Screen_without_OS](../../../Fast_text_output_on_Graphics_0_Screen_without_OS/README.md)
 - [Memopad_Demo](../../../Memopad_Demo/README.md)
 - [Floating_point_Routines](../../../Floating_point_Routines/README.md)
-- [Integer_Math](../../../Languages/Assembler/Examples/Integer_Math/README.md)
+- [Integer Math for 6502](../../../Languages/Assembler/Examples/Integer_Math/README.md)
 - [Plot_and_Draw_Routines](../../../Plot_and_Draw_Routines/README.md)
 - [Block-Fill_and_Block-Move](../../../Block-Fill_and_Block-Move/README.md)
 - [Load_Koala_Pictures](../../../Load_Koala_Pictures/README.md)
@@ -27,7 +27,7 @@ Copyright (C) 1986 E. Reuss & Compy-Shop
 - [List_Directory_Example](../../../List_Directory_Example/README.md)
 - [Disable_BREAK_key](../../../Disable_BREAK_key/README.md)
 - [Simple_XOR_encoding](../../../Simple_XOR_encoding/README.md)
-- [Bitwise_AND_OR_XOR_and_NOT](../../../Bitwise_AND_OR_XOR_and_NOT/README.md)
+- [Bitwise AND, OR, XOR and NOT for BASIC (USR Call)](../../../Bitwise_AND_OR_XOR_and_NOT/README.md)
 - [HDISource](../../../HDISource/README.md) - High Density Interface (PC FLoppy Interface with Speedy like OS)
 - [SIO2USB_Clock_Utility](../../../SIO2USB_Clock_Utility/README.md)
 - [Simple_Disk_Formatter](../../../Simple_Disk_Formatter/README.md)
@@ -35,4 +35,4 @@ Copyright (C) 1986 E. Reuss & Compy-Shop
 - [Atari ST Mouse Driver for ACTION!](../../../Atari_ST_Mouse_Driver_for_ACTION/README.md)
 - [ST_Mouse_Driver_for_Basic](../../../Languages/BASIC/Atari_BASIC/Examples/ST_Mouse_Driver_for_Basic/README.md)
 - [Sweet16Bibo](../../../Sweet16Bibo/README.md) Sweet 16 - a virtual 16bit machine for the 8bit ATARI
-- [Simple_Blitter](../../../Languages/BASIC/Turbo-BASIC_XL/Examples/Simple_Blitter/README.md)
+- [Simple Blitter Routine](../../../Languages/BASIC/Turbo-BASIC_XL/Examples/Simple_Blitter/README.md)

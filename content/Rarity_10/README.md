@@ -44,7 +44,7 @@ Atari Dow Jones Investment Evaluator CX8127
 
 •) [Atari Home Finance or Personal Finance](../Atari_Home_Finance/README.md) 
 
-•) [Atari_Learning_System_Software](../Companies/Atari/Atari_Learning_System_Software/README.md) ; completely missing!
+•) [Atari Learning System Software](../Companies/Atari/Atari_Learning_System_Software/README.md) ; completely missing!
 
 ---
 •) Desperate call for help on missing Dorsett tapes
@@ -79,7 +79,7 @@ Well, concerning Physics, we may be able to restore Ph16 from the Atari version 
 
 •) __Atari Statistics II CX8112 Disk__ (was it ever finished?)
 
-•) __[Atari Pascal](../Companies/Atari/Atari_Pascal_APX-20102/README.md)__
+•) __[Atari Pascal (APX-20102)](../Companies/Atari/Atari_Pascal_APX-20102/README.md)__
 - CXL4017 Pascal (cartridge, planned, but never released)
 - CX8109 Pascal (planned, but never released, because 128 KB RAM and 2 disk drives were needed)
 - CX8110 Pascal Database (planned, but never released, because 128 KB RAM and 2 disk drives were needed)
@@ -167,7 +167,7 @@ Atari Datenbank DXG 5723 Copyright © 1983 Atari Elektronik Vertriebs GmbH ; Que
 •) __Atari Music Spiele__
 Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. In keinem Katalog, in keiner Preisliste und in keinem Handbuch wurde hierzu eine Spur gefunden! Dennoch stammt die Information aus einer sehr seriösen Quelle, die wir ernst nehmen. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)
 
-•) __[Super_Biorhythmus](../Super_Biorhythmus/README.md) (wurde es je fertig?)__
+•) __[Atari Super Biorhythmus](../Super_Biorhythmus/README.md) (wurde es je fertig?)__
 
 Und als Letztes noch das Modul, welches für den WDR hergestellt worden ist:
 
@@ -175,7 +175,7 @@ Und als Letztes noch das Modul, welches für den WDR hergestellt worden ist:
 
 ## Images of the lost things
 
-[The_Atari_Accountant](../The_Atari_Accountant/README.md) 
+[The Atari Accountant](../The_Atari_Accountant/README.md) 
 
 [Atari_The_Dow_Jones_Investment_Evaluator](../Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
 

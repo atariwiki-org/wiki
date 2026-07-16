@@ -62,9 +62,9 @@ __Please take into account, that the DOS was modified by Kyan! It is not possibl
 ### Examples
 
 - [Bitwise_AND](../../../Bitwise_AND/README.md)
-- [Invert_Char_at_X.Y_Position](../../../Languages/Assembler/Examples/Invert_Char_at_X.Y_Position/README.md)
-- [CIO_Library_for_Kyan_Pascal](../../../Languages/Pascal/Kyan_Pascal/Examples/CIO_Library_for_Kyan_Pascal/README.md)
-- [CIO_Library_with_Note_and_Point_for_Kyan_Pascal](../../../Languages/Pascal/Kyan_Pascal/Examples/CIO_Library_with_NOTE_and_POINT_for_Kyan_Pascal/README.md)
+- [Invert Char at X/Y Position](../../../Languages/Assembler/Examples/Invert_Char_at_X.Y_Position/README.md)
+- [CIO Library for Kyan Pascal](../../../Languages/Pascal/Kyan_Pascal/Examples/CIO_Library_for_Kyan_Pascal/README.md)
+- [CIO Library with NOTE and POINT for Kyan Pascal](../../../Languages/Pascal/Kyan_Pascal/Examples/CIO_Library_with_NOTE_and_POINT_for_Kyan_Pascal/README.md)
 - [HEAD_Tool](../../../HEAD_Tool/README.md)
 
 ### External Information

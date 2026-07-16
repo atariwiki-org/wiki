@@ -79,7 +79,7 @@ Synapse Assembler has been written by Steve Hales. Steve Hales was and still is 
 - [Interview with Ihor Wolosenko](http://mrbacardi.000space.com/games/Synapse/Ihor_Wolosenko.html) ; thanks to Mr. Bacardi
 
 ## Manual
-- [SynAssembler_Manual](SynAssembler_Manual/README.md) ; online manual
+- [SynAssembler Manual](SynAssembler_Manual/README.md) ; online manual
 - [SynAssembler Manual](attachments/SynAssembler-Manual.pdf) ; size: 172 KB; pdf-file
 - [SynAssembler Manual](attachments/SynAssembler-Manual.doc) ; size: 197 KB; doc-file
 - [SynAssembler Manual](attachments/SynAssembler-Manual-OCR-Bookmarks.pdf) ; size: 225 KB; pdf-file with OCR and bookmarks

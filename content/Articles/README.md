@@ -9,7 +9,7 @@ title: Articles
 - [Boot_from_Cassette](../Boot_from_Cassette/README.md)
 - [Atari_Datasette_XC12_Turbo_6000_Baud_Interface](../Atari_Datasette_XC12_Turbo_6000_Baud_Interface/README.md)
 - [Rambit Turbocharger for Atari Datarecorders](../Rambit_Turbocharger_for_Atari_Datarecorders/README.md)
-- [CAS_to_WAV_and_WAV_to_CAS](../CAS_to_WAV_and_WAV_to_CAS/README.md)
+- [CAS to WAV and WAV to CAS](../CAS_to_WAV_and_WAV_to_CAS/README.md)
 
 # Emulator
 - [Altirra](../Altirra/README.md)
@@ -20,10 +20,10 @@ title: Articles
 - [PlayOnMac](https://www.playonmac.com/en/)
 
 # Generic Information
-- [Atari_ATASCII_Table](../Atari_ATASCII_Table/README.md)
+- [Atari ATASCII Table](../Atari_ATASCII_Table/README.md)
 - [Differences Atari 400/800 - 1200XL - 600/800XL](../DiffOldOs2XL/README.md)
 - [Ironman_Atari](../Ironman_Atari/README.md) A compilation of advanced Atari 8-bit programming techniques
-- [Mode_Setcolor_Color_Table](../Languages/BASIC/Atari_BASIC/Mode_Setcolor_Color_Table/README.md)
+- [Mode, Setcolor, Color Table](../Languages/BASIC/Atari_BASIC/Mode_Setcolor_Color_Table/README.md)
 - [Table_of_Modes_and_Screen_Format](../Table_of_Modes_and_Screen_Format/README.md)
 - [Unleash_the_power_of_Ataris_CPU](../Unleash_the_power_of_Ataris_CPU/README.md)
 
@@ -54,7 +54,7 @@ title: Articles
 ### Third Party Drives
 - [ASTRA_2001](../ASTRA_2001/README.md)
 - [Indus_GT](../Indus_GT/README.md)
-- [Percom_AT-88](../Hardware/Disk_Drives/Percom_AT-88/README.md)
+- [Percom AT-88](../Hardware/Disk_Drives/Percom_AT-88/README.md)
 - [Rana_1000](../Rana_1000/README.md)
 - [Trak_AT-D2](../Trak_AT-D2/README.md)
 
@@ -118,7 +118,7 @@ title: Articles
 - [Multijoy](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 
 ## Voicebox/Sprachbox
-- [Atari Sprachbox](../Sprachbox/README.md) (German)
+- [Sprachbox DXG5721](../Sprachbox/README.md) (German)
 - [Sprachbox XL/XE](../Sprachbox-xl-xe/README.md)
 
 ## Cartridges
@@ -133,7 +133,7 @@ title: Articles
 - [ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION](../ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
 - [Bank_Switching](../Bank_Switching/README.md)
 - [SDrive-MAX](../SDrive-MAX/README.md)
-- [MicroUSB](../Hardware/USB/MicroUSB/README.md)
+- [The MicroUSB Project](../Hardware/USB/MicroUSB/README.md)
 
 # History
 - [The Atari FAQ](https://mcurrent.name/atari-8-bit/faq.txt)
@@ -168,12 +168,12 @@ title: Articles
 - [Atari_8-Bit_Error-Codes.pdf](attachments/Atari_8-Bit_Error-Codes.pdf) ; Error-Codes for ACTION!, Atari Assembler Cartridge, Atari BASIC & OSS BASIC XL/XE, DOS or other Operating System, MAC/65 and Microsoft BASIC II
 - [ASCII-Tabelle](../ASCII-Tabelle/README.md)
 - [DEZ-HEX-BIN-OKT-PEN_Excel_2016.xlsx](attachments/DEZ-HEX-BIN-OKT-PEN_Excel_2016.xlsx) ; Excel sheet for number conversions ; base conversions require Excel 2016
-- [OpCodes](../OpCodes/README.md)
-- [CIO Special Command Filter](../CIO_Special_Command_Filter/README.md)
+- [OpCodes for 6502, 65C02 and 65C816 microprocessors](../OpCodes/README.md)
+- [CIO SPECIAL Command Filter](../CIO_Special_Command_Filter/README.md)
 - [Atari Password](http://www.atarimagazines.com/compute/issue73/atari_password.php)
 
 # Rarity 10 and above up to impossible
-- [Rarity_10](../Rarity_10/README.md)
+- [Rarity 10 and above up to impossible](../Rarity_10/README.md)
 
 # Related to Atari
 - [Atari_True_Type_Font_for_PC_and_Mac](../Atari_True_Type_Font_for_PC_and_Mac/README.md)
@@ -185,7 +185,7 @@ title: Articles
 *Business
 ##[Atari_Timewise](../Atari_Timewise/README.md) 
 ##[The_Atari_Accountant_Series](../The_Atari_Accountant_Series/README.md) 
-##[The_Bookkeeper](../The_Bookkeeper/README.md) 
+##[The Bookkeeper CX414](../The_Bookkeeper/README.md) 
 ##[The_Home_Filing_Manager](../The_Home_Filing_Manager/README.md) 
 ##[Atari_Home_Accounting_System](../Atari_Home_Accounting_System/README.md) 
 
@@ -194,13 +194,13 @@ title: Articles
 ##[Atari Graph It I & II](../Atari_Graph_It_I_and_II/README.md) 
 ##[Atari_Home_Finance](../Atari_Home_Finance/README.md) 
 ##[Atari_Investment_Analysis_Series](../Atari_Investment_Analysis_Series/README.md) 
-###[Bond_Analysis](../Companies/Atari/Bond_Analysis/README.md) 
+###[Bond Analysis CX8106](../Companies/Atari/Bond_Analysis/README.md) 
 ###[Mortgage_and_Loan_Analysis](../Mortgage_and_Loan_Analysis/README.md) 
 ###[Stock_Analysis](../Stock_Analysis/README.md) 
 ###[Stock_Charting](../Stock_Charting/README.md) 
 ##[Atari_Personal_Financial_Management_System](../Atari_Personal_Financial_Management_System/README.md) 
 ##[Atari_Rechner_Simulation_mit_UPN](../Atari_Rechner_Simulation_mit_UPN/README.md) 
-##[Atari_Silent_Butler](../Atari_Silent_Butler/README.md) 
+##[Atari Silent Butler (DX5082)](../Atari_Silent_Butler/README.md) 
 ##[Atari_Statistics_I](../Atari_Statistics_I/README.md) 
 ##[Atari_The_Dow_Jones_Investment_Evaluator](../Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
 ##[Enhancements_to_Graph_It](../Enhancements_to_Graph_It/README.md) 
@@ -208,7 +208,7 @@ title: Articles
 ##[Family_Cash_Flow](../Family_Cash_Flow/README.md) 
 ##[Family_Finances](../Family_Finances/README.md) 
 ##[Home_Inventory](../Home_Inventory/README.md) 
-##[RPN_Calculator](../RPN_Calculator/README.md) 
+##[RPN Calculator](../RPN_Calculator/README.md) 
 
 *Database
 ##[Synapse_SynFile](../Synapse_SynFile/README.md) 
@@ -223,20 +223,20 @@ title: Articles
 *Education
 ##[Atari_Educational_System-programming_cassette_streams](../Atari_Educational_System-programming_cassette_streams/README.md) 
 ##[Atari_Educational_System_Lesson_Cassettes](../Atari_Educational_System_Lesson_Cassettes/README.md) 
-##[Dorsett_Educational_System_Lesson_Cassettes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md) 
+##[Dorsett Educational System Lesson Cassettes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md) 
 ##[An Invitation to Programming 1 CX4101](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%201%20CX4101) 
 ##[An Invitation to Programming 2 CX4106](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%202%20CX4106) 
 ##[An Invitation to Programming 3 CX4117](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%203%20CX4117) 
 
 *Entertainment
-##[Atari Biorhythm CX4107](../Atari_Biorhythm/README.md) 
+##[Atari Biorhythm (CX4107)](../Atari_Biorhythm/README.md) 
 ##[Atari Biorhythm cassette-Dual Track with voice, music and data](attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube
 ##[Atari Hangman CX4108](../Atari_Hangman/README.md) 
 ##[Atari Hangman cassette-Dual Track with voice, music and data](attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
-##[Video_Easel_CXL_4005](../Video_Easel_CXL_4005/README.md) 
+##[Video Easel CXL 4005](../Video_Easel_CXL_4005/README.md) 
 
 *Games
-##[Caverns_of_Mars_CX8130](../Companies/Atari/Caverns_of_Mars_CX8130/README.md) 
+##[Caverns of Mars (CX8130)](../Companies/Atari/Caverns_of_Mars_CX8130/README.md) 
 ##[Computer_Chess_CXL_4009](../Computer_Chess_CXL_4009/README.md) 
 ##[Galaxian_CXL4024](../Galaxian_CXL4024/README.md) 
 
@@ -283,9 +283,9 @@ title: Articles
 ##[Fixdump](../Fixdump/README.md) 
 
 *Word Processing
-##[Atari_Word_Processor](../Companies/Atari/Atari_Word_Processor/README.md) 
+##[Atari Word Processor (CX404) and Atari Word Processor Demonstration Data Kit (CX8128)](../Companies/Atari/Atari_Word_Processor/README.md) 
 ##[Atari_Writer](../Atari_Writer/README.md) 
-##[Atari_Proofreader](../Atari_Proofreader/README.md) 
+##[Atari Proofreader (AX2033)](../Atari_Proofreader/README.md) 
 ##[Atari_Schreiber](../Atari_Schreiber/README.md) 
 ##[The_Writer's_Tool](../The_Writer's_Tool/README.md) 
 ##[AUSTRO.TEXT](../Companies/AUSTRO.COM/AUSTRO.TEXT/README.md) 
@@ -296,7 +296,7 @@ title: Articles
 - [Atari_Boxes](../Atari_Boxes/README.md)
 
 ## Atari Learning System Software
-- [Atari_Learning_System_Software](../Companies/Atari/Atari_Learning_System_Software/README.md)
+- [Atari Learning System Software](../Companies/Atari/Atari_Learning_System_Software/README.md)
 
 ## Atari Program Exchange (APX) Software
 - [Atari_Program_Exchange_APX_Software](../Atari_Program_Exchange_APX_Software/README.md)
@@ -383,9 +383,9 @@ title: Articles
 
 - Datenbanken
 ##[Artikelverwaltung](../Artikelverwaltung/README.md) 
-##[Bundesligatabelle](../Companies/Atari/Bundesligatabelle/README.md) 
+##[Atari Bundesligatabellen (DXG 55005)](../Companies/Atari/Bundesligatabelle/README.md) 
 ##[Diskettenbibliothek](../Diskettenbibliothek/README.md) 
-##[Karteikartenprogramm](../Companies/Atari/Karteikartenprogramm/README.md) 
+##[Karteikartenprogramm (DXG_415)](../Companies/Atari/Karteikartenprogramm/README.md) 
 ##[Vereinsverwaltung](../Vereinsverwaltung/README.md) 
 ##[Sport-Lexikon](../Sport-Lexikon/README.md) 
 
@@ -415,9 +415,9 @@ title: Articles
 ##[Editor](../Editor/README.md) 
 ##[Macro_Assembler](../Macro_Assembler/README.md) 
 ##[Mikrosoft_Basic_aka_Microsoft_Basic_II](../Mikrosoft_Basic_aka_Microsoft_Basic_II/README.md) 
-##[Pascal](../Languages/Pascal/README.md) 
+##[Pascal for the Atari](../Languages/Pascal/README.md) 
 ##[Pilot](../Pilot/README.md) 
-##[Logo](../Logo/README.md) 
+##[Atari LOGO](../Logo/README.md) 
 
 - Spiele
 ##[WWF-Club-Spiel](../WWF-Club-Spiel/README.md) 
@@ -439,9 +439,9 @@ title: Articles
 ##[Beeil_Dich-Verdreht](../Beeil_Dich-Verdreht/README.md) 
 ##[Bonbonglas-Chaos](../Bonbonglas-Chaos/README.md) 
 ##[Golf-Balkenrechnen](../Golf-Balkenrechnen/README.md) 
-##[Schluck-Richtungspfeile](../Schluck-Richtungspfeile/README.md) 
+##[Schluck / Richtungspfeile TXG 9502](../Schluck-Richtungspfeile/README.md) 
 ##[Ufos-Blitzschnell](../Ufos-Blitzschnell/README.md) 
-##[Himmel_Schreiber](../Companies/Atari/Himmel_Schreiber/README.md) 
+##[Himmel Schreiber (RX8059, DXG 5704)](../Companies/Atari/Himmel_Schreiber/README.md) 
 ##[Buchstaben_Lotterie](../Buchstaben_Lotterie/README.md) 
 
 - Textverarbeitung
@@ -450,8 +450,8 @@ title: Articles
 
 - Unterhaltung
 ##[Biorhythmus](../Biorhythmus/README.md) 
-##[Sprachbox](../Sprachbox/README.md) 
-##[Super Biorhythmus](../Super_Biorhythmus/README.md) 
+##[Sprachbox DXG5721](../Sprachbox/README.md) 
+##[Atari Super Biorhythmus](../Super_Biorhythmus/README.md) 
 
 - Utilities
 ##[Disketten Betriebssystem II Version D2.0S](../DOS/Atari_DOS_2/README.md) 
@@ -481,7 +481,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 *[Invito a programmare 2 - (Cassette: CXT 4106)](../Invito_a_programmare_2/README.md) 
 *[Invito a programmare 3 - (Cassette: CXT 4117)](../Invito_a_programmare_3/README.md) 
 *[Macro Assembler e Text Editor - (Disk: CX 8121)](../Macro_Assembler_e_Text_Editor/README.md) 
-*[Microsoft BASIC II - (Cartridge: AXT 2025)](../Languages/BASIC/Microsoft_BASIC/Microsoft_BASIC_II/README.md) 
+*[Microsoft BASIC II (DX5046)](../Languages/BASIC/Microsoft_BASIC/Microsoft_BASIC_II/README.md) 
 *[Scram - (Disk: DXT 4123)](../Scram/README.md) 
 *[Stati e capitali d'europa - (Cassette + Disk: DXT 4114)](../Stati_e_capitali_d'europa/README.md) 
 *[Statistica - (Disk: DXT 4103)](../Statistica/README.md) 
@@ -521,12 +521,12 @@ The below broken links will be filled up with content in the future, meanwhile, 
 
 - Games
 ##[Atari Compilation - (Cassette: TX 9043)](../Atari_Compilation/README.md) 
-##[Black Lamp - (Cassette: TX 9049)](../Black_Lamp/README.md) 
-##[Chess - (Cassette: UKC1004)](../Companies/Atari/Chess/README.md) 
-##[Compilation A - (Cassette: TXP7100)](../Companies/Atari/Compilation_A/README.md) 
-##[Compilation B - (Cassette: TXP7101)](../Companies/Atari/Compilation_B/README.md) 
-##[Compilation C - (Cassette: TXP7000)](../Companies/Atari/Compilation_C/README.md) 
-##[Computer Chess & European Countries and Capitals - (Cassette: ACC1001)](../Companies/Atari/Computer_Chess_and_European_Countries_and_Capitals/README.md) 
+##[Black Lamp (TX 9049)](../Black_Lamp/README.md) 
+##[Chess (cassette UKC1004)](../Companies/Atari/Chess/README.md) 
+##[Compilation A (TXP7100)](../Companies/Atari/Compilation_A/README.md) 
+##[Compilation B (TXP7101)](../Companies/Atari/Compilation_B/README.md) 
+##[Compilation C (TXP7000)](../Companies/Atari/Compilation_C/README.md) 
+##[Computer Chess & European Countries and Capitals](../Companies/Atari/Computer_Chess_and_European_Countries_and_Capitals/README.md) 
 ##[Cygnus XI - (Cassette: TX 9051)](../Cygnus_X1|Cygnus_XI/README.md) 
 ##[Eastern Front 1941 - (Cassette: UKC1003)](../Eastern_Front_1941/README.md) 
 ##[Heartache - (Cassette: TX 9046)](../Heartache/README.md) 
@@ -596,13 +596,13 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Der_XIO_Befehl_fuer_Grafikoperationen](../Der_XIO_Befehl_fuer_Grafikoperationen/README.md)
 - Other [DOS_topics](../DOS_topics/README.md)
 - [RTime8_Manual](../RTime8_Manual/README.md)
-- [XIO_Command_Codes_DOS_Handler](../XIO_Command_Codes_DOS_Handler/README.md)
+- [XIO Command Codes for the DOS Handler (D:)](../XIO_Command_Codes_DOS_Handler/README.md)
 
 ## Games
 
 ## [Voice_and_Data_Cassettes](../Voice_and_Data_Cassettes/README.md)
 - [Atari_Educational_System_Lesson_Cassettes](../Atari_Educational_System_Lesson_Cassettes/README.md)
-- [Dorsett_Educational_System_Lesson_Cassettes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)
+- [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)
 
 Atari Basic Course: An Invitation to Programming 1-3:
 - [Course 1: An Invitation to Programming 1 - Fundamentals of Basic Programming CX4101](../Companies/Atari/An_Invitation_To_Programming/An_Invitation_to_Programming_1_CX4101/README.md)
@@ -610,7 +610,7 @@ Atari Basic Course: An Invitation to Programming 1-3:
 - [Course 3: An Invitation to Programming 3 - Introduction to Sound and Graphics CX4117](../Companies/Atari/An_Invitation_To_Programming/An_Invitation_to_Programming_3_CX4117/README.md)
 
 Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie fertig
-- [Kurs 1: Programmieren leicht gemacht-Lernen Sie BASIC mit Dagmar Berghoff-TXG4110](../Software/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)
+- [Programmieren leicht gemacht (TXG4110)](../Software/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)
 - [Kurs 2: Noch mehr BASIC-Lernen Sie BASIC mit Dagmar Berghoff-TXG 55007](../Noch_mehr_BASIC_TXG_55007/README.md)
 - [Kurs 3: BASIC für Fortgeschrittene-Lernen Sie BASIC mit Dagmar Berghoff](../BASIC_fuer_Fortgeschrittene/README.md)
 
@@ -626,14 +626,14 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari Biorhythm cassette-Dual Track with voice, music and data](attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube ; [Atari Biorhythm program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Biorhythm)
 - [Atari Kingdom cassette-Dual Track with voice, music and data](attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10 ; [Atari Kingdom program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Kingdom)
 - [Atari Hangman cassette-Dual Track with voice, music and data](attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
-- [Atari_Blackjack](../Atari_Blackjack/README.md)
+- [Atari Blackjack (CX4105)](../Atari_Blackjack/README.md)
 
 # Source Code
 *[Intention_of_the_source_code_chapter](../Intention_of_the_source_code_chapter/README.md) 
 
 ### Applications
 #[Atari_Calculator](../Atari_Calculator/README.md) 
-#[Synapse SynCalc](../SynCalc/README.md) 
+#[SynCalc](../SynCalc/README.md) 
 #[The_Writer's_Tool](../The_Writer's_Tool/README.md) 
 
 ### Disk Operating Systems (DOS)
@@ -679,17 +679,17 @@ Assembler/Debugger:
 Action!:
 #[Action!](../Action/README.md) 
 Basic:
-#[Atari Basic Source Code 1](https://atariwiki.org/wiki/attach/The%20Atari%20Basic%20Source%20Book/How-atari-basic-works-p3.html) from [The_Atari_Basic_Source_Book](../The_Atari_Basic_Source_Book/README.md) 
+#[Atari Basic Source Code 1](https://atariwiki.org/wiki/attach/The%20Atari%20Basic%20Source%20Book/How-atari-basic-works-p3.html) from [The Atari Basic Source Book](../The_Atari_Basic_Source_Book/README.md) 
 #[Atari Basic Source Code 2](attachments/ataribas.asm) 
 #[Atari Basic Source Code 3](attachments/AtariBasic.src) 
 #[OSS Basic A+](../Basic_A_/README.md) 
-#[OSS Basic XL](../Companies/OSS/BASIC_XL/README.md) 
+#[BASIC XL](../Companies/OSS/BASIC_XL/README.md) 
 #[OSS Basic XE](https://atariwiki.org/wiki/Wiki.jsp?page=Basic%20XE) 
 #[OSS Integer Basic](https://atariwiki.org/wiki/Wiki.jsp?page=OSS%20Integer%20Basic) 
 #[Microsoft Basic](http://www.pagetable.com/?p=46) 
 #[Microsoft BASIC for 6502-Original Source Code from 1978](https://github.com/brajeshwar/Microsoft-BASIC-for-6502-Original-Source-Code-1978) 
-#[ATARI_BASIC_FOR_GCC](../Languages/BASIC/Atari_BASIC/Atari_BASIC_for_GCC/README.md) 
-#[Turbo-BASIC_XL](../Languages/BASIC/Turbo-BASIC_XL/README.md) 
+#[ATARI BASIC FOR GCC](../Languages/BASIC/Atari_BASIC/Atari_BASIC_for_GCC/README.md) 
+#[Turbo-BASIC XL](../Languages/BASIC/Turbo-BASIC_XL/README.md) 
 #[Altirra Basic](http://www.virtualdub.org/altirra.html) 
 #[Basic++](http://atariage.com/forums/topic/263403-basic-os-and-a-couple-of-updates/) 
 C:

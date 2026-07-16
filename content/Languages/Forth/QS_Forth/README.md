@@ -6,7 +6,7 @@ More information on QS FORTH is needed; please help us. QS FORTH works with OS B
 - [QS_Forth.atr](attachments/QS_Forth.atr)
 
 ## QS-Forth Screens
-- [QS-FORTH Screens](Source_Code/README.md)
+- [QS-Forth Screens](Source_Code/README.md)
 
 ## Presentation (German)
 - [QS-FORTH_20.12.05.pdf](../../../../media/QS_Forth/attachments/OS-FORTH_20.12.05.pdf) ; size: 19.6 MB ; PDF file format

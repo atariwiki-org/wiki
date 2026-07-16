@@ -38,10 +38,10 @@ DOS XL 2.30X
 - [DOS_XL_2.30p_Color.atr](attachments/DOS_XL_2.30p_Color.atr) ; SD format ; plain version, just DOS with color option adaptable to the user's wishes
 
 ## Patches
-- [DOS XL 2.30 Patch](DOS_XL_2.30_Patch/README.md) ; patch from version 2.30 to the latest 2.30p version; already done in the above atr-images
+- [DOS XL 2.30 patch](DOS_XL_2.30_Patch/README.md) ; patch from version 2.30 to the latest 2.30p version; already done in the above atr-images
 
 ## Tools
-- [Toggle BASIC On/Off from the OS/A and DOS X Command-Line](../Toggle_BASIC_On-Off_from_the_OS_APlus_and_DOS_XL_Command-Line/README.md)
+- [Toggle BASIC on/off from OS/A+ and DOS XL Command-Line](../Toggle_BASIC_On-Off_from_the_OS_APlus_and_DOS_XL_Command-Line/README.md)
 
 ## References
 - [DOS XL Article in Wikipedia](http://en.wikipedia.org/wiki/DOS_XL)

@@ -24,11 +24,11 @@ In der Regel besteht das DOS aus zwei Teilen:
 - [Atari_DOS_2.5](../Atari_DOS_2.5/README.md) of 1984
 - [Atari_DOS_4](Atari_DOS_4/README.md) also known as ANTIC Dos or QDOS of 1984
 - [BW-DOS](../BW-DOS/README.md) of 1995
-- [MyDOS](MyDOS/README.md) 
-- [OSS_A__2](../OSS_A__2/README.md) 
-- [Real.DOS](../Real.DOS/README.md) 
-- [SpartaDOS](../SpartaDOS/README.md) 
-- [SpartaDOS_X](../SpartaDOS_X/README.md) 
+- [MyDOS](MyDOS/README.md)
+- [OSS_A__2](../OSS_A__2/README.md)
+- [Real.DOS](../Real.DOS/README.md)
+- [SpartaDOS](../SpartaDOS/README.md)
+- [SpartaDOS_X](../SpartaDOS_X/README.md)
 - [TTDOS](../TTDOS/README.md) also known as Turbo Tape DOS
 - [XDOS_2.43](../XDOS_2.43/README.md) of 2009 by Stefan Dorndorf
 

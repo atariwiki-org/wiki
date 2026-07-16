@@ -5,7 +5,7 @@ This is a small ASM Routine that is a Filter Driver for the DOS CIO (D:) Handler
 
 ## Download
 
-ATR-Disc Image: [CIO Filter/FILTER.ATR](../CIO_Special_Command_Filter/README.md) 
+ATR-Disc Image: [CIO SPECIAL Command Filter](../CIO_Special_Command_Filter/README.md) 
 
 ## Filter Usage
 

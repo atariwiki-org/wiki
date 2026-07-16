@@ -44,22 +44,22 @@ AtariWiki highly recommends the findings of tschak909 from AtariAge. Please take
 
 ## Complete list of the Atari Educational System Lesson Cassettes: 16 courses were made, each one has 4 cassettes! Auto Mechanics CX6013 was announced, but not published. Thanks to Michael Current, Kay Savetz and Thomas Cherryhomes, we can offer a solution for this, please see below. General hint: If you discover problems with reading of the files, please reset the Atari and leave the position of the cassette reader unchanged. Try again, until you hear a high frequency sound or discover it works. In Altirra F2-key for START and F5-key for RESET.
 
-[U.S._History_CX6001](../U.S._History_CX6001/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all. ; further thanks to Bill Lange for restoring the 1st part, which made the package complete! Thank you so much Bill. Please go ahead. :-)
+[U.S. History CX6001](../U.S._History_CX6001/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all. ; further thanks to Bill Lange for restoring the 1st part, which made the package complete! Thank you so much Bill. Please go ahead. :-)
 [U.S._Government_CX6002](../U.S._Government_CX6002/README.md) ; donated by someone who would not like to be mentioned. ; Cassette A-Side 2 is from FULS from AtariAge. Thank you for your help to complete this package. We really appreciate that. :-)
 
-[Supervisory_Skills_CX6003](../Supervisory_Skills_CX6003/README.md) ; donated by someone who would not like to be mentioned.
+[Supervisory Skills CX6003](../Supervisory_Skills_CX6003/README.md) ; donated by someone who would not like to be mentioned.
 [World_History_Western_CX6004](../World_History_Western_CX6004/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
 [Basic_Sociology_CX6005](../Basic_Sociology_CX6005/README.md) ; thank you Bill Lange for providing this treasure to the Atari community. We really owe you very much!
 [Counseling_Procedures_CX6006](../Counseling_Procedures_CX6006/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
-[Principles_of_Accounting_CX6007](../Principles_of_Accounting_CX6007/README.md) ; from Atarimania, thank you so much!
-[Physics_CX6008](../Companies/Atari/Physics_CX6008/README.md) ; from Atarimania, thank you so much!
+[Principles of Accounting - CX6007](../Principles_of_Accounting_CX6007/README.md) ; from Atarimania, thank you so much!
+[Physics CX6008](../Companies/Atari/Physics_CX6008/README.md) ; from Atarimania, thank you so much!
 [Great_Classics_CX6009](../Great_Classics_CX6009/README.md) ; from Kay Savetz; Kay, thank you so much to bring this artifact from the dark to the light! We really appreciate your help!
-[Business_Communications_CX6010](../Companies/Atari/Business_Communications_CX6010/README.md) ; donated by someone who would not like to be mentioned. ; Cassette D is from bob1200xl from AtariAge and the recording was done by Allan Bushman. The community is so lucky you brought us the last piece of the puzzle. Thank you so much. You will never be forgotten.
+[Business Communications (CX6010)](../Companies/Atari/Business_Communications_CX6010/README.md) ; donated by someone who would not like to be mentioned. ; Cassette D is from bob1200xl from AtariAge and the recording was done by Allan Bushman. The community is so lucky you brought us the last piece of the puzzle. Thank you so much. You will never be forgotten.
 [Basic_Psychology_CX6011](../Basic_Psychology_CX6011/README.md) ; thank you Bill Lange and Allan Bushman for providing this treasure to the Atari community. We really owe you very much!
 [Effective_Writing_CX6012](../Effective_Writing_CX6012/README.md) ; donated by by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
-[Auto Mechanics CX6013](../Auto_Mechanics_KA/README.md) ; never shipped according to Michael Current from the Atari FAQ. But Kay would not be Kay, if he can't find even a solution for that! Even more, all(!) [Dorsett tapes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md) are meanwhile digitized and saved for generations to come. Thanks to Michael Current, Kay Savetz and Thomas Cherryhomes, we can't thank you enough for restoring the 1st generation of e-learning.
-[Principles_of_Economics_CX6014](../Principles_of_Economics_CX6014/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
-[Spelling_CX6015](../Spelling_CX6015/README.md) ; donated by someone who would not like to be mentioned.
+[Auto Mechanics CX6013](../Auto_Mechanics_KA/README.md) ; never shipped according to Michael Current from the Atari FAQ. But Kay would not be Kay, if he can't find even a solution for that! Even more, all(!) [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md) are meanwhile digitized and saved for generations to come. Thanks to Michael Current, Kay Savetz and Thomas Cherryhomes, we can't thank you enough for restoring the 1st generation of e-learning.
+[Principles of Economics (CX6014)](../Principles_of_Economics_CX6014/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
+[Spelling CX6015](../Spelling_CX6015/README.md) ; donated by someone who would not like to be mentioned.
 [Basic_Electricity_CX6016](../Basic_Electricity_CX6016/README.md) ; donated by Allan Bushman. Allan, thousand thanks from the Atari community for your outstanding help! :-)
 [Basic_Algebra_CX6017](../Basic_Algebra_CX6017/README.md) ; donated by someone who would not like to be mentioned.
 

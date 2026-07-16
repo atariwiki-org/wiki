@@ -7,6 +7,6 @@ Enhanced FigForth, disk block-based.
 
 ## Screens
 
-- [Screens of FIG FORTH 1.1](Source_Code/README.md) - screens of Colleen/CoinOp Forth 1.1 with screens of APX Extended fig-Forth 1.1 (might require fixing)
+- [FigForth 1.1 Source Code](Source_Code/README.md) - screens of Colleen/CoinOp Forth 1.1 with screens of APX Extended fig-Forth 1.1 (might require fixing)
 
 

@@ -2,14 +2,14 @@
 
 ## Source
 
-- [volksFORTH_Kernel_Sourcecode](Language/Kernel_Source_Code/README.md)
-- [volksFORTH_MemoryMap_Atari_8bit](Language/Memory_Map_Atari_8bit/README.md)
+- [VolksForth Kernel Source Code](Language/Kernel_Source_Code/README.md)
+- [Atari 8bit VolksForth Memory Map](Language/Memory_Map_Atari_8bit/README.md)
 
 ## volksFORTH Glossary
 
 This is a list of all Forth words contained in the volksFORTH distribution. The current version is 3.8x
 
-- [Arithmetic Words](Language/Artihmetic_Words/README.md)
+- [VolksForth Arithmetic](Language/Artihmetic_Words/README.md)
 - [Logical Words](Language/Logical_Words/README.md)
 - [32bit Words](Language/32bit_Words/README.md)
 - [Stack Operations](Language/Stack_Operations/README.md)
@@ -18,25 +18,25 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 - [The_Forth_Bridge](Articles/The_Forth_Bridge/README.md) -- How to migrate from BASIC to volksFORTH
 
 ## volksFORTH Handbook (English)
-- [Chapter 1](Handbook/Chapter1/README.md)
+- [Chapter 1: volksFORTH Version 3.90 Manual (work in progress)](Handbook/Chapter1/README.md)
 - [Chapter 2](Handbook/Chapter2/README.md)
 - [Chapter 3: Arithmetic](Handbook/Chapter3/README.md)
-- [Chapter 4: Program Structure](Handbook/Chapter4/README.md)
-- [Chapter 5: Input / Output](Handbook/Chapter5/README.md)
-- [Chapter 6: Strings](Handbook/Chapter6/README.md)
+- [Chapter 4: Program Structures](Handbook/Chapter4/README.md)
+- [Chapter 5: Input / Output in volksFORTH](Handbook/Chapter5/README.md)
+- [Chapter 6: Strings (strings) in volksFORTH](Handbook/Chapter6/README.md)
 
 - [6502 Assembler](Handbook/6502Assembler/README.md)
 
 ## volksFORTH Handbuch (German)
 
-- [Kapitel 1](Handbuch/Chapter1/README.md)
+- [Handbuch volksFORTH Version 3.90](Handbuch/Chapter1/README.md)
 - [Kapitel 2](Handbuch/Chapter2/README.md)
 - [Kapitel 3: Arithmetik](Handbuch/Chapter3/README.md)
-- [Kapitel 4: Programm-Strukturen](Handbuch/Chapter4/README.md)
-- [Kapitel 5: Ein-/Ausgabe](Handbuch/Chapter5/README.md)
-- [Kapitel 6: Zeichenketten](Handbuch/Chapter6/README.md)
+- [Programm-Strukturen](Handbuch/Chapter4/README.md)
+- [Ein-/Ausgabe in volksFORTH](Handbuch/Chapter5/README.md)
+- [Zeichenketten (Strings) in volksFORTH](Handbuch/Chapter6/README.md)
 
-- [6502 Assembler](Handbuch/6502Assembler/README.md)
+- [VolksForth 6502 Assembler](Handbuch/6502Assembler/README.md)
 
 ## volksFORTH extensions
 
@@ -51,7 +51,7 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 
 - [Relocating](Tutorial/Relocating/README.md)
 - [Adding_comments](Tutorial/Adding_comments/README.md); TODO Create
-- [Saving executable](Tutorial/saveexe/README.md)
+- [Saveexe](Tutorial/saveexe/README.md)
 - [Working_with_files](Tutorial/Working_with_files/README.md)
 - [Reading_binary_files](Tutorial/Reading_binary_files/README.md); TODO Create
 - [Writing_binary_files](Tutorial/Writing_binary_files/README.md); TODO Create

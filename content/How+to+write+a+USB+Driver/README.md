@@ -51,7 +51,7 @@ left  6---8---2 right
 
 ## Step 2: The Basic Driver
 
-I start a new, fresh formatted Disk for each new driver. I install a DOS and [Bibo_Assembler](../Companies/CompyShop/BIBO_Assembler/README.md) on the disk, along with the Base HID Driver and the HID Device Template Sourcecode.
+I start a new, fresh formatted Disk for each new driver. I install a DOS and [Bibo Assembler](../Companies/CompyShop/BIBO_Assembler/README.md) on the disk, along with the Base HID Driver and the HID Device Template Sourcecode.
 
 Each HID Driver Sourcecode consists of two parts:
 

@@ -4,7 +4,7 @@ Programmed by Frank Ostrowski 1985
 
 
 ## Background
-Turbo-BASIC XL 1.5 is a fast [BASIC](../README.md) interpreter for the Atari XL and XE. Frank Ostrowski wrote it and first published it in the German Happy Computer magazine in 1985. TURBO is fully compatible with [Atari_BASIC](../Atari_BASIC/README.md) but fixes some well-known bugs and replaces its notoriously slow loops and math functions. The result is that Turbo-BASIC XL will run any Atari BASIC program but do so around three to five times as fast!
+Turbo-BASIC XL 1.5 is a fast [BASIC](../README.md) interpreter for the Atari XL and XE. Frank Ostrowski wrote it and first published it in the German Happy Computer magazine in 1985. TURBO is fully compatible with [Atari BASIC](../Atari_BASIC/README.md) but fixes some well-known bugs and replaces its notoriously slow loops and math functions. The result is that Turbo-BASIC XL will run any Atari BASIC program but do so around three to five times as fast!
 
 If that is not enough, Turbo-BASIC XL also includes a suite of new keywords and functions to improve on the original. These include structured programming concepts like {{WHILE}} loops and similar, DOS commands that allow you to manipulate files without exiting to the DOS menu, {{DPOKE}} and {{DPEEK}} for working with 16-bit memory values, editing commands like {{RENUM}}, and debugging commands like {{TRACE}}. Yet, due to clever memory management, Turbo-BASIC XL leaves 1,700 more bytes of RAM free, allowing you to write larger programs than Atari BASIC.
 
@@ -27,7 +27,7 @@ Afair, XTB had been created by Thorsten Karwoth. He is also the author of Atari 
 - [Wikipedia: Turbo-BASIC XL (Deutsch)](https://de.wikipedia.org/wiki/Turbo-BASIC_XL)
 - [Multi_Zoom_Master](Examples/Multi_Zoom_Master/README.md) Graphics Program by Carsten Strotmann
 - [Player_Missile_in_Turbo_Basic](Examples/Player_Missile_in_Turbo_Basic/README.md)
-- [Simple_Blitter](Examples/Simple_Blitter/README.md)
+- [Simple Blitter Routine](Examples/Simple_Blitter/README.md)
 - [http://seriouscomputerist.altervista.org/pages/language/language.basic.htm](http://seriouscomputerist.altervista.org/pages/language/language.basic.htm) ; highly recommended!
 - [http://atariki.krap.pl/index.php/Turbo_BASIC_XL](http://atariki.krap.pl/index.php/Turbo_BASIC_XL) ; Turbo-BASIC XL description in Polish ; highly recommended!
 - [http://atariki.krap.pl/index.php/Tokeny_Turbo_BASIC_XL](http://atariki.krap.pl/index.php/Tokeny_Turbo_BASIC_XL); Turbo-BASIC XL tokens in Polish ; highly recommended!
@@ -243,7 +243,7 @@ Happy Computer 2-1986-TurboBASIC (XL)-Original Diskette (1/2)-Diskette
 Happy Computer 2-1986-TurboBASIC (XL)-Original Diskette (2/2)
 
 ![](attachments/Frost_Basic-MandT_Software.jpg)
-Frost BASIC 1.4 - start screen ; this was the predecessor of Turbo-BASIC XL 1.5 for the 400/800 machines, but was later published than Turbo-BASIC XL 1.5 itself. The characters after 1985 are, by all means, no mistake. Indeed, they match perfectly with: 'M&T SOFTWARE', which means: 'Markt und Technik Software'. Please look for yourself in the [Atari_ATASCII_Table](../../../Atari_ATASCII_Table/README.md). :-)
+Frost BASIC 1.4 - start screen ; this was the predecessor of Turbo-BASIC XL 1.5 for the 400/800 machines, but was later published than Turbo-BASIC XL 1.5 itself. The characters after 1985 are, by all means, no mistake. Indeed, they match perfectly with: 'M&T SOFTWARE', which means: 'Markt und Technik Software'. Please look for yourself in the [Atari ATASCII Table](../../../Atari_ATASCII_Table/README.md). :-)
 
 ![](attachments/Startscreen-2.jpg)
 Turbo-BASIC XL - startscreen

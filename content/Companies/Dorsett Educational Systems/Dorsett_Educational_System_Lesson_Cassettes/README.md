@@ -16,9 +16,9 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Statistics_ST](../../../Statistics_ST/README.md)
 - [Reading-Development_U](../Reading-Development_U/README.md)
 - [Comprehension-Reading_AB](../Comprehension-Reading_AB/README.md)
-- [Reading-Development_T](../Reading-Development_T/README.md)
+- [Dorsett Atari Reading-Development (Reading Comprehension) T ; Copyright (C) 1983 Dorsett Educational Systems, Inc.](../Reading-Development_T/README.md)
 - [U.S._History_HS](../../../U.S._History_HS/README.md)
-- [Carpentry_KC](../Carpentry_KC/README.md)
+- [Dorsett Atari Carpentry KC ; Copyright (C) 1983 Dorsett Educational Systems, Inc.](../Carpentry_KC/README.md)
 ### 2nd column
 - [Reading-Mathematics_MR](Reading-Mathematics_MR/README.md)
 - [Decimals_and_Percents_MP](../../../Decimals_and_Percents_MP/README.md)

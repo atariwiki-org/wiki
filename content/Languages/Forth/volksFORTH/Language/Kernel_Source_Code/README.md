@@ -16,5 +16,5 @@ VolksForth is written entirely in VolksForth using a Forth Metacompiler.
 
 ## Atari XL/XE (Atari 8-bit)
 
-- [Kernal_Source_3.81.4](Kernel_Source_Code_3.81.4/README.md)
+- [VolksForth Kernel Source 3.81.4](Kernel_Source_Code_3.81.4/README.md)
 - [Source Code Repository](http://fossil.forth-ev.de/volksforth)

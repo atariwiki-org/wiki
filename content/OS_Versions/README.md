@@ -13,11 +13,11 @@ PRINT PEEK(65528)
 and press the RETURN key
 
 ||Value||OS Version||CRC 32||MD5||ROMs
-|255|First 800 OS NTSC ; please further see [Rarity_10](../Rarity_10/README.md)|?|?|__we are still searching for this. Please help us ;-)__
+|255|First 800 OS NTSC ; please further see [Rarity 10 and above up to impossible](../Rarity_10/README.md)|?|?|__we are still searching for this. Please help us ;-)__
 |221|400/800 OS Rev. A NTSC|c1b3bb02|a3c1585b5d19719f8acfa2b093bea75f|CO12499A, CO14599A, CO12399B
 |214|400/800 OS Rev. A PAL|72b3fed4|eb1f32f5d9f382db1bbfb8d7f9cb343a|CO15199, CO15299, CO12399B
 |243|400/800 OS Rev. B NTSC|0e86d61d|4177f386a3bac989a981d3fe3388cb6c|CO12499B, CO14599B, 12399B
-|34|400/800 OS Rev. B PAL; please further see [Rarity_10](../Rarity_10/README.md)|0c913dfc|89d5e5f4713267667ab713449944f8a9 Kr0tki-Version|__we are still searching for this. Please help us ;-)__
+|34|400/800 OS Rev. B PAL; please further see [Rarity 10 and above up to impossible](../Rarity_10/README.md)|0c913dfc|89d5e5f4713267667ab713449944f8a9 Kr0tki-Version|__we are still searching for this. Please help us ;-)__
 
 ## For ATARI XL and XE Computers
 If you have an XL or XE Computer, type

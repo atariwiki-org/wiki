@@ -70,4 +70,4 @@ Umleitungsseite editieren: Link als Verknüpfung kopieren, in Browser als URL ei
 ### Neue Seiten
 [Assembler and Debugger](../Languages/Assembler/README.md) 
 ### Alte Seiten
-[Internal_Variables](../Languages/Action/Internal_Variables/README.md) - Magazin Article (german)
+[Interne Variablen](../Languages/Action/Internal_Variables/README.md) - Magazin Article (german)

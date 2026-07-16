@@ -248,7 +248,7 @@ Damit wurde ohne eine CASE-Anweisung eine sehr übersichtliche Steuerung des Pro
 
 Viele Programmiersprachen stellen eine CASE-Anweisung zur Verfügung, die wie in PASCAL mit Hilfe eines Fall-Indices eine Liste von Fall-Konstanten auswertet und eine entsprechende Anweisung ausführt.
 
-Obwohl ein solches CASE-Konstrukt — wie oben gezeigt — nicht notwendig ist, macht es Programme besser lesbar und liegt bei Problemstellungen wie der Auswertung eines gegebenen Index eigentlich näher. Dies ist in ["Wil Baden - Ultimate CASE-Statement - VD 2/87, S.40 ff."](../../../Articles/The_Ultimate_CASE_Statement/README.md) ausführlich diskutiert worden, , wobei aber der ältere Esker-CASE (Dr. Charles Eaker -- Just in CASE (FORTH DIM II/3)) von Dr. Charles Eaker sicherlich der bekanntere ist, der auch in der Literatur und in Quelltexten häufig Erwähnung und Verwendung findet.
+Obwohl ein solches CASE-Konstrukt — wie oben gezeigt — nicht notwendig ist, macht es Programme besser lesbar und liegt bei Problemstellungen wie der Auswertung eines gegebenen Index eigentlich näher. Dies ist in [The Ultimate CASE Statement](../../../Articles/The_Ultimate_CASE_Statement/README.md) ausführlich diskutiert worden, , wobei aber der ältere Esker-CASE (Dr. Charles Eaker -- Just in CASE (FORTH DIM II/3)) von Dr. Charles Eaker sicherlich der bekanntere ist, der auch in der Literatur und in Quelltexten häufig Erwähnung und Verwendung findet.
 
 Herr H. Sehnitter hat diesen Eaker-CASE für das volks4TH implementiert und dabei Veränderungen in der Struktur und Verbesserungen in der Anwendung vorgenommen.
 
@@ -349,7 +349,7 @@ Das vollständige Programm kann so geschrieben werden, wobei die typische drei­
 ;
 ```
 
-Wil Baden hat in "[Ultimate_CASE_Statement](../../../Articles/The_Ultimate_CASE_Statement/README.md)" ausgeführt, das eine CASE-Anweisung nur syntaktischer Zucker für ein Programm ist und letztendlich nichts weiter ist, als das Kompilieren einer verschachtelten IF...THEN-Anweisung. Eine solche Implemetierung fur das volksFORTH83 wurde von Herrn Klaus Schleisiek geschrieben:
+Wil Baden hat in "[The Ultimate CASE Statement](../../../Articles/The_Ultimate_CASE_Statement/README.md)" ausgeführt, das eine CASE-Anweisung nur syntaktischer Zucker für ein Programm ist und letztendlich nichts weiter ist, als das Kompilieren einer verschachtelten IF...THEN-Anweisung. Eine solche Implemetierung fur das volksFORTH83 wurde von Herrn Klaus Schleisiek geschrieben:
 
 ```
 \ CASE OF ENDOF ENDCASE

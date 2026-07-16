@@ -69,7 +69,7 @@ This Syeicherplatz savings and reduces the execution time.
 - [+](../../Language/Words/Plus/README.md)
 - [-](../../Language/Words/Minus/README.md)
 - [*](../../Language/Words/Times/README.md)
-- [/](../../Language/Words/Divide/README.md)
+- [Divide](../../Language/Words/Divide/README.md)
 - [Mod](../../Language/Words/Mod/README.md)
 - [/ Mod](../../Language/Words/divide-mod/README.md)
 - [* /](../../Language/Words/Times-divide/README.md)

@@ -3,15 +3,15 @@
 Copyright (C) 1984 Optimized Systems Software, Inc. (OSS)
 
 ## Background
-Basic XE is the ultimate development of the original [Atari_BASIC](../../../Languages/BASIC/Atari_BASIC/README.md) code, after its development was taken over by Optimized Systems Software (OSS).
+Basic XE is the ultimate development of the original [Atari BASIC](../../../Languages/BASIC/Atari_BASIC/README.md) code, after its development was taken over by Optimized Systems Software (OSS).
 
-OSS released [Basic_XL](../Basic_XL/README.md) in 1984, adding many new features as well as the FAST command. FAST cached line numbers that were the target of jumps (GOTO and FOR/NEXT loops), addressing one of the two major reasons for the notoriously slow performance of Atari BASIC. The main addition to Basic XE, compared to Basic XL, was a solution to the other big problem in Atari BASIC, the low-performance math code.
+OSS released [BASIC XL](../Basic_XL/README.md) in 1984, adding many new features as well as the FAST command. FAST cached line numbers that were the target of jumps (GOTO and FOR/NEXT loops), addressing one of the two major reasons for the notoriously slow performance of Atari BASIC. The main addition to Basic XE, compared to Basic XL, was a solution to the other big problem in Atari BASIC, the low-performance math code.
 
 In Atari BASIC, all numbers are stored in a 6-byte binary-coded-decimal form. This includes line numbers and array indexes. Every time one of these is encountered, the system sends it into the operating system's BCD library, which had extremely poor performance. Basic XE replaced this library with its own, running at over twice the performance of the original code. This had spin-off effects throughout the average program, not only speeding up actual mathematical functions, but also internal functions like looking up line numbers.
 
 With that exception, the changes between Basic XE and Basic XL are minor, mostly related to handling the increased RAM capabilities of the XE series. However, Basic XE it did not include the AUTORUN runtime library found in Basic XL, meaning that programs that used Basic XE's new functionality could not run on machines that did not have a Basic XE cartridge. However, programs that used only the Basic XL extensions could be written in Basic XE and then linked to the XL's AUTORUN runtime library.
 
-The release of [Turbo-BASIC_XL](../../../Languages/BASIC/Turbo-BASIC_XL/README.md) at roughly the same time as Basic XE meant that Basic XE was largely forgotten in the market. TURBO-BASIC had all the features of Basic XE and many more, and also shipped with a compiler that not only made stand-alone programs but ran them dozens of times faster as well.
+The release of [Turbo-BASIC XL](../../../Languages/BASIC/Turbo-BASIC_XL/README.md) at roughly the same time as Basic XE meant that Basic XE was largely forgotten in the market. TURBO-BASIC had all the features of Basic XE and many more, and also shipped with a compiler that not only made stand-alone programs but ran them dozens of times faster as well.
 
 ## BASIC XE source code
 - [BASIC_XE_4.2-1_master_with_DOS_2.0D.atr](attachments/BASIC_XE_4.2-1_master_with_DOS_2.0D.atr) ; please use with OSS MAC/65; Yotta-thanks to all who help us here

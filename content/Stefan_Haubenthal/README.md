@@ -7,7 +7,7 @@ Meine Hardware: [XEP80](../XEP80/README.md), [CX21](http://atariki.krap.pl/index
 
 [Converting_FIG-Forth_Programs_to_Forth-83](../Languages/Forth/Articles/Converting_FIG-Forth_Programs_to_Forth-83/README.md) 
 
-[Rastaconverter](../Rastaconverter/README.md) [PLATO](../PLATO/README.md) [C65Manual](../Languages/C/C65_Manual/README.md) 
+[Rastaconverter](../Rastaconverter/README.md) [PLATO (Programmed Logic for Automated Teaching Operation)](../PLATO/README.md) [C/65 Manual](../Languages/C/C65_Manual/README.md) 
 
 ## Turbotape
 - http://www.abbuc.de/community/forum/viewtopic.php?f=15&t=3167

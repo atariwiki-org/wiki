@@ -49,7 +49,7 @@ title: 6502 Assembly Code
 - [Starting_to_Program_in_6502_Assembly_Code](../Starting_to_Program_in_6502_Assembly_Code/README.md)
 - [Atari_XL.XE_Copy_ROM_to_RAM](../Atari_XL.XE_Copy_ROM_to_RAM/README.md)
 - [Unused_Opcodes](../Unused_Opcodes/README.md)
-- [Interactive_Assembler_Tutorials](../Languages/Assembler/Interactive_Assembler_Tutorials/README.md)
+- [Interactive Assembler Tutorials](../Languages/Assembler/Interactive_Assembler_Tutorials/README.md)
 - [A-LANG_-_WAYS_TO_IMPLEMENT_COMPUTER_LANGUAGES_ON_6502s](../A-LANG_-_WAYS_TO_IMPLEMENT_COMPUTER_LANGUAGES_ON_6502s/README.md)
 - [Tricky_Code_that_Always_Skips](../Tricky_Code_that_Always_Skips/README.md)
 - [Self_Modifying_Code](../Self_Modifying_Code/README.md)
@@ -66,11 +66,11 @@ title: 6502 Assembly Code
 - [6502 opcodes - complete list](http://www.6502.org/tutorials/6502opcodes.html)
 - [6502_Coding_Algorithms_Macro_Library](../6502_Coding_Algorithms_Macro_Library/README.md)
 - [6502_Relocator](../6502_Relocator/README.md)
-- [ATARI_Basic_Autorun_Loader](../Languages/BASIC/Atari_BASIC/Examples/Atari_BASIC_Autorun_Loader/README.md)
+- [ATARI Basic Autorun Loader](../Languages/BASIC/Atari_BASIC/Examples/Atari_BASIC_Autorun_Loader/README.md)
 - [Enhanced 6502 BASIC source code by Lee Davison](../Enhanced_Basic/README.md) ; 2-line BASIC for 6502 Computers
 - [Bootloader_with_Sectorcounter](../Bootloader_with_Sectorcounter/README.md)
 - [Atari_800_ROM_OS_Source_Listing](../Atari_800_ROM_OS_Source_Listing/README.md)
-- [Copy_OS_ROM_to_RAM](../Languages/Assembler/Examples/Copy_OS_ROM_to_RAM/README.md)
+- [Copy OS ROM to RAM](../Languages/Assembler/Examples/Copy_OS_ROM_to_RAM/README.md)
 - [Cycle_neutral_branching](../Cycle_neutral_branching/README.md)
 - [Apple_Assembly_Line_-_How_to_Add_and_Subtract_One](../Apple_Assembly_Line_-_How_to_Add_and_Subtract_One/README.md)
 - [Sweet_16](../Sweet_16/README.md) - a virtual 16bit machine for the 6502 CPU

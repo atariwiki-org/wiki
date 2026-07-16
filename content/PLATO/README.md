@@ -32,7 +32,7 @@ Port: 8005 (ASCII Protocol)
 - [PLATO User's Guide (1981)](https://data.atariwiki.org/DOC/PLATO Users Guide April 1981.pdf) ; size: 14.4 MB
 - [The TUTOR Language by Bruce Arne Sherwood (1978)](https://data.atariwiki.org/DOC/The TUTOR Language 1978 ocr.pdf) ; size: 14.7 MB ; 288 pages with OCR
 - [The Plato IV Architecture by Jack Stifle (1972)](attachments/The_Plato_IV_Architecture_by_Jack_Stifle_1972.pdf) ; size: 2.6 MB ; 24 pages
-- [PLATOTerm Cart Manual Draft - 20190324.pdf](..//README.md) ; size: xx.x MB ; in progress
+- [Table of Contents](..//README.md) ; size: xx.x MB ; in progress
 
 ## PLATO-Servers:
 - [https://cyber1.org/index.asp](https://cyber1.org/index.asp)

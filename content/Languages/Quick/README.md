@@ -3,7 +3,7 @@
 Copyright (C) 1989 RAINDORF SOFT & Andreas Binner and Harald Schönfeld
 
 ### Background
-QUICK is a simple programming language designed for writing high-performance code. It is similar to [Action](../Action/README.md) in basic concept, and differs primarily in its syntax. Like Action!, QUICK is based on an ALGOL-like (and thus C- and Pascal-like) program structure, and, like Action!, it allows variables to be assigned to specific memory locations, making it easy to interact with hardware registers. One might think of QUICK as a public version of Action! in the same way one might consider [Turbo-BASIC XL](../BASIC/Turbo-BASIC_XL/README.md) to be a (greatly improved) public version of [Atari BASIC](../BASIC/Atari_BASIC/README.md).
+QUICK is a simple programming language designed for writing high-performance code. It is similar to [Action!](../Action/README.md) in basic concept, and differs primarily in its syntax. Like Action!, QUICK is based on an ALGOL-like (and thus C- and Pascal-like) program structure, and, like Action!, it allows variables to be assigned to specific memory locations, making it easy to interact with hardware registers. One might think of QUICK as a public version of Action! in the same way one might consider [Turbo-BASIC XL](../BASIC/Turbo-BASIC_XL/README.md) to be a (greatly improved) public version of [Atari BASIC](../BASIC/Atari_BASIC/README.md).
 
 AtariWiki deeply thanks [CharlieChaplin from AtariAge](https://forums.atariage.com/topic/157358-quick-programming-language/#findComment-1931224), so we can offer the following info:
 
@@ -30,14 +30,14 @@ We are sorry, but we can't offer the ATR images for versions 2.1 and 2.2 in Engl
 - [QUICK_V2.0-Manual-German.pdf](attachments/QUICK_V2.0-Manual-German.pdf) ; size: 563 KB ; German QUICK manual ; Thank you so much, Mr. Barcardi, for your help with this; we really appreciate it. :-)
 
 ## Articles
-- [QUICK Articles from German ATARImagazin](ATARImagazin/README.md)
+- [Quick Articles from the German ATARImagazin](ATARImagazin/README.md)
 
 ## QUICK Programs
 
 - [TIF2PIC](Examples/TIF2PIC/README.md) TIF2PIC converter by Ralf Patschke (pps)
 - [Abbuc_Magazin_73_Gametro](Examples/Abbuc_Magazin_73_Gametro/README.md) by Ralf Patschke (pps)
 - [Koung](Examples/Koung/README.md) ; A simple PONG like game written in QUICK
-- [QUICK_Demo_Disks](Examples/QUICK_Demo_Disks/README.md)
+- [QUICK Demo Disks](Examples/QUICK_Demo_Disks/README.md)
 
 ## QUICKmagazin
 

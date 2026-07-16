@@ -13,7 +13,7 @@ By the time SMI was hired, Atari was in something of a rush to get a working BAS
 
 In order to fit the code into a 8k ROM, two major pieces of code were moved out of the BASIC into the OS ROM. The first was a set of graphics routines to set up the screen, draw lines, and similar tasks. The second was the floating-point math system, based on a new implementation of the 6-byte binary-coded-decimal (BCD) format SMI had designed for the Z80-based Cromemco machines. Both libraries were notoriously slow. Generally, Atari BASIC was among the slowest BASICs of its era, both due to the OS code and two problems involving loops.
 
-The performance issues led to a profusion of 3rd party BASICs, some of which continue to be developed to this day. By replacing the math libraries and fixing these two loop issues, speed improves on the order of 3 to 5 times in most programs, and this is a common feature of 3rd party BASICs like [Turbo-BASIC_XL](../Turbo-BASIC_XL/README.md) and [Altirra_BASIC](../Altirra_BASIC/README.md). For even higher performance, [FastBASIC](../FastBASIC/README.md) uses a p-code system that can be quickly interpreted.
+The performance issues led to a profusion of 3rd party BASICs, some of which continue to be developed to this day. By replacing the math libraries and fixing these two loop issues, speed improves on the order of 3 to 5 times in most programs, and this is a common feature of 3rd party BASICs like [Turbo-BASIC XL](../Turbo-BASIC_XL/README.md) and [Altirra_BASIC](../Altirra_BASIC/README.md). For even higher performance, [FastBASIC](../FastBASIC/README.md) uses a p-code system that can be quickly interpreted.
 
 ![](attachments/Atari_BASIC-Box.jpg)
 Atari BASIC - Computing Language box
@@ -188,7 +188,7 @@ Atari BASIC Keywords
 - [Course 3: An Invitation to Programming 3 - Introduction to Sound and Graphics CX4117](../../../Companies/Atari/An_Invitation_To_Programming/An_Invitation_to_Programming_3_CX4117/README.md)
 
 ## Atari BASIC Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie fertig
-- [Kurs 1: Programmieren leicht gemacht-Lernen Sie BASIC mit Dagmar Berghoff-TXG4110](../../../Software/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)
+- [Programmieren leicht gemacht (TXG4110)](../../../Software/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)
 - [Kurs 2: Noch mehr BASIC-Lernen Sie BASIC mit Dagmar Berghoff-TXG 55007](../Noch_mehr_BASIC_TXG_55007/README.md)
 - [Kurs 3: BASIC für Fortgeschrittene-Lernen Sie BASIC mit Dagmar Berghoff](../../../BASIC_fuer_Fortgeschrittene/README.md)
 
@@ -201,10 +201,10 @@ Atari BASIC Keywords
 - [How_to_find_the_revision_number_of_Atari_BASIC](Articles/How_to_find_the_revision_number_of_Atari_BASIC/README.md)
 
 ## Source and Tools
-- [RPM810](Examples/RPM810/README.md) Program to measure 810 disk speed
+- [Program to measure 810 disk speed](Examples/RPM810/README.md) Program to measure 810 disk speed
 - [ST_Mouse_Driver_for_BASIC](Examples/ST_Mouse_Driver_for_BASIC/README.md)
 - [Boolean_Logic_in_BASIC](Examples/Boolean_Logic_in_BASIC/README.md)
-- [Atari_BASIC_Special_Clear_Screen](Examples/Atari_BASIC_Special_Clear_Screen/README.md) (german)
+- [Atari BASIC Special Clear Screen (German)](Examples/Atari_BASIC_Special_Clear_Screen/README.md) (german)
 - [BASIC_Fast_Stack_and_Fast_Jump](Examples/BASIC_Fast_Stack_and_Fast_Jump/README.md)
 - [Page_Flip_Routine_for_BASIC](Examples/Page_Flip_Routine_for_BASIC/README.md)
 - [RAM_Move_Routine_for_BASIC](../../../RAM_Move_Routine_for_Basic/README.md)
@@ -214,7 +214,7 @@ Atari BASIC Keywords
 - [Schnelle_Player_Bewegung_in_BASIC](Examples/Schnelle_Player_Bewegung_in_BASIC/README.md) (german)
 
 ## Tools
-- [Extended_Atari_BASIC](../Extended_Atari_BASIC/README.md)
+- [Extended Atari Basic (APX-10177, APX-20177)](../Extended_Atari_BASIC/README.md)
 - [BASIC_on-off_from_DOS_XL_commandline](../BASIC_on-off_from_DOS_XL_commandline/README.md)
 - [REV.B_TO_REV.C_CONVERTER.txt](attachments/REV.B_TO_REV.C_CONVERTER.txt) Atari BASIC Rev. B to Rev. C Converter as TXT file
 - [RevB2C.atr](attachments/RevB2C.atr) Atari BASIC Rev. B to Rev. C Converter as ATR-image
@@ -222,7 +222,7 @@ Atari BASIC Keywords
 
 ## References
 - [Atari BASIC Article in Wikipedia](http://en.wikipedia.org/wiki/ATARI_BASIC)
-- [Atari_BASIC_vs._Commodore_C64_BASIC_vs._Apple_II_BASIC](Articles/Atari_BASIC_vs._Commodore_C64_BASIC_vs._Apple_II_BASIC/README.md)
+- [Atari BASIC vs. Commodore C64 BASIC vs. Apple II BASIC](Articles/Atari_BASIC_vs._Commodore_C64_BASIC_vs._Apple_II_BASIC/README.md)
 - [Atari BASIC: the good, the bad and the ugly](https://web.archive.org/web/20070524044410/http://www3.sympatico.ca/maury/other_stuff/atari_BASIC.html)
 
 ## Pictures

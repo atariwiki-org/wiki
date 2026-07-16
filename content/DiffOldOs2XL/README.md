@@ -5,7 +5,7 @@ title: DiffOldOs2XL
 
 __Answers-Tips-and-Relevant Information__
 
-[by Paul Alhart](..//README.md) 
+[Table of Contents](..//README.md) 
 
 I really like my 1200XL, but at the same time I really hate having to use
 the TRANSLATOR to boot up certain software. What to do? I Translated the

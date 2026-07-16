@@ -11,7 +11,7 @@ Published: Analog #27 (02/ 85)
 
 Way back in the golden days, when issues of __ANALOG Computing__ were still numbering in the teens, I wrote a program called __Bounce__. It appeared in the __Our Game__ column in issue 15. At that time, I was fiddling with a fun new language for the Atari – Action! by Optimized Systems Software. I was thinking that a version of __Bounce__ in Action! would be a worthwhile project.
 
-Not long after I had that thought I discovered, to my amusement, that someone had beaten me to it. The friendly folks at __ANALOG Computing__ told me one day that a certain David Plotkin had submitted a little ditty called __[Bounce in Action!](../Bounce_in_ACTION/README.md)__, which later appeared in issue 20.
+Not long after I had that thought I discovered, to my amusement, that someone had beaten me to it. The friendly folks at __ANALOG Computing__ told me one day that a certain David Plotkin had submitted a little ditty called __[Bounce in ACTION](../Bounce_in_ACTION/README.md)__, which later appeared in issue 20.
 
 However, David's idea of a better __Bounce__ program was different from mine. His improvements consisted of adding GTIA color and, of course, speed (with Action!) to the original design. I ''enjoyed'' playing with David's program, and I was ''pleased'' that someone else was as enthusiastic about __Bounce__ as I was. . .I simply had another idea that had to be tried.
 

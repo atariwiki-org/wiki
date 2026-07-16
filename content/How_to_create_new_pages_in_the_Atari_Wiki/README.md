@@ -133,7 +133,7 @@ user instead of 'Link'.
 ''text''   = print 'text' in italic.
 __text__   = print 'text' in bold.
 {{text}}   = print 'text' in monospaced font.
-[text](..//README.md)    = print 'text' underscored (dummy hyperlink)
+[Table of Contents](..//README.md)    = print 'text' underscored (dummy hyperlink)
 - text     = make a bulleted list item with 'text'
 1. text     = make a numbered list item with 'text'
 ;term:ex   = make a definition for 'term' with the explanation 'ex'

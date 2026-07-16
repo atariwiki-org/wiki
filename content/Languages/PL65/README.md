@@ -3,7 +3,7 @@
 Copyright (C) 1987 Noahsoft
 
 ### Background
-PL65, like the better-known [Action](../Action/README.md), is a high-level ALGOL-derived language intended to produce high-performance code in a more readable format than [assembler](../assembler/README.md). The two languages share overall terms, syntax, and structure. The main difference is that PL65 includes a STRING type, something Action! lacked, but like Action!, PL65 also lacks a FLOAT type.
+PL65, like the better-known [Action!](../Action/README.md), is a high-level ALGOL-derived language intended to produce high-performance code in a more readable format than [assembler](../assembler/README.md). The two languages share overall terms, syntax, and structure. The main difference is that PL65 includes a STRING type, something Action! lacked, but like Action!, PL65 also lacks a FLOAT type.
 
 One unique feature of PL65 is its inclusion of two full-screen editors. The main editor is KED. It includes modern features like indentation support, search and replace, and block copy/paste. A second editor, the "micro editor", is included in the compiler program, allowing you to make minor changes without having to switch programs.
 

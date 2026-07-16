@@ -125,7 +125,7 @@ Thank you Alfred!
 
 ## Uwe Röder
 
-In 1989 Uwe Röder wrote [Hypra-Soft-Basic](../Languages/Basic/Hypra-Soft-Basic/README.md), which was and still is the one and only Basic for Atari making reliable and mathematical correct calculations. All math floating point routines were rewritten and are the best possible condition. In 2015 Uwe Röder has given us the rights to his Basic.
+In 1989 Uwe Röder wrote [Hypra-Soft-BASIC](../Languages/Basic/Hypra-Soft-Basic/README.md), which was and still is the one and only Basic for Atari making reliable and mathematical correct calculations. All math floating point routines were rewritten and are the best possible condition. In 2015 Uwe Röder has given us the rights to his Basic.
 
 ![](attachments/Uwe_Roeder.jpg)
 

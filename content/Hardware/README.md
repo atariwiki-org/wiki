@@ -49,7 +49,7 @@
 ** [Indus_GT_Field_Service_Manual](../Indus_GT/Indus_GT_Field_Service_Manual/README.md) 
 ** [Indus_GT_Firmware_ROM_Source](../Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
 - [ASTRA_2001](../ASTRA_2001/README.md)
-- [Percom_AT-88](Disk_Drives/Percom_AT-88/README.md)
+- [Percom AT-88](Disk_Drives/Percom_AT-88/README.md)
 ### Upgrades
 
 ## Interfaces

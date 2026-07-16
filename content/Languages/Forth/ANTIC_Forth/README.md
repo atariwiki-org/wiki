@@ -4,8 +4,8 @@ An enhanced, powerful FIG Forth version with many additional words for the Atari
 
 ## Screens
 
-- [Screens of disk 1](ANTIC_FORTH-Screens-Disk-One/README.md)
-- [Screens of disk 2](ANTIC_FORTH-Screens-Disk-Two/README.md)
+- [ANTIC FORTH - Screens Disk One](ANTIC_FORTH-Screens-Disk-One/README.md)
+- [ANTIC FORTH -Screens of Disk Two](ANTIC_FORTH-Screens-Disk-Two/README.md)
 
 
 

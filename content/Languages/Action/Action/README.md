@@ -3,11 +3,11 @@
 ## Information
 
 ### Background
-Action (also Action!) is an Atari-specific programming language written by Clinton Parker and sold by Optimized Systems Software (OSS) in ROM cartridge form starting in August 1983. It is the only language other than [BASIC](../../BASIC/README.md) and [assembler](../../Assembler/README.md) that had real popularity on the platform and saw any significant coverage in the Atari press; type-in programs and various technical articles were found in most magazines. In comparison, languages like [Forth](../../Forth/README.md) and [Logo](../../../Logo/README.md) saw much less use and almost no press coverage.
+Action (also Action!) is an Atari-specific programming language written by Clinton Parker and sold by Optimized Systems Software (OSS) in ROM cartridge form starting in August 1983. It is the only language other than [BASIC](../../BASIC/README.md) and [assembler](../../Assembler/README.md) that had real popularity on the platform and saw any significant coverage in the Atari press; type-in programs and various technical articles were found in most magazines. In comparison, languages like [Forth](../../Forth/README.md) and [Atari LOGO](../../../Logo/README.md) saw much less use and almost no press coverage.
 
 Reviewers at the time gushed about the system. They noted that practically every aspect was superior to anything available at the time; compiling was almost instantaneous, the resulting code ran almost as fast as hand-coded assembler, the full-screen editor was universally loved, and the entire system took up only 8k due to clever memory management. The only complaint, also universal, was the poor quality of the original manual set.
 
-Action uses a greatly cut-down version of the ALGOL syntax, and thus bears strong similarities with [Pascal](../../Pascal/README.md) and [C](../../C/README.md), which were also derived from ALGOL. Like those languages, Action is procedural, with programs essentially consisting of a large collection of functions that call each other. It lacked encapsulation or data hiding, but that is not a serious concern in the limited program sizes available on an 8-bit machine. Syntactically it looks very similar to Pascal, with the exception that it uses ALGOL 68 DO/OD style bracketing rather than Pascal's BEGIN/END.
+Action uses a greatly cut-down version of the ALGOL syntax, and thus bears strong similarities with [Pascal for the Atari](../../Pascal/README.md) and [C](../../C/README.md), which were also derived from ALGOL. Like those languages, Action is procedural, with programs essentially consisting of a large collection of functions that call each other. It lacked encapsulation or data hiding, but that is not a serious concern in the limited program sizes available on an 8-bit machine. Syntactically it looks very similar to Pascal, with the exception that it uses ALGOL 68 DO/OD style bracketing rather than Pascal's BEGIN/END.
 
 Action included a number of features to allow it to run as fast as possible. Notably, it's main data types were BYTE, INT and CARD, 8-bit and 16-bit signed and unsigned values, respectively. These map directly onto the basic 6502-types. The language also included a syntax to directly refer to these objects in memory so they could be mapped into hardware registers. For instance, one could set a variable to {{BYTE RTCLOK=20}} which defined the 8-bit value at memory location 20 to be the value of the real-time clock. The user could then read or write to that register using the name {{RTCLOK}}.
 
@@ -15,11 +15,11 @@ These design details helped increase performance, but the primary reason Action 
 
 Action solved this problem by simply not implementing activation records. Instead, the storage space for variables was allocated at compile time (not dissimilar to Atari BASIC's model). This meant Action could not support recursion, but also eliminated the necessity to build and manipulate a complex stack. This dramatically lowers the overhead of procedure calls, and in a language that organizes a program as a series of procedure calls, this represents a significant amount of time.
 
-Action had a number of limitations, none of them very serious. Curiously, Action did not include support for floating-point types, although such support is built into the machine's OS ROM (see [Atari_BASIC](../../BASIC/Atari_BASIC/README.md) for details) and available to any programming language. This is a significant limitation in some roles, although perhaps not for its target market. It also lacked most string handling routines, but made up for this somewhat with a series of PRINT commands that made formatted output easy.
+Action had a number of limitations, none of them very serious. Curiously, Action did not include support for floating-point types, although such support is built into the machine's OS ROM (see [Atari BASIC](../../BASIC/Atari_BASIC/README.md) for details) and available to any programming language. This is a significant limitation in some roles, although perhaps not for its target market. It also lacked most string handling routines, but made up for this somewhat with a series of PRINT commands that made formatted output easy.
 
 Generally, Action programs had performance on-par with reasonable-quality [assembler](../../Assembler/README.md), while being much easier to program. In one review, it ran Byte's Sieve of Eratosthenes 219 times faster than Atari BASIC, while its source was only a few lines longer. In comparison, the assembler version's source ran on for several pages. Such performance, combined with terse code and library functions to access much of the platform's hardware, made it suitable for action games while still having a simple source format suitable for type-in programs. It deserved to be much more popular, and may have been had it been released earlier, or by Atari itself.
 
-Action inspired several similar languages that differ largely in syntax and various features that they do or do not support. Examples include [PL65](../../PL65/README.md) and [Quick](../../QUICK/README.md).
+Action inspired several similar languages that differ largely in syntax and various features that they do or do not support. Examples include [PL65](../../PL65/README.md) and [QUICK](../../QUICK/README.md).
 
 
 ### Hello World
@@ -134,7 +134,7 @@ Thank you Alfred
 ### Functions
 - [Misc_useful_ACTION!_Functions](../Misc_useful_ACTION!_Functions/README.md) - (DIVERS.ACT)
 - [Chartest](../../../Chartest/README.md) - a group of routines which perform various functions and tests on characters.
-- [Fast_Screen_IO](../../../Fast_Screen_IO/README.md)
+- [Fast Screen IO](../../../Fast_Screen_IO/README.md)
 - [Player_Missile](../../../Player_Missile/README.md)
 - [String_Library_PSC](../../../String_Library_PSC/README.md) - (STRING.ACT)
 
@@ -158,8 +158,8 @@ Thank you Alfred
 - [Big_Symbol_Table_for_ACTION!](../Big_Symbol_Table_for_ACTION!/README.md) ACS
 - [Binary_File_Load_in_ACTION!](../Binary_File_Load_in_ACTION!/README.md)
 - [Butterfly_Demo](../../../Butterfly_Demo/README.md)
-- [C_Style_Strings](../Articles/C_Style_Strings/README.md)
-- [COM_File_Segment_Dump](../Examples/COM_File_Segment_Dump/README.md)
+- [C Style Strings](../Articles/C_Style_Strings/README.md)
+- [COM File Segment Dump](../Examples/COM_File_Segment_Dump/README.md)
 - [Catch_and_Throw_Error_Handling](../../../Catch_and_Throw_Error_Handling/README.md) ACS
 - [Catepill](../../../Catepill/README.md) unfinished Game with Level editor in ACTION!
 - [Compile_to_Disk](../Articles/Compile_to_Disk/README.md) ACS
