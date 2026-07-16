@@ -7,7 +7,7 @@ The ATR Copy Center is available as free software under the [GPLv3 License](http
 
 [ATR image](attachments/acc.atr) 
 
-# [SPL](../SPL/README.md) source code:
+# [SPL](../Languages/SPL/README.md) source code:
 ```
 # ATR Copy Center
 # 2008-2014 Carsten Strotmann

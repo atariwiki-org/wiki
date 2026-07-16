@@ -11,7 +11,7 @@ MAC/65, along with other OSS products, became part of ICD's catalog of Atari pro
 
 ![](attachments/MAC65-Disk.jpg)
 
-MAC/65 was initially developed as a disk-based program. It replaced an earlier assembler, [EASMD](../EASMD/README.md), in OSS's product portfolio. The first version, 2.00, was released in 1982.
+MAC/65 was initially developed as a disk-based program. It replaced an earlier assembler, [EASMD](../../../EASMD/README.md), in OSS's product portfolio. The first version, 2.00, was released in 1982.
 
 The MAC/65 disk also included a debugger, [BUG/65](../BUG65/README.md), developed by McStuff Company. The disk also contained a DOS. Initially it was [OS/A+](../OS_Aplus/README.md), later replaced with [DOS XL](../DOS_XL/README.md).
 
@@ -70,7 +70,7 @@ MAC/65 4.20 was not without bugs. OSS published a few patches for it in their Su
 
 After version 4.20, Lawrow rewrote MAC/65 for cartridge medium. It utilized OSS's own "SuperCartridge" - a 16 KB bank-switched cartridge that occupied only 8 KB of Atari memory, and could be disabled or enabled at will. It provided a much more comfortable experience than the disk version. MAC/65 cartridges were produced using both two-chip and one-chip variants of the SuperCartridge.
 
-The cartridge version replaced BUG/65 with another debugger - [DDT](../DDT/README.md) (Dunion's Debugging Tool) developed by James J. Dunion.
+The cartridge version replaced BUG/65 with another debugger - [DDT](../../../DDT/README.md) (Dunion's Debugging Tool) developed by James J. Dunion.
 
 ## MAC/65 1.00 (1984)
 %%(float:right)![](attachments/Cart.jpg)
@@ -259,17 +259,17 @@ Here are cartridge images created by building the sources.
 
 ## Manuals
 - [MAC/65 Manual-ABBUC version 2006](attachments/MAC65_Assembler.pdf) ; ABBUC version 2006 by Andreas Bertelmann ; size: 176 KB
-- [MAC/65 Handbook](../Mac65Handbook/README.md)
+- [MAC/65 Handbook](MAC65Handbook/README.md)
 - [MAC/65 Manual](http://www.mixinc.net/atari/mac65.htm) by Nick Kennedy (highly recommended!)
 - [MAC/65 De-Tokenizer from ANALOG](attachments/MAC-65_Token_Converter.pdf)
 - MAC/65 Bug Sheet [TXT](attachments/MAC-65_BUG_SHEET_1.txt)[PDF](attachments/MAC65_BUG_SHEET_1.pdf)
 - Bug sheet of 01/07/94 version 1.02 [Scan](attachments/mac_65_bug_sheet.pdf) [PDF](attachments/MAC65_BUG_SHEET_01-07-1997.pdf)
 
 ## Examples - MAC/65 source files
-- [Floating_Point_ROM_Library](../Floating_Point_ROM_Library/README.md)
-- [MOUSE_ROUTINE_IN_AN_INTERRUPT](../MOUSE_ROUTINE_IN_AN_INTERRUPT/README.md)
-- [RAF_Commander](../RAF_Commander/README.md) - a Norton Commander Clone for the 8bit Atari
-- [Sweet16Mac65](../Sweet16Mac65/README.md) a virtual 16bit machine for the 8bit ATARI
+- [Floating_Point_ROM_Library](../../../Floating_Point_ROM_Library/README.md)
+- [MOUSE_ROUTINE_IN_AN_INTERRUPT](../../../MOUSE_ROUTINE_IN_AN_INTERRUPT/README.md)
+- [RAF_Commander](../../../RAF_Commander/README.md) - a Norton Commander Clone for the 8bit Atari
+- [Sweet16Mac65](../../../Sweet16Mac65/README.md) a virtual 16bit machine for the 8bit ATARI
 - [MAC/65 Text Generator v 1.0 (Basic)](attachments/MAC-65_Text_Generator_v1.0_1988Amte-BASIC.atr)
 
 ![](attachments/Mac_65_Dissassembler.jpg)

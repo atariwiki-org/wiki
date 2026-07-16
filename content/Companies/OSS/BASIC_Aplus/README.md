@@ -3,7 +3,7 @@
 Copyright (C) 1981 OSS, Inc.
 
 ### Background
-[Atari_BASIC](../Atari_BASIC/README.md) was originally written by a 3rd party company, Shepardson Microsystems. An early version was delivered in late 1978 for demonstration purposes so Atari could show it at the CES in January 1979. To the programmer's surprise, they learned that Atari started burning this version to ROM cartridges as the final product. This was in spite of a number of bugs having been found and corrected in the meantime.
+[Atari_BASIC](../../../Languages/BASIC/Atari_BASIC/README.md) was originally written by a 3rd party company, Shepardson Microsystems. An early version was delivered in late 1978 for demonstration purposes so Atari could show it at the CES in January 1979. To the programmer's surprise, they learned that Atari started burning this version to ROM cartridges as the final product. This was in spite of a number of bugs having been found and corrected in the meantime.
 
 Shortly after the release of Atari BASIC, the owner of Shepardson decided to dissolve the company. The Atari staff formed their own company, Optimized Systems Software (OSS), and purchased the licenses to the Atari products. BASIC A+ was one of OSS's first products, consisting largely of the bug-fixed versions of Atari BASIC along with a few expansions. Among the notable additions were PRINT USING (for formatted output), trace and debug enhancements, and direct DOS commands.
 

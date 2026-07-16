@@ -5,7 +5,7 @@ title: DOS
 
 %%tabbedSection
 %%tab-english
-The Disk Operating System, short DOS, is a file management system for the [Atari](../Atari/README.md). It's main function is the management of storage such as floppy disk or harddisks. It contains the necessary driver functions for the computer to communicate with the disk-drives or other peripheral devices.
+The Disk Operating System, short DOS, is a file management system for the [Atari](../Software/Atari/README.md). It's main function is the management of storage such as floppy disk or harddisks. It contains the necessary driver functions for the computer to communicate with the disk-drives or other peripheral devices.
 
 Some DOS Systems consist of two parts,
 In der Regel besteht das DOS aus zwei Teilen:
@@ -13,7 +13,7 @@ In der Regel besteht das DOS aus zwei Teilen:
 ;DUP.SYS:__D__isk __U__tility __P__ackage - exposes the low level functions in a user friendly interface to the user. It also contains some high level functions not available in the FMS, such as disk copy.
 /%
 %%tab-deutsch
-Das Disk Operating System kurz DOS ein Betriebssystem für den [Atari](../Atari/README.md) , dessen Hauptaufgabe die Verwaltung von Speichermedien wie Disketten und Festplatten ist. Es ermöglicht die Kommunikation zwischen Computer und Diskettenstation oder anderen Peripheriegeräten.
+Das Disk Operating System kurz DOS ein Betriebssystem für den [Atari](../Software/Atari/README.md) , dessen Hauptaufgabe die Verwaltung von Speichermedien wie Disketten und Festplatten ist. Es ermöglicht die Kommunikation zwischen Computer und Diskettenstation oder anderen Peripheriegeräten.
 
 In der Regel besteht das DOS aus zwei Teilen:
 ;DOS.SYS: bietet die Funktionalität für das Anlegen, Umbenennen, Löschen und Lesen von Dateien sowie das Formatieren von Disketten.
@@ -25,9 +25,9 @@ In der Regel besteht das DOS aus zwei Teilen:
 ## DOS Systems for the Atari:
 ;[Atari_DOS_II_2.0S](../Atari_DOS_II_2.0S/README.md) of 1980
 ;[Atari_DOS_2.5](../Atari_DOS_2.5/README.md) of 1984
-;[Atari_DOS_4](../Atari_DOS_4/README.md) also known as ANTIC Dos or QDOS of 1984
+;[Atari_DOS_4](Atari_DOS_4/README.md) also known as ANTIC Dos or QDOS of 1984
 ;[BW-DOS](../BW-DOS/README.md) of 1995
-;[MyDOS](../MyDOS/README.md) 
+;[MyDOS](MyDOS/README.md) 
 ;[OSS_A__2](../OSS_A__2/README.md) 
 ;[Real.DOS](../Real.DOS/README.md) 
 ;[SpartaDOS](../SpartaDOS/README.md) 
@@ -35,7 +35,7 @@ In der Regel besteht das DOS aus zwei Teilen:
 ;[TTDOS](../TTDOS/README.md) also known as Turbo Tape DOS
 ;[XDOS_2.43](../XDOS_2.43/README.md) of 2009 by Stefan Dorndorf
 Game DOS:
-;[MyPicoDos](../MyPicoDos/README.md) by HiassofT
+;[MyPicoDos](MyPicoDos/README.md) by HiassofT
 ;MicroDOS by Dennis Keathley
 ;NanoDos (NDOS) by Stephan Baucke
 ;MicroSpartaDos (MSDOS) by Pawel 'pirx' Kalinowski

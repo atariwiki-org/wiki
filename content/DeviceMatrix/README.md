@@ -18,8 +18,8 @@ title: DeviceMatrix
 |  SpeedLink SL-6421-SBK Comfort Combo Keyboard, black | working | [simple Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)  | various Programms |
 |  SUN USB Keyboard Model Typ 6 USB No. 3201281-01 | working | [simple Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)  | various Programms |
 | __Mice__ | | | |
-| Logitech Mice USB | working | [generic Mouse Driver](../ProjUSBCartAtariMouse/README.md)  | various Programms |
-| Microsoft Optical Intellimouse | working | [generic Mouse Driver](../ProjUSBCartAtariMouse/README.md)  | various Programms |
+| Logitech Mice USB | working | [generic Mouse Driver](../Hardware/USB/ProjUSB/ProjUSBCartAtariMouse/README.md)  | various Programms |
+| Microsoft Optical Intellimouse | working | [generic Mouse Driver](../Hardware/USB/ProjUSB/ProjUSBCartAtariMouse/README.md)  | various Programms |
 | __USB Floppy Drives__ | | | |
 | TEAC FD-05PUW USB | working |  | |
 | __USB Sticks__ | | | |

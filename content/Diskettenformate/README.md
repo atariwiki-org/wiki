@@ -27,17 +27,17 @@ title: Diskettenformate
 ## Diskformats and DOS versions supporting them
 
 ||DOS||90KB||130KB||180KB||360KB||720KB||1.440KB||Remark
-|[DOS 1.0](../Atari_DOS_1/README.md)|Y|N|N|N|N|N|
-|[DOS 2.0](../Atari_DOS_2/README.md)  SmartDOS|Y|N|Y|N|N|N|DOS 2.0s can read 180k after a Reset; DOS 2.0d can read 90k after a Reset!  DOS.SYS of SmartDOS is based on DOS 2.0! (Rainbow DOS and Black DOSare merely DUP.SYS replacements for DOS 2.0s or DOS 2.0d, there are many others...)
-|[DOS 2.5](../Atari_DOS_2/README.md)|Y|Y|N|N|N|N|
-|[DOS 3.0](../Atari_DOS_3/README.md)|Y|Y|N|N|N|N|
-|[DOS 4.0](../Atari_DOS_4/README.md)|Y|N|Y|Y|N|N|
-|[DOS XE](../Atari_DOS_XE/README.md)|Y|Y|Y|Y|N|N|
-|[Bibo DOS 6.x](../Bibo-DOS/README.md)|Y|Y|Y|Y|N|N|
-|[Turbo DOS 2.x](../Turbo-DOS/README.md)|Y|Y|Y|Y|N|N|
+|[DOS 1.0](../DOS/Atari_DOS_1/README.md)|Y|N|N|N|N|N|
+|[DOS 2.0](../DOS/Atari_DOS_2/README.md)  SmartDOS|Y|N|Y|N|N|N|DOS 2.0s can read 180k after a Reset; DOS 2.0d can read 90k after a Reset!  DOS.SYS of SmartDOS is based on DOS 2.0! (Rainbow DOS and Black DOSare merely DUP.SYS replacements for DOS 2.0s or DOS 2.0d, there are many others...)
+|[DOS 2.5](../DOS/Atari_DOS_2/README.md)|Y|Y|N|N|N|N|
+|[DOS 3.0](../DOS/Atari_DOS_3/README.md)|Y|Y|N|N|N|N|
+|[DOS 4.0](../DOS/Atari_DOS_4/README.md)|Y|N|Y|Y|N|N|
+|[DOS XE](../DOS/Atari_DOS_XE/README.md)|Y|Y|Y|Y|N|N|
+|[Bibo DOS 6.x](../Companies/CompyShop/BIBO-DOS/README.md)|Y|Y|Y|Y|N|N|
+|[Turbo DOS 2.x](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md)|Y|Y|Y|Y|N|N|
 |[Top DOS 1.5 Prof](../TOP-DOS/README.md)|Y|Y|Y|Y|?|N|
 |Mach DOS 3.7|Y|N|Y|Y|N|N|
-|[MyDOS 4.5x](../MyDOS/README.md)|Y|Y|Y|Y|Y|N|MyDOS requires a special / external formatter to format 1440 KB- one is available e.g. with the CSS Black Box or the CSS Floppyboard,maybe there are also some other external formatters...?!?
+|[MyDOS 4.5x](../DOS/MyDOS/README.md)|Y|Y|Y|Y|Y|N|MyDOS requires a special / external formatter to format 1440 KB- one is available e.g. with the CSS Black Box or the CSS Floppyboard,maybe there are also some other external formatters...?!?
 |[Sparta DOS 3.2x/3.3x](../SpartaDOS/README.md)|Y|Y|Y|Y|Y|Y|
 |Real DOS 2.x|Y|Y|Y|Y|Y|Y|
 |BeweDOS 1.x|Y|Y|Y|Y|N|N|a 720k or 1440k disk must be formatted with SpartaDOS orSDX or Real DOS, then Bewe DOS can be copied onto it!

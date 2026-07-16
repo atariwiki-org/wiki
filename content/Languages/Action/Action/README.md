@@ -3,11 +3,11 @@
 ## Information
 
 ### Background
-Action (also Action!) is an Atari-specific programming language written by Clinton Parker and sold by Optimized Systems Software (OSS) in ROM cartridge form starting in August 1983. It is the only language other than [BASIC](../Basic/README.md) and [assembler](../assembler/README.md) that had real popularity on the platform and saw any significant coverage in the Atari press; type-in programs and various technical articles were found in most magazines. In comparison, languages like [Forth](../Forth/README.md) and [Logo](../Logo/README.md) saw much less use and almost no press coverage.
+Action (also Action!) is an Atari-specific programming language written by Clinton Parker and sold by Optimized Systems Software (OSS) in ROM cartridge form starting in August 1983. It is the only language other than [BASIC](../../BASIC/README.md) and [assembler](../../Assembler/README.md) that had real popularity on the platform and saw any significant coverage in the Atari press; type-in programs and various technical articles were found in most magazines. In comparison, languages like [Forth](../../Forth/README.md) and [Logo](../../../Logo/README.md) saw much less use and almost no press coverage.
 
 Reviewers at the time gushed about the system. They noted that practically every aspect was superior to anything available at the time; compiling was almost instantaneous, the resulting code ran almost as fast as hand-coded assembler, the full-screen editor was universally loved, and the entire system took up only 8k due to clever memory management. The only complaint, also universal, was the poor quality of the original manual set.
 
-Action uses a greatly cut-down version of the ALGOL syntax, and thus bears strong similarities with [Pascal](../Pascal/README.md) and [C](../C/README.md), which were also derived from ALGOL. Like those languages, Action is procedural, with programs essentially consisting of a large collection of functions that call each other. It lacked encapsulation or data hiding, but that is not a serious concern in the limited program sizes available on an 8-bit machine. Syntactically it looks very similar to Pascal, with the exception that it uses ALGOL 68 DO/OD style bracketing rather than Pascal's BEGIN/END.
+Action uses a greatly cut-down version of the ALGOL syntax, and thus bears strong similarities with [Pascal](../../Pascal/README.md) and [C](../../C/README.md), which were also derived from ALGOL. Like those languages, Action is procedural, with programs essentially consisting of a large collection of functions that call each other. It lacked encapsulation or data hiding, but that is not a serious concern in the limited program sizes available on an 8-bit machine. Syntactically it looks very similar to Pascal, with the exception that it uses ALGOL 68 DO/OD style bracketing rather than Pascal's BEGIN/END.
 
 Action included a number of features to allow it to run as fast as possible. Notably, it's main data types were BYTE, INT and CARD, 8-bit and 16-bit signed and unsigned values, respectively. These map directly onto the basic 6502-types. The language also included a syntax to directly refer to these objects in memory so they could be mapped into hardware registers. For instance, one could set a variable to {{BYTE RTCLOK=20}} which defined the 8-bit value at memory location 20 to be the value of the real-time clock. The user could then read or write to that register using the name {{RTCLOK}}.
 
@@ -15,11 +15,11 @@ These design details helped increase performance, but the primary reason Action 
 
 Action solved this problem by simply not implementing activation records. Instead, the storage space for variables was allocated at compile time (not dissimilar to Atari BASIC's model). This meant Action could not support recursion, but also eliminated the necessity to build and manipulate a complex stack. This dramatically lowers the overhead of procedure calls, and in a language that organizes a program as a series of procedure calls, this represents a significant amount of time.
 
-Action had a number of limitations, none of them very serious. Curiously, Action did not include support for floating-point types, although such support is built into the machine's OS ROM (see [Atari_BASIC](../Atari_BASIC/README.md) for details) and available to any programming language. This is a significant limitation in some roles, although perhaps not for its target market. It also lacked most string handling routines, but made up for this somewhat with a series of PRINT commands that made formatted output easy.
+Action had a number of limitations, none of them very serious. Curiously, Action did not include support for floating-point types, although such support is built into the machine's OS ROM (see [Atari_BASIC](../../BASIC/Atari_BASIC/README.md) for details) and available to any programming language. This is a significant limitation in some roles, although perhaps not for its target market. It also lacked most string handling routines, but made up for this somewhat with a series of PRINT commands that made formatted output easy.
 
-Generally, Action programs had performance on-par with reasonable-quality [assembler](../assembler/README.md), while being much easier to program. In one review, it ran Byte's Sieve of Eratosthenes 219 times faster than Atari BASIC, while its source was only a few lines longer. In comparison, the assembler version's source ran on for several pages. Such performance, combined with terse code and library functions to access much of the platform's hardware, made it suitable for action games while still having a simple source format suitable for type-in programs. It deserved to be much more popular, and may have been had it been released earlier, or by Atari itself.
+Generally, Action programs had performance on-par with reasonable-quality [assembler](../../Assembler/README.md), while being much easier to program. In one review, it ran Byte's Sieve of Eratosthenes 219 times faster than Atari BASIC, while its source was only a few lines longer. In comparison, the assembler version's source ran on for several pages. Such performance, combined with terse code and library functions to access much of the platform's hardware, made it suitable for action games while still having a simple source format suitable for type-in programs. It deserved to be much more popular, and may have been had it been released earlier, or by Atari itself.
 
-Action inspired several similar languages that differ largely in syntax and various features that they do or do not support. Examples include [PL65](../PL65/README.md) and [Quick](../Quick/README.md).
+Action inspired several similar languages that differ largely in syntax and various features that they do or do not support. Examples include [PL65](../../PL65/README.md) and [Quick](../../QUICK/README.md).
 
 
 ### Hello World
@@ -61,16 +61,16 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - [The_ACTION!_Run_Time_Package](../The_ACTION!_Run_Time_Package/README.md)
 - [ACTION!_Reference_Card](../ACTION!_Reference_Card/README.md)
 - [ACTION!_error_codes](../ACTION!_error_codes/README.md)
-- [Aktion_mit_ACTION](../Aktion_mit_ACTION/README.md) - Report about the ACTION! Programming Language from the German Magazin "Happy Computer"
+- [Aktion_mit_ACTION](../Articles/Aktion_mit_ACTION/README.md) - Report about the ACTION! Programming Language from the German Magazin "Happy Computer"
 - [Action!_Bugsheet_3](../Action!_Bugsheet_3/README.md)
 - [Fix_for_the_Bugs_in_divide_in_ACTION!](../Fix_for_the_Bugs_in_divide_in_ACTION!/README.md)
-- [Fix_for_Bug_in_PrintF](../Fix_for_Bug_in_PrintF/README.md)
+- [Fix_for_Bug_in_PrintF](../../../Fix_for_Bug_in_PrintF/README.md)
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ### Tutorials
 - [Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION!_Program](../Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION!_Program/README.md)
 - [Action!_and_BBS_Express!_PRO_Tutorial](../Action!_and_BBS_Express!_PRO_Tutorial/README.md)
-- [Larry's Action! Tutorial](../Larrys_Action_Tutorial/README.md)
+- [Larry's Action! Tutorial](../Articles/Larrys_Action_Tutorial/README.md)
 - [How_to_setup_an_ACTION!_Development_Disk](../How_to_setup_an_ACTION!_Development_Disk/README.md)
 - [Action! Programming for Atari 8-bit Computers](https://www.youtube.com/watch?v=yQ8ABW8rY40&list=PL5FYYzC9Hpgog9GPsJRtshMP0wpHrxb2J) video tutorial series
 - [Learning Atari Action!](http://atariaction.tumblr.com/) blog
@@ -133,86 +133,86 @@ Thank you Alfred
 
 ### Functions
 - [Misc_useful_ACTION!_Functions](../Misc_useful_ACTION!_Functions/README.md) - (DIVERS.ACT)
-- [Chartest](../Chartest/README.md) - a group of routines which perform various functions and tests on characters.
-- [Fast_Screen_IO](../Fast_Screen_IO/README.md)
-- [Player_Missile](../Player_Missile/README.md)
-- [String_Library_PSC](../String_Library_PSC/README.md) - (STRING.ACT)
+- [Chartest](../../../Chartest/README.md) - a group of routines which perform various functions and tests on characters.
+- [Fast_Screen_IO](../../../Fast_Screen_IO/README.md)
+- [Player_Missile](../../../Player_Missile/README.md)
+- [String_Library_PSC](../../../String_Library_PSC/README.md) - (STRING.ACT)
 
 ### Mini-Runtime LIBs
-- [_Intro](../_Intro/README.md) (Eine kleine Einführung zu den Mini-LIBs)
-- [Simple_PRINT_Runtime](../Simple_PRINT_Runtime/README.md) (Mini-LIB)
-- [ZERO_and_SETBLOCK](../ZERO_and_SETBLOCK/README.md) (RT Part)
+- [_Intro](../../../_Intro/README.md) (Eine kleine Einführung zu den Mini-LIBs)
+- [Simple_PRINT_Runtime](../../../Simple_PRINT_Runtime/README.md) (Mini-LIB)
+- [ZERO_and_SETBLOCK](../../../ZERO_and_SETBLOCK/README.md) (RT Part)
 
 
 ### Examples
 
 - [A_pseudo_Assembler_in_Action!](../A_pseudo_Assembler_in_Action!/README.md)
 - [ACTION!_Logo](../ACTION!_Logo/README.md) ACS
-- [ATARI_Rainbow_effect](../ATARI_Rainbow_effect/README.md)
-- [Access_SpartaDOS_commandline_parameters](../Access_SpartaDOS_commandline_parameters/README.md)
+- [ATARI_Rainbow_effect](../../../ATARI_Rainbow_effect/README.md)
+- [Access_SpartaDOS_commandline_parameters](../../../Access_SpartaDOS_commandline_parameters/README.md)
 - [Atari_Fuji_Logo_in_ACTION!](../Atari_Fuji_Logo_in_ACTION!/README.md)
-- [Atari_Picture_Mirror_Tool](../Atari_Picture_Mirror_Tool/README.md)
+- [Atari_Picture_Mirror_Tool](../../../Atari_Picture_Mirror_Tool/README.md)
 - [Atari_ST_Mouse_Driver_for_ACTION!](../Atari_ST_Mouse_Driver_for_ACTION!/README.md)
 - [BASIC_USR_Machine_Language_Call_Simulation_for_ACTION!](../BASIC_USR_Machine_Language_Call_Simulation_for_ACTION!/README.md)
 - [Backtrack_in_ACTION!](../Backtrack_in_ACTION!/README.md)
 - [Big_Symbol_Table_for_ACTION!](../Big_Symbol_Table_for_ACTION!/README.md) ACS
 - [Binary_File_Load_in_ACTION!](../Binary_File_Load_in_ACTION!/README.md)
-- [Butterfly_Demo](../Butterfly_Demo/README.md)
-- [C_Style_Strings](../C_Style_Strings/README.md)
-- [COM_File_Segment_Dump](../COM_File_Segment_Dump/README.md)
-- [Catch_and_Throw_Error_Handling](../Catch_and_Throw_Error_Handling/README.md) ACS
-- [Catepill](../Catepill/README.md) unfinished Game with Level editor in ACTION!
-- [Compile_to_Disk](../Compile_to_Disk/README.md) ACS
+- [Butterfly_Demo](../../../Butterfly_Demo/README.md)
+- [C_Style_Strings](../Articles/C_Style_Strings/README.md)
+- [COM_File_Segment_Dump](../Examples/COM_File_Segment_Dump/README.md)
+- [Catch_and_Throw_Error_Handling](../../../Catch_and_Throw_Error_Handling/README.md) ACS
+- [Catepill](../../../Catepill/README.md) unfinished Game with Level editor in ACTION!
+- [Compile_to_Disk](../Articles/Compile_to_Disk/README.md) ACS
 - [DLI_in_ACTION!](../DLI_in_ACTION!/README.md)
-- [DOS_Setup](../DOS_Setup/README.md) - A small tool to copy some files from disk to ramdisk. can be configured by a textfile.
-- [Data_Entry_Routines](../Data_Entry_Routines/README.md)
-- [Date_Routines](../Date_Routines/README.md) - Library of routines supporting the input, storage and manipulation of dates.
-- [Delete_EOL_Char_in_Textfiles](../Delete_EOL_Char_in_Textfiles/README.md)
+- [DOS_Setup](../../../DOS_Setup/README.md) - A small tool to copy some files from disk to ramdisk. can be configured by a textfile.
+- [Data_Entry_Routines](../../../Data_Entry_Routines/README.md)
+- [Date_Routines](../../../Date_Routines/README.md) - Library of routines supporting the input, storage and manipulation of dates.
+- [Delete_EOL_Char_in_Textfiles](../Examples/Delete_EOL_Char_in_Textfiles/README.md)
 - [Displaylist_in_ACTION!](../Displaylist_in_ACTION!/README.md)
-- [END_Procedure](../END_Procedure/README.md) - Call procedure to leave an Action Program
-- [ERROR](../ERROR/README.md) (Converts SpartaDOS, BeWeDOS and RealDOS error # to readable text)
-- [Fast_Graphics_15_Routines](../Fast_Graphics_15_Routines/README.md)
-- [Fast_Graphics_8_Routines](../Fast_Graphics_8_Routines/README.md)
-- [File_Compare](../File_Compare/README.md)
-- [File_IO_Routines](../File_IO_Routines/README.md)
-- [File_Select_Box](../File_Select_Box/README.md)
-- [File_Select_Shell](../File_Select_Shell/README.md)
+- [END_Procedure](../../../END_Procedure/README.md) - Call procedure to leave an Action Program
+- [ERROR](../Examples/ERROR/README.md) (Converts SpartaDOS, BeWeDOS and RealDOS error # to readable text)
+- [Fast_Graphics_15_Routines](../../../Fast_Graphics_15_Routines/README.md)
+- [Fast_Graphics_8_Routines](../../../Fast_Graphics_8_Routines/README.md)
+- [File_Compare](../../../File_Compare/README.md)
+- [File_IO_Routines](../../../File_IO_Routines/README.md)
+- [File_Select_Box](../../../File_Select_Box/README.md)
+- [File_Select_Shell](../../../File_Select_Shell/README.md)
 - [Game_AMAZING_in_ACTION!](../Game_AMAZING_in_ACTION!/README.md)
-- [Grep_for_Sparta_DOS](../Grep_for_Sparta_DOS/README.md)
-- [HexDump](../HexDump/README.md) - Dump - Print the contents of binary files in hexadecimal and ATASCII
+- [Grep_for_Sparta_DOS](../../../Grep_for_Sparta_DOS/README.md)
+- [HexDump](../../../HexDump/README.md) - Dump - Print the contents of binary files in hexadecimal and ATASCII
 - [Jump_to_DOS_DUP](../Jump_to_DOS_DUP/README.md)
 - [Kermit_in_ACTION!](../Kermit_in_ACTION!/README.md)
 - [Load_APL_Display-List_Files](../Load_APL_Display-List_Files/README.md)
 - [Load_Font_Files_in_ACTION!](../Load_Font_Files_in_ACTION!/README.md)
-- [Load_Koala_Pictures](../Load_Koala_Pictures/README.md)
-- [MiniDOS](../MiniDOS/README.md)
-- [Multi_Player_Animation](../Multi_Player_Animation/README.md)
-- [OS_Vectors](../OS_Vectors/README.md)
-- [PERCOM_Block_Manipulation](../PERCOM_Block_Manipulation/README.md)
-- [PERCOM_Service](../PERCOM_Service/README.md) -- Disk Format Configuration
-- [Printing_Routine_for_Epson_Printer](../Printing_Routine_for_Epson_Printer/README.md)
-- [Query_Console_Keys](../Query_Console_Keys/README.md)
-- [SIO_CIO_Routine](../SIO_CIO_Routine/README.md)
-- [SourceCodeDisk1](../SourceCodeDisk1/README.md) ; SpartaDOS X disk image with Action source code
-- [Starburst](../Starburst/README.md)
-- [Symbol_table_lister](../Symbol_table_lister/README.md) ACS
-- [Timer_Programming](../Timer_Programming/README.md)
-- [Trackball](../Trackball/README.md)
-- [Using_the_RAM_Under_the_OS_ROM_on_XL_and_XE_Computers](../Using_the_RAM_Under_the_OS_ROM_on_XL_and_XE_Computers/README.md)
-- [VT52_Terminal_Emulator](../VT52_Terminal_Emulator/README.md)
-- [VTEmulator](../VTEmulator/README.md)
-- [Windowing_Routines](../Windowing_Routines/README.md)
-- [XFD_Disk_Transfer_tool](../XFD_Disk_Transfer_tool/README.md) XFormer Filetransfere
-- [XModem_Filetransfer](../XModem_Filetransfer/README.md)
+- [Load_Koala_Pictures](../../../Load_Koala_Pictures/README.md)
+- [MiniDOS](../../../MiniDOS/README.md)
+- [Multi_Player_Animation](../../../Multi_Player_Animation/README.md)
+- [OS_Vectors](../../../OS_Vectors/README.md)
+- [PERCOM_Block_Manipulation](../../../PERCOM_Block_Manipulation/README.md)
+- [PERCOM_Service](../../../PERCOM_Service/README.md) -- Disk Format Configuration
+- [Printing_Routine_for_Epson_Printer](../../../Printing_Routine_for_Epson_Printer/README.md)
+- [Query_Console_Keys](../../../Query_Console_Keys/README.md)
+- [SIO_CIO_Routine](../../../SIO_CIO_Routine/README.md)
+- [SourceCodeDisk1](../../../SourceCodeDisk1/README.md) ; SpartaDOS X disk image with Action source code
+- [Starburst](../../../Starburst/README.md)
+- [Symbol_table_lister](../../../Symbol_table_lister/README.md) ACS
+- [Timer_Programming](../../../Timer_Programming/README.md)
+- [Trackball](../../../Trackball/README.md)
+- [Using_the_RAM_Under_the_OS_ROM_on_XL_and_XE_Computers](../../../Using_the_RAM_Under_the_OS_ROM_on_XL_and_XE_Computers/README.md)
+- [VT52_Terminal_Emulator](../../../VT52_Terminal_Emulator/README.md)
+- [VTEmulator](../../../VTEmulator/README.md)
+- [Windowing_Routines](../../../Windowing_Routines/README.md)
+- [XFD_Disk_Transfer_tool](../../../XFD_Disk_Transfer_tool/README.md) XFormer Filetransfere
+- [XModem_Filetransfer](../../../XModem_Filetransfer/README.md)
 
 ### Tools
 
 - [Action_Source_Code_Formatter](../Action_Source_Code_Formatter/README.md)
-- [Infoline](../Infoline/README.md) for ACTION! and BASIC
+- [Infoline](../../../Infoline/README.md) for ACTION! and BASIC
 - [ACTION_OBJECT_CODE_RELOCATION_PROGRAM](../ACTION_OBJECT_CODE_RELOCATION_PROGRAM/README.md) ; Thank you so much Alfred from AtariAge, we all really appreciate your help here again.
-- [Relocator](../Relocator/README.md) for Action; relocates Action code to run independent from the code location
+- [Relocator](../../../Relocator/README.md) for Action; relocates Action code to run independent from the code location
 - [acsterm.txt](attachments/acsterm.txt) ; ACSTERM is a terminal emulator for the Atari 800, 800XL, 1200XL and 130XE
-- [How_to_find_the_revision_number_of_ACTION](../How_to_find_the_revision_number_of_ACTION/README.md)
+- [How_to_find_the_revision_number_of_ACTION](../../../How_to_find_the_revision_number_of_ACTION/README.md)
 
 ### Missing Tools: Graphics Utilities Library and Shape Editor
 
@@ -240,35 +240,35 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 ||Title||Issue||Language||Comment
 |[Review_Action!](../Review_Action!/README.md)|#16 (02/ 84)|en|Review
 |[An_Introduction_to_ACTION!](../An_Introduction_to_ACTION!/README.md) |#17 + #18 (03+ 04/ 84)|en|Tutorial
-|[Stars_in_3D](../Stars_in_3D/README.md)|#20 (07/ 84)|en|Demo
+|[Stars_in_3D](../../../Stars_in_3D/README.md)|#20 (07/ 84)|en|Demo
 |[Bounce_in_ACTION!](../Bounce_in_ACTION!/README.md)|#20 (07/ 84)|en|Game
 |[Pulse_in_ACTION!](../Pulse_in_ACTION!/README.md)|#26 (01/ 85)|en|Demo
 |[More_Fun_with_Bounce!](../More_Fun_with_Bounce!/README.md)|#27 (02/ 85)|en|Game
-|[Demon_Birds](../Demon_Birds/README.md)|#28 (03/ 85)|en|Game
-|[Roto](../Roto/README.md)|#31 (06/ 85)|en|Game
-|[Color_the_shapes](../Color_the_shapes/README.md)|#32 (07/ 85)|en|game
+|[Demon_Birds](../../../Demon_Birds/README.md)|#28 (03/ 85)|en|Game
+|[Roto](../../../Roto/README.md)|#31 (06/ 85)|en|Game
+|[Color_the_shapes](../Examples/Color_the_shapes/README.md)|#32 (07/ 85)|en|game
 |[Getting_in_on_the_Action!_1](../Getting_in_on_the_Action!_1/README.md)|#32 (07/ 85)|en|Tutorial
 |[Getting_in_on_the_Action!_2](../Getting_in_on_the_Action!_2/README.md)|#35 (10/ 85)|en|Tutorial
-|[Sneak_attack](../Sneak_attack/README.md)|#36 (11/ 85)|en|Game
-|[Air_hockey](../Air_hockey/README.md)|#38 (01/ 86)|en|Game
-|[D-Check](../D-Check/README.md)|#44 (07/ 86)|en|Tool
-|[Trails](../Trails/README.md)|#50 (01/ 87)|en|Tool for using the KoalaPad in ACTION!
+|[Sneak_attack](../../../Sneak_attack/README.md)|#36 (11/ 85)|en|Game
+|[Air_hockey](../../../Air_hockey/README.md)|#38 (01/ 86)|en|Game
+|[D-Check](../../../D-Check/README.md)|#44 (07/ 86)|en|Tool
+|[Trails](../Articles/Trails/README.md)|#50 (01/ 87)|en|Tool for using the KoalaPad in ACTION!
 |[ACTION!_Zero_Free](../ACTION!_Zero_Free/README.md)|#54 (05/ 87) |en|Tool
 
 ### Antic
 ||Title||Issue||Language||Comment
 |[Interrupts_in_ACTION!](../Interrupts_in_ACTION!/README.md)|Vol. 3 #3 (07/ 84)|en|
-|[Demo_Pretty](../Demo_Pretty/README.md)|Vol. 3 #7 (11/ 84)|en|Demo from Antic I/O-Board
+|[Demo_Pretty](../Articles/Demo_Pretty/README.md)|Vol. 3 #7 (11/ 84)|en|Demo from Antic I/O-Board
 |[SPLASH_in_ACTION!](../SPLASH_in_ACTION!/README.md)|Vol. 3 #12 (04/ 85)|en|Demo
 |[Game_AMAZING_in_ACTION!](../Game_AMAZING_in_ACTION!/README.md)|Vol. 4 #1  (05/ 85)|en|Game
-|[View_3D](../View_3D/README.md)|Vol. 4 #2 (06/ 85)|en|Tool
-|[Dark_Star](../Dark_Star/README.md)|Vol. 4 #3 (07/ 85)|en|Game: Zapping Aliens With Radioactive Waste
-|[Display_Master](../Display_Master/README.md)|Vol. 4 #4 (08/ 85)|en|
-|[Eight_Queens](../Eight_Queens/README.md)|Vol. 4 #5 (09/ 85)|en|92 chess solutions in 40 seconds
-|[Video_Stretch](../Video_Stretch/README.md)|Vol. 5 #6 (10/ 86)|en|Tool
-|[Killer_Chess](../Killer_Chess/README.md)|Vol. 6 #10 (02/ 88)|en|Game
-|[Reardoor](../Reardoor/README.md)|Vol. 6 #10 (02/ 88)|en|Game
-|[Frog](../Frog/README.md)|Vol. 6 #10 (02/ 88)|en|Game
+|[View_3D](../Examples/View_3D/README.md)|Vol. 4 #2 (06/ 85)|en|Tool
+|[Dark_Star](../Articles/Dark_Star/README.md)|Vol. 4 #3 (07/ 85)|en|Game: Zapping Aliens With Radioactive Waste
+|[Display_Master](../../../Display_Master/README.md)|Vol. 4 #4 (08/ 85)|en|
+|[Eight_Queens](../Articles/Eight_Queens/README.md)|Vol. 4 #5 (09/ 85)|en|92 chess solutions in 40 seconds
+|[Video_Stretch](../Articles/Video_Stretch/README.md)|Vol. 5 #6 (10/ 86)|en|Tool
+|[Killer_Chess](../Articles/Killer_Chess/README.md)|Vol. 6 #10 (02/ 88)|en|Game
+|[Reardoor](../Articles/Reardoor/README.md)|Vol. 6 #10 (02/ 88)|en|Game
+|[Frog](../Articles/Frog/README.md)|Vol. 6 #10 (02/ 88)|en|Game
 |[ACTION!_Toolbox](../ACTION!_Toolbox/README.md)|Vol. 7 #6 (10/ 88)|en|Lightning-fast command finder (Wordfind and Matchup)
 
 ### ATARI''magazin''

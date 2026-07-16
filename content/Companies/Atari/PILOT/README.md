@@ -3,7 +3,7 @@
 ### Background
 PILOT is an extremely simple programming language written in 1968 explicitly for teaching programming to children. The language consists of one-letter commands followed by a colon, one command per line, and a very limited set of commands and operations. Variables are prefixed with $, and labels with a *.
 
-PILOT is unique in that it added a set of commands for graphics and sound using two-letter mnemonics GR and SO. The graphics system used turtle graphics, with the string following the GR command containing multiple sub-commands like DRAW and TURN. The syntax for these commands is similar to [WSFN](../../WSFN/README.md), allowing a series of commands to be repeated by placing them inside parentheses and putting the number of times to perform them in front.
+PILOT is unique in that it added a set of commands for graphics and sound using two-letter mnemonics GR and SO. The graphics system used turtle graphics, with the string following the GR command containing multiple sub-commands like DRAW and TURN. The syntax for these commands is similar to [WSFN](../../../Languages/WSFN/README.md), allowing a series of commands to be repeated by placing them inside parentheses and putting the number of times to perform them in front.
 
 For editing purposes, PILOT uses line numbers, which were not part of the original language.  However, these can be skipped by using the AUTO feature, which adds these numbers automatically without displaying them on the screen. The screen turns a yellow color when AUTO is active. The editor includes renumbering features, which suggests it might be the one from the [Atari Assembler Editor](../../../Atari_Assembler_Editor/README.md).
 
@@ -21,7 +21,7 @@ R is a "remark", similar to the REM statement in BASIC, T is "type", the equival
 R:Draw a square in the center of the screen
 GR:4(DRAW 20; TURN 90)
 ```
-The 4 after the GR: is a looping construct which repeats the section in the (...) four times. This is similar to the [WSFN](../../WSFN/README.md) language, which had similar turtle graphics and looping structures.
+The 4 after the GR: is a looping construct which repeats the section in the (...) four times. This is similar to the [WSFN](../../../Languages/WSFN/README.md) language, which had similar turtle graphics and looping structures.
 
 There are several Atari Products related to PILOT:
 - PILOT Educators Package (CX405), package with cartridge, two cassette tapes and primer.

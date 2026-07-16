@@ -29,7 +29,7 @@ Tested with a Logitech Mouse USB. Might work with other mice.
 
 ## Device dependent source
 
-This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).
+This Source must be included into the [Base HID Driver](../../../../BaseHIDDriver/README.md).
 
 ```
 01000          .LI OFF

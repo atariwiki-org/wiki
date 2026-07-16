@@ -60,7 +60,7 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 - [Assembler_CODE](Tutorial/Assembler_CODE/README.md); TODO Create
 - [Plot_and_DrawTo_using_the_CIO_OS_ROM](Tutorial/Plot_and_DrawTo_using_the_CIO_OS_ROM/README.md); TODO Create
 - [Clear_Screen](Tutorial/Clear_Screen/README.md)
-- [Read_Keyboard](Tutorial/Read_Keyboard/README.md)
+- [Read_Keyboard](../../../Read_keyboard/README.md)
 - [Read_a_word_ie_Input_Command](Tutorial/Read_a_word_ie_Input_Command/README.md); TODO Create
 - [Loops](Tutorial/Loops/README.md)
 - Sound

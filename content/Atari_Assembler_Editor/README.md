@@ -7,7 +7,7 @@ Copyright (C) 1980 Atari, Inc. & Kathleen Ann O'Brien
 
 ### Background
 
-Atari hired Shepardson Microsystems to write [Atari_BASIC](../Atari_BASIC/README.md) for the 8-bit line. Shepardson developed it using a cross-compiler, but took the opportunity to begin writing their own assembler for the Atari platform as well. This was released by Atari in ROM cartridge form in 1980.
+Atari hired Shepardson Microsystems to write [Atari_BASIC](../Languages/BASIC/Atari_BASIC/README.md) for the 8-bit line. Shepardson developed it using a cross-compiler, but took the opportunity to begin writing their own assembler for the Atari platform as well. This was released by Atari in ROM cartridge form in 1980.
 
 Atari Assembler Editor shared many components with Atari BASIC, notably the screen editor which used the same line-number based system as BASIC. However, it added several editing commands, including a RENumber and DELete, which, perhaps surprisingly, could also be used to edit BASIC programs.
 

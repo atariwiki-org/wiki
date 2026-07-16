@@ -183,14 +183,14 @@ Atari BASIC Keywords
 21 - LOAD FILE ERROR
 
 ## Atari BASIC Course: An Invitation to Programming 1-3
-- [Course 1: An Invitation to Programming 1 - Fundamentals of BASIC Programming CX4101](../An_Invitation_to_Programming_1_CX4101/README.md)
-- [Course 2: An Invitation to Programming 2 - Writing Programs one and two CX4106](../An_Invitation_to_Programming_2_CX4106/README.md)
-- [Course 3: An Invitation to Programming 3 - Introduction to Sound and Graphics CX4117](../An_Invitation_to_Programming_3_CX4117/README.md)
+- [Course 1: An Invitation to Programming 1 - Fundamentals of BASIC Programming CX4101](../../../Companies/Atari/An_Invitation_To_Programming/An_Invitation_to_Programming_1_CX4101/README.md)
+- [Course 2: An Invitation to Programming 2 - Writing Programs one and two CX4106](../../../Companies/Atari/An_Invitation_To_Programming/An_Invitation_to_Programming_2_CX4106/README.md)
+- [Course 3: An Invitation to Programming 3 - Introduction to Sound and Graphics CX4117](../../../Companies/Atari/An_Invitation_To_Programming/An_Invitation_to_Programming_3_CX4117/README.md)
 
 ## Atari BASIC Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie fertig
-- [Kurs 1: Programmieren leicht gemacht-Lernen Sie BASIC mit Dagmar Berghoff-TXG4110](../Programmieren_leicht_gemacht_TXG4110/README.md)
+- [Kurs 1: Programmieren leicht gemacht-Lernen Sie BASIC mit Dagmar Berghoff-TXG4110](../../../Software/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)
 - [Kurs 2: Noch mehr BASIC-Lernen Sie BASIC mit Dagmar Berghoff-TXG 55007](../Noch_mehr_BASIC_TXG_55007/README.md)
-- [Kurs 3: BASIC für Fortgeschrittene-Lernen Sie BASIC mit Dagmar Berghoff](../BASIC_fuer_Fortgeschrittene/README.md)
+- [Kurs 3: BASIC für Fortgeschrittene-Lernen Sie BASIC mit Dagmar Berghoff](../../../BASIC_fuer_Fortgeschrittene/README.md)
 
 ## BASIC 1x1 des Programmierens - ein BASIC-Lehrgang, einstmals gesendet auf Radio DDR II in der Computersendung REM, Begleitmaterial veröffentlicht als Kassettenbox. Mit einer Programm-Kassette für ATARI 800XL.
 - [Programm_Kassette.atr](attachments/Programm_Kassette.atr)
@@ -207,7 +207,7 @@ Atari BASIC Keywords
 - [Atari_BASIC_Special_Clear_Screen](Examples/Atari_BASIC_Special_Clear_Screen/README.md) (german)
 - [BASIC_Fast_Stack_and_Fast_Jump](Examples/BASIC_Fast_Stack_and_Fast_Jump/README.md)
 - [Page_Flip_Routine_for_BASIC](Examples/Page_Flip_Routine_for_BASIC/README.md)
-- [RAM_Move_Routine_for_BASIC](Examples/RAM_Move_Routine_for_BASIC/README.md)
+- [RAM_Move_Routine_for_BASIC](../../../RAM_Move_Routine_for_Basic/README.md)
 - [BASIC_Program_Lister](Examples/BASIC_Program_Lister/README.md)
 - [UUDecoder](Examples/UUDecoder/README.md)
 - [Create_Data-Statements_from_binary_load_files](Examples/Create_Data-Statements_from_binary_load_files/README.md)
@@ -218,7 +218,7 @@ Atari BASIC Keywords
 - [BASIC_on-off_from_DOS_XL_commandline](../BASIC_on-off_from_DOS_XL_commandline/README.md)
 - [REV.B_TO_REV.C_CONVERTER.txt](attachments/REV.B_TO_REV.C_CONVERTER.txt) Atari BASIC Rev. B to Rev. C Converter as TXT file
 - [RevB2C.atr](attachments/RevB2C.atr) Atari BASIC Rev. B to Rev. C Converter as ATR-image
-- [Infoline](Examples/Infoline/README.md) Infoline for BASIC and ACTION!
+- [Infoline](../../../Infoline/README.md) Infoline for BASIC and ACTION!
 
 ## References
 - [Atari BASIC Article in Wikipedia](http://en.wikipedia.org/wiki/ATARI_BASIC)

@@ -5,7 +5,7 @@
 ## Cartridges
 - [Blueprint_of_ACTION!_Cart](../Blueprint_of_ACTION!_Cart/README.md)
 - [AtariMax_EXEPACKER_Files_with_bundled_DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
-- [ARGS_RS232_Cartridge](../ARGS_RS232_Cartridge/README.md) (deutsch)
+- [ARGS_RS232_Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (deutsch)
 - [Cartridges](../Cartridges/README.md)
 
 ## Controllers
@@ -31,8 +31,8 @@
 
 ## Disk Drives
 ### Atari Disk Drives
-- [Atari_810](../Atari_810/README.md)
-- [Atari_815](../Atari_815/README.md)
+- [Atari_810](Disk_Drives/Atari_810/README.md)
+- [Atari_815](Disk_Drives/Atari_815/README.md)
 - [ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION](../ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
 - [Atari_1050](../Atari_1050/README.md)
 - [Atari_XF551](../Atari_XF551/README.md)
@@ -42,14 +42,14 @@
 - [CompyShop_Speedy_Upgrades](../CompyShop_Speedy_Upgrades/README.md)
 - [Turbo1050_Upgrades](../Turbo1050_Upgrades/README.md)
 - [XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
-- [Floppy_2000](../Floppy_2000/README.md)
-- [HDI_Interface](../HDI_Interface/README.md) (aka Floppy 3000)
+- [Floppy_2000](Disk_Drives/Floppy_2000/README.md)
+- [HDI_Interface](Disk_Drives/HDI_Interface/README.md) (aka Floppy 3000)
 - [Indus_GT](../Indus_GT/README.md)
-** [Indus_GT_Schematics](../Indus_GT_Schematics/README.md) 
-** [Indus_GT_Field_Service_Manual](../Indus_GT_Field_Service_Manual/README.md) 
-** [Indus_GT_Firmware_ROM_Source](../Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
+** [Indus_GT_Schematics](../Indus_GT/Indus_GT_Schematics/README.md) 
+** [Indus_GT_Field_Service_Manual](../Indus_GT/Indus_GT_Field_Service_Manual/README.md) 
+** [Indus_GT_Firmware_ROM_Source](../Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
 - [ASTRA_2001](../ASTRA_2001/README.md)
-- [Percom_AT-88](../Percom_AT-88/README.md)
+- [Percom_AT-88](Disk_Drives/Percom_AT-88/README.md)
 ### Upgrades
 
 ## Interfaces

@@ -57,15 +57,15 @@ __Please take into account, that the DOS was modified by Kyan! It is not possibl
 - [KYAN PASCAL - A PROGRAMMING LANGUAGE](http://cerebro.xu.edu/~ryanr/atari/kyan.html)
 
 ### Errata
-- [Kyan Pascal Error $89 (137)](../Kyan_Pascal_Error_$89_137/README.md)
+- [Kyan Pascal Error $89 (137)](Kyan_Pascal_Error_$89_137/README.md)
 
 ### Examples
 
-- [Bitwise_AND](../Bitwise_AND/README.md)
-- [Invert_Char_at_X.Y_Position](../Invert_Char_at_X.Y_Position/README.md)
-- [CIO_Library_for_Kyan_Pascal](../CIO_Library_for_Kyan_Pascal/README.md)
-- [CIO_Library_with_Note_and_Point_for_Kyan_Pascal](../CIO_Library_with_Note_and_Point_for_Kyan_Pascal/README.md)
-- [HEAD_Tool](../HEAD_Tool/README.md)
+- [Bitwise_AND](../../../Bitwise_AND/README.md)
+- [Invert_Char_at_X.Y_Position](../../../Languages/Assembler/Examples/Invert_Char_at_X.Y_Position/README.md)
+- [CIO_Library_for_Kyan_Pascal](../../../Languages/Pascal/Kyan_Pascal/Examples/CIO_Library_for_Kyan_Pascal/README.md)
+- [CIO_Library_with_Note_and_Point_for_Kyan_Pascal](../../../Languages/Pascal/Kyan_Pascal/Examples/CIO_Library_with_NOTE_and_POINT_for_Kyan_Pascal/README.md)
+- [HEAD_Tool](../../../HEAD_Tool/README.md)
 
 ### External Information
 
