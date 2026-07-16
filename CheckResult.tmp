@@ -1,18 +1,6 @@
-\U0001f62d Found 693 issues in the following files:
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\6502_Assembly_Code\README.md', line 80
+\U0001f62d Found 689 issues in the following files:
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\6502_Assembly_Code\README.md', line 78
 ../BASIC_on-off_from_DOS_XL_commandline/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\6502_Assembly_Code\README.md', line 159
-attachments/DEC-HEX+255.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\6502_Assembly_Code\README.md', line 163
-attachments/6502+Assembly+Code+in+Sublime+Text.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\6502_Assembly_Code\README.md', line 167
-attachments/Instruction+Set+%28Operation+Codes%29-1.png is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\6502_Assembly_Code\README.md', line 168
-attachments/Instruction+Set+%28Operation+Codes%29-2.png is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\APPMHI\README.md', line 14
 ../MEMTOP/README.md is broken.
@@ -124,6 +112,9 @@ attachments/All_about_Cassette_Tapes_1979.pdf is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Articles\README.md', line 128
 ../The!Card/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Articles\README.md', line 183
+../Applications/README.md is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Articles\README.md', line 187
 ../The_Atari_Accountant_Series/README.md is broken.
@@ -545,125 +536,11 @@ attachments/Vortrag_Wassenberg_PowerPoint_2004_Mac.ppt is broken.
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\AtariCalculator-VCFe14\README.md', line 9
 attachments/Vortrag_Wassenberg.pdf is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\AtariCX85\README.md', line 5
-attachments/AtariCX85%2FAtari-CX85.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\AtariCX85\README.md', line 12
-attachments/Atari_CX85_Numerical_Keypad_Technical_Reference_Notes_1_page.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\AtariCX85\README.md', line 14
-attachments/CX+85+Field+Service+Manual.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\AtariCX85\README.md', line 25
-../CX85_Keyboard_Handler/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\AtariCX85\README.md', line 42
-attachments/AtariCX85%2FCX85_1.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\AtariCX85\README.md', line 45
-attachments/AtariCX85%2FCX85_2.jpg is broken.
-
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Ataris_Programmierhilfen-Diskette_Nr.1\README.md', line 10
 attachments/Ataris+Programmierhilfen-Diskette+Nr.1.jpg is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Ataris_Programmierhilfen-Diskette_Nr.2\README.md', line 8
 attachments/Ataris+Programmierhilfen-Diskette+Nr.2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 240
-../$E459/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 242
-../$0300/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 244
-../$0301/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 246
-../$0302/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 248
-../$0303/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 265
-../$0304/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 265
-../$0305/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 267
-../$0306/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 269
-../$0308/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 269
-../$0309/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 271
-../$030A/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 271
-../$030B/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 322
-../$02EA/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_400-800_Stand_Alone_System_Test\README.md', line 10
-attachments/Atari+400-800+Stand+Alone+System+Test.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_822_Thermal_Printer\README.md', line 6
-attachments/atari_822_operators_manual.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 16
-../Atari_Macro_Assembler/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 23
-attachments/Assembler+Editor+-+Revision+A.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 26
-attachments/Assembler+Editor+-+Revision+B.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 60
-attachments/ATARI_Assembler_Editor_User-s_Manual-OCR.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 61
-attachments/ATARI_Assembler_Editor_Users_Manual.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 63
-attachments/Atari_Assembler_Editor_User_s_Manual_Errata.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 73
-attachments/Der+Atari+Assembler.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 88
-attachments/Der+Atari+Assembler+Cover.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 97
-attachments/Assembler+Editor+Brown+front.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 120
-attachments/Change+Editor+Color.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 332
-attachments/Instruction+Set+%28Operation+Codes%29-1.png is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 333
-attachments/Instruction+Set+%28Operation+Codes%29-2.png is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 346
-attachments/Assembler+Editor+Error+Codes+001-139.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 349
-attachments/Assembler+Editor+Error+Codes+140-165.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Assembler_Editor\README.md', line 352
-attachments/Error+Codes+2-171.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Calculator\README.md', line 33
-attachments/Atari+Calculator+description.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Calculator\README.md', line 51
-attachments/Atari_Calculator_Manual_Optimized.pdf is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_Diagnostic_Test_Tape\README.md', line 11
 attachments/Page+23.png is broken.
@@ -692,248 +569,14 @@ attachments/Atari+Educational+System+Lesson+Cassettes-Kay+Savetz2.jpg is broken.
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Educational_System_Lesson_Cassettes\README.md', line 95
 attachments/Business+Communications+CX6010-Principles+of+Accounting+CX6007.jpg is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Energie\README.md', line 15
-attachments/Atari_Energie_Dual_Audio.mp3 is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Energie\README.md', line 21
-attachments/Atari_Energie_manual.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Energy_Czar\README.md', line 16
-attachments/Atari_Energy_Czar_CX4121-2.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Grafieken\README.md', line 26
-attachments/Atari_Grafieken_manual.pdf is broken.
-
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Graph_It_I_and_II\README.md', line 104
 attachments/Graph_It_CX4109_Print_Version.pdf is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Graph_It_I_and_II\README.md', line 130
 attachments/Graph+It-Intro.jpg is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Home_Computer_Audio_Training\README.md', line 8
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Home_Computer_Audio_Training\README.md', line 6
 attachments/Atari_Audio_Training.mp3 is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Home_Finance\README.md', line 15
-attachments/Personal+Finance.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Home_Finance\README.md', line 19
-attachments/ROM+Cartridges.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Home_Finance\README.md', line 22
-attachments/Atari+Home+Finance-Fall+1980.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Home_Finance\README.md', line 26
-attachments/Checkbook+CXL8001-2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Home_Finance\README.md', line 29
-attachments/Checkbook+CXL8001-3.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Home_Finance\README.md', line 32
-attachments/Checkbook+CXL8001-4.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Home_Finance\README.md', line 35
-attachments/Checkbook+CXL8001-5.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Investment_Analysis_Series\README.md', line 16
-attachments/Atari+Investment+Analysis+Series+1.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Investment_Analysis_Series\README.md', line 19
-attachments/Atari+Investment+Analysis+Series+2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Investment_Analysis_Series\README.md', line 22
-attachments/Atari+Investment+Analysis+Series+3.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Investment_Analysis_Series\README.md', line 25
-attachments/Atari+Investment+Analysis+Series+4.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Kingdom\README.md', line 14
-attachments/Atari_Kingdom-Dual_Track.mp4 is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 32
-attachments/Atari_Personal_Finance_Management_System-Instruction_Manual.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 36
-attachments/Manual+Cover.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 44
-attachments/Binder+7.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 47
-attachments/Binder+1.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 53
-attachments/Back+2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 62
-attachments/Seperators+2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 78
-attachments/2-Main+Menu.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 81
-attachments/2-Main+Menu__.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 87
-attachments/4-Insert+the+new+data+diskette.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 90
-attachments/5-Insert+the+data+diskette.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 93
-attachments/6-Insert+the+other+system+diskette.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 96
-attachments/7-Record+Keeper+Functions.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 99
-attachments/8-Budget+Manager+Menu.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 102
-attachments/9-Checkbook+Balancer.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 108
-attachments/10-Checkbook+Balancer+Menu.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 111
-attachments/11-Statement+Balance.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 114
-attachments/12-Budget+Analyzer+Menu.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 117
-attachments/13-Forecaster+Method+Menu.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 120
-attachments/14-End+of+Personal+Financial+Management+System.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 134
-attachments/Advertise+2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 135
-attachments/Advertise+3.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 138
-attachments/Mid+1982-3.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 141
-attachments/Advertise+4.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 144
-attachments/Advertise+6.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Personal_Financial_Management_System\README.md', line 147
-attachments/Advertise+1.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Program_Exchange_APX_Software\README.md', line 18
-attachments/APX_Catalog_Summer_1982.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Proofreader\README.md', line 18
-attachments/Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Print-OCR.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Schreiber\README.md', line 95
-attachments/ATARI_Schreiber_1985_Handbuch.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Schreiber\README.md', line 96
-attachments/ATARI_Schreiber_1985_Referenzbeschreibung.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Schreiber\README.md', line 123
-attachments/Atari_Schreiber-Boxhu%CC%88lle-RXG_8036.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Schreiber\README.md', line 144
-attachments/Atari+Schreiber+Diskette.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Schreiber\README.md', line 147
-attachments/Atari_Schreiber_Diskette.png is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation\README.md', line 14
-attachments/Atari_CX4123-Scram-A_Nuclear_Power_Plant_Simulation-Users_Manual.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation\README.md', line 28
-attachments/Scram+box.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Speed_Reading\README.md', line 22
-attachments/Atari_Speed_Reading_CX4126_Workbook.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Statistics_I\README.md', line 51
-attachments/Statistics_I_CX4103_Print_Version.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_TELELINK_I\README.md', line 19
-attachments/Telelink+I.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_TELELINK_II\README.md', line 18
-attachments/Telelink+II-1.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_TELELINK_II\README.md', line 21
-attachments/Telelink+II-2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_The_Dow_Jones_Investment_Evaluator\README.md', line 14
-attachments/Dow+Jones+Investment+Evaluator+1.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_The_Dow_Jones_Investment_Evaluator\README.md', line 17
-attachments/Dow+Jones+Investment+Evaluator+2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Timewise\README.md', line 23
-attachments/Insert+Data+Disk.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Timewise\README.md', line 26
-attachments/Main+Menu.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Timewise\README.md', line 32
-attachments/Monthly+Calendar.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Timewise\README.md', line 36
-attachments/Add+New+Appointments.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Timewise\README.md', line 39
-attachments/Inquire-Update+Appointments.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Timewise\README.md', line 43
-attachments/File+Maintenance.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Timewise\README.md', line 46
-attachments/ad+1.png is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Timewise\README.md', line 49
-attachments/ad+2.png is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Writer\README.md', line 46
-attachments/Atari_Writer__1985_Atari_Side_A.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Writer\README.md', line 47
-attachments/Atari_Writer__1985_Atari_Side_B.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Writer\README.md', line 48
-attachments/Atari_Writer__A.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Writer\README.md', line 49
-attachments/Atari_Writer__B.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Writer\README.md', line 66
-attachments/AtariWriter_Word_Processing.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Writer\README.md', line 69
-attachments/AtariWriter_Plus_Owner_s_Manual.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_Writer\README.md', line 72
-attachments/AtariWriter_80_-_Manual.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Atari_XF551\README.md', line 7
-attachments/Atari_Diskettenlaufwerk_XF551.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\ATARI_XM301\README.md', line 6
-attachments/XM301_Owners_Manual.PDF is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Aufgepasst-Streit_der_Kaefer\README.md', line 16
-attachments/Aufgepasst-TXG_9510-Seite_A.flac is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Aufgepasst-Streit_der_Kaefer\README.md', line 17
-attachments/Streit_der_Kaefer-TXG_9510-Seite_B.flac is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Aufgepasst-Streit_der_Kaefer\README.md', line 20
-attachments/Aufgepasst-Streit_der_Kaefer_TXG_9510.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Aufgepasst-Streit_der_Kaefer\README.md', line 35
-attachments/Streit_der_Kaefer-TXG_9510-Seite+B.jpg is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\BASICODE\README.md', line 28
 attachments/atari_basicode.pdf is broken.
@@ -983,22 +626,16 @@ attachments/BASIC+fu%CC%88r+Fortgeschrittene.jpg is broken.
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Basic_Psychology_CX6011\README.md', line 16
 attachments/Basic+Psychology+CX6011.jpg is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Basic_Sociology_CX6005\README.md', line 14
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Basic_Sociology_CX6005\README.md', line 13
 attachments/Basic+Sociology+CX6005.jpg is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Beeil_Dich-Verdreht\README.md', line 7
 attachments/Beeil_Dich-Verdreht_TXG_9501.pdf is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Biorhythmus\README.md', line 16
-attachments/Cover+1-D.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Biorhythmus\README.md', line 19
-attachments/Cover+2-D.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Buchstaben_Lotterie\README.md', line 38
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Buchstaben_Lotterie\README.md', line 35
 attachments/Buchstabenlotterie-D7-DXG-5705.pdf is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Buchstaben_Lotterie\README.md', line 44
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Buchstaben_Lotterie\README.md', line 41
 attachments/Buchstabenlotterie+-+D7+-+DXG+-+5705+-+D7.jpg is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CHIP-Special\README.md', line 8
@@ -1052,8 +689,311 @@ attachments/APX-20051_Cosmatic_Atari_Development_Package.pdf is broken.
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATAMON_DXG_5724\README.md', line 12
 attachments/ATA_MON_v1.3_1983AtariDE.atr is broken.
 
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\AtariCX85\README.md', line 5
+attachments/AtariCX85%2FAtari-CX85.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\AtariCX85\README.md', line 12
+attachments/Atari_CX85_Numerical_Keypad_Technical_Reference_Notes_1_page.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\AtariCX85\README.md', line 14
+attachments/CX+85+Field+Service+Manual.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\AtariCX85\README.md', line 25
+../CX85_Keyboard_Handler/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\AtariCX85\README.md', line 42
+attachments/AtariCX85%2FCX85_1.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\AtariCX85\README.md', line 45
+attachments/AtariCX85%2FCX85_2.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 240
+../$E459/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 242
+../$0300/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 244
+../$0301/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 246
+../$0302/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 248
+../$0303/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 265
+../$0304/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 265
+../$0305/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 267
+../$0306/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 269
+../$0308/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 269
+../$0309/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 271
+../$030A/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 271
+../$030B/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION\README.md', line 322
+../$02EA/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_400-800_Stand_Alone_System_Test\README.md', line 10
+attachments/Atari+400-800+Stand+Alone+System+Test.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_822_Thermal_Printer\README.md', line 6
+attachments/atari_822_operators_manual.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 16
+../Atari_Macro_Assembler/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 23
+attachments/Assembler+Editor+-+Revision+A.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 26
+attachments/Assembler+Editor+-+Revision+B.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 60
+attachments/ATARI_Assembler_Editor_User-s_Manual-OCR.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 61
+attachments/ATARI_Assembler_Editor_Users_Manual.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 63
+attachments/Atari_Assembler_Editor_User_s_Manual_Errata.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 73
+attachments/Der+Atari+Assembler.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 88
+attachments/Der+Atari+Assembler+Cover.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 97
+attachments/Assembler+Editor+Brown+front.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 120
+attachments/Change+Editor+Color.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 332
+attachments/Instruction+Set+%28Operation+Codes%29-1.png is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 333
+attachments/Instruction+Set+%28Operation+Codes%29-2.png is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 346
+attachments/Assembler+Editor+Error+Codes+001-139.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 349
+attachments/Assembler+Editor+Error+Codes+140-165.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Assembler_Editor\README.md', line 352
+attachments/Error+Codes+2-171.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Calculator\README.md', line 33
+attachments/Atari+Calculator+description.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Calculator\README.md', line 51
+attachments/Atari_Calculator_Manual_Optimized.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Energie\README.md', line 13
+attachments/Atari_Energie_Dual_Audio.mp3 is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Energie\README.md', line 19
+attachments/Atari_Energie_manual.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Energy_Czar\README.md', line 16
+attachments/Atari_Energy_Czar_CX4121-2.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Grafieken\README.md', line 26
+attachments/Atari_Grafieken_manual.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Home_Finance\README.md', line 15
+attachments/Personal+Finance.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Home_Finance\README.md', line 19
+attachments/ROM+Cartridges.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Home_Finance\README.md', line 22
+attachments/Atari+Home+Finance-Fall+1980.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Home_Finance\README.md', line 26
+attachments/Checkbook+CXL8001-2.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Home_Finance\README.md', line 29
+attachments/Checkbook+CXL8001-3.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Home_Finance\README.md', line 32
+attachments/Checkbook+CXL8001-4.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Home_Finance\README.md', line 35
+attachments/Checkbook+CXL8001-5.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Investment_Analysis_Series\README.md', line 17
+attachments/Atari+Investment+Analysis+Series+1.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Investment_Analysis_Series\README.md', line 20
+attachments/Atari+Investment+Analysis+Series+2.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Investment_Analysis_Series\README.md', line 23
+attachments/Atari+Investment+Analysis+Series+3.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Investment_Analysis_Series\README.md', line 26
+attachments/Atari+Investment+Analysis+Series+4.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Kingdom\README.md', line 14
+attachments/Atari_Kingdom-Dual_Track.mp4 is broken.
+
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Pascal_APX-20102\README.md', line 25
 attachments/APX_Atari_Pascal_Manual.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 32
+attachments/Atari_Personal_Finance_Management_System-Instruction_Manual.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 36
+attachments/Manual+Cover.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 44
+attachments/Binder+7.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 47
+attachments/Binder+1.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 53
+attachments/Back+2.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 62
+attachments/Seperators+2.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 78
+attachments/2-Main+Menu.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 81
+attachments/2-Main+Menu__.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 87
+attachments/4-Insert+the+new+data+diskette.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 90
+attachments/5-Insert+the+data+diskette.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 93
+attachments/6-Insert+the+other+system+diskette.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 96
+attachments/7-Record+Keeper+Functions.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 99
+attachments/8-Budget+Manager+Menu.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 102
+attachments/9-Checkbook+Balancer.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 108
+attachments/10-Checkbook+Balancer+Menu.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 111
+attachments/11-Statement+Balance.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 114
+attachments/12-Budget+Analyzer+Menu.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 117
+attachments/13-Forecaster+Method+Menu.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 120
+attachments/14-End+of+Personal+Financial+Management+System.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 134
+attachments/Advertise+2.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 135
+attachments/Advertise+3.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 138
+attachments/Mid+1982-3.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 141
+attachments/Advertise+4.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 144
+attachments/Advertise+6.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Personal_Financial_Management_System\README.md', line 147
+attachments/Advertise+1.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Program_Exchange_APX_Software\README.md', line 16
+attachments/APX_Catalog_Summer_1982.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Proofreader\README.md', line 18
+attachments/Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Print-OCR.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Schreiber\README.md', line 95
+attachments/ATARI_Schreiber_1985_Handbuch.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Schreiber\README.md', line 96
+attachments/ATARI_Schreiber_1985_Referenzbeschreibung.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Schreiber\README.md', line 123
+attachments/Atari_Schreiber-Boxhu%CC%88lle-RXG_8036.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Schreiber\README.md', line 144
+attachments/Atari+Schreiber+Diskette.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Schreiber\README.md', line 147
+attachments/Atari_Schreiber_Diskette.png is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation\README.md', line 11
+attachments/Atari_CX4123-Scram-A_Nuclear_Power_Plant_Simulation-Users_Manual.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation\README.md', line 25
+attachments/Scram+box.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Speed_Reading\README.md', line 23
+attachments/Atari_Speed_Reading_CX4126_Workbook.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Statistics_I\README.md', line 48
+attachments/Statistics_I_CX4103_Print_Version.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_TELELINK_I\README.md', line 19
+attachments/Telelink+I.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_The_Dow_Jones_Investment_Evaluator\README.md', line 14
+attachments/Dow+Jones+Investment+Evaluator+1.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_The_Dow_Jones_Investment_Evaluator\README.md', line 17
+attachments/Dow+Jones+Investment+Evaluator+2.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Timewise\README.md', line 22
+attachments/Insert+Data+Disk.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Timewise\README.md', line 25
+attachments/Main+Menu.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Timewise\README.md', line 31
+attachments/Monthly+Calendar.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Timewise\README.md', line 35
+attachments/Add+New+Appointments.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Timewise\README.md', line 38
+attachments/Inquire-Update+Appointments.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Timewise\README.md', line 42
+attachments/File+Maintenance.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Timewise\README.md', line 45
+attachments/ad+1.png is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Timewise\README.md', line 48
+attachments/ad+2.png is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Word_Processor\README.md', line 13
 attachments/Diskette+Labels.jpg is broken.
@@ -1094,6 +1034,51 @@ attachments/Atari+Word+Processor-Training+Manual.jpg is broken.
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Word_Processor\README.md', line 91
 attachments/Accessories+Required.jpg is broken.
 
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Writer\README.md', line 45
+attachments/Atari_Writer__1985_Atari_Side_A.atr is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Writer\README.md', line 46
+attachments/Atari_Writer__1985_Atari_Side_B.atr is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Writer\README.md', line 47
+attachments/Atari_Writer__A.atr is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Writer\README.md', line 48
+attachments/Atari_Writer__B.atr is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Writer\README.md', line 65
+attachments/AtariWriter_Word_Processing.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Writer\README.md', line 68
+attachments/AtariWriter_Plus_Owner_s_Manual.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Writer\README.md', line 71
+attachments/AtariWriter_80_-_Manual.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_XF551\README.md', line 7
+attachments/Atari_Diskettenlaufwerk_XF551.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\ATARI_XM301\README.md', line 6
+attachments/XM301_Owners_Manual.PDF is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Aufgepasst-Streit_der_Kaefer\README.md', line 16
+attachments/Aufgepasst-TXG_9510-Seite_A.flac is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Aufgepasst-Streit_der_Kaefer\README.md', line 17
+attachments/Streit_der_Kaefer-TXG_9510-Seite_B.flac is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Aufgepasst-Streit_der_Kaefer\README.md', line 20
+attachments/Aufgepasst-Streit_der_Kaefer_TXG_9510.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Aufgepasst-Streit_der_Kaefer\README.md', line 35
+attachments/Streit_der_Kaefer-TXG_9510-Seite+B.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Biorhythmus\README.md', line 16
+attachments/Cover+1-D.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Biorhythmus\README.md', line 19
+attachments/Cover+2-D.jpg is broken.
+
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Bond_Analysis\README.md', line 19
 attachments/Bond_Analysis_CX8106_Version_2.pdf is broken.
 
@@ -1102,6 +1087,33 @@ attachments/Atari-Bundesligatabellen_DXG_55005.pdf is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Business_Communications_CX6010\README.md', line 13
 attachments/Business+Communications+CX6010.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Conversational_FRENCH_CX4119\README.md', line 27
+attachments/ATARI_Conversational_French.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Conversational_FRENCH_CX4119\README.md', line 53
+attachments/ATARI+Conversational+FRENCH+CX4119-2.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Conversational_GERMAN_CX4118\README.md', line 29
+attachments/ATARI_Conversational_German.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Conversational_GERMAN_CX4118\README.md', line 55
+attachments/ATARI+Conversational+GERMAN+CX4118-6.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Conversational_ITALIAN_CX4125\README.md', line 29
+attachments/ATARI_Conversational_Italian.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Conversational_ITALIAN_CX4125\README.md', line 55
+attachments/ATARI+Conversational+ITALIAN+CX4125-2.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Conversational_SPANISH_CX4120\README.md', line 29
+attachments/ATARI_Conversational_Spanish_CX4120.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Conversational_SPANISH_CX4120\README.md', line 55
+attachments/ATARI+Conversational+SPANISH+CX4120-2.jpg is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Counseling_Procedures_CX6006\README.md', line 6
+attachments/Counseling+Procedures+CX6006.jpg is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\CPS_SuperSALT\README.md', line 7
 attachments/Super_SALT-1983.rom is broken.
@@ -1130,6 +1142,9 @@ attachments/Installationsmenu+AUSTRO.PHONE.png is broken.
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\AUSTRO.COM\AUSTRO.TEXT\README.md', line 46
 attachments/Installationsmenu+AUSTRO.TEXT.png is broken.
 
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Bernhard_Engl\1050_Turbo\README.md', line 11
+../../media/1050_Turbo/attachments/1050_Turbo_Manual.pdf is broken.
+
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\BIBO-DOS\README.md', line 16
 attachments/BiboDos+5.4RN+%28en%29.jpg is broken.
 
@@ -1138,6 +1153,42 @@ attachments/BiboDos+5.4RF+%28de%29.jpg is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\BIBO_Assembler\README.md', line 6
 ../BiboAssembler/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 25
+../ICHID/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 30
+../ICCOM/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 36
+../ICSTAT/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 41
+../ICBAL/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 41
+../ICBAH/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 48
+../ICBLL/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 48
+../ICBLH/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_Displaylist-Interrupts\README.md', line 27
+../VDSLST/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_Displaylist-Interrupts\README.md', line 27
+../NMIEN/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_Displaylist-Interrupts\README.md', line 29
+../WSYNC/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\Speedy_1050_Upgrades\README.md', line 4
+attachments/Speedy1050_Anwenderhandbuch_und_ROM_Listing.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\CompyShop\Speedy_1050_Upgrades\README.md', line 17
+Drive___Display_configuration/README.md is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Dorsett Educational Systems\Dorsett_Educational_System_Lesson_Cassettes\README.md', line 23
 Reading-Mathematics_MR/README.md is broken.
@@ -1231,69 +1282,6 @@ attachments/MAC-65_ToolKit_Manual.pdf is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Computer_Chess_CXL_4009\README.md', line 6
 attachments/ComputerChess_front+CXL+4009.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 25
-../ICHID/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 30
-../ICCOM/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 36
-../ICSTAT/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 41
-../ICBAL/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 41
-../ICBAH/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 48
-../ICBLL/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_CIO_und_DOS\README.md', line 48
-../ICBLH/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_Displaylist-Interrupts\README.md', line 27
-../VDSLST/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_Displaylist-Interrupts\README.md', line 27
-../NMIEN/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\CSM_Assembler_Course\CSM-Assembler_Kurs_-_Displaylist-Interrupts\README.md', line 29
-../WSYNC/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\Speedy_1050_Upgrades\README.md', line 7
-attachments/Speedy1050_Anwenderhandbuch_und_ROM_Listing.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\CompyShop\Speedy_1050_Upgrades\README.md', line 20
-Drive___Display_configuration/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Conversational_FRENCH_CX4119\README.md', line 29
-attachments/ATARI_Conversational_French.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Conversational_FRENCH_CX4119\README.md', line 55
-attachments/ATARI+Conversational+FRENCH+CX4119-2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Conversational_GERMAN_CX4118\README.md', line 29
-attachments/ATARI_Conversational_German.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Conversational_GERMAN_CX4118\README.md', line 55
-attachments/ATARI+Conversational+GERMAN+CX4118-6.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Conversational_ITALIAN_CX4125\README.md', line 29
-attachments/ATARI_Conversational_Italian.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Conversational_ITALIAN_CX4125\README.md', line 55
-attachments/ATARI+Conversational+ITALIAN+CX4125-2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Conversational_SPANISH_CX4120\README.md', line 29
-attachments/ATARI_Conversational_Spanish_CX4120.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Conversational_SPANISH_CX4120\README.md', line 55
-attachments/ATARI+Conversational+SPANISH+CX4120-2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Counseling_Procedures_CX6006\README.md', line 6
-attachments/Counseling+Procedures+CX6006.jpg is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Cygnus_X1\README.md', line 15
 attachments/Cygnus_XI_cass+2_.jpg is broken.
@@ -1415,25 +1403,25 @@ attachments/DATASM+05_.jpg is broken.
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Display_list_instruction_table\README.md', line 60
 ../Table_of_Modes_and_Screen_Format/README.md is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 26
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 23
 ../Atari_DOS_II_2.0S/README.md is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 27
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 24
 ../Atari_DOS_2.5/README.md is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 29
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 26
 ../BW-DOS/README.md is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 31
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 28
 ../OSS_A__2/README.md is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 32
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 29
 ../Real.DOS/README.md is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 34
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 31
 ../SpartaDOS_X/README.md is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 35
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\README.md', line 32
 ../TTDOS/README.md is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\DOS\Atari_DOS_2\README.md', line 29

@@ -98,7 +98,7 @@ title: Articles
 - [Atari_1030_Modem_with_ModemLink_Telecommunications_Program](../Companies/Atari/Atari_1030_Modem_with_ModemLink_Telecommunications_Program/README.md)
 - [ATARI_XM301](../Companies/Atari/ATARI_XM301/README.md)
 - [ATARI_SX212](../ATARI_SX212/README.md)
-- [Atari SX212 Modem](../Atari_SX212_Modem/README.md)
+- [Atari SX212 Modem](../Companies/Atari/Atari_SX212_Modem/README.md)
 
 ## Interface
 - [ATARI_850](../ATARI_850/README.md)
@@ -187,7 +187,7 @@ title: Articles
 ##[The_Atari_Accountant_Series](../The_Atari_Accountant_Series/README.md) 
 ##[The Bookkeeper CX414](../The_Bookkeeper/README.md) 
 ##[The_Home_Filing_Manager](../The_Home_Filing_Manager/README.md) 
-##[Atari Home Accounting System](../Atari_Home_Accounting_System/README.md) 
+##[Atari Home Accounting System](../Companies/Atari/Atari_Home_Accounting_System/README.md) 
 
 *Calculation & Graphics
 ##[Atari_Calculator](../Companies/Atari/Atari_Calculator/README.md) 
@@ -198,10 +198,10 @@ title: Articles
 ###[Mortgage_and_Loan_Analysis](../Mortgage_and_Loan_Analysis/README.md) 
 ###[Stock_Analysis](../Stock_Analysis/README.md) 
 ###[Stock_Charting](../Stock_Charting/README.md) 
-##[Atari_Personal_Financial_Management_System](../Atari_Personal_Financial_Management_System/README.md) 
+##[Atari_Personal_Financial_Management_System](../Companies/Atari/Atari_Personal_Financial_Management_System/README.md) 
 ##[Atari Rechner Simulation mit UPN](../Atari_Rechner_Simulation_mit_UPN/README.md) 
-##[Atari Silent Butler (DX5082)](../Atari_Silent_Butler/README.md) 
-##[Atari Statistics I (CX4103)](../Atari_Statistics_I/README.md) 
+##[Atari Silent Butler (DX5082)](../Companies/Atari/Atari_Silent_Butler/README.md) 
+##[Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md) 
 ##[The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
 ##[Enhancements_to_Graph_It](../Enhancements_to_Graph_It/README.md) 
 ##[Family_Budgets](../Family_Budgets/README.md) 
@@ -241,8 +241,8 @@ title: Articles
 ##[Galaxian_CXL4024](../Galaxian_CXL4024/README.md) 
 
 *Learning
-##[Atari Speed Reading (CX4126)](../Atari_Speed_Reading/README.md) 
-##[Atari Touch Typing (CX4110)](../Atari_Touch_Typing/README.md) 
+##[Atari Speed Reading (CX4126)](../Companies/Atari/Atari_Speed_Reading/README.md) 
+##[Atari Touch Typing (CX4110)](../Companies/Atari/Atari_Touch_Typing/README.md) 
 ##[Conversational FRENCH (CX4119)](../Companies/Atari/Conversational_FRENCH_CX4119/README.md) 
 ##[Conversational_GERMAN_CX4118](../Companies/Atari/Conversational_GERMAN_CX4118/README.md) 
 ##[Conversational_ITALIAN_CX4125](../Companies/Atari/Conversational_ITALIAN_CX4125/README.md) 
@@ -264,8 +264,8 @@ title: Articles
 ##[AUSTRO.PHONE](../Companies/AUSTRO.COM/AUSTRO.PHONE/README.md) 
 
 *Simulation
-##[Atari Energy Czar CX4121](../Atari_Energy_Czar/README.md) 
-##[Atari SCRAM - A Nuclear Power Plant Simulation CX4123 (Basic) by Chris Crawford](../Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/README.md) 
+##[Atari Energy Czar CX4121](../Companies/Atari/Atari_Energy_Czar/README.md) 
+##[Atari SCRAM - A Nuclear Power Plant Simulation CX4123 (Basic) by Chris Crawford](../Companies/Atari/Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/README.md) 
 ##[Atari Kingdom CX4102](../Companies/Atari/Atari_Kingdom/README.md) 
 ##[Atari Kingdom cassette-Dual Track with voice, music and data](attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10
 
@@ -285,8 +285,8 @@ title: Articles
 *Word Processing
 ##[Atari Word Processor (CX404) and Atari Word Processor Demonstration Data Kit (CX8128)](../Companies/Atari/Atari_Word_Processor/README.md) 
 ##[Atari Writer 8036](../Companies/Atari/Atari_Writer/README.md) 
-##[Atari Proofreader (AX2033)](../Atari_Proofreader/README.md) 
-##[Atari Schreiber (RXG/DXG 8036)](../Atari_Schreiber/README.md) 
+##[Atari Proofreader (AX2033)](../Companies/Atari/Atari_Proofreader/README.md) 
+##[Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Schreiber/README.md) 
 ##[The_Writer's_Tool](../The_Writer's_Tool/README.md) 
 ##[AUSTRO.TEXT](../Companies/AUSTRO.COM/AUSTRO.TEXT/README.md) 
 
@@ -299,7 +299,7 @@ title: Articles
 - [Atari Learning System Software](../Companies/Atari/Atari_Learning_System_Software/README.md)
 
 ## Atari Program Exchange (APX) Software
-- [Atari Program Exchange (APX) Software](../Atari_Program_Exchange_APX_Software/README.md)
+- [Atari Program Exchange (APX) Software](../Companies/Atari/Atari_Program_Exchange_APX_Software/README.md)
 
 ## ATARI Cartridge Serial Numbers
 - [Atari Cartridge Serial Numbers](../Companies/Atari/ATARI_Cartridge_Serial_Numbers/README.md)
@@ -374,7 +374,7 @@ title: Articles
 - Business
 ##[Terminkalender](../Terminkalender/README.md) 
 ##[Buchhaltung](../Buchhaltung/README.md) 
-##[Atari Statistics I (CX4103)](../Atari_Statistics_I/README.md) 
+##[Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md) 
 ##[Graph It II](../Graph_It_II/README.md) 
 ##[Zinsen_und_Tilgung](../Zinsen_und_Tilgung/README.md) 
 ##[Familien_Finanzen](../Familien_Finanzen/README.md) 
@@ -435,21 +435,21 @@ title: Articles
 ##[Schloss_des_Grauens](../Schloss_des_Grauens/README.md) 
 
 - Spielend lernen mit Atari-Programmen
-##[Aufgepasst-Streit der Käfer](../Aufgepasst-Streit_der_Kaefer/README.md) 
+##[Aufgepasst-Streit der Käfer](../Companies/Atari/Aufgepasst-Streit_der_Kaefer/README.md) 
 ##[Beeil_Dich-Verdreht](../Beeil_Dich-Verdreht/README.md) 
 ##[Bonbonglas-Chaos](../Bonbonglas-Chaos/README.md) 
 ##[Golf-Balkenrechnen](../Golf-Balkenrechnen/README.md) 
 ##[Schluck / Richtungspfeile TXG 9502](../Schluck-Richtungspfeile/README.md) 
 ##[Ufos-Blitzschnell](../Ufos-Blitzschnell/README.md) 
 ##[Himmel Schreiber (RX8059, DXG 5704)](../Companies/Atari/Himmel_Schreiber/README.md) 
-##[Buchstaben_Lotterie](../Buchstaben_Lotterie/README.md) 
+##[Buchstabenlotterie - DXG 5705 ; Original: unreleased Milliken game 'Pop'N Spell' (RX8058)](../Buchstaben_Lotterie/README.md) 
 
 - Textverarbeitung
-##[Atari Schreiber (RXG/DXG 8036)](../Atari_Schreiber/README.md) 
+##[Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Schreiber/README.md) 
 ##[Programm_Text_Editor](../Programm_Text_Editor/README.md) 
 
 - Unterhaltung
-##[Biorhythmus](../Biorhythmus/README.md) 
+##[Biorhythmus](../Companies/Atari/Biorhythmus/README.md) 
 ##[Sprachbox DXG5721](../Sprachbox/README.md) 
 ##[Atari Super Biorhythmus](../Super_Biorhythmus/README.md) 
 
@@ -521,7 +521,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 
 - Games
 ##[Atari Compilation - (Cassette: TX 9043)](../Atari_Compilation/README.md) 
-##[Black Lamp (TX 9049)](../Black_Lamp/README.md) 
+##[Black Lamp (TX 9049)](../Companies/Atari/Black_Lamp/README.md) 
 ##[Chess (cassette UKC1004)](../Companies/Atari/Chess/README.md) 
 ##[Compilation A (TXP7100)](../Companies/Atari/Compilation_A/README.md) 
 ##[Compilation B (TXP7101)](../Companies/Atari/Compilation_B/README.md) 
@@ -619,7 +619,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Conversational_SPANISH_CX4120](../Companies/Atari/Conversational_SPANISH_CX4120/README.md)
 - [Conversational_ITALIAN_CX4125](../Companies/Atari/Conversational_ITALIAN_CX4125/README.md)
 
-- [Atari Speed Reading (CX4126)](../Atari_Speed_Reading/README.md)
+- [Atari Speed Reading (CX4126)](../Companies/Atari/Atari_Speed_Reading/README.md)
 - [Atari States & Capitals CX4112](../Companies/Atari/Atari_States_and_Capitals/README.md)
 - [Atari_European_Countries_and_Capitals](../Companies/Atari/Atari_European_Countries_and_Capitals/README.md)
 
@@ -657,7 +657,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 #[Sea Dragon](attachments/Sea_Dragon.zip) ; 2015 from Russ Wetmore
 #[Preppie!](attachments/Preppie.zip) ; 2015 from Russ Wetmore
 #[Preppie! II](attachments/Preppie_II.zip) ; 2015 from Russ Wetmore
-#[Blue_Max](../Blue_Max/README.md) ; 2016 from Bob Polin
+#[Blue_Max](../Companies/Synapse_Software/Blue_Max/README.md) ; 2016 from Bob Polin
 #[Pong](../Pong/README.md) ; 1986 from Gary S. Domrow
 #[Checkers_Display](../Checkers_Display/README.md) ; 2017 from Carol Shaw
 #[PAC-MAN](../PAC-MAN/README.md) 

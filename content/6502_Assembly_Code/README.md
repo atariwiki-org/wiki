@@ -154,14 +154,14 @@
 - [Teil 3](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist-Interrupts/README.md) - Displaylist-Interrupts
 
 ## DEC-HEX bis 255:
-![](attachments/DEC-HEX+255.jpg)
+![](attachments/DEC-HEX_255.jpg)
 DEC-HEX bis 255
 
 ## Picture
-![](attachments/6502+Assembly+Code+in+Sublime+Text.jpg)
+![](attachments/6502_Assembly_Code_in_Sublime_Text.jpg)
 6502 assembly code in Sublime Text 2 with 6502 language plug-ins. One of today's best options to program in 6502 assembly in combination with [MADS](http://mads.atari8.info/).
 
 ## Instruction Set (Operation Codes)
-![](attachments/Instruction+Set+%28Operation+Codes%29-1.png)
-![](attachments/Instruction+Set+%28Operation+Codes%29-2.png)
+![](attachments/Instruction_Set_Operation_Codes-1.png)
+![](attachments/Instruction_Set_Operation_Codes-2.png)
 Instruction Set (Operation Codes)

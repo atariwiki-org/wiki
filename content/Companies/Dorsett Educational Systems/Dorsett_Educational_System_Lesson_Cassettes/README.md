@@ -43,7 +43,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Principles_of_Accounting_PA](../../../Principles_of_Accounting_PA/README.md)
 - [Business_Communications_BC](../Business_Communications_BC/README.md)
 - [Economics_EC](../../../Economics_EC/README.md)
-- [Basic_Psychology_PS](../../../Basic_Psychology_PS/README.md)
+- [Dorsett Atari Basic Psychology PS](../../../Basic_Psychology_PS/README.md)
 - [Physics_PH](../../../Physics_PH/README.md)
 - [Problems_about_Measurement_MM](../../../Problems_about_Measurement_MM/README.md)
 - [Health_Services_Career_HC](../../../Health_Services_Career_HC/README.md)

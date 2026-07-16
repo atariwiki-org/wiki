@@ -34,4 +34,4 @@ Family Finances II (Budget) Program-Data Diskette CX8142
 Family Finances advertisement
 
 ![](attachments/Family_Finances_replaces_PFMS.jpg)
-Family Finances should replace [Atari_Personal_Financial_Management_System](../Atari_Personal_Financial_Management_System/README.md) ; compare for yourself
+Family Finances should replace [Atari_Personal_Financial_Management_System](../Companies/Atari/Atari_Personal_Financial_Management_System/README.md) ; compare for yourself

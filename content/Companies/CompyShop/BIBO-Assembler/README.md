@@ -1,7 +1,4 @@
----
-title: BiboAssembler
----
-# CompyShop BIBO Assembler
+# CompyShop BIBO Assembler (2)
 
 
 ## Disks

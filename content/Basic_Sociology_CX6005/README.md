@@ -1,8 +1,7 @@
----
-title: Basic Sociology CX6005
----
 # Basic Sociology CX6005
+
 Basic Sociology CX6005 is a really hard to find artifact with a rarity above 10. Therefore, we deeply want to say thank you Bill Lange for providing this treasure to the Atari community. We really owe you very much!
+
 ## Box:
 ![](attachments/Basic_Sociology_CX6005-3.jpg)
 Basic Sociology CX6005 - box cover - thanks to Bill Lange for taking the picture
