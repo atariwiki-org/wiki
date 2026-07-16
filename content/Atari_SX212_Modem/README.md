@@ -1,4 +1,4 @@
-# Atari SX212 Modem 
+# Atari SX212 Modem
 
 Copyright (C) 1987 Keith Ledbetter and Atari Corp. with portions from OSS and ACS
 

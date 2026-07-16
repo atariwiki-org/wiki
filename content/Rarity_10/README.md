@@ -37,12 +37,12 @@ Page 8 of: 'All about Cassette Tapes from 1979'
 - [CX402: Accounts Receivable System (4 SSDD Diskettes)](https://atariwiki.org/wiki/Wiki.jsp?page=The%20Atari%20Accountant%20Series#section-The+Atari+Accountant+Series-CX402AccountsReceivableSystem4SSDDDiskettes)
 - [CX403: Inventory Control System (5 SSDD Diskettes)](https://atariwiki.org/wiki/Wiki.jsp?page=The%20Atari%20Accountant%20Series#section-The+Atari+Accountant+Series-CX403InventoryControlSystem5SSDDDiskettes)
 
-•) [Atari_The_Dow_Jones_Investment_Evaluator](../Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
+•) [The Dow Jones Investment Evaluator (CX412)](../Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
 Atari Dow Jones Investment Evaluator CX8124
 Atari Dow Jones Investment Evaluator CX8125
 Atari Dow Jones Investment Evaluator CX8127
 
-•) [Atari Home Finance or Personal Finance](../Atari_Home_Finance/README.md) 
+•) [Atari Home Finance](../Atari_Home_Finance/README.md) 
 
 •) [Atari Learning System Software](../Companies/Atari/Atari_Learning_System_Software/README.md) ; completely missing!
 
@@ -177,9 +177,9 @@ Und als Letztes noch das Modul, welches für den WDR hergestellt worden ist:
 
 [The Atari Accountant](../The_Atari_Accountant/README.md) 
 
-[Atari_The_Dow_Jones_Investment_Evaluator](../Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
+[The Dow Jones Investment Evaluator (CX412)](../Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
 
-[Atari Home Finance or Personal Finance](../Atari_Home_Finance/README.md) 
+[Atari Home Finance](../Atari_Home_Finance/README.md) 
 
 ![](attachments/Phoenix-400_800-Box-Front.jpg)
 Phoenix for the Atari box

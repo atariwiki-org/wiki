@@ -2,7 +2,7 @@
 title: Articles
 ---
 
-# [3D_Printer_Files](../3D_Printer_Files/README.md)
+# [3D Printer Files](../3D_Printer_Files/README.md)
 - [SIO_plug](../SIO_plug/README.md)
 
 # Cassette
@@ -98,7 +98,7 @@ title: Articles
 - [Atari_1030_Modem_with_ModemLink_Telecommunications_Program](../Atari_1030_Modem_with_ModemLink_Telecommunications_Program/README.md)
 - [ATARI_XM301](../ATARI_XM301/README.md)
 - [ATARI_SX212](../ATARI_SX212/README.md)
-- [Atari_SX212_Modem](../Atari_SX212_Modem/README.md)
+- [Atari SX212 Modem](../Atari_SX212_Modem/README.md)
 
 ## Interface
 - [ATARI_850](../ATARI_850/README.md)
@@ -183,26 +183,26 @@ title: Articles
 ## [Applications](../Applications/README.md)
 
 *Business
-##[Atari_Timewise](../Atari_Timewise/README.md) 
+##[Atari Timewise (DX5047) (Basic)](../Atari_Timewise/README.md) 
 ##[The_Atari_Accountant_Series](../The_Atari_Accountant_Series/README.md) 
 ##[The Bookkeeper CX414](../The_Bookkeeper/README.md) 
 ##[The_Home_Filing_Manager](../The_Home_Filing_Manager/README.md) 
-##[Atari_Home_Accounting_System](../Atari_Home_Accounting_System/README.md) 
+##[Atari Home Accounting System](../Atari_Home_Accounting_System/README.md) 
 
 *Calculation & Graphics
 ##[Atari_Calculator](../Atari_Calculator/README.md) 
 ##[Atari Graph It I & II](../Atari_Graph_It_I_and_II/README.md) 
-##[Atari_Home_Finance](../Atari_Home_Finance/README.md) 
+##[Atari Home Finance](../Atari_Home_Finance/README.md) 
 ##[Atari_Investment_Analysis_Series](../Atari_Investment_Analysis_Series/README.md) 
 ###[Bond Analysis CX8106](../Companies/Atari/Bond_Analysis/README.md) 
 ###[Mortgage_and_Loan_Analysis](../Mortgage_and_Loan_Analysis/README.md) 
 ###[Stock_Analysis](../Stock_Analysis/README.md) 
 ###[Stock_Charting](../Stock_Charting/README.md) 
 ##[Atari_Personal_Financial_Management_System](../Atari_Personal_Financial_Management_System/README.md) 
-##[Atari_Rechner_Simulation_mit_UPN](../Atari_Rechner_Simulation_mit_UPN/README.md) 
+##[Atari Rechner Simulation mit UPN](../Atari_Rechner_Simulation_mit_UPN/README.md) 
 ##[Atari Silent Butler (DX5082)](../Atari_Silent_Butler/README.md) 
-##[Atari_Statistics_I](../Atari_Statistics_I/README.md) 
-##[Atari_The_Dow_Jones_Investment_Evaluator](../Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
+##[Atari Statistics I (CX4103)](../Atari_Statistics_I/README.md) 
+##[The Dow Jones Investment Evaluator (CX412)](../Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
 ##[Enhancements_to_Graph_It](../Enhancements_to_Graph_It/README.md) 
 ##[Family_Budgets](../Family_Budgets/README.md) 
 ##[Family_Cash_Flow](../Family_Cash_Flow/README.md) 
@@ -231,7 +231,7 @@ title: Articles
 *Entertainment
 ##[Atari Biorhythm (CX4107)](../Atari_Biorhythm/README.md) 
 ##[Atari Biorhythm cassette-Dual Track with voice, music and data](attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube
-##[Atari Hangman CX4108](../Atari_Hangman/README.md) 
+##[Atari Hangman (CX4108)](../Atari_Hangman/README.md) 
 ##[Atari Hangman cassette-Dual Track with voice, music and data](attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
 ##[Video Easel CXL 4005](../Video_Easel_CXL_4005/README.md) 
 
@@ -241,8 +241,8 @@ title: Articles
 ##[Galaxian_CXL4024](../Galaxian_CXL4024/README.md) 
 
 *Learning
-##[Atari Speed Reading CX4126](../Atari_Speed_Reading/README.md) 
-##[Atari Touch Typing CX4110](../Atari_Touch_Typing/README.md) 
+##[Atari Speed Reading (CX4126)](../Atari_Speed_Reading/README.md) 
+##[Atari Touch Typing (CX4110)](../Atari_Touch_Typing/README.md) 
 ##[Conversational_FRENCH_CX4119](../Conversational_FRENCH_CX4119/README.md) 
 ##[Conversational_GERMAN_CX4118](../Conversational_GERMAN_CX4118/README.md) 
 ##[Conversational_ITALIAN_CX4125](../Conversational_ITALIAN_CX4125/README.md) 
@@ -257,15 +257,15 @@ title: Articles
 
 *Remote Data Transfer
 ##[ATARI_Bildschirmtext_BTX](../ATARI_Bildschirmtext_BTX/README.md) 
-##[ATARI_TELELINK_II](../ATARI_TELELINK_II/README.md) 
-##[ATARI_TELELINK_I](../ATARI_TELELINK_I/README.md) 
-##[ATARI_The_Communicator_II](../ATARI_The_Communicator_II/README.md) 
+##[ATARI TELELINK II](../ATARI_TELELINK_II/README.md) 
+##[ATARI TELELINK I](../ATARI_TELELINK_I/README.md) 
+##[The Communicator II (CX488)](../ATARI_The_Communicator_II/README.md) 
 ##[The_Learning_Phone](../The_Learning_Phone/README.md) 
 ##[AUSTRO.PHONE](../Companies/AUSTRO.COM/AUSTRO.PHONE/README.md) 
 
 *Simulation
 ##[Atari Energy Czar CX4121](../Atari_Energy_Czar/README.md) 
-##[Atari SCRAM-A Nuclear Power Plant Simulation CX4123](../Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/README.md) 
+##[Atari SCRAM - A Nuclear Power Plant Simulation CX4123 (Basic) by Chris Crawford](../Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/README.md) 
 ##[Atari Kingdom CX4102](../Atari_Kingdom/README.md) 
 ##[Atari Kingdom cassette-Dual Track with voice, music and data](attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10
 
@@ -286,7 +286,7 @@ title: Articles
 ##[Atari Word Processor (CX404) and Atari Word Processor Demonstration Data Kit (CX8128)](../Companies/Atari/Atari_Word_Processor/README.md) 
 ##[Atari_Writer](../Atari_Writer/README.md) 
 ##[Atari Proofreader (AX2033)](../Atari_Proofreader/README.md) 
-##[Atari_Schreiber](../Atari_Schreiber/README.md) 
+##[Atari Schreiber (RXG/DXG 8036)](../Atari_Schreiber/README.md) 
 ##[The_Writer's_Tool](../The_Writer's_Tool/README.md) 
 ##[AUSTRO.TEXT](../Companies/AUSTRO.COM/AUSTRO.TEXT/README.md) 
 
@@ -374,7 +374,7 @@ title: Articles
 - Business
 ##[Terminkalender](../Terminkalender/README.md) 
 ##[Buchhaltung](../Buchhaltung/README.md) 
-##[Statistik I](../Atari_Statistics_I/README.md) 
+##[Atari Statistics I (CX4103)](../Atari_Statistics_I/README.md) 
 ##[Graph It II](../Graph_It_II/README.md) 
 ##[Zinsen_und_Tilgung](../Zinsen_und_Tilgung/README.md) 
 ##[Familien_Finanzen](../Familien_Finanzen/README.md) 
@@ -445,7 +445,7 @@ title: Articles
 ##[Buchstaben_Lotterie](../Buchstaben_Lotterie/README.md) 
 
 - Textverarbeitung
-##[Atari_Schreiber](../Atari_Schreiber/README.md) 
+##[Atari Schreiber (RXG/DXG 8036)](../Atari_Schreiber/README.md) 
 ##[Programm_Text_Editor](../Programm_Text_Editor/README.md) 
 
 - Unterhaltung
@@ -499,8 +499,8 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - Kantoor Thuis
 ## [Atari Adressenbestand (Cassette: CXN 4104)](../Atari_Adressenbestand/README.md)
 ## [Atari Grafieken (Cassette: TXN 4109)](../Atari_Grafieken/README.md)
-## [Atari Kaartsysteem (Disk: DXN 415)](../Atari_Kaartsysteem/README.md)
-## [Atari Statistieken (Cassette: TXN 4103](../Atari_Statistieken/README.md)
+## [Atari Kaartsysteem](../Atari_Kaartsysteem/README.md)
+## [Atari Statistieken](../Atari_Statistieken/README.md)
 ## [Huishoud-Boek (Disk: DXN 421)](../Huishoud-Boek/README.md)
 - Algemene Ontwikkeling
 ## [Atari Energie (Cassette: TXN 4121)](../Atari_Energie/README.md)
@@ -619,8 +619,8 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Conversational_SPANISH_CX4120](../Conversational_SPANISH_CX4120/README.md)
 - [Conversational_ITALIAN_CX4125](../Conversational_ITALIAN_CX4125/README.md)
 
-- [Atari_Speed_Reading](../Atari_Speed_Reading/README.md)
-- [Atari_States_and_Capitals](../Atari_States_and_Capitals/README.md)
+- [Atari Speed Reading (CX4126)](../Atari_Speed_Reading/README.md)
+- [Atari States & Capitals CX4112](../Atari_States_and_Capitals/README.md)
 - [Atari_European_Countries_and_Capitals](../Atari_European_Countries_and_Capitals/README.md)
 
 - [Atari Biorhythm cassette-Dual Track with voice, music and data](attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube ; [Atari Biorhythm program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Biorhythm)

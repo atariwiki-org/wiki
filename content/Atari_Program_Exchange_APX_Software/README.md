@@ -1,7 +1,5 @@
----
-title: Atari Program Exchange (APX) Software
----
 # Atari Program Exchange (APX) Software
+
 ![](attachments/APX.gif)
 - [Atari Program Exchange (APX) Software](http://www.atariarchives.org/APX/showindex.php) ; Thank you so much Kay Savetz for providing the marvelous site. We really appreciate your work for Atari!
 AtariWiki is very proud to offer the nearly complete archive of all the manuals in the Atari Program Exchange (APX) Software:
