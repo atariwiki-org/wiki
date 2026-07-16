@@ -1,11 +1,9 @@
----
-title: Hypra-Soft-Basic
----
-# Hypra-Soft-Basic  
+# Hypra-Soft-BASIC
+
 V1.0 (C) 1989 von Uwe Röder  
   
 ### Background  
-Hypra-Soft-Basic, by Uwe Röder, is a version of [BASIC](../Basic/README.md) for the Atari with many extensions. It is similar to [Turbo-BASIC XL](../TURBO-BASIC_XL|Turbo-BASIC_XL/README.md) in concept, and shares many features with that language, but has additional commands on top. There are three versions of the system, disk-based, ROM based (although it requires a special cartridge), and the "Fandal" version (unknown translation).  
+Hypra-Soft-Basic, by Uwe Röder, is a version of [BASIC](../README.md) for the Atari with many extensions. It is similar to [Turbo-BASIC XL](../Turbo-BASIC_XL/README.md) in concept, and shares many features with that language, but has additional commands on top. There are three versions of the system, disk-based, ROM based (although it requires a special cartridge), and the "Fandal" version (unknown translation).  
   
 The system is known to work with DOS 2.5 and Turbo-DOS XE, although it should work with other DOSes as well.  
   

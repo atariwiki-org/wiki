@@ -1,6 +1,6 @@
-# Microsoft BASIC II
+# Microsoft BASIC II (DX5046)
  
-DX5046 ; Copyright (C) 1982 Microsoft Corporation  
+Copyright (C) 1982 Microsoft Corporation  
   
 ### Background  
 Atari Microsoft BASIC II is a powerful programming language that uses simple English commands, features and an Atari cartridge with extension diskette for faster loading. Features: revises bugs found in Microsoft BASIC I, will autorun a BASIC program, relaxed handling of strings, one-dimensional strings without telling the computer in advance, allows multidimensional arrays of variables and strings, can enter program line numbers automatically, new commands dealing with DOS files: Kill-Lock-Unlock-and Name, NO Syntax checking is done as you type in programs but only when you Run your programs allowing you to trace errors right to their source with TRON and TROFF commands, floating-pint accuracy to 16 digits, implements math functions more rapidly by utilizing the interpreter rather than the operating system ROM routines and will support 4 disk drives. Atari Microsoft BASIC II contains a 142 page reference manual with sample programs, a 8 page Microsoft BASIC user's guide, a Microsoft BASIC 13 page quick reference guide, a Microsoft cartridge with an extension disk. Minimum memory 16K.  
@@ -28,7 +28,7 @@ Atari Microsoft BASIC II V2.0 start screen
 Atari Microsoft BASIC II ad  
   
 ## Manual  
-- [missing](../missing/README.md)  
+- missing
   
 ## Atari Microsoft BASIC Cross-Reference Utility - APX Catalog Number 20125 by Fred Thorlin System Software; Many thanks to bob1200xl from AtariAge for sharing it with us!  
   

@@ -1,11 +1,10 @@
----
-title: Turbo-BASIC XL
----
-# Turbo-BASIC XL by Frank Ostrowski 1985  
+# Turbo-BASIC XL
+
+Programmed by Frank Ostrowski 1985  
   
   
 ## Background  
-Turbo-BASIC XL 1.5 is a fast [BASIC](../Basic/README.md) interpreter for the Atari XL and XE. Frank Ostrowski wrote it and first published it in the German Happy Computer magazine in 1985. TURBO is fully compatible with [Atari_BASIC](../Atari_BASIC/README.md) but fixes some well-known bugs and replaces its notoriously slow loops and math functions. The result is that Turbo-BASIC XL will run any Atari BASIC program but do so around three to five times as fast!  
+Turbo-BASIC XL 1.5 is a fast [BASIC](../README.md) interpreter for the Atari XL and XE. Frank Ostrowski wrote it and first published it in the German Happy Computer magazine in 1985. TURBO is fully compatible with [Atari_BASIC](../Atari_BASIC/README.md) but fixes some well-known bugs and replaces its notoriously slow loops and math functions. The result is that Turbo-BASIC XL will run any Atari BASIC program but do so around three to five times as fast!  
   
 If that is not enough, Turbo-BASIC XL also includes a suite of new keywords and functions to improve on the original. These include structured programming concepts like {{WHILE}} loops and similar, DOS commands that allow you to manipulate files without exiting to the DOS menu, {{DPOKE}} and {{DPEEK}} for working with 16-bit memory values, editing commands like {{RENUM}}, and debugging commands like {{TRACE}}. Yet, due to clever memory management, Turbo-BASIC XL leaves 1,700 more bytes of RAM free, allowing you to write larger programs than Atari BASIC.  
   
@@ -26,9 +25,9 @@ Afair, XTB had been created by Thorsten Karwoth. He is also the author of Atari 
 ## References  
 - [Wikipedia: Turbo-BASIC XL (English)](https://en.wikipedia.org/wiki/Turbo-BASIC_XL)  
 - [Wikipedia: Turbo-BASIC XL (Deutsch)](https://de.wikipedia.org/wiki/Turbo-BASIC_XL)  
-- [Multi_Zoom_Master](../Multi_Zoom_Master/README.md) Graphics Program by Carsten Strotmann  
-- [Player_Missile_in_Turbo_Basic](../Player_Missile_in_Turbo_Basic/README.md)  
-- [Simple_Blitter](../Simple_Blitter/README.md)  
+- [Multi_Zoom_Master](Examples/Multi_Zoom_Master/README.md) Graphics Program by Carsten Strotmann  
+- [Player_Missile_in_Turbo_Basic](Examples/Player_Missile_in_Turbo_Basic/README.md)  
+- [Simple_Blitter](Examples/Simple_Blitter/README.md)  
 - [http://seriouscomputerist.altervista.org/pages/language/language.basic.htm](http://seriouscomputerist.altervista.org/pages/language/language.basic.htm) ; highly recommended!  
 - [http://atariki.krap.pl/index.php/Turbo_BASIC_XL](http://atariki.krap.pl/index.php/Turbo_BASIC_XL) ; Turbo-BASIC XL description in Polish ; highly recommended!  
 - [http://atariki.krap.pl/index.php/Tokeny_Turbo_BASIC_XL](http://atariki.krap.pl/index.php/Tokeny_Turbo_BASIC_XL); Turbo-BASIC XL tokens in Polish ; highly recommended!  
@@ -51,7 +50,7 @@ Frank Ostrowski and his boss in the mid 80's
 Frank Ostrowski in the late 80's taken from ST World Magazine - Jan 1990 - Issue 47 scanned by Lonny Pursell  
   
 ## Source Code  
-After years of investigation and paying government fees in 3-digit amounts, AtariWiki can disclose that the author of Turbo-BASIC XL, Frank Ostrowski, left us in 2011 at age 50 due to a severe disease. Deep investigations regarding his brother, sisters, colleagues, and so on conclude that the source code is lost. Even the enhanced version from Thorsten Karwoth is lost because of water damage in Thorsten's home, which destroyed all listings and diskettes. That is a very sad status, but there is still hope. If someone in the galaxy can build a source code out of this marvelous program from the original object code, as Lorenz did with Star Raiders [Star_Raiders_source_code_by_Lorenz_Wiest](../Star_Raiders_source_code_by_Lorenz_Wiest/README.md), we can rebuild it. We can build the best Basic for the Atari, faster, stronger, and better. We call the six million dollar Basic just simple Ultimate Basic. With all the source codes now in PD: [Source Codes](https://atariwiki.org/wiki/Wiki.jsp?page=Articles#section-Articles-ProgrammingLanguages), it should be possible. Stay tuned.  
+After years of investigation and paying government fees in 3-digit amounts, AtariWiki can disclose that the author of Turbo-BASIC XL, Frank Ostrowski, left us in 2011 at age 50 due to a severe disease. Deep investigations regarding his brother, sisters, colleagues, and so on conclude that the source code is lost. Even the enhanced version from Thorsten Karwoth is lost because of water damage in Thorsten's home, which destroyed all listings and diskettes. That is a very sad status, but there is still hope. If someone in the galaxy can build a source code out of this marvelous program from the original object code, as Lorenz did with Star Raiders [Star_Raiders_source_code_by_Lorenz_Wiest](../../../Star_Raiders_source_code_by_Lorenz_Wiest/README.md), we can rebuild it. We can build the best Basic for the Atari, faster, stronger, and better. We call the six million dollar Basic just simple Ultimate Basic. With all the source codes now in PD: [Source Codes](https://atariwiki.org/wiki/Wiki.jsp?page=Articles#section-Articles-ProgrammingLanguages), it should be possible. Stay tuned.  
   
 Frank, wherever you are, you did a man's job - outstanding and far ahead of your time. Germany is deep in your debt, and so is the worldwide Atari community. We will never forget your work and your contribution to the world. You belong to those who are not replaceable and will never be forgotten. May god bless you wherever you are now.  
   
@@ -112,7 +111,6 @@ TODO: (The following is not correct!) There is only a one-byte difference betwee
   
 ## Manuals  
 - [TURBO-BASIC_XL-Interpreter.pdf](attachments/TURBO-BASIC_XL-Interpreter.pdf) ; size: 2 MB  
-- [TURBO-BASIC_XL-Turbo_Compiler.pdf](attachments/TURBO-BASIC_XL-Turbo_Compiler.pdf) ; size: 1.7 MB  
 - [TURBO-BASIC_XL-Expanded_Documentation.pdf](attachments/TURBO-BASIC_XL-Expanded_Documentation.pdf) ; size: 4.9 MB  
 - [TURBO-BASIC_XL_Manual.pdf](attachments/TURBO-BASIC_XL_Manual.pdf) ; size: 1.7 MB  
 - [TURBO-BASIC_XL-Compiler.pdf](attachments/TURBO-BASIC_XL-Compiler.pdf) ; size: 1.8 MB  
@@ -123,8 +121,8 @@ TODO: (The following is not correct!) There is only a one-byte difference betwee
 - [TURBO-BASIC_XL-Expanded_Documentation.pdf](attachments/TURBO-BASIC_XL-Expanded_Documentation.pdf) ; size: 4.9 MB ; thank you MrFish from AtariAge for your help! :-)  
 - [HC_AMPEL_Version_1.1.pdf](attachments/HC_AMPEL_Version_1.1.pdf)  
 - [Quick Summary of TURBO-BASIC XL Commands and Functions](attachments/Quck_Summery_of_TURBO-BASIC_XL_command_and_functions.pdf)  
-- [TURBO-BASIC_XL_1.5_Handbuch_1.pdf](attachments/TURBO-BASIC_XL_1.5_Handbuch_1.pdf)  
-- [TURBO-BASIC_XL_1.5_Handbuch_2.pdf](attachments/TURBO-BASIC_XL_1.5_Handbuch_2.pdf)  
+- [TURBO-BASIC_XL_1.5_Handbuch_1.pdf](../../../../media/Languages/BASIC/Turbo-BASIC_XL/attachments/TURBO-BASIC_XL_1.5_Handbuch_1.pdf)  
+- [TURBO-BASIC_XL_1.5_Handbuch_2.pdf](../../../../media/Languages/BASIC/Turbo-BASIC_XL/attachments/TURBO-BASIC_XL_1.5_Handbuch_2.pdf)  
 - [TURBO-BASIC_XL-Referenz.pdf](attachments/TURBO-BASIC_XL-Referenz.pdf)  
 - [EXPANDED_TURBO-BASIC_XL-DOCUMENTATION.txt](attachments/EXPANDED_TURBO-BASIC_XL-DOCUMENTATION.txt)  
 - [Kurzreferenz_zur_TURBO-BASIC_XL-Erweiterung.txt](attachments/Kurzreferenz_zur_TURBO-BASIC_XL-Erweiterung.txt)  
@@ -238,31 +236,31 @@ Das neue Turbo-Basic XL 1.5 Handbuch. Das Buch wurde langjährigen Mitgliedern a
 | XIO | X.   
   
 ## Images  
-![](attachments/Happy+Computer+2-1986-TurboBASIC+%28XL%29-Original+Disketten+%281-2%29-Diskette.png)  
-Happy Computer 2-1986-TurboBASIC (XL)-Original Diskette (1-2)-Diskette  
+![](attachments/Happy_Computer_2-1986-TurboBASIC_XL-Original_Disketten-Diskette-1.png)  
+Happy Computer 2-1986-TurboBASIC (XL)-Original Diskette (1/2)-Diskette  
   
-![](attachments/Happy+Computer+2-1986-TurboBASIC+%28XL%29-Original+Disketten+%282-2%29-Diskette.png)  
-Happy Computer 2-1986-TurboBASIC (XL)-Original Diskette (2-2)-Diskette  
+![](attachments/Happy_Computer_2-1986-TurboBASIC_XL-Original_Disketten-Diskette-2.png)  
+Happy Computer 2-1986-TurboBASIC (XL)-Original Diskette (2/2)
   
-![](attachments/Frost_Basic-MuT_Software.jpg)  
-Frost BASIC 1.4 - start screen ; this was the predecessor of Turbo-BASIC XL 1.5 for the 400/800 machines, but was later published than Turbo-BASIC XL 1.5 itself. The characters after 1985 are, by all means, no mistake. Indeed, they match perfectly with: 'M&T SOFTWARE', which means: 'Markt und Technik Software'. Please look for yourself in the [Atari_ATASCII_Table](../Atari_ATASCII_Table/README.md). :-)  
+![](attachments/Frost_Basic-MandT_Software.jpg)  
+Frost BASIC 1.4 - start screen ; this was the predecessor of Turbo-BASIC XL 1.5 for the 400/800 machines, but was later published than Turbo-BASIC XL 1.5 itself. The characters after 1985 are, by all means, no mistake. Indeed, they match perfectly with: 'M&T SOFTWARE', which means: 'Markt und Technik Software'. Please look for yourself in the [Atari_ATASCII_Table](../../../Atari_ATASCII_Table/README.md). :-)  
   
 ![](attachments/Startscreen-2.jpg)  
 Turbo-BASIC XL - startscreen  
   
-![](attachments/TURBO-BASIC_XL_1.5%2C_Compiler_1.1%2C_Runtime_and_Linker_.jpg)  
+![](attachments/TURBO-BASIC_XL_1.5_Compiler_1.1_Runtime_and_Linker.jpg)  
 Turbo-BASIC XL - Turbo-BASIC XL 1.5, Compiler 1.1, Runtime and Linker in just one single cartridge  
   
 ![](attachments/TURBO-BASIC_XL_1.6.jpg)  
 Turbo-BASIC XL - Turbo-BASIC XL 1.6 ; thank you so much THOR! We appreciate your help, especially with Basic++  
   
-![](attachments/TURBO-BASIC+XL+2.0.jpg)  
+![](attachments/TURBO-BASIC_XL_2.0.jpg)  
 Turbo-BASIC XL - Turbo-BASIC XL 2.0 ; (C) 1990 LASER software  
   
-![](attachments/TURBO-BASIC+XL+2.1.jpg)  
+![](attachments/TURBO-BASIC_XL_2.1.jpg)  
 Turbo-BASIC XL - TT-BASIC XL 2.11 ; with TURBO 2000 SYSTEM; (C) 1988 J. Richter  
   
-![](attachments/Turbo+Basic+Version+3.2q.jpg)  
+![](attachments/Turbo_Basic_Version_3.2q.jpg)  
 Turbo-BASIC XL 3.2q for SpartaDOS, Startscreen ; (C) 1992 Tom Hunt  
   
 ![](attachments/TURBO-BASIC_XL-Compiler_Version_1.1_Intro.jpg)  

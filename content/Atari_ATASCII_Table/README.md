@@ -1,8 +1,5 @@
----
-title: Atari ATASCII Table
----
-# Ascii Atascii Table  
-  
+# Atari ATASCII Table  
+
 by Florian Dingler  
   
 PDF: [ascii_atascii_table.pdf](attachments/ascii_atascii_table.pdf)  

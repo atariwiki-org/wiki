@@ -1,7 +1,5 @@
----
-title: Action
----
-  
+# Action
+
 ## Information  
   
 ### Background  

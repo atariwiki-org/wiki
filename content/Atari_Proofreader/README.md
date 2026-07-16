@@ -1,7 +1,7 @@
----
-title: Atari Proofreader
----
-# Atari Proofreader AX2033 ; Copyright (C) 1985 Atari, Corp. & R. Stanley Kistler  
+# Atari Proofreader (AX2033)
+
+Copyright (C) 1985 Atari, Corp. & R. Stanley Kistler  
+
 The Atari Proofreader has a very unique serial number beginning with the letter A instead of D, which is normal for diskettes.  
   
 ## ATR-Files  
@@ -18,61 +18,61 @@ The Atari Proofreader has a very unique serial number beginning with the letter 
 - [Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Print-OCR.pdf](attachments/Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Print-OCR.pdf) ; size: 7.4 MB ; ready to print version with OCR  
 - [Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Screen-OCR.pdf](attachments/Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Screen-OCR.pdf) ; size: 1.1 MB ; screen optimized version with OCR  
   
-## Pictures  
+## Pictures
 ![](attachments/proofreader_d7.jpg)  
 Atari Proofreader AX2033 - Box Cover 1; Thanks to Atarimania!  
   
 ![](attachments/proofreader_d7_2.jpg)  
 Atari Proofreader AX2033 - Box Back 1; Thanks to Atarimania!  
   
-![](attachments/Atari+Proofreader+AX2033+Box-front.png)  
+![](attachments/Atari_Proofreader_AX2033_Box-front.png)  
 Atari Proofreader AX2033 - Box Cover 2  
   
-![](attachments/Atari+Proofreader+AX2033+Box-back.png)  
+![](attachments/Atari_Proofreader_AX2033_Box-back.png)  
 Atari Proofreader AX2033 - Box Back 2  
   
-![](attachments/Atari+Proofreader+Program+DX5073-front.png)  
+![](attachments/Atari_Proofreader_Program_DX5073-front.png)  
 Atari Proofreader Program DX5073-front  
   
-![](attachments/Atari+Proofreader+Program+DX5073-back.png)  
+![](attachments/Atari_Proofreader_Program_DX5073-back.png)  
 Atari Proofreader Program DX5073-back  
   
-![](attachments/Atari+Proofreader+Dictionary+DX5074-front.png)  
+![](attachments/Atari_Proofreader_Dictionary_DX5074-front.png)  
 Atari Proofreader Dictionary DX5074-front  
   
-![](attachments/Atari+Proofreader+Dictionary+DX5074-back.png)  
+![](attachments/Atari_Proofreader_Dictionary_DX5074-back.png)  
 Atari Proofreader Dictionary DX5074-back  
   
-![](attachments/Atari+Proofreader-Program+Diskette-DX+5073-C014873-front.png)  
+![](attachments/Atari_Proofreader-Program_Diskette-DX_5073-C014873-front.png)  
 Atari Proofreader-Program Diskette-DX 5073-C014873-front  
   
-![](attachments/Atari+Proofreader-Program+Diskette-DX+5073-C014873-back.png)  
+![](attachments/Atari_Proofreader-Program_Diskette-DX_5073-C014873-back.png)  
 Atari Proofreader-Program Diskette-DX 5073-C014873-back  
   
-![](attachments/Atari+Proofreader-Dictionary+Diskette-DX5074-front.png)  
+![](attachments/Atari_Proofreader-Dictionary_Diskette-DX5074-front.png)  
 Atari Proofreader-Dictionary Diskette-DX5074-front  
   
-![](attachments/Atari+Proofreader-Dictionary+Diskette-DX5074-back.png)  
+![](attachments/Atari_Proofreader-Dictionary_Diskette-DX5074-back.png)  
 Atari Proofreader-Dictionary Diskette-DX5074-back  
   
-![](attachments/Limited+90-Day+Warranty+C072020-001+REV.+B-front.png)  
+![](attachments/Limited_90-Day_Warranty_C072020-001_REV._B-front.png)  
 Limited 90-Day Warranty C072020-001 REV. B-front  
   
-![](attachments/Limited+90-Day+Warranty+C072020-001+REV.+B-back.png)  
+![](attachments/Limited_90-Day_Warranty_C072020-001_REV._B-back.png)  
 Limited 90-Day Warranty C072020-001 REV. B-back  
   
 ## Screenshots  
-![](attachments/Atari+Writer+without+Proofreader+1.png)  
+![](attachments/Atari_Writer_without_Proofreader_1.png)  
 Atari Writer without Proofreader 1  
   
-![](attachments/Atari+Writer+without+Proofreader+2.png)  
+![](attachments/Atari_Writer_without_Proofreader_2.png)  
 Atari Writer without Proofreader 2  
   
-![](attachments/Atari+Writer+with+Proofreader+1.png)  
+![](attachments/Atari_Writer_with_Proofreader_1.png)  
 Atari Writer with Proofreader 1  
   
-![](attachments/Atari+Writer+with+Proofreader+2.png)  
+![](attachments/Atari_Writer_with_Proofreader_2.png)  
 Atari Writer with Proofreader 2  
   
-![](attachments/Atari+Writer+with+Proofreader+3.png)  
+![](attachments/Atari_Writer_with_Proofreader_3.png)  
 Atari Writer with Proofreader 3  

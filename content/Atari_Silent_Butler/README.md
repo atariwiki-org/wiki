@@ -1,7 +1,7 @@
----
-title: Atari Silent Butler
----
-# Atari Silent Butler DX5082 (C) Copyright 1985 Atari Corp. and Ted A. Goldstone  
+# Atari Silent Butler (DX5082)
+
+Copyright (C) 1985 Atari Corp. and Ted A. Goldstone  
+
 Atari Silent Butler works with Atari 1050 disk drives or better (__MD disk format, NOT(!) 810 compatible__)  
   
 __The XEP80 version of this program from 1987 is still missing. Please help us. Thank you very much in advance. :-)__  
@@ -44,8 +44,10 @@ Silent Butler is simple to use and is functionally adequate for home needs. But 
 - [Silent_Butler_B-Record_Disk-Test.atr](attachments/Silent_Butler_B-Record_Disk-Test.atr) ; same as above but with working data already, SD-Disk format  
 - [1985.atr](attachments/1985.atr) ; Record Disk for the year 1985, working, already formatted and ready to use, MD-Disk format  
 - [2015.atr](attachments/2015.atr) ; Record Disk for the year 2015, working, already formatted and ready to use, MD-Disk format  
+
 ## Manual  
 - [Silent Butler-Owner's Manual](attachments/Silent_Butler.pdf) ; thanks to BillC from AtariAge for providing  
+
 ## Box  
 ![](attachments/ATASilentButler-1-750.jpg)  
 Atari Silent Butler - box front  
@@ -53,16 +55,16 @@ Atari Silent Butler - box front
 ![](attachments/ATASilentButler-2-750.jpg)  
 Atari Silent Butler - box back  
 ## Diskettes  
-![](attachments/Program+Disk_.jpg)  
+![](attachments/Program_Disk_.jpg)  
 Atari Silent Butler - Program Disk  
   
-![](attachments/Record+Disk_.jpg)  
+![](attachments/Record_Disk_.jpg)  
 Atari Silent Butler - Record Disk  
   
-![](attachments/Program+Disk-Label_.jpg)  
+![](attachments/Program_Disk-Label_.jpg)  
 Atari Silent Butler - Program Disk Label  
   
-![](attachments/Record+Disk-Label_.jpg)  
+![](attachments/Record_Disk-Label_.jpg)  
 Atari Silent Butler - Record Disk Label  
 ## Screenshots  
 ![](attachments/Screenshot01.jpg)  
