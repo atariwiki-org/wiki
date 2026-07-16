@@ -1,6 +1,4 @@
----
-title: 6502 Coding Algorithms Macro Library
----
+# 6502 Coding Algorithms Macro Library
 
 General Information
 Author: Andrew John Jacobs

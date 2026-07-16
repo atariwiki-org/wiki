@@ -1,7 +1,3 @@
----
-title: Atari Picture Mirror Tool
----
-
 # Atari Picture Mirror Tool
 
 ```

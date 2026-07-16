@@ -1,6 +1,3 @@
----
-title: Atari ST Mouse Driver for ACTION
----
 # Atari ST Mouse Driver for ACTION!
 
 General Information

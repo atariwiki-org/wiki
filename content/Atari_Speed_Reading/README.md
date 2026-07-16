@@ -1,12 +1,13 @@
----
-title: Atari Speed Reading
----
-# Atari Speed Reading CX4126 (C) 1981 Atari, Inc. ; please use with BASIC cartridge.
+# Atari Speed Reading (CX4126)
+
+Copyright (C) 1981 Atari, Inc. ; please use with BASIC cartridge.
+
 ## Introduction
 Atari Speed Reading is not just another Voice & Data program from Atari. It is the(!) template how a Voice & Data cassette has to be digitized. Peter Dell and Stefan Meyer had made a masterpiece here, showing us, how this can be done. First, we have a marvelous recording with the best parameters, which made the nowadays standard for recording Atari cassettes. Second, we have a manual in a top condition to quickly and easy find entries for the users and third, we have here an incredible good separation of the Voice & Data layers for further needs.
 
 ![](attachments/Peter_Dell_and_Stefan_Meyer.jpg)
 Peter Dell and Stefan Meyer recording Atari Speed Reading CX4126
+
 ## Abstract
 Do it yourself self paced program, in only 30 days of practice you can increase your Reading, Speed and Comprehension.  8 Workbook units / lessons with 6 Elements in each unit (Warm-Up Exercise / Phrase-Reading Exercise / Paced and Timed Readings / New Techniques / Flexible Reading / Reading Progress Graph, also includes Voice-over Audio track which provides encouragement and instructions while the programs are loading.  Requires an Atari Joystick, 410 or 1010 cassette recorder and the Atari BASIC cartridge. Ages 15 - adult. Requires 16K RAM. Thank you [Bradley Koda from best-electronics-ca](http://www.best-electronics-ca.com/xe_game.htm) for the text.
 ## References

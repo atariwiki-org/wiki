@@ -1,6 +1,3 @@
----
-title: 3 Sector read only DOS
----
 ### 3SDOS - 3Sector Read-Only DOS
 
 - Assembler: BiboAssembler 1.21

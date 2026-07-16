@@ -1,6 +1,4 @@
----
-title: 6502 Assembly Code
----
+# 6502 Assembly Code
 
 ## Bitwise manipulations - Bit calculations
 - [Bitwise_manipulations_-_Bit_calculations](../Bitwise_manipulations_-_Bit_calculations/README.md)
