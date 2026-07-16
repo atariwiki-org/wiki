@@ -1,4 +1,4 @@
-\U0001f62d Found 720 issues in the following files:
+\U0001f62d Found 693 issues in the following files:
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\6502_Assembly_Code\README.md', line 80
 ../BASIC_on-off_from_DOS_XL_commandline/README.md is broken.
 
@@ -2026,87 +2026,6 @@ attachments/KGVGGT.atr is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 31
 attachments/EXPX.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 34
-attachments/Kurvendiskussion.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 35
-attachments/LGS.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 36
-attachments/LGS3.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 37
-attachments/LGS2.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 38
-attachments/APROX.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 39
-attachments/GRAPH.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 40
-attachments/QGleich.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 41
-attachments/Integral.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 42
-attachments/NULL.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 43
-attachments/PRIM.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 44
-attachments/Heron.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 45
-attachments/Round.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 47
-attachments/Atari_Disc_Master_Menu_with_DOS_II_2.0S.atr is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 52
-attachments/Kurvendiskussion.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 53
-attachments/Aprox.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 54
-attachments/Integral.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 55
-attachments/Lineare_Gleichungssysteme-linear_equations.pdf is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 58
-attachments/Graphen.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 61
-attachments/XSin1X.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 64
-attachments/Aprox.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 67
-attachments/Beispiel1.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 70
-attachments/Beispiel2.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 73
-attachments/Beispiel3.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 76
-attachments/Beispiel4.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 79
-attachments/Runden.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 82
-attachments/Runden-Beispiel.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\Examples\README.md', line 85
-attachments/Primzahlen.jpg is broken.
 
 Tutorial/Adding_comments/README.md is broken.
 
