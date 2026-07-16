@@ -13,7 +13,7 @@
 - [How_to_query_the_MultiJoy_Interface](../How_to_query_the_MultiJoy_Interface/README.md)
 - [Multijoy](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 - [Trackball](../Trackball/README.md)
-- [Atari_CX70_Light_Pen](../Atari_CX70_Light_Pen/README.md)
+- [Atari_CX70_Light_Pen](../Companies/Atari/Atari_CX70_Light_Pen/README.md)
 - [Atari_CX77_Touch_Tablet](../Atari_CX77_Touch_Tablet/README.md)
 - [Atari_CX80_Trak-Ball_controller](../Atari_CX80_Trak-Ball_controller/README.md)
 - [Atari CX85 Numerical Keypad](../AtariCX85/README.md)
@@ -34,7 +34,7 @@
 - [Atari_810](Disk_Drives/Atari_810/README.md)
 - [Atari_815](Disk_Drives/Atari_815/README.md)
 - [ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION](../ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
-- [Atari_1050](../Atari_1050/README.md)
+- [Atari_1050](../Companies/Atari/Atari_1050/README.md)
 - [Atari_XF551](../Atari_XF551/README.md)
 
 ### Third Party Disk Drives

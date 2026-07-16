@@ -5,7 +5,7 @@ PILOT is an extremely simple programming language written in 1968 explicitly for
 
 PILOT is unique in that it added a set of commands for graphics and sound using two-letter mnemonics GR and SO. The graphics system used turtle graphics, with the string following the GR command containing multiple sub-commands like DRAW and TURN. The syntax for these commands is similar to [WSFN - Which Stands for Nothing](../../../Languages/WSFN/README.md), allowing a series of commands to be repeated by placing them inside parentheses and putting the number of times to perform them in front.
 
-For editing purposes, PILOT uses line numbers, which were not part of the original language.  However, these can be skipped by using the AUTO feature, which adds these numbers automatically without displaying them on the screen. The screen turns a yellow color when AUTO is active. The editor includes renumbering features, which suggests it might be the one from the [Atari Assembler Editor](../../../Atari_Assembler_Editor/README.md).
+For editing purposes, PILOT uses line numbers, which were not part of the original language.  However, these can be skipped by using the AUTO feature, which adds these numbers automatically without displaying them on the screen. The screen turns a yellow color when AUTO is active. The editor includes renumbering features, which suggests it might be the one from the [Atari Assembler Editor](../Atari_Assembler_Editor/README.md).
 
 ### Example
 

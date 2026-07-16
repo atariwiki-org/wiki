@@ -4,7 +4,7 @@ title: Assembler
 # Assembler
 Given the slow performance of [Atari BASIC](../BASIC/Atari_BASIC/README.md), the go-to language for programmers writing games or other speed-critical programs was 6502 assembler. The 6502 was somewhat infamous for its simplified design, but this also meant its assembler was very simple and easy to learn. As an introduction to assembler, there are few machines better than the Atari 8-bit.
 
-The first assembler for the Atari available to the public was [Atari_Assembler_Editor](../../Atari_Assembler_Editor/README.md), originally written by Shepardson Microsystems and sold by Atari in ROM cartridge format. Assembler Editor lacked many features, and was only suitable for small programs. For more demanding tasks, Atari also released [Atari_Macro_Assembler](../Atari_Macro_Assembler/README.md). Although powerful, Macro Assembler was slow as it was entirely disk based. This led to a thriving market for 3rd party assemblers and debuggers to fix the problems seen in one or the other.
+The first assembler for the Atari available to the public was [Atari_Assembler_Editor](../../Companies/Atari/Atari_Assembler_Editor/README.md), originally written by Shepardson Microsystems and sold by Atari in ROM cartridge format. Assembler Editor lacked many features, and was only suitable for small programs. For more demanding tasks, Atari also released [Atari_Macro_Assembler](../Atari_Macro_Assembler/README.md). Although powerful, Macro Assembler was slow as it was entirely disk based. This led to a thriving market for 3rd party assemblers and debuggers to fix the problems seen in one or the other.
 
 In recent years, a number of cross-compilers have appeared. These allow you to develop Atari assembler programs on your PC or Mac and then send the code to the Atari (or emulator) for testing. These greatly ease the task of writing programs as you have access to modern IDE systems and editors.
 
@@ -17,7 +17,7 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [A65_Assembler](../../A65_Assembler/README.md) (1984)
 - [AMOEBA](../../AMOEBA/README.md)(198?)
 - [Alfasm, Turbo-Assembler/16](Alfasm/README.md) (1990)
-- [Atari_Assembler_Editor](../../Atari_Assembler_Editor/README.md) (1980)
+- [Atari_Assembler_Editor](../../Companies/Atari/Atari_Assembler_Editor/README.md) (1980)
 - [Atari_Macro_Assembler](../Atari_Macro_Assembler/README.md) (1981)
 - [Atmas_I](../../Companies/Hofacker/Atmas_I/README.md) (1982)
 - [Atmas_II](../../Companies/Hofacker/Atmas_II/README.md) (1985)

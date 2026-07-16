@@ -139,7 +139,7 @@ Thank you Alfred
 - [String_Library_PSC](../../../String_Library_PSC/README.md) - (STRING.ACT)
 
 ### Mini-Runtime LIBs
-- [_Intro](../../../_Intro/README.md) (Eine kleine Einführung zu den Mini-LIBs)
+- [_Intro](../Articles/_Intro/README.md) (Eine kleine Einführung zu den Mini-LIBs)
 - [Simple_PRINT_Runtime](../../../Simple_PRINT_Runtime/README.md) (Mini-LIB)
 - [ZERO_and_SETBLOCK](../../../ZERO_and_SETBLOCK/README.md) (RT Part)
 

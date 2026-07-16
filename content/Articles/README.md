@@ -48,7 +48,7 @@ title: Articles
 - [Atari_810](../Hardware/Disk_Drives/Atari_810/README.md)
 - [Atari_815](../Hardware/Disk_Drives/Atari_815/README.md)
 - [ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION](../ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
-- [Atari_1050](../Atari_1050/README.md)
+- [Atari_1050](../Companies/Atari/Atari_1050/README.md)
 - [Atari_XF551](../Atari_XF551/README.md)
 
 ### Third Party Drives
@@ -110,7 +110,7 @@ title: Articles
 - [Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface](../Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface/README.md)
 
 ## Controller
-- [Atari_CX70_Light_Pen](../Atari_CX70_Light_Pen/README.md)
+- [Atari_CX70_Light_Pen](../Companies/Atari/Atari_CX70_Light_Pen/README.md)
 - [Atari_CX77_Touch_Tablet](../Atari_CX77_Touch_Tablet/README.md)
 - [Atari_CX80_Trak-Ball_controller](../Atari_CX80_Trak-Ball_controller/README.md)
 - [Atari CX85 Numerical Keypad](../AtariCX85/README.md)
@@ -215,7 +215,7 @@ title: Articles
 ##[AUSTRO.BASE](../Companies/AUSTRO.COM/AUSTRO.BASE/README.md) 
 
 *Diagnostic
-##[Atari_400-800_Stand_Alone_System_Test](../Atari_400-800_Stand_Alone_System_Test/README.md) 
+##[Atari_400-800_Stand_Alone_System_Test](../Companies/Atari/Atari_400-800_Stand_Alone_System_Test/README.md) 
 ##[Super_SALT](../Super_SALT/README.md) 
 ##[ATARI_Diagnostic_Test_Tape](../ATARI_Diagnostic_Test_Tape/README.md) 
 ##[AUSTRO.RECOVER](../Companies/AUSTRO.COM/AUSTRO.RECOVER/README.md) 
@@ -284,7 +284,7 @@ title: Articles
 
 *Word Processing
 ##[Atari Word Processor (CX404) and Atari Word Processor Demonstration Data Kit (CX8128)](../Companies/Atari/Atari_Word_Processor/README.md) 
-##[Atari_Writer](../Atari_Writer/README.md) 
+##[Atari_Writer](../Companies/Atari/Atari_Writer/README.md) 
 ##[Atari Proofreader (AX2033)](../Atari_Proofreader/README.md) 
 ##[Atari Schreiber (RXG/DXG 8036)](../Atari_Schreiber/README.md) 
 ##[The_Writer's_Tool](../The_Writer's_Tool/README.md) 
@@ -299,7 +299,7 @@ title: Articles
 - [Atari Learning System Software](../Companies/Atari/Atari_Learning_System_Software/README.md)
 
 ## Atari Program Exchange (APX) Software
-- [Atari_Program_Exchange_APX_Software](../Atari_Program_Exchange_APX_Software/README.md)
+- [Atari Program Exchange (APX) Software](../Atari_Program_Exchange_APX_Software/README.md)
 
 ## ATARI Cartridge Serial Numbers
 - [ATARI_Cartridge_Serial_Numbers](../ATARI_Cartridge_Serial_Numbers/README.md)
@@ -497,7 +497,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 ## [Programmeren... Hoe Doe Je Dat? (Deel 2) - (Cassette: TXN 4106)](../Programmeren..._Hoe_Doe_Je_Dat_Deel_2/README.md)
 ## [Programmeren... Hoe Doe Je Dat? (Deel 3) - (Cassette: TXN 4117)](../Programmeren..._Hoe_Doe_Je_Dat_Deel_3/README.md)
 - Kantoor Thuis
-## [Atari Adressenbestand (Cassette: CXN 4104)](../Atari_Adressenbestand/README.md)
+## [Atari Adressenbestand (Cassette: CXN 4104)](../Companies/Atari/Atari_Adressenbestand/README.md)
 ## [Atari Grafieken (Cassette: TXN 4109)](../Atari_Grafieken/README.md)
 ## [Atari Kaartsysteem](../Atari_Kaartsysteem/README.md)
 ## [Atari Statistieken](../Atari_Statistieken/README.md)
@@ -664,7 +664,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 
 ### Programming Languages
 Assembler/Debugger:
-#[Atari_Assembler_Editor](../Atari_Assembler_Editor/README.md) 
+#[Atari_Assembler_Editor](../Companies/Atari/Atari_Assembler_Editor/README.md) 
 #[Atari Macro Assembler and Program Text Editor (AMAC)](../AMAC/README.md) 
 #[OSS_EASMD](../OSS_EASMD/README.md) 
 #[OSS BUG/65](attachments/BUG-65_FROM_3000.txt) 

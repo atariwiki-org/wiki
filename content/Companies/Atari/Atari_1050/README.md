@@ -6,4 +6,4 @@ title: Atari 1050
 ### Maintenance
 
 - [Atari 1050 Service Manual](attachments/Atari_1050_DiskDrive.pdf)
-- [Atari_1050_Alignment_procedure](../Atari_1050_Alignment_procedure/README.md)
+- [Atari_1050_Alignment_procedure](Atari_1050_Alignment_procedure/README.md)

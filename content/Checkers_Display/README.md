@@ -4,8 +4,8 @@ title: Checkers Display
 # ATARI 800 CHECKERS DISPLAY BY C. SHAW 3/31/80 ; Copyright 1980 Atari, Inc. and Carol Shaw
 
 ## ATR image
-- [Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr) ; to be used with the [Atari Assembler Editor](../Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien
-- [Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr) ; to be used with the [Atari Assembler Editor](../Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien
+- [Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr) ; to be used with the [Atari Assembler Editor](../Companies/Atari/Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien
+- [Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr) ; to be used with the [Atari Assembler Editor](../Companies/Atari/Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien
 
 ## TXT Files
 - [Checkers_Source_Code.txt](attachments/Checkers_Source_Code.txt) ; Checkers Display source code in a text file
