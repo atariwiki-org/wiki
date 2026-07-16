@@ -115,7 +115,7 @@ Starting from a clear problem, a game, are described based on the necessary defi
   
 An example is a game with simple rules:  
   
-This drinking game, which, according to the article "Ultimate CASE Statement" ([Fourth Dimension 2 / 87 ]( http://forth-ev.de/filemgmt/visit.php?lid=116), page 40 ff) also called CRAPS is, it is about to distribute a supply of jars filled with the players with the help of the cube and leerzutrinken:  
+This drinking game, which, according to the article "Ultimate CASE Statement" ([Fourth Dimension 2 / 87](../../../Articles/The_Ultimate_CASE_Statement/README.md)), page 40 ff) also called CRAPS is, it is about to distribute a supply of jars filled with the players with the help of the cube and leerzutrinken:  
   
 - When ONE was taken a glass out of the stock in the middle of the table and placed before him.  
 - For a TWO or THREE got the neighbor / neighbor left zugesehoben a glass of its own stock.  
@@ -248,7 +248,7 @@ This created a case statement without a very clear control of the program flow. 
   
 Many programming languages provide a CASE statement is available that evaluates as in PASCAL using a case-by-case indices a list of constants and executes a corresponding statement.  
   
-Although such a CASE construct - as shown above - is not necessary, it makes programs easier to read and is in problems such as the assessment of a given index actually closer. This is in ["Wil Baden - Ultimate CASE Statement - VD 2 / 87, p.40 ff" ](../../Tutorial/The_Ultimate_CASE_Statement/README.md) has been discussed in detail, but with the older Esker CASE (Dr. Charles Eaker - Just in CASE (DIM FORTH II / 3)) by Dr. Charles Eaker certainly the better known, is the often found in the literature and source code reference and use.  
+Although such a CASE construct - as shown above - is not necessary, it makes programs easier to read and is in problems such as the assessment of a given index actually closer. This is in ["Wil Baden - Ultimate CASE Statement - VD 2 / 87, p.40 ff" ](../../../Articles/The_Ultimate_CASE_Statement/README.md) has been discussed in detail, but with the older Esker CASE (Dr. Charles Eaker - Just in CASE (DIM FORTH II / 3)) by Dr. Charles Eaker certainly the better known, is the often found in the literature and source code reference and use.  
   
 Mr. H. Sehnitter has implemented this Eaker-CASE for the volks4TH and it made changes in the structure and improvements in the application.  
   
@@ -349,7 +349,7 @@ The complete program can be written, with the typical three-part "input-processi
 ; 
 ```
   
-Wil Baden has "[The Ultimate_CASE_Statement](../../Tutorial/The_Ultimate_CASE_Statement/README.md) stated" that a CASE statement is just syntactic sugar for a program and, ultimately, is nothing more than compiling a nested IF ... THEN statement. Such Implemetation for which was written by Mr. Klaus volksFORTH83 Schleisiek:  
+Wil Baden has "[The Ultimate_CASE_Statement](../../../Articles/The_Ultimate_CASE_Statement/README.md) stated" that a CASE statement is just syntactic sugar for a program and, ultimately, is nothing more than compiling a nested IF ... THEN statement. Such Implemetation for which was written by Mr. Klaus volksFORTH83 Schleisiek:  
   
 ```
 \ CASE OF EndOf ENDCASE 

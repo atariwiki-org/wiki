@@ -55,33 +55,33 @@ have <word> not .IF <action1> .ELSE <action2> .THEN
   
 Diese Worte werden außerhalb von Colon-Definitionen eingesetzt und ersetzen das ''needs'' früherer Versionen.  
   
-- [have](../../Language/Words//have/README.md)  
-- [exit](../../Language/Words//exit/README.md)  
-- [?exit](../../Language/Words//question-exit/README.md)  
-- [0=exit](../../Language/Words//zero-equals-exit/README.md)  
-- [if](../../Language/Words//if/README.md)  
-- [.IF](../../Language/Words//_IF/README.md)  
-- [then](../../Language/Words//then/README.md)  
-- [.THEN](../../Language/Words//_THEN/README.md)  
-- [else](../../Language/Words//else/README.md)  
-- [.ELSE](../../Language/Words//_ELSE/README.md)  
-- [do](../../Language/Words//do/README.md)  
-- [?do](../../Language/Words//question-do/README.md)  
-- [loop](../../Language/Words//loop/README.md)  
-- [+loop](../../Language/Words//plus-loop/README.md)  
-- [I](../../Language/Words//I/README.md)  
-- [J](../../Language/Words//J/README.md)  
-- [leave](../../Language/Words//leave/README.md)  
-- [endloop](../../Language/Words//endloop/README.md)  
-- [bounds](../../Language/Words//bounds/README.md)  
-- [begin](../../Language/Words//begin/README.md)  
-- [repeat](../../Language/Words//repeat/README.md)  
-- [until](../../Language/Words//until/README.md)  
-- [while](../../Language/Words//while/README.md)  
-- [execute](../../Language/Words//execute/README.md)  
-- [perform](../../Language/Words//perform/README.md)  
-- [case?](../../Language/Words//case-question/README.md)  
-- [stop](../../Language/Words//stop/README.md)  
+- [have](../../Language/Words/have/README.md)  
+- [exit](../../Language/Words/exit/README.md)  
+- [?exit](../../Language/Words/question-exit/README.md)  
+- [0=exit](../../Language/Words/zero-equals-exit/README.md)  
+- [if](../../Language/Words/if/README.md)  
+- [.IF](../../Language/Words/_IF/README.md)  
+- [then](../../Language/Words/then/README.md)  
+- [.THEN](../../Language/Words/_THEN/README.md)  
+- [else](../../Language/Words/else/README.md)  
+- [.ELSE](../../Language/Words/_ELSE/README.md)  
+- [do](../../Language/Words/do/README.md)  
+- [?do](../../Language/Words/question-do/README.md)  
+- [loop](../../Language/Words/loop/README.md)  
+- [+loop](../../Language/Words/plus-loop/README.md)  
+- [I](../../Language/Words/I/README.md)  
+- [J](../../Language/Words/J/README.md)  
+- [leave](../../Language/Words/leave/README.md)  
+- [endloop](../../Language/Words/endloop/README.md)  
+- [bounds](../../Language/Words/bounds/README.md)  
+- [begin](../../Language/Words/begin/README.md)  
+- [repeat](../../Language/Words/repeat/README.md)  
+- [until](../../Language/Words/until/README.md)  
+- [while](../../Language/Words/while/README.md)  
+- [execute](../../Language/Words/execute/README.md)  
+- [perform](../../Language/Words/perform/README.md)  
+- [case?](../../Language/Words/case-question/README.md)  
+- [stop](../../Language/Words/stop/README.md)  
   
 # Worte zur Fehlerbehandlung  
   
@@ -94,16 +94,16 @@ is-depth ( n — )
   
 IS-DEPTH überprüft den Stack auf eine gegebene Anzahl Stackelemente (depth) hin.  
   
-- [abort](../../Language/Words//abort/README.md)  
-- ['abort](../../Language/Words//tick-abort/README.md)  
-- [abort"](../../Language/Words//abort-quote/README.md)  
-- [error"](../../Language/Words//error-quote/README.md)  
-- [errorhandler](../../Language/Words//errorhandler/README.md)  
-- [(error](../../Language/Words//paren-error/README.md)  
-- [r#](../../Language/Words//r-sharp/README.md)  
-- [scr](../../Language/Words//scr/README.md)  
-- [quit](../../Language/Words//quit/README.md)  
-- [?pairs](../../Language/Words//question-pairs/README.md)  
+- [abort](../../Language/Words/abort/README.md)  
+- ['abort](../../Language/Words/tick-abort/README.md)  
+- [abort"](../../Language/Words/abort-quote/README.md)  
+- [error"](../../Language/Words/error-quote/README.md)  
+- [errorhandler](../../Language/Words/errorhandler/README.md)  
+- [(error](../../Language/Words/paren-error/README.md)  
+- [r#](../../Language/Words/r-sharp/README.md)  
+- [scr](../../Language/Words/scr/README.md)  
+- [quit](../../Language/Words/quit/README.md)  
+- [?pairs](../../Language/Words/question-pairs/README.md)  
   
 # Fallunterscheidung in FORTH  
   
@@ -248,7 +248,7 @@ Damit wurde ohne eine CASE-Anweisung eine sehr übersichtliche Steuerung des Pro
   
 Viele Programmiersprachen stellen eine CASE-Anweisung zur Verfügung, die wie in PASCAL mit Hilfe eines Fall-Indices eine Liste von Fall-Konstanten auswertet und eine entsprechende Anweisung ausführt.  
   
-Obwohl ein solches CASE-Konstrukt — wie oben gezeigt — nicht notwendig ist, macht es Programme besser lesbar und liegt bei Problemstellungen wie der Auswertung eines gegebenen Index eigentlich näher. Dies ist in ["Wil Baden - Ultimate CASE-Statement - VD 2/87, S.40 ff."](../../Language/Words//Ultimate_CASE_Statement/README.md) ausführlich diskutiert worden, , wobei aber der ältere Esker-CASE (Dr. Charles Eaker -- Just in CASE (FORTH DIM II/3)) von Dr. Charles Eaker sicherlich der bekanntere ist, der auch in der Literatur und in Quelltexten häufig Erwähnung und Verwendung findet.  
+Obwohl ein solches CASE-Konstrukt — wie oben gezeigt — nicht notwendig ist, macht es Programme besser lesbar und liegt bei Problemstellungen wie der Auswertung eines gegebenen Index eigentlich näher. Dies ist in ["Wil Baden - Ultimate CASE-Statement - VD 2/87, S.40 ff."](../../../Articles/The_Ultimate_CASE_Statement/README.md) ausführlich diskutiert worden, , wobei aber der ältere Esker-CASE (Dr. Charles Eaker -- Just in CASE (FORTH DIM II/3)) von Dr. Charles Eaker sicherlich der bekanntere ist, der auch in der Literatur und in Quelltexten häufig Erwähnung und Verwendung findet.  
   
 Herr H. Sehnitter hat diesen Eaker-CASE für das volks4TH implementiert und dabei Veränderungen in der Struktur und Verbesserungen in der Anwendung vorgenommen.  
   
@@ -349,7 +349,7 @@ Das vollständige Programm kann so geschrieben werden, wobei die typische drei­
 ;
 ```
   
-Wil Baden hat in "[Ultimate_CASE_Statement](../../Language/Words//Ultimate_CASE_Statement/README.md)" ausgeführt, das eine CASE-Anweisung nur syntaktischer Zucker für ein Programm ist und letztendlich nichts weiter ist, als das Kompilieren einer verschachtelten IF...THEN-Anweisung. Eine solche Implemetierung fur das volksFORTH83 wurde von Herrn Klaus Schleisiek geschrieben:  
+Wil Baden hat in "[Ultimate_CASE_Statement](../../../Articles/The_Ultimate_CASE_Statement/README.md)" ausgeführt, das eine CASE-Anweisung nur syntaktischer Zucker für ein Programm ist und letztendlich nichts weiter ist, als das Kompilieren einer verschachtelten IF...THEN-Anweisung. Eine solche Implemetierung fur das volksFORTH83 wurde von Herrn Klaus Schleisiek geschrieben:  
   
 ```
 \ CASE OF ENDOF ENDCASE

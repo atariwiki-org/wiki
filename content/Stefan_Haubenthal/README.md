@@ -5,7 +5,7 @@ Meine Hardware: [XEP80](../XEP80/README.md), [CX21](http://atariki.krap.pl/index
   
 [http://atariki.krap.pl/index.php/Strona_g%C5%82%C3%B3wna](http://atariki.krap.pl/index.php/Strona_g%C5%82%C3%B3wna)  
   
-[Converting_FIG-Forth_Programs_to_Forth-83](../Languages/Forth/FigForth/Converting_FIG-Forth_Programs_to_Forth-83/README.md)  
+[Converting_FIG-Forth_Programs_to_Forth-83](../Languages/Forth/Articles/Converting_FIG-Forth_Programs_to_Forth-83/README.md)  
   
 [Rastaconverter](../Rastaconverter/README.md) [PLATO](../PLATO/README.md) [C65Manual-Text](../C65Manual-Text/README.md)  
   

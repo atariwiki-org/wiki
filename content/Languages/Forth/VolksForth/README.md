@@ -2,21 +2,20 @@
 
 ## Source  
   
-- [volksFORTH_Kernel_Sourcecode](../volksFORTH_Kernel_Sourcecode/README.md)  
-- [volksFORTH_MemoryMap_Atari_8bit](../volksFORTH_MemoryMap_Atari_8bit/README.md)  
+- [volksFORTH_Kernel_Sourcecode](Language/Kernel_Source_Code/README.md)  
+- [volksFORTH_MemoryMap_Atari_8bit](Language/Memory_Map_Atari_8bit/README.md)  
   
 ## volksFORTH Glossary  
   
 This is a list of all Forth words contained in the volksFORTH distribution. The current version is 3.8x  
   
-- [Arithmetic](../volksFORTHArtihmetic/README.md)  
-- [Logical](../volksFORTHLogicWords/README.md)  
-- [32bit words](../volksFORTH32bitWords/README.md)  
-- [Stack Operations](../volksFORTHStackOperations/README.md)  
+- [Arithmetic Words](Language/Artihmetic_Words/README.md)  
+- [Logical Words](Language/Logical_Words/README.md)  
+- [32bit Words](Language/32bit_Words/README.md)  
+- [Stack Operations](Language/Stack_Operations/README.md)  
   
 ## Articles  
-- [The_Forth_Bridge](Articles/The_Forth_Bridge/README.md) -- How to migrate from BASIC to (volks-) FORTH  
-- [Forth_Benchmarks](Articles/Forth_Benchmarks/README.md)  
+- [The_Forth_Bridge](Articles/The_Forth_Bridge/README.md) -- How to migrate from BASIC to volksFORTH  
   
 ## volksFORTH Handbook (English)  
 - [Chapter 1](Handbook/Chapter1/README.md)  
@@ -30,8 +29,8 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
   
 ## volksFORTH Handbuch (German)  
   
-- [Kapitel 1](../Handbuch/Chapter1/README.md)  
-- [Kapitel 2](../Handbuch/Chapter2/README.md)  
+- [Kapitel 1](Handbuch/Chapter1/README.md)  
+- [Kapitel 2](Handbuch/Chapter2/README.md)  
 - [Kapitel 3: Arithmetik](Handbuch/Chapter3/README.md) 
 - [Kapitel 4: Programm-Strukturen](Handbuch/Chapter4/README.md)  
 - [Kapitel 5: Ein-/Ausgabe](Handbuch/Chapter5/README.md)   
@@ -42,8 +41,6 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 ## volksFORTH extensions
   
 - [Floating_Point_Words_using_the_Atari_8bit_Math_ROM](Extensions/Floating_Point_Words_using_the_Atari_8bit_Math_ROM/README.md)  
-- [6502_Assembler](Extensions/6502_Assembler/README.md)  
-- [6502_Disassembler](Extensions/6502_Disassembler/README.md)  
 - [Math_Extension_for_6502_Systems](Extensions/Math_Extension_for_6502_Systems/README.md) (Atari XL/XE, Apple 1/II, Commodore)  
 - [Arrays_with_Bounds_checking](Extensions/Arrays_with_Bounds_checking/README.md)  
 - [Mini-OOF](Extensions/Mini-OOF/README.md) (Object Oriented Forth) by Bernd Paysan, ported to volksFORTH  

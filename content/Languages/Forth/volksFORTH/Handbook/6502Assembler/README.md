@@ -2,7 +2,7 @@
   
 (Work in progress, pending translation)  
   
-See also: [A_6502_Assembler_in_FORTH](../../../Examples/A_6502_Assembler_in_FORTH/README.md)  
+See also: [A_6502_Assembler_in_FORTH](../../../Articles/A_6502_Assembler_in_FORTH/README.md)  
   
 %% TabbedSection  
 %% Tab-english  
@@ -12,7 +12,7 @@ tab content 1
   
 ### The 6502 assembler  
   
-In the following the concepts of the 6502 Forth Assembler for the people are represented. It is given a complete glossary, as the assembler mnemonics of all machine-language programmers may be unfamiliar. A detailed description of the operation is found in the [A_6502_Assembler_in_FORTH](../../Tutorial/A_6502_Assembler_in_FORTH/README.md)  . The following is a brief summary given and presented changes to the original.  
+In the following the concepts of the 6502 Forth Assembler for the people are represented. It is given a complete glossary, as the assembler mnemonics of all machine-language programmers may be unfamiliar. A detailed description of the operation is found in the [A_6502_Assembler_in_FORTH](../../../Articles/A_6502_Assembler_in_FORTH/README.md)  . The following is a brief summary given and presented changes to the original.  
   
 The operation of the interpreter and address of the routine NEXT is presented in [Chapter 2 of the People's Forth Guide ](../Chapter2/README.md). The 6502 assembler allows structured programming. The structural elements are constructed analogous to the control structures of the Forth but bear different names in order to reduce the risk of confusion and increase clarity.  
   
