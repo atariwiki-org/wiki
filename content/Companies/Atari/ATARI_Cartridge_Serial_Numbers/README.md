@@ -1,9 +1,7 @@
----
-title: ATARI Cartridge Serial Numbers
----
-%%zebra-table
-%%sortable
-||Title||Serial Num||Note
+# Atari Cartridge Serial Numbers
+
+|Title|Serial Num|Note|
+|-----|----------|----|
 |3-D Tic-Tac-Toe|CXL4010|
 |Ace of Aces|RX8099|CA400068-099
 |Airball|RX8109|CA400068-109
@@ -96,5 +94,3 @@ title: ATARI Cartridge Serial Numbers
 |Video Easel|CXL4005|
 |XE Demo Cartridge| |CA400201
 |Xenophobe|RX8118|Proto
-/%
-/%

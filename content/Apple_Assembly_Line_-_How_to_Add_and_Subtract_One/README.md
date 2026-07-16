@@ -1,6 +1,3 @@
----
-title: Apple Assembly Line - How to Add and Subtract One
----
 # Apple Assembly Line - How to Add and Subtract One
 
 General Information

@@ -1,6 +1,3 @@
----
-title: CIOV Tutorial
----
 # CIO Tutorial
 
 Reprinted from A.C.E.C. BBS (614)-471-8559

@@ -1,8 +1,5 @@
----
-title: ATARI Conversational Language Series
----
-# ATARI Conversational Language Series
-- [Conversational_FRENCH_CX4119](../Conversational_FRENCH_CX4119/README.md)
+# Atari Conversational Language Series
+- [Conversational FRENCH (CX4119)](../Conversational_FRENCH_CX4119/README.md)
 - [Conversational_GERMAN_CX4118](../Conversational_GERMAN_CX4118/README.md)
 - [Conversational_ITALIAN_CX4125](../Conversational_ITALIAN_CX4125/README.md)
 - [Conversational_SPANISH_CX4120](../Conversational_SPANISH_CX4120/README.md)

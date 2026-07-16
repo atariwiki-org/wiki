@@ -70,7 +70,7 @@
 - [Atari_800_ROM_OS_Source_Listing](../Atari_800_ROM_OS_Source_Listing/README.md)
 - [Copy OS ROM to RAM](../Languages/Assembler/Examples/Copy_OS_ROM_to_RAM/README.md)
 - [Cycle_neutral_branching](../Cycle_neutral_branching/README.md)
-- [Apple_Assembly_Line_-_How_to_Add_and_Subtract_One](../Apple_Assembly_Line_-_How_to_Add_and_Subtract_One/README.md)
+- [Apple Assembly Line - How to Add and Subtract One](../Apple_Assembly_Line_-_How_to_Add_and_Subtract_One/README.md)
 - [Sweet_16](../Sweet_16/README.md) - a virtual 16bit machine for the 6502 CPU
 - [puZIP](../puZIP/README.md) - ZIP file compression
 - [Small_DOS_2.5_COM-File_loader_for_Demo](../Small_DOS_2.5_COM-File_loader_for_Demo/README.md)
@@ -132,26 +132,26 @@
 ## Kurse
 ### CompyShop Magazin-Assembler Kurs
 
-- [Teil 1](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil1/README.md) - Grundlegendes
-- [Teil 2](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil2/README.md) - Befehlsübersicht
-- [Teil 3](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil3/README.md) - Adressierungsarten
-- [Teil 4](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil4/README.md) - Das erste Programm eine einfache Schleife
-- [Teil 5](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil5/README.md) - Bildschirmspeicher löschen
-- [Teil 6](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil6/README.md) - Addieren und Subtrahieren
-- [Teil 7](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil7/README.md) - Befehle zum "Bearbeiten" von Zahlen
-- [Teil 8](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil8/README.md) - Flags (Flaggen)
-- [Teil 9](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil9/README.md) - Vergleichs- und Transportbefehle
-- [Teil 10](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil10/README.md) - JSR, Zusatzbefehle des 65C02
-- [Teil 11](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil11/README.md) - Schleifen
-- [Teil 12](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil12/README.md) - Ausgabe von Zeichen und Texten auf dem Bildschirm
+- [Teil 1](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil1/README.md) - Grundlegendes
+- [Teil 2](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil2/README.md) - Befehlsübersicht
+- [Teil 3](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil3/README.md) - Adressierungsarten
+- [Teil 4](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil4/README.md) - Das erste Programm eine einfache Schleife
+- [Teil 5](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil5/README.md) - Bildschirmspeicher löschen
+- [Teil 6](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil6/README.md) - Addieren und Subtrahieren
+- [Teil 7](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil7/README.md) - Befehle zum "Bearbeiten" von Zahlen
+- [Teil 8](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil8/README.md) - Flags (Flaggen)
+- [Teil 9](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil9/README.md) - Vergleichs- und Transportbefehle
+- [Teil 10](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil10/README.md) - JSR, Zusatzbefehle des 65C02
+- [Teil 11](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil11/README.md) - Schleifen
+- [Teil 12](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil12/README.md) - Ausgabe von Zeichen und Texten auf dem Bildschirm
 - [Teil 13](../Zeile_per_CIO_einlesen_und_Programme_resetfest_machen/README.md) - Zeile per CIO einlesen und Programme RESET-fest machen
-- [Teil 14](../CompyShop/CSM_Assembler_Course/CSM_ASM_Teil14/README.md) - Programmierung von Interrupts
+- [Teil 14](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil14/README.md) - Programmierung von Interrupts
 
 ### CompyShop Magazin-Assembler für Fortgeschrittene
 
-- [Teil 1](../CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_CIO_und_DOS/README.md) - CIO und DOS
-- [Teil 2](../CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist/README.md) - Displaylist
-- [Teil 3](../CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist-Interrupts/README.md) - Displaylist-Interrupts
+- [Teil 1](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_CIO_und_DOS/README.md) - CIO und DOS
+- [Teil 2](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist/README.md) - Displaylist
+- [Teil 3](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist-Interrupts/README.md) - Displaylist-Interrupts
 
 ## DEC-HEX bis 255:
 ![](attachments/DEC-HEX+255.jpg)

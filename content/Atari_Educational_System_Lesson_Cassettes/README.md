@@ -50,7 +50,7 @@ AtariWiki highly recommends the findings of tschak909 from AtariAge. Please take
 [Supervisory Skills CX6003](../Supervisory_Skills_CX6003/README.md) ; donated by someone who would not like to be mentioned.
 [World_History_Western_CX6004](../World_History_Western_CX6004/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
 [Basic_Sociology_CX6005](../Basic_Sociology_CX6005/README.md) ; thank you Bill Lange for providing this treasure to the Atari community. We really owe you very much!
-[Counseling_Procedures_CX6006](../Counseling_Procedures_CX6006/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
+[Counseling_Procedures_CX6006](../Companies/Atari/Counseling_Procedures_CX6006/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
 [Principles of Accounting - CX6007](../Principles_of_Accounting_CX6007/README.md) ; from Atarimania, thank you so much!
 [Physics CX6008](../Companies/Atari/Physics_CX6008/README.md) ; from Atarimania, thank you so much!
 [Great_Classics_CX6009](../Great_Classics_CX6009/README.md) ; from Kay Savetz; Kay, thank you so much to bring this artifact from the dark to the light! We really appreciate your help!

@@ -1,7 +1,4 @@
----
-title: CompyShop Speedy Upgrades
----
-# Speedy 1050 Upgrades from CompyShop
+# Speedy 1050
 
 ### Handbook
 - Speedy 1050 Anwenderhandbuch und ROM Listing [PDF, 7.7MB](attachments/Speedy1050_Anwenderhandbuch_und_ROM_Listing.pdf) [DJVU, 1.9MB](attachments/Speedy1050_Anwenderhandbuch_und_ROM_Listing.djvu) (German)

@@ -14,9 +14,9 @@
 - [Multijoy](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 - [Trackball](../Trackball/README.md)
 - [Atari_CX70_Light_Pen](../Companies/Atari/Atari_CX70_Light_Pen/README.md)
-- [Atari_CX77_Touch_Tablet](../Atari_CX77_Touch_Tablet/README.md)
-- [Atari_CX80_Trak-Ball_controller](../Atari_CX80_Trak-Ball_controller/README.md)
-- [Atari CX85 Numerical Keypad](../AtariCX85/README.md)
+- [Atari_CX77_Touch_Tablet](../Companies/Atari/Atari_CX77_Touch_Tablet/README.md)
+- [Atari_CX80_Trak-Ball_controller](../Companies/Atari/Atari_CX80_Trak-Ball_controller/README.md)
+- [Atari CX85 Numerical Keypad](../Companies/Atari/AtariCX85/README.md)
 
 ## Computers
 - [Atari_400](../Atari_400/README.md)
@@ -33,9 +33,9 @@
 ### Atari Disk Drives
 - [Atari_810](Disk_Drives/Atari_810/README.md)
 - [Atari_815](Disk_Drives/Atari_815/README.md)
-- [ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION](../ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
+- [ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION](../Companies/Atari/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
 - [Atari_1050](../Companies/Atari/Atari_1050/README.md)
-- [Atari_XF551](../Atari_XF551/README.md)
+- [Atari_XF551](../Companies/Atari/Atari_XF551/README.md)
 
 ### Third Party Disk Drives
 - [Happy_Computers_Upgrades](../Happy_Computers_Upgrades/README.md)
@@ -60,17 +60,17 @@
 - [ATARI_830_Acoustic_Modem](../ATARI_830_Acoustic_Modem/README.md)
 - [ATARI_835_Direct_connect_Modem](../ATARI_835_Direct_connect_Modem/README.md)
 - [ATARI_1030](../ATARI_1030/README.md)
-- [ATARI_XM301](../ATARI_XM301/README.md)
+- [ATARI_XM301](../Companies/Atari/ATARI_XM301/README.md)
 - [ATARI_SX212](../ATARI_SX212/README.md)
 
 ## Printers
 - [ATARI_820_40-column_printer](../ATARI_820_40-column_printer/README.md)
-- [ATARI_822_Thermal_Printer](../ATARI_822_Thermal_Printer/README.md)
+- [ATARI_822_Thermal_Printer](../Companies/Atari/Atari_822_Thermal_Printer/README.md)
 - [ATARI_825_Dot_Matrix_Printer](../ATARI_825_Dot_Matrix_Printer/README.md)
 - [ATARI_1020_Plotter](../ATARI_1020_Plotter/README.md)
 - [ATARI_1025_Dot_Matrix_Printer](../ATARI_1025_Dot_Matrix_Printer/README.md)
 - [ATARI_1027_Letter_Quality_Printer](../ATARI_1027_Letter_Quality_Printer/README.md)
-- [Atari_1027_Printer_-_OS_Timeout_Fix](../Atari_1027_Printer_-_OS_Timeout_Fix/README.md)
+- [Atari_1027_Printer_-_OS_Timeout_Fix](../Companies/Atari/Atari_1027_Printer_-_OS_Timeout_Fix/README.md)
 - [ATARI_1029_Dot_Matrix_Printer](../ATARI_1029_Dot_Matrix_Printer/README.md)
 - [ATARI_XMM801_Dot_Matrix_Printer](../ATARI_XMM801_Dot_Matrix_Printer/README.md)
 - [ATARI_XDM121_Daisy_Wheel_Printer](../ATARI_XDM121_Daisy_Wheel_Printer/README.md)

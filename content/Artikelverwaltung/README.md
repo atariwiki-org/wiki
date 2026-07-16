@@ -1,10 +1,9 @@
----
-title: Artikelverwaltung
----
 # Artikelverwaltung
+
 ## ATR-Images
 - [Artikelverwaltung_A.atr](attachments/Artikelverwaltung_A.atr)
 - [Artikelverwaltung_B.atr](attachments/Artikelverwaltung_B.atr)
+
 ## Bilder
 ![](attachments/Cover.jpg)
 Artikelverwaltung - Box Cover
