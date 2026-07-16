@@ -1,8 +1,8 @@
 ---
 title: Read Track
 ---
-# Speedy 1050 example -- read tack  
-  
+# Speedy 1050 example -- read tack
+
 ```
 0100 ;***********************************
 0110 ;* Demonstration fuer Kommando $62 *

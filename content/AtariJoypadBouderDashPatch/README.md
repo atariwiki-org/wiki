@@ -1,10 +1,10 @@
 ---
 title: AtariJoypadBouderDashPatch
 ---
-# Boulder Dash 1 Patch for USB Joypad  
-  
-Append this behind Boulder Dash 1 binary.  
-  
+# Boulder Dash 1 Patch for USB Joypad
+
+Append this behind Boulder Dash 1 binary.
+
 ```
 01000          .LI OFF
 01010 **************************

@@ -1,19 +1,19 @@
 # Interne Variablen
 
-General Information  
-Author: Peter Finzel  
-Language: ACTION!  
-Compiler/Interpreter: ACTION!  
-Published: ATARI Magazin #3 (05/06-87), ACTION! Center 3  
+General Information
+Author: Peter Finzel
+Language: ACTION!
+Compiler/Interpreter: ACTION!
+Published: ATARI Magazin #3 (05/06-87), ACTION! Center 3
 ---
-# Interne Variablen  
-## Teil 3 des Action!-Centers führt in die Verwendung der compilerspezifischen Variablen ein.  
-  
-Wer schon einmal mit Action! gearbeitet hat, wird sich nur schwer der Faszination dieser Sprache entziehen können. Action! ist angenehm, in der Bedienung, schnell im Kompilieren und erzeugt nicht zuletzt Programme, die mit reinen Assembler-Programmen in Laufzeit und Länge konkurrieren können.  
-  
-In der heutigen Folge werden Sie sehen, wie die Möglichkeiten des Compilers noch besser zu nutzen sind. Ebenso wie Basic verfügt Action! über eine Reihe von internen Variablen, mit denen man z.B. die Codeerzeugung hervorragend steuern kann. Es ist sogar möglich, Programme so zu schreiben, dass sich Speicherbereiche nutzen lassen, die während der Kompilierung nicht zur Verfügung stehen.  
-  
-Was in Basic der POKE-Befehl ist, ist in Action! die SET-Direktive. Mit ihr kann man gezielt einzelne Speicherzellen oder 2-Byte-Werte in den Speicher eintragen. Da dies gelegentlich zu Verwirrung führen kann. wollen wir zunächst zwei Beispiele betrachten:  
+# Interne Variablen
+## Teil 3 des Action!-Centers führt in die Verwendung der compilerspezifischen Variablen ein.
+
+Wer schon einmal mit Action! gearbeitet hat, wird sich nur schwer der Faszination dieser Sprache entziehen können. Action! ist angenehm, in der Bedienung, schnell im Kompilieren und erzeugt nicht zuletzt Programme, die mit reinen Assembler-Programmen in Laufzeit und Länge konkurrieren können.
+
+In der heutigen Folge werden Sie sehen, wie die Möglichkeiten des Compilers noch besser zu nutzen sind. Ebenso wie Basic verfügt Action! über eine Reihe von internen Variablen, mit denen man z.B. die Codeerzeugung hervorragend steuern kann. Es ist sogar möglich, Programme so zu schreiben, dass sich Speicherbereiche nutzen lassen, die während der Kompilierung nicht zur Verfügung stehen.
+
+Was in Basic der POKE-Befehl ist, ist in Action! die SET-Direktive. Mit ihr kann man gezielt einzelne Speicherzellen oder 2-Byte-Werte in den Speicher eintragen. Da dies gelegentlich zu Verwirrung führen kann. wollen wir zunächst zwei Beispiele betrachten:
 ```
 trägt nur den Wert $80 in die Speicherzelle $491 ein. Dagegen beschreibt
 {{{SET $491 = $5140}}}
@@ -93,6 +93,6 @@ SDHCTL=0
 RETURN
 ```
 ---
-PDF: [act3.pdf](attachments/act3.pdf)  
-  
-  
+PDF: [act3.pdf](attachments/act3.pdf) 
+
+

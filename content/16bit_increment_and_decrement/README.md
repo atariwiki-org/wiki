@@ -1,8 +1,8 @@
 ---
 title: 16bit increment and decrement
 ---
-# 16bit increment and decrement  
-  
+# 16bit increment and decrement
+
 ```
 00010 ------------------------------
 00020 * 16-BYTE  INCREMENT ROUTINE *

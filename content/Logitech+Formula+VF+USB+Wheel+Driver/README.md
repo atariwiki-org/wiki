@@ -1,31 +1,31 @@
 ---
 title: Logitech+Formula+VF+USB+Wheel+Driver
 ---
-# Logitech Formula Vibration Feedback Wheel USB Driver  
-  
-  
-Tested with a Logitec Formula Vibration Feedback Wheel USB. Other Logitech Wheels might work. Please send feedback.  
-  
-## Description  
-  
-|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||  
-|  $10           |  1                 | Wheel movement Low Byte  | $270 (624)  | PADDL0 | RWHEELL     |  
-|  $11           |  2  (Bit 0-2)  | Wheel movement High Byte | $271 (625)  | PADDL1 | RWHEELH     |  
-|  $11           |  2  (Bit 3-7)  | Buttons 1-5  | $272 (626)  | PADDL2 | RBUTTON1     |  
-|  $12           |  3                 | Buttons 6-12 | $273 (627)  | PADDL3 | RBUTTON2     |  
-|  $13           |  4                 | Joypad cross | $274 (628)  | PADDL4 | RWHPAD     |  
-|  $14           |  5                 | Throttle | $275 (628)  | PADDL5 | RACCEL     |  
-|  $15           |  6                 | Brake | $276 (628)  | PADDL6 | RBRAKE     |  
-  
-  
-- Byte 1+2: Wheel movement ($000 = left, $200 = middle, $3FF= right)  
-- Byte 2: Buttons 1-5  
-- Byte 3: Buttons 6-12  
-- Byte 4: Joypad Cross  
-- Byte 5: Throttle ($00 = accelerate, $FF= idle)  
-- Byte 6: Brake ($FF = Idle, $00= Brake)  
-  
-The digital Joypad (Byte 4) has a unique value for each direction:  
+# Logitech Formula Vibration Feedback Wheel USB Driver
+
+
+Tested with a Logitec Formula Vibration Feedback Wheel USB. Other Logitech Wheels might work. Please send feedback.
+
+## Description
+
+|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||
+|  $10           |  1                 | Wheel movement Low Byte  | $270 (624)  | PADDL0 | RWHEELL     |
+|  $11           |  2  (Bit 0-2)  | Wheel movement High Byte | $271 (625)  | PADDL1 | RWHEELH     |
+|  $11           |  2  (Bit 3-7)  | Buttons 1-5  | $272 (626)  | PADDL2 | RBUTTON1     |
+|  $12           |  3                 | Buttons 6-12 | $273 (627)  | PADDL3 | RBUTTON2     |
+|  $13           |  4                 | Joypad cross | $274 (628)  | PADDL4 | RWHPAD     |
+|  $14           |  5                 | Throttle | $275 (628)  | PADDL5 | RACCEL     |
+|  $15           |  6                 | Brake | $276 (628)  | PADDL6 | RBRAKE     |
+
+
+- Byte 1+2: Wheel movement ($000 = left, $200 = middle, $3FF= right)
+- Byte 2: Buttons 1-5
+- Byte 3: Buttons 6-12
+- Byte 4: Joypad Cross
+- Byte 5: Throttle ($00 = accelerate, $FF= idle)
+- Byte 6: Brake ($FF = Idle, $00= Brake)
+
+The digital Joypad (Byte 4) has a unique value for each direction:
 ```
           up
           0
@@ -35,11 +35,11 @@ left  6---8---2 right
           4
          down
 ```
-  
-## Device dependent source  
-  
-This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).  
-  
+
+## Device dependent source
+
+This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).
+
 ```
 01000          .LI OFF
 01010 ****************************
@@ -163,9 +163,9 @@ This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.
 02190          RTS
 02200 ------------------------------
 ```
-  
-## PolePosition Patch  
-  
+
+## PolePosition Patch
+
 ```
 01000          .LI OFF
 01010 ****************************

@@ -1,8 +1,8 @@
 ---
 title: Simple XOR encoding
 ---
-# Simple XOR encoding (for BASIC USR Call)  
-  
+# Simple XOR encoding (for BASIC USR Call)
+
 ```
 00010          .LI OFF
 00020 *

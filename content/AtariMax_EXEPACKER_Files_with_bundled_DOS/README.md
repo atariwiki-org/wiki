@@ -1,35 +1,35 @@
 ---
 title: AtariMax EXEPACKER Files with bundled DOS
 ---
-### AtariMax EXEPACKER Files with bundled DOS  
-  
-## About  
-The current (Januar 2004) AtariMax Flashcart Software is very well suited for Games, either Disk-Bootable Games or File-Games. But if you try to use Applications from the Flash-Cart, there are some shortcomings:  
-- if you make a diskimage, you can boot a DOS for the Application, but the Flash-Boot-Software installs a SIO patch. It is not trivial to access a real Floppy drive 1 afer booring from the Flash Cart  
-- if you use the EXEPACKER Function (which works like a Gamedos), you don't have a DOS System to load and save data.  
-  
-So if you like to create a cart with a collection of programming languages, you have to hack the thing :)  
-I had the challenge that a friend send me an Atari Artist Cart and asked me if I could put the Atari Artist Program into another cartridge. My idea was to put the software into an AtariMax Flashcart, together with another fine graphics programm, Design Master. But both Programs should work with DOS and should be able to load and save pictures.  
-  
-The Atari Cartridge Specification defines that with Bit 1 and Bit 2 of the Option Register $BFFD/$9FFD CARTFG the Cart can choose whether a Diskboot should happend or not. Unforuntaly the AtariMax Software don't allow to set this behavior.  
-  
-So I decided to bundle a DOS with with each Application.  
-  
-## Preparing a DOS  
-After some testing, I found that OS/A+ 2.0 from OSS is an easy to handle DOS for this task. It is a commandline DOS, so it is not neccessary to work with a DUP .SYS. OS/A+ is very Atari DOS 2.0 compatible (same DOSINI Vector) and can also handle Double Density Disks.  
-  
-With a Memory Monitor (a 16K BiboMon) a examined where this DOS loaded into memory. OS/A+ 2.0 occupies the memory between $0700 and $1C9F. I dumed this memory portion as a COM-File to disk. Next, a small machine program was appended to the dumped DOS file, taking care of all neccesary initialisation:  
-  
-1. Setting the BOOTFLG to 1 to indicate a successful disk boot  
-1. Setting the DOS Vector $0A  
-1. Set the D: Device Driver entry in the Hander-table HATABS  
-1. Initialize the DOS through HDOSINI  
-1. Setting the DOS Initialistion Vector $0C. This DOSINI Vector is set to the Loader Routine itself so that the loader is resident and survies as reset.  
-1. Call the command line through HDOSVEC  
-  
-A good Linker or Packer (I used Thorsten Karwoths PowerPacker) will help to assemble the DOS File and the Loader into one file. The resulting file is for a plain OS/A+ DOS loadable from AtariMax Cart.  
-  
-### OS/A+ Loader (Bibo Assembler)  
+### AtariMax EXEPACKER Files with bundled DOS
+
+## About
+The current (Januar 2004) AtariMax Flashcart Software is very well suited for Games, either Disk-Bootable Games or File-Games. But if you try to use Applications from the Flash-Cart, there are some shortcomings:
+- if you make a diskimage, you can boot a DOS for the Application, but the Flash-Boot-Software installs a SIO patch. It is not trivial to access a real Floppy drive 1 afer booring from the Flash Cart
+- if you use the EXEPACKER Function (which works like a Gamedos), you don't have a DOS System to load and save data.
+
+So if you like to create a cart with a collection of programming languages, you have to hack the thing :)
+I had the challenge that a friend send me an Atari Artist Cart and asked me if I could put the Atari Artist Program into another cartridge. My idea was to put the software into an AtariMax Flashcart, together with another fine graphics programm, Design Master. But both Programs should work with DOS and should be able to load and save pictures.
+
+The Atari Cartridge Specification defines that with Bit 1 and Bit 2 of the Option Register $BFFD/$9FFD CARTFG the Cart can choose whether a Diskboot should happend or not. Unforuntaly the AtariMax Software don't allow to set this behavior.
+
+So I decided to bundle a DOS with with each Application.
+
+## Preparing a DOS
+After some testing, I found that OS/A+ 2.0 from OSS is an easy to handle DOS for this task. It is a commandline DOS, so it is not neccessary to work with a DUP .SYS. OS/A+ is very Atari DOS 2.0 compatible (same DOSINI Vector) and can also handle Double Density Disks.
+
+With a Memory Monitor (a 16K BiboMon) a examined where this DOS loaded into memory. OS/A+ 2.0 occupies the memory between $0700 and $1C9F. I dumed this memory portion as a COM-File to disk. Next, a small machine program was appended to the dumped DOS file, taking care of all neccesary initialisation:
+
+1. Setting the BOOTFLG to 1 to indicate a successful disk boot
+1. Setting the DOS Vector $0A
+1. Set the D: Device Driver entry in the Hander-table HATABS
+1. Initialize the DOS through HDOSINI
+1. Setting the DOS Initialistion Vector $0C. This DOSINI Vector is set to the Loader Routine itself so that the loader is resident and survies as reset.
+1. Call the command line through HDOSVEC
+
+A good Linker or Packer (I used Thorsten Karwoths PowerPacker) will help to assemble the DOS File and the Loader into one file. The resulting file is for a plain OS/A+ DOS loadable from AtariMax Cart.
+
+### OS/A+ Loader (Bibo Assembler)
 ```
 01000	 .LI OFF
 01010 *************************
@@ -81,18 +81,18 @@ A good Linker or Packer (I used Thorsten Karwoths PowerPacker) will help to asse
 01490			 RTS
 01500 ------------------------------
 ```
-  
-## Preparing Design Master  
-Design Master is already a COM-File that loads from $2800-$7B67 with a start/init address of $79D# Design Master expects to find a already loaded Font (1024 Byte) at $2400.  
-The Design Master loader is almost identical with the OS/A+ loader, except that as the last step Design Master is called instead of the DOS command line.  
-  
-The resulting compound file (COM-File) includes:  
-1. OS/A+ DOS COM File $0700-$1C9F  
-1. Design Master Loader $2000-$20xx  
-1. Design Master Font $2400-$27FF  
-1. Design Master COM-File, $2800-$7B67, Init $2000  
-  
-### Design Master Loader (Bibo Assembler)  
+
+## Preparing Design Master
+Design Master is already a COM-File that loads from $2800-$7B67 with a start/init address of $79D# Design Master expects to find a already loaded Font (1024 Byte) at $2400.
+The Design Master loader is almost identical with the OS/A+ loader, except that as the last step Design Master is called instead of the DOS command line.
+
+The resulting compound file (COM-File) includes:
+1. OS/A+ DOS COM File $0700-$1C9F
+1. Design Master Loader $2000-$20xx
+1. Design Master Font $2400-$27FF
+1. Design Master COM-File, $2800-$7B67, Init $2000
+
+### Design Master Loader (Bibo Assembler)
 ```
 01000	 .LI OFF
 01010 *************************
@@ -146,25 +146,25 @@ The resulting compound file (COM-File) includes:
 01490			 RTS
 01500 ------------------------------
 ```
-  
-## Preparing Atari Artist  
-Bringing Atari Artist into this was a little bit more work. Atari Artist is a 16 K Cartridge. It occupies the space from $8000 to $BFFF. I plugged in the cart, enabled the BiboMon and moved this area to $3000-$6FFF. The Init- and Start-Adresses can be read at $BFFA (Start) and $BFFE (Init).  
-  
-The loader for Atari Artist has some more work to do:  
-1. set RAMTOP (106, $6a) to $80 (=$8000), and initialize a graphics 0 screen. This is neccessary to move the screen memory and the display list below $8000, else it would be in the same memory area where the program sits.  
-1. Test if this is the initial run, if yes, move the memory from $3000-$6FFF to $8000-$BFFF  
-1. Set the BOOTFLG to 1 to indicate a successful disk boot  
-1. Set the DOS Vector $0A  
-1. Set the D: Device Driver entry in the Hander-table HTABS  
-1. Initialize the DOS through HDOSINI  
-1. Initialize the Atari Artist Program  
-1. Call the Atari Artist Program  
-The resulting compound file (COM-File) includes:  
-1. OS/A+ DOS COM File $0700-$1C9F  
-1. Atari Artist Program loading to $3000-$6FFF  
-1. Atari artist Loader, $7000-$7096, Init $7000  
-  
-### Atari Artist Loader (Bibo Assembler)  
+
+## Preparing Atari Artist
+Bringing Atari Artist into this was a little bit more work. Atari Artist is a 16 K Cartridge. It occupies the space from $8000 to $BFFF. I plugged in the cart, enabled the BiboMon and moved this area to $3000-$6FFF. The Init- and Start-Adresses can be read at $BFFA (Start) and $BFFE (Init).
+
+The loader for Atari Artist has some more work to do:
+1. set RAMTOP (106, $6a) to $80 (=$8000), and initialize a graphics 0 screen. This is neccessary to move the screen memory and the display list below $8000, else it would be in the same memory area where the program sits.
+1. Test if this is the initial run, if yes, move the memory from $3000-$6FFF to $8000-$BFFF
+1. Set the BOOTFLG to 1 to indicate a successful disk boot
+1. Set the DOS Vector $0A
+1. Set the D: Device Driver entry in the Hander-table HTABS
+1. Initialize the DOS through HDOSINI
+1. Initialize the Atari Artist Program
+1. Call the Atari Artist Program
+The resulting compound file (COM-File) includes:
+1. OS/A+ DOS COM File $0700-$1C9F
+1. Atari Artist Program loading to $3000-$6FFF
+1. Atari artist Loader, $7000-$7096, Init $7000
+
+### Atari Artist Loader (Bibo Assembler)
 ```
 01000	 .LI OFF
 01010 *************************
@@ -299,6 +299,6 @@ The resulting compound file (COM-File) includes:
 02300			 .DA START
 02310 ------------------------------
 ```
-  
-## Attachements  
-Attached you'll find the AtariMax Flash Image for a Cart with this programs as well as the individual compound files.  
+
+## Attachements
+Attached you'll find the AtariMax Flash Image for a Cart with this programs as well as the individual compound files.

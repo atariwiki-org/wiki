@@ -1,15 +1,15 @@
 ---
 title: Load Font Files in ACTION
 ---
-# Load Font Files in ACTION!  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	28.03.90   
-  
+# Load Font Files in ACTION!
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	28.03.90
+
 ```
 ;********************************
 ;**									 **

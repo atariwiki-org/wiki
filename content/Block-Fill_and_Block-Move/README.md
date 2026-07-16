@@ -1,8 +1,8 @@
 ---
 title: Block-Fill and Block-Move
 ---
-# Block-Fill and Block-Move  
-  
+# Block-Fill and Block-Move
+
 ```
 00010 ------------------------------
 00020 *     Block-Fill-Routine     *
@@ -56,9 +56,9 @@ title: Block-Fill and Block-Move
 00490          BNE .1        Wiederholen
 00500          RTS
 ```
-  
-### Block Move for Atari-BASIC  
-  
+
+### Block Move for Atari-BASIC
+
 ```
 00010          .LI OFF
 00020 *

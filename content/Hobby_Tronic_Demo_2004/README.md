@@ -1,19 +1,19 @@
 ---
 title: Hobby Tronic Demo 2004
 ---
-  
-  
-# Hobbytronic Demo 2004/2005  
-  
-Unfinished work  
-  
-  
-See discussion in ABBUC Programmers Forum at http://www.abbuc.de/  
-  
-Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos or from HTLoader or from BiboMon or similar.  
-  
-## Finished Part: HobbyTronic Loader  
-  
+
+
+# Hobbytronic Demo 2004/2005
+
+Unfinished work
+
+
+See discussion in ABBUC Programmers Forum at http://www.abbuc.de/
+
+Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos or from HTLoader or from BiboMon or similar.
+
+## Finished Part: HobbyTronic Loader
+
 ```
 01000             .LI OFF
 01010 ************************
@@ -471,9 +471,9 @@ Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos 
 05530          JMP (INITAD)
 05540 ------------------------------
 ```
-  
-## Finished Part: Bitmap Depacker for "Maurer Part"  
-  
+
+## Finished Part: Bitmap Depacker for "Maurer Part"
+
 ```
 01000          .LI OFF
 01010 ******************************
@@ -780,9 +780,9 @@ Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos 
 04020          .DA S
 04030 ------------------------------
 ```
-  
-## Lose Parts: Blend Effect  
-  
+
+## Lose Parts: Blend Effect
+
 ```
 00120 VCOUNT   =   $D40B
 00130 WSYNC    =   $D40A
@@ -860,9 +860,9 @@ Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos 
 00930          RTS
 00940 ------------------------------
 ```
-  
-## Lose Parts: RolDLI  
-  
+
+## Lose Parts: RolDLI
+
 ```
 00010          .LI OFF
 00020 ******************************
@@ -941,8 +941,8 @@ Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos 
 00730 ------------------------------
 00740 ;
 ```
-## Lose Parts: Blend Effect 1  
-  
+## Lose Parts: Blend Effect 1
+
 ```
 00010 ******************************
 00020 *                            *
@@ -1007,9 +1007,9 @@ Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos 
 00610 ;
 00620 ZAEHL    .HX 00
 ```
-  
-## Lose Parts: Blend Effect 2  
-  
+
+## Lose Parts: Blend Effect 2
+
 ```
 00010          .LI OFF
 00020 ******************************
@@ -1147,9 +1147,9 @@ Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos 
 01360          .DA DLINIT
 01370 ------------------------------
 ```
-  
-## Lose Parts: Movie Scoller  
-  
+
+## Lose Parts: Movie Scoller
+
 ```
 00010          .LI OFF
 00020 ***************************
@@ -1287,6 +1287,6 @@ Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos 
 01640          .BL 960,0
 01650 ------------------------------
 ```
-  
-  
-  
+
+
+

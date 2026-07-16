@@ -1,16 +1,16 @@
 ---
 title: Atari 800-XL-XE System Label Listing
 ---
-ATARI 800 EQUATE LISTING  
-  
-This listing is based on the original release of Operating System,  
-version A.  The vectors shown here were not changed in version B.  
-New equates for XL and XE models are included and noted.  Changes  
-from version B to XL/XE are also noted.  
-  
-Most of the equate names given below are the official Atari  
-names.  They are in common use but are not mandatory.  
-  
+ATARI 800 EQUATE LISTING
+
+This listing is based on the original release of Operating System,
+version A.  The vectors shown here were not changed in version B.
+New equates for XL and XE models are included and noted.  Changes
+from version B to XL/XE are also noted.
+
+Most of the equate names given below are the official Atari
+names.  They are in common use but are not mandatory.
+
 ```
      0100 ;
      0101 ;                    ATARI 800 EQUATE LISTING

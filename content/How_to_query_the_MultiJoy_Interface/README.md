@@ -1,23 +1,23 @@
 ---
 title: How to query the MultiJoy Interface
 ---
-# How to query the MultiJoy Interface  
-  
-  
-  
-## General Information  
-  
-The MultiJoy is an adapter to connect 8 or 16 Joysticks to a ATARI 8Bit (600XL, 800XL, 130XE, ...). The MultiJoy was designed by Radek Sterba (RASTER). You can find detail Information on this adapter on [Radeks website](http://www.infos.cz/raster/atari/hw/multijoy.htm)  
-  
-Mathy van Nisselroy has information about MultiJoy Games on  
-his [site](http://www.mathyvannisselroy.nl/special%20stuff.htm)  
-  
-  
-## Assembler / Machine Language  
-First you must initialize the communication direction of the ports. The pins of Joystick 1 work as Input and the pins of Joystick 0 work as output.  
-  
-This has to be done once at the start of the program.  
-  
+# How to query the MultiJoy Interface
+
+
+
+## General Information
+
+The MultiJoy is an adapter to connect 8 or 16 Joysticks to a ATARI 8Bit (600XL, 800XL, 130XE, ...). The MultiJoy was designed by Radek Sterba (RASTER). You can find detail Information on this adapter on [Radeks website](http://www.infos.cz/raster/atari/hw/multijoy.htm) 
+
+Mathy van Nisselroy has information about MultiJoy Games on
+his [site](http://www.mathyvannisselroy.nl/special%20stuff.htm) 
+
+
+## Assembler / Machine Language
+First you must initialize the communication direction of the ports. The pins of Joystick 1 work as Input and the pins of Joystick 0 work as output.
+
+This has to be done once at the start of the program.
+
 ```
   LDA #$30	 ; clear BIT 2 of PACTL (direction control register)
   STA $D302      ;PACTL, control read/write direction with PORTA
@@ -26,10 +26,10 @@ This has to be done once at the start of the program.
   LDA #$34	 ; restore OS default value for PACTL 
   STA $D302      ;PACTL
 ```
-  
-Now we can query the joysticks:  
-(proceed a delay 30 cycles at least between write to PORTA register and following reading of PORTA or TRIG0. )  
-  
+
+Now we can query the joysticks:
+(proceed a delay 30 cycles at least between write to PORTA register and following reading of PORTA or TRIG0. )
+
 ```
   LDA #0	  ;Number of the Joystick to query (0-7 for MultiJoy, 0-15 for MultiJoy16)
   ASL A		  ; multiply by 16
@@ -43,44 +43,44 @@ WAI DEX
   LDA $D300       ;PORTA, read value
   AND #$0F	 ; mask out upper 4 bits
 ```
-  
-The joystick button can be queried after selection of the joystick with register TRIG0:  
-  
+
+The joystick button can be queried after selection of the joystick with register TRIG0:
+
 ```
   LDA $D010  ;TRIG0
 ```
-  
-You must take care to synchronize the queries. Especially take care that not players on the first Joysticks have any unfair opportunities.  
-  
-## Basic / Turbo Basic  
-### BASIC  
-  
-Initializing:  
-  
+
+You must take care to synchronize the queries. Especially take care that not players on the first Joysticks have any unfair opportunities.
+
+## Basic / Turbo Basic
+### BASIC
+
+Initializing:
+
 ```
 POKE 54018,48 : REM control read/write direction with PORTA
 POKE 54016,240 : REM 4 upper bits=OUT (Joystick 1),4 lower bits=IN (Joystick 0)
 POKE 54018,52 : REM restore OS default value for PACTL 
 ```
-  
-Query the Joystick:  
+
+Query the Joystick:
 ```
 POKE 54016,NUM*16 : REM NUM = Number of Joystick (0-7/0-15)
 ST=PEEK(54016):ST=ST-INT(ST/16)*16 : REM read Joystick value
 TR=PEEK(53264 ) : REM read Trigger value directly from GTIA
 ```
-  
-### TURBO BASIC  
-  
-Initializing:  
-  
+
+### TURBO BASIC
+
+Initializing:
+
 ```
 POKE $D302,$30
 POKE $D300,$F0
 POKE $D302,$34
 ```
-  
-Query the Joystick:  
+
+Query the Joystick:
 ```
 POKE $D300,NUM*$10 : REM NUM = Number of Joystick (0-7/0-15)
 PAUSE %10 : REM wait for value
@@ -90,12 +90,12 @@ REM which is read from register 632 is only updated every 1/50th second
 REM TR=STRIG(%0) : REM this does not work either
 TR=PEEK($D010): REM read it directly from the GTIA register
 ```
-  
-  
-## ACTION!  
-  
-Initializing:  
-  
+
+
+## ACTION!
+
+Initializing:
+
 ```
 PROC INITMULJOY()
  BYTE PACTL=$D302,PORTA=$D300
@@ -106,7 +106,7 @@ PROC INITMULJOY()
 RETURN
 
 ```
-Query the Joystick:  
+Query the Joystick:
 ```
 PROC QUERYMULJOY(BYTE PL, BYTE POINTER STI,TRI)
  ; call procedure stating PL (range 0...8) and 2 pointers to variables to which the result is returned
@@ -143,11 +143,11 @@ RETURN
 
 
 ```
-  
-## Quick  
-  
-to be added  
-  
-## FORTH  
-  
-to be added  
+
+## Quick
+
+to be added
+
+## FORTH
+
+to be added

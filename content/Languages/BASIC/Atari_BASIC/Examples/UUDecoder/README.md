@@ -1,7 +1,7 @@
 ---
 title: UUDecoder
 ---
-  
+
 ```
                           U S E R   M A N U A L
 
@@ -16,168 +16,168 @@ title: UUDecoder
                            (617) 271-2000 (work)
 
 ```
-  
-## 1.  PURPOSE:  
-  
-Uudecode is the decoder for uuencode, a program widely used on unix systems to  
-encode binary files into printing ASCII characters for transmission over  
-networks.  Because many network components interpret and respond to special  
-"control" characters, attempts to send binary files such as machine-language  
-programs over a network in raw, un-encoded form are usually doomed to failure.  
-Uuencode has become popular for encoding because it is fairly efficient:  
-it encodes each group of three 8-bit bytes into only four bytes of printable  
-characters.  Therefore, using uuencode, a file is expanded by a factor of only  
-1.333 to one as the price of constraining the character set to be limited to  
-printing characters only.  
-  
-  
-## 2.  USING UUDECODE VER. 1.2a:  
-  
-UUDECODE VER. 1.2a is normally sent by e-mail as an Atari BASIC ".LST" file.  
-This means that it consists of only printing characters itself, and can be  
-mailed, printed, etc. without difficulty.  On the other hand, the first time  
-you run it, you will have to "ENTER" it into BASIC with a command like  
-'ENTER "D:UUDECODE.LST"<RETURN>'.  Then you should SAVE it with the command  
-'SAVE "D:UUDECODE.BAS"<RETURN>'.  Thereafter, you can run it under BASIC with  
-the RUN command instead of the ENTER command. You will immediately notice that  
-RUN works significantly faster.  This is true because SAVED files are in  
-tokenized form.  You can delete the .LST file if you wish, because it can  
-always be reconstructed using the LIST command, but you should be sure to keep  
-a backup copy of UUDECODE in some form on a separate disk from the one you  
-normally run it from.  Keeping the .LST file around is handy if you decide to  
-e-mail it to someone else someday.  
-  
-Once you have UUDECODE running, it will ask you for the input file you wish to  
-uudecode and the filename you want the output to be sent to.  You should give  
-it the exact input file specification you want it to use, i.e. including  
-device, filename, and extension.  Normally, uuencoded files are given the  
-extenion ".UUE", but you will have to tell the program that.  On the output  
-file specification, however, the program will accept either a null input  
-(just a <RETURN>) or a device specifier like D1: without a filename, or you  
-can again specify the full filename and extension.  In the first two cases, it  
-will attempt to read the filename from the "begin" line of the uuencoded input  
-file.  If you don't even specify a device name, it will assume "D1:" and will  
-so inform you.  If it cannot successfully OPEN the file it thinks you want,  
-it will give you another chance to enter the output filename.  Before it gets  
-to this point, however, it will have printed the "begin" line if one was  
-found, so you may have a clue as to what went wrong, e.g. a filename was given  
-which is not valid for your DOS.  In that case, you should think up a valid  
-filename that seems suitable.  
-  
-After finishing a file, UUDECODE will print "Done!" and will ask if you want  
-to decode another file.  If you say "Y" or "yes", it will re-initialize and  
-allow you to enter the new input and output filenames.  Otherwise, it will  
-exit to DOS.  NOTE:  UUDECODE Ver. 1.2a also prints a byte count when it  
-finishes.  You should note this count and compare it with the correct byte  
-count as established when the file was being uuencoded.  
-  
-That's about all there is to it.  Comments on this manual, as well as on any  
-difficulties experienced with UUDECODE, should be directed to the author.  
-  
-  
-## 3.  WHAT UUENCODE AND UUDECODE REALLY DO TO THE DATA:  
-  
-The uuencoding process, used to create ASCII files of the type that UUDECODE  
-is designed to decode, is easy to describe.  Each group of three input bytes,  
-with any 8-bit pattern whatever in them, is broken up into four sets of six  
-bits.  (Note that three times 8 and four times 6 each give exactly 24 bits, so  
-no information is lost.)  Each 6-bit pattern is put in the low-order 6 bits of  
-an 8-bit byte, and decimal 32 is added to give a final value in the range 32  
-(ASCII blank) through 95.  All the characters in this range (decimal 32  
-through 95) are printing characters.  
-  
-Traditionally, uuencode programs take 45 bytes at a time from the input file  
-as long as bytes are available, and encode them into 60 output bytes which are  
-sent as one "line".  Each line is made up as an encoded byte count, the 60  
-encoded bytes of data, and an end-of-line character or characters.  The  
-encoded byte count is the actual number of input bytes encoded on that line,  
-plus decimal 32.  For all lines but the last, this gives 45 plus 32, or 77,  
-which translates into ASCII uppercase "M".  That is why all lines but the last  
-in a uuencoded file begin with "M".  The final line of data begins with a  
-character which is between "blank" (32) and "M" (77) in the ASCII "collating  
-sequence".  The exact value depends on how many bytes were left in the input  
-file after the last full line of 45 was used up.  
-  
-Uuencode programs usually sandwich these lines of data between a "begin" line  
-and an "end" sequence.  The "begin" line consists of the word "begin", a  
-single space, a 3-digit "protection code" as used by unix systems, another  
-single space, and finally the filename which should be used for the file into  
-which the data is decoded at the far end.  The "end" sequence is supposed to  
-consist of a line containing a blank in the first character position, denoting  
-zero encoded bytes on that line, followed by a line beginning with the word  
-"end".  Some unix-based uudecoders seem to require additional blanks following  
-these minimum fields.  
-  
-Uudecode is supposed to be the exact inverse of uuencode, i.e. after decoding  
-a uuencoded file, you should have the exact binary file that was originally  
-encoded.  This is essential, because the whole purpose of uuencode and  
-uudecode is to let you transmit machine language object programs around on  
-networks.  If even one bit is changed, all bets are off!  The basic idea of  
-uudecode is therefore to take each line in, subtract 32 from each of the 60 or  
-fewer bytes, pack each group of 6 bits in the low-order portion of each byte  
-back into 8-bit packed binary form, and write the re-packed bytes out to a  
-binary output file.  
-  
-  
-## 4.  PITFALLS:  
-  
-Unfortunately, as uuencode has been adopted wholesale for use in transmitting  
-binary files across networks, it has turned out that not all network hosts are  
-as careful what they do with files as are most unix hosts.  IBM hosts are  
-among the most notoriously callous about changing byte values to suit their  
-own preconceived notions.  Most of the time, the changes consist of things  
-like stripping off trailing blanks on lines that happen to end in a blank.  
-This can be embarrassing if not handled properly by the decoder.  Another  
-favorite trick is to change carat into accent grave, or tilde into carat, or  
-what-have-you.  The only reliable way to handle this sort of problem seems to  
-be for the uuencode program to send an encoding translation table at the  
-beginning, which lists all the output characters from decimal 32 to 95, and  
-for the uudecode program to capture the values received in their place and  
-decode accordingly.  If they have not been mapped one-to-one, of course it can  
-only throw up its hands in dismay and so inform you.  
-  
-  
-## 5.  CAPABILITIES OF UUDECODE VER. 1.2a:  
-  
-UUDECODE Ver. 1.2a as described by this manual includes masking to correct the  
-most common character translation problems, i.e. those which result in encoded  
-values greater than 95.  It correctly decodes files in which a "sentinel"  
-character (usually "a" or "x") has been added to the end of the uuencoded  
-lines to prevent stripping of trailing blanks, as well as files in which  
-trailing blanks have actually been stripped!  It does NOT process the  
-"translation table" preamble added by some uuencodes; this may be added in a  
-future revision.  
-  
-This version also is capable of reading the output filename from the uuencoded  
-file.  This will be done if you specify only a DEVICE NAME, e.g. "D1:", or  
-respond with just a <RETURN> to the output file prompt.  
-  
-Finally, Ver. 1.2a is smart enough to ignore extraneous lines in the input  
-file either before the "begin" line or after the "end" line.  This means that  
-it can be used to decode uuencoded files which are preceded by explanatory  
-comments in an e-mail message.  On the other hand, this version can only  
-decode ONE uuencoded file per input file.  If you receive a message containing  
-multiple files, you will have to break up the input file into separate files  
-for uudecoding.  A future release may allow more flexibility.  
-  
-UUDECODE Ver. 1.2a is fairly fast.  An assembly-language subroutine is used to  
-do the "bit-picking" dirty work.  This routine is quite efficient, despite the  
-fact that it includes such conveniences as checking the DIMensioning of the  
-string used as the output buffer and setting its LENgth parameter correctly.  
-These features cost a small amount in assembly language but they save the  
-BASIC calling program from having to worry about such details, which would be  
-far more costly to implement in BASIC.  The main program of UUDECODE.LST is  
-also optimized for speed, mainly by putting the inner loop "up front", where  
-BASIC doesn't have to search very far for statement numbers, and by keeping  
-the loop short, especially on the most frequently used path.  To give you an  
-idea of just HOW fast this program is, a fairly knowledgeable programmer coded  
-uudecode up in C in an effort to get better performance and then noted  
-afterward that Ver. 1.2a in BASIC and assembly language ran approximately FIVE  
-TIMES as fast as his C version!  I think you will find Ver. 1.2a highly  
-satisfactory with regard to execution speed.  
-  
+
+## 1.  PURPOSE:
+
+Uudecode is the decoder for uuencode, a program widely used on unix systems to
+encode binary files into printing ASCII characters for transmission over
+networks.  Because many network components interpret and respond to special
+"control" characters, attempts to send binary files such as machine-language
+programs over a network in raw, un-encoded form are usually doomed to failure.
+Uuencode has become popular for encoding because it is fairly efficient:
+it encodes each group of three 8-bit bytes into only four bytes of printable
+characters.  Therefore, using uuencode, a file is expanded by a factor of only
+1.333 to one as the price of constraining the character set to be limited to
+printing characters only.
+
+
+## 2.  USING UUDECODE VER. 1.2a:
+
+UUDECODE VER. 1.2a is normally sent by e-mail as an Atari BASIC ".LST" file.
+This means that it consists of only printing characters itself, and can be
+mailed, printed, etc. without difficulty.  On the other hand, the first time
+you run it, you will have to "ENTER" it into BASIC with a command like
+'ENTER "D:UUDECODE.LST"<RETURN>'.  Then you should SAVE it with the command
+'SAVE "D:UUDECODE.BAS"<RETURN>'.  Thereafter, you can run it under BASIC with
+the RUN command instead of the ENTER command. You will immediately notice that
+RUN works significantly faster.  This is true because SAVED files are in
+tokenized form.  You can delete the .LST file if you wish, because it can
+always be reconstructed using the LIST command, but you should be sure to keep
+a backup copy of UUDECODE in some form on a separate disk from the one you
+normally run it from.  Keeping the .LST file around is handy if you decide to
+e-mail it to someone else someday.
+
+Once you have UUDECODE running, it will ask you for the input file you wish to
+uudecode and the filename you want the output to be sent to.  You should give
+it the exact input file specification you want it to use, i.e. including
+device, filename, and extension.  Normally, uuencoded files are given the
+extenion ".UUE", but you will have to tell the program that.  On the output
+file specification, however, the program will accept either a null input
+(just a <RETURN>) or a device specifier like D1: without a filename, or you
+can again specify the full filename and extension.  In the first two cases, it
+will attempt to read the filename from the "begin" line of the uuencoded input
+file.  If you don't even specify a device name, it will assume "D1:" and will
+so inform you.  If it cannot successfully OPEN the file it thinks you want,
+it will give you another chance to enter the output filename.  Before it gets
+to this point, however, it will have printed the "begin" line if one was
+found, so you may have a clue as to what went wrong, e.g. a filename was given
+which is not valid for your DOS.  In that case, you should think up a valid
+filename that seems suitable.
+
+After finishing a file, UUDECODE will print "Done!" and will ask if you want
+to decode another file.  If you say "Y" or "yes", it will re-initialize and
+allow you to enter the new input and output filenames.  Otherwise, it will
+exit to DOS.  NOTE:  UUDECODE Ver. 1.2a also prints a byte count when it
+finishes.  You should note this count and compare it with the correct byte
+count as established when the file was being uuencoded.
+
+That's about all there is to it.  Comments on this manual, as well as on any
+difficulties experienced with UUDECODE, should be directed to the author.
+
+
+## 3.  WHAT UUENCODE AND UUDECODE REALLY DO TO THE DATA:
+
+The uuencoding process, used to create ASCII files of the type that UUDECODE
+is designed to decode, is easy to describe.  Each group of three input bytes,
+with any 8-bit pattern whatever in them, is broken up into four sets of six
+bits.  (Note that three times 8 and four times 6 each give exactly 24 bits, so
+no information is lost.)  Each 6-bit pattern is put in the low-order 6 bits of
+an 8-bit byte, and decimal 32 is added to give a final value in the range 32
+(ASCII blank) through 95.  All the characters in this range (decimal 32
+through 95) are printing characters.
+
+Traditionally, uuencode programs take 45 bytes at a time from the input file
+as long as bytes are available, and encode them into 60 output bytes which are
+sent as one "line".  Each line is made up as an encoded byte count, the 60
+encoded bytes of data, and an end-of-line character or characters.  The
+encoded byte count is the actual number of input bytes encoded on that line,
+plus decimal 32.  For all lines but the last, this gives 45 plus 32, or 77,
+which translates into ASCII uppercase "M".  That is why all lines but the last
+in a uuencoded file begin with "M".  The final line of data begins with a
+character which is between "blank" (32) and "M" (77) in the ASCII "collating
+sequence".  The exact value depends on how many bytes were left in the input
+file after the last full line of 45 was used up.
+
+Uuencode programs usually sandwich these lines of data between a "begin" line
+and an "end" sequence.  The "begin" line consists of the word "begin", a
+single space, a 3-digit "protection code" as used by unix systems, another
+single space, and finally the filename which should be used for the file into
+which the data is decoded at the far end.  The "end" sequence is supposed to
+consist of a line containing a blank in the first character position, denoting
+zero encoded bytes on that line, followed by a line beginning with the word
+"end".  Some unix-based uudecoders seem to require additional blanks following
+these minimum fields.
+
+Uudecode is supposed to be the exact inverse of uuencode, i.e. after decoding
+a uuencoded file, you should have the exact binary file that was originally
+encoded.  This is essential, because the whole purpose of uuencode and
+uudecode is to let you transmit machine language object programs around on
+networks.  If even one bit is changed, all bets are off!  The basic idea of
+uudecode is therefore to take each line in, subtract 32 from each of the 60 or
+fewer bytes, pack each group of 6 bits in the low-order portion of each byte
+back into 8-bit packed binary form, and write the re-packed bytes out to a
+binary output file.
+
+
+## 4.  PITFALLS:
+
+Unfortunately, as uuencode has been adopted wholesale for use in transmitting
+binary files across networks, it has turned out that not all network hosts are
+as careful what they do with files as are most unix hosts.  IBM hosts are
+among the most notoriously callous about changing byte values to suit their
+own preconceived notions.  Most of the time, the changes consist of things
+like stripping off trailing blanks on lines that happen to end in a blank.
+This can be embarrassing if not handled properly by the decoder.  Another
+favorite trick is to change carat into accent grave, or tilde into carat, or
+what-have-you.  The only reliable way to handle this sort of problem seems to
+be for the uuencode program to send an encoding translation table at the
+beginning, which lists all the output characters from decimal 32 to 95, and
+for the uudecode program to capture the values received in their place and
+decode accordingly.  If they have not been mapped one-to-one, of course it can
+only throw up its hands in dismay and so inform you.
+
+
+## 5.  CAPABILITIES OF UUDECODE VER. 1.2a:
+
+UUDECODE Ver. 1.2a as described by this manual includes masking to correct the
+most common character translation problems, i.e. those which result in encoded
+values greater than 95.  It correctly decodes files in which a "sentinel"
+character (usually "a" or "x") has been added to the end of the uuencoded
+lines to prevent stripping of trailing blanks, as well as files in which
+trailing blanks have actually been stripped!  It does NOT process the
+"translation table" preamble added by some uuencodes; this may be added in a
+future revision.
+
+This version also is capable of reading the output filename from the uuencoded
+file.  This will be done if you specify only a DEVICE NAME, e.g. "D1:", or
+respond with just a <RETURN> to the output file prompt.
+
+Finally, Ver. 1.2a is smart enough to ignore extraneous lines in the input
+file either before the "begin" line or after the "end" line.  This means that
+it can be used to decode uuencoded files which are preceded by explanatory
+comments in an e-mail message.  On the other hand, this version can only
+decode ONE uuencoded file per input file.  If you receive a message containing
+multiple files, you will have to break up the input file into separate files
+for uudecoding.  A future release may allow more flexibility.
+
+UUDECODE Ver. 1.2a is fairly fast.  An assembly-language subroutine is used to
+do the "bit-picking" dirty work.  This routine is quite efficient, despite the
+fact that it includes such conveniences as checking the DIMensioning of the
+string used as the output buffer and setting its LENgth parameter correctly.
+These features cost a small amount in assembly language but they save the
+BASIC calling program from having to worry about such details, which would be
+far more costly to implement in BASIC.  The main program of UUDECODE.LST is
+also optimized for speed, mainly by putting the inner loop "up front", where
+BASIC doesn't have to search very far for statement numbers, and by keeping
+the loop short, especially on the most frequently used path.  To give you an
+idea of just HOW fast this program is, a fairly knowledgeable programmer coded
+uudecode up in C in an effort to get better performance and then noted
+afterward that Ver. 1.2a in BASIC and assembly language ran approximately FIVE
+TIMES as fast as his C version!  I think you will find Ver. 1.2a highly
+satisfactory with regard to execution speed.
+
 ---
-  
+
 ```
 1 GOTO 100:REM jump around time-critical stuff to start up program.
 2 M=USR(UUDADR)

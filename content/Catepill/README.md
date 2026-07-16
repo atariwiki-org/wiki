@@ -1,39 +1,39 @@
 ---
 title: Catepill
 ---
-### Catepill  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION / Bibo Assembler   
-Published: 	14.06.2006   
-  
-(c) 1990, Carsten Strotmann  
-  
-unfinished Game with Level Editor  
-  
-written in ACTION!  
-  
-  
-## Game Idea:  
-  
-Catapill is Sokoban on steroids: you drive the small catepill around in a huge warehouse and must complete missions  
-  
-There are several good in the warehouse, and rules that must be observed:  
-- containers with base (L) and Acid (S) should never be stored side-by-side, else.....  
-- containers including magnetics (positive and negative available) should never stored next to iron boxes, else they stick together  
-- some containers contain explosives  
-- some contain hidden time-bombs, that are acitivated once the container is moved  
-- the catapill needs to refill gas from time to time  
-- the catapill can be damaged, so it is running slower, or can only turn in one direction  
-- there was also the idea to include some ideas from the boardgame "roborally" in this game  
-  
-## How to use  
-  
-boot attached Disk, on the DOS prompt, start "CTG2.COM" for a shortly playable version with Splash-Screen, or first load "CATAPILL.COM" and then "C.COM" for the latest binary of the game. start "CEDIT.COM" for the Level Editor.  
-  
+### Catepill
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION / Bibo Assembler
+Published: 	14.06.2006
+
+(c) 1990, Carsten Strotmann
+
+unfinished Game with Level Editor
+
+written in ACTION!
+
+
+## Game Idea:
+
+Catapill is Sokoban on steroids: you drive the small catepill around in a huge warehouse and must complete missions
+
+There are several good in the warehouse, and rules that must be observed:
+- containers with base (L) and Acid (S) should never be stored side-by-side, else.....
+- containers including magnetics (positive and negative available) should never stored next to iron boxes, else they stick together
+- some containers contain explosives
+- some contain hidden time-bombs, that are acitivated once the container is moved
+- the catapill needs to refill gas from time to time
+- the catapill can be damaged, so it is running slower, or can only turn in one direction
+- there was also the idea to include some ideas from the boardgame "roborally" in this game
+
+## How to use
+
+boot attached Disk, on the DOS prompt, start "CTG2.COM" for a shortly playable version with Splash-Screen, or first load "CATAPILL.COM" and then "C.COM" for the latest binary of the game. start "CEDIT.COM" for the Level Editor.
+
 ```
 ;********************************
 ;**                            **

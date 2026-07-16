@@ -1,7 +1,7 @@
 ---
 title: Forth sorting routines
 ---
-  
+
 ```
 SCR # 21
   0 ( 16 bit Numerical Sort Demo                      20AUG82MIM)   
@@ -152,4 +152,4 @@ SCR # 27
 
 
 ```
-  
+

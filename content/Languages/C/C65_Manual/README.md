@@ -1,9 +1,9 @@
 # C/65 Manual
-  
-''work in progress'' -- Please help by copying the OCR text from the original PDF, fix the OCR errors and append here  
-  
-- [new PDF from the pure text version](attachments/c65manual.pdf)  
-  
+
+''work in progress'' -- Please help by copying the OCR text from the original PDF, fix the OCR errors and append here
+
+- [new PDF from the pure text version](attachments/c65manual.pdf)
+
 ```
 		      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 			      C/65 MANUAL

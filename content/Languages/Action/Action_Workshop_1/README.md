@@ -1,13 +1,13 @@
 ---
 title: Action Workshop 1
 ---
-# Action! Workshop 1 organized by [ABBUC](https://abbuc.de)  
-  
-24th October 2010 "[Unperfekthaus](https://www.unperfekthaus.de/)" Essen  
-  
-![](attachments/IMG_0009.jpg)![](attachments/IMG_0011.jpg)  
-  
-## The MENUE Program  
+# Action! Workshop 1 organized by [ABBUC](https://abbuc.de)
+
+24th October 2010 "[Unperfekthaus](https://www.unperfekthaus.de/)" Essen
+
+![](attachments/IMG_0009.jpg)![](attachments/IMG_0011.jpg)
+
+## The MENUE Program
 ```
 BYTE NUMPLAYER, LEVEL
 BYTE CONSOL=53279
@@ -126,9 +126,9 @@ PROC MAIN()
 
 RETURN      
 ```
-  
-## The DLI  
-  
+
+## The DLI
+
 ```
 ; DLI
 

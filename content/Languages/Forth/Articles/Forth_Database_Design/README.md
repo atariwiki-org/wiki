@@ -202,7 +202,7 @@ title: Forth Database design
               14    DROP ELSE  1+ 1 DO FORTH I READ .REC LOOP THEN  CR CR ;
               15 EXIT
 ```
-  
+
 ```
                        MOUNTAIN VIEW PRESS FORTH  VERSION 1.01.03
                  COLD MVP-FORTH   VERSION 1.01.03

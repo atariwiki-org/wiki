@@ -1,3 +1,3 @@
 # Carsten Strotmann
 
-Wiki Maintainer  
+Wiki Maintainer

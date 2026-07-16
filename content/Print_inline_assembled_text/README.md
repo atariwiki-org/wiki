@@ -1,18 +1,18 @@
 ---
 title: Print inline assembled text
 ---
-General Information   
-Author: CompyShop   
-Assembler: Bibo Assembler   
-Published: Bibo Assembler Toolkit Disk   
-  
-Textprintroutine through Stack. Routine must be  
-called by JSR. Text inline after the JSR-Statement.  
-The text must end with an end-maker (here the @-sign)  
-The programm will be continued after the inline-text.  
-  
-(c) CompyShop (c) ABBUC e.V.  
-  
+General Information
+Author: CompyShop
+Assembler: Bibo Assembler
+Published: Bibo Assembler Toolkit Disk
+
+Textprintroutine through Stack. Routine must be
+called by JSR. Text inline after the JSR-Statement.
+The text must end with an end-maker (here the @-sign)
+The programm will be continued after the inline-text.
+
+(c) CompyShop (c) ABBUC e.V.
+
 ```
 00010 ------------------------------
 00020 * Textprintroutine through   *
@@ -60,4 +60,4 @@ The programm will be continued after the inline-text.
 00440 ------------------------------
 
 ```
-  
+

@@ -1,17 +1,17 @@
 ---
 title: Chartest
 ---
-# Chartest  
-  
-a group of routines which perform various functions and tests on characters.  
-  
-General Information  
-  
-Author: 	OSS,Inc   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	1984   
-  
+# Chartest
+
+a group of routines which perform various functions and tests on characters.
+
+General Information
+
+Author: 	OSS,Inc
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	1984
+
 ```
 ;												
 ;

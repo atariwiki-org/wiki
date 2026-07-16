@@ -1,8 +1,8 @@
 ---
 title: Memopad Demo
 ---
-# Memopad Demo  
-  
+# Memopad Demo
+
 ```
 00010          .LI OFF
 00020          .OR $4000

@@ -1,6 +1,6 @@
-# Copy OS ROM to RAM  
+# Copy OS ROM to RAM
 
-by Russ Gilbert, found in comp.sys.atari.8bit  
+by Russ Gilbert, found in comp.sys.atari.8bit
 
 Assembler: MAC/65
 

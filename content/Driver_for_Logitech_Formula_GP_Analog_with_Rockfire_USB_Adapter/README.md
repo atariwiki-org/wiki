@@ -1,45 +1,45 @@
 ---
 title: Driver for Logitech Formula GP Analog with Rockfire USB Adapter
 ---
-# Driver for Logitech Formula GP Analog with Rockfire USB Adapter  
-  
-  
-  
-  
-Tested with a Logitec Formula GP Wheel (Analog Version) and a Rockfire USB Adapter set to switch "1". Other Logitech Wheels might work. Please send feedback.  
-  
-![](attachments/LogitechFormulaGP.jpg)  
-  
-  
-The RockFire Adapter can be used to attach all kinds of PC Controller with Game-Port Interface via USB to the Atari USB Cart.  
-  
-The Rockfire USB-Nest Joystick Converter extends the USB port to support all conventional analog 15-pin game port controllers. This converter is built with a unique 4-mode selectable switch for maximum compatibility with CMS Controller super 8 + (Mode 4).  
-  
-Features:  
-  
-- Mode Selector switch  
-- Mode 1: (TM FCS compatible)  
-- Mode 2: (CH FLIGHTSTICK PRO compatible)  
-- Mode 3: 2-4 Axis (X and Y), 4 Function buttons  
-- Mode 4: 2 Axis (X and Y), 8 Function buttons  
-  
-![](attachments/usb-nest-trnsprnt.gif)  
-  
-## Description  
-  
-|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||  
-|  $10           |  1                 | Wheel movement  | $270 (624)  | PADDL0 | LWHEEL     |  
-|  $11           |  2                 | Buttons 1-6 | $271 (625)  | PADDL1 | LBUTTON     |  
-  
-  
-- Byte 1: Wheel movement (< $25 = left, $26-$2F = middle, >$30 = right)  
-- Byte 2: Buttons 1-6  
-  
-  
-## Device dependent source  
-  
-This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).  
-  
+# Driver for Logitech Formula GP Analog with Rockfire USB Adapter
+
+
+
+
+Tested with a Logitec Formula GP Wheel (Analog Version) and a Rockfire USB Adapter set to switch "1". Other Logitech Wheels might work. Please send feedback.
+
+![](attachments/LogitechFormulaGP.jpg)
+
+
+The RockFire Adapter can be used to attach all kinds of PC Controller with Game-Port Interface via USB to the Atari USB Cart.
+
+The Rockfire USB-Nest Joystick Converter extends the USB port to support all conventional analog 15-pin game port controllers. This converter is built with a unique 4-mode selectable switch for maximum compatibility with CMS Controller super 8 + (Mode 4).
+
+Features:
+
+- Mode Selector switch
+- Mode 1: (TM FCS compatible)
+- Mode 2: (CH FLIGHTSTICK PRO compatible)
+- Mode 3: 2-4 Axis (X and Y), 4 Function buttons
+- Mode 4: 2 Axis (X and Y), 8 Function buttons
+
+![](attachments/usb-nest-trnsprnt.gif)
+
+## Description
+
+|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||
+|  $10           |  1                 | Wheel movement  | $270 (624)  | PADDL0 | LWHEEL     |
+|  $11           |  2                 | Buttons 1-6 | $271 (625)  | PADDL1 | LBUTTON     |
+
+
+- Byte 1: Wheel movement (< $25 = left, $26-$2F = middle, >$30 = right)
+- Byte 2: Buttons 1-6
+
+
+## Device dependent source
+
+This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).
+
 ```
 01000          .LI OFF
 01010 ****************************
@@ -155,9 +155,9 @@ This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.
 02190          RTS
 02200 ------------------------------
 ```
-  
-## PolePosition Patch  
-  
+
+## PolePosition Patch
+
 ```
 01000          .LI OFF
 01010 ****************************
@@ -711,7 +711,7 @@ This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.
 06730          .DA WAITDEVICE
 06740 ------------------------------
 ```
-  
-Source and patched PolePosition Game can be found on ATR Disk attached to this article.  
-  
-  
+
+Source and patched PolePosition Game can be found on ATR Disk attached to this article.
+
+

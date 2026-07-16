@@ -1,21 +1,21 @@
 ---
 title: Printing Routine for Epson Printer
 ---
-# Printing Routine for Epson Printer  
-  
-General Information  
-  
-Author: 	Leo G. Laporte   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	1983   
-  
-EPSON/ATASCII PRINT FORMATTER  
-  
-Prints listed BASIC programs and text using Epson bit mode graphics to print non-ASCII characters  
-  
-With suitable changes to the Epson specific variables immediately below, this program will work with a number of other graphic printers.  
-  
+# Printing Routine for Epson Printer
+
+General Information
+
+Author: 	Leo G. Laporte
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	1983
+
+EPSON/ATASCII PRINT FORMATTER
+
+Prints listed BASIC programs and text using Epson bit mode graphics to print non-ASCII characters
+
+With suitable changes to the Epson specific variables immediately below, this program will work with a number of other graphic printers.
+
 ```
   ;++++++++++++++++++++++++++++++++++++
 ; EPSON/ATASCII PRINT FORMATTER  

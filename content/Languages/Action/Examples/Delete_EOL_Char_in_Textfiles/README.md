@@ -1,15 +1,15 @@
 ---
 title: Delete EOL Char in Textfiles
 ---
-# Delete EOL Char in Textfiles  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	27.04.90   
-  
+# Delete EOL Char in Textfiles
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	27.04.90
+
 ```
 ;********************************
 ;**									 **

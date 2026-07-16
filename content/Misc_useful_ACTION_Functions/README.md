@@ -1,14 +1,14 @@
 ---
 title: Misc useful ACTION Functions
 ---
-# Misc useful ACTION! Functions  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-  
+# Misc useful ACTION! Functions
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+
 ```
 ;******************************
 ;**                          **

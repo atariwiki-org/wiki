@@ -1,12 +1,12 @@
 ---
 title: Atari XL.XE Copy ROM to RAM
 ---
-  
-  
-# Copy OS ROM to RAM  
-  
-by Russ Gilbert, found in comp.sys.atari.8bit  
-  
+
+
+# Copy OS ROM to RAM
+
+by Russ Gilbert, found in comp.sys.atari.8bit
+
 ```
 'MOVEOS.M65'
 10       .TITLE      MOVE OS TO RAM
@@ -55,6 +55,6 @@ by Russ Gilbert, found in comp.sys.atari.8bit
 0440     .END 
 **************
 ```
-  
-Russ Gilbert  
-  
+
+Russ Gilbert
+

@@ -1,9 +1,9 @@
 # ATARI Basic Autorun Loader
 
-Two Autorun Routines that can start Atari Basic Programs  
-  
-## Version 1  
-  
+Two Autorun Routines that can start Atari Basic Programs
+
+## Version 1
+
 ```
 10 ;LIST #D:AUTOBAS.SRC
 20 ;
@@ -108,9 +108,9 @@ Two Autorun Routines that can start Atari Basic Programs
 0930	  *=  $02E2
 0940	  .WORD MAIN
 ```
-  
-## Version 2  
-  
+
+## Version 2
+
 ```
 10 ; Routine for AUTORUN.SYS
 20 HATABS =  $031A

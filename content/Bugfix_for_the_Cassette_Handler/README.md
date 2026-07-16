@@ -1,16 +1,16 @@
 ---
 title: Bugfix for the Cassette Handler
 ---
-  
-  
-Fixes bugs in tape handler (except when in DOS menu-- but you can't use C: there --DOS checks for that)  
-  
-Thoms Newton, 1/23/1983  
-  
-Feel free to give copies to any person or club  
-  
-The program uses the INIT vector, so you should be able to append about anything else to it--like the RS-232 driver patch.  
-  
+
+
+Fixes bugs in tape handler (except when in DOS menu-- but you can't use C: there --DOS checks for that)
+
+Thoms Newton, 1/23/1983
+
+Feel free to give copies to any person or club
+
+The program uses the INIT vector, so you should be able to append about anything else to it--like the RS-232 driver patch.
+
 ```
 1000 REM **************************
 1010 REM ** BUGFIX--disk version **
@@ -98,14 +98,14 @@ The program uses the INIT vector, so you should be able to append about anything
 1830 DATA 0,226,2,227,2,252,28
 ```
 ---
-  
-This program creates an autoboot tape that patches the cassette handler.  To load the tape, hold the START button down when you turn the power on.  When you hear the beep, press PLAY, then RETURN.  
-  
-Thomas Newton, 1/23/1983  
-  
-You are encouraged to give copies to any person or club.  
-  
-  
+
+This program creates an autoboot tape that patches the cassette handler.  To load the tape, hold the START button down when you turn the power on.  When you hear the beep, press PLAY, then RETURN.
+
+Thomas Newton, 1/23/1983
+
+You are encouraged to give copies to any person or club.
+
+
 ```
 1000 REM **************************
 1010 REM ** BUGFIX--tape version **
@@ -170,4 +170,4 @@ You are encouraged to give copies to any person or club.
 1600 DATA 210,141,3,210,141,5,210,141
 1610 DATA 7,210,104,40,96,0,0
 ```
-  
+

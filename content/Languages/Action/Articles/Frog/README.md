@@ -1,19 +1,19 @@
 ---
 title: Frog
 ---
-# Frog from Antic Vol. 6 #10 February 1988  
-Frog is a game from the Antic magazine, published in February 1988  
-  
-## ATR Image  
-- [Antic_88_feb_a.atr](attachments/Antic_88_feb_a.atr) ; Thanks to Jason Scott for uploading to archive.org!  
-  
-## Reference  
-- [Antic Vol. 6 #10 February 1988](https://archive.org/details/a8b_antic_88_feb_a) ; Thanks to Jason Scott for uploading to archive.org!  
-  
-## Ad  
-- [Antic_Feb_88_Reardoor.pdf](attachments/Antic_Feb_88_Reardoor.pdf) ; size: 1.4 MB ; Thank you very much GoodByteXL!  
-  
-## Source Code  
+# Frog from Antic Vol. 6 #10 February 1988
+Frog is a game from the Antic magazine, published in February 1988
+
+## ATR Image
+- [Antic_88_feb_a.atr](attachments/Antic_88_feb_a.atr) ; Thanks to Jason Scott for uploading to archive.org!
+
+## Reference
+- [Antic Vol. 6 #10 February 1988](https://archive.org/details/a8b_antic_88_feb_a) ; Thanks to Jason Scott for uploading to archive.org!
+
+## Ad
+- [Antic_Feb_88_Reardoor.pdf](attachments/Antic_Feb_88_Reardoor.pdf) ; size: 1.4 MB ; Thank you very much GoodByteXL!
+
+## Source Code
 ```
 ; FROG
 ; BY GREG KNAUSS

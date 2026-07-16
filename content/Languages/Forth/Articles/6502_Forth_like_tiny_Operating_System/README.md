@@ -1,9 +1,9 @@
 ---
 title: 6502 Forth like tiny Operating System
 ---
-# 6502 Forth like tiny OS  
-  
-  
+# 6502 Forth like tiny OS
+
+
 ```
 ;
 ; LCD.AS
@@ -1061,4 +1061,4 @@ ORG     $FFFA
 .WORD   IRQ             ; IRQ vector (and BRK vector)
 .END    BOOT
 ```
-  
+

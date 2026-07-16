@@ -1,38 +1,38 @@
-# EXTENDED Atari fig-FORTH, Cassette: APX-10029, Diskette: APX-20029 (Atari Program Exchange)  
-  
-  
-## Disks  
-  
-[APX_Extended_Fig_Forth.atr](attachments/APX_Extended_Fig_Forth.atr)  
-  
-## Earlier versions  
-  
-Earlier versions of this Forth were sold or otherwise distributed by the Author:  
-- "NMV Forth" (or: "NWV Forth"); lost  
-- "S*P*A*C*E Forth" ("s*p*a*c*e fig4th 1.1") ''(files to be amended)''  
-  
-  
-## Official add-ons:  
-- fun-FORTH (APX-20146) - with manual ''(files to be amended / linked)''  
-- FORTH Turtle Graphics Plus (APX-20157) - with manual ''(files to be amended / linked)''  
-  
-## Manuals  
-  
-[Extended_fig-FORTH_-_APX_APX-20029.pdf](attachments/Extended_fig-FORTH_-_APX_APX-20029.pdf) size: 7.7 MB ; EXTENDED fig-FORTH, Rev. 1, 1981 by Patrick L. Mullarky  
-[EXTENDED_fig-FORTH_Rev.2.pdf](attachments/EXTENDED_fig-FORTH_Rev.2.pdf) size: 7.7 MB ; EXTENDED fig-FORTH, Rev. 2, Edition B, 1982 by Patrick L. Mullarky ; donated by Allan Bushman, thank you so much Allen in the name of the Atari community! :-)  
-  
-## Making APX Extended fig-FORTH Turn-key  
-It is possible to make APX Extended fig-FORTH (and most fig-FORTH implementations) execute a word upon boot.  
-For example, to make the interpreter execute the word MYPROGRAM, enter the following:  
-```  
+# EXTENDED Atari fig-FORTH, Cassette: APX-10029, Diskette: APX-20029 (Atari Program Exchange)
+
+
+## Disks
+
+[APX_Extended_Fig_Forth.atr](attachments/APX_Extended_Fig_Forth.atr) 
+
+## Earlier versions
+
+Earlier versions of this Forth were sold or otherwise distributed by the Author:
+- "NMV Forth" (or: "NWV Forth"); lost
+- "S*P*A*C*E Forth" ("s*p*a*c*e fig4th 1.1") ''(files to be amended)''
+
+
+## Official add-ons:
+- fun-FORTH (APX-20146) - with manual ''(files to be amended / linked)''
+- FORTH Turtle Graphics Plus (APX-20157) - with manual ''(files to be amended / linked)''
+
+## Manuals
+
+[Extended_fig-FORTH_-_APX_APX-20029.pdf](attachments/Extended_fig-FORTH_-_APX_APX-20029.pdf) size: 7.7 MB ; EXTENDED fig-FORTH, Rev. 1, 1981 by Patrick L. Mullarky
+[EXTENDED_fig-FORTH_Rev.2.pdf](attachments/EXTENDED_fig-FORTH_Rev.2.pdf) size: 7.7 MB ; EXTENDED fig-FORTH, Rev. 2, Edition B, 1982 by Patrick L. Mullarky ; donated by Allan Bushman, thank you so much Allen in the name of the Atari community! :-)
+
+## Making APX Extended fig-FORTH Turn-key
+It is possible to make APX Extended fig-FORTH (and most fig-FORTH implementations) execute a word upon boot.
+For example, to make the interpreter execute the word MYPROGRAM, enter the following:
+```
 ' MYPROGRAM CFA ' ABORT 4 + !  
-```  
-Followed by a  
-```  
+```
+Followed by a
+```
 SAVE  
-```  
-  
-## Screens  
+```
+
+## Screens
 ```
 SCR # 14 
   0 ( ERROR MESSAGES )
@@ -1367,5 +1367,5 @@ SCR # 87
  15 
 
 ```
-  
-  
+
+

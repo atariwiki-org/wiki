@@ -1,51 +1,51 @@
 ---
 title: More Fun with Bounce
 ---
-### General Information  
-Author: Joel Gluck  
-Language: ACTION!  
-Compiler/Interpreter: ACTION!  
-Published: Analog #27 (02/ 85)  
+### General Information
+Author: Joel Gluck
+Language: ACTION!
+Compiler/Interpreter: ACTION!
+Published: Analog #27 (02/ 85)
 ---
-# More Fun with Bounce!  
-  
-Way back in the golden days, when issues of __ANALOG Computing__ were still numbering in the teens, I wrote a program called __Bounce__. It appeared in the __Our Game__ column in issue 15. At that time, I was fiddling with a fun new language for the Atari – Action! by Optimized Systems Software. I was thinking that a version of __Bounce__ in Action! would be a worthwhile project.  
-  
-Not long after I had that thought I discovered, to my amusement, that someone had beaten me to it. The friendly folks at __ANALOG Computing__ told me one day that a certain David Plotkin had submitted a little ditty called __[Bounce in Action!](../Bounce_in_ACTION/README.md)__, which later appeared in issue 20.  
-  
-However, David's idea of a better __Bounce__ program was different from mine. His improvements consisted of adding GTIA color and, of course, speed (with Action!) to the original design. I ''enjoyed'' playing with David's program, and I was ''pleased'' that someone else was as enthusiastic about __Bounce__ as I was. . .I simply had another idea that had to be tried.  
-  
-To me, the next natural step for __Bounce__ is to add more discs—-having multiple moving objects at your command makes __Bounce__ about a million times more fun than the original. Of course, Action! is the only high-level language for the Atari that is fast enough to do a multiple-object __Bounce__ effectively.  
-  
-First there was __Bounce__, then __Bounce in Action!__, and now I give you __More Fun with Bounce__ (__MFB__ for short).  
-  
-## Other improvements.  
-  
-I had other upgrading in mind, too. Tops on the list was user-friendliness. __MFB__ lets you move the cursor around freely without upsetting the walls or the discs already laid down. Drawing or erasing occurs only when your joystick trigger is held down. To switch between the two functions (drawing: and erasing). simply hit the SPACE BAR.  
-  
-Another user-friendly feature is the amount of control over cursor speed available. For a slow cursor (to maintain fine drawing control), hit a lower digit key like 3 or 4. For high-speed drawing, hit 7 or 8. Cursor speed 9 is for maniacs only.  
-  
-Laying down the spheres is simplicity itself. just hit the B key. A disc appears at the cursor’s position, while the cursor itself moves to the right (so you can keep laying down more). Note that—when drawing, erasing. moving or placing balls— the cursor performs automatic wraparound should it go off the edge of the screen.  
-  
-Even __Bounce__’s screen-clearing feature has been improved upon. In __MFB__, when you hit ESC, instead of the whole screen clearing, only the discs disappear. This lets you keep your old wall patterns. If you'd like to clear everything, just hit CTRL-ESC. To remove individual discs, draw or erase over them with the cursor.  
-  
-## Let ‘er rip!  
-  
-To start things bouncing. hit START. (lf you forgot to lay discs down, the program automatically returns you to the drawing mode.) Immediately, the playing field fills with red goop (to be eaten away by the bouncing balls), and the number of objects bouncing appears in the text window.  
-  
-![](attachments/mbounce.jpg)  
-  
-Again, as in drawing mode. you have a number of options. For starters, you have complete control over disc speed. Simply hit digit keys 0 through 9, 9 being the fastest. Keep in mind, however, that the fewer objects you have on screen, the faster they will go (this is a natural by-product of the limited processing speed of your Atari computer). One or two discs on the screen at speed 9 move so fast that they are more of a blur than an object.  
-  
-You may notice as the balls are bouncing that only one of them is actually making bouncing sounds; the others are silent. To change the "sound focus", hit the S key. This allows you to make different balls audible, one at a time. lf you keep hitting S, you'll finally return sound focus to the original disc. This effect is easier to see if you have only a few objects on the screen  
-  
-An improvement I've always wanted to add to __Bounce__ is to give the user some direct control over the bouncing sphere. ln __MFB__, this feature exists and is called "nudging". When you hit the N key, the ball that the sound focus is on gets nudged. The effect of this is distinct, yet simple — it causes the ball to react as if a vertical wall were momentarily placed directly ahead of it. Essentially, the ball bounces off of a ghost wall.  
-  
-Nudging is fun (as is holding down the N key for repeated nudgings) and, also, useful if there is a red area on the screen where no ball has been. You can direct one over to that area by nudging it. Note: it is best to practice nudging with only a few objects and at a slow speed. Also note: you can nudge different spheres by changing the sound focus.  
-  
-When you want to change your wall configuration or the number of bouncing objects, hit SELECT to get back to the drawing mode. To start with a fresh screen, just hit CTRL-ESC.  
+# More Fun with Bounce!
+
+Way back in the golden days, when issues of __ANALOG Computing__ were still numbering in the teens, I wrote a program called __Bounce__. It appeared in the __Our Game__ column in issue 15. At that time, I was fiddling with a fun new language for the Atari – Action! by Optimized Systems Software. I was thinking that a version of __Bounce__ in Action! would be a worthwhile project.
+
+Not long after I had that thought I discovered, to my amusement, that someone had beaten me to it. The friendly folks at __ANALOG Computing__ told me one day that a certain David Plotkin had submitted a little ditty called __[Bounce in Action!](../Bounce_in_ACTION/README.md)__, which later appeared in issue 20.
+
+However, David's idea of a better __Bounce__ program was different from mine. His improvements consisted of adding GTIA color and, of course, speed (with Action!) to the original design. I ''enjoyed'' playing with David's program, and I was ''pleased'' that someone else was as enthusiastic about __Bounce__ as I was. . .I simply had another idea that had to be tried.
+
+To me, the next natural step for __Bounce__ is to add more discs—-having multiple moving objects at your command makes __Bounce__ about a million times more fun than the original. Of course, Action! is the only high-level language for the Atari that is fast enough to do a multiple-object __Bounce__ effectively.
+
+First there was __Bounce__, then __Bounce in Action!__, and now I give you __More Fun with Bounce__ (__MFB__ for short).
+
+## Other improvements.
+
+I had other upgrading in mind, too. Tops on the list was user-friendliness. __MFB__ lets you move the cursor around freely without upsetting the walls or the discs already laid down. Drawing or erasing occurs only when your joystick trigger is held down. To switch between the two functions (drawing: and erasing). simply hit the SPACE BAR.
+
+Another user-friendly feature is the amount of control over cursor speed available. For a slow cursor (to maintain fine drawing control), hit a lower digit key like 3 or 4. For high-speed drawing, hit 7 or 8. Cursor speed 9 is for maniacs only.
+
+Laying down the spheres is simplicity itself. just hit the B key. A disc appears at the cursor’s position, while the cursor itself moves to the right (so you can keep laying down more). Note that—when drawing, erasing. moving or placing balls— the cursor performs automatic wraparound should it go off the edge of the screen.
+
+Even __Bounce__’s screen-clearing feature has been improved upon. In __MFB__, when you hit ESC, instead of the whole screen clearing, only the discs disappear. This lets you keep your old wall patterns. If you'd like to clear everything, just hit CTRL-ESC. To remove individual discs, draw or erase over them with the cursor.
+
+## Let ‘er rip!
+
+To start things bouncing. hit START. (lf you forgot to lay discs down, the program automatically returns you to the drawing mode.) Immediately, the playing field fills with red goop (to be eaten away by the bouncing balls), and the number of objects bouncing appears in the text window.
+
+![](attachments/mbounce.jpg)
+
+Again, as in drawing mode. you have a number of options. For starters, you have complete control over disc speed. Simply hit digit keys 0 through 9, 9 being the fastest. Keep in mind, however, that the fewer objects you have on screen, the faster they will go (this is a natural by-product of the limited processing speed of your Atari computer). One or two discs on the screen at speed 9 move so fast that they are more of a blur than an object.
+
+You may notice as the balls are bouncing that only one of them is actually making bouncing sounds; the others are silent. To change the "sound focus", hit the S key. This allows you to make different balls audible, one at a time. lf you keep hitting S, you'll finally return sound focus to the original disc. This effect is easier to see if you have only a few objects on the screen
+
+An improvement I've always wanted to add to __Bounce__ is to give the user some direct control over the bouncing sphere. ln __MFB__, this feature exists and is called "nudging". When you hit the N key, the ball that the sound focus is on gets nudged. The effect of this is distinct, yet simple — it causes the ball to react as if a vertical wall were momentarily placed directly ahead of it. Essentially, the ball bounces off of a ghost wall.
+
+Nudging is fun (as is holding down the N key for repeated nudgings) and, also, useful if there is a red area on the screen where no ball has been. You can direct one over to that area by nudging it. Note: it is best to practice nudging with only a few objects and at a slow speed. Also note: you can nudge different spheres by changing the sound focus.
+
+When you want to change your wall configuration or the number of bouncing objects, hit SELECT to get back to the drawing mode. To start with a fresh screen, just hit CTRL-ESC.
 ---
-Action! listing.  
+Action! listing.
 ```
 ;More Fun with BOUNCE
 ;by Joel Gluck

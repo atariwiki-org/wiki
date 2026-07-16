@@ -1,9 +1,9 @@
 ---
 title: Starting to Program in 6502 Assembly Code
 ---
-  
-  
-  
+
+
+
 ```
       ====================================================================
    DR  6502    AER 201S Engineering Design 6502 Execution Simulator

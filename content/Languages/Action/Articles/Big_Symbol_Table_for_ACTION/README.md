@@ -1,28 +1,28 @@
 ---
 title: Big Symbol Table for ACTION
 ---
-General Information   
-Author: 	Action Computer Services   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	1984   
-  
-This program will create a big global symbol table (max 510 entries, normally 255) when run. It will boot the cartridge as well, so you must not have anything in the Editor that you want.  It does not increase the space used to store variable names.  If you want to increase this as well, you will have to 'SET $495 = #' in the monitor after running this program. # is the number of pages you want to be used for name storage (each page is 256 bytes, default is 8).  
-  
-You must use the correct version of Cold below:  
-  
-version 3.0 ACTION! ROM  
+General Information
+Author: 	Action Computer Services
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	1984
+
+This program will create a big global symbol table (max 510 entries, normally 255) when run. It will boot the cartridge as well, so you must not have anything in the Editor that you want.  It does not increase the space used to store variable names.  If you want to increase this as well, you will have to 'SET $495 = #' in the monitor after running this program. # is the number of pages you want to be used for name storage (each page is 256 bytes, default is 8).
+
+You must use the correct version of Cold below:
+
+version 3.0 ACTION! ROM
 ```
 PROC Cold=$A323()[]
 ```
-  
-version s 3.1 to 3.6 ACTION! ROMs  
+
+version s 3.1 to 3.6 ACTION! ROMs
 ```
 PROC Cold=$A326()[]
 ```
-  
+
 ---
-  
+
 ```
 ;		BIGST.ACT
 

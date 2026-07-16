@@ -1,44 +1,44 @@
 ---
 title: XEP80
 ---
-  
-## Manual  
-- [Atari_XEP80_Interface_Module_Owners_Manual.pdf](attachments/Atari_XEP80_Interface_Module_Owners_Manual.pdf) ; size: 2 MB ; Original Atari XEP80 Manual (C) 1987 Atari  
-  
-## ATR-Image  
-- [XEP80_Boot_Disk-DX5087.atr](attachments/XEP80_Boot_Disk-DX5087.atr) ; Original Atari XEP80 Boot Disk DX5087 for NTSC systems (C) 1987 Atari  
-- [XEP80_Boot_Disk-DX5087-PAL.atr](attachments/XEP80_Boot_Disk-DX5087-PAL.atr) ; patched driver for PAL systems  
-- [Altirra-Additions.atr](attachments/Altirra-Additions.atr) ; alternate XEP80 driver from the Altirra Additions Diskette ; faster than the original one from Atari!  
-  
-## Drivers  
-- [xep80han.arc](attachments/xep80han.arc) ; XEP80 handler - .com-file  
-- [xep80bxe.arc](attachments/xep80bxe.arc) ; XEP80 driver to work with OSS BASIC XE  
-- [xep80-new_stuff.zip](attachments/xep80-new_stuff.zip) ; archive with 3 atr-images containing XEP80 specific stuff  
-- [ALTXEP80.SYS](attachments/ALTXEP80.SYS) ; alternate XEP80 driver from the Altirra Additions Diskette ; faster than the original one from Atari!  
-  
-## Images  
-![](attachments/XEP80-Label.jpg)  
-Original Atari XEP80 Boot Disk DX5087 Label (C) 1987 Atari  
-  
-# The XEP 80 - Part 1  
-  
-by Erhard Pütz (aka Atreju aka Floppydoc)   
-prepared and translated by Mathy v. Nisselroy  
-  
-Ever since the 1993 ABBUC Annual meeting (Jahreshauptversammlung) I've been working with the XEP 80 and gained quite a bit of knowledge  
-and experience.  I've used the XEP under BASIC, MAC65, BobTerm and from DOS to read texts.  
-  
-At this time I want to ask everybody who's got information not mentioned in the manual, to send it to me.  I'm especially interested in Information about the Hardware.  Like, what graphicsprocessor as used?  
-  
-While working with the XEP some very annoying things cought my attention.  First there is this constant need to switch video plugs. Really nerve recking is readjusting of screen height, horizontal screen position and brightness.  The height of the screen is almost right when the XEP is working in the American TV-standard with 50 Hz. But then the screen flickers and who knows how long the monitor will put up with the imposed 60 Hz.  I once read that the higher screen frequency increases the current in the coils (Comment by Mathy: I don't quite know what these coils are called in English, but the direct the electronic beams that draw the picture on your cathode ray tube (according to this booklet I have)).  This increases the load on both the electronics, which might not be designed handle this higher current, and the coils, which might burn out.  
-  
-After switching to 50 Hz though, the screen is significantly higher than the standard XL/XE screen, pushing both upper and lower parts of the graphics off the screen.  And the characters look really course.  Once readjusted, one is rewarded with a good 80 character screen.  
-  
-## Speed  
-  
-I've heard people say, the XEP would be slow.  Well, when I print text to the XEP screen (X:) (original device driver), it rushes by so  
-fast I hardly have time to press Ctrl-1 to halt the screen. Slow you say?  Absolutely not, rather fast actually, in my opinion much faster then the original screen editor (E:).  So I tried out some demo's.  So this is it, they really are slow.  But why?  For is purpose I printed out one of the BASIC-listings and read through it.  And read it again, and again, and again... Oh my God, who committed this crime...Oops, programmed this.  At that time I didn't understand the programm, but it was one big chaos and even on the first glance one would find the slowest BASIC solutions.  So, I'm gonna cut this thing short and state: the XEP 80 is fast.  And thiss is mentioned in the manual really:  Data transfer speed between XEP and computer takes place at 15.7 kBit.  That's quite fast, but why this rare number?  Why not 19.2 kBit?  In that case the XEP would be able to keep up with the highest transfer rate of BobTerm. And why on the other hand, can the XEP only keep up with speeds of 4800 baud under BobTerm, where it should at least get 9600 baud? Let's start with the number 15.7 kBit.  This means 15700 bits per second.  The duration of one bit in this case is approximately 63.7us (micro seconds = 10^-6 or 0.000001 sec.).  The time the microcessor in our computer needs to execute a command is measured in cycles.  With the Atari 8bit every cycle takes approximately .564 us. One bit therefore takes about 113 cycles.  The execution of command takes 2 to 7 cycles.  While one bit is send, the computer could execute 16 to 56 commands.  Let's use an average of 35.  Then we can say one thing for sure:  our 8 bitter can handle a transfer rate of 15.7 kBit hands down.  Back to the question why it only works up to 4800 baud under BobTerm.  Here's part of the XEP driver (V1.2) for BobTerm  
-  
+
+## Manual
+- [Atari_XEP80_Interface_Module_Owners_Manual.pdf](attachments/Atari_XEP80_Interface_Module_Owners_Manual.pdf) ; size: 2 MB ; Original Atari XEP80 Manual (C) 1987 Atari
+
+## ATR-Image
+- [XEP80_Boot_Disk-DX5087.atr](attachments/XEP80_Boot_Disk-DX5087.atr) ; Original Atari XEP80 Boot Disk DX5087 for NTSC systems (C) 1987 Atari
+- [XEP80_Boot_Disk-DX5087-PAL.atr](attachments/XEP80_Boot_Disk-DX5087-PAL.atr) ; patched driver for PAL systems
+- [Altirra-Additions.atr](attachments/Altirra-Additions.atr) ; alternate XEP80 driver from the Altirra Additions Diskette ; faster than the original one from Atari!
+
+## Drivers
+- [xep80han.arc](attachments/xep80han.arc) ; XEP80 handler - .com-file
+- [xep80bxe.arc](attachments/xep80bxe.arc) ; XEP80 driver to work with OSS BASIC XE
+- [xep80-new_stuff.zip](attachments/xep80-new_stuff.zip) ; archive with 3 atr-images containing XEP80 specific stuff
+- [ALTXEP80.SYS](attachments/ALTXEP80.SYS) ; alternate XEP80 driver from the Altirra Additions Diskette ; faster than the original one from Atari!
+
+## Images
+![](attachments/XEP80-Label.jpg)
+Original Atari XEP80 Boot Disk DX5087 Label (C) 1987 Atari
+
+# The XEP 80 - Part 1
+
+by Erhard Pütz (aka Atreju aka Floppydoc)
+prepared and translated by Mathy v. Nisselroy
+
+Ever since the 1993 ABBUC Annual meeting (Jahreshauptversammlung) I've been working with the XEP 80 and gained quite a bit of knowledge
+and experience.  I've used the XEP under BASIC, MAC65, BobTerm and from DOS to read texts.
+
+At this time I want to ask everybody who's got information not mentioned in the manual, to send it to me.  I'm especially interested in Information about the Hardware.  Like, what graphicsprocessor as used?
+
+While working with the XEP some very annoying things cought my attention.  First there is this constant need to switch video plugs. Really nerve recking is readjusting of screen height, horizontal screen position and brightness.  The height of the screen is almost right when the XEP is working in the American TV-standard with 50 Hz. But then the screen flickers and who knows how long the monitor will put up with the imposed 60 Hz.  I once read that the higher screen frequency increases the current in the coils (Comment by Mathy: I don't quite know what these coils are called in English, but the direct the electronic beams that draw the picture on your cathode ray tube (according to this booklet I have)).  This increases the load on both the electronics, which might not be designed handle this higher current, and the coils, which might burn out.
+
+After switching to 50 Hz though, the screen is significantly higher than the standard XL/XE screen, pushing both upper and lower parts of the graphics off the screen.  And the characters look really course.  Once readjusted, one is rewarded with a good 80 character screen.
+
+## Speed
+
+I've heard people say, the XEP would be slow.  Well, when I print text to the XEP screen (X:) (original device driver), it rushes by so
+fast I hardly have time to press Ctrl-1 to halt the screen. Slow you say?  Absolutely not, rather fast actually, in my opinion much faster then the original screen editor (E:).  So I tried out some demo's.  So this is it, they really are slow.  But why?  For is purpose I printed out one of the BASIC-listings and read through it.  And read it again, and again, and again... Oh my God, who committed this crime...Oops, programmed this.  At that time I didn't understand the programm, but it was one big chaos and even on the first glance one would find the slowest BASIC solutions.  So, I'm gonna cut this thing short and state: the XEP 80 is fast.  And thiss is mentioned in the manual really:  Data transfer speed between XEP and computer takes place at 15.7 kBit.  That's quite fast, but why this rare number?  Why not 19.2 kBit?  In that case the XEP would be able to keep up with the highest transfer rate of BobTerm. And why on the other hand, can the XEP only keep up with speeds of 4800 baud under BobTerm, where it should at least get 9600 baud? Let's start with the number 15.7 kBit.  This means 15700 bits per second.  The duration of one bit in this case is approximately 63.7us (micro seconds = 10^-6 or 0.000001 sec.).  The time the microcessor in our computer needs to execute a command is measured in cycles.  With the Atari 8bit every cycle takes approximately .564 us. One bit therefore takes about 113 cycles.  The execution of command takes 2 to 7 cycles.  While one bit is send, the computer could execute 16 to 56 commands.  Let's use an average of 35.  Then we can say one thing for sure:  our 8 bitter can handle a transfer rate of 15.7 kBit hands down.  Back to the question why it only works up to 4800 baud under BobTerm.  Here's part of the XEP driver (V1.2) for BobTerm
+
 ```
 LDX #$00          ; Load X with zero
 SEI               ; don't execute IRQ's
@@ -84,34 +84,34 @@ AND #Mask         ; ($02 or $20)
 BEQ Busy          ; XEP not ready yet
 RTS               ; ready, 1 byte sent
 ```
-  
-Everywere, where it reads "pause" the computer does the following: NOTHING.  This command tells the computer it should halt the microprocessor until one screen line is processed.  This seems to take up as much time as one bit at 15.7 kBit, or 63.7 microseconds.  This  
-command was issued 11 times, add to that the 166 cycles in the 90 us waiting loop, where the computer can't do much either.  This makes 866 cycles or maximum 431, on average 250 commands, the computer can not execute, just because it is halted.  The data BobTerm receives via the RS232 interface however, come in faster then it can be processed.  The data not processed in time are lost.  And this only because the computer is busy doing nothing while transfering data to the XE. How could one change this and why could the XEP print to screen even faster yet?  The computer has to the whole job, like for instance preparing the next byte that should be send to the XEP, in the time between 2 bytes.  But what if the next byte to be send would instantaneously be available?  The computer should get it from the buffer or wherever, while 1 byte is send to the XEP.  To achieve this, the byte should be automatically - without the CPU having anything to do with it - be send and this is done by HARDWARE.  Such a device is built into the computer and calls itself POKEY.  That's the chip that, among other things, handles the datatraffic with your disk drive, printer and cassette.  If we then think about how fast the data transfer with a disk drive can be, namely 51 kBit/s th a Speedy or even 78 kBit/s with the HSS Copier (Mathy: both are German hardware upgrades for the 1050 disk drive), it becomes clear what advantages there are to use a hardware solution.  
-  
-As far I can see, POKEY can not be used for datatrafficing with the XEP, because the XEP uses 9 bit data words during data transfer, where  
-POKEY only uses 8 bits.  A standard SIO chip, like the 6551, do it.  The nineth bit, used to distinguish between data and commands, could be emulated by the parity bit.  And here the 6551 has five possibilities: None, odd, even, mark and space parity.  How we would handle the nineth bit when the computer receives it is one of the things I have to think about, but it should be possible. So we take an EPROM, in which we place the new XEP 80 driver, a bit of electronics to decode some signals, a 6551 and a triple DIP switch.  The DIP switch is used to select a device number (Mathy: Hm, nice idea!  Where have I heard that one before :-)) and connect the whole thing to the parallel bus of the XL/XE.  For the electrical engineers among you I have to add that the XL/XE first of al needs a couple of powerfull bus drivers in the shape of two 74AS244 and one 74AS245, especially if you're running a BlackBox!  
-  
-## The memory map of the driver:  
-  
-The driver for the XEP 80 basically exists of two parts.  One of those parts is a so called Relocator, meaning, it moves the main programm to the top of the memory. Now I've recently worked with TurboWord+ und while reading the manual, I bumped into something strange.  The driver of the XEP 80 should be called AUTORUN.SYS under TurboWord+ and SpartaDOS, because otherwise the MEMHI would be too low.  Read it, tried it, seen it. But why?  With AUTORUN.SYS, MEMHI is set at $95FF, when run by hand with XEP80 (RETURN) or from a batch file, it's set at $8FFF. I accepted it for a long time, but since it kept bugging me, I checked into this.  I'm not gonna tell you how.  But what came out will knock  
-you off your sock When run by hand, the driver will install itself twice.  But only the last one installed will be used.  And it installs itself twice, because the file XEP80 ends with an INIT address, instead of a RUN address.  DOS jumps to the INIT address ($2E2) after loading the file and when returning, tries to jump to the RUN address.  But since there is none, it jumps to the beginning of the file, which starts the relocator once again.  Using a disk monitor, I changed INIT to RUN and that was it.  I was rewarded with 1.5 kByte more free memory.  
-  
-## RESET  
-  
-One thing you can not do is press RESET or otherwise cause a warm start.  A warm start will reinitialise the device drivers, including the XEP 80 driver.  One would think that all values are entere again, but the value for MEMHI is NOT entered.  Sigh, those programmers at ATARI, real pro's.  But even they can forget some things.  However, after a warm start, MEMHI is set to the start of the play list.  With BASIC this is $9C1F.  If you now fill up the memory nicely, you'll eventually overwrite the XEP driver, which is located between $9600 and $9C1F.  If at this point you press RESET again, not even DOS will be reinitialised and you will be unable to save anything.  And that's by far not all. Small error, big results. Well, that's about all I want to say about the XEP 80 for now, but the text is over 10 kByte anyhow.  Maybe it's even usefull to somebody.  I'm always happy to get an echo.  
-  
-Greetings, your  
-Floppydoc - Erhard Puetz  
-  
-# The XEP 80  part two  
-  
-When I said in my previous article that I would be please about an echo, I meant, I would be pleased with ANY echo, not ONE echo.  But I shouldn't complain, better ONE echo than NO echo at all. The echo said to me: Erhard, after I read you article about the XEP 80 in the ABBUC magazine (Mathy: number 38), I pulled my XEP 80 out of the drawer.  I've always wanted to use it with BobTerm, but since the XEP driver for BobTerm doesn't switch the XEP to the German (Mathy: ahem, I thought it was called the European or PAL) standard, I've always had a flickering, too small image.  Can't we do something about that?  
-  
-Sure, I say, one takes the XIO command that sets the XEP 80 to the 50 Hz standard, turns that into a small machine language program and loads it as AUTORUN.SYS before BobTerm - Just a moment, this wont gonna work this way.  There is no XEP driver initialised yet, making the XIO command disappear into thin air.  OK, first the XEP driver, then the XIO command, then BobTerm... Hmmm, won't work either.  The XEP driver for BobTerm isn't hooked to the normal editor.  
-  
-And, BobTerm loads and initializes the driver. - Think, Think, Think -  The driver contains the subroutine for sending data to the XEP.  That's the part we talked about in the previous article (Mathy: ABBUC magazine 38).  Here is the address data for the driver: memory from $4000 to $422E and RUN $4001.  Ah yes, this should work.  At the end of the files, before the RUN address, I append a small routine and redirect the RUN address to it.  
-  
-This is what that looks like:  
+
+Everywere, where it reads "pause" the computer does the following: NOTHING.  This command tells the computer it should halt the microprocessor until one screen line is processed.  This seems to take up as much time as one bit at 15.7 kBit, or 63.7 microseconds.  This
+command was issued 11 times, add to that the 166 cycles in the 90 us waiting loop, where the computer can't do much either.  This makes 866 cycles or maximum 431, on average 250 commands, the computer can not execute, just because it is halted.  The data BobTerm receives via the RS232 interface however, come in faster then it can be processed.  The data not processed in time are lost.  And this only because the computer is busy doing nothing while transfering data to the XE. How could one change this and why could the XEP print to screen even faster yet?  The computer has to the whole job, like for instance preparing the next byte that should be send to the XEP, in the time between 2 bytes.  But what if the next byte to be send would instantaneously be available?  The computer should get it from the buffer or wherever, while 1 byte is send to the XEP.  To achieve this, the byte should be automatically - without the CPU having anything to do with it - be send and this is done by HARDWARE.  Such a device is built into the computer and calls itself POKEY.  That's the chip that, among other things, handles the datatraffic with your disk drive, printer and cassette.  If we then think about how fast the data transfer with a disk drive can be, namely 51 kBit/s th a Speedy or even 78 kBit/s with the HSS Copier (Mathy: both are German hardware upgrades for the 1050 disk drive), it becomes clear what advantages there are to use a hardware solution.
+
+As far I can see, POKEY can not be used for datatrafficing with the XEP, because the XEP uses 9 bit data words during data transfer, where
+POKEY only uses 8 bits.  A standard SIO chip, like the 6551, do it.  The nineth bit, used to distinguish between data and commands, could be emulated by the parity bit.  And here the 6551 has five possibilities: None, odd, even, mark and space parity.  How we would handle the nineth bit when the computer receives it is one of the things I have to think about, but it should be possible. So we take an EPROM, in which we place the new XEP 80 driver, a bit of electronics to decode some signals, a 6551 and a triple DIP switch.  The DIP switch is used to select a device number (Mathy: Hm, nice idea!  Where have I heard that one before :-)) and connect the whole thing to the parallel bus of the XL/XE.  For the electrical engineers among you I have to add that the XL/XE first of al needs a couple of powerfull bus drivers in the shape of two 74AS244 and one 74AS245, especially if you're running a BlackBox!
+
+## The memory map of the driver:
+
+The driver for the XEP 80 basically exists of two parts.  One of those parts is a so called Relocator, meaning, it moves the main programm to the top of the memory. Now I've recently worked with TurboWord+ und while reading the manual, I bumped into something strange.  The driver of the XEP 80 should be called AUTORUN.SYS under TurboWord+ and SpartaDOS, because otherwise the MEMHI would be too low.  Read it, tried it, seen it. But why?  With AUTORUN.SYS, MEMHI is set at $95FF, when run by hand with XEP80 (RETURN) or from a batch file, it's set at $8FFF. I accepted it for a long time, but since it kept bugging me, I checked into this.  I'm not gonna tell you how.  But what came out will knock
+you off your sock When run by hand, the driver will install itself twice.  But only the last one installed will be used.  And it installs itself twice, because the file XEP80 ends with an INIT address, instead of a RUN address.  DOS jumps to the INIT address ($2E2) after loading the file and when returning, tries to jump to the RUN address.  But since there is none, it jumps to the beginning of the file, which starts the relocator once again.  Using a disk monitor, I changed INIT to RUN and that was it.  I was rewarded with 1.5 kByte more free memory.
+
+## RESET
+
+One thing you can not do is press RESET or otherwise cause a warm start.  A warm start will reinitialise the device drivers, including the XEP 80 driver.  One would think that all values are entere again, but the value for MEMHI is NOT entered.  Sigh, those programmers at ATARI, real pro's.  But even they can forget some things.  However, after a warm start, MEMHI is set to the start of the play list.  With BASIC this is $9C1F.  If you now fill up the memory nicely, you'll eventually overwrite the XEP driver, which is located between $9600 and $9C1F.  If at this point you press RESET again, not even DOS will be reinitialised and you will be unable to save anything.  And that's by far not all. Small error, big results. Well, that's about all I want to say about the XEP 80 for now, but the text is over 10 kByte anyhow.  Maybe it's even usefull to somebody.  I'm always happy to get an echo.
+
+Greetings, your
+Floppydoc - Erhard Puetz
+
+# The XEP 80  part two
+
+When I said in my previous article that I would be please about an echo, I meant, I would be pleased with ANY echo, not ONE echo.  But I shouldn't complain, better ONE echo than NO echo at all. The echo said to me: Erhard, after I read you article about the XEP 80 in the ABBUC magazine (Mathy: number 38), I pulled my XEP 80 out of the drawer.  I've always wanted to use it with BobTerm, but since the XEP driver for BobTerm doesn't switch the XEP to the German (Mathy: ahem, I thought it was called the European or PAL) standard, I've always had a flickering, too small image.  Can't we do something about that?
+
+Sure, I say, one takes the XIO command that sets the XEP 80 to the 50 Hz standard, turns that into a small machine language program and loads it as AUTORUN.SYS before BobTerm - Just a moment, this wont gonna work this way.  There is no XEP driver initialised yet, making the XIO command disappear into thin air.  OK, first the XEP driver, then the XIO command, then BobTerm... Hmmm, won't work either.  The XEP driver for BobTerm isn't hooked to the normal editor.
+
+And, BobTerm loads and initializes the driver. - Think, Think, Think -  The driver contains the subroutine for sending data to the XEP.  That's the part we talked about in the previous article (Mathy: ABBUC magazine 38).  Here is the address data for the driver: memory from $4000 to $422E and RUN $4001.  Ah yes, this should work.  At the end of the files, before the RUN address, I append a small routine and redirect the RUN address to it.
+
+This is what that looks like:
 ```
 $422F   SEC           ; A command is send
 $4230   LDA #$D7      ; the number $D7 sets the XEP to 50 Hz in textmode
@@ -120,9 +120,9 @@ $4235   JMP $4001     ; driver installed
        .ORG $02E0     ; RUN vector
        .WORD $422F    ; RUN address
 ```
-  
-Try it, it works.  During all these try outs, I've searched through the XEP driver several times, and that's when I saw that the Send-outine starts a bit earlier than I told you last month.  It starts like this:  
-  
+
+Try it, it works.  During all these try outs, I've searched through the XEP driver several times, and that's when I saw that the Send-outine starts a bit earlier than I told you last month.  It starts like this:
+
 ```
 $4139  X_DAT CLC          ; Data will be send
 $413A        .BYTE
@@ -138,61 +138,61 @@ $4147  ROR
 $4148  ROR
 $4149  ROR
 ```
-  
-... And this is where the part from the article in magzine 8 continues.  
-  
-What do my square eyes see there?  An other way that's that suppose to do?  Well, boldly said, it's not allowed to send data during the Vertical Blank.  But it's not clear to me why.  The VBI is disabled anyhow.  Might the WSYNC register in the "austastluecke" (Mathy: some kind of interval.  Maybe I'll know what this word means when I translate the next article about the XEP, should Erhard write more of them. :-) ) not deliver the apropriate timing? Let's try that.  Starting with $413D I'll just write the NOP command 7 times.  We're still losing time, but at least we're not waiting 50 times a second.  So, loaded BobTerm with the changed driver and - Look at that.  All of a sudden BobTerm works with the XEP 80 at 9600 baud, not just 4800.  I've tried it out a bit more, but could not find any negative side effects.  So I called the ABBUC BBS and looky here, works like a charm.  With my chest raised in pride I called the ABBUCcian that had laid this task upon me.  I've ooen it, I've done it, I said, not just the 50 Hz, but even 9600 baud.  
-  
-The day before yesterday was the day that I decided to show off my newly gained knowledge in ABBUC magazine.  So I called Wolfgang (Mathy: Wolfgang Burger is the president of ABBUC and previous SysOp of the ABBUC BBS) to ask him, if he would in interested in a sequel to the XEP 80 article.  Sure, he said, opening up the way to help the ever information hungry ABBUCcians.  And here's a little more, just to make sure you don't starve.  
-  
-For $40E0 on, we have 13 bytes, with which the XEP is initialized:  
-  
-  
-|| value || function ||  
-| $D9 |    Cursor always on |  
-| $D4 |    Use ATASCII characterset |  
-| $DE |    Bright characters on dark background |  
-| $D3 |    Burst mode, no cursor data is send back |  
-| $60 |    Left Margin 0 low nibble |  
-| $70 |    Left Margin 0 Hi nibble |  
-| $AF |    Right Margin low nibble 15 + 4*16 Hi nibble = 79 |  
-| $B4 |    Right Margin hi nibble |  
-| $00 |    Horizontal cursor position = 0 |  
-| $80 |    vertical cursor position = 0 |  
-| $D0 |    Erase List flag |  
-| $C5 |    Fill RAM with SPACE-characters |  
-| $DC |    Set Scroll window to X-cursor position |  
-  
-  
-Since all this trail and error stuff started to annoy me, I "just for a minute" reassembled the driver, so I now  a fairly readable file to work with.  This means I'm gonna write more articles about the XEP 80. Since I was able to delve up more information about the XEP 80, I can already tell you:  the 19200 baud are in reachable distance and I seem to be on a hot trail with my suspiciouns about the 6551 SIO chip from the first article (I think).  
-  
-## DEEPER DUNGEONS  
-  
-The videocontroller inside the XEP 80 is a 48 pin chip.  It's data bus is 16 bits wide on the video side.  This way, two RAMs could be read simultaniously, one containing the text that should be displayed and another containing the text attributes.  There are eight possible attributes:  
-  
-  
-|| attribute || display ||  
-| Inverse   | A character plus it's surrounding area is display "Inverse" |  
-| Halve Bright  | The character in displayed with a lower brightness. Other options are a higher brightness and even color. |  
-| Flickering    | On, Off, On, Off |  
-| Double Height | Text in double height, internally some conditions have to be met though. |  
-| Double Width  | Text in double wide.  The next line can't be displayed though, so we have to leave a blank line between two lines of character |  
-| Underlined    | An apparently freely defined character is mixed in. This can be the "underline" character or an "overline" or "strait through the middle" character or whatever you want |  
-| Hidden        |  The text is not displayed at all.  This attribute should also be set when using a double height character, so the controller knows that this is the bottom halve of the double height haracter. |  
-| Graphics      | Since this is an attribute, text and blockgraphics can be mixed at will.  Except double height, all other attributes can be used at the same time |  
-  
-  
-And then there is the Graphics mode of the XEP 80.  Just like the subject of block graphics, it's a very broad subject and will not be  
-discussed here.  
-  
-## THE LIGHT PEN  
-  
-The controller offers the option of connecting a lightpen to it.  Via interrupts, the horizontal and vertical positions are stored into two registers.  HPEN is 7 bit wide (128 positions) and VPEN is 5 bit wide (32 positions).  Since this does not provide us with a very high resolution, we can forget about drawing with a light pen.  
-  
-## THE SERIAL INTERFACE  
-  
-Here we find a UART (Universal Asynchronus Receiver Transmitter), that, in it's addresses and functions, equals the good old 6551 so much, that I'm assuming it is.  With a 4 bit pre-devider, the system clock (12MHz in the XEP 80) is devided into one of 16 steps. These steps are 3.4, 4, 4.5, ... ,11.  The actual baudrate devider is 11 bits wide and is further devided by 16 at the output.  In the XEP 80 the baudrate is set to 15625.  The mathematics could however also look like this:  
-  
+
+... And this is where the part from the article in magzine 8 continues.
+
+What do my square eyes see there?  An other way that's that suppose to do?  Well, boldly said, it's not allowed to send data during the Vertical Blank.  But it's not clear to me why.  The VBI is disabled anyhow.  Might the WSYNC register in the "austastluecke" (Mathy: some kind of interval.  Maybe I'll know what this word means when I translate the next article about the XEP, should Erhard write more of them. :-) ) not deliver the apropriate timing? Let's try that.  Starting with $413D I'll just write the NOP command 7 times.  We're still losing time, but at least we're not waiting 50 times a second.  So, loaded BobTerm with the changed driver and - Look at that.  All of a sudden BobTerm works with the XEP 80 at 9600 baud, not just 4800.  I've tried it out a bit more, but could not find any negative side effects.  So I called the ABBUC BBS and looky here, works like a charm.  With my chest raised in pride I called the ABBUCcian that had laid this task upon me.  I've ooen it, I've done it, I said, not just the 50 Hz, but even 9600 baud.
+
+The day before yesterday was the day that I decided to show off my newly gained knowledge in ABBUC magazine.  So I called Wolfgang (Mathy: Wolfgang Burger is the president of ABBUC and previous SysOp of the ABBUC BBS) to ask him, if he would in interested in a sequel to the XEP 80 article.  Sure, he said, opening up the way to help the ever information hungry ABBUCcians.  And here's a little more, just to make sure you don't starve.
+
+For $40E0 on, we have 13 bytes, with which the XEP is initialized:
+
+
+|| value || function ||
+| $D9 |    Cursor always on |
+| $D4 |    Use ATASCII characterset |
+| $DE |    Bright characters on dark background |
+| $D3 |    Burst mode, no cursor data is send back |
+| $60 |    Left Margin 0 low nibble |
+| $70 |    Left Margin 0 Hi nibble |
+| $AF |    Right Margin low nibble 15 + 4*16 Hi nibble = 79 |
+| $B4 |    Right Margin hi nibble |
+| $00 |    Horizontal cursor position = 0 |
+| $80 |    vertical cursor position = 0 |
+| $D0 |    Erase List flag |
+| $C5 |    Fill RAM with SPACE-characters |
+| $DC |    Set Scroll window to X-cursor position |
+
+
+Since all this trail and error stuff started to annoy me, I "just for a minute" reassembled the driver, so I now  a fairly readable file to work with.  This means I'm gonna write more articles about the XEP 80. Since I was able to delve up more information about the XEP 80, I can already tell you:  the 19200 baud are in reachable distance and I seem to be on a hot trail with my suspiciouns about the 6551 SIO chip from the first article (I think).
+
+## DEEPER DUNGEONS
+
+The videocontroller inside the XEP 80 is a 48 pin chip.  It's data bus is 16 bits wide on the video side.  This way, two RAMs could be read simultaniously, one containing the text that should be displayed and another containing the text attributes.  There are eight possible attributes:
+
+
+|| attribute || display ||
+| Inverse   | A character plus it's surrounding area is display "Inverse" |
+| Halve Bright  | The character in displayed with a lower brightness. Other options are a higher brightness and even color. |
+| Flickering    | On, Off, On, Off |
+| Double Height | Text in double height, internally some conditions have to be met though. |
+| Double Width  | Text in double wide.  The next line can't be displayed though, so we have to leave a blank line between two lines of character |
+| Underlined    | An apparently freely defined character is mixed in. This can be the "underline" character or an "overline" or "strait through the middle" character or whatever you want |
+| Hidden        |  The text is not displayed at all.  This attribute should also be set when using a double height character, so the controller knows that this is the bottom halve of the double height haracter. |
+| Graphics      | Since this is an attribute, text and blockgraphics can be mixed at will.  Except double height, all other attributes can be used at the same time |
+
+
+And then there is the Graphics mode of the XEP 80.  Just like the subject of block graphics, it's a very broad subject and will not be
+discussed here.
+
+## THE LIGHT PEN
+
+The controller offers the option of connecting a lightpen to it.  Via interrupts, the horizontal and vertical positions are stored into two registers.  HPEN is 7 bit wide (128 positions) and VPEN is 5 bit wide (32 positions).  Since this does not provide us with a very high resolution, we can forget about drawing with a light pen.
+
+## THE SERIAL INTERFACE
+
+Here we find a UART (Universal Asynchronus Receiver Transmitter), that, in it's addresses and functions, equals the good old 6551 so much, that I'm assuming it is.  With a 4 bit pre-devider, the system clock (12MHz in the XEP 80) is devided into one of 16 steps. These steps are 3.4, 4, 4.5, ... ,11.  The actual baudrate devider is 11 bits wide and is further devided by 16 at the output.  In the XEP 80 the baudrate is set to 15625.  The mathematics could however also look like this:
+
 ```
 12 MHz     : 6.5 = approximately 1.8432 MHz
 12 MHz     : 6.5 = approximately 1.8432 MHz
@@ -203,17 +203,17 @@ Here we find a UART (Universal Asynchronus Receiver Transmitter), that, in it's 
 307200 Hz  : 16  = 19.200 kHz
 614400 Hz  : 16  = 38.400 kHz
 ```
-  
-Those 19.200 kHz lies within manufacturers specifications.  If 38.400kHz works, is something someone should try out.  But since the dividers aren't used up yet (we can even go much faster), why won't it work.  
-  
-That's it for this time.  
-  
-Greetings, your FloppyDoc  
-  
-# The Original ATARI XEP 80 Handler Source  
-  
-## Handler Source  
-  
+
+Those 19.200 kHz lies within manufacturers specifications.  If 38.400kHz works, is something someone should try out.  But since the dividers aren't used up yet (we can even go much faster), why won't it work.
+
+That's it for this time.
+
+Greetings, your FloppyDoc
+
+# The Original ATARI XEP 80 Handler Source
+
+## Handler Source
+
 ```
 0100 ;.OPT NOLIST
 0110  .OPT NOEJECT
@@ -1031,9 +1031,9 @@ Greetings, your FloppyDoc
 8120  .END
 
 ```
-  
-## Relocator Source  
-  
+
+## Relocator Source
+
 ```
 0100  .OPT NOEJECT
 0110 DOSINI=$0C
@@ -1104,8 +1104,8 @@ Greetings, your FloppyDoc
 0760  JMP (OUT)
 0770 LENGTH=*
 ```
-  
-## BASIC Relocator  
+
+## BASIC Relocator
 ```
 10 REM RELOCATING PROGRAM FOR XEP80
 20 REM TO USE THIS PROGRAM THE FOLLOWING CRITERIA MUST BE MET:
@@ -1188,21 +1188,21 @@ Greetings, your FloppyDoc
 3010 RETURN 
 3500 TEND=1:RETURN 
 ```
-  
-# Diagrams  
-![](attachments/Atari_XEP80_diagram1.jpg)  
-Atari XEP80 diagram 1 ; thank you so much Jerzy Sobola for your help! Greatly appreciated!  
-  
-![](attachments/Atari_XEP80_diagram2.gif)  
-Atari XEP80 diagram 2  
-  
-# References  
-- [The XEP 80 - part one from Mathy's collection of special stuff](http://www.mathyvannisselroy.nl/xep_1.htm) ; thank you so much Mathy and Floppydoc! Your help is greatly appreciated. :-)  
-- [The XEP 80 - part two from Mathy's collection of special stuff](http://www.mathyvannisselroy.nl/xep_2.htm) ; thank you so much Mathy and Floppydoc! Your help is greatly appreciated. :-)  
-  
-# XEP 80 Demos in Basic  
-  
-## Attributes Example  
+
+# Diagrams
+![](attachments/Atari_XEP80_diagram1.jpg)
+Atari XEP80 diagram 1 ; thank you so much Jerzy Sobola for your help! Greatly appreciated!
+
+![](attachments/Atari_XEP80_diagram2.gif)
+Atari XEP80 diagram 2
+
+# References
+- [The XEP 80 - part one from Mathy's collection of special stuff](http://www.mathyvannisselroy.nl/xep_1.htm) ; thank you so much Mathy and Floppydoc! Your help is greatly appreciated. :-)
+- [The XEP 80 - part two from Mathy's collection of special stuff](http://www.mathyvannisselroy.nl/xep_2.htm) ; thank you so much Mathy and Floppydoc! Your help is greatly appreciated. :-)
+
+# XEP 80 Demos in Basic
+
+## Attributes Example
 ```
 100 REM ATTRIBUTES EXAMPLE
 110 REM TO SET ATTRIBUTES USE FOLLOWING DEFINITIONS TO FORM COMMAND
@@ -1256,8 +1256,8 @@ Atari XEP80 diagram 2
 990 POKE 752,0:END 
 2000 ? "~~";:FOR X=0 TO 999:NEXT X:RETURN 
 ```
-  
-## Scrolling Window Example  
+
+## Scrolling Window Example
 ```
 100 REM SCROLLING WINDOW EXAMPLE
 105 REM SCROLL LEFT AND RIGHT WITH JOYSTICK, WHEN FINISHED PRESS TRIGGER
@@ -1283,8 +1283,8 @@ Atari XEP80 diagram 2
 1060 REM LINE 1050 SETS THE NEW CURSOR AND ISSUES THE SCROLL COMMAND
 1090 RETURN 
 ```
-  
-## Graphics Example (Circle)  
+
+## Graphics Example (Circle)
 ```
 0 GOTO 100:REM KEEP TIME DEPENDENT CODE NEAR BEGINNING
 10 FOR M=0 TO 12:V=0:S=128:FOR N=0 TO 7:X=P+N:REM LOOPS FOR CIRCLE LIMITS
@@ -1306,8 +1306,8 @@ Atari XEP80 diagram 2
 185 POKE 53774,192:REM ENABLE BREAK KEY
 190 POKE 764,255:OPEN #1,12,0,"E:":POKE 752,0:END :REM RESTORE TEXT SCREEN
 ```
-  
-## Printer Configuration Program  
+
+## Printer Configuration Program
 ```
 100 REM PRINTER CONFIGURATION PROGRAM
 110 DIM A$(2048),IN$(16),OUT$(16):REM ALLOCATE STRINGS

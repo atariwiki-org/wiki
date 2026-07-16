@@ -1,6 +1,6 @@
 # VolksForth Kernel Source 3.81.4
-  
-## Main Kernel  
+
+## Main Kernel
 ```
 PRT2C
  ok
@@ -2182,9 +2182,9 @@ PRT2C
 15 
  ok
 ```
-  
-### I/O Definitions  
-  
+
+### I/O Definitions
+
 ```
 PRT2C
  ok

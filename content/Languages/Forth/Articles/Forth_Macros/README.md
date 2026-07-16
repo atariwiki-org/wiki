@@ -1,10 +1,10 @@
 ---
 title: Forth Macros
 ---
-# Collection of Forth Macro definitions  
-  
-## Wil Baden  
-  
+# Collection of Forth Macro definitions
+
+## Wil Baden
+
 ```
 ( A New Definition for Simple Macro ) 
 

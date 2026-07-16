@@ -1,9 +1,9 @@
 ---
 title: Load Koala Pictures
 ---
-# Load Koala Pictures  
-  
-## Assembler (BiboAssembler)  
+# Load Koala Pictures
+
+## Assembler (BiboAssembler)
 ```
 00010          .LI OFF
 00020 *
@@ -179,7 +179,7 @@ title: Load Koala Pictures
 01720 FFLAG    .HX 00
 01730 LINEC    .HX 00
 ```
-  
+
 ```
 00010          .LI OFF
 00020          .OR $3000
@@ -229,7 +229,7 @@ title: Load Koala Pictures
 00460          .IN "D:KOALA.INC"
 
 ```
-## ACTION  
+## ACTION
 ```
 PROC KPicLoad=*()[$A2$10$A9$07$9D$42$03$A0$01$84$D5$A9$00$9D$48$03$9D$49$03
 $20$56$E4$A4$D5$C0$08$D0$02$85$D4$C0$0E$30$07$C0$13$10$03$99

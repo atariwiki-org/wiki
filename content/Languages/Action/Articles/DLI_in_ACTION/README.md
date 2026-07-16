@@ -1,25 +1,25 @@
 ---
 title: DLI in ACTION
 ---
-Joel Gluck asked me how to use  
-interrupts from an ACTION program.  
-Here are two programs which, respectively,  
-deal with the DLI and VBLD interrupts.  
-  
-Notice that, since Action is not  
-re-entrient, you can't call subroutines,  
-or do anything else which might mess  
-up a memory location that the main  
-program is depending upon.  For example,  
-multiply and divide are both done by  
-subroutines, so you can't use them  
-within a VBLANK routine.  It is,  
-however, safe to add, subtract, index  
-an array, and store.  (But be sure to  
-clear the decimal flag if your main  
-program might be calling the floating  
-point ROMs!)  
-  
+Joel Gluck asked me how to use
+interrupts from an ACTION program.
+Here are two programs which, respectively,
+deal with the DLI and VBLD interrupts.
+
+Notice that, since Action is not
+re-entrient, you can't call subroutines,
+or do anything else which might mess
+up a memory location that the main
+program is depending upon.  For example,
+multiply and divide are both done by
+subroutines, so you can't use them
+within a VBLANK routine.  It is,
+however, safe to add, subtract, index
+an array, and store.  (But be sure to
+clear the decimal flag if your main
+program might be calling the floating
+point ROMs!)
+
 ```
 ;
 ; Example of use of display list
@@ -99,7 +99,7 @@ PROC MAIN()
  RETURN
 ```
 ---
-VBL.ACT  
+VBL.ACT
 ---
 ```
 ;

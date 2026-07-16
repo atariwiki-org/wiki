@@ -1,3 +1,3 @@
 # Keyboard Mapping
 
-![](attachments/atari800xl_kbd_matrix.png)  
+![](attachments/atari800xl_kbd_matrix.png)

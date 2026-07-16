@@ -1,12 +1,12 @@
 ---
 title: Plot and Draw Routines
 ---
-# Plot and Draw Routines  
-  
-from BiboAssembler Toolsdisk 1  
-  
-### Fast 2 color (Graphics 8) plot  
-  
+# Plot and Draw Routines
+
+from BiboAssembler Toolsdisk 1
+
+### Fast 2 color (Graphics 8) plot
+
 ```
 00010 PLOT     LDY OLDY      Zeilen-
 00020          LDA TABLO,Y   addresse
@@ -44,9 +44,9 @@ from BiboAssembler Toolsdisk 1
 00340 CMASK    .HX 7FBFDFEFF7FBFDFE
 
 ```
-  
-### Fast 4 Color Plot (Graphics 15)  
-  
+
+### Fast 4 Color Plot (Graphics 15)
+
 ```
 00010 PLOT     LDY OLDY      Zeilen-
 00020          LDA TABLO,Y   addresse
@@ -82,9 +82,9 @@ from BiboAssembler Toolsdisk 1
 00320 EMASK    .HX C0300C03
 00330 CMASK    .HX 3FCFF3FC
 ```
-  
-### Fast Plot for 16 color modes (Graphics 9)  
-  
+
+### Fast Plot for 16 color modes (Graphics 9)
+
 ```
 00010 PLOT     LDY OLDY      Zeilen-
 00020          LDA TABLO,Y   addresse
@@ -119,8 +119,8 @@ from BiboAssembler Toolsdisk 1
 00310 EMASK    .HX F00F
 00320 CMASK    .HX 0FF0
 ```
-  
-### Fast Draw Routines  
+
+### Fast Draw Routines
 ```
 00010          .LI OFF
 00020 ;
@@ -285,8 +285,8 @@ from BiboAssembler Toolsdisk 1
 01610 TABHI    .BL 192       Tabellen
 
 ```
-  
-### Graphics 9 Draw Demo  
+
+### Graphics 9 Draw Demo
 ```
 00010          .LI OFF
 00020          .OR $4000
@@ -355,8 +355,8 @@ from BiboAssembler Toolsdisk 1
 00650          RTS
 
 ```
-  
-### Graphics 9 Demo 2  
+
+### Graphics 9 Demo 2
 ```
 00010          .LI OFF
 00020          .OR $4000
@@ -437,11 +437,11 @@ from BiboAssembler Toolsdisk 1
 00770          LDA COL       Farbe nach <A>
 00780          RTS           Jump
 ```
-  
-### Graphic 8 Demo  
-  
-- File GR8PACK.INC  
-  
+
+### Graphic 8 Demo
+
+- File GR8PACK.INC
+
 ```
 00010 XO       .EQ $D0
 00020 YO       .EQ $D2
@@ -876,8 +876,8 @@ from BiboAssembler Toolsdisk 1
 04310          JMP DRAWLINE
 
 ```
-  
-- File GR8PACK2.DEM  
+
+- File GR8PACK2.DEM
 ```
 00010          .LI OFF
 00020          .OR $4000

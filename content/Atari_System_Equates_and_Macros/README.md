@@ -1,12 +1,12 @@
 ---
 title: Atari System Equates and Macros
 ---
-# Atari 6502 System Equations and Macros  
-  
-The origin of this file is not clear. The filename and file-path naming suggest it comes from a crosscompiler (maybe PDP-11 or VAX). It might be the system equates used by Atari internally on their crosscompilers.  
-  
-Besides Atari 8bit Equates it also contains Equates for [KIM-1](http://en.wikipedia.org/wiki/KIM-1) and some kind of a virtual machine interpreter (maybe Forth, maybe a 6502 CPU Emulator)  
-  
+# Atari 6502 System Equations and Macros
+
+The origin of this file is not clear. The filename and file-path naming suggest it comes from a crosscompiler (maybe PDP-11 or VAX). It might be the system equates used by Atari internally on their crosscompilers.
+
+Besides Atari 8bit Equates it also contains Equates for [KIM-1](http://en.wikipedia.org/wiki/KIM-1) and some kind of a virtual machine interpreter (maybe Forth, maybe a 6502 CPU Emulator)
+
 ```
 ;<HESS.ATARI>SYSMAC.SML.27  8-Mar-82 08:39:38, Edit by HESS
 

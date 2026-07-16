@@ -1,19 +1,19 @@
 ---
 title: Masic
 ---
-# MASIC - Die Musik-Programmiersprache - Copyright (C) 1987 by R & E Software  
-MASIC ist eine Musik-Programmiersprache  
-  
-## ATX images  
-in Bearbeitung...  
-  
-## ATR images  
-in Bearbeitung...  
-  
-## Handbuch  
-in Bearbeitung...  
-  
-## BASIC-Programm zum laden von Musik  
+# MASIC - Die Musik-Programmiersprache - Copyright (C) 1987 by R & E Software
+MASIC ist eine Musik-Programmiersprache
+
+## ATX images
+in Bearbeitung...
+
+## ATR images
+in Bearbeitung...
+
+## Handbuch
+in Bearbeitung...
+
+## BASIC-Programm zum laden von Musik
 ```
 10 GOSUB 31000:REM MUSIKPROGRAMM LADEN
 20 AD=XXX:GOSUB 31500:REM FUER 'XXX' DIE INIT-ADRESSE EINSETZEN
@@ -35,13 +35,13 @@ in Bearbeitung...
 31500 POKE 1024,104:POKE 1025,76:POKE 1027,INT(AD/256):POKE 1026,AD-PEEK(1027)*256
 31510 Q=USR(1024):RETURN 
 ```
-  
-## Bilder  
-![](attachments/Cover.jpg)  
-Vorderseite der MASIC-Box  
-  
-![](attachments/Back2.jpg)  
-Rückseite der MASIC-Box  
-  
-![](attachments/Diskette2.jpg)  
-Diskette der MASIC-Software  
+
+## Bilder
+![](attachments/Cover.jpg)
+Vorderseite der MASIC-Box
+
+![](attachments/Back2.jpg)
+Rückseite der MASIC-Box
+
+![](attachments/Diskette2.jpg)
+Diskette der MASIC-Software

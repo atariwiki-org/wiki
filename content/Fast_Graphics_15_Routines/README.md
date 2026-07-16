@@ -1,17 +1,17 @@
 ---
 title: Fast Graphics 15 Routines
 ---
-# Fast Graphics 15 Routines  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	12.04.90   
-  
-### Fast Graphics 15 Routines  
-  
+# Fast Graphics 15 Routines
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	12.04.90
+
+### Fast Graphics 15 Routines
+
 ```
 00010			 .LI OFF
 00020 ******************************
@@ -312,11 +312,11 @@ Published: 	12.04.90
 02970 ------------------------------
 
 ```
-  
+
 ---
-  
-### ACTION Routinen  
-  
+
+### ACTION Routinen
+
 ```
 ;********************************
 ;**									 **

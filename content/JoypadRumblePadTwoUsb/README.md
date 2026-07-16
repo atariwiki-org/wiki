@@ -1,37 +1,37 @@
 ---
 title: JoypadRumblePadTwoUsb
 ---
-# Logitech Rumblepad 2 USB Driver  
-  
-  
-  
-Tested with a Logitec Rumblepad 2 USB. Other Logitech analog Joypad might work. Please send feedback.  
-  
-## Description  
-  
-  
-|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||  
-|  $10           |  1                 | left handle horiz movement  | $270 (624)  | PADDL0 | RPADLHH     |  
-|  $11           |  2                 | left handle vertic movement | $271 (625)  | PADDL1 | RPADLHV     |  
-|  $12           |  3                 | right handle horiz movement  | $272 (626)  | PADDL2 | RPADRHH     |  
-|  $13           |  4                 | right handle vertic movement | $273 (627)  | PADDL3 | RPADRHV     |  
-|  $14           |  5 Bit 0-4         | digital Joypad | $274 (628)  | PADDL4 | RPADDJY     |  
-|  $14           |  5 Bit 5-7         | Button 1-4 | $275 (629)  | PADDL5 | RPADBUT1  |  
-|  $15           |  6                 | Button 5-10 | $276 (630)  | PADDL6 | RPADBUT2  |  
-|  $16           |  7                 | Mode Button Status | $277 (631)  | PADDL7 | RPADMODE  |  
-  
-  
-- Byte 1: left handle horizontal movement ($00 = left, $80 = middle, $FF= right)  
-- Byte 2: left handle vertical movement ($00 = up, $80 = middle, $FF= down)  
-- Byte 3: right handle horizontal movement ($00 = left, $80 = middle, $FF= right)  
-- Byte 4: right handle vertical movement ($00 = up, $80 = middle, $FF= down)  
-- Byte 5: Bit 0-3 digital Joypad (see below)  
-- Byte 5: Bit 4 - Button 1, Bit 5 - Button 2, Bit 6 - Button 3, Bit 7 - Button 8  
-- Byte 6: Bit 0-5 - Button 5-10  
-- Byte 7: Bit 2 - Vibration Switch, Bit 3 - Mode Switch and LED  
-- Byte 8: unknown  
-  
-The digital Joypad has a unique value for each direction:  
+# Logitech Rumblepad 2 USB Driver
+
+
+
+Tested with a Logitec Rumblepad 2 USB. Other Logitech analog Joypad might work. Please send feedback.
+
+## Description
+
+
+|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||
+|  $10           |  1                 | left handle horiz movement  | $270 (624)  | PADDL0 | RPADLHH     |
+|  $11           |  2                 | left handle vertic movement | $271 (625)  | PADDL1 | RPADLHV     |
+|  $12           |  3                 | right handle horiz movement  | $272 (626)  | PADDL2 | RPADRHH     |
+|  $13           |  4                 | right handle vertic movement | $273 (627)  | PADDL3 | RPADRHV     |
+|  $14           |  5 Bit 0-4         | digital Joypad | $274 (628)  | PADDL4 | RPADDJY     |
+|  $14           |  5 Bit 5-7         | Button 1-4 | $275 (629)  | PADDL5 | RPADBUT1  |
+|  $15           |  6                 | Button 5-10 | $276 (630)  | PADDL6 | RPADBUT2  |
+|  $16           |  7                 | Mode Button Status | $277 (631)  | PADDL7 | RPADMODE  |
+
+
+- Byte 1: left handle horizontal movement ($00 = left, $80 = middle, $FF= right)
+- Byte 2: left handle vertical movement ($00 = up, $80 = middle, $FF= down)
+- Byte 3: right handle horizontal movement ($00 = left, $80 = middle, $FF= right)
+- Byte 4: right handle vertical movement ($00 = up, $80 = middle, $FF= down)
+- Byte 5: Bit 0-3 digital Joypad (see below)
+- Byte 5: Bit 4 - Button 1, Bit 5 - Button 2, Bit 6 - Button 3, Bit 7 - Button 8
+- Byte 6: Bit 0-5 - Button 5-10
+- Byte 7: Bit 2 - Vibration Switch, Bit 3 - Mode Switch and LED
+- Byte 8: unknown
+
+The digital Joypad has a unique value for each direction:
 ```
 .
           up
@@ -42,13 +42,13 @@ left  6---8---2 right
           4
          down
 ```
-  
-## Device dependent source  
-  
-### Digital Disk Control Driver  
-  
-This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).  
-  
+
+## Device dependent source
+
+### Digital Disk Control Driver
+
+This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).
+
 ```
 01000          .LI OFF
 01010 ****************************
@@ -162,11 +162,11 @@ This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.
 02090          RTS
 02100 ------------------------------
 ```
-  
-### Analog Handle Driver  
-  
-This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).  
-  
+
+### Analog Handle Driver
+
+This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).
+
 ```
 01000          .LI OFF
 01010 ****************************

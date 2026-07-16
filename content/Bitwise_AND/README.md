@@ -1,8 +1,8 @@
 ---
 title: Bitwise AND
 ---
-# Bitwise AND for Kyan Pascal  
-  
+# Bitwise AND for Kyan Pascal
+
 ```
 (* BITWISE AND, PD, Author:Michael P./WASEO/ABBUC 27.06.2007 *) 
 FUNCTION BT_AND(B1,B2:INTEGER):INTEGER; 
@@ -24,4 +24,4 @@ BEGIN
 END;
    
 ```
-  
+

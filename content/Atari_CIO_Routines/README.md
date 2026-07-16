@@ -1,8 +1,8 @@
 ---
 title: Atari CIO Routines
 ---
-# Atari CIO Routines  
-  
+# Atari CIO Routines
+
 ```
 00010          .LI OFF
 00020 *
@@ -161,9 +161,9 @@ title: Atari CIO Routines
 01550 * <Y> Register haelt Fehler-
 01560 * nummer.
 ```
-  
-### Call CIO from Atari Basic  
-  
+
+### Call CIO from Atari Basic
+
 ```
 00010          .LI OFF
 00020 *

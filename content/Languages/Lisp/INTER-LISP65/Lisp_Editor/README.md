@@ -1,13 +1,13 @@
 # Lisp Editor
 
-## General Information  
-  
+## General Information
+
 Author: 	Datasoft
 
 Language: 	LISP
 
-Compiler/Interpreter: 	InterLISP/65   
-  
+Compiler/Interpreter: 	InterLISP/65
+
 ```
 {code}
 (EDIT E EF H L S C X PASTE EQUAL GETCMD MAPCAR COMMANDS PSET SETP R A D B LI RE CONZ PRE I DEL G PP P PPRINT PPAUX MULTARGS PPARGS TABRET FORMATS LPAR BLANK RPAR LINE-WIDTH NCONC PU LOCK UNLOCK GETLST)

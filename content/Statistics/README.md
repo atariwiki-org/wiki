@@ -1,4 +1,4 @@
 ---
 title: Statistics
 ---
-### Page view statistics  
+### Page view statistics

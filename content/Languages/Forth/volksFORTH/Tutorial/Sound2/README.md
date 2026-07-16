@@ -1,12 +1,12 @@
 ---
 title: Sound2
 ---
-# Sound and storing  
-  
-Heute geht es wieder um Geräusche. Aber auch um die Umsetzung von Data-Zeilen nach Forth.  
-  
-Zuerst brauchen wir wieder den Sound-Befehl. Damit wir diesen Befehl nicht jedes mal in unser Programm eintippen müssen, speichern wir den Quelltext des Sound-Befehls in der Datei "SOUND.F" ab (wir benutzen einen Text-Editor dafür, d.b. den Copy-Shop Editor)  
-  
+# Sound and storing
+
+Heute geht es wieder um Geräusche. Aber auch um die Umsetzung von Data-Zeilen nach Forth.
+
+Zuerst brauchen wir wieder den Sound-Befehl. Damit wir diesen Befehl nicht jedes mal in unser Programm eintippen müssen, speichern wir den Quelltext des Sound-Befehls in der Datei "SOUND.F" ab (wir benutzen einen Text-Editor dafür, d.b. den Copy-Shop Editor)
+
 ```
 \ Atari 8bit Sound Befehl
 
@@ -16,9 +16,9 @@ $D200 CONSTANT AUDBASE
   SWAP $10 * + ROT DUP + AUDBASE +
   ROT OVER C! 1+ C! ; 
 ```
-  
-Das folgende BASIC Programm ist dem Buch "Das Grosse Spiele-Buchfür Atari" von C. Lorenz entnommen. Es soll die Geräusche eines laufenden Roboters erzeugen (na ja, mit vieeeel Phantasie kann man einen Roboter erkennen):  
-  
+
+Das folgende BASIC Programm ist dem Buch "Das Grosse Spiele-Buchfür Atari" von C. Lorenz entnommen. Es soll die Geräusche eines laufenden Roboters erzeugen (na ja, mit vieeeel Phantasie kann man einen Roboter erkennen):
+
 ```
 1000 REM SOUND: gehender Roboter
 1010 FOR X = 0 TO 3
@@ -30,13 +30,13 @@ Das folgende BASIC Programm ist dem Buch "Das Grosse Spiele-Buchfür Atari" von 
 1070 GOTO 1010
 1080 DATA 60,2,82,10,150,6,100,8
 ```
-  
-In Forth haben wir keine Data-Zeilen. Wir arbeiten hier mit dem Wort "CREATE". Das Wort CREATE erzeugt ein neues Forth Wort, man könnte sagen ein "Markierungs-Wort". Das neue Wort (welches nach dem Wort CREATE angegeben wird) legt seine eigene Speicherstelle auf den Stapelspeicher.  
-  
-Hinter dem neuen Wort legen wir die Töne mit dem Forth Wort "C," (C, wird "Char-Compile" ausgesprochen). Char-Compile kompiliert eine Zeichen (Char, oder auch Byte, Zahl von 0-255) in den Speicher. Da die Char-Compile Wörter direkt nach dem Markterwort kommen, werden die Werte direkt hinter das Marker-Wort geschrieben und wir können das Marker Wort benutzen, um die kompilierten Werte im Speicher wiederzufinden.  
-  
-Hier ist das Programm:  
-  
+
+In Forth haben wir keine Data-Zeilen. Wir arbeiten hier mit dem Wort "CREATE". Das Wort CREATE erzeugt ein neues Forth Wort, man könnte sagen ein "Markierungs-Wort". Das neue Wort (welches nach dem Wort CREATE angegeben wird) legt seine eigene Speicherstelle auf den Stapelspeicher.
+
+Hinter dem neuen Wort legen wir die Töne mit dem Forth Wort "C," (C, wird "Char-Compile" ausgesprochen). Char-Compile kompiliert eine Zeichen (Char, oder auch Byte, Zahl von 0-255) in den Speicher. Da die Char-Compile Wörter direkt nach dem Markterwort kommen, werden die Werte direkt hinter das Marker-Wort geschrieben und wir können das Marker Wort benutzen, um die kompilierten Werte im Speicher wiederzufinden.
+
+Hier ist das Programm:
+
 ```
 \needs SOUND   INCLUDE" D:SOUND.F"
 
@@ -59,5 +59,5 @@ CREATE SNDDATA  060 C, 002 C,
    0 0 0 0 SOUND  ( Ruhe )
    ;  ( Definitionsende )
 ```
-  
-Das Forthwort "needs" prüft ob das angegebene Wort (hier SOUND) schon definiert ist. Wenn nicht, wird der nachfolgende Befehl ausgeführt (hier INCLUDE" D:SOUND.F"). Es wird also geprüft ob es ein Forth Wort SOUND schon gibt, wenn nicht, wird es nachgeladen.  
+
+Das Forthwort "needs" prüft ob das angegebene Wort (hier SOUND) schon definiert ist. Wenn nicht, wird der nachfolgende Befehl ausgeführt (hier INCLUDE" D:SOUND.F"). Es wird also geprüft ob es ein Forth Wort SOUND schon gibt, wenn nicht, wird es nachgeladen.

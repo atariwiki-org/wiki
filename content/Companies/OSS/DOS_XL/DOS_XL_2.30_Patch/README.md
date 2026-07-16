@@ -1,11 +1,11 @@
-# DOS XL 2.30 patch  
-  
-Version 2.30p was a newer version to 2.30 to fix two problems.  
-  
-- In previous versions of DOS XL, if you initialized a disk from the menu, the disk would not boot unless the file MENU.COM was on the disk. To alleviate this problem, type Q to quit the menu. Then type INIT or INITDBL from the command processor. Note: everything on the menu can be done manually from the command processor.  
-- If you have a multidrive system and you initialized a disk in a drive other than one, when booted, the disk will always come up with the number of the drive on which it was initialized. To prevent this problem, use D1: as the destination drive.  
-  
-The patch for DOS XL 2.30 to make it a 2.30p:  
+# DOS XL 2.30 patch
+
+Version 2.30p was a newer version to 2.30 to fix two problems.
+
+- In previous versions of DOS XL, if you initialized a disk from the menu, the disk would not boot unless the file MENU.COM was on the disk. To alleviate this problem, type Q to quit the menu. Then type INIT or INITDBL from the command processor. Note: everything on the menu can be done manually from the command processor.
+- If you have a multidrive system and you initialized a disk in a drive other than one, when booted, the disk will always come up with the number of the drive on which it was initialized. To prevent this problem, use D1: as the destination drive.
+
+The patch for DOS XL 2.30 to make it a 2.30p:
 ```
 OSS Disk Newsletter
 Fall 1986

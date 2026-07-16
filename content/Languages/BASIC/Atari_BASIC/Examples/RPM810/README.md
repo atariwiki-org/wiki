@@ -1,20 +1,20 @@
-# Program to measure 810 disk speed  
-  
-General Information  
-  
-Author: 	Carl D. Howe   
-Language: 	BASIC   
-Compiler/Interpreter: 	Atari Basic   
-Published: 	28 Oct 1981 19:35:38 EST (Wednesday)   
-  
-## How to use  
-  
-The following is my DSKRPM program that I described in a previous message. It is not entirely deterministic; I assume that this is because of heterodyning between BASIC execution and the disk rotation. However, I have not really verified this fact; if anyone has any ideas any ideas, please let me know.  
-  
-Carl cdh@BBN-UNIX  
-  
-P.S. The proper number to get is about 292 RPM.  
-  
+# Program to measure 810 disk speed
+
+General Information
+
+Author: 	Carl D. Howe
+Language: 	BASIC
+Compiler/Interpreter: 	Atari Basic
+Published: 	28 Oct 1981 19:35:38 EST (Wednesday)
+
+## How to use
+
+The following is my DSKRPM program that I described in a previous message. It is not entirely deterministic; I assume that this is because of heterodyning between BASIC execution and the disk rotation. However, I have not really verified this fact; if anyone has any ideas any ideas, please let me know.
+
+Carl cdh@BBN-UNIX
+
+P.S. The proper number to get is about 292 RPM.
+
 ```
 01 LET READS=25
 05 DIM BUF$(256),PROG$(20)

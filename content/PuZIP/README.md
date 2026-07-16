@@ -1,8 +1,8 @@
 ---
 title: PuZIP
 ---
-# puZIP - ZIP File compression  
-  
+# puZIP - ZIP File compression
+
 ```
 ; DASM V2.12.04 source
 

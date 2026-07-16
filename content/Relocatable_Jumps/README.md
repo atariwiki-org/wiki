@@ -1,42 +1,42 @@
 ---
 title: Relocatable Jumps
 ---
-# Relocatable Jumps  
-  
-General Information  
-  
-Author: Peter Meyer   
-Assembler: generic   
-Published: APPLE Assembly Line 12/82   
-Download: [Apple Assembly Line Archive](http://salfter.dyndns.org/aal.shtml)   
-  
-A machine language routine is said to be relocatable if it can function properly regardless of its absolute location in memory.  If a routine contains a JMP or a JSR to an INTERNAL address then it is not relocatable; if it is run in another part of memory then the internal JSR or JMP will still reference the former region of memory.  JMPs and JSRs to subroutines at absolute locations (e.g. in the Monitor) do not impair the relocatability of a routine.  
-  
-I will explain here a technique whereby you can, in effect, perform internal JSRs and JMPs without impairing the relocatability of your routine.  There is a small price to pay for this:  namely, an increase in the length of your routine.  Your routine must be preceded by a 2-part Header Routine which is 43 bytes long.  In addition, each internal JSR requires 8 bytes of code, and each internal JMP requires 11 bytes of code.  
-  
-No tables or other data storage are required, except that three bytes must be reserved for a JMP instruction.  These three bytes can be anywhere in memory, but must be at an absolute location.  There are three bytes that normally are used only by Applesoft, namely, the ampersand JMP vector at $3F5 to $3F7.  Since we are here concerned only with machine language routines in their own right, we can use the locations $3F5 to $3F7 for our own purposes.  However, other locations would do just as well.  
-  
-The technique is fully illustrated in the accompanying assembly language program.  This routine consists of three parts:  
-  
-  
-1. Header Part 1 (SETUP), which sets up a JMP instruction at VECTOR (at $3F5-$3F7, but could be different, as explained above) to point to Header Part 2.  
-1. Header Part 2 (HANDLER), which is a 15-byte section of code whose task is to handle requests to perform internal JSRs and JMPs (more on this below).  
-1. The main part of the routine, in which internal JSRs and JMPs (in effect) are performed using macro instructions.  
-  
-  
-When your routine (including the Header) is executed, the first thing that happens is that Header Part 1 locates itself (using the well-known JSR $FF58 technique), then places a JMP HANDLER at VECTOR. Thereafter a JMP VECTOR is equivalent to JMP HANDLER, and a JSR VECTOR is equivalent to a JSR HANDLER.  The HANDLER routine handles requests from your routine for internal JSRs and JMPs.  To perform a JSR to an internal subroutine labelled SUBR simply include the following code:  
-  
+# Relocatable Jumps
+
+General Information
+
+Author: Peter Meyer
+Assembler: generic
+Published: APPLE Assembly Line 12/82
+Download: [Apple Assembly Line Archive](http://salfter.dyndns.org/aal.shtml) 
+
+A machine language routine is said to be relocatable if it can function properly regardless of its absolute location in memory.  If a routine contains a JMP or a JSR to an INTERNAL address then it is not relocatable; if it is run in another part of memory then the internal JSR or JMP will still reference the former region of memory.  JMPs and JSRs to subroutines at absolute locations (e.g. in the Monitor) do not impair the relocatability of a routine.
+
+I will explain here a technique whereby you can, in effect, perform internal JSRs and JMPs without impairing the relocatability of your routine.  There is a small price to pay for this:  namely, an increase in the length of your routine.  Your routine must be preceded by a 2-part Header Routine which is 43 bytes long.  In addition, each internal JSR requires 8 bytes of code, and each internal JMP requires 11 bytes of code.
+
+No tables or other data storage are required, except that three bytes must be reserved for a JMP instruction.  These three bytes can be anywhere in memory, but must be at an absolute location.  There are three bytes that normally are used only by Applesoft, namely, the ampersand JMP vector at $3F5 to $3F7.  Since we are here concerned only with machine language routines in their own right, we can use the locations $3F5 to $3F7 for our own purposes.  However, other locations would do just as well.
+
+The technique is fully illustrated in the accompanying assembly language program.  This routine consists of three parts:
+
+
+1. Header Part 1 (SETUP), which sets up a JMP instruction at VECTOR (at $3F5-$3F7, but could be different, as explained above) to point to Header Part 2.
+1. Header Part 2 (HANDLER), which is a 15-byte section of code whose task is to handle requests to perform internal JSRs and JMPs (more on this below).
+1. The main part of the routine, in which internal JSRs and JMPs (in effect) are performed using macro instructions.
+
+
+When your routine (including the Header) is executed, the first thing that happens is that Header Part 1 locates itself (using the well-known JSR $FF58 technique), then places a JMP HANDLER at VECTOR. Thereafter a JMP VECTOR is equivalent to JMP HANDLER, and a JSR VECTOR is equivalent to a JSR HANDLER.  The HANDLER routine handles requests from your routine for internal JSRs and JMPs.  To perform a JSR to an internal subroutine labelled SUBR simply include the following code:
+
 ```
 HERE	LDA #SUBR-HERE-7 low byte of offset
 	 LDY /SUBR-HERE-7 high byte of offset
 	 TSX
 	 JSR VECTOR
 ```
-  
-As explained above, the JSR VECTOR is in effect a JSR HANDLER.  The Header Part 2 code takes the values in the A and Y registers and adds them to an address which it obtains from the stack to obtain the address of SUBR.  It then places this address in INDEX ($5E,5F) and executes "JMP (INDEX)".  
-  
-An internal JMP, from one part of your routine to another, is performed in a similar manner.  Suppose you wish to JMP from HERE to THERE.  It is done as follows:  
-  
+
+As explained above, the JSR VECTOR is in effect a JSR HANDLER.  The Header Part 2 code takes the values in the A and Y registers and adds them to an address which it obtains from the stack to obtain the address of SUBR.  It then places this address in INDEX ($5E,5F) and executes "JMP (INDEX)".
+
+An internal JMP, from one part of your routine to another, is performed in a similar manner.  Suppose you wish to JMP from HERE to THERE.  It is done as follows:
+
 ```
 HERE	LDA #THERE-HERE-7 low byte of offset
 	 LDY /THERE-HERE-7 high byte of offset
@@ -44,21 +44,21 @@ HERE	LDA #THERE-HERE-7 low byte of offset
 	 JSR $FF58
 	 JMP VECTOR
 ```
-  
-Since we are (in effect) performing a JMP, rather than a JSR, we do a JMP VECTOR rather than a JSR VECTOR.  The other difference is that we have a JSR $FF58 following the TSX.  
-  
-Clearly the sequence of instructions which allows you to perform a JMP or a JSR could be coded as a macro.  The macros to use are shown in the accompanying program listing.  By using macros an internal JMP or JSR can be performed with a single macro instruction bearing a very close resemblance to a real JSR or JMP instruction.  
-  
-The following program, which consists of the Header Routine plus a demonstration routine, can be assembled to disk using the .TF directive.  It can then be BRUN at any address and it will function properly. Thus it is relocatable, despite the fact that there are (in effect) an internal JMP and two internal JSRs performed.  
-  
-When performing an internal JSR or JMP using my techniques, it is not possible to pass values in the registers, since these are required to pass information to the HANDLER routine.  Nor is it advisable to try to pass parameters on the stack, even though the HANDLER routine does not change the value of the stack pointer.  Better is to deposit values in memory and retrieve them after the transition has been made.  
-  
-The HANDLER routine passes control to the requested part of your routine using a JMP indirect.  (INDEX at $5E,5F, has been used in the accompanying program, but any other address would do as well, provided that it does not cross a page boundary.)  This means that the section of your routine to which control is passed (whether or not it is a subroutine) may find its own location by inspecting the contents of the location used for the JMP indirect.  This feature of this technique is also illustrated in the accompanying program, in the PRINT.MESSAGE subroutine.  
-  
-The use of internal data blocks is something not normally possible in a relocatable routine, but it can be done if the techniques shown here are used.  
-  
-This method of performing internal JSRs and JMPs in a relocatable routine may be simplified if the routine is intended to function as a subroutine appended to an Applesoft program.  If the subroutine is appended using my utility the Routine Machine (available from Southwestern Data Systems), then it is not necessary to include the 47-byte Header Routine.  Internal JMPs and JSRs can still be performed exactly as described above, except that the address of VECTOR must be $3F5-$3F7.  This technique is not described in the documentation to the Routine Machine.  A full explanation may be found in the Appendix to the documentation accompanying Ampersoft Program Library, Volume 4 (also available from Southwestern Data Systems).  
-  
+
+Since we are (in effect) performing a JMP, rather than a JSR, we do a JMP VECTOR rather than a JSR VECTOR.  The other difference is that we have a JSR $FF58 following the TSX.
+
+Clearly the sequence of instructions which allows you to perform a JMP or a JSR could be coded as a macro.  The macros to use are shown in the accompanying program listing.  By using macros an internal JMP or JSR can be performed with a single macro instruction bearing a very close resemblance to a real JSR or JMP instruction.
+
+The following program, which consists of the Header Routine plus a demonstration routine, can be assembled to disk using the .TF directive.  It can then be BRUN at any address and it will function properly. Thus it is relocatable, despite the fact that there are (in effect) an internal JMP and two internal JSRs performed.
+
+When performing an internal JSR or JMP using my techniques, it is not possible to pass values in the registers, since these are required to pass information to the HANDLER routine.  Nor is it advisable to try to pass parameters on the stack, even though the HANDLER routine does not change the value of the stack pointer.  Better is to deposit values in memory and retrieve them after the transition has been made.
+
+The HANDLER routine passes control to the requested part of your routine using a JMP indirect.  (INDEX at $5E,5F, has been used in the accompanying program, but any other address would do as well, provided that it does not cross a page boundary.)  This means that the section of your routine to which control is passed (whether or not it is a subroutine) may find its own location by inspecting the contents of the location used for the JMP indirect.  This feature of this technique is also illustrated in the accompanying program, in the PRINT.MESSAGE subroutine.
+
+The use of internal data blocks is something not normally possible in a relocatable routine, but it can be done if the techniques shown here are used.
+
+This method of performing internal JSRs and JMPs in a relocatable routine may be simplified if the routine is intended to function as a subroutine appended to an Applesoft program.  If the subroutine is appended using my utility the Routine Machine (available from Southwestern Data Systems), then it is not necessary to include the 47-byte Header Routine.  Internal JMPs and JSRs can still be performed exactly as described above, except that the address of VECTOR must be $3F5-$3F7.  This technique is not described in the documentation to the Routine Machine.  A full explanation may be found in the Appendix to the documentation accompanying Ampersoft Program Library, Volume 4 (also available from Southwestern Data Systems).
+
 ```
  1010	.TF B.MEYER.1
  1020  *SAVE S.MEYER.1

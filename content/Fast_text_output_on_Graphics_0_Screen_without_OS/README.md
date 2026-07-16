@@ -1,14 +1,14 @@
 ---
 title: Fast text output on Graphics 0 Screen without OS
 ---
-# Fast text output on Graphics 0 Screen without OS  
-  
-General Information  
-  
-Author: Erwin Reuss, Compy Shop   
-Assembler: Bibo Assembler   
-Published: CSM 3/89   
-  
+# Fast text output on Graphics 0 Screen without OS
+
+General Information
+
+Author: Erwin Reuss, Compy Shop
+Assembler: Bibo Assembler
+Published: CSM 3/89
+
 ```
 00010          .LI OFF
 00020 ------------------------------

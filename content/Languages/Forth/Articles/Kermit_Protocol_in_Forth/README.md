@@ -1,64 +1,64 @@
 ---
 title: Kermit Protocol in Forth
 ---
-# Kermit in FORTH  
-  
-original C=64 Sourcecode  
-  
-[ftp://kermit.columbia.edu/kermit/c/](ftp://kermit.columbia.edu/kermit/c/)  
-  
-About the Kermit Protcol, see [Kermit (protocol) in Wikipedia](http://en.wikipedia.org/wiki/Kermit_(protocol))  
-  
-## KERMIT C-64, v1.5  
-  
-Robert W. Detenbeck, University of Vermont.  
-  
-KERMIT is a protocol for transferring files between different   computers.  This KERMIT program was written in the FORTH language, for   a Commodore C64 computer with a Commodore 1541 disk drive (device 8)   and a Commodore 1600 modem on the RS-232 port (device 2).  Other   drives and modems may work if they use the same device numbers.  The   program itself uses about 30K; disk buffers for "save" and "help"   commands extend downward from $9FFF; and there are scratch string   areas in $CB00-$CFFF.  This program has been tested only under limited   conditions.  It has been run at 300 baud, but the nature of the   interrupt-driven RS-232 interface suggests that 1200 or even 2400 baud   should work without loss of data, though perhaps not at the efficiency   of a machine-language program.  Multiple-file transfers with wild-card   construction cause some problems in the transfer of filenames from   Kermit-20.  
-  
-The "help" files, named scr96, scr97 and scr98, give details of this program's special characteristics.  Several special features were   required by the C64's use of Commodore's own form of ASCII code, and its lack of certain ASCII capabilities.  ASCII backslash prints as a  vertical bar, chr$(221), but is transmitted by the "pound" key; the   tab and formfeed characters are stored in C64 files as chr$(220) and   chr$(219).  
-  
-The KERMIT "connect" command converts the C64 into a simple terminal, in which the C64 "delete" button transmits the ASCII code   127, "DEL".  If the host mainframe requires a backspace, ASCII code 8, the F5 key should be used.  The terminal program contained herein    responds correctly to a backspace character received from the modem.  
-  
-You have received a "turnkey" copy of the FORTH program, in which  
-the source screens and programming system are inaccessible.  This copy  
-may be recopied and distributed without restriction.  In fact, the  
-"new" command of this KERMIT facilitates such copying.  If you want a  
-copy of the original FORTH screens, with a printing program to device 4, you may obtain one by sending a blank disk in a stamped,  
-self-addressed mailer to the author, Robert W. Detenbeck, Department  
-of Physics, University of Vermont, Burlington, VT 05405.  They were  
-written to be used with version A of C64-FORTH, sold by Performance  
-Micro Products, 770 Dedham Street-S2, Canton, MA 02021.  Slight  
-modifications would be required to use the screens with the newer  
-version B, a pure FORTH-79 standard.  Because the screens of C64-FORTH  
-are 25 x 40, extensive retyping would be necessary to format them for  
-readability on a standard 16 x 64 FORTH screen.  
-  
-Information about KERMIT can be obtained from the following  
-sources:  
-Frank da Cruz and Bill Catchings, "Kermit: A File-Transfer Protocol  
-for Universities"  
-BYTE, vol. 9, no. 6, June 1984, p. 255 (Part 1)  
-BYTE, vol. 9, no. 7, July 1984, p. 143 (Part 2)  
-KERMIT USERS GUIDE, 4th ed., available for $5.00 from KERMIT  
-Distribution, Columbia University Center for Computing Activities, 7th  
-Floor, Watson Laboratory, 612 West 115th Street, New York, N.Y. 10025.  
-For those near the University of Vermont, the USERS GUIDE can be  
-purchased from the Academic Computing Center in the Cook Building.  
-  
-  
-The file C644TH.SCR is an ASCII, printable file made from the FORTH screens  
-of C64-KERMIT, v1.5 , with carriage returns added to its 40-character  
-lines for printing, and with a few inter-screen heading lines added for  
-identification.  These screens were written for the original (version A)  
-Performance Micro Products C64-FORTH.  They will need modification for use  
-with other versions of FORTH, and some screens will be irrelevant to other  
-systems, especially those dealing with I/O.  This file is meant to be used  
-by knowledgeable FORTH programmers who wish to adapt and improve this  
-KERMIT program for their own private systems.  
-  
-  
-R. Detenbeck, Physics Dept., University of VT, Burlington, VT 05405  
-  
+# Kermit in FORTH
+
+original C=64 Sourcecode
+
+[ftp://kermit.columbia.edu/kermit/c/](ftp://kermit.columbia.edu/kermit/c/) 
+
+About the Kermit Protcol, see [Kermit (protocol) in Wikipedia](http://en.wikipedia.org/wiki/Kermit_(protocol))
+
+## KERMIT C-64, v1.5
+
+Robert W. Detenbeck, University of Vermont.
+
+KERMIT is a protocol for transferring files between different   computers.  This KERMIT program was written in the FORTH language, for   a Commodore C64 computer with a Commodore 1541 disk drive (device 8)   and a Commodore 1600 modem on the RS-232 port (device 2).  Other   drives and modems may work if they use the same device numbers.  The   program itself uses about 30K; disk buffers for "save" and "help"   commands extend downward from $9FFF; and there are scratch string   areas in $CB00-$CFFF.  This program has been tested only under limited   conditions.  It has been run at 300 baud, but the nature of the   interrupt-driven RS-232 interface suggests that 1200 or even 2400 baud   should work without loss of data, though perhaps not at the efficiency   of a machine-language program.  Multiple-file transfers with wild-card   construction cause some problems in the transfer of filenames from   Kermit-20.
+
+The "help" files, named scr96, scr97 and scr98, give details of this program's special characteristics.  Several special features were   required by the C64's use of Commodore's own form of ASCII code, and its lack of certain ASCII capabilities.  ASCII backslash prints as a  vertical bar, chr$(221), but is transmitted by the "pound" key; the   tab and formfeed characters are stored in C64 files as chr$(220) and   chr$(219).
+
+The KERMIT "connect" command converts the C64 into a simple terminal, in which the C64 "delete" button transmits the ASCII code   127, "DEL".  If the host mainframe requires a backspace, ASCII code 8, the F5 key should be used.  The terminal program contained herein    responds correctly to a backspace character received from the modem.
+
+You have received a "turnkey" copy of the FORTH program, in which
+the source screens and programming system are inaccessible.  This copy
+may be recopied and distributed without restriction.  In fact, the
+"new" command of this KERMIT facilitates such copying.  If you want a
+copy of the original FORTH screens, with a printing program to device 4, you may obtain one by sending a blank disk in a stamped,
+self-addressed mailer to the author, Robert W. Detenbeck, Department
+of Physics, University of Vermont, Burlington, VT 05405.  They were
+written to be used with version A of C64-FORTH, sold by Performance
+Micro Products, 770 Dedham Street-S2, Canton, MA 02021.  Slight
+modifications would be required to use the screens with the newer
+version B, a pure FORTH-79 standard.  Because the screens of C64-FORTH
+are 25 x 40, extensive retyping would be necessary to format them for
+readability on a standard 16 x 64 FORTH screen.
+
+Information about KERMIT can be obtained from the following
+sources:
+Frank da Cruz and Bill Catchings, "Kermit: A File-Transfer Protocol
+for Universities"
+BYTE, vol. 9, no. 6, June 1984, p. 255 (Part 1)
+BYTE, vol. 9, no. 7, July 1984, p. 143 (Part 2)
+KERMIT USERS GUIDE, 4th ed., available for $5.00 from KERMIT
+Distribution, Columbia University Center for Computing Activities, 7th
+Floor, Watson Laboratory, 612 West 115th Street, New York, N.Y. 10025.
+For those near the University of Vermont, the USERS GUIDE can be
+purchased from the Academic Computing Center in the Cook Building.
+
+
+The file C644TH.SCR is an ASCII, printable file made from the FORTH screens
+of C64-KERMIT, v1.5 , with carriage returns added to its 40-character
+lines for printing, and with a few inter-screen heading lines added for
+identification.  These screens were written for the original (version A)
+Performance Micro Products C64-FORTH.  They will need modification for use
+with other versions of FORTH, and some screens will be irrelevant to other
+systems, especially those dealing with I/O.  This file is meant to be used
+by knowledgeable FORTH programmers who wish to adapt and improve this
+KERMIT program for their own private systems.
+
+
+R. Detenbeck, Physics Dept., University of VT, Burlington, VT 05405
+
 ```
 ( ---
 ( --- SCREEN # 5 ---
@@ -2788,4 +2788,4 @@ F8-? => SHOW THESE OPTIONS
                                         
                        
 ```
-  
+

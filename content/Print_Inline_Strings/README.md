@@ -1,13 +1,13 @@
 ---
 title: Print Inline Strings
 ---
-# Print Inline Strings  
-  
-General Information  
-  
-Author: Holger Picker pickerh@uni-muenster.de   
-Published: comp.sys.apple2.programmer   
-  
+# Print Inline Strings
+
+General Information
+
+Author: Holger Picker pickerh@uni-muenster.de
+Published: comp.sys.apple2.programmer
+
 ```
 ;****************************************
 ; 24-Jul-2000        StringWritePC

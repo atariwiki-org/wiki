@@ -1,29 +1,29 @@
 ---
 title: Unused Opcodes
 ---
-# So-Called Unused Opcodes  
-  
-from Apple Assembly Line 03/81  
-  
-The 6502 has 104 so-called unused opcodes.  The various charts and reference manuals I have checked either leave them blank or call them "unused", "no-operation", or "future expansion".  The 6502 has been around since 1976; I think we have waited long enough to know there will be no "expansion".  But are they really unused?  Do they have any effect if we try to execute them?  Are they really no-ops?  If so, how many bytes does the processor assume for each one?  
-  
-These questions had never bothered me until I was looking through some disassembled memory and thought I found evidence of someone USING the "unused".  It turned out they were not, but my curiosity was aroused.  Just for fun, I built a little test routine and tried out the $FF opcode.  Lo and behold!  The 6502 thinks it is a 3-byte instruction, and it changes the A-register and some status bits!  
-  
-About 45 minutes later I pinned it down:  FFxxyy performs exactly the same as the two instructions FExxyy and FDxxyy.  It is just as though I had executed one and then the other.  In other words, anywhere in a program I find:  
-  
+# So-Called Unused Opcodes
+
+from Apple Assembly Line 03/81
+
+The 6502 has 104 so-called unused opcodes.  The various charts and reference manuals I have checked either leave them blank or call them "unused", "no-operation", or "future expansion".  The 6502 has been around since 1976; I think we have waited long enough to know there will be no "expansion".  But are they really unused?  Do they have any effect if we try to execute them?  Are they really no-ops?  If so, how many bytes does the processor assume for each one?
+
+These questions had never bothered me until I was looking through some disassembled memory and thought I found evidence of someone USING the "unused".  It turned out they were not, but my curiosity was aroused.  Just for fun, I built a little test routine and tried out the $FF opcode.  Lo and behold!  The 6502 thinks it is a 3-byte instruction, and it changes the A-register and some status bits!
+
+About 45 minutes later I pinned it down:  FFxxyy performs exactly the same as the two instructions FExxyy and FDxxyy.  It is just as though I had executed one and then the other.  In other words, anywhere in a program I find:
+
 ```
      INC VARIABLE,X
      SBC VARIABLE,X
 ```
-I can substitute:  
+I can substitute:
 ```
      .HS FF
      .DA VARIABLE
 ```
-  
-  
-You might wonder if I will ever find that sequence.  I did try writing a program to demonstrate its use.  It has the advantage of saving 3 bytes, and 4 clock cycles.  (The SBC instruction is executed DURING the 7 cycles of the INC instruction!)  
-  
+
+
+You might wonder if I will ever find that sequence.  I did try writing a program to demonstrate its use.  It has the advantage of saving 3 bytes, and 4 clock cycles.  (The SBC instruction is executed DURING the 7 cycles of the INC instruction!)
+
 ```
      TEST LDX INDEX
           LDA #10       FOR COUNTER(X)=10 TO 39
@@ -36,48 +36,48 @@ You might wonder if I will ever find that sequence.  I did try writing a program
           BCS .1        NEXT
           RTS
 ```
-  
-Are there any more?  Before I could rest my curiosity, I had spent at least ten more hours, and had figured out what all 104 "unused opcodes" really do!  
-  
-The center-fold chart shows the fruit of my detective work.  The shaded opcodes are the "unused" ones.  I don't know if every 6502 behaves the same as mine or not.  Mine appears to be made by Synertek, and has a date code of 7720 (20th week of 1977).  It could be that later versions or chips from other sources (MOS Technology or Rockwell) are different.  If you find yours to be different, please let me know!  
-  
-Twelve of the opcodes, all in column "x2", hang up the 6502; the only way to get out is to hit RESET or turn off the machine.  
-  
-There are 27 opcodes which appear to have no effect on any registers or on memory.  These could be called "NOP", but some of them are considered by the 6502 to have 2 or 3 bytes.  I have labeled them "nop", "nop2", and "nop3" to distinguish how many bytes the 6502 thinks it is using.  You could call nop2 "always skip one byte" and nop3 "always skip two bytes".  
-  
-The action most of the rest perform can be deduced by looking at the other opcodes in the same row.  For example, all of the xF column (except 8F and 9F) perform two instructions together: first the corresponding xE opcode, and then the corresponding xD opcode.  In the same way, most of the opcodes in column x7 combine the x6 and x5 opcodes.  The x3 column mirrors the x7 and xF columns, but with different addressing modes.  And finally, the xB column mimics the other three columns, but with more exceptions.  Most of the exceptions are in the 8x and 9x rows.  
-  
-A few of the opcodes seem especially interesting and potentially useful.  For example, A3xx performs three steps:  first it loads xx into the X-register; then using this new value of X, it moves the byte addressed by (xx,X) into both the A- and X- registers.  Another way of looking at this one is to say that whatever value xx has is doubled; then the two pagezero bytes at 2*xx and 2*xx+1 are used as the address for loading the A- and X-registers.  You could use this for something, couldn't you?  
-  
-There are five instructions which form the logical product of the A- and X-registers (without disturbing either register) and store the result in memory.  If we call this new instruction "SAX", for "Store A&X", we have:  
-  
+
+Are there any more?  Before I could rest my curiosity, I had spent at least ten more hours, and had figured out what all 104 "unused opcodes" really do!
+
+The center-fold chart shows the fruit of my detective work.  The shaded opcodes are the "unused" ones.  I don't know if every 6502 behaves the same as mine or not.  Mine appears to be made by Synertek, and has a date code of 7720 (20th week of 1977).  It could be that later versions or chips from other sources (MOS Technology or Rockwell) are different.  If you find yours to be different, please let me know!
+
+Twelve of the opcodes, all in column "x2", hang up the 6502; the only way to get out is to hit RESET or turn off the machine.
+
+There are 27 opcodes which appear to have no effect on any registers or on memory.  These could be called "NOP", but some of them are considered by the 6502 to have 2 or 3 bytes.  I have labeled them "nop", "nop2", and "nop3" to distinguish how many bytes the 6502 thinks it is using.  You could call nop2 "always skip one byte" and nop3 "always skip two bytes".
+
+The action most of the rest perform can be deduced by looking at the other opcodes in the same row.  For example, all of the xF column (except 8F and 9F) perform two instructions together: first the corresponding xE opcode, and then the corresponding xD opcode.  In the same way, most of the opcodes in column x7 combine the x6 and x5 opcodes.  The x3 column mirrors the x7 and xF columns, but with different addressing modes.  And finally, the xB column mimics the other three columns, but with more exceptions.  Most of the exceptions are in the 8x and 9x rows.
+
+A few of the opcodes seem especially interesting and potentially useful.  For example, A3xx performs three steps:  first it loads xx into the X-register; then using this new value of X, it moves the byte addressed by (xx,X) into both the A- and X- registers.  Another way of looking at this one is to say that whatever value xx has is doubled; then the two pagezero bytes at 2*xx and 2*xx+1 are used as the address for loading the A- and X-registers.  You could use this for something, couldn't you?
+
+There are five instructions which form the logical product of the A- and X-registers (without disturbing either register) and store the result in memory.  If we call this new instruction "SAX", for "Store A&X", we have:
+
 ```
      83   SAX (z,X)             8F   SAX a
      87   SAX z                 9F   SAX a,X
      97   SAX z,Y
 ```
-  
-We get seven forms of the combination which shift a memory location using ASL, and then inclusive OR the results into A with an ORA instruction.  If we call this new instruction ALO, we have:  
-  
+
+We get seven forms of the combination which shift a memory location using ASL, and then inclusive OR the results into A with an ORA instruction.  If we call this new instruction ALO, we have:
+
 ```
      03   ALO (z,X)             1B   ALO a,Y
      13   ALO (z),Y             0F   ALO a
      07   ALO z                 1F   ALO a,X
      17   ALO z,X
 ```
-  
-The same seven forms occur for the combinations ROL-AND, LSR-EOR, and ROR-ADC.  Note that if you don't care what happens to the A-register, and the status register, these 28 instructions make two extra addressing modes available to the shift instructions: (z,X) and (z),Y.  
-  
-Opcodes 4B and 6B might also be useful.  You can do an AND-immediate followed by LSR or ROR on the A-register.  
-  
-Opcodes 93, 9B, and 9E are really weird!  It took a lot of head-scratching to figure out what they do.  
-  
+
+The same seven forms occur for the combinations ROL-AND, LSR-EOR, and ROR-ADC.  Note that if you don't care what happens to the A-register, and the status register, these 28 instructions make two extra addressing modes available to the shift instructions: (z,X) and (z),Y.
+
+Opcodes 4B and 6B might also be useful.  You can do an AND-immediate followed by LSR or ROR on the A-register.
+
+Opcodes 93, 9B, and 9E are really weird!  It took a lot of head-scratching to figure out what they do.
+
 ```
      93   Forms the logical product of the A-register
           and byte the at z+1 (which I call "hea")
           and stores it at (z),Y.
 ```
-  
+
 ```
      9B   Forms the logical product of the A- and X-
           registers, and stores the result in the S-
@@ -89,33 +89,33 @@ Opcodes 93, 9B, and 9E are really weird!  It took a lot of head-scratching to fi
           and "hea+1" and stores the result at "a,Y".
           Whew!
 ```
-  
-  
+
+
 ```
      9E   Forms the logical product of the X-register
           and "hea+1" and stores the result at "a,Y".
 ```
-  
-We get six forms of the new "LAX" instruction, which loads the same value into both the A- and X-registers:  
-  
+
+We get six forms of the new "LAX" instruction, which loads the same value into both the A- and X-registers:
+
 ```
      B3   LAX (z),Y             AB   LAX #v
      A7   LAX z                 AF   LAX a
      B7   LAX z,Y               BF   LAX a,Y
 ```
-  
-I skipped over BB, because it is another extremely weird one.  It forms the logical product of the byte at "a,Y" and S-register, and stores the result in the A-, X-, and S-registers.  No wonder they didn't tell us about it!  
-  
-Right under that one is the CB instruction.  Well, good buddy (please excuse the CB talk!), it forms the logical product of the A- and X-registers, subtracts the immediate value (second byte of CB xx), and puts the result into the X-register.  
-  
-The Cx and Dx rows provide us with seven forms that do a DEC on a memory byte, and then CMP the result with the A-register.  Likewise, the Ex and Fx rows give us seven forms that perform INC followed by SBC.  
-  
-It is a good thing to be aware that the so-called "unused" opcodes can be quite dangerous if they are accidentally executed.  If your program goes momentarily wild and executes some data, chances are something somewhere will get strangely clobbered.  
-  
-Since all of the above information was deduced by testing and observation, I cannot be certain that I am 100% correct.  I may have overlooked or mis-interpreted some results, or even made a clerical error.  Furthermore, as I said before, my 6502 may be different from yours.  You can test your own, to see if it works like mine.  
-  
-And if the whole exercise seems academic to you, you can at least enjoy the first legible and complete hexadecimal opcode chart for the 6502.  
-  
+
+I skipped over BB, because it is another extremely weird one.  It forms the logical product of the byte at "a,Y" and S-register, and stores the result in the A-, X-, and S-registers.  No wonder they didn't tell us about it!
+
+Right under that one is the CB instruction.  Well, good buddy (please excuse the CB talk!), it forms the logical product of the A- and X-registers, subtracts the immediate value (second byte of CB xx), and puts the result into the X-register.
+
+The Cx and Dx rows provide us with seven forms that do a DEC on a memory byte, and then CMP the result with the A-register.  Likewise, the Ex and Fx rows give us seven forms that perform INC followed by SBC.
+
+It is a good thing to be aware that the so-called "unused" opcodes can be quite dangerous if they are accidentally executed.  If your program goes momentarily wild and executes some data, chances are something somewhere will get strangely clobbered.
+
+Since all of the above information was deduced by testing and observation, I cannot be certain that I am 100% correct.  I may have overlooked or mis-interpreted some results, or even made a clerical error.  Furthermore, as I said before, my 6502 may be different from yours.  You can test your own, to see if it works like mine.
+
+And if the whole exercise seems academic to you, you can at least enjoy the first legible and complete hexadecimal opcode chart for the 6502.
+
 ```
     x0      x1         x2      x3
 

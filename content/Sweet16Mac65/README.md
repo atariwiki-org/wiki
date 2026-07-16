@@ -1,25 +1,25 @@
 ---
 title: Sweet16Mac65
 ---
-# Sweet 16 for MAC/65 Atari 8bit  
-  
-General Information  
-  
-Author: Steve "Woz" Wozniak   
-Assembler: Mac/65   
-Published: 1977   
-  
-see also Original [Sweet_16](../Sweet_16/README.md)  
-  
-This is a port of the Sweet 16 interpreter to the 8bit ATARI.  
-  
-## Diffs  
-  
-- The ATARI uses the zero page registers at $E0-$FF instead of $00-$1F  
-- the "save" and "restore" routines are not in ROM, but in the source  
-  
-## Mac/65 Source  
-  
+# Sweet 16 for MAC/65 Atari 8bit
+
+General Information
+
+Author: Steve "Woz" Wozniak
+Assembler: Mac/65
+Published: 1977
+
+see also Original [Sweet_16](../Sweet_16/README.md) 
+
+This is a port of the Sweet 16 interpreter to the 8bit ATARI.
+
+## Diffs
+
+- The ATARI uses the zero page registers at $E0-$FF instead of $00-$1F
+- the "save" and "restore" routines are not in ROM, but in the source
+
+## Mac/65 Source
+
 ```
 1010 ***************************
 1020 *								 *

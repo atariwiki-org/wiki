@@ -1,15 +1,15 @@
 ---
 title: File Select Box
 ---
-# File Select Box  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	13.02.90   
-  
+# File Select Box
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	13.02.90
+
 ```
 ;********************************
 ;** Fileselect Box				 **

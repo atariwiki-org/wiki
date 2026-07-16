@@ -1,28 +1,28 @@
 ---
 title: VTEmulator
 ---
-# VTEmulator  
-  
-General Information  
-  
-Author: 	Charles Green   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	usenet   
-  
-Well, I've gotten enough responses that I'd annoy my UUCP neighbor by mailing  
-this file out that many times, so I guess it'll be better to post it.  
-  
-A couple of things I never got around to doing:  
-  
-- Adding a character count to the data in each line, maybe in the byte just before the 320-byte area where the characters for each line are "stenciled" in for display.  This count could be used to speed up the insert-character and clear-to-end-of-line operations; they'd no longer have to go all the way out to column 80 if there was no data displayed out that far.  
-  
-- Adding a single graphics-0 display line, either at the top or bottom of the screen, which could hold the current baud rate, parity, etc.  (assuming that someone adds the code to change them, in addition to maybe brightness). (P.S. - I've since discovered that luminance values of 0 for brightness, 2 or 4 for cursor, and 6 for the characters works better than the values in this program.  You also probably want to put the contrast at a minimum.)  
-  
-- Smooth scrolling.  
-  
-Enjoy,  Charles Green   char...@c3.COM  
-  
+# VTEmulator
+
+General Information
+
+Author: 	Charles Green
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	usenet
+
+Well, I've gotten enough responses that I'd annoy my UUCP neighbor by mailing
+this file out that many times, so I guess it'll be better to post it.
+
+A couple of things I never got around to doing:
+
+- Adding a character count to the data in each line, maybe in the byte just before the 320-byte area where the characters for each line are "stenciled" in for display.  This count could be used to speed up the insert-character and clear-to-end-of-line operations; they'd no longer have to go all the way out to column 80 if there was no data displayed out that far.
+
+- Adding a single graphics-0 display line, either at the top or bottom of the screen, which could hold the current baud rate, parity, etc.  (assuming that someone adds the code to change them, in addition to maybe brightness). (P.S. - I've since discovered that luminance values of 0 for brightness, 2 or 4 for cursor, and 6 for the characters works better than the values in this program.  You also probably want to put the contrast at a minimum.)
+
+- Smooth scrolling.
+
+Enjoy,  Charles Green   char...@c3.COM
+
 ```
 ;''''''''''''''''''''''''''''''''''''
 ; "TVI925.ACT" - A display-list based

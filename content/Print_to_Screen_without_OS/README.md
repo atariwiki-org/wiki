@@ -1,15 +1,15 @@
 ---
 title: Print to Screen without OS
 ---
-# Print to Screen without OS  
-  
-General Information  
-  
-Author: Carsten Strotmann   
-Assembler: Bibo Assembler   
-  
-Example:  
-  
+# Print to Screen without OS
+
+General Information
+
+Author: Carsten Strotmann
+Assembler: Bibo Assembler
+
+Example:
+
 ```
 00660 DEMO     LDX 10
 00670          LDY 5
@@ -17,7 +17,7 @@ Example:
 00690          .AT "HELLO PSC SOFTWARE"
 00700          .HX 9B
 ```
-  
+
 ```
 00010 *****************************
 00020 *                           *

@@ -1,44 +1,44 @@
 # Bug/65 Version 2.0
 
 Copyright (C) 1982 McStuff Co. and Optimized Systems Software, Inc.
-  
-A powerful, individual, adaptable debugger for Atari 8-bit computers.  
-  
-__If you own Rev. 1.1 of the software, not the manual, please let us know. We can make you an offer you can't resist. ;-) The version we're looking for may be only from McStuff Co., not from OSS. Thank you so much in advance for your help, greatly appreciated by the community.__  
-  
-  
-## Image  
-![](attachments/Bug-65.jpg)  
-Bug/65 Version 2.0 (C) 1982 McStuff Company and Optimized Systems Software, Inc.  
-  
-  
-## BUG/65 Disassembly  
-- [Bug-65_Disassembly.txt](attachments/Bug-65_Disassembly.txt)  
-  
-## CAS-Image  
-- [OSS_BUG_65_2.0.cas](attachments/OSS_BUG_65_2.0.cas)  
-  
-## ATR-Images  
-- [OSS_Bug-65_with_OSS_DOS_XL_2.30p_2000-9A00.atr](attachments/OSS_Bug-65_with_OSS_DOS_XL_2.30p_2000-9A00.atr) ; all versions, normal and relocatable, further with version 4 patch and the User Command Handler Example, please see below  
-- [OSS_Bug-65_with_OSS_DOS_XL_2.30p_2000-9000_and_3000_Color.atr](attachments/OSS_Bug-65_with_OSS_DOS_XL_2.30p_2000-9000_and_3000_Color.atr) ; same as above, but with the 3000 color version instead of the 9A00 version  
-- [MAC-65_2.00_and_4.20_with_Bug-65_2.0_normal_and_V4_ready_and_DOS_XL_2.30.atr](attachments/MAC-65_2.00_and_4.20_with_Bug-65_2.0_normal_and_V4_ready_and_DOS_XL_2.30.atr) ; normal and relocatable, further with already patched version 4 of BUG/65 and the User Command Handler Example, please see below  
-  
-## Manuals  
-- [BUG/65 Manual Rev. 1.0](attachments/Bug-65_Reference_Manual_v1.0_1982OSS_SoftwareUS_.pdf) ; size: 2.4 MB ; original first manual from OSS of BUG/65 ; thank you so much DjayBee from AtariAge, that is a great find! Further on [archive.org](https://archive.org/details/rearc_bug-65-reference-manual-v1.0-1982)  
-- [BUG/65 Manual Rev. 1.0](attachments/Bug-65_Manual_Rev._1.0_1982OSS_SoftwareUS-with_table_of_contents-Original-last_13_pages_missing.pdf) ; size: 1.3 MB ; original first manual from OSS of BUG/65 with table of contents, but without section 13: error messages, appendix and the last 13 pages in whole  
-- [BUG/65 Manual Rev. 1.1](attachments/BUG-65_Manual_5.pdf) ; size: 987 KB ; same as above but with: table of contents, section 13: error messages and appendix  
-- [BUG/65 Manual Rev. 1.1 with ERRATA](attachments/BUG-65_Version_2.0_manual-final_with_errorpage.pdf) ; size: 2.7 MB ; same as above but with an errata page: 'ERRORS IN YOUR BUG/65 MANUAL' (page 4 in the pdf file) for the manual itself ; as of this moment, it is not understood, why the there mentioned commands: N, O, R', R", W' and W" do not work with the above version 2.0 of BUG/65. Either we have version 1.1 for real, while 2.0 is shown at start or something else is wrong here. Anyway, the mentioned pages on the error page do match with pages in the rest of the manual. Further, the below mentioned BUG/65 version 4 patch should not be done, according to the error page from December 1983(?), while it should be done according to the OSS newsletter from summer 1983. Maybe just the 'old boys club' from the golden age can solve this? Any help in that case is very welcome at any time. We would really appreciate if you may can help us here. :-)  
-- [BUG/65 Manual Rev. 1.1 with ERRATA](attachments/Bug-65_Manual_Rev._1.1_1982OSS_SoftwareUS-re-edit_with_OCR.pdf) ; size: 23.6 MB ; complete re-edit of the above with navigation bar, hyperlinks and OCR maintaining the original form  
-  
-__Please take into account, that in the manuals above Rev. 1.1 is mentioned, while just version 2.0 of the software is available up to now.__  
-  
-- [BUG-65 Manual in html](attachments/bug65.zip) ; BUG/65 manual from above in html with css ; Mega-thanks to Erhard Pütz and Dieter Lichtenegger for giving us the best BUG/65 manual possible in html format! :-)  
-- [BUG-65_Manual_1.pdf](attachments/BUG-65_Manual_1.pdf) ; size: 102 KB ; with yellow frame taken from the software ; BUG/65 manual from above in pdf form with navigation bar and hyperlinks ; Mega-thanks to Erhard Pütz and Dieter Lichtenegger for giving us the best BUG/65 manual possible in pdf format! :-)  
-- [BUG-65_Manual_2.pdf](attachments/BUG-65_Manual_2.pdf) ; size: 283 KB ; without yellow frame, just black & white, but with some colors e. g. chapters  
-- [BUG-65_Manual_3.pdf](attachments/BUG-65_Manual_3.pdf) ; size: 213 KB ; with yellow frame taken from the software, but without navigation bar and hyperlinks  
-- [BUG-65_Manual_4.pdf](attachments/BUG-65_Manual_4.pdf) ; size: 233 KB ; black & white version without navigation bar and hyperlinks  
-  
-## BUG/65 User Command Handler Example  
+
+A powerful, individual, adaptable debugger for Atari 8-bit computers.
+
+__If you own Rev. 1.1 of the software, not the manual, please let us know. We can make you an offer you can't resist. ;-) The version we're looking for may be only from McStuff Co., not from OSS. Thank you so much in advance for your help, greatly appreciated by the community.__
+
+
+## Image
+![](attachments/Bug-65.jpg)
+Bug/65 Version 2.0 (C) 1982 McStuff Company and Optimized Systems Software, Inc.
+
+
+## BUG/65 Disassembly
+- [Bug-65_Disassembly.txt](attachments/Bug-65_Disassembly.txt)
+
+## CAS-Image
+- [OSS_BUG_65_2.0.cas](attachments/OSS_BUG_65_2.0.cas)
+
+## ATR-Images
+- [OSS_Bug-65_with_OSS_DOS_XL_2.30p_2000-9A00.atr](attachments/OSS_Bug-65_with_OSS_DOS_XL_2.30p_2000-9A00.atr) ; all versions, normal and relocatable, further with version 4 patch and the User Command Handler Example, please see below
+- [OSS_Bug-65_with_OSS_DOS_XL_2.30p_2000-9000_and_3000_Color.atr](attachments/OSS_Bug-65_with_OSS_DOS_XL_2.30p_2000-9000_and_3000_Color.atr) ; same as above, but with the 3000 color version instead of the 9A00 version
+- [MAC-65_2.00_and_4.20_with_Bug-65_2.0_normal_and_V4_ready_and_DOS_XL_2.30.atr](attachments/MAC-65_2.00_and_4.20_with_Bug-65_2.0_normal_and_V4_ready_and_DOS_XL_2.30.atr) ; normal and relocatable, further with already patched version 4 of BUG/65 and the User Command Handler Example, please see below
+
+## Manuals
+- [BUG/65 Manual Rev. 1.0](attachments/Bug-65_Reference_Manual_v1.0_1982OSS_SoftwareUS_.pdf) ; size: 2.4 MB ; original first manual from OSS of BUG/65 ; thank you so much DjayBee from AtariAge, that is a great find! Further on [archive.org](https://archive.org/details/rearc_bug-65-reference-manual-v1.0-1982)
+- [BUG/65 Manual Rev. 1.0](attachments/Bug-65_Manual_Rev._1.0_1982OSS_SoftwareUS-with_table_of_contents-Original-last_13_pages_missing.pdf) ; size: 1.3 MB ; original first manual from OSS of BUG/65 with table of contents, but without section 13: error messages, appendix and the last 13 pages in whole
+- [BUG/65 Manual Rev. 1.1](attachments/BUG-65_Manual_5.pdf) ; size: 987 KB ; same as above but with: table of contents, section 13: error messages and appendix
+- [BUG/65 Manual Rev. 1.1 with ERRATA](attachments/BUG-65_Version_2.0_manual-final_with_errorpage.pdf) ; size: 2.7 MB ; same as above but with an errata page: 'ERRORS IN YOUR BUG/65 MANUAL' (page 4 in the pdf file) for the manual itself ; as of this moment, it is not understood, why the there mentioned commands: N, O, R', R", W' and W" do not work with the above version 2.0 of BUG/65. Either we have version 1.1 for real, while 2.0 is shown at start or something else is wrong here. Anyway, the mentioned pages on the error page do match with pages in the rest of the manual. Further, the below mentioned BUG/65 version 4 patch should not be done, according to the error page from December 1983(?), while it should be done according to the OSS newsletter from summer 1983. Maybe just the 'old boys club' from the golden age can solve this? Any help in that case is very welcome at any time. We would really appreciate if you may can help us here. :-)
+- [BUG/65 Manual Rev. 1.1 with ERRATA](attachments/Bug-65_Manual_Rev._1.1_1982OSS_SoftwareUS-re-edit_with_OCR.pdf) ; size: 23.6 MB ; complete re-edit of the above with navigation bar, hyperlinks and OCR maintaining the original form
+
+__Please take into account, that in the manuals above Rev. 1.1 is mentioned, while just version 2.0 of the software is available up to now.__
+
+- [BUG-65 Manual in html](attachments/bug65.zip) ; BUG/65 manual from above in html with css ; Mega-thanks to Erhard Pütz and Dieter Lichtenegger for giving us the best BUG/65 manual possible in html format! :-)
+- [BUG-65_Manual_1.pdf](attachments/BUG-65_Manual_1.pdf) ; size: 102 KB ; with yellow frame taken from the software ; BUG/65 manual from above in pdf form with navigation bar and hyperlinks ; Mega-thanks to Erhard Pütz and Dieter Lichtenegger for giving us the best BUG/65 manual possible in pdf format! :-)
+- [BUG-65_Manual_2.pdf](attachments/BUG-65_Manual_2.pdf) ; size: 283 KB ; without yellow frame, just black & white, but with some colors e. g. chapters
+- [BUG-65_Manual_3.pdf](attachments/BUG-65_Manual_3.pdf) ; size: 213 KB ; with yellow frame taken from the software, but without navigation bar and hyperlinks
+- [BUG-65_Manual_4.pdf](attachments/BUG-65_Manual_4.pdf) ; size: 233 KB ; black & white version without navigation bar and hyperlinks
+
+## BUG/65 User Command Handler Example
 ```
 0005 ;**************************************************
 0010 ;  EQUATES INTO BUG/65:
@@ -110,20 +110,20 @@ __Please take into account, that in the manuals above Rev. 1.1 is mentioned, whi
 0600     .BYTE  >[*+$FF]   ; END BYTE TO INCLUDE
 0610     .END              ; THAT'S ALL FOLKS
 ```
-The MAC/65 file of the 'User Command Handler Example': 'USRCOMHD.M65' is already on all of the ATR images above.  
-  
-## BUG/65 does not print with XL/XE OS  
-Mega-thanks to Erhard Pütz for the final solution of this problem! :-)  
-  
+The MAC/65 file of the 'User Command Handler Example': 'USRCOMHD.M65' is already on all of the ATR images above.
+
+## BUG/65 does not print with XL/XE OS
+Mega-thanks to Erhard Pütz for the final solution of this problem! :-)
+
 Use device ID $3F instead of $40. BUG/65 jumps indirectly into the OS's put-byte routine ($E436 -> $FECA+1). Therefore, no IOCB channel is open, and the device number is missing.
- 
-Patch: Load BUG/65 and change the following:  
+
+Patch: Load BUG/65 and change the following:
 ```
 ORG+$068B LDX #36
           LDY #E4
           JMP 2777
 ```
-=>  
+=>
 ```
 ORG+$068B JMP 0600
 0600	  PHA
@@ -133,15 +133,15 @@ ORG+$068B JMP 0600
 	  PLA
 	  JMP FECB
 ```
-  
-## BUG/65 version 4 patch  
-The version 4 patch is available in two different kinds:  
-a) a short BASIC program in the form of a BAS-file.  
-and  
-b) a short machine language program in the form of a COM-file.  
-  
-a):  
-BASIC program:  
+
+## BUG/65 version 4 patch
+The version 4 patch is available in two different kinds:
+a) a short BASIC program in the form of a BAS-file.
+and
+b) a short machine language program in the form of a COM-file.
+
+a):
+BASIC program:
 ```
 5 REM BUG/65 BUG -- VERSION 4 PATCH PROGRAM
 10 XIO 36,#1,0,0,"D:BUG65.COM":REM UNPROTECT FILE
@@ -152,76 +152,76 @@ BASIC program:
 60 PUT #1,12
 70 CLOSE #1
 ```
-  
-The above program named as "BUGV4FIX.BAS" is in form of a file already on all of the atr-images above.  
-  
-To make the patch to BUG/65 do as follows:  
-1) Insert your BASIC cartridge or use BASIC A+ disk.  
-2) Place your BUG/65 disk into the disk drive.  
-3) Use this BASIC program above to apply the one-byte patch so that BUG/65 will work with OS/A+ version 4.  
-  
-b):  
-machine language program:  
-  
-name of file: BUGV4FIX.COM  
-  
-BUGV4FIX.COM ; we are still searching for that file. It seems to be lost in time, like tears in rain. Any help or hint in that case would be very much appreciated. :-)  
-  
-At the end of the BUG/65 manual we can read:  
-1. Copy the files BUG65.COM and BUGV4FIX.COM to a version 4 disk using the COPY24 command (see the DOSXL manual for details on this command).  
-2. At the version 4 "D1:" prompt, type the command: BUGV4FIX (RETURN).  
-3. The file BUG65.COM on that disk is now compatible with version 4 of DOSXL.  
-  
-__WARNING: Do NOT perform the BUGV4FIX command on your version 2 master disk!__  
-  
-## BUG/65 patch from OSS Newsletter October 1984  
-When BUG gains control as a result of a BRK instruction being executed, it checks whether the BRK instruction is one it placed (as a result of a "G" command). If not, it assumes that it is a user breakpoint, to be handled by a user routine! Guess what? Most of us don't go around adding user BRK handlers to Atari’s OS, so the machine goes off into never-never-land.  
-  
-Quick fix (again, not for the faint of heart): After loading BUG/65 from CP, perform the following actions:  
-  
-1. Display the contents of location $2E7 (LOMEM).  
-2. Use the "H" command to add $17EE to those contents. (Example: if $2E7 contains 2200, use "H 2200 17EE” to find the sum.) Call this value ADDSUM.  
-3. Display the memory at ADDSUM (via the "D" command. You should see the following bytes (if not, stop now): 39EE E9 02 4D . . . ("39EE" is the arbitrary value of ADDSUM if LOMEM is at $2200.)  
-4. Use BUG/65 commands as follows:  
-  
-Z 600  
-LDA #B0  
-STA addsum (use actual address instead of name!)  
-LDA #1E  
-STA addsum+1 (again, use an actual address)  
-BRK (hit the BREAK key to exit miniassembler)  
-G 600  
-  
-If you did everything correctly, BUG/65 should allow a "USER RUN" and then print a breakpoint message for the BRK at $60A. If it didn’t work, you may already have a fixed version of BUG/65, so ignore all of this.  
-  
-## Creating a non-relocatable version  
-  
-In order to allow itself to be relocated virtually anywhere in memory, BUG/65 as shipped includes a relocation bit map and relocation program. In addition, relocatable BUG/65 always loads in at locations $9800 through $BC00. If these addresses are "poison" to you (e.g., if you want to use BUG/65 with a cartridge plugged in), you may wish to produce a non-relocatable version designed to run within an address range you pick. If so, USING A 48K SYSTEM, simply specify the loadpoint, as shown in the preceding section (e.g., via BUG65 7000) and allow BUG/65 to load and relocate. Then exit to OS/A+ (via Quit) and use OS/A+ intrinsic command SAVE to save a non-relocatable version. The address range to be SAVEd may be calculated as follows:  
-  
-SAVE filename.com loadpoint+$200 loadpoint+$1FFF  
-  
-Thus, if you had specified "BUG65 7000", you could save the non-relocatable version via  
-  
-SAVE BUG7000.COM 7200 8FFF  
-  
-thus also giving it a name that will later remind you where it will load. To execute this non-relocatable version, simply type in its name (BUG7000 in the example shown).  
-  
-## Summary of major features of BUG/65  
-• A full set of debugging commands: change memory, display memory, go to user program with breakpoints, etc.  
-• Binary file read and write, including appended write  
-• A disassembler  
-• An instant assembler providing labeling capability  
-• Expanded command addressing capability: hex or decimal addresses, + and - operators supported, relocated addresses supported  
-• Read or write disk sector(s)  
-• Multiple commands permitted in a command line. Command lines can be repeated with a single keystroke or repeated forever with the special slash operator.  
-• Support for relocatable assemblers - the base of a module can be specified and then used to reference addresses in that module  
-• BUG/65 commands can be executed from a command file, and there is a command to create command files  
-• Hex to decimal and decimal to hex conversions provided  
-• Memory protection of BUG/65's code and data. BUG/65 won't allow you to use a BUG/65 command that will destroy any part of BUG/65 itself. For example, you can't use the Fill command to overwrite BUG/65's code.  
-• Page zero sharing. BUG/65 shares page zero with a user program by keeping two copies of the shared page zero locations - one for the user and one for BUG/65 itself.  
-  
-## Command Summary of BUG/65  
-![](attachments/Command_Summary_1.jpg)  
-![](attachments/Command_Summary_2.jpg)  
 
-Command Summary of BUG/65 Version 2.0 (C) 1982 McStuff Company and Optimized Systems Software, Inc.  
+The above program named as "BUGV4FIX.BAS" is in form of a file already on all of the atr-images above.
+
+To make the patch to BUG/65 do as follows:
+1) Insert your BASIC cartridge or use BASIC A+ disk.
+2) Place your BUG/65 disk into the disk drive.
+3) Use this BASIC program above to apply the one-byte patch so that BUG/65 will work with OS/A+ version 4.
+
+b):
+machine language program:
+
+name of file: BUGV4FIX.COM
+
+BUGV4FIX.COM ; we are still searching for that file. It seems to be lost in time, like tears in rain. Any help or hint in that case would be very much appreciated. :-)
+
+At the end of the BUG/65 manual we can read:
+1. Copy the files BUG65.COM and BUGV4FIX.COM to a version 4 disk using the COPY24 command (see the DOSXL manual for details on this command).
+2. At the version 4 "D1:" prompt, type the command: BUGV4FIX (RETURN).
+3. The file BUG65.COM on that disk is now compatible with version 4 of DOSXL.
+
+__WARNING: Do NOT perform the BUGV4FIX command on your version 2 master disk!__
+
+## BUG/65 patch from OSS Newsletter October 1984
+When BUG gains control as a result of a BRK instruction being executed, it checks whether the BRK instruction is one it placed (as a result of a "G" command). If not, it assumes that it is a user breakpoint, to be handled by a user routine! Guess what? Most of us don't go around adding user BRK handlers to Atari’s OS, so the machine goes off into never-never-land.
+
+Quick fix (again, not for the faint of heart): After loading BUG/65 from CP, perform the following actions:
+
+1. Display the contents of location $2E7 (LOMEM).
+2. Use the "H" command to add $17EE to those contents. (Example: if $2E7 contains 2200, use "H 2200 17EE” to find the sum.) Call this value ADDSUM.
+3. Display the memory at ADDSUM (via the "D" command. You should see the following bytes (if not, stop now): 39EE E9 02 4D . . . ("39EE" is the arbitrary value of ADDSUM if LOMEM is at $2200.)
+4. Use BUG/65 commands as follows:
+
+Z 600
+LDA #B0
+STA addsum (use actual address instead of name!)
+LDA #1E
+STA addsum+1 (again, use an actual address)
+BRK (hit the BREAK key to exit miniassembler)
+G 600
+
+If you did everything correctly, BUG/65 should allow a "USER RUN" and then print a breakpoint message for the BRK at $60A. If it didn’t work, you may already have a fixed version of BUG/65, so ignore all of this.
+
+## Creating a non-relocatable version
+
+In order to allow itself to be relocated virtually anywhere in memory, BUG/65 as shipped includes a relocation bit map and relocation program. In addition, relocatable BUG/65 always loads in at locations $9800 through $BC00. If these addresses are "poison" to you (e.g., if you want to use BUG/65 with a cartridge plugged in), you may wish to produce a non-relocatable version designed to run within an address range you pick. If so, USING A 48K SYSTEM, simply specify the loadpoint, as shown in the preceding section (e.g., via BUG65 7000) and allow BUG/65 to load and relocate. Then exit to OS/A+ (via Quit) and use OS/A+ intrinsic command SAVE to save a non-relocatable version. The address range to be SAVEd may be calculated as follows:
+
+SAVE filename.com loadpoint+$200 loadpoint+$1FFF
+
+Thus, if you had specified "BUG65 7000", you could save the non-relocatable version via
+
+SAVE BUG7000.COM 7200 8FFF
+
+thus also giving it a name that will later remind you where it will load. To execute this non-relocatable version, simply type in its name (BUG7000 in the example shown).
+
+## Summary of major features of BUG/65
+• A full set of debugging commands: change memory, display memory, go to user program with breakpoints, etc.
+• Binary file read and write, including appended write
+• A disassembler
+• An instant assembler providing labeling capability
+• Expanded command addressing capability: hex or decimal addresses, + and - operators supported, relocated addresses supported
+• Read or write disk sector(s)
+• Multiple commands permitted in a command line. Command lines can be repeated with a single keystroke or repeated forever with the special slash operator.
+• Support for relocatable assemblers - the base of a module can be specified and then used to reference addresses in that module
+• BUG/65 commands can be executed from a command file, and there is a command to create command files
+• Hex to decimal and decimal to hex conversions provided
+• Memory protection of BUG/65's code and data. BUG/65 won't allow you to use a BUG/65 command that will destroy any part of BUG/65 itself. For example, you can't use the Fill command to overwrite BUG/65's code.
+• Page zero sharing. BUG/65 shares page zero with a user program by keeping two copies of the shared page zero locations - one for the user and one for BUG/65 itself.
+
+## Command Summary of BUG/65
+![](attachments/Command_Summary_1.jpg)
+![](attachments/Command_Summary_2.jpg)
+
+Command Summary of BUG/65 Version 2.0 (C) 1982 McStuff Company and Optimized Systems Software, Inc.

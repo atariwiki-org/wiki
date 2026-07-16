@@ -1,132 +1,132 @@
 ---
 title: ARGS RS232 Cartridge
 ---
-### Arbeiten mit dem Atari Bus - Teil 4 - RS-232 Modul  
-  
-von Rohland Büher, ABBUC Regionalgruppe Stuttgart (ARGS), Februar 1994  
-  
-Disketten:  
-  
-- [argsrs1.atr](attachments/argsrs1.atr)  
-- [argsrs2.atr](attachments/argsrs2.atr)  
-- [argsrs3.atr](attachments/argsrs3.atr)  
-  
-## RS 232-Modul  
-  
-Diesmal wenden wir uns einem anderen Baustein  
-zu. Er trägt die Bezeichnung 6551 und heißt "ACIA"  
-  
-Er ist ebenfalls ein Peripheriebaustein Für die 65-er CPU und wird zur  
-seriellen Datenübertragung eingesetzt. Er hat wie die PIA vier Register  
-und übernimmt alle nötigen Funktionen für die, Datenübertragung.  
-  
-Bauteile  
-  
-| 1 | ACIA 6551(A) + Quarz 1.8432 |  
-| 1 | MAX 232 (oder Ersatz-Typ) |  
-| 4 | Elko 22 MikroF |  
-  
-## Bauplanbeschreibung und Bedienung  
-  
-![](attachments/ARGSRS232.png)  
-Bauplan in voller Größe in den Anhängen!  
-  
-Die Schaltung lehnt sich teilweise an das RS232-Interface des  
-Atari-Magazins an (Atari Magazin 12/88). Dort sind auch weitere  
-Informationen über Funktion und Programmierung des Bausteins zu finden.  
-Geändert wurde die Steueradresse. Außerdem wurde auf drei  
-Hardwarehandshake-Leitungen (DTR, DSR, DCD) verzichtet. Das alles  
-vereinfacht die Schaltung ungemein und ermöglicht den Einbau in ein  
-Modulgehäuse für den Modulschacht  
-  
-Die IRQ-Leitung läßt sich am Modulschacht leider nicht abfragen. Aber der  
-Baustein hat ein Register, in dem ein ausgelöster Interrupt  
-softwaremäßig angezeigt wird. So kann man über einen externen Interrupt  
-(VBI, DLI, Pokey) dieses Register abfragen und so auf den  
-Hardwareinterrupt verzichten.  
-  
-Nullmodenbetrieb: Die Standard-Leitungen Für eine serielle  
-Datenübertragung  sind  
-  
-| TxD  | Datensenden |  
-| RxD  | Datenempfang  Masse/Ground |  
-  
-Alle Informationen werden über diese Leitungen ausgetauscht.  
-  
-Es ist nur ein sogenanntes Softwarehandshake möglich. Dies geschieht  
-normalerweise über die Befehle  
-  
-- XON (17, CTRL-Q) = Datenempfang möglich  
-- XOFF (19, CTRL-S) = kein Datenempfang möglich  
-  
-Achtung: Man muß beim ARGS-RS-232 Modul zusätzlich die Leitungen RTS und  
-CTS- miteinander verbinden Beim PC oder anderen Rechnern muß u.U. auch  
-noch DSR, DTR, DCD miteinander verbunden werden.  
-  
-Standard für den Atari XL/XE ist der Befehlssatz des 850er Interfaces  
-Eine billige Alternative ist das Datari-Kabel das ein einfaches  
-Nullmodemkabel darstellt und für diesen Einsatz kompatibel zum 850er  
-ist. Der Handler für das ARGS-Interface ist (bisher nur) teilweise  
-kompatibel zum 850er.  
-  
-Man muß beim Datenaustausch immer bedenken, daß der Atari für Return den  
-Wort 155 hat und nicht 13 (=> Wandlung !!!)  
-  
-## Software Für das RS-232-Modul  
-  
-Was man dazu braucht ist schlicht ein R:-Handler Nun hat aber das 850-er  
-Interface einen Standard vorgegeben, an den man sich halten sollte.  
-Deswegen muß der Handler nicht nur mit dem ACIA-Baustein umgehen können,  
-sondern muß auch die Befehle des 850-er Interfaces verstehen. Das macht  
-die Sache leider etwas komplizierter, aber nicht unmöglich.  
-  
-Nun zur Software:  
-  
-- ARGSRS2.** R:-Handler mit hoher Kompatibilität zum 850-er Interface.  
-Neue Version, Stand Juli 1994. Steht ab $2000 im Speicher und legt MEMLO  
-hoch  
-- ARGSRSM** (M=Mini) Auf das Nötigste reduzierter R:-Handler. Nur  
-Veränderung der Baud-Festeinstellung von Wortlänge (8 Bit), Parität  
-(keine) und Stopbits (1). Nur Hardwarehandshake und keine  
-Zeichenwandlung von 155 in 13. Reicht aber z.B. für <nop>BobTerm völlig. Steht  
-auch ob $2000 im Speicher.  
-- ARGSRSRE.COM (RE=RElocobel) Relocierbarer R:-handler (ARGSRSM s.o.),  
-der sich ob MEMLOW in den Speicher legt und dann MEMLOW entsprechend  
-erhöht.  
-  
-Weiche Programme laufen nun mit diesen Handlern? Pur jeden Fall alle die  
-das 850-er Interface, voraussetzen und die Handler Sauber abfragen und  
-nicht irgendwie direkt einspringen, d.h.	Buffer direkt auslesen. Es  
-funktionieren:  
-  
-- BOBTERM (vermutlich alle Versionen)  
-- OMNICOM  
-- Kermit (K65V37NR.COM)  
-  
-Es funktionieren nicht  
-  
-- ANSITERM (hat wohl keinen echten R:-Handler)  
-  
-## Steueraddressen  
-  
-Steueradressen: (CCTL + A3)  
+### Arbeiten mit dem Atari Bus - Teil 4 - RS-232 Modul
+
+von Rohland Büher, ABBUC Regionalgruppe Stuttgart (ARGS), Februar 1994
+
+Disketten:
+
+- [argsrs1.atr](attachments/argsrs1.atr)
+- [argsrs2.atr](attachments/argsrs2.atr)
+- [argsrs3.atr](attachments/argsrs3.atr)
+
+## RS 232-Modul
+
+Diesmal wenden wir uns einem anderen Baustein
+zu. Er trägt die Bezeichnung 6551 und heißt "ACIA"
+
+Er ist ebenfalls ein Peripheriebaustein Für die 65-er CPU und wird zur
+seriellen Datenübertragung eingesetzt. Er hat wie die PIA vier Register
+und übernimmt alle nötigen Funktionen für die, Datenübertragung.
+
+Bauteile
+
+| 1 | ACIA 6551(A) + Quarz 1.8432 |
+| 1 | MAX 232 (oder Ersatz-Typ) |
+| 4 | Elko 22 MikroF |
+
+## Bauplanbeschreibung und Bedienung
+
+![](attachments/ARGSRS232.png)
+Bauplan in voller Größe in den Anhängen!
+
+Die Schaltung lehnt sich teilweise an das RS232-Interface des
+Atari-Magazins an (Atari Magazin 12/88). Dort sind auch weitere
+Informationen über Funktion und Programmierung des Bausteins zu finden.
+Geändert wurde die Steueradresse. Außerdem wurde auf drei
+Hardwarehandshake-Leitungen (DTR, DSR, DCD) verzichtet. Das alles
+vereinfacht die Schaltung ungemein und ermöglicht den Einbau in ein
+Modulgehäuse für den Modulschacht
+
+Die IRQ-Leitung läßt sich am Modulschacht leider nicht abfragen. Aber der
+Baustein hat ein Register, in dem ein ausgelöster Interrupt
+softwaremäßig angezeigt wird. So kann man über einen externen Interrupt
+(VBI, DLI, Pokey) dieses Register abfragen und so auf den
+Hardwareinterrupt verzichten.
+
+Nullmodenbetrieb: Die Standard-Leitungen Für eine serielle
+Datenübertragung  sind
+
+| TxD  | Datensenden |
+| RxD  | Datenempfang  Masse/Ground |
+
+Alle Informationen werden über diese Leitungen ausgetauscht.
+
+Es ist nur ein sogenanntes Softwarehandshake möglich. Dies geschieht
+normalerweise über die Befehle
+
+- XON (17, CTRL-Q) = Datenempfang möglich
+- XOFF (19, CTRL-S) = kein Datenempfang möglich
+
+Achtung: Man muß beim ARGS-RS-232 Modul zusätzlich die Leitungen RTS und
+CTS- miteinander verbinden Beim PC oder anderen Rechnern muß u.U. auch
+noch DSR, DTR, DCD miteinander verbunden werden.
+
+Standard für den Atari XL/XE ist der Befehlssatz des 850er Interfaces
+Eine billige Alternative ist das Datari-Kabel das ein einfaches
+Nullmodemkabel darstellt und für diesen Einsatz kompatibel zum 850er
+ist. Der Handler für das ARGS-Interface ist (bisher nur) teilweise
+kompatibel zum 850er.
+
+Man muß beim Datenaustausch immer bedenken, daß der Atari für Return den
+Wort 155 hat und nicht 13 (=> Wandlung !!!)
+
+## Software Für das RS-232-Modul
+
+Was man dazu braucht ist schlicht ein R:-Handler Nun hat aber das 850-er
+Interface einen Standard vorgegeben, an den man sich halten sollte.
+Deswegen muß der Handler nicht nur mit dem ACIA-Baustein umgehen können,
+sondern muß auch die Befehle des 850-er Interfaces verstehen. Das macht
+die Sache leider etwas komplizierter, aber nicht unmöglich.
+
+Nun zur Software:
+
+- ARGSRS2.** R:-Handler mit hoher Kompatibilität zum 850-er Interface.
+Neue Version, Stand Juli 1994. Steht ab $2000 im Speicher und legt MEMLO
+hoch
+- ARGSRSM** (M=Mini) Auf das Nötigste reduzierter R:-Handler. Nur
+Veränderung der Baud-Festeinstellung von Wortlänge (8 Bit), Parität
+(keine) und Stopbits (1). Nur Hardwarehandshake und keine
+Zeichenwandlung von 155 in 13. Reicht aber z.B. für <nop>BobTerm völlig. Steht
+auch ob $2000 im Speicher.
+- ARGSRSRE.COM (RE=RElocobel) Relocierbarer R:-handler (ARGSRSM s.o.),
+der sich ob MEMLOW in den Speicher legt und dann MEMLOW entsprechend
+erhöht.
+
+Weiche Programme laufen nun mit diesen Handlern? Pur jeden Fall alle die
+das 850-er Interface, voraussetzen und die Handler Sauber abfragen und
+nicht irgendwie direkt einspringen, d.h.	Buffer direkt auslesen. Es
+funktionieren:
+
+- BOBTERM (vermutlich alle Versionen)
+- OMNICOM
+- Kermit (K65V37NR.COM)
+
+Es funktionieren nicht
+
+- ANSITERM (hat wohl keinen echten R:-Handler)
+
+## Steueraddressen
+
+Steueradressen: (CCTL + A3)
 ---
-  
-|| ACIA  || Aufgabe	||  Atari-Bus (Modulschacht)  
-| DATA	  | Ein-/Ausgabe  | $D508/54536  
-| STATUS	| IRQ, Fehler, DSR, DCD  | $D509/54537  
-| COMMAND  | Parität, Echo, IRQ, RTS | $D50A/54538  
-| DATA	  | Baud, Stopbit, Wortlänge | $D5OB/54539  
-  
+
+|| ACIA  || Aufgabe	||  Atari-Bus (Modulschacht)
+| DATA	  | Ein-/Ausgabe  | $D508/54536
+| STATUS	| IRQ, Fehler, DSR, DCD  | $D509/54537
+| COMMAND  | Parität, Echo, IRQ, RTS | $D50A/54538
+| DATA	  | Baud, Stopbit, Wortlänge | $D5OB/54539
+
 ---
-  
-## Platinen Layout ( Main.GuusAssmann )  
-  
-für die ARGS RS-232 Cart  
-  
-## Treiber Quellen  
-  
-### ARGSRS.SRC  
+
+## Platinen Layout ( Main.GuusAssmann )
+
+für die ARGS RS-232 Cart
+
+## Treiber Quellen
+
+### ARGSRS.SRC
 ```
 ***		 RS 232 HANDLER			 ***
 *** Fuer A.R.G.S. RS232 Interface ***
@@ -744,8 +744,8 @@ OBUF	  ASC 'Roland Buehler, Holger Pfeil, Pe'
 			ASC 'Com.II und meinem genialen Hirn.'
 END		DFB 255
 ```
-  
-### ARGSRS2.SRC  
+
+### ARGSRS2.SRC
 ```
 ***		 RS 232 HANDLER			 ***
 *** Fuer A.R.G.S. RS232 Interface ***
@@ -1351,8 +1351,8 @@ OBUF	  ASC 'Roland Buehler, Holger Pfeil, Pe'
 			ASC 'Com.II und meinem genialen Hirn.'
 END		DFB 255
 ```
-  
-### ARGSRSM.SRC  
+
+### ARGSRSM.SRC
 ```
 ***		 RS 232 HANDLER			 ***
 *** Fuer A.R.G.S. RS232 Interface ***
@@ -1737,4 +1737,4 @@ OBUF	  ASC 'Roland Buehler, Holger Pfeil, Pe'
 			ASC 'Com.II und meinem genialen Hirn.'
 END		DFB 255
 ```
-  
+

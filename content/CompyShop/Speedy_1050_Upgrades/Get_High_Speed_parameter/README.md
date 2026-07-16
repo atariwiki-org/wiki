@@ -1,8 +1,8 @@
 ---
 title: Get High Speed parameter
 ---
-# Get High Speed parameter  
-  
+# Get High Speed parameter
+
 ```
 0100 ;*************************************************
 0110 ;*        Demonstration fuer Kommando $3F        *

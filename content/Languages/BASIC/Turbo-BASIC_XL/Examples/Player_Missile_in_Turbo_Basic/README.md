@@ -1,30 +1,30 @@
 ---
 title: Player Missile in Turbo Basic
 ---
-# Player Missile in Turbo Basic  
-  
-## General Information  
-  
-Author: 	Peter J. Meyer   
-Language: 	TURBO-BASIC   
-Compiler/Interpreter: 	Turbo Basic 1.5   
-Published: 	Oct 2007 in AtariAge   
-  
-Peter writes:  
-  
-I had this routine for years that can drive the player missile graphics in Turbo Basic XL. It works in single line mode and works with 5 players. 5th being the combination of 4 missiles. It loads the routine to $B000 (45056), but it can be moved, transfered to a string, or whatever for your purposes. The ML routine uses the Memtop (106, $6A) to match the PMBASE so you can put the player/missile into an area that does not interfere with your program or the background graphics. The ML routine saves the vertical position and size of the last player transfer just under the Missile memory area so it can be quickly erased when the next move is made.  
-  
-The ML routine is based upon something that was posted in Compute! magazine in the early 80s'. I added support for adding a 5th player and changed the way it erases the old sprite before drawing a new one. Also only supports one line resolution that I commonly use for programs.  
-  
-The subroutine call usage is:  
-  
-Z= USR (PMMOVE, Player Number , Source Memory Address, Memory Size, Horizontal Position, Vertical Position )  
-  
-Player Number can be 1 to 5  
-  
-  
-### MAC65 Assembler Code of PMMOVE.OBJ  
-  
+# Player Missile in Turbo Basic
+
+## General Information
+
+Author: 	Peter J. Meyer
+Language: 	TURBO-BASIC
+Compiler/Interpreter: 	Turbo Basic 1.5
+Published: 	Oct 2007 in AtariAge
+
+Peter writes:
+
+I had this routine for years that can drive the player missile graphics in Turbo Basic XL. It works in single line mode and works with 5 players. 5th being the combination of 4 missiles. It loads the routine to $B000 (45056), but it can be moved, transfered to a string, or whatever for your purposes. The ML routine uses the Memtop (106, $6A) to match the PMBASE so you can put the player/missile into an area that does not interfere with your program or the background graphics. The ML routine saves the vertical position and size of the last player transfer just under the Missile memory area so it can be quickly erased when the next move is made.
+
+The ML routine is based upon something that was posted in Compute! magazine in the early 80s'. I added support for adding a 5th player and changed the way it erases the old sprite before drawing a new one. Also only supports one line resolution that I commonly use for programs.
+
+The subroutine call usage is:
+
+Z= USR (PMMOVE, Player Number , Source Memory Address, Memory Size, Horizontal Position, Vertical Position )
+
+Player Number can be 1 to 5
+
+
+### MAC65 Assembler Code of PMMOVE.OBJ
+
 ```
 1000 RAMHIGH = $6A
 1010 PMYPOS = $D0
@@ -159,10 +159,10 @@ Player Number can be 1 to 5
 2310     BNE PGCLRLOOP
 2320     RTS 
 ```
-  
-  
-### Turbo Basic Demo  
-  
+
+
+### Turbo Basic Demo
+
 ```
 5 DIM X(5),Y(5),DX(5),DY(5)
 10 EXEC INIT

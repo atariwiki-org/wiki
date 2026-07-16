@@ -1,8 +1,8 @@
 ---
 title: MiniDOS
 ---
-# MiniDOS  
-  
+# MiniDOS
+
 ```
 ; PROGRAM TO ACT AS SORT OF A MINI-DOS    VERSION 1.0
 ; DENNIS NEWTON    --  9/27/83

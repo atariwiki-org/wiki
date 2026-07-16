@@ -1,14 +1,14 @@
 ---
 title: Atari 800 Assembler Equates
 ---
-### Atari 800 Assembler Equates  
-  
-General Information  
-Author: Atari   
-Published: Atari 8-Mar-82   
-  
-The System Equates can be converted in a Format suitable for your favorite Assembler. Or you can use this File to look up System Equates.  
-  
+### Atari 800 Assembler Equates
+
+General Information
+Author: Atari
+Published: Atari 8-Mar-82
+
+The System Equates can be converted in a Format suitable for your favorite Assembler. Or you can use this File to look up System Equates.
+
 ```
 ;HESS.ATARI SYSMAC.SML.27  8-Mar-82 08:39:38, Edit by HESS
 
@@ -790,5 +790,5 @@ NOMAT:            ;;FALL THROUGH IF NO MATCH
 
 .ENDM   ;; M6502
 ```
-  
-  
+
+

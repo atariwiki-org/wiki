@@ -1,19 +1,19 @@
 ---
 title: Abbuc Magazin 73 Gametro
 ---
-General Information  
-  
-Author: 	Ralf Patschke (pps)   
-Language: 	QUICK    
-Compiler/Interpreter: 	Quick   
-Published: 	November 2009   
-  
-Here you go with the source of my little gametro for the ABBUC Magazin 73. This is the version, that should be on the disc, but the world is big and turns around, so an older version found it´s way there ;)  
-  
-Have fun playing and maybe you´ll find some useful code snippets for own projects.  
-  
-PP´s  
-  
+General Information
+
+Author: 	Ralf Patschke (pps)
+Language: 	QUICK
+Compiler/Interpreter: 	Quick
+Published: 	November 2009
+
+Here you go with the source of my little gametro for the ABBUC Magazin 73. This is the version, that should be on the disc, but the world is big and turns around, so an older version found it´s way there ;)
+
+Have fun playing and maybe you´ll find some useful code snippets for own projects.
+
+PP´s
+
 ```
 Quick-Sourcetext
 D2:GAMETRO.QIK  

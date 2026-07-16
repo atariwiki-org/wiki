@@ -1,10 +1,10 @@
 ---
 title: String Library PSC
 ---
-# String Library  
-  
-(c) 1991 Carsten Strotmann  
-  
+# String Library
+
+(c) 1991 Carsten Strotmann
+
 ```
 ;********************************
 ;**                            **
@@ -274,4 +274,4 @@ PROC RSet (BYTE ARRAY dest,source)
 
 RETURN
 ```
-  
+

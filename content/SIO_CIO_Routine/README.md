@@ -1,14 +1,14 @@
 ---
 title: SIO CIO Routine
 ---
-# SIO CIO Routine  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-  
+# SIO CIO Routine
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+
 ```
 ;******************************
 ;**	                     **

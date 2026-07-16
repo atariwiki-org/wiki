@@ -1,27 +1,27 @@
 ---
 title: Eight Queens
 ---
-### General Information  
-  
-Author: 	Dave Oblad   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	ANTIC Power Computing, September 1985   
+### General Information
+
+Author: 	Dave Oblad
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	ANTIC Power Computing, September 1985
 ---
-# 8 QUEENS ACTION!  
-## 92 chess solutions in 40 seconds  
-Program by Dave Oblad  
-  
-''Lightning fast ACTION! solution to "The Eight Queens Problem" from the April, 1985 Antic. Requires the ACTION! programming language cassette from Optimized Systems Software. Works on all 8-bit Atari computers of any memory size, with disk or cassette. Disk subscribers: You can use this program without ACTION! Select the "L" option from DOS 2 for the file, QUEEN EXE.''  
-  
-In line with Antic's long-held belief that our published programs are part of a two-way communications process with readers of the magazine, many Antic programming take-aparts conclude with suggestions for possible enhancements that an ambitious programmer might make in the listings.  
-  
-But Dave Oblad took it as a personal challenge when he saw Angelo Giambra's "The Eight Queens Problem" in the April, 1985 Antic and read our final comment: "For a real challenge, you might want to try modifying the program so that only the 12 unique solutions are found."  
-  
-(The original April article showed that there are 92 possible ways to arrange eight queens on a chessboard so that none of them threatens another. As the most powerful chess piece, a queen can attack for any distance along any straight line.)  
-  
-In Dave's letter to Antic, he wrote, "I spent the next two days cranking away at my Atari in the ACTION! language, which is much faster than BASIC. My algorithm solves and displays all 92 general solutions in approximately 40 seconds-and finds the 12 unique solutions in 30 seconds."  
-  
+# 8 QUEENS ACTION!
+## 92 chess solutions in 40 seconds
+Program by Dave Oblad
+
+''Lightning fast ACTION! solution to "The Eight Queens Problem" from the April, 1985 Antic. Requires the ACTION! programming language cassette from Optimized Systems Software. Works on all 8-bit Atari computers of any memory size, with disk or cassette. Disk subscribers: You can use this program without ACTION! Select the "L" option from DOS 2 for the file, QUEEN EXE.''
+
+In line with Antic's long-held belief that our published programs are part of a two-way communications process with readers of the magazine, many Antic programming take-aparts conclude with suggestions for possible enhancements that an ambitious programmer might make in the listings.
+
+But Dave Oblad took it as a personal challenge when he saw Angelo Giambra's "The Eight Queens Problem" in the April, 1985 Antic and read our final comment: "For a real challenge, you might want to try modifying the program so that only the 12 unique solutions are found."
+
+(The original April article showed that there are 92 possible ways to arrange eight queens on a chessboard so that none of them threatens another. As the most powerful chess piece, a queen can attack for any distance along any straight line.)
+
+In Dave's letter to Antic, he wrote, "I spent the next two days cranking away at my Atari in the ACTION! language, which is much faster than BASIC. My algorithm solves and displays all 92 general solutions in approximately 40 seconds-and finds the 12 unique solutions in 30 seconds."
+
 ```
 ; 8-QUEENS SOLUTION
 ; BY DAVE OBLAD
@@ -165,5 +165,5 @@ OD
 RETURN
 ```
 ---
-PDF: [8queensaction.PDF](attachments/8queensaction.PDF)   
-DJVU: [8queensaction.djvu](attachments/8queensaction.djvu)  
+PDF: [8queensaction.PDF](attachments/8queensaction.PDF) 
+DJVU: [8queensaction.djvu](attachments/8queensaction.djvu) 

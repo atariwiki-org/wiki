@@ -1,48 +1,48 @@
 ---
 title: CSM-Assembler Kurs - Displaylist-Interrupts
 ---
-# Der Display-List-Interrupt  
-  
-von Uwe Röder, CSM APRIL 1990  
-  
-  
-Diese Folge des Assembler-Lehrganges ist im Grunde genommen eine Neuauflage aus meiner Serie über die Fähigkeiten unseres Ataris.  
-  
-Da ich in der letzten Ausgabe auf die Programmierung von Display-Lists eingegangen bin, dachte ich, dass nun unbedingt auch die Programmierung des Display-List Interrupts folgen muss.  
-  
-Der Display-List-Interrupt dient dazu, während des Bildschirmaufbaus den Bildschirm betreffende Daten zu verändern.  
-  
-Dies ist wohl die allgemeinste Definition. Konkret bedeutet dies für mich als Programmierer, dass ich praktisch nach jeder Bildschirmzeile einen neuen Zeichensatz, neue Farben usw. benutzen kann.  
-  
-Bei solchen einfachen Dingen, wie dem Umschalten eines Zeichensatzes oder dem Ändern der Hintergrundfarbe bedarf es im Grunde nur der elementarsten Befehle: LDA und STA  
-  
-Daran kann man schon erkennen wie einfach das Programmieren eines DLIs ist.  
-  
-Es gibt nur wenige Voraussetzungen, die erfüllt werden müssen, um einen DLI zu benutzen.  
-  
-Eine Grundbedingung ist, dass in der entsprechenden Zeile in der Display-List nach der der DLI ausgelöst werden soll Bit 7 gesetzt ist. Dies wurde ja schon letzten Monat deutlich gemacht.  
-  
-Wenn ich eine bereits existierende Display-List im Speicher nachträglich DLI-tauglich machen will, kann ich dies durch eine 'Oderierung' des entsprechenden Bytes mit $80 (128) erreichen.  
-  
-Danach muss die Adresse der Interrupt-Routine in [VDSLST](../VDSLST/README.md) $200,$201 (512,513) eingetragen werden und letztlich muss ich noch Bit 7 in [NMIEN](../NMIEN/README.md) $D40E (54286) setzen, damit der DLI auch ausgeführt wird. In aller Regel muss hier also $C0 (192) eingetragen werden. Bei der DLI-Routine ist noch zu beachten, dass die Registerinhalte (A,X,Y) vor und nach Aufruf der Routine identisch sein müssen, um einen System-Absturz zu vermeiden. Das heißt, dass die Registerinhalte direkt zu Beginn der Routine auf dem Stapel oder wo auch immer abgelegt werden und ganz am Ende der Routine wieder zurückgeholt werden müssen.  
-  
-Eine weitere (nicht zwingende) Bedingung ist das Arbeiten mit [WSYNC](../WSYNC/README.md) $D40A. Schreibt man vor dem Ändern einer Adresse einen Wert in WSYNC so wartet der Computer bis zum Beginn der nächsten Bildschirmzeile und nimmt erst dann die Änderung vor. Würde man beim Farbenumschalten auf diesen Vorgang verzichten, so kann es zu einem Flackern der Farbe im Umschaltbereich führen.  
-  
-Im übrigen ist es noch wichtig, dass man direkt die Hardwareregister verändert, da ein Umändern der Schattenregister erst nach dem vollständigen Aufbau des Bildschirms sichtbar wird!  
-  
-Als Beispiel für die Hardwareregister seien hier die wichtigsten für den DLI kurz angegeben:  
-  
-Farbregister: 708-712 ($2C4-$2C8)  
-Hardwareregister: 53270-53274 ($D016-$D01A)  
-  
-Zeichensatz: 756 ($2F4)  
-Hardwareregister: 54281 ($D409)  
-  
-  
-Es ist weiterhin zu beachten, dass die Routine, die durch den DLI aufgerufen wird, nicht allzu lang ist, da sonst Probleme bei zeitkritischen Input/ Output Operationen entstehen können. So kann zum Beispiel der Diskettenzugriff trotz Speedy und High-Speed-SIO unendlich langsam werden oder gar ganz den Geist aufgeben.  
-  
-Sie finden im Anhang noch einige Beispiele dazu, doch will ich hier einmal ein sehr allgemeines Beispiel geben:  
-  
+# Der Display-List-Interrupt
+
+von Uwe Röder, CSM APRIL 1990
+
+
+Diese Folge des Assembler-Lehrganges ist im Grunde genommen eine Neuauflage aus meiner Serie über die Fähigkeiten unseres Ataris.
+
+Da ich in der letzten Ausgabe auf die Programmierung von Display-Lists eingegangen bin, dachte ich, dass nun unbedingt auch die Programmierung des Display-List Interrupts folgen muss.
+
+Der Display-List-Interrupt dient dazu, während des Bildschirmaufbaus den Bildschirm betreffende Daten zu verändern.
+
+Dies ist wohl die allgemeinste Definition. Konkret bedeutet dies für mich als Programmierer, dass ich praktisch nach jeder Bildschirmzeile einen neuen Zeichensatz, neue Farben usw. benutzen kann.
+
+Bei solchen einfachen Dingen, wie dem Umschalten eines Zeichensatzes oder dem Ändern der Hintergrundfarbe bedarf es im Grunde nur der elementarsten Befehle: LDA und STA
+
+Daran kann man schon erkennen wie einfach das Programmieren eines DLIs ist.
+
+Es gibt nur wenige Voraussetzungen, die erfüllt werden müssen, um einen DLI zu benutzen.
+
+Eine Grundbedingung ist, dass in der entsprechenden Zeile in der Display-List nach der der DLI ausgelöst werden soll Bit 7 gesetzt ist. Dies wurde ja schon letzten Monat deutlich gemacht.
+
+Wenn ich eine bereits existierende Display-List im Speicher nachträglich DLI-tauglich machen will, kann ich dies durch eine 'Oderierung' des entsprechenden Bytes mit $80 (128) erreichen.
+
+Danach muss die Adresse der Interrupt-Routine in [VDSLST](../VDSLST/README.md) $200,$201 (512,513) eingetragen werden und letztlich muss ich noch Bit 7 in [NMIEN](../NMIEN/README.md) $D40E (54286) setzen, damit der DLI auch ausgeführt wird. In aller Regel muss hier also $C0 (192) eingetragen werden. Bei der DLI-Routine ist noch zu beachten, dass die Registerinhalte (A,X,Y) vor und nach Aufruf der Routine identisch sein müssen, um einen System-Absturz zu vermeiden. Das heißt, dass die Registerinhalte direkt zu Beginn der Routine auf dem Stapel oder wo auch immer abgelegt werden und ganz am Ende der Routine wieder zurückgeholt werden müssen.
+
+Eine weitere (nicht zwingende) Bedingung ist das Arbeiten mit [WSYNC](../WSYNC/README.md) $D40A. Schreibt man vor dem Ändern einer Adresse einen Wert in WSYNC so wartet der Computer bis zum Beginn der nächsten Bildschirmzeile und nimmt erst dann die Änderung vor. Würde man beim Farbenumschalten auf diesen Vorgang verzichten, so kann es zu einem Flackern der Farbe im Umschaltbereich führen.
+
+Im übrigen ist es noch wichtig, dass man direkt die Hardwareregister verändert, da ein Umändern der Schattenregister erst nach dem vollständigen Aufbau des Bildschirms sichtbar wird!
+
+Als Beispiel für die Hardwareregister seien hier die wichtigsten für den DLI kurz angegeben:
+
+Farbregister: 708-712 ($2C4-$2C8)
+Hardwareregister: 53270-53274 ($D016-$D01A)
+
+Zeichensatz: 756 ($2F4)
+Hardwareregister: 54281 ($D409)
+
+
+Es ist weiterhin zu beachten, dass die Routine, die durch den DLI aufgerufen wird, nicht allzu lang ist, da sonst Probleme bei zeitkritischen Input/ Output Operationen entstehen können. So kann zum Beispiel der Diskettenzugriff trotz Speedy und High-Speed-SIO unendlich langsam werden oder gar ganz den Geist aufgeben.
+
+Sie finden im Anhang noch einige Beispiele dazu, doch will ich hier einmal ein sehr allgemeines Beispiel geben:
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -107,23 +107,23 @@ Sie finden im Anhang noch einige Beispiele dazu, doch will ich hier einmal ein s
 00610 ;ENDE DES DLI
 00620 ------------------------------
 ```
-Sie müssen sich also nur an das folgende einfache Schema halten:  
-  
-1. Bit 7 in Display-List setzen  
-1. Interrupt sperren; NMIEN=0  
-1. DLI-Adresse in VSDLST eintragen  
-1. Interrupt freigeben; NMIEN=$C0  
-  
-In der DLI-Routine ist nur zu beachten, dass die Prozessor-Register gerettet und nur die Hardwareregister verändert werden. Um Flackern von Farben etc. zu vermeiden, sollte vor einer Farbänderung ein beliebiger Wert in WSYNC geschrieben werden.  
-  
-Also alles ganz einfach!!!  
-  
-Ich hoffe, Sie kommen mit allem klar. Wenn irgendwelche Unklarheiten existieren experimentieren Sie doch einfach mit den DEMO-Programmen. Sie sind im Bibo-Assemblerformat im Anhang.  
-  
-  
+Sie müssen sich also nur an das folgende einfache Schema halten:
+
+1. Bit 7 in Display-List setzen
+1. Interrupt sperren; NMIEN=0
+1. DLI-Adresse in VSDLST eintragen
+1. Interrupt freigeben; NMIEN=$C0
+
+In der DLI-Routine ist nur zu beachten, dass die Prozessor-Register gerettet und nur die Hardwareregister verändert werden. Um Flackern von Farben etc. zu vermeiden, sollte vor einer Farbänderung ein beliebiger Wert in WSYNC geschrieben werden.
+
+Also alles ganz einfach!!!
+
+Ich hoffe, Sie kommen mit allem klar. Wenn irgendwelche Unklarheiten existieren experimentieren Sie doch einfach mit den DEMO-Programmen. Sie sind im Bibo-Assemblerformat im Anhang.
+
+
 ---
-## Anahng  
-### Beispiel 1 (DLI1.ASM)  
+## Anahng
+### Beispiel 1 (DLI1.ASM)
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -188,8 +188,8 @@ Ich hoffe, Sie kommen mit allem klar. Wenn irgendwelche Unklarheiten existieren 
 00610 ;ENDE DES DLI
 00620 ------------------------------
 ```
-  
-### Beispiel 2 (DLI2.ASM)  
+
+### Beispiel 2 (DLI2.ASM)
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -252,8 +252,8 @@ Ich hoffe, Sie kommen mit allem klar. Wenn irgendwelche Unklarheiten existieren 
 00590          RTI
 00600 ------------------------------
 ```
-  
-### Beispiel 3 (DLI3.ASM)  
+
+### Beispiel 3 (DLI3.ASM)
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -333,8 +333,8 @@ Ich hoffe, Sie kommen mit allem klar. Wenn irgendwelche Unklarheiten existieren 
 00760          RTI
 00770 ------------------------------
 ```
-  
-### Beispiel 4 (DLI4.ASM)  
+
+### Beispiel 4 (DLI4.ASM)
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -397,4 +397,4 @@ Ich hoffe, Sie kommen mit allem klar. Wenn irgendwelche Unklarheiten existieren 
 00590          RTI
 00600 ------------------------------
 ```
-  
+

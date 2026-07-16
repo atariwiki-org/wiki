@@ -1,5 +1,5 @@
-# Bitwise AND, OR, XOR and NOT for BASIC (USR Call)  
-  
+# Bitwise AND, OR, XOR and NOT for BASIC (USR Call)
+
 ```
 00010          .LI OFF
 00020 *

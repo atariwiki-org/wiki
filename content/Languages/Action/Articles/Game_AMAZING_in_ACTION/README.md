@@ -1,57 +1,57 @@
 ---
 title: Game AMAZING in ACTION
 ---
-### General Information  
-Author: David Plotkin  
-Language: ACTION!  
-Compiler/Interpreter: ACTION!  
-Published: ANTIC Vol. 4, #1 (05/ 85)  
+### General Information
+Author: David Plotkin
+Language: ACTION!
+Compiler/Interpreter: ACTION!
+Published: ANTIC Vol. 4, #1 (05/ 85)
 ---
-# AMAZING  
-  
-''A challenging maze chase game that demonstrates the speed and versatility of the ACTION! language. Requires ACTION! cartridge from Optimized Systems Software. Works on all Atari memory computers with 32K disk or 24K cassette. Antic Disk subscribers will find a "run-time" version on their disk, for playing without the cartidge.''  
-  
-Amazing is a surprisingly imaginative maze chase game written in ACTION! You are a skinny red X named Gork. All you want from life is to wander the city grid, munching up the energy pellets that the programmer thoughtfully left strewn about.  
-  
-Not surprisingly, three enemies will attempt to stop you with their instantly lethal touch. Luckily, your unique defensive mines can immobilize and vaporize enemies. But of course each opponent is quickly replaced by another.  
-  
-Release a mine by pressing the joystick button. You can have up to four mines on the board at one time. To retrieve an unused mine, touch it. The mines become available again after destroying an enemy. Naturally, higher levels mean tougher opposition.  
-  
-### HOW IT WORKS  
-Type in Listing 1 and SAVE a copy before you compile and RUN it.  
-  
-Now let's look at some of the game's more interesting ACTION! procedures.  
-  
-  
-__DRAW7__ directly manipulates the screen bytes to PLOT a point in the specified color. It's considerably faster than the built-in Atari PLOT function.  
-  
-__FASTDRAW__ is a high speed technique to put a high resolution picture on the screen. It does direct byte manipulation of the screen with no math involved, so it is considerably faster than even __DRAW7__. The value of each byte that makes up the picture is stored in a byte array, and the width, height, x and y coordinates must be passed to the procedure.  
-  
-The picture itself is generated using __Drawpic__ from Artworx. Drawpic turns the picture you design on the screen into BASIC DATA statements, which can be listed to disk; the format can then be modified to fit into an ACTION! program.  
-  
-__MOVEIT__ moves the player/missile shape defined by byte array __SHAPE__ and player number __WHICH__ to the specified position on the screen.  
-  
-__BOARDDRAW__ draws the initial board. It uses __FASTDRAW__ and the byte array BLK to put the squares with letter A on the board.  
-  
-__TESTCOL__ tests for collisions between the various players by sampling the hardware collision registers. It waits for a whole screen to be drawn, then transfers the contents of the collision registers to temporary locations in RAM. The collision registers are then cleared. Checking for collisions is actually done by looking at the temporary locations.  
-  
-__LLOC__ performs the same function as LOCATE, but much faster.  
-  
-__GOTBUMPED__ processes the collisions of the enemy players and a mine. The explosion sounds and flashing of the obliterated player are handled by repeated calls to this procedure. It also removes the enemy player from the board and positions is back in its original corner.  
-  
-__MUNCH__ detects collisions between your player and the energy pellets. It also keeps the sound going and erases the eaten pellet.  
-  
-__CHANGEDIR__ decides whether to change the direction of an enemy player. It also checks to see if the player can move in the indicated direction. This procedure is only called when the player is in an intersection.  
-  
-__SMARTS__ determines whether the enemy players are in an intersection.  
-  
-__OUCH__ is called if your player is caught by an enemy.  
-  
-__CHASE__ calls __SMARTS__ for each layer, and moves the player if it hasn't been destroyed by a mine.  
-  
-__MOVEMAN__ reads the joystick and moves your player. It checks to see if you can move in the direction you want. If not, then you continue in the direction you are traveling. Thus, you can push the stick in the desired direction before you get to an intersection and then move in that direction when you hit the intersection.  
-  
-''Avid ACTION! programmer David Plotkin is a veteran of the __Antic__ program submission procedure and, on the side, a chemical engineer for Standard Oil of California.''  
+# AMAZING
+
+''A challenging maze chase game that demonstrates the speed and versatility of the ACTION! language. Requires ACTION! cartridge from Optimized Systems Software. Works on all Atari memory computers with 32K disk or 24K cassette. Antic Disk subscribers will find a "run-time" version on their disk, for playing without the cartidge.''
+
+Amazing is a surprisingly imaginative maze chase game written in ACTION! You are a skinny red X named Gork. All you want from life is to wander the city grid, munching up the energy pellets that the programmer thoughtfully left strewn about.
+
+Not surprisingly, three enemies will attempt to stop you with their instantly lethal touch. Luckily, your unique defensive mines can immobilize and vaporize enemies. But of course each opponent is quickly replaced by another.
+
+Release a mine by pressing the joystick button. You can have up to four mines on the board at one time. To retrieve an unused mine, touch it. The mines become available again after destroying an enemy. Naturally, higher levels mean tougher opposition.
+
+### HOW IT WORKS
+Type in Listing 1 and SAVE a copy before you compile and RUN it.
+
+Now let's look at some of the game's more interesting ACTION! procedures.
+
+
+__DRAW7__ directly manipulates the screen bytes to PLOT a point in the specified color. It's considerably faster than the built-in Atari PLOT function.
+
+__FASTDRAW__ is a high speed technique to put a high resolution picture on the screen. It does direct byte manipulation of the screen with no math involved, so it is considerably faster than even __DRAW7__. The value of each byte that makes up the picture is stored in a byte array, and the width, height, x and y coordinates must be passed to the procedure.
+
+The picture itself is generated using __Drawpic__ from Artworx. Drawpic turns the picture you design on the screen into BASIC DATA statements, which can be listed to disk; the format can then be modified to fit into an ACTION! program.
+
+__MOVEIT__ moves the player/missile shape defined by byte array __SHAPE__ and player number __WHICH__ to the specified position on the screen.
+
+__BOARDDRAW__ draws the initial board. It uses __FASTDRAW__ and the byte array BLK to put the squares with letter A on the board.
+
+__TESTCOL__ tests for collisions between the various players by sampling the hardware collision registers. It waits for a whole screen to be drawn, then transfers the contents of the collision registers to temporary locations in RAM. The collision registers are then cleared. Checking for collisions is actually done by looking at the temporary locations.
+
+__LLOC__ performs the same function as LOCATE, but much faster.
+
+__GOTBUMPED__ processes the collisions of the enemy players and a mine. The explosion sounds and flashing of the obliterated player are handled by repeated calls to this procedure. It also removes the enemy player from the board and positions is back in its original corner.
+
+__MUNCH__ detects collisions between your player and the energy pellets. It also keeps the sound going and erases the eaten pellet.
+
+__CHANGEDIR__ decides whether to change the direction of an enemy player. It also checks to see if the player can move in the indicated direction. This procedure is only called when the player is in an intersection.
+
+__SMARTS__ determines whether the enemy players are in an intersection.
+
+__OUCH__ is called if your player is caught by an enemy.
+
+__CHASE__ calls __SMARTS__ for each layer, and moves the player if it hasn't been destroyed by a mine.
+
+__MOVEMAN__ reads the joystick and moves your player. It checks to see if you can move in the direction you want. If not, then you continue in the direction you are traveling. Thus, you can push the stick in the desired direction before you get to an intersection and then move in that direction when you hit the intersection.
+
+''Avid ACTION! programmer David Plotkin is a veteran of the __Antic__ program submission procedure and, on the side, a chemical engineer for Standard Oil of California.''
 ---
 ```
 ;    AMAZING
@@ -470,5 +470,5 @@ ATRACT=0 GOTBUMPED() OD
 RETURN
 ```
 ---
-[amazing.djvu](attachments/amazing.djvu)  
-[amazing.PDF](attachments/amazing.PDF)  
+[amazing.djvu](attachments/amazing.djvu) 
+[amazing.PDF](attachments/amazing.PDF) 

@@ -1,5 +1,5 @@
-# QS-Forth Screens  
-  
+# QS-Forth Screens
+
 ```
 SCR # 1 
   0    FORTH DEFINITIONS HEX
@@ -1208,5 +1208,5 @@ SCR # 74
  15                DECIMAL   -->
 
 ```
-  
-  
+
+

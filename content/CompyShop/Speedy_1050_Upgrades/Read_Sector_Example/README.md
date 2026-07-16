@@ -1,8 +1,8 @@
 ---
 title: Read Sector Example
 ---
-# Speedy Read Sector example  
-  
+# Speedy Read Sector example
+
 ```
 0100 ;***************************************
 0110 ;*  Demonstration 1 fuer Kommando $52  *
@@ -44,7 +44,7 @@ title: Read Sector Example
 0470 ERROR SEC
 0480     RTS
 ```
-  
+
 ```
 0100 ;***************************************
 0110 ;*  Demonstration 2 fuer Kommando $52  *

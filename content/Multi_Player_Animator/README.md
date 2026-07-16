@@ -1,25 +1,25 @@
 ---
 title: Multi Player Animator
 ---
-# Multi Player Animator  
-  
-by Peter Finzel  
-  
-  
-  
-## Atari Magazin Article 6/87 Page 36/37 (click on Image for full resolution)  
-![](attachments/mpa1.gif)  
-![](attachments/mpa2.gif)  
-  
-## Atari Magazin Article 1/88 Page 62-65 (click on Image for full resolution)  
-![](attachments/mpa2_1gif.gif)  
-![](attachments/mpa2_3gif.gif)  
-  
-![](attachments/mpa2_2gif.gif)  
-![](attachments/mpa2_4gif.gif)  
-  
-## MPA in Assembler  
-  
+# Multi Player Animator
+
+by Peter Finzel
+
+
+
+## Atari Magazin Article 6/87 Page 36/37 (click on Image for full resolution)
+![](attachments/mpa1.gif)
+![](attachments/mpa2.gif)
+
+## Atari Magazin Article 1/88 Page 62-65 (click on Image for full resolution)
+![](attachments/mpa2_1gif.gif)
+![](attachments/mpa2_3gif.gif)
+
+![](attachments/mpa2_2gif.gif)
+![](attachments/mpa2_4gif.gif)
+
+## MPA in Assembler
+
 ```
 *************************************
 *  Animation von Multicolor-Players
@@ -228,17 +228,17 @@ COPY     LDA (ZREG1),Y
 
 
 ```
-  
-## MPA in ACTION!  
-  
-- [Multi_Player_Animation](../Multi_Player_Animation/README.md)  
-  
-  
-  
-## PDF and Disk Images  
-  
-[lf8-188a.atr](attachments/lf8-188a.atr)  
-[lf8-188b.atr](attachments/lf8-188b.atr)  
-[lf8-687b.atr](attachments/lf8-687b.atr)  
-[mpa.PDF](attachments/mpa.PDF)  
-[multiplayeranimator.pdf](attachments/multiplayeranimator.pdf)  
+
+## MPA in ACTION!
+
+- [Multi_Player_Animation](../Multi_Player_Animation/README.md)
+
+
+
+## PDF and Disk Images
+
+[lf8-188a.atr](attachments/lf8-188a.atr) 
+[lf8-188b.atr](attachments/lf8-188b.atr) 
+[lf8-687b.atr](attachments/lf8-687b.atr) 
+[mpa.PDF](attachments/mpa.PDF) 
+[multiplayeranimator.pdf](attachments/multiplayeranimator.pdf) 

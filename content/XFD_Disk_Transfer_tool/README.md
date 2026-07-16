@@ -1,103 +1,103 @@
 ---
 title: XFD Disk Transfer tool
 ---
-# XFD Transfer  
-  
-re-released 17.3.2003 under the terms of the GNU Public License (GPL), see http://www.gnu.org  
-  
-  
-%%tabbedSection  
-%%deutsch  
-## Deutsche Anleitung  
-  
-  
-XFormer Transfer 1.0  
-(c) 1994-2003 by PhoeniX SoftCrew  
-fuer ABBUC e.V.  
-  
-  
-XFormer Transfer ist ein Hilfsprogramm  
-fuer alle Atari Fans, die mit dem  
-XFormer Emulator ATARI Programme auf  
-einen PC bringen moechten.  
-  
-  
-Das Programm liest eine ATARI Single  
-Density Diskette und schreibt sie in  
-eine XFD Datei. Diese Datei kann nun  
-per Diskette oder Datenuebertragung auf  
-einen PC uebertragen werden.  
-  
-  
-Bedienung:  
-  
-  
-Mit der Taste 'Q' kann das Quell-  
-laufwerk angegeben werden, mit der  
-Taste 'Z' kann man eine neue Zieldatei  
-angeben. Ein Druck auf die Taste 'S'  
-startet den Kopiervorgang. Das Programm  
-wird mit der ESC-Taste verlassen.  
-  
-  
-Am einfachsten ist es die erstellte  
-Datei mit der ABBUC-PC Diskette auf  
-den PC zu ueberspielen. Der XFormer 2  
-Emulator kann die erstellten Dateien  
-als virtuelle Disketten benutzen.  
-  
-  
-  
-September 1994,  
-Carsten Strotmann  
-/%  
-%%english  
-## Englisch Description  
-  
-  
-XFormer Transfer 1.0  
-(c) 1994-2003 by PhoeniX SoftCrew  
-for ABBUC e.V.  
-  
-  
-XFormer Transfer is an Utility Program for  
-all ATARI Fans who wants to run ATARI  
-programs with the help on an emulator to  
-a PC.  
-  
-  
-The Programm reads an ATARI Single  
-Density Disk and writes its content  
-into a XFD-File. This File can than  
-be transfered to a PC by a Disk or  
-RS232 cable.  
-  
-  
-Usage:  
-  
-  
-Choose the Sourcedrive with the Key "S",  
-enter a Destination File with the Menu-Key "D".  
-The Key "C" starts the Copy process. ESC exits the Programm  
-(to DOS).  
-  
-It is easy to transfer the created XFD File to  
-the PC with the help of the ABBUC-PC Disk.  
-The PC XFormer 2 Emulator can use this files as  
-virtual Disks.  
-  
-  
-September 1994,  
-Carsten Strotmann  
-  
-/%  
-/%  
-  
-  
-  
-  
-## XFDTRANS .ACT  
-  
+# XFD Transfer
+
+re-released 17.3.2003 under the terms of the GNU Public License (GPL), see http://www.gnu.org
+
+
+%%tabbedSection
+%%deutsch
+## Deutsche Anleitung
+
+
+XFormer Transfer 1.0
+(c) 1994-2003 by PhoeniX SoftCrew
+fuer ABBUC e.V.
+
+
+XFormer Transfer ist ein Hilfsprogramm
+fuer alle Atari Fans, die mit dem
+XFormer Emulator ATARI Programme auf
+einen PC bringen moechten.
+
+
+Das Programm liest eine ATARI Single
+Density Diskette und schreibt sie in
+eine XFD Datei. Diese Datei kann nun
+per Diskette oder Datenuebertragung auf
+einen PC uebertragen werden.
+
+
+Bedienung:
+
+
+Mit der Taste 'Q' kann das Quell-
+laufwerk angegeben werden, mit der
+Taste 'Z' kann man eine neue Zieldatei
+angeben. Ein Druck auf die Taste 'S'
+startet den Kopiervorgang. Das Programm
+wird mit der ESC-Taste verlassen.
+
+
+Am einfachsten ist es die erstellte
+Datei mit der ABBUC-PC Diskette auf
+den PC zu ueberspielen. Der XFormer 2
+Emulator kann die erstellten Dateien
+als virtuelle Disketten benutzen.
+
+
+
+September 1994,
+Carsten Strotmann
+/%
+%%english
+## Englisch Description
+
+
+XFormer Transfer 1.0
+(c) 1994-2003 by PhoeniX SoftCrew
+for ABBUC e.V.
+
+
+XFormer Transfer is an Utility Program for
+all ATARI Fans who wants to run ATARI
+programs with the help on an emulator to
+a PC.
+
+
+The Programm reads an ATARI Single
+Density Disk and writes its content
+into a XFD-File. This File can than
+be transfered to a PC by a Disk or
+RS232 cable.
+
+
+Usage:
+
+
+Choose the Sourcedrive with the Key "S",
+enter a Destination File with the Menu-Key "D".
+The Key "C" starts the Copy process. ESC exits the Programm
+(to DOS).
+
+It is easy to transfer the created XFD File to
+the PC with the help of the ABBUC-PC Disk.
+The PC XFormer 2 Emulator can use this files as
+virtual Disks.
+
+
+September 1994,
+Carsten Strotmann
+
+/%
+/%
+
+
+
+
+## XFDTRANS .ACT
+
 ```
 ;********************************
 ;**                            **
@@ -291,9 +291,9 @@ RETURN
                           
 
 ```
-  
-## XFDTRANS .INC  
-  
+
+## XFDTRANS .INC
+
 ```
 ; Includedatei fuer XFDTRANS.ACT
 ;---
@@ -513,4 +513,4 @@ PROC BPut=*(BYTE dev,
 $D0$2$68$60$68$4C CIOQ]
 
 ```
-  
+

@@ -1,9 +1,9 @@
 ---
 title: Hercules Graphic Card inside the ARGS PBI-ISA Interface
 ---
-# Driver for a PC Hercules Monochrome graphics card inside the ARGS PBI-ISA Interface  
-  
-## VBI Driver that copies the ATARI Screen RAM into the Hercules Card RAM  
+# Driver for a PC Hercules Monochrome graphics card inside the ARGS PBI-ISA Interface
+
+## VBI Driver that copies the ATARI Screen RAM into the Hercules Card RAM
 ```
 00010          .LI OFF
 00020 ******************************
@@ -316,8 +316,8 @@ title: Hercules Graphic Card inside the ARGS PBI-ISA Interface
 03080 ------------------------------
 
 ```
-  
-## BASIC Driver for Hercules Card  
+
+## BASIC Driver for Hercules Card
 ```
 00010          .LI OFF
 00020 ******************************
@@ -459,8 +459,8 @@ title: Hercules Graphic Card inside the ARGS PBI-ISA Interface
 01380          .DA #2,#13,#5,#12,#0,#0,#0,#0
 01390 ------------------------------
 ```
-  
-## Init Hercules Driver from Turbo-Basic  
+
+## Init Hercules Driver from Turbo-Basic
 ```
 1 DIM HI$(205),HP$(218),H$(80)
 2 HINIT=ADR(HI$)

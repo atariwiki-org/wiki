@@ -1,7 +1,7 @@
 ---
 title: Atari 800 ROM OS Source Listing
 ---
-### Atari 800 OS Source Listing  
+### Atari 800 OS Source Listing
 ```
  LIST X
 ; THIS IS THE MODIFIED SEPTEMBER ATARI 400/800 COMPUTER OPERATING
@@ -11614,4 +11614,4 @@ CRNTPC  =*
 KBDSPR: .BYTE	$FFF8-CRNTPC ;^GDISPLC IS TOO LONG
 		  .END
 ```
-  
+

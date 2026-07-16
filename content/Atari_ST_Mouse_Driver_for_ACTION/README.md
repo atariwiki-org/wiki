@@ -1,15 +1,15 @@
 ---
 title: Atari ST Mouse Driver for ACTION
 ---
-# Atari ST Mouse Driver for ACTION!  
-  
-General Information  
-  
-Author: Carsten Strotmann   
-Assembler: Bibo Assembler   
-Published: 07/24/91   
-  
-High Level ACTION Module  
+# Atari ST Mouse Driver for ACTION!
+
+General Information
+
+Author: Carsten Strotmann
+Assembler: Bibo Assembler
+Published: 07/24/91
+
+High Level ACTION Module
 ```
 ;********************************
 ;**			       **
@@ -76,9 +76,9 @@ BYTE FUNC M_TRIGGER ()
 
 RETURN (res)
 ```
-  
-  
-here is the Assembler Code part  
+
+
+here is the Assembler Code part
 ```
 00010			 .LI OFF
 00020 ******************************

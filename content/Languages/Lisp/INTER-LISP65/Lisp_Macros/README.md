@@ -1,13 +1,13 @@
-# Lisp Macros  
-  
-## General Information  
-  
+# Lisp Macros
+
+## General Information
+
 Author: 	Datasoft
 
 Language: 	LISP
 
-Compiler/Interpreter: InterLISP/65   
-  
+Compiler/Interpreter: InterLISP/65
+
 ```
 (FUNCALL DEFPROP PUTPROP NCONC GET MAPCAR EQUAL DELETE SUBST REVERSE REMPROP CONZ GENSYM DEFUN MACFNS)
 (DEFINEQ FUNCALL '(MACRO (S) (CONS (QUOTE APPLY*) (CDR S)))

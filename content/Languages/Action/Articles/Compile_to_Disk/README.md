@@ -1,25 +1,25 @@
-### Compile to Disk  
-  
-General Information  
-  
-Author: 	Action Computer Services   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-  
-Copyright (c) 1983 by Action Computer Services All Rights Reserved  
-  
-version 1.0 last modified October 22, 1984  
-  
-## How to use  
-  
-Compile to disk for ACTION! compiler. Note that all ARRAY declarations that generate storage must be before the first procedure declaration or else the address of the storage will not be setup correctly (all dimensioned ARRAYs which are not assigned an initial value except BYTE/CHAR arrays of size 256 or less). Local ARRAY declarations in the main PROC (last procedure in program) are also allowed. Note: there must be at least one PROC/FUNC in program.  
-  
-Output file name will be same name as program being compiled with extention .OBJ  
-  
-IF AN ERROR OCCURS DURING COMPILATION, YOU SHOULD USE "/" to close all open files:  
-  
-change dev in SPLEnd below to direct output to printer.  
-  
+### Compile to Disk
+
+General Information
+
+Author: 	Action Computer Services
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+
+Copyright (c) 1983 by Action Computer Services All Rights Reserved
+
+version 1.0 last modified October 22, 1984
+
+## How to use
+
+Compile to disk for ACTION! compiler. Note that all ARRAY declarations that generate storage must be before the first procedure declaration or else the address of the storage will not be setup correctly (all dimensioned ARRAYs which are not assigned an initial value except BYTE/CHAR arrays of size 256 or less). Local ARRAY declarations in the main PROC (last procedure in program) are also allowed. Note: there must be at least one PROC/FUNC in program.
+
+Output file name will be same name as program being compiled with extention .OBJ
+
+IF AN ERROR OCCURS DURING COMPILATION, YOU SHOULD USE "/" to close all open files:
+
+change dev in SPLEnd below to direct output to printer.
+
 ```
 MODULE ; CMPTODSK.ACT 
 

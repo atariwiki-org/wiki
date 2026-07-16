@@ -1,8 +1,8 @@
 ---
 title: Remove custom command
 ---
-# Speedy 1050 example -- remove custom command  
-  
+# Speedy 1050 example -- remove custom command
+
 ```
 0100 ;***************************************
 0110 ;*  Demonstration 2 fuer Kommando $41  *

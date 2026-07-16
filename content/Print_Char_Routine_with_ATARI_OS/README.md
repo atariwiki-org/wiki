@@ -1,19 +1,19 @@
 ---
 title: Print Char Routine with ATARI OS
 ---
-General Information   
-Author: CompyShop   
-Assembler: Bibo Assembler   
-Published: Bibo Assembler Toolkit Disk   
-  
-This routine reads the Print-Char Routines out of the Handler Tab of the "E:" Handler and pushed the Address to the Stack. The Return from Subroutine Command (RTS) uses this address to jump into the ROM <nop>PrintChar Routine. Because the Address will be read from the Handler Table, this routine works with all ATARI OS Versions.  
-  
-The ASCII Value of the Char is the Accu, X and Y registers will not be saved.  
-  
-Taken from the Bibo Assembler Toolkit Disk.  
-  
-(c) CompyShop (c) ABBUC e.V.  
-  
+General Information
+Author: CompyShop
+Assembler: Bibo Assembler
+Published: Bibo Assembler Toolkit Disk
+
+This routine reads the Print-Char Routines out of the Handler Tab of the "E:" Handler and pushed the Address to the Stack. The Return from Subroutine Command (RTS) uses this address to jump into the ROM <nop>PrintChar Routine. Because the Address will be read from the Handler Table, this routine works with all ATARI OS Versions.
+
+The ASCII Value of the Char is the Accu, X and Y registers will not be saved.
+
+Taken from the Bibo Assembler Toolkit Disk.
+
+(c) CompyShop (c) ABBUC e.V.
+
 ```
 00140 ------------------------------
 00150 * PRINT CHAR TO SCREEN       *
@@ -32,5 +32,5 @@ Taken from the Bibo Assembler Toolkit Disk.
 00280 *
 00290 ------------------------------
 ```
-  
-  
+
+

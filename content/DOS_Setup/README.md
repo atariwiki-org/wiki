@@ -1,19 +1,19 @@
 ---
 title: DOS Setup
 ---
-# DOS Setup  
-  
-A small tool to copy some files from disk to ramdisk. can be configured by a textfile.  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	15.02.90   
-  
-File to copy must be listed in a file called "SETUP.BAT"  
-  
+# DOS Setup
+
+A small tool to copy some files from disk to ramdisk. can be configured by a textfile.
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	15.02.90
+
+File to copy must be listed in a file called "SETUP.BAT"
+
 ```
 ;********************************
 ;**									 **

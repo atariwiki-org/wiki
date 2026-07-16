@@ -1,51 +1,51 @@
-# CIO SPECIAL Command Filter  
-  
-  
-This is a small ASM Routine that is a Filter Driver for the DOS CIO (D:) Handler. It intercepts the CIO calls and checks for SPECIAL commands.  
-  
-## Download  
-  
-ATR-Disc Image: [CIO Filter/FILTER.ATR](../CIO_Special_Command_Filter/README.md)  
-  
-## Filter Usage  
-  
-Set start Sector Number  
-  
-XIO 200,#chan, __sec-high__ , __sec-low__ ,"D:"  
-  
-- __chan__ - IO Channel  
-- __sec-high__ - sectornumber, highbyte  
-- __sec-low__ - sectornumber, lowbyte  
-  
-Set destination memory  
-  
-XIO 201,#chan, __mem-high__ , __mem-low__ ,"D:"  
-  
-- __chan__ - IO Channel  
-- __mem-high__ - memory, highbyte  
-- __mem-low__ - memory, lowbyte  
-  
-Read sector  
-  
-XIO 202,#chan, __count-high__ , __count-low__ ,"Dx:"  
-  
-- __chan__ - IO Channel  
-- __count-high__ - sector count, highbyte (not implemented in this version)  
-- __count-low__ - sector count, lowbyte (not implemented in this version)  
-- __Dx:__ - Diskdrive number  
-  
-Write sector  
-  
-XIO 203,#chan, __count-high__ , __count-low__ ,"Dx:"  
-  
-- __chan__ - IO Channel  
-- __count-high__ - sector count, highbyte (not implemented in this version)  
-- __count-low__ - sector count, lowbyte (not implemented in this version)  
-- __Dx:__ - Diskdrive number  
-  
-  
-## Assembler (Bibo Assembler Source)  
-  
+# CIO SPECIAL Command Filter
+
+
+This is a small ASM Routine that is a Filter Driver for the DOS CIO (D:) Handler. It intercepts the CIO calls and checks for SPECIAL commands.
+
+## Download
+
+ATR-Disc Image: [CIO Filter/FILTER.ATR](../CIO_Special_Command_Filter/README.md) 
+
+## Filter Usage
+
+Set start Sector Number
+
+XIO 200,#chan, __sec-high__ , __sec-low__ ,"D:"
+
+- __chan__ - IO Channel
+- __sec-high__ - sectornumber, highbyte
+- __sec-low__ - sectornumber, lowbyte
+
+Set destination memory
+
+XIO 201,#chan, __mem-high__ , __mem-low__ ,"D:"
+
+- __chan__ - IO Channel
+- __mem-high__ - memory, highbyte
+- __mem-low__ - memory, lowbyte
+
+Read sector
+
+XIO 202,#chan, __count-high__ , __count-low__ ,"Dx:"
+
+- __chan__ - IO Channel
+- __count-high__ - sector count, highbyte (not implemented in this version)
+- __count-low__ - sector count, lowbyte (not implemented in this version)
+- __Dx:__ - Diskdrive number
+
+Write sector
+
+XIO 203,#chan, __count-high__ , __count-low__ ,"Dx:"
+
+- __chan__ - IO Channel
+- __count-high__ - sector count, highbyte (not implemented in this version)
+- __count-low__ - sector count, lowbyte (not implemented in this version)
+- __Dx:__ - Diskdrive number
+
+
+## Assembler (Bibo Assembler Source)
+
 ```
 00010          .LI OFF
 00020 ******************************
@@ -291,9 +291,9 @@ XIO 203,#chan, __count-high__ , __count-low__ ,"Dx:"
 02420 ------------------------------
 
 ```
-  
-## Turbo-BASIC Demo  
-  
+
+## Turbo-BASIC Demo
+
 ```
 100 ------------------------------
 110 REM SIMPLE SECTORCOPY

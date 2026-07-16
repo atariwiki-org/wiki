@@ -1,28 +1,28 @@
 ---
 title: PgmDosSpartaXForth
 ---
-  
-# Accessing Sprta DOS from XForth  
-  
-  
-## Source Library SPARTA.F  
-  
-This is a library of the Basic Sparta DOS Access Routines  
-  
-- {{{?SPARTA}}} Tests if this is Sparta DOS  
-- {{{COMTAB}}} Returns the Address of the COMTAB Datastructure  
-- {{{BUFOFF}}} Returns the Address of the BUFOFF (Buffer Offset) Pointer  
-- {{{ZCRNAME}}} get the next Filename/Parameter from the commandlinebuffer to acces by FNAME or PARM  
-- {{{GETPARM}}} internal Routine, should not be used directly  
-- {{{FNAME}}} returns Address and Length of the current Parameter as a Filename (with Dx:)  
-- {{{PARM}}} returns Address and Length of the current Parameter (without Dx:)  
-- {{{RESETBUF}}} reset the Buffer Pointer to zero, to restart reading of commandline  
-- {{{PARAMS}}} returns the number of commandline parameters  
-- {{{(TIME)}}} internal routine to access time structure  
-- {{{HOUR}}} get the current hour after call to VDTIME  
-- {{{MINUTE}}} get the current minute after call to VDTIME  
-- {{{SECOND}}} get the current second after call to VDTIME  
-  
+
+# Accessing Sprta DOS from XForth
+
+
+## Source Library SPARTA.F
+
+This is a library of the Basic Sparta DOS Access Routines
+
+- {{{?SPARTA}}} Tests if this is Sparta DOS
+- {{{COMTAB}}} Returns the Address of the COMTAB Datastructure
+- {{{BUFOFF}}} Returns the Address of the BUFOFF (Buffer Offset) Pointer
+- {{{ZCRNAME}}} get the next Filename/Parameter from the commandlinebuffer to acces by FNAME or PARM
+- {{{GETPARM}}} internal Routine, should not be used directly
+- {{{FNAME}}} returns Address and Length of the current Parameter as a Filename (with Dx:)
+- {{{PARM}}} returns Address and Length of the current Parameter (without Dx:)
+- {{{RESETBUF}}} reset the Buffer Pointer to zero, to restart reading of commandline
+- {{{PARAMS}}} returns the number of commandline parameters
+- {{{(TIME)}}} internal routine to access time structure
+- {{{HOUR}}} get the current hour after call to VDTIME
+- {{{MINUTE}}} get the current minute after call to VDTIME
+- {{{SECOND}}} get the current second after call to VDTIME
+
 ```
 ( Sparta DOS routines )
 
@@ -92,12 +92,12 @@ This is a library of the Basic Sparta DOS Access Routines
 CR ." Sparta DOS Extensions loaded..." CR
 
 ```
-  
-## XFORTH Extension LAUNCH  
-  
-This can be used to create a new FORTH with is able to start a FORTH Sourcefile from the Sparta-DOS commandline.  
-  
-__Example__  
+
+## XFORTH Extension LAUNCH
+
+This can be used to create a new FORTH with is able to start a FORTH Sourcefile from the Sparta-DOS commandline.
+
+__Example__
 ```
 {{{
 ( LAUNCH FORTH Source from Sparta DOS )
@@ -112,12 +112,12 @@ __Example__
     QUIT ( jump to interpreter )
   THEN ;
 ```
-  
-## Testscript for the Sparta DOS Extension (PARAM.F)  
-  
-This little test script prints the commandline contents. This also shows how to use the commands.  
-  
-__Usage:__ XFORTHS PARAM.F test1 test2 test3  
+
+## Testscript for the Sparta DOS Extension (PARAM.F)
+
+This little test script prints the commandline contents. This also shows how to use the commands.
+
+__Usage:__ XFORTHS PARAM.F test1 test2 test3
 ```
 : SPARTA-TEST
   PARAMS
@@ -137,18 +137,18 @@ CR
 SPARTA-TEST
 MON
 ```
-  
-## Script to save a new FORTH with Sparta DOS Extensions  
-  
-This Script saves the current FORTH image on memory to disk.  
-  
-To have an extended FORTH follow these steps:  
-  
-1. start XFORTH  
-1. INCLUDE" D1:SPARTA.F"   -- includes the Sparta DOS Extensions  
-1. INCLUDE" D1:LAUNCH.F"  -- includes the Launch feature  
-1. INCLUDE" D1:MKFRTH.F"  -- saves the new FORTH as "XFORTHS.COM"  
-  
+
+## Script to save a new FORTH with Sparta DOS Extensions
+
+This Script saves the current FORTH image on memory to disk.
+
+To have an extended FORTH follow these steps:
+
+1. start XFORTH
+1. INCLUDE" D1:SPARTA.F"   -- includes the Sparta DOS Extensions
+1. INCLUDE" D1:LAUNCH.F"  -- includes the Launch feature
+1. INCLUDE" D1:MKFRTH.F"  -- saves the new FORTH as "XFORTHS.COM"
+
 ```
 ( MAKEFORTH Script )
 ( 2001-2003 CAS    )
@@ -206,4 +206,4 @@ CR
 
 BASE !            ( restore BASE )
 ```
-  
+

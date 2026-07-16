@@ -1,15 +1,15 @@
 ---
 title: Atari System Labels from OSS
 ---
-### Atari System Labels from OSS  
-  
-General Information   
-Author: Optimized System Software OSS   
-Assembler: EASMD   
-Published: on DOS XL Disk   
-  
-includes also CP/A Lables  
-  
+### Atari System Labels from OSS
+
+General Information
+Author: Optimized System Software OSS
+Assembler: EASMD
+Published: on DOS XL Disk
+
+includes also CP/A Lables
+
 ```
 1000  .PAGE "OSS SYSTEM EQUATES FOR ATARI"
 1010 ;
@@ -107,4 +107,4 @@ includes also CP/A Lables
 1900 ;
 
 ```
-  
+

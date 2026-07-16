@@ -1,10 +1,10 @@
 ---
 title: RAM Move Routine for Basic
 ---
-  
-  
-# RAM Move Routine  
-  
+
+
+# RAM Move Routine
+
 ```
 01 ; MOVE$ RAM MOVER SUBROUTINE
 02 ; BY D.W. HOWERTON
@@ -48,4 +48,4 @@ title: RAM Move Routine for Basic
 0310     BPL MOVE    ;IF POS DO MORE
 0320     RTS         ;RETURN TO BASIC
 ```
-  
+

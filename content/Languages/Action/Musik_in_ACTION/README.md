@@ -1,41 +1,41 @@
 ---
 title: Musik in ACTION
 ---
-### General Information  
-Author: Peter Finzel  
-Language: ACTION!  
-Compiler/Interpreter: ACTION!  
-Published: Computer Kontakt (CK) 10/ 85   
+### General Information
+Author: Peter Finzel
+Language: ACTION!
+Compiler/Interpreter: ACTION!
+Published: Computer Kontakt (CK) 10/ 85
 ---
-## Peter's Assemblerecke  
-# Musik in Action!  
-In der Assemblerecke dieses Monats gibt es eine besondere Premiere: Das erste Action!-Programm, das wir in Computer-Kontakt abdrucken, wenn nicht sogar dis erste in der gesamten deutschen Computer- Literatur. Action! ist schlicht gesagt eines der besten Software-Pakete, die für Atari-Computer je entwickelt wurden. Russ Wetmore bezeichnet es in einem Artikel ([Analog 7/ 85, S. 23](../Getting_in_on_the_Action_1/README.md)) als "Programmer's Dream' und ich kann Russ wirklich nur voll unterstützen.  
-  
-Wer bisher noch keine eigenen Erfahrungen mit Action! sammeln konnte, sollte deshalb den Kasten "Was ist Action?" lesen. Dort finden Sie einige zum Verständnis wesentliche Punkte kurz zusammengefasst. Es muss vorausgeschickt werden, dass man zum Eintippen des Listings unbedingt eine Action!-Cartridge benötigt, bestimmt eine bittere Pille für alle Leser der Assemblerecke, die keine besitzen. Vielleicht ist es aber auch für diesen Leserkreis interessant, einen Einblick in ein Action!-Programm zu bekommen.  
-  
-### Vierstimmige Musik  
-Das Programm kann ein Musikstück mit bis zu vier Noten gleichzeitig spielen, wobei jeder einzelnen Stimme eine eigene Hüllkurve zugeordnet werden kann. (Die Hüllkurve kann jeder Stimme näherungsweise den Klang eines Instrumentes geben.) Das Programm wurde nicht im Stil eines Musik Composers mit einer narrensicheren Eingabe der Noten angelegt, sondern ist vielmehr als ein offenes, einbaufertiges Musik-Modul für eigene Programme gedacht. Die Noten müssen daher direkt ins Programm eingetragen werden, was aber dank des hervorragenden Action!-Editors recht elegant machbar ist.  
-  
-### Historie des Programms  
-Dem eifrigen Leser meines Buches, der Hexenküche, wird bestimmt eine Ähnlichkeit zu dem dort abgedruckten Musik-Programm auffallen. Richtig, das Action!-Listing ist ein Verwandter dieses Assemblerprogramms, hat aber zwei wesentliche Unterschiede: Die Hüllkurve kann nun im ADS-Systern (Attack, Decay, Sustain) eingegeben werden, und außerdem läuft das Programm nicht im VBI. Durch die letztere Maßnahme kann man eine wesentlich bessere Auflösung der Hüllkurve erreichen, verliert aber leider die Möglichkeit, ein anderes Programm parallel laufen zu lassen.  
-  
-### Eingabe der Noten  
-Die Noten werden im Action!-Programm in den vier Byte Arrays N1 bis N4 untergebracht. Die Frequenzwerte und Notenlängen sind durch DEFINES (entspricht etwa dem "EQU" oder "=" Befehl eines' Assemblers) bereits vorbesetzt, so dass eine recht komfortable Eingabe der Noten möglich ist.  
-  
-Der Ausdruck C3:VI würde ein tiefes "C" der Länge einer Viertelnote (VI für Viertel) spielen. Das Spektrum der Tonhöhen reicht über drei Oktaven, beginnend bei einer tiefen Oktave, (C3, die Zahl nach der Notenbezeichnung gibt die Oktave an) über eine mittlere (C4) zu einer hohen Oktave (C5). Die Tonlängen sind dabei wie folgt festgelegt.  
-  
-HA : halbe Note  
-VI : viertel Note  
-AC : achtel Note  
-SE : sechzehntel Note  
-HP : halbe Note punktiert   
-VP : vierte! Note punktiert   
-AP : achtet Note punktiert  
-  
-Daneben gibt es noch einen Pausenbefehl PA, der ebenfalls mit einer Dauer versehen werden muss: PA:HA würde die jeweilige Stimme eine halbe Note lang verstummen lassen, Der Ende-Befehl EN schließt eine Notenfolge ab. Das Musikprogramm endet aber erst, nachdem eine Ende-Anweisung auf allen vier Kanälen erfolgt ist.  
-  
-### Beispiel  
-Ein etwas längeres, wenn auch nur zweistimmiges Beispiel ist bereits im Programm eingetragen. Wenn Sie eine andere Melodie eingeben möchten, so müssen Sie die Zeilen jeweils nach den Byte Arrays N1 und N2 bis zur Ende-Anweisung löschen. Damit haben Sie sich ein leeres Formular zur Noteneingabe geschaffen. Angenommen, Sie wollen jetzt drei Noten der mittleren C-Dur Tonleiter einstimmig als Viertelnoten spielen, so müssen Sie eingeben:  
+## Peter's Assemblerecke
+# Musik in Action!
+In der Assemblerecke dieses Monats gibt es eine besondere Premiere: Das erste Action!-Programm, das wir in Computer-Kontakt abdrucken, wenn nicht sogar dis erste in der gesamten deutschen Computer- Literatur. Action! ist schlicht gesagt eines der besten Software-Pakete, die für Atari-Computer je entwickelt wurden. Russ Wetmore bezeichnet es in einem Artikel ([Analog 7/ 85, S. 23](../Getting_in_on_the_Action_1/README.md)) als "Programmer's Dream' und ich kann Russ wirklich nur voll unterstützen.
+
+Wer bisher noch keine eigenen Erfahrungen mit Action! sammeln konnte, sollte deshalb den Kasten "Was ist Action?" lesen. Dort finden Sie einige zum Verständnis wesentliche Punkte kurz zusammengefasst. Es muss vorausgeschickt werden, dass man zum Eintippen des Listings unbedingt eine Action!-Cartridge benötigt, bestimmt eine bittere Pille für alle Leser der Assemblerecke, die keine besitzen. Vielleicht ist es aber auch für diesen Leserkreis interessant, einen Einblick in ein Action!-Programm zu bekommen.
+
+### Vierstimmige Musik
+Das Programm kann ein Musikstück mit bis zu vier Noten gleichzeitig spielen, wobei jeder einzelnen Stimme eine eigene Hüllkurve zugeordnet werden kann. (Die Hüllkurve kann jeder Stimme näherungsweise den Klang eines Instrumentes geben.) Das Programm wurde nicht im Stil eines Musik Composers mit einer narrensicheren Eingabe der Noten angelegt, sondern ist vielmehr als ein offenes, einbaufertiges Musik-Modul für eigene Programme gedacht. Die Noten müssen daher direkt ins Programm eingetragen werden, was aber dank des hervorragenden Action!-Editors recht elegant machbar ist.
+
+### Historie des Programms
+Dem eifrigen Leser meines Buches, der Hexenküche, wird bestimmt eine Ähnlichkeit zu dem dort abgedruckten Musik-Programm auffallen. Richtig, das Action!-Listing ist ein Verwandter dieses Assemblerprogramms, hat aber zwei wesentliche Unterschiede: Die Hüllkurve kann nun im ADS-Systern (Attack, Decay, Sustain) eingegeben werden, und außerdem läuft das Programm nicht im VBI. Durch die letztere Maßnahme kann man eine wesentlich bessere Auflösung der Hüllkurve erreichen, verliert aber leider die Möglichkeit, ein anderes Programm parallel laufen zu lassen.
+
+### Eingabe der Noten
+Die Noten werden im Action!-Programm in den vier Byte Arrays N1 bis N4 untergebracht. Die Frequenzwerte und Notenlängen sind durch DEFINES (entspricht etwa dem "EQU" oder "=" Befehl eines' Assemblers) bereits vorbesetzt, so dass eine recht komfortable Eingabe der Noten möglich ist.
+
+Der Ausdruck C3:VI würde ein tiefes "C" der Länge einer Viertelnote (VI für Viertel) spielen. Das Spektrum der Tonhöhen reicht über drei Oktaven, beginnend bei einer tiefen Oktave, (C3, die Zahl nach der Notenbezeichnung gibt die Oktave an) über eine mittlere (C4) zu einer hohen Oktave (C5). Die Tonlängen sind dabei wie folgt festgelegt.
+
+HA : halbe Note
+VI : viertel Note
+AC : achtel Note
+SE : sechzehntel Note
+HP : halbe Note punktiert
+VP : vierte! Note punktiert
+AP : achtet Note punktiert
+
+Daneben gibt es noch einen Pausenbefehl PA, der ebenfalls mit einer Dauer versehen werden muss: PA:HA würde die jeweilige Stimme eine halbe Note lang verstummen lassen, Der Ende-Befehl EN schließt eine Notenfolge ab. Das Musikprogramm endet aber erst, nachdem eine Ende-Anweisung auf allen vier Kanälen erfolgt ist.
+
+### Beispiel
+Ein etwas längeres, wenn auch nur zweistimmiges Beispiel ist bereits im Programm eingetragen. Wenn Sie eine andere Melodie eingeben möchten, so müssen Sie die Zeilen jeweils nach den Byte Arrays N1 und N2 bis zur Ende-Anweisung löschen. Damit haben Sie sich ein leeres Formular zur Noteneingabe geschaffen. Angenommen, Sie wollen jetzt drei Noten der mittleren C-Dur Tonleiter einstimmig als Viertelnoten spielen, so müssen Sie eingeben:
 ```
 Alle anderen, ruhigen Stimmen (N2 bis N4) bekommen nur die Ende-Anweisung eingetragen.
 {{{BYTE ARRAY N2 = [EN:0]}}}
@@ -366,4 +366,4 @@ PROC Musik()
 RETURN
 ```
 ---
-PDF: [Musik_in_Action_CK_10_85.pdf](attachments/Musik_in_Action_CK_10_85.pdf)  
+PDF: [Musik_in_Action_CK_10_85.pdf](attachments/Musik_in_Action_CK_10_85.pdf) 

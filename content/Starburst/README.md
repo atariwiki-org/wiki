@@ -1,10 +1,10 @@
 ---
 title: Starburst
 ---
-  
-  
-# Starburst in ACTION!  
-  
+
+
+# Starburst in ACTION!
+
 ```
 MODULE 
 
@@ -392,4 +392,4 @@ PROC Main ()
 RETURN
 
 ```
-  
+

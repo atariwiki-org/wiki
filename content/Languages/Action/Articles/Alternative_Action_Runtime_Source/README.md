@@ -1,12 +1,12 @@
 ---
 title: Alternative Action Runtime Source
 ---
-### Alternative Action! Runtime Source  
-  
-First published in german magazine "Computer Kontakt (CK)", written by Peter Finzel (see [ACTION_noch_schneller](../ACTION_noch_schneller/README.md))  
-  
-Additional Runtime parts by Carsten Strotmann  
-  
+### Alternative Action! Runtime Source
+
+First published in german magazine "Computer Kontakt (CK)", written by Peter Finzel (see [ACTION_noch_schneller](../ACTION_noch_schneller/README.md))
+
+Additional Runtime parts by Carsten Strotmann
+
 ```
 MODULE ; for user
 

@@ -1,52 +1,52 @@
 ---
 title: Dark Star
 ---
-### General Information  
-Author: Michael Mitchell  
-Language: ACTION!  
-Compiler/Interpreter: ACTION!  
-Published: ANTIC Vol. 4, #3 (07/ 85)  
+### General Information
+Author: Michael Mitchell
+Language: ACTION!
+Compiler/Interpreter: ACTION!
+Published: ANTIC Vol. 4, #3 (07/ 85)
 ---
-# DARK STAR  
-''Fly the Darkstar and wipe out enemy alien bases. There are two versions of this game, one is written in BASIC and the other in ACTION!. Both will run on any Atari of all memory sizes, with either disk or cassette. But the ACTION! Listing requires the ACTION! cartridge from Optimized Software Systems. Antic Disk subscribers will find a run-time file of the ACTION! version on their disk. Go to DOS and load DARKSTAR.EXE with the L function.''  
-  
-The year is 2001, you just graduated from high school and you're bored. all your friends headed for college or fulltime jobs, they seemed to have things planned out pretty well. You had dreams of medical school, but there was just no money for that kind of thing. So, what do you do?  
-You join the U.S.A.F.  
-  
-IN LUCK  
-Things could be worse. It turns out you have a remarkable aptitude as a fighter pilot. But just as you soar to the top of your class, aliens from the planet Spectra land on Earth and begin installing military bases all over the planet.  
-Because of your stupendous flying abilities, you are selected to pilot the Air Force's new secret weapon: Darkstar. Your mission is to destroy as many enemy bases as possible.  
-  
-FLIGHT INSTRUCTIONS  
-The controller on Darkstar is surprisingly primitive for a new secret weapon, and very similar to an antique Atari joystick. Just move the crude device in the direction you wish to fly the plane. The object is to pass your jet over as many of the enemy bases as possible, spraying them with your wake of radioactive wastes.  
-You're doing fine until you encounter one major problem: the controls have jammed. As a result, Darkstar continues to spray wastes nonstop, thus preventing you from crossing your own path. If you do touch the glowing contrail, your jet will be instantly damaged. Darkstar can withstand three blasts of radioactive waste. Upon the third blast, Darkstar will be terminated-as will you, the pilot!  
-  
-NOT ENOUGH  
-As if you didn't have enough problems, some wimpy, kneejerk ecology group is up in arms just because your radioactive trail has permanently rendered uninhabitable a large number of small farms plus the entire state of Missouri.  
-Reacting to the pressure, the President interrupts his vacation and orders NASA to erect a deadly force field around your area of operation, effectively converting your flight into a kamikaze mission.  
-  
-MERIT SYSTEM  
-But you're in this for the glory, and you will receive 30 merit points for each alien base destroyed.  
-However, you can keep obtaining new Darkstars at the end of each mission, simply by pressing the joystick button. If you somehow keep flying until all the aliens flee back to Spectra, maybe the scientists will figure out a way you can escape through the force field  
-  
-TYPING IT IN  
-Listing 1 is the ACTION! version of Darkstar and Listing 2 is the BASIC version. Although both games are similar in structure, they are not identical. The BASIC version has a simpler title screen, a different explosion routine and-more importantly-is much slower so your scores will probably be higher.  
-If you have the ACTION! cartridge, type in Listing 1, SAVE it and then compile and RUN it. Those with BASIC should type in Listing 2 and check it with TYPO II. SAVE a copy before RUNning it.  
-  
-ACTION! ANALYSIS  
-The source code is pretty well remarked and consists of only five procedures:  
-  
-1. PROC WAIT() Pauses according to the CARDinal value passed within the parameter.  
-  
-2. PROC TITLE() Prints the title, then rotates the screen colors.  
-  
-3. PROC BOX() Randomly draws enemy bases.  
-  
-4. PROC MAIN() The heart of the program. It sets graphics to mode seven, checks for collision, checks the joystick, and moves the player.  
-  
-5. PROC START( ) Since MAIN( ) is called within itself, START() is used to isolate the initial TITLE() call.  
-  
-Michael Mitchell is a San Francisco high school student who wrote the upcoming Antic Public Domain release Rainbow DOS and is sysop of Twilight Zone BBS at (415) 755-0375.  
+# DARK STAR
+''Fly the Darkstar and wipe out enemy alien bases. There are two versions of this game, one is written in BASIC and the other in ACTION!. Both will run on any Atari of all memory sizes, with either disk or cassette. But the ACTION! Listing requires the ACTION! cartridge from Optimized Software Systems. Antic Disk subscribers will find a run-time file of the ACTION! version on their disk. Go to DOS and load DARKSTAR.EXE with the L function.''
+
+The year is 2001, you just graduated from high school and you're bored. all your friends headed for college or fulltime jobs, they seemed to have things planned out pretty well. You had dreams of medical school, but there was just no money for that kind of thing. So, what do you do?
+You join the U.S.A.F.
+
+IN LUCK
+Things could be worse. It turns out you have a remarkable aptitude as a fighter pilot. But just as you soar to the top of your class, aliens from the planet Spectra land on Earth and begin installing military bases all over the planet.
+Because of your stupendous flying abilities, you are selected to pilot the Air Force's new secret weapon: Darkstar. Your mission is to destroy as many enemy bases as possible.
+
+FLIGHT INSTRUCTIONS
+The controller on Darkstar is surprisingly primitive for a new secret weapon, and very similar to an antique Atari joystick. Just move the crude device in the direction you wish to fly the plane. The object is to pass your jet over as many of the enemy bases as possible, spraying them with your wake of radioactive wastes.
+You're doing fine until you encounter one major problem: the controls have jammed. As a result, Darkstar continues to spray wastes nonstop, thus preventing you from crossing your own path. If you do touch the glowing contrail, your jet will be instantly damaged. Darkstar can withstand three blasts of radioactive waste. Upon the third blast, Darkstar will be terminated-as will you, the pilot!
+
+NOT ENOUGH
+As if you didn't have enough problems, some wimpy, kneejerk ecology group is up in arms just because your radioactive trail has permanently rendered uninhabitable a large number of small farms plus the entire state of Missouri.
+Reacting to the pressure, the President interrupts his vacation and orders NASA to erect a deadly force field around your area of operation, effectively converting your flight into a kamikaze mission.
+
+MERIT SYSTEM
+But you're in this for the glory, and you will receive 30 merit points for each alien base destroyed.
+However, you can keep obtaining new Darkstars at the end of each mission, simply by pressing the joystick button. If you somehow keep flying until all the aliens flee back to Spectra, maybe the scientists will figure out a way you can escape through the force field
+
+TYPING IT IN
+Listing 1 is the ACTION! version of Darkstar and Listing 2 is the BASIC version. Although both games are similar in structure, they are not identical. The BASIC version has a simpler title screen, a different explosion routine and-more importantly-is much slower so your scores will probably be higher.
+If you have the ACTION! cartridge, type in Listing 1, SAVE it and then compile and RUN it. Those with BASIC should type in Listing 2 and check it with TYPO II. SAVE a copy before RUNning it.
+
+ACTION! ANALYSIS
+The source code is pretty well remarked and consists of only five procedures:
+
+1. PROC WAIT() Pauses according to the CARDinal value passed within the parameter.
+
+2. PROC TITLE() Prints the title, then rotates the screen colors.
+
+3. PROC BOX() Randomly draws enemy bases.
+
+4. PROC MAIN() The heart of the program. It sets graphics to mode seven, checks for collision, checks the joystick, and moves the player.
+
+5. PROC START( ) Since MAIN( ) is called within itself, START() is used to isolate the initial TITLE() call.
+
+Michael Mitchell is a San Francisco high school student who wrote the upcoming Antic Public Domain release Rainbow DOS and is sysop of Twilight Zone BBS at (415) 755-0375.
 ---
 ```
 ; DARKSTAR, LISTING 1

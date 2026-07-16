@@ -1,8 +1,8 @@
 ---
 title: Timer Programming
 ---
-# ACTION! Timer Programming  
-  
+# ACTION! Timer Programming
+
 ```
 ; PROGRAM : EASY INTERUPT
     

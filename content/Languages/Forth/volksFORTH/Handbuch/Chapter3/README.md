@@ -1,10 +1,10 @@
-# Kapitel 3: Arithmetik  
-  
-  
-## Stacknotation  
-  
-Im Folgenden werden hauptsächlich Worte in ihrer Einzelfunktion beschrieben. In dieser Form der Beschreibung, die Sie bereits kennengelernt haben, wird die Wirkung eines Wortes auf den Stack in Klammern angegeben, und zwar in folgender Form:  
-  
+# Kapitel 3: Arithmetik
+
+
+## Stacknotation
+
+Im Folgenden werden hauptsächlich Worte in ihrer Einzelfunktion beschrieben. In dieser Form der Beschreibung, die Sie bereits kennengelernt haben, wird die Wirkung eines Wortes auf den Stack in Klammern angegeben, und zwar in folgender Form:
+
 ```
 vorher - Werte auf dem Stack vor Ausführung des Wortes
 nachher - Verte auf dem Stack nach Ausführung des Wortes
@@ -143,7 +143,6 @@ Ein Wort SQRT, das die Quadratwurzel einer Integerzahl liefert, würde in FORTH 
 ```
 sqrt ( number -- sqrt )
 ```
-  
 Wird dieses neue Wort aufgerufen, so werden alle darin enthaltenen Wörter ausgeführt, eventuell bereitgestellte Parameter bearbeitet und daraus resultierende Ergebnisse auf dem Stack übergeben.  
   
 Der Aufruf von Prozeduren erfolgt in FORTH implizit durch die Nennung des Namens, ebenso wie auch die Datenübergabe zwischen Wörtern meist implizit erfolgt.  
@@ -170,3 +169,4 @@ Der Aufruf von Prozeduren erfolgt in FORTH implizit durch die Nennung des Namens
 - [s0](../Words/s-zero/README.md)  
 - [sp!](../Words/s-p-store/README.md)  
 - [sp@](../Words/s-p-fetch/README.md)  
+```

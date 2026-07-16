@@ -1,5 +1,5 @@
 # ANTIC FORTH -Screens of Disk Two
-  
+
 ```
 SCR # F 
   0 (  ERROR MESSAGES  )   135  159
@@ -1911,4 +1911,4 @@ SCR # 47
  1F FFLP  ;  LPOPEN ;S
 
 ```
-  
+

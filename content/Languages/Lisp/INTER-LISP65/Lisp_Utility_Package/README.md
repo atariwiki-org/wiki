@@ -1,13 +1,13 @@
-# Lisp Utility Package  
-  
-## General Information  
-  
+# Lisp Utility Package
+
+## General Information
+
 Author: 	Datasoft
-   
+
 Language: 	LISP
-  
-Compiler/Interpreter: 	Inter-LISP/65   
-  
+
+Compiler/Interpreter: 	Inter-LISP/65
+
 ```
 (RAN GOXY VTAB TIME MOD HLIN VLIN REFLECT NORMAL)
 (DEFINEQ RAN '(LAMBDA (RANGE) (* RANGE (/ (+ (PEEK 53770) (* 256 (PEEK 53770))) 65536)))

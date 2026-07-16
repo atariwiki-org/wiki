@@ -1,50 +1,50 @@
 ---
 title: Gromit
 ---
-### Meine Hardware  
-  
-*800XL - im Originalzustand  
-*XC12  
-*SDrive - Eigenbau \[ mit Unterstützung ;) \]  
+### Meine Hardware
+
+*800XL - im Originalzustand
+*XC12
+*SDrive - Eigenbau \[ mit Unterstützung ;) \]
 ---
-[gromit.jpg](attachments/gromit.jpg)  
-Bester Freund von Wallace  
-  
+[gromit.jpg](attachments/gromit.jpg) 
+Bester Freund von Wallace
+
 ---
-  
-<test>  
+
+<test>
 ---
-%%tabbedSection  
-%%tab-AussenA  
-  
-%%tabbedSection  
-%%tab-InnenA1  
-tab content  innen A1  
+%%tabbedSection
+%%tab-AussenA
+
+%%tabbedSection
+%%tab-InnenA1
+tab content  innen A1
 ---
-/%  
-%%tab-InnenA2  
-tab content innen A2  
-/%  
-%%tab-InnenA3  
-tab content innen A3  
-/%  
-  
-/%  
-  
-tab content aussen A  
-/%  
-  
-%%tab-AussenB  
-tab content aussen B  
-  
-/%  
-/%  
-  
+/%
+%%tab-InnenA2
+tab content innen A2
+/%
+%%tab-InnenA3
+tab content innen A3
+/%
+
+/%
+
+tab content aussen A
+/%
+
+%%tab-AussenB
+tab content aussen B
+
+/%
+/%
+
 ---
-</test>  
+</test>
 ---
-ACTION! TRUE/FALSE Beispiel  
-  
+ACTION! TRUE/FALSE Beispiel
+
 ```
 BYTE FUNC isOdd (Byte val)
 RETURN (val MOD 2)
@@ -63,11 +63,11 @@ PROC main()
 RETURN
 ```
 ---
-## Backup  
-Umleitungsseite erstellen: \[{SET alias='Name der Seite auf die umgeleitet werden soll'}\]   
-Umleitungsseite finden   : Suche nach 'alias' = 70% Relevanz  
-Umleitungsseite editieren: Link als Verknüpfung kopieren, in Browser als URL einfügen und "Wiki.jsp" durch "Edit.jsp" ersetzten. (Groß- und Kleinschreibung beachten)  
-### Neue Seiten  
-[Assembler and Debugger](../Assembler/README.md)  
-### Alte Seiten  
-[Internal_Variables](../Internal_Variables/README.md) - Magazin Article (german)  
+## Backup
+Umleitungsseite erstellen: \[{SET alias='Name der Seite auf die umgeleitet werden soll'}\]
+Umleitungsseite finden   : Suche nach 'alias' = 70% Relevanz
+Umleitungsseite editieren: Link als Verknüpfung kopieren, in Browser als URL einfügen und "Wiki.jsp" durch "Edit.jsp" ersetzten. (Groß- und Kleinschreibung beachten)
+### Neue Seiten
+[Assembler and Debugger](../Assembler/README.md) 
+### Alte Seiten
+[Internal_Variables](../Internal_Variables/README.md) - Magazin Article (german)

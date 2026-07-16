@@ -1,18 +1,18 @@
 ---
 title: Speedy 1050 Backup
 ---
-# Speedy 1050 Backup  
-  
-[atari001.png](attachments/atari001.png)  
-  
-## Disk Image  
-- [biboass3.atr](attachments/biboass3.atr)  
-  
-## Source  
-  
-- [BACKUP.pdf](attachments/BACKUP.pdf)  
-  
-### BACKUP.ASM  
+# Speedy 1050 Backup
+
+[atari001.png](attachments/atari001.png) 
+
+## Disk Image
+- [biboass3.atr](attachments/biboass3.atr)
+
+## Source
+
+- [BACKUP.pdf](attachments/BACKUP.pdf)
+
+### BACKUP.ASM
 ```
 00010          .LI ON
 00020 ------------------------------
@@ -130,9 +130,9 @@ title: Speedy 1050 Backup
 01140 ;            VIEL SPASS
 01150 ------------------------------
 ```
-  
-### EQUATES.ASM  
-  
+
+### EQUATES.ASM
+
 ```
 00010 ------------------------------
 00020              .LI ON
@@ -199,9 +199,9 @@ title: Speedy 1050 Backup
 00630 MOTOFF   = $FF0F
 00640 ------------------------------
 ```
-  
-### MENU.ASM  
-  
+
+### MENU.ASM
+
 ```
 00010 ------------------------------
 00020          .LION
@@ -906,9 +906,9 @@ title: Speedy 1050 Backup
 07010          RTS
 
 ```
-  
-### COPY.ASM  
-  
+
+### COPY.ASM
+
 ```
 00010 ------------------------------
 00020          .LION
@@ -1938,9 +1938,9 @@ title: Speedy 1050 Backup
 10260 DRIVES   .HX 00000000
 
 ```
-  
-### INIT.ASM  
-  
+
+### INIT.ASM
+
 ```
 00010 ------------------------------
 00020          .LION
@@ -2089,9 +2089,9 @@ title: Speedy 1050 Backup
 01460          RTS
 
 ```
-  
-### DRIVE.ASM  
-  
+
+### DRIVE.ASM
+
 ```
 00010 ------------------------------
 00020          .LI ON

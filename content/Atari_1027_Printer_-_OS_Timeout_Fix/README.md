@@ -1,10 +1,10 @@
 ---
 title: Atari 1027 Printer - OS Timeout Fix
 ---
-  
-  
-# Atari 1027 Printer, OS Timeout Fix  
-  
+
+
+# Atari 1027 Printer, OS Timeout Fix
+
 ```
 ;      ----------------------------------------------------------------
 ;      1027 Printer Timeout Fix  (Ver. 2)                 (AUTORUN.SYS)
@@ -72,4 +72,4 @@ SIOJMP JMP     (UVSER)         ; Chain into system's interrupt server
        END     FIXORG          ; End ----------------------------------
 
 ```
-  
+

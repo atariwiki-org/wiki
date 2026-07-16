@@ -1,32 +1,32 @@
 ---
 title: STROQ
 ---
-# Stroq - A game in Forth  
-  
-  
-## About Stroq:  
-  
-Stroq is a simple but addictive puzzle game. I found the game for Linux and MacOS X on the Internet ([Stroq Homepage](http://stroq.sourceforge.net/)) and decided to do a conversation for the Atari 8Bit Computer in Forth. Winfried Piegsda did the graphical design, sound and artwork, I did the coding in Forth (X-Forth for Atari). The Game programmed in little less than 4 weeks to be submitted to the annual ABBUC Software Contest where it scored the [5th place](http://www.atari-portal.net/modules.php?name=DocTree&dtIsBlk=y&dtId=216).  
-  
-## Screenshots  
-  
-![](attachments/title.png)  
-![](attachments/game1.png)  
-### Atari 8bit Version  
-  
-  
-  
-## License:  
-  
-This game is licensed under the GNU Public License, Version 2 or higher.  
-  
-## Source:  
-  
-### Atari XL/XE Computer (6502 X-Forth / FIG-Forth)  
-  
-I didn't look at the C-Sources, we only "stole" the puzzle level from the [original game at sourceforge](http://stroq.sourceforge.net/).  
-Because the game was programmed under time pressure, the code is not "optimal".  
-  
+# Stroq - A game in Forth
+
+
+## About Stroq:
+
+Stroq is a simple but addictive puzzle game. I found the game for Linux and MacOS X on the Internet ([Stroq Homepage](http://stroq.sourceforge.net/)) and decided to do a conversation for the Atari 8Bit Computer in Forth. Winfried Piegsda did the graphical design, sound and artwork, I did the coding in Forth (X-Forth for Atari). The Game programmed in little less than 4 weeks to be submitted to the annual ABBUC Software Contest where it scored the [5th place](http://www.atari-portal.net/modules.php?name=DocTree&dtIsBlk=y&dtId=216).
+
+## Screenshots
+
+![](attachments/title.png)
+![](attachments/game1.png)
+### Atari 8bit Version
+
+
+
+## License:
+
+This game is licensed under the GNU Public License, Version 2 or higher.
+
+## Source:
+
+### Atari XL/XE Computer (6502 X-Forth / FIG-Forth)
+
+I didn't look at the C-Sources, we only "stole" the puzzle level from the [original game at sourceforge](http://stroq.sourceforge.net/).
+Because the game was programmed under time pressure, the code is not "optimal".
+
 ```
 ( Stroq )
 
@@ -1184,12 +1184,12 @@ LEVELMEM @ MAXLEVEL !
 
 ." Ready." CR 
 ```
-  
-## Downloads  
-  
-The Atari Stroq Programm has some quirks when running in an Emulator (such as [Atari800](http:://atari800.sf.net)). It runs fine on the real hardware.  
-  
-  
-  
-  
-  
+
+## Downloads
+
+The Atari Stroq Programm has some quirks when running in an Emulator (such as [Atari800](http:://atari800.sf.net)). It runs fine on the real hardware.
+
+
+
+
+

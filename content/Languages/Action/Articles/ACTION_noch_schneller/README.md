@@ -1,22 +1,22 @@
 ---
 title: ACTION noch schneller
 ---
-### General Information  
-Author: 	Peter Finzel   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	Computer Kontakt (CK) 6-7/86   
+### General Information
+Author: 	Peter Finzel
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	Computer Kontakt (CK) 6-7/86
 ---
-## Peter's Assemblerecke  
-# Action! noch schneller  
-Welcher Atari-Fan kennt ihn nicht, den superflinken ACTION!-Compiler von Optimized Systems Software (OSS)? Ohne Übertreibung ist das die beste und schnellste Programmiersprache für alle 8-Bit Computer von Atari, wenn nicht die schnellste für alle 6502-Computer überhaupt. Und die darf natürlich im Rahmen der Assemblerecke nicht vergessen werden.  
-  
-Den Lesern der Assemblerecke ist ACTION! schon längst kein Unbekannter mehr, denn in der [CK 10/85](../Musik_in_ACTION/README.md) haben wir bereits ein Musikprogramm vorgestellt, das vollkommen in ACTION! geschrieben war. Diesmal wird noch etwas tiefer gebohrt und gezeigt, wie man ACTION!-Programme noch kürzer und noch schneller machen kann. Außerdem gibt's als besonderes Bonbon eine Runtime-Package, mit der ACTION!-Programme auch ohne Steckmodul laufen.  
-  
-### Contra Basic  
-  
-In vielen ACTION!-Listings, die in amerikanischen Zeitschriften zu finden waren, wurden eifrig PEEK- und POKE-Befehle eingesetzt. Das zeigt, dass die Autoren noch nicht erkannt haben, welche eleganten und leistungsfähigen Konstruktionen ACTION! anbietet und damit PEEK und POKE vollkommen überflüssig werden lässt. Nehmen wir als Beispiel nur die Abfrage eines Joysticks über die Speicherzelle 632 ([STICK0](../STICK0/README.md)). Ein Test auf die Mittelstellung könnte lauten:  
-  
+## Peter's Assemblerecke
+# Action! noch schneller
+Welcher Atari-Fan kennt ihn nicht, den superflinken ACTION!-Compiler von Optimized Systems Software (OSS)? Ohne Übertreibung ist das die beste und schnellste Programmiersprache für alle 8-Bit Computer von Atari, wenn nicht die schnellste für alle 6502-Computer überhaupt. Und die darf natürlich im Rahmen der Assemblerecke nicht vergessen werden.
+
+Den Lesern der Assemblerecke ist ACTION! schon längst kein Unbekannter mehr, denn in der [CK 10/85](../Musik_in_ACTION/README.md) haben wir bereits ein Musikprogramm vorgestellt, das vollkommen in ACTION! geschrieben war. Diesmal wird noch etwas tiefer gebohrt und gezeigt, wie man ACTION!-Programme noch kürzer und noch schneller machen kann. Außerdem gibt's als besonderes Bonbon eine Runtime-Package, mit der ACTION!-Programme auch ohne Steckmodul laufen.
+
+### Contra Basic
+
+In vielen ACTION!-Listings, die in amerikanischen Zeitschriften zu finden waren, wurden eifrig PEEK- und POKE-Befehle eingesetzt. Das zeigt, dass die Autoren noch nicht erkannt haben, welche eleganten und leistungsfähigen Konstruktionen ACTION! anbietet und damit PEEK und POKE vollkommen überflüssig werden lässt. Nehmen wir als Beispiel nur die Abfrage eines Joysticks über die Speicherzelle 632 ([STICK0](../STICK0/README.md)). Ein Test auf die Mittelstellung könnte lauten:
+
 ```
 Diese Konstruktion würde in Basic und auch in ACTION! funktionieren. Aber es geht viel eleganter. Legen Sie einfach eine BYTE-Variable auf die gewünschte Speicherzelle und benutzen Sie diese anstatt PEEK:
 
@@ -144,43 +144,43 @@ FOR i=1 TO 20           ;20 mal invertieren
    OD
 RETURN
 ```
-Wer das ACTION!-Handbuch (Seite 144) genau gelesen hat, weiß, dass die Adresslage des erzeugten Objektprogramms mit den Speicherzellen $0E, $0F und $491, $492 gesteuert werden kann. Durch geschickte DEFINEs kann man sich quasi zusätzliche Befehle zum Verändern der Adressen schaffen. Die neue Anweisung ZEROPAG verlagert alle nachfolgenden Definitionen in die Zero-Page. Da es dort recht eng zugeht, sollten Sie nur wichtige und häufig benutzte Variablen dahin legen. Sie dürfen auch niemals vergessen, die Adresslage nach den Definitionen mit RESTORE wieder in einen "normalen" Bereich zurückzulegen. In Listing 1 finden Sie auch gleich ein Beispiel für die Definition eines Pointers in der Seite Null.  
-  
-Wenn das Compilat später mit einem W-Befehl des Monitors gespeichert werden soll, wird erst ab RESTORE aufgezeichnet. Verwenden Sie daher diese Anweisungen bitte nur am Anfang eines Programms. Es hat auch keinen Sinn, Variablen in der Zero-Page vorzubesetzen. Probleme mit ZP-Variablen kann es geben, wenn im Programm gleichzeitig Ein-/Ausgabe von Zahlen, z.B. mit PrintC(), vorkommt. Hier hilft leider nur, wenn man seine eigenen Routinen zur Zahlenausgabe verwendet (s. auch CK 11/85).  
-  
-Nebenbei bemerkt ergibt sich auch für normale (BYTE, CARD) Variablen ein Vorteil in Ausführungszeit und Speicherplatz, wenn diese in die Zero-Page gelegt werden. Der Compiler bemerkt dies und wendet auf solche Variablen die optimaleren Zero-Page Adressierungen an. Zum Beispiel konnte der im ACTION!-Handbuch abgedruckte Benchmark-Test noch beschleunigt werden. Mit abgeschaltetem Bildschirm dauert die Berechnung der ersten 1899 Primzahlen noch ca. 1 sec. Das ist schneller als es ein 520 ST unter Forth schafft! Man merkt eben, dass ACTION! von einem ganz ausgekochten 6502-Profi entwickelt wurde.  
-  
-### Ohne Modul?  
-  
-Eines der schlimmsten Nachteile von ACTION! ist, dass das Steckmodul zum Ablauf eines Programms erforderlich ist, auch wenn es sich um bereits compilierte Programme handelt. Damit wird es unmöglich, die eigenen Programmierkunstwerke an Freunde weiterzugeben, die keine der immer noch ca. 250,-- DM teuren ACTION!-Module haben. Ganz zu schweigen von der Entwicklung kommerzieller Programme, wozu sich ACTION! aber vorzüglich eignen würde. Der Grund für diesen Sachverhalt ist darin zu suchen, dass ACTION! nicht alle im Programm verwendeten Funktionen auch in das Programm mit aufnimmt. Vielmehr sind im erzeugten Objektcode Unterprogrammsprünge in das ROM-Modul zu finden, und damit läuft das Programm eben nur mit dem Modul. Diese Sprünge ins ROM werden sowohl bei aufwendigeren Rechenbefehlen (*, /) als auch beim Aufruf von Funktionen oder eingebauten Prozeduren (wie STICK() oder SetBlock) verwendet.  
-  
-Alle bisher vorgestellten Verfahren haben zusätzlich den Vorteil, dass sie das ACTION!-Modul nicht benötigen. Hätten Sie PEEK oder POKE oder gar STICK() oder SETCOLOR() verwendet, müsste die Cartridge wohl oder übel vorhanden sein. Oder man hat die sogenannte Runtime-Package, mit deren Hilfe Programme auch ohne Modul laufen. Man kann jedoch ein Programm in ACTION! so schreiben, dass es tatsächlich ohne Runtime-Package auskommt. Folgende Punkte sind dabei zu beachten:  
-  
-1. Es darf keine der eingebauten Funktionen und Prozeduren verwendet werden. Das heißt kein PEEK, kein POKE und auch kein PRINT!  
-1. Multiplikationen sowie Divisionen dürfen nicht verwendet werden.  
-1. Die Schiebe-Operationen RSH und LSH dürfen nur noch auf Byte-Werte angewendet werden.  
-1. Beim Aufruf von Prozeduren und Funktionen dürfen nicht mehr als drei Bytes (oder ein Card und ein Byte) übergeben werden.  
-  
-Wenn Sie diese Grundregeln peinlich genau beachten, läuft Ihr Programm auch ohne Modul. Natürlich ergeben sich damit einschneidende Abstriche. Ohne PRINT ist es nun mal schwierig, Texte und Zahlen auszugeben und ohne volle Parameterübergabe muss einiges umständlicher als sonst programmiert werden.  
-  
-### Runtime  
-  
-Besser geht es natürlich mit eine Runtime-Package (RTP).Von OSS wurde zwar eine RTP angekündigt, die aber bei uns nie auf dem Markt erschienen. Gerüchten nach zu urteilen, hat es Probleme zwischen OSS uns Action Computer Services (dem Hersteller von ACTION!) gegeben. Damit bleibt dem geplagten Benutzer nur eine Lösung: Eine eigene Runtime-Package muss her. Und hier ist sie. Sie brauchen nur Listing 2 und 3 abzutippen und unter den angegebenen Filenamen abzuspeichern. Später schreiben Sie in Ihr Programm  
+Wer das ACTION!-Handbuch (Seite 144) genau gelesen hat, weiß, dass die Adresslage des erzeugten Objektprogramms mit den Speicherzellen $0E, $0F und $491, $492 gesteuert werden kann. Durch geschickte DEFINEs kann man sich quasi zusätzliche Befehle zum Verändern der Adressen schaffen. Die neue Anweisung ZEROPAG verlagert alle nachfolgenden Definitionen in die Zero-Page. Da es dort recht eng zugeht, sollten Sie nur wichtige und häufig benutzte Variablen dahin legen. Sie dürfen auch niemals vergessen, die Adresslage nach den Definitionen mit RESTORE wieder in einen "normalen" Bereich zurückzulegen. In Listing 1 finden Sie auch gleich ein Beispiel für die Definition eines Pointers in der Seite Null.
+
+Wenn das Compilat später mit einem W-Befehl des Monitors gespeichert werden soll, wird erst ab RESTORE aufgezeichnet. Verwenden Sie daher diese Anweisungen bitte nur am Anfang eines Programms. Es hat auch keinen Sinn, Variablen in der Zero-Page vorzubesetzen. Probleme mit ZP-Variablen kann es geben, wenn im Programm gleichzeitig Ein-/Ausgabe von Zahlen, z.B. mit PrintC(), vorkommt. Hier hilft leider nur, wenn man seine eigenen Routinen zur Zahlenausgabe verwendet (s. auch CK 11/85).
+
+Nebenbei bemerkt ergibt sich auch für normale (BYTE, CARD) Variablen ein Vorteil in Ausführungszeit und Speicherplatz, wenn diese in die Zero-Page gelegt werden. Der Compiler bemerkt dies und wendet auf solche Variablen die optimaleren Zero-Page Adressierungen an. Zum Beispiel konnte der im ACTION!-Handbuch abgedruckte Benchmark-Test noch beschleunigt werden. Mit abgeschaltetem Bildschirm dauert die Berechnung der ersten 1899 Primzahlen noch ca. 1 sec. Das ist schneller als es ein 520 ST unter Forth schafft! Man merkt eben, dass ACTION! von einem ganz ausgekochten 6502-Profi entwickelt wurde.
+
+### Ohne Modul?
+
+Eines der schlimmsten Nachteile von ACTION! ist, dass das Steckmodul zum Ablauf eines Programms erforderlich ist, auch wenn es sich um bereits compilierte Programme handelt. Damit wird es unmöglich, die eigenen Programmierkunstwerke an Freunde weiterzugeben, die keine der immer noch ca. 250,-- DM teuren ACTION!-Module haben. Ganz zu schweigen von der Entwicklung kommerzieller Programme, wozu sich ACTION! aber vorzüglich eignen würde. Der Grund für diesen Sachverhalt ist darin zu suchen, dass ACTION! nicht alle im Programm verwendeten Funktionen auch in das Programm mit aufnimmt. Vielmehr sind im erzeugten Objektcode Unterprogrammsprünge in das ROM-Modul zu finden, und damit läuft das Programm eben nur mit dem Modul. Diese Sprünge ins ROM werden sowohl bei aufwendigeren Rechenbefehlen (*, /) als auch beim Aufruf von Funktionen oder eingebauten Prozeduren (wie STICK() oder SetBlock) verwendet.
+
+Alle bisher vorgestellten Verfahren haben zusätzlich den Vorteil, dass sie das ACTION!-Modul nicht benötigen. Hätten Sie PEEK oder POKE oder gar STICK() oder SETCOLOR() verwendet, müsste die Cartridge wohl oder übel vorhanden sein. Oder man hat die sogenannte Runtime-Package, mit deren Hilfe Programme auch ohne Modul laufen. Man kann jedoch ein Programm in ACTION! so schreiben, dass es tatsächlich ohne Runtime-Package auskommt. Folgende Punkte sind dabei zu beachten:
+
+1. Es darf keine der eingebauten Funktionen und Prozeduren verwendet werden. Das heißt kein PEEK, kein POKE und auch kein PRINT!
+1. Multiplikationen sowie Divisionen dürfen nicht verwendet werden.
+1. Die Schiebe-Operationen RSH und LSH dürfen nur noch auf Byte-Werte angewendet werden.
+1. Beim Aufruf von Prozeduren und Funktionen dürfen nicht mehr als drei Bytes (oder ein Card und ein Byte) übergeben werden.
+
+Wenn Sie diese Grundregeln peinlich genau beachten, läuft Ihr Programm auch ohne Modul. Natürlich ergeben sich damit einschneidende Abstriche. Ohne PRINT ist es nun mal schwierig, Texte und Zahlen auszugeben und ohne volle Parameterübergabe muss einiges umständlicher als sonst programmiert werden.
+
+### Runtime
+
+Besser geht es natürlich mit eine Runtime-Package (RTP).Von OSS wurde zwar eine RTP angekündigt, die aber bei uns nie auf dem Markt erschienen. Gerüchten nach zu urteilen, hat es Probleme zwischen OSS uns Action Computer Services (dem Hersteller von ACTION!) gegeben. Damit bleibt dem geplagten Benutzer nur eine Lösung: Eine eigene Runtime-Package muss her. Und hier ist sie. Sie brauchen nur Listing 2 und 3 abzutippen und unter den angegebenen Filenamen abzuspeichern. Später schreiben Sie in Ihr Programm
 ```
 INCLUDE "RUN1.ACT"
 INCLUDE "RUN2.ACT"
 ```
-und haben dann die RTP in Ihr Programm eingebunden.  
-  
-Interessanterweise ist die Runtime-Package (RTP) auch in ACTION! geschrieben, wenn auch an den wesentlichen Stellen sog. Code-Blocks verwendet wurden. An dieser Stelle ist gleich zu vermerken, dass es sich um keine vollständige RTP handelt, sondern nur die wichtigsten Befehle implementiert wurden. Das ist schon ein Hinweis, wie flexibel die RTP in ACTION! verwendet werden kann. Nur diejenigen Features, die auch tatsächlich gebraucht werden, müssen in der RTP enthalten sein. Wenn sie ein Programm haben, das keinerlei I/O benötigt, dann reicht es, wenn sie RUN1.ACT hinzuziehen. Man kann sogar noch weiter gehen und Multiplikation und Divisions-Routinen aus RUN1 streichen, falls sie nicht gebraucht werden. In jedem Fall sollte aber die Parameter-Routine enthalten sein.  
-  
-In RUN1.ACT sind die Grundrechenarten sowie die Shift-Befehle für Cards enthalten. Außerdem dürfen dank PAR() wieder mehr als drei Bytes an Prozeduren übergeben werden. RUN2.ACT stockt den Befehlsvorrat mit den wichtigsten I/O-Befehlen auf. Hier wurden OPEN und CLOSE implementiert, weiterhin sind PUT und GET sowie die PRINT-Routinen für Strings enthalten. Die Definitionen entsprechen den Angaben im Handbuch, nur bei der Fehlerbehandlung wurde ein anderer Weg eingeschlagen: Nach jeder I/O-Anweisung können Sie anhand der Byte-Variablen IOERR prüfen, ob sich ein Fehler eingeschlichen hat. Dabei weist ein Wert größer/gleich $80 auf einen Fehler hin; die Codes entsprechen den üblichen Definitionen.  
-  
-### Erweiterungen  
-  
-In den beiden RTP-files sind noch längst nicht alle ACTION!-Befehle eingebaut. Aber Sie können damit auf einen Grundstock zurückgreifen und beliebige Erweiterungen vorhemen. Fehlt Ihnen z.B. der SOUND-Befehl, müssen Sie nur eine Prozedur SOUND(…) anlegen, der Compiler wird dann immer auf Ihren SOUND-Befehl zurückgreifen und den im ROM eingebauten nicht mehr beachten. Natürlich dürfen Sie in SOUND() nur Befehle verwenden, die schon zuvor im Rahmen der RTP definiert wurden.  
-  
-Ich hoffe, dass die Assembler-Fans nicht verärgert sind, weil es diesmal eine reine ACTION!-Ecke geworden ist. Ich glaube aber, dass sich inzwischen auch viele ML-Freaks mit Sprachen wie ACTION! beschäftigen und die Assemblerecke auch ein Forum für assemblernahe Sprachen sein sollte. Zum Trost: in der nächsten Ausgabe gibt's wieder reichlich Futter für den Assembler.  
+und haben dann die RTP in Ihr Programm eingebunden.
+
+Interessanterweise ist die Runtime-Package (RTP) auch in ACTION! geschrieben, wenn auch an den wesentlichen Stellen sog. Code-Blocks verwendet wurden. An dieser Stelle ist gleich zu vermerken, dass es sich um keine vollständige RTP handelt, sondern nur die wichtigsten Befehle implementiert wurden. Das ist schon ein Hinweis, wie flexibel die RTP in ACTION! verwendet werden kann. Nur diejenigen Features, die auch tatsächlich gebraucht werden, müssen in der RTP enthalten sein. Wenn sie ein Programm haben, das keinerlei I/O benötigt, dann reicht es, wenn sie RUN1.ACT hinzuziehen. Man kann sogar noch weiter gehen und Multiplikation und Divisions-Routinen aus RUN1 streichen, falls sie nicht gebraucht werden. In jedem Fall sollte aber die Parameter-Routine enthalten sein.
+
+In RUN1.ACT sind die Grundrechenarten sowie die Shift-Befehle für Cards enthalten. Außerdem dürfen dank PAR() wieder mehr als drei Bytes an Prozeduren übergeben werden. RUN2.ACT stockt den Befehlsvorrat mit den wichtigsten I/O-Befehlen auf. Hier wurden OPEN und CLOSE implementiert, weiterhin sind PUT und GET sowie die PRINT-Routinen für Strings enthalten. Die Definitionen entsprechen den Angaben im Handbuch, nur bei der Fehlerbehandlung wurde ein anderer Weg eingeschlagen: Nach jeder I/O-Anweisung können Sie anhand der Byte-Variablen IOERR prüfen, ob sich ein Fehler eingeschlichen hat. Dabei weist ein Wert größer/gleich $80 auf einen Fehler hin; die Codes entsprechen den üblichen Definitionen.
+
+### Erweiterungen
+
+In den beiden RTP-files sind noch längst nicht alle ACTION!-Befehle eingebaut. Aber Sie können damit auf einen Grundstock zurückgreifen und beliebige Erweiterungen vorhemen. Fehlt Ihnen z.B. der SOUND-Befehl, müssen Sie nur eine Prozedur SOUND(…) anlegen, der Compiler wird dann immer auf Ihren SOUND-Befehl zurückgreifen und den im ROM eingebauten nicht mehr beachten. Natürlich dürfen Sie in SOUND() nur Befehle verwenden, die schon zuvor im Rahmen der RTP definiert wurden.
+
+Ich hoffe, dass die Assembler-Fans nicht verärgert sind, weil es diesmal eine reine ACTION!-Ecke geworden ist. Ich glaube aber, dass sich inzwischen auch viele ML-Freaks mit Sprachen wie ACTION! beschäftigen und die Assemblerecke auch ein Forum für assemblernahe Sprachen sein sollte. Zum Trost: in der nächsten Ausgabe gibt's wieder reichlich Futter für den Assembler.
 ```
 ;************************************
 ;  ACTION!-Runtime Package TEIL 1
@@ -380,6 +380,6 @@ Open(6,"S:",(Gr&$F0)!$1C,Gr)
 RETURN
 ```
 ---
-[actionschneller.djvu](attachments/actionschneller.djvu)  
-  
-[action_schneller.pdf](attachments/action_schneller.pdf)  
+[actionschneller.djvu](attachments/actionschneller.djvu) 
+
+[action_schneller.pdf](attachments/action_schneller.pdf) 

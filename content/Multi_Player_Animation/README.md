@@ -1,18 +1,18 @@
 ---
 title: Multi Player Animation
 ---
-# Multi Player Animation  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-  
-for MPA files created by Peter Finzels Multi-Player Animator  
-  
-see also Multi Player Animator  
-  
+# Multi Player Animation
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+
+for MPA files created by Peter Finzels Multi-Player Animator
+
+see also Multi Player Animator
+
 ```
 ;********************************
 ;**                            **

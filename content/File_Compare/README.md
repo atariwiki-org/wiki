@@ -1,17 +1,17 @@
 ---
 title: File Compare
 ---
-# File Compare in ACTION!  
-  
-General Information  
-  
-Author: 	Mark Rose   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	March, 1985   
-  
-Compare - Check if two files are the same.  
-  
+# File Compare in ACTION!
+
+General Information
+
+Author: 	Mark Rose
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	March, 1985
+
+Compare - Check if two files are the same.
+
 ```
 ; Compare - Check if two files are
 ;	the same.

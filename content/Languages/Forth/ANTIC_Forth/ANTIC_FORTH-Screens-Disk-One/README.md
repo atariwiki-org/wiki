@@ -1,5 +1,5 @@
-# ANTIC FORTH - Screens Disk One  
-  
+# ANTIC FORTH - Screens Disk One
+
 ```
   oK
 
@@ -2357,4 +2357,4 @@ SCR # 45
  1F
 
 ```
-  
+

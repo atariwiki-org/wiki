@@ -1,16 +1,16 @@
 ---
 title: Basic Fast Stack and Fast Jump
 ---
-  
-  
-# Basic Fast Stack and Fast Jump  
-  
-from ANTIC [Issue February 1988](http://www.atarimagazines.com/v6n10/FastStackFastJump.html)  
-  
-  
-  
-## Fast Stack  
-  
+
+
+# Basic Fast Stack and Fast Jump
+
+from ANTIC [Issue February 1988](http://www.atarimagazines.com/v6n10/FastStackFastJump.html) 
+
+
+
+## Fast Stack
+
 ```
 0100 ; FAST STACK
 0110 ; BY BILL BODENSTEIN
@@ -102,9 +102,9 @@ from ANTIC [Issue February 1988](http://www.atarimagazines.com/v6n10/FastStackFa
 0970     RTS 
 0980 ENDCODE
 ```
-  
-## Fast Jump  
-  
+
+## Fast Jump
+
 ```
 0100 ; FAST JUMP
 0110 ; BY BILL BODENSTEIN

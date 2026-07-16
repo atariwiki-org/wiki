@@ -1,35 +1,35 @@
 ---
 title: APAC Graphics Mode
 ---
-### APAC Graphics Mode  
-  
-General Information   
-Author: THOMAS TANIDA   
-Published: 1987   
-  
-## Demo of APAC Graphics Mode  
-  
-Any Point, Any Color  
-  
-The APAC System, or Any Point, Any Color was a software-driven display mode capable of displaying an image using all 256 of the Atari's possible colors. By taking 80×192 mode lines that displayed 16 hues, and those that displayed 16 shades, and either interlacing rows of them, quickly alternating between rows of them, or both, a screen displaying 80×96 or 80×192 pixels in 256 colors could be perceived.  
-  
-APAC was created in early 1987 and later introduced in the magazine A.N.A.L.O.G. Computing, Issue #60, May 1988 in an article by Tom Tanida. The source code was written in 6502 assembly language.  
-  
-APAC used a Display List Interrupt, or DLI, after each line of the screen was drawn to alternate between GTIA Graphics Mode 9 (15 hues) and 11 (15 shades of grey) of the GTIA chip. The hues and luminances would blend together on the screen (usually a television) to create the effect of a palette of 256 visible colors, with the artifact of a thinner, horizontal blank line in between each visible line.  
-  
-APAC used a very basic API consisting of four functions:  
-  
-- Init, used to place the computer into the APAC mode  
-- Exit, used to exit the APAC mode  
-- Plot, used to place a point of a specified color on the screen  
-- Draw, used to draw a line between the last plotted point to the given point  
-  
-A second article for an "APAC-II" mode was hinted at in the original article. This mode would have alternated the GTIA 9 and 11 modes during a vertical blank interrupt, or VBI. The article was neither completed nor published.  
-  
+### APAC Graphics Mode
+
+General Information
+Author: THOMAS TANIDA
+Published: 1987
+
+## Demo of APAC Graphics Mode
+
+Any Point, Any Color
+
+The APAC System, or Any Point, Any Color was a software-driven display mode capable of displaying an image using all 256 of the Atari's possible colors. By taking 80×192 mode lines that displayed 16 hues, and those that displayed 16 shades, and either interlacing rows of them, quickly alternating between rows of them, or both, a screen displaying 80×96 or 80×192 pixels in 256 colors could be perceived.
+
+APAC was created in early 1987 and later introduced in the magazine A.N.A.L.O.G. Computing, Issue #60, May 1988 in an article by Tom Tanida. The source code was written in 6502 assembly language.
+
+APAC used a Display List Interrupt, or DLI, after each line of the screen was drawn to alternate between GTIA Graphics Mode 9 (15 hues) and 11 (15 shades of grey) of the GTIA chip. The hues and luminances would blend together on the screen (usually a television) to create the effect of a palette of 256 visible colors, with the artifact of a thinner, horizontal blank line in between each visible line.
+
+APAC used a very basic API consisting of four functions:
+
+- Init, used to place the computer into the APAC mode
+- Exit, used to exit the APAC mode
+- Plot, used to place a point of a specified color on the screen
+- Draw, used to draw a line between the last plotted point to the given point
+
+A second article for an "APAC-II" mode was hinted at in the original article. This mode would have alternated the GTIA 9 and 11 modes during a vertical blank interrupt, or VBI. The article was neither completed nor published.
+
 ---
-  
-### APAC Graphics Mode  
-  
+
+### APAC Graphics Mode
+
 ```
 10 ******************************
 20 * APAC SYSTEM, V1.1          *
@@ -679,7 +679,7 @@ A second article for an "APAC-II" mode was hinted at in the original article. Th
 6460     JMP $A000   ;TO CARTRIDGE
 
 ```
-  
+
 ```
 10 ****************************
 20 * APAC KAL DEMO, V2.0      *
@@ -881,4 +881,4 @@ A second article for an "APAC-II" mode was hinted at in the original article. Th
 1980 OFOFF .BYTE 0,0,1,1,0,0
 1990 PNTOFF .BYTE 0,2,1,3,0,2
 ```
-  
+

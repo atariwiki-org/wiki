@@ -1,14 +1,14 @@
 ---
 title: LispCalculator
 ---
-# A simple Calculator in LISP  
-  
-General Information  
-  
-Author: 	Datasoft   
-Language: 	LISP   
-Compiler/Interpreter: 	InterLisp/65   
-  
+# A simple Calculator in LISP
+
+General Information
+
+Author: 	Datasoft
+Language: 	LISP
+Compiler/Interpreter: 	InterLisp/65
+
 ```
 (CALC PUSH POP BINARY UNARY - E N L S D P)
 (DEFINEQ CALC '(LAMBDA NIL (PROG (X Y OP STACK) LOOP (POKE 128 0) (TERPRI) (PRINT STACK) (TERPRI) (PRIN1 (QUOTE "Enter> ")) (SETQ IN (READ)) (COND ((# IN) (PUSH IN)) ((MEMBER IN BINARY) (PUSH (APPLY* IN (POP) (POP)))) ((MEMBER IN UNARY) (PUSH (APPLY* IN (POP)))) ((EQ IN (QUOTE Q)) (RETURN)) (T (PRIN1 (QUOTE "}")))) (GO LOOP)))

@@ -1,8 +1,8 @@
 ---
 title: Write Track
 ---
-# Speedy 1050 example -- Write Track  
-  
+# Speedy 1050 example -- Write Track
+
 ```
 0100 ;***********************************
 0110 ;* Demonstration fuer Kommando $60 *

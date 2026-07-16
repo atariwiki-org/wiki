@@ -1,26 +1,26 @@
-# Simple Blitter Routine  
-  
-this is the BETA Version of a simple Blitter Routine for Mirko Sobe (AtariXLE, BOSS X).  
-  
-Use attached ATR Image. There is a demo Turbo Basic PGM on the Image. The ML-Routine is really simple. All Memory Calculations must be done in Basic or in the programmers brain ;)  
-  
-To Move Memory from high to low address, use a 16 Bit negative value in the "bytes_per_row_in_frambuffer" parameter. So -40 becomes (40 EXOR $FFFF) + 1 = $FFD8  
-  
-__USAGE__: {{{x=USR(<addr of mlroutine> , sourceaddr, destaddr, bytes_in_rows, lines, bytes_per_row_in_frambuffer)}}}  
-  
-where  
-- __sourceaddr__ is the Source Address (like DPEEK(88))  
-- __destaddr__ is the Destination Address  
-- __bytes_in_row__ is the number of bytes in a row to copy  
-- __lines__ is the numbers of lines to copy  
-- __bytes_per_row_in_framebuffer__ is the number of bytes per line in the framebuffer (40 for Graphics 0 and 8, $FFD8 for negative = -40)  
-  
-## Disk  
-  
-- [BLITTR.ATR](attachments/BLITTR.ATR)  
-  
-## Source (Bibo Assembler)  
-  
+# Simple Blitter Routine
+
+this is the BETA Version of a simple Blitter Routine for Mirko Sobe (AtariXLE, BOSS X).
+
+Use attached ATR Image. There is a demo Turbo Basic PGM on the Image. The ML-Routine is really simple. All Memory Calculations must be done in Basic or in the programmers brain ;)
+
+To Move Memory from high to low address, use a 16 Bit negative value in the "bytes_per_row_in_frambuffer" parameter. So -40 becomes (40 EXOR $FFFF) + 1 = $FFD8
+
+__USAGE__: {{{x=USR(<addr of mlroutine> , sourceaddr, destaddr, bytes_in_rows, lines, bytes_per_row_in_frambuffer)}}}
+
+where
+- __sourceaddr__ is the Source Address (like DPEEK(88))
+- __destaddr__ is the Destination Address
+- __bytes_in_row__ is the number of bytes in a row to copy
+- __lines__ is the numbers of lines to copy
+- __bytes_per_row_in_framebuffer__ is the number of bytes per line in the framebuffer (40 for Graphics 0 and 8, $FFD8 for negative = -40)
+
+## Disk
+
+- [BLITTR.ATR](attachments/BLITTR.ATR)
+
+## Source (Bibo Assembler)
+
 ```
 01000             .LI OFF
 01010 **********************
@@ -111,9 +111,9 @@ where
 01860 ------------------------------
 
 ```
-  
-## Demo Program (Turbo Basic)  
-  
+
+## Demo Program (Turbo Basic)
+
 ```
 1010 DIM X$($70)
 1020 X$="<mlcode routine>" 
@@ -168,6 +168,6 @@ where
 1520   X=USR(ADR(X$),DPEEK(88)+20+179*40,DPEEK(88)+20+180*40,10,U,$FFD8)
 1530 NEXT U
 ```
-  
-  
-  
+
+
+

@@ -1,10 +1,10 @@
 ---
 title: Create Data-Statements from binary load files
 ---
-  
-  
-# Create DATA Statements from binary load files  
-  
+
+
+# Create DATA Statements from binary load files
+
 ```
 1 REM BINDATA: A CONVERSION PROGRAM TO CONVERT BINARY LOAD FILES TO BASIC DATA STATEMENTS
 2 REM BY STEVEN S. WESTON; JANUARY 24, 1983; POB 868, DEL MAR, CA 92014
@@ -38,4 +38,4 @@ title: Create Data-Statements from binary load files
 260 ? "PREMATURE END OF BINARY FILE":? CNT;" BYTES PROCESSED":? "EXPECTED ";BYTS:GOTO 220
 270 ? #2;S$:LN=LN+INC:TRAP 220:GOTO 90
 ```
-  
+

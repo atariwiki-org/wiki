@@ -1,27 +1,27 @@
 ---
 title: Simple PRINT Runtime
 ---
-### Simple PRINT Runtime!  
-  
-Author: Erhard Puetz   
-Language: ACTION!   
-  
-EPRINT stellt folgende Routinen zur Verfügung:  
-  
-- PRINT()   
-- PRINTE()   
-- PRINTB()   
-- PRINTC()   
-- PRINTBE()   
-- PRINTCE()   
-  
-Dies sind meines Erachtens zumindest am Anfang die meist verwendeten Routinen und somit sollte die Mini-LIB __EPRINT__ recht hilfreich sein.  
-  
-Viel Spaß mit EPRINT.  
-  
-Erhard Pütz  
-  
-  
+### Simple PRINT Runtime!
+
+Author: Erhard Puetz
+Language: ACTION!
+
+EPRINT stellt folgende Routinen zur Verfügung:
+
+- PRINT()
+- PRINTE()
+- PRINTB()
+- PRINTC()
+- PRINTBE()
+- PRINTCE()
+
+Dies sind meines Erachtens zumindest am Anfang die meist verwendeten Routinen und somit sollte die Mini-LIB __EPRINT__ recht hilfreich sein.
+
+Viel Spaß mit EPRINT.
+
+Erhard Pütz
+
+
 ```
 ;**************************************
 ;* EPRINT04.ACT                       *

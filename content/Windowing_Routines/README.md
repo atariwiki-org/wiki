@@ -1,14 +1,14 @@
 ---
 title: Windowing Routines
 ---
-# Windowing Routines  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-  
+# Windowing Routines
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+
 ```
 ;******************************
 ;**								  **

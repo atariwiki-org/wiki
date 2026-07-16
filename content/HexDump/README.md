@@ -1,15 +1,15 @@
 ---
 title: HexDump
 ---
-# Dump - Print the contents of binary files in hexadecimal and ATASCII  
-  
-General Information  
-  
-Author: 	Mark Rose   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	February, 1985   
-  
+# Dump - Print the contents of binary files in hexadecimal and ATASCII
+
+General Information
+
+Author: 	Mark Rose
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	February, 1985
+
 ```
 ; Dump - Print the contents of binary
 ;	files in hexadecimal and ATASCII

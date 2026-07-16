@@ -1,56 +1,56 @@
 ---
 title: PERCOM Service
 ---
-# Percom Service  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	1991-2008   
-  
-Tool to configure Percom Block Drives. This Tool can be used to test Disk integrity and to format all kind of different Disk Formats available for Atari Disk Drives.  
-  
-![](attachments/percom.png)  
-  
-Download: [PERCOM.ATR](attachments/PERCOM.ATR)  
-  
-Needs ACTION! Runtime package to compile a standalone Version. Disk with Source and compiled Version attached.  
-  
-I wrote this Tool to configure the HDI 3 1/2" Disk drive designed by Erhard Pütz (aka FloppyDoc)  
-  
-### Changelog  
-  
-2008-01-13 disabled break key, custom error procedure, updated copyright  
-  
-## How to use  
-  
-  
-|| Key	||  Description  ||  
-| 1 - 4 | Read Percom Block from D1: - D4: and update display  |  
-| T	  | change number of Tracks per Disc  |  
-| S	  | change number of Sectors per Track  |  
-| A	  | change modulation (FM or MFM)  |  
-| R	  | change stepping rate  |  
-| D	  | toggle doublesided <-> singlesides  |  
-| B	  | change Bytes per Sectors (normally 128 or 256)  |  
-| V	  | change Drive active Flag / HD flag |  
-| CTRL+F | Format selected Disk in configured Format (CAUTION!!!)  |  
-| CTRL+T | Read and Test all Sectors in configured Format, printing Status for each Sector |  
-| CTRL+S | configure Drive for Atari Single Density, single sided (SS/SD)  |  
-| CTRL+M | configure Drive for Atari Medium Density, single sided (SS/MD), 1050 Format  |  
-| CTRL+D | configure Drive for Atari Double Density, single sided (SS/DD)  |  
-| CTRL+H | configure Drive for Atari High Density, single sided (SS/HD)  |  
-| CTRL+Z | configure Drive for Atari Single Density, double sided (DS/SD)  |  
-| CTRL+Y | configure Drive for Atari Medium Density, double sided (DS/MD), 1050 Format  |  
-| CTRL+X | configure Drive for Atari Double Density, double sided (DS/DD)  |  
-| CTRL+V | configure Drive for Atari High Density, double sided (DS/HD)  |  
-  
-## Source  
-  
-### Main Program  
-  
+# Percom Service
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	1991-2008
+
+Tool to configure Percom Block Drives. This Tool can be used to test Disk integrity and to format all kind of different Disk Formats available for Atari Disk Drives.
+
+![](attachments/percom.png)
+
+Download: [PERCOM.ATR](attachments/PERCOM.ATR) 
+
+Needs ACTION! Runtime package to compile a standalone Version. Disk with Source and compiled Version attached.
+
+I wrote this Tool to configure the HDI 3 1/2" Disk drive designed by Erhard Pütz (aka FloppyDoc)
+
+### Changelog
+
+2008-01-13 disabled break key, custom error procedure, updated copyright
+
+## How to use
+
+
+|| Key	||  Description  ||
+| 1 - 4 | Read Percom Block from D1: - D4: and update display  |
+| T	  | change number of Tracks per Disc  |
+| S	  | change number of Sectors per Track  |
+| A	  | change modulation (FM or MFM)  |
+| R	  | change stepping rate  |
+| D	  | toggle doublesided <-> singlesides  |
+| B	  | change Bytes per Sectors (normally 128 or 256)  |
+| V	  | change Drive active Flag / HD flag |
+| CTRL+F | Format selected Disk in configured Format (CAUTION!!!)  |
+| CTRL+T | Read and Test all Sectors in configured Format, printing Status for each Sector |
+| CTRL+S | configure Drive for Atari Single Density, single sided (SS/SD)  |
+| CTRL+M | configure Drive for Atari Medium Density, single sided (SS/MD), 1050 Format  |
+| CTRL+D | configure Drive for Atari Double Density, single sided (SS/DD)  |
+| CTRL+H | configure Drive for Atari High Density, single sided (SS/HD)  |
+| CTRL+Z | configure Drive for Atari Single Density, double sided (DS/SD)  |
+| CTRL+Y | configure Drive for Atari Medium Density, double sided (DS/MD), 1050 Format  |
+| CTRL+X | configure Drive for Atari Double Density, double sided (DS/DD)  |
+| CTRL+V | configure Drive for Atari High Density, double sided (DS/HD)  |
+
+## Source
+
+### Main Program
+
 ```
 ;********************************
 ;**				**
@@ -460,9 +460,9 @@ PROC Percom_Service ()
 
 RETURN
 ```
-  
-### Percom Tool Include Library  
-  
+
+### Percom Tool Include Library
+
 ```
 ; Includedatei fuer PERCOM.ACT
 ;---

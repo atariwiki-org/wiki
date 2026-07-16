@@ -1,16 +1,16 @@
 ---
 title: Sweet16Apple2
 ---
-# Sweet 16 Apple2  
-  
-General Information  
-  
-Author: Steve "Woz" Wozniak   
-Assembler: generic   
-Published: 1977   
-  
-See tutorial and reference in the main article at [Sweet_16](../Sweet_16/README.md).  
-  
+# Sweet 16 Apple2
+
+General Information
+
+Author: Steve "Woz" Wozniak
+Assembler: generic
+Published: 1977
+
+See tutorial and reference in the main article at [Sweet_16](../Sweet_16/README.md).
+
 ```
 ********************************
 *                             *

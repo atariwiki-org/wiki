@@ -1,15 +1,15 @@
 # TIF2PIC
 
-## General Information  
-  
-Author: Ralf Patschke (pps)   
+## General Information
+
+Author: Ralf Patschke (pps)
 
 Language: 	QUICK
 
 Compiler/Interpreter: QUICK
-  
-This is our little TIF2PIC converter. It needs an uncompressed and 192*160 wide TIF file named "PICTURE.TIF" and creates a file named "PICTURE.PIC". The PIC has picture data first, followed by the colors, like uncompressed MIC files.  
-  
+
+This is our little TIF2PIC converter. It needs an uncompressed and 192*160 wide TIF file named "PICTURE.TIF" and creates a file named "PICTURE.PIC". The PIC has picture data first, followed by the colors, like uncompressed MIC files.
+
 ```
 Quick-Sourcetext
 P:              

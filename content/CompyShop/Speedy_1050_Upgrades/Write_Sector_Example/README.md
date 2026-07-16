@@ -1,8 +1,8 @@
 ---
 title: Write Sector Example
 ---
-# Write Sector example  
-  
+# Write Sector example
+
 ```
 0100 ;***************************************
 0110 ;*  Demonstration 1 fuer Kommando $50  *
@@ -44,7 +44,7 @@ title: Write Sector Example
 0470 ERROR SEC
 0480     RTS
 ```
-  
+
 ```
 0100 ;***************************************
 0110 ;*  Demonstration 2 fuer Kommando $50  *

@@ -1,18 +1,18 @@
 ---
 title: ProjXForthSieve
 ---
-  
-  
-# Sieve of Eratosthenes Benchmark  
-  
+
+
+# Sieve of Eratosthenes Benchmark
+
 ---
-from Sieve of Eratosthenes Benchmark Page  
-http://www.bagley.org/~doug/shootout/bench/sieve/sieve.gforth  
-  
-With many annotations  
-http://www.bagley.org/~doug/shootout/bench/sieve/alt/ann.sieve.forth  
-  
-gives wrong result in XFORTH, have to investigate  
+from Sieve of Eratosthenes Benchmark Page
+http://www.bagley.org/~doug/shootout/bench/sieve/sieve.gforth
+
+With many annotations
+http://www.bagley.org/~doug/shootout/bench/sieve/alt/ann.sieve.forth
+
+gives wrong result in XFORTH, have to investigate
 ---
 ```
 DECIMAL
@@ -48,10 +48,10 @@ LOOP
 DROP ;
 ```
 ---
-  
-Original BYTE FORTH Benchmark  
-http://www-personal.umich.edu/~williams/archive/forth/utilities/byteprimes.fs.html  
-  
+
+Original BYTE FORTH Benchmark
+http://www-personal.umich.edu/~williams/archive/forth/utilities/byteprimes.fs.html
+
 ```
 ( Eratosthenes sieve benchmark )
 ( original BYTE benchmark )
@@ -70,13 +70,13 @@ http://www-personal.umich.edu/~williams/archive/forth/utilities/byteprimes.fs.ht
   THEN LOOP ;
 
 ```
-  
+
 ---
-  
-  
-from GNU Forth distribution (Bernd Paysan)  
-http://www.jwdt.com/~paysan/gforth.html  
-  
+
+
+from GNU Forth distribution (Bernd Paysan)
+http://www.jwdt.com/~paysan/gforth.html
+
 ```
 ( Sieve by bernd paysan )
 
@@ -96,4 +96,4 @@ DO I C@
   LOOP DROP ;
 
 ```
-  
+

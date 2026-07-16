@@ -1,18 +1,18 @@
 ---
 title: Demo Pretty
 ---
-### General Information  
-Author: Brian Abbot  
-Language: ACTION!  
-Compiler/Interpreter: ACTION!  
-Published: ANTIC Vol. 3, #7 (11/ 84)  
+### General Information
+Author: Brian Abbot
+Language: ACTION!
+Compiler/Interpreter: ACTION!
+Published: ANTIC Vol. 3, #7 (11/ 84)
 ---
-# Demo: Pretty  
-  
-I've been programming with Action! for a few months now and wrote the following demonstration program, which shows the speed of the Action! language.  This routine puts three thick bars on the screen.  They will rotate upward in 128 unbroken colors while the background colors move down.  
-  
-  
-Try running this in a dark room for best results.  This might be just the thing to show the kid down the street with his brand new Apple IIc.  But don't forget to remind him that his jaw is on the floor.  
+# Demo: Pretty
+
+I've been programming with Action! for a few months now and wrote the following demonstration program, which shows the speed of the Action! language.  This routine puts three thick bars on the screen.  They will rotate upward in 128 unbroken colors while the background colors move down.
+
+
+Try running this in a dark room for best results.  This might be just the thing to show the kid down the street with his brand new Apple IIc.  But don't forget to remind him that his jaw is on the floor.
 ```
 PROC pretty()
    DEFINE key="Peek(764)<255"

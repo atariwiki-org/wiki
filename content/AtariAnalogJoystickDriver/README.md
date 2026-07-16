@@ -1,31 +1,31 @@
 ---
 title: AtariAnalogJoystickDriver
 ---
-# Atari USB analog Joystick Driver  
-  
-Tested with a Logitec Attack 3 analog Joystick. Other analog Joysticks might work. Please send feedback.  
-  
-## Generic VBI Driver  
-  
-Will work with Atari Basic, Turbo Basic, ACTION!, XFORTH.  
-  
-### Compatibility Mode  
-  
-Load driver and use Stick(0) and Strig(0) as normal.  
-  
-Signals from original Joystick in Port A will overwrite USB Joystick compatibility mode.  
-  
-### USB Analog Joystick Mode  
-  
-|| Label    || Mem   || Values ||  
-| USBHORZ  | $0270 | horizontal values (127-0 left move, 128 = no move, 129-255 right move) |  
-| USBVERT  | $0271 | vertical values (127-0 up move, 128 = no move, 129-255 down move) |  
-| USBTRIG0 | $0272 | Buttons 1-8 (each bit, bit set = Button pressed) |  
-| USBTRIG1 | $0273 | Buttons 9-10 (each bit, bit set = Button pressed) |  
-| USBTHRUS | $0274 | Thrust (0-255) |  
-  
-# Source Code (BiboAssembler)  
-  
+# Atari USB analog Joystick Driver
+
+Tested with a Logitec Attack 3 analog Joystick. Other analog Joysticks might work. Please send feedback.
+
+## Generic VBI Driver
+
+Will work with Atari Basic, Turbo Basic, ACTION!, XFORTH.
+
+### Compatibility Mode
+
+Load driver and use Stick(0) and Strig(0) as normal.
+
+Signals from original Joystick in Port A will overwrite USB Joystick compatibility mode.
+
+### USB Analog Joystick Mode
+
+|| Label    || Mem   || Values ||
+| USBHORZ  | $0270 | horizontal values (127-0 left move, 128 = no move, 129-255 right move) |
+| USBVERT  | $0271 | vertical values (127-0 up move, 128 = no move, 129-255 down move) |
+| USBTRIG0 | $0272 | Buttons 1-8 (each bit, bit set = Button pressed) |
+| USBTRIG1 | $0273 | Buttons 9-10 (each bit, bit set = Button pressed) |
+| USBTHRUS | $0274 | Thrust (0-255) |
+
+# Source Code (BiboAssembler)
+
 ```
 01000          .LI OFF
 01010 ****************************

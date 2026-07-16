@@ -1,9 +1,9 @@
 ---
 title: Typo bug virus
 ---
-# Typo bug virus  
-  
-not really a virus, but a funny background program that creates random typos on "A" and "E" :)  
+# Typo bug virus
+
+not really a virus, but a funny background program that creates random typos on "A" and "E" :)
 ```
 00010          .LI OFF
 00020 ******************************

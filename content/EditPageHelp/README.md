@@ -1,4 +1,4 @@
 ---
 title: EditPageHelp
 ---
-[TextFormattingRules](../TextFormattingRules/README.md)  
+[TextFormattingRules](../TextFormattingRules/README.md) 

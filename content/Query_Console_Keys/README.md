@@ -1,19 +1,19 @@
 ---
 title: Query Console Keys
 ---
-# Query Console Keys  
-  
-General Information  
-  
-Author: 	Paul B. Loux   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	1986   
-  
-## How to use  
-  
-Description: three functions are provided which test if the user is pressing one of the START, SELECT or OPTION console buttons. Returns a one if pressed, zero if not.  
-  
+# Query Console Keys
+
+General Information
+
+Author: 	Paul B. Loux
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	1986
+
+## How to use
+
+Description: three functions are provided which test if the user is pressing one of the START, SELECT or OPTION console buttons. Returns a one if pressed, zero if not.
+
 ```
 ;************************************
 ;*											 *

@@ -1,32 +1,32 @@
 ---
 title: Atari 1030 Modem with ModemLink Telecommunications Program
 ---
-# Atari 1030 Modem with ModemLink Telecommunications Program by Penril ; Copyright (C) 1983 Atari, Inc.  
-Atari 1030 Modem with:  
-- 300 bps  
-- Bell 103/113 modem compatible  
-- built-in ModemLink software on rom  
-- 2 SIO ports  
-## Manual  
-- [Atari 1030 Modem-Owner's Guide](http://data.atariwiki.org/DOC/Atari_1030_Modem_Owner_s_Guide.pdf) ; size: 34.8 MB  
-## ROM-Image  
-- [Atari_1030.rom](attachments/Atari_1030.rom) ; this software was soldered into the modem. With the great work from AtariGeezer from AtariAge it was possible to preserve this rare to find software for generations to come. Thank you AtariGeezer, we owe you very much! :-)  
-## BIN-Image  
-- [Atari_1030.bin](attachments/Atari_1030.bin) ; same as above in bin-format  
-## ATR-Images  
-- [Atari_1030.atr](attachments/Atari_1030.atr) ; ATR-Image with 1030 programs and the above roms  
-- [Atari_1030_Express_2.1.atr](attachments/Atari_1030_Express_2.1.atr)  
-- [Atari_1030_Antic.atr](attachments/Atari_1030_Antic.atr) ; Software on diskette from the review in ANTIC, please see below  
-## Image  
-![](attachments/Atari_1030-Modemlink.jpg)  
-Atari 1030 Modem with ModemLink Telecommunications Program - startscreen  
-  
-## Review  
-- [Review in ANTIC, VOL. 4, NO. 4 from AUGUST 1985](http://www.atarimagazines.com/v4n4/1030modem.html) ; UNLEASHING THE 1030 MODEM, Secrets of its built-in device handler by Russ Wetmore  
-Listings from the above review (Programs for use with the Atari 1030, written in BASIC)  
-  
-__Listing 1:__  
-  
+# Atari 1030 Modem with ModemLink Telecommunications Program by Penril ; Copyright (C) 1983 Atari, Inc.
+Atari 1030 Modem with:
+- 300 bps
+- Bell 103/113 modem compatible
+- built-in ModemLink software on rom
+- 2 SIO ports
+## Manual
+- [Atari 1030 Modem-Owner's Guide](http://data.atariwiki.org/DOC/Atari_1030_Modem_Owner_s_Guide.pdf) ; size: 34.8 MB
+## ROM-Image
+- [Atari_1030.rom](attachments/Atari_1030.rom) ; this software was soldered into the modem. With the great work from AtariGeezer from AtariAge it was possible to preserve this rare to find software for generations to come. Thank you AtariGeezer, we owe you very much! :-)
+## BIN-Image
+- [Atari_1030.bin](attachments/Atari_1030.bin) ; same as above in bin-format
+## ATR-Images
+- [Atari_1030.atr](attachments/Atari_1030.atr) ; ATR-Image with 1030 programs and the above roms
+- [Atari_1030_Express_2.1.atr](attachments/Atari_1030_Express_2.1.atr)
+- [Atari_1030_Antic.atr](attachments/Atari_1030_Antic.atr) ; Software on diskette from the review in ANTIC, please see below
+## Image
+![](attachments/Atari_1030-Modemlink.jpg)
+Atari 1030 Modem with ModemLink Telecommunications Program - startscreen
+
+## Review
+- [Review in ANTIC, VOL. 4, NO. 4 from AUGUST 1985](http://www.atarimagazines.com/v4n4/1030modem.html) ; UNLEASHING THE 1030 MODEM, Secrets of its built-in device handler by Russ Wetmore
+Listings from the above review (Programs for use with the Atari 1030, written in BASIC)
+
+__Listing 1:__
+
 ```
 MF 10 REM MAKEAUTO.BAS
 QO 20 REM BY RUSS WETMORE, FOR STAR SYSTEMS SOFTWARE, INC.
@@ -45,8 +45,8 @@ KX 140 READ A:? #1;CHR$(A);
 NI 150 GOTO 140
 IJ 160 CLOSE #1:END
 ```
-__Listing 2:__  
-  
+__Listing 2:__
+
 ```
 FS 1 REM MINI-1030
 DB 2 REM BY RUSS WETMORE, FOR STAR SYSTEMS SOFTWARE, INC.

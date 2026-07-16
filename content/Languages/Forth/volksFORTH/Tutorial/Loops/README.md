@@ -1,12 +1,12 @@
 ---
 title: Loops
 ---
-# Loops in Forth  
-  
-%%tabbedSection  
-%%tab-english  
-I found this small Basic Program in the book "Spielend Programmierer Lernen" from Karl-Heinz Koch:  
-  
+# Loops in Forth
+
+%%tabbedSection
+%%tab-english
+I found this small Basic Program in the book "Spielend Programmierer Lernen" from Karl-Heinz Koch:
+
 ```
 10 PRINT CHR$(125)
 15 POKE 82,0
@@ -18,9 +18,9 @@ I found this small Basic Program in the book "Spielend Programmierer Lernen" fro
 70 NEXT SP
 80 NEXT ZE
 ```
-  
-The Program fills the screen with random characters. It uses two nested loops for this.  
-  
+
+The Program fills the screen with random characters. It uses two nested loops for this.
+
 ```
   $D20A C@ ;
 
@@ -68,11 +68,11 @@ Diesmal behandeln wir Schleifen. Dieses kleine Programme habe ich Buch "Spielend
 70 NEXT SP
 80 NEXT ZE
 ```
-  
-Das Programm schreibt den Bildschirm mit zufälligen Buchstaben voll. Hierzu werden zwei verschachtelte Schleifen benutzt.  
-  
-In Forth sieht das Programm so aus:  
-  
+
+Das Programm schreibt den Bildschirm mit zufälligen Buchstaben voll. Hierzu werden zwei verschachtelte Schleifen benutzt.
+
+In Forth sieht das Programm so aus:
+
 ```
 : RND ( -- n ) \ Random Number 0-$FF
   $D20A C@ ;
@@ -100,10 +100,10 @@ In Forth sieht das Programm so aus:
     LOOP
   LOOP ;
 ```
-  
-LOOP-DEMO ist das eigendliche Programm. Befehle zum Positionieren des Cursors und Erzeugen einer Zufallszahl, welche in Atari-Basic eingebaut sind, befinden sich nicht im volksForth Kern und werden daher im Programm definiert (d.h. auch, bei Programmen, welche diese Befehle nicht benötigen, wird kein Speicherplatz verbraucht)  
-  
-Die Forth Wörter I und J liefern die Schleifen-Indizes. I liefert den Index der innersten Schleife, J den Index der äußeren Schleife. Das Forth-Programm kommt ganz ohne Variablen aus, da alle Werte über den Stapelspeicher (Stack) übergeben werden.  
-  
-/%  
-/%  
+
+LOOP-DEMO ist das eigendliche Programm. Befehle zum Positionieren des Cursors und Erzeugen einer Zufallszahl, welche in Atari-Basic eingebaut sind, befinden sich nicht im volksForth Kern und werden daher im Programm definiert (d.h. auch, bei Programmen, welche diese Befehle nicht benötigen, wird kein Speicherplatz verbraucht)
+
+Die Forth Wörter I und J liefern die Schleifen-Indizes. I liefert den Index der innersten Schleife, J den Index der äußeren Schleife. Das Forth-Programm kommt ganz ohne Variablen aus, da alle Werte über den Stapelspeicher (Stack) übergeben werden.
+
+/%
+/%

@@ -1,11 +1,11 @@
 ---
 title: Page Flip Routine for Basic
 ---
-# Page Flip Routine for Basic  
-  
-  
-## Page Flip  
-  
+# Page Flip Routine for Basic
+
+
+## Page Flip
+
 ```
 10 ;Page flipping routine. After using
 20 ;GR.24, GR.9-11, call this routine
@@ -78,9 +78,9 @@ title: Page Flip Routine for Basic
 0680     .END 
 
 ```
-  
-## Copy / Clear Page  
-  
+
+## Copy / Clear Page
+
 ```
 10 ;Page flipping routine. After using
 20 ;GR.24, GR.9-11, call this routine

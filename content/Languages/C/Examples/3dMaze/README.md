@@ -1,9 +1,9 @@
 # 3dMaze
 
-![](attachments/3dmaze.gif)  
-  
-3D Maze Screenshot (Stefan Haubenthal)  
-  
+![](attachments/3dmaze.gif)
+
+3D Maze Screenshot (Stefan Haubenthal)
+
 ```
 #include <stdio.h>
 #include <stdlib.h>         // random

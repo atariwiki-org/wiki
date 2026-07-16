@@ -1,5 +1,5 @@
-# Integer Math for 6502  
-  
+# Integer Math for 6502
+
 ```
 00010          .LI OFF
 00030 * RECHENROUTINEN FUER GANZZAHLEN

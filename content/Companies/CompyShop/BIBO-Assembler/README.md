@@ -1,43 +1,43 @@
 ---
 title: BiboAssembler
 ---
-# CompyShop BIBO Assembler  
-  
-  
-## Disks  
-  
-- [biboass.atr](attachments/biboass.atr)  
-- [biboasm1.atr](attachments/biboasm1.atr)  
-- [biboasm2.atr](attachments/biboasm2.atr)  
-- [biboasm3.atr](attachments/biboasm3.atr)  
-- [biboass_build003.atr](attachments/biboass_build003.atr)  
-  
-## Source  
-  
-- [bibo_src.zip](attachments/bibo_src.zip)  
-  
-## Handbook  
-- [BiboAssembler Handbuch (german)](attachments/biboass.pdf)  
-- [BiboAssembler Handbuch (german, HTML)](http://www.hintermueller.de/biboassembler)  
-  
-  
-The BiboAssembler is a fast and compact Assembler for the Atari 8-Bit. The Assembler is available as File- and as Module-Version (Cartridge). The File-Version includes also a small Machine-Language Monitor.  
-  
-This Assembler was written by Erwin Reuß and Peter Bee of CompyShop in 1986. Many CompyShop Products (Speedy 1050, BiboMon, CompyShop Grafic Demos etc) are written with this tool.  
-  
-The ATARI Bit Byter User Club is holding all copyright to this fine tool. There is a plan on re-sourcing the Assembler (task in progress by Martin Metz) and publishing the Assembler Source under the GNU Public License as Open Source Software.  
-  
-We have also the plan to publish an english translated version of the Bibo Assembler Handbook. But this will take time. For now we have a short description of the available commands.  
-  
-## Short Description  
-  
-### Loding and starting  
-  
-BiboAssembler can be load as a binary file from any DOS System. Make sure that BASIC is off and all Cartridges are removed. BiboAssembler works well with Ramdisk Drivers and Harddisk.  
-  
-### The Editor  
-  
-The BiboAssembler Editor is a line Editor with Line-Number, similar to Atari Basic. It can be used like the Atari Basic Editor. Inverse Characters cannot be used except when eclosed in double-quotes. The ASCII Character with Value Zero (the heart in the ATASCI Font) cannot be used. If you need to specify this Char you have to write  
+# CompyShop BIBO Assembler
+
+
+## Disks
+
+- [biboass.atr](attachments/biboass.atr)
+- [biboasm1.atr](attachments/biboasm1.atr)
+- [biboasm2.atr](attachments/biboasm2.atr)
+- [biboasm3.atr](attachments/biboasm3.atr)
+- [biboass_build003.atr](attachments/biboass_build003.atr)
+
+## Source
+
+- [bibo_src.zip](attachments/bibo_src.zip)
+
+## Handbook
+- [BiboAssembler Handbuch (german)](attachments/biboass.pdf)
+- [BiboAssembler Handbuch (german, HTML)](http://www.hintermueller.de/biboassembler)
+
+
+The BiboAssembler is a fast and compact Assembler for the Atari 8-Bit. The Assembler is available as File- and as Module-Version (Cartridge). The File-Version includes also a small Machine-Language Monitor.
+
+This Assembler was written by Erwin Reuß and Peter Bee of CompyShop in 1986. Many CompyShop Products (Speedy 1050, BiboMon, CompyShop Grafic Demos etc) are written with this tool.
+
+The ATARI Bit Byter User Club is holding all copyright to this fine tool. There is a plan on re-sourcing the Assembler (task in progress by Martin Metz) and publishing the Assembler Source under the GNU Public License as Open Source Software.
+
+We have also the plan to publish an english translated version of the Bibo Assembler Handbook. But this will take time. For now we have a short description of the available commands.
+
+## Short Description
+
+### Loding and starting
+
+BiboAssembler can be load as a binary file from any DOS System. Make sure that BASIC is off and all Cartridges are removed. BiboAssembler works well with Ramdisk Drivers and Harddisk.
+
+### The Editor
+
+The BiboAssembler Editor is a line Editor with Line-Number, similar to Atari Basic. It can be used like the Atari Basic Editor. Inverse Characters cannot be used except when eclosed in double-quotes. The ASCII Character with Value Zero (the heart in the ATASCI Font) cannot be used. If you need to specify this Char you have to write
 ```
 ! Auto Numbering
 
@@ -94,19 +94,19 @@ will get
 {{{
 1000 ---------------------------
 ```
-  
-### List  
-  
-The Command List will list the source code  
-  
-Syntax: {{{LIS first line, last line}}}  
-  
-Example: {{{LIS 1000,2000}}}  
-  
-Abbrev: L.  
-  
-Listing can be stopped with CNTRL+1 and can be stopped with the BREAK-Key. Also valid:  
-  
+
+### List
+
+The Command List will list the source code
+
+Syntax: {{{LIS first line, last line}}}
+
+Example: {{{LIS 1000,2000}}}
+
+Abbrev: L.
+
+Listing can be stopped with CNTRL+1 and can be stopped with the BREAK-Key. Also valid:
+
 ```
 {{{LIS START}}} will list from Label "START" down.
 

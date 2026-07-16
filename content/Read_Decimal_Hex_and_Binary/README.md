@@ -1,10 +1,10 @@
 ---
 title: Read Decimal, Hex and Binary
 ---
-# Read Decimal, Hex and Binary values  
-  
-from BiboAssembler Tooldisk 1  
-  
+# Read Decimal, Hex and Binary values
+
+from BiboAssembler Tooldisk 1
+
 ```
 00010          .LI OFF
 00020 *

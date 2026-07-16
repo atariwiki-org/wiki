@@ -1,8 +1,8 @@
 ---
 title: List Directory Example
 ---
-# List Directory example  
-  
+# List Directory example
+
 ```
 00010          .LI OFF
 00020          .OR $4000

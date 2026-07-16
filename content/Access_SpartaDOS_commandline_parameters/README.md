@@ -1,10 +1,10 @@
 ---
 title: Access SpartaDOS commandline parameters
 ---
-  
-  
-# Access Sparta DOS Command Line Parameters  
-  
+
+
+# Access Sparta DOS Command Line Parameters
+
 ```
 ;sdos.act
 ;bill aycock, 9/89
@@ -213,4 +213,4 @@ return
 
 ;---- end of sdos.act -----------------
 ```
-  
+

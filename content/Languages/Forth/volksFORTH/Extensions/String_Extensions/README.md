@@ -1,10 +1,10 @@
 ---
 title: String Extensions
 ---
-# String Extensions for VolksForth  
-  
-## S"  
-  
+# String Extensions for VolksForth
+
+## S"
+
 ```
 \ String Ext.
 

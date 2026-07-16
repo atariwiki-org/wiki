@@ -1,89 +1,89 @@
 ---
 title: ProjXForthExtensions
 ---
-  
-  
-# X-Forth Definitions  
-  
-  
-### ?  
-  
+
+
+# X-Forth Definitions
+
+
+### ?
+
 ```
 : ? ( addr -- )
   @ . ;
 ```
-  
-### Alias  
-  
+
+### Alias
+
 ```
 : ALIAS ( xt -- )
   <BUILDS CFA , DOES> @ EXECUTE ;
 ```
-  
-### Align  
-  
+
+### Align
+
 ```
 : ALIGN ( -- )
   HERE 1 AND ALLOT ;
 ```
-  
-### Aligned  
-  
+
+### Aligned
+
 ```
 : ALIGNED ( addr -- a-addr )
   DUP 1 AND + ;
 ```
-  
-  
-### Cell+  
-  
+
+
+### Cell+
+
 ```
 : CELL+ ( a-addr1 -- a-addr2 )
   2 + ;
 ```
-  
-### Cells  
-  
+
+### Cells
+
 ```
 : CELLS ( n1 -- n2 )
   2 * ;
 ```
-  
-  
-### CVariable  
-  
+
+
+### CVariable
+
 ```
 :  CVARIABLE ( b -- )
   <BUILDS C, DOES> C@ ;
 ```
-  
-### Defer  
-  
+
+### Defer
+
 ```
 : DEFER ( -- )
   <BUILDS 0 , DOES> @ DUP IF EXECUTE ELSE DROP THEN ;
 ```
-  
-### IS  
-  
+
+### IS
+
 ```
 : IS ( xt -- )
   ~[COMPILE] ' ! ;
 ```
-  
-### To  
-  
+
+### To
+
 ```
 : TO ( x -- )
   ~[COMPILE] ' CELL+ ! ;
 ```
-  
-### Value  
-  
+
+### Value
+
 ```
 : VALUE ( x -- )
   <BUILDS , DOES> @ ;
 ```
-  
-  
-  
+
+
+

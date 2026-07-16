@@ -1,10 +1,10 @@
 ---
 title: Backtrack in ACTION
 ---
-General Information   
-Author: 	Sam Teague   
-Language: 	ACTION!   
-  
+General Information
+Author: 	Sam Teague
+Language: 	ACTION!
+
 ```
 MODULE; BACKTRAK.ACT
                 ; by Sam Teague

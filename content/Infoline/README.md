@@ -1,35 +1,35 @@
 ---
 title: Infoline
 ---
-# Infoline for BASIC and ACTION!  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-  
-Infoline for ACTION!  
-  
-![](attachments/infoline2.png)  
-  
-Load INFOLINE.COM as Autorun.sys before entering the ACTION! IDE  
-  
-This is a little utility showing some information useful during ACTION! development.  
-  
-- ATARI RTClock Timer Ticks  
-- Shift Key Status  
-- X/Y Screen Cursor Coordinates  
-- ATASCII Key-Code of last pressed key  
-- Interal Key-Code of last pressed key  
-- ACTION! Base Adress (ORG)  
-- ACTION! Program Code Size  
-- Last Sector IO Number  
-  
-Disk Image (ATR) with source and binary attached: [infoline.atr](attachments/infoline.atr) (ACTION!), [infoline_basic.atr](attachments/infoline_basic.atr) (BASIC)  
-  
-1.1.1 Source Code (BIBO Assembler)  
-  
+# Infoline for BASIC and ACTION!
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+
+Infoline for ACTION!
+
+![](attachments/infoline2.png)
+
+Load INFOLINE.COM as Autorun.sys before entering the ACTION! IDE
+
+This is a little utility showing some information useful during ACTION! development.
+
+- ATARI RTClock Timer Ticks
+- Shift Key Status
+- X/Y Screen Cursor Coordinates
+- ATASCII Key-Code of last pressed key
+- Interal Key-Code of last pressed key
+- ACTION! Base Adress (ORG)
+- ACTION! Program Code Size
+- Last Sector IO Number
+
+Disk Image (ATR) with source and binary attached: [infoline.atr](attachments/infoline.atr) (ACTION!), [infoline_basic.atr](attachments/infoline_basic.atr) (BASIC)
+
+1.1.1 Source Code (BIBO Assembler)
+
 ```
 00010			 .LI OFF
 00020 ***************************

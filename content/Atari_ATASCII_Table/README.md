@@ -1,8 +1,8 @@
-# Atari ATASCII Table  
+# Atari ATASCII Table
 
-by Florian Dingler  
-  
-PDF: [ascii_atascii_table.pdf](attachments/ascii_atascii_table.pdf)  
-  
-![](attachments/ascii_atascii_table.png)  
-  
+by Florian Dingler
+
+PDF: [ascii_atascii_table.pdf](attachments/ascii_atascii_table.pdf) 
+
+![](attachments/ascii_atascii_table.png)
+

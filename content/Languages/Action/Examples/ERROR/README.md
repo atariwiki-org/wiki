@@ -1,48 +1,48 @@
 ---
 title: ERROR
 ---
-### ERROR!  
-  
-Author  : Erhard Pütz   
-Language: ACTION!   
-  
-Im unten gezeigten Quellcode steht folgende Zeile:  
-  
-INCLUDE "D:ERROR.LIB"  
-  
-ERROR.LIB ist aus der orginal Runtime gekürzt. Da ist immer noch deutlich mehr drin, als das Programm unten braucht, aber es war das, was auf die Schnelle machbar war.  
-  
-Wenn also aus dem unten gezeigten Quellcode ein fertiges COM-File werden soll:  
-  
-- bitte eine Runtime oder Mini-LIBs (davon gibt es noch nicht alle) einbinden   
-- das kompilierte Programm abspeichern   
-- das Kompilat in z.B. BeWe-Softs Superpacker laden   
-- aus der INIT-Adresse eine RUN-Adresse machen   
-- CLR_80FF voranstellen mit INIT-Adresse voranstellen   
-- das Ganze als ERROR07.COM (oder ERROR.COM) abspeichern   
-  
-CLR_80FF ist eine kleine Maschinenroutine, die die Speicheradressen $80-$FF nullt. Ich habe festgestellt, daß die nach dem Laden eines DOS sehr oft nicht Null sind, weil sie als beliebte freie ZP-Adressen von so allerlei Zeugs benutzt werden.  
-  
-Allerdings werden sie auch von ACTION! und ACTION!-Programmen benutzt und wenn man nicht peinlich darauf achtet, daß man in seinem ACTION!-Programm alle Variablen sauber initialisiert, dann wird aus z.B.  
-  
-WHILE a=0  
-  
-schon mal eine Schleife, die überhaupt nicht ausgeführt wird.  
-  
-Also hier noch mal ein Hinweis zur sauberen Variableninitialisierung:  
-  
-__Beispiel 1__  
-(so ist es schlecht, weil die Variable nur beim Kompilieren gesetzt wird):  
-  
+### ERROR!
+
+Author  : Erhard Pütz
+Language: ACTION!
+
+Im unten gezeigten Quellcode steht folgende Zeile:
+
+INCLUDE "D:ERROR.LIB"
+
+ERROR.LIB ist aus der orginal Runtime gekürzt. Da ist immer noch deutlich mehr drin, als das Programm unten braucht, aber es war das, was auf die Schnelle machbar war.
+
+Wenn also aus dem unten gezeigten Quellcode ein fertiges COM-File werden soll:
+
+- bitte eine Runtime oder Mini-LIBs (davon gibt es noch nicht alle) einbinden
+- das kompilierte Programm abspeichern
+- das Kompilat in z.B. BeWe-Softs Superpacker laden
+- aus der INIT-Adresse eine RUN-Adresse machen
+- CLR_80FF voranstellen mit INIT-Adresse voranstellen
+- das Ganze als ERROR07.COM (oder ERROR.COM) abspeichern
+
+CLR_80FF ist eine kleine Maschinenroutine, die die Speicheradressen $80-$FF nullt. Ich habe festgestellt, daß die nach dem Laden eines DOS sehr oft nicht Null sind, weil sie als beliebte freie ZP-Adressen von so allerlei Zeugs benutzt werden.
+
+Allerdings werden sie auch von ACTION! und ACTION!-Programmen benutzt und wenn man nicht peinlich darauf achtet, daß man in seinem ACTION!-Programm alle Variablen sauber initialisiert, dann wird aus z.B.
+
+WHILE a=0
+
+schon mal eine Schleife, die überhaupt nicht ausgeführt wird.
+
+Also hier noch mal ein Hinweis zur sauberen Variableninitialisierung:
+
+__Beispiel 1__
+(so ist es schlecht, weil die Variable nur beim Kompilieren gesetzt wird):
+
 ```
 MODULE
 BYTE I=[0]
 ...
 ```
-  
-__Beispiel 2__  
-(so ist es viel besser, weil die Speicherstelle bei jedem Programmstart gesetzt wird):  
-  
+
+__Beispiel 2__
+(so ist es viel besser, weil die Speicherstelle bei jedem Programmstart gesetzt wird):
+
 ```
 MODULE
 BYTE I
@@ -52,10 +52,10 @@ PROC MAIN()
 ...
 RETURN
 ```
-  
-__ERROR07.ACT__   
-Und hier nun das, worum es eigentlich geht:  
-  
+
+__ERROR07.ACT__
+Und hier nun das, worum es eigentlich geht:
+
 ```
 ;**************************************
 ;*                                    *

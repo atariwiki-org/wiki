@@ -1,41 +1,41 @@
 ---
 title: BASIC USR Machine Language Call Simulation for ACTION
 ---
-The "USR" PROC that follows is a "best effort" to simulate a BASIC USR call from an ACTION program.  
-  
-Presuming that the user has a routine that has been used successfully as a USR call from BASIC, and presuming  
-that the routine has been placed into an ACTION array or PROC, then this "USR" may be called, so long as the  
-address of the array or PROC, the count of parameters (0 to 6), and all the parameters are passed properly.  
-  
-Finally, a warning:  
-  
-If you use characters in a string, as in a BASIC line such as this:  
+The "USR" PROC that follows is a "best effort" to simulate a BASIC USR call from an ACTION program.
+
+Presuming that the user has a routine that has been used successfully as a USR call from BASIC, and presuming
+that the routine has been placed into an ACTION array or PROC, then this "USR" may be called, so long as the
+address of the array or PROC, the count of parameters (0 to 6), and all the parameters are passed properly.
+
+Finally, a warning:
+
+If you use characters in a string, as in a BASIC line such as this:
 ```
 	JUNK = USR( ADR("hhhpLV?"),32)
 ```
-  
-and wish to use that same string in ACTION, watch out!  
-  
-First, you should use an initialized string, thus:  
-  
+
+and wish to use that same string in ACTION, watch out!
+
+First, you should use an initialized string, thus:
+
 ```
   BYTE ARRAY Call(0)="hhhpLV?"
 ```
-  
-and then, when you call the above  USR or FUSR routines, you MUST add 1 to the name of the string, because ACTION stores the length of a string as the first byte of that string! Again, something like this might work:  
-  
+
+and then, when you call the above  USR or FUSR routines, you MUST add 1 to the name of the string, because ACTION stores the length of a string as the first byte of that string! Again, something like this might work:
+
 ```
 	 USR( Call+1 , 1, 32 )
 		 ^^
 ```
-  
-No guarantees that ALL routines ; callable from BASIC will work with my USR and FUSR, but I'll bet most will.  If possible, though, modify the assembly language for a direct ACTION interface.  Or, in many cases, if you know what the code is doing, you can rewrite it completely in ACTION with little loss of speed but  
-a BIG gain in readability.  
-  
-Good luck.  
-  
+
+No guarantees that ALL routines ; callable from BASIC will work with my USR and FUSR, but I'll bet most will.  If possible, though, modify the assembly language for a direct ACTION interface.  Or, in many cases, if you know what the code is doing, you can rewrite it completely in ACTION with little loss of speed but
+a BIG gain in readability.
+
+Good luck.
+
 ---
-  
+
 ```
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

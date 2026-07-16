@@ -1,12 +1,12 @@
 ---
 title: RAF Commander
 ---
-# RAF Commander  
-  
-a Norton Commander Clone for the Atari 8bit  
-  
-RAFCMAIN.ASM  
-  
+# RAF Commander
+
+a Norton Commander Clone for the Atari 8bit
+
+RAFCMAIN.ASM
+
 ```
 ; $Id: rafcmain.asm , cstrotm $
 ;
@@ -174,7 +174,7 @@ ACTAB
 .INCLUDE STRTAB.ASM
 
 ```
-  
+
 ```
 ; $Id: action.asm , cstrotm $
 ;
@@ -839,7 +839,7 @@ DOVEC
     STA N+1
     JMP (N)         ; and jump through vector
 ```
-  
+
 ```
 ; $Id: screenio.asm , cstrotm $
 ;
@@ -1506,7 +1506,7 @@ L_1
     STA 0,X
     JMP _REFDIR
 ```
-  
+
 ```
 ; $Id: fileio.asm , cstrotm $
 ;
@@ -1844,7 +1844,7 @@ GDF1
 CHECKERROR
     RTS
 ```
-  
+
 ```
 ; $Id: sort.asm , cstrotm $
 ;
@@ -2187,7 +2187,7 @@ CALCLINE1       ; * 16
 CALCLINE3
     RTS
 ```
-  
+
 ```
 ; $Id: debug.asm , cstrotm $
 ;
@@ -2297,7 +2297,7 @@ BETAMESSAGE
 
 .ENDIF
 ```
-  
+
 ```
 ; $Id: vartab.asm , cstrotm $
 ;
@@ -2372,7 +2372,7 @@ VECTAB
     MOVVEC      .WORD MOVEFILE      ; jump vector move file
     RUNVEC      .WORD RUNFILE       ; jimp vector run file
 ```
-  
+
 ```
 ; $Id: strtab.asm , cstrotm $
 ;
@@ -2461,7 +2461,7 @@ STRMEM
     DSTR .CBYTE "D1:             "    ; String for Disk Operations
     CSTR .CBYTE "D1:             "    ; String for Copy/Move Operations
 ```
-  
+
 ```
 ; $Id: equ.asm , cstrotm $
 ;
@@ -2593,7 +2593,7 @@ CIOV   = $E456
 .ENDIF
 
 ```
-  
+
 ```
 ; $Id: macros.asm , cstrotm $
 ;

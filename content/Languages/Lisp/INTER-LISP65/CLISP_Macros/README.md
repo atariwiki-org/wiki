@@ -1,14 +1,14 @@
 ---
 title: CLISP Macros
 ---
-# CLISP Macros  
-  
-General Information  
-  
-Author: 	Datasoft   
-Language: 	LISP   
-Compiler/Interpreter: 	InterLisp/65   
-  
+# CLISP Macros
+
+General Information
+
+Author: 	Datasoft
+Language: 	LISP
+Compiler/Interpreter: 	InterLisp/65
+
 ```
 (CLISP TRANSLATE WEIGHT OPCODE)
 (DEFINEQ CLISP '(LAMBDA (FUN) (DEFINE FUN (TRANSLATE (GETD FUN))))

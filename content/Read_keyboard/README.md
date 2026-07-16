@@ -1,11 +1,11 @@
 ---
 title: Read keyboard
 ---
-# reading the keyboard from VolksForth  
-  
-(Basic taken from "Thomas E. Rowley - Atari Basic spielend lernen")  
-  
-## Basic Version  
+# reading the keyboard from VolksForth
+
+(Basic taken from "Thomas E. Rowley - Atari Basic spielend lernen")
+
+## Basic Version
 ```
 10 REM read a keypress
 20 PRINT "PRESS ANY KEY"
@@ -16,8 +16,8 @@ title: Read keyboard
 50 PRINT "The Key-Code of "; CHR$(A); " is "; KEY
 60 GOTO 30
 ```
-  
-## volksForth version using direct memory access the same way as the BASIC example does  
+
+## volksForth version using direct memory access the same way as the BASIC example does
 ```
 : GETKEY ( read a keypress )
   ." Press any key" CR
@@ -31,9 +31,9 @@ title: Read keyboard
         THEN
   REPEAT ;
 ```
-  
-alternative, more elegant version using the build in words "KEY?" and "KEY"  
-  
+
+alternative, more elegant version using the build in words "KEY?" and "KEY"
+
 ```
 : GETKEY ( read a keypress )
   ." Press any key" CR

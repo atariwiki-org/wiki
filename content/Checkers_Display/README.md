@@ -1,17 +1,17 @@
 ---
 title: Checkers Display
 ---
-# ATARI 800 CHECKERS DISPLAY BY C. SHAW 3/31/80 ; Copyright 1980 Atari, Inc. and Carol Shaw  
-  
-## ATR image  
-- [Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr) ; to be used with the [Atari Assembler Editor](../Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien  
-- [Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr) ; to be used with the [Atari Assembler Editor](../Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien  
-  
-## TXT Files  
-- [Checkers_Source_Code.txt](attachments/Checkers_Source_Code.txt) ; Checkers Display source code in a text file  
-- [Checkers_assembliert-0_Fehler.txt](attachments/Checkers_assembliert-0_Fehler.txt) ; Checkers Display assembled with 0 errors in a text file  
-  
-## Source Code  
+# ATARI 800 CHECKERS DISPLAY BY C. SHAW 3/31/80 ; Copyright 1980 Atari, Inc. and Carol Shaw
+
+## ATR image
+- [Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr) ; to be used with the [Atari Assembler Editor](../Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien
+- [Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr) ; to be used with the [Atari Assembler Editor](../Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien
+
+## TXT Files
+- [Checkers_Source_Code.txt](attachments/Checkers_Source_Code.txt) ; Checkers Display source code in a text file
+- [Checkers_assembliert-0_Fehler.txt](attachments/Checkers_assembliert-0_Fehler.txt) ; Checkers Display assembled with 0 errors in a text file
+
+## Source Code
 ```
 10  .TITLE "ATARI 800 CHECKERS DISPLAY BY C. SHAW 3/31/80"
 20 ;
@@ -362,8 +362,8 @@ title: Checkers Display
 3480        .BYTE AI+OF2,TI+OF2,AI+OF2,RI+OF2,II+OF2,N1I+OF3,N9I+OF3,N8I+OF3,N0I+OF3
 
 ```
-  
-## Assembled Source Code with 0 errors  
+
+## Assembled Source Code with 0 errors
 ```
 0000        10          .TITLE "ATARI 800 CHECKERS DISPLAY BY C. SHAW 3/31/80"
             20 ;

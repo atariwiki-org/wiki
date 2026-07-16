@@ -1,15 +1,15 @@
 ---
 title: Mixed Mode Graphics
 ---
-# Mixed Mode Graphics  
-  
-General Information  
-  
-Author: Karl E. Wiegers   
-Published: ANALOG   
-  
-## Mixed Mode Graphics Display  
-  
+# Mixed Mode Graphics
+
+General Information
+
+Author: Karl E. Wiegers
+Published: ANALOG
+
+## Mixed Mode Graphics Display
+
 ```
 0100 ;Mixed-Mode graphics displays
 0110 ;in Atari assembly language
@@ -350,4 +350,4 @@ Published: ANALOG
 3460 EXHAUSTY .BYTE 11,11,11,11
 
 ```
-  
+

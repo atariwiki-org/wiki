@@ -1,65 +1,65 @@
 ---
 title: Kermit in ACTION
 ---
-### Kermit in ACTION!  
-  
-General Information   
-Author: 	John Howard Palevich   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-  
-## Kermit in ACTION!  
-  
-a Kermit implementation in ACTION!  
-  
-How to install Kermit on your ATARI  
-home computer.  
-  
-RAM:  48K, or more RAM   
-Peripherals:  At least one disk drive   
-ATARI 850 & a modem, or   
-ATARI 1030, or other communications device   
-  
+### Kermit in ACTION!
+
+General Information
+Author: 	John Howard Palevich
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+
+## Kermit in ACTION!
+
+a Kermit implementation in ACTION!
+
+How to install Kermit on your ATARI
+home computer.
+
+RAM:  48K, or more RAM
+Peripherals:  At least one disk drive
+ATARI 850 & a modem, or
+ATARI 1030, or other communications device
+
 ---
-  
-  
-1. Format a diskette and write a copy of DOS onto it.  
-1. Write the AUTORUN.SYS file for the type of modem that you are going to use.  If you are using an 850, write the AUTORUN.SYS file that came with the DOS II Master Diskette.  
-1. Write all the K*.* files onto the diskette.  
-1. Insert an ACTION! cartridge into your ATARI computer, turn on your 850 (or 1030, or whatever) and power cycle your ATARI computer.  After the DOS boots you should see the ACTION! editor screen.  
-1. Read in and edit the file "KERMIT.ACT".  Change the line near the end of the file from "KCOM850.ACT" to whichever device you wish to use. Write out the "KERMIT.ACT" file when you are done.  If you are trying to support a new modem type, create a new KCOM file and use its name here....  
-1. Clear the editor buffer and go to the ACTION! monitor.  Type R "KERMIT.ACT" to compile and run the Kermit program.  
-  
-That's it.  Here are some commonly asked questions, with some off-the-cuff answers:  
-  
-Q:  Why do I need an ACTION! cartridge to run Kermit?  
-  
-A:  The people who developed ACTION! have provided a standalone runtime (Edited by Carsten Strotmann).  
-  
-Q:  Why do I have to re-compile the program every time I want to use it?  
-  
-A:  DOS II's menu program destroys the R: and T: device drivers, so you can't use the "L" menu option to run a pre-compiled ACTION program that depends on the R: or T: drivers.  
-  
-If you are clever, you can append the ACTION! object code to the AUTORUN.SYS file to generate an auto-booting  
-version of KERMIT.  
-  
-If you have OS/A+, you can, indeed, save the compiled version of Kermit and execute it from the command line.  Just make sure that you have loaded a device driver first!  
-  
-Jack Palevich  
-  
-  
-  
-  
-;KERMIT .PNS -- a sample phones file  
-  
+
+
+1. Format a diskette and write a copy of DOS onto it.
+1. Write the AUTORUN.SYS file for the type of modem that you are going to use.  If you are using an 850, write the AUTORUN.SYS file that came with the DOS II Master Diskette.
+1. Write all the K*.* files onto the diskette.
+1. Insert an ACTION! cartridge into your ATARI computer, turn on your 850 (or 1030, or whatever) and power cycle your ATARI computer.  After the DOS boots you should see the ACTION! editor screen.
+1. Read in and edit the file "KERMIT.ACT".  Change the line near the end of the file from "KCOM850.ACT" to whichever device you wish to use. Write out the "KERMIT.ACT" file when you are done.  If you are trying to support a new modem type, create a new KCOM file and use its name here....
+1. Clear the editor buffer and go to the ACTION! monitor.  Type R "KERMIT.ACT" to compile and run the Kermit program.
+
+That's it.  Here are some commonly asked questions, with some off-the-cuff answers:
+
+Q:  Why do I need an ACTION! cartridge to run Kermit?
+
+A:  The people who developed ACTION! have provided a standalone runtime (Edited by Carsten Strotmann).
+
+Q:  Why do I have to re-compile the program every time I want to use it?
+
+A:  DOS II's menu program destroys the R: and T: device drivers, so you can't use the "L" menu option to run a pre-compiled ACTION program that depends on the R: or T: drivers.
+
+If you are clever, you can append the ACTION! object code to the AUTORUN.SYS file to generate an auto-booting
+version of KERMIT.
+
+If you have OS/A+, you can, indeed, save the compiled version of Kermit and execute it from the command line.  Just make sure that you have loaded a device driver first!
+
+Jack Palevich
+
+
+
+
+;KERMIT .PNS -- a sample phones file
+
 ```
 SU-Score(300)#4153221570
 SU-Score(1200)#4154970061
 ```
-  
-  
-  
-  
+
+
+
+
 ```
 ;D:KCOM1030 .ACT
 
@@ -233,7 +233,7 @@ RETURN
 
 ; --- END OF D:KCOM1030.ACT ---
 ```
-  
+
 ```
 ;D: KCOM850. ACT
 
@@ -511,7 +511,7 @@ RETURN
 
 ; --- END OF D:KCOM850.ACT ---
 ```
-  
+
 ```
 ;D: KERMIT.ACT
 
@@ -609,7 +609,7 @@ INCLUDE "D:KMENU.ACT"
 
 ; --- END OF D:KERMIT.ACT ---
 ```
-  
+
 ```
 ;D:KFUNC .ACT
 
@@ -973,7 +973,7 @@ RETURN
 
 ; --- END OF D:KFUNC.ACT ---
 ```
-  
+
 ```
 ;D:KIO .ACT
 
@@ -1707,7 +1707,7 @@ RETURN
 
 ;--- END OF D:KMENU.ACT ---
 ```
-  
+
 ```
 ;D:KPRO .ACT
 
@@ -2275,7 +2275,7 @@ RETURN
 
 ; --- END OF D:KPRO.ACT ---
 ```
-  
+
 ```
 ;D:KTTY. ACT
 ; Terminal emulation for the masses
@@ -2572,4 +2572,4 @@ RETURN
 
 ;End of D:KTTY.ACT
 ```
-  
+

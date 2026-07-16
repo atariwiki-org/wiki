@@ -1,16 +1,16 @@
 ---
 title: Sector Copy
 ---
-# CompyShop Sector Copy Source Code  
-  
-  
-![](attachments/atari000.png)  
-  
-## Disk Image  
-- [biboasm2.atr](attachments/biboasm2.atr)  
-  
-## SECTOR.ASM  
-  
+# CompyShop Sector Copy Source Code
+
+
+![](attachments/atari000.png)
+
+## Disk Image
+- [biboasm2.atr](attachments/biboasm2.atr)
+
+## SECTOR.ASM
+
 ```
 00010          .LI OFF
 00020          .OR $2F00
@@ -122,9 +122,9 @@ title: Sector Copy
 01080          .DA S
 01090 ------------------------------
 ```
-  
-## COPY1.ASM  
-  
+
+## COPY1.ASM
+
 ```
 00010 ------------------------------
 00020 ***********
@@ -785,9 +785,9 @@ title: Sector Copy
 06570 ------------------------------
 
 ```
-  
-## COPY2.ASM  
-  
+
+## COPY2.ASM
+
 ```
 00010 ------------------------------
 00020 ** COPY2 **
@@ -1210,9 +1210,9 @@ title: Sector Copy
 04190 ------------------------------
 
 ```
-  
-## DSKSYS.ASM  
-  
+
+## DSKSYS.ASM
+
 ```
 00010 ------------------------------
 00020 ************

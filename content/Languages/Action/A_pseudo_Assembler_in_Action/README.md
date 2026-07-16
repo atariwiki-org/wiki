@@ -1,13 +1,13 @@
-### A Pseudo Assembler in Action!  
-  
-General Information   
-Author: 	Allan D. Doum   
-Language: 	Action!   
-Compiler/Interpreter: 	Action!   
-Published: 	The Software Cellar   
-  
-PDF: [assem_doc.PDF](attachments/assem_doc.PDF)  
-  
+### A Pseudo Assembler in Action!
+
+General Information
+Author: 	Allan D. Doum
+Language: 	Action!
+Compiler/Interpreter: 	Action!
+Published: 	The Software Cellar
+
+PDF: [assem_doc.PDF](attachments/assem_doc.PDF) 
+
 ```
 ; ASSEM.ACT - ACTION! pseudo-assembler
 ;    NOT copyrighted at any time

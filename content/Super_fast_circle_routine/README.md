@@ -1,35 +1,35 @@
 ---
 title: Super fast circle routine
 ---
-![](attachments/mojmikro_logo.png)  
-  
-  
-Original from Posting on [AtariAge](http://www.atariage.com/forums/topic/161073-moj-mikro-magazine-listings-super-fast-circle-routine/)  
-  
-I present you super fast routine for drawing circles in graphics mode 8 and 8 + 16.  
-  
-[Moj Mikro](http://www.mojmikro.si/) magazine article listings are available as zipped file in download section. It contains ATR disk image file with Atari DOS system for using with disk based, real Atari machine or any Atari 8-bit emulator. To load Atari BASIC programs properly, Atari must be powered with Atari BASIC enabled, or you can try them with any compatible BASIC.  
-  
-  
-  
-You can try, use and modify the programs and routines for whatever purpose you want.  
-  
-# Super Fast Circle Routine  
-  
-- Magazine: Moj Mikro, 1989/3  
-- Author : Zlatko Bleha  
-- Page : 27 - 31  
-- Article link  
-- Atari BASIC listing on disk (tokenized): [M8903284.BAS](attachments/M8903284.BAS)  
-- Atari BASIC listing (listed): M8903284.LST  
-- Assembly language listing: CIRCLE.LST  
-  
-This routine uses very fast algorithm for drawing circles. It works in graphics mode 8. To see it in action, try the following demonstration program, which includes circle routine in DATA tables for using it from Atari BASIC. Also included is assembly language source code for anybody to examine inner workings of the algorithm. It is written in ATMAS 2.  
-  
-![](attachments/circles_7.png) ![](attachments/circles_10.png)  
-  
-### Basic Listing: M8903284.LST  
-  
+![](attachments/mojmikro_logo.png)
+
+
+Original from Posting on [AtariAge](http://www.atariage.com/forums/topic/161073-moj-mikro-magazine-listings-super-fast-circle-routine/) 
+
+I present you super fast routine for drawing circles in graphics mode 8 and 8 + 16.
+
+[Moj Mikro](http://www.mojmikro.si/) magazine article listings are available as zipped file in download section. It contains ATR disk image file with Atari DOS system for using with disk based, real Atari machine or any Atari 8-bit emulator. To load Atari BASIC programs properly, Atari must be powered with Atari BASIC enabled, or you can try them with any compatible BASIC.
+
+
+
+You can try, use and modify the programs and routines for whatever purpose you want.
+
+# Super Fast Circle Routine
+
+- Magazine: Moj Mikro, 1989/3
+- Author : Zlatko Bleha
+- Page : 27 - 31
+- Article link
+- Atari BASIC listing on disk (tokenized): [M8903284.BAS](attachments/M8903284.BAS)
+- Atari BASIC listing (listed): M8903284.LST
+- Assembly language listing: CIRCLE.LST
+
+This routine uses very fast algorithm for drawing circles. It works in graphics mode 8. To see it in action, try the following demonstration program, which includes circle routine in DATA tables for using it from Atari BASIC. Also included is assembly language source code for anybody to examine inner workings of the algorithm. It is written in ATMAS 2.
+
+![](attachments/circles_7.png) ![](attachments/circles_10.png)
+
+### Basic Listing: M8903284.LST
+
 ```
 1 REM *******************************
 2 REM PROGRAM  : SUPER FAST CIRCLE ROUTINE
@@ -99,10 +99,10 @@ This routine uses very fast algorithm for drawing circles. It works in graphics 
 720 IF PEEK(555)=0 THEN 720
 730 GOTO 510
 ```
-  
-![](attachments/circles_6.png) ![](attachments/circles_12.png)  
-  
-### ATAMAS 2 Assembler Listing CIRCLE.LST  
+
+![](attachments/circles_6.png) ![](attachments/circles_12.png)
+
+### ATAMAS 2 Assembler Listing CIRCLE.LST
 ```
 *
 * FAST CIRCLE DRAWING ROUTINE
@@ -404,49 +404,49 @@ UNPLOT  EOR #$FF
         RTS
 * -----------------------------
 ```
-  
-![](attachments/circles_5.png)  
-  
-## Description  
-  
-Algorithm is based on one from Croatian computer magazine Racunari (number 31). There is a little faster way of doing this, but data must be provided in tables for sine and cosine. But this alternative takes more RAM.  
-  
-The routine consists of two parts: main program for calculating X and Y coordinates and second part with PLOT routine for drawing (or erasing) pixels on X and Y coordinates. Calculation of coordinates is done for one eighth of the circle. Other seven parts are simply mirrored from original mentioned pattern. We take advantage of this fact, because circle is simetricly shaped. The routine uses Page Zero locations for variables for even faster execution. There are 17 of them.  
-  
-# Usage of the routine  
+
+![](attachments/circles_5.png)
+
+## Description
+
+Algorithm is based on one from Croatian computer magazine Racunari (number 31). There is a little faster way of doing this, but data must be provided in tables for sine and cosine. But this alternative takes more RAM.
+
+The routine consists of two parts: main program for calculating X and Y coordinates and second part with PLOT routine for drawing (or erasing) pixels on X and Y coordinates. Calculation of coordinates is done for one eighth of the circle. Other seven parts are simply mirrored from original mentioned pattern. We take advantage of this fact, because circle is simetricly shaped. The routine uses Page Zero locations for variables for even faster execution. There are 17 of them.
+
+# Usage of the routine
 ```
 A=USR(30000,POK,X,Y,R)
 ```
-  
-| 30000 | Starting address of the calling routine  
-| POK  | 1 (draw the circle), 0 (erase the circle)  
-| X | X coordinate of the circle  
-| Y | Y coordinate of the circle  
-| R | Radius of the circle  
-  
-The routine is not relocatable. If you want to relocate it anyway, use assembler of your choice and assemble it to another location or amend the DATA tables in Atari BASIC program demonstration.  
-  
-Maximum value for radius is 127, which is more than enough, because the circle with such radius will not be seen on the screen in whole anyway. If you choose wrong parameter values and consequently break the borders of the screen, don't worry, circle will be drawn anyway, but with its parts in different places. Experiment with the values for best results and your own fun.  
-  
-The included assembly language listing shows what is necessary for implementing circle algorithm, calculating coordinates and drawing pixels and circles on the screen.  
-  
-## Fast circle drawing in pure Atari BASIC  
-  
-- Magazine: Moj Mikro, 1989/3  
-- Author : Zlatko Bleha  
-- Page : 27 - 31  
-- Atari BASIC listing on disk (tokenized): M8903282.BAS  
-- Atari BASIC listing (listed): M8903282.LST  
-  
-Next example is demonstration of implementing mentioned circle algorithm in pure Atari BASIC. This program shows how much faster it is compared to classic program using sine and cosine functions from Atari BASIC (shown in last example).  
-  
-![](attachments/circles_2.png)  
-  
-![](attachments/circles_3.png)  
-  
-![](attachments/circles_4.png)  
-  
-### Basic Listing M8903282.LST  
+
+| 30000 | Starting address of the calling routine
+| POK  | 1 (draw the circle), 0 (erase the circle)
+| X | X coordinate of the circle
+| Y | Y coordinate of the circle
+| R | Radius of the circle
+
+The routine is not relocatable. If you want to relocate it anyway, use assembler of your choice and assemble it to another location or amend the DATA tables in Atari BASIC program demonstration.
+
+Maximum value for radius is 127, which is more than enough, because the circle with such radius will not be seen on the screen in whole anyway. If you choose wrong parameter values and consequently break the borders of the screen, don't worry, circle will be drawn anyway, but with its parts in different places. Experiment with the values for best results and your own fun.
+
+The included assembly language listing shows what is necessary for implementing circle algorithm, calculating coordinates and drawing pixels and circles on the screen.
+
+## Fast circle drawing in pure Atari BASIC
+
+- Magazine: Moj Mikro, 1989/3
+- Author : Zlatko Bleha
+- Page : 27 - 31
+- Atari BASIC listing on disk (tokenized): M8903282.BAS
+- Atari BASIC listing (listed): M8903282.LST
+
+Next example is demonstration of implementing mentioned circle algorithm in pure Atari BASIC. This program shows how much faster it is compared to classic program using sine and cosine functions from Atari BASIC (shown in last example).
+
+![](attachments/circles_2.png)
+
+![](attachments/circles_3.png)
+
+![](attachments/circles_4.png)
+
+### Basic Listing M8903282.LST
 ```
 1 REM *******************************
 2 REM PROGRAM  : FAST CIRCLE DRAWING
@@ -475,27 +475,27 @@ Next example is demonstration of implementing mentioned circle algorithm in pure
 180 A=A+B+B
 190 IF B>=C THEN 60
 ```
-  
-Use some valid values for coordinates and radius, for example:  
-  
+
+Use some valid values for coordinates and radius, for example:
+
 ```
 X=40, Y=40, R=30
 X=130, Y=90, R=60
 ```
-  
-## Slow circle drawing in Atari BASIC  
-  
-- Magazine: Moj Mikro, 1989/3  
-- Author : Zlatko Bleha  
-- Page : 27 - 31  
-- Atari BASIC listing on disk (tokenized): [M8903281.BAS](attachments/M8903281.BAS)  
-- Atari BASIC listing (listed): M8903281.LST  
-  
-This is classic example for drawing circles from Atari BASIC using sine and cosine functions. Unfortunatelly, this is very slow way of doing it and not recommended. Just use routine shown above and everybody will be happy  
-  
-![](attachments/circles_1.png)  
-  
-### Basic Listing M8903281.LST  
+
+## Slow circle drawing in Atari BASIC
+
+- Magazine: Moj Mikro, 1989/3
+- Author : Zlatko Bleha
+- Page : 27 - 31
+- Atari BASIC listing on disk (tokenized): [M8903281.BAS](attachments/M8903281.BAS)
+- Atari BASIC listing (listed): M8903281.LST
+
+This is classic example for drawing circles from Atari BASIC using sine and cosine functions. Unfortunatelly, this is very slow way of doing it and not recommended. Just use routine shown above and everybody will be happy
+
+![](attachments/circles_1.png)
+
+### Basic Listing M8903281.LST
 ```
 1 REM *******************************
 2 REM PROGRAM  : SLOW CIRCLE DRAWING
@@ -511,21 +511,21 @@ This is classic example for drawing circles from Atari BASIC using sine and cosi
 50 PLOT X,Y
 60 NEXT A
 ```
-  
-## Conclusion  
-  
-Returning back to first program with the fastest way of drawing circles... There is one more thing to note. In case you want to use PLOT subroutine, which is part of the main circle routine, then read following explanation.  
-  
-PLOT routine is written so it can be used easily from Atari BASIC program independently from main circle routine, by using like this:  
+
+## Conclusion
+
+Returning back to first program with the fastest way of drawing circles... There is one more thing to note. In case you want to use PLOT subroutine, which is part of the main circle routine, then read following explanation.
+
+PLOT routine is written so it can be used easily from Atari BASIC program independently from main circle routine, by using like this:
 ```
 A=USR(30179,POK,X,Y)
 ```
-  
-| POK | 1 (drawing a pixel), 0 (erasing a pixel)  
-| X | X coordinate of the pixel  
-| Y | Y coordinate of the pixel  
-  
-The routine alone is not any faster than normal PLOT command from Atari BASIC, because USR command takes approximately 75% of whole execution. But, used as part of the main circle routine it does not matter anymore, because it is integrated in one larger entity. There the execution is very fast, with no overhead. PLOT routine is here for you to examine anyway. You never know if you will maybe need it in the future.  
-  
-Greetings,  
-Gury  
+
+| POK | 1 (drawing a pixel), 0 (erasing a pixel)
+| X | X coordinate of the pixel
+| Y | Y coordinate of the pixel
+
+The routine alone is not any faster than normal PLOT command from Atari BASIC, because USR command takes approximately 75% of whole execution. But, used as part of the main circle routine it does not matter anymore, because it is integrated in one larger entity. There the execution is very fast, with no overhead. PLOT routine is here for you to examine anyway. You never know if you will maybe need it in the future.
+
+Greetings,
+Gury

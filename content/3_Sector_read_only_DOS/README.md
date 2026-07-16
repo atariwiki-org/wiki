@@ -1,49 +1,49 @@
 ---
 title: 3 Sector read only DOS
 ---
-### 3SDOS - 3Sector Read-Only DOS  
-  
-- Assembler: BiboAssembler 1.21  
-- License: GNU Public License, http://www.gnu.org  
-- Author: Carsten Strotmann  
-- Version: 0.8  
-- Description: Mini-Read-Only DOS 2.x compatible  
-  
-## Why?  
-  
-Why I've written this DOS? I had a BASIC Cassette program. The program consists of two files, ==part1.bas== and ==part2.bas== .  
-The first part initializes a new character-set and the starts the second part via the CLOAD command.  
-  
-The second part was really large. Because the cassette load take some time, I would like to have a disk version. But with a normal DOS loaded (MyDOS, ATARI DOS 2.x, 3, DOS XL, Turbo DOS, I tried almost all), there was only some byte free memory left. Too less to run the programm.  
-  
-So I tested serveral game-dos. (btw, thanks to Matthias Reichl for the new GPL Release of MyPicoDos, [http://www.horus.com/~hias/atari/](http://www.horus.com/~hias/atari/)). But the game-dos I own don't install a "D:" CIO Handler, they just load the file and start it. That is ok for one-part files, but it didn't work with my two-part file.  
-  
-So I wrote 3SDOS. It's 384 Bytes long and fits into the first 3 bootsectors. With this, the basic-cassette program works! And it has 4k free space.  
-  
-## Limitations:  
-  
-- only read operations  
-- "open file" and "get byte" CIO commands  
-- only finds files in the first directory sector ($169), so only the first 8 directory entries work  
-- no checks  
-- slower that normal dos load, but dos starts very fast!  
-- maybe buggy  
-  
-## Future development  
-  
-- Autoload and Start Basic program in the first Directory entry, for real Basic-Boot-Disks  
-- keep it in 3 sectors (SD)  
-  
-## Download  
-  
-- See attachments for an empty DOS DISK (SD)  
-  
-## FAQ  
-  
-- How to write the DOS to a new Disk?  
-- copy sector 1-3 from a 3SDOS Disk to the new Disk  
-- or, take the source and write a setup program :-)  
-  
+### 3SDOS - 3Sector Read-Only DOS
+
+- Assembler: BiboAssembler 1.21
+- License: GNU Public License, http://www.gnu.org
+- Author: Carsten Strotmann
+- Version: 0.8
+- Description: Mini-Read-Only DOS 2.x compatible
+
+## Why?
+
+Why I've written this DOS? I had a BASIC Cassette program. The program consists of two files, ==part1.bas== and ==part2.bas== .
+The first part initializes a new character-set and the starts the second part via the CLOAD command.
+
+The second part was really large. Because the cassette load take some time, I would like to have a disk version. But with a normal DOS loaded (MyDOS, ATARI DOS 2.x, 3, DOS XL, Turbo DOS, I tried almost all), there was only some byte free memory left. Too less to run the programm.
+
+So I tested serveral game-dos. (btw, thanks to Matthias Reichl for the new GPL Release of MyPicoDos, [http://www.horus.com/~hias/atari/](http://www.horus.com/~hias/atari/)). But the game-dos I own don't install a "D:" CIO Handler, they just load the file and start it. That is ok for one-part files, but it didn't work with my two-part file.
+
+So I wrote 3SDOS. It's 384 Bytes long and fits into the first 3 bootsectors. With this, the basic-cassette program works! And it has 4k free space.
+
+## Limitations:
+
+- only read operations
+- "open file" and "get byte" CIO commands
+- only finds files in the first directory sector ($169), so only the first 8 directory entries work
+- no checks
+- slower that normal dos load, but dos starts very fast!
+- maybe buggy
+
+## Future development
+
+- Autoload and Start Basic program in the first Directory entry, for real Basic-Boot-Disks
+- keep it in 3 sectors (SD)
+
+## Download
+
+- See attachments for an empty DOS DISK (SD)
+
+## FAQ
+
+- How to write the DOS to a new Disk?
+- copy sector 1-3 from a 3SDOS Disk to the new Disk
+- or, take the source and write a setup program :-)
+
 ```
 00010    .LI OFF
 00020 *************************

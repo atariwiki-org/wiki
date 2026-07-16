@@ -1,53 +1,53 @@
 ---
 title: ST Mouse Driver for Basic
 ---
-# ST Mouse Driver for Basic  
-  
-This is driver for an Atari ST mouse for Atari Basic and Turbo Basic  
-  
-General Information  
-  
-Author: Carsten Strotmann   
-Assembler: Bibo Assembler   
-Published: 04/22/91   
-  
-Atari Basic or even TurboBasic is way too slow to process the low level data send by an Atari ST Mouse to move a mouse pointer in a usable way.  
-  
-The ML routine below will read the information from the Atari ST mouse, will paint a mouse cursor until one of the mouse buttons are pressed (with an unmodified Atari ST mouse you can only read one mouse button from an A8, but it is possible to modify an Atari ST mouse in a way that the A8 can read both mouse buttons and the mouse is still usable on an Atari ST).  
-  
-### Usage:  
-  
-you load the ML routine MOUSE.COM (from DOS as Autorun.sys or from TurboBasic with BLOAD "D:MOUSE.COM")  
-  
-then, in your Basic Programm you call the routine at $400  
-  
+# ST Mouse Driver for Basic
+
+This is driver for an Atari ST mouse for Atari Basic and Turbo Basic
+
+General Information
+
+Author: Carsten Strotmann
+Assembler: Bibo Assembler
+Published: 04/22/91
+
+Atari Basic or even TurboBasic is way too slow to process the low level data send by an Atari ST Mouse to move a mouse pointer in a usable way.
+
+The ML routine below will read the information from the Atari ST mouse, will paint a mouse cursor until one of the mouse buttons are pressed (with an unmodified Atari ST mouse you can only read one mouse button from an A8, but it is possible to modify an Atari ST mouse in a way that the A8 can read both mouse buttons and the mouse is still usable on an Atari ST).
+
+### Usage:
+
+you load the ML routine MOUSE.COM (from DOS as Autorun.sys or from TurboBasic with BLOAD "D:MOUSE.COM")
+
+then, in your Basic Programm you call the routine at $400
+
 ```
 100 ...
 110 x = USR($400) : REM Turbo Basic
 120 ...
 ```
-  
+
 ```
 100 ...
 110 x = usr(1024) : REM Atari Basic
 120 ...
 ```
-  
-while in the Mouse Routine, your BASIC Programm is stopped. Line 120 will executed when one mouse button has been pressed.  
-  
-STRIG(0) -- first mouse button  
-and  
-STRIG(1) -- 2nd mouse button  
-  
-you can get the information which mouse button has been pressed.  
-  
-Peek($03FD) will give you the x position of the mouse pointer,  
-Peek($03FE) will give you the y position of the mouse pointer  
-  
-It should be straigghtforward to assemble the Assembler code in any Assembler (Mac/65, ATASm, x-asm ...). With BiboAssembler (also in the Wiki as ATR download) you can just type in the source.  
-  
-Mirko Sobe from BOSS X has asked me to write a VBI driven Mouse Driver for his BOSS X System. I have that on my to-do list. Such a mouse driver would run an the same time as the basic program.  
-  
+
+while in the Mouse Routine, your BASIC Programm is stopped. Line 120 will executed when one mouse button has been pressed.
+
+STRIG(0) -- first mouse button
+and
+STRIG(1) -- 2nd mouse button
+
+you can get the information which mouse button has been pressed.
+
+Peek($03FD) will give you the x position of the mouse pointer,
+Peek($03FE) will give you the y position of the mouse pointer
+
+It should be straigghtforward to assemble the Assembler code in any Assembler (Mac/65, ATASm, x-asm ...). With BiboAssembler (also in the Wiki as ATR download) you can just type in the source.
+
+Mirko Sobe from BOSS X has asked me to write a VBI driven Mouse Driver for his BOSS X System. I have that on my to-do list. Such a mouse driver would run an the same time as the basic program.
+
 ```
 00010			 .LI OFF
 00020 ******************************

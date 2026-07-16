@@ -1,24 +1,24 @@
 ---
 title: Digital Joypad Driver
 ---
-# Digital Joypad Driver  
-  
-Tested with a Logitec Wingman Precision USB. Other digital Joypad might work. Please send feedback.  
-  
-## Logitech Rumblepad 2 USB Driver (new Modular Driver Version 2)  
-  
-see [Logitech Rumblepad 2 USB](../JoypadRumblePadTwoUsb/README.md)  
-  
-## Generic VBI Driver  
-  
-Will work with Atari Basic, Turbo Basic, ACTION!, XFORTH.  
-  
-Load driver and use Stick(0) and Strig(0) as normal.  
-  
-### Related Pages  
-  
-- [Boulder Dash 1 Patch](../AtariJoypadBouderDashPatch/README.md)  
-  
+# Digital Joypad Driver
+
+Tested with a Logitec Wingman Precision USB. Other digital Joypad might work. Please send feedback.
+
+## Logitech Rumblepad 2 USB Driver (new Modular Driver Version 2)
+
+see [Logitech Rumblepad 2 USB](../JoypadRumblePadTwoUsb/README.md) 
+
+## Generic VBI Driver
+
+Will work with Atari Basic, Turbo Basic, ACTION!, XFORTH.
+
+Load driver and use Stick(0) and Strig(0) as normal.
+
+### Related Pages
+
+- [Boulder Dash 1 Patch](../AtariJoypadBouderDashPatch/README.md)
+
 ```
 01000          .LI OFF
 01010 **************************
@@ -476,5 +476,5 @@ Load driver and use Stick(0) and Strig(0) as normal.
 05570 ------------------------------
 
 ```
-  
-  
+
+

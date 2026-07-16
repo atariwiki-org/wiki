@@ -1,9 +1,9 @@
 ---
 title: ProForth
 ---
-# ProForth for the Apple II (6502 Source, could be adapted to the Atari 8bit)  
-  
-NAME: EDASM macro used by FDICT.S  
+# ProForth for the Apple II (6502 Source, could be adapted to the Atari 8bit)
+
+NAME: EDASM macro used by FDICT.S
 ```
  DFB &1
  DCI &2
@@ -12,8 +12,8 @@ NAME: EDASM macro used by FDICT.S
  FAIL 2,'PFA=xxFF'
  FIN
 ```
-  
-fdict.s  
+
+fdict.s
 ```
           LST OFF,NOGen,NOWarn,NOVsym,NOAsym,NOExp
           MACLIB
@@ -2804,8 +2804,8 @@ BYE       DW *+2
           DW BLIST
 TOP       DFB 00
 ```
-  
-fsys.s (ProDos Filesystem interface)  
+
+fsys.s (ProDos Filesystem interface)
 ```
           LST ON,NOGen,NOAsym,NOVsym
 * FORTH.SYSTEM by John Matthews, M.D.

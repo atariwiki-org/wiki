@@ -1,53 +1,53 @@
 ---
 title: 6502 Coding Algorithms Macro Library
 ---
-  
-General Information   
-Author: Andrew John Jacobs   
-Published: 1999   
-  
-This file contains a number of useful 6502  
-algorithms for number, string and memory  
-operations. The code is written in the form of  
-macros rather than subroutines to make them  
-more flexible.  
-  
-The routines in the library assume that 16 and  
-32 bit numbers are represented in little endian  
-order, that is the least significant byte in  
-the lowest memory location, so that they can  
-be applied to addresses as well as pure  
-numbers.  
-  
-The string routines assume that they are  
-working with null terminated 'C' style strings.  
-  
-The main routines sacrifice code size for speed  
-and are coded without any iteration. Compact  
-versions which use iteration are provided for  
-some algorithms and have the same name as the  
-original routine with a 'C' suffix (eg. _XFR32  
-=> _XFR32C).  
-  
-Some of the macros use 65SC02 instructions for  
-speed or to reduce the amount code generated if  
-the assembler will accept them.  
-  
-Where possible the macros detect optimizable  
-cases and generate more efficient code.  
-  
-Bugs & Enhancments:  
-  
-If you find a bug I missed or have a new  
-routine you would like to submit to the library  
-then mail me at:  
-  
-Andrew@obelisk.demon.co.uk  
-  
-fount at [http://www.obelisk.demon.co.uk/6502/algorithms.html](http://www.obelisk.demon.co.uk/6502/algorithms.html)  
-  
+
+General Information
+Author: Andrew John Jacobs
+Published: 1999
+
+This file contains a number of useful 6502
+algorithms for number, string and memory
+operations. The code is written in the form of
+macros rather than subroutines to make them
+more flexible.
+
+The routines in the library assume that 16 and
+32 bit numbers are represented in little endian
+order, that is the least significant byte in
+the lowest memory location, so that they can
+be applied to addresses as well as pure
+numbers.
+
+The string routines assume that they are
+working with null terminated 'C' style strings.
+
+The main routines sacrifice code size for speed
+and are coded without any iteration. Compact
+versions which use iteration are provided for
+some algorithms and have the same name as the
+original routine with a 'C' suffix (eg. _XFR32
+=> _XFR32C).
+
+Some of the macros use 65SC02 instructions for
+speed or to reduce the amount code generated if
+the assembler will accept them.
+
+Where possible the macros detect optimizable
+cases and generate more efficient code.
+
+Bugs & Enhancments:
+
+If you find a bug I missed or have a new
+routine you would like to submit to the library
+then mail me at:
+
+Andrew@obelisk.demon.co.uk
+
+fount at [http://www.obelisk.demon.co.uk/6502/algorithms.html](http://www.obelisk.demon.co.uk/6502/algorithms.html) 
+
 ---
-  
+
 ```
       NOLIST
 ;------------------------------------------------
@@ -1356,4 +1356,4 @@ _STRNCMP   MACRO VLA,VLB,LEN
 
       LIST
 ```
-  
+

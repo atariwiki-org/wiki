@@ -1,17 +1,17 @@
 ---
 title: Displaylist in ACTION
 ---
-# Displaylist in ACTION!  
-  
-General Information  
-  
-Author: 	William T. Colburn   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	February, 1987   
-  
-This program makes use of the routine ALLOCATE.ACT from the OSS Action! Tool Kit. ALLOCATE.ACT is copyrighted by OSS and is NOT in the public domain. Therefore, ALLOCATE.ACT was not included with DLIST2.ACT by the Author, and must NOT be added to it for public distribution by any other user of this demonstration program. The author of this routine refuses to accept responsibility for this type of unethical action by any	users of my demonstration program.  
-  
+# Displaylist in ACTION!
+
+General Information
+
+Author: 	William T. Colburn
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	February, 1987
+
+This program makes use of the routine ALLOCATE.ACT from the OSS Action! Tool Kit. ALLOCATE.ACT is copyrighted by OSS and is NOT in the public domain. Therefore, ALLOCATE.ACT was not included with DLIST2.ACT by the Author, and must NOT be added to it for public distribution by any other user of this demonstration program. The author of this routine refuses to accept responsibility for this type of unethical action by any	users of my demonstration program.
+
 ```
 MODULE ;DLIST2.ACT
 

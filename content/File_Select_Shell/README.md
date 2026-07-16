@@ -1,16 +1,16 @@
 ---
 title: File Select Shell
 ---
-# File Select Shell  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-  
-This code requires the [Binary_File_Load_in_ACTION](../Binary_File_Load_in_ACTION/README.md) Module and the [File_Select_Box](../File_Select_Box/README.md) Module  
-  
+# File Select Shell
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+
+This code requires the [Binary_File_Load_in_ACTION](../Binary_File_Load_in_ACTION/README.md) Module and the [File_Select_Box](../File_Select_Box/README.md) Module
+
 ```
 ;********************************
 ;**									 **

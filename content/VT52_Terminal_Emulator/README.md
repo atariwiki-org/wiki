@@ -1,18 +1,18 @@
 ---
 title: VT52 Terminal Emulator
 ---
-# VT52 Emulator  
-  
-The following is a very primitive vt52 emulator for the 800.  This actually  
-is a vt52 with insert/delete line added, with auto-wrap, and tabs.  
-It is written in Action! with lower case enabled.  
-  
-To use this, you will need an rs232 device (I have only tested this at  
-300 buad using an 850 interface and 830 modem, but it seems to work well).  
-The rs232 parameters are hard coded, so you will probably have to change  
-the values of baud, parity, etc.  Consult your 850 or R-verter manual.  
-The values that may require change are the following..  
-  
+# VT52 Emulator
+
+The following is a very primitive vt52 emulator for the 800.  This actually
+is a vt52 with insert/delete line added, with auto-wrap, and tabs.
+It is written in Action! with lower case enabled.
+
+To use this, you will need an rs232 device (I have only tested this at
+300 buad using an 850 interface and 830 modem, but it seems to work well).
+The rs232 parameters are hard coded, so you will probably have to change
+the values of baud, parity, etc.  Consult your 850 or R-verter manual.
+The values that may require change are the following..
+
 ```
    speed = ~[1],
    wsize = ~[0],
@@ -21,22 +21,22 @@ The values that may require change are the following..
    iparity = ~[0],
    oparity = ~[0]     
 ```
-  
-This works by defining an output device A: which works in graphics mode 8,  
-which writes characters in 4 bits.  I have used this emulator with vi, rogue,  
-jove, etc., under UNIX using the vt52 termcap entry, and also (with some  
-slight modification to allow generation of ENTER, pf, and cursor keys) under  
-CMS.  If anyone wants this version, I can mail the diff's.  
-  
-The following characters are defined in addition to those found on the  
-keyboard.  
-  
+
+This works by defining an output device A: which works in graphics mode 8,
+which writes characters in 4 bits.  I have used this emulator with vi, rogue,
+jove, etc., under UNIX using the vt52 termcap entry, and also (with some
+slight modification to allow generation of ENTER, pf, and cursor keys) under
+CMS.  If anyone wants this version, I can mail the diff's.
+
+The following characters are defined in addition to those found on the
+keyboard.
+
 ```
 ctrl clear - {
 ctrl insert - }
 ctrl delete - ~
 ```
-  
+
 ---
 ```
 ;*********************************
@@ -552,4 +552,4 @@ PROC main()
    OD
 RETURN
 ```
-  
+

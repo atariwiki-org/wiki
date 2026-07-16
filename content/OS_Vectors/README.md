@@ -1,10 +1,10 @@
 ---
 title: OS Vectors
 ---
-  
-  
-# OS Vectors  
-  
+
+
+# OS Vectors
+
 ```
 MODULE
 ;*********************************
@@ -68,4 +68,4 @@ PROC BEEPWAIT =$FDFC (BYTE times)
 PROC KBGET =$F302 ()
 
 ```
-  
+

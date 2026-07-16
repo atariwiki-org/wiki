@@ -1,38 +1,38 @@
 ---
 title: Demon Birds
 ---
-### General Information  
-Author: Dan Bullok  
-Language: ACTION!  
-Compiler/Interpreter: ACTION!  
-Published: Analog #28 (03/ 85)  
+### General Information
+Author: Dan Bullok
+Language: ACTION!
+Compiler/Interpreter: ACTION!
+Published: Analog #28 (03/ 85)
 ---
-# Demon Birds  
-  
-You are the last Wizard of Akturnis, the strange and mystical world where magic can be worked by anyone with the will to do so. But, in the past few years, people habe lost their faith in Wizards and magic. Now the evil __Demon Birds__ have begun to plague them, and you are their ''only'' hope.  
-  
-To save the People or Akturnis, you must enter the dreaded Valley of Deatz and destroy all of the __Demon Birds__ found there.  
-  
-Your Wizard starts the game woth four lives and fifty units of energy. For every bird you destroy, you will gain two units of energy. However, every time you cast a fireball, you ''lose'' one unit of energy.  
-  
-You move your Wizard left and rigt at the bottom of the screen, using the joystick. You may cast a fireball by pressing the red button while moving in the direction in which you wish it to travel.  
-  
-Ridding your people of the __Demon Birds__ will not be easy. If you are struck by one of the evil birds, or are hit by a meteor from the sky, you will lose one life. You'll also lose a life if your energy reaches zero. Furthermore, the ground in the valley is very unstable, because it sits on top of a pool of lava. If you stand in one place for too long, the ground will opn up, and your Wizard will be lost.  
-  
-### Disk instructions.  
-1. Type in Listing 1 and SAVE it to disk under the filename “D:BIRDS". You must have 48K and the Action! cartridge.  
-1. Reboot your computer and enter the monitor. Type C “BIRDS”.  
-1. When the disk drive stops, type W “AUTORUN.SYS" to save the object code to disk.  
-1. Whenever you want to play __Demon Birds__, insert the Action! cartridge into the left slot. Insert the disk with the AUTORUN.SYS file into drive one and turn on the computer. The program will load and run automatically.  
-  
-### Cassette instructions.  
-1. Type in Listing 1 and SAVE it to cassette. You must have at least 48K and the Action! cartridge.  
-1. Reboot your computer and enter the monitor. Type C "C:".  
-1. When the cassette stops, type W “C:" to save the object code to cassette.  
-1. Whenever you want to play __Demon Birds__, insert the Action! cartridge into the left slot. Insert the cassette with the object code into the cassette recorder. Turn on the computer and enter the monitor. Type R "C:". The program will load and run automatically.  
-That's all there is to it. You're ready to do battle with the __Demon Birds__.  
-  
-  
+# Demon Birds
+
+You are the last Wizard of Akturnis, the strange and mystical world where magic can be worked by anyone with the will to do so. But, in the past few years, people habe lost their faith in Wizards and magic. Now the evil __Demon Birds__ have begun to plague them, and you are their ''only'' hope.
+
+To save the People or Akturnis, you must enter the dreaded Valley of Deatz and destroy all of the __Demon Birds__ found there.
+
+Your Wizard starts the game woth four lives and fifty units of energy. For every bird you destroy, you will gain two units of energy. However, every time you cast a fireball, you ''lose'' one unit of energy.
+
+You move your Wizard left and rigt at the bottom of the screen, using the joystick. You may cast a fireball by pressing the red button while moving in the direction in which you wish it to travel.
+
+Ridding your people of the __Demon Birds__ will not be easy. If you are struck by one of the evil birds, or are hit by a meteor from the sky, you will lose one life. You'll also lose a life if your energy reaches zero. Furthermore, the ground in the valley is very unstable, because it sits on top of a pool of lava. If you stand in one place for too long, the ground will opn up, and your Wizard will be lost.
+
+### Disk instructions.
+1. Type in Listing 1 and SAVE it to disk under the filename “D:BIRDS". You must have 48K and the Action! cartridge.
+1. Reboot your computer and enter the monitor. Type C “BIRDS”.
+1. When the disk drive stops, type W “AUTORUN.SYS" to save the object code to disk.
+1. Whenever you want to play __Demon Birds__, insert the Action! cartridge into the left slot. Insert the disk with the AUTORUN.SYS file into drive one and turn on the computer. The program will load and run automatically.
+
+### Cassette instructions.
+1. Type in Listing 1 and SAVE it to cassette. You must have at least 48K and the Action! cartridge.
+1. Reboot your computer and enter the monitor. Type C "C:".
+1. When the cassette stops, type W “C:" to save the object code to cassette.
+1. Whenever you want to play __Demon Birds__, insert the Action! cartridge into the left slot. Insert the cassette with the object code into the cassette recorder. Turn on the computer and enter the monitor. Type R "C:". The program will load and run automatically.
+That's all there is to it. You're ready to do battle with the __Demon Birds__.
+
+
 ---
 ```
 ;******************
@@ -828,4 +828,4 @@ OD
 RETURN
 ```
 ---
-[analog_28_demonbirds.pdf](attachments/analog_28_demonbirds.pdf)  
+[analog_28_demonbirds.pdf](attachments/analog_28_demonbirds.pdf) 

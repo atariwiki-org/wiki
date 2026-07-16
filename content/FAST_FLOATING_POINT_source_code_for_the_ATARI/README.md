@@ -1,52 +1,52 @@
 ---
 title: FAST FLOATING POINT source code for the ATARI
 ---
-# FAST FLOATING POINT source code for the ATARI  
-__Copyright (C) 1981 to 1984 by Newell Industries & Charles W. Marslett__  
-  
-  
-AtariWiki is very, very proud Newell Industries & Charles W. Marslett gave us the source code for the FAST FLOATING POINT routines for PD. Thank you so much Newell Industries & Charles W. Marslett, that is not a little gift, that is a giant leap for the community worldwide and will result in rewrite all Atari OS and burn them on EPROM. We further thank Robert 'Bob' Puff for converting the original [AMAC](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Macro%20Assembler) source code into [MAC/65](https://atariwiki.org/wiki/Wiki.jsp?page=Mac65) source code. Thank you all so much, the community is in great debt for the work you have done! :-)  
-  
-Please don't misunderstand this work, it is 'just' fast or even up to 3.5 times faster than the original routines! Indeed, it is way more! The routines give the user reliable results, too! That is very important for calculations. Further, they maintain the jump addresses from the original routines from Atari. Therefore, no trouble, just have fun and enjoy.  
-  
-## Picture  
-  
-![](attachments/Fastchip.jpg)  
-Ad from Newell Industries from 1981:  
-  
-## ATR image  
-- [FastChip.atr](attachments/FastChip.atr)  
-  
-HEADER.M65, FASTFP1.M65:  
-MAC/65 Tokenized source. Load the  
-header file, and assemble from it.  
-  
-FASTFP.OBJ:  
-Object file produced from above  
-files, when assembled at $D800.  
-  
-FASTFP.ASM:  
-Original AMAC source file (LISTed  
-format).  
-  
-LDFAST.M65:  
-MAC/65 Tokenized source for a  
-program to load D1:FASTFP.OBJ into  
-the RAM under the OS in XL/XE  
-machines.  
-  
-LDFAST.ASM:  
-Original AMAC source for above.  
-  
-FASTFP.DOC:  
-Original document file listing the  
-routines contained in the faschip.  
-  
-## AMAC source code file  
-- [Fast Chip source code file for AMAC](attachments/FASTFP.ASM)  
-  
-## Source Code of the final revision F  
-  
+# FAST FLOATING POINT source code for the ATARI
+__Copyright (C) 1981 to 1984 by Newell Industries & Charles W. Marslett__
+
+
+AtariWiki is very, very proud Newell Industries & Charles W. Marslett gave us the source code for the FAST FLOATING POINT routines for PD. Thank you so much Newell Industries & Charles W. Marslett, that is not a little gift, that is a giant leap for the community worldwide and will result in rewrite all Atari OS and burn them on EPROM. We further thank Robert 'Bob' Puff for converting the original [AMAC](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Macro%20Assembler) source code into [MAC/65](https://atariwiki.org/wiki/Wiki.jsp?page=Mac65) source code. Thank you all so much, the community is in great debt for the work you have done! :-)
+
+Please don't misunderstand this work, it is 'just' fast or even up to 3.5 times faster than the original routines! Indeed, it is way more! The routines give the user reliable results, too! That is very important for calculations. Further, they maintain the jump addresses from the original routines from Atari. Therefore, no trouble, just have fun and enjoy.
+
+## Picture
+
+![](attachments/Fastchip.jpg)
+Ad from Newell Industries from 1981:
+
+## ATR image
+- [FastChip.atr](attachments/FastChip.atr)
+
+HEADER.M65, FASTFP1.M65:
+MAC/65 Tokenized source. Load the
+header file, and assemble from it.
+
+FASTFP.OBJ:
+Object file produced from above
+files, when assembled at $D800.
+
+FASTFP.ASM:
+Original AMAC source file (LISTed
+format).
+
+LDFAST.M65:
+MAC/65 Tokenized source for a
+program to load D1:FASTFP.OBJ into
+the RAM under the OS in XL/XE
+machines.
+
+LDFAST.ASM:
+Original AMAC source for above.
+
+FASTFP.DOC:
+Original document file listing the
+routines contained in the faschip.
+
+## AMAC source code file
+- [Fast Chip source code file for AMAC](attachments/FASTFP.ASM)
+
+## Source Code of the final revision F
+
 ```
 	TITLE	'FAST FLOATING POINT (ATARI)'
 	SUBTTL 'SYSTEM EQUATES USED'
@@ -1331,9 +1331,9 @@ CVTHEX	PHA			;SAVE UPPER DIGIT
 	JMP	CTUHEX		;RESTORE AND CONVERT UPPER DIGIT
 	END
 ```
-  
-## FLOATING POINT ROM ENTRY POINTS  
-  
+
+## FLOATING POINT ROM ENTRY POINTS
+
 ```
            FLOATING POINT ROM ENTRY POINTS
 
@@ -1389,6 +1389,6 @@ LDPLY     DD62   Copy [FPTR2] into FR1, add 6 to FPTR2
 SAVARG    DD78   Store X into FPTR2, Y into FPTR2+1, copy FR0
                      over into PLYARG
 ```
-  
-## Remark  
-drac030 from AtariAge found the last remaining thing to be changed in the hexdgt routine: SBC $9 should be changed into -> SBC #$9.  
+
+## Remark
+drac030 from AtariAge found the last remaining thing to be changed in the hexdgt routine: SBC $9 should be changed into -> SBC #$9.

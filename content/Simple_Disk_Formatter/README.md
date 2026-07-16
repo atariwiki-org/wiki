@@ -1,8 +1,8 @@
 ---
 title: Simple Disk Formatter
 ---
-# Simple Disk Formatter  
-  
+# Simple Disk Formatter
+
 ```
 00010          .LI OFF
 00020          .OR $4000

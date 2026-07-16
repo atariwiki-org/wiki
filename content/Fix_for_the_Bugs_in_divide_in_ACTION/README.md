@@ -1,8 +1,8 @@
 ---
 title: Fix for the Bugs in divide in ACTION
 ---
-# Fix for the Bugs in divide in ACTION!  
-  
+# Fix for the Bugs in divide in ACTION!
+
 ```
 ;The following Action! routine will provide you with a fix for the bugs
 ;in divide in Action! It should be self-explanatory...

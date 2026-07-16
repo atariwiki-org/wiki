@@ -1,13 +1,13 @@
 ---
 title: Floating Point ROM Library
 ---
-# Floating Point ROM Library  
-  
-General Information  
-  
-Author: Optimized System Software OSS   
-Assembler: Mac65   
-  
+# Floating Point ROM Library
+
+General Information
+
+Author: Optimized System Software OSS
+Assembler: Mac65
+
 ```
 ;FPT8.M65
 ;

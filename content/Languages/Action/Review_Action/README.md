@@ -1,18 +1,18 @@
 # Action Review
 
-### General Information  
-Author: 	Brian Moriarty  
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	ANALOG Computing #16  
+### General Information
+Author: 	Brian Moriarty
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	ANALOG Computing #16
 ---
-# A New Language for the Atari!  
-Atari users have a surprisingly wide selection of programming languages from which to choose. We've got three dialects of BASIC, four C compilers, eight or nine FORTHS, a pair of Pascals, PILOT, Logo, WSFN, a Lisp interpreter, numerous 6502 assemblers and a couple of hybrids like BASM and Mirth. Not bad for a "game machine," eh?  
-  
-Leave it to Optimized Systems Software to come up with yet another way to tell your Atari what to do. OSS has been the leading purveyor of alternative operating systems and languages for the Atari since before I can remember. __Action!__ is only the first of a whole new line of OSS products that's been causing quite a stir in the Atari underground. It's been touted as the first programming environment developed specifically for the 6502, and the fastest high-level language available for the Atari. These are pretty strong claims which, after playing with the system for several weeks, appear to be totally justified. As you are about to read.  
-  
-## New! Improved!  
-In syntax and overall structure, __Action!__ bears a strong resemblance to Pascal, C and other members of the Algol family. It's a procedure-oriented language featuring global and local variables, user-definable functions, parameter passing and powerful structures like DO loops, FOR-TO, WHILE, UNTIL and IF-THEN-ELSE. Three basic data types are recognized: 8-bit BYTEs (or CHARacters), 16-bit signed INTegers and 16-bit unsigned CARDinals. The system also supports a variety of extended data types including pointers, subscripted arrays, strings and records.  
+# A New Language for the Atari!
+Atari users have a surprisingly wide selection of programming languages from which to choose. We've got three dialects of BASIC, four C compilers, eight or nine FORTHS, a pair of Pascals, PILOT, Logo, WSFN, a Lisp interpreter, numerous 6502 assemblers and a couple of hybrids like BASM and Mirth. Not bad for a "game machine," eh?
+
+Leave it to Optimized Systems Software to come up with yet another way to tell your Atari what to do. OSS has been the leading purveyor of alternative operating systems and languages for the Atari since before I can remember. __Action!__ is only the first of a whole new line of OSS products that's been causing quite a stir in the Atari underground. It's been touted as the first programming environment developed specifically for the 6502, and the fastest high-level language available for the Atari. These are pretty strong claims which, after playing with the system for several weeks, appear to be totally justified. As you are about to read.
+
+## New! Improved!
+In syntax and overall structure, __Action!__ bears a strong resemblance to Pascal, C and other members of the Algol family. It's a procedure-oriented language featuring global and local variables, user-definable functions, parameter passing and powerful structures like DO loops, FOR-TO, WHILE, UNTIL and IF-THEN-ELSE. Three basic data types are recognized: 8-bit BYTEs (or CHARacters), 16-bit signed INTegers and 16-bit unsigned CARDinals. The system also supports a variety of extended data types including pointers, subscripted arrays, strings and records.
 ```
 AND    FI      OR      UNTIL =   (
 ARRAY  FOR     POINTER WHILE <>  )
@@ -28,7 +28,7 @@ EXIT   OD      TYPE    !     @
 Listing 1.
 Reserved keywords
 ```
-__Listing 1__ includes all of the keywords reserved for use by the __Action!__ system. These are used to declare variables, define new procedures and/or functions and to control the operation of the compiler. BASIC veterans will note with alarm the total lack of keywords that do interesting things in and of themselves, like SETCOLOR or DRAWTO. They're missing for a very good reason. Unlike BASIC, __Action!__ does not limit your programming to a limited number of safe little commands. It invites you (indeed, ''forces'' you) to invent the commands you need to solve problems yourself. The keywords in __Listing 1__ are the tools the system gives you to, in effect, write your own language. If this prospect doesn't excite you, maybe BASIC has been holding your hand for too long.  
+__Listing 1__ includes all of the keywords reserved for use by the __Action!__ system. These are used to declare variables, define new procedures and/or functions and to control the operation of the compiler. BASIC veterans will note with alarm the total lack of keywords that do interesting things in and of themselves, like SETCOLOR or DRAWTO. They're missing for a very good reason. Unlike BASIC, __Action!__ does not limit your programming to a limited number of safe little commands. It invites you (indeed, ''forces'' you) to invent the commands you need to solve problems yourself. The keywords in __Listing 1__ are the tools the system gives you to, in effect, write your own language. If this prospect doesn't excite you, maybe BASIC has been holding your hand for too long.
 ```
 Print   PrintE   PrintD  PrintDE  PrintB    PrintBE 
 PrintBD PrintBDE PrintC  PrintCE  PrintCD   PrintCDE 
@@ -123,9 +123,9 @@ __Listing 4__ is an implementation of the __Sieve__ in Atari BASIC. It requires 
 30 ? COUNT;" PRIMES IN"
 31 ? TIME;" JIFFIES"
 ```
-Although I love standards, I don't like the __Sieve__. It's not easy for beginners to understand, it takes too long (in BASIC, anyway), and it doesn't test the Atari under real-world conditions, with lots of 6502 processor time being "stolen" by Antic for video DMA. I wanted a benchmark that anybody could appreciate, operating under the kind of DMA conditions an Atari program is likely to find itself up against.  
-  
-Back in Issue 11, I devised a little program that fills a GRAPHICS 24 screen with color, one byte (eight pixels) at a time. It was used to compare a couple of BASIC compilers at the time, but it's equally valid in any run-time environment. My definitive BASIC implementation of this test appears in __Listing 5__. __Screen Fill__, as the program shall henceforth be known, executes in 4.025 jiffies or about 67 seconds on a 48K 800. (Again, improvements are possible, but for the sake of clarity let's stick to __Listing 5__.) I'll be using __Screen-Fill__ in conjunction with the __Sieve__ to judge the performance of every new language I review from now on. So let it be written; so let it be done.  
+Although I love standards, I don't like the __Sieve__. It's not easy for beginners to understand, it takes too long (in BASIC, anyway), and it doesn't test the Atari under real-world conditions, with lots of 6502 processor time being "stolen" by Antic for video DMA. I wanted a benchmark that anybody could appreciate, operating under the kind of DMA conditions an Atari program is likely to find itself up against.
+
+Back in Issue 11, I devised a little program that fills a GRAPHICS 24 screen with color, one byte (eight pixels) at a time. It was used to compare a couple of BASIC compilers at the time, but it's equally valid in any run-time environment. My definitive BASIC implementation of this test appears in __Listing 5__. __Screen Fill__, as the program shall henceforth be known, executes in 4.025 jiffies or about 67 seconds on a 48K 800. (Again, improvements are possible, but for the sake of clarity let's stick to __Listing 5__.) I'll be using __Screen-Fill__ in conjunction with the __Sieve__ to judge the performance of every new language I review from now on. So let it be written; so let it be done.
 ```
 10 REM * SCREEN-FILL BENCHMARK
 11 GRAPHICS 24
@@ -141,7 +141,7 @@ Back in Issue 11, I devised a little program that fills a GRAPHICS 24 screen wit
 21 GRAPHICS 0
 22 PRINT TIME;" JIFFIES"
 ```
-OSS includes a implementation of the __Sieve__ benchmark in their Action! documentation. I rewrote the code slightly to make it match my BASIC implementation more closely; the modified program is shown in __Listing 6__. It executes in 89 jiffies or just under a second and a half. I'll save you a calculation by pointing out that the __Sieve__ runs about 219 times faster in __Action!__ than it does in Atari BASIC.  
+OSS includes a implementation of the __Sieve__ benchmark in their Action! documentation. I rewrote the code slightly to make it match my BASIC implementation more closely; the modified program is shown in __Listing 6__. It executes in 89 jiffies or just under a second and a half. I'll save you a calculation by pointing out that the __Sieve__ runs about 219 times faster in __Action!__ than it does in Atari BASIC.
 ```
 BYTE RTCLOK=20, ; addr of sys timer
      SDMCTL=559 ; DMA control
@@ -183,7 +183,7 @@ PROC SIEVE()
 
 RETURN
 ```
-Unconvinced? __Listing 7__ is an __Action!__ implementation of __Screen-Fill__. This demanding little gem executes in 32 jiffies (slightly more than half a second), or 126 times faster than its BASIC counterpart under maximum DMA handicap. And if you cheat by replacing the nested FOR-TO loops with an _Action!_, SETBLOCK procedure in the form:  
+Unconvinced? __Listing 7__ is an __Action!__ implementation of __Screen-Fill__. This demanding little gem executes in 32 jiffies (slightly more than half a second), or 126 times faster than its BASIC counterpart under maximum DMA handicap. And if you cheat by replacing the nested FOR-TO loops with an _Action!_, SETBLOCK procedure in the form:
 ```
 you'll obtain an execution time of just five jiffies. This is essentially the same amount of time it takes the equivalent machine-language code to do the same job. No other high-level Atari language that I am aware of can match this kind of speed performance.
 {{{Listing 7.
@@ -219,36 +219,36 @@ PROC BENCH()
 
 RETURN
 ```
-  
-## Pulling the wings off a butterfly.  
-  
-Once I got a taste of __Action!__'s dizzying speed, I had to find out what was going on inside that demonic little cartridge. So I used the W (write object code) option of the __Action!__ monitor to send a copy of the compiled __Screen-Fill__ benchmark to a disk file. Then I read it back into Ralph Jones' __Ultra Disassembler__ (published by Adventure International), massaged the labels and commented the code to make it correspond to the __Action!__ source text, line by line. The result appears in __Listing 8__.  
-  
-Assembly programmers will appreciate the extraordinary efficiency of the __Action!__ compiler. The code in __Listing 8__ is totally non-recursive. It uses no special stacks or indirect pointers to control the flow of execution, just pure in-line machine code with an occasional JSR into a cartridge library routine. This is "native mode" compilation at its best: simple, clean, and very, very swift. The output of a typical C or Pascal compiler looks like spaghetti by comparison.  
-  
-Because compiled __Action!__ programs refer to subroutines that reside inside the __Action!__ cartridge, you can't run a program without the cartridge in place. This may come as a disappointment to users who want to give copies of their latest __Action!__ game to friends who don't have __Action!__ OSS plans to remedy this situation by offering a Personal Run-Time Package to licensed __Action!__ users for around $30. It's a utility that will let you turn any __Action!__ program into a self-standing entity that will run with no help at all from the __Action!__ cartridge, thank you. A commercial run-time package will also be offered for a one-time licensing fee of approximately $300. Both may be available by the time you read this; contact OSS directly for more information.  
-  
-Another $30 will get you OSS's Programmer's Aid Disk (PAD), a collection of demonstration programs and library routines that wouldn't fit into the already crowded __Action!__ cartridge. The libraries include badly-needed support for player/missile graphics, memory management and floating point math, precisely the weaknesses I noted above. The demo programs are very instructive and help to clarify some of the obscure features of the language. You even get a full-blown game program, written in __Action!__ by our very own Joel Gluck.  
-  
-The PAD squarely addresses many of the shortcomings of the __Action!__ cartridge and documentation, and is an absolute must for all serious owners of the Action! system. In fact, this material ought to be included with every new system sold, even if it means bumping up the price a bit.  
-  
-## You can bank on it.  
-  
-The 16K __Action!__ "SuperCartridge" is a technically interesting device in and of itself. It employs a hardware technique called bank-selecting to make itself "look" like an 8K cartridge. This gives you access to the 8K of RAM between $8000-$9FFF that is de-selected and thus rendered useless by a conventional 16K cartridge, such as __AtariWriter__.  
-  
-The bottom half of the SuperCartridge ($A000- $AFFF) is divided into three independently addressable 4K banks of ROM, which are automatically switched in and out depending on what part of the system is in use. If your Atari has 48K or more memory, it's even possible to address the 4K bank of RAM that resides "under" this half of the cartridge. OSS's new __DOS XL__ operating system takes advantage of this capacity in a most ingenious manner. Look for a report in a future issue.  
-  
-The bank-select cartridge is a nearly ideal home for Atari software. It gives the cartridge designer a full 16K to work with, enough room for plenty of bells and whistles. It gives the user an instant-loading, highly reliable environment with up to 40K of workspace. And because three of the memory banks occupy the same 4K address range, a bank-select cartridge is very difficult to pirate. Let's hope that more manufacturers start taking advantage of bank-selecting to enhance the value and security of their products.  
-  
-## Advice and admiration.  
-  
-I'm sorry to report that the ''Action! Reference Manual'' doesn't do the language justice. In a commendable attempt to satisfy beginners and experts alike, the ''Manual'' suffers from lack of confidence, uncertain organization and a shortage of good, hard technical data. Thank goodness for the numerous sample programs, which communicate a lot more about the system than the text surrounding them.  
-  
-Having once written the manual for a new (and mercifully obscure) programming language, I can appreciate the difficulties involved in deciding how much needs to be said, to whom, and in what order. Nevertheless, a new language can only be as good as its documentation. Until somebody sits down, rolls up his or her sleeves and writes an authoritative book about __Action!__, it will have a hard time attaining the wide acceptance it so obviously deserves. I conclude this diatribe by acknowledging that the latest edition of the ''Reference Manual'' (in the small yellow notebook) shows a marked improvement over the first release.  
-  
-The __Action!__ cartridge itself has gone through a couple of changes since its first appearance in August 1983. You can tell which version you have by using the "?" (display memory) command in the monitor to examine cartridge address $B000. If this byte equals $31 hex, you have the original Version 3.1. A value of $33 indicates Version 3.3, in which a number of minor 3.1 bugs have been corrected. The final version is 3.6 ($36 at $B000), which should be ready soon after you read this. OSS has always been very good about maintaining their products, so you shouldn't have any trouble getting an upgrade if you need one. Consult OSS for prices and availability.  
-  
-I hope my kvetching about the documentation doesn't scare you away. If sensible, structured code and edge-of-the-art speed are what you crave in a high-level language, __Action!__ is exactly what you need. OSS's hideous orange cartridge joins the ranks of __valFORTH__, __Omnimon!__, __ABC__ and __MAC/65__ as one of the most valuable development tools ever published for the Atari. Congratulations and thanks to Clint Parker and OSS for bringing us such an advanced product. You can expect to see plenty of support for this exciting new language in future issues of __ANALOG__.  
+
+## Pulling the wings off a butterfly.
+
+Once I got a taste of __Action!__'s dizzying speed, I had to find out what was going on inside that demonic little cartridge. So I used the W (write object code) option of the __Action!__ monitor to send a copy of the compiled __Screen-Fill__ benchmark to a disk file. Then I read it back into Ralph Jones' __Ultra Disassembler__ (published by Adventure International), massaged the labels and commented the code to make it correspond to the __Action!__ source text, line by line. The result appears in __Listing 8__.
+
+Assembly programmers will appreciate the extraordinary efficiency of the __Action!__ compiler. The code in __Listing 8__ is totally non-recursive. It uses no special stacks or indirect pointers to control the flow of execution, just pure in-line machine code with an occasional JSR into a cartridge library routine. This is "native mode" compilation at its best: simple, clean, and very, very swift. The output of a typical C or Pascal compiler looks like spaghetti by comparison.
+
+Because compiled __Action!__ programs refer to subroutines that reside inside the __Action!__ cartridge, you can't run a program without the cartridge in place. This may come as a disappointment to users who want to give copies of their latest __Action!__ game to friends who don't have __Action!__ OSS plans to remedy this situation by offering a Personal Run-Time Package to licensed __Action!__ users for around $30. It's a utility that will let you turn any __Action!__ program into a self-standing entity that will run with no help at all from the __Action!__ cartridge, thank you. A commercial run-time package will also be offered for a one-time licensing fee of approximately $300. Both may be available by the time you read this; contact OSS directly for more information.
+
+Another $30 will get you OSS's Programmer's Aid Disk (PAD), a collection of demonstration programs and library routines that wouldn't fit into the already crowded __Action!__ cartridge. The libraries include badly-needed support for player/missile graphics, memory management and floating point math, precisely the weaknesses I noted above. The demo programs are very instructive and help to clarify some of the obscure features of the language. You even get a full-blown game program, written in __Action!__ by our very own Joel Gluck.
+
+The PAD squarely addresses many of the shortcomings of the __Action!__ cartridge and documentation, and is an absolute must for all serious owners of the Action! system. In fact, this material ought to be included with every new system sold, even if it means bumping up the price a bit.
+
+## You can bank on it.
+
+The 16K __Action!__ "SuperCartridge" is a technically interesting device in and of itself. It employs a hardware technique called bank-selecting to make itself "look" like an 8K cartridge. This gives you access to the 8K of RAM between $8000-$9FFF that is de-selected and thus rendered useless by a conventional 16K cartridge, such as __AtariWriter__.
+
+The bottom half of the SuperCartridge ($A000- $AFFF) is divided into three independently addressable 4K banks of ROM, which are automatically switched in and out depending on what part of the system is in use. If your Atari has 48K or more memory, it's even possible to address the 4K bank of RAM that resides "under" this half of the cartridge. OSS's new __DOS XL__ operating system takes advantage of this capacity in a most ingenious manner. Look for a report in a future issue.
+
+The bank-select cartridge is a nearly ideal home for Atari software. It gives the cartridge designer a full 16K to work with, enough room for plenty of bells and whistles. It gives the user an instant-loading, highly reliable environment with up to 40K of workspace. And because three of the memory banks occupy the same 4K address range, a bank-select cartridge is very difficult to pirate. Let's hope that more manufacturers start taking advantage of bank-selecting to enhance the value and security of their products.
+
+## Advice and admiration.
+
+I'm sorry to report that the ''Action! Reference Manual'' doesn't do the language justice. In a commendable attempt to satisfy beginners and experts alike, the ''Manual'' suffers from lack of confidence, uncertain organization and a shortage of good, hard technical data. Thank goodness for the numerous sample programs, which communicate a lot more about the system than the text surrounding them.
+
+Having once written the manual for a new (and mercifully obscure) programming language, I can appreciate the difficulties involved in deciding how much needs to be said, to whom, and in what order. Nevertheless, a new language can only be as good as its documentation. Until somebody sits down, rolls up his or her sleeves and writes an authoritative book about __Action!__, it will have a hard time attaining the wide acceptance it so obviously deserves. I conclude this diatribe by acknowledging that the latest edition of the ''Reference Manual'' (in the small yellow notebook) shows a marked improvement over the first release.
+
+The __Action!__ cartridge itself has gone through a couple of changes since its first appearance in August 1983. You can tell which version you have by using the "?" (display memory) command in the monitor to examine cartridge address $B000. If this byte equals $31 hex, you have the original Version 3.1. A value of $33 indicates Version 3.3, in which a number of minor 3.1 bugs have been corrected. The final version is 3.6 ($36 at $B000), which should be ready soon after you read this. OSS has always been very good about maintaining their products, so you shouldn't have any trouble getting an upgrade if you need one. Consult OSS for prices and availability.
+
+I hope my kvetching about the documentation doesn't scare you away. If sensible, structured code and edge-of-the-art speed are what you crave in a high-level language, __Action!__ is exactly what you need. OSS's hideous orange cartridge joins the ranks of __valFORTH__, __Omnimon!__, __ABC__ and __MAC/65__ as one of the most valuable development tools ever published for the Atari. Congratulations and thanks to Clint Parker and OSS for bringing us such an advanced product. You can expect to see plenty of support for this exciting new language in future issues of __ANALOG__.
 ```
 0100 ;           DISASSEMBLY OF COMPILED
 0110 ;           ACTION! SCREEN-FILL
@@ -399,4 +399,4 @@ I hope my kvetching about the documentation doesn't scare you away. If sensible,
 1560 ;
 1570     RTS           ; back to Action! monitor
 ```
-[1](../1/README.md)*Jim Gilbreath, "A High-Level Language Benchmark." ''Byte'', VI, 9 (September 1981), pp. 180-198.  
+[1](../1/README.md)*Jim Gilbreath, "A High-Level Language Benchmark." ''Byte'', VI, 9 (September 1981), pp. 180-198.

@@ -1,53 +1,53 @@
 ---
 title: Local Variables
 ---
-# Collection of Source on local variables  
-  
-The concept of local variables involves assigning parameter names to  
-the values on the data stack on entry into a word.  The parameter names  
-can then be used instead of manipulating the data stack directly.  
-The scheme generally involves moving the parameters from the data stack  
-to some other location like the return stack or a dedicated buffer  
-region.  This implies a certain amount of overhead not normally  
-associated with entering the word.  There is also some overhead involved  
-when the word is exited and the local variables are freed.  The  
-advantages come from not using up processing time with a series of DUP,  
-SWAP, OVER, ROT, ROLL, or PICK functions.  
-  
-For simple, one- or two-line words (the kind of Forth words everyone  
-should strive to write anyway), the use of local variables does not help  
-that much.  A Forth programmer should train himself to visualize at  
-least a three-deep stack in his head.  By using comments with stack  
-pictures, it is relatively easy to keep track.  But for words that just  
-have to have a lot of input parameters (graphics commands for example),  
-using locals makes the code much easier to follow and can actually  
-improve performance.  
-  
-I've seen several different implementations of local variables.  
-They range from the very simple to the very complex.  Regardless of  
-the complexity of implementation, they all seem quite easy to use,  
-however.  The parameter names assigned to the input stack can be either  
-static, meaning that the same names are used in every case, or dynamic,  
-meaning that they are assigned by the programmer at compile time.   The  
-implementations I have seen are all in high level code, but of course,  
-they can be implemented in assembly code for greater performance.  
-Implementations that use the return stack use a set of specialized return  
-stack words that are transparently inserted into the compiled code by  
-immediate words.  These words automatically take into account changes in  
-the depth of the return stack caused by DO-LOOPs, >R, R>, etc.  I also saw  
-an object-oriented approach that defines stack frame objects with their  
-own set of operators.  There are probably many more ways of doing it  
-that I haven't seen yet.  
-  
-After reviewing a set of files I downloaded from a local bulletin  
-board system dedicated to Forth, the East Coast Forth Board, I selected  
-the following code as an example of implementing local variables.  It is  
-the simplest possible implementation I could find (1 block of code).  
-It was written by Wil Baden for the F83X Forth systems, but except for  
-the word CELLS (which is just another word for "2*") it looks to me to  
-be Forth-83 Standard.  It's not the prettiest Forth code in the world,  
-but it should be easy enough to figure out by reading the text.  
-  
+# Collection of Source on local variables
+
+The concept of local variables involves assigning parameter names to
+the values on the data stack on entry into a word.  The parameter names
+can then be used instead of manipulating the data stack directly.
+The scheme generally involves moving the parameters from the data stack
+to some other location like the return stack or a dedicated buffer
+region.  This implies a certain amount of overhead not normally
+associated with entering the word.  There is also some overhead involved
+when the word is exited and the local variables are freed.  The
+advantages come from not using up processing time with a series of DUP,
+SWAP, OVER, ROT, ROLL, or PICK functions.
+
+For simple, one- or two-line words (the kind of Forth words everyone
+should strive to write anyway), the use of local variables does not help
+that much.  A Forth programmer should train himself to visualize at
+least a three-deep stack in his head.  By using comments with stack
+pictures, it is relatively easy to keep track.  But for words that just
+have to have a lot of input parameters (graphics commands for example),
+using locals makes the code much easier to follow and can actually
+improve performance.
+
+I've seen several different implementations of local variables.
+They range from the very simple to the very complex.  Regardless of
+the complexity of implementation, they all seem quite easy to use,
+however.  The parameter names assigned to the input stack can be either
+static, meaning that the same names are used in every case, or dynamic,
+meaning that they are assigned by the programmer at compile time.   The
+implementations I have seen are all in high level code, but of course,
+they can be implemented in assembly code for greater performance.
+Implementations that use the return stack use a set of specialized return
+stack words that are transparently inserted into the compiled code by
+immediate words.  These words automatically take into account changes in
+the depth of the return stack caused by DO-LOOPs, >R, R>, etc.  I also saw
+an object-oriented approach that defines stack frame objects with their
+own set of operators.  There are probably many more ways of doing it
+that I haven't seen yet.
+
+After reviewing a set of files I downloaded from a local bulletin
+board system dedicated to Forth, the East Coast Forth Board, I selected
+the following code as an example of implementing local variables.  It is
+the simplest possible implementation I could find (1 block of code).
+It was written by Wil Baden for the F83X Forth systems, but except for
+the word CELLS (which is just another word for "2*") it looks to me to
+be Forth-83 Standard.  It's not the prettiest Forth code in the world,
+but it should be easy enough to figure out by reading the text.
+
 ```
 SCR # 0 
   0 ( Simple implementation of local variables.      WWB 01JAN87WWB) 

@@ -1,5 +1,5 @@
-# Fast Screen IO  
-  
+# Fast Screen IO
+
 ```
 MODULE
 
@@ -78,5 +78,5 @@ PROC WriteB (BYTE x,y,BYTE val)
 RETURN
 
 ```
-  
-  
+
+

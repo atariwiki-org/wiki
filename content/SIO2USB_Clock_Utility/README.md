@@ -1,36 +1,36 @@
 ---
 title: SIO2USB Clock Utility
 ---
-# SIO2USB Clock Utility  
-  
-General Information  
-  
-Author: Carsten Strotmann   
-Assembler: Bibo-Assembler   
-Published: 19.4.2008   
-Download: [http://home.arcor.de/grasel/restarte.htm](http://home.arcor.de/grasel/restarte.htm)   
-  
-Download: [S2UTIME.ATR](attachments/S2UTIME.ATR)  
-  
-A small utility to read the data and time out of the SIO2USB Device and set the internal Clock in Sparta DOS.  
-  
-Tested with  
-  
-- BW-DOS 1.30  
-- Sparta DOS 3.3a (X33A.DOS)  
-- Sparta DOS 3.2d (X32D.DOS)  
-- Real DOS 1.0a build 24 [http://www.tcpipexpress.com/realdos.html](http://www.tcpipexpress.com/realdos.html)  
-- SpartaDOS X 4.41 [http://trub.atari8.info/index.php?ref=sdx_upgrade_en](http://trub.atari8.info/index.php?ref=sdx_upgrade_en)  
-  
-and with  
-  
-- Atari ROM E: Handler  
-- Sparta DOS X 4.41 XEP80 Handler  
-- Sparta DOS X 4.41 64 Char Handler (CON64)  
-- Sparta DOS X 4.41 Quick E: Handler  
-  
-just load S2UTIME.COM. On BW-DOS you first need to load the Clock Driver "CLOCK ON"  
-  
+# SIO2USB Clock Utility
+
+General Information
+
+Author: Carsten Strotmann
+Assembler: Bibo-Assembler
+Published: 19.4.2008
+Download: [http://home.arcor.de/grasel/restarte.htm](http://home.arcor.de/grasel/restarte.htm) 
+
+Download: [S2UTIME.ATR](attachments/S2UTIME.ATR) 
+
+A small utility to read the data and time out of the SIO2USB Device and set the internal Clock in Sparta DOS.
+
+Tested with
+
+- BW-DOS 1.30
+- Sparta DOS 3.3a (X33A.DOS)
+- Sparta DOS 3.2d (X32D.DOS)
+- Real DOS 1.0a build 24 [http://www.tcpipexpress.com/realdos.html](http://www.tcpipexpress.com/realdos.html)
+- SpartaDOS X 4.41 [http://trub.atari8.info/index.php?ref=sdx_upgrade_en](http://trub.atari8.info/index.php?ref=sdx_upgrade_en)
+
+and with
+
+- Atari ROM E: Handler
+- Sparta DOS X 4.41 XEP80 Handler
+- Sparta DOS X 4.41 64 Char Handler (CON64)
+- Sparta DOS X 4.41 Quick E: Handler
+
+just load S2UTIME.COM. On BW-DOS you first need to load the Clock Driver "CLOCK ON"
+
 ```
 01000          .LI OFF
 01010 **********************
@@ -314,22 +314,22 @@ just load S2UTIME.COM. On BW-DOS you first need to load the Clock Driver "CLOCK 
 03790          .DA START
 03800 ------------------------------
 ```
-  
+
 ---
-Stefan Haubenthal | 22.04.2008 at 03:13 PM  
-Short optimization:  
-  
-01900 INY 01910 INY 01920 INY 01930 LDA SDBASE,Y  
-  
-01900 LDA SDKRNL,Y  
-  
+Stefan Haubenthal | 22.04.2008 at 03:13 PM
+Short optimization:
+
+01900 INY 01910 INY 01920 INY 01930 LDA SDBASE,Y
+
+01900 LDA SDKRNL,Y
+
 ---
-Carsten Strotmann | 25.04.2008 at 03:30 PM  
-  
-Hello Stefan,  
-  
-thanks for the patch. Sometimes I don't see the forrest because of the trees ;)  
-  
-I'll change this in the next version (on VCFe in Munich this weekend). Also, the structure of the source can be optimized.  
-  
-Also, I would like to detect the different configurations of SpartaDOS X (banked, osram, none)  
+Carsten Strotmann | 25.04.2008 at 03:30 PM
+
+Hello Stefan,
+
+thanks for the patch. Sometimes I don't see the forrest because of the trees ;)
+
+I'll change this in the next version (on VCFe in Munich this weekend). Also, the structure of the source can be optimized.
+
+Also, I would like to detect the different configurations of SpartaDOS X (banked, osram, none)

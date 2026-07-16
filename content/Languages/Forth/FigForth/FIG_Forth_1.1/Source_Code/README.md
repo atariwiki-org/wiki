@@ -1,5 +1,5 @@
 # FigForth 1.1 Source Code
-  
+
 ```
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 
@@ -3449,9 +3449,9 @@ SCR #  2D
 ;S 
 
 ```
-  
-'Screens'  
-  
+
+'Screens'
+
 ```
 SCR # 14 
   0 ( ERROR MESSAGES )
@@ -4355,4 +4355,4 @@ SCR # 63
 
 
 ```
-  
+

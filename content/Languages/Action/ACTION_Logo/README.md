@@ -1,25 +1,25 @@
 ---
 title: ACTION Logo
 ---
-General Information   
-Author: 	Clinton Parker   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	April 13, 1983   
-  
-Copyright 1983 by Action Computer Services last modified April 13, 1983  
-  
-CIS Notice:  
-  
-I am providing the program for you to look at and maybe help you get started with ACTION!.  It was written 'quick and dirty' and as such does not have many comments and is not the best of code in many places.  Feel free to show it to anyone you like as long as you keep the copyright notice.  
-  
-In case you are interested, this is the company logo for Action Computer Services (ACS).  
-  
-- Clinton Parker 70435,625  
-  
-PS: Hit ESC to exit program  
-  
-  
+General Information
+Author: 	Clinton Parker
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	April 13, 1983
+
+Copyright 1983 by Action Computer Services last modified April 13, 1983
+
+CIS Notice:
+
+I am providing the program for you to look at and maybe help you get started with ACTION!.  It was written 'quick and dirty' and as such does not have many comments and is not the best of code in many places.  Feel free to show it to anyone you like as long as you keep the copyright notice.
+
+In case you are interested, this is the company logo for Action Computer Services (ACS).
+
+- Clinton Parker 70435,625
+
+PS: Hit ESC to exit program
+
+
 ```
 ; CIS Notice:
 		 

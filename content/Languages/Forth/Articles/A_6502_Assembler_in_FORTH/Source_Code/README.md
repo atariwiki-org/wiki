@@ -1,5 +1,5 @@
-# 6502 Assembler in Forth (fig style)  
-  
+# 6502 Assembler in Forth (fig style)
+
 ```
 SCR # 81
 0 (  FORTH-65 ASSEMBLER                                WFR-79JUN03 )
@@ -116,4 +116,4 @@ SCR # 86
 
 
 ```
-  
+

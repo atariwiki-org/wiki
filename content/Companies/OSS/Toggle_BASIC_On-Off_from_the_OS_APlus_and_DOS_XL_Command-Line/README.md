@@ -1,8 +1,8 @@
-# Toggle BASIC on/off from OS/A+ and DOS XL Command-Line  
-  
+# Toggle BASIC on/off from OS/A+ and DOS XL Command-Line
+
 For OS/A+ and DOS XL and, may also work on SpartaDos and other command-line DOS Versions.
 The fource code is in SynAssembler format.
- 
+
 ```
 00010 ;SAVE"D:BASIC.SYN
 00020          .LI OFF

@@ -1,134 +1,134 @@
 ---
 title: Cartridges
 ---
-# All you ever wanted to know about: Atari Cartridges  
-  
-  
-  
-This is a big collection of info-texts, that all deal with Atari cartridges. Allthough I did not write any of these texts, I collected them and now present them here for you. There are four different texts in total, thus you can read four different parts - ranging from general information (RAM/ROM control) to more and more specific information and finally some programming hints (and source!) on how to convert game files into Atari cartridges...  
-  
-# PART 1 RAM/ROM Control On An XL/XE Computer  
-  
-by John Picken  
-  
-## AUXILIARY ROM CONTROL  
-  
-Program control of Atari BASIC, OSS Super Cartridges, the R-Time 8  
-cartridge and, in a limited fashion, SpartaDOS X, is fairly simple  
-but for one fact: there's nearly no documentation available on the  
-subject. What I present here is gleaned from a bit of disassembly  
-and a lot of experimentation (pretentious word for "try it until it  
-don't crash").  
-  
-Note that all following references to a cartridge being "present"  
-imply that it is turned on if it's plugged in but turned off,  
-consider it "absent". You may always consider the RT8 to be absent  
-unless you're actually trying to access it. First let's look at the  
-addresses used for, or in conjunction with, auxiliary ROM/RAM  
-control. PORTB has already been covered; just keep in mind the function of  
-the BASIC bit.  
-  
-BASICF is a flag in low memory to tell the OS, on system reset, how  
-to set bit 1 of PORTB. If this flag contains any  non-zero value  
-the BASIC ROM will be disabled.  
-  
-TRIG3 is an address on the GTIA chip which was used for joystick  
-trigger #3 on the 400/800. On the XL/XE it is a cartridge status  
-indicator; if a cartridge is present it reads 1, otherwise it will  
-be 0. There is no other possible reading at this address.  
-  
-GINTLK is set, on boot, by the OS and is a copy of TRIG3. The OS  
-compares GINTLK with TRIG3 during the deferred vertical blank  
-interrupt and, if the two don't match, goes into a "soft" lockup  
-(i.e. a reset will re-boot).  
-  
-CARTCK holds a checksum, calculated on boot, by the OS. On a reset,  
-if a cartridge is present as signalled by TRIG3, the OS  
-re-calculates the sum and compares it with CARTCK. If the two don't  
-match, the OS assumes you've pulled or inserted a cartridge and  
-immediately re-boots. Note that Mapping the Atari is vague on this:  
-it applies to all XL/XE's, not just the 1200.  
-  
-CARTCK, TRIG3 and GINTLK are effective for all cartridges except  
-(in part) the RT8. One other important thing to note is that the  
-TRIG3/GINTLK comparison occurs during the deferred vertical blank.  
-This means you can barl around with a cartridge to your heart's  
-content as long as the stage two vblank doesn't occur and you don't  
-hit Reset. You can prohibit vblank2 in any of three ways: disable  
-all NMI's, set CRITIC to a non-zero value or, most simply, use a  
-SEI opcode.  
-  
-The hardware address range for all cartridge control is  
-$D500-$D5FF. Within that page, OSS cartridges use $D500-$D50F, the  
-CSS MUX OS uses $D570-$D57F, the RT8 uses $D5B8-$D5B9, and SDX uses  
-$D5E0-$D5EF. This sounds straightforward; unfortunately it isn't.  
-  
-## Atari-type Cartridges  
-  
-I made no mention of Atari cartridges in the address ranges because  
-once you stick one of the beasts into the slot, your only control  
-over it comes with the power switch or by using SDX. An Atari  
-cartridge can not be turned off by software unless SDX is present  
-(even if turned off). SDX can control one because it sits between  
-the computer and the cartridge and can, thereby, zap it  
-electronically. However, the foregoing discussion of TRIG3 and  
-GINTLK remains fully applicable.  
-  
-## OSS Super Cartridges  
-  
-Though the control range is $D500 to $D50F, the cartridge address  
-decode logic is only four bits wide. This means that any access  
-(read from, write to, or otherwise manipulate) a $D5xy address  
-affects the cartridge which ignores the "x". OSS cartridges react  
-to the whole $D500 page based on the low four bits of the address.  
-  
-To enable an OSS cartridge bank, add the bank number to $D500 and  
-access that address (i.e. for bank n, STA $D50n, LDA $D50n, STA  
-$D500,X where the x register holds n, etc.) In theory, a cartridge  
-should be able to contain up to sixteen 8k banks and still allow  
-you to turn it off. In practice, they contain two or three  
-switchable 4k banks and one "master" 4k bank.  
-  
-For OSS cartridges, the ROM bank number is found at location $AFFF.  
-Valid values at $AFFF are 0, 3 and 4 for Action! and 0, 1 and 9 for  
-MAC/65. Other bank values produce varying results. MAC/65 ignores  
-bits 1 and 2 so any value from 0 to 7 results in selection of  
-either the odd or even bank. With Action! attempts to select other  
-bank numbers result in selection of one of the real ones or in  
-selection of nothing i.e. a monitor shows a pile of $AF's in the  
-$AF page just as when you examine page $D7 and get $D7 at all  
-addresses. BASIC XE has banks 0, 1 and 9 but bank 9 is RAM. In bank  
-9, the BXE cartridge is off but TRIG3 stays high; a sneaky way to  
-avoid having to worry about GINTLK while using the RAM under the  
-cartridge.  
-  
-There are two constants for cartridges: Addressing bit 3 alone  
-turns cartridge ROM off and, bank 0 is the bank in which the  
-cartridge boots and initializes. Here are "maps" of the banks in  
-two cartridges:  
-  
-MAC/65  
+# All you ever wanted to know about: Atari Cartridges
+
+
+
+This is a big collection of info-texts, that all deal with Atari cartridges. Allthough I did not write any of these texts, I collected them and now present them here for you. There are four different texts in total, thus you can read four different parts - ranging from general information (RAM/ROM control) to more and more specific information and finally some programming hints (and source!) on how to convert game files into Atari cartridges...
+
+# PART 1 RAM/ROM Control On An XL/XE Computer
+
+by John Picken
+
+## AUXILIARY ROM CONTROL
+
+Program control of Atari BASIC, OSS Super Cartridges, the R-Time 8
+cartridge and, in a limited fashion, SpartaDOS X, is fairly simple
+but for one fact: there's nearly no documentation available on the
+subject. What I present here is gleaned from a bit of disassembly
+and a lot of experimentation (pretentious word for "try it until it
+don't crash").
+
+Note that all following references to a cartridge being "present"
+imply that it is turned on if it's plugged in but turned off,
+consider it "absent". You may always consider the RT8 to be absent
+unless you're actually trying to access it. First let's look at the
+addresses used for, or in conjunction with, auxiliary ROM/RAM
+control. PORTB has already been covered; just keep in mind the function of
+the BASIC bit.
+
+BASICF is a flag in low memory to tell the OS, on system reset, how
+to set bit 1 of PORTB. If this flag contains any  non-zero value
+the BASIC ROM will be disabled.
+
+TRIG3 is an address on the GTIA chip which was used for joystick
+trigger #3 on the 400/800. On the XL/XE it is a cartridge status
+indicator; if a cartridge is present it reads 1, otherwise it will
+be 0. There is no other possible reading at this address.
+
+GINTLK is set, on boot, by the OS and is a copy of TRIG3. The OS
+compares GINTLK with TRIG3 during the deferred vertical blank
+interrupt and, if the two don't match, goes into a "soft" lockup
+(i.e. a reset will re-boot).
+
+CARTCK holds a checksum, calculated on boot, by the OS. On a reset,
+if a cartridge is present as signalled by TRIG3, the OS
+re-calculates the sum and compares it with CARTCK. If the two don't
+match, the OS assumes you've pulled or inserted a cartridge and
+immediately re-boots. Note that Mapping the Atari is vague on this:
+it applies to all XL/XE's, not just the 1200.
+
+CARTCK, TRIG3 and GINTLK are effective for all cartridges except
+(in part) the RT8. One other important thing to note is that the
+TRIG3/GINTLK comparison occurs during the deferred vertical blank.
+This means you can barl around with a cartridge to your heart's
+content as long as the stage two vblank doesn't occur and you don't
+hit Reset. You can prohibit vblank2 in any of three ways: disable
+all NMI's, set CRITIC to a non-zero value or, most simply, use a
+SEI opcode.
+
+The hardware address range for all cartridge control is
+$D500-$D5FF. Within that page, OSS cartridges use $D500-$D50F, the
+CSS MUX OS uses $D570-$D57F, the RT8 uses $D5B8-$D5B9, and SDX uses
+$D5E0-$D5EF. This sounds straightforward; unfortunately it isn't.
+
+## Atari-type Cartridges
+
+I made no mention of Atari cartridges in the address ranges because
+once you stick one of the beasts into the slot, your only control
+over it comes with the power switch or by using SDX. An Atari
+cartridge can not be turned off by software unless SDX is present
+(even if turned off). SDX can control one because it sits between
+the computer and the cartridge and can, thereby, zap it
+electronically. However, the foregoing discussion of TRIG3 and
+GINTLK remains fully applicable.
+
+## OSS Super Cartridges
+
+Though the control range is $D500 to $D50F, the cartridge address
+decode logic is only four bits wide. This means that any access
+(read from, write to, or otherwise manipulate) a $D5xy address
+affects the cartridge which ignores the "x". OSS cartridges react
+to the whole $D500 page based on the low four bits of the address.
+
+To enable an OSS cartridge bank, add the bank number to $D500 and
+access that address (i.e. for bank n, STA $D50n, LDA $D50n, STA
+$D500,X where the x register holds n, etc.) In theory, a cartridge
+should be able to contain up to sixteen 8k banks and still allow
+you to turn it off. In practice, they contain two or three
+switchable 4k banks and one "master" 4k bank.
+
+For OSS cartridges, the ROM bank number is found at location $AFFF.
+Valid values at $AFFF are 0, 3 and 4 for Action! and 0, 1 and 9 for
+MAC/65. Other bank values produce varying results. MAC/65 ignores
+bits 1 and 2 so any value from 0 to 7 results in selection of
+either the odd or even bank. With Action! attempts to select other
+bank numbers result in selection of one of the real ones or in
+selection of nothing i.e. a monitor shows a pile of $AF's in the
+$AF page just as when you examine page $D7 and get $D7 at all
+addresses. BASIC XE has banks 0, 1 and 9 but bank 9 is RAM. In bank
+9, the BXE cartridge is off but TRIG3 stays high; a sneaky way to
+avoid having to worry about GINTLK while using the RAM under the
+cartridge.
+
+There are two constants for cartridges: Addressing bit 3 alone
+turns cartridge ROM off and, bank 0 is the bank in which the
+cartridge boots and initializes. Here are "maps" of the banks in
+two cartridges:
+
+MAC/65
 ```
 0123456789ABCDEF: Bank Selection 
 rrrrrrrr r r r r: r=rom, empty=ram 
 01010101 9 9 9 9: bank # 
 01       9      : valid rom banks 
 ```
-  
-Action!  
+
+Action!
 ```
 0123456789ABCDEF: Bank Selection 
 rrrrrr r        : r=rom, empty=ram 
 000340 3        : bank # 
 0  34           : valid rom banks 
 ```
-  
-### OSS Cartridge Examples  
-  
-Following are several examples of cartridge and BASIC control with  
-SDX not present. I'll start with equates for all examples from  
-Mapping the Atari (XL edition):  
-  
+
+### OSS Cartridge Examples
+
+Following are several examples of cartridge and BASIC control with
+SDX not present. I'll start with equates for all examples from
+Mapping the Atari (XL edition):
+
 ```
 WARMST = $08 
 BOOT?  = $09 
@@ -143,10 +143,10 @@ PORTB  = $D301
 NMIEN  = $D40E 
 EDITRV = $E400 
 ```
-  
-Here's the simplest: turn off a cartridge and enable BASIC assuming  
-both are actually present.  
-  
+
+Here's the simplest: turn off a cartridge and enable BASIC assuming
+both are actually present.
+
 ```
  SEI         Kill stage 2 vblank 
  STA $D508   Kill any cartridge 
@@ -158,10 +158,10 @@ both are actually present.
  STA GINTLK  correct the cart shadow 
  CLI         Enable stage 2 vblank 
 ```
-  
-  
-Now let's access RAM under a cartridge:  
-  
+
+
+Now let's access RAM under a cartridge:
+
 ```
  SEI         Kill stage 2 vblank 
  LDA PORTB 
@@ -179,9 +179,9 @@ GOTBNK
  STA GINTLK  the stage 2 vblank! 
  CLI         Enable stage 2 vblank 
 ```
-  
-Do whatever in the RAM, then restore the previous status:  
-  
+
+Do whatever in the RAM, then restore the previous status:
+
 ```
  SEI         Kill stage 2 vblank 
  PLA         Recover cartridge bank 
@@ -193,9 +193,9 @@ Do whatever in the RAM, then restore the previous status:
  STA PORTB   rom status 
  CLI         Enable stage 2 vblank 
 ```
-  
-Just turning a cartridge off is simple:  
-  
+
+Just turning a cartridge off is simple:
+
 ```
  SEI         Kill vblank 2 
  STA $D508 
@@ -203,9 +203,9 @@ Just turning a cartridge off is simple:
  STA GINTLK  off and flag it 
  CLI         Enable stage 2 vblank 
 ```
-  
-Cold-starting an OSS cartridge is only slightly more complex:  
-  
+
+Cold-starting an OSS cartridge is only slightly more complex:
+
 ```
  SEI         Kill vblank 2 
  STA $D500   Enable cart bank 0 
@@ -227,15 +227,15 @@ CSLOOP
  STA PORTB   OS (or Sparta) 
  CLI         Enable stage 2 
 ```
-  
-After cold-starting an OSS cartridge or BASIC, set WARMST to 0 to  
-flag a boot so that the buffer pointers are cleared (if you don't,  
-you can, for example enter BASIC, type LIST and get an endless  
-display of zeros and/or a lockup). Then initialize the ROM. With  
-Action! and BASIC this doesn't matter as the initialization  
-routines just RTS; with BASIC XE I'm not sure; with MAC/65 it's  
-required. To initialize any cartridge:  
-  
+
+After cold-starting an OSS cartridge or BASIC, set WARMST to 0 to
+flag a boot so that the buffer pointers are cleared (if you don't,
+you can, for example enter BASIC, type LIST and get an endless
+display of zeros and/or a lockup). Then initialize the ROM. With
+Action! and BASIC this doesn't matter as the initialization
+routines just RTS; with BASIC XE I'm not sure; with MAC/65 it's
+required. To initialize any cartridge:
+
 ```
  LDX #$FF    Say we're on a boot 
  STX COLDST  and make sure all 
@@ -255,15 +255,15 @@ required. To initialize any cartridge:
 INIT 
  JMP ($BFFE) Cartridge init vector 
 ```
-  
-After enabling or disabling a cartridge or BASIC, you also have to  
-ensure top of RAM and screen pointers are correct. To do this,  
-execute a "GRAPHICS 0". In machine language terms, you set RAMTOP  
-and then close and re-open channel 0 to the "E:" device. You can do  
-this in the traditional manner via CIOV or more simply by calling  
-the following subroutine with the accumulator holding $C0 if  
-turning ROM off and $A0 if turning it on.  
-  
+
+After enabling or disabling a cartridge or BASIC, you also have to
+ensure top of RAM and screen pointers are correct. To do this,
+execute a "GRAPHICS 0". In machine language terms, you set RAMTOP
+and then close and re-open channel 0 to the "E:" device. You can do
+this in the traditional manner via CIOV or more simply by calling
+the following subroutine with the accumulator holding $C0 if
+turning ROM off and $A0 if turning it on.
+
 ```
 GRAPH0 
  STA RAMTOP Either $A0 or $C0 
@@ -278,36 +278,36 @@ EDO
  PHA 
  RTS 
 ```
-  
-Be aware that turning off BASIC XE does not free up the RAM under  
-the cartridge if you intend to later restore the cartridge. BXE  
-uses that RAM as well as that under the OS floating point routines  
-and also (undocumented) sets an interrupt vector in the last page  
-of RAM ($FFFx).  
-  
-One final note on turning ROM off or on: following the Graphics 0,  
-an RTS under Sparta will usually lock up the keyboard requiring a  
-reset. Sparta installs its own E: handler so when you use the OS  
-handler to reopen E: Sparta's vectors are no longer valid. The  
-simple way around this is to exit via a JMP (DOSVEC). This is  
-probably a good idea with any command-processor FMS where you can  
-use a batch file instead of an autorun to set things up.  
-  
-## The SpartaDOS X Cartridge  
-  
-SDX boots in bank 0 but normally works in bank 1 with one  
-subroutine call back to bank 0 via low RAM which I suspect is used  
-to load files from CAR: The cartridge contains eight different ROM  
-banks (0 to 7), but I have not discovered any single location  
-containing a bank identifier and I doubt there is one as its  
-existence essentially would mean a "hole" in the middle of each  
-ROMdisk bank. The control address for the X cartridge is $D5E0 used  
-similarly to $D500 with an OSS cartridge.  
-  
-The following code will leave the currently selected bank in the Y  
-register with version 4.20. With other versions, you're on your  
-own.  
-  
+
+Be aware that turning off BASIC XE does not free up the RAM under
+the cartridge if you intend to later restore the cartridge. BXE
+uses that RAM as well as that under the OS floating point routines
+and also (undocumented) sets an interrupt vector in the last page
+of RAM ($FFFx).
+
+One final note on turning ROM off or on: following the Graphics 0,
+an RTS under Sparta will usually lock up the keyboard requiring a
+reset. Sparta installs its own E: handler so when you use the OS
+handler to reopen E: Sparta's vectors are no longer valid. The
+simple way around this is to exit via a JMP (DOSVEC). This is
+probably a good idea with any command-processor FMS where you can
+use a batch file instead of an autorun to set things up.
+
+## The SpartaDOS X Cartridge
+
+SDX boots in bank 0 but normally works in bank 1 with one
+subroutine call back to bank 0 via low RAM which I suspect is used
+to load files from CAR: The cartridge contains eight different ROM
+banks (0 to 7), but I have not discovered any single location
+containing a bank identifier and I doubt there is one as its
+existence essentially would mean a "hole" in the middle of each
+ROMdisk bank. The control address for the X cartridge is $D5E0 used
+similarly to $D500 with an OSS cartridge.
+
+The following code will leave the currently selected bank in the Y
+register with version 4.20. With other versions, you're on your
+own.
+
 ```
  LDA $A004 
  LDY #7 
@@ -325,12 +325,12 @@ XBANK
  .BYTE $D4,$1C,$61,$56 
 
 ```
-  
-The ROMdisk directory is at the beginning of bank 2 and follows  
-normal Sparta format except that the address of the first sector  
-map is the actual starting location in ROM of the stored program.  
-The first two entries look like this:  
-  
+
+The ROMdisk directory is at the beginning of bank 2 and follows
+normal Sparta format except that the address of the first sector
+map is the actual starting location in ROM of the stored program.
+The first two entries look like this:
+
 ```
  .BYTE $08   Status: In use 
  .WORD 16384 Start: Bank 2 Offset 0 
@@ -349,23 +349,23 @@ The first two entries look like this:
  .BYTE 15,28,40 Time 
 ;
 ```
-  
-To convert the starting address to a bank and offset within the  
-bank:  
+
+To convert the starting address to a bank and offset within the
+bank:
 ```
       bank = int(address/$2000)   and 
     offset = address-$2000*bank 
 ```
-  
-CAR.COM uses the following combinations to control all three ROMs  
-in the cartridge area. The values under "SDX" and "OSS" are offsets  
-from $D5E0 and $D500 respectively and those under BAS are the value  
-in bit 1 of PORTB. The "on" under the OSS column is the value found  
-at $AFFF before the cartridge was last turned off and used to  
-reenable it. The $0C value for SDX is what causes it to latch any  
-cartridge off and the $08 makes it transparent so that the  
-cartridge ROM is accessible.  
-  
+
+CAR.COM uses the following combinations to control all three ROMs
+in the cartridge area. The values under "SDX" and "OSS" are offsets
+from $D5E0 and $D500 respectively and those under BAS are the value
+in bit 1 of PORTB. The "on" under the OSS column is the value found
+at $AFFF before the cartridge was last turned off and used to
+reenable it. The $0C value for SDX is what causes it to latch any
+cartridge off and the $08 makes it transparent so that the
+cartridge ROM is accessible.
+
 ```
      SDX  OSS  BAS  OPERATING CONDITION 
      $01  $08   1   in DOS or low RAM 
@@ -373,15 +373,15 @@ cartridge ROM is accessible.
      $0C  $08   0   in BASIC 
      $08   on   1   in cartridge 
 ```
-  
-If you're going to play with SDX banks remember that any read or  
-write to a $D5Ex address will affect an OSS cartridge and TRIG3.  
-Since TRIG3 is affected, GINTLK and CARTCK also come into play. So  
-the example given of how to access RAM under a cartridge needs to  
-be modified if SDX is present. Let's look at a subroutine to access  
-RAM in the cartridge space taking in the possibility of the  
-presence of BASIC, SDX, or an OSS cartridge.  
-  
+
+If you're going to play with SDX banks remember that any read or
+write to a $D5Ex address will affect an OSS cartridge and TRIG3.
+Since TRIG3 is affected, GINTLK and CARTCK also come into play. So
+the example given of how to access RAM under a cartridge needs to
+be modified if SDX is present. Let's look at a subroutine to access
+RAM in the cartridge space taking in the possibility of the
+presence of BASIC, SDX, or an OSS cartridge.
+
 ```
 ROMCTL 
  LDA PORTB 
@@ -413,10 +413,10 @@ CART
  STA $D5E8   Turn off both carts 
  JSR DOSTUFF 
 ```
-  
-We know a cartridge was on. Now  
-we have to restore it correctly.  
-  
+
+We know a cartridge was on. Now
+we have to restore it correctly.
+
 ```
  PLA         Recover bank number 
  CMP #$10    Valid for OSS? (note c.) 
@@ -431,68 +431,68 @@ CARXIT
  CLI 
  RTS 
 ```
-  
-a. The reason for discarding the PORTB entry value is to allow for  
-512k+ RAM expansions. As mentionned previously, the OS doesn't know  
-extra RAM exists and has no way of knowing BASIC may not exist on  
-large upgrades. As a result, it sets PORTB and BASICF based solely  
-on the Option key at boot and uses BASICF to determine which status  
-to restore on a reset. On large RAM upgrades this leads to major  
-problems for programs using extra RAM as the program can end up in  
-the wrong 256k bank. Unless BASIC is actually on, it is always  
-advisable to flag it off and to set its bit high in PORTB.  
-  
-b. We knew a cartridge was on or we never would have got to that  
-portion of the code. As it wasn't the OSS cartridge, it had to be  
-SDX. But, because the dumb OSS cartridge reacts to the $D5E1  
-address, we had to turn it off again after enabling SDX. For the  
-same reason, a single access of $D5E8 was sufficient to turn both  
-off.  
-  
-c. The comparison of the bank number to 16 to determine its  
-validity as an OSS bank number is that used by ICD in the code for  
-the RT8 handler. The test is, I believe, made on the assumption  
-that the X cartridge is in bank 1 where the value at $AFFF is 87  
-for version 4.20. There are two SDX banks where values less than 16  
-are found at $AFFF, namely 0 (value 7) and 4 (value 3).  
-  
-  
-## The R-Time 8  
-  
-Control of the RT8 is built into all versions of Sparta from 3.2  
-on. As far as I know, all you can do with the RT8 is set or get  
-time and date information. The only problem in doing this is that  
-accessing the RT8 registers will affect an OSS cartridge. Because  
-of this the RT8 has two identical user accessible registers $D5B8  
-and $D5B9. According to the RT8 source, addressing $D5B8 will turn  
-off a cartridge and $D5B9 will turn one on.  
-  
-The RT8 has seven internal registers which work in binary coded  
-decimal. Starting from #0 they are: seconds, minutes, hour, day of  
-month, month, year, and day of the week (#6). Seconds and minutes  
-range from 0-59, hours from 0-23, day from 1-31, month from 1-12,  
-year from 0-99. Day of the week ranges from 0 (Saturday) to 6  
-(Friday). When you read or write one of these registers the  
-sequence is always the same:  
-  
-1 Wait until the RT8 is not busy.  
-2 Store a value from 0 to 6 into $D5B8 or $D5B9 indicating the register you wish to address.  
-3 Read/write the same address to get/set the most significant digit (the low four bits are the valid data).  
-4 Read/write the same address to get/set the least signifigant digit (the low four bits are the valid data).  
-  
-The source code released by ICD indicates that reading a register  
-should be repeated up to three times accepting two values that  
-match or, failing a match, the first one. When setting a register,  
-it recommends reading it immediately afterward to ensure the value  
-was really accepted and allowing 10 tries.  
-  
-Here's one way to read and write RT8 registers without worrying  
-about an OSS cartridge. Much of this is from the source released by  
-ICD. In this example, the buffer is set up in the same order as the  
-RT8 registers. With Sparta, you would have to cross refer to the  
-order in which DOS saves time and date and keep a separate byte for  
-day of the week.  
-  
+
+a. The reason for discarding the PORTB entry value is to allow for
+512k+ RAM expansions. As mentionned previously, the OS doesn't know
+extra RAM exists and has no way of knowing BASIC may not exist on
+large upgrades. As a result, it sets PORTB and BASICF based solely
+on the Option key at boot and uses BASICF to determine which status
+to restore on a reset. On large RAM upgrades this leads to major
+problems for programs using extra RAM as the program can end up in
+the wrong 256k bank. Unless BASIC is actually on, it is always
+advisable to flag it off and to set its bit high in PORTB.
+
+b. We knew a cartridge was on or we never would have got to that
+portion of the code. As it wasn't the OSS cartridge, it had to be
+SDX. But, because the dumb OSS cartridge reacts to the $D5E1
+address, we had to turn it off again after enabling SDX. For the
+same reason, a single access of $D5E8 was sufficient to turn both
+off.
+
+c. The comparison of the bank number to 16 to determine its
+validity as an OSS bank number is that used by ICD in the code for
+the RT8 handler. The test is, I believe, made on the assumption
+that the X cartridge is in bank 1 where the value at $AFFF is 87
+for version 4.20. There are two SDX banks where values less than 16
+are found at $AFFF, namely 0 (value 7) and 4 (value 3).
+
+
+## The R-Time 8
+
+Control of the RT8 is built into all versions of Sparta from 3.2
+on. As far as I know, all you can do with the RT8 is set or get
+time and date information. The only problem in doing this is that
+accessing the RT8 registers will affect an OSS cartridge. Because
+of this the RT8 has two identical user accessible registers $D5B8
+and $D5B9. According to the RT8 source, addressing $D5B8 will turn
+off a cartridge and $D5B9 will turn one on.
+
+The RT8 has seven internal registers which work in binary coded
+decimal. Starting from #0 they are: seconds, minutes, hour, day of
+month, month, year, and day of the week (#6). Seconds and minutes
+range from 0-59, hours from 0-23, day from 1-31, month from 1-12,
+year from 0-99. Day of the week ranges from 0 (Saturday) to 6
+(Friday). When you read or write one of these registers the
+sequence is always the same:
+
+1 Wait until the RT8 is not busy.
+2 Store a value from 0 to 6 into $D5B8 or $D5B9 indicating the register you wish to address.
+3 Read/write the same address to get/set the most significant digit (the low four bits are the valid data).
+4 Read/write the same address to get/set the least signifigant digit (the low four bits are the valid data).
+
+The source code released by ICD indicates that reading a register
+should be repeated up to three times accepting two values that
+match or, failing a match, the first one. When setting a register,
+it recommends reading it immediately afterward to ensure the value
+was really accepted and allowing 10 tries.
+
+Here's one way to read and write RT8 registers without worrying
+about an OSS cartridge. Much of this is from the source released by
+ICD. In this example, the buffer is set up in the same order as the
+RT8 registers. With Sparta, you would have to cross refer to the
+order in which DOS saves time and date and keep a separate byte for
+day of the week.
+
 ```
  *= $F0   Floating point zero page 
 TEMP1 
@@ -519,9 +519,9 @@ BUFFER
 SAVBNK 
  PHA         Save cart bank 
 ```
-  
-Verify rt8 present and working  
-  
+
+Verify rt8 present and working
+
 ```
  JSR READ    Get seconds 
  CMP #60 
@@ -558,9 +558,9 @@ EXIT
  LDX #0      Select channel 0 
  JMP CIOV    Exit with message 
 ```
-  
-First read the clock regs into the buffer  
-  
+
+First read the clock regs into the buffer
+
 ```
 RT8OK 
  LDX #6    Point to day of week 
@@ -569,10 +569,10 @@ RCLOOP
  DEX 
  BPL RCLOOP 
 ```
-  
-Change values you want in the buffer and  
-then write it back to the clock  
-  
+
+Change values you want in the buffer and
+then write it back to the clock
+
 ```
  LDX #6 
 RCLOOP 
@@ -679,60 +679,60 @@ SUB10
 WRTXIT 
  RTS 
 ```
-  
-## The Multiplexer! Operating System (MUX)  
-  
-The MUX OS makes frequent access of registers in the $D57x range.  
-A cursory glance at the ROM reveals it uses the following registers  
-on a read-only basis 1, 6 and 7. Registers 2, 3, B, C and E are  
-accessed as write-only while 0 is read/write. Every one of these  
-addresses will affect an OSS cartridge. I found no indication in  
-the MUX code that it makes any effort to accommodate a cartridge,  
-GINTLK or TRIG3.  
-  
-While I have managed to work around an SDX cartridge and an RT8 in  
-controlling BASIC, OSS cartridges, and even Atari cartridges (with  
-SDX present), I can see no way of doing  so with the MUX OS. I  
-believe the idea with the MUX is that once the plug's in the port,  
-you can't use a cartridge anyway. That's kind of unfortunate as it  
-denies you use of a cartridge and access to the built-in monitor.  
-As I don't have a MUX to experiment with, I leave that to someone  
-else.  
-  
-## Cold and Warm Starting and Parallel Devices (PD's)  
-  
-If you turn off an OSS cartridge and then re-boot under most  
-versions of SpartaDOS, you get a "soft" lockup as DOS will enable  
-a cartridge as part of its boot process in testing for BASIC XE.  
-Simply hit Reset and the computer will boot again with the  
-cartridge on. If you want to reenable the SDX cartridge after  
-having turned it off using the COLD command, the method should be  
-obvious by now. What is not obvious are a few other addresses and  
-quirks in warm and cold starting.  
-  
-On boot the OS calculates ROM checksums and compares them to ones  
-stored in the OS itself. If these don't match, boot doesn't happen;  
-you end up staring at the Self Test screen and a red bar under the  
-heading "ROM". This can easily occur on a system with a PD because  
-cold starting the computer does not cold start the PD any more than  
-it does a cartridge. If PD ROM is enabled, as for a modem handler  
-on a BBS, and you attempt to cold start, you will inevitably end up  
-in Self Test because the ROM checksum will fail. It is supposed to  
-include the floating point ROM at $D800, but instead gets a bank of  
-the PD ROM.  
-  
-Finally, if you're just going to warm start, decide whether or not  
-you want to emulate a press of the Reset key. Jumping to the warm  
-start vector at $E474 is not the same as pressing the key; the  
-vector points past the hardware initialization routines. If you  
-want to ensure you clear out all garbage (left over player  
-missiles, keypress, etc.) you have to use the chip reset vector.  
-  
-The following routine has varying results dependant on the entry  
-point. To enable SDX, enter at XCART. To enable an OSS cart alone,  
-enter at CART. To just cold start without touching the cartridges,  
-enter at COLD. To simulate a press of Reset, enter at WARM.  
-  
+
+## The Multiplexer! Operating System (MUX)
+
+The MUX OS makes frequent access of registers in the $D57x range.
+A cursory glance at the ROM reveals it uses the following registers
+on a read-only basis 1, 6 and 7. Registers 2, 3, B, C and E are
+accessed as write-only while 0 is read/write. Every one of these
+addresses will affect an OSS cartridge. I found no indication in
+the MUX code that it makes any effort to accommodate a cartridge,
+GINTLK or TRIG3.
+
+While I have managed to work around an SDX cartridge and an RT8 in
+controlling BASIC, OSS cartridges, and even Atari cartridges (with
+SDX present), I can see no way of doing  so with the MUX OS. I
+believe the idea with the MUX is that once the plug's in the port,
+you can't use a cartridge anyway. That's kind of unfortunate as it
+denies you use of a cartridge and access to the built-in monitor.
+As I don't have a MUX to experiment with, I leave that to someone
+else.
+
+## Cold and Warm Starting and Parallel Devices (PD's)
+
+If you turn off an OSS cartridge and then re-boot under most
+versions of SpartaDOS, you get a "soft" lockup as DOS will enable
+a cartridge as part of its boot process in testing for BASIC XE.
+Simply hit Reset and the computer will boot again with the
+cartridge on. If you want to reenable the SDX cartridge after
+having turned it off using the COLD command, the method should be
+obvious by now. What is not obvious are a few other addresses and
+quirks in warm and cold starting.
+
+On boot the OS calculates ROM checksums and compares them to ones
+stored in the OS itself. If these don't match, boot doesn't happen;
+you end up staring at the Self Test screen and a red bar under the
+heading "ROM". This can easily occur on a system with a PD because
+cold starting the computer does not cold start the PD any more than
+it does a cartridge. If PD ROM is enabled, as for a modem handler
+on a BBS, and you attempt to cold start, you will inevitably end up
+in Self Test because the ROM checksum will fail. It is supposed to
+include the floating point ROM at $D800, but instead gets a bank of
+the PD ROM.
+
+Finally, if you're just going to warm start, decide whether or not
+you want to emulate a press of the Reset key. Jumping to the warm
+start vector at $E474 is not the same as pressing the key; the
+vector points past the hardware initialization routines. If you
+want to ensure you clear out all garbage (left over player
+missiles, keypress, etc.) you have to use the chip reset vector.
+
+The following routine has varying results dependant on the entry
+point. To enable SDX, enter at XCART. To enable an OSS cart alone,
+enter at CART. To just cold start without touching the cartridges,
+enter at COLD. To simulate a press of Reset, enter at WARM.
+
 ```
 XCART 
  SEI         Always before $D5xx access 
@@ -753,46 +753,46 @@ WARM
  STX PORTB   Ensure ROM OS is on to go 
  JMP ($FFFC) through chip reset vector 
 ```
-  
-I won't go any further on this as the Black Box and MIO are, unlike  
-Atari and OSS products, fairly well documented. Whew, when I  
-started this I never thought it would turn into such a monster nor  
-did I think it would take so long to come up with all the ins and  
-outs. Now that you know how easy it is to make use of the RAM under  
-cartridges, under the OS and in extra memory, I look forward to  
-seeing some practical utilities. Here's few suggestions:  
-  
-- "Pop-up" help screens for use in MAC/65, Action! or BASIC.  
-- An 8k RAM cache.  
-- A "pop-up" calculator.  
-- A resident DUP.SYS.  
-- etc.  
-  
-## LATE NOTES  
-  
-I recently was browsing through some old computer magazines and  
-came across an article by Bill Wilkinson dealing with 130XE RAM  
-control. In it he stated that 16k Atari cartridges such as Atari  
-Writer Plus occupy the address space from $8000 to $BFFF rather  
-than using bank switching.  
-  
-As a final addition to this text, I've tacked on part 4 which is  
-MAC/65 source code to produce two simple COM files to dump  
-cartridges to disk for examination. The programs are not  
-sophisticated but will do the trick.  
-  
-Revision: 16 Feb 96  
-  
-## LATER NOTE  
-  
-A message by Bill Wilkinson posted on comp.sys.atari.8bit on 12  
-August 95 validates much of what has been said and revealed a bit  
-more of cartridge construction. His memory was a bit off on address  
-ranges, but his stuff about 4k banking is right on. I dumped MAC/65  
-and Action! to disk files and verified that, in each cartridge, the  
-code from $B000-$BFFF is identical in all three banks. In effect,  
-this indicates a mapping as follows (using MAC/65 as an example):  
-  
+
+I won't go any further on this as the Black Box and MIO are, unlike
+Atari and OSS products, fairly well documented. Whew, when I
+started this I never thought it would turn into such a monster nor
+did I think it would take so long to come up with all the ins and
+outs. Now that you know how easy it is to make use of the RAM under
+cartridges, under the OS and in extra memory, I look forward to
+seeing some practical utilities. Here's few suggestions:
+
+- "Pop-up" help screens for use in MAC/65, Action! or BASIC.
+- An 8k RAM cache.
+- A "pop-up" calculator.
+- A resident DUP.SYS.
+- etc.
+
+## LATE NOTES
+
+I recently was browsing through some old computer magazines and
+came across an article by Bill Wilkinson dealing with 130XE RAM
+control. In it he stated that 16k Atari cartridges such as Atari
+Writer Plus occupy the address space from $8000 to $BFFF rather
+than using bank switching.
+
+As a final addition to this text, I've tacked on part 4 which is
+MAC/65 source code to produce two simple COM files to dump
+cartridges to disk for examination. The programs are not
+sophisticated but will do the trick.
+
+Revision: 16 Feb 96
+
+## LATER NOTE
+
+A message by Bill Wilkinson posted on comp.sys.atari.8bit on 12
+August 95 validates much of what has been said and revealed a bit
+more of cartridge construction. His memory was a bit off on address
+ranges, but his stuff about 4k banking is right on. I dumped MAC/65
+and Action! to disk files and verified that, in each cartridge, the
+code from $B000-$BFFF is identical in all three banks. In effect,
+this indicates a mapping as follows (using MAC/65 as an example):
+
 ```
      Addr: $D500   $D501   $D509   $D508 
      $A000
@@ -802,11 +802,11 @@ this indicates a mapping as follows (using MAC/65 as an example):
                    cc          cc           cc      RAM  
      $BFFF
 ```
-  
-Where: "Addr" is the access address used to enable the configuration,  
-"c0" etc. is the switchable 4k bank and "cc" is the common 4k bank.  
-Substituting "3" and "4" for "1" and "9" above would produce a map  
-of the Action! cartridge.  
+
+Where: "Addr" is the access address used to enable the configuration,
+"c0" etc. is the switchable 4k bank and "cc" is the common 4k bank.
+Substituting "3" and "4" for "1" and "9" above would produce a map
+of the Action! cartridge.
 ```
   .OPT NO LIST,NO EJECT 
 ;  SAVE #D1:CARTDUMP.M65 
@@ -1276,17 +1276,17 @@ MSPEC
  .OPT NO LIST 
  .END
 ```
-  
-- J.K. Picken (EOF) -  
-  
-# Part 2 - THE OSS SUPERCARTRIDGEs  
-  
-Copyright (c) 1984 Ken Roser   (nope, OSS!)  
-  
-__NOTE:This article originally appeared in the  Jersey Atari Computer Group Newsletter.__  
-  
-OSS has recently introduced BASIC XL and ACTION in a cartridge referred to as the supercartridge. This article will explain the advantages of using such a cartridge and describe in detail how the cartridge works.   The advantage of using the supercartridge  hardware is that one can have 16K (K = 1  kilobyte) of ROM and 8K of RAM all within  only 8K of memory address space. What this  means is more of your precious memory is  available for your programs and data instead  of being used up by a 16K cartridge or a  large applications program or interpreter.   This efficient use of memory resources is  accomplished by selectively activating 4K  segments of two 2764 (8 Kilobyte x 8 bit)  EPROMS. Only two 4K banks out of the  possible 4 can be selected at one time.   There are 2 EPROMS located on the  supercartridge board that I have designated  ROM A and ROM B. The upper 4K of ROM A will  always reside in the $B000-$BFFF address  range when the RAM is deselected. The other  4K banks (ROM B upper, ROM B lower, and ROM  A lower) can selectively be mapped into the  $A000-$AFFF address range. Optionally all  the ROMs can be deselected and the  computer's existing RAM can be accessed in  the $A000-$BFFF memory range.   The bank switching is accomplished by  writing to a memory address within the range  $D500-$D5FF. When this write occurs, address  bits A0 thru A3 are latched into a 4 bit  register located on the cartridge. The  status of each bit determines the current  mapping configuration to be put into effect.   The following tables are used to show what  each address bit actually does in the  cartridge.   A0 always controls the selection of ROM A.  A1 always controls the selection of ROM B.  A2 selects which half of ROM B is used when  it is selected. A3 selects/deselects RAM.   BIT A0   This table shows what portion of ROM A will  be used in each address range dependent on  the state of A0.  
-  
+
+- J.K. Picken (EOF) -
+
+# Part 2 - THE OSS SUPERCARTRIDGEs
+
+Copyright (c) 1984 Ken Roser   (nope, OSS!)
+
+__NOTE:This article originally appeared in the  Jersey Atari Computer Group Newsletter.__
+
+OSS has recently introduced BASIC XL and ACTION in a cartridge referred to as the supercartridge. This article will explain the advantages of using such a cartridge and describe in detail how the cartridge works.   The advantage of using the supercartridge  hardware is that one can have 16K (K = 1  kilobyte) of ROM and 8K of RAM all within  only 8K of memory address space. What this  means is more of your precious memory is  available for your programs and data instead  of being used up by a 16K cartridge or a  large applications program or interpreter.   This efficient use of memory resources is  accomplished by selectively activating 4K  segments of two 2764 (8 Kilobyte x 8 bit)  EPROMS. Only two 4K banks out of the  possible 4 can be selected at one time.   There are 2 EPROMS located on the  supercartridge board that I have designated  ROM A and ROM B. The upper 4K of ROM A will  always reside in the $B000-$BFFF address  range when the RAM is deselected. The other  4K banks (ROM B upper, ROM B lower, and ROM  A lower) can selectively be mapped into the  $A000-$AFFF address range. Optionally all  the ROMs can be deselected and the  computer's existing RAM can be accessed in  the $A000-$BFFF memory range.   The bank switching is accomplished by  writing to a memory address within the range  $D500-$D5FF. When this write occurs, address  bits A0 thru A3 are latched into a 4 bit  register located on the cartridge. The  status of each bit determines the current  mapping configuration to be put into effect.   The following tables are used to show what  each address bit actually does in the  cartridge.   A0 always controls the selection of ROM A.  A1 always controls the selection of ROM B.  A2 selects which half of ROM B is used when  it is selected. A3 selects/deselects RAM.   BIT A0   This table shows what portion of ROM A will  be used in each address range dependent on  the state of A0.
+
 ```
 A000-AFFF      B000-BFFF
                       _____________________________________
@@ -1297,11 +1297,11 @@ A000-AFFF      B000-BFFF
                 A0=1 |   ROM A lower    |   ROM A upper    |
                      |__________________|__________________|
 ```
-  
-BIT A1  
-This table shows when ROM B is selected. The  
-half of ROM B used is determined by A2.  
-  
+
+BIT A1
+This table shows when ROM B is selected. The
+half of ROM B used is determined by A2.
+
 ```
                           A000-AFFF         B000-BFFF
                       _____________________________________
@@ -1314,10 +1314,10 @@ half of ROM B used is determined by A2.
 
 
 ```
-BIT A2  
-This table shows which half of ROM B is used  
-when it is selected.  
-  
+BIT A2
+This table shows which half of ROM B is used
+when it is selected.
+
 ```
                             ____________________________
                            :                            :
@@ -1328,10 +1328,10 @@ when it is selected.
                            :____________________________:
 
 ```
-  
-BIT A3  
-This table shows the effect of A3.  
-  
+
+BIT A3
+This table shows the effect of A3.
+
 ```
                            ____________________________
                           :                            :
@@ -1342,8 +1342,8 @@ This table shows the effect of A3.
                           :____________________________:
 
 ```
-Make note that some of these options can not  be selected simultaneously. For example, an  illegal option would be A0=1 and A1=0. In  that case both ROM A lower and ROM B would  be selected for the $A000-$AFFF address  range.   Possible Valid Configurations:   These diagrams represent the segments of ROM  and/or RAM that will be activated when the  address shown is written to.  
-  
+Make note that some of these options can not  be selected simultaneously. For example, an  illegal option would be A0=1 and A1=0. In  that case both ROM A lower and ROM B would  be selected for the $A000-$AFFF address  range.   Possible Valid Configurations:   These diagrams represent the segments of ROM  and/or RAM that will be activated when the  address shown is written to.
+
 ```
                          __________            __________
                    $A000:          :     $A000:          :
@@ -1394,9 +1394,9 @@ Make note that some of these options can not  be selected simultaneously. For ex
                                    $D508-$D50F
 
 ```
-  
-If one was to combine the above  configurations into one diagram, you would  get something like this representing the  possible configurations:  
-  
+
+If one was to combine the above  configurations into one diagram, you would  get something like this representing the  possible configurations:
+
 ```
                         _______________________________________
                   $A000:             :             :           :
@@ -1409,9 +1409,9 @@ If one was to combine the above  configurations into one diagram, you would  get
                   $BFFF:_______________________________________:
 
 ```
-  
-When ROM is swapped out for RAM, the entire range $A000-$BFFF no longer has ROM. The ROM can only be swapped out in the entire 8K range. In the ACTION! cartridge ROM A is designated MA and ROM B is designated LI. In the BASIC XL cartridge ROM A is designated as BAS-H and ROM B is designated as BAS-L.  
-  
+
+When ROM is swapped out for RAM, the entire range $A000-$BFFF no longer has ROM. The ROM can only be swapped out in the entire 8K range. In the ACTION! cartridge ROM A is designated MA and ROM B is designated LI. In the BASIC XL cartridge ROM A is designated as BAS-H and ROM B is designated as BAS-L.
+
 ```
                                CIRCUIT BOARD LAYOUT
                         _________________________________
@@ -1459,14 +1459,14 @@ When ROM is swapped out for RAM, the entire range $A000-$BFFF no longer has ROM.
                                 FOIL SIDE PINOUT
 
 ```
-  
-  
-  
-# Part 3: Cartridge slot descriptions  
-  
-by Jindrich Kubec  
-  
-## Left slot pinout (all models) ARD4if cartridge maps to $8000-$9FFF area  
+
+
+
+# Part 3: Cartridge slot descriptions
+
+by Jindrich Kubec
+
+## Left slot pinout (all models) ARD4if cartridge maps to $8000-$9FFF area
 ```
       (act H)1/S4 selects lower bank (act L)
       BGND 2A3 
@@ -1486,9 +1486,9 @@ by Jindrich Kubec
       SB-PHI2buffered phase 2 clock15/CCTL active when written to $D5xx
       (act L)
 ```
-  
-  
-## Right slot pinout (only 800) AB-PHI2 1R/W  
+
+
+## Right slot pinout (only 800) AB-PHI2 1R/W
 ```
       BGND 2A3 
       CA4 3A2 
@@ -1507,33 +1507,33 @@ by Jindrich Kubec
       SB-PHI2buffered phase 2 clock15/CCTL active when written to $D5xx 
        (act L)
 ```
-Parts are (always?) at back (XL)/bottom (XE) part of the cartridge. Connector orientation is S-A from front, 1-15 from back.  
-  
-## Cartridge basics  
-There are three different 'windows' or banks in the memory:  
-1 Bank $A000-$BFFF is selected by low state on S5. Its presence is signaled by high state on RD5. This signal is attached to TRIG3 in XL/XE series. Used in left carts only.  
-2 Bank $8000-$9FFF is selected by low state on S4. Its presence is signaled by high state on RD4. Used in both left and right slot carts.  
-3 'Bank' $D500-$D5FF is selected by low state on CCTL. It's used for bankswitching. (mapping ports etc.)  
-  
-Czech speciality are cartridges with buttons. There are 2 different ways:  
-1 the button only connects RD5 to computer. So you push it, press reset, make the selection (if any) and then release the button. The program will be loaded from cartridge and will not take that much amount of memory (minimum is 8KB, obviously).  
-2 the button turns on RD5 and leaves it on. After reset, user could do some selections and cartridge will turn off when needed.  
-  
-Romox released 'blank' 16KB cartridges which could be programmed in special  
-machines. They were called Edge Connector Programmable Cartridges.  
-Emulated: Atari800  
-  
-  
-## OSS carts  
-  
-Banks: Usually contain 4 4KB banks. One of the banks is mapped in  
-$B000-$BFFF.  
-Other banks are mapped to $A000-$AFFF.  
-Double eprom PCB (OSS DBL): Older scheme, uses 74LS175 (4bit register???),  
-2 eeproms and uses 4 bits of address bus.  
-Physical order of banks: ROM A = 3, M; ROM B = 0, 4  
-PCB Top (42 KB JPG), PCB Bottom (42 KB JPG) (with parts)  
-  
+Parts are (always?) at back (XL)/bottom (XE) part of the cartridge. Connector orientation is S-A from front, 1-15 from back.
+
+## Cartridge basics
+There are three different 'windows' or banks in the memory:
+1 Bank $A000-$BFFF is selected by low state on S5. Its presence is signaled by high state on RD5. This signal is attached to TRIG3 in XL/XE series. Used in left carts only.
+2 Bank $8000-$9FFF is selected by low state on S4. Its presence is signaled by high state on RD4. Used in both left and right slot carts.
+3 'Bank' $D500-$D5FF is selected by low state on CCTL. It's used for bankswitching. (mapping ports etc.)
+
+Czech speciality are cartridges with buttons. There are 2 different ways:
+1 the button only connects RD5 to computer. So you push it, press reset, make the selection (if any) and then release the button. The program will be loaded from cartridge and will not take that much amount of memory (minimum is 8KB, obviously).
+2 the button turns on RD5 and leaves it on. After reset, user could do some selections and cartridge will turn off when needed.
+
+Romox released 'blank' 16KB cartridges which could be programmed in special
+machines. They were called Edge Connector Programmable Cartridges.
+Emulated: Atari800
+
+
+## OSS carts
+
+Banks: Usually contain 4 4KB banks. One of the banks is mapped in
+$B000-$BFFF.
+Other banks are mapped to $A000-$AFFF.
+Double eprom PCB (OSS DBL): Older scheme, uses 74LS175 (4bit register???),
+2 eeproms and uses 4 bits of address bus.
+Physical order of banks: ROM A = 3, M; ROM B = 0, 4
+PCB Top (42 KB JPG), PCB Bottom (42 KB JPG) (with parts)
+
 ```
 A0 if 1, selects AL 
 A1 if 0, selects B 
@@ -1550,11 +1550,11 @@ A3 if 0, cart on, if 1, cart off.
       0111ALAU1
       1xxxoffoff0
 ```
-  
-Single rom PCB (OSS SNG):  
-Newer scheme, uses 2 d-flipflops, bits A0 and A3.  
-Physical order of banks: M, 0, 9, 1.  
-  
+
+Single rom PCB (OSS SNG):
+Newer scheme, uses 2 d-flipflops, bits A0 and A3.
+Physical order of banks: M, 0, 9, 1.
+
 ```
       A3A0A000-AFFFB000-BFFFRD5 Values
       00bank 0bank m10,2,4,6
@@ -1562,211 +1562,211 @@ Physical order of banks: M, 0, 9, 1.
       10offoff08,A,C,E
       11bank 9bank m19,B,D,F
 ```
-  
-Examples:  
-  
-Action!, MAC/65 V1.00, MAC/65 1.01, MAC/65 1.02, Basic XE,  
-Basic XL 1.02, Basic XL 1.03, Writer's Tool;  
-  
-Emulated: Atari800  
-  
-  
-## SDX carts  
-Banks: Contain 8 8KB banks. Access to base+0-7 turns on banks 0-7 in  
-$A000-$BFFF  
-area. Access to base+8-F turns the cart off.  
-  
-SDX: Base is $D5E0.  
-  
-Diamond: Base is $D5D0.  
-  
-Express: Base is $D570.  
-  
-Better said: Cartridge looks for low CCTL and match in A4-A7. For SDX it  
-is 0xE (1110), Diamond 0xD (1101), Express 0x7 (0111). If A3 is high, cart is turned off. If A3 is low, the bank whose number is in A0-A2 is selected. I'm not sure what happens when turning cart off, but I think that it turns off RD5 only.  
-  
-Examples:  
-  
-Sdx 4.18, Sdx 4.19, Sdx 4.20, Sdx 4.21, Sdx 4.22, Express, Diamond GOS 1,  
-Diamond GOS 2, Diamond GOS 3, MIO Diagnostics  
-  
-Emulated: Atari800  
-  
-## R-Time 8  
-Pass thru cartridge with battery-backup for real-time clock.  
-  
-Emulated: Atari800 - read only is enough.  
-  
-## XEGS carts  
-Banks: Contain n 8KB banks. Bank n-1 is mapped at $A000-$BFFF. Banks 0  
-to n-1 are mapped to $8000-$9FFF by writing the number of bank to any of $D500 registers.  
-  
-Examples (32KB):  
-Archon, Blue Max, Crystal Castles, Into the Eagle's Nest, Food Fight,  
-Star Raiders II;  
-  
-Examples (64KB):  
-Ballblazer, Battlezone, Choplifter!, David's Midnight Magic, Deflektor, Dark Chambers,  
-Desert Falcon, Hardball, Mario Bros., Rescue on Fractalus, Tower Toppler, Thunderfox  
-  
-Examples (128KB):  
-(Bug Hunt and Lode Runner probably contain 64KB rom, but start from  
-the bank 8.)  
-Ace of Aces, Airball, Barnyard Blaster, Bug Hunt, Crime Buster, Crossbow, Fight Night, Flight Simulator II, Gato, Karateka, Lode Runner, Summer Games;  
-  
-Emulated: Atari800  
-  
-## XEGS demo cartridge  
-Banks: 128 KBs.  
-  
-Contains:  
-- XEGS 64 - Flight Simulator 2 (shortened demo version)  
-- XEGS 32 - One on One (same version as on XEGS cart)  
-- LS16 - Joust (same version as on cart)  
-- LS16 - Ms. Pacman (same version as on cart)  
-  
-Does change game on each reboot (binary counter powered by capacitors).  
-Emulated: Unemulated (not needed).  
-  
-  
-## Telelink 2 cartridge  
-Banks: Just one 8kb bank at A000-BFFF. Additional hardware is one X2212  
-nonvolatile SRAM, containing 256 x 4 bits, for storing telephone numbers. It's accessed by reading/writing 9000-90FF. There is also read access to $D501 and write access to $D502, don't know yet for what, but probably for setting read/write mode of the SRAM. The cartridge uses RD4 hardwired to +5V, what means that it takes full 16KB of address space. Not very elegant solution.  
-  
-Emulated: Unemulated  
-  
---++ MD-DOS cartridge  
-Banks: Same as OSS SNG cartridges. Uses two additional bits (A5,A4) for  
-selecting 'subcart'. It thus has 4x16KB = 64KB. Also has button, don't know  
-for what it is used (probably for calling the cartridge).  
-  
-MD Dos  
-Emulated: My experimental Atari800 emulator - but with possible bugs.  
-  
-  
-## JRC cartridges  
-Toolbox III: Contains 64KB bankswitched cart with reset button.  
-  
-Rambox2: EEPROM part same or very similar to Toolbox III. Additionally contains 256KB of RAM. This ram could be accessed by TT-Dos and BeWe Dos.  
-  
-  
-Toolbox III  
-  
-Rambox2  
-  
-EEPROM part: 8x8KB banks. Selected by D6, D5 & D4. Bank number is remembered  
-when A7 is off (D500-D57F). If D7 is on, cartridge is off. If button  
-is pressed, register is cleared, RD5 is on, main bank selected.  
-RAM part:  
+
+Examples:
+
+Action!, MAC/65 V1.00, MAC/65 1.01, MAC/65 1.02, Basic XE,
+Basic XL 1.02, Basic XL 1.03, Writer's Tool;
+
+Emulated: Atari800
+
+
+## SDX carts
+Banks: Contain 8 8KB banks. Access to base+0-7 turns on banks 0-7 in
+$A000-$BFFF
+area. Access to base+8-F turns the cart off.
+
+SDX: Base is $D5E0.
+
+Diamond: Base is $D5D0.
+
+Express: Base is $D570.
+
+Better said: Cartridge looks for low CCTL and match in A4-A7. For SDX it
+is 0xE (1110), Diamond 0xD (1101), Express 0x7 (0111). If A3 is high, cart is turned off. If A3 is low, the bank whose number is in A0-A2 is selected. I'm not sure what happens when turning cart off, but I think that it turns off RD5 only.
+
+Examples:
+
+Sdx 4.18, Sdx 4.19, Sdx 4.20, Sdx 4.21, Sdx 4.22, Express, Diamond GOS 1,
+Diamond GOS 2, Diamond GOS 3, MIO Diagnostics
+
+Emulated: Atari800
+
+## R-Time 8
+Pass thru cartridge with battery-backup for real-time clock.
+
+Emulated: Atari800 - read only is enough.
+
+## XEGS carts
+Banks: Contain n 8KB banks. Bank n-1 is mapped at $A000-$BFFF. Banks 0
+to n-1 are mapped to $8000-$9FFF by writing the number of bank to any of $D500 registers.
+
+Examples (32KB):
+Archon, Blue Max, Crystal Castles, Into the Eagle's Nest, Food Fight,
+Star Raiders II;
+
+Examples (64KB):
+Ballblazer, Battlezone, Choplifter!, David's Midnight Magic, Deflektor, Dark Chambers,
+Desert Falcon, Hardball, Mario Bros., Rescue on Fractalus, Tower Toppler, Thunderfox
+
+Examples (128KB):
+(Bug Hunt and Lode Runner probably contain 64KB rom, but start from
+the bank 8.)
+Ace of Aces, Airball, Barnyard Blaster, Bug Hunt, Crime Buster, Crossbow, Fight Night, Flight Simulator II, Gato, Karateka, Lode Runner, Summer Games;
+
+Emulated: Atari800
+
+## XEGS demo cartridge
+Banks: 128 KBs.
+
+Contains:
+- XEGS 64 - Flight Simulator 2 (shortened demo version)
+- XEGS 32 - One on One (same version as on XEGS cart)
+- LS16 - Joust (same version as on cart)
+- LS16 - Ms. Pacman (same version as on cart)
+
+Does change game on each reboot (binary counter powered by capacitors).
+Emulated: Unemulated (not needed).
+
+
+## Telelink 2 cartridge
+Banks: Just one 8kb bank at A000-BFFF. Additional hardware is one X2212
+nonvolatile SRAM, containing 256 x 4 bits, for storing telephone numbers. It's accessed by reading/writing 9000-90FF. There is also read access to $D501 and write access to $D502, don't know yet for what, but probably for setting read/write mode of the SRAM. The cartridge uses RD4 hardwired to +5V, what means that it takes full 16KB of address space. Not very elegant solution.
+
+Emulated: Unemulated
+
+--++ MD-DOS cartridge
+Banks: Same as OSS SNG cartridges. Uses two additional bits (A5,A4) for
+selecting 'subcart'. It thus has 4x16KB = 64KB. Also has button, don't know
+for what it is used (probably for calling the cartridge).
+
+MD Dos
+Emulated: My experimental Atari800 emulator - but with possible bugs.
+
+
+## JRC cartridges
+Toolbox III: Contains 64KB bankswitched cart with reset button.
+
+Rambox2: EEPROM part same or very similar to Toolbox III. Additionally contains 256KB of RAM. This ram could be accessed by TT-Dos and BeWe Dos.
+
+
+Toolbox III
+
+Rambox2
+
+EEPROM part: 8x8KB banks. Selected by D6, D5 & D4. Bank number is remembered
+when A7 is off (D500-D57F). If D7 is on, cartridge is off. If button
+is pressed, register is cleared, RD5 is on, main bank selected.
+RAM part:
 ```
 ram bank select:
 X = 00 - 7F (7bits)
 A = A | $F0 (4bits)
 STA $D500,X
 ```
-Together it's 11 bits of bank address. You can address $80 bytes of memory  
-in region $D580 (7bits). 11 bits + 7 bits = 18 bits = 256KB of RAM.  
-  
-memory write:  
+Together it's 11 bits of bank address. You can address $80 bytes of memory
+in region $D580 (7bits). 11 bits + 7 bits = 18 bits = 256KB of RAM.
+
+memory write:
 ```
 LDA (BUFRLO), Y
 STA $D580, Y
 ```
-  
-memory read:  
+
+memory read:
 ```
 LDA $D580, Y
 STA (BUFRLO), Y
 ```
-  
-Y = 00 - 7F. Uses previously set bank address.  
-  
-Emulated: My experimental Atari800 emulator.  
-  
-## ATRAX cartridge  
-Banks: Contains 16 x 8KB banks (128KB). Uses A000-BFFF region. Bits 0-3 select  
-bank. Bit 7 turns cart off. Menu program loads standard Atari dos executable,  
-then turns cart off. I was told that 16 different carts exists.  
-  
-ATRAX no.5  
-  
-Emulated: Atari800  
-  
-## Bounty Bob cartridge  
-Banks: Very strange bankswitching method. Contains main bank at A000-BFFF. From 8000-8FFF is first bank, 9000-9FFF is second bank. They are switched by accessing 8FF6-8FF9 (9FF6-9FF9). In each bank there's 4 x 4 KBs. Totally, it's 2 x 4 x 4 + 8 = 40 KBs. I was told that the cartridge is almost same as 5200 version and such cart contains only three chips: one 8KB rom, and two special self-switching 16KB roms. What circuitry is inside those chips is unknown to me.  
-  
-Bounty Bob  
-  
-Emulated: Atari800, BBEmu (Bounty-Bob Emu!)  
-  
-## 128/256 K RamCart  
-Banks: Unknown.  
-  
-Emulated: Unemulated.  
-  
-## A/D Converter  
-Banks: None. Uses lower four bits of $D500 for getting the digitized  
-sound from mono analog input.  
-  
-Emulated: Unemulated.  
-  
-## MPP Super Charger  
-Banks: ???. May contain 'hardware accelerator chips'. Used together with game disk 'Assault Force'. (Still available from BEST Electronics!)  
-  
-Emulated: Unemulated.  
-  
-## PILL carts  
-The PILL!  
-  
-Super PILL!  
-  
-Super Cart (by Frontrunner)  
-  
-Banks: None. Just a way to barl the computer into thinking that a cart.  
-was inserted (due to the copy protection of some carts).  
-  
-Emulated: ?  
-  
-## Willams multibanked cartridge  
-Banks: Contains 8 x 8kb banks. Writing to $D500 turns on first bank (on bootup), writing to $D507 turns on last bank. Writing to $D508 turns cart off. Video61 uses this design for their newly released 'big' cartridges.  
-Emulated: Atari800 (from >1.2.2)  
-  
-## Thompson Proburner  
-EEPROM burner.  
-Banks: Contains 8kb in right slot, accesses D500, probably hardware for chip  
-writing. Need more info.  
-  
-Emulated: Unemulated.  
-  
-## COS32  
-Banks: 16kb main bank. The other is banked in for a short period of time (would anybody compute that for me?) by any access to $D5xx area. Also contains the button on RD4/RD5. As I have other similar COS cartridge, I seem to remember there was some kind of service/toolkit which allowed to put anything on the cart.  
-  
-Emulated: Unemulated.  
-  
-  
-Great source of information about memory and cartridge mappings is in an  
-article by John Picken.(see Part 1!) this info (c) 1998-2002 Jindroush. Last modified: Fri Feb 22, 20:20:00 2002;  
-  
-  
-# Part 4: Converting games to Cartridge  
-  
-by Nir Dary  
-  
-(written 23/6/2001;  mail: ndary@bigbart.com)  
-  
-We all love cartridges some of us even collect them. They are simple and quick to load, just plug it in your computer and the game starts.  
-This time I would like to share my knowledge and show you all how you can  
-convert your favorite games to cartridges, all you need is an empty EPROM  
-chip, an EPROM burner, Cartridge PCB and an Assembler editor.  
-Before we will start to explain how to port disk/tape games lets have a few  
-words about cartridges...  
-  
-The earlier ATARI model (800) had two 8K cartridge slots: Left and Right. The Right cartridge occupied memory address $8000 to $9FFF while the Left  
-cartridge occupied memory address $A000 to $BFFF. Once a cartridge is  
-inserted to the computer the memory address above becomes read only data. The XL/XE ATARI models are compatible with the 800 cartridges but they also have the possibility to read one 16K cartridge (that will occupy memory address $8000 to $BFFF), lets not forget the Bank Switchable cartridges, these are cartridges that contain more than 16K data, like the XEGS or OSS cartridges. The XEGS can contain up to 128K of game data i.e. 'Ace of Aces', 'Flight Simulator 2' carts etc..  Lets look at the cartridge connector:  
-  
-Cartridge Slot ("Left" slot on all machines; "Right" slot on 800 only):  
-  
+
+Y = 00 - 7F. Uses previously set bank address.
+
+Emulated: My experimental Atari800 emulator.
+
+## ATRAX cartridge
+Banks: Contains 16 x 8KB banks (128KB). Uses A000-BFFF region. Bits 0-3 select
+bank. Bit 7 turns cart off. Menu program loads standard Atari dos executable,
+then turns cart off. I was told that 16 different carts exists.
+
+ATRAX no.5
+
+Emulated: Atari800
+
+## Bounty Bob cartridge
+Banks: Very strange bankswitching method. Contains main bank at A000-BFFF. From 8000-8FFF is first bank, 9000-9FFF is second bank. They are switched by accessing 8FF6-8FF9 (9FF6-9FF9). In each bank there's 4 x 4 KBs. Totally, it's 2 x 4 x 4 + 8 = 40 KBs. I was told that the cartridge is almost same as 5200 version and such cart contains only three chips: one 8KB rom, and two special self-switching 16KB roms. What circuitry is inside those chips is unknown to me.
+
+Bounty Bob
+
+Emulated: Atari800, BBEmu (Bounty-Bob Emu!)
+
+## 128/256 K RamCart
+Banks: Unknown.
+
+Emulated: Unemulated.
+
+## A/D Converter
+Banks: None. Uses lower four bits of $D500 for getting the digitized
+sound from mono analog input.
+
+Emulated: Unemulated.
+
+## MPP Super Charger
+Banks: ???. May contain 'hardware accelerator chips'. Used together with game disk 'Assault Force'. (Still available from BEST Electronics!)
+
+Emulated: Unemulated.
+
+## PILL carts
+The PILL!
+
+Super PILL!
+
+Super Cart (by Frontrunner)
+
+Banks: None. Just a way to barl the computer into thinking that a cart.
+was inserted (due to the copy protection of some carts).
+
+Emulated: ?
+
+## Willams multibanked cartridge
+Banks: Contains 8 x 8kb banks. Writing to $D500 turns on first bank (on bootup), writing to $D507 turns on last bank. Writing to $D508 turns cart off. Video61 uses this design for their newly released 'big' cartridges.
+Emulated: Atari800 (from >1.2.2)
+
+## Thompson Proburner
+EEPROM burner.
+Banks: Contains 8kb in right slot, accesses D500, probably hardware for chip
+writing. Need more info.
+
+Emulated: Unemulated.
+
+## COS32
+Banks: 16kb main bank. The other is banked in for a short period of time (would anybody compute that for me?) by any access to $D5xx area. Also contains the button on RD4/RD5. As I have other similar COS cartridge, I seem to remember there was some kind of service/toolkit which allowed to put anything on the cart.
+
+Emulated: Unemulated.
+
+
+Great source of information about memory and cartridge mappings is in an
+article by John Picken.(see Part 1!) this info (c) 1998-2002 Jindroush. Last modified: Fri Feb 22, 20:20:00 2002;
+
+
+# Part 4: Converting games to Cartridge
+
+by Nir Dary
+
+(written 23/6/2001;  mail: ndary@bigbart.com)
+
+We all love cartridges some of us even collect them. They are simple and quick to load, just plug it in your computer and the game starts.
+This time I would like to share my knowledge and show you all how you can
+convert your favorite games to cartridges, all you need is an empty EPROM
+chip, an EPROM burner, Cartridge PCB and an Assembler editor.
+Before we will start to explain how to port disk/tape games lets have a few
+words about cartridges...
+
+The earlier ATARI model (800) had two 8K cartridge slots: Left and Right. The Right cartridge occupied memory address $8000 to $9FFF while the Left
+cartridge occupied memory address $A000 to $BFFF. Once a cartridge is
+inserted to the computer the memory address above becomes read only data. The XL/XE ATARI models are compatible with the 800 cartridges but they also have the possibility to read one 16K cartridge (that will occupy memory address $8000 to $BFFF), lets not forget the Bank Switchable cartridges, these are cartridges that contain more than 16K data, like the XEGS or OSS cartridges. The XEGS can contain up to 128K of game data i.e. 'Ace of Aces', 'Flight Simulator 2' carts etc..  Lets look at the cartridge connector:
+
+Cartridge Slot ("Left" slot on all machines; "Right" slot on 800 only):
+
 ```
 A  B  C  D  E  F  H  J  K  L  M  N  P  R  S
 1   2  3   4   5  6  7  8   9  10 11 12 13 14 15
@@ -1787,10 +1787,10 @@ A  B  C  D  E  F  H  J  K  L  M  N  P  R  S
 14. RD5                        R. R/W
 15. /CCTL                      S. B02
 ```
-  
-When the ATARI computer is booting, one of the first things the Operating  
-system is checking is cartridge presence. If a cartridge is inserted its been executed, so a cartridge can be executed even before the rest of the OS routines are finished (i.e a Diagnostic Cartridge). The Last 6 bytes of the cartridge Memory location (addresses $BFFA to $BFFF) determine the RUN/INI address of the cartridge, if to Load DOS before running the cart software? etcx{2026}  
-  
+
+When the ATARI computer is booting, one of the first things the Operating
+system is checking is cartridge presence. If a cartridge is inserted its been executed, so a cartridge can be executed even before the rest of the OS routines are finished (i.e a Diagnostic Cartridge). The Last 6 bytes of the cartridge Memory location (addresses $BFFA to $BFFF) determine the RUN/INI address of the cartridge, if to Load DOS before running the cart software? etcx{2026}
+
 ```
 $BFFA/$BFFB - is the cartridge start address.
 $BFFC - A non-zero number here tells the OS that there is no cartridge
@@ -1799,27 +1799,27 @@ $BFFD - set to $05 if you want to boot Dos before running the cart $04
         if no
 $BFFE/$BFFF - Cartridge initialization address
 ```
-  
-The XEGS cartridges contain several 8K banks (depending on the cartridges size), the last bank is always shown at Memory area $A000 to $BFFF of the Atari computer while the rest of the 8K banks are mapped memory area $8000 to $9FFF depending on what value of data you set $D5XX. For example on a 64k cartridge the last 8k Bank of the cartridge (cartridge ROM memory location $E000 to $FFFF) are mapped to the XL memory location $A000 to $BFFF, and when accessing Atari location $D500 you can set which of the first seven 8K banks will be mapped to the ATARI memory location $8000 TO $9FFF.  
-  
-Now lets get into business:  
-You cannot convert every game to a cartridge, there are limitations...  
-  
-1. You must feet the game into the cartridge memory space; you can use a 16k PCB for games that are less than 16k in size, or a XEGS pcb with larger ROMs.  
-2. The game must load in one part (single stage - one file).  If the game is loading in several stages - then without modifying the game code it will try accessing TAPE/DISK when looking for the next stage to load ***  
-3. The game should not try to write to the cartridge memory address. Because after you insert the cartridge this is read only memory...  
-4. Some games are detecting cartridge presence and when a cartridge has been inserted the game will not run; this was done to prevent from some debugging cartridges to help hacking the game code  
-  
-- *** However there are some tricks to get even a multi-stage tape/disk game running from a cart (examples: Dandy, Summer Games, etc.) - but thats really a lot of work we will not explain here...  
-  
-If your game is not restricted by the above limitations then we have a go.  
-What we will do is simply write a routine that will copy the game data from  
-the ATARI Cartridge Memory area back to the original game location and execute the game. This works for 90% of the games I tried !!  
-  
-Next you will find a generic cartridge memory dumping routine that will work for most of the games. To explain how it works, lets take a game and make it work from a 16k cartridge PCB ("Danger Ranger" was never released on a cartridge).  
-  
-Danger Ranger game loads into Memory Address: $0400 to $211F and is executed at address: $0488. The TABLE at the beginning of the source tells the copy routineto copy the Game Data from Address $A200-$BF20 To $0400-$211F. Here is the TABLE description:  
-  
+
+The XEGS cartridges contain several 8K banks (depending on the cartridges size), the last bank is always shown at Memory area $A000 to $BFFF of the Atari computer while the rest of the 8K banks are mapped memory area $8000 to $9FFF depending on what value of data you set $D5XX. For example on a 64k cartridge the last 8k Bank of the cartridge (cartridge ROM memory location $E000 to $FFFF) are mapped to the XL memory location $A000 to $BFFF, and when accessing Atari location $D500 you can set which of the first seven 8K banks will be mapped to the ATARI memory location $8000 TO $9FFF.
+
+Now lets get into business:
+You cannot convert every game to a cartridge, there are limitations...
+
+1. You must feet the game into the cartridge memory space; you can use a 16k PCB for games that are less than 16k in size, or a XEGS pcb with larger ROMs.
+2. The game must load in one part (single stage - one file).  If the game is loading in several stages - then without modifying the game code it will try accessing TAPE/DISK when looking for the next stage to load ***
+3. The game should not try to write to the cartridge memory address. Because after you insert the cartridge this is read only memory...
+4. Some games are detecting cartridge presence and when a cartridge has been inserted the game will not run; this was done to prevent from some debugging cartridges to help hacking the game code
+
+- *** However there are some tricks to get even a multi-stage tape/disk game running from a cart (examples: Dandy, Summer Games, etc.) - but thats really a lot of work we will not explain here...
+
+If your game is not restricted by the above limitations then we have a go.
+What we will do is simply write a routine that will copy the game data from
+the ATARI Cartridge Memory area back to the original game location and execute the game. This works for 90% of the games I tried !!
+
+Next you will find a generic cartridge memory dumping routine that will work for most of the games. To explain how it works, lets take a game and make it work from a 16k cartridge PCB ("Danger Ranger" was never released on a cartridge).
+
+Danger Ranger game loads into Memory Address: $0400 to $211F and is executed at address: $0488. The TABLE at the beginning of the source tells the copy routineto copy the Game Data from Address $A200-$BF20 To $0400-$211F. Here is the TABLE description:
+
 ```
 Byte 0   - What 8k bank to access, to use with XEGS carts (on 16k cart 
            it should always be set to 00), if equal to $FF then end copy.
@@ -1830,9 +1830,9 @@ Byte 3,4 - Destination address where to copy the game data.
 Byte 5,6 - Last byte of Source address to copy
 
 ```
-  
-## Universal Cartrige Copy / Run routine  
-  
+
+## Universal Cartrige Copy / Run routine
+
 ```
 ;Universal Cartrige Copy / Run routine
 ;written by Nir Dary 13/6/2001
@@ -1976,9 +1976,9 @@ EXITCOPY  LDA #$22
           .BYTE $04
           .WORD START+$7000
 ```
-  
-Once you assembled this routine make sure you add the game data to the correct source location. With this doc you will find a ready made ROM file of Danger Ranger game, simply burn the ROM data into a 27C64 (8k) EPROM, and insert it on the Right slot of a 16k cartridge pcb, (try the 16k Cartridges PCB from B&C computer visions or Best Electronics).  
-  
-NIR DARY  
-  
-  
+
+Once you assembled this routine make sure you add the game data to the correct source location. With this doc you will find a ready made ROM file of Danger Ranger game, simply burn the ROM data into a 27C64 (8k) EPROM, and insert it on the Right slot of a 16k cartridge pcb, (try the 16k Cartridges PCB from B&C computer visions or Best Electronics).
+
+NIR DARY
+
+

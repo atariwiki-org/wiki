@@ -1,5 +1,5 @@
-# Fig-FORTH 1.0 for BBC Micro (6502 Assembler)  
-  
+# Fig-FORTH 1.0 for BBC Micro (6502 Assembler)
+
 ```
    LST   OFF
 
@@ -4259,4 +4259,4 @@ TOP         ; of dictionary   LST ON
    LST   OFF
 
 ```
-  
+

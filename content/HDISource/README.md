@@ -1,29 +1,29 @@
 ---
 title: HDISource
 ---
-# High Density Interface (PC FLoppy Interface with Speedy like OS)  
-  
-General Information  
-  
-Author: Erhard Pütz   
-Assembler: Bibo Assembler   
-Published: 1991   
-Download: [http://www.atari-central.de/floppyservice/floppy/gb/index.htm](http://www.atari-central.de/floppyservice/floppy/gb/index.htm)  
-  
-  
-  
-## HDI Source Code  
-![](attachments/hdi.jpg)  
-  
-  
-## High-Density  Disk  Interface  
-  
-The interface for connecting up to 4 standard drives to the XL/XE. Here you can mix 3,5" and 5,25" floppies at will. Required is that the drive supports the Disk Change signal at pin 34 of the Shugart bus. It doesn't support Medium Density (128 bytes/sector in MFM mode and 1.2 MB drives). Maximum transfer rate: 500 Kbit/s (1.44 MByte disks). The HDI is sold out.  
-  
-The HDI is designed, build and all Source written by Erhard P&uuml;tz, (aka ABBUC Floppy Doc, Atreju)  
-  
-## HDI OS ROM in Bibo Assembler Format  
-### OSV24EQU.BIN  
+# High Density Interface (PC FLoppy Interface with Speedy like OS)
+
+General Information
+
+Author: Erhard Pütz
+Assembler: Bibo Assembler
+Published: 1991
+Download: [http://www.atari-central.de/floppyservice/floppy/gb/index.htm](http://www.atari-central.de/floppyservice/floppy/gb/index.htm) 
+
+
+
+## HDI Source Code
+![](attachments/hdi.jpg)
+
+
+## High-Density  Disk  Interface
+
+The interface for connecting up to 4 standard drives to the XL/XE. Here you can mix 3,5" and 5,25" floppies at will. Required is that the drive supports the Disk Change signal at pin 34 of the Shugart bus. It doesn't support Medium Density (128 bytes/sector in MFM mode and 1.2 MB drives). Maximum transfer rate: 500 Kbit/s (1.44 MByte disks). The HDI is sold out.
+
+The HDI is designed, build and all Source written by Erhard P&uuml;tz, (aka ABBUC Floppy Doc, Atreju)
+
+## HDI OS ROM in Bibo Assembler Format
+### OSV24EQU.BIN
 ```
 00010 ******************************
 00020 *				 *
@@ -262,7 +262,7 @@ The HDI is designed, build and all Source written by Erhard P&uuml;tz, (aka ABBU
 02350 SECBUF	.BL $0100,$00
 02360 ------------------------------
 ```
-### OS.V28  
+### OS.V28
 ```
 00010			 .IN "D:OSV24EQU.BIB
 00020			 .OR $C000
@@ -1935,7 +1935,7 @@ The HDI is designed, build and all Source written by Erhard P&uuml;tz, (aka ABBU
 16690			 .DA IRQ
 16700 ------------------------------
 ```
-### STATS.BIB  
+### STATS.BIB
 ```
 00010 STATS	 JSR DSTAT
 00020 *-02EA-*
@@ -2046,7 +2046,7 @@ The HDI is designed, build and all Source written by Erhard P&uuml;tz, (aka ABBU
 01070			 RTS
 01080 ------------------------------
 ```
-### EPSIO.BIB  
+### EPSIO.BIB
 ```
 01000 * High-Speed SIO-Driver, will
 01010 * be relocated by HDI and

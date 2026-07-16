@@ -1,10 +1,10 @@
 ---
 title: Custom Disk Format Routine
 ---
-  
-  
-# Custom Disk Format Routine  
-  
+
+
+# Custom Disk Format Routine
+
 ```
 10       .OPT NO LIST
 20 ;
@@ -262,4 +262,4 @@ title: Custom Disk Format Routine
 2540 ETB2 .BYTE $F7,$F7,$F7,$00,$F7,$F7
 2550 ETB3 .BYTE $F7,$00,$F7,$F7,$F7,$00
 ```
-  
+

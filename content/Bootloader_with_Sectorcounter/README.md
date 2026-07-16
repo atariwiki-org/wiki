@@ -1,11 +1,11 @@
 ---
 title: Bootloader with Sectorcounter
 ---
-General Information   
-Author: Carsten Strotmann   
-Assembler: Bibo Assembler   
-Published: 08.07.91   
-  
+General Information
+Author: Carsten Strotmann
+Assembler: Bibo Assembler
+Published: 08.07.91
+
 ```
 00010			 .LI OFF
 00020 ******************************

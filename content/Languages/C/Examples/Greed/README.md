@@ -1,103 +1,103 @@
-# Greed  
-  
-General Information  
-  
-Author: 	Carsten Strotmann, Winfried Piegsda   
-Language: 	C   
-Compiler/Interpreter: 	CC65   
-Published: 	ABBUC 2004   
-  
-Download: [agreed2.atr](attachments/agreed2.atr)  
-  
-Title Tune: [greed.mp3](../../../../../media/Languages/C/Examples/Greed/attachments/greed.mp3) [greed-mid.mov](attachments/greed-mid.mov)  
-  
-# Atari Greed  
-  
-Atari Greed scored 6th place at the 2004 ABBUC Software contest  
-![](attachments/agreed1.jpeg)  
-![](attachments/agreed2.jpeg)  
-  
-%%tabbedSection  
-%%tab-english  
-### Instructions  
-  
-ATARI Greed  
-  
-based on the UNIX game "Greed"  
-by Matthew T. Day and Eric S. Raymond.  
-  
-Written for the 2004 ABBUC Software contest by Winfried Piegsda and Carsten Strotmann.  
-  
-Goal:  
-Numbers from 1 t 9 will be shown in an area of 38 x 18 fields. The round spot is the pawn in the game. The player  
-must try to collect as many numbers as possible before running out of moves. For every field moved the score will increase by one.  
-  
-The pawn can be moved by Joystick or Keyboard in six directions. The range of the move will be calculated by the  
-first number to be collected. All possible moves can be displayed by pressing the 'P' key.  
-  
-There is a time running out for each level. To enter the next level, a predefinded amount (percentage) of the area must be  
-cleaned. The remaining percentage will be displayed in the lower right corner near the score and highscore.  
-  
-Will the level treshold overshoot a bonus will be added to the score.  
-  
-The menu can be displayed with the 'ESC' Key.  
-  
-have fun with Atari Greed  
-  
-Winfried Piegsda and  
-Carsten Strotmann  
-/%  
-%%tab-german  
-### Anleitung  
-  
-ATARI Greed  
-  
-basierend auf dem UNIX Spiel "Greed"  
-von Matthew T. Day und Eric S. Raymond.  
-  
-Programmiert fuer den ABBUC Programmier-  
-wettbewerb 2004 von Winfried Piegsda  
-und Carsten Strotmann.  
-  
-Ziel des Spiels:  
-Auf einer Flaeche von maximal 38 x 18  
-Zellen werden Zahlen von 1 bis 9 dargestellt.  
-Ein runder Ball in dieser Flaeche stellt die  
-Spielfigur da. Der Spieler muss versuchen  
-moeglichst viel Punkte zu sammeln, den dem er  
-Felder ueberquert und loescht. Fuer jedes  
-geloeschte Feld wird die Punktzahl erhoeht.  
-  
-Mit dem Joystick oder der Tastatur kann die  
-Spielfigur in sechs Richtungen bewegt werden.  
-Die Schreittweite in jede Richtung wird durch  
-die direkt an die Spielfigur angrenzende Zahl  
-bestimmt. Die moeglichen Zuege koennen mit der  
-Vorschaufunktion (p - Preview) angezeigt werden.  
-  
-Fuer jeden Level stehen eine bestimmte Zeit in  
-Minuten zur Verfuegung. Um in einen neuen Level  
-zu wechseln, muss die Mindestanzahl an Feldern  
-abgeraumt werden. Die Prozentzahl der noch zu  
-loeschenden Felder wird in der Statuszeile rechts  
-neben den Punkten und der Hoechstpunktzahl an-  
-gezeigt.  
-  
-Wir diese Prozentzahl untersschritten so wird ein  
-Bonus am Ende des Levels auf die Punktzahl addiert.  
-  
-Mit der 'ESC' Taste kann das Menue aufgerufen  
-werden.  
-  
-Viel Spass mit Atari Greed wuenschen  
-Winfried Piegsda  
-Carsten Strotmann  
-/%  
-/%  
-  
-  
-1.1 Make Scripts  
-  
+# Greed
+
+General Information
+
+Author: 	Carsten Strotmann, Winfried Piegsda
+Language: 	C
+Compiler/Interpreter: 	CC65
+Published: 	ABBUC 2004
+
+Download: [agreed2.atr](attachments/agreed2.atr) 
+
+Title Tune: [greed.mp3](../../../../../media/Languages/C/Examples/Greed/attachments/greed.mp3) [greed-mid.mov](attachments/greed-mid.mov) 
+
+# Atari Greed
+
+Atari Greed scored 6th place at the 2004 ABBUC Software contest
+![](attachments/agreed1.jpeg)
+![](attachments/agreed2.jpeg)
+
+%%tabbedSection
+%%tab-english
+### Instructions
+
+ATARI Greed
+
+based on the UNIX game "Greed"
+by Matthew T. Day and Eric S. Raymond.
+
+Written for the 2004 ABBUC Software contest by Winfried Piegsda and Carsten Strotmann.
+
+Goal:
+Numbers from 1 t 9 will be shown in an area of 38 x 18 fields. The round spot is the pawn in the game. The player
+must try to collect as many numbers as possible before running out of moves. For every field moved the score will increase by one.
+
+The pawn can be moved by Joystick or Keyboard in six directions. The range of the move will be calculated by the
+first number to be collected. All possible moves can be displayed by pressing the 'P' key.
+
+There is a time running out for each level. To enter the next level, a predefinded amount (percentage) of the area must be
+cleaned. The remaining percentage will be displayed in the lower right corner near the score and highscore.
+
+Will the level treshold overshoot a bonus will be added to the score.
+
+The menu can be displayed with the 'ESC' Key.
+
+have fun with Atari Greed
+
+Winfried Piegsda and
+Carsten Strotmann
+/%
+%%tab-german
+### Anleitung
+
+ATARI Greed
+
+basierend auf dem UNIX Spiel "Greed"
+von Matthew T. Day und Eric S. Raymond.
+
+Programmiert fuer den ABBUC Programmier-
+wettbewerb 2004 von Winfried Piegsda
+und Carsten Strotmann.
+
+Ziel des Spiels:
+Auf einer Flaeche von maximal 38 x 18
+Zellen werden Zahlen von 1 bis 9 dargestellt.
+Ein runder Ball in dieser Flaeche stellt die
+Spielfigur da. Der Spieler muss versuchen
+moeglichst viel Punkte zu sammeln, den dem er
+Felder ueberquert und loescht. Fuer jedes
+geloeschte Feld wird die Punktzahl erhoeht.
+
+Mit dem Joystick oder der Tastatur kann die
+Spielfigur in sechs Richtungen bewegt werden.
+Die Schreittweite in jede Richtung wird durch
+die direkt an die Spielfigur angrenzende Zahl
+bestimmt. Die moeglichen Zuege koennen mit der
+Vorschaufunktion (p - Preview) angezeigt werden.
+
+Fuer jeden Level stehen eine bestimmte Zeit in
+Minuten zur Verfuegung. Um in einen neuen Level
+zu wechseln, muss die Mindestanzahl an Feldern
+abgeraumt werden. Die Prozentzahl der noch zu
+loeschenden Felder wird in der Statuszeile rechts
+neben den Punkten und der Hoechstpunktzahl an-
+gezeigt.
+
+Wir diese Prozentzahl untersschritten so wird ein
+Bonus am Ende des Levels auf die Punktzahl addiert.
+
+Mit der 'ESC' Taste kann das Menue aufgerufen
+werden.
+
+Viel Spass mit Atari Greed wuenschen
+Winfried Piegsda
+Carsten Strotmann
+/%
+/%
+
+
+1.1 Make Scripts
+
 ```
 export CC65_LIB=~/develop/cc65/libsrc
 export CC65_INC=~/develop/cc65/include
@@ -106,7 +106,7 @@ cl65 -l -O --add-source -m agreed.map -t atari agreed.c dli1.s
 cp agreed ~/atari/Atari800MacX/Harddrive1/agreed.com
  
 ```
-  
+
 ```
 export CC65_LIB=~/develop/cc65/libsrc
 export CC65_INC=~/develop/cc65/include
@@ -132,7 +132,7 @@ cl65 -t none level08.o -o ~/atari/Atari800MacX/Harddrive1/level08.agl
 ca65 -t none level09.s
 cl65 -t none level09.o -o ~/atari/Atari800MacX/Harddrive1/level09.agl
 ```
-  
+
 ```
 Modules list:
 -------------
@@ -1471,10 +1471,10 @@ zerobss (zerobss.o):
     atari.o                   crt0.s(16)
 
 ```
-  
-## CC65 Sourcecode  
-  
-  
+
+## CC65 Sourcecode
+
+
 ```
 /* -*- C -*- ****************************************************************
  *
@@ -2698,12 +2698,12 @@ int main(void) {
 }
 
 ```
-  
-  
-## Assembler Code (ca65)  
-  
-# Display List Interrupts  
-  
+
+
+## Assembler Code (ca65)
+
+# Display List Interrupts
+
 ```
 	.include "/Users/cas/develop/cc65/asminc/atari.inc"
 	.export _dli01
@@ -2965,9 +2965,9 @@ X2:
 .endproc
 
 ```
-  
-## Access RAM under OS  
-  
+
+## Access RAM under OS
+
 ```
 ; RAMXL
 ; routines to access RAM under OS-ROM
@@ -3116,11 +3116,11 @@ end2:
 	 .org $02e2
 	 .word movetitle
 ```
-  
-## Level Files  
-  
-# Level 1 (Example)  
-  
+
+## Level Files
+
+# Level 1 (Example)
+
 ```
 ; level 0 for ATARI Greed
 ; Version 1.0

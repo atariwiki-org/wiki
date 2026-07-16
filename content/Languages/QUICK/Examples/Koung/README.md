@@ -1,14 +1,14 @@
-# Koung  
-  
+# Koung
+
 A simple PONG-like game written in QICK
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	QUICK   
-Compiler/Interpreter: 	QUICK   
-Published: 	1989 ABBUC   
-  
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	QUICK
+Compiler/Interpreter: 	QUICK
+Published: 	1989 ABBUC
+
 ```
 D1:KOUNG.QIK    
 ----------------

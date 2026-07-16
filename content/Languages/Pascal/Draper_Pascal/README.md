@@ -1,102 +1,102 @@
 # Draper Pascal
 
-Copyright (C) 1989 by Norm Draper ; For the Atari 400, 800, XL, or XE series computers  
-  
-  
-## ATR-Images  
-- [drpascal.atr](attachments/drpascal.atr) ; Draper Pascal - Disk A  
-- [drpascb.atr](attachments/drpascb.atr) ; Draper Pascal - Disk B  
-- [Pascal_Documentation.atr](attachments/Pascal_Documentation.atr) ; Pascal Documentation  
-  
-## Manuals  
-- [Draper_Pascal_Manual.pdf](attachments/Draper_Pascal_Manual.pdf) ; Draper Pascal 2.1 manual from Norm Draper ; registered users version with complete description of all definitions ; AtariWiki says mega thank you to Norm Draper for giving this manual into PD. We really appreciate your help and contribution to the Atari community. Be sure, you are in our hearts. Thanks you so much. We further thank Kay Savetz so much much for getting in contact with Norm Draper and sending us this lost to believe manual after 29(!) years... That is so amazing! Thank you Kay, we all appreciate your work so much. :-)  
-- [Draper_Pascal_2.1.pdf](attachments/Draper_Pascal_2.1.pdf) ; Draper Pascal 2.1 disk based documentation  
-  
-## Disk Based Documentation  
-  
-This document contains the "Getting Started" section plus other sections from the actual Draper Pascal manual. It is designed to get you up and running and doing useful things with Draper Pascal in a very short time. It does not, however, contain a detailed description of all the Draper Pascal definitions or pretend to be a comprehensive tutorial or user's reference. Registered users will receive the actual Draper Pascal manual which does contain a complete description of all definitions plus other information. Details on registering are in the last section titled "Registration Form".  
-  
-## The Shareware Concept  
-  
-Draper Pascal is distributed on a Shareware basis.  You may use Draper Pascal without charge for the purpose of evaluating it's suitability for your use. If you find that Draper Pascal is worth continuing to use, then you are requested to become a registered user and gain the additional benefits that go along with it. Simply complete the registration form and mail it in to us with the very reasonable payment of only $15.00. When you register your copy of Draper Pascal, you'll receive the latest version of the software if your registered version is not current, along with a comprehensive printed user manual.  
-  
-If you have received this copy from a Users' Group, "Software Library" or "SIG", and have paid a small fee (usually $3 to $10), you have NOT acquired the registered rights or continued right to use Draper Pascal. This fee was for the convenience of obtaining the diskette with Draper Pascal on it. The fee does NOT apply to the registration fee.  
-  
-You may freely copy Draper Pascal for distribution under the Shareware concept, without charge.  
-  
-You may NOT charge any fee for the Draper Pascal program or documentation without our written approval.  
-  
-You may NOT distribute Draper Pascal or it's documentation in connection with ANY commercial venture, product, publication or service unless you obtain the royalty-free license by registering.  
-  
-## Features  
-  
-- Draper Pascal is a complete package allowing the user to create, compile, and execute programs written in the Pascal language.  
-- Many features from both UCSD and ISO standard Pascals plus many extensions, such as sound and graphics, to make use of the versatile Atari hardware.  
-- Pascal structured programming features, including IF-THEN-ELSE, WHILE-DO, CASE-OF-ELSE, FOR-TO/DOWNTO-DO, and REPEAT-UNTIL are included.  
-- FUNCTIONs and PROCEDUREs using local or global variables. Integer type variables can be passed directly.  
-- Data types supported include: Character, String, Integer, Real, Boolean, Record, and File.  One and two dimension arrays are also supported for all data types other than File and Record.  
-- Only one disk drive and 48K RAM are required. Multiple, and double density, disk drives are supported.  
-- Machine language subroutines may be loaded and called.  
-- Program chaining is supported.  
-- No limit on source program size.  "Include" files are supported.  
-- One-pass compiler generates pseudo code directly.  
-- Maximum program pseudo code size is about 30K bytes.  
-- Textual compiler error messages.  
-- Execution debugging features include instruction trace and stack display.  
-- Special options for error display and break key disable.  
-- Single keystroke program execution repeat, exit to DOS, or exit to Main Menu program are featured.  
-- Includes Editor program to create, modify, and print Pascal source files, or other text type files.  
-- Includes Main Menu program (Pascal source included) for easy select of Compiler, Editor, or utility functions, such as directory or file listing. Main Menu program may be replaced with a user written program to create a turnkey operation.  
-- Ramdisk support. Details provided to registered users.  
-- Works with most popular versions of DOS.  
-- Easy to use. No linking required.  Compile and execute immediately.  
-- Royalty free license available to registered users.  
-- Includes sample programs.  
-- Comprehensive user manual provided to registered users. Complete examples and BASIC equivalents given for each reserved word.  
-  
-  
-  
-## Introduction  
-  
-Draper Software welcomes you to the world of Pascal for the Atari 400/800, XL, and XE series Computer systems.  
-  
-### What is Pascal?  
-  
-Pascal is a high-level structured programming language developed by Niklaus Wirth in 1971. It is easy to understand and well suited for program development and maintenance.  
-  
-### What is Draper Pascal?  
-  
-Draper Pascal is not a "standard" Pascal. It has a number of commands which are exactly like ISO and UCSD versions, some which are similar, and many "extensions" which bring out the true power of the Atari computer in an easy to use manner. It was designed to require only one disk drive for operation, but not be limited to only one. At this time, it has been shown to work with all hardware and software configurations where enough memory is provided. This implementation also has a number of commands which are familiar to Atari BASIC users, such as POKE, PEEK, SETCOLOR, NOTE, POINT, etc..  
-  
-### About this manual  
-  
-This manual is intended to familiarize you with all the features of Draper Pascal. It is not intended to teach you how to program in Pascal. However, if you already know Atari BASIC, then you can understand the Pascal statements more easily by referring to their BASIC equivalents shown after the definition of each Pascal reserved word in the complete manual provided to registered users. It is recommended that you read this manual completely to be familiarized with its features and restrictions.  
-  
-### What is Draper Pascal made of?  
-  
-This implementation of Pascal is made up of three main components. They are the Supervisor (sometimes referred to as runtime routines), the Compiler, and the Editor. The Supervisor is a high performance machine language program which simulates a 16-bit pseudo computer. The Compiler translates Pascal source code into pseudo-code instructions to be executed by the Supervisor. The Editor is used to enter and modify Pascal source programs. It may also be used to edit data files, or BASIC programs which have been LISTed to a disk or tape. These components are explained in detail within this manual.  
-  
-For a description of the various files included on the supplied diskette, refer to the 'System Information' section.  
-  
-### About the DOS  
-  
-Draper Pascal can be used with most popular Disk Operating Systems. It has been tested with Atari DOS 2.5, SpartaDOS 3.2d, and MYDOS. You should format a diskette with DOS on it to contain the Draper Pascal system. Since the Draper Pascal Supervisor is named AUTORUN.SYS, it will execute immediately after the disk is booted. For XL and XE computers, you do not need to hold down the Option key while booting unless you are using SpartaDOS. If using SpartaDOS, you may want to rename AUTORUN.SYS to PASCAL.COM and create a STARTUP.BAT file containing the following two lines:  
+Copyright (C) 1989 by Norm Draper ; For the Atari 400, 800, XL, or XE series computers
+
+
+## ATR-Images
+- [drpascal.atr](attachments/drpascal.atr) ; Draper Pascal - Disk A
+- [drpascb.atr](attachments/drpascb.atr) ; Draper Pascal - Disk B
+- [Pascal_Documentation.atr](attachments/Pascal_Documentation.atr) ; Pascal Documentation
+
+## Manuals
+- [Draper_Pascal_Manual.pdf](attachments/Draper_Pascal_Manual.pdf) ; Draper Pascal 2.1 manual from Norm Draper ; registered users version with complete description of all definitions ; AtariWiki says mega thank you to Norm Draper for giving this manual into PD. We really appreciate your help and contribution to the Atari community. Be sure, you are in our hearts. Thanks you so much. We further thank Kay Savetz so much much for getting in contact with Norm Draper and sending us this lost to believe manual after 29(!) years... That is so amazing! Thank you Kay, we all appreciate your work so much. :-)
+- [Draper_Pascal_2.1.pdf](attachments/Draper_Pascal_2.1.pdf) ; Draper Pascal 2.1 disk based documentation
+
+## Disk Based Documentation
+
+This document contains the "Getting Started" section plus other sections from the actual Draper Pascal manual. It is designed to get you up and running and doing useful things with Draper Pascal in a very short time. It does not, however, contain a detailed description of all the Draper Pascal definitions or pretend to be a comprehensive tutorial or user's reference. Registered users will receive the actual Draper Pascal manual which does contain a complete description of all definitions plus other information. Details on registering are in the last section titled "Registration Form".
+
+## The Shareware Concept
+
+Draper Pascal is distributed on a Shareware basis.  You may use Draper Pascal without charge for the purpose of evaluating it's suitability for your use. If you find that Draper Pascal is worth continuing to use, then you are requested to become a registered user and gain the additional benefits that go along with it. Simply complete the registration form and mail it in to us with the very reasonable payment of only $15.00. When you register your copy of Draper Pascal, you'll receive the latest version of the software if your registered version is not current, along with a comprehensive printed user manual.
+
+If you have received this copy from a Users' Group, "Software Library" or "SIG", and have paid a small fee (usually $3 to $10), you have NOT acquired the registered rights or continued right to use Draper Pascal. This fee was for the convenience of obtaining the diskette with Draper Pascal on it. The fee does NOT apply to the registration fee.
+
+You may freely copy Draper Pascal for distribution under the Shareware concept, without charge.
+
+You may NOT charge any fee for the Draper Pascal program or documentation without our written approval.
+
+You may NOT distribute Draper Pascal or it's documentation in connection with ANY commercial venture, product, publication or service unless you obtain the royalty-free license by registering.
+
+## Features
+
+- Draper Pascal is a complete package allowing the user to create, compile, and execute programs written in the Pascal language.
+- Many features from both UCSD and ISO standard Pascals plus many extensions, such as sound and graphics, to make use of the versatile Atari hardware.
+- Pascal structured programming features, including IF-THEN-ELSE, WHILE-DO, CASE-OF-ELSE, FOR-TO/DOWNTO-DO, and REPEAT-UNTIL are included.
+- FUNCTIONs and PROCEDUREs using local or global variables. Integer type variables can be passed directly.
+- Data types supported include: Character, String, Integer, Real, Boolean, Record, and File.  One and two dimension arrays are also supported for all data types other than File and Record.
+- Only one disk drive and 48K RAM are required. Multiple, and double density, disk drives are supported.
+- Machine language subroutines may be loaded and called.
+- Program chaining is supported.
+- No limit on source program size.  "Include" files are supported.
+- One-pass compiler generates pseudo code directly.
+- Maximum program pseudo code size is about 30K bytes.
+- Textual compiler error messages.
+- Execution debugging features include instruction trace and stack display.
+- Special options for error display and break key disable.
+- Single keystroke program execution repeat, exit to DOS, or exit to Main Menu program are featured.
+- Includes Editor program to create, modify, and print Pascal source files, or other text type files.
+- Includes Main Menu program (Pascal source included) for easy select of Compiler, Editor, or utility functions, such as directory or file listing. Main Menu program may be replaced with a user written program to create a turnkey operation.
+- Ramdisk support. Details provided to registered users.
+- Works with most popular versions of DOS.
+- Easy to use. No linking required.  Compile and execute immediately.
+- Royalty free license available to registered users.
+- Includes sample programs.
+- Comprehensive user manual provided to registered users. Complete examples and BASIC equivalents given for each reserved word.
+
+
+
+## Introduction
+
+Draper Software welcomes you to the world of Pascal for the Atari 400/800, XL, and XE series Computer systems.
+
+### What is Pascal?
+
+Pascal is a high-level structured programming language developed by Niklaus Wirth in 1971. It is easy to understand and well suited for program development and maintenance.
+
+### What is Draper Pascal?
+
+Draper Pascal is not a "standard" Pascal. It has a number of commands which are exactly like ISO and UCSD versions, some which are similar, and many "extensions" which bring out the true power of the Atari computer in an easy to use manner. It was designed to require only one disk drive for operation, but not be limited to only one. At this time, it has been shown to work with all hardware and software configurations where enough memory is provided. This implementation also has a number of commands which are familiar to Atari BASIC users, such as POKE, PEEK, SETCOLOR, NOTE, POINT, etc..
+
+### About this manual
+
+This manual is intended to familiarize you with all the features of Draper Pascal. It is not intended to teach you how to program in Pascal. However, if you already know Atari BASIC, then you can understand the Pascal statements more easily by referring to their BASIC equivalents shown after the definition of each Pascal reserved word in the complete manual provided to registered users. It is recommended that you read this manual completely to be familiarized with its features and restrictions.
+
+### What is Draper Pascal made of?
+
+This implementation of Pascal is made up of three main components. They are the Supervisor (sometimes referred to as runtime routines), the Compiler, and the Editor. The Supervisor is a high performance machine language program which simulates a 16-bit pseudo computer. The Compiler translates Pascal source code into pseudo-code instructions to be executed by the Supervisor. The Editor is used to enter and modify Pascal source programs. It may also be used to edit data files, or BASIC programs which have been LISTed to a disk or tape. These components are explained in detail within this manual.
+
+For a description of the various files included on the supplied diskette, refer to the 'System Information' section.
+
+### About the DOS
+
+Draper Pascal can be used with most popular Disk Operating Systems. It has been tested with Atari DOS 2.5, SpartaDOS 3.2d, and MYDOS. You should format a diskette with DOS on it to contain the Draper Pascal system. Since the Draper Pascal Supervisor is named AUTORUN.SYS, it will execute immediately after the disk is booted. For XL and XE computers, you do not need to hold down the Option key while booting unless you are using SpartaDOS. If using SpartaDOS, you may want to rename AUTORUN.SYS to PASCAL.COM and create a STARTUP.BAT file containing the following two lines:
 ```
 BASIC OFF 
 PASCAL
 ```
-This documentation file is not required to be on that same diskette.  
-  
-### Ramdisk support  
-  
-Draper Pascal supports the use of the "Ramdisk" capability provided by using a DOS that supports a ramdisk like Atari DOS 2.5 or SpartaDOS 3.x with an Atari computer system having sufficient memory to support the ramdisk. While using this feature, the Editor takes less than two seconds to load and the Compiler takes less than three seconds. Details on setup and use of this feature are provided in the complete manual provided to registered users.  
-  
-  
-## Getting Started  
-  
-This section is intended to show by example how to use the Draper Pascal system. You will edit, compile, and run a sample program. Information displayed by the computer is shown in normal type while responses to be entered by you are shown underlined with dashes (---). To begin with, make sure you have 48K RAM installed and no cartridge in place. Boot the disk now by placing it in disk drive 1 and turning on the power to the Atari computer. After the Supervisor has finished loading, you will see a screen that looks like this:  
-  
-  
+This documentation file is not required to be on that same diskette.
+
+### Ramdisk support
+
+Draper Pascal supports the use of the "Ramdisk" capability provided by using a DOS that supports a ramdisk like Atari DOS 2.5 or SpartaDOS 3.x with an Atari computer system having sufficient memory to support the ramdisk. While using this feature, the Editor takes less than two seconds to load and the Compiler takes less than three seconds. Details on setup and use of this feature are provided in the complete manual provided to registered users.
+
+
+## Getting Started
+
+This section is intended to show by example how to use the Draper Pascal system. You will edit, compile, and run a sample program. Information displayed by the computer is shown in normal type while responses to be entered by you are shown underlined with dashes (---). To begin with, make sure you have 48K RAM installed and no cartridge in place. Boot the disk now by placing it in disk drive 1 and turning on the power to the Atari computer. After the Supervisor has finished loading, you will see a screen that looks like this:
+
+
 ```
 DRAPER PASCAL
 
@@ -115,7 +115,7 @@ DRAPER PASCAL
 
 7 - Trace on
 ```
-  
+
 ```
                  DRAPER SOFTWARE
                      EDITOR
@@ -137,7 +137,7 @@ DRAPER PASCAL
 -
 
 ```
-  
+
 ```
                A - Append file
                D - Directory list
@@ -147,7 +147,7 @@ DRAPER PASCAL
                L                              Load a file
                -
 ```
-  
+
 ```
        Enter filename  -> SAMPLE1             Enter the name of the file
                           -------             to be loaded. The name of
@@ -157,7 +157,7 @@ DRAPER PASCAL
                                               You may have to overtype
                                               it with the name shown.
 ```
-  
+
 ```
        A,C,D,E,F,I,L,M,P,Q,S,X,?->L           List the file on the
                                   -           screen
@@ -168,8 +168,8 @@ DRAPER PASCAL
                    -                          the entire program in
                                               memory.
 ```
-  
-  
+
+
 ```
          1:PROGRAM KALEIDOSCOPE;
          2:VAR I,J,K,W,X:INTEGER;
@@ -374,18 +374,18 @@ DRAPER PASCAL
 
 
 ```
-  
-  
-At this point you should have a nice kaleidoscope pattern being displayed on your television screen. To stop it, press the BREAK key. To repeat execution, press the START key. To return to the main menu, press the SELECT key. To exit to DOS, press the ESC key.  
-  
-Another program, SAMPLE2, is also provided for you to practice with. It will display Roman numerals for powers of two between 1 and 4096. Compile it, turn on the trace via the main menu, and run it. After it is finished, press CTRL-T to display the trace table, and CTRL-S to display the stack contents. When prompted for 'Where? Filespec', enter 'E:'. For a description of the stack display line, refer to the 'DUMPSTK' command in the 'Pascal Definitions' section of the manual provided to registered users.  
-  
-## Main Menu  
-  
-The Main Menu is the initial program to be run by the Supervisor. It is written in Pascal. The source code is provided for it and you may customize it as you see fit. The disk filename for the source is 'INIT.PAS'. The pseudo code program that is initially executed is 'INIT.PCD'. It would be wise to copy 'INIT.PCD' to another name to be used in case your compile of the menu program is not successful. Or, you could rename INIT.PAS to something else, like NEWINIT.PAS, and compile it to produce NEWINIT.PCD. Then you can use the 'run' option (mentioned below) to test your modified program.  
-  
-The Main Menu appears as follows:  
-  
+
+
+At this point you should have a nice kaleidoscope pattern being displayed on your television screen. To stop it, press the BREAK key. To repeat execution, press the START key. To return to the main menu, press the SELECT key. To exit to DOS, press the ESC key.
+
+Another program, SAMPLE2, is also provided for you to practice with. It will display Roman numerals for powers of two between 1 and 4096. Compile it, turn on the trace via the main menu, and run it. After it is finished, press CTRL-T to display the trace table, and CTRL-S to display the stack contents. When prompted for 'Where? Filespec', enter 'E:'. For a description of the stack display line, refer to the 'DUMPSTK' command in the 'Pascal Definitions' section of the manual provided to registered users.
+
+## Main Menu
+
+The Main Menu is the initial program to be run by the Supervisor. It is written in Pascal. The source code is provided for it and you may customize it as you see fit. The disk filename for the source is 'INIT.PAS'. The pseudo code program that is initially executed is 'INIT.PCD'. It would be wise to copy 'INIT.PCD' to another name to be used in case your compile of the menu program is not successful. Or, you could rename INIT.PAS to something else, like NEWINIT.PAS, and compile it to produce NEWINIT.PCD. Then you can use the 'run' option (mentioned below) to test your modified program.
+
+The Main Menu appears as follows:
+
 ```
                   DRAPER PASCAL
 
@@ -410,110 +410,110 @@ The Main Menu appears as follows:
                   Copyright 1989
                   by Norm Draper
 ```
-  
-Each of the menu options will now be explained:  
-  
-### Run Program  
-  
-Use this option to execute a program that has previously been  
-successfully compiled. You will see the following prompt:  
+
+Each of the menu options will now be explained:
+
+### Run Program
+
+Use this option to execute a program that has previously been
+successfully compiled. You will see the following prompt:
 ```
        Enter name of program to be run
 ```
-The Main Menu program will fill in the name of the last program  
-edited, compiled, or run. If this is the one you want, all you  
-have to do is press RETURN. If it is not the one you want, just  
-overtype the name shown with the one you want.  
-  
-### Disk Directory  
-  
-This option will provide you with a list of all, or selected,  
-files on one of your disk drives. You will receive the prompt  
-'Filespec?'. If you just press RETURN at this point, you will see  
-a list of all files on the default drive. If you enter 'D2:', you  
-will see all files on drive 2. To show only selected files, use  
-wildcards in the normal manner. For example, enter 'D1:INIT.*' to  
-show only files named INIT with any suffix from drive one. At the  
-end of the list, you will be prompted to press any key to  
-continue. After pressing any key, the Main Menu will be  
-re-displayed.  
-  
-### Compile Program  
-  
-This option sends you directly to the Pascal compiler. You will be  
-prompted for the name of the program to be compiled, after the  
-Compiler is loaded. If you have already edited, compiled, or run a  
-program, the name will be shown and may be used by just pressing  
-the RETURN key. For more information, refer to the section of this  
-manual on 'The Compiler'.  
-  
-### Edit a Program  
-  
-Control is transfered to the Draper Pascal Editor when this option  
-is chosen. For more information, refer to the section of this  
-manual on 'The Editor'.  
-  
-### Exit to DOS  
-  
-Pascal execution is terminated by this option. Control is passed  
-to the Disk Operating System.  
-  
-### List a file  
-  
-This convenience entry is provided to allow you to view, on the  
-screen, any text file on disk or tape. You are prompted to enter  
-the name of the file to be listed. The file is assumed to reside  
-on the default drive if a colon (:) is not found within the name  
-you specify. At the end of the list, you will be prompted to press  
-any key to continue. After pressing a key, the Main Menu will  
-appear again.  
-  
-### Trace on  
-  
-The wraparound internal trace may be turned on (or off) with this  
-option. The trace is used only for debugging purposes and may be  
-viewed at program termination time by pressing CTRL-T. Program  
-execution speed is slightly degraded while the trace is active.  
-You will be prompted to enter the number of trace entries to be  
-maintained by the system. Each trace entry requires 10 bytes of  
-storage at the high end of memory. The trace may not be used  
-during graphics displays because screen memory is also at the high  
-end of memory. To turn the trace off and remove the memory  
-allocation of the trace table, enter zero when prompted for the  
-number of entries to maintain. The trace format is described in  
-the manual provided to registered users.  
-  
-  
-## The Editor  
-  
-The Editor is used to create, modify, and save Pascal source  
-files. It may also be used to process other text type files, like  
-BASIC programs which have been LISTed to disk or tape. It is a  
-line oriented editor. Combined with some type of formatting  
-program, it may be used for word processing applications. The  
-entire source to be edited must be in memory at one time. If your  
-Pascal program will not fit within the limits of the Editor, then  
-you can use the INCLUDE feature of the Compiler to allow segments  
-of a program to be edited separately. Refer to the section on "THE  
-COMPILER" for more information on the INCLUDE feature. Source code  
-for the Editor is listed in the manual provided to registered  
-users. Some key points to be noted about this editor are as  
-follows:  
-  
-1. Each line is referred to by line number, however, no line numbers are stored either internally or on the disk or tape.  
-1. Each line may contain up to 80 characters. This may be changed by altering the constant called MAXLENGTH and re-compiling the Editor. A source listing of the Editor is provided to registered users.  
-1. A maximum of 250 lines of text may be edited at one time. This may be changed by altering the constant called MAXLINES and re-compiling the Editor. An increase in MAXLINES should correspond with a decrease in MAXLENGTH, and vice versa. A source listing of the Editor is provided to registered users.  
-1. When entering or editing a line, the line must be terminated by pressing the RETURN key.  
-1. As lines are inserted into, or deleted from, the source file, the remaining lines are automatically renumbered.  
-1. A line of source may extend onto more than one screen line.  
-1. Due to operation of the Atari operating system, a blank line may not be directly entered. To enter a blank line, you must first enter a non-blank character (like a period), then use the Editor Change command to change the character to a space.  
-1. Input operations (Append and Insert) are terminated by entering a null line (just pressing the RETURN key).  
-1. The BREAK key is disabled by the Editor to prevent loss of data. It is enabled again at termination of the Editor.  
-1. If you enter or change data then try to Quit or exit to the Compiler without first saving the data onto disk, you will receive an option to either save the data or ignore it and continue.  
-1. Cassette tape files may be loaded, edited, and saved by the Editor. The Compiler does not support tape input, though. You would first have to load the file from tape, with the Editor, then save it to disk.  
-  
-__Wiki-Editing pending__  
-  
+The Main Menu program will fill in the name of the last program
+edited, compiled, or run. If this is the one you want, all you
+have to do is press RETURN. If it is not the one you want, just
+overtype the name shown with the one you want.
+
+### Disk Directory
+
+This option will provide you with a list of all, or selected,
+files on one of your disk drives. You will receive the prompt
+'Filespec?'. If you just press RETURN at this point, you will see
+a list of all files on the default drive. If you enter 'D2:', you
+will see all files on drive 2. To show only selected files, use
+wildcards in the normal manner. For example, enter 'D1:INIT.*' to
+show only files named INIT with any suffix from drive one. At the
+end of the list, you will be prompted to press any key to
+continue. After pressing any key, the Main Menu will be
+re-displayed.
+
+### Compile Program
+
+This option sends you directly to the Pascal compiler. You will be
+prompted for the name of the program to be compiled, after the
+Compiler is loaded. If you have already edited, compiled, or run a
+program, the name will be shown and may be used by just pressing
+the RETURN key. For more information, refer to the section of this
+manual on 'The Compiler'.
+
+### Edit a Program
+
+Control is transfered to the Draper Pascal Editor when this option
+is chosen. For more information, refer to the section of this
+manual on 'The Editor'.
+
+### Exit to DOS
+
+Pascal execution is terminated by this option. Control is passed
+to the Disk Operating System.
+
+### List a file
+
+This convenience entry is provided to allow you to view, on the
+screen, any text file on disk or tape. You are prompted to enter
+the name of the file to be listed. The file is assumed to reside
+on the default drive if a colon (:) is not found within the name
+you specify. At the end of the list, you will be prompted to press
+any key to continue. After pressing a key, the Main Menu will
+appear again.
+
+### Trace on
+
+The wraparound internal trace may be turned on (or off) with this
+option. The trace is used only for debugging purposes and may be
+viewed at program termination time by pressing CTRL-T. Program
+execution speed is slightly degraded while the trace is active.
+You will be prompted to enter the number of trace entries to be
+maintained by the system. Each trace entry requires 10 bytes of
+storage at the high end of memory. The trace may not be used
+during graphics displays because screen memory is also at the high
+end of memory. To turn the trace off and remove the memory
+allocation of the trace table, enter zero when prompted for the
+number of entries to maintain. The trace format is described in
+the manual provided to registered users.
+
+
+## The Editor
+
+The Editor is used to create, modify, and save Pascal source
+files. It may also be used to process other text type files, like
+BASIC programs which have been LISTed to disk or tape. It is a
+line oriented editor. Combined with some type of formatting
+program, it may be used for word processing applications. The
+entire source to be edited must be in memory at one time. If your
+Pascal program will not fit within the limits of the Editor, then
+you can use the INCLUDE feature of the Compiler to allow segments
+of a program to be edited separately. Refer to the section on "THE
+COMPILER" for more information on the INCLUDE feature. Source code
+for the Editor is listed in the manual provided to registered
+users. Some key points to be noted about this editor are as
+follows:
+
+1. Each line is referred to by line number, however, no line numbers are stored either internally or on the disk or tape.
+1. Each line may contain up to 80 characters. This may be changed by altering the constant called MAXLENGTH and re-compiling the Editor. A source listing of the Editor is provided to registered users.
+1. A maximum of 250 lines of text may be edited at one time. This may be changed by altering the constant called MAXLINES and re-compiling the Editor. An increase in MAXLINES should correspond with a decrease in MAXLENGTH, and vice versa. A source listing of the Editor is provided to registered users.
+1. When entering or editing a line, the line must be terminated by pressing the RETURN key.
+1. As lines are inserted into, or deleted from, the source file, the remaining lines are automatically renumbered.
+1. A line of source may extend onto more than one screen line.
+1. Due to operation of the Atari operating system, a blank line may not be directly entered. To enter a blank line, you must first enter a non-blank character (like a period), then use the Editor Change command to change the character to a space.
+1. Input operations (Append and Insert) are terminated by entering a null line (just pressing the RETURN key).
+1. The BREAK key is disabled by the Editor to prevent loss of data. It is enabled again at termination of the Editor.
+1. If you enter or change data then try to Quit or exit to the Compiler without first saving the data onto disk, you will receive an option to either save the data or ignore it and continue.
+1. Cassette tape files may be loaded, edited, and saved by the Editor. The Compiler does not support tape input, though. You would first have to load the file from tape, with the Editor, then save it to disk.
+
+__Wiki-Editing pending__
+
 ```
                                 EDITOR COMMANDS
 
@@ -1928,4 +1928,4 @@ __Wiki-Editing pending__
 
 
 ```
-  
+

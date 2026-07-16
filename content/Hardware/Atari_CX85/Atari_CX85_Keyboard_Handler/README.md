@@ -1,16 +1,16 @@
-# Atari CX85 Keyboard Handler  
-  
-## General Information  
-  
-Author: Rich Andrews, Lockport, Illinois 
-Assembler: MAC/65   
+# Atari CX85 Keyboard Handler
+
+## General Information
+
+Author: Rich Andrews, Lockport, Illinois
+Assembler: MAC/65
 
 Disassembled by Rich Andrews, Lockport, Illinois
-  
-There was no copyright notice in the original code, but one must assume it is public domain and was probably written by Atari Inc.. (No one else would have bothered!)  
-  
+
+There was no copyright notice in the original code, but one must assume it is public domain and was probably written by Atari Inc.. (No one else would have bothered!)
+
   Call from BASIC with an `X=USR(32512)`. Once called by BASIC, do not call again.
-  
+
 ## Source Code
 ```
 1000	  .TITLE "CX85 NUMERIC KEYPAD HANDLER - Mac65 version"

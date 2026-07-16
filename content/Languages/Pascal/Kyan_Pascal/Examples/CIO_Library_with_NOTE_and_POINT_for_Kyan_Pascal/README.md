@@ -1,5 +1,5 @@
-# CIO Library with NOTE and POINT for Kyan Pascal  
-  
+# CIO Library with NOTE and POINT for Kyan Pascal
+
 ```
 (* FILELIB.I - Routines to allow the use of standard ATARI I/O calls in KYAN
    Pascal programs.
@@ -392,4 +392,4 @@ CL8  LDA (_SP),Y
 End; (* FilePoint *)
 
 ```
-  
+

@@ -1,36 +1,36 @@
 ---
 title: ProjUSBCartAtariMouse
 ---
-# Generic USB Mouse Driver  
-  
-  
-Tested with a Logitech Mouse USB. Might work with other mice.  
-  
-## Description  
-  
-|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||  
-|  $10           |  1                 | Buttons  | $06F2  | -- | MBUTTON     |  
-|  $11           |  2                 | Vertical displacement (up/down) | $06F1  | -- | MVERT     |  
-|  $12           |  3                 | Horizontal displacement (left/right)  | $06F0  | -- | MHORIZ     |  
-|  $13           |  4                 | Wheel  | $06F3  | -- | MWHEEL     |  
-  
-- Byte 3: Buttons  
-|| Bit  || Button  ||  
-|  1   |   left     |  
-|  2   |   right     |  
-|  3   |   middle     |  
-  
-  
-- Byte 4 - Wheel  
-|| Value  || Button  ||  
-|  $FF (255)   |   up     |  
-|  $01 (001)   |   down     |  
-  
-  
-## Device dependent source  
-  
-This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).  
-  
+# Generic USB Mouse Driver
+
+
+Tested with a Logitech Mouse USB. Might work with other mice.
+
+## Description
+
+|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||
+|  $10           |  1                 | Buttons  | $06F2  | -- | MBUTTON     |
+|  $11           |  2                 | Vertical displacement (up/down) | $06F1  | -- | MVERT     |
+|  $12           |  3                 | Horizontal displacement (left/right)  | $06F0  | -- | MHORIZ     |
+|  $13           |  4                 | Wheel  | $06F3  | -- | MWHEEL     |
+
+- Byte 3: Buttons
+|| Bit  || Button  ||
+|  1   |   left     |
+|  2   |   right     |
+|  3   |   middle     |
+
+
+- Byte 4 - Wheel
+|| Value  || Button  ||
+|  $FF (255)   |   up     |
+|  $01 (001)   |   down     |
+
+
+## Device dependent source
+
+This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).
+
 ```
 01000          .LI OFF
 01010 ****************************
@@ -186,5 +186,5 @@ This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.
 02510          RTS
 02520 ------------------------------
 ```
-  
-  
+
+

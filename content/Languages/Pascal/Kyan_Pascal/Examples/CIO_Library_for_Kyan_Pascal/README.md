@@ -1,38 +1,38 @@
-# CIO Library for Kyan Pascal  
-  
-CIO EQUATES FILE  
-  
-While you program with your Atari, you will frequently use  
-input and output operations, and you will invariably use CIO  
-to do these operations (except for specialized operations, in  
-which case you may use something like SIO).  CIO has many  
-labels associated with it such as ICCMD and ICAX1, which you  
-will use often.  But if you EQUate these labels in different  
-routines, the Kyan Macro Assembler (AS) will hand you a  
-'multiply defined label' error, so you must equate these  
-labels globally (which means right after your global VARiable  
-declarations).  
-  
-I have created an include file, CIOEqu.i, to make these  
-global equates, which may then be used by assembly language  
-routines throughout your program.  It is not an all-  
-encompassing file--that is, it does not contain equates for  
-every CIO label and command number, just most of the more  
-commonly encountered ones.  You may, of course, add missing  
-labels and commands to this file.  
-  
-This file should generally be the first one that you include  
-after your global VARiable declarations, since its labels may  
-be used by other included routines.  The function GetCha is a  
-routine that makes use of CIOEqu.i.  It is available in this  
-data library under the filenames GETCHR.DOC and GETCHR.PAS.  
-  
-(CIOEQU.PAS should be renamed to CIOEQU.I after you download  
-it.)  
-  
-  
-## CIOEQU.I  
-  
+# CIO Library for Kyan Pascal
+
+CIO EQUATES FILE
+
+While you program with your Atari, you will frequently use
+input and output operations, and you will invariably use CIO
+to do these operations (except for specialized operations, in
+which case you may use something like SIO).  CIO has many
+labels associated with it such as ICCMD and ICAX1, which you
+will use often.  But if you EQUate these labels in different
+routines, the Kyan Macro Assembler (AS) will hand you a
+'multiply defined label' error, so you must equate these
+labels globally (which means right after your global VARiable
+declarations).
+
+I have created an include file, CIOEqu.i, to make these
+global equates, which may then be used by assembly language
+routines throughout your program.  It is not an all-
+encompassing file--that is, it does not contain equates for
+every CIO label and command number, just most of the more
+commonly encountered ones.  You may, of course, add missing
+labels and commands to this file.
+
+This file should generally be the first one that you include
+after your global VARiable declarations, since its labels may
+be used by other included routines.  The function GetCha is a
+routine that makes use of CIOEqu.i.  It is available in this
+data library under the filenames GETCHR.DOC and GETCHR.PAS.
+
+(CIOEQU.PAS should be renamed to CIOEQU.I after you download
+it.)
+
+
+## CIOEQU.I
+
 ```
 #A
 ;_________CIO equates file__________
@@ -96,9 +96,9 @@ conrw EQU 13
 ;any problems.
 #
 ```
-  
-## CIOLIB .PAS  
-  
+
+## CIOLIB .PAS
+
 ```
 (*             CIOLib.i
                ________
@@ -227,4 +227,4 @@ BEGIN
 #
 END;(* Put_Byte *)
 ```
-  
+

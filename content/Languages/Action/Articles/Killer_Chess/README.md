@@ -1,51 +1,51 @@
 ---
 title: Killer Chess
 ---
-### General Information  
-Author: Greg Knauss  
-Language: ACTION!  
-Compiler/Interpreter: ACTION!  
-Published: Antic Vol. 6 #10 (02/ 88)  
+### General Information
+Author: Greg Knauss
+Language: ACTION!
+Compiler/Interpreter: ACTION!
+Published: Antic Vol. 6 #10 (02/ 88)
 ---
-# Killer Chess  
-## Two-player ACTION! shootout  
-  
-__Killer Chess brings a new frenzy of aggression to the classic game, as you mop up the chessboard without waiting for your opponent to make moves. This type-in program is written in ACTION! and requires the ACTION! language cartridge from Optimized Systems Software, as well as an 8-bit Atari computer with at least 32K memory and a disk drive.__  
-  
-Unless you're a real fanatic or a tournament contender, I'll bet that you don't play much chess anymore. Let's face it, most "regular folks" find chess boring!  
-  
-But now imagine a revitalized, fast-ACTION! chess-where the players don't take turns.  
-  
-That's right. . . no turns. Killer Chess players make legal chess moves as fast as they can, deciding on instant strategies that they would have spent dull minutes pondering in a traditional game. Stodgy old chess becomes a fast-gun shootout.  
-  
-Welcome to Killer Chess, written in ACTION! the fast, powerful programming language from Optimized Systems Software. You and your human opponent will use an Atari 8-bit computer and a pair of joysticks to battle it out in a radical new version of a traditional game  
-  
-### GETTING STARTED  
-TYPING IT IN: Insert the ACTION! cartridge into your 8-bit Atari and type in Listing 1, KILLER.ACT Type carefully; because there isn't a TYPO II for ACTION! After you have a copy of the complete program safely saved, go to the monitor by pressing \[CONTROL\] \[SHIFT\] \[M\] and compile the program by typing \[C\] \[RETURN\]. When the cursor starts blinking again, type \[R\] \[RETURN\] and the title page should appear.  
-  
-MONTHLY DISK USERS: You can play Killer Chess without owning the ACTION! cartridge. Just insert your Antic Monthly Disk into your disk drive, remove all cartridges from your Atari (XL/XE owners should press the \[OPTION\] key) and turn on your Atari. When the DOS menu appears, just type \[L\]\[RETURN\], then type KILLER.EXE \[RETURN\].  
-  
-When the title screen is seen, press \[START\] to begin a game. When the game begins, both players will be able to simultaneously move their respective cursors around the board. With joystick 0, player 1 controls the white cursor and white pieces. With joystick 1, player 2 controls the gray cursor and gray pieces.  
-  
-### PLAYING KILLER CHESS  
-Simply place the cursor over any piece you want to move and press the joystick button. Now move the cursor over a square that would be a legal move for that piece and press the button again. If the move is illegal, the computer will tell you so -with a rather unpleasant sound- and let you try again. Otherwise the piece will be placed at the new square. If you accidentally pick up a piece and don't want to move it, just replace the cursor over the piece you selected and press the button again. The piece will be dropped.  
-  
-To capture an enemy, simply make a legal move on top of it. The offending piece will be removed from play. You can capture a piece your opponent is "holding". The piece isn't actually moved until it is set down again.  
-  
-To win, just land one of your characters on top of the opponent's King. To return to the title screen press \[START\] or wait about 10 seconds.  
-  
-Killer Chess does not have castling or en passant moves, which are allowed under advanced chess rules but would be too confusing here.  
-  
-### ABOUT THE PROGRAM  
-The biggest programming problem in Killer Chess was detecting illegal chess moves. My solution is quite simple and can be applied to any chess program. The method is even fast enough to be used with BASIC.  
-  
-Here's what I did: When a piece is selected, its old position is recorded. Each new position chosen by a player is also recorded. The old position is then subtracted from the new position and stored in a "delta" value, one delta for X and one for Y Delta means how much something changes. So if the new X position is 5 more than the previous one, the Delta X would be five. If the new Y position is 1 less than the old, Delta Y would be -1.  
-  
-I then used IF statements to determine if the piece was allowed to move to that spot. For instance, a pawn is only allowed to move forward, so I checked to make sure that Delta X is equal to nothing but 1. If the old position was equal to its starting position, I allowed it to move an extra space-because Pawns can move two spaces on their first move.  
-  
-If the Pawn's new position is on top of an opponent's piece, I allowed for a Delta Y movement of either 1 or -1. Combined with the Delta X, that would result in diagonal movement. Simple, really. It just took a bit of planning to work out the values for the special conditions of each chess piece.  
+# Killer Chess
+## Two-player ACTION! shootout
+
+__Killer Chess brings a new frenzy of aggression to the classic game, as you mop up the chessboard without waiting for your opponent to make moves. This type-in program is written in ACTION! and requires the ACTION! language cartridge from Optimized Systems Software, as well as an 8-bit Atari computer with at least 32K memory and a disk drive.__
+
+Unless you're a real fanatic or a tournament contender, I'll bet that you don't play much chess anymore. Let's face it, most "regular folks" find chess boring!
+
+But now imagine a revitalized, fast-ACTION! chess-where the players don't take turns.
+
+That's right. . . no turns. Killer Chess players make legal chess moves as fast as they can, deciding on instant strategies that they would have spent dull minutes pondering in a traditional game. Stodgy old chess becomes a fast-gun shootout.
+
+Welcome to Killer Chess, written in ACTION! the fast, powerful programming language from Optimized Systems Software. You and your human opponent will use an Atari 8-bit computer and a pair of joysticks to battle it out in a radical new version of a traditional game
+
+### GETTING STARTED
+TYPING IT IN: Insert the ACTION! cartridge into your 8-bit Atari and type in Listing 1, KILLER.ACT Type carefully; because there isn't a TYPO II for ACTION! After you have a copy of the complete program safely saved, go to the monitor by pressing \[CONTROL\] \[SHIFT\] \[M\] and compile the program by typing \[C\] \[RETURN\]. When the cursor starts blinking again, type \[R\] \[RETURN\] and the title page should appear.
+
+MONTHLY DISK USERS: You can play Killer Chess without owning the ACTION! cartridge. Just insert your Antic Monthly Disk into your disk drive, remove all cartridges from your Atari (XL/XE owners should press the \[OPTION\] key) and turn on your Atari. When the DOS menu appears, just type \[L\]\[RETURN\], then type KILLER.EXE \[RETURN\].
+
+When the title screen is seen, press \[START\] to begin a game. When the game begins, both players will be able to simultaneously move their respective cursors around the board. With joystick 0, player 1 controls the white cursor and white pieces. With joystick 1, player 2 controls the gray cursor and gray pieces.
+
+### PLAYING KILLER CHESS
+Simply place the cursor over any piece you want to move and press the joystick button. Now move the cursor over a square that would be a legal move for that piece and press the button again. If the move is illegal, the computer will tell you so -with a rather unpleasant sound- and let you try again. Otherwise the piece will be placed at the new square. If you accidentally pick up a piece and don't want to move it, just replace the cursor over the piece you selected and press the button again. The piece will be dropped.
+
+To capture an enemy, simply make a legal move on top of it. The offending piece will be removed from play. You can capture a piece your opponent is "holding". The piece isn't actually moved until it is set down again.
+
+To win, just land one of your characters on top of the opponent's King. To return to the title screen press \[START\] or wait about 10 seconds.
+
+Killer Chess does not have castling or en passant moves, which are allowed under advanced chess rules but would be too confusing here.
+
+### ABOUT THE PROGRAM
+The biggest programming problem in Killer Chess was detecting illegal chess moves. My solution is quite simple and can be applied to any chess program. The method is even fast enough to be used with BASIC.
+
+Here's what I did: When a piece is selected, its old position is recorded. Each new position chosen by a player is also recorded. The old position is then subtracted from the new position and stored in a "delta" value, one delta for X and one for Y Delta means how much something changes. So if the new X position is 5 more than the previous one, the Delta X would be five. If the new Y position is 1 less than the old, Delta Y would be -1.
+
+I then used IF statements to determine if the piece was allowed to move to that spot. For instance, a pawn is only allowed to move forward, so I checked to make sure that Delta X is equal to nothing but 1. If the old position was equal to its starting position, I allowed it to move an extra space-because Pawns can move two spaces on their first move.
+
+If the Pawn's new position is on top of an opponent's piece, I allowed for a Delta Y movement of either 1 or -1. Combined with the Delta X, that would result in diagonal movement. Simple, really. It just took a bit of planning to work out the values for the special conditions of each chess piece.
 ---
-''Greg "Maddog" Knauss of Rancho Palos Verdes, California is an indefatigable ACTION! language programmer''  
+''Greg "Maddog" Knauss of Rancho Palos Verdes, California is an indefatigable ACTION! language programmer''
 ```
 ; KILLER CHESS
 ; BY GREG KNAUSS   

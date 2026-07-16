@@ -1,8 +1,8 @@
 ---
 title: Slow-Fast configuration
 ---
-# Slow/Fast Konfiguration  
-  
+# Slow/Fast Konfiguration
+
 ```
 0100 ;*************************************
 0110 ;*  Demonstration fuer Kommando $4B  *

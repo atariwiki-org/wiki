@@ -1,10 +1,10 @@
 ---
 title: HEAD Tool
 ---
-  
-  
-# HEAD Tool Sourcecode  
-  
+
+
+# HEAD Tool Sourcecode
+
 ```
 PROGRAM Head;
 (*
@@ -39,4 +39,4 @@ BEGIN
   WriteLn(nl,' lines typed from ',fn)
 END. (* PROGRAM *)
 ```
-  
+

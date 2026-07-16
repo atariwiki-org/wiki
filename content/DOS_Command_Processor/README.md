@@ -1,17 +1,17 @@
 ---
 title: DOS Command Processor
 ---
-### DOS Command Processor  
-  
-Super Command Processor  
-  
-by: Bryan Schappel  
-  
-If the typed line does not  
-contain a command, then the  
-filename entered will be loaded  
-as a binary file.  
-  
+### DOS Command Processor
+
+Super Command Processor
+
+by: Bryan Schappel
+
+If the typed line does not
+contain a command, then the
+filename entered will be loaded
+as a binary file.
+
 ```
 0100	  .OPT NO LIST
 0110 ;-------------------------------

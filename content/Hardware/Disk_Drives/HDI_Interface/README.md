@@ -1,31 +1,31 @@
 ---
 title: HDI Interface
 ---
-# High-Density Disk Interface  
-  
-The HDI is the interface for connecting up to 4 standard  
-drives to the XL/XE. You can mix 3,5" and 5,25" floppies at will.  
-Required is that the drive supports the Disk Change signal at pin 34 of  
-the Shugart bus. It doesn't support Medium Density (128 bytes/sector in  
-MFM mode and 1.2 MB drives). Maximum transfer rate: 500 Kbit/s (1.44  
-MByte disks).  
-  
-The HDI has been developed in 1991 by Erhard Pütz (FloppyDoc).  
-  
-![](attachments/hdi.jpg)  
-  
-[HDI-CAS.jpg](attachments/HDI-CAS.jpg)  
-  
-## Manual:  
-  
-HDI Manual: [HDI_Manual.pdf](attachments/HDI_Manual.pdf)  
-  
-  
-HDI Schematics [sch_hdi.png](attachments/sch_hdi.png) (PDF: [sch_hdi.pdf](attachments/sch_hdi.pdf))  
-  
-  
-  
-# HDI High Speed SIO  
+# High-Density Disk Interface
+
+The HDI is the interface for connecting up to 4 standard
+drives to the XL/XE. You can mix 3,5" and 5,25" floppies at will.
+Required is that the drive supports the Disk Change signal at pin 34 of
+the Shugart bus. It doesn't support Medium Density (128 bytes/sector in
+MFM mode and 1.2 MB drives). Maximum transfer rate: 500 Kbit/s (1.44
+MByte disks).
+
+The HDI has been developed in 1991 by Erhard Pütz (FloppyDoc).
+
+![](attachments/hdi.jpg)
+
+[HDI-CAS.jpg](attachments/HDI-CAS.jpg) 
+
+## Manual:
+
+HDI Manual: [HDI_Manual.pdf](attachments/HDI_Manual.pdf) 
+
+
+HDI Schematics [sch_hdi.png](attachments/sch_hdi.png) (PDF: [sch_hdi.pdf](attachments/sch_hdi.pdf))
+
+
+
+# HDI High Speed SIO
 ```
 01000 * High-Speed SIO-Driver, will
 01010 * be relocated by HDI and
@@ -281,4 +281,4 @@ HDI Schematics [sch_hdi.png](attachments/sch_hdi.png) (PDF: [sch_hdi.pdf](attach
 03510          .DA REL14+1,REL15+1,GE1+1,REL16+1,REL17+1,REL18+1,REL19+1
 03520          .DA REL20+1,STOUT+1,STOU2+1,ERRABS,REL21+1,EABS3+1
 ```
-  
+

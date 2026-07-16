@@ -1,46 +1,46 @@
 ---
 title: Data Entry Routines
 ---
-# Data Entry Routines  
-  
-General Information  
-  
-Author: 	Paul B. Loux   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	1986   
-  
-Description: Universal string input routine, offering full control over keyboard input and screen display.  Allows program to limit responses to acceptable parameters.  
-  
-Calling parameters:  
-  
-  
-|| FIELD	|| The field buffer. ||  
-| MIN	|  Minimum number of characters for valid response, 0-MAX. |  
-| MAX	|  Maximum number of characters, 1-36.	|  
-| TYPEC	|  Type Code (see below) |  
-| XIT	|  Exit record if the first character in FIELD is ESC.	|  
-| COL	|  Screen display horizontal position for input echo, 2-37. |  
-| ROW	|  Screen display vertical position for input echo, 1-22. |  
-| ERRPTR | Pointer variable to pass error code on record aborts (Ctrl-Z) or XIT's (above). |  
-  
-  
-Note:	User entry of ESC will restart field entry,  or exit (see above).  Entry of Ctrl-Z aborts record. The routine uses the BYTE FUNC	Fetch() to obtain the 	keystokes, allowing timeout control.  
-  
-(Note: no range check is provided on the numeric response)  
-  
-Type Codes  
-|| code || type ||  
-|1 | Alphanumeric	|  
-|2 | Force Upper Case	 |  
-|3 | Signed integer	|  
-|4 | Signed real (float) |  
-|5 | Unsigned integer	 |  
-|6 | Unsigned real	|  
-|7 | Yes/No check |  
-  
-  
-### EntryS  
+# Data Entry Routines
+
+General Information
+
+Author: 	Paul B. Loux
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	1986
+
+Description: Universal string input routine, offering full control over keyboard input and screen display.  Allows program to limit responses to acceptable parameters.
+
+Calling parameters:
+
+
+|| FIELD	|| The field buffer. ||
+| MIN	|  Minimum number of characters for valid response, 0-MAX. |
+| MAX	|  Maximum number of characters, 1-36.	|
+| TYPEC	|  Type Code (see below) |
+| XIT	|  Exit record if the first character in FIELD is ESC.	|
+| COL	|  Screen display horizontal position for input echo, 2-37. |
+| ROW	|  Screen display vertical position for input echo, 1-22. |
+| ERRPTR | Pointer variable to pass error code on record aborts (Ctrl-Z) or XIT's (above). |
+
+
+Note:	User entry of ESC will restart field entry,  or exit (see above).  Entry of Ctrl-Z aborts record. The routine uses the BYTE FUNC	Fetch() to obtain the 	keystokes, allowing timeout control.
+
+(Note: no range check is provided on the numeric response)
+
+Type Codes
+|| code || type ||
+|1 | Alphanumeric	|
+|2 | Force Upper Case	 |
+|3 | Signed integer	|
+|4 | Signed real (float) |
+|5 | Unsigned integer	 |
+|6 | Unsigned real	|
+|7 | Yes/No check |
+
+
+### EntryS
 ```
 ;************************************
 ;*											 *
@@ -552,9 +552,9 @@ RETURN
 
 
 ```
-  
-### EntryYN  
-  
+
+### EntryYN
+
 ```
 ;************************************
 ;*											 *
@@ -721,7 +721,7 @@ FI
 
 RETURN
 ```
-### EntryI  
+### EntryI
 ```
 ;************************************
 ;*											 *
@@ -915,7 +915,7 @@ PRINTE("Done...")
 RETURN
 
 ```
-### EntryC  
+### EntryC
 ```
 ;************************************
 ;*											 *
@@ -1078,7 +1078,7 @@ RETURN
 
 
 ```
-### EntryB  
+### EntryB
 ```
 ;************************************
 ;*											 *

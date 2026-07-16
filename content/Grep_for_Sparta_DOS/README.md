@@ -1,51 +1,51 @@
 ---
 title: Grep for Sparta DOS
 ---
-# Grep for Sparta DOS  
-  
-  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	2003   
-  
-Download: [grep.atr](attachments/grep.atr)  
-  
-# GREP tool for Sparta DOS  
-  
-  
-This is the first, very limited alpha version.  
-  
-  
-## Limitations:  
-  
-- Some bugs  
-- only works on Sparta DOS 32GX  
-- only works with ACTION! Cart  
-- don't exit to DOS  
-- only case sensitive  
-- no parameter checking  
-  
-## To-Do:  
-  
-- Case insensitive search  
-- parameter checking  
-- replace PEEK with BYTE POINTER  
-- catch all bugs  
-- trim RUNTIME part  
-- use generic Sparta DOS Library  
-  
-## Usage:  
-  
+# Grep for Sparta DOS
+
+
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	2003
+
+Download: [grep.atr](attachments/grep.atr) 
+
+# GREP tool for Sparta DOS
+
+
+This is the first, very limited alpha version.
+
+
+## Limitations:
+
+- Some bugs
+- only works on Sparta DOS 32GX
+- only works with ACTION! Cart
+- don't exit to DOS
+- only case sensitive
+- no parameter checking
+
+## To-Do:
+
+- Case insensitive search
+- parameter checking
+- replace PEEK with BYTE POINTER
+- catch all bugs
+- trim RUNTIME part
+- use generic Sparta DOS Library
+
+## Usage:
+
 ```
 grep filename searchstring
 ```
-  
-## Source (ACTION!)  
-  
+
+## Source (ACTION!)
+
 ```
 ;***********************
 ;**                   **
@@ -381,6 +381,6 @@ RETURN
 
 
 ```
-  
-  
-  
+
+
+

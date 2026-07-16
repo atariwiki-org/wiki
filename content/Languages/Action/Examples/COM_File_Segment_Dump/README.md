@@ -1,12 +1,12 @@
-# COM File Segment Dump  
-  
-General Information  
-  
-Author: 	A. B. Langdon   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	9/84-4/28/85   
-  
+# COM File Segment Dump
+
+General Information
+
+Author: 	A. B. Langdon
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	9/84-4/28/85
+
 ```
 ; LOaDPT 9/84-4/28/85, A. B. Langdon
 

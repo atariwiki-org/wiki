@@ -1,15 +1,15 @@
 ---
 title: Synapse Assembler Atari 800 OS Equates
 ---
-# Synapse Assembler Atari 800 OS Equates  
-  
-General Information  
-  
-Assembler: SynAssembler   
-Published: Synapse JUNE 1979   
-  
-The File can be used in the SynAssembler. It can also be used as a reference to the Atari OS System Equates  
-  
+# Synapse Assembler Atari 800 OS Equates
+
+General Information
+
+Assembler: SynAssembler
+Published: Synapse JUNE 1979
+
+The File can be used in the SynAssembler. It can also be used as a reference to the Atari OS System Equates
+
 ```
 00010 *******************************
 00020 *     SUPPORTED LOCATIONS     *

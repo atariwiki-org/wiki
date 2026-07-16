@@ -1,25 +1,25 @@
 ---
 title: Multi Zoom Master
 ---
-### Multi Zoom Master  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	TURBO-BASIC   
-Compiler/Interpreter: 	Turbo-Basic   
-Published: 	ABBUC Magazin   
-  
-## How to use  
-  
-This is a program to edit Graphics 15 pictures (62 Sec) in pixel by pixel zoom mode. The Programm is in english, the Manual however is in german language. Write a mail to carsten@strotmann.de if you like to see an english translated version.  
-  
-The MultiZoomMaster Sourcecode is Free Software under the GNU Public License  
-  
-ATR-File with Turbo-Basic Source and compiled version is in the Attachments.  
-  
-## Source (Main Program)  
-  
+### Multi Zoom Master
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	TURBO-BASIC
+Compiler/Interpreter: 	Turbo-Basic
+Published: 	ABBUC Magazin
+
+## How to use
+
+This is a program to edit Graphics 15 pictures (62 Sec) in pixel by pixel zoom mode. The Programm is in english, the Manual however is in german language. Write a mail to carsten@strotmann.de if you like to see an english translated version.
+
+The MultiZoomMaster Sourcecode is Free Software under the GNU Public License
+
+ATR-File with Turbo-Basic Source and compiled version is in the Attachments.
+
+## Source (Main Program)
+
 ```
 1000 DIM SAVE$(7680),IN$(40),FN$(17)
 1010 POKE 106,192
@@ -380,4 +380,4 @@ ATR-File with Turbo-Basic Source and compiled version is in the Attachments.
 4560 ------------------------------
 
 ```
-  
+

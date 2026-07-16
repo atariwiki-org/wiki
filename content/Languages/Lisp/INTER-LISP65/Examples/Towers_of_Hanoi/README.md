@@ -1,14 +1,14 @@
 ---
 title: Towers of Hanoi
 ---
-# Towers of Hanoi  
-  
-General Information  
-  
-Author: 	Datasoft   
-Language: 	LISP   
-Compiler/Interpreter: 	InterLisp/65   
-  
+# Towers of Hanoi
+
+General Information
+
+Author: 	Datasoft
+Language: 	LISP
+Compiler/Interpreter: 	InterLisp/65
+
 ```
 (HANOI OTHER MOVE DISPLAY HLIN CADR LOC VTAB GOXY)
 (DEFINEQ HANOI '(LAMBDA NIL (PROG (ONE TWO THREE) (GR 20) (PAGE) (POKE 752 1) (TAB 4) (PRIN1 (QUOTE -ONE-)) (TAB 17) (PRIN1 (QUOTE -TWO-)) (TAB 29) (PRINT (QUOTE -THREE-)) (COL 1) (HLIN 13 13 20) (HLIN 11 15 22) (HLIN 9 17 24) (HLIN 7 19 26) (HLIN 5 21 28) (HLIN 3 23 30) (HLIN 1 25 32) (SETQ ONE (QUOTE (0 1 2 3 4 5 6))) (MOVE 7 (QUOTE ONE) (QUOTE THREE)) (READC) (SOUND 0 0 0 0) (POKE 752 0)))

@@ -1,33 +1,33 @@
 ---
 title: File IO Routines
 ---
-# File-IO Routines  
-  
-by Bill Wilkinson  
-  
-Modified 6/30/88 by Don Davis  
-  
-General Information  
-  
-Author: 	Bill Wilkinson / Don Davis   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	6/30/88   
-  
-This is a substantially modified version of Bill Wilkinson's IOFUNC.ACT, which is also in this Data Library. It should be considered a replacement for the original file and for IOFUN2.ACT, which, as it turns out, didn't go far enough.  
-  
-Modified 6/30/88 by Don Davis  
-  
-The major failing of Bill's original set of routines was that none of the routines altered the bytes in the EOF array to reflect the proper end-of-file status of the corresponding IOCBs. While this was not a fatal omission, it was, at times, a nuisance. In addition, there was a bug (actually two bugs) in the F_gp() procedure. The first caused the FGet() and FGetD() functions to return the CIO status every time they were called, instead of returning a data byte. The second sometimes caused more than one byte to be read from or written to the appropriate channel by the get/put functions. The F_gp() support procedure had been modified to correct the bugs. Another modification was made to allow the FGet() and FGetD() functions to set the EOF flags when they encounter an end-of-file error. The F_rw() support procedure has been similarly altered to allow FRead() to set an EOF flag when it encouters an end-of-file status. FOpen() has been modified to close the specified IOCB before attempting to open it. FOpen() calls FClose() to do this, so if you need the first, you can't delete the second. FOpen() has also been changed so that a successful open operation clears the EOF flag for that IOCB, and a failure sets the flag to 1. F_eof() has been added to handle the actual setting and clearing of EOF flags.  
-  
-Replacement I/O library for Action!  
-  
-This library implements vital I/O via FUNCtions rather than PROCs... the calling routine can thus examine the returned (error?) value and act accordingly. Functions returning bytes simply return the normal Atari CIO OS error code. Functions returning INTegers return appropriate information (e.g., byte count) if the returned value is positive.  
-  
-When the returned value is negative, the error code will be in the lower byte. Note that code block routines are generally broken up along assembly language instruction boundaries. CAUTION:  I have not provided support for XIO routines that require a buffer address and length (e.g., some forms of the concurrent IO cmd for R:).  You can NOT use XIOFN or XIOAXFN for these purposes, because the "FN" (filename) is copied to a buffer and has a zero byte appended to it. CAUTION:  I do NOT put "D:" in front of file names that lack an colon.  If you need this feature, add it.  But I felt that "D:" is a pretty poor default today, what with multiple drives, subdirectories, etc.  
-  
-These routines written by Bill Wilkinson of OSS They are public domain and may be freely used and copied.  
-  
+# File-IO Routines
+
+by Bill Wilkinson
+
+Modified 6/30/88 by Don Davis
+
+General Information
+
+Author: 	Bill Wilkinson / Don Davis
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	6/30/88
+
+This is a substantially modified version of Bill Wilkinson's IOFUNC.ACT, which is also in this Data Library. It should be considered a replacement for the original file and for IOFUN2.ACT, which, as it turns out, didn't go far enough.
+
+Modified 6/30/88 by Don Davis
+
+The major failing of Bill's original set of routines was that none of the routines altered the bytes in the EOF array to reflect the proper end-of-file status of the corresponding IOCBs. While this was not a fatal omission, it was, at times, a nuisance. In addition, there was a bug (actually two bugs) in the F_gp() procedure. The first caused the FGet() and FGetD() functions to return the CIO status every time they were called, instead of returning a data byte. The second sometimes caused more than one byte to be read from or written to the appropriate channel by the get/put functions. The F_gp() support procedure had been modified to correct the bugs. Another modification was made to allow the FGet() and FGetD() functions to set the EOF flags when they encounter an end-of-file error. The F_rw() support procedure has been similarly altered to allow FRead() to set an EOF flag when it encouters an end-of-file status. FOpen() has been modified to close the specified IOCB before attempting to open it. FOpen() calls FClose() to do this, so if you need the first, you can't delete the second. FOpen() has also been changed so that a successful open operation clears the EOF flag for that IOCB, and a failure sets the flag to 1. F_eof() has been added to handle the actual setting and clearing of EOF flags.
+
+Replacement I/O library for Action!
+
+This library implements vital I/O via FUNCtions rather than PROCs... the calling routine can thus examine the returned (error?) value and act accordingly. Functions returning bytes simply return the normal Atari CIO OS error code. Functions returning INTegers return appropriate information (e.g., byte count) if the returned value is positive.
+
+When the returned value is negative, the error code will be in the lower byte. Note that code block routines are generally broken up along assembly language instruction boundaries. CAUTION:  I have not provided support for XIO routines that require a buffer address and length (e.g., some forms of the concurrent IO cmd for R:).  You can NOT use XIOFN or XIOAXFN for these purposes, because the "FN" (filename) is copied to a buffer and has a zero byte appended to it. CAUTION:  I do NOT put "D:" in front of file names that lack an colon.  If you need this feature, add it.  But I felt that "D:" is a pretty poor default today, what with multiple drives, subdirectories, etc.
+
+These routines written by Bill Wilkinson of OSS They are public domain and may be freely used and copied.
+
 ```
 ; IOFUN3.ACT
 ; 

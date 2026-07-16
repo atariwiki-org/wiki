@@ -1,7 +1,7 @@
-# Invert Char at X/Y Position  
-  
-contributed by Michael P./WASEO/ABBUC 27.06.2007  
-  
+# Invert Char at X/Y Position
+
+contributed by Michael P./WASEO/ABBUC 27.06.2007
+
 ```
 (* Invert l chars at x,y, PD, Author:Michael P./WASEO/ABBUC 27.06.2007 *) 
 (* max 255 chars, needs the PEEK function from the Kyan lib/docu *) 
@@ -31,4 +31,4 @@ end;
    
 
 ```
-  
+

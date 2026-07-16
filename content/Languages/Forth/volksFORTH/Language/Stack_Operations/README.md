@@ -1,7 +1,7 @@
 ---
 title: VolksForthStackOperations
 ---
-# VolksForth StackOperations  
+# VolksForth StackOperations
 
 | Operation | Description |
 |-----------|-------------|

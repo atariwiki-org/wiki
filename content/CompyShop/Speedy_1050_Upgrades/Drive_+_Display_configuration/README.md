@@ -1,8 +1,8 @@
 ---
 title: Drive + Display configuration
 ---
-# Speedy 1050 Drive / Display configuration example  
-  
+# Speedy 1050 Drive / Display configuration example
+
 ```
 0100 ;*************************************
 0110 ;*  Demonstration fuer Kommando $44  *

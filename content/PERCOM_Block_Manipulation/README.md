@@ -1,14 +1,14 @@
 ---
 title: PERCOM Block Manipulation
 ---
-# Percom Block  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-  
+# Percom Block
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+
 ```
 ;******************************
 ;**								  **

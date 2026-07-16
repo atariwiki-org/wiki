@@ -1,15 +1,15 @@
 ---
 title: Butterfly Demo
 ---
-# Butterfly Demo  
-  
-General Information  
-  
-Author: 	Michael Mitchell   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	01/20/85   
-  
+# Butterfly Demo
+
+General Information
+
+Author: 	Michael Mitchell
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	01/20/85
+
 ```
 ; butterfly  by michael mitchell
 ; 01/20/85

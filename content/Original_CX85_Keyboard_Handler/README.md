@@ -1,10 +1,10 @@
 ---
 title: Original CX85 Keyboard Handler
 ---
-# CX85 Keypad Interrrupt Handler  
-  
-original Atari source from the CX-85 Disk  
-  
+# CX85 Keypad Interrrupt Handler
+
+original Atari source from the CX-85 Disk
+
 ```
   ;DEMONSTRATION OF CX-85 KEYPAD INTERRUPT HANDLER                            
   ;FLORA P. NG   3/08/82                

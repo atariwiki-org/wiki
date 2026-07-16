@@ -1,10 +1,10 @@
 ---
 title: ATARI Rainbow effect
 ---
-  
-  
-# ATARI Rainbow Effect  
-  
+
+
+# ATARI Rainbow Effect
+
 ```
 ;**********************************************************************
 ;*                                                                    *
@@ -36,4 +36,4 @@ BYTE vcount=$D40B, wsync=$D40A,
 RETURN
 
 ```
-  
+

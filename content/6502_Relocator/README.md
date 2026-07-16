@@ -1,45 +1,45 @@
 ---
 title: 6502 Relocator
 ---
-General Information   
-Author: Bob Sander-Cederlof   
-Assembler: generic   
-Published: APPLE Assembly Line 01/82   
-Download: [Apple Assembly Line Archive](http://www.txbobsc.com/aal/)   
-  
-  
-Programs that are already assembled usually must be loaded at a specific memory address to execute properly.  If you want to run it somewhere else, you have a problem.  All the data references, JMP's, and JSR's will have to be examined to see if they need to be modified for the new location.  If you don't have the source code, you can't re-assemble it.  The other way, patching, can be quite a tedious operation!  
-  
-Fortunately, way back in 1977, the WOZ (Steve Wozniak to you newcomers) wrote a program to do the work automatically.  If you have the Programmer's Aid ROM then you have his RELOCATE program.  You who have Apple II Plusses with the Language Card (also called 16K RAM card) can also use his program, because it is in the INTBASIC file along with Integer BASIC.  (The latter group of people probably don't have the manual, though, because they didn't buy the ROM.)  
-  
-I would like to see the RELOCATE program made more widely available, but it cannot be used as is unless you have Integer BASIC.  Why?  Because it uses SWEET-16 opcodes.  RELOCATE also is itself tied to running at whatever location it is assembled for, so it can be a little trouble to find a place for it sometimes.  By now you have probably guessed that I have recoded RELOCATE to solve both of these problems!  
-  
-Paul Schlyter's article elsewhere in this issue of AAL shows RELOCATE put to good use.  You can examine his instructions and learn most of what you need to know to use RELOCATE on your own programs.  Basically, there are four steps:  
-  
-  
-1.  Initialize.  This sets up the control-Y monitor command.  If RELOCATE is on a file, you do this with "BRUN RELOCATE".  
-  
-2.  Specify the program start and end addresses (where it now is in memory), and the new starting address (where you want it to be relocated to).  This is done with the monitor command:  {code}target<start.end^Y*{code} where "target" is the new starting address, and "start" and "end" are the addresses of the program where it is now.  "^Y" means "control-Y".  The "*" after the control-Y signals RELOCATE that you are in step 2 rather than step 3 or 4.  
-  
-3.  Specify the FIRST block to be copied "as-is" or to be "relocated" to the destination area.  This is done with the monitor command:  
-{code}target<start.end^Y{code} or  {code}target<start.endM{code} where "target" is the starting address in the new area for this block, and "start" and "end" define the block itself.  Note that there is no trailing asterisk this time.  Use control-Y if you want this block relocated, or M if you want it copied as-is.  
-  
-4.  Specify the NEXT block to be copied as-is or relocated.  You do this with the monitor command: {code}.end^Y{code} or {code}.endM{code} where the target and start addresses are assumed to immediately follow the previously handled block, and "end" specifies the end of this new block.  Use control-Y to relocate the block, or M to copy it as-is.  
-  
-Obviously, step 4 above is repeated until the whole program has been copied/relocated.  For each block of your program that is to be copied as-is, with no modification at all, you use the "M" command; for each block to be relocated you use the "control-Y" command.  
-  
-If you need more detailed instructions and explanation, I must refer you to the manual.  The Programmer's Aid #1 Manual is sold at most computer stores separately from the ROM package.  Pages 11-28 explain why and how to use RELOCATE, and pages 80 and 81 contain the assembly listing.  
-  
-Now here is my new version, which can be BRUN anywhere you have 134 ($86) bytes available.  I have eliminated the SWEET-16 usage; this made the program slightly bigger, and a lot faster.  
-  
-Lines 1260-1380 are the initialization code.  They build the control-Y vector at $3F8-3FA.  A JMP opcode is stored at $3F8; if you have DOS up this is redundant, but it won't hurt.  Next I have to try to find myself.  That is, where in memory am I (the program RELOCATE) located?  JSR MON.RETURN (which is only an RTS instruction, so it comes right back without doing anything) puts the address of the third byte of the JSR instruction on the stack.  Lines 1290-1370 use that address to compute the address of RELOC, and store it in $3F9 and $3FA.  
-  
-When you type in a control-Y command, the monitor will now branch to RELOC at line 1400.  Lines 1400-1430 look at the character after the control-Y in the command input buffer; if it is an asterisk, then you are trying to do step 2 above.  If not, then you are on step 3 or 4.  Lines 1440-1500 handle step 2, and lines 1510-1990 handle steps 3 and 4.  
-  
-The part which used to be coded in SWEET-16 was lines 1690-1880.  The SWEET-16 version took only 14 bytes, while the 6502 code takes 34 bytes.  The 6502 version may take about 100 microseconds to execute, and the SWEET-16 version on the order of 1000 microseconds (for each instruction relocated).  
-  
+General Information
+Author: Bob Sander-Cederlof
+Assembler: generic
+Published: APPLE Assembly Line 01/82
+Download: [Apple Assembly Line Archive](http://www.txbobsc.com/aal/) 
+
+
+Programs that are already assembled usually must be loaded at a specific memory address to execute properly.  If you want to run it somewhere else, you have a problem.  All the data references, JMP's, and JSR's will have to be examined to see if they need to be modified for the new location.  If you don't have the source code, you can't re-assemble it.  The other way, patching, can be quite a tedious operation!
+
+Fortunately, way back in 1977, the WOZ (Steve Wozniak to you newcomers) wrote a program to do the work automatically.  If you have the Programmer's Aid ROM then you have his RELOCATE program.  You who have Apple II Plusses with the Language Card (also called 16K RAM card) can also use his program, because it is in the INTBASIC file along with Integer BASIC.  (The latter group of people probably don't have the manual, though, because they didn't buy the ROM.)
+
+I would like to see the RELOCATE program made more widely available, but it cannot be used as is unless you have Integer BASIC.  Why?  Because it uses SWEET-16 opcodes.  RELOCATE also is itself tied to running at whatever location it is assembled for, so it can be a little trouble to find a place for it sometimes.  By now you have probably guessed that I have recoded RELOCATE to solve both of these problems!
+
+Paul Schlyter's article elsewhere in this issue of AAL shows RELOCATE put to good use.  You can examine his instructions and learn most of what you need to know to use RELOCATE on your own programs.  Basically, there are four steps:
+
+
+1. Initialize.  This sets up the control-Y monitor command.  If RELOCATE is on a file, you do this with "BRUN RELOCATE".
+
+2.  Specify the program start and end addresses (where it now is in memory), and the new starting address (where you want it to be relocated to).  This is done with the monitor command:  {code}target<start.end^Y*{code} where "target" is the new starting address, and "start" and "end" are the addresses of the program where it is now.  "^Y" means "control-Y".  The "*" after the control-Y signals RELOCATE that you are in step 2 rather than step 3 or 4.
+
+3.  Specify the FIRST block to be copied "as-is" or to be "relocated" to the destination area.  This is done with the monitor command:
+{code}target<start.end^Y{code} or  {code}target<start.endM{code} where "target" is the starting address in the new area for this block, and "start" and "end" define the block itself.  Note that there is no trailing asterisk this time.  Use control-Y if you want this block relocated, or M if you want it copied as-is.
+
+4.  Specify the NEXT block to be copied as-is or relocated.  You do this with the monitor command: {code}.end^Y{code} or {code}.endM{code} where the target and start addresses are assumed to immediately follow the previously handled block, and "end" specifies the end of this new block.  Use control-Y to relocate the block, or M to copy it as-is.
+
+Obviously, step 4 above is repeated until the whole program has been copied/relocated.  For each block of your program that is to be copied as-is, with no modification at all, you use the "M" command; for each block to be relocated you use the "control-Y" command.
+
+If you need more detailed instructions and explanation, I must refer you to the manual.  The Programmer's Aid #1 Manual is sold at most computer stores separately from the ROM package.  Pages 11-28 explain why and how to use RELOCATE, and pages 80 and 81 contain the assembly listing.
+
+Now here is my new version, which can be BRUN anywhere you have 134 ($86) bytes available.  I have eliminated the SWEET-16 usage; this made the program slightly bigger, and a lot faster.
+
+Lines 1260-1380 are the initialization code.  They build the control-Y vector at $3F8-3FA.  A JMP opcode is stored at $3F8; if you have DOS up this is redundant, but it won't hurt.  Next I have to try to find myself.  That is, where in memory am I (the program RELOCATE) located?  JSR MON.RETURN (which is only an RTS instruction, so it comes right back without doing anything) puts the address of the third byte of the JSR instruction on the stack.  Lines 1290-1370 use that address to compute the address of RELOC, and store it in $3F9 and $3FA.
+
+When you type in a control-Y command, the monitor will now branch to RELOC at line 1400.  Lines 1400-1430 look at the character after the control-Y in the command input buffer; if it is an asterisk, then you are trying to do step 2 above.  If not, then you are on step 3 or 4.  Lines 1440-1500 handle step 2, and lines 1510-1990 handle steps 3 and 4.
+
+The part which used to be coded in SWEET-16 was lines 1690-1880.  The SWEET-16 version took only 14 bytes, while the 6502 code takes 34 bytes.  The 6502 version may take about 100 microseconds to execute, and the SWEET-16 version on the order of 1000 microseconds (for each instruction relocated).
+
 ---
-  
+
 ```
  1000  *
  1010  *		6502 RELOCATION SUBROUTINE
@@ -143,10 +143,10 @@ The part which used to be coded in SWEET-16 was lines 1690-1880.  The SWEET-16 v
  1990			RTS
 
 ```
-  
+
 ---
-  
-Comment:  
-  
-Bob Sander-Cederlof | 19.11.2007 at 03:59 PM  
-Thank you for republishing my article. The Apple Assembly Line newsletter was published from monthly October 1980 through May 1988. All the issues are available online at http://www.txbobsc.com/aal/  
+
+Comment:
+
+Bob Sander-Cederlof | 19.11.2007 at 03:59 PM
+Thank you for republishing my article. The Apple Assembly Line newsletter was published from monthly October 1980 through May 1988. All the issues are available online at http://www.txbobsc.com/aal/

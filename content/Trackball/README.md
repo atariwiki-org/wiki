@@ -1,29 +1,29 @@
 ---
 title: Trackball
 ---
-# Atari Trackball  
-  
-Taming your machine with a mouse has long been a dream of the ATARI 8-bitters.  
-The mouse had its origins around the 1960's, but did see much use until the  
-1980's when the Mac,ST and Amiga were unveiled. The mouse was also used by the  
-engineering world as an input device for graphics workstations in the late  
-70's.  The Track-ball is a close relative to the Mouse. A track-ball is  
-basically the same device flipped over allowing the hand position the ball  
-directly.  
-  
-The Old ATARI did have some foresight in developing input devices for the 8-bit  
-machines. The TrackBall is one of them.  The Track-ball allows smooth tracking  
-of 2 dimensional motion and its associated velocity. Atari Basic is too slow  
-so it can not be read with atari basic.  Faster languages such ACTION and  
-Assembly can read the velocity vectors directly from the joystick registers.  
-(mention something about which bits represent the direction and speed.)  
-One thing the Atari Trak Ball lacks is a separate button that can function as  
-the left mouse button. Since the mouse and the Track-ball are virtually the  
-same device it should be possible to read and ST mouse using the Trak-ball read  
-code.  The 8-bits can read the ST left mouse if a pull-up resistor is added to  
-pin 6.  
-  
-Here's the pinout on the ST mouse.  
+# Atari Trackball
+
+Taming your machine with a mouse has long been a dream of the ATARI 8-bitters.
+The mouse had its origins around the 1960's, but did see much use until the
+1980's when the Mac,ST and Amiga were unveiled. The mouse was also used by the
+engineering world as an input device for graphics workstations in the late
+70's.  The Track-ball is a close relative to the Mouse. A track-ball is
+basically the same device flipped over allowing the hand position the ball
+directly.
+
+The Old ATARI did have some foresight in developing input devices for the 8-bit
+machines. The TrackBall is one of them.  The Track-ball allows smooth tracking
+of 2 dimensional motion and its associated velocity. Atari Basic is too slow
+so it can not be read with atari basic.  Faster languages such ACTION and
+Assembly can read the velocity vectors directly from the joystick registers.
+(mention something about which bits represent the direction and speed.)
+One thing the Atari Trak Ball lacks is a separate button that can function as
+the left mouse button. Since the mouse and the Track-ball are virtually the
+same device it should be possible to read and ST mouse using the Trak-ball read
+code.  The 8-bits can read the ST left mouse if a pull-up resistor is added to
+pin 6.
+
+Here's the pinout on the ST mouse.
 ```
 _____________
 \ 1 2 3 4 5 /
@@ -40,11 +40,11 @@ _____________
 8- ground
 9- Joystick 1 Fire/Right Mouse button.
 ```
-  
-I have included 3 programs that demostrate the trak-balls ability to read  
-direction and velocity.  One program is written in basic with a short assemble  
-used to read the T-ball input vector. The other 2 programs are written in  
-ACTION!  
+
+I have included 3 programs that demostrate the trak-balls ability to read
+direction and velocity.  One program is written in basic with a short assemble
+used to read the T-ball input vector. The other 2 programs are written in
+ACTION!
 ```
                                           |  |  |
 Mike Buford                               |  |  |  8-bits Forever/
@@ -52,9 +52,9 @@ Dflint02@ulkyvx.bitnet or                 |  |  |   Whether i buy a new
 CL150652@ulkyvm.bitnet                   /   |   \  machine or not!
 (An Action Programmer!)                 /    |    \
 ```
-  
+
 ---
-  
+
 ```
 10 REM :TBALL2.BAS
 100 REM *** POKE MACHINE CODE ***
@@ -83,9 +83,9 @@ CL150652@ulkyvm.bitnet                   /   |   \  machine or not!
 340 POSITION COL,ROW:? "+";
 350 GOTO 200
 ```
-  
+
 ---
-  
+
 ```
 ;TRACK1.ACT
 ;Display the value read from
@@ -125,9 +125,9 @@ OD
 cursor=1
 RETURN
 ```
-  
+
 ---
-  
+
 ```
 ;TRACK3.ACT
 ;Rudimentary PM cursor positioning
@@ -286,15 +286,15 @@ left_margin=2
 cursor=0
 RETURN
 ```
-  
+
 ---
-  
-The next program demostrates ACTION!'s Ability to run 2 or more  
-procedures at the same time. The Move_cursor routine runs  
-independent of Main Proc. This Program is extra for Action Programers.  
-  
+
+The next program demostrates ACTION!'s Ability to run 2 or more
+procedures at the same time. The Move_cursor routine runs
+independent of Main Proc. This Program is extra for Action Programers.
+
 ---
-  
+
 ```
 ;TRACK4.ACT
 ;Rudimentary PM cursor positioning
@@ -488,4 +488,4 @@ left_margin=2
 cursor=0
 RETURN
 ```
-  
+

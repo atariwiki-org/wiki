@@ -1,56 +1,56 @@
 ---
 title: Sneak attack
 ---
-### General Information  
-Author: David Plotkin  
-Language: ACTION!  
-Compiler/Interpreter: ACTION!  
-Published: Analog #36 (11/ 85)  
+### General Information
+Author: David Plotkin
+Language: ACTION!
+Compiler/Interpreter: ACTION!
+Published: Analog #36 (11/ 85)
 ---
-# Sneak Attack  
-''You knew it had been too quiet. Nothing had shown on the scanner for the whole watch. That in and of itself wasn't unusual, but intelligence had reported increased enemy activity. It seemed that a major move to capture and destroy the gunbases that protected the Interior was being planned.  
-  
-Further the enemy had developed a new type of intelligent robot, which could stand the shock of being parachuted to Earth and, once there, could team up with other robots to destroy the gunbases. Intelligence reports indicated that each robot could carry one-quarter of the explosives necessary to pierce the armor of the gunbase you manned.''  
-  
-The anticipated plan is that the enemy choppers will drop robots, which,  if they land successfully, will wait until three more robots have also landed, then team up to destroy your base. Since radio silence must be maintained, the robots only "know" about other robots in their direct line of sight, so four robots must land successfully on one side of your base.  
-  
-These robots are not invulnerable, however. If one parachuting robot lands on another, the one underneath will be crushed and immobilized.  
-  
-Your gunbase is a pretty awesome weapon. The gun is mounted on a concrete pedestal and is aimed by your joystick. The missiles unleashed by your fire button are steerable - they will travel left and right if you press the joystick control in the appropriate direction, and rise toward the top of your scanner screen if you center the stick.  
-  
-![](attachments/Sneakattack.jpg)  
-  
-The missiles are powerful, capable of obliterating the enemy's helicopters, as well as the robots. One strategic trick, learned in advanced gunnery class, is to use a missile to destroy a parachute by careful aiming, thus causing the robot to plummet to Earth, destroying any robots that happen to be beneath it.  
-  
-This is really the only method of destroying robots that are already on the ground. The enemy has split the attack into levels, and each level is faster and fiercer than the previous one. Duty calls, so plug your joystick into port 1 and prepare to defend your home as the attack commences! Good luck.  
-  
-### Programming information.  
-  
-Each procedure is commented with a brief description of what it does. Some of the procedures illustrate interesting programming tricks, however, and I want to expand on them.  
-  
-The first is the procedure Title(). As stated, it prints the title screen. Notice that it checks the location of the vertical scan VCOUNT and puts color information directly into the hardware registers COLPF0-COLPF3. This causes each scan line on the TV screen to be drawn in a different color. Action! is so fast that you can do this without resorting to machine language display list interrupts.  
-  
-By using the built-in jiffy timer (RTCLOCK), which advances by one each time a new screen is drawn, in the equation to compute what color is actually used, the colors are made to "scroll" up the screen, providing a rather neat effect. The speed of the scroll is determined by the RSH portion of the color term. RSH essentially does a divide, so the more times you RSH the RTCLOCK, the slower the scroll will be.  
-  
-The other interesting procedure is MoveTroopers(), which moves the robots down the screen. As you can see by looking at the program listing. Sneak Attack is written in graphics 0, with a redefined character set. Yet the robots scroll smoothly down.  
-  
-The way it works is this: each robot is two characters high (chute and robot) and is initially put on the screen by simply printing three characters one above the other - the two characters which make up the shape and a third character which is initially blank. These three characters appear one after the other in the character set.  
-  
-To move the robot in what looks like a smooth scroll down the screen, the 16 bytes which make up the shape (two characters at 8 bytes per character) are shifted 1 byte further into the 24 bytes of the three characters which were printed on the screen.  
-  
-This "dynamic character redefinition" goes on until the figure has been shifted 8 bytes down, at which time the top character of the three is blank, and the 16-byte figure resides in the lower two characters. Then, you move the 16 bytes back into the top two characters, and then print the three characters one position lower on the screen.  
-  
-The shifting of 16 byte blocks is done using MOVEBLOCK. The location of the character set and the location of the 16 bytes which make up the shape are passed to MOVEBLOCK by using the names of the arrays which contain the data. Used in this manner, array names are treated as the memory addresses of the data in the array.  
-  
-### Sneaking around.  
-  
-I've been programming Atari home computers for four years. The very first video game I ever saw running on a home computer was a little something from Sierra (then OnLine), called Sabotage. It was only available on the Apple and was never translated.  
-  
-I've always enjoyed Sabotage and several times tried to program something similar myself. I was never very successful, mostly because BASIC just isn't up to the job. But Action! is, and I think you'll enjoy this version of a venerable game.  
-  
-One more thing. The end is worth waiting for.  
+# Sneak Attack
+''You knew it had been too quiet. Nothing had shown on the scanner for the whole watch. That in and of itself wasn't unusual, but intelligence had reported increased enemy activity. It seemed that a major move to capture and destroy the gunbases that protected the Interior was being planned.
+
+Further the enemy had developed a new type of intelligent robot, which could stand the shock of being parachuted to Earth and, once there, could team up with other robots to destroy the gunbases. Intelligence reports indicated that each robot could carry one-quarter of the explosives necessary to pierce the armor of the gunbase you manned.''
+
+The anticipated plan is that the enemy choppers will drop robots, which,  if they land successfully, will wait until three more robots have also landed, then team up to destroy your base. Since radio silence must be maintained, the robots only "know" about other robots in their direct line of sight, so four robots must land successfully on one side of your base.
+
+These robots are not invulnerable, however. If one parachuting robot lands on another, the one underneath will be crushed and immobilized.
+
+Your gunbase is a pretty awesome weapon. The gun is mounted on a concrete pedestal and is aimed by your joystick. The missiles unleashed by your fire button are steerable - they will travel left and right if you press the joystick control in the appropriate direction, and rise toward the top of your scanner screen if you center the stick.
+
+![](attachments/Sneakattack.jpg)
+
+The missiles are powerful, capable of obliterating the enemy's helicopters, as well as the robots. One strategic trick, learned in advanced gunnery class, is to use a missile to destroy a parachute by careful aiming, thus causing the robot to plummet to Earth, destroying any robots that happen to be beneath it.
+
+This is really the only method of destroying robots that are already on the ground. The enemy has split the attack into levels, and each level is faster and fiercer than the previous one. Duty calls, so plug your joystick into port 1 and prepare to defend your home as the attack commences! Good luck.
+
+### Programming information.
+
+Each procedure is commented with a brief description of what it does. Some of the procedures illustrate interesting programming tricks, however, and I want to expand on them.
+
+The first is the procedure Title(). As stated, it prints the title screen. Notice that it checks the location of the vertical scan VCOUNT and puts color information directly into the hardware registers COLPF0-COLPF3. This causes each scan line on the TV screen to be drawn in a different color. Action! is so fast that you can do this without resorting to machine language display list interrupts.
+
+By using the built-in jiffy timer (RTCLOCK), which advances by one each time a new screen is drawn, in the equation to compute what color is actually used, the colors are made to "scroll" up the screen, providing a rather neat effect. The speed of the scroll is determined by the RSH portion of the color term. RSH essentially does a divide, so the more times you RSH the RTCLOCK, the slower the scroll will be.
+
+The other interesting procedure is MoveTroopers(), which moves the robots down the screen. As you can see by looking at the program listing. Sneak Attack is written in graphics 0, with a redefined character set. Yet the robots scroll smoothly down.
+
+The way it works is this: each robot is two characters high (chute and robot) and is initially put on the screen by simply printing three characters one above the other - the two characters which make up the shape and a third character which is initially blank. These three characters appear one after the other in the character set.
+
+To move the robot in what looks like a smooth scroll down the screen, the 16 bytes which make up the shape (two characters at 8 bytes per character) are shifted 1 byte further into the 24 bytes of the three characters which were printed on the screen.
+
+This "dynamic character redefinition" goes on until the figure has been shifted 8 bytes down, at which time the top character of the three is blank, and the 16-byte figure resides in the lower two characters. Then, you move the 16 bytes back into the top two characters, and then print the three characters one position lower on the screen.
+
+The shifting of 16 byte blocks is done using MOVEBLOCK. The location of the character set and the location of the 16 bytes which make up the shape are passed to MOVEBLOCK by using the names of the arrays which contain the data. Used in this manner, array names are treated as the memory addresses of the data in the array.
+
+### Sneaking around.
+
+I've been programming Atari home computers for four years. The very first video game I ever saw running on a home computer was a little something from Sierra (then OnLine), called Sabotage. It was only available on the Apple and was never translated.
+
+I've always enjoyed Sabotage and several times tried to program something similar myself. I was never very successful, mostly because BASIC just isn't up to the job. But Action! is, and I think you'll enjoy this version of a venerable game.
+
+One more thing. The end is worth waiting for.
 ---
-''David Plotkin is a Project Engineer for Chevron U.S.A., with a Master's in Chemical Engineering. He bought his Atari in 1980 and is interested in programming and design of games, as well as word processing. His work has been seen in __ANALOG Computing__, __Compute!__ and other computer magazines.''  
+''David Plotkin is a Project Engineer for Chevron U.S.A., with a Master's in Chemical Engineering. He bought his Atari in 1980 and is interested in programming and design of games, as well as word processing. His work has been seen in __ANALOG Computing__, __Compute!__ and other computer magazines.''
 ---
 ```
 ; Sneak Attack by David Plotkin
@@ -898,4 +898,4 @@ BYTE time=20,lp,ch=764
 RETURN
 ```
 ---
-PDF: [sneak_attack.pdf](attachments/sneak_attack.pdf)  
+PDF: [sneak_attack.pdf](attachments/sneak_attack.pdf) 

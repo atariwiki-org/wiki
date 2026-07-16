@@ -1,10 +1,10 @@
 ---
 title: Math Extension for 6502 Systems
 ---
-# VolksForth Math Extension  
-  
-for 6502 based systems  
-  
+# VolksForth Math Extension
+
+for 6502 based systems
+
 ```
 \ A SINUS-TABLE               20OCT87RE
 \    SINUS-TABLE FROM FD Vol IV/1

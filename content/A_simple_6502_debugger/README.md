@@ -1,23 +1,23 @@
 ---
 title: A simple 6502 debugger
 ---
-# PSC Simple Debugger  
-  
-  
-[atari000.png](attachments/atari000.png)  
-  
-This is a very simple debugger I have written years ago. It has been used to figure out the hotspots of a program or to slow down the program to be examined.  
-  
-The "BUG.COM" executable will install a VBI with a wait loop. This loop is slowing down the Atari and thus other programs running. It can be adjusted with "START" and "SELECT". In the top line the tool will display the current CPU instruction pointer. This instruction pointer can be copied to the field on the right with the "OPTION" key (e.g. to examine a specific code area with a hardware monitor such as BiboMon, QMeg or Turbo-Freezer).  
-  
-### Disk  
-  
-[sbug6502.atr](attachments/sbug6502.atr)  
-  
-### Source  
-  
-- [BUG.SRC.pdf](attachments/BUG.SRC.pdf)  
-  
+# PSC Simple Debugger
+
+
+[atari000.png](attachments/atari000.png) 
+
+This is a very simple debugger I have written years ago. It has been used to figure out the hotspots of a program or to slow down the program to be examined.
+
+The "BUG.COM" executable will install a VBI with a wait loop. This loop is slowing down the Atari and thus other programs running. It can be adjusted with "START" and "SELECT". In the top line the tool will display the current CPU instruction pointer. This instruction pointer can be copied to the field on the right with the "OPTION" key (e.g. to examine a specific code area with a hardware monitor such as BiboMon, QMeg or Turbo-Freezer).
+
+### Disk
+
+[sbug6502.atr](attachments/sbug6502.atr) 
+
+### Source
+
+- [BUG.SRC.pdf](attachments/BUG.SRC.pdf)
+
 ```
 00010          .LI OFF
 00020 ***************************

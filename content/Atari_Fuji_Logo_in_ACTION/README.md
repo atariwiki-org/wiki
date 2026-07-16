@@ -1,12 +1,12 @@
 ---
 title: Atari Fuji Logo in ACTION
 ---
-General Information   
-Author: 	Leo Laporte   
-Language: 	ACTION!   
-Compiler/Interpreter:  	ACTION!   
-Published: 	10/19/83   
-  
+General Information
+Author: 	Leo Laporte
+Language: 	ACTION!
+Compiler/Interpreter:  	ACTION!
+Published: 	10/19/83
+
 ```
 ; Atari LOGO
 ; Translated from the BASIC

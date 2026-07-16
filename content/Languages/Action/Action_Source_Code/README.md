@@ -1,10 +1,10 @@
 ---
 title: Action Source Code
 ---
-## Action! Source Code  
-  
-The full source code can be found attached to the article. The Action! source code is free software and licensed under the GPL 3 (or later) version. The full text of the GPL license can be found at [http://www.gnu.org/licenses/](http://www.gnu.org/licenses/). The original ICD source code is attached to this page. The original source code and the latest version of Action! are available at [https://sourceforge.net/projects/atari-action/](https://sourceforge.net/projects/atari-action/).  
-  
+## Action! Source Code
+
+The full source code can be found attached to the article. The Action! source code is free software and licensed under the GPL 3 (or later) version. The full text of the GPL license can be found at [http://www.gnu.org/licenses/](http://www.gnu.org/licenses/). The original ICD source code is attached to this page. The original source code and the latest version of Action! are available at [https://sourceforge.net/projects/atari-action/](https://sourceforge.net/projects/atari-action/).
+
 ```
 $title(ACTION! 3.6 - 11/4/83)
 $pagewidth=80

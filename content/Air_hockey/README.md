@@ -1,75 +1,75 @@
 ---
 title: Air hockey
 ---
-### General Information  
-Author: Chris Page  
-Language: ACTION!  
-Compiler/Interpreter: ACTION!  
-Published: Analog #38 (01/ 86)  
+### General Information
+Author: Chris Page
+Language: ACTION!
+Compiler/Interpreter: ACTION!
+Published: Analog #38 (01/ 86)
 ---
-# Air Hockey  
-  
-Air Hockey is written in Action! and must be compiled off of a disk or tape (the source and object code won't fit in memory together). So type it in. SAVE it, clear the editor, go to the monitor and RUN it, thusly: R "FILENAME“ (substituting the device and filename you saved it under for “FILENAME" — I used “D:AIRHOCKE.Y”).  
-  
-Once you have it running properly, you should see the title screen and hear the title music (the “Peter Gunn" bass line). Press START.  
-  
-Now you should see the options screen (it has the word OPTIONS at the top). You can use the OPTION key to highlight a different option. SELECT to change the option and START to play the game.  
-  
-The options available in Air Hockey are:  
-  
-''Friction'' — This can be ON or OFF. If the friction is on, the puck will have a tendency to slow down while travelling across the board. You may notice that it sometimes curves as it slows down. This is because I used integer values instead of floating point. This means that the motion is not 100 percent accurate, resulting in the curved motion of the puck.  
-  
-''Velocity'' — This can be 2 through 9 and indicates the maximum velocity of the puck. Option 2 is slowest; 9 is fastest.  
-  
-''Bounce'' — This can be 0 through 9, indicating the amount of “bounce" to the puck, or how well it retains velocity after hitting the side of the board. A 9 means that the puck will not slow down on collision; 0 indicates very little bounce and will cause the puck to slow down considerably if it hits the sides.  
-  
-''Win'' — This is the score up to which the player(s) will play. It can be from 10 to 90, in increments of 10.  
-  
-''Players'' — Either 1 or 2. If one paver is selected, then the player should use joystick port 1 and control the top player; the computer will control player two, the bottom player. If two players are selected, then it's the same, except that player two will be controlled by joystick port 2.  
-  
-### Playing.  
-Once your options are set (or left alone, if you like the default settings) you may press START to play. You'll then see a vertical air hockey board with the scores displayed at the top., along with the score necessary to win the game. T he puck will appear in front of the serving player's paddle. That player must hit the puck to start the game.  
-  
-The game is something like Pong, with forward motion as well as side-to-side. Players control the  paddles by moving the joystick in the direction they wish to move. The buttons do nothing. A score is made when the puck goes into the yellow goal area of a player, and the other player becomes the server.  
-  
-If the puck gets stuck between players, as it can in real air hockey, you may re-serve by pressing the SPACE BAR. Also, while in the play mode, you may press the ESCape key to exit the program. Finally, if you want to restart the game. press START anytime during the game (except during the goal sequence), and you'll be returned to the options screen.  
-  
-When the game is over, there's a long cheering sequence with whistling fans (if the crowd likes you) before you‘re returned to the title screen.  
-  
-### Why I did it or a tail of two ducks.  
-I was sitting around one day (I do that quite a lot) last summer, had just bought Action! and was becoming familiar with it. After writing some demos, I was ready to do something more substantial with it.  
-  
-I figured that a good way to utilize Action!‘s speed was to write some kind of fast-paced, arcade-type game. But I didn't want to write another space game or __Pac-Man__. I wanted to write something different and unique. __Air Hockey__ may not be a completely unique game (it is similar to __Pong__). but it's different, and a change of pace from "Laser the Aliens"  
-  
-### A lesson in compromise or the quacker in the rye.  
-This program is an example of inventiveness, procrastination and compromise. "Inventive” because. . .well, it's a matter of opinion. but I think it's inventive. “Procrastination" because I dropped the project for several months at a time (check out the start and completion dates in the source listing). Finally, and most decidedly, "compromise" because I made so many of these concerning __Air Hockey__.  
-  
-Two of my main compromises were:  
-  
-1. I wanted more options and a complete title song, but time and a willingness to work (or the lack thereof) got in the way.  
-1. Everyone, including myself, thought that the paddles should have been round. But that requires physics. . .I barely passed physics. If I'd made the paddles round, as they are in real life, I would have had to resort to "real" physics instead of the chintzy method I did use.In physics, you use vectors to describe how objects move, but this is a difficult thing in integers (well, difficult for me), which is what I was stuck with in Action! So I simply gave a horizontal and vertical speed and a horizontal and vertical direction.  
-  
-These two compromises, however, were not as difficult or as important as my final compromise. I had to compromise on the one aspect, the most difficult thing, that every programmer must: completion of my goal. I had to stop work on a program which I felt was incomplete and short of my goals, and call it finished.  
-  
-I realized this when I was telling my friends that I'd have to add the treble line to the title music before I'd submit it for publishing. As I told them this, I realized that the game is rather simple (as it was supposed to be) and that a full-blown song was superfluous. I than realized that other things I wanted to add were also not needed.  
-  
-Actually. I had already met my goal (design a simple game as an exercise in Action!), but in the process, I'd created other goals—like adding the treble line.  
-  
-I realized that I would continue creating goals as long as I was working on it; I would never finish the game. I'd sit, perma-bonded to my video screen, for the next ten years working on __Air Hockey__ until it was 3-D, talked and had instant replay, a high score list, a theme song to put "Flight of the Valkyries" to shame, and a thousand other things... and I would still want to change something.  
-  
-### Program design and some ducks thrown in for effect.  
-I think the important thing here is to realize that, when you want to write a program, you should decide exactly what it will be like, so that you can say it is finished when it meets  the description. I certainly did not. l designed and wrote it as I went along (this is painfully evident to me in the lack of unity and consistency in the program, the "patchwork quilt" look).  
-  
-This has also led to my big problem: because the program is so disorganized, I invariably come to some sort of dead end and drop the project. I completely gave up on __Air Hockey__ many months back, but, at the urging of two of my friends (D.S. and D.B.), I picked it up again and trudged through the tangled code to finish it. . .finally. This is what has kept me from finishing the other hundred or so projects I have stored away in dusty disk files.  
-  
-I'm sure that if it were not for this fact, there would be thousands more programs available for computers through other users, magazines and distributors. Next time you start to put something off because it seems too difficult, back up and try again.  
-  
-### Oh yes, the ducks.  
-The ducks? Well, I thought I'd try to be a little different from the other articles gracing this magazine’s fine pages. (You wondered about them, didn’t you?) Have a duck., you'll feel better.  
+# Air Hockey
+
+Air Hockey is written in Action! and must be compiled off of a disk or tape (the source and object code won't fit in memory together). So type it in. SAVE it, clear the editor, go to the monitor and RUN it, thusly: R "FILENAME“ (substituting the device and filename you saved it under for “FILENAME" — I used “D:AIRHOCKE.Y”).
+
+Once you have it running properly, you should see the title screen and hear the title music (the “Peter Gunn" bass line). Press START.
+
+Now you should see the options screen (it has the word OPTIONS at the top). You can use the OPTION key to highlight a different option. SELECT to change the option and START to play the game.
+
+The options available in Air Hockey are:
+
+''Friction'' — This can be ON or OFF. If the friction is on, the puck will have a tendency to slow down while travelling across the board. You may notice that it sometimes curves as it slows down. This is because I used integer values instead of floating point. This means that the motion is not 100 percent accurate, resulting in the curved motion of the puck.
+
+''Velocity'' — This can be 2 through 9 and indicates the maximum velocity of the puck. Option 2 is slowest; 9 is fastest.
+
+''Bounce'' — This can be 0 through 9, indicating the amount of “bounce" to the puck, or how well it retains velocity after hitting the side of the board. A 9 means that the puck will not slow down on collision; 0 indicates very little bounce and will cause the puck to slow down considerably if it hits the sides.
+
+''Win'' — This is the score up to which the player(s) will play. It can be from 10 to 90, in increments of 10.
+
+''Players'' — Either 1 or 2. If one paver is selected, then the player should use joystick port 1 and control the top player; the computer will control player two, the bottom player. If two players are selected, then it's the same, except that player two will be controlled by joystick port 2.
+
+### Playing.
+Once your options are set (or left alone, if you like the default settings) you may press START to play. You'll then see a vertical air hockey board with the scores displayed at the top., along with the score necessary to win the game. T he puck will appear in front of the serving player's paddle. That player must hit the puck to start the game.
+
+The game is something like Pong, with forward motion as well as side-to-side. Players control the  paddles by moving the joystick in the direction they wish to move. The buttons do nothing. A score is made when the puck goes into the yellow goal area of a player, and the other player becomes the server.
+
+If the puck gets stuck between players, as it can in real air hockey, you may re-serve by pressing the SPACE BAR. Also, while in the play mode, you may press the ESCape key to exit the program. Finally, if you want to restart the game. press START anytime during the game (except during the goal sequence), and you'll be returned to the options screen.
+
+When the game is over, there's a long cheering sequence with whistling fans (if the crowd likes you) before you‘re returned to the title screen.
+
+### Why I did it or a tail of two ducks.
+I was sitting around one day (I do that quite a lot) last summer, had just bought Action! and was becoming familiar with it. After writing some demos, I was ready to do something more substantial with it.
+
+I figured that a good way to utilize Action!‘s speed was to write some kind of fast-paced, arcade-type game. But I didn't want to write another space game or __Pac-Man__. I wanted to write something different and unique. __Air Hockey__ may not be a completely unique game (it is similar to __Pong__). but it's different, and a change of pace from "Laser the Aliens"
+
+### A lesson in compromise or the quacker in the rye.
+This program is an example of inventiveness, procrastination and compromise. "Inventive” because. . .well, it's a matter of opinion. but I think it's inventive. “Procrastination" because I dropped the project for several months at a time (check out the start and completion dates in the source listing). Finally, and most decidedly, "compromise" because I made so many of these concerning __Air Hockey__.
+
+Two of my main compromises were:
+
+1. I wanted more options and a complete title song, but time and a willingness to work (or the lack thereof) got in the way.
+1. Everyone, including myself, thought that the paddles should have been round. But that requires physics. . .I barely passed physics. If I'd made the paddles round, as they are in real life, I would have had to resort to "real" physics instead of the chintzy method I did use.In physics, you use vectors to describe how objects move, but this is a difficult thing in integers (well, difficult for me), which is what I was stuck with in Action! So I simply gave a horizontal and vertical speed and a horizontal and vertical direction.
+
+These two compromises, however, were not as difficult or as important as my final compromise. I had to compromise on the one aspect, the most difficult thing, that every programmer must: completion of my goal. I had to stop work on a program which I felt was incomplete and short of my goals, and call it finished.
+
+I realized this when I was telling my friends that I'd have to add the treble line to the title music before I'd submit it for publishing. As I told them this, I realized that the game is rather simple (as it was supposed to be) and that a full-blown song was superfluous. I than realized that other things I wanted to add were also not needed.
+
+Actually. I had already met my goal (design a simple game as an exercise in Action!), but in the process, I'd created other goals—like adding the treble line.
+
+I realized that I would continue creating goals as long as I was working on it; I would never finish the game. I'd sit, perma-bonded to my video screen, for the next ten years working on __Air Hockey__ until it was 3-D, talked and had instant replay, a high score list, a theme song to put "Flight of the Valkyries" to shame, and a thousand other things... and I would still want to change something.
+
+### Program design and some ducks thrown in for effect.
+I think the important thing here is to realize that, when you want to write a program, you should decide exactly what it will be like, so that you can say it is finished when it meets  the description. I certainly did not. l designed and wrote it as I went along (this is painfully evident to me in the lack of unity and consistency in the program, the "patchwork quilt" look).
+
+This has also led to my big problem: because the program is so disorganized, I invariably come to some sort of dead end and drop the project. I completely gave up on __Air Hockey__ many months back, but, at the urging of two of my friends (D.S. and D.B.), I picked it up again and trudged through the tangled code to finish it. . .finally. This is what has kept me from finishing the other hundred or so projects I have stored away in dusty disk files.
+
+I'm sure that if it were not for this fact, there would be thousands more programs available for computers through other users, magazines and distributors. Next time you start to put something off because it seems too difficult, back up and try again.
+
+### Oh yes, the ducks.
+The ducks? Well, I thought I'd try to be a little different from the other articles gracing this magazine’s fine pages. (You wondered about them, didn’t you?) Have a duck., you'll feel better.
 ---
-''Chris Page is an eighteen-year-old from San Diego, who's studying for on A.A. degree in electronics at I.T.T. Technical Institute. He has worked with computers for seven years and owned on Atari 800 for four. His primary computing interests are in sound, graphics and human interfacing.''  
+''Chris Page is an eighteen-year-old from San Diego, who's studying for on A.A. degree in electronics at I.T.T. Technical Institute. He has worked with computers for seven years and owned on Atari 800 for four. His primary computing interests are in sound, graphics and human interfacing.''
 ---
-Listing 1  
+Listing 1
 ```
 ; ================
 ; =  Air Hockey  =

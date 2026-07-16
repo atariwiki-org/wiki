@@ -1,8 +1,8 @@
 ---
 title: Relocator
 ---
-# ACTION! Relocator  
-  
+# ACTION! Relocator
+
 ```
 Instructions for:
 
@@ -115,8 +115,8 @@ If you have question, send E-Mail to:
 or leave a message on the ACE-BASE
 BBS at (315)451-7747. Good Luck!
 ```
-  
-## RELGEN.ACT  
+
+## RELGEN.ACT
 ```
 MODULE ;RELGEN.ACT
 
@@ -427,8 +427,8 @@ EndIt()
 PrintE("Finished!"")
 RETURN
 ```
-  
-## RELOC.ACT  
+
+## RELOC.ACT
 ```
 MODULE ;RELOCATE.ACT
 

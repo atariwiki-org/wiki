@@ -1,10 +1,10 @@
 ---
 title: Implementations of NEXT on 6502
 ---
-# Implementations of NEXT in Forth Systems for the 6502 CPU  
-  
-### FIG-FORTH (also X-FORTH, ANTIC FORTH and other derivatives of FIG-FORTH ...)  
-  
+# Implementations of NEXT in Forth Systems for the 6502 CPU
+
+### FIG-FORTH (also X-FORTH, ANTIC FORTH and other derivatives of FIG-FORTH ...)
+
 ```
 NEXT
    LDY #1
@@ -23,7 +23,7 @@ L54
    JMP W-1    ; indirect jump to (W)
 
 ```
-### 64FORTH (Tom Zimmer)  
+### 64FORTH (Tom Zimmer)
 ```
 NEXT  LDY   #1 
       LDA  (IP),Y 
@@ -45,12 +45,12 @@ NEXT  LDY   #1
       INC   IP+1 
 L816E  JMP  (TMP)
 ```
-See [http://groups.google.de/group/comp.lang.forth/browse_thread/thread/19f7f2102e020583/8d1b52cf069d1258](http://groups.google.de/group/comp.lang.forth/browse_thread/thread/19f7f2102e020583/8d1b52cf069d1258)  
-  
-### FOCO65  
-  
-[https://github.com/piotr-wiszowaty/foco65](https://github.com/piotr-wiszowaty/foco65)  
-  
+See [http://groups.google.de/group/comp.lang.forth/browse_thread/thread/19f7f2102e020583/8d1b52cf069d1258](http://groups.google.de/group/comp.lang.forth/browse_thread/thread/19f7f2102e020583/8d1b52cf069d1258) 
+
+### FOCO65
+
+[https://github.com/piotr-wiszowaty/foco65](https://github.com/piotr-wiszowaty/foco65) 
+
 ```
 next
  ldy #0

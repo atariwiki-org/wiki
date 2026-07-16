@@ -1,10 +1,10 @@
 ---
 title: Atari+USB+Keyboard+Driver
 ---
-# Atari USB Keyboard Driver  
-  
-first BETA Version, 15.9.2004  
-  
+# Atari USB Keyboard Driver
+
+first BETA Version, 15.9.2004
+
 ```
 01000          .LI OFF
 01010 **************************
@@ -450,5 +450,5 @@ first BETA Version, 15.9.2004
 05470 ------------------------------
 
 ```
-  
--- Carsten Strotmann  
+
+-- Carsten Strotmann

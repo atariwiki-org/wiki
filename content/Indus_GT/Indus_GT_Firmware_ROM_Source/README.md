@@ -1,8 +1,8 @@
 ---
 title: Indus GT Firmware ROM Source
 ---
-# Indus GT Firmware ROM Disassembly  
-  
+# Indus GT Firmware ROM Disassembly
+
 ```
 ;⁄-------------------------------------------\
 ;| DISASSEMBLED FILE - DONE WITH DISASM 1.0· |

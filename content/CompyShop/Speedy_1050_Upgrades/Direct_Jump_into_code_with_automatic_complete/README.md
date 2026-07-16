@@ -1,8 +1,8 @@
 ---
 title: Direct Jump into code with automatic complete
 ---
-# Speedy 1050 example - Direct Jump with automatic complete  
-  
+# Speedy 1050 example - Direct Jump with automatic complete
+
 ```
 0100 ;****************************************
 0110 ;*   Demonstration fuer Kommando $4D    *

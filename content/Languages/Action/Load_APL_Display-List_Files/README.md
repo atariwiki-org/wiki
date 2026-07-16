@@ -1,15 +1,15 @@
 ---
 title: Load APL Display-List Files
 ---
-# Load APL Display-List Files  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION   
-Published: 	24.03.90   
-  
+# Load APL Display-List Files
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION
+Published: 	24.03.90
+
 ```
 ;********************************
 ;**                            **

@@ -1,9 +1,9 @@
 ---
 title: Print Decimal, Hex and Binary
 ---
-# Print Decimal, Hex and Binary routines  
-  
-  
+# Print Decimal, Hex and Binary routines
+
+
 ```
 00010          .LI OFF
 00020 *

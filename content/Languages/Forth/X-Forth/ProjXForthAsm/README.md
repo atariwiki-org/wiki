@@ -1,8 +1,8 @@
 ---
 title: ProjXForthAsm
 ---
-# X-FORTH 6502 Assembler  
-  
+# X-FORTH 6502 Assembler
+
 ```
 (  FORTH-65 ASSEMBLER                                WFR-79JUN03  )
 ( X-FORTH Version 01/2003 )
@@ -168,4 +168,4 @@ FORTH  DEFINITIONS DECIMAL
 
 
 ```
-  
+

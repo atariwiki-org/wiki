@@ -1,10 +1,10 @@
 ---
 title: Small DOS 2.5 COM-File loader for Demo
 ---
-# Small DOS 2.5 COM-File loader for Demo  
-  
-reverse engineered from ABBUC Hobbytronic Demo 1992, done by Benji-Soft (Juergen Schildmann und Stefan Duesterhoeft), maybe based on prior work from Peter Sabbath.  
-  
+# Small DOS 2.5 COM-File loader for Demo
+
+reverse engineered from ABBUC Hobbytronic Demo 1992, done by Benji-Soft (Juergen Schildmann und Stefan Duesterhoeft), maybe based on prior work from Peter Sabbath.
+
 ```
 01000             .LI OFF
 01010 ************************
@@ -464,4 +464,4 @@ reverse engineered from ABBUC Hobbytronic Demo 1992, done by Benji-Soft (Juergen
 05540 ------------------------------
 
 ```
-  
+

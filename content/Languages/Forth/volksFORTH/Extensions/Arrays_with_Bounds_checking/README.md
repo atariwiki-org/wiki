@@ -1,8 +1,8 @@
 ---
 title: Arrays with Bounds checking
 ---
-# Arrays with bounds checking  
-  
+# Arrays with bounds checking
+
 ```
 \ Arrays with bounds checking
 

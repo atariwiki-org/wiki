@@ -1,10 +1,10 @@
 ---
 title: Action Source Code Formatter
 ---
-  
-  
-# Action Source Code Formatter  
-  
+
+
+# Action Source Code Formatter
+
 ```
 ;
 ; FORMAT.ACT - Formats Action! sources
@@ -335,4 +335,4 @@ RETURN
 
 
 ```
-  
+

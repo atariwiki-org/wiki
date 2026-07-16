@@ -1,14 +1,14 @@
 ---
 title: Atari 815 DUAL DISK CONTROLLER
 ---
-# Atari 815 DUAL DISK CONTROLLER by Bob Warne with additional comments, lables & equates by Dave Staugas  
-Thanks to Curt Vendel and his Atari museum [atarimuseum.com](http://www.atarimuseum.com) for publishing the source code at [AtariAge](https://atariage.com/forums/topic/78379-atari-815-controller-source/?tab=comments#comment-956255) and kheller2 from [AtariAge](https://atariage.com/forums/topic/78379-atari-815-controller-source/?do=findComment&comment=4122495) for post production of the source code. Thank you very much to both of you from the Atari community.  
-  
-## Source Code files  
-- [DUAL 815 DISK CONTROLLER source code - original](attachments/DUAL_815_DISK_CONTROLLER.asm) ; original source code from Curt Vendel and his Atari museum [atarimuseum.com](http://www.atarimuseum.com)  
-- [DUAL 815 DISK CONTROLLER - post processed original source code](attachments/DUAL_815_DISK_CONTROLLER-Original.asm) ; same as above, but with post production for better reading from kheller2 from [AtariAge](https://atariage.com/forums/topic/78379-atari-815-controller-source/?do=findComment&comment=4122495)  
-  
-## Source Code  
+# Atari 815 DUAL DISK CONTROLLER by Bob Warne with additional comments, lables & equates by Dave Staugas
+Thanks to Curt Vendel and his Atari museum [atarimuseum.com](http://www.atarimuseum.com) for publishing the source code at [AtariAge](https://atariage.com/forums/topic/78379-atari-815-controller-source/?tab=comments#comment-956255) and kheller2 from [AtariAge](https://atariage.com/forums/topic/78379-atari-815-controller-source/?do=findComment&comment=4122495) for post production of the source code. Thank you very much to both of you from the Atari community.
+
+## Source Code files
+- [DUAL 815 DISK CONTROLLER source code - original](attachments/DUAL_815_DISK_CONTROLLER.asm) ; original source code from Curt Vendel and his Atari museum [atarimuseum.com](http://www.atarimuseum.com)
+- [DUAL 815 DISK CONTROLLER - post processed original source code](attachments/DUAL_815_DISK_CONTROLLER-Original.asm) ; same as above, but with post production for better reading from kheller2 from [AtariAge](https://atariage.com/forums/topic/78379-atari-815-controller-source/?do=findComment&comment=4122495)
+
+## Source Code
 ```
         .TITLE DUAL 815 DISK CONTROLLER
 ;

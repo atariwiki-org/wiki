@@ -1,16 +1,16 @@
-# SPL  
-  
-a Forth-style concatenative stack language. The compiler is (currently) written in Python and emits 6502 assembly code.  
-  
-[Originally created by Ron Kneusel](https://home.comcast.net/~oneelkruns/) for the Apple II, adapted for the Atari 8bit and enhanced by Carsten Strotmann (cas@strotmann.de).  
-  
-SPL is still work-in-progress, it has some "rough-edges" and might fail in certain places. It has many bugs. However, it works fine for some developers.  
-  
-Applications in SPL:  
-  
-* [ATR_Copy_Center_ACC](../../ATR_Copy_Center_ACC/README.md) - A copy tool for the SIO2USB device  
-  
-## SPL Source (Python)  
+# SPL
+
+a Forth-style concatenative stack language. The compiler is (currently) written in Python and emits 6502 assembly code.
+
+[Originally created by Ron Kneusel](https://home.comcast.net/~oneelkruns/) for the Apple II, adapted for the Atari 8bit and enhanced by Carsten Strotmann (cas@strotmann.de).
+
+SPL is still work-in-progress, it has some "rough-edges" and might fail in certain places. It has many bugs. However, it works fine for some developers.
+
+Applications in SPL:
+
+* [ATR_Copy_Center_ACC](../../ATR_Copy_Center_ACC/README.md) - A copy tool for the SIO2USB device
+
+## SPL Source (Python)
 ```
 #!/usr/bin/python
 #

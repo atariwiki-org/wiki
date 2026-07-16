@@ -1,36 +1,36 @@
 ---
 title: Sector Mapper
 ---
-# Sector Mapper  
-  
-  
-## Dokumentation zu MAPPER.SRC  
-  
-Mit MAPPER.SRC koennen Sie einen Blick hinter die Kulissen von professionellen Programmen und deren Kopierschutz werfen.  
-  
-MAPPER liest jeden Sektor einer Single-Density Diskette ein, und gibt Ihnen durch eine Sektorkarte einen Uebersicht der Diskette.  
-  
-Folgende Symbole werden verwendet:  
-  
-| * | belegter Sektor  
-|   | (Leerzeichen) leerer Sektor  
-| M | Missing Sector (s. Text)  
-| C | CRC-Error (s. Text)  
-| B | Sonstiger 'Bad-Sector'  
-  
-Sie erhalten Informationen, ob ein Sektor leer oder belegt ist, oderob es sich um einen sog. 'BAD SECTOR'  
-handelt. Die letzteren geben beim Lesen einen ERROR 144, der gerne fuer den Kopierschutz hergenommen wird.  
-  
-## BAD SECTORS  
-  
-Bei einem BAD SECTOR wird Ihnen weiterhin mitgeteilt, um welche Art von BAD SECTOR es sich dabei handelt. Moeglich sind sog. 'Missing Sectors', fehlende Sektoren, die z.B. entstehen, wenn ein Sektor mit zu hoher Drehzahl geschrieben wird, und daher den naechsten Sektor ueberschreibt.  
-  
-Zweite Moeglichkeit sind sog. 'CRC-Errors', die auf einen Fehler in der internen Pruefsumme hinweisen.  
-  
-Falls ein 'B' angezeigt wird, so handelt es sich ebenfalls um einen BAD SECTOR, der jedoch in die obigen Kategorien nicht einordnen laesst (z.B. Data Flag).  
-  
-Das Einlesen einer Diskette kann bei vielen BAD SECTORS laenger dauern, da das Laufwerk bei Lesefehlern mehrmals versucht, den Sektor doch noch zu lesen  
-  
+# Sector Mapper
+
+
+## Dokumentation zu MAPPER.SRC
+
+Mit MAPPER.SRC koennen Sie einen Blick hinter die Kulissen von professionellen Programmen und deren Kopierschutz werfen.
+
+MAPPER liest jeden Sektor einer Single-Density Diskette ein, und gibt Ihnen durch eine Sektorkarte einen Uebersicht der Diskette.
+
+Folgende Symbole werden verwendet:
+
+| * | belegter Sektor
+|   | (Leerzeichen) leerer Sektor
+| M | Missing Sector (s. Text)
+| C | CRC-Error (s. Text)
+| B | Sonstiger 'Bad-Sector'
+
+Sie erhalten Informationen, ob ein Sektor leer oder belegt ist, oderob es sich um einen sog. 'BAD SECTOR'
+handelt. Die letzteren geben beim Lesen einen ERROR 144, der gerne fuer den Kopierschutz hergenommen wird.
+
+## BAD SECTORS
+
+Bei einem BAD SECTOR wird Ihnen weiterhin mitgeteilt, um welche Art von BAD SECTOR es sich dabei handelt. Moeglich sind sog. 'Missing Sectors', fehlende Sektoren, die z.B. entstehen, wenn ein Sektor mit zu hoher Drehzahl geschrieben wird, und daher den naechsten Sektor ueberschreibt.
+
+Zweite Moeglichkeit sind sog. 'CRC-Errors', die auf einen Fehler in der internen Pruefsumme hinweisen.
+
+Falls ein 'B' angezeigt wird, so handelt es sich ebenfalls um einen BAD SECTOR, der jedoch in die obigen Kategorien nicht einordnen laesst (z.B. Data Flag).
+
+Das Einlesen einer Diskette kann bei vielen BAD SECTORS laenger dauern, da das Laufwerk bei Lesefehlern mehrmals versucht, den Sektor doch noch zu lesen
+
 ```
 ************************************
 *  SECTOR-MAPPER fuer Single-Density

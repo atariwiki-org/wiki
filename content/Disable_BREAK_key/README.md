@@ -1,8 +1,8 @@
 ---
 title: Disable BREAK key
 ---
-# Disable BREAK Key (for BASIC USR call)  
-  
+# Disable BREAK Key (for BASIC USR call)
+
 ```
 00010          .LI OFF
 00020 *

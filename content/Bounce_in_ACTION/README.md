@@ -1,15 +1,15 @@
 # Bounce in ACTION
 
-### General Information  
-Author: 	David Plotkin   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	ANALOG Issue #20   
+### General Information
+Author: 	David Plotkin
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	ANALOG Issue #20
 ---
-# Bounce in Action!  
-__Bounce__, written by Joel Gluck and published in __ANALOG__ issue 15, was a lot of fun to play with, just as Joel predicted it would be. The obvious enhancements that sprang to mind included a higher resolution screen and multiple colors. Unfortunately, higher resolution (and more than four colors) means more points to draw, and BASIC slows to a crawl. Fortunately, Action! from OSS presents an alternative, so I translated and modified the program into Action! Try punching it in; I think you'll agree that the color patterns and dynamic "ball" are fascinating to watch. To use this updated version of __Bounce__, you must have the Action! cartridge installed in your Atari. The program works pretty much like the original: You draw "walls" with your joystick, then hit the space bar to start the ball bouncing. Hitting the space bar again stops the bounce, so you can draw more walls with your joystick, or erase by pushing the fire button. If you press the ESCAPE key while the bouncing is stopped, you will return to the menu screen to review the commands. The program uses Graphics 11, so there are fifteen colors on the screen, and the color of the line drawn changes each time the cursor bounces. The left arrow key (CONTROL *) changes the speed of the bouncing cursor; at the highest speed it's really moving. It can go even faster if you delete the DO OD loops following the sound statements. You will lose the sounds of the bounce if you do, however. So have fun with this juiced-up version of __Bounce__.  
+# Bounce in Action!
+__Bounce__, written by Joel Gluck and published in __ANALOG__ issue 15, was a lot of fun to play with, just as Joel predicted it would be. The obvious enhancements that sprang to mind included a higher resolution screen and multiple colors. Unfortunately, higher resolution (and more than four colors) means more points to draw, and BASIC slows to a crawl. Fortunately, Action! from OSS presents an alternative, so I translated and modified the program into Action! Try punching it in; I think you'll agree that the color patterns and dynamic "ball" are fascinating to watch. To use this updated version of __Bounce__, you must have the Action! cartridge installed in your Atari. The program works pretty much like the original: You draw "walls" with your joystick, then hit the space bar to start the ball bouncing. Hitting the space bar again stops the bounce, so you can draw more walls with your joystick, or erase by pushing the fire button. If you press the ESCAPE key while the bouncing is stopped, you will return to the menu screen to review the commands. The program uses Graphics 11, so there are fifteen colors on the screen, and the color of the line drawn changes each time the cursor bounces. The left arrow key (CONTROL *) changes the speed of the bouncing cursor; at the highest speed it's really moving. It can go even faster if you delete the DO OD loops following the sound statements. You will lose the sounds of the bounce if you do, however. So have fun with this juiced-up version of __Bounce__.
 ---
-Action! Listing  
+Action! Listing
 ```
 MODULE
 
@@ -194,5 +194,5 @@ PROC draw()
 RETURN
 ```
 ---
-[bounceinaction.PDF](attachments/bounceinaction.PDF)  
-[bounceinaction.djvu](attachments/bounceinaction.djvu)  
+[bounceinaction.PDF](attachments/bounceinaction.PDF) 
+[bounceinaction.djvu](attachments/bounceinaction.djvu) 

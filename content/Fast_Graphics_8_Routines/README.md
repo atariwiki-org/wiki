@@ -1,17 +1,17 @@
 ---
 title: Fast Graphics 8 Routines
 ---
-# Fast Graphics 8  
-  
-General Information  
-  
-Author: 	Carsten Strotmann   
-Language: 	ACTION!   
-Compiler/Interpreter: 	ACTION!   
-Published: 	09.12.90   
-  
-  
-  
+# Fast Graphics 8
+
+General Information
+
+Author: 	Carsten Strotmann
+Language: 	ACTION!
+Compiler/Interpreter: 	ACTION!
+Published: 	09.12.90
+
+
+
 ```
 ;********************************
 ;**									 **
@@ -335,9 +335,9 @@ VLine (x2,y1,y2)
 
 RETURN
 ```
-  
-### 1st Version  
-  
+
+### 1st Version
+
 ```
 ;********************************
 ;** FAST GRAPH                 **
@@ -473,9 +473,9 @@ PROC Circle(INT x,y,r,c)
 RETURN
 
 ```
-  
-### 2nd version  
-  
+
+### 2nd version
+
 ```
 ;********************************
 ;** FAST GRAPH	               **
@@ -614,9 +614,9 @@ PROC Box (CARD x1,y1,x2,y2)
 RETURN
 
 ```
-  
-### Assembler Source (BIBO Assembler)  
-  
+
+### Assembler Source (BIBO Assembler)
+
 ```
 00010			 .LI OFF
 00020 ******************************
@@ -898,4 +898,4 @@ RETURN
 02780 ------------------------------
 
 ```
-  
+

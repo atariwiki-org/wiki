@@ -1,33 +1,33 @@
 ---
 title: Logitech+Formula+GP+USB+Wheel+Driver
 ---
-# Logitech Formula GP USB Driver  
-  
-  
-Tested with a Logitec Formula GP Wheel USB. Other Logitech Wheels might work. Please send feedback.  
-  
-## Description  
-  
-  
-|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||  
-|  $10           |  1                 | Wheel movement  | $270 (624)  | PADDL0 | LWHEEL     |  
-|  $11           |  2                 | Buttons 1-6 | $271 (625)  | PADDL1 | LBUTTON     |  
-|  $12           |  3                 | Accelleration (Brake and Throttle)  | $272 (626)  | PADDL2 | LACCEL     |  
-|  $13           |  4                 | Throttle | $273 (627)  | PADDL3 | LTHROTL     |  
-|  $14           |  5                 | Brake | $274 (628)  | PADDL4 | LBRAKE     |  
-  
-  
-- Byte 1: Wheel movement ($00 = left, $80 = middle, $FF= right)  
-- Byte 2: Buttons 1-6  
-- Byte 3: Accelleration (Throttle and Brake) ($00 = Brake, $80 = idle, $FF= Throttle)  
-- Byte 4: Throttle ($00 = accellerate, $FF= idle)  
-- Byte 5: Brake ($00 = Idle, $FF= Brake)  
-  
-  
-## Device dependent source  
-  
-This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).  
-  
+# Logitech Formula GP USB Driver
+
+
+Tested with a Logitec Formula GP Wheel USB. Other Logitech Wheels might work. Please send feedback.
+
+## Description
+
+
+|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||
+|  $10           |  1                 | Wheel movement  | $270 (624)  | PADDL0 | LWHEEL     |
+|  $11           |  2                 | Buttons 1-6 | $271 (625)  | PADDL1 | LBUTTON     |
+|  $12           |  3                 | Accelleration (Brake and Throttle)  | $272 (626)  | PADDL2 | LACCEL     |
+|  $13           |  4                 | Throttle | $273 (627)  | PADDL3 | LTHROTL     |
+|  $14           |  5                 | Brake | $274 (628)  | PADDL4 | LBRAKE     |
+
+
+- Byte 1: Wheel movement ($00 = left, $80 = middle, $FF= right)
+- Byte 2: Buttons 1-6
+- Byte 3: Accelleration (Throttle and Brake) ($00 = Brake, $80 = idle, $FF= Throttle)
+- Byte 4: Throttle ($00 = accellerate, $FF= idle)
+- Byte 5: Brake ($00 = Idle, $FF= Brake)
+
+
+## Device dependent source
+
+This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).
+
 ```
 01000          .LI OFF
 01010 ****************************
@@ -150,6 +150,6 @@ This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.
 02180          RTS
 02190 ------------------------------
 ```
-  
-  
-  
+
+
+

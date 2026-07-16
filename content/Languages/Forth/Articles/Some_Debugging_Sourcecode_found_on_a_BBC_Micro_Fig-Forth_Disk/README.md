@@ -1,10 +1,10 @@
 ---
 title: Some Debugging Sourcecode found on a BBC Micro Fig-Forth Disk
 ---
-  
-  
-# Some Debugging Sourcecode found on a BBC Micro Fig-Forth Disk  
-  
+
+
+# Some Debugging Sourcecode found on a BBC Micro Fig-Forth Disk
+
 ```
 ( Toolkit                 EEDIT                      1 of 2     )
 VARIABLE EBLK                    ( will hold error value of BLK )
@@ -78,4 +78,4 @@ HERE FENCE !      ( set FENCE to prevent inadvertent FORGETting )
 
 
 ```
-  
+

@@ -1,8 +1,8 @@
 ---
 title: Floating point Routines
 ---
-# Floating Point Routines  
-  
+# Floating Point Routines
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -99,8 +99,8 @@ title: Floating point Routines
 00930          RTS
 00940 ------------------------------
 ```
-  
-### Floating Point Demo  
+
+### Floating Point Demo
 ```
 00010          .LI OFF
 00020          .OR $4000
