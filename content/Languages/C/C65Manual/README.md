@@ -1,7 +1,4 @@
----
-title: C65Manual-Text
----
-# C/65 Manual - Text Version  
+# C/65 Manual
   
 ''work in progress'' -- Please help by copying the OCR text from the original PDF, fix the OCR errors and append here  
   

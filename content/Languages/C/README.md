@@ -1,6 +1,3 @@
----
-title: C
----
 # C  
   
   
@@ -36,7 +33,7 @@ C programming language for the Atari. A subset of C, C/65 only generated assembl
 ### Manuals  
 - [OSS C-65 Manual.pdf](http://data.atariwiki.org/DATA/OSS_C-65-Manual.pdf) ; size: 40,2 MB; thanks to Serious Computerist  
 - [OSS_C-65_Reference_Manual-C_1982_OSS_Inc..pdf](attachments/OSS_C-65_Reference_Manual-C_1982_OSS_Inc..pdf) ;full OSS C/65 Reference Manual with OCR; mega-thanks to Fuji-Man from AtariAge!  
-- [C/65 Manual (text version)](../C65Manual-Text/README.md)  
+- [C/65 Manual (text version)](C65Manual/README.md)  
 - [OSS_C_65_Quick_Start_Guide.pdf](attachments/OSS_C_65_Quick_Start_Guide.pdf)  
   
 ### ATR images  
@@ -67,7 +64,7 @@ OSS C/65 Cover
 ## Lightspeed C 1.15  
   
 ### Manual  
-- [Lightspeed_C.pdf](attachments/Lightspeed_C.pdf) Lightspeed C manual  
+- [Lightspeed_C.pdf](../../../media/Languages/C/attachments/Lightspeed_C.pdf) Lightspeed C manual  
   
 ### ATR images  
 - [Lightspeed_C_1.15_A.atr](attachments/Lightspeed_C_1.15_A.atr)  

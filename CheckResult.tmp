@@ -1,4 +1,7 @@
 \U0001f62d Found 1084 issues in the following files:
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\README.md', line 189
+C65Manual-Text/README.md is broken.
+
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\README.md', line 197
 CC65_Einsteigerkurs/README.md is broken.
 
@@ -3191,12 +3194,6 @@ attachments/Special+Characters+43.jpg is broken.
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\TURBAN\README.md', line 142
 attachments/Sublime+Text-TURBAN-Special+Characters.jpg is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\C\README.md', line 39
-../C65Manual-Text/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\C\README.md', line 70
-attachments/Lightspeed_C.pdf is broken.
-
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\Forth\volksFORTH\README.md', line 53
 Tutorial/Adding_comments/README.md is broken.
 
@@ -3250,4 +3247,7 @@ Tutorial/Control_Structures/README.md is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\Forth\volksFORTH\README.md', line 79
 Tutorial/Making_decisions_-_IF_etc/README.md is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Stefan_Haubenthal\README.md', line 10
+../C65Manual-Text/README.md is broken.
 
