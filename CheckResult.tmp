@@ -1,4 +1,4 @@
-\U0001f62d Found 1084 issues in the following files:
+\U0001f62d Found 1078 issues in the following files:
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\README.md', line 189
 C65Manual-Text/README.md is broken.
 
@@ -3179,21 +3179,6 @@ attachments/TURBO-BASIC+XL+2.1.jpg is broken.
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\README.md', line 265
 attachments/Turbo+Basic+Version+3.2q.jpg is broken.
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\TURBAN\README.md', line 58
-attachments/turban.w10.zip is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\TURBAN\README.md', line 64
-attachments/Special+Characters+43.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\TURBAN\README.md', line 67
-attachments/Sublime+Text-TURBAN-Special+Characters.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\TURBAN\README.md', line 139
-attachments/Special+Characters+43.jpg is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\TURBAN\README.md', line 142
-attachments/Sublime+Text-TURBAN-Special+Characters.jpg is broken.
-
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\Forth\volksFORTH\README.md', line 53
 Tutorial/Adding_comments/README.md is broken.
 
@@ -3247,7 +3232,4 @@ Tutorial/Control_Structures/README.md is broken.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\Forth\volksFORTH\README.md', line 79
 Tutorial/Making_decisions_-_IF_etc/README.md is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Stefan_Haubenthal\README.md', line 10
-../C65Manual-Text/README.md is broken.
 

@@ -1,7 +1,4 @@
----
-title: TURBAN
----
-# Turban - TURboBAsic Nifty  
+# TURBAN - TURboBAsic Nifty  
   
   
 %%tabbedSection  
@@ -55,16 +52,16 @@ Not yet available in English, please try to help yourself with the German versio
 - [Characters.atr](attachments/Characters.atr) ; all Atari special characters for use in TURBAN in one file.  
   
 ## ZIP file  
-- [Attachment für TURBAN under Windows 10](attachments/turban.w10.zip) ; size: 8 MB ; thank you so much ggn from AtariAge for your help. The community is in your debt.  
+- [Attachment für TURBAN under Windows 10](../../../../../media/Languages/BASIC/Turbo-BASIC_XL/TURBAN/attachments/turban.w10.zip) ; size: 8 MB ; thank you so much ggn from AtariAge for your help. The community is in your debt.  
   
 ## Pictures  
 ![](attachments/Beispielcode-Basic-Monokai.jpg)  
 Code example with theme: 'Basic-Monokai' in Sublime Text 2  
   
-![](attachments/Special+Characters+43.jpg)  
+![](attachments/Special_Characters_43.jpg)  
 43 special characters in the Atari font  
   
-![](attachments/Sublime+Text-TURBAN-Special+Characters.jpg)  
+![](attachments/Sublime_Text-TURBAN-Special_Characters.jpg)  
 Sublime Text - TURBAN special characters  
   
 ## Recommended editors  
@@ -136,10 +133,10 @@ Zur Zeit nur im englischen Reiter für Windows 10
 - [Characters.atr](attachments/Characters.atr) ; alle Atari Spezialzeichen für den direkten Einsatz in TURBAN in einer Datei.  
   
 ## Bilder  
-![](attachments/Special+Characters+43.jpg)  
+![](attachments/Special_Characters_43.jpg)  
 43 Spezialzeichen im Atari Zeichensatz  
   
-![](attachments/Sublime+Text-TURBAN-Special+Characters.jpg)  
+![](attachments/Sublime_Text-TURBAN-Special_Characters.jpg)  
 Alle Spezialzeichen in Sublime Text: TURBAN Spezialzeichen  
   
 /%  
