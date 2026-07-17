@@ -11,7 +11,7 @@ MAC/65, along with other OSS products, became part of ICD's catalog of Atari pro
 
 ![](attachments/MAC65-Disk.jpg)
 
-MAC/65 was initially developed as a disk-based program. It replaced an earlier assembler, [EASMD](../../../EASMD/README.md), in OSS's product portfolio. The first version, 2.00, was released in 1982.
+MAC/65 was initially developed as a disk-based program. It replaced an earlier assembler, [OSS EASMD Version 1.0](../EASMD/README.md), in OSS's product portfolio. The first version, 2.00, was released in 1982.
 
 The MAC/65 disk also included a debugger, [Bug/65 Version 2.0](../BUG65/README.md), developed by McStuff Company. The disk also contained a DOS. Initially it was [OS/A+](../OS_Aplus/README.md), later replaced with [DOS XL](../DOS_XL/README.md).
 
@@ -266,7 +266,7 @@ Here are cartridge images created by building the sources.
 - Bug sheet of 01/07/94 version 1.02 [Scan](attachments/mac_65_bug_sheet.pdf) [PDF](attachments/MAC65_BUG_SHEET_01-07-1997.pdf)
 
 ## Examples - MAC/65 source files
-- [Floating Point ROM Library](../../../Floating_Point_ROM_Library/README.md)
+- [Floating Point ROM Library](../../../OS/Floating_Point_ROM/Floating_Point_ROM_Library/README.md)
 - [MOUSE ROUTINE IN AN INTERRUPT](../../../MOUSE_ROUTINE_IN_AN_INTERRUPT/README.md)
 - [RAF_Commander](../../../RAF_Commander/README.md) - a Norton Commander Clone for the 8bit Atari
 - [Sweet16Mac65](../../../Sweet16Mac65/README.md) a virtual 16bit machine for the 8bit ATARI

@@ -25,7 +25,7 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [Bibo Assembler](../../Companies/CompyShop/BIBO_Assembler/README.md) (1986)
 - [DataSoft Datasm-65 2.0](../../Companies/DataSoft/DataSoft_Datasm-65/README.md) (1981)
 - [Dunion's Debugging Tool (DDT) Rev. 1.0](../../Companies/OSS/DDT/README.md) (1982)
-- [EASMD](../../EASMD/README.md) (1981)
+- [OSS EASMD Version 1.0](../../Companies/OSS/EASMD/README.md) (1981)
 - [Edit_6502](../../Edit_6502/README.md) (1981)
 - [Extended DDT (1985)](../../Companies/OSS/Extended_DDT/README.md) (1985)
 - [MAC/65](../Mac65/README.md) (1982)

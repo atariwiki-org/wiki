@@ -25,7 +25,7 @@ Tested with a Speedlink Competition Pro USB. Might work with other digital gamep
 
 ## Device dependent source
 
-This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).
+This Source must be included into the [Base USB HID Driver](../Hardware/USB/BaseHIDDriver/README.md).
 
 ```
 01000          .LI OFF

@@ -21,7 +21,7 @@ title: USB Cartridge
 
 ## Software
 
-- [Base HID Driver](../../../BaseHIDDriver/README.md)
+- [Base USB HID Driver](../BaseHIDDriver/README.md)
 - [USB Device Driver Development Kit Disk](https://sourceforge.net/project/showfiles.php?group_id=111428&package_id=120826)
 - [Atari USB Enduser Driver Disk](../AtariEnduserDriverDisk/README.md)
 - [Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)

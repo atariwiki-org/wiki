@@ -13,7 +13,7 @@ title: Operating System
 
 [Atari 400-800 Technical Reference Notes-Operating System User's Manual-Operating System Source Listing and Hardware Manual](http://data.atariwiki.org/DOC/Atari_400-800_Technical_Reference_Notes-Operating_System_User_s_Manual-Operating_System_Source_Listing_and_Hardware_Manual_553_pages.pdf) ; size: 21.6 MB, 553 pages
 
-[FAST FLOATING POINT source code for the ATARI](../FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md) 
+[FAST FLOATING POINT source code for the ATARI](../OS/Floating_Point_ROM/FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md) 
 
 [ATARI 800 EQUATE LISTING](../OS/Atari_OS/Atari_800-XL-XE_System_Label_Listing/README.md) 
 

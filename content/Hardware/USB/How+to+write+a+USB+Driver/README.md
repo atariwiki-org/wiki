@@ -55,7 +55,7 @@ Each HID Driver Sourcecode consists of two parts:
 - the basic part
 - the device dependent part
 
-The [Base HID Driver Sourcecode](../../../BaseHIDDriver/README.md).
+The [Base USB HID Driver](../BaseHIDDriver/README.md).
 
 The Basic Part handles the generic tasks identical for all USB HID Devices:
 

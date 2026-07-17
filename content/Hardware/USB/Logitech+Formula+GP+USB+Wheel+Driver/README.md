@@ -26,7 +26,7 @@ Tested with a Logitec Formula GP Wheel USB. Other Logitech Wheels might work. Pl
 
 ## Device dependent source
 
-This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).
+This Source must be included into the [Base USB HID Driver](../BaseHIDDriver/README.md).
 
 ```
 01000          .LI OFF

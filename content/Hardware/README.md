@@ -12,7 +12,7 @@
 - [Controller_topics](../Controller_topics/README.md)
 - [How_to_query_the_MultiJoy_Interface](../How_to_query_the_MultiJoy_Interface/README.md)
 - [Multijoy](../How_to_query_the_MultiJoy_Interface/README.md) Interface
-- [Trackball](../Trackball/README.md)
+- [Atari Trackball](../Trackball/README.md)
 - [Atari_CX70_Light_Pen](../Companies/Atari/Atari_CX70_Light_Pen/README.md)
 - [Atari_CX77_Touch_Tablet](../Companies/Atari/Atari_CX77_Touch_Tablet/README.md)
 - [Atari_CX80_Trak-Ball_controller](../Companies/Atari/Atari_CX80_Trak-Ball_controller/README.md)

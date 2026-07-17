@@ -10,7 +10,7 @@
 - [CAS to WAV and WAV to CAS](../CAS_to_WAV_and_WAV_to_CAS/README.md)
 
 # Emulator
-- [Altirra](../Companies/Avery_Lee/Altirra/README.md)
+- [Altirra](../People/Avery_Lee/Altirra/README.md)
 - [Atari800MacX](http://www.atarimac.com/atari800macx.php)
 - [Atari800](https://atari800.github.io/index.html)
 - [Stella](https://stella-emu.github.io/)
@@ -112,7 +112,7 @@
 - [Atari_CX77_Touch_Tablet](../Companies/Atari/Atari_CX77_Touch_Tablet/README.md)
 - [Atari_CX80_Trak-Ball_controller](../Companies/Atari/Atari_CX80_Trak-Ball_controller/README.md)
 - [Atari CX85 Numerical Keypad](../Companies/Atari/AtariCX85/README.md)
-- [Trackball](../Trackball/README.md)
+- [Atari Trackball](../Trackball/README.md)
 - [Multijoy](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 
 ## Voiceboxes/Sprachbox
@@ -205,7 +205,7 @@
 - [Family Budgets (APX-20108)](../Companies/Atari/Family_Budgets/README.md)
 - [Family Cash Flow (APX-20080)](../Companies/Atari/Family_Cash_Flow/README.md)
 - [Atari Family Finances (CX421)](../Companies/Atari/Family_Finances/README.md)
-- [Home_Inventory](../Home_Inventory/README.md)
+- [Home Inventory](../Companies/Atari/Home_Inventory/README.md)
 - [RPN Calculator](../RPN_Calculator/README.md)
 
 ### Databases
@@ -231,7 +231,7 @@
 - [Atari Biorhythm cassette-Dual Track with voice, music and data](attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube
 - [Atari Hangman (CX4108)](../Companies/Atari/Atari_Hangman/README.md)
 - [Atari Hangman cassette-Dual Track with voice, music and data](attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
-- [Video Easel CXL 4005](../Video_Easel_CXL_4005/README.md)
+- [Video Easel CXL 4005](../Companies/Atari/Video_Easel_CXL_4005/README.md)
 
 ### Games
 - [Caverns of Mars (CX8130)](../Companies/Atari/Caverns_of_Mars_CX8130/README.md)
@@ -251,7 +251,7 @@
 - Music_Composer_CXL_4007](../Music_Composer_CXL_4007/README.md)
 - [Atari_Music_I](../Atari_Music_I/README.md)
 - [Atari_Music_II](../Atari_Music_II/README.md)
-- [Musica](../Musica/README.md)
+- [Musica ; Copyright (C) 1985 by Steve Hales](../Musica/README.md)
 
 ### Remote Data Transfer
 - [Atari Bildschirmtext (BTX)](../ATARI_Bildschirmtext_BTX/README.md)
@@ -272,13 +272,13 @@
 - [Calc_Magic](../Calc_Magic/README.md)
 - [VisiCalc](../VisiCalc/README.md)
 - [SpeedCalc](../SpeedCalc/README.md)
-- [SynCalc](../SynCalc/README.md)
+- [SynCalc](../Companies/Synapse_Software/SynCalc/README.md)
 
 ### Tools
 - [ATA_MON_DXG_5724](../ATA_MON_DXG_5724/README.md)
 
 ### Utilities
-- [Fixdump](../Fixdump/README.md)
+- [Fixdump 2.0SD aka Disk Fixer, Rev. 2.0](../Companies/Atari/Fixdump/README.md)
 
 ### Word Processing
 - [Atari Word Processor (CX404) and Atari Word Processor Demonstration Data Kit (CX8128)](../Companies/Atari/Atari_Word_Processor/README.md)
@@ -373,7 +373,7 @@
 - [Terminkalender](../Companies/Atari/Atari_Germany/Terminkalender/README.md)
 - [Buchhaltung](../Buchhaltung/README.md)
 - [Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md)
-- [Graph It II](../Graph_It_II/README.md)
+- [Graph It II (TXG9517)](../Companies/Atari/Atari_Germany/Graph_It_II/README.md)
 - [Zinsen_und_Tilgung](../Companies/Atari/Atari_Germany/Zinsen_und_Tilgung/README.md)
 - [Familien_Finanzen](../Companies/Atari/Atari_Germany/Familien_Finanzen/README.md)
 - [Haushalts-Buch](../Companies/Atari/Atari_Germany/Haushalts-Buch/README.md)
@@ -419,7 +419,7 @@
 
 ### Spiele
 - [WWF-Club-Spiel](../WWF-Club-Spiel/README.md)
-- [fehler abc](../fehler_abc/README.md)
+- [fehler abc](../Companies/Atari/Atari_Germany/Fehler_abc/README.md)
 - [747_Flug-Simulator](../Companies/Atari/Atari_Germany/747_Flug-Simulator/README.md)
 - [Scram](../Scram/README.md)
 - [Karriere](../Karriere/README.md)
@@ -604,7 +604,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 
 ## Games
 
-## [Voice_and_Data_Cassettes](../Voice_and_Data_Cassettes/README.md)
+## [Voice and Data Cassettes](../Voice_and_Data_Cassettes/README.md)
 - [Atari Educational System Lesson Cassettes](../Companies/Atari/Atari_Educational_System/Atari_Educational_System_Lesson_Cassettes/README.md)
 - [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett_Educational_Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)
 
@@ -625,7 +625,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 
 - [Atari Speed Reading (CX4126)](../Companies/Atari/Atari_Speed_Reading/README.md)
 - [Atari States & Capitals CX4112](../Companies/Atari/Atari_States_and_Capitals/README.md)
-- [Atari_European_Countries_and_Capitals](../Companies/Atari/Atari_European_Countries_and_Capitals/README.md)
+- [Atari European Countries & Capitals CX4114 ; Copyright (C) 1980 Atari, Inc.](../Companies/Atari/Atari_European_Countries_and_Capitals/README.md)
 
 - [Atari Biorhythm cassette-Dual Track with voice, music and data](attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube ; [Atari Biorhythm program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Biorhythm)
 - [Atari Kingdom cassette-Dual Track with voice, music and data](attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10 ; [Atari Kingdom program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Kingdom)
@@ -633,11 +633,11 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari Blackjack (CX4105)](../Companies/Atari/Atari_Blackjack/README.md)
 
 # Source Code
-*[Intention_of_the_source_code_chapter](../Intention_of_the_source_code_chapter/README.md) 
+*[Intention of the source code chapter](../Intention_of_the_source_code_chapter/README.md) 
 
 ### Applications
 - [Atari_Calculator](../Companies/Atari/Atari_Calculator/README.md)
-- [SynCalc](../SynCalc/README.md)
+- [SynCalc](../Companies/Synapse_Software/SynCalc/README.md)
 - [The_Writer's_Tool](../The_Writer's_Tool/README.md)
 
 ### Disk Operating Systems (DOS)
@@ -725,6 +725,6 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari 800 OS Source Listing](../OS/Atari_OS/Atari_800_ROM_OS_Source_Listing/README.md) ; [ASM-file](attachments/Atari_800_OS_Rev.B.asm)
 - Atari XL Operating System Source Listing ; [Rev. 2 ASM-file](attachments/Atari_XL_OS_Rev.2.asm) ; [Rev. 11 ASM-file](attachments/Atari_XL_OS_Rev.11.asm)
 - Carol Shaw's more accurate Colleen Floating Point Routines - ultimately not used in the OS: [asm file](attachments/Colleen_Floating_Point_Routines_Source_Code.asm), [text file](attachments/Colleen_Floating_Point_Routines.txt), [original document](https://archive.org/details/ColleenFloatingPointRoutines); see [Atari_Calculator](../Companies/Atari/Atari_Calculator/README.md) for more info
-- [FAST FLOATING POINT source code for the ATARI from Newell Industries & Charles W. Marslett](../FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md)
+- [FAST FLOATING POINT source code for the ATARI](../OS/Floating_Point_ROM/FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md)
 - [Atari OS Rev. A & B (1979) & Rev. 2 (1983) (Atari) (NTSC & PAL) (400-800-XL-XE) with FAST FLOATING POINT from above](attachments/Atari_OS_Rev._A_and_B_1979_Rev_2_1983_Atari_NTSC_and_PAL_400-800-XL-XE_with_FastFP.zip)
 - [Backus–Naur Form (BNF)](../Languages/BASIC/Atari_BASIC/Backus-Naur_form/README.md)

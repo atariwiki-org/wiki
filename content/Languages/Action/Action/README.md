@@ -64,7 +64,7 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - [Aktion_mit_ACTION](../Articles/Aktion_mit_ACTION/README.md) - Report about the ACTION! Programming Language from the German Magazin "Happy Computer"
 - [Action!_Bugsheet_3](../Action!_Bugsheet_3/README.md)
 - [Fix_for_the_Bugs_in_divide_in_ACTION!](../Fix_for_the_Bugs_in_divide_in_ACTION!/README.md)
-- [Fix_for_Bug_in_PrintF](../../../Fix_for_Bug_in_PrintF/README.md)
+- [Fix for PrintF Routine](../Fix_for_Bug_in_PrintF/README.md)
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ### Tutorials
@@ -165,18 +165,18 @@ Thank you Alfred
 - [Compile_to_Disk](../Articles/Compile_to_Disk/README.md) ACS
 - [DLI_in_ACTION!](../DLI_in_ACTION!/README.md)
 - [DOS_Setup](../../../DOS_Setup/README.md) - A small tool to copy some files from disk to ramdisk. can be configured by a textfile.
-- [Data_Entry_Routines](../../../Data_Entry_Routines/README.md)
-- [Date_Routines](../../../Date_Routines/README.md) - Library of routines supporting the input, storage and manipulation of dates.
+- [Data Entry Routines](../Examples/Data_Entry_Routines/README.md)
+- [Date Routines](../Examples/Date_Routines/README.md) - Library of routines supporting the input, storage and manipulation of dates.
 - [Delete_EOL_Char_in_Textfiles](../Examples/Delete_EOL_Char_in_Textfiles/README.md)
 - [Displaylist_in_ACTION!](../Displaylist_in_ACTION!/README.md)
-- [END_Procedure](../../../END_Procedure/README.md) - Call procedure to leave an Action Program
+- [END_Procedure](../Examples/END_Procedure/README.md) - Call procedure to leave an Action Program
 - [ERROR](../Examples/ERROR/README.md) (Converts SpartaDOS, BeWeDOS and RealDOS error # to readable text)
 - [Fast Graphics 15 Routines](../Examples/Fast_Graphics_15_Routines/README.md)
 - [Fast Graphics 8 Routines](../Examples/Fast_Graphics_8_Routines/README.md)
-- [File_Compare](../../../File_Compare/README.md)
-- [File_IO_Routines](../../../File_IO_Routines/README.md)
-- [File_Select_Box](../../../File_Select_Box/README.md)
-- [File_Select_Shell](../../../File_Select_Shell/README.md)
+- [File Compare in ACTION!](../Examples/File_Compare/README.md)
+- [File-IO Routines](../Examples/File_IO_Routines/README.md)
+- [File Select Box](../Examples/File_Select_Box/README.md)
+- [File Select Shell](../Examples/File_Select_Shell/README.md)
 - [Game_AMAZING_in_ACTION!](../Game_AMAZING_in_ACTION!/README.md)
 - [Grep for Sparta DOS](../Examples/Grep_for_Sparta_DOS/README.md)
 - [Dump - Print the contents of binary files in hexadecimal and ATASCII](../Examples/HexDump/README.md) - Dump - Print the contents of binary files in hexadecimal and ATASCII
@@ -184,7 +184,7 @@ Thank you Alfred
 - [Kermit_in_ACTION!](../Kermit_in_ACTION!/README.md)
 - [Load_APL_Display-List_Files](../Load_APL_Display-List_Files/README.md)
 - [Load_Font_Files_in_ACTION!](../Load_Font_Files_in_ACTION!/README.md)
-- [Load_Koala_Pictures](../../Assembler/Examples/Load_Koala_Pictures/README.md)
+- [Load Koala Pictures](../../Assembler/Examples/Load_Koala_Pictures/README.md)
 - [MiniDOS](../Examples/MiniDOS/README.md)
 - [Multi_Player_Animation](../../../Multi_Player_Animation/README.md)
 - [OS_Vectors](../../../OS_Vectors/README.md)
@@ -194,10 +194,10 @@ Thank you Alfred
 - [Query_Console_Keys](../../../Query_Console_Keys/README.md)
 - [SIO_CIO_Routine](../../../SIO_CIO_Routine/README.md)
 - [SourceCodeDisk1](../../../SourceCodeDisk1/README.md) ; SpartaDOS X disk image with Action source code
-- [Starburst](../../../Starburst/README.md)
+- [Starburst in ACTION!](../Examples/Starburst/README.md)
 - [Symbol_table_lister](../../../Symbol_table_lister/README.md) ACS
 - [Timer_Programming](../../../Timer_Programming/README.md)
-- [Trackball](../../../Trackball/README.md)
+- [Atari Trackball](../../../Trackball/README.md)
 - [Using_the_RAM_Under_the_OS_ROM_on_XL_and_XE_Computers](../../../Using_the_RAM_Under_the_OS_ROM_on_XL_and_XE_Computers/README.md)
 - [VT52_Terminal_Emulator](../../../VT52_Terminal_Emulator/README.md)
 - [VTEmulator](../../../VTEmulator/README.md)
@@ -208,7 +208,7 @@ Thank you Alfred
 ### Tools
 
 - [Action_Source_Code_Formatter](../Action_Source_Code_Formatter/README.md)
-- [Infoline](../../../Infoline/README.md) for ACTION! and BASIC
+- [Infoline for BASIC and ACTION!](../Examples/Infoline/README.md) for ACTION! and BASIC
 - [ACTION_OBJECT_CODE_RELOCATION_PROGRAM](../ACTION_OBJECT_CODE_RELOCATION_PROGRAM/README.md) ; Thank you so much Alfred from AtariAge, we all really appreciate your help here again.
 - [Relocator](../../../Relocator/README.md) for Action; relocates Action code to run independent from the code location
 - [acsterm.txt](attachments/acsterm.txt) ; ACSTERM is a terminal emulator for the Atari 800, 800XL, 1200XL and 130XE
@@ -244,14 +244,14 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[Bounce_in_ACTION!](../Bounce_in_ACTION!/README.md)|#20 (07/ 84)|en|Game
 |[Pulse_in_ACTION!](../Pulse_in_ACTION!/README.md)|#26 (01/ 85)|en|Demo
 |[More_Fun_with_Bounce!](../More_Fun_with_Bounce!/README.md)|#27 (02/ 85)|en|Game
-|[Demon_Birds](../../../Demon_Birds/README.md)|#28 (03/ 85)|en|Game
+|[Demon Birds](../Examples/Demon_Birds/README.md)|#28 (03/ 85)|en|Game
 |[Roto](../../../Roto/README.md)|#31 (06/ 85)|en|Game
 |[Color_the_shapes](../Examples/Color_the_shapes/README.md)|#32 (07/ 85)|en|game
 |[Getting_in_on_the_Action!_1](../Getting_in_on_the_Action!_1/README.md)|#32 (07/ 85)|en|Tutorial
 |[Getting_in_on_the_Action!_2](../Getting_in_on_the_Action!_2/README.md)|#35 (10/ 85)|en|Tutorial
 |[Sneak_attack](../../../Sneak_attack/README.md)|#36 (11/ 85)|en|Game
 |[Air Hockey](../Examples/Air_hockey/README.md)|#38 (01/ 86)|en|Game
-|[D-Check](../../../D-Check/README.md)|#44 (07/ 86)|en|Tool
+|[D:Check in ACTION!](../Examples/D-Check/README.md)|#44 (07/ 86)|en|Tool
 |[Trails](../Articles/Trails/README.md)|#50 (01/ 87)|en|Tool for using the KoalaPad in ACTION!
 |[ACTION!_Zero_Free](../ACTION!_Zero_Free/README.md)|#54 (05/ 87) |en|Tool
 
@@ -263,7 +263,7 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[Game_AMAZING_in_ACTION!](../Game_AMAZING_in_ACTION!/README.md)|Vol. 4 #1  (05/ 85)|en|Game
 |[View_3D](../Examples/View_3D/README.md)|Vol. 4 #2 (06/ 85)|en|Tool
 |[Dark_Star](../Articles/Dark_Star/README.md)|Vol. 4 #3 (07/ 85)|en|Game: Zapping Aliens With Radioactive Waste
-|[Display_Master](../../../Display_Master/README.md)|Vol. 4 #4 (08/ 85)|en|
+|[Display Master](../Examples/Display_Master/README.md)|Vol. 4 #4 (08/ 85)|en|
 |[Eight_Queens](../Articles/Eight_Queens/README.md)|Vol. 4 #5 (09/ 85)|en|92 chess solutions in 40 seconds
 |[Video_Stretch](../Articles/Video_Stretch/README.md)|Vol. 5 #6 (10/ 86)|en|Tool
 |[Killer_Chess](../Articles/Killer_Chess/README.md)|Vol. 6 #10 (02/ 88)|en|Game

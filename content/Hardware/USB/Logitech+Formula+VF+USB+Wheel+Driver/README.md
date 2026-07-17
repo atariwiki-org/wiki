@@ -38,7 +38,7 @@ left  6---8---2 right
 
 ## Device dependent source
 
-This Source must be included into the [Base HID Driver](../BaseHIDDriver/README.md).
+This Source must be included into the [Base USB HID Driver](../BaseHIDDriver/README.md).
 
 ```
 01000          .LI OFF

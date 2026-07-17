@@ -42,8 +42,8 @@ AtariWiki highly recommends the findings of tschak909 from AtariAge. Please take
 
 ## Complete list of the Atari Educational System Lesson Cassettes: 16 courses were made, each one has 4 cassettes! Auto Mechanics CX6013 was announced, but not published. Thanks to Michael Current, Kay Savetz and Thomas Cherryhomes, we can offer a solution for this, please see below. General hint: If you discover problems with reading of the files, please reset the Atari and leave the position of the cassette reader unchanged. Try again, until you hear a high frequency sound or discover it works. In Altirra F2-key for START and F5-key for RESET.
 
-[U.S. History CX6001](../../../../U.S._History_CX6001/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all. ; further thanks to Bill Lange for restoring the 1st part, which made the package complete! Thank you so much Bill. Please go ahead. :-)
-[U.S._Government_CX6002](../../../../U.S._Government_CX6002/README.md) ; donated by someone who would not like to be mentioned. ; Cassette A-Side 2 is from FULS from AtariAge. Thank you for your help to complete this package. We really appreciate that. :-)
+[U.S. History CX6001](../../U.S._History_CX6001/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all. ; further thanks to Bill Lange for restoring the 1st part, which made the package complete! Thank you so much Bill. Please go ahead. :-)
+[U.S._Government_CX6002](../../U.S._Government_CX6002/README.md) ; donated by someone who would not like to be mentioned. ; Cassette A-Side 2 is from FULS from AtariAge. Thank you for your help to complete this package. We really appreciate that. :-)
 
 [Supervisory Skills CX6003](../../Supervisory_Skills_CX6003/README.md) ; donated by someone who would not like to be mentioned.
 [World_History_Western_CX6004](../../../../World_History_Western_CX6004/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.

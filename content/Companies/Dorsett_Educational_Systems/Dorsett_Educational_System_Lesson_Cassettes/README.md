@@ -17,7 +17,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Reading-Development_U](../Reading-Development_U/README.md)
 - [Comprehension-Reading_AB](../Comprehension-Reading_AB/README.md)
 - [Dorsett Atari Reading-Development (Reading Comprehension) T ; Copyright (C) 1983 Dorsett Educational Systems, Inc.](../Reading-Development_T/README.md)
-- [U.S._History_HS](../../../U.S._History_HS/README.md)
+- [U.S._History_HS](../Construction_OC/U.S._History_HS/README.md)
 - [Dorsett Atari Carpentry KC ; Copyright (C) 1983 Dorsett Educational Systems, Inc.](../Carpentry_KC/README.md)
 ### 2nd column
 - [Reading-Mathematics_MR](Reading-Mathematics_MR/README.md)
@@ -56,9 +56,9 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Reading-Development_Z](../Reading-Development_Z/README.md)
 - [Reading-Development_W](../Reading-Development_W/README.md)
 - [Counseling_Co](../Counseling_Co/README.md)
-- [U.S._Government_Gv](../../../U.S._Government_Gv/README.md)
+- [U.S._Government_Gv](../Construction_OC/U.S._Government_Gv/README.md)
 - [Auto_Mechanics_KA](../Auto_Mechanics_KA/README.md)
-- [Vocational_Vocabulary_VZ](../../../Vocational_Vocabulary_VZ/README.md)
+- [Vocational_Vocabulary_VZ](../Vocational_Vocabulary_VZ/README.md)
 
 ### bottom
 - [Comprehension-Reading_AB](../Comprehension-Reading_AB/README.md)

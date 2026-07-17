@@ -1,6 +1,3 @@
----
-title: Trackball
----
 # Atari Trackball
 
 Taming your machine with a mouse has long been a dream of the ATARI 8-bitters.

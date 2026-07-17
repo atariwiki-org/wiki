@@ -1,6 +1,3 @@
----
-title: Musica
----
 # Musica ; Copyright (C) 1985 by Steve Hales
 
 ![](attachments/Musica.jpg)

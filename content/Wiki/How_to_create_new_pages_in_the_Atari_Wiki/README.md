@@ -131,7 +131,7 @@ user instead of 'Link'.
 ''text''   = print 'text' in italic.
 __text__   = print 'text' in bold.
 {{text}}   = print 'text' in monospaced font.
-[Table of Contents](..//README.md)    = print 'text' underscored (dummy hyperlink)
+[Wiki](..//README.md)    = print 'text' underscored (dummy hyperlink)
 - text     = make a bulleted list item with 'text'
 1. text     = make a numbered list item with 'text'
 ;term:ex   = make a definition for 'term' with the explanation 'ex'
@@ -147,11 +147,11 @@ Text
 [link](../link/README.md)              Erzeugt einen Hyperlink zu "link", wobei "link"
 sowohl ein interner WikiName
 oder ein externer Link (http://) sein kann.
-Bsp.: [Main](../Main/README.md) 
+Bsp.: [Main](../../Main/README.md) 
 Main
 [text](../link/README.md)         Erzeugt einen Hyperlink, wobei der angezeigte Text
 und der Link unterschiedlich sind.
-Bsp.: [Hauptseite](../Main/README.md) 
+Bsp.: [Hauptseite](../../Main/README.md) 
 Hauptseite
 [linkheadline](../linkheadline/README.md)     Erzeugt einen Hyperlink und nutzt eine Überschrift als Anker.
 link#headline
