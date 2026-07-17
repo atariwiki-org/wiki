@@ -1,13 +1,9 @@
----
-title: Air hockey
----
-### General Information
-Author: Chris Page
-Language: ACTION!
-Compiler/Interpreter: ACTION!
-Published: Analog #38 (01/ 86)
----
 # Air Hockey
+
+Author: Chris Page<br>
+Language: ACTION!<br>
+Compiler/Interpreter: ACTION!<br>
+Published: Analog #38 (01/ 86)
 
 Air Hockey is written in Action! and must be compiled off of a disk or tape (the source and object code won't fit in memory together). So type it in. SAVE it, clear the editor, go to the monitor and RUN it, thusly: R "FILENAME“ (substituting the device and filename you saved it under for “FILENAME" — I used “D:AIRHOCKE.Y”).
 

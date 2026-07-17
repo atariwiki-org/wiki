@@ -1,8 +1,6 @@
----
-title: Articles
----
+# Articles
 
-# [3D Printer Files](../3D_Printer_Files/README.md)
+- [3D Printer Files](../3D_Printer_Files/README.md)
 - [SIO_plug](../SIO_plug/README.md)
 
 # Cassette
@@ -44,21 +42,21 @@ title: Articles
 - [Atari_XEGS](../Atari_XEGS/README.md)
 
 ## Disk Drives
-### Atari
+### Atari Disk Drives
 - [Atari_810](../Hardware/Disk_Drives/Atari_810/README.md)
 - [Atari_815](../Hardware/Disk_Drives/Atari_815/README.md)
 - [ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION](../Companies/Atari/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
 - [Atari_1050](../Companies/Atari/Atari_1050/README.md)
 - [Atari_XF551](../Companies/Atari/Atari_XF551/README.md)
 
-### Third Party Drives
+### Third Party Disk Drives
 - [ASTRA_2001](../ASTRA_2001/README.md)
 - [Indus_GT](../Indus_GT/README.md)
 - [Percom AT-88](../Hardware/Disk_Drives/Percom_AT-88/README.md)
 - [Rana_1000](../Rana_1000/README.md)
 - [Trak_AT-D2](../Trak_AT-D2/README.md)
 
-### Drive enhancements
+### Disk Drive Enhancements
 - [Happy_Computers_Upgrades](../Happy_Computers_Upgrades/README.md)
 - [CompyShop_Speedy_Upgrades](../CompyShop_Speedy_Upgrades/README.md)
 - [Turbo1050_Upgrades](../Turbo1050_Upgrades/README.md)
@@ -70,7 +68,7 @@ title: Articles
 - [HDI_Interface](../Hardware/Disk_Drives/HDI_Interface/README.md) (aka Floppy 3000)
 
 
-## Tape Recorder
+## Tape Recorders
 - [ATARI_410](../ATARI_410/README.md)
 - [ATARI_1010](../ATARI_1010/README.md)
 - [Bugfix_for_the_Cassette_Handler](../Bugfix_for_the_Cassette_Handler/README.md)
@@ -79,7 +77,7 @@ title: Articles
 - [ATARI_XL12](../ATARI_XL12/README.md)
 - [All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
 
-## Printer
+## Printers
 - [ATARI_820_40-column_printer](../ATARI_820_40-column_printer/README.md)
 - [ATARI_822_Thermal_Printer](../Companies/Atari/Atari_822_Thermal_Printer/README.md)
 - [ATARI_825_Dot_Matrix_Printer](../ATARI_825_Dot_Matrix_Printer/README.md)
@@ -91,7 +89,7 @@ title: Articles
 - [ATARI_XMM801_Dot_Matrix_Printer](../ATARI_XMM801_Dot_Matrix_Printer/README.md)
 - [ATARI_XDM121_Daisy_Wheel_Printer](../ATARI_XDM121_Daisy_Wheel_Printer/README.md)
 
-## Modem
+## Modems
 - [ATARI_830_Acoustic_Modem](../ATARI_830_Acoustic_Modem/README.md)
 - [ATARI_835_Direct_connect_Modem](../ATARI_835_Direct_connect_Modem/README.md)
 - [ATARI_1030](../ATARI_1030/README.md)
@@ -100,7 +98,7 @@ title: Articles
 - [ATARI_SX212](../ATARI_SX212/README.md)
 - [Atari SX212 Modem](../Companies/Atari/Atari_SX212_Modem/README.md)
 
-## Interface
+## Interfaces
 - [ATARI_850](../ATARI_850/README.md)
 - [TransKey-II](../TransKey-II/README.md)
 - [ARGS_RS232_Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (German)
@@ -109,7 +107,7 @@ title: Articles
 - [XEP80](../XEP80/README.md)
 - [Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface](../Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface/README.md)
 
-## Controller
+## Controllers
 - [Atari_CX70_Light_Pen](../Companies/Atari/Atari_CX70_Light_Pen/README.md)
 - [Atari_CX77_Touch_Tablet](../Companies/Atari/Atari_CX77_Touch_Tablet/README.md)
 - [Atari_CX80_Trak-Ball_controller](../Companies/Atari/Atari_CX80_Trak-Ball_controller/README.md)
@@ -117,7 +115,7 @@ title: Articles
 - [Trackball](../Trackball/README.md)
 - [Multijoy](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 
-## Voicebox/Sprachbox
+## Voiceboxes/Sprachbox
 - [Sprachbox DXG5721](../Sprachbox/README.md) (German)
 - [Sprachbox XL/XE](../Sprachbox-xl-xe/README.md)
 
@@ -128,7 +126,7 @@ title: Articles
 - [The!Card](../The!Card/README.md)
 - [Cartridges](../Cartridges/README.md)
 
-## Other
+## Others
 - [ARGS_ISA_PC_Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/README.md)
 - [ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION](../Companies/Atari/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
 - [Bank_Switching](../Bank_Switching/README.md)
@@ -182,113 +180,113 @@ title: Articles
 
 ## [Applications](../Applications/README.md)
 
-*Business
-##[Atari Timewise (DX5047) (Basic)](../Companies/Atari/Atari_Timewise/README.md) 
-##[The_Atari_Accountant_Series](../The_Atari_Accountant_Series/README.md) 
-##[The Bookkeeper CX414](../The_Bookkeeper/README.md) 
-##[The_Home_Filing_Manager](../The_Home_Filing_Manager/README.md) 
-##[Atari Home Accounting System](../Companies/Atari/Atari_Home_Accounting_System/README.md) 
+### Business
+- [Atari Timewise (DX5047) (Basic)](../Companies/Atari/Atari_Timewise/README.md) 
+- [The_Atari_Accountant_Series](../The_Atari_Accountant_Series/README.md) 
+- [The Bookkeeper CX414](../The_Bookkeeper/README.md) 
+- [The_Home_Filing_Manager](../The_Home_Filing_Manager/README.md) 
+- [Atari Home Accounting System](../Companies/Atari/Atari_Home_Accounting_System/README.md) 
 
-*Calculation & Graphics
-##[Atari_Calculator](../Companies/Atari/Atari_Calculator/README.md) 
-##[Atari Graph It I & II](../Atari_Graph_It_I_and_II/README.md) 
-##[Atari Home Finance](../Companies/Atari/Atari_Home_Finance/README.md) 
-##[Atari Investment Analysis Series](../Companies/Atari/Atari_Investment_Analysis_Series/README.md) 
-###[Bond Analysis CX8106](../Companies/Atari/Bond_Analysis/README.md) 
-###[Mortgage_and_Loan_Analysis](../Mortgage_and_Loan_Analysis/README.md) 
-###[Stock_Analysis](../Stock_Analysis/README.md) 
-###[Stock_Charting](../Stock_Charting/README.md) 
-##[Atari_Personal_Financial_Management_System](../Companies/Atari/Atari_Personal_Financial_Management_System/README.md) 
-##[Atari Rechner Simulation mit UPN](../Atari_Rechner_Simulation_mit_UPN/README.md) 
-##[Atari Silent Butler (DX5082)](../Companies/Atari/Atari_Silent_Butler/README.md) 
-##[Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md) 
-##[The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
-##[Enhancements_to_Graph_It](../Enhancements_to_Graph_It/README.md) 
-##[Family_Budgets](../Family_Budgets/README.md) 
-##[Family_Cash_Flow](../Family_Cash_Flow/README.md) 
-##[Family_Finances](../Family_Finances/README.md) 
-##[Home_Inventory](../Home_Inventory/README.md) 
-##[RPN Calculator](../RPN_Calculator/README.md) 
+### Calculation & Graphics
+- [Atari_Calculator](../Companies/Atari/Atari_Calculator/README.md) 
+- [Atari Graph It I & II](../Atari_Graph_It_I_and_II/README.md) 
+- [Atari Home Finance](../Companies/Atari/Atari_Home_Finance/README.md) 
+- [Atari Investment Analysis Series](../Companies/Atari/Atari_Investment_Analysis_Series/README.md) 
+  - [Bond Analysis CX8106](../Companies/Atari/Bond_Analysis/README.md) 
+  - [Mortgage_and_Loan_Analysis](../Mortgage_and_Loan_Analysis/README.md) 
+  - [Stock_Analysis](../Stock_Analysis/README.md) 
+  - [Stock_Charting](../Stock_Charting/README.md) 
+- [Atari_Personal_Financial_Management_System](../Companies/Atari/Atari_Personal_Financial_Management_System/README.md) 
+- [Atari Rechner Simulation mit UPN](../Atari_Rechner_Simulation_mit_UPN/README.md) 
+- [Atari Silent Butler (DX5082)](../Companies/Atari/Atari_Silent_Butler/README.md) 
+- [Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md) 
+- [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
+- [Enhancements_to_Graph_It](../Enhancements_to_Graph_It/README.md) 
+- [Family_Budgets](../Family_Budgets/README.md) 
+- [Family_Cash_Flow](../Family_Cash_Flow/README.md) 
+- [Family_Finances](../Family_Finances/README.md) 
+- [Home_Inventory](../Home_Inventory/README.md) 
+- [RPN Calculator](../RPN_Calculator/README.md) 
 
-*Database
-##[Synapse_SynFile](../Synapse_SynFile/README.md) 
-##[AUSTRO.BASE](../Companies/AUSTRO.COM/AUSTRO.BASE/README.md) 
+### Databases
+- [Synapse_SynFile](../Synapse_SynFile/README.md) 
+- [AUSTRO.BASE](../Companies/AUSTRO.COM/AUSTRO.BASE/README.md) 
 
-*Diagnostic
-##[Atari_400-800_Stand_Alone_System_Test](../Companies/Atari/Atari_400-800_Stand_Alone_System_Test/README.md) 
-##[Super_SALT](../Super_SALT/README.md) 
-##[ATARI_Diagnostic_Test_Tape](../ATARI_Diagnostic_Test_Tape/README.md) 
-##[AUSTRO.RECOVER](../Companies/AUSTRO.COM/AUSTRO.RECOVER/README.md) 
+### Diagnostics
+- [Atari_400-800_Stand_Alone_System_Test](../Companies/Atari/Atari_400-800_Stand_Alone_System_Test/README.md) 
+- [Super_SALT](../Super_SALT/README.md) 
+- [ATARI_Diagnostic_Test_Tape](../ATARI_Diagnostic_Test_Tape/README.md) 
+- [AUSTRO.RECOVER](../Companies/AUSTRO.COM/AUSTRO.RECOVER/README.md) 
 
-*Education
-##[Atari_Educational_System-programming_cassette_streams](../Atari_Educational_System-programming_cassette_streams/README.md) 
-##[Atari_Educational_System_Lesson_Cassettes](../Atari_Educational_System_Lesson_Cassettes/README.md) 
-##[Dorsett Educational System Lesson Cassettes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md) 
-##[An Invitation to Programming 1 CX4101](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%201%20CX4101) 
-##[An Invitation to Programming 2 CX4106](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%202%20CX4106) 
-##[An Invitation to Programming 3 CX4117](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%203%20CX4117) 
+### Education
+- [Atari_Educational_System-programming_cassette_streams](../Atari_Educational_System-programming_cassette_streams/README.md) 
+- [Atari_Educational_System_Lesson_Cassettes](../Atari_Educational_System_Lesson_Cassettes/README.md) 
+- [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md) 
+- [An Invitation to Programming 1 CX4101](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%201%20CX4101) 
+- [An Invitation to Programming 2 CX4106](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%202%20CX4106) 
+- [An Invitation to Programming 3 CX4117](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%203%20CX4117) 
 
-*Entertainment
-##[Atari Biorhythm (CX4107)](../Companies/Atari/Atari_Biorhythm/README.md) 
-##[Atari Biorhythm cassette-Dual Track with voice, music and data](attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube
-##[Atari Hangman (CX4108)](../Companies/Atari/Atari_Hangman/README.md) 
-##[Atari Hangman cassette-Dual Track with voice, music and data](attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
-##[Video Easel CXL 4005](../Video_Easel_CXL_4005/README.md) 
+### Entertainment
+- [Atari Biorhythm (CX4107)](../Companies/Atari/Atari_Biorhythm/README.md) 
+- [Atari Biorhythm cassette-Dual Track with voice, music and data](attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube
+- [Atari Hangman (CX4108)](../Companies/Atari/Atari_Hangman/README.md) 
+- [Atari Hangman cassette-Dual Track with voice, music and data](attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
+- [Video Easel CXL 4005](../Video_Easel_CXL_4005/README.md) 
 
-*Games
-##[Caverns of Mars (CX8130)](../Companies/Atari/Caverns_of_Mars_CX8130/README.md) 
-##[Computer_Chess_CXL_4009](../Computer_Chess_CXL_4009/README.md) 
-##[Galaxian_CXL4024](../Galaxian_CXL4024/README.md) 
+### Games
+- [Caverns of Mars (CX8130)](../Companies/Atari/Caverns_of_Mars_CX8130/README.md) 
+- [Computer_Chess_CXL_4009](../Computer_Chess_CXL_4009/README.md) 
+- [Galaxian_CXL4024](../Galaxian_CXL4024/README.md) 
 
-*Learning
-##[Atari Speed Reading (CX4126)](../Companies/Atari/Atari_Speed_Reading/README.md) 
-##[Atari Touch Typing (CX4110)](../Companies/Atari/Atari_Touch_Typing/README.md) 
-##[Conversational FRENCH (CX4119)](../Companies/Atari/Conversational_FRENCH_CX4119/README.md) 
-##[Conversational_GERMAN_CX4118](../Companies/Atari/Conversational_GERMAN_CX4118/README.md) 
-##[Conversational_ITALIAN_CX4125](../Companies/Atari/Conversational_ITALIAN_CX4125/README.md) 
-##[Conversational_SPANISH_CX4120](../Companies/Atari/Conversational_SPANISH_CX4120/README.md) 
-##[My_First_Alphabet_CX8135](../Companies/Atari/My_First_Alphabet_CX8135/README.md) 
+### Learning
+- [Atari Speed Reading (CX4126)](../Companies/Atari/Atari_Speed_Reading/README.md) 
+- [Atari Touch Typing (CX4110)](../Companies/Atari/Atari_Touch_Typing/README.md) 
+- [Conversational FRENCH (CX4119)](../Companies/Atari/Conversational_FRENCH_CX4119/README.md) 
+- [Conversational_GERMAN_CX4118](../Companies/Atari/Conversational_GERMAN_CX4118/README.md) 
+- [Conversational_ITALIAN_CX4125](../Companies/Atari/Conversational_ITALIAN_CX4125/README.md) 
+- [Conversational_SPANISH_CX4120](../Companies/Atari/Conversational_SPANISH_CX4120/README.md) 
+- [My_First_Alphabet_CX8135](../Companies/Atari/My_First_Alphabet_CX8135/README.md) 
 
-*Music
-##[Music_Composer_CXL_4007](../Music_Composer_CXL_4007/README.md) 
-##[Atari_Music_I](../Atari_Music_I/README.md) 
-##[Atari_Music_II](../Atari_Music_II/README.md) 
-##[Musica](../Musica/README.md) 
+### Music
+- Music_Composer_CXL_4007](../Music_Composer_CXL_4007/README.md) 
+- [Atari_Music_I](../Atari_Music_I/README.md) 
+- [Atari_Music_II](../Atari_Music_II/README.md) 
+- [Musica](../Musica/README.md) 
 
-*Remote Data Transfer
-##[Atari Bildschirmtext (BTX)](../ATARI_Bildschirmtext_BTX/README.md) 
-##[ATARI TELELINK II](../Companies/Atari/ATARI_TELELINK_II/README.md) 
-##[ATARI TELELINK I](../Companies/Atari/ATARI_TELELINK_I/README.md) 
-##[The Communicator II (CX488)](../Companies/Atari/An_Invitation_To_Programming/ATARI_The_Communicator_II/README.md) 
-##[The_Learning_Phone](../The_Learning_Phone/README.md) 
-##[AUSTRO.PHONE](../Companies/AUSTRO.COM/AUSTRO.PHONE/README.md) 
+### Remote Data Transfer
+- [Atari Bildschirmtext (BTX)](../ATARI_Bildschirmtext_BTX/README.md) 
+- [ATARI TELELINK II](../Companies/Atari/ATARI_TELELINK_II/README.md) 
+- [ATARI TELELINK I](../Companies/Atari/ATARI_TELELINK_I/README.md) 
+- [The Communicator II (CX488)](../Companies/Atari/An_Invitation_To_Programming/ATARI_The_Communicator_II/README.md) 
+- [The_Learning_Phone](../The_Learning_Phone/README.md) 
+- [AUSTRO.PHONE](../Companies/AUSTRO.COM/AUSTRO.PHONE/README.md) 
 
-*Simulation
-##[Atari Energy Czar CX4121](../Companies/Atari/Atari_Energy_Czar/README.md) 
-##[Atari SCRAM - A Nuclear Power Plant Simulation CX4123 (Basic) by Chris Crawford](../Companies/Atari/Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/README.md) 
-##[Atari Kingdom CX4102](../Companies/Atari/Atari_Kingdom/README.md) 
-##[Atari Kingdom cassette-Dual Track with voice, music and data](attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10
+### Simulation
+- [Atari Energy Czar CX4121](../Companies/Atari/Atari_Energy_Czar/README.md) 
+- [Atari SCRAM - A Nuclear Power Plant Simulation CX4123 (Basic) by Chris Crawford](../Companies/Atari/Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/README.md) 
+- [Atari Kingdom CX4102](../Companies/Atari/Atari_Kingdom/README.md) 
+- [Atari Kingdom cassette-Dual Track with voice, music and data](attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10
 
-*Spreadsheets
-##[BCALC](../BCALC/README.md) 
-##[Calc_Magic](../Calc_Magic/README.md) 
-##[VisiCalc](../VisiCalc/README.md) 
-##[SpeedCalc](../SpeedCalc/README.md) 
-##[SynCalc](../SynCalc/README.md) 
+### Spreadsheets
+- [BCALC](../BCALC/README.md) 
+- [Calc_Magic](../Calc_Magic/README.md) 
+- [VisiCalc](../VisiCalc/README.md) 
+- [SpeedCalc](../SpeedCalc/README.md) 
+- [SynCalc](../SynCalc/README.md) 
 
-*Tools
-##[ATA_MON_DXG_5724](../ATA_MON_DXG_5724/README.md) 
+### Tools
+- [ATA_MON_DXG_5724](../ATA_MON_DXG_5724/README.md) 
 
-*Utilities
-##[Fixdump](../Fixdump/README.md) 
+### Utilities
+- [Fixdump](../Fixdump/README.md) 
 
-*Word Processing
-##[Atari Word Processor (CX404) and Atari Word Processor Demonstration Data Kit (CX8128)](../Companies/Atari/Atari_Word_Processor/README.md) 
-##[Atari Writer 8036](../Companies/Atari/Atari_Writer/README.md) 
-##[Atari Proofreader (AX2033)](../Companies/Atari/Atari_Proofreader/README.md) 
-##[Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Schreiber/README.md) 
-##[The_Writer's_Tool](../The_Writer's_Tool/README.md) 
-##[AUSTRO.TEXT](../Companies/AUSTRO.COM/AUSTRO.TEXT/README.md) 
+### Word Processing
+- [Atari Word Processor (CX404) and Atari Word Processor Demonstration Data Kit (CX8128)](../Companies/Atari/Atari_Word_Processor/README.md) 
+- [Atari Writer 8036](../Companies/Atari/Atari_Writer/README.md) 
+- [Atari Proofreader (AX2033)](../Companies/Atari/Atari_Proofreader/README.md) 
+- [Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Schreiber/README.md) 
+- [The_Writer's_Tool](../The_Writer's_Tool/README.md) 
+- [AUSTRO.TEXT](../Companies/AUSTRO.COM/AUSTRO.TEXT/README.md) 
 
 ## [Atari 8-bit Software Preservation Initiative](http://a8preservation.com/#/home)
 
@@ -301,138 +299,138 @@ title: Articles
 ## Atari Program Exchange (APX) Software
 - [Atari Program Exchange (APX) Software](../Companies/Atari/Atari_Program_Exchange_APX_Software/README.md)
 
-## ATARI Cartridge Serial Numbers
+## Atari Cartridge Serial Numbers
 - [Atari Cartridge Serial Numbers](../Companies/Atari/ATARI_Cartridge_Serial_Numbers/README.md)
 
-## ATARI Conversational Language Series
+## Atari Conversational Language Series
 - [Atari Conversational Language Series](../Companies/Atari/ATARI_Conversational_Language_Series/README.md)
 
-## Country Specific Atari Software
+## Country-Specific Atari Software
 
 ### France - P.E.C.F. Atari
-*[Assembleur-Editeur (Cartridge: CXL 4003)](../Assembleur-Editeur/README.md) 
-*[Atari Logo (Cartridge: RX 8032)](../Atari_Logo/README.md) 
-*[Ataritexte (Cartridge: RXF 8036)](../Ataritexte/README.md) 
-*[Atlas	(Disk: APX 20055)](../Atlas/README.md) 
-*[Attaque! (Disk: APX 20072)](../Attaque!/README.md) 
-*[Basic Microsoft Atari (Disk: AX 2025)](../Basic_Microsoft/README.md) 
-*[Budget Familial (Disk: APX 20108)](../Budget_Familial/README.md) 
-*[Cache-cache de mots (Cassette: APX 20140)](../Cache-cache_de_mots/README.md) 
-*[Calcul Algébrique (Disk: DXF 54001, Cassette: TXF 53001)](../Calcul_Algébrique/README.md) 
-*[Caméléon (Disk: DXF 54016)](../Caméléon/README.md) 
-*[Catalogue de disquettes (Disk: APX 20056)](../Catalogue_de_disquettes/README.md) 
-*[Centrale Nucléaire (Cassette:	CX 4123)](../Centrale_Nucléaire/README.md) 
-*[Chevalet Video (Cartridge: CXL 4005)](../Chevalet_Video/README.md) 
-*[Comment Compter (Disk: APX 20148, Cassette: APX 10148)](../Comment_Compter/README.md) 
-*[Constructions electriques (Disk: APX 20215)](../Constructions_electriques/README.md) 
-*[Crocodile + Flip Flop (Disk: DT 2009, Cassette: DT 1009)](../Crocodile___Flip_Flop/README.md) 
-*[Cubes	(Cassette: APX 20101)](../Cubes/README.md) 
-*[Culture physique (Disk: APX 2003)](../Culture_physique/README.md) 
-*[Débogeur pour assembleur et macro-assembleur (Disk: DXF 54102)](../Débogeur_pour_assembleur_et_macro-assembleur/README.md) 
-*[Descente à ski (Disk:	APX 20063, Cassette: APX 10063)](../Descente_à_ski/README.md) 
-*[Des chiffres et des Lettres (Cartridge: RXF 52001)](../Des_chiffres_et_des_Lettres/README.md) 
-*[Drapeaux d'europe (Disk: APX 20149)](../Drapeaux_d'europe/README.md) 
-*[Editeur de sons (Disk: APX 20018, Cassette: APX 10018)](../Editeur_de_sons/README.md) 
-*[Extra-terrestres + Matuvu (Disk: DT 2011, Cassette: DT 1011)](../Extra-terrestres___Matuvu/README.md) 
-*[Fichier Larousse de 15 000 Mots (Disk: DT 2020)](../Fichier_Larousse_de_15_000_Mots/README.md) 
-*[Front de l'est 1941 (Disk: APX 20050)](../Front_de_l'est_1941/README.md) 
-*[Géographie (Disk: APX 20164)](../Geographie/README.md) 
-*[Gestion de données (Disk: APX 20059)](../Gestion_de_données/README.md) 
-*[Gestion Familiale (Disk: APX 20108)](../Gestion_Familiale/README.md) 
-*[Gloup + Fleches (Disk: DT 2008, Cassette: DT 1008)](../Gloup___Fleches/README.md) 
-*[Golf + Barre (Disk: DT 2010, Cassette: DT 1010)](../Golf___Barre/README.md) 
-*[Graphe 1 (Disk: CX 4109)](../Graphe_1/README.md) 
-*[Graphe 2 (Disk: APX 20074)](../Graphe_2/README.md) 
-*[Géographie (Disk: APX 20164, Cassette: APX 10164)](../Geographie/README.md) 
-*[Hickory Dickory (Cassette: APX 10071)](../Hickory_Dickory/README.md) 
-*[Initiation à la programmation en basic 1 (Cassette: CX 4101C)](../Initiation_à_la_programmation_en_basic_1/README.md) 
-*[Initiation à la programmation en basic 2 (Cassette: CX 4106C)](../Initiation_à_la_programmation_en_basic_2/README.md) 
-*[Initiation à la programmation en basic 3 (Cassette: CX 4117C)](../Initiation_à_la_programmation_en_basic_3/README.md) 
-*[Insectivores + Concentration (Disk: DT 2012, Cassette: DT2012)](../Insectivores___Concentration/README.md) 
-*[Jeu du royaume (Cassette: CX 4102)](../Jeu_du_royaume/README.md) 
-*[Jouer du piano (Disk:	APX 20062, Cassette: APX 10062)](../Jouer_du_piano/README.md) 
-*[L'ampoule electrique (Disk: DXF 54002)](../L'ampoule_electrique/README.md) 
-*[L'énigme du triangle (Disk: DXF 54015)](../L'énigme_du_triangle/README.md) 
-*[La boite à musique (Disk: APX 20182, Cassette: APX 10182)](../La_boite_à_musique/README.md) 
-*[La chasse aux fautes + La course aux Hapax (Disk: DT 2006, Cassette: DT 1006)](../La_chasse_aux_fautes___La_course_aux_Hapax/README.md) 
-*[La gamme d'Agam (prototype)](../La_gamme_d'Agam/README.md) 
-*[La quête du graal (Cassette: DT 1005)](../La_quête_du_graal/README.md) 
-*[Les bonbons + Chaos (Disk: DT 2013, Cassette: DT 1013)](../Les_bonbons___Chaos/README.md) 
-*[Limonade (Disk: APX 20001, Cassette: APX 10001)](../Limonade/README.md) 
-*[Macro Assembleur (Disk: CX 8121)](../Macro_Assembleur/README.md) 
-*[Mathematic-Tac-Toe (Disk: APX 20082, Cassette: APX 10082)](../Mathematic-Tac-Toe/README.md) 
-*[Ministre de l'énergie	(Cassette: CX 4121)](../Ministre_de_l'énergie/README.md) 
-*[Music Composer (Cartridge: CXL 4007)](../Music_Composer_Fr/README.md) 
-*[Nostradamus (Disk: DXF 54013)](../Nostradamus/README.md) 
-*[Promoteur (Disk: DXF 54017)](../Promoteur/README.md) 
-*[Questions et réponses (Disk: APX 20081)](../Questions_et_réponses/README.md) 
-*[Statistiques (Cassette: CX 4103)](../Statistiques/README.md) 
-*[Super Biorythmes (Disk: DF 4001, Cassette: TF 4001)](../Super_Biorythmes/README.md) 
+- [Assembleur-Editeur (Cartridge: CXL 4003)](../Assembleur-Editeur/README.md) 
+- [Atari Logo (Cartridge: RX 8032)](../Atari_Logo/README.md) 
+- [Ataritexte (Cartridge: RXF 8036)](../Ataritexte/README.md) 
+- [Atlas	(Disk: APX 20055)](../Atlas/README.md) 
+- [Attaque! (Disk: APX 20072)](../Attaque!/README.md) 
+- [Basic Microsoft Atari (Disk: AX 2025)](../Basic_Microsoft/README.md) 
+- [Budget Familial (Disk: APX 20108)](../Budget_Familial/README.md) 
+- [Cache-cache de mots (Cassette: APX 20140)](../Cache-cache_de_mots/README.md) 
+- [Calcul Algébrique (Disk: DXF 54001, Cassette: TXF 53001)](../Calcul_Algébrique/README.md) 
+- [Caméléon (Disk: DXF 54016)](../Caméléon/README.md) 
+- [Catalogue de disquettes (Disk: APX 20056)](../Catalogue_de_disquettes/README.md) 
+- [Centrale Nucléaire (Cassette:	CX 4123)](../Centrale_Nucléaire/README.md) 
+- [Chevalet Video (Cartridge: CXL 4005)](../Chevalet_Video/README.md) 
+- [Comment Compter (Disk: APX 20148, Cassette: APX 10148)](../Comment_Compter/README.md) 
+- [Constructions electriques (Disk: APX 20215)](../Constructions_electriques/README.md) 
+- [Crocodile + Flip Flop (Disk: DT 2009, Cassette: DT 1009)](../Crocodile___Flip_Flop/README.md) 
+- [Cubes	(Cassette: APX 20101)](../Cubes/README.md) 
+- [Culture physique (Disk: APX 2003)](../Culture_physique/README.md) 
+- [Débogeur pour assembleur et macro-assembleur (Disk: DXF 54102)](../Débogeur_pour_assembleur_et_macro-assembleur/README.md) 
+- [Descente à ski (Disk:	APX 20063, Cassette: APX 10063)](../Descente_à_ski/README.md) 
+- [Des chiffres et des Lettres (Cartridge: RXF 52001)](../Des_chiffres_et_des_Lettres/README.md) 
+- [Drapeaux d'europe (Disk: APX 20149)](../Drapeaux_d'europe/README.md) 
+- [Editeur de sons (Disk: APX 20018, Cassette: APX 10018)](../Editeur_de_sons/README.md) 
+- [Extra-terrestres + Matuvu (Disk: DT 2011, Cassette: DT 1011)](../Extra-terrestres___Matuvu/README.md) 
+- [Fichier Larousse de 15 000 Mots (Disk: DT 2020)](../Fichier_Larousse_de_15_000_Mots/README.md) 
+- [Front de l'est 1941 (Disk: APX 20050)](../Front_de_l'est_1941/README.md) 
+- [Géographie (Disk: APX 20164)](../Geographie/README.md) 
+- [Gestion de données (Disk: APX 20059)](../Gestion_de_données/README.md) 
+- [Gestion Familiale (Disk: APX 20108)](../Gestion_Familiale/README.md) 
+- [Gloup + Fleches (Disk: DT 2008, Cassette: DT 1008)](../Gloup___Fleches/README.md) 
+- [Golf + Barre (Disk: DT 2010, Cassette: DT 1010)](../Golf___Barre/README.md) 
+- [Graphe 1 (Disk: CX 4109)](../Graphe_1/README.md) 
+- [Graphe 2 (Disk: APX 20074)](../Graphe_2/README.md) 
+- [Géographie (Disk: APX 20164, Cassette: APX 10164)](../Geographie/README.md) 
+- [Hickory Dickory (Cassette: APX 10071)](../Hickory_Dickory/README.md) 
+- [Initiation à la programmation en basic 1 (Cassette: CX 4101C)](../Initiation_à_la_programmation_en_basic_1/README.md) 
+- [Initiation à la programmation en basic 2 (Cassette: CX 4106C)](../Initiation_à_la_programmation_en_basic_2/README.md) 
+- [Initiation à la programmation en basic 3 (Cassette: CX 4117C)](../Initiation_à_la_programmation_en_basic_3/README.md) 
+- [Insectivores + Concentration (Disk: DT 2012, Cassette: DT2012)](../Insectivores___Concentration/README.md) 
+- [Jeu du royaume (Cassette: CX 4102)](../Jeu_du_royaume/README.md) 
+- [Jouer du piano (Disk:	APX 20062, Cassette: APX 10062)](../Jouer_du_piano/README.md) 
+- [L'ampoule electrique (Disk: DXF 54002)](../L'ampoule_electrique/README.md) 
+- [L'énigme du triangle (Disk: DXF 54015)](../L'énigme_du_triangle/README.md) 
+- [La boite à musique (Disk: APX 20182, Cassette: APX 10182)](../La_boite_à_musique/README.md) 
+- [La chasse aux fautes + La course aux Hapax (Disk: DT 2006, Cassette: DT 1006)](../La_chasse_aux_fautes___La_course_aux_Hapax/README.md) 
+- [La gamme d'Agam (prototype)](../La_gamme_d'Agam/README.md) 
+- [La quête du graal (Cassette: DT 1005)](../La_quête_du_graal/README.md) 
+- [Les bonbons + Chaos (Disk: DT 2013, Cassette: DT 1013)](../Les_bonbons___Chaos/README.md) 
+- [Limonade (Disk: APX 20001, Cassette: APX 10001)](../Limonade/README.md) 
+- [Macro Assembleur (Disk: CX 8121)](../Macro_Assembleur/README.md) 
+- [Mathematic-Tac-Toe (Disk: APX 20082, Cassette: APX 10082)](../Mathematic-Tac-Toe/README.md) 
+- [Ministre de l'énergie	(Cassette: CX 4121)](../Ministre_de_l'énergie/README.md) 
+- [Music Composer (Cartridge: CXL 4007)](../Music_Composer_Fr/README.md) 
+- [Nostradamus (Disk: DXF 54013)](../Nostradamus/README.md) 
+- [Promoteur (Disk: DXF 54017)](../Promoteur/README.md) 
+- [Questions et réponses (Disk: APX 20081)](../Questions_et_réponses/README.md) 
+- [Statistiques (Cassette: CX 4103)](../Statistiques/README.md) 
+- [Super Biorythmes (Disk: DF 4001, Cassette: TF 4001)](../Super_Biorythmes/README.md) 
 
 ### Germany - Atari Deutschland GmbH
 
-- Business
-##[Terminkalender](../Terminkalender/README.md) 
-##[Buchhaltung](../Buchhaltung/README.md) 
-##[Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md) 
-##[Graph It II](../Graph_It_II/README.md) 
-##[Zinsen_und_Tilgung](../Zinsen_und_Tilgung/README.md) 
-##[Familien_Finanzen](../Familien_Finanzen/README.md) 
-##[Haushalts-Buch](../Haushalts-Buch/README.md) 
-##[Haushalts-Planung](../Haushalts-Planung/README.md) 
+#### Business
+- [Terminkalender](../Terminkalender/README.md) 
+- [Buchhaltung](../Buchhaltung/README.md) 
+- [Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md) 
+- [Graph It II](../Graph_It_II/README.md) 
+- [Zinsen_und_Tilgung](../Zinsen_und_Tilgung/README.md) 
+- [Familien_Finanzen](../Familien_Finanzen/README.md) 
+- [Haushalts-Buch](../Haushalts-Buch/README.md) 
+- [Haushalts-Planung](../Haushalts-Planung/README.md) 
 
-- Datenbanken
-##[Artikelverwaltung](../Artikelverwaltung/README.md) 
-##[Atari Bundesligatabellen (DXG 55005)](../Companies/Atari/Bundesligatabelle/README.md) 
-##[Diskettenbibliothek](../Diskettenbibliothek/README.md) 
-##[Karteikartenprogramm (DXG_415)](../Companies/Atari/Karteikartenprogramm/README.md) 
-##[Vereinsverwaltung](../Vereinsverwaltung/README.md) 
-##[Sport-Lexikon](../Sport-Lexikon/README.md) 
+#### Datenbanken
+- [Artikelverwaltung](../Artikelverwaltung/README.md) 
+- [Atari Bundesligatabellen (DXG 55005)](../Companies/Atari/Bundesligatabelle/README.md) 
+- [Diskettenbibliothek](../Diskettenbibliothek/README.md) 
+- [Karteikartenprogramm (DXG_415)](../Companies/Atari/Karteikartenprogramm/README.md) 
+- [Vereinsverwaltung](../Vereinsverwaltung/README.md) 
+- [Sport-Lexikon](../Sport-Lexikon/README.md) 
 
-- Grafik
-##[Paint](../Paint/README.md) 
+#### Grafik
+- [Paint](../Paint/README.md) 
 
-- Lernen
-##[Tipp_Trainer](../Tipp_Trainer/README.md) 
-##[Städte_und_Länder](../Städte_und_Länder/README.md) 
-##[Europäische_Städte_und_Länder](../Europäische_Städte_und_Länder/README.md) 
-##[Rechtschreibtrainer](../Rechtschreibtrainer/README.md) 
+#### Lernen
+- [Tipp_Trainer](../Tipp_Trainer/README.md) 
+- [Städte_und_Länder](../Städte_und_Länder/README.md) 
+- [Europäische_Städte_und_Länder](../Europäische_Städte_und_Länder/README.md) 
+- [Rechtschreibtrainer](../Rechtschreibtrainer/README.md) 
 
-- Musik
-##[Music_Composer](../Music_Composer/README.md) 
-##[Music_I](../Music_I/README.md) 
-##[Music_II](../Music_II/README.md) 
+#### Musik
+- [Music_Composer](../Music_Composer/README.md) 
+- [Music_I](../Music_I/README.md) 
+- [Music_II](../Music_II/README.md) 
 
-- Programmierhilfen
-##[Ataris_Programmierhilfen-Diskette_Nr.1](../Ataris_Programmierhilfen-Diskette_Nr.1/README.md) 
-##[Ataris_Programmierhilfen-Diskette_Nr.2](../Ataris_Programmierhilfen-Diskette_Nr.2/README.md) 
-##[Kurs 1: Programmieren leicht gemacht](https://atariwiki.org/wiki/Wiki.jsp?page=Programmieren%20leicht%20gemacht%20TXG4110) 
-##[Kurs 2: Noch mehr BASIC](https://atariwiki.org/wiki/Wiki.jsp?page=Noch%20mehr%20BASIC%20RXG%2055007) 
-##[Kurs 3: BASIC für Fortgeschrittene](../BASIC_fuer_Fortgeschrittene/README.md) 
-##[Super_Sort](../Super_Sort/README.md) 
+#### Programmierhilfen
+- [Ataris_Programmierhilfen-Diskette_Nr.1](../Ataris_Programmierhilfen-Diskette_Nr.1/README.md) 
+- [Ataris_Programmierhilfen-Diskette_Nr.2](../Ataris_Programmierhilfen-Diskette_Nr.2/README.md) 
+- [Kurs 1: Programmieren leicht gemacht](https://atariwiki.org/wiki/Wiki.jsp?page=Programmieren%20leicht%20gemacht%20TXG4110) 
+- [Kurs 2: Noch mehr BASIC](https://atariwiki.org/wiki/Wiki.jsp?page=Noch%20mehr%20BASIC%20RXG%2055007) 
+- [Kurs 3: BASIC für Fortgeschrittene](../BASIC_fuer_Fortgeschrittene/README.md) 
+- [Super_Sort](../Super_Sort/README.md) 
 
-- Programmiersprachen
-##[Editor](../Editor/README.md) 
-##[Macro_Assembler](../Macro_Assembler/README.md) 
-##[Mikrosoft_Basic_aka_Microsoft_Basic_II](../Mikrosoft_Basic_aka_Microsoft_Basic_II/README.md) 
-##[Pascal for the Atari](../Languages/Pascal/README.md) 
-##[Pilot](../Pilot/README.md) 
-##[Atari LOGO](../Logo/README.md) 
+#### Programmiersprachen
+- [Editor](../Editor/README.md) 
+- [Macro_Assembler](../Macro_Assembler/README.md) 
+- [Mikrosoft_Basic_aka_Microsoft_Basic_II](../Mikrosoft_Basic_aka_Microsoft_Basic_II/README.md) 
+- [Pascal for the Atari](../Languages/Pascal/README.md) 
+- [Pilot](../Pilot/README.md) 
+- [Atari LOGO](../Logo/README.md) 
 
-- Spiele
-##[WWF-Club-Spiel](../WWF-Club-Spiel/README.md) 
-##[fehler abc](../fehler_abc/README.md) 
-##[747_Flug-Simulator](../Companies/Atari/747_Flug-Simulator/README.md) 
-##[Scram](../Scram/README.md) 
-##[Karriere](../Karriere/README.md) 
-##[Yokyu_II_-_Globetrotter](../Yokyu_II_-_Globetrotter/README.md) 
-##[Atlantis](../Atlantis/README.md) 
-##[Nadral](../Nadral/README.md) 
-##[Time_Bandit](../Time_Bandit/README.md) 
-##[Cavelord](../Cavelord/README.md) 
-##[Wuerfel_-_Kniffel](../Wuerfel_-_Kniffel/README.md) 
-##[Abenteuer_im_Weltraum](../Abenteuer_im_Weltraum/README.md) 
-##[Schloss_des_Grauens](../Schloss_des_Grauens/README.md) 
+### Spiele
+- [WWF-Club-Spiel](../WWF-Club-Spiel/README.md) 
+- [fehler abc](../fehler_abc/README.md) 
+- [747_Flug-Simulator](../Companies/Atari/747_Flug-Simulator/README.md) 
+- [Scram](../Scram/README.md) 
+- [Karriere](../Karriere/README.md) 
+- [Yokyu_II_-_Globetrotter](../Yokyu_II_-_Globetrotter/README.md) 
+- [Atlantis](../Atlantis/README.md) 
+- [Nadral](../Nadral/README.md) 
+- [Time_Bandit](../Time_Bandit/README.md) 
+- [Cavelord](../Cavelord/README.md) 
+- [Wuerfel_-_Kniffel](../Wuerfel_-_Kniffel/README.md) 
+- [Abenteuer_im_Weltraum](../Abenteuer_im_Weltraum/README.md) 
+- [Schloss_des_Grauens](../Schloss_des_Grauens/README.md) 
 
 - Spielend lernen mit Atari-Programmen
 ##[Aufgepasst-Streit der Käfer](../Companies/Atari/Aufgepasst-Streit_der_Kaefer/README.md) 
