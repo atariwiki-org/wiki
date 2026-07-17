@@ -1,7 +1,7 @@
 # 6502 Assembly Code
 
 ## Bitwise manipulations - Bit calculations
-- [Bitwise_manipulations_-_Bit_calculations](../Bitwise_manipulations_-_Bit_calculations/README.md)
+- [Bitwise manipulations - Bit calculations](../Bitwise_manipulations_-_Bit_calculations/README.md)
 
 ## 6502 Assembly Code
 - [DEZ-HEX-BIN-OKT-PEN_ab_Excel_2016.xlsx](attachments/DEZ-HEX-BIN-OKT-PEN_ab_Excel_2016.xlsx)
@@ -58,7 +58,7 @@
 - [Synapse Assembler Atari 800 OS Equates](../Companies/Synapse_Software/SynAssembler/Synapse_Assembler_Atari_800_OS_Equates/README.md)
 - [Advanced_6502_Assembly_Code_Examples](../Advanced_6502_Assembly_Code_Examples/README.md)
 - [APAC_Graphics_Mode](../APAC_Graphics_Mode/README.md)
-- [Atari_800_Assembler_Equates](../Atari_800_Assembler_Equates/README.md)
+- [Atari_800_Assembler_Equates](../OS/Atari_OS/Atari_800_Assembler_Equates/README.md)
 - [Atari_System_Labels_from_OSS](../Atari_System_Labels_from_OSS/README.md)
 - [6502 bugs](../6502_bugs/README.md)
 - [6502 opcodes - complete list](http://www.6502.org/tutorials/6502opcodes.html)
@@ -66,8 +66,8 @@
 - [6502 Relocator](../6502_Relocator/README.md)
 - [ATARI Basic Autorun Loader](../Languages/BASIC/Atari_BASIC/Examples/Atari_BASIC_Autorun_Loader/README.md)
 - [Enhanced 6502 BASIC source code by Lee Davison](../Enhanced_Basic/README.md) ; 2-line BASIC for 6502 Computers
-- [Bootloader_with_Sectorcounter](../Bootloader_with_Sectorcounter/README.md)
-- [Atari_800_ROM_OS_Source_Listing](../Atari_800_ROM_OS_Source_Listing/README.md)
+- [Bootloader_with_Sectorcounter](../Languages/Assembler/Examples/Bootloader_with_Sectorcounter/README.md)
+- [Atari 800 OS Source Listing](../OS/Atari_OS/Atari_800_ROM_OS_Source_Listing/README.md)
 - [Copy OS ROM to RAM](../Languages/Assembler/Examples/Copy_OS_ROM_to_RAM/README.md)
 - [Cycle_neutral_branching](../Cycle_neutral_branching/README.md)
 - [Apple Assembly Line - How to Add and Subtract One](../Apple_Assembly_Line_-_How_to_Add_and_Subtract_One/README.md)

@@ -190,7 +190,7 @@ Atari BASIC Keywords
 ## Atari BASIC Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie fertig
 - [Programmieren leicht gemacht (TXG4110)](../../../Companies/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)
 - [Kurs 2: Noch mehr BASIC-Lernen Sie BASIC mit Dagmar Berghoff-TXG 55007](../Noch_mehr_BASIC_TXG_55007/README.md)
-- [Kurs 3: BASIC für Fortgeschrittene-Lernen Sie BASIC mit Dagmar Berghoff](../../../BASIC_fuer_Fortgeschrittene/README.md)
+- [BASIC für Fortgeschrittene](../../../Companies/Atari/Atari_Germany/BASIC_fuer_Fortgeschrittene/README.md)
 
 ## BASIC 1x1 des Programmierens - ein BASIC-Lehrgang, einstmals gesendet auf Radio DDR II in der Computersendung REM, Begleitmaterial veröffentlicht als Kassettenbox. Mit einer Programm-Kassette für ATARI 800XL.
 - [Programm_Kassette.atr](attachments/Programm_Kassette.atr)

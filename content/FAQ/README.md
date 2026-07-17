@@ -22,7 +22,7 @@ Besides the above, the intention of the Atari Wiki FAQ is to provide the reader 
 - [create a WAV file or FLAC file](https://atariwiki.org/wiki/Wiki.jsp?page=Voice%20and%20Data%20Cassettes)
 - [create_an_atx_image_from_KryoFlux_raw_files](../create_an_atx_image_from_KryoFlux_raw_files/README.md)
 - [Make protected BASIC code visible](../Languages/BASIC/Atari_BASIC/Articles/Make_Protected_BASIC_Code_Visible/README.md)
-- [check_and_compare_files_with_a_Mac_in_the_Terminal_app](../check_and_compare_files_with_a_Mac_in_the_Terminal_app/README.md)
+- [check_and_compare_files_with_a_Mac_in_the_Terminal_app](../General/Check_and_compare_files_with_a_Mac_in_the_Terminal_app/README.md)
 - [Combine 2 files into 1](../General/Combine_2_files_into_1/README.md)
 - [use_a_reliable_template_for_an_Abbuc_presentation](../use_a_reliable_template_for_an_Abbuc_presentation/README.md)
 - [Pack and unpack in 7z format with a Mac](../General/Pack_and_unpack_in_7z_format_with_a_Mac/README.md)

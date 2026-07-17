@@ -27,7 +27,7 @@ Development continues; [Altirra_Basic](Altirra_BASIC/README.md), [Basic++](../Ba
 - [BASICODE](../../BASICODE/README.md)
 - [Altirra_Basic](Altirra_BASIC/README.md)
 - [U-Basic](U-BASIC/README.md)
-- [CTH-FastBasic](../../CTH-FastBasic/README.md)
+- [CTH-FastBasic](Atari_BASIC/CTH-FastBasic/README.md)
 - [Advan BASIC](Advan_BASIC/README.md)
 - [BASIC++](BASIC_plus_plus/README.md)
 - [FastBasic](FastBASIC/README.md)

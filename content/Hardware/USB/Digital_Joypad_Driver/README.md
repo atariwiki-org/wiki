@@ -17,7 +17,7 @@ Load driver and use Stick(0) and Strig(0) as normal.
 
 ### Related Pages
 
-- [Boulder Dash 1 Patch](../../../AtariJoypadBouderDashPatch/README.md)
+- [Boulder Dash 1 Patch](../AtariJoypadBouderDashPatch/README.md)
 
 ```
 01000          .LI OFF

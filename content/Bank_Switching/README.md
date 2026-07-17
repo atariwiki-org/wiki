@@ -1,6 +1,3 @@
----
-title: Bank Switching
----
 # Bank Switching (Bankumschaltung)
 Bank Switching bzw. Bankumschaltung und Adressspeicherumschaltung (ASU) sind synonyme Begriffe für die Erweiterung des Computerspeichers eines Computers (RAM oder ROM) über seine natürlichen Adressierungsräume hinaus durch das durch Software gesteuerte, aber in Hardware umgesetzte Umschalten einzelner Speicherbereiche.
 

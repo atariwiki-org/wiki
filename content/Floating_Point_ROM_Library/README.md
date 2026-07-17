@@ -1,6 +1,3 @@
----
-title: Floating Point ROM Library
----
 # Floating Point ROM Library
 
 General Information

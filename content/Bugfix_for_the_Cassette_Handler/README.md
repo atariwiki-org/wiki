@@ -1,7 +1,4 @@
----
-title: Bugfix for the Cassette Handler
----
-
+# Bugfix for the Cassette Handler
 
 Fixes bugs in tape handler (except when in DOS menu-- but you can't use C: there --DOS checks for that)
 
@@ -9,7 +6,7 @@ Thoms Newton, 1/23/1983
 
 Feel free to give copies to any person or club
 
-The program uses the INIT vector, so you should be able to append about anything else to it--like the RS-232 driver patch.
+The program uses the INIT vector, so you should be able to append about anything else to it --like the RS-232 driver patch.
 
 ```
 1000 REM **************************

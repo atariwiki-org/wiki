@@ -160,7 +160,7 @@ Thank you Alfred
 - [Butterfly Demo](../Examples/Butterfly_Demo/README.md)
 - [C Style Strings](../Articles/C_Style_Strings/README.md)
 - [COM File Segment Dump](../Examples/COM_File_Segment_Dump/README.md)
-- [Catch_and_Throw_Error_Handling](../../../Catch_and_Throw_Error_Handling/README.md) ACS
+- [Catch_and_Throw_Error_Handling](../Examples/Catch_and_Throw_Error_Handling/README.md) ACS
 - [Catepill](../../../People/Carsten_Strotmann/Catepill/README.md) unfinished Game with Level editor in ACTION!
 - [Compile_to_Disk](../Articles/Compile_to_Disk/README.md) ACS
 - [DLI_in_ACTION!](../DLI_in_ACTION!/README.md)
@@ -171,8 +171,8 @@ Thank you Alfred
 - [Displaylist_in_ACTION!](../Displaylist_in_ACTION!/README.md)
 - [END_Procedure](../../../END_Procedure/README.md) - Call procedure to leave an Action Program
 - [ERROR](../Examples/ERROR/README.md) (Converts SpartaDOS, BeWeDOS and RealDOS error # to readable text)
-- [Fast_Graphics_15_Routines](../../../Fast_Graphics_15_Routines/README.md)
-- [Fast_Graphics_8_Routines](../../../Fast_Graphics_8_Routines/README.md)
+- [Fast Graphics 15 Routines](../Examples/Fast_Graphics_15_Routines/README.md)
+- [Fast Graphics 8 Routines](../Examples/Fast_Graphics_8_Routines/README.md)
 - [File_Compare](../../../File_Compare/README.md)
 - [File_IO_Routines](../../../File_IO_Routines/README.md)
 - [File_Select_Box](../../../File_Select_Box/README.md)

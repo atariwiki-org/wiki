@@ -42,14 +42,14 @@
 - [CompyShop_Speedy_Upgrades](../CompyShop_Speedy_Upgrades/README.md)
 - [Turbo1050_Upgrades](../Turbo1050_Upgrades/README.md)
 - [XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
-- [Floppy_2000](Disk_Drives/Floppy_2000/README.md)
-- [HDI_Interface](Disk_Drives/HDI_Interface/README.md) (aka Floppy 3000)
+- [Floppy 2000](Disk_Drives/Floppy_2000/README.md)
+- [High-Density Disk Interface (HDI)](Disk_Drives/HDI_Interface/README.md) (aka Floppy 3000)
 - [Indus GT DD Floppy Drive](../Companies/Indus_Systems/Indus_GT/README.md)
 ** [Indus_GT_Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md) 
 ** [Indus_GT_Field_Service_Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md) 
 ** [Indus_GT_Firmware_ROM_Source](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
 - [ASTRA 2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
-- [Percom AT-88](Disk_Drives/Percom_AT-88/README.md)
+- [Percom AT-88](../Companies/Percom/Percom_AT-88/README.md)
 ### Upgrades
 
 ## Interfaces
@@ -78,7 +78,7 @@
 ## Tape Drives
 - [ATARI_410](../ATARI_410/README.md)
 - [ATARI_1010](../ATARI_1010/README.md)
-- [Bugfix_for_the_Cassette_Handler](../Bugfix_for_the_Cassette_Handler/README.md)
+- [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
 - [ATARI_XC11](../ATARI_XC11/README.md)
 - [ATARI_XC12_-_XCA12_-_CA12](../ATARI_XC12_-_XCA12_-_CA12/README.md)
 - [ATARI_XL12](../ATARI_XL12/README.md)

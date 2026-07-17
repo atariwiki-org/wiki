@@ -5,9 +5,9 @@ title: Operating System
 
 [Versions](../OS_Versions/README.md) 
 
-[Differences between Versions](../DiffOldOs2XL/README.md) 
+[Differences between Versions](../OS/Atari_OS/DiffOldOs2XL/README.md) 
 
-[Atari 800 ROM OS Source Listing](../Atari_800_ROM_OS_Source_Listing/README.md) 
+[Atari 800 OS Source Listing](../OS/Atari_OS/Atari_800_ROM_OS_Source_Listing/README.md) 
 
 [Atari Personal Computer System-Operating System-User's Manual-January 1982-CO16555](http://data.atariwiki.org/DOC/Atari_Personal_Computer_System-Operating_System-User_s_Manual-January_1982-CO16555.pdf) ; size: 67 MB, 280 pages
 
@@ -15,7 +15,7 @@ title: Operating System
 
 [FAST FLOATING POINT source code for the ATARI](../FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md) 
 
-[Atari_800-XL-XE_System_Label_Listing](../Atari_800-XL-XE_System_Label_Listing/README.md) 
+[ATARI 800 EQUATE LISTING](../OS/Atari_OS/Atari_800-XL-XE_System_Label_Listing/README.md) 
 
 [Atari System Labels from OSS](../Atari_System_Labels_from_OSS/README.md) 
 

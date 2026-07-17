@@ -19,7 +19,7 @@
 
 # Generic Information
 - [Atari ATASCII Table](../Atari_ATASCII_Table/README.md)
-- [Differences Atari 400/800 - 1200XL - 600/800XL](../DiffOldOs2XL/README.md)
+- [Differences Atari 400/800 - 1200XL - 600/800XL](../OS/Atari_OS/DiffOldOs2XL/README.md)
 - [Ironman_Atari](../Ironman_Atari/README.md) A compilation of advanced Atari 8-bit programming techniques
 - [Mode, Setcolor, Color Table](../Languages/BASIC/Atari_BASIC/Mode_Setcolor_Color_Table/README.md)
 - [Table_of_Modes_and_Screen_Format](../Table_of_Modes_and_Screen_Format/README.md)
@@ -52,7 +52,7 @@
 ### Third Party Disk Drives
 - [ASTRA 2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
 - [Indus GT DD Floppy Drive](../Companies/Indus_Systems/Indus_GT/README.md)
-- [Percom AT-88](../Hardware/Disk_Drives/Percom_AT-88/README.md)
+- [Percom AT-88](../Companies/Percom/Percom_AT-88/README.md)
 - [Rana_1000](../Rana_1000/README.md)
 - [Trak_AT-D2](../Trak_AT-D2/README.md)
 
@@ -64,14 +64,14 @@
 - [Custom_Disk_Format_Routine](../Companies/CompyShop/Speedy_1050_Upgrades/Custom_Disk_Format_Routine/README.md) (Atari 1050 with Compy Shop Speedy)
 - [Indus_GT_Field_Service_Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md)* [Indus_GT_Firmware_ROM_Source](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
 - [Indus_GT_Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md)
-- [Floppy_2000](../Hardware/Disk_Drives/Floppy_2000/README.md)
-- [HDI_Interface](../Hardware/Disk_Drives/HDI_Interface/README.md) (aka Floppy 3000)
+- [Floppy 2000](../Hardware/Disk_Drives/Floppy_2000/README.md)
+- [High-Density Disk Interface (HDI)](../Hardware/Disk_Drives/HDI_Interface/README.md) (aka Floppy 3000)
 
 
 ## Tape Recorders
 - [ATARI_410](../ATARI_410/README.md)
 - [ATARI_1010](../ATARI_1010/README.md)
-- [Bugfix_for_the_Cassette_Handler](../Bugfix_for_the_Cassette_Handler/README.md)
+- [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
 - [ATARI_XC11](../ATARI_XC11/README.md)
 - [ATARI_XC12_-_XCA12_-_CA12](../ATARI_XC12_-_XCA12_-_CA12/README.md)
 - [ATARI_XL12](../ATARI_XL12/README.md)
@@ -105,7 +105,7 @@
 
 ## Video Upgrades
 - [XEP80](../XEP80/README.md)
-- [Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface](../Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface/README.md)
+- [Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface/README.md)
 
 ## Controllers
 - [Atari_CX70_Light_Pen](../Companies/Atari/Atari_CX70_Light_Pen/README.md)
@@ -129,7 +129,7 @@
 ## Others
 - [ARGS_ISA_PC_Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/README.md)
 - [ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION](../Companies/Atari/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
-- [Bank_Switching](../Bank_Switching/README.md)
+- [Bank Switching (Bankumschaltung)](../Bank_Switching/README.md)
 - [SDrive-MAX](../SDrive-MAX/README.md)
 - [The MicroUSB Project](../Hardware/USB/MicroUSB/README.md)
 
@@ -174,7 +174,7 @@
 - [Rarity 10 and above up to impossible](../Rarity_10/README.md)
 
 # Related to Atari
-- [Atari_True_Type_Font_for_PC_and_Mac](../Atari_True_Type_Font_for_PC_and_Mac/README.md)
+- [Atari_True_Type_Font_for_PC_and_Mac](../General/Atari_True_Type_Font_for_PC_and_Mac/README.md)
 
 # Software
 
@@ -202,9 +202,9 @@
 - [Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md)
 - [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md)
 - [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](../Companies/Atari/Enhancements_to_Graph_It/README.md)
-- [Family_Budgets](../Family_Budgets/README.md)
-- [Family_Cash_Flow](../Family_Cash_Flow/README.md)
-- [Family_Finances](../Family_Finances/README.md)
+- [Family_Budgets](../Companies/Atari/Family_Budgets/README.md)
+- [Family_Cash_Flow](../Companies/Atari/Family_Cash_Flow/README.md)
+- [Family_Finances](../Companies/Atari/Family_Finances/README.md)
 - [Home_Inventory](../Home_Inventory/README.md)
 - [RPN Calculator](../RPN_Calculator/README.md)
 
@@ -215,7 +215,7 @@
 ### Diagnostics
 - [Atari_400-800_Stand_Alone_System_Test](../Companies/Atari/Atari_400-800_Stand_Alone_System_Test/README.md)
 - [Super_SALT](../Super_SALT/README.md)
-- [ATARI_Diagnostic_Test_Tape](../ATARI_Diagnostic_Test_Tape/README.md)
+- [ATARI Diagnostic Test Tape (FD100008)](../Companies/Atari/Atari_Diagnostic_Test_Tape/README.md)
 - [AUSTRO.RECOVER](../Companies/AUSTRO.COM/AUSTRO.RECOVER/README.md)
 
 ### Education
@@ -406,7 +406,7 @@
 - [Atari's Programmierhilfen-Diskette Nr. 2](../Companies/Atari/Atari_Germany/Ataris_Programmierhilfen-Diskette_Nr.2/README.md)
 - [Kurs 1: Programmieren leicht gemacht](https://atariwiki.org/wiki/Wiki.jsp?page=Programmieren%20leicht%20gemacht%20TXG4110)
 - [Kurs 2: Noch mehr BASIC](https://atariwiki.org/wiki/Wiki.jsp?page=Noch%20mehr%20BASIC%20RXG%2055007)
-- [Kurs 3: BASIC für Fortgeschrittene](../BASIC_fuer_Fortgeschrittene/README.md)
+- [BASIC für Fortgeschrittene](../Companies/Atari/Atari_Germany/BASIC_fuer_Fortgeschrittene/README.md)
 - [Super_Sort](../Companies/Atari/Atari_Germany/Super_Sort/README.md)
 
 #### Programmiersprachen
@@ -512,7 +512,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Galgje (Cassette: TXN 4108)](../Companies/Atari/Atari_Benelux/Galgje/README.md)
 
 #### Entertainment
-- [Blackjack (Cassette: TXN 4105)](../Blackjack/README.md)
+- [Blackjack (Cassette: TXN 4105)](../Companies/Atari/Atari_Benelux/Blackjack/README.md)
 
 #### Demo
 - [Atari Demo disk (DXN 411)](../Companies/Atari/Atari_Demo_Disk/README.md)
@@ -616,7 +616,7 @@ Atari Basic Course: An Invitation to Programming 1-3:
 Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie fertig
 - [Programmieren leicht gemacht (TXG4110)](../Companies/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)
 - [Kurs 2: Noch mehr BASIC-Lernen Sie BASIC mit Dagmar Berghoff-TXG 55007](../Noch_mehr_BASIC_TXG_55007/README.md)
-- [Kurs 3: BASIC für Fortgeschrittene-Lernen Sie BASIC mit Dagmar Berghoff](../BASIC_fuer_Fortgeschrittene/README.md)
+- [BASIC für Fortgeschrittene](../Companies/Atari/Atari_Germany/BASIC_fuer_Fortgeschrittene/README.md)
 
 - [Conversational_GERMAN_CX4118](../Companies/Atari/Conversational_GERMAN_CX4118/README.md)
 - [Conversational FRENCH (CX4119)](../Companies/Atari/Conversational_FRENCH_CX4119/README.md)
@@ -722,7 +722,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 ### Operating Systems (OS)
 - Atari 400-800 Operating System Source Listing Rev. A - C017893 (1981) ; [pdf-file](https://data.atariwiki.org/DOC/Atari_400-800_OS_A_Source_Listing-C017893_%281981%29.pdf)
 - [Source listings for all Atari OS revisions](attachments/a8-os-rom-2018-09-23.7z) ; size: 205 KB ; [Source](http://atariage.com/forums/topic/201133-os-source-code-all-revisions/?p=4118825)
-- [Atari 400-800 Operating System Source Listing Rev. B (1982)](../Atari_800_ROM_OS_Source_Listing/README.md) ; [ASM-file](attachments/Atari_800_OS_Rev.B.asm)
+- [Atari 800 OS Source Listing](../OS/Atari_OS/Atari_800_ROM_OS_Source_Listing/README.md) ; [ASM-file](attachments/Atari_800_OS_Rev.B.asm)
 - Atari XL Operating System Source Listing ; [Rev. 2 ASM-file](attachments/Atari_XL_OS_Rev.2.asm) ; [Rev. 11 ASM-file](attachments/Atari_XL_OS_Rev.11.asm)
 - Carol Shaw's more accurate Colleen Floating Point Routines - ultimately not used in the OS: [asm file](attachments/Colleen_Floating_Point_Routines_Source_Code.asm), [text file](attachments/Colleen_Floating_Point_Routines.txt), [original document](https://archive.org/details/ColleenFloatingPointRoutines); see [Atari_Calculator](../Companies/Atari/Atari_Calculator/README.md) for more info
 - [FAST FLOATING POINT source code for the ATARI from Newell Industries & Charles W. Marslett](../FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md)

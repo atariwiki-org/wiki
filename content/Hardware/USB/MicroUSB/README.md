@@ -17,7 +17,7 @@ Files for the MicroUSB Project can also be downloaded from SourceForge -> [http:
 
 - [Base HID Driver](../../../BaseHIDDriver/README.md)
 - [USB Device Driver Development Kit Disk](https://sourceforge.net/project/showfiles.php?group_id=111428&package_id=120826)
-- [Atari USB Enduser Driver Disk](../../../AtariEnduserDriverDisk/README.md)
+- [Atari USB Enduser Driver Disk](../AtariEnduserDriverDisk/README.md)
 - [Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)
 - [Digital Joypad Driver](../Digital_Joypad_Driver/README.md)
 - [Logitech Rumblepad 2 USB Driver](../JoypadRumblePadTwoUsb/README.md)

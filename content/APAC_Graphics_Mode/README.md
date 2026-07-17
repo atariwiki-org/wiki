@@ -1,6 +1,3 @@
----
-title: APAC Graphics Mode
----
 ### APAC Graphics Mode
 
 General Information
