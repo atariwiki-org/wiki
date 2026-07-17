@@ -25,7 +25,7 @@ Copyright (C) 1986 E. Reuss & Compy-Shop
 - [16bit increment and decrement](../../../Languages/Assembler/Examples/16bit_increment_and_decrement/README.md)
 - [Atari_CIO_Routines](../../../Atari_CIO_Routines/README.md)
 - [List_Directory_Example](../../../List_Directory_Example/README.md)
-- [Disable_BREAK_key](../../../Disable_BREAK_key/README.md)
+- [Disable BREAK Key (for BASIC USR call)](../../../Disable_BREAK_key/README.md)
 - [Simple_XOR_encoding](../../../Simple_XOR_encoding/README.md)
 - [Bitwise AND, OR, XOR and NOT for BASIC (USR Call)](../../../Bitwise_AND_OR_XOR_and_NOT/README.md)
 - [HDISource](../../../HDISource/README.md) - High Density Interface (PC FLoppy Interface with Speedy like OS)

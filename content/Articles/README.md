@@ -50,7 +50,7 @@
 - [Atari_XF551](../Companies/Atari/Atari_XF551/README.md)
 
 ### Third Party Disk Drives
-- [ASTRA_2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
+- [ASTRA 2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
 - [Indus_GT](../Indus_GT/README.md)
 - [Percom AT-88](../Hardware/Disk_Drives/Percom_AT-88/README.md)
 - [Rana_1000](../Rana_1000/README.md)
@@ -219,8 +219,8 @@
 - [AUSTRO.RECOVER](../Companies/AUSTRO.COM/AUSTRO.RECOVER/README.md)
 
 ### Education
-- [Atari_Educational_System-programming_cassette_streams](../Companies/Atari/Atari_Educational_System/Atari_Educational_System-Programming_Cassette_Streams/README.md)
-- [Atari_Educational_System_Lesson_Cassettes](../Companies/Atari/Atari_Educational_System/Atari_Educational_System_Lesson_Cassettes/README.md)
+- [Atari Educational System - Programming Cassette Streams](../Companies/Atari/Atari_Educational_System/Atari_Educational_System-Programming_Cassette_Streams/README.md)
+- [Atari Educational System Lesson Cassettes](../Companies/Atari/Atari_Educational_System/Atari_Educational_System_Lesson_Cassettes/README.md)
 - [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)
 - [An Invitation to Programming 1 CX4101](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%201%20CX4101)
 - [An Invitation to Programming 2 CX4106](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%202%20CX4106)
@@ -434,7 +434,7 @@
 
 - Spielend lernen mit Atari-Programmen
 ##[Aufgepasst-Streit der Käfer](../Companies/Atari/Aufgepasst-Streit_der_Kaefer/README.md) 
-##[Beeil_Dich-Verdreht](../Companies/Atari/Beeil_Dich-Verdreht/README.md) 
+##[Beeil Dich-Verdreht (TXG 9501)](../Companies/Atari/Beeil_Dich-Verdreht/README.md) 
 ##[Bonbonglas-Chaos](../Bonbonglas-Chaos/README.md) 
 ##[Golf-Balkenrechnen](../Golf-Balkenrechnen/README.md) 
 ##[Schluck / Richtungspfeile TXG 9502](../Schluck-Richtungspfeile/README.md) 
@@ -562,7 +562,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Atari_DOS_4](../DOS/Atari_DOS_4/README.md)
 - [Atari_DOS_XE](../DOS/Atari_DOS_XE/README.md)
 - [AUSTRO.DOS](../Companies/AUSTRO.COM/AUSTRO.DOS/README.md)
-- [BEWE_DOS_1.30_Manual](../Companies/BEWESOFT/BEWE_DOS_1.30_Manual/README.md)
+- [BEWE DOS 1.30 Manual](../Companies/BEWESOFT/BEWE_DOS_1.30_Manual/README.md)
 - [Bibo-DOS](../Companies/CompyShop/BIBO-DOS/README.md)
 - [LiteDOS](http://www.mr-atari.com/Mr.Atari/LiteDOS/)
 - [INDUS_CPM_2.2](../INDUS_CPM_2.2/README.md)
@@ -592,14 +592,14 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [DOS_Command_Processor](../DOS_Command_Processor/README.md)
 - [Der_XIO_Befehl_fuer_Dateioperationen](../Der_XIO_Befehl_fuer_Dateioperationen/README.md)
 - [Der_XIO_Befehl_fuer_Grafikoperationen](../Der_XIO_Befehl_fuer_Grafikoperationen/README.md)
-- Other [DOS_topics](../DOS_topics/README.md)
+- Other [DOS-Topics](../DOS_topics/README.md)
 - [RTime8_Manual](../RTime8_Manual/README.md)
 - [XIO Command Codes for the DOS Handler (D:)](../XIO_Command_Codes_DOS_Handler/README.md)
 
 ## Games
 
 ## [Voice_and_Data_Cassettes](../Voice_and_Data_Cassettes/README.md)
-- [Atari_Educational_System_Lesson_Cassettes](../Companies/Atari/Atari_Educational_System/Atari_Educational_System_Lesson_Cassettes/README.md)
+- [Atari Educational System Lesson Cassettes](../Companies/Atari/Atari_Educational_System/Atari_Educational_System_Lesson_Cassettes/README.md)
 - [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)
 
 Atari Basic Course: An Invitation to Programming 1-3:
@@ -657,7 +657,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 #[Preppie! II](attachments/Preppie_II.zip) ; 2015 from Russ Wetmore
 #[Blue Max](../Companies/Synapse_Software/Blue_Max/README.md) ; 2016 from Bob Polin
 #[Pong](../Pong/README.md) ; 1986 from Gary S. Domrow
-#[Checkers_Display](../Companies/Atari/Checkers_Display/README.md) ; 2017 from Carol Shaw
+#[ATARI 800 CHECKERS DISPLAY BY C. SHAW 3/31/80](../Companies/Atari/Checkers_Display/README.md) ; 2017 from Carol Shaw
 #[PAC-MAN](../PAC-MAN/README.md) 
 
 ### Programming Languages
@@ -701,7 +701,7 @@ Pilot:
 #[Atari Pilot II or Super Pilot](attachments/p2mads.txt) 
 Quick:
 Others:
-#[Atari_Educational_System_Master_Cartridge](../Companies/Atari/Atari_Educational_System/Atari_Educational_System_Master_Cartridge/README.md) 
+#[Atari Educational System Master Cartridge](../Companies/Atari/Atari_Educational_System/Atari_Educational_System_Master_Cartridge/README.md) 
 
 ### Operating Systems (OS)
 #Atari 400-800 Operating System Source Listing Rev. A - C017893 (1981) ; [pdf-file](https://data.atariwiki.org/DOC/Atari_400-800_OS_A_Source_Listing-C017893_%281981%29.pdf) 
@@ -711,4 +711,4 @@ Others:
 #Carol Shaw's more accurate Colleen Floating Point Routines - ultimately not used in the OS: [asm file](attachments/Colleen_Floating_Point_Routines_Source_Code.asm), [text file](attachments/Colleen_Floating_Point_Routines.txt), [original document](https://archive.org/details/ColleenFloatingPointRoutines); see [Atari_Calculator](../Companies/Atari/Atari_Calculator/README.md) for more info
 #[FAST FLOATING POINT source code for the ATARI from Newell Industries & Charles W. Marslett](../FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md) 
 #[Atari OS Rev. A & B (1979) & Rev. 2 (1983) (Atari) (NTSC & PAL) (400-800-XL-XE) with FAST FLOATING POINT from above](attachments/Atari_OS_Rev._A_and_B_1979_Rev_2_1983_Atari_NTSC_and_PAL_400-800-XL-XE_with_FastFP.zip) 
-#[Backus–Naur form](../Languages/BASIC/Atari_BASIC/Backus-Naur_form/README.md) 
+#[Backus–Naur Form (BNF)](../Languages/BASIC/Atari_BASIC/Backus-Naur_form/README.md) 

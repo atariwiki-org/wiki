@@ -1,7 +1,4 @@
----
-title: Interesting USB Devices
----
-# Some nice USB Devices for small Computers
+# Interesting USB Devices for Small Computers
 
 ## USB VGA Graphic Card
 

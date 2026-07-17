@@ -1,6 +1,3 @@
----
-title: Manifesto
----
 # Atari Wiki Manifesto
 
 This manifesto explains some ideas behind the AtariWiki.

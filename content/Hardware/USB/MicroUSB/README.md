@@ -19,13 +19,13 @@ Files for the MicroUSB Project can also be downloaded from SourceForge -> [http:
 - [USB Device Driver Development Kit Disk](https://sourceforge.net/project/showfiles.php?group_id=111428&package_id=120826)
 - [Atari USB Enduser Driver Disk](../../../AtariEnduserDriverDisk/README.md)
 - [Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)
-- [Digital Joypad Driver](../../../Digital_Joypad_Driver/README.md)
+- [Digital Joypad Driver](../../../USB_Cartridge/Digital_Joypad_Driver/README.md)
 - [Logitech Rumblepad 2 USB Driver](../../../JoypadRumblePadTwoUsb/README.md)
 - [Analog Joystick Driver](../../../AtariAnalogJoystickDriver/README.md)
 - [Thrustmaster Steering Wheel Driver](../USB_Steering_Wheel_Driver/README.md) ( [Pictures of Pole-Position USB Version](../ProjUSB/ProjUSBCartAtariWheelPolePosPics/README.md) )
 - [Logitech GP Steering Wheel Driver](../Logitech_Formula_GP_USB_Wheel_Driver/README.md)
 - [Logitech VP Steering Wheel Driver](../Logitech_Formula_VF_USB_Wheel_Driver/README.md)
-- [Device compatibility matrix](../../../DeviceMatrix/README.md)
+- [Device compatibility matrix](../../../USB_Cartridge/DeviceMatrix/README.md)
 
 ## Documentation
 

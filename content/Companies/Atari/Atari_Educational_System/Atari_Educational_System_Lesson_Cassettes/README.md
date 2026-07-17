@@ -47,19 +47,19 @@ AtariWiki highly recommends the findings of tschak909 from AtariAge. Please take
 
 [Supervisory Skills CX6003](../../../../Supervisory_Skills_CX6003/README.md) ; donated by someone who would not like to be mentioned.
 [World_History_Western_CX6004](../../../../World_History_Western_CX6004/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
-[Basic Sociology CX6005](../../Basic_Sociology_CX6005/README.md) ; thank you Bill Lange for providing this treasure to the Atari community. We really owe you very much!
+[Basic Sociology (CX6005)](../../Basic_Sociology_CX6005/README.md) ; thank you Bill Lange for providing this treasure to the Atari community. We really owe you very much!
 [Counseling_Procedures_CX6006](../../Counseling_Procedures_CX6006/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
 [Principles of Accounting - CX6007](../../../../Principles_of_Accounting_CX6007/README.md) ; from Atarimania, thank you so much!
 [Physics CX6008](../../Physics_CX6008/README.md) ; from Atarimania, thank you so much!
 [Great_Classics_CX6009](../../../../Great_Classics_CX6009/README.md) ; from Kay Savetz; Kay, thank you so much to bring this artifact from the dark to the light! We really appreciate your help!
 [Business Communications (CX6010)](../../Business_Communications_CX6010/README.md) ; donated by someone who would not like to be mentioned. ; Cassette D is from bob1200xl from AtariAge and the recording was done by Allan Bushman. The community is so lucky you brought us the last piece of the puzzle. Thank you so much. You will never be forgotten.
-[Basic_Psychology_CX6011](../../Basic_Psychology_CX6011/README.md) ; thank you Bill Lange and Allan Bushman for providing this treasure to the Atari community. We really owe you very much!
+[Basic Psychology (CX6011)](../../Basic_Psychology_CX6011/README.md) ; thank you Bill Lange and Allan Bushman for providing this treasure to the Atari community. We really owe you very much!
 [Effective_Writing_CX6012](../../../../Effective_Writing_CX6012/README.md) ; donated by by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
 [Auto Mechanics CX6013](../../../../Auto_Mechanics_KA/README.md) ; never shipped according to Michael Current from the Atari FAQ. But Kay would not be Kay, if he can't find even a solution for that! Even more, all(!) [Dorsett Educational System Lesson Cassettes](../../../Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md) are meanwhile digitized and saved for generations to come. Thanks to Michael Current, Kay Savetz and Thomas Cherryhomes, we can't thank you enough for restoring the 1st generation of e-learning.
 [Principles of Economics (CX6014)](../../../../Principles_of_Economics_CX6014/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
 [Spelling CX6015](../../../../Spelling_CX6015/README.md) ; donated by someone who would not like to be mentioned.
-[Basic_Electricity_CX6016](../../Basic_Electricity_CX6016/README.md) ; donated by Allan Bushman. Allan, thousand thanks from the Atari community for your outstanding help! :-)
-[Basic_Algebra_CX6017](../../Basic_Algebra_CX6017/README.md) ; donated by someone who would not like to be mentioned.
+[Basic Electricity (CX6016)](../../Basic_Electricity_CX6016/README.md) ; donated by Allan Bushman. Allan, thousand thanks from the Atari community for your outstanding help! :-)
+[Basic Algebra (CX6017)](../../Basic_Algebra_CX6017/README.md) ; donated by someone who would not like to be mentioned.
 
 Lloyd G. Dorsett, the founder, has proven, that the Atari can do much more than just playing games. He was so much ahead of his time. Indeed, with his work, we face the 1st generation of e-learning with over 1,000 (!) programs. He made 64 courses with 8 hours duration. Atari just released 16 courses, but had an option for much more! If someone has the source code of the cartridge and can provide it to us, so we can see, how the data was read in from the cassettes, we would be very, very lucky. :-) Further, if someone has the missing 48 courses or even just informations about them, we would be very happy, too. Please see an advertisement from Popular Science, January 1983, page 99 (thank you so much tschak909 from AtariAge for giving us the information):
 

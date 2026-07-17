@@ -39,4 +39,4 @@ In der Regel besteht das DOS aus zwei Teilen:
 - MicroSpartaDos (MSDOS) by Pawel 'pirx' Kalinowski
 - [3_Sector_read_only_DOS](../3_Sector_read_only_DOS/README.md) by Carsten Strotmann
 ---
-see also [DOS_topics](../DOS_topics/README.md) 
+see also [DOS-Topics](../DOS_topics/README.md) 

@@ -5,6 +5,6 @@
 ---
 More Articles on this topic:
 
-## [DOS-Artikel](../ArticlesDOS/README.md) 
+## [DOS-Artikel](../ArticlesDOS/README.md)
 
 see also [topic_list](../topic_list/README.md) 
