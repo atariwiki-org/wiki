@@ -2,7 +2,7 @@
 title: Haushalts-Buch
 ---
 # Atari Haushalts-Buch (C) 1981 Jerry Falkenhan, Atari Elektronik Vertriebsgesellschaft GmbH
-Das Atari Haushalts-Buch ist die deutsche Version von Family Cash Flow (APX-20080) bzw. Family Finances I (Cash_Flow) aus [Family_Finances](../../../Family_Finances/README.md).
+Das Atari Haushalts-Buch ist die deutsche Version von Family Cash Flow (APX-20080) bzw. Family Finances I (Cash_Flow) aus [Family_Finances](../../../../Family_Finances/README.md).
 ## ATR-Image:
 - [Atari  Haushalts-Buch](attachments/Haushaltsbuch_Basic.atr) ; Atari Haushalts-Buch von 1981, Basic-Modul und 32 KB RAM sind erforderlich
 ## Handbuch:

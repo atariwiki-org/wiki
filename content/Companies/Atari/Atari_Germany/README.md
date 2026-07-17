@@ -1,1 +1,4 @@
-# Atari Germany
+# Atari Elektronik Vertriebsgesellschaft GmbH
+
+Germany
+

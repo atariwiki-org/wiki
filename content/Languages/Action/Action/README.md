@@ -157,7 +157,7 @@ Thank you Alfred
 - [Backtrack_in_ACTION!](../Backtrack_in_ACTION!/README.md)
 - [Big_Symbol_Table_for_ACTION!](../Big_Symbol_Table_for_ACTION!/README.md) ACS
 - [Binary_File_Load_in_ACTION!](../Binary_File_Load_in_ACTION!/README.md)
-- [Butterfly_Demo](../Examples/Butterfly_Demo/README.md)
+- [Butterfly Demo](../Examples/Butterfly_Demo/README.md)
 - [C Style Strings](../Articles/C_Style_Strings/README.md)
 - [COM File Segment Dump](../Examples/COM_File_Segment_Dump/README.md)
 - [Catch_and_Throw_Error_Handling](../../../Catch_and_Throw_Error_Handling/README.md) ACS
@@ -178,8 +178,8 @@ Thank you Alfred
 - [File_Select_Box](../../../File_Select_Box/README.md)
 - [File_Select_Shell](../../../File_Select_Shell/README.md)
 - [Game_AMAZING_in_ACTION!](../Game_AMAZING_in_ACTION!/README.md)
-- [Grep_for_Sparta_DOS](../../../Grep_for_Sparta_DOS/README.md)
-- [HexDump](../Examples/HexDump/README.md) - Dump - Print the contents of binary files in hexadecimal and ATASCII
+- [Grep_for_Sparta_DOS](../Examples/Grep_for_Sparta_DOS/README.md)
+- [Dump - Print the contents of binary files in hexadecimal and ATASCII](../Examples/HexDump/README.md) - Dump - Print the contents of binary files in hexadecimal and ATASCII
 - [Jump_to_DOS_DUP](../Jump_to_DOS_DUP/README.md)
 - [Kermit_in_ACTION!](../Kermit_in_ACTION!/README.md)
 - [Load_APL_Display-List_Files](../Load_APL_Display-List_Files/README.md)
@@ -212,7 +212,7 @@ Thank you Alfred
 - [ACTION_OBJECT_CODE_RELOCATION_PROGRAM](../ACTION_OBJECT_CODE_RELOCATION_PROGRAM/README.md) ; Thank you so much Alfred from AtariAge, we all really appreciate your help here again.
 - [Relocator](../../../Relocator/README.md) for Action; relocates Action code to run independent from the code location
 - [acsterm.txt](attachments/acsterm.txt) ; ACSTERM is a terminal emulator for the Atari 800, 800XL, 1200XL and 130XE
-- [How_to_find_the_revision_number_of_ACTION](../How_to_find_the_revision_number_of_ACTION/README.md)
+- [How to find the revision number of ACTION!](../How_to_find_the_revision_number_of_ACTION/README.md)
 
 ### Missing Tools: Graphics Utilities Library and Shape Editor
 
@@ -284,5 +284,5 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 
 ### CK Computer Kontakt
 ||Title||Issue||Language||Comment
-|[Musik_in_ACTION](../Musik_in_ACTION/README.md) |#10/85|ge| Tutorial
+|[Musik_in_ACTION](../Examples/Musik_in_ACTION/README.md) |#10/85|ge| Tutorial
 |[ACTION!_noch_schneller](../ACTION!_noch_schneller/README.md) |#6-7/86|ge| Tutorial

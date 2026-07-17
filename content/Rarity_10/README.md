@@ -33,7 +33,7 @@ we find:
 Page 8 of: 'All about Cassette Tapes from 1979'
 
 ---
-•) From [The Atari Accountant](../The_Atari_Accountant/README.md) just:
+•) From [The Atari Accountant](../Companies/Atari/The_Atari_Accountant/README.md) just:
 - [CX402: Accounts Receivable System (4 SSDD Diskettes)](https://atariwiki.org/wiki/Wiki.jsp?page=The%20Atari%20Accountant%20Series#section-The+Atari+Accountant+Series-CX402AccountsReceivableSystem4SSDDDiskettes)
 - [CX403: Inventory Control System (5 SSDD Diskettes)](https://atariwiki.org/wiki/Wiki.jsp?page=The%20Atari%20Accountant%20Series#section-The+Atari+Accountant+Series-CX403InventoryControlSystem5SSDDDiskettes)
 
@@ -175,7 +175,7 @@ Und als Letztes noch das Modul, welches für den WDR hergestellt worden ist:
 
 ## Images of the lost things
 
-[The Atari Accountant](../The_Atari_Accountant/README.md) 
+[The Atari Accountant](../Companies/Atari/The_Atari_Accountant/README.md) 
 
 [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
 

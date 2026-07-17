@@ -14,8 +14,8 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 
 ## Assemblers for Atari Computers
 - [130XE+ Makroassembler](../130XE__Makroassembler/README.md) (1991)
-- [A65_Assembler](A65_Assembler/README.md) (1984)
-- [AMOEBA](../../AMOEBA/README.md)(198?)
+- [A65 Assembler](A65_Assembler/README.md) (1984)
+- [AMOEBA](../../Companies/Atari/AMOEBA/README.md)(198?)
 - [Alfasm, Turbo-Assembler/16](Alfasm/README.md) (1990)
 - [Atari_Assembler_Editor](../../Companies/Atari/Atari_Assembler_Editor/README.md) (1980)
 - [Atari_Macro_Assembler](../Atari_Macro_Assembler/README.md) (1981)
@@ -23,8 +23,8 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [Atmas_II](../../Companies/Hofacker/Atmas_II/README.md) (1985)
 - [Bug/65 Version 2.0](../../Companies/OSS/BUG65/README.md) (1982)
 - [Bibo Assembler](../../Companies/CompyShop/BIBO_Assembler/README.md) (1986)
-- [DataSoft Datasm/65](../../Companies/DataSoft/DataSoft_Datasm-65/README.md) (1981)
-- [Dunion's Debugging Tool (DDT)](../../DDT/README.md) (1982)
+- [DataSoft Datasm-65 2.0](../../Companies/DataSoft/DataSoft_Datasm-65/README.md) (1981)
+- [Dunion's Debugging Tool (DDT)](../../Companies/OSS/DDT/README.md) (1982)
 - [EASMD](../../EASMD/README.md) (1981)
 - [Edit_6502](../../Edit_6502/README.md) (1981)
 - [Extended Dunion's Debugging Tool (ExDDT)](../../Extended_DDT/README.md) (1985)

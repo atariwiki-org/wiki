@@ -51,7 +51,7 @@
 
 ### Third Party Disk Drives
 - [ASTRA 2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
-- [Indus_GT](../Companies/Indus_Systems/Indus_GT/README.md)
+- [Indus GT DD Floppy Drive](../Companies/Indus_Systems/Indus_GT/README.md)
 - [Percom AT-88](../Hardware/Disk_Drives/Percom_AT-88/README.md)
 - [Rana_1000](../Rana_1000/README.md)
 - [Trak_AT-D2](../Trak_AT-D2/README.md)
@@ -183,8 +183,8 @@
 ### Business
 - [Atari Timewise (DX5047) (Basic)](../Companies/Atari/Atari_Timewise/README.md)
 - [The_Atari_Accountant_Series](../The_Atari_Accountant_Series/README.md)
-- [The Bookkeeper CX414](../The_Bookkeeper/README.md)
-- [The_Home_Filing_Manager](../The_Home_Filing_Manager/README.md)
+- [The Bookkeeper CX414](../Companies/Atari/The_Bookkeeper/README.md)
+- [The_Home_Filing_Manager](../Companies/Atari/The_Home_Filing_Manager/README.md)
 - [Atari Home Accounting System](../Companies/Atari/Atari_Home_Accounting_System/README.md)
 
 ### Calculation & Graphics
@@ -201,7 +201,7 @@
 - [Atari Silent Butler (DX5082)](../Companies/Atari/Atari_Silent_Butler/README.md)
 - [Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md)
 - [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md)
-- [Enhancements_to_Graph_It](../Companies/Atari/Enhancements_to_Graph_It/README.md)
+- [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](../Companies/Atari/Enhancements_to_Graph_It/README.md)
 - [Family_Budgets](../Family_Budgets/README.md)
 - [Family_Cash_Flow](../Family_Cash_Flow/README.md)
 - [Family_Finances](../Family_Finances/README.md)
@@ -235,7 +235,7 @@
 
 ### Games
 - [Caverns of Mars (CX8130)](../Companies/Atari/Caverns_of_Mars_CX8130/README.md)
-- [Computer_Chess_CXL_4009](../Companies/Computer_Chess_CXL_4009/README.md)
+- [Computer_Chess_CXL_4009](../Companies/Atari/Computer_Chess_CXL_4009/README.md)
 - [Galaxian_CXL4024](../Galaxian_CXL4024/README.md)
 
 ### Learning
@@ -284,7 +284,7 @@
 - [Atari Word Processor (CX404) and Atari Word Processor Demonstration Data Kit (CX8128)](../Companies/Atari/Atari_Word_Processor/README.md)
 - [Atari Writer 8036](../Companies/Atari/Atari_Writer/README.md)
 - [Atari Proofreader (AX2033)](../Companies/Atari/Atari_Proofreader/README.md)
-- [Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Schreiber/README.md)
+- [Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Germany/Atari_Schreiber/README.md)
 - [The_Writer's_Tool](../The_Writer's_Tool/README.md)
 - [AUSTRO.TEXT](../Companies/AUSTRO.COM/AUSTRO.TEXT/README.md)
 
@@ -376,14 +376,14 @@
 - [Graph It II](../Graph_It_II/README.md)
 - [Zinsen_und_Tilgung](../Zinsen_und_Tilgung/README.md)
 - [Familien_Finanzen](../Familien_Finanzen/README.md)
-- [Haushalts-Buch](../Companies/Atari/Haushalts-Buch/README.md)
-- [Haushalts-Planung](../Companies/Atari/Haushalts-Planung/README.md)
+- [Haushalts-Buch](../Companies/Atari/Atari_Germany/Haushalts-Buch/README.md)
+- [Haushalts-Planung](../Companies/Atari/Atari_Germany/Haushalts-Planung/README.md)
 
 #### Datenbanken
-- [Artikelverwaltung](../Companies/Atari/Artikelverwaltung/README.md)
-- [Atari Bundesligatabellen (DXG 55005)](../Companies/Atari/Bundesligatabelle/README.md)
+- [Artikelverwaltung](../Companies/Atari/Atari_Germany/Artikelverwaltung/README.md)
+- [Atari Bundesligatabellen (DXG 55005)](../Companies/Atari/Atari_Germany/Bundesligatabelle/README.md)
 - [Diskettenbibliothek](../Diskettenbibliothek/README.md)
-- [Karteikartenprogramm (DXG_415)](../Companies/Atari/Karteikartenprogramm/README.md)
+- [Karteikartenprogramm (DXG_415)](../Companies/Atari/Atari_Germany/Karteikartenprogramm/README.md)
 - [Vereinsverwaltung](../Vereinsverwaltung/README.md)
 - [Sport-Lexikon](../Sport-Lexikon/README.md)
 
@@ -392,8 +392,8 @@
 
 #### Lernen
 - [Tipp_Trainer](../Tipp_Trainer/README.md)
-- [Städte_und_Länder](../Städte_und_Länder/README.md)
-- [Europäische_Städte_und_Länder](../Europäische_Städte_und_Länder/README.md)
+- [Städte_und_Länder](../Staedte_und_Laender/README.md)
+- [Europäische_Städte_und_Länder](../Europaeische_Staedte_und_Laender/README.md)
 - [Rechtschreibtrainer](../Rechtschreibtrainer/README.md)
 
 #### Musik
@@ -420,7 +420,7 @@
 ### Spiele
 - [WWF-Club-Spiel](../WWF-Club-Spiel/README.md)
 - [fehler abc](../fehler_abc/README.md)
-- [747_Flug-Simulator](../Companies/Atari/747_Flug-Simulator/README.md)
+- [747_Flug-Simulator](../Companies/Atari/Atari_Germany/747_Flug-Simulator/README.md)
 - [Scram](../Scram/README.md)
 - [Karriere](../Karriere/README.md)
 - [Yokyu_II_-_Globetrotter](../Yokyu_II_-_Globetrotter/README.md)
@@ -432,29 +432,29 @@
 - [Abenteuer_im_Weltraum](../Abenteuer_im_Weltraum/README.md)
 - [Schloss_des_Grauens](../Schloss_des_Grauens/README.md)
 
-- Spielend lernen mit Atari-Programmen
-##[Aufgepasst-Streit der Käfer](../Companies/Atari/Aufgepasst-Streit_der_Kaefer/README.md) 
-##[Beeil Dich-Verdreht (TXG 9501)](../Companies/Atari/Beeil_Dich-Verdreht/README.md) 
-##[Bonbonglas-Chaos](../Companies/Atari/Bonbonglas-Chaos/README.md) 
-##[Golf-Balkenrechnen](../Companies/Atari/Golf-Balkenrechnen/README.md) 
-##[Schluck / Richtungspfeile TXG 9502](../Schluck-Richtungspfeile/README.md) 
-##[Ufos-Blitzschnell](../Ufos-Blitzschnell/README.md) 
-##[Himmel Schreiber (RX8059, DXG 5704)](../Companies/Atari/Himmel_Schreiber/README.md) 
-##[Buchstabenlotterie - DXG 5705 ; Original: unreleased Milliken game 'Pop'N Spell' (RX8058)](../Companies/Atari/Buchstaben_Lotterie/README.md) 
+### Spielend lernen mit Atari-Programmen
+- [Aufgepasst-Streit der Käfer](../Companies/Atari/Atari_Germany/Aufgepasst-Streit_der_Kaefer/README.md) 
+- [Beeil Dich-Verdreht (TXG 9501)](../Companies/Atari/Atari_Germany/Beeil_Dich-Verdreht/README.md) 
+- [Bonbonglas-Chaos](../Companies/Atari/Atari_Germany/Bonbonglas-Chaos/README.md) 
+- [Golf-Balkenrechnen](../Companies/Atari/Atari_Germany/Golf-Balkenrechnen/README.md) 
+- [Schluck / Richtungspfeile TXG 9502](../Companies/Atari/Atari_Germany/Schluck-Richtungspfeile/README.md) 
+- [Ufos-Blitzschnell](../Ufos-Blitzschnell/README.md) 
+- [Himmel Schreiber (RX8059, DXG 5704)](../Companies/Atari/Atari_Germany/Himmel_Schreiber/README.md) 
+- [Buchstabenlotterie (DXG 5705)](../Companies/Atari/Buchstaben_Lotterie/README.md) 
 
-- Textverarbeitung
-##[Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Schreiber/README.md) 
-##[Programm_Text_Editor](../Programm_Text_Editor/README.md) 
+### Textverarbeitung
+- [Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Germany/Atari_Schreiber/README.md) 
+- [Programm_Text_Editor](../Programm_Text_Editor_CX20075/README.md) 
 
-- Unterhaltung
-##[Biorhythmus DXG 5727 bzw. TXG 4107](../Companies/Atari/Biorhythmus/README.md) 
-##[Sprachbox DXG5721](../Sprachbox/README.md) 
-##[Atari Super Biorhythmus](../Super_Biorhythmus/README.md) 
+### Unterhaltung
+- [Biorhythmus DXG 5727 bzw. TXG 4107](../Companies/Atari/Atari_Germany/Biorhythmus/README.md) 
+- [Sprachbox DXG5721](../Sprachbox/README.md) 
+- [Atari Super Biorhythmus](../Super_Biorhythmus/README.md) 
 
-- Utilities
-##[Disketten Betriebssystem II Version D2.0S](../DOS/Atari_DOS_2/README.md) 
-##[Disketten Betriebssystem II Version 2.5](../DOS/Atari_DOS_2/README.md) 
-##[Disk_Fixer](../Disk_Fixer/README.md) 
+### Utilities
+- [Disketten Betriebssystem II Version D2.0S](../DOS/Atari_DOS_2/README.md) 
+- [Disketten Betriebssystem II Version 2.5](../DOS/Atari_DOS_2/README.md) 
+- [Disk_Fixer](../Disk_Fixer/README.md) 
 
 ### Italy - Atari Italia S.p.A.
 The below broken links will be filled up with content in the future, meanwhile, please visit the incredible work from pioneers in that field:
@@ -489,36 +489,41 @@ The below broken links will be filled up with content in the future, meanwhile, 
 
 ### Netherlands - Atari (Benelux) B.V.
 
-- Programmeren
-## [Atari Home Computer Audio Training](../Companies/Atari_Home_Computer_Audio_Training/README.md)
-## [Programmeren... Hoe Doe Je Dat? (Deel 1) - (Cassette: TXN 4101)](../Programmeren..._Hoe_Doe_Je_Dat_Deel_1/README.md)
-## [Programmeren... Hoe Doe Je Dat? (Deel 2) - (Cassette: TXN 4106)](../Programmeren..._Hoe_Doe_Je_Dat_Deel_2/README.md)
-## [Programmeren... Hoe Doe Je Dat? (Deel 3) - (Cassette: TXN 4117)](../Programmeren..._Hoe_Doe_Je_Dat_Deel_3/README.md)
-- Kantoor Thuis
-## [Atari Adressenbestand (Cassette: CXN 4104)](../Companies/Atari/Atari_Adressenbestand/README.md)
-## [Atari Grafieken (Cassette: TXN 4109)](../Companies/Atari/Atari_Grafieken/README.md)
-## [Atari Kaartsysteem](../Companies/Atari/Atari_Kaartsysteem/README.md)
-## [Atari Statistieken](../Companies/Atari/Atari_Statistieken/README.md)
-## [Huishoud-Boek (Disk: DXN 421)](../Companies/Atari/Huishoud-Boek/README.md)
-- Algemene Ontwikkeling
-## [Atari Energie](../Companies/Atari/Atari_Energie/README.md)
-## [Bioritme (Cassette: TXN 4107)](../Bioritme/README.md)
-## [Koninkrijk](../Koninkrijk/README.md)
-- Edukatie
-## [Europese Landen en Hoofdsteden (Cassette: TXN 4114)](../Companies/Atari/Europese_Landen_en_Hoofdsteden/README.md)
-## [Galgje (Cassette: TXN 4108)](../Galgje/README.md)
-- Entertainment
-## [Blackjack (Cassette: TXN 4105)](../Blackjack/README.md)
-- Demo
-## [Atari Demo disk (Disk: DXN 411)](../Companies/Atari/Atari_Demo_Disk/README.md)
+#### Programmeren
+- [Atari Home Computer Audio Training](../Companies/Atari/Atari_Home_Computer_Audio_Training/README.md)
+- [Programmeren... Hoe Doe Je Dat? (Deel 1) - (Cassette: TXN 4101)](../Programmeren..._Hoe_Doe_Je_Dat_Deel_1/README.md)
+- [Programmeren... Hoe Doe Je Dat? (Deel 2) - (Cassette: TXN 4106)](../Programmeren..._Hoe_Doe_Je_Dat_Deel_2/README.md)
+- [Programmeren... Hoe Doe Je Dat? (Deel 3) - (Cassette: TXN 4117)](../Programmeren..._Hoe_Doe_Je_Dat_Deel_3/README.md)
+
+#### Kantoor Thuis
+- [Atari Adressenbestand (Cassette: CXN 4104)](../Companies/Atari/Atari_Adressenbestand/README.md)
+- [Atari Grafieken (Cassette: TXN 4109)](../Companies/Atari/Atari_Benelux/Atari_Grafieken/README.md)
+- [Atari Kaartsysteem](../Companies/Atari/Atari_Benelux/Atari_Kaartsysteem/README.md)
+- [Atari Statistieken](../Companies/Atari/Atari_Benelux/Atari_Statistieken/README.md)
+- [Huishoud-Boek (Disk: DXN 421)](../Companies/Atari/Atari_Benelux/Huishoud-Boek/README.md)
+
+#### Algemene Ontwikkeling
+- [Atari Energie](../Companies/Atari/Atari_Benelux/Atari_Energie/README.md)
+- [Bioritme (Cassette: TXN 4107)](../Companies/Atari/Atari_Benelux/Bioritme/README.md)
+- [Koninkrijk](../Koninkrijk/README.md)
+
+#### Edukatie
+- [Europese Landen en Hoofdsteden (Cassette: TXN 4114)](../Companies/Atari/Atari_Benelux/Europese_Landen_en_Hoofdsteden/README.md)
+- [Galgje (Cassette: TXN 4108)](../Galgje/README.md)
+
+#### Entertainment
+- [Blackjack (Cassette: TXN 4105)](../Blackjack/README.md)
+
+#### Demo
+- [Atari Demo disk (DXN 411)](../Companies/Atari/Atari_Demo_Disk/README.md)
 
 ### United Kingdom - Atari Corporation UK
 
 - Education
-##[European Countries and Capitals - (Cassette: CX 4114)](../Companies/Atari/European_Countries_and_Capitals/README.md) 
+##[European Countries and Capitals (cassette CX 4114)](../Companies/Atari/European_Countries_and_Capitals/README.md) 
 
 - Games
-##[Atari Compilation - (Cassette: TX 9043)](../Companies/Atari/Atari_Compilation/README.md) 
+##[Atari Compilation (TX 9043)](../Companies/Atari/Atari_Compilation/README.md) 
 ##[Black Lamp (TX 9049)](../Companies/Atari/Black_Lamp/README.md) 
 ##[Chess (cassette UKC1004)](../Companies/Atari/Chess/README.md) 
 ##[Compilation A (TXP7100)](../Companies/Atari/Compilation_A/README.md) 
@@ -547,7 +552,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 ##[Software Pack - (Disk: DX 1003)](../Software_Pack/README.md) 
 
 ## Demo
-- [Atari In-Store Demonstration Program 1982](../Companies/Atari/In-Store_Demonstration_Program/README.md)
+- [Atari In-Store Demo Program (CXL4019, CX8117)](../Companies/Atari/In-Store_Demonstration_Program/README.md)
 - [Atari Demonstration Program](../Companies/Atari/Atari_Demonstration_Program/README.md)
 - [GTIA_Demonstration_Diskette_APX-20104](../GTIA_Demonstration_Diskette_APX-20104/README.md)
 - [Fandal's demo site](http://a8.fandal.cz/demos.php?name=A&butt_details_x=&from=150)
@@ -565,7 +570,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [BEWE DOS 1.30 Manual](../Companies/BEWESOFT/BEWE_DOS_1.30_Manual/README.md)
 - [Bibo-DOS](../Companies/CompyShop/BIBO-DOS/README.md)
 - [LiteDOS](http://www.mr-atari.com/Mr.Atari/LiteDOS/)
-- [INDUS_CPM_2.2](../Companies/Indus_Systems/Indus_GT/Indus_CPM_2.2/README.md)
+- [Indus CPM 2.2](../Companies/Indus_Systems/Indus_GT/Indus_CPM_2.2/README.md)
 - [INDUS_GT_Synchromesh](../Companies/Indus_Systems/Indus_GT/Indus_GT_Synchromesh/README.md)
 - [MyDOS](../DOS/MyDOS/README.md)
 - [OSS OS/A+](../OSS_OS-A_/README.md)
@@ -644,7 +649,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 #[SuperDOS 5.1 source code](../SuperDOS/README.md) 
 
 ### Drivers
-#[Original_CX85_Keyboard_Handler](../Companies/Atari/Atari_CX85/Original_CX85_Keyboard_Handler/README.md) 
+#[CX85 Keypad Interrrupt Handler](../Companies/Atari/Atari_CX85/Original_CX85_Keyboard_Handler/README.md) 
 
 ### Games (in the sequence the authors released the sources to the public)
 #[Eastern_Front_1941](../Eastern_Front_1941/README.md) ; 1981 from Chris Crawford
@@ -671,7 +676,7 @@ Assembler/Debugger:
 #[OSS MAC XE](https://atariwiki.org/wiki/Wiki.jsp?page=Mac65) 
 #[OSS DDT](https://atariwiki.org/wiki/Wiki.jsp?page=Mac65) 
 #[Synapse_Assembler](../Synapse_Assembler/README.md) 
-#[A65_Assembler](../Languages/Assembler/A65_Assembler/README.md) 
+#[A65 Assembler](../Languages/Assembler/A65_Assembler/README.md) 
 #[Bibo-Assembler](attachments/BIBO.asm) 
 
 Action!:

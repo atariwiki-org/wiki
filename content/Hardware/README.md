@@ -44,7 +44,7 @@
 - [XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
 - [Floppy_2000](Disk_Drives/Floppy_2000/README.md)
 - [HDI_Interface](Disk_Drives/HDI_Interface/README.md) (aka Floppy 3000)
-- [Indus_GT](../Companies/Indus_Systems/Indus_GT/README.md)
+- [Indus GT DD Floppy Drive](../Companies/Indus_Systems/Indus_GT/README.md)
 ** [Indus_GT_Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md) 
 ** [Indus_GT_Field_Service_Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md) 
 ** [Indus_GT_Firmware_ROM_Source](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)

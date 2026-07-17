@@ -32,7 +32,7 @@ title: USB Cartridge
 - [Logitech GP Steering Wheel Driver](../Logitech_Formula_GP_USB_Wheel_Driver/README.md)
 - [Logitech VP Steering Wheel Driver](../Logitech_Formula_VF_USB_Wheel_Driver/README.md)
 - [Speedlink_Competition_Pro_USB](../../../Speedlink_Competition_Pro_USB/README.md)
-- [Device compatibility matrix](../DeviceMatrix/README.md)
+- [Atari USB Cart compatibility matrix](../DeviceMatrix/README.md)
 
 ## Documentation
 

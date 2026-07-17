@@ -21,7 +21,7 @@ Atari CX85 Numerical Keypad - Field Service Manual - Thank you so much Bill Lang
 - [CX85_Reeve_Key.atr](attachments/CX85_Reeve_Key.atr) ; Copyright (C) 1986 by Alan Reeve
 
 ## Source Codes
-- [original_CX85_Keyboard_Handler](Original_CX85_Keyboard_Handler/README.md) (original Atari Assembler Source)
+- [CX85 Keypad Interrrupt Handler](Original_CX85_Keyboard_Handler/README.md) (original Atari Assembler Source)
 - [CX85_Keyboard_Handler](../CX85_Keyboard_Handler/README.md) (reverse engineered Source)
 - Atari CX85 Numerical Keypad - Field Service Manual Basic program to test the device:
 ```

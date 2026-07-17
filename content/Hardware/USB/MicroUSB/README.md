@@ -25,7 +25,7 @@ Files for the MicroUSB Project can also be downloaded from SourceForge -> [http:
 - [Thrustmaster Steering Wheel Driver](../USB_Steering_Wheel_Driver/README.md) ( [Pictures of Pole-Position USB Version](../ProjUSB/ProjUSBCartAtariWheelPolePosPics/README.md) )
 - [Logitech GP Steering Wheel Driver](../Logitech_Formula_GP_USB_Wheel_Driver/README.md)
 - [Logitech VP Steering Wheel Driver](../Logitech_Formula_VF_USB_Wheel_Driver/README.md)
-- [Device compatibility matrix](../DeviceMatrix/README.md)
+- [Atari USB Cart compatibility matrix](../DeviceMatrix/README.md)
 
 ## Documentation
 

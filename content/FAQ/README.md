@@ -25,7 +25,7 @@ Besides the above, the intention of the Atari Wiki FAQ is to provide the reader 
 - [check_and_compare_files_with_a_Mac_in_the_Terminal_app](../check_and_compare_files_with_a_Mac_in_the_Terminal_app/README.md)
 - [Combine 2 files into 1](../General/Combine_2_files_into_1/README.md)
 - [use_a_reliable_template_for_an_Abbuc_presentation](../use_a_reliable_template_for_an_Abbuc_presentation/README.md)
-- [pack_and_unpack_in_7z_format_with_a_Mac](../General/Pack_and_unpack_in_7z_format_with_a_Mac/README.md)
+- [Pack and unpack in 7z format with a Mac](../General/Pack_and_unpack_in_7z_format_with_a_Mac/README.md)
 - [read_write_or_convert_from_an_Atari_815_Double_Disk_Drive](../read_write_or_convert_from_an_Atari_815_Double_Disk_Drive/README.md)
 - [disable_the_key_click](../disable_the_key_click/README.md)
 - [get_2_columns_more_in_Atari_BASIC](../get_2_columns_more_in_Atari_BASIC/README.md)
