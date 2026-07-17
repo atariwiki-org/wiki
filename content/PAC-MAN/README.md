@@ -1,6 +1,3 @@
----
-title: PAC-MAN
----
 # PAC-MAN Source Code
 
 Sometimes wonders just happen, this can't be more true, than for the source code of PAC-MAN. After a long, long time, this miracle just happend, please see below for more details.
