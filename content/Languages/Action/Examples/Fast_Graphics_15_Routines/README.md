@@ -1,6 +1,3 @@
----
-title: Fast Graphics 15 Routines
----
 # Fast Graphics 15 Routines
 
 General Information

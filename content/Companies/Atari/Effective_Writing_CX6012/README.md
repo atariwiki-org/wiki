@@ -1,9 +1,7 @@
----
-title: Effective Writing CX6012
----
 # Effective Writing CX6012
+
 ## Content:
-![](attachments/Effective+Writing+CX6012.jpg)
+![](attachments/Effective+Writing_CX6012.jpg)
 Content of Effective Writing CX6012
 
 

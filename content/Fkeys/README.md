@@ -1,6 +1,5 @@
----
-title: Fkeys
----
+# Atari 1200XL Function Keys
+
 On the ATARI 1200XL there are 4 function keys named F1 to F4
 
 ||Function Key||produces
