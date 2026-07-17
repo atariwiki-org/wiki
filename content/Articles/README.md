@@ -19,7 +19,7 @@
 
 # Generic Information
 - [Atari ATASCII Table](../Atari_ATASCII_Table/README.md)
-- [Differences Atari 400/800 - 1200XL - 600/800XL](../OS/Atari_OS/DiffOldOs2XL/README.md)
+- [OS Diffs Atari 800 <-> Atari XL/XE Series](../OS/Atari_OS/DiffOldOs2XL/README.md)
 - [Ironman_Atari](../Ironman_Atari/README.md) A compilation of advanced Atari 8-bit programming techniques
 - [Mode, Setcolor, Color Table](../Languages/BASIC/Atari_BASIC/Mode_Setcolor_Color_Table/README.md)
 - [Table_of_Modes_and_Screen_Format](../Table_of_Modes_and_Screen_Format/README.md)
@@ -65,7 +65,7 @@
 - [Indus_GT_Field_Service_Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md)* [Indus_GT_Firmware_ROM_Source](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
 - [Indus_GT_Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md)
 - [Floppy 2000](../Hardware/Disk_Drives/Floppy_2000/README.md)
-- [High-Density Disk Interface (HDI)](../Hardware/Disk_Drives/HDI_Interface/README.md) (aka Floppy 3000)
+- [High-Density Disk Interface (HDI)](../People/Erhard_Puetz/HDI_Interface/README.md) (aka Floppy 3000)
 
 
 ## Tape Recorders
@@ -105,7 +105,7 @@
 
 ## Video Upgrades
 - [XEP80](../XEP80/README.md)
-- [Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface/README.md)
+- [Driver for a PC Hercules Monochrome graphics card inside the ARGS PBI-ISA Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface/README.md)
 
 ## Controllers
 - [Atari_CX70_Light_Pen](../Companies/Atari/Atari_CX70_Light_Pen/README.md)
@@ -202,9 +202,9 @@
 - [Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md)
 - [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md)
 - [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](../Companies/Atari/Enhancements_to_Graph_It/README.md)
-- [Family_Budgets](../Companies/Atari/Family_Budgets/README.md)
-- [Family_Cash_Flow](../Companies/Atari/Family_Cash_Flow/README.md)
-- [Family_Finances](../Companies/Atari/Family_Finances/README.md)
+- [Family Budgets (APX-20108)](../Companies/Atari/Family_Budgets/README.md)
+- [Family Cash Flow (APX-20080)](../Companies/Atari/Family_Cash_Flow/README.md)
+- [Atari Family Finances (CX421)](../Companies/Atari/Family_Finances/README.md)
 - [Home_Inventory](../Home_Inventory/README.md)
 - [RPN Calculator](../RPN_Calculator/README.md)
 
@@ -221,7 +221,7 @@
 ### Education
 - [Atari Educational System - Programming Cassette Streams](../Companies/Atari/Atari_Educational_System/Atari_Educational_System-Programming_Cassette_Streams/README.md)
 - [Atari Educational System Lesson Cassettes](../Companies/Atari/Atari_Educational_System/Atari_Educational_System_Lesson_Cassettes/README.md)
-- [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)
+- [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett_Educational_Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)
 - [An Invitation to Programming 1 CX4101](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%201%20CX4101)
 - [An Invitation to Programming 2 CX4106](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%202%20CX4106)
 - [An Invitation to Programming 3 CX4117](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%203%20CX4117)
@@ -512,7 +512,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Galgje (Cassette: TXN 4108)](../Companies/Atari/Atari_Benelux/Galgje/README.md)
 
 #### Entertainment
-- [Blackjack (Cassette: TXN 4105)](../Companies/Atari/Atari_Benelux/Blackjack/README.md)
+- [Blackjack](../Companies/Atari/Atari_Benelux/Blackjack/README.md)
 
 #### Demo
 - [Atari Demo disk (DXN 411)](../Companies/Atari/Atari_Demo_Disk/README.md)
@@ -554,7 +554,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 ## Demos
 - [Atari In-Store Demo Program (CXL4019, CX8117)](../Companies/Atari/In-Store_Demonstration_Program/README.md)
 - [Atari Demonstration Program](../Companies/Atari/Atari_Demonstration_Program/README.md)
-- [GTIA_Demonstration_Diskette_APX-20104](../GTIA_Demonstration_Diskette_APX-20104/README.md)
+- [GTIA_Demonstration_Diskette_APX-20104](../Companies/Atari/GTIA_Demonstration_Diskette_APX-20104/README.md)
 - [Fandal's demo site](http://a8.fandal.cz/demos.php?name=A&butt_details_x=&from=150)
 - [Atarionline demo site](http://atarionline.pl/v01/index.php?ct=demos)
 - [Atari Home Computers-Demo Ball](../Atari_Home_Computers-Demo_Ball/README.md)
@@ -606,7 +606,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 
 ## [Voice_and_Data_Cassettes](../Voice_and_Data_Cassettes/README.md)
 - [Atari Educational System Lesson Cassettes](../Companies/Atari/Atari_Educational_System/Atari_Educational_System_Lesson_Cassettes/README.md)
-- [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett Educational Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)
+- [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett_Educational_Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)
 
 Atari Basic Course: An Invitation to Programming 1-3:
 - [Course 1: An Invitation to Programming 1 - Fundamentals of Basic Programming CX4101](../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_1_CX4101/README.md)

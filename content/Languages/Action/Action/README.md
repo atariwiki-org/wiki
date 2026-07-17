@@ -160,7 +160,7 @@ Thank you Alfred
 - [Butterfly Demo](../Examples/Butterfly_Demo/README.md)
 - [C Style Strings](../Articles/C_Style_Strings/README.md)
 - [COM File Segment Dump](../Examples/COM_File_Segment_Dump/README.md)
-- [Catch_and_Throw_Error_Handling](../Examples/Catch_and_Throw_Error_Handling/README.md) ACS
+- [Catch and Throw Error Handling](../Examples/Catch_and_Throw_Error_Handling/README.md) ACS
 - [Catepill](../../../People/Carsten_Strotmann/Catepill/README.md) unfinished Game with Level editor in ACTION!
 - [Compile_to_Disk](../Articles/Compile_to_Disk/README.md) ACS
 - [DLI_in_ACTION!](../DLI_in_ACTION!/README.md)
@@ -184,8 +184,8 @@ Thank you Alfred
 - [Kermit_in_ACTION!](../Kermit_in_ACTION!/README.md)
 - [Load_APL_Display-List_Files](../Load_APL_Display-List_Files/README.md)
 - [Load_Font_Files_in_ACTION!](../Load_Font_Files_in_ACTION!/README.md)
-- [Load_Koala_Pictures](../../../Load_Koala_Pictures/README.md)
-- [MiniDOS](../../../MiniDOS/README.md)
+- [Load_Koala_Pictures](../../Assembler/Examples/Load_Koala_Pictures/README.md)
+- [MiniDOS](../Examples/MiniDOS/README.md)
 - [Multi_Player_Animation](../../../Multi_Player_Animation/README.md)
 - [OS_Vectors](../../../OS_Vectors/README.md)
 - [PERCOM_Block_Manipulation](../../../PERCOM_Block_Manipulation/README.md)

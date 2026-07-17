@@ -2,7 +2,7 @@
 title: Familien Finanzen
 ---
 # Familien Finanzen (C) 1984 Atari Elektronik Vertriebsgesellschaft GmbH ; bitte mit dem BASIC-Cartridge verwenden
-Atari Familien Finanzen ist die deutsche Version der US-Version von Budget & Income von Jerry Falkenhan sowie Teilen von [Atari Family Finances CX421](../../Family_Finances/README.md). Die Anleitung ist leider nicht vorhanden, jede Hilfe zur Beschaffung dieser Anleitung ist sehr willkommen. :-)
+Atari Familien Finanzen ist die deutsche Version der US-Version von Budget & Income von Jerry Falkenhan sowie Teilen von [Atari Family Finances (CX421)](../../Family_Finances/README.md). Die Anleitung ist leider nicht vorhanden, jede Hilfe zur Beschaffung dieser Anleitung ist sehr willkommen. :-)
 ## ATR-Image
 - [Familien-Finanzen.atr](attachments/Familien-Finanzen.atr) ; bitte mit dem BASIC-Cartridge verwenden
 ## Bilder

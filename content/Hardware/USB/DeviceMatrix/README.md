@@ -3,7 +3,7 @@
 || USB Device                                  || Status || Driver / Device Info   || Games / Applications ||
 | __Joysticks__ | | | |
 | Logitech USB Wingman Precision                | working  | [digital Joypad Driver](../Digital_Joypad_Driver/README.md)  | Boulder Dash (Version 1) |
-| Logitech USB Attack 3 Joystick                | working  | [analog Joystick Driver](../../../AtariAnalogJoystickDriver/README.md)  | -- |
+| Logitech USB Attack 3 Joystick                | working  | [analog Joystick Driver](../AtariAnalogJoystickDriver/README.md)  | -- |
 | [Competition Pro USB](http://www.speed-link.com/prod.php?lang=de&sys_id=1&pb_id=1&prod_num=SL-6602) | working  | [Joystick Driver for Competition Pro](../ProjUSBCartAtariCompProUsbJoystick/README.md)  | -- |
 | Logitech Rumblepad 2 USB                      | working  | [Logitech Rumblepad Driver](../ProjUSBCartAtariJoypadRumblePadTwoUsb/README.md) | |
 | [Microsoft SideWinder Game Pad USB](http://gear.ign.com/articles/324/324347p1.html)             | USBTest ok, driver must be written  | [analog Joystick Driver](../ProjUSBCartAtariJoystick/README.md)  | -- |

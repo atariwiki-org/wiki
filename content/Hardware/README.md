@@ -43,7 +43,7 @@
 - [Turbo1050_Upgrades](../Turbo1050_Upgrades/README.md)
 - [XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
 - [Floppy 2000](Disk_Drives/Floppy_2000/README.md)
-- [High-Density Disk Interface (HDI)](Disk_Drives/HDI_Interface/README.md) (aka Floppy 3000)
+- [High-Density Disk Interface (HDI)](../People/Erhard_Puetz/HDI_Interface/README.md) (aka Floppy 3000)
 - [Indus GT DD Floppy Drive](../Companies/Indus_Systems/Indus_GT/README.md)
 ** [Indus_GT_Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md) 
 ** [Indus_GT_Field_Service_Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md) 

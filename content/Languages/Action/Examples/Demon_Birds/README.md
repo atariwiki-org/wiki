@@ -1,13 +1,10 @@
----
-title: Demon Birds
----
-### General Information
+# Demon Birds
+
 Author: Dan Bullok
 Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: Analog #28 (03/ 85)
----
-# Demon Birds
+
 
 You are the last Wizard of Akturnis, the strange and mystical world where magic can be worked by anyone with the will to do so. But, in the past few years, people habe lost their faith in Wizards and magic. Now the evil __Demon Birds__ have begun to plague them, and you are their ''only'' hope.
 

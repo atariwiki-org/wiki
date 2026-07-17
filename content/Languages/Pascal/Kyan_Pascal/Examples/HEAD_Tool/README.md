@@ -1,9 +1,4 @@
----
-title: HEAD Tool
----
-
-
-# HEAD Tool Sourcecode
+# HEAD Tool
 
 ```
 PROGRAM Head;

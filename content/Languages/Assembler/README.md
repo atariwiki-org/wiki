@@ -27,7 +27,7 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [Dunion's Debugging Tool (DDT) Rev. 1.0](../../Companies/OSS/DDT/README.md) (1982)
 - [EASMD](../../EASMD/README.md) (1981)
 - [Edit_6502](../../Edit_6502/README.md) (1981)
-- [Extended Dunion's Debugging Tool (ExDDT)](../../Companies/OSS/Extended_DDT/README.md) (1985)
+- [Extended DDT (1985)](../../Companies/OSS/Extended_DDT/README.md) (1985)
 - [MAC/65](../Mac65/README.md) (1982)
 - [MAE Assembler](MAE_Assembler/README.md) (1996)
 - [Synapse_Assembler](../Synapse_Assembler/README.md) (1982)

@@ -1,6 +1,3 @@
----
-title: Load Koala Pictures
----
 # Load Koala Pictures
 
 ## Assembler (BiboAssembler)

@@ -5,7 +5,7 @@ title: Operating System
 
 [Versions](../OS_Versions/README.md) 
 
-[Differences between Versions](../OS/Atari_OS/DiffOldOs2XL/README.md) 
+[OS Diffs Atari 800 <-> Atari XL/XE Series](../OS/Atari_OS/DiffOldOs2XL/README.md) 
 
 [Atari 800 OS Source Listing](../OS/Atari_OS/Atari_800_ROM_OS_Source_Listing/README.md) 
 

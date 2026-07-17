@@ -1,6 +1,3 @@
----
-title: Logarithmen
----
 # Logarithmen Berechnung in Atari BASIC:
 
 Die Progrmme sind exklusiv beim PD-Service des WASEO erhältlich, Diskette 1.000):

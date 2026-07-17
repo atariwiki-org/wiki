@@ -1,7 +1,5 @@
----
-title: How to create new pages in the Atari Wiki
----
 # How to create new pages in the Atari Wiki
+
 __ First, you need an account on the AtariWiki__
 
 __Still a working place, please stand by for more info in the future__

@@ -27,7 +27,7 @@ title: USB Cartridge
 - [Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)
 - [Digital Joypad Driver](../Digital_Joypad_Driver/README.md)
 - [Logitech Rumblepad 2 USB Driver](../JoypadRumblePadTwoUsb/README.md)
-- [Analog Joystick Driver](../../../AtariAnalogJoystickDriver/README.md)
+- [Analog Joystick Driver](../AtariAnalogJoystickDriver/README.md)
 - [Thrustmaster Steering Wheel Driver](../USB_Steering_Wheel_Driver/README.md) ( [Pictures of Pole-Position USB Version](../ProjUSB/ProjUSBCartAtariWheelPolePosPics/README.md) )
 - [Logitech GP Steering Wheel Driver](../Logitech_Formula_GP_USB_Wheel_Driver/README.md)
 - [Logitech VP Steering Wheel Driver](../Logitech_Formula_VF_USB_Wheel_Driver/README.md)

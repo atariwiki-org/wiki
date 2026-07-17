@@ -266,7 +266,7 @@ Here are cartridge images created by building the sources.
 - Bug sheet of 01/07/94 version 1.02 [Scan](attachments/mac_65_bug_sheet.pdf) [PDF](attachments/MAC65_BUG_SHEET_01-07-1997.pdf)
 
 ## Examples - MAC/65 source files
-- [Floating_Point_ROM_Library](../../../Floating_Point_ROM_Library/README.md)
+- [Floating Point ROM Library](../../../Floating_Point_ROM_Library/README.md)
 - [MOUSE ROUTINE IN AN INTERRUPT](../../../MOUSE_ROUTINE_IN_AN_INTERRUPT/README.md)
 - [RAF_Commander](../../../RAF_Commander/README.md) - a Norton Commander Clone for the 8bit Atari
 - [Sweet16Mac65](../../../Sweet16Mac65/README.md) a virtual 16bit machine for the 8bit ATARI
