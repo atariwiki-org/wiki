@@ -178,7 +178,7 @@ Thank you Alfred
 - [File_Select_Box](../../../File_Select_Box/README.md)
 - [File_Select_Shell](../../../File_Select_Shell/README.md)
 - [Game_AMAZING_in_ACTION!](../Game_AMAZING_in_ACTION!/README.md)
-- [Grep_for_Sparta_DOS](../Examples/Grep_for_Sparta_DOS/README.md)
+- [Grep for Sparta DOS](../Examples/Grep_for_Sparta_DOS/README.md)
 - [Dump - Print the contents of binary files in hexadecimal and ATASCII](../Examples/HexDump/README.md) - Dump - Print the contents of binary files in hexadecimal and ATASCII
 - [Jump_to_DOS_DUP](../Jump_to_DOS_DUP/README.md)
 - [Kermit_in_ACTION!](../Kermit_in_ACTION!/README.md)

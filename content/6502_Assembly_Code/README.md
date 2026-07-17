@@ -55,7 +55,7 @@
 - [Relocatable_Jumps](../Relocatable_Jumps/README.md)
 - [Print_Inline_Strings](../Print_Inline_Strings/README.md)
 - [Mixed_Mode_Graphics](../Mixed_Mode_Graphics/README.md)
-- [Synapse_Assembler_Atari_800_OS_Equates](../Synapse_Assembler_Atari_800_OS_Equates/README.md)
+- [Synapse Assembler Atari 800 OS Equates](../Companies/Synapse_Software/SynAssembler/Synapse_Assembler_Atari_800_OS_Equates/README.md)
 - [Advanced_6502_Assembly_Code_Examples](../Advanced_6502_Assembly_Code_Examples/README.md)
 - [APAC_Graphics_Mode](../APAC_Graphics_Mode/README.md)
 - [Atari_800_Assembler_Equates](../Atari_800_Assembler_Equates/README.md)

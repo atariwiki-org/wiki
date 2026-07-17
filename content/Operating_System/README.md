@@ -19,7 +19,7 @@ title: Operating System
 
 [Atari System Labels from OSS](../Atari_System_Labels_from_OSS/README.md) 
 
-[Synapse Assembler Atari 800 OS Equates](../Synapse_Assembler_Atari_800_OS_Equates/README.md) 
+[Synapse Assembler Atari 800 OS Equates](../Companies/Synapse_Software/SynAssembler/Synapse_Assembler_Atari_800_OS_Equates/README.md) 
 
 [Copy OS ROM to RAM](../Languages/Assembler/Examples/Copy_OS_ROM_to_RAM/README.md) 
 

@@ -113,7 +113,7 @@ There is a basic program in [ANTIC VOL. 3, NO. 2 / JUNE 1984 / PAGE 38](http://w
 - [SynAssembler_Source_Code.atr](attachments/SynAssembler_Source_Code.atr) ; source code of the SynAssembler in MAC/65 format with DOS 2.5 color; Thank you so much Steve Hales, we really appreciate your help for the community. :-)))
 
 ## Atari 8bit Equates files
-- [Synapse_Assembler_Atari_800_OS_Equates](../Synapse_Assembler_Atari_800_OS_Equates/README.md)
+- [Synapse Assembler Atari 800 OS Equates](Synapse_Assembler_Atari_800_OS_Equates/README.md)
 
 ## Pictures and Themes
 ![](attachments/SynAssembler-Disk.jpg)

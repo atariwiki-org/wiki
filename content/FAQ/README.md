@@ -28,5 +28,5 @@ Besides the above, the intention of the Atari Wiki FAQ is to provide the reader 
 - [Pack and unpack in 7z format with a Mac](../General/Pack_and_unpack_in_7z_format_with_a_Mac/README.md)
 - [read_write_or_convert_from_an_Atari_815_Double_Disk_Drive](../read_write_or_convert_from_an_Atari_815_Double_Disk_Drive/README.md)
 - [disable_the_key_click](../disable_the_key_click/README.md)
-- [get_2_columns_more_in_Atari_BASIC](../get_2_columns_more_in_Atari_BASIC/README.md)
+- [Get 2 columns more in Atari BASIC](../get_2_columns_more_in_Atari_BASIC/README.md)
 - [install Ubuntu on MacBook using USB Stick](https://help.ubuntu.com/community/How%20to%20install%20Ubuntu%20on%20MacBook%20using%20USB%20Stick)

@@ -11,7 +11,7 @@ OS/A+, later also published as DOS II+, is a Disk Operating System (DOS) for Ata
 
 ## Versions
 
-- [OS/A+ Version 1.1](OS-Aplus-Version_1.1/README.md)
+- [OS/A+ Version 1.1](OS_Aplus-Version_1.1/README.md)
 - [OS/A+ Version 2.10](OS_Aplus-Version_2/README.md)
 - [OS/A+ Professional Version 2.12](OS_Aplus_Professional-Version_2.12/README.md)
 - [OS/A+ Version 4 / OSS DOS II+ Version 4.2](OS_Aplus-Version_4/README.md)

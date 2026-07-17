@@ -70,7 +70,7 @@ MAC/65 4.20 was not without bugs. OSS published a few patches for it in their Su
 
 After version 4.20, Lawrow rewrote MAC/65 for cartridge medium. It utilized OSS's own "SuperCartridge" - a 16 KB bank-switched cartridge that occupied only 8 KB of Atari memory, and could be disabled or enabled at will. It provided a much more comfortable experience than the disk version. MAC/65 cartridges were produced using both two-chip and one-chip variants of the SuperCartridge.
 
-The cartridge version replaced BUG/65 with another debugger - [DDT](../DDT/README.md) (Dunion's Debugging Tool) developed by James J. Dunion.
+The cartridge version replaced BUG/65 with another debugger - [Dunion's Debugging Tool (DDT) Rev. 1.0](../DDT/README.md) (Dunion's Debugging Tool) developed by James J. Dunion.
 
 ## MAC/65 1.00 (1984)
 %%(float:right)![](attachments/Cart.jpg)

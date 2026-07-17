@@ -55,7 +55,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [English_as_a_second_Language_ESL_17-32](../English_as_a_second_Language_ESL_17-32/README.md)
 - [Reading-Development_Z](../Reading-Development_Z/README.md)
 - [Reading-Development_W](../Reading-Development_W/README.md)
-- [Counseling_Co](../../../Counseling_Co/README.md)
+- [Counseling_Co](../Counseling_Co/README.md)
 - [U.S._Government_Gv](../../../U.S._Government_Gv/README.md)
 - [Auto_Mechanics_KA](../Auto_Mechanics_KA/README.md)
 - [Vocational_Vocabulary_VZ](../../../Vocational_Vocabulary_VZ/README.md)
