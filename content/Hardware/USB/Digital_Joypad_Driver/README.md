@@ -7,7 +7,7 @@ Tested with a Logitec Wingman Precision USB. Other digital Joypad might work. Pl
 
 ## Logitech Rumblepad 2 USB Driver (new Modular Driver Version 2)
 
-see [Logitech Rumblepad 2 USB](../../JoypadRumblePadTwoUsb/README.md) 
+see [Logitech Rumblepad 2 USB](../JoypadRumblePadTwoUsb/README.md) 
 
 ## Generic VBI Driver
 
@@ -17,7 +17,7 @@ Load driver and use Stick(0) and Strig(0) as normal.
 
 ### Related Pages
 
-- [Boulder Dash 1 Patch](../../AtariJoypadBouderDashPatch/README.md)
+- [Boulder Dash 1 Patch](../../../AtariJoypadBouderDashPatch/README.md)
 
 ```
 01000          .LI OFF

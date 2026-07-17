@@ -6,7 +6,7 @@ title: Main
 Please update your bookmarks: The main domain for the AtariWiki is now [https://atariwiki.org](https://atariwiki.org) 
 ## ''Powered by your contribution''
 
-Please read the AtariWiki [Manifesto](../Manifesto/README.md). Want to edit a Wiki page? Read [How_to_get_Wiki_edit_permissions](../How_to_get_Wiki_edit_permissions/README.md).
+Please read the AtariWiki [Atari Wiki Manifesto](../Manifesto/README.md). Want to edit a Wiki page? Read [How_to_get_Wiki_edit_permissions](../Wiki/How_to_get_Wiki_edit_permissions/README.md).
 
 ![](attachments/ATARI_rainbow.png)
 

@@ -157,11 +157,11 @@ Thank you Alfred
 - [Backtrack_in_ACTION!](../Backtrack_in_ACTION!/README.md)
 - [Big_Symbol_Table_for_ACTION!](../Big_Symbol_Table_for_ACTION!/README.md) ACS
 - [Binary_File_Load_in_ACTION!](../Binary_File_Load_in_ACTION!/README.md)
-- [Butterfly_Demo](../../../Butterfly_Demo/README.md)
+- [Butterfly_Demo](../Examples/Butterfly_Demo/README.md)
 - [C Style Strings](../Articles/C_Style_Strings/README.md)
 - [COM File Segment Dump](../Examples/COM_File_Segment_Dump/README.md)
 - [Catch_and_Throw_Error_Handling](../../../Catch_and_Throw_Error_Handling/README.md) ACS
-- [Catepill](../../../Catepill/README.md) unfinished Game with Level editor in ACTION!
+- [Catepill](../../../People/Carsten_Strotmann/Catepill/README.md) unfinished Game with Level editor in ACTION!
 - [Compile_to_Disk](../Articles/Compile_to_Disk/README.md) ACS
 - [DLI_in_ACTION!](../DLI_in_ACTION!/README.md)
 - [DOS_Setup](../../../DOS_Setup/README.md) - A small tool to copy some files from disk to ramdisk. can be configured by a textfile.
@@ -179,7 +179,7 @@ Thank you Alfred
 - [File_Select_Shell](../../../File_Select_Shell/README.md)
 - [Game_AMAZING_in_ACTION!](../Game_AMAZING_in_ACTION!/README.md)
 - [Grep_for_Sparta_DOS](../../../Grep_for_Sparta_DOS/README.md)
-- [HexDump](../../../HexDump/README.md) - Dump - Print the contents of binary files in hexadecimal and ATASCII
+- [HexDump](../Examples/HexDump/README.md) - Dump - Print the contents of binary files in hexadecimal and ATASCII
 - [Jump_to_DOS_DUP](../Jump_to_DOS_DUP/README.md)
 - [Kermit_in_ACTION!](../Kermit_in_ACTION!/README.md)
 - [Load_APL_Display-List_Files](../Load_APL_Display-List_Files/README.md)
@@ -212,7 +212,7 @@ Thank you Alfred
 - [ACTION_OBJECT_CODE_RELOCATION_PROGRAM](../ACTION_OBJECT_CODE_RELOCATION_PROGRAM/README.md) ; Thank you so much Alfred from AtariAge, we all really appreciate your help here again.
 - [Relocator](../../../Relocator/README.md) for Action; relocates Action code to run independent from the code location
 - [acsterm.txt](attachments/acsterm.txt) ; ACSTERM is a terminal emulator for the Atari 800, 800XL, 1200XL and 130XE
-- [How_to_find_the_revision_number_of_ACTION](../../../How_to_find_the_revision_number_of_ACTION/README.md)
+- [How_to_find_the_revision_number_of_ACTION](../How_to_find_the_revision_number_of_ACTION/README.md)
 
 ### Missing Tools: Graphics Utilities Library and Shape Editor
 
@@ -250,7 +250,7 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[Getting_in_on_the_Action!_1](../Getting_in_on_the_Action!_1/README.md)|#32 (07/ 85)|en|Tutorial
 |[Getting_in_on_the_Action!_2](../Getting_in_on_the_Action!_2/README.md)|#35 (10/ 85)|en|Tutorial
 |[Sneak_attack](../../../Sneak_attack/README.md)|#36 (11/ 85)|en|Game
-|[Air Hockey](../../../Air_hockey/README.md)|#38 (01/ 86)|en|Game
+|[Air Hockey](../Examples/Air_hockey/README.md)|#38 (01/ 86)|en|Game
 |[D-Check](../../../D-Check/README.md)|#44 (07/ 86)|en|Tool
 |[Trails](../Articles/Trails/README.md)|#50 (01/ 87)|en|Tool for using the KoalaPad in ACTION!
 |[ACTION!_Zero_Free](../ACTION!_Zero_Free/README.md)|#54 (05/ 87) |en|Tool

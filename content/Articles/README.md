@@ -43,15 +43,15 @@
 
 ## Disk Drives
 ### Atari Disk Drives
-- [Atari_810](../Hardware/Disk_Drives/Atari_810/README.md)
-- [Atari_815](../Hardware/Disk_Drives/Atari_815/README.md)
+- [Atari_810](../Companies/Atari/Atari_810/README.md)
+- [Atari_815](../Companies/Atari/Atari_815/README.md)
 - [ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION](../Companies/Atari/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
 - [Atari_1050](../Companies/Atari/Atari_1050/README.md)
 - [Atari_XF551](../Companies/Atari/Atari_XF551/README.md)
 
 ### Third Party Disk Drives
 - [ASTRA 2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
-- [Indus_GT](../Indus_GT/README.md)
+- [Indus_GT](../Companies/Indus_Systems/Indus_GT/README.md)
 - [Percom AT-88](../Hardware/Disk_Drives/Percom_AT-88/README.md)
 - [Rana_1000](../Rana_1000/README.md)
 - [Trak_AT-D2](../Trak_AT-D2/README.md)
@@ -62,8 +62,8 @@
 - [Turbo1050_Upgrades](../Turbo1050_Upgrades/README.md)
 - [XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
 - [Custom_Disk_Format_Routine](../Companies/CompyShop/Speedy_1050_Upgrades/Custom_Disk_Format_Routine/README.md) (Atari 1050 with Compy Shop Speedy)
-- [Indus_GT_Field_Service_Manual](../Indus_GT/Indus_GT_Field_Service_Manual/README.md)* [Indus_GT_Firmware_ROM_Source](../Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
-- [Indus_GT_Schematics](../Indus_GT/Indus_GT_Schematics/README.md)
+- [Indus_GT_Field_Service_Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md)* [Indus_GT_Firmware_ROM_Source](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
+- [Indus_GT_Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md)
 - [Floppy_2000](../Hardware/Disk_Drives/Floppy_2000/README.md)
 - [HDI_Interface](../Hardware/Disk_Drives/HDI_Interface/README.md) (aka Floppy 3000)
 
@@ -124,7 +124,7 @@
 - [AtariMax_EXEPACKER_Files_with_bundled_DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
 - [ARGS_RS232_Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (deutsch)
 - [The!Card](../The!Card/README.md)
-- [Cartridges](../Cartridges/README.md)
+- [All you ever wanted to know about: Atari Cartridges](../Cartridges/README.md)
 
 ## Others
 - [ARGS_ISA_PC_Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/README.md)
@@ -201,7 +201,7 @@
 - [Atari Silent Butler (DX5082)](../Companies/Atari/Atari_Silent_Butler/README.md)
 - [Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md)
 - [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md)
-- [Enhancements_to_Graph_It](../Enhancements_to_Graph_It/README.md)
+- [Enhancements_to_Graph_It](../Companies/Atari/Enhancements_to_Graph_It/README.md)
 - [Family_Budgets](../Family_Budgets/README.md)
 - [Family_Cash_Flow](../Family_Cash_Flow/README.md)
 - [Family_Finances](../Family_Finances/README.md)
@@ -376,8 +376,8 @@
 - [Graph It II](../Graph_It_II/README.md)
 - [Zinsen_und_Tilgung](../Zinsen_und_Tilgung/README.md)
 - [Familien_Finanzen](../Familien_Finanzen/README.md)
-- [Haushalts-Buch](../Haushalts-Buch/README.md)
-- [Haushalts-Planung](../Haushalts-Planung/README.md)
+- [Haushalts-Buch](../Companies/Atari/Haushalts-Buch/README.md)
+- [Haushalts-Planung](../Companies/Atari/Haushalts-Planung/README.md)
 
 #### Datenbanken
 - [Artikelverwaltung](../Companies/Atari/Artikelverwaltung/README.md)
@@ -435,12 +435,12 @@
 - Spielend lernen mit Atari-Programmen
 ##[Aufgepasst-Streit der Käfer](../Companies/Atari/Aufgepasst-Streit_der_Kaefer/README.md) 
 ##[Beeil Dich-Verdreht (TXG 9501)](../Companies/Atari/Beeil_Dich-Verdreht/README.md) 
-##[Bonbonglas-Chaos](../Bonbonglas-Chaos/README.md) 
-##[Golf-Balkenrechnen](../Golf-Balkenrechnen/README.md) 
+##[Bonbonglas-Chaos](../Companies/Atari/Bonbonglas-Chaos/README.md) 
+##[Golf-Balkenrechnen](../Companies/Atari/Golf-Balkenrechnen/README.md) 
 ##[Schluck / Richtungspfeile TXG 9502](../Schluck-Richtungspfeile/README.md) 
 ##[Ufos-Blitzschnell](../Ufos-Blitzschnell/README.md) 
 ##[Himmel Schreiber (RX8059, DXG 5704)](../Companies/Atari/Himmel_Schreiber/README.md) 
-##[Buchstabenlotterie - DXG 5705 ; Original: unreleased Milliken game 'Pop'N Spell' (RX8058)](../Buchstaben_Lotterie/README.md) 
+##[Buchstabenlotterie - DXG 5705 ; Original: unreleased Milliken game 'Pop'N Spell' (RX8058)](../Companies/Atari/Buchstaben_Lotterie/README.md) 
 
 - Textverarbeitung
 ##[Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Schreiber/README.md) 
@@ -499,26 +499,26 @@ The below broken links will be filled up with content in the future, meanwhile, 
 ## [Atari Grafieken (Cassette: TXN 4109)](../Companies/Atari/Atari_Grafieken/README.md)
 ## [Atari Kaartsysteem](../Companies/Atari/Atari_Kaartsysteem/README.md)
 ## [Atari Statistieken](../Companies/Atari/Atari_Statistieken/README.md)
-## [Huishoud-Boek (Disk: DXN 421)](../Huishoud-Boek/README.md)
+## [Huishoud-Boek (Disk: DXN 421)](../Companies/Atari/Huishoud-Boek/README.md)
 - Algemene Ontwikkeling
 ## [Atari Energie](../Companies/Atari/Atari_Energie/README.md)
 ## [Bioritme (Cassette: TXN 4107)](../Bioritme/README.md)
 ## [Koninkrijk](../Koninkrijk/README.md)
 - Edukatie
-## [Europese Landen en Hoofdsteden (Cassette: TXN 4114)](../Europese_Landen_en_Hoofdsteden/README.md)
+## [Europese Landen en Hoofdsteden (Cassette: TXN 4114)](../Companies/Atari/Europese_Landen_en_Hoofdsteden/README.md)
 ## [Galgje (Cassette: TXN 4108)](../Galgje/README.md)
 - Entertainment
 ## [Blackjack (Cassette: TXN 4105)](../Blackjack/README.md)
 - Demo
-## [Atari Demo disk (Disk: DXN 411)](../Atari_Demo_disk/README.md)
+## [Atari Demo disk (Disk: DXN 411)](../Companies/Atari/Atari_Demo_Disk/README.md)
 
 ### United Kingdom - Atari Corporation UK
 
 - Education
-##[European Countries and Capitals - (Cassette: CX 4114)](../European_Countries_and_Capitals/README.md) 
+##[European Countries and Capitals - (Cassette: CX 4114)](../Companies/Atari/European_Countries_and_Capitals/README.md) 
 
 - Games
-##[Atari Compilation - (Cassette: TX 9043)](../Atari_Compilation/README.md) 
+##[Atari Compilation - (Cassette: TX 9043)](../Companies/Atari/Atari_Compilation/README.md) 
 ##[Black Lamp (TX 9049)](../Companies/Atari/Black_Lamp/README.md) 
 ##[Chess (cassette UKC1004)](../Companies/Atari/Chess/README.md) 
 ##[Compilation A (TXP7100)](../Companies/Atari/Compilation_A/README.md) 
@@ -547,7 +547,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 ##[Software Pack - (Disk: DX 1003)](../Software_Pack/README.md) 
 
 ## Demo
-- [Atari In-Store Demonstration Program 1982](../In-Store_Demonstration_Program/README.md)
+- [Atari In-Store Demonstration Program 1982](../Companies/Atari/In-Store_Demonstration_Program/README.md)
 - [Atari Demonstration Program](../Companies/Atari/Atari_Demonstration_Program/README.md)
 - [GTIA_Demonstration_Diskette_APX-20104](../GTIA_Demonstration_Diskette_APX-20104/README.md)
 - [Fandal's demo site](http://a8.fandal.cz/demos.php?name=A&butt_details_x=&from=150)
@@ -565,8 +565,8 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [BEWE DOS 1.30 Manual](../Companies/BEWESOFT/BEWE_DOS_1.30_Manual/README.md)
 - [Bibo-DOS](../Companies/CompyShop/BIBO-DOS/README.md)
 - [LiteDOS](http://www.mr-atari.com/Mr.Atari/LiteDOS/)
-- [INDUS_CPM_2.2](../INDUS_CPM_2.2/README.md)
-- [INDUS_GT_Synchromesh](../Indus_GT/INDUS_GT_Synchromesh/README.md)
+- [INDUS_CPM_2.2](../Companies/Indus_Systems/Indus_GT/Indus_CPM_2.2/README.md)
+- [INDUS_GT_Synchromesh](../Companies/Indus_Systems/Indus_GT/Indus_GT_Synchromesh/README.md)
 - [MyDOS](../DOS/MyDOS/README.md)
 - [OSS OS/A+](../OSS_OS-A_/README.md)
 - [OSS_A__2](../OSS_A__2/README.md)
@@ -637,14 +637,14 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 ### Disk Operating Systems (DOS)
 #[Atari DOS 2.0S Source Code](http://data.atariwiki.org/DOC/Inside_Atari_DOS_GBXL.pdf) ; Inside Atari DOS-Bill Wilkinson ; size: 39.8 MB
 #[Atari 810 DOS Utilities Source Listing (DOS II)](http://ftp.pigwa.net/stuff/collections/Atari%20documents/Technical%20Documents/) ; size: 46 MB
-#[Atari_815_DUAL_DISK_CONTROLLER](../Hardware/Disk_Drives/Atari_815/Atari_815_DUAL_DISK_CONTROLLER/README.md) 
+#[Atari_815_DUAL_DISK_CONTROLLER](../Companies/Atari/Atari_815/Atari_815_DUAL_DISK_CONTROLLER/README.md) 
 #[Atari_DOS_II_Assembly_Source_Listing](../DOS/Atari_DOS_II_Assembly_Source_Listing/README.md) 
 #[Atari_DOS_2.5_Source_Code](../DOS/Atari_DOS_2.5_Source_Code/README.md) 
 #[MyDOS 4.51 source code](attachments/Mydos451.zip) 
 #[SuperDOS 5.1 source code](../SuperDOS/README.md) 
 
 ### Drivers
-#[Original_CX85_Keyboard_Handler](../Original_CX85_Keyboard_Handler/README.md) 
+#[Original_CX85_Keyboard_Handler](../Companies/Atari/Atari_CX85/Original_CX85_Keyboard_Handler/README.md) 
 
 ### Games (in the sequence the authors released the sources to the public)
 #[Eastern_Front_1941](../Eastern_Front_1941/README.md) ; 1981 from Chris Crawford
@@ -658,7 +658,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 #[Blue Max](../Companies/Synapse_Software/Blue_Max/README.md) ; 2016 from Bob Polin
 #[Pong](../Pong/README.md) ; 1986 from Gary S. Domrow
 #[ATARI 800 CHECKERS DISPLAY BY C. SHAW 3/31/80](../Companies/Atari/Checkers_Display/README.md) ; 2017 from Carol Shaw
-#[PAC-MAN](../PAC-MAN/README.md) 
+#[PAC-MAN Source Code](../PAC-MAN/README.md) 
 
 ### Programming Languages
 Assembler/Debugger:
@@ -671,7 +671,7 @@ Assembler/Debugger:
 #[OSS MAC XE](https://atariwiki.org/wiki/Wiki.jsp?page=Mac65) 
 #[OSS DDT](https://atariwiki.org/wiki/Wiki.jsp?page=Mac65) 
 #[Synapse_Assembler](../Synapse_Assembler/README.md) 
-#[A65_Assembler](../A65_Assembler/README.md) 
+#[A65_Assembler](../Languages/Assembler/A65_Assembler/README.md) 
 #[Bibo-Assembler](attachments/BIBO.asm) 
 
 Action!:

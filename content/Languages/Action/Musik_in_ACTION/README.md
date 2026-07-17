@@ -9,7 +9,7 @@ Published: Computer Kontakt (CK) 10/ 85
 ---
 ## Peter's Assemblerecke
 # Musik in Action!
-In der Assemblerecke dieses Monats gibt es eine besondere Premiere: Das erste Action!-Programm, das wir in Computer-Kontakt abdrucken, wenn nicht sogar dis erste in der gesamten deutschen Computer- Literatur. Action! ist schlicht gesagt eines der besten Software-Pakete, die für Atari-Computer je entwickelt wurden. Russ Wetmore bezeichnet es in einem Artikel ([Analog 7/ 85, S. 23](../../../Getting_in_on_the_Action_1/README.md)) als "Programmer's Dream' und ich kann Russ wirklich nur voll unterstützen.
+In der Assemblerecke dieses Monats gibt es eine besondere Premiere: Das erste Action!-Programm, das wir in Computer-Kontakt abdrucken, wenn nicht sogar dis erste in der gesamten deutschen Computer- Literatur. Action! ist schlicht gesagt eines der besten Software-Pakete, die für Atari-Computer je entwickelt wurden. Russ Wetmore bezeichnet es in einem Artikel ([Analog 7/ 85, S. 23](../Articles/Getting_in_on_the_Action_1/README.md)) als "Programmer's Dream' und ich kann Russ wirklich nur voll unterstützen.
 
 Wer bisher noch keine eigenen Erfahrungen mit Action! sammeln konnte, sollte deshalb den Kasten "Was ist Action?" lesen. Dort finden Sie einige zum Verständnis wesentliche Punkte kurz zusammengefasst. Es muss vorausgeschickt werden, dass man zum Eintippen des Listings unbedingt eine Action!-Cartridge benötigt, bestimmt eine bittere Pille für alle Leser der Assemblerecke, die keine besitzen. Vielleicht ist es aber auch für diesen Leserkreis interessant, einen Einblick in ein Action!-Programm zu bekommen.
 

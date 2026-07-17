@@ -48,14 +48,14 @@ left  6---8---2 right
 
 ## Step 2: The Basic Driver
 
-I start a new, fresh formatted Disk for each new driver. I install a DOS and [Bibo Assembler](../Companies/CompyShop/BIBO_Assembler/README.md) on the disk, along with the Base HID Driver and the HID Device Template Sourcecode.
+I start a new, fresh formatted Disk for each new driver. I install a DOS and [Bibo Assembler](../../../Companies/CompyShop/BIBO_Assembler/README.md) on the disk, along with the Base HID Driver and the HID Device Template Sourcecode.
 
 Each HID Driver Sourcecode consists of two parts:
 
 - the basic part
 - the device dependent part
 
-The [Base HID Driver Sourcecode](../BaseHIDDriver/README.md).
+The [Base HID Driver Sourcecode](../../../BaseHIDDriver/README.md).
 
 The Basic Part handles the generic tasks identical for all USB HID Devices:
 
@@ -249,7 +249,7 @@ STA STICK1
 RTS
 ```
 
-The [Complete Device dependent part](../JoypadRumblePadTwoUsb/README.md) of the Source Code.
+The [Logitech Rumblepad 2 USB Driver](../JoypadRumblePadTwoUsb/README.md) of the Source Code.
 
 ## Step 4: Compile and Test
 

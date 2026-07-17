@@ -12,7 +12,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 ### 1st column
 - [Basic_Algebra_MA](../../../Basic_Algebra_MA/README.md)
 - [Office_Careers_OF](../../../Office_Careers_OF/README.md)
-- [Industrial_Solid-State_Electronics_PL](../../../Industrial_Solid-State_Electronics_PL/README.md)
+- [Industrial_Solid-State_Electronics_PL](../Industrial_Solid-State_Electronics_PL/README.md)
 - [Statistics_ST](../../../Statistics_ST/README.md)
 - [Reading-Development_U](../Reading-Development_U/README.md)
 - [Comprehension-Reading_AB](../Comprehension-Reading_AB/README.md)
@@ -30,7 +30,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Spelling_SP](../../../Spelling_SP/README.md)
 - [Spanish_U-ES](../../../Spanish_U-ES/README.md)
 ### 3rd column
-- [Geometry_MG](../../../Geometry_MG/README.md)
+- [Geometry_MG](../Geometry_MG/README.md)
 - [Digital_Electronics_PD](../Digital_Electronics_PD/README.md)
 - [Supervisory_Practices_SU](../../../Supervisory_Practices_SU/README.md)
 - [Dorsett Atari Basic Sociology (SO)](../../../Basic_Sociology_SO/README.md)
@@ -38,7 +38,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [First_Aid_and_Safety_FA](../../../First_Aid_and_Safety_FA/README.md)
 - [Philosophy_PY](../../../Philosophy_PY/README.md)
 - [World_History_HW](../../../World_History_HW/README.md)
-- [General_Shop_OA](../../../General_Shop_OA/README.md)
+- [General_Shop_OA](../General_Shop_OA/README.md)
 ### 4th column
 - [Principles_of_Accounting_PA](../../../Principles_of_Accounting_PA/README.md)
 - [Business_Communications_BC](../Business_Communications_BC/README.md)
@@ -46,7 +46,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Dorsett Atari Basic Psychology (PS)](../../../Basic_Psychology_PS/README.md)
 - [Physics_PH](../../../Physics_PH/README.md)
 - [Problems_about_Measurement_MM](../../../Problems_about_Measurement_MM/README.md)
-- [Health_Services_Career_HC](../../../Health_Services_Career_HC/README.md)
+- [Health_Services_Career_HC](../Health_Services_Career_HC/README.md)
 - [Effective_Writing_EW](../Effective_Writing_EW/README.md)
 - [Dorsett Atari Basic Electricity (PE)](../../../Basic_Electricity_PE/README.md)
 ### 5th column

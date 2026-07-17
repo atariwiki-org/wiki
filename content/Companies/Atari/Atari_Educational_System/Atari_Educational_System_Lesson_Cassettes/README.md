@@ -51,7 +51,7 @@ AtariWiki highly recommends the findings of tschak909 from AtariAge. Please take
 [Counseling_Procedures_CX6006](../../Counseling_Procedures_CX6006/README.md) ; donated by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.
 [Principles of Accounting - CX6007](../../../../Principles_of_Accounting_CX6007/README.md) ; from Atarimania, thank you so much!
 [Physics CX6008](../../Physics_CX6008/README.md) ; from Atarimania, thank you so much!
-[Great_Classics_CX6009](../../../../Great_Classics_CX6009/README.md) ; from Kay Savetz; Kay, thank you so much to bring this artifact from the dark to the light! We really appreciate your help!
+[Great_Classics_CX6009](../../Great_Classics_CX6009/README.md) ; from Kay Savetz; Kay, thank you so much to bring this artifact from the dark to the light! We really appreciate your help!
 [Business Communications (CX6010)](../../Business_Communications_CX6010/README.md) ; donated by someone who would not like to be mentioned. ; Cassette D is from bob1200xl from AtariAge and the recording was done by Allan Bushman. The community is so lucky you brought us the last piece of the puzzle. Thank you so much. You will never be forgotten.
 [Basic Psychology (CX6011)](../../Basic_Psychology_CX6011/README.md) ; thank you Bill Lange and Allan Bushman for providing this treasure to the Atari community. We really owe you very much!
 [Effective_Writing_CX6012](../../../../Effective_Writing_CX6012/README.md) ; donated by by Tempest from AtariAge. Thank you so much! :-) We really appreciate your help for all.

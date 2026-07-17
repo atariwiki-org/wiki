@@ -6,7 +6,7 @@
 - [Blueprint_of_ACTION!_Cart](../Blueprint_of_ACTION!_Cart/README.md)
 - [AtariMax_EXEPACKER_Files_with_bundled_DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
 - [ARGS_RS232_Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (deutsch)
-- [Cartridges](../Cartridges/README.md)
+- [All you ever wanted to know about: Atari Cartridges](../Cartridges/README.md)
 
 ## Controllers
 - [Controller_topics](../Controller_topics/README.md)
@@ -31,8 +31,8 @@
 
 ## Disk Drives
 ### Atari Disk Drives
-- [Atari_810](Disk_Drives/Atari_810/README.md)
-- [Atari_815](Disk_Drives/Atari_815/README.md)
+- [Atari_810](../Companies/Atari/Atari_810/README.md)
+- [Atari_815](../Companies/Atari/Atari_815/README.md)
 - [ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION](../Companies/Atari/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
 - [Atari_1050](../Companies/Atari/Atari_1050/README.md)
 - [Atari_XF551](../Companies/Atari/Atari_XF551/README.md)
@@ -44,10 +44,10 @@
 - [XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
 - [Floppy_2000](Disk_Drives/Floppy_2000/README.md)
 - [HDI_Interface](Disk_Drives/HDI_Interface/README.md) (aka Floppy 3000)
-- [Indus_GT](../Indus_GT/README.md)
-** [Indus_GT_Schematics](../Indus_GT/Indus_GT_Schematics/README.md) 
-** [Indus_GT_Field_Service_Manual](../Indus_GT/Indus_GT_Field_Service_Manual/README.md) 
-** [Indus_GT_Firmware_ROM_Source](../Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
+- [Indus_GT](../Companies/Indus_Systems/Indus_GT/README.md)
+** [Indus_GT_Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md) 
+** [Indus_GT_Field_Service_Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md) 
+** [Indus_GT_Firmware_ROM_Source](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
 - [ASTRA 2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
 - [Percom AT-88](Disk_Drives/Percom_AT-88/README.md)
 ### Upgrades
