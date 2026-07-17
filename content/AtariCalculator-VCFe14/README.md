@@ -1,7 +1,4 @@
----
-title: AtariCalculator-VCFe14
----
-# Atari Calculator @ VCFe 14 (2013 Munich)
+# Atari Calculator at VCFe 14 (2013 Munich)
 
 ## Slides:
 
@@ -9,12 +6,12 @@ title: AtariCalculator-VCFe14
 - PDF: [Vortrag_Wassenberg.pdf](attachments/Vortrag_Wassenberg.pdf)
 
 
-[vcfe14-1.jpg](attachments/vcfe14-1.jpg) 
+![](attachments/vcfe14-1.jpg)
 
-[vcfe14-2.jpg](attachments/vcfe14-2.jpg) 
+![](attachments/vcfe14-2.jpg)
 
-[vcfe14-3.jpg](attachments/vcfe14-3.jpg) 
+![](attachments/vcfe14-3.jpg)
 
-[vcfe14-4.jpg](attachments/vcfe14-4.jpg) 
+![](attachments/vcfe14-4.jpg)
 
 

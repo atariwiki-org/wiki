@@ -1,7 +1,7 @@
----
-title: Basic Sociology SO
----
-# Dorsett Atari Basic Sociology SO ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari Basic Sociology (SO)
+
+Copyright (C) 1983 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Atari Basic Sociology SO](https://archive.org/details/DorsettAtariBasicSociology)
 
@@ -23,22 +23,22 @@ Digitized by: Kay Savetz/Thomas Cherryhomes
 
 Tracks:
 
-so1	Sociology as a Science
-so2	Social Organization
-so3	Process of Sociology
-so4	Culture and Society
-so5	Marriage and Family
-so6	Personality, Society, and Culture
-so7	Social Control, and Social Deviation
-so8	Groups, associations, and Social Institutions
-so9	Social Stratification
-so10	Social Mobility
-so11	Social Power
-so12	Race and Ethnic Relations
-so13	Collective Behavior
-so14	The Population Explosion
-so15	Urbanization
-so16	Social and Cultural Change
+- so1	Sociology as a Science
+- so2	Social Organization
+- so3	Process of Sociology
+- so4	Culture and Society
+- so5	Marriage and Family
+- so6	Personality, Society, and Culture
+- so7	Social Control, and Social Deviation
+- so8	Groups, associations, and Social Institutions
+- so9	Social Stratification
+- so10	Social Mobility
+- so11	Social Power
+- so12	Race and Ethnic Relations
+- so13	Collective Behavior
+- so14	The Population Explosion
+- so15	Urbanization
+- so16	Social and Cultural Change
 
 Tracks (size in sum: 1.8 GB):
 

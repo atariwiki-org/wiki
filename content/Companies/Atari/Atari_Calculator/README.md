@@ -56,7 +56,7 @@ Atari Calculator Cartridge Specifications from Carol Shaw from March 1979 (1.2 M
 
 Atari Calculator Cheat Sheet [Atari_Calculator-Cheat_Sheet.pdf](attachments/Atari_Calculator-Cheat_Sheet.pdf) from [inverseatascii](https://inverseatascii.info/) 
 
-Atari Calculator on the 14th Vintage Computer Festival Europe: [AtariCalculator-VCFe14](../../../AtariCalculator-VCFe14/README.md) 
+Atari Calculator on the 14th Vintage Computer Festival Europe: [Atari Calculator at VCFe 14 (2013 Munich)](../../../AtariCalculator-VCFe14/README.md) 
 ## References
 - [Atari Calculator source code](https://archive.org/details/ColleenCalculator) ; Thank you so much Harry & Kay for your help in getting the code. We really appreciate your help, please go ahead! :-)))
 - [Atari 400-800 Operating System Source Listing of the floating point routines](https://archive.org/details/ColleenFloatingPointRoutines) ; Thank you so much Harry & Kay for your help in getting the code. We really appreciate your help, please go ahead! :-)))

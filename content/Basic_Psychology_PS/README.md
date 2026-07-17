@@ -1,4 +1,4 @@
-# Dorsett Atari Basic Psychology PS
+# Dorsett Atari Basic Psychology (PS)
 
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
@@ -23,22 +23,22 @@ Digitized by: Kay Savetz/Thomas Cherryhomes
 
 Tracks:
 
-Ps1	General Psychology
-Ps2	Heredity and Maturity
-Ps3	Sensory Processes and Vision
-Ps4	Other Senses and the Nervous System
-Ps5	Sensory Preemption
-Ps6	Principles of Learning; Conditioning
-Ps7	Operant conditions; Instrumental Learning
-Ps8	Human Learning
-Ps9	How to learn and Remember
-Ps10	Measurement of Responses
-Ps11	Psychological Testing
-Ps12	Emotional Development and Expression
-Ps13	Personality
-Ps14	Behaviour Disorders
-Ps15	Psychotherapy and Mental Health
-Ps16	Industrial and Applied Psychology
+- Ps1	General Psychology
+- Ps2	Heredity and Maturity
+- Ps3	Sensory Processes and Vision
+- Ps4	Other Senses and the Nervous System
+- Ps5	Sensory Preemption
+- Ps6	Principles of Learning; Conditioning
+- Ps7	Operant conditions; Instrumental Learning
+- Ps8	Human Learning
+- Ps9	How to learn and Remember
+- Ps10	Measurement of Responses
+- Ps11	Psychological Testing
+- Ps12	Emotional Development and Expression
+- Ps13	Personality
+- Ps14	Behaviour Disorders
+- Ps15	Psychotherapy and Mental Health
+- Ps16	Industrial and Applied Psychology
 
 Tracks (size in sum: 1.56 GB):
 

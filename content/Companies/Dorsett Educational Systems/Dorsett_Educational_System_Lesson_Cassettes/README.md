@@ -1,6 +1,6 @@
 # Dorsett Educational System Lesson Cassettes
 
-Lloyd G. Dorsett (Dorsett Educational Systems) produced a lot of Educational System cassettes. Besides the 16 packages from Atari [Atari_Educational_System_Lesson_Cassettes](../../../Atari_Educational_System_Lesson_Cassettes/README.md), Lloyd G. Dorsett offered the 46 packages below, too. Each course has 16 programs on 8 cassettes.
+Lloyd G. Dorsett (Dorsett Educational Systems) produced a lot of Educational System cassettes. Besides the 16 packages from Atari [Atari_Educational_System_Lesson_Cassettes](../../Atari/Atari_Educational_System/Atari_Educational_System_Lesson_Cassettes/README.md), Lloyd G. Dorsett offered the 46 packages below, too. Each course has 16 programs on 8 cassettes.
 Thanks to Michael Current, Thomas Cherryhomes, and Kay Savetz, it was possible to save these courses for generations to come. We can't thank you enough!
 ## Image
 ![](attachments/45packages.jpg)
@@ -33,7 +33,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Geometry_MG](../../../Geometry_MG/README.md)
 - [Digital_Electronics_PD](../Digital_Electronics_PD/README.md)
 - [Supervisory_Practices_SU](../../../Supervisory_Practices_SU/README.md)
-- [Basic_Sociology_SO](../../../Basic_Sociology_SO/README.md)
+- [Dorsett Atari Basic Sociology (SO)](../../../Basic_Sociology_SO/README.md)
 - [Reading-Development_Y](../Reading-Development_Y/README.md)
 - [First_Aid_and_Safety_FA](../../../First_Aid_and_Safety_FA/README.md)
 - [Philosophy_PY](../../../Philosophy_PY/README.md)
@@ -43,12 +43,12 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Principles_of_Accounting_PA](../../../Principles_of_Accounting_PA/README.md)
 - [Business_Communications_BC](../Business_Communications_BC/README.md)
 - [Economics_EC](../../../Economics_EC/README.md)
-- [Dorsett Atari Basic Psychology PS](../../../Basic_Psychology_PS/README.md)
+- [Dorsett Atari Basic Psychology (PS)](../../../Basic_Psychology_PS/README.md)
 - [Physics_PH](../../../Physics_PH/README.md)
 - [Problems_about_Measurement_MM](../../../Problems_about_Measurement_MM/README.md)
 - [Health_Services_Career_HC](../../../Health_Services_Career_HC/README.md)
 - [Effective_Writing_EW](../Effective_Writing_EW/README.md)
-- [Basic_Electricity_PE](../../../Basic_Electricity_PE/README.md)
+- [Dorsett Atari Basic Electricity (PE)](../../../Basic_Electricity_PE/README.md)
 ### 5th column
 - [Mathematics_for_Electronics_ME](../Mathematics_for_Electronics_ME/README.md)
 - [Working_with_Numbers_MN](../../../Working_with_Numbers_MN/README.md)

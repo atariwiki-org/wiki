@@ -38,7 +38,7 @@
 - [Atari_XF551](../Companies/Atari/Atari_XF551/README.md)
 
 ### Third Party Disk Drives
-- [Happy_Computers_Upgrades](../Happy_Computers_Upgrades/README.md)
+- [Happy Computers Floppy Upgrade](../Happy_Computers_Upgrades/README.md)
 - [CompyShop_Speedy_Upgrades](../CompyShop_Speedy_Upgrades/README.md)
 - [Turbo1050_Upgrades](../Turbo1050_Upgrades/README.md)
 - [XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
@@ -48,7 +48,7 @@
 ** [Indus_GT_Schematics](../Indus_GT/Indus_GT_Schematics/README.md) 
 ** [Indus_GT_Field_Service_Manual](../Indus_GT/Indus_GT_Field_Service_Manual/README.md) 
 ** [Indus_GT_Firmware_ROM_Source](../Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
-- [ASTRA_2001](../ASTRA_2001/README.md)
+- [ASTRA_2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
 - [Percom AT-88](Disk_Drives/Percom_AT-88/README.md)
 ### Upgrades
 

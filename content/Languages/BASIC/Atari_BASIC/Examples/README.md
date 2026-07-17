@@ -15,7 +15,7 @@ That's all! Enjoy! :-)
 
 - [SDG_Statistical_Data_Graphics_and_Analysis](../../../../SDG_Statistical_Data_Graphics_and_Analysis/README.md) ; von Claudio Fernandez Loquenz. Gigantisches Statistik-Paket für den Atari. Es nicht zu kennen, ist eine Bildungslücke. Veröffentlicht im Abbuc Sondermagazin Nummer 40 als Beilage. Vielen lieben Dank an den [Abbuc e. V.](http://www.abbuc.de), das ist ein Hammer-Programm!
 
-- [Dieter_Gretzschel_Old-Man-Tower](../../../../Dieter_Gretzschel_Old-Man-Tower/README.md) ; diese Seite ist den Arbeiten von Dieter Gretzschel (Old-Man-Tower) gewidmet
+- [Dieter_Gretzschel_Old-Man-Tower](../../../../People/Dieter_Gretzschel_Old-Man-Tower/README.md) ; diese Seite ist den Arbeiten von Dieter Gretzschel (Old-Man-Tower) gewidmet
 
 ## Atari BASIC–Funktionenerweiterungen
 (die Programme sind exklusiv beim PD-Service des WASEO erhältlich, Diskette 1.000):

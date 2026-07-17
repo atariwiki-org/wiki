@@ -1,4 +1,4 @@
-### 3SDOS - 3Sector Read-Only DOS
+### 3SDOS - 3-Sector Read-Only DOS
 
 - Assembler: BiboAssembler 1.21
 - License: GNU Public License, http://www.gnu.org

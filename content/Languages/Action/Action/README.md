@@ -133,7 +133,7 @@ Thank you Alfred
 
 ### Functions
 - [Misc_useful_ACTION!_Functions](../Misc_useful_ACTION!_Functions/README.md) - (DIVERS.ACT)
-- [Chartest](../../../Chartest/README.md) - a group of routines which perform various functions and tests on characters.
+- [Chartest](../Examples/Chartest/README.md) - a group of routines which perform various functions and tests on characters.
 - [Fast Screen IO](../../../Fast_Screen_IO/README.md)
 - [Player_Missile](../../../Player_Missile/README.md)
 - [String_Library_PSC](../../../String_Library_PSC/README.md) - (STRING.ACT)
@@ -250,7 +250,7 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[Getting_in_on_the_Action!_1](../Getting_in_on_the_Action!_1/README.md)|#32 (07/ 85)|en|Tutorial
 |[Getting_in_on_the_Action!_2](../Getting_in_on_the_Action!_2/README.md)|#35 (10/ 85)|en|Tutorial
 |[Sneak_attack](../../../Sneak_attack/README.md)|#36 (11/ 85)|en|Game
-|[Air_hockey](../../../Air_hockey/README.md)|#38 (01/ 86)|en|Game
+|[Air Hockey](../../../Air_hockey/README.md)|#38 (01/ 86)|en|Game
 |[D-Check](../../../D-Check/README.md)|#44 (07/ 86)|en|Tool
 |[Trails](../Articles/Trails/README.md)|#50 (01/ 87)|en|Tool for using the KoalaPad in ACTION!
 |[ACTION!_Zero_Free](../ACTION!_Zero_Free/README.md)|#54 (05/ 87) |en|Tool

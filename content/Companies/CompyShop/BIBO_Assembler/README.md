@@ -22,7 +22,7 @@ Copyright (C) 1986 E. Reuss & Compy-Shop
 - [Block-Fill_and_Block-Move](../../../Block-Fill_and_Block-Move/README.md)
 - [Load_Koala_Pictures](../../../Load_Koala_Pictures/README.md)
 - [How_to_read_a_Key_from_Keyboard_with_ATARI_ROM_Routines](../../../How_to_read_a_Key_from_Keyboard_with_ATARI_ROM_Routines/README.md)
-- [16bit increment and decrement](../../../16bit_increment_and_decrement/README.md)
+- [16bit increment and decrement](../../../Languages/Assembler/Examples/16bit_increment_and_decrement/README.md)
 - [Atari_CIO_Routines](../../../Atari_CIO_Routines/README.md)
 - [List_Directory_Example](../../../List_Directory_Example/README.md)
 - [Disable_BREAK_key](../../../Disable_BREAK_key/README.md)
@@ -32,7 +32,7 @@ Copyright (C) 1986 E. Reuss & Compy-Shop
 - [SIO2USB_Clock_Utility](../../../SIO2USB_Clock_Utility/README.md)
 - [Simple_Disk_Formatter](../../../Simple_Disk_Formatter/README.md)
 - [SIO_Sector_Read_for_Atari_Basic](../../../SIO_Sector_Read_for_Atari_Basic/README.md)
-- [Atari ST Mouse Driver for ACTION!](../../../Atari_ST_Mouse_Driver_for_ACTION/README.md)
+- [Atari ST Mouse Driver for ACTION!](../../../Languages/Action/Examples/Atari_ST_Mouse_Driver_for_ACTION/README.md)
 - [ST_Mouse_Driver_for_Basic](../../../Languages/BASIC/Atari_BASIC/Examples/ST_Mouse_Driver_for_Basic/README.md)
 - [Sweet16Bibo](../../../Sweet16Bibo/README.md) Sweet 16 - a virtual 16bit machine for the 8bit ATARI
 - [Simple Blitter Routine](../../../Languages/BASIC/Turbo-BASIC_XL/Examples/Simple_Blitter/README.md)
