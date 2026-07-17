@@ -1,4 +1,4 @@
-# Atari Energie
+# Atari Energie (TXN4121)
 
 Atari Energie is the Dutch translation of Energy Czar and was published by Atari International (Benelux) B.V. in 1984. This release date is printed on the cover. The software displays (c) 1983. The cassette used the dual audio format.
 

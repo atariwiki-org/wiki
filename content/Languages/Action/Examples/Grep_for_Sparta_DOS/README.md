@@ -1,9 +1,4 @@
----
-title: Grep for Sparta DOS
----
 # Grep for Sparta DOS
-
-
 
 General Information
 

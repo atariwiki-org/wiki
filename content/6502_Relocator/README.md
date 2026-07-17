@@ -1,6 +1,5 @@
----
-title: 6502 Relocator
----
+# 6502 Relocator
+
 General Information
 Author: Bob Sander-Cederlof
 Assembler: generic
