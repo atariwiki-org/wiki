@@ -1,6 +1,3 @@
----
-title: Disable BREAK key
----
 # Disable BREAK Key (for BASIC USR call)
 
 ```
