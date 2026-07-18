@@ -1,6 +1,3 @@
----
-title: Write Sector Example
----
 # Write Sector example
 
 ```

@@ -1,7 +1,7 @@
----
-title: Auto Mechanics KA
----
-# Dorsett Atari Auto Mechanics KA ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari Auto Mechanics KA
+
+Copyright (C) 1983 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Auto Mechanics KA](https://archive.org/details/DorsettAtariAutoMechanics)
 

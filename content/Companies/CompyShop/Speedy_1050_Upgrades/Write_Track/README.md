@@ -1,6 +1,3 @@
----
-title: Write Track
----
 # Speedy 1050 example -- Write Track
 
 ```

@@ -1,7 +1,4 @@
----
-title: Catepill
----
-### Catepill
+# Catepill
 
 General Information
 

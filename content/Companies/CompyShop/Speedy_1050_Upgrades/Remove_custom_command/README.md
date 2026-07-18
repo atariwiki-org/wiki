@@ -1,6 +1,3 @@
----
-title: Remove custom command
----
 # Speedy 1050 example -- remove custom command
 
 ```

@@ -1,7 +1,7 @@
----
-title: OS Versions
----
-# How to find the OS Version of your computer
+# OS Versions
+
+How to find the OS Version of your computer
+
 ## [Atari ROM Checker by JAC!](http://www.wudsn.com/productions/atari800/atariromchecker/help/AtariROMChecker.html)
 ## For ATARI 400 and ATARI 800 Computers
 In Atari BASIC type the following command if you have an 400/800

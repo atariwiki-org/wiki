@@ -1,7 +1,7 @@
----
-title: English as a second language ESL 1-16
----
-# Dorsett Atari English as a second language ESL 1-16 ; Copyright (C) 1981 Dorsett Educational Systems, Inc.
+# Dorsett Atari English as a second language ESL 1-16
+
+Copyright (C) 1981 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari English as a second language ESL 1-16](https://archive.org/details/DorsettAtariEnglishAsASecondLanguage)
 

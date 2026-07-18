@@ -1,7 +1,5 @@
----
-title: Read Track
----
-# Speedy 1050 example -- read tack
+
+# Speedy 1050 example -- Read tack
 
 ```
 0100 ;***********************************

@@ -1,6 +1,5 @@
----
-title: How to read a Key from Keyboard with ATARI ROM Routines
----
+# How to read a Key from Keyboard with ATARI ROM Routines
+
 General Information
 Author: CompyShop
 Assembler: Bibo Assembler

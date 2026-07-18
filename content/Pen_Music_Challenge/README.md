@@ -1,13 +1,10 @@
----
-title: Pen Music Challenge
----
-# Abbuc Music Challenge
+# ABBUC Music Challenge 2003
 
 The ABBUC Music challenge is a small game used during the ABBUC annual meeting in 2003. We had a MP3 music player with 8 Atari game music tracks. The player is presented with the game while listening to the music and must use a Lightpen to select the 8 tracks on the MP3 player.
 
 The program stores the score in PEN.DAT.
 
-All tracknames with an "*" appended are correct, all others are not correct.
+All track names with an "*" appended are correct, all others are not correct.
 
 The program changes the default font to make the "*" invisible on the screen.
 

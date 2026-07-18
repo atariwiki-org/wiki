@@ -1,7 +1,7 @@
----
-title: First Aid and Safety FA
----
-# Dorsett Atari First Aid and Safety FA ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari First Aid and Safety FA
+
+Copyright (C) 1983 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari First Aid and Safety FA](https://archive.org/details/DorsettAtariFirstAidAndSafety)
 

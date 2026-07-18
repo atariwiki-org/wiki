@@ -1,7 +1,7 @@
----
-title: Basic Algebra MA
----
-# Dorsett Atari Basic Algebra MA ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari Basic Algebra MA
+
+Copyright (C) 1983 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Basic Algebra MA](https://archive.org/details/DorsettAtariMathematicsBasicAlgebra)
 

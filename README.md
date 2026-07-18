@@ -34,3 +34,20 @@ The following replacement rules apply.
 | ´+´       | ´Plus´      |
 | ´:´       |  Omit       |
 | ´?´       |  Omit       |
+
+## Article Formatting
+
+- The title is of type "heading 1"
+- The copyright follows, separated by a single empty line.
+- If Part-numbers are known, the are given in parentheses, with comma-separated numbers
+- Do not add colons at the end of a heading line.
+
+````
+# Title (CX1235, TX23456)
+
+Copyright (C) <year> <company>.
+
+<Description>
+
+## ATR-Files
+````

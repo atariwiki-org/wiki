@@ -1,7 +1,7 @@
----
-title: Comprehension-Reading CD
----
-# Dorsett Atari Comprehension-Reading CD ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari Comprehension-Reading CD
+
+Copyright (C) 1983 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Comprehension-Reading CD](https://archive.org/details/DorsettAtariReadingComprehension2)
 
