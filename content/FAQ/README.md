@@ -1,11 +1,9 @@
----
-title: FAQ
----
 # Atari Wiki FAQ
 
 __Without any doubt the very best FAQ for Atari was made by Prof. Michael Current: [Atari 8-bit FQA](../atari8bitfaq/README.md) ; highly recommended by AtariWiki! ; Thank you so much Michael, you are really of great help.__
 
 Besides the above, the intention of the Atari Wiki FAQ is to provide the reader with recent questions about this website, common problems and receipts on how to do things the right way.
+
 ## How to...
 - [get an account as an author for the Atari Wiki](https://atariwiki.org/wiki/Wiki.jsp?page=How%20to%20get%20Wiki%20edit%20permissions)
 - [create new pages in the Atari Wiki](https://atariwiki.org/wiki/Wiki.jsp?page=How%20to%20create%20new%20pages%20in%20the%20Atari%20Wiki)

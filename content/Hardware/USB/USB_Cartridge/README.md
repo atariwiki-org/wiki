@@ -1,7 +1,6 @@
----
-title: USB Cartridge
----
-### Project USB Cartridge
+# USB Cartridge
+
+## Project USB Cartridge
 
 - Project Name  : USB Cartridge with two USB Slots
 - Project Start : Summer 2002

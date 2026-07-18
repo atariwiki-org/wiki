@@ -1,7 +1,7 @@
----
-title: Health Services Career HC
----
-# Dorsett Atari Health Services Career ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari Health Services Career HC
+
+Copyright (C) 1983 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Health Services Career](https://archive.org/details/DorsettAtariHealthServicesCareer)
 

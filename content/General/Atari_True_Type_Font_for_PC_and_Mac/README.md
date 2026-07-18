@@ -1,7 +1,5 @@
----
-title: Atari True Type Font for PC and Mac
----
 # Atari TrueType Font for PC and Mac
+
 Atari Classic TrueType Font created by [Mark L. Simonson](http://www2.bitstream.net/~marksim/atarimac/) (v.2.0-2016) ; Copyright (C) 1998, 2016 by Mark L. Simonson
 
 Thank you so much Mark, we really would like to thank you for your work. Especially for the German version. The German users are really happy about it and appreciate your contribution very much. Please go ahead!

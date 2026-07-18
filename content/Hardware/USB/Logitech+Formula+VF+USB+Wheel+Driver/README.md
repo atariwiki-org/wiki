@@ -1,6 +1,3 @@
----
-title: Logitech+Formula+VF+USB+Wheel+Driver
----
 # Logitech Formula Vibration Feedback Wheel USB Driver
 
 

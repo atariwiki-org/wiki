@@ -1,4 +1,4 @@
-# Speedy 1050 example -- Install a custom command
+# Speedy 1050 example - Install a custom command
 
 ```
 0100 ;***************************************

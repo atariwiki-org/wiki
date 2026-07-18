@@ -1,6 +1,3 @@
----
-title: File Suffix
----
 # File Suffix for Atari disk files
 ![](attachments/Suffix.jpg)
 File Suffix taken from the Atari Disk Operating System II-Reference Manual, page 19

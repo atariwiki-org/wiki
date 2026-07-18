@@ -1,6 +1,3 @@
----
-title: ProjUSBConvFivePic
----
 # USB Coding Workout 9.12.-11.12.2005 in Frankfurt Heddernheim
 
 Participants:

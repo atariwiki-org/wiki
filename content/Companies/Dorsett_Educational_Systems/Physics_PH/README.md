@@ -1,7 +1,7 @@
----
-title: Physics PH
----
-# Dorsett Atari Physics PH ; Copyright (C) 1982 Dorsett Educational Systems, Inc.
+# Dorsett Atari Physics PH
+
+Copyright (C) 1982 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Physics PH](https://archive.org/details/DorsettAtariPhysics)
 

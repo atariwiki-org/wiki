@@ -1,10 +1,4 @@
----
-title: Driver for Logitech Formula GP Analog with Rockfire USB Adapter
----
 # Driver for Logitech Formula GP Analog with Rockfire USB Adapter
-
-
-
 
 Tested with a Logitec Formula GP Wheel (Analog Version) and a Rockfire USB Adapter set to switch "1". Other Logitech Wheels might work. Please send feedback.
 

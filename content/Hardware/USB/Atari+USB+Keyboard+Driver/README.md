@@ -1,6 +1,3 @@
----
-title: Atari+USB+Keyboard+Driver
----
 # Atari USB Keyboard Driver
 
 first BETA Version, 15.9.2004

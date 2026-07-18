@@ -1,6 +1,3 @@
----
-title: Indus GT Schematics
----
 # Indus GT Schematics
 
 ![](attachments/indus1-1.GIF)

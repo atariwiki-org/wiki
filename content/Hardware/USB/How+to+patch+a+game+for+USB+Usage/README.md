@@ -1,13 +1,10 @@
----
-title: How+to+patch+a+game+for+USB+Usage
----
 # How to patch a Game for USB Usage
 
 All necessary files and tools are on the attached Disk image.
 
 ## The Game
 
-For this documentation I used the game "Trailbalzer" . The original Trailblazer Binary is on the attached Disk Image.
+For this documentation I used the game "Trailbalzer". The original Trailblazer binary is on the attached disk image.
 
 ## Step 1: Examine the Game Binary
 

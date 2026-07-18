@@ -1,6 +1,3 @@
----
-title: ProjUSBConvThreePic
----
 # Pictures of the Coding Session in Frankfurt
 
 14-16. January 2005

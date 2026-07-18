@@ -1,9 +1,9 @@
----
-title: U.S. Government Gv
----
-# Dorsett Atari U.S. Government Gv ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari U.S. Government GV 
+
+Copyright (C) 1983 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
-- [Dorsett Atari U.S. Government Gv](https://archive.org/details/DorsettAtariUSGovernment)
+- [Dorsett Atari U.S. Government GV](https://archive.org/details/DorsettAtariUSGovernment)
 
 This is an archive of the "US Government" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
 

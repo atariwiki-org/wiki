@@ -1,7 +1,7 @@
----
-title: Philosophy PY
----
-# Dorsett Atari Philosophy PY ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari Philosophy PY
+
+Copyright (C) 1983 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Philosophy PY](https://archive.org/details/DorsettAtariPhilosophy)
 

@@ -1,7 +1,7 @@
----
-title: Digital Electronics PD
----
-# Dorsett Atari Digital Electronics PD ; Copyright (C) 1982 Dorsett Educational Systems, Inc.
+# Dorsett Atari Digital Electronics PD
+
+Copyright (C) 1982 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Digital Electronics PD](https://archive.org/details/DorsettAtariDigitalElectronics)
 

@@ -1,7 +1,5 @@
----
-title: Check and compare files with a Mac in the Terminal app
----
 # Check and compare files with a Mac in the Terminal app
+
 There are different ways to check and compare files on a Mac in the Terminal app. We introduce just some, the user can work with:
 
 SHA-1:

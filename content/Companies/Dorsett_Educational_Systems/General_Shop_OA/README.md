@@ -1,7 +1,7 @@
----
-title: General Shop OA
----
-# Dorsett Atari General Shop OA ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari General Shop OA
+
+Copyright (C) 1983 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari General Shop OA](https://archive.org/details/DorsettAtariGeneralShopPractices)
 

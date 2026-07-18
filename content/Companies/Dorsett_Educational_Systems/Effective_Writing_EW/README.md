@@ -1,7 +1,7 @@
----
-title: Effective Writing EW
----
-# Dorsett Atari Effective Writing EW ; Copyright (C) 1982 Dorsett Educational Systems, Inc.
+# Dorsett Atari Effective Writing EW
+
+Copyright (C) 1982 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Effective Writing EW](https://archive.org/details/DorsettAtariEffectiveWriting)
 

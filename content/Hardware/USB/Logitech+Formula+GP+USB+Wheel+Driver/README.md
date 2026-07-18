@@ -1,8 +1,4 @@
----
-title: Logitech+Formula+GP+USB+Wheel+Driver
----
 # Logitech Formula GP USB Driver
-
 
 Tested with a Logitec Formula GP Wheel USB. Other Logitech Wheels might work. Please send feedback.
 

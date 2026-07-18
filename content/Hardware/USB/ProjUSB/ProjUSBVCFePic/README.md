@@ -1,6 +1,3 @@
----
-title: ProjUSBVCFePic
----
 # Picture from the Vintage Computer Festival Europe, Munich 2005
 
 Pictures taken by Michael Vogt

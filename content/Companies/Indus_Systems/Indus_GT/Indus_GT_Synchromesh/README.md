@@ -1,7 +1,4 @@
----
-title: INDUS GT Synchromesh
----
-# PUT SYNCHROMESH IN HIGH GEAR
+# INDUS GT - PUT SYNCHROMESH IN HIGH GEAR
 
 by Richard Q. Fox
 
@@ -12,7 +9,7 @@ is maintained.)
 
 The INDUS GT disk drive for the Atari is capable of reading disk
 data at 2 to 4 times the speed of other disk drives. However, the
-software supplied withit takes so long to load in, that any
+software supplied with it takes so long to load in, that any
 advantage is lost. This article describes a procedure for making
 a boot-load Synchromesh disk for the INDUS which loads in just a
 few seconds. With this disk, Synchromesh is more practical. The

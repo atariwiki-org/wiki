@@ -1,6 +1,3 @@
----
-title: Action and BBS Express PRO Tutorial
----
 # Action! and BBS Express! PRO Tutorial
 
 

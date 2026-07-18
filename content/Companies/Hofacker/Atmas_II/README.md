@@ -1,7 +1,6 @@
----
-title: Atmas II
----
-# ATMAS-II Makroassembler, Editor und Maschinensprache-Monitor (C) by Peter Finzel
+# ATMAS-II Makroassembler, Editor und Maschinensprache-Monitor
+
+Copyright (C) by Peter Finzel
 
 ## ATR-Images
 - [atmas2a.atr](attachments/atmas2a.atr) ; ATMAS-II Diskette - Teil A

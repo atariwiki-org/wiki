@@ -1,7 +1,7 @@
----
-title: Industrial Solid-State Electronics PL
----
-# Dorsett Atari Industrial Solid-State Electronics PL ; Copyright (C) 1981 Dorsett Educational Systems, Inc.
+# Dorsett Atari Industrial Solid-State Electronics PL
+
+Copyright (C) 1981 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Industrial Solid-State Electronics PL](https://archive.org/details/DorsettAtariIndustrialSolid-StateElectronics)
 
