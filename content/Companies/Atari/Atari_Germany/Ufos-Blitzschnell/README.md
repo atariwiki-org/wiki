@@ -1,7 +1,7 @@
----
-title: Ufos-Blitzschnell
----
-# Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 (C) 1983 Atari Elektronik Vertriebsgesellschaft mbH
+# Ufos / Blitzschnell (DXG 5711 bzw. TXG 9511)
+
+Copyright (C) 1983 Atari Elektronik Vertriebsgesellschaft mbH
+
 Vielen lieben Dank an Helmut Weidner, ohne ihn wäre diese seltene Software wahrscheinlich verloren gegangen.
 ## CAS-Images
 - [Ufos-Blitzschnell_TXG-9511_side_a_Ufos.cas](attachments/Ufos-Blitzschnell_TXG-9511_Side_A_Ufos.cas) ; Danke an Mr. Bacardi fürs konvertieren :-)

@@ -1,7 +1,5 @@
----
-title: CSM_ASM_Teil8
----
 # 6502 Programmieren - Teil 8
+
 ### von Uwe Röder
 
 Hallo Freaks!

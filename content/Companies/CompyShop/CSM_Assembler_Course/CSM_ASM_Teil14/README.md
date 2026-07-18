@@ -1,7 +1,5 @@
----
-title: CSM_ASM_Teil14
----
 # 6502 Programmieren - Teil 14
+
 ### von Uwe Röder
 
 In dieser Folge möchte ich Ihnen die Programmierung von Interrupts zeigen, die ja eh nur in Maschinensprache zu realisieren ist.

@@ -1,7 +1,6 @@
----
-title: Atari DOS XE
----
-# Atari DOS XE (C) Atari 1988
+# Atari DOS XE
+
+Copyright (C) Atari 1988.
 
 ## Manual:
 - [Atari DOS XE Owner's manual](attachments/Atari_DOS_XE_Owners_manual.txt) TXT file

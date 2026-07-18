@@ -22,7 +22,7 @@ In der Regel besteht das DOS aus zwei Teilen:
 ## Disk Operating Systems for the Atari:
 - [Atari_DOS_II_2.0S](../Atari_DOS_II_2.0S/README.md) of 1980
 - [Atari_DOS_2.5](../Atari_DOS_2.5/README.md) of 1984
-- [Atari_DOS_4](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md) also known as ANTIC Dos or QDOS of 1984
+- [Atari Dos 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md) also known as ANTIC Dos or QDOS of 1984
 - [BW-DOS](../BW-DOS/README.md) of 1995
 - [MyDOS](MyDOS/README.md)
 - [OSS_A__2](../OSS_A__2/README.md)

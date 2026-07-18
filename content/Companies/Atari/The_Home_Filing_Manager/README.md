@@ -1,8 +1,6 @@
----
-title: The Home Filing Manager
----
-# Atari The Home Filing Manager CX8129
-The Home Filing Manager is a databank program Atari provided in 1982
+# Atari The Home Filing Manager (CX8129)
+
+The Home Filing Manager is a database program Atari provided in 1982
 
 ## ATR Images
 - [The_Home_Filing_Manager-Basic.atr](attachments/The_Home_Filing_Manager-Basic.atr) ; thanks to [Atari Preservation Project!](http://a8preservation.com/#/home) ; please use with Basic Cartridge

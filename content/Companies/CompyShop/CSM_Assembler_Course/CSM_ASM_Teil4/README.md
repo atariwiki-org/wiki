@@ -1,7 +1,5 @@
----
-title: CSM_ASM_Teil4
----
 # 6502 Programmieren - Teil 4
+
 ### von R. Wilde
 
 So so, Ihr wagt es also auch diesmal, in den Lehrgang reinzuschauen. Aber ernsthaft, nachdem wir in den ersten drei Lehrgangsteilen reine Theorie hatten, wollen wir uns diesmal in den harten Alltag der Praxis begeben.

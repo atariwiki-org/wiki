@@ -1,7 +1,5 @@
----
-title: CSM_ASM_Teil9
----
 # 6502 Programmieren - Teil 9
+
 ### von Uwe Röder
 
 Herzlich Willkommen zum neunten Teil unseres Assembler-Kurses!!!

@@ -1,7 +1,5 @@
----
-title: CSM_ASM_Teil10
----
 # 6502 Programmieren - Teil 10
+
 ### von Uwe Röder
 
 Hallo und guten Tag zum zehnten Teil unseres Kurses.

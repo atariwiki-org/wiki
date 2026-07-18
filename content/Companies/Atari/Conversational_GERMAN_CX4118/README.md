@@ -1,7 +1,5 @@
----
-title: Conversational GERMAN CX4118
----
-# Conversational GERMAN CX4118
+# Conversational GERMAN (CX4118)
+
 ## ATR-Images:
 made out of the FLAC-Images:
 

@@ -149,7 +149,7 @@ Thank you Alfred
 - [A_pseudo_Assembler_in_Action!](../A_pseudo_Assembler_in_Action!/README.md)
 - [ACTION!_Logo](../ACTION!_Logo/README.md) ACS
 - [ATARI Rainbow Effect](../../../ATARI_Rainbow_effect/README.md)
-- [Access_SpartaDOS_commandline_parameters](../../../Access_SpartaDOS_commandline_parameters/README.md)
+- [Access Sparta DOSCommand Line Parameters](../../../Access_SpartaDOS_commandline_parameters/README.md)
 - [Atari_Fuji_Logo_in_ACTION!](../Atari_Fuji_Logo_in_ACTION!/README.md)
 - [Atari Picture Mirror Tool](../../../Atari_Picture_Mirror_Tool/README.md)
 - [Atari_ST_Mouse_Driver_for_ACTION!](../Atari_ST_Mouse_Driver_for_ACTION!/README.md)

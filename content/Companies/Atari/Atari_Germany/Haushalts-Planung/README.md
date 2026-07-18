@@ -1,15 +1,19 @@
----
-title: Haushalts-Planung
----
-# Haushalts-Planung (C) 1982 Jerry Falkenhan, Atari Elektronik Vertriebsgesellschaft GmbH
+# Haushalts-Planung
+
+Copyritgh (C) 1982 Jerry Falkenhan, Atari Elektronik Vertriebsgesellschaft GmbH
+
 Atari Haushalts-Planung ist die deutsche Version von [Family Budgets (APX-20108)](../../Family_Budgets/README.md) (APX-20108) bzw. Family Budgets aus [Atari Family Finances (CX421)](../../Family_Finances/README.md).
-## ATR-Image:
+
+## ATR-Image
 - [Atari Haushalts-Planung](attachments/Haushalts-Planung.atr) ; Atari Haushalts-Planung von 1982, Basic Modul und 32 KB RAM sind erforderlich
-## Handbuch:
+
+## Handbuch
 Das Handbuch wird noch gesucht, jede Hilfe dies wiederherzustellen ist stets sehr willkommen. :-)))
+
 ## Hauptmenu
 ![](attachments/Haushalts-Planung.jpg)
 Atari Haushalts-Planung - Hauptmenu
+
 ## Screenshots
 ![](attachments/Haushalts-Planung-1.jpg)
 Atari Haushalts-Planung - Screenshot 1

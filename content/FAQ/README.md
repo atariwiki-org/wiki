@@ -3,7 +3,7 @@ title: FAQ
 ---
 # Atari Wiki FAQ
 
-__Without any doubt the very best FAQ for Atari was made by Prof. Michael Current: [The ATARI 8 Bit FAQ](../atari8bitfaq/README.md) ; highly recommended by AtariWiki! ; Thank you so much Michael, you are really of great help.__
+__Without any doubt the very best FAQ for Atari was made by Prof. Michael Current: [Atari 8-bit FQA](../atari8bitfaq/README.md) ; highly recommended by AtariWiki! ; Thank you so much Michael, you are really of great help.__
 
 Besides the above, the intention of the Atari Wiki FAQ is to provide the reader with recent questions about this website, common problems and receipts on how to do things the right way.
 ## How to...
@@ -11,7 +11,7 @@ Besides the above, the intention of the Atari Wiki FAQ is to provide the reader 
 - [create new pages in the Atari Wiki](https://atariwiki.org/wiki/Wiki.jsp?page=How%20to%20create%20new%20pages%20in%20the%20Atari%20Wiki)
 - [Make a PDF file](../General/Make_a_pdf_file/README.md)
 - [make wav-files from an Atari cassette](https://atarinside.dyndns.org/blog/index.php/tutorial-how-to-dump-an-old-atari-cassettetape-to-a-cas-or-wav-file/) ; mega-thanks to AtarInside for the great tutorial! :-)
-- [convert_red_pages_from_manuals_into_white_pages](../General/Convert_red_pages_from_manuals_into_white_pages/README.md)
+- [Convert red pages from manuals into white pages](../General/Convert_red_pages_from_manuals_into_white_pages/README.md)
 - [remove yellowing from an old Atari case](http://atariage.com/forums/topic/138244-how-to-remove-yellowing-from-an-old-atari-case/)
 - [find the revision number of Atari Assembler Editor](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Assembler%20Editor#section-Atari+Assembler+Editor-AssemblerEditorRevisionABCartridgesOutlookForRevisionCAndMaybeD)
 - [find the revision number of Atari Basic](../Languages/BASIC/Atari_BASIC/Articles/How_to_find_the_revision_number_of_Atari_Basic/README.md)

@@ -1,7 +1,4 @@
----
-title: Direct Jump into code without automatic complete
----
-# Speedy 1050 Direct Jump example
+# Speedy 1050 Direct Jump example without automatic "C"omplete
 
 ```
 0100 ;*************************************

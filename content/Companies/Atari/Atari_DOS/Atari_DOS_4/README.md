@@ -1,9 +1,4 @@
----
-title: Atari DOS 4
----
-# Atari Dos 4 (aka ANTIC Dos aka QDOS)
-
-
+# Atari Dos 4 (aka ANTIC DOS aka QDOS)
 
 ## Disk
 

@@ -1,7 +1,6 @@
----
-title: Tipp Trainer
----
-# Tipp Trainer ; Copyright (C) 1983 Atari Elektronik Vertriebsgesellschaft mbH
+# Tipp Trainer (TXG 9512)
+
+Copyright (C) 1983 Atari Elektronik Vertriebsgesellschaft mbH
 
 ## CAS-Image (TXG 9512)
 - [Tipp-Trainer.cas](attachments/Tipp-Trainer.cas)

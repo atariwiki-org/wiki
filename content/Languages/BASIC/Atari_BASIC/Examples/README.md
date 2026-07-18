@@ -11,7 +11,7 @@ That's all! Enjoy! :-)
 ## Verknüpfungen
 - [Mr. Bacardis Atari XL Basic Listings](http://ataribasiclistings.mygamesonline.org/) ; extrem empfohlen von AtariWiki! Mit der Bitte um Mithilfe zur Vervollständigung
 
-- [Atari CHIP-Special 1-4](../../../../CHIP-Special/README.md) ; Seite mit allen CHIP-Special-Ausgaben als PDF-Dateien und den Programmen auf ATR-Images. Sehr zu empfehlen! :-)))
+- [CHIP-Special](../../../../CHIP-Special/README.md) ; Seite mit allen CHIP-Special-Ausgaben als PDF-Dateien und den Programmen auf ATR-Images. Sehr zu empfehlen! :-)))
 
 - [SDG_Statistical_Data_Graphics_and_Analysis](../../../../SDG_Statistical_Data_Graphics_and_Analysis/README.md) ; von Claudio Fernandez Loquenz. Gigantisches Statistik-Paket für den Atari. Es nicht zu kennen, ist eine Bildungslücke. Veröffentlicht im Abbuc Sondermagazin Nummer 40 als Beilage. Vielen lieben Dank an den [Abbuc e. V.](http://www.abbuc.de), das ist ein Hammer-Programm!
 

@@ -1,7 +1,5 @@
----
-title: CSM_ASM_Teil3
----
 # 6502 Programmieren - Teil 3
+
 ### von R. Wilde
 
 In der letzten Ausgabe des Magazins hatten wir die Maschinenbefehle des 6502 besprochen. Diesmal sehen wir uns deren Adressierungsarten an.

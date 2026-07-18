@@ -1,7 +1,4 @@
----
-title: GTIA Demonstration Diskette APX-20104
----
-# GTIA Demonstration Diskette APX-20104
+# GTIA Demonstration Diskette (APX-20104)
 
 ## ATR image
 - [APX_GTIA_Demo.atr](attachments/APX_GTIA_Demo.atr)

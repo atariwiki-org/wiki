@@ -1,7 +1,5 @@
----
-title: CSM_ASM_Teil5
----
 # 6502 Programmieren - Teil 5
+
 ### von R. Wilde
 
 Nachdem ich vom letzten Artikel des Lehrganges von Euch keinerlei Reaktionen mehr erhielt, gehe ich diesmal etwas geknickt an diesen Beitrag heran. Allerdings besteht ja auch die Möglichkeit, dass der letzte Teil keine Fragen offen ließ und alle rundum zufrieden stellte.

@@ -1,7 +1,4 @@
----
-title: CSM-Assembler Kurs - CIO und DOS
----
-# Assembler für Fortgeschrittene
+# Assembler für Fortgeschrittene: CIO und DOS
 
 von Uwe Röder, CSM 01/1990
 

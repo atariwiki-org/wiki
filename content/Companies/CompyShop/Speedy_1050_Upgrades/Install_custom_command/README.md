@@ -1,7 +1,4 @@
----
-title: Install custom command
----
-# Speedy 1050 example -- install a custom command
+# Speedy 1050 example -- Install a custom command
 
 ```
 0100 ;***************************************

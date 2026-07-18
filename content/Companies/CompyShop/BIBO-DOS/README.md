@@ -1,7 +1,6 @@
----
-title: Bibo-DOS
----
-# BIBO-DOS Copyright (C) 1988 Compy-Shop, Erwin Reuß & J. Kruszona
+# BIBO-DOS
+
+Copyright (C) 1988 Compy-Shop, Erwin Reuß & J. Kruszona
 
 ## ATR images
 - [BiboDos_5.4RN_en.atr](attachments/BiboDos_5.4RN_en.atr) ; SD format
@@ -13,10 +12,10 @@ title: Bibo-DOS
 - [Bibo-DOS.pdf](attachments/Bibo-DOS.pdf) ; size: 1.8 MB ; German language
 
 ### Images
-![](attachments/BiboDos+5.4RN+%28en%29.jpg)
+![](attachments/BiboDos_5.4RN_en.jpg)
 BIBO-DOS 5.4RF - startscreen English
 
-![](attachments/BiboDos+5.4RF+%28de%29.jpg)
+![](attachments/BiboDos_5.4RF_de.jpg)
 BIBO-DOS 5.4RF - startscreen German
 
 ![](attachments/6.jpg)

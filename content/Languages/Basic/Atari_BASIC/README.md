@@ -183,9 +183,9 @@ Atari BASIC Keywords
 21 - LOAD FILE ERROR
 
 ## Atari BASIC Course: An Invitation to Programming 1-3
-- [Course 1: An Invitation to Programming 1 - Fundamentals of BASIC Programming CX4101](../../../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_1_CX4101/README.md)
-- [Course 2: An Invitation to Programming 2 - Writing Programs one and two CX4106](../../../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_2_CX4106/README.md)
-- [Course 3: An Invitation to Programming 3 - Introduction to Sound and Graphics CX4117](../../../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_3_CX4117/README.md)
+- [An Invitation to Programming 1 - Fundamentals of Basic Programming (CX4101)](../../../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_1_CX4101/README.md)
+- [An Invitation to Programming 2 - Writing Programs one and two (CX4106)](../../../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_2_CX4106/README.md)
+- [An Invitation to Programming 3-Introduction to Sound and Graphics (CX4117)](../../../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_3_CX4117/README.md)
 
 ## Atari BASIC Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie fertig
 - [Programmieren leicht gemacht (TXG4110)](../../../Companies/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)

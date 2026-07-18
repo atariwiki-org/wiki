@@ -1,7 +1,5 @@
----
-title: CSM_ASM_Teil11
----
 # 6502 Programmieren - Teil 11
+
 ### von Uwe Röder
 
 Willkommen zum elften Teil des Assembler-Lehrganges!

@@ -1,7 +1,7 @@
----
-title: Star Raiders
----
-# Star Raiders (C) 1979 Atari and Doug Neubauer
+# Star Raiders
+
+Copyright (C) 1979 Atari and Doug Neubauer
+
 ![](attachments/Star_Raiders_box.jpg)
 
 The impossible has happened! Doug Neubauer, the author of the game, has given us the source code. Sadly, he didn't own an old listing anymore, but Steve Hales (Synapse) did! Kay Savetz has managed everything behind the scenes, so we would like to say:
@@ -18,10 +18,10 @@ If you would like to donate something to archive.org, please use the following [
 
 The Atari community has already started to bring the listing to files, please see at [github.com](https://github.com/XioNYC/StarRaiders) 
 
-## [Star_Raiders_source_code_by_Lorenz_Wiest](Star_Raiders_source_code_by_Lorenz_Wiest/README.md) ; highly recommended!!! Lorenz did a tremendous must see job!!!
+## [Star Raiders source code by Lorenz Wiest](Star_Raiders_source_code_by_Lorenz_Wiest/README.md) ; highly recommended!!! Lorenz did a tremendous must see job!!!
 
 ## CAS Image
-- [Star_Raiders-needs_binary_load_program_from_cassette.cas](attachments/Star_Raiders-needs_binary_load_program_from_cassette.cas) ; cas version of Star Raiders, sold in the late 80's. Needs a [binary loader](../../../../Boot_from_Cassette/README.md) to read in. Thank you so much FloppyDoc for creating the cas file. Stefan for creating the wav file and Mathy for the hardware to make the job possible. :-)
+- [Star_Raiders-needs_binary_load_program_from_cassette.cas](attachments/Star_Raiders-needs_binary_load_program_from_cassette.cas) ; cas version of Star Raiders, sold in the late 80's. Needs a [Casette Boot](../../../../Boot_from_Cassette/README.md) to read in. Thank you so much FloppyDoc for creating the cas file. Stefan for creating the wav file and Mathy for the hardware to make the job possible. :-)
 
 ## Further information
 - [Doug Neubauer's Star Raiders site](http://dougneubauer.com/starraiders/)

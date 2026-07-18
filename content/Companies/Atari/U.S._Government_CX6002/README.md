@@ -1,7 +1,5 @@
----
-title: U.S. Government CX6002
----
-# U.S. Government CX6002
+# U.S. Government (CX6002)
+
 ## Boxcover:
 ![](attachments/U.S._Government_CX6002-Cover.jpg)
 Boxcover of U.S. Government CX6002

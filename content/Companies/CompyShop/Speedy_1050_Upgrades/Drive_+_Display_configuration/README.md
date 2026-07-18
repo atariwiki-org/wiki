@@ -1,7 +1,4 @@
----
-title: Drive + Display configuration
----
-# Speedy 1050 Drive / Display configuration example
+# Speedy 1050 Drive / Display Configuration Example
 
 ```
 0100 ;*************************************

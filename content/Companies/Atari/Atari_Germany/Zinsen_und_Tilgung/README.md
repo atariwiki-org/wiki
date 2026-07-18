@@ -1,20 +1,23 @@
----
-title: Zinsen und Tilgung
----
-# Zinsen und Tilgung TXG5114 (C) 1981 Atari Elektronik Vertriebsgesellschaft GmbH, (C) 1980 Control Data Corporation und Atari, Inc.
+# Zinsen und Tilgung (TXG5114)
+
+(C) 1981 Atari Elektronik Vertriebsgesellschaft GmbH, (C) 1980 Control Data Corporation und Atari, Inc.
 Atari Zinsen und Tilgung ist die deutsche Version von [Mortgage_and_Loan_Analysis](../../../../Mortgage_and_Loan_Analysis/README.md) von 1980. Das deutsche Handbuch ist leider verschollen, jeder Hinweis darauf ist stets sehr willkommen. :-) Daher kann hier nur die englische Originalanleitung angeboten werden.
+
 ## Handbuch
 - [Manual for Mortgage & Loan Analysis (englisch)](attachments/Mortgage_Loan_Analysis_CX4115.pdf)
 - [Handbuch für Zinsen und Tilgung (deutsch)](https://data.atariwiki.org/DOC/Zinsen_und_Tilgung_DXG_4116.pdf) ; 12,9 MB ; deutsches Handbuch ; Mega-Danke an Dirk Tröger (Yellow Man) für das Scannen des sehr seltenen Handbuchs! :-)))
+
 ## ATR-Image ; bitte mit dem BASIC-Cartridge verwenden
 - [Zinsen und Tilgung TXG5114 (Autorun)](attachments/Zinsen_und_Tilgung_TXG5114_Autorun_Control_Data_Corp._1981_Basic.atr) ; Version startet automatisch, ist aber geschützt. Wir danken Mr. Barcardi für die Bereitstellung der Diskette. Bitte weiter so! :-)))
 - [Zinsen und Tilgung TXG5114](attachments/Zinsen_und_Tilgung_TXG5114_Control_Data_Corp._1981_Basic.atr) ; Version startet nicht automatisch und muss vom BASIC-Cartridge aus geladen und gestartet werden. Dafür ist jedoch der Quelltext ungeschützt einsehbar.
+
 ## Box-Bilder
 ![](attachments/Box-front.jpg)
 Zinsen und Tilgung TXG5114 - Vorderseite der Box
 
 ![](attachments/Box-back.jpg)
 Zinsen und Tilgung TXG5114 - Rückseite der Box
+
 ## Bilder
 ![](attachments/ATARI.jpg)
 Zinsen und Tilgung TXG5114 - erstes Bild beim Starten
@@ -24,6 +27,7 @@ Zinsen und Tilgung TXG5114 - zweites Bild beim Starten: Hinweis auf die Control 
 
 ![](attachments/Zinsen_und_Tilgung1.jpg)
 Zinsen und Tilgung TXG5114 - drittes Bild beim Starten
+
 ## Bildschirmfotos
 ![](attachments/Zinsen_und_Tilgung_00.jpg)
 Zinsen und Tilgung TXG5114 - Bildschirmfoto 01
@@ -69,6 +73,7 @@ Zinsen und Tilgung TXG5114 - Bildschirmfoto 14
 
 ![](attachments/Zinsen_und_Tilgung_14.jpg)
 Zinsen und Tilgung TXG5114 - Bildschirmfoto 15
+
 ## CDC-Logo
 ![](attachments/CDC-Logo.png)
 Control Data Corporation - Logo ; Copyright (C) 1980

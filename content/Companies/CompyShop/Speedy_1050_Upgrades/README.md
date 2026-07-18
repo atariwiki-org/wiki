@@ -7,10 +7,10 @@
 - [Speedy 1050 Mini-Speedy Handbuch](attachments/speedyhandbuch.pdf) (German)
 
 ### Articles
-- [Das_SPEEDY-System](Das_SPEEDY-System/README.md) (German, CompyShop Magazin}
+- [Das SPEEDY-System](Das_SPEEDY-System/README.md) (German, CompyShop Magazin}
 
 ### Code
-- [Custom_Disk_Format_Routine](Custom_Disk_Format_Routine/README.md) (Atari 1050 with Compy Shop Speedy)
+- [Custom Disk Format Routine](Custom_Disk_Format_Routine/README.md) (Atari 1050 with Compy Shop Speedy)
 - [Read_Sector_Example](Read_Sector_Example/README.md)
 - [Write_Sector_Example](Write_Sector_Example/README.md)
 - [Get_High_Speed_parameter](Get_High_Speed_parameter/README.md)

@@ -1,7 +1,7 @@
----
-title: Business Communications BC
----
-# Dorsett Atari Business Communications BC ; Copyright (C) 1982 Dorsett Educational Systems, Inc.
+# Dorsett Atari Business Communications BC
+
+Copyright (C) 1982 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Business Communications BC](https://archive.org/details/DorsettAtariBusinessCommunications)
 

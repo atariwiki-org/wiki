@@ -45,10 +45,10 @@
 - [OSS_ASCII-ATASCII_Text_File_Converter](../OSS_ASCII-ATASCII_Text_File_Converter/README.md)
 - [Super_fast_circle_routine](../Super_fast_circle_routine/README.md) from Moj Mikro magazine (posted on AtariAge)
 - [Starting_to_Program_in_6502_Assembly_Code](../Starting_to_Program_in_6502_Assembly_Code/README.md)
-- [Atari_XL.XE_Copy_ROM_to_RAM](../Atari_XL.XE_Copy_ROM_to_RAM/README.md)
+- [Copy OS ROM to RAM](../Atari_XL.XE_Copy_ROM_to_RAM/README.md)
 - [Unused_Opcodes](../Unused_Opcodes/README.md)
 - [Interactive Assembler Tutorials](../Languages/Assembler/Interactive_Assembler_Tutorials/README.md)
-- [A-LANG_-_WAYS_TO_IMPLEMENT_COMPUTER_LANGUAGES_ON_6502s](../A-LANG_-_WAYS_TO_IMPLEMENT_COMPUTER_LANGUAGES_ON_6502s/README.md)
+- [A-LANG: WAYS TO IMPLEMENT COMPUTER LANGUAGES ON 6502s](../A-LANG_-_WAYS_TO_IMPLEMENT_COMPUTER_LANGUAGES_ON_6502s/README.md)
 - [Tricky_Code_that_Always_Skips](../Tricky_Code_that_Always_Skips/README.md)
 - [Self_Modifying_Code](../Self_Modifying_Code/README.md)
 - [Sparta_DOS_X_Hello_World](../Sparta_DOS_X_Hello_World/README.md)
@@ -65,7 +65,7 @@
 - [6502 Coding Algorithms Macro Library](../6502_Coding_Algorithms_Macro_Library/README.md)
 - [6502 Relocator](../6502_Relocator/README.md)
 - [ATARI Basic Autorun Loader](../Languages/BASIC/Atari_BASIC/Examples/Atari_BASIC_Autorun_Loader/README.md)
-- [Enhanced 6502 BASIC source code by Lee Davison](../Languages/BASIC/Enhanced_BASIC/README.md) ; 2-line BASIC for 6502 Computers
+- [Enhanced 6502 BASIC By Lee Davison.](../Languages/BASIC/Enhanced_BASIC/README.md) ; 2-line BASIC for 6502 Computers
 - [Bootloader with Sectorcounter](../Languages/Assembler/Examples/Bootloader_with_Sectorcounter/README.md)
 - [Atari 800 OS Source Listing](../OS/Atari_OS/Atari_800_ROM_OS_Source_Listing/README.md)
 - [Copy OS ROM to RAM](../Languages/Assembler/Examples/Copy_OS_ROM_to_RAM/README.md)
@@ -80,17 +80,17 @@
 - [RAM_Move_Routine_for_Basic](../RAM_Move_Routine_for_Basic/README.md)
 - [Atari 6502 System Equations and Macros](../Atari_System_Equates_and_Macros/README.md)
 - [PSC Simple Debugger](../A_simple_6502_debugger/README.md)
-- [Atari_COM_Filetracer](../Atari_COM_Filetracer/README.md)
+- [Atari COM-File Tracer](../Atari_COM_Filetracer/README.md)
 - [Typo_bug_virus](../Typo_bug_virus/README.md)
 - [Sector_Mapper](../Sector_Mapper/README.md)
 
 ## Courses
 
 ### Chris Crawford's Assembly language course
-- [CHRIS_CRAWFORDS_-_ASSEMBLY_LANGUAGE_COURSE](../CHRIS_CRAWFORDS_-_ASSEMBLY_LANGUAGE_COURSE/README.md)
+- [Chris Crawford's - Assembly Language Course](../CHRIS_CRAWFORDS_-_ASSEMBLY_LANGUAGE_COURSE/README.md)
 
 ### Assembly Course from Z*Magazine
-- [Assembly_Course_from_Z-Magazine](../Assembly_Course_from_Z-Magazine/README.md)
+- [Assembly Language Course (from Z*Magazine)](../Assembly_Course_from_Z-Magazine/README.md)
 
 ### Programming the Atari XL / XE - Assembly language course by Peter Dell
 - [Programming the Atari XL / XE - Peter Dell](http://ftp.pigwa.net/upload2/JAC!/tutorials/Programming%20the%20Atari%20XL_XE/)
@@ -132,26 +132,26 @@
 ## Kurse
 ### CompyShop Magazin-Assembler Kurs
 
-- [Teil 1](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil1/README.md) - Grundlegendes
-- [Teil 2](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil2/README.md) - Befehlsübersicht
-- [Teil 3](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil3/README.md) - Adressierungsarten
-- [Teil 4](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil4/README.md) - Das erste Programm eine einfache Schleife
-- [Teil 5](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil5/README.md) - Bildschirmspeicher löschen
-- [Teil 6](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil6/README.md) - Addieren und Subtrahieren
-- [Teil 7](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil7/README.md) - Befehle zum "Bearbeiten" von Zahlen
-- [Teil 8](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil8/README.md) - Flags (Flaggen)
-- [Teil 9](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil9/README.md) - Vergleichs- und Transportbefehle
-- [Teil 10](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil10/README.md) - JSR, Zusatzbefehle des 65C02
-- [Teil 11](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil11/README.md) - Schleifen
-- [Teil 12](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil12/README.md) - Ausgabe von Zeichen und Texten auf dem Bildschirm
+- [6502 Programmieren - Teil 1](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil1/README.md) - Grundlegendes
+- [6502 Programmieren - Teil 2](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil2/README.md) - Befehlsübersicht
+- [6502 Programmieren - Teil 3](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil3/README.md) - Adressierungsarten
+- [6502 Programmieren - Teil 4](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil4/README.md) - Das erste Programm eine einfache Schleife
+- [6502 Programmieren - Teil 5](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil5/README.md) - Bildschirmspeicher löschen
+- [6502 Programmieren - Teil 6](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil6/README.md) - Addieren und Subtrahieren
+- [6502 Programmieren - Teil 7](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil7/README.md) - Befehle zum "Bearbeiten" von Zahlen
+- [6502 Programmieren - Teil 8](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil8/README.md) - Flags (Flaggen)
+- [6502 Programmieren - Teil 9](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil9/README.md) - Vergleichs- und Transportbefehle
+- [6502 Programmieren - Teil 10](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil10/README.md) - JSR, Zusatzbefehle des 65C02
+- [6502 Programmieren - Teil 11](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil11/README.md) - Schleifen
+- [6502 Programmieren - Teil 12](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil12/README.md) - Ausgabe von Zeichen und Texten auf dem Bildschirm
 - [Teil 13](../Zeile_per_CIO_einlesen_und_Programme_resetfest_machen/README.md) - Zeile per CIO einlesen und Programme RESET-fest machen
-- [Teil 14](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil14/README.md) - Programmierung von Interrupts
+- [6502 Programmieren - Teil 14](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil14/README.md) - Programmierung von Interrupts
 
 ### CompyShop Magazin-Assembler für Fortgeschrittene
 
-- [Teil 1](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_CIO_und_DOS/README.md) - CIO und DOS
-- [Teil 2](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist/README.md) - Displaylist
-- [Teil 3](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist-Interrupts/README.md) - Displaylist-Interrupts
+- [Assembler für Fortgeschrittene: CIO und DOS](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_CIO_und_DOS/README.md) - CIO und DOS
+- [Assembler für Fortgeschrittene: Displaylist](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist/README.md) - Displaylist
+- [Der Display-List-Interrupt](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist-Interrupts/README.md) - Displaylist-Interrupts
 
 ## DEC-HEX bis 255:
 ![](attachments/DEC-HEX_255.jpg)

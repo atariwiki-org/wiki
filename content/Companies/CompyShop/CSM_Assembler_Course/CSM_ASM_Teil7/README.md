@@ -1,7 +1,5 @@
----
-title: CSM_ASM_Teil7
----
 # 6502 Programmieren - Teil 7
+
 ### von Uwe Röder
 
 Sie werden jetzt sicher ziemlich erstaunt darüber sein, dass ich den Assembler-Kurs weiterführe. Reinhard Wilde, der ihn bisher führte, wird in den nächsten Monaten berufsmäßig dermaßen eingespannt werden, dass er die notwendige Zeit für den Kurs nicht mehr wird aufbringen können.
