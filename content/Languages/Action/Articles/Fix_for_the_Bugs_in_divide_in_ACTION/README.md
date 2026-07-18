@@ -1,6 +1,3 @@
----
-title: Fix for the Bugs in divide in ACTION
----
 # Fix for the Bugs in divide in ACTION!
 
 ```

@@ -1,6 +1,3 @@
----
-title: Modulo
----
 # Modulo Funktion: a MOD b
 
 Die Progrmme sind exklusiv beim PD-Service des WASEO erhältlich, Diskette 1.000):

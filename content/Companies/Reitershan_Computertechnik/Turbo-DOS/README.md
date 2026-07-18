@@ -1,7 +1,6 @@
----
-title: Turbo-DOS
----
-# Turbo-DOS XE Copyright (C) 1990 Herbert Barth, Frank Bruchhäuser und Martin Reitershan Computertechnik
+# Turbo-DOS XE
+
+Copyright (C) 1990 Herbert Barth, Frank Bruchhäuser und Martin Reitershan Computertechnik
 
 ## ATR images
 - [TURBO-DOS_XE_1990-SD.atr](attachments/TURBO-DOS_XE_1990-SD.atr) ; SD format

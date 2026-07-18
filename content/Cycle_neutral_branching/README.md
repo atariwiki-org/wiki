@@ -1,6 +1,3 @@
----
-title: Cycle neutral branching
----
 # Cycle neutral branching
 
 General Information

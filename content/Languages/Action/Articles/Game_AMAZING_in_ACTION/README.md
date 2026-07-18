@@ -1,15 +1,12 @@
----
-title: Game AMAZING in ACTION
----
+# Game AMAZING in ACTION
+
 ### General Information
 Author: David Plotkin
 Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: ANTIC Vol. 4, #1 (05/ 85)
----
-# AMAZING
 
-''A challenging maze chase game that demonstrates the speed and versatility of the ACTION! language. Requires ACTION! cartridge from Optimized Systems Software. Works on all Atari memory computers with 32K disk or 24K cassette. Antic Disk subscribers will find a "run-time" version on their disk, for playing without the cartidge.''
+''A challenging maze chase game that demonstrates the speed and versatility of the ACTION! language. Requires ACTION! cartridge from Optimized Systems Software. Works on all Atari memory computers with 32K disk or 24K cassette. Antic Disk subscribers will find a "run-time" version on their disk, for playing without the cartidge.
 
 Amazing is a surprisingly imaginative maze chase game written in ACTION! You are a skinny red X named Gork. All you want from life is to wander the city grid, munching up the energy pellets that the programmer thoughtfully left strewn about.
 

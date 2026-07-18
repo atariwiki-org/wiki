@@ -1,6 +1,5 @@
----
-title: DLI in ACTION
----
+# DLI in ACTION
+
 Joel Gluck asked me how to use
 interrupts from an ACTION program.
 Here are two programs which, respectively,

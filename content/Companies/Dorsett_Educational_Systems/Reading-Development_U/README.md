@@ -1,7 +1,7 @@
----
-title: Reading-Development U
----
-# Dorsett Atari Reading-Development (Reading Comprehension) U ; Copyright (C) 1981 Dorsett Educational Systems, Inc.
+# Dorsett Atari Reading-Development (Reading Comprehension) U
+
+Copyright (C) 1981 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Reading-Development (Reading Comprehension) U](https://archive.org/details/DorsettAtariReadingComprehensionSightWordsLevel12)
 

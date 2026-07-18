@@ -1,7 +1,7 @@
----
-title: Reading-Development Y
----
-# Dorsett Atari Reading-Development (Reading Comprehension) Y ; Copyright (C) 1981 Dorsett Educational Systems, Inc.
+# Dorsett Atari Reading-Development (Reading Comprehension) Y
+
+Copyright (C) 1981 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Reading-Development (Reading Comprehension)Y](https://archive.org/details/DorsettAtariVocabulary)
 

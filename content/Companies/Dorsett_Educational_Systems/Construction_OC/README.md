@@ -1,7 +1,7 @@
----
-title: Construction OC
----
-# Dorsett Atari Construction OC ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari Construction OC
+
+Copyright (C) 1983 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
 - [Dorsett Atari Construction OC](https://archive.org/details/AtariDorsettConstruction)
 

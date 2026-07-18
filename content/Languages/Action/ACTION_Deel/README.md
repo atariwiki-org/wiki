@@ -1,7 +1,4 @@
----
-title: ACTION Deel
----
-### ACTION! Deel
+# ACTION! Deel
 
 ![](attachments/actiondeel.gif)
 

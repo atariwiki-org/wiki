@@ -1,6 +1,3 @@
----
-title: DOS Setup
----
 # DOS Setup
 
 A small tool to copy some files from disk to ramdisk. can be configured by a textfile.

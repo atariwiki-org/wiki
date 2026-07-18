@@ -1,12 +1,11 @@
----
-title: ACTION noch schneller
----
+# ACTION noch schneller
+
 ### General Information
 Author: 	Peter Finzel
 Language: 	ACTION!
 Compiler/Interpreter: 	ACTION!
 Published: 	Computer Kontakt (CK) 6-7/86
----
+
 ## Peter's Assemblerecke
 # Action! noch schneller
 Welcher Atari-Fan kennt ihn nicht, den superflinken ACTION!-Compiler von Optimized Systems Software (OSS)? Ohne Übertreibung ist das die beste und schnellste Programmiersprache für alle 8-Bit Computer von Atari, wenn nicht die schnellste für alle 6502-Computer überhaupt. Und die darf natürlich im Rahmen der Assemblerecke nicht vergessen werden.

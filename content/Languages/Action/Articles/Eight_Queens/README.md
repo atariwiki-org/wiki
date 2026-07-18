@@ -1,6 +1,5 @@
----
-title: Eight Queens
----
+# 8 QUEENS ACTION!
+
 ### General Information
 
 Author: 	Dave Oblad
@@ -8,7 +7,7 @@ Language: 	ACTION!
 Compiler/Interpreter: 	ACTION!
 Published: 	ANTIC Power Computing, September 1985
 ---
-# 8 QUEENS ACTION!
+
 ## 92 chess solutions in 40 seconds
 Program by Dave Oblad
 

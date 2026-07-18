@@ -1,6 +1,5 @@
----
-title: ACTION error codes
----
+# ACTION! error codes
+
 %%tabbedSection
 %%tab-Fehler-Codes
 
