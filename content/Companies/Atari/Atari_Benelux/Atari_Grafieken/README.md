@@ -1,7 +1,5 @@
----
-title: Atari Grafieken
----
 # Atari Grafieken
+
 Atari Grafieken is the Dutch translation of Graph It and was published by Atari International (Benelux) B.V. in 1984.
 
 This software pack consists of two cassettes and contains 4 basic programs:

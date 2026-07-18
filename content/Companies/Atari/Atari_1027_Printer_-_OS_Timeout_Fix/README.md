@@ -1,8 +1,3 @@
----
-title: Atari 1027 Printer - OS Timeout Fix
----
-
-
 # Atari 1027 Printer, OS Timeout Fix
 
 ```

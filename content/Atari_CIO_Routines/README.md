@@ -1,6 +1,3 @@
----
-title: Atari CIO Routines
----
 # Atari CIO Routines
 
 ```

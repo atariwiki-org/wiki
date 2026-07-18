@@ -1,7 +1,4 @@
----
-title: Atari 1050 Alignment procedure
----
-### Atari 1050 Alignment procedure
+# Atari 1050 Alignment procedure
 
 - Switch on drive with no disk
 - shortcut TP7 and TP8

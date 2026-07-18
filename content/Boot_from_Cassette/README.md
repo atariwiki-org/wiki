@@ -1,7 +1,4 @@
----
-title: Boot from Cassette
----
-# Casette boot
+# Casette Boot
 
 ## CAS Image
 - [Binary_Loader_BL-C_0.2.cas](attachments/Binary_Loader_BL-C_0.2.cas) ; CAS image of a boot loader, which afterwards enables the Atari to load a binary file. Please hold START pressed when booting and press RETURN after the beep.

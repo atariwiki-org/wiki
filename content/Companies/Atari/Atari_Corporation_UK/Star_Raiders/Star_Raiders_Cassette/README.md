@@ -1,7 +1,5 @@
----
-title: Star Raiders Cassette
----
-# Star Raiders (no reference number)
+# Star Raiders (Cassette)
+
 Atari Corp UK rereleased this cartridge game as a budget cassette in 1987. In contrast to the cartridge version this cassette contains a loading screen.
 
 The manual is in English, French and Italian.

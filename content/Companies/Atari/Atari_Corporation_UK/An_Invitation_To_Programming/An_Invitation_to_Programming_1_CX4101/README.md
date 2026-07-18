@@ -1,7 +1,4 @@
----
-title: An Invitation to Programming 1 CX4101
----
-# An Invitation to Programming 1 - Fundamentals of Basic Programming CX4101
+# An Invitation to Programming 1 - Fundamentals of Basic Programming (CX4101)
 
 ## ATR-Images:
 [An_Invitation_to_Programming_Side_1_Lessons_1-3.atr](attachments/An_Invitation_to_Programming_Side_1_Lessons_1-3.atr) Lessons 1-3 disk

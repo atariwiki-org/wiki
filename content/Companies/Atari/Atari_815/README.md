@@ -1,6 +1,3 @@
----
-title: Atari 815
----
 # Atari 815 Dual Disk Drive
 
 ## Manual

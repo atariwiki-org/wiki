@@ -1,6 +1,3 @@
----
-title: ARGS ISA PC Interface
----
 # ARGS ISA PC Interface
 
 by Roland Buehler

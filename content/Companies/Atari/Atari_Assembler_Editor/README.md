@@ -1,7 +1,5 @@
----
-title: Atari Assembler Editor
----
 # Atari Assembler Editor
+
 Copyright (C) 1980 Atari, Inc. & Kathleen Ann O'Brien
 
 
@@ -11,7 +9,7 @@ Atari hired Shepardson Microsystems to write [Atari BASIC](../../../Languages/BA
 
 Atari Assembler Editor shared many components with Atari BASIC, notably the screen editor which used the same line-number based system as BASIC. However, it added several editing commands, including a RENumber and DELete, which, perhaps surprisingly, could also be used to edit BASIC programs.
 
-The system ran entirely in RAM, meaning that both the source code and resulting machine code had to be able to fit in memory at the same time. This could be a significant limitation in many situations. Additionally, it did not include the ability to link multiple files together into a single larger program, which put further limits on the sort of programs that could be developed with it. [Eastern_Front_1941](../Atari_Corporation_UK/Eastern_Front_1941/README.md), which was about 12 to 16k of machine code, required the source to be broken into six modules and then linked together by hand using DOS. Significant effort was needed to ensure that the memory references in the six files were correct, as they referred to code in other modules who's position changed as they were recompiled.
+The system ran entirely in RAM, meaning that both the source code and resulting machine code had to be able to fit in memory at the same time. This could be a significant limitation in many situations. Additionally, it did not include the ability to link multiple files together into a single larger program, which put further limits on the sort of programs that could be developed with it. [Eastern Front (1941)](../Atari_Corporation_UK/Eastern_Front_1941/README.md), which was about 12 to 16k of machine code, required the source to be broken into six modules and then linked together by hand using DOS. Significant effort was needed to ensure that the memory references in the six files were correct, as they referred to code in other modules who's position changed as they were recompiled.
 
 For larger programs, Atari also sold the [Atari Macro Assembler and Program-Text Editor CX8121](../Atari_Macro_Assembler/README.md), which used a separate full-screen editor, saved files to disk, and included a linker. This was, however, both slow and expensive. As a result, many programmers were left wanting something more powerful than Assembler Editor (notably with macro support, which it lacked) but faster and less expensive than Macro Assembler. This led to a thriving market for 3rd party assemblers on the Atari platform.
 

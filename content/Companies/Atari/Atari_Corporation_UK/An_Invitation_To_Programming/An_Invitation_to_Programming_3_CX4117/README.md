@@ -1,7 +1,4 @@
----
-title: An Invitation to Programming 3 CX4117
----
-# An Invitation to Programming 3-Introduction to Sound and Graphics CX4117
+# An Invitation to Programming 3-Introduction to Sound and Graphics (CX4117)
 
 ## ATR-Images:
 - [An_Invitation_to_Programming_3_Cass_A_Side_1.atr](attachments/An_Invitation_to_Programming_3_Cass_A_Side_1.atr) ; size: 92,2 kB

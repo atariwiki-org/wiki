@@ -1,11 +1,10 @@
----
-title: AtariCX85
----
 # Atari CX85 Numerical Keypad
+
 ![](attachments/AtariCX85%2FAtari-CX85.jpg)
 
 ## Source
 [Wikipedia](http://en.wikipedia.org/wiki/Atari_8-bit_computer_peripherals) 
+
 ## Documentation
 - [Atari CX85 Numerical Keypad-Users Guide](attachments/Atari_CX85_Numerical_Keypad-User_s_Guide.pdf) (PDF)
 - [Atari CX85 Numerical Keypad-Technical Reference Notes - 2 pages](attachments/Atari_CX85_Numerical_Keypad-Technical_Reference_Notes.pdf) (PDF)

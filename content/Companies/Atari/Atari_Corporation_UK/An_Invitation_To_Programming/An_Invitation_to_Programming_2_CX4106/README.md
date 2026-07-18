@@ -1,7 +1,4 @@
----
-title: An Invitation to Programming 2 CX4106
----
-# An Invitation to Programming 2-Writing Programs one and two CX4106
+# An Invitation to Programming 2 - Writing Programs one and two (CX4106)
 
 ## ATR-Images:
 - [An_Invitation_to_Programming_2_Cass_A_Side_1.atr](attachments/An_Invitation_to_Programming_2_Cass_A_Side_1.atr) ; size: 92,2 kB

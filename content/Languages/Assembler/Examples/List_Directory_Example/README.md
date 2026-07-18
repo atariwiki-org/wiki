@@ -1,7 +1,6 @@
----
-title: List Directory Example
----
-# List Directory example
+# List Directory Example
+
+Syntax: BiBo-Assembler
 
 ```
 00010          .LI OFF

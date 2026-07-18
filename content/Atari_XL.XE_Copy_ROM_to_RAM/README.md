@@ -1,8 +1,3 @@
----
-title: Atari XL.XE Copy ROM to RAM
----
-
-
 # Copy OS ROM to RAM
 
 by Russ Gilbert, found in comp.sys.atari.8bit

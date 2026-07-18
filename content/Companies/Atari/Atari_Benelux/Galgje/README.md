@@ -1,7 +1,5 @@
----
-title: Galgje
----
 # Galgje
+
 Galgje is the Dutch translation of Hangman and was published by Atari International (Benelux) B.V. in 1983.
 
 Side 1 of the cassette includes on screen instructions. Side 2 does not contain the instructions. Both sides use the dual audio format.

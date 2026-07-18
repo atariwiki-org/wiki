@@ -1,9 +1,4 @@
----
-title: Access SpartaDOS commandline parameters
----
-
-
-# Access Sparta DOS Command Line Parameters
+# Access Sparta DOSCommand Line Parameters
 
 ```
 ;sdos.act
