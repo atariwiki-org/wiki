@@ -1,4 +1,4 @@
-# High Density Interface 
+# High Density Interface
 
 A PC FLoppy Interface with Speedy-like OS.
 

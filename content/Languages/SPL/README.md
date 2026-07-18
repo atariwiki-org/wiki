@@ -8,7 +8,7 @@ SPL is still work-in-progress, it has some "rough-edges" and might fail in certa
 
 Applications in SPL:
 
-* [ATR_Copy_Center_ACC](../../People/Carsten_Strotmann/ATR_Copy_Center_ACC/README.md) - A copy tool for the SIO2USB device
+* [ATR Copy Center](../../People/Carsten_Strotmann/ATR_Copy_Center_ACC/README.md) - A copy tool for the SIO2USB device
 
 ## SPL Source (Python)
 ```

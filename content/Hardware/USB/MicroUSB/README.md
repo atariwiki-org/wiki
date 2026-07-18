@@ -10,7 +10,7 @@ Files for the MicroUSB Project can also be downloaded from SourceForge -> [http:
 
 ### Hardware
 
-- [USB_Cartridge](../USB_Cartridge/README.md) for Atari XL/XE
+- [USB Cartridge](../USB_Cartridge/README.md) for Atari XL/XE
 - USB+Ethernet for the CS/A65 Caspaer and Gecko computer by Andre Fachat [http://www.6502.org/users/andre/csa/usb/index.html](http://www.6502.org/users/andre/csa/usb/index.html)
 
 ### Software
@@ -21,8 +21,8 @@ Files for the MicroUSB Project can also be downloaded from SourceForge -> [http:
 - [Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)
 - [Digital Joypad Driver](../Digital_Joypad_Driver/README.md)
 - [Logitech Rumblepad 2 USB Driver](../JoypadRumblePadTwoUsb/README.md)
-- [Analog Joystick Driver](../AtariAnalogJoystickDriver/README.md)
-- [Thrustmaster Steering Wheel Driver](../USB_Steering_Wheel_Driver/README.md) ( [Pictures of Pole-Position USB Version](../ProjUSB/ProjUSBCartAtariWheelPolePosPics/README.md) )
+- [Atari USB analog Joystick Driver](../AtariAnalogJoystickDriver/README.md)
+- [USB Steering Wheel Driver](../USB_Steering_Wheel_Driver/README.md) ( [Playing Pole Position with an USB Steering Wheel at ABBUC JHV 2004](../ProjUSB/ProjUSBCartAtariWheelPolePosPics/README.md) )
 - [Logitech GP Steering Wheel Driver](../Logitech_Formula_GP_USB_Wheel_Driver/README.md)
 - [Logitech VP Steering Wheel Driver](../Logitech_Formula_VF_USB_Wheel_Driver/README.md)
 - [Atari USB Cart compatibility matrix](../DeviceMatrix/README.md)

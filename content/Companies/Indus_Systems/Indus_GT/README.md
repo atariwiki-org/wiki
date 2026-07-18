@@ -9,7 +9,7 @@ A great manual came with the drive, and other manuals were also made available w
 
 
 
-- [indus_GT_Field_Service_Manual](Indus_GT_Field_Service_Manual/README.md)
+- [Indus GT Field Service Manual](Indus_GT_Field_Service_Manual/README.md)
 - [Indus GT resource page](http://www.retrobits.net/atari/indus.shtml) ; A Great Page with complete resources for the drive. :-)))
 ![](attachments/indusad1.jpg)
 ![](attachments/indus-gt-25-floppy-disk-drive-atari_1.jpg)

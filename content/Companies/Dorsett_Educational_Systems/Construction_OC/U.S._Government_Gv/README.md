@@ -1,4 +1,4 @@
-# Dorsett Atari U.S. Government GV 
+# Dorsett Atari U.S. Government GV
 
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 

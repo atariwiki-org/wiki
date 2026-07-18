@@ -20,7 +20,7 @@
 # Generic Information
 - [Atari ATASCII Table](../Atari_ATASCII_Table/README.md)
 - [OS Diffs Atari 800 <-> Atari XL/XE Series](../OS/Atari_OS/DiffOldOs2XL/README.md)
-- [Ironman_Atari](../Ironman_Atari/README.md) A compilation of advanced Atari 8-bit programming techniques
+- [Ironman Atari - A Compilation of Advanced Atari 8-bit Programming Techniques](../Ironman_Atari/README.md) A compilation of advanced Atari 8-bit programming techniques
 - [Mode, Setcolor, Color Table](../Languages/BASIC/Atari_BASIC/Mode_Setcolor_Color_Table/README.md)
 - [Table_of_Modes_and_Screen_Format](../Table_of_Modes_and_Screen_Format/README.md)
 - [Unleash_the_power_of_Ataris_CPU](../Unleash_the_power_of_Ataris_CPU/README.md)
@@ -62,8 +62,8 @@
 - [Turbo1050_Upgrades](../Turbo1050_Upgrades/README.md)
 - [XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
 - [Custom Disk Format Routine](../Companies/CompyShop/Speedy_1050_Upgrades/Custom_Disk_Format_Routine/README.md) (Atari 1050 with Compy Shop Speedy)
-- [Indus_GT_Field_Service_Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md)* [Indus_GT_Firmware_ROM_Source](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
-- [Indus_GT_Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md)
+- [Indus GT Field Service Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md)* [Indus GT Firmware ROM Disassembly](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
+- [Indus GT Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md)
 - [Floppy 2000](../Hardware/Disk_Drives/Floppy_2000/README.md)
 - [High-Density Disk Interface (HDI)](../People/Erhard_Puetz/HDI_Interface/README.md) (aka Floppy 3000)
 
@@ -113,7 +113,7 @@
 - [Atari Trak-Ball controller (CX80)](../Companies/Atari/Atari_CX80_Trak-Ball_controller/README.md)
 - [Atari CX85 Numerical Keypad](../Companies/Atari/AtariCX85/README.md)
 - [Atari Trackball](../Trackball/README.md)
-- [Multijoy](../How_to_query_the_MultiJoy_Interface/README.md) Interface
+- [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 
 ## Voiceboxes/Sprachbox
 - [Sprachbox DXG5721](../Sprachbox/README.md) (German)
@@ -174,7 +174,7 @@
 - [Rarity 10 and above up to impossible](../Rarity_10/README.md)
 
 # Related to Atari
-- [Atari_True_Type_Font_for_PC_and_Mac](../General/Atari_True_Type_Font_for_PC_and_Mac/README.md)
+- [Atari TrueType Font for PC and Mac](../General/Atari_True_Type_Font_for_PC_and_Mac/README.md)
 
 # Software
 
@@ -573,7 +573,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [BIBO-DOS](../Companies/CompyShop/BIBO-DOS/README.md)
 - [LiteDOS](http://www.mr-atari.com/Mr.Atari/LiteDOS/)
 - [Indus CPM 2.2](../Companies/Indus_Systems/Indus_GT/Indus_CPM_2.2/README.md)
-- [INDUS_GT_Synchromesh](../Companies/Indus_Systems/Indus_GT/Indus_GT_Synchromesh/README.md)
+- [INDUS GT - PUT SYNCHROMESH IN HIGH GEAR](../Companies/Indus_Systems/Indus_GT/Indus_GT_Synchromesh/README.md)
 - [MyDOS](../DOS/MyDOS/README.md)
 - [OS/A+ Version 1.1](../Companies/OSS/OS_Aplus/OS_Aplus-Version_1.1/README.md)
 - [OS/A+ Version 2.10](../Companies/OSS/OS_Aplus/OS_Aplus-Version_2/README.md)
@@ -594,10 +594,10 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Disk drive formats / Laufwerksformate](../Laufwerksformate/README.md)
 - [Ram-Disk_under_OS-ROM_for_XL_XE](../Ram-Disk_under_OS-ROM_for_XL_XE/README.md) - Article from German "Happy Computer" magazine
 - [CIO Tutorial](../CIOV_Tutorial/README.md)
-- [File_Suffix](../File_Suffix/README.md)
+- [File Suffix for Atari disk files](../File_Suffix/README.md)
 - [DOS_Command_Processor](../DOS_Command_Processor/README.md)
-- [Der_XIO_Befehl_fuer_Dateioperationen](../Der_XIO_Befehl_fuer_Dateioperationen/README.md)
-- [Der_XIO_Befehl_fuer_Grafikoperationen](../Der_XIO_Befehl_fuer_Grafikoperationen/README.md)
+- [Der XIO-Befehl für Dateioperationen](../Der_XIO_Befehl_fuer_Dateioperationen/README.md)
+- [Der XIO Befehl für Grafikoperationen](../Der_XIO_Befehl_fuer_Grafikoperationen/README.md)
 - Other [DOS-Topics](../DOS_topics/README.md)
 - [RTime8_Manual](../RTime8_Manual/README.md)
 - [XIO Command Codes for the DOS Handler (D:)](../XIO_Command_Codes_DOS_Handler/README.md)

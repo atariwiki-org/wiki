@@ -2,8 +2,8 @@
 
 || USB Device                                  || Status || Driver / Device Info   || Games / Applications ||
 | __Joysticks__ | | | |
-| Logitech USB Wingman Precision                | working  | [digital Joypad Driver](../Digital_Joypad_Driver/README.md)  | Boulder Dash (Version 1) |
-| Logitech USB Attack 3 Joystick                | working  | [analog Joystick Driver](../AtariAnalogJoystickDriver/README.md)  | -- |
+| Logitech USB Wingman Precision                | working  | [Digital Joypad Driver](../Digital_Joypad_Driver/README.md)  | Boulder Dash (Version 1) |
+| Logitech USB Attack 3 Joystick                | working  | [Atari USB analog Joystick Driver](../AtariAnalogJoystickDriver/README.md)  | -- |
 | [Competition Pro USB](http://www.speed-link.com/prod.php?lang=de&sys_id=1&pb_id=1&prod_num=SL-6602) | working  | [Joystick Driver for Competition Pro](../ProjUSBCartAtariCompProUsbJoystick/README.md)  | -- |
 | Logitech Rumblepad 2 USB                      | working  | [Logitech Rumblepad Driver](../ProjUSBCartAtariJoypadRumblePadTwoUsb/README.md) | |
 | [Microsoft SideWinder Game Pad USB](http://gear.ign.com/articles/324/324347p1.html)             | USBTest ok, driver must be written  | [analog Joystick Driver](../ProjUSBCartAtariJoystick/README.md)  | -- |
@@ -15,8 +15,8 @@
 |  SpeedLink SL-6421-SBK Comfort Combo Keyboard, black | working | [simple Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)  | various Programms |
 |  SUN USB Keyboard Model Typ 6 USB No. 3201281-01 | working | [simple Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)  | various Programms |
 | __Mice__ | | | |
-| Logitech Mice USB | working | [generic Mouse Driver](../ProjUSB/ProjUSBCartAtariMouse/README.md)  | various Programms |
-| Microsoft Optical Intellimouse | working | [generic Mouse Driver](../ProjUSB/ProjUSBCartAtariMouse/README.md)  | various Programms |
+| Logitech Mice USB | working | [Generic USB Mouse Driver](../ProjUSB/ProjUSBCartAtariMouse/README.md)  | various Programms |
+| Microsoft Optical Intellimouse | working | [Generic USB Mouse Driver](../ProjUSB/ProjUSBCartAtariMouse/README.md)  | various Programms |
 | __USB Floppy Drives__ | | | |
 | TEAC FD-05PUW USB | working |  | |
 | __USB Sticks__ | | | |

@@ -42,7 +42,7 @@
 ## Assembly Code
 
 - [Decimal_and_Hex_Codes_for_Instruction_Set_-_Numerical](../Decimal_and_Hex_Codes_for_Instruction_Set_-_Numerical/README.md)
-- [OSS_ASCII-ATASCII_Text_File_Converter](../OSS_ASCII-ATASCII_Text_File_Converter/README.md)
+- [OSS ASCII-ATASCII Text File Converter](../OSS_ASCII-ATASCII_Text_File_Converter/README.md)
 - [Super_fast_circle_routine](../Super_fast_circle_routine/README.md) from Moj Mikro magazine (posted on AtariAge)
 - [Starting_to_Program_in_6502_Assembly_Code](../Starting_to_Program_in_6502_Assembly_Code/README.md)
 - [Copy OS ROM to RAM](../Atari_XL.XE_Copy_ROM_to_RAM/README.md)

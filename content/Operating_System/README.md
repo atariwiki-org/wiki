@@ -3,7 +3,7 @@ title: Operating System
 ---
 # ATARI 8-Bit Operating System
 
-[Versions](../OS_Versions/README.md) 
+[OS Versions](../OS_Versions/README.md) 
 
 [OS Diffs Atari 800 <-> Atari XL/XE Series](../OS/Atari_OS/DiffOldOs2XL/README.md) 
 

@@ -10,8 +10,8 @@
 
 ## Controllers
 - [Controller_topics](../Controller_topics/README.md)
-- [How_to_query_the_MultiJoy_Interface](../How_to_query_the_MultiJoy_Interface/README.md)
-- [Multijoy](../How_to_query_the_MultiJoy_Interface/README.md) Interface
+- [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md)
+- [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 - [Atari Trackball](../Trackball/README.md)
 - [Atari Light Pen CX70](../Companies/Atari/Atari_CX70_Light_Pen/README.md)
 - [Atari Touch Tablet (CX77)](../Companies/Atari/Atari_CX77_Touch_Tablet/README.md)
@@ -45,9 +45,9 @@
 - [Floppy 2000](Disk_Drives/Floppy_2000/README.md)
 - [High-Density Disk Interface (HDI)](../People/Erhard_Puetz/HDI_Interface/README.md) (aka Floppy 3000)
 - [Indus GT DD Floppy Drive](../Companies/Indus_Systems/Indus_GT/README.md)
-** [Indus_GT_Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md) 
-** [Indus_GT_Field_Service_Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md) 
-** [Indus_GT_Firmware_ROM_Source](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
+** [Indus GT Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md) 
+** [Indus GT Field Service Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md) 
+** [Indus GT Firmware ROM Disassembly](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
 - [ASTRA 2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
 - [Percom AT-88](../Companies/Percom/Percom_AT-88/README.md)
 ### Upgrades

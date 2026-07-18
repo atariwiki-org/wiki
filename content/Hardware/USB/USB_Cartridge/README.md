@@ -8,15 +8,15 @@
 - Project Specs : see Information below
 
 - Project Pictures:
-- [USB Programming Session 27th May 2006](../ProjUSB/ProjUSBConvSixPic/README.md)
-- [USB Programming Session 9th-12th December 2005](../ProjUSB/ProjUSBConvFivePic/README.md)
-- [USB Programming Session 19th-21st August 2005](../ProjUSB/ProjUSBConvFourPic/README.md)
-- [Vintage Computer Festival Europe, Munich, April/May 2005](../ProjUSB/ProjUSBVCFePic/README.md)
-- [USB Programming Session 14th-16th January 2005](../ProjUSB/ProjUSBConvThreePic/README.md)
-- [USB Programming Session 16th-18th July 2004](../ProjUSB/ProjUSBConvTwoPic/README.md)
-- [Pictures Cartridge](../ProjUSB/ProjUSBCartPic/README.md)
-- [USB Programming Session 9th August 2003](../ProjUSB/ProjUSBConvOnePic/README.md)
-- [USB Host-Slave Cart](../ProjUSB/ProjUSBCartTwoPic/README.md)
+- [USB Coding Workout 27.05.2006 in Frankfurt Heddernheim](../ProjUSB/ProjUSBConvSixPic/README.md)
+- [USB Coding Workout 9.12.-11.12.2005 in Frankfurt Heddernheim](../ProjUSB/ProjUSBConvFivePic/README.md)
+- [Pictures of the Coding Session in Bad Schoenborn](../ProjUSB/ProjUSBConvFourPic/README.md)
+- [Picture from the Vintage Computer Festival Europe, Munich 2005](../ProjUSB/ProjUSBVCFePic/README.md)
+- [Pictures of the Coding Session in Frankfurt](../ProjUSB/ProjUSBConvThreePic/README.md)
+- [Pictures of the Coding Session in Frankfurt](../ProjUSB/ProjUSBConvTwoPic/README.md)
+- [Pictures USB Cartridge](../ProjUSB/ProjUSBCartPic/README.md)
+- [USB Programming Session in Frankfurt, 9th August 2003](../ProjUSB/ProjUSBConvOnePic/README.md)
+- [The new USB Host/Slave Cartridge](../ProjUSB/ProjUSBCartTwoPic/README.md)
 
 ## Software
 
@@ -26,8 +26,8 @@
 - [Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)
 - [Digital Joypad Driver](../Digital_Joypad_Driver/README.md)
 - [Logitech Rumblepad 2 USB Driver](../JoypadRumblePadTwoUsb/README.md)
-- [Analog Joystick Driver](../AtariAnalogJoystickDriver/README.md)
-- [Thrustmaster Steering Wheel Driver](../USB_Steering_Wheel_Driver/README.md) ( [Pictures of Pole-Position USB Version](../ProjUSB/ProjUSBCartAtariWheelPolePosPics/README.md) )
+- [Atari USB analog Joystick Driver](../AtariAnalogJoystickDriver/README.md)
+- [USB Steering Wheel Driver](../USB_Steering_Wheel_Driver/README.md) ( [Playing Pole Position with an USB Steering Wheel at ABBUC JHV 2004](../ProjUSB/ProjUSBCartAtariWheelPolePosPics/README.md) )
 - [Logitech GP Steering Wheel Driver](../Logitech_Formula_GP_USB_Wheel_Driver/README.md)
 - [Logitech VP Steering Wheel Driver](../Logitech_Formula_VF_USB_Wheel_Driver/README.md)
 - [Speedlink_Competition_Pro_USB](../../../Speedlink_Competition_Pro_USB/README.md)
@@ -60,19 +60,19 @@ We have now acces to HID (Human Interface Devices) for the Host Mode of the Cypr
 
 We will have generic 6502 Sourcecode and FORTH Sourcecode ready in the next days and have real Atari XL/XL driver for Keyboard, Mouse and Joystick on the Unconventional Party in September in Lengenfeld.
 
-See the [Pictures](../ProjUSB/ProjUSBConvTwoPic/README.md) of the day.
+See the [Pictures of the Coding Session in Frankfurt](../ProjUSB/ProjUSBConvTwoPic/README.md) of the day.
 
 
 CarstenStrotmann - 6 Jan 2004
 
-Harry Reminder and Thomas Grasel made a new USB Cartridge Hardware, now with a Cypres SL811HS chip. This USB chip is Host AND Slave, so with this we can attach the Atari to a PC/Mac (Slave-Mode) and we can attach USB-Devices (Mouse, Graphic-Tablet, Memory-Stick ...) to the Atari (Host-Mode). See new project [pictures](../ProjUSB/ProjUSBCartTwoPic/README.md).
+Harry Reminder and Thomas Grasel made a new USB Cartridge Hardware, now with a Cypres SL811HS chip. This USB chip is Host AND Slave, so with this we can attach the Atari to a PC/Mac (Slave-Mode) and we can attach USB-Devices (Mouse, Graphic-Tablet, Memory-Stick ...) to the Atari (Host-Mode). See new project [The new USB Host/Slave Cartridge](../ProjUSB/ProjUSBCartTwoPic/README.md).
 
 
 CarstenStrotmann - 10 Aug 2003
 
 Harry Reminder, Thomas Grasel and I used the hottest Day of the year (so far, 40 C in Frankfurt) for a USB Coding Session. The Joystick Firmware is almost complete, there are some problems with the Uni-Code Strings (this might be the 1st ATARI 8-Bit PGM with Uni-Code :) ) and with the USB Reports.
 
-See the [Pictures](../ProjUSB/ProjUSBConvOnePic/README.md) of the day.
+See the [USB Programming Session in Frankfurt, 9th August 2003](../ProjUSB/ProjUSBConvOnePic/README.md) of the day.
 
 CarstenStrotmann - 9 Jul 2003
 
