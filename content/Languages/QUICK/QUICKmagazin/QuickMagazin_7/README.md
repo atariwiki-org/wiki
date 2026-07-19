@@ -1,6 +1,3 @@
----
-title: QuickMagazin 7
----
 # Quick Magazin 7
 
 ### Aricles

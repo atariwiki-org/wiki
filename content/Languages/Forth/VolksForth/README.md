@@ -10,16 +10,16 @@
 This is a list of all Forth words contained in the volksFORTH distribution. The current version is 3.8x
 
 - [VolksForth Arithmetic](Language/Artihmetic_Words/README.md)
-- [Logical Words](Language/Logical_Words/README.md)
-- [32bit Words](Language/32bit_Words/README.md)
-- [Stack Operations](Language/Stack_Operations/README.md)
+- [VolksForth logic words](Language/Logical_Words/README.md)
+- [VolksForth 32-bit words](Language/32bit_Words/README.md)
+- [VolksForth StackOperations](Language/Stack_Operations/README.md)
 
 ## Articles
-- [The_Forth_Bridge](Articles/The_Forth_Bridge/README.md) -- How to migrate from BASIC to volksFORTH
+- [Forth Bridge - from BASIC to Forth](Articles/The_Forth_Bridge/README.md) -- How to migrate from BASIC to volksFORTH
 
 ## volksFORTH Handbook (English)
 - [Chapter 1: volksFORTH Version 3.90 Manual (work in progress)](Handbook/Chapter1/README.md)
-- [Chapter 2](Handbook/Chapter2/README.md)
+- [volkFORTH - Handbook - Chapter 2](Handbook/Chapter2/README.md)
 - [Chapter 3: Arithmetic](Handbook/Chapter3/README.md)
 - [Chapter 4: Program Structures](Handbook/Chapter4/README.md)
 - [Chapter 5: Input / Output in volksFORTH](Handbook/Chapter5/README.md)
@@ -40,12 +40,12 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 
 ## volksFORTH extensions
 
-- [Floating_Point_Words_using_the_Atari_8bit_Math_ROM](Extensions/Floating_Point_Words_using_the_Atari_8bit_Math_ROM/README.md)
-- [Math_Extension_for_6502_Systems](Extensions/Math_Extension_for_6502_Systems/README.md) (Atari XL/XE, Apple 1/II, Commodore)
-- [Arrays_with_Bounds_checking](Extensions/Arrays_with_Bounds_checking/README.md)
+- [Floating Point Words using the Atari 8-bit Math ROM](Extensions/Floating_Point_Words_using_the_Atari_8bit_Math_ROM/README.md)
+- [VolksForth Math Extension](Extensions/Math_Extension_for_6502_Systems/README.md) (Atari XL/XE, Apple 1/II, Commodore)
+- [Arrays with bounds checking](Extensions/Arrays_with_Bounds_checking/README.md)
 - [Mini-OOF](Extensions/Mini-OOF/README.md) (Object Oriented Forth) by Bernd Paysan, ported to volksFORTH
-- [String_Extensions](Extensions/String_Extensions/README.md) for volksFORTH
-- [2Words](Extensions/2Words/README.md) (32bit number extension)
+- [String Extensions for VolksForth](Extensions/String_Extensions/README.md) for volksFORTH
+- [2-Words (32-bit number extensions)](Extensions/2Words/README.md) (32bit number extension)
 
 ## volksFORTH Tutorial
 

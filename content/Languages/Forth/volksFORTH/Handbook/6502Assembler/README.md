@@ -14,7 +14,7 @@ tab content 1
 
 In the following the concepts of the 6502 Forth Assembler for the people are represented. It is given a complete glossary, as the assembler mnemonics of all machine-language programmers may be unfamiliar. A detailed description of the operation is found in the [A 6502 Assembler in FORTH](../../../Articles/A_6502_Assembler_in_FORTH/README.md)  . The following is a brief summary given and presented changes to the original.
 
-The operation of the interpreter and address of the routine NEXT is presented in [Chapter 2 of the People's Forth Guide](../Chapter2/README.md). The 6502 assembler allows structured programming. The structural elements are constructed analogous to the control structures of the Forth but bear different names in order to reduce the risk of confusion and increase clarity.
+The operation of the interpreter and address of the routine NEXT is presented in [volkFORTH - Handbook - Chapter 2](../Chapter2/README.md). The 6502 assembler allows structured programming. The structural elements are constructed analogous to the control structures of the Forth but bear different names in order to reduce the risk of confusion and increase clarity.
 
 For example:
 ```

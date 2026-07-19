@@ -1,6 +1,5 @@
----
-title: Schnelle Vektoren in ACTION!
----
+# Schnelle Vektoren in ACTION!
+
 General Information
 Author: Peter Finzel
 Language: ACTION!
@@ -48,7 +47,7 @@ Anschließend folgen einige Byte-Arrays, die das Objekt sowie eine Adresstabelle
 
 Nun folgt die Fast_Plot()-Routine, in der auch einige wirkungsvolle Tricks versteckt sind. Schreibt man nämlich zwischen Namen und Parameterklammer ein "=*", so verzichtet Action! darauf, die Parameter in lokale Variablen abzulegen. Man kann das dann selbst mit einem kleinen Codeblock erledigen. Die beiden Parameter werden aus dem X- und Y-Register in einen reservierten Zero-Page-Speicherbereich von Action! gebracht. Da es nun nicht mehr weiß, wo die beiden zu finden sind, legt man zwei adressierte Variablen (im vorliegenden Fall X und Y) darauf. Der indirekte Zugriff auf den Videospeicher geschieht über den Array-Zeiger row, der mittels Adresstabellen aus LSB und MSB zusammengesetzt wird.
 
-Die LineTo()-Routine stammt aus dem Programm "[View_3D](../View_3D/README.md)" von Paul Chabot (Antic 6/85). Sie ist sehr schnell, da nur Additionen und Subtraktionen und die Fast_Plot()-Routine benutzt werden. die Prozedur Graphic_Init() aktiviert die Display-List und bereitet Adresstabelle und das Video-RAM vor, während Screen_Switch() zwischen den beiden Bildschirmen (die übrigens bei Adresse $8000 bzw. $8800 beginnen) hin- und herschalten kann.
+Die LineTo()-Routine stammt aus dem Programm "[View 3D](../View_3D/README.md)" von Paul Chabot (Antic 6/85). Sie ist sehr schnell, da nur Additionen und Subtraktionen und die Fast_Plot()-Routine benutzt werden. die Prozedur Graphic_Init() aktiviert die Display-List und bereitet Adresstabelle und das Video-RAM vor, während Screen_Switch() zwischen den beiden Bildschirmen (die übrigens bei Adresse $8000 bzw. $8800 beginnen) hin- und herschalten kann.
 
 Damit wären wir am Ende des ersten Action!-Centers angelangt. Ich hoffe, es hat Ihnen gefallen und Sie haben einige neue Anregungen bekommen. Im nächsten Heft werden wir besprechen, wie man Interrupts in Action! programmieren kann. Ich würde mich freuen, wenn Sie wieder mit von der Partie sind.
 ```

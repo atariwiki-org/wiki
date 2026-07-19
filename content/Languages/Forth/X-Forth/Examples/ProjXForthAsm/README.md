@@ -1,6 +1,3 @@
----
-title: ProjXForthAsm
----
 # X-FORTH 6502 Assembler
 
 ```

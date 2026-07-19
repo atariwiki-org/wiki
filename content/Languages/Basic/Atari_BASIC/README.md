@@ -13,7 +13,7 @@ By the time SMI was hired, Atari was in something of a rush to get a working BAS
 
 In order to fit the code into a 8k ROM, two major pieces of code were moved out of the BASIC into the OS ROM. The first was a set of graphics routines to set up the screen, draw lines, and similar tasks. The second was the floating-point math system, based on a new implementation of the 6-byte binary-coded-decimal (BCD) format SMI had designed for the Z80-based Cromemco machines. Both libraries were notoriously slow. Generally, Atari BASIC was among the slowest BASICs of its era, both due to the OS code and two problems involving loops.
 
-The performance issues led to a profusion of 3rd party BASICs, some of which continue to be developed to this day. By replacing the math libraries and fixing these two loop issues, speed improves on the order of 3 to 5 times in most programs, and this is a common feature of 3rd party BASICs like [Turbo-BASIC XL](../Turbo-BASIC_XL/README.md) and [Altirra_BASIC](../Altirra_BASIC/README.md). For even higher performance, [FastBASIC](../FastBASIC/README.md) uses a p-code system that can be quickly interpreted.
+The performance issues led to a profusion of 3rd party BASICs, some of which continue to be developed to this day. By replacing the math libraries and fixing these two loop issues, speed improves on the order of 3 to 5 times in most programs, and this is a common feature of 3rd party BASICs like [Turbo-BASIC XL](../Turbo-BASIC_XL/README.md) and [Altirra BASIC](../Altirra_BASIC/README.md). For even higher performance, [FastBasic](../FastBASIC/README.md) uses a p-code system that can be quickly interpreted.
 
 ![](attachments/Atari_BASIC-Box.jpg)
 Atari BASIC - Computing Language box
@@ -198,20 +198,20 @@ Atari BASIC Keywords
 - [REM und DT64-Computerclub](http://www.kc85emu.de/scans/fa0589/REM.htm)
 
 ## Articles
-- [How_to_find_the_revision_number_of_Atari_BASIC](Articles/How_to_find_the_revision_number_of_Atari_BASIC/README.md)
+- [How to find the revision number of Atari BASIC](Articles/How_to_find_the_revision_number_of_Atari_BASIC/README.md)
 
 ## Source and Tools
 - [Program to measure 810 disk speed](Examples/RPM810/README.md) Program to measure 810 disk speed
-- [ST_Mouse_Driver_for_BASIC](Examples/ST_Mouse_Driver_for_BASIC/README.md)
-- [Boolean_Logic_in_BASIC](Examples/Boolean_Logic_in_BASIC/README.md)
+- [ST Mouse Driver for BASIC](Examples/ST_Mouse_Driver_for_BASIC/README.md)
+- [Boolean Logic in BASIC](Examples/Boolean_Logic_in_BASIC/README.md)
 - [Atari BASIC Special Clear Screen (German)](Examples/Atari_BASIC_Special_Clear_Screen/README.md) (german)
-- [BASIC_Fast_Stack_and_Fast_Jump](Examples/BASIC_Fast_Stack_and_Fast_Jump/README.md)
-- [Page_Flip_Routine_for_BASIC](Examples/Page_Flip_Routine_for_BASIC/README.md)
+- [Basic Fast Stack and Fast Jump](Examples/BASIC_Fast_Stack_and_Fast_Jump/README.md)
+- [Page Flip Routine for BASIC](Examples/Page_Flip_Routine_for_BASIC/README.md)
 - [RAM_Move_Routine_for_BASIC](../../../RAM_Move_Routine_for_Basic/README.md)
-- [BASIC_Program_Lister](Examples/BASIC_Program_Lister/README.md)
+- [BASIC Program Lister](Examples/BASIC_Program_Lister/README.md)
 - [UUDecoder](Examples/UUDecoder/README.md)
-- [Create_Data-Statements_from_binary_load_files](Examples/Create_Data-Statements_from_binary_load_files/README.md)
-- [Schnelle_Player_Bewegung_in_BASIC](Examples/Schnelle_Player_Bewegung_in_BASIC/README.md) (german)
+- [Create DATA Statements from binary load files](Examples/Create_Data-Statements_from_binary_load_files/README.md)
+- [Schnelle Player Bewegung in BASIC](Examples/Schnelle_Player_Bewegung_in_BASIC/README.md) (german)
 
 ## Tools
 - [Extended Atari Basic (APX-10177, APX-20177)](../Extended_Atari_BASIC/README.md)

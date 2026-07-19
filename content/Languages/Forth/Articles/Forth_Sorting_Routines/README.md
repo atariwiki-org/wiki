@@ -1,6 +1,5 @@
----
-title: Forth sorting routines
----
+# Forth sorting routines
+
 
 ```
 SCR # 21

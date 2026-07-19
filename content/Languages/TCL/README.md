@@ -1,7 +1,7 @@
----
-title: TCL
----
-# TCL - Test Computer Language (TCL) ; Copyright (C) 1985-1990 by David Firth
+# Test Computer Language (TCL)
+
+Copyright (C) 1985-1990 by David Firth
+
 ![](attachments/TCL.png)
 Test Computer Language, Version 2.2
 

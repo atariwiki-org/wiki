@@ -1,6 +1,5 @@
----
-title: BrainFuck in X-FORTH
----
+# BrainFuck in X-FORTH
+
 General Information
 Author: 	Carsten Strotmann
 Language: 	FORTH

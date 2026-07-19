@@ -3,7 +3,7 @@
 ## Information
 
 ### Background
-Action (also Action!) is an Atari-specific programming language written by Clinton Parker and sold by Optimized Systems Software (OSS) in ROM cartridge form starting in August 1983. It is the only language other than [BASIC](../../BASIC/README.md) and [assembler](../../Assembler/README.md) that had real popularity on the platform and saw any significant coverage in the Atari press; type-in programs and various technical articles were found in most magazines. In comparison, languages like [Forth](../../Forth/README.md) and [Atari LOGO](../../../Logo/README.md) saw much less use and almost no press coverage.
+Action (also Action!) is an Atari-specific programming language written by Clinton Parker and sold by Optimized Systems Software (OSS) in ROM cartridge form starting in August 1983. It is the only language other than [BASIC](../../BASIC/README.md) and [Assembler](../../Assembler/README.md) that had real popularity on the platform and saw any significant coverage in the Atari press; type-in programs and various technical articles were found in most magazines. In comparison, languages like [Forth](../../Forth/README.md) and [Atari LOGO](../../../Logo/README.md) saw much less use and almost no press coverage.
 
 Reviewers at the time gushed about the system. They noted that practically every aspect was superior to anything available at the time; compiling was almost instantaneous, the resulting code ran almost as fast as hand-coded assembler, the full-screen editor was universally loved, and the entire system took up only 8k due to clever memory management. The only complaint, also universal, was the poor quality of the original manual set.
 
@@ -17,7 +17,7 @@ Action solved this problem by simply not implementing activation records. Instea
 
 Action had a number of limitations, none of them very serious. Curiously, Action did not include support for floating-point types, although such support is built into the machine's OS ROM (see [Atari BASIC](../../BASIC/Atari_BASIC/README.md) for details) and available to any programming language. This is a significant limitation in some roles, although perhaps not for its target market. It also lacked most string handling routines, but made up for this somewhat with a series of PRINT commands that made formatted output easy.
 
-Generally, Action programs had performance on-par with reasonable-quality [assembler](../../Assembler/README.md), while being much easier to program. In one review, it ran Byte's Sieve of Eratosthenes 219 times faster than Atari BASIC, while its source was only a few lines longer. In comparison, the assembler version's source ran on for several pages. Such performance, combined with terse code and library functions to access much of the platform's hardware, made it suitable for action games while still having a simple source format suitable for type-in programs. It deserved to be much more popular, and may have been had it been released earlier, or by Atari itself.
+Generally, Action programs had performance on-par with reasonable-quality [Assembler](../../Assembler/README.md), while being much easier to program. In one review, it ran Byte's Sieve of Eratosthenes 219 times faster than Atari BASIC, while its source was only a few lines longer. In comparison, the assembler version's source ran on for several pages. Such performance, combined with terse code and library functions to access much of the platform's hardware, made it suitable for action games while still having a simple source format suitable for type-in programs. It deserved to be much more popular, and may have been had it been released earlier, or by Atari itself.
 
 Action inspired several similar languages that differ largely in syntax and various features that they do or do not support. Examples include [PL65](../../PL65/README.md) and [QUICK](../../QUICK/README.md).
 
@@ -61,7 +61,7 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - [The_ACTION!_Run_Time_Package](../The_ACTION!_Run_Time_Package/README.md)
 - [ACTION!_Reference_Card](../ACTION!_Reference_Card/README.md)
 - [ACTION!_error_codes](../ACTION!_error_codes/README.md)
-- [Aktion_mit_ACTION](../Articles/Aktion_mit_ACTION/README.md) - Report about the ACTION! Programming Language from the German Magazin "Happy Computer"
+- [Aktion mit Action!](../Articles/Aktion_mit_ACTION/README.md) - Report about the ACTION! Programming Language from the German Magazin "Happy Computer"
 - [Action!_Bugsheet_3](../Action!_Bugsheet_3/README.md)
 - [Fix_for_the_Bugs_in_divide_in_ACTION!](../Fix_for_the_Bugs_in_divide_in_ACTION!/README.md)
 - [Fix for PrintF Routine](../Fix_for_Bug_in_PrintF/README.md)
@@ -167,10 +167,10 @@ Thank you Alfred
 - [DOS Setup](../../../DOS_Setup/README.md) - A small tool to copy some files from disk to ramdisk. can be configured by a textfile.
 - [Data Entry Routines](../Examples/Data_Entry_Routines/README.md)
 - [Date Routines](../Examples/Date_Routines/README.md) - Library of routines supporting the input, storage and manipulation of dates.
-- [Delete_EOL_Char_in_Textfiles](../Examples/Delete_EOL_Char_in_Textfiles/README.md)
+- [Delete EOL Char in Textfiles](../Examples/Delete_EOL_Char_in_Textfiles/README.md)
 - [Displaylist_in_ACTION!](../Displaylist_in_ACTION!/README.md)
-- [END_Procedure](../Examples/END_Procedure/README.md) - Call procedure to leave an Action Program
-- [ERROR](../Examples/ERROR/README.md) (Converts SpartaDOS, BeWeDOS and RealDOS error # to readable text)
+- [End Procedure](../Examples/END_Procedure/README.md) - Call procedure to leave an Action Program
+- [ERROR!](../Examples/ERROR/README.md) (Converts SpartaDOS, BeWeDOS and RealDOS error # to readable text)
 - [Fast Graphics 15 Routines](../Examples/Fast_Graphics_15_Routines/README.md)
 - [Fast Graphics 8 Routines](../Examples/Fast_Graphics_8_Routines/README.md)
 - [File Compare in ACTION!](../Examples/File_Compare/README.md)
@@ -180,9 +180,9 @@ Thank you Alfred
 - [Game_AMAZING_in_ACTION!](../Game_AMAZING_in_ACTION!/README.md)
 - [Grep for Sparta DOS](../Examples/Grep_for_Sparta_DOS/README.md)
 - [Dump - Print the contents of binary files in hexadecimal and ATASCII](../Examples/HexDump/README.md) - Dump - Print the contents of binary files in hexadecimal and ATASCII
-- [Jump_to_DOS_DUP](../Jump_to_DOS_DUP/README.md)
+- [Jump to DOS DUP](../Jump_to_DOS_DUP/README.md)
 - [Kermit_in_ACTION!](../Kermit_in_ACTION!/README.md)
-- [Load_APL_Display-List_Files](../Load_APL_Display-List_Files/README.md)
+- [Load APL Display-List Files](../Load_APL_Display-List_Files/README.md)
 - [Load_Font_Files_in_ACTION!](../Load_Font_Files_in_ACTION!/README.md)
 - [Load Koala Pictures](../../Assembler/Examples/Load_Koala_Pictures/README.md)
 - [MiniDOS](../Examples/MiniDOS/README.md)
@@ -246,7 +246,7 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[More_Fun_with_Bounce!](../More_Fun_with_Bounce!/README.md)|#27 (02/ 85)|en|Game
 |[Demon Birds](../Examples/Demon_Birds/README.md)|#28 (03/ 85)|en|Game
 |[Roto](../../../Roto/README.md)|#31 (06/ 85)|en|Game
-|[Color_the_shapes](../Examples/Color_the_shapes/README.md)|#32 (07/ 85)|en|game
+|[Color the shapes](../Examples/Color_the_shapes/README.md)|#32 (07/ 85)|en|game
 |[Getting_in_on_the_Action!_1](../Getting_in_on_the_Action!_1/README.md)|#32 (07/ 85)|en|Tutorial
 |[Getting_in_on_the_Action!_2](../Getting_in_on_the_Action!_2/README.md)|#35 (10/ 85)|en|Tutorial
 |[Sneak_attack](../../../Sneak_attack/README.md)|#36 (11/ 85)|en|Game
@@ -258,15 +258,15 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 ### Antic
 ||Title||Issue||Language||Comment
 |[Interrupts_in_ACTION!](../Interrupts_in_ACTION!/README.md)|Vol. 3 #3 (07/ 84)|en|
-|[Demo_Pretty](../Articles/Demo_Pretty/README.md)|Vol. 3 #7 (11/ 84)|en|Demo from Antic I/O-Board
+|[Demo: Pretty](../Articles/Demo_Pretty/README.md)|Vol. 3 #7 (11/ 84)|en|Demo from Antic I/O-Board
 |[SPLASH_in_ACTION!](../SPLASH_in_ACTION!/README.md)|Vol. 3 #12 (04/ 85)|en|Demo
 |[Game_AMAZING_in_ACTION!](../Game_AMAZING_in_ACTION!/README.md)|Vol. 4 #1  (05/ 85)|en|Game
-|[View_3D](../Examples/View_3D/README.md)|Vol. 4 #2 (06/ 85)|en|Tool
-|[Dark_Star](../Articles/Dark_Star/README.md)|Vol. 4 #3 (07/ 85)|en|Game: Zapping Aliens With Radioactive Waste
+|[View 3D](../Examples/View_3D/README.md)|Vol. 4 #2 (06/ 85)|en|Tool
+|[DARK STAR](../Articles/Dark_Star/README.md)|Vol. 4 #3 (07/ 85)|en|Game: Zapping Aliens With Radioactive Waste
 |[Display Master](../Examples/Display_Master/README.md)|Vol. 4 #4 (08/ 85)|en|
 |[8 QUEENS ACTION!](../Articles/Eight_Queens/README.md)|Vol. 4 #5 (09/ 85)|en|92 chess solutions in 40 seconds
-|[Video_Stretch](../Articles/Video_Stretch/README.md)|Vol. 5 #6 (10/ 86)|en|Tool
-|[Killer_Chess](../Articles/Killer_Chess/README.md)|Vol. 6 #10 (02/ 88)|en|Game
+|[Video Stretch - Rubber visuals in ACTION!](../Articles/Video_Stretch/README.md)|Vol. 5 #6 (10/ 86)|en|Tool
+|[Killer Chess](../Articles/Killer_Chess/README.md)|Vol. 6 #10 (02/ 88)|en|Game
 |[Reardoor](../Articles/Reardoor/README.md)|Vol. 6 #10 (02/ 88)|en|Game
 |[Frog from Antic Vol. 6 #10 February 1988](../Articles/Frog/README.md)|Vol. 6 #10 (02/ 88)|en|Game
 |[ACTION!_Toolbox](../ACTION!_Toolbox/README.md)|Vol. 7 #6 (10/ 88)|en|Lightning-fast command finder (Wordfind and Matchup)
@@ -284,5 +284,5 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 
 ### CK Computer Kontakt
 ||Title||Issue||Language||Comment
-|[Musik_in_ACTION](../Examples/Musik_in_ACTION/README.md) |#10/85|ge| Tutorial
+|[Musik in ACTION!](../Examples/Musik_in_ACTION/README.md) |#10/85|ge| Tutorial
 |[ACTION!_noch_schneller](../ACTION!_noch_schneller/README.md) |#6-7/86|ge| Tutorial

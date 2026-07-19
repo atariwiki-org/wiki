@@ -1,7 +1,7 @@
 # Fortran
 
 ## Background
-Fortran is one of the earliest programming languages, and among the most influential. [Basic](../Basic/README.md) is a simplified, interpreted version of Fortran, sharing many of its constructs and commands. As of 2016, there is still no Fortran for the Atari 8-bit home computers, which is very sad, because Fortran remains important in scientific programming.
+Fortran is one of the earliest programming languages, and among the most influential. [BASIC](../Basic/README.md) is a simplified, interpreted version of Fortran, sharing many of its constructs and commands. As of 2016, there is still no Fortran for the Atari 8-bit home computers, which is very sad, because Fortran remains important in scientific programming.
 
 Fortran was intended to be used primarily for scientific mathematical processing, and it initially lacked any capability for strings and other common tasks. These were added over the years, and as a result the language began to grow. Early versions from the 1950s and 60s are quite small and could easily run on 8-bit machines, but later versions from the 1990s are more complex. The most practical version for 8-bit machines would be Fortran77, which would be very similar to most BASICs of the era.
 

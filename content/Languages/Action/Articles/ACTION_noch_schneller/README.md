@@ -10,7 +10,7 @@ Published: 	Computer Kontakt (CK) 6-7/86
 # Action! noch schneller
 Welcher Atari-Fan kennt ihn nicht, den superflinken ACTION!-Compiler von Optimized Systems Software (OSS)? Ohne Übertreibung ist das die beste und schnellste Programmiersprache für alle 8-Bit Computer von Atari, wenn nicht die schnellste für alle 6502-Computer überhaupt. Und die darf natürlich im Rahmen der Assemblerecke nicht vergessen werden.
 
-Den Lesern der Assemblerecke ist ACTION! schon längst kein Unbekannter mehr, denn in der [CK 10/85](../../Examples/Musik_in_ACTION/README.md) haben wir bereits ein Musikprogramm vorgestellt, das vollkommen in ACTION! geschrieben war. Diesmal wird noch etwas tiefer gebohrt und gezeigt, wie man ACTION!-Programme noch kürzer und noch schneller machen kann. Außerdem gibt's als besonderes Bonbon eine Runtime-Package, mit der ACTION!-Programme auch ohne Steckmodul laufen.
+Den Lesern der Assemblerecke ist ACTION! schon längst kein Unbekannter mehr, denn in der [Musik in ACTION!](../../Examples/Musik_in_ACTION/README.md) haben wir bereits ein Musikprogramm vorgestellt, das vollkommen in ACTION! geschrieben war. Diesmal wird noch etwas tiefer gebohrt und gezeigt, wie man ACTION!-Programme noch kürzer und noch schneller machen kann. Außerdem gibt's als besonderes Bonbon eine Runtime-Package, mit der ACTION!-Programme auch ohne Steckmodul laufen.
 
 ### Contra Basic
 

@@ -1,4 +1,4 @@
-# ProForth for the Apple II 
+# ProForth for the Apple II
 
 6502 Source, could be adapted to the Atari 8-bit.
 

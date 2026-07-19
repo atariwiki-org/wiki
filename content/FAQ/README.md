@@ -12,7 +12,7 @@ Besides the above, the intention of the Atari Wiki FAQ is to provide the reader 
 - [Convert red pages from manuals into white pages](../General/Convert_red_pages_from_manuals_into_white_pages/README.md)
 - [remove yellowing from an old Atari case](http://atariage.com/forums/topic/138244-how-to-remove-yellowing-from-an-old-atari-case/)
 - [find the revision number of Atari Assembler Editor](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Assembler%20Editor#section-Atari+Assembler+Editor-AssemblerEditorRevisionABCartridgesOutlookForRevisionCAndMaybeD)
-- [find the revision number of Atari Basic](../Languages/BASIC/Atari_BASIC/Articles/How_to_find_the_revision_number_of_Atari_Basic/README.md)
+- [How to find the revision number of Atari BASIC](../Languages/BASIC/Atari_BASIC/Articles/How_to_find_the_revision_number_of_Atari_Basic/README.md)
 - [find the revision number of OSS ACTION!](../How_to_find_the_revision_number_of_ACTION!/README.md)
 - [switch BASIC off or on from DOS XL commandline](../BASIC_on-off_from_DOS_XL_commandline/README.md)
 - [Create a theme for editing](../create_a_theme_for_editing/README.md)

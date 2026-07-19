@@ -38,4 +38,4 @@ and press the RETURN key
 |59|XL/XE OS Rev 3B (Arabic)
 |4|XL/XE OS Rev 4
 
-see also [How_to_find_the_revision_number_of_Atari_Basic](../Languages/BASIC/Atari_BASIC/Articles/How_to_find_the_revision_number_of_Atari_Basic/README.md) 
+see also [How to find the revision number of Atari BASIC](../Languages/BASIC/Atari_BASIC/Articles/How_to_find_the_revision_number_of_Atari_Basic/README.md) 

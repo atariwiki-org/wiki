@@ -1,7 +1,4 @@
----
-title: X-Forth
----
-### X-Forth
+# X-Forth
 
 Author: Carsten Strotmann
 Language: FORTH

@@ -1,6 +1,3 @@
----
-title: QuickMagazin 9
----
 # Quick Magazin 9
 
 ### Articles

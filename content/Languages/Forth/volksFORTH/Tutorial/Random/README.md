@@ -1,9 +1,6 @@
----
-title: Random
----
 # Creating Random numbers
 
-this code is Atari 8bit specific, as its using the POKEY chip as the source for randomness
+this code is Atari 8-bit specific, as its using the POKEY chip as the source for randomness
 
 ```
 : RND ( -- n ) \\ Random Number 0-$FF

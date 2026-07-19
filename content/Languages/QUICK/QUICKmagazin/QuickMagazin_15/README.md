@@ -1,6 +1,3 @@
----
-title: QuickMagazin 15
----
 # Quick Magazin 15
 
 ### Articles

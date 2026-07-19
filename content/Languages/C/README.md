@@ -75,8 +75,8 @@ OSS C/65 Cover
 
 ## CC65 ; CC65 is an Open Source C cross compiler for Atari 8-bit computers
 - [CC65 suite](attachments/CC65_suite.zip) ; size: 4.4 MB ; complete developer package from all over the internet. Working! Thanks to Carnegie Mellon University's School of Computer Science for hosting many files. :-)
-- [CC65_Einsteigerkurs](CC65/CC65_Einsteigerkurs/README.md)
-- [CC65_Porting_ideas](CC65/CC65_Porting_ideas/README.md)
+- [CC65-Einsteigerkurs](CC65/CC65_Einsteigerkurs/README.md)
+- [CC65 Porting Ideas](CC65/CC65_Porting_ideas/README.md)
 
 ### Examples
 - [3dMaze](Examples/3dMaze/README.md) A 3D Maze Program by Stefan Haubenthal

@@ -1,6 +1,3 @@
----
-title: CLISP Macros
----
 # CLISP Macros
 
 General Information

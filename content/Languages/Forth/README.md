@@ -4,7 +4,7 @@
 ### Background
 Forth is a concatenative, stack-based programming language.
 
-Stack-based languages simplify the language's parser considerably because the data for an instruction always appears in the source code before the instructions that will use it. To see why this helps, consider this typical line of [Basic](../Basic/README.md):
+Stack-based languages simplify the language's parser considerably because the data for an instruction always appears in the source code before the instructions that will use it. To see why this helps, consider this typical line of [BASIC](../Basic/README.md):
 
 {{A = 10 + 20 * B}}
 
@@ -41,17 +41,17 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 - [volksFORTH](volksFORTH/README.md) - a powerful Forth83 standards Forth for Atari 8bit, Atari ST, MS-DOS, CP/M, C=64, C=16/116/Plus4, still maintained
 - [ANTIC Forth](ANTIC_Forth/README.md)
 - [valFORTH](valFORTH/README.md)
-- [English_Software_Company_FORTH](English_Software_Company_FORTH/README.md)
+- [English Software Company FORTH](English_Software_Company_FORTH/README.md)
 ** [Page 6 Review of ES Forth](http://page6.org/archive/issue_14/page_34.htm) 
 - [EXTENDED Atari fig-FORTH (APX-10029)](Extended_Atari_FIG-Forth_APX-20029/README.md)
 - [Mesa FORTH](Mesa_FORTH/README.md)
 - [QS FORTH](QS_Forth/README.md)
-- [Graphic_Forth](Graphic_Forth/README.md) - A ANTIC / Fig-FORTH 1.4s Version with special Graphics Extensions.
+- [Grafik FORTH](Graphic_Forth/README.md) - A ANTIC / Fig-FORTH 1.4s Version with special Graphics Extensions.
 - [FigForth 1.0d](FigForth/FIG_Forth_1.0D/README.md)
 - [FigForth 1.1](FigForth/FIG_Forth_1.1/README.md)
 - [fig-FORTH1.4S-1.atr](attachments/fig-FORTH1.4S-1.atr)
 - [fig-FORTH1.4S-2.atr](attachments/fig-FORTH1.4S-2.atr)
-- [ProForth](ProForth/README.md) Apple II (6502 Source)
+- [ProForth for the Apple II](ProForth/README.md) Apple II (6502 Source)
 - [SNAUT V. 1.2 - Ein FORTH 83 Compiler](SNAUT/README.md)
 - [Forth Compiler from Frank Ostrowski](Forth_Compiler_from_Frank_Ostrowski/README.md)
 - [Atari Coin Op FORTH](CoinOp_FORTH/README.md)
@@ -76,29 +76,29 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 ## Forth Articles
 
 - [What is Forth?](Articles/What_is_Forth/README.md)?
-- [Converting_FIG-Forth_Programs_to_Forth-83](Articles/Converting_FIG-Forth_Programs_to_Forth-83/README.md)
+- [Converting FIG-FORTH Programs to FORTH-83](Articles/Converting_FIG-Forth_Programs_to_Forth-83/README.md)
 - [Forth Code Size](Articles/Forth_Code_Size/README.md)
 - [A 6502 Assembler in FORTH](Articles/A_6502_Assembler_in_FORTH/README.md) by William F. Ragdale, FOURTH DIMENSIONS Vol 3, 5p, 143ff
-- [Some_Debugging_Sourcecode_found_on_a_BBC_Micro_Fig-Forth_Disk](Articles/Some_Debugging_Sourcecode_found_on_a_BBC_Micro_Fig-Forth_Disk/README.md)
-- [6502_DISASSEMBLER](Articles/6502_DISASSEMBLER/README.md) in Forth
-- [Kermit_Protocol_in_Forth](Articles/Kermit_Protocol_in_Forth/README.md)
-- [6502_Forth_like_tiny_Operating_System](Articles/6502_Forth_like_tiny_Operating_System/README.md)
+- [Some Debugging Sourcecode found on a BBC Micro Fig-Forth Disk](Articles/Some_Debugging_Sourcecode_found_on_a_BBC_Micro_Fig-Forth_Disk/README.md)
+- [6502 Disassembler](Articles/6502_DISASSEMBLER/README.md) in Forth
+- [Kermit in FORTH](Articles/Kermit_Protocol_in_Forth/README.md)
+- [6502 Forth-like tiny Operating System](Articles/6502_Forth_like_tiny_Operating_System/README.md)
 - [APPLE II QForth](Articles/APPLE_II_QForth/README.md)
 - [Henry Laxen on Slashdot 2002](Articles/Henry_Laxen_on_Slashdot_2002/README.md)
-- [Yet_another_target_compiler](Articles/Yet_another_target_compiler/README.md)
-- [Forth_Macros](Articles/Forth_Macros/README.md)
-- [Local_Variables](Articles/Local_Variables/README.md)
-- [Freedom_of_Assembly](Articles/Freedom_of_Assembly/README.md) by Julian V. Noble
-- [Forth Sorting Routines](Articles/Forth_Sorting_Routines/README.md)
+- [Yet Another Target Compiler](Articles/Yet_another_target_compiler/README.md)
+- [Collection of Forth Macro definitions](Articles/Forth_Macros/README.md)
+- [Collection of Source on local variables](Articles/Local_Variables/README.md)
+- [Freedom of Assembly](Articles/Freedom_of_Assembly/README.md) by Julian V. Noble
+- [Forth sorting routines](Articles/Forth_Sorting_Routines/README.md)
 - [Forth_Memory_Allocator](Articles/Forth Memory Allocator/README.md)
-- [Forth_Database_Design](Articles/Forth_Database_design/README.md) "ELEMENTS OF DATA BASE DESIGN" by Glen B. Haydon
-- [Signed_Integer_Division](Articles/Signed_Integer_Division/README.md) by Robert L. Smith
+- [Forth Database design](Articles/Forth_Database_design/README.md) "ELEMENTS OF DATA BASE DESIGN" by Glen B. Haydon
+- [Signed Integer Division](Articles/Signed_Integer_Division/README.md) by Robert L. Smith
 - [From PASCAL to FORTH](Articles/From_PASCAL_to_FORTH/README.md) by Leonard Morgenstern
-- [Implementations_of_NEXT_on_6502](Articles/Implementations_of_NEXT_on_6502/README.md)
+- [Implementations of NEXT in Forth Systems for the 6502 CPU](Articles/Implementations_of_NEXT_on_6502/README.md)
 - [The Ultimate CASE Statement](Articles/The_Ultimate_CASE_Statement/README.md) by Wil Baden, VD 2 1987
 
 ## Tutorials
-- [Einfuehrung_in_Forth_83](Tutorials/Einfuehrung_in_Forth_83/README.md)
+- [Einführung in Forth-83](Tutorials/Einfuehrung_in_Forth_83/README.md)
 
 ## Videos and Screen Casts
 

@@ -1,6 +1,3 @@
----
-title: Position Command
----
 # Position Cursor
 
 The word POS moves the cursor to the X / Y position given.

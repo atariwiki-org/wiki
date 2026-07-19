@@ -4,7 +4,7 @@ by von Georg Rehfeldt, Vierte Dimension 1/1985
 
 (translation pending)
 
-see also [6502_DISASSEMBLER](../6502_DISASSEMBLER/README.md) 
+see also [6502 Disassembler](../6502_DISASSEMBLER/README.md) 
 
 ## Ein Disassembler für den 6502
 
