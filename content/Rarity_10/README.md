@@ -167,7 +167,7 @@ Atari Datenbank DXG 5723 Copyright © 1983 Atari Elektronik Vertriebs GmbH ; Que
 •) __Atari Music Spiele__
 Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. In keinem Katalog, in keiner Preisliste und in keinem Handbuch wurde hierzu eine Spur gefunden! Dennoch stammt die Information aus einer sehr seriösen Quelle, die wir ernst nehmen. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)
 
-•) __[Atari Super Biorhythmus](../Companies/Atari/Atari_Germany/Super_Biorhythmus/README.md) (wurde es je fertig?)__
+•) __[Atari Super Biorhythmus / Atari Super Biorythme](../Companies/Atari/Atari_Germany/Super_Biorhythmus/README.md) (wurde es je fertig?)__
 
 Und als Letztes noch das Modul, welches für den WDR hergestellt worden ist:
 

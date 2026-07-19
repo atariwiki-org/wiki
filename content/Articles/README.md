@@ -286,7 +286,7 @@
 - [Atari Writer 8036](../Companies/Atari/Atari_Writer/README.md)
 - [Atari Proofreader (AX2033)](../Companies/Atari/Atari_Proofreader/README.md)
 - [Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Germany/Atari_Schreiber/README.md)
-- [The_Writer's_Tool](../The_Writer's_Tool/README.md)
+- [OSS The Writer's Tool](../The_Writer_s_Tool/README.md)
 - [AUSTRO.TEXT](../Companies/AUSTRO.COM/AUSTRO.TEXT/README.md)
 
 ## [Atari 8-bit Software Preservation Initiative](http://a8preservation.com/#/home)
@@ -309,6 +309,9 @@
 ## Country-Specific Atari Software
 
 ### France - P.E.C.F. Atari
+```
+All of the following have no page yet
+
 - [Assembleur-Editeur (Cartridge: CXL 4003)](../Assembleur-Editeur/README.md)
 - [Atari Logo (Cartridge: RX 8032)](../Atari_Logo/README.md)
 - [Ataritexte (Cartridge: RXF 8036)](../Ataritexte/README.md)
@@ -366,7 +369,8 @@
 - [Promoteur (Disk: DXF 54017)](../Promoteur/README.md)
 - [Questions et réponses (Disk: APX 20081)](../Questions_et_réponses/README.md)
 - [Statistiques (Cassette: CX 4103)](../Statistiques/README.md)
-- [Super Biorythmes (Disk: DF 4001, Cassette: TF 4001)](../Super_Biorythmes/README.md)
+- [Super Biorythmes (Disk: DF 4001, Cassette: TF 4001)](../Super_Biorhythmus/README.md)
+```
 
 ### Germany - Atari Deutschland GmbH
 
@@ -450,7 +454,7 @@
 ### Unterhaltung
 - [Biorhythmus DXG 5727 bzw. TXG 4107](../Companies/Atari/Atari_Germany/Biorhythmus/README.md)
 - [Sprachbox DXG5721](../Sprachbox/README.md)
-- [Atari Super Biorhythmus](../Companies/Atari/Atari_Germany/Super_Biorhythmus/README.md)
+- [Atari Super Biorhythmus / Atari Super Biorythme](../Companies/Atari/Atari_Germany/Super_Biorhythmus/README.md)
 
 ### Utilities
 - [Disketten Betriebssystem II Version D2.0S](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)
@@ -672,7 +676,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 #### Assembler/Debugger
 - [Atari Assembler Editor](../Companies/Atari/Atari_Assembler_Editor/README.md)
 - [Atari Macro Assembler and Program Text Editor (AMAC)](../AMAC/README.md)
-- [OSS_EASMD](../Companies/OSS/EASMD/README.md)
+- [OSS EASMD Version 1.0](../Companies/OSS/EASMD/README.md)
 - [OSS BUG/65](attachments/BUG-65_FROM_3000.txt)
 - [OSS MAC/65](Mac65)
 - [OSS MAC XL](Mac65)
@@ -683,14 +687,14 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Bibo-Assembler](attachments/BIBO.asm)
 
 #### Action!
-- [Action!](../Action/README.md)
+- [Action!](../Languages/Action/README.md)
 
 ### BASIC
 - [Atari Basic Source Code 1](https://atariwiki.org/wiki/attach/The%20Atari%20Basic%20Source%20Book/How-atari-basic-works-p3.html) from [The Atari Basic Source Book](../The_Atari_Basic_Source_Book/README.md)
 - [Atari Basic Source Code 2](attachments/ataribas.asm)
 - [Atari Basic Source Code 3](attachments/AtariBasic.src)
-- [OSS Basic A+](../Basic_Aplus/README.md)
-- [BASIC XL](../Companies/BASIC_XL/README.md)
+- [BASIC A+](../Companies/OSS/BASIC_Aplus/README.md)
+- [BASIC XL](../Companies/OSS/BASIC_XL/README.md)
 - [OSS Basic XE](BASIC_XE)
 - [OSS Integer Basic](Integer_BASIC)
 - [Microsoft Basic](http://www.pagetable.com/?p=46)
