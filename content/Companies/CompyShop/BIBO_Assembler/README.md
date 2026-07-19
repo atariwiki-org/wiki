@@ -34,5 +34,5 @@ Copyright (C) 1986 E. Reuss & Compy-Shop
 - [SIO Sector Read for Atari BASIC](../../../SIO_Sector_Read_for_Atari_Basic/README.md)
 - [Atari ST Mouse Driver for ACTION!](../../../Languages/Action/Examples/Atari_ST_Mouse_Driver_for_ACTION/README.md)
 - [ST Mouse Driver for BASIC](../../../Languages/BASIC/Atari_BASIC/Examples/ST_Mouse_Driver_for_Basic/README.md)
-- [Sweet16Bibo](../../../Sweet_16/Sweet16Bibo/README.md) Sweet 16 - a virtual 16bit machine for the 8bit ATARI
+- [Sweet 16 for Bibo Assembler](../../../Sweet_16/Sweet16Bibo/README.md) Sweet 16 - a virtual 16bit machine for the 8bit ATARI
 - [Simple Blitter Routine](../../../Languages/BASIC/Turbo-BASIC_XL/Examples/Simple_Blitter/README.md)

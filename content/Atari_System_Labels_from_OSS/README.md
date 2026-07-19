@@ -1,4 +1,4 @@
-### Atari System Labels from OSS
+# Atari System Labels from OSS
 
 General Information
 Author: Optimized System Software OSS

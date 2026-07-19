@@ -186,7 +186,7 @@ Thank you Alfred
 - [Load_Font_Files_in_ACTION!](../Load_Font_Files_in_ACTION!/README.md)
 - [Load Koala Pictures](../../Assembler/Examples/Load_Koala_Pictures/README.md)
 - [MiniDOS](../Examples/MiniDOS/README.md)
-- [Multi_Player_Animation](../Examples/Multi_Player_Animation/README.md)
+- [Multi Player Animation](../Examples/Multi_Player_Animation/README.md)
 - [OS Vectors](../../../OS_Vectors/README.md)
 - [Percom Block](../../../PERCOM_Block_Manipulation/README.md)
 - [Percom Service](../../../PERCOM_Service/README.md) -- Disk Format Configuration

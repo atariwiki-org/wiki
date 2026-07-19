@@ -59,7 +59,7 @@
 - [Advanced_6502_Assembly_Code_Examples](../Advanced_6502_Assembly_Code_Examples/README.md)
 - [APAC_Graphics_Mode](../APAC_Graphics_Mode/README.md)
 - [Atari_800_Assembler_Equates](../OS/Atari_OS/Atari_800_Assembler_Equates/README.md)
-- [Atari_System_Labels_from_OSS](../Atari_System_Labels_from_OSS/README.md)
+- [Atari System Labels from OSS](../Atari_System_Labels_from_OSS/README.md)
 - [6502 bugs](../6502_bugs/README.md)
 - [6502 opcodes - complete list](http://www.6502.org/tutorials/6502opcodes.html)
 - [6502 Coding Algorithms Macro Library](../6502_Coding_Algorithms_Macro_Library/README.md)

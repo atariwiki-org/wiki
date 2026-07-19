@@ -30,7 +30,7 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 ## volksFORTH Handbuch (German)
 
 - [Handbuch volksFORTH Version 3.90](Handbuch/Chapter1/README.md)
-- [Kapitel 2](Handbuch/Chapter2/README.md)
+- [volkFORTH - Handbook - Chapter 2](Handbuch/Chapter2/README.md)
 - [Kapitel 3: Arithmetik](Handbuch/Chapter3/README.md)
 - [Programm-Strukturen](Handbuch/Chapter4/README.md)
 - [Ein-/Ausgabe in volksFORTH](Handbuch/Chapter5/README.md)

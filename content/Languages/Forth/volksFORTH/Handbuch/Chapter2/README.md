@@ -1,4 +1,4 @@
-## volkFORTH - Handbook - Chapter 2
+# volkFORTH - Handbook - Chapter 2
 
 # Einstieg ins volksFORTH
 

@@ -14,7 +14,7 @@ tab content 1
 
 Im Folgenden werden die Konzepte des 6502-Assemblers für VolksForth dargestellt. Es wird kein vollständiges Glossar angegeben, da die Mnemonics des Assemblers allen Maschinensprache-Programmierern vertraut sein dürften. Eine genaue Darstellung der Funktionsweise findet sich in den [A 6502 Assembler in FORTH](../../../Articles/A_6502_Assembler_in_FORTH/README.md)  . Im Folgenden werden eine kurze Zusammenfassung sowie Änderungen gegenüber dem Original dargestellt.
 
-Die Funktionsweise des Adressinterpreters sowie der Routine NEXT wird in [Kapitel 2 des volksFORTH Handbuch](../Chapter2/README.md) dargestellt. Der 6502-Assembler gestattet strukturierte Programmierung. Die Strukturelemente sind analog zu den Kontrollstrukturen des Forth aufgebaut, tragen jedoch andere Namen, um die Verwechselungsgefahr zu verringern und die Übersichtlichkeit zu erhöhen.
+Die Funktionsweise des Adressinterpreters sowie der Routine NEXT wird in [volkFORTH - Handbook - Chapter 2](../Chapter2/README.md) dargestellt. Der 6502-Assembler gestattet strukturierte Programmierung. Die Strukturelemente sind analog zu den Kontrollstrukturen des Forth aufgebaut, tragen jedoch andere Namen, um die Verwechselungsgefahr zu verringern und die Übersichtlichkeit zu erhöhen.
 
 Ein Beispiel:
 ```

@@ -7,7 +7,7 @@ Compiler/Interpreter: ACTION!
 Published: Analog #35 (10/ 85)
 ---
 
-This article, both [part one](../Getting_in_on_the_Action_1/README.md) (__ANALOG Computing__, issue 32) and this month's segment, was written for advanced programmers. Don't feel badly if you've dabbled a little in Action! and can't make any sense out of the examples in this article. Some of the concepts are quite advanced and are mainly aimed at the experienced programmer who wants to squeeze more functionality out of the Action! cartridge.
+This article, both [Getting in on the Action! - Part 1](../Getting_in_on_the_Action_1/README.md) (__ANALOG Computing__, issue 32) and this month's segment, was written for advanced programmers. Don't feel badly if you've dabbled a little in Action! and can't make any sense out of the examples in this article. Some of the concepts are quite advanced and are mainly aimed at the experienced programmer who wants to squeeze more functionality out of the Action! cartridge.
 
 ### Modularizing.
 I recently completed a major undertaking in Action! - an integrated three-program package called __HomePak__. All together, these three programs take up about 64K of disk space, not counting the various global subprograms required. like an RS232 handler, character sets, etc.

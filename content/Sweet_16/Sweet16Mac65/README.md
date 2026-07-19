@@ -1,6 +1,3 @@
----
-title: Sweet16Mac65
----
 # Sweet 16 for MAC/65 Atari 8bit
 
 General Information

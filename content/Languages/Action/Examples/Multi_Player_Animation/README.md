@@ -1,4 +1,3 @@
-
 # Multi Player Animation
 
 General Information

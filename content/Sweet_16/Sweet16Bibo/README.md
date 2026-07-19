@@ -1,6 +1,3 @@
----
-title: Sweet16Bibo
----
 # Sweet 16 for Bibo Assembler
 
 General Information

@@ -1,4 +1,4 @@
-## Getting in on the Action! - Part 1
+# Getting in on the Action! - Part 1
 
 ### General Information
 Author: Russ Wetmore
