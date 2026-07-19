@@ -1,5 +1,5 @@
 ---
-title: Schnelle Vektoren in ACTION
+title: Schnelle Vektoren in ACTION!
 ---
 General Information
 Author: Peter Finzel
@@ -7,13 +7,13 @@ Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: ATARI Magazin #1 (01/02-87), ACTION! Center 1
 ---
-# Blitzschnelle Vektoren
-## Dieses erste Action!-Center befasst sich mit Grafikanimation auf den 8-Bit-Ataris.
+
+Dieses erste Action!-Center befasst sich mit Grafikanimation auf den 8-Bit-Ataris.
 Obwohl die Softwareflut bei den 8-Bit-Ataris längst nicht so hohe Wellen wie bei Schneider-Computer oder dem C64 schlägt, gibt es doch einige "Software-Perlen", um die uns die Besitzer der obigen Computertypen mehr als beneiden. Eine davon ist die Programmiersprache Action!. Dies ist eine strukturierte Compilersprache nach Art von Pascal bzw. C, die zu purer 6502-Maschinensprche übersetzt wird und damit Laufzeiten erreich, die sonst nur Assembler-Programmen vorbehalten sind.
 
 Dabei ist Action! so einfach zu programmieren wie Basic, nur eben ein wenig anders, da es sich um eine strukturierte Sprache handelt. Mit anderen Worten, es gibt kein GOTO, dafür aber eine Reihe von Verzweigungs- und Schleifenstrukturen, wodurch der Sprungbefehl mehr als überflüssig wird. Lassen Sie sich durch das Fehlen von Zeilennummern und dem Einrücken der Zeilen nicht abschrecken. Letzteres ist nur ein Stilmittel zur Hervorhebung der Struktur. Natürlich könnte man Action!-Programme auch in bester Basic-Manier schreiben (möglichst viel in einer Zeile). Doch bringt dies nicht; das kompilierte Programm wird weder kürzer noch schneller.
 
-Wo soviel Licht ist, dar natürlich ein wenig Schatten auch nicht fehlen. Sicherlich der negativste Aspekt an Action! ist der hohe Anschaffungspreis, der immerhin in der Größenordung eines neuen 800XL liegt. Die Programme sollen nur mit eingestecktem Action!-Modul laufen, doch glücklicherweise haben Handbücher nicht immer recht, und es gibt eine Anzahl von Tricks, mit denen man Action!-Programme vom Modul unabhängig macht. Wer meine [Assemblerecke in der Zeitschrift CK-Computer Kontakt (6-7/86)](../../Articles/ACTION_noch_schneller/README.md) verfolgt hat, weiß bereits Bescheid.
+Wo soviel Licht ist, dar natürlich ein wenig Schatten auch nicht fehlen. Sicherlich der negativste Aspekt an Action! ist der hohe Anschaffungspreis, der immerhin in der Größenordung eines neuen 800XL liegt. Die Programme sollen nur mit eingestecktem Action!-Modul laufen, doch glücklicherweise haben Handbücher nicht immer recht, und es gibt eine Anzahl von Tricks, mit denen man Action!-Programme vom Modul unabhängig macht. Wer meine [ACTION noch schneller](../../Articles/ACTION_noch_schneller/README.md) verfolgt hat, weiß bereits Bescheid.
 
 Genug der Vorrede, es wird höchste Zeit, dass wir uns mit einem konkreten Beispiel beschäftigen. wie Sie nun wissen, ist Action! enorm schnell und daher genau die richtige Sprache zum Programmieren von flinker Grafik. Nein, wir wollen nicht schon wieder die Player-Missiles strapazieren, sondern diesmal Animation in hochauflösender Grafik produzieren. Genauer ausgedrückt wird es sich um Vektorgrafik handeln. Was versteht man nun darunter?
 

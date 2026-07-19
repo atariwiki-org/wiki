@@ -1,6 +1,3 @@
----
-title: Pulse in ACTION
----
 # PULSE Game in ACTION!
 
 by Joel Gluck

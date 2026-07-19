@@ -1,6 +1,3 @@
----
-title: CC65 Einsteigerkurs
----
 # CC65-Einsteigerkurs
 
 

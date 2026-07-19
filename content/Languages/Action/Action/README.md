@@ -164,7 +164,7 @@ Thank you Alfred
 - [Catepill](../../../People/Carsten_Strotmann/Catepill/README.md) unfinished Game with Level editor in ACTION!
 - [Compile_to_Disk](../Articles/Compile_to_Disk/README.md) ACS
 - [DLI_in_ACTION!](../DLI_in_ACTION!/README.md)
-- [DOS_Setup](../../../DOS_Setup/README.md) - A small tool to copy some files from disk to ramdisk. can be configured by a textfile.
+- [DOS Setup](../../../DOS_Setup/README.md) - A small tool to copy some files from disk to ramdisk. can be configured by a textfile.
 - [Data Entry Routines](../Examples/Data_Entry_Routines/README.md)
 - [Date Routines](../Examples/Date_Routines/README.md) - Library of routines supporting the input, storage and manipulation of dates.
 - [Delete_EOL_Char_in_Textfiles](../Examples/Delete_EOL_Char_in_Textfiles/README.md)
@@ -186,7 +186,7 @@ Thank you Alfred
 - [Load_Font_Files_in_ACTION!](../Load_Font_Files_in_ACTION!/README.md)
 - [Load Koala Pictures](../../Assembler/Examples/Load_Koala_Pictures/README.md)
 - [MiniDOS](../Examples/MiniDOS/README.md)
-- [Multi_Player_Animation](../../../Multi_Player_Animation/README.md)
+- [Multi_Player_Animation](../Examples/Multi_Player_Animation/README.md)
 - [OS_Vectors](../../../OS_Vectors/README.md)
 - [PERCOM_Block_Manipulation](../../../PERCOM_Block_Manipulation/README.md)
 - [PERCOM_Service](../../../PERCOM_Service/README.md) -- Disk Format Configuration
@@ -207,9 +207,9 @@ Thank you Alfred
 
 ### Tools
 
-- [Action_Source_Code_Formatter](../Action_Source_Code_Formatter/README.md)
+- [Action! Source Code Formatter](../Action_Source_Code_Formatter/README.md)
 - [Infoline for BASIC and ACTION!](../Examples/Infoline/README.md) for ACTION! and BASIC
-- [ACTION_OBJECT_CODE_RELOCATION_PROGRAM](../ACTION_OBJECT_CODE_RELOCATION_PROGRAM/README.md) ; Thank you so much Alfred from AtariAge, we all really appreciate your help here again.
+- [ACTION OBJECT CODE RELOCATION PROGRAM](../ACTION_OBJECT_CODE_RELOCATION_PROGRAM/README.md) ; Thank you so much Alfred from AtariAge, we all really appreciate your help here again.
 - [Relocator](../../../Relocator/README.md) for Action; relocates Action code to run independent from the code location
 - [acsterm.txt](attachments/acsterm.txt) ; ACSTERM is a terminal emulator for the Atari 800, 800XL, 1200XL and 130XE
 - [How to find the revision number of ACTION!](../How_to_find_the_revision_number_of_ACTION/README.md)
@@ -264,11 +264,11 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[View_3D](../Examples/View_3D/README.md)|Vol. 4 #2 (06/ 85)|en|Tool
 |[Dark_Star](../Articles/Dark_Star/README.md)|Vol. 4 #3 (07/ 85)|en|Game: Zapping Aliens With Radioactive Waste
 |[Display Master](../Examples/Display_Master/README.md)|Vol. 4 #4 (08/ 85)|en|
-|[Eight_Queens](../Articles/Eight_Queens/README.md)|Vol. 4 #5 (09/ 85)|en|92 chess solutions in 40 seconds
+|[8 QUEENS ACTION!](../Articles/Eight_Queens/README.md)|Vol. 4 #5 (09/ 85)|en|92 chess solutions in 40 seconds
 |[Video_Stretch](../Articles/Video_Stretch/README.md)|Vol. 5 #6 (10/ 86)|en|Tool
 |[Killer_Chess](../Articles/Killer_Chess/README.md)|Vol. 6 #10 (02/ 88)|en|Game
 |[Reardoor](../Articles/Reardoor/README.md)|Vol. 6 #10 (02/ 88)|en|Game
-|[Frog](../Articles/Frog/README.md)|Vol. 6 #10 (02/ 88)|en|Game
+|[Frog from Antic Vol. 6 #10 February 1988](../Articles/Frog/README.md)|Vol. 6 #10 (02/ 88)|en|Game
 |[ACTION!_Toolbox](../ACTION!_Toolbox/README.md)|Vol. 7 #6 (10/ 88)|en|Lightning-fast command finder (Wordfind and Matchup)
 
 ### ATARI''magazin''

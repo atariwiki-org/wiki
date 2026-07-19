@@ -1,13 +1,11 @@
----
-title: Interrupts in ACTION
----
+# Interrupts in ACTION!
+
 ### General Information
 Author: 	David Plotkin
 Language: 	ACTION!
 Compiler/Interpreter: 	ACTION
 Published: 	Antic July 1984
 ---
-# Interrupts in ACTION
 
 ;Synopsis: ''This article discusses advanced programming techniques using the ACTION! language. To use the accompanying listings, you must have the ACTION! cartridge from Optimized Systems Software.''
 

@@ -1,10 +1,4 @@
----
-title: Yet another target compiler
----
-# Yet another target compiler
-
-
-
+# Yet Another Target Compiler
 
 Yet Another Target Compiler by Eric S. Johansson
 
@@ -21,7 +15,7 @@ method include
 
 - freedom  from  the  ambiguities  and  restrictions  of   meta compilers.
 - using the same application source code for local  and  target code generation
-- expanding  the  usefulness  of  forth  as   an   applicationslanguage.
+- expanding  the  usefulness  of  forth  as   an   application language.
 - providing an easy way to connect forth generated code to code generated with other languages.
 - reduces problems with forward references
 

@@ -1,6 +1,3 @@
----
-title: Forth Macros
----
 # Collection of Forth Macro definitions
 
 ## Wil Baden

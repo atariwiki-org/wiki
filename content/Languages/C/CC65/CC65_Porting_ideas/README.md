@@ -1,8 +1,4 @@
----
-title: CC65 Porting ideas
----
 # CC65 Porting Ideas
-
 
 
 ## Address Database

@@ -1,9 +1,6 @@
----
-title: END Procedure
----
 # End Procedure
 
-Call prodedure to leave ACTION! Program
+Call procedure to leave ACTION! Program
 
 General Information
 

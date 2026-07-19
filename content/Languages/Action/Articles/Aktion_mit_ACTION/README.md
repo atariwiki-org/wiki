@@ -1,7 +1,6 @@
----
-title: Aktion mit ACTION
----
-# Report about the ACTION! Programming Language from the German Magazin "Happy Computer"
+# Aktion mit Action!
+
+A report about the ACTION! Programming Language from the German Magazin "Happy Computer"
 
 General Information
 

@@ -1,6 +1,3 @@
----
-title: Math Extension for 6502 Systems
----
 # VolksForth Math Extension
 
 for 6502 based systems

@@ -1,7 +1,4 @@
----
-title: Player Missile in Turbo Basic
----
-# Player Missile in Turbo Basic
+# Player Missile in Turbo-BASIC
 
 ## General Information
 

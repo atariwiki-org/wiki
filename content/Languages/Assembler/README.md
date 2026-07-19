@@ -1,7 +1,5 @@
----
-title: Assembler
----
 # Assembler
+
 Given the slow performance of [Atari BASIC](../BASIC/Atari_BASIC/README.md), the go-to language for programmers writing games or other speed-critical programs was 6502 assembler. The 6502 was somewhat infamous for its simplified design, but this also meant its assembler was very simple and easy to learn. As an introduction to assembler, there are few machines better than the Atari 8-bit.
 
 The first assembler for the Atari available to the public was [Atari Assembler Editor](../../Companies/Atari/Atari_Assembler_Editor/README.md), originally written by Shepardson Microsystems and sold by Atari in ROM cartridge format. Assembler Editor lacked many features, and was only suitable for small programs. For more demanding tasks, Atari also released [Atari_Macro_Assembler](../Atari_Macro_Assembler/README.md). Although powerful, Macro Assembler was slow as it was entirely disk based. This led to a thriving market for 3rd party assemblers and debuggers to fix the problems seen in one or the other.
@@ -26,7 +24,7 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [DataSoft Datasm-65 2.0](../../Companies/DataSoft/DataSoft_Datasm-65/README.md) (1981)
 - [Dunion's Debugging Tool (DDT) Rev. 1.0](../../Companies/OSS/DDT/README.md) (1982)
 - [OSS EASMD Version 1.0](../../Companies/OSS/EASMD/README.md) (1981)
-- [Edit_6502](../../Edit_6502/README.md) (1981)
+- [Edit 6502](../../Edit_6502/README.md) (1981)
 - [Extended DDT (1985)](../../Companies/OSS/Extended_DDT/README.md) (1985)
 - [MAC/65](../Mac65/README.md) (1982)
 - [MAE Assembler](MAE_Assembler/README.md) (1996)

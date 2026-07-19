@@ -1,7 +1,7 @@
----
-title: Reardoor
----
-# Reardoor from Antic Vol. 6 #10 February 1988
+# Reardoor
+
+From Antic Vol. 6 #10 February 1988
+
 Reardoor is a game from the Antic magazine, published in February 1988
 
 ## ATR Image

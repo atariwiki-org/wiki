@@ -1,6 +1,3 @@
----
-title: Load Font Files in ACTION
----
 # Load Font Files in ACTION!
 
 General Information

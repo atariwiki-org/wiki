@@ -1,7 +1,4 @@
----
-title: ST Mouse Driver for Basic
----
-# ST Mouse Driver for Basic
+# ST Mouse Driver for BASIC
 
 This is driver for an Atari ST mouse for Atari Basic and Turbo Basic
 
@@ -17,7 +14,7 @@ The ML routine below will read the information from the Atari ST mouse, will pai
 
 ### Usage:
 
-you load the ML routine MOUSE.COM (from DOS as Autorun.sys or from TurboBasic with BLOAD "D:MOUSE.COM")
+you load the ML routine MOUSE.COM (from DOS as "AUTORUN.SYS" or from TurboBasic with BLOAD "D:MOUSE.COM")
 
 then, in your Basic Programm you call the routine at $400
 
@@ -44,7 +41,7 @@ you can get the information which mouse button has been pressed.
 Peek($03FD) will give you the x position of the mouse pointer,
 Peek($03FE) will give you the y position of the mouse pointer
 
-It should be straigghtforward to assemble the Assembler code in any Assembler (Mac/65, ATASm, x-asm ...). With BiboAssembler (also in the Wiki as ATR download) you can just type in the source.
+It should be straightforward to assemble the Assembler code in any Assembler (Mac/65, ATASm, x-asm ...). With BiboAssembler (also in the Wiki as ATR download) you can just type in the source.
 
 Mirko Sobe from BOSS X has asked me to write a VBI driven Mouse Driver for his BOSS X System. I have that on my to-do list. Such a mouse driver would run an the same time as the basic program.
 

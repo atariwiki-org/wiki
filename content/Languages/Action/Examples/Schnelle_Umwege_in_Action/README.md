@@ -1,5 +1,5 @@
 ---
-title: Schnelle Umwege in ACTION
+title: Schnelle Umwege in ACTION!
 ---
 General Information
 Author: Peter Finzel
@@ -7,8 +7,8 @@ Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: ATARI Magazin #2 (03/04-87), ACTION! Center 2
 ---
-# Schnelle Umwege in ACTION!
-### Im zweiten Action!-Center behandeln wir die Interrupts für flotte Programme
+
+Im zweiten Action!-Center behandeln wir die Interrupts für flotte Programme.
 Die Benutzung von Interrupts ist ein Kapitel das normalerweise nur Assembler Programmierern vorbehalten ist Gerade ihre Beherrschung stellt jedoch ein sehr gutes Hilfsmittel für eine Programmiersprache dar, da durch einen periodisch wiederkehrenden Interrupt (beim Atari VBI genannt) sogar eine Art von Parallelverarbeitung möglich ist. Das bedeutet nicht mehr und nicht weniger, als dass zwei Programme (quasi) gleichzeitig bearbeitet werden. Sie können sich vorstellen, dass es mit diesen Fähigkeiten kein Problem ist, fließende Animation mit Musik zu verbinden.
 
 Nun wäre es aber schade wenn eine  so vielversprechende Fähigkeit nur in Assembler nutzbar sein sollte, doch ist es ganz einfach eine Frage der Rechenzeit. Der bereits erwähnte VBI wird von der Hardware des Rechners 50mal pro Sekunde aufgerufen. Dann verzweigt der Programmablauf zu einem speziellen Programmteil im ROM des Computers und kann, wie wir später noch sehen werden, auch auf eigene Programme umgelenkt werden Es ist klar, dass die vom VBI aufgerufene Routine auch innerhalb von 20 Millisekunden (1/50 sec) abgeschlossen sein muss, denn sonst würde sie nochmals aufgerufen, bevor sie beendet ist. Ein heilloses Durcheinander wäre die sichere Folge.

@@ -1,6 +1,3 @@
----
-title: VolksForthLogicWords
----
 # VolksForth logic words
 
 - true

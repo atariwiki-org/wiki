@@ -1,8 +1,3 @@
----
-title: Create Data-Statements from binary load files
----
-
-
 # Create DATA Statements from binary load files
 
 ```

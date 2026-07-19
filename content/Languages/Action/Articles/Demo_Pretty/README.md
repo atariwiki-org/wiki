@@ -1,14 +1,11 @@
----
-title: Demo Pretty
----
+# Demo: Pretty
+
 ### General Information
 Author: Brian Abbot
 Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: ANTIC Vol. 3, #7 (11/ 84)
 ---
-# Demo: Pretty
-
 I've been programming with Action! for a few months now and wrote the following demonstration program, which shows the speed of the Action! language.  This routine puts three thick bars on the screen.  They will rotate upward in 128 unbroken colors while the background colors move down.
 
 

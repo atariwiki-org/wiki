@@ -1,13 +1,12 @@
----
-title: Dark Star
----
+# DARK STAR
+
 ### General Information
 Author: Michael Mitchell
 Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: ANTIC Vol. 4, #3 (07/ 85)
 ---
-# DARK STAR
+
 ''Fly the Darkstar and wipe out enemy alien bases. There are two versions of this game, one is written in BASIC and the other in ACTION!. Both will run on any Atari of all memory sizes, with either disk or cassette. But the ACTION! Listing requires the ACTION! cartridge from Optimized Software Systems. Antic Disk subscribers will find a run-time file of the ACTION! version on their disk. Go to DOS and load DARKSTAR.EXE with the L function.''
 
 The year is 2001, you just graduated from high school and you're bored. all your friends headed for college or fulltime jobs, they seemed to have things planned out pretty well. You had dreams of medical school, but there was just no money for that kind of thing. So, what do you do?

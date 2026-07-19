@@ -1,14 +1,12 @@
----
-title: Getting in on the Action 2
----
+# Getting in on the Action! - Part 2
+
 ### General Information
 Author: Russ Wetmore
 Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: Analog #35 (10/ 85)
 ---
-# ON-LINE
-## Getting in on the Action!
+
 This article, both [part one](../Getting_in_on_the_Action_1/README.md) (__ANALOG Computing__, issue 32) and this month's segment, was written for advanced programmers. Don't feel badly if you've dabbled a little in Action! and can't make any sense out of the examples in this article. Some of the concepts are quite advanced and are mainly aimed at the experienced programmer who wants to squeeze more functionality out of the Action! cartridge.
 
 ### Modularizing.

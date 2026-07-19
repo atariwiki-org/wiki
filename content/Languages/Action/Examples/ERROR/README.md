@@ -1,7 +1,4 @@
----
-title: ERROR
----
-### ERROR!
+# ERROR!
 
 Author  : Erhard Pütz
 Language: ACTION!

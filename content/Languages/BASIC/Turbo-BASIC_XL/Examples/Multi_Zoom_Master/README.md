@@ -1,7 +1,4 @@
----
-title: Multi Zoom Master
----
-### Multi Zoom Master
+# Multi Zoom Master
 
 General Information
 

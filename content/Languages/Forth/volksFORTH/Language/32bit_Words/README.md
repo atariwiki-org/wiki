@@ -1,7 +1,4 @@
----
-title: VolksForth32bitWords
----
-# VolksForth 32bit words
+# VolksForth 32-bit words
 
 - extend
 - dabs|d-absolute

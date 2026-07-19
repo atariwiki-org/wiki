@@ -1,6 +1,5 @@
----
-title: Backtrack in ACTION
----
+# Backtrack in ACTION
+
 General Information
 Author: 	Sam Teague
 Language: 	ACTION!

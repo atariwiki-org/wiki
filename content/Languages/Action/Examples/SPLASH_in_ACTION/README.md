@@ -1,13 +1,12 @@
----
-title: SPLASH in ACTION
----
+# Splash in ACTION
+
 ### General Information
 Author:	Paul Chabot
 Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: ANTIC Vol. 3, #12 (04/ 85)
 ---
-# Splash in ACTION
+
 
 ''A tutorial with four demonstration programs. For BASIC programmers who want to know about the ACTION! programming language, and for ACTION!  users who want to pick up some tips. The first BASIC listing will run on any Atari computer The remaining listings are written in ACTION! and require the ACTION! cartridge. But BASIC programmers can compare these printed listings with the first listing and get some idea why the year-old ACTION! is increasingly becoming the language of choice for serious Atari programmers. NOTE. Antic Disk subscribers can run listing 4 without ACTION! We have provided a runtime binary file. Use the "L" option from DOS for the file, SPLASH.EXE.''
 

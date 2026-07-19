@@ -1,6 +1,3 @@
----
-title: Arrays with Bounds checking
----
 # Arrays with bounds checking
 
 ```

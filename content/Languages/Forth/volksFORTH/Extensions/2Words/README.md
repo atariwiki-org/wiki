@@ -1,7 +1,4 @@
----
-title: 2Words
----
-# 2Words (32bit number extensions)
+# 2-Words (32-bit number extensions)
 
 ## Implementation for 6502 based systems
 

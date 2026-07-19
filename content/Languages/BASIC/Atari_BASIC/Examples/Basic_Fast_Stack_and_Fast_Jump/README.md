@@ -1,8 +1,3 @@
----
-title: Basic Fast Stack and Fast Jump
----
-
-
 # Basic Fast Stack and Fast Jump
 
 from ANTIC [Issue February 1988](http://www.atarimagazines.com/v6n10/FastStackFastJump.html) 

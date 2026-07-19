@@ -1,9 +1,4 @@
----
-title: Jump to DOS DUP
----
-
-
-# Jump to DOS
+# Jump to DOS DUP
 
 ```
 ;

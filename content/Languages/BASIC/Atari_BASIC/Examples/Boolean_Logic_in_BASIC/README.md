@@ -1,8 +1,3 @@
----
-title: Boolean Logic in BASIC
----
-
-
 # Boolean Logic in BASIC
 
 Reprinted from the A.C.E.C. BBS (614)-471-8559

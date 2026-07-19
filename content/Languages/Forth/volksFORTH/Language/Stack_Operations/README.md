@@ -1,6 +1,3 @@
----
-title: VolksForthStackOperations
----
 # VolksForth StackOperations
 
 | Operation | Description |

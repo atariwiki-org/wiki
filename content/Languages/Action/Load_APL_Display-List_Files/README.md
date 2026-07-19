@@ -1,6 +1,3 @@
----
-title: Load APL Display-List Files
----
 # Load APL Display-List Files
 
 General Information

@@ -1,14 +1,11 @@
----
-title: Getting in on the Action 1
----
+## Getting in on the Action! - Part 1
+
 ### General Information
 Author: Russ Wetmore
 Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: Analog #32 (07/ 85)
 ---
-# ON-LINE
-## Getting in on the Action!
 
 Action! is an Atari programmer's dream come true. It is a language not too unlike C or Pascal, but which compiles to very "tight" 6502 machine language. Clint Parker, the author of Action!, has fashioned a remarkable programming environment, where editor, compiler and monitor are all resident at once.
 

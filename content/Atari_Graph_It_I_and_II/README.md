@@ -1,4 +1,4 @@
-# Atari Graph It I & II (CX4109 (Englisch), TXG9517 (deutsch)
+# Atari Graph It I & II (CX4109 (Englisch), TXG9517 (deutsch))
 
 Copyright (C) 1980 - 1983 by Atari, Inc.; Lane Winner; Howard D. Siebenrock und Atari Elektronik-Vertriebsgesellschaft mbH
 

@@ -1,6 +1,5 @@
----
-title: Forth Database design
----
+# Forth Database design
+
 ```
              SCR #49
                0 ( Introduction and load for DEMO data file.           MVP-FORTH)

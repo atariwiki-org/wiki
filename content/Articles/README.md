@@ -26,7 +26,7 @@
 - [Unleash_the_power_of_Ataris_CPU](../Unleash_the_power_of_Ataris_CPU/README.md)
 
 # Graphics
-- [Design_Master_Testbericht](../Design_Master_Testbericht/README.md) (German)
+- [Design Master Review](../Design_Master_Testbericht/README.md) (German)
 - [Multi_Player_Animator](../Multi_Player_Animator/README.md) (German)
 
 # Hardware
@@ -209,7 +209,7 @@
 - [RPN Calculator](../RPN_Calculator/README.md)
 
 ### Databases
-- [Synapse_SynFile](../Companies/Synapse_Software/Synapse_SynFile/README.md)
+- [Synapse SynFile](../Companies/Synapse_Software/Synapse_SynFile/README.md)
 - [AUSTRO.BASE](../Companies/AUSTRO.COM/AUSTRO.BASE/README.md)
 
 ### Diagnostics
@@ -586,7 +586,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [SpartaDOS](../SpartaDOS/README.md)
 - [SuperDOS](../SuperDOS/README.md)
 - [TOP-DOS](../TOP-DOS/README.md)
-- [Turbo-DOS](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md)
+- [Turbo-DOS XE](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md)
 - [XDOS_2.43](../XDOS_2.43/README.md)
 
 ### DOS-Related Information

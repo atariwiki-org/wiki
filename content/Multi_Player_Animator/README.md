@@ -231,7 +231,7 @@ COPY     LDA (ZREG1),Y
 
 ## MPA in ACTION!
 
-- [Multi_Player_Animation](../Multi_Player_Animation/README.md)
+- [Multi_Player_Animation](../Languages/Action/Examples/Multi_Player_Animation/README.md)
 
 
 

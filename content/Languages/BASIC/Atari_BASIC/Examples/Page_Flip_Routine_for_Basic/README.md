@@ -1,7 +1,4 @@
----
-title: Page Flip Routine for Basic
----
-# Page Flip Routine for Basic
+# Page Flip Routine for BASIC
 
 
 ## Page Flip

@@ -1,6 +1,3 @@
----
-title: Signed Integer Division
----
 # Signed Integer Division
 
 by Robert L. Smith

@@ -1,16 +1,11 @@
----
-title: Kermit in ACTION
----
-### Kermit in ACTION!
+# Kermit in ACTION!
 
 General Information
 Author: 	John Howard Palevich
 Language: 	ACTION!
 Compiler/Interpreter: 	ACTION!
 
-## Kermit in ACTION!
-
-a Kermit implementation in ACTION!
+A Kermit implementation in ACTION!
 
 How to install Kermit on your ATARI
 home computer.

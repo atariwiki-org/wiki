@@ -1,13 +1,12 @@
----
-title: Color the shapes
----
+# Color the shapes
+
 ### General Information
 Author: Sol Guber
 Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: Analog #32 (07/ 85)
 ---
-# Color the shapes
+
 Structured programming is a way of thinking. It divides the parts of a program into smaller and smaller parts, and then, when the parts are very tiny (and obvious), starts to write the program. This kind of thinking is the basis of any FORTH program, first the top-down, then the bottom-up. First, look at the big picture, then keep looking at the littler and littler picture. Finally, from the details, build up the big picture again. Action! uses the same thinking to make up programs.
 
 ### The game.

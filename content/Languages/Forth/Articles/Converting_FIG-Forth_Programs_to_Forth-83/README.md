@@ -1,7 +1,4 @@
----
-title: Converting FIG-Forth Programs to Forth-83
----
-# Converting FIG-Forth Programs to Forth-83
+# Converting FIG-FORTH Programs to FORTH-83
 
 Copyright (C) 1985 Ray Duncan
 

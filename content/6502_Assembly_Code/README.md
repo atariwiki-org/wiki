@@ -41,7 +41,7 @@
 
 ## Assembly Code
 
-- [Decimal_and_Hex_Codes_for_Instruction_Set_-_Numerical](../Decimal_and_Hex_Codes_for_Instruction_Set_-_Numerical/README.md)
+- [Decimal and Hex Codes for Instruction Set - Numerical](../Decimal_and_Hex_Codes_for_Instruction_Set_-_Numerical/README.md)
 - [OSS ASCII-ATASCII Text File Converter](../OSS_ASCII-ATASCII_Text_File_Converter/README.md)
 - [Super_fast_circle_routine](../Super_fast_circle_routine/README.md) from Moj Mikro magazine (posted on AtariAge)
 - [Starting_to_Program_in_6502_Assembly_Code](../Starting_to_Program_in_6502_Assembly_Code/README.md)
@@ -69,7 +69,7 @@
 - [Bootloader with Sectorcounter](../Languages/Assembler/Examples/Bootloader_with_Sectorcounter/README.md)
 - [Atari 800 OS Source Listing](../OS/Atari_OS/Atari_800_ROM_OS_Source_Listing/README.md)
 - [Copy OS ROM to RAM](../Languages/Assembler/Examples/Copy_OS_ROM_to_RAM/README.md)
-- [Cycle_neutral_branching](../Cycle_neutral_branching/README.md)
+- [Cycle neutral branching](../Cycle_neutral_branching/README.md)
 - [Apple Assembly Line - How to Add and Subtract One](../Apple_Assembly_Line_-_How_to_Add_and_Subtract_One/README.md)
 - [Sweet_16](../Sweet_16/README.md) - a virtual 16bit machine for the 6502 CPU
 - [puZIP](../puZIP/README.md) - ZIP file compression

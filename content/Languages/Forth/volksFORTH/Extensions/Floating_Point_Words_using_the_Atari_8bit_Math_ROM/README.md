@@ -1,7 +1,4 @@
----
-title: Floating Point Words using the Atari 8bit Math ROM
----
-# Floating Point Words using the Atari 8bit Math ROM
+# Floating Point Words using the Atari 8-bit Math ROM
 
 General Information
 
@@ -29,10 +26,10 @@ Address of 1st floating point pseudo register
 Address of 2nd floating point pseudo register
 
 ### FLPTR
-Address of 2 byte pointer to user buffer for Foating point number (not used by the definitions below)
+Address of 2 byte pointer to user buffer for Floating point number (not used by the definitions below)
 
 ### INBUFF
-Address of 2 byte pointer to ASCII Foating point number
+Address of 2 byte pointer to ASCII Floating point number
 
 ### CIX
 Address of index into INBUFF
