@@ -3,7 +3,7 @@
 ## Information
 
 ### Background
-Action (also Action!) is an Atari-specific programming language written by Clinton Parker and sold by Optimized Systems Software (OSS) in ROM cartridge form starting in August 1983. It is the only language other than [BASIC](../../BASIC/README.md) and [Assembler](../../Assembler/README.md) that had real popularity on the platform and saw any significant coverage in the Atari press; type-in programs and various technical articles were found in most magazines. In comparison, languages like [Forth](../../Forth/README.md) and [Atari LOGO](../../../Logo/README.md) saw much less use and almost no press coverage.
+Action (also Action!) is an Atari-specific programming language written by Clinton Parker and sold by Optimized Systems Software (OSS) in ROM cartridge form starting in August 1983. It is the only language other than [BASIC](../../BASIC/README.md) and [Assembler](../../Assembler/README.md) that had real popularity on the platform and saw any significant coverage in the Atari press; type-in programs and various technical articles were found in most magazines. In comparison, languages like [Forth](../../Forth/README.md) and [Atari LOGO](../../Logo/README.md) saw much less use and almost no press coverage.
 
 Reviewers at the time gushed about the system. They noted that practically every aspect was superior to anything available at the time; compiling was almost instantaneous, the resulting code ran almost as fast as hand-coded assembler, the full-screen editor was universally loved, and the entire system took up only 8k due to clever memory management. The only complaint, also universal, was the poor quality of the original manual set.
 
@@ -135,13 +135,13 @@ Thank you Alfred
 - [Misc_useful_ACTION!_Functions](../Misc_useful_ACTION!_Functions/README.md) - (DIVERS.ACT)
 - [Chartest](../Examples/Chartest/README.md) - a group of routines which perform various functions and tests on characters.
 - [Fast Screen IO](../../../Fast_Screen_IO/README.md)
-- [Player_Missile](../../../Player_Missile/README.md)
-- [String_Library_PSC](../../../String_Library_PSC/README.md) - (STRING.ACT)
+- [Player Missile Module](../../../Player_Missile/README.md)
+- [String Library](../Examples/String_Library_PSC/README.md) - (STRING.ACT)
 
 ### Mini-Runtime LIBs
 - [_Intro](../Articles/_Intro/README.md) (Eine kleine Einführung zu den Mini-LIBs)
-- [Simple_PRINT_Runtime](../../../Simple_PRINT_Runtime/README.md) (Mini-LIB)
-- [ZERO_and_SETBLOCK](../../../ZERO_and_SETBLOCK/README.md) (RT Part)
+- [Simple PRINT Runtime!](../Articles/_Intro/Simple_PRINT_Runtime/README.md) (Mini-LIB)
+- [ZERO_and_SETBLOCK](../Articles/_Intro/ZERO_and_SETBLOCK/README.md) (RT Part)
 
 
 ### Examples
@@ -187,30 +187,30 @@ Thank you Alfred
 - [Load Koala Pictures](../../Assembler/Examples/Load_Koala_Pictures/README.md)
 - [MiniDOS](../Examples/MiniDOS/README.md)
 - [Multi_Player_Animation](../Examples/Multi_Player_Animation/README.md)
-- [OS_Vectors](../../../OS_Vectors/README.md)
-- [PERCOM_Block_Manipulation](../../../PERCOM_Block_Manipulation/README.md)
-- [PERCOM_Service](../../../PERCOM_Service/README.md) -- Disk Format Configuration
-- [Printing_Routine_for_Epson_Printer](../../../Printing_Routine_for_Epson_Printer/README.md)
-- [Query_Console_Keys](../../../Query_Console_Keys/README.md)
-- [SIO_CIO_Routine](../../../SIO_CIO_Routine/README.md)
-- [SourceCodeDisk1](../../../SourceCodeDisk1/README.md) ; SpartaDOS X disk image with Action source code
+- [OS Vectors](../../../OS_Vectors/README.md)
+- [Percom Block](../../../PERCOM_Block_Manipulation/README.md)
+- [Percom Service](../../../PERCOM_Service/README.md) -- Disk Format Configuration
+- [Printing Routine for Epson Printer](../../../Printing_Routine_for_Epson_Printer/README.md)
+- [Query Console Keys](../../../Query_Console_Keys/README.md)
+- [SIO CIO Routine](../../../SIO_CIO_Routine/README.md)
+- [ACTION! Source code disk](../SourceCodeDisk1/README.md) ; SpartaDOS X disk image with Action source code
 - [Starburst in ACTION!](../Examples/Starburst/README.md)
-- [Symbol_table_lister](../../../Symbol_table_lister/README.md) ACS
-- [Timer_Programming](../../../Timer_Programming/README.md)
+- [Symbol Table Lister for ACTION!](../Articles/Symbol_table_lister/README.md) ACS
+- [ACTION! Timer Programming](../Articles/Timer_Programming/README.md)
 - [Atari Trackball](../../../Trackball/README.md)
-- [Using_the_RAM_Under_the_OS_ROM_on_XL_and_XE_Computers](../../../Using_the_RAM_Under_the_OS_ROM_on_XL_and_XE_Computers/README.md)
-- [VT52_Terminal_Emulator](../../../VT52_Terminal_Emulator/README.md)
-- [VTEmulator](../../../VTEmulator/README.md)
-- [Windowing_Routines](../../../Windowing_Routines/README.md)
-- [XFD_Disk_Transfer_tool](../../../XFD_Disk_Transfer_tool/README.md) XFormer Filetransfere
-- [XModem_Filetransfer](../../../XModem_Filetransfer/README.md)
+- [Using the RAM Under the OS ROM on XL and XE Computers](../../../Using_the_RAM_Under_the_OS_ROM_on_XL_and_XE_Computers/README.md)
+- [VT52 Terminal Emulator](../Articles/VT52_Terminal_Emulator/README.md)
+- [VTEmulator](../Articles/VTEmulator/README.md)
+- [Windowing Routines](../Articles/Windowing_Routines/README.md)
+- [XFD Transfer](../../../XFD_Disk_Transfer_tool/README.md) XFormer Filetransfere
+- [XModem Filetransfer](../Examples/XModem_Filetransfer/README.md)
 
 ### Tools
 
 - [Action! Source Code Formatter](../Action_Source_Code_Formatter/README.md)
 - [Infoline for BASIC and ACTION!](../Examples/Infoline/README.md) for ACTION! and BASIC
 - [ACTION OBJECT CODE RELOCATION PROGRAM](../ACTION_OBJECT_CODE_RELOCATION_PROGRAM/README.md) ; Thank you so much Alfred from AtariAge, we all really appreciate your help here again.
-- [Relocator](../../../Relocator/README.md) for Action; relocates Action code to run independent from the code location
+- [ACTION! Relocator](../../../Relocator/README.md) for Action; relocates Action code to run independent from the code location
 - [acsterm.txt](attachments/acsterm.txt) ; ACSTERM is a terminal emulator for the Atari 800, 800XL, 1200XL and 130XE
 - [How to find the revision number of ACTION!](../How_to_find_the_revision_number_of_ACTION/README.md)
 
@@ -240,16 +240,16 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 ||Title||Issue||Language||Comment
 |[Review_Action!](../Review_Action!/README.md)|#16 (02/ 84)|en|Review
 |[An_Introduction_to_ACTION!](../An_Introduction_to_ACTION!/README.md) |#17 + #18 (03+ 04/ 84)|en|Tutorial
-|[Stars_in_3D](../../../Stars_in_3D/README.md)|#20 (07/ 84)|en|Demo
+|[Stars 3-D](../../../Stars_in_3D/README.md)|#20 (07/ 84)|en|Demo
 |[Bounce_in_ACTION!](../Bounce_in_ACTION!/README.md)|#20 (07/ 84)|en|Game
 |[Pulse_in_ACTION!](../Pulse_in_ACTION!/README.md)|#26 (01/ 85)|en|Demo
 |[More_Fun_with_Bounce!](../More_Fun_with_Bounce!/README.md)|#27 (02/ 85)|en|Game
 |[Demon Birds](../Examples/Demon_Birds/README.md)|#28 (03/ 85)|en|Game
-|[Roto](../../../Roto/README.md)|#31 (06/ 85)|en|Game
+|[R.O.T.O.](../../../Roto/README.md)|#31 (06/ 85)|en|Game
 |[Color the shapes](../Examples/Color_the_shapes/README.md)|#32 (07/ 85)|en|game
 |[Getting_in_on_the_Action!_1](../Getting_in_on_the_Action!_1/README.md)|#32 (07/ 85)|en|Tutorial
 |[Getting_in_on_the_Action!_2](../Getting_in_on_the_Action!_2/README.md)|#35 (10/ 85)|en|Tutorial
-|[Sneak_attack](../../../Sneak_attack/README.md)|#36 (11/ 85)|en|Game
+|[Sneak Attack](../Sneak_attack/README.md)|#36 (11/ 85)|en|Game
 |[Air Hockey](../Examples/Air_hockey/README.md)|#38 (01/ 86)|en|Game
 |[D:Check in ACTION!](../Examples/D-Check/README.md)|#44 (07/ 86)|en|Tool
 |[Trails](../Articles/Trails/README.md)|#50 (01/ 87)|en|Tool for using the KoalaPad in ACTION!

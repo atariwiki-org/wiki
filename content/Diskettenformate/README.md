@@ -32,18 +32,18 @@
 |[Atari DOS XE](../Companies/Atari/Atari_DOS/Atari_DOS_XE/README.md)|Y|Y|Y|Y|N|N|
 |[BIBO-DOS](../Companies/CompyShop/BIBO-DOS/README.md)|Y|Y|Y|Y|N|N|
 |[Turbo-DOS XE](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md)|Y|Y|Y|Y|N|N|
-|[Top DOS 1.5 Prof](../TOP-DOS/README.md)|Y|Y|Y|Y|?|N|
+|[TOP-DOS](../TOP-DOS/README.md)|Y|Y|Y|Y|?|N|
 |Mach DOS 3.7|Y|N|Y|Y|N|N|
 |[MyDOS](../DOS/MyDOS/README.md)|Y|Y|Y|Y|Y|N|MyDOS requires a special / external formatter to format 1440 KB- one is available e.g. with the CSS Black Box or the CSS Floppyboard,maybe there are also some other external formatters...?!?
-|[Sparta DOS 3.2x/3.3x](../SpartaDOS/README.md)|Y|Y|Y|Y|Y|Y|
+|[SpartaDOS](../SpartaDOS/README.md)|Y|Y|Y|Y|Y|Y|
 |Real DOS 2.x|Y|Y|Y|Y|Y|Y|
 |BeweDOS 1.x|Y|Y|Y|Y|N|N|a 720k or 1440k disk must be formatted with SpartaDOS orSDX or Real DOS, then Bewe DOS can be copied onto it!
-|[SDX 4.x](../SpartaDOS/README.md)|Y|Y|Y|Y|Y|Y|
+|[SpartaDOS](../SpartaDOS/README.md)|Y|Y|Y|Y|Y|Y|
 |[Lite DOS 2.x/3.X](http://www.mr-atari.com/Mr.Atari/LiteDOS/)|Y|Y|Y|Y|Y|?|
-|[Super DOS 5.x](../SuperDOS/README.md)|Y|Y|Y|Y|N|N|
+|[SuperDOS](../SuperDOS/README.md)|Y|Y|Y|Y|N|N|
 |DOS II+D 4.5|Y|Y|N|N|N|N|
 |DOS II+D 6.x|Y|Y|Y|N|N|N|
-|[XDOS 2.43](../XDOS_2.43/README.md)|Y|Y|Y|Y|N|N|in 360k mode the two disksides are used as twofloppy drives (D1: and D2:) in XDOS!
+|[XDOS](../People/Stefan Dorndorf/XDOS_2.43/README.md)|Y|Y|Y|Y|N|N|in 360k mode the two disksides are used as twofloppy drives (D1: and D2:) in XDOS!
 |KDOS 1.0|Y|N|N|N|N|N|
 |[OSS A+2.0](../OSS_A__2/README.md)|Y|N|Y|N|N|N|
 |[DOS XL 2.3x](../OSS_DOS_XL/README.md)|Y|N|Y|N|N|N|

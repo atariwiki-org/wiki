@@ -4,9 +4,9 @@ A virtual 16bit machine for the 6502 CPU
 
 ## Implementations in this Wiki
 
-- [original Apple 2 ROM Source](../Sweet16Apple2/README.md)
-- [Atari 8bit port for BiboAssembler](../Sweet16Bibo/README.md)
-- [Atari 8bit port for Mac65](../Sweet16Mac65/README.md)
+- [original Apple 2 ROM Source](Sweet16Apple2/README.md)
+- [Atari 8bit port for BiboAssembler](Sweet16Bibo/README.md)
+- [Atari 8bit port for Mac65](Sweet16Mac65/README.md)
 
 
 

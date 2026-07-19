@@ -7,7 +7,7 @@
 PLATO (Programmed Logic for Automatic Teaching Operations) was the first generalized computer-assisted instruction system. Starting in 1960, it ran on the University of Illinois' ILLIAC I computer. By the late 1970s, it supported several thousand graphics terminals distributed worldwide, running on nearly a dozen different networked mainframe computers. Many modern concepts in multi-user computing were originally developed on PLATO, including forums, message boards, online testing, e-mail, chat rooms, picture languages, instant messaging, remote screen sharing, and multiplayer video games.
 
 ## ROM image
-- [The_Learning_Phone](../The_Learning_Phone/README.md) ; original Atari software for PLATO on cartridge and with manuals
+- [The Learning Phone (RX8080)](../Companies/Atari/The_Learning_Phone/README.md) ; original Atari software for PLATO on cartridge and with manuals
 - [The_Learning_Phone-patched.rom](attachments/The_Learning_Phone-patched.rom) ; thank you so much AtariAge
 - [Learning_Phone_2400_baud_alt_character_set.rom](attachments/Learning_Phone_2400_baud_alt_character_set.rom) ; thank you so much AtariAge
 

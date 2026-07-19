@@ -18,7 +18,7 @@ INTER-LISP/65 V2.1 for the Atari 8-bit computer
 - [Inter-LISP commands](INTER-LISP65-Commands/README.md) Commands collected and documented by UNIXcoffee928
 - [CLISP Macros](CLISP_Macros/README.md) for INTER-LISP/65
 - [Lisp Editor](Lisp_Editor/README.md) for INTER-LISP/65
-- [Lisp Calculator](Lisp_Calculator/README.md) A simple Calculator in LISP
+- [A simple Calculator in LISP](Lisp_Calculator/README.md) A simple Calculator in LISP
 - [Lisp Macros](Lisp_Macros/README.md)
 - [Lisp Utility Package](Lisp_Utility_Package/README.md)
 

@@ -13,7 +13,7 @@ That's all! Enjoy! :-)
 
 - [CHIP-Special](../../../../CHIP-Special/README.md) ; Seite mit allen CHIP-Special-Ausgaben als PDF-Dateien und den Programmen auf ATR-Images. Sehr zu empfehlen! :-)))
 
-- [SDG_Statistical_Data_Graphics_and_Analysis](../../../../SDG_Statistical_Data_Graphics_and_Analysis/README.md) ; von Claudio Fernandez Loquenz. Gigantisches Statistik-Paket für den Atari. Es nicht zu kennen, ist eine Bildungslücke. Veröffentlicht im Abbuc Sondermagazin Nummer 40 als Beilage. Vielen lieben Dank an den [Abbuc e. V.](http://www.abbuc.de), das ist ein Hammer-Programm!
+- [SDG Statistical Data Graphics & Analysis](../../../../SDG_Statistical_Data_Graphics_and_Analysis/README.md) ; von Claudio Fernandez Loquenz. Gigantisches Statistik-Paket für den Atari. Es nicht zu kennen, ist eine Bildungslücke. Veröffentlicht im Abbuc Sondermagazin Nummer 40 als Beilage. Vielen lieben Dank an den [Abbuc e. V.](http://www.abbuc.de), das ist ein Hammer-Programm!
 
 - [Dieter Gretzschel (Old-Man-Tower)](../../../../People/Dieter_Gretzschel_Old-Man-Tower/README.md) ; diese Seite ist den Arbeiten von Dieter Gretzschel (Old-Man-Tower) gewidmet
 

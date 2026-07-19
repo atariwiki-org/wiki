@@ -30,7 +30,7 @@ In der Regel besteht das DOS aus zwei Teilen:
 - [SpartaDOS](../SpartaDOS/README.md)
 - [SpartaDOS_X](../SpartaDOS_X/README.md)
 - [TTDOS](../TTDOS/README.md) also known as Turbo Tape DOS
-- [XDOS_2.43](../XDOS_2.43/README.md) of 2009 by Stefan Dorndorf
+- [XDOS](../People/Stefan Dorndorf/XDOS_2.43/README.md) of 2009 by Stefan Dorndorf
 
 ## Game Disk Operating Systems for the Atari
 - [MyPicoDos](MyPicoDos/README.md) by HiassofT

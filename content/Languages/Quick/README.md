@@ -35,7 +35,7 @@ We are sorry, but we can't offer the ATR images for versions 2.1 and 2.2 in Engl
 ## QUICK Programs
 
 - [TIF2PIC](Examples/TIF2PIC/README.md) TIF2PIC converter by Ralf Patschke (pps)
-- [Abbuc_Magazin_73_Gametro](Examples/Abbuc_Magazin_73_Gametro/README.md) by Ralf Patschke (pps)
+- [Abbuc Magazin 73 Gametro](Examples/Abbuc_Magazin_73_Gametro/README.md) by Ralf Patschke (pps)
 - [Koung](Examples/Koung/README.md) ; A simple PONG like game written in QUICK
 - [QUICK Demo Disks](Examples/QUICK_Demo_Disks/README.md)
 

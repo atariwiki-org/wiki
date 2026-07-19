@@ -4,11 +4,11 @@ Copyright (C) 1980 Atari, Inc. under license from Control Data Corporation
 
 - [Bond Analysis CX8106](../Bond_Analysis/README.md)
 
-- [Stock Analysis CX8107 (1980) (Basic)](../../../Stock_Analysis/README.md)
+- [Stock Analysis (CX8107)](../Stock_Analysis/README.md)
 
-- [Stock Charting CX8108 (1980) (Basic)](../../../Stock_Charting/README.md)
+- [Stock Charting (CX8108)](../Stock_Charting/README.md)
 
-- [Mortgage & Loan Analysis CX4115 (1980) (Basic)](../../../Mortgage_and_Loan_Analysis/README.md)
+- [Mortgage & Loan Analysis (CX4115)](../Mortgage_and_Loan_Analysis/README.md)
 
 ## Reference
 - [Control Data Corporation in wikipedia](https://en.wikipedia.org/wiki/Control_Data_Corporation)

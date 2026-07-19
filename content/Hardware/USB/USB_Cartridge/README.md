@@ -30,7 +30,7 @@
 - [USB Steering Wheel Driver](../USB_Steering_Wheel_Driver/README.md) ( [Playing Pole Position with an USB Steering Wheel at ABBUC JHV 2004](../ProjUSB/ProjUSBCartAtariWheelPolePosPics/README.md) )
 - [Logitech GP Steering Wheel Driver](../Logitech_Formula_GP_USB_Wheel_Driver/README.md)
 - [Logitech VP Steering Wheel Driver](../Logitech_Formula_VF_USB_Wheel_Driver/README.md)
-- [Speedlink_Competition_Pro_USB](../../../Speedlink_Competition_Pro_USB/README.md)
+- [Speedlink Competition Pro USB](../../../Speedlink_Competition_Pro_USB/README.md)
 - [Atari USB Cart compatibility matrix](../DeviceMatrix/README.md)
 
 ## Documentation

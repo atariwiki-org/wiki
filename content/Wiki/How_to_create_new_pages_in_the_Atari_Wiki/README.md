@@ -147,11 +147,11 @@ Text
 [link](../link/README.md)              Erzeugt einen Hyperlink zu "link", wobei "link"
 sowohl ein interner WikiName
 oder ein externer Link (http://) sein kann.
-Bsp.: [Main](../../Main/README.md) 
+Bsp.: [Welcome to the AtariWiki (Version 3.1)](../../Main/README.md) 
 Main
 [text](../link/README.md)         Erzeugt einen Hyperlink, wobei der angezeigte Text
 und der Link unterschiedlich sind.
-Bsp.: [Hauptseite](../../Main/README.md) 
+Bsp.: [Welcome to the AtariWiki (Version 3.1)](../../Main/README.md) 
 Hauptseite
 [linkheadline](../linkheadline/README.md)     Erzeugt einen Hyperlink und nutzt eine Überschrift als Anker.
 link#headline

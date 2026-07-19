@@ -11,9 +11,9 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 ## Courses
 ### 1st column
 - [Dorsett Atari Basic Algebra MA](../Basic_Algebra_MA/README.md)
-- [Office_Careers_OF](../Office_Careers_OF/README.md)
+- [Dorsett Atari Office Careers OF](../Office_Careers_OF/README.md)
 - [Dorsett Atari Industrial Solid-State Electronics PL](../Industrial_Solid-State_Electronics_PL/README.md)
-- [Statistics_ST](../../../Statistics_ST/README.md)
+- [Dorsett Atari Statistics ST](../Statistics_ST/README.md)
 - [Dorsett Atari Reading-Development (Reading Comprehension) U](../Reading-Development_U/README.md)
 - [Dorsett Atari Comprehension-Reading AB](../Comprehension-Reading_AB/README.md)
 - [Dorsett Atari Reading-Development (Reading Comprehension) T ; Copyright (C) 1983 Dorsett Educational Systems, Inc.](../Reading-Development_T/README.md)
@@ -27,17 +27,17 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Dorsett Atari Comprehension-Reading CD](../Comprehension-Reading_CD/README.md)
 - [Dorsett Atari Reading-Development (Reading Comprehension) V](../Reading-Development_V/README.md)
 - [Reading-Development_X](../Reading-Development_X/README.md)
-- [Spelling_SP](../../../Spelling_SP/README.md)
-- [Spanish_U-ES](../../../Spanish_U-ES/README.md)
+- [Dorsett Atari Spelling SP](../Spelling_SP/README.md)
+- [Dorsett Atari Spanish-English U-ES](../Spanish_U-ES/README.md)
 ### 3rd column
 - [Dorsett Atari Mathematics (Geometry) MG ; Copyright (C) 1983 Dorsett Educational Systems, Inc.](../Geometry_MG/README.md)
 - [Dorsett Atari Digital Electronics PD](../Digital_Electronics_PD/README.md)
-- [Supervisory_Practices_SU](../../../Supervisory_Practices_SU/README.md)
+- [Dorsett Atari Supervisory Practices SU](../Supervisory_Practices_SU/README.md)
 - [Dorsett Atari Basic Sociology (SO)](../Basic_Sociology_SO/README.md)
 - [Dorsett Atari Reading-Development (Reading Comprehension) Y](../Reading-Development_Y/README.md)
 - [Dorsett Atari First Aid and Safety FA](../First_Aid_and_Safety_FA/README.md)
 - [Dorsett Atari Philosophy PY](../Philosophy_PY/README.md)
-- [World_History_HW](../../../World_History_HW/README.md)
+- [Dorsett Atari World History HW](../World_History_HW/README.md)
 - [Dorsett Atari General Shop OA](../General_Shop_OA/README.md)
 ### 4th column
 - [Dorsett Atari Principles of Accounting PA](../Principles_of_Accounting_PA/README.md)
@@ -51,7 +51,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Dorsett Atari Basic Electricity (PE)](../Basic_Electricity_PE/README.md)
 ### 5th column
 - [Dorsett Atari Mathematics for Electronics ME](../Mathematics_for_Electronics_ME/README.md)
-- [Working_with_Numbers_MN](../../../Working_with_Numbers_MN/README.md)
+- [Dorsett Atari Mathematics (Numbers) Working with Numbers MN](../Working_with_Numbers_MN/README.md)
 - [Dorsett Atari English as a second Language ESL 17-32](../English_as_a_second_Language_ESL_17-32/README.md)
 - [Dorsett Atari Reading-Development (Reading Comprehension) Z](../Reading-Development_Z/README.md)
 - [Dorsett Atari Reading-Development (Reading Comprehension) W](../Reading-Development_W/README.md)

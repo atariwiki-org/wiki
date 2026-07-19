@@ -37,7 +37,7 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 
 - [FOCO65](https://github.com/piotr-wiszowaty/foco65) a Forth Cross-Compiler written in Python that translates into XASM assembly language
 - [SPL](../SPL/README.md) (Simple Programming Language) a Forth-ish compiler written in Python that translates into Assembly language
-- [X-FORTH](X-FORTH/README.md) - a FIG Forth variant, currently maintained
+- [X-Forth](X-FORTH/README.md) - a FIG Forth variant, currently maintained
 - [volksFORTH](volksFORTH/README.md) - a powerful Forth83 standards Forth for Atari 8bit, Atari ST, MS-DOS, CP/M, C=64, C=16/116/Plus4, still maintained
 - [ANTIC Forth](ANTIC_Forth/README.md)
 - [valFORTH](valFORTH/README.md)

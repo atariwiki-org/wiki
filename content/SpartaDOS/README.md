@@ -103,7 +103,7 @@ different source code. Several versions produced:
 
 ## References
 - [SpartaDOS X @ Wikipedia](https://en.wikipedia.org/wiki/SpartaDOS_X)
-- [Sparta DOS X Review](../SpartaDosXReview/README.md)
+- [SpartaDos X Review](SpartaDosXReview/README.md)
 
 # Deutsch
 

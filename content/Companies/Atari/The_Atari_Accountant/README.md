@@ -105,7 +105,7 @@ __- Working versions:__ created by DjayBee from AtariAge ; you __don't(!)__ need
 - [CX8205-The Action Sales Co. Master Data Diskette](attachments/The_Action_Sales_Co.-Master_Data_Diskette_CX8205_by_CSS.atr) ; size: 184 KB (###)
 - [CX8206-The Action Sales Co. Training Data Diskette](attachments/CX8206-The_Action_Sales_Co._Training_Data_Diskette.atr) ; size: 184 KB
 
-(###) To get the data from the diskettes is the greatest spin-off of the whole project! We now have the knowledge and technology to: [Read_write_or_convert_from_an_Atari_815_Double_Disk_Drive](../../../Read_write_or_convert_from_an_Atari_815_Double_Disk_Drive/README.md). This is a major milestone regarding Atari and especially for preserving purposes. For the explanation of this breakthrough, please follow the link before, simply because it is too big to add here. Thank you for your understanding.
+(###) To get the data from the diskettes is the greatest spin-off of the whole project! We now have the knowledge and technology to: [Read, write or convert from an Atari 815 Double Disk Drive](../../../Read_write_or_convert_from_an_Atari_815_Double_Disk_Drive/README.md). This is a major milestone regarding Atari and especially for preserving purposes. For the explanation of this breakthrough, please follow the link before, simply because it is too big to add here. Thank you for your understanding.
 
 ## Manuals
 

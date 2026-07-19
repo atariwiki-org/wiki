@@ -2,7 +2,7 @@
 
 by Dan Bricklin and Bob Frankston
 
-Copyright (C) 1980- Software Arts, Personal Software Inc. (later named VisiCorp.), Paladin Software, Lotus Software, Lotus Development Corporation and 
+Copyright (C) 1980- Software Arts, Personal Software Inc. (later named VisiCorp.), Paladin Software, Lotus Software, Lotus Development Corporation and
 finally IBM ; in order of license dissemination
 
 ## The main goal of this chapter is to provide the user with informations and templates regarding the killer application VisiCalc.

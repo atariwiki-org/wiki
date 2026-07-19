@@ -43,18 +43,18 @@
 
 - [Decimal and Hex Codes for Instruction Set - Numerical](../Decimal_and_Hex_Codes_for_Instruction_Set_-_Numerical/README.md)
 - [OSS ASCII-ATASCII Text File Converter](../OSS_ASCII-ATASCII_Text_File_Converter/README.md)
-- [Super_fast_circle_routine](../Super_fast_circle_routine/README.md) from Moj Mikro magazine (posted on AtariAge)
-- [Starting_to_Program_in_6502_Assembly_Code](../Starting_to_Program_in_6502_Assembly_Code/README.md)
+- [Super fast circle routine](../Super_fast_circle_routine/README.md) from Moj Mikro magazine (posted on AtariAge)
+- [Starting to Program in 6502 Assembly Code](../Starting_to_Program_in_6502_Assembly_Code/README.md)
 - [Copy OS ROM to RAM](../Atari_XL.XE_Copy_ROM_to_RAM/README.md)
-- [Unused_Opcodes](../Unused_Opcodes/README.md)
+- [So-Called Unused Opcodes](../Unused_Opcodes/README.md)
 - [Interactive Assembler Tutorials](../Languages/Assembler/Interactive_Assembler_Tutorials/README.md)
 - [A-LANG: WAYS TO IMPLEMENT COMPUTER LANGUAGES ON 6502s](../A-LANG_-_WAYS_TO_IMPLEMENT_COMPUTER_LANGUAGES_ON_6502s/README.md)
-- [Tricky_Code_that_Always_Skips](../Tricky_Code_that_Always_Skips/README.md)
-- [Self_Modifying_Code](../Self_Modifying_Code/README.md)
-- [Sparta_DOS_X_Hello_World](../Sparta_DOS_X_Hello_World/README.md)
-- [Relocatable_Jumps](../Relocatable_Jumps/README.md)
-- [Print_Inline_Strings](../Print_Inline_Strings/README.md)
-- [Mixed_Mode_Graphics](../Mixed_Mode_Graphics/README.md)
+- [Tricky Code that Always Skips](../Tricky_Code_that_Always_Skips/README.md)
+- [Self Modifying Code](../Self_Modifying_Code/README.md)
+- [SDX Hello World](../SpartaDOS/Sparta_DOS_X_Hello_World/README.md)
+- [Relocatable Jumps](../Relocatable_Jumps/README.md)
+- [Print Inline Strings](../Print_Inline_Strings/README.md)
+- [Mixed Mode Graphics](../Mixed_Mode_Graphics/README.md)
 - [Synapse Assembler Atari 800 OS Equates](../Companies/Synapse_Software/SynAssembler/Synapse_Assembler_Atari_800_OS_Equates/README.md)
 - [Advanced_6502_Assembly_Code_Examples](../Advanced_6502_Assembly_Code_Examples/README.md)
 - [APAC_Graphics_Mode](../APAC_Graphics_Mode/README.md)
@@ -71,18 +71,18 @@
 - [Copy OS ROM to RAM](../Languages/Assembler/Examples/Copy_OS_ROM_to_RAM/README.md)
 - [Cycle neutral branching](../Cycle_neutral_branching/README.md)
 - [Apple Assembly Line - How to Add and Subtract One](../Apple_Assembly_Line_-_How_to_Add_and_Subtract_One/README.md)
-- [Sweet_16](../Sweet_16/README.md) - a virtual 16bit machine for the 6502 CPU
-- [puZIP](../puZIP/README.md) - ZIP file compression
-- [Small_DOS_2.5_COM-File_loader_for_Demo](../Small_DOS_2.5_COM-File_loader_for_Demo/README.md)
+- [Sweet 16](../Sweet_16/README.md) - a virtual 16bit machine for the 6502 CPU
+- [puZIP - ZIP File compression](../puZIP/README.md) - ZIP file compression
+- [Small DOS 2.5 COM-File loader for Demo](../Small_DOS_2.5_COM-File_loader_for_Demo/README.md)
 - [Hobbytronic Demo 2004/2005](../Hobby_Tronic_Demo_2004/README.md)
 - [BASIC_on-off_from_DOS_XL_commandline](../BASIC_on-off_from_DOS_XL_commandline/README.md)
 - [Page Flip Routine for BASIC](../Languages/BASIC/Atari_BASIC/Examples/Page_Flip_Routine_for_Basic/README.md)
-- [RAM_Move_Routine_for_Basic](../RAM_Move_Routine_for_Basic/README.md)
+- [RAM Move Routine for BASIC](../RAM_Move_Routine_for_Basic/README.md)
 - [Atari 6502 System Equations and Macros](../Atari_System_Equates_and_Macros/README.md)
 - [PSC Simple Debugger](../A_simple_6502_debugger/README.md)
 - [Atari COM-File Tracer](../Atari_COM_Filetracer/README.md)
-- [Typo_bug_virus](../Typo_bug_virus/README.md)
-- [Sector_Mapper](../Sector_Mapper/README.md)
+- [Typo bug virus](../Typo_bug_virus/README.md)
+- [Sector Mapper](../Sector_Mapper/README.md)
 
 ## Courses
 
@@ -144,7 +144,7 @@
 - [6502 Programmieren - Teil 10](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil10/README.md) - JSR, Zusatzbefehle des 65C02
 - [6502 Programmieren - Teil 11](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil11/README.md) - Schleifen
 - [6502 Programmieren - Teil 12](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil12/README.md) - Ausgabe von Zeichen und Texten auf dem Bildschirm
-- [Teil 13](../Zeile_per_CIO_einlesen_und_Programme_resetfest_machen/README.md) - Zeile per CIO einlesen und Programme RESET-fest machen
+- [6502 Programmieren, Teil 13](../Zeile_per_CIO_einlesen_und_Programme_resetfest_machen/README.md) - Zeile per CIO einlesen und Programme RESET-fest machen
 - [6502 Programmieren - Teil 14](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil14/README.md) - Programmierung von Interrupts
 
 ### CompyShop Magazin-Assembler für Fortgeschrittene

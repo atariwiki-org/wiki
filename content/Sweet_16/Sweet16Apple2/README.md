@@ -9,7 +9,7 @@ Author: Steve "Woz" Wozniak
 Assembler: generic
 Published: 1977
 
-See tutorial and reference in the main article at [Sweet_16](../Sweet_16/README.md).
+See tutorial and reference in the main article at [Sweet 16](../README.md).
 
 ```
 ********************************

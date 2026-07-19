@@ -924,7 +924,7 @@ xBIOS is almost like a programmers version of DOS. With it you can easily access
 
 [Link to official xBIOS page (Polish)](http://xxl.atari.pl/) 
 
-[xBIOS](../xBIOS/README.md) 
+[xBIOS Overview](../People/xxl/XBIOS/README.md) 
 
 ## Advanced Graphical Tools
 

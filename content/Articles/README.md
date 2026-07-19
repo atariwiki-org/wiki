@@ -1,7 +1,7 @@
 # Articles
 
 - [3D Printer Files](../3D_Printer_Files/README.md)
-- [SIO_plug](../SIO_plug/README.md)
+- [SIO plug](../SIO_plug/README.md)
 
 # Cassette
 - [Casette Boot](../Boot_from_Cassette/README.md)
@@ -23,11 +23,11 @@
 - [Ironman Atari - A Compilation of Advanced Atari 8-bit Programming Techniques](../Ironman_Atari/README.md) A compilation of advanced Atari 8-bit programming techniques
 - [Mode, Setcolor, Color Table](../Languages/BASIC/Atari_BASIC/Mode_Setcolor_Color_Table/README.md)
 - [Table_of_Modes_and_Screen_Format](../Table_of_Modes_and_Screen_Format/README.md)
-- [Unleash_the_power_of_Ataris_CPU](../Unleash_the_power_of_Ataris_CPU/README.md)
+- [Unleash the power of Ataris CPU](../Unleash_the_power_of_Ataris_CPU/README.md)
 
 # Graphics
 - [Design Master Review](../Design_Master_Testbericht/README.md) (German)
-- [Multi_Player_Animator](../Multi_Player_Animator/README.md) (German)
+- [Multi Player Animator](../Multi_Player_Animator/README.md) (German)
 
 # Hardware
 ## Computer
@@ -104,7 +104,7 @@
 - [ARGS RS232 Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (German)
 
 ## Video Upgrades
-- [XEP80](../XEP80/README.md)
+- [Atari XEP80](../Companies/Atari/XEP80/README.md)
 - [Driver for a PC Hercules Monochrome graphics card inside the ARGS PBI-ISA Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface/README.md)
 
 ## Controllers
@@ -117,7 +117,7 @@
 
 ## Voiceboxes/Sprachbox
 - [Sprachbox DXG5721](../Sprachbox/README.md) (German)
-- [Sprachbox XL/XE](../Sprachbox-xl-xe/README.md)
+- [Sprachbox XL/XL](../Sprachbox-xl-xe/README.md)
 
 ## Cartridges
 - [Blueprint_of_ACTION!_Cart](../Blueprint_of_ACTION!_Cart/README.md)
@@ -130,7 +130,7 @@
 - [ARGS ISA PC Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/README.md)
 - [ATARI 1450XL HOME COMPUTER INTEGRAL DISK DRIVE SPECIFICATION](../Companies/Atari/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
 - [Bank Switching (Bankumschaltung)](../Bank_Switching/README.md)
-- [SDrive-MAX](../SDrive-MAX/README.md)
+- [SDrive-MAX by KBr](../SDrive-MAX/README.md)
 - [The MicroUSB Project](../Hardware/USB/MicroUSB/README.md)
 
 # History
@@ -193,9 +193,9 @@
 - [Atari Home Finance](../Companies/Atari/Atari_Home_Finance/README.md)
 - [Atari Investment Analysis Series](../Companies/Atari/Atari_Investment_Analysis_Series/README.md)
   - [Bond Analysis CX8106](../Companies/Atari/Bond_Analysis/README.md) 
-  - [Mortgage_and_Loan_Analysis](../Mortgage_and_Loan_Analysis/README.md) 
-  - [Stock_Analysis](../Stock_Analysis/README.md) 
-  - [Stock_Charting](../Stock_Charting/README.md) 
+  - [Mortgage & Loan Analysis (CX4115)](../Companies/Atari/Mortgage_and_Loan_Analysis/README.md) 
+  - [Stock Analysis (CX8107)](../Companies/Atari/Stock_Analysis/README.md) 
+  - [Stock Charting (CX8108)](../Companies/Atari/Stock_Charting/README.md) 
 - [Atari Personal Financial Management System (P.F.M.S.) CX406](../Companies/Atari/Atari_Personal_Financial_Management_System/README.md)
 - [Atari Rechner Simulation mit UPN](../Atari_Rechner_Simulation_mit_UPN/README.md)
 - [Atari Silent Butler (DX5082)](../Companies/Atari/Atari_Silent_Butler/README.md)
@@ -258,7 +258,7 @@
 - [ATARI TELELINK II](../Companies/Atari/ATARI_TELELINK_II/README.md)
 - [ATARI TELELINK I](../Companies/Atari/ATARI_TELELINK_I/README.md)
 - [The Communicator II (CX488)](../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/ATARI_The_Communicator_II/README.md)
-- [The_Learning_Phone](../The_Learning_Phone/README.md)
+- [The Learning Phone (RX8080)](../Companies/Atari/The_Learning_Phone/README.md)
 - [AUSTRO.PHONE](../Companies/AUSTRO.COM/AUSTRO.PHONE/README.md)
 
 ### Simulation
@@ -270,7 +270,7 @@
 ### Spreadsheets
 - [BCALC](../BCALC/README.md)
 - [Calc_Magic](../Calc_Magic/README.md)
-- [VisiCalc](../VisiCalc/README.md)
+- [VisiCalc (Visual Calculator)](../VisiCalc/README.md)
 - [SpeedCalc](../SpeedCalc/README.md)
 - [SynCalc](../Companies/Synapse_Software/SynCalc/README.md)
 
@@ -394,7 +394,7 @@
 - [Tipp Trainer (TXG 9512)](../Companies/Atari/Atari_Germany/Tipp_Trainer/README.md)
 - [Städte_und_Länder](../Staedte_und_Laender/README.md)
 - [Europäische_Städte_und_Länder](../Europaeische_Staedte_und_Laender/README.md)
-- [Rechtschreibtrainer](../Rechtschreibtrainer/README.md)
+- [Rechtschreibtrainer (DXG 5713)](../Rechtschreibtrainer/README.md)
 
 #### Musik
 - [Music_Composer](../Music_Composer/README.md)
@@ -415,7 +415,7 @@
 - [Mikrosoft_Basic_aka_Microsoft_Basic_II](../Mikrosoft_Basic_aka_Microsoft_Basic_II/README.md)
 - [Pascal for the Atari](../Languages/Pascal/README.md)
 - [Pilot](../Pilot/README.md)
-- [Atari LOGO](../Logo/README.md)
+- [Atari LOGO](../Languages/Logo/README.md)
 
 ### Spiele
 - [WWF-Club-Spiel](../WWF-Club-Spiel/README.md)
@@ -581,17 +581,17 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [OS/A+ Version 4 / OSS DOS II+ Version 4.2](../Companies/OSS/OS_Aplus/OS_Aplus-Version_4/README.md)
 - [DOS XL](../Companies/OSS/DOS_XL/README.md)
 - [SmartDOS](../SmartDOS/README.md)
-- [Sparta_DOS_Construction_Set_Manual](../Sparta_DOS_Construction_Set_Manual/README.md)
-- [Sparta DOS X Review](../SpartaDosXReview/README.md)
+- [SpartaDOS Construction Set Manual](../SpartaDOS/Sparta_DOS_Construction_Set_Manual/README.md)
+- [SpartaDos X Review](../SpartaDOS/SpartaDosXReview/README.md)
 - [SpartaDOS](../SpartaDOS/README.md)
 - [SuperDOS](../SuperDOS/README.md)
 - [TOP-DOS](../TOP-DOS/README.md)
 - [Turbo-DOS XE](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md)
-- [XDOS_2.43](../XDOS_2.43/README.md)
+- [XDOS](../People/Stefan Dorndorf/XDOS_2.43/README.md)
 
 ### DOS-Related Information
 - [Disk formats / Diskettenformate](../Diskettenformate/README.md)
-- [Disk drive formats / Laufwerksformate](../Laufwerksformate/README.md)
+- [Disk drive formats / Laufwerksformate](../Laufwerksformate/README.md)
 - [Ram-Disk_under_OS-ROM_for_XL_XE](../Ram-Disk_under_OS-ROM_for_XL_XE/README.md) - Article from German "Happy Computer" magazine
 - [CIO Tutorial](../CIOV_Tutorial/README.md)
 - [File Suffix for Atari disk files](../File_Suffix/README.md)
@@ -599,7 +599,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Der XIO-Befehl für Dateioperationen](../Der_XIO_Befehl_fuer_Dateioperationen/README.md)
 - [Der XIO Befehl für Grafikoperationen](../Der_XIO_Befehl_fuer_Grafikoperationen/README.md)
 - Other [DOS-Topics](../DOS_topics/README.md)
-- [RTime8_Manual](../RTime8_Manual/README.md)
+- [R-Time8 Manual](../RTime8_Manual/README.md)
 - [XIO Command Codes for the DOS Handler (D:)](../XIO_Command_Codes_DOS_Handler/README.md)
 
 ## Games
@@ -647,7 +647,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari DOS II 2.0S Assembly Source Listing](../Companies/Atari/Atari_DOS/Atari_DOS_II_Assembly_Source_Listing/README.md)
 - [Atari DOS 2.5 Source Code from OSS](../Companies/Atari/Atari_DOS/Atari_DOS_2.5_Source_Code/README.md)
 - [MyDOS 4.51 source code](attachments/Mydos451.zip)
-- [SuperDOS 5.1 source code](../SuperDOS/README.md)
+- [SuperDOS](../SuperDOS/README.md)
 
 ### Drivers
 - [CX85 Keypad Interrrupt Handler](../Companies/Atari/Atari_CX85/Original_CX85_Keyboard_Handler/README.md)

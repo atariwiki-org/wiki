@@ -85,8 +85,8 @@
 - [All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
 
 ## Video Upgrades
-- [XEP80](../XEP80/README.md)
+- [Atari XEP80](../Companies/Atari/XEP80/README.md)
 
 ## Voicebox/Sprachbox
 - [Sprachbox DXG5721](../Sprachbox/README.md)
-- [Sprachbox XL/XE](../Sprachbox-xl-xe/README.md)
+- [Sprachbox XL/XL](../Sprachbox-xl-xe/README.md)

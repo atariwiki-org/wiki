@@ -1,13 +1,13 @@
 # Stefan Haubenthal
 
 ![](attachments/Koala.png)
-Meine Hardware: [XEP80](../XEP80/README.md), [CX21](http://atariki.krap.pl/index.php/CX21), [CX75](http://www.atariarchives.org/ecp/chapter_6.php) [https://www.atariarchives.org/creativeatari/Build_Your_Own_Light_Pen.php](https://www.atariarchives.org/creativeatari/Build_Your_Own_Light_Pen.php) 
+Meine Hardware: [Atari XEP80](../../Companies/Atari/XEP80/README.md), [CX21](http://atariki.krap.pl/index.php/CX21), [CX75](http://www.atariarchives.org/ecp/chapter_6.php) [https://www.atariarchives.org/creativeatari/Build_Your_Own_Light_Pen.php](https://www.atariarchives.org/creativeatari/Build_Your_Own_Light_Pen.php) 
 
 [http://atariki.krap.pl/index.php/Strona_g%C5%82%C3%B3wna](http://atariki.krap.pl/index.php/Strona_g%C5%82%C3%B3wna) 
 
-[Converting FIG-FORTH Programs to FORTH-83](../Languages/Forth/Articles/Converting_FIG-Forth_Programs_to_Forth-83/README.md) 
+[Converting FIG-FORTH Programs to FORTH-83](../../Languages/Forth/Articles/Converting_FIG-Forth_Programs_to_Forth-83/README.md) 
 
-[Rastaconverter](../Rastaconverter/README.md) [PLATO (Programmed Logic for Automated Teaching Operation)](../PLATO/README.md) [C/65 Manual](../Languages/C/C65_Manual/README.md) 
+[Rastaconverter](../../Rastaconverter/README.md) [PLATO (Programmed Logic for Automated Teaching Operation)](../../PLATO/README.md) [C/65 Manual](../../Languages/C/C65_Manual/README.md) 
 
 ## Turbotape
 - http://www.abbuc.de/community/forum/viewtopic.php?f=15&t=3167

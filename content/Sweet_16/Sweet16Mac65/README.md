@@ -9,7 +9,7 @@ Author: Steve "Woz" Wozniak
 Assembler: Mac/65
 Published: 1977
 
-see also Original [Sweet_16](../Sweet_16/README.md) 
+see also Original [Sweet 16](../README.md) 
 
 This is a port of the Sweet 16 interpreter to the 8bit ATARI.
 

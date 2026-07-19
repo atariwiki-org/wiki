@@ -1,4 +1,4 @@
-#  SpartaDOS Construction Set Manual
+# SpartaDOS Construction Set Manual
 
 ```
                                  THE COMPLETE

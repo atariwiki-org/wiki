@@ -52,26 +52,26 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 - [Relocating](Tutorial/Relocating/README.md)
 - [Adding_comments](Tutorial/Adding_comments/README.md); TODO Create
 - [Saveexe](Tutorial/saveexe/README.md)
-- [Working_with_files](Tutorial/Working_with_files/README.md)
+- [Working with files (translation pending)](Tutorial/Working_with_files/README.md)
 - [Reading_binary_files](Tutorial/Reading_binary_files/README.md); TODO Create
 - [Writing_binary_files](Tutorial/Writing_binary_files/README.md); TODO Create
 - [Reading_text_files](Tutorial/Reading_text_files/README.md); TODO Create
 - [Writing_text_files](Tutorial/Writing_text_files/README.md); TODO Create
 - [Assembler_CODE](Tutorial/Assembler_CODE/README.md); TODO Create
 - [Plot_and_DrawTo_using_the_CIO_OS_ROM](Tutorial/Plot_and_DrawTo_using_the_CIO_OS_ROM/README.md); TODO Create
-- [Clear_Screen](Tutorial/Clear_Screen/README.md)
-- [Read_Keyboard](../../../Read_keyboard/README.md)
+- [Clear Screen](Tutorial/Clear_Screen/README.md)
+- [Reading the keyboard from VolksForth](../../../Read_keyboard/README.md)
 - [Read_a_word_ie_Input_Command](Tutorial/Read_a_word_ie_Input_Command/README.md); TODO Create
-- [Loops](Tutorial/Loops/README.md)
+- [Loops in Forth](Tutorial/Loops/README.md)
 - Sound
-  - [Sound 1](Tutorial/Sound/README.md)
-  - [Sound 2 + storing data inline](Tutorial/Sound2/README.md) 
+  - [Sound in Forth](Tutorial/Sound/README.md)
+  - [Sound and storing](Tutorial/Sound2/README.md) 
 - [Read_Joysticks](Tutorial/Read_Joysticks/README.md)
-- [Position_Command](Tutorial/Position_Command/README.md) -- position the cursor on the screen
+- [Position Cursor](Tutorial/Position_Command/README.md) -- position the cursor on the screen
 - [Accessing_Memory_PEEK_POKE](Tutorial/Accessing_Memory_PEEK_POKE/README.md)
 - [Graphics](Tutorial/Graphics/README.md) Command (Setting a graphics mode using the CIO OS ROM); TODO Create
 - [Setcolor](Tutorial/Setcolor/README.md) Command; TODO Create
-- [Random](Tutorial/Random/README.md) command
+- [Creating Random numbers](Tutorial/Random/README.md) command
 - [Color](Tutorial/Color/README.md) command; TODO Create
 - [Locate](Tutorial/Locate/README.md) command; TODO Create
 - [String_handling](Tutorial/String_handling/README.md)
