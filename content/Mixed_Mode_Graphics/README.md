@@ -1,6 +1,3 @@
----
-title: Mixed Mode Graphics
----
 # Mixed Mode Graphics
 
 General Information

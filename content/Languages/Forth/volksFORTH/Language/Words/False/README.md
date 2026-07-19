@@ -1,7 +1,4 @@
----
-title: False
----
-__false__  ( -- 0 )
+# __false__  ( -- 0 )
 
 
 

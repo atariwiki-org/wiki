@@ -1,7 +1,4 @@
----
-title: One-plus
----
-__1+__ “one-plus” ( n1 | u1 -- n2 | u2 )
+# __1+__ “one-plus” ( n1 | u1 -- n2 | u2 )
 
 
 

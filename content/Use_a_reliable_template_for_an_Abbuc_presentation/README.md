@@ -1,7 +1,5 @@
----
-title: Use a reliable template for an Abbuc presentation
----
-# How to use a reliable template for an Abbuc presentation
+# How to use a reliable template for an ABBUC presentation
+
 %%tabbedSection
 %%tab-english
 In ordner to avoid complications with different slides, Abbuc has made a template ready to use for the presenter. Please be so kind and avoid using different fonts other than Arial and [Atari TrueType Font](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20True%20Type%20Font%20for%20PC%20and%20Mac). The first slide has a bigger Abbuc logo than the 2nd has. Please be so kind and do not place text or graphics over the logo. Further, it is highly recommended to use a font size of at least 16, in order to read everything from the very last row on in the auditorium. Thank you so much for your understanding, we appreciate very much.

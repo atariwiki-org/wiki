@@ -1,6 +1,3 @@
----
-title: Sprachbox-xl-xe
----
 # Sprachbox XL/XL
 
 Verlag Werner Rätz

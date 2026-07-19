@@ -1,7 +1,6 @@
----
-title: Sweet 16
----
-# Sweet 16 - a virtual 16bit machine for the 6502 CPU
+# Sweet 16
+
+A virtual 16bit machine for the 6502 CPU
 
 ## Implementations in this Wiki
 

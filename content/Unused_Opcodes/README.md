@@ -1,6 +1,3 @@
----
-title: Unused Opcodes
----
 # So-Called Unused Opcodes
 
 from Apple Assembly Line 03/81

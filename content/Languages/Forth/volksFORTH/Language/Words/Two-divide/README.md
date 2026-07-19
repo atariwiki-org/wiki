@@ -1,7 +1,4 @@
----
-title: Two-divide
----
-__2/__ "two-divide" or "two-slash" ( x1 -- x2 )
+# __2/__ "two-divide" or "two-slash" ( x1 -- x2 )
 
 
 

@@ -1,7 +1,4 @@
----
-title: Unleash the power of Ataris CPU
----
-### Unleash the power of Ataris CPU
+# Unleash the power of Ataris CPU
 
 By Ed Stewart
 (from A.N.A.L.O.G. 2, March/April 1981)

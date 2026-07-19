@@ -1,7 +1,4 @@
----
-title: U-divide-mod
----
-__u/mod__ "u-divide-mod" ( u1 u2 -- u3 u4 )
+# __u/mod__ "u-divide-mod" ( u1 u2 -- u3 u4 )
 
 
 

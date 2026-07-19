@@ -1,6 +1,3 @@
----
-title: SIO CIO Routine
----
 # SIO CIO Routine
 
 General Information

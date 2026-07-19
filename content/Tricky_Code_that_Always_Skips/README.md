@@ -1,6 +1,3 @@
----
-title: Tricky Code that Always Skips
----
 # Tricky Code that Always Skips
 
 General Information

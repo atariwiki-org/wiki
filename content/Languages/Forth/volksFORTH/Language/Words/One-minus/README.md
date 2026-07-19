@@ -1,6 +1,4 @@
----
-title: One-minus
----
+# 
 __1-__ "one-minus" ( n1 | u1 -- n2 | u2 )
 
 

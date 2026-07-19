@@ -1,13 +1,11 @@
----
-title: Stars in 3D
----
-### General Information
+# Stars 3-D
+
+## General Information
 Author: 	Donald E. Glover
 Language: 	ACTION!
 Compiler/Interpreter: 	ACTION
 Published: 	ANALOG Computing #20
 ---
-# Stars 3-D
 I was looking for something to do with my shiny new Action! cartridge when I ran across the article __Stars 3-D__ by Craig Patchett in __ANALOG__ No. 16. To become familiar with the new language, I decided to translate this demonstration program into Action!, a job I thought would take one or two hours. The task eventually took much longer, due to a number of strange quirks associated with the Action! language. I hope this discussion of my problems will save other Action! programmers some hair pulling and nail chewing.
 
 My first task was to find a place for the display list (DLIST) and screen memory (STRLIN). I wanted to put them in a safe location, while allowing easy access from Action!-generated code and in-line machine code. I finally decided to put them in Action! arrays whose starting addresses were defined such that the display list and screen memory started on 1K boundaries in high memory. (The Atari cannot easily deal with a display list which crosses a 1K boundary or screen memory which crosses a 4K boundary.)

@@ -1,8 +1,3 @@
----
-title: OS Vectors
----
-
-
 # OS Vectors
 
 ```

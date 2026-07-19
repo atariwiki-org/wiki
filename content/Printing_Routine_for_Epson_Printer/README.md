@@ -1,6 +1,3 @@
----
-title: Printing Routine for Epson Printer
----
 # Printing Routine for Epson Printer
 
 General Information

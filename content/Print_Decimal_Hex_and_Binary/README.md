@@ -1,6 +1,3 @@
----
-title: Print Decimal, Hex and Binary
----
 # Print Decimal, Hex and Binary routines
 
 

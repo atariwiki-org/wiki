@@ -1,6 +1,3 @@
----
-title: Zeile per CIO einlesen und Programme resetfest machen
----
 # 6502 Programmieren, Teil 13
 
 von Uwe Röder

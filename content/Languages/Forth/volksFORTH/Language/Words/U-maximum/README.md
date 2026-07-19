@@ -1,7 +1,4 @@
----
-title: U-maximum
----
-__umax__ "unsinged-maximum" ( u1 u2 -- u3 )
+# __umax__ "unsinged-maximum" ( u1 u2 -- u3 )
 
 
 

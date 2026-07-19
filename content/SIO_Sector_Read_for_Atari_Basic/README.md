@@ -1,7 +1,4 @@
----
-title: SIO Sector Read for Atari Basic
----
-# SIO Sector Read for Atari Basic
+# SIO Sector Read for Atari BASIC
 
 ```
 00010          .LI OFF

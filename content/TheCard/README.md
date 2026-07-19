@@ -1,9 +1,6 @@
----
-title: TheCard
----
-# Title: Programming and Usage of THE!CART :
+# The!Cart
 
-## Subtitle: The!Cart programming information
+## The!Cart programming information
 
 ### Date: 2013
 

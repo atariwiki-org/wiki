@@ -1,7 +1,4 @@
----
-title: Minimum
----
-__MIN__ "minimum" ( n1 n2 -- n3 )
+# __MIN__ "minimum" ( n1 n2 -- n3 )
 
 
 

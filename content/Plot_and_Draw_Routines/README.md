@@ -1,6 +1,3 @@
----
-title: Plot and Draw Routines
----
 # Plot and Draw Routines
 
 from BiboAssembler Toolsdisk 1

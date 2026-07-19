@@ -1,6 +1,3 @@
----
-title: Speedlink Competition Pro USB
----
 # Speedlink Competition Pro USB
 
 

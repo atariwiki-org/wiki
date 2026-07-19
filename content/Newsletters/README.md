@@ -1,7 +1,5 @@
----
-title: Newsletters
----
 # Newsletters
+
 ## OSS Newsletters
 - Summer 1983 ; [PDF](attachments/OSS_Newsletter-Summer_1983.pdf) ; Many thanks to Allan Bushman!
 - January 1984 ; [PDF](attachments/OSS_Newsletter-January_1984.pdf) ; Many thanks to Stephen D. Lawrow!

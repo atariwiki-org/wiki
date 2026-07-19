@@ -603,9 +603,7 @@
 
 "# Memory Map"
 ### 4_color_character
----
-title: 4_color_character
----
+
 # 4-color Characters
 The color of each pixel (4 in a line instead of the usual 8) depends on the bit combination of the byte in the character definition.
 
@@ -649,17 +647,14 @@ GRAPHICS 13:? #6;"A A A":? #6;"A A A":REM the second 3 "A"s are inverse video!
 ---
 see also: [Color topics](#../Color_topics), [topic_list](#../topic_list) 
 ### ABUFPT
----
-title: ABUFPT
----
+
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |28-31|$001C,$001F|ABUFPT| | |XL
 
 Register für interne Testzwecke
 ### ADRESS
----
-title: ADRESS
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |100,101|$0064,$0065|ADRESS| | |All
 
@@ -680,14 +675,10 @@ PROC Jump (CARD adr)
 RETURN
 ```
 ### ALLPOT
----
-title: ALLPOT
----
+
 ALLPOT
 
----
-title: APPMHI
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |14,15|$000E,$000F|APPMHI|__APP__lications __M__emory __HI__gh limit| |all
 
@@ -701,9 +692,7 @@ Siehe auch:
 *[MEMTOP](../MEMTOP/README.md) - Adresse oberhalb derer die Bildschirmdaten und die Displaylist liegen können
 
 ### ATRACT
----
-title: ATRACT
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |77|$004D|ATRACT|Attract mode timer and flag|none|All
 
@@ -715,9 +704,7 @@ See also:
 
 [DRKMSK](#../DRKMSK), [COLRSH](#../COLRSH) 
 ### AUDC1
----
-title: AUDC1
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
 |Read|53761|$D201|POT1|Pot/paddle 1|625|all
 |Write|53761|$D201|AUDC1| Audio channel 1 control|none|all
@@ -747,9 +734,7 @@ previous: [AUDF1](#../AUDF1)
 
 next: [AUDF2](#../AUDF2) 
 ### AUDC2
----
-title: AUDC2
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
 |Read|53763|$D203|POT3|Pot/paddle 3|627|all
 |Write|53763|$D203|AUDC2| Audio channel 2 control|none|all
@@ -779,9 +764,7 @@ previous: [AUDF2](#../AUDF2)
 
 next: [AUDF3](#../AUDF3) 
 ### AUDC3
----
-title: AUDC3
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
 |Read|53765|$D205|POT5|Pot/paddle 5|629|all
 |Write|53765|$D205|AUDC3| Audio channel 3 control|none|all
@@ -811,9 +794,7 @@ previous: [AUDF3](#../AUDF3)
 
 next: [AUDF4](#../AUDF4) 
 ### AUDC4
----
-title: AUDC4
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
 |Read|53767|$D207|POT7|Pot/paddle 7|631|all
 |Write|53767|$D207|AUDC4| Audio channel 4 control|none|all
@@ -843,9 +824,7 @@ previous: [AUDF4](#../AUDF4)
 
 next: [AUDCTL](#../AUDCTL) 
 ### AUDCTL
----
-title: AUDCTL
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||OS
 |Read|53768|$D208|ALLPOT|Audio control|all
 |Write|53768|$D208|AUDCTL|Pot Port State|all
@@ -882,9 +861,7 @@ previous: [AUDC4](#../AUDC4),[POT7](#../POT7)
 
 next: [STIMER](#../KBCODE),[KBCODE](#../KBCODE) 
 ### AUDF1
----
-title: AUDF1
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
 |Read|53760|$D200|POT0|Pot/paddle 0|624|all
 |Write|53760|$D200|AUDF1| Audio channel 1 frequency |none|all
@@ -922,9 +899,7 @@ previous: [CONSOL](#../CONSOL) of GTIA
 
 next: [AUDC1](#../AUDC1) 
 ### AUDF2
----
-title: AUDF2
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
 |Read|53762|$D202|POT2|Pot/paddle 2|626|all
 |Write|53762|$D202|AUDF2| Audio channel 2 frequency |none|all
@@ -962,9 +937,7 @@ previous: [AUDC1](#../AUDC1)
 
 next: [AUDC2](#../AUDC2) 
 ### AUDF3
----
-title: AUDF3
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
 |Read|53764|$D204|POT4|Pot/paddle 4|628|all
 |Write|53764|$D204|AUDF3| Audio channel 3 frequency |none|all
@@ -1002,9 +975,7 @@ previous: [AUDC2](#../AUDC2)
 
 next: [AUDC3](#../AUDC3) 
 ### AUDF4
----
-title: AUDF4
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
 |Read|53766|$D206|POT6|Pot/paddle 6|630|all
 |Write|53766|$D206|AUDF4| Audio channel 4 frequency |none|all
@@ -1042,17 +1013,13 @@ previous: [AUDC3](#../AUDC3)
 
 next: [AUDC4](#../AUDC4) 
 ### BOOT
----
-title: BOOT
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |9|$09|BOOT?| |all
 
 DISKBOOT setzt BIT 0, Kassette BIT 1
 ### BRKKEY
----
-title: BRKKEY
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |17|$11|BRKKEY| |X|
 
@@ -1065,9 +1032,7 @@ Zero means the BREAK key is pressed; any other number means it's not. A BREAK du
 
 It is also checked during all I/O and scroll/draw routines. During the keyboard handler routine, the status code is stored in DSTAT (76; $4C). BRKKEY is turned off at powerup. BREAK key abort status is flagged by setting BIT 7 of 53774 ($D20E). See the note on the BREAK key vector, above.
 ### BRKKY
----
-title: BRKKY
----
+
 ||Dec||Hex||Name
 |566,567|$0236,$0237|BRKKY
 
@@ -1076,17 +1041,13 @@ Break key interrupt vector. Only in OS "B" and later versions. Initialized to 59
 see also:
 [POKMSK](#../POKMSK), [IRQEN](#../IRQEN) 
 ### BUFADR
----
-title: BUFADR
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |21,22|$15,$16|BUFADR| | |
 
 Pointer auf den momentanen Disk-Buffer
 ### CASINI
----
-title: CASINI
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |2,3|$0002,$0003|CASINI| | |all
 
@@ -1099,18 +1060,14 @@ Die ersten sechs Byte eines Kasstten-Boot-Record werden wie folgt genutzt:
 ||5,6|Startadresse des Programms
 
 ### CASSBT
----
-title: CASSBT
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |75|$004B|CASSBT|Cassette boot flag|none|A
 |1002|$03EA|CASSBT|Cassette boot flag|none|X
 
 The Atari attempts both a disk and a cassette boot simultaneously. Zero here means no cassette boot was successful. See location 9/$9 [BOOT](#../BOOT) 
 ### CH
----
-title: CH
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |764|$02FC|CH|internal key code|all
 
@@ -1146,9 +1103,7 @@ together with Control key: add 128 ($80)
 ---
 see also: [Keyboard topics](#../Keyboard_topics) [Console Keys](#../CONSOL) [HELP](#../HELPFG) 
 ### CH1
----
-title: CH1
----
+
 ||Adr||Hex||Name||Description||OS
 |754|$02F2|CH1|prior key pressed|all
 
@@ -1156,9 +1111,7 @@ Prior keyboard character code (most recently read and accepted). This is the pre
 
 see also: [Keyboard topics](#../Keyboard_topics), [CH](#../CH) 
 ### CHACT
----
-title: CHACT
----
+
 ||R/W||Adr||Hex||Name||description||OS||Shadow of
 |R/W|755|$02F3|CHACT|Character display mode|all|[CHACTL](#../CHACTL) 54273/$D401
 
@@ -1168,9 +1121,7 @@ See [CHACTL](#../CHACTL) for a table with explanations.
 
 see also: [CRSINH](#../CRSINH), [ANTIC](#../ANTIC) 
 ### CHACTL
----
-title: CHACTL
----
+
 ||R/W||Adr||Hex||Name||Description||OS||Shadow
 |W|54273|$D401|CHACTL|Cursor- und Zeichendarstellung|all|[CHACT](#../CHACT) 755/$2F3
 
@@ -1190,9 +1141,7 @@ previous: [DMACTL](#../DMACTL)
 
 next: [DLISTL](#../DLISTL),[DLISTH](#../DLISTL) 
 ### Character_Sets
----
-title: Character Sets
----
+
 # Character Sets
 
 
@@ -1200,9 +1149,7 @@ title: Character Sets
 ---
 see also: [topic_list](#../topic_list), [4_color_character](#../4_color_character), [CHBAS](#../CHBAS) 
 ### CHBAS
----
-title: CHBAS
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW OF||OS
 |756|$02F4|CHBAS|Zeichensatzadresse|224 ($E0)|[CHBASE](#../CHBASE) |all
 
@@ -1218,9 +1165,7 @@ Die Zeichen sind nicht in der ATASCII-Reihenfolge, sondern in der „internen“
 ---
 see also: [Character_Sets](#../Character_Sets), [topic_list](#../topic_list) 
 ### CHBASE
----
-title: CHBASE
----
+
 ||DEC||HEX||NAME||SHADOW
 |54281|$D409|CHBASE|[CHBAS](#../CHBAS) 
 
@@ -1233,18 +1178,14 @@ previous: [PMBASE](#../PMBASE)
 
 next: [WSYNC](#../WSYNC) 
 ### CKEY
----
-title: CKEY
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |74|$004A|CKEY|Cassette boot request flag on coldstart|none|A
 |1001|$03E9|CKEY|Cassette boot request flag on coldstart|none|X
 
 Checks to see if the START key is pressed and, if so, CKEY is set. Autoboot cassettes are loaded by pressing the START console key while turning the power on. In response to the beep, press the PLAY button on the recorder.
 ### COLBK
----
-title: COLBK
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |53274|$D01A|COLBK|Background Color Register|0 ($00)|[COLOR4](#../COLOR4) |all
 ---
@@ -1254,9 +1195,7 @@ previous: 53273, $D019, [COLPF3](#../COLPF3), Color Register 3
 
 next: 53275, $D01B, [PRIOR](#../PRIOR), PM Priority Selection Register
 ### COLCRS
----
-title: COLCRS
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |85,86|$0055,$0056|COLCRS|Current cursor column|none|All
 
@@ -1268,16 +1207,12 @@ Previous: [ROWCRS](#../ROWCRS)
 
 Next: [DINDEX](#../DINDEX) 
 ### COLINC
----
-title: COLINC
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |122|$007A|COLINC| |none|A
 The column increment or decrement value (plus or minus one). [ROWINC](#../ROWINC) and [COLINC](#../COLINC) control the direction of the line drawing routine. The values represent the signs derived from the value in [NEWROW](#../NEWROW) (location 96/$60) minus the value in [ROWCRS](#../ROWCRS) (location 84/$54) and the value in [NEWCOL](#../NEWCOL) (locations 97,98/$61,$62) minus the value in [COLCRS](#../COLCRS) (locations 85,86/$55,$56).
 ### COLOR0
----
-title: COLOR0
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |708|$02C4|COLOR0|Color Register 0|40 ($28)|[COLPF0](#../COLPF0) |all
 
@@ -1291,9 +1226,7 @@ previous: 707, $02C3, [PCOLR3](#../PCOLR3), Player/Missile 3 Color Register
 
 next: 709, $02C5, [COLOR1](#../COLOR1), Color Register 1
 ### COLOR1
----
-title: COLOR1
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |709|$02C5|COLOR1|Color Register 1|202 ($CA)|[COLPF1](#../COLPF1) |all
 
@@ -1308,9 +1241,7 @@ previous: 708, $02C4, [COLOR0](#../COLOR0), Color Register 0
 
 next: 710, $02C6, [COLOR2](#../COLOR2), Color Register 2
 ### COLOR2
----
-title: COLOR2
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |710|$02C6|COLOR2|Color Register 2|148 ($94)|[COLPF2](#../COLPF2) |all
 
@@ -1324,9 +1255,7 @@ previous: 709, $02C5, [COLOR1](#../COLOR1), Color Register 1
 
 next: 711, $02C7, [COLOR3](#../COLOR3), Color Register 3
 ### COLOR3
----
-title: COLOR3
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |711|$02C7|COLOR3|Color Register 3|70 ($46)|[COLPF3](#../COLPF3) |all
 Farbregister für Anzeigefeld 3.
@@ -1339,9 +1268,7 @@ previous: 710, $02C6, [COLOR2](#../COLOR2), Color Register 2
 
 next: 712, $02C8, [COLOR4](#../COLOR4), Color Register 4
 ### COLOR4
----
-title: COLOR4
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |712|$02C8|COLOR4|Color Register 4|0 ($00)|[COLBK](#../COLBK) |all
 Register für die Hintergrundfarbe.
@@ -1352,9 +1279,7 @@ see also: [Color topics](#../Color_topics)
 
 previous: 711, $02C7, [COLOR3](#../COLOR3), Color Register 3
 ### Color_topics
----
-title: Color_topics
----
+
 # Color topics
 
 [Standard_colors](#../Standard_colors) 
@@ -1384,9 +1309,7 @@ Shadows [PCOLR0](#../PCOLR0) [PCOLR1](#../PCOLR1) [PCOLR2](#../PCOLR2) [PCOLR3](
 ---
 see [topic_list](#../topic_list), [Pm_topics](#../Pm_topics) 
 ### COLPF0
----
-title: COLPF0
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |53270|$D016|COLPF0|Color Register 0|40 ($28)|[COLOR0](#../COLOR0) |all
 ---
@@ -1396,9 +1319,7 @@ previous: 53269, $D015, [COLPM3](#../COLPM3), Player/Missile 3 Color Register
 
 next: 53271, $D017, [COLPF1](#../COLPF1), Color Register 1
 ### COLPF1
----
-title: COLPF1
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |53271|$D017|COLPF1|Color Register 1|202 ($CA)|[COLOR1](#../COLOR1) |all
 ---
@@ -1408,9 +1329,7 @@ previous: 53270, $D016, [COLPF0](#../COLPF0), Color Register 0
 
 next: 53272, $D018, [COLPF2](#../COLPF2), Color Register 2
 ### COLPF2
----
-title: COLPF2
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |53272|$D018|COLPF2|Color Register 2|148 ($94)|[COLOR2](#../COLOR2) |all
 ---
@@ -1420,9 +1339,7 @@ previous: 53271, $D017, [COLPF1](#../COLPF1), Color Register 1
 
 next: 53273, $D019, [COLPF3](#../COLPF3), Color Register 3
 ### COLPF3
----
-title: COLPF3
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |53273|$D019|COLPF3|Color Register 3|70 ($46)|[COLOR3](#../COLOR3) |all
 ---
@@ -1432,9 +1349,7 @@ previous: 53272, $D018, [COLPF2](#../COLPF2), Color Register 2
 
 next: 53274, $D01A, [COLBK](#../COLBK), Background Color Register
 ### COLPM0
----
-title: COLPM0
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |W|53266|$D012|COLPM0|Color of Player and Missile 0|0|[PCOLR0](#../PCOLR0)|all
 |R|53266|$D012|TRIG2|Trigger Joystick 2|n/a|[STRIG2](#../STRIG2)|all
@@ -1450,9 +1365,7 @@ previous: 53265, $D011, [GRAFM](#../GRAFM), Graphics for Missiles
 
 next: 53267, $D013, [COLPM1](#../COLPM1), Color of Player and Missile 1
 ### COLPM1
----
-title: COLPM1
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |W|53267|$D013|COLPM1|Color of Player and Missile 1|0|[PCOLR1](#../PCOLR1)|all
 |R|53267|$D013|TRIG3|Joystick Trigger 3|n/a|[STRIG3](#../STRIG3)|all
@@ -1469,9 +1382,7 @@ previous: 53266, $D012, [COLPM0](#../COLPM0), Color of Player and Missile 0
 
 next: 53268, $D014, [COLPM2](#../COLPM2), Color of Player and Missile 2 (W), [PAL](#../PAL) (R)
 ### COLPM2
----
-title: COLPM2
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |W|53268|$D014|COLPM2|Color of Player and Missile 2|0|[PCOLR2](#../PCOLR2)|all
 |R|53268|$D014|PAL|Determine TV System|see below|none|all
@@ -1491,9 +1402,7 @@ previous: 53267, $D013, [COLPM1](#../COLPM1), Color of Player and Missile 1
 
 next: 53269, $D015, [COLPM3](#../COLPM3), Color of Player and Missile 3
 ### COLPM3
----
-title: COLPM3
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |53269|$D015|COLPM3|Color of Player and Missile 3|0|[PCOLR3](#../PCOLR3)|all
 
@@ -1506,9 +1415,7 @@ previous: 53268, $D014, [COLPM2](#../COLPM2), Color of Player and Missile 2
 
 next: 53270, $D016, [COLPF0](#../COLPF0), Color of Playfield 0
 ### COLRSH
----
-title: COLRSH
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |79|$004F|COLRSH|Color shift mask|none|All
 
@@ -1518,9 +1425,7 @@ See also:
 
 [ATRACT](#../ATRACT), [DRKMSK](#../DRKMSK) 
 ### Connectors
----
-title: Connectors
----
+
 ### SIO-Connector
 ```
      __________________________ 
@@ -1723,9 +1628,7 @@ with information from:
 ---
 see [topic_list](#../topic_list) 
 ### CONSOL
----
-title: CONSOL
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||OS
 |read/write |53279 |$D01F|CONSOL|Console keys and internal speaker (400/800)|7|all
 
@@ -1756,9 +1659,7 @@ previous: [HITCLR](#../HITCLR)
 next: [AUDF1](#../AUDF1),[POT0](#../POT0) of POKEY
 ### content.txt
 ### Controller_topics
----
-title: Controller_topics
----
+
 # Controllers
 
 CX30 Paddles [PADDL0](#../PADDL0)-[PADDL7](#../PADDL7) [PTRIG0](#../PTRIG0)-[PTRIG7](#../PTRIG7) [POT0](#../POT0)-[POT7](#../POT7) [ALLPOT](#../ALLPOT) [POTGO](#../POTGO) [SKCTL](#../SKCTL) 
@@ -1793,9 +1694,7 @@ Koala Pad
 ---
 see [topic_list](#../topic_list) 
 ### CRETRY
----
-title: CRETRY
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |54|$0036|CRETRY|Number of command retries|none|A
 |668|$029C|CRETRY|Number of command retries|none|X
@@ -1803,9 +1702,7 @@ title: CRETRY
 
 Number of command retries.
 ### CRITIC
----
-title: CRITIC
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |66|$0042|CRITIC|Critical I/O Flag|both
 
@@ -1816,9 +1713,7 @@ Zero is normal; setting [CRITIC](#../CRITIC) to a non-zero value suspends a numb
 
 It is suggested that you do not set [CRITIC](#../CRITIC) for any length of time. When one timer is being set, [CRITIC](#../CRITIC) stops the other timers to do so, causing a tiny amount of time to be "lost". When [CRITIC](#../CRITIC) is zero, both stage one and stage two VBLANK procedures will be executed. When non-zero, only the stage one VBLANK will be processed.
 ### CRSINH
----
-title: CRSINH
----
+
 ||R/W||Adr||Hex||Name||Description||OS||default
 |R/W|752|$2F0|CRSINH|Cursordarstellung|all|0
 
@@ -1831,9 +1726,7 @@ Das Drücken der Tasten BREAK oder RESET, die Änderung der Grafikstufe oder das
 
 siehe auch: [CHACT](#../CHACT), [CHACTL](#../CHACTL) 
 ### DINDEX
----
-title: DINDEX
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |87|$0057|DINDEX|Display mode/current screen mode|none|All
 
@@ -1843,9 +1736,7 @@ Previous: [COLCRS](#../COLCRS)
 
 Next: [SAVMSC](#../SAVMSC) 
 ### Displaylist_topics
----
-title: Displaylist_topics
----
+
 [SDLSTL](#../SDLSTL), [SDLSTH](#../SDLSTL) Shadow register of pointer to display list
 
 [DLISTL](#../DLISTL), [DLISTH](#../DLISTL) Pointer to display list
@@ -1873,9 +1764,7 @@ title: Displaylist_topics
 ---
 see [topic_list](#../topic_list), [VBI_Vertical_Blank_Interrupt](#../VBI_Vertical_Blank_Interrupt) 
 ### DLISTL
----
-title: DLISTL
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW REGISTERS
 |read/write |54274,54275|$D402,$D403|DLISTL, DLISTH|Start Address of the Display List|both|[SDLSTL](#../SDLSTL), [SDLSTH](#../SDLSTL) 
 
@@ -1889,9 +1778,7 @@ previous: [CHACTL](#../CHACTL)
 
 next: [HSCROL](#../HSCROL) 
 ### DMACTL
----
-title: DMACTL
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW||DEFAULT
 |read/write|54272|$D400 |DMACTL|Direct Memory Access (DMA) Control|all|[SDMCTL](#../SDMCTL)|34/$22
 
@@ -1919,32 +1806,24 @@ previous: [PBCTL](#../PBCTL) of PIA
 
 next: [CHACTL](#../CHACTL) 
 ### DOSINI
----
-title: DOSINI
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |12,13|$0C,$0D|DOSINI| | |
 
 Sprungvektor nach Booten von Diskette
 ### DOSVEC
----
-title: DOSVEC
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |10,11|$0A,$0B|DOSVEC| | |
 
 DOS Einsprung-Vektor
 ### DRETRY
----
-title: DRETRY
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |55|$0037|DRETRY|Number of device retries|none|A
 |701|$02BD|DRETRY|Number of device retries|none|X
 ### DRKMSK
----
-title: DRKMSK
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |78|$004E|DRKMSK|Dark attract mask|none|All
 
@@ -1954,61 +1833,47 @@ See also:
 
 [ATRACT](#../ATRACT), [COLRSH](#../COLRSH) 
 ### DSKFMS
----
-title: DSKFMS
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |24,25|$0018,$0019|DSKFMS| | |
 
 
 Sprungvektor ins FMS (File Management System)
 ### DSKUTL
----
-title: DSKUTL
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |26,27|$001A,$001B|DSKUTL| | |
 
 
 DUP EINSPRUNG
 ### DSTAT
----
-title: DSTAT
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |76|$004C|DSTAT| |none|all
 Display status and keyboard register used by the display handler. Also used to indicate memory is too small for the screen mode, cursor out of range error, and the BREAK abort status.
 ### FINE
----
-title: FINE
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |622|$026E|FINE|Fine scroll enable|none|X
 
 Fine-scroll enable for graphics mode 0 (text); POKE with 0 for coarse scrolling (the default) and 255 ($FF) for fine scrolling. Follow the POKE with GR.0 or an OPEN for device E:. Try listing a long program - it's slow and smooth! The display list for fine scrolling is one byte longer than for coarse scrolling. The OS places the address (64708; $FCC4) of a Display List Interrupt (DLI) at 512,513/$0200,$0201 [VDSLST](#../VDSLST), replacing any you might have placed there. The color register at 53271/$D017 [COLPF1](#../COLPF1) is altered for the last visible screen line.
 If you enable fine scrolling and go immediately to DOS, you'll see that it's still enabled when you do a copy to screen or disk directory.
 ### FR0
----
-title: FR0
----
+
 212-217
 $D4-$D9
 FR0
 
 Floating point register zero; holds a six-byte internal form of the FP number. The value at locations 212 and 213 are used to return a two-byte hexadecimal value in the range of zero to 65536 ($FFFF) to the BASIC program (low byte in 212, high byte in 213). The floating point package, if used, requires all locations from 212 to 255. All six bytes of FR0 can be used by a machine language routine, provided FR0 isn't used and no FP functions are used by that routine. To use 16 bit values in FP, you would place the two bytes of the number into the least two bytes of FR0 (212, 213; $D4, $D5), and then do a JSR to $D9AA (55722), which will convert the integer to its FP representation, leaving the result in FR0. To reverse this operation, do a JSR to $D9D2 (55762).
 ### FR1
----
-title: FR1
----
+
 224-229
 $E0-$E5
 FR1
 
 Floating point register one; holds a six-byte internal form of the FP number as does FR0. The FP package frequently transfers data between these two registers and uses both for two-number arithmetic operations.
 ### GPRIOR
----
-title: GPRIOR
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |623| $026F|GPRIOR|Priority Selection Register| [PRIOR](#../PRIOR) |all
 
@@ -2045,9 +1910,7 @@ previous: [FINE](#../FINE)
 
 next: [PADDL0](#../PADDL0) 
 ### GRACTL
----
-title: GRACTL
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |write |53277 |$D01D|GRACTL|controls PM and Triggers|both
 
@@ -2075,9 +1938,7 @@ previous: [VDELAY](#../VDELAY)
 
 next: [HITCLR](#../HITCLR) 
 ### GRAFM
----
-title: GRAFM
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||SHADOW||OS
 |Read |53265|$D011|TRIG1|Trigger 1|[STRIG1](#../STRIG1)|both
 |Write|53265|$D011|GRAFM|Graphics Shape for Missile 0-3| |both
@@ -2099,9 +1960,7 @@ see also:[Player Missile Topics](#../Pm_topics), [Controller topics](#../Control
 previous: R: [TRIG0](#../GRAFP3), W: [GRAFP3](#../GRAFP3) 
 next: R: [TRIG2](#../COLPM0), W: [COLPM0](#../COLPM0) 
 ### GRAFP0
----
-title: GRAFP0
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |Write| 53261 |$D00D|GRAFP0|Graphics Shape for Player 0|both
 |Read| 53261 |$D00D|P1PL|Collision Player 1 with Player|both
@@ -2117,9 +1976,7 @@ previous: [SIZEM](#../SIZEM), [P0PL](#../SIZEM)
 
 next: [GRAFP1](#../GRAFP1), [P2PL](#../GRAFP1) 
 ### GRAFP1
----
-title: GRAFP1
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |Write| 53262 |$D00E|GRAFP1|Graphics Shape for Player 1|both
 |Read| 53262 |$D00E|P2PL|Collision Player 2 with Player|both
@@ -2135,9 +1992,7 @@ previous: [GRAFP0](#../GRAFP0), [P1PL](#../GRAFP0)
 
 next: [GRAFP2](#../GRAFP2), [P3PL](#../GRAFP2) 
 ### GRAFP2
----
-title: GRAFP2
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |Write| 53263 |$D00F|GRAFP2|Graphics Shape for Player 2|both
 |Read| 53263 |$D00F|P3PL|Collision Player 3 with Player|both
@@ -2153,9 +2008,7 @@ previous: [GRAFP1](#../GRAFP1), [P2PL](#../GRAFP1)
 
 next: [GRAFP3](#../GRAFP3), [TRIG0](#../GRAFP3) 
 ### GRAFP3
----
-title: GRAFP3
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||SHADOW||OS
 |Write| 53264 |$D010|GRAFP3|Graphics Shape for Player 3| |both
 |Read| 53264 |$D010|TRIG0|Trigger 0|[STRIG0](#../STRIG0)|both
@@ -2179,9 +2032,7 @@ previous: [GRAFP2](#../GRAFP2), [P3PL](#../GRAFP2)
 
 next: [GRAFM](#../GRAFM), [TRIG1](#../GRAFM) 
 ### HELPFG
----
-title: HELPFG
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |read/write |732|$02DC|HELPFG|Help key register|XL/XE
 
@@ -2204,9 +2055,7 @@ The Help-Key is read from [KBCODE](#../KBCODE) and stored in HELPFG. There is no
 ---
 see also: [Keyboard topics](#../Keyboard_topics) [Console Keys](#../CONSOL) 
 ### HITCLR
----
-title: HITCLR
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |write|53278|$D01E|HITCLR|clear all collision registers|all
 
@@ -2219,16 +2068,12 @@ previous: [GRACTL](#../GRACTL)
 
 next: [CONSOL](#../CONSOL) 
 ### HOLD1
----
-title: HOLD1
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |81|$0051|HOLD1| |none|all
 Same as location 80 [TEMP](#../TEMP). It is used also to hold the number of Display List entries.
 ### HPOSM0
----
-title: HPOSM0
----
+
 %%tabbedSection
 %%tab-english
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2265,9 +2110,7 @@ previous: [HPOSP3](#../HPOSP3), [M3PF](#../HPOSP3)
 
 next: [HPOSM1](#../HPOSM1), [P1PF](#../HPOSM1) 
 ### HPOSM1
----
-title: HPOSM1
----
+
 %%tabbedSection
 %%tab-english
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2304,9 +2147,7 @@ previous: [HPOSM0](#../HPOSM0), [P0PF](#../HPOSM0)
 
 next: [HPOSM2](#../HPOSM2), [P2PF](#../HPOSM2) 
 ### HPOSM2
----
-title: HPOSM2
----
+
 %%tabbedSection
 %%tab-english
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2343,9 +2184,7 @@ previous: [HPOSM1](#../HPOSM1), [P1PF](#../HPOSM1)
 
 next: [HPOSM3](#../HPOSM3), [P3PF](#../HPOSM3) 
 ### HPOSM3
----
-title: HPOSM3
----
+
 %%tabbedSection
 %%tab-english
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2382,9 +2221,7 @@ previous: [HPOSM2](#../HPOSM2), [P2PF](#../HPOSM2)
 
 next: [SIZEP0](#../SIZEP0), [M0PL](#../SIZEP0) 
 ### HPOSP0
----
-title: HPOSP0
----
+
 %%tabbedSection
 %%tab-english
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2421,9 +2258,7 @@ previous: none
 
 next: [HPOSP1](#../HPOSP1), [M1PF](#../HPOSP1) 
 ### HPOSP1
----
-title: HPOSP1
----
+
 %%tabbedSection
 %%tab-english
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2460,9 +2295,7 @@ previous: [HPOSP0](#../HPOSP0), [M0PF](#../HPOSP0)
 
 next: [HPOSP2](#../HPOSP2), [M2PF](#../HPOSP2) 
 ### HPOSP2
----
-title: HPOSP2
----
+
 %%tabbedSection
 %%tab-english
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2499,9 +2332,7 @@ previous: [HPOSP1](#../HPOSP1), [M1PF](#../HPOSP1)
 
 next: [HPOSP3](#../HPOSP3), [M3PF](#../HPOSP3) 
 ### HPOSP3
----
-title: HPOSP3
----
+
 %%tabbedSection
 %%tab-english
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2538,9 +2369,7 @@ previous: [HPOSP2](#../HPOSP2), [M2PF](#../HPOSP2)
 
 next: [HPOSM0](#../HPOSM0), [P0PF](#../HPOSM0) 
 ### HSCROL
----
-title: HSCROL
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |write only|54276|$D404|HSCROL|Horizontal Fine Scrolling|both
 
@@ -2574,18 +2403,14 @@ previous: [DLISTL](#../DLISTL),[DLISTH](#../DLISTL)
 
 next: [VSCROL](#../VSCROL) 
 ### ICCOMT
----
-title: ICCOMT
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |23|$17|ICCOMT| | |
 
 
 Aktuelles CIO-Kommando
 ### ICCOMZ
----
-title: ICCOMZ
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |34|$0022|ICCOMZ| | |
 
@@ -2593,36 +2418,28 @@ title: ICCOMZ
 
 COMMAND CODE
 ### ICDNOZ
----
-title: ICDNOZ
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |33|$0021|ICDNOZ| | |
 
 
 Device Nummer
 ### ICHIDZ
----
-title: ICHIDZ
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |32|$20|ICHIDZ| | |
 
 
 HANDLER INDEX NUMMER
 ### ICSTAZ
----
-title: ICSTAZ
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||SHADOW||OS
 |35|$0023|ICSTAZ| | |
 
 
 Status der letzten IOCB-Aktion
 ### INITAD
----
-title: INITAD
----
+
 ||ADR||HEXADR||NAME||OS
 |738,739|$02E2,$02E3|INITAD|both
 
@@ -2630,9 +2447,7 @@ Initialization address read from the disk. An autoboot file must load an address
 
 see also: [RUNAD](#../RUNAD) 
 ### Interrupts
----
-title: Interrupts
----
+
 [VBI_Vertical_Blank_Interrupt](#../VBI_Vertical_Blank_Interrupt) 
 
 [DLI Display List Interrupt](#../Displaylist_topics) 
@@ -2641,9 +2456,7 @@ title: Interrupts
 ---
 see [topic_list](#../topic_list) 
 ### IRQEN
----
-title: IRQEN
----
+
 ||r/w||ADR||HEXADR||NAME||Description||Shadow||OS
 |write|53774|$D20E|IRQEN|[POKMSK](#../POKMSK)|Interrupt Request Enable|all
 |read|53774|$D20E|IRQST|[POKMSK](#../POKMSK)|Interrupt Request Status|all
@@ -2680,9 +2493,7 @@ previous: [SERIN](#../SEROUT),[SEROUT](#../SEROUT)
 
 next: [SKCTL](#../SKCTL),[SKSTAT](#../SKCTL) 
 ### KBCODE
----
-title: KBCODE
----
+
 ||r/w||ADR||HEXADR||NAME||Description||OS
 |read|53769|$D209|KBCODE|internal key code|all
 |write|53769|$D209|STIMER|Start the POKEY Timers|all
@@ -2730,9 +2541,7 @@ previous: [AUDCTL](#../AUDCTL),[ALLPOT](#../ALLPOT)
 
 next: [SKREST](#../SKREST),[RANDOM](#../SKREST) 
 ### Keyboard_topics
----
-title: Keyboard_topics
----
+
 # Keyboard topics
 
 [HELP](#../HELPFG) 
@@ -2769,17 +2578,13 @@ Check if the last Key is still pressed with [SKSTAT](#../SKCTL), Bit 2
 ---
 see [topic_list](#../topic_list) 
 ### KEYDEF
----
-title: KEYDEF
----
+
 
 KEYDEF $0079,$007A 121,122
 
 Zeiger auf die Tastaturdefinitionstabelle (nur XL,XE).
 ### KEYDEL
----
-title: KEYDEL
----
+
 ||Adr||hex||Name||Description||OS
 |753|$02F1|KEYDEL|key delay flag|all
 
@@ -2787,17 +2592,13 @@ Key delay flag or key debounce counter; used to see if any key has been pressed.
 
 see also: [Keyboard topics](#../Keyboard_topics), [CH](#../CH), [CH1](#../CH1) 
 ### KEYDIS
----
-title: KEYDIS
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |621|$026D|KEYDIS|Keyboard disable|none|X
 
 POKE with 255 to disable the keyboard, 0 to reenable. You have to press RESET (all XL/XEs except 1200XL) to get control back if you are locked out; 1200XL users can press CTRL-F1 (toggles it on and off; LED 1 is on when the keyboard is disabled).
 ### KEYREP
----
-title: KEYREP
----
+
 ||Adr||hex||Name||description||OS
 |730|$02DA|KEYREP|rate of key repeat|XL/XE
 
@@ -2807,9 +2608,7 @@ see also: [Keyboard topics](#../Keyboard_topics), [NOCLIK](#../NOCLIK), [KRPDEL]
 
 Bestimmt die Tastenwiederholrate in 1/50sek (Vertical Blanks). Standardwert ist 5.
 ### KRPDEL
----
-title: KRPDEL
----
+
 ||Adr||hex||Name||description||OS
 |729|$02D9|KRPDEL|auto-repeat delay|XL/XE
 
@@ -2819,31 +2618,23 @@ see also: [Keyboard topics](#../Keyboard_topics), [NOCLIK](#../NOCLIK), [KEYREP]
 
 Bestimmt die Verzögerung der Tastenwiederholung 1/50sek (Vertical Blanks). Standardwert ist 40/$28 für PAL. Setzt man den Wert auf 0, prellt die Tastaur und Schreiben wird unmöglich.
 ### LCOUNT
----
-title: LCOUNT
----
+
 ||DEC||HEX||NAME||OS
 |563|$233|LCOUNT|only X
 
 Diese Speicherzelle dient als Hilfsregister für die Gerätetreiberladeroutine (Zähler für die Länge der Einträge).
 ### LINBUF
----
-title: LINBUF
----
+
 Forty-byte character line buffer, used to temporarily buffer one physical line of text when the screen editor is moving screen data. The pointer to this buffer is stored in 100, 101 ($64, $65) during the routine.
 
 Dieser Puffer (40 ($28) Zeichen lang) wird vom Bildschirmtreiber benötigt, um hier temporär Daten während des Verschiebens des Bildschirminhaltes zu speichern. Auf diesen Puffer wird durch ADRESS (100,101; $64,$65) gezeigt. Bei den XL- und XE-Geräten ist dieser Puffer entfallen.
 ### LINFLG
----
-title: LINFLG
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||SHADOW||OS
 |0|$0000|LINFLG| | |X
 Register für interne Zwecke.
 ### LINZBS
----
-title: LINZBS
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |0,1|$0000,$0001|LINZBS| | |A
 
@@ -2924,25 +2715,19 @@ Ein Metronom-Programm aus dem De Re Atari (Seite 123) nutzt diese Speicherzelle:
 ```
 /%
 ### LMARGN
----
-title: LMARGN
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |82|$0052|LMARGN|Left margin of text|none|All
 
 Column of the left margin of text (GR.0 or text window only). Zero is the value for the left edge of the screen; [LMARGN](#../LMARGN) is initialized to two. You can POKE the margin locations to set them to your specific program needs, such as POKE 82,10 to make the left margin start ten locations from the edge of the screen.
 ### LOGCOL
----
-title: LOGCOL
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |99|$0063|LOGCOL| |none|all
 Position of the cursor at the column in a logical line. A logical line can contain up to three physical lines, so [LOGCOL](#../LOGCOL) can
 range between zero and 119. Used by the display handler.
 ### LPENH
----
-title: LPENH
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW OF
 |R|564|$234|LPENH|horizontale Position des Lightpens|both|[PENH](#../PENH) 54284 $D40C
 
@@ -2954,9 +2739,7 @@ previous: [LCOUNT](#../LCOUNT)
 
 next: [LPENV](#../LPENV) 
 ### LPENV
----
-title: LPENV
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW OF
 |R|565|$235|LPENV|horizontale Position des Lightpens|both|[PENV](#../PENV) 54285 $D40D
 
@@ -2970,19 +2753,13 @@ previous: [LPENH](#../LPENH)
 
 next: [BRKKY](#../BRKKY) 
 ### M0PF
----
-title: M0PF
----
+
 [{SET_alias-'HPOSP0'}](#../{SET_alias-'HPOSP0'}) 
 ### M1PF
----
-title: M1PF
----
+
 [{SET_alias-'HPOSP1'}](#../{SET_alias-'HPOSP1'}) 
 ### MEMTOP
----
-title: MEMTOP
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |741,742|$02E5,$02E6|MEMTOP aka HIMEM| | |all
 
@@ -3000,23 +2777,17 @@ Siehe auch:
 *[MEMTOP](#../TOPSTK) - BASIC MEMTOP/TOPSTK (Ende des Runtime Stack und damit des Ende des BASIC-Programmes)
 *[APPMHI](#../APPMHI) - Adresse oberhalb derer die Bildschirmdaten und die Displaylist liegen können
 ### NEWCOL
----
-title: NEWCOL
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |97,98|$0061,$0062|NEWCOL| |none|A
 Point (column) to which DRAWTO and XIO 18 (FILL) will go. [NEWROW](#../NEWROW) and [NEWCOL](#../NEWCOL) are initialized to the values in [ROWCRS](#../ROWCRS) and [COLCRS](#../COLCRS) (84 to 86; $54 to $56) above, which represent the destination end point of the DRAW and FILL functions. This is done so that [ROWCRS](#../ROWCRS) and [COLCRS](#../COLCRS) can be altered during these routines.
 ### NEWROW
----
-title: NEWROW
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |96|$0060|NEWROW| |none|A
 Point (row) to which DRAWTO and XIO 18 (FILL) will go. For explanation see [NEWCOL](#../NEWCOL) 
 ### NGFLAG
----
-title: NGFLAG
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |1|$0001|NGFLAG| | |X
 
@@ -3027,9 +2798,7 @@ Dazu wird im Flag beim Start des Bootvorgangs Bit Null gesetzt. Bei jedem Fehler
 ||Null:|es wurden Speicher-Fehler während des Bootvorgangs festgestellt
 ||Eins:|keine Speicherfehler
 ### NMIEN
----
-title: NMIEN
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||DEFAULT VALUE
 |read only|54286|$D40E|NMIEN|Non Maskable Interrupt Enable|both|64/$40
 
@@ -3055,9 +2824,7 @@ previous: [PENV](#../PENV)
 
 next: [NMIST](#../NMIST),[NMIRST](#../NMIST) 
 ### NMIST
----
-title: NMIST
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |read|54287|$D40F|NMIST|Non Maskable Interrupt Status|both
 |write|54287|$D40F|NMIRES|Non Maskable Interrupt Reset|both
@@ -3082,9 +2849,7 @@ see also: [Display List topics](#../Displaylist_topics), [VVBLKI](#../VVBLKI), [
 
 previous: [NMIEN](#../NMIEN) 
 ### NOCLIK
----
-title: NOCLIK
----
+
 ||Adr||hex||Name||Description||OS
 |731|$02DB|NOCLIK|keyboard click on/off|XL/XE
 
@@ -3096,37 +2861,27 @@ Tastenklick, $FF schaltet den Klick aus (XL/XE). Standerdwert für "Ton an" ist 
 ---
 see also: [Sound_Topics](#../Sound_Topics), [Keyboard topics](#../Keyboard_topics) 
 ### OLDADR
----
-title: OLDADR
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |94,95|$005E,$005F|OLDADR| |none|all
 Retains the memory location of the current cursor location. Used with location 93 [OLDCHR](#../OLDCHR) to restore the character under the cursor when the cursor moves
 ### OLDCHR
----
-title: OLDCHR
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |93|$005D|OLDCHR| |none|all
 Retains the value of the character under the cursor used to restore that character when the cursor moves
 ### OLDCOL
----
-title: OLDCOL
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |91,92|$005B,$005C|OLDCOL| |none|all
 Previous graphics cursor column. Updated from locations 85,86/$55,$56 [COLCRS](#../COLCRS) before every operation. These locations are used by the DRAWTO and XIO 18 (FILL) commands to determine the starting column of the DRAW or FILL
 ### OLDROW
----
-title: OLDROW
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |90|$005A|OLDROW| |none|all
 Previous graphics cursor row. Updated from location 84/$54 [ROWCRS](#../ROWCRS) before every operation. Used to determine the starting row for the DRAWTO and XIO 18 (FILL command).
 ### PBCTL
----
-title: PBCTL
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |54019|$D303|PBCTL|Port B Control|only A (400/800)
 
@@ -3149,30 +2904,22 @@ previous: [PACTL](#../PACTL)
 
 next: [DMACTL](#../DMACTL) of ANTIC
 ### PBPNT
----
-title: PBPNT
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |29|$001D|PBPNT|Print Buffer Pointer|none|A
 Print buffer pointer; points to the current position (byte) in the print buffer. Ranges from zero to the value in location 30 [PBUFSZ](#../PBUFSZ).
 ### PBUFSZ
----
-title: PBUFSZ
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |30|$001E|PBUFSZ|Print buffer size|none|A
 Print buffer size of printer record for current mode. Normal buffer size and line size equals 40 bytes; double-width print equals 20 bytes (most printers use their own control codes for expanded print); sideways printing equals 29 bytes (Atari 820 printer only). Printer status request equals four. PBUFSZ is initialized to 40. The printer handler checks to see if the same value is in PBPNT and, if so, sends the contents of the buffer to the printer.
 ### PBUFSZT
----
-title: PBUFSZT
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |30|$001E|PBUFSZ| |none|A
 Print buffer size of printer record for current mode. Normal buffer size and line size equals 40 bytes; double-width print equals 20 bytes (most printers use their own control codes for expanded print); sideways printing equals 29 bytes (Atari 820 printer only). Printer status request equals four. PBUFSZ is initialized to 40. The printer handler checks to see if the same value is in PBPNT and, if so, sends the contents of the buffer to the printer.
 ### PCOLR0
----
-title: PCOLR0
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||SHADOW OF||OS
 |704|$02C0|PCOLR0|Color of Player and Missile 0|[COLPM0](#../COLPM0) |all
 
@@ -3185,9 +2932,7 @@ previous: 703, $02BF, [BOTSCR](#../BOTSCR)
 
 next: 705, $02C1, [PCOLR1](#../PCOLR1), Player/Missile 1 Color Register
 ### PCOLR1
----
-title: PCOLR1
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||SHADOW OF||OS
 |705|$02C1|PCOLR1|Color of Player and Missile 1|[COLPM1](#../COLPM1) |all
 
@@ -3200,9 +2945,7 @@ previous: 704, $02C0, [PCOLR0](#../PCOLR0), Player/Missile 0 Color Register
 
 next: 706, $02C2, [PCOLR2](#../PCOLR2), Player/Missile 2 Color Register
 ### PCOLR2
----
-title: PCOLR2
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||SHADOW OF||OS
 |706|$02C2|PCOLR2|Color of Player and Missile 2|[COLPM2](#../COLPM2) |all
 
@@ -3215,9 +2958,7 @@ previous: 705, $02C1, [PCOLR1](#../PCOLR1), Player/Missile 1 Color Register
 
 next: 707, $02C3, [PCOLR3](#../PCOLR3), Player/Missile 3 Color Register
 ### PCOLR3
----
-title: PCOLR3
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||SHADOW OF||OS
 |707|$02C3|PCOLR3|Color of Player and Missile 3|[COLPM3](#../COLPM3) |all
 
@@ -3230,9 +2971,7 @@ previous: 706, $02C2, [PCOLR2](#../PCOLR2), Player/Missile 2 Color Register
 
 next: 708, $02C4, [COLOR0](#../COLOR0), Color Register 0
 ### PENH
----
-title: PENH
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW
 |R|54284|$D40C|PENH|horizontale Position des Lightpens|both|[LPENH](#../LPENH) 564/$234
 
@@ -3245,9 +2984,7 @@ previous: [VCOUNT](#../VCOUNT)
 
 next: [PENV](#../PENV) 
 ### PENV
----
-title: PENV
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW
 |R|54285|$D40D|PENV|vertikale des Lightpens|both|[LPENV](#../LPENV) 565/$235
 
@@ -3260,9 +2997,7 @@ previous: [PENH](#../PENH)
 
 next: [NMIEN](#../NMIEN) 
 ### PM-collisions
----
-title: PM-collisions
----
+
 # Collision Registers
 Player to Player Collisions [P0PL](#../P0PL) [P1PL](#../P1PL) [P2PL](#../P2PL) [P3PL](#../P3PL) 
 
@@ -3274,18 +3009,14 @@ Missile to Plafield Collisions [M0PF](#../HPOSP0) [M1PF](#../HPOSP1) [M2PF](#.
 
 Clear all Collision register [HITCLR](#../HITCLR) 
 ### PM-line-resolution
----
-title: PM-line-resolution
----
+
 For switching between single and double line resolution see Bit 5 of [SDMCTL](#../SDMCTL) 
 
 To get a Player or Missile in every possible row when using double line resolution use [VDELAY](#../VDELAY).
 
 see also:[Player Missile Topics](#../Pm_topics) 
 ### Pm-memory-map
----
-title: Pm-memory-map
----
+
 # Memory Map for Player Missile Graphics
 ||single line resolution|| | || double line resolution||
 ||dec ||hex ||data ||dec ||hex
@@ -3304,9 +3035,7 @@ for setting the base address of the PM memory map see [PMBASE](#../PMBASE)
 
 see also:[Player Missile Topics](#../Pm_topics) 
 ### PMBASE
----
-title: PMBASE
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |write |54279 |$D407|PMBASE|PM data base address (MSB)|both
 
@@ -3321,9 +3050,7 @@ previous: [VSCROL](#../VSCROL)
 
 next: [CHBASE](#../CHBASE) 
 ### PM_examples
----
-title: PM examples
----
+
 ### PMG examples.
 
 Because some people do have problems every time they try to set PMG, here is simple example showing "A" letter using PMG with mentioning which setting is obligatory and which not.
@@ -3361,9 +3088,7 @@ end
         }}}
 ```
 ### PM_topics
----
-title: Pm_topics
----
+
 # Player Missile Topics
 
 [Memory Map PM Graphics](#../pm-memory-map) 
@@ -3394,9 +3119,7 @@ PM collisions [M0PF](#../HPOSP0) [M1PF](#../HPOSP1) [M2PF](#../HPOSP2) [M3PF](#.
 ---
 see [topic_list](#../topic_list) 
 ### POKMSK
----
-title: POKMSK
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |16|$10|POKMSK|Interrupt-Maske für POKEY |[IRQEN](#../IRQEN)|
 
@@ -3412,9 +3135,7 @@ title: POKMSK
 |1|2| POKEY timer two interrupt is enabled.
 |0|1| POKEY timer one interrupt is enabled.
 ### PORTA
----
-title: PORTA
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |54016|$D300|PORTA| | [STICK0](#../STICK0) [STICK1](#../STICK1) | all
 
@@ -3447,9 +3168,7 @@ previous: [SKCTL](#../SKCTL),[SKSTAT](#../SKCTL) of POKEY
 
 next: [PORTB](#../PORTB) 
 ### PORTB
----
-title: PORTB
----
+
 # For 400, 800 (OS A)
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |54017|$D301|PORTB| | [STICK2](#../STICK2) [STICK3](#../STICK3) [PTRIG4](#../PTRIG4) [PTRIG5](#../PTRIG5) [PTRIG6](#../PTRIG6) [PTRIG7](#../PTRIG7)| 400/800
@@ -3552,49 +3271,31 @@ previous: [PORTA](#../PORTA)
 
 next: [PACTL](#../PACTL) 
 ### POT0
----
-title: POT0
----
+
 [{SET_alias-'AUDF1'}](#../{SET_alias-'AUDF1'}) 
 ### POT1
----
-title: POT1
----
+
 [{SET_alias-'AUDC1'}](#../{SET_alias-'AUDC1'}) 
 ### POT2
----
-title: POT2
----
+
 [{SET_alias-'AUDF2'}](#../{SET_alias-'AUDF2'}) 
 ### POT3
----
-title: POT3
----
+
 [{SET_alias-'AUDC2'}](#../{SET_alias-'AUDC2'}) 
 ### POT4
----
-title: POT4
----
+
 [{SET_alias-'AUDF3'}](#../{SET_alias-'AUDF3'}) 
 ### POT5
----
-title: POT5
----
+
 [{SET_alias-'AUDC3'}](#../{SET_alias-'AUDC3'}) 
 ### POT6
----
-title: POT6
----
+
 [{SET_alias-'AUDF4'}](#../{SET_alias-'AUDF4'}) 
 ### POT7
----
-title: POT7
----
+
 [{SET_alias-'AUDC4'}](#../{SET_alias-'AUDC4'}) 
 ### POTGO
----
-title: POTGO
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||OS
 |Write|53771|$D20B|POTGO|Start Pot reading sequence|all
 
@@ -3607,9 +3308,7 @@ previous: [RANDOM](#../SKREST),[SKREST](#../SKREST)
 
 next: [SEROUT](#../SEROUT),[SERIN](#../SEROUT) 
 ### PRIOR
----
-title: PRIOR
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |53275|$D01B|PRIOR|Priority Selection Register|[GPRIOR](#../GPRIOR)|all
 
@@ -3646,25 +3345,19 @@ previous: [COLBK](#../COLBK)
 
 next: [VDELAY](#../VDELAY) 
 ### PTEMP
----
-title: PTEMP
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |31|$001F|PTEMP| |none|A
 Temporary register used by the printer handler for the value of the character being output to the printer.
 ### PTIMOT
----
-title: PTIMOT
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |28|$001C|PTIMOT|Printer timeout|none|A
 Printer timeout, called every printer status request. Initialized to 30, which represents 32 seconds (the value is 64 seconds per 60 increments in this register); typical timeout for the Atari 825 printer is five seconds. The value is set by your printer handler software. It is updated after each printer status request operation. It gets the specific timeout status from location 748 ($2EC), which is loaded there by SIO.
 
 The new "B" type OS ROMs have apparently solved the problem of timeout that haunted the "A" ROMs; you saw it when the printer or the disk drive periodically went to sleep (timed out) for a few seconds, causing severe anxiety attacks in the owners who thought their Ataris had just mysteriously died. This is compounded when one removes a disk from the drive, believing the I/O process to be finished--only to have the drive start up again after the timeout and trying to write to or read from a nonexistent disk. Usually both the system and the user crash simultaneously at this point. See the appendix for more information on the new ROMs.
 ### PTRIG0
----
-title: PTRIG0
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |636| $027C|PTRIG0|Paddle 1 Trigger| [PORTA](#../PORTA) |all
 0 when trigger pressed
@@ -3680,9 +3373,7 @@ previous:
 
 next: [PTRIG1](#../PTRIG1) 
 ### PTRIG1
----
-title: PTRIG1
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |637| $027D|PTRIG1|Paddle 2 Trigger| [PORTA](#../PORTA) |all
 0 when trigger pressed
@@ -3699,9 +3390,7 @@ previous: [PTRIG0](#../PTRIG0)
 
 next: [PTRIG2](#../PTRIG2) 
 ### PTRIG2
----
-title: PTRIG2
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |638| $027E|PTRIG2|Paddle 3 Trigger| [PORTA](#../PORTA) |all
 0 when trigger pressed
@@ -3718,9 +3407,7 @@ previous: [PTRIG1](#../PTRIG1)
 
 next: [PTRIG3](#../PTRIG3) 
 ### PTRIG3
----
-title: PTRIG3
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |639| $027F|PTRIG3|Paddle 4 Trigger| [PORTA](#../PORTA) |all
 0 when trigger pressed
@@ -3737,9 +3424,7 @@ previous: [PTRIG2](#../PTRIG2)
 
 next: [PTRIG4](#../PTRIG4) 
 ### PTRIG4
----
-title: PTRIG4
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |640| $0280|PTRIG4|Paddle 5 Trigger| [PORTB](#../PORTB) |OS A and B
 0 when trigger pressed
@@ -3756,9 +3441,7 @@ previous: [PTRIG3](#../PTRIG3)
 
 next: [PTRIG5](#../PTRIG5) 
 ### PTRIG5
----
-title: PTRIG5
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |641| $0281|PTRIG5|Paddle 6 Trigger| [PORTB](#../PORTB) |OS A and B
 0 when trigger pressed
@@ -3775,9 +3458,7 @@ previous: [PTRIG4](#../PTRIG4)
 
 next: [PTRIG6](#../PTRIG6) 
 ### PTRIG6
----
-title: PTRIG6
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |642| $0282|PTRIG6|Paddle 7 Trigger| [PORTB](#../PORTB) |OS A and B
 0 when trigger pressed
@@ -3793,9 +3474,7 @@ previous: [PTRIG5](#../PTRIG5)
 
 next: [PTRIG7](#../PTRIG7) 
 ### PTRIG7
----
-title: PTRIG7
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |643| $0283|PTRIG7|Paddle 8 Trigger| [PORTB](#../PORTB) |OS A and B
 0 when trigger pressed
@@ -3811,9 +3490,7 @@ previous: [PTRIG6](#../PTRIG6)
 
 next: [STRIG0](#../STRIG0) 
 ### RAMLO
----
-title: RAMLO
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |4,5|$0004,$0005|RAMLO| | |all
 
@@ -3824,9 +3501,7 @@ Diese Speicherzelle wird als Zeiger für den Speichertest während des Einschalt
 
 Hier wird auch die Adresse für die Fortsetzung des Disketten- oder Kassettenbootvorgangs (dies ist die Ladeadresse plus sechs - normalerweise 1798;$0706) abgelegt.
 ### RAMSIZ
----
-title: RAMSIZ
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |740|$02E4|RAMSIZ|RAM Size, high byte/number of pages|both
 
@@ -3834,9 +3509,7 @@ RAM size, high byte only; this is the number of pages that the top of RAM repres
 
 see also: [RAMTOP](#../RAMTOP) 
 ### RAMTOP
----
-title: RAMTOP
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |106|$006A|RAMTOP|RAM Size|both
 
@@ -3852,9 +3525,7 @@ see also: [TRAMSZ], [MEMTOP]
 ```
 ### README.md
 ### RMARGN
----
-title: RMARGN
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |83|$0053|RMARGN|Right margin of text|none|All
 
@@ -3867,9 +3538,7 @@ Previous: [LMARGN](#../LMARGN)
 
 Next: [ROWCRS](#../ROWCRS) 
 ### ROWCRS
----
-title: ROWCRS
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |84|$0054|ROWCRS|Current cursor row|none|All
 
@@ -3879,17 +3548,13 @@ Previous: [RMARGN](#../RMARGN)
 
 Next: [COLCRS](#../COLCRS) 
 ### ROWINC
----
-title: ROWINC
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |121|$0079|ROWINC| |none|A
 
 The row increment or decrement value (plus or minus one). For explanation see [COLINC](#../COLINC) 
 ### RTCLOK
----
-title: RTCLOK
----
+
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
 |18-20|$12-$14|RTCLOK|Interne Uhr| | |all
 
@@ -3901,9 +3566,7 @@ Immer wenn Register 20 den Wert 255 erreicht hat und wieder bei Null beginnt (al
 
 Diese Uhr wird vom Betriebssystem nicht benutzt und wird auch während zeitkritischer I/0-Operationen weiter erhöht, sie kann vom Benutzer ohne Einschränkungen verwendet werden.
 ### RUNAD
----
-title: RUNAD
----
+
 ||ADR||HEXADR||NAME||OS
 |736,737|$02E0,$02E1|RUNAD|both
 
@@ -3919,17 +3582,13 @@ the file name when loading the file.
 see also:
 [INITAD](#../INITAD) 
 ### SAVMSC
----
-title: SAVMSC
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |88,89|$0058,$0059|SAVMSC| | |All
 
 The lowest address of the screen memory, corresponding to the upper left corner of the screen (where the value at this address will be displayed). The upper left corner of the text window is stored at locations [TXTMSC](#../TXTMSC) 660, 661 ($294, $295).
 ### SDLSTL
----
-title: SDLSTL
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW OF
 |read/write |560,561 |$230,$231|SDLSTL, SDLSTH|Start Address of the Display List|both|[DLISTL](#../DLISTL), [DLISTH](#../DLISTL) 
 
@@ -3939,9 +3598,7 @@ Attention: the display list must not cross a 1K-boundary unless you use a JMP in
 
 see also: [Display List Topics](#../Displaylist_topics), [DLISTL](#../DLISTL), [DLISTH](#../DLISTL) 
 ### SDMCTL
----
-title: SDMCTL
----
+
 %%tabbedSection
 %%tab-english
 
@@ -4000,9 +3657,7 @@ previous: [CDTMF5](#../CDTMF5)
 
 next: [SDLSTL](#../SDLSTL),[SDLSTH](#../SDLSTL) 
 ### SEROUT
----
-title: SEROUT
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||OS
 |Read|53773|$D20D|SERIN|Serial Port Data Output|all
 |Write|53773|$D20D|SEROUT|Serial Port Data Input|all
@@ -4022,9 +3677,7 @@ previous: [POTGO](#../POTGO)
 
 next: [IRQEN](#../IRQEN),[IRQST](#../IRQEN) 
 ### SETVBV
----
-title: SETVBV
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |58460|$E45C|SETVBV|Set system timers and interrupt vectors|both
 
@@ -4065,9 +3718,7 @@ RETURN
 ---
 see also: [VBI_Vertical_Blank_Interrupt](#../VBI_Vertical_Blank_Interrupt) 
 ### SHFLOK
----
-title: SHFLOK
----
+
 ||Adr||Hex||Name||Description||OS||default
 |702|$02BE|SHFLOK|Keyboard lock state|all|$40/64
 
@@ -4080,9 +3731,7 @@ Register contains information about "lock" status of the keyboard, eg. SHIFT-loc
 
 Siehe auch: [CH](#../CH) [Keyboard topics](#../Keyboard_topics) 
 ### SIO_topics
----
-title: SIO_topics
----
+
 # SIO Topics
 
 to be completed…
@@ -4091,9 +3740,7 @@ to be completed…
 ---
 see also: [topic_list](#../topic_list) 
 ### SIZEM
----
-title: SIZEM
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |Write| 53260 |$D00C|SIZEM|Size of Missiles 0-3|both
 |Read| 53260 |$D00C|P0PL|Collision Player 0 with Player x|both
@@ -4119,9 +3766,7 @@ previous: [SIZEP3](#../SIZEP3), [M3PL](#../SIZEP3)
 
 next: [GRAFP0](#../GRAFP0), [P1PL](#../GRAFP0) 
 ### SIZEP0
----
-title: SIZEP0
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |Write| 53256 |$D008|SIZEP0|Size Player 0|both
 |Read| 53256 |$D008|M0PL|Collision Missile 0 with Player|both
@@ -4144,9 +3789,7 @@ previous: [HPOSM3](#../HPOSM3), [P3PF](#../HPOSM3)
 
 next: [SIZEP1](#../SIZEP1), [M1PL](#../SIZEP1) 
 ### SIZEP1
----
-title: SIZEP1
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |Write| 53257 |$D009|SIZEP1|Size Player 1|both
 |Read| 53257 |$D009|M1PL|Collision Missile 1 with Player|both
@@ -4169,9 +3812,7 @@ previous: [SIZEP0](#../SIZEP0), [M0PL](#../SIZEP0)
 
 next: [SIZEP2](#../SIZEP2), [M2PL](#../SIZEP2) 
 ### SIZEP2
----
-title: SIZEP2
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |Write| 53258 |$D00A|SIZEP2|Size Player 2|both
 |Read| 53258 |$D00A|M2PL|Collision Missile 2 with Player|both
@@ -4194,9 +3835,7 @@ previous: [SIZEP1](#../SIZEP1), [M1PL](#../SIZEP1)
 
 next: [SIZEP3](#../SIZEP3), [M2PL](#../SIZEP3) 
 ### SIZEP3
----
-title: SIZEP3
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |Write| 53259 |$D00B|SIZEP3|Size Player 3|both
 |Read| 53259 |$D00B|M3PL|Collision Missile 3 with Player|both
@@ -4219,9 +3858,7 @@ previous: [SIZEP2](#../SIZEP2), [M2PL](#../SIZEP2)
 
 next: [SIZEM](#../SIZEM), [P0PL](#../SIZEM) 
 ### SKCTL
----
-title: SKCTL
----
+
 ||r/w||ADR||HEXADR||NAME||Description||Shadow||OS
 |write|53775|$D20F|SKCTL|Serial Port Control|[SSKCTL](#../SSKCTL)|all
 |read|53775|$D20F|SKSTAT|Serial Port Status|[SSKCTL](#../SSKCTL)|all
@@ -4255,9 +3892,7 @@ previous: [IRQEN](#../IRQEN),[IRQST](#../IRQEN)
 
 next: [PORTA](#../PORTA) of PIA
 ### SKREST
----
-title: SKREST
----
+
 ||Read/Write||ADR||HEXADR||NAME||Description||OS
 |Read|53770|$D20A|RANDOM|random number generator|all
 |Write|53770|$D20A|SKREST|serial status register reset|all
@@ -4275,9 +3910,7 @@ previous: [STIMER](#../KBCODE),[KBCODE](#../KBCODE)
 
 next: [POTGO](#../POTGO) 
 ### Sound_Topics
----
-title: Sound Topics
----
+
 # Sound Topics
 
 [AUDF1](#../AUDF1) [AUDC1](#../AUDC1) 
@@ -4300,9 +3933,7 @@ title: Sound Topics
 ---
 see also: [topic_list](#../topic_list) 
 ### SSFLAG
----
-title: SSFLAG
----
+
 767    $02FF    SSFLAG
 
 
@@ -4314,16 +3945,12 @@ $FF    255    screen output stopped
 
 Set to zero by RESET and powerup.
 ### SSKCTL
----
-title: SSKCTL
----
+
 ||Adr||HexAdr||Name||Description||Shadow||OS
 |562|$0232|SSKCTL| |[SKCTL](#../SKCTL)|both
 
 ### Standard_colors
----
-title: Standard colors
----
+
 # Standard color values
 ||SETCOLOR||Color||Luminance||Color name||Address||Name||Address||Name||Default Value dec||Default Value hex||in GR.0||in GR.1/2||GR.3,5,7
 |0,2,8|	2|	8|	Orange|	708|	[COLOR0](#../COLOR0)|	53270|	[COLPF0](#../COLPF0)|40|$28|n.a.|Uppercase|COLOR 1
@@ -4339,9 +3966,7 @@ title: Standard colors
 
 see also: [Color topics](#../Color_topics) 
 ### STICK0
----
-title: STICK0
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |632| $0278|STICK0|Joystick 1| [PORTA](#../PORTA) |all
 
@@ -4370,9 +3995,7 @@ previous: [PADDL7](#../PADDL7)
 
 next: [Joystick 2](#../STICK1) 
 ### STICK1
----
-title: STICK1
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |633| $0279|STICK1|Joystick 2| [PORTA](#../PORTA) |all
 
@@ -4401,9 +4024,7 @@ previous: [Joystick 1](#../STICK0)
 
 next: [Joystick 3](#../STICK2) 
 ### STICK2
----
-title: STICK2
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |634| $027A|STICK2|Joystick 3| [PORTB](#../PORTB) |A
 
@@ -4432,9 +4053,7 @@ previous: [Joystick 2](#../STICK1)
 
 next: [Joystick 4](#../STICK3) 
 ### STICK3
----
-title: STICK3
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |635| $027B|STICK3|Joystick 4| [PORTB](#../PORTB) |A
 
@@ -4461,9 +4080,7 @@ see also [Controller topics](#../Controller_topics)
 
 previous: [Joystick 3](#../STICK2) 
 ### STRIG0
----
-title: STRIG0
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |644| $0284|STRIG0|Stick 1 Trigger| [TRIG0](#../GRAFP3) |all
 0 when trigger pressed
@@ -4479,9 +4096,7 @@ previous: [PTRIG7](#../PTRIG7)
 
 next: [STRIG1](#../STRIG1) 
 ### STRIG1
----
-title: STRIG1
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |645| $0285|STRIG1|Stick 2 Trigger| [TRIG1](#../GRAFM) |all
 
@@ -4498,9 +4113,7 @@ previous: [STRIG0](#../STRIG0)
 
 next: [STRIG2](#../STRIG2) 
 ### STRIG2
----
-title: STRIG2
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |646| $0286|STRIG2|Stick 3 Trigger| [TRIG2](#../COLPM0) |OS A and B
 only on 400 and 800 machines, else a copy of [STRIG0](#../STRIG0). This address is only updated every 1/50 second during VBlank!
@@ -4516,9 +4129,7 @@ previous: [STRIG1](#../STRIG1)
 
 next: [STRIG3](#../STRIG3) 
 ### STRIG3
----
-title: STRIG3
----
+
 ||ADR||HEXADR||NAME||Description||shadow of||OS
 |647| $0287|STRIG3|Stick 4 Trigger| [TRIG3](#../TRIG3) |OS A and B
 only on 400 and 800 machines, else a copy of [STRIG1](#../STRIG1). This address is only updated every 1/50 second during VBlank!
@@ -4534,9 +4145,7 @@ previous: [STRIG2](#../STRIG2)
 
 next: [CSTAT](#../CSTAT) 
 ### SYSVBL
----
-title: SYSVBL
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |59345|$E7D1|SYSVBL| |see below
 
@@ -4548,9 +4157,7 @@ The Updated OS ROMs point to 59310/$E7AE.
 
 see also: [VBI_Vertical_Blank_Interrupt](#../VBI_Vertical_Blank_Interrupt) 
 ### SYSVBV
----
-title: SYSVBV
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |58463|$E45F|SYSVBV| |both
 
@@ -4558,9 +4165,7 @@ Stage one VBLANK calculations entry. It performs the processing of a VBLANK inte
 
 see also: [VDSLST](#../VDSLST), [VVBLKI](#../VVBLKI), [VVBLKD](#../VVBLKD), [Interrupt](#../Interrupt) 
 ### Table_of_Modes_and_Screen_Formats
----
-title: Table of Modes and Screen Format
----
+
 # Table of Modes and Screen Format
 
 This is the corrected version of 'Table of Modes and Screen Format' taken from the Atari Basic Errata
@@ -4587,16 +4192,12 @@ Note 1) RAM required includes RAM for Display List
 ---
 see [Color Topics](#Color_topics), [topic_list](#topic_list), [Display List Instruction Table](#Display_list_instruction_table) 
 ### TEMP
----
-title: TEMP
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |80|$0050|TEMP| |none|all
 Temporary register used by the display handler in moving data to and from screen. Also called TMPCHR.
 ### TINDEX
----
-title: TINDEX
----
+
 ||DEC||HEX||NAME||OS
 |659|$293|TINDEX|all
 
@@ -4608,9 +4209,7 @@ previous: [TXTCOL](#../TXTCOL)
 
 next: [TXTMSC](#../TXTMSC) 
 ### Topic_list
----
-title: Topic list
----
+
 # Topics
 
 [4 color text](#../4_color_character) 
@@ -4642,9 +4241,7 @@ title: Topic list
 ---
 see also: [Memory_Map](#../Memory_Map) 
 ### TOPSTK
----
-title: TOPSTK
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |144,145|$0090,$0091|MEMTOP/TOPSTK| | |all
 
@@ -4671,9 +4268,7 @@ Siehe auch:
 *[RUNSTK](#../RUNSTK) - Runtime-Stack-Pointer
 *[SDLSTL](#../SDLSTL) - Display-List-Adresse
 ### TRAMSZ
----
-title: TRAMSZ
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |6|$0006|TRAMSZ|Temporary Register for RAM size|both
 
@@ -4682,25 +4277,19 @@ Temporary Register for RAM size; used during powerup sequence to test RAM availa
 
 see also: [RAMTOP](#../RAMTOP), [MEMTOP](#../MEMTOP) 
 ### TRNSMZ
----
-title: TRNSMZ
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |6|$0006|TRNSMZ| |XL
 
 Zwischenregister für den Speichergrößentest beim Kaltstart.
 ### TSTDAT
----
-title: TSTDAT
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |7|$0007|TSTDAT| |XL
 
 Datenregister für den RAM-Test
 ### TXTCOL
----
-title: TXTCOL
----
+
 ||DEC||HEX||NAME||OS
 |657,658|$291,$292|TXTCOL|all
 
@@ -4712,9 +4301,7 @@ previous: [TXTROW](#../TXTROW)
 
 next: [TINDEX](#../TINDEX) 
 ### TXTMSC
----
-title: TXTMSC
----
+
 ||DEC||HEX||NAME||OS
 |660,661|$294,$295|TXTMSC|both
 
@@ -4726,9 +4313,7 @@ previous: [TINDEX](#../TINDEX)
 
 next: [TXTOLD](#../TXTOLD) 
 ### TXTOLD
----
-title: TXTOLD
----
+
 ||DEC||HEX||NAME||OS
 |662-667|$296-$29B|TXTOLD|both
 
@@ -4740,9 +4325,7 @@ previous: [TXTMSC](#../TXTMSC)
 
 next: [TMPX1](#../TMPX1) 
 ### TXTROW
----
-title: TXTROW
----
+
 ||DEC||HEX||NAME||OS
 |656|$290|TXTROW|all
 
@@ -4754,9 +4337,7 @@ previous: [NEWADR](#../NEWADR) [BLIM](#../BLIM)
 
 next: [TXTCOL](#../TXTCOL) 
 ### VBI_Vertical_Blank_Interrupt
----
-title: VBI Vertical Blank Interrupt
----
+
 [NMIEN](#../NMIEN) enable/disable non maskable interrupts (NMI's)
 
 [SETVBV](#../SETVBV) sets an interrupt vector or system timer vector
@@ -4775,9 +4356,7 @@ title: VBI Vertical Blank Interrupt
 ---
 see [Interrupts](#../Interrupts), [Topic_list](#../Topic_list) 
 ### VCOUNT
----
-title: VCOUNT
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |read only|54283|$D40B|VCOUNT| current scanline/2|both
 
@@ -4791,9 +4370,7 @@ previous: [WSYNC](#../WSYNC)
 
 next: [PENH](#../PENH) 
 ### VDELAY
----
-title: VDELAY
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |write |53276 |$D01C|VDELAY|Vertical Delay for PM|both
 
@@ -4819,9 +4396,7 @@ previous: [PRIOR](#../PRIOR)
 
 next: [GRACTL](#../GRACTL) 
 ### VDSLST
----
-title: VDSLST
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||DEFAULT VALUE
 |read/write |512,513|$0200,$0201|VDSLST|Vector to Display List Interrupt routine|both|59315/$E7B3 (a RTI instruction)
 
@@ -4862,9 +4437,7 @@ Attention:
 
 see also: [Display List Topics](#../Displaylist_topics), [NMIEN](#../NMIEN), [Display List Instruction table](#../display_list_instruction_table) 
 ### VSCROL
----
-title: VSCROL
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |write only|54277|$D405|VSCROL|Vertical Fine Scrolling|both
 
@@ -4903,9 +4476,7 @@ previous: [HSCROL](#../HSCROL)
 
 next: [PMBASE](#../PMBASE) 
 ### VVBLKD
----
-title: VVBLKD
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |548,549|$0224,$0225|VVBLKD|Vertical Blank Deferred Register|both
 
@@ -4921,9 +4492,7 @@ If you create your own VBI's, terminate an immediate VBI with a JMP to [SYSVBV](
 
 see also: [VDSLST](#../VDSLST), [VVBLKI](#../VVBLKI), [SYSVBV](#../SYSVBV), [Interrupt](#../Interrupt) 
 ### VVBLKI
----
-title: VVBLKI
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |546,547|$0222,$0223|VVBLKI|Vertical Blank Immediate Register|both
 
@@ -4932,9 +4501,7 @@ VBLANK immediate register. Normally jumps to the stage one VBLANK vector NMI int
 
 see also: [VDSLST](#../VDSLST), [VVBLKD](#../VVBLKD), [Interrupts](#../Interrupts) 
 ### WARMST
----
-title: WARMST
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |8|$0008|WARMST| |all
 
@@ -4943,14 +4510,10 @@ Register für den Warmstart:
 |__Kaltstart__| 0 / $00
 |__Warmstart__| 255 / $FF
 ### WARMSV
----
-title: WARMSV
----
+
 Warmstart entry point (RESET button vector). Initializes the OS RAM region. The RESET key produces an NMI interrupt and a chip reset. Jump to here on an NMI caused by pressing the RESET key. Initialized to 61723 ($F11B).
 ### WSYNC
----
-title: WSYNC
----
+
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |W|54282|$D40A|WSYNC|Stops CPU until end of scanline is reached|all
 
@@ -4965,9 +4528,7 @@ previous: [CHBASE](#../CHBASE)
 
 next: [VCOUNT](#../VCOUNT) 
 ### XITVBV
----
-title: XITVBV
----
+
 ||ADR||HEXADR||NAME||Description||OS
 |58466|$E462|XITVBV|Exit from the VBLANK routine|both
 
@@ -4981,9 +4542,7 @@ Initialized to 59710/$E93E old ROMs, 59653/$E905.
 
 see also: [SETVBV](#../SETVBV), [VVBLKI](#../VVBLKI), [VVBLKD](#../VVBLKD), [SYSVBV](#../SYSVBV), [Interrupts](#../Interrupts) 
 ### ZCHAIN
----
-title: ZCHAIN
----
+
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |74,75|$004a,$004B|ZCHAIN| |none|X
 

@@ -1,7 +1,4 @@
----
-title: Read keyboard
----
-# reading the keyboard from VolksForth
+# Reading the keyboard from VolksForth
 
 (Basic taken from "Thomas E. Rowley - Atari Basic spielend lernen")
 

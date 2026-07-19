@@ -1,7 +1,4 @@
----
-title: Not
----
-__NOT__ "not" ( n1 -- n2 )
+# __NOT__ "not" ( n1 -- n2 )
 
 
 

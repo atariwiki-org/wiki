@@ -1,6 +1,3 @@
----
-title: Operating System
----
 # ATARI 8-Bit Operating System
 
 [OS Versions](../OS_Versions/README.md) 

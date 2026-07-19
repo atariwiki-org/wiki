@@ -1,8 +1,6 @@
----
-title: SDG Statistical Data Graphics & Analysis
----
 # SDG Statistical Data Graphics & Analysis
-__von Claudio Fernandez Loquenz__
+
+By Claudio Fernandez Loquenz
 
 Gigantisches Statistik-Paket für den Atari. Es nicht zu kennen, ist eine Bildungslücke. Veröffentlicht im Abbuc Sondermagazin Nummer 40 als Beilage. Vielen lieben Dank an den [Abbuc e. V.](http://www.abbuc.de), das ist ein Hammer-Programm! Aber sehen Sie selber:
 

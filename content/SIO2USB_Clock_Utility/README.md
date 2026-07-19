@@ -1,6 +1,3 @@
----
-title: SIO2USB Clock Utility
----
 # SIO2USB Clock Utility
 
 General Information

@@ -1,7 +1,4 @@
----
-title: Absolute
----
-__ABS__ "abs" ( n -- u )
+- __ABS__ "abs" ( n -- u )
 
 
 

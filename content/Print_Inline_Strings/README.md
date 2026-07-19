@@ -1,6 +1,3 @@
----
-title: Print Inline Strings
----
 # Print Inline Strings
 
 General Information

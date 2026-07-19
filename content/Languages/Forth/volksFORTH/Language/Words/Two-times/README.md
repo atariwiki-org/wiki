@@ -1,7 +1,4 @@
----
-title: Two-times
----
-__2*__ "two-times" ( x1 -- x2 )
+# __2*__ "two-times" ( x1 -- x2 )
 
 
 

@@ -1,6 +1,3 @@
----
-title: Query Console Keys
----
 # Query Console Keys
 
 General Information

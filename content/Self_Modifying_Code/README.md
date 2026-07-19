@@ -1,6 +1,3 @@
----
-title: Self Modifying Code
----
 # Self Modifying Code
 
 General Information

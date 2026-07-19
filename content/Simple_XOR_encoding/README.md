@@ -1,6 +1,3 @@
----
-title: Simple XOR encoding
----
 # Simple XOR encoding (for BASIC USR Call)
 
 ```

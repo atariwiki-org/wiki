@@ -1,6 +1,3 @@
----
-title: PuZIP
----
 # puZIP - ZIP File compression
 
 ```

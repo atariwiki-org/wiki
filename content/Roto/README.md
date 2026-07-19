@@ -1,14 +1,11 @@
----
-title: Roto
----
+# R.O.T.O.
+
 ### General Information
 Author: Mike Stortz
 Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: Analog #31 (06/ 85)
----
-# R.O.T.O.
----
+
 ''At 25. Mike Stortz is the P.D. Librarian for GRASP, the Richmond! Virginia Atari users group. Seemingly
 unable to find work in the programming field, he is working on about thirty projects at once, including
 a graphic arcade/adventure game.''

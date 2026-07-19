@@ -1,6 +1,3 @@
----
-title: Read Decimal, Hex and Binary
----
 # Read Decimal, Hex and Binary values
 
 from BiboAssembler Tooldisk 1

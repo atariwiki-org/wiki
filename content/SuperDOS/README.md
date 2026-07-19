@@ -1,7 +1,7 @@
----
-title: SuperDOS
----
-# SuperDOS ; Copyright (C) 1986-1988 by Paul Nicholls
+# SuperDOS
+
+Copyright (C) 1986-1988 by Paul Nicholls
+
 SuperDOS is a really smart DOS coming from Australia. It was programed by Paul Nicholls. Up to now, there are 3 versions known: version 2.9, 5.0 and 5.1.
 
 ## ATR Images
