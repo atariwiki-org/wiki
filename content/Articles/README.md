@@ -42,6 +42,7 @@
 - [Atari_XEGS](../Atari_XEGS/README.md)
 
 ## Disk Drives
+
 ### Atari Disk Drives
 - [Atari 810 Disk Drive](../Companies/Atari/Atari_810/README.md)
 - [Atari 815 Dual Disk Drive](../Companies/Atari/Atari_815/README.md)
@@ -69,37 +70,37 @@
 
 
 ## Tape Recorders
-- [ATARI_410](../ATARI_410/README.md)
-- [ATARI_1010](../ATARI_1010/README.md)
+- [ATARI_410](../Atari_410/README.md)
+- [ATARI_1010](../Atari_1010/README.md)
 - [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
-- [ATARI_XC11](../ATARI_XC11/README.md)
-- [ATARI_XC12_-_XCA12_-_CA12](../ATARI_XC12_-_XCA12_-_CA12/README.md)
-- [ATARI_XL12](../ATARI_XL12/README.md)
+- [ATARI_XC11](../Atari_XC11/README.md)
+- [ATARI_XC12_-_XCA12_-_CA12](../Atari_XC12_-_XCA12_-_CA12/README.md)
+- [ATARI_XL12](../Atari_XL12/README.md)
 - [All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
 
 ## Printers
-- [ATARI_820_40-column_printer](../ATARI_820_40-column_printer/README.md)
+- [Atari 820 - 40-Cloumn Printer - MISSING](../Companies/Atari/Atari_820_40-column_printer/README.md)
 - [Atari 822 Thermal Printer](../Companies/Atari/Atari_822_Thermal_Printer/README.md)
-- [ATARI_825_Dot_Matrix_Printer](../ATARI_825_Dot_Matrix_Printer/README.md)
-- [ATARI_1020_Plotter](../ATARI_1020_Plotter/README.md)
-- [ATARI_1025_Dot_Matrix_Printer](../ATARI_1025_Dot_Matrix_Printer/README.md)
-- [ATARI_1027_Letter_Quality_Printer](../ATARI_1027_Letter_Quality_Printer/README.md)
+- [Atari 825 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_825_Dot_Matrix_Printer/README.md)
+- [ATARI_1020_Plotter](../Atari_1020_Plotter/README.md)
+- [Atari 1025 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_1025_Dot_Matrix_Printer/README.md)
+- [Atari 1027 -Letter Quality Printer - MISSING](../Companies/Atari/ATARI_1027_Letter_Quality_Printer/README.md)
 - [Atari 1027 Printer, OS Timeout Fix](../Companies/Atari/Atari_1027_Printer_-_OS_Timeout_Fix/README.md)
-- [ATARI_1029_Dot_Matrix_Printer](../ATARI_1029_Dot_Matrix_Printer/README.md)
-- [ATARI_XMM801_Dot_Matrix_Printer](../ATARI_XMM801_Dot_Matrix_Printer/README.md)
-- [ATARI_XDM121_Daisy_Wheel_Printer](../ATARI_XDM121_Daisy_Wheel_Printer/README.md)
+- [Atari 1029 - Dot Matrix Printer - MISSING](../Companies/Atari/ATARI_1029_Dot_Matrix_Printer/README.md)
+- [Atari XMM801 - Dot Matrix Printer - MISSING](../Companies/Atari/ATARI_XMM801_Dot_Matrix_Printer/README.md)
+- [Atari XDM121 Daisy Wheel Printer- MISSING](../Companies/Atari/ATARI_XDM121_Daisy_Wheel_Printer/README.md)
 
 ## Modems
-- [ATARI_830_Acoustic_Modem](../ATARI_830_Acoustic_Modem/README.md)
-- [ATARI_835_Direct_connect_Modem](../ATARI_835_Direct_connect_Modem/README.md)
-- [ATARI_1030](../ATARI_1030/README.md)
+- [Atari 830 - Acoustic_Modem - MISSING](../Companies/Atari/Atari_830_Acoustic_Modem/README.md)
+- [Atari 835 - Direct connect Modem - MISSING](../Companies/Atari/Atari_835_Direct_connect_Modem/README.md)
+- [Atari 1030 - MISSING](../Companies/Atari/Atari_1030/README.md)
 - [Atari 1030 Modem with ModemLink Telecommunications Program by Penril](../Companies/Atari/Atari_1030_Modem_with_ModemLink_Telecommunications_Program/README.md)
 - [Atari XM301 Modem](../Companies/Atari/ATARI_XM301/README.md)
-- [ATARI_SX212](../ATARI_SX212/README.md)
+- [Atari_SX212 - MISSING](../Companies/Atari/Atari_SX212/README.md)
 - [Atari SX212 Modem](../Companies/Atari/Atari_SX212_Modem/README.md)
 
 ## Interfaces
-- [ATARI_850](../ATARI_850/README.md)
+- [Atari 850 - MISSING](../Companies/Atari/Atari_850/README.md)
 - [TransKey-II](../TransKey-II/README.md)
 - [ARGS RS232 Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (German)
 
@@ -249,8 +250,8 @@
 
 ### Music
 - Music_Composer_CXL_4007](../Music_Composer_CXL_4007/README.md)
-- [Atari_Music_I](../Atari_Music_I/README.md)
-- [Atari_Music_II](../Atari_Music_II/README.md)
+- [Atari Music I - MISSING](../Companies/Atari/Atari_Music_I/README.md)
+- [Atari Music II - MISSING](../Companies/Atari/Atari_Music_II/README.md)
 - [Musica ; Copyright (C) 1985 by Steve Hales](../Musica/README.md)
 
 ### Remote Data Transfer
@@ -671,12 +672,12 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 #### Assembler/Debugger
 - [Atari Assembler Editor](../Companies/Atari/Atari_Assembler_Editor/README.md)
 - [Atari Macro Assembler and Program Text Editor (AMAC)](../AMAC/README.md)
-- [OSS_EASMD](../OSS_EASMD/README.md)
+- [OSS_EASMD](../Companies/OSS/EASMD/README.md)
 - [OSS BUG/65](attachments/BUG-65_FROM_3000.txt)
-- [OSS MAC/65](https://atariwiki.org/wiki/Wiki.jsp?page=Mac65)
-- [OSS MAC XL](https://atariwiki.org/wiki/Wiki.jsp?page=Mac65)
-- [OSS MAC XE](https://atariwiki.org/wiki/Wiki.jsp?page=Mac65)
-- [OSS DDT](https://atariwiki.org/wiki/Wiki.jsp?page=Mac65)
+- [OSS MAC/65](Mac65)
+- [OSS MAC XL](Mac65)
+- [OSS MAC XE](Mac65)
+- [OSS DDT](DDT)
 - [Synapse_Assembler](../Synapse_Assembler/README.md)
 - [A65 Assembler](../Languages/Assembler/A65_Assembler/README.md)
 - [Bibo-Assembler](attachments/BIBO.asm)
@@ -688,19 +689,19 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari Basic Source Code 1](https://atariwiki.org/wiki/attach/The%20Atari%20Basic%20Source%20Book/How-atari-basic-works-p3.html) from [The Atari Basic Source Book](../The_Atari_Basic_Source_Book/README.md)
 - [Atari Basic Source Code 2](attachments/ataribas.asm)
 - [Atari Basic Source Code 3](attachments/AtariBasic.src)
-- [OSS Basic A+](../Basic_A_/README.md)
-- [BASIC XL](../Companies/OSS/BASIC_XL/README.md)
-- [OSS Basic XE](https://atariwiki.org/wiki/Wiki.jsp?page=Basic%20XE)
-- [OSS Integer Basic](https://atariwiki.org/wiki/Wiki.jsp?page=OSS%20Integer%20Basic)
+- [OSS Basic A+](../Basic_Aplus/README.md)
+- [BASIC XL](../Companies/BASIC_XL/README.md)
+- [OSS Basic XE](BASIC_XE)
+- [OSS Integer Basic](Integer_BASIC)
 - [Microsoft Basic](http://www.pagetable.com/?p=46)
 - [Microsoft BASIC for 6502-Original Source Code from 1978](https://github.com/brajeshwar/Microsoft-BASIC-for-6502-Original-Source-Code-1978)
 - [ATARI BASIC FOR GCC](../Languages/BASIC/Atari_BASIC/Atari_BASIC_for_GCC/README.md)
 - [Turbo-BASIC XL](../Languages/BASIC/Turbo-BASIC_XL/README.md)
-- [Altirra Basic](http://www.virtualdub.org/altirra.html)
-- [Basic++](http://atariage.com/forums/topic/263403-basic-os-and-a-couple-of-updates/)
+- [Altirra Basic](Altirra_BASIC)
+- [Basic++](BASIC_plus_plus)
 
 #### C
-- [OSS TINY-C+ Version 1.1](https://atariwiki.org/wiki/Wiki.jsp?page=C#section-C-ATRImages)
+- [OSS TINY-C+ Version 1.1](C#section-C-ATRImages)
 
 ### Forth
 
