@@ -689,7 +689,7 @@ Fällt diese Prüfung postiv aus, wird der Befehl ausgefürt, andernfalls wird i
 ---
 
 Siehe auch:
-*[MEMTOP](../MEMTOP/README.md) - Adresse oberhalb derer die Bildschirmdaten und die Displaylist liegen können
+*[MEMTOP](#../MEMTOP/README.md) - Adresse oberhalb derer die Bildschirmdaten und die Displaylist liegen können
 
 ### ATRACT
 
@@ -1623,8 +1623,8 @@ o o o o o o o o o o o o o o o o o o o o o o o o o   (lower side of PCB)
 _=active low
 ---
 with information from:
-- [http://www.faqs.org/faqs/atari-8-bit/faq/](#http://www.faqs.org/faqs/atari-8-bit/faq/)
-- [http://www.hardwarebook.info/](#http://www.hardwarebook.info/)
+- [http://www.faqs.org/faqs/atari-8-bit/faq/](http://www.faqs.org/faqs/atari-8-bit/faq/)
+- [http://www.hardwarebook.info/](http://www.hardwarebook.info/)
 ---
 see [topic_list](#../topic_list) 
 ### CONSOL
