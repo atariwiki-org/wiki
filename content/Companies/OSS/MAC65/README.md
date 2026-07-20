@@ -42,7 +42,7 @@ This is the second disk version, released later in 1982.
 
 ## MAC/65 4.20 - FTe re-release (1994)
 
-After Fine Tooned Engineering obtained rights to MAC/65 from ICD, they re-released version 4.20 in 1994 as shareware for use exclusively with the [PC_Xformer](../PC_Xformer/README.md) emulator. The disk contained additional documentation files and had modified copyright text, but was otherwise identical.
+After Fine Tooned Engineering obtained rights to MAC/65 from ICD, they re-released version 4.20 in 1994 as shareware for use exclusively with the [PC Xformer](../../../People/Darek_Mihocka/PC_XFormer/README.md) emulator. The disk contained additional documentation files and had modified copyright text, but was otherwise identical.
 
 ![](attachments/MAC-65_Shareware.jpg)
 
