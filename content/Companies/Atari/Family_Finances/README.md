@@ -9,7 +9,7 @@ This two disk program, Family Cash Flow, Family Budget, will help you itemize an
 - [Family_Finances_II_Budget_Program-Data_Diskette_CX8142_Basic_Original.atr](attachments/Family_Finances_II_Budget_Program-Data_Diskette_CX8142_Basic_Original.atr) ; ; Program Diskette II for use with the Basic cartridge
 
 ## Manual
-- [Family Finances User's Guide](attachments/Family_Finances_User_s_Guide.pdf) ; size: 16.9 MB
+- [Family Finances User's Guide](../../../../media/Family_Finances/attachments/Family_Finances_User_s_Guide.pdf) ; size: 16.9 MB
 
 ## Images
 ![](attachments/Family_Finances.jpg)

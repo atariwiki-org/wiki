@@ -2,8 +2,8 @@
 
 ## Slides:
 
-- PowerPoint: [Vortrag_Wassenberg_PowerPoint_2004_Mac.ppt](attachments/Vortrag_Wassenberg_PowerPoint_2004_Mac.ppt)
-- PDF: [Vortrag_Wassenberg.pdf](attachments/Vortrag_Wassenberg.pdf)
+- PowerPoint: [Vortrag_Wassenberg_PowerPoint_2004_Mac.ppt](../../media/AtariCalculator-VCFe14/attachments/Vortrag_Wassenberg_PowerPoint_2004_Mac.ppt)
+- PDF: [Vortrag_Wassenberg.pdf](../../media/AtariCalculator-VCFe14/attachments/Vortrag_Wassenberg.pdf)
 
 
 ![](attachments/vcfe14-1.jpg)

@@ -29,7 +29,7 @@ Have already started to bring both images on just one DD image:
 up to now, PFMS is not running with c). Who can help us?
 
 ## Manuals:
-- [Atari Personal Finance Management System-Instruction Manual](attachments/Atari_Personal_Finance_Management_System-Instruction_Manual.pdf) ; size: 14.6 MB, 92 pages (*)
+- [Atari Personal Finance Management System-Instruction Manual](../../../../media/Atari_Personal_Financial_Management_System/attachments/Atari_Personal_Finance_Management_System-Instruction_Manual.pdf) ; size: 14.6 MB, 92 pages (*)
 - [Atari Personal Finance Management System-Quick Reference Card](attachments/Atari_Personal_Finance_Management_System-Quick_Reference_Card.pdf) ; size: 1.4 MB
 (*) The manual is with OCR, navigation-links at the left, hyperlinks inside the content pages (pages v, vi and vii inside the manual, else pages 6 to 8 in the pdf file).
 

@@ -9,8 +9,8 @@ Side 1: [Galgje_side1.zip](attachments/Galgje_side1.zip)
 Side 2: [Galgje_side2.zip](attachments/Galgje_side2.zip) 
 
 ## MP-3 files:
-Side 1: [Galgje_side1_Dual_Audio.mp3](attachments/Galgje_side1_Dual_Audio.mp3) 
-Side 2: [Galgje_side2_Dual_Audio.mp3](attachments/Galgje_side2_Dual_Audio.mp3) 
+Side 1: [Galgje_side1_Dual_Audio.mp3](../../../../../media/Galgje/attachments/Galgje_side1_Dual_Audio.mp3) 
+Side 2: [Galgje_side2_Dual_Audio.mp3](../../../../../media/Galgje/attachments/Galgje_side2_Dual_Audio.mp3) 
 
 ## FLAC files:
 Side 1: [http://data.atariwiki.org/FLAC/Galgje_side1.flac](http://data.atariwiki.org/FLAC/Galgje_side1.flac) 

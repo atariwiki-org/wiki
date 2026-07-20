@@ -20,7 +20,7 @@ Atari Speed Reading CX4126
 ## Manuals
 - [Speed Reading manual in the printversion](http://data.atariwiki.org/DOC/Atari_Speed_Reading_CX4126_Printversion.pdf) ; 205 pages ; size: 138.7 MB
 - [Speed Reading manual in the screenversion](http://data.atariwiki.org/DOC/Atari_Speed_Reading_CX4126_Screenversion.pdf) ; 205 pages ; size: 44.7 MB
-- [Atari_Speed_Reading_CX4126_Workbook.pdf](attachments/Atari_Speed_Reading_CX4126_Workbook.pdf) ; 222 pages ; size: 27.2 MB
+- [Atari_Speed_Reading_CX4126_Workbook.pdf](../../../../media/Atari_Speed_Reading/attachments/Atari_Speed_Reading_CX4126_Workbook.pdf) ; 222 pages ; size: 27.2 MB
 
 ## Cassette-Images in FLAC-format (Voice & Data)
 - [http://data.atariwiki.org/FLAC/SR/Speed_Reading_Unit_1-Tape_1-Side_1.flac](http://data.atariwiki.org/FLAC/SR/Speed_Reading_Unit_1-Tape_1-Side_1.flac) ; size: 105.0 MB

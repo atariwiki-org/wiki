@@ -6,7 +6,7 @@ Copyright (C) 1981-1983 Optimized Systems Software, OSS, Inc.
 - [OS/A+ Version 2.10](attachments/OS_Aplus-Version_2.atr)
 
 ## Manuals
-- [OS/A+ Version 1.1, 1981](../../../../media/OSS/OS_Aplus/attachments/OS_Aplus-Manual-1981_Revision-Version_1.1.pdf) ; size: 4.9 MB ; thanks to Atarimania! :-)
+- [OS/A+ Version 1.1, 1981](../../../../../media/Companies/OSS/OS_Aplus/attachments/OS_Aplus-Manual-1981_Revision-Version_1.1.pdf) ; size: 4.9 MB ; thanks to Atarimania! :-)
 - [OS/A+ Version 2 Bug Sheet](attachments/OS_Aplus-Version_2-Bug_Sheet.pdf) ; thanks to Atarimania! :-)
 
 (Information from the OSS/A+ 4.0 Handbook)

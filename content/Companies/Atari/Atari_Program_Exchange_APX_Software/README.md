@@ -13,7 +13,7 @@ https://archive.org/details/@allan52
 - [APX-Catalog, Summer 1981](attachments/Atari_Program_Exchange_Summer_1981.pdf) ; size: 4.1 MB ; 28 pages ; thanks to Allan Bushmann and archive.org :-)))
 - [APX-Catalog, Winter 1981](https://data.atariwiki.org/DOC/APX/APX_Catalog_Winter_1981.pdf) ; size: 1.01 GB ; 64 pages ; thanks to Allan Bushmann and archive.org :-)))
 - [APX-Catalog, Spring 1982](https://data.atariwiki.org/DOC/APX/APX_Catalog_Spring_1982.pdf) ; size: 148.7 MB ; 73 pages ; thanks to Allan Bushmann and archive.org :-)))
-- [APX-Catalog, Summer 1982 version 1](attachments/APX_Catalog_Summer_1982.pdf) ; size: 5.3 MB ; 80 pages ; thanks to Allan Bushmann and archive.org :-)))
+- [APX-Catalog, Summer 1982 version 1](../../../../media/Atari_Program_Exchange_APX_Software/attachments/APX_Catalog_Summer_1982.pdf) ; size: 5.3 MB ; 80 pages ; thanks to Allan Bushmann and archive.org :-)))
 - [APX-Catalog, Summer 1982 version 2](https://data.atariwiki.org/DOC/APX/APX_Catalog_Summer_1982-2.pdf) ; size: 158.7 MB ; 80 pages ; thanks to Allan Bushmann and archive.org :-)))
 - [APX-Catalog, Summer 1982 version 3](https://data.atariwiki.org/DOC/APX/APX_Catalog_Summer_1982-3.pdf) ; size: 162.3 MB ; 81 pages ; thanks to Allan Bushmann and archive.org :-)))
 - [APX-Catalog, Fall 1982](https://data.atariwiki.org/DOC/APX/APX_Catalog_Fall_1982.pdf) ; size: 162.6 MB ; 80 pages ; thanks to Kay Savetz and archive.org :-)))

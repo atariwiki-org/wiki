@@ -8,7 +8,7 @@ Family Budgets was first published via APX and later distributed from Atart itse
 - [Family Budgets (APX 20108)](attachments/Family_Budgets_APX_20108.atr) ; diskette image from the APX archive. Please use with the Basic cartridge and 32 KB RAM.
 
 ## Manual
-- [Family Budgets (APX 20108) manual](attachments/APX-20108_Family_Budget.pdf) ; size: 9.4 MB
+- [Family Budgets (APX 20108) manual](../../../../media/Family_Budgets/attachments/APX-20108_Family_Budget.pdf) ; size: 9.4 MB
 
 ## Images
 ![](attachments/Budget2.jpg)

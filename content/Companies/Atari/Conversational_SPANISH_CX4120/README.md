@@ -24,7 +24,7 @@ made out of the FLAC-Images:
 - [Conversational_SPANISH-CX4120-Unit_10-Cassette_E-Side_2.atr](attachments/Conversational_SPANISH-CX4120-Unit_10-Cassette_E-Side_2.atr) Unit 10 disk
 
 ## Manual:
-[ATARI_Conversational_Spanish_CX4120.pdf](attachments/ATARI_Conversational_Spanish_CX4120.pdf) ; size: 24.9 MB; (C) 1980 Atari
+[ATARI_Conversational_Spanish_CX4120.pdf](../../../../media/Conversational_SPANISH_CX4120/attachments/ATARI_Conversational_Spanish_CX4120.pdf) ; size: 24.9 MB; (C) 1980 Atari
 
 ## FLAC-Images:
 - [http://data.atariwiki.org/FLAC/SPANISH/Conversational_SPANISH-CX4120-Unit_1-Cassette_A-Side_1.flac](http://data.atariwiki.org/FLAC/SPANISH/Conversational_SPANISH-CX4120-Unit_1-Cassette_A-Side_1.flac) ; size: 144.0 MB ; Unit 1 cassette

@@ -45,7 +45,7 @@ Incredible porting from Dr. N. Kehrer, creator of the Atari Asteroids Emulator. 
 ## Manuals
 In the content pages (page vii to xii in the manual or page 5 to 10 in the PDF-file) it is possible through a click on the line to directly jump to the desired page. The same is true for the index (page 187 to 190 in the manual or page 197 to 200 in the PDF-file). With the back button in Adobe Reader a direct jump from the desired page back to the content or index page is possible.
 
-Screen optimized manual (22 MB): [Atari_Calculator_Manual_Optimized.pdf](attachments/Atari_Calculator_Manual_Optimized.pdf) 
+Screen optimized manual (22 MB): [Atari_Calculator_Manual_Optimized.pdf](../../../../media/Atari_Calculator/attachments/Atari_Calculator_Manual_Optimized.pdf) 
 
 Printer optimized manual (117 MB): [http://strotmann.de/~cas/download/atari/Atari_Calculator_Manual_Original.pdf.gz](http://strotmann.de/~cas/download/atari/Atari_Calculator_Manual_Original.pdf.gz) 
 

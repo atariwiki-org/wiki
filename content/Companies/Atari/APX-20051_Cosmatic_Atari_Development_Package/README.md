@@ -20,7 +20,7 @@ Example systems include:
 This cross-assembler will let you write 1802 programs in assembly language using all the power of symbolic references, mnemonics, and operand expression processing. You will have the same capabilities of systems costing over $5,000.
 
 ## Manual
-- [APX-20051_Cosmatic_Atari_Development_Package.pdf](attachments/APX-20051_Cosmatic_Atari_Development_Package.pdf) ; size: 5.4 MB; mega-thanks to Fuji-Man from AtariAge!
+- [APX-20051_Cosmatic_Atari_Development_Package.pdf](../../../../media/APX-20051_Cosmatic_Atari_Development_Package/attachments/APX-20051_Cosmatic_Atari_Development_Package.pdf) ; size: 5.4 MB; mega-thanks to Fuji-Man from AtariAge!
 ## ATR-Image
 - [APX-20051_Cosmatic_Atari_Development_Package.atr](attachments/APX-20051_Cosmatic_Atari_Development_Package.atr) ; mega-thanks to Fuji-Man from AtariAge!
 ## References

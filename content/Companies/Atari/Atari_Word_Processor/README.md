@@ -23,14 +23,14 @@ Diskette Labels
 ## Cassette (WAV- and FLAC format) from the original cassette, which contains audio content only:
 ![](attachments/The+Atari+Word+Processor+Audio+Master+Cassette+CX4122+Side+1.jpg)
 The Atari Word Processor Audio Master Cassette CX4122 Side 1
-- [The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_1.wav](attachments/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_1.wav) Size: 30.5 MB ; wav-file from Allan Bushman, thank you so much Allan!
-- [The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_2.wav](attachments/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_2.wav) Size: 22.7 MB ; wav-file from Allan Bushman, thank you so much Allan!
+- [The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_1.wav](../../../../media/Atari_Word_Processor/attachments/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_1.wav) Size: 30.5 MB ; wav-file from Allan Bushman, thank you so much Allan!
+- [The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_2.wav](../../../../media/Atari_Word_Processor/attachments/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_2.wav) Size: 22.7 MB ; wav-file from Allan Bushman, thank you so much Allan!
 - [The Atari Word Processor Audio Master Cassette CX4122 Side 1](http://data.atariwiki.org/FLAC/AWP/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122-Side_1-Lesson_1.flac) ; Size: 184.7 MB ; high quality flac-file ; thank you so much Erhard Pütz for recording this for us in that high quality. We really appreciate your help.
 - [The Atari Word Processor Audio Master Cassette CX4122 Side 2](http://data.atariwiki.org/FLAC/AWP/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122-Side_2-Lesson_2.flac) ; Size: 143.8 MB ; high quality flac-file ; thank you so much Erhard Pütz for recording this for us in that high quality. We really appreciate your help.
 
 ## Manuals:
-- [Atari_Word_Processor_CX404-Training_Manual-Screen.pdf](attachments/Atari_Word_Processor_CX404-Training_Manual-Screen.pdf) Size: 12.3 MB
-- [Atari_Word_Processor_CX404-Reference_Manual-Screen.pdf](attachments/Atari_Word_Processor_CX404-Reference_Manual-Screen.pdf) Size: 10.3 MB
+- [Atari_Word_Processor_CX404-Training_Manual-Screen.pdf](../../../../media/Atari_Word_Processor/attachments/Atari_Word_Processor_CX404-Training_Manual-Screen.pdf) Size: 12.3 MB
+- [Atari_Word_Processor_CX404-Reference_Manual-Screen.pdf](../../../../media/Atari_Word_Processor/attachments/Atari_Word_Processor_CX404-Reference_Manual-Screen.pdf) Size: 10.3 MB
 - [The Atari Word Processor Demonstration Data Kit CX8128 Manual](attachments/The_Atari_Word_Processor_Demonstration_Data_Kit_CX8128_Manual.pdf) Size: 2.6 MB ; Giga-thanks goes to Tempest from AtariAge for bringing that artifact from the darkness to the light! We owe you a lot!
 
 ## Atari Word Processor Functions: ; thanks to: [texteditors.org](http://www.texteditors.org/cgi-bin/wiki.pl?Atari_Word_Processor) for providing the list. :-)

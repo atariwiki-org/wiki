@@ -10,7 +10,7 @@
 - [An_Invitation_to_Programming_2_Cass_B_Side_2.atr](attachments/An_Invitation_to_Programming_2_Cass_B_Side_2.atr) ; size: 92,2 kB
 
 ## Manual:
-- [An_Invitation_to_Programming_2-Screen_Version.pdf](attachments/An_Invitation_to_Programming_2-Screen_Version.pdf) ; size: 5.4 MB
+- [An_Invitation_to_Programming_2-Screen_Version.pdf](../../../../../../media/An_Invitation_to_Programming_2_CX4106/attachments/An_Invitation_to_Programming_2-Screen_Version.pdf) ; size: 5.4 MB
 
 ## FLAC-Images:
 - [http://data.atariwiki.org/FLAC/IP2/An_Invitation_to_Programming-CX4106-Cassette_A-Side_1.flac](http://data.atariwiki.org/FLAC/IP2/An_Invitation_to_Programming-CX4106-Cassette_A-Side_1.flac) ; size: 186.5 MB

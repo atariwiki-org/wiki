@@ -24,7 +24,7 @@ made out of the FLAC-Images:
 - [Conversational_GERMAN-CX4118-Unit_10-Cassette_E-Side_2.atr](attachments/Conversational_GERMAN-CX4118-Unit_10-Cassette_E-Side_2.atr) Unit 10 disk
 
 ## Manual:
-[ATARI_Conversational_German.pdf](attachments/ATARI_Conversational_German.pdf) ; size: 22.9 MB; (C) 1980 Atari
+[ATARI_Conversational_German.pdf](../../../../media/Conversational_GERMAN_CX4118/attachments/ATARI_Conversational_German.pdf) ; size: 22.9 MB; (C) 1980 Atari
 
 ## FLAC-Images:
 - [http://data.atariwiki.org/FLAC/GERMAN/Conversational_GERMAN-CX4118-Unit_1-Cassette_A-Side_1.flac](http://data.atariwiki.org/FLAC/GERMAN/Conversational_GERMAN-CX4118-Unit_1-Cassette_A-Side_1.flac) ; size: 133.0 MB ; Unit 1 cassette

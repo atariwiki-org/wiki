@@ -1,7 +1,7 @@
 # Speedy 1050
 
 ### Handbook
-- Speedy 1050 Anwenderhandbuch und ROM Listing [PDF, 7.7MB](attachments/Speedy1050_Anwenderhandbuch_und_ROM_Listing.pdf) [DJVU, 1.9MB](attachments/Speedy1050_Anwenderhandbuch_und_ROM_Listing.djvu) (German)
+- Speedy 1050 Anwenderhandbuch und ROM Listing [PDF, 7.7MB](../../../../media/CompyShop_Speedy_Upgrades/attachments/Speedy1050_Anwenderhandbuch_und_ROM_Listing.pdf) [DJVU, 1.9MB](attachments/Speedy1050_Anwenderhandbuch_und_ROM_Listing.djvu) (German)
 
 - [Speedy 1050 Handbuch](attachments/speedy1050handbuch.pdf) (German)
 - [Speedy 1050 Mini-Speedy Handbuch](attachments/speedyhandbuch.pdf) (German)

@@ -98,7 +98,7 @@ and the resulting rom file can be found in the same directory.
 - [Atari BASIC-XL Edition - Bob_Albrecht, LeRoy Finkel and Jerald R. Brown (1985)](https://data.atariwiki.org/DOC/Atari_BASIC_XL_Edition-Bob_Albrecht,_LeRoy_Finkel_and_Jerald_R._Brown_1985.pdf) ; size: 86.5 MB ; OCR ; 404 pages
 - [ATARI BASIC-Handbuch für Selbststudium und Praxis-BOB ALBRECHT, Le Roy Finkel, JERALD BROWN](https://data.atariwiki.org/DOC/ATARI_BASIC-Handbuch_fuer_Selbststudium_und_Praxis-BOB_ALBRECHT,_Le_Roy_Finkel,_JERALD_BROWN.pdf) ; Größe: 44,8 MB ; OCR ; 214 Doppelseiten
 - [ATARI BASIC Leitfaden](attachments/ATARI_BASIC_Leitfaden.pdf) ; Größe: 5,2 MB ; 11 Seiten
-- [Atari BASIC - Quick Reference Guide - Gilbert Held](attachments/Atari_BASIC_Quick_Reference_Guide-Gilbert_Held.pdf) ; size: 10.4 MB ; 8 pages
+- [Atari BASIC - Quick Reference Guide - Gilbert Held](../../../../media/Atari_BASIC/attachments/Atari_BASIC_Quick_Reference_Guide-Gilbert_Held.pdf) ; size: 10.4 MB ; 8 pages
 - [OSS Quick reference card for Atari BASIC](attachments/oss-quick-reference-card-BASIC-a-plus.pdf) ; size: 3.4 MB ; 8 pages ; thank you so much Bill Lange for finding this very rare cards. :-)
 - [Atari BASIC Referenz-Karten](attachments/Atari_BASIC_Referenz-Karten.pdf) ; Größe: 3,1 MB ; OCR ; 271 Seiten
 - [Atari BASIC Source Book (2006)](attachments/Atari_BASIC_Source_Book_2006.pdf) ; size: 10.4 MB ; OCR ; 80 pages ; converted 2006 by Andreas Bertelmann for ABBUC ; thank you Andreas
@@ -248,7 +248,7 @@ Atari BASIC Keywords
 [ATARI BASIC Leitfaden](attachments/ATARI_BASIC_Leitfaden.pdf) ; Größe: 5,2 MB ; 11 Seiten
 
 ![](attachments/Atari_BASIC_Quick_Reference_Guide-Gilbert_Held.jpg)
-[Atari BASIC - Quick Reference Guide - Gilbert Held](attachments/Atari_BASIC_Quick_Reference_Guide-Gilbert_Held.pdf) ; size: 10.4 MB ; 8 pages
+[Atari BASIC - Quick Reference Guide - Gilbert Held](../../../../media/Atari_BASIC/attachments/Atari_BASIC_Quick_Reference_Guide-Gilbert_Held.pdf) ; size: 10.4 MB ; 8 pages
 
 ![](attachments/Atari_BASIC_Referenz-Karten3.jpg)
 [Atari BASIC Referenz-Karten](attachments/Atari_BASIC_Referenz-Karten.pdf) ; Größe: 3,1 MB ; OCR ; 271 Seiten

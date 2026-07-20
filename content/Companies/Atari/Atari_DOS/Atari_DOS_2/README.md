@@ -24,7 +24,7 @@ There were many variations with DOS 2. Here are just the most used ones.
 ## Manuals
 - [The_Atari_810_Disk_Drive-An_Introduction_To_The_Disk_Operating_System.pdf](attachments/The_Atari_810_Disk_Drive-An_Introduction_To_The_Disk_Operating_System.pdf) Version 2.0S (english)
 - [Atari_DISK_OPERATING_SYSTEM_2.5_Manual.txt](attachments/Atari_DISK_OPERATING_SYSTEM_2.5_Manual.txt) Version 2.5 Atari DOS II manual, text only (english)
-- [Atari_DOS_2.5-XF551.pdf](attachments/Atari_DOS_2.5-XF551.pdf) Version 2.5 (english)
+- [Atari_DOS_2.5-XF551.pdf](../../../../../media/Atari_DOS_2/attachments/Atari_DOS_2.5-XF551.pdf) Version 2.5 (english)
 - [Das_Atari_810_Plattenlaufwerk.pdf](attachments/Das_Atari_810_Plattenlaufwerk.pdf) Version 2.0S (german)
 - [Atari_Diskettenlaufwerk-DOS_2.5-XF551.pdf](attachments/Atari_Diskettenlaufwerk-DOS_2.5-XF551.pdf) Version 2.5 (german)
 - [XF551_Formate.pdf](attachments/XF551_Formate.pdf) Version 2.5 (german) from Erwin Reuss

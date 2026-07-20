@@ -21,7 +21,7 @@ Cassette 2, side 2: [Atari_Grafieken_cass2_side2.cas](attachments/Atari_Grafieke
 [http://data.atariwiki.org/FLAC/Atari_Grafieken_cass2_side2.flac](http://data.atariwiki.org/FLAC/Atari_Grafieken_cass2_side2.flac) 
 
 ## Manual:
-[Atari_Grafieken_manual.pdf](attachments/Atari_Grafieken_manual.pdf) 
+[Atari_Grafieken_manual.pdf](../../../../../media/Atari_Grafieken/attachments/Atari_Grafieken_manual.pdf) 
 
 ## Screenshots:
 ![](attachments/Atari_Grafieken_Staaf-Cirkel_loading.jpg)

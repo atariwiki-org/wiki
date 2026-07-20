@@ -8,7 +8,7 @@
 ## Documentation
 - [Atari CX85 Numerical Keypad-Users Guide](attachments/Atari_CX85_Numerical_Keypad-User_s_Guide.pdf) (PDF)
 - [Atari CX85 Numerical Keypad-Technical Reference Notes - 2 pages](attachments/Atari_CX85_Numerical_Keypad-Technical_Reference_Notes.pdf) (PDF)
-- [Atari CX85 Numerical Keypad-Technical Reference Notes - 1 page](attachments/Atari_CX85_Numerical_Keypad_Technical_Reference_Notes_1_page.pdf) (PDF) ; size: 10.5 MB
+- [Atari CX85 Numerical Keypad-Technical Reference Notes - 1 page](../../../../media/AtariCX85/attachments/Atari_CX85_Numerical_Keypad_Technical_Reference_Notes_1_page.pdf) (PDF) ; size: 10.5 MB
 - [Atari CX85 Numerical Keypad-Field Service Manual](attachments/atari_cx85_field_service_manual_screen.pdf) (PDF)
 ![](attachments/CX+85+Field+Service+Manual.jpg)
 Atari CX85 Numerical Keypad - Field Service Manual - Thank you so much Bill Lange! :-))) We can't thank you enough to bring that ultra rare document to the light.

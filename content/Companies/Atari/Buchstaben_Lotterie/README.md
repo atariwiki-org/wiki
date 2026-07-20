@@ -34,7 +34,7 @@ Dieses Spiel enthält insgesamt 250 unterschiedlich schwierige Worte. Langeweile
 - [Buchstabenlotterie_1982AtariDEBASICcr_CSS.atr](attachments/Buchstabenlotterie_1982AtariDEBASICcr_CSS.atr) ; we deeply thank CSS for creating the ATR, thank you so much! :-)
 
 ## Manual
-- [Buchstabenlotterie-D7-DXG-5705.pdf](attachments/Buchstabenlotterie-D7-DXG-5705.pdf) ; Größe: 5,2 MB ; AtariWiki thanks [Atarinside](https://www.atarinside.com/) for scanning and providing the manual. Thank you so much! :-)
+- [Buchstabenlotterie-D7-DXG-5705.pdf](../../../../media/Buchstaben_Lotterie/attachments/Buchstabenlotterie-D7-DXG-5705.pdf) ; Größe: 5,2 MB ; AtariWiki thanks [Atarinside](https://www.atarinside.com/) for scanning and providing the manual. Thank you so much! :-)
 
 ## Bilder
 ![](attachments/4.jpg)

@@ -13,7 +13,7 @@ Loading instructions:
 - type RUN
 ## Manuals
 - [Atari_Energy_Czar_CX4121-1.pdf](attachments/Atari_Energy_Czar_CX4121-1.pdf) ; version 1 with bookmarks ; size: 4.5 MB
-- [Atari_Energy_Czar_CX4121-2.pdf](attachments/Atari_Energy_Czar_CX4121-2.pdf) ; version 2 without bookmarks ; size: 21.6 MB
+- [Atari_Energy_Czar_CX4121-2.pdf](../../../../media/Atari_Energy_Czar/attachments/Atari_Energy_Czar_CX4121-2.pdf) ; version 2 without bookmarks ; size: 21.6 MB
 ## CAS-Image
 - [Atari_Energy_Czar_CX4121_Basic.cas](attachments/Atari_Energy_Czar_CX4121_Basic.cas) ; cassette-version, please use with BASIC cartridge
 ## ATR-Image

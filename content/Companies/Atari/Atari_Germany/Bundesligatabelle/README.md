@@ -3,7 +3,7 @@
 Copyright (C) 1984 Atari Elektronik-Vertriebsgesellschaft mbH
 
 ## Handbuch
-- [Atari-Bundesligatabellen, DXG 55005](attachments/Atari-Bundesligatabellen_DXG_55005.pdf) ; Größe: 18,9 MB ; Handbuch in deutscher Sprache ; Mega-Danke an Dirk Tröger (Yellow Man) für das Scannen des sehr seltenen Handbuchs. Dirk, wir stehen tief in Deiner Schuld! :-)))
+- [Atari-Bundesligatabellen, DXG 55005](../../../../../media/Bundesligatabelle/attachments/Atari-Bundesligatabellen_DXG_55005.pdf) ; Größe: 18,9 MB ; Handbuch in deutscher Sprache ; Mega-Danke an Dirk Tröger (Yellow Man) für das Scannen des sehr seltenen Handbuchs. Dirk, wir stehen tief in Deiner Schuld! :-)))
 ## ATR-Images
 - [Bundesligatabelle-1.atr](attachments/Bundesligatabelle-1.atr) ; Mega-Danke an Mr. Bacardi, wir stehen tief in Deiner Schuld! :-)))
 - [Bundesligatabelle-2.atr](attachments/Bundesligatabelle-2.atr) ; Mega-Danke an Mr. Bacardi, wir stehen tief in Deiner Schuld! :-)))

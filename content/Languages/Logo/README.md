@@ -25,11 +25,11 @@ This is a patched image with copy protection disabled.
 - [Atari_LOGO.cas](attachments/Atari_LOGO.cas)
 
 ## Manuals
-- [Atari_LOGO Introduction to Programing Through Turtle_Graphics - 1-sided.pdf](../../media/Companies/Atari/Atari_LOGO/attachments/Atari_LOGO-Introduction_to_Programing_Through_Turtle_Graphics-1-sided.pdf)
+- [Atari_LOGO Introduction to Programing Through Turtle_Graphics - 1-sided.pdf](../../../media/Companies/Atari/Atari_LOGO/attachments/Atari_LOGO-Introduction_To_Programing_Through_Turtle_Graphics-1-sided.pdf)
 - [Atari_LOGO Introduction to Programing Through Turtle_Graphics - 2-sided.pdf](attachments/Atari_LOGO-Introduction_to_Programing_Through_Turtle_Graphics-2-sided.pdf)
 - [Atari LOGO Quick Reference Guide - 1-sided](attachments/Atari_LOGO-Quick_Reference_Guide-1-sided.pdf)
 - [Atari_LOGO Quick Reference Guide - 2-sided.pdf](attachments/Atari_LOGO-Quick_Reference_Guide-2-sided.pdf)
-- [Atari LOGO Reference Manual](../../media/Companies/Atari/Atari_LOGO/attachments/Atari_LOGO-Reference_Manual.pdf) (1-sided)
+- [Atari LOGO Reference Manual](../../../media/Companies/Atari/Atari_LOGO/attachments/Atari_LOGO-Reference_Manual.pdf) (1-sided)
 - [Atari LOGO German](attachments/Atari_LOGO-German.pdf) ; Größe: 1.9 MB ; German script for Atari LOGO. Thanks to Atarifriend :-)
 
 ## Book

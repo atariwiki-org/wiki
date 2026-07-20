@@ -107,7 +107,7 @@ Version 1.02 followed in the same year, with yet more bug fixes and a slightly d
 
 ## Manual scans
 - [MAC/65 Manual Rev. 1.2 - original scan](attachments/Mac-65_Rev._1.2_Manual.pdf) ; size: 2 MB
-- [MAC/65 with DDT manual - good quality](attachments/Mac-65_with_DDT_manual_p._108-Rev_1.2.pdf) ; size: 25.4 MB
+- [MAC/65 with DDT manual - good quality](../../../../media/Mac65/attachments/Mac-65_with_DDT_manual_p._108-Rev_1.2.pdf) ; size: 25.4 MB
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf)
 
 ## Images

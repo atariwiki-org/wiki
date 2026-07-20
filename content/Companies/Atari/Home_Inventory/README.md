@@ -7,7 +7,7 @@ Thanks to Wade Ripkowski of the InverseAtascii podcast for the manual and disk s
 - [Home_Inventory_APX-20214.atr](attachments/Home_Inventory_APX-20214.atr)
 - [Data_Diskette.atr](attachments/Data_Diskette.atr)
 ## Manual
-- [Home_Inventory_APX-20214.pdf](attachments/Home_Inventory_APX-20214.pdf) ; size: 7.9 MB
+- [Home_Inventory_APX-20214.pdf](../../../../media/Home_Inventory/attachments/Home_Inventory_APX-20214.pdf) ; size: 7.9 MB
 ## Images
 ![](attachments/Diskette.jpg)
 Home Inventory - Diskette

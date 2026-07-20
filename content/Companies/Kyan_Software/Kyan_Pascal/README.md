@@ -42,11 +42,11 @@ __- Code Optimizer Toolkit for Kyan Pascal version 2.x ; includes the source cod
 Any help of any kind, even just hints or infos to complete the above site is very welcome at any time. We really would appreciate your help. :-)
 
 ### Manuals
-- [Kyan_Pascal_for_the_Atari_Users_Manual.pdf](attachments/Kyan_Pascal_for_the_Atari_Users_Manual.pdf) ; size: 17.1 MB ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
+- [Kyan_Pascal_for_the_Atari_Users_Manual.pdf](../../../../media/Pascal/attachments/Kyan_Pascal_for_the_Atari_Users_Manual.pdf) ; size: 17.1 MB ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
 - [Kyan_Pascal-Toolkit_I-Atari_System_Utilities-Users_Manual.pdf](attachments/Kyan_Pascal-Toolkit_I-Atari_System_Utilities-Users_Manual.pdf) ; size: 2.7 MB ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
 - [Atari_System_Utilities_Toolkit_flyer.pdf](attachments/Atari_System_Utilities_Toolkit_flyer.pdf) ; size: 68 KB ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
 - [Kyan_Pascal-Atari_Software_Products_catalog.pdf](attachments/Kyan_Pascal-Atari_Software_Products_catalog.pdf) ; size: 367 KB ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
-- [Kyan_Pascal_v1_manual.pdf](attachments/Kyan_Pascal_v1_manual.pdf) ; size: 9.8 MB ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
+- [Kyan_Pascal_v1_manual.pdf](../../../../media/Pascal/attachments/Kyan_Pascal_v1_manual.pdf) ; size: 9.8 MB ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
 - [Kyan_Pascal-Readme-Missing_Page_2-Errata.pdf](attachments/Kyan_Pascal-Readme-Missing_Page_2-Errata.pdf) ; size: 36 KB ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
 - [Kyan PASCAL Tutorial Manual-Version 1.0](attachments/Kyan_Pascal_Tutorial_Manual.pdf) ; size: 655 KB ; thank you so much GoodByteXL for your outstanding work, you really make the best pdf files available! Please go ahead with that incredible work! :-)))
 - [Kyan PASCAL Tutorial Manual-Version 1.1](attachments/Kyan_Pascal_V1-1_2020.pdf) ; size: 745 KB ; thank you so much GoodByteXL for your outstanding work, you really make the best pdf files available! Please go ahead with that incredible work!
@@ -72,7 +72,7 @@ __Please take into account, that the DOS was modified by Kyan! It is not possibl
 - [Kyan Pascal Manual (part)](http://cerebro.xu.edu/~ryanr/atari/kyan.html)
 - [Kyan Pascal Review from ANTIC](http://www.atarimagazines.com/v4n7/kyanpascal.html)
 - [Kyan Pascal Information Page (Apple Version)](http://www.appleoldies.ca/kix/)
-- [Kyan_Pascal_Update_Apple.pdf](attachments/Kyan_Pascal_Update_Apple.pdf)
+- [Kyan_Pascal_Update_Apple.pdf](../../../../media/Pascal/attachments/Kyan_Pascal_Update_Apple.pdf)
 
 from Steven N. Hirsch in 2002 (maybe just for the Apple version; status up to now unclear):
 

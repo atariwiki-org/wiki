@@ -3,7 +3,7 @@
 (C) 1983 Atari Elektronik-Vertriebsgesellschaft mbH
 
 ## Handbuch
-- [Beeil_Dich-Verdreht_TXG_9501.pdf](attachments/Beeil_Dich-Verdreht_TXG_9501.pdf) : Größe: 11,6 MB
+- [Beeil_Dich-Verdreht_TXG_9501.pdf](../../../../../media/Beeil_Dich-Verdreht/attachments/Beeil_Dich-Verdreht_TXG_9501.pdf) : Größe: 11,6 MB
 
 ## Bilder
 ![](attachments/Beeil_dich_Verdreht_a.jpg)

@@ -38,9 +38,9 @@ Appears to be based on the 1983 version. All "STA $CFFF" bank select statements 
 See also [http://atariage.com/forums/topic/208094-who-can-crack-this-one](http://atariage.com/forums/topic/208094-who-can-crack-this-one).
 
 ## Manuals
-- [SynCalc - 1983 Version](../../media/SynCalc/attachments/SynCalc-1983.pdf) ; size: 7,6 MB
-- [SynCalc - 1985 Version](../../media/SynCalc/attachments/SynCalc-1985.pdf) ; size: 13,3 MB
-- [SynCalc - 1985 Templates Disk](../../media/SynCalc/attachments/SynCalc-1985-Templates_Disk.pdf) ; size: 8 MB
+- [SynCalc - 1983 Version](../../../../media/SynCalc/attachments/SynCalc-1983.pdf) ; size: 7,6 MB
+- [SynCalc - 1985 Version](../../../../media/SynCalc/attachments/SynCalc-1985.pdf) ; size: 13,3 MB
+- [SynCalc - 1985 Templates Disk](../../../../media/SynCalc/attachments/SynCalc-1985-Templates_Disk.pdf) ; size: 8 MB
 
 ## ATR images
 - [SynCalc-1983-Synapse_Software-US.atx](attachments/SynCalc-1983-Synapse_Software-US.atx) ; atx-image of the 1983 version which runs properly, icluding the VisiCalc import program, which is missed on nearly all(!) versions
@@ -55,7 +55,7 @@ See also [http://atariage.com/forums/topic/208094-who-can-crack-this-one](http:/
 - [SynCalc with OSS DOS XL 2.30 as file version](attachments/SynCalc_with_OSS_DOS_XL_2.30.atr) ; not yet tested, use on your own risk
 
 ## RAW files from the Kryoflux
-- [SynCalc-Kryoflux-raw-no-flippy.zip](../../media/SynCalc/attachments/SynCalc-Kryoflux-raw-no-flippy.zip) ; size: 22.9 MB ; A very big thank you goes to Freddy Offenga for creating the raw files from our original SynCalc 128K diskette. Freddy, great work! Thank you so much! :-)
+- [SynCalc-Kryoflux-raw-no-flippy.zip](../../../../media/SynCalc/attachments/SynCalc-Kryoflux-raw-no-flippy.zip) ; size: 22.9 MB ; A very big thank you goes to Freddy Offenga for creating the raw files from our original SynCalc 128K diskette. Freddy, great work! Thank you so much! :-)
 
 ## RAM configuration; findings from JAC! from AtariAge
 __From p. 5 of the documenation:__

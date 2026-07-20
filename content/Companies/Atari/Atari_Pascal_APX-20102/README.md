@@ -22,7 +22,7 @@ Please note that the Atari Program-Text Editor is required to generate Pascal so
 
 ## Manuals
 - [Atari Pascal Manual.pdf](https://archive.org/download/AtariPascalLangaugeSystemManual/Atari_Pascal_Langauge_System_APX-20102_manual.pdf) 12.7 MB PDF file, color, searchable, Atari Pascal Language System manual (ISO Pascal), thank you so much for your work Kay Savetz! We really appreciate that!
-- [APX_Atari_Pascal_Manual.pdf](attachments/APX_Atari_Pascal_Manual.pdf) 8.6 MB PDF file, b/w only, searchable, Atari Pascal Language System manual (ISO Pascal)
+- [APX_Atari_Pascal_Manual.pdf](../../../../media/APX_Atari_Pascal/attachments/APX_Atari_Pascal_Manual.pdf) 8.6 MB PDF file, b/w only, searchable, Atari Pascal Language System manual (ISO Pascal)
 - [APXPascal.djvu](attachments/APXPascal.djvu) 2.6 MB DJVU file
 
 # Reviews

@@ -17,5 +17,5 @@ Diskette 3 (DX5052).
 - [Wikipedia: Atari DOS 3](http://en.wikipedia.org/wiki/Atari_DOS#DOS_3.0)
 
 ### Manuals
-- Atari DOS 3 (english) [PDF, 14.4MB](attachments/AtariDOS3Handbook.pdf) [DJVU, 1.7MB](attachments/AtariDOS3Handbook.djvu)
+- Atari DOS 3 (english) [PDF, 14.4MB](../../../../../media/Atari_DOS_3/attachments/AtariDOS3Handbook.pdf) [DJVU, 1.7MB](attachments/AtariDOS3Handbook.djvu)
 - Atari DOS 3 (german) [PDF, 3.2MB](attachments/dos_3_handbuch.pdf)

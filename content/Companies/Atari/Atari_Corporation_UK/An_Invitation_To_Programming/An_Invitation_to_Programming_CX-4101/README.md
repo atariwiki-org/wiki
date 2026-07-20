@@ -14,8 +14,8 @@
 
 ## Audio Files:
 
-[CX4101_A_Side_1.flac](attachments/CX4101_A_Side_1.flac) (179 MB - FLAC)
-[CX4101_A_Side_2.flac](attachments/CX4101_A_Side_2.flac) (137 MB - FLAC)
+[CX4101_A_Side_1.flac](../../../../../../media/An_Invitation_to_Programming_CX-4101/attachments/CX4101_A_Side_1.flac) (179 MB - FLAC)
+[CX4101_A_Side_2.flac](../../../../../../media/An_Invitation_to_Programming_CX-4101/attachments/CX4101_A_Side_2.flac) (137 MB - FLAC)
 
 ## Box-Pictures:
 

@@ -15,7 +15,7 @@ The Atari Proofreader has a very unique serial number beginning with the letter 
 - [Atari_Proofreader-Dictionary_Diskette-DX5074.atx](attachments/Atari_Proofreader-Dictionary_Diskette-DX5074.atx)
 
 ## Manuals
-- [Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Print-OCR.pdf](attachments/Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Print-OCR.pdf) ; size: 7.4 MB ; ready to print version with OCR
+- [Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Print-OCR.pdf](../../../../media/Atari_Proofreader/attachments/Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Print-OCR.pdf) ; size: 7.4 MB ; ready to print version with OCR
 - [Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Screen-OCR.pdf](attachments/Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Screen-OCR.pdf) ; size: 1.1 MB ; screen optimized version with OCR
 
 ## Pictures

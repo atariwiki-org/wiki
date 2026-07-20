@@ -29,7 +29,7 @@ Nach aktuellen Stand konnte folgende Software aus dem Hause AUSTRO.COM ermittelt
 - [AUSTRO.BASE ATR-Image von Version 1.50](attachments/Austro.Base_1985Austro.ComATcr_CSS.atr) ; MD5-Checksum: 295dd3635e0ffa087a2197778a371530 ; Mega-Dank an DjayBee von AtariAge für das Erstellen der ATR-Datei aus der oben stehenden ATX-Datei. Damit hast Du allen Atari-Usern einen großen Gefallen getan! :-) Bitte weiter so. :-)))
 
 ## Handbuch
-- [AUSTRO.BASE-Handbuch](attachments/AustroBase_V1-50_Scan_2018.pdf) ; Größe: 17,7 MB ; Wir danken GBXL ganz herzlich für das Scannen des Handbuches und der Erstellung der PDF-Datei. Derzeit ist es nur eine Scan-Datei, eine Version mit OCR sowie Nachbearbeitung ist z. Z. jedoch in Arbeit. Sobald verfügbar, wird diese Version hier nachträglich eingestellt. Wir bitten bis dahin um Verständnis, da der Arbeitsaufwand hinsichtlich der Restaurierung doch erheblich ist.
+- [AUSTRO.BASE-Handbuch](../../../../media/AUSTRO.BASE/attachments/AustroBase_V1-50_Scan_2018.pdf) ; Größe: 17,7 MB ; Wir danken GBXL ganz herzlich für das Scannen des Handbuches und der Erstellung der PDF-Datei. Derzeit ist es nur eine Scan-Datei, eine Version mit OCR sowie Nachbearbeitung ist z. Z. jedoch in Arbeit. Sobald verfügbar, wird diese Version hier nachträglich eingestellt. Wir bitten bis dahin um Verständnis, da der Arbeitsaufwand hinsichtlich der Restaurierung doch erheblich ist.
 
 ## Bilder
 ![](attachments/AUSTRO.BASE.png)

@@ -24,7 +24,7 @@ Eastern Front 1941 is by far one of the most important games ever written for th
 coming soon...
 
 ## Manual
-- [Eastern Front 1941 manual](attachments/APX_Eastern_Front_1941.pdf) ; size: 23.6 MB
+- [Eastern Front 1941 manual](../../../../../media/Eastern_Front_1941/attachments/APX_Eastern_Front_1941.pdf) ; size: 23.6 MB
 
 ## Source Code
 - [APX-20095 Source Code for Eastern Front 1941 Rev. 2 manual](https://data.atariwiki.org/DOC/APX_Source_Code_for_Eastern_Front_1941_rev_2.pdf) ; size: 56.7 MB ; thank you so much Allan Bushman for scanning this manual for the community. We really owe you very much. Please go ahead! :-)))

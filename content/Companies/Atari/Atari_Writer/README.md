@@ -62,13 +62,13 @@ As of 2018, there is still much chaos regarding AtariWriter. We have a normal ve
 
 ## Manuals
 - [Atari_Writer_Quick_Reference.pdf](attachments/Atari_Writer_Quick_Reference.pdf) ; size: 2.2 MB
-- [AtariWriter_Word_Processing.pdf](attachments/AtariWriter_Word_Processing.pdf) ; size: 11.9 MB
+- [AtariWriter_Word_Processing.pdf](../../../../media/Atari_Writer/attachments/AtariWriter_Word_Processing.pdf) ; size: 11.9 MB
 
 - [AtariWriter_Plus_-_Quick_Reference.pdf](attachments/AtariWriter_Plus_-_Quick_Reference.pdf) ; size: 1.3 MB
-- [AtariWriter_Plus_Owner_s_Manual.pdf](attachments/AtariWriter_Plus_Owner_s_Manual.pdf) ; size: 6.3 MB
+- [AtariWriter_Plus_Owner_s_Manual.pdf](../../../../media/Atari_Writer/attachments/AtariWriter_Plus_Owner_s_Manual.pdf) ; size: 6.3 MB
 
 - [AtariWriter_80_-_Quick_Reference.pdf](attachments/AtariWriter_80_-_Quick_Reference.pdf) ; size: 157 KB
-- [AtariWriter_80_-_Manual.pdf](attachments/AtariWriter_80_-_Manual.pdf) ; size: 9.7 MB
+- [AtariWriter_80_-_Manual.pdf](../../../../media/Atari_Writer/attachments/AtariWriter_80_-_Manual.pdf) ; size: 9.7 MB
 
 - [Atariwriter_Printer_Drivers-APX-20223.pdf](attachments/Atariwriter_Printer_Drivers-APX-20223.pdf) ; size: 3.8 MB
 

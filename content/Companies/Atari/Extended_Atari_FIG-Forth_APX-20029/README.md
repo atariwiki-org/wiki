@@ -18,8 +18,8 @@ Earlier versions of this Forth were sold or otherwise distributed by the Author:
 
 ## Manuals
 
-[Extended_fig-FORTH_-_APX_APX-20029.pdf](attachments/Extended_fig-FORTH_-_APX_APX-20029.pdf) size: 7.7 MB ; EXTENDED fig-FORTH, Rev. 1, 1981 by Patrick L. Mullarky
-[EXTENDED_fig-FORTH_Rev.2.pdf](attachments/EXTENDED_fig-FORTH_Rev.2.pdf) size: 7.7 MB ; EXTENDED fig-FORTH, Rev. 2, Edition B, 1982 by Patrick L. Mullarky ; donated by Allan Bushman, thank you so much Allen in the name of the Atari community! :-)
+[Extended_fig-FORTH_-_APX_APX-20029.pdf](../../../../media/Extended_Atari_FIG-Forth_APX20029/attachments/Extended_fig-FORTH_-_APX_APX-20029.pdf) size: 7.7 MB ; EXTENDED fig-FORTH, Rev. 1, 1981 by Patrick L. Mullarky
+[EXTENDED_fig-FORTH_Rev.2.pdf](../../../../media/Extended_Atari_FIG-Forth_APX20029/attachments/EXTENDED_fig-FORTH_Rev.2.pdf) size: 7.7 MB ; EXTENDED fig-FORTH, Rev. 2, Edition B, 1982 by Patrick L. Mullarky ; donated by Allan Bushman, thank you so much Allen in the name of the Atari community! :-)
 
 ## Making APX Extended fig-FORTH Turn-key
 It is possible to make APX Extended fig-FORTH (and most fig-FORTH implementations) execute a word upon boot.

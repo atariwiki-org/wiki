@@ -9,8 +9,8 @@ Side 1: [koninkrijk_side1.zip](attachments/koninkrijk_side1.zip)
 Side 2: [koninkrijk_side2.zip](attachments/koninkrijk_side2.zip) 
 
 ## MP-3 files:
-Side 1: [koninkrijk_dual_audio_side1.mp3](attachments/koninkrijk_dual_audio_side1.mp3) 
-Side 2: [koninkrijk_sdual_audio_side2.mp3](attachments/koninkrijk_sdual_audio_side2.mp3) 
+Side 1: [koninkrijk_dual_audio_side1.mp3](../../../../../media/Koninkrijk/attachments/koninkrijk_dual_audio_side1.mp3) 
+Side 2: [koninkrijk_sdual_audio_side2.mp3](../../../../../media/Koninkrijk/attachments/koninkrijk_sdual_audio_side2.mp3) 
 
 ## FLAC-files:
 [http://data.atariwiki.org/FLAC/koninkrijk_side1.flac](http://data.atariwiki.org/FLAC/koninkrijk_side1.flac) 

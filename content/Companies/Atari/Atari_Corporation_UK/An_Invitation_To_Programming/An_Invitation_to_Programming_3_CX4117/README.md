@@ -10,7 +10,7 @@
 - [An_Invitation_to_Programming_3_Cass_B_Side_2.atr](attachments/An_Invitation_to_Programming_3_Cass_B_Side_2.atr) ; size: 92,2 kB
 
 ## Manual:
-- [An_Invitation_to_Programming_3-Screen_Version.pdf](attachments/An_Invitation_to_Programming_3-Screen_Version.pdf) ; size: 5.5 MB
+- [An_Invitation_to_Programming_3-Screen_Version.pdf](../../../../../../media/An_Invitation_to_Programming_3_CX4117/attachments/An_Invitation_to_Programming_3-Screen_Version.pdf) ; size: 5.5 MB
 
 ## FLAC-Images:
 - [http://data.atariwiki.org/FLAC/IP3/An_Invitation_to_Programming-CX4117-Cassette_A-Side_1.flac](http://data.atariwiki.org/FLAC/IP3/An_Invitation_to_Programming-CX4117-Cassette_A-Side_1.flac) ; size: 188.6 MB

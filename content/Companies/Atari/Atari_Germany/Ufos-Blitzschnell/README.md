@@ -9,7 +9,7 @@ Vielen lieben Dank an Helmut Weidner, ohne ihn wäre diese seltene Software wahr
 ## ATR-Image
 - [Ufos-Blitzschnell_DXG_5711.atr](attachments/Ufos-Blitzschnell_DXG_5711.atr)
 ## Handbuch
-- [Ufos-Blitzschnell_TXG_9511.pdf](../../media/Ufos-Blitzschnell/attachments/Ufos-Blitzschnell_TXG_9511.pdf) : Größe: 6,8 MB
+- [Ufos-Blitzschnell_TXG_9511.pdf](../../../../../media/Ufos-Blitzschnell/attachments/Ufos-Blitzschnell_TXG_9511.pdf) : Größe: 6,8 MB
 ## Bilder
 ![](attachments/Ufos-Blitzschnell_TXG_9511-Front.jpg)
 Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Box Vorderansicht

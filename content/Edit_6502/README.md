@@ -12,7 +12,7 @@ Very fast Assembler, Editor and Monitor for Atari 400 and 800 under OS B
 __still missing the original diskettes which came with the package. Who can help us? The below one is not(!) the searched one.__
 
 ## Manual
-- [Edit_6502_Manual.pdf](attachments/Edit_6502_Manual.pdf) ; size: 18.7 MB ; thank you so much bcombee from AtariAge to bring this lost to believe manual to the light! Big thank you!
+- [Edit_6502_Manual.pdf](../../media/Edit_6502/attachments/Edit_6502_Manual.pdf) ; size: 18.7 MB ; thank you so much bcombee from AtariAge to bring this lost to believe manual to the light! Big thank you!
 
 ## Reference
 - [Edit 6502 on archive.org](https://archive.org/details/Edit6502Manual/page/n5)

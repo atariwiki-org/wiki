@@ -22,7 +22,7 @@ Diplomphysiker, ehem. wissenschaftlicher Mitarbeiter an der Akademie der Wissens
 
 ## Anleitung für Atari:
 
-- [atari_basicode.pdf](attachments/atari_basicode.pdf) ; aus:"BASICODE mit Programmen auf Schallplatte für Heimcomputer", Prof. Völz, 1990, 208 S. & 1 Datenplatte
+- [atari_basicode.pdf](../../media/BASICODE/attachments/atari_basicode.pdf) ; aus:"BASICODE mit Programmen auf Schallplatte für Heimcomputer", Prof. Völz, 1990, 208 S. & 1 Datenplatte
 
 
 ### ATR-Images

@@ -5,7 +5,7 @@
 ||Box-Front cover||Box - Back cover
 | ![](attachments/Huishoudboek_front.jpg) | ![](attachments/Huishoudboek_back.jpg)
 ## Handbook
-[Huishoudboek.pdf](attachments/Huishoudboek.pdf) 
+[Huishoudboek.pdf](../../../../../media/Huishoud-Boek/attachments/Huishoudboek.pdf) 
 [Handbuch.jpg](attachments/Handbuch.jpg) 
 
 ||Disk CXN 421 A||Disk CXN 421 B

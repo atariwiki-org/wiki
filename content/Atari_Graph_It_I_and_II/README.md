@@ -100,7 +100,7 @@ Atari Graph It TXG9517 (deutsch, 1983) alle Kassetten-Images auf einem Disk-Imag
 
 ## Handbücher:
 Für den Bildschirm optimiertes Handbuch (englisch) als PDF-Datei (3,1 MB): [Graph_It_CX4109_Screen_Version.pdf](attachments/Graph_It_CX4109_Screen_Version.pdf) 
-Für den Drucker optimiertes Handbuch (englisch) als PDF-Datei (849,6 MB): [Graph_It_CX4109_Print_Version.pdf](attachments/Graph_It_CX4109_Print_Version.pdf) 
+Für den Drucker optimiertes Handbuch (englisch) als PDF-Datei (849,6 MB): [Graph_It_CX4109_Print_Version.pdf](../../media/Atari_Graph_It_I_and_II/attachments/Graph_It_CX4109_Print_Version.pdf) 
 
 ## Source Codes:
 1. Version von 1980: [1Balken-alt-190_lines.txt](attachments/1Balken-alt-190_lines.txt) ; vom Unterprogramm: Kreis- und Balkendiagramme; 69 Sektoren ; 190 Zeilen Code

@@ -229,9 +229,9 @@
 
 ### Entertainment
 - [Atari Biorhythm (CX4107)](../Companies/Atari/Atari_Biorhythm/README.md)
-- [Atari Biorhythm cassette-Dual Track with voice, music and data](attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube
+- [Atari Biorhythm cassette-Dual Track with voice, music and data](../../media/Articles/attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube
 - [Atari Hangman (CX4108)](../Companies/Atari/Atari_Hangman/README.md)
-- [Atari Hangman cassette-Dual Track with voice, music and data](attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
+- [Atari Hangman cassette-Dual Track with voice, music and data](../../media/Articles/attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
 - [Video Easel CXL 4005](../Companies/Atari/Video_Easel_CXL_4005/README.md)
 
 ### Games
@@ -632,9 +632,9 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari States & Capitals CX4112](../Companies/Atari/Atari_States_and_Capitals/README.md)
 - [Atari European Countries & Capitals CX4114 ; Copyright (C) 1980 Atari, Inc.](../Companies/Atari/Atari_European_Countries_and_Capitals/README.md)
 
-- [Atari Biorhythm cassette-Dual Track with voice, music and data](attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube ; [Atari Biorhythm program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Biorhythm)
+- [Atari Biorhythm cassette-Dual Track with voice, music and data](../../media/Articles/attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube ; [Atari Biorhythm program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Biorhythm)
 - [Atari Kingdom cassette-Dual Track with voice, music and data](attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10 ; [Atari Kingdom program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Kingdom)
-- [Atari Hangman cassette-Dual Track with voice, music and data](attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
+- [Atari Hangman cassette-Dual Track with voice, music and data](../../media/Articles/attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
 - [Atari Blackjack (CX4105)](../Companies/Atari/Atari_Blackjack/README.md)
 
 # Source Code

@@ -26,7 +26,7 @@ In 1982 Atari, Inc. decided to migrate The Atari Accountant into The Atari Bookk
 
 ## Manuals
 - [The Bookkeeper User's Guide.pdf](https://data.atariwiki.org/DOC/The_Bookkeeper-User_s_Guide.pdf) ; size: 56,7 MB ; thank you so much Atarimania! We really appreciate your help very much! :-)
-- [The Bookkeeper Simplified Guide 1.pdf](../../media/The_Bookkeeper/attachments/The_Bookkeeper-Simplified_Guide_1.pdf) ; size: 23,8 MB ; thank you so much Atarimania! We really appreciate your help very much! :-)
+- [The Bookkeeper Simplified Guide 1.pdf](../../../../media/The_Bookkeeper/attachments/The_Bookkeeper-Simplified_Guide_1.pdf) ; size: 23,8 MB ; thank you so much Atarimania! We really appreciate your help very much! :-)
 - [The Bookkeeper Simplified Guide 2.pdf](attachments/The_Bookkeeper-Simplified_Guide_2.pdf) ; size: 589 KB
 - [The Bookkeeper--CX-85 Numerical Keypad User's Guide-Screen Version.pdf](attachments/The_Bookkeeper-CX-85_Numerical_Keypad_User_s_Guide-Screen_Version.pdf) ; size: 580 KB
 

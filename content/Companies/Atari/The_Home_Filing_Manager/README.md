@@ -22,7 +22,7 @@ The Home Filing Manager is a database program Atari provided in 1982
 - [HFM.xex](attachments/HFM.xex) ; The Home Filing Manager as XEX file
 
 ## Manual
-- [The Home Filing Manager-Users Guide](../../media/The_Home_Filing_Manager/attachments/Atari_Home_Filing_Manager.pdf) ; size: 12 MB ; thanks to Atarimania for providing! :-)
+- [The Home Filing Manager-Users Guide](../../../../media/The_Home_Filing_Manager/attachments/Atari_Home_Filing_Manager.pdf) ; size: 12 MB ; thanks to Atarimania for providing! :-)
 
 ## References
 - [Inverseatascii analysis on the The Home Filing Manager](https://inverseatascii.info/2015/11/10/s2e04-atari-home-filing-manager/) ; highly recommended! Thank you Wade Ripkowski! As always, a great job!

@@ -16,7 +16,7 @@ As a final note, it is important that the investor understand exactly the data w
 - [Bond_Analysis_CX8106_working.atr](attachments/Bond_Analysis_CX8106_working.atr) ; working diskette from the original one
 ## Manuals
 - [Bond_Analysis_CX8106_Version_1.pdf](attachments/Bond_Analysis_CX8106_Version_1.pdf) ; version with bookmarks ; size: 1.3 MB
-- [Bond_Analysis_CX8106_Version_2.pdf](attachments/Bond_Analysis_CX8106_Version_2.pdf) ; version without bookmarks ; size: 11.3 MB
+- [Bond_Analysis_CX8106_Version_2.pdf](../../../../media/Bond_Analysis/attachments/Bond_Analysis_CX8106_Version_2.pdf) ; version without bookmarks ; size: 11.3 MB
 ## Box
 ![](attachments/Cover.jpg)
 Bond Analysis CX8106 - box cover - thank you Allan Bushman for the high quality scan

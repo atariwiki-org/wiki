@@ -14,7 +14,7 @@ DOS XL manual cover
 - [DOS XL 2.20 with OCR and navigation](attachments/DOS_XL_2.20_OSS-OCR.pdf) ; size: 2.2 MB ; OCR; navigation menu; thanks to Allan Bushman for scanning in that incredible good quality. :-)
 - [DOS XL 2.30 and Bug/65 2.0 manual-printer optimized](http://data.atariwiki.org/DOC/OSS_DOS_XL_2.30_and_Bug-65_2.0-Manual-Print.pdf) ; original DOS XL version 2.30 from 12/1983; User's Guide and Reference Manual; printer optimized; size: 88.2 MB ; mega-thanks to Allan Bushman and Mr.Fish from AtariAge for providing us with that incredible good quality! We owe you very much!
 - [DOS XL 2.30 and Bug/65 2.0 manual-screen optimized](http://data.atariwiki.org/DOC/OSS_DOS_XL_2.30_and_Bug-65_2.0-Manual-Screen.pdf) ; original DOS XL version 2.30 from 12/1983; User's Guide and Reference Manual; screen optimized; size: 12.7 MB; mega-thanks to Allan Bushman and Mr.Fish from AtariAge for providing us with that incredible good quality! We owe you very much!
-- [DOS XL 2.30 Handbuch (German)](../../../media/OSS/DOS_XL/attachments/DOS_XL_2.30-Manual-German.pdf) ; German PDF-version, size: 7.5 MB
+- [DOS XL 2.30 Handbuch (German)](../../../../media/Companies/OSS/DOS_XL/attachments/DOS_XL_2.30-Manual-German.pdf) ; German PDF-version, size: 7.5 MB
 - [DOS XL 2.30 Handbuch (German)](attachments/DOS_XL_2.30_Manual-German.djvu) ; German DJVU-version, size: 2.3 MB
 
 ## ATR-Images

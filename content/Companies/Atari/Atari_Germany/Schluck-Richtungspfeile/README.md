@@ -2,7 +2,7 @@
 (C) 1983 Atari Elektronik-Vertriebsgesellschaft mbH
 
 ## Handbuch
-- [Schluck-Richtungspfeile_TXG_9502.pdf](../../media/Schluck-Richtungspfeile/attachments/Schluck-Richtungspfeile_TXG_9502.pdf) : Größe: 10,9 MB
+- [Schluck-Richtungspfeile_TXG_9502.pdf](../../../../../media/Schluck-Richtungspfeile/attachments/Schluck-Richtungspfeile_TXG_9502.pdf) : Größe: 10,9 MB
 
 ## Bilder
 ![](attachments/Schluck-Richtungspfeile-Box-Front.jpg)

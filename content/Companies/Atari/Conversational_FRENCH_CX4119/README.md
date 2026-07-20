@@ -24,7 +24,7 @@ made out of the FLAC-Images:
 - [Conversational_FRENCH-CX4119-Unit_10-Cassette_E-Side_2.atr](attachments/Conversational_FRENCH-CX4119-Unit_10-Cassette_E-Side_2.atr) Unit 10 disk
 
 ## Manual:
-[ATARI_Conversational_French.pdf](attachments/ATARI_Conversational_French.pdf) ; size: 24.2 MB; (C) 1980 Atari
+[ATARI_Conversational_French.pdf](../../../../media/Conversational_FRENCH_CX4119/attachments/ATARI_Conversational_French.pdf) ; size: 24.2 MB; (C) 1980 Atari
 
 ## FLAC-Images:
 - [http://data.atariwiki.org/FLAC/FRENCH/Conversational_FRENCH-CX4119-Unit_1-Cassette_A-Side_1.flac](http://data.atariwiki.org/FLAC/FRENCH/Conversational_FRENCH-CX4119-Unit_1-Cassette_A-Side_1.flac) ; size: 133.0 MB ; Unit 1 cassette

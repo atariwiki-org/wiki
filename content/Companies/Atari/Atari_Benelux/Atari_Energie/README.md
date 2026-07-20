@@ -10,13 +10,13 @@ Atari Energie is the Dutch translation of Energy Czar and was published by Atari
 
 ## MP3-file:
 Low quality
-[Atari_Energie_Dual_Audio.mp3](attachments/Atari_Energie_Dual_Audio.mp3) 
+[Atari_Energie_Dual_Audio.mp3](../../../../../media/Atari_Energie/attachments/Atari_Energie_Dual_Audio.mp3) 
 
 ## FLAC-file:
 [http://data.atariwiki.org/FLAC/Atari_Energie_Dual_Audio.flac](http://data.atariwiki.org/FLAC/Atari_Energie_Dual_Audio.flac) 
 
 ## Manual:
-[Atari_Energie_manual.pdf](attachments/Atari_Energie_manual.pdf) 
+[Atari_Energie_manual.pdf](../../../../../media/Atari_Energie/attachments/Atari_Energie_manual.pdf) 
 
 ## Screenshots:
 ![](attachments/atari_energie1.jpg)

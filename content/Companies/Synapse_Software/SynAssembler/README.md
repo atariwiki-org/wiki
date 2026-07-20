@@ -82,7 +82,7 @@ Synapse Assembler has been written by Steve Hales. Steve Hales was and still is 
 - [SynAssembler Manual](attachments/SynAssembler-Manual.pdf) ; size: 172 KB; pdf-file
 - [SynAssembler Manual](attachments/SynAssembler-Manual.doc) ; size: 197 KB; doc-file
 - [SynAssembler Manual](attachments/SynAssembler-Manual-OCR-Bookmarks.pdf) ; size: 225 KB; pdf-file with OCR and bookmarks
-- [SynAssembler-Original_Manual.pdf](../../media/SynAssembler/attachments/SynAssembler-Original_Manual.pdf) ; size: 6.8 MB ; 62 pages, thank you so much Allan Bushman for preserving this original manual! :-)))
+- [SynAssembler-Original_Manual.pdf](../../../../media/SynAssembler/attachments/SynAssembler-Original_Manual.pdf) ; size: 6.8 MB ; 62 pages, thank you so much Allan Bushman for preserving this original manual! :-)))
 
 ## CAR-Images
 - [Synassembler.car](attachments/SynAssembler.car) ; cartridge image for Atari 400-800 with OS B

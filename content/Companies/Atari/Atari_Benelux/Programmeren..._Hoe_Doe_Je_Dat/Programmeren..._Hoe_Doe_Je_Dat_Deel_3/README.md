@@ -16,10 +16,10 @@ Programmeren... Hoe Doe Je Dat (Deel 3) is the Dutch translation of An Invitatio
 
 ## MP3-files:
 Low quality.
-[Programmeren_Hoe_Doe_Je_Dat_deel3_cass1a.mp3](../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_3-TXN_4117/attachments/Programmeren_Hoe_Doe_Je_Dat_deel3_cass1a.mp3) 
-[Programmeren_Hoe_Doe_Je_Dat_deel3_cass1b.mp3](../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_3-TXN_4117/attachments/Programmeren_Hoe_Doe_Je_Dat_deel3_cass1b.mp3) 
-[Programmeren_Hoe_Doe_Je_Dat_deel3_cass2a.mp3](../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_3-TXN_4117/attachments/Programmeren_Hoe_Doe_Je_Dat_deel3_cass2a.mp3) 
-[Programmeren_Hoe_Doe_Je_Dat_deel3_cass2b.mp3](../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_3-TXN_4117/attachments/Programmeren_Hoe_Doe_Je_Dat_deel3_cass2b.mp3) 
+[Programmeren_Hoe_Doe_Je_Dat_deel3_cass1a.mp3](../../../../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_3-TXN_4117/attachments/Programmeren_Hoe_Doe_Je_Dat_deel3_cass1a.mp3) 
+[Programmeren_Hoe_Doe_Je_Dat_deel3_cass1b.mp3](../../../../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_3-TXN_4117/attachments/Programmeren_Hoe_Doe_Je_Dat_deel3_cass1b.mp3) 
+[Programmeren_Hoe_Doe_Je_Dat_deel3_cass2a.mp3](../../../../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_3-TXN_4117/attachments/Programmeren_Hoe_Doe_Je_Dat_deel3_cass2a.mp3) 
+[Programmeren_Hoe_Doe_Je_Dat_deel3_cass2b.mp3](../../../../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_3-TXN_4117/attachments/Programmeren_Hoe_Doe_Je_Dat_deel3_cass2b.mp3) 
 
 ## FLAC-files:
 [http://data.atariwiki.org/FLAC/Programmeren_Hoe_Doe_Je_Dat_deel3_cass1a.flac](http://data.atariwiki.org/FLAC/Programmeren_Hoe_Doe_Je_Dat_deel3_cass1a.flac) 
@@ -28,7 +28,7 @@ Low quality.
 [http://data.atariwiki.org/FLAC/Programmeren_Hoe_Doe_Je_Dat_deel3_cass2b.flac](http://data.atariwiki.org/FLAC/Programmeren_Hoe_Doe_Je_Dat_deel3_cass2b.flac) 
 
 ## Manual:
-[Programmeren_Hoe_Doe_Je_Dat_3_manual.pdf](../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_3-TXN_4117/attachments/Programmeren_Hoe_Doe_Je_Dat_3_manual.pdf) 
+[Programmeren_Hoe_Doe_Je_Dat_3_manual.pdf](../../../../../../media/Programmeren..._Hoe_Doe_Je_Dat/Programmeren..._Hoe_Doe_Je_Dat_Deel_3-TXN_4117/attachments/Programmeren_Hoe_Doe_Je_Dat_3_manual.pdf) 
 
 ## Screenshots:
 ![](attachments/programmeren1.jpg)

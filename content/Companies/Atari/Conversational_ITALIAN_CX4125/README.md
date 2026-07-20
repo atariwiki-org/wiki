@@ -24,7 +24,7 @@ made out of the FLAC-Images:
 - [Conversational_ITALIAN-CX4125-Unit_10-Cassette_E-Side_2.atr](attachments/Conversational_ITALIAN-CX4125-Unit_10-Cassette_E-Side_2.atr) Unit 10 disk
 
 ## Manual:
-[ATARI_Conversational_Italian.pdf](attachments/ATARI_Conversational_Italian.pdf) ; size: 24.6 MB; (C) 1981 Atari
+[ATARI_Conversational_Italian.pdf](../../../../media/Conversational_ITALIAN_CX4125/attachments/ATARI_Conversational_Italian.pdf) ; size: 24.6 MB; (C) 1981 Atari
 
 ## FLAC-Images:
 - [http://data.atariwiki.org/FLAC/ITALIAN/Conversational_ITALIAN-CX4125-Unit_1-Cassette_A-Side_1.flac](http://data.atariwiki.org/FLAC/ITALIAN/Conversational_ITALIAN-CX4125-Unit_1-Cassette_A-Side_1.flac) ; size: 141.9 MB ; Unit 1 cassette
