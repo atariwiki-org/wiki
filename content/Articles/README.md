@@ -266,7 +266,7 @@
 - [Atari Energy Czar CX4121](../Companies/Atari/Atari_Energy_Czar/README.md)
 - [Atari SCRAM - A Nuclear Power Plant Simulation CX4123 (Basic) by Chris Crawford](../Companies/Atari/Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/README.md)
 - [Atari Kingdom CX4102](../Companies/Atari/Atari_Kingdom/README.md)
-- [Atari Kingdom cassette-Dual Track with voice, music and data](attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10
+- [Atari Kingdom cassette-Dual Track with voice, music and data](../../media/Atari_Kingdom/attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10
 
 ### Spreadsheets
 - [BCALC](../BCALC/README.md)
@@ -633,7 +633,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari European Countries & Capitals CX4114 ; Copyright (C) 1980 Atari, Inc.](../Companies/Atari/Atari_European_Countries_and_Capitals/README.md)
 
 - [Atari Biorhythm cassette-Dual Track with voice, music and data](../../media/Articles/attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube ; [Atari Biorhythm program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Biorhythm)
-- [Atari Kingdom cassette-Dual Track with voice, music and data](attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10 ; [Atari Kingdom program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Kingdom)
+- [Atari Kingdom cassette-Dual Track with voice, music and data](../../media/Atari_Kingdom/attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10 ; [Atari Kingdom program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Kingdom)
 - [Atari Hangman cassette-Dual Track with voice, music and data](../../media/Articles/attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
 - [Atari Blackjack (CX4105)](../Companies/Atari/Atari_Blackjack/README.md)
 
@@ -655,7 +655,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [SuperDOS](../SuperDOS/README.md)
 
 ### Drivers
-- [CX85 Keypad Interrrupt Handler](../Companies/Atari/Atari_CX85/Original_CX85_Keyboard_Handler/README.md)
+- [Atari CX85 Keypad Interrrupt Handler](../Companies/Atari/Atari_CX85/Original_CX85_Keyboard_Handler/README.md)
 
 ### Games (in the sequence the authors released the sources to the public)
 - [Eastern Front (1941)](../Companies/Atari/Atari_Corporation_UK/Eastern_Front_1941/README.md) ; 1981 from Chris Crawford

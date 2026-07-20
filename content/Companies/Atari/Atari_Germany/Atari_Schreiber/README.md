@@ -75,11 +75,11 @@ BF5F: 60                RTS
 884F: 6C 30 05          JMP ($0530)
 
 ## PRO-Image
-- [Atari_Schreiber_DXG_8036.pro](attachments/Atari_Schreiber_DXG_8036.pro) ; von [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber/), vielen lieben Dank, Du machst soviel für die deutsche Atarisoftware, vor allem gründlich und ordentlich, vieles wäre ohne Dich verloren gegangen. Wir schulden Dir wirkich viel! Ganz lieben Dank aus Deutschland. :-)
+- [Atari_Schreiber_DXG_8036.pro](attachments/Atari_Schreiber_DXG_8036.pro) ; von [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber/), vielen lieben Dank, Du machst so viel für die deutsche Atari Software, vor allem gründlich und ordentlich, Vieles wäre ohne Dich verloren gegangen. Wir schulden Dir wirkich viel! Ganz lieben Dank aus Deutschland. :-)
 
 ## ATX-Images
-- [Atari_Schreiber-DjayBee.atx](attachments/Atari_Schreiber-DjayBee.atx) ; MD5-Prüfsumme: 057ae25dc3eba037396fc315e09b9064 erstes ATX-Image überhaupt von DjayBee veröffentlicht auf AtariAge ; Mega-Danke von der deutschen Atari-Gemeinde. :-)
-- [Atari_Schreiber.atx](attachments/Atari_Schreiber.atx) ; MD5-Prüfsumme: 057ae25dc3eba037396fc315e09b9064 ; von [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber/), vielen lieben Dank, Du machst soviel für die deutsche Atarisoftware, vor allem gründlich und ordentlich, vieles wäre ohne Dich verloren gegangen. Wir schulden Dir wirkich viel! Ganz lieben Dank aus Deutschland. :-)
+- [Atari_Schreiber](attachments/Atari_Schreiber.atx) ; MD5-Prüfsumme: 057ae25dc3eba037396fc315e09b9064 erstes ATX-Image überhaupt von DjayBee veröffentlicht auf AtariAge ; Mega-Danke von der deutschen Atari-Gemeinde. :-)
+- [Atari_Schreiber.atx](attachments/Atari_Schreiber.atx) ; MD5-Prüfsumme: 057ae25dc3eba037396fc315e09b9064 ; von [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber/), vielen lieben Dank, Du machst soviel für die deutsche Atarisoftware, vor allem gründlich und ordentlich, vieles wäre ohne Dich verloren gegangen. Wir schulden dir wirkich viel! Ganz lieben Dank aus Deutschland. :-)
 - [Atari_Schreiber_DXG8036__Atari_Germany.atx](attachments/Atari_Schreiber_DXG8036__Atari_Germany.atx) ; MD5-Prüfsumme: 5ed746a6e0c5f1734f0983fc3893a516 ; von BigBen von AtariAge, erstellt mit SuperCard Pro, besser geht es nicht! Mega-Danke BigBen, wir stehen tief in Deiner Schuld! :-)
 
 ## ATR-Image

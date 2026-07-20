@@ -11,7 +11,7 @@ Atari Kingdom CX4102 is one of the first simulation game from Atari with a short
 ## Manual
 - [Atari_Kingdom_Manual.pdf](attachments/Atari_Kingdom_Manual.pdf) ; size: 561 KB ; Atari Kingdom CX4102 manual, 4 pages
 ## Video with voice, music and data
-- [Atari Kingdom cassette-Dual Track with voice, music and data](attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10
+- [Atari Kingdom cassette-Dual Track with voice, music and data](../../../../media/Atari_Kingdom/attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10
 ## Box-Images
 ![](attachments/Atari_Kingdom_Cover_1.jpg)
 Atari Kingdom CX4102 box cover

@@ -1,4 +1,4 @@
-# CX85 Keypad Interrrupt Handler
+# Atari CX85 Keypad Interrrupt Handler
 
 Original Atari source from the CX-85 Disk.
 
