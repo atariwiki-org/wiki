@@ -12,8 +12,8 @@
 | [Logitech  WingMan Formula GP Steering Wheel](http://www.logitech.com/index.cfm/products/details/US/EN,CRID=2217,CONTENTID=5027) | working  | [Logitech Formula GP Wheel Driver](../ProjUSBCartAtariLogWheel/README.md)  | Pole Position |
 | [Logitech  Vibration Feedback Steering Wheel; Logitech NASCAR Racing Wheel](http://www.logitech.com/index.cfm/products/details/US/EN,CRID=2217,CONTENTID=9489) | working  | [Logitech VF Wheel Driver](../ProjUSBCartAtariLogWheel/README.md)  | Pole Position |
 | __Keyboards__ | | | |
-|  SpeedLink SL-6421-SBK Comfort Combo Keyboard, black | working | [simple Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)  | various Programms |
-|  SUN USB Keyboard Model Typ 6 USB No. 3201281-01 | working | [simple Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)  | various Programms |
+|  SpeedLink SL-6421-SBK Comfort Combo Keyboard, black | working | [Atari USB Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)  | various Programms |
+|  SUN USB Keyboard Model Typ 6 USB No. 3201281-01 | working | [Atari USB Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)  | various Programms |
 | __Mice__ | | | |
 | Logitech Mice USB | working | [Generic USB Mouse Driver](../ProjUSB/ProjUSBCartAtariMouse/README.md)  | various Programms |
 | Microsoft Optical Intellimouse | working | [Generic USB Mouse Driver](../ProjUSB/ProjUSBCartAtariMouse/README.md)  | various Programms |

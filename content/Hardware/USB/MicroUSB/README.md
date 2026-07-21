@@ -18,19 +18,19 @@ Files for the MicroUSB Project can also be downloaded from SourceForge -> [http:
 - [Base USB HID Driver](../BaseHIDDriver/README.md)
 - [USB Device Driver Development Kit Disk](https://sourceforge.net/project/showfiles.php?group_id=111428&package_id=120826)
 - [Atari USB Enduser Driver Disk](../AtariEnduserDriverDisk/README.md)
-- [Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)
+- [Atari USB Keyboard Driver](../Atari_USB_Keyboard_Driver/README.md)
 - [Digital Joypad Driver](../Digital_Joypad_Driver/README.md)
 - [Logitech Rumblepad 2 USB Driver](../JoypadRumblePadTwoUsb/README.md)
 - [Atari USB analog Joystick Driver](../AtariAnalogJoystickDriver/README.md)
 - [USB Steering Wheel Driver](../USB_Steering_Wheel_Driver/README.md) ( [Playing Pole Position with an USB Steering Wheel at ABBUC JHV 2004](../ProjUSB/ProjUSBCartAtariWheelPolePosPics/README.md) )
-- [Logitech GP Steering Wheel Driver](../Logitech_Formula_GP_USB_Wheel_Driver/README.md)
-- [Logitech VP Steering Wheel Driver](../Logitech_Formula_VF_USB_Wheel_Driver/README.md)
+- [Logitech Formula GP USB Driver](../Logitech_Formula_GP_USB_Wheel_Driver/README.md)
+- [Logitech Formula Vibration Feedback Wheel USB Driver](../Logitech_Formula_VF_USB_Wheel_Driver/README.md)
 - [Atari USB Cart compatibility matrix](../DeviceMatrix/README.md)
 
 ## Documentation
 
 - [How to write a new USB HID Driver](../How_to_write_a_USB_Driver/README.md)
-- [How to write patch a Game for USB usage](../How_to_patch_a_game_for_USB_Usage/README.md)
+- [How to patch a Game for USB Usage](../How_to_patch_a_game_for_USB_Usage/README.md)
 
 ## Devices
 
