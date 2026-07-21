@@ -1,6 +1,6 @@
 # Step-by-Step Tutorial: How to create a stand-alone ACTION! Program
 
-1. download a RUNTIME Source, either the original OSS Runtime -> [Original Action! System Runtime Source](../../Original_Action_System_Runtime_Source/README.md) or the alternative Runtime (Peter Finzel, Carsten Strotmann) -> [Alternative_ACTION_Runtime_Source](../Alternative_ACTION_Runtime_Source/README.md)
+1. download a RUNTIME Source, either the original OSS Runtime -> [Original Action! System Runtime Source](../../Original_Action_System_Runtime_Source/README.md) or the alternative Runtime (Peter Finzel, Carsten Strotmann) -> [Alternative Action! Runtime Source](../Alternative_ACTION_Runtime_Source/README.md)
 1. (optional) delete all runtime parts your program don't need (like SOUND etc), but be aware of dependencies
 1. Include the Runtime File at the top of your ACTION! Source, INCLUDE "D:SYSTEM.ACT"
 1. save your ACTION! Source to disk, clear the ACTION! editor

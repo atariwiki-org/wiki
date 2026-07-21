@@ -13,7 +13,7 @@ Too large to fit on a 8k ROM, the product was sold on disk only. Because BASIC A
 
 ## Manuals
 - [OSS_BASIC_A_Plus_3.1_Manual-May_1981.pdf](attachments/OSS_BASIC_A_Plus_3.1_Manual-May_1981.pdf) ; size: 1.5 MB
-- [OSS_BASIC_A_Plus_3.1_Manual-May_1981-2.pdf](attachments/OSS_BASIC_A_Plus_3.1_Manual-May_1981-2.pdf) ; size: 13.9 MB
+- [OSS_BASIC_A_Plus_3.1_Manual-May_1981-Full.pdf](../../../../media/Companies/OSS/BASIC_Aplus/attachments/OSS_BASIC_A_Plus_3.1_Manual-May_1981-Full.pdf) ; size: 13.9 MB
 - [OSS_BASIC_A_Plus_Demo_Disk.pdf](attachments/OSS_BASIC_A_Plus_Demo_Disk.pdf) ; size: 770 KB
 - [OSS Quick reference card for BASIC A+](attachments/oss-quick-reference-card-BASIC-a-plus.pdf) ; size: 3.4 MB ; 8 pages ; thank you so much Bill Lange for finding this very rare cards. :-)
 

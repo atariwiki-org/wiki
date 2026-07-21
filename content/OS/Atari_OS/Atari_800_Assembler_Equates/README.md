@@ -1,4 +1,4 @@
-### Atari 800 Assembler Equates
+# Atari 800 Assembler Equates
 
 General Information
 Author: Atari

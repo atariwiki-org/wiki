@@ -457,8 +457,8 @@ All of the following have no page yet
 - [Atari Super Biorhythmus / Atari Super Biorythme](../Companies/Atari/Atari_Germany/Super_Biorhythmus/README.md)
 
 ### Utilities
-- [Disketten Betriebssystem II Version D2.0S](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)
-- [Disketten Betriebssystem II Version 2.5](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)
+- [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)
+- [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)
 - [Disk Fixer (DXG 5729)](../Companies/Atari/Atari_Germany/Disk_Fixer/README.md)
 
 ### Italy - Atari Italia S.p.A.
@@ -569,7 +569,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 ### DOS Versions
 - [3_Sector_read_only_DOS](../People/Carsten_Strotmann/3_Sector_read_only_DOS/README.md)
 - [Atari DOS 1](../Companies/Atari/Atari_DOS/Atari_DOS_1/README.md)
-- [Atari_DOS_2](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)
+- [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)
 - [Atari Dos 3](../Companies/Atari/Atari_DOS/Atari_DOS_3/README.md)
 - [Atari Dos 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md)
 - [Atari DOS XE](../Companies/Atari/Atari_DOS/Atari_DOS_XE/README.md)

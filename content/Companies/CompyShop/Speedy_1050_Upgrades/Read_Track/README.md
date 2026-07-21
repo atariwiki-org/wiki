@@ -1,4 +1,3 @@
-
 # Speedy 1050 example -- Read tack
 
 ```

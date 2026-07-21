@@ -21,7 +21,7 @@
 - [Speedy 1050 example - Install a custom command](Install_custom_command/README.md)
 - [Speedy 1050 example -- remove custom command](Remove_custom_command/README.md)
 - [Speedy 1050 example -- Write Track](Write_Track/README.md)
-- [Read_Track](Read_Track/README.md)
+- [Speedy 1050 example -- Read tack](Read_Track/README.md)
 - [Speeday 1050 example - Read high speed SIO routine from drive](Read_High-Speed_SIO_from_Speedy_1050_drive/README.md)
 - [CompyShop Sector Copy Source Code](Sector_Copy/README.md)
 - [Speedy 1050 Backup](Speedy_1050_Backup/README.md)

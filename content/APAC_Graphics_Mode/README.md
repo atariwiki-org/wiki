@@ -1,4 +1,4 @@
-### APAC Graphics Mode
+# APAC Graphics Mode
 
 General Information
 Author: THOMAS TANIDA

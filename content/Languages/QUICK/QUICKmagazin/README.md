@@ -1,4 +1,4 @@
-## QUICKmagazin
+# QUICKmagazin
 
 These are the QUICKmagazin disks 1-15.
 

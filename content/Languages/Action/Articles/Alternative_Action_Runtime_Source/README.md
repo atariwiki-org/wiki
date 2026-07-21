@@ -1,4 +1,4 @@
-### Alternative Action! Runtime Source
+# Alternative Action! Runtime Source
 
 First published in german magazine "Computer Kontakt (CK)", written by Peter Finzel (see [ACTION noch schneller](../ACTION_noch_schneller/README.md))
 

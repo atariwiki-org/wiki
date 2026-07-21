@@ -26,7 +26,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Dorsett Atari Construction OC](../Construction_OC/README.md)
 - [Dorsett Atari Comprehension-Reading CD](../Comprehension-Reading_CD/README.md)
 - [Dorsett Atari Reading-Development (Reading Comprehension) V](../Reading-Development_V/README.md)
-- [Reading-Development_X](../Reading-Development_X/README.md)
+- [Dorsett Atari Reading-Development (Reading Comprehension) X](../Reading-Development_X/README.md)
 - [Dorsett Atari Spelling SP](../Spelling_SP/README.md)
 - [Dorsett Atari Spanish-English U-ES](../Spanish_U-ES/README.md)
 ### 3rd column

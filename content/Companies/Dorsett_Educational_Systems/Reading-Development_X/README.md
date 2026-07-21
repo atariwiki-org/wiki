@@ -1,4 +1,3 @@
-
 # Dorsett Atari Reading-Development (Reading Comprehension) X
 
 Copyright (C) 1981 Dorsett Educational Systems, Inc.
