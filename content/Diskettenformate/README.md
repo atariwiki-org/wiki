@@ -45,9 +45,9 @@
 |DOS II+D 6.x|Y|Y|Y|N|N|N|
 |[XDOS](../People/Stefan Dorndorf/XDOS_2.43/README.md)|Y|Y|Y|Y|N|N|in 360k mode the two disksides are used as twofloppy drives (D1: and D2:) in XDOS!
 |KDOS 1.0|Y|N|N|N|N|N|
-|[OSS A+2.0](../OSS_A__2/README.md)|Y|N|Y|N|N|N|
-|[DOS XL 2.3x](../OSS_DOS_XL/README.md)|Y|N|Y|N|N|N|
-|[OS A+4.1](../OSS_A__4/README.md)|N?|Y|Y|Y|Y|Y|OS A+4.1 was advertized being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
+|[OSS A+2.0](../Companies/OSS/OS_Aplus/OS_Aplus-Version_2/README.md)|Y|N|Y|N|N|N|
+|[DOS XL 2.3x](../Companies/OSS/DOS_XL/README.md)|Y|N|Y|N|N|N|
+|[OS A+4.1](../OS_Aplus-Version_4)|N?|Y|Y|Y|Y|Y|OS A+4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
 
 
@@ -63,7 +63,7 @@
 |BeweDOS 1.x|Y|Y|Y|Y|Y|harddisk must be formatted with Sparta DOS or SDX or Real DOS,then Bewe DOS can be copied onto it!
 |LiteDOS 2.x/3.x|Y|Y|Y|Y|Y|
 |DOS XE|Y|Y|Y|Y|Y|DOS XE does support subdirs, but harddisks up to 16MB can only be used with sup8pdct's homebrew DOS XE formatter!
-|OS A+ 4.1|Y|Y|Y|Y|Y|OS A+ 4.1 was advertized being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
+|OS A+ 4.1|Y|Y|Y|Y|Y|OS A+ 4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
 
 
@@ -77,7 +77,7 @@
 |SDX 4.x|Y|Y|Y|Y|Y|
 |LiteDOS 2.x/3.x|Y|Y|Y|Y|Y|
 |DOS XE|Y|Y|Y|Y|Y|DOS XE does support subdirs, but harddisks up to 16MB can only be used with sup8pdct's homebrew DOS XE formatter!
-|OS A+ 4.1|Y|Y|Y|Y|Y|OS A+ 4.1 was advertized being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
+|OS A+ 4.1|Y|Y|Y|Y|Y|OS A+ 4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
 
 ### 512 Byte sectors (quad density)
@@ -90,7 +90,7 @@
 |SDX 4.x|Y|Y|Y|Y|Y|Y|
 |LiteDOS 2.x/3.x|N|N|N|N|N|N|
 |DOS XE|N|N|N|N|N|N|
-|OS A+ 4.1|Y|Y|Y|Y|Y|?|OS A+ 4.1 was advertized being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
+|OS A+ 4.1|Y|Y|Y|Y|Y|?|OS A+ 4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
 
 ## Andere Quellen

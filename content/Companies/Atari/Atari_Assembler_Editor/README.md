@@ -18,19 +18,19 @@ The Atari Assembler Editor cartridge was a program used to edit, compile and deb
 ## Assembler Editor - revision A & B cartridges, outlook for revision C and maybe D
 There are two different versions of the cartridge which could be verified very easy, please see the md5 checksums below. AtariWiki dares to define them as revision A and B in analogy to the Atari Basic cartridge, which was delivered in three different versions. It is easy to find out, which version one has, just type in ASM and hit RETURN. If you have a revision A cartridge, no error message is shown, in case you have a revision B cartridge, the amount of errors are shown. Please see the two pictures below for an example:
 
-![](attachments/Assembler+Editor+-+Revision+A.jpg)
+![](attachments/Assembler_Editor_-_Revision_A.jpg)
 Assembler Editor - revision A cartridge test result
 
-![](attachments/Assembler+Editor+-+Revision+B.jpg)
+![](attachments/Assembler_Editor_-_Revision_B.jpg)
 Assembler Editor - revision B cartridge test result
 
 __A binary compare of both cartridges did show, that there is much more different than that! Future investigations have to show, what else is different and how the user can profit of it.__
 
 __Revision C:__
-In the future all bugs shoud be collected and if they can be fixed, a revision C is thinkable. Of course, this requires the source code of the program, which we sadly do not have, nor a license for. Maybe there will be a good soul out there, who will give it to us in the future? At least, the [source code chapter](https://atariwiki.org/wiki/Wiki.jsp?page=Articles#section-Articles-SourceCode) has shown, that there is always hope, unless we never give up. :-)
+In the future all bugs shoud be collected and if they can be fixed, a revision C is thinkable. Of course, this requires the source code of the program, which we sadly do not have, nor a license for. Maybe there will be a good soul out there, who will give it to us in the future? At least, the [source code chapter](../Articles/README.md/#section-Articles-SourceCode) has shown, that there is always hope, unless we never give up. :-)
 
 __Revision D:__
-If we go far ahead of this, then even an interbreed with the [TURBO-BASIC XL source code](https://atariwiki.org/wiki/Wiki.jsp?page=TURBO-BASIC%20XL#section-TURBO-BASIC+XL-SourceCode) is thinkable. In 1985 this was done for the Atari Basic cartridge by Frank Ostrowski and because many code routines are similar, there is a great chance to achieve this. Of course, even a renaming of the cartrige is possible, AtariWiki suggest to call it: 'Atari Turbo-Assembler Editor'. ;-)
+If we go far ahead of this, then even an interbreed with the [TURBO-BASIC XL source code](../TURBO-BASIC_XL/README.md#section-TURBO-BASIC+XL-SourceCode) is thinkable. In 1985 this was done for the Atari Basic cartridge by Frank Ostrowski and because many code routines are similar, there is a great chance to achieve this. Of course, even a renaming of the cartrige is possible, AtariWiki suggest to call it: 'Atari Turbo-Assembler Editor'. ;-)
 
 ## CAR images
 - [Assembler_Editor_-_Revision_A.car](attachments/Assembler_Editor_-_Revision_A.car)
@@ -83,7 +83,7 @@ LOMEM command - incorrect use
 Thanks to Sijmen Schouten for the hint. :-)
 
 ## Pictures
-![](attachments/Der+Atari+Assembler+Cover.jpg)
+![](attachments/Der_Atari_Assembler_Cover.jpg)
 Atari Assembler Editor Box Cover - front
 
 ![](attachments/assembler_editor_cart_2.jpg)
@@ -92,7 +92,7 @@ Atari Assembler Editor Box Cover - back
 ![](attachments/assembler_editor_cart_3.jpg)
 Assembler Editor Cartridge - Revision A
 
-![](attachments/Assembler+Editor+Brown+front.jpg)
+![](attachments/Assembler_Editor_Brown_front.jpg)
 Assembler Editor Cartridge - Revision B
 
 ![](attachments/assembler_editor_d_cart_1.jpg)
@@ -327,8 +327,8 @@ TYA Transfer Register Y to Accumulator
 ```
 
 ## Instruction Set (Operation Codes)
-![](attachments/Instruction+Set+%28Operation+Codes%29-1.png)
-![](attachments/Instruction+Set+%28Operation+Codes%29-2.png)
+![](attachments/Instruction_Set_Operation_Codes-1.png)
+![](attachments/Instruction_Set_Operation_Code-2.png)
 Instruction Set (Operation Codes)
 
 ## Commands and error codes
@@ -341,11 +341,11 @@ Atari Assembler Editor - Assembler commands
 ![](attachments/Debugger.jpg)
 Atari Assembler Editor - Debugger commands
 
-![](attachments/Assembler+Editor+Error+Codes+001-139.jpg)
+![](attachments/Assembler_Editor_Error_Codes_001-139.jpg)
 Atari Assembler Editor - Error Codes 001-139
 
-![](attachments/Assembler+Editor+Error+Codes+140-165.jpg)
+![](attachments/Assembler_Editor_Error_Codes_140-165.jpg)
 Atari Assembler Editor - Error Codes 140-165
 
-![](attachments/Error+Codes+2-171.jpg)
+![](attachments/Error_Codes_2-171.jpg)
 Atari Assembler Editor - Error Codes 2-171

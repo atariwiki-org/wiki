@@ -255,7 +255,7 @@ The [Logitech Rumblepad 2 USB Driver](../JoypadRumblePadTwoUsb/README.md) of the
 
 Now we compile the new Driver and Test the driver with a small basic Program.
 
-- we load the Base Driver Part into [BiboAssembler](../BiboAssembler/README.md) and compile with ASM to a binary driver (COM File).
+- we load the Base Driver Part into [CompyShop BIBO Assembler (2)](../../../Companies/CompyShop/BIBO-Assembler/README.md) and compile with ASM to a binary driver (COM File).
 - we load the driver from DOS
 - we enter Basic and test the driver with this small Basic Program
 

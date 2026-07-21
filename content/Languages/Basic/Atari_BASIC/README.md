@@ -189,7 +189,7 @@ Atari BASIC Keywords
 
 ## Atari BASIC Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie fertig
 - [Programmieren leicht gemacht (TXG4110)](../../../Companies/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)
-- [Kurs 2: Noch mehr BASIC-Lernen Sie BASIC mit Dagmar Berghoff-TXG 55007](../Noch_mehr_BASIC_TXG_55007/README.md)
+- [Noch mehr BASIC (TXG55007)](../../../Companies/Atari/Atari_Germany/Noch_mehr_BASIC_TXG55007/README.md)
 - [BASIC für Fortgeschrittene](../../../Companies/Atari/Atari_Germany/BASIC_fuer_Fortgeschrittene/README.md)
 
 ## BASIC 1x1 des Programmierens - ein BASIC-Lehrgang, einstmals gesendet auf Radio DDR II in der Computersendung REM, Begleitmaterial veröffentlicht als Kassettenbox. Mit einer Programm-Kassette für ATARI 800XL.
@@ -211,11 +211,11 @@ Atari BASIC Keywords
 - [BASIC Program Lister](Examples/BASIC_Program_Lister/README.md)
 - [UUDecoder](Examples/UUDecoder/README.md)
 - [Create DATA Statements from binary load files](Examples/Create_Data-Statements_from_binary_load_files/README.md)
-- [Schnelle Player Bewegung in BASIC](Examples/Schnelle_Player_Bewegung_in_BASIC/README.md) (german)
+- [Schnelle Player Bewegung in BASIC](Examples/Schnelle_Player_Bewegung_in_BASIC/README.md) (German)
 
 ## Tools
 - [Extended Atari Basic (APX-10177, APX-20177)](../Extended_Atari_BASIC/README.md)
-- [BASIC_on-off_from_DOS_XL_commandline](../BASIC_on-off_from_DOS_XL_commandline/README.md)
+- [Toggle BASIC on/off from OS/A+ and DOS XL Command-Line](../../../Companies/OSS/Toggle_BASIC_On-Off_from_the_OS_APlus_and_DOS_XL_Command-Line/README.md)
 - [REV.B_TO_REV.C_CONVERTER.txt](attachments/REV.B_TO_REV.C_CONVERTER.txt) Atari BASIC Rev. B to Rev. C Converter as TXT file
 - [RevB2C.atr](attachments/RevB2C.atr) Atari BASIC Rev. B to Rev. C Converter as ATR-image
 - [Infoline for BASIC and ACTION!](../../Action/Examples/Infoline/README.md) Infoline for BASIC and ACTION!
