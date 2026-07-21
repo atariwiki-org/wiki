@@ -1,7 +1,7 @@
-# Dorsett Atari Mathematics (Money Problems) Reading-Mathematics MR ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari Mathematics (Money Problems) MR ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
-- [Dorsett Atari Mathematics (Money Problems) Reading-Mathematics MR](https://archive.org/details/DorsettAtariMathematicsMoneyProblems)
+- [Dorsett Atari Mathematics (Money Problems) MR](https://archive.org/details/DorsettAtariMathematicsMoneyProblems)
 
 This is an archive of the "Mathematics (Money Problems)" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
 
