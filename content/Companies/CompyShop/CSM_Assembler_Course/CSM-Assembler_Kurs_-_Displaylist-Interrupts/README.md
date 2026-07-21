@@ -21,9 +21,9 @@ Eine Grundbedingung ist, dass in der entsprechenden Zeile in der Display-List na
 
 Wenn ich eine bereits existierende Display-List im Speicher nachträglich DLI-tauglich machen will, kann ich dies durch eine 'Oderierung' des entsprechenden Bytes mit $80 (128) erreichen.
 
-Danach muss die Adresse der Interrupt-Routine in [VDSLST](../VDSLST/README.md) $200,$201 (512,513) eingetragen werden und letztlich muss ich noch Bit 7 in [NMIEN](../NMIEN/README.md) $D40E (54286) setzen, damit der DLI auch ausgeführt wird. In aller Regel muss hier also $C0 (192) eingetragen werden. Bei der DLI-Routine ist noch zu beachten, dass die Registerinhalte (A,X,Y) vor und nach Aufruf der Routine identisch sein müssen, um einen System-Absturz zu vermeiden. Das heißt, dass die Registerinhalte direkt zu Beginn der Routine auf dem Stapel oder wo auch immer abgelegt werden und ganz am Ende der Routine wieder zurückgeholt werden müssen.
+Danach muss die Adresse der Interrupt-Routine in [VDSLST](../Memory_Map/README.md#VDSLST) $200,$201 (512,513) eingetragen werden und letztlich muss ich noch Bit 7 in [NMIEN](../Memory_Map/README.md#NMIEN) $D40E (54286) setzen, damit der DLI auch ausgeführt wird. In aller Regel muss hier also $C0 (192) eingetragen werden. Bei der DLI-Routine ist noch zu beachten, dass die Registerinhalte (A,X,Y) vor und nach Aufruf der Routine identisch sein müssen, um einen System-Absturz zu vermeiden. Das heißt, dass die Registerinhalte direkt zu Beginn der Routine auf dem Stapel oder wo auch immer abgelegt werden und ganz am Ende der Routine wieder zurückgeholt werden müssen.
 
-Eine weitere (nicht zwingende) Bedingung ist das Arbeiten mit [WSYNC](../WSYNC/README.md) $D40A. Schreibt man vor dem Ändern einer Adresse einen Wert in WSYNC so wartet der Computer bis zum Beginn der nächsten Bildschirmzeile und nimmt erst dann die Änderung vor. Würde man beim Farbenumschalten auf diesen Vorgang verzichten, so kann es zu einem Flackern der Farbe im Umschaltbereich führen.
+Eine weitere (nicht zwingende) Bedingung ist das Arbeiten mit [WSYNC](../Memory_Map/README.md#WSYNC) $D40A. Schreibt man vor dem Ändern einer Adresse einen Wert in WSYNC so wartet der Computer bis zum Beginn der nächsten Bildschirmzeile und nimmt erst dann die Änderung vor. Würde man beim Farbenumschalten auf diesen Vorgang verzichten, so kann es zu einem Flackern der Farbe im Umschaltbereich führen.
 
 Im übrigen ist es noch wichtig, dass man direkt die Hardwareregister verändert, da ein Umändern der Schattenregister erst nach dem vollständigen Aufbau des Bildschirms sichtbar wird!
 
@@ -36,7 +36,7 @@ Zeichensatz: 756 ($2F4)
 Hardwareregister: 54281 ($D409)
 
 
-Es ist weiterhin zu beachten, dass die Routine, die durch den DLI aufgerufen wird, nicht allzu lang ist, da sonst Probleme bei zeitkritischen Input/ Output Operationen entstehen können. So kann zum Beispiel der Diskettenzugriff trotz Speedy und High-Speed-SIO unendlich langsam werden oder gar ganz den Geist aufgeben.
+Es ist weiterhin zu beachten, dass die Routine, die durch den DLI aufgerufen wird, nicht allzu lang ist, da sonst Probleme bei zeitkritischen Input/Output Operationen entstehen können. So kann zum Beispiel der Diskettenzugriff trotz Speedy und High-Speed-SIO unendlich langsam werden oder gar ganz den Geist aufgeben.
 
 Sie finden im Anhang noch einige Beispiele dazu, doch will ich hier einmal ein sehr allgemeines Beispiel geben:
 
