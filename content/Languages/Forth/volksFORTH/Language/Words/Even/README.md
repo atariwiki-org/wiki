@@ -1,4 +1,4 @@
-#__EVEN__ "even" ( u1 -- u2 )
+# __EVEN__ "even" ( u1 -- u2 )
 
 
 

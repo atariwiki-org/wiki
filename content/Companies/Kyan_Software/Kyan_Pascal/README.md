@@ -49,7 +49,7 @@ Any help of any kind, even just hints or infos to complete the above site is ver
 - [Kyan_Pascal_v1_manual.pdf](../../../../media/Pascal/attachments/Kyan_Pascal_v1_manual.pdf) ; size: 9.8 MB ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
 - [Kyan_Pascal-Readme-Missing_Page_2-Errata.pdf](attachments/Kyan_Pascal-Readme-Missing_Page_2-Errata.pdf) ; size: 36 KB ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
 - [Kyan PASCAL Tutorial Manual-Version 1.0](attachments/Kyan_Pascal_Tutorial_Manual.pdf) ; size: 655 KB ; thank you so much GoodByteXL for your outstanding work, you really make the best pdf files available! Please go ahead with that incredible work! :-)))
-- [Kyan PASCAL Tutorial Manual-Version 1.1](attachments/Kyan_Pascal_V1-1_2020.pdf) ; size: 745 KB ; thank you so much GoodByteXL for your outstanding work, you really make the best pdf files available! Please go ahead with that incredible work!
+- [Kyan PASCAL Tutorial Manual-Version 1.1](attachments/Kyan_Pascal_1.1_2020.pdf) ; size: 745 KB ; thank you so much GoodByteXL for your outstanding work, you really make the best pdf files available! Please go ahead with that incredible work!
 
 __Please take into account, that the DOS was modified by Kyan! It is not possible to use a normal DOS 2.5 from another disk! The modifications (loading-routines) are moved into $480 up to $6FF. This is mentioned in the document in chapter DOS 2.5, but only there!__
 - [KYAN PASCAL - Table of Contents in html](attachments/KYAN_PASCAL-Table_of_Contents.html)

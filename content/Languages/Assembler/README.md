@@ -11,7 +11,7 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [6502-Codes.pdf](attachments/6502-Codes.pdf) ; Table with all OpCodes, cycles, flags, comments etc., highly recommended! Thanks to [insane](https://insane.tscc.de/) from ABBUC :-)
 
 ## Assemblers for Atari Computers
-- [130XE+ Makroassembler](../130XE__Makroassembler/README.md) (1991)
+- [130XE+ Makroassembler](../130XE_Plus_Makroassembler/README.md) (1991)
 - [A65 Assembler](A65_Assembler/README.md) (1984)
 - [AMOEBA 3.0](../../Companies/Atari/AMOEBA/README.md)(198?)
 - [Alfasm, Turbo-Assembler/16](Alfasm/README.md) (1990)
@@ -20,18 +20,18 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [Atmas I - Editor and Macroassembler](../../Companies/Hofacker/Atmas_I/README.md) (1982)
 - [ATMAS-II Makroassembler, Editor und Maschinensprache-Monitor](../../Companies/Hofacker/Atmas_II/README.md) (1985)
 - [Bug/65 Version 2.0](../../Companies/OSS/BUG65/README.md) (1982)
-- [Bibo Assembler](../../Companies/CompyShop/BIBO_Assembler/README.md) (1986)
+- [Bibo Assembler](../../Companies/CompyShop/BIBO-Assembler/README.md) (1986)
 - [DataSoft Datasm-65 2.0](../../Companies/DataSoft/DataSoft_Datasm-65/README.md) (1981)
 - [Dunion's Debugging Tool (DDT) Rev. 1.0](../../Companies/OSS/DDT/README.md) (1982)
 - [OSS EASMD Version 1.0](../../Companies/OSS/EASMD/README.md) (1981)
 - [Edit 6502](../../Edit_6502/README.md) (1981)
 - [Extended DDT (1985)](../../Companies/OSS/Extended_DDT/README.md) (1985)
-- [MAC/65](../Mac65/README.md) (1982)
+- [MAC/65](../MAC65/README.md) (1982)
 - [MAE Assembler](MAE_Assembler/README.md) (1996)
-- [Synapse_Assembler](../Synapse_Assembler/README.md) (1982)
+- [Synapse_Assembler](../SynAssembler/README.md) (1982)
 
 ## Cross-Assemblers
-- [ATASM](https://atari.miribilist.com/atasm/) ; Mac/65 compatible cross assembler
+- [ATASM](https://atari.miribilist.com/atasm/) ; MAC/65 compatible cross assembler
 - [APX-20051 Cosmatic Atari Development Package](../../Companies/Atari/APX-20051_Cosmatic_Atari_Development_Package/README.md) ; cross-assembler for 1802 assembly language
 - [MADS](https://mads.atari8.info/) ; powerful and modern cross assembler under constant development
 - [MC macroassembler by Microtec Research](../../MC_macroassembler_by_Microtec_Research/README.md) ; often found in Atari source code listings, therefore at least used by Atari, Inc.
@@ -44,4 +44,4 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [The Atari Assembler](http://www.atarimania.com/documents/The-Atari-Assembler.pdf) ; detailed and easy-to-read introduction to programming 6502-assembly on the Atari using Assembler/Editor.
 
 ## Tutorials
-- [Programming the Atari XL/XE](https://www.wudsn.com/index.php/productions-atari800/tutorials) ; a series of short video tutorials, available on youtube and as download
+- [Programming the Atari XL/XE](https://www.wudsn.com/index.php/productions-atari800/tutorials) ; a series of short video tutorials, available on YouTube and as download
