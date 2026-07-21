@@ -1,6 +1,5 @@
 # Forth
 
-
 ### Background
 Forth is a concatenative, stack-based programming language.
 
@@ -90,7 +89,7 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 - [Collection of Source on local variables](Articles/Local_Variables/README.md)
 - [Freedom of Assembly](Articles/Freedom_of_Assembly/README.md) by Julian V. Noble
 - [Forth sorting routines](Articles/Forth_Sorting_Routines/README.md)
-- [Forth_Memory_Allocator](Articles/Forth Memory Allocator/README.md)
+- [Forth memory allocator](Articles/Forth_Memory_Allocator/README.md)
 - [Forth Database design](Articles/Forth_Database_design/README.md) "ELEMENTS OF DATA BASE DESIGN" by Glen B. Haydon
 - [Signed Integer Division](Articles/Signed_Integer_Division/README.md) by Robert L. Smith
 - [From PASCAL to FORTH](Articles/From_PASCAL_to_FORTH/README.md) by Leonard Morgenstern
