@@ -92,9 +92,9 @@ Successfully compiled code is executed by typing the letter R (run) from within 
 
 !! How fast is fast?
 
-Execution speed is very important to Atari programmers. Why? Because much of the software written for the Atari relies heavily on graphics, where a few extra machine cycles in the wrong place can make the difference. between a spectacular special effect and an interesting but unmarketable demo. High speed isn't likely to hurt a non-gaphics program, either. This is in accordance with Moriarty's Maxim: ''It is much easier to slow down a computer program than it is to speed it up.''
+Execution speed is very important to Atari programmers. Why? Because much of the software written for the Atari relies heavily on graphics, where a few extra machine cycles in the wrong place can make the difference. between a spectacular special effect and an interesting but unmarketable demo. High speed isn't likely to hurt a non-graphics program, either. This is in accordance with Moriarty's Maxim: ''It is much easier to slow down a computer program than it is to speed it up.''
 
-A number of attempts have been made to devise a universal method for comparing the speed performance of computer languages and hardware. In September of 1981, ''Byte'' magazine published an iterative number-crunching algorithm called the __Sieve of Eratosthenes__, which calculates all of the 1.899 prime numbers between 3 and 16.384.[1] The __Sieve__ has since become the informal industry standard for clocking the speed of microcomputer languages.
+A number of attempts have been made to devise a universal method for comparing the speed performance of computer languages and hardware. In September of 1981, ''Byte'' magazine published an iterative number-crunching algorithm called the __Sieve of Eratosthenes__, which calculates all of the 1.899 prime numbers between 3 and 16.384.[^1] The __Sieve__ has since become the informal industry standard for clocking the speed of microcomputer languages.
 
 __Listing 4__ is an implementation of the __Sieve__ in Atari BASIC. It requires 19.490 jiffies or approximately 5½ minutes to execute on an unmodified 48K Atari 800 system. I recognize that __Listing 4__ is not the most efficient way to write the __Sieve__ in Atari BASIC, but it is the clearest and most portable way, and that's what counts in this application. You might like to try rewriting the __Sieve__ for better speed performance. I've achieved improvements of better than 30% with tricky recoding.
 
@@ -399,4 +399,4 @@ I hope my kvetching about the documentation doesn't scare you away. If sensible,
 1560 ;
 1570     RTS           ; back to Action! monitor
 ```
-[1](../1/README.md)*Jim Gilbreath, "A High-Level Language Benchmark." ''Byte'', VI, 9 (September 1981), pp. 180-198.
+[1]() *Jim Gilbreath, "A High-Level Language Benchmark." ''Byte'', VI, 9 (September 1981), pp. 180-198.

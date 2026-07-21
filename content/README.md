@@ -394,7 +394,7 @@
   - [Percom](Companies/Percom/README.md)
     - [Percom_AT-88](Companies/Percom/Percom_AT-88/README.md)
     - [Turbo-DOS](Companies/Reitershan_Computertechnik/Turbo-DOS/README.md)
-    - [ATR_8000](Companies/Software_Publishers/ATR_8000/README.md)
+    - [ATR8000](Companies/Software_Publishers/ATR8000/README.md)
   - [Synapse_Software](Companies/Synapse_Software/README.md)
     - [Blue_Max](Companies/Synapse_Software/Blue_Max/README.md)
     - [Synapse_SynFile](Companies/Synapse_Software/Synapse_SynFile/README.md)

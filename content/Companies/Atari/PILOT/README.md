@@ -43,7 +43,7 @@ PILOT Educators Package binder - back - thanks to Allan Bushman for scanning
 - [PILOT source code](attachments/PILOT-Source_Code.txt) ; Thank you so much Atari_Ace from AtariAge for your help in creating the code. We really appreciate your help, please go ahead! :-)))
 
 ## Commercials
-- [PILOT commercial](../../../Commercials/attachments/Atari-8bit-Commercial-Pac_Man_PILOT.flv) ; Flash video file, size: 4.7 MB.
+- [PILOT commercial](../Commercials/attachments/Atari-8bit-Commercial-Pac_Man_PILOT.flv) ; Flash video file, size: 4.7 MB.
 
 ## Manuals
 - [PILOT_Primer.pdf](../../../../media/Languages/PILOT/PILOT/attachments/PILOT_Primer.pdf) The PILOT Programming Language Instruction Manual

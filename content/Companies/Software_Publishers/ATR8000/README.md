@@ -1,3 +1,3 @@
-# ATR-8000
+# ATR8000
 
 See https://atari.a8maestro.com/info/8ball/ballho.htm

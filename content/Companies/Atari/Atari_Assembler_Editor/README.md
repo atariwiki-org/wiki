@@ -55,9 +55,9 @@ If we go far ahead of this, then even an interbreed with the [TURBO-BASIC XL sou
 - [Assembler_Editor_-_Revision_B.xex](attachments/Assembler_Editor_-_Revision_B.xex) ; Assembler Editor - Revision B execution file
 
 ## Manuals
-- [ATARI Assembler Editor User's Manual with OCR](../../../../media/Atari_Assembler_Editor/attachments/ATARI_Assembler_Editor_User-s_Manual-OCR.pdf) ; size: 5.8 MB ; good quality
-- [ATARI Assembler Editor User's Manual](../../../../media/Atari_Assembler_Editor/attachments/ATARI_Assembler_Editor_Users_Manual.pdf)
-- [ATARI Assembler Editor User's Manual Update](attachments/ATARI_Assembler_Editor_Users_Manual_Update.pdf)
+- [ATARI Assembler Editor User's Manual with OCR](../../../../media/Atari_Assembler_Editor/attachments/ATARI_Assembler_Editor_User_s_Manual-OCR.pdf) ; size: 5.8 MB ; good quality
+- [ATARI Assembler Editor User's Manual](../../../../media/Atari_Assembler_Editor/attachments/ATARI_Assembler_Editor_User_s_Manual.pdf)
+- [ATARI Assembler Editor User's Manual Update](attachments/ATARI_Assembler_Editor_User_s_Manual_Update.pdf)
 - [ATARI Assembler Editor User's Manual Errata 1](../../../../media/Atari_Assembler_Editor/attachments/Atari_Assembler_Editor_User_s_Manual_Errata.pdf) ; size: 20.6 MB ; Many thanks to Atarimania!
 - [ATARI Assembler Editor User's Manual Errata 2](attachments/Atari_Assembler_Editor_cartridge_manual_errata.pdf) ; size: 238 KB
 - [ATARI Assembler Editor Reference Card](attachments/ATARI_Assembler_Editor_Reference_Card.pdf)
