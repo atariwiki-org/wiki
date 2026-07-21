@@ -8,7 +8,7 @@ The Atari 8-bit machines were originally game consoles but switched to be home c
 
 Atari BASIC was ''very'' slow, much slower than BASIC running on other home computers that were (otherwise) slower than the Atari. This led to a profusion of new BASICs for the platform, perhaps unlike any other 8-bit machine of the era. The release of [Turbo-BASIC XL](Turbo-BASIC_XL/README.md) in 1985 was something like a bomb going off, largely replacing Atari BASIC wholescale. There was really nothing similar in the Commodore or Apple II markets, where there were lots of basics but most remained obscure.
 
-Development continues; [Altirra BASIC](Altirra_BASIC/README.md), [Basic++](BASIC_plus_plus/README.md) and [FastBasic](FastBASIC/README.md) were all written in the 2010s, and they will likely not be the last.
+Development continues; [Altirra BASIC](Altirra_BASIC/README.md), [BASIC++](BASIC_plus_plus/README.md) and [FastBasic](FastBASIC/README.md) were all written in the 2010s, and they will likely not be the last.
 
 ## Basic versions for Atari 8 bit computers in order of production year
 

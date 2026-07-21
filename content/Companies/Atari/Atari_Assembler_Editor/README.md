@@ -27,7 +27,7 @@ Assembler Editor - revision B cartridge test result
 __A binary compare of both cartridges did show, that there is much more different than that! Future investigations have to show, what else is different and how the user can profit of it.__
 
 __Revision C:__
-In the future all bugs shoud be collected and if they can be fixed, a revision C is thinkable. Of course, this requires the source code of the program, which we sadly do not have, nor a license for. Maybe there will be a good soul out there, who will give it to us in the future? At least, the [source code chapter](../Articles/README.md/#section-Articles-SourceCode) has shown, that there is always hope, unless we never give up. :-)
+In the future all bugs shoud be collected and if they can be fixed, a revision C is thinkable. Of course, this requires the source code of the program, which we sadly do not have, nor a license for. Maybe there will be a good soul out there, who will give it to us in the future? At least, the [source code chapter](../../../Articles/README.md#section-Articles-SourceCode) has shown, that there is always hope, unless we never give up. :-)
 
 __Revision D:__
 If we go far ahead of this, then even an interbreed with the [TURBO-BASIC XL source code](../TURBO-BASIC_XL/README.md#section-TURBO-BASIC+XL-SourceCode) is thinkable. In 1985 this was done for the Atari Basic cartridge by Frank Ostrowski and because many code routines are similar, there is a great chance to achieve this. Of course, even a renaming of the cartrige is possible, AtariWiki suggest to call it: 'Atari Turbo-Assembler Editor'. ;-)
