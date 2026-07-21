@@ -11,7 +11,7 @@ Much more notable, however, was Basic XL's FAST command. Atari BASIC was notorio
 
 Another notable feature of Basic XL was the AUTORUN system. This was a small runtime library that could be added to a disk with Basic XL programs, allowing them to run on machines that did not have the Basic XL system. This made it far more practical than A+. On top of this, Basic XL was shipped in the form of a 16k "supercartridge" that used bank switching so it only took up 8k of memory, making its bartprint the same as Atari BASIC, as opposed to A+'s much larger size.
 
-Basic XL was widely lauded in the press, and some stated it should be renamed Atari BASIC and built-into every machine. However, the release of [Turbo-BASIC XL](../TURBO-BASIC_XL|Turbo-BASIC_XL/README.md) a year later largely ended the market for Basic XL. A further expansion, [BASIC XE](../Basic_XE/README.md), never became very popular.
+Basic XL was widely lauded in the press, and some stated it should be renamed Atari BASIC and built into every machine. However, the release of [Turbo-BASIC XL](../../../Languages/BASIC/Turbo-BASIC_XL/README.md) a year later largely ended the market for Basic XL. A further expansion, [BASIC XE](../Basic_XE/README.md), never became very popular.
 
 ## CAR-Images:
 - [OSS Basic XL 1.02 cartridge](attachments/OSSBasicXL102.car)

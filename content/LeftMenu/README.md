@@ -14,8 +14,6 @@ Commented out for now
 ---
 [Memory_Map](../Memory_Map/README.md)  
 ---
-[Topic_list](../Topic_list/README.md)  
----
 [MicroUSB](../MicroUSB/README.md)  
 ---
 [All Changes](../AllNews/README.md)  

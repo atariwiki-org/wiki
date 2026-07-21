@@ -645,7 +645,7 @@ GRAPHICS 13:? #6;"A A A":? #6;"A A A":REM the second 3 "A"s are inverse video!
 ```
 ![](#attachments/GR13DEMO.png)
 ---
-see also: [Color topics](#Color_topics), [topic_list](#topic_list) 
+see also: [Color topics](#Color_topics)
 ### ABUFPT
 
 
@@ -1147,7 +1147,7 @@ next: [DLISTL](#DLISTL),[DLISTH](#DLISTL)
 
 
 ---
-see also: [topic_list](#topic_list), [4_color_character](#4_color_character), [CHBAS](#CHBAS) 
+see also: [4_color_character](#4_color_character), [CHBAS](#CHBAS) 
 ### CHBAS
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW OF||OS
@@ -1307,7 +1307,7 @@ Shadows [PCOLR0](#PCOLR0) [PCOLR1](#PCOLR1) [PCOLR2](#PCOLR2) [PCOLR3](#PCOLR3)
 
 
 ---
-see [topic_list](#topic_list), [Pm_topics](#Pm_topics) 
+see [Pm_topics](#Pm_topics) 
 ### COLPF0
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
@@ -1762,7 +1762,7 @@ Next: [SAVMSC](#SAVMSC)
 [HSCROL](#HSCROL), [VSCROL](#VSCROL) 
 
 ---
-see [topic_list](#topic_list), [VBI_Vertical_Blank_Interrupt](#VBI_Vertical_Blank_Interrupt) 
+see [VBI_Vertical_Blank_Interrupt](#VBI_Vertical_Blank_Interrupt) 
 ### DLISTL
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW REGISTERS
@@ -4190,7 +4190,7 @@ Note 1) RAM required includes RAM for Display List
 'Table of Modes and Screen Formats' taken from the Atari Basic Errata
 
 ---
-see [Color Topics](#Color_topics), [topic_list](#topic_list), [Display List Instruction Table](#Display_list_instruction_table) 
+see [Color Topics](#Color_topics), [Display List Instruction Table](#Display_list_instruction_table) 
 ### TEMP
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
