@@ -3,7 +3,7 @@
 Copyright (C) 1983 Optimized Systems Software, Inc. (OSS)
 
 ## Background
-The original [Atari BASIC](../../../Languages/BASIC/Atari_BASIC/README.md) was written at Shepardson Microsystems (SMI) shortly before the 8-bit machines were released. A short time later, Shepardson dissolved, and the Atari programmers re-formed as Optimized Systems Software (OSS), taking the source code to the Atari products with them. In 1981, they released [OSS_Basic_Aplus](../OSS_Basic_Aplus/README.md), based on the original Atari BASIC code but containing a number of bug fixes and a few expansions. This made it too large for the 8k ROM cartridges of the era, and A+ shipped only in disk form.
+The original [Atari BASIC](../../../Languages/BASIC/Atari_BASIC/README.md) was written at Shepardson Microsystems (SMI) shortly before the 8-bit machines were released. A short time later, Shepardson dissolved, and the Atari programmers re-formed as Optimized Systems Software (OSS), taking the source code to the Atari products with them. In 1981, they released [BASIC A+](../BASIC_Aplus/README.md), based on the original Atari BASIC code but containing a number of bug fixes and a few expansions. This made it too large for the 8k ROM cartridges of the era, and A+ shipped only in disk form.
 
 Basic XL was a further, but much larger, expansion on the Basic A+ model. As it was also based on the original source code, Basic XL remains a strict superset of Atari BASIC, and will run any Atari BASIC program without modification. In contrast to A+, however, XL added many new commands to work with player/missile graphics, simplified handling of joysticks and light pens, auto-generated line numbers and renumbering, and other extensions.
 
