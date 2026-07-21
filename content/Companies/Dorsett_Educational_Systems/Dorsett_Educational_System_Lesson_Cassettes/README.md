@@ -20,7 +20,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Dorsett Atari U.S. History HS](../Construction_OC/U.S._History_HS/README.md)
 - [Dorsett Atari Carpentry KC ; Copyright (C) 1983 Dorsett Educational Systems, Inc.](../Carpentry_KC/README.md)
 ### 2nd column
-- [Reading-Mathematics_MR](Reading-Mathematics_MR/README.md)
+- [Dorsett Atari Mathematics (Money Problems) MR](../Mathematics_MR/README.md)
 - [Dorsett Atari Mathematics (Decimals and Percents) MP](../Decimals_and_Percents_MP/README.md)
 - [Dorsett Atari English as a second language ESL 1-16](../English_as_a_second_language_ESL_1-16/README.md)
 - [Dorsett Atari Construction OC](../Construction_OC/README.md)

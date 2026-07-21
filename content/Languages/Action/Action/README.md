@@ -151,7 +151,7 @@ Thank you Alfred
 - [ATARI Rainbow Effect](../../../ATARI_Rainbow_effect/README.md)
 - [Access Sparta DOSCommand Line Parameters](../../../Access_SpartaDOS_commandline_parameters/README.md)
 - [Atari_Fuji_Logo_in_ACTION!](../Atari_Fuji_Logo_in_ACTION!/README.md)
-- [Atari Picture Mirror Tool](../../../Atari_Picture_Mirror_Tool/README.md)
+- [Atari Picture Mirror Tool](../Examples/Atari_Picture_Mirror_Tool/README.md)
 - [Atari_ST_Mouse_Driver_for_ACTION!](../Atari_ST_Mouse_Driver_for_ACTION!/README.md)
 - [BASIC_USR_Machine_Language_Call_Simulation_for_ACTION!](../BASIC_USR_Machine_Language_Call_Simulation_for_ACTION!/README.md)
 - [Backtrack_in_ACTION!](../Backtrack_in_ACTION!/README.md)

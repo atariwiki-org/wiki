@@ -1,4 +1,6 @@
-# Dorsett Atari Mathematics (Money Problems) MR ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+# Dorsett Atari Mathematics (Money Problems) MR
+
+Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
 - [Dorsett Atari Mathematics (Money Problems) MR](https://archive.org/details/DorsettAtariMathematicsMoneyProblems)

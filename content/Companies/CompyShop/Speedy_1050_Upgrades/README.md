@@ -14,7 +14,7 @@
 - [Speedy Read Sector example](Read_Sector_Example/README.md)
 - [Write Sector example](Write_Sector_Example/README.md)
 - [Get High Speed parameter](Get_High_Speed_parameter/README.md)
-- [Drive___Display_configuration](Drive___Display_configuration/README.md)
+- [Speedy 1050 Drive / Display Configuration Example](Drive_Display_configuration/README.md)
 - [Slow/Fast Konfiguration](Slow-Fast_configuration/README.md)
 - [Speedy 1050 Direct Jump example without automatic "C"omplete](Direct_Jump_into_code_without_automatic_complete/README.md)
 - [Speedy 1050 example - Direct Jump with automatic complete](Direct_Jump_into_code_with_automatic_complete/README.md)

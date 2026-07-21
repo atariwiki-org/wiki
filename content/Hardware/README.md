@@ -25,7 +25,7 @@
 - [Atari_800XL](../Atari_800XL/README.md)
 - [Atari_600XL](../Atari_600XL/README.md)
 - [Atari_130XE](../Atari_130XE/README.md)
-- [Atari_65XE](../Atari_65XE/README.md)
+- [Atari 65XE - MISSING](../Companies/Atari/Atari_65XE/README.md)
 - [Atari_800XE](../Atari_800XE/README.md)
 - [Atari_XEGS](../Atari_XEGS/README.md)
 
