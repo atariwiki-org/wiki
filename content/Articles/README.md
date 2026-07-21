@@ -567,7 +567,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 ## Disk Operating Systems (DOS)
 
 ### DOS Versions
-- [3_Sector_read_only_DOS](../People/Carsten_Strotmann/3_Sector_read_only_DOS/README.md)
+- [3SDOS - 3-Sector Read-Only DOS](../People/Carsten_Strotmann/3_Sector_read_only_DOS/README.md)
 - [Atari DOS 1](../Companies/Atari/Atari_DOS/Atari_DOS_1/README.md)
 - [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)
 - [Atari Dos 3](../Companies/Atari/Atari_DOS/Atari_DOS_3/README.md)
@@ -587,7 +587,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [DOS XL](../Companies/OSS/DOS_XL/README.md)
 - [SmartDOS](../SmartDOS/README.md)
 - [SpartaDOS Construction Set Manual](../SpartaDOS/Sparta_DOS_Construction_Set_Manual/README.md)
-- [SpartaDos X Review](../SpartaDOS/SpartaDosXReview/README.md)
+- [SpartaDos X Review](../SpartaDOS/SpartaDOS_X/SpartaDosXReview/README.md)
 - [SpartaDOS](../SpartaDOS/README.md)
 - [SuperDOS](../SuperDOS/README.md)
 - [TOP-DOS](../TOP-DOS/README.md)

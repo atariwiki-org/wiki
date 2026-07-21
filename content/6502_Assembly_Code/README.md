@@ -51,7 +51,7 @@
 - [A-LANG: WAYS TO IMPLEMENT COMPUTER LANGUAGES ON 6502s](../A-LANG_-_WAYS_TO_IMPLEMENT_COMPUTER_LANGUAGES_ON_6502s/README.md)
 - [Tricky Code that Always Skips](../Tricky_Code_that_Always_Skips/README.md)
 - [Self Modifying Code](../Self_Modifying_Code/README.md)
-- [SDX Hello World](../SpartaDOS/Sparta_DOS_X_Hello_World/README.md)
+- [SDX Hello World](../SpartaDOS/SpartaDOS_X/Sparta_DOS_X_Hello_World/README.md)
 - [Relocatable Jumps](../Relocatable_Jumps/README.md)
 - [Print Inline Strings](../Print_Inline_Strings/README.md)
 - [Mixed Mode Graphics](../Mixed_Mode_Graphics/README.md)

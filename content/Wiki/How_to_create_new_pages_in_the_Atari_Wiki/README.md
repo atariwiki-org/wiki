@@ -1,14 +1,12 @@
 # How to create new pages in the Atari Wiki
 
+TODO: This is outdated and refers to the JSP Wiki!!
+
 __ First, you need an account on the AtariWiki__
 
 __Still a working place, please stand by for more info in the future__
 
-Many tools are collected in this rtf file: [AtariWiki-Tools.rtf](attachments/AtariWiki-Tools.rtf) 
-
-
-- [TextFormattingRules](../TextFormattingRules/README.md)
-
+Many tools are collected in this RTF file: [AtariWiki-Tools.rtf](attachments/AtariWiki-Tools.rtf) 
 
 ![](attachments/Atari_Calculator.jpg)
 Calculator after a little calculation
@@ -21,62 +19,6 @@ ORG+$068B LDX #36
 ```
 
 - [Atari XF551](http://www.strotmann.de/~cas/Infothek/XF551formate/XF551Formate.pdf)
-
-# Wiki site
-
-%%tabbedSection
-%%tab-English
-by ...
-
-
-## Introduction
-
-
-/%
-%%tab-deutsch
-
-## Einleitung
-
-
-
-/%
-%%tab-français
-
-## Introduction
-
-
-/%
-%%tab-español
-
-## Introducción
-
-
-/%
-%%tab-italiano
-
-## Introduzione
-
-
-/%
-%%tab-Nederlands
-
-## Introductie
-
-
-/%
-%%tab-polski
-
-## Przedmowa
-
-
-/%
-%%tab-český
-
-## Zavedení
-
-
-/%
-/%
 
 
 
@@ -111,7 +53,7 @@ data.atariwiki.org/MOVIE
 
 ---
          = force a line break
-
+```
 [link](../link/README.md)     = create a hyperlink to an internal WikiPage called 'Link'.
 [this_is_also_a_link](../this_is_also_a_link/README.md) = create a hyperlink to an internal WikiPage called
 'ThisIsAlsoALink' but show the link as typed with spaces.
@@ -223,6 +165,7 @@ Um einen Codeblock darzustellen, setzt du diesen zu Beginn in dreifach geschweif
 Falls eckige Klammern ([]) in einer Seite erforderlich sind, ohne einen Link erzeugen zu wollen, müssen zwei einleitende klammern gesetzt werden. Der Text \[Beispiel Kein Link\] erscheint als [Beispiel_Kein_Link](../Beispiel_Kein_Link/README.md).
 
 
+
 ### BIN-Image
 - [Atari_Assembler_Editor.bin](attachments/Atari_Assembler_Editor.bin)
 
@@ -257,7 +200,7 @@ Calculator after a little calculation
 
 
 [linkheadline](../linkheadline/README.md) = create a hyperlink to an internal WikiPage called 'link' and use anchor 'headline'
-
+```
 
 ```
 ORG+$068B LDX #36
@@ -265,8 +208,6 @@ ORG+$068B LDX #36
           JMP 2777
 ```
 
-
-}}}
 
 ## RELGEN.ACT
 ```

@@ -22,15 +22,15 @@ In der Regel besteht das DOS aus zwei Teilen:
 ## Disk Operating Systems for the Atari:
 - [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md) of 1980
 - [Atari DOS 2.5 Source Code from OSS](../Companies/Atari/Atari_DOS/Atari_DOS_2.5_Source_Code/README.md) of 1984
-- [Atari_DOS_3](../[Atari_DOS_3]/README.md) of 1983
+- [Atari Dos 3](../Companies/Atari/Atari_DOS/Atari_DOS_3/README.md) of 1983
 - [Atari DOS 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md) also known as ANTIC Dos or QDOS of 1984
 - [BEWE DOS 1.30 Manual](../Companies/BEWESOFT/BEWE_DOS_1.30_Manual/README.md) of 1995
 - [MyDOS](MyDOS/README.md)
-- [OSS_Aplus](../[OS_Aplus]/README.md)
+- [OS/A+](../Companies/OSS/OS_Aplus/README.md)
 - [RealDOS](RealDOS/README.md)
 - [SpartaDOS](../SpartaDOS/README.md)
-- [SpartaDOS_X](../SpartaDOS_X/README.md)
-- [TTDOS](../TTDOS/README.md) also known as Turbo Tape DOS
+- [SpartDOS X](../SpartaDOS/SpartaDOS_X/README.md)
+- [Turbo Tape DOS - MISSING](TTDOS/README.md) also known as Turbo Tape DOS
 - [XDOS](../People/Stefan Dorndorf/XDOS_2.43/README.md) of 2009 by Stefan Dorndorf
 
 ## Game Disk Operating Systems for the Atari
@@ -38,6 +38,6 @@ In der Regel besteht das DOS aus zwei Teilen:
 - MicroDOS by Dennis Keathley
 - NanoDos (NDOS) by Stephan Baucke
 - MicroSpartaDos (MSDOS) by Pawel 'pirx' Kalinowski
-- [3_Sector_read_only_DOS](../People/Carsten_Strotmann/3_Sector_read_only_DOS/README.md) by Carsten Strotmann
+- [3SDOS - 3-Sector Read-Only DOS](../People/Carsten_Strotmann/3_Sector_read_only_DOS/README.md) by Carsten Strotmann
 ---
 see also [DOS-Topics](../DOS_topics/README.md) 

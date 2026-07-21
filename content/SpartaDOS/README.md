@@ -1,7 +1,5 @@
 # SpartaDOS
 
-
-
 SpartaDOS is a completely different command-line DOS modelled after MS-DOS, though it is perfectly capable of reading all Atari DOS and MyDOS disks. There are many versions available. Hopefully this list will help keep them all straight. SpartaDOS X is further developed via the [SpartaDOS X Upgrade Project](http://sdx.atari8.info/index.php) 
 
 __Hint: In emulators please choose: 'No PBI Expansion', otherwise SpartaDOS may not work correct.__
@@ -103,7 +101,7 @@ different source code. Several versions produced:
 
 ## References
 - [SpartaDOS X @ Wikipedia](https://en.wikipedia.org/wiki/SpartaDOS_X)
-- [SpartaDos X Review](SpartaDosXReview/README.md)
+- [SpartaDos X Review](SpartaDOS_X/SpartaDosXReview/README.md)
 
 # Deutsch
 

@@ -58,11 +58,11 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - [Action Manual](https://sourceforge.net/p/atari-action/code/ci/master/tree/JAC/doc/action-manual.pdf?format=raw) - The complete latest version of the manual in English. Created and updated by GoodByteXL. There is no better version worldwide! Thank you so much GoodByteXL. We are deep in your debt! :-)))
 - [Action Handbuch](https://sourceforge.net/p/atari-action/code/ci/master/tree/JAC/doc/action-manual-de.pdf?format=raw) - Das komplette, vollständige, restaurierte und überarbeitete Action Handbuch in Deutsch! Der totale Hammer, inkl. Editor, Monitor, Language, Compiler, Library, Run Time, Toolkit. Vollständig überarbeitete Version von GoodByteXL. So müssen PDF-Dateien aussehen, es gibt weltweit nichts vergleichbares. AtariWiki empfiehlt die PDF-Datei auf das Wärmste! Wer diese nicht lädt, ist selber schuld. Wir bedanken uns an dieser Stelle sehr, sehr herzlich bei GoodByteXL für seine lange andauernde und intensive Arbeit an diesem Werk, dass er hiermit der Atari-Gemeinschaft zur Verfügung stellt. GoodByteXL mega-Danke für Deine Arbeit, die Gemeinschaft steht tief in Deiner Schuld. :-)))
 - [The_ACTION!_Toolkit](../The_ACTION!_Toolkit/README.md)
-- [The_ACTION!_Run_Time_Package](../The_ACTION!_Run_Time_Package/README.md)
-- [ACTION!_Reference_Card](../ACTION!_Reference_Card/README.md)
-- [ACTION!_error_codes](../ACTION!_error_codes/README.md)
+- [The Action! Run Time Package](../The_ACTION_Run_Time_Package/README.md)
+- [ACTION! Reference Card](../ACTION_Reference_Card/README.md)
+- [ACTION! error codes](../ACTION_error_codes/README.md)
 - [Aktion mit Action!](../Articles/Aktion_mit_ACTION/README.md) - Report about the ACTION! Programming Language from the German Magazin "Happy Computer"
-- [Action!_Bugsheet_3](../Action!_Bugsheet_3/README.md)
+- [Action!_Bugsheet_3](../Action_Bugsheet_3/README.md)
 - [Fix_for_the_Bugs_in_divide_in_ACTION!](../Fix_for_the_Bugs_in_divide_in_ACTION!/README.md)
 - [Fix for PrintF Routine](../Fix_for_Bug_in_PrintF/README.md)
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
@@ -77,9 +77,9 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 
 ### Workshops
 
-- [Action!_Workshop_1](../Action!_Workshop_1/README.md) - 24. October 2010 "Unperfekthaus" in Essen
-- [Action!_Workshop_2](../Action!_Workshop_2/README.md) - 02. October 2011 "Unperfekthaus" in Essen
-- [Action!_Workshop_3](../Action!_Workshop_3/README.md) - 28. October 2012 "Unperfekthaus" in Essen
+- [Action! Workshop 1](../Action_Workshop/Action_Workshop_1/README.md) - 24. October 2010 "Unperfekthaus" in Essen
+- [Action! Workshop 2 October 2011](../Action_Workshop/Action_Workshop_2/README.md) - 02. October 2011 "Unperfekthaus" in Essen
+- [Action! Workshop October 2012](../Action_Workshop/Action_Workshop_3/README.md) - 28. October 2012 "Unperfekthaus" in Essen
 
 ## Versions
 
@@ -119,16 +119,16 @@ You can use it under SpartaDOS and DosXL with "D1:ACTIONED MYSRC.ACT" to direct 
 
 at this point AtariWiki must give the highest award possible:
 
-- [Action!_Source_Code](../Action!_Source_Code/README.md)
+- [Action!_Source_Code](../Action_Source_Code/README.md)
 Thank you so much Mr. Parker, we can't thank you enough for what you have done for us.
 
-![](attachments/Thank+you+Mr.+Parker.jpg)
+![](attachments/Thank_you_Mr._Parker.jpg)
 Thank you so much Mr. Parker
 
 - [Action! Editor Source Code](https://sourceforge.net/p/atari-action/code/ci/master/tree/ALFRED/EDITOR/)
 Thank you Alfred from AtariAge for extracting the editor source code for generations to come. We are deep in your debt.
 
-![](attachments/Thank+you+Alfred.jpg)
+![](attachments/Thank_you_Alfred.jpg)
 Thank you Alfred
 
 ### Functions
@@ -218,13 +218,13 @@ Thank you Alfred
 
 __As of 2020, just these two programs are still missing. They were published via OSS-BBS only! The number was: +1 (408) 438 - 6775. Any hint, any help is welcome at any time. We would really appreciate your help in that case.__
 
-![](attachments/Graphics+Utilities+Library+1.jpg)
+![](attachments/Graphics_Utilities_Library_1.jpg)
 Graphics Utilities Library for ACTION! screen 1
 
-![](attachments/Graphics+Utilities+Library+2.jpg)
+![](attachments/Graphics_Utilities_Library_2.jpg)
 Graphics Utilities Library for ACTION! screen 2
 
-![](attachments/Shape+Editor+and+Animator.jpg)
+![](attachments/Shape_Editor_and_Animator.jpg)
 Shape Editor and Animator for ACTION!
 
 ![](attachments/OSS-BBS_.jpg)
@@ -238,29 +238,29 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 
 ### Analog
 ||Title||Issue||Language||Comment
-|[Review_Action!](../Review_Action!/README.md)|#16 (02/ 84)|en|Review
-|[An_Introduction_to_ACTION!](../An_Introduction_to_ACTION!/README.md) |#17 + #18 (03+ 04/ 84)|en|Tutorial
+|[Action Review](../Review_Action/README.md)|#16 (02/ 84)|en|Review
+|[An Introduction to ACTION](../Articles/An_Introduction_to_ACTION/README.md) |#17 + #18 (03+ 04/ 84)|en|Tutorial
 |[Stars 3-D](../../../Stars_in_3D/README.md)|#20 (07/ 84)|en|Demo
 |[Bounce_in_ACTION!](../Bounce_in_ACTION!/README.md)|#20 (07/ 84)|en|Game
 |[Pulse_in_ACTION!](../Pulse_in_ACTION!/README.md)|#26 (01/ 85)|en|Demo
-|[More_Fun_with_Bounce!](../More_Fun_with_Bounce!/README.md)|#27 (02/ 85)|en|Game
+|[More Fun with Bounce](../Examples/More_Fun_with_Bounce/README.md)|#27 (02/ 85)|en|Game
 |[Demon Birds](../Examples/Demon_Birds/README.md)|#28 (03/ 85)|en|Game
 |[R.O.T.O.](../../../Roto/README.md)|#31 (06/ 85)|en|Game
 |[Color the shapes](../Examples/Color_the_shapes/README.md)|#32 (07/ 85)|en|game
-|[Getting_in_on_the_Action!_1](../Getting_in_on_the_Action!_1/README.md)|#32 (07/ 85)|en|Tutorial
-|[Getting_in_on_the_Action!_2](../Getting_in_on_the_Action!_2/README.md)|#35 (10/ 85)|en|Tutorial
+|[Getting_in_on_the_Action!_1](../Getting_in_on_the_Actio_1/README.md)|#32 (07/ 85)|en|Tutorial
+|[Getting in on the Action! - Part 2](../Articles/Getting_in_on_the_Action_2/README.md)|#35 (10/ 85)|en|Tutorial
 |[Sneak Attack](../Sneak_attack/README.md)|#36 (11/ 85)|en|Game
 |[Air Hockey](../Examples/Air_hockey/README.md)|#38 (01/ 86)|en|Game
 |[D:Check in ACTION!](../Examples/D-Check/README.md)|#44 (07/ 86)|en|Tool
 |[Trails](../Articles/Trails/README.md)|#50 (01/ 87)|en|Tool for using the KoalaPad in ACTION!
-|[ACTION!_Zero_Free](../ACTION!_Zero_Free/README.md)|#54 (05/ 87) |en|Tool
+|[Zero Free in ACTION!](../ACTION_Zero_Free/README.md)|#54 (05/ 87) |en|Tool
 
 ### Antic
 ||Title||Issue||Language||Comment
-|[Interrupts_in_ACTION!](../Interrupts_in_ACTION!/README.md)|Vol. 3 #3 (07/ 84)|en|
+|[Interrupts in ACTION!](../Examples/Interrupts_in_Action/README.md)|Vol. 3 #3 (07/ 84)|en|
 |[Demo: Pretty](../Articles/Demo_Pretty/README.md)|Vol. 3 #7 (11/ 84)|en|Demo from Antic I/O-Board
-|[SPLASH_in_ACTION!](../SPLASH_in_ACTION!/README.md)|Vol. 3 #12 (04/ 85)|en|Demo
-|[Game_AMAZING_in_ACTION!](../Game_AMAZING_in_ACTION!/README.md)|Vol. 4 #1  (05/ 85)|en|Game
+|[Splash in ACTION](../Examples/SPLASH_in_ACTION/README.md)|Vol. 3 #12 (04/ 85)|en|Demo
+|[Game AMAZING in ACTION](../Articles/Game_AMAZING_in_ACTION/README.md)|Vol. 4 #1  (05/ 85)|en|Game
 |[View 3D](../Examples/View_3D/README.md)|Vol. 4 #2 (06/ 85)|en|Tool
 |[DARK STAR](../Articles/Dark_Star/README.md)|Vol. 4 #3 (07/ 85)|en|Game: Zapping Aliens With Radioactive Waste
 |[Display Master](../Examples/Display_Master/README.md)|Vol. 4 #4 (08/ 85)|en|
@@ -273,10 +273,10 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 
 ### ATARI''magazin''
 ||Title||Issue||Language||Comment
-|[Schnelle_Vektoren_in_ACTION!](../Schnelle_Vektoren_in_ACTION!/README.md)|#1 (1-2/ 87)|de|Tutorial: Action!-Center Teil 1
-|[Schnelle_Umwege_in_ACTION!](../Schnelle_Umwege_in_ACTION!/README.md)|#2 (3-4/ 87)|de|Tutorial: Action!-Center Teil 2
+|[Schnelle Vektoren in ACTION!](../Examples/Schnelle_Vektoren_in_Action/README.md)|#1 (1-2/ 87)|de|Tutorial: Action!-Center Teil 1
+|[Schnelle Umwege in ACTION!](../Examples/Schnelle_Umwege_in_Action/README.md)|#2 (3-4/ 87)|de|Tutorial: Action!-Center Teil 2
 |[Interne_Variablen](../Interne_Variablen/README.md)|#3 (5-6/ 87)|de|Tutorial: Action!-Center Teil 3
-|[Was_ist_dran_an_Action!?](../Was_ist_dran_an_Action!?/README.md)|#4 (7-8/ 87)|de| Tutorial: Action!-Center Teil 4
+|[Was ist dran an Action!?](../Articles/Was_ist_dran_an_Action/README.md)|#4 (7-8/ 87)|de| Tutorial: Action!-Center Teil 4
 
 ### Atari Magazine
 ||Title||Issue||Language||Comment
@@ -285,4 +285,4 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 ### CK Computer Kontakt
 ||Title||Issue||Language||Comment
 |[Musik in ACTION!](../Examples/Musik_in_ACTION/README.md) |#10/85|ge| Tutorial
-|[ACTION!_noch_schneller](../ACTION!_noch_schneller/README.md) |#6-7/86|ge| Tutorial
+|[ACTION noch schneller](../Articles/ACTION_noch_schneller/README.md) |#6-7/86|ge| Tutorial
