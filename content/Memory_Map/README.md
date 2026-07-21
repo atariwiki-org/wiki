@@ -608,11 +608,11 @@
 The color of each pixel (4 in a line instead of the usual 8) depends on the bit combination of the byte in the character definition.
 
 ||Bit Pair||Color||Address dec||Address hex||comment
-|00|[COLOR4](#../COLOR4) BAK|712|$02C8|
-|01|[COLOR0](#../COLOR0) PF0|708|$02C4|
-|10|[COLOR1](#../COLOR1) PF1|709|$02C5|
-|11|[COLOR2](#../COLOR2) PF2|710|$02C6|if bit 7 of character code = 0
-|11|[COLOR3](#../COLOR3) PF3|711|$02C7|if bit 7 of character code = 1
+|00|[COLOR4](#COLOR4) BAK|712|$02C8|
+|01|[COLOR0](#COLOR0) PF0|708|$02C4|
+|10|[COLOR1](#COLOR1) PF1|709|$02C5|
+|11|[COLOR2](#COLOR2) PF2|710|$02C6|if bit 7 of character code = 0
+|11|[COLOR3](#COLOR3) PF3|711|$02C7|if bit 7 of character code = 1
 
 # Example
 character "A" (code=65) would be displayed as
@@ -645,7 +645,7 @@ GRAPHICS 13:? #6;"A A A":? #6;"A A A":REM the second 3 "A"s are inverse video!
 ```
 ![](#attachments/GR13DEMO.png)
 ---
-see also: [Color topics](#../Color_topics), [topic_list](#../topic_list) 
+see also: [Color topics](#Color_topics), [topic_list](#topic_list) 
 ### ABUFPT
 
 
@@ -659,9 +659,9 @@ Register für interne Testzwecke
 |100,101|$0064,$0065|ADRESS| | |All
 
 
-Ein temporärer Speicher, der vom Bildschirm-Handler genutzt wird. Hier ein Anwendungsbeispiel in [Action!](#../OS_Vectors) 
+Ein temporärer Speicher, der vom Bildschirm-Handler genutzt wird. Hier ein Anwendungsbeispiel in [Action!](#OS_Vectors) 
 
-Temporary storage locations for the screen handler. Here is an example in [Action!](#../OS_Vectors) 
+Temporary storage locations for the screen handler. Here is an example in [Action!](#OS_Vectors) 
 
 ```
 PROC JMP =$F2AD ()
@@ -689,7 +689,7 @@ Fällt diese Prüfung postiv aus, wird der Befehl ausgefürt, andernfalls wird i
 ---
 
 Siehe auch:
-*[MEMTOP](#../MEMTOP/README.md) - Adresse oberhalb derer die Bildschirmdaten und die Displaylist liegen können
+*[MEMTOP](#MEMTOP) - Adresse oberhalb derer die Bildschirmdaten und die Displaylist liegen können
 
 ### ATRACT
 
@@ -702,7 +702,7 @@ Joysticks alone will not reset location 77 to zero. You will have to add a POKE 
 
 See also:
 
-[DRKMSK](#../DRKMSK), [COLRSH](#../COLRSH) 
+[DRKMSK](#DRKMSK), [COLRSH](#COLRSH) 
 ### AUDC1
 
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
@@ -728,11 +728,11 @@ Volume from 0 to 15 (16 steps)
 
 ---
 
-see also: [Sound_Topics](#../Sound_Topics), [AUDCTL](#../AUDCTL), [STIMER](#../KBCODE) 
+see also: [Sound_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE) 
 
-previous: [AUDF1](#../AUDF1) 
+previous: [AUDF1](#AUDF1) 
 
-next: [AUDF2](#../AUDF2) 
+next: [AUDF2](#AUDF2) 
 ### AUDC2
 
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
@@ -758,11 +758,11 @@ Volume from 0 to 15 (16 steps)
 
 ---
 
-see also: [Sound_Topics](#../Sound_Topics), [AUDCTL](#../AUDCTL), [STIMER](#../KBCODE) 
+see also: [Sound_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE) 
 
-previous: [AUDF2](#../AUDF2) 
+previous: [AUDF2](#AUDF2) 
 
-next: [AUDF3](#../AUDF3) 
+next: [AUDF3](#AUDF3) 
 ### AUDC3
 
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
@@ -788,11 +788,11 @@ Volume from 0 to 15 (16 steps)
 
 ---
 
-see also: [Sound_Topics](#../Sound_Topics), [AUDCTL](#../AUDCTL), [STIMER](#../KBCODE) 
+see also: [Sound_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE) 
 
-previous: [AUDF3](#../AUDF3) 
+previous: [AUDF3](#AUDF3) 
 
-next: [AUDF4](#../AUDF4) 
+next: [AUDF4](#AUDF4) 
 ### AUDC4
 
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
@@ -818,11 +818,11 @@ Volume from 0 to 15 (16 steps)
 
 ---
 
-see also: [Sound_Topics](#../Sound_Topics), [AUDCTL](#../AUDCTL), [STIMER](#../KBCODE) 
+see also: [Sound_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE) 
 
-previous: [AUDF4](#../AUDF4) 
+previous: [AUDF4](#AUDF4) 
 
-next: [AUDCTL](#../AUDCTL) 
+next: [AUDCTL](#AUDCTL) 
 ### AUDCTL
 
 ||Read/Write||ADR||HEXADR||NAME||Description||OS
@@ -844,22 +844,22 @@ AUDCTL is the option byte which affects all sound channels. This bit assignment 
 # ALLPOT (Read)
 Shows if the readings of the pots are (already) valid.
 ||Bit||Paddle||Shadow||Register
-|0|Paddle 0| [PADDL0](#../PADDL0)| [POT0](#../POT0) 
-|1|Paddle 1| [PADDL1](#../PADDL1)| [POT1](#../POT1) 
-|2|Paddle 2| [PADDL2](#../PADDL2)| [POT2](#../POT2) 
-|3|Paddle 3| [PADDL3](#../PADDL3)| [POT3](#../POT3) 
-|4|Paddle 4| [PADDL4](#../PADDL4)| [POT4](#../POT4) 
-|5|Paddle 5| [PADDL5](#../PADDL5)| [POT5](#../POT5) 
-|6|Paddle 6| [PADDL6](#../PADDL6)| [POT6](#../POT6) 
-|7|Paddle 7| [PADDL7](#../PADDL7)| [POT7](#../POT7) 
-If a bit equals zero (0), then the register value for that pot (e.g. Bit 0 = [POT0](#../POT0)) is valid; if the Bit is one (1), then the value is not (yet) valid, because the reading/scan is not finished yet or there is no paddle connected.
+|0|Paddle 0| [PADDL0](#PADDL0)| [POT0](#POT0) 
+|1|Paddle 1| [PADDL1](#PADDL1)| [POT1](#POT1) 
+|2|Paddle 2| [PADDL2](#PADDL2)| [POT2](#POT2) 
+|3|Paddle 3| [PADDL3](#PADDL3)| [POT3](#POT3) 
+|4|Paddle 4| [PADDL4](#PADDL4)| [POT4](#POT4) 
+|5|Paddle 5| [PADDL5](#PADDL5)| [POT5](#POT5) 
+|6|Paddle 6| [PADDL6](#PADDL6)| [POT6](#POT6) 
+|7|Paddle 7| [PADDL7](#PADDL7)| [POT7](#POT7) 
+If a bit equals zero (0), then the register value for that pot (e.g. Bit 0 = [POT0](#POT0)) is valid; if the Bit is one (1), then the value is not (yet) valid, because the reading/scan is not finished yet or there is no paddle connected.
 
 ---
-see also: [Controller topics](#../Controller_topics), [POTGO](#../POTGO), [ALLPOT](#../ALLPOT), [SKCTL](#../SKCTL) 
+see also: [Controller topics](#Controller_topics), [POTGO](#POTGO), [ALLPOT](#ALLPOT), [SKCTL](#SKCTL) 
 
-previous: [AUDC4](#../AUDC4),[POT7](#../POT7) 
+previous: [AUDC4](#AUDC4),[POT7](#POT7) 
 
-next: [STIMER](#../KBCODE),[KBCODE](#../KBCODE) 
+next: [STIMER](#KBCODE),[KBCODE](#KBCODE) 
 ### AUDF1
 
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
@@ -890,14 +890,14 @@ For NTSC-ATARIs use the following values defining the respective notes (distorti
 
 
 
-Use [AUDC1](#../AUDC1) to set distortion and volume for channel 1.
+Use [AUDC1](#AUDC1) to set distortion and volume for channel 1.
 ---
 
-see also: [Sound_Topics](#../Sound_Topics), [AUDCTL](#../AUDCTL), [STIMER](#../KBCODE) 
+see also: [Sound_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE) 
 
-previous: [CONSOL](#../CONSOL) of GTIA
+previous: [CONSOL](#CONSOL) of GTIA
 
-next: [AUDC1](#../AUDC1) 
+next: [AUDC1](#AUDC1) 
 ### AUDF2
 
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
@@ -928,14 +928,14 @@ For NTSC-ATARIs use the following values defining the respective notes (distorti
 
 
 
-Use [AUDC2](#../AUDC2) to set distortion and volume for channel 2.
+Use [AUDC2](#AUDC2) to set distortion and volume for channel 2.
 ---
 
-see also: [Sound_Topics](#../Sound_Topics), [AUDCTL](#../AUDCTL), [STIMER](#../KBCODE) 
+see also: [Sound_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE) 
 
-previous: [AUDC1](#../AUDC1) 
+previous: [AUDC1](#AUDC1) 
 
-next: [AUDC2](#../AUDC2) 
+next: [AUDC2](#AUDC2) 
 ### AUDF3
 
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
@@ -966,14 +966,14 @@ For NTSC-ATARIs use the following values defining the respective notes (distorti
 
 
 
-Use [AUDC3](#../AUDC3) to set distortion and volume for channel 3.
+Use [AUDC3](#AUDC3) to set distortion and volume for channel 3.
 ---
 
-see also: [Sound_Topics](#../Sound_Topics), [AUDCTL](#../AUDCTL), [STIMER](#../KBCODE) 
+see also: [Sound_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE) 
 
-previous: [AUDC2](#../AUDC2) 
+previous: [AUDC2](#AUDC2) 
 
-next: [AUDC3](#../AUDC3) 
+next: [AUDC3](#AUDC3) 
 ### AUDF4
 
 ||Read/Write||ADR||HEXADR||NAME||Description||shadow||OS
@@ -1004,14 +1004,14 @@ For NTSC-ATARIs use the following values defining the respective notes (distorti
 
 
 
-Use [AUDC4](#../AUDC4) to set distortion and volume for channel 4.
+Use [AUDC4](#AUDC4) to set distortion and volume for channel 4.
 ---
 
-see also: [Sound_Topics](#../Sound_Topics), [AUDCTL](#../AUDCTL), [STIMER](#../KBCODE) 
+see also: [Sound_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE) 
 
-previous: [AUDC3](#../AUDC3) 
+previous: [AUDC3](#AUDC3) 
 
-next: [AUDC4](#../AUDC4) 
+next: [AUDC4](#AUDC4) 
 ### BOOT
 
 ||ADR||HEXADR||NAME||Description||OS
@@ -1028,7 +1028,7 @@ DISKBOOT setzt BIT 0, Kassette BIT 1
 
 17	$0011	BRKKEY
 
-Zero means the BREAK key is pressed; any other number means it's not. A BREAK during I/O returns 128 ($80). Monitored by both keyboard, display, cassette and screen handlers. See [POKMSK](#../POKMSK) location 16 ($A) for hints on disabling the BREAK key. The latest editions of OS provide for a proper vector for BREAK interrupts. The BREAK key abort status code is stored in [STATUS](#../STATUS) (48; $30).
+Zero means the BREAK key is pressed; any other number means it's not. A BREAK during I/O returns 128 ($80). Monitored by both keyboard, display, cassette and screen handlers. See [POKMSK](#POKMSK) location 16 ($A) for hints on disabling the BREAK key. The latest editions of OS provide for a proper vector for BREAK interrupts. The BREAK key abort status code is stored in [STATUS](#STATUS) (48; $30).
 
 It is also checked during all I/O and scroll/draw routines. During the keyboard handler routine, the status code is stored in DSTAT (76; $4C). BRKKEY is turned off at powerup. BREAK key abort status is flagged by setting BIT 7 of 53774 ($D20E). See the note on the BREAK key vector, above.
 ### BRKKY
@@ -1039,7 +1039,7 @@ It is also checked during all I/O and scroll/draw routines. During the keyboard 
 Break key interrupt vector. Only in OS "B" and later versions. Initialized to 59220 ($E754)
 
 see also:
-[POKMSK](#../POKMSK), [IRQEN](#../IRQEN) 
+[POKMSK](#POKMSK), [IRQEN](#IRQEN) 
 ### BUFADR
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -1065,7 +1065,7 @@ Die ersten sechs Byte eines Kasstten-Boot-Record werden wie folgt genutzt:
 |75|$004B|CASSBT|Cassette boot flag|none|A
 |1002|$03EA|CASSBT|Cassette boot flag|none|X
 
-The Atari attempts both a disk and a cassette boot simultaneously. Zero here means no cassette boot was successful. See location 9/$9 [BOOT](#../BOOT) 
+The Atari attempts both a disk and a cassette boot simultaneously. Zero here means no cassette boot was successful. See location 9/$9 [BOOT](#BOOT) 
 ### CH
 
 ||ADR||HEXADR||NAME||Description||OS
@@ -1073,7 +1073,7 @@ The Atari attempts both a disk and a cassette boot simultaneously. Zero here mea
 
 Enthält den internen Tastaturcode der gedrückten Taste. Manchmal hat der ATARI noch ein Zeichen im Speicher, welches vor längerer Zeit gedrückt wurde; möchte man dies verhindern, schreibt man $FF (255) in die Speicherzelle $02FC (764).
 
-The value $11 (or $51 or $91) for the HELP key does never appear in [CH](#../CH)! It does appear in [KBCODE](#../KBCODE) and is transferred from there to [HELPFG](#../HELPFG).
+The value $11 (or $51 or $91) for the HELP key does never appear in [CH](#CH)! It does appear in [KBCODE](#KBCODE) and is transferred from there to [HELPFG](#HELPFG).
 
 ## Hexadecimal Values
 || ||$00||$01||$02||$03||$04||$05||$06||$07||$08||$09||$0A||$0B||$0C||$0D||$0E||$0F
@@ -1101,29 +1101,29 @@ together with Shift Key: add 64 ($40)
 together with Control key: add 128 ($80)
 
 ---
-see also: [Keyboard topics](#../Keyboard_topics) [Console Keys](#../CONSOL) [HELP](#../HELPFG) 
+see also: [Keyboard topics](#Keyboard_topics) [Console Keys](#CONSOL) [HELP](#HELPFG) 
 ### CH1
 
 ||Adr||Hex||Name||Description||OS
 |754|$02F2|CH1|prior key pressed|all
 
-Prior keyboard character code (most recently read and accepted). This is the previous value passed from [CH](#../CH) (764/$2FC). If the value of the new key code equals the value in CH1, then the code is accepted only if a suitable key debounce delay has taken place since the prior value was accepted.
+Prior keyboard character code (most recently read and accepted). This is the previous value passed from [CH](#CH) (764/$2FC). If the value of the new key code equals the value in CH1, then the code is accepted only if a suitable key debounce delay has taken place since the prior value was accepted.
 
-see also: [Keyboard topics](#../Keyboard_topics), [CH](#../CH) 
+see also: [Keyboard topics](#Keyboard_topics), [CH](#CH) 
 ### CHACT
 
 ||R/W||Adr||Hex||Name||description||OS||Shadow of
-|R/W|755|$02F3|CHACT|Character display mode|all|[CHACTL](#../CHACTL) 54273/$D401
+|R/W|755|$02F3|CHACT|Character display mode|all|[CHACTL](#CHACTL) 54273/$D401
 
 Character Mode Register. Zero means normal inverse characters, one is blank inverse characters (inverse characters will be printed as blanks, i.e., invisible), two is normal characters, three is solid inverse characters. Four to seven is the same as zero to three, but prints the display upside down. This register also controls the transparency of the cursor. It is transparent with values two and six, opaque with values three and seven. The cursor is absent with values zero, one, four and five.
 
-See [CHACTL](#../CHACTL) for a table with explanations.
+See [CHACTL](#CHACTL) for a table with explanations.
 
-see also: [CRSINH](#../CRSINH), [ANTIC](#../ANTIC) 
+see also: [CRSINH](#CRSINH), [ANTIC](#ANTIC) 
 ### CHACTL
 
 ||R/W||Adr||Hex||Name||Description||OS||Shadow
-|W|54273|$D401|CHACTL|Cursor- und Zeichendarstellung|all|[CHACT](#../CHACT) 755/$2F3
+|W|54273|$D401|CHACTL|Cursor- und Zeichendarstellung|all|[CHACT](#CHACT) 755/$2F3
 
 ||Bit||Funktion
 |7|nichts
@@ -1135,11 +1135,11 @@ see also: [CRSINH](#../CRSINH), [ANTIC](#../ANTIC)
 |0|Inverse Zeichen werden undurchsichtig dargestellt
 
 ---
-see also: [CRSINH](#../CRSINH) 
+see also: [CRSINH](#CRSINH) 
 
-previous: [DMACTL](#../DMACTL) 
+previous: [DMACTL](#DMACTL) 
 
-next: [DLISTL](#../DLISTL),[DLISTH](#../DLISTL) 
+next: [DLISTL](#DLISTL),[DLISTH](#DLISTL) 
 ### Character_Sets
 
 # Character Sets
@@ -1147,11 +1147,11 @@ next: [DLISTL](#../DLISTL),[DLISTH](#../DLISTL)
 
 
 ---
-see also: [topic_list](#../topic_list), [4_color_character](#../4_color_character), [CHBAS](#../CHBAS) 
+see also: [topic_list](#topic_list), [4_color_character](#4_color_character), [CHBAS](#CHBAS) 
 ### CHBAS
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW OF||OS
-|756|$02F4|CHBAS|Zeichensatzadresse|224 ($E0)|[CHBASE](#../CHBASE) |all
+|756|$02F4|CHBAS|Zeichensatzadresse|224 ($E0)|[CHBASE](#CHBASE) |all
 
 Defaultwert: 224 ($E0) - Adresse des ROM-Zeichensatzes
 Internationaler Zeichensatz (X): 204 ($CC)
@@ -1163,20 +1163,20 @@ Durch Neuinitialisierung bzw. Änderung der Grafikstufe oder durch das Drücken 
 Die Zeichen sind nicht in der ATASCII-Reihenfolge, sondern in der „internen“ Reihenfolge im Zeichensatz abgespeichert.
 
 ---
-see also: [Character_Sets](#../Character_Sets), [topic_list](#../topic_list) 
+see also: [Character_Sets](#Character_Sets), [topic_list](#topic_list) 
 ### CHBASE
 
 ||DEC||HEX||NAME||SHADOW
-|54281|$D409|CHBASE|[CHBAS](#../CHBAS) 
+|54281|$D409|CHBASE|[CHBAS](#CHBAS) 
 
-Details see [CHBAS](#../CHBAS) 
+Details see [CHBAS](#CHBAS) 
 
 ---
-see also: [Character_Sets](#../Character_Sets) 
+see also: [Character_Sets](#Character_Sets) 
 
-previous: [PMBASE](#../PMBASE) 
+previous: [PMBASE](#PMBASE) 
 
-next: [WSYNC](#../WSYNC) 
+next: [WSYNC](#WSYNC) 
 ### CKEY
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -1187,13 +1187,13 @@ Checks to see if the START key is pressed and, if so, CKEY is set. Autoboot cass
 ### COLBK
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|53274|$D01A|COLBK|Background Color Register|0 ($00)|[COLOR4](#../COLOR4) |all
+|53274|$D01A|COLBK|Background Color Register|0 ($00)|[COLOR4](#COLOR4) |all
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 53273, $D019, [COLPF3](#../COLPF3), Color Register 3
+previous: 53273, $D019, [COLPF3](#COLPF3), Color Register 3
 
-next: 53275, $D01B, [PRIOR](#../PRIOR), PM Priority Selection Register
+next: 53275, $D01B, [PRIOR](#PRIOR), PM Priority Selection Register
 ### COLCRS
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -1201,229 +1201,229 @@ next: 53275, $D01B, [PRIOR](#../PRIOR), PM Priority Selection Register
 
 Current graphics or text mode cursor column; values range from zero to 319 (high byte, for screen mode eight) depending on current GRAPHICS mode (maximum numher of columns minus one). Location 86 will always be zero in modes zero through seven. Home position is 0,0 (upper left-hand corner). Columns run vertically from the top to the bottom down the TV screen, the leftmost column being number zero, the rightmost column the maximum value in that mode. The cursor has a complete top to bottom, left to right wraparound on the screen.
 
-[ROWCRS](#../ROWCRS) and [COLCRS](#../COLCRS) define the cursor location for the next element to be read from or written to in the main screen segment of the display. For the text window cursor, values in locations 656 to 667 ($290 to $29B) are exchanged with the current values in locations 84 to 95 ($54 to $5F), and location 123 ($7B) is set to 255 ($FF) to indicate the swap has taken place. [ROWCRS](#../ROWCRS) and [COLCRS](#../COLCRS) are also used in the DRAW and FILL functions to contain the values of the endpoint of the line being drawn. The color of the line is kept in location 763 ($2FB). These values are loaded into locations 96 to 98 ($60 to $62) so that [ROWCRS](#../ROWCRS) and [COLCRS](#../COLCRS) may be altered during the operation.
+[ROWCRS](#ROWCRS) and [COLCRS](#COLCRS) define the cursor location for the next element to be read from or written to in the main screen segment of the display. For the text window cursor, values in locations 656 to 667 ($290 to $29B) are exchanged with the current values in locations 84 to 95 ($54 to $5F), and location 123 ($7B) is set to 255 ($FF) to indicate the swap has taken place. [ROWCRS](#ROWCRS) and [COLCRS](#COLCRS) are also used in the DRAW and FILL functions to contain the values of the endpoint of the line being drawn. The color of the line is kept in location 763 ($2FB). These values are loaded into locations 96 to 98 ($60 to $62) so that [ROWCRS](#ROWCRS) and [COLCRS](#COLCRS) may be altered during the operation.
 
-Previous: [ROWCRS](#../ROWCRS) 
+Previous: [ROWCRS](#ROWCRS) 
 
-Next: [DINDEX](#../DINDEX) 
+Next: [DINDEX](#DINDEX) 
 ### COLINC
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |122|$007A|COLINC| |none|A
-The column increment or decrement value (plus or minus one). [ROWINC](#../ROWINC) and [COLINC](#../COLINC) control the direction of the line drawing routine. The values represent the signs derived from the value in [NEWROW](#../NEWROW) (location 96/$60) minus the value in [ROWCRS](#../ROWCRS) (location 84/$54) and the value in [NEWCOL](#../NEWCOL) (locations 97,98/$61,$62) minus the value in [COLCRS](#../COLCRS) (locations 85,86/$55,$56).
+The column increment or decrement value (plus or minus one). [ROWINC](#ROWINC) and [COLINC](#COLINC) control the direction of the line drawing routine. The values represent the signs derived from the value in [NEWROW](#NEWROW) (location 96/$60) minus the value in [ROWCRS](#ROWCRS) (location 84/$54) and the value in [NEWCOL](#NEWCOL) (locations 97,98/$61,$62) minus the value in [COLCRS](#COLCRS) (locations 85,86/$55,$56).
 ### COLOR0
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|708|$02C4|COLOR0|Color Register 0|40 ($28)|[COLPF0](#../COLPF0) |all
+|708|$02C4|COLOR0|Color Register 0|40 ($28)|[COLPF0](#COLPF0) |all
 
 Farbregister für Anzeigefeld 0.
 GR. 1 und 2 Farberegister für die Großbuchstaben.
 
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 707, $02C3, [PCOLR3](#../PCOLR3), Player/Missile 3 Color Register
+previous: 707, $02C3, [PCOLR3](#PCOLR3), Player/Missile 3 Color Register
 
-next: 709, $02C5, [COLOR1](#../COLOR1), Color Register 1
+next: 709, $02C5, [COLOR1](#COLOR1), Color Register 1
 ### COLOR1
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|709|$02C5|COLOR1|Color Register 1|202 ($CA)|[COLPF1](#../COLPF1) |all
+|709|$02C5|COLOR1|Color Register 1|202 ($CA)|[COLPF1](#COLPF1) |all
 
 Farbe für Anzeigefeld 1.
 GR. 1 und 2 Farbregister für die Kleinbuchstaben
 GR. 0 und 8 Regsiter für den Helligkeitswert für Buchstaben bzw. Punkte.
 
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 708, $02C4, [COLOR0](#../COLOR0), Color Register 0
+previous: 708, $02C4, [COLOR0](#COLOR0), Color Register 0
 
-next: 710, $02C6, [COLOR2](#../COLOR2), Color Register 2
+next: 710, $02C6, [COLOR2](#COLOR2), Color Register 2
 ### COLOR2
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|710|$02C6|COLOR2|Color Register 2|148 ($94)|[COLPF2](#../COLPF2) |all
+|710|$02C6|COLOR2|Color Register 2|148 ($94)|[COLPF2](#COLPF2) |all
 
 Farbe für Anzeigefeld 2.
 GR. 1 und 2 Farbregister für die inversen Großbuchstaben
 GR. 0 und 8 Register für die Hintergrundfarbe der Buchstaben bzw. Punkte.
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 709, $02C5, [COLOR1](#../COLOR1), Color Register 1
+previous: 709, $02C5, [COLOR1](#COLOR1), Color Register 1
 
-next: 711, $02C7, [COLOR3](#../COLOR3), Color Register 3
+next: 711, $02C7, [COLOR3](#COLOR3), Color Register 3
 ### COLOR3
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|711|$02C7|COLOR3|Color Register 3|70 ($46)|[COLPF3](#../COLPF3) |all
+|711|$02C7|COLOR3|Color Register 3|70 ($46)|[COLPF3](#COLPF3) |all
 Farbregister für Anzeigefeld 3.
 GR. 1 und 2: Farbwertregister für die inversen Kleinbuchstaben.
 
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 710, $02C6, [COLOR2](#../COLOR2), Color Register 2
+previous: 710, $02C6, [COLOR2](#COLOR2), Color Register 2
 
-next: 712, $02C8, [COLOR4](#../COLOR4), Color Register 4
+next: 712, $02C8, [COLOR4](#COLOR4), Color Register 4
 ### COLOR4
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|712|$02C8|COLOR4|Color Register 4|0 ($00)|[COLBK](#../COLBK) |all
+|712|$02C8|COLOR4|Color Register 4|0 ($00)|[COLBK](#COLBK) |all
 Register für die Hintergrundfarbe.
-In GR. 10 wird es zu einem normalen Farbregister (Hintergrundfrabe: [PCOLR0](#../PCOLR0))
+In GR. 10 wird es zu einem normalen Farbregister (Hintergrundfrabe: [PCOLR0](#PCOLR0))
 
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 711, $02C7, [COLOR3](#../COLOR3), Color Register 3
+previous: 711, $02C7, [COLOR3](#COLOR3), Color Register 3
 ### Color_topics
 
 # Color topics
 
-[Standard_colors](#../Standard_colors) 
+[Standard_colors](#Standard_colors) 
 
-[Color_names](#../Color_names) 
+[Color_names](#Color_names) 
 
-[4-color characters](#../4_color_character) 
+[4-color characters](#4_color_character) 
 
-[Table_of_Modes_and_Screen_Format](#../Table_of_Modes_and_Screen_Format) 
+[Table_of_Modes_and_Screen_Format](#Table_of_Modes_and_Screen_Format) 
 
-[Mode_Setcolor_Color_Table](#../Mode_Setcolor_Color_Table) 
+[Mode_Setcolor_Color_Table](#Mode_Setcolor_Color_Table) 
 
 ### Playfield/Character Colors
 
-Registers [COLPF0](#../COLPF0) [COLPF1](#../COLPF1) [COLPF2](#../COLPF2) [COLPF3](#../COLPF3) [COLBK](#../COLBK) 
+Registers [COLPF0](#COLPF0) [COLPF1](#COLPF1) [COLPF2](#COLPF2) [COLPF3](#COLPF3) [COLBK](#COLBK) 
 
-Shadows [COLOR0](#../COLOR0) [COLOR1](#../COLOR1) [COLOR2](#../COLOR2) [COLOR3](#../COLOR3) [COLOR4](#../COLOR4) 
+Shadows [COLOR0](#COLOR0) [COLOR1](#COLOR1) [COLOR2](#COLOR2) [COLOR3](#COLOR3) [COLOR4](#COLOR4) 
 
 
 ### Player/Missile Colors
 
-Registers [COLPM0](#../COLPM0) [COLPM1](#../COLPM1) [COLPM2](#../COLPM2) [COLPM3](#../COLPM3) 
+Registers [COLPM0](#COLPM0) [COLPM1](#COLPM1) [COLPM2](#COLPM2) [COLPM3](#COLPM3) 
 
-Shadows [PCOLR0](#../PCOLR0) [PCOLR1](#../PCOLR1) [PCOLR2](#../PCOLR2) [PCOLR3](#../PCOLR3) 
+Shadows [PCOLR0](#PCOLR0) [PCOLR1](#PCOLR1) [PCOLR2](#PCOLR2) [PCOLR3](#PCOLR3) 
 
 
 ---
-see [topic_list](#../topic_list), [Pm_topics](#../Pm_topics) 
+see [topic_list](#topic_list), [Pm_topics](#Pm_topics) 
 ### COLPF0
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|53270|$D016|COLPF0|Color Register 0|40 ($28)|[COLOR0](#../COLOR0) |all
+|53270|$D016|COLPF0|Color Register 0|40 ($28)|[COLOR0](#COLOR0) |all
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 53269, $D015, [COLPM3](#../COLPM3), Player/Missile 3 Color Register
+previous: 53269, $D015, [COLPM3](#COLPM3), Player/Missile 3 Color Register
 
-next: 53271, $D017, [COLPF1](#../COLPF1), Color Register 1
+next: 53271, $D017, [COLPF1](#COLPF1), Color Register 1
 ### COLPF1
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|53271|$D017|COLPF1|Color Register 1|202 ($CA)|[COLOR1](#../COLOR1) |all
+|53271|$D017|COLPF1|Color Register 1|202 ($CA)|[COLOR1](#COLOR1) |all
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 53270, $D016, [COLPF0](#../COLPF0), Color Register 0
+previous: 53270, $D016, [COLPF0](#COLPF0), Color Register 0
 
-next: 53272, $D018, [COLPF2](#../COLPF2), Color Register 2
+next: 53272, $D018, [COLPF2](#COLPF2), Color Register 2
 ### COLPF2
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|53272|$D018|COLPF2|Color Register 2|148 ($94)|[COLOR2](#../COLOR2) |all
+|53272|$D018|COLPF2|Color Register 2|148 ($94)|[COLOR2](#COLOR2) |all
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 53271, $D017, [COLPF1](#../COLPF1), Color Register 1
+previous: 53271, $D017, [COLPF1](#COLPF1), Color Register 1
 
-next: 53273, $D019, [COLPF3](#../COLPF3), Color Register 3
+next: 53273, $D019, [COLPF3](#COLPF3), Color Register 3
 ### COLPF3
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|53273|$D019|COLPF3|Color Register 3|70 ($46)|[COLOR3](#../COLOR3) |all
+|53273|$D019|COLPF3|Color Register 3|70 ($46)|[COLOR3](#COLOR3) |all
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 53272, $D018, [COLPF2](#../COLPF2), Color Register 2
+previous: 53272, $D018, [COLPF2](#COLPF2), Color Register 2
 
-next: 53274, $D01A, [COLBK](#../COLBK), Background Color Register
+next: 53274, $D01A, [COLBK](#COLBK), Background Color Register
 ### COLPM0
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|W|53266|$D012|COLPM0|Color of Player and Missile 0|0|[PCOLR0](#../PCOLR0)|all
-|R|53266|$D012|TRIG2|Trigger Joystick 2|n/a|[STRIG2](#../STRIG2)|all
+|W|53266|$D012|COLPM0|Color of Player and Missile 0|0|[PCOLR0](#PCOLR0)|all
+|R|53266|$D012|TRIG2|Trigger Joystick 2|n/a|[STRIG2](#STRIG2)|all
 
-Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1, ...) except when joined together as 5th player by setting Bit 4 of [PRIOR](#../PRIOR)/[GPRIOR](#../GPRIOR). Then they have the color of register 3 [COLOR3](#../COLOR3)/[COLPF3](#../COLPF3).
+Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1, ...) except when joined together as 5th player by setting Bit 4 of [PRIOR](#PRIOR)/[GPRIOR](#GPRIOR). Then they have the color of register 3 [COLOR3](#COLOR3)/[COLPF3](#COLPF3).
 
-TRIG2: only on 400 and 800 machines, else a copy of [STRIG0](#../STRIG0). 0 when trigger pressed, 1 when trigger released
+TRIG2: only on 400 and 800 machines, else a copy of [STRIG0](#STRIG0). 0 when trigger pressed, 1 when trigger released
 
 ---
-see also: [Color topics](#../Color_topics), [Controller topics](#../Controller_topics) 
+see also: [Color topics](#Color_topics), [Controller topics](#Controller_topics) 
 
-previous: 53265, $D011, [GRAFM](#../GRAFM), Graphics for Missiles
+previous: 53265, $D011, [GRAFM](#GRAFM), Graphics for Missiles
 
-next: 53267, $D013, [COLPM1](#../COLPM1), Color of Player and Missile 1
+next: 53267, $D013, [COLPM1](#COLPM1), Color of Player and Missile 1
 ### COLPM1
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|W|53267|$D013|COLPM1|Color of Player and Missile 1|0|[PCOLR1](#../PCOLR1)|all
-|R|53267|$D013|TRIG3|Joystick Trigger 3|n/a|[STRIG3](#../STRIG3)|all
+|W|53267|$D013|COLPM1|Color of Player and Missile 1|0|[PCOLR1](#PCOLR1)|all
+|R|53267|$D013|TRIG3|Joystick Trigger 3|n/a|[STRIG3](#STRIG3)|all
 
-Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1, ...) except when joined together as 5th player by setting Bit 4 of [PRIOR](#../PRIOR)/[GPRIOR](#../GPRIOR). Then they have the color of register 3 [COLOR3](#../COLOR3)/[COLPF3](#../COLPF3).
+Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1, ...) except when joined together as 5th player by setting Bit 4 of [PRIOR](#PRIOR)/[GPRIOR](#GPRIOR). Then they have the color of register 3 [COLOR3](#COLOR3)/[COLPF3](#COLPF3).
 
-TRIG3: only on 400 and 800 machines, else a copy of [STRIG1](#../STRIG1).
+TRIG3: only on 400 and 800 machines, else a copy of [STRIG1](#STRIG1).
 0 when trigger pressed, 1 when trigger released
 
 ---
-see also: [Color topics](#../Color_topics), [Controller topics](#../Controller_topics) 
+see also: [Color topics](#Color_topics), [Controller topics](#Controller_topics) 
 
-previous: 53266, $D012, [COLPM0](#../COLPM0), Color of Player and Missile 0
+previous: 53266, $D012, [COLPM0](#COLPM0), Color of Player and Missile 0
 
-next: 53268, $D014, [COLPM2](#../COLPM2), Color of Player and Missile 2 (W), [PAL](#../PAL) (R)
+next: 53268, $D014, [COLPM2](#COLPM2), Color of Player and Missile 2 (W), [PAL](#PAL) (R)
 ### COLPM2
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|W|53268|$D014|COLPM2|Color of Player and Missile 2|0|[PCOLR2](#../PCOLR2)|all
+|W|53268|$D014|COLPM2|Color of Player and Missile 2|0|[PCOLR2](#PCOLR2)|all
 |R|53268|$D014|PAL|Determine TV System|see below|none|all
 
-Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1, ...) except when joined together as 5th player by setting Bit 4 of [PRIOR](#../PRIOR)/[GPRIOR](#../GPRIOR). Then they have the color of register 3 [COLOR3](#../COLOR3)/[COLPF3](#../COLPF3).
+Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1, ...) except when joined together as 5th player by setting Bit 4 of [PRIOR](#PRIOR)/[GPRIOR](#GPRIOR). Then they have the color of register 3 [COLOR3](#COLOR3)/[COLPF3](#COLPF3).
 
 PAL (R) Used to determine if the Atari is PAL (European and Israeli TV compatible when BITs 1 - 3 equal zero) or NTSC (North American compatible when BITs 1 - 4 equal one; 14 decimal, $F). European Ataris run 12% slower if tied to the VBLANK cycle (the PAL VBLANK cycle is every 50th second rather than every 60th second). They use only one CPU clock at three MHZ, so the 6502 runs at 2.217 MHZ -- 25% faster than North American Ataris. Also, their $E000 and $F000 ROMs are different, so there are possible incompatibilities with North American Ataris in the cassette handling routines. There is a third TV standard called SECAM, used in France, the USSR, and parts of Africa. I am unaware if there is any Atari support for SECAM standards.
 PAL TV has more scan lines per frame, 312 compared to 262. NTSC Ataris compensate by adding extra lines at the beginning of the VBLANK routine. Display lists do not have to be altered, and colors are the same because of a hardware modification.
 
-See also: [PALNTS](#../PALNTS) 
+See also: [PALNTS](#PALNTS) 
 
 
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 53267, $D013, [COLPM1](#../COLPM1), Color of Player and Missile 1
+previous: 53267, $D013, [COLPM1](#COLPM1), Color of Player and Missile 1
 
-next: 53269, $D015, [COLPM3](#../COLPM3), Color of Player and Missile 3
+next: 53269, $D015, [COLPM3](#COLPM3), Color of Player and Missile 3
 ### COLPM3
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
-|53269|$D015|COLPM3|Color of Player and Missile 3|0|[PCOLR3](#../PCOLR3)|all
+|53269|$D015|COLPM3|Color of Player and Missile 3|0|[PCOLR3](#PCOLR3)|all
 
-Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1, ...) except when joined together as 5th player by setting Bit 4 of [PRIOR](#../PRIOR)/[GPRIOR](#../GPRIOR). Then they have the color of register 3 [COLOR3](#../COLOR3)/[COLPF3](#../COLPF3).
+Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1, ...) except when joined together as 5th player by setting Bit 4 of [PRIOR](#PRIOR)/[GPRIOR](#GPRIOR). Then they have the color of register 3 [COLOR3](#COLOR3)/[COLPF3](#COLPF3).
 
 ---
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 
-previous: 53268, $D014, [COLPM2](#../COLPM2), Color of Player and Missile 2
+previous: 53268, $D014, [COLPM2](#COLPM2), Color of Player and Missile 2
 
-next: 53270, $D016, [COLPF0](#../COLPF0), Color of Playfield 0
+next: 53270, $D016, [COLPF0](#COLPF0), Color of Playfield 0
 ### COLRSH
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |79|$004F|COLRSH|Color shift mask|none|All
 
-Attract color shifter; the color registers are EOR'd with locations 78 and 79 at the stage two VBLANK (see locations 18-20;$12-$14). When set to zero and location 78 equals 246, color luminance is reduced 50%. [COLRSH](#../COLRSH) contains the current value of location 19, therefore is given a new color value every 4.27 seconds.
+Attract color shifter; the color registers are EOR'd with locations 78 and 79 at the stage two VBLANK (see locations 18-20;$12-$14). When set to zero and location 78 equals 246, color luminance is reduced 50%. [COLRSH](#COLRSH) contains the current value of location 19, therefore is given a new color value every 4.27 seconds.
 
 See also:
 
-[ATRACT](#../ATRACT), [DRKMSK](#../DRKMSK) 
+[ATRACT](#ATRACT), [DRKMSK](#DRKMSK) 
 ### Connectors
 
 ### SIO-Connector
@@ -1464,9 +1464,9 @@ _________________________
 |3 Left|8 Ground
 |4 Right|9 Pot A
 |5 Pot B
-1-4 see [STICK0](#../STICK0)-[STICK3](#../STICK3), 3 also Paddle Trigger A see [PTRIG0](#../PTRIG0), 4 also Paddle Trigger B see [PTRIG1](#../PTRIG1) 
-5,9 see [PADDL0](#../PADDL0)-[PADDL7](#../PADDL7) 
-6 see [STRIG0](#../STRIG0)-[STRIG3](#../STRIG3),  also Light Pen Input, see [LPENV](#../LPENV), [LPENH](#../LPENH), (400 supports a light pen or light gun in port 4 only)
+1-4 see [STICK0](#STICK0)-[STICK3](#STICK3), 3 also Paddle Trigger A see [PTRIG0](#PTRIG0), 4 also Paddle Trigger B see [PTRIG1](#PTRIG1) 
+5,9 see [PADDL0](#PADDL0)-[PADDL7](#PADDL7) 
+6 see [STRIG0](#STRIG0)-[STRIG3](#STRIG3),  also Light Pen Input, see [LPENV](#LPENV), [LPENH](#LPENH), (400 supports a light pen or light gun in port 4 only)
 7 +5V
 
 ### Monitor Connector
@@ -1626,14 +1626,14 @@ with information from:
 - [http://www.faqs.org/faqs/atari-8-bit/faq/](http://www.faqs.org/faqs/atari-8-bit/faq/)
 - [http://www.hardwarebook.info/](http://www.hardwarebook.info/)
 ---
-see [topic_list](#../topic_list) 
+see [topic_list](#topic_list) 
 ### CONSOL
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||OS
 |read/write |53279 |$D01F|CONSOL|Console keys and internal speaker (400/800)|7|all
 
 ## Read
-Used to look up if any of the 3 console keys (START, SELECT, OPTION) has been pressed (RESET is not a console key, neither is [HELP](#../HELPFG))
+Used to look up if any of the 3 console keys (START, SELECT, OPTION) has been pressed (RESET is not a console key, neither is [HELP](#HELPFG))
 
 ```
 START    Bit 0    PEEK(53279)=6
@@ -1652,27 +1652,27 @@ In diesem Register kann der Status der drei folgenden Zusatztasten (OPTION, SELE
 Das Schreiben eines Wertes zwischen Null und Sieben in dieses Register erzeugt einen
 Klick über den Tastaturlautsprecher bzw., über den normalen Tonkanal (XL- und XE-Geräte).
 ---
-see also: [Keyboard topics](#../Keyboard_topics), [Sound_Topics](#../Sound_Topics) 
+see also: [Keyboard topics](#Keyboard_topics), [Sound_Topics](#Sound_Topics) 
 
-previous: [HITCLR](#../HITCLR) 
+previous: [HITCLR](#HITCLR) 
 
-next: [AUDF1](#../AUDF1),[POT0](#../POT0) of POKEY
+next: [AUDF1](#AUDF1),[POT0](#POT0) of POKEY
 ### content.txt
 ### Controller_topics
 
 # Controllers
 
-CX30 Paddles [PADDL0](#../PADDL0)-[PADDL7](#../PADDL7) [PTRIG0](#../PTRIG0)-[PTRIG7](#../PTRIG7) [POT0](#../POT0)-[POT7](#../POT7) [ALLPOT](#../ALLPOT) [POTGO](#../POTGO) [SKCTL](#../SKCTL) 
+CX30 Paddles [PADDL0](#PADDL0)-[PADDL7](#PADDL7) [PTRIG0](#PTRIG0)-[PTRIG7](#PTRIG7) [POT0](#POT0)-[POT7](#POT7) [ALLPOT](#ALLPOT) [POTGO](#POTGO) [SKCTL](#SKCTL) 
 
-CX40 Joysticks [STICK0](#../STICK0) [STICK1](#../STICK1) [STICK2](#../STICK2) [STICK3](#../STICK3) [STRIG0](#../STRIG0) [STRIG1](#../STRIG1) [STRIG2](#../STRIG2) [STRIG3](#../STRIG3) [PORTA](#../PORTA) [PORTB](#../PORTB) 
+CX40 Joysticks [STICK0](#STICK0) [STICK1](#STICK1) [STICK2](#STICK2) [STICK3](#STICK3) [STRIG0](#STRIG0) [STRIG1](#STRIG1) [STRIG2](#STRIG2) [STRIG3](#STRIG3) [PORTA](#PORTA) [PORTB](#PORTB) 
 
 CX20 Driving Controllers
 
 XG-1 Lightgun
 
-[CX70](#../Atari_CX70_Light_Pen) CX75 Lightpen
+[CX70](#Atari_CX70_Light_Pen) CX75 Lightpen
 
-[CX85](#../CX85_Keyboard_Handler) Numerical Keyboard
+[CX85](#CX85_Keyboard_Handler) Numerical Keyboard
 
 CX77 Touch Tablet
 
@@ -1682,17 +1682,17 @@ CX21 Video Touch Pad
 
 CX23 Kids Controllers
 
-CX80 CX22 [Trackball](#../Trackball) 
+CX80 CX22 [Trackball](#Trackball) 
 
 Koala Pad
 
-[MultiJoy8](#../How_to_query_the_MultiJoy_Interface) 
+[MultiJoy8](#How_to_query_the_MultiJoy_Interface) 
 
-[Latch Triggers](#../GRACTL) 
+[Latch Triggers](#GRACTL) 
 
-[PORTA](#../PORTA), [PORTB](#../PORTB), [PACTL](#../PACTL), [PBCTL](#../PBCTL) 
+[PORTA](#PORTA), [PORTB](#PORTB), [PACTL](#PACTL), [PBCTL](#PBCTL) 
 ---
-see [topic_list](#../topic_list) 
+see [topic_list](#topic_list) 
 ### CRETRY
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -1709,9 +1709,9 @@ Number of command retries.
 Critical I/O region flag; defines the current operation as a time- critical section when the value here is non-zero. Checked at the NMI process after the stage one VBLANK has been processed.
 
 POKEing any number other than zero here will disable the repeat action of the keys and change the sound of the CTRL-2 buzzer.
-Zero is normal; setting [CRITIC](#../CRITIC) to a non-zero value suspends a number of OS processes including system software timer counting (timers two, three, four and five; see locations 536 to 558; $218 to $22E).
+Zero is normal; setting [CRITIC](#CRITIC) to a non-zero value suspends a number of OS processes including system software timer counting (timers two, three, four and five; see locations 536 to 558; $218 to $22E).
 
-It is suggested that you do not set [CRITIC](#../CRITIC) for any length of time. When one timer is being set, [CRITIC](#../CRITIC) stops the other timers to do so, causing a tiny amount of time to be "lost". When [CRITIC](#../CRITIC) is zero, both stage one and stage two VBLANK procedures will be executed. When non-zero, only the stage one VBLANK will be processed.
+It is suggested that you do not set [CRITIC](#CRITIC) for any length of time. When one timer is being set, [CRITIC](#CRITIC) stops the other timers to do so, causing a tiny amount of time to be "lost". When [CRITIC](#CRITIC) is zero, both stage one and stage two VBLANK procedures will be executed. When non-zero, only the stage one VBLANK will be processed.
 ### CRSINH
 
 ||R/W||Adr||Hex||Name||Description||OS||default
@@ -1724,66 +1724,66 @@ It is suggested that you do not set [CRITIC](#../CRITIC) for any length of time.
 Erst nach einer Cursorbewegung wird die Änderung in diesem Registers wirksam.
 Das Drücken der Tasten BREAK oder RESET, die Änderung der Grafikstufe oder das Öffnen eines I/O-Kanals zum Bildschirm (S:) oder Editor (E:) stellt den Default-Wert wieder her - der Cursor wird wieder sichtbar.
 
-siehe auch: [CHACT](#../CHACT), [CHACTL](#../CHACTL) 
+siehe auch: [CHACT](#CHACT), [CHACTL](#CHACTL) 
 ### DINDEX
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |87|$0057|DINDEX|Display mode/current screen mode|none|All
 
-[DINDEX](#../DINDEX) contains the number obtained from the low order four bits of most recent open AUX1 byte. It can be used to barl the OS into thinking you are in a different GRAPHICS mode by POKEing DINDEX with a number from zero to 11.
+[DINDEX](#DINDEX) contains the number obtained from the low order four bits of most recent open AUX1 byte. It can be used to barl the OS into thinking you are in a different GRAPHICS mode by POKEing DINDEX with a number from zero to 11.
 
-Previous: [COLCRS](#../COLCRS) 
+Previous: [COLCRS](#COLCRS) 
 
-Next: [SAVMSC](#../SAVMSC) 
+Next: [SAVMSC](#SAVMSC) 
 ### Displaylist_topics
 
-[SDLSTL](#../SDLSTL), [SDLSTH](#../SDLSTL) Shadow register of pointer to display list
+[SDLSTL](#SDLSTL), [SDLSTH](#SDLSTL) Shadow register of pointer to display list
 
-[DLISTL](#../DLISTL), [DLISTH](#../DLISTL) Pointer to display list
+[DLISTL](#DLISTL), [DLISTH](#DLISTL) Pointer to display list
 
-[SDMCTL](#../SDMCTL) Direct Memory Access (DMA) Control
+[SDMCTL](#SDMCTL) Direct Memory Access (DMA) Control
 
-[VDSLST](#../VDSLST) Pointer to Display List Interrupt routine
+[VDSLST](#VDSLST) Pointer to Display List Interrupt routine
 
-[NMIEN](#../NMIEN) to enable the Display List Interrupt
+[NMIEN](#NMIEN) to enable the Display List Interrupt
 
-[NMIST](#../NMIST), [NMIRES](#../NMIST) to check the status of [NMIEN](#../NMIEN) 
+[NMIST](#NMIST), [NMIRES](#NMIST) to check the status of [NMIEN](#NMIEN) 
 
-[WSYNC](#../WSYNC) halts the CPU until end of scanline
+[WSYNC](#WSYNC) halts the CPU until end of scanline
 
-[VCOUNT](#../VCOUNT) Scanline counter
+[VCOUNT](#VCOUNT) Scanline counter
 
-[PENH](#../PENH), [PENV](#../PENV) horizontal and vertical position of the light pen
+[PENH](#PENH), [PENV](#PENV) horizontal and vertical position of the light pen
 
-[LPENH](#../PENH), [LPENV](#../PENV) shadow register of [PENH](#../PENH) and [PENV](#../PENV) 
+[LPENH](#PENH), [LPENV](#PENV) shadow register of [PENH](#PENH) and [PENV](#PENV) 
 
-[Display List Instruction table](#../display_list_instruction_table) 
+[Display List Instruction table](#display_list_instruction_table) 
 
-[HSCROL](#../HSCROL), [VSCROL](#../VSCROL) 
+[HSCROL](#HSCROL), [VSCROL](#VSCROL) 
 
 ---
-see [topic_list](#../topic_list), [VBI_Vertical_Blank_Interrupt](#../VBI_Vertical_Blank_Interrupt) 
+see [topic_list](#topic_list), [VBI_Vertical_Blank_Interrupt](#VBI_Vertical_Blank_Interrupt) 
 ### DLISTL
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW REGISTERS
-|read/write |54274,54275|$D402,$D403|DLISTL, DLISTH|Start Address of the Display List|both|[SDLSTL](#../SDLSTL), [SDLSTH](#../SDLSTL) 
+|read/write |54274,54275|$D402,$D403|DLISTL, DLISTH|Start Address of the Display List|both|[SDLSTL](#SDLSTL), [SDLSTH](#SDLSTL) 
 
-Attention: the display list can NOT cross a 1K-boundary unless you use a JMP instruction (1/$01) to cross the boundary (see [Display List Instruction table](#../display_list_instruction_table))
+Attention: the display list can NOT cross a 1K-boundary unless you use a JMP instruction (1/$01) to cross the boundary (see [Display List Instruction table](#display_list_instruction_table))
 
 ---
 
-see also: [Display List Topics](#../Displaylist_topics), [SDLSTL](#../SDLSTL), [SDLSTH](#../SDLSTL) 
+see also: [Display List Topics](#Displaylist_topics), [SDLSTL](#SDLSTL), [SDLSTH](#SDLSTL) 
 
-previous: [CHACTL](#../CHACTL) 
+previous: [CHACTL](#CHACTL) 
 
-next: [HSCROL](#../HSCROL) 
+next: [HSCROL](#HSCROL) 
 ### DMACTL
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW||DEFAULT
-|read/write|54272|$D400 |DMACTL|Direct Memory Access (DMA) Control|all|[SDMCTL](#../SDMCTL)|34/$22
+|read/write|54272|$D400 |DMACTL|Direct Memory Access (DMA) Control|all|[SDMCTL](#SDMCTL)|34/$22
 
 
-Diese Speicherzelle der Kontrolle des direkten Speicherzugriffs ("Direct Memory Access", [DMA](#../DMA)) des ANTIC auf den Speicher des Atari. Der 6502-Prozessor wird während des direkten Speicherzugriffs abgeschaltet. Durch die Abschaltung des DMA des [ANTIC](#../ANTIC) können Programme beschleunigt (ca. 30%) werden. Anhand folgender Aufstellung sieht man, wie die einzelnen Bits dieses Registers das Aussehen des Bildschirms kontrollieren:
+Diese Speicherzelle der Kontrolle des direkten Speicherzugriffs ("Direct Memory Access", [DMA](#DMA)) des ANTIC auf den Speicher des Atari. Der 6502-Prozessor wird während des direkten Speicherzugriffs abgeschaltet. Durch die Abschaltung des DMA des [ANTIC](#ANTIC) können Programme beschleunigt (ca. 30%) werden. Anhand folgender Aufstellung sieht man, wie die einzelnen Bits dieses Registers das Aussehen des Bildschirms kontrollieren:
 
 ||Bit||Dec||Hex||Function||Default
 |7   |    128 |    $80 |    not used|0
@@ -1800,11 +1800,11 @@ Diese Speicherzelle der Kontrolle des direkten Speicherzugriffs ("Direct Memory 
 Mit Bit fünf kann man also den gesamten direkten Speicherzugriff des ANTIC kontrollieren. Das Bit vier dient dem Umschalten zwischen einzeiliger P/M-Auflösung und zweizeiliger Auflösung. Die Angabe der Zeichenbreite für das Anzeigefeld bezieht sich auf die Grafikstufe Null. Die Anzahlen der Zeichen entsprechen 192, 160 oder 128 Farbpunkten. Insgesamt kann der ANTIC 238 Farbpunkte (einschließlich des Randes) darstellen, davon sind jedoch je nach Fernseher/Monitor nur ca. 174 sichtbar. Es sind deshalb beim Einschalten eines breiten Anzeigefeldes nicht alle 48 Zeichen vollständig sichtbar (bzw. das Bild geht über den Rand des Monitors hinaus).
 
 ---
-see also: [Player Missile Topics](#../Pm_topics) 
+see also: [Player Missile Topics](#Pm_topics) 
 
-previous: [PBCTL](#../PBCTL) of PIA
+previous: [PBCTL](#PBCTL) of PIA
 
-next: [CHACTL](#../CHACTL) 
+next: [CHACTL](#CHACTL) 
 ### DOSINI
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -1827,11 +1827,11 @@ DOS Einsprung-Vektor
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |78|$004E|DRKMSK|Dark attract mask|none|All
 
-Set to 254/$FE for normal brightness when the attract mode is inactive (see location 77/$4D [ATRACT](#../ATRACT)). Set to 246/$F6 when the attract mode is active to guarantee screen color luminance will not exceed 50%. Initialized to 254/$FE.
+Set to 254/$FE for normal brightness when the attract mode is inactive (see location 77/$4D [ATRACT](#ATRACT)). Set to 246/$F6 when the attract mode is active to guarantee screen color luminance will not exceed 50%. Initialized to 254/$FE.
 
 See also:
 
-[ATRACT](#../ATRACT), [COLRSH](#../COLRSH) 
+[ATRACT](#ATRACT), [COLRSH](#COLRSH) 
 ### DSKFMS
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -1856,7 +1856,7 @@ Display status and keyboard register used by the display handler. Also used to i
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |622|$026E|FINE|Fine scroll enable|none|X
 
-Fine-scroll enable for graphics mode 0 (text); POKE with 0 for coarse scrolling (the default) and 255 ($FF) for fine scrolling. Follow the POKE with GR.0 or an OPEN for device E:. Try listing a long program - it's slow and smooth! The display list for fine scrolling is one byte longer than for coarse scrolling. The OS places the address (64708; $FCC4) of a Display List Interrupt (DLI) at 512,513/$0200,$0201 [VDSLST](#../VDSLST), replacing any you might have placed there. The color register at 53271/$D017 [COLPF1](#../COLPF1) is altered for the last visible screen line.
+Fine-scroll enable for graphics mode 0 (text); POKE with 0 for coarse scrolling (the default) and 255 ($FF) for fine scrolling. Follow the POKE with GR.0 or an OPEN for device E:. Try listing a long program - it's slow and smooth! The display list for fine scrolling is one byte longer than for coarse scrolling. The OS places the address (64708; $FCC4) of a Display List Interrupt (DLI) at 512,513/$0200,$0201 [VDSLST](#VDSLST), replacing any you might have placed there. The color register at 53271/$D017 [COLPF1](#COLPF1) is altered for the last visible screen line.
 If you enable fine scrolling and go immediately to DOS, you'll see that it's still enabled when you do a copy to screen or disk directory.
 ### FR0
 
@@ -1875,7 +1875,7 @@ Floating point register one; holds a six-byte internal form of the FP number as 
 ### GPRIOR
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|623| $026F|GPRIOR|Priority Selection Register| [PRIOR](#../PRIOR) |all
+|623| $026F|GPRIOR|Priority Selection Register| [PRIOR](#PRIOR) |all
 
 ## Priority Settings
 ||Bit||Value||Description
@@ -1887,13 +1887,13 @@ Floating point register one; holds a six-byte internal form of the FP number as 
 |5|32|Overlapping Players have 3rd color
 |6|64|GTIA Mode see next table
 |7|128|GTIA Mode see next table
-P0-P3 Players [PCOLR0](#../PCOLR0).../[COLPM0](#../COLPM0)...
-PF0-PF3 Playfield colors [COLOR0](#../COLOR0).../[COLPF0](#../COLPF0)...
-BAK background or border color [COLOR4](#../COLOR4)/[COLBAK](#../COLBAK) 
+P0-P3 Players [PCOLR0](#PCOLR0).../[COLPM0](#COLPM0)...
+PF0-PF3 Playfield colors [COLOR0](#COLOR0).../[COLPF0](#COLPF0)...
+BAK background or border color [COLOR4](#COLOR4)/[COLBAK](#COLBAK) 
 
 A logical OR is done to the colors of players 0/1 and 2/3 when they overlap. Only the 0/1, 2/3 combinations are allowed; you will not get a third color when players 1 and 3 overlap, the priorities set with bits 0…3 are applied.
 
-If put together into a 5th player (set Bit 4 to '1') the missiles get the color of register 3 [COLOR3](#../COLOR3). They still move independently, e.g. set their horizontal positions with [HPOSM0](#../HPOSM0) - [HPOSM3](#../HPOSM3) 
+If put together into a 5th player (set Bit 4 to '1') the missiles get the color of register 3 [COLOR3](#COLOR3). They still move independently, e.g. set their horizontal positions with [HPOSM0](#HPOSM0) - [HPOSM3](#HPOSM3) 
 
 ## GTIA Modes
 This register can be used to select one of GTIA GRAPHICS modes 9, 10 and 11.
@@ -1904,11 +1904,11 @@ This register can be used to select one of GTIA GRAPHICS modes 9, 10 and 11.
 * the same as GRAPHICS x in BASIC
 ---
 
-see also: [Player Missile Topics](#../Pm_topics) 
+see also: [Player Missile Topics](#Pm_topics) 
 
-previous: [FINE](#../FINE) 
+previous: [FINE](#FINE) 
 
-next: [PADDL0](#../PADDL0) 
+next: [PADDL0](#PADDL0) 
 ### GRACTL
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -1926,27 +1926,27 @@ This is a write only register.
 |1 | Turn on players when =1
 |0 | Turn on missiles when =1
 
-Bit 0 and Bit 1 control players and missiles. Players and missiles are visible only when the respective bit is set to 1. [SDMCTL](#../SDMCTL) needs to be set accordingly also.
+Bit 0 and Bit 1 control players and missiles. Players and missiles are visible only when the respective bit is set to 1. [SDMCTL](#SDMCTL) needs to be set accordingly also.
 
 "Latch Triggers" means that triggers of sticks and paddles stay in "pressed state" once pressed. To reset this, set Bit 2 to 0. This is valid for all triggers and cannot be set for single triggers only.
 
 ---
 
-see also: [Player Missile Topics](#../Pm_topics), [Controller Topics](#../Controller_topics) 
+see also: [Player Missile Topics](#Pm_topics), [Controller Topics](#Controller_topics) 
 
-previous: [VDELAY](#../VDELAY) 
+previous: [VDELAY](#VDELAY) 
 
-next: [HITCLR](#../HITCLR) 
+next: [HITCLR](#HITCLR) 
 ### GRAFM
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||SHADOW||OS
-|Read |53265|$D011|TRIG1|Trigger 1|[STRIG1](#../STRIG1)|both
+|Read |53265|$D011|TRIG1|Trigger 1|[STRIG1](#STRIG1)|both
 |Write|53265|$D011|GRAFM|Graphics Shape for Missile 0-3| |both
 
 ### Read: Joystick Trigger 1 (645; $285)
 ||Button pressed | 0
 ||not pressed |1
-see also [GRACTL](#../GRACTL) 
+see also [GRACTL](#GRACTL) 
 ### Write
 ||Bit|| Missile Nr.
 |7,6| 3
@@ -1955,10 +1955,10 @@ see also [GRACTL](#../GRACTL)
 |1,0| 0
 
 ---
-see also:[Player Missile Topics](#../Pm_topics), [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also:[Player Missile Topics](#Pm_topics), [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
-previous: R: [TRIG0](#../GRAFP3), W: [GRAFP3](#../GRAFP3) 
-next: R: [TRIG2](#../COLPM0), W: [COLPM0](#../COLPM0) 
+previous: R: [TRIG0](#GRAFP3), W: [GRAFP3](#GRAFP3) 
+next: R: [TRIG2](#COLPM0), W: [COLPM0](#COLPM0) 
 ### GRAFP0
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -1970,11 +1970,11 @@ next: R: [TRIG2](#../COLPM0), W: [COLPM0](#../COLPM0)
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Player x=| | | |  |3| 2| 1| 0
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [SIZEM](#../SIZEM), [P0PL](#../SIZEM) 
+previous: [SIZEM](#SIZEM), [P0PL](#SIZEM) 
 
-next: [GRAFP1](#../GRAFP1), [P2PL](#../GRAFP1) 
+next: [GRAFP1](#GRAFP1), [P2PL](#GRAFP1) 
 ### GRAFP1
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -1986,11 +1986,11 @@ next: [GRAFP1](#../GRAFP1), [P2PL](#../GRAFP1)
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Player x=| | | |  |3| 2| 1| 0
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [GRAFP0](#../GRAFP0), [P1PL](#../GRAFP0) 
+previous: [GRAFP0](#GRAFP0), [P1PL](#GRAFP0) 
 
-next: [GRAFP2](#../GRAFP2), [P3PL](#../GRAFP2) 
+next: [GRAFP2](#GRAFP2), [P3PL](#GRAFP2) 
 ### GRAFP2
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2002,22 +2002,22 @@ next: [GRAFP2](#../GRAFP2), [P3PL](#../GRAFP2)
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Player x=| | | |  |3| 2| 1| 0
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [GRAFP1](#../GRAFP1), [P2PL](#../GRAFP1) 
+previous: [GRAFP1](#GRAFP1), [P2PL](#GRAFP1) 
 
-next: [GRAFP3](#../GRAFP3), [TRIG0](#../GRAFP3) 
+next: [GRAFP3](#GRAFP3), [TRIG0](#GRAFP3) 
 ### GRAFP3
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||SHADOW||OS
 |Write| 53264 |$D010|GRAFP3|Graphics Shape for Player 3| |both
-|Read| 53264 |$D010|TRIG0|Trigger 0|[STRIG0](#../STRIG0)|both
+|Read| 53264 |$D010|TRIG0|Trigger 0|[STRIG0](#STRIG0)|both
 
 ### Read: Joystick Trigger 0
 
 ||Button pressed | 0
 ||not pressed |1
-see also [GRACTL](#../GRACTL) 
+see also [GRACTL](#GRACTL) 
 ### Write: Graphics Shape for Player 3
 ||Bit|| Missile Nr.
 |7,6| 3
@@ -2026,17 +2026,17 @@ see also [GRACTL](#../GRACTL)
 |1,0| 0
 
 ---
-see also:[Player Missile Topics](#../Pm_topics), [Controller topics](#../Controller_topics) 
+see also:[Player Missile Topics](#Pm_topics), [Controller topics](#Controller_topics) 
 
-previous: [GRAFP2](#../GRAFP2), [P3PL](#../GRAFP2) 
+previous: [GRAFP2](#GRAFP2), [P3PL](#GRAFP2) 
 
-next: [GRAFM](#../GRAFM), [TRIG1](#../GRAFM) 
+next: [GRAFM](#GRAFM), [TRIG1](#GRAFM) 
 ### HELPFG
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |read/write |732|$02DC|HELPFG|Help key register|XL/XE
 
-The Help-Key is read from [KBCODE](#../KBCODE) and stored in HELPFG. There is no normal action when HELP is pressed. The programmer has to check HELPFG or KBCODE.
+The Help-Key is read from [KBCODE](#KBCODE) and stored in HELPFG. There is no normal action when HELP is pressed. The programmer has to check HELPFG or KBCODE.
 
 ## Bits
 ||Bit||Function
@@ -2053,7 +2053,7 @@ The Help-Key is read from [KBCODE](#../KBCODE) and stored in HELPFG. There is no
 |$91|145|CTRL HELP pressed
 
 ---
-see also: [Keyboard topics](#../Keyboard_topics) [Console Keys](#../CONSOL) 
+see also: [Keyboard topics](#Keyboard_topics) [Console Keys](#CONSOL) 
 ### HITCLR
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2062,16 +2062,16 @@ see also: [Keyboard topics](#../Keyboard_topics) [Console Keys](#../CONSOL)
 This is a write only register.
 Write any number into this register to clear all collision registers.
 ---
-see also: [Player Missile Topics](#../Pm_topics) 
+see also: [Player Missile Topics](#Pm_topics) 
 
-previous: [GRACTL](#../GRACTL) 
+previous: [GRACTL](#GRACTL) 
 
-next: [CONSOL](#../CONSOL) 
+next: [CONSOL](#CONSOL) 
 ### HOLD1
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |81|$0051|HOLD1| |none|all
-Same as location 80 [TEMP](#../TEMP). It is used also to hold the number of Display List entries.
+Same as location 80 [TEMP](#TEMP). It is used also to hold the number of Display List entries.
 ### HPOSM0
 
 %%tabbedSection
@@ -2081,12 +2081,12 @@ Same as location 80 [TEMP](#../TEMP). It is used also to hold the number of Disp
 |Read| 53252 |$D004|P0PF|player 0 collision with playfield|both
 
 ### Write: Horizontal position of missile 0
-Values from 0 to 255, missile is visible between 48 to 208 depending on playfield width (see [SDMCTL](#../SDMCTL)) and width of missile (see [SIZEM](#../SIZEM)/M0).
+Values from 0 to 255, missile is visible between 48 to 208 depending on playfield width (see [SDMCTL](#SDMCTL)) and width of missile (see [SIZEM](#SIZEM)/M0).
 ### Read: Player 0 collision with playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color register
+Playfield corresponds to [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) color register
 /%
 %%tab-deutsch
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2094,21 +2094,21 @@ Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color r
 |Read| 53252 |$D004|P0PF|Kollision Player 0 mit Playfield|both
 
 ### Write: Horizontale Position von Missile 0
-Werte von 0 bis 255 möglich, Missile sichtbar zwischen 48?? bis 208?? abhängig von der Spielfeldbreite (siehe [SDMCTL](#../SDMCTL)) und Breite des Missiles (siehe [SIZEM](#../SIZEM)/M0).
+Werte von 0 bis 255 möglich, Missile sichtbar zwischen 48?? bis 208?? abhängig von der Spielfeldbreite (siehe [SDMCTL](#SDMCTL)) und Breite des Missiles (siehe [SIZEM](#SIZEM)/M0).
 
 ### Read: Kollision Player 0 mit Playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield entspricht dem Farbregister [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) 
+Playfield entspricht dem Farbregister [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) 
 /%
 /%
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [HPOSP3](#../HPOSP3), [M3PF](#../HPOSP3) 
+previous: [HPOSP3](#HPOSP3), [M3PF](#HPOSP3) 
 
-next: [HPOSM1](#../HPOSM1), [P1PF](#../HPOSM1) 
+next: [HPOSM1](#HPOSM1), [P1PF](#HPOSM1) 
 ### HPOSM1
 
 %%tabbedSection
@@ -2118,12 +2118,12 @@ next: [HPOSM1](#../HPOSM1), [P1PF](#../HPOSM1)
 |Read| 53253 |$D005|P1PF|player 1 collision with playfield|both
 
 ### Write: Horizontal position of missile 1
-Values from 0 to 255, missile is visible between 48 to 208 depending on playfield width (see [SDMCTL](#../SDMCTL)) and width of missile (see [SIZEM](#../SIZEM)/M1).
+Values from 0 to 255, missile is visible between 48 to 208 depending on playfield width (see [SDMCTL](#SDMCTL)) and width of missile (see [SIZEM](#SIZEM)/M1).
 ### Read: Player 1 collision with playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color register
+Playfield corresponds to [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) color register
 /%
 %%tab-deutsch
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2131,21 +2131,21 @@ Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color r
 |Read| 53253 |$D005|P1PF|Kollision Player 1 mit Playfield|both
 
 ### Write: Horizontale Position von Missile 1
-Werte von 0 bis 255 möglich, Missile sichtbar zwischen 48?? bis 208?? abhängig von der Spielfeldbreite (siehe [SDMCTL](#../SDMCTL)) und Breite des Missiles (siehe [SIZEM](#../SIZEM)/M1).
+Werte von 0 bis 255 möglich, Missile sichtbar zwischen 48?? bis 208?? abhängig von der Spielfeldbreite (siehe [SDMCTL](#SDMCTL)) und Breite des Missiles (siehe [SIZEM](#SIZEM)/M1).
 
 ### Read: Kollision Player 1 mit Playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield entspricht dem Farbregister [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) 
+Playfield entspricht dem Farbregister [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) 
 /%
 /%
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [HPOSM0](#../HPOSM0), [P0PF](#../HPOSM0) 
+previous: [HPOSM0](#HPOSM0), [P0PF](#HPOSM0) 
 
-next: [HPOSM2](#../HPOSM2), [P2PF](#../HPOSM2) 
+next: [HPOSM2](#HPOSM2), [P2PF](#HPOSM2) 
 ### HPOSM2
 
 %%tabbedSection
@@ -2155,12 +2155,12 @@ next: [HPOSM2](#../HPOSM2), [P2PF](#../HPOSM2)
 |Read| 53254 |$D006|P2PF|player 2 collision with playfield|both
 
 ### Write: Horizontal position of missile 2
-Values from 0 to 255, missile is visible between 48 to 208 depending on playfield width (see [SDMCTL](#../SDMCTL)) and width of missile (see [SIZEM](#../SIZEM)/M2).
+Values from 0 to 255, missile is visible between 48 to 208 depending on playfield width (see [SDMCTL](#SDMCTL)) and width of missile (see [SIZEM](#SIZEM)/M2).
 ### Read: Player 2 collision with playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color register
+Playfield corresponds to [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) color register
 /%
 %%tab-deutsch
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2168,21 +2168,21 @@ Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color r
 |Read| 53254 |$D006|P2PF|Kollision Player 2 mit Playfield|both
 
 ### Write: Horizontale Position von Missile 2
-Werte von 0 bis 255 möglich, Missile sichtbar zwischen 48?? bis 208?? abhängig von der Spielfeldbreite (siehe [SDMCTL](#../SDMCTL)) und Breite des Missiles (siehe [SIZEM](#../SIZEM)/M2).
+Werte von 0 bis 255 möglich, Missile sichtbar zwischen 48?? bis 208?? abhängig von der Spielfeldbreite (siehe [SDMCTL](#SDMCTL)) und Breite des Missiles (siehe [SIZEM](#SIZEM)/M2).
 
 ### Read: Kollision Player 2 mit Playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield entspricht dem Farbregister [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) 
+Playfield entspricht dem Farbregister [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) 
 /%
 /%
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [HPOSM1](#../HPOSM1), [P1PF](#../HPOSM1) 
+previous: [HPOSM1](#HPOSM1), [P1PF](#HPOSM1) 
 
-next: [HPOSM3](#../HPOSM3), [P3PF](#../HPOSM3) 
+next: [HPOSM3](#HPOSM3), [P3PF](#HPOSM3) 
 ### HPOSM3
 
 %%tabbedSection
@@ -2192,12 +2192,12 @@ next: [HPOSM3](#../HPOSM3), [P3PF](#../HPOSM3)
 |Read| 53255 |$D007|P3PF|player 3 collision with playfield|both
 
 ### Write: Horizontal position of missile 3
-Values from 0 to 255, missile is visible between 48 to 208 depending on playfield width (see [SDMCTL](#../SDMCTL)) and width of missile (see [SIZEM](#../SIZEM)/M3).
+Values from 0 to 255, missile is visible between 48 to 208 depending on playfield width (see [SDMCTL](#SDMCTL)) and width of missile (see [SIZEM](#SIZEM)/M3).
 ### Read: Player 3 collision with playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color register
+Playfield corresponds to [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) color register
 /%
 %%tab-deutsch
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2205,21 +2205,21 @@ Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color r
 |Read| 53255 |$D007|P3PF|Kollision Player 3 mit Playfield|both
 
 ### Write: Horizontale Position von Missile 3
-Werte von 0 bis 255 möglich, Missile sichtbar zwischen 48?? bis 208?? abhängig von der Spielfeldbreite (siehe [SDMCTL](#../SDMCTL)) und Breite des Missiles (siehe [SIZEM](#../SIZEM)/M3).
+Werte von 0 bis 255 möglich, Missile sichtbar zwischen 48?? bis 208?? abhängig von der Spielfeldbreite (siehe [SDMCTL](#SDMCTL)) und Breite des Missiles (siehe [SIZEM](#SIZEM)/M3).
 
 ### Read: Kollision Player 3 mit Playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield entspricht dem Farbregister [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) 
+Playfield entspricht dem Farbregister [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) 
 /%
 /%
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [HPOSM2](#../HPOSM2), [P2PF](#../HPOSM2) 
+previous: [HPOSM2](#HPOSM2), [P2PF](#HPOSM2) 
 
-next: [SIZEP0](#../SIZEP0), [M0PL](#../SIZEP0) 
+next: [SIZEP0](#SIZEP0), [M0PL](#SIZEP0) 
 ### HPOSP0
 
 %%tabbedSection
@@ -2229,12 +2229,12 @@ next: [SIZEP0](#../SIZEP0), [M0PL](#../SIZEP0)
 |Read| 53248 |$D000|M0PF|missile 0 collision with playfield|both
 
 ### Write: Horizontal position of player 0
-Values from 0 to 255, player is visible between 48 to 208 depending on playfield width (see [SDMCTL](#../SDMCTL)) and width of player (see [SIZEP0](#../SIZEP0)).
+Values from 0 to 255, player is visible between 48 to 208 depending on playfield width (see [SDMCTL](#SDMCTL)) and width of player (see [SIZEP0](#SIZEP0)).
 ### Read: Missile 0 collision with playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color register
+Playfield corresponds to [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) color register
 /%
 %%tab-deutsch
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2242,21 +2242,21 @@ Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color r
 |Read| 53248 |$D000|M0PF|Kollision Missile 0 mit Playfield|both
 
 ### Write: Horizontale Position von Player 0
-Werte von 0 bis 255 möglich, Player sichtbar zwischen 48 bis 208 abhängig von der Spielfeldbreite (siehe [SDMCTL](#../SDMCTL)) und Breite des Players (siehe [SIZEP0](#../SIZEP0)).
+Werte von 0 bis 255 möglich, Player sichtbar zwischen 48 bis 208 abhängig von der Spielfeldbreite (siehe [SDMCTL](#SDMCTL)) und Breite des Players (siehe [SIZEP0](#SIZEP0)).
 
 ### Read: Kollision Missile 0 mit Playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield entspricht dem Farbregister [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) 
+Playfield entspricht dem Farbregister [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) 
 /%
 /%
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
 previous: none
 
-next: [HPOSP1](#../HPOSP1), [M1PF](#../HPOSP1) 
+next: [HPOSP1](#HPOSP1), [M1PF](#HPOSP1) 
 ### HPOSP1
 
 %%tabbedSection
@@ -2266,12 +2266,12 @@ next: [HPOSP1](#../HPOSP1), [M1PF](#../HPOSP1)
 |Read| 53249 |$D001|M1PF|missile 1 collision with playfield|both
 
 ### Write: Horizontal position of player 1
-Values from 0 to 255, player is visible between 48 to 208 depending on playfield width (see [SDMCTL](#../SDMCTL)) and width of player (see [SIZEP1](#../SIZEP1)).
+Values from 0 to 255, player is visible between 48 to 208 depending on playfield width (see [SDMCTL](#SDMCTL)) and width of player (see [SIZEP1](#SIZEP1)).
 ### Read: Missile 1 collision with playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color register
+Playfield corresponds to [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) color register
 /%
 %%tab-deutsch
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2279,21 +2279,21 @@ Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color r
 |Read| 53249 |$D001|M1PF|Kollision Missile 1 mit Playfield|both
 
 ### Write: Horizontale Position von Player 1
-Werte von 0 bis 255 möglich, Player sichtbar zwischen 48 bis 208 abhängig von der Spielfeldbreite (siehe [SDMCTL](#../SDMCTL)) und Breite des Players (siehe [SIZEP1](#../SIZEP1)).
+Werte von 0 bis 255 möglich, Player sichtbar zwischen 48 bis 208 abhängig von der Spielfeldbreite (siehe [SDMCTL](#SDMCTL)) und Breite des Players (siehe [SIZEP1](#SIZEP1)).
 
 ### Read: Kollision Missile 1 mit Playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield entspricht dem Farbregister [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) 
+Playfield entspricht dem Farbregister [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) 
 /%
 /%
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [HPOSP0](#../HPOSP0), [M0PF](#../HPOSP0) 
+previous: [HPOSP0](#HPOSP0), [M0PF](#HPOSP0) 
 
-next: [HPOSP2](#../HPOSP2), [M2PF](#../HPOSP2) 
+next: [HPOSP2](#HPOSP2), [M2PF](#HPOSP2) 
 ### HPOSP2
 
 %%tabbedSection
@@ -2303,12 +2303,12 @@ next: [HPOSP2](#../HPOSP2), [M2PF](#../HPOSP2)
 |Read| 53250 |$D002|M2PF|missile 2 collision with playfield|both
 
 ### Write: Horizontal position of player 2
-Values from 0 to 255, player is visible between 48 to 208 depending on playfield width (see [SDMCTL](#../SDMCTL)) and width of player (see [SIZEP2](#../SIZEP2)).
+Values from 0 to 255, player is visible between 48 to 208 depending on playfield width (see [SDMCTL](#SDMCTL)) and width of player (see [SIZEP2](#SIZEP2)).
 ### Read: Missile 2 collision with playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color register
+Playfield corresponds to [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) color register
 /%
 %%tab-deutsch
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2316,21 +2316,21 @@ Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color r
 |Read| 53250 |$D002|M2PF|Kollision Missile 2 mit Playfield|both
 
 ### Write: Horizontale Position von Player 2
-Werte von 0 bis 255 möglich, Player sichtbar zwischen 48 bis 208 abhängig von der Spielfeldbreite (siehe [SDMCTL](#../SDMCTL)) und Breite des Players (siehe [SIZEP2](#../SIZEP2)).
+Werte von 0 bis 255 möglich, Player sichtbar zwischen 48 bis 208 abhängig von der Spielfeldbreite (siehe [SDMCTL](#SDMCTL)) und Breite des Players (siehe [SIZEP2](#SIZEP2)).
 
 ### Read: Kollision Missile 2 mit Playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield entspricht dem Farbregister [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) 
+Playfield entspricht dem Farbregister [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) 
 /%
 /%
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [HPOSP1](#../HPOSP1), [M1PF](#../HPOSP1) 
+previous: [HPOSP1](#HPOSP1), [M1PF](#HPOSP1) 
 
-next: [HPOSP3](#../HPOSP3), [M3PF](#../HPOSP3) 
+next: [HPOSP3](#HPOSP3), [M3PF](#HPOSP3) 
 ### HPOSP3
 
 %%tabbedSection
@@ -2340,12 +2340,12 @@ next: [HPOSP3](#../HPOSP3), [M3PF](#../HPOSP3)
 |Read| 53251 |$D003|M3PF|missile 3 collision with playfield|both
 
 ### Write: Horizontal position of player 3
-Values from 0 to 255, player is visible between 48 to 208 depending on playfield width (see [SDMCTL](#../SDMCTL)) and width of player (see [SIZEP3](#../SIZEP3)).
+Values from 0 to 255, player is visible between 48 to 208 depending on playfield width (see [SDMCTL](#SDMCTL)) and width of player (see [SIZEP3](#SIZEP3)).
 ### Read: Missile 3 collision with playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color register
+Playfield corresponds to [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) color register
 /%
 %%tab-deutsch
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2353,21 +2353,21 @@ Playfield corresponds to [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) color r
 |Read| 53251 |$D003|M3PF|Kollision Missile 3 mit Playfield|both
 
 ### Write: Horizontale Position von Player 3
-Werte von 0 bis 255 möglich, Player sichtbar zwischen 48 bis 208 abhängig von der Spielfeldbreite (siehe [SDMCTL](#../SDMCTL)) und Breite des Players (siehe [SIZEP3](#../SIZEP3)).
+Werte von 0 bis 255 möglich, Player sichtbar zwischen 48 bis 208 abhängig von der Spielfeldbreite (siehe [SDMCTL](#SDMCTL)) und Breite des Players (siehe [SIZEP3](#SIZEP3)).
 
 ### Read: Kollision Missile 3 mit Playfield
 
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Playfield| | | |  |3| 2| 1| 0
-Playfield entspricht dem Farbregister [COLOR0](#../COLOR0), ..., [COLOR3](#../COLOR3) 
+Playfield entspricht dem Farbregister [COLOR0](#COLOR0), ..., [COLOR3](#COLOR3) 
 /%
 /%
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [HPOSP2](#../HPOSP2), [M2PF](#../HPOSP2) 
+previous: [HPOSP2](#HPOSP2), [M2PF](#HPOSP2) 
 
-next: [HPOSM0](#../HPOSM0), [P0PF](#../HPOSM0) 
+next: [HPOSM0](#HPOSM0), [P0PF](#HPOSM0) 
 ### HSCROL
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2397,11 +2397,11 @@ This register should not be altered while ANTIC is drawing the screen. It has to
 |$0F|8| |Graphics Mode 8, 192 rows
 
 ---
-see also: [Display List topics](#../Displaylist_topics) 
+see also: [Display List topics](#Displaylist_topics) 
 
-previous: [DLISTL](#../DLISTL),[DLISTH](#../DLISTL) 
+previous: [DLISTL](#DLISTL),[DLISTH](#DLISTL) 
 
-next: [VSCROL](#../VSCROL) 
+next: [VSCROL](#VSCROL) 
 ### ICCOMT
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -2445,21 +2445,21 @@ Status der letzten IOCB-Aktion
 
 Initialization address read from the disk. An autoboot file must load an address value into either RUNAD above or INITAD. The code pointed to by INITAD will be run as soon as that location is loaded. The code pointed to by RUNAD will be executed only after the entire load process has been completed. To return control to DOS after the execution of your program, end your code with an RTS instruction.
 
-see also: [RUNAD](#../RUNAD) 
+see also: [RUNAD](#RUNAD) 
 ### Interrupts
 
-[VBI_Vertical_Blank_Interrupt](#../VBI_Vertical_Blank_Interrupt) 
+[VBI_Vertical_Blank_Interrupt](#VBI_Vertical_Blank_Interrupt) 
 
-[DLI Display List Interrupt](#../Displaylist_topics) 
+[DLI Display List Interrupt](#Displaylist_topics) 
 
 
 ---
-see [topic_list](#../topic_list) 
+see [topic_list](#topic_list) 
 ### IRQEN
 
 ||r/w||ADR||HEXADR||NAME||Description||Shadow||OS
-|write|53774|$D20E|IRQEN|[POKMSK](#../POKMSK)|Interrupt Request Enable|all
-|read|53774|$D20E|IRQST|[POKMSK](#../POKMSK)|Interrupt Request Status|all
+|write|53774|$D20E|IRQEN|[POKMSK](#POKMSK)|Interrupt Request Enable|all
+|read|53774|$D20E|IRQST|[POKMSK](#POKMSK)|Interrupt Request Status|all
 
 ## Write
 ||Bit||Function
@@ -2477,21 +2477,21 @@ Bit set to "1" (one) turns interrupt on (enable)
 
 ## Read
 ||Bit||Value||Function||Vector
-|0|$01 1|Timer 1 (counted down to zero)|[VTIMR1](#../VTIMR1) (528; $0210)
-|1|$02 2|Timer 2 (counted down to zero)|[VTIMR2](#../VTIMR2) (530; $0212)
-|2|$04 4|Timer 4 (counted down to zero)|[VTIMR4](#../VTIMR4) (532; $0214 - OS "B" and later ROMs only)
-|3|$08 8|Serial output transmission down|[VSEROC](#../VSEROC) (526; $020E)
-|4|$10 16|Serial Output data needed|[VSEROR](#../VSEROR) (524; $020C)
-|5|$20 32|Serial input data ready|[VESRIN](#../VESRIN) (522; $020A)
-|6|$40 64|Other key pressed|[VKEYBD](#../VKEYBD) (520; $0208)
-|7|$80 128|Break key pressed|[BRKKY](#../BRKKY) (566; $0236 - OS "B" and later ROMs only)
+|0|$01 1|Timer 1 (counted down to zero)|[VTIMR1](#VTIMR1) (528; $0210)
+|1|$02 2|Timer 2 (counted down to zero)|[VTIMR2](#VTIMR2) (530; $0212)
+|2|$04 4|Timer 4 (counted down to zero)|[VTIMR4](#VTIMR4) (532; $0214 - OS "B" and later ROMs only)
+|3|$08 8|Serial output transmission down|[VSEROC](#VSEROC) (526; $020E)
+|4|$10 16|Serial Output data needed|[VSEROR](#VSEROR) (524; $020C)
+|5|$20 32|Serial input data ready|[VESRIN](#VESRIN) (522; $020A)
+|6|$40 64|Other key pressed|[VKEYBD](#VKEYBD) (520; $0208)
+|7|$80 128|Break key pressed|[BRKKY](#BRKKY) (566; $0236 - OS "B" and later ROMs only)
 
 ---
-see also: [Keyboard topics](#../Keyboard_topics) 
+see also: [Keyboard topics](#Keyboard_topics) 
 
-previous: [SERIN](#../SEROUT),[SEROUT](#../SEROUT) 
+previous: [SERIN](#SEROUT),[SEROUT](#SEROUT) 
 
-next: [SKCTL](#../SKCTL),[SKSTAT](#../SKCTL) 
+next: [SKCTL](#SKCTL),[SKSTAT](#SKCTL) 
 ### KBCODE
 
 ||r/w||ADR||HEXADR||NAME||Description||OS
@@ -2532,51 +2532,51 @@ together with Control key: add 128
 
 
 # Write
-Start the POKEY timers (the AUDF registers above). You POKE any non-zero value here to load and start the timers; the value isn't itself used in the calculations. This resets all of the audio frequency dividers to their AUDF values. If enabled by [IRQEN](#../IRQEN) below, these AUDF registers generate timer interrupts when they count down from the number you POKEd there to zero. The vectors for the [AUDF1](#../AUDF1), [AUDF2](#../AUDF2) and [AUDF4](#../AUDF4) timer interrupts are located between 528 and 533 ($210 and $215) [VTIMR1](#../VTIMR1), [VTIMR2](#../VTIMR2), [VTIMR4](#../VTIMR4). POKEY timer four interrupt is only enabled in the new "B" OS ROMs.
+Start the POKEY timers (the AUDF registers above). You POKE any non-zero value here to load and start the timers; the value isn't itself used in the calculations. This resets all of the audio frequency dividers to their AUDF values. If enabled by [IRQEN](#IRQEN) below, these AUDF registers generate timer interrupts when they count down from the number you POKEd there to zero. The vectors for the [AUDF1](#AUDF1), [AUDF2](#AUDF2) and [AUDF4](#AUDF4) timer interrupts are located between 528 and 533 ($210 and $215) [VTIMR1](#VTIMR1), [VTIMR2](#VTIMR2), [VTIMR4](#VTIMR4). POKEY timer four interrupt is only enabled in the new "B" OS ROMs.
 
 ---
-see also: [Keyboard topics](#../Keyboard_topics) [Console Keys](#../CONSOL) [HELP](#../HELPFG) 
+see also: [Keyboard topics](#Keyboard_topics) [Console Keys](#CONSOL) [HELP](#HELPFG) 
 
-previous: [AUDCTL](#../AUDCTL),[ALLPOT](#../ALLPOT) 
+previous: [AUDCTL](#AUDCTL),[ALLPOT](#ALLPOT) 
 
-next: [SKREST](#../SKREST),[RANDOM](#../SKREST) 
+next: [SKREST](#SKREST),[RANDOM](#SKREST) 
 ### Keyboard_topics
 
 # Keyboard topics
 
-[HELP](#../HELPFG) 
+[HELP](#HELPFG) 
 
-[Console Keys](#../CONSOL) 
+[Console Keys](#CONSOL) 
 
-[START key](#../CONSOL) [SELECT key](#../CONSOL) [OPTION key](#../CONSOL) 
+[START key](#CONSOL) [SELECT key](#CONSOL) [OPTION key](#CONSOL) 
 
-[Break key](#../BRKKEY) 
+[Break key](#BRKKEY) 
 
-[ATARI key](#../CH) [Inverse key](#../CH) 
+[ATARI key](#CH) [Inverse key](#CH) 
 
-[CTRL-1](#../SSFLAG) 
+[CTRL-1](#SSFLAG) 
 
-[SHFLOK](#../SHFLOK) 
+[SHFLOK](#SHFLOK) 
 
-[CH](#../CH) [KBCODE](#../KBCODE) [CH1](#../CH1) key pressed/internal key code
+[CH](#CH) [KBCODE](#KBCODE) [CH1](#CH1) key pressed/internal key code
 
-[KEYDEL](#../KEYDEL) key delay
+[KEYDEL](#KEYDEL) key delay
 
-[KRPDEL](#../KRPDEL) key repeat delay
+[KRPDEL](#KRPDEL) key repeat delay
 
-[KEYREP](#../KEYREP) key repeat frequency
+[KEYREP](#KEYREP) key repeat frequency
 
-[NOCLIK](#../NOCLIK) keyclick on/off
+[NOCLIK](#NOCLIK) keyclick on/off
 
-Check if the last Key is still pressed with [SKSTAT](#../SKCTL), Bit 2
+Check if the last Key is still pressed with [SKSTAT](#SKCTL), Bit 2
 
-[Keyboard_Mapping](#../Keyboard_Mapping) 
+[Keyboard_Mapping](#Keyboard_Mapping) 
 
-[Function Keys F1-F4](#../fkeys) 
+[Function Keys F1-F4](#fkeys) 
 
-[TransKey-II](#../TransKey-II) 
+[TransKey-II](#TransKey-II) 
 ---
-see [topic_list](#../topic_list) 
+see [topic_list](#topic_list) 
 ### KEYDEF
 
 
@@ -2590,7 +2590,7 @@ Zeiger auf die Tastaturdefinitionstabelle (nur XL,XE).
 
 Key delay flag or key debounce counter; used to see if any key has been pressed. If a zero is returned, then no key has been pressed. If three is returned, then any key. It is decremented every stage two VBLANK (1/60 or 1/30th second) until it reaches zero. If any key is pressed while KEYDEL is greater than zero, it is ignored as "bounce."
 
-see also: [Keyboard topics](#../Keyboard_topics), [CH](#../CH), [CH1](#../CH1) 
+see also: [Keyboard topics](#Keyboard_topics), [CH](#CH), [CH1](#CH1) 
 ### KEYDIS
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -2604,7 +2604,7 @@ POKE with 255 to disable the keyboard, 0 to reenable. You have to press RESET (a
 
 The rate of the repeat; default is 6, which means ten characters per second (one each six VBLANK intervals after the delay above). POKE with the number of VBLANK intervals between repeats; with a value of 1, you get 60 characters per second (50 on PAL systems)! A value of 0 provides one key repeat only per press.
 
-see also: [Keyboard topics](#../Keyboard_topics), [NOCLIK](#../NOCLIK), [KRPDEL](#../KRPDEL) 
+see also: [Keyboard topics](#Keyboard_topics), [NOCLIK](#NOCLIK), [KRPDEL](#KRPDEL) 
 
 Bestimmt die Tastenwiederholrate in 1/50sek (Vertical Blanks). Standardwert ist 5.
 ### KRPDEL
@@ -2614,7 +2614,7 @@ Bestimmt die Tastenwiederholrate in 1/50sek (Vertical Blanks). Standardwert ist 
 
 Auto-delay rate; the time elapsed before keyboard repeat begins. Initially set at 48 ($30; $28 for PAL machines) for 0.8 seconds; you can POKE it with the number of VBLANK intervals (1/60 second each) before repeat begins. A value of 60 would be a one-second delay. A value of 0 means no repeat.
 
-see also: [Keyboard topics](#../Keyboard_topics), [NOCLIK](#../NOCLIK), [KEYREP](#../KEYREP) 
+see also: [Keyboard topics](#Keyboard_topics), [NOCLIK](#NOCLIK), [KEYREP](#KEYREP) 
 
 Bestimmt die Verzögerung der Tastenwiederholung 1/50sek (Vertical Blanks). Standardwert ist 40/$28 für PAL. Setzt man den Wert auf 0, prellt die Tastaur und Schreiben wird unmöglich.
 ### LCOUNT
@@ -2719,45 +2719,45 @@ Ein Metronom-Programm aus dem De Re Atari (Seite 123) nutzt diese Speicherzelle:
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |82|$0052|LMARGN|Left margin of text|none|All
 
-Column of the left margin of text (GR.0 or text window only). Zero is the value for the left edge of the screen; [LMARGN](#../LMARGN) is initialized to two. You can POKE the margin locations to set them to your specific program needs, such as POKE 82,10 to make the left margin start ten locations from the edge of the screen.
+Column of the left margin of text (GR.0 or text window only). Zero is the value for the left edge of the screen; [LMARGN](#LMARGN) is initialized to two. You can POKE the margin locations to set them to your specific program needs, such as POKE 82,10 to make the left margin start ten locations from the edge of the screen.
 ### LOGCOL
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |99|$0063|LOGCOL| |none|all
-Position of the cursor at the column in a logical line. A logical line can contain up to three physical lines, so [LOGCOL](#../LOGCOL) can
+Position of the cursor at the column in a logical line. A logical line can contain up to three physical lines, so [LOGCOL](#LOGCOL) can
 range between zero and 119. Used by the display handler.
 ### LPENH
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW OF
-|R|564|$234|LPENH|horizontale Position des Lightpens|both|[PENH](#../PENH) 54284 $D40C
+|R|564|$234|LPENH|horizontale Position des Lightpens|both|[PENH](#PENH) 54284 $D40C
 
 Der Wert diese Speicherzelle gibt die horizontale Position des Lightpens an. Wertebereich zwischen 0 und 227 ($E3) für NTSC.
 
-see also: [Display List Topics](#../Displaylist_topics), [VCOUNT](#../VCOUNT) 
+see also: [Display List Topics](#Displaylist_topics), [VCOUNT](#VCOUNT) 
 
-previous: [LCOUNT](#../LCOUNT) 
+previous: [LCOUNT](#LCOUNT) 
 
-next: [LPENV](#../LPENV) 
+next: [LPENV](#LPENV) 
 ### LPENV
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW OF
-|R|565|$235|LPENV|horizontale Position des Lightpens|both|[PENV](#../PENV) 54285 $D40D
+|R|565|$235|LPENV|horizontale Position des Lightpens|both|[PENV](#PENV) 54285 $D40D
 
 Der Wert diese Speicherzelle gibt die vertikale Position des Lightpens an. Wertebereich zwischen 16 und 111 für NTSC.
 
 Wird nur jede 1/50 Sekunde aktualisiert
 
-see also: [Display List Topics](#../Displaylist_topics), [VCOUNT](#../VCOUNT) 
+see also: [Display List Topics](#Displaylist_topics), [VCOUNT](#VCOUNT) 
 
-previous: [LPENH](#../LPENH) 
+previous: [LPENH](#LPENH) 
 
-next: [BRKKY](#../BRKKY) 
+next: [BRKKY](#BRKKY) 
 ### M0PF
 
-[{SET_alias-'HPOSP0'}](#../{SET_alias-'HPOSP0'}) 
+[{SET_alias-'HPOSP0'}](#{SET_alias-'HPOSP0'}) 
 ### M1PF
 
-[{SET_alias-'HPOSP1'}](#../{SET_alias-'HPOSP1'}) 
+[{SET_alias-'HPOSP1'}](#{SET_alias-'HPOSP1'}) 
 ### MEMTOP
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -2765,27 +2765,27 @@ next: [BRKKY](#../BRKKY)
 
 Zeiger auf das letzte für den Anwender freie Byte im Speicher. Das entspricht jedoch nicht dem Ende des RAM. Oberhalb von MEMTOP liegen noch die Display-List und die Bildspeicherdaten. Der Wert von MEMTOP kann sich ändern beim Wechsel der Grafikstufe, Öffnen eines Kanals für den Bildschirm, RESET und POWER-UP.
 
-Von BASIC wird diese Speicherstelle als [HIMEM](#../MEMTOP) bezeichnet.
+Von BASIC wird diese Speicherstelle als [HIMEM](#MEMTOP) bezeichnet.
 
-Wenn ein Wechsel der Grafikstufe dazu führt, dass Speicher unterhalb der von [APPMHI](#../APPMHI) angegebenen Adresse benötigt wird, dann wird der Bildschirm zurück in GRAPHICS 0 gesetzt, MEMTOP wird aktuallisert und ein Fehler wird ausgegeben. Andernfalls wird der Wechsel der Grafikstufe durchgeführt und MEMTOP wird auf den neuen Wert gesetzt.
+Wenn ein Wechsel der Grafikstufe dazu führt, dass Speicher unterhalb der von [APPMHI](#APPMHI) angegebenen Adresse benötigt wird, dann wird der Bildschirm zurück in GRAPHICS 0 gesetzt, MEMTOP wird aktuallisert und ein Fehler wird ausgegeben. Andernfalls wird der Wechsel der Grafikstufe durchgeführt und MEMTOP wird auf den neuen Wert gesetzt.
 
 Es ist Vorsicht geboten, wenn Daten unterhalb von MEMTOP abgelegt werden, da diese durch einen Wechsel der Grafikstufe zerstört werden können. Um dies zu vermeiden, muss sichergestellt werden, dass APPMHI einen Wert hat, der oberhalb der relevanten Daten liegt.
 
 ---
 
 Siehe auch:
-*[MEMTOP](#../TOPSTK) - BASIC MEMTOP/TOPSTK (Ende des Runtime Stack und damit des Ende des BASIC-Programmes)
-*[APPMHI](#../APPMHI) - Adresse oberhalb derer die Bildschirmdaten und die Displaylist liegen können
+*[MEMTOP](#TOPSTK) - BASIC MEMTOP/TOPSTK (Ende des Runtime Stack und damit des Ende des BASIC-Programmes)
+*[APPMHI](#APPMHI) - Adresse oberhalb derer die Bildschirmdaten und die Displaylist liegen können
 ### NEWCOL
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |97,98|$0061,$0062|NEWCOL| |none|A
-Point (column) to which DRAWTO and XIO 18 (FILL) will go. [NEWROW](#../NEWROW) and [NEWCOL](#../NEWCOL) are initialized to the values in [ROWCRS](#../ROWCRS) and [COLCRS](#../COLCRS) (84 to 86; $54 to $56) above, which represent the destination end point of the DRAW and FILL functions. This is done so that [ROWCRS](#../ROWCRS) and [COLCRS](#../COLCRS) can be altered during these routines.
+Point (column) to which DRAWTO and XIO 18 (FILL) will go. [NEWROW](#NEWROW) and [NEWCOL](#NEWCOL) are initialized to the values in [ROWCRS](#ROWCRS) and [COLCRS](#COLCRS) (84 to 86; $54 to $56) above, which represent the destination end point of the DRAW and FILL functions. This is done so that [ROWCRS](#ROWCRS) and [COLCRS](#COLCRS) can be altered during these routines.
 ### NEWROW
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |96|$0060|NEWROW| |none|A
-Point (row) to which DRAWTO and XIO 18 (FILL) will go. For explanation see [NEWCOL](#../NEWCOL) 
+Point (row) to which DRAWTO and XIO 18 (FILL) will go. For explanation see [NEWCOL](#NEWCOL) 
 ### NGFLAG
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -2818,11 +2818,11 @@ Bit 7 does NOT switch on/off the Display List itself, but the display List INTER
 
 ---
 
-see also: [Display List topics](#../Displaylist_topics) 
+see also: [Display List topics](#Displaylist_topics) 
 
-previous: [PENV](#../PENV) 
+previous: [PENV](#PENV) 
 
-next: [NMIST](#../NMIST),[NMIRST](#../NMIST) 
+next: [NMIST](#NMIST),[NMIRST](#NMIST) 
 ### NMIST
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -2845,9 +2845,9 @@ NMIRES: Reset for NMIST. Clears the interrupt request register and resets all of
 
 ---
 
-see also: [Display List topics](#../Displaylist_topics), [VVBLKI](#../VVBLKI), [WARMSV](#../WARMSV) 
+see also: [Display List topics](#Displaylist_topics), [VVBLKI](#VVBLKI), [WARMSV](#WARMSV) 
 
-previous: [NMIEN](#../NMIEN) 
+previous: [NMIEN](#NMIEN) 
 ### NOCLIK
 
 ||Adr||hex||Name||Description||OS
@@ -2859,12 +2859,12 @@ This is the keyboard click disable register; POKE with any non-zero number to di
 Tastenklick, $FF schaltet den Klick aus (XL/XE). Standerdwert für "Ton an" ist 0.
 
 ---
-see also: [Sound_Topics](#../Sound_Topics), [Keyboard topics](#../Keyboard_topics) 
+see also: [Sound_Topics](#Sound_Topics), [Keyboard topics](#Keyboard_topics) 
 ### OLDADR
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |94,95|$005E,$005F|OLDADR| |none|all
-Retains the memory location of the current cursor location. Used with location 93 [OLDCHR](#../OLDCHR) to restore the character under the cursor when the cursor moves
+Retains the memory location of the current cursor location. Used with location 93 [OLDCHR](#OLDCHR) to restore the character under the cursor when the cursor moves
 ### OLDCHR
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -2874,12 +2874,12 @@ Retains the value of the character under the cursor used to restore that charact
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |91,92|$005B,$005C|OLDCOL| |none|all
-Previous graphics cursor column. Updated from locations 85,86/$55,$56 [COLCRS](#../COLCRS) before every operation. These locations are used by the DRAWTO and XIO 18 (FILL) commands to determine the starting column of the DRAW or FILL
+Previous graphics cursor column. Updated from locations 85,86/$55,$56 [COLCRS](#COLCRS) before every operation. These locations are used by the DRAWTO and XIO 18 (FILL) commands to determine the starting column of the DRAW or FILL
 ### OLDROW
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |90|$005A|OLDROW| |none|all
-Previous graphics cursor row. Updated from location 84/$54 [ROWCRS](#../ROWCRS) before every operation. Used to determine the starting row for the DRAWTO and XIO 18 (FILL command).
+Previous graphics cursor row. Updated from location 84/$54 [ROWCRS](#ROWCRS) before every operation. Used to determine the starting row for the DRAWTO and XIO 18 (FILL command).
 ### PBCTL
 
 ||ADR||HEXADR||NAME||Description||OS
@@ -2895,19 +2895,19 @@ Previous graphics cursor row. Updated from location 84/$54 [ROWCRS](#../ROWCRS) 
 |1|PA1|always 0
 |0|PA0|Interrupt of PROCEED line on/off, set to 0 by OS
 
-To define the data direction of PORT B, set Bit 2 of [PBCTL](#../PBCTL) to 0. Then write a byte to [PORTB](#../PORTB), where Bits set to 1 indicate WRITE and Bits set to 0 indicate READ. Normally [PORTB](#../PORTB) is set to %00000000 (=all input).
+To define the data direction of PORT B, set Bit 2 of [PBCTL](#PBCTL) to 0. Then write a byte to [PORTB](#PORTB), where Bits set to 1 indicate WRITE and Bits set to 0 indicate READ. Normally [PORTB](#PORTB) is set to %00000000 (=all input).
 
 ---
-see also: [Controller topics](#../Controller_topics) 
+see also: [Controller topics](#Controller_topics) 
 
-previous: [PACTL](#../PACTL) 
+previous: [PACTL](#PACTL) 
 
-next: [DMACTL](#../DMACTL) of ANTIC
+next: [DMACTL](#DMACTL) of ANTIC
 ### PBPNT
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |29|$001D|PBPNT|Print Buffer Pointer|none|A
-Print buffer pointer; points to the current position (byte) in the print buffer. Ranges from zero to the value in location 30 [PBUFSZ](#../PBUFSZ).
+Print buffer pointer; points to the current position (byte) in the print buffer. Ranges from zero to the value in location 30 [PBUFSZ](#PBUFSZ).
 ### PBUFSZ
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -2921,100 +2921,100 @@ Print buffer size of printer record for current mode. Normal buffer size and lin
 ### PCOLR0
 
 ||ADR||HEXADR||NAME||DESCRIPTION||SHADOW OF||OS
-|704|$02C0|PCOLR0|Color of Player and Missile 0|[COLPM0](#../COLPM0) |all
+|704|$02C0|PCOLR0|Color of Player and Missile 0|[COLPM0](#COLPM0) |all
 
-Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1) except when joined together as 5th player by setting Bit 4 of [PRIOR](#../PRIOR)/[GPRIOR](#../GPRIOR). Then they have the color of register 3 [COLOR3](#../COLOR3)/[COLPF3](#../COLPF3).
+Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1) except when joined together as 5th player by setting Bit 4 of [PRIOR](#PRIOR)/[GPRIOR](#GPRIOR). Then they have the color of register 3 [COLOR3](#COLOR3)/[COLPF3](#COLPF3).
 
 ---
-see also: [Color topics](#../Color_topics), [Player Missile Topics](#../Pm_topics) 
+see also: [Color topics](#Color_topics), [Player Missile Topics](#Pm_topics) 
 
-previous: 703, $02BF, [BOTSCR](#../BOTSCR) 
+previous: 703, $02BF, [BOTSCR](#BOTSCR) 
 
-next: 705, $02C1, [PCOLR1](#../PCOLR1), Player/Missile 1 Color Register
+next: 705, $02C1, [PCOLR1](#PCOLR1), Player/Missile 1 Color Register
 ### PCOLR1
 
 ||ADR||HEXADR||NAME||DESCRIPTION||SHADOW OF||OS
-|705|$02C1|PCOLR1|Color of Player and Missile 1|[COLPM1](#../COLPM1) |all
+|705|$02C1|PCOLR1|Color of Player and Missile 1|[COLPM1](#COLPM1) |all
 
-Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1) except when joined together as 5th player by setting Bit 4 of [PRIOR](#../PRIOR)/[GPRIOR](#../GPRIOR). Then they have the color of register 3 [COLOR3](#../COLOR3)/[COLPF3](#../COLPF3).
+Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1) except when joined together as 5th player by setting Bit 4 of [PRIOR](#PRIOR)/[GPRIOR](#GPRIOR). Then they have the color of register 3 [COLOR3](#COLOR3)/[COLPF3](#COLPF3).
 
 ---
-see also: [Color topics](#../Color_topics), [Pm_topics](#../Pm_topics) 
+see also: [Color topics](#Color_topics), [Pm_topics](#Pm_topics) 
 
-previous: 704, $02C0, [PCOLR0](#../PCOLR0), Player/Missile 0 Color Register
+previous: 704, $02C0, [PCOLR0](#PCOLR0), Player/Missile 0 Color Register
 
-next: 706, $02C2, [PCOLR2](#../PCOLR2), Player/Missile 2 Color Register
+next: 706, $02C2, [PCOLR2](#PCOLR2), Player/Missile 2 Color Register
 ### PCOLR2
 
 ||ADR||HEXADR||NAME||DESCRIPTION||SHADOW OF||OS
-|706|$02C2|PCOLR2|Color of Player and Missile 2|[COLPM2](#../COLPM2) |all
+|706|$02C2|PCOLR2|Color of Player and Missile 2|[COLPM2](#COLPM2) |all
 
-Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1) except when joined together as 5th player by setting Bit 4 of [PRIOR](#../PRIOR)/[GPRIOR](#../GPRIOR). Then they have the color of register 3 [COLOR3](#../COLOR3)/[COLPF3](#../COLPF3).
+Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1) except when joined together as 5th player by setting Bit 4 of [PRIOR](#PRIOR)/[GPRIOR](#GPRIOR). Then they have the color of register 3 [COLOR3](#COLOR3)/[COLPF3](#COLPF3).
 
 ---
-see also: [Color topics](#../Color_topics), [Pm_topics](#../Pm_topics) 
+see also: [Color topics](#Color_topics), [Pm_topics](#Pm_topics) 
 
-previous: 705, $02C1, [PCOLR1](#../PCOLR1), Player/Missile 1 Color Register
+previous: 705, $02C1, [PCOLR1](#PCOLR1), Player/Missile 1 Color Register
 
-next: 707, $02C3, [PCOLR3](#../PCOLR3), Player/Missile 3 Color Register
+next: 707, $02C3, [PCOLR3](#PCOLR3), Player/Missile 3 Color Register
 ### PCOLR3
 
 ||ADR||HEXADR||NAME||DESCRIPTION||SHADOW OF||OS
-|707|$02C3|PCOLR3|Color of Player and Missile 3|[COLPM3](#../COLPM3) |all
+|707|$02C3|PCOLR3|Color of Player and Missile 3|[COLPM3](#COLPM3) |all
 
-Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1) except when joined together as 5th player by setting Bit 4 of [PRIOR](#../PRIOR)/[GPRIOR](#../GPRIOR). Then they have the color of register 3 [COLOR3](#../COLOR3)/[COLPF3](#../COLPF3).
+Missiles have the same color as corresponding Players (e.g. P0=M0, P1=M1) except when joined together as 5th player by setting Bit 4 of [PRIOR](#PRIOR)/[GPRIOR](#GPRIOR). Then they have the color of register 3 [COLOR3](#COLOR3)/[COLPF3](#COLPF3).
 
 ---
-see also: [Color topics](#../Color_topics), [Pm_topics](#../Pm_topics) 
+see also: [Color topics](#Color_topics), [Pm_topics](#Pm_topics) 
 
-previous: 706, $02C2, [PCOLR2](#../PCOLR2), Player/Missile 2 Color Register
+previous: 706, $02C2, [PCOLR2](#PCOLR2), Player/Missile 2 Color Register
 
-next: 708, $02C4, [COLOR0](#../COLOR0), Color Register 0
+next: 708, $02C4, [COLOR0](#COLOR0), Color Register 0
 ### PENH
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW
-|R|54284|$D40C|PENH|horizontale Position des Lightpens|both|[LPENH](#../LPENH) 564/$234
+|R|54284|$D40C|PENH|horizontale Position des Lightpens|both|[LPENH](#LPENH) 564/$234
 
 Der Wert diese Speicherzelle gibt die horizontale Position des Lightpens an. Wertebereich zwischen 0 und 227 ($E3) für NTSC.
 
 ---
-see also: [Display List Topics](#../Displaylist_topics), [VCOUNT](#../VCOUNT) 
+see also: [Display List Topics](#Displaylist_topics), [VCOUNT](#VCOUNT) 
 
-previous: [VCOUNT](#../VCOUNT) 
+previous: [VCOUNT](#VCOUNT) 
 
-next: [PENV](#../PENV) 
+next: [PENV](#PENV) 
 ### PENV
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW
-|R|54285|$D40D|PENV|vertikale des Lightpens|both|[LPENV](#../LPENV) 565/$235
+|R|54285|$D40D|PENV|vertikale des Lightpens|both|[LPENV](#LPENV) 565/$235
 
 Der Wert diese Speicherzelle gibt die vertikale Position des Lightpens an. Wertebereich zwischen 16 und 111 für NTSC.
 
 ---
-see also: [Display List Topics](#../Displaylist_topics), [VCOUNT](#../VCOUNT) 
+see also: [Display List Topics](#Displaylist_topics), [VCOUNT](#VCOUNT) 
 
-previous: [PENH](#../PENH) 
+previous: [PENH](#PENH) 
 
-next: [NMIEN](#../NMIEN) 
+next: [NMIEN](#NMIEN) 
 ### PM-collisions
 
 # Collision Registers
-Player to Player Collisions [P0PL](#../P0PL) [P1PL](#../P1PL) [P2PL](#../P2PL) [P3PL](#../P3PL) 
+Player to Player Collisions [P0PL](#P0PL) [P1PL](#P1PL) [P2PL](#P2PL) [P3PL](#P3PL) 
 
-Missile to Player Collisions [M0PL](#../M0PL) [M1PL](#../M1PL) [M2PL](#../M2PL) [M3PL](#../M3PL) 
+Missile to Player Collisions [M0PL](#M0PL) [M1PL](#M1PL) [M2PL](#M2PL) [M3PL](#M3PL) 
 
-Player to Playfield Collisions [P0PF](#../HPOSM0) [P1PF](#../HPOSM1) [P2PF](#../HPOSM2) [P3PF](#../HPOSM3) 
+Player to Playfield Collisions [P0PF](#HPOSM0) [P1PF](#HPOSM1) [P2PF](#HPOSM2) [P3PF](#HPOSM3) 
 
-Missile to Plafield Collisions [M0PF](#../HPOSP0) [M1PF](#../HPOSP1) [M2PF](#../HPOSP2) [M3PF](#../HPOSP3) 
+Missile to Plafield Collisions [M0PF](#HPOSP0) [M1PF](#HPOSP1) [M2PF](#HPOSP2) [M3PF](#HPOSP3) 
 
-Clear all Collision register [HITCLR](#../HITCLR) 
+Clear all Collision register [HITCLR](#HITCLR) 
 ### PM-line-resolution
 
-For switching between single and double line resolution see Bit 5 of [SDMCTL](#../SDMCTL) 
+For switching between single and double line resolution see Bit 5 of [SDMCTL](#SDMCTL) 
 
-To get a Player or Missile in every possible row when using double line resolution use [VDELAY](#../VDELAY).
+To get a Player or Missile in every possible row when using double line resolution use [VDELAY](#VDELAY).
 
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 ### Pm-memory-map
 
 # Memory Map for Player Missile Graphics
@@ -3027,28 +3027,28 @@ see also:[Player Missile Topics](#../Pm_topics)
 |1536-1791 |$0600-$06FF |Player 2 |768-895|$0300-$037F
 |1792-2047 |$0700-$07FF|Player 3 |896-1023|$0380-$03FF
 
-for switching between single and double line resolution see Bit 5 of [SDMCTL](#../SDMCTL) 
+for switching between single and double line resolution see Bit 5 of [SDMCTL](#SDMCTL) 
 
-for adjusting the vertical position in double line resolution see [VDELAY](#../VDELAY) 
+for adjusting the vertical position in double line resolution see [VDELAY](#VDELAY) 
 
-for setting the base address of the PM memory map see [PMBASE](#../PMBASE) 
+for setting the base address of the PM memory map see [PMBASE](#PMBASE) 
 
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 ### PMBASE
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
 |write |54279 |$D407|PMBASE|PM data base address (MSB)|both
 
 The PMBASE write-only register sets the base of memory occupied by Player-Missile Graphics.
-According to bit 4 of [DMACTL](#../DMACTL):
+According to bit 4 of [DMACTL](#DMACTL):
 - when it is 0, the PMG memory area occupies 1024 ($400) bytes of memory and only upper 6 bits of PMBASE matter, so the PM memory area can be set to begin of 1KB boundary.
 - when it is 1, the PMG memory area occupies 2048 ($800) bytes of memory and only upper 5 bits of PMBASE matter, so the PM memory area can be set to begin of 2KB boundary.
 ---
-see also: [Player Missile Topics](#../Pm_topics) [Pm-memory-map](#../Pm-memory-map) 
+see also: [Player Missile Topics](#Pm_topics) [Pm-memory-map](#Pm-memory-map) 
 
-previous: [VSCROL](#../VSCROL) 
+previous: [VSCROL](#VSCROL) 
 
-next: [CHBASE](#../CHBASE) 
+next: [CHBASE](#CHBASE) 
 ### PM_examples
 
 ### PMG examples.
@@ -3091,37 +3091,37 @@ end
 
 # Player Missile Topics
 
-[Memory Map PM Graphics](#../pm-memory-map) 
+[Memory Map PM Graphics](#pm-memory-map) 
 
-[PMBASE](#../PMBASE) 
+[PMBASE](#PMBASE) 
 
-[SDMCTL](#../SDMCTL) 
+[SDMCTL](#SDMCTL) 
 
-[GRACTL](#../GRACTL) 
+[GRACTL](#GRACTL) 
 
-[GPRIOR](#../GPRIOR) 
+[GPRIOR](#GPRIOR) 
 
-[VDELAY](#../VDELAY) 
+[VDELAY](#VDELAY) 
 
-[GRAFP0](#../GRAFP0) [GRAFP1](#../GRAFP1) [GRAFP2](#../GRAFP2) [GRAFP3](#../GRAFP3) [GRAFM](#../GRAFM) 
+[GRAFP0](#GRAFP0) [GRAFP1](#GRAFP1) [GRAFP2](#GRAFP2) [GRAFP3](#GRAFP3) [GRAFM](#GRAFM) 
 
-PM Resolution, see Bit 4 of [SDMCTL](#../SDMCTL) and [VDELAY](#../VDELAY), [Memory Map PM Graphics](#../pm-memory-map) 
+PM Resolution, see Bit 4 of [SDMCTL](#SDMCTL) and [VDELAY](#VDELAY), [Memory Map PM Graphics](#pm-memory-map) 
 
-PM Width [SIZEP0](#../SIZEP0) [SIZEP1](#../SIZEP1) [SIZEP2](#../SIZEP2) [SIZEP3](#../SIZEP3) [SIZEM](#../SIZEM) 
+PM Width [SIZEP0](#SIZEP0) [SIZEP1](#SIZEP1) [SIZEP2](#SIZEP2) [SIZEP3](#SIZEP3) [SIZEM](#SIZEM) 
 
-PM Colors [PCOLR0](#../PCOLR0) [PCOLR1](#../PCOLR1) [PCOLR2](#../PCOLR2) [PCOLR3](#../PCOLR3) 
+PM Colors [PCOLR0](#PCOLR0) [PCOLR1](#PCOLR1) [PCOLR2](#PCOLR2) [PCOLR3](#PCOLR3) 
 
-PM positions horizontal [HPOSP0](#../HPOSP0) [HPOSM0](#../HPOSM0) [HPOSP1](#../HPOSP1) [HPOSM1](#../HPOSM1) [HPOSP2](#../HPOSP2) [HPOSM2](#../HPOSM2) [HPOSP3](#../HPOSP3) [HPOSM3](#../HPOSM3) 
+PM positions horizontal [HPOSP0](#HPOSP0) [HPOSM0](#HPOSM0) [HPOSP1](#HPOSP1) [HPOSM1](#HPOSM1) [HPOSP2](#HPOSP2) [HPOSM2](#HPOSM2) [HPOSP3](#HPOSP3) [HPOSM3](#HPOSM3) 
 
-PM collisions [M0PF](#../HPOSP0) [M1PF](#../HPOSP1) [M2PF](#../HPOSP2) [M3PF](#../HPOSP3) [P0PF](#../HPOSM0) [P1PF](#../HPOSM1) [P2PF](#../HPOSM2) [P3PF](#../HPOSM3) [M0PL](#../SIZEP0) [M1PL](#../SIZEP1) [M2PL](#../SIZEP2) [M3PL](#../SIZEP3) [P0PL](#../SIZEM) [P1PL](#../GRAFP0) [P2PL](#../GRAFP1) [P3PL](#../GRAFP2) [HITCLR](#../HITCLR) 
+PM collisions [M0PF](#HPOSP0) [M1PF](#HPOSP1) [M2PF](#HPOSP2) [M3PF](#HPOSP3) [P0PF](#HPOSM0) [P1PF](#HPOSM1) [P2PF](#HPOSM2) [P3PF](#HPOSM3) [M0PL](#SIZEP0) [M1PL](#SIZEP1) [M2PL](#SIZEP2) [M3PL](#SIZEP3) [P0PL](#SIZEM) [P1PL](#GRAFP0) [P2PL](#GRAFP1) [P3PL](#GRAFP2) [HITCLR](#HITCLR) 
 
-[Player-missile graphics examples](#../PM_examples) 
+[Player-missile graphics examples](#PM_examples) 
 ---
-see [topic_list](#../topic_list) 
+see [topic_list](#topic_list) 
 ### POKMSK
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
-|16|$10|POKMSK|Interrupt-Maske für POKEY |[IRQEN](#../IRQEN)|
+|16|$10|POKMSK|Interrupt-Maske für POKEY |[IRQEN](#IRQEN)|
 
 
 
@@ -3137,9 +3137,9 @@ see [topic_list](#../topic_list)
 ### PORTA
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
-|54016|$D300|PORTA| | [STICK0](#../STICK0) [STICK1](#../STICK1) | all
+|54016|$D300|PORTA| | [STICK0](#STICK0) [STICK1](#STICK1) | all
 
-Read or write data from the control ports (joystick ports), depending on how the data direction is set (default: 0 "read/input"). To set the direction, set Bit 2 of [PACTL](#../PACTL) to "0" and define the direction by setting the bits of PORTA (0=read, 1=write) for each input/output line. Then set Bit 2 of [PACTL](#../PACTL) to "1" again.
+Read or write data from the control ports (joystick ports), depending on how the data direction is set (default: 0 "read/input"). To set the direction, set Bit 2 of [PACTL](#PACTL) to "0" and define the direction by setting the bits of PORTA (0=read, 1=write) for each input/output line. Then set Bit 2 of [PACTL](#PACTL) to "1" again.
 
 Example:
 ```
@@ -3149,12 +3149,12 @@ PACTL=PACTL %% %00000100 ;set Bit 2 to 1
 ```
 
 ||Bit||Function||Description||Joystick direction||Paddletrigger
-|7|PA7|Joystick Port 2 Pin 4|Right|Paddle 4 [PTRIG3](#../PTRIG3) 
-|6|PA6|Joystick Port 2 Pin 3|Left|Paddle 3 [PTRIG2](#../PTRIG2) 
+|7|PA7|Joystick Port 2 Pin 4|Right|Paddle 4 [PTRIG3](#PTRIG3) 
+|6|PA6|Joystick Port 2 Pin 3|Left|Paddle 3 [PTRIG2](#PTRIG2) 
 |5|PA5|Joystick Port 2 Pin 2|Down|not used
 |4|PA4|Joystick Port 2 Pin 1|Up |not used
-|3|PA3|Joystick Port 1 Pin 4|Right|Paddle 2 [PTRIG1](#../PTRIG1) 
-|2|PA2|Joystick Port 1 Pin 3|Left|Paddle 1 [PTRIG0](#../PTRIG0) 
+|3|PA3|Joystick Port 1 Pin 4|Right|Paddle 2 [PTRIG1](#PTRIG1) 
+|2|PA2|Joystick Port 1 Pin 3|Left|Paddle 1 [PTRIG0](#PTRIG0) 
 |1|PA1|Joystick Port 1 Pin 2|Down|not used
 |0|PA0|Joystick Port 1 Pin 1|Up|not used
 
@@ -3162,18 +3162,18 @@ Joystick direction Bit=0 when pushed in that direction
 
 Paddletrigger Bit=0 when pressed
 ---
-see also: [Controller topics](#../Controller_topics) 
+see also: [Controller topics](#Controller_topics) 
 
-previous: [SKCTL](#../SKCTL),[SKSTAT](#../SKCTL) of POKEY
+previous: [SKCTL](#SKCTL),[SKSTAT](#SKCTL) of POKEY
 
-next: [PORTB](#../PORTB) 
+next: [PORTB](#PORTB) 
 ### PORTB
 
 # For 400, 800 (OS A)
 ||ADR||HEXADR||NAME||Description||shadow||OS
-|54017|$D301|PORTB| | [STICK2](#../STICK2) [STICK3](#../STICK3) [PTRIG4](#../PTRIG4) [PTRIG5](#../PTRIG5) [PTRIG6](#../PTRIG6) [PTRIG7](#../PTRIG7)| 400/800
+|54017|$D301|PORTB| | [STICK2](#STICK2) [STICK3](#STICK3) [PTRIG4](#PTRIG4) [PTRIG5](#PTRIG5) [PTRIG6](#PTRIG6) [PTRIG7](#PTRIG7)| 400/800
 
-Read or write data from the control ports (joystick ports), depending on how the data direction is set (default: 0 "read/input"). To set the direction, set Bit 2 of [PBCTL](#../PBCTL) to "0" and define the direction by setting the bits of PORTB (0=read, 1=write) for each input/output line. Then set Bit 2 of [PBCTL](#../PBCTL) to "1" again.
+Read or write data from the control ports (joystick ports), depending on how the data direction is set (default: 0 "read/input"). To set the direction, set Bit 2 of [PBCTL](#PBCTL) to "0" and define the direction by setting the bits of PORTB (0=read, 1=write) for each input/output line. Then set Bit 2 of [PBCTL](#PBCTL) to "1" again.
 
 Example:
 ```
@@ -3183,12 +3183,12 @@ PACTL=PACTL %% %00000100 ;set Bit 2 to 1
 ```
 
 ||Bit||Function||Description||Joystick direction||Paddletrigger
-|7|PA7|Joystick Port 4 Pin 4|Right|Paddle 8 [PTRIG7](#../PTRIG7) 
-|6|PA6|Joystick Port 4 Pin 3|Left|Paddle 7 [PTRIG6](#../PTRIG6) 
+|7|PA7|Joystick Port 4 Pin 4|Right|Paddle 8 [PTRIG7](#PTRIG7) 
+|6|PA6|Joystick Port 4 Pin 3|Left|Paddle 7 [PTRIG6](#PTRIG6) 
 |5|PA5|Joystick Port 4 Pin 2|Down|not used
 |4|PA4|Joystick Port 4 Pin 1|Up |not used
-|3|PA3|Joystick Port 3 Pin 4|Right|Paddle 6 [PTRIG5](#../PTRIG5) 
-|2|PA2|Joystick Port 3 Pin 3|Left|Paddle 5 [PTRIG4](#../PTRIG4) 
+|3|PA3|Joystick Port 3 Pin 4|Right|Paddle 6 [PTRIG5](#PTRIG5) 
+|2|PA2|Joystick Port 3 Pin 3|Left|Paddle 5 [PTRIG4](#PTRIG4) 
 |1|PA1|Joystick Port 3 Pin 2|Down|not used
 |0|PA0|Joystick Port 3 Pin 1|Up|not used
 
@@ -3265,35 +3265,35 @@ General extended RAM Mode
 |0       |0       |1       |1       |E $C000-$FFFF   |E $C000-$FFFF
 
 ---
-see also: [Controller topics](#../Controller_topics) 
+see also: [Controller topics](#Controller_topics) 
 
-previous: [PORTA](#../PORTA) 
+previous: [PORTA](#PORTA) 
 
-next: [PACTL](#../PACTL) 
+next: [PACTL](#PACTL) 
 ### POT0
 
-[{SET_alias-'AUDF1'}](#../{SET_alias-'AUDF1'}) 
+[{SET_alias-'AUDF1'}](#{SET_alias-'AUDF1'}) 
 ### POT1
 
-[{SET_alias-'AUDC1'}](#../{SET_alias-'AUDC1'}) 
+[{SET_alias-'AUDC1'}](#{SET_alias-'AUDC1'}) 
 ### POT2
 
-[{SET_alias-'AUDF2'}](#../{SET_alias-'AUDF2'}) 
+[{SET_alias-'AUDF2'}](#{SET_alias-'AUDF2'}) 
 ### POT3
 
-[{SET_alias-'AUDC2'}](#../{SET_alias-'AUDC2'}) 
+[{SET_alias-'AUDC2'}](#{SET_alias-'AUDC2'}) 
 ### POT4
 
-[{SET_alias-'AUDF3'}](#../{SET_alias-'AUDF3'}) 
+[{SET_alias-'AUDF3'}](#{SET_alias-'AUDF3'}) 
 ### POT5
 
-[{SET_alias-'AUDC3'}](#../{SET_alias-'AUDC3'}) 
+[{SET_alias-'AUDC3'}](#{SET_alias-'AUDC3'}) 
 ### POT6
 
-[{SET_alias-'AUDF4'}](#../{SET_alias-'AUDF4'}) 
+[{SET_alias-'AUDF4'}](#{SET_alias-'AUDF4'}) 
 ### POT7
 
-[{SET_alias-'AUDC4'}](#../{SET_alias-'AUDC4'}) 
+[{SET_alias-'AUDC4'}](#{SET_alias-'AUDC4'}) 
 ### POTGO
 
 ||Read/Write||ADR||HEXADR||NAME||Description||OS
@@ -3302,15 +3302,15 @@ next: [PACTL](#../PACTL)
 Start the POT scan sequence. You must read your POT values first and then start the scan sequence, since POTGO resets the POT registers to zero. Written by the stage two VBLANK sequence.
 
 ---
-see also: [Controller topics](#../Controller_topics), [POT0](#../POT0)-[POT7](#../POT7), [ALLPOT](#../ALLPOT), [PADDL0](#../PADDL0)-[PADDL7](#../PADDL7) 
+see also: [Controller topics](#Controller_topics), [POT0](#POT0)-[POT7](#POT7), [ALLPOT](#ALLPOT), [PADDL0](#PADDL0)-[PADDL7](#PADDL7) 
 
-previous: [RANDOM](#../SKREST),[SKREST](#../SKREST) 
+previous: [RANDOM](#SKREST),[SKREST](#SKREST) 
 
-next: [SEROUT](#../SEROUT),[SERIN](#../SEROUT) 
+next: [SEROUT](#SEROUT),[SERIN](#SEROUT) 
 ### PRIOR
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
-|53275|$D01B|PRIOR|Priority Selection Register|[GPRIOR](#../GPRIOR)|all
+|53275|$D01B|PRIOR|Priority Selection Register|[GPRIOR](#GPRIOR)|all
 
 ## Priority Settings
 ||Bit||Value||Description
@@ -3322,13 +3322,13 @@ next: [SEROUT](#../SEROUT),[SERIN](#../SEROUT)
 |5|32|Overlapping Players have 3rd color
 |6|64|GTIA Mode see next table
 |7|128|GTIA Mode see next table
-P0-P3 Players [PCOLR0](#../PCOLR0).../[COLPM0](#../COLPM0)...
-PF0-PF3 Playfield colors [COLOR0](#../COLOR0).../[COLPF0](#../COLPF0)...
-BAK background or border color [COLOR4](#../COLOR4)/[COLBK](#../COLBK) 
+P0-P3 Players [PCOLR0](#PCOLR0).../[COLPM0](#COLPM0)...
+PF0-PF3 Playfield colors [COLOR0](#COLOR0).../[COLPF0](#COLPF0)...
+BAK background or border color [COLOR4](#COLOR4)/[COLBK](#COLBK) 
 
 A logical OR is done to the colors of players 0/1 and 2/3 when they overlap. Only the 0/1, 2/3 combinations are allowed; you will not get a third color when players 1 and 3 overlap, the priorities set with bits 0…3 are applied.
 
-If put together into a 5th player (set Bit 4 to '1') the missiles get the color of register 3 [COLOR3](#../COLOR3). They still move independently, e.g. set their horizontal positions with [HPOSM0](#../HPOSM0) - [HPOSM3](#../HPOSM3) 
+If put together into a 5th player (set Bit 4 to '1') the missiles get the color of register 3 [COLOR3](#COLOR3). They still move independently, e.g. set their horizontal positions with [HPOSM0](#HPOSM0) - [HPOSM3](#HPOSM3) 
 
 ## GTIA Modes
 This register can be used to select one of GTIA GRAPHICS modes 9, 10 and 11.
@@ -3339,11 +3339,11 @@ This register can be used to select one of GTIA GRAPHICS modes 9, 10 and 11.
 * the same as GRAPHICS x in BASIC
 ---
 
-see also: [Player Missile Topics](#../Pm_topics) 
+see also: [Player Missile Topics](#Pm_topics) 
 
-previous: [COLBK](#../COLBK) 
+previous: [COLBK](#COLBK) 
 
-next: [VDELAY](#../VDELAY) 
+next: [VDELAY](#VDELAY) 
 ### PTEMP
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -3359,7 +3359,7 @@ The new "B" type OS ROMs have apparently solved the problem of timeout that haun
 ### PTRIG0
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|636| $027C|PTRIG0|Paddle 1 Trigger| [PORTA](#../PORTA) |all
+|636| $027C|PTRIG0|Paddle 1 Trigger| [PORTA](#PORTA) |all
 0 when trigger pressed
 
 1 when trigger released
@@ -3367,15 +3367,15 @@ The new "B" type OS ROMs have apparently solved the problem of timeout that haun
 Paddle 1 trigger is the same as Joystick 1 pushed left
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
 previous:
 
-next: [PTRIG1](#../PTRIG1) 
+next: [PTRIG1](#PTRIG1) 
 ### PTRIG1
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|637| $027D|PTRIG1|Paddle 2 Trigger| [PORTA](#../PORTA) |all
+|637| $027D|PTRIG1|Paddle 2 Trigger| [PORTA](#PORTA) |all
 0 when trigger pressed
 
 1 when trigger released
@@ -3383,16 +3383,16 @@ next: [PTRIG1](#../PTRIG1)
 Paddle 1 trigger is the same as Joystick 1 pushed right
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
 
-previous: [PTRIG0](#../PTRIG0) 
+previous: [PTRIG0](#PTRIG0) 
 
-next: [PTRIG2](#../PTRIG2) 
+next: [PTRIG2](#PTRIG2) 
 ### PTRIG2
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|638| $027E|PTRIG2|Paddle 3 Trigger| [PORTA](#../PORTA) |all
+|638| $027E|PTRIG2|Paddle 3 Trigger| [PORTA](#PORTA) |all
 0 when trigger pressed
 
 1 when trigger released
@@ -3400,16 +3400,16 @@ next: [PTRIG2](#../PTRIG2)
 Paddle 1 trigger is the same as Joystick 2 pushed left
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
 
-previous: [PTRIG1](#../PTRIG1) 
+previous: [PTRIG1](#PTRIG1) 
 
-next: [PTRIG3](#../PTRIG3) 
+next: [PTRIG3](#PTRIG3) 
 ### PTRIG3
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|639| $027F|PTRIG3|Paddle 4 Trigger| [PORTA](#../PORTA) |all
+|639| $027F|PTRIG3|Paddle 4 Trigger| [PORTA](#PORTA) |all
 0 when trigger pressed
 
 1 when trigger released
@@ -3417,16 +3417,16 @@ next: [PTRIG3](#../PTRIG3)
 Paddle 1 trigger is the same as Joystick 2 pushed right
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
 
-previous: [PTRIG2](#../PTRIG2) 
+previous: [PTRIG2](#PTRIG2) 
 
-next: [PTRIG4](#../PTRIG4) 
+next: [PTRIG4](#PTRIG4) 
 ### PTRIG4
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|640| $0280|PTRIG4|Paddle 5 Trigger| [PORTB](#../PORTB) |OS A and B
+|640| $0280|PTRIG4|Paddle 5 Trigger| [PORTB](#PORTB) |OS A and B
 0 when trigger pressed
 
 1 when trigger released
@@ -3434,16 +3434,16 @@ next: [PTRIG4](#../PTRIG4)
 Paddle 1 trigger is the same as Joystick 3 pushed left
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
 
-previous: [PTRIG3](#../PTRIG3) 
+previous: [PTRIG3](#PTRIG3) 
 
-next: [PTRIG5](#../PTRIG5) 
+next: [PTRIG5](#PTRIG5) 
 ### PTRIG5
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|641| $0281|PTRIG5|Paddle 6 Trigger| [PORTB](#../PORTB) |OS A and B
+|641| $0281|PTRIG5|Paddle 6 Trigger| [PORTB](#PORTB) |OS A and B
 0 when trigger pressed
 
 1 when trigger released
@@ -3451,16 +3451,16 @@ next: [PTRIG5](#../PTRIG5)
 Paddle 1 trigger is the same as Joystick 3 pushed right
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
 
-previous: [PTRIG4](#../PTRIG4) 
+previous: [PTRIG4](#PTRIG4) 
 
-next: [PTRIG6](#../PTRIG6) 
+next: [PTRIG6](#PTRIG6) 
 ### PTRIG6
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|642| $0282|PTRIG6|Paddle 7 Trigger| [PORTB](#../PORTB) |OS A and B
+|642| $0282|PTRIG6|Paddle 7 Trigger| [PORTB](#PORTB) |OS A and B
 0 when trigger pressed
 
 1 when trigger released
@@ -3468,15 +3468,15 @@ next: [PTRIG6](#../PTRIG6)
 Paddle 1 trigger is the same as Joystick 4 pushed left
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
-previous: [PTRIG5](#../PTRIG5) 
+previous: [PTRIG5](#PTRIG5) 
 
-next: [PTRIG7](#../PTRIG7) 
+next: [PTRIG7](#PTRIG7) 
 ### PTRIG7
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|643| $0283|PTRIG7|Paddle 8 Trigger| [PORTB](#../PORTB) |OS A and B
+|643| $0283|PTRIG7|Paddle 8 Trigger| [PORTB](#PORTB) |OS A and B
 0 when trigger pressed
 
 1 when trigger released
@@ -3484,11 +3484,11 @@ next: [PTRIG7](#../PTRIG7)
 Paddle 1 trigger is the same as Joystick 4 pushed right
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
-previous: [PTRIG6](#../PTRIG6) 
+previous: [PTRIG6](#PTRIG6) 
 
-next: [STRIG0](#../STRIG0) 
+next: [STRIG0](#STRIG0) 
 ### RAMLO
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -3497,7 +3497,7 @@ next: [STRIG0](#../STRIG0)
 RAMLO hat mehrere Verwendungsmöglichkeiten, allerdings keine, die für den Nutzer relevant sind.
 
 Diese Speicherzelle wird als Zeiger für den Speichertest während des Einschaltvorgangs benutzt.
-(RAMLO, [TRAMSZ](#../TRAMSZ) und [TSTDAT](#../TSTDAT) arbeiten hierbei zusammen.)
+(RAMLO, [TRAMSZ](#TRAMSZ) und [TSTDAT](#TSTDAT) arbeiten hierbei zusammen.)
 
 Hier wird auch die Adresse für die Fortsetzung des Disketten- oder Kassettenbootvorgangs (dies ist die Ladeadresse plus sechs - normalerweise 1798;$0706) abgelegt.
 ### RAMSIZ
@@ -3505,15 +3505,15 @@ Hier wird auch die Adresse für die Fortsetzung des Disketten- oder Kassettenboo
 ||ADR||HEXADR||NAME||Description||OS
 |740|$02E4|RAMSIZ|RAM Size, high byte/number of pages|both
 
-RAM size, high byte only; this is the number of pages that the top of RAM represents (one page equals 256 bytes). Since there can never be less than a whole page, it becomes practical to measure RAM in those page units. This is the same value as in [RAMTOP](#../RAMTOP) location 106 ($6A), passed here from [TRAMSZ](#../TRAMSZ), location 6. Space saved by moving [RAMSIZ](#../RAMSIZ) or [RAMTOP](#../RAMTOP) has the advantage of being above the display area. Initialized to 160 for a 48K Atari.
+RAM size, high byte only; this is the number of pages that the top of RAM represents (one page equals 256 bytes). Since there can never be less than a whole page, it becomes practical to measure RAM in those page units. This is the same value as in [RAMTOP](#RAMTOP) location 106 ($6A), passed here from [TRAMSZ](#TRAMSZ), location 6. Space saved by moving [RAMSIZ](#RAMSIZ) or [RAMTOP](#RAMTOP) has the advantage of being above the display area. Initialized to 160 for a 48K Atari.
 
-see also: [RAMTOP](#../RAMTOP) 
+see also: [RAMTOP](#RAMTOP) 
 ### RAMTOP
 
 ||ADR||HEXADR||NAME||Description||OS
 |106|$006A|RAMTOP|RAM Size|both
 
-RAM size, defined by powerup as passed from [TRAMSZ](#../TRAMSZ) (location 6), given in the total number of available pages (one page equals 256 bytes, so PEEK(106) * 256 will tell you where the Atari thinks the last usable address --byte-- of RAM is). [MEMTOP](#../MEMTOP) (741,742; $2E5. $2E6) may not extend below this value. In a 48K Atari, [RAMTOP](#../RAMTOP) is initialized to 160 ($A0), which points to location 40960 ($A000).
+RAM size, defined by powerup as passed from [TRAMSZ](#TRAMSZ) (location 6), given in the total number of available pages (one page equals 256 bytes, so PEEK(106) * 256 will tell you where the Atari thinks the last usable address --byte-- of RAM is). [MEMTOP](#MEMTOP) (741,742; $2E5. $2E6) may not extend below this value. In a 48K Atari, [RAMTOP](#RAMTOP) is initialized to 160 ($A0), which points to location 40960 ($A000).
 
 The user's highest address will be one byte less than this value.
 This is initially the same value as in location 740. PEEK(740) / 4 or PEEK(106) / 4 gives the number of 1K blocks.
@@ -3534,9 +3534,9 @@ Right margin of the text screen initialized to 39 ($27). Both locations 82 and 8
 Margins work with the text window and blackboard mode and are reset to their default values by pressing RESET. Margins have no effect on scrolling or the printer. However, DELETE LINE and INSERT LINE keys delete or insert 40 character lines (or delete one program line), which always start at the left margin and wrap around the screen edge back to the left margin again. The right margin is ignored in the process. Also, logical lines are always three physical lines no matter how long or short you make those lines.
 The beep you hear when you are coming to the end of the logical line works by screen position independent of the margins. Try setting your left margin at 25 (POKE 82,25) and typing a few lines of characters. Although you have just a few characters beyond 60, the buzzer will still sound on the third line of text.
 
-Previous: [LMARGN](#../LMARGN) 
+Previous: [LMARGN](#LMARGN) 
 
-Next: [ROWCRS](#../ROWCRS) 
+Next: [ROWCRS](#ROWCRS) 
 ### ROWCRS
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -3544,15 +3544,15 @@ Next: [ROWCRS](#../ROWCRS)
 
 Current graphics or text screen cursor row, value ranging from zero to 191 ($BF) depending on the current GRAPHICS mode (maximum number of rows, minus one). This location, together with location 85 below, defines the cursor location for the next element to be read/written to the screen. Rows run horizontally, left to right across the TV screen. Row zero is the topmost line; row 192 is the maximum value for the bottom-most line.
 
-Previous: [RMARGN](#../RMARGN) 
+Previous: [RMARGN](#RMARGN) 
 
-Next: [COLCRS](#../COLCRS) 
+Next: [COLCRS](#COLCRS) 
 ### ROWINC
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |121|$0079|ROWINC| |none|A
 
-The row increment or decrement value (plus or minus one). For explanation see [COLINC](#../COLINC) 
+The row increment or decrement value (plus or minus one). For explanation see [COLINC](#COLINC) 
 ### RTCLOK
 
 ||ADR||HEXADR||NAME||DESCRIPTION||DEFAULT||SHADOW||OS
@@ -3580,32 +3580,32 @@ In DOS 2.0, you may specify the initialization and the run address with the prog
 the file name when loading the file.
 
 see also:
-[INITAD](#../INITAD) 
+[INITAD](#INITAD) 
 ### SAVMSC
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |88,89|$0058,$0059|SAVMSC| | |All
 
-The lowest address of the screen memory, corresponding to the upper left corner of the screen (where the value at this address will be displayed). The upper left corner of the text window is stored at locations [TXTMSC](#../TXTMSC) 660, 661 ($294, $295).
+The lowest address of the screen memory, corresponding to the upper left corner of the screen (where the value at this address will be displayed). The upper left corner of the text window is stored at locations [TXTMSC](#TXTMSC) 660, 661 ($294, $295).
 ### SDLSTL
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW OF
-|read/write |560,561 |$230,$231|SDLSTL, SDLSTH|Start Address of the Display List|both|[DLISTL](#../DLISTL), [DLISTH](#../DLISTL) 
+|read/write |560,561 |$230,$231|SDLSTL, SDLSTH|Start Address of the Display List|both|[DLISTL](#DLISTL), [DLISTH](#DLISTL) 
 
-Attention: the display list must not cross a 1K-boundary unless you use a JMP instruction to cross the boundary (see [Display List Instruction table](#../display_list_instruction_table))
+Attention: the display list must not cross a 1K-boundary unless you use a JMP instruction to cross the boundary (see [Display List Instruction table](#display_list_instruction_table))
 
 ---
 
-see also: [Display List Topics](#../Displaylist_topics), [DLISTL](#../DLISTL), [DLISTH](#../DLISTL) 
+see also: [Display List Topics](#Displaylist_topics), [DLISTL](#DLISTL), [DLISTH](#DLISTL) 
 ### SDMCTL
 
 %%tabbedSection
 %%tab-english
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW||DEFAULT
-|read/write|559|$022F |SDMCTL|Direct Memory Access (DMA) Control|all|[DMACTL](#../DMACTL)|34/$22
+|read/write|559|$022F |SDMCTL|Direct Memory Access (DMA) Control|all|[DMACTL](#DMACTL)|34/$22
 
-This memory location is the shadow register of [DMACTL](#../DMACTL) (54272; $D400). It is used to control the [ANTIC](#../ANTIC)'s direct memory access ("DMA") to the memory of the Atari. The 6502 processor is halted during direct memory access. By switching the ANTIC's DMA off programs can be accelerated (approx. 30%). The following list shows how the individual bits of this register control the appearance of the screen:
+This memory location is the shadow register of [DMACTL](#DMACTL) (54272; $D400). It is used to control the [ANTIC](#ANTIC)'s direct memory access ("DMA") to the memory of the Atari. The 6502 processor is halted during direct memory access. By switching the ANTIC's DMA off programs can be accelerated (approx. 30%). The following list shows how the individual bits of this register control the appearance of the screen:
 
 ||Bit||Dec||Hex||Function||Default
 |7   |    128 |    $80 |    not used|0
@@ -3621,16 +3621,16 @@ This memory location is the shadow register of [DMACTL](#../DMACTL) (54272; $D40
 
 Bit #5 can therefore be used to control the entire direct memory access of the ANTIC. Bit #4 is used to switch between single-line P/M resolution and two-line resolution. The specification of the character width for the display playfield refers to the graphic mode 0. The numbers of characters correspond to 192, 160 or 128 color cycles. In total, the ANTIC can display 238 color cycles (including the border), but only about 174 of these are visible, depending on the TV/monitor. Therefore, not all 48 characters are completely visible when a wide display field is switched on (or the image extends beyond the edge of the monitor).
 
-To switch on the Display List Interrupt see [NMIEN](#../NMIEN).
+To switch on the Display List Interrupt see [NMIEN](#NMIEN).
 ---
 /%
 %%tab-deutsch
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||SHADOW||DEFAULT
-|read/write|559|$022F |SDMCTL|Direct Memory Access (DMA) Control|all|[DMACTL](#../DMACTL)|34/$22
+|read/write|559|$022F |SDMCTL|Direct Memory Access (DMA) Control|all|[DMACTL](#DMACTL)|34/$22
 
 
-Diese Speicherzelle ist das Schattenregister zu [DMACTL](#../DMACTL) (54272; $D400). Sie dient der Kontrolle des direkten Speicherzugriffs ("Direct Memory Access", [DMA](#../DMA)) des ANTIC auf den Speicher des Atari. Der 6502-Prozessor wird während des direkten Speicherzugriffs abgeschaltet. Durch die Abschaltung des DMA des [ANTIC](#../ANTIC) können Programme beschleunigt (ca. 30%) werden. Anhand folgender Aufstellung sieht man, wie die einzelnen Bits dieses Registers das Aussehen des Bildschirms kontrollieren:
+Diese Speicherzelle ist das Schattenregister zu [DMACTL](#DMACTL) (54272; $D400). Sie dient der Kontrolle des direkten Speicherzugriffs ("Direct Memory Access", [DMA](#DMA)) des ANTIC auf den Speicher des Atari. Der 6502-Prozessor wird während des direkten Speicherzugriffs abgeschaltet. Durch die Abschaltung des DMA des [ANTIC](#ANTIC) können Programme beschleunigt (ca. 30%) werden. Anhand folgender Aufstellung sieht man, wie die einzelnen Bits dieses Registers das Aussehen des Bildschirms kontrollieren:
 
 ||Bit||Dec||Hex||Function||Default
 |7   |    128 |    $80 |    not used|0
@@ -3646,16 +3646,16 @@ Diese Speicherzelle ist das Schattenregister zu [DMACTL](#../DMACTL) (54272; $D4
 
 Mit Bit fünf kann man also den gesamten direkten Speicherzugriff des ANTIC kontrollieren. Das Bit vier dient dem Umschalten zwischen einzeiliger P/M-Auflösung und zweizeiliger Auflösung. Die Angabe der Zeichenbreite für das Anzeigefeld bezieht sich auf die Grafikstufe Null. Die Anzahlen der Zeichen entsprechen 192, 160 oder 128 Farbpunkten. Insgesamt kann der ANTIC 238 Farbpunkte (einschließlich des Randes) darstellen, davon sind jedoch je nach Fernseher/Monitor nur ca. 174 sichtbar. Es sind deshalb beim Einschalten eines breiten Anzeigefeldes nicht alle 48 Zeichen vollständig sichtbar (bzw. das Bild geht über den Rand des Monitors hinaus).
 
-Zum Einschalten des Display List Interrupts siehe [NMIEN](#../NMIEN).
+Zum Einschalten des Display List Interrupts siehe [NMIEN](#NMIEN).
 ---
 /%
 
 
-see also: [Player Missile Topics](#../Pm_topics), [Display List Topics](#../Displaylist_topics) 
+see also: [Player Missile Topics](#Pm_topics), [Display List Topics](#Displaylist_topics) 
 
-previous: [CDTMF5](#../CDTMF5) 
+previous: [CDTMF5](#CDTMF5) 
 
-next: [SDLSTL](#../SDLSTL),[SDLSTH](#../SDLSTL) 
+next: [SDLSTL](#SDLSTL),[SDLSTH](#SDLSTL) 
 ### SEROUT
 
 ||Read/Write||ADR||HEXADR||NAME||Description||OS
@@ -3673,9 +3673,9 @@ The serial bus is the port on the Atari into which you plug your cassette or dis
 ---
 See also:
 
-previous: [POTGO](#../POTGO) 
+previous: [POTGO](#POTGO) 
 
-next: [IRQEN](#../IRQEN),[IRQST](#../IRQEN) 
+next: [IRQEN](#IRQEN),[IRQST](#IRQEN) 
 ### SETVBV
 
 ||ADR||HEXADR||NAME||Description||OS
@@ -3705,18 +3705,18 @@ RETURN
 |A|vector to be changed, see below
 
 ||Value||Vector
-|0|[VIMIRQ](#../VIMIRQ) 
-|1|[TIMCOUNT1](#../TIMCOUNT1) 
-|2|[TIMCOUNT2](#../TIMCOUNT2) 
-|3|[TIMCOUNT3](#../TIMCOUNT3) 
-|4|[TIMCOUNT4](#../TIMCOUNT4) 
-|5|[TIMCOUNT5](#../TIMCOUNT5) 
-|6|[VVBLKI](#../VVBLKI) 
-|7|[VVBLKD](#../VVBLKD) 
+|0|[VIMIRQ](#VIMIRQ) 
+|1|[TIMCOUNT1](#TIMCOUNT1) 
+|2|[TIMCOUNT2](#TIMCOUNT2) 
+|3|[TIMCOUNT3](#TIMCOUNT3) 
+|4|[TIMCOUNT4](#TIMCOUNT4) 
+|5|[TIMCOUNT5](#TIMCOUNT5) 
+|6|[VVBLKI](#VVBLKI) 
+|7|[VVBLKD](#VVBLKD) 
 
 
 ---
-see also: [VBI_Vertical_Blank_Interrupt](#../VBI_Vertical_Blank_Interrupt) 
+see also: [VBI_Vertical_Blank_Interrupt](#VBI_Vertical_Blank_Interrupt) 
 ### SHFLOK
 
 ||Adr||Hex||Name||Description||OS||default
@@ -3729,7 +3729,7 @@ Register contains information about "lock" status of the keyboard, eg. SHIFT-loc
 |$40|64|Caps Lock capital letters
 |$80|128|CTRL lock graphic characters
 
-Siehe auch: [CH](#../CH) [Keyboard topics](#../Keyboard_topics) 
+Siehe auch: [CH](#CH) [Keyboard topics](#Keyboard_topics) 
 ### SIO_topics
 
 # SIO Topics
@@ -3738,7 +3738,7 @@ to be completed…
 
 
 ---
-see also: [topic_list](#../topic_list) 
+see also: [topic_list](#topic_list) 
 ### SIZEM
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -3760,11 +3760,11 @@ see also: [topic_list](#../topic_list)
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Player x=| | | |  |3| 2| 1| 0
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [SIZEP3](#../SIZEP3), [M3PL](#../SIZEP3) 
+previous: [SIZEP3](#SIZEP3), [M3PL](#SIZEP3) 
 
-next: [GRAFP0](#../GRAFP0), [P1PL](#../GRAFP0) 
+next: [GRAFP0](#GRAFP0), [P1PL](#GRAFP0) 
 ### SIZEP0
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -3783,11 +3783,11 @@ next: [GRAFP0](#../GRAFP0), [P1PL](#../GRAFP0)
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Player x=| | | |  |3| 2| 1| 0
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [HPOSM3](#../HPOSM3), [P3PF](#../HPOSM3) 
+previous: [HPOSM3](#HPOSM3), [P3PF](#HPOSM3) 
 
-next: [SIZEP1](#../SIZEP1), [M1PL](#../SIZEP1) 
+next: [SIZEP1](#SIZEP1), [M1PL](#SIZEP1) 
 ### SIZEP1
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -3806,11 +3806,11 @@ next: [SIZEP1](#../SIZEP1), [M1PL](#../SIZEP1)
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Player x=| | | |  |3| 2| 1| 0
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [SIZEP0](#../SIZEP0), [M0PL](#../SIZEP0) 
+previous: [SIZEP0](#SIZEP0), [M0PL](#SIZEP0) 
 
-next: [SIZEP2](#../SIZEP2), [M2PL](#../SIZEP2) 
+next: [SIZEP2](#SIZEP2), [M2PL](#SIZEP2) 
 ### SIZEP2
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -3829,11 +3829,11 @@ next: [SIZEP2](#../SIZEP2), [M2PL](#../SIZEP2)
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Player x=| | | |  |3| 2| 1| 0
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [SIZEP1](#../SIZEP1), [M1PL](#../SIZEP1) 
+previous: [SIZEP1](#SIZEP1), [M1PL](#SIZEP1) 
 
-next: [SIZEP3](#../SIZEP3), [M2PL](#../SIZEP3) 
+next: [SIZEP3](#SIZEP3), [M2PL](#SIZEP3) 
 ### SIZEP3
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -3852,16 +3852,16 @@ next: [SIZEP3](#../SIZEP3), [M2PL](#../SIZEP3)
 ||Bit ||7|| 6|| 5|| 4|| 3|| 2|| 1 ||0
 |Player x=| | | |  |3| 2| 1| 0
 ---
-see also:[Player Missile Topics](#../Pm_topics) 
+see also:[Player Missile Topics](#Pm_topics) 
 
-previous: [SIZEP2](#../SIZEP2), [M2PL](#../SIZEP2) 
+previous: [SIZEP2](#SIZEP2), [M2PL](#SIZEP2) 
 
-next: [SIZEM](#../SIZEM), [P0PL](#../SIZEM) 
+next: [SIZEM](#SIZEM), [P0PL](#SIZEM) 
 ### SKCTL
 
 ||r/w||ADR||HEXADR||NAME||Description||Shadow||OS
-|write|53775|$D20F|SKCTL|Serial Port Control|[SSKCTL](#../SSKCTL)|all
-|read|53775|$D20F|SKSTAT|Serial Port Status|[SSKCTL](#../SSKCTL)|all
+|write|53775|$D20F|SKCTL|Serial Port Control|[SSKCTL](#SSKCTL)|all
+|read|53775|$D20F|SKSTAT|Serial Port Status|[SSKCTL](#SSKCTL)|all
 
 ## Write
 ||Bit||Function
@@ -3879,18 +3879,18 @@ next: [SIZEM](#../SIZEM), [P0PL](#../SIZEM)
 |2|the last key is still pressed
 |3|the SHIFT key is pressed
 |4|Data can be read directly from the serial input port, ignoring the shift register.
-|5|Keyboard over-run. Reset BITs 7 to 5 (latches) to one writing any number to [SKREST](#../SKREST) at 53770 ($D20A).
+|5|Keyboard over-run. Reset BITs 7 to 5 (latches) to one writing any number to [SKREST](#SKREST) at 53770 ($D20A).
 |6|Serial data input over-run. Reset latches as above.
 |7|Serial data input frame error caused by missing or extra bits. Reset latches as above.
 
 
 
 ---
-see also: [Keyboard topics](#../Keyboard_topics) 
+see also: [Keyboard topics](#Keyboard_topics) 
 
-previous: [IRQEN](#../IRQEN),[IRQST](#../IRQEN) 
+previous: [IRQEN](#IRQEN),[IRQST](#IRQEN) 
 
-next: [PORTA](#../PORTA) of PIA
+next: [PORTA](#PORTA) of PIA
 ### SKREST
 
 ||Read/Write||ADR||HEXADR||NAME||Description||OS
@@ -3898,40 +3898,40 @@ next: [PORTA](#../PORTA) of PIA
 |Write|53770|$D20A|SKREST|serial status register reset|all
 
 # SKREST (Write)
-Resets the bits 5,6,7 of the serial port status register 53775 [SKCTL](#../SKCTL) to "1"
+Resets the bits 5,6,7 of the serial port status register 53775 [SKCTL](#SKCTL) to "1"
 
 # RANDOM (Read)
 Read the high order 8 bits of the 17-bit polynominal counter and returns a pseudo random number from 0-255
 
 ---
-see also: [SKCTL](#../SKCTL), [Sound_Topics](#../Sound_Topics) 
+see also: [SKCTL](#SKCTL), [Sound_Topics](#Sound_Topics) 
 
-previous: [STIMER](#../KBCODE),[KBCODE](#../KBCODE) 
+previous: [STIMER](#KBCODE),[KBCODE](#KBCODE) 
 
-next: [POTGO](#../POTGO) 
+next: [POTGO](#POTGO) 
 ### Sound_Topics
 
 # Sound Topics
 
-[AUDF1](#../AUDF1) [AUDC1](#../AUDC1) 
+[AUDF1](#AUDF1) [AUDC1](#AUDC1) 
 
-[AUDF2](#../AUDF2) [AUDC2](#../AUDC2) 
+[AUDF2](#AUDF2) [AUDC2](#AUDC2) 
 
-[AUDF3](#../AUDF3) [AUDC3](#../AUDC3) 
+[AUDF3](#AUDF3) [AUDC3](#AUDC3) 
 
-[AUDF4](#../AUDF4) [AUDC4](#../AUDC4) 
+[AUDF4](#AUDF4) [AUDC4](#AUDC4) 
 
-[AUDCTL](#../AUDCTL) 
+[AUDCTL](#AUDCTL) 
 
-[STIMER](#../KBCODE) 
+[STIMER](#KBCODE) 
 
-[CONSOL](#../CONSOL) 
+[CONSOL](#CONSOL) 
 
-[NOCLIK](#../NOCLIK) 
+[NOCLIK](#NOCLIK) 
 
 
 ---
-see also: [topic_list](#../topic_list) 
+see also: [topic_list](#topic_list) 
 ### SSFLAG
 
 767    $02FF    SSFLAG
@@ -3947,30 +3947,30 @@ Set to zero by RESET and powerup.
 ### SSKCTL
 
 ||Adr||HexAdr||Name||Description||Shadow||OS
-|562|$0232|SSKCTL| |[SKCTL](#../SKCTL)|both
+|562|$0232|SSKCTL| |[SKCTL](#SKCTL)|both
 
 ### Standard_colors
 
 # Standard color values
 ||SETCOLOR||Color||Luminance||Color name||Address||Name||Address||Name||Default Value dec||Default Value hex||in GR.0||in GR.1/2||GR.3,5,7
-|0,2,8|	2|	8|	Orange|	708|	[COLOR0](#../COLOR0)|	53270|	[COLPF0](#../COLPF0)|40|$28|n.a.|Uppercase|COLOR 1
-|1,12,10|12|	10|	Green|	709|	[COLOR1](#../COLOR1)|	53271|	[COLPF1](#../COLPF1)|202|$CA|Text (only Luminance)|Lowercase|COLOR 2 and Textwindow LUM
-|2,9,4|	9|	4|	Blue|	710|	[COLOR2](#../COLOR2)|	53272|	[COLPF2](#../COLPF2)|148|$94|Screen|Inverse|COLOR 3 and Textwindow Background
-|3,4,6|	4|	6|	Pink|    711|	[COLOR3](#../COLOR3)|	53273|	[COLPF3](#../COLPF3)|70|$46|n.a.|Inverse Lowercase|n.a.
-|4,0,0|	0|	0|	Black|712|	[COLOR4](#../COLOR4)|	53274|	[COLBK](#../COLBK)|0|$00|Border|n/a|Background and Border (COLOR 0)
+|0,2,8|	2|	8|	Orange|	708|	[COLOR0](#COLOR0)|	53270|	[COLPF0](#COLPF0)|40|$28|n.a.|Uppercase|COLOR 1
+|1,12,10|12|	10|	Green|	709|	[COLOR1](#COLOR1)|	53271|	[COLPF1](#COLPF1)|202|$CA|Text (only Luminance)|Lowercase|COLOR 2 and Textwindow LUM
+|2,9,4|	9|	4|	Blue|	710|	[COLOR2](#COLOR2)|	53272|	[COLPF2](#COLPF2)|148|$94|Screen|Inverse|COLOR 3 and Textwindow Background
+|3,4,6|	4|	6|	Pink|    711|	[COLOR3](#COLOR3)|	53273|	[COLPF3](#COLPF3)|70|$46|n.a.|Inverse Lowercase|n.a.
+|4,0,0|	0|	0|	Black|712|	[COLOR4](#COLOR4)|	53274|	[COLBK](#COLBK)|0|$00|Border|n/a|Background and Border (COLOR 0)
 
 
 ![](#attachments/STD-COLORS.png)
 
 
 
-see also: [Color topics](#../Color_topics) 
+see also: [Color topics](#Color_topics) 
 ### STICK0
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|632| $0278|STICK0|Joystick 1| [PORTA](#../PORTA) |all
+|632| $0278|STICK0|Joystick 1| [PORTA](#PORTA) |all
 
-This denotes the direction of Joystick 1, where 15 means "centered". It is the lower nibble of [PORTA](#../PORTA) 54016 $d300.
+This denotes the direction of Joystick 1, where 15 means "centered". It is the lower nibble of [PORTA](#PORTA) 54016 $d300.
 This address is only updated every 1/50 second during VBlank!
 
 ||dec ||left|| ||right
@@ -3989,17 +3989,17 @@ This address is only updated every 1/50 second during VBlank!
 |down|1001|1101|0101
 
 ---
-see also [Controller topics](#../Controller_topics) 
+see also [Controller topics](#Controller_topics) 
 
-previous: [PADDL7](#../PADDL7) 
+previous: [PADDL7](#PADDL7) 
 
-next: [Joystick 2](#../STICK1) 
+next: [Joystick 2](#STICK1) 
 ### STICK1
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|633| $0279|STICK1|Joystick 2| [PORTA](#../PORTA) |all
+|633| $0279|STICK1|Joystick 2| [PORTA](#PORTA) |all
 
-This denotes the direction of Joystick 2, where 15 means "centered". It is the higher nibble of [PORTA](#../PORTA) 54016 $d300.
+This denotes the direction of Joystick 2, where 15 means "centered". It is the higher nibble of [PORTA](#PORTA) 54016 $d300.
 This address is only updated every 1/50 second during VBlank!
 
 ||dec ||left|| ||right
@@ -4018,18 +4018,18 @@ This address is only updated every 1/50 second during VBlank!
 |down|1001|1101|0101
 
 ---
-see also [Controller topics](#../Controller_topics) 
+see also [Controller topics](#Controller_topics) 
 
-previous: [Joystick 1](#../STICK0) 
+previous: [Joystick 1](#STICK0) 
 
-next: [Joystick 3](#../STICK2) 
+next: [Joystick 3](#STICK2) 
 ### STICK2
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|634| $027A|STICK2|Joystick 3| [PORTB](#../PORTB) |A
+|634| $027A|STICK2|Joystick 3| [PORTB](#PORTB) |A
 
-This denotes the direction of Joystick 3, where 15 means "centered". It is the lower nibble of [PORTB](#../PORTB) 54017 $d301.
-Joystick 3 is only available on ATARI 400/800 machines. In XL and XE OS's this register has the same content as [STICK0](#../STICK0).
+This denotes the direction of Joystick 3, where 15 means "centered". It is the lower nibble of [PORTB](#PORTB) 54017 $d301.
+Joystick 3 is only available on ATARI 400/800 machines. In XL and XE OS's this register has the same content as [STICK0](#STICK0).
 
 ||dec ||left|| ||right
 |up|10|14|&nbsp;6
@@ -4047,18 +4047,18 @@ Joystick 3 is only available on ATARI 400/800 machines. In XL and XE OS's this r
 |down|1001|1101|0101
 
 ---
-see also [Controller topics](#../Controller_topics) 
+see also [Controller topics](#Controller_topics) 
 
-previous: [Joystick 2](#../STICK1) 
+previous: [Joystick 2](#STICK1) 
 
-next: [Joystick 4](#../STICK3) 
+next: [Joystick 4](#STICK3) 
 ### STICK3
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|635| $027B|STICK3|Joystick 4| [PORTB](#../PORTB) |A
+|635| $027B|STICK3|Joystick 4| [PORTB](#PORTB) |A
 
-This denotes the direction of Joystick 4, where 15 means "centered". It is the higher nibble of [PORTB](#../PORTB) 54017 $d301.
-Joystick 4 is only available on ATARI 400/800 machines. In XL and XE OS's this register has the same content as [STICK1](#../STICK1).
+This denotes the direction of Joystick 4, where 15 means "centered". It is the higher nibble of [PORTB](#PORTB) 54017 $d301.
+Joystick 4 is only available on ATARI 400/800 machines. In XL and XE OS's this register has the same content as [STICK1](#STICK1).
 
 ||dec ||left|| ||right
 |up|10|14|&nbsp;6
@@ -4076,13 +4076,13 @@ Joystick 4 is only available on ATARI 400/800 machines. In XL and XE OS's this r
 |down|1001|1101|0101
 
 ---
-see also [Controller topics](#../Controller_topics) 
+see also [Controller topics](#Controller_topics) 
 
-previous: [Joystick 3](#../STICK2) 
+previous: [Joystick 3](#STICK2) 
 ### STRIG0
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|644| $0284|STRIG0|Stick 1 Trigger| [TRIG0](#../GRAFP3) |all
+|644| $0284|STRIG0|Stick 1 Trigger| [TRIG0](#GRAFP3) |all
 0 when trigger pressed
 
 1 when trigger released
@@ -4090,15 +4090,15 @@ previous: [Joystick 3](#../STICK2)
 This address is only updated every 1/50 second during VBlank!
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
-previous: [PTRIG7](#../PTRIG7) 
+previous: [PTRIG7](#PTRIG7) 
 
-next: [STRIG1](#../STRIG1) 
+next: [STRIG1](#STRIG1) 
 ### STRIG1
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|645| $0285|STRIG1|Stick 2 Trigger| [TRIG1](#../GRAFM) |all
+|645| $0285|STRIG1|Stick 2 Trigger| [TRIG1](#GRAFM) |all
 
 0 when trigger pressed
 
@@ -4107,43 +4107,43 @@ next: [STRIG1](#../STRIG1)
 This address is only updated every 1/50 second during VBlank!
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
-previous: [STRIG0](#../STRIG0) 
+previous: [STRIG0](#STRIG0) 
 
-next: [STRIG2](#../STRIG2) 
+next: [STRIG2](#STRIG2) 
 ### STRIG2
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|646| $0286|STRIG2|Stick 3 Trigger| [TRIG2](#../COLPM0) |OS A and B
-only on 400 and 800 machines, else a copy of [STRIG0](#../STRIG0). This address is only updated every 1/50 second during VBlank!
+|646| $0286|STRIG2|Stick 3 Trigger| [TRIG2](#COLPM0) |OS A and B
+only on 400 and 800 machines, else a copy of [STRIG0](#STRIG0). This address is only updated every 1/50 second during VBlank!
 
 0 when trigger pressed
 
 1 when trigger released
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
-previous: [STRIG1](#../STRIG1) 
+previous: [STRIG1](#STRIG1) 
 
-next: [STRIG3](#../STRIG3) 
+next: [STRIG3](#STRIG3) 
 ### STRIG3
 
 ||ADR||HEXADR||NAME||Description||shadow of||OS
-|647| $0287|STRIG3|Stick 4 Trigger| [TRIG3](#../TRIG3) |OS A and B
-only on 400 and 800 machines, else a copy of [STRIG1](#../STRIG1). This address is only updated every 1/50 second during VBlank!
+|647| $0287|STRIG3|Stick 4 Trigger| [TRIG3](#TRIG3) |OS A and B
+only on 400 and 800 machines, else a copy of [STRIG1](#STRIG1). This address is only updated every 1/50 second during VBlank!
 
 0 when trigger pressed
 
 1 when trigger released
 
 ---
-see also: [Controller topics](#../Controller_topics), [Latch triggers](#../GRACTL) 
+see also: [Controller topics](#Controller_topics), [Latch triggers](#GRACTL) 
 
-previous: [STRIG2](#../STRIG2) 
+previous: [STRIG2](#STRIG2) 
 
-next: [CSTAT](#../CSTAT) 
+next: [CSTAT](#CSTAT) 
 ### SYSVBL
 
 ||ADR||HEXADR||NAME||Description||OS
@@ -4151,11 +4151,11 @@ next: [CSTAT](#../CSTAT)
 
 The VBLANK routines start here, including frame counter, update timer, update hardware registers from shadow registers, update the attract mode counter and the realtime clock.
 
-The vertical blank immediate vector, [VVBLKI](#../VVBLKI), normally pointed to by locations 546,547/$0222,$0223), points to here.
+The vertical blank immediate vector, [VVBLKI](#VVBLKI), normally pointed to by locations 546,547/$0222,$0223), points to here.
 
 The Updated OS ROMs point to 59310/$E7AE.
 
-see also: [VBI_Vertical_Blank_Interrupt](#../VBI_Vertical_Blank_Interrupt) 
+see also: [VBI_Vertical_Blank_Interrupt](#VBI_Vertical_Blank_Interrupt) 
 ### SYSVBV
 
 ||ADR||HEXADR||NAME||Description||OS
@@ -4163,7 +4163,7 @@ see also: [VBI_Vertical_Blank_Interrupt](#../VBI_Vertical_Blank_Interrupt)
 
 Stage one VBLANK calculations entry. It performs the processing of a VBLANK interrupt. Contains JMP instruction for the vector in the next two addresses (58464, 58465; $E460, $E461). This is the address normally found in VVBLKI (546, 547; $222, $223). It is initialized to 59345 ($E7D1), which is the VBLANK routine entry. Initialized to 59345 ($E7D1) old ROMs, 59310 ($E7AE) new ROMs.
 
-see also: [VDSLST](#../VDSLST), [VVBLKI](#../VVBLKI), [VVBLKD](#../VVBLKD), [Interrupt](#../Interrupt) 
+see also: [VDSLST](#VDSLST), [VVBLKI](#VVBLKI), [VVBLKD](#VVBLKD), [Interrupt](#Interrupt) 
 ### Table_of_Modes_and_Screen_Formats
 
 # Table of Modes and Screen Format
@@ -4201,45 +4201,45 @@ Temporary register used by the display handler in moving data to and from screen
 ||DEC||HEX||NAME||OS
 |659|$293|TINDEX|all
 
-Contains the current split-screen text window GRAPHICS mode. It is the split-screen equivalent to [DINDEX](#../DINDEX) (location 87; $57) and is always equal to zero when location [SWPFLG](#../SWPFLG) 123 ($7B) equals zero. Initialized to zero (which represents GR.0). You can alter the display list to change the text window into any GRAPHICS mode desired. If you do so, remember to change [TINDEX](#../TINDEX) to reflect that alteration.
+Contains the current split-screen text window GRAPHICS mode. It is the split-screen equivalent to [DINDEX](#DINDEX) (location 87; $57) and is always equal to zero when location [SWPFLG](#SWPFLG) 123 ($7B) equals zero. Initialized to zero (which represents GR.0). You can alter the display list to change the text window into any GRAPHICS mode desired. If you do so, remember to change [TINDEX](#TINDEX) to reflect that alteration.
 
 see also:
 
-previous: [TXTCOL](#../TXTCOL) 
+previous: [TXTCOL](#TXTCOL) 
 
-next: [TXTMSC](#../TXTMSC) 
+next: [TXTMSC](#TXTMSC) 
 ### Topic_list
 
 # Topics
 
-[4 color text](#../4_color_character) 
+[4 color text](#4_color_character) 
 
-[Character_Sets](#../Character_Sets) 
+[Character_Sets](#Character_Sets) 
 
-[Color](#../Color_topics) 
+[Color](#Color_topics) 
 
-[Connectors](#../Connectors) 
+[Connectors](#Connectors) 
 
-[Controllers](#../controller_topics) 
+[Controllers](#controller_topics) 
 
-[Display List Topics](#../displaylist_topics) 
+[Display List Topics](#displaylist_topics) 
 
-[DOS](#../DOS_topics) 
+[DOS](#DOS_topics) 
 
-[Interrupts](#../Interrupts) 
+[Interrupts](#Interrupts) 
 
-[Keyboard](#../keyboard_topics) 
+[Keyboard](#keyboard_topics) 
 
-[Memory_Map](#../Memory_Map) 
+[Memory_Map](#Memory_Map) 
 
-[Player Missile Graphics](#../pm_topics) 
+[Player Missile Graphics](#pm_topics) 
 
-[SIO Serial Input Output](#../SIO_topics) 
+[SIO Serial Input Output](#SIO_topics) 
 
-[Sound_Topics](#../Sound_Topics) 
+[Sound_Topics](#Sound_Topics) 
 
 ---
-see also: [Memory_Map](#../Memory_Map) 
+see also: [Memory_Map](#Memory_Map) 
 ### TOPSTK
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
@@ -4264,18 +4264,18 @@ Hilfsprgramm für das Reservieren von Speicherplatz:
 
 ---
 Siehe auch:
-*[MEMTOP](#../MEMTOP) - OS MEMTOP
-*[RUNSTK](#../RUNSTK) - Runtime-Stack-Pointer
-*[SDLSTL](#../SDLSTL) - Display-List-Adresse
+*[MEMTOP](#MEMTOP) - OS MEMTOP
+*[RUNSTK](#RUNSTK) - Runtime-Stack-Pointer
+*[SDLSTL](#SDLSTL) - Display-List-Adresse
 ### TRAMSZ
 
 ||ADR||HEXADR||NAME||Description||OS
 |6|$0006|TRAMSZ|Temporary Register for RAM size|both
 
 
-Temporary Register for RAM size; used during powerup sequence to test RAM availability. This value is then moved to [RAMTOP](#../RAMTOP), location 106 ($6A). Reads one when the BASIC or the A (left) cartridge is plugged in.
+Temporary Register for RAM size; used during powerup sequence to test RAM availability. This value is then moved to [RAMTOP](#RAMTOP), location 106 ($6A). Reads one when the BASIC or the A (left) cartridge is plugged in.
 
-see also: [RAMTOP](#../RAMTOP), [MEMTOP](#../MEMTOP) 
+see also: [RAMTOP](#RAMTOP), [MEMTOP](#MEMTOP) 
 ### TRNSMZ
 
 ||ADR||HEXADR||NAME||Description||OS
@@ -4297,33 +4297,33 @@ Text window cursor column; value ranges from zero to 39. Unless changed by the u
 
 see also:
 
-previous: [TXTROW](#../TXTROW) 
+previous: [TXTROW](#TXTROW) 
 
-next: [TINDEX](#../TINDEX) 
+next: [TINDEX](#TINDEX) 
 ### TXTMSC
 
 ||DEC||HEX||NAME||OS
 |660,661|$294,$295|TXTMSC|both
 
-Address of the upper left corner of the text window. Split-screen equivalent of locations [SAVMSC](#../SAVMSC) 88, 89 ($58, $59)
+Address of the upper left corner of the text window. Split-screen equivalent of locations [SAVMSC](#SAVMSC) 88, 89 ($58, $59)
 
 see also:
 
-previous: [TINDEX](#../TINDEX) 
+previous: [TINDEX](#TINDEX) 
 
-next: [TXTOLD](#../TXTOLD) 
+next: [TXTOLD](#TXTOLD) 
 ### TXTOLD
 
 ||DEC||HEX||NAME||OS
 |662-667|$296-$29B|TXTOLD|both
 
-These locations contain the split-screen equivalents of [OLDROW](#../OLDROW) (90; $5A), [OLDCOL](#../OLDCOL) (91, 92; $5B, $5C), [OLDCHR](#../OLDCHR) (93, $5D) and [OLDADR](#../OLDADR) (94, 95; $5E, $5F). They hold the split-screen cursor data.
+These locations contain the split-screen equivalents of [OLDROW](#OLDROW) (90; $5A), [OLDCOL](#OLDCOL) (91, 92; $5B, $5C), [OLDCHR](#OLDCHR) (93, $5D) and [OLDADR](#OLDADR) (94, 95; $5E, $5F). They hold the split-screen cursor data.
 
 see also:
 
-previous: [TXTMSC](#../TXTMSC) 
+previous: [TXTMSC](#TXTMSC) 
 
-next: [TMPX1](#../TMPX1) 
+next: [TMPX1](#TMPX1) 
 ### TXTROW
 
 ||DEC||HEX||NAME||OS
@@ -4333,28 +4333,28 @@ Text window cursor row; value ranges from zero to three (the text window has onl
 
 see also:
 
-previous: [NEWADR](#../NEWADR) [BLIM](#../BLIM) 
+previous: [NEWADR](#NEWADR) [BLIM](#BLIM) 
 
-next: [TXTCOL](#../TXTCOL) 
+next: [TXTCOL](#TXTCOL) 
 ### VBI_Vertical_Blank_Interrupt
 
-[NMIEN](#../NMIEN) enable/disable non maskable interrupts (NMI's)
+[NMIEN](#NMIEN) enable/disable non maskable interrupts (NMI's)
 
-[SETVBV](#../SETVBV) sets an interrupt vector or system timer vector
+[SETVBV](#SETVBV) sets an interrupt vector or system timer vector
 
-[XITVBV](#../XITVBV) exit the vertical blank interrupt routine
+[XITVBV](#XITVBV) exit the vertical blank interrupt routine
 
-[SYSVBV](#../SYSVBV) vertical blank interrupt routine entry point
+[SYSVBV](#SYSVBV) vertical blank interrupt routine entry point
 
-[VVBLKI](#../VVBLKI) vector to the immediate vertical blank interrupt routine
+[VVBLKI](#VVBLKI) vector to the immediate vertical blank interrupt routine
 
-[VVBLKD](#../VVBLKD) vector to the deferred vertical blank interrupt routine
+[VVBLKD](#VVBLKD) vector to the deferred vertical blank interrupt routine
 
-[SYSVBL](#../SYSVBL) the vertical blank interrupt routine
+[SYSVBL](#SYSVBL) the vertical blank interrupt routine
 
 
 ---
-see [Interrupts](#../Interrupts), [Topic_list](#../Topic_list) 
+see [Interrupts](#Interrupts), [Topic_list](#Topic_list) 
 ### VCOUNT
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -4364,11 +4364,11 @@ Dieses Register enthält die aktuelle Scanline (Bildschirmzeile) geteilt durch 2
 Werte zwischen 0 und 195 ($9B) für PAL oder 0 und 130 ($82) für NTSC.
 
 ---
-see also: [Display List Topics](#../Displaylist_topics), [PENH](#../PENH), [PENV](#../PENV) 
+see also: [Display List Topics](#Displaylist_topics), [PENH](#PENH), [PENV](#PENV) 
 
-previous: [WSYNC](#../WSYNC) 
+previous: [WSYNC](#WSYNC) 
 
-next: [PENH](#../PENH) 
+next: [PENH](#PENH) 
 ### VDELAY
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -4387,14 +4387,14 @@ Vertical Delay register. When using double line resolution for players and missi
 |0|Missile 0
 
 
-For switching between single and double line resolution see Bit 5 of [SDMCTL](#../SDMCTL) 
+For switching between single and double line resolution see Bit 5 of [SDMCTL](#SDMCTL) 
 
 ---
-see also: [Player Missile Topics](#../Pm_topics), [SDMCTL](#../SDMCTL) 
+see also: [Player Missile Topics](#Pm_topics), [SDMCTL](#SDMCTL) 
 
-previous: [PRIOR](#../PRIOR) 
+previous: [PRIOR](#PRIOR) 
 
-next: [GRACTL](#../GRACTL) 
+next: [GRACTL](#GRACTL) 
 ### VDSLST
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||DEFAULT VALUE
@@ -4402,7 +4402,7 @@ next: [GRACTL](#../GRACTL)
 
 Attention:
 - All 6502 registers have to be saved before and restored after the interrupt (before the RTI instruction).
-- an example to save registers and variables in the language "Action!" [Interrupts_in_ACTION](#../Interrupts_in_ACTION)
+- an example to save registers and variables in the language "Action!" [Interrupts_in_ACTION](#Interrupts_in_ACTION)
 - The interrupt routine must end with an RTI (return from interrupt).
 
 ## Example for saving and restoring the processor registers
@@ -4427,15 +4427,15 @@ Attention:
 ```
 
 ## Example for setting your interrupt routine
-- Set bit 7 in the [display list](#../display_list_instruction_table) line you want the interrupt to occur
-- clear bit 7 of [NMIEN](#../NMIEN) to disable the interrupt
-- set [VDSLST](#../VDSLST) to your routine
-- set bit 7 of [NMIEN](#../NMIEN) to enable the interrupt
+- Set bit 7 in the [display list](#display_list_instruction_table) line you want the interrupt to occur
+- clear bit 7 of [NMIEN](#NMIEN) to disable the interrupt
+- set [VDSLST](#VDSLST) to your routine
+- set bit 7 of [NMIEN](#NMIEN) to enable the interrupt
 
 
 ---
 
-see also: [Display List Topics](#../Displaylist_topics), [NMIEN](#../NMIEN), [Display List Instruction table](#../display_list_instruction_table) 
+see also: [Display List Topics](#Displaylist_topics), [NMIEN](#NMIEN), [Display List Instruction table](#display_list_instruction_table) 
 ### VSCROL
 
 ||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS
@@ -4470,11 +4470,11 @@ If there are several consecutive lines set for vertical fine scrolling (display 
 
 
 ---
-see also: [Display List topics](#../Displaylist_topics) 
+see also: [Display List topics](#Displaylist_topics) 
 
-previous: [HSCROL](#../HSCROL) 
+previous: [HSCROL](#HSCROL) 
 
-next: [PMBASE](#../PMBASE) 
+next: [PMBASE](#PMBASE) 
 ### VVBLKD
 
 ||ADR||HEXADR||NAME||Description||OS
@@ -4482,24 +4482,24 @@ next: [PMBASE](#../PMBASE)
 
 VBLANK deferred register; system return from interrupt, initialized to 59710 ($E93E, in the new OS "B" ROMs; 59653; $E905), the exit for the VBLANK routine. NMI.
 
-These two VBLANK vectors point to interrupt routines that occur at the beginning of the VBLANK time interval. The stage one VBLANK routine is executed; then location [CRITIC](#../CRITIC) 66/$42 is tested for the time-critical nature of the interrupt and, if a critical code section has been interrupted, the stage two VBLANK routine is not executed with a JMP made through the immediate vector [VVBLKI](#../VVBLKI). If not critical, the deferred interrupt VVBLKD is used. Normally the VBLANK interrupt bits are enabled (BIT 6 at location [NMIEN](#../NMIEN) 54286/$D40E is set to one). To disable them, clear BIT 6 (set to zero).
+These two VBLANK vectors point to interrupt routines that occur at the beginning of the VBLANK time interval. The stage one VBLANK routine is executed; then location [CRITIC](#CRITIC) 66/$42 is tested for the time-critical nature of the interrupt and, if a critical code section has been interrupted, the stage two VBLANK routine is not executed with a JMP made through the immediate vector [VVBLKI](#VVBLKI). If not critical, the deferred interrupt VVBLKD is used. Normally the VBLANK interrupt bits are enabled (BIT 6 at location [NMIEN](#NMIEN) 54286/$D40E is set to one). To disable them, clear BIT 6 (set to zero).
 
-The normal seguence for VBLANK interrupt events is: after the OS test, JMP to the user immediate VBLANK interrupt routine through the vector [VVBLKI](#../VVBLKI) at 546,547, then through [SYSVBV](#../SYSVBV) at 58463/$E45F. This is directed by the OS through the VBLANK interrupt service routine at 59345/$E7D1 and then on to the user-deferred VBLANK interrupt routine vectored at 548,549. it then exits the VBLANK interrupt routine through [XITVBV](#../XITVBV) 58466/$E462 and an RTI instruction.
+The normal seguence for VBLANK interrupt events is: after the OS test, JMP to the user immediate VBLANK interrupt routine through the vector [VVBLKI](#VVBLKI) at 546,547, then through [SYSVBV](#SYSVBV) at 58463/$E45F. This is directed by the OS through the VBLANK interrupt service routine at 59345/$E7D1 and then on to the user-deferred VBLANK interrupt routine vectored at 548,549. it then exits the VBLANK interrupt routine through [XITVBV](#XITVBV) 58466/$E462 and an RTI instruction.
 
-If you are changing the VBLANK vectors during the interrupt routine, use the [SETVBV](#../SETVBV) routine at 58460/$E45C. An immediate VBI has about 3.800 machine cycles of time to use, a deferred VBI has about 20.000 cycles. Since many of these cycles are executed while the electron beam is being drawn, it is suggested that you do not execute graphics routines in deferred VBI's.
+If you are changing the VBLANK vectors during the interrupt routine, use the [SETVBV](#SETVBV) routine at 58460/$E45C. An immediate VBI has about 3.800 machine cycles of time to use, a deferred VBI has about 20.000 cycles. Since many of these cycles are executed while the electron beam is being drawn, it is suggested that you do not execute graphics routines in deferred VBI's.
 
-If you create your own VBI's, terminate an immediate VBI with a JMP to [SYSVBV](#../SYSVBV) 58463/$E45F and a deferred VBI with a JMP to [XITVBV](#../XITVBV) 58466/$E462. To bypass the OS VBI routine [SYSVBL](#../SYSVBL) at 59345/$E7D1 entirely, terminate your immediate VBI with a JMP to [XITVBV](#../XITVBV) 58466/$E462.
+If you create your own VBI's, terminate an immediate VBI with a JMP to [SYSVBV](#SYSVBV) 58463/$E45F and a deferred VBI with a JMP to [XITVBV](#XITVBV) 58466/$E462. To bypass the OS VBI routine [SYSVBL](#SYSVBL) at 59345/$E7D1 entirely, terminate your immediate VBI with a JMP to [XITVBV](#XITVBV) 58466/$E462.
 
-see also: [VDSLST](#../VDSLST), [VVBLKI](#../VVBLKI), [SYSVBV](#../SYSVBV), [Interrupt](#../Interrupt) 
+see also: [VDSLST](#VDSLST), [VVBLKI](#VVBLKI), [SYSVBV](#SYSVBV), [Interrupt](#Interrupt) 
 ### VVBLKI
 
 ||ADR||HEXADR||NAME||Description||OS
 |546,547|$0222,$0223|VVBLKI|Vertical Blank Immediate Register|both
 
-VBLANK immediate register. Normally jumps to the stage one VBLANK vector NMI interrupt processor at location 59345 ($E7D1); in the new OS "B" ROMs; 59310, $E7AE). The NMI status register tests to see if the interrupt was due to a VBI (after testing for a DLI) and, if so, vectors through here to VBI the routine, which may be user-written. On powerup, VBI's are enabled and DLI's are disabled. See [VDSLST](#../VDSLST) location 512/$200.
+VBLANK immediate register. Normally jumps to the stage one VBLANK vector NMI interrupt processor at location 59345 ($E7D1); in the new OS "B" ROMs; 59310, $E7AE). The NMI status register tests to see if the interrupt was due to a VBI (after testing for a DLI) and, if so, vectors through here to VBI the routine, which may be user-written. On powerup, VBI's are enabled and DLI's are disabled. See [VDSLST](#VDSLST) location 512/$200.
 
 
-see also: [VDSLST](#../VDSLST), [VVBLKD](#../VVBLKD), [Interrupts](#../Interrupts) 
+see also: [VDSLST](#VDSLST), [VVBLKD](#VVBLKD), [Interrupts](#Interrupts) 
 ### WARMST
 
 ||ADR||HEXADR||NAME||Description||OS
@@ -4522,17 +4522,17 @@ Wird eine beliebige Zahl in dieses Register geschrieben, wird die CPU (6502) sol
 Die "Klick"-Routine der Tastatur benutzt dieses Register zur Verzögerung.
 
 ---
-see also: [Interrupts](#../Interrupts) 
+see also: [Interrupts](#Interrupts) 
 
-previous: [CHBASE](#../CHBASE) 
+previous: [CHBASE](#CHBASE) 
 
-next: [VCOUNT](#../VCOUNT) 
+next: [VCOUNT](#VCOUNT) 
 ### XITVBV
 
 ||ADR||HEXADR||NAME||Description||OS
 |58466|$E462|XITVBV|Exit from the VBLANK routine|both
 
-Exit from the VBLANK routine, entry point. Contains JMP to the address stored in next two locations (58467, 58468; $E463, $E464). This is the address normally found in [VVBLKD](#../VVBLKD) (548,549; $0224,$0225).
+Exit from the VBLANK routine, entry point. Contains JMP to the address stored in next two locations (58467, 58468; $E463, $E464). This is the address normally found in [VVBLKD](#VVBLKD) (548,549; $0224,$0225).
 
 ### OS A/B
 Initialized to 59710/$E93E, which is the VBLANK exit routine. It is used to restore the computer to its pre-interrupt state and to resume normal processing.
@@ -4540,11 +4540,37 @@ Initialized to 59710/$E93E, which is the VBLANK exit routine. It is used to rest
 ### XL/XE OS
 Initialized to 59710/$E93E old ROMs, 59653/$E905.
 
-see also: [SETVBV](#../SETVBV), [VVBLKI](#../VVBLKI), [VVBLKD](#../VVBLKD), [SYSVBV](#../SYSVBV), [Interrupts](#../Interrupts) 
+see also: [SETVBV](#SETVBV), [VVBLKI](#VVBLKI), [VVBLKD](#VVBLKD), [SYSVBV](#SYSVBV), [Interrupts](#Interrupts) 
 ### ZCHAIN
 
 ||ADR||HEXADR||NAME||Description||shadow||OS
 |74,75|$004a,$004B|ZCHAIN| |none|X
 
 Temporary storage registers for general-purpose peripheral handler loader.
+
+### Atari 1200XL Function Keys
+
+On the ATARI 1200XL there are 4 function keys named F1 to F4
+
+|Function Key|produces|
+|------------|--------|
+|F1| Cursor up
+|F2| Cursor down
+|F3| Cursor left
+|F4| Cursor right
+|Shift F1| Cursor Home
+|Shift F2| Cursor End
+|Shift F3| Cursor to beginning of line
+|Shift F4| Cursor to end of line
+|CTRL F1| toggles Keyboard enable/disable
+|CTRL F2| toggles DMA enable/disable
+|CTRL F3| toggles Key-Click
+|CTRL F4| toggles Standard/International character set
+|Shift CTRL F1| ignored
+|Shift CTRL F2| ignored
+|Shift CTRL F3| ignored
+|Shift CTRL F4| ignored
+
+---
+see also: [Keyboard_topics](#Keyboard_topics) 
 

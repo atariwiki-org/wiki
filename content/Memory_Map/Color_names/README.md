@@ -32,10 +32,13 @@
 |14 $E|light|%%( color: #eee ; background-color : #eee ) black %%
 
 ## Compute a color value
+
 ### Decimal
 Color = Hue * 16 + Luminance
+
 ### Hexadecimal
 Color = $HL
+
 ### Binary
 ||Bit||7||6||5||4||3||2||1||0
 |Color Value |H|H|H|H|L|L|L|L
@@ -62,4 +65,4 @@ Color = $HL
 
 
 ---
-see also: [Color topics](../Color_topics/README.md) 
+see also: [Color topics](../Memory_Map/#Color_topics) 
