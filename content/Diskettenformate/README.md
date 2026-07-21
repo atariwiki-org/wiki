@@ -45,8 +45,8 @@
 |DOS II+D 6.x|Y|Y|Y|N|N|N|
 |[XDOS](../People/Stefan Dorndorf/XDOS_2.43/README.md)|Y|Y|Y|Y|N|N|in 360k mode the two disksides are used as twofloppy drives (D1: and D2:) in XDOS!
 |KDOS 1.0|Y|N|N|N|N|N|
-|[OSS A+2.0](../Companies/OSS/OS_Aplus/OS_Aplus-Version_2/README.md)|Y|N|Y|N|N|N|
-|[DOS XL 2.3x](../Companies/OSS/DOS_XL/README.md)|Y|N|Y|N|N|N|
+|[OS/A+ Version 2.10](../Companies/OSS/OS_Aplus/OS_Aplus-Version_2/README.md)|Y|N|Y|N|N|N|
+|[DOS XL](../Companies/OSS/DOS_XL/README.md)|Y|N|Y|N|N|N|
 |[OS A+4.1](../OS_Aplus-Version_4)|N?|Y|Y|Y|Y|Y|OS A+4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
 
