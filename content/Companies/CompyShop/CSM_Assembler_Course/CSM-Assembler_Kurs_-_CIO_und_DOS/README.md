@@ -19,30 +19,30 @@ Jeder dieser Kanäle verfügt über einen eigenen Kontroll-Block, das ist ein kl
 Die Länge eines IOCB's beträgt 16 Bytes. Diese Bytes haben folgende Bedeutungen:
 
 
-$340 (832) - [ICHID](../ICHID/README.md) 
+$340 (832) - [ICHID](../Memory_Map/README.md#ICHID) 
 
 Wenn der Kanal unbenutzt ist, enthält dieses Byte den Wert $FF (255). Die ist zum Beispiel nach einem CLOSE-Befehl der Fall.
 
 
-$342 (834) - [ICCOM](../ICCOM/README.md) 
+$342 (834) - [ICCOM](../Memory_Map/README.md#ICCOM) 
 
 Diese Speicherstelle ist wohl die wichtigste, da dieses Byte vor Aufruf der CIO das Befehls-Byte enthalten muss. Je nach Befehl ändert sich teilweise die Bedeutung der folgenden Speicherstellen. Auch müssen nicht immer alle Bytes definiert werden. Am Ende dieser Liste
 der Speicherstellen, wird genau angegeben, welche Befehle grundsätzlich möglich sind und welche Bytes dafür wie gesetzt werden müssen.
 
 
-$343 (835) - [ICSTAT](../ICSTAT/README.md) 
+$343 (835) - [ICSTAT](../Memory_Map/README.md#ICSTAT) 
 
 In diesem Byte und in dem Y-Register befindet nach dem CIO-Aufruf der Statuswert der Operation. Wenn er ungleich 1 ist, ist ein Fehler aufgetreten.
 
 
-$344/$345 (836/847) - [ICBAL](../ICBAL/README.md)/[ICBAH](../ICBAH/README.md) 
+$344/$345 (836/847) - [ICBAL](../Memory_Map/README.md#ICBAL)/[ICBAH](../Memory_Map/README.md#ICBAH) 
 
 Allgemein ist dies ein Zeiger auf einen bestimmten Speicherplatz. Bei einem OPEN Befehl muss zum Beispiel die Adresse des ersten Bytes der Dateispezifikation (D:FILENAME.EXT";#$9B) hier abgelegt werden. Diese nennt man auch "Filespec" (engl. Abk. für Filespecification).
 
 Beim Lesen oder Schreiben von Daten, ist dies die Adresse des ersten Bytes des Speicherbereichs bei dem die Daten abgelegt werden, oder welcher geschrieben wird.
 
 
-$348/$349 (840/841) - [ICBLL](../ICBLL/README.md)/[ICBLH](../ICBLH/README.md) 
+$348/$349 (840/841) - [ICBLL](../Memory_Map/README.md#ICBLL)/[ICBLH](../Memory_Map/README.md#ICBLH) 
 
 Beim Schreiben und Lesen von Daten muss hier die Länge des Datenblocks festgelegt werden. Ein Zeichensatz ist zum Beispiel 1024 Bytes, ein GR.8+16 Bild ist 7680 Bytes lang.
 

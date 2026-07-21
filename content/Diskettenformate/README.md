@@ -28,7 +28,7 @@
 |[Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)  SmartDOS|Y|N|Y|N|N|N|DOS 2.0s can read 180k after a Reset; DOS 2.0d can read 90k after a Reset!  DOS.SYS of SmartDOS is based on DOS 2.0! (Rainbow DOS and Black DOSare merely DUP.SYS replacements for DOS 2.0s or DOS 2.0d, there are many others...)
 |[Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)|Y|Y|N|N|N|N|
 |[Atari Dos 3](../Companies/Atari/Atari_DOS/Atari_DOS_3/README.md)|Y|Y|N|N|N|N|
-|[Atari Dos 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md)|Y|N|Y|Y|N|N|
+|[Atari DOS 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md)|Y|N|Y|Y|N|N|
 |[Atari DOS XE](../Companies/Atari/Atari_DOS/Atari_DOS_XE/README.md)|Y|Y|Y|Y|N|N|
 |[BIBO-DOS](../Companies/CompyShop/BIBO-DOS/README.md)|Y|Y|Y|Y|N|N|
 |[Turbo-DOS XE](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md)|Y|Y|Y|Y|N|N|

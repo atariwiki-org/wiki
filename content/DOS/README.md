@@ -20,13 +20,14 @@ In der Regel besteht das DOS aus zwei Teilen:
 
 
 ## Disk Operating Systems for the Atari:
-- [Atari_DOS_II_2.0S](../Atari_DOS_II_2.0S/README.md) of 1980
-- [Atari_DOS_2.5](../Atari_DOS_2.5/README.md) of 1984
-- [Atari Dos 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md) also known as ANTIC Dos or QDOS of 1984
-- [BW-DOS](../BW-DOS/README.md) of 1995
+- [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md) of 1980
+- [Atari DOS 2.5 Source Code from OSS](../Companies/Atari/Atari_DOS/Atari_DOS_2.5_Source_Code/README.md) of 1984
+- [Atari_DOS_3](../[Atari_DOS_3]/README.md) of 1983
+- [Atari DOS 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md) also known as ANTIC Dos or QDOS of 1984
+- [BEWE DOS 1.30 Manual](../Companies/BEWESOFT/BEWE_DOS_1.30_Manual/README.md) of 1995
 - [MyDOS](MyDOS/README.md)
-- [OSS_A__2](../OSS_A__2/README.md)
-- [Real.DOS](../Real.DOS/README.md)
+- [OSS_Aplus](../[OS_Aplus]/README.md)
+- [RealDOS](RealDOS/README.md)
 - [SpartaDOS](../SpartaDOS/README.md)
 - [SpartaDOS_X](../SpartaDOS_X/README.md)
 - [TTDOS](../TTDOS/README.md) also known as Turbo Tape DOS

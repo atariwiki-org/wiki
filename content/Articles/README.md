@@ -571,7 +571,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Atari DOS 1](../Companies/Atari/Atari_DOS/Atari_DOS_1/README.md)
 - [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)
 - [Atari Dos 3](../Companies/Atari/Atari_DOS/Atari_DOS_3/README.md)
-- [Atari Dos 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md)
+- [Atari DOS 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md)
 - [Atari DOS XE](../Companies/Atari/Atari_DOS/Atari_DOS_XE/README.md)
 - [AUSTRO.DOS](../Companies/AUSTRO.COM/AUSTRO.DOS/README.md)
 - [BEWE DOS 1.30 Manual](../Companies/BEWESOFT/BEWE_DOS_1.30_Manual/README.md)

@@ -1,4 +1,4 @@
-# Atari Dos 4 (aka ANTIC DOS aka QDOS)
+# Atari DOS 4 (aka ANTIC DOS aka QDOS)
 
 ## Disk
 
