@@ -75,7 +75,7 @@
 - [puZIP - ZIP File compression](../puZIP/README.md) - ZIP file compression
 - [Small DOS 2.5 COM-File loader for Demo](../Small_DOS_2.5_COM-File_loader_for_Demo/README.md)
 - [Hobbytronic Demo 2004/2005](../Hobby_Tronic_Demo_2004/README.md)
-- [BASIC_on-off_from_DOS_XL_commandline](../BASIC_on-off_from_DOS_XL_commandline/README.md)
+- [Toggle BASIC on/off from OS/A+ and DOS XL Command-Line](../Companies/OSS/Toggle_BASIC_On-Off_from_the_OS_APlus_and_DOS_XL_Command-Line/README.md)
 - [Page Flip Routine for BASIC](../Languages/BASIC/Atari_BASIC/Examples/Page_Flip_Routine_for_Basic/README.md)
 - [RAM Move Routine for BASIC](../RAM_Move_Routine_for_Basic/README.md)
 - [Atari 6502 System Equations and Macros](../Atari_System_Equates_and_Macros/README.md)

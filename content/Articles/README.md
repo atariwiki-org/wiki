@@ -264,7 +264,7 @@
 
 ### Simulation
 - [Atari Energy Czar CX4121](../Companies/Atari/Atari_Energy_Czar/README.md)
-- [Atari SCRAM - A Nuclear Power Plant Simulation CX4123 (Basic) by Chris Crawford](../Companies/Atari/Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/README.md)
+- [SCRAM - A Nuclear Power Plant Simulation (CX4123) (Basic) by Chris Crawford](../Companies/Atari/Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/README.md)
 - [Atari Kingdom CX4102](../Companies/Atari/Atari_Kingdom/README.md)
 - [Atari Kingdom cassette-Dual Track with voice, music and data](../../media/Atari_Kingdom/attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10
 
