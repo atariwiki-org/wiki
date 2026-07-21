@@ -3,7 +3,7 @@
 Copyright (C) 1981 by Atari, Inc. and BPI Systems, Inc. and Arthur Young & Co.
 
 
-The Atari Accountant brings sophisticated computerized accounting to the small business or professional person and has been priced at $1,499.85. Each of its three components, which are available separately, is priced at $499.95. They include systems for accounts and inventory control. All prices mentioned are manufacturer's suggested retail prices in the U.S. only. The three packages are: General Accounting System CX401, Accounts Receivable System CX402 and Inventory Control System CX403. Each package consists of several diskettes, please see below. The software __requires__ an ATARI 800 Computer, [an Atari 815 Dual Disk](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20815), an Atari 850 Interface Module and an Atari 825 80-Column Printer. Minimum RAM requirement: 48 K
+The Atari Accountant brings sophisticated computerized accounting to the small business or professional person and has been priced at $1,499.85. Each of its three components, which are available separately, is priced at $499.95. They include systems for accounts and inventory control. All prices mentioned are manufacturer's suggested retail prices in the U.S. only. The three packages are: General Accounting System CX401, Accounts Receivable System CX402 and Inventory Control System CX403. Each package consists of several diskettes, please see below. The software __requires__ an ATARI 800 Computer, [an Atari 815 Dual Disk](../Atari_815/README.md), an Atari 850 Interface Module and an Atari 825 80-Column Printer. Minimum RAM requirement: 48 K
 
 In sum The Atari Accountant Series consists out of 13 SSDD diskettes, which is equivalent to __26 SSSD diskettes__! This makes The Atari Accountant the most expansive Atari program of all times and the largest of it's time. Just box CX401 is found up to now only (2019). Any help in completing the 'The Atari Accountant' is very welcome, anytime, anyplace and everywhere.
 
@@ -15,7 +15,7 @@ The Atari Accountant - binder, top view ; thanks to Kay Savetz for taking the pi
 Before we intend to go further, you really have to read Bill Lange's incredible [investigation](http://atari8bitads.blogspot.de/search/label/Atari%20Accountant%20Series) about The Atari Accountant series. If you do not, you won't understand anything of The Atari Accountant, not even a single bit! Please take the time, you won't be disappointed. Bill has done a deep, deep investigation, which only a few Atari users are able to do. That is scientific investigation and deep knowledge at its best. AtariWiki highly(!) recommend this site. The site is vital for a deeper understanding of the boxes Atari made. You would miss a big part of Atari's history by not reading it! Roger H. Badertscher, president of Atari's Computer division in 1981, was in charge and responsible for The Atari Accountant. Sadly, he belongs to the 10 % denying just any interview about the golden age of Atari. AtariWiki says soooo much thank you to Bill Lange for his help in this lost be believe case. Greatly appreciated! :-)
 
 ![](attachments/The_Atari_Accountant-Demo.jpg)
-The Atari Accountant - screenshot 1 taken from [In-Store Demonstration Program](https://atariwiki.org/wiki/Wiki.jsp?page=In-Store%20Demonstration%20Program) on diskette only, not cartridge! ; thanks to Bill Lange for sharing this with the community!
+The Atari Accountant - screenshot 1 taken from [In-Store Demonstration Program](../In-Store_Demonstration_Program/README.md) on diskette only, not cartridge! ; thanks to Bill Lange for sharing this with the community!
 
 ## Requirements
 The prices are taken from lists published in 1981, please see below under ADs
@@ -109,7 +109,7 @@ __- Working versions:__ created by DjayBee from AtariAge ; you __don't(!)__ need
 
 ## Manuals
 
-The below manuals can be refer to the amateur league, for ultra professional pdf files, AtariWiki highly recommends the created pdf files by GoodByteXL from AtariAge. You won't get better ones, worldwide! For an example, please see: [ACTION! manual 3rd edition](https://atariwiki.org/wiki/Wiki.jsp?page=Action#section-Action-ManualsAndDocs). On the other hand, sometimes this requires to retype letter by letter the whole book...
+The below manuals can be refer to the amateur league, for ultra professional pdf files, AtariWiki highly recommends the created pdf files by GoodByteXL from AtariAge. You won't get better ones, worldwide! For an example, please see: [ACTION! manual 3rd edition](../Action/README.md). On the other hand, sometimes this requires to retype letter by letter the whole book...
 
 - [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-OCR-Index-Print.pdf](../../../../media/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Print.pdf) ; size: 22.4 MB (#) ; (*)
 - [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-OCR-Index-Screen.pdf](../../../../media/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Screen.pdf) ; size: 14.5 MB (#) ; (*)
@@ -163,7 +163,7 @@ AtariWiki would like to thank the following persons for the help in this very sp
 - Floppydoc for all his help, support, time and commitment to decipher the secrets of the 815 and how to get the data from it
 - Sascha Kriegel, especially for his fight at the hot spot, locally and in person. This work got the most boost in the project! Thank you Sascha!
 - Ryan Goolevitch and Joachim Baßmann for their genius on how to get the f… data from the very special disks of the 815 double drive; a milestone!
-- DjayBee from AtariAge for making the disks runnable with 'normal' drives. :-) With this and others major performances (e. g. [SynCalc+ from 1985](https://atariwiki.org/wiki/Wiki.jsp?page=SynCalc)), it is fair to appoint him as the King in this very important field
+- DjayBee from AtariAge for making the disks runnable with 'normal' drives. :-) With this and others major performances (e. g. [SynCalc+ from 1985](../SynCalc/README.md)), it is fair to appoint him as the King in this very important field
 - AtariAge, without their work and platform, we could never have connected us to make this all possible. Thank you really so much!
 - Roland B. Wassenberg for creating the pdf files for easy in use
 - Michael Current and his [ATARI FAQ](ftp://rtfm.mit.edu/pub/faqs/atari-8-bit/faq), without it, we might have never heard, that the project existed

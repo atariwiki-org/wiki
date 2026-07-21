@@ -8,7 +8,7 @@ by Daniel Serpell, Matthias Reichl, Christian Krüger, Sascha Kriegel and Roland
 ## ---(EN) Introduction
 TURBAN - __TUR__bo__BA__sic __N__ifty
 
-The main part of TURBAN was done by Daniel Serpell, dmsc at AtariAge. He is the author of [FastBasic](https://atariwiki.org/wiki/Wiki.jsp?page=FastBasic), too. Highly recommended!
+The main part of TURBAN was done by Daniel Serpell, dmsc at AtariAge. He is the author of [FastBasic](../FastBasic/README.md), too. Highly recommended!
 
 Hias has written [dir2atr](http://www.horus.com/~hias/atari/#tools-win32). Thank you so much Hias for your help, greatly needed here.
 
@@ -105,7 +105,7 @@ Im vorstehenden Bild ist ein Quelltext von TURBO-BASIC XL im Editor "Sublime Tex
 
 Wichtig ist, dass der Editor skriptfähig ist und idealerweise durch Erweiterungen, sogenannte Plug-ins, an die Bedürfnisse angepasst werden kann. Dazu gehören z. B. alle Befehle aller Programmiersprachen. Es gibt sogar ein FORTH-Plug-in! Die oben stehenden Links führen dazu Beispiele an.
 
-Den Löwenanteil von TURBAN steuerte Daniel Serpell bei, auch als dmsc auf AtariAge bekannt. Daniel ist übrigens auch der Autor von [FastBasic](https://atariwiki.org/wiki/Wiki.jsp?page=FastBasic). Hierbei darf „fast“ ruhig wörtlich verstanden werden! Ich empfehle jedem Atari User, sich seine Arbeit einmal anzusehen. Ganz große Leistung!
+Den Löwenanteil von TURBAN steuerte Daniel Serpell bei, auch als dmsc auf AtariAge bekannt. Daniel ist übrigens auch der Autor von [FastBasic](../FastBasic/README.md). Hierbei darf „fast“ ruhig wörtlich verstanden werden! Ich empfehle jedem Atari User, sich seine Arbeit einmal anzusehen. Ganz große Leistung!
 
 Daniel hat im Rahmen von TURBAN den sogenannten Parser entwickelt. Er übersetzt den Text in das vom Atari einlesbare Format. Bislang kam sein Programm hauptsächlich für den 10-Zeilen Wettbewerb zum Einsatz. Er hat jedoch eine Anpassung vorgenommen, die es dem Team zur Erhaltung von Abtipp-Listings gestattet, sein Werk auch dort einzusetzen. Daher noch einmal ein großes Dankeschön an Daniel! :-) Seine aktuelle Version mit allen Möglichkeiten ist [hier](https://github.com/dmsc/tbxl-parser) beschrieben, die aktuellen Programme für alle Plattformen findet man [hier](https://github.com/dmsc/tbxl-parser/releases).
 

@@ -34,8 +34,8 @@ Page 8 of: 'All about Cassette Tapes from 1979'
 
 ---
 •) From [The Atari Accountant](../Companies/Atari/The_Atari_Accountant/README.md) just:
-- [CX402: Accounts Receivable System (4 SSDD Diskettes)](https://atariwiki.org/wiki/Wiki.jsp?page=The%20Atari%20Accountant%20Series#section-The+Atari+Accountant+Series-CX402AccountsReceivableSystem4SSDDDiskettes)
-- [CX403: Inventory Control System (5 SSDD Diskettes)](https://atariwiki.org/wiki/Wiki.jsp?page=The%20Atari%20Accountant%20Series#section-The+Atari+Accountant+Series-CX403InventoryControlSystem5SSDDDiskettes)
+- [CX402: Accounts Receivable System (4 SSDD Diskettes)](../The_Atari_Accountant_Series/README.md)
+- [CX403: Inventory Control System (5 SSDD Diskettes)](../The_Atari_Accountant_Series/README.md)
 
 •) [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
 Atari Dow Jones Investment Evaluator CX8124
@@ -111,7 +111,7 @@ OSS Newsletter - Winter 1987
 
 •) __OSS MAC/65 MACDO.M65__ - file published by OSS via BBS
 
-•) __OSS Action!__ [Graphics Utilities Library and Shape Editor](https://atariwiki.org/wiki/Wiki.jsp?page=Action#section-Action-StillMissingGraphicsUtilitiesLibraryAndShapeEditor) 
+•) __OSS Action!__ [Graphics Utilities Library and Shape Editor](../Action/README.md) 
 
 ---
 •) __Synapse Software__: __SynMail__; was finished according to Steve Hales, but after SynCalc und SynFile+ never sold to the public. So, somewhere out there, it may exists

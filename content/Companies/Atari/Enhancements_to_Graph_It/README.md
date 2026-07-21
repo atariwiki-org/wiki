@@ -8,7 +8,7 @@ Enhancements to Graph It is not just an update to the existing Atari Graph It CX
 
 First, you need the original Atari Graph It CX4109 cassettes:
 
-[Atari Graph It CX4109 cassettes](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Graph%20It) 
+[Atari Graph It CX4109 cassettes](../Atari_Graph_It/README.md) 
 
 Then load each program into BASIC, merge the program with the corresponding program via the ENTER "D:...-command from Howard's diskette and store the resulting file to a new working disk. This must be done 4 times, due to the 4 programs in Atari Graph It CX4109. Luckily these procedure has just to be done once. :-)
 
@@ -41,11 +41,11 @@ Enhancements to Graph It - Original Disk Content
 
 ## ATR-Images:
 - [Saved_Plots.atr](attachments/Saved_Plots.atr) ; all plots from the original Graph It manual, this time with Enhancements to Graph It; stored in suffix-format below
-- [Atari Graph It CX4109 cassettes](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Graph%20It) ; all cassettes are on one atr-diskette-image
+- [Atari Graph It CX4109 cassettes](../Atari_Graph_It/README.md) ; all cassettes are on one atr-diskette-image
 - [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock-Original.atr](http://gury.atari8.info/details_software/1026.php) ; the original APX-diskette-image on Bostjan Gorisek's great site
 - [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock-Working.atr](attachments/Enhancements_to_Graph_It_APX-20074_C_1982_Howard_D._Siebenrock-Working.atr) ; working, already merged program on an atr-image
 ## Manuals:
-- [Atari Graph It CX4109 cassettes](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Graph%20It) ; please see here for the original, corrected and bug free Graph It-manual
+- [Atari Graph It CX4109 cassettes](../Atari_Graph_It/README.md) ; please see here for the original, corrected and bug free Graph It-manual
 - [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock](attachments/Enhancements_to_Graph_It_APX-20074_C_1982_Howard_D._Siebenrock.pdf) ; size: 7.8 MB
 ## ZIP-Images:
 - [Screenshots.zip](attachments/Screenshots.zip) all plots from the original Graph It manual, this time with Enhancements to Graph It and in JPG-format; size: 1.4 MB

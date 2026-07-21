@@ -223,9 +223,9 @@
 - [Atari Educational System - Programming Cassette Streams](../Companies/Atari/Atari_Educational_System/Atari_Educational_System-Programming_Cassette_Streams/README.md)
 - [Atari Educational System Lesson Cassettes](../Companies/Atari/Atari_Educational_System/Atari_Educational_System_Lesson_Cassettes/README.md)
 - [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett_Educational_Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)
-- [An Invitation to Programming 1 CX4101](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%201%20CX4101)
-- [An Invitation to Programming 2 CX4106](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%202%20CX4106)
-- [An Invitation to Programming 3 CX4117](https://atariwiki.org/wiki/Wiki.jsp?page=An%20Invitation%20to%20Programming%203%20CX4117)
+- [An Invitation to Programming 1 CX4101](../An_Invitation_to_Programming_1_CX4101/README.md)
+- [An Invitation to Programming 2 CX4106](../An_Invitation_to_Programming_2_CX4106/README.md)
+- [An Invitation to Programming 3 CX4117](../An_Invitation_to_Programming_3_CX4117/README.md)
 
 ### Entertainment
 - [Atari Biorhythm (CX4107)](../Companies/Atari/Atari_Biorhythm/README.md)
@@ -409,8 +409,8 @@ All of the following have no page yet
 #### Programmierhilfen
 - [Atari's Programmierhilfen-Diskette Nr. 1](../Companies/Atari/Atari_Germany/Ataris_Programmierhilfen-Diskette_Nr.1/README.md)
 - [Atari's Programmierhilfen-Diskette Nr. 2](../Companies/Atari/Atari_Germany/Ataris_Programmierhilfen-Diskette_Nr.2/README.md)
-- [Kurs 1: Programmieren leicht gemacht](https://atariwiki.org/wiki/Wiki.jsp?page=Programmieren%20leicht%20gemacht%20TXG4110)
-- [Kurs 2: Noch mehr BASIC](https://atariwiki.org/wiki/Wiki.jsp?page=Noch%20mehr%20BASIC%20RXG%2055007)
+- [Kurs 1: Programmieren leicht gemacht](../Programmieren_leicht_gemacht_TXG4110/README.md)
+- [Kurs 2: Noch mehr BASIC](../Noch_mehr_BASIC_RXG_55007/README.md)
 - [BASIC für Fortgeschrittene](../Companies/Atari/Atari_Germany/BASIC_fuer_Fortgeschrittene/README.md)
 - [Super Sort (DXG 5730)](../Companies/Atari/Atari_Germany/Super_Sort/README.md)
 
@@ -632,8 +632,8 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari States & Capitals CX4112](../Companies/Atari/Atari_States_and_Capitals/README.md)
 - [Atari European Countries & Capitals CX4114 ; Copyright (C) 1980 Atari, Inc.](../Companies/Atari/Atari_European_Countries_and_Capitals/README.md)
 
-- [Atari Biorhythm cassette-Dual Track with voice, music and data](../../media/Articles/attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube ; [Atari Biorhythm program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Biorhythm)
-- [Atari Kingdom cassette-Dual Track with voice, music and data](../../media/Atari_Kingdom/attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10 ; [Atari Kingdom program](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Kingdom)
+- [Atari Biorhythm cassette-Dual Track with voice, music and data](../../media/Articles/attachments/Atari_Biorhythm-Dual_Track.mp4) ; size: 21.3 MB ; MP4-file taken from Youtube ; [Atari Biorhythm program](../Atari_Biorhythm/README.md)
+- [Atari Kingdom cassette-Dual Track with voice, music and data](../../media/Atari_Kingdom/attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10 ; [Atari Kingdom program](../Atari_Kingdom/README.md)
 - [Atari Hangman cassette-Dual Track with voice, music and data](../../media/Articles/attachments/Atari_Hangman-Dual_Track.mp4) ; size: 19.8 MB ; MP4-file taken from Youtube
 - [Atari Blackjack (CX4105)](../Companies/Atari/Atari_Blackjack/README.md)
 

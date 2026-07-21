@@ -1,6 +1,6 @@
 # Read, write or convert from an Atari 815 Double Disk Drive
 
-One of the major spin-offs from the [The Atari Accountant](https://atariwiki.org/wiki/Wiki.jsp?page=The%20Atari%20Accountant%20Series), thanks to Curt Vendel, is, that we now have the knowledge and technology to read, write and convert data from an Atari 815 Double Disk Drive.
+One of the major spin-offs from the [The Atari Accountant](../The_Atari_Accountant_Series/README.md), thanks to Curt Vendel, is, that we now have the knowledge and technology to read, write and convert data from an Atari 815 Double Disk Drive.
 
 Ryan Goolevitch and Joachim Baßmann had the same idea at the same time independently from each other. Here it is:
 

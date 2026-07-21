@@ -3,7 +3,7 @@
 __Copyright (C) 1981 to 1984 by Newell Industries & Charles W. Marslett__
 
 
-AtariWiki is very, very proud Newell Industries & Charles W. Marslett gave us the source code for the FAST FLOATING POINT routines for PD. Thank you so much Newell Industries & Charles W. Marslett, that is not a little gift, that is a giant leap for the community worldwide and will result in rewrite all Atari OS and burn them on EPROM. We further thank Robert 'Bob' Puff for converting the original [AMAC](https://atariwiki.org/wiki/Wiki.jsp?page=Atari%20Macro%20Assembler) source code into [MAC/65](https://atariwiki.org/wiki/Wiki.jsp?page=Mac65) source code. Thank you all so much, the community is in great debt for the work you have done! :-)
+AtariWiki is very, very proud Newell Industries & Charles W. Marslett gave us the source code for the FAST FLOATING POINT routines for PD. Thank you so much Newell Industries & Charles W. Marslett, that is not a little gift, that is a giant leap for the community worldwide and will result in rewrite all Atari OS and burn them on EPROM. We further thank Robert 'Bob' Puff for converting the original [AMAC](../Atari_Macro_Assembler/README.md) source code into [MAC/65](../Mac65/README.md) source code. Thank you all so much, the community is in great debt for the work you have done! :-)
 
 Please don't misunderstand this work, it is 'just' fast or even up to 3.5 times faster than the original routines! Indeed, it is way more! The routines give the user reliable results, too! That is very important for calculations. Further, they maintain the jump addresses from the original routines from Atari. Therefore, no trouble, just have fun and enjoy.
 
