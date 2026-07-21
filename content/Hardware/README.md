@@ -19,15 +19,15 @@
 - [Atari CX85 Numerical Keypad](../Companies/Atari/AtariCX85/README.md)
 
 ## Computers
-- [Atari_400](../Atari_400/README.md)
-- [Atari_800](../Atari_800/README.md)
-- [Atari_1200XL](../Atari_1200XL/README.md)
+- [Atari 400 - MISSING](../Companies/Atari/Atari_400/README.md)
+- [Atari 800 - MISSING](../Companies/Atari/Atari_800/README.md)
+- [Atari 1200XL- MISSING](../Companies/Atari/Atari_1200XL/README.md)
 - [Atari_800XL](../Atari_800XL/README.md)
-- [Atari_600XL](../Atari_600XL/README.md)
-- [Atari_130XE](../Atari_130XE/README.md)
+- [Atari 600XL - MISSING](../Companies/Atari/Atari_600XL/README.md)
+- [Atari 130XE - MISSING](../Companies/Atari/Atari_130XE/README.md)
 - [Atari 65XE - MISSING](../Companies/Atari/Atari_65XE/README.md)
-- [Atari_800XE](../Atari_800XE/README.md)
-- [Atari_XEGS](../Atari_XEGS/README.md)
+- [Atari 800XE- MISSING](../Companies/Atari/Atari_800XE/README.md)
+- [Atari XEGS - MISSING](../Companies/Atari/Atari_XEGS/README.md)
 
 ## Disk Drives
 ### Atari Disk Drives

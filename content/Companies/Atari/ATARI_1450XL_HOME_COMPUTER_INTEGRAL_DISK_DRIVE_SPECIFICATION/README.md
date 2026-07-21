@@ -1,5 +1,6 @@
 # ATARI 1450XL HOME COMPUTER INTEGRAL DISK DRIVE SPECIFICATION
 
+```
 WPSSPL Version 2.8.5 Spooling device DRB1:
 June 19, 1984 02:25 PM
 Atari, Inc.
@@ -212,7 +213,7 @@ The Integral Disk Handler belongs to the Systems family of products.
 
 6.3.1.1 Physical Requirements
 
-The Integral Disk Driver shall masked into 2K bytes ($D800-$DFFF) on the 1450 CPU board.
+The Integral Disk Driver shall be masked into 2K bytes ($D800-$DFFF) on the 1450 CPU board.
 
 On power-up, the 1450 will apply power to the disk drive(s) only if the door to drive 1 is open. The disk driver shall display an informational message (wording TBD) to the user directing him to insert a disk in drive 1 and shut the door. Upon closing the door to drive 1, the driver shall perform a disk boot.
 
@@ -234,15 +235,15 @@ During a COLD START, the driver will initialize the disks to "small" mode. Durin
 
 6.3.2.1 Device Control Block
 
-Communication between the Integral Disk Driver and the disk handler shall be by means of the system DCB. The DCB is be 12 bytes long. The disk handler must supply the required DCB parameters and execute a JSR to SIOV [$E459](../$E459/README.md).
+Communication between the Integral Disk Driver and the disk handler shall be by means of the system DCB. The DCB is be 12 bytes long. The disk handler must supply the required DCB parameters and execute a JSR to SIOV [$E459].
 
-DEVICE ID (DDEVIC [$0300](../$0300/README.md)) - Device ID for the disk drives shall be $31. This parameter is set up by the handler.
+DEVICE ID (DDEVIC [$0300] - Device ID for the disk drives shall be $31. This parameter is set up by the handler.
 
-DEVICE NUMBER (DUNIT [$0301](../$0301/README.md)) - Disk drive number to be accessed (1-icon_cool.gif. This parameter is set up by the handler.
+DEVICE NUMBER (DUNIT [$0301] - Disk drive number to be accessed (1-icon_cool.gif. This parameter is set up by the handler.
 
-COMMAND BYTE (DCOMND [$0302](../$0302/README.md)) - Disk drive command to be performed (see para. 3.2.2). This parameter is set up by the handler, or by the user, if the user calls PIO/SIO directly.
+COMMAND BYTE (DCOMND [$0302] - Disk drive command to be performed (see para. 3.2.2). This parameter is set up by the handler, or by the user, if the user calls PIO/SIO directly.
 
-STATUS BYTE (DSTATS [$0303](../$0303/README.md)) - Indicates to PIO what to do after the command frame is sent and acknowledged. This parameter is set up by the handler. Valid codes are:
+STATUS BYTE (DSTATS [$0303] - Indicates to PIO what to do after the command frame is sent and acknowledged. This parameter is set up by the handler. Valid codes are:
 
 - $00 - No data transfer is associated with the operation
 - $40 - A data frame is expected from the disk
@@ -259,13 +260,13 @@ the driver. Possible status codes are:
 - $8F - Checksum error
 - $90 - Device done error
 
-BUFFER ADDRESS (DBUFLO [$0304](../$0304/README.md) & DBUFHI [$0305](../$0305/README.md)) - Two byte pointer containing the address of the source or destination of the disk sector or status data. These parameters are set up by the handler.
+BUFFER ADDRESS (DBUFLO [$0304] & DBUFHI [$0305]) - Two-byte pointer containing the address of the source or destination of the disk sector or status data. These parameters are set up by the handler.
 
-DISK TIMEOUT VALUE (DTIMLO [$0306](../$0306/README.md)) - Timeout value, in whole seconds, used by the driver. This parameter is supplied by the handler.
+DISK TIMEOUT VALUE (DTIMLO [$0306]) - Timeout value, in whole seconds, used by the driver. This parameter is supplied by the handler.
 
-BYTE COUNT (DBYTLO [$0308](../$0308/README.md) & DBYTHI [$0309](../$0309/README.md)) - Number of bytes transferred to or from the disk as a result of the most recent command. These parameters are set up by the handler.
+BYTE COUNT (DBYTLO [$0308] & DBYTHI [$0309]) - Number of bytes transferred to or from the disk as a result of the most recent command. These parameters are set up by the handler.
 
-SECTOR NUMBER (DAUX1 [$030A](../$030A/README.md) & DAUX2 [$030B](../$030B/README.md)) - Disk sector number to be read or to be written. These parameters are set up by the handler and contain the least significant byte in DAUX1 and the most significant byte in DAUX2. The range of sector numbers shall be 1-720, single density; 1-1040, double density, "small" mode; or 1-2080, double density, "large" mode.
+SECTOR NUMBER (DAUX1 [$030A] & DAUX2 [$030B](../$030B/README.md)) - Disk sector number to be read or to be written. These parameters are set up by the handler and contain the least significant byte in DAUX1 and the most significant byte in DAUX2. The range of sector numbers shall be 1-720, single density; 1-1040, double density, "small" mode; or 1-2080, double density, "large" mode.
 
 6.3.2.2 Standard Disk Driver Commands
 
@@ -278,7 +279,7 @@ The DCB parameters required to be set by the handler prior to calling SIOV are:
 - DEVICE ID = $31 DEVICE NUMBER = Disk drive number 1-8
 - COMMAND BYTE = $52
 - STATUS BYTE = $40
-- BUFFER ADDRESS = Pointer to the handler's 128 byte buffer
+- BUFFER ADDRESS = Pointer to the handler's 128-byte buffer
 - SECTOR NUMBER = Sector number to be read.
 
 The only parameter of interest to the handler, upon return, shall be the STATUS BYTE.
@@ -431,3 +432,4 @@ None specified.
 
 None specified.
 
+```
