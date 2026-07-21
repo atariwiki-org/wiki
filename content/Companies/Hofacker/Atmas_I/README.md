@@ -10,11 +10,11 @@ Elcomp / Hofacker ATMAS Editor and Macro Assembler program with free program des
 - [Program_Descriptions_I-Hofacker-OCR.pdf](../../../../media/Atmas_I/attachments/Program_Descriptions_I-Hofacker-OCR.pdf) ; size: 6.5 MB ; 132 pages ; OCR ; including the ATMAS manual and some example programs ; thanks to Atarimania!
 
 ## Pictures
-![](attachments/ATMAS+I-3_.jpg)
+![](attachments/ATMAS_I-3_.jpg)
 Atmas I - Editor and Macroassembler - Box Cover
 
-![](attachments/ATMAS+I-5_.jpg)
+![](attachments/ATMAS_I-5_.jpg)
 Atmas I - Editor and Macroassembler - Program Disk
 
-![](attachments/ATMAS+I-6_.jpg)
+![](attachments/ATMAS_I-6_.jpg)
 Atmas I - Editor and Macroassembler - Box Back

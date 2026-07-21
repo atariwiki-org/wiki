@@ -74,11 +74,11 @@ The cartridge version replaced BUG/65 with another debugger - [Dunion's Debuggin
 
 ## MAC/65 1.00 (1984)
 %%(float:right)![](attachments/Cart.jpg)
-![](attachments/Mac-65+orange+1.jpg)
+![](attachments/Mac-65_orange_1.jpg)
 ![](attachments/Mac-65_y-b.jpg)%%
 The first cartridge version, numbered 1.00, was released in 1984.
 
-![](attachments/MAC-65-Version+1.00.gif)
+![](attachments/MAC-65-Version_1.00.gif)
 
 ### Cartridge images
 - MAC/65 1.00 with DDT - two-chip cartridge (043M bank order): [BIN image](attachments/MAC-65-Version_1.00.rom), [CAR image](attachments/MAC-65-Version_1.00.car)
@@ -86,7 +86,7 @@ The first cartridge version, numbered 1.00, was released in 1984.
 ## MAC/65 1.01 (1984)
 Soon after, OSS released version 1.01, with some bug fixes.
 
-![](attachments/MAC-65-Version+1.01.gif)
+![](attachments/MAC-65-Version_1.01.gif)
 
 ### Cartridge images
 - MAC/65 1.01 with DDT - one-chip cartridge (M091 bank order): [BIN image](attachments/MAC_65_1.01.rom), [CAR image](attachments/MAC_65_1.01_with_DDT.car)
@@ -100,7 +100,7 @@ In 2017 AtariAge user Alfred published source code for MAC/65 1.01 that he had o
 ## MAC/65 1.02 (1984)
 Version 1.02 followed in the same year, with yet more bug fixes and a slightly darkened background color.
 
-![](attachments/MAC-65-Version+1.02.gif)
+![](attachments/MAC-65-Version_1.02.gif)
 
 ### Cartridge images
 - MAC/65 1.02 with DDT - two-chip cartridge (034M bank order): [BIN image](attachments/MAC-65-Version_1.02.rom), [CAR image](attachments/MAC-65-Version_1.02.car)

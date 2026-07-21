@@ -1,9 +1,9 @@
-# Action
+# Action!
 
 ## Information
 
 ### Background
-Action (also Action!) is an Atari-specific programming language written by Clinton Parker and sold by Optimized Systems Software (OSS) in ROM cartridge form starting in August 1983. It is the only language other than [BASIC](../../BASIC/README.md) and [Assembler](../../Assembler/README.md) that had real popularity on the platform and saw any significant coverage in the Atari press; type-in programs and various technical articles were found in most magazines. In comparison, languages like [Forth](../../Forth/README.md) and [Atari LOGO](../../Logo/README.md) saw much less use and almost no press coverage.
+Action! is an Atari-specific programming language written by Clinton Parker and sold by Optimized Systems Software (OSS) in ROM cartridge form starting in August 1983. It is the only language other than [BASIC](../../BASIC/README.md) and [Assembler](../../Assembler/README.md) that had real popularity on the platform and saw any significant coverage in the Atari press; type-in programs and various technical articles were found in most magazines. In comparison, languages like [Forth](../../Forth/README.md) and [Atari LOGO](../../Logo/README.md) saw much less use and almost no press coverage.
 
 Reviewers at the time gushed about the system. They noted that practically every aspect was superior to anything available at the time; compiling was almost instantaneous, the resulting code ran almost as fast as hand-coded assembler, the full-screen editor was universally loved, and the entire system took up only 8k due to clever memory management. The only complaint, also universal, was the poor quality of the original manual set.
 
@@ -63,15 +63,15 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - [ACTION! error codes](../ACTION_error_codes/README.md)
 - [Aktion mit Action!](../Articles/Aktion_mit_ACTION/README.md) - Report about the ACTION! Programming Language from the German Magazin "Happy Computer"
 - [Action!_Bugsheet_3](../Action_Bugsheet_3/README.md)
-- [Fix_for_the_Bugs_in_divide_in_ACTION!](../Fix_for_the_Bugs_in_divide_in_ACTION!/README.md)
+- [Fix for the Bugs in divide in ACTION!](../Articles/Fix_for_the_Bugs_in_divide_in_ACTION/README.md)
 - [Fix for PrintF Routine](../Fix_for_Bug_in_PrintF/README.md)
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ### Tutorials
 - [Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION!_Program](../Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION!_Program/README.md)
-- [Action!_and_BBS_Express!_PRO_Tutorial](../Action!_and_BBS_Express!_PRO_Tutorial/README.md)
+- [Action!_and_BBS_Express!_PRO_Tutorial](../Action!_and_BBS_Express_PRO_Tutorial/README.md)
 - [Larry's Action! Tutorial](../Articles/Larrys_Action_Tutorial/README.md)
-- [How_to_setup_an_ACTION!_Development_Disk](../How_to_setup_an_ACTION!_Development_Disk/README.md)
+- [How to setup an ACTION! Development Disk](../Examples/How_to_setup_an_ACTION_Development_Disk/README.md)
 - [Action! Programming for Atari 8-bit Computers](https://www.youtube.com/watch?v=yQ8ABW8rY40&list=PL5FYYzC9Hpgog9GPsJRtshMP0wpHrxb2J) video tutorial series
 - [Learning Atari Action!](http://atariaction.tumblr.com/) blog
 
@@ -88,7 +88,7 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - Includes CAR-Images for OSS cartridges and for standard 16K cartridges
 - Includes executable language and editor "ACTION.COM" on ATR-Images for different DOS versions
 - Includes executable standalone editor "ACTIONED.COM" on ATR-Images for different DOS versions
-You can use it under SpartaDOS and DosXL with "D1:ACTIONED MYSRC.ACT" to direct load the "MYSRC.ACT" file into the editor. Further, this editor can even be used for BASIC, PASCAL, FORTH etc.
+You can use it under SpartaDOS and DosXL with "D1:ACTIONED MYSRC.ACT" to directly load the "MYSRC.ACT" file into the editor. Further, this editor can even be used for BASIC, PASCAL, FORTH etc.
 
 ### Cross Compiler
 - [https://gury.atari8.info/effectus/](https://gury.atari8.info/effectus/) - Thank you soooo much Gury! That is totally incredible, we now can use high end editors, eclipse and have the results in a flash! We are deep in your debt! Thank you so much, really. :-)
@@ -103,12 +103,12 @@ You can use it under SpartaDOS and DosXL with "D1:ACTIONED MYSRC.ACT" to direct 
 
 ### Original ATR-Images
 - [OSS_ACTION_Programmers_Aid_Disk_100.atr](attachments/OSS_ACTION_Programmers_Aid_Disk_100.atr) - Rebuild from damaged discs and files around the world
-- [The_ACTION!_Toolkit.atr](attachments/The_ACTION!_Toolkit.atr)
+- [The_ACTION!_Toolkit.atr](attachments/The_ACTION_Toolkit.atr)
 - [The_Action_RunTime_Disk-Original.atr](attachments/The_Action_RunTime_Disk-Original.atr) - Protected image copy of the original disk from a good soul from AtariAge
-- [The_ACTION!_RunTime_Disk.atr](attachments/The_ACTION!_RunTime_Disk.atr) - Unprotected copy of the original disk from a good soul from AtariAge
-- [Original_Action!_System_Runtime_Source](../Original_Action!_System_Runtime_Source/README.md)
-- [Alternative_Action!_Runtime_Source](../Alternative_Action!_Runtime_Source/README.md)
-- [ACTION!_Runtime_von_Jeff_Reister](../ACTION!_Runtime_von_Jeff_Reister/README.md)
+- [The_ACTION!_RunTime_Disk.atr](attachments/The_ACTION_RunTime_Disk.atr) - Unprotected copy of the original disk from a good soul from AtariAge
+- [Original Action! System Runtime Source](../Original_Action_System_Runtime_Source/README.md)
+- [Alternative Action! Runtime Source](../Articles/Alternative_Action_Runtime_Source/README.md)
+- [ACTION Runtime by Jeff Reister](../ACTION_Runtime_von_Jeff_Reister/README.md)
 - [OSS_ACTION_3.6_and_REAL_files_with_DOS_XL_2.30p_Color.atr](attachments/OSS_ACTION_3.6_and_REAL_files_with_DOS_XL_2.30p_Color.atr)
 - [TURBO-DOS_XE_with_ACTION_Disk_1.atr](attachments/TURBO-DOS_XE_with_ACTION_Disk_1.atr)
 - [TURBO-DOS_XE_with_ACTION_Disk_2.atr](attachments/TURBO-DOS_XE_with_ACTION_Disk_2.atr)
@@ -146,29 +146,29 @@ Thank you Alfred
 
 ### Examples
 
-- [A_pseudo_Assembler_in_Action!](../A_pseudo_Assembler_in_Action!/README.md)
+- [A_pseudo_Assembler_in_Action!](../A_pseudo_Assembler_in_Action/README.md)
 - [ACTION!_Logo](../ACTION!_Logo/README.md) ACS
 - [ATARI Rainbow Effect](../../../ATARI_Rainbow_effect/README.md)
 - [Access Sparta DOSCommand Line Parameters](../../../Access_SpartaDOS_commandline_parameters/README.md)
-- [Atari_Fuji_Logo_in_ACTION!](../Atari_Fuji_Logo_in_ACTION!/README.md)
+- [Atari Fuji Logo in ACTION](../Examples/Atari_Fuji_Logo_in_ACTION/README.md)
 - [Atari Picture Mirror Tool](../Examples/Atari_Picture_Mirror_Tool/README.md)
-- [Atari_ST_Mouse_Driver_for_ACTION!](../Atari_ST_Mouse_Driver_for_ACTION!/README.md)
-- [BASIC_USR_Machine_Language_Call_Simulation_for_ACTION!](../BASIC_USR_Machine_Language_Call_Simulation_for_ACTION!/README.md)
-- [Backtrack_in_ACTION!](../Backtrack_in_ACTION!/README.md)
-- [Big_Symbol_Table_for_ACTION!](../Big_Symbol_Table_for_ACTION!/README.md) ACS
-- [Binary_File_Load_in_ACTION!](../Binary_File_Load_in_ACTION!/README.md)
+- [Atari ST Mouse Driver for ACTION!](../Examples/Atari_ST_Mouse_Driver_for_ACTION/README.md)
+- [BASIC USR Machine Language Call Simulation for ACTION](../../../BASIC_USR_Machine_Language_Call_Simulation_for_ACTION/README.md)
+- [Backtrack in ACTION](../Examples/Backtrack_in_ACTION/README.md)
+- [Big Symbol Table for ACTION](../Articles/Big_Symbol_Table_for_ACTION/README.md) ACS
+- [Binary File Load in ACTION](../Examples/Binary_File_Load_in_ACTION/README.md)
 - [Butterfly Demo](../Examples/Butterfly_Demo/README.md)
 - [C Style Strings](../Articles/C_Style_Strings/README.md)
 - [COM File Segment Dump](../Examples/COM_File_Segment_Dump/README.md)
 - [Catch and Throw Error Handling](../Examples/Catch_and_Throw_Error_Handling/README.md) ACS
 - [Catepill](../../../People/Carsten_Strotmann/Catepill/README.md) unfinished Game with Level editor in ACTION!
 - [Compile_to_Disk](../Articles/Compile_to_Disk/README.md) ACS
-- [DLI_in_ACTION!](../DLI_in_ACTION!/README.md)
-- [DOS Setup](../../../DOS_Setup/README.md) - A small tool to copy some files from disk to ramdisk. can be configured by a textfile.
+- [DLI in ACTION](../Articles/DLI_in_ACTION/README.md)
+- [DOS Setup](../../../DOS_Setup/README.md) - A small tool to copy some files from disk to ramdisk. Can be configured by a text file.
 - [Data Entry Routines](../Examples/Data_Entry_Routines/README.md)
 - [Date Routines](../Examples/Date_Routines/README.md) - Library of routines supporting the input, storage and manipulation of dates.
 - [Delete EOL Char in Textfiles](../Examples/Delete_EOL_Char_in_Textfiles/README.md)
-- [Displaylist_in_ACTION!](../Displaylist_in_ACTION!/README.md)
+- [Displaylist in ACTION!](../Articles/Displaylist_in_ACTION/README.md)
 - [End Procedure](../Examples/END_Procedure/README.md) - Call procedure to leave an Action Program
 - [ERROR!](../Examples/ERROR/README.md) (Converts SpartaDOS, BeWeDOS and RealDOS error # to readable text)
 - [Fast Graphics 15 Routines](../Examples/Fast_Graphics_15_Routines/README.md)
@@ -177,13 +177,13 @@ Thank you Alfred
 - [File-IO Routines](../Examples/File_IO_Routines/README.md)
 - [File Select Box](../Examples/File_Select_Box/README.md)
 - [File Select Shell](../Examples/File_Select_Shell/README.md)
-- [Game_AMAZING_in_ACTION!](../Game_AMAZING_in_ACTION!/README.md)
+- [Game AMAZING in ACTION](../Articles/Game_AMAZING_in_ACTION/README.md)
 - [Grep for Sparta DOS](../Examples/Grep_for_Sparta_DOS/README.md)
 - [Dump - Print the contents of binary files in hexadecimal and ATASCII](../Examples/HexDump/README.md) - Dump - Print the contents of binary files in hexadecimal and ATASCII
 - [Jump to DOS DUP](../Jump_to_DOS_DUP/README.md)
-- [Kermit_in_ACTION!](../Kermit_in_ACTION!/README.md)
+- [Kermit in ACTION!](../Examples/Kermit_in_Action/README.md)
 - [Load APL Display-List Files](../Load_APL_Display-List_Files/README.md)
-- [Load_Font_Files_in_ACTION!](../Load_Font_Files_in_ACTION!/README.md)
+- [Load Font Files in ACTION!](../Examples/Load_Font_Files_in_ACTION/README.md)
 - [Load Koala Pictures](../../Assembler/Examples/Load_Koala_Pictures/README.md)
 - [MiniDOS](../Examples/MiniDOS/README.md)
 - [Multi Player Animation](../Examples/Multi_Player_Animation/README.md)
@@ -241,13 +241,13 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[Action Review](../Review_Action/README.md)|#16 (02/ 84)|en|Review
 |[An Introduction to ACTION](../Articles/An_Introduction_to_ACTION/README.md) |#17 + #18 (03+ 04/ 84)|en|Tutorial
 |[Stars 3-D](../../../Stars_in_3D/README.md)|#20 (07/ 84)|en|Demo
-|[Bounce_in_ACTION!](../Bounce_in_ACTION!/README.md)|#20 (07/ 84)|en|Game
-|[Pulse_in_ACTION!](../Pulse_in_ACTION!/README.md)|#26 (01/ 85)|en|Demo
+|[Bounce in ACTION](../Examples/Bounce_in_ACTION/README.md)|#20 (07/ 84)|en|Game
+|[PULSE Game in ACTION!](../Examples/Pulse_in_ACTION/README.md)|#26 (01/ 85)|en|Demo
 |[More Fun with Bounce](../Examples/More_Fun_with_Bounce/README.md)|#27 (02/ 85)|en|Game
 |[Demon Birds](../Examples/Demon_Birds/README.md)|#28 (03/ 85)|en|Game
 |[R.O.T.O.](../../../Roto/README.md)|#31 (06/ 85)|en|Game
 |[Color the shapes](../Examples/Color_the_shapes/README.md)|#32 (07/ 85)|en|game
-|[Getting_in_on_the_Action!_1](../Getting_in_on_the_Actio_1/README.md)|#32 (07/ 85)|en|Tutorial
+|[Getting in on the Action! - Part 1](../Articles/Getting_in_on_the_Action_1/README.md)|#32 (07/ 85)|en|Tutorial
 |[Getting in on the Action! - Part 2](../Articles/Getting_in_on_the_Action_2/README.md)|#35 (10/ 85)|en|Tutorial
 |[Sneak Attack](../Sneak_attack/README.md)|#36 (11/ 85)|en|Game
 |[Air Hockey](../Examples/Air_hockey/README.md)|#38 (01/ 86)|en|Game
@@ -280,7 +280,7 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 
 ### Atari Magazine
 ||Title||Issue||Language||Comment
-|[ACTION!_Deel](../ACTION!_Deel/README.md)| |nl|A collection of Action Articles
+|[ACTION! Deel](../ACTION_Deel/README.md)| |nl|A collection of Action Articles
 
 ### CK Computer Kontakt
 ||Title||Issue||Language||Comment

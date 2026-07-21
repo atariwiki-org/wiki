@@ -9,7 +9,7 @@ Each Programmer has its own ideas how a development environment should look like
 1. then I copy the essential tools
 1. the Runtime Source --> [Original Action! System Runtime Source](../../Original_Action_System_Runtime_Source/README.md) and [Alternative Action! Runtime Source](../../Articles/Alternative_Action_Runtime_Source/README.md)
 1. the [Infoline for BASIC and ACTION!](../Infoline/README.md) Tool which gives two additional Screenlines with Information on the ACTION! System
-1. some of the Library Routines I need from --> [Action](../../Action/README.md)
+1. some of the Library Routines I need from --> [Action!](../../Action/README.md)
 
 That's all. Nothing special here :)
 
