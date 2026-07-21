@@ -5,8 +5,8 @@ __Without any doubt the very best FAQ for Atari was made by Prof. Michael Curren
 Besides the above, the intention of the Atari Wiki FAQ is to provide the reader with recent questions about this website, common problems and receipts on how to do things the right way.
 
 ## How to...
-- [get an account as an author for the Atari Wiki](../How_to_get_Wiki_edit_permissions/README.md)
-- [create new pages in the Atari Wiki](../How_to_create_new_pages_in_the_Atari_Wiki/README.md)
+- [How to get Wiki edit permissions](../Wiki/How_to_get_Wiki_edit_permissions/README.md)
+- [How to create new pages in the Atari Wiki](../Wiki/How_to_create_new_pages_in_the_Atari_Wiki/README.md)
 - [Make a PDF file](../General/Make_a_pdf_file/README.md)
 - [make wav-files from an Atari cassette](https://atarinside.dyndns.org/blog/index.php/tutorial-how-to-dump-an-old-atari-cassettetape-to-a-cas-or-wav-file/) ; mega-thanks to AtarInside for the great tutorial! :-)
 - [Convert red pages from manuals into white pages](../General/Convert_red_pages_from_manuals_into_white_pages/README.md)

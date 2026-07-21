@@ -19,10 +19,10 @@ That's all! Enjoy! :-)
 
 ## Atari BASIC–Funktionenerweiterungen
 (die Programme sind exklusiv beim PD-Service des WASEO erhältlich, Diskette 1.000):
-- [Teil 1: Modulo-Funktion](../Modulo/README.md) ; Modulo-Funktion für Atari BASIC
-- [Teil 2: Logarithmen Berechnung](../Logarithmen/README.md) ; Logarithmen Berechnung von LOGe, LOG10 und LOG2 zurückgeführt auf die 4 Grundrechenarten
-- [Teil 3: Fakultät-Funktion](../Fakultat/README.md) ; Berechnung der Fakultät mit Werten von 0 bis 68
-- [Teil 4: Alle transzendenten Funktionen](../Transzendente_Funktionen/README.md) ; Alle transzendenten Funktionen! 21 Funktionen mehr als im Atari BASIC
+- [Modulo Funktion: a MOD b](../../../../Companies/WASEO/Modulo/README.md) ; Modulo-Funktion für Atari BASIC
+- [Logarithmen Berechnung in Atari BASIC:](../../../../Companies/WASEO/Logarithmen/README.md) ; Logarithmen Berechnung von LOGe, LOG10 und LOG2 zurückgeführt auf die 4 Grundrechenarten
+- [Fakultät in Atari BASIC](../../../../Companies/WASEO/Fakultat/README.md) ; Berechnung der Fakultät mit Werten von 0 bis 68
+- [Transzendente Funktionen in Atari BASIC](../../../../Companies/WASEO/Transzendente_Funktionen/README.md) ; Alle transzendenten Funktionen! 21 Funktionen mehr als im Atari BASIC
 - [Teil 5: KOMBI.atr](attachments/KOMBI.atr) ; Kombinatorik: Permutationen, Kombinationen und Variationen ; demnächst hier
 - [Teil 6: PROZENT.atr](attachments/PROZENT.atr) ; %-Rechnung ; demnächst hier
 - [Teil 7: PRRP.atr](attachments/PRRP.atr) ; P->R und R->P ; demnächst hier
@@ -43,7 +43,7 @@ That's all! Enjoy! :-)
 - [PRIM.atr](attachments/PRIM.atr) ; Programm PRIM von der Zeitschrift Chip zur Primfaktorzerlegung von Zahlen.
 - [Heron.atr](attachments/Heron.atr) ; Heron-Verfahren zur Bestimmung des Wertes einer Quadratwurzel mit Einzelschrittverfahren
 - [Round.atr](attachments/Round.atr) ; Routine zum Runden, um den Bug in Atari Basic Revision A zu behben: Y=INT((Y+5.0E-03)*100)/100
-- [Blitzrechnen-Würfel](../Blitzrechnen/README.md) ; Blitzrechnen-Würfel: schneller rechnen als ein Taschenrechner ; das Progrmm ist exklusiv beim PD-Service des WASEO erhältlich, Diskette #1.000.
+- [Blitzrechnen in Atari BASIC:](../../../../Companies/WASEO/Blitzrechnen/README.md) ; Blitzrechnen-Würfel: schneller rechnen als ein Taschenrechner ; das Progrmm ist exklusiv beim PD-Service des WASEO erhältlich, Diskette #1.000.
 - [Atari_Disc_Master_Menu_with_DOS_II_2.0S.atr](attachments/Atari_Disc_Master_Menu_with_DOS_II_2.0S.atr) ; deutsches Atari Disc Master Menu mit DOS II 2.0S zum smarten starten von mehreren BASIC-Programmen.
 
 ## Beispiele

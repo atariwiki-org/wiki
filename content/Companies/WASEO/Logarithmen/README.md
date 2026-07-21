@@ -39,7 +39,7 @@ Hier ist der Atari deutlich flexibler. :-)
 
 Alternativ kann man in den XL- und XE-Rechnern auch das ganze Fließkommapaket austauschen, gegen eines, das fehlerfrei funktioniert:
 
-[Fließkommaberechnung für den Atari](../FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md) ; Schnelle und korrekte Fließkommaberechnung für den Atari
+[FAST FLOATING POINT source code for the ATARI](../../../OS/Floating_Point_ROM/FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md) ; Schnelle und korrekte Fließkommaberechnung für den Atari
 
 Unser großer Dank geht hier an: Newell Industries & Charles W. Marslett für die Bereitstellung des Quelltextes und Konrad M. Kokoszkiewicz für die Korrektur.
 

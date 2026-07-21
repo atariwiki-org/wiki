@@ -14,7 +14,7 @@ Einzige vorhandene Spur von: __BASIC für Fortgeschrittene__, vorgesehen für de
 
 ## Nachweise
 Den 3. Kurs gab es für Atari US/UK, BeNeLux und Frankreich. Wahrscheinlich auch für Italien sowie Spanien.
-- [An Invitation to Programming 3 CX4117](../An_Invitation_to_Programming_3_CX4117/README.md)
+- [An Invitation to Programming 3-Introduction to Sound and Graphics (CX4117)](../../Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_3_CX4117/README.md)
 - [Programmeren... Hoe Doe Je Dat (Deel 3)](../Programmeren..._Hoe_Doe_Je_Dat_(Deel_3)/README.md) ; thanks to Fred_M from AtariAge
 - [ATARI CX-4117 C Initiation à la Programmation en Basic (Cours n°3)](http://www.rhod.fr/pages/basic3.html) ; thanks to rhod
 - [Invito a programmare 1](https://www.atarinside.com/blog/index.php/atarinside-items/invito-a-programmare-1/) ; thanks to [ATARInside](https://www.atarinside.com/blog/index.php/atarinside-items/invito-a-programmare-1/) at least course 1 surfaced :-)
