@@ -9,20 +9,20 @@
 - [All you ever wanted to know about: Atari Cartridges](../Cartridges/README.md)
 
 ## Controllers
-- [Controller_topics](../Controller_topics/README.md)
+- [Controller_topics](../Memory_Map/README.md#Controller_topics)
 - [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md)
 - [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 - [Atari Trackball](../Trackball/README.md)
 - [Atari Light Pen CX70](../Companies/Atari/Atari_CX70_Light_Pen/README.md)
 - [Atari Touch Tablet (CX77)](../Companies/Atari/Atari_CX77_Touch_Tablet/README.md)
 - [Atari Trak-Ball controller (CX80)](../Companies/Atari/Atari_CX80_Trak-Ball_controller/README.md)
-- [Atari CX85 Numerical Keypad](../Companies/Atari/AtariCX85/README.md)
+- [Atari CX85 Numerical Keypad](../Companies/Atari/Atari_CX85/README.md)
 
 ## Computers
 - [Atari 400 - MISSING](../Companies/Atari/Atari_400/README.md)
 - [Atari 800 - MISSING](../Companies/Atari/Atari_800/README.md)
 - [Atari 1200XL- MISSING](../Companies/Atari/Atari_1200XL/README.md)
-- [Atari_800XL](../Atari_800XL/README.md)
+- [Atari 800XL - MISSING](../Companies/Atari/Atari_800XL/README.md)
 - [Atari 600XL - MISSING](../Companies/Atari/Atari_600XL/README.md)
 - [Atari 130XE - MISSING](../Companies/Atari/Atari_130XE/README.md)
 - [Atari 65XE - MISSING](../Companies/Atari/Atari_65XE/README.md)
@@ -38,10 +38,10 @@
 - [Atari XF551 Disk Drive](../Companies/Atari/Atari_XF551/README.md)
 
 ### Third Party Disk Drives
-- [Happy Computers Floppy Upgrade](../Happy_Computers_Upgrades/README.md)
-- [CompyShop_Speedy_Upgrades](../CompyShop_Speedy_Upgrades/README.md)
-- [Turbo1050_Upgrades](../Turbo1050_Upgrades/README.md)
-- [XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
+- [Happy Computers Floppy Upgrade](../Happy_Computers/README.md)
+- [CompyShop_Speedy_Upgrades](../CompyShop/README.md)
+- [Turbo1050_Upgrades](../1050_Turbo/README.md)
+- [XF551 Indexlochabfrage - Indexhole Detection Upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
 - [Floppy 2000](Disk_Drives/Floppy_2000/README.md)
 - [High-Density Disk Interface (HDI)](../People/Erhard_Puetz/HDI_Interface/README.md) (aka Floppy 3000)
 - [Indus GT DD Floppy Drive](../Companies/Indus_Systems/Indus_GT/README.md)
@@ -76,12 +76,11 @@
 - [Atari XDM121 Daisy Wheel Printer- MISSING](../Companies/Atari/ATARI_XDM121_Daisy_Wheel_Printer/README.md)
 
 ## Tape Drives
-- [ATARI_410](../ATARI_410/README.md)
-- [ATARI_1010](../ATARI_1010/README.md)
+- [Atari 410 - MISSING](../Companies/Atari/Atari_410/README.md)
+- [Atari 1010 - MISSING](../Companies/Atari/Atari_1010/README.md)
 - [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
-- [ATARI_XC11](../ATARI_XC11/README.md)
-- [ATARI_XC12_-_XCA12_-_CA12](../ATARI_XC12_-_XCA12_-_CA12/README.md)
-- [ATARI_XL12](../ATARI_XL12/README.md)
+- [Atari XC11 - MISSING](../Companies/Atari/Atari_XC11/README.md)
+- [Atari XC12 - MISSING](../Companies/Atari/Atari_XC12/README.md)
 - [All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
 
 ## Video Upgrades

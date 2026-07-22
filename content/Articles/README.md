@@ -34,7 +34,7 @@
 - [Atari 400 - MISSING](../Companies/Atari/Atari_400/README.md)
 - [Atari 800 - MISSING](../Companies/Atari/Atari_800/README.md)
 - [Atari 1200XL- MISSING](../Companies/Atari/Atari_1200XL/README.md)
-- [Atari_800XL](../Atari_800XL/README.md)
+- [Atari 800XL - MISSING](../Companies/Atari/Atari_800XL/README.md)
 - [Atari 600XL - MISSING](../Companies/Atari/Atari_600XL/README.md)
 - [Atari 130XE - MISSING](../Companies/Atari/Atari_130XE/README.md)
 - [Atari 65XE - MISSING](../Companies/Atari/Atari_65XE/README.md)
@@ -61,7 +61,7 @@
 - [Happy Computers Floppy Upgrade](../Happy_Computers_Upgrades/README.md)
 - [CompyShop_Speedy_Upgrades](../CompyShop_Speedy_Upgrades/README.md)
 - [Turbo1050_Upgrades](../Turbo1050_Upgrades/README.md)
-- [XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
+- [XF551 Indexlochabfrage - Indexhole Detection Upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
 - [Custom Disk Format Routine](../Companies/CompyShop/Speedy_1050_Upgrades/Custom_Disk_Format_Routine/README.md) (Atari 1050 with Compy Shop Speedy)
 - [Indus GT Field Service Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md)* [Indus GT Firmware ROM Disassembly](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
 - [Indus GT Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md)
@@ -70,10 +70,10 @@
 
 
 ## Tape Recorders
-- [ATARI_410](../Atari_410/README.md)
-- [ATARI_1010](../Atari_1010/README.md)
+- [Atari 410 - MISSING](../Companies/Atari/Atari_410/README.md)
+- [Atari 1010 - MISSING](../Companies/Atari/Atari_1010/README.md)
 - [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
-- [ATARI_XC11](../Atari_XC11/README.md)
+- [Atari XC11 - MISSING](../Companies/Atari/Atari_XC11/README.md)
 - [ATARI_XC12_-_XCA12_-_CA12](../Atari_XC12_-_XCA12_-_CA12/README.md)
 - [ATARI_XL12](../Atari_XL12/README.md)
 - [All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB

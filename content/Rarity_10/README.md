@@ -111,7 +111,7 @@ OSS Newsletter - Winter 1987
 
 •) __OSS MAC/65 MACDO.M65__ - file published by OSS via BBS
 
-•) __OSS Action!__ Graphics Utilities Library and Shape Editor for [Action!](../Action/README.md) 
+•) __OSS Action!__ Graphics Utilities Library and Shape Editor for [Action!](../Languages/Action/README.md) 
 
 ---
 •) __Synapse Software__: __SynMail__; was finished according to Steve Hales, but after SynCalc und SynFile+ never sold to the public. So, somewhere out there, it may exists
