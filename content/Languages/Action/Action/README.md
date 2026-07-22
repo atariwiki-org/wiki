@@ -57,7 +57,7 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 ### Manuals and Docs
 - [Action Manual](https://sourceforge.net/p/atari-action/code/ci/master/tree/JAC/doc/action-manual.pdf?format=raw) - The complete latest version of the manual in English. Created and updated by GoodByteXL. There is no better version worldwide! Thank you so much GoodByteXL. We are deep in your debt! :-)))
 - [Action Handbuch](https://sourceforge.net/p/atari-action/code/ci/master/tree/JAC/doc/action-manual-de.pdf?format=raw) - Das komplette, vollständige, restaurierte und überarbeitete Action Handbuch in Deutsch! Der totale Hammer, inkl. Editor, Monitor, Language, Compiler, Library, Run Time, Toolkit. Vollständig überarbeitete Version von GoodByteXL. So müssen PDF-Dateien aussehen, es gibt weltweit nichts vergleichbares. AtariWiki empfiehlt die PDF-Datei auf das Wärmste! Wer diese nicht lädt, ist selber schuld. Wir bedanken uns an dieser Stelle sehr, sehr herzlich bei GoodByteXL für seine lange andauernde und intensive Arbeit an diesem Werk, dass er hiermit der Atari-Gemeinschaft zur Verfügung stellt. GoodByteXL mega-Danke für Deine Arbeit, die Gemeinschaft steht tief in Deiner Schuld. :-)))
-- [The_ACTION!_Toolkit](../The_ACTION!_Toolkit/README.md)
+- [The Action! Toolkit](../The_ACTION_Toolkit/README.md)
 - [The Action! Run Time Package](../The_ACTION_Run_Time_Package/README.md)
 - [ACTION! Reference Card](../ACTION_Reference_Card/README.md)
 - [ACTION! error codes](../ACTION_error_codes/README.md)
@@ -68,8 +68,8 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ### Tutorials
-- [Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION!_Program](../Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION!_Program/README.md)
-- [Action!_and_BBS_Express!_PRO_Tutorial](../Action!_and_BBS_Express_PRO_Tutorial/README.md)
+- [Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION_Program](../Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION!_Program/README.md)
+- [Action! and BBS Express! PRO Tutorial](../Action_and_BBS_Express_PRO_Tutorial/README.md)
 - [Larry's Action! Tutorial](../Articles/Larrys_Action_Tutorial/README.md)
 - [How to setup an ACTION! Development Disk](../Examples/How_to_setup_an_ACTION_Development_Disk/README.md)
 - [Action! Programming for Atari 8-bit Computers](https://www.youtube.com/watch?v=yQ8ABW8rY40&list=PL5FYYzC9Hpgog9GPsJRtshMP0wpHrxb2J) video tutorial series
@@ -119,7 +119,7 @@ You can use it under SpartaDOS and DosXL with "D1:ACTIONED MYSRC.ACT" to directl
 
 at this point AtariWiki must give the highest award possible:
 
-- [Action!_Source_Code](../Action_Source_Code/README.md)
+- [Action! Source Code](../Action_Source_Code/README.md)
 Thank you so much Mr. Parker, we can't thank you enough for what you have done for us.
 
 ![](attachments/Thank_you_Mr._Parker.jpg)
@@ -132,22 +132,22 @@ Thank you Alfred from AtariAge for extracting the editor source code for generat
 Thank you Alfred
 
 ### Functions
-- [Misc_useful_ACTION!_Functions](../Misc_useful_ACTION!_Functions/README.md) - (DIVERS.ACT)
+- [Misc useful ACTION! Functions](../Examples/Misc_useful_ACTION_Functions/README.md) - (DIVERS.ACT)
 - [Chartest](../Examples/Chartest/README.md) - a group of routines which perform various functions and tests on characters.
 - [Fast Screen IO](../../../Fast_Screen_IO/README.md)
 - [Player Missile Module](../../../Player_Missile/README.md)
 - [String Library](../Examples/String_Library_PSC/README.md) - (STRING.ACT)
 
 ### Mini-Runtime LIBs
-- [_Intro](../Articles/_Intro/README.md) (Eine kleine Einführung zu den Mini-LIBs)
+- [Intro zu den Mini-LIBs!](../Articles/_Intro/README.md) (Eine kleine Einführung zu den Mini-LIBs)
 - [Simple PRINT Runtime!](../Articles/_Intro/Simple_PRINT_Runtime/README.md) (Mini-LIB)
-- [ZERO_and_SETBLOCK](../Articles/_Intro/ZERO_and_SETBLOCK/README.md) (RT Part)
+- [ZERO and SETBLOCK!](../Articles/_Intro/ZERO_and_SETBLOCK/README.md) (RT Part)
 
 
 ### Examples
 
-- [A_pseudo_Assembler_in_Action!](../A_pseudo_Assembler_in_Action/README.md)
-- [ACTION!_Logo](../ACTION!_Logo/README.md) ACS
+- [A Pseudo Assembler in Action!](../A_pseudo_Assembler_in_Action/README.md)
+- [ACTION! Logo](../ACTION_Logo/README.md) ACS
 - [ATARI Rainbow Effect](../../../ATARI_Rainbow_effect/README.md)
 - [Access Sparta DOSCommand Line Parameters](../../../Access_SpartaDOS_commandline_parameters/README.md)
 - [Atari Fuji Logo in ACTION](../Examples/Atari_Fuji_Logo_in_ACTION/README.md)
@@ -162,7 +162,7 @@ Thank you Alfred
 - [COM File Segment Dump](../Examples/COM_File_Segment_Dump/README.md)
 - [Catch and Throw Error Handling](../Examples/Catch_and_Throw_Error_Handling/README.md) ACS
 - [Catepill](../../../People/Carsten_Strotmann/Catepill/README.md) unfinished Game with Level editor in ACTION!
-- [Compile_to_Disk](../Articles/Compile_to_Disk/README.md) ACS
+- [Compile to Disk](../Articles/Compile_to_Disk/README.md) ACS
 - [DLI in ACTION](../Articles/DLI_in_ACTION/README.md)
 - [DOS Setup](../../../DOS_Setup/README.md) - A small tool to copy some files from disk to ramdisk. Can be configured by a text file.
 - [Data Entry Routines](../Examples/Data_Entry_Routines/README.md)
@@ -269,7 +269,7 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[Killer Chess](../Articles/Killer_Chess/README.md)|Vol. 6 #10 (02/ 88)|en|Game
 |[Reardoor](../Articles/Reardoor/README.md)|Vol. 6 #10 (02/ 88)|en|Game
 |[Frog from Antic Vol. 6 #10 February 1988](../Articles/Frog/README.md)|Vol. 6 #10 (02/ 88)|en|Game
-|[ACTION!_Toolbox](../ACTION!_Toolbox/README.md)|Vol. 7 #6 (10/ 88)|en|Lightning-fast command finder (Wordfind and Matchup)
+|[ACTION!_Toolbox](../ACTION_Toolbox/README.md)|Vol. 7 #6 (10/ 88)|en|Lightning-fast command finder (Wordfind and Matchup)
 
 ### ATARI''magazin''
 ||Title||Issue||Language||Comment

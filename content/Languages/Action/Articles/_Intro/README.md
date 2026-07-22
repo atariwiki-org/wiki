@@ -1,4 +1,4 @@
-### Intro zu den Mini-LIBs!
+# Intro zu den Mini-LIBs!
 
 Um in ACTION! eigene Programme unabhängig vom Modul lauffähig zu machen benötigt man die Runtime Library. Dies ist grundsätzlich kein wirkliches Problem. Aber:
 

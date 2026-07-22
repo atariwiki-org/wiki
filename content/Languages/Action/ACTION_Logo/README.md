@@ -1,4 +1,4 @@
-ACTION! Logo
+# ACTION! Logo
 
 General Information
 Author: 	Clinton Parker
