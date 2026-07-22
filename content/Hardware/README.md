@@ -38,9 +38,9 @@
 - [Atari XF551 Disk Drive](../Companies/Atari/Atari_XF551/README.md)
 
 ### Third Party Disk Drives
-- [Happy Computers Floppy Upgrade](../Happy_Computers/README.md)
-- [CompyShop_Speedy_Upgrades](../CompyShop/README.md)
-- [Turbo1050_Upgrades](../1050_Turbo/README.md)
+- [Happy Computers Inc.](../Companies/Happy_Computers/README.md)
+- [CompyShop](../Companies/CompyShop/README.md)
+- [1050 Turbo Upgrade](../Companies/Bernhard_Engl/1050_Turbo/README.md)
 - [XF551 Indexlochabfrage - Indexhole Detection Upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
 - [Floppy 2000](Disk_Drives/Floppy_2000/README.md)
 - [High-Density Disk Interface (HDI)](../People/Erhard_Puetz/HDI_Interface/README.md) (aka Floppy 3000)
@@ -67,7 +67,7 @@
 - [Atari 820 - 40-Cloumn Printer - MISSING](../Companies/Atari/Atari_820_40-column_printer/README.md)
 - [Atari 822 Thermal Printer](../Companies/Atari/Atari_822_Thermal_Printer/README.md)
 - [Atari 825 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_825_Dot_Matrix_Printer/README.md)
-- [ATARI_1020_Plotter](../ATARI_1020_Plotter/README.md)
+- [ATARI_1020_Plotter](../Companies/Atari/Atari_1020/README.md)
 - [Atari 1025 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_1025_Dot_Matrix_Printer/README.md)
 - [Atari 1027 -Letter Quality Printer - MISSING](../Companies/Atari/ATARI_1027_Letter_Quality_Printer/README.md)
 - [Atari 1027 Printer, OS Timeout Fix](../Companies/Atari/Atari_1027_Printer_-_OS_Timeout_Fix/README.md)
