@@ -25,7 +25,7 @@
 | Extreme Memory 512MB (reported by HIAS) | sometimes working | [DeviceDescriptors](../USBStorageDevInfoExtremeMemoryFiveOneTwoMB/README.md) | |
 | __USB Harddisk__ | | | |
 | Cypress USB2IDE Adapter (in a Trekstore USB Harddisk) | working | [USBDOS](../ProjUSBCartUsbDos/README.md) | [USBDOS](../ProjUSBCartUsbDos/README.md) |
-| [Targa Databox III 300 (300 GB Harddrive)](http://www.targa.de/index.jsp?SID=0&NAV=236&DOC=&PAGE=463&PCAT=2&PROD=119&PTUBE=2&PARAMS=undefined&PARAMS2=undefined&SPCAREA=undefined) | working | [DeviceDescriptors](../ProjUSB/USBStorageDevInfoTrageDataboxIII/README.md) | [USBDOS](../ProjUSBCartUsbDos/README.md) |
+| [Targa Databox III 300 (300 GB Harddrive)](http://www.targa.de/index.jsp?SID=0&NAV=236&DOC=&PAGE=463&PCAT=2&PROD=119&PTUBE=2&PARAMS=undefined&PARAMS2=undefined&SPCAREA=undefined) | working | [DeviceDescriptors - MISSING](../ProjUSB/USBStorageDevInfoTrageDataboxIII/README.md) | [USBDOS](../ProjUSBCartUsbDos/README.md) |
 |  LaCie USB Harddrive | mostly working | [DeviceDescriptors](../USBStorageDevInfoLaCieHD/README.md) | [USBDOS](../ProjUSBCartUsbDos/README.md) |
 | __USB CDROM/CD-RW__ | | | |
 | One-Technologies  AluWRITER CDRW 52/24/52 USB 2.0 | working | [DeviceDescriptors](../USBStorageDevInfoAluWriter/README.md) | |

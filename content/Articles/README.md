@@ -58,9 +58,9 @@
 - [Trak_AT-D2](../Trak_AT-D2/README.md)
 
 ### Disk Drive Enhancements
-- [Happy Computers Floppy Upgrade](../Happy_Computers_Upgrades/README.md)
-- [CompyShop_Speedy_Upgrades](../CompyShop_Speedy_Upgrades/README.md)
-- [Turbo1050_Upgrades](../Turbo1050_Upgrades/README.md)
+- [Happy Computers Inc.](../Companies/Happy_Computers/README.md)
+- [Speedy 1050](../Companies/CompyShop/Speedy_1050_Upgrades/README.md)
+- [1050 Turbo Upgrade](../Companies/Bernhard_Engl/1050_Turbo/README.md)
 - [XF551 Indexlochabfrage - Indexhole Detection Upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
 - [Custom Disk Format Routine](../Companies/CompyShop/Speedy_1050_Upgrades/Custom_Disk_Format_Routine/README.md) (Atari 1050 with Compy Shop Speedy)
 - [Indus GT Field Service Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md)* [Indus GT Firmware ROM Disassembly](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
@@ -74,8 +74,7 @@
 - [Atari 1010 - MISSING](../Companies/Atari/Atari_1010/README.md)
 - [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
 - [Atari XC11 - MISSING](../Companies/Atari/Atari_XC11/README.md)
-- [ATARI_XC12_-_XCA12_-_CA12](../Atari_XC12_-_XCA12_-_CA12/README.md)
-- [ATARI_XL12](../Atari_XL12/README.md)
+- [Atari XC12 - MISSING](../Companies/Atari/Atari_XC12/README.md)
 - [All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
 
 ## Printers
@@ -121,10 +120,10 @@
 - [Sprachbox XL/XL](../Sprachbox-xl-xe/README.md)
 
 ## Cartridges
-- [Blueprint_of_ACTION!_Cart](../Blueprint_of_ACTION!_Cart/README.md)
+- [Blueprint of ACTION! Cart](../Companies/OSS/ACTION/Blueprint_of_ACTION_Cart/README.md)
 - [AtariMax EXEPACKER Files with bundled DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
 - [ARGS RS232 Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (deutsch)
-- [The!Card](../The!Card/README.md)
+- [The!Cart](../TheCart/README.md)
 - [All you ever wanted to know about: Atari Cartridges](../Cartridges/README.md)
 
 ## Others
