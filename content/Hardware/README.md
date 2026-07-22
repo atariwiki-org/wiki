@@ -67,7 +67,7 @@
 - [Atari 820 - 40-Cloumn Printer - MISSING](../Companies/Atari/Atari_820_40-column_printer/README.md)
 - [Atari 822 Thermal Printer](../Companies/Atari/Atari_822_Thermal_Printer/README.md)
 - [Atari 825 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_825_Dot_Matrix_Printer/README.md)
-- [ATARI_1020_Plotter](../Companies/Atari/Atari_1020/README.md)
+- [Atari 1020 Plotter - MISSING](../Companies/Atari/Atari_1020/README.md)
 - [Atari 1025 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_1025_Dot_Matrix_Printer/README.md)
 - [Atari 1027 -Letter Quality Printer - MISSING](../Companies/Atari/ATARI_1027_Letter_Quality_Printer/README.md)
 - [Atari 1027 Printer, OS Timeout Fix](../Companies/Atari/Atari_1027_Printer_-_OS_Timeout_Fix/README.md)

@@ -481,6 +481,7 @@
       - [ProjUSBConvThreePic](Hardware/USB/ProjUSB/ProjUSBConvThreePic/README.md)
       - [ProjUSBConvTwoPic](Hardware/USB/ProjUSB/ProjUSBConvTwoPic/README.md)
       - [ProjUSBVCFePic](Hardware/USB/ProjUSB/ProjUSBVCFePic/README.md)
+      - [USBStorageDevInfoTrageDataboxIII](Hardware/USB/ProjUSB/USBStorageDevInfoTrageDataboxIII/README.md)
     - [USB_Cartridge](Hardware/USB/USB_Cartridge/README.md)
     - [USB_Steering_Wheel_Driver](Hardware/USB/USB_Steering_Wheel_Driver/README.md)
 - [HDISource](HDISource/README.md)
