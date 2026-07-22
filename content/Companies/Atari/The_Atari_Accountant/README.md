@@ -109,7 +109,7 @@ __- Working versions:__ created by DjayBee from AtariAge ; you __don't(!)__ need
 
 ## Manuals
 
-The below manuals can be refer to the amateur league, for ultra professional pdf files, AtariWiki highly recommends the created pdf files by GoodByteXL from AtariAge. You won't get better ones, worldwide! For an example, please see: [ACTION! manual 3rd edition](../Action/README.md). On the other hand, sometimes this requires to retype letter by letter the whole book...
+The below manuals can be refer to the amateur league, for ultra professional pdf files, AtariWiki highly recommends the created pdf files by GoodByteXL from AtariAge. You won't get better ones, worldwide! On the other hand, sometimes this requires to retype letter by letter the whole book...
 
 - [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-OCR-Index-Print.pdf](../../../../media/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Print.pdf) ; size: 22.4 MB (#) ; (*)
 - [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-OCR-Index-Screen.pdf](../../../../media/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Screen.pdf) ; size: 14.5 MB (#) ; (*)

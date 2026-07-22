@@ -122,7 +122,7 @@
 
 ## Cartridges
 - [Blueprint_of_ACTION!_Cart](../Blueprint_of_ACTION!_Cart/README.md)
-- [AtariMax_EXEPACKER_Files_with_bundled_DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
+- [AtariMax EXEPACKER Files with bundled DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
 - [ARGS RS232 Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (deutsch)
 - [The!Card](../The!Card/README.md)
 - [All you ever wanted to know about: Atari Cartridges](../Cartridges/README.md)
@@ -190,7 +190,7 @@
 
 ### Calculation & Graphics
 - [Atari Calculator (CX8102)](../Companies/Atari/Atari_Calculator/README.md)
-- [Atari Graph It I & II (CX4109 (Englisch), TXG9517 (deutsch))](../Atari_Graph_It_I_and_II/README.md)
+- [Atari Graph It I & II (CX4109 (Englisch), TXG9517 (deutsch))](../Companies/Atari/Atari_Germany/Atari_Graph_It_I_and_II/README.md)
 - [Atari Home Finance](../Companies/Atari/Atari_Home_Finance/README.md)
 - [Atari Investment Analysis Series](../Companies/Atari/Atari_Investment_Analysis_Series/README.md)
   - [Bond Analysis CX8106](../Companies/Atari/Bond_Analysis/README.md) 

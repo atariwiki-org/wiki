@@ -4,7 +4,7 @@
 
 ## Cartridges
 - [Blueprint of ACTION! Cart](../Companies/OSS/ACTION/Blueprint_of_ACTION_Cart/README.md)
-- [AtariMax_EXEPACKER_Files_with_bundled_DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
+- [AtariMax EXEPACKER Files with bundled DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
 - [ARGS RS232 Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (deutsch)
 - [All you ever wanted to know about: Atari Cartridges](../Cartridges/README.md)
 

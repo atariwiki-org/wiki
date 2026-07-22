@@ -13,7 +13,7 @@ Das Handbuch in elektronischer Form (PDF-Datei, s. u.) entspricht dem originalen
 Erst in 2017 konnten die folgenden Entdeckungen gemacht werden und in die Seite eingearbeitet werden:
 
 - Die 1. Version erschien 1980 von Atari und wurde von Lane Winner programmiert. Alle Programme mussten mit einem Vorprogramm von Kassette geladen werden
-- Eine [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](../Companies/Atari/Enhancements_to_Graph_It/README.md) erschien 1982 zuerst unter dem Label APX-20074, indem Howard D. Siebenrock die bestehende 1. Version wesentlich erweiterte.
+- Eine [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](../../Enhancements_to_Graph_It/README.md) erschien 1982 zuerst unter dem Label APX-20074, indem Howard D. Siebenrock die bestehende 1. Version wesentlich erweiterte.
 - Eine 3. Version erschien 1983 von Atari in Deutschland, indem Code der 2. Version von Howard D. Siebenrock in die 1. Version eingebaut wurde und abschließend offiziell von Atari Elektronik-Vertriebsgesellschaft mbH als Graph It II verkauft wurde. Interessant ist hierbei, dass auf dem Box-Cover lediglich Graph It zu lesen ist, jedoch das Handbuch, als auch die Kassetten das Label "Graph It II" tragen. Bei dieser Version wurde jeweils auf das Vorprogramm beim Laden von Kassette verzichtet, siehe Boxcover 2 im Kapitel Bilder weiter unten. Ferner wurde auch die ursprüngliche Reihenfolge der Programme auf den Kassetten geändert, s. Bilder weiter unten.
 
 Nach derzeitigem Stand sieht es so aus, als ob Atari bei allen Kassettenprogrammen, welche ein derartiges Cover hatten, gänzlich auf ein Vorladeprogramm verzichtet hat.
@@ -100,7 +100,7 @@ Atari Graph It TXG9517 (deutsch, 1983) alle Kassetten-Images auf einem Disk-Imag
 
 ## Handbücher:
 Für den Bildschirm optimiertes Handbuch (englisch) als PDF-Datei (3,1 MB): [Graph_It_CX4109_Screen_Version.pdf](attachments/Graph_It_CX4109_Screen_Version.pdf) 
-Für den Drucker optimiertes Handbuch (englisch) als PDF-Datei (849,6 MB): [Graph_It_CX4109_Print_Version.pdf](../../media/Atari_Graph_It_I_and_II/attachments/Graph_It_CX4109_Print_Version.pdf) 
+Für den Drucker optimiertes Handbuch (englisch) als PDF-Datei (849,6 MB): [Graph_It_CX4109_Print_Version.pdf](../../../../../media/Atari_Graph_It_I_and_II/attachments/Graph_It_CX4109_Print_Version.pdf) 
 
 ## Source Codes:
 1. Version von 1980: [1Balken-alt-190_lines.txt](attachments/1Balken-alt-190_lines.txt) ; vom Unterprogramm: Kreis- und Balkendiagramme; 69 Sektoren ; 190 Zeilen Code
@@ -201,7 +201,7 @@ Graph It II- Kassette B - Seite 2 - Polardarstellung ; Danke an Mr. Bacardi!
 ## Autoren:
 
 Version 1980: [Lane Winner](http://www.atarimania.com/list_utilities_atari-400-800-xl-xe-winner-lane_team_2574_8_U.html) 
-Version 1982-1983: [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](../Companies/Atari/Enhancements_to_Graph_It/README.md) 
+Version 1982-1983: [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](../../Enhancements_to_Graph_It/README.md) 
 
 ## Danksagung:
 

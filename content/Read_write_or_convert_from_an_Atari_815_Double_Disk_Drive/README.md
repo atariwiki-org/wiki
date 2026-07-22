@@ -1,6 +1,6 @@
 # Read, write or convert from an Atari 815 Double Disk Drive
 
-One of the major spin-offs from the [The Atari Accountant](../The_Atari_Accountant_Series/README.md), thanks to Curt Vendel, is, that we now have the knowledge and technology to read, write and convert data from an Atari 815 Double Disk Drive.
+One of the major spin-offs from the [The Atari Accountant](../Companies/Atari/The_Atari_Accountant/README.md), thanks to Curt Vendel, is, that we now have the knowledge and technology to read, write and convert data from an Atari 815 Double Disk Drive.
 
 Ryan Goolevitch and Joachim Baßmann had the same idea at the same time independently from each other. Here it is:
 
@@ -16,7 +16,7 @@ So, with this in mind and the outstanding program: [xorfiles.exe copyright (c) 2
 
 Hex-Dump of the FF.atr:
 ![](attachments/HEX-Dump1.jpg)
-Hex-Dump of the FF.atr - first sector ; please take into account the marked row 1 (first 16 hex bytes) has to be unchanged
+Hex-Dump of the FF.atr - first sector; please take into account the marked row 1 (first 16 hex bytes) has to be unchanged
 
 ![](attachments/HEX-Dump2.jpg)
 Hex-Dump of the FF.atr - last sector
@@ -29,7 +29,7 @@ Hex-Dump of the FF.atr - last sector
 ## References
 - [The Atari Accountant Series on atari8bit.net](https://atari8bit.net/the-atari-accountant/)
 
-- [What's so specialabout the 815 on AtariAge](http://atariage.com/forums/topic/278709-whats-so-special-about-the-815/)
+- [What's so special about the 815 on AtariAge](http://atariage.com/forums/topic/278709-whats-so-special-about-the-815/)
 
 - [Atari 815 - what's inside on AtariAge](http://atariage.com/forums/topic/186285-atari-815-whats-inside/)
 

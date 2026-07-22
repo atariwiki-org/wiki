@@ -8,7 +8,7 @@ Enhancements to Graph It is not just an update to the existing Atari Graph It CX
 
 First, you need the original Atari Graph It CX4109 cassettes:
 
-[Atari Graph It CX4109 cassettes](../Atari_Graph_It/README.md) 
+[Atari Graph It I & II (CX4109 (Englisch), TXG9517 (deutsch))](../Atari_Germany/Atari_Graph_It_I_and_II/README.md) 
 
 Then load each program into BASIC, merge the program with the corresponding program via the ENTER "D:...-command from Howard's diskette and store the resulting file to a new working disk. This must be done 4 times, due to the 4 programs in Atari Graph It CX4109. Luckily these procedure has just to be done once. :-)
 
@@ -41,14 +41,15 @@ Enhancements to Graph It - Original Disk Content
 
 ## ATR-Images:
 - [Saved_Plots.atr](attachments/Saved_Plots.atr) ; all plots from the original Graph It manual, this time with Enhancements to Graph It; stored in suffix-format below
-- [Atari Graph It CX4109 cassettes](../Atari_Graph_It/README.md) ; all cassettes are on one atr-diskette-image
+- [Atari Graph It I & II (CX4109 (Englisch), TXG9517 (deutsch))](../Atari_Germany/Atari_Graph_It_I_and_II/README.md) ; all cassettes are on one atr-diskette-image
 - [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock-Original.atr](http://gury.atari8.info/details_software/1026.php) ; the original APX-diskette-image on Bostjan Gorisek's great site
 - [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock-Working.atr](attachments/Enhancements_to_Graph_It_APX-20074_C_1982_Howard_D._Siebenrock-Working.atr) ; working, already merged program on an atr-image
 ## Manuals:
-- [Atari Graph It CX4109 cassettes](../Atari_Graph_It/README.md) ; please see here for the original, corrected and bug free Graph It-manual
+- [Atari Graph It I & II (CX4109 (Englisch), TXG9517 (deutsch))](../Atari_Germany/Atari_Graph_It_I_and_II/README.md) ; please see here for the original, corrected and bug free Graph It-manual
 - [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock](attachments/Enhancements_to_Graph_It_APX-20074_C_1982_Howard_D._Siebenrock.pdf) ; size: 7.8 MB
 ## ZIP-Images:
 - [Screenshots.zip](attachments/Screenshots.zip) all plots from the original Graph It manual, this time with Enhancements to Graph It and in JPG-format; size: 1.4 MB
+
 ## Suffix:
 Suffix '*' Delete Files
 Suffix 'D2D' XY Plot-File
@@ -56,7 +57,9 @@ Suffix 'D3D' XYZ Plot-File
 Suffix 'DAB' Bar Chart-File
 Suffix 'DAP' Pie Graph-File
 Suffix 'DPL' Polar Plot-File
+
 ## Author: If you would like to contact the author: 9309 W. 98 Court Westminster, CO 80020, U.S.A.
+
 ## Acknowledgments:
 - Howard D. Siebenrock
 - Allan from AtariAge
@@ -68,43 +71,43 @@ Suffix 'DPL' Polar Plot-File
 - Bostjan Gorisek
 
 ## Examples:
-![](attachments/02.+Sales+Increase.jpg)
+![](attachments/02._Sales_Increase.jpg)
 Enhancements to Graph It - Sales Increase
 
-![](attachments/03.+Five+Month+Budget.jpg)
+![](attachments/03._Five_Month_Budget.jpg)
 Enhancements to Graph It - Five Month Budget
 
-![](attachments/04.+Federal+Reserve.jpg)
+![](attachments/04._Federal_Reserve.jpg)
 Enhancements to Graph It - Federal Reserve
 
-![](attachments/11.+Flower-Polar+Plot-1.jpg)
+![](attachments/11._Flower-Polar_Plot-1.jpg)
 Enhancements to Graph It - Flower-Polar Plot-1
 
-![](attachments/12.+Flower-Polar+Plot-2.jpg)
+![](attachments/12._Flower-Polar_Plot-2.jpg)
 Enhancements to Graph It - Flower-Polar Plot-2
 
-![](attachments/13.+Flower-Polar+Plot-3.jpg)
+![](attachments/13._Flower-Polar_Plot-3.jpg)
 Enhancements to Graph It - Flower-Polar Plot-3
 
-![](attachments/19.+3D-Plot-1.jpg)
+![](attachments/19._3D-Plot-1.jpg)
 Enhancements to Graph It - 3D-Plot-1
 
-![](attachments/20.+3D-Plot-2.jpg)
+![](attachments/20._3D-Plot-2.jpg)
 Enhancements to Graph It - 3D-Plot-2
 
-![](attachments/21.+3D-Plot-3.jpg)
+![](attachments/21._3D-Plot-3.jpg)
 Enhancements to Graph It - 3D-Plot-3
 
-![](attachments/22.+3D-Plot-4.jpg)
+![](attachments/22._3D-Plot-4.jpg)
 Enhancements to Graph It - 3D-Plot-4
 
-![](attachments/Two+Dimensional+Plots-1.jpg)
+![](attachments/Two_Dimensional_Plots-1.jpg)
 Enhancements to Graph It - Two Dimensional Plots-1
 
-![](attachments/Two+Dimensional+Plots-2.jpg)
+![](attachments/Two_Dimensional_Plots-2.jpg)
 Enhancements to Graph It - Two Dimensional Plots-2
 
-![](attachments/Two+Dimensional+Plots-3.jpg)
+![](attachments/Two_Dimensional_Plots-3.jpg)
 Enhancements to Graph It - Two Dimensional Plots-3
 
 

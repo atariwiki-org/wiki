@@ -1,4 +1,4 @@
-### AtariMax EXEPACKER Files with bundled DOS
+# AtariMax EXEPACKER Files with bundled DOS
 
 ## About
 The current (Januar 2004) AtariMax Flashcart Software is very well suited for Games, either Disk-Bootable Games or File-Games. But if you try to use Applications from the Flash-Cart, there are some shortcomings:
