@@ -13,10 +13,10 @@ Version 2.25
 - [The_Writer_s_Tool-Dictionary.atr](attachments/The_Writer_s_Tool-Dictionary_Disk.atr)
 
 ## Manual:
-- [The Writer's Tool, Version 2.2 Manual](../../media/The_Writer_s_Tool/attachments/The_Writer_s_Tool-Version-2.2_Manual_with_bookmarks.pdf) ; size: 22 MB ; mega-thanks goes to MrFish from AtariAge for creating such an excellent manual with links! :-)))
-- [The Writer's Tool, Version 2.2 Manual](../../media/The_Writer_s_Tool/attachments/The_Writer_s_Tool-Version_2.2_Manual.pdf) ; size: 18.9 MB
+- [The Writer's Tool, Version 2.2 Manual](../../../../media/The_Writer_s_Tool/attachments/The_Writer_s_Tool-Version-2.2_Manual_with_bookmarks.pdf) ; size: 22 MB ; mega-thanks goes to MrFish from AtariAge for creating such an excellent manual with links! :-)))
+- [The Writer's Tool, Version 2.2 Manual](../../../../media/The_Writer_s_Tool/attachments/The_Writer_s_Tool-Version_2.2_Manual.pdf) ; size: 18.9 MB
 - [The Writer's Tool-Reference Card](attachments/The_Writer_s_Tool-Reference_Card.pdf) ; size: 4.3 MB ; thanks to Atarimania for the pdf file
-- [The Writer's Tool-Errata Sheet](../../media/The_Writer_s_Tool/attachments/The_Writer_s_Tool-Errata_Sheet.pdf) ; size: 8.2 MB ; thanks to Atarimania for the pdf file
+- [The Writer's Tool-Errata Sheet](../../../../media/The_Writer_s_Tool/attachments/The_Writer_s_Tool-Errata_Sheet.pdf) ; size: 8.2 MB ; thanks to Atarimania for the pdf file
 - [The Writer's Tool-Warranty Card](attachments/The_Writer_s_Tool-Warranty_Card.pdf) ; size: 2.7 MB ; thanks to Atarimania for the pdf file
 
 ## Quick Reference Cards:

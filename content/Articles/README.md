@@ -285,7 +285,7 @@
 - [Atari Writer 8036](../Companies/Atari/Atari_Writer/README.md)
 - [Atari Proofreader (AX2033)](../Companies/Atari/Atari_Proofreader/README.md)
 - [Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Germany/Atari_Schreiber/README.md)
-- [OSS The Writer's Tool](../The_Writer_s_Tool/README.md)
+- [The Writer's Tool](../Companies/OSS/The_Writer_s_Tool/README.md)
 - [AUSTRO.TEXT](../Companies/AUSTRO.COM/AUSTRO.TEXT/README.md)
 
 ## [Atari 8-bit Software Preservation Initiative](http://a8preservation.com/#/home)
