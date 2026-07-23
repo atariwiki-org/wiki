@@ -519,7 +519,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Blackjack](../Companies/Atari/Atari_Benelux/Blackjack/README.md)
 
 #### Demo
-- [Atari Demo disk (DXN 411)](../Companies/Atari/Atari_Demo_Disk/README.md)
+- [Atari Demo disk (DXN 411)](../Companies/Atari/Atari_Benelux/Atari_Demo_Disk/README.md)
 
 ### United Kingdom - Atari Corporation UK
 
