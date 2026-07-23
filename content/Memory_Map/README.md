@@ -607,7 +607,8 @@
 # 4-color Characters
 The color of each pixel (4 in a line instead of the usual 8) depends on the bit combination of the byte in the character definition.
 
-||Bit Pair||Color||Address dec||Address hex||comment
+|Bit Pair|Color|Address dec|Address hex|comment
+|--------|-----|-----------|-----------|-------
 |00|[COLOR4](#COLOR4) BAK|712|$02C8|
 |01|[COLOR0](#COLOR0) PF0|708|$02C4|
 |10|[COLOR1](#COLOR1) PF1|709|$02C5|
