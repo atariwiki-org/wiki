@@ -141,7 +141,7 @@ Atari Schreiber - Tastatur-Aufkleber für die deutsche Version inkl. Umlaute ; V
 ![](attachments/Atari_Schreiber-Diskette2.jpg)
 Atari Schreiber Diskette - Version 1 - von [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber/), vielen lieben Dank fürs Scannen
 
-![](attachments/Atari+Schreiber+Diskette.jpg)
+![](attachments/Atari_Schreiber_Diskette.jpg)
 Atari Schreiber Diskette - Version 2
 
 ![](attachments/Atari_Schreiber_Diskette.png)

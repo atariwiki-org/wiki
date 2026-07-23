@@ -68,7 +68,7 @@ If we go far ahead of this, then even an interbreed with the [TURBO-BASIC XL sou
 ![](attachments/The_Atari_Assembler.jpg)
 - [The Atari Atari Assembler Editor-Don Inman, Kurt Inman](http://www.atarimania.com/documents-atari-400-800-xl-xe-books_1_8.html) ; Mega-Thanks to Atarimania for hosting!!!
 
-![](attachments/Der+Atari+Assembler.jpg)
+![](attachments/Der_Atari_Assembler.jpg)
 - [Der Atari Atari Assembler Editor-Don Inman, Kurt Inman](http://www.atarimania.com/documents-atari-400-800-xl-xe-books_1_8.html) ; Mega-Thanks to Atarimania for hosting!!!
 
 ## Hint
@@ -115,7 +115,7 @@ Atari Assembler Editor Box Cover - back German version
 - [Atari Assembler Editor discussion on AtariAge](http://atariage.com/forums/topic/193906-atari-assembler-editor-cartridge-and-inline-comments/?hl=atari+assembler+editor#entry2463276) ; discussion on AtariAge about the Atari Assembler Editor
 
 ## Changing the editors color and background
-![](attachments/Change+Editor+Color.jpg)
+![](attachments/Change_Editor_Color.jpg)
 Assembler Editor Cartridge - changing the editor's color and background to user desired colors for better editing
 
 ## Hello World! Source Code for the Atari Assembler Editor
