@@ -1,6 +1,6 @@
 # Articles
 
-- [3D Printer Files](../3D_Printer_Files/README.md)
+- [3-D Printer Files](../3D_Printer_Files/README.md)
 - [SIO plug](../SIO_plug/README.md)
 
 # Cassette
