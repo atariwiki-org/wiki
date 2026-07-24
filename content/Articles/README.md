@@ -387,7 +387,7 @@ All of the following have no page yet
 - [Artikelverwaltung](../Companies/Atari/Atari_Germany/Artikelverwaltung/README.md)
 - [Atari Bundesligatabellen (DXG 55005)](../Companies/Atari/Atari_Germany/Bundesligatabelle/README.md)
 - [Disketten-Bibliothek (DXG 5720)](../Companies/Atari/Atari_Germany/Diskettenbibliothek/README.md)
-- [Karteikartenprogramm (DXG_415)](../Companies/Atari/Atari_Germany/Karteikartenprogramm/README.md)
+- [Karteikartenprogramm (DXG 415)](../Companies/Atari/Atari_Germany/Karteikartenprogramm/README.md)
 - [Vereinsverwaltung](../Vereinsverwaltung/README.md)
 - [Sport-Lexikon](../Sport-Lexikon/README.md)
 
