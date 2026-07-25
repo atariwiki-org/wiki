@@ -644,7 +644,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 ### Applications
 - [Atari Calculator (CX8102)](../Companies/Atari/Atari_Calculator/README.md)
 - [SynCalc](../Companies/Synapse_Software/SynCalc/README.md)
-- [The_Writer's_Tool](../The_Writer's_Tool/README.md)
+- [The Writer's Tool](../Companies/OSS/The_Writer_s_Tool/README.md))
 
 ### Disk Operating Systems (DOS)
 - [Atari DOS 2.0S Source Code](http://data.atariwiki.org/DOC/Inside_Atari_DOS_GBXL.pdf) ; Inside Atari DOS-Bill Wilkinson ; size: 39.8 MB
