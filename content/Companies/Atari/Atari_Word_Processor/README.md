@@ -10,7 +10,7 @@
 - Reference Card
 
 ## ATR-Images:
-![](attachments/Diskette+Labels.jpg)
+![](attachments/Diskette_Labels.jpg)
 Diskette Labels
 - [The ATARI Word Processor Program Master Diskette CX8119.atx](attachments/The_ATARI_Word_Processor_Program_Master_Diskette_CX8119.atx) ; verified atx image of the untouched original diskette including protection. Thank you so much Farb from AtariAge for finding out. We really appreciate your help! Please go ahead. :-)))
 - [The_ATARI_Word_Processor-Version_1.0-ATR_build_from_ATX.atr](attachments/The_ATARI_Word_Processor-Version_1.0-ATR_build_from_ATX.atr) ; atr image build from the above atx image. Thank you so much DjayBee from AtariAge for finding out, doing the investigation and building a version ready for all emulators. We really appreciate your help! Please go ahead. :-)))
@@ -21,7 +21,7 @@ Diskette Labels
 - [The Atari Word Processor Demonstration Data Kit CX8128.atx](attachments/Atari_Word_Processor_Demonstration_Data_Kit_1981AtariUS.atx) ; verified atx image of the untouched original diskette. Thank you so much Farb from AtariAge for providing this. We really appreciate your help! Please go ahead. :-)))
 
 ## Cassette (WAV- and FLAC format) from the original cassette, which contains audio content only:
-![](attachments/The+Atari+Word+Processor+Audio+Master+Cassette+CX4122+Side+1.jpg)
+![](attachments/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_1.jpg)
 The Atari Word Processor Audio Master Cassette CX4122 Side 1
 - [The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_1.wav](../../../../media/Atari_Word_Processor/attachments/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_1.wav) Size: 30.5 MB ; wav-file from Allan Bushman, thank you so much Allan!
 - [The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_2.wav](../../../../media/Atari_Word_Processor/attachments/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_2.wav) Size: 22.7 MB ; wav-file from Allan Bushman, thank you so much Allan!
@@ -70,25 +70,25 @@ SHFT TAB SCROLL RIGHT 20 COLUMNS
 CTRL X 	 DELETE LINE
 
 ## Pictures:
-![](attachments/The+Atari+Wordprocessor+1.0.jpg)
+![](attachments/The_Atari_Wordprocessor_1.0.jpg)
 The Atari Wordprocessor 1.0
 
-![](attachments/The_AtariWriter_Wordprocessor_CX404-62+pages.jpg)
+![](attachments/The_AtariWriter_Wordprocessor_CX404-62_pages.jpg)
 The Atari Wordprocessor CX404 - space for 62 pages on a SSSD disk with DOS II 2.0S
 
-![](attachments/Atari+Word+Processor-Box-CX404.jpg)
+![](attachments/Atari_Word_Processor-Box-CX404.jpg)
 The Atari Wordprocessor CX404-Box
 
-![](attachments/AtariWriter+Wordprocessor+CX404-4.jpg)
+![](attachments/AtariWriter_Wordprocessor_CX404-4.jpg)
 The Atari Wordprocessor CX404-1
 
-![](attachments/AtariWriter+Wordprocessor+CX404-5.jpg)
+![](attachments/AtariWriter_Wordprocessor_CX404-5.jpg)
 The Atari Wordprocessor CX404-2
 
-![](attachments/Atari+Word+Processor-Training+Manual.jpg)
+![](attachments/Atari_Word_Processor-Training_Manual.jpg)
 The Atari Wordprocessor CX404-Training Manual
 
-![](attachments/Accessories+Required.jpg)
+![](attachments/Accessories_Required.jpg)
 Accessories Required
 
 ![](attachments/The_Atari_Word_Processor_Program_Master_Diskette_CX8119.jpg)

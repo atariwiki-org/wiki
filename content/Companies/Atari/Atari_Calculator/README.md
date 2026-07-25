@@ -27,7 +27,7 @@ The Calculator requires 24K of RAM.
 ![](attachments/Calculator_selling.jpg)
 Atari Calculator description 1
 
-![](attachments/Atari+Calculator+description.jpg)
+![](attachments/Atari_Calculator_description.jpg)
 Atari Calculator description 2
 
 Please do not use MEM.SAV with DOS. Instead use the SAVEM as well as the LOADM command of Calculator to store and load the user memory to other programs and/or devices.

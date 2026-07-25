@@ -11,10 +11,10 @@
 ## Images
 ![](attachments/Dow_Jones_Information_Services-User_s_Guide.jpg)
 Dow Jones Information Services-User's Guide - Cover
-![](attachments/Dow+Jones+Investment+Evaluator+1.jpg)
+![](attachments/Dow_Jones_Investment_Evaluator_1.jpg)
 Dow Jones Investment Evaluator CX412 - description 1
 
-![](attachments/Dow+Jones+Investment+Evaluator+2.jpg)
+![](attachments/Dow_Jones_Investment_Evaluator_2.jpg)
 Dow Jones Investment Evaluator CX412 - description 2
 
 ## Remote Services

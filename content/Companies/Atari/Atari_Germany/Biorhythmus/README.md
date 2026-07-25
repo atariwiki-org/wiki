@@ -13,10 +13,10 @@ Bitte beachten Sie, dass die deutsche Version noch den Y2K-Bug enthält und dahe
 - [Atari_Biorhythmus_CX4107_und_DXG_5727_deutsch-englisch_Basic_komplett.atr](attachments/Atari_Biorhythmus_CX4107_und_DXG_5727_deutsch-englisch_Basic_komplett.atr) ;
 - [Atari_Biorhythmus_DXG_5727_deutsch_Basic_16K_mit_Y2K-Bug--HH-READY-Version.atr](attachments/Atari_Biorhythmus_DXG_5727_deutsch_Basic_16K_mit_Y2K-Bug--HH-READY-Version.atr) ; deutsche, geänderte Version von HH-READY mit dem Y2K-Bug
 ## Bilder
-![](attachments/Cover+1-D.jpg)
+![](attachments/Cover_1-D.jpg)
 Atari Biorhythmus DXG 5727 - Box - Vorderseite - Dank an Atarimania für den Scan
 
-![](attachments/Cover+2-D.jpg)
+![](attachments/Cover_2-D.jpg)
 Atari Biorhythmus DXG 5727 - Box - Rückseite - Dank an Atarimania für den Scan
 
 ![](attachments/Biorhythmus1_.jpg)

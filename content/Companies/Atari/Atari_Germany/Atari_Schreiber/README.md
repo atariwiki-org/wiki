@@ -120,7 +120,7 @@ Zu bedenken ist, dass es sich hierbei um reinen Text handelt, keine Grafiken, ke
 
 ## Bilder
 
-![](attachments/Atari_Schreiber-Boxhu%CC%88lle-RXG_8036.jpg)
+![](attachments/Atari_Schreiber-Boxhuelle-RXG_8036.jpg)
 Atari Schreiber - Boxhülle für die ROM-Version - Mega-Danke an [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber-2/) für den guten Scan und danke fürs Weiterleiten an uns. Gute Arbeit! Bitte weiter so. :-)
 
 ![](attachments/Atari_Schreiber_DXG_8036-Cover.jpg)

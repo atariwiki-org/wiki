@@ -20,5 +20,5 @@ ATARI TELELINK I advertising
 ![](attachments/Telelink_I.jpg)
 ATARI TELELINK I cartridge
 
-![](attachments/Telelink+I.jpg)
+![](attachments/Telelink_I.jpg)
 ATARI TELELINK I startscreen

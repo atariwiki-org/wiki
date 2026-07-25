@@ -19,32 +19,32 @@ Timewise Master Diskette (Model DX5047) - Diskette directory under normal DOS II
 ![](attachments/Loading.jpg)
 Atari Timewise at starting
 
-![](attachments/Insert+Data+Disk.jpg)
+![](attachments/Insert_Data_Disk.jpg)
 Atari Timewise - Insert Data Disk call
 
-![](attachments/Main+Menu.jpg)
+![](attachments/Main_Menu.jpg)
 Atari Timewise - Main Menu
 
 ![](attachments/Appointments.jpg)
 Atari Timewise - Appointments
 
-![](attachments/Monthly+Calendar.jpg)
+![](attachments/Monthly_Calendar.jpg)
 Atari Timewise - Monthly Calendar
 
 
-![](attachments/Add+New+Appointments.jpg)
+![](attachments/Add_New_Appointments.jpg)
 Atari Timewise - Add New Appointments
 
-![](attachments/Inquire-Update+Appointments.jpg)
+![](attachments/Inquire-Update_Appointments.jpg)
 Atari Timewise - Inquire-Update Appointments
 
 
-![](attachments/File+Maintenance.jpg)
+![](attachments/File_Maintenance.jpg)
 Atari Timewise - File Maintenance
 
-![](attachments/ad+1.png)
+![](attachments/ad_1.png)
 Atari Timewise - advertising 1
 
-![](attachments/ad+2.png)
+![](attachments/ad_2.png)
 Atari Timewise - advertising 2
 

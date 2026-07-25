@@ -14,16 +14,16 @@ Copyright (C) 1980 Atari, Inc. under license from Control Data Corporation
 - [Control Data Corporation in wikipedia](https://en.wikipedia.org/wiki/Control_Data_Corporation)
 
 ## Advertisements
-![](attachments/Atari+Investment+Analysis+Series+1.jpg)
+![](attachments/Atari_Investment_Analysis_Series_1.jpg)
 Bond Analysis CX8106 and Stock Analysis CX8107
 
-![](attachments/Atari+Investment+Analysis+Series+2.jpg)
+![](attachments/Atari_Investment_Analysis_Series_2.jpg)
 Mortgage & Loan Analysis CX4115 and Stock Charting CX8108
 
-![](attachments/Atari+Investment+Analysis+Series+3.jpg)
+![](attachments/Atari_Investment_Analysis_Series_3.jpg)
 Bond Analysis CX8106 and Mortgage & Loan Analysis CX4115
 
-![](attachments/Atari+Investment+Analysis+Series+4.jpg)
+![](attachments/Atari_Investment_Analysis_Series_4.jpg)
 Stock Analysis CX8107 and Stock Charting CX8108
 
 ![](attachments/CDC-Logo.png)
