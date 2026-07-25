@@ -22,7 +22,7 @@
 - [OS Diffs Atari 800 <-> Atari XL/XE Series](../OS/Atari_OS/DiffOldOs2XL/README.md)
 - [Ironman Atari - A Compilation of Advanced Atari 8-bit Programming Techniques](../Ironman_Atari/README.md) A compilation of advanced Atari 8-bit programming techniques
 - [Mode, Setcolor, Color Table](../Languages/BASIC/Atari_BASIC/Mode_Setcolor_Color_Table/README.md)
-- [Table_of_Modes_and_Screen_Format](../Table_of_Modes_and_Screen_Format/README.md)
+- [Table_of_Modes_and_Screen_Format](../Memory_Map/README.md#Table_of_Modes_and_Screen_Format)
 - [Unleash the power of Ataris CPU](../Unleash_the_power_of_Ataris_CPU/README.md)
 
 # Graphics
@@ -54,8 +54,8 @@
 - [ASTRA 2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
 - [Indus GT DD Floppy Drive](../Companies/Indus_Systems/Indus_GT/README.md)
 - [Percom AT-88](../Companies/Percom/Percom_AT-88/README.md)
-- [Rana_1000](../Rana_1000/README.md)
-- [Trak_AT-D2](../Trak_AT-D2/README.md)
+- Rana_1000 - MISSING
+- Trak_AT-D2  - MISSING
 
 ### Disk Drive Enhancements
 - [Happy Computers Inc.](../Companies/Happy_Computers/README.md)
@@ -81,7 +81,7 @@
 - [Atari 820 - 40-Cloumn Printer - MISSING](../Companies/Atari/Atari_820_40-column_printer/README.md)
 - [Atari 822 Thermal Printer](../Companies/Atari/Atari_822_Thermal_Printer/README.md)
 - [Atari 825 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_825_Dot_Matrix_Printer/README.md)
-- [ATARI_1020_Plotter](../Atari_1020_Plotter/README.md)
+- [Atari 1020 Plotter - MISSING](../Companies/Atari/Atari_1020/README.md)
 - [Atari 1025 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_1025_Dot_Matrix_Printer/README.md)
 - [Atari 1027 -Letter Quality Printer - MISSING](../Companies/Atari/ATARI_1027_Letter_Quality_Printer/README.md)
 - [Atari 1027 Printer, OS Timeout Fix](../Companies/Atari/Atari_1027_Printer_-_OS_Timeout_Fix/README.md)
@@ -111,7 +111,7 @@
 - [Atari Light Pen CX70](../Companies/Atari/Atari_CX70_Light_Pen/README.md)
 - [Atari Touch Tablet (CX77)](../Companies/Atari/Atari_CX77_Touch_Tablet/README.md)
 - [Atari Trak-Ball controller (CX80)](../Companies/Atari/Atari_CX80_Trak-Ball_controller/README.md)
-- [Atari CX85 Numerical Keypad](../Companies/Atari/AtariCX85/README.md)
+- [Atari CX85 Numerical Keypad](../Companies/Atari/Atari_CX85/README.md)
 - [Atari Trackball](../Trackball/README.md)
 - [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 
@@ -463,18 +463,19 @@ All of the following have no page yet
 ### Italy - Atari Italia S.p.A.
 The below broken links will be filled up with content in the future, meanwhile, please visit the incredible work from pioneers in that field:
 
+```
 - [https://www.atarinside.com/blog/index.php/atari-italy/](https://www.atarinside.com/blog/index.php/atari-italy/) ; thank you so much Marsupilami from AtariAge, that is of great help and an even more greater step for a better Europe. Thank you.
 - [https://www.santellocco.com/atari/biblioteca.htm](https://www.santellocco.com/atari/biblioteca.htm) ; Thank you so much Philsan from AtarAge, that is a major and giant leap to fully restore Atari Italy. Thank you so much, please go ahead.
 - [https://www.santellocco.com/atari/programmi.htm](https://www.santellocco.com/atari/programmi.htm) ; Thank you so much Philsan from AtarAge, that is a major and giant leap to fully restore Atari Italy. Thank you so much, please go ahead.
 
-*[Affrettati + Capovolto - (Cassette: CXT 9501)](../Affrettati___Capovolto/README.md) 
+*[Affrettati + Capovolto - (Cassette: CXT 9501)](../Affrettati_and__Capovolto/README.md) 
 *[Archiviatutto L' - (Disk: CXT 0415)](../Archiviatutto_L'/README.md) 
 *[Assembler Editor - (Cartridge: CXLT 4003)](../Assembler_Editor/README.md) 
 *[AtariWriter - (Disk: DXT 8036)](../AtariWriter/README.md) 
-*[Aufgepasst + Battaglia degli insetti - (Cassette: CXT 5710)](../Aufgepasst___Battaglia_degli_insetti/README.md) 
+*[Aufgepasst + Battaglia degli insetti - (Cassette: CXT 5710)](../Aufgepasst_and_Battaglia_degli_insetti/README.md) 
 *[Bioritmi - (Cassette: CXT 4107)](../Bioritmi/README.md) 
-*[Boccone + Frecce indicatricci - (Cassette: CXT 9502)](../Boccone___Frecce_indicatricci/README.md) 
-*[Cara Caramella + Caos - (Cassette: CXT 5706)](../Cara_Caramella___Caos/README.md) 
+*[Boccone + Frecce indicatricci - (Cassette: CXT 9502)](../Boccone_and_Frecce_indicatricci/README.md) 
+*[Cara Caramella + Caos - (Cassette: CXT 5706)](../Cara_Caramella_and_Caos/README.md) 
 *[Disk Fixer - (Disk: DXT 5729)](../Disk_Fixer_DXT5729/README.md) 
 *[Golf + Le travi gemelle - (Cassette:	CXT 9503)](../Golf___Le_travi_gemelle/README.md) 
 *[Grafica - (Disk: DXT 4109)](../Grafica/README.md) 
@@ -485,11 +486,12 @@ The below broken links will be filled up with content in the future, meanwhile, 
 *[Macro Assembler e Text Editor - (Disk: CX 8121)](../Macro_Assembler_e_Text_Editor/README.md) 
 *[Microsoft BASIC II (DX5046)](../Languages/BASIC/Microsoft_BASIC/Microsoft_BASIC_II/README.md) 
 *[Scram - (Disk: DXT 4123)](../Scram/README.md) 
-*[Stati e capitali d'europa - (Cassette + Disk: DXT 4114)](../Stati_e_capitali_d'europa/README.md) 
+*[Stati e capitali d'europa - (Cassette + Disk: DXT 4114)](../Stati_e_capitali_d_europa/README.md) 
 *[Statistica - (Disk: DXT 4103)](../Statistica/README.md) 
-*[UFO + Veloci come il fulmine - (Cassette: CXT 5711)](../UFO___Veloci_come_il_fulmine/README.md) 
+*[UFO + Veloci come il fulmine - (Cassette: CXT 5711)](../UFO_and_Veloci_come_il_fulmine/README.md) 
 *[Utility 1 - (Disk: DXT 5725)](../Utility_1/README.md) 
 *[Utility 2 - (Disk: DXT 5726)](../Utility_2/README.md) 
+```
 
 ### Netherlands - Atari (Benelux) B.V.
 
@@ -681,7 +683,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [OSS MAC XL](Mac65)
 - [OSS MAC XE](Mac65)
 - [OSS DDT](DDT)
-- [Synapse_Assembler](../Synapse_Assembler/README.md)
+- [Synapse Assembler 'SynAssembler' by Steve Hales.](../Companies/Synapse_Software/SynAssembler/README.md)
 - [A65 Assembler](../Languages/Assembler/A65_Assembler/README.md)
 - [Bibo-Assembler](attachments/BIBO.asm)
 

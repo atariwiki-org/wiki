@@ -9,9 +9,11 @@ Business Communications CX6010 - box cover - thanks to Allan Bushmann for taking
 
 ![](attachments/Atari_Business_Communication_back.jpg)
 Business Communications CX6010 - box back - thanks to Allan Bushmann for taking the picture
+
 ## Content
-![](attachments/Business+Communications+CX6010.jpg)
+![](attachments/Business_Communications_CX6010.jpg)
 Content of Business Communications CX6010
+
 ## Cassette-images in FLAC-format
 ![](attachments/Atari_Business_Communications_Tape_A_Side_1.jpg)
 Business Communications CX6010 - Cassette A-Side 1 - thanks to Allan Bushmann for taking the picture

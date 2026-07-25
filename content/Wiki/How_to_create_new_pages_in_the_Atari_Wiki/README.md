@@ -8,9 +8,10 @@ __Still a working place, please stand by for more info in the future__
 
 Many tools are collected in this RTF file: [AtariWiki-Tools.rtf](attachments/AtariWiki-Tools.rtf) 
 
-![](attachments/Atari_Calculator.jpg)
-Calculator after a little calculation
-
+```
+- Calculator after a little calculation<br>
+  ![](attachments/Atari_Calculator.jpg)
+```
 
 ```
 ORG+$068B LDX #36
