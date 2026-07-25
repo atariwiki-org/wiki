@@ -1,5 +1,6 @@
-.git
-.vs
+.DS_Store
+.git/
+.vs/
 /media/
 AtariWikiChecker.log
 AtariWikiChecker.md
