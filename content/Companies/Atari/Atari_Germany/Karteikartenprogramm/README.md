@@ -10,10 +10,10 @@ Copyright (C) 1982 Atari, Inc.
 
 ## Bilder
 ![](attachments/Karteikartenprogramm.jpg)<br>
-Karteikartenprogramm - Startbildschirm
+Karteikartenprogramm - Startbildschirm<br><br>
 
 ![](attachments/Cover.jpg)<br>
-Karteikartenprogramm - Box Cover - Danke an Atarimania
+Karteikartenprogramm - Box Cover - Danke an Atarimania<br>
 
 ![](attachments/Back.jpg)<br>
-Karteikartenprogramm - Box Back - Danke an Atarimania
+Karteikartenprogramm - Box Back - Danke an Atarimania<br>
