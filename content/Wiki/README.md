@@ -10,9 +10,10 @@ To find and fix problems, two tools exist.
 ## [Markdown Checker](https://github.com/john0isaac/markdown-checker)
 
 This is an open-source tool for checking Markdown files written in Python.
-You can use the Python package installer as follows:
-- `pip install markdown-checker` to install and
-- `pip install --upgrade markdown-checker` to update an existing installation.
+- Install Python from https://www.python.org/
+- Install pip from https://pip.pypa.io/en/stable/installation/
+- In the terminal, run `pip install markdown-checker` to install and
+- In the terminal, run `pip install --upgrade markdown-checker` to update an existing installation.
 
 You can run the tool by executing the scripts in the "/bin" folder.
 - `CheckMarkdown-Loop.bat`
