@@ -50,7 +50,7 @@ made out of the FLAC-Images:
 ## Pictures:
 ![](attachments/ATARI_Conversational_French.jpg) Box cover (C) 1980 Atari
 
-![](attachments/ATARI+Conversational+FRENCH+CX4119-2.jpg) Box back(C) 1980 Atari
+![](attachments/ATARI_Conversational_FRENCH_CX4119-2.jpg) Box back(C) 1980 Atari
 
 ![](attachments/Conversational_FRENCH-CX4119-1.jpg) Unit 1 lesson
 

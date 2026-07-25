@@ -43,7 +43,7 @@ __(bislang haben wir leider keine originale Diskette gefunden, welche noch nie i
 ![](attachments/AUSTRO.TEXT.png)
 AUSTRO.TEXT - Startscreen von Version 1.30
 
-![](attachments/Installationsmenu+AUSTRO.TEXT.png)
+![](attachments/Installationsmenu_AUSTRO.TEXT.png)
 AUSTRO.TEXT - Installationsmenu von Version 1.30
 
 ![](attachments/Diskette.jpg)

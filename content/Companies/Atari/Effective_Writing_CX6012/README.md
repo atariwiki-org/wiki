@@ -1,7 +1,7 @@
 # Effective Writing CX6012
 
 ## Content:
-![](attachments/Effective+Writing_CX6012.jpg)
+![](attachments/Effective_Writing_CX6012.jpg)
 Content of Effective Writing CX6012
 
 

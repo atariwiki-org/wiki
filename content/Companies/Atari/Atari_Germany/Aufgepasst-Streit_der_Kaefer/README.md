@@ -31,7 +31,7 @@ Aufgepaßt-Streit der Käfer TXG 9510 - Box Rückansicht - Dank an Atarimania f�
 ![](attachments/Aufgepasst-TXG_9510-Seite_A.jpg)
 Aufgepaßt-Streit der Käfer TXG 9510 - Seite 1
 
-![](attachments/Streit_der_Kaefer-TXG_9510-Seite+B.jpg)
+![](attachments/Streit_der_Kaefer-TXG_9510-Seite_B.jpg)
 Aufgepaßt-Streit der Käfer TXG 9510 - Seite 2
 
 ![](attachments/Aufgepasst-TXG_9510-Seite_A-1.jpg)

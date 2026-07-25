@@ -27,10 +27,10 @@ Family Finances box cover
 ![](attachments/Family_Finances_2.jpg)
 Family Finances box content
 
-![](attachments/Family_Finances_II_Budget_Program-Data_Diskette_CX8142_.jpg)
+![](attachments/Family_Finances_II_Budget_Program-Data_Diskette_CX8142.jpg)
 Family Finances I (Cash Flow) Program-Data Diskette CX8141
 
-![](attachments/Family_Finances_I_%Cash_Flow_Program-Data_Diskette_CX8141_.jpg)
+![](attachments/Family_Finances_I_Cash_Flow_Program-Data_Diskette_CX8141.jpg)
 Family Finances II (Budget) Program-Data Diskette CX8142
 
 ![](attachments/Family_Finances_Ad.jpg)

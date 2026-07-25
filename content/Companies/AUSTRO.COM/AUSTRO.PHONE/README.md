@@ -35,7 +35,7 @@ __Leider haben wir derzeit kein Handbuch zu AUSTRO.PHONE. Jede Hilfe hierzu ist 
 ![](attachments/AUSTRO.PHONE.png)
 AUSTRO.PHONE - Startscreen von Version 1.03
 
-![](attachments/Installationsmenu+AUSTRO.PHONE.png)
+![](attachments/Installationsmenu_AUSTRO.PHONE.png)
 AUSTRO.PHONE - Installationsmenu von Version 1.03
 
 ![](attachments/AUSTRO.Phone_Menu.jpg)

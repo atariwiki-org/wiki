@@ -21,7 +21,7 @@ Here are some visions for further developments:
 ![](attachments/scram_k7.jpg)
 Box cover of SCRAM
 
-![](attachments/Scram+box.jpg)
+![](attachments/Scram_box.jpg)
 Box content of SCRAM
 
 ![](attachments/scram_2.gif)

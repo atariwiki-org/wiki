@@ -1,6 +1,6 @@
 # Atari CX85 Numerical Keypad
 
-![](attachments/AtariCX85%2FAtari-CX85.jpg)
+![](attachments/Atari-CX85.jpg)
 
 ## Source
 [Wikipedia](http://en.wikipedia.org/wiki/Atari_8-bit_computer_peripherals) 
@@ -10,7 +10,7 @@
 - [Atari CX85 Numerical Keypad-Technical Reference Notes - 2 pages](attachments/Atari_CX85_Numerical_Keypad-Technical_Reference_Notes.pdf) (PDF)
 - [Atari CX85 Numerical Keypad-Technical Reference Notes - 1 page](../../../../media/AtariCX85/attachments/Atari_CX85_Numerical_Keypad_Technical_Reference_Notes_1_page.pdf) (PDF) ; size: 10.5 MB
 - [Atari CX85 Numerical Keypad-Field Service Manual](attachments/atari_cx85_field_service_manual_screen.pdf) (PDF)
-![](attachments/CX+85+Field+Service+Manual.jpg)
+![](attachments/CX_85_Field_Service_Manual.jpg)
 Atari CX85 Numerical Keypad - Field Service Manual - Thank you so much Bill Lange! :-))) We can't thank you enough to bring that ultra rare document to the light.
 
 ## ATR-Images
@@ -38,8 +38,10 @@ Atari CX85 Numerical Keypad - Field Service Manual - Thank you so much Bill Lang
 ```
 
 ## Images
-![](attachments/AtariCX85%2FCX85_1.jpg)
+![](attachments/CX85_1.jpg)
 Atari CX85 Numerical Keypad - Diskette - front side
 
-![](attachments/AtariCX85%2FCX85_2.jpg)
+![](attachments/CX85_2.jpg)
 Atari CX85 Numerical Keypad - Diskette - back side
+
+![](attachments/The_Atari_CX85_Master_Diskette_CX8139.jpg)

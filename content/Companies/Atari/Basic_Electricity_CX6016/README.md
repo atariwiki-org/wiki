@@ -3,11 +3,11 @@
 Donated by Allan Bushman: Allan, thousand thanks from the Atari community for your outstanding help! :-)
 
 ## Boxcover:
-![](attachments/Basic+Electricity+CX6016_.jpg)
+![](attachments/Basic_Electricity_CX6016_.jpg)
 Boxcover of Basic Electricity CX6016
 
 ## Content:
-![](attachments/Official+content.jpg)
+![](attachments/Official_content.jpg)
 Content of Basic Electricity CX6016
 
 

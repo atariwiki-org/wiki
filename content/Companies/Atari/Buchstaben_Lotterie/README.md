@@ -40,7 +40,7 @@ Dieses Spiel enthält insgesamt 250 unterschiedlich schwierige Worte. Langeweile
 ![](attachments/4.jpg)
 Box-Cover der Atari Buchstabenlotterie
 
-![](attachments/Buchstabenlotterie+-+D7+-+DXG+-+5705+-+D7.jpg)
+![](attachments/Buchstabenlotterie_-_D7_-_DXG_-_5705_-_D7.jpg)
 Atari Buchstabenlotterie-Diskette
 
 ![](attachments/2.jpg)

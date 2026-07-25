@@ -36,7 +36,7 @@ Please take into account, that Enhancements to Graph It is from 1982, but with t
 ![](attachments/Intro.jpg)
 Enhancements to Graph It - Intro Screen
 
-![](attachments/Original+Disk+Content.jpg)
+![](attachments/Original_Disk_Content.jpg)
 Enhancements to Graph It - Original Disk Content
 
 ## ATR-Images:

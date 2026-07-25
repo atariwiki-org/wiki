@@ -50,7 +50,7 @@ made out of the FLAC-Images:
 ## Box-Pictures:
 ![](attachments/ATARI_Conversational_Spanish.jpg) (C) 1980 Atari
 
-![](attachments/ATARI+Conversational+SPANISH+CX4120-2.jpg) (C) 1980 Atari
+![](attachments/ATARI_Conversational_SPANISH_CX4120-2.jpg) (C) 1980 Atari
 
 ## Autor:
 

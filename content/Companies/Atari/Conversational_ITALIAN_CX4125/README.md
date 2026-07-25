@@ -50,7 +50,7 @@ made out of the FLAC-Images:
 ## Box-Pictures:
 ![](attachments/ATARI_Conversational_Italian.jpg) (C) 1981 Atari
 
-![](attachments/ATARI+Conversational+ITALIAN+CX4125-2.jpg) (C) 1981 Atari
+![](attachments/ATARI_Conversational_ITALIAN_CX4125-2.jpg) (C) 1981 Atari
 
 ## Autor:
 

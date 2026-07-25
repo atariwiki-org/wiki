@@ -241,7 +241,8 @@ Atari BASIC Keywords
 ![](attachments/Atari_BASIC-XL-Edition.jpg)
 [Atari BASIC-XL Edition - Bob_Albrecht, LeRoy Finkel and Jerald R. Brown (1985)](https://data.atariwiki.org/DOC/Atari_BASIC_XL_Edition-Bob_Albrecht,_LeRoy_Finkel_and_Jerald_R._Brown_1985.pdf) ; size: 86.5 MB ; OCR ; 404 pages
 
-![](attachments/ATARI_BASIC-Handbuch_fuer_Selbststudium_und_Praxis-BOB_ALBRECHT%2C_Le_Roy_Finkel%2C_JERALD_BROWN-2.jpg)
+![](attachments/ATARI_BASIC-Handbuch_fuer_Selbststudium_und_Praxis-BOB_ALBRECHT_Le_Roy_Finkel_JERALD_BROWN-2.jpg)
+
 [ATARI BASIC-Handbuch für Selbststudium und Praxis-BOB ALBRECHT, Le Roy Finkel, JERALD BROWN](https://data.atariwiki.org/DOC/ATARI_BASIC-Handbuch_fuer_Selbststudium_und_Praxis-BOB_ALBRECHT,_Le_Roy_Finkel,_JERALD_BROWN.pdf) ; Größe: 44,8 MB ; OCR ; 214 Doppelseiten
 
 ![](attachments/Atari_BASIC_Reference_Guide_XL.jpg)

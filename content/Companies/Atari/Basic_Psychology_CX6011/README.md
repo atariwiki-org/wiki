@@ -11,9 +11,11 @@ Basic Psychology CX6011 - box cover- thanks to Allan Bushmann for taking the pic
 
 ![](attachments/Atari_Basic_Psychology_Back.jpg)
 Basic Psychology CX6011 - box back- thanks to Allan Bushmann for taking the picture
+
 ## Content
-![](attachments/Basic+Psychology+CX6011.jpg)
+![](attachments/Basic_Psychology_CX6011.jpg)
 Content of Basic Psychology CX6011
+
 ## Cassette-images in FLAC-format
 ![](attachments/Atari_Basic_Psychology_Tape_A_Side_1.jpg)
 Basic Psychology CX6011 - Cassette A-Side 1 - thanks to Allan Bushmann for taking the picture

@@ -50,7 +50,7 @@ made out of the FLAC-Images:
 ## Box-Pictures:
 ![](attachments/ATARI_Conversational_German.jpg) (C) 1980 Atari
 
-![](attachments/ATARI+Conversational+GERMAN+CX4118-6.jpg) (C) 1980 Atari
+![](attachments/ATARI_Conversational_GERMAN_CX4118-6.jpg) (C) 1980 Atari
 
 ## Autor:
 

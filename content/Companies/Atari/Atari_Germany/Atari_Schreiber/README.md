@@ -144,7 +144,7 @@ Atari Schreiber Diskette - Version 1 - von [Atarinside](https://atarinside.dyndn
 ![](attachments/Atari_Schreiber_Diskette.jpg)
 Atari Schreiber Diskette - Version 2
 
-![](attachments/Atari_Schreiber_Diskette.png)
+![](../../../../../media/Atari_Schreiber/attachments/Atari_Schreiber_Diskette.png)
 Atari Schreiber Diskette - Version 3 ; vielen lieben Dank an GoodByteXL von AtariAge! :-)))
 
 ![](attachments/Schreiber_Intro.jpg)
