@@ -66,9 +66,9 @@ DISK OPERATING SYSTEM (DOS) 19/08/80
 - [Atari 810 DOS Utilities Source Listing (DOS II)-DUP.20S C017894.pdf](http://ftp.pigwa.net/stuff/collections/Atari%20documents/Technical%20Documents/) ; size: 46 MB
 - [Atari Disk Utilities-Source Listing](http://www.atarimania.com/documents/) ; size: 8.3 MB
 ## Images
-![](attachments/Atari+DOS+II+Assembly+Source+Listing+3.jpg)
+![](attachments/Atari_DOS_II_Assembly_Source_Listing_3.jpg)
 Atari DOS II 2.0S Assembly Source Listing - Cover 1
 
-![](attachments/Atari+DOS+II+Assembly+Source+Listing+2.jpg)
+![](attachments/Atari_DOS_II_Assembly_Source_Listing_2.jpg)
 Atari DOS II 2.0S Assembly Source Listing - Cover 2
 

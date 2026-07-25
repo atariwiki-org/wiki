@@ -12,10 +12,10 @@ Cygnus X1 cover
 Side 1: [Cygnus_TX9051.cas](attachments/Cygnus_TX9051.cas) 
 
 ## Manual
-![](attachments/Cygnus_XI_cass+2_.jpg)
+![](attachments/Cygnus_XI_cass_2_.jpg)
 Cygnus X1 - manual - side 1
 
-![](attachments/Cygnus_XI_cass+1_.jpg)
+![](attachments/Cygnus_XI_cass_1_.jpg)
 Cygnus X1 - manual - side 2
 
 ## Media pictures

@@ -5,7 +5,7 @@ From the ATARI 1010 Cassette Recorder Field Service Manual we find on page 3-1 t
 ![](attachments/Cover.png)
 ATARI 1010 Cassette Recorder Field Service Manual
 
-![](attachments/Page+23.png)
+![](attachments/Page_23.png)
 ATARI 1010 Cassette Recorder Field Service Manual page 3-5 ; instructions on how to do the READ/WRITE verify test on the ATARI 1010 Cassette Recorder
 
 Besides an ATARI computer and a BASIC cartridge, we need the above mentioned test tape and an blank cassette tape. Here, we can use a 'normal' one, else the official ATARI Blank Cassette Tape (FD100009). Please see the pictures below.

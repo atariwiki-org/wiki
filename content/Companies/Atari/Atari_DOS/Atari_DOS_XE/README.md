@@ -18,7 +18,7 @@ Copyright (C) Atari 1988.
 - [DOS_XE_Docs_D.atr](attachments/DOS_XE_Docs_D.atr) Documentation of DOS XE - Part D - TXT file
 
 ## Pictures:
-![](attachments/XF551+under+DOS+XE.jpg)
+![](attachments/XF551_under_DOS_XE.jpg)
 Atari XF551 under DOS XE
 
 

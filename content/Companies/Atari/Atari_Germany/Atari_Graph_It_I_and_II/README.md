@@ -126,7 +126,7 @@ Cover vom Handbuch von Graph It (englisch) 1980
 ![](attachments/manual.jpg)
 Cover vom Handbuch von Graph It II (deutsch) 1983 ; Danke an Mr. Bacardi!
 
-![](attachments/Graph+It-Intro.jpg)
+![](attachments/Graph_It-Intro.jpg)
 Graph It-Intro
 
 ![](attachments/Graph_It_01.jpg)

@@ -33,7 +33,7 @@ up to now, PFMS is not running with c). Who can help us?
 - [Atari Personal Finance Management System-Quick Reference Card](attachments/Atari_Personal_Finance_Management_System-Quick_Reference_Card.pdf) ; size: 1.4 MB
 (*) The manual is with OCR, navigation-links at the left, hyperlinks inside the content pages (pages v, vi and vii inside the manual, else pages 6 to 8 in the pdf file).
 
-![](attachments/Manual+Cover.jpg)
+![](attachments/Manual_Cover.jpg)
 
 Atari Personal Finance Management System - Instruction Manual Cover
 
@@ -41,16 +41,16 @@ Atari Personal Finance Management System - Instruction Manual Cover
 ![](attachments/Front.jpg)
 CX406 binder front 1  ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com
 
-![](attachments/Binder+7.jpg)
+![](attachments/Binder_7.jpg)
 CX406 binder front 2
 
-![](attachments/Binder+1.jpg)
+![](attachments/Binder_1.jpg)
 CX406 binder front 3
 
 ![](attachments/Back3.jpg)
 CX406 binder back 1 ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com
 
-![](attachments/Back+2.jpg)
+![](attachments/Back_2.jpg)
 CX406 binder back 2
 
 ![](attachments/Side.jpg)
@@ -59,7 +59,7 @@ CX406 binder side view
 ![](attachments/Content.jpg)
 CX406 binder cover ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com
 
-![](attachments/Seperators+2.jpg)
+![](attachments/Seperators_2.jpg)
 CX406 binder - seperators
 
 ![](attachments/Disks.jpg)
@@ -75,49 +75,49 @@ P.F.M.S. System Diskette II (Model CX8114)
 ![](attachments/1-Start.jpg)
 P.F.M.S. Startscreen
 
-![](attachments/2-Main+Menu.jpg)
+![](attachments/2-Main_Menu.jpg)
 P.F.M.S. Main Menu
 
-![](attachments/2-Main+Menu__.jpg)
+![](attachments/2-Main_Menu__.jpg)
 P.F.M.S. Main Menu with location of the modules on the two system diskettes
 
 ![](attachments/3-Note.jpg)
 P.F.M.S. Note
 
-![](attachments/4-Insert+the+new+data+diskette.jpg)
+![](attachments/4-Insert_the_new_data_diskette.jpg)
 P.F.M.S. Insert the new data diskette
 
-![](attachments/5-Insert+the+data+diskette.jpg)
+![](attachments/5-Insert_the_data_diskette.jpg)
 P.F.M.S. Insert the data diskette
 
-![](attachments/6-Insert+the+other+system+diskette.jpg)
+![](attachments/6-Insert_the_other_system_diskette.jpg)
 P.F.M.S. Insert the other system diskette
 
-![](attachments/7-Record+Keeper+Functions.jpg)
+![](attachments/7-Record_Keeper_Functions.jpg)
 P.F.M.S. Record Keeper Functions
 
-![](attachments/8-Budget+Manager+Menu.jpg)
+![](attachments/8-Budget_Manager_Menu.jpg)
 P.F.M.S. Budget Manager Menu
 
-![](attachments/9-Checkbook+Balancer.jpg)
+![](attachments/9-Checkbook_Balancer.jpg)
 P.F.M.S. Checkbook Balancer
 
 ![](attachments/Check.jpg)
 P.F.M.S. Check
 
-![](attachments/10-Checkbook+Balancer+Menu.jpg)
+![](attachments/10-Checkbook_Balancer_Menu.jpg)
 P.F.M.S. Checkbook Balancer Menu
 
-![](attachments/11-Statement+Balance.jpg)
+![](attachments/11-Statement_Balance.jpg)
 P.F.M.S. Statement Balance
 
-![](attachments/12-Budget+Analyzer+Menu.jpg)
+![](attachments/12-Budget_Analyzer_Menu.jpg)
 P.F.M.S. Budget Analyzer Menu
 
-![](attachments/13-Forecaster+Method+Menu.jpg)
+![](attachments/13-Forecaster_Method_Menu.jpg)
 P.F.M.S. Forecaster Method Menu
 
-![](attachments/14-End+of+Personal+Financial+Management+System.jpg)
+![](attachments/14-End_of_Personal_Financial_Management_System.jpg)
 P.F.M.S. End of Personal Financial Management System
 
 ## Atari Personal Finance Management System CX406 advertising images:
@@ -131,20 +131,20 @@ Personal Finance: CXL4012 ; estimated as an cartridge before July 1980
 ![](attachments/CXL4012-Missile_Command_Cartridge.jpg)
 CXL4012 cartridge was Missile Command for real later in time
 
-![](attachments/Advertise+2.jpg)
-![](attachments/Advertise+3.jpg)
+![](attachments/Advertise_2.jpg)
+![](attachments/Advertise_3.jpg)
 P.F.M.S. advertising image 1 - 11/1981
 
-![](attachments/Mid+1982-3.jpg)
+![](attachments/Mid_1982-3.jpg)
 P.F.M.S. advertising image 2 - mid 1982
 
-![](attachments/Advertise+4.jpg)
+![](attachments/Advertise_4.jpg)
 P.F.M.S. advertising image 3 - first quarter 1983
 
-![](attachments/Advertise+6.jpg)
+![](attachments/Advertise_6.jpg)
 P.F.M.S. advertising image 4
 
-![](attachments/Advertise+1.jpg)
+![](attachments/Advertise_1.jpg)
 P.F.M.S. Example
 
 ![](attachments/MACE_Newsletter_Feb_1982_0022.jpg)

@@ -328,7 +328,7 @@ TYA Transfer Register Y to Accumulator
 
 ## Instruction Set (Operation Codes)
 ![](attachments/Instruction_Set_Operation_Codes-1.png)
-![](attachments/Instruction_Set_Operation_Code-2.png)
+![](attachments/Instruction_Set_Operation_Codes-2.png)
 Instruction Set (Operation Codes)
 
 ## Commands and error codes
