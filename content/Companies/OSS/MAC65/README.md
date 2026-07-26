@@ -107,7 +107,7 @@ Version 1.02 followed in the same year, with yet more bug fixes and a slightly d
 
 ## Manual scans
 - [MAC/65 Manual Rev. 1.2 - original scan](attachments/Mac-65_Rev._1.2_Manual.pdf) ; size: 2 MB
-- [MAC/65 with DDT manual - good quality](../../../../media/Mac65/attachments/Mac-65_with_DDT_manual_p._108-Rev_1.2.pdf) ; size: 25.4 MB
+- [MAC/65 with DDT manual - good quality](../../../../media/Companies/OSS/Mac65/attachments/Mac-65_with_DDT_manual_p._108-Rev_1.2.pdf) ; size: 25.4 MB
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf)
 
 ## Images
@@ -128,7 +128,7 @@ OSS offered a companion disk to MAC/65. MAC/65 ToolKit was sold either separatel
 - [MAC/65 ToolKit](attachments/Mac_65_Toolkit.atr)
 
 ## Manual scans
-- [MAC/65 ToolKit manual](../../../../media/Mac65/attachments/MAC-65_ToolKit_Manual.pdf); size: 7 MB
+- [MAC/65 ToolKit manual](../../../../media/Companies/OSS/Mac65/attachments/MAC-65_ToolKit_Manual.pdf); size: 7 MB
 
 # Later work-in-progress versions
 Although version 1.02 was the last one published commercially, Stephen Lawrow continued development of MAC/65 - he kept fixing bugs and adding new features, all ultimately unpublished.

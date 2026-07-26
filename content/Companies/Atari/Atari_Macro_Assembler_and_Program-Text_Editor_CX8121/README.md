@@ -39,7 +39,7 @@ Atari Program-Text Editor - Reference Card
 Atari Macro Assembler - Reference Card
 
 ## Movie
-- [Atari_Macro_Assembler.mp4](../../../../media/Macro_Assembler/attachments/Atari_Macro_Assembler.mp4) ; example for running the Atari Macro Assembler
+- [Atari_Macro_Assembler.mp4](../../../../media/Companies/Atari/Macro_Assembler/attachments/Atari_Macro_Assembler.mp4) ; example for running the Atari Macro Assembler
 
 ## Pictures
 ![](attachments/Atari_Macro_Assembler.jpg)
