@@ -25,7 +25,7 @@ Nur die rechte Begrenzung ist frei wählbar. Kreise sind beispielsweise nicht au
 
 Beispiele:
 
-[xio.png](attachments/xio.png) 
+![](attachments/xio.png) 
 
 Auf der linken Seite ist die Fläche vor dem Füllen gezeichnet. Die Anfangs- und Endpunkte für das Füllen sind mit A und E gekennzeichnet. Rechts ist dann das Resultat zu sehen.
 
