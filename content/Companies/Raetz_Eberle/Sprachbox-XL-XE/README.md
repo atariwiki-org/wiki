@@ -1,4 +1,4 @@
-# Sprachbox XL/XL
+# Sprachbox XL/XE
 
 Verlag Werner Rätz
 

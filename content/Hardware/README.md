@@ -87,5 +87,5 @@
 - [Atari XEP80](../Companies/Atari/Atari_Hardware/XEP80/README.md)
 
 ## Voicebox/Sprachbox
-- [Sprachbox DXG5721](../Sprachbox/README.md)
-- [Sprachbox XL/XL](../Sprachbox-xl-xe/README.md)
+- [Sprachbox (DXG5721)](../Companies/Atari/Atari_Germany/Atari_Germany_Hardware/Sprachbox/README.md)
+- [Sprachbox XL/XE](../Companies/Raetz_Eberle/Sprachbox-XL-XE/README.md)

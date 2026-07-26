@@ -6,7 +6,7 @@
 # Cassette
 - [Casette Boot](../Boot_from_Cassette/README.md)
 - [Atari Datasette XC12 Turbo 6000 Baud Interface](../Atari_Datasette_XC12_Turbo_6000_Baud_Interface/README.md)
-- [Rambit Turbocharger for Atari Datarecorders](../Companies/Rambit/README.md)
+- [Rambit](../Companies/Rambit/README.md)
 - [CAS to WAV and WAV to CAS](../CAS_to_WAV_and_WAV_to_CAS/README.md)
 
 # Emulator
@@ -115,8 +115,8 @@
 - [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 
 ## Voiceboxes/Sprachbox
-- [Sprachbox DXG5721](../Sprachbox/README.md) (German)
-- [Sprachbox XL/XL](../Sprachbox-xl-xe/README.md)
+- [Sprachbox (DXG5721)](../Companies/Atari/Atari_Germany/Atari_Germany_Hardware/Sprachbox/README.md) (German)
+- [Sprachbox XL/XE](../Companies/Raetz_Eberle/Sprachbox-XL-XE/README.md)
 
 ## Cartridges
 - [Blueprint of ACTION! Cart](../Companies/OSS/ACTION/Blueprint_of_ACTION_Cart/README.md)
@@ -370,7 +370,7 @@ All of the following have no page yet
 - [Super Biorythmes (Disk: DF 4001, Cassette: TF 4001)](../Super_Biorhythmus/README.md)
 ```
 
-### [Germany - Atari Deutschland GmbH](../Companies/Atari/Atari_Germany/README.md)
+### [Atari Elektronik Vertriebsgesellschaft GmbH](../Companies/Atari/Atari_Germany/README.md)
 
 #### Business
 - [Terminkalender](../Companies/Atari/Atari_Germany/Terminkalender/README.md)
@@ -451,7 +451,7 @@ All of the following have no page yet
 
 ### Unterhaltung
 - [Biorhythmus DXG 5727 bzw. TXG 4107](../Companies/Atari/Atari_Germany/Biorhythmus/README.md)
-- [Sprachbox DXG5721](../Sprachbox/README.md)
+- [Sprachbox (DXG5721)](../Companies/Atari/Atari_Germany/Atari_Germany_Hardware/Sprachbox/README.md)
 - [Atari Super Biorhythmus / Atari Super Biorythme](../Companies/Atari/Atari_Germany/Super_Biorhythmus/README.md)
 
 ### Utilities
