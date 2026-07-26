@@ -30,18 +30,6 @@ Participants:
 
 - Reading Device Information from an iPod Shuffle:  ![](attachments/USBTEST2.jpg)
 
-- Reading iPod Capacity (1010432 Sec*512 Byte=512MB):  ![](attachments/USBTEST3.jpg)
+- Reading iPod Capacity (1010432 Sec\*512 Byte=512MB):  ![](attachments/USBTEST3.jpg)
 
 - Carsten needed a rest after hard coding:  ![](attachments/Carsten2.jpg)
-
-
-
-
-
-
-
-
-
-
-
-

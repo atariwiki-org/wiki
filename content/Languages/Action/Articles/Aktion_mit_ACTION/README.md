@@ -11,6 +11,6 @@ Published: 	Happy Computer
 
 ![](attachments/aktionmitaction.gif)
 
-PDF: [aktionmitaction.PDF](attachments/aktionmitaction.PDF) 
+PDF: [aktionmitaction.PDF](attachments/aktionmitaction.PDF)
 
-DJVU: [aktionmitaction.djvu](attachments/aktionmitaction.djvu) 
+DJVU: [aktionmitaction.djvu](attachments/aktionmitaction.djvu)

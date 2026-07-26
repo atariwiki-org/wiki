@@ -5,7 +5,7 @@ General Information
 Author: Bob Sander-Cederlof
 Assembler: generic
 Published: October 1980, Issue 1
-Download: [http://www.txbobsc.com/aal/](http://www.txbobsc.com/aal/) 
+Download: [http://www.txbobsc.com/aal/](http://www.txbobsc.com/aal/)
 
 I suppose there are as many ways to do it as there are programmers.  Some are short and fast, some long and slow, some neat, some sloppy.
 
@@ -24,7 +24,6 @@ Methods 1 and 2:  Add 1
 	  STA VALUE				STA VALUE
 ```
 
-
 Method 3 and 4:  Subtract (-1)
 
 ```
@@ -33,7 +32,6 @@ Method 3 and 4:  Subtract (-1)
 	  SBC #$FF				 SBC #$FE
 	  STA VALUE				STA VALUE
 ```
-
 
 Method 5:  Use the INC instruction
 
@@ -44,6 +42,7 @@ Method 5:  Use the INC instruction
 Here are five similar ways to decrement a value:
 
 Method 1 and 2:  Subtract 1
+
 ```
 	  SEC					CLC
 	  LDA VALUE				LDA VALUE
@@ -51,8 +50,8 @@ Method 1 and 2:  Subtract 1
 	  STA VALUE				STA VALUE
 ```
 
-
 Method 3 and 4:  Add (-1)
+
 ```
 	  CLC					SEC
 	  LDA VALUE				LDA VALUE
@@ -65,7 +64,6 @@ Method 5:  Use the DEC instruction
 ```
 	  DEC VALUE
 ```
-
 
 There are times when any of the above may be justified, depending on the state of the A-register and the Carry Status bit.
 
@@ -85,8 +83,8 @@ Method 1:  Add 1
 	  STA VALH
 ```
 
-
 Method 2:  Use the INC instruction
+
 ```
 	  INC VALL	INCREMENT LOW BYTE
 	  BNE .1	  IF NOT ZERO, THEN NO CARRY
@@ -122,13 +120,13 @@ Method 1:  Subtract 1
 ```
 
 Method 2:  Use the DEC instruction
+
 ```
 	  LDA VALL	SEE IF NEED TO BORROW
 	  BNE .1	  NO
 	  DEC VALH	YES
 .1	  DEC VALL
 ```
-
 
 Which one do you like better?  It is still a matter of taste, unless the amount of memory used or time consumed is very important.  There are also different side effects, such as the final state of the carry status.  INC and DEC do not change the carry status, while of course ADC and SBC do.  You may wish to preserve carry through the process, making the INC/DEC code preferable.  Or, you may wish to know the resulting carry status after incrementing or decrementing for some reasong; then you should use the ADC/SBC code.
 
@@ -153,7 +151,6 @@ Easier than you though, right?  You would not believe the many strange ways I ha
 xxxxxx
 ```
 
-
 If you think of each digit as though it were a byte...isn't the algorithm the same?
 
 Now it is time for all of us to go back over the programs we wrote during the past three years for the Apple, and replace a lot of old code!
@@ -164,4 +161,4 @@ Bob Sander-Cederlof
 
 Bob Sander-Cederlof | 19.11.2007 at 03:57 PM
 
-Thank you for republishing my article. The Apple Assembly Line newsletter was published from monthly October 1980 through May 1988. All the issues are available online at [http://www.txbobsc.com/aal/](http://www.txbobsc.com/aal/) 
+Thank you for republishing my article. The Apple Assembly Line newsletter was published from monthly October 1980 through May 1988. All the issues are available online at [http://www.txbobsc.com/aal/](http://www.txbobsc.com/aal/)

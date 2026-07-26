@@ -1,9 +1,8 @@
-# ACTION! BUG SHEET #3 - part 1 to 6
+# ACTION! BUG SHEET \#3 - part 1 to 6
 
 This document supercedes the previous two bug sheets published for ACTION!
 
-November 6, 1984
----
+## November 6, 1984
 
 ## GENERAL INFORMATION
 
@@ -132,29 +131,35 @@ PROC Test()     ; Main routine
     critic = 0
 RETURN
 ```
-This method of saving and restoring ACTION zero page variables may also be used to write BASIC machine language subroutines in ACTION! Your main ACTION routine should then have SaveTemps as the first executable line, and GetTemps as the last executable line before the RETURN statement.
 
+This method of saving and restoring ACTION zero page variables may also be used to write BASIC machine language subroutines in ACTION! Your main ACTION routine should then have SaveTemps as the first executable line, and GetTemps as the last executable line before the RETURN statement.
 
 ## P2. BUGS IN THE ACTION! CARTRIDGES
 
 The following is a list of all bugs we currently know exist in the ACTION! cartridge. We list these bugs separately from those in the RunTime library and/or the PAD disk or ToolKit, which occur in following pages. Each bug is described in detail and, when possible, bug fixes are given. Many of these bugs deal only with specific versions of ACTION!. To find out which version of ACTION! you own, type the following from the ACTION! monitor:
+
 ```
  ?$B000 [[RETURN]
 ```
+
 Below is an actual copy of what printed following that command for one of our cartridges.
+
 ```
   45055,$B000 = 0 $0730 48 1840
                 ^
 ```
+
 To find out the version number, look at the character to the right of the equals sign (here printed with a caret under it).  The "0" in this case implies that the cartridge is version 3.0.  If yours has a "6", you own version 3.6, etc.  As of the date of this bug sheet, the current cartridge version is 3.6.
 
 ### 1. OFFSETS
+
 Using a TYPE declaration will generate a spurious error whenever the code offset (contents of location $B5) is non-zero.
 
 Affects:  All versions of the cartridge to date. (Presumably only noticed if using RunTime disk, though.)
 
 Fix: Make all TYPE declarations before changing the code offset.
 Example:
+
 ```
      ; Beginning of program --
      ; First, declare TYPEs
@@ -170,6 +175,7 @@ Example:
 ```
 
 ### 2. OFFSETS
+
 Using a code offset greater than $7FFF (i.e., a negative offset, if you consider it to be of type INT) causes the compiler to generate improper code.
 
 Affects:  All versions, especially when used with the RunTime disk.
@@ -177,6 +183,7 @@ Affects:  All versions, especially when used with the RunTime disk.
 Fix:  No direct fix, but you may use the relocator program described later in this document (which is also usable with assembly language).
 
 ### 3. ATARI DOS
+
 Exiting to Atari DOS from ACTION! can cause a system crash if DUP.SYS is not present on the disk in drive 1.
 
 Affects:  All versions, but only when used with Atari DOS.
@@ -184,30 +191,37 @@ Affects:  All versions, but only when used with Atari DOS.
 Fix: Use DOS XL (or be careful when exiting to DOS).
 
 ### 4. ARRAYS AND ELSEIF
+
 We have just learned that there is a relatively obscure bug in ACTION! related to the use of ELSEIF. In particular, statements similar to the form ELSEIF a(i) = 0 THEN ... (where a is an ARRAY and i is a CARD OR INT), or statements like ELSEIF p^ = 0 THEN (where p is a POINTER) produce incorrect code.
 
 Affects:  All versions
 
 Fix:  There is no direct fix at this time. The best way around the problem seems to be to code something like this:
+
 ```
     t = a(i) ; t is an INTEGER
       ...
     ELSEIF t=0 THEN ...
 ```
+
 This works properly.
 
 ### 5. WRITING OBJECT FILES
+
 If a monitor Write command fails because of a disk error (e.g., disk full, 162, or device done, 144), the IOCB is not properly closed. If the disk is hanged before another disk operation is performed, the new disk can have invalid data written to it.
 
 Affects:  All versions
 
 Fix:  If you get an error when writing an ACTION! object file, type the following command to the monitor:
+
 ```
       X Close( 1 ) [RETURN]
 ```
+
 You can then erase the file which caused the error.
 
 ### 6. HEX ARRAY SIZES
+
 Hexadecimal values as array dimensions cause incorrect code to be generated.
 
 Affects:  All versions
@@ -215,7 +229,9 @@ Affects:  All versions
 Fix:  Use decimal array dimensions.
 
 ### 7. TYPE POINTER ARGUMENTS
+
 PROC/FUNC declarations with record pointer arguments other than the first don't compile correctly. For example, the following code generates an error 7 (invalid argument list):
+
 ```
    TYPE REC=[...]
       ...
@@ -225,14 +241,18 @@ PROC/FUNC declarations with record pointer arguments other than the first don't 
 Affects:  All versions
 
 Fix:  Omit the comma in the argument list for the PROC/FUNC, as in:
+
 ```
     PROC Test( BYTE x
                REC POINTER p )
 ```
+
 As this is just a temporary fix, it may not work in future versions, but the correct declaration (with the comma) will.
 
 ### 8. MONITOR LOCKUP
+
 Typing the following command from the monitor will lock up the system:
+
 ```
       R* [[RETURN]
 ```
@@ -242,21 +262,25 @@ Affects:  All versions
 Fix:  Don't do it!  If you do type that command, hit \[RESET\]
 
 ### 9. PADDLE FUNCTION
+
 The Paddle function does not work properly in all versions of the ACTION! cartridge.
 
 Affects:  Versions 3.0 to 3.5
 
 Fix:  Make the following declaration in your program:
+
 ```
      BYTE ARRAY Paddle(4) = 624
 ```
 
 ### 10. SOUND ON CHANNELS 3 AND 4
+
 If you use a Sound() procedure call after having done any disk I/O, sound channels 3 and 4 will remain silent. This is because Atari's OS does not reset some of the serial control registers completely.
 
 Affects:  Versions 3.0 to 3.5
 
 Fix:  Type in and use the following procedure. You should call this before doing any Sound() calls and/or in place of any SndRst() calls:
+
 ```
    ; Contributed by Michael Ross
      PROC SoundOff()
@@ -271,7 +295,9 @@ Fix:  Type in and use the following procedure. You should call this before doing
 ```
 
 ### 11. TYPE FIELDS AS PARAMETERS
+
 Using fields of TYPEs as parameters to PROCs or FUNCs generates incorrect code. For example,
+
 ```
  MoveBlock( rec.addr1,
     rec.addr2, length )
@@ -280,6 +306,7 @@ Using fields of TYPEs as parameters to PROCs or FUNCs generates incorrect code. 
 Affects:  Versions 3.0 to 3.5
 
 Fix:  Assign the TYPE field to a temporary variable and pass that as a parameter:
+
 ```
       temp1 = rec.addr1
       temp2 = rec.addr2
@@ -287,6 +314,7 @@ Fix:  Assign the TYPE field to a temporary variable and pass that as a parameter
 ```
 
 ### 12. SASSIGN PROBLEMS
+
 SAssign does not work properly when the source string has a length of zero.
 
 Affects:  Versions 3.0 to 3.5
@@ -294,6 +322,7 @@ Affects:  Versions 3.0 to 3.5
 Fix:  No fix available at this time.
 
 ### 13. CARD FIELDS IN TYPES
+
 Accessing CARD fields of TYPEs generates incorrect code.
 
 Affects:  Versions 3.0 to 3.2
@@ -301,6 +330,7 @@ Affects:  Versions 3.0 to 3.2
 Fix:  No fix available at this time.
 
 ### 14. MOVEBLOCK PROBLEMS
+
 MoveBlock does not move more than 256 bytes of data.
 
 Affects:  Versions 3.0 to 3.2
@@ -308,6 +338,7 @@ Affects:  Versions 3.0 to 3.2
 Fix:  No fix at this time. You could write an ACTION! routine to do the equivalent.
 
 ### 15. CONTROL-SHIFT RETURN
+
 Using \[CS\] RETURN to split a line into two lines generates garbage in the second line.
 
 Affects:  Versions 3.0 and 3.1
@@ -315,11 +346,13 @@ Affects:  Versions 3.0 and 3.1
 Fix:  No fix available, but not a disastrous problem.
 
 ### 16. DIVISION ERRORS
+
 On old cartridges, neither the "/" operator nor the "MOD" operator works properly under certain conditions.
 
 Affects:  Versions 3.0 and 3.1
 
 Fix:  Insert the following code into your program before any of your own PROCedure or FUNCtion declarations (this can be done easily using INCLUDE):
+
 ```
     ; Copyright (c) 1983 by
     ; Action Computer Services
@@ -345,6 +378,7 @@ Fix:  Insert the following code into your program before any of your own PROCedu
 ```
 
 ### 17. ERROR ROUTINE NOT INITIALIZED
+
 The address of the Error PROCedure is not restored by ACTION! if a user program has changed it.
 
 Affects:  Versions 3.0 and 3.1
@@ -352,7 +386,9 @@ Affects:  Versions 3.0 and 3.1
 Fix:  Make sure to restore the original Error vector upon exiting a program, if you changed it.
 
 ### 18. COMPLEX EXPRESSIONS IN UNTIL
+
 Complex relational expressions in an UNTIL statement generate incorrect code. For example,
+
 ```
     DO
      ...
@@ -363,6 +399,7 @@ Complex relational expressions in an UNTIL statement generate incorrect code. Fo
 Affects:  Versions 3.0 and 3.1
 
 Fix:  Assign the expression to a temporary variable and test that variable, instead:
+
 ```
     DO
      ...
@@ -372,11 +409,13 @@ Fix:  Assign the expression to a temporary variable and test that variable, inst
 ```
 
 ### 19. BANK SWITCH BUG
+
 When loading and running compiled ACTION! object files from DOS, the system can crash when using older cartridges. This is because the ACTION! library is not accessible.
 
 Affects:  Version 3.0 only
 
 Fix:  Put the following program lines at the VERY BEGINNING of your main procedure (i.e., the last procedure in your program):
+
 ```
     BYTE bank = $D500
     ; This declares the variable
@@ -387,11 +426,13 @@ Fix:  Put the following program lines at the VERY BEGINNING of your main procedu
 ```
 
 ### 20. .COM PROGRAMS
+
 Running compiled ACTION! programs as .COM files under OS/A+ causes those programs to execute twice.
 
 Affects:  All versions, but only when using a version of OS/A+. DOS XL is not affected.
 
 Fix:  Insert the following as the first global variable you declare:
+
 ```
     BYTE RTS=[$60]
     ; This MUST be the first line in your program,
@@ -399,27 +440,32 @@ Fix:  Insert the following as the first global variable you declare:
 ```
 
 ### 21. PROC ADDRESSING
+
 Under certain conditions, specifying the address of a procedure (e.g., to interface to a machine code routine) causes ACTION! to generate incorrect code which could cause your program to"hang".
 
 Affects:  Versions 3.1 and 3.4
 
 Fix:  Insert an empty code block after the declaration of a procedure whose address is specified.  For example:
+
 ```
     PROC CIO = $E456() []
     ; An empty code block!
 ```
 
-### 22. ERROR #3
+### 22. ERROR \#3
+
 If you get an ERROR 3 during a compile, the system hangs when you return to the editor.
 
 Affects:  All versions
 
 Fix:  Do not go to the editor until you type the following line to the monitor.  This command resets the ACTION! memory pointer.
+
 ```
     SET $E=$491^
 ```
 
 ### 23. STRING INPUT
+
 When using the string input library functions (InputS, InputSD, and InputMD), there must be room in the string for the termination EOL, even though the resulting string length will not include it.
 
 Affects:  All versions
@@ -435,6 +481,7 @@ In the fixes given below, the portion to be changed (to implement the fix) is un
 ### 1. Hex numbers are printed incorrectly by PrintH and the %H parameter of PrintF.
 
 Fix:  Change second line of CCIO:
+
 ```
     PROC CCIO=*()
     [$A386$A0A$A0A$AA$A3A5$9D$342 ...
@@ -444,13 +491,17 @@ Fix:  Change second line of CCIO:
 ### 2. PrintBDE can cause a spurious compile time error.
 
 Fix:  Change first line of PrintBDE:
+
 ```
     PROC PrintBDE =*(BYTE d,n)[$A0$0]
 ```
---
+
+\--
+
 ### 3.  A minor error exists in ChkErr.
 
 Fix:  Change second line of ChkErr:
+
 ```
    PROC ChkErr=*(BYTE r,b,eC)
         [$1610$88C0$8F0
@@ -459,6 +510,7 @@ Fix:  Change second line of ChkErr:
 ```
 
 ### 4.  If your program redefines a
+
 library procedure (e.g., one
 which declares its own version of
 PROC Graphics), it will compile
@@ -484,10 +536,10 @@ contain the routines you wish to
 replace.
 
 5.  On page 17 of the Reference Guide
-for the Runtime Package, the
-DEFINE for ROM will cause
-incorrect code if you use local
-variables.
+    for the Runtime Package, the
+    DEFINE for ROM will cause
+    incorrect code if you use local
+    variables.
 
 Fix:  Use the following form of
 definition, instead:
@@ -501,10 +553,13 @@ definition, instead:
 ```
 
 ## P4. PROBLEMS WITH Programmer's Aid Disk
+
 We will list the problems (and solutions) regarding the Programmer's Aid Disk (PAD) here in reasonably compact form.
 
 ### 1. BGET/BPUT PROBLEMS
+
 The BGet and BPut routines in the IO.ACT file do not work properly under certain conditions. To fix this bug, replace the BGet and BPut routines with the following ACTION! code:
+
 ```
     ;********************************
     ;Burst (Block) I/O routines to do
@@ -552,23 +607,31 @@ The BGet and BPut routines in the IO.ACT file do not work properly under certain
 ```
 
 ### 2.  PRINTF
+
 The PRINTF routine has a bug which was reported and fixed in the Spring, 1984 newsletter. In the file PRINTF.ACT, use the ACTION! editor to find
+
 ```
        args ==+ s
 ```
+
 and change it to
+
 ```
        args ==+ 2
 ```
 
 ### 3.  PLAYER/MISSILE GRAPHICS
+
 Because S: uses some memory just below the display list (undocumented), our method of finding the base address for Player/Missile Graphics needs a slight revision. Use the ACTION! editor with the file PMG.ACT to find
+
 ```
     PM_BaseAdr=(HiMem-
                PM_MemSize(mode))
                &PM_AdrMask(mode)
 ```
+
 and change it to
+
 ```
     PM_BaseAdr=(HiMem-
                PM_MemSize(mode)-$80)
@@ -576,13 +639,17 @@ and change it to
 ```
 
 ### 4.  PMMove
+
 If you use the PMMove procedure and specify a vertical movement of zero, the horizontal movement does not take place (it should). To fix this, change the lines in PMG.ACT which read
+
 ```
     IF deltay=0 THEN
      RETURN ; do nothing
     FI
 ```
+
 to the following:
+
 ```
     IF deltay=0 THEN
      ; do horizontal anyway
@@ -592,9 +659,11 @@ to the following:
 ```
 
 ### 5.  PLAYER/MISSILE GRAPHICS
+
 The documentation for PMG.ACT states that you may read the contents of PMHpos to find the horizontal position of a player or missile. This is simply not true. PMHpos is a set of write-only hardware registers. (Note that in the ToolKit we have added a shadow array and changed the name of the hardware registers, so this works correctly. If you wish, you could consider doing something similar on your PAD.)
 
 ### 6.  REAL NUMBER ROUTINES
+
 There are two discrepancies in PROCedure names in the REAL.ACT library as compared to the REAL.DOC documentation, as follow:
 ||Name in .DOC||Name in .ACT
 |StrR|RealToStr
@@ -602,36 +671,50 @@ There are two discrepancies in PROCedure names in the REAL.ACT library as compar
 We suggest that you change the source code in REAL.ACT to reflect the names given in the documentation (rather than vice versa), since this makes the names appear compatibile with the library's other number-string conversion routines.
 
 ### 7.  REAL NUMBER ROUTINES
+
 In that same area, the routine RealToStr (or should that be StrR?) needs to change the line which reads ptr=LBuff to the following:
+
 ```
        ptr=InBuff
 ```
 
 ### 8.  ALLOC.ACT
+
 The free list pointer may not be set up properly.  Also, when freeing a block, right adjacency is not handled properly if left adjacency has already been found. Fix these problems as follows:
 
 In the PROCedure Free, after the line reading:
+
 ```
        last.size==+nBytes
 ```
+
 insert the line:
+
 ```
        target=last
 ```
+
 Also, in the same procedure, change the line reading:
+
 ```
       IF target+nBytes=current THEN
 ```
+
 to read:
+
 ```
       IF target+target.size
             =current THEN
 ```
+
 In the PROCedure AllocInit, replace the line reading:
+
 ```
       FreeList.next=p
 ```
+
 with the following lines:
+
 ```
       FreeList=p
       p==+4
@@ -645,14 +728,17 @@ It's hard to believe that a product as new as the ACTION! ToolKit can already ha
 ### VERSION 1 ONLY
 
 ### 1.  I/O ROUTINES
+
 The manual describes a routine called Format (in the IO.ACT library), but no such procedure exists on the disk. However, the routine is there--it's just called Init instead. You should change your disk to match your manual.
 
 ### 2.  MUSIC.DEM
+
 The program called MUSIC.DEM will not work as is on older 400/800 machines. This is because it uses a call to Graphics(15), which is only available on XL machines. You may change the program to use Graphics(8) with no effect except that the true colors of mode 15 become artifact colors in mode 8 instead.
 
 ### VERSIONS 1 AND 2
 
 ### 1.  REAL ROUTINES
+
 There are two discrepancies in PROCedure names in the REAL.ACT library as compared to the REAL.DOC documentation, as follow:
 ||Name in .DOC||Name in .ACT
 |StrR|RealToStr
@@ -660,6 +746,7 @@ There are two discrepancies in PROCedure names in the REAL.ACT library as compar
 We suggest that you change the source code in REAL.ACT to reflect the names given in the documentation (rather than vice versa), since this makes the names appear compatibile with the library's other number-string conversion routines.
 
 ### 2.  SORT ROUTINES
+
 There are four discrepancies in PROCecure names in the SORT.ACT library as compared to the SORT.ACT documentation, as follows:
 ||Name in .DOC||Name in .ACT
 |SortB|BSort
@@ -669,11 +756,15 @@ There are four discrepancies in PROCecure names in the SORT.ACT library as compa
 Please change your disk file to agree with your manual.
 
 ### 3.  PRINTF
+
 The PRINTF routine has a bug which was reported and fixed in the Sprint, 1984 newsletter. In the file PRINTF.ACT, use the ACTION! editor to find
+
 ```
        args ==+ s
 ```
+
 and change it to
+
 ```
        args ==+ 2
 ```
@@ -681,41 +772,56 @@ and change it to
 ### VERSIONS 1, 2, AND 3.
 
 ### 1.  ALLOC ROUTINES
+
 The manual indicates that the procedure AllocInit requires that you pass it the address of the first free byte of memory (because Alloc "dispenses" memory from the first free byte through the top of memory, as correctly described in the manual). However, since you MUST follow the procedure described in the introduction to ALLOCATE.ACT (that is, you must declare in your program a CARD called EndProg and use the command
+
 ```
        SET EndProg=*
 ```
+
 after compiling), the parameter to AllocInit is not really needed and so has been eliminated. (AllocInit uses EndProg just as Alloc does.) If you pass a parameter to AllocInit, it will be ignored.
 
 ### 2.  WARP.DEM
+
 No mention is made in the Toolkit manual that this file can only be run when compiled from disk (unless you are using DOS XL to gain extra memory). WARP.DEM is just too big for ACTION! to hold both the source and object in memory at one time.
 
 ### 3.  ALLOCATE.ACT
+
 The free list pointer may not be set up properly. Also, when freeing a block, right adjacency is not handled properly if left adjacency has already been found. Fix these problems as follows:
 
 In the PROCedure Free, after the line reading:
+
 ```
       last.size==+nBytes
 ```
+
 insert the line:
+
 ```
       target=last
 ```
 
 Also, in the same procedure, change the line reading:
+
 ```
       IF target+nBytes=current THEN
 ```
+
 to read:
+
 ```
       IF target+target.size
             =current THEN
 ```
+
 In the PROCedure AllocInit, replace the line reading:
+
 ```
       p=EndProg
 ```
+
 with the following lines:
+
 ```
       FreeList=EndProg
       p=EndProg+4
@@ -735,11 +841,11 @@ PAGE   ERROR
 
 26    Under <CTRL><SHIFT>T, it says you may not use lower-case characters as tags. This is untrue.
 
-48    In the NOTE preceeding 4.3, you should add "The *, /, and MOD operators result in an implied INT type. For this reason, multiplication, division, and modulus of large CARD numbers does not always work properly."
+48    In the NOTE preceeding 4.3, you should add "The \*, /, and MOD operators result in an implied INT type. For this reason, multiplication, division, and modulus of large CARD numbers does not always work properly."
 
 49    Section 4.4 says that you may only have one special operator in a complex relational expression. This is untrue.
 For example, the following is perfectly legal:
-(x=7 AND y#10) OR z<100
+(x=7 AND y#10) OR z\<100
 
 82    Section 6.2.3 implies that you may not use a function as a procedure. This is not true. You may call a function as though it were a procedure, but the value returned from the function is ignored.
 
@@ -803,7 +909,7 @@ PokeC(<address>,<CARD value>)
 27  Illegal TYPE reference
 28  Illegal RETURN
 128 BREAK key abort
-Also, error 62 is error 61, and 54 & 56 do not exist.
+Also, error 62 is error 61, and 54 \& 56 do not exist.
 
 197    In the PrintF statement, %D should be changed to %U.
 
@@ -833,10 +939,10 @@ PAGE   ERROR
 
 182    Section 6.11.  MoveBlock will move a maximum block of 256 bytes in versions 3.0 to 3.4 of ACTION! Versions 3.5 and up will move any number of bytes.
 
-
 ### ACTION OBJECT CODE RELOCATION PROGRAM
+
 The program SIMPLREL.ACT on this BBS may be used to cause an ACTION! program to load and run at a different address than that address at which it was compiled. The same program will also work for assembly language object files, providing you also follow the given instructions.
 
-The program takes two object files as input and produces a third file which will load and run at a desired address. The relocating program prompts the user for the two input files, which must have been compiled one page (256 bytes) apart. It then prompts for an output file name (the relocated file), the page number of the starting address of the first file, and the page number of the desired destination address. Both page numbers must be decimal values. For example, specifying 32 as the destination page will cause the output file to load at address 32*256 ($2000), not $3200. See part V, "The ACTION! Compiler", chapter 2, page 144, for information on compiling programs to a specified address (Used to compile the two object files one page apart).
+The program takes two object files as input and produces a third file which will load and run at a desired address. The relocating program prompts the user for the two input files, which must have been compiled one page (256 bytes) apart. It then prompts for an output file name (the relocated file), the page number of the starting address of the first file, and the page number of the desired destination address. Both page numbers must be decimal values. For example, specifying 32 as the destination page will cause the output file to load at address 32\*256 ($2000), not $3200. See part V, "The ACTION! Compiler", chapter 2, page 144, for information on compiling programs to a specified address (Used to compile the two object files one page apart).
 
 In order to use the relocating program, download SIMPLEREL.ACT and read the instructions therein.

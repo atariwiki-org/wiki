@@ -14,7 +14,6 @@ Taken from the Bibo Assembler Toolkit Disk.
 (c) CompyShop
 (c) ABBUC e.V.
 
-
 Simple JSR to the "GetKey" Routine and use the returned value in Accu. The GetKEy Routine will block and wait for an Keypress.
 
 ```
@@ -23,7 +22,6 @@ JSR GETKEY
 ...
 
 ```
-
 
 ```
 00010 ------------------------------

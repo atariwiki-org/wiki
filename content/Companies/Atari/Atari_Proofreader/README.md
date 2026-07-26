@@ -1,24 +1,28 @@
 # Atari Proofreader (AX2033)
 
-Copyright (C) 1985 Atari, Corp. & R. Stanley Kistler
+Copyright (C) 1985 Atari, Corp. \& R. Stanley Kistler
 
 The Atari Proofreader has a very unique serial number beginning with the letter A instead of D, which is normal for diskettes.
 
 ## ATR-Files
-- [Atari_Proofreader_1985AtariUSDisk_1_of_2Program_Diskettecr_CSS.atr](attachments/Atari_Proofreader_1985AtariUSDisk_1_of_2Program_Diskettecr_CSS.atr)
-- [Atari_Proofreader_1985AtariUSDisk_2_of_2Dictionary_Diskette.atr](attachments/Atari_Proofreader_1985AtariUSDisk_2_of_2Dictionary_Diskette.atr)
-- [Atari_Proofreader-Program_Diskette-DX_5073.atr](attachments/Atari_Proofreader-Program_Diskette-DX_5073.atr)
-- [Atari_Proofreader-Dictionary_Diskette-DX5074.atr](attachments/Atari_Proofreader-Dictionary_Diskette-DX5074.atr)
+
+- [Atari\_Proofreader\_1985AtariUSDisk\_1\_of\_2Program\_Diskettecr\_CSS.atr](attachments/Atari_Proofreader_1985AtariUSDisk_1_of_2Program_Diskettecr_CSS.atr)
+- [Atari\_Proofreader\_1985AtariUSDisk\_2\_of\_2Dictionary\_Diskette.atr](attachments/Atari_Proofreader_1985AtariUSDisk_2_of_2Dictionary_Diskette.atr)
+- [Atari\_Proofreader-Program\_Diskette-DX\_5073.atr](attachments/Atari_Proofreader-Program_Diskette-DX_5073.atr)
+- [Atari\_Proofreader-Dictionary\_Diskette-DX5074.atr](attachments/Atari_Proofreader-Dictionary_Diskette-DX5074.atr)
 
 ## ATX-Files
-- [Atari_Proofreader-Program_Diskette-DX_5073.atx](attachments/Atari_Proofreader-Program_Diskette-DX_5073.atx)
-- [Atari_Proofreader-Dictionary_Diskette-DX5074.atx](attachments/Atari_Proofreader-Dictionary_Diskette-DX5074.atx)
+
+- [Atari\_Proofreader-Program\_Diskette-DX\_5073.atx](attachments/Atari_Proofreader-Program_Diskette-DX_5073.atx)
+- [Atari\_Proofreader-Dictionary\_Diskette-DX5074.atx](attachments/Atari_Proofreader-Dictionary_Diskette-DX5074.atx)
 
 ## Manuals
-- [Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Print-OCR.pdf](../../../../media/Companies/Atari/Atari_Proofreader/attachments/Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Print-OCR.pdf) ; size: 7.4 MB ; ready to print version with OCR
-- [Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Screen-OCR.pdf](attachments/Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Screen-OCR.pdf) ; size: 1.1 MB ; screen optimized version with OCR
+
+- [Atari\_Proofreader\_AX2033-CO16083-73\_REV.\_A\_1985-Print-OCR.pdf](../../../../media/Companies/Atari/Atari_Proofreader/attachments/Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Print-OCR.pdf) ; size: 7.4 MB ; ready to print version with OCR
+- [Atari\_Proofreader\_AX2033-CO16083-73\_REV.\_A\_1985-Screen-OCR.pdf](attachments/Atari_Proofreader_AX2033-CO16083-73_REV._A_1985-Screen-OCR.pdf) ; size: 1.1 MB ; screen optimized version with OCR
 
 ## Pictures
+
 ![](attachments/proofreader_d7.jpg)
 Atari Proofreader AX2033 - Box Cover 1; Thanks to Atarimania!
 
@@ -62,6 +66,7 @@ Limited 90-Day Warranty C072020-001 REV. B-front
 Limited 90-Day Warranty C072020-001 REV. B-back
 
 ## Screenshots
+
 ![](attachments/Atari_Writer_without_Proofreader_1.png)
 Atari Writer without Proofreader 1
 

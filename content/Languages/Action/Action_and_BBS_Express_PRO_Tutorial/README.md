@@ -1,8 +1,6 @@
 # Action! and BBS Express! PRO Tutorial
 
-
 by Thomas M. Johnson
-
 
 Available from
 
@@ -13,14 +11,11 @@ Action! is copyright of ACS, OSS, ICD. BBS Express! PRO is copyright Orion Micro
 This tutorial is copyright Thomas M. Johnson.
 
 This tutorial can be distributed under the following conditions:
-1. It is free.
-1. All of the above information is intact.
 
+1. It is free.
+2. All of the above information is intact.
 
 ---
-
-
-
 
 ---
 
@@ -29,7 +24,6 @@ This tutorial can be distributed under the following conditions:
 Welcome to the Action!/PRO tutorial. In it, I plan to teach you how to write command modules for BBS Express! PRO.  But to write these, you must know the Action! programming language. So this is a 2 for the price of 1 tutorial.
 
 I strongly suggest you print the files of this tutorial out.  There are a number of programs that accompany the text part (the part you are reading now) and smaller program included in the text part that may take a long explanation.  So instead of trying to view this on the screen and paging around looking for what I am talking about, having it on paper would make things easier.
-
 
 First thing you should do is turn on your computer with the Action! cartridge plugged in.
 
@@ -72,7 +66,6 @@ You will hear a buzz and the screen will go blank.  There will be a inverse line
 You press C then the RETURN key.  If there are errors, you will get a message telling you so.  If you have errors, press E and the RETURN key to go back to the Editor.  If not, you press R and the RETURN key to Run you program.
 
 This is a good place to end lesson one.  If you want to experiment until the next lesson, try adding some more PrintE lines in the program.  Like:
-
 
 ```
 PROC main()
@@ -127,12 +120,10 @@ point package is the thing that really slows BASIC down.
 
 So we have this chart:
 
-
 || name ||  size in bytes  ||  low val. ||   high val
 | BYTE |     1     |    0     |      255
 | INT  |     2     |  -32768  |    32767
 | CARD |     2     |    0     |   65535
-
 
 Ok, so how do you use them? Here is a sample program.
 
@@ -187,7 +178,6 @@ INT  i
 
 Just declaring some dummy variables.
 
-
 ||Example     ||  Description
 |i=InputI()  |  input a INT
 |c=InputC()  |  input a CARD
@@ -200,7 +190,6 @@ Just declaring some dummy variables.
 |PrintCE(c)  |  print a CARD with a CR
 |PrintI(i)   |  print a INT without a carriage return
 |PrintIE(i)  |  print a INT with a CR
-
 
 Next we will go into expressions and the IF statement.
 
@@ -216,7 +205,7 @@ know what their purpose is.  In
 Action!, the only restriction is that
 variable names start with a letter.
 They may contain letters and the
-underline "_" character later in the
+underline "\_" character later in the
 name.  Which is easier to understand?
 
 ```
@@ -224,7 +213,6 @@ t=(p*x)+p
 ```
 
 or
-
 
 ```
 total_price = (price * tax) + price
@@ -236,15 +224,13 @@ expressions.
 Action! supports the following
 operators.
 
-
 || Operator || Description
 |     - | as in negative numbers. Remember only INT can be negative.
-|     * | multiply
+|     \* | multiply
 |     / | divide. This is integer division because Action! doesn't have real numbers. So when you take 5/2 it is equal to 2 NOT 2.5
 |   MOD | This is the remainder when you divide. 5 MOD 2 equals 1 because 5/2=2 with a remainder of 1
 |     + | addition
 |     - | subtraction
-
 
 Action! also has a number of bit-wise
 operators but we will cover those
@@ -306,19 +292,18 @@ relationals:
 
 a=b tells if a and b are equal
 
-a<>b tests to see if a and b are
+a\<\>b tests to see if a and b are
 not equal
 
-a#b the same as a<>b
+a#b the same as a\<\>b
 
-a>b is a greater than b
+a\>b is a greater than b
 
-a>=b is a greater than or equal to b
+a\>=b is a greater than or equal to b
 
-a<b test to see if a is less than b
+a\<b test to see if a is less than b
 
-a<=b is a less than or equal to b
-
+a\<=b is a less than or equal to b
 
 The are 2 more, AND and OR and I will
 cover them in the next tutorial.
@@ -491,7 +476,7 @@ say your program has to input a
 large number.  And the next numbers
 are divided into the bug number
 until the answer gets down below
-10.  But if the user inputs a 0 to
+10\.  But if the user inputs a 0 to
 divide into, the is very bad since
 a division by 0 doesn't exist.
 
@@ -564,8 +549,6 @@ editor and monitor commands that will
 make your writing and debugging of
 Action! programs faster and easier.
 
-
-
 ## Lesson 5
 
 As promised, now we are going to talk
@@ -627,13 +610,13 @@ have the old string contained in it.
 
 Let's say you want to change all the
 occurrences of the word 'score' in
-your program into 'u_score'.  Changing
+your program into 'u\_score'.  Changing
 the first occurrence is great.  The
-cursor will be on the 'u' in 'u_score'.
+cursor will be on the 'u' in 'u\_score'.
 
 The next occurrence it will find is the
-'score' in 'u_score' so you will get
-'u_u_score'.
+'score' in 'u\_score' so you will get
+'u\_u\_score'.
 
 If you change a existing line but have
 not yet pressed the RETURN key,
@@ -700,6 +683,7 @@ The Case Insensitive flag can turn
 on the.... well I better show you.
 
 In Action!, the variables:
+
 ```
             score
             Score
@@ -805,11 +789,9 @@ a string in "quotes." If PrintF is
 used like this, it is just like
 Print.
 
-
 || command    ||         output
 | PrintF("Hello")   |    Hello
 | Print("Hello")    |    Hello
-
 
 But if some special characters appear
 inside the "quotes", PrintF can do
@@ -913,16 +895,14 @@ Here is a list of special characters
 and how they output the data in the
 list.
 
-
 || format char || description
 | %I | INT
 | %U | CARD (the U stands for Unsigned) and BYTE
 | %C | print as a character
 | %H | a Hexdecimal number
 | %E | the RETURN character
-| &#37;&#37; | output the percent sign
+| %% | output the percent sign
 | %S | output as a string (we'll cover this in a later lesson)
-
 
 So what is wrong with PrintF? Well,
 it can only print to the screen.
@@ -941,7 +921,6 @@ we will go into the heart of Action!,
 the ability to call PROCs.
 
 ## Lesson 7
-
 
 Now its time to learn about PROCs.
 What is a PROC?  We already know about
@@ -1020,9 +999,9 @@ First 'a' is set to 5 in main().
 Remember that the last PROC is always
 the first one run.  The value of
 'a' is then printed.  Then when the
-computer gets to the line "my_proc()"
+computer gets to the line "my\_proc()"
 it goes up to the spot where
-"PROC my_proc()" is and starts running
+"PROC my\_proc()" is and starts running
 there.
 
 Ok, now we have another 'BYTE a'
@@ -1037,7 +1016,7 @@ the computer goes to the next line
 after the call to the PROC.  In this
 case it will print 'a' again.
 
-And it prints 5.  But in my_proc we
+And it prints 5.  But in my\_proc we
 set a=10.  Once again, these are 2 different variables because each
 can only be used by the PROC it is
 defined in.
@@ -1083,7 +1062,6 @@ more so of the PROCs.  Next time
 we will cover FUNCs, which are similar
 to PROCs, and the opposite of local
 variables, globals.
-
 
 ## Lesson 8
 
@@ -1202,7 +1180,6 @@ PROC main()
 RETURN
 ```
 
-
 This is almost a trivial sample of
 the power this type of construct.
 If you have seen a program I wrote
@@ -1240,7 +1217,6 @@ declare globals anywhere else in your
 program (like between PROCs etc.) then
 you MUST have the MODULE there.
 
-
 ```
 MODULE
   
@@ -1264,10 +1240,9 @@ MODULE
   RETURN
 ```
 
-
 You can see that the value of score
 in the main() was increased by the
-"score = score +100" in you_win().
+"score = score +100" in you\_win().
 You can't do this with locals
 because when you change a local (this
 includes parameters too) it is only
@@ -1411,12 +1386,10 @@ PROC main()
 RETURN
 ```
 
-
 You use ARRAY just like any normal
 variable, but you must subscript
 "(i) or something" each time you
 use it.
-
 
 So, what is the difference between a
 ARRAY of BYTEs and a string?  The
@@ -1500,10 +1473,11 @@ does this for you.
 SCompare(prompt, again)
 
 This FUNC returns an INT value.  It
-return a number <0 if prompt is less
+return a number \<0 if prompt is less
 than again.  It return 0 if they
 are equal.  And it returns a number
->0 if prompt is greater than again.
+
+> 0 if prompt is greater than again.
 
 This is great for alphabetization.  In
 fact, APROG.902 does a little
@@ -1542,7 +1516,6 @@ ELSE
 FI
 ```
 
-
 In fact, this happens so often that
 we have a special statement for it:
 the ELSEIF. The next example is
@@ -1576,18 +1549,23 @@ Your Atari has a few devices built in
 to it when you turn it on.
 
 E: - input and output
+
 - This is the standard Atari editor that is used.  When you do a PrintE() or other simple output, this is the device it goes to. Also, when you do a InputB() this is the device it comes from. It is the screen and the keyboard combined.
 
 C: - input and output
+
 - This is the cassette player.
 
 P: - output only
+
 - This was originally meant to stand for parallel but Atarians now know it as printer.  It makes sense that it is for output only, right?
 
 S: - output only
+
 - This is the screen.  This is the device that is opened by the Atari when you do a Graphics command.  (We'll cover Graphics later in the tutorial.)
 
 K: - input only
+
 - The keyboard.  When you input information from the keyboard, nothing is echoed on the screen.
 
 There are 2 more devices that we call
@@ -1597,9 +1575,11 @@ to be loaded in before you can use
 them.
 
 D: - input and output
+
 - Your disk drive.  DOS must be loaded before you can use it. Also, a filename must be supplied when you first open this device.
 
 R: - input and output
+
 - The RS232 port on the 850 or P:R: Connection.  This is used by modems that need the interface.
 
 There is also 1 custom device that
@@ -1607,6 +1587,7 @@ is "famous" enough to merit me
 mentioning it here.
 
 T: - input and output
+
 - This is your 1030 or XM301 modem.
 
 OK, those are the devices.  How do you
@@ -1632,14 +1613,12 @@ The next number is the command.  Use
 this chart to find out which command
 to use.
 
-
 || Access || Value
 | Input Only        | 4
 | Output Only       | 8
 | Input and output  | 12
 | Append to end of file          | 9
 | Disk drive directory        | 6
-
 
 Since a K: device can only do input,
 the number "4" is an easy choice.
@@ -1692,7 +1671,6 @@ exactly the same.
 
 Here are the output PROCs.
 
-
 || Proc || output
 | PrintD    | string
 | PrintDE   | string with CR
@@ -1702,7 +1680,6 @@ Here are the output PROCs.
 | PrintCDE  | CARD with CR
 | PrintID   | INT
 | PrintIDE  | INT with CR
-
 
 The input statements are close to the
 normal input FUNCs as well.
@@ -1722,6 +1699,7 @@ InputID - INT
 ```
 
 And for strings:
+
 ```
 InputSD(3,name)
 ```
@@ -1878,7 +1856,6 @@ PROC better_read()
 RETURN
 ```
 
-
 ## Lesson 11
 
 We have just finished pretty much of
@@ -1988,7 +1965,6 @@ location cp points to to 6.
   cp     -------> c
 ```
 
-
 I hope that helped a little.
 
 Have you ever wanted to change the
@@ -2016,7 +1992,6 @@ PROC main()
   PrintBE(a)
 RETURN
 ```
-
 
 Well, I bet you are saying, "That's
 nice, I MIGHT use that once in a
@@ -2103,7 +2078,7 @@ it is just like
 INT g
 ```
 
-"new" is the type and bball_player is
+"new" is the type and bball\_player is
 the variable name.  To use a record
 we have "dot notation".  That is just
 a fancy way of saying we do this:
@@ -2196,7 +2171,7 @@ We have to decide how many records we
 want to hold.  Our company is kind of
 small, we only have 6 employees.  So, 6 employees each taking up 7 bytes.
 We have to reserve 42 bytes of memory
-to hold our information because 6*7=42.
+to hold our information because 6\*7=42.
 
 ```
   BYTE ARRAY company(42)
@@ -2218,19 +2193,18 @@ figure out where in memory this really
 is.  This equation is the same one we
 will use for all advanced record and
 POINTER manipulations.
+
 ```
   info = company + (counter * size)
 ```
 
 That's it!
 
-
 label | use
 info    | The name we gave our POINTER
 company | The ARRAY we used to reserve memory.
 counter | This is the record number we wish to look at. Since we have 6 employees this will be a number from 0 to 5.  This can be a constant like 3 or a variable like in a FOR loop.
 size    | The number of bytes in a record in our DEFINE line.
-
 
 Ok, so how do you use it?  Easy...
 If we want to enter employee number 3's information.
@@ -2379,7 +2353,7 @@ offset value for the size.
 ```
 
 How many players maximum can play our
-game?  We'll just say 8.  So, 8 * 23 = 184
+game?  We'll just say 8.  So, 8 \* 23 = 184
 
 ```
   BYTE ARRAY players(184)
@@ -2387,6 +2361,7 @@ game?  We'll just say 8.  So, 8 * 23 = 184
 
 Now we need 2 POINTERs.  One like
 normal, and 1 to point to the name.
+
 ```
   record POINTER active_player
 
@@ -2443,12 +2418,10 @@ mm/dd/yy.
 
 How big to we want each field?
 
-
 field    |         size in bytes
 firstname       |      11
 lastname        |      14
 date            |      9
-
 
 Try to declare your sizes 1 bigger
 because strings go from 0 to 1 less
@@ -2489,7 +2462,7 @@ The total size is 27 + 9 = 36
 ```
 
 How many customers do you have?  Let's
-just say 100.  100 * 27 = 2700
+just say 100.  100 \* 27 = 2700
 
 ```
   BYTE ARRAY data(2700)
@@ -2525,7 +2498,6 @@ Once again, that's it! For customer #53:
 
 APROG12.002 is a full featured phone
 book based on this last subject.
-
 
 ## Lesson 13
 
@@ -2582,6 +2554,7 @@ can assign them to a value using
 ```
 
 So, if you do a:
+
 ```
   PrintIE(i)
   PrintBE(b)
@@ -2692,7 +2665,6 @@ subject.  I will just list the BASIC
 graphics command and their Action!
 equivalents.
 
-
 BASIC   |         Action!
 GRAPHICS 0      | Graphics(0)
 SETCOLOR 1,0,0  | SetColor(1,0,0)
@@ -2700,7 +2672,6 @@ COLOR 2         | color=2
 POSITION 3,4    | Position(3,4)
 PLOT 10,10      | Plot(10,10)
 DRAWTO 20,20    | DrawTo(20,20)
-
 
 I have not listed all the routines
 in the Action! library.  There are

@@ -12,14 +12,14 @@ Forcing an interrupt in the Atari [Altirra](https://www.virtualdub.org/altirra.h
 
 Afterwards, in the Console window, just type in these 2 lines:
 
-.basic_rebuildvnt
-.basic_rebuildvvt
+.basic\_rebuildvnt
+.basic\_rebuildvvt
 
 and press the F8 key again. That's all. Now back in BASIC, you can list the source code in it's original form or save it to disk. :-)
 
 The 2 lines executed in Altirra, do the following things:
 
-.basic_rebuildvnt ; Rebuild BASIC variable name table
-.basic_rebuildvvt ; Rebuild BASIC variable value table
+.basic\_rebuildvnt ; Rebuild BASIC variable name table
+.basic\_rebuildvvt ; Rebuild BASIC variable value table
 
 Again, we deeply, deeply have to thank Avery Lee for his gigantic help to the community worldwide. Thank you so much Avery. :-)

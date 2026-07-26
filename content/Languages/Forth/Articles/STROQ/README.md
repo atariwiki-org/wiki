@@ -1,6 +1,5 @@
 # Stroq - A game in Forth
 
-
 ## About Stroq:
 
 Stroq is a simple but addictive puzzle game. I found the game for Linux and MacOS X on the Internet ([Stroq Homepage](http://stroq.sourceforge.net/)) and decided to do a conversation for the Atari 8Bit Computer in Forth. Winfried Piegsda did the graphical design, sound and artwork, I did the coding in Forth (X-Forth for Atari). The Game programmed in little less than 4 weeks to be submitted to the annual ABBUC Software Contest where it scored the [5th place](http://www.atari-portal.net/modules.php?name=DocTree&dtIsBlk=y&dtId=216).
@@ -9,9 +8,8 @@ Stroq is a simple but addictive puzzle game. I found the game for Linux and MacO
 
 ![](attachments/title.png)
 ![](attachments/game1.png)
+
 ### Atari 8bit Version
-
-
 
 ## License:
 
@@ -1185,8 +1183,3 @@ LEVELMEM @ MAXLEVEL !
 ## Downloads
 
 The Atari Stroq Programm has some quirks when running in an Emulator (such as [Atari800](http:://atari800.sf.net)). It runs fine on the real hardware.
-
-
-
-
-

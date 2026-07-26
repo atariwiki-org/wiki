@@ -31,4 +31,3 @@ BYTE vcount=$D40B, wsync=$D40A,
 RETURN
 
 ```
-

@@ -32,6 +32,7 @@ ALIEN    1 2 3 C A 3
 ```
 
 Here the following configuration is defined for the program (game) "Alien":
+
 - Joystick up = CHIP-8 button 1
 - Joystick down = CHIP-8 button 2
 - Joystick left = CHIP-8 button 3
@@ -56,7 +57,7 @@ The START key of the Atari switches off the slowdown of the CHIP-8 programs, so 
 ## Development
 
 - A Chip8 IDE [https://github.com/JohnEarnest/Octo](https://github.com/JohnEarnest/Octo)
-- A collection of documentation on the CHIP-8 and related virtual machines [https://github.com/trapexit/chip-8_documentation](https://github.com/trapexit/chip-8_documentation)
+- A collection of documentation on the CHIP-8 and related virtual machines [https://github.com/trapexit/chip-8\_documentation](https://github.com/trapexit/chip-8_documentation)
 - Mastering CHIP‐8 [https://github.com/mattmikolay/chip-8/wiki/Mastering-CHIP%E2%80%908](https://github.com/mattmikolay/chip-8/wiki/Mastering-CHIP%E2%80%908)
 - Mastering SuperChip [http://johnearnest.github.io/Octo/docs/SuperChip.html](http://johnearnest.github.io/Octo/docs/SuperChip.html)
 - OctoJam [https://itch.io/jam/octojam-7](https://itch.io/jam/octojam-7)
@@ -65,6 +66,7 @@ The START key of the Atari switches off the slowdown of the CHIP-8 programs, so 
 - Chip-8 Technical Reference v1.0 [http://devernay.free.fr/hacks/chip8/C8TECH10.HTM](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM)
 
 ## CHIP-8 Machines
+
 - Chip-8 and Superchip-8 emulator for Atari 8-bit [https://github.com/pkali/Chip-8](https://github.com/pkali/Chip-8)
 - AtariAge - Chip8 emulator version 1.0 [https://forums.atariage.com/topic/82003-chip8-emulator-version-10/](https://forums.atariage.com/topic/82003-chip8-emulator-version-10/)
 - CHIP-8 is an assembler, debugger, and emulator [https://massung.github.io/CHIP-8/](https://massung.github.io/CHIP-8/)
@@ -77,10 +79,9 @@ The START key of the Atari switches off the slowdown of the CHIP-8 programs, so 
 - How to write an emulator (CHIP-8 interpreter) [https://multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/](https://multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/)
 - David Winter's CHIP-8 emulation page [https://www.pong-story.com/chip8/](https://www.pong-story.com/chip8/)
 
-
 ## Misc
+
 - Awesome CHIP-8 [https://chip-8.github.io/links/](https://chip-8.github.io/links/)
 - Chip-8 bei Tindie [https://www.tindie.com/stores/chip8/](https://www.tindie.com/stores/chip8/)
 - BUILD YOUR OWN CHIP-8 COMPUTER [https://chip-8.com/build-your-own-computer](https://chip-8.com/build-your-own-computer)
 - CB2 microcomputer [https://www.tindie.com/products/cb2micro/cb2-microcomputer/](https://www.tindie.com/products/cb2micro/cb2-microcomputer/)
-

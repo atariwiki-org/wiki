@@ -16,7 +16,6 @@ main DOS core.  The ROM-disk contains files and drivers used by the system
 and SpartaDOS X versions of several utilities found in the SpartaDOS ToolKit.
 It also contains a very versatile ARC utility package.
 
-
 Some of the new features of SpartaDOS X (referred to as SDX):
 
 - built in, memory resident FORMAT utility.  Old versions of SpartaDOS could only initialize Atari format disks using 'AINIT'.  To           initialize a SpartaDOS disk required the loading of a program called 'XINIT'.  Now, any time an XIO #254 call is made, the SDX format           menu is brought up.  With this, you can select a variety of disk densities and types.  It will also allow "1-second" formatting by           simply rewriting the root directory on a formatted disk.
@@ -40,7 +39,7 @@ or not you have an R-Time 8 cartridge.
 
 A major change with the X cart is the way devices are addressed.  Since ICD wanted drives to be addressed by letter or number, conflicts would have occured with existing devices.  Also, ICD wanted SDX to be more similar to MS-DOS, so those conventions were adopted.  E: has become CON:, P: has become PRN:, and D1: D2: and D3: are A: B: and C:.  Switching between an IBM machine and SpartaDOS X is much easier with these changes.
 
-Another feature of SDX is its I/O redirection.  With this, you can send the output of a program to another device.  Ex: {{DIR >>PRN:}} would do a directory, but the results would be sent to the printer.  Also, you can use a file to "feed" a program with input redirection.  Ex: {{BASIC &lt;&lt;file.ext}} would call up internal BASIC and send it file.ext as if the contents of
+Another feature of SDX is its I/O redirection.  With this, you can send the output of a program to another device.  Ex: {{DIR \>\>PRN:}} would do a directory, but the results would be sent to the printer.  Also, you can use a file to "feed" a program with input redirection.  Ex: {{BASIC \<\<file.ext}} would call up internal BASIC and send it file.ext as if the contents of
 that file were being typed into the machine.  This would be used in place of batch files because you can no longer send input to BASIC from a batch file.
 
 SDX recognizes two new file attributes in addition to protected, hidden and archive.  Hidden files do not appear in the directory, and archive is used to mark files for backup.  This is normally used with a hard disk backup program.  When a file is updated, the archive bit is cleared, telling a program like Flashback that the file needs to be backed up.  All of these are set with the ATR or ATTRIB commands (same thing).  You can also scan directories for files with certain attributes.
@@ -52,6 +51,7 @@ Parameters can now be passed to batch files.  In the batch file itself, these ar
 Internally, SDX is very different from earlier versions of SpartaDOS. All of the files on the cartridge are relocatable and can be held in memory. COMMAND.COM, the command processor is one of these files.  It is non-resident in nature and is unLOADed from memory when binary files are run.  This saves about 4K of memory.  It is reLOADed when the program is exited to DOS.  Disk based programs written in relocatable format could be loaded at MEMLO, and held, eliminating the need to reload from disk each time.  Unfortunately, information on how to write these modules is almost non-existant, so for now, only the programs on the cartridge can be held.
 
 Some of the new commands and changes with SDX not mentioned above:
+
 - CHTD/CHVOL - now built in
 - COPY - now checks to see that there are two files specified.  Files could be lost with disk based SpartaDOS by accidentally not          specifying a second filename
 - DIR - /p directive pages output, /c directive gives file count.
@@ -72,5 +72,3 @@ SDX is available direct from ICD.  The ICD BBS contains a listing of ICD product
 or even mail-order.  Check for the latest price.  ICD BBS: 815-968-2229.
 
 Doug Wokoun
-
-

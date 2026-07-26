@@ -1,9 +1,9 @@
 # CC65 Porting Ideas
 
-
 ## Address Database
 
 Original Distribution Info
+
 ```
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 My contact information:
@@ -25,7 +25,6 @@ Help.dat        - help file
 ```
 
 ## Banner in C
-
 
 ```
 BANNER is a program makes banners to be printed on the line printer.
@@ -125,25 +124,28 @@ New York, New York, 10022
 ## Calculators
 
 ### calc.c
+
 Powerfull arithmetik calculator with variables and functions. Compiles, but needs work on static local variables.
 
 ### calculator.c
+
 This source needs a mathlib. Mathlib is not available to cc65 this time. Anyone interested in writing one?
 
 ### rpncalch.c
+
 A RPN Calculator. Compiles. Needs some finishing work.
 
 ### dc.c
-Desk calculator. Supports +,,* and / on integer and floating point. Compiles, but needs work.
+
+Desk calculator. Supports +,,\* and / on integer and floating point. Compiles, but needs work.
 
 ### rpn.c
-This is a program to emulate an RPN (Reverse Polish Notation) calculator with full functions of an HP-67, but with unlimited stack and program space.
 
+This is a program to emulate an RPN (Reverse Polish Notation) calculator with full functions of an HP-67, but with unlimited stack and program space.
 
 ## Screen Editor in C
 
 A Screen Editor in C, similar to Wordstar. Code from 1982, with 68k Assembler parts. Needs more work.
-
 
 ## The Game Gomoku
 
@@ -158,10 +160,7 @@ The program learns to play by analysing its losses and watching out for them in 
 
 Type "?" in place of your move to reprint the board.
 
-
-
 ## The game of Mancala in C
-
 
 Readme:
 
@@ -175,17 +174,15 @@ To compile:
 gcc -O2 mancala.c ab.c rnd.c -o mancala
 
 To run:
-mancala <player 1 lookahead> <player 2 lookahead>
+mancala \<player 1 lookahead\> \<player 2 lookahead\>
 
 where lookahead of 0 means a human plays.  Player 1 is the top row, player 2 is the bottom.  For example.
-
 
 | | |   | |
 |mancala |0 |2   |means you go first, and the computer looks ahead 2 moves.|
 |mancala |4 |0   |means you go second, and the computer looks ahead 4 moves.|
 |mancala |3 |3   |Watch the computer play itself!|
 |mancala |7 |1   |Watch how badly a smart computer beats a dumb one!|
-
 
 ABOUT THE PROGRAM
 ab.c is the alpha-beta search engine.  It doesn't prune or extend the searches of interesting paths.
@@ -195,19 +192,17 @@ mancala.c is the "hooks" for the search engine and the user interface
 the number of stones you got to put in your scoring pit (you can tell I
 didn't try real hard to be clever here).
 
-
 rnd.c is a random number generator I had lying around.  I used it to
 keep the computer from playing _exactly_ the same moves every game.
 
 Let me know what you think!  But be nice...remember, I only spent an hour
 on this.  If I spent two hours it'd be _way_ more impressive.
 
--Bill (wms@ssd.intel.com)
+\-Bill (wms@ssd.intel.com)
 
 PS - It plays the rules as Scott posted them.  They were kind of vague;
 for example, what happens when you have no legal move?  The program
 then forces you to pass.  If you don't like this feel free to change it.
-
 
 ```
 From SSAUYET@eagle.wesleyan.edu Wed Aug 24 22:16:31 1994
@@ -354,10 +349,7 @@ http://www.cut-the-knot.com/recurrence/hanoi.shtml
 
 http://www.mazeworks.com/hanoi/index.htm
 
-
-
 ## Mienv and Tierra in C
-
 
 ```
 Title:          Minev
@@ -580,10 +572,6 @@ is pretty small. You can raise this (see 'consts.h', in the 'src'
 directory), but you do so at your peril.
 ```
 
-
-
-
-
 ## The Game Space Dirt
 
 *original README*
@@ -592,17 +580,15 @@ Hi and Assalamu Alaikum
 
 Space Dirt is a small DOS based game .
 The objectives are simple
-1.Clean the space dirt
-2.Hit the dirt making UFO ( or what ever u call it ) from behind
-3.Take the help of the colored pills appearing at random
+1\.Clean the space dirt
+2\.Hit the dirt making UFO ( or what ever u call it ) from behind
+3\.Take the help of the colored pills appearing at random
 
 Can be of a great help for beginners in cpp graphics.
 Use it , abuse it I don't mind !!!!
 
 Rafay
 rafaymansoor@yahoo.com
-
-
 
 ## Star Trek Game in C
 
@@ -698,10 +684,3 @@ COMPUTER RESPONDS TO THIS COMMAND BY PRINTING
 OUT A GALACTIC MAP SHOWING THE RESULTS OF ALL
 PREVIOUS SENSOR SCANS.
 ```
-
-
-
-
-
-
-

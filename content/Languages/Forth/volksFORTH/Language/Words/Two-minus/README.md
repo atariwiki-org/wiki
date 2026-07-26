@@ -1,11 +1,7 @@
-# __2-__ "two-minus" ( n1 | u1 -- n2 | u2 )
-
-
+# **2-** "two-minus" ( n1 | u1 -- n2 | u2 )
 
 ||Forth79||Forth83||ANSI||Forth200x
 |   X    |   X    |     |
-
-
 
 %%tabbedSection
 %%tab-english

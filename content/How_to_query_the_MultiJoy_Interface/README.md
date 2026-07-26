@@ -2,13 +2,13 @@
 
 ## General Information
 
-The MultiJoy is an adapter to connect 8 or 16 Joysticks to a ATARI 8Bit (600XL, 800XL, 130XE, ...). The MultiJoy was designed by Radek Sterba (RASTER). You can find detail Information on this adapter on [Radeks website](http://www.infos.cz/raster/atari/hw/multijoy.htm) 
+The MultiJoy is an adapter to connect 8 or 16 Joysticks to a ATARI 8Bit (600XL, 800XL, 130XE, ...). The MultiJoy was designed by Radek Sterba (RASTER). You can find detail Information on this adapter on [Radeks website](http://www.infos.cz/raster/atari/hw/multijoy.htm)
 
 Mathy van Nisselroy has information about MultiJoy Games on
-his [site](http://www.mathyvannisselroy.nl/special%20stuff.htm) 
-
+his [site](http://www.mathyvannisselroy.nl/special%20stuff.htm)
 
 ## Assembler / Machine Language
+
 First you must initialize the communication direction of the ports. The pins of Joystick 1 work as Input and the pins of Joystick 0 work as output.
 
 This has to be done once at the start of the program.
@@ -48,6 +48,7 @@ The joystick button can be queried after selection of the joystick with register
 You must take care to synchronize the queries. Especially take care that not players on the first Joysticks have any unfair opportunities.
 
 ## Basic / Turbo Basic
+
 ### BASIC
 
 Initializing:
@@ -59,6 +60,7 @@ POKE 54018,52 : REM restore OS default value for PACTL
 ```
 
 Query the Joystick:
+
 ```
 POKE 54016,NUM*16 : REM NUM = Number of Joystick (0-7/0-15)
 ST=PEEK(54016):ST=ST-INT(ST/16)*16 : REM read Joystick value
@@ -76,6 +78,7 @@ POKE $D302,$34
 ```
 
 Query the Joystick:
+
 ```
 POKE $D300,NUM*$10 : REM NUM = Number of Joystick (0-7/0-15)
 PAUSE %10 : REM wait for value
@@ -85,7 +88,6 @@ REM which is read from register 632 is only updated every 1/50th second
 REM TR=STRIG(%0) : REM this does not work either
 TR=PEEK($D010): REM read it directly from the GTIA register
 ```
-
 
 ## ACTION!
 
@@ -101,7 +103,9 @@ PROC INITMULJOY()
 RETURN
 
 ```
+
 Query the Joystick:
+
 ```
 PROC QUERYMULJOY(BYTE PL, BYTE POINTER STI,TRI)
  ; call procedure stating PL (range 0...8) and 2 pointers to variables to which the result is returned

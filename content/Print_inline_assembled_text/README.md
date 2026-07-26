@@ -59,4 +59,3 @@ The programm will be continued after the inline-text.
 00440 ------------------------------
 
 ```
-

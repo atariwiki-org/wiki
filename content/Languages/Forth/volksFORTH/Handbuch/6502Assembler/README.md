@@ -2,7 +2,7 @@
 
 (work in progress, translation pending)
 
-See also: [A 6502 Assembler in FORTH](../../../Articles/A_6502_Assembler_in_FORTH/README.md) 
+See also: [A 6502 Assembler in FORTH](../../../Articles/A_6502_Assembler_in_FORTH/README.md)
 
 %%tabbedSection
 %%tab-english
@@ -17,18 +17,23 @@ Im Folgenden werden die Konzepte des 6502-Assemblers für VolksForth dargestellt
 Die Funktionsweise des Adressinterpreters sowie der Routine NEXT wird in [volkFORTH - Handbook - Chapter 2](../Chapter2/README.md) dargestellt. Der 6502-Assembler gestattet strukturierte Programmierung. Die Strukturelemente sind analog zu den Kontrollstrukturen des Forth aufgebaut, tragen jedoch andere Namen, um die Verwechselungsgefahr zu verringern und die Übersichtlichkeit zu erhöhen.
 
 Ein Beispiel:
+
 ```
 cc ?[ <ausdruck1> ][ <ausdruck2> ]? 
 ```
+
 cc steht fur "condition code" . <ausdruck1> wird ausgeführt, wenn cc zutrifft, andernfalls <ausdruck2>. Der Teil
+
 ```
 ][ <ausdruck2>
 ```
+
 kann auch weggelassen werden. Das Analogon in Forth ist	IF ELSE ... THEN
 
-Beachten Sie bitte, das vor {{{?[}}} immer(!) ein conditioncode stehen muß. Außerdem findet keine Prüfung auf korrekte Verschachtelung der Kontrollstrukturen statt.
+Beachten Sie bitte, das vor {{{?\[}}} immer(!) ein conditioncode stehen muß. Außerdem findet keine Prüfung auf korrekte Verschachtelung der Kontrollstrukturen statt.
 
 Weitere Kontrollstrukturen sind:
+
 ```
 [[ <ausdruck1> cc ?[[ <ausdruck2> ]]? 
 [[ <ausdruck1> cc ?] 
@@ -36,19 +41,23 @@ Weitere Kontrollstrukturen sind:
 ```
 
 Die analogen Ausdrucke in Forth sind:
+
 ```
 BEGIN <ausdruck1> WHILE <ausdruck2> REPEAT
 BEGIN <ausdruckl> UNTIL 
 BEGIN <ausdruck1> REPEAT
 ```
-Auch hier darf bei den Assemblerworten cc nicht weggelassen werden. Außerdem ist nur genau ein {{{?\[}}} zwischen {{{[[}}} und {{{\]]?}}} zulässig. Beachten Sie bitte auch den Unterschied zwischen {{{]]}}} und {{{]]?}}} !
+
+Auch hier darf bei den Assemblerworten cc nicht weggelassen werden. Außerdem ist nur genau ein {{{?\[}}} zwischen {{{\[\[}}} und {{{\]\]?}}} zulässig. Beachten Sie bitte auch den Unterschied zwischen {{{\]\]}}} und {{{\]\]?}}} !
 
 Als condition code sind zulässig:
+
 ```
 0= 0<> 0< 0>= CS CC VS VC
 ```
 
 Sie konnen den Prozessor-Flags Z N C und V zugeordnet werden. Im ersten Beispiel wird also <ausdruck1> ausgeführt , wenn cc durch 0= ersetzt wird und das Z-Flag gesetzt ist. Jeden der condition codes kann man durch ein folgendes NOT erweitern, also z.B.:
+
 ```
 0= NOT ?[ 0 # lda ]?
 ```
@@ -56,6 +65,7 @@ Sie konnen den Prozessor-Flags Z N C und V zugeordnet werden. Im ersten Beispiel
 Neben allen anderen Opcodes mit ihren Adressierungsarten gibt es auch die Sprünge BCC, BCS usw. Sie sind nur in der Adressierungsart "Absolut" zulässig, d.h. auf dem Stack befindet sich die Adresse des Sprungzieles. Liegt diese Adresse außerhalb des moglichen Bereiches, so wird die Fehlermeldung "out of range" ausgegeben.
 
 Für die anderen Opcodes sind, je nach Befehl, die folgenden Adressierungsarten zulassig:
+
 ```
 .A 
 #
@@ -65,6 +75,7 @@ X)
 )Y
 )
 ```
+
 Die Adressierungsart "Absolut" wird verwendet, wenn keine andere angegeben wurde. Wird mit einem Mnemonic eine nicht erlaubte Adressierungsart verwendet, so wird die Fehlermeldung "invalid" ausgegeben.
 
 Beispiele für die Verwendung des 6502-Assemblers (zur Erläuterung wird die herkömmliche Notation hinzugefügt):
@@ -81,23 +92,29 @@ vector ) jmp   -> jmp (vector)
 Zusatzlich enthalt das System noch mehrere Macros, die alle nur "Absolut" adressieren konnen:
 
 ### winc
+
 Inkrementiert einen 16-Bit-Zeiger um 1. wdec dekrementiert analog.
 
 ### 2inc
+
 Inkrementiert einen 16-Bit-Zeiger um 2. 2dec dekrementiert analog.
 
 ### ;c:
+
 Schaltet den Assembler ab und den Forth-Compiler an Damit ist es möglich, von Maschinencode in Forth überzuwechseln. Ein Gegenstuck ist nicht vorhanden.
 
 Ein Beispiel für die Verwendung von {{{;C:}}} ist:
+
 ```
 ... 0< ?[ ;c: ." Fehler" ; Assembler ]? ... 
 ```
 
 Ist irgendwas kleiner als Null, so wird "Fehler" ausgedruckt und die Ausführung des Wortes abgebrochen, sonst geht es weiter im Code.
 
-### >LABEL und LABEL
-Schließlich gibt es noch die Worte {{{>LABEL}}} und {{{LABEL}}}. {{{>LABEL}}} erzeugt ein Label im Heap, wobei es den Wert des Labels vom Stack nimmt . {{{LABEL}}} erzeugt ein Label mit dern Wert von HERE. Beispiel:
+### \>LABEL und LABEL
+
+Schließlich gibt es noch die Worte {{{\>LABEL}}} und {{{LABEL}}}. {{{\>LABEL}}} erzeugt ein Label im Heap, wobei es den Wert des Labels vom Stack nimmt . {{{LABEL}}} erzeugt ein Label mit dern Wert von HERE. Beispiel:
+
 ```
 Label schleife  dex 
                 schleife bne
@@ -108,11 +125,14 @@ Label schleife  dex
 Ein Codewort muß letztendlich immer auf {{{NEXT JMP}}} führen, damit der Adressinterpreter weiter arbeitet. Im folgenden Glossar werden Konstanten angegeben, auf die gesprungen werden kann und die Werte auf den Stack bringen bzw. von ihm entfernen. Wichtig ist insbesondere die Routine SETUP. Sie kopiert die Anzahl von Werten, die im Akkumulator angegeben wird, in den Speicherbereich ab N.
 
 ### Zugriff auf den Stack
+
 Für den Zugriff auf den Stack wird, so weit das möglich ist, die Benutzung der Worte {{{SETUP}}} und {{{PUSH ...}}} empfohlen. Das reicht allerdings häufig nicht aus. In diesem Fall kann man die Werte auf dem Stack folgendermaßen zugreifen:
+
 ```
 SP x) lda	\ Das untere Byte des ersten Wertes 
 SP )y lda	\ Das obere Byte des ersten Wertes
 ```
+
 sowie durch Setzen des Y-Registers auch die zweiten, dritten etc. Werte. Beachten Sie bitte, das in NEXT verlangt wird, daß das X-Register den Inhalt $00 und das Y-Register den Inhalt $01 hat. Das wurde im obigen Beispiel ausgenutzt.
 
 Beispiele fur Assemblercode in Forth, den wir als gut empfinden, sind unter Anderem die Worte {{{FILL}}} und {{{-TRAILING}}} (im VolksForth Kernel). Wollen Sie Assembler programmieren, so sollten Sie sich diese Worte und noch einige andere ansehen.
@@ -120,11 +140,13 @@ Beispiele fur Assemblercode in Forth, den wir als gut empfinden, sind unter Ande
 ### ROM Zugriff auf Commodore Maschinen
 
 Beim Assemblerprogrammieren muß beachtetwerden, daß VolksForth das ROM abschaltet (bei Commodore Maschinen). Daher müssen Lesezugriffe ins ROM etwas anders organisiert warden. Beispiel fur den C16:
+
 ```
 ffd2 jsr	\ springt eine RAM-Routine an.
 ff3e sta ffd2 jsr ff3f sta  \ springt eine ROM-Routine an.
 ```
-Sie funktioniert nur , wenn sie im unteren RAM-Bereich (<$8000) steht . Sonst folgen undefinierte Reaktionen.
+
+Sie funktioniert nur , wenn sie im unteren RAM-Bereich (\<$8000) steht . Sonst folgen undefinierte Reaktionen.
 
 Beim C64 ist eine Bankumschaltung nur für Lesezugriffe in das BASIC-ROM erforderlich. Hierbei ist zusätzlich zu beachten, daß eine Bankumschaltung	mit {{{SEI}}} vorbereitet werden muß, da andernfalls der periodische Tastaturinterrupt zu einem Absturz führen wurde.
 
@@ -198,19 +220,19 @@ Dieses Assemblermakro assembliert eine Sequenz, die bei Ausfuhrung den Inhalt de
 
 ### ram ( -- )
 
-__Commodore__
+**Commodore**
 
 Makro.	Schaltet bei Ausführung auf eine andere Speicherbank. Die genaue Wirkungsweise ist Maschinenabhängig.
 
 ### rom ( -- )
 
-__Commodore__
+**Commodore**
 
 Makro.	Schaltet bei Ausführung auf eine andere Speicherbank. Die genaue Wirkungsweise ist Maschinenabhängig.
 
 ### sys ( addr -- )
 
-__Commodore__
+**Commodore**
 
 Makro.	Schaltet bei Ausführung auf eine Speicherbank mit Systemroutinen und führt einen Sprung zu addr aus. Die genaue Wirkungsweise ist Maschinenabhängig.
 

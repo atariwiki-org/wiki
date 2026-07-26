@@ -1,6 +1,5 @@
 # X-Forth Extensions
 
-
 ### ?
 
 ```
@@ -29,7 +28,6 @@
   DUP 1 AND + ;
 ```
 
-
 ### Cell+
 
 ```
@@ -43,7 +41,6 @@
 : CELLS ( n1 -- n2 )
   2 * ;
 ```
-
 
 ### CVariable
 
@@ -79,6 +76,3 @@
 : VALUE ( x -- )
   <BUILDS , DOES> @ ;
 ```
-
-
-

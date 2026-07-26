@@ -8,12 +8,14 @@ Thank you so much Mark, we really would like to thank you for your work. Especia
 Thank you in the name of Germany!
 
 ## Fonts
+
 - [AtariClassic-Regular.ttf.zip](attachments/AtariClassic-Regular.ttf.zip) ; Regular Font ; version 2.0 for PC and Mac
 - [acttf2.002.zip](attachments/acttf2.002.zip) ; Regular Font with German special letters ; version 2.002 for PC and Mac
 - [acttfpc.zip](attachments/acttfpc.zip) ; version 1.2 for PC
-- [Mac_Version_1.2.zip](attachments/Mac_Version_1.2.zip) ; version 1.2 for Mac
+- [Mac\_Version\_1.2.zip](attachments/Mac_Version_1.2.zip) ; version 1.2 for Mac
 
 ## Pictures
+
 ![](attachments/version2set.gif)
 Version 2 character set
 
@@ -36,6 +38,7 @@ Atari Classic Regular ; thank you so much Mark!
 Atari Classic Regular with German special letters ; thank you so much Mark!
 
 ## References
+
 - [Mark's website](http://members.bitstream.net/marksim/atarimac/fonts.html) with a lot of more info on this subject
-- [Read_Me.pdf](attachments/Read_Me.pdf) ; Read Me file from Mark about version 2.0
+- [Read\_Me.pdf](attachments/Read_Me.pdf) ; Read Me file from Mark about version 2.0
 - [ReadMe.rtf](attachments/ReadMe.rtf) ; Read Me file from Mark about version 1.2

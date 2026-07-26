@@ -36,9 +36,9 @@ Here are the tools you'll need to create your speedy Synchromesh
 disk:
 
 1. Two blank disks
-1. The DOS XL 2.35I System Master Diskette supplied with Synchromesh
-1. A utility capable of modifying single bytes on a disk sector. Examples are DISKSCAN, OMNIMON, and DISKEY.
-1. To speed up the boot process a little more, an optional step requires the use of the Archiver/Editor/Chip or Happy Enhancement and a sector copier utility.
+2. The DOS XL 2.35I System Master Diskette supplied with Synchromesh
+3. A utility capable of modifying single bytes on a disk sector. Examples are DISKSCAN, OMNIMON, and DISKEY.
+4. To speed up the boot process a little more, an optional step requires the use of the Archiver/Editor/Chip or Happy Enhancement and a sector copier utility.
 
 Step 1 is to boot the DOS XL 2.35I diskette described in item 2.
 This is the 50 second refrigerator break boot. So go enjoy an
@@ -58,6 +58,7 @@ Command". Type in the following when prompted for Command:
 
 This allows you to create the startup file. When you hit return,
 the screen goes blank. Type in the following:
+
 ```
 NOSCREEN 
 GTSYNC ON 
@@ -65,10 +66,11 @@ DO CARTRIDGE;RUN "D:MENU.BAS"
 SCREEN 
 END 
 ```
+
 control and lower case 3
 
 This takes you back to the main menu. Swap back to the DOS XL
-2.35I diskette. You now need to copy two files from this disk.
+2\.35I diskette. You now need to copy two files from this disk.
 Press "C" for "Copy Files". The "From File" is GTSYNC.COM. The
 "To File" is also GTSYNC.COM. Answer the "Single Drive" question
 with a "Yes". Follow the screen directions to copy the file from
@@ -108,9 +110,11 @@ Archiver or Happysoftware and set it up to process only tracks
 0,1,2,3 and 4. Insert the"Super Synchromesh" disk in the drive.
 Go to the formatter feature and set the formatter for the
 following sequence:
+
 ```
 11 0F 0D 0B 09 07 03 01 12 10 0E 0C 0A 08 06 04 02 
 ```
+
 Format tracks 0 through 4.
 
 Reboot your sector copier utility. Copy tracks 0 through 4 from

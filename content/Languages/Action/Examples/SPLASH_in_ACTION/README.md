@@ -1,12 +1,12 @@
 # Splash in ACTION
 
 ### General Information
+
 Author:	Paul Chabot
 Language: ACTION!
 Compiler/Interpreter: ACTION!
-Published: ANTIC Vol. 3, #12 (04/ 85)
+Published: ANTIC Vol. 3, \#12 (04/ 85)
 ---
-
 
 ''A tutorial with four demonstration programs. For BASIC programmers who want to know about the ACTION! programming language, and for ACTION!  users who want to pick up some tips. The first BASIC listing will run on any Atari computer The remaining listings are written in ACTION! and require the ACTION! cartridge. But BASIC programmers can compare these printed listings with the first listing and get some idea why the year-old ACTION! is increasingly becoming the language of choice for serious Atari programmers. NOTE. Antic Disk subscribers can run listing 4 without ACTION! We have provided a runtime binary file. Use the "L" option from DOS for the file, SPLASH.EXE.''
 
@@ -16,7 +16,7 @@ If you've used Optimized Systems Software's ACTION! language, then you probably 
 
 ### SPLASH IN BASIC
 
-SPLASH1 (listing 1) is a BASIC program that demonstrates artifacting in Graphics 8. It is an extension of a short program on Antic's public domain disk GRAPHICS & SOUND #1.
+SPLASH1 (listing 1) is a BASIC program that demonstrates artifacting in Graphics 8. It is an extension of a short program on Antic's public domain disk GRAPHICS \& SOUND #1.
 
 Type in listing 1, check it with TYPO II and SAVE a copy. When you RUN it, use your joystick to choose a point on the GR.8 screen. Pressing the trigger puts a "splash" of lines emanating from this center to all borders. The step size between lines can be changed by simply pressing \[5\]. The program lets you put as many splashes on the screen as you wish before clearing to start over. It's kind of fun-no violence, no winning score, just pretty.
 
@@ -28,16 +28,18 @@ A major advantage of ACTION! is that it is a structured, procedure oriented lang
 
 ACTION! was designed for use on microcomputers, so certain important abilities are built in and easily accessed. It is easier to PEEK and POKE. Relocating an ARRAY is so simple that I've redone the Operating System line plotting routine to execute twice as fast. (More about this later.)
 
-The BASIC command POKE 710,0 in line 202 sets the background color to black on the GR.8 screen. The ACTION! equivalent is c2 = 0 at the top of Setup. This is because of the earlier declaration BYTE c2 = 710. This establishes c2 as a BYTE variable with values 0-255. More importantly, it's placed at memory location 710 (the register for color 2). Likewise, since we have BYTE key= 764, the conditional key<255 in ACTION! is the same as the BASIC PEEK(764)<255.
+The BASIC command POKE 710,0 in line 202 sets the background color to black on the GR.8 screen. The ACTION! equivalent is c2 = 0 at the top of Setup. This is because of the earlier declaration BYTE c2 = 710. This establishes c2 as a BYTE variable with values 0-255. More importantly, it's placed at memory location 710 (the register for color 2). Likewise, since we have BYTE key= 764, the conditional key\<255 in ACTION! is the same as the BASIC PEEK(764)\<255.
 
 If that's all there were, it wouldn't seem like much. But not the least of ACTION! features is that it is a compiled language. The listing of SPLASH2 is technically just the source code. It could be written on any word processor. To run it, you must first compile it. This takes less than 2 seconds. The compiled version (object code) is full-fledged 6502 machine language; the same lightning-fast code made with assembly language. With that in mind, look at the ACTION! listing. I think it's easier to read than BASIC. And yet, it is still just about as powerful as any assembly language.
 
 ### IMPROVE OS ROUTINES
+
 If you run SPLASH2 you'd be surprised at the seeming lack of speed. The joystick moves the center point more than twice as fast, but the splash is only marginally (5%) faster. That bothered me, and I realized the answer is simply that the Plot and DrawTo procedures of ACTION! are the same OS routines accessed from BASIC.
 
 If you tried to improve this speed in BASIC, you'd be sunk. You'd have to write extensive USR routines in assembly language. In ACTION! things are different. You can easily write specialized routines to replace what's in the OS and gain speed.
 
 ### SPLASH3 FOR SPEED
+
 SPLASH3 (listing 3) is functionally the same as SPLASH2. However, the "splash" moves about twice as fast because I use my own routines Dot and BLine. The top portion of the program has the file I call GR8 containing these procedures. The extra speed comes from the fact that these work in GR.8 only, and do not do any error checking. That is done elsewhere in the program.
 
 The procedure BLine is an implementation of Bresenham's Algorithm-one of the fastest known. But the real workhorse is the short procedure Dot. It takes advantage of the way that ACTION! treats arrays. The declaration BYTE ARRAY row creates the CARDinal pointer row to the values of the array. Then the assignment row = adrow(y) makes this point to the beginning of the 40 bytes of the y-th row of the screen (see PROC Gr8( )). It is then fairly easy to move to the correct byte at row(xb) and alter it appropriately using mask arrays for the correct position xr.
@@ -50,9 +52,10 @@ The program SPLASH4 will let you put splashes on the screen in any of the four a
 
 In ACTION!, like any other procedure oriented language, it is very easy to use part of one program in another. There is no worry about line number compatibility For example, you can use my files GR8 and GR7PLUS in any of your own programs. It is easy and rewarding to build up your own library of useful routines. If you're serious about programming your Atari, then I strongly recommend that you get into ACTION!.
 
-(Next month's Antic will include a fast-moving ACTION! bonus game.- ANTIC ED)
----
+## (Next month's Antic will include a fast-moving ACTION! bonus game.- ANTIC ED)
+
 ### Listing 1
+
 ```
 10 REM SPLASH 1
 12 REM BY PAUL CHABOT
@@ -103,7 +106,9 @@ In ACTION!, like any other procedure oriented language, it is very easy to use p
 214 ? "     [joystick]      [S] "
 222 RETURN 
 ```
+
 ### Listing 2
+
 ```
 ; Paul Chabot           
 ;
@@ -169,7 +174,9 @@ DO key=255:Setup()
 OD
 RETURN
 ```
+
 ### Listing 3
+
 ```
 ;  SPLASH 3
 ;------------------------------------
@@ -296,7 +303,9 @@ DO key=255:Setup()
 OD
 RETURN
 ```
+
 ### Lisiting 4
+
 ```
 ;------------------------------------
 ;  Gr7plus 
@@ -452,5 +461,7 @@ OpenScene():Joystick()
 DO Setup():Joystick() OD
 RETURN
 ```
+
 ---
-PDF: [splashinaction.PDF](attachments/splashinaction.PDF) 
+
+PDF: [splashinaction.PDF](attachments/splashinaction.PDF)

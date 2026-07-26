@@ -5,7 +5,7 @@ General Information
 Author: Peter Meyer
 Assembler: generic
 Published: APPLE Assembly Line 12/82
-Download: [Apple Assembly Line Archive](http://salfter.dyndns.org/aal.shtml) 
+Download: [Apple Assembly Line Archive](http://salfter.dyndns.org/aal.shtml)
 
 A machine language routine is said to be relocatable if it can function properly regardless of its absolute location in memory.  If a routine contains a JMP or a JSR to an INTERNAL address then it is not relocatable; if it is run in another part of memory then the internal JSR or JMP will still reference the former region of memory.  JMPs and JSRs to subroutines at absolute locations (e.g. in the Monitor) do not impair the relocatability of a routine.
 
@@ -15,11 +15,9 @@ No tables or other data storage are required, except that three bytes must be re
 
 The technique is fully illustrated in the accompanying assembly language program.  This routine consists of three parts:
 
-
 1. Header Part 1 (SETUP), which sets up a JMP instruction at VECTOR (at $3F5-$3F7, but could be different, as explained above) to point to Header Part 2.
-1. Header Part 2 (HANDLER), which is a 15-byte section of code whose task is to handle requests to perform internal JSRs and JMPs (more on this below).
-1. The main part of the routine, in which internal JSRs and JMPs (in effect) are performed using macro instructions.
-
+2. Header Part 2 (HANDLER), which is a 15-byte section of code whose task is to handle requests to perform internal JSRs and JMPs (more on this below).
+3. The main part of the routine, in which internal JSRs and JMPs (in effect) are performed using macro instructions.
 
 When your routine (including the Header) is executed, the first thing that happens is that Header Part 1 locates itself (using the well-known JSR $FF58 technique), then places a JMP HANDLER at VECTOR. Thereafter a JMP VECTOR is equivalent to JMP HANDLER, and a JSR VECTOR is equivalent to a JSR HANDLER.  The HANDLER routine handles requests from your routine for internal JSRs and JMPs.  To perform a JSR to an internal subroutine labelled SUBR simply include the following code:
 

@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Spanish-English U-ES](https://archive.org/details/DorsettAtariBilingualReadingSpanishEnglish)
 
 This is an archive of the "Bilingual Reading (Spanish/English)" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Bilingual Reading (Spanish/English)
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 1.18 GB):
 - [ues14](http://data.atariwiki.org/FLAC/Spanish-English/ues14.flac)
 - [ues15](http://data.atariwiki.org/FLAC/Spanish-English/ues15.flac)
 - [ues16](http://data.atariwiki.org/FLAC/Spanish-English/ues16.flac)
+
 ## Images
+
 ![](attachments/uesA_.jpg)
 Dorsett Atari Spanish-English U-ES - cassettes with uneven numbers
 

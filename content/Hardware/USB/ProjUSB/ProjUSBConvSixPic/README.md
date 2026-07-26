@@ -27,12 +27,3 @@ Participants:
 - thomas.jpg:  ![](attachments/thomas.jpg)
 
 - Florian2.jpg:  ![](attachments/Florian2.jpg)
-
-
-
-
-
-
-
-
-

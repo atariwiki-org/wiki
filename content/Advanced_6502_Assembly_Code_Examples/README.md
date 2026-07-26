@@ -2,7 +2,6 @@
 
 The remainder of this file will be in a  format  acceptable  to TASM  for direct assembly.  Note there may be errors in the code, it is not intended that it be cut up and included  in  students  files. It	is	meant	only	as  an  example  of  addressing  modes  and instructions.  The first example is  a  prime  number  finder.	The second  example  is  a set of subroutines to maintain a multitasking system.
 
-
 ```
 		====================================================================
 	DR  6502	 AER 201S Engineering Design 6502 Execution Simulator

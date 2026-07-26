@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Counseling Procedures Co](https://archive.org/details/DorsettAtariCounselingProcedures)
 
 This is an archive of the "Counseling Procedures" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Counseling Procedures
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 1.59 GB):
 - [co14](http://data.atariwiki.org/FLAC/Counseling_Procedures/co14.flac)
 - [co15](http://data.atariwiki.org/FLAC/Counseling_Procedures/co15.flac)
 - [co16](http://data.atariwiki.org/FLAC/Counseling_Procedures/co16.flac)
+
 ## Images
+
 ![](attachments/coA_.jpg)
 Dorsett Atari Counseling Procedures - cassettes with uneven numbers
 

@@ -118,6 +118,7 @@ from BiboAssembler Toolsdisk 1
 ```
 
 ### Fast Draw Routines
+
 ```
 00010          .LI OFF
 00020 ;
@@ -284,6 +285,7 @@ from BiboAssembler Toolsdisk 1
 ```
 
 ### Graphics 9 Draw Demo
+
 ```
 00010          .LI OFF
 00020          .OR $4000
@@ -354,6 +356,7 @@ from BiboAssembler Toolsdisk 1
 ```
 
 ### Graphics 9 Demo 2
+
 ```
 00010          .LI OFF
 00020          .OR $4000
@@ -875,6 +878,7 @@ from BiboAssembler Toolsdisk 1
 ```
 
 - File GR8PACK2.DEM
+
 ```
 00010          .LI OFF
 00020          .OR $4000

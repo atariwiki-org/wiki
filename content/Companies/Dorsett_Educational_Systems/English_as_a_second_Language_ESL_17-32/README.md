@@ -3,6 +3,7 @@
 Copyright (C) 1981 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari English as a second Language ESL 17-32](https://archive.org/details/DorsettAtariEnglishAsASecondLanguage-2)
 
 This is an archive of the "English as a Second Language (part 2)" educational program published by Dorsett Educational Systems, Inc. in 1981. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: English as a Second Language (Part 2)
 Year: 1981
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 887.1 MB):
 - [esl30](http://data.atariwiki.org/FLAC/English_as_a_Second_Language_17-32/esl30.flac)
 - [esl31](http://data.atariwiki.org/FLAC/English_as_a_Second_Language_17-32/esl31.flac)
 - [esl32](http://data.atariwiki.org/FLAC/English_as_a_Second_Language_17-32/esl32.flac)
+
 ## Images
+
 ![](attachments/esl-part2-A_.jpg)
 Dorsett Atari English as a second Language ESL 17-32 - cassettes with uneven numbers
 

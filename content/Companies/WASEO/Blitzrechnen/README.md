@@ -2,7 +2,6 @@
 
 Das Progrmm ist exklusiv beim PD-Service des WASEO erhältlich, Diskette #1.000.
 
-
 Im [HNF-Museumsshop](https://www.hnf.de/besuch/shop-imbiss/museumsshop.html) in Paderborn gibt es 5 spezielle Würfel, die Blitzrechnen-Würfel genannt werden, s. Bild im Anhang.
 
 Was hat es damit auf sich? Auf den Würfeln befinden sich sehr spezielle Zahlen, die nachfolgende Eigenschaft haben. Dazu ein Beispiel:
@@ -38,4 +37,4 @@ Luckybuck
 Anhang:
 
 ![](attachments/Blitzrechner-Wuerfel.png)
-Blitzrechner-Würfel vom [HNF-Museumsshop](https://www.hnf.de/besuch/shop-imbiss/museumsshop.html) 
+Blitzrechner-Würfel vom [HNF-Museumsshop](https://www.hnf.de/besuch/shop-imbiss/museumsshop.html)

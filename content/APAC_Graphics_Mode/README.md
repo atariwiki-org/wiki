@@ -878,4 +878,3 @@ A second article for an "APAC-II" mode was hinted at in the original article. Th
 1980 OFOFF .BYTE 0,0,1,1,0,0
 1990 PNTOFF .BYTE 0,2,1,3,0,2
 ```
-

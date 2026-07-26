@@ -3,6 +3,7 @@
 Copyright (C) 1982 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Physics PH](https://archive.org/details/DorsettAtariPhysics)
 
 This is an archive of the "Physics" educational program published by Dorsett Educational Systems, Inc. in 1982. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,15 +18,15 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Physics
 Year: 1982
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
 Tracks:
 
 Ph1	Force of Motion
-Ph2	Motion, Gravity & Energy
-Ph3	Dynamics & Gyroscopes
+Ph2	Motion, Gravity \& Energy
+Ph3	Dynamics \& Gyroscopes
 Ph4	Certain Properties of Matter
 Ph5	Matter and Energy
 Ph6	Sound
@@ -34,13 +35,13 @@ Ph8	Properties of Wave Motion
 Ph9	Electromagnetic Waves
 Ph10	Electrons and Electricity
 Ph11	Electromagnetism and Alternating Current
-Ph12	Solid State Physics & Electronics
+Ph12	Solid State Physics \& Electronics
 Ph13	The Elements and their Atoms
 Ph14	Atomic Physics and Nuclear Physics
 Ph15	Using Nuclear Physics
 Ph16	Theory of Relativity
 
-__Ph16 does seem to be truncated, and probably should be reconstructed from the Atari cassettes.__
+**Ph16 does seem to be truncated, and probably should be reconstructed from the Atari cassettes.**
 
 Tracks (size in sum: 1.46 GB):
 
@@ -60,7 +61,9 @@ Tracks (size in sum: 1.46 GB):
 - [ph14](http://data.atariwiki.org/FLAC/Physics/ph14.flac)
 - [ph15](http://data.atariwiki.org/FLAC/Physics/ph15.flac)
 - [ph16](http://data.atariwiki.org/FLAC/Physics/ph16.flac)
+
 ## Images
+
 ![](attachments/phA_.jpg)
 Dorsett Atari Physics - cassettes with uneven numbers
 

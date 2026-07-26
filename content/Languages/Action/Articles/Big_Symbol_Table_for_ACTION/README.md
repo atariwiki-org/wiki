@@ -11,11 +11,13 @@ This program will create a big global symbol table (max 510 entries, normally 25
 You must use the correct version of Cold below:
 
 version 3.0 ACTION! ROM
+
 ```
 PROC Cold=$A323()[]
 ```
 
 version s 3.1 to 3.6 ACTION! ROMs
+
 ```
 PROC Cold=$A326()[]
 ```

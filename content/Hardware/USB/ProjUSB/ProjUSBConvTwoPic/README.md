@@ -3,6 +3,7 @@
 16-18. July 2004
 
 Participants:
+
 - Harry Reminder
 - Thomas Grasel
 - Carsten Strotmann
@@ -44,21 +45,3 @@ Participants:
 - Using the USB Keyboard:  ![](attachments/Using_USB_Keyboard3.jpg)
 
 - The Project Group, from left to right: Thomas, Harry, Carsten:  ![](attachments/Group.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

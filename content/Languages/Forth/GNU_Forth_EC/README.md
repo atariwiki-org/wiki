@@ -23,4 +23,3 @@ Due to the flexible cross-compiler, it was easy to use real assembler primitives
 
 - [GnuFORTH Homepage @ GNU](http://www.gnu.org/software/gforth/gforth.html)
 - [GForth Homepage](http://www.jwdt.com/~paysan/gforth.html)
-

@@ -106,8 +106,3 @@ First I load the original binary "TRAIL.COM". Next I load the patch driver "TRAI
 We load the game and, hey, it works. We can now play Trailblazer with our Logitech USB Joypad. To create a patch-driver for another device (USB Wheel or USB Joystick or even USB Keyboard) we need to replace the POLLDEVICE and the USB2ATA Subroutines in the patch driver with device dependent code.
 
 Have fun!
-
-
-
-
-

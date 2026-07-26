@@ -2,9 +2,8 @@
 
 ## Slides:
 
-- PowerPoint: [Vortrag_Wassenberg_PowerPoint_2004_Mac.ppt](../../media/AtariCalculator-VCFe14/attachments/Vortrag_Wassenberg_PowerPoint_2004_Mac.ppt)
-- PDF: [Vortrag_Wassenberg.pdf](../../media/AtariCalculator-VCFe14/attachments/Vortrag_Wassenberg.pdf)
-
+- PowerPoint: [Vortrag\_Wassenberg\_PowerPoint\_2004\_Mac.ppt](../../media/AtariCalculator-VCFe14/attachments/Vortrag_Wassenberg_PowerPoint_2004_Mac.ppt)
+- PDF: [Vortrag\_Wassenberg.pdf](../../media/AtariCalculator-VCFe14/attachments/Vortrag_Wassenberg.pdf)
 
 ![](attachments/vcfe14-1.jpg)
 
@@ -13,5 +12,3 @@
 ![](attachments/vcfe14-3.jpg)
 
 ![](attachments/vcfe14-4.jpg)
-
-

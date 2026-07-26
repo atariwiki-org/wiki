@@ -4,8 +4,6 @@ Leonard Morgenstern
 
 Presented at Asilomar, November 1989. Slightly modified.
 
-
-
 ## ABSTRACT
 
 Fundamental differences in viewpoint between Pascal
@@ -14,7 +12,6 @@ syntax.  Pascal is conventional, with a mode of thinking that
 derives from algebraic notation. Forth is "organic," growing out of
 the processor and operating system, and permits the stepwise
 development of complex programming features.
-
 
 ## INTRODUCTION
 
@@ -48,27 +45,26 @@ source of difficulty in establishing a Forth standard. Among major
 differences between Forth and Pascal are the following:
 
 1. Traditional languages have three levels:
-microprocessor, language, and application. These distinctions
-disappear in Forth. Although it is convenient to refer to words
-written in assembler as primitive,  or low level, there is no real
-difference between them and high level words, once they have been
-defined. A new word becomes part of Forth, the equal of all other
-words, and the user may ignore its supposed level.
+   microprocessor, language, and application. These distinctions
+   disappear in Forth. Although it is convenient to refer to words
+   written in assembler as primitive,  or low level, there is no real
+   difference between them and high level words, once they have been
+   defined. A new word becomes part of Forth, the equal of all other
+   words, and the user may ignore its supposed level.
 
 2. Flexibility: Defining words can create new
-classes of words as needed. An example of how rather simple Forth
-can provide for actions difficult or impossible in Pascal will be
-given.
+   classes of words as needed. An example of how rather simple Forth
+   can provide for actions difficult or impossible in Pascal will be
+   given.
 
 3. Structure: Pascals structures are rigid. Once
-incorporated in the language, they are violated only with great
-difficulty.
+   incorporated in the language, they are violated only with great
+   difficulty.
 
 4. Abstractness: As noted, Pascal is designed to an
-abstract plan, whereas Forth's features are developed by the
-programmer to resolve practical necessities (although it can be made
-as abstract as one likes.)
-
+   abstract plan, whereas Forth's features are developed by the
+   programmer to resolve practical necessities (although it can be made
+   as abstract as one likes.)
 
 ## STRUCTURE IN FORTH AND PASCAL
 
@@ -88,7 +84,7 @@ of a DO loop with LEAVE.
 Exception handling is an area where strict
 conformity to the canons of structure presents a formidable
 challenge, whereas unstructured methods are easy to apply. Error
-traps are, in effect, gotos (more accurately,  go_back_tos) and are
+traps are, in effect, gotos (more accurately,  go\_back\_tos) and are
 inherently unstructured. ABORT is the ultimate example, exiting the
 program and restarting Forth, but less drastic action can be
 achieved by various published schemes.
@@ -99,7 +95,6 @@ out of a structure may have unpredictable side effects. For this
 reason, many Pascals do not even have goto, and those that do often
 warn users (correctly) not to use it. Forths stacks are always open
 to view, and undesirable consequences can be anticipated and evaded.
-
 
 ## USING AND AVOIDING THE STACK
 
@@ -112,7 +107,7 @@ there, + will add them; no variables being required; memory is saved
 and speed is improved. The return stack is available for
 temporaries. Beginners in Forth do not employ this approach enough,
 and overuse named variables; but experienced programmers may go the
-other way; superfluous ROT, SWAP, R> and >R commands are a signal
+other way; superfluous ROT, SWAP, R\> and \>R commands are a signal
 that this has happened. Local variables, now provided by most
 Forths, alleviate the situation.
 
@@ -120,7 +115,6 @@ Therefore, when translating a complicated algorithm
 to Forth, do not be premature in using the stack. Use ancillary
 variables and locals liberally in the first draft. In later
 versions, eliminate the unnecessary ones.
-
 
 ## ARRAYS
 
@@ -143,7 +137,6 @@ records) are easily duplicated In Forth, and can include DEFER-like
 elements, not possible in Pascal The principle will be illustrated
 below.
 
-
 ## MIXED ARRAYS (ARRAYS OF RECORDS)
 
 In Pascal, an array can have elements of any desired
@@ -154,28 +147,31 @@ example, verbs will be defined for an adventure game. The reader is
 invited to try to duplicate each feature in Pascal step by step.
 
 1. Defining a Forth array. The following simple
-definer sets up an array composed of elements of any specified
-length. The array is variable-like, returning an address, and is
-situated in the dictionary. Range checking and multidimensionality
-can be added if desired.
+   definer sets up an array composed of elements of any specified
+   length. The array is variable-like, returning an address, and is
+   situated in the dictionary. Range checking and multidimensionality
+   can be added if desired.
+
 ```
 : -BYTE-ARRAY ( n l -- ) ( i -- adr)
 	CREATE DUP , *  ALLOT  DOES> DUP @ ROT * + 2+ ;
 ```
 
 2. Defining offsets. In Pascal, it is possible to
-point to any desired part of an array element. For example, if the
-elements of an array a[]  consist of an identification number and a
-string name, one can define the record so that  a.number\[2\] and
-a.name\[2\] point to these quantities for the second individual. In
-Forth, one would use offsets.
+   point to any desired part of an array element. For example, if the
+   elements of an array a\[\]  consist of an identification number and a
+   string name, one can define the record so that  a.number\[2\] and
+   a.name\[2\] point to these quantities for the second individual. In
+   Forth, one would use offsets.
+
 ```
 : OFFSET ( n -- ) ( adr -- adr')  CREATE , DOES> @ + ;
 ```
 
 3. Defining verbs. Each verb will have two fields,
-one for its action and another for its status, used to modify the
-action. A dot convention provides a Pascal-like syntax.
+   one for its action and another for its status, used to modify the
+   action. A dot convention provides a Pascal-like syntax.
+
 ```
 	20  4 -BYTE-ARRAY  VERB-ARRAY
 	0 OFFSET .ACTION
@@ -188,8 +184,9 @@ be executed by 1 VERB-ARRAY .ACTION PERFORM  Note that a blank must
 appear between the name of the array and its offset.
 
 4. Naming verbs: Verb numbers are clumsy; names should
-be used. In Forth, it is easy to define a new class, VERB, that
-associates a verb number with a name.
+   be used. In Forth, it is easy to define a new class, VERB, that
+   associates a verb number with a name.
+
 ```
 VARIABLE V#		V# OFF
 :  @INCR  ( adr -- n ) DUP @ DUP 1+ ROT ! ;
@@ -201,7 +198,6 @@ VERB TAKE	(TAKE becomes verb number 1)
 
 TAKE becomes the equivalent of 1 VERB-ARRAY, and we
 can write TAKE .ACTION PERFORM for 1 VERB-ARRAY .ACTION PERFORM.
-
 
 # THE USEFULNESS OF MIXED ARRAYS: MODULES
 
@@ -276,15 +272,16 @@ BASIC-style loops (Pascal, too) can be converted to
 Forth-style by a simple transformation. The following works in the
 usual case, in which the starting value and the limt are both
 positive.
+
 ```
 : BASIC-STYLE ( n1 n2 --  n1 n2)
 			2DUP < IF SWAP THEN 1+ SWAP ;
 ```
+
 The usage is:  {{{3 5 BASIC-STYLE DO ................ LOOP}}}
 
 An occasionally useful feature of Forth loops is that the
 increment can be changed during execution.
-
 
 ## RECURSION
 
@@ -316,7 +313,6 @@ DEFER NIL		( -- nil )
 			THEN ;
 ```
 
-
 # APPENDIX: PRACTICAL HINTS CONVERTING AN ALGEBRAIC EXPRESSION TO RPN
 
 Converting an expression from algebraic to reverse
@@ -325,8 +321,8 @@ pencil-and-paper (carbon based) algorithm will do just as well for
 ordinary purposes.
 
 1. Find a binary operation, put brackets around it, and rearrange
-it, putting the operator at the end. Remove parentheses and replace
-them with brackets as appropriate. Continue until done.
+   it, putting the operator at the end. Remove parentheses and replace
+   them with brackets as appropriate. Continue until done.
 
 ```
 (A  + 3 * (B+C) ) * SQRT(D+8)
@@ -343,15 +339,18 @@ them with brackets as appropriate. Continue until done.
 ```
 
 2. Reverse unary operations, in this case SQRT.
+
 ```
 	[ [ A [ 3  [ B C + ]  * ] +] [ D 8 + ] SQRT *
 ```
+
 3. Remove brackets.
+
 ```
  	 A   3    B  C +    *   +    D 8 +   SQRT *
 ```
-4. Append @ to those symbols that represent variables.
 
+4. Append @ to those symbols that represent variables.
 
 ## Insertion Sort
 
@@ -371,19 +370,20 @@ sort, which it resembles. The version given compiles to 182 bytes,
 including headers. The reasons are:
 
 1. Because a Forth array returns an address, one
-can move elements in blocks by means of code primitives such as
-CMOVE> many Pascals need inefficient loops.
+   can move elements in blocks by means of code primitives such as
+   CMOVE\> many Pascals need inefficient loops.
 
 2.  For large random arrays, binary search  makes
-insertion approach O(nlogn).
+    insertion approach O(nlogn).
 
 3. If an array is almost in order, insertion sort
-with backwards linear search is O(n)  very efficient indeed!
-Sedgwick recommends it for finishing up quicksort, as it is faster
-than the latter in the late stages, when the array has been chopped
-up into segments of a few elements each.
+   with backwards linear search is O(n)  very efficient indeed!
+   Sedgwick recommends it for finishing up quicksort, as it is faster
+   than the latter in the late stages, when the array has been chopped
+   up into segments of a few elements each.
 
 ### Pascal Version of Insertion Sort (Sedgwick)
+
 ```
 Procedure insertion;
 		var i,j,v: integer;
@@ -403,7 +403,7 @@ This looks simple enough, but Sedgwick admits that
 it will not work as written, and, despite his praise of it, he does
 not give a working version! In Pascal, a counted loop cannot be used
 for the inner loop, because there is no way to break out. Note that
-the comparison operator is > which, in Pascal, permits comparisons
+the comparison operator is \> which, in Pascal, permits comparisons
 more complex than mere numerical inequality.
 
 In the Forth version, comparisons are made by a
@@ -423,13 +423,15 @@ loop occurs. This always will occur, and it corrects the unworkable
 part of Sedgwicks version. Finally, the item to be moved is compared
 with its left neighbor; if greater, then it is already in place,
 otherwise the element is moved to PAD for temporary storage, shift
-is performed by CMOVE>, and the item is put in place. The last
+is performed by CMOVE\>, and the item is put in place. The last
 comparison is not essential, but it will prevent unnecessary
 calculation of 0-length moves, which are frequent when the array is
 almost in order.
 
 ### INSERTION SORT WITH BACKWARDS LINEAR SEARCH
+
 Leonard Morgenstern
+
 ```
 DEFER COMPARATOR ( a1 a2 -- s )
 0 VALUE RL	\ Record length can be any size, not just 16-bits

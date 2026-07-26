@@ -2,14 +2,19 @@
 
 Lloyd G. Dorsett (Dorsett Educational Systems) produced a lot of Educational System cassettes. Besides the 16 packages from Atari [Atari Educational System Lesson Cassettes](../../Atari/Atari_Educational_System/Atari_Educational_System_Lesson_Cassettes/README.md), Lloyd G. Dorsett offered the 46 packages below, too. Each course has 16 programs on 8 cassettes.
 Thanks to Michael Current, Thomas Cherryhomes, and Kay Savetz, it was possible to save these courses for generations to come. We can't thank you enough!
+
 ## Image
+
 ![](attachments/45packages.jpg)
 The 'remaining' ones from the Dorsett Educational System program for the Atari. The NeverEnding Story is a fantasy film, but The NeverEnding: "Thank you Kay Savetz" is for real! Kay, if there is an Atari walk of fame, be sure, you deserve a star under the top 10 there!
 
 ![](attachments/Dorsett_Educational_Systems_Graphic.jpg)
 Dorsett Educational Systems - Graphic - thanks Kay for scanning
+
 ## Courses
+
 ### 1st column
+
 - [Dorsett Atari Basic Algebra MA](../Basic_Algebra_MA/README.md)
 - [Dorsett Atari Office Careers OF](../Office_Careers_OF/README.md)
 - [Dorsett Atari Industrial Solid-State Electronics PL](../Industrial_Solid-State_Electronics_PL/README.md)
@@ -19,7 +24,9 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Dorsett Atari Reading-Development (Reading Comprehension) T ; Copyright (C) 1983 Dorsett Educational Systems, Inc.](../Reading-Development_T/README.md)
 - [Dorsett Atari U.S. History HS](../Construction_OC/U.S._History_HS/README.md)
 - [Dorsett Atari Carpentry KC ; Copyright (C) 1983 Dorsett Educational Systems, Inc.](../Carpentry_KC/README.md)
+
 ### 2nd column
+
 - [Dorsett Atari Mathematics (Money Problems) MR](../Mathematics_MR/README.md)
 - [Dorsett Atari Mathematics (Decimals and Percents) MP](../Decimals_and_Percents_MP/README.md)
 - [Dorsett Atari English as a second language ESL 1-16](../English_as_a_second_language_ESL_1-16/README.md)
@@ -29,7 +36,9 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Dorsett Atari Reading-Development (Reading Comprehension) X](../Reading-Development_X/README.md)
 - [Dorsett Atari Spelling SP](../Spelling_SP/README.md)
 - [Dorsett Atari Spanish-English U-ES](../Spanish_U-ES/README.md)
+
 ### 3rd column
+
 - [Dorsett Atari Mathematics (Geometry) MG ; Copyright (C) 1983 Dorsett Educational Systems, Inc.](../Geometry_MG/README.md)
 - [Dorsett Atari Digital Electronics PD](../Digital_Electronics_PD/README.md)
 - [Dorsett Atari Supervisory Practices SU](../Supervisory_Practices_SU/README.md)
@@ -39,7 +48,9 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Dorsett Atari Philosophy PY](../Philosophy_PY/README.md)
 - [Dorsett Atari World History HW](../World_History_HW/README.md)
 - [Dorsett Atari General Shop OA](../General_Shop_OA/README.md)
+
 ### 4th column
+
 - [Dorsett Atari Principles of Accounting PA](../Principles_of_Accounting_PA/README.md)
 - [Dorsett Atari Business Communications BC](../Business_Communications_BC/README.md)
 - [Dorsett Atari Economics EC](../Economics_EC/README.md)
@@ -49,7 +60,9 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Dorsett Atari Health Services Career HC](../Health_Services_Career_HC/README.md)
 - [Dorsett Atari Effective Writing EW](../Effective_Writing_EW/README.md)
 - [Dorsett Atari Basic Electricity (PE)](../Basic_Electricity_PE/README.md)
+
 ### 5th column
+
 - [Dorsett Atari Mathematics for Electronics ME](../Mathematics_for_Electronics_ME/README.md)
 - [Dorsett Atari Mathematics (Numbers) Working with Numbers MN](../Working_with_Numbers_MN/README.md)
 - [Dorsett Atari English as a second Language ESL 17-32](../English_as_a_second_Language_ESL_17-32/README.md)
@@ -61,6 +74,7 @@ Dorsett Educational Systems - Graphic - thanks Kay for scanning
 - [Dorsett Atari Vocational Vocabulary VZ](../Vocational_Vocabulary_VZ/README.md)
 
 ### bottom
+
 - [Dorsett Atari Comprehension-Reading AB](../Comprehension-Reading_AB/README.md)
 
 ## Desperate call for help on missing Dorsett tapes
@@ -69,34 +83,35 @@ Some tapes had severe damage and therefore couldn't be digitized. If anyone is i
 
 The left ones to digitize are as follows:
 
-__- General Shop Practices:__
+**- General Shop Practices:**
 
-__Oa1  Tool Identification Lesson, Part 1  (B)__
-__Oa7  Discussion of a Two-Cycle Engine    (X)__
-__Oa8  Use of Micrometers and Calipers     (X)__
+**Oa1  Tool Identification Lesson, Part 1  (B)**
+**Oa7  Discussion of a Two-Cycle Engine    (X)**
+**Oa8  Use of Micrometers and Calipers     (X)**
 
 (B) Indicates a bad data track
 (X) Indicates the tapes were unarchivable due to degauss
 
+**- Health Services Career:**
 
-__- Health Services Career:__
-
-__Hc5	Medical History    (X)__
-__Hc6	Extended Care      (X)__
+**Hc5	Medical History    (X)**
+**Hc6	Extended Care      (X)**
 
 (X) This lesson is not included - the cassette that we have was blank (probably accidentally erased sometime after it was duplicated.)
 
+**- Physics:**
 
-__- Physics:__
-
-__Ph16	Theory of Relativity__
+**Ph16	Theory of Relativity**
 
 Ph16 does seem to be truncated, and probably should be reconstructed from the Atari cassettes.
 
 Well, concerning Physics, we may can restore Ph16 from the Atari-Version of that course, Physics CX6008?
 
 Just loud thinking...
+
 ## New found in 2018 from Kay Savetz
+
 ### WORKING WITH FRACTIONS MF
+
 ![](attachments/Fractions.jpg)
 Sadly, we lost on ebay and are not able to offer it. :-(

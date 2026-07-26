@@ -1,6 +1,5 @@
 # Chapter 1: volksFORTH Version 3.90 Manual (work in progress)
 
-
 (C) 1985-2010 FORTH-Gesellschaft eV Bernd Penne man. Georg Rehfeld. Klaus Dietrich Weineck Schielslek. Jörg Staben. Klaus Kohl. Carsten Strotmann
 
 The authors have made every effort in this manual for a complete and accurate representation. The information contained in the manual, however, serves only as a product and should not be interpreted as guaranteed characteristics in the legal sense. Any claims for damages against the authors for whatever legal reason are excluded. It is not guaranteed that the procedure given free of third party rights.
@@ -29,23 +28,28 @@ The compiler in a FORTH system is thus part of the interpreter interface. There 
 Even ":" (COLON), and ";" (semicolon) are compiled words, which turn off the compiler for the system on and off. Since even the words. control the compiler, "normal"-FORTH words are missing from the usual FORTH compiler options in other languages or compiler switches. The FORTH compiler is controlled by FORTH-words.
 
 The call of a FORTH-word is by its name without an explicit CALL or GOSUB. This leads to the FORTH-typical appearance of the word definitions:
+
 ```
 : <name> 
     <word1> <word2> <word3>  ... ;
 ```
 
-The standard system response in FORTH is the famous "ok". There is no requirement characters like 'A>' for DOS or ']' in good APPLE 11 is not it! This can lead to. that after a successful action, the screen completely blank, true to the motto:
+The standard system response in FORTH is the famous "ok". There is no requirement characters like 'A\>' for DOS or '\]' in good APPLE 11 is not it! This can lead to. that after a successful action, the screen completely blank, true to the motto:
 
-__No News Is Always Good News!__
+**No News Is Always Good News!**
 
 And - unusually - FORTH used the so-called Postfix Notation (RPN) is similar to HP calculators, which in some circles are very popular. This means FORTH always expects only the arguments, the action ... Instead of
+
 ```
 3 + 2 and (5 + 5) * 10 
 ```
+
 It  means
+
 ```
 2 3 + and 5 5 + 10 *
 ```
+
 Since the expressions are evaluated from left to right, there are no brackets in FORTH.
 
 ## Stack
@@ -66,9 +70,10 @@ This allows you to switch on when needed and necessary commands disconnecting af
 
 FORTH often uses special files for its programs. This is a historical basis and the legacy of a tent when Porth very often took over functions of the operating system. Since there were only FORTH systems, the mass completely without even a DOS operating system or intervening management and file structures for your own use. These files are so-called block files and consist of a series of large blocks of 1024 bytes. Such a block, which is often called SCREEN is the basis of the source text editing in FORTH. However, with the volks4TH normal files can be edited in the format of the native operating system (MS-DOS, Atari TOS, Apple DOS, AMS-DOS, CP / M there ...), so-called "stream flow".
 
-In general, any language is behind a certain concept, only with knowledge of this concept is possible to use a language effectively. The language concept of FORTH is described in the book "In FORTH think '([Thinking Forth]( http://thinking-forth.sourceforge.net/)) by Leo Brodie (Hanser Verlag).
+In general, any language is behind a certain concept, only with knowledge of this concept is possible to use a language effectively. The language concept of FORTH is described in the book "In FORTH think '([Thinking Forth](http://thinking-forth.sourceforge.net/)) by Leo Brodie (Hanser Verlag).
 
 A first impression of volksFORTH83 and our pride in this prologue is intended to provide. volksFORTH83 is an "open source" system, with its performance, the question arises:
+
 ## Why do we make this system freely available ?
 
 The spread, which has found the language FORTH was significantly linked to the existence of figFORTH. Also figFORTH is an open-source program (previously this was called public domain, but today the term is open-source more accurate), ie it must be inclusive of the source text passed and copied. Nevertheless wereunfortunately various providers to easily adapt the figFORTH on different computers can pay very expensive.
@@ -86,21 +91,21 @@ But state-FORTH is now still interesting for computers with limited system resou
 People Forth is in version 3.90 available for the following computer systems:
 
 - 6502 CPU
-** Commodore C64
-** Commodore C16
-** Commodore Plus4
-** Atari XL / XE
-** Apple I
-** Apple II
+  \*\* Commodore C64
+  \*\* Commodore C16
+  \*\* Commodore Plus4
+  \*\* Atari XL / XE
+  \*\* Apple I
+  \*\* Apple II
 - Z80 CPU
-** CP / M
-** Amstrad / Schneider CPC under AMS-DOS
-** Amstrad NC100
-** Research Sinclair Z88
+  \*\* CP / M
+  \*\* Amstrad / Schneider CPC under AMS-DOS
+  \*\* Amstrad NC100
+  \*\* Research Sinclair Z88
 - 8088 CPU (Intel / AMD)
-** MS-DOS (in a DOS-BOX under Windows, Linux, OS / 2, MacOS)
+  \*\* MS-DOS (in a DOS-BOX under Windows, Linux, OS / 2, MacOS)
 - 68000 CPU
-** Atari ST
+  \*\* Atari ST
 
 ## Why can you program in VolksForth83?
 
@@ -118,6 +123,6 @@ This guide is designed to support the yet to be completed volksFORTHS3. The FORT
 
 This guide is intended to volksFORTH83 both as a reference and as a textbook for FORTH (especially state-FORTH). Therefore, it is not, look like the other ethnic FORTH manuals, a collection of vocabulary. Instead, with detailed descriptions and programming examples in many chapters the possibilities of the FORTH system is explained. The chapters are supplemented by each word descriptions of the commands that occur in (Glossary). To distinguish between description, FORTH-words, program inputs and expenditures will be working with different character types:
 
-Beschreibungen erfolgen in Proportionalschrift mit Randausgleich. __FORTH-Befehle__ werden Im Text durch Fettschrift hervorgehoben. {{{Eingaben}}} und {{{Programmlistinqs}}} verwenden eine nichtproportionale Schriftart. _Ausgaben_ des FORTH-Interpreter/Compiler sind unterstrichen.
+Beschreibungen erfolgen in Proportionalschrift mit Randausgleich. **FORTH-Befehle** werden Im Text durch Fettschrift hervorgehoben. {{{Eingaben}}} und {{{Programmlistinqs}}} verwenden eine nichtproportionale Schriftart. _Ausgaben_ des FORTH-Interpreter/Compiler sind unterstrichen.
 
 On with [volkFORTH - Handbook - Chapter 2](../Chapter2/README.md).

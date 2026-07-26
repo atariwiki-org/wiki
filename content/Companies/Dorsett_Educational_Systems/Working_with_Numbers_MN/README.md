@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Mathematics (Numbers) Working with Numbers MN](https://archive.org/details/DorsettAtariMathematicsNumbers)
 
 This is an archive of the "Mathematics (Numbers)" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Mathematics (Numbers)
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -42,23 +43,25 @@ Mn16	Naming, Defining Parts of Fractions
 
 Tracks (size in sum: 1.33 GB):
 
-- [mn1](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn1.flac)
-- [mn2](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn2.flac)
-- [mn3](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn3.flac)
-- [mn4](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn4.flac)
-- [mn5](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn5.flac)
-- [mn6](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn6.flac)
-- [mn7](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn7.flac)
-- [mn8](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn8.flac)
-- [mn9](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn9.flac)
-- [mn10](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn10.flac)
-- [mn11](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn11.flac)
-- [mn12](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn12.flac)
-- [mn13](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn13.flac)
-- [mn14](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn14.flac)
-- [mn15](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn15.flac)
-- [mn16](http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn16.flac)
+- [mn1](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn1.flac>)
+- [mn2](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn2.flac>)
+- [mn3](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn3.flac>)
+- [mn4](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn4.flac>)
+- [mn5](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn5.flac>)
+- [mn6](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn6.flac>)
+- [mn7](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn7.flac>)
+- [mn8](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn8.flac>)
+- [mn9](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn9.flac>)
+- [mn10](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn10.flac>)
+- [mn11](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn11.flac>)
+- [mn12](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn12.flac>)
+- [mn13](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn13.flac>)
+- [mn14](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn14.flac>)
+- [mn15](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn15.flac>)
+- [mn16](<http://data.atariwiki.org/FLAC/Mathematics_(Numbers)/mn16.flac>)
+
 ## Images
+
 ![](attachments/mnA_.jpg)
 Dorsett Atari Mathematics (Numbers) Working with Numbers MN - cassettes with uneven numbers
 

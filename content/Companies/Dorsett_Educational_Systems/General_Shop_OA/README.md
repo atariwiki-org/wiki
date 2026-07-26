@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari General Shop OA](https://archive.org/details/DorsettAtariGeneralShopPractices)
 
 This is an archive of the "General Shop Practices" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,14 +18,14 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: General Shop Practices
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
-__3 of the lessons in this unit are unusable due to significant problems with the source cassette tapes:__
-__(B) Indicates a bad data track__
-__(X) Indicates the tapes were unarchivable due to degauss__
-__The raw files as found on the tapes are available in the "raw recordings" directory.__
+**3 of the lessons in this unit are unusable due to significant problems with the source cassette tapes:**
+**(B) Indicates a bad data track**
+**(X) Indicates the tapes were unarchivable due to degauss**
+**The raw files as found on the tapes are available in the "raw recordings" directory.**
 
 Tracks:
 
@@ -63,7 +64,9 @@ Tracks (size in sum: 1.18 GB):
 - [oa14](http://data.atariwiki.org/FLAC/General_Shop_Practices/oa14.flac)
 - [oa15](http://data.atariwiki.org/FLAC/General_Shop_Practices/oa15.flac)
 - [oa16](http://data.atariwiki.org/FLAC/General_Shop_Practices/oa16.flac)
+
 ## Images
+
 ![](attachments/oaA_.jpg)
 Dorsett Atari General Shop - cassettes with uneven numbers
 

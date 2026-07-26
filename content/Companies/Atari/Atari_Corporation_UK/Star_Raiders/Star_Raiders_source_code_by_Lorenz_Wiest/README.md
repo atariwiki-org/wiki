@@ -4,10 +4,12 @@ Lorenz Wiest did a tremendous must see job with a complete commented Star Raider
 Every assembly source code should look like this. The reader can take his work as a template on how to do it the right way!
 
 ## Source Code in TXT-Format
-- [StarRaiders.source.txt](attachments/StarRaiders.source.txt) ; size: 840 KB ; incredible source code listing __with__ assembled hex bytes!!! A must see!!!
-- [StarRaiders.source.asm.txt](attachments/StarRaiders.source.asm.txt) ; size: 644 KB ; incredible source code listing __without__ assembled hex bytes, ready to use in an assembler!!! A must see!!!
+
+- [StarRaiders.source.txt](attachments/StarRaiders.source.txt) ; size: 840 KB ; incredible source code listing **with** assembled hex bytes!!! A must see!!!
+- [StarRaiders.source.asm.txt](attachments/StarRaiders.source.asm.txt) ; size: 644 KB ; incredible source code listing **without** assembled hex bytes, ready to use in an assembler!!! A must see!!!
 
 ## Read Me from Lorenz Wiest
+
 Reverse engineered and fully documented STAR RAIDERS source code
 
 STAR RAIDERS is a seminal computer game, published by Atari Inc. in 1979 as one of the first titles for the original Atari 8-bit Home Computer System (Atari 400 and 800).
@@ -31,7 +33,9 @@ Even more, the documentation of my reverse engineered version adds a substantial
 ## Extras
 
 ### Genome Sequence
+
 The picture below shows the 'genome sequence' of the reverse engineered STAR RAIDERS 8 KB ROM (which I prepared for a [publication](https://archive.org/details/pocorgtfo13). I stacked the 8192 bytes vertically, with each byte represented by a tiny, solid horizontal line of 8 pixels. Then, I split the stack into strips of 192 bytes, arranged side-by-side. The segments of the stack are color-coded:
+
 - Code (main game loop and subroutines) is in alternating shades of blue.
 - Data (lookup tables, texts, etc.) is in alternating shades of green.
 - Bitmap data (Player-Missile shapes and character set) is in alternating shades of purple and the solid line of a byte is replaced by its actual bit pattern.
@@ -40,12 +44,15 @@ The picture below shows the 'genome sequence' of the reverse engineered STAR RAI
 STAR RAIDERS 8KB ROM Genome Sequence ; thank you so much Lorenz, that is totally incredible! :-)
 
 ### ColorSheets
+
 - [STAR RAIDERS Color Sheets](attachments/ColorSheets.pdf) ; size: 250 KB
 
 ### DisplayListSheets
+
 - [STAR RAIDERS Display List Sheets](attachments/DisplayListSheets.pdf) ; size: 250 KB
 
 ## References
+
 - [Original post of the source code](http://atariage.com/forums/topic/243904-star-raiders-source-code-to-be-released/page-9#entry3422364)
 - [AtariAge Forum - Fully documented, reverse-engineered STAR RAIDERS source code available](http://atariage.com/forums/topic/251001-fully-documented-reverse-engineered-star-raiders-source-code-available/)
 - [Link at github of the source code](https://github.com/lwiest/StarRaiders)
@@ -56,6 +63,7 @@ STAR RAIDERS 8KB ROM Genome Sequence ; thank you so much Lorenz, that is totally
 - [Article 'Reverse Engineering Star Raiders', PoC GTFO 0x13, p. 5-20, October 2016](https://archive.org/details/pocorgtfo13)
 
 ## Source Code Listing
+
 ```
               00001 ;*******************************************************************************
               00002 ;*                                                                             *

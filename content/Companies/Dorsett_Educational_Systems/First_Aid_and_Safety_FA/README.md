@@ -3,11 +3,12 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari First Aid and Safety FA](https://archive.org/details/DorsettAtariFirstAidAndSafety)
 
 This is an archive of the "First Aid and Safety" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
 
-__***This material should not be used to learn first aid. Some techniques have changed significantly since is course was created. Contact your local Red Cross for information about first aid classes.***__
+*****This material should not be used to learn first aid. Some techniques have changed significantly since is course was created. Contact your local Red Cross for information about first aid classes.*****
 
 The "raw recordings" directory contains the unaltered recordings from cassette, one file per tape, with both sides of each tape in the same file. You probably don't want to use this folder.
 
@@ -19,7 +20,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: First Aid and Safety
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -60,7 +61,9 @@ Tracks (size in sum: 1.68 GB):
 - [fa14](http://data.atariwiki.org/FLAC/First_Aid_and_Safety/fa14.flac)
 - [fa15](http://data.atariwiki.org/FLAC/First_Aid_and_Safety/fa15.flac)
 - [fa16](http://data.atariwiki.org/FLAC/First_Aid_and_Safety/fa16.flac)
+
 ## Images
+
 ![](attachments/faA_.jpg)
 Dorsett Atari First Aid and Safety - cassettes with uneven numbers
 

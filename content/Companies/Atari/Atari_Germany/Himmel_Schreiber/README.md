@@ -1,19 +1,23 @@
 # Himmel Schreiber (RX8059, DXG 5704)
 
-Copyright (C) 1983 Milliken Publishing Co. & (C) 1984 Atari Inc.
+Copyright (C) 1983 Milliken Publishing Co. \& (C) 1984 Atari Inc.
 
 Diese deutsche Lernsoftware scheint verloren in der Zeit. Jeder Hinweis auf sie, wird gerne entgegen genommen. Vorab vielen lieben Dank! :-)
 
 ## ROM image
-- [Sky_Writer.rom](attachments/Sky_Writer.rom) ; Atari Sky Writer, englische ROM-Version von Himmel Schreiber
+
+- [Sky\_Writer.rom](attachments/Sky_Writer.rom) ; Atari Sky Writer, englische ROM-Version von Himmel Schreiber
 
 ## PRO image
-- [Himmelsschreiber_-_D7_-_DXG_5704.pro](attachments/Himmelsschreiber_-_D7_-_DXG_5704.pro) ; deutsche Version vom englischen Sky Writer ; PRO image-Datei, geschützt ; vielen lieben Dank an eine gute Atari-Seele in Deutschland für den Verkauf und Marsupilami, der die Version gekauft hat, eingescannt und digitalisiert hat, die deutsche Gemeinschaft ist euch zu großem Dank verpflichtet!
+
+- [Himmelsschreiber\_-_D7_-\_DXG\_5704.pro](attachments/Himmelsschreiber_-_D7_-_DXG_5704.pro) ; deutsche Version vom englischen Sky Writer ; PRO image-Datei, geschützt ; vielen lieben Dank an eine gute Atari-Seele in Deutschland für den Verkauf und Marsupilami, der die Version gekauft hat, eingescannt und digitalisiert hat, die deutsche Gemeinschaft ist euch zu großem Dank verpflichtet!
 
 ## ATR image
-- [Himmelsschreiber_1983AtariDEBASICcr_CSS.atr](attachments/Himmelsschreiber_1983AtariDEBASICcr_CSS.atr) ; deutsche Version vom englischen Sky Writer ; ATR-Version vom CSS, wir danken ganz herzlich für die Erstellung einer Version, mit der man problemfrei arbeiten kann. Vielen lieben Dank! Wir sind in Deiner Schuld!
+
+- [Himmelsschreiber\_1983AtariDEBASICcr\_CSS.atr](attachments/Himmelsschreiber_1983AtariDEBASICcr_CSS.atr) ; deutsche Version vom englischen Sky Writer ; ATR-Version vom CSS, wir danken ganz herzlich für die Erstellung einer Version, mit der man problemfrei arbeiten kann. Vielen lieben Dank! Wir sind in Deiner Schuld!
 
 ## Bilder
+
 ![](attachments/Himmel_Schreiber_Cover.jpg)
 Box-Cover der deutschen Himmel Schreiber-Version
 

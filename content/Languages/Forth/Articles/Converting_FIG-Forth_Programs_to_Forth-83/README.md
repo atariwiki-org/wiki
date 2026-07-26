@@ -2,7 +2,6 @@
 
 Copyright (C) 1985 Ray Duncan
 
-
 Forth-83 is not completely upward compatible with any of the
 other commonly available Forth dialects: FIG-Forth, polyFORTH, or
 Forth-79.  Some of the differences can be quite subtle, and
@@ -21,66 +20,67 @@ Forth System User Manual.  In case of a conflict between the two,
 the 83-Standard document description may be assumed to be
 correct.
 
-
 ## General Considerations
 
-
 1. Due to the runtime requirements of the redefined LOOP, +LOOP,
-and LEAVE words, the return stack is usually maintained in a
-different format in Forth-83 than in other dialects.  In LMI
-Forth systems, the DO...LOOP or DO...+LOOP construct requires 3
-control words on the return stack. Programs which rely on
-specialized knowledge of the return stack will require extensive
-changes.
+   and LEAVE words, the return stack is usually maintained in a
+   different format in Forth-83 than in other dialects.  In LMI
+   Forth systems, the DO...LOOP or DO...+LOOP construct requires 3
+   control words on the return stack. Programs which rely on
+   specialized knowledge of the return stack will require extensive
+   changes.
 
 2. All FIG-Forth "state smart" words such as ' (tick) and ."
-(dot-quote), which previously had different actions depending on
-whether they were invoked inside or outside a colon definition,
-have either been eliminated or redefined in Forth-83.
+   (dot-quote), which previously had different actions depending on
+   whether they were invoked inside or outside a colon definition,
+   have either been eliminated or redefined in Forth-83.
 
 3. The FIG-Forth words CFA, PFA, LFA, and NFA,  which were used
-to find the addresses of different fields within a dictionary
-header, have been eliminated. A new set of words, adopted from
-the Kim Harris's experimental proposal, has been included in the
-LMI Forth-83 systems: BODY>, >BODY, NAME>, >NAME, LINK>, >LINK,
-N>LINK, and L>NAME. See detailed explanations below. At present,
-the only word of this set which is part of the 83-Standard is
->BODY.
+   to find the addresses of different fields within a dictionary
+   header, have been eliminated. A new set of words, adopted from
+   the Kim Harris's experimental proposal, has been included in the
+   LMI Forth-83 systems: BODY\>, \>BODY, NAME\>, \>NAME, LINK\>, \>LINK,
+   N\>LINK, and L\>NAME. See detailed explanations below. At present,
+   the only word of this set which is part of the 83-Standard is
+
+> BODY.
 
 4. For various reasons the definition of all divide functions
-general effect is that quotients are floored instead of rounded
-toward zero. This should cause no problems for most pre-existing
-application software. The new divide functions are marginally
-slower than the old (a few machine cycles under most
-circumstances). The side-effects of the redefinition for floored
-divide can be counter-intuitive under some circumstances. For
-example, in FIG-Forth the operation
+   general effect is that quotients are floored instead of rounded
+   toward zero. This should cause no problems for most pre-existing
+   application software. The new divide functions are marginally
+   slower than the old (a few machine cycles under most
+   circumstances). The side-effects of the redefinition for floored
+   divide can be counter-intuitive under some circumstances. For
+   example, in FIG-Forth the operation
+
 ```
       -40 360 MOD
 ```
+
 would return the obvious answer (-40) on the stack, while 83-
 Standard Forth will return the answer 320!
 
 5. The true flag returned by all logical operations has been
-changed from the value 1 (in FIG-Forth) to the value -1 (in
-Forth-83, all bits set). If your code used the 0 or 1 returned by
-a comparison in an arithmetic operation, you will need to
-interpolate the operator ABS after the logical operator. This is
-a particularly difficult problem to look for in your source code.
-However, we feel that this mutation in the 83-Standard was
-beneficial as it allows the returned true/false value to be used
-as a mask for AND.
+   changed from the value 1 (in FIG-Forth) to the value -1 (in
+   Forth-83, all bits set). If your code used the 0 or 1 returned by
+   a comparison in an arithmetic operation, you will need to
+   interpolate the operator ABS after the logical operator. This is
+   a particularly difficult problem to look for in your source code.
+   However, we feel that this mutation in the 83-Standard was
+   beneficial as it allows the returned true/false value to be used
+   as a mask for AND.
 
 6. PICK and ROLL are now zero-based, instead of one-based.  The
-reasoning behind this change by the Forth-83 Standards committee
-was based mainly on the rather weak argument that programmers
-frequently use zero as the beginning index for loops.
+   reasoning behind this change by the Forth-83 Standards committee
+   was based mainly on the rather weak argument that programmers
+   frequently use zero as the beginning index for loops.
 
 7. The word LEAVE has become an "Immediate" compiler word with
-state-checking in LMI Forth-83 systems, to satisfy the 83-
-Standard's requirements. "LEAVE" in turn compiles the run-time
-word "leave". If your FIG-Forth code included compiler extensions
-referencing LEAVE, it may need modification.
+   state-checking in LMI Forth-83 systems, to satisfy the 83-
+   Standard's requirements. "LEAVE" in turn compiles the run-time
+   word "leave". If your FIG-Forth code included compiler extensions
+   referencing LEAVE, it may need modification.
 
 In addition, the run-time action of LEAVE is immediate, that is,
 it causes a direct transfer of control past the end of the
@@ -89,27 +89,26 @@ unstructured, so that a loop increment may accidentally be passed
 outside the loop construct under certain circumstances. This
 problem is easier to demonstrate than explain; observe the
 following (admittedly contrived) example:
+
 ```
       : TEST 1000 0 DO 2 ?TERMINAL IF LEAVE THEN +LOOP ;
 ```
+
 If ?TERMINAL returns a true flag, after exit from the DO...+LOOP
 construct 2 will remain on the stack in a 83-Standard system
 whereas it would have been discarded in FIG-Forth.
 
 8.  The definition of DO...LOOP has been altered in a manner that
-makes it more efficient to implement on most processors.  Loops
-now behave as though the INDEX transits an unsigned "number
-circle" to reach the LIMIT, and terminate when INDEX crosses the
-boundary between LIMIT-1 and LIMIT.  There are side effects of
-this definition, however, that cause loops to behave differently
-description of LOOP and +LOOP below.
-
+    makes it more efficient to implement on most processors.  Loops
+    now behave as though the INDEX transits an unsigned "number
+    circle" to reach the LIMIT, and terminate when INDEX crosses the
+    boundary between LIMIT-1 and LIMIT.  There are side effects of
+    this definition, however, that cause loops to behave differently
+    description of LOOP and +LOOP below.
 
 ---
 
-
 ## Restrictions on a 83-Standard Forth Application Program
-
 
 Forth systems, whether complying with any Standard or not,
 typically contain many environmentally dependent words in
@@ -119,13 +118,13 @@ system, you should observe the following rules (abridged from the
 83-Standard document):
 
 1. A Standard application may reference only the definitions of
-the 83-Standard Required Word Set and Standard Extensions, and
-definitions which are subsequently defined in terms of those
-words.
+   the 83-Standard Required Word Set and Standard Extensions, and
+   definitions which are subsequently defined in terms of those
+   words.
 
 2. A Standard Program may operate only on data which was stored
-by the application. The initial contents of variables and arrays
-created at compilation time are explicitly undefined.
+   by the application. The initial contents of variables and arrays
+   created at compilation time are explicitly undefined.
 
 3. A Standard Program may address:
 
@@ -142,16 +141,13 @@ created at compilation time are explicitly undefined.
 - into a definition's parameter field if its contents were not stored by the application.
 
 Although the capability of doing these three types of operations
-is present in LMI Forth-83 systems (SP@, RP@, >NAME, etc.), they
+is present in LMI Forth-83 systems (SP@, RP@, \>NAME, etc.), they
 should be avoided if you intend to port your program to 83-
 Standard systems provided by other vendors.
 
-
 ---
 
-
 ## Checklist for Program Conversion from FIG-Forth to Forth-83
-
 
 getting your FIG-Forth programs to the point where they will
 compile in Forth-83 (proper execution, of course, is another
@@ -161,14 +157,15 @@ standard but have been adopted in the Laboratory Microsystems
 implementations.
 
 1. Search for all instances of R, replace with R@.
-1. Search for all instances of -DUP, replace with ?DUP.
-1. Search for all instances of WORD. When it occurs as WORD HERE, delete the word HERE. When WORD is not followed by HERE, replace it with WORD DROP.
-1. Search for all instances of PICK and ROLL, replace them by 1- PICK and 1- ROLL respectively.
-1. Examine all DO...LOOPs.  Any loop which might be entered with the limit equal to the index should have DO replaced with ?DO.
-1. Search for all instances of LEAVE. Note that the action of LEAVE will be immediate. If it occurs within a IF...ELSE...THEN clause, LEAVE should be the last word before the ELSE or THEN. If LEAVE is used within a DO...+LOOP construct, make sure that the incrementing value will not remain on the stack if LEAVE is executed.
-1. Search for all instances of ' (tick) within a colon-definition.  If it was not preceded by \[COMPILE\],  replace it with \['\].
-1. Search for all instances of ." (dot-quote) outside of colon definitions, replace the ." with .( and the closing delimiter " with ) to prevent compilation failures.
-1. Search for all instances of NFA, PFA, LFA, and CFA. It is best to examine these and recode them individually, but you can make some "brute force" substitutions as follows:
+2. Search for all instances of -DUP, replace with ?DUP.
+3. Search for all instances of WORD. When it occurs as WORD HERE, delete the word HERE. When WORD is not followed by HERE, replace it with WORD DROP.
+4. Search for all instances of PICK and ROLL, replace them by 1- PICK and 1- ROLL respectively.
+5. Examine all DO...LOOPs.  Any loop which might be entered with the limit equal to the index should have DO replaced with ?DO.
+6. Search for all instances of LEAVE. Note that the action of LEAVE will be immediate. If it occurs within a IF...ELSE...THEN clause, LEAVE should be the last word before the ELSE or THEN. If LEAVE is used within a DO...+LOOP construct, make sure that the incrementing value will not remain on the stack if LEAVE is executed.
+7. Search for all instances of ' (tick) within a colon-definition.  If it was not preceded by \[COMPILE\],  replace it with \['\].
+8. Search for all instances of ." (dot-quote) outside of colon definitions, replace the ." with .( and the closing delimiter " with ) to prevent compilation failures.
+9. Search for all instances of NFA, PFA, LFA, and CFA. It is best to examine these and recode them individually, but you can make some "brute force" substitutions as follows:
+
 ```
          '         becomes   ' >BODY  (outside colon definition)
          ' CFA     becomes   '        (outside colon definition)
@@ -180,16 +177,20 @@ implementations.
          PFA       becomes   NAME> >BODY
          PFA CFA   becomes   NAME>
 ```
+
 Bear in mind that the old definitions had the following actions:
+
 ```
          CFA       ( pfa --- cfa )
          NFA       ( pfa --- nfa )
          PFA       ( nfa --- pfa )
 ```
+
 These were predicated on the fact that ' (tick) returned the
 parameter field address. Since ' and \['\] now return the code
 field address, the new words suggested by Kim Harris revolve
 around that value:
+
 ```
          >BODY ( cfa --- pfa )
          >LINK     ( cfa --- lfa )
@@ -198,47 +199,53 @@ around that value:
          LINK>     ( lfa --- cfa )
          NAME>     ( nfa --- cfa )
 ```
+
 These are appealing and symmetric, but before you get too carried
 away with them remember that a Standard program can't access any
 part of a dictionary definition except for the parameter field
 ("Body"). Two additional words are provided for convenience in
 traversing the linked dictionary list:
+
 ```
          N>LINK    ( nfa --- lfa )
          L>NAME    ( lfa --- nfa )
 ```
+
 1. Search for all instances of ENDIF and replace with THEN.
-1. Search for all instances of MINUS or DMINUS and replace with NEGATE or DNEGATE respectively.
-1. Search for all instances of SIGN and fix up stack logic. Usually the "old" SIGN can be replaced by ROT SIGN.
-1. Any use of -FIND will have to be individually recoded. It can usually be replaced by the sequence BL WORD FIND.
-1. Search for all instances of ? and replace with @ .  .
-1. Search for all instances of BLANKS, replace with BLANK.
-1. Uses of the FIG-Forth CREATE word in your programs will have to be individually inspected and recoded.  The 83-Standard word CREATE has a much different effect.
-1. Search for all instances of the construct <BUILDS...DOES> and replace with CREATE...DOES> .
-1. Search for all instances of END and replace with UNTIL.
-1. Search for all instances of (NUMBER) and replace with CONVERT.
-1. Search for all instances of IN and replace with >IN.
-1. Search for all instances of FLUSH and replace with SAVE-BUFFERS.
-1. Search for all instances of U* and replace with UM*; similarly, replace all occurrences of U/ with UM/MOD.
-1. Replace all instances of S->D with DUP 0< (83-Standard) or S>D (LMI Forth-83 systems).
-1. Neither SP! or RP! are 83-Standard. They are present in LMI Forth-83 systems but with a different meaning than in FIG-Forth.  The FIG-Forth SP! should be replaced with the sequence S0 @ SP!, and the word RP! should be changed to R0 @ RP!.
-1. Search for all instances of TIB @ and replace by TIB. Any sequences TIB ! will have to be recoded in an impelmentation-dependent manner.
-1. Difficult to find by inspection but very dangerous: use of the boolean flag returned by a comparison in a calculation, such as the sequence 0= ADD . These must be individually examined and recoded.
-1. Also difficult to find: use of specialized knowledge of the return stack (such as fetching the index of the third outer loop). These will have to be individually examined and recoded.
-1. Search for all VARIABLE declarations and delete leading initializing value (these do no harm, but will be left as residual data on the stack at the end of compilation). Although most implementations do set the initial value of a variable to zero or -1, a Standard application program is of course not allowed to take advantage of this information. It is most correct to initialize variables at run-time (so that the code is reusable), however your old FIG-Forth compile-time initialization of variables can easily be mimicked. For example, the FIG-Forth statement
+2. Search for all instances of MINUS or DMINUS and replace with NEGATE or DNEGATE respectively.
+3. Search for all instances of SIGN and fix up stack logic. Usually the "old" SIGN can be replaced by ROT SIGN.
+4. Any use of -FIND will have to be individually recoded. It can usually be replaced by the sequence BL WORD FIND.
+5. Search for all instances of ? and replace with @ .  .
+6. Search for all instances of BLANKS, replace with BLANK.
+7. Uses of the FIG-Forth CREATE word in your programs will have to be individually inspected and recoded.  The 83-Standard word CREATE has a much different effect.
+8. Search for all instances of the construct \<BUILDS...DOES\> and replace with CREATE...DOES\> .
+9. Search for all instances of END and replace with UNTIL.
+10. Search for all instances of (NUMBER) and replace with CONVERT.
+11. Search for all instances of IN and replace with \>IN.
+12. Search for all instances of FLUSH and replace with SAVE-BUFFERS.
+13. Search for all instances of U\* and replace with UM\*; similarly, replace all occurrences of U/ with UM/MOD.
+14. Replace all instances of S-\>D with DUP 0\< (83-Standard) or S\>D (LMI Forth-83 systems).
+15. Neither SP! or RP! are 83-Standard. They are present in LMI Forth-83 systems but with a different meaning than in FIG-Forth.  The FIG-Forth SP! should be replaced with the sequence S0 @ SP!, and the word RP! should be changed to R0 @ RP!.
+16. Search for all instances of TIB @ and replace by TIB. Any sequences TIB ! will have to be recoded in an impelmentation-dependent manner.
+17. Difficult to find by inspection but very dangerous: use of the boolean flag returned by a comparison in a calculation, such as the sequence 0= ADD . These must be individually examined and recoded.
+18. Also difficult to find: use of specialized knowledge of the return stack (such as fetching the index of the third outer loop). These will have to be individually examined and recoded.
+19. Search for all VARIABLE declarations and delete leading initializing value (these do no harm, but will be left as residual data on the stack at the end of compilation). Although most implementations do set the initial value of a variable to zero or -1, a Standard application program is of course not allowed to take advantage of this information. It is most correct to initialize variables at run-time (so that the code is reusable), however your old FIG-Forth compile-time initialization of variables can easily be mimicked. For example, the FIG-Forth statement
+
 ```
      4 VARIABLE XVAR
 ```
+
 would be changed to
+
 ```
          VARIABLE XVAR  4 XVAR !
 ```
-1. Search for all instances of +- , replace with 0< IF NEGATE THEN (Forth-83 Standard) or with the word ?NEGATE (LMI Forth-83 systems).  Similarly, replace D+- with 0< IF DNEGATE THEN  (Forth-83 Standard) or with the word  ?DNEGATE (LMI Forth-83 systems).
-1. Examine occurrences of MOD . If either argument can take on a negative value, the results may surprise you.
-1. Find all M/MOD and replace with MU/MOD (LMI Forth-83 implementations only, may be different with other vendors).  Search for all instances of M/ and replace with M/MOD (83-Standard).
+
+1. Search for all instances of +- , replace with 0\< IF NEGATE THEN (Forth-83 Standard) or with the word ?NEGATE (LMI Forth-83 systems).  Similarly, replace D+- with 0\< IF DNEGATE THEN  (Forth-83 Standard) or with the word  ?DNEGATE (LMI Forth-83 systems).
+2. Examine occurrences of MOD . If either argument can take on a negative value, the results may surprise you.
+3. Find all M/MOD and replace with MU/MOD (LMI Forth-83 implementations only, may be different with other vendors).  Search for all instances of M/ and replace with M/MOD (83-Standard).
 
 ---
-
 
 ## Alphabetical Summary of Vocabulary Changes in Forth-83
 
@@ -551,8 +558,8 @@ WORDS              Displays the names of the definitions in the
 
 
 ```
----
 
+---
 
 ## Further reading:
 
@@ -561,4 +568,3 @@ WORDS              Displays the names of the definitions in the
 - "Upgrading Forth-79 Programs to Forth-83", by Robert Berkey, Forth Dimensions, Volume VI, Number 3, September/October 1984, page 26.
 - "Forth-83 Program to Run Forth-79 Code", by Robert Berkey, Forth Dimensions, Volume VI, Number 4, November/December 1984, page 28.
 - "FORTH-83, Evolution Continues", by C.Kevin McCabe, BYTE Magazine, August 1984, page 137.
-

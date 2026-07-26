@@ -3,12 +3,18 @@
 Copyright (C) 1982 RLM Micro Systems
 
 Thanks to Wade Ripkowski of the InverseAtascii podcast for the manual and disk scans! :-)))
+
 ## ATR-Images
-- [Home_Inventory_APX-20214.atr](attachments/Home_Inventory_APX-20214.atr)
-- [Data_Diskette.atr](attachments/Data_Diskette.atr)
+
+- [Home\_Inventory\_APX-20214.atr](attachments/Home_Inventory_APX-20214.atr)
+- [Data\_Diskette.atr](attachments/Data_Diskette.atr)
+
 ## Manual
-- [Home_Inventory_APX-20214.pdf](../../../../media/Companies/Atari/Home_Inventory/attachments/Home_Inventory_APX-20214.pdf) ; size: 7.9 MB
+
+- [Home\_Inventory\_APX-20214.pdf](../../../../media/Companies/Atari/Home_Inventory/attachments/Home_Inventory_APX-20214.pdf) ; size: 7.9 MB
+
 ## Images
+
 ![](attachments/Diskette.jpg)
 Home Inventory - Diskette
 

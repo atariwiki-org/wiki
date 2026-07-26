@@ -3,6 +3,7 @@
 Copyright (C) 1982 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Principles of Accounting PA](https://archive.org/details/DorsettAtariPrinciplesOfAccounting)
 
 This is an archive of the "Principles of Accounting" educational program published by Dorsett Educational Systems, Inc. in 1982. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Principles of Accounting
 Year: 1982
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 1.93 GB):
 - [pa14](http://data.atariwiki.org/FLAC/Principles_of_Accounting/pa14.flac)
 - [pa15](http://data.atariwiki.org/FLAC/Principles_of_Accounting/pa15.flac)
 - [pa16](http://data.atariwiki.org/FLAC/Principles_of_Accounting/pa16.flac)
+
 ## Images
+
 ![](attachments/paA_.jpg)
 Dorsett Atari Principles of Accounting - cassettes with uneven numbers
 

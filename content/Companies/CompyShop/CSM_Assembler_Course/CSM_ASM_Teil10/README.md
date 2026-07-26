@@ -13,6 +13,7 @@ Wenn man ein Programm schreibt, wird man schnell feststellen, dass gewisse Befeh
 Mit JSR ADR wird ein an der Stelle ADR beginnendes Unterprogramm aufgerufen, das mit RTS enden muss. Nach Durchlaufen des Unterprogramms wird das Programm in der Zeile nach dem JSR-Aufruf weiter fortgesetzt.
 
 Beispiel:
+
 ```
          ...
          ...
@@ -27,6 +28,7 @@ SETPOS   STX $55
          RTS
 --------------------
 ```
+
 Die Routine SETPOS setzt den Cursor an die Position des Bildschirmes, die durch die Koordinaten in X- und Y-Register definiert ist.
 
 In diesem Fall wird also die Position über die beiden Register X und Y an die Routine SETPOS übergeben.
@@ -47,21 +49,27 @@ selbst vornehmen.
 Des weiteren gibt es noch einige Befehle, die uns nur indirekt betreffen, nämlich die Zusatzbefehle des 65C02, der in der SPEEDY 1050 Verwendung findet. Ich führe sie hier zum Abschluss der Vollständigkeit halber mit einer kurzen Erklärung auf.
 
 ### BRA Branch always
+
 Dies ist ein relativer Sprungbefehl, wie z.B. die Befehle BNE oder BEQ etc. Das besondere an diesem Befehl ist, dass er nicht wie alle anderen Sprungbefehle Sprungbedingung (gesetztes Flag) braucht. Er verzweigt immer an die gewünschte Stelle.
 
 ### DEA, INA
+
 DEA dekrementiert den Akku, INA inkrementiert den AKKU. Diese beiden Befehle sind analog zu den Befehlen INX, INY, DEX, DEY.
 
 ### PHX, PHY, PLX, PLY
+
 Wir kennen die Befehle PHA und PLA, mit denen der Inhalt des AKKU auf dem STACK abgelegt werden kann. Mit Hilfe der vier oben angegebenen Befehle können nun die Inhalte des X- und Y-Registers direkt auf dem Stapel ohne den Umweg über den Akku abgelegt werden.
 
 ### STZ adr
+
 Die Adresse adr wird Null gesetzt. Dies ist ein recht nützlicher Befehl, da es innerhalb eines Programms sehr häufig vorkommt, Speicherbereiche oder Adressen mit Nullen zu füllen. Mit diesem Befehl kann daher Platz gespart werden.
 
 ### TRB Test and reset Bit
+
 Der Akku wird logisch mit der Speicherstelle verknüpft (AND). Bits die sowohl beim Akku als auch in der Speicherstelle gesetzt sind werden zurückgesetzt.
 
 ### TSB Test an set Bit
+
 Auch hier werden Akku und Speicherstelle logisch verknüpft (OR). Bits die im Akku oder in der Speicherstelle gesetzt sind werden gesetzt.
 
 So, Sie müssten nun alle Befehle und deren Anwendung kennen. Ich meine es wäre daher an der Zeit auf andere Probleme einzugehen, zum Beispiel wie elementare Funktionen (PRINT, POSITION...) ausgeführt werden. Ab nächsten Monat wird der ganze Kurs dann praxisorientiert laufen!
@@ -69,6 +77,7 @@ So, Sie müssten nun alle Befehle und deren Anwendung kennen. Ich meine es wäre
 Bis dann Ihr Uwe Röder
 CSM / 5.1989
 ---
+
 Der Artikel entstammt der Kursreihe „6502 Programmieren“ des Compy Shop Diskettenmagazins. Die Kursreihe besteht aus 14 Kursen, die im Laufe des Jahres 2011 in unregelmäßigen Abständen einzeln veröffentlicht werden, bzw. anschließend als Zusammenzug als ABBUC-Buch „6502 Programmieren“ erscheinen.
 Koordination: Volkert Barr (volkert@nivoba.de)
 Version 1.1 / 2011-01-23

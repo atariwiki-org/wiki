@@ -3,10 +3,15 @@
 Copyright (C) 1987 Keith Ledbetter and Atari Corp. with portions from OSS and ACS
 
 ## Manual
+
 - [Atari SX Express! Communications Program User's Manual](attachments/Atari_SX_Express_Communications_Program_User_s_Manual.pdf) ; size: 3.4 MB
+
 ## ATR-Image
-- [SX_Express.atr](attachments/SX_Express.atr) ; diskette for use with SX212 Modem
+
+- [SX\_Express.atr](attachments/SX_Express.atr) ; diskette for use with SX212 Modem
+
 ## Images
+
 ![](attachments/sx_express_d7.jpg)
 Atari SX212 Modem - box cover - thanks to Atarimania
 

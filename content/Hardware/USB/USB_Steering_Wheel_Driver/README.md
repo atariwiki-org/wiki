@@ -524,5 +524,3 @@ Source is in Bibo-Assembler Format.
 06160 ------------------------------
 
 ```
-
-

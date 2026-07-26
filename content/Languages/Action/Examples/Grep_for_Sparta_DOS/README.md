@@ -7,13 +7,11 @@ Language: 	ACTION!
 Compiler/Interpreter: 	ACTION!
 Published: 	2003
 
-Download: [grep.atr](attachments/grep.atr) 
+Download: [grep.atr](attachments/grep.atr)
 
 # GREP tool for Sparta DOS
 
-
 This is the first, very limited alpha version.
-
 
 ## Limitations:
 
@@ -376,6 +374,3 @@ RETURN
 
 
 ```
-
-
-

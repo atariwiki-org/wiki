@@ -5,7 +5,7 @@ General Information
 Author: Bob Sander-Cederlof
 Assembler: generic
 Published: APPLE Assembly Line 03/82
-Download: [http://www.txbobsc.com/aal/](http://www.txbobsc.com/aal/) 
+Download: [http://www.txbobsc.com/aal/](http://www.txbobsc.com/aal/)
 
 All microprocessors have an instruction which does nothing, usually called "NOP".  The 6502 is no exception.
 

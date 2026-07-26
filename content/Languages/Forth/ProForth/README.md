@@ -3,6 +3,7 @@
 6502 Source, could be adapted to the Atari 8-bit.
 
 NAME: EDASM macro used by FDICT.S
+
 ```
  DFB &1
  DCI &2
@@ -13,6 +14,7 @@ NAME: EDASM macro used by FDICT.S
 ```
 
 fdict.s
+
 ```
           LST OFF,NOGen,NOWarn,NOVsym,NOAsym,NOExp
           MACLIB
@@ -2805,6 +2807,7 @@ TOP       DFB 00
 ```
 
 fsys.s (ProDos Filesystem interface)
+
 ```
           LST ON,NOGen,NOAsym,NOVsym
 * FORTH.SYSTEM by John Matthews, M.D.

@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Auto Mechanics KA](https://archive.org/details/DorsettAtariAutoMechanics)
 
 This is an archive of the "Auto Mechanics" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -13,7 +14,7 @@ Finally, photos of the cassette tapes are included.
 
 Album: Auto Mechanics
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 The work of digitization and audio cleanup was done by Kay Savetz and Thomas Cherryhomes in June 2015
 
@@ -35,7 +36,9 @@ Tracks (size in sum: 1.01 GB):
 - [Ka14-Computing Changes and Labor Costs](http://data.atariwiki.org/FLAC/Auto_Mechanics/ka14.flac) ; size: 70.5 MB
 - [Ka15-Replacing a Burned-out Fuse](http://data.atariwiki.org/FLAC/Auto_Mechanics/ka15.flac) ; size: 49.7 MB
 - [Ka16-Credit interest,Paycheck Deductions](http://data.atariwiki.org/FLAC/Auto_Mechanics/ka16.flac) ; size: 68.6 MB
+
 ## Images
+
 ![](attachments/AM.jpg)
 Dorsett Atari Auto Mechanics package - front view
 
@@ -44,7 +47,9 @@ Dorsett Atari Auto Mechanics - cassettes with uneven numbers
 
 ![](attachments/kaB_.jpg)
 Dorsett Atari Auto Mechanics - cassettes with even numbers
+
 ## Screenshots
+
 ![](attachments/Auto_Mechanics_01.jpg)
 Dorsett Atari Auto Mechanics - screenshot 01
 

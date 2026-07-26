@@ -18,38 +18,33 @@ Jeder dieser Kanäle verfügt über einen eigenen Kontroll-Block, das ist ein kl
 
 Die Länge eines IOCB's beträgt 16 Bytes. Diese Bytes haben folgende Bedeutungen:
 
-
-$340 (832) - [Memory Map - ICHID](../../../../Memory_Map/README.md#ICHID) 
+$340 (832) - [Memory Map - ICHID](../../../../Memory_Map/README.md#ICHID)
 
 Wenn der Kanal unbenutzt ist, enthält dieses Byte den Wert $FF (255). Die ist zum Beispiel nach einem CLOSE-Befehl der Fall.
 
-
-$342 (834) - [Memory Map - ICCOM](../../../../Memory_Map/README.md#ICCOM) 
+$342 (834) - [Memory Map - ICCOM](../../../../Memory_Map/README.md#ICCOM)
 
 Diese Speicherstelle ist wohl die wichtigste, da dieses Byte vor Aufruf der CIO das Befehls-Byte enthalten muss. Je nach Befehl ändert sich teilweise die Bedeutung der folgenden Speicherstellen. Auch müssen nicht immer alle Bytes definiert werden. Am Ende dieser Liste
 der Speicherstellen, wird genau angegeben, welche Befehle grundsätzlich möglich sind und welche Bytes dafür wie gesetzt werden müssen.
 
-
-$343 (835) - [Memory Map - ICSTAT](../../../../Memory_Map/README.md#ICSTAT) 
+$343 (835) - [Memory Map - ICSTAT](../../../../Memory_Map/README.md#ICSTAT)
 
 In diesem Byte und in dem Y-Register befindet nach dem CIO-Aufruf der Statuswert der Operation. Wenn er ungleich 1 ist, ist ein Fehler aufgetreten.
 
-
-$344/$345 (836/847) - [Memory Map - ICBAL](../../../../Memory_Map/README.md#ICBAL)/[Memory Map - ICBAH](../../../../Memory_Map/README.md#ICBAH) 
+$344/$345 (836/847) - [Memory Map - ICBAL](../../../../Memory_Map/README.md#ICBAL)/[Memory Map - ICBAH](../../../../Memory_Map/README.md#ICBAH)
 
 Allgemein ist dies ein Zeiger auf einen bestimmten Speicherplatz. Bei einem OPEN Befehl muss zum Beispiel die Adresse des ersten Bytes der Dateispezifikation (D:FILENAME.EXT";#$9B) hier abgelegt werden. Diese nennt man auch "Filespec" (engl. Abk. für Filespecification).
 
 Beim Lesen oder Schreiben von Daten, ist dies die Adresse des ersten Bytes des Speicherbereichs bei dem die Daten abgelegt werden, oder welcher geschrieben wird.
 
-
-$348/$349 (840/841) - [Memory Map - ICBLL](../../../../Memory_Map/README.md#ICBLL)/[Memory Map - ICBLH](../../../../Memory_Map/README.md#ICBLH) 
+$348/$349 (840/841) - [Memory Map - ICBLL](../../../../Memory_Map/README.md#ICBLL)/[Memory Map - ICBLH](../../../../Memory_Map/README.md#ICBLH)
 
 Beim Schreiben und Lesen von Daten muss hier die Länge des Datenblocks festgelegt werden. Ein Zeichensatz ist zum Beispiel 1024 Bytes, ein GR.8+16 Bild ist 7680 Bytes lang.
 
 Gibt man hier als Länge 0 an, so wird dennoch immer ein Byte übertragen. Dieses steht dann im Akku. Nach dem CIO-Aufruf findet man in diesen Registern die Anzahl der in Wirklichkeit übertragenen Bytes. Wenn zum Beispiel ein Fehler aufgetreten ist, so kann diese Anzahl geringer sein als erwünscht.
 
-
 Dies sind also die einzelnen Register eines IOCB's. Wie gesagt gibt es acht IOCBs. Die hier angegebenen Adressen beziehen sich eigentlich nur auf den IOCB 0. Um nun beliebige IOCBs anzusprechen kommt zum Beispiel folgende Methode in Frage:
+
 ```
 S    	LDX #$10  ($20/$30...$70)
 LDA ...
@@ -59,42 +54,38 @@ STA ...,X
 JSR $E456
 ...
 ```
+
 Im X-Register steht hier der Abstand zwischen erstem Byte des ersten IOCB's und erstem Byte des gewünschten IOCB's. Da die Länge eines IOCB's genau $10 (16) ist, beträgt dieser Abstand $10*Kanalnummer (16*Kanalnummer).
 
-
 Da jeder eigene Gerätetreiber schreiben kann, kann nie eine genaue Liste der möglichen Kommando-Bytes (ICCOM) gegeben werden. Generell sind aber folgende Kommando-Bytes für ICCOM üblich:
-
 
 $3 - OPEN
 
 Mit diesem Aufruf wird ein Kanal geöffnet. Dazu müssen ICBAL/ICBAH unbedingt immer die Adresse der Filespezifikation beinhalten. Diese sieht im Bibo-Assembler-Format beispielsweise wie folgt aus:
+
 ```
 .DA "D1:FILENAME.EXT",#$9B
 ```
-Wie man sieht, ist dies nichts neues. Es müssen die Gerätespezifikation (C:,E:,D:...), der Filename und als Endkennung das EOL-Zeichen (#$9B) angegeben werden. Basic-Usern möchte ich empfehlen den OPEN oder CLOSE-Befehl des ATARI-BASICS zu benutzen, da er das gleiche bewirkt, aber einfacher zu handhaben ist.
 
+Wie man sieht, ist dies nichts neues. Es müssen die Gerätespezifikation (C:,E:,D:...), der Filename und als Endkennung das EOL-Zeichen (#$9B) angegeben werden. Basic-Usern möchte ich empfehlen den OPEN oder CLOSE-Befehl des ATARI-BASICS zu benutzen, da er das gleiche bewirkt, aber einfacher zu handhaben ist.
 
 $5 - Get Record
 
 Ein File wird solange eingelesen, bis ein EOL-Zeichen (#$9B) eingelesen wird. ICBAL/ICBAH enthält die Zieladresse des Records. ICBLL/ICBLH enthält die Anzahl der einzulesenden Bytes. Ist diese überschritten ohne dass ein EOL auftrat, so wird solange weiter gelesen, bis eines auftritt. Der Lesevorgang wird dann mit einer Error-Meldung abgebrochen.
 
-
 $9 - Put Record
 
 Es wird ein File mit der Länge ICBLL/ ICBLH geschrieben. Die Adresse der Daten muss in ICBAL/ICBAH abgelegt sein.
-
 
 $7 - Get Characters
 
 Einlesen eines Datenfiles. (zum Beispiel Font, Bild...) ICBLL/ICBLH - Anzahl der einzulesenden Bytes ICBAL/ICBAH - Adresse bei welcher die Daten abgelegt werden
 sollen
 
-
 $B (11) - Put Characters
 
 Schreiben eines Datenfiles ICBLL/ICBLH - Anzahl der zu schreibenden Bytes
 ICBAL/ICBAH - "Source"-Adresse
-
 
 $C (12) - CLOSE
 
@@ -104,10 +95,8 @@ $D (13) - STATUS
 
 Dieser Befehl liest vier Statuswerte ein, die er bei $2EA (746) ablegt. Ist der entsprechende Kanal noch nicht geöffnet muss ICBAL/IBAH die Filespezifikationsadresse enthalten.
 
-
 Zur genauen Benutzung der CIO befindet sich noch ein Beispielprogramm im BIBO-
 ASSEMBLER-Format im Anhang.
-
 
 Um nun Files mit einem Fileheader mit dem BIBO-DOS zu laden muss man nur eine
 Speicherstelle und einen Einsprungvektor kennen:
@@ -120,8 +109,8 @@ Um ein File zu laden muss man in den Akku und Y-Register die Adresse des Files l
 RUNFLG=0 File wird geladen und gestartet
 RUNFLG=FF File wird nur geladen
 
-
 Beispiel:
+
 ```
 00010 RUNFLG       .EQ $735
 00020 RUNAD        .EQ $70F
@@ -143,9 +132,11 @@ In diesem Fall wird ein File geladen und gestartet. Wichtig ist aber, dass diese
 So, dies sollte mal wieder reichen. Ich hoffe Sie sind mit dem Artikel klargekommen und können nun optimal mit Files umgehen.
 
 ---
+
 ## Anhang:
 
 ### Beispiel:
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -191,4 +182,3 @@ So, dies sollte mal wieder reichen. Ich hoffe Sie sind mit dem Artikel klargekom
 00420 FILE     .DA "D:FONT.FNT",#$9B
 00430 ------------------------------
 ```
-

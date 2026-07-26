@@ -7,6 +7,7 @@ Assembler: Bibo Assembler
 Published: 07/24/91
 
 High Level ACTION Module
+
 ```
 ;********************************
 ;**			       **
@@ -74,8 +75,8 @@ BYTE FUNC M_TRIGGER ()
 RETURN (res)
 ```
 
-
 here is the Assembler Code part
+
 ```
 00010			 .LI OFF
 00020 ******************************

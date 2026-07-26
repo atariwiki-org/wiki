@@ -9,7 +9,7 @@ Language: 	C
 Compiler/Interpreter: 	cc65
 Published: 	2003
 
-Download: [GRA.ATR](attachments/GRA.ATR) 
+Download: [GRA.ATR](attachments/GRA.ATR)
 
 How to get 320x192 Pixel with 4 colors? (Idea: Mario Krix)
 
@@ -18,6 +18,7 @@ To get more colors in hi-res mode (Graphics 8 / Antic Mode $F, 320x192 1 Color),
 To get an uniform background, we place 4 Players + 4 Missiles in the Background. The Screen Memory can be used as normal, either direct or through ATARI OS graphic commands.
 
 ## Graphics 15+ in C (cc65) (first alpha)
+
 ```
 /* -*- C -*- ****************************************************************
  *
@@ -137,4 +138,3 @@ int main(void)
 
 
 ```
-

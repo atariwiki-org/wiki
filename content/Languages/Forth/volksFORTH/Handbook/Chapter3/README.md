@@ -40,7 +40,7 @@ If the pronunciation of a word of English pronunciation from the natural, it is 
 
 ### People Forth arithmetic
 
--1 (- -1)
+\-1 (- -1)
 0 (- 0)
 1 (- 1)
 2 (- 2)
@@ -53,44 +53,44 @@ Frequently used numbers were made constant. Defined in the form:
 
 This Syeicherplatz savings and reduces the execution time.
 
-- [__1+__ “one-plus” ( n1 | u1 -- n2 | u2 )](../../Language/Words/one-plus/README.md)
-- [__1-__ "one-minus" ( n1 | u1 -- n2 | u2 )](../../Language/Words/one-minus/README.md)
-- [__2+__ "two-plus" ( n1 | u1 -- n2 | u2 )](../../Language/Words/two-plus/README.md)
-- [__2-__ "two-minus" ( n1 | u1 -- n2 | u2 )](../../Language/Words/two-minus/README.md)
-- [__2*__ "two-times" ( x1 -- x2 )](../../Language/Words/two-times/README.md)
-- [__2/__ "two-divide" or "two-slash" ( x1 -- x2 )](../../Language/Words/two-divide/README.md)
-- [__3+__ "three-plus" ( n1 | u1 -- n2 | u2 )](../../Language/Words/three-plus/README.md)
-- [__ABS__ "abs" ( n -- u )](../../Language/Words/absolute/README.md)
-- [] Not
-- [__NEGATE__ "negate" ( n1 -- n2 )](../../Language/Words/Negate/README.md)
-- [__EVEN__ "even" ( u1 -- u2 )](../../Language/Words/Even/README.md)
-- [__MAX__ "maximum" ( n1 n2 -- n3 )](../../Language/Words/maximum/README.md)
-- [__MIN__ "minimum" ( n1 n2 -- n3 )](../../Language/Words/minimum/README.md)
-- [__+__ "plus" ( n1 n2 -- n3 )](../../Language/Words/Plus/README.md)
-- [__-__ "minus" ( n1 n2 -- n3 )](../../Language/Words/Minus/README.md)
-- [__*__ "times" ( n1 n2 -- n3 )](../../Language/Words/Times/README.md)
+- [**1+** “one-plus” ( n1 | u1 -- n2 | u2 )](../../Language/Words/one-plus/README.md)
+- [**1-** "one-minus" ( n1 | u1 -- n2 | u2 )](../../Language/Words/one-minus/README.md)
+- [**2+** "two-plus" ( n1 | u1 -- n2 | u2 )](../../Language/Words/two-plus/README.md)
+- [**2-** "two-minus" ( n1 | u1 -- n2 | u2 )](../../Language/Words/two-minus/README.md)
+- [**2\*** "two-times" ( x1 -- x2 )](../../Language/Words/two-times/README.md)
+- [**2/** "two-divide" or "two-slash" ( x1 -- x2 )](../../Language/Words/two-divide/README.md)
+- [**3+** "three-plus" ( n1 | u1 -- n2 | u2 )](../../Language/Words/three-plus/README.md)
+- [**ABS** "abs" ( n -- u )](../../Language/Words/absolute/README.md)
+- \[\] Not
+- [**NEGATE** "negate" ( n1 -- n2 )](../../Language/Words/Negate/README.md)
+- [**EVEN** "even" ( u1 -- u2 )](../../Language/Words/Even/README.md)
+- [**MAX** "maximum" ( n1 n2 -- n3 )](../../Language/Words/maximum/README.md)
+- [**MIN** "minimum" ( n1 n2 -- n3 )](../../Language/Words/minimum/README.md)
+- [**+** "plus" ( n1 n2 -- n3 )](../../Language/Words/Plus/README.md)
+- [**-** "minus" ( n1 n2 -- n3 )](../../Language/Words/Minus/README.md)
+- [**\*** "times" ( n1 n2 -- n3 )](../../Language/Words/Times/README.md)
 - [Divide](../../Language/Words/Divide/README.md)
-- [__MOD__ "modulo" ( n1 n2 -- n3 )](../../Language/Words/Mod/README.md)
-- [__/mod__ "divide-mod" ( n1 n2 -- n3 n4 )](../../Language/Words/divide-mod/README.md)
-- [__*/__ "times-divide" ( n1 n2 n3 -- n4 )](../../Language/Words/Times-divide/README.md)
-- [__*/mod__ "times-divide-mod" ( n1 n2 n3 -- n4 n5 )](../../Language/Words/times-divide-mod/README.md)
-- [__u/mod__ "u-divide-mod" ( u1 u2 -- u3 u4 )](../../Language/Words/u-divide-mod/README.md)
-- [__umax__ "unsinged-maximum" ( u1 u2 -- u3 )](../../Language/Words/u-maximum/README.md)
-- [__UMIN__ "unsigned-minimum" ( u1 u2 -- u3 )](../../Language/Words/u-minimum/README.md)
+- [**MOD** "modulo" ( n1 n2 -- n3 )](../../Language/Words/Mod/README.md)
+- [**/mod** "divide-mod" ( n1 n2 -- n3 n4 )](../../Language/Words/divide-mod/README.md)
+- [**\*/** "times-divide" ( n1 n2 n3 -- n4 )](../../Language/Words/Times-divide/README.md)
+- [**\*/mod** "times-divide-mod" ( n1 n2 n3 -- n4 n5 )](../../Language/Words/times-divide-mod/README.md)
+- [**u/mod** "u-divide-mod" ( u1 u2 -- u3 u4 )](../../Language/Words/u-divide-mod/README.md)
+- [**umax** "unsinged-maximum" ( u1 u2 -- u3 )](../../Language/Words/u-maximum/README.md)
+- [**UMIN** "unsigned-minimum" ( u1 u2 -- u3 )](../../Language/Words/u-minimum/README.md)
 
 ### People Forth logic words
 
-- [__true__  ( -- -1 )](../../Language/Words/True/README.md)
-- [__false__  ( -- 0 )](../../Language/Words/False/README.md)
+- [**true**  ( -- -1 )](../../Language/Words/True/README.md)
+- [**false**  ( -- 0 )](../../Language/Words/False/README.md)
 - [0 =](../../Language/Words/Zero-equals/README.md)
-- [0 <>](../../Language/Words/Zero-noequal/README.md)
-- [0 <](../../Language/Words/zero-less/README.md)
-- [0>](../../Language/Words/zero-greater/README.md)
+- [0 \<\>](../../Language/Words/Zero-noequal/README.md)
+- [0 \<](../../Language/Words/zero-less/README.md)
+- [0\>](../../Language/Words/zero-greater/README.md)
 - [=](../../Language/Words/Equals/README.md)
-- [<](../../Language/Words/Less-than/README.md)
-- [>](../../Language/Words/Greater-than/README.md)
-- [U <](../../Language/Words/u-less-than/README.md)
-- [U>](../../Language/Words/u-greater-than/README.md)
+- [\<](../../Language/Words/Less-than/README.md)
+- [\>](../../Language/Words/Greater-than/README.md)
+- [U \<](../../Language/Words/u-less-than/README.md)
+- [U\>](../../Language/Words/u-greater-than/README.md)
 - [And](../../Language/Words/And/README.md)
 - [Or](../../Language/Words/Or/README.md)
 - [Xor](../../Language/Words/Xor/README.md)
@@ -99,17 +99,17 @@ This Syeicherplatz savings and reduces the execution time.
 
 ### People Forth 32bit words
 
-- [] Extend
+- \[\] Extend
 - [Dabs](../../Language/Words/d-absolute/README.md)
 - [Dnegate](../../Language/Words/d-negate/README.md)
 - [D +](../../Language/Words/d-plus/README.md)
 - [D-](../../Language/Words/d-minus/README.md)
-- [D *](../../Language/Words/d-times/README.md)
+- [D \*](../../Language/Words/d-times/README.md)
 - [D =](../../Language/Words/d-equal/README.md)
-- [D <](../../Language/Words/d-less-than/README.md)
+- [D \<](../../Language/Words/d-less-than/README.md)
 - [D0 =](../../Language/Words/d-equals-zero/README.md)
-- [M *](../../Language/Words/m-times/README.md)
-- [* For](../../Language/Words/u-m-times/README.md)
+- [M \*](../../Language/Words/m-times/README.md)
+- [\* For](../../Language/Words/u-m-times/README.md)
 - [M / mod](../../Language/Words/m-divide-mod/README.md)
 - [Ud / mod](../../Language/Words/u-d-divide-mod/README.md)
 - [Um / mod](../../Language/Words/u-m-divide-mod/README.md)
@@ -121,8 +121,8 @@ Conventional programming languages contain more or less pronounced, the concept 
 FORTH LANGUAGE as programming is so out of words. Thus can be FORTH-words:
 
 1. Data areas
-1. Algorithms (commands)
-1. Programs
+2. Algorithms (commands)
+3. Programs
 
 To use appropriate procedures, can know the most languages, PARAMETER:
 These are data that a procedure be passed when called for processing. Data that are only used within a procedure called, LOCAL about this procedure, in contrast, is known as data that are outside of certain procedures available and can be accessed by all procedures with all operators, GLOBAL.
@@ -162,10 +162,10 @@ The call of procedures done in FORTH is done implicitly by the mention of the na
 - [Red](../../Language/Words/Red/README.md)
 - [-Red](../../Language/Words/red-minus/README.md)
 - [Roll](../../Language/Words/Roll/README.md)
-- [__-__ "minus" ( n1 n2 -- n3 )](../../Language/Words/minus/README.md) roll
+- [**-** "minus" ( n1 n2 -- n3 )](../../Language/Words/minus/README.md) roll
 - [Pick](../../Language/Words/Pick/README.md)
 - [. S](../../Language/Words/dos-s/README.md)
-- [Clear_stack](../../Language/Words/Clear_stack/README.md)
+- [Clear\_stack](../../Language/Words/Clear_stack/README.md)
 - [Depth](../../Language/Words/Depth/README.md)
 - [S0](../../Language/Words/s-zero/README.md)
 - [Sp!](../../Language/Words/S-p-store/README.md)

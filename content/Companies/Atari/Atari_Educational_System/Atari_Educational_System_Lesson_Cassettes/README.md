@@ -1,44 +1,43 @@
 # Atari Educational System Lesson Cassettes
 
 ## Images:
+
 ![](attachments/Atari_Educational_System_CXL_4001-1.jpg)
 Atari Educational System CXL 4001 - 1
-
 
 ![](attachments/Atari_Educational_System_CXL_4001-2.jpg)
 Atari Educational System CXL 4001 - 2
 
-
 ![](attachments/Educational_System_Cartridge.jpg)
 Atari Educational System Master Cartridge CXL4001
-
 
 ![](attachments/Atari_Educational_System-Start.jpg)
 Atari Educational System Master Cartridge CXL4001 at Startup (C) Copyright Atari 1979
 
-
 ![](attachments/Dorsett.jpg)
 Dorsett 'Talk and Teach System' (C) Copyright 1983 by Dorsett Educational Systems, Inc.
-
 
 ![](attachments/Overview.jpg)
 Overview of the Atari Educational System Programs
 
-
 ## All available images in one archive:
+
 [edu.zip](attachments/edu.zip) size: 25 KB
 
 ## References:
-- [Atari_Educational_System-Talk_and_Teach-Cassette_Courseware_Catalog.pdf](attachments/Atari_Educational_System-Talk_and_Teach-Cassette_Courseware_Catalog.pdf)
+
+- [Atari\_Educational\_System-Talk\_and\_Teach-Cassette\_Courseware\_Catalog.pdf](attachments/Atari_Educational_System-Talk_and_Teach-Cassette_Courseware_Catalog.pdf)
 - [Atarimuseum.com](http://www.atarimuseum.com/atarieducation/education-menu/edu-menu.htm)
 - [Atarisource.com](http://www.atarisource.com/collection.htm)
 - [A library for encoding cassette tapes in the Atari Educational System (AKA Dorsett) format](https://github.com/tschak909/eduencode)
+
 ## Very important:
+
 AtariWiki highly recommends the findings of tschak909 from AtariAge. Please take a look, what he has found:
 
-[Disassembling the Educational System Master Cartridge](http://atariage.com/forums/topic/237822-disassembling-the-educational-system-master-cartridge/) 
+[Disassembling the Educational System Master Cartridge](http://atariage.com/forums/topic/237822-disassembling-the-educational-system-master-cartridge/)
 
-[EduEncode - a library for encoding Atari Educational System tapes!](http://atariage.com/forums/topic/238262-eduencode-a-library-for-encoding-atari-educational-system-tapes/) 
+[EduEncode - a library for encoding Atari Educational System tapes!](http://atariage.com/forums/topic/238262-eduencode-a-library-for-encoding-atari-educational-system-tapes/)
 
 ## Complete list of the Atari Educational System Lesson Cassettes: 16 courses were made, each one has 4 cassettes! Auto Mechanics CX6013 was announced, but not published. Thanks to Michael Current, Kay Savetz and Thomas Cherryhomes, we can offer a solution for this, please see below. General hint: If you discover problems with reading of the files, please reset the Atari and leave the position of the cassette reader unchanged. Try again, until you hear a high frequency sound or discover it works. In Altirra F2-key for START and F5-key for RESET.
 
@@ -69,31 +68,28 @@ Lloyd G. Dorsett, the founder, has proven, that the Atari can do much more than 
 Popular Science, January 1983, page 99
 
 ## Examples:
+
 ![](attachments/Basic_Electricity_CX6016_.jpg)
 Basic Electricity CX6016
 
-
 ![](attachments/Atari_Educational_System_Lesson-Counseling_Procedures_CX6006.jpg)
 Counseling Procedures CX6006
-
 
 ![](attachments/1.jpg)
 U.S. History CX6001, Business Communications CX6010, Basic Psychology CX6011
 World History (Western) CX6004, Spelling CX6015, U.S. Government CX6002
 
-
 ![](attachments/2.jpg)
 Basic Algebra CX6017, Effective Writing CX6012
 
-
 ![](attachments/Atari_Educational_System_Lesson_Cassettes-Kay_Savetz2.jpg)
 Basic Electricity CX6016, U.S. Government CX6002, Great Classics CX6009 and others ; thank you Kay Savetz for giving us the pictures. :-)
-
 
 ![](attachments/Business_Communications_CX6010-Principles_of_Accounting_CX6007.jpg)
 Business Communications CX6010-Principles of Accounting CX6007
 
 ## Outlook:
+
 So you think you now have the complete Atari Educational System program? Think again:
 
 ![](attachments/45packages.jpg)

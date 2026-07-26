@@ -4,14 +4,13 @@ General Information
 Author: Peter Finzel
 Language: ACTION!
 Compiler/Interpreter: ACTION!
-Published: ATARI Magazin #2 (03/04-87), ACTION! Center 2
+Published: ATARI Magazin \#2 (03/04-87), ACTION! Center 2
 ---
 
 Im zweiten Action!-Center behandeln wir die Interrupts für flotte Programme.
 Die Benutzung von Interrupts ist ein Kapitel das normalerweise nur Assembler Programmierern vorbehalten ist Gerade ihre Beherrschung stellt jedoch ein sehr gutes Hilfsmittel für eine Programmiersprache dar, da durch einen periodisch wiederkehrenden Interrupt (beim Atari VBI genannt) sogar eine Art von Parallelverarbeitung möglich ist. Das bedeutet nicht mehr und nicht weniger, als dass zwei Programme (quasi) gleichzeitig bearbeitet werden. Sie können sich vorstellen, dass es mit diesen Fähigkeiten kein Problem ist, fließende Animation mit Musik zu verbinden.
 
 Nun wäre es aber schade wenn eine  so vielversprechende Fähigkeit nur in Assembler nutzbar sein sollte, doch ist es ganz einfach eine Frage der Rechenzeit. Der bereits erwähnte VBI wird von der Hardware des Rechners 50mal pro Sekunde aufgerufen. Dann verzweigt der Programmablauf zu einem speziellen Programmteil im ROM des Computers und kann, wie wir später noch sehen werden, auch auf eigene Programme umgelenkt werden Es ist klar, dass die vom VBI aufgerufene Routine auch innerhalb von 20 Millisekunden (1/50 sec) abgeschlossen sein muss, denn sonst würde sie nochmals aufgerufen, bevor sie beendet ist. Ein heilloses Durcheinander wäre die sichere Folge.
-
 
 Eine langsame Sprache wie das Atari-Basic könnte in dieser Zeit nur sehr wenige Befehle abarbeiten (Ein Befehl wie A=B+C nimmt alleine schon ca. 12 Millisekunden in Anspruch!) Ein Assembler-Programm kann dagen in 20 Millisekunden eine ganze Reihe von Befehlen bearbeiten. Während dieser Zeitspanne stehen etwa 23.000 bis 33.000 Taktzyklen zur Verfügung, die für einige tausend Maschinenbefehle ausreichen Damit lässt sich schon etwas anfangen.
 
@@ -42,6 +41,7 @@ Interessant ist noch die Prozedur PMGraphics(), mit der die PM-Grafik eingeschal
 Man sollte natürlich auch bedenken, dass die Rechenzeit des VBI von der gesamt verfügbaren abgeht, d.h., bei einer sehr langen Routine kommt das Vordergrundprogramm fast zum Stillstand.
 
 Auf ähnliche Weise lassen sich auch die anderen System-Interrupts (DLI oder I/O-Interrupts auf Action!-Programme umlenken, doch mehrdavon in einer der nächsten Folgen. Sie sehen, dass man mit dieser C-ähnlichen Sprache auch so komplizierte Sachverhalte wie Interrupts mühelos in den Griff bekommt, ohne auf die langwierige Assembler-Programmierung ausweichen zu müssen. Es ist daher kein Wunder, wenn die Betriebssysteme der neuen 16-Bit-Generation (z.B. ST oder Amiga) ausschließlich in C programmiert sind.
+
 ```
 ;************************************
 ;VERTICAL-BLANK INTERRUPT IN ACTION! 
@@ -179,5 +179,7 @@ OD
 SETVBI(XITVBV)
 RETURN
 ```
+
 ---
-PDF: [act2.pdf](attachments/act2.pdf) 
+
+PDF: [act2.pdf](attachments/act2.pdf)

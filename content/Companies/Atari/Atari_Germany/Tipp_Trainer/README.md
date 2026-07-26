@@ -3,11 +3,15 @@
 Copyright (C) 1983 Atari Elektronik Vertriebsgesellschaft mbH
 
 ## CAS-Image (TXG 9512)
+
 - [Tipp-Trainer.cas](attachments/Tipp-Trainer.cas)
+
 ## DISK-Image (DXG 5712)
-- [Tipp-Trainer_DXG-5712.atr](attachments/Tipp-Trainer_DXG-5712.atr)
+
+- [Tipp-Trainer\_DXG-5712.atr](attachments/Tipp-Trainer_DXG-5712.atr)
 
 ## Bilder
+
 ![](attachments/Box.jpg)
 Atari Tipp Trainer TXG 9512 - Box: Vorderansicht
 

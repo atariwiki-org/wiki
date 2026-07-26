@@ -3,14 +3,17 @@
 Copyright 1980 Atari, Inc. and Carol Shaw
 
 ## ATR image
-- [Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr) ; to be used with the [Atari Assembler Editor](../Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien
-- [Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr) ; to be used with the [Atari Assembler Editor](../Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien
+
+- [Checkers\_Source\_Code\_Atari\_Assembler-Editor\_with\_DOS\_2.0S\_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr) ; to be used with the [Atari Assembler Editor](../Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien
+- [Checkers\_Source\_Code\_Atari\_Assembler-Editor\_with\_DOS\_2.75\_SD.atr](attachments/Checkers_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr) ; to be used with the [Atari Assembler Editor](../Atari_Assembler_Editor/README.md) cartridge by Kathleen Ann O'Brien
 
 ## TXT Files
-- [Checkers_Source_Code.txt](attachments/Checkers_Source_Code.txt) ; Checkers Display source code in a text file
-- [Checkers_assembliert-0_Fehler.txt](attachments/Checkers_assembliert-0_Fehler.txt) ; Checkers Display assembled with 0 errors in a text file
+
+- [Checkers\_Source\_Code.txt](attachments/Checkers_Source_Code.txt) ; Checkers Display source code in a text file
+- [Checkers\_assembliert-0\_Fehler.txt](attachments/Checkers_assembliert-0_Fehler.txt) ; Checkers Display assembled with 0 errors in a text file
 
 ## Source Code
+
 ```
 10  .TITLE "ATARI 800 CHECKERS DISPLAY BY C. SHAW 3/31/80"
 20 ;
@@ -363,6 +366,7 @@ Copyright 1980 Atari, Inc. and Carol Shaw
 ```
 
 ## Assembled Source Code with 0 errors
+
 ```
 0000        10          .TITLE "ATARI 800 CHECKERS DISPLAY BY C. SHAW 3/31/80"
             20 ;

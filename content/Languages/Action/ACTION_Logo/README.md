@@ -18,7 +18,6 @@ In case you are interested, this is the company logo for Action Computer Service
 
 PS: Hit ESC to exit program
 
-
 ```
 ; CIS Notice:
 		 

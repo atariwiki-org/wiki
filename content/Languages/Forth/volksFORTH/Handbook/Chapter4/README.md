@@ -1,6 +1,6 @@
 # Chapter 4: Program Structures
 
-[Wil Baden]( http://home.earthlink.net/ ~ neilbawd /), which you encounter in the English literature often has, in
+\[Wil Baden\]( http://home.earthlink.net/ ~ neilbawd /), which you encounter in the English literature often has, in
 Escaping his contribution FORTH stated the following: There are four types of control statements:
 
 - The sequence of instructions
@@ -207,6 +207,7 @@ In this analysis from the QueHtext clear enough that in TWO THREE and the same a
 OR = n2 examine why a test value for equality with a lying under a flag f1 number n2. The result of this test is already available with the Flag OR-linked. This new flag f2 and pass the test value will nl:
 
 OR = definition in Forth
+
 ```
   : = Or (f1 n1 n2 - n1 f2) 
     2 pick 
@@ -214,6 +215,7 @@ OR = definition in Forth
 ```
 
 OR = definition in 8086 assembler
+
 ```
    code 0or (f1 n1 n2 - n1 f2) 
       A D D xchg pop 
@@ -289,21 +291,21 @@ Mr. H. Sehnitter has implemented this Eaker-CASE for the volks4TH and it made ch
 
 This implementation of the Eaker-CASE is an improvement over the original by Mr. Reaper has extended the control structure to ELSECASE. Seibstverständlich the new version is fully upward compatible with the original version.
 
-__Verbesserung__:
+**Verbesserung**:
 
 In the original version of the CASE structure, it is not possible to place between the last and EndOf ENDCASE to a value or a flag on the stack, as ENDCASE principle the "Top of Stack" remote.
 
 In the improved version ELSECASE cleans the stack. ELSECASE must not be invoked, in which case compiled ENDCASE as before a DROP. It is now possible to place between the words and ELSECASE ENDCASE - as well as between OF and EndOf - a value on the stack and to use these outside the CASE control structure.
 
-__Änderung__:
+**Änderung**:
 
-The forward references are not resolved on the stack, but on a linked list. The variable __caselist__ contains the start address for unknown transfer addresses. The nesting of several CASE structures is arbitrary, and solved by __initlist__. __> Marklist__ fills compile the list of forward references and __> resolvelist__ solve them again.
+The forward references are not resolved on the stack, but on a linked list. The variable **caselist** contains the start address for unknown transfer addresses. The nesting of several CASE structures is arbitrary, and solved by **initlist**. **\> Marklist** fills compile the list of forward references and **\> resolvelist** solve them again.
 
-__Anwendungshinweis__:
+**Anwendungshinweis**:
 
-If these definitions are loaded outside the compilation of the work system should be removed with the | as headerless selected words with __clear__ after compiling the names.
+If these definitions are loaded outside the compilation of the work system should be removed with the | as headerless selected words with **clear** after compiling the names.
 
-The example of a Tastatuabfrage on CTRL-key shows (MS-DOS), is how to use this CASE construct. It is important that the __OF__ even checks the equality of the two present values and executes the instructions in this case between __OF__ and __ENDOF__.
+The example of a Tastatuabfrage on CTRL-key shows (MS-DOS), is how to use this CASE construct. It is important that the **OF** even checks the equality of the two present values and executes the instructions in this case between **OF** and **ENDOF**.
 
 ```
 : Control bl word 1+ c@ $BF and state @ IF [compile] Literal THEN : immediate
@@ -400,7 +402,7 @@ In previous solutions are still a number of comparisons between a case-index and
 
 If FORTH-words are to be stored in tables, there is the problem that a FORTH-word in his call usually runs the compiled words. When a table is not desired, and there is reasonably required that the starting address of the table is given in order to use the case index as an offset in this table.
 
-This can in populous FORTH either in the traditional way of solving ~] and ~ [or the state-FORTH-specific __Create: __:
+This can in populous FORTH either in the traditional way of solving ~\] and ~ \[or the state-FORTH-specific \_\_Create: \_\_:
 
 ```
 Create glass 
@@ -414,7 +416,7 @@ Create: glass
         ; Drink 
 ```
 
-This glass table also shows that puncturing the dummy word __schieben__ has except for better readability yet: It solves the difficulty that six kinds of litter results compared to only four possible actions.
+This glass table also shows that puncturing the dummy word **schieben** has except for better readability yet: It solves the difficulty that six kinds of litter results compared to only four possible actions.
 
 The way of access in line with the MOVE access to a number in a one-dimensional array, a vector:
 
@@ -432,7 +434,7 @@ The way of access in line with the MOVE access to a number in a one-dimensional 
 
 This word can be TRUE, although values less than 1 and greater than 6, but they adjusted to the range 1 to 6 Here, too, would have an opportunity to be created, rejected a result of litter outside the six options as scam!
 
-The combination of table and access procedure is carried out by the word: Does>:
+The combination of table and access procedure is carried out by the word: Does\>:
 
 ```
 \: Does> for Create <name>: Does> <action>; ks 25 aug 88 
@@ -442,7 +444,7 @@ The combination of table and access procedure is carried out by the word: Does>:
     (Does> corrent @ context! Hide 0]; 
 ```
 
-This word __: DOES> __ points to the last word on __Create__ defined a runtime part. This word was programmed by Klaus Schleisiek also applies to point out after compiling to remove this with | headerless as declared by word __clear__.
+This word \_\_: DOES\> \_\_ points to the last word on **Create** defined a runtime part. This word was programmed by Klaus Schleisiek also applies to point out after compiling to remove this with | headerless as declared by word **clear**.
 
 ```
 Create: Auswertung.8 
@@ -454,7 +456,7 @@ Create: Auswertung.8
 : DOES move> right; 
 ```
 
-Without: DOES> are the table and access procedures separate words:
+Without: DOES\> are the table and access procedures separate words:
 
 ```
 : CRAPS1 
@@ -485,7 +487,7 @@ For more frequent use of such tables are, the use of "positional CASE defining w
    : Does> (pfa -) swap 2 + * perform; 
 ```
 
-A very elegant way to handle the error handling in case of an implausible case-index has the word __Associative: __. This word __Associative: __ searches a table for a match between a numerical value on the stack and the numerical values in the table and returns the index of the found number (match back). In case of failure (mismatch), the maximum index +1 (out of range = maxIndex + 1) is passed:
+A very elegant way to handle the error handling in case of an implausible case-index has the word \_\_Associative: \_\_. This word \_\_Associative: \_\_ searches a table for a match between a numerical value on the stack and the numerical values in the table and returns the index of the found number (match back). In case of failure (mismatch), the maximum index +1 (out of range = maxIndex + 1) is passed:
 
 ```
 : Associative: (n -) 
@@ -512,13 +514,14 @@ Associative 6: Evaluate
     ; Scold 
 ```
 
-Instead of Primitivabsicherung on MIN and MAX is an "out of range" error handling named __schimpfen__ carried out on the table heading maxIndex +1.
+Instead of Primitivabsicherung on MIN and MAX is an "out of range" error handling named **schimpfen** carried out on the table heading maxIndex +1.
 
 ### Purpose
 
 This last part of the discussion of the ways to handle a situation CASE attacks, suggestions from the literature (E. Flögel, FORTH Guide (p. 109) and W. Waigaard, menus in FORTH, electronics, 9 / 88 (P. 109 ff)) to.
 
 These two words are defined:
+
 - CLS - clears the screen and
 - CELLS - makes the calculation of the table significant access
 
@@ -527,7 +530,7 @@ These two words are defined:
 : 2 * cells; 
 ```
 
-The content and structure of the table remain unchanged, only the treatment of an "out of range" situation is achieved with time and __min__ __max__ and twice entering the error routine __schimpfen__.
+The content and structure of the table remain unchanged, only the treatment of an "out of range" situation is achieved with time and **min** **max** and twice entering the error routine **schimpfen**.
 
 ```
 Create: action 
@@ -547,7 +550,7 @@ Create: action
    8 0 DO cr I dup. Evaluating two spaces LOOP; 
 ```
 
-__AUSWÄHLEN__ Passes at a given vector and a given index a pointer to the "code field address (cfa) of the corresponding word. __AUSWERTEN__ Performs the so-selected word and __.ALL__ only served as a control. Such a word-based data structures is on the screen should be in the development of a program always be there.
+**AUSWÄHLEN** Passes at a given vector and a given index a pointer to the "code field address (cfa) of the corresponding word. **AUSWERTEN** Performs the so-selected word and **.ALL** only served as a control. Such a word-based data structures is on the screen should be in the development of a program always be there.
 
 Another M5glichkeit, values entered into a vector, has represented Mr. Flögel in his book "FORTH Manual":
 
@@ -572,7 +575,7 @@ Create Table 8 cells allot
 :. Table (-) 8 0 DO cr cr I. Action LOOP; 
 ```
 
-Here is with __.ACTION__ __.TABELLE__ and the possibility of the vector can be represented. Similarly, in the command-line editing CED entered the new actions in the input vectors.
+Here is with **.ACTION** **.TABELLE** and the possibility of the vector can be represented. Similarly, in the command-line editing CED entered the new actions in the input vectors.
 
 A slight modification of "W. Waigaard Menus, in FORTH" should show the VerknQpfung a vector of words and a menu option:
 
@@ -584,14 +587,14 @@ Create function
       7 min 0 max swap cells +; 
 ```
 
-__FUNCTION__ is a vector execution, which is preset with __NOOP__. At runtime, it returns the address of the indexed element.
+**FUNCTION** is a vector execution, which is preset with **NOOP**. At runtime, it returns the address of the indexed element.
 
 ```
 :. Action (i addr -) 
   @> Name bright. Name normal; 
 ```
 
-__.WORD__ Displays the name of a word, the CFA was entered into an address.
+**.WORD** Displays the name of a word, the CFA was entered into an address.
 
 ```
 : Option (i -) 
@@ -602,7 +605,7 @@ __.WORD__ Displays the name of a word, the CFA was entered into an address.
   function. action; \ i addr 
 ```
 
-__option__ fetches the address of the __option__ on the following word. The word should not be executed, but the following. Only the pointer on the word to be evaluated. After the passed index pointer is entered in __FUNCTION__. The name of the so-entered word is displayed!
+**option** fetches the address of the **option** on the following word. The word should not be executed, but the following. Only the pointer on the word to be evaluated. After the passed index pointer is entered in **FUNCTION**. The name of the so-entered word is displayed!
 
 ```
 \ Menu jrp 06feb89 
@@ -617,9 +620,10 @@ __option__ fetches the address of the __option__ on the following word. The word
    7 option scold; 
 ```
 
-If the word __MENUE__ is called, not only the options listed in the table, but also by name displayed on the screen. This technique lends itself to a menu bar at a fixed screen position, similar to the status bar of the state-FORTH. To change those menu items to offer the keys:
+If the word **MENUE** is called, not only the options listed in the table, but also by name displayed on the screen. This technique lends itself to a menu bar at a fixed screen position, similar to the status bar of the state-FORTH. To change those menu items to offer the keys:
 
 MS-DOS''''
+
 ```
 : Fkey (-) 
   & 58 key function + abs perform; 
@@ -629,7 +633,7 @@ FKEY supplies the pressure of a button returns a value from -59 to -68. This is 
 
 ### Recursion
 
-Before the technique is shown to the recursion for the state-FORTH, is another word __.LASTNAME__ show that the word is __LAST__ with the literature often encountered __LATEST__ identical: Both words provide the "name field address" (nfa) of the previously defined CURRENT-word in vocabulary. The word __LAST'__ contrast, provides the "code field address (cfa) of the last defined word.
+Before the technique is shown to the recursion for the state-FORTH, is another word **.LASTNAME** show that the word is **LAST** with the literature often encountered **LATEST** identical: Both words provide the "name field address" (nfa) of the previously defined CURRENT-word in vocabulary. The word **LAST'** contrast, provides the "code field address (cfa) of the last defined word.
 
 ```
 : Last name. @ Last. Name; 
@@ -637,7 +641,7 @@ Before the technique is shown to the recursion for the state-FORTH, is another w
 
 Recursion is a technique in which a word is repeatedly calling itself. One of the most famous examples is the calculation of the factorial of a positive integer n this is clear! from the product of all its predecessors.
 
-In the state-FORTH Selbstaufruf a word is characterized by __RECURSIVE__, so that presents a program for calculating faculty as follows:
+In the state-FORTH Selbstaufruf a word is characterized by **RECURSIVE**, so that presents a program for calculating faculty as follows:
 
 ```
 : Faculty (+ n - n!) 
@@ -653,7 +657,7 @@ In the state-FORTH Selbstaufruf a word is characterized by __RECURSIVE__, so tha
  faculty cr 6th 
 ```
 
-However, there is - especially in the fig-FORTH literature - a word __MYSELF__, which is identical to that encountered in FORTH83 __RECURSE__ environments. Since this construction is used in MYSELF / RECURSE Platshalter as for the word name is often used, the possible definitions and a further form of FACULTY be displayed:
+However, there is - especially in the fig-FORTH literature - a word **MYSELF**, which is identical to that encountered in FORTH83 **RECURSE** environments. Since this construction is used in MYSELF / RECURSE Platshalter as for the word name is often used, the possible definitions and a further form of FACULTY be displayed:
 
 ```
 : @ Myself last name>; immediate 
@@ -672,7 +676,7 @@ However, there is - especially in the fig-FORTH literature - a word __MYSELF__, 
           THEN; 
 ```
 
-When using __RECURSE__ is simply replaced by __MYSELF__:
+When using **RECURSE** is simply replaced by **MYSELF**:
 
 ```
 ... 

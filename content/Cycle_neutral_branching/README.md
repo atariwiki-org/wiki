@@ -10,6 +10,7 @@ From Michael J. Mahon:
 I've found it useful to devise macros to do certain conditional
 operations in constant time. For example, "increment Y if carry set"
 (with A volatile) is:
+
 ```
 BCS *+3	  ; Branch to INY
 LDA $C8	  ; $C8 = INY

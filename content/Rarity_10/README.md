@@ -6,7 +6,8 @@ This chapter is intended to provide an overview of programs that must exist but 
 Below are the products AtariWiki is looking for. Besides this, the worldwide community is looking for this [list of missing / undumped software on AtariAge](https://atariage.com/forums/topic/252943-list-of-missing-undumped-software/#comments), too.
 
 ---
-•) __Atari OS Rev. B (PAL) for Atari 400/800 from 1981; PRINT PEEK (65528)  <RETURN> => 34__
+
+•) **Atari OS Rev. B (PAL) for Atari 400/800 from 1981; PRINT PEEK (65528)  <RETURN> =\> 34**
 
 There are more than rumors about this OS type; please see here:
 
@@ -23,7 +24,8 @@ in BASIC. If the result is 34, then you own the most expensive Atari in the worl
 Further, we are looking for:
 
 ---
-•) __OPERATING SYSTEM 255 for Atari 400/800 ; PRINT PEEK (65528)  <RETURN> => 255__
+
+•) **OPERATING SYSTEM 255 for Atari 400/800 ; PRINT PEEK (65528)  <RETURN> =\> 255**
 
 Many thanks to kr0tki, who found the trace showing that OS 255 is for real!
 On page 8 of:
@@ -33,53 +35,58 @@ we find:
 Page 8 of: 'All about Cassette Tapes from 1979'
 
 ---
+
 •) From [The Atari Accountant](../Companies/Atari/The_Atari_Accountant/README.md) just:
+
 - CX402: Accounts Receivable System (4 SSDD Diskettes)
 - CX403: Inventory Control System (5 SSDD Diskettes)
 
-•) [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
+•) [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md)
 Atari Dow Jones Investment Evaluator CX8124
 Atari Dow Jones Investment Evaluator CX8125
 Atari Dow Jones Investment Evaluator CX8127
 
-•) [Atari Home Finance](../Companies/Atari/Atari_Home_Finance/README.md) 
+•) [Atari Home Finance](../Companies/Atari/Atari_Home_Finance/README.md)
 
 •) [Atari Learning System Software](../Companies/Atari/Atari_Learning_System_Software/README.md) ; completely missing!
 
 ---
+
 •) Desperate call for help on missing Dorsett tapes
 
 Some tapes were severely damaged and therefore couldn't be digitized. If anyone is in possession of the following tapes, please give us a message or a post [here](http://atariage.com/forums/topic/251713-desperate-call-for-help-on-missing-dorsett-tapes/). We really need your help and appreciate just any hint on the programs, who seem to be lost in time, like tears in rain.
 
 The left ones to digitize are as follows:
 
-__- General Shop Practices:__
+**- General Shop Practices:**
 
 Oa1 Tool Identification Lesson, Part 1
 Oa7 Discussion of a Two-Cycle Engine
 Oa8 Use of Micrometers and Calipers
 
-__- Health Services Career:__
+**- Health Services Career:**
 
 Hc5 Medical History
 Hc6 Extended Care
 
-__- Physics:__
+**- Physics:**
 
 Ph16 Theory of Relativity
 
 Well, concerning Physics, we may be able to restore Ph16 from the Atari version of that course, Physics CX6008? Just loud thinking...
 
 ---
-•) __Atari Assembler Editor Cartridge Source Code__
 
-•) __Atari Macro Assembler (AMAC) and Program Text Editor Source Code__
+•) **Atari Assembler Editor Cartridge Source Code**
 
-•) __Atari Editor CX8105__ (maybe replaced by the Atari Program Text Editor?)
+•) **Atari Macro Assembler (AMAC) and Program Text Editor Source Code**
 
-•) __Atari Statistics II CX8112 Disk__ (was it ever finished?)
+•) **Atari Editor CX8105** (maybe replaced by the Atari Program Text Editor?)
 
-•) __[Atari Pascal (APX-20102)](../Companies/Atari/Atari_Program_Exchange_APX_Software/Atari_Pascal_APX-20102/README.md)__
+•) **Atari Statistics II CX8112 Disk** (was it ever finished?)
+
+•) **[Atari Pascal (APX-20102)](../Companies/Atari/Atari_Program_Exchange_APX_Software/Atari_Pascal_APX-20102/README.md)**
+
 - CXL4017 Pascal (cartridge, planned, but never released)
 - CX8109 Pascal (planned, but never released, because 128 KB RAM and 2 disk drives were needed)
 - CX8110 Pascal Database (planned, but never released, because 128 KB RAM and 2 disk drives were needed)
@@ -87,18 +94,20 @@ Well, concerning Physics, we may be able to restore Ph16 from the Atari version 
 - CX8116 Pascal-Linker (planned, but never released, because 128 KB RAM and 2 disk drives were needed)
 
 ---
-•) __McStuff Co. OSS BUG/65 revision 1.1__
+
+•) **McStuff Co. OSS BUG/65 revision 1.1**
 
 ---
-•) __OSS BUGV4FIX.COM__ - file needed to patch BUG/65 to work with DOS XL 4
 
-•) __OSS BUG/65 Source Code__
+•) **OSS BUGV4FIX.COM** - file needed to patch BUG/65 to work with DOS XL 4
 
-•) __OSS EASMD Source Code__
+•) **OSS BUG/65 Source Code**
 
-•) __OSS BASIC A+ Source Code__
+•) **OSS EASMD Source Code**
 
-•) __OSS Newsletters__
+•) **OSS BASIC A+ Source Code**
+
+•) **OSS Newsletters**
 We already have:
 OSS Newsletter - Summer 1983
 OSS Newsletter - January 1984
@@ -107,79 +116,87 @@ OSS Newsletter - October 1984
 OSS Newsletter - Fall 1986
 OSS Newsletter - Winter 1987
 
-•) __OSS Newsletters disks__ all are missing
+•) **OSS Newsletters disks** all are missing
 
-•) __OSS MAC/65 MACDO.M65__ - file published by OSS via BBS
+•) **OSS MAC/65 MACDO.M65** - file published by OSS via BBS
 
-•) __OSS Action!__ Graphics Utilities Library and Shape Editor for [Action!](../Languages/Action/README.md) 
-
----
-•) __Synapse Software__: __SynMail__; was finished according to Steve Hales, but after SynCalc und SynFile+ never sold to the public. So, somewhere out there, it may exists
-
-•) __Synapse Software__: __SynText__; was finished according to Steve Hales, but after SynCalc und SynFile+ never sold to the public. So, somewhere out there, it may exists
+•) **OSS Action!** Graphics Utilities Library and Shape Editor for [Action!](../Languages/Action/README.md)
 
 ---
-•) __Visicorporation__: __VisiDex__; An information organization and retrieval program which lets the user file and recall any type of information. It prints out lists, notes, and memos; and keeps track of a daily calendar, alerting the user to upcoming events. According to 'The Atari User's Encyclopedia from The Book Company, page 232, this software exists. So, somewhere out there, it may exists...
 
-•) __Visicorporation__: __VisiFile__; A comprehensive electronic filing system that makes it simple to organize, maintain, and effectively use all the information a business needs. It will accurately store, search, sort, retrieve, display, calculate, and print reports, lists, and mailing
+•) **Synapse Software**: **SynMail**; was finished according to Steve Hales, but after SynCalc und SynFile+ never sold to the public. So, somewhere out there, it may exists
+
+•) **Synapse Software**: **SynText**; was finished according to Steve Hales, but after SynCalc und SynFile+ never sold to the public. So, somewhere out there, it may exists
+
+---
+
+•) **Visicorporation**: **VisiDex**; An information organization and retrieval program which lets the user file and recall any type of information. It prints out lists, notes, and memos; and keeps track of a daily calendar, alerting the user to upcoming events. According to 'The Atari User's Encyclopedia from The Book Company, page 232, this software exists. So, somewhere out there, it may exists...
+
+•) **Visicorporation**: **VisiFile**; A comprehensive electronic filing system that makes it simple to organize, maintain, and effectively use all the information a business needs. It will accurately store, search, sort, retrieve, display, calculate, and print reports, lists, and mailing
 lists. According to 'The Atari User's Encyclopedia from The Book Company, page 232, this software exists. So, somewhere out there, it may exists...
 ---
-•) __Kyan Pascal:__
+
+•) **Kyan Pascal:**
 The community with the help of all has made great progress regarding Kyan Pascal. Tom Eckmann, CEO of Kyan Pascal, was so nice to us, by giving Kyan Pascal into PD. To complete Kyan Pascal, we need your help again. The missing list is as follows:
 
-__- Kyan Pascal version 1.2__
-__- Programming Utility Toolkit for Kyan Pascal version 1.x__
-__- Advanced Graphics Toolkit for Kyan Pascal version 1.x__
-__- Kyan Pascal version 2.00 and 2.03__
-__- Code Optimizer Toolkit for Kyan Pascal version 2.x ; includes the source code for the Runtime Library__
+**- Kyan Pascal version 1.2**
+**- Programming Utility Toolkit for Kyan Pascal version 1.x**
+**- Advanced Graphics Toolkit for Kyan Pascal version 1.x**
+**- Kyan Pascal version 2.00 and 2.03**
+**- Code Optimizer Toolkit for Kyan Pascal version 2.x ; includes the source code for the Runtime Library**
 
-__Please take into account: the System Utilities Toolkit for Kyan Pascal version 2.x is labeled as Version 1.00, while the content is 2.x! Therefore, if you have any original diskette from Kyan Pascal, please let us know. Thank you so much in advance. :-)__
-
----
-•) __Forth Compiler from Frank Ostrowski (seems to be lost in time, until a friend of Frank may give it to the community?)__
+**Please take into account: the System Utilities Toolkit for Kyan Pascal version 2.x is labeled as Version 1.00, while the content is 2.x! Therefore, if you have any original diskette from Kyan Pascal, please let us know. Thank you so much in advance. :-)**
 
 ---
-•) __Atari Pole Position II (title by Namco; never shipped, but exists!)__
+
+•) **Forth Compiler from Frank Ostrowski (seems to be lost in time, until a friend of Frank may give it to the community?)**
+
+---
+
+•) **Atari Pole Position II (title by Namco; never shipped, but exists!)**
 
 •) [Atari FutureMakers-Through the Star Bridge DX5076 (C) 1984 Atari, Inc.](http://www.atarimania.com/game-atari-400-800-xl-xe-futuremakers-through-the-star-bridge_6419.html) ; Many, many thanks to Hans Reutter for the info, Allan Bushman for the high resolution grab and Atarimania for hosting!
 
 •) [Atari FutureMakers-This Is Ground Control DX5077 (C) 1984 Atari, Inc.](http://www.atarimania.com/game-atari-400-800-xl-xe-futuremakers-this-is-ground-control_6420.html) ; Many, many thanks to Hans Reutter for the info, Allan Bushman for the high resolution grab and Atarimania for hosting!
 
-•) [Atari Force - Liberator (C) 1982 Atari, Inc.](https://www.emuparadise.me/M.A.M.E._-_Multiple_Arcade_Machine_Emulator_ROMs/Liberator_(set_1)/14238)
+•) [Atari Force - Liberator (C) 1982 Atari, Inc.](<https://www.emuparadise.me/M.A.M.E._-_Multiple_Arcade_Machine_Emulator_ROMs/Liberator_(set_1)/14238>)
 
 •) [Pursuit of the Pink Panther](http://www.atarimania.com/game-atari-400-800-xl-xe-pursuit-of-the-pink-panther_4177.html) ; Copyright (C) 1983 NAP Consumer Electronics, Licensed from MGM/UA with the music from Henry Mancini!!!
 
-•) [Phoenix for Atari 800](http://ataritools.fr.gd/1-_-PHOENIX-PROJECT.htm) 
+•) [Phoenix for Atari 800](http://ataritools.fr.gd/1-_-PHOENIX-PROJECT.htm)
 
 ---
-•) __Success with Math - CBS Software - Decimals - Addition and Subtraction__
 
-•) __Success with Math - CBS Software - Subtracting Mixed Fractions__
+•) **Success with Math - CBS Software - Decimals - Addition and Subtraction**
+
+•) **Success with Math - CBS Software - Subtracting Mixed Fractions**
 
 ---
+
 ## German Atari software
-•) __Atari Datenbank DXG 5723 Copyright © 1983 Atari Elektronik Vertriebs GmbH__
+
+•) **Atari Datenbank DXG 5723 Copyright © 1983 Atari Elektronik Vertriebs GmbH**
 Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. Es kann sich jedoch um die deutsche Version von SynFile+ handeln, die exklusiv für Atari entwickelt wurde. Das Jahr 1983 stimmt. Ferner wird das Basic-Modul benötigt; auch das stimmt hier. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)
 
 ![](attachments/Atari_Datenbank_DXG_5723_c_1983.jpg)
 Atari Datenbank DXG 5723 Copyright © 1983 Atari Elektronik Vertriebs GmbH ; Quelle: Atari ComputerSysteme--Software-Katalog (1983)
 
-•) __Atari Music Spiele__
+•) **Atari Music Spiele**
 Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. In keinem Katalog, in keiner Preisliste und in keinem Handbuch wurde hierzu eine Spur gefunden! Dennoch stammt die Information aus einer sehr seriösen Quelle, die wir ernst nehmen. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)
 
-•) __[Atari Super Biorhythmus / Atari Super Biorythme](../Companies/Atari/Atari_Germany/Super_Biorhythmus/README.md) (wurde es je fertig?)__
+•) **[Atari Super Biorhythmus / Atari Super Biorythme](../Companies/Atari/Atari_Germany/Super_Biorhythmus/README.md) (wurde es je fertig?)**
 
 Und als Letztes noch das Modul, welches für den WDR hergestellt worden ist:
 
-•) __WWF-Club-Spiel - A cartridge used by German Television in the 80's for a call-in game via telephone - programmer has lived in Hattingen/Germany__
+•) **WWF-Club-Spiel - A cartridge used by German Television in the 80's for a call-in game via telephone - programmer has lived in Hattingen/Germany**
 
 ## Images of the lost things
 
-[The Atari Accountant](../Companies/Atari/The_Atari_Accountant/README.md) 
+[The Atari Accountant](../Companies/Atari/The_Atari_Accountant/README.md)
 
-[The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md) 
+[The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md)
 
-[Atari Home Finance](../Companies/Atari/Atari_Home_Finance/README.md) 
+[Atari Home Finance](../Companies/Atari/Atari_Home_Finance/README.md)
 
 ![](attachments/Phoenix-400_800-Box-Front.jpg)
 Phoenix for the Atari box

@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Statistics ST](https://archive.org/details/DorsettAtariStatistics)
 
 This is an archive of the "Statistics" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Statistics
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 1.4 GB):
 - [st14](http://data.atariwiki.org/FLAC/Statistics/st14.flac)
 - [st15](http://data.atariwiki.org/FLAC/Statistics/st15.flac)
 - [st16](http://data.atariwiki.org/FLAC/Statistics/st16.flac)
+
 ## Images
+
 ![](attachments/stA_.jpg)
 Dorsett Atari Statistics ST - cassettes with uneven numbers
 

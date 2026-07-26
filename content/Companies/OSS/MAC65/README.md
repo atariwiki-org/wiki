@@ -1,11 +1,10 @@
 # MAC/65 Macro Assembler
 
-Copyright (C) Stephen D. Lawrow; OSS, Inc.; ICD, Inc. & FTe
+Copyright (C) Stephen D. Lawrow; OSS, Inc.; ICD, Inc. \& FTe
 
 MAC/65 is a 6502 macro assembler written by Stephen D. Lawrow and originally sold by [Optimized Systems Software](https://en.wikipedia.org/wiki/Optimized_Systems_Software) for the Atari 8-bit computers. It was first released on disk in 1982, then later on a 16 KiB bank-switched 'SuperCartridge'.
 
 MAC/65, along with other OSS products, became part of ICD's catalog of Atari products in January 1988. In 1994, Fine Tooned Engineering obtained limited rights to ICD's 8-bit products, including MAC/65.
-
 
 # Disk versions
 
@@ -22,6 +21,7 @@ This is the first disk version, released in 1982.
 ![](attachments/MAC-65-2.0.jpg)
 
 ### Disk images
+
 - [MAC/65 disk - 3 versions with DOS XL 2.30](attachments/MAC65_2.00_and_4.20_with_Bug65_2.0_and_DOS_XL_2.30.atr) - contains MAC/65 2.00, 4.20 and FTe 4.20, and three versions of BUG/65
 
 ## MAC/65 4.20 (1982)
@@ -31,14 +31,15 @@ This is the second disk version, released later in 1982.
 ![](attachments/MAC65_4.20.jpg)
 
 ### Disk images
+
 - MAC/65 4.20 disk with DOS 2.5 - contains BUG/65 2.00 and some sample source files:
-** [Side A](attachments/Mac_65_4.2_A.atr) 
-** [Side B](attachments/Mac_65_4.2_B.atr) 
+  \*\* [Side A](attachments/Mac_65_4.2_A.atr)
+  \*\* [Side B](attachments/Mac_65_4.2_B.atr)
 - [MAC/65 4.20 disk with DOS XL 2.30](attachments/Mac_65_4.20_with_Bug-65_and_DOS_XL_2.30.atr) - contains BUG/65 2.00 and some sample source files
 - MAC/65 4.20 disk with SpartaDOS 3.2g:
-** [180K disk (SS/DD)](attachments/Mac-65_SpartaDOS_3.2g_180K.atr) 
-** [360K disk (DS/DD)](attachments/Mac-65_SpartaDOS_3.2g_360K.atr) 
-** [720K disk (DS/QD)](attachments/Mac-65_SpartaDOS_3.2g_720K.atr)[^1]()
+  \*\* [180K disk (SS/DD)](attachments/Mac-65_SpartaDOS_3.2g_180K.atr)
+  \*\* [360K disk (DS/DD)](attachments/Mac-65_SpartaDOS_3.2g_360K.atr)
+  \*\* [720K disk (DS/QD)](attachments/Mac-65_SpartaDOS_3.2g_720K.atr)[^1]()
 
 ## MAC/65 4.20 - FTe re-release (1994)
 
@@ -49,15 +50,17 @@ After Fine Tooned Engineering obtained rights to MAC/65 from ICD, they re-releas
 ![](attachments/MAC-65_Shareware-Info.jpg)
 
 ### Disk images
+
 - [MAC/65 4.20 FTe shareware disk](attachments/MAC-65_Shareware.atr) - with TURBO-DOS XE 2.1
 
 ## Manual scans
+
 - MAC/65 and BUG/65 manual Rev. 1.0
-** [High quality](http://data.atariwiki.org/DOC/MAC-65_and_BUG-65_Rev._1.0-OSS-Print.pdf) - size: 61.1 MB; high quality, suitable for printing
-** [Small size with OCR](http://data.atariwiki.org/DOC/MAC-65_and_BUG-65_Rev._1.0-OSS-OCR.pdf) - size: 9.3 MB; suitable for viewing on screen
+  \*\* [High quality](http://data.atariwiki.org/DOC/MAC-65_and_BUG-65_Rev._1.0-OSS-Print.pdf) - size: 61.1 MB; high quality, suitable for printing
+  \*\* [Small size with OCR](http://data.atariwiki.org/DOC/MAC-65_and_BUG-65_Rev._1.0-OSS-OCR.pdf) - size: 9.3 MB; suitable for viewing on screen
 - MAC/65 and BUG/65 manual Rev. 1.1
-** [High quality](http://data.atariwiki.org/DOC/MAC-65_and_BUG-65_Rev._1.1-OSS-Print.pdf) - size: 63.3 MB ; suitable for printing
-** [Small size with OCR](http://data.atariwiki.org/DOC/MAC-65_and_BUG-65_Rev._1.1-OSS-OCR.pdf) ; size: 4.1 MB ; suitable for viewing on screen
+  \*\* [High quality](http://data.atariwiki.org/DOC/MAC-65_and_BUG-65_Rev._1.1-OSS-Print.pdf) - size: 63.3 MB ; suitable for printing
+  \*\* [Small size with OCR](http://data.atariwiki.org/DOC/MAC-65_and_BUG-65_Rev._1.1-OSS-OCR.pdf) ; size: 4.1 MB ; suitable for viewing on screen
 
 ## Patches from OSS Newsletter
 
@@ -73,6 +76,7 @@ After version 4.20, Lawrow rewrote MAC/65 for cartridge medium. It utilized OSS'
 The cartridge version replaced BUG/65 with another debugger - [Dunion's Debugging Tool (DDT) Rev. 1.0](../DDT/README.md) (Dunion's Debugging Tool) developed by James J. Dunion.
 
 ## MAC/65 1.00 (1984)
+
 %%(float:right)![](attachments/Cart.jpg)
 ![](attachments/Mac-65_orange_1.jpg)
 ![](attachments/Mac-65_y-b.jpg)%%
@@ -81,31 +85,38 @@ The first cartridge version, numbered 1.00, was released in 1984.
 ![](attachments/MAC-65-Version_1.00.gif)
 
 ### Cartridge images
+
 - MAC/65 1.00 with DDT - two-chip cartridge (043M bank order): [BIN image](attachments/MAC-65-Version_1.00.rom), [CAR image](attachments/MAC-65-Version_1.00.car)
 
 ## MAC/65 1.01 (1984)
+
 Soon after, OSS released version 1.01, with some bug fixes.
 
 ![](attachments/MAC-65-Version_1.01.gif)
 
 ### Cartridge images
+
 - MAC/65 1.01 with DDT - one-chip cartridge (M091 bank order): [BIN image](attachments/MAC_65_1.01.rom), [CAR image](attachments/MAC_65_1.01_with_DDT.car)
 
 ### Source code
+
 In 2017 AtariAge user Alfred published source code for MAC/65 1.01 that he had obtained from ICD back in the day.[^2]() Dated 1988, the sources are in the format of Mike Gustafson's cross-assembler that was used internally at ICD. When ICD bought the rights to the OSS portfolio, they apparently converted the sources from their original MAC/65 syntax to ICD's cross-assembler.
 
 - [MAC/65 1.01 sources from ICD 1988](attachments/Mac65.zip)
 - [Helper package to assemble the ICD sources using ca65](attachments/mac65-ca65.zip)
 
 ## MAC/65 1.02 (1984)
+
 Version 1.02 followed in the same year, with yet more bug fixes and a slightly darkened background color.
 
 ![](attachments/MAC-65-Version_1.02.gif)
 
 ### Cartridge images
+
 - MAC/65 1.02 with DDT - two-chip cartridge (034M bank order): [BIN image](attachments/MAC-65-Version_1.02.rom), [CAR image](attachments/MAC-65-Version_1.02.car)
 
 ## Manual scans
+
 - [MAC/65 Manual Rev. 1.2 - original scan](attachments/Mac-65_Rev._1.2_Manual.pdf) ; size: 2 MB
 - [MAC/65 with DDT manual - good quality](../../../../media/Companies/OSS/Mac65/attachments/Mac-65_with_DDT_manual_p._108-Rev_1.2.pdf) ; size: 25.4 MB
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf)
@@ -113,24 +124,26 @@ Version 1.02 followed in the same year, with yet more bug fixes and a slightly d
 ## Images
 
 - Photos of Fred Meijer's MAC/65 1.02 cartridge:
-![](attachments/mac65_102_1.jpg)
-![](attachments/mac65_102_2.jpg)
-![](attachments/mac65_102_3.jpg)
-![](attachments/mac65_102_4.jpg)
-![](attachments/mac65_102_5.jpg)
-
+  ![](attachments/mac65_102_1.jpg)
+  ![](attachments/mac65_102_2.jpg)
+  ![](attachments/mac65_102_3.jpg)
+  ![](attachments/mac65_102_4.jpg)
+  ![](attachments/mac65_102_5.jpg)
 
 # MAC/65 ToolKit
 
 OSS offered a companion disk to MAC/65. MAC/65 ToolKit was sold either separately or in a bundle with MAC/65, and contained a collection of helpful macros and routines implementing various common operations. The ToolKit supported both disk and cartridge versions of MAC/65.
 
 ## Disk images
+
 - [MAC/65 ToolKit](attachments/Mac_65_Toolkit.atr)
 
 ## Manual scans
+
 - [MAC/65 ToolKit manual](../../../../media/Companies/OSS/Mac65/attachments/MAC-65_ToolKit_Manual.pdf); size: 7 MB
 
 # Later work-in-progress versions
+
 Although version 1.02 was the last one published commercially, Stephen Lawrow continued development of MAC/65 - he kept fixing bugs and adding new features, all ultimately unpublished.
 
 In 2016, the AtariWiki team received a set of microfilms from an anonymous source [^3]()[^4]() that contained hex printouts of source listings for 3 different versions of MAC/65. Through the painstaking process of digitizing the microfilms, the team managed to recover the original files and combine them into the ATR images provided below.
@@ -142,6 +155,7 @@ Note: While source files and binary images in the provided ATR images were resto
 ### Source code
 
 MAC/65 1.01 (1986) source code (See [A call for help](#ACallForHelp) below):
+
 - [Disk 1 (master)](attachments/mac-xl-master-icd.atr)
 - [Disk 2 (slave)](attachments/mac-xl-slave-icd.atr)
 
@@ -157,11 +171,12 @@ ASM ,,#D2:NEWMAIN.OBJ
 The resulting file NEWMAIN.OBJ is a binary DOS file that loads itself into the $3000-$6fff area; these are the 16 KB ROM data for the two-chip variant of the OSS SuperCartridge. To build a ROM image for the one-chip variant, additionally change BANK2 to $D509 and BANK3 to $D501 in D1:EQUATE.INC (lines 180-190).
 
 ### Cartridge images
+
 Here are cartridge images created by building the sources.
 
 - MAC/65 1.01 (1986) - two-chip cartridge:
-** 043M bank order: [BIN image](attachments/MAC-65_v1.01_1984OSSLawrow_Stephen_D.US043M.bin), [CAR image](attachments/MAC-65_v1.01_1984OSSLawrow_Stephen_D.US043M.car) 
-** 034M bank order: [BIN image](attachments/MAC-65_v1.01_1984OSSLawrow_Stephen_D.US034M.bin), [CAR image](attachments/MAC-65_v1.01_1984OSSLawrow_Stephen_D.US034M.car) 
+  \*\* 043M bank order: [BIN image](attachments/MAC-65_v1.01_1984OSSLawrow_Stephen_D.US043M.bin), [CAR image](attachments/MAC-65_v1.01_1984OSSLawrow_Stephen_D.US043M.car)
+  \*\* 034M bank order: [BIN image](attachments/MAC-65_v1.01_1984OSSLawrow_Stephen_D.US034M.bin), [CAR image](attachments/MAC-65_v1.01_1984OSSLawrow_Stephen_D.US034M.car)
 - MAC/65 1.01 (1986) - one-chip cartridge: [BIN image](attachments/MAC-65_v1.01_1984OSSLawrow_Stephen_D.USM091.bin), [CAR image](attachments/MAC-65_v1.01_1984OSSLawrow_Stephen_D.USM091.car)
 
 ## MAC XE 3.4i (1986-02-11)
@@ -180,19 +195,21 @@ This version is identical to the "Assembler v. 3.4" version (described in the [n
 ```
 
 ### Cartridge images
+
 The following cartridge images were created by building the Assembler 3.4 sources after modifying them as described above.
 
 - MAC XE 3.4i with DDT - two-chip cartridge
-   - 043M bank order: [BIN image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US043M.bin), [CAR image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US043M.car) 
-   - 034M bank order: [BIN image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US034M.bin), [CAR image](attachments/MAC_XE_v3.4i_with_DDT-034M.car) 
+   - 043M bank order: [BIN image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US043M.bin), [CAR image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US043M.car)
+   - 034M bank order: [BIN image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.US034M.bin), [CAR image](attachments/MAC_XE_v3.4i_with_DDT-034M.car)
 - MAC XE v3.4i with DDT - one-chip cartridge: [BIN image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.USM091.bin), [CAR image](attachments/MAC_XE_v3.4i_1986-02-11Lawrow_Stephen_D.USM091.car)
 
 ## Assembler 3.4 (1987-12-21)
 
 ### Source code
+
 - Assembler 3.4 source code (See [A call for help](#ACallForHelp) below):
-** [Disk 1 (master)](attachments/mac-xl-1.atr) 
-** [Disk 2(slave)](attachments/mac-xl-2.atr) 
+  \*\* [Disk 1 (master)](attachments/mac-xl-1.atr)
+  \*\* [Disk 2(slave)](attachments/mac-xl-2.atr)
 
 This version of MAC/65 presents itself on the title screen as "Assembler version 3.4" with date "12/21/87". It is currently unknown what are the functional differences between this version and the other ones.
 
@@ -208,19 +225,21 @@ The resulting file MASTER.OBJ is a binary DOS file that loads itself into the $3
 As noted in the [previous section](#MACXE3.4i19860211), the resulting file MASTER.OBJ differs from the MAC XL 3.4i binary (found on the MAC/65 v. 3.6 source disks) only in the copyright text.
 
 ### Cartridge images
+
 Here are cartridge images created by building the sources.
 
 - Assembler 3.4 with DDT - two-chip cartridge
-** 043M bank order:  [BIN image](attachments/Assembler_v3.4_1987-12-21Lawrow_Stephen_D.US043M.bin), [CAR image](attachments/Assembler_v3.4_1987-12-21Lawrow_Stephen_D.US043M.car) 
-** 034M bank order: [BIN image](attachments/Assembler_v3.4_1987-12-21Lawrow_Stephen_D.US034M.bin), [CAR image](attachments/Assembler_v3.4_1987-12-21Lawrow_Stephen_D.US034M.car) 
+  \*\* 043M bank order:  [BIN image](attachments/Assembler_v3.4_1987-12-21Lawrow_Stephen_D.US043M.bin), [CAR image](attachments/Assembler_v3.4_1987-12-21Lawrow_Stephen_D.US043M.car)
+  \*\* 034M bank order: [BIN image](attachments/Assembler_v3.4_1987-12-21Lawrow_Stephen_D.US034M.bin), [CAR image](attachments/Assembler_v3.4_1987-12-21Lawrow_Stephen_D.US034M.car)
 - Assembler 3.4 with DDT - one-chip cartridge: [BIN image](attachments/Assembler_v3.4_1987-12-21Lawrow_Stephen_D.USM091.bin), [CAR image](attachments/Assembler_v3.4_1987-12-21Lawrow_Stephen_D.USM091.car)
 
 ## MAC/65 3.6 (1988-01-07)
 
 ### Source code
+
 - MAC/65 3.6. source code (See [A call for help](#ACallForHelp) below):
-** [Disk 1 (master)](attachments/mac-xl-master-3.6-1988.atr) 
-** [Disk 2 (slave)](attachments/mac-xl-slave-3.6-1988.atr) 
+  \*\* [Disk 1 (master)](attachments/mac-xl-master-3.6-1988.atr)
+  \*\* [Disk 2 (slave)](attachments/mac-xl-slave-3.6-1988.atr)
 
 This version of MAC/65 appears on the title screen as "MAC/65 version 3.6" with the date "01/07/88". Judging from the dates in the source code, this is chronologically the last known version of MAC/65. It is currently unknown what the functional differences are between this version and the other ones.
 
@@ -240,24 +259,27 @@ The resulting file MASTER.OBJ is a binary DOS file that loads itself into the $3
 - [MAC/65 3.6 assembly printout](attachments/MAC_XL_CARTRIDGE_c_1985_Stephen_D._Lawrow.txt) ; size: 660 KB ; generated while assembling the sources. Please check to build a new manual with the new function. Thank you.
 
 ### Cartridge images
+
 Here are cartridge images created by building the sources.
 
 - MAC/65 3.6 with DDT - two-chip cartridge
-** 043M bank order: [BIN image](attachments/MAC-65_v3.6_1988-01-07Lawrow_Stephen_D.US043M.bin), [CAR image](attachments/MAC-65_v3.6_1988-01-07Lawrow_Stephen_D.US043M.car) 
-** 034M bank order: [BIN image](attachments/MAC-65_v3.6_1988-01-07Lawrow_Stephen_D.US034M.bin), [CAR image](attachments/MAC-65_3.6_with_DDT-034M.car) 
-*** a hack with black-on-white letters: [CAR image](attachments/MAC-65_3.6_with_DDT_S-W-034M.CAR) 
+  \*\* 043M bank order: [BIN image](attachments/MAC-65_v3.6_1988-01-07Lawrow_Stephen_D.US043M.bin), [CAR image](attachments/MAC-65_v3.6_1988-01-07Lawrow_Stephen_D.US043M.car)
+  \*\* 034M bank order: [BIN image](attachments/MAC-65_v3.6_1988-01-07Lawrow_Stephen_D.US034M.bin), [CAR image](attachments/MAC-65_3.6_with_DDT-034M.car)
+  \*\*\* a hack with black-on-white letters: [CAR image](attachments/MAC-65_3.6_with_DDT_S-W-034M.CAR)
 - MAC/65 3.6 with DDT - one-chip cartridge: [BIN image](attachments/MAC-65_v3.6_1988-01-07Lawrow_Stephen_D.USM091.bin), [CAR image](attachments/MAC-65_v3.6_1988-01-07Lawrow_Stephen_D.USM091.car)
 
 # Other resources
 
 ## ATR-Images
+
 - [Floating Point Package A.atr](attachments/Floating_Point_Package_A.atr)
 - [Floating Point Package B.atr](attachments/Floating_Point_Package_B.atr) ; Manual for the Floating Point Package on diskette
-- [MAC/65 De-Tokenizer from ANALOG](attachments/M65-Token-Converter.atr) ; [(C) 1987 ANALOG COMPUTING & CHARLES BACHAND](http://joyfulcoder.net/atari/analog/?f=198805p27.html)
+- [MAC/65 De-Tokenizer from ANALOG](attachments/M65-Token-Converter.atr) ; [(C) 1987 ANALOG COMPUTING \& CHARLES BACHAND](http://joyfulcoder.net/atari/analog/?f=198805p27.html)
 - [MAC/65 Token Converter](attachments/MAC-65_Token_Converter.atr)
 - [MAC/65 Dissassembler](attachments/Mac_65_Dissassembler.atr)
 
 ## Manuals
+
 - [MAC/65 Manual-ABBUC version 2006](attachments/MAC65_Assembler.pdf) ; ABBUC version 2006 by Andreas Bertelmann ; size: 176 KB
 - [MAC/65 Handbook](MAC65Handbook/README.md)
 - [MAC/65 Manual](http://www.mixinc.net/atari/mac65.htm) by Nick Kennedy (highly recommended!)
@@ -266,6 +288,7 @@ Here are cartridge images created by building the sources.
 - Bug sheet of 01/07/94 version 1.02 [Scan](attachments/mac_65_bug_sheet.pdf) [PDF](attachments/MAC65_BUG_SHEET_01-07-1997.pdf)
 
 ## Examples - MAC/65 source files
+
 - [Floating Point ROM Library](../../../OS/Floating_Point_ROM/Floating_Point_ROM_Library/README.md)
 - [MOUSE ROUTINE IN AN INTERRUPT](../../../MOUSE_ROUTINE_IN_AN_INTERRUPT/README.md)
 - [RAF Commander](../../../RAF_Commander/README.md) - a Norton Commander Clone for the 8bit Atari
@@ -299,8 +322,9 @@ The AtariWiki team would like to thank the following individuals for their inval
 - Wade Ripkowski - thank you for presenting the instructions to prepare a 720K SpartaDOS disk with MAC/65[1](); great work Wade, thank you very much! :-)
 
 # References
+
 - [1]() Wade Ripkowski, ["MAC/65 with SpartaDOS](https://unfinishedbitness.info/2014/04/19/mac65-with-spartados/)
 - [2]() ["MAC/65 Source Code" post #1, AtariAge forums](https://atariage.com/forums/topic/270944-mac65-source-code/)
-- [3]() ["OSS-D-Day part 2-MAC/65 >1.02-cart&source now in PD" post #1, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/)
-- [4]() ["OSS-D-Day part 2-MAC/65 >1.02-cart&source now in PD" post #33, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/?do=findComment&comment=3595454)
-- [5]() ["OSS-D-Day part 2-MAC/65 >1.02-cart&source now in PD" post #22, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/?do=findComment&comment=3594656)
+- [3]() ["OSS-D-Day part 2-MAC/65 \>1.02-cart\&source now in PD" post #1, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/)
+- [4]() ["OSS-D-Day part 2-MAC/65 \>1.02-cart\&source now in PD" post #33, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/?do=findComment&comment=3595454)
+- [5]() ["OSS-D-Day part 2-MAC/65 \>1.02-cart\&source now in PD" post #22, AtariAge forums](https://atariage.com/forums/topic/257025-oss-d-day-part-2-mac65-102-cartsource-now-in-pd/?do=findComment&comment=3594656)

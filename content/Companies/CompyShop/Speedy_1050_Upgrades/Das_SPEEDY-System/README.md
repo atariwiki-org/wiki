@@ -1,6 +1,5 @@
 # Das SPEEDY-System
 
-
 ## Teil 1
 
 von Peter Bee
@@ -135,6 +134,7 @@ Alle Bauteile, die für den Betrieb der Trackanzeige und des Miniaturlautspreche
 Die Mini-Speedy ist im Prinzip eine normale Speedy 1050 ohne die Bauteile, die für die Trackanzeige und dem Miniaturlautsprecher notwendig sind. Ein paar Änderungen wurden jedoch zur normalen Speedy vorgenommen. 16k-Eproms können direkt eingesetzt werden. Zwei weiter IC's sind für die Anfang '89 vorgesehene 32k-Version vorgesehen.
 
 Dieses war nun unsere Einführung in die Hardware der Speedy. Für Sie als zukünftige Programmierer der Speedy ist nun noch die Aufteilung der Speicherbereiche wichtig. Die Programmierung der einzelnen Bausteine wird in den folgenden Teilen unserer Serie über die SPEEDY 1050 erklärt.
+
 ```
 Adresse:	belegt mit:
 0000	-	0080	RAM
@@ -221,6 +221,7 @@ Auch die SUPER-SPEED können Sie sehr leicht für Ihre eigenen Programme nutzen,
 ### SPEICHERAUFTEILUNG SPEEDY
 
 Nachfolgend finden Sie ein Blockschaltbild mit der genauen Speicherbelegung der SPEEDY.
+
 ```
 $FFFF	 		$03FF	 
  	ROM - 8 KBYTE		 	UNBENUTZT
@@ -238,27 +239,28 @@ $0403	 		$00FF
  	CONTROLLER 2793/97		 	ZERO PAGE
 $0400	 		$0000	 
 ```
+
 ### ERKLÄRUNG ZUR SPEICHERBELEGUNG
 
 - $E000 - $FFFF - BETRIEBSSYSTEM - Hier liegt das Betriebssystem Ihrer SPEEDY 1050 oder Mini-SPEEDY. Änderungen können Sie hier nicht vornehmen.
 - $8000 - $9FFF - ARBEITSSPEICHER - Der 8K-RAM-Block ist in 5 Bereiche unterteilt:
-** $9F80 - $9FFF - Hier liegen Einsprung- und Rücksprungvektoren für die Bereitschaftsroutine des Betriebssystems. Außerdem können Sie hier Erweiterungen der RESET-Routine vornehmen.
-** $9F00 - $9FFF - Die normale und erweiterte Kommandotabelle und die entsprechenden Einsprünge sind hier zu finden. Über das Kommando $41 können Sie diese Tabelle beliebig verändern. Diesen Befehl haben wir Ihnen bereits im SPEEDY-Handbuch erklärt, Sie werden ihn aber auch noch einmal etwas später in dieser Serie finden.
-** $9E00 - $9EFF - Der EXTENDED BUFFER dient zur Zwischenspeicherung von Sektordaten bei FAST WRITE oder beim SLOW MODE diverser Laufwerksfunktionen.
-** $8C00 - $9DFF - In diesem Bereich liegt der Trackbuffer. Hier werden bei FAST WRITE oder FAST READ erst alle Sektordaten eines Tracks zwischengespeichert. Schalten Sie die SPEEDY mit Hilfe der Menu- Diskette (Menupunkt SLOW-MODE-CONTROL) für READ SECTOR und WRITE SECTOR in den SLOW MODUS, wird dieser Speicherbereich nicht mehr vom Betriebssystem benutzt. So können Sie auch hier eigene Routinen ablegen.
-** $8000 - $8BFF - Freier Speicherbereich, der dem Programmierer zur Verfügung steht, also wo Sie Ihre eigenen Programme ablegen können!
-*$0400 - $0403 - Hier liegen die Register des Disk-Controllers 2793/97:
-** $0400: Lesen = Statusregister, Schreiben = Commandregister
-** $0401: Lesen + Schreiben = Trackregister
-** $0402: Lesen + Schreiben = Sektorregister
-** $0403: Lesen + Schreiben = Datenregister
+  \*\* $9F80 - $9FFF - Hier liegen Einsprung- und Rücksprungvektoren für die Bereitschaftsroutine des Betriebssystems. Außerdem können Sie hier Erweiterungen der RESET-Routine vornehmen.
+  \*\* $9F00 - $9FFF - Die normale und erweiterte Kommandotabelle und die entsprechenden Einsprünge sind hier zu finden. Über das Kommando $41 können Sie diese Tabelle beliebig verändern. Diesen Befehl haben wir Ihnen bereits im SPEEDY-Handbuch erklärt, Sie werden ihn aber auch noch einmal etwas später in dieser Serie finden.
+  \*\* $9E00 - $9EFF - Der EXTENDED BUFFER dient zur Zwischenspeicherung von Sektordaten bei FAST WRITE oder beim SLOW MODE diverser Laufwerksfunktionen.
+  \*\* $8C00 - $9DFF - In diesem Bereich liegt der Trackbuffer. Hier werden bei FAST WRITE oder FAST READ erst alle Sektordaten eines Tracks zwischengespeichert. Schalten Sie die SPEEDY mit Hilfe der Menu- Diskette (Menupunkt SLOW-MODE-CONTROL) für READ SECTOR und WRITE SECTOR in den SLOW MODUS, wird dieser Speicherbereich nicht mehr vom Betriebssystem benutzt. So können Sie auch hier eigene Routinen ablegen.
+  \*\* $8000 - $8BFF - Freier Speicherbereich, der dem Programmierer zur Verfügung steht, also wo Sie Ihre eigenen Programme ablegen können!
+  \*$0400 - $0403 - Hier liegen die Register des Disk-Controllers 2793/97:
+  \*\* $0400: Lesen = Statusregister, Schreiben = Commandregister
+  \*\* $0401: Lesen + Schreiben = Trackregister
+  \*\* $0402: Lesen + Schreiben = Sektorregister
+  \*\* $0403: Lesen + Schreiben = Datenregister
 - $0280 - $02FF - Hier befinden sich die Register des Port ICs 6532 (RIOT). Die gebräuchlichsten Register:
-** $0280: Port A Datenregister
-** $0281: Port A Richtungsregister
-** $0282: Port B Datenregister
-** $0283: Port B Richtungsregister
-** $0296: Timer lesen/schreiben, Timer IRQ abschalten
-** $029F: Timer mit Teilerverhältnis 1:1K lesen/schreiben, Timer IRQ einschalten
+  \*\* $0280: Port A Datenregister
+  \*\* $0281: Port A Richtungsregister
+  \*\* $0282: Port B Datenregister
+  \*\* $0283: Port B Richtungsregister
+  \*\* $0296: Timer lesen/schreiben, Timer IRQ abschalten
+  \*\* $029F: Timer mit Teilerverhältnis 1:1K lesen/schreiben, Timer IRQ einschalten
 - $0000 - $00FF - Die Zeropage - Die Zeropage und die Page 1 überlagern sich. Das heißt, Speicherstelle $0000 entspricht der Speicherstelle $0100, Speicherstelle $0001 entspricht der Speicherstelle $0101 usw. In der Zeropage stehen dem Benutzer die Speicherstellen $0090 bis $00CF zur freien Verfügung.
 
 Soweit der erste Teil der Beschreibung des SPEEDY Betriebssystems. Nächsten Monat beginnen wir mit den Einsprungadressen.
@@ -275,99 +277,99 @@ Welche Versionen es in Zukunft auch von der SPEEDY geben wird, diese Sprungtabel
 
 Hier die Beschreibung der einzelnen Jump-Vektoren:
 
-__RESET - $FF00 - DRIVE KALTSTART__
+**RESET - $FF00 - DRIVE KALTSTART**
 
 Port A und Port B (6532) werden initialisiert, der komplette RAM-Bereich gelöscht und der Disk-Controller getestet. Sollte ein Fehler beim Testen auftreten, erfolgt ein Sprung nach "SYSER0", wo zweimal "BELL" ausgegeben wird, anschließend folgt ein Sprung nach "RESET2".
 
-__RESET2 - $FF03 - DRIVE WARMSTART__
+**RESET2 - $FF03 - DRIVE WARMSTART**
 
 Die System-Variablen werden neu gesetzt, das Laufwerk in den "SINGLE-DENSITY-MODUS" gebracht, der Schreib-/Lesekopf auf Track 0 justiert und jede Controller-Tätigkeit gestoppt. Zum Rücksetzen des Laufwerkes sollte diese Routine angesprungen werden, da bei "$FF00 - RESET" alle im RAM befindlichen Daten gelöscht werden.
 
-__BEREIT - $FF06 - BEREITSCHAFTSROUTINE__
+**BEREIT - $FF06 - BEREITSCHAFTSROUTINE**
 
 Zuerst wird der "SLOW"-Schalter abgefragt und das Laufwerk gegebenenfalls in den "SLOW"-Modus geschaltet. Sollten sich noch zu schreibende Sektoren im RAM befinden, wird direkt danach "TSTCO" verzweigt, damit der Motor nicht ausgeschaltet wird, falls die Laufwerksklappe geöffnet wurde. Wurde nicht verzweigt, wird die Laufwerksklappe mit der letzten Stellung verglichen. Sollte die Klappe geöffnet worden sein, werden der Antriebsmotor und der Steppermotor ausgeschaltet und der Controller-Status nach "CONST" kopiert. Ist die Klappe geschlossen worden, wird die DENSITY neu festgestellt, das Laufwerk entsprechend eingestellt und die Sektor-Folge neu eingelesen. In der "TESTCO"-Routine wird die "COMMAND"-Leitung vom Computer abgefragt. Sollte diese "gesetzt" werden, erfolgt ein Sprung nach "RDINF", wo das Kommando vom Computer eingelesen wird. Ist die "COMMAND"-Leitung nicht gesetzt, wird der Motor-Timer heraufgezählt. Sollte dieser den Wert $9800 (16 Bit) erreichen, wird "TSTWR" aufgerufen, um alle Sektoren zu schreiben, die sich noch im RAM befinden.
 
-__MOTON - $FF09 - MOTOR ZWINGEND EINSCHALTEN__
+**MOTON - $FF09 - MOTOR ZWINGEND EINSCHALTEN**
 
 Der Antriebsmotor wird ohne Rücksicht auf die Stellung der Laufwerksklappe eingeschaltet.
 
-__TSTMON - $FF0C - MOTOR EINSCHALTEN, WENN DIE LAUFWERKSKLAPPE GESCHLOSSEN IST__
+**TSTMON - $FF0C - MOTOR EINSCHALTEN, WENN DIE LAUFWERKSKLAPPE GESCHLOSSEN IST**
 
 Erst wird die Laufwerksklappe abgefragt. Ist diese geschlossen, wird der Antriebsmotor eingeschaltet und eine Zeitverzögerung durchgeführt, um den Motor auf Touren kommen zu lassen.
 
-__MOTOFF - $FF0F - MOTOR AUSSCHALTEN__
+**MOTOFF - $FF0F - MOTOR AUSSCHALTEN**
 
 Der Antriebsmotor wird ausgeschaltet und das entsprechende Bit in "DRSTAT" gesetzt.
 
-__SDELAY - $FF12 - MOTOR TIMER EINSTELLEN__
+**SDELAY - $FF12 - MOTOR TIMER EINSTELLEN**
 
 Diese Routine wird nach einer Kommandoausführung abgearbeitet. Es wird die Zeit vorgegeben, wie lange der Motor nach einer Kommandoausführung noch eingeschaltet bleiben soll.
 
-__SDRDDP - $FF15 - DRIVE DENSITY EINSTELLEN UND ANZEIGEN__
+**SDRDDP - $FF15 - DRIVE DENSITY EINSTELLEN UND ANZEIGEN**
 
 Zuerst wird nach "DENDSP" gesprungen, um die aktuelle DENSITY auf dem Display anzuzeigen. Danach wird, je nach Wert in "FORKEN", der Drive-Status, die Anzahl der Sektoren pro Track und die Anzahl der Bytes pro Sektor gesetzt.
 
-__XWAIT - $FF18 - WARTESCHLEIFE KURZ__
+**XWAIT - $FF18 - WARTESCHLEIFE KURZ**
 
 Der Wert im X-Register gibt die Anzahl der Schleifendurchläufe an. 1 Schleifendurchlauf entspricht ca. 100 Taktzyklen (0,1 msek/100 mikrosek).
 
-__X2WAIT - $FF1B - WARTESCHLEIFE LANG__
+**X2WAIT - $FF1B - WARTESCHLEIFE LANG**
 
 Der Wert im X-Register gibt die Anzahl der Schleifendurchläufe an. 1 Schleifendurchlauf entspricht ca. 100.000 Taktzyklen (0,1 sek/100 msek).
 
-__TRACK0 - $FF1E - TRACK 0 POSITIONIEREN__
+**TRACK0 - $FF1E - TRACK 0 POSITIONIEREN**
 
 Der Disk-Controller wird gestoppt und der Schreib-/Lesekopf so lange zurückgezogen, bis der Track-0-Sensor anspricht. Danach wird eine Verzögerung zum Ausschwingen der Kopfmechanik durchgeführt.
 
-__TRADJA - $FF21 - TRACK # ANZEIGEN UND SCHREIB-/LESEKOPF POSITIONIEREN__
+**TRADJA - $FF21 - TRACK # ANZEIGEN UND SCHREIB-/LESEKOPF POSITIONIEREN**
 
 Zuerst wird die Tracknummer angezeigt und der Controller gestoppt. Ist die Klappe geschlossen, wird der Motor eingeschaltet und die Anzahl der Doppel-Steps errechnet, die durchgeführt werden müssen, um die gewünschte Kopfposition zu erreichen. Sollte der Trackwechsel über 40 Tracks gehen, wird zweimal "BELL" ausgegeben und der Kopf auf Track 0 positioniert.
 
 Nach erfolgreicher Schreib-/Lesekopf-Positionierung wird die Tracknummer in das Track-Register des Controllers kopiert und der Schreib-/Lesekopf-Mechanik Zeit zum Ausschwingen gegeben.
 
-__TRADJ - $FF24 - SCHREIB-/LESEKOPF POSITIONIEREN__
+**TRADJ - $FF24 - SCHREIB-/LESEKOPF POSITIONIEREN**
 
 Entspricht der $FF21-Routine, mit dem Unterschied, daß die Tracknummer nur dann angezeigt wird, wenn ein Trackwechsel stattgefunden hat.
 
-__TRVR - $FF27 - 1 STEP VORWÄRTS ODER RÜCKWÄRTS AUSFÜHREN__
+**TRVR - $FF27 - 1 STEP VORWÄRTS ODER RÜCKWÄRTS AUSFÜHREN**
 
 Im Y-Register ist die Kennung für Step vorwärts oder rückwärts (plus oder minus). Die Bitposition des Steppermotors wird entsprechend herauf- oder herabgezählt und das neue Bitmuster in Port 5 des Portbausteins geschrieben.
 
 Anmerkung: Für 1 Trackwechsel müssen immer 2 Steps erfolgen. Das heißt aber nicht, daß ohne Bedenken 80 Tracks geschrieben oder gelesen werden können. Die beiden Steps sind verschieden lang und instabil!
 
-__CONRES - $FF2A - DISK CONTROLLER STOPPEN__
+**CONRES - $FF2A - DISK CONTROLLER STOPPEN**
 
 Dem Disk-Controller wird der Befehl gegeben, alle laufenden Aktionen zu stoppen. In "WREADY" wird gewartet, bis der Controller den Befehl als "ausgeführt" meldet.
 
-__CONRE2 - $FF2D - CONRES WIRD ZWEIMAL AUSGEFÜHRT__
+**CONRE2 - $FF2D - CONRES WIRD ZWEIMAL AUSGEFÜHRT**
 
 Beim Einsprung in diese Routine wird die Routine $FF2A - DISK CONTROLLER STOPPEN zweimal ausgeführt.
 
-__WREADY - $FF30 - AUF CONTROLLER "IN USE-FLAG" = 0 WARTEN__
+**WREADY - $FF30 - AUF CONTROLLER "IN USE-FLAG" = 0 WARTEN**
 
 Bei dieser Routine wird darauf gewartet, bis der Controller meldet, daß der letzte Befehl abgeschlossen wurde.
 
-__RD128 - $FF33 - 128 BYTES VOM COMPUTER NACH "EXBUF" HOLEN__
+**RD128 - $FF33 - 128 BYTES VOM COMPUTER NACH "EXBUF" HOLEN**
 
 Der Buffer wird auf "EXBUF" (Extended Buffer) und die I/O-Länge auf 128 Bytes gesetzt.
 
-__RD256 - $FF36 - 256 BYTES VOM COMPUTER NACH "EXBUF" HOLEN__
+**RD256 - $FF36 - 256 BYTES VOM COMPUTER NACH "EXBUF" HOLEN**
 
 Wie bei der vorhergehenden Routine wird der Buffer auf "EXBUF", aber die I/O-Länge auf 256 Bytes gesetzt.
 
-__RDBTS - $FF39 - ANZAHL DER BYTES IM ACCU IN DEN BUFFER HOLEN (X/Y-REGISTER)__
+**RDBTS - $FF39 - ANZAHL DER BYTES IM ACCU IN DEN BUFFER HOLEN (X/Y-REGISTER)**
 
 Im Accu steht die Anzahl der Bytes, im X- und Y-Register die Low- und High-Adresse des Buffers, in dem die Daten vom Computer abgelegt werden sollen. Der Timer wird gesetzt, um zu verhindern, daß der Prozessor hängen bleiben kann. Es wird jeweils ein Byte über einen indirekten Jump-Vektor vom Computer geholt (außer bei HIGH-SPEED) und in dem Buffer abgelegt. Anschließend wird die Checksumme heraufgezählt und geprüft, ob alle Bytes des Datenblocks geholt wurden. Die Checksumme wird verglichen und die I/O-Länge neu gesetzt.
 
-__RDSFOL - $FF3C - NACH VERZÖGERUNG SEKTORFOLGE VOM AKTUELLEN TRACK LESEN__
+**RDSFOL - $FF3C - NACH VERZÖGERUNG SEKTORFOLGE VOM AKTUELLEN TRACK LESEN**
 
 Eine Verzögerungsschleife am Anfang der Routine verhindert, daß versucht wird, die HEADER schon zu lesen, wenn die Laufwerksklappe noch nicht vollständig geschlossen ist. Danach wird die Zeit gestellt, die der Controller zur Verfügung hat, um alle HEADER zu lesen. Ist ein HEADER eingelesen, wird die Track- und Sektor-Nummer auf Gültigkeit geprüft. Befindet sich die Sektornummer des gelesenen HEADERS bereits in der Sektorliste (doppelter Sektor), wird die Sektorfolge nicht mehr weiter gelesen und das Laufwerk in den Slow-Modus geschaltet. Stimmt die Anzahl der gelesenen Sektor-HEADER nicht mit der vorgegebenen (18 oder 26 Sektoren) überein, wird das Laufwerk ebenfalls in den Slow-Modus geschaltet.
 
-__RDTRA - $FF42 - AKTUELLEN TRACK IN DAS RAM EINLESEN__
+**RDTRA - $FF42 - AKTUELLEN TRACK IN DAS RAM EINLESEN**
 
 Die Track-Slow-Kennung wird gesetzt. Über RDHDSP wird der Kopf positioniert und der nächste HEADER eingelesen. Anschließend wird die Position der Sektor-Nummer des HEADERS in der Sektorliste gesucht. Ab der nächsten Position werden die Sektoren dann in der richtigen Reihenfolge eingelesen. Die Statuswerte der Sektoren werden in die Statusliste eingetragen. Alle Statuswerte außer $08 (CRC-ERROR) und $20 (AM-ERROR) unterbrechen dabei das Einlesen der Sektoren. Nur wenn alle Sektoren des Tracks gelesen wurden, wird die Kennung für Track-Slow zurückgesetzt.
 
-__RDTRAV - $FF45 - WIE RDTRA, JEDOCH MIT VERIFY UND 1 RETRY__
+**RDTRAV - $FF45 - WIE RDTRA, JEDOCH MIT VERIFY UND 1 RETRY**
 
 Hier wird zuerst die Track- und Sektornummer errechnet und anschließend $FF42 (RDTRA) aufgerufen. Dann wird die Statusliste auf $08 (CRC-ERROR) und $20 (AM-ERROR) getestet. Ist einer der beiden Statuswerte eingetragen, wird der entsprechende Sektor nochmal gelesen.
 
@@ -414,6 +416,7 @@ COUNTH	=	$65	16-Bit Zähler für Datenübertragung (high-Byte)
 RDIND	=	$68	Indirekter Vektor für 1 Byte vom Computer empfangen
 SDIND	=	$6A	Indirekter Vektor für 1 Byte zum Computer senden
 ```
+
 Die Zeropageadressen $90 bis $CF sind unbenutzt und frei für eigene Programme.
 
 ## Teil 5
@@ -422,87 +425,87 @@ von Reinhard Wilde
 
 ### Fortsetzung der Sprungtabelle aus der letzten Ausgabe.
 
-__TSTWR - $FF48 - NOCH ZU SCHREIBENDE SEKTOREN AUS DEM RAM AUF DIE DISKETTE SCHREIBEN__
+**TSTWR - $FF48 - NOCH ZU SCHREIBENDE SEKTOREN AUS DEM RAM AUF DIE DISKETTE SCHREIBEN**
 
 In "WRKEN" steht die Anzahl der zu schreibenden Sektoren. Ist der Wert gleich 0, wird die Routine sofort verlassen. Sonst wird der Motor eingeschaltet, die Tracknummer für die zu schreibenden Sektoren aus "LWRTRA" nach "TRACK" kopiert und der Schreib-/Lesekopf positioniert. Anschließend wird der nächste HEADER eingelesen und die Sektornummer in der Sektorliste gesucht. Ist der Sektor nicht eingetragen (zum Beispiel bei geschützten Disketten, die mit "FAST-WRITE" beschrieben wurden), wird 1 Bell ausgegeben. Ansonsten wird ab der gefundenen Sektorposition die Statusliste auf negative Werte (Kennung für zu schreibende Sektoren) überprüft. Wird ein solcher Wert gefunden, wird der entsprechende Sektor geschrieben und in der Statusliste als geschrieben ($40) eingetragen. "WRKEN" wird um 1 heruntergezählt und die Position in der Sektorliste heraufgezählt. Sollte beim Schreiben eines Sektors ein Fehler auftreten, indem der "WRITE-PROTECT-Schalter" umgeschaltet war oder die Laufwerksklappe geöffnet wurde, wird die Routine "WRERR" aufgerufen, in der dem Anwender auf optischem und akustischem Wege ca. 5 Sekunden Zeit gegeben wird, um die Laufwerksklappe wieder zu schließen. Alle "WRITE-PROTECTIERTEN" Sektoren werden in der Statusliste als geschrieben ($40) eingetragen.
 
-__TSTDAT - $FF4B - TSTWR AUFRUFEN UND STATUSLISTE MIT $40 FÜLLEN__
+**TSTDAT - $FF4B - TSTWR AUFRUFEN UND STATUSLISTE MIT $40 FÜLLEN**
 
 Diese Routine muß abgearbeitet werden, wenn das Laufwerk in den "SLOW-MODE" geschaltet wurde, damit alle Sektoren geschrieben bzw. als nicht gelesen markiert werden.
 
-__SD128B - $FF4E - 128 BYTES VOM EXBUF ZUM COMPUTER SENDEN__
+**SD128B - $FF4E - 128 BYTES VOM EXBUF ZUM COMPUTER SENDEN**
 
 Die Übertragungslänge wird auf 128 Bytes und der Buffer auf "EXBUF" gesetzt.
 
-__SD256B - $FF51 - 256 BYTES VOM EXBUF ZUM COMPUTER SENDEN__
+**SD256B - $FF51 - 256 BYTES VOM EXBUF ZUM COMPUTER SENDEN**
 
 Die Übertragungslänge wird auf 256 Bytes und der Buffer auf "EXBUF" gesetzt.
 
-__SDBTS - $FF54 - ANZAHL DER BYTES IM ACCU AUS BUFFER (X/Y-REGISTER) SENDEN__
+**SDBTS - $FF54 - ANZAHL DER BYTES IM ACCU AUS BUFFER (X/Y-REGISTER) SENDEN**
 
 Es wird jeweils 1 Byte aus dem Buffer geladen, die Checksumme heraufgezählt und über die Jump-Tabelle der Senderoutinen gesprungen, um das gelesene Byte zum Computer zu senden. Dieser Vorgang wird in einer Schleife solange wiederholt, bis der gesamte Buffer gesendet wurde. Anschließend wird die Checksumme gesendet.
 
-__SEND41 - $FF57 - QUITTUNG $41 ZUM COMPUTER SENDEN__
+**SEND41 - $FF57 - QUITTUNG $41 ZUM COMPUTER SENDEN**
 
 Der Accu wird mit dem Wert $41 ("A") geladen, und nach einer Verzögerung (damit die Quittung an den Computer nicht zu schnell kommt) wird über die Jump-Tabelle der Senderoutinen gesprungen, um die Quittung in der richtigen Übertragungsgeschwindigkeit zu senden. (A=Acknowledge)
 
-__SEND43 - $FF5A - QUITTUNG $43 ZUM COMPUTER SENDEN__
+**SEND43 - $FF5A - QUITTUNG $43 ZUM COMPUTER SENDEN**
 
 Dasselbe wie bei "SEND41"-$FF57, jedoch mit dem Quittungsbyte $43 (C=Complete).
 
-__SEND45 - $FF5D - QUITTUNG $45 ZUM COMPUTER SENDEN__
+**SEND45 - $FF5D - QUITTUNG $45 ZUM COMPUTER SENDEN**
 
 Dasselbe wie bei "SEND41"-$FF57, jedoch mit dem Quittungsbyte $45 (E=Error).
 
-__SEND4E - $FF60 - QUITTUNG $4E ZUM COMPUTER SENDEN__
+**SEND4E - $FF60 - QUITTUNG $4E ZUM COMPUTER SENDEN**
 
 Dasselbe wie bei "SEND41"-$FF57, jedoch mit dem Quittungsbyte $4E (N=Negative Acknowledge).
 
-__RDSECT - $FF63 - AKTUELLEN SEKTOR VON DER DISKETTE IN DEN VORBEZEICHNETEN RAMBEREICH EINLESEN.__
+**RDSECT - $FF63 - AKTUELLEN SEKTOR VON DER DISKETTE IN DEN VORBEZEICHNETEN RAMBEREICH EINLESEN.**
 
 Sektornummer in das Sektor-Register kopieren. "READ-SEKTOR"-Befehl an den Computer geben. "TIME-OUT"-Zeit setzen. Nun werden die Daten Byte für Byte vom Controller übernommen und in den bezeichneten Buffer (indirekt "IND") abgelegt. Sind alle Daten gelesen, wird auf den Controller gewartet, bis dieser seine Arbeit eingestellt hat, und der Status des gelesenen Sektors in das Status-Register des Controllers übergeben wurde. Sollte ein "TIME-OUT" aufgetreten sein, wird noch ein Leseversuch gestartet.
 
-__RDSEC1 - $FF66 - BEZEICHNETEN SEKTOR IN BEZEICHNETES RAM EINLESEN__
+**RDSEC1 - $FF66 - BEZEICHNETEN SEKTOR IN BEZEICHNETES RAM EINLESEN**
 
 Die gleiche Routine wie RDSECT-$FF63. Nur muß die Sektornummer bereits in das Sektor-Register des Controllers geschrieben sein.
 
-__WRSECT - $FF69 - AKTUELLEN SEKTOR VON VORBEZEICHNETER RAMADRESSE AUF DIE DISKETTE SCHREIBEN__
+**WRSECT - $FF69 - AKTUELLEN SEKTOR VON VORBEZEICHNETER RAMADRESSE AUF DIE DISKETTE SCHREIBEN**
 
 Sektornummer in das Sektor-Register kopieren. "WRITE-SECTOR"-Befehl an den Controller geben. "TIME-OUT"-Zeit setzen. Nun werden die Daten Byte für Byte an den Controller übergeben.
 
 Sind alle Daten übergeben, wird auf den Controller gewartet, bis dieser seine Arbeit eingestellt hat und der Write-Status vom Controller übernommen wird. Sollte ein "TIME-OUT" aufgetreten sein, wird überprüft, ob der Controller noch arbeitet. Wenn ja, wird noch ein Schreibversuch gestartet.
 
-__TSTWRP - $FF6F - "WRITE-PROTECT" UND LAUFWERKSKLAPPE TESTEN__
+**TSTWRP - $FF6F - "WRITE-PROTECT" UND LAUFWERKSKLAPPE TESTEN**
 
 Es wird "CONRES" aufgerufen, wo der Disk-Controller seine augenblickliche Arbeit unterbricht und der Controller-Status gelesen wird. Anschließend werden Bit 6 (WRITE-PROTECT) und Bit 7 (LAUFWERKS-KLAPPE) ausmaskiert. Ist eines der beiden Bits gesetzt, können keine Daten geschrieben werden!
 
-__VERSEC - $FF72 - AKTUELLEN SEKTOR MIT ANGEGEBENEM RAM VERGLEICHEN__
+**VERSEC - $FF72 - AKTUELLEN SEKTOR MIT ANGEGEBENEM RAM VERGLEICHEN**
 
-Sektornummer in das Sektor-Register kopieren. "READ-SEKTOR"-Befehl an den Controller geben. "TIME-OUT"-Zeit setzen. Nun werden die Daten Byte für Byte vom Controller übernommen und mit der bezeichneten Adresse (indirekt "IND") verglichen. Ist ein Wert ungleich, wird das Lesen unterbrochen, der Controller gestoppt, die Kennung für "DATEN UNGLEICH" (ACCU<>0) gesetzt und CARRY für "KEIN LESEFEHLER AUFGETRETEN" gelöscht. Stimmen alle Daten mit dem angegebenen Buffer überein, wird die Kennung für "DATEN GLEICH" (ACCU=0) und "KEIN LESEFEHLER" (CARRY=0) gesetzt. Tritt während des Vergleichens ein "TIME-OUT" auf, wird geprüft, ob der Controller noch arbeitet. Wenn ja, wird der Vergleich der Daten fortgesetzt. Ansonsten wird "CARRY" gesetzt (KENNUNG FÜR LESEFEHLER).
+Sektornummer in das Sektor-Register kopieren. "READ-SEKTOR"-Befehl an den Controller geben. "TIME-OUT"-Zeit setzen. Nun werden die Daten Byte für Byte vom Controller übernommen und mit der bezeichneten Adresse (indirekt "IND") verglichen. Ist ein Wert ungleich, wird das Lesen unterbrochen, der Controller gestoppt, die Kennung für "DATEN UNGLEICH" (ACCU\<\>0) gesetzt und CARRY für "KEIN LESEFEHLER AUFGETRETEN" gelöscht. Stimmen alle Daten mit dem angegebenen Buffer überein, wird die Kennung für "DATEN GLEICH" (ACCU=0) und "KEIN LESEFEHLER" (CARRY=0) gesetzt. Tritt während des Vergleichens ein "TIME-OUT" auf, wird geprüft, ob der Controller noch arbeitet. Wenn ja, wird der Vergleich der Daten fortgesetzt. Ansonsten wird "CARRY" gesetzt (KENNUNG FÜR LESEFEHLER).
 
-__VERSE1 - $FF75 - BEZEICHNETEN SEKTOR MIT ANGEGEBENEN RAM VERGLEICHEN__
+**VERSE1 - $FF75 - BEZEICHNETEN SEKTOR MIT ANGEGEBENEN RAM VERGLEICHEN**
 
 Die gleiche Routine wie VERSEC-$FF72. Nur muß die Sektornummer in das Sektor-Register des Controllers geschrieben sein.
 
-__STELL - $FF78 - COM-STATUS AUF ERROR UND 2 RETRIES SETZEN__
+**STELL - $FF78 - COM-STATUS AUF ERROR UND 2 RETRIES SETZEN**
 
 "RETRY" wird auf 2 Versuche und "COMST" vorsorglich auf "COMMAND-ERROR" gesetzt.
 
-__QUITT - $FF7B - QUITTUNG "C" ODER "E" ZUM COMPUTER SENDEN__
+**QUITT - $FF7B - QUITTUNG "C" ODER "E" ZUM COMPUTER SENDEN**
 
 Den Controller-Status übernehmen. Wenn "CONST" auf "COMMAND-ERROR" steht, wird die Kennung für "FEHLER BEI LETZTER LAUFWERKS-OPERATION" in "DRSTAT" gesetzt. Wenn Bit 7 und Bit 0 in "DSPCTR" gesetzt sind, wird der Controller-Status auf dem Display angezeigt, 1 "BELL" ausgegeben und die Quittung $45 ("E") zum Computer gesendet. Ist "COMMAND-STATUS" o.k., wird die Kennung für "LAUFWERKS-OPERATION IN ORDNUNG" gesetzt und die Quittung $43 ("C") zum Computer gesendet.
 
-__RDHEAD - $FF7E - DIE NÄCHSTEN HEADERDATEN EINLESEN__
+**RDHEAD - $FF7E - DIE NÄCHSTEN HEADERDATEN EINLESEN**
 
 "TIME-OUT"-Zeit setzen. "READ-HEADER"-Befehl an den Controller geben. Nun werden die 6 Bytes des nächsten auffindbaren HEADERS in einer Schleife eingelesen und ab der Adresse $7A abgelegt. In "WREADY" wird darauf gewartet, daß der Controller seine Arbeit einstellt. CARRY als Lesefehler-Flag wird zurückgesetzt.
 
-__RDHD1 - $FF81 - WIE RDHEAD, ABER TIMER NICHT SETZEN__
+**RDHD1 - $FF81 - WIE RDHEAD, ABER TIMER NICHT SETZEN**
 
 Dasselbe wie $FF7E. Nur muß "TIME-OUT" bereits gesetzt sein.
 
-__CALCTS - $FF87 - TRACK- UND SEKTORNUMMER ERRECHNEN__
+**CALCTS - $FF87 - TRACK- UND SEKTORNUMMER ERRECHNEN**
 
-Sektornummer LOW und HIGH werden zum "IND"-Pointer kopiert (für RAM/ROM-Adressen) und auf Nummer=0 oder Nummer>$7FFF geprüft. Ist das der Fall, wird in "DUMKEN" noch der SLOW-Status getestet. Andernfalls wird die Sektornummer in IND/IND+1 solange um die Anzahl der Sektoren pro Track herabgezählt, bis sie die Nummer 0 unterschreitet. Als Ergebnis hat man die gewünschte Track- und Sektornummer. Die Tracknummer wird noch mit dem Wert 40 verglichen (Tracknummer >39). Das CARRY-Flag wird durch den Vergleich entsprechend gesetzt. Nach der Rückkehr aus dieser Routine stehen die Prozessor-Status-Flags wie folgt:
+Sektornummer LOW und HIGH werden zum "IND"-Pointer kopiert (für RAM/ROM-Adressen) und auf Nummer=0 oder Nummer\>$7FFF geprüft. Ist das der Fall, wird in "DUMKEN" noch der SLOW-Status getestet. Andernfalls wird die Sektornummer in IND/IND+1 solange um die Anzahl der Sektoren pro Track herabgezählt, bis sie die Nummer 0 unterschreitet. Als Ergebnis hat man die gewünschte Track- und Sektornummer. Die Tracknummer wird noch mit dem Wert 40 verglichen (Tracknummer \>39). Das CARRY-Flag wird durch den Vergleich entsprechend gesetzt. Nach der Rückkehr aus dieser Routine stehen die Prozessor-Status-Flags wie folgt:
 
 ```
 C=1 SEKTORNUMMER UNZULÄSSIG
@@ -518,63 +521,63 @@ von Reinhard Wilde
 
 ### Die Einsprungadressen, Fortsetzung
 
-__SETBUF - $FF8A - BUFFER NACH AKTUELLEM SEKTOR SETZEN__
+**SETBUF - $FF8A - BUFFER NACH AKTUELLEM SEKTOR SETZEN**
 
 Je nach Sektorlänge wird die Sektornummer durch 2 geteilt (oder nicht) und zur Anfangsadresse des Datenbuffers hinzu addiert. Die Bufferadresse befindet sich dann in IND/IND+1.
 
-__SETBU2 - $FF8D - BUFFER NACH SEKTORNUMMER IM ACCU SETZEN__
+**SETBU2 - $FF8D - BUFFER NACH SEKTORNUMMER IM ACCU SETZEN**
 
 Entspricht der Routine "SETBUF"-$FF8A, jedoch muß die Sektornummer (1..26) bereits im ACCU stehen.
 
-__SEXBUF - $FF90 - ADRESSE DES EXTENDED BUFFERS SETZEN__
+**SEXBUF - $FF90 - ADRESSE DES EXTENDED BUFFERS SETZEN**
 
 Die Adresse von "EXBUF" wird nach IND/IND+1 geladen.
 
-__SETRWL - $FF93 - ANZAHL DER BYTES FÜR DEN ZU ÜBERTRAGENDEN DATENBLOCK SETZEN__
+**SETRWL - $FF93 - ANZAHL DER BYTES FÜR DEN ZU ÜBERTRAGENDEN DATENBLOCK SETZEN**
 
 Bei Sektornummern von 1 bis 3 wird die Übertragungslänge auf 128 Bytes, ansonsten auf den Wert von "SECLEN" gesetzt. Die Anzahl der Datenblöcke wird auf 1 gesetzt.
 
-__COPSLT - $FF96 - SEKTORLISTE FÜR AKTUELLE DENSITY IN ZEROPAGE KOPIEREN__
+**COPSLT - $FF96 - SEKTORLISTE FÜR AKTUELLE DENSITY IN ZEROPAGE KOPIEREN**
 
 In "SDRDDP" werden die Werte für die aktuelle DENSITY richtig gesetzt und die DENSITY auf dem Display angezeigt. Anschließend wird, je nach Wert in "FORKEN" (DENSITY-Kennung), die entsprechende Sektorliste für SINGLE- oder DOUBLE-DENSITY nach "SECLST" ($20) kopiert.
 
-__BELL1 - $FF99 - 1 MAL BELL ÜBER DEN SUMMER AUSGEBEN__
+**BELL1 - $FF99 - 1 MAL BELL ÜBER DEN SUMMER AUSGEBEN**
 
 Der Summer wird mittels einer Verzögerungsschleife mit einer bestimmten Frequenz angesteuert.
 
-__CLRDSP - $FF9C - DISPLAY ABSCHALTEN__
+**CLRDSP - $FF9C - DISPLAY ABSCHALTEN**
 
 In die Display-Speicherstellen $4000, $4001 und $4002 werden Nullen geschrieben. Die Speicherstellen sollten nur im Schreibzugriff (z.B. STA $4000) angesprochen werden, da sonst auf dem Display unkontrollierte Zeichen erscheinen.
 
-__TRAANZ - $FF9F - AKTUELLE TRACKNUMMER ANZEIGEN__
+**TRAANZ - $FF9F - AKTUELLE TRACKNUMMER ANZEIGEN**
 
 Der ACCU wird mit dem Wert von "TRACK" geladen, und es wird, je nach Wert in "DSPCTR" zur Dezimal- oder Hexadezimal-Ausgaberoutine gesprungen.
 
-__DEZOUT - $FFA2 - WERT IM ACCU WIRD IN DEZIMALER FORM ANGEZEIGT__
+**DEZOUT - $FFA2 - WERT IM ACCU WIRD IN DEZIMALER FORM ANGEZEIGT**
 
 Der Wert im ACCU wird in einer Schleife um 10 heruntergezählt, bis er den Wert 0 unterschreitet. Der Schleifenzähler entspricht dann dem Wert für das 10er-Stellen-Display und die Restsumme dem Wert für das 1er-Stellen-Display. Die Werte für die richtige Segmentsteuerung werden einer Konstantentabelle (SEGTBL) entnommen.
 
-__HEXOUT - $FFA5 - WERT IM ACCU WIRD IN HEXADEZIMALER FORM ANGEZEIGT__
+**HEXOUT - $FFA5 - WERT IM ACCU WIRD IN HEXADEZIMALER FORM ANGEZEIGT**
 
 Zuerst werden die unteren 4 Bits des Wertes im ACCU ausmaskiert, die dem Wert für das rechte Display entsprechen, dann die oberen 4 Bits.
 
-__DENDSP - $FFA8 - AKTUELLE DENSITY AUF DEM DISPLAY ANZEIGEN__
+**DENDSP - $FFA8 - AKTUELLE DENSITY AUF DEM DISPLAY ANZEIGEN**
 
 Je nach Wert in "FORKEN" (DENSITY-Kennung) werden die entsprechenden Segmente des Displays angesteuert.
 
-__SETTIM - $FFAB - TIMER MIT DEM WERT IM ACCU SETZEN__
+**SETTIM - $FFAB - TIMER MIT DEM WERT IM ACCU SETZEN**
 
 Timer-Interrupt-Flag wird gelöscht und der Timer mit dem Wert im ACCU gestartet.
 
-__CRLTRA - $FFAE - EINEN TRACK REFORMATIEREN__
+**CRLTRA - $FFAE - EINEN TRACK REFORMATIEREN**
 
 In "FSTART" wird das "WRITE-TRACK"-Kommando gestartet und der Timer gesetzt. Nun wird der Track mit dem Wert $00 beschrieben, bis der Timer abgelaufen ist. Es wird der Track "gelöscht", auf dem sich der Schreib-/Lesekopf befindet.
 
-__CLRDSK - $FFB1 - GANZE DISKETTE REFORMATIEREN__
+**CLRDSK - $FFB1 - GANZE DISKETTE REFORMATIEREN**
 
 Hier werden alle Tracks nacheinander, beginnend bei Track 39 (39..0) gelöscht. Der Schreib-/Lesekopf wird jeweils positioniert und "CLRTRA" aufgerufen.
 
-__RAMTST - $FFB4 - TEST DES LAUFWERKINTERNEN RAMS__
+**RAMTST - $FFB4 - TEST DES LAUFWERKINTERNEN RAMS**
 
 Im ersten Teil wird die Zero-Page getestet. Der Wert der Speicherstelle, die getestet wird, wird jeweils in EXBUF+1 zwischengespeichert. Zuerst wird die Zero-Page mit dem Wert $55 getestet, das heißt, der Wert $55 wird in jede Speicherstelle geschrieben und wieder gelesen.
 
@@ -582,48 +585,47 @@ Ist der Wert gleich geblieben, ist die Speicherstelle in Ordnung. Anschließend 
 
 Ist kein RAM-Fehler festgestellt worden, steht in $90/$91 die höchste RAM-Adresse. Nach Abschluß der RAM-Testroutine wird die Adresse, die in $90/$91 steht, zum Computer gesendet.
 
-__ROMTST - $FFB7 - ROM-TEST__
+**ROMTST - $FFB7 - ROM-TEST**
 
 Vorsorglich wird Command-Status auf ERROR gesetzt. In IND/IND+1 wird die Adresse $E000 gesetzt. Anschließend wird für eine Page die Checksumme errechnet und mit den Originalwerten in einer Tabelle verglichen. Ist die Checksumme gleich, wird die High-ROM-Adresse in $91 um 1 heraufgezählt und die nächste ROM-Page getestet. Insgesamt werden 32 ROM-Pages ($E000 bis $FFFF) getestet. Stimmen alle Checksummen mit denen der "ROMCHK"-Tabelle überein, wird der Command-Status zurückgesetzt und die Quittung ("C") zum Computer gesendet. Ist ein Fehler gefunden worden, wird der Command-Status nicht zurückgesetzt und die Quittung ("E") zum Computer gesendet.
 
-__SPEEDT - $FFBA - MOTOR-SPEED-TEST__
+**SPEEDT - $FFBA - MOTOR-SPEED-TEST**
 
 Vorsorglich Command-ERROR setzen und Schreib-/Lesekopf auf Track 0 positionieren. In "FDSEC1" wird Sektor 1 zweimal direkt hintereinander gelesen und die Zeit über Taktzyklen gemessen. Dann wird in einer Schleife die gemessene Zeit von der Konstanten $C0E1E4 solange abgezählt, bis der Wert 0 unterschritten wird. Die nachfolgende Nachkomma-Stellenrundung wird mit dem Rest der vorhergehenden Rechnung vorgenommen, indem die gemessene Zeit durch 2 geteilt und vom Rest der vorhergehenden Rechnung abgezogen wird. Ist das CARRY-Flag dann gesetzt, wird die Nachkommastelle um 1 erhöht. Der aus 2 Daten bestehende Speed-Wert wird zum Computer gesendet. Der hexadezimale Wert $2875 bedeutet dabei 287,5 UPM.
 
 ### Erweiterte JMP-Tabelle ab Speedy V1.4
 
-__TSTDEN - $FFBD - FORMAT DER DISKETTE FESTSTELLEN__
+**TSTDEN - $FFBD - FORMAT DER DISKETTE FESTSTELLEN**
 
 Der Schreib-/Lesekopf wird auf Track 0 positioniert und das Laufwerk im MFM-Mode gesetzt. Anschließend wird mit "RDHEAD" getestet ob sich ein Header lesen läßt. Gelingt das, wird die Routine verlassen (N-Flag=0 für Test ok.). Ansonsten wird nochmal im FM-Mode (Single-Density) versucht ein Header zu lesen. Mißlingt auch dies, wird der gesamte Vorgang noch auf den Tracks 1 bis 3 durchgeführt. Sollten auch danach noch keine Header gefunden worden sein, steht das Laufwerk in Single-Density und die Routine wird mit gesetztem N-Flag (Fehler-Flag) verlassen. Falls vorhanden, wird der Summer kurz mit einem Ton angesteuert und auf dem Display erscheint "nF" für nicht formatiert.
 
-__FSTART - $FFC0 - "WRITE-TRACK" KOMMANDO STARTEN__
+**FSTART - $FFC0 - "WRITE-TRACK" KOMMANDO STARTEN**
 
 Der Schreib-/Lesekopf wird auf dem Track positioniert, der in "TRACK" festgelegt ist. Danach wird der "WRITE-TRACK"-Befehl gestartet und der Time-Out für eine Diskettenumdrehung festgelegt. Ein gesetztes Carry-Flag nach Abarbeitung dieser Routine bedeutet, daß ein Fehler aufgetreten ist.
 
-__FORMTR - $FFC3 - AKTUELLEN TRACK FORMATIEREN__
+**FORMTR - $FFC3 - AKTUELLEN TRACK FORMATIEREN**
 
 "FSTART" wird aufgerufen und anschließend der aktuelle Track in dem Format formatiert, das in "FORKEN" festgelegt ist. ACHTUNG: der Schreib-/Lesekopf muß bereits auf dem Track positioniert sein, der formatiert werden soll. Fehlerflag ist das gesetzte Carry-Flag.
 
-__FORDSK - $FFC6 - DISKETTE FORMATIEREN__
+**FORDSK - $FFC6 - DISKETTE FORMATIEREN**
 
 Die Diskette wird in dem Format formatiert, das in "FORKEN2" festgelegt ist. Die Tracks werden beginnend mit Track 39 bis herunter auf Track 0 formatiert. Fehlerflag ist das gesetzte Bit 6 in COMST (Speicherstelle $11).
 
-__WRBOOT - $FFC9 - BOOTSEKTOREN UND VTOC-SEKTOR(EN) SCHREIBEN__
+**WRBOOT - $FFC9 - BOOTSEKTOREN UND VTOC-SEKTOR(EN) SCHREIBEN**
 
 Es werden zunächst die Sektoren 1 bis 3 mit einem Bootprogramm beschrieben, in dem gemeldet wird, daß die Diskette mit der Speedy formatiert wurde. Je nach Format der Diskette wird der/die VTOC-Sektor(en) $168 ($400) beschrieben.
 
-__DISPL - $FFCC - WERT IN X/Y-REGISTER AUF DEM DISPLAY ZEIGEN__
+**DISPL - $FFCC - WERT IN X/Y-REGISTER AUF DEM DISPLAY ZEIGEN**
 
 Die Werte, die sich bei Aufruf dieser Routine in den Registern X und Y befinden, werden auf dem Display (falls vorhanden) angezeigt.
 
-__SENDEN - $FFCF - DATEN ZUM COMPUTER SENDEN__
+**SENDEN - $FFCF - DATEN ZUM COMPUTER SENDEN**
 
 Parameterübergabe: Länge des zu übertragenden Datenblocks in den Registern X und Y. In den Speicherstellen IND/IND+1 ($19/$1A) muß die Bufferadresse stehen. Die Checksumme des Datenblocks wird nicht gesendet. Dies hat den Zweck, das mehrere Datenblöcke direkt nacheinander ohne Unterbrechung gesendet werden können. Die Checksumme muß man extra senden lassen. Das Checksummenbyte steht in der Speicherstelle CHKSUM ($1B).
 
-__INSTALL - $FFD2 - INSTALLIEREN EINES NEUEN KOMMANDOS__
+**INSTALL - $FFD2 - INSTALLIEREN EINES NEUEN KOMMANDOS**
 
 Hiermit wird man in Zukunft neue Befehle in der Kommandotabelle installieren oder bereits existierende Kommandos wieder löschen können. Diese Routine entspricht der, die aufgerufen wird, wenn vom Computer der Befehl $41 gegeben wird. Nur können dann die Kommandos auch von Programmen innerhalb der Speedy ein- und ausgetragen werden.
-
 
 Das war nun die vollständige Beschreibung aller Einsprungadressen. Einige Erklärungen beziehen sich auf Zeropage-Adressen, deren Bedeutung bereits in Teil 4 beschrieben wurde.
 
@@ -644,6 +646,7 @@ KOMMANDO ist der Wert, der sich vor Aufruf der SIO - Routine ($E459) in der Spei
 AUX1 und AUX2 entsprechen den Werten, die sich in den Speicherstellen $030A und $030B befinden. Bei einigen Befehlen werden AUX1 und AUX2 nicht benutzt und dürfen beliebige Werte annehmen.
 
 Die Befehle sind im übrigen nicht nach den Hexadezimalnummern geordnet, sondern nach ihrer Funktion:
+
 ```
 KOMMANDO:	$52
 FUNKTION:	Sektoren lesen

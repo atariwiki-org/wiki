@@ -9,6 +9,7 @@ Published: 	ANTIC Power Computing, September 1985
 ---
 
 ## 92 chess solutions in 40 seconds
+
 Program by Dave Oblad
 
 ''Lightning fast ACTION! solution to "The Eight Queens Problem" from the April, 1985 Antic. Requires the ACTION! programming language cassette from Optimized Systems Software. Works on all 8-bit Atari computers of any memory size, with disk or cassette. Disk subscribers: You can use this program without ACTION! Select the "L" option from DOS 2 for the file, QUEEN EXE.''
@@ -163,6 +164,8 @@ DO
 OD
 RETURN
 ```
+
 ---
-PDF: [8queensaction.PDF](attachments/8queensaction.PDF) 
-DJVU: [8queensaction.djvu](attachments/8queensaction.djvu) 
+
+PDF: [8queensaction.PDF](attachments/8queensaction.PDF)
+DJVU: [8queensaction.djvu](attachments/8queensaction.djvu)

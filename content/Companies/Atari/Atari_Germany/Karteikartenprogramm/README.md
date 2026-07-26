@@ -3,14 +3,17 @@
 Copyright (C) 1982 Atari, Inc.
 
 ## ATR-Image
+
 - [Karteikartenprogramm.atr](attachments/Karteikartenprogramm.atr)
 
 ## Handbuch
-- [ATARI_Karteikarten_DXG_415.pdf](../../../../../media/Companies/Atari/Atari_Germany/Karteikartenprogramm/attachments/ATARI_Karteikarten_DXG_415.pdf) ; Größe: 9,3 MB ; deutsches Handbuch mit roten Seiten
+
+- [ATARI\_Karteikarten\_DXG\_415.pdf](../../../../../media/Companies/Atari/Atari_Germany/Karteikartenprogramm/attachments/ATARI_Karteikarten_DXG_415.pdf) ; Größe: 9,3 MB ; deutsches Handbuch mit roten Seiten
 
 ## Bilder
+
 - Karteikartenprogramm - Startbildschirm<br>
-![](attachments/Karteikartenprogramm.jpg)
+  ![](attachments/Karteikartenprogramm.jpg)
 
 ![](attachments/Cover.jpg)<br>
 Karteikartenprogramm - Box Cover - Danke an Atarimania

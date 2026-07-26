@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Health Services Career](https://archive.org/details/DorsettAtariHealthServicesCareer)
 
 This is an archive of the "Health Services Career" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -19,11 +20,11 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Health Services Career
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
-__(X) This lesson is not included - the cassette that we have was blank (probably accidentally erased sometime after it was duplicated.)__
+**(X) This lesson is not included - the cassette that we have was blank (probably accidentally erased sometime after it was duplicated.)**
 
 Tracks:
 
@@ -62,7 +63,9 @@ Tracks (size in sum: 1.26 GB):
 - [hc14](http://data.atariwiki.org/FLAC/Health_Services_Career/hc14.flac)
 - [hc15](http://data.atariwiki.org/FLAC/Health_Services_Career/hc15.flac)
 - [hc16](http://data.atariwiki.org/FLAC/Health_Services_Career/hc16.flac)
+
 ## Images
+
 ![](attachments/hcA_.jpg)
 Dorsett Atari Health Services Career - cassettes with uneven numbers
 

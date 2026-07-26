@@ -1,5 +1,7 @@
 # Differences between Atari BASIC Dialects
+
 # Vergleich der Verschiedenen Basic Dialekte:
+
 %%tabbedSection
 %%tab-English
 Even the name of the command is the same, the syntax used in different basic dialects is different. The table below shows the different commands available in the Basic dialects.
@@ -8,39 +10,41 @@ Even the name of the command is the same, the syntax used in different basic dia
 Trotz gleichlautendem Befehl, kann die Syntax der einzelnen Dialekte abweichen!
 /%
 /%
-### Eigenschaften
-|                        || ATARI-Basic|| Turbo-Basic 1.5|| BASIC A+ || BASIC-XL || BASIC-XE|| MS-BASIC
-|__Year                __ | 1979        | 1985            | 1983      | 1984      | 1985     | 1981
-|__Size                __ | 8k          |                 | 16k       | 16k       | 27k      |
-|__Size in RAM         __ | 8k          |                 | 15k       | 8k        | 8k       |
-|__Compiler            __ |             | x               | -         | -         | -        | -
-|__Runtime             __ |             | x               | -         | x         | -        | -
-|__Unlimited Strings   __ | x           | x               |           |           |          |
-|__String Array        __ |             |                 |           |           | x        | x
-|__Number of Variables __ | 128         |                 |           |           | 128      |
-|__Parameter passing   __ | -           | -               |           |           | x        |
-|__Local variables     __ | -           | -               |           |           | x        |
-|__Lowercase characters__ | -           | x               | x         | x         | x        |
-|__Reverse characters  __ | -           | x               | x         | x         | x        |
 
+### Eigenschaften
+
+|                        || ATARI-Basic|| Turbo-Basic 1.5|| BASIC A+ || BASIC-XL || BASIC-XE|| MS-BASIC
+|\_\_Year                \_\_ | 1979        | 1985            | 1983      | 1984      | 1985     | 1981
+|\_\_Size                \_\_ | 8k          |                 | 16k       | 16k       | 27k      |
+|\_\_Size in RAM         \_\_ | 8k          |                 | 15k       | 8k        | 8k       |
+|\_\_Compiler            \_\_ |             | x               | -         | -         | -        | -
+|\_\_Runtime             \_\_ |             | x               | -         | x         | -        | -
+|\_\_Unlimited Strings   \_\_ | x           | x               |           |           |          |
+|\_\_String Array        \_\_ |             |                 |           |           | x        | x
+|\_\_Number of Variables \_\_ | 128         |                 |           |           | 128      |
+|\_\_Parameter passing   \_\_ | -           | -               |           |           | x        |
+|\_\_Local variables     \_\_ | -           | -               |           |           | x        |
+|**Lowercase characters** | -           | x               | x         | x         | x        |
+|\_\_Reverse characters  \_\_ | -           | x               | x         | x         | x        |
 
 ### Befehlsübersicht
+
 || ATARI-Basic|| Turbo-Basic 1.5|| BASIC A+|| BASIC-XL|| BASIC-XE|| MS-BASIC
 | -| -| | | |
 | | !| | | |
 | | %GET| | | |
 | | %PUT| | | |
-| &| &| &| &| &| &
-| *| *| *| *| *| *
+| \&| \&| \&| \&| \&| \&
+| \*| \*| \*| \*| \*| \*
 | .| .| .| .| .| .
 | /| /| /| /| /| /
 | :| :| :| :| :| :
-| -| -| &| &| &| &
+| -| -| \&| \&| \&| \&
 | ^| ^| ^| ^| ^| ^
 | +| +| +| +| +| +
-| <| <| <| <| <| <
+| \<| \<| \<| \<| \<| \<
 | =| =| =| =| =| =
-| >| >| >| >| >| >
+| \>| \>| \>| \>| \>| \>
 | ABS| ABS| ABS| ABS| ABS| ABS
 | ADR| ADR| ADR| ADR| ADR|
 | | | | | | AFTER

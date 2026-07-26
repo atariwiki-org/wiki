@@ -6,7 +6,6 @@
 
 ### Author: Matthias Reichl
 
-
 # General information
 
 The!Cart is equipped with 128MB flash (Spansion S29GL01 chip), 512k
@@ -32,25 +31,29 @@ various sub-modes.
 The secondary bank register is only used in "flexi mode".
 
 - $D5A0: primary bank register low byte (0-255, default: 0)
+
 - $D5A1: primary bank register high byte (0-63, default: 0)
+
 - $D5A2: primary bank enable (1=enable, 0=disable, default: 1)
 
 - $D5A3: secondary bank register low byte (0-255, default: 0)
+
 - $D5A4: secondary bank register high byte (0-63, default: 0)
+
 - $D5A5: secondary bank enable (1=enable, 0=disable, default: 0)
 
 - $D5A6: cart mode select (see section on cartridge modes, default: 1 / 8k)
 
 - $D5A7: flash/ram selection and write enable control (0-15, default: 0)
-** bit 0: primary bank write enable (0 = write protect, 1 = write enable)
-** bit 1: primary bank source (0 = flash, 1 = RAM)
-** bit 2: secondary bank write enable (0 = write protect, 1 = write enable)
-** bit 3: secondary bank source (0 = flash, 1 = RAM)
+  \*\* bit 0: primary bank write enable (0 = write protect, 1 = write enable)
+  \*\* bit 1: primary bank source (0 = flash, 1 = RAM)
+  \*\* bit 2: secondary bank write enable (0 = write protect, 1 = write enable)
+  \*\* bit 3: secondary bank source (0 = flash, 1 = RAM)
 
 - $D5A8: SPI interface to EEPROM
-** bit 0: SPI CLK
-** bit 1: SPI CS
-** bit 7: SPI data in (on reads), SPI data out (on writes)
+  \*\* bit 0: SPI CLK
+  \*\* bit 1: SPI CS
+  \*\* bit 7: SPI data in (on reads), SPI data out (on writes)
 
 # Supported cartridge modes
 
@@ -141,7 +144,6 @@ have to start at an 1MB boundary, i.e.  8k bank 128, 256, 384, ...)
 Emulated registers of switchable carts also modify the bank enable
 register.
 
-
 For example: Accessing $D567 in AtariMax mode sets the 7 low-order
 bits of the primary bank register to $67 and the primary bank enable
 register to $01. Accessing $D580 in AtariMax mode sets the primary
@@ -149,5 +151,3 @@ bank enable register to $00.
 
 Note: in native (8k and flexi) mode, accessing the bank register does
 not affect the enable register.
-
-

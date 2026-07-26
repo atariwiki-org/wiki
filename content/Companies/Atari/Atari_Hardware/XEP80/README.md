@@ -1,20 +1,24 @@
 # Atari XEP80
 
 ## Manual
-- [Atari_XEP80_Interface_Module_Owners_Manual.pdf](attachments/Atari_XEP80_Interface_Module_Owners_Manual.pdf) ; size: 2 MB ; Original Atari XEP80 Manual (C) 1987 Atari
+
+- [Atari\_XEP80\_Interface\_Module\_Owners\_Manual.pdf](attachments/Atari_XEP80_Interface_Module_Owners_Manual.pdf) ; size: 2 MB ; Original Atari XEP80 Manual (C) 1987 Atari
 
 ## ATR-Image
-- [XEP80_Boot_Disk-DX5087.atr](attachments/XEP80_Boot_Disk-DX5087.atr) ; Original Atari XEP80 Boot Disk DX5087 for NTSC systems (C) 1987 Atari
-- [XEP80_Boot_Disk-DX5087-PAL.atr](attachments/XEP80_Boot_Disk-DX5087-PAL.atr) ; patched driver for PAL systems
+
+- [XEP80\_Boot\_Disk-DX5087.atr](attachments/XEP80_Boot_Disk-DX5087.atr) ; Original Atari XEP80 Boot Disk DX5087 for NTSC systems (C) 1987 Atari
+- [XEP80\_Boot\_Disk-DX5087-PAL.atr](attachments/XEP80_Boot_Disk-DX5087-PAL.atr) ; patched driver for PAL systems
 - [Altirra-Additions.atr](attachments/Altirra-Additions.atr) ; alternate XEP80 driver from the Altirra Additions Diskette ; faster than the original one from Atari!
 
 ## Drivers
+
 - [xep80han.arc](attachments/xep80han.arc) ; XEP80 handler - .com-file
 - [xep80bxe.arc](attachments/xep80bxe.arc) ; XEP80 driver to work with OSS BASIC XE
-- [xep80-new_stuff.zip](attachments/xep80-new_stuff.zip) ; archive with 3 atr-images containing XEP80 specific stuff
+- [xep80-new\_stuff.zip](attachments/xep80-new_stuff.zip) ; archive with 3 atr-images containing XEP80 specific stuff
 - [ALTXEP80.SYS](attachments/ALTXEP80.SYS) ; alternate XEP80 driver from the Altirra Additions Diskette ; faster than the original one from Atari!
 
 ## Images
+
 ![](attachments/XEP80-Label.jpg)
 Original Atari XEP80 Boot Disk DX5087 Label (C) 1987 Atari
 
@@ -110,6 +114,7 @@ Sure, I say, one takes the XIO command that sets the XEP 80 to the 50 Hz standar
 And, BobTerm loads and initializes the driver. - Think, Think, Think -  The driver contains the subroutine for sending data to the XEP.  That's the part we talked about in the previous article (Mathy: ABBUC magazine 38).  Here is the address data for the driver: memory from $4000 to $422E and RUN $4001.  Ah yes, this should work.  At the end of the files, before the RUN address, I append a small routine and redirect the RUN address to it.
 
 This is what that looks like:
+
 ```
 $422F   SEC           ; A command is send
 $4230   LDA #$D7      ; the number $D7 sets the XEP to 50 Hz in textmode
@@ -145,7 +150,6 @@ The day before yesterday was the day that I decided to show off my newly gained 
 
 For $40E0 on, we have 13 bytes, with which the XEP is initialized:
 
-
 || value || function ||
 | $D9 |    Cursor always on |
 | $D4 |    Use ATASCII characterset |
@@ -153,7 +157,7 @@ For $40E0 on, we have 13 bytes, with which the XEP is initialized:
 | $D3 |    Burst mode, no cursor data is send back |
 | $60 |    Left Margin 0 low nibble |
 | $70 |    Left Margin 0 Hi nibble |
-| $AF |    Right Margin low nibble 15 + 4*16 Hi nibble = 79 |
+| $AF |    Right Margin low nibble 15 + 4\*16 Hi nibble = 79 |
 | $B4 |    Right Margin hi nibble |
 | $00 |    Horizontal cursor position = 0 |
 | $80 |    vertical cursor position = 0 |
@@ -161,13 +165,11 @@ For $40E0 on, we have 13 bytes, with which the XEP is initialized:
 | $C5 |    Fill RAM with SPACE-characters |
 | $DC |    Set Scroll window to X-cursor position |
 
-
 Since all this trail and error stuff started to annoy me, I "just for a minute" reassembled the driver, so I now  a fairly readable file to work with.  This means I'm gonna write more articles about the XEP 80. Since I was able to delve up more information about the XEP 80, I can already tell you:  the 19200 baud are in reachable distance and I seem to be on a hot trail with my suspiciouns about the 6551 SIO chip from the first article (I think).
 
 ## DEEPER DUNGEONS
 
 The videocontroller inside the XEP 80 is a 48 pin chip.  It's data bus is 16 bits wide on the video side.  This way, two RAMs could be read simultaniously, one containing the text that should be displayed and another containing the text attributes.  There are eight possible attributes:
-
 
 || attribute || display ||
 | Inverse   | A character plus it's surrounding area is display "Inverse" |
@@ -178,7 +180,6 @@ The videocontroller inside the XEP 80 is a 48 pin chip.  It's data bus is 16 bit
 | Underlined    | An apparently freely defined character is mixed in. This can be the "underline" character or an "overline" or "strait through the middle" character or whatever you want |
 | Hidden        |  The text is not displayed at all.  This attribute should also be set when using a double height character, so the controller knows that this is the bottom halve of the double height haracter. |
 | Graphics      | Since this is an attribute, text and blockgraphics can be mixed at will.  Except double height, all other attributes can be used at the same time |
-
 
 And then there is the Graphics mode of the XEP 80.  Just like the subject of block graphics, it's a very broad subject and will not be
 discussed here.
@@ -1104,6 +1105,7 @@ Greetings, your FloppyDoc
 ```
 
 ## BASIC Relocator
+
 ```
 10 REM RELOCATING PROGRAM FOR XEP80
 20 REM TO USE THIS PROGRAM THE FOLLOWING CRITERIA MUST BE MET:
@@ -1188,6 +1190,7 @@ Greetings, your FloppyDoc
 ```
 
 # Diagrams
+
 ![](attachments/Atari_XEP80_diagram1.jpg)
 Atari XEP80 diagram 1 ; thank you so much Jerzy Sobola for your help! Greatly appreciated!
 
@@ -1195,12 +1198,14 @@ Atari XEP80 diagram 1 ; thank you so much Jerzy Sobola for your help! Greatly ap
 Atari XEP80 diagram 2
 
 # References
+
 - [The XEP 80 - part one from Mathy's collection of special stuff](http://www.mathyvannisselroy.nl/xep_1.htm) ; thank you so much Mathy and Floppydoc! Your help is greatly appreciated. :-)
 - [The XEP 80 - part two from Mathy's collection of special stuff](http://www.mathyvannisselroy.nl/xep_2.htm) ; thank you so much Mathy and Floppydoc! Your help is greatly appreciated. :-)
 
 # XEP 80 Demos in Basic
 
 ## Attributes Example
+
 ```
 100 REM ATTRIBUTES EXAMPLE
 110 REM TO SET ATTRIBUTES USE FOLLOWING DEFINITIONS TO FORM COMMAND
@@ -1256,6 +1261,7 @@ Atari XEP80 diagram 2
 ```
 
 ## Scrolling Window Example
+
 ```
 100 REM SCROLLING WINDOW EXAMPLE
 105 REM SCROLL LEFT AND RIGHT WITH JOYSTICK, WHEN FINISHED PRESS TRIGGER
@@ -1283,6 +1289,7 @@ Atari XEP80 diagram 2
 ```
 
 ## Graphics Example (Circle)
+
 ```
 0 GOTO 100:REM KEEP TIME DEPENDENT CODE NEAR BEGINNING
 10 FOR M=0 TO 12:V=0:S=128:FOR N=0 TO 7:X=P+N:REM LOOPS FOR CIRCLE LIMITS
@@ -1306,6 +1313,7 @@ Atari XEP80 diagram 2
 ```
 
 ## Printer Configuration Program
+
 ```
 100 REM PRINTER CONFIGURATION PROGRAM
 110 DIM A$(2048),IN$(16),OUT$(16):REM ALLOCATE STRINGS

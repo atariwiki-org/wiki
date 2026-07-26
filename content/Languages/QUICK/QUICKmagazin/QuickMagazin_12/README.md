@@ -1,6 +1,7 @@
 # Quick Magazin 12
 
 ### Articles
+
 - Impressum/Anleitung
 - QUICK Version 2.1 Update
 - Multitasking zum Zweiten
@@ -10,8 +11,10 @@
 - Leserbrief
 
 ### Sources
+
 - update
 - Multidemo
 
 ### Disk
+
 - [QMAG12.ATR](attachments/QMAG12.ATR)

@@ -1,6 +1,6 @@
 # BIBO-Assembler
 
-Copyright (C) 1986 E. Reuss & Compy-Shop
+Copyright (C) 1986 E. Reuss \& Compy-Shop
 
 ## Disks
 
@@ -8,16 +8,16 @@ Copyright (C) 1986 E. Reuss & Compy-Shop
 - [biboasm1.atr](attachments/biboasm1.atr)
 - [biboasm2.atr](attachments/biboasm2.atr)
 - [biboasm3.atr](attachments/biboasm3.atr)
-- [biboass_build003.atr](attachments/biboass_build003.atr)
+- [biboass\_build003.atr](attachments/biboass_build003.atr)
 
 ## Source
 
-- [bibo_src.zip](attachments/bibo_src.zip)
+- [bibo\_src.zip](attachments/bibo_src.zip)
 
 ## Handbook
+
 - [BiboAssembler Handbuch (German)](attachments/biboass.pdf)
 - [BiboAssembler Handbuch (German, HTML)](https://hintermueller.de/biboassembler.html)
-
 
 The BiboAssembler is a fast and compact Assembler for the Atari 8-Bit. The Assembler is available as File- and as Module-Version (Cartridge). The File-Version includes also a small Machine-Language Monitor.
 
@@ -36,6 +36,7 @@ BiboAssembler can be load as a binary file from any DOS System. Make sure that B
 ### The Editor
 
 The BiboAssembler Editor is a line Editor with Line-Number, similar to Atari Basic. It can be used like the Atari Basic Editor. Inverse Characters cannot be used except when eclosed in double-quotes. The ASCII Character with Value Zero (the heart in the ATASCI Font) cannot be used. If you need to specify this Char you have to write
+
 ```
 ! Auto Numbering
 
@@ -133,9 +134,11 @@ biboass_build002.atr freshly build from source and installed on XDOS 2.42N. Runs
 ```
 
 ## Manual
+
 - [BIBO Assembler manual](attachments/BIBO_Assembler.pdf) ; size: 296 KB ; BIBO-ASSEMBLER HANDBUCH
 
 ## Accessories
+
 - [Print Char Routine with ATARI OS](../../../Print_Char_Routine_with_ATARI_OS/README.md)
 - [Print inline assembled text](../../../Print_inline_assembled_text/README.md)
 - [Print Decimal, Hex and Binary routines](../../../Print_Decimal_Hex_and_Binary/README.md) (INTOUT.INC)
@@ -163,4 +166,3 @@ biboass_build002.atr freshly build from source and installed on XDOS 2.42N. Runs
 - [ST Mouse Driver for BASIC](../../../Languages/BASIC/Atari_BASIC/Examples/ST_Mouse_Driver_for_Basic/README.md)
 - [Sweet 16 for Bibo Assembler](../../../Sweet_16/Sweet16Bibo/README.md) Sweet 16 - a virtual 16bit machine for the 8bit ATARI
 - [Simple Blitter Routine](../../../Languages/BASIC/Turbo-BASIC_XL/Examples/Simple_Blitter/README.md)
-

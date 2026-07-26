@@ -1,5 +1,7 @@
 # Dorsett Atari Mathematics (Geometry) MG ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
+
 ## Source from archive.org
+
 - [Dorsett Atari Mathematics (Geometry) MG](https://archive.org/details/DorsettAtariMathematicsGeometry)
 
 This is an archive of the "Geometry" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -14,7 +16,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Mathematics (Geometry)
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -39,23 +41,25 @@ mg16	Volume of Cylinders and Prisms
 
 Tracks (size in sum: 765.4 MB):
 
-- [mg1](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg1.flac)
-- [mg2](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg2.flac)
-- [mg3](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg3.flac)
-- [mg4](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg4.flac)
-- [mg5](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg5.flac)
-- [mg6](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg6.flac)
-- [mg7](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg7.flac)
-- [mg8](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg8.flac)
-- [mg9](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg9.flac)
-- [mg10](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg10.flac)
-- [mg11](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg11.flac)
-- [mg12](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg12.flac)
-- [mg13](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg13.flac)
-- [mg14](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg14.flac)
-- [mg15](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg15.flac)
-- [mg16](http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg16.flac)
+- [mg1](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg1.flac>)
+- [mg2](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg2.flac>)
+- [mg3](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg3.flac>)
+- [mg4](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg4.flac>)
+- [mg5](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg5.flac>)
+- [mg6](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg6.flac>)
+- [mg7](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg7.flac>)
+- [mg8](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg8.flac>)
+- [mg9](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg9.flac>)
+- [mg10](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg10.flac>)
+- [mg11](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg11.flac>)
+- [mg12](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg12.flac>)
+- [mg13](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg13.flac>)
+- [mg14](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg14.flac>)
+- [mg15](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg15.flac>)
+- [mg16](<http://data.atariwiki.org/FLAC/Mathematics_(Geometry)/mg16.flac>)
+
 ## Images
+
 ![](attachments/mgA_.jpg)
 Dorsett Atari Mathematics (Geometry) - cassettes with uneven numbers
 

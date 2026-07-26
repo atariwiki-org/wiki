@@ -1,10 +1,10 @@
 # Bank Switching (Bankumschaltung)
+
 Bank Switching bzw. Bankumschaltung und Adressspeicherumschaltung (ASU) sind synonyme Begriffe für die Erweiterung des Computerspeichers eines Computers (RAM oder ROM) über seine natürlichen Adressierungsräume hinaus durch das durch Software gesteuerte, aber in Hardware umgesetzte Umschalten einzelner Speicherbereiche.
 
 Anhand von OSS Super-Cartridges soll Bank Switching im Folgenden erklärt werden:
 
-OSS Module - 043M, M091 ...
-===========================
+# OSS Module - 043M, M091 ...
 
 Es gibt verschiedene Modulversionen die mit M091, 043M und so weiter bezeichnet werden.
 
@@ -41,7 +41,7 @@ $2FFF: 03
 
 In Reihe gelesen ergeben die Datenbytes 043 und wenn wir jetzt noch das M von Masterbank dranhängen, haben wir 043M. Also handelt es sich augenscheinlich um ein Modul vom Typ 043M.
 
-Was bedeuten jetzt aber noch die Werte 0, 4 und 3? Hierbei handelt es sich um den letzten Wert in der Speicheradresse, die zur Bankumschaltung verwendet wird. Also bei 0 -> $D500, bei 4 -> $D504 und bei 3 -> $D503. Folglich wird bei einem M091 Modul für die Schaltung der Bank 9 -> $D509 verwendet. Bitte nicht verwechseln - das sind keine Banknummern! Bei einem Modul mit 4 Bänken gibt es ja auch keine 9te Bank.
+Was bedeuten jetzt aber noch die Werte 0, 4 und 3? Hierbei handelt es sich um den letzten Wert in der Speicheradresse, die zur Bankumschaltung verwendet wird. Also bei 0 -\> $D500, bei 4 -\> $D504 und bei 3 -\> $D503. Folglich wird bei einem M091 Modul für die Schaltung der Bank 9 -\> $D509 verwendet. Bitte nicht verwechseln - das sind keine Banknummern! Bei einem Modul mit 4 Bänken gibt es ja auch keine 9te Bank.
 
 So, jetzt mal ein bischen weg von der Theorie. Ich habe auf dem Atari mal den ROM-Inhalt eines Moduls in den Arbeitsspeicher ab Adresse $4000 eingelesen. Die 4 Bänke gehen demzufolge bis $7FFF.
 
@@ -70,18 +70,17 @@ Was muß man denn nun tun, um aus einem M091-Modul ein 043M-Modul zu machen, zum
 
 Nun, erst einmal müssen die 4 Bänke neu angeordnet werden. Als erstes könnte man die Bank M in unserem Beispiel von $4000 - $4FFF nach $8000 - $8FFF verschieben. Damit ergibt sich dann für den neuen Bereich $5000 - $8FFF die Bankfolge 091M. Ein Problem hierbei ist, daß man jetzt nicht wirklich weiß, ob aus der Bank mit der Bezeichnung 9, die neue Bank 4 oder 3 werden muß. Im Zweifelsfall benötigt man dann zwei Versuche.
 
-Hier gehen wir davon aus, daß aus 9 -> 4 werden muß und aus 1 -> 3. Damit stimmt in unserem Beispiel schon einmal die Anordnung im ROM. Als nächstes müssen die IDs der Bänke korrigiert werden und zwar wie folgt:
+Hier gehen wir davon aus, daß aus 9 -\> 4 werden muß und aus 1 -\> 3. Damit stimmt in unserem Beispiel schon einmal die Anordnung im ROM. Als nächstes müssen die IDs der Bänke korrigiert werden und zwar wie folgt:
 
-$5FFF: 00 -> 00
-$6FFF: 09 -> 04
-$7FFF: 01 -> 03
+$5FFF: 00 -\> 00
+$6FFF: 09 -\> 04
+$7FFF: 01 -\> 03
 
 Als nächstes müssen alle Umschaltbefehle angepaßt werden. Aus allen Bytefolgen "01 D5" muß "03 D5" werden und aus allen "09 D5" muß "04 D5" werden. Dabei muß man auch sicherstellen, daß bei dieser Ersetzerei auch nur Befehle zur Bankumschaltung geändert werden und nicht etwa Zeichenfolgen wie "TAB invU".
 
 Richtig schwierig könnte es werden, wenn indizierte Adressierung verwendet wird, so etwas wie STA $D500,X. Da muß man in die Anpassung deutlich mehr Energie reinstecken. Glücklicherweise hatte ich bislang einen solchen Fall nicht, aber ich hab ja auch erst ein paar Module angepaßt.
 
 FloppyDoc, im Februar 2017
-
 
 In Ergänzung hierzu soll anhand eines Beispiels von einem bestehenden OSS Modul der Typ ermittelt werden.
 
@@ -96,13 +95,13 @@ X: A3=1, A0=0 - Cartridge deaktivieren
 
 Bank A ist immer bei $B000-$BFFF:
 
-LDA #$0__0__
+LDA #$0\_\_0\_\_
 STA $D500 ; aktiviert Bank B in $A000-$AFFF
 
-LDA #$0__9__
+LDA #$0\_\_9\_\_
 STA $D500 ; aktiviert Bank C in $A000-$AFFF
 
-LDA #$0__1__
+LDA #$0\_\_1\_\_
 STA $D500 ; aktiviert Bank D in $A000-$AFFF
 
 Jeweils so schalten und den entsprechenden Speicherbereich damit herausspeichern.
@@ -112,10 +111,12 @@ Ggf. steht am Ende jeder Bank auch noch einmal die Banknummer als Kontrolle, abe
 JAC! von AtariAge, im Juli 2017
 
 ## Referenzen
+
 - [Bank Switching deutsch](https://de.wikipedia.org/wiki/Bank_Switching)
 - [Bank Switching englisch](https://en.wikipedia.org/wiki/Bank_switching)
 
 ## Danksagung
+
 - Dieser Artikel ist möglich dank vieler ausführlicher Informationen von Hias
 - Er ist vom [Abbuc](http://www.abbuc.de/) Magazin #128 übernommen und etwas erweitert worden
 - Dank an FloppyDoc für den Artikel aus dem [Abbuc](http://www.abbuc.de/) Magazin #128 und die Idee, das einmal in ausführlicher Weise, verständlich und didaktisch aufzubereiten

@@ -1,7 +1,6 @@
 # PSC Simple Debugger
 
-
-[atari000.png](attachments/atari000.png) 
+[atari000.png](attachments/atari000.png)
 
 This is a very simple debugger I have written years ago. It has been used to figure out the hotspots of a program or to slow down the program to be examined.
 
@@ -9,7 +8,7 @@ The "BUG.COM" executable will install a VBI with a wait loop. This loop is slowi
 
 ### Disk
 
-[sbug6502.atr](attachments/sbug6502.atr) 
+[sbug6502.atr](attachments/sbug6502.atr)
 
 ### Source
 

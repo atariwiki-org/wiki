@@ -3,6 +3,7 @@
 Copyright (C) 1981 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Reading-Development (Reading Comprehension) X](https://archive.org/details/DorsettAtariReadingDevelopmentX)
 
 This is an archive of the "Reading Development (X)" educational program published by Dorsett Educational Systems, Inc. in 1981. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Reading Development (X)
 Year: 1981
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 907 MB):
 - [x14](http://data.atariwiki.org/FLAC/Reading-Comprehension_X/x14.flac)
 - [x15](http://data.atariwiki.org/FLAC/Reading-Comprehension_X/x15.flac)
 - [x16](http://data.atariwiki.org/FLAC/Reading-Comprehension_X/x16.flac)
+
 ## Images
+
 ![](attachments/xA_.jpg)
 Dorsett Atari Reading-Development (Reading Comprehension) X - cassettes with uneven numbers
 

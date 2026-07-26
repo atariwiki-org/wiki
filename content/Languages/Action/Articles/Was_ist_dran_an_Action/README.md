@@ -4,12 +4,14 @@ General Information
 Author: Peter Finzel
 Language: ACTION!
 Compiler/Interpreter: ACTION!
-Published: ATARI Magazin #4 (07/08-87), ACTION! Center 4
+Published: ATARI Magazin \#4 (07/08-87), ACTION! Center 4
 ---
+
 # Was ist dran an Action!?
+
 ## Im 4. Teil holen wir eine kleine Einführung in die Sprache nach.
 
-Heute kommen wir zur vierten Folge unseres Action!-Centers. Wir haben bereits eine Reihe von Zuschriften und Anrufen von Lesern erhalten, die an den Artikeln im __ATARI''magazin''__ lebhaftes Interesse zeigten, sich aber unter dem Namen Action! nichts Konkretes vorstellen konnten. Das ist Grund genug für uns, sich dieser Leser anzunehmen und näher auf Grundlagen und Philosophie dieser Sprache einzugehen.
+Heute kommen wir zur vierten Folge unseres Action!-Centers. Wir haben bereits eine Reihe von Zuschriften und Anrufen von Lesern erhalten, die an den Artikeln im **ATARI''magazin''** lebhaftes Interesse zeigten, sich aber unter dem Namen Action! nichts Konkretes vorstellen konnten. Das ist Grund genug für uns, sich dieser Leser anzunehmen und näher auf Grundlagen und Philosophie dieser Sprache einzugehen.
 
 Am besten beginnt man in einem solchen Fall mit der Geschichte. Alles begann 1978, als sich Atari auf der Suche nach einem Basic für die damals in Entwicklung befindlichen Computer der Serien 400 und 800 befand. Das zu diesem Zeitpunkt bereits populäre Microsoft-Basic wollte nicht so recht in das zur Verfügung stehende 8-KByte-ROM der neuen Rechner passen, jedenfalls nicht mit den Grafik- und Sound-Befehlen, die man sich bei Atari vorstellte. Daher wurde die kleine Firma Shepardson Microsystems Inc., die auch schon ein DOS für Apple entworfen hatte, mit einer Neuentwicklung beauftragt.
 
@@ -32,6 +34,7 @@ Dieses Konzept wird jedem C-Programmierer sehr bekannt erscheinen; auch dort mü
 Diese Lösung hat nun aber Vor- und Nachteile. Größter Vorteil ist sicherlich, dass beim Kompilieren kein Include-File notwendig ist. Ein Diskettenlaufwerk ist also nicht unbedingt Voraussetzung. Der Nachteil dieser Methode besteht allerdings darin, dass Action!-Programme, die diese Library benutzen, nur mit eingesteckter Cartridge lauffähig sind. Ein geschickter Programmierer kann diesen Mangel jedoch einfach umgehen, indem er die Bibliotheksfunktionen durch eigene ersetzt. Auf dieser Basis gibt es auch ein sogenanntes Run-Time-Package, das Programme vom Steckmodul unabhängig macht. Leider ist es in Deutschland nur schwer erhältlich. Leser der CK-Computer Kontakt konnten jedoch bereits ein einfaches Run-Time-Modul abtippen.
 
 Schauen wir uns zum Abschluss dieses Action!-Centers nun noch einige Beispiele an, die den Unterschied zu Basic verdeutlichen. Eine Endlosschleife würde man in dieser Sprache z.B. so programmieren:
+
 ```
 20 GOTO 10}}}
 In Action! sieht dies so aus:
@@ -97,5 +100,7 @@ ELSE   MOD     THEN
 ELSEIF MODULE  TO
 EXIT   OD      TYPE
 ```
+
 ---
-PDF: [act4.pdf](attachments/act4.pdf) 
+
+PDF: [act4.pdf](attachments/act4.pdf)

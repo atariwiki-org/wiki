@@ -21,6 +21,7 @@
 |15 |$F|khaki to yellow|Orange
 
 ## Luminance
+
 ||Luminance Value||Description
 |0 $0| dark|%%( color: #000 ; background-color : #000 ) black %%
 |2 $2| |%%( color: #222 ; background-color : #222 ) black %%
@@ -34,16 +35,20 @@
 ## Compute a color value
 
 ### Decimal
-Color = Hue * 16 + Luminance
+
+Color = Hue \* 16 + Luminance
 
 ### Hexadecimal
+
 Color = $HL
 
 ### Binary
+
 ||Bit||7||6||5||4||3||2||1||0
 |Color Value |H|H|H|H|L|L|L|L
 
 ## Color Table
+
 || ||$00||$02||$04||$06||$08||$0A||$0C||$0E
 |$00| %%( color: #000 ; background-color : #000 ) black%% |%%( color: #222 ; background-color : #222 ) black%%  |%%( color: #444 ; background-color : #444 ) black%%  |%%( color: #666 ; background-color : #666 ) black%%  |%%( color: #888 ; background-color : #888 ) black%%  |%%( color: #AAA ; background-color : #AAA ) black%%  |%%( color: #CCC ; background-color : #CCC ) black%%  |%%( color: #EEE ; background-color : #EEE ) black%%
 |$10| %%( color: #444400 ; background-color : #444400 ) black%% |%%( color: #646410 ; background-color : #646410 ) black%%  |%%( color: #848424 ; background-color : #848424 ) black%%  |%%( color: #A0A034 ; background-color : #A0A034 ) black%%  |%%( color: #B8B840 ; background-color : #B8B840 ) black%%  |%%( color: #D0D050 ; background-color : #D0D050 ) black%%  |%%( color: #E8E85C ; background-color : #E8E85C ) black%%  |%%( color: #FCFC68 ; background-color : #FCFC68 ) black%%
@@ -62,7 +67,6 @@ Color = $HL
 |$E0| %%( color: #2C3000 ; background-color : #2C3000 ) black%% |%%( color: #4C501C ; background-color : #4C501C ) black%%  |%%( color: #687034 ; background-color : #687034 ) black%%  |%%( color: #848C4C ; background-color : #848C4C ) black%%  |%%( color: #9CA864 ; background-color : #9CA864 ) black%%  |%%( color: #B4C078 ; background-color : #B4C078 ) black%%  |%%( color: #CCD488 ; background-color : #CCD488 ) black%%  |%%( color: #E0EC9C ; background-color : #E0EC9C ) black%%
 |$F0| %%( color: #442800 ; background-color : #442800 ) black%% |%%( color: #644818 ; background-color : #644818 ) black%%  |%%( color: #846830 ; background-color : #846830 ) black%%  |%%( color: #A08444 ; background-color : #A08444 ) black%%  |%%( color: #B89C58 ; background-color : #B89C58 ) black%%  |%%( color: #D0B46C ; background-color : #D0B46C ) black%%  |%%( color: #E8CC7C ; background-color : #E8CC7C ) black%%  |%%( color: #FCE08C ; background-color : #FCE08C ) black%%
 
-
-
 ---
-see also: [Color topics](../Memory_Map/#Color_topics) 
+
+see also: [Color topics](../Memory_Map/#Color_topics)

@@ -7,8 +7,6 @@ Language: 	ACTION!
 Compiler/Interpreter: 	ACTION!
 Published: 	09.12.90
 
-
-
 ```
 ;********************************
 ;**									 **
@@ -895,4 +893,3 @@ RETURN
 02780 ------------------------------
 
 ```
-

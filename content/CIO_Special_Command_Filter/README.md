@@ -4,44 +4,43 @@ This is a small ASM Routine that is a Filter Driver for the DOS CIO (D:) Handler
 
 ## Download
 
-ATR-Disc Image: [CIO SPECIAL Command Filter](../CIO_Special_Command_Filter/README.md) 
+ATR-Disc Image: [CIO SPECIAL Command Filter](../CIO_Special_Command_Filter/README.md)
 
 ## Filter Usage
 
 Set start Sector Number
 
-XIO 200,#chan, __sec-high__ , __sec-low__ ,"D:"
+XIO 200,#chan, **sec-high** , **sec-low** ,"D:"
 
-- __chan__ - IO Channel
-- __sec-high__ - sectornumber, highbyte
-- __sec-low__ - sectornumber, lowbyte
+- **chan** - IO Channel
+- **sec-high** - sectornumber, highbyte
+- **sec-low** - sectornumber, lowbyte
 
 Set destination memory
 
-XIO 201,#chan, __mem-high__ , __mem-low__ ,"D:"
+XIO 201,#chan, **mem-high** , **mem-low** ,"D:"
 
-- __chan__ - IO Channel
-- __mem-high__ - memory, highbyte
-- __mem-low__ - memory, lowbyte
+- **chan** - IO Channel
+- **mem-high** - memory, highbyte
+- **mem-low** - memory, lowbyte
 
 Read sector
 
-XIO 202,#chan, __count-high__ , __count-low__ ,"Dx:"
+XIO 202,#chan, **count-high** , **count-low** ,"Dx:"
 
-- __chan__ - IO Channel
-- __count-high__ - sector count, highbyte (not implemented in this version)
-- __count-low__ - sector count, lowbyte (not implemented in this version)
-- __Dx:__ - Diskdrive number
+- **chan** - IO Channel
+- **count-high** - sector count, highbyte (not implemented in this version)
+- **count-low** - sector count, lowbyte (not implemented in this version)
+- **Dx:** - Diskdrive number
 
 Write sector
 
-XIO 203,#chan, __count-high__ , __count-low__ ,"Dx:"
+XIO 203,#chan, **count-high** , **count-low** ,"Dx:"
 
-- __chan__ - IO Channel
-- __count-high__ - sector count, highbyte (not implemented in this version)
-- __count-low__ - sector count, lowbyte (not implemented in this version)
-- __Dx:__ - Diskdrive number
-
+- **chan** - IO Channel
+- **count-high** - sector count, highbyte (not implemented in this version)
+- **count-low** - sector count, lowbyte (not implemented in this version)
+- **Dx:** - Diskdrive number
 
 ## Assembler (Bibo Assembler Source)
 

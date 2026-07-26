@@ -3,9 +3,11 @@
 Copyright (C) 1981-1983 Optimized Systems Software, OSS, Inc.
 
 ## ATR image
+
 - [OS/A+ Version 2.10](attachments/OS_Aplus-Version_2.atr)
 
 ## Manuals
+
 - [OS/A+ Version 1.1, 1981](../../../../../media/Companies/OSS/OS_Aplus/attachments/OS_Aplus-Manual-1981_Revision-Version_1.1.pdf) ; size: 4.9 MB ; thanks to Atarimania! :-)
 - [OS/A+ Version 2 Bug Sheet](attachments/OS_Aplus-Version_2-Bug_Sheet.pdf) ; thanks to Atarimania! :-)
 
@@ -18,8 +20,8 @@ OS/A+ version 2 was produced to provide the maximum compatibility possible with 
 The purpose of the FMS is to organize the 720 data sectors available on an 810 (or its double density equivalent) diskette into a system of named data files. FMS has three primary data structures that it uses to organize the disk:
 
 1. Volume Table of Contents (VTOC): a single disk sector which keeps track of which disk sectors are available for use in data files.
-1. Directory: a group of eight contiguous sectors used to associate file names with the location of the files' sectors on the disk. Each Directory entry contains a file name, a pointer to the first data sector in the file, and some miscellaneous information.
-1. Data Sectors: sectors containing the actual data and some control information that links one data sector to the next data sector in the file.
+2. Directory: a group of eight contiguous sectors used to associate file names with the location of the files' sectors on the disk. Each Directory entry contains a file name, a pointer to the first data sector in the file, and some miscellaneous information.
+3. Data Sectors: sectors containing the actual data and some control information that links one data sector to the next data sector in the file.
 
 NOTE: since double density diskette sectors contain 256 bytes whereas single density (810 drive) sectors contain only 128, certain absolute byte number references may vary depending upon the diskette in use. Throughout this chapter, in such cases, the single density number is given followed by the double density number in square brackets \[thus~\].
 
@@ -39,7 +41,6 @@ The Directory starts at disk sector $169 and continues for eight contiguous sect
 
 A Directory entry is 16 bytes in size, as illustrated by the Table below. The directory entry flag field gives specific status information about the current entry. The directory count field is used to store the number of sectors currently used by the file. The last eleven bytes of the entry are the actual file name. The primary name is left justified in the primary name field. The name extension is left justified in the extension field. Unused filename characters are blanks ($20). The Start Sector Number field points to the first sector of the data file.
 
-
 | Starting Byte # of Field         | Length of Field (bytes)            |   Purpose of Field                     |
 |----------------------------------|------------------------------------|----------------------------------------|
 | 0                                | 1                                  | Flag byte. Meanings of bits: $00 Entry never used, $80 Entry was deleted, $40 Entry in use, $20 Entry protected, $02 a version 2 file, $01 Now writing file |
@@ -47,8 +48,6 @@ A Directory entry is 16 bytes in size, as illustrated by the Table below. The di
 | 3                                | 2                                  | Start sector (LSB, MSB) of link chain  |
 | 5                                | 8                                  | File name, primary                     |
 | 13                               | 3                                  | File name, extension                   |
-
-
 
 NOTE: only eight file directory entries are stored per sector, even on double-density diskettes.
 
@@ -62,8 +61,6 @@ The VTOC sector ($168) is used to track which disk sectors are available for dat
 
 The sector bitmap is a contiguous string of 90 bytes, each containing 8 bits. There are a total of 720 (90 x 8) bits in the bitmap -- one for each possible sector on an 810 diskette. The 90 bytes of bitmap start at VTOC byte ten ($0A). The leftmost bit ($80 bit) of byte $OA represents sector zero. The bit just to the right of the leftmost bit ($40 bit) represents sector one. The rightmost bit (bit $01) of byte $63 represents sector 719.
 
-
-
 | Starting Byte # of Field           | Length of Field (bytes)           |   Purpose of Field       |
 |------------------------------------|-----------------------------------|--------------------------|
 | 0                                  | 1                                 | Reserved (for type code) |
@@ -76,5 +73,6 @@ The sector bitmap is a contiguous string of 90 bytes, each containing 8 bits. Th
 Table: Structure of the VTOC Sector
 
 ## Picture
+
 ![](attachments/OS_Aplus-Version_2-Disk.jpg)
 OS/A+ Version 2 diskette; thanks to Atarimania! :-)

@@ -1,10 +1,11 @@
 # DARK STAR
 
 ### General Information
+
 Author: Michael Mitchell
 Language: ACTION!
 Compiler/Interpreter: ACTION!
-Published: ANTIC Vol. 4, #3 (07/ 85)
+Published: ANTIC Vol. 4, \#3 (07/ 85)
 ---
 
 ''Fly the Darkstar and wipe out enemy alien bases. There are two versions of this game, one is written in BASIC and the other in ACTION!. Both will run on any Atari of all memory sizes, with either disk or cassette. But the ACTION! Listing requires the ACTION! cartridge from Optimized Software Systems. Antic Disk subscribers will find a run-time file of the ACTION! version on their disk. Go to DOS and load DARKSTAR.EXE with the L function.''
@@ -45,8 +46,8 @@ The source code is pretty well remarked and consists of only five procedures:
 
 5. PROC START( ) Since MAIN( ) is called within itself, START() is used to isolate the initial TITLE() call.
 
-Michael Mitchell is a San Francisco high school student who wrote the upcoming Antic Public Domain release Rainbow DOS and is sysop of Twilight Zone BBS at (415) 755-0375.
----
+## Michael Mitchell is a San Francisco high school student who wrote the upcoming Antic Public Domain release Rainbow DOS and is sysop of Twilight Zone BBS at (415) 755-0375.
+
 ```
 ; DARKSTAR, LISTING 1
 ; BY MICHAEL MITCHELL

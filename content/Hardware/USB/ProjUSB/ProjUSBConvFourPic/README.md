@@ -3,10 +3,10 @@
 19-21. August 2005
 
 Participants:
+
 - Florian Dingler
 - Thomas Grasel
 - Carsten Strotmann
-
 
 ## Pictures
 
@@ -36,24 +36,8 @@ Participants:
 
 - UFI Device Inquiry:  ![](attachments/UFI_Device_Inquiry.jpeg)
 
-- FLoppy Device Capacity Values, 2880 Sec * 512 Byte:  ![](attachments/UFI_DriveCapacity.jpeg)
+- FLoppy Device Capacity Values, 2880 Sec \* 512 Byte:  ![](attachments/UFI_DriveCapacity.jpeg)
 
 - MS-DOS FAT Disk Bootsector:  ![](attachments/FAT_Disk_Full.jpeg)
 
 - MS-DOS FAT Disk Bootsector (Closeup):  ![](attachments/FAT_Disk_Closeup.jpeg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

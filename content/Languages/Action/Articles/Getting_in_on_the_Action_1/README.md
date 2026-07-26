@@ -1,10 +1,11 @@
 # Getting in on the Action! - Part 1
 
 ### General Information
+
 Author: Russ Wetmore
 Language: ACTION!
 Compiler/Interpreter: ACTION!
-Published: Analog #32 (07/ 85)
+Published: Analog \#32 (07/ 85)
 ---
 
 Action! is an Atari programmer's dream come true. It is a language not too unlike C or Pascal, but which compiles to very "tight" 6502 machine language. Clint Parker, the author of Action!, has fashioned a remarkable programming environment, where editor, compiler and monitor are all resident at once.
@@ -16,11 +17,13 @@ There are several caveats in creating really big programs (larger than 16K), bec
 In this article (and the one next month). I'll show you some tricks I've learned to optimize Action!'s output. These comments all apply to version 3.6 - they may work on other versions of the compiler, but have not been tested. They also assume a working knowledge of Action!
 
 ## Variable allocation.
+
 ### Allocaling free memory.
 
 There isn't a function in Action! that approximates BASIC's FRE(0) command. It isn't as simple as checking the monitor to see where the end of your program is, because Action! tries to help you out by placing some non-initialized arrays beyond the end of your program code, instead of inside your program, where they're declared (specifically, CARD ARRAYs and, generally, BYTE ARRAYs over a page in length).
 
 Luckily, there's an easy method for determining where the end of the program and variable space actually is. The first CARD ARRAY declared in a program is the last actually allocated during compilation.
+
 ```
 MODULE ; Sample 1
 
@@ -35,9 +38,11 @@ PROC Main()
              freemem)
 RETURN
 ```
+
 ### Static ARRAY variables.
 
 Action! allows you a lot of choices when it comes to variable declaration. For example. ARRAY variable names are actually pointers to the ARRAY space. This allows you to do such esoterics as:
+
 ```
 CHAR ARRAY
   str1="This  is a test. ", str2
@@ -47,14 +52,18 @@ PROC Main()
   PrintE(str2)
 RETURN
 ```
+
 When you run the program, you'll find that str1 and str2 both "equal" the same string. This is possible because Action! also allocates a pointer to the ARRAY, in addition to the ARRAY data itself. When you assign str2 to str1, you're actually just assigning str2's pointer equal to str1's, which is pointing to the ARRAY data.
 
 In many cases, though, this overhead costs memory for arrays that you're never going to reassign, such as string constants. Also, if you were to reference the ARRAY name in a code block, you'd have to go through contortions in order to get to the actual data, because the ARRAY name equals a pointer to the data, which you'd have to access indirectly. Clint very thoughtfully put in a construct that allows you to declare ARRAY variables without the associated pointer. Declare the ARRAY with a predefined length of 0. For example:
+
 ```
 CHAR  ARRAY
   str1(0)="This is a test."
 ```
+
 You won't be able to reassign str1 (you'll get an error if you try), but you will have saved 2 bytes you probably never would have used, anyway. You'll also save 2 bytes every time you reference the ARRAY, because Action! will compile the reference as immediate loads of registers, as opposed to indirect fetches from memory. For example:
+
 ```
 MODULE ; Sample 3a
 
@@ -65,6 +74,7 @@ PROC   Main()
   PrintE(str1)
 RETURN
 ```
+
 compiles to:
 
 ```
@@ -72,7 +82,9 @@ compiles to:
        JSR PrintE
        RTS
 ```
+
 whereas the following:
+
 ```
 MODULE ; Sample 3b
 
@@ -83,14 +95,18 @@ PROC Main()
   PrintE(str1)
 RETURN
 ```
+
 compiles to:
+
 ```
 MAIN   LDA #<str1
        LDX #>str1
        JSR PrintE
        RTS
 ```
+
 For similar reasons, you may save memory if you predeclare all your variables. ARRAYs or otherwise. For example, when you declare a BYTE variable, you can set its memory address in the declaration. Any variables that follow it in the same statement, though, have extra overhead associated with them. (You can see this effect in the following example.) To test all of these constructs, you can compile a test program then execute the command ?$493 from the monitor, to see the program's length. Try this with the following two examples:
+
 ```
 MODULE ; Long example
 
@@ -117,11 +133,13 @@ CHAR ARRAY
 PROC Main()
 RETURN
 ```
+
 You'll find that the second example ends up being 19 bytes shorter than the first.
 
 ### A string shortcut.
 
 If you work with strings at all, you probably know that the length of a declared string is always the first ("zeroth") byte of the ARRAY. As such, you probably use a construct similar to:
+
 ```
 MODULE ; Sample 4a
 
@@ -132,7 +150,9 @@ PROC Main()
   PrintF("Length of %S is %U%E", str1, str1(0))
 RETURN
 ```
+
 You can save considerable memory (11 bytes each occurrence!) by declaring a separate BYTE variable:
+
 ```
 MODULE ; Sample 4b
 
@@ -146,7 +166,9 @@ PROC Main()
   PrintF("Length of %S is %U%E", str1, str1len)
 RETURN
 ```
+
 By making the declaration str1len = str1, we're setting str1len's memory location equal to the "zeroth" byte of str1, hence str1len will always be equal to the length of str1 (if you don't point str1 elsewhere). The reason for the memory savings is simple. In the first example, the compiler is given the address of the start of the ARRAY and an offset to the actual byte desired. This compiles to something similar to:
+
 ```
 LDA str1    ;Fetch address of array
 STA $AE     ;Save for indirect ref
@@ -155,7 +177,9 @@ STA $AF     ;Save...
 LDY #0      ;We want 0'th element
 LDA ($AE),Y ;Fetch string length
 ```
+
 If we declare a BYTE variable outright, though, it will already be pointing to the proper memory location. and no calculation is needed to find it. Thus, the compiler produces something like:
+
 ```
 which, I think you'll agree, is much cleaner. You can apply this principle to any portion of a declared ARRAY that isn't going to move, that you need to access.
 
@@ -180,7 +204,9 @@ PROC Main()
   Num2=Num1 Num2()
 RETURN
 ```
+
 you'll get the result one printed to the screen, because we've "pointed" Num2 to Num1's address. Using this same concept, we can forward reference a PROC or FUNC before it is declared!
+
 ```
 MODULE ; Sample 6
 
@@ -194,6 +220,7 @@ PROC Main()
   DUMMY=Num2 Num1()
 RETURN
 ```
+
 In Num1, we've actually forward referenced Num2 indirectly, by setting DUMMY to be equal to Num2.
 
 ### An indirect detriment.
@@ -201,6 +228,7 @@ In Num1, we've actually forward referenced Num2 indirectly, by setting DUMMY to 
 Unfortunately, as in the case of non-initialized ARRAYs, the overhead for such indirection is the default case. I have very rarely used the addressing feature and, even then, only in cases where I was too lazy to redo the necessary routines properly.
 
 Action! compiles normal PROC references in a manner similar to this example:
+
 ```
 MODULE ; Sample 7
 
@@ -224,16 +252,20 @@ Main     LDA test
          JSR PrintBE
          RTS
 ```
+
 If you were to do the assignment DUMMY = Main, what the compiler would actually produce is:
+
 ```
 LDA #<Main
 STA DUMMYvec+1
 LDA #>Main
 STA DUMMYvec+2
 ```
+
 so that the resulting code at DUMMYvec would actually become JMP Main. If you don't ever use this feature, though, every time you declare a PROC or FUNC, you're actually throwing in a JMP to the next instruction.
 
 The way to avoid this automatic inclusion of the JMP command is to use the construct:
+
 ```
 You save three bytes and a little overhead in speed when you declare routines this way. One important note - this construct will not work if you're passing variables to a routine, unless the first thing encountered in the routine is a code block. This is because of the way that Action! handles saving its zero-page working variables.
 

@@ -6,12 +6,12 @@ Author: Steve "Woz" Wozniak
 Assembler: BiboAssembler
 Published: 1977
 
-see also Original [Sweet 16](../README.md) 
+see also Original [Sweet 16](../README.md)
 
 - The ATARI uses the zero page registers at $E0-$FF instead of $00-$1F
 - the "save" and "restore" routines are not in ROM, but in the source
 
-Download: [sweet16.atr](attachments/sweet16.atr) 
+Download: [sweet16.atr](attachments/sweet16.atr)
 
 ```
 00000   .LI OFF

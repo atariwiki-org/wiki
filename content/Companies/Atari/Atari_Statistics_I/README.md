@@ -9,49 +9,61 @@ Das Handbuch in elektronischer Form (PDF-Datei, s. u.) entspricht dem originalen
 ## Kurzübersicht zu Statistics I:
 
 - Derzeit können nur einfache Berechnungen durchgeführt werden.
+
 - Zugrunde gelegt ist jeweils die Standardnormalverteilung.
 
 - Verwendete Datenwerte dürfen lediglich minimal -5E+24 und maximal +5E+24 sein.
+
 - Mit 16K RAM können 53 Datenpunkte analysiert werden.
+
 - Mit 48K RAM können 1555 Datenpunkte analysiert werden.
+
 - 16K RAM werden für die Kassetten-Version benötigt.
+
 - 24K RAM werden für die Disketten-Version benötigt.
+
 - Generell gilt, je mehr RAM, desto mehr Datenpunkt-Analysen sind möglich.
 
 - Zur Speicherung einer Datenbasis muss ein Name verwendet werden, der maximal 10 Buchstaben lang sein darf, Zahlen sind nicht möglich.
+
 - Maximal 20 Datenpunkte sind bei der Eingabe sichtbar, danach scrollt der Bildschirm.
+
 - Bei der letzten Eingabe muss die "Start"-Taste gedrückt werden.
+
 - Mit der "Select"-Taste kann man eine Seite weiter blättern, mit "Option"-Taste kann man die Richtung jeweils ändern.
+
 - Das Editieren der Daten erfolgt mit den Pfeiltasten über den Cursor oder durch Eintippen der entsprechenden Zahl gefolgt von der Leertaste.
+
 - Drückt man lediglich die "Return"-Taste kann man einen bestehenden Wert löschen, alle nachstehenden Werte rutschen dann eine Position auf. Man kann nicht einen Wert nachträglich einfügen, lediglich diesen ans Ende stellen.
+
 - Die Berechnung der Variablen erfolgt in 6 Phasen, die Phasen 4 und 5 benötigen dabei die meiste Zeit.
+
 - Durch drücken der "Option"-Taste kann man die Ergebnisse ausdrucken lassen.
 
 ### ATR- und CAS-Images:
 
-Atari Statistics I CX4103 (deutsch) (Disk Version) Disketten-Image: [Atari_Statistik_I_Rev_1.2_CX4103_Disk_Version_deutsch_Basic.atr](attachments/Atari_Statistik_I_Rev_1.2_CX4103_Disk_Version_deutsch_Basic.atr) 
+Atari Statistics I CX4103 (deutsch) (Disk Version) Disketten-Image: [Atari\_Statistik\_I\_Rev\_1.2\_CX4103\_Disk\_Version\_deutsch\_Basic.atr](attachments/Atari_Statistik_I_Rev_1.2_CX4103_Disk_Version_deutsch_Basic.atr)
 
-Atari Statistics I CX4103 (englisch) (Disk Version) Disketten-Image: [Atari_Statistics_I_Rev_1.2_CX4103_Disk_Version_Basic.atr](attachments/Atari_Statistics_I_Rev_1.2_CX4103_Disk_Version_Basic.atr) 
+Atari Statistics I CX4103 (englisch) (Disk Version) Disketten-Image: [Atari\_Statistics\_I\_Rev\_1.2\_CX4103\_Disk\_Version\_Basic.atr](attachments/Atari_Statistics_I_Rev_1.2_CX4103_Disk_Version_Basic.atr)
 
-Atari Statistics I CX4103 (englisch) Side A (Cassette Version) Kassetten-Image: [Atari_Statistics_I_Rev_1.2_CX4103_Side_A_Cassette_Version_Basic.cas](attachments/Atari_Statistics_I_Rev_1.2_CX4103_Side_A_Cassette_Version_Basic.cas) 
+Atari Statistics I CX4103 (englisch) Side A (Cassette Version) Kassetten-Image: [Atari\_Statistics\_I\_Rev\_1.2\_CX4103\_Side\_A\_Cassette\_Version\_Basic.cas](attachments/Atari_Statistics_I_Rev_1.2_CX4103_Side_A_Cassette_Version_Basic.cas)
 
-Atari Statistics I CX4103 (englisch) Side B (Disk Version) Kassetten-Image: [Atari_Statistics_I_Rev_1.2_CX4103_Side_B_Disk_Version_Basic.cas](attachments/Atari_Statistics_I_Rev_1.2_CX4103_Side_B_Disk_Version_Basic.cas) 
+Atari Statistics I CX4103 (englisch) Side B (Disk Version) Kassetten-Image: [Atari\_Statistics\_I\_Rev\_1.2\_CX4103\_Side\_B\_Disk\_Version\_Basic.cas](attachments/Atari_Statistics_I_Rev_1.2_CX4103_Side_B_Disk_Version_Basic.cas)
 
-Atari Statistics I CX4103 (englisch) (Cassette Version-Autorun) Disketten-Image: [Atari_Statistics_I_Rev_1.2_CX4103_Cassette_Version-Autorun_Basic.atr](attachments/Atari_Statistics_I_Rev_1.2_CX4103_Cassette_Version-Autorun_Basic.atr) 
+Atari Statistics I CX4103 (englisch) (Cassette Version-Autorun) Disketten-Image: [Atari\_Statistics\_I\_Rev\_1.2\_CX4103\_Cassette\_Version-Autorun\_Basic.atr](attachments/Atari_Statistics_I_Rev_1.2_CX4103_Cassette_Version-Autorun_Basic.atr)
 
-Atari Statistics I CX4103 (englisch) (Complete Cassette Import) Disketten-Image: [Atari_Statistics_I_Rev_1.2_CX4103_Complete_Cassette_Import_Basic.atr](attachments/Atari_Statistics_I_Rev_1.2_CX4103_Complete_Cassette_Import_Basic.atr) 
+Atari Statistics I CX4103 (englisch) (Complete Cassette Import) Disketten-Image: [Atari\_Statistics\_I\_Rev\_1.2\_CX4103\_Complete\_Cassette\_Import\_Basic.atr](attachments/Atari_Statistics_I_Rev_1.2_CX4103_Complete_Cassette_Import_Basic.atr)
 
 ### Handbücher:
 
-Für den Bildschirm optimiertes Handbuch (englisch) als PDF-Datei (2,6 MB): [Statistics_I_CX4103_Screen_Version.pdf](attachments/Statistics_I_CX4103_Screen_Version.pdf) 
+Für den Bildschirm optimiertes Handbuch (englisch) als PDF-Datei (2,6 MB): [Statistics\_I\_CX4103\_Screen\_Version.pdf](attachments/Statistics_I_CX4103_Screen_Version.pdf)
 
-Für den Drucker optimiertes Handbuch (englisch) als PDF-Datei (592,8 MB): [Statistics_I_CX4103_Print_Version.pdf](../../../../media/Companies/Atari/Atari_Statistics_I/attachments/Statistics_I_CX4103_Print_Version.pdf) 
+Für den Drucker optimiertes Handbuch (englisch) als PDF-Datei (592,8 MB): [Statistics\_I\_CX4103\_Print\_Version.pdf](../../../../media/Companies/Atari/Atari_Statistics_I/attachments/Statistics_I_CX4103_Print_Version.pdf)
 
 ### Bilder:
 
 ![](attachments/Statistics_I.jpg)
 Boxcover von Statistics I (englisch)
-
 
 ![](attachments/Statistics_I_01.jpg)
 Startbildschirm der Diskettenversion von Statistics I (deutsch)
@@ -107,7 +119,6 @@ Grafische Darstellung eines Beipiels aus dem Statistics I-Handbuch mittels der S
 ![](attachments/Statistics_I_22.jpg)
 Grafische Darstellung eines Beipiels aus dem Statistics I-Handbuch mittels der Software: "Graph It" - Diagramm 3
 
-
 ## Autor:
 
 Derzeit leider noch unbekannt. :-(
@@ -124,6 +135,3 @@ Ohne die folgenden Personen wäre dieses Projekt nicht möglich gewesen, ihnen g
 ## Wartung:
 
 Diese Seite wird von Roland B. Wassenberg verwaltet. Motto: "See you all out there in the galaxy" :-)
-
-
-

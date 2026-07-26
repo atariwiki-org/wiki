@@ -4,7 +4,7 @@ by von Georg Rehfeldt, Vierte Dimension 1/1985
 
 (translation pending)
 
-see also [6502 Disassembler](../6502_DISASSEMBLER/README.md) 
+see also [6502 Disassembler](../6502_DISASSEMBLER/README.md)
 
 ## Ein Disassembler für den 6502
 
@@ -15,4 +15,3 @@ Untersucht man die Opcodes des 6502 anhand einer hexa­dezimal sortierten Befehl
 Bei der anderen Hälfte der Opcodes mit nicht gesetztem Bit Nr. 0 läßt sich eine Regelmäßigkeit nicht so einfach feststellen. Der folgende Disassembler faßt deshalb diese Hälfte der Opcodes in der Tabelle SHORTCODE mit ih­ren wesentlichen Daten zusammen. Die Daten der sytematischen Hälfte der Opcodes sind in die beiden kurzen Tabellen SCODE und ADRMODE gefaßt, die von dem Wort SHORTCODE1 ausgewertet werden. Das Wort SHORTCODE0 schließlich liefert die für alle Opcodes be­nötigten Informationen.
 
 Das Wort DIS schließlich disassembliert ab der Adresse, die auf dem Stack liegt, Zelle für Zeile, bis das Disassembling mit RETURN abgebrochen wird. Es benutzt dazu außer SHORTCODE einige Tabellen mit ASCII-Zeichen. Noch eine Bemerkunq zur Art und Weise, wie das Wort TABELLE die Zahlen einliest: Die Ubergabe der Zahlen auf dem Stack ist in FIG-6502-Systemen wegen der bedauerlich kleinen Stacktiefe nicht möglich, deshalb der mühsame Weg über BL WORD HERE NUMBER DROP.
-

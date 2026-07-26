@@ -7,8 +7,3 @@ Pictures taken by Michael Vogt
 - USB Wheel and Poleposition  ![](attachments/36_G.sized.jpg)
 
 - Robotron 2038 USB with Rumblepad 2  ![](attachments/35_G.sized.jpg)
-
-
-
-
-

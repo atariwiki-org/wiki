@@ -30,7 +30,6 @@ data library under the filenames GETCHR.DOC and GETCHR.PAS.
 (CIOEQU.PAS should be renamed to CIOEQU.I after you download
 it.)
 
-
 ## CIOEQU.I
 
 ```
@@ -227,4 +226,3 @@ BEGIN
 #
 END;(* Put_Byte *)
 ```
-

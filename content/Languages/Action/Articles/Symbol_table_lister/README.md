@@ -1,14 +1,11 @@
 # Symbol Table Lister for ACTION!
 
-
-
 The Symbol Table Lister can be used to create an Symbol Import List for linking different parts of ACTION! codes together. This Version prints the symbol table to the Screen, however the Tool can be adapted to print the symbol table to Printer or a file.
 
-__Usage:__
+**Usage:**
 
 1. compile your program from memory or disk
-1. compile the symbol table lister from disk, at the end of compilation it will print out the symbol table
-
+2. compile the symbol table lister from disk, at the end of compilation it will print out the symbol table
 
 ## Symbol Table Lister
 
@@ -390,6 +387,7 @@ RETURN
 ```
 
 ## Example Symbol Table Import for the ACTION! Runtime Library
+
 ```
 MODULE ; SYS.ACT
 PROC Clos=$2221 (BYTE d)

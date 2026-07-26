@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Vocational Vocabulary VZ](https://archive.org/details/DorsettAtariVocationalVocabulary)
 
 This is an archive of the "Vocational Vocabulary" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Vocational Vocabulary
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 932.5 MB):
 - [vz14](http://data.atariwiki.org/FLAC/Vocational_Vocabulary/vz14.flac)
 - [vz15](http://data.atariwiki.org/FLAC/Vocational_Vocabulary/vz15.flac)
 - [vz16](http://data.atariwiki.org/FLAC/Vocational_Vocabulary/vz16.flac)
+
 ## Images
+
 ![](attachments/vzA_.jpg)
 Dorsett Atari Vocational Vocabulary VZ - cassettes with uneven numbers
 

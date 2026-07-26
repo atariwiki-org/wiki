@@ -21,6 +21,7 @@ Both words need (=consume) the address on the stack.
 @  ( addr -- 16b )
 C@ ( addr --  8b )
 ```
+
 In the Atari, Memory location 632 ([Memory Map - STICK0](../../../../../Memory_Map/README.md#STICK0)/$278) is the shadow register for the first joystick port ([Memory Map - PORTA](../../../../../Memory_Map/README.md#PORTA)/54016).
 So the above BASIC example would be in FORTH:
 
@@ -48,6 +49,7 @@ The below BASIC line changes the background color of the screen to black, writin
 ```
 
 In Forth, we write
+
 ```
 0 709 C!
 ```

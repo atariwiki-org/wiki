@@ -16,7 +16,6 @@ Have fun with 'Hit the Mole'.
 
 Carsten Strotmann
 
-
 /%
 %%tab-german
 Hit the Mole
@@ -44,8 +43,7 @@ Viel Spass mit 'Hit the Mole'.
 
 Carsten Strotmann
 
-
 /%
 /%
 
-Download ATR: [mole.atr](attachments/mole.atr) 
+Download ATR: [mole.atr](attachments/mole.atr)

@@ -78,5 +78,3 @@ PROC WriteB (BYTE x,y,BYTE val)
 RETURN
 
 ```
-
-

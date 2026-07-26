@@ -24,12 +24,10 @@ absolute minimum size of your program. So even if you wrote a valFORTH program c
 the final product would still occupy at least 7.5K! Machine language laughs at the idea of a kernel. It requires no overhead at all because it communicates directly to
 the 6502 microprocessor at the lowest possible level. In fact, you can write a little routine in assembly like this one:
 
-
 ```
 A900     LDA #0
 8DC602   STA 710
 ```
-
 
 that performs exactly the same function as our FORTH word PROGRAM in only five bytes.
 
@@ -43,7 +41,6 @@ knowledgeable FORTH programmer can exploit the built-in features of the kernel t
 OS subroutines as often as possible to simplify his work. But a FORTH kernel is far more versatile than a machine-specific OS; and although the initial size of a FORTH
 program is large, its threaded structure makes it grow less quickly than a machine-language program. Theoretically, a point can be reached where FORTH and machine code
 take up the same amount of RAM (see Figure 1), after which the FORTH application will require less memory than the same job written in pure machine code.
-
 
 ![](attachments/fig1_an1183.png)
 

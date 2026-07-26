@@ -88,7 +88,7 @@
 |The Learning Phone|RX8080|
 |Thunderfox|RX8113|CA400068-113
 |Tower Toppler|RX8111|Proto
-|Track & Field|RX8069|
+|Track \& Field|RX8069|
 |Typo Attack|RX8057|
 |UFO|RX8133|Proto
 |Video Easel|CXL4005|

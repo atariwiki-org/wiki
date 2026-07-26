@@ -12,18 +12,17 @@ home computer.
 
 RAM:  48K, or more RAM
 Peripherals:  At least one disk drive
-ATARI 850 & a modem, or
+ATARI 850 \& a modem, or
 ATARI 1030, or other communications device
 
 ---
 
-
 1. Format a diskette and write a copy of DOS onto it.
-1. Write the AUTORUN.SYS file for the type of modem that you are going to use.  If you are using an 850, write the AUTORUN.SYS file that came with the DOS II Master Diskette.
-1. Write all the K*.* files onto the diskette.
-1. Insert an ACTION! cartridge into your ATARI computer, turn on your 850 (or 1030, or whatever) and power cycle your ATARI computer.  After the DOS boots you should see the ACTION! editor screen.
-1. Read in and edit the file "KERMIT.ACT".  Change the line near the end of the file from "KCOM850.ACT" to whichever device you wish to use. Write out the "KERMIT.ACT" file when you are done.  If you are trying to support a new modem type, create a new KCOM file and use its name here....
-1. Clear the editor buffer and go to the ACTION! monitor.  Type R "KERMIT.ACT" to compile and run the Kermit program.
+2. Write the AUTORUN.SYS file for the type of modem that you are going to use.  If you are using an 850, write the AUTORUN.SYS file that came with the DOS II Master Diskette.
+3. Write all the K\*.\* files onto the diskette.
+4. Insert an ACTION! cartridge into your ATARI computer, turn on your 850 (or 1030, or whatever) and power cycle your ATARI computer.  After the DOS boots you should see the ACTION! editor screen.
+5. Read in and edit the file "KERMIT.ACT".  Change the line near the end of the file from "KCOM850.ACT" to whichever device you wish to use. Write out the "KERMIT.ACT" file when you are done.  If you are trying to support a new modem type, create a new KCOM file and use its name here....
+6. Clear the editor buffer and go to the ACTION! monitor.  Type R "KERMIT.ACT" to compile and run the Kermit program.
 
 That's it.  Here are some commonly asked questions, with some off-the-cuff answers:
 
@@ -42,18 +41,12 @@ If you have OS/A+, you can, indeed, save the compiled version of Kermit and exec
 
 Jack Palevich
 
-
-
-
 ;KERMIT .PNS -- a sample phones file
 
 ```
 SU-Score(300)#4153221570
 SU-Score(1200)#4154970061
 ```
-
-
-
 
 ```
 ;D:KCOM1030 .ACT
@@ -2567,4 +2560,3 @@ RETURN
 
 ;End of D:KTTY.ACT
 ```
-

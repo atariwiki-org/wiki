@@ -22,11 +22,13 @@ Hex-Dump of the FF.atr - first sector; please take into account the marked row 1
 Hex-Dump of the FF.atr - last sector
 
 ## Downloads
+
 - [readme.txt](attachments/readme.txt) ; from [Nir Sofer](http://www.nirsoft.net/utils/xorfiles.html) ; thank you so much Nir! Highly appreciated! :-)
 - [xorfiles.exe.zip](attachments/xorfiles.exe.zip) ; from [Nir Sofer](http://www.nirsoft.net/utils/xorfiles.html) ; thank you so much Nir! Highly appreciated! :-)
 - [FF.atr](attachments/FF.atr) ; thank you Joachim Baßmann for creating the needed atr image :-)
 
 ## References
+
 - [The Atari Accountant Series on atari8bit.net](https://atari8bit.net/the-atari-accountant/)
 
 - [What's so special about the 815 on AtariAge](http://atariage.com/forums/topic/278709-whats-so-special-about-the-815/)
@@ -38,15 +40,18 @@ Hex-Dump of the FF.atr - last sector
 - [Why inverted data? - Percom at88 s1pd](http://atariage.com/forums/topic/224072-percom-at88-s1pd/)
 
 ## Recommendations
+
 AtariWiki highly recommends for bit manipulation actions:
 
 Hardware:
+
 - [HP-16C calculator](http://www.hpmuseum.org/hp16.htm) ; thanks to the hpmuseum.org
 - [TI Programmer](http://www.datamath.org/Sci/MAJESTIC/Programmer.htm) ; thanks to Joerg Woerner
 - [TI LCD Programmer](http://www.datamath.org/Sci/Slanted/LCD-Programmer.htm) ; thanks to Joerg Woerner
 - [TI Programmer II](http://www.datamath.org/Sci/Slanted/Programmer-II.htm) ; thanks to Joerg Woerner
 
 Software/Emulation:
+
 - PC's or Mac's own calculators in the programmer mode
 - [PCalc](https://itunes.apple.com/us/app/pcalc/id284666222?mt=8) in the programmer mode for iPhone/iPad
 - [Computer programmer‘s flavor (former Touch 16i app, emulation of the HP-16C calculator)](https://epxx.co/ctb/touchios/) ; for iPhone/iPad

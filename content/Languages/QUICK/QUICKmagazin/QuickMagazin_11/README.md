@@ -1,6 +1,7 @@
 # Quick Magazin 11
 
 ### Article
+
 - Impressum/Anleitung
 - 4-farb Hardcopy
 - formatierte Eingabe
@@ -8,6 +9,7 @@
 - Multitasking in QUICK II
 
 ### Source
+
 - Hardcopy
 - Multitasking-Demos
 

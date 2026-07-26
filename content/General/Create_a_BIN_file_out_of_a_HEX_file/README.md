@@ -9,6 +9,6 @@ xxd -r -p HEX.IN BIN.OUT
 For multiple files in the folder 'IN' to store in the folder 'OUT' please use:
 
 cd ./IN
-for filename in *; do
+for filename in \*; do
 xxd -r -p $filename ../OUT/$filename
 done

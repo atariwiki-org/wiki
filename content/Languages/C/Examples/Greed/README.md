@@ -7,9 +7,9 @@ Language: 	C
 Compiler/Interpreter: 	CC65
 Published: 	ABBUC 2004
 
-Download: [agreed2.atr](attachments/agreed2.atr) 
+Download: [agreed2.atr](attachments/agreed2.atr)
 
-Title Tune: [greed.mp3](../../../../../media/Languages/C/Examples/Greed/attachments/greed.mp3) [greed-mid.mov](attachments/greed-mid.mov) 
+Title Tune: [greed.mp3](../../../../../media/Languages/C/Examples/Greed/attachments/greed.mp3) [greed-mid.mov](attachments/greed-mid.mov)
 
 # Atari Greed
 
@@ -19,6 +19,7 @@ Atari Greed scored 6th place at the 2004 ABBUC Software contest
 
 %%tabbedSection
 %%tab-english
+
 ### Instructions
 
 ATARI Greed
@@ -48,6 +49,7 @@ Winfried Piegsda and
 Carsten Strotmann
 /%
 %%tab-german
+
 ### Anleitung
 
 ATARI Greed
@@ -95,8 +97,7 @@ Carsten Strotmann
 /%
 /%
 
-
-1.1 Make Scripts
+1\.1 Make Scripts
 
 ```
 export CC65_LIB=~/develop/cc65/libsrc
@@ -1474,7 +1475,6 @@ zerobss (zerobss.o):
 
 ## CC65 Sourcecode
 
-
 ```
 /* -*- C -*- ****************************************************************
  *
@@ -2698,7 +2698,6 @@ int main(void) {
 }
 
 ```
-
 
 ## Assembler Code (ca65)
 

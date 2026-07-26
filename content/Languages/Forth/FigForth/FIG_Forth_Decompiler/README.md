@@ -14,16 +14,20 @@ Nicht alle FORTH-Worte compilieren einfach durch Abla­ge Ihrer Compllationsadre
 Beispiel die IMMEDIATE-Worte, in der Regel Anweisun­gen an den Compiler, die etwas anderes ins Worterbuch schreiben als ihre eigene Compilationsadresse. ( So compiliert IF ein 0BRANCH, ELSE ein BRANCH, jeweils mit nachfolgender, relativer Sprungadresse und THEN über­haupt nichts ins Wörterbuch.) Eine ausführliche Beschreibung aller Sonderfälle führt hier zu weit, das Decompilie­ren selbstformulierter Worte zeigt das Verhalten dieser besonderen Worte am besten.
 
 Die Bedienung des Decompilers ist einfach, einzutippen ist z.B.:
+
 ```
 DEC 2DUP	(RETURNTASTE)
 ```
+
 und der Decompiler antwortet mit :
+
 ```
 2DUP CFA 1234 INH 5678
 1236 OVER 
 1238 OVER 
 123A ;S
 ```
+
 Es gibt einige Worte, die nicht mit ;S oder (;CODE) enden, wie ABORT und QUIT, weil das Ende dieser Worte niemals erreicht wird. Bei diesen Worten kann der Decompiler das Ende des Wortes nicht erkennen und das Listing muß, wie beim vorzeitig gewünschten Abbruch, mit ?TERMINAL beendet werden.
 
 Ein automatischer Decompiier hat einen großen Nachteil: Bei Erweiterungen des Compilers wie z.B. durch selbstdefinierte Definitionsworte, müßte der Decompiier entspre­chend erweitert werden. Dies muß der Anwender jedoch selbst tun, oder die mit den grundlegenden Worten aus Screen Nr. 13 geschaffenen einfachen interaktiven Worte in Screen Nr. 17 benutzen, um solche Besonderheiten zu decompilieren.

@@ -97,9 +97,11 @@ PROC MAIN()
   PRINTE("Returning")
  RETURN
 ```
+
 ---
-VBL.ACT
----
+
+## VBL.ACT
+
 ```
 ;
 ; Example of using the vertical blank

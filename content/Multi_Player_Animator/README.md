@@ -2,13 +2,13 @@
 
 by Peter Finzel
 
-
-
 ## Atari Magazin Article 6/87 Page 36/37 (click on Image for full resolution)
+
 ![](attachments/mpa1.gif)
 ![](attachments/mpa2.gif)
 
 ## Atari Magazin Article 1/88 Page 62-65 (click on Image for full resolution)
+
 ![](attachments/mpa2_1gif.gif)
 ![](attachments/mpa2_3gif.gif)
 
@@ -230,12 +230,10 @@ COPY     LDA (ZREG1),Y
 
 - [Multi Player Animation](../Languages/Action/Examples/Multi_Player_Animation/README.md)
 
-
-
 ## PDF and Disk Images
 
-[lf8-188a.atr](attachments/lf8-188a.atr) 
-[lf8-188b.atr](attachments/lf8-188b.atr) 
-[lf8-687b.atr](attachments/lf8-687b.atr) 
-[mpa.PDF](attachments/mpa.PDF) 
-[multiplayeranimator.pdf](attachments/multiplayeranimator.pdf) 
+[lf8-188a.atr](attachments/lf8-188a.atr)
+[lf8-188b.atr](attachments/lf8-188b.atr)
+[lf8-687b.atr](attachments/lf8-687b.atr)
+[mpa.PDF](attachments/mpa.PDF)
+[multiplayeranimator.pdf](attachments/multiplayeranimator.pdf)

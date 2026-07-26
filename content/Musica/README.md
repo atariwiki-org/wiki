@@ -7,5 +7,6 @@ Musica by Steve Hales-Intro. Thank you so much Steve Hales! :-)
 Musica by Steve Hales-Editor. Thank you so much Steve Hales! :-)
 
 ## ATR image
+
 - [Musica.atr](attachments/Musica.atr)
-- [Musica_by_Steve_Hales_1985.atr](attachments/Musica_by_Steve_Hales_1985.atr) ; many differences between the 2 disks, not know yet...
+- [Musica\_by\_Steve\_Hales\_1985.atr](attachments/Musica_by_Steve_Hales_1985.atr) ; many differences between the 2 disks, not know yet...

@@ -23,6 +23,7 @@ $E406/$E407 Put-Byte-R. -1
 Diese Routinen werden aufgerufen, indem erst das High- und dann das Low-Byte auf dem Stack abgelegt wird und man den Rechner einen RTS ausführen lässt.
 
 Die Zeichenausgaberoutine sieht daher so aus:
+
 ```
 00010 PUTCHAR   TAX
 00020           LDA $E407
@@ -32,9 +33,11 @@ Die Zeichenausgaberoutine sieht daher so aus:
 00060           TXA
 00070           RTS
 ```
+
 Der Akku muss vor dem Aufruf der Routine den ASCII-Code des auszugebenden Zeichens enthalten. Da der Akku in der Routine gebraucht wird, um die Adresse der eigentlichen Putbyte-Routine auf dem Stack abzulegen, wird der Inhalt vorübergehend im X-Register gespeichert.
 
 Um nun längere Texte auszugeben, gibt es eine recht einfach zu handhabende Print-Routine, die auf die Putchar-Routine zugreift:
+
 ```
 00200 PRINT     PLA
 00210           STA $D0
@@ -55,7 +58,9 @@ Um nun längere Texte auszugeben, gibt es eine recht einfach zu handhabende Prin
 00360           PHA
 00370           RTS
 ```
+
 Diese Routine wird wie folgt benutzt:
+
 ```
 00010           JSR PRINT
 00020           .AS "TESTTEXT HALLO"
@@ -63,6 +68,7 @@ Diese Routine wird wie folgt benutzt:
 00040           .HX EA
 00050           ... (weiteres Programm )
 ```
+
 Nach Aufruf der Routine über JSR ist auf dem Stack die Adresse des letzten Bytes des JSR-Aufrufs abgelegt. Diese Adresse ist aber auch genau die Anfangsadresse des Textes weniger 1.
 
 Diese Adresse wird nun vom Stapel genommen, in der Zero-Page ($D0/$D1) abgelegt und um eins erhöht.
@@ -72,6 +78,7 @@ Die Adresse $D0/$D1 dient also als Zeiger (Vektor) auf den auszugebenden Buchsta
 War der eingelesene Wert gleich #$EA so wird die Schleife abgebrochen und der Zeiger $D0/$D1 wird auf dem Stack abgelegt. Der Befehl RTS bewirkt nun einen Sprung an die Adresse aus $D0/$D1 plus 1. Diese Adresse ist aber nun genau die erste hinter dem Text, so dass das Programm genau hinter dem Text weitergeführt wird.
 
 Der Hex-Wert EA (die Anweisung .HX EA) wird hier als Textendkennung verwendet. Sie kann natürlich auch gegen eine andere Kennung ausgetauscht werden. Da die Print-Routine am Bildschirm immer bündig schreibt, so wie etwa der Basic-Befehl PRINT"......"; muss zu Ende einer Zeile Return ausgegeben werden. Dies geschieht durch ein Einfügen von .HX 9B in den Text:
+
 ```
 00010           JSR PRINT
 00020           .AS "ZEILE 1"
@@ -79,7 +86,9 @@ Der Hex-Wert EA (die Anweisung .HX EA) wird hier als Textendkennung verwendet. S
 00040           .AS "ZEILE 2"
 00050           .HX 9BEA
 ```
+
 Wenn man an einer bestimmten Stelle des Bildschirms schreiben möchte, so kennt man vom Basic den POSITION Befehl. Dieser lässt sich in Assembler sehr leicht realisieren: In der Adresse $54 muss die Zeilenposition (Y-Wert) des Cursors und in der Adresse $55 die Spaltenposition (X-Wert) des Cursors abgelegt werden.
+
 ```
 00010           LDA #$10
 00020           STA $54
@@ -89,12 +98,14 @@ Wenn man an einer bestimmten Stelle des Bildschirms schreiben möchte, so kennt 
 00060           .AS "POS. $15,$10"
 00070           .HX 9BEA
 ```
+
 So, dies sollte für diese Ausgabe reichen. Ich kann Ihnen im übrigen die Bibo-Assembler Tooldisk 1 nur wärmstens empfehlen, da sie viele praktische Routinen enthält, die zudem weitestgehend dokumentiert sind.
 
 Bis nächsten Monat
 Ihr Uwe Röder
 CSM 07/1989
 ---
+
 Der Artikel entstammt der Kursreihe „6502 Programmieren“ des Compy Shop Diskettenmagazins. Die Kursreihe besteht aus 14 Kursen, die im Laufe des Jahres 2011 in unregelmäßigen Abständen einzeln veröffentlicht werden, bzw. anschließend als Zusammenzug als ABBUC-Buch „6502 Programmieren“ erscheinen.
 Koordination: Volkert Barr (volkert@nivoba.de)
 Version 1.1 / 2011-01-23

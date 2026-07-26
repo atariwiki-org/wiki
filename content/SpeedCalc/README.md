@@ -1,11 +1,12 @@
 # SpeedCalc
 
-for Atari ; Copyright (C) COMPUTE! and Kevin Martin & Charles Brannon, Program Editor
+for Atari ; Copyright (C) COMPUTE! and Kevin Martin \& Charles Brannon, Program Editor
 
 ![](attachments/SpeedCalc-Start_Screen.jpg)
 SpeedCalc Start screen
 
 ## Introduction
+
 In response to popular request, COMPUTE! presents this professional-quality spreadsheet program for Atari 400, 800,
 XL, and XE computers with at least 48K RAM. Written completely in high-speed machine language, Atari SpeedCalc
 has all the important features you'd expect from a commercial spreadsheet program. In addition, its data files can be
@@ -56,8 +57,9 @@ press CTRL-L. For a binary disk file, MLX asks for the filename you gave to the 
 complete, press CTRL-N and tell MLX the line number where you stopped. Now continue typing as before.
 
 ## Saving The Finished Program
+
 When you finish all typing, MLX automatically prompts you to save SpeedCalc. For disks with Atari DOS 2.0, 2.5, or
-3.0, save the completed program with the filename AUTORUN.SYS. This allows SpeedCalc to load and run
+3\.0, save the completed program with the filename AUTORUN.SYS. This allows SpeedCalc to load and run
 automatically when you boot the disk.
 Because SpeedCalc requires a full 48K of RAM in order to work, you must always disable BASIC before loading or
 running SpeedCalc. On an Atari 400, 800, or 1200XL, unplug the BASIC cartridge (or any other cartridge, for that
@@ -76,12 +78,14 @@ much memory that they conflict with SpeedCalc. In this case, you'll need to use 
 disks.
 
 ## Note
+
 The AUTORUN.SYS file on your DOS master disk is responsible for booting up the 850 Interface Module for RS-
 232 communications. There is no easy way to combine the 850 boot program with SpeedCalc, so you can't access
 the R: device while using this program. If you need to send a SpeedCalc file to a serial printer or modem,
 print it to disk as explained below, then print or transmit the file data as you would any ATASCII text.
 
 ## The Atari SpeedCalc Screen
+
 SpeedCalc uses the top line of the screen as the command line. This is where SpeedCalc displays messages and asks
 you questions.
 Screen lines 2–4 are the input buffer area. This is the work area where you enter and edit data. As you'll see in a
@@ -93,11 +97,12 @@ columns, only a few can fit on the screen at one time. By scrolling the screen b
 move the display window to any part of the spreadsheet.
 The SpeedCalc worksheet consists of 50 vertical columns labeled with letters (AA, AB … BX) and 100 horizontal rows
 numbered from 1–100. The rectangle where a row and column intersect is called a cell. Cells are where you store data.
-With 50 columns and 100 rows, the SpeedCalc spreadsheet has a maximum of 5,000 (50*100) cells. Due to memory
+With 50 columns and 100 rows, the SpeedCalc spreadsheet has a maximum of 5,000 (50\*100) cells. Due to memory
 limitations, however, only about a third of these can actually contain data. But you may spread out the data over all
 5,000 cells if necessary, depending on the format you need.
 
 ## Moving The Cursor
+
 Each cell is identified with the letters of its column and the number of its row. For example, the cell at the extreme
 upper-left corner of the sheet is called AA1, since it's in column AA and row 1. The cell below that is AA2. Moving one
 cell to the right from AA2 puts you in cell AB2, and so on.
@@ -114,6 +119,7 @@ moving around the spreadsheet with all three methods; you'll be using them a lot
 change the size and format of a cell.
 
 ## Keyboard Commands
+
 SpeedCalc offers many different commands, a few of which are entered by pressing one key. However, most
 commands are entered by pressing CTRL along with another key. CTRL-G, as you've seen, is the goto command.
 CTRL-A displays the amount of free memory available, and so on.
@@ -129,6 +135,7 @@ data is lost. If you're using OS/A+ or DOS XL, type RUN 2000 to return to SpeedC
 ...
 
 ## Enhancements for Atari SpeedCalc
+
 Fred Chapman
 
 Here are two enhancements for the Atari version of COMPUTE!'s popular spreadsheet program SpeedCalc (published March 1986). These new features give you greater control over printed output and allow you to copy or move blocks of cells without recalculating the entire spreadsheet. A disk drive is required.
@@ -153,9 +160,9 @@ BI 20 REM THIS PROGRAM APPENDS SEVERAL PATCHES TO THE ORIGINAL SPEEDCALC
 DB 30 TRAP 430
 NI 40 CHECKSUM=0:NBYTES=80
 JL 50 FOR BYTE=1 TO NBYTES:READ ABYTE:CHECKSUM=CHECKSUM+ABYTE:NEXT BYTE
-OJ 60 IF CHECKSUM<>7369 THEN PRINT "ERROR IN DATA STATEMENTS":GOTO 440
+OJ 60 IF CHECKSUM\<\>7369 THEN PRINT "ERROR IN DATA STATEMENTS":GOTO 440
 CI 70 DIM A$(1)
-PM 80 PRINT "{CLEAR}INSERT SPEEDCALC DISK & PRESS RETURN":INPUT A$
+PM 80 PRINT "{CLEAR}INSERT SPEEDCALC DISK \& PRESS RETURN":INPUT A$
 DD 90 CLOSE #1
 ID 100 OPEN #1,9,0,"D:AUTORUN.SYS":REM APPEND PATCHES TO END OF ORIGINAL FILE
 EO 110 RESTORE 170
@@ -194,8 +201,8 @@ LI 430 ERR=PEEK(195):PRINT "ERROR- ";ERR
 KD 440 PRINT "PROGRAM ABORTED!"
 GD 450 CLOSE #1
 
-
 ## SpeedCalc Keyboard Reference
+
 A few commands require you to press three keys at once. This sounds more awkward than it is in practice, since two of
 the three keys are OPTION and CTRL. For instance, the relative copy command is performed by pressing OPTIONCTRL-
 C (hold down the OPTION console key and CTRL, then press C). The table lists all the SpeedCalc commands,
@@ -208,23 +215,28 @@ SpeedCalc - Keyboard
 ...
 
 ## ATR Images
-- [SpeedCalc_1986_K._Martin_and_C._Brannon.atr](attachments/SpeedCalc_1986_K._Martin_and_C._Brannon.atr)
+
+- [SpeedCalc\_1986\_K.\_Martin\_and\_C.\_Brannon.atr](attachments/SpeedCalc_1986_K._Martin_and_C._Brannon.atr)
 - [SpeedCalc.atr](attachments/SpeedCalc.atr)
-- [SpeedCalc_enhanced.atr](attachments/SpeedCalc_enhanced.atr)
+- [SpeedCalc\_enhanced.atr](attachments/SpeedCalc_enhanced.atr)
 
 ## XEX files
+
 - [SpeedCalc.xex](attachments/SpeedCalc.xex)
-- [SpeedCalc_enhanced.xex](attachments/SpeedCalc_enhanced.xex)
+- [SpeedCalc\_enhanced.xex](attachments/SpeedCalc_enhanced.xex)
 
 ## Manuals
-- [SpeedCalc_for_Atari.pdf](attachments/SpeedCalc_for_Atari.pdf)
-- [Enhancements_for_Atari_SpeedCalc.pdf](attachments/Enhancements_for_Atari_SpeedCalc.pdf)
+
+- [SpeedCalc\_for\_Atari.pdf](attachments/SpeedCalc_for_Atari.pdf)
+- [Enhancements\_for\_Atari\_SpeedCalc.pdf](attachments/Enhancements_for_Atari_SpeedCalc.pdf)
 
 ## Reference
+
 - [COMPUTE! ISSUE 70 / MARCH 1986 / PAGE 65](https://www.atarimagazines.com/compute/issue70/076_1_SpeedCalc.php)
 - [COMPUTE! ISSUE 76 / SEPTEMBER 1986 / PAGE 95](https://www.atarimagazines.com/compute/issue76/Enhance.php)
 
 ## Images
+
 ![](attachments/SpeedCalc-Precision-1.jpg)
 Speedcalc - precision 1
 

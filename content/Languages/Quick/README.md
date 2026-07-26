@@ -1,8 +1,9 @@
 # QUICK
 
-Copyright (C) 1989 RAINDORF SOFT & Andreas Binner and Harald Schönfeld
+Copyright (C) 1989 RAINDORF SOFT \& Andreas Binner and Harald Schönfeld
 
 ### Background
+
 QUICK is a simple programming language designed for writing high-performance code. It is similar to [Action!](../Action/README.md) in basic concept, and differs primarily in its syntax. Like Action!, QUICK is based on an ALGOL-like (and thus C- and Pascal-like) program structure, and, like Action!, it allows variables to be assigned to specific memory locations, making it easy to interact with hardware registers. One might think of QUICK as a public version of Action! in the same way one might consider [Turbo-BASIC XL](../BASIC/Turbo-BASIC_XL/README.md) to be a (greatly improved) public version of [Atari BASIC](../BASIC/Atari_BASIC/README.md).
 
 AtariWiki deeply thanks [CharlieChaplin from AtariAge](https://forums.atariage.com/topic/157358-quick-programming-language/#findComment-1931224), so we can offer the following info:
@@ -18,18 +19,21 @@ Last but not least, Abbuc once got permission from the copyright holder (Werner 
 All German versions can be published here, except the English versions of 2.1 and 2.2.. These two versions must be obtained from [dgs](http://www.dgs.clara.net/). Please see below. On the other hand, AtariWiki is free to publish the English version of 1.6, and there is a type-in listing for the version to upgrade legally to 2.1.
 
 ## ATR Images
+
 - [QUICKV16.ATR](attachments/QUICKV16.atr) ; QUICK version 1.6 with Editor, Compiler, Runtime and DOS II Version 2.75
-- [QIK_SHEL.atr](attachments/QIK_SHEL.atr) ; QUICK-Shell V1.1, includes QUICK-Editor V1.3 and QUICK-Compiler V1.6 in English
-- [QIK_001.atr](attachments/QIK_001.atr) ; QUICKmagazin Ausgabe 1 in German language
-- [QIK_002.atr](attachments/QIK_002.atr) ; QUICKmagazin Ausgabe 2 in German language
-- [QIK_003.atr](attachments/QIK_003.atr) ; QUICKmagazin Ausgabe 3 in German language
+- [QIK\_SHEL.atr](attachments/QIK_SHEL.atr) ; QUICK-Shell V1.1, includes QUICK-Editor V1.3 and QUICK-Compiler V1.6 in English
+- [QIK\_001.atr](attachments/QIK_001.atr) ; QUICKmagazin Ausgabe 1 in German language
+- [QIK\_002.atr](attachments/QIK_002.atr) ; QUICKmagazin Ausgabe 2 in German language
+- [QIK\_003.atr](attachments/QIK_003.atr) ; QUICKmagazin Ausgabe 3 in German language
 
 We are sorry, but we can't offer the ATR images for versions 2.1 and 2.2 in English for free. However, the right holder, [dgs](http://www.dgs.clara.net/), offers them at a low price. QUICK version 2.2 English currently costs US$5 on its own, or US$7 when included in the full DGS commercial software pack. Both are delivered as a ZIP file containing ATR files for the disks (including two support disks) and a PDF of the English manual.
 
 ## Manual
-- [QUICK_V2.0-Manual-German.pdf](attachments/QUICK_V2.0-Manual-German.pdf) ; size: 563 KB ; German QUICK manual ; Thank you so much, Mr. Barcardi, for your help with this; we really appreciate it. :-)
+
+- [QUICK\_V2.0-Manual-German.pdf](attachments/QUICK_V2.0-Manual-German.pdf) ; size: 563 KB ; German QUICK manual ; Thank you so much, Mr. Barcardi, for your help with this; we really appreciate it. :-)
 
 ## Articles
+
 - [Quick Articles from the German ATARImagazin](ATARImagazin/README.md)
 
 ## QUICK Programs
@@ -44,6 +48,7 @@ We are sorry, but we can't offer the ATR images for versions 2.1 and 2.2 in Engl
 See [QUICKmagazin](QUICKmagazin/README.md).
 
 ## Pictures
+
 ![](attachments/RAINDORF_SOFT.jpg)
 RAINDORF SOFT Logo
 

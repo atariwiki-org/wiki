@@ -4,16 +4,17 @@ this is the BETA Version of a simple Blitter Routine for Mirko Sobe (AtariXLE, B
 
 Use attached ATR Image. There is a demo Turbo Basic PGM on the Image. The ML-Routine is really simple. All Memory Calculations must be done in Basic or in the programmers brain ;)
 
-To Move Memory from high to low address, use a 16 Bit negative value in the "bytes_per_row_in_frambuffer" parameter. So -40 becomes (40 EXOR $FFFF) + 1 = $FFD8
+To Move Memory from high to low address, use a 16 Bit negative value in the "bytes\_per\_row\_in\_frambuffer" parameter. So -40 becomes (40 EXOR $FFFF) + 1 = $FFD8
 
-__USAGE__: {{{x=USR(<addr of mlroutine> , sourceaddr, destaddr, bytes_in_rows, lines, bytes_per_row_in_frambuffer)}}}
+**USAGE**: {{{x=USR(<addr of mlroutine> , sourceaddr, destaddr, bytes\_in\_rows, lines, bytes\_per\_row\_in\_frambuffer)}}}
 
 where
-- __sourceaddr__ is the Source Address (like DPEEK(88))
-- __destaddr__ is the Destination Address
-- __bytes_in_row__ is the number of bytes in a row to copy
-- __lines__ is the numbers of lines to copy
-- __bytes_per_row_in_framebuffer__ is the number of bytes per line in the framebuffer (40 for Graphics 0 and 8, $FFD8 for negative = -40)
+
+- **sourceaddr** is the Source Address (like DPEEK(88))
+- **destaddr** is the Destination Address
+- **bytes\_in\_row** is the number of bytes in a row to copy
+- **lines** is the numbers of lines to copy
+- **bytes\_per\_row\_in\_framebuffer** is the number of bytes per line in the framebuffer (40 for Graphics 0 and 8, $FFD8 for negative = -40)
 
 ## Disk
 
@@ -168,6 +169,3 @@ where
 1520   X=USR(ADR(X$),DPEEK(88)+20+179*40,DPEEK(88)+20+180*40,10,U,$FFD8)
 1530 NEXT U
 ```
-
-
-

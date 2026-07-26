@@ -2,15 +2,16 @@
 
 Copyright (C) 1989 by Norm Draper ; For the Atari 400, 800, XL, or XE series computers
 
-
 ## ATR-Images
+
 - [drpascal.atr](attachments/drpascal.atr) ; Draper Pascal - Disk A
 - [drpascb.atr](attachments/drpascb.atr) ; Draper Pascal - Disk B
-- [Pascal_Documentation.atr](attachments/Pascal_Documentation.atr) ; Pascal Documentation
+- [Pascal\_Documentation.atr](attachments/Pascal_Documentation.atr) ; Pascal Documentation
 
 ## Manuals
-- [Draper_Pascal_Manual.pdf](attachments/Draper_Pascal_Manual.pdf) ; Draper Pascal 2.1 manual from Norm Draper ; registered users version with complete description of all definitions ; AtariWiki says mega thank you to Norm Draper for giving this manual into PD. We really appreciate your help and contribution to the Atari community. Be sure, you are in our hearts. Thanks you so much. We further thank Kay Savetz so much much for getting in contact with Norm Draper and sending us this lost to believe manual after 29(!) years... That is so amazing! Thank you Kay, we all appreciate your work so much. :-)
-- [Draper_Pascal_2.1.pdf](attachments/Draper_Pascal_2.1.pdf) ; Draper Pascal 2.1 disk based documentation
+
+- [Draper\_Pascal\_Manual.pdf](attachments/Draper_Pascal_Manual.pdf) ; Draper Pascal 2.1 manual from Norm Draper ; registered users version with complete description of all definitions ; AtariWiki says mega thank you to Norm Draper for giving this manual into PD. We really appreciate your help and contribution to the Atari community. Be sure, you are in our hearts. Thanks you so much. We further thank Kay Savetz so much much for getting in contact with Norm Draper and sending us this lost to believe manual after 29(!) years... That is so amazing! Thank you Kay, we all appreciate your work so much. :-)
+- [Draper\_Pascal\_2.1.pdf](attachments/Draper_Pascal_2.1.pdf) ; Draper Pascal 2.1 disk based documentation
 
 ## Disk Based Documentation
 
@@ -54,8 +55,6 @@ You may NOT distribute Draper Pascal or it's documentation in connection with AN
 - Includes sample programs.
 - Comprehensive user manual provided to registered users. Complete examples and BASIC equivalents given for each reserved word.
 
-
-
 ## Introduction
 
 Draper Software welcomes you to the world of Pascal for the Atari 400/800, XL, and XE series Computer systems.
@@ -81,21 +80,21 @@ For a description of the various files included on the supplied diskette, refer 
 ### About the DOS
 
 Draper Pascal can be used with most popular Disk Operating Systems. It has been tested with Atari DOS 2.5, SpartaDOS 3.2d, and MYDOS. You should format a diskette with DOS on it to contain the Draper Pascal system. Since the Draper Pascal Supervisor is named AUTORUN.SYS, it will execute immediately after the disk is booted. For XL and XE computers, you do not need to hold down the Option key while booting unless you are using SpartaDOS. If using SpartaDOS, you may want to rename AUTORUN.SYS to PASCAL.COM and create a STARTUP.BAT file containing the following two lines:
+
 ```
 BASIC OFF 
 PASCAL
 ```
+
 This documentation file is not required to be on that same diskette.
 
 ### Ramdisk support
 
 Draper Pascal supports the use of the "Ramdisk" capability provided by using a DOS that supports a ramdisk like Atari DOS 2.5 or SpartaDOS 3.x with an Atari computer system having sufficient memory to support the ramdisk. While using this feature, the Editor takes less than two seconds to load and the Compiler takes less than three seconds. Details on setup and use of this feature are provided in the complete manual provided to registered users.
 
-
 ## Getting Started
 
 This section is intended to show by example how to use the Draper Pascal system. You will edit, compile, and run a sample program. Information displayed by the computer is shown in normal type while responses to be entered by you are shown underlined with dashes (---). To begin with, make sure you have 48K RAM installed and no cartridge in place. Boot the disk now by placing it in disk drive 1 and turning on the power to the Atari computer. After the Supervisor has finished loading, you will see a screen that looks like this:
-
 
 ```
 DRAPER PASCAL
@@ -168,7 +167,6 @@ DRAPER PASCAL
                    -                          the entire program in
                                               memory.
 ```
-
 
 ```
          1:PROGRAM KALEIDOSCOPE;
@@ -375,7 +373,6 @@ DRAPER PASCAL
 
 ```
 
-
 At this point you should have a nice kaleidoscope pattern being displayed on your television screen. To stop it, press the BREAK key. To repeat execution, press the START key. To return to the main menu, press the SELECT key. To exit to DOS, press the ESC key.
 
 Another program, SAMPLE2, is also provided for you to practice with. It will display Roman numerals for powers of two between 1 and 4096. Compile it, turn on the trace via the main menu, and run it. After it is finished, press CTRL-T to display the trace table, and CTRL-S to display the stack contents. When prompted for 'Where? Filespec', enter 'E:'. For a description of the stack display line, refer to the 'DUMPSTK' command in the 'Pascal Definitions' section of the manual provided to registered users.
@@ -417,9 +414,11 @@ Each of the menu options will now be explained:
 
 Use this option to execute a program that has previously been
 successfully compiled. You will see the following prompt:
+
 ```
        Enter name of program to be run
 ```
+
 The Main Menu program will fill in the name of the last program
 edited, compiled, or run. If this is the one you want, all you
 have to do is press RETURN. If it is not the one you want, just
@@ -432,7 +431,7 @@ files on one of your disk drives. You will receive the prompt
 'Filespec?'. If you just press RETURN at this point, you will see
 a list of all files on the default drive. If you enter 'D2:', you
 will see all files on drive 2. To show only selected files, use
-wildcards in the normal manner. For example, enter 'D1:INIT.*' to
+wildcards in the normal manner. For example, enter 'D1:INIT.\*' to
 show only files named INIT with any suffix from drive one. At the
 end of the list, you will be prompted to press any key to
 continue. After pressing any key, the Main Menu will be
@@ -483,7 +482,6 @@ allocation of the trace table, enter zero when prompted for the
 number of entries to maintain. The trace format is described in
 the manual provided to registered users.
 
-
 ## The Editor
 
 The Editor is used to create, modify, and save Pascal source
@@ -501,18 +499,18 @@ users. Some key points to be noted about this editor are as
 follows:
 
 1. Each line is referred to by line number, however, no line numbers are stored either internally or on the disk or tape.
-1. Each line may contain up to 80 characters. This may be changed by altering the constant called MAXLENGTH and re-compiling the Editor. A source listing of the Editor is provided to registered users.
-1. A maximum of 250 lines of text may be edited at one time. This may be changed by altering the constant called MAXLINES and re-compiling the Editor. An increase in MAXLINES should correspond with a decrease in MAXLENGTH, and vice versa. A source listing of the Editor is provided to registered users.
-1. When entering or editing a line, the line must be terminated by pressing the RETURN key.
-1. As lines are inserted into, or deleted from, the source file, the remaining lines are automatically renumbered.
-1. A line of source may extend onto more than one screen line.
-1. Due to operation of the Atari operating system, a blank line may not be directly entered. To enter a blank line, you must first enter a non-blank character (like a period), then use the Editor Change command to change the character to a space.
-1. Input operations (Append and Insert) are terminated by entering a null line (just pressing the RETURN key).
-1. The BREAK key is disabled by the Editor to prevent loss of data. It is enabled again at termination of the Editor.
-1. If you enter or change data then try to Quit or exit to the Compiler without first saving the data onto disk, you will receive an option to either save the data or ignore it and continue.
-1. Cassette tape files may be loaded, edited, and saved by the Editor. The Compiler does not support tape input, though. You would first have to load the file from tape, with the Editor, then save it to disk.
+2. Each line may contain up to 80 characters. This may be changed by altering the constant called MAXLENGTH and re-compiling the Editor. A source listing of the Editor is provided to registered users.
+3. A maximum of 250 lines of text may be edited at one time. This may be changed by altering the constant called MAXLINES and re-compiling the Editor. An increase in MAXLINES should correspond with a decrease in MAXLENGTH, and vice versa. A source listing of the Editor is provided to registered users.
+4. When entering or editing a line, the line must be terminated by pressing the RETURN key.
+5. As lines are inserted into, or deleted from, the source file, the remaining lines are automatically renumbered.
+6. A line of source may extend onto more than one screen line.
+7. Due to operation of the Atari operating system, a blank line may not be directly entered. To enter a blank line, you must first enter a non-blank character (like a period), then use the Editor Change command to change the character to a space.
+8. Input operations (Append and Insert) are terminated by entering a null line (just pressing the RETURN key).
+9. The BREAK key is disabled by the Editor to prevent loss of data. It is enabled again at termination of the Editor.
+10. If you enter or change data then try to Quit or exit to the Compiler without first saving the data onto disk, you will receive an option to either save the data or ignore it and continue.
+11. Cassette tape files may be loaded, edited, and saved by the Editor. The Compiler does not support tape input, though. You would first have to load the file from tape, with the Editor, then save it to disk.
 
-__Wiki-Editing pending__
+**Wiki-Editing pending**
 
 ```
                                 EDITOR COMMANDS
@@ -1928,4 +1926,3 @@ __Wiki-Editing pending__
 
 
 ```
-

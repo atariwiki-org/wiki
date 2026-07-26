@@ -1,8 +1,6 @@
-# Assembly Language Course (from Z*Magazine)
+# Assembly Language Course (from Z\*Magazine)
 
-
-
-Z*Magazine Archive: [http://www.atariarchives.org/cfn/12/05/02/index.php](http://www.atariarchives.org/cfn/12/05/02/index.php) 
+Z\*Magazine Archive: [http://www.atariarchives.org/cfn/12/05/02/index.php](http://www.atariarchives.org/cfn/12/05/02/index.php)
 
 ANTIC PUBLISHING INC., COPYRIGHT 1985. REPRINTED BY PERMISSION.
 
@@ -59,6 +57,7 @@ Assembly language is not only more readable than machine code, but it is also as
 ## USING AN ASSEMBLER
 
 There are three steps involved in writing an assembly language program: editing, assembling, and debugging.  Editing is the process of typing in your assembly language statements. Assembling is the invocation of the assembler.  Debugging is the process of running your program and analyzing why it doesn't work.  Thus, the entire process of writing an assembly-language process can be described by a fictitious BASIC program:
+
 ```
  FOR 1= 1 to 1,000,000,000...
  EDIT PROGRAM
@@ -86,6 +85,7 @@ This command will store the contents of the accumulator into the RAM location wh
 You are now equipped to move data around inside the computer. These commands will allow you to readata from one area of memory and store it into another.  LDA and STA are the two most common instructions used in any 6502 program.
 
 Exercise: Write a program that will read the contents of address $FE00 and store the result into address $680. Your biggest problem here will be just getting your assembler to work. Therefore, I will give the answer away:
+
 ```
 ROMADD ORG $FE00
 RAMADD ORG $680
@@ -149,6 +149,7 @@ The first trick to using the Carry bit is to use multi-byte words.  This means t
 
 To use multi-byte arithmetic, you set up a series of additions of subtractions. Suppose, for example, that you want to add two two-byte
 words. The program fragment to do this would look like this:
+
 ```
       LDA     LOFISH
       CLC
@@ -165,7 +166,7 @@ The code does the following: first it adds the two low values.  If the addition 
 
 For subtraction, you use the SEC instruction ("Set Carry"). Otherwise, you handle subtraction the same way that you handle addition. In both addition and subraction, though, the low bytes must be handled first, then the higher bytes in the proper order (lower to higher).
 
-## DECIMAL & SIGNED ARITHMETIC
+## DECIMAL \& SIGNED ARITHMETIC
 
 There are two variations on standard 6502 arithmetic. Both are so rarely used that I will not treat them here. The first is decimal  arithmetic using the Decimal flag.  This allows you to set up an automatic decimal adjust mode.  This is useful in certain types of arithmetic, decimal adjust mode.  This is useful in certain types of arithmetic, primarily BCD arithmetic.
 
@@ -179,5 +180,3 @@ The second arcane bit of 6502 arithmetic is signed arithemetic. It uses the V fl
 
 There are quite a few limitations on 6502 arithmetic. There is no facility for multiplication and division; you have to wirte subroutines to do that. You must design your programs to make do with 8-bit words; failing in that, you must use multi-byte arithemetic, with its consequent price in speed and TAM. All in all, arithmetic is a real pain on the 6502. This is the major reason why most 6502 programs do so
 little arithmetic.
-
-

@@ -7,7 +7,7 @@ Published: 10.2003
 
 Sourcecode of X-Forth for Atari 800/800XL/130XE, indirect threaded Forth based on FIG-Forth
 
-Code compiles with ATASM -> http://atasm.sf.net
+Code compiles with ATASM -\> http://atasm.sf.net
 
 ```
 ; -------------------------------------------------------------------------

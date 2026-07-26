@@ -4,8 +4,7 @@ General Information
 Author: Bob Sander-Cederlof
 Assembler: generic
 Published: APPLE Assembly Line 01/82
-Download: [Apple Assembly Line Archive](http://www.txbobsc.com/aal/) 
-
+Download: [Apple Assembly Line Archive](http://www.txbobsc.com/aal/)
 
 Programs that are already assembled usually must be loaded at a specific memory address to execute properly.  If you want to run it somewhere else, you have a problem.  All the data references, JMP's, and JSR's will have to be examined to see if they need to be modified for the new location.  If you don't have the source code, you can't re-assemble it.  The other way, patching, can be quite a tedious operation!
 
@@ -15,13 +14,12 @@ I would like to see the RELOCATE program made more widely available, but it cann
 
 Paul Schlyter's article elsewhere in this issue of AAL shows RELOCATE put to good use.  You can examine his instructions and learn most of what you need to know to use RELOCATE on your own programs.  Basically, there are four steps:
 
-
 1. Initialize.  This sets up the control-Y monitor command.  If RELOCATE is on a file, you do this with "BRUN RELOCATE".
 
-2.  Specify the program start and end addresses (where it now is in memory), and the new starting address (where you want it to be relocated to).  This is done with the monitor command:  {code}target<start.end^Y*{code} where "target" is the new starting address, and "start" and "end" are the addresses of the program where it is now.  "^Y" means "control-Y".  The "*" after the control-Y signals RELOCATE that you are in step 2 rather than step 3 or 4.
+2.  Specify the program start and end addresses (where it now is in memory), and the new starting address (where you want it to be relocated to).  This is done with the monitor command:  {code}target\<start.end^Y\*{code} where "target" is the new starting address, and "start" and "end" are the addresses of the program where it is now.  "^Y" means "control-Y".  The "\*" after the control-Y signals RELOCATE that you are in step 2 rather than step 3 or 4.
 
 3.  Specify the FIRST block to be copied "as-is" or to be "relocated" to the destination area.  This is done with the monitor command:
-{code}target<start.end^Y{code} or  {code}target<start.endM{code} where "target" is the starting address in the new area for this block, and "start" and "end" define the block itself.  Note that there is no trailing asterisk this time.  Use control-Y if you want this block relocated, or M if you want it copied as-is.
+    {code}target\<start.end^Y{code} or  {code}target\<start.endM{code} where "target" is the starting address in the new area for this block, and "start" and "end" define the block itself.  Note that there is no trailing asterisk this time.  Use control-Y if you want this block relocated, or M if you want it copied as-is.
 
 4.  Specify the NEXT block to be copied as-is or relocated.  You do this with the monitor command: {code}.end^Y{code} or {code}.endM{code} where the target and start addresses are assumed to immediately follow the previously handled block, and "end" specifies the end of this new block.  Use control-Y to relocate the block, or M to copy it as-is.
 

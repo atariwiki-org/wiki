@@ -3,6 +3,7 @@
 Copyright (C) 1982 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Spelling SP](https://archive.org/details/DorsettAtariSpelling)
 
 This is an archive of the "Spelling" educational program published by Dorsett Educational Systems, Inc. in 1982. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Spelling
 Year: 1982
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 842 MB):
 - [sp14](http://data.atariwiki.org/FLAC/Spelling/sp14.flac)
 - [sp15](http://data.atariwiki.org/FLAC/Spelling/sp15.flac)
 - [sp16](http://data.atariwiki.org/FLAC/Spelling/sp16.flac)
+
 ## Images
+
 ![](attachments/spA_.jpg)
 Dorsett Atari Spelling SP - cassettes with uneven numbers
 

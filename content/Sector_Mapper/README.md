@@ -1,6 +1,5 @@
 # Sector Mapper
 
-
 ## Dokumentation zu MAPPER.SRC
 
 Mit MAPPER.SRC koennen Sie einen Blick hinter die Kulissen von professionellen Programmen und deren Kopierschutz werfen.
@@ -9,7 +8,7 @@ MAPPER liest jeden Sektor einer Single-Density Diskette ein, und gibt Ihnen durc
 
 Folgende Symbole werden verwendet:
 
-| * | belegter Sektor
+| \* | belegter Sektor
 |   | (Leerzeichen) leerer Sektor
 | M | Missing Sector (s. Text)
 | C | CRC-Error (s. Text)

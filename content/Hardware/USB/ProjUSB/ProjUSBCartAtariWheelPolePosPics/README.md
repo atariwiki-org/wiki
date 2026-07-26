@@ -7,12 +7,3 @@
 # Playing Pole Position with an USB Steering Wheel at [Wiesbaden Gaming Lab Meeting](http://mitglied.lycos.de/gunnarbusse/bajamar/wgl8.htm) on 30th October 2004
 
 ![](attachments/Pole.JPG)
-
-
-
-
-
-
-
-
-

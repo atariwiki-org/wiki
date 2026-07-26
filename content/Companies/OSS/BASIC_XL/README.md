@@ -3,6 +3,7 @@
 Copyright (C) 1983 Optimized Systems Software, Inc. (OSS)
 
 ## Background
+
 The original [Atari BASIC](../../../Languages/BASIC/Atari_BASIC/README.md) was written at Shepardson Microsystems (SMI) shortly before the 8-bit machines were released. A short time later, Shepardson dissolved, and the Atari programmers re-formed as Optimized Systems Software (OSS), taking the source code to the Atari products with them. In 1981, they released [BASIC A+](../BASIC_Aplus/README.md), based on the original Atari BASIC code but containing a number of bug fixes and a few expansions. This made it too large for the 8k ROM cartridges of the era, and A+ shipped only in disk form.
 
 Basic XL was a further, but much larger, expansion on the Basic A+ model. As it was also based on the original source code, Basic XL remains a strict superset of Atari BASIC, and will run any Atari BASIC program without modification. In contrast to A+, however, XL added many new commands to work with player/missile graphics, simplified handling of joysticks and light pens, auto-generated line numbers and renumbering, and other extensions.
@@ -14,16 +15,19 @@ Another notable feature of Basic XL was the AUTORUN system. This was a small run
 Basic XL was widely lauded in the press, and some stated it should be renamed Atari BASIC and built into every machine. However, the release of [Turbo-BASIC XL](../../../Languages/BASIC/Turbo-BASIC_XL/README.md) a year later largely ended the market for Basic XL. A further expansion, [BASIC XE](../Basic_XE/README.md), never became very popular.
 
 ## CAR-Images:
+
 - [OSS Basic XL 1.02 cartridge](attachments/OSSBasicXL102.car)
 - [OSS Basic XL 1.03 cartridge](attachments/OSSBasicXL103.car) latest cartridge from OSS
 
 ## ROM-Images:
+
 - [OSS Basic XL 1.02 rom image](attachments/OSSBasicXL102.rom)
 - [OSS Basic XL 1.03 rom image](attachments/OSSBasicXL103.rom) latest rom image from OSS
 
 ## ATR-Images:
-- [BASIC_XL_Toolkit_1.02-Disk-Side_A-Original.atr](attachments/BASIC_XL_Toolkit_1.02-Disk-Side_A-Original.atr) including AUTORUN maker ; thank you so much 'kind soul' for your outstanding help with the finding and preserving of this lost software package even OSS didn't had anymore! We are so deep in your debt! Great work, thank you so much!
-- [BASIC_XL_Toolkit_1.02-Disk-Side_B-Original.atr](attachments/BASIC_XL_Toolkit_1.02-Disk-Side_B-Original.atr) including EXTEND (BASIC XL is enlarged with 4K additional code!) ; thank you so much 'kind soul' for your outstanding help with the finding and preserving of this lost software package even OSS didn't had anymore! We are so deep in your debt! Great work, thank you so much!
+
+- [BASIC\_XL\_Toolkit\_1.02-Disk-Side\_A-Original.atr](attachments/BASIC_XL_Toolkit_1.02-Disk-Side_A-Original.atr) including AUTORUN maker ; thank you so much 'kind soul' for your outstanding help with the finding and preserving of this lost software package even OSS didn't had anymore! We are so deep in your debt! Great work, thank you so much!
+- [BASIC\_XL\_Toolkit\_1.02-Disk-Side\_B-Original.atr](attachments/BASIC_XL_Toolkit_1.02-Disk-Side_B-Original.atr) including EXTEND (BASIC XL is enlarged with 4K additional code!) ; thank you so much 'kind soul' for your outstanding help with the finding and preserving of this lost software package even OSS didn't had anymore! We are so deep in your debt! Great work, thank you so much!
 - [BASIC XL Toolkit 1.03-Disk-Side A-Original.atr](attachments/BASIC_XL_Toolkit_Disk-Side_A.atr) including AUTORUN maker
 - [BASIC XL Toolkit 1.03-Disk-Side B-Original.atr](attachments/BASIC_XL_Toolkit_Disk-Side_B.atr) including EXTEND (BASIC XL is enlarged with 4K additional code!)
 
@@ -36,18 +40,20 @@ ROM version 1.02 works with extensions from toolkit 1.02 and 1.03 without errors
 - [Some example programs](attachments/BXL_BXE_programs.zip) ; thanks to Charlie Chaplin from AtariAge. :-)
 
 ## Manuals
-- [30_Days_to_Understanding_BASIC_XL-Bill_Wilkinson_and_Diane_Goldstein.pdf](attachments/30_Days_to_Understanding_BASIC_XL-Bill_Wilkinson_and_Diane_Goldstein.pdf) ; 180 pages, OCR, tera thanks to low.blow from AtariAge, he will never be forgotten!
-- [30_Days_to_Understanding_BASIC_XL-Bill_Wilkinson_and_Diane_Goldstein-GBXL_2022.pdf](attachments/30_Days_to_Understanding_BASIC_XL-Bill_Wilkinson_and_Diane_Goldstein-GBXL_2022.pdf) ; 185 pages ; revised edition 2022 by GoodByteXL. Highly recommended by AtariWiki! This is, without any(!) doubt, the very best edition worldwide available. Nobody does it better. Mega-thanks to GoodByteXL for this outstanding work and the many hours of work to the community. We are deep in your debt! Thank you so much. :-)))
-- [OSS_BASIC_XL-Reference_Manual-1st_Edition_1983.pdf](attachments/OSS_BASIC_XL-Reference_Manual-1st_Edition_1983.pdf) ; 143 pages, OCR, tera thanks to low.blow from AtariAge, he will never be forgotten!
-- [OSS_Basic_XL-Rev._1.4-GBXL_2022.pdf](attachments/OSS_Basic_XL-Rev._1.4-GBXL_2022.pdf) ; 245 pages ; The complete BASIC XL-manual! Language, Run Time and Toolkit. Revised edition 2022 by GoodByteXL. Highly recommended by AtariWiki! This is, without any(!) doubt, the very best edition worldwide available. Nobody does it better. Mega-thanks to GoodByteXL for this outstanding work and the many hours of work to the community. We are deep in your debt! Thank you so much. :-)))
+
+- [30\_Days\_to\_Understanding\_BASIC\_XL-Bill\_Wilkinson\_and\_Diane\_Goldstein.pdf](attachments/30_Days_to_Understanding_BASIC_XL-Bill_Wilkinson_and_Diane_Goldstein.pdf) ; 180 pages, OCR, tera thanks to low.blow from AtariAge, he will never be forgotten!
+- [30\_Days\_to\_Understanding\_BASIC\_XL-Bill\_Wilkinson\_and\_Diane\_Goldstein-GBXL\_2022.pdf](attachments/30_Days_to_Understanding_BASIC_XL-Bill_Wilkinson_and_Diane_Goldstein-GBXL_2022.pdf) ; 185 pages ; revised edition 2022 by GoodByteXL. Highly recommended by AtariWiki! This is, without any(!) doubt, the very best edition worldwide available. Nobody does it better. Mega-thanks to GoodByteXL for this outstanding work and the many hours of work to the community. We are deep in your debt! Thank you so much. :-)))
+- [OSS\_BASIC\_XL-Reference\_Manual-1st\_Edition\_1983.pdf](attachments/OSS_BASIC_XL-Reference_Manual-1st_Edition_1983.pdf) ; 143 pages, OCR, tera thanks to low.blow from AtariAge, he will never be forgotten!
+- [OSS\_Basic\_XL-Rev.\_1.4-GBXL\_2022.pdf](attachments/OSS_Basic_XL-Rev._1.4-GBXL_2022.pdf) ; 245 pages ; The complete BASIC XL-manual! Language, Run Time and Toolkit. Revised edition 2022 by GoodByteXL. Highly recommended by AtariWiki! This is, without any(!) doubt, the very best edition worldwide available. Nobody does it better. Mega-thanks to GoodByteXL for this outstanding work and the many hours of work to the community. We are deep in your debt! Thank you so much. :-)))
 - [OSS Basic XL manual](attachments/BASIC_XL_Manual.pdf) ; 158 pages, OCR, reprint from 8-Bit Classics
-- [OSS-The_Basic_XL_Toolkit-Including_the_BASIC_XL_Runtime_Package-Reference_Manual.pdf](../../../../media/Companies/OSS/BASIC_XL/attachments/OSS-The_BASIC_XL_Toolkit-Including_the_BASIC_XL_Runtime_Package-Reference_Manual.pdf) ; 42 double-pages, OCR
+- [OSS-The\_Basic\_XL\_Toolkit-Including\_the\_BASIC\_XL\_Runtime\_Package-Reference\_Manual.pdf](../../../../media/Companies/OSS/BASIC_XL/attachments/OSS-The_BASIC_XL_Toolkit-Including_the_BASIC_XL_Runtime_Package-Reference_Manual.pdf) ; 42 double-pages, OCR
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ## Source Code for OSS Basic XL version 1.02 from February 5th, 1985:
+
 - [BASICXL102.zip](attachments/BASICXL102.zip) ; thank you so much for your help in this bob1200xl from AtariAge, that is such a great contribution, we really appreciate your help in that case. You will always be in our hearts and we will never forget you.
-![](attachments/Thank_you_bob1200xl.jpg)
-Thank you so much for your help bob1200xl from AtariAge!
+  ![](attachments/Thank_you_bob1200xl.jpg)
+  Thank you so much for your help bob1200xl from AtariAge!
 
 This is(!) the source code for OSS Basic XL 1.02 on two DOS II Version 2.0D disks without any DOS. That means they are DD disks and can be opened with the original 815 DOS, which is inside the archive above.
 
@@ -74,9 +80,11 @@ The txt files are coded in Win Latin 1. Hope the CRs are coming the right way. T
 Bob, we are so deep in your debt. Thank you so much again. :-)
 
 ## Articles
+
 - [BASIC XL Review](BASIC_XL_Review/README.md) (german)
 - [Basic XL Information on Wikipedia](http://en.wikipedia.org/wiki/Optimized_Systems_Software#BASIC_XL)
 
 ## Image
+
 ![](attachments/BASIC_XL.png)
 OSS BASIC XL - manual cover

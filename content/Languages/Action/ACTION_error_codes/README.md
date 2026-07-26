@@ -34,9 +34,9 @@
 |27|Nicht erlaubte TYPE-Konstruktion
 |28|Nicht zulässiges RETURN
 |61|Kein Speicher mehr für die Symboltabelle
-|128|<BREAK>-Taste wurde zum Programmabruch benutzt (*GO)
+|128|<BREAK>-Taste wurde zum Programmabruch benutzt (\*GO)
 /%
-%%tab-Error_Codes
+%%tab-Error\_Codes
 ||#||Error codes
 |0|Out of system memory.
 |1|Missing " (double quote) " in a string.
@@ -68,6 +68,6 @@
 |27|Illegal TYPE syntax.
 |28|Illegal RETURN.
 |61|Out of Symbol Table space.
-|128|BREAK key was used to stop program execution. *Go
+|128|BREAK key was used to stop program execution. \*Go
 /%
 /%

@@ -12,12 +12,11 @@ EPRINT stellt folgende Routinen zur Verfügung:
 - PRINTBE()
 - PRINTCE()
 
-Dies sind meines Erachtens zumindest am Anfang die meist verwendeten Routinen und somit sollte die Mini-LIB __EPRINT__ recht hilfreich sein.
+Dies sind meines Erachtens zumindest am Anfang die meist verwendeten Routinen und somit sollte die Mini-LIB **EPRINT** recht hilfreich sein.
 
 Viel Spaß mit EPRINT.
 
 Erhard Pütz
-
 
 ```
 ;**************************************

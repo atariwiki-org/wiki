@@ -2,9 +2,7 @@
 
 ( work in progress )
 
-[english machine-translation by Google](http://translate.google.de/translate?js=y&prev=_t&hl=en&ie=UTF-8&layout=1&eotf=1&u=http%3A%2F%2Fwiki.strotmann.de%2Fwiki%2FWiki.jsp%3Fpage%3DVFHandbuchKapitel1&sl=de&tl=en) 
-
-
+[english machine-translation by Google](http://translate.google.de/translate?js=y&prev=_t&hl=en&ie=UTF-8&layout=1&eotf=1&u=http%3A%2F%2Fwiki.strotmann.de%2Fwiki%2FWiki.jsp%3Fpage%3DVFHandbuchKapitel1&sl=de&tl=en)
 
 (c) 1985-2010 FORTH-Gesellschaft e.V. Bernd Pennemann. Georg Rehfeld. Dietrich Weineck Klaus Schielslek. Jörg Staben. Klaus Kohl. Carsten Strotmann
 
@@ -22,8 +20,8 @@ Diese FORTH-Worte kann man als bereits kompilierte Module betrachten, wobei imme
 
 Wie fügt man nun diesem lauffähigen Kern eigene Worte hinzu? Das kompilieren der Worte wird in FORTH mit COLON ":" eingeleitet und mit SEMICOLON ";" abgeschlossen.
 
-- __:__ 	erwartet bei der Ausführung einen Namen und ordnet diesem Namen alle nachfolgenden Wörter zu.
-- __;__	beendet diese Zuweisung von Wörtern an den Namen und stellt das neue Wort unter diesem Namen für Aufrufe bereit.
+- **:** 	erwartet bei der Ausführung einen Namen und ordnet diesem Namen alle nachfolgenden Wörter zu.
+- **;**	beendet diese Zuweisung von Wörtern an den Namen und stellt das neue Wort unter diesem Namen für Aufrufe bereit.
 
 ## Interpreter und Compiler
 
@@ -34,23 +32,28 @@ Der Compiler eines FORTH-Systems ist also Teil der Interpreteroberfläche. Es gi
 Auch ":" (COLON) und ";" (SEMICOLON) sind kompilierte Worte, die aber für das System den Compiler ein- und ausschalten. Da sogar die Worte. die den Compiler steuern, "normale" FORTH-Worte sind, fehlen in FORTH die in anderen Sprachen üblichen Compiler-Optionen oder Compiler-Schalter. Der FORTH-Compiler wird mit FORTH-Worten gesteuert.
 
 Der Aufruf eines FORTH-Wortes erfolgt über seinen Namen ohne ein explizites CALL oder GOSUB. Dies führt zum FORTH-typischen Aussehen der Wortdefinitionen:
+
 ```
 : <name> 
     <wort1> <wort2> <wort3>  ... ;
 ```
 
-Die Standard-Systemantwort in FORTH Ist das berühmte "ok". Ein Anforderungszeichen wie 'A>' bei DOS oder ']' beim guten APPLE 11 gibt es nicht! Das kann dazu führen. dass nach einer erfolgreichen Aktion der Bildschirm völlig leer bleibt; getreu der Devise:
+Die Standard-Systemantwort in FORTH Ist das berühmte "ok". Ein Anforderungszeichen wie 'A\>' bei DOS oder '\]' beim guten APPLE 11 gibt es nicht! Das kann dazu führen. dass nach einer erfolgreichen Aktion der Bildschirm völlig leer bleibt; getreu der Devise:
 
-__Keine Nachrichten sind immer gute Nachrichten!__
+**Keine Nachrichten sind immer gute Nachrichten!**
 
 Und - ungewöhnlicherweise - benutzt FORTH die so genannte Postfix Notation (UPN) vergleichbar den HP-Taschenrechnern, die in machen Kreisen sehr beliebt sind. Das bedeutet, FORTH erwartet immer erst die Argumente, dann die Aktion... Statt
+
 ```
 3 + 2 und (5 + 5) * 10 
 ```
+
 heisst es
+
 ```
 2 3 + und 5 5 + 10 *
 ```
+
 Da die Ausdrücke von links nach rechts ausgewertet werden, gibt es in FORTH keine Klammern.
 
 ## Stack
@@ -92,21 +95,21 @@ Aber volksFORTH ist heute immer noch für Rechner mit begrenzten Systemresourcen
 VolksForth ist in der Version 3.90 für die folgenden Rechnersysteme verfügbar:
 
 - 6502 CPU
-** Commodore C64
-** Commodore C16
-** Commodore Plus4
-** Atari XL/XE
-** Apple I
-** Apple II
+  \*\* Commodore C64
+  \*\* Commodore C16
+  \*\* Commodore Plus4
+  \*\* Atari XL/XE
+  \*\* Apple I
+  \*\* Apple II
 - Z80 CPU
-** CP/M
-** Amstrad/Schneider CPC unter AMS-DOS
-** Amstrad NC100
-** Sinclair Research Z88
+  \*\* CP/M
+  \*\* Amstrad/Schneider CPC unter AMS-DOS
+  \*\* Amstrad NC100
+  \*\* Sinclair Research Z88
 - 8088 CPU (Intel / AMD)
-** MS-DOS (in einer DOS-BOX auch unter Windows, Linux, OS/2, MacOS)
+  \*\* MS-DOS (in einer DOS-BOX auch unter Windows, Linux, OS/2, MacOS)
 - 68000 CPU
-** Atari ST
+  \*\* Atari ST
 
 ## Warum soll man in volksFORTH83 programmieren?
 
@@ -124,6 +127,6 @@ Mit diesem Handbuch soll die Unterstützung des volksFORTHS3 noch nicht beendet 
 
 Diesem Handbuch zum volksFORTH83 Ist sowohl als Nachschlagewerk als auch als Lehrbuch für FORTH (speziell volksFORTH) gedacht. Deshalb handelt es sieh nicht, wie bei den anderen volksFORTH-Handbücher, um eine Auflistung des Vokabulars. Statt dessen wird mit ausführlichen Beschreibungen und Programmbeispielen in vielen Kapiteln die Möglichkeiten des FORTH-Systems erklärt. Ergänzt werden die einzelnen Kapitel jeweils um Wortbeschreibungen der darin vorkommenden Befehle (Glossar). Zur Unterscheidung von Beschreibung, FORTH-Worten, Programm-Eingaben und -ausgaben wird mit unterschiedlichen Schrifttypen gearbeitet:
 
-Beschreibungen erfolgen in Proportionalschrift mit Randausgleich. __FORTH-Befehle__ werden Im Text durch Fettschrift hervorgehoben. {{{Eingaben}}} und {{{Programmlistinqs}}} verwenden eine nichtproportionale Schriftart. _Ausgaben_ des FORTH-Interpreter/Compiler sind unterstrichen.
+Beschreibungen erfolgen in Proportionalschrift mit Randausgleich. **FORTH-Befehle** werden Im Text durch Fettschrift hervorgehoben. {{{Eingaben}}} und {{{Programmlistinqs}}} verwenden eine nichtproportionale Schriftart. _Ausgaben_ des FORTH-Interpreter/Compiler sind unterstrichen.
 
 Weiter mit [volkFORTH - Handbook - Chapter 2](../Chapter2/README.md).

@@ -13,7 +13,6 @@ Zuerst schreiben wir ein kleines "Hallo-Welt" Programm, als Demonstration:
   BYE ;
 ```
 
-
 Erklärung: HALLO-WELT ist unser neues Forth Wort. Das Forth-Wort "CR" erzeugt einen Zeilenvorschub auf dem Bildschirm (Carriage Return)
 
 Das Wort ." gibt den Text bis zum folgenden Anführungsstrichen aus (Leerzeichen hinter den ." beachten!)

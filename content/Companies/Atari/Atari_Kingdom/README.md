@@ -3,16 +3,26 @@
 Copyright (C) 1980 Atari, Inc. ; please use with BASIC cartridge inserted
 
 Atari Kingdom CX4102 is one of the first simulation game from Atari with a short source code, easy to read and understand. It is a good choice to get a first view into simulations.
+
 ## CAS-images
-- [Kingdom_side_A_with_instructions.cas](attachments/Kingdom_side_A_with_instructions.cas) ; CAS-image of Kingdom with instructions
-- [Kingdom_side_B_without_instructions.cas](attachments/Kingdom_side_B_without_instructions.cas) ; CAS-image of Kindom without instructions
+
+- [Kingdom\_side\_A\_with\_instructions.cas](attachments/Kingdom_side_A_with_instructions.cas) ; CAS-image of Kingdom with instructions
+- [Kingdom\_side\_B\_without\_instructions.cas](attachments/Kingdom_side_B_without_instructions.cas) ; CAS-image of Kindom without instructions
+
 ## ATR-image
-- [Kingdom_with_DOS_2.0S_complete_cassette_import.atr](attachments/Kingdom_with_DOS_2.0S_complete_cassette_import.atr) ; Atari Kingdom CX4102 complete cassette import on an ATR-image with DOS 2.0S
+
+- [Kingdom\_with\_DOS\_2.0S\_complete\_cassette\_import.atr](attachments/Kingdom_with_DOS_2.0S_complete_cassette_import.atr) ; Atari Kingdom CX4102 complete cassette import on an ATR-image with DOS 2.0S
+
 ## Manual
-- [Atari_Kingdom_Manual.pdf](attachments/Atari_Kingdom_Manual.pdf) ; size: 561 KB ; Atari Kingdom CX4102 manual, 4 pages
+
+- [Atari\_Kingdom\_Manual.pdf](attachments/Atari_Kingdom_Manual.pdf) ; size: 561 KB ; Atari Kingdom CX4102 manual, 4 pages
+
 ## Video with voice, music and data
+
 - [Atari Kingdom cassette-Dual Track with voice, music and data](../../../../media/Companies/Atari/Atari_Kingdom/attachments/Atari_Kingdom-Dual_Track.mp4) ; size: 14.4 MB ; MP4-file taken from Youtube; main start from minute 1:10
+
 ## Box-Images
+
 ![](attachments/Atari_Kingdom_Cover_1.jpg)
 Atari Kingdom CX4102 box cover
 
@@ -20,6 +30,7 @@ Atari Kingdom CX4102 box cover
 Atari Kingdom CX4102 box back
 
 ## Screenshots
+
 ![](attachments/1.jpg)
 Atari Kingdom CX4102 1st screen - beginning of loading
 
@@ -34,7 +45,9 @@ Atari Kingdom CX4102 instruction side 2 of 2
 
 ![](attachments/5.jpg)
 Atari Kingdom CX4102 main screen - 1st start
+
 ## Advertising
+
 ![](attachments/Advertising1.jpg)
 Atari Kingdom CX4102 Advertising 1
 
@@ -43,8 +56,10 @@ Atari Kingdom CX4102 Advertising 2
 
 ![](attachments/Advertising3.jpg)
 Atari Kingdom CX4102 Advertising 3
+
 ## Messages from the source code
-300 IF RND(0)<0.03 THEN GOSUB 250:? " A plague! Half the people died!!":P=INT(P/2)
+
+300 IF RND(0)\<0.03 THEN GOSUB 250:? " A plague! Half the people died!!":P=INT(P/2)
 320 GOSUB 90:PRINT "ACRES TO SELL";:GOSUB 920:IF BAD THEN 320
 370 GOSUB 90:PRINT "ACRES TO BUY";:GOSUB 920:IF BAD THEN 370
 430 GOSUB 90:PRINT "BUSHELS FOR THE PEOPLE";:GOSUB 920:IF BAD THEN 430

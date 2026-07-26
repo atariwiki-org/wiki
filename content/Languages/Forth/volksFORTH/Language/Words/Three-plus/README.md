@@ -1,11 +1,7 @@
-# __3+__ "three-plus" ( n1 | u1 -- n2 | u2 )
-
-
+# **3+** "three-plus" ( n1 | u1 -- n2 | u2 )
 
 ||Forth79||Forth83||ANSI||Forth200x
 |        |        |     |
-
-
 
 %%tabbedSection
 %%tab-english

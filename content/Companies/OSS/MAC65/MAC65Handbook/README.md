@@ -1,8 +1,8 @@
 # MAC/65 Handbook
 
 ---
-__MARKUP IS INCOMPLETE, PLEASE ADD SOME MORE MARKUP IF POSSIBLE__
 
+**MARKUP IS INCOMPLETE, PLEASE ADD SOME MORE MARKUP IF POSSIBLE**
 
 ## INTRODUCTION
 
@@ -29,31 +29,32 @@ specifically designed for screen format development.  With MAC65's line entry
 syntax feature, less time is spent re-assembling programs due to assembly
 syntax errors, allowing more time for actual program development.
 
-__Start up__
+**Start up**
 Power up the disk drive(s) and monitor, leave the computer off. Insert MAC65
 disk in drive #1 and boot system by turning the computer on.  This will load
 and execute DOS XL. Now enter MAC65 (return).  This loads and executes MAC65,
 the Editor/Macro Assembler. Refer to the DOS XL Manual for other capabilities.
 
-__Warm start__
+**Warm start**
 The user can exit to DOSXL by entering the MAC65 command CP (return) or by
 pressing the System Reset key. To return to MAC65, the user can use the DOSXL
 command RUN (return). This "warm starts" MAC65 and does not clear out any
 source lines in memory.
 
-__Backup copy__
+**Backup copy**
 Please do not work with your master disk! Make a back-up copy with DOSXL.
 Consult the DOSXL reference manual for specific instructions. Keep your master
 copy in a safe place.
 
-__Syntax__
+**Syntax**
 The following conventions are used in the syntax descriptions in this manual:
 
 1. Capital letters designate commands, instruction, functions, etc., which
-must be entered exactly as shown (e.g. ENTER,  .INCLUDE, .NOT).
+   must be entered exactly as shown (e.g. ENTER,  .INCLUDE, .NOT).
 
 2.  Lower case letters specify items which may be used. The various types are
-as  follows:
+    as  follows:
+
 ```
      1no       - Line number between 0-65535, inclusive.
 
@@ -80,14 +81,15 @@ as  follows:
        file      reference manual for more specific
                  explanation.
 ```
+
 3.  Items in square brackets denote an optional part of syntax (eg. \[,1no\]).
-When an optional item is followed by (...) the item(s) may be repeated as many
-times as needed.
+    When an optional item is followed by (...) the item(s) may be repeated as many
+    times as needed.
 
 Example:  .WORD exp \[,exp ...\]
 
 4.  Items in parentheses indicate that any one of the items may be used, eg.
-(.Q) (,A).
+    (.Q) (,A).
 
 ## CHAPTER 2:  THE EDITOR
 
@@ -142,6 +144,7 @@ user can terminate a command before completion by hitting the break key (escape
 key on Apple II).
 
 And one last point: If the line is neither a source line or a valid command. The Editor will print:
+
 ```
    What?
 ```
@@ -186,7 +189,7 @@ low memory and building towards high memory.  The resultant tokenized file is
 60% to 80% smaller than its ASCII counterpart, thus allowing larger programs to
 be entered and edited in memory.
 
-__SPECIAL NOTE__:  If, upon entry, a source line contains a syntax error and is so
+**SPECIAL NOTE**:  If, upon entry, a source line contains a syntax error and is so
 flagged by the Editor, the line is entered into Editor memory anyway.  This
 feature allows raw ASCII text files (possibly from other assemblers and
 possibly containing one or several syntax errors as far as MAC/65 is concerned)
@@ -234,6 +237,7 @@ A filespec (#file1, #file3, etc.) can be omitted by substituting a comma in
 which case the respective default will be used.
 
 Example:
+
 ```
        ASM #D2:SOURCE,#D:LIST,#D2:OBJECT
 ```
@@ -242,13 +246,16 @@ In this example, the source will come from D":SOURCE, the assembler will list
 to D:LIST, and the object code will be written to D":OBJECT.
 
 Example:
+
 ```
        ASM #D:SOURCE ,,#D:OBJECT
 ```
+
 In this example, the source will be read from D:SOURCE and the object will be
 written to D:OBJECT.  The assembly listing will be written to the screen.
 
 Example:
+
 ```
        ASM , #P: ,,#D:TEMP
 ```
@@ -260,6 +267,7 @@ label cross reference.  The file TEMP on disk drive 1 will be created and used
 as a temporary file for the cross reference.
 
 Example:
+
 ```
        ASM #D:SOURCE .#P:
 ```
@@ -278,6 +286,7 @@ the DOSXL SAVE command.  See the DOSXL manual for a discussion of LOAD and SAVE
 file formats.
 
 ### 3.2 BLOAD
+
 edit command:  BLOAD
 
 purpose:       allows user to LOAD Binary (memory image)
@@ -304,13 +313,13 @@ edit command:  BSAVE
 purpose:       SAVE a Binary image of a portion of
 memory.  Same as DOSXL SAVE command
 
-usage:         BSAVE #filespec < hxnum1 ,hxnum2
+usage:         BSAVE #filespec \< hxnum1 ,hxnum2
 
 The BSAVE command will save the memory addresses from hxnum1 through hxnum2 to
 the specified device.  The binary file created is compatible with the DOSXL
 SAVe command.
 
-Example:  BSAVE #D:OBJECT<5000,5100
+Example:  BSAVE #D:OBJECT\<5000,5100
 
 This example will save the memory addresses from $5000 through $5100 to the
 file "OBJECT".
@@ -325,12 +334,14 @@ usage:         BYE
 
 BYE will put the user to the Atari Memo Pad or Apple II monitor, as
 appropriate.
+
 ### 3.5 C (Change Memory)
+
 edit command:  C
 
 purpose:       Change memory contents
 
-usage:         c hxnum1 < (,)(hxnum) \[(,)(,hxnum)  ...\]
+usage:         c hxnum1 \< (,)(hxnum) \[(,)(,hxnum)  ...\]
 
 Although MAC/65 does not included a debug capability, there are a few machine
 level commands included for the convenience of the user who would, for example,
@@ -340,12 +351,13 @@ The C command is provided for this purpose.
 C allows the user to modify memory.  Hxnum1 is the change start address.  The
 remaining hxnum(s) are the change bytes.  The comma will skip an address.
 
-Example:  C 50000<20,00,D8,,5
+Example:  C 50000\<20,00,D8,,5
 
 The example will change the memory addresses as follows:  5000 to 20, 5001 to
 00, 5002 to D8, skip 5003, and change 5004 to 5.
 
 ### 3.6 D (Display Memory)
+
 edit command:  D
 
 purpose:       Display contents of memory location(s)
@@ -357,6 +369,7 @@ locations between hxnum1 and hxnum2 will be displayed, else only hxnum1 through
 hxnum1 +8 will be displayed.
 
 ### 3.7 DEL
+
 edit command:  DEL
 
 purpose:       DELetes a line or group of lines from
@@ -371,6 +384,7 @@ line will be deleted.  If two 1nos are entered, all lines between and including
 Note:  1no1 must be present in memory for DEL to execute.
 
 ### 3.8 DOS
+
 edit command:  DOS   \[ or, equivalently, CP \]
 
 purpose:       exit from MAC/65 to the CP of DOS XL.
@@ -382,6 +396,7 @@ CP
 Either DOS or CP returns the user to DOSXL.
 
 ### 3.9 ENTER
+
 edit command:  ENTER
 
 purpose:       allow entry of ASCII (or ATASCII)
@@ -406,12 +421,13 @@ CAUTION:  The "A" option will always clear the text area before entering from
 the filespec.
 
 ### 3.10 FIND
+
 edit command:  FIND
 
 purpose:       to FIND a string of characters some where in MAC/65's editor
 buffer.
 
-usage:         FIND / string/ \[ 1no1 [ ,1no2 \] ] \[ ,A \]
+usage:         FIND / string/ \[ 1no1 \[ ,1no2 \] \] \[ ,A \]
 
 The FIND command will search all lines in memory or the specified line(s) (1no1
 through 1no2) for the "string" given between the matching delimiter.  The
@@ -427,20 +443,21 @@ This example will search for the first occurance of "LDX".
 Example:  FINDLabel25,80
 
 This example will search for the first occurance of "Label" in lines 25 through
-80.
+80\.
 
 If the option "A" is specified, all matches within the specified line range
 will be listed to the screen.  Remember, if no line numbers are given, the
 range is the entire program.
 
 ### 3.11 LIST
+
 edit command:  LIST
 
 purpose:       to LIST the contents of all or part of
 MAC/65's editor buffer in ASCII (ATASCII)
 form to a disk or device.
 
-usage:         LIST 8\[ #filespec, \] \[ 1no1 [ ,1no2 \] ]
+usage:         LIST 8\[ #filespec, \] \[ 1no1 \[ ,1no2 \] \]
 
 LIST lists the source  file to the screen, or device when "#filespec" is
 specified.  If no 1nos are specified, listing will begin at the first line in
@@ -470,6 +487,7 @@ RENumbering the in-memory text before and after the LIST, and by then using
 ENTER with the Merge option, quite complex movements are possible.
 
 ### 3.12 LOAD
+
 edit command:  LOAD
 
 purpose:       to reLOAD a previously SAVEd MAC/65 token
@@ -490,6 +508,7 @@ possible to have DUPLICATE LINE NUMBERS.  Use the REN command if there are
 duplicate line numbers.
 
 ### 3.13 LOMEM
+
 edit command:  LOMEM
 
 purpose:       change the lower bound of editor memory
@@ -516,11 +535,12 @@ new active.  If the user needs to defeat the syntax checking, he/she must use
 the TEXT command.
 
 ### 3.15 NUM
+
 edit command:  NUM
 
 purpose:       initiates automatic line NUMbering mode
 
-usage:         NUM \[ dcnum1 [ ,dcnum2 \] ]
+usage:         NUM \[ dcnum1 \[ ,dcnum2 \] \]
 
 NUM will cause the Editor to auto-number the incoming text from the Screen
 Editor (E:).  A space is automatically printed after the line number.  If no
@@ -543,23 +563,25 @@ typing a CONTROL-3.  On the Apple, the user may terminate the NUM mode by
 pressing CONTROL-C followed by RETURN.
 
 ### 3.16 PRINT
+
 edit command:  PRINT
 
 purpose:       to PRINT all or part of the Editor text
 or source to a disk file or a device.
 
-usage:         PRINT \[filespec\] \[1no1__1no2\]
+usage:         PRINT \[filespec\] \[1no1\_\_1no2\]
 
 Print is exactly like LIST except that the line numbers are not listed.  If a
 file is PRINTed to a disk, it may be reENTERed into the MAC/65 memory using the
 ENTER command with the Append line number option.
 
 ### 3.17 REN
+
 edit command:  REN
 
 purpose:       RENumber all lines in Editor memory.
 
-usage:         REN \[ dcnum1 [ ,dcnum2 \]]
+usage:         REN \[ dcnum1 \[ ,dcnum2 \]\]
 
 REN renumbers the source lines in memory.  If no dcnums are specified, REN will
 renumber the program stating at line 10 in increments of 10.  REN dcnum1 will
@@ -567,12 +589,13 @@ renumber the lines starting at line 10 in increments of dcnum1.  REN dcnum1,
 dcnum2 will renumber starting at dcnum1 in increments of dcnum2.
 
 ### 3.18 REP
+
 edit command:  REP
 
 purpose:       REPlaces occurrence(s) of a given string
 with another given string.
 
-usage: REP/old string/new string/ \[1no1 [,1no2 \]] \[A\]\[Q\]
+usage: REP/old string/new string/ \[1no1 \[,1no2 \]\] \[A\]\[Q\]
 
 The REP command will search the specified lines (all or 1no1 through 1no2) for
 the "old string"
@@ -597,6 +620,7 @@ terminated and control will  return to the Editor.  Of course, if TEXTMODE is
 selected, there can be no syntax errors.
 
 ### 3.19 SAVE
+
 edit command:  SAVE
 
 purpose:       SAVEs the internal (tokenized) form of
@@ -621,6 +645,7 @@ followed by
 The tokenized line
 
 ### 3.20 SIZE
+
 edit command:  SIZE
 
 purpose:       determines and displays the SIZE of
@@ -634,6 +659,7 @@ the highest usable memory address, in that order, using hexadecimal notation
 for the addresses.
 
 ### 3.21 TEXT
+
 edit command:  TEXT
 
 purpose:       allow entry of arbitrary ASCII (ATASCII)
@@ -651,6 +677,7 @@ back and forth between syntax (EDIT) mode and TEXTMODE without clearing the
 Editor's  memory each time.
 
 ### 3.22 ? (hex/dec convert)
+
 edit command:  ?
 
 purpose:       makes hexadecimal/decimal conversions
@@ -684,8 +711,8 @@ object, and cross-reference files (respectively) of a MAC/65 assembly.
 
 And the options avaliable are:
 
--A   source file is Ascii
--D   assembly must be Disk-to-Disk
+\-A   source file is Ascii
+\-D   assembly must be Disk-to-Disk
 
 Remember, if no filenames are given, MAC/65 will be invoked in its interactive
 (Editor) mode.  But, if one or more files are specified, MAC/65 will be invoked
@@ -739,7 +766,7 @@ printer listing, and the file TEST.XRF
 will be used by MAC/65 as a temporary
 file for this purpose.
 
-3.1 ASSEMBLER INPUT
+3\.1 ASSEMBLER INPUT
 
 The Assembler will get a line at a time from the specified device or from
 memory.  If assembling from a device, the file must have been previously SAVEd
@@ -753,7 +780,7 @@ line number + mandatory space + source statement
 
 The source statement may be in one of the following forms:
 
-\[label\] \[6502_instruction_directive\] \[comment\]
+\[label\] \[6502\_instruction\_directive\] \[comment\]
 
 The following examples are valid source lines:
 
@@ -782,7 +809,7 @@ lower case to upper case (except in comments and quoted strings), so the user
 may feel free to type and edit in which ever case he/she feels most comfortable
 with.
 
-3.2 INSTRUCTION FORMAT
+3\.2 INSTRUCTION FORMAT
 
 A) Instruction mnemonics are as described in the MOS Technology Programming
 Manual.
@@ -798,15 +825,15 @@ usually result in a "PHASE ERROR" message.
 
 F) Forward equates are evaluated within the limits of a two pass assembler.
 
-G) "*" designates the current location counter.
+G) "\*" designates the current location counter.
 
-H) Comment lines may begin with ";" or "*".
+H) Comment lines may begin with ";" or "\*".
 
 I) Hex constants begin with "$".
 
 J) The "A" operand is reserved for accumulator addressing.
 
-3.3 LABELS
+3\.3 LABELS
 
 Labels must begin with an Alpha character, "@". or "?".  The remaining
 characters may be as the first or may be "0" to "9" or ".".  The characters
@@ -828,10 +855,10 @@ The following are examples of valid labels:
 TEST1 @.INC LOCATION LOC22A WHAT?
 ADDRESS1.1 EXP.. SINE45TAB.
 
-3.4 OPERANDS
+3\.4 OPERANDS
 
 An operand can be a label, a Macro parameter, a numeric constant, the current
-program counter (*), "A" for accumulator addressing, an expression, or an ASCII
+program counter (\*), "A" for accumulator addressing, an expression, or an ASCII
 character.  The following are examples of the various types of operands:
 
 10 LDA   #VALUE              ; label
@@ -839,39 +866,49 @@ character.  The following are examples of the various types of operands:
 20 .BYTE 123,$45             ; numeric constants
 25 .IF   %0                  ; Macro parameter
 30 CMP   #'A                 ; ASCII character
-35 THISLOC = *               ; current PC
-40 .WORD PMBASE+\[PLNO_4\]*256 ; expression
+35 THISLOC = \*               ; current PC
+40 .WORD PMBASE+\[PLNO\_4\]\*256 ; expression
 
-3.5 OPERATORS
+3\.5 OPERATORS
 
 The following are the operators currently supported by MAC/65:
 
 \[\]  pseudo parentheses
+
 +     addition
+
 - subtraction
-/     division
+  /     division
 - multiplication
-&     binary AND
+  \&     binary AND
+
 ### binary OR
+
 ^     binary EOR
-=     equality, logical
+\=     equality, logical
+
 >     greater than, logical
-<     less than, logical
-< >   inequality, logical
->=    greater or equal, logical
-<=    less or equal, logical
-.OR   logical OR
-.AND  logical AND
+
+\<     less than, logical
+\< \>   inequality, logical
+
+> =    greater or equal, logical
+> \<=    less or equal, logical
+> .OR   logical OR
+> .AND  logical AND
+
 - unary minus
-.NOT  unary logical.  Returns true (1) if expression
-is zero.  Returns false (0) it expression is
-non-zero.
-.DEF  unary logical label definition.  Returns true
-if label is defined.
-.REF  unary logical label reference.  Returns true if
-label has been referenced.
+  .NOT  unary logical.  Returns true (1) if expression
+  is zero.  Returns false (0) it expression is
+  non-zero.
+  .DEF  unary logical label definition.  Returns true
+  if label is defined.
+  .REF  unary logical label reference.  Returns true if
+  label has been referenced.
+
 >     unary.  Returns the high byte of the expression.
-<     unary.  Returns the low byte of the expression.
+
+\<     unary.  Returns the low byte of the expression.
 
 Logical operators will always return either TRUE (1) OR FALSE (0).  However,
 any non-zero value is considered true when making a conditional test.
@@ -880,36 +917,36 @@ Some of these operators perhaps need some explanation as to their usage and
 purpose.  The operators are thus described in groups in the following
 subsections.
 
-3.5.1 Operators:  + - * /
+3\.5.1 Operators:  + - \* /
 
 These are the familiar arithmetic operators.  Remember, though, that they
 perform 16-bit signed arithmetic and ignore any overflows.  Thus, for example,
 the value of $FF00+4096 is $0F00, and no error is generated.
 
-3.5.2 Operators:  & ! ^
+3\.5.2 Operators:  \& ! ^
 
 These are the binary or "bitwise" operators.  They operate on values as 16 bit
 words, performing bit-by-bit ANDs, ORs, or EXCLUSIVE ORs.  They are 16 bit
 equivalents of the 6502 opcodes AND, ORA, and EOR.
 
-EXAMPLES:  $FF00 & $0FF  is $0000
+EXAMPLES:  $FF00 \& $0FF  is $0000
 $03 ! $0A     is $000B
 $003F ^ $011F is $0120
 
-3.5.3 OPERATORS:  = > < <> >= <=
+3\.5.3 OPERATORS:  = \> \< \<\> \>= \<=
 
 These are the familiar comparison operators.  They perform 16 bit unsigned
 compares on pairs of operands and return a TRUE (1) or FALSE (0) value.
 
-EXAMPLES:  3 < 5  returns 1
-5 < 5  returns 0
-5 <= 5 returns 1
+EXAMPLES:  3 \< 5  returns 1
+5 \< 5  returns 0
+5 \<= 5 returns 1
 
 CAUTION:  Remember, these operators always work on PAIRS of operands.  The
-operators ">" and "<" have quite different meanings when used as unary
+operators "\>" and "\<" have quite different meanings when used as unary
 operators.
 
-3.5.4 Operators:  .OR .AND .NOT
+3\.5.4 Operators:  .OR .AND .NOT
 
 These operators also perform logical operations and should not be confused with their bitwise companions. Remember, these operators always return only TRUE or FALSE.
 
@@ -918,21 +955,21 @@ EXAMPLES:	3 .OR 0 	returns 1
 6 .AND 0 	returns 0
 .NOT 7 	returns 0
 
-3.5.5 Operator:	- (unary)
+3\.5.5 Operator:	- (unary)
 
 The minus sign may be used as a unary operator. Its effect is the same as if a minus sign had been used in a binary operation where the first operator is zero.
 
 EXAMPLE:	-2 is $FFFE (same as 0-2)
 
-3.5.6 Operators:	< > (unary)
+3\.5.6 Operators:	\< \> (unary)
 
 These UNARY operators are extremely useful when it is desired to extract just the high order or low order byte of an expression label. Probably their most common use will be that of supplying the high and low order bytes of an address to be used in a "LDA #" or similar immediate instruction.
 
 EXAMPLE:	FLEEP = $3456
-LDA #<FLEEP (same as LDA #$56)
-LDA #>FLEEP (same as LDA #$34)
+LDA #\<FLEEP (same as LDA #$56)
+LDA #\>FLEEP (same as LDA #$34)
 
-3.5.7 Operator:	.DEF
+3\.5.7 Operator:	.DEF
 
 This unary operator tests whether the following label has been defined yet, returning TRUE or FALSE as appropriate.
 
@@ -945,8 +982,7 @@ ZILK = $3000
 
 In this example, the .BYTE string will NOT be generated in the first pass but WILL be generated in the second pass. Thus, any following code will almost undoubtedly generate a PHASE ERROR.
 
-
-3.5.8 Operator:	.REF
+3\.5.8 Operator:	.REF
 
 This unary operator tests whether the following label has been referenced by any instruction or directive in the assembly yet; and, in conjuction with the .IF directive, produces the effect of returning a TRUE or FALSE value.
 
@@ -987,7 +1023,7 @@ DOIT . = 1
 .IF DOIT
 ...
 
-3.5.9 Operator:  \[\]
+3\.5.9 Operator:  \[\]
 
 MAC/65 supports the use of the square brackets as "pseudo parentheses".
 Ordinary round parentheses may NOT be used for grouping expressions, etc., as
@@ -1001,18 +1037,18 @@ it multiplies 3*5
 and adds the 15 to
 GEORGE...probably
 not what you wanted.
-LDA (GEORGE+5)*3      ;Syntax Error!!!
-LDA \[GEORGE_5\]*3      ;OK...the addition
+LDA (GEORGE+5)\*3      ;Syntax Error!!!
+LDA \[GEORGE\_5\]\*3      ;OK...the addition
 is performed before
 the multiplication
-LDA ( \[GEORGE_5\]*3),Y ;See the need
+LDA ( \[GEORGE\_5\]\*3),Y ;See the need
 for both kinds of
 "parentheses"?
 
 REMEMBER:  Operators in MAC/65 expressions follow precedence rules.  The square
 brackets may be used to override these rules.
 
-3.6 ASSEMBLER EXPRESSIONS
+3\.6 ASSEMBLER EXPRESSIONS
 
 An expression is any valid combination of operands and operators which the
 assembler will evaluate to a 16-bit unsigned number with any overflow ignored.
@@ -1020,32 +1056,33 @@ Expressions can be arithmetic or logical.  The following are examples of valid
 expressions:
 
 10  .WORD  TABLEBASE+LINE+COLUMN
-55  .IF .DEF INTEGER .AND \[VER-1_.OR_VER_--3\]
-200 .BYTE >EXPLOT-1, >EXDRAW-1, >EXFILL-1
-300 LDA  # <\[-_ADDRESS^-1\]
+55  .IF .DEF INTEGER .AND \[VER-1\_.OR\_VER\_--3\]
+200 .BYTE \>EXPLOT-1, \>EXDRAW-1, \>EXFILL-1
+300 LDA  # \<\[-\_ADDRESS^-1\]
 305 CMP  # -1
 400 CPX  # 'A
 440 INC  #1+1
 
-3.7 OPERATOR PRECEDENCE
+3\.7 OPERATOR PRECEDENCE
 
 The following are the precedence levels (high to low) used in evaluating
 assembler expressions:
 
 \[\] (pseudo parenthesis)
-> (high byte), < (low byte), .DEF, .REF, - (unary)
-.NOT
-*, /
-+, -
-&, !,  ^
-=, >. <, <=, >=, <> (comparison operators)
-.AND
-.OR
+
+> (high byte), \< (low byte), .DEF, .REF, - (unary)
+> .NOT
+> \*, /
+> +, -
+> \&, !,  ^
+> \=, \>. \<, \<=, \>=, \<\> (comparison operators)
+> .AND
+> .OR
 
 Operators grouped on the same line have equal precedence and will be executed
 in left-to-right order unless higher precedence operator(s) intervene.
 
-3.8 NUMERIC CONSTANTS
+3\.8 NUMERIC CONSTANTS
 
 MAC/65 accepts three types of numeric constants:  decimal, hexadecimal, and
 characters.
@@ -1070,11 +1107,11 @@ A character constant is an apostrophe followed by any printable or displayable
 character.  The value of a character constant is the ASCII (or ATASCII) value
 of the character following the apostrophe.
 
-EXAMPLES:  'A '* '" '=
+EXAMPLES:  'A '\* '" '=
 (as used:) CMP #'=
 CMP #'Z+1 ; same as #$5B
 
-3.9 STRINGS
+3\.9 STRINGS
 
 Strings are of two types.  String literals (example:  "This is a string
 literal"), and string variables for Macros (example:  %$5).
@@ -1094,7 +1131,7 @@ separately in Chapter 5).
 Directives may be classified into three types:  (1) those which produce object
 code for use by the assembled program (e.g., .BYTE, .WORD, etc.); (2)  those
 which direct the assembler to perform some task, such as changing where in
-memory the object code should go or giving a value to a label (e.g., *=, =,
+memory the object code should go or giving a value to a label (e.g., \*=, =,
 etc.); and (3) those which are provided for the convenience of the programmer,
 giving him/her control over listing format, location of source, etc. (e.g.,
 .TITLE,  .OPT, .INCLUDE).
@@ -1112,26 +1149,26 @@ characters.  Strings longer than 70 characters will be truncated.
 
 ### Section 4.1
 
-directive:  *=
+directive:  \*=
 
 purpose:    change current origin of the assembler's
 location counter
 
-usage:      \[label\] *= expression
+usage:      \[label\] \*= expression
 
-The *= directive will assign the value of the expression to the location
-counter.  The expression cannot be forward referenced.  *= must be written with
+The \*= directive will assign the value of the expression to the location
+counter.  The expression cannot be forward referenced.  \*= must be written with
 no intervening spaces.
 
-Example:  50 *= $1234 ;sets the location
+Example:  50 \*= $1234 ;sets the location
 counter to $1234
 
 Another common usage of *= is to reserve space for data to be filled in or used
 at run time.  Since the single character "*" may be treated as a label
-referencing the current location counter value, the form "*= *+exp" is thus the
+referencing the current location counter value, the form "\*= \*+exp" is thus the
 most common way to reserve "exp" bytes for later use.
 
-Example:  70 LOC *= *+1 ;assigns the current
+Example:  70 LOC \*= \*+1 ;assigns the current
 value of the location
 counter to LOC and
 then advances the
@@ -1141,10 +1178,10 @@ counter by one.
 
 CAUTION:  Because any label associated with this directive is assigned the
 value of the location counter BEFORE the directive is executed, it is NOT
-advisable to give a label to "*=" unless, indeed, it is being used as in the
+advisable to give a label to "\*=" unless, indeed, it is being used as in the
 second example (i.e., as a memory reserver).
 
-NOTE:  Some assemblers use "ORG" instead of "*=" and may also have a separate
+NOTE:  Some assemblers use "ORG" instead of "\*=" and may also have a separate
 directive (such as "DS" or "RMB") for "defining storage" or "reserving memory
 bytes".  Use caution when converting from and to such assemblers; pay special
 attention to label usage.  When in doubt, move the label to the next preceding
@@ -1197,8 +1234,8 @@ directive:  .BYTE, .SBYTE
 purpose:    specifies the contents of individual bytes in the output object
 
 usage:
-\[label\] .BYTE  \[+exp] (exp)(strvar)\[(exp)(strvar)...\]
-\[label\] .SBYTE \[+exp] (exp)(strvar)\[(exp)(strvar)...\]
+\[label\] .BYTE  \[+exp\] (exp)(strvar)\[(exp)(strvar)...\]
+\[label\] .SBYTE \[+exp\] (exp)(strvar)\[(exp)(strvar)...\]
 
 The .BYTE and .SBYTE directives allow the user to generate individual bytes of
 memory image in the output object.  Expressions must evaluate to an 8-bit
@@ -1290,12 +1327,12 @@ ENDOFSTRING
 
 ### Section 4.6
 
-Directive:  DBYTE, see_also .WORD
+Directive:  DBYTE, see\_also .WORD
 
 purpose:    specifies Dual BYTE values to be
 placed in the output object.
 
-usage:      \[label\] .DBYTE exp \[,exp_...\]
+usage:      \[label\] .DBYTE exp \[,exp\_...\]
 
 Both the .WORD and .DBYTE directives will put the value of each expression into
 the object code as two bytes.  However, while .WORD will assemble the
@@ -1403,7 +1440,7 @@ usage:      .IF  exp
 .ENDIF
 
 usage note: there may be any number of lines of assembly language code or
-directives between ]IF and .ELSE or .ENDIF and similarly between .ELSE and
+directives between \]IF and .ELSE or .ENDIF and similarly between .ELSE and
 .ENDIF.
 
 When a .IF is encountered, the following expression is evaluated.  If it is
@@ -1428,8 +1465,8 @@ Examples:
 EXAMPLE:
 
 10   .IF 0          ; expression is false
-11   LDA # >ADDRESS ; these two lines will
-12   LDX # <ADDRESS ; not be assembled
+11   LDA # \>ADDRESS ; these two lines will
+12   LDX # \<ADDRESS ; not be assembled
 13   .IF 1
 14   .ERROR "can't get here"
 15;likewise, this can't be assembled because it
@@ -1437,8 +1474,8 @@ EXAMPLE:
 17;
 18   .ELSE
 19;
-20   LDX # <ADDRESS ; these lines will
-21   LDA # >ADDRESS ; be assembled
+20   LDX # \<ADDRESS ; these lines will
+21   LDA # \>ADDRESS ; be assembled
 22   .ENDIF
 23   JSR  PRINTSTRING ; go print the string
 
@@ -1494,7 +1531,7 @@ several people are working on a single project.  In both these cases, the coder
 may use labels beginning with "7" and be sure that there will be no duplicate
 label errors produced.
 
-EXAMPLE:  10 *= $4000
+EXAMPLE:  10 \*= $4000
 11 LDX #3  ; establish a counter
 12 ?LOOP
 13 LDA FROM,X ; get a byte
@@ -1684,7 +1721,7 @@ directive:  .WORD, see also .DBYTE
 
 purpose:    place 16 bit word values in output object
 
-usage:      \[label\] .WORD exp \[,exp_...\]
+usage:      \[label\] .WORD exp \[,exp\_...\]
 
 The .WORD and .DBYTE directives both put the value of each following expression
 into the object code as tow bytes.  But where .WORD will assemble the
@@ -1855,7 +1892,7 @@ course, strings may be similarly referenced, as in %$(INDEX) or %$1.
 
 Examples:
 
-10 LDA # >%1 ; get the high byte of parameter 1.
+10 LDA # \>%1 ; get the high byte of parameter 1.
 15 CMP (%11 ,X) ;yes, that really is number 11.
 20 .BYTE %2-1  ;value of parameter 2 less 1.
 
@@ -1892,20 +1929,20 @@ EXAMPLE:
 15 ;      BUMP address \[increment\]
 16 ; If increment is not given, 1 is assumed
 17 ;
-18 .IF%0=0 .OR %0>2
+18 .IF%0=0 .OR %0\>2
 19 .ERROR "BUMP": Wrong number of parameters"
 20 .ELSE
 21 ;
 22 ; this is only done if 1 or 2 parameters
 23 ;
-24  .IF $0>1 ; did user specify "increment" ?
+24  .IF $0\>1 ; did user specify "increment" ?
 25 ; this is assembled if user gave two parameters
 26 LDA %1    ; add "increment" to "address".
 27 CLC
-28 ADC # <%2 ; low byte of the increment
+28 ADC # \<%2 ; low byte of the increment
 29 STA %1    ; low byte of result
 30 LDA %1 +1 ; high byte of location
-31 ADC # >%2 ; add in high byte of increment
+31 ADC # \>%2 ; add in high byte of increment
 32 STA %1 +1 ; and store rest of result
 33 ;
 34 .ELSE
@@ -1914,7 +1951,7 @@ EXAMPLE:
 37 BNE SKIPHI ; implicitly local label
 38 INC %1 +1 ; must also increment high byte
 39 SKIPHI
-40 .ENDIF    ; matches the .IF %0>1 (line 24)
+40 .ENDIF    ; matches the .IF %0\>1 (line 24)
 41 .ENDIF    ; matches the .IF of line 18
 42 .ENDM     ; terminator.
 
@@ -1960,7 +1997,7 @@ strange and wonderful things could happen
 
 String parameters are represented in a macro definition by the character "%$".  All numeric parameters have a string counterpart, not all of which are useful.  All string parameters have a numeric counterpart (their length).
 
-As a special case, %$0 always returns the macro NAME]
+As a special case, %$0 always returns the macro NAME\]
 
 The following table shows the various string and numeric values returned for a
 given parameter:
@@ -1973,10 +2010,10 @@ NUMERICSYMBOL       "NUMERICSYMBOL"          value of label
 SYMBOL+1            "SYMBOL"                  value of expr
 %$4             the string of parameter 4  value of original
 (above would be used by a macro calling another macro)
--LABEL              "LABEL"                   value of expr
-GEORGE*HARRY+PETE   undefined                 value of expr
+\-LABEL              "LABEL"                   value of expr
+GEORGE\*HARRY+PETE   undefined                 value of expr
 .DEF     CIO        "CIO"                     value of expr
-2 + 2 * 65          undefined                 value of expr
+2 + 2 \* 65          undefined                 value of expr
 
 A Macro string example:
 
@@ -1993,8 +2030,8 @@ A Macro string example:
 20 STRING .BYTE %$1,EOL ; put string here.
 21 ;
 22 PASTSTR
-23  LDX #>STRING ; get string address into X&Y
-24  LDY #<string ; for JSR to 'print string'
+23  LDX #\>STRING ; get string address into X\&Y
+24  LDY #\<string ; for JSR to 'print string'
 25 JSR  STRINGOUT
 26 .ELSE
 27 ; no string...just print an EOL
@@ -2031,18 +2068,18 @@ Using a parameter that the caller left out will produce a MACRO PARAMETER
 error.  Depending upon the macro definition, this may or may not also produce
 undesired results.  An example of unsafe coding:
 
-.If %0>1 .OR %2=0
+.If %0\>1 .OR %2=0
 .WORD %1
 .ENDIF
 
 The danger here occurs if the caller invokes the macro with only one parameter.
 Since %2 is non-existent (and hence undefined), the sub-expression "%2=0" is
-indeed true and the effect of "%0>1" is nullified.  Of course, the lack of
+indeed true and the effect of "%0\>1" is nullified.  Of course, the lack of
 parameter 2 will produce a "PARAMETER ERROR", but it will already be too late.
 A better coding of the above would be:
 
-.IF %0>1
-.IF %2<>0
+.IF %0\>1
+.IF %2\<\>0
 .WORD %1
 .ENDIF
 .ENDIF
@@ -2072,7 +2109,7 @@ sake of brevity.  Any numbers will do, of course.)
 ; the macro, thus saving valuable table space.
 ;
 .MACRO @CH
-.IF %1>7
+.IF %1\>7
 LDA %1 ; channel # is in memory cell
 ASLA
 ASLA
@@ -2080,7 +2117,7 @@ ASLA
 ASLA   ; times 16
 TAX
 .ELSE
-LDX #%*16
+LDX #%\*16
 .ENDIF
 .ENDM
 ;
@@ -2092,7 +2129,7 @@ LDX #%*16
 ; location (non-zero page).
 ;
 .MACRO @CV
-.IF %1<256
+.IF %1\<256
 LDA #%1
 .ELSE
 LDA %1
@@ -2108,17 +2145,17 @@ LDA %1
 ; filespec string and uses it instead.
 ;
 .MACRO @FL
-.IF %1<256
-JMP *+%1+4
+.IF %1\<256
+JMP \*+%1+4
 @F   .BYTE %$1,0
-LDA #<@F
+LDA #\<@F
 STA ICBADR+1,X
-LDA #>@F
+LDA #\>@F
 STA ICBADR+1,X
 .ELSE
-LDA #<%1
+LDA #\<%1
 STA ICBADR,X
-LDA #>%1
+LDA #\>%1
 STA ICBADR+1,X
 .ENDIF
 .ENDM
@@ -2141,13 +2178,13 @@ STA ICBADR+1,X
 ;    be "S:"
 ;
 .MACRO XIO
-.IF %0<2 .OR %0>5
+.IF %0\<2 .OR %0\>5
 .ERROR "XIO:  wrong number of parameters"
 .ELSE
 @CH %2
 @CV %1
 STA ICCOM,X ; command
-.IF %0>=4
+.IF %0\>=4
 @CV %3
 STA ICAUX1,X
 @CV %4
@@ -2213,7 +2250,7 @@ cartridge and MAC/65.  Obviously, MAC/65 also has many more features not
 enumerated here, but they will not impact the transferrance of code originally
 designed for the cartridge (or, for that matter, EASMD).
 
-6.1.1 .OPT OBJ / NOOBJ
+6\.1.1 .OPT OBJ / NOOBJ
 
 By default, the Atari cartridge produces object code, even when the destination
 of the object is RAM memory.  This is a dangerous practice, at best:  it is too
@@ -2224,7 +2261,7 @@ MAC/65 makes a special case of object in memory:  you don't get it unless you
 ask for it.  You MUST have a ".OPT OBJ" directive before the code to be
 generated or the code will not be produced.
 
-6.1.2 OPERATOR PRECEDENCE
+6\.1.2 OPERATOR PRECEDENCE
 
 The cartridge assigns no precedence to arithmetic operators.  MAC/65 uses a
 precedence similar to BASIC's.  Most of the time, this causes no problems; but
@@ -2234,7 +2271,7 @@ Example:  LDA #LABEL-3/256
 seen as LDA #\[LABEL-3\] / 256 by the cartridge
 seen as LDA #LABEL - \[256\] by MAC/65
 
-6.1.3 THE .IF DIRECTIVE
+6\.1.3 THE .IF DIRECTIVE
 
 The implementation of .IF in the cartridge is clumsy and unusable.  MAC/65's
 implementation is more conventional and much more powerful.  Rather than try to
@@ -2244,7 +2281,7 @@ of the two manuals.
 ## CHAPTER 7:  ERROR DESCRIPTIONS
 
 When an error occurs, the system will print
-*** ERROR -
+\*\*\* ERROR -
 
 followed by the error number (unless the error was generated with the .ERROR
 assembler directive) and, for most errors, a descriptive message about the
@@ -2303,7 +2340,7 @@ The Editor syntax buffer has overflowed.  Shorten the input line.
 The .IF-.ELSE-.ENDIF construct is not properly nested.  Since MAC/65 cannot
 detect excess .ENDIFs, the problem must be an EXTRA .ELSE or .ENDIF instead.
 
-10 - VALUE > 255
+10 - VALUE \> 255
 
 The result of an expression exceeded 255 when only one byte was needed and
 allowed.
@@ -2326,7 +2363,7 @@ addresses.  If using conditional assembly (with or without macros), this error
 can result from a .IF evaluating true during one pass and false during the
 other.
 
-14 - *= EXPRESSION UNDEFINED
+14 - \*= EXPRESSION UNDEFINED
 
 The program counter was forward referenced.
 
@@ -2340,7 +2377,7 @@ or break the line into multiple lines.
 An attempt was made to define more than one Macro with the same name.  Only the
 first definition will be valid.
 
-17 - LINE # >65535
+17 - LINE # \>65535
 
 The Editor cannot accept line numbers greater than 65535.
 
@@ -2352,7 +2389,7 @@ abort assembly.
 
 19 - NO ORIGIN
 
-The *= directive is missing from the program.  Note:  This error will only
+The \*= directive is missing from the program.  Note:  This error will only
 occur if the assembler is writing object code.
 
 20 - NUM/REN OVERFLOW
@@ -2402,7 +2439,7 @@ The maximum level of Macro nesting has exceeded 14 levels.
 In a Macro expansion, a reference was made to a nonexistent parameter, or the
 parameter number specified was greater than 63.
 
-128 -255 \[operating_system_errors\]
+128 -255 \[operating\_system\_errors\]
 
 Error numbers over 127 are generated in operating system.  Refer to the DOSXL
 manual for detailed descriptions of such errors and their causes.
@@ -2440,7 +2477,7 @@ If no buffer given, prints just a CR on chan.  If no length given, length
 assumed to be 255 or position of CR, which ever is smaller.  Buffer may be
 literal string, in which case length is ignored if given.
 
-INPUT chan,buffer \[length]\
+INPUT chan,buffer \[length\]\\
 
 If no length given, defaults to 255 bytes.
 
@@ -2467,7 +2504,7 @@ NOTES:
 containing a channel number (0 through 7).
 
 "aux1", "aux2", "length" and "command" may all be either literal numbers (0 to
-255) or memory locations.
+255\) or memory locations.
 
 "filename" may be either a literal string (e.g., "D:FILE1.DAT") or a memory
 location, the latter assumed to be the address of the start of the filename

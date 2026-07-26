@@ -207,6 +207,7 @@ Bei dieser Auswertung wird aus dem QueHtext zu wenig deutlich, daß bei ZWEI und
 =OR prüft deshalb einen Testwert n2 auf Gleichheit mit einer unter einem Flag f1 liegenden Zahl n2. Das Ergebnis dieses Tests wird mit dem bereits vorliegenden Flag OR-verknüpft. Dieses neue Flag f2 und der Testwert nl werden Übergeben:
 
 =OR Definition in Forth
+
 ```
   : =or  ( n1 f1 n2 -- n1 f2 )
     2 pick
@@ -214,6 +215,7 @@ Bei dieser Auswertung wird aus dem QueHtext zu wenig deutlich, daß bei ZWEI und
 ```
 
 =OR Definition in 8086 Assembler
+
 ```
    code 0or     ( n1 f1 n2 -- n1 f2 )
       A D xchg    D pop
@@ -289,21 +291,21 @@ Herr H. Sehnitter hat diesen Eaker-CASE für das volks4TH implementiert und dabe
 
 Diese Implementierung des Eaker-CASE stellt eine Verbesserung gegenüber dem Original dar, indem Herr Schnitter die Kontrollstruktur um ELSECASE erweitert hat. Seibstverständlich ist die neue Version vollkommen aufwärtskompatibel mit der Originalversion.
 
-__Verbesserung__:
+**Verbesserung**:
 
 In der Originalversion der CASE-Struktur ist es nicht möglich, zwischen dem letzten ENDOF und ENDCASE einen Wert oder ein Flag auf den Stapel zu legen, da ENDCASE grundsätzlich den "Top of Stack" entfernte.
 
 In der verbesserten Version bereinigt ELSECASE den Stapel. ELSECASE muß jedoch nicht aufgerufen werden; in diesem Fall kompiliert ENDCASE wie bisher ein DROP. Es ist jetzt möglich, zwischen den Worten ELSECASE und ENDCASE — wie auch zwischen OF und ENDOF — einen Wert auf den Stapel zu legen und diesen außerhalb der CASE-Kontrollstruktur zu verwenden.
 
-__Änderung__:
+**Änderung**:
 
-Die Vorwärtsreferenzen werden nicht über den Stack aufgelöst, sondern über eine verkettete Liste. Die Variable __caselist__ enthält die Startadresse für noch nicht bekannte Sprungadressen. Die Schachtelungstiefe mehrerer CASE-Konstruktionen ist beliebig und wird durch __initlist__ gelöst. __>marklist__ füllt zur Kompilierzeit die Liste der Vorwärtsreferenzen und __>resolvelist__ löst sie wieder auf.
+Die Vorwärtsreferenzen werden nicht über den Stack aufgelöst, sondern über eine verkettete Liste. Die Variable **caselist** enthält die Startadresse für noch nicht bekannte Sprungadressen. Die Schachtelungstiefe mehrerer CASE-Konstruktionen ist beliebig und wird durch **initlist** gelöst. **\>marklist** füllt zur Kompilierzeit die Liste der Vorwärtsreferenzen und **\>resolvelist** löst sie wieder auf.
 
-__Anwendungshinweis__:
+**Anwendungshinweis**:
 
-Wenn diese Definitionen außerhalb der Zusammenstellung des Arbeitssystems zugeladen werden, sollten nach dem Compilieren die Namen der mit | als headerless markierten Worte mit __clear__ entfernt werden.
+Wenn diese Definitionen außerhalb der Zusammenstellung des Arbeitssystems zugeladen werden, sollten nach dem Compilieren die Namen der mit | als headerless markierten Worte mit **clear** entfernt werden.
 
-Das Beispiel einer Tastatuabfrage auf CTRL-Tasten zeigt (MS-DOS), wie dieses CASE-Konstrukt einzusetzen ist. Wichtig ist hierbei, daß das __OF__ selbst die Gleichheit der beiden vorliegenden Werte prüft und in diesem Fall die Anweisungen zwischen __OF__ und __ENDOF__ ausführt.
+Das Beispiel einer Tastatuabfrage auf CTRL-Tasten zeigt (MS-DOS), wie dieses CASE-Konstrukt einzusetzen ist. Wichtig ist hierbei, daß das **OF** selbst die Gleichheit der beiden vorliegenden Werte prüft und in diesem Fall die Anweisungen zwischen **OF** und **ENDOF** ausführt.
 
 ```
 : Control    bl word 1+ c@  $BF and  state @  IF [compile] Literal THEN : immediate
@@ -400,7 +402,7 @@ Bei den bisherigen Lösungen wurden immer eine Reihe von Vergleichen zwischen ei
 
 Wenn FORTH-Worte in Tabellen abgelegt werden sollen, stellt sich das Problem, daß ein FORTH-Wort bei seinem Aufruf normalerweise die einkompilierten Worte ausführt. Bei einer Tabelle ist das nicht erwünscht; dort ist sinnvollerweise gefordert, daß die Startadresse der Tabelle übergeben wird, um den Fall-Index als Offset in diese Tabelle zu nutzen.
 
-Dies läßt sich in volksFORTH entweder auf die traditionelle Weise mit ~] und ~[ oder dem volksFORTH-spezifischen __Create:__ lösen:
+Dies läßt sich in volksFORTH entweder auf die traditionelle Weise mit ~\] und ~\[ oder dem volksFORTH-spezifischen **Create:** lösen:
 
 ```
 Create Glas
@@ -414,7 +416,7 @@ Create: Glas
         trinken ;
 ```
 
-Diese Tabelle Glas macht auch deutlich, welche Punktion das Dummy-Wort __schieben__ außer einer besseren Lesbarkeit noch hat: Es löst die Schwierigkeit, daß 6 möglichen Wurfergebnissen nur 4 mögliche Aktionen gegenüberstehen.
+Diese Tabelle Glas macht auch deutlich, welche Punktion das Dummy-Wort **schieben** außer einer besseren Lesbarkeit noch hat: Es löst die Schwierigkeit, daß 6 möglichen Wurfergebnissen nur 4 mögliche Aktionen gegenüberstehen.
 
 Die Art und Weise des Zugriffs in BEWEGEN entspricht dem Zugriff auf eine Zahl in einem eindimensionalen Feld, einem Vektor:
 
@@ -432,7 +434,7 @@ Die Art und Weise des Zugriffs in BEWEGEN entspricht dem Zugriff auf eine Zahl i
 
 Dieses Wort RICHTIG läßt zwar Werte kleiner als 1 und größer als 6 zu, justiert sie aber auf den Bereich zwischen 1 und 6. Auch hier müßte eine Möglichkeit geschaffen werden, ein Wurfergebnis außerhalb der 6 Möglichkeiten als Betrugsversuch zurückzuweisen!
 
-Die Verbindung von Tabelle und Zugriffsprozedur wird von dem Wort :Does> vorgenommen:
+Die Verbindung von Tabelle und Zugriffsprozedur wird von dem Wort :Does\> vorgenommen:
 
 ```
 \ :Does> für  Create <name> :Does> <action> ;  ks 25 aug 88
@@ -442,7 +444,7 @@ Die Verbindung von Tabelle und Zugriffsprozedur wird von dem Wort :Does> vorgeno
     (does>  corrent @  context !  hide 0 ] ;
 ```
 
-Dieses Wort __:DOES>__ weist dem letzten über __Create__ definierten Wort einen Laufzeit-Teil zu. Dieses Wort wurde von Klaus Schleisiek programmiert auch hier gilt der Hinweis, nach dem Kompilieren das mit | als headerless deklarierte Wort durch __clear__ zu löschen.
+Dieses Wort **:DOES\>** weist dem letzten über **Create** definierten Wort einen Laufzeit-Teil zu. Dieses Wort wurde von Klaus Schleisiek programmiert auch hier gilt der Hinweis, nach dem Kompilieren das mit | als headerless deklarierte Wort durch **clear** zu löschen.
 
 ```
 Create: Auswertung.8
@@ -454,7 +456,7 @@ Create: Auswertung.8
 :DOES> richtig bewegen ;
 ```
 
-Ohne :DOES> sind die Tabelle und die Zugriffsprozeduren voneinander unabhängige Worte:
+Ohne :DOES\> sind die Tabelle und die Zugriffsprozeduren voneinander unabhängige Worte:
 
 ```
 : CRAPS1
@@ -485,7 +487,7 @@ Bei häufigerem Einsatz solcher Tabellen bietet sich der Einsatz von "positional
    : Does>  ( pfa -- ) swap 2* + perform ;  
 ```
 
-Eine sehr elegante Möglichkeit, die Fehlerbehandlung im Falle eines unglaubwürdigen Fall-Indexes zu handhaben, bietet das Wort __Associative:__. Dieses Wort __Associative:__ durchsucht eine Tabelle nach einer Übereinstimmung zwischen einem Zahlenwert auf dem Stack und den Zahlenwerten in der Tabelle und liefert den Index der gefundenen Zahl (match) zurück. Im Falle eines Mißer­folgs (mismatch) wird der größtmögliche Index +1 ( out of range = maxIndex + 1 ) übergeben:
+Eine sehr elegante Möglichkeit, die Fehlerbehandlung im Falle eines unglaubwürdigen Fall-Indexes zu handhaben, bietet das Wort **Associative:**. Dieses Wort **Associative:** durchsucht eine Tabelle nach einer Übereinstimmung zwischen einem Zahlenwert auf dem Stack und den Zahlenwerten in der Tabelle und liefert den Index der gefundenen Zahl (match) zurück. Im Falle eines Mißer­folgs (mismatch) wird der größtmögliche Index +1 ( out of range = maxIndex + 1 ) übergeben:
 
 ```
 : Associative:   ( n -- )
@@ -512,13 +514,14 @@ Eine sehr elegante Möglichkeit, die Fehlerbehandlung im Falle eines unglaubwür
     schimpfen ; 
 ```
 
-Statt der Primitivabsicherung über MIN und MAX wird eine "out of range" Fehlerbehandlung namens __schimpfen__ an der Tabellenposition maxIndex +1 durchgeführt.
+Statt der Primitivabsicherung über MIN und MAX wird eine "out of range" Fehlerbehandlung namens **schimpfen** an der Tabellenposition maxIndex +1 durchgeführt.
 
 ### Einsatzmöglichkeiten
 
 Dieser letzte Teil der Ausführungen über die Möglichkeiten, eine CASE-Situation zu handhaben, greift Anregungen aus der Literatur (E. Floegel, FORTH Handbuch (S. 109) und W. Waigaard, Menus in FORTH, Elektroniker, 9/88 (S.109 ff.)) auf.
 
 Dazu werden zwei Worte definiert:
+
 - CLS - löscht den gesamten Bildschirm und
 - CELLS - macht	die Berechnung des Tabellenzugriffs deutlicher
 
@@ -527,7 +530,7 @@ Dazu werden zwei Worte definiert:
 : cells  2* ;
 ```
 
-Das Inhaltliche und die tabellarische Struktur bleiben unverändert, lediglich die Behandlung einer "out of range" Situation wird diesmal mit __min__ und __max__ und zweimaligem Eintragen der Fehler-Routine __schimpfen__ verwirklicht.
+Das Inhaltliche und die tabellarische Struktur bleiben unverändert, lediglich die Behandlung einer "out of range" Situation wird diesmal mit **min** und **max** und zweimaligem Eintragen der Fehler-Routine **schimpfen** verwirklicht.
 
 ```
 Create: Handlung
@@ -547,7 +550,7 @@ Create: Handlung
    8 0 DO cr I dup . auswerten  2 spaces LOOP ;
 ```
 
-__AUSWÄHLEN__ übergibt bei gegebenem Vektor und gegebenem Index einen Zeiger auf die "code field address" (cfa) des entsprechenden Wortes. __AUSWERTEN__ führt das so ausgewählte Wort aus und __.ALL__ diente nur zur Kontrolle. Solch ein Wort, das angelegte Datenstrukturen auf dem Bildschirm darstellt, sollte in der Entwicklungsphase eines Programmes immer dabei sein.
+**AUSWÄHLEN** übergibt bei gegebenem Vektor und gegebenem Index einen Zeiger auf die "code field address" (cfa) des entsprechenden Wortes. **AUSWERTEN** führt das so ausgewählte Wort aus und **.ALL** diente nur zur Kontrolle. Solch ein Wort, das angelegte Datenstrukturen auf dem Bildschirm darstellt, sollte in der Entwicklungsphase eines Programmes immer dabei sein.
 
 Eine weitere M5glichkeit, Werte in einen Vektor einzutragen, hat Herr Floegel in seinem Buch "FORTH Handbuch" dargestellt:
 
@@ -572,7 +575,7 @@ Create Tabelle  8 cells allot
 : .Tabelle ( -- )  cr  8 0 DO cr I .action LOOP ;
 ```
 
-Hier besteht mit __.ACTION__ und __.TABELLE__ die Möglichkeit, sich den Vektor darstellen zu lassen. In ähnlicher Weise werden auch im Kommandozeilen-Editor CED die neuen Aktionen in die Eingabe-Vektoren eingetragen.
+Hier besteht mit **.ACTION** und **.TABELLE** die Möglichkeit, sich den Vektor darstellen zu lassen. In ähnlicher Weise werden auch im Kommandozeilen-Editor CED die neuen Aktionen in die Eingabe-Vektoren eingetragen.
 
 Eine geringfügige Modifikation aus "W. Waigaard, Menus in FORTH" soll die VerknQpfung eines Vektors von Worten und einer Menü-Option zeigen:
 
@@ -584,14 +587,14 @@ Create function
       swap  0 max 7 min  cells + ;
 ```
 
-__function__ ist ein execution vector, der mit __NOOP__ vorbesetzt ist. Zur Laufzeit liefert er die Adresse des indizierten Elementes zurück.
+**function** ist ein execution vector, der mit **NOOP** vorbesetzt ist. Zur Laufzeit liefert er die Adresse des indizierten Elementes zurück.
 
 ```
 : .action ( i addr -- )
   @ >name  bright .name normal ;
 ```
 
-__.WORD__ gibt den Namen eines Wortes aus, dessen CFA in eine Adresse eingetragen wurde.
+**.WORD** gibt den Namen eines Wortes aus, dessen CFA in eine Adresse eingetragen wurde.
 
 ```
 : option   ( i -- )
@@ -602,7 +605,7 @@ __.WORD__ gibt den Namen eines Wortes aus, dessen CFA in eine Adresse eingetrage
   function .action ;         \ i addr
 ```
 
-__option__ holt die Adresse des auf __option__ folgenden Wortes. Das Wort soll nicht ausgeführt werden, sondern das nachfolgende. Nur der Pointer auf das Wort soll ausgewertet werden. Nach dem übergebenen Index wird der Pointer in __function__ eingetragen. Der Name des so eingetragenen Wortes wird angezeigt!
+**option** holt die Adresse des auf **option** folgenden Wortes. Das Wort soll nicht ausgeführt werden, sondern das nachfolgende. Nur der Pointer auf das Wort soll ausgewertet werden. Nach dem übergebenen Index wird der Pointer in **function** eingetragen. Der Name des so eingetragenen Wortes wird angezeigt!
 
 ```
 \ Menü      jrp 06feb89
@@ -617,9 +620,10 @@ __option__ holt die Adresse des auf __option__ folgenden Wortes. Das Wort soll n
    7 option schimpfen ;
 ```
 
-Wenn das Wort __MENUE__ aufgerufen wird, werden nicht nur die Optionen in die Tabelle eingetragen, sondern auch namentlich auf dem Bildschirm dargestellt. Diese Technik bietet sich für eine Menüzeile an fester Bildschirmposition an, ähnlich der Statuszeile des volksFORTH. Zum Ändern solcher Menüpunkte bieten sich die Funktionstasten an:
+Wenn das Wort **MENUE** aufgerufen wird, werden nicht nur die Optionen in die Tabelle eingetragen, sondern auch namentlich auf dem Bildschirm dargestellt. Diese Technik bietet sich für eine Menüzeile an fester Bildschirmposition an, ähnlich der Statuszeile des volksFORTH. Zum Ändern solcher Menüpunkte bieten sich die Funktionstasten an:
 
 ''MS-DOS''
+
 ```
 : fkey ( -- )
   key &58 + abs  function perform ;
@@ -629,7 +633,7 @@ FKEY liefert beim Druck einer Funktionstaste einen Wert von -59 bis -68 zu­rüc
 
 # Rekursion
 
-Bevor die Technik der Rekursion für das volksFORTH dargestellt wird, soll ein anderes Wort __.LASTNAME__ zeigen, daß das Wort __LAST__ mit dem in der Literatur oft anzutreffenden __LATEST__	identisch ist: Beide Worte liefern die "name field address" (nfa) des zuletzt definierten Wortes im CURRENT-Vokabular. Das Wort __LAST'__ dagegen liefert die "code field address" (cfa) des zuletzt definierten Wortes.
+Bevor die Technik der Rekursion für das volksFORTH dargestellt wird, soll ein anderes Wort **.LASTNAME** zeigen, daß das Wort **LAST** mit dem in der Literatur oft anzutreffenden **LATEST**	identisch ist: Beide Worte liefern die "name field address" (nfa) des zuletzt definierten Wortes im CURRENT-Vokabular. Das Wort **LAST'** dagegen liefert die "code field address" (cfa) des zuletzt definierten Wortes.
 
 ```
 : .lastname  last @ .name ;
@@ -637,7 +641,7 @@ Bevor die Technik der Rekursion für das volksFORTH dargestellt wird, soll ein a
 
 Die Rekursion ist eine Technik, bei der ein Wort sich immer wieder selbst aufruft. Eines der bekannten Beispiele dafür ist die Berechnung der Fakultät einer positiven ganzen Zahl. Hierbei ergibt sich n!  aus dem Produkt aller ihrer Vorgänger.
 
-Im volksFORTH ist der Selbstaufruf eines Wortes durch __RECURSIVE__ gekennzeichnet, so daß sich ein Programm zur Fakultätsberechnung wie folgt präsentiert:
+Im volksFORTH ist der Selbstaufruf eines Wortes durch **RECURSIVE** gekennzeichnet, so daß sich ein Programm zur Fakultätsberechnung wie folgt präsentiert:
 
 ```
 : fakultät  ( +n -- n! )
@@ -653,7 +657,7 @@ Im volksFORTH ist der Selbstaufruf eines Wortes durch __RECURSIVE__ gekennzeichn
  cr  6 fakultät .
 ```
 
-Allerdings findet sich — vor allem in der fig-FORTH-Literatur — ein Wort __MYSELF__, das mit dem in FORTH83-Umgebungen anzutreffenden __RECURSE__ identisch ist. Da auch diese Konstruktion, bei der MYSELF/RECURSE als Platshalter für den Wortnamen dienen, gerne eingesetzt wird, werden die möglichen Definitionen und eine weitere Form von FAKULTÄT gezeigt:
+Allerdings findet sich — vor allem in der fig-FORTH-Literatur — ein Wort **MYSELF**, das mit dem in FORTH83-Umgebungen anzutreffenden **RECURSE** identisch ist. Da auch diese Konstruktion, bei der MYSELF/RECURSE als Platshalter für den Wortnamen dienen, gerne eingesetzt wird, werden die möglichen Definitionen und eine weitere Form von FAKULTÄT gezeigt:
 
 ```
 : myself  last @ name> , ; immediate
@@ -672,7 +676,7 @@ Allerdings findet sich — vor allem in der fig-FORTH-Literatur — ein Wort __M
           THEN ;
 ```
 
-Bei der Verwendung von __RECURSE__ wird lediglich __MYSELF__ dadurch ersetzt:
+Bei der Verwendung von **RECURSE** wird lediglich **MYSELF** dadurch ersetzt:
 
 ```
 ...

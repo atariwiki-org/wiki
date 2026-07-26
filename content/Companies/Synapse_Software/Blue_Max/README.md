@@ -9,7 +9,6 @@ Copyright (C) Bob Polin all versions, 1984 Synapse Software Corporation (US), 19
 Blue Max from Bob Polin is one of the most outstanding games in the Atari era.
 
 ## Source Code
+
 - [Blue Max Source disk 1](attachments/Blue_Max_Source_disk_1.atr) ; please use the [Synapse Assembler 'SynAssembler' by Steve Hales.](../SynAssembler/README.md) to look at
 - [Blue Max Source disk 2](attachments/Blue_Max_Source_disk_2.atr) ; please use the [Synapse Assembler 'SynAssembler' by Steve Hales.](../SynAssembler/README.md) to look at
-
-

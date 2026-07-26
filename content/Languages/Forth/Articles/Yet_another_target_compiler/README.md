@@ -2,10 +2,8 @@
 
 Yet Another Target Compiler by Eric S. Johansson
 
-
 January 6, 1987
 Yet Another Target Compiler                                     Page 2
-
 
 ## FORTH TARGET CODE GENERATOR
 
@@ -57,7 +55,7 @@ A meta compiler is a  single  pass  compiler  written  in  forth, producing  cod
 compiling.  Which source code to use depends on which environment  theapplication  is  compiled  for,  local or target.  Two sources for one
 application can cause many headaches in  application  development  and maintenance.
 
-Several immediate and defining  words  create  problems  in  meta compiling.   These words include but are not limited to:  program flow control constructs, "compile", "\[compile\]" "create", "."" (dot-quote), and  "does>" .  Since immediate and defining words refer to and modify the local environment, problems arises when  compiling  for  a  target environment.
+Several immediate and defining  words  create  problems  in  meta compiling.   These words include but are not limited to:  program flow control constructs, "compile", "\[compile\]" "create", "."" (dot-quote), and  "does\>" .  Since immediate and defining words refer to and modify the local environment, problems arises when  compiling  for  a  target environment.
 
 The usual solution changes words referring to a local environment to  refer to a target environment and this fix introduces ambiguities. As an example of these ambiguities let's look at constants.
 
@@ -143,7 +141,6 @@ Traditionally, in a multi-pass compiler, a compiler pass finishes executing  bef
 - The second pass occurs whenever a definition is completed.
 - The third pass occurs when all definitions are  compiled  and production of an executable target image is desired.
 
-
 The first two passes are tightly coupled and  control  is  passed between  the first pass code and the second pass code.  The third pass is independent of the first two passes.  It will run  much  after  the first  two passes have been completed.  The third pass is analogous to
 a linking loader.
 
@@ -153,7 +150,6 @@ Forth definitions are complete when next definition  starts.   At that  time,  a
 
 When the second pass is done, control  is  returned  to  the  the first pass and next definition is compiled.
 
-
 ## Pass 1 Description -
 
 The first pass of a multi-pass forth  compiler  is  no  different from a normal forth compiler except for tracking compiled data and its data type.
@@ -161,7 +157,6 @@ The first pass of a multi-pass forth  compiler  is  no  different from a normal 
 Forth normally ignores data types.  It knows about 8 bit, 16 bit, and  32 bit integers.  But it ignores the type of data associated with its storage allocations.  Is that storage a pointer, character string, or literal number?  Currently forth can not tell.
 
 It is relatively easy to change forth to record data types.   The changes  to  the compiler are minimal and are described under compiler changes.  Most of the time forth  correctly  records  data  types  but there  are  a  few  situations  where  it  won't.   At those times the programmer must explicitly state the type of data compiled.
-
 
 ## Pass 2 Description -
 
@@ -192,8 +187,6 @@ code and fig-forth style headers and the third pass  syntax.   If  the
 target  environment  changes,  the back end must change to accommodate
 them.
 
-
-
 ## Pass 3 Description -
 
 The third pass converts the output of the  second  pass  into  an
@@ -202,8 +195,6 @@ assembler with the proper macros.
 
 If an assembler exists without macro capability, the second  pass
 back end can be modified to do the macro expansion for the third pass.
-
-
 
 ## Data Types And The Code They Generate -
 
@@ -220,18 +211,14 @@ integers  other  than  8  and  16 bit integers (i.e.  double, quad, or
 longer  integers).   Strings   are   considered   multi-byte   storage
 Yet Another Target Compiler                                     Page 9
 
-
 allocations.   Longer  integers  are  either  recorded  as  multi-byte
 storage or as multi-integer storage.
 Yet Another Target Compiler                                    Page 10
-
 
 ### MODULES
 
 The changes to a forth compiler can be  broken  up  into  several
 distinct modules.  Each one is described in detail below.
-
-
 
 ## Forth Compiler Modifications
 
@@ -246,18 +233,17 @@ compiler.
 
 - e, places execution tokens into dictionary and logs tokens
 
-- address_literal creates an embedded address constant.
+- address\_literal creates an embedded address constant.
 
 - compile, interpret, and \[compile\] change to use e,
 
 - back changes to use a,
 
-- ' changes to use address_literal
+- ' changes to use address\_literal
 
 - create is renamed to (create)
 
 - define an execution vector named create
-
 
 The changes can be made to the original compiler in  one  of  two
 ways.   Change  the  source code and recompile a new kernel or compile
@@ -268,42 +254,37 @@ practical  only  when the source code of the compiler is available and
 can be used to regenerate  a  forth  system.   Examples  of  this  are
 fig-forth and F83.
 
-
-
-2.1.1  Logging Data Types -
+2\.1.1  Logging Data Types -
 
 The data type logging function has two halves.  A recording  half
-and  a  playback half.  The recording half, "mark_it" records the data
-types produced by the compiler.  The playback  half,  "get_next_mark",
+and  a  playback half.  The recording half, "mark\_it" records the data
+types produced by the compiler.  The playback  half,  "get\_next\_mark",
 returns the data type and the address that data type refers to.
 
-"mark_it" is used  by  ",",  "c,",  "a,"  "e,"  and  "allot"  for
+"mark\_it" is used  by  ",",  "c,",  "a,"  "e,"  and  "allot"  for
 recording  every  data  type in a data type log.  "allot" also records
 the amount of storage allocated.
 Yet Another Target Compiler                                    Page 11
 
-
-Recording data types uses the word "mark_it".  A typical  use  of
-"mark_it" follows:
+Recording data types uses the word "mark\_it".  A typical  use  of
+"mark\_it" follows:
 
 : (i,)
-integer_mark mark_it
+integer\_mark mark\_it
 (,)
 ;
 
-"integer_mark" is a constant used as an integer data  type  marker  in
-the  data  type log.  "mark_it" places each data type mark in a buffer
-called  "data_type_log".   "(,)"  compiles  the   integer   into   the
+"integer\_mark" is a constant used as an integer data  type  marker  in
+the  data  type log.  "mark\_it" places each data type mark in a buffer
+called  "data\_type\_log".   "(,)"  compiles  the   integer   into   the
 dictionary.
 
-The other data type marks are:  "byte_mark"  for  logging  bytes,
-"address_mark"  for  logging  addresses,  "execute_mark"  for  marking
-execution tokens and "storage_mark" for logging  storage  allocations.
-All data type marks are single word elements except for "storage_mark"
+The other data type marks are:  "byte\_mark"  for  logging  bytes,
+"address\_mark"  for  logging  addresses,  "execute\_mark"  for  marking
+execution tokens and "storage\_mark" for logging  storage  allocations.
+All data type marks are single word elements except for "storage\_mark"
 which is a two word element.  The second  element  is  the  amount  of
 storage allocated in bytes.
-
-
 
 ## Target Compiler Setup And Control
 
@@ -311,11 +292,11 @@ Basic compiler control is provided.  The target compiler  can  be
 started,  finished  and  turned on and off.  Dictionary headers can be
 left in or turned off.
 
-start_target_compiler and "start_target_compiler setup the target
-compiler.   "start_target_compiler  takes  a  filename  pointer  as an
+start\_target\_compiler and "start\_target\_compiler setup the target
+compiler.   "start\_target\_compiler  takes  a  filename  pointer  as an
 argument and opens that file for target compiler output.
 
-End_target_compiler shuts down the target compiler.  It  finishes
+End\_target\_compiler shuts down the target compiler.  It  finishes
 output and closes any open files.
 
 Near and far control the output  of  the  target  compiler.   Far
@@ -326,8 +307,6 @@ Heads and tails control header production.  Heads turns on header
 production.   Tails turns off header production leaving the definition
 code only (the tail end).
 
-
-
 ## Converting Definition To Symbolic Code
 
 # Definitions And Data Types Logged -
@@ -336,7 +315,6 @@ As stated earlier, every definition creates a list of data  types
 associated  with that definition.  This section shows the relationship
 of data types logged and the code compiled.
 Yet Another Target Compiler                                    Page 12
-
 
 What follows is an example of a simple definition.  It multiplies
 by  two  by  adding  the  input  to itself.  The picture describes the
@@ -368,44 +346,38 @@ tokens.    They   represent  byte  and  integer  storage  allocations.
 Representing different sized integers explicitly enhances  the  code's
 ability to be independent of byte order.
 
+2\.3.1.1  Example Of A Simple Definition And Logged Data Types -
 
-
-2.3.1.1  Example Of A Simple Definition And Logged Data Types -
-
-: 2*   dup +  ;
+: 2\*   dup +  ;
 
 definition       data type log
 
 +-------!!!     +--!!!
-header --> |    2     |     | s 3 |
+header --\> |    2     |     | s 3 |
 +-------!!!     ~     ~
 |    2     |     .     .
-|    *     |     ~     ~
+|    \*     |     ~     ~
 +-------!!!     +--!!!
-link   --> | ptr to   |     | a   |
+link   --\> | ptr to   |     | a   |
 field      | prev dfn |     | s 2 |
 +-------!!!     +--!!!
-code   --> | ptr to   |     | a   |
+code   --\> | ptr to   |     | a   |
 field      | : code   |     | s 2 |
 +-------!!!     +--!!!
-body of--> | dup      |     | e   |
+body of--\> | dup      |     | e   |
 dfn        | token    |     | s 2 |
 +-------!!!     +--!!!
 | +        |     | e   |
 | token    |     | s 2 |
 Yet Another Target Compiler                                    Page 13
 
-
 +-------!!!     +--!!!
 | ;s       |     | e   |
 |token     |     | s 2 |
 +-------!!!     +--!!!
 
-
 The definition breaks into two separate parts, the header and the
 "executable" code.
-
-
 
 # Intermediate Level Code Generation -
 
@@ -434,7 +406,7 @@ Integers generate signed hex numbers, bytes generate unsigned hex
 numbers.   For  example,  a  literal  constant generates the following
 code.
 +------!!!   +--!!!
-... 01F ...  -- generates -->   | literal |   | e   |
+... 01F ...  -- generates --\>   | literal |   | e   |
 | token   |   | s 2 |
 +------!!!   +--!!!
 |   00    |   | i   |
@@ -446,16 +418,14 @@ which generates for pass 3,
 @resolve.exec zliteral,0
 .word $1f
 
-
 The code consists of a macro  invocation  of  the  forth  literal
 "instruction" followed by the integer value.
 Yet Another Target Compiler                                    Page 14
 
-
 Control flow constructs generate forth  branch  instructions  and
 branch addresses.  The "if" statement generates the following code.
 
-... if ...  -- generates -->    +------!!!     +--!!!
+... if ...  -- generates --\>    +------!!!     +--!!!
 | 0branch |     | e   |
 | token   |     | s 2 |
 +------!!!     +--!!!
@@ -468,7 +438,6 @@ which generates for pass 3.
 @resolve.exec z0branch,0
 @resolve.addr <dfn containing if>, <dfn start-branch addr>
 
-
 The address following the  branch  token  references  an  address
 within the current definition.
 
@@ -476,9 +445,7 @@ The il code generator is broken into two parts.  The front end is
 the machine independent part and the back end is the machine dependent
 part.
 
-
-
-2.3.2.1  Intermediate Level Code Generator Front End -
+2\.3.2.1  Intermediate Level Code Generator Front End -
 
 The il code generator front end is  machine  independent  to  the
 extent that it is independent of the type of cpu it is running on.  It
@@ -488,26 +455,23 @@ and code threading method of the forth  compiler  it  is  running  on.
 This  knowledge  is required by the front end so it can drive the back
 end properly.  The current implementation knows about 6502  itc.   The
 routine   that   controls   the   production   of   the   il  code  is
-"generate_intermediate_code".
+"generate\_intermediate\_code".
 
 Each data type mark has its own  routine  to  process  that  data
 type.
 
 Execution   tokens   are   converted   back   to    symbols    by
-"expand_execution_token".   Addresses  are  converted  to  symbols  by
-"expand_address".  Integers, bytes, and allocated storage are  handled
-by "expand_integer", "expand_byte", and "expand_storage".
+"expand\_execution\_token".   Addresses  are  converted  to  symbols  by
+"expand\_address".  Integers, bytes, and allocated storage are  handled
+by "expand\_integer", "expand\_byte", and "expand\_storage".
 
-
-
-2.3.2.2  Intermediate Level Code Generator Back End -
+2\.3.2.2  Intermediate Level Code Generator Back End -
 
 The il code generator back end is a collection of  routines  that
 converts  numbers  and  strings  into the pass 3 required syntax.  The
 current pass 3 is MAC/65, a macro assembler sold by Optimized  Systems
 Software for the Atari 8-bit line of PC's.
 Yet Another Target Compiler                                    Page 15
-
 
 The requirements placed upon the il code generator back  end  are
 as follows:
@@ -545,9 +509,7 @@ format for the target machine and header production control.
 A large attempt was made to keep the il code generator  back  end
 reasonably independent of MAC/65 or any assembler.
 
-
-
-2.3.2.3  Macros Used In Pass 3 -
+2\.3.2.3  Macros Used In Pass 3 -
 
 To make pass 3 processing easier with MAC/65, a series of  macros
 were created.  These macros take care of many aspects of forth headers
@@ -556,13 +518,12 @@ and forth code creation.  The macros are described briefly below:
 - @mark.link marks a location for the next use of @leave.link.
 
 - @leave.link uses the location marked by @mark.link to  create
-a dictionary link field.
+  a dictionary link field.
 
 - @fudge.dict adjusts the dictionary to prevent ITC forth on  a
-6502  processor  from  having  a  CFA  that  straddles a page
-boundary.
-Yet Another Target Compiler                                    Page 16
-
+  6502  processor  from  having  a  CFA  that  straddles a page
+  boundary.
+  Yet Another Target Compiler                                    Page 16
 
 - @resolve.cfa creates a CFA for a definition.
 
@@ -571,7 +532,6 @@ Yet Another Target Compiler                                    Page 16
 - @resolve.exec creates an execution token in memory.
 
 Yet Another Target Compiler                                    Page 17
-
 
 ### PRODUCING AN APPLICATION FOR A TARGET MACHINE
 
@@ -588,26 +548,25 @@ difficult.  The process follows the steps outlined below.
 1. An application is developed in the local forth environment.
 
 2.  After it works locally, the target compiler is loaded and the
-application is compiled with the target compiler.
+    application is compiled with the target compiler.
 
 3.  The target compiler produces a file containing  the  il  code
-form of the application.
+    form of the application.
 
 4.  The il code,  a  forth  kernel,  and  any  external  language
-linkages are run through the pass 3 tool (an assembler and if
-needed a linker)
+    linkages are run through the pass 3 tool (an assembler and if
+    needed a linker)
 
 5.  if an error  listing  indicates  any  missing  routines,  the
-missing  routines  are added to the kernel (if assembler) and
-repeat step 4 or to the application  (if  forth)  and  repeat
-step 2.
+    missing  routines  are added to the kernel (if assembler) and
+    repeat step 4 or to the application  (if  forth)  and  repeat
+    step 2.
 
 6.  when a  clean  pass  3  is  achieved,  the  executable  image
-produced   should  work  exactly  as  it  did  in  the  local
-(original) environment.
+    produced   should  work  exactly  as  it  did  in  the  local
+    (original) environment.
 
 Yet Another Target Compiler                                    Page 18
-
 
 ### WHY YATC IS NOT JUST A FANCY DECOMPILER
 
@@ -617,20 +576,19 @@ differences between the target  compiler  and  a  decompiler  are  the
 following:
 
 - A  decompiler  prints  out  just  the  names  of  the   forth
-definitions.
+  definitions.
 
 - A  decompiler  requires  special  case   handling   for   all
-multi-byte forth "instructions" and defining words
+  multi-byte forth "instructions" and defining words
 
 - This target compiler knows about all data types compiled  and
-can convert them to symbols.
+  can convert them to symbols.
 
 - This target compiler "learns" about all  new  defining  words
-can  output  the  code  they  generate without changes to the
-target compiler.
+  can  output  the  code  they  generate without changes to the
+  target compiler.
 
 Yet Another Target Compiler                                    Page 19
-
 
 ### CODING TRICKS AND OTHER THINGS THAT WON'T WORK
 
@@ -640,14 +598,13 @@ target compiler handles most of the  tricks  found  in  forth  but  it
 misses on a few.  Most of the not supported tricks are:
 
 - Negative allocation to permit  overwriting  of  variables  or
-constants storage
+  constants storage
 
 - Naming relocatable addresses as constants.  (This is  ok  for
-non-relocatable addresses).
+  non-relocatable addresses).
 
 - Address  calculations  using  \[...\]  literal.   (They  should
-change to \[...\] address.literal).
-
+  change to \[...\] address.literal).
 
 All of the tricks are either bad or lazy  programming  practices.
 They   can   be  remedied  easily  and  changed  into  something  more
@@ -658,19 +615,18 @@ the  time  is  in  the  area  of  vocabularies.  Currently, the target
 compiler restricts the application to one vocabulary.
 Yet Another Target Compiler                                    Page 20
 
-
 ### GLOSSARY OF EXTERNAL WORDS
 
 This glossary describes  externally  visible  words  provided  by  the
 target  compiler.  All other words are internal to the target compiler
 and should not be depended on by other applications.
 
-start_target_compiler ( --- )
+start\_target\_compiler ( --- )
 
 Start up the target compiler.  Headers are  produced  and  target
 compiler output is directed to the console device.
 
-"start_target_compiler ( fn adr --- )
+"start\_target\_compiler ( fn adr --- )
 
 input:  fn adr; address of os specific legal filename
 
@@ -678,7 +634,7 @@ Start up the target compiler.  Headers are  produced  and  target
 compiler  output  is  directed  to  the  file  specified  by the input
 filename.
 
-end_target_compiler ( --- )
+end\_target\_compiler ( --- )
 
 Clean up target  compiling.   Print  any  remaining  intermediate
 level code and close file if open.
@@ -712,20 +668,19 @@ Allocate space for an execution token  in  dictionary  and  place
 execution token found on top of stack in that allocation.
 Yet Another Target Compiler                                    Page 21
 
-
 ### REFERENCES
 
 John J.   Cassady,  "METAFORTH,  A  metacompiler  for  fig-forth"
 Mountain View Press, (1980)
 
 Henry Laxen, "Meta Compiling 1", Forth Dimensions, (Vol 4, Number
-6), PP 19-22.
+6\), PP 19-22.
 
 Henry Laxen, "Meta Compiling 2", Forth Dimensions, (Vol 5, Number
-2), PP 23-24.
+2\), PP 23-24.
 
 Henry Laxen, 'Meta Compiling 3", Forth Dimensions, (Vol 5, Number
-3), PP 31-32.
+3\), PP 31-32.
 
 A.  P.  Haley, H.  P.  Oakford, and C.  L.   Stephens  "In  Sitsu
 Development  -  The  ideal complement to Cross Target Compilers", 1985

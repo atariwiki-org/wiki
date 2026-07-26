@@ -1,14 +1,13 @@
 # Fix for PrintF Routine
 
-
 Fix for PrintF on Action! Toolkit
 
 The PrintF routine on the Action!
 Toolkit works great unless you try to
 print a CARD value greater than
 32767, or try to print the INT value
--32768.  The reason these problems
-occur is that the PROC PF_NBase in
+\-32768.  The reason these problems
+occur is that the PROC PF\_NBase in
 the PRINTF.ACT file uses the "/" and
 "MOD" operators, which call the
 cartridge divide routine.  The divide
@@ -19,6 +18,7 @@ divide routine into the PRINTF.ACT
 file and use it, instead.  First,
 insert the following code at the
 beginning of PRINTF.ACT:
+
 ```
   CARD Quotient, Remainder
 
@@ -46,10 +46,11 @@ beginning of PRINTF.ACT:
   RETURN
 ```
 
-Some code in the PROCedure PF_NBase
+Some code in the PROCedure PF\_NBase
 must also be changed.  Find the
 section of code that reads as
 follows:
+
 ```
     WHILE n>0
       DO
@@ -65,8 +66,10 @@ follows:
       n=n/base          <-
       OD
 ```
+
 And change the two lines indicated so
 the code reads like this:
+
 ```
     WHILE n>0
       DO
@@ -87,5 +90,3 @@ the code reads like this:
 The resulting PrintF routine will
 work properly for all CARD and
 INTeger numbers.
-
-

@@ -8,7 +8,7 @@ In der Vergangenheit kam dabei meist der sogenannte [CORDIC-Algorithmus](https:/
 
 Erst im Jahre 1994 wurde der [BKM-Algorithmus](https://de.wikipedia.org/wiki/BKM-Algorithmus) vorgestellt. Hier erfolgt die Berechnung mittels eines Iterationsverfahrens mit einer Konvergenzrate von ungefähr einem Bit pro Durchlauf. Aufgrund dieses Umstandes wird der Algorithmus manchmal auch als Bitalgorithmus bezeichnet.
 
-Kern beider Algorithmen ist die Tatsache, dass sich alle höheren Funktionen in der Mathematik auf die vier Grundrechenarten: +, -, * und / zurückführen lassen. Genau das ist der Trick, den man nutzen kann, wenn ein Berechnungsfehler im ROM vorliegt, der nicht behoben werden kann. Auf diese Weise bekommt man genaue Ergebnisse ohne(!) das ROM tauschen zu müssen.
+Kern beider Algorithmen ist die Tatsache, dass sich alle höheren Funktionen in der Mathematik auf die vier Grundrechenarten: +, -, \* und / zurückführen lassen. Genau das ist der Trick, den man nutzen kann, wenn ein Berechnungsfehler im ROM vorliegt, der nicht behoben werden kann. Auf diese Weise bekommt man genaue Ergebnisse ohne(!) das ROM tauschen zu müssen.
 
 Auf einen weiteren Trick hatte mich Stefan Dorndorf aufmerksam gemacht. Für den Computer ist die Ermittlung des dekadischen Logarithmus einfacher. Hinzu kommt noch die Periodizität, welche sich gut nutzen lässt und einer einfacheren Berechnung entgegenkommt. Daher wird im Folgenden nur der dekadische Logarithmus berechnet und alle anderen Logarithmen dann aus den ermittelten Werten davon. Schließlich kann man mittels einer Konstanten jeden beliebigen Logarithmus in einen anderen umwandeln:
 
@@ -41,7 +41,7 @@ Alternativ kann man in den XL- und XE-Rechnern auch das ganze Fließkommapaket a
 
 [FAST FLOATING POINT source code for the ATARI](../../../OS/Floating_Point_ROM/FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md) ; Schnelle und korrekte Fließkommaberechnung für den Atari
 
-Unser großer Dank geht hier an: Newell Industries & Charles W. Marslett für die Bereitstellung des Quelltextes und Konrad M. Kokoszkiewicz für die Korrektur.
+Unser großer Dank geht hier an: Newell Industries \& Charles W. Marslett für die Bereitstellung des Quelltextes und Konrad M. Kokoszkiewicz für die Korrektur.
 
 Peter Dell war so nett und erstellte fertige Lösungen auf der Fujiama für uns:
 

@@ -1,9 +1,8 @@
 # FAST FLOATING POINT source code for the ATARI
 
-__Copyright (C) 1981 to 1984 by Newell Industries & Charles W. Marslett__
+**Copyright (C) 1981 to 1984 by Newell Industries \& Charles W. Marslett**
 
-
-AtariWiki is very, very proud Newell Industries & Charles W. Marslett gave us the source code for the FAST FLOATING POINT routines for PD. Thank you so much Newell Industries & Charles W. Marslett, that is not a little gift, that is a giant leap for the community worldwide and will result in rewrite all Atari OS and burn them on EPROM. We further thank Robert 'Bob' Puff for converting the original [Atari Macro Assembler and Program-Text Editor (CX8121)](../../../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md) source code into [MAC/65 Macro Assembler](../../../Companies/OSS/MAC65/README.md) source code. Thank you all so much, the community is in great debt for the work you have done! :-)
+AtariWiki is very, very proud Newell Industries \& Charles W. Marslett gave us the source code for the FAST FLOATING POINT routines for PD. Thank you so much Newell Industries \& Charles W. Marslett, that is not a little gift, that is a giant leap for the community worldwide and will result in rewrite all Atari OS and burn them on EPROM. We further thank Robert 'Bob' Puff for converting the original [Atari Macro Assembler and Program-Text Editor (CX8121)](../../../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md) source code into [MAC/65 Macro Assembler](../../../Companies/OSS/MAC65/README.md) source code. Thank you all so much, the community is in great debt for the work you have done! :-)
 
 Please don't misunderstand this work, it is 'just' fast or even up to 3.5 times faster than the original routines! Indeed, it is way more! The routines give the user reliable results, too! That is very important for calculations. Further, they maintain the jump addresses from the original routines from Atari. Therefore, no trouble, just have fun and enjoy.
 
@@ -13,6 +12,7 @@ Please don't misunderstand this work, it is 'just' fast or even up to 3.5 times 
 Ad from Newell Industries from 1981:
 
 ## ATR image
+
 - [FastChip.atr](attachments/FastChip.atr)
 
 HEADER.M65, FASTFP1.M65:
@@ -41,6 +41,7 @@ Original document file listing the
 routines contained in the faschip.
 
 ## AMAC source code file
+
 - [Fast Chip source code file for AMAC](attachments/FASTFP.ASM)
 
 ## Source Code of the final revision F
@@ -1389,4 +1390,5 @@ SAVARG    DD78   Store X into FPTR2, Y into FPTR2+1, copy FR0
 ```
 
 ## Remark
-drac030 from AtariAge found the last remaining thing to be changed in the hexdgt routine: SBC $9 should be changed into -> SBC #$9.
+
+drac030 from AtariAge found the last remaining thing to be changed in the hexdgt routine: SBC $9 should be changed into -\> SBC #$9.

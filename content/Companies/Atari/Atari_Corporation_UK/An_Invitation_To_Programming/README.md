@@ -5,29 +5,36 @@ Atari Corp UK rereleased part one of this series under the label "Atarisoft" as 
 Both sides use the dual audio format.
 
 ## CAS-Images:
-Side 1: [An_Invitation_To_Programming_UK85_SideA.cas](attachments/An_Invitation_To_Programming_UK85_SideA.cas) 
-Side 2: [An_Invitation_To_Programming_UK85_SideB.cas](attachments/An_Invitation_To_Programming_UK85_SideB.cas) 
+
+Side 1: [An\_Invitation\_To\_Programming\_UK85\_SideA.cas](attachments/An_Invitation_To_Programming_UK85_SideA.cas)
+Side 2: [An\_Invitation\_To\_Programming\_UK85\_SideB.cas](attachments/An_Invitation_To_Programming_UK85_SideB.cas)
 
 ## ATR files:
-Side 1: [An_Invitation_To_Programming_UK85_SideA.ATR](attachments/An_Invitation_To_Programming_UK85_SideA.ATR) 
-Side 2: [An_Invitation_To_Programming_UK85_SideB.ATR](attachments/An_Invitation_To_Programming_UK85_SideB.ATR) 
+
+Side 1: [An\_Invitation\_To\_Programming\_UK85\_SideA.ATR](attachments/An_Invitation_To_Programming_UK85_SideA.ATR)
+Side 2: [An\_Invitation\_To\_Programming\_UK85\_SideB.ATR](attachments/An_Invitation_To_Programming_UK85_SideB.ATR)
 
 ## FLAC file:
-Side 1: [http://data.atariwiki.org/FLAC/An_Invitation_To_Programming_UK85_SideA.flac](http://data.atariwiki.org/FLAC/An_Invitation_To_Programming_UK85_SideA.flac) 
-Side 2: [http://data.atariwiki.org/FLAC/An_Invitation_To_Programming_UK85_SideB.flac](http://data.atariwiki.org/FLAC/An_Invitation_To_Programming_UK85_SideB.flac) 
+
+Side 1: [http://data.atariwiki.org/FLAC/An\_Invitation\_To\_Programming\_UK85\_SideA.flac](http://data.atariwiki.org/FLAC/An_Invitation_To_Programming_UK85_SideA.flac)
+Side 2: [http://data.atariwiki.org/FLAC/An\_Invitation\_To\_Programming\_UK85\_SideB.flac](http://data.atariwiki.org/FLAC/An_Invitation_To_Programming_UK85_SideB.flac)
 
 ## Manual:
+
 See cover picture
 
 ## Screenshots:
+
 ![](attachments/An_Invitation_To_Programming_UK85_Screenshot1.jpg)
 ![](attachments/An_Invitation_To_Programming_UK85_Screenshot2.jpg)
 ![](attachments/An_Invitation_To_Programming_UK85_Screenshot3.jpg)
 
 ## Cover:
+
 ![](attachments/An_Invitation_To_Programming_UK85_cover.jpg)
 An Invitation to Programming Cover UK 1985 rerelease
 
 ## Media pictures:
+
 ![](attachments/An_Invitation_To_Programming_UK85_cass.jpg)
 An Invitation to Programming Cassette UK 1985 rerelease

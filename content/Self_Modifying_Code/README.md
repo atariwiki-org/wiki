@@ -5,7 +5,7 @@ General Information
 Author: various from Usenet
 Assembler: generic
 Published: Usenet
-Download: from [comp.sys.apple2.programmer](http://groups.google.com/group/comp.sys.apple2.programmer/browse_frm/thread/c099c7248c53e72a/2ead568323ad7f28) 
+Download: from [comp.sys.apple2.programmer](http://groups.google.com/group/comp.sys.apple2.programmer/browse_frm/thread/c099c7248c53e72a/2ead568323ad7f28)
 
 I've seen code that does this:
 
@@ -23,11 +23,11 @@ data3
 
 ---
 
-
 what other self-modifying code schemes exist?
 
 I was thinking about this last night:
 non modifying version:
+
 ```
 do stuff
 	lda wait				;wait is a flag, 1 = make the program wait for
@@ -96,11 +96,11 @@ depends heavily on what it did in the past.
 
 ---
 
->If you use it for control of execution decisions, like stuffing an RTS
-to short-circuit a function, you're probably asking for trouble.  At
-the very least, you have to ensure that everything is initialized on
-every execution, or you won't be able to run the code more than once
-without reloading it.
+> If you use it for control of execution decisions, like stuffing an RTS
+> to short-circuit a function, you're probably asking for trouble.  At
+> the very least, you have to ensure that everything is initialized on
+> every execution, or you won't be able to run the code more than once
+> without reloading it.
 
 the idea is to include/not include a JSR to a "wait for button press"
 routine for debugging....  and to use self modifying code for the fun of it.
@@ -149,7 +149,6 @@ modify3 jsr $XXXX
 
 ---
 
-
 I've used self-modifiying code to ( 1 ) preserve registers without using
 extra space, ( 2 ) in unrolling loops and ( 3 ) eliminate branches.  I've
 also dynamically built inner loops as outlined by Andy.  There's a lot
@@ -159,6 +158,7 @@ practical. :)
 Lucas
 
 Exmaple 1: This modifies an operand
+
 ```
 	  sty  restore+1
 	  jsr do_stuff
@@ -166,6 +166,7 @@ restore ldy \#00
 ```
 
 Example 2: This modifies an operand
+
 ```
 		  lda  \#end
 		  sec
@@ -183,6 +184,7 @@ end	  rts
 
 Example 3: (if x = 0 save Y, if x = 1 do nothing).  This modifies an
 opcode
+
 ```
 			lda  opcode,x
 			sta  patch
@@ -193,12 +195,11 @@ opcode	db  '$8D, $AD'	$8D = sta, $AD = lda
 
 ---
 
-
 I like example 1... that is a lot faster than pulling registers off the
 stack.
 
 Example 2 is a loop unrolling example, right?  So you'll store 0 in
-addresses 0 thru num_loops without any branch logic -- but this extra
+addresses 0 thru num\_loops without any branch logic -- but this extra
 speed is of course at the expense of additional memory for the code.
 
 Example 3 seems like great obfuscation, but since you're clobbering the
@@ -219,11 +220,11 @@ capable of doing (very likely :-)
 
 ---
 
->It's 12 bytes for your method (including the opcode table) and 6 bytes
->for mine.  However, yours is a very cool way to throw someone WAAAAAY
->off the scent of what you're actually doing so would be a good in a
->copy-protection scheme.  Unless I've lost the point of what it's also
->capable of doing (very likely :-)
+> It's 12 bytes for your method (including the opcode table) and 6 bytes
+> for mine.  However, yours is a very cool way to throw someone WAAAAAY
+> off the scent of what you're actually doing so would be a good in a
+> copy-protection scheme.  Unless I've lost the point of what it's also
+> capable of doing (very likely :-)
 
 Well, I tried just to present the skeleton of each idea.  For a more
 'real world' usage of something like Example 3, consider trying to look
@@ -298,12 +299,12 @@ table.  I guess you could use something like that for copy-protection.
 ;)  It gets even more interesting when you patch the opcode to select
 between things like LDA table,x and LDA table,y.
 
--Lucas
+\-Lucas
 
 ---
 
-
 lscha...@d.umn.edu wrote:
+
 ```
 > Exmaple 1: This modifies an operand
 >			sty  restore+1
@@ -346,6 +347,7 @@ least one page.
 
 > Example 3: (if x = 0 save Y, if x = 1 do nothing).  This modifies an
 > opcode
+
 ```
 >			 lda  opcode,x
 >			 sta  patch
@@ -395,6 +397,7 @@ It worries me a little that I'm doing most of this off the top of my head.
 Well, the place I actually use constructs like this is IIgs specific
 where I need to restore the stack pointer after some PEA slamming.  My
 code really looks like this
+
 ```
 	  tsc
 	  sta patch+1
@@ -403,9 +406,10 @@ loop anop
 patch lda #5A5A
 	  tcs
 ```
+
 This lets me replace a save/restore with just a restore.
 
->A "computed goto" is a reasonable use, though there is an indirect form of JMP that may work better.  (It looks like JMP(addr,X) didn't exist until the 65c02 though.)  The above doesn't actually work, if I understand your intention -- you have to multiply the value by 2 to line it up on a STA instruction, and you have to do a 16-bit add because "disp" crosses at least one page.
+> A "computed goto" is a reasonable use, though there is an indirect form of JMP that may work better.  (It looks like JMP(addr,X) didn't exist until the 65c02 though.)  The above doesn't actually work, if I understand your intention -- you have to multiply the value by 2 to line it up on a STA instruction, and you have to do a 16-bit add because "disp" crosses at least one page.
 
 Agreed.  Also, for an unrolled loop the jmp (addr,x) instruction is not
 too useful since you need a jump table as big as the unrolled loop
@@ -424,7 +428,7 @@ itself!  And yes, I did miss some of the details.
 
 Wait until you read my other post!
 
->earlier: it's hard to tell what's going to happen by reading the code. Don't forget you can do tricks like this:
+> earlier: it's hard to tell what's going to happen by reading the code. Don't forget you can do tricks like this:
 
 ```
 >  [test something, branch to load+1]
@@ -433,7 +437,7 @@ Wait until you read my other post!
 >		  sta  somewhere
 ```
 
->There's a "lda #$03" embedded in the BIT instruction.  It's generally more sane to code it like this:
+> There's a "lda #$03" embedded in the BIT instruction.  It's generally more sane to code it like this:
 
 ```
 >		  lda  #$00
@@ -449,11 +453,11 @@ synergistic that every byte is fullfilling multiple functions. ;)
 I think that quite a few "self-modifying ticks" can be much more useful
 when you can wrap then in some good semantics, as you illustrated.
 
->It worries me a little that I'm doing most of this off the top of my head.
+> It worries me a little that I'm doing most of this off the top of my head.
 
 Nah, it just shows off your geek quotient.
 
--Lucas
+\-Lucas
 
 ---
 
@@ -467,6 +471,7 @@ leap off the UT clock tower. ;-D
 ---
 
 BLuRry wrote:
+
 > If only Von Neumann knew what kind of insanity we'd get ourselves into with the whole stored program concept.  Maybe he would have reworked things so that program code could only touch memory segments flagged as data-only.  Then again, maybe Von Neumann would write enough self-modifying code to make someone like Dykstra want to take a flying leap off the UT clock tower. ;-D
 
 Before the invention of the index register (or the "B-Box" as it was called at Manchester), modifying code was the *only* way to write useful loops.  The possibility of programmatic code modification was not an unintended consequence of storing code and data in the same memory, but a primary motivation for doing so.
@@ -477,4 +482,4 @@ Today, with most instruction modification formalized and abstracted as indexing 
 
 So the *real* rule must be:  "Don't modify code unless you really know what you're doing, and all of its implications."  (Like playing with fire.  ;-)
 
--michael
+\-michael

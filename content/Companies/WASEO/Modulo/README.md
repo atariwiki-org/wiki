@@ -8,10 +8,10 @@ Beginnen wollen wir mit der Modulo-Funktion (MOD): Division mit Rest.
 Bereits auf der JHV 2019 hatte ich dazu die von Walter und mir entwickelte Formel vorgetragen, jedoch waren zu diesem Zeitpunkt noch nicht die erforderlichen Tests durchgeführt worden. Das ist nunmehr erfolgt und die Formel kann somit als final den Mitgliedern vorgestellt werden:
 
 Voraussetzung:
-a MOD b mit b <>0:
+a MOD b mit b \<\>0:
 
 Formel:
-REST=a-INT(a/b))*b
+REST=a-INT(a/b))\*b
 
 Wir verwenden hier die in Atari BASIC eingebaute Funktion: INT, wie in der Formel oben zu sehen ist.
 
@@ -32,8 +32,8 @@ Ihr denkt jetzt bestimmt, ja, das war in der Vergangenheit, so etwas passiert ni
 
 Ihr meint, das ist schlimm? Es kommt noch dicker! Nicht nur, dass falsch oder auch gar nicht berechnet wurde, nein, es gibt darüber hinaus noch jede Menge an verschiedenen Operatoren für ein die gleiche Operation:
 
-[Liste von Operatoren für den Rest einer Division
-|https://de.wikipedia.org/wiki/Liste_von_Operatoren_f%C3%BCr_den_Rest_einer_Division] ; unterschiedliche Operatoren für die Modulo-Funktion
+\[Liste von Operatoren für den Rest einer Division
+|https://de.wikipedia.org/wiki/Liste\_von\_Operatoren\_f%C3%BCr\_den\_Rest\_einer\_Division\] ; unterschiedliche Operatoren für die Modulo-Funktion
 
 damit es den Anwendern auch richtig schön schwer gemacht wird.
 
@@ -47,4 +47,4 @@ dort ist bereits ein Beispiel eingefügt.
 
 Wir wünschen viel Spaß beim Rechnen,
 
-GBXL & Luckybuck
+GBXL \& Luckybuck

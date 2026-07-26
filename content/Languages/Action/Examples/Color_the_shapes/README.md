@@ -1,17 +1,18 @@
 # Color the shapes
 
 ### General Information
+
 Author: Sol Guber
 Language: ACTION!
 Compiler/Interpreter: ACTION!
-Published: Analog #32 (07/ 85)
+Published: Analog \#32 (07/ 85)
 ---
 
 Structured programming is a way of thinking. It divides the parts of a program into smaller and smaller parts, and then, when the parts are very tiny (and obvious), starts to write the program. This kind of thinking is the basis of any FORTH program, first the top-down, then the bottom-up. First, look at the big picture, then keep looking at the littler and littler picture. Finally, from the details, build up the big picture again. Action! uses the same thinking to make up programs.
 
 ### The game.
 
-__Color the Shapes__ is a game which was written using a top-down, then bottom-up type of programming.
+**Color the Shapes** is a game which was written using a top-down, then bottom-up type of programming.
 
 First, let's go over the game briefly. It's a competitive coloring game for either one or two persons. The object in the one-player game is to color in all the shapes on the board with any of the four colors that are shown on the bottom of the screen.
 
@@ -25,12 +26,11 @@ Figure 1 shows a sample board that will need to be colored in. Each time the gam
 
 Figure 2 shows a game in progress. The bottom of the board has been filled in with various colors. Figure 3 shows a completed game.
 
-
 ![](attachments/colortheshapes1.jpg)
 
-The cursor is a star that is shown on the screen. __Color the Shapes__ can be played with either a __KoalaPad__ or a joystick. A question will be asked after the entering of the players' names, to determine if this will be the joystick version.
+The cursor is a star that is shown on the screen. **Color the Shapes** can be played with either a **KoalaPad** or a joystick. A question will be asked after the entering of the players' names, to determine if this will be the joystick version.
 
-In the __KoalaPad__ version, the cursor is moved by pointing to the spot where you wish to move. The cursor will go there. In the joystick version, move the joystick in the direction that you wish to go, and the cursor will head that way.
+In the **KoalaPad** version, the cursor is moved by pointing to the spot where you wish to move. The cursor will go there. In the joystick version, move the joystick in the direction that you wish to go, and the cursor will head that way.
 
 The cursor's color is the same as the color that will be used to fill the shape;. When the cursor is anywhere in the shape that you wish to fill, just press the trigger.
 
@@ -42,20 +42,20 @@ Your turn will be over when you successfully fill in a shape. There's no way to 
 
 Now that we know the basic outline of the game, what does this have to do with structured programming? That's easy to see by looking at the last PROC that was written.
 
-It's just a long loop that does very logical things. It's made up of TITLE, PMGRAPHICS, SETUP, PM-CLEAR, MAKEPM, GRID, SEARCH, CHECK_ BOARD, INIT, NAME and, finally, the major DO OD loop. This loop just consists of two lines and a limit.
+It's just a long loop that does very logical things. It's made up of TITLE, PMGRAPHICS, SETUP, PM-CLEAR, MAKEPM, GRID, SEARCH, CHECK\_ BOARD, INIT, NAME and, finally, the major DO OD loop. This loop just consists of two lines and a limit.
 
 The first part of the PROC sets everything up and checks to see what's been done. The heart of the program can be explained very simply by the two functions TRIGGER and JOYSTICK.
 
-TRIGGER checks to see if the trigger has been pressed. JOYSTICK checks to see if a move's been made. IF TRIGGER = 0 then COLOR_IN(SPOT). IF JOYSTICK = 1 then MOVE(). Do this until either the board is completed or QUIT= 1. How could any program be simpler?
-This is the whole point of structuring programs: break everything down into easy-to-digest units that are logically simple. While the game's going on, the only two things to look at are the triggers and either the joystick or the __KoalaPad__.
+TRIGGER checks to see if the trigger has been pressed. JOYSTICK checks to see if a move's been made. IF TRIGGER = 0 then COLOR\_IN(SPOT). IF JOYSTICK = 1 then MOVE(). Do this until either the board is completed or QUIT= 1. How could any program be simpler?
+This is the whole point of structuring programs: break everything down into easy-to-digest units that are logically simple. While the game's going on, the only two things to look at are the triggers and either the joystick or the **KoalaPad**.
 
 How long should the program monitor these two things? Until the game is complete, or someone quits. Then what? Ask if another game is desired. If it is, play again; otherwise, finish. There's no need to monitor the keyboard, get data from the disk, or do anything else.
 
 Structured programming uses the concepts of positive actions. Do an action until something happens or a flag is set or while a condition still occurs. It can be used in all parts of the program lo make the programming easier and very logical. Let me go into some more details on how this type of thinking; the idea to do while or until is a very nice concept.
 
-This simplicity is used in other parts of the program. Let us go through several of the other procedures and functions. If the trigger has been pressed. TRIGGER()=0 and we will C=COLOR_IN(SPOT). There are several options in that procedure. If the spot has a color there, B(SPOT)<>0, then what we want to do is change colors or quit. A loop is set up so that we continue to PICK_COLOR until a flag is returned to say that it is non-zero. A good pick has been done. If quit is one, then return. Otherwise move the cursor back to where it was and continue the turn. If the spot had not been colored in already, then we must check to see if it is a GOOD_COLOR. If the flag is returned as 0 then BEEP, print a message on the screen, BEEP again, and then RETURN. Finally, if it is a good move, then FILL_IN(SPOT), check to see if there are two players, and write the new name on the screen.
+This simplicity is used in other parts of the program. Let us go through several of the other procedures and functions. If the trigger has been pressed. TRIGGER()=0 and we will C=COLOR\_IN(SPOT). There are several options in that procedure. If the spot has a color there, B(SPOT)\<\>0, then what we want to do is change colors or quit. A loop is set up so that we continue to PICK\_COLOR until a flag is returned to say that it is non-zero. A good pick has been done. If quit is one, then return. Otherwise move the cursor back to where it was and continue the turn. If the spot had not been colored in already, then we must check to see if it is a GOOD\_COLOR. If the flag is returned as 0 then BEEP, print a message on the screen, BEEP again, and then RETURN. Finally, if it is a good move, then FILL\_IN(SPOT), check to see if there are two players, and write the new name on the screen.
 
-JOYSTICK is another example of a simple procedure that does only one thing: it checks to see if there has been any movement in the joystick or the __KoalaPad__. CFLAG is used to signal that the __KoalaPad__ is to be used. If it's on, check the two locations in memory that store the value of the point on the pad that's being touched. If either point is less than five, then the pad is not being touched. RETURN a zero to show no movement. Next, calculate the X and Y position of the point that's being touched. If the movement is only slight, then RETURN a zero to again show no good movement. Otherwise, set the new X and Y positions to this point, and return a 1 to show success.
+JOYSTICK is another example of a simple procedure that does only one thing: it checks to see if there has been any movement in the joystick or the **KoalaPad**. CFLAG is used to signal that the **KoalaPad** is to be used. If it's on, check the two locations in memory that store the value of the point on the pad that's being touched. If either point is less than five, then the pad is not being touched. RETURN a zero to show no movement. Next, calculate the X and Y position of the point that's being touched. If the movement is only slight, then RETURN a zero to again show no good movement. Otherwise, set the new X and Y positions to this point, and return a 1 to show success.
 
 The other part of JOYSTICK() is used if play is with a joystick. First determine the value of the joystick. If it is 15, RETURN a zero to show no move. If the Value is 11 and you can move left, then move left and return a 1 for success. If it is 7 and you can move right, then make the new position and return a success. Do this for up and down. If no move was possible. return a zero for unsuccessful move.
 
@@ -75,11 +75,11 @@ Thus, shape G is GAR(7) and has a value of 11. Shape M is GAR(13) and has a valu
 
 Now that we have some information on how the data is stored, we can look at some of the other functions and see how simple they are to program.
 
-Let's look at FILL_IN. First, we determine the number of the shape where we are from array R. Find the top and bottom rows of that shape from array GAR, and set the USED shape to 1. Then set up a little loop from the bottom row of the shape to the top row of the shape. If the value in R is that shape, then set B to that color, and FILLER that square.
+Let's look at FILL\_IN. First, we determine the number of the shape where we are from array R. Find the top and bottom rows of that shape from array GAR, and set the USED shape to 1. Then set up a little loop from the bottom row of the shape to the top row of the shape. If the value in R is that shape, then set B to that color, and FILLER that square.
 
 FILLER'S another little subroutine. Check to see if the right side is a line; and the bottom is a line. You should change values if they are. Then, just do a simple PLOT, DRAWTO routine to fill in with the color selected.
 
-A very similar logic is used in the function GOOD_COLOR. First, determine the shape you're on from array R. Then, find the top and the bottom of the shape from array GAR.
+A very similar logic is used in the function GOOD\_COLOR. First, determine the shape you're on from array R. Then, find the top and the bottom of the shape from array GAR.
 
 Start at the bottom row and check each square. If it's part of the same shape as the one that we're looking at. check all four squares around it to see if the color is present there. If it is. return a 0 lo show failure. If everything's been checked, and no two colors will be touching, report a success (RETURN(1)).
 
@@ -87,10 +87,10 @@ Among the things that I haven't done is explain how some of the data is generate
 
 This game is a good example of two things. The first is that Action! makes structured programming very easy. The second is that, with good simple logic on the overall design of a program, it can be split into smaller and smaller parts. Each part can be further divided into parts that are easily programmed.
 
-I hope you enjoy __Color the Shapes__. My daughter and I had fun inventing it. It's a good game of logic from which you can learn about programming.
----
-''Sol Guber has been programming for his Atari 800 for five years now. The idea for this game came from his seven-year-old daughter Rebecca, to whom computers are a natural part of life.''
----
+## I hope you enjoy **Color the Shapes**. My daughter and I had fun inventing it. It's a good game of logic from which you can learn about programming.
+
+## ''Sol Guber has been programming for his Atari 800 for five years now. The idea for this game came from his seven-year-old daughter Rebecca, to whom computers are a natural part of life.''
+
 ```
 ; COLOR THE SHAPES
 ;
@@ -738,5 +738,7 @@ DO
 OD
 RETURN
 ```
+
 ---
-PDF: [color_the_shapes.pdf](attachments/color_the_shapes.pdf) 
+
+PDF: [color\_the\_shapes.pdf](attachments/color_the_shapes.pdf)

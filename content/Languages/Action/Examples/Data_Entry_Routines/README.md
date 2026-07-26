@@ -11,7 +11,6 @@ Description: Universal string input routine, offering full control over keyboard
 
 Calling parameters:
 
-
 || FIELD	|| The field buffer. ||
 | MIN	|  Minimum number of characters for valid response, 0-MAX. |
 | MAX	|  Maximum number of characters, 1-36.	|
@@ -20,7 +19,6 @@ Calling parameters:
 | COL	|  Screen display horizontal position for input echo, 2-37. |
 | ROW	|  Screen display vertical position for input echo, 1-22. |
 | ERRPTR | Pointer variable to pass error code on record aborts (Ctrl-Z) or XIT's (above). |
-
 
 Note:	User entry of ESC will restart field entry,  or exit (see above).  Entry of Ctrl-Z aborts record. The routine uses the BYTE FUNC	Fetch() to obtain the 	keystokes, allowing timeout control.
 
@@ -36,8 +34,8 @@ Type Codes
 |6 | Unsigned real	|
 |7 | Yes/No check |
 
-
 ### EntryS
+
 ```
 ;************************************
 ;*											 *
@@ -718,7 +716,9 @@ FI
 
 RETURN
 ```
+
 ### EntryI
+
 ```
 ;************************************
 ;*											 *
@@ -912,7 +912,9 @@ PRINTE("Done...")
 RETURN
 
 ```
+
 ### EntryC
+
 ```
 ;************************************
 ;*											 *
@@ -1075,7 +1077,9 @@ RETURN
 
 
 ```
+
 ### EntryB
+
 ```
 ;************************************
 ;*											 *

@@ -1,11 +1,7 @@
-# __1+__ “one-plus” ( n1 | u1 -- n2 | u2 )
-
-
+# **1+** “one-plus” ( n1 | u1 -- n2 | u2 )
 
 ||Forth79||Forth83||ANSI||Forth200x
 |   X    |   X    |  X  |    X
-
-
 
 %%tabbedSection
 %%tab-english

@@ -6,7 +6,3 @@ An enhanced, powerful FIG Forth version with many additional words for the Atari
 
 - [ANTIC FORTH - Screens Disk One](ANTIC_FORTH-Screens-Disk-One/README.md)
 - [ANTIC FORTH -Screens of Disk Two](ANTIC_FORTH-Screens-Disk-Two/README.md)
-
-
-
-

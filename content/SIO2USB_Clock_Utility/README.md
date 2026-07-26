@@ -5,9 +5,9 @@ General Information
 Author: Carsten Strotmann
 Assembler: Bibo-Assembler
 Published: 19.4.2008
-Download: [http://home.arcor.de/grasel/restarte.htm](http://home.arcor.de/grasel/restarte.htm) 
+Download: [http://home.arcor.de/grasel/restarte.htm](http://home.arcor.de/grasel/restarte.htm)
 
-Download: [S2UTIME.ATR](attachments/S2UTIME.ATR) 
+Download: [S2UTIME.ATR](attachments/S2UTIME.ATR)
 
 A small utility to read the data and time out of the SIO2USB Device and set the internal Clock in Sparta DOS.
 
@@ -17,7 +17,7 @@ Tested with
 - Sparta DOS 3.3a (X33A.DOS)
 - Sparta DOS 3.2d (X32D.DOS)
 - Real DOS 1.0a build 24 [http://www.tcpipexpress.com/realdos.html](http://www.tcpipexpress.com/realdos.html)
-- SpartaDOS X 4.41 [http://trub.atari8.info/index.php?ref=sdx_upgrade_en](http://trub.atari8.info/index.php?ref=sdx_upgrade_en)
+- SpartaDOS X 4.41 [http://trub.atari8.info/index.php?ref=sdx\_upgrade\_en](http://trub.atari8.info/index.php?ref=sdx_upgrade_en)
 
 and with
 
@@ -313,6 +313,7 @@ just load S2UTIME.COM. On BW-DOS you first need to load the Clock Driver "CLOCK 
 ```
 
 ---
+
 Stefan Haubenthal | 22.04.2008 at 03:13 PM
 Short optimization:
 
@@ -321,6 +322,7 @@ Short optimization:
 01900 LDA SDKRNL,Y
 
 ---
+
 Carsten Strotmann | 25.04.2008 at 03:30 PM
 
 Hello Stefan,

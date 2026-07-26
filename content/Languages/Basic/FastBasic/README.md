@@ -3,6 +3,7 @@
 Daniel Serpell (dsmc), June/July 2017
 
 ### Background
+
 FastBasic is one of the newest BASICs for the Atari 8-bit platform. It is a complete re-implementation of the BASIC system, using a built-in bytecode compiler rather than a tokenizing interpreter.
 
 Typical BASICs use an interpreter that examines every line of code as the program runs. They do this because it minimizes the amount of RAM used; only one line of code is actively worked on so the amount of temporary memory required is small. To improve speed and memory usage, most BASICs "tokenize" the lines, replacing keywords with "tokens", typically a single byte. Atari BASIC does this when the line is entered, so, for instance, when it sees a {{PRINT}} in the line of code, it replaces this with a 32 (decimal), making the source more compact and easier to process when it's run. This process is reversed when you {{LIST}} the program, converting the 32 back into {{PRINT}} so you never even realize it happened. This is why, for instance, typing {{P.}} turns into {{PRINT}} when you later {{LIST}} it.
@@ -15,16 +16,18 @@ On top of this, FastBasic uses a new full-screen editor instead of the classic l
 
 FastBasic is a truly unique approach to the BASIC language on the Atari, a must-see program for everyone. AtariWiki deeply thanks dmsc from AtariAge for the license to publish his FastBasic here. Thank you dmsc, your help is very much appreciated. :-)
 
-
 ## Latest release
+
 - [https://github.com/dmsc/fastbasic/releases](https://github.com/dmsc/fastbasic/releases) ; Home page for V3.4 from March 2018
 - [https://github.com/dmsc/fastbasic/releases/download/v3.4/fastbasic-v3.4.atr](https://github.com/dmsc/fastbasic/releases/download/v3.4/fastbasic-v3.4.atr) ; ATR image
 - [https://github.com/dmsc/fastbasic/archive/v3.4.zip](https://github.com/dmsc/fastbasic/archive/v3.4.zip) ; source code
 
 ## Manual
+
 - [https://github.com/dmsc/fastbasic/blob/master/manual.md](https://github.com/dmsc/fastbasic/blob/master/manual.md)
 
 ## Pictures
+
 ![](attachments/fastbasic1.jpg)
 dmsc FastBasic - startscreen
 
@@ -32,5 +35,6 @@ dmsc FastBasic - startscreen
 dmsc FastBasic - 1st menu
 
 ## References
+
 - [https://github.com/dmsc/fastbasic](https://github.com/dmsc/fastbasic) ; source site for FastBasic
 - [http://atariage.com/forums/topic/267929-fastbasic-beta-version-available/](http://atariage.com/forums/topic/267929-fastbasic-beta-version-available/) ; discussion about FastBasic on AtariAge

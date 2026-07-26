@@ -1,6 +1,6 @@
-# OS Diffs Atari 800 <-> Atari XL/XE Series
+# OS Diffs Atari 800 \<-\> Atari XL/XE Series
 
-__Answers-Tips-and-Relevant Information__
+**Answers-Tips-and-Relevant Information**
 
 I really like my 1200XL, but at the same time I really hate having to use
 the TRANSLATOR to boot up certain software. What to do? I Translated the
@@ -28,7 +28,6 @@ with a lot of help from Compute's Mapping The Atari to come up with this
 list. It now saves me lots of time and hopefully will help you also.
 Note: Translated software will only run on the O/S that it has been
 translated for, so keep an original copy as back-up.
-
 
 | Vector|Label   |   800   |  XL/XE  |  1200XL |
 |-----|----------|---------|---------|---------|
@@ -109,5 +108,3 @@ translated for, so keep an original copy as back-up.
 | E486 | PENTV    |        |   EEBC  |  CAAE  |
 | E489 | PHUNLV   |        |   E915  |   CAEB  |
 | E48C | PHINIV   |        |   E898  |   CA34  |
-
-

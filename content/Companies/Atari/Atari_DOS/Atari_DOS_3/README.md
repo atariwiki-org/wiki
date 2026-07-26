@@ -13,9 +13,9 @@ disk space less efficiently than DOS 2.0S.  For these reasons and others, DOS
 generally used except for curiosity's sake.  The DOS 3 disk is labeled: Master
 Diskette 3 (DX5052).
 
-
 - [Wikipedia: Atari DOS 3](http://en.wikipedia.org/wiki/Atari_DOS#DOS_3.0)
 
 ### Manuals
+
 - Atari DOS 3 (english) [PDF, 14.4MB](../../../../../media/Companies/Atari/Atari_DOS_3/attachments/AtariDOS3Handbook.pdf) [DJVU, 1.7MB](attachments/AtariDOS3Handbook.djvu)
 - Atari DOS 3 (german) [PDF, 3.2MB](attachments/dos_3_handbuch.pdf)

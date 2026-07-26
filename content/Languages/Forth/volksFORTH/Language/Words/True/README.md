@@ -1,11 +1,7 @@
-# __true__  ( -- -1 )
-
-
+# **true**  ( -- -1 )
 
 ||Forth79||Forth83||ANSI||Forth200x
 |   X    |   X    |  X  |    X
-
-
 
 %%tabbedSection
 %%tab-english

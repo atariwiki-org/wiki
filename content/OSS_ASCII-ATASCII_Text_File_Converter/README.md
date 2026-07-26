@@ -6,9 +6,11 @@ Taken from the OSS Newsletter-Fall 1986:
 Christopher M. Kelley wrote a program, which converts ASCII to ATASCII and vice versa.
 
 ## ATR-Image
-- [OSS-CONVERT_with_DOS_XL_2.30p_Color.atr](attachments/OSS-CONVERT_with_DOS_XL_2.30p_Color.atr) ; source code in MAC/65-format on an OSS DOS XL disk image
+
+- [OSS-CONVERT\_with\_DOS\_XL\_2.30p\_Color.atr](attachments/OSS-CONVERT_with_DOS_XL_2.30p_Color.atr) ; source code in MAC/65-format on an OSS DOS XL disk image
 
 ## Source Code
+
 ```
 1000 ;LIST#D:CONVERT.M65
 1010 ;
@@ -561,5 +563,3 @@ OSS.",$9B,$9B,$9B,$9B
 6470     .END
 
 ```
-
-

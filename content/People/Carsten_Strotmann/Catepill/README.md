@@ -13,12 +13,12 @@ unfinished Game with Level Editor
 
 written in ACTION!
 
-
 ## Game Idea:
 
 Catapill is Sokoban on steroids: you drive the small catepill around in a huge warehouse and must complete missions
 
 There are several good in the warehouse, and rules that must be observed:
+
 - containers with base (L) and Acid (S) should never be stored side-by-side, else.....
 - containers including magnetics (positive and negative available) should never stored next to iron boxes, else they stick together
 - some containers contain explosives

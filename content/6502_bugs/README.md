@@ -4,17 +4,15 @@ I found this document somewhere on a gopher archive in an Apple2's
 programming directory and I think this could be very useful information
 for example for emulator writers :)
 
-2-Nov-1994  Ivo van Poorten  <ipoorten=www@cs.vu.nl>
-
+2-Nov-1994  Ivo van Poorten  [ipoorten=www@cs.vu.nl](mailto:ipoorten=www@cs.vu.nl)
 
 With all the books on 6502 programming, and all the years that the 6502 has
 been around and popular, you'd think that any quirks would have been well
 documented by now.  But nooooo!
 
 So... for those of you involved in assembler or machine-language programming,
-here are some 6502 booby-traps -- those marked with * are supposedly fixed
+here are some 6502 booby-traps -- those marked with \* are supposedly fixed
 in the CMOS parts such as 65C02 and 65C102 (but not the C-64's 6510).
-
 
 - Return address pushed on the stack by JSR is one less than actual next  instruction.  RTS increments PC after popping.  RTI doesn't.
 - The status bits pushed on the stack by PHP have the breakpoint bit set.

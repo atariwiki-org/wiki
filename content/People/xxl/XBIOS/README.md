@@ -7,20 +7,23 @@ xBIOS is like a programmers version of DOS. With it you can easily access files 
 In this section you will find some general notes about xBIOS and how it functions.
 
 ### Download Location
-[http://xxl.atari.pl](http://xxl.atari.pl) 
+
+[http://xxl.atari.pl](http://xxl.atari.pl)
 
 ### Autorun
+
 To allow an executable to auto run on bootup, have it named as “XAUTORUN”.
 If no such file exists on the disk, the xBIOS loader menu will appear.
 
 ### Filename Format
+
 The filenames are in 8.3 format but without the dot.
 Filenames are padded out to 11 characters and are converted to uppercase.
 Therefore, “file.txt” will become:
+
 ```
     ‘FILE    TXT’  (4 letters, 4 spaces and a 3 character extension)
 ```
-
 
 xBIOS is case insensitive.
 
@@ -33,6 +36,7 @@ b) Existing files cannot be extended in length.
 c) New directories cannot be created programatically.
 
 ### Default Memory Layout
+
 ```
 $0000-$00FF        Free
 $0200-$06FF        Free
@@ -44,18 +48,18 @@ $D800-$FFFF        Free
 ```
 
 ### Disk Images
+
 Disk images (.atr files) need to be prepared in advance for xBIOS to work.
 
 A disk image is a file which simulates a disk. It will contain 1 or more files which can be used by your programs.
 
 In order to prepare them, an external tool needs to be used.
 
-__‘dir2atr’__ : [http://www.horus.com/~hias/atari](http://www.horus.com/~hias/atari) 
+**‘dir2atr’** : [http://www.horus.com/~hias/atari](http://www.horus.com/~hias/atari)
 
 A tool for creating an ATR file from a folder.
 
-
-__‘franny’__ : [http://atariage.com/forums/topic/159325-program-to-add-to-and-extract-files-from-atr/](http://atariage.com/forums/topic/159325-program-to-add-to-and-extract-files-from-atr/) 
+**‘franny’** : [http://atariage.com/forums/topic/159325-program-to-add-to-and-extract-files-from-atr/](http://atariage.com/forums/topic/159325-program-to-add-to-and-extract-files-from-atr/)
 
 Allows the additional of individual files to an ATR file.
 
@@ -68,6 +72,7 @@ a)    Make a copy of the xBIOS.atr file, renaming the new file to something rele
 b)    Add all the new files to the file. ‘franny’ and ‘dir2atr’ are good tools for this. Ensure that the program which you want to initially run is named ‘XAUTORUN’.
 
 Example Windows batch file:
+
 ```
     mads myProg.asm
     copy /Y myProg.obx myatr\XAUTORUN
@@ -79,10 +84,11 @@ xBIOS now also needs adding into the development project which is being created.
 
 There are two ways of achieving this:
 
-__Option 1:__
+**Option 1:**
 The following code needs to be pasted into a project:
 
 (Valid for xBIOS v4.3)
+
 ```
 xBIOS                      equ $800
 xBIOS_VERSION              equ xBIOS+$02
@@ -132,8 +138,7 @@ xDAUX2          equ xBIOS+$3ff ; Sector hi byte (1 byte)
 
 Each entry in this jump table specifies where in memory that the code for each function resides. If you ever wish to start from a different address, change the value for ‘xBIOS’ above and change the value in the binary header of xBIOS.com.
 
-
-__Option 2:__
+**Option 2:**
 From xBIOS v4.2 and above, you can use the xBIOS.cfg file which is as below.
 
 ```
@@ -159,8 +164,7 @@ Now that the above exists, the following examples can be used to access files in
 
 Here are some of the examples taken from http://xxl.atari.pl and other online sources, but with a few extra/modified comments in English.
 
-
-### xBIOS_RENAME_ENTRY
+### xBIOS\_RENAME\_ENTRY
 
 This function allows you to rename a file or directory. There is no limit to the characters used in the filename apart from that they must fit a case insensitive “8.3” format without the dot.
 If your filename is not 8 characters long, pad it out with spaces.
@@ -174,9 +178,9 @@ fname
 .byte c'FILENAMEDST '; 11 char ATASCII (8.3 without the dot, space padded)
 ```
 
-### xBIOS_LOAD_FILE
+### xBIOS\_LOAD\_FILE
 
-Load and run the file, INIT and RUN headers are supported. "Boot Loader" has an analogous function xBOOT_LOAD_FILE. In the case of the boot loader if the file does not have a defined block RUN will be launched from the beginning of the first block.
+Load and run the file, INIT and RUN headers are supported. "Boot Loader" has an analogous function xBOOT\_LOAD\_FILE. In the case of the boot loader if the file does not have a defined block RUN will be launched from the beginning of the first block.
 
 ```
 ldy <fname 
@@ -185,7 +189,8 @@ JSR xBIOS_LOAD_FILE
 fname .byte c'MYFILE  COM'; 11 characters ATASCII (8.3 without the dot, space padded)
 ```
 
-### xBIOS_OPEN_FILE
+### xBIOS\_OPEN\_FILE
+
 Open a file in order to carry out subsequent IO operations.
 
 ```
@@ -195,9 +200,9 @@ JSR xBIOS_OPEN_FILE
 fname .byte c'MYFILE  COM'; 11 characters ATASCII (8.3 without the dot, space padded)
 ```
 
-### xBIOS_LOAD_DATA
+### xBIOS\_LOAD\_DATA
 
-Load data from file to a specified address. You can set the file offset (FILE_OFFSET) and the amount of data to be loaded (SET_LENGTH). If you do not define these values, data will be loaded from the current position of the file pointer to the end of the file. If you want to load a binary file using the headers defined in it or use the functions xBIOS_BINARY_LOAD or xBIOS_LOAD_FILE.
+Load data from file to a specified address. You can set the file offset (FILE\_OFFSET) and the amount of data to be loaded (SET\_LENGTH). If you do not define these values, data will be loaded from the current position of the file pointer to the end of the file. If you want to load a binary file using the headers defined in it or use the functions xBIOS\_BINARY\_LOAD or xBIOS\_LOAD\_FILE.
 
 ```
 ldy <dest 
@@ -205,9 +210,9 @@ ldx >dest
 JSR xBIOS_LOAD_DATA
 ```
 
-### xBIOS_WRITE_DATA
+### xBIOS\_WRITE\_DATA
 
-Save data from memory to a file, starting from the current position in the file. You can set the file pointer offset current (FILE_OFFSET) and the amount of data to be saved (SET_LENGTH). If you do not define these values, data from the current file position to the end of the file is written to the file.
+Save data from memory to a file, starting from the current position in the file. You can set the file pointer offset current (FILE\_OFFSET) and the amount of data to be saved (SET\_LENGTH). If you do not define these values, data from the current file position to the end of the file is written to the file.
 
 ```
 ldy <src 
@@ -215,21 +220,23 @@ ldx >src
 JSR xBIOS_WRITE_DATA
 ```
 
-### xBIOS_OPEN_CURRENT_DIR
+### xBIOS\_OPEN\_CURRENT\_DIR
+
 Opens the current directory.
 
 ```
 JSR xBIOS_OPEN_CURRENT_DIR
 ```
 
-### xBIOS_GET_BYTE
+### xBIOS\_GET\_BYTE
+
 The next byte of an open file is loaded into the register A (accumulator).
 
 ```
 JSR xBIOS_GET_BYTE
 ```
 
-### xBIOS_PUT_BYTE
+### xBIOS\_PUT\_BYTE
 
 The byte value in the accumulator is written to a file at it’s current pointer location.
 
@@ -238,7 +245,7 @@ lda BYTE
 JSR xBIOS_PUT_BYTE
 ```
 
-### xBIOS_FLUSH_BUFFER
+### xBIOS\_FLUSH\_BUFFER
 
 All write operations are cached, use this to flush the buffer to the current file.
 
@@ -246,9 +253,9 @@ All write operations are cached, use this to flush the buffer to the current fil
 JSR xBIOS_FLUSH_BUFFER
 ```
 
-### xBIOS_SET_LENGTH
+### xBIOS\_SET\_LENGTH
 
-Defines the amount of data to process while reading or writing. If your OPEN_FILE value is not defined this operation will be carried out until the end of the file.
+Defines the amount of data to process while reading or writing. If your OPEN\_FILE value is not defined this operation will be carried out until the end of the file.
 
 ```
 ldy <len 
@@ -256,7 +263,7 @@ ldx >len
 JSR xBIOS_SET_LENGTH
 ```
 
-### xBIOS_SET_INIAD
+### xBIOS\_SET\_INIAD
 
 Allows you to change the init address vector INITAD ($2E2) for loaded binary files.
 
@@ -266,7 +273,7 @@ ldx >addr
 JSR xBIOS_SET_INIAD
 ```
 
-### xBIOS_SET_FILE_OFFSET
+### xBIOS\_SET\_FILE\_OFFSET
 
 Sets the current read/write position in the current file with a value stored in A, X, Y. This item is calculated relative to the beginning of the file. In DOS speak, the operation is called "POINT".
 
@@ -277,7 +284,7 @@ lda ^pos
 JSR xBIOS_SET_FILE_OFFSET
 ```
 
-### xBIOS_SET_RUNAD
+### xBIOS\_SET\_RUNAD
 
 Allows you to change the run address vector RUNAD ($2E0) for loaded binary files.
 
@@ -287,14 +294,16 @@ ldx >addr
 JSR xBIOS_SET_RUNAD
 ```
 
-### xBIOS_SET_DEFAULT_DEVICE
+### xBIOS\_SET\_DEFAULT\_DEVICE
 
 Restores the standard IO device.
+
 ```
 JSR xBIOS_SET_DEFAULT_DEVICE
 ```
 
-### xBIOS_OPEN_DIR
+### xBIOS\_OPEN\_DIR
+
 Allows you to change the current directory.
 
 ```
@@ -305,7 +314,7 @@ JSR xBIOS_OPEN_DIR
 
 Note that the directory cannot be created by xBIOS and therefore must be created with an external tool such as ‘franny’.
 
-### xBIOS_LOAD_BINARY_FILE
+### xBIOS\_LOAD\_BINARY\_FILE
 
 Load and run the binary file from the current read/write position. INIT and RUN headers are supported.
 
@@ -313,7 +322,7 @@ Load and run the binary file from the current read/write position. INIT and RUN 
 JSR xBIOS_LOAD_BINARY_FILE
 ```
 
-### xBIOS_OPEN_DEFAULT_DIR
+### xBIOS\_OPEN\_DEFAULT\_DIR
 
 Opens the default directory.
 
@@ -321,7 +330,7 @@ Opens the default directory.
 JSR xBIOS_OPEN_DEFAULT_DIR
 ```
 
-### xBIOS_SET_DEVICE
+### xBIOS\_SET\_DEVICE
 
 Change the IO device.
 
@@ -331,7 +340,7 @@ ldx >dev
 JSR xBIOS_SET_DEVICE
 ```
 
-### xBIOS_RELOCATE_BUFFER
+### xBIOS\_RELOCATE\_BUFFER
 
 Change address IO buffer. If before the call to set the marker C = 1, the relocation can be carried out even during IO. The data will not be lost. If the marker before calling C = 0, buffer contents will not be copied to a new location.
 
@@ -340,7 +349,7 @@ ldx >buffer
 JSR xBIOS_RELOCATE_BUFFER
 ```
 
-### xBIOS_GET_ENTRY
+### xBIOS\_GET\_ENTRY
 
 Gets another entry in the directory. The X register returns the index to the filename or folder (byte of buffer address is stored in the variable xBUFFERH). The accumulator is set with the status. The carry flag is set when the end of the directory is found.
 
@@ -348,7 +357,7 @@ Gets another entry in the directory. The X register returns the index to the fil
 JSR xBIOS_GET_ENTRY
 ```
 
-### xBIOS_OPEN_DEFAULT_FILE
+### xBIOS\_OPEN\_DEFAULT\_FILE
 
 Opens the default file. The function does not search the directory, the file handle is derived from the variable 'Xfile'.
 
@@ -356,17 +365,17 @@ Opens the default file. The function does not search the directory, the file han
 JSR xBIOS_OPEN_DEFAULT_FILE
 ```
 
-### xBIOS_READ_SECTOR
+### xBIOS\_READ\_SECTOR
 
 Load a sector into a buffer.
-lda >sector ; High byte of the sector number
-ldy <sector ; Low byte of the sector number
+lda \>sector ; High byte of the sector number
+ldy \<sector ; Low byte of the sector number
 
 ```
 JSR xBIOS_READ_SECTOR
 ```
 
-### xBIOS_FIND_ENTRY
+### xBIOS\_FIND\_ENTRY
 
 This function allows you to find the specified directory entry. The X register returns the index to the filename or folder (byte of buffer address is stored in the variable xBUFFERH). The accumulator is the status byte. If an entry is not found, the carry flag is set.
 
@@ -376,7 +385,7 @@ ldx >fname
 JSR xBIOS_FIND_ENTRY
 ```
 
-### xBIOS_SET_BUFFER_SIZE
+### xBIOS\_SET\_BUFFER\_SIZE
 
 This feature allows you to set the buffer size for IO operations. Buffer Size is also stored in the variable xBUFSIZE in bytes format.
 lda # $ 100-SIZE
@@ -515,7 +524,6 @@ nibble          cmp     #$0a
     :$c300      .byte $ff
 ```
 
-
 ### Playing Music During I/O
 
 ```
@@ -623,7 +631,6 @@ _stop           jmp     _stop        ; endless loop
                 run     run_adr
 ```
 
-
 ### Indexed Data within File - LZ4 Graphics Decompression
 
 ```
@@ -716,7 +723,7 @@ bmi no_hispeed
 sta xSPEED
 ```
 
-This works in conjunction with: "jsr xBIOS_SET_DEFAULT_DEVICE"
+This works in conjunction with: "jsr xBIOS\_SET\_DEFAULT\_DEVICE"
 If you are using the AtariOS I/O module, speed control is not possible.
 
 ### Detecting High Speed Devices
@@ -779,8 +786,8 @@ A directory entry within Atari DOS 2 / MyDOS and similar DOS’s uses up 16 byte
 .byte c'FILENAMEEXT' ; Byte 6 to 16
 ```
 
-A standard directory uses 8 sectors (size = $08) which means 8 sectors * 8 entry = 64 max.
-Top DOS / Bibo DOS with sector sizes of 256 bytes may looks like 8 sectors * 16 entry = 128 maximum.
+A standard directory uses 8 sectors (size = $08) which means 8 sectors \* 8 entry = 64 max.
+Top DOS / Bibo DOS with sector sizes of 256 bytes may looks like 8 sectors \* 16 entry = 128 maximum.
 You can make subdirectories of differing sizes eg. size=$02 (16/32 entry) or size = $ff (2040 / 4080 entry).
 There is no tool to make different size catalogues, if at any time such a tool appears, xBIOS will handle it.
 
@@ -802,9 +809,8 @@ fname .byte c'NEXTPARTCOM' ; 11 chars ATASCII
 
 xBOOT uses 384 bytes at $480 and $f9-$ff in page zero.
 
-
-
 ---
+
 ```
 Original document from Steve Nicklin (snicklin at AtariAge).
 Imported into AtariWiki (23/01/2016) to allow peer feedback and improvement.

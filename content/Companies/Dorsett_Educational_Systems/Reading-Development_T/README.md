@@ -1,6 +1,7 @@
 # Dorsett Atari Reading-Development (Reading Comprehension) T ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Reading-Development (Reading Comprehension) T](https://archive.org/details/DorsettAtariReadingDevelopment)
 
 This is an archive of the "Reading Development" educational program published by Dorsett
@@ -24,7 +25,7 @@ and Thomas Cherryhomes in May/June 2015.
 
 Album: Reading-Development (Reading Comprehension) (T)
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -67,6 +68,7 @@ Tracks (size in sum: 838.2 MB):
 - [t16](http://data.atariwiki.org/FLAC/Reading-Development_T/t16.flac)
 
 ## Images
+
 ![](attachments/tA_.jpg)
 Dorsett Atari Reading-Development (Reading Comprehension) T - cassettes with uneven numbers
 

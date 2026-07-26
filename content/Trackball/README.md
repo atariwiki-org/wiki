@@ -289,7 +289,7 @@ RETURN
 ---
 
 The next program demostrates ACTION!'s Ability to run 2 or more
-procedures at the same time. The Move_cursor routine runs
+procedures at the same time. The Move\_cursor routine runs
 independent of Main Proc. This Program is extra for Action Programers.
 
 ---
@@ -487,4 +487,3 @@ left_margin=2
 cursor=0
 RETURN
 ```
-

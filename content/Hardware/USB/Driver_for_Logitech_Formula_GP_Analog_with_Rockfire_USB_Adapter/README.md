@@ -4,7 +4,6 @@ Tested with a Logitec Formula GP Wheel (Analog Version) and a Rockfire USB Adapt
 
 ![](attachments/LogitechFormulaGP.jpg)
 
-
 The RockFire Adapter can be used to attach all kinds of PC Controller with Game-Port Interface via USB to the Atari USB Cart.
 
 The Rockfire USB-Nest Joystick Converter extends the USB port to support all conventional analog 15-pin game port controllers. This converter is built with a unique 4-mode selectable switch for maximum compatibility with CMS Controller super 8 + (Mode 4).
@@ -25,10 +24,8 @@ Features:
 |  $10           |  1                 | Wheel movement  | $270 (624)  | PADDL0 | LWHEEL     |
 |  $11           |  2                 | Buttons 1-6 | $271 (625)  | PADDL1 | LBUTTON     |
 
-
-- Byte 1: Wheel movement (< $25 = left, $26-$2F = middle, >$30 = right)
+- Byte 1: Wheel movement (\< $25 = left, $26-$2F = middle, \>$30 = right)
 - Byte 2: Buttons 1-6
-
 
 ## Device dependent source
 
@@ -707,5 +704,3 @@ This Source must be included into the [Base USB HID Driver](../BaseHIDDriver/REA
 ```
 
 Source and patched PolePosition Game can be found on ATR Disk attached to this article.
-
-

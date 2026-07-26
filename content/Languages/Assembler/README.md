@@ -7,10 +7,12 @@ The first assembler for the Atari available to the public was [Atari Assembler E
 In recent years, a number of cross-compilers have appeared. These allow you to develop Atari assembler programs on your PC or Mac and then send the code to the Atari (or emulator) for testing. These greatly ease the task of writing programs as you have access to modern IDE systems and editors.
 
 ## Overview
-- [6502_OpCodes.xlsx](attachments/6502_OpCodes.xlsx) ; Excel table with all opcodes and comparisons between different Assemblers
+
+- [6502\_OpCodes.xlsx](attachments/6502_OpCodes.xlsx) ; Excel table with all opcodes and comparisons between different Assemblers
 - [6502-Codes.pdf](attachments/6502-Codes.pdf) ; Table with all OpCodes, cycles, flags, comments, etc., highly recommended! Thanks to [insane](https://insane.tscc.de/) from ABBUC :-)
 
 ## Assemblers for Atari Computers
+
 - [130XE+ Makroassembler](130XE_Plus_Makroassembler/README.md) (1991)
 - [A65 Assembler](A65_Assembler/README.md) (1984)
 - [AMOEBA 3.0](../../Companies/Atari/AMOEBA/README.md)(198?)
@@ -31,6 +33,7 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [Synapse Assembler 'SynAssembler' by Steve Hales.](../../Companies/Synapse_Software/SynAssembler/README.md) (1982)
 
 ## Cross-Assemblers
+
 - [ATASM](https://atari.miribilist.com/atasm/) ; MAC/65 compatible cross assembler
 - [APX-20051 Cosmatic Atari Development Package](../../Companies/Atari/Atari_Program_Exchange_APX_Software/APX-20051_Cosmatic_Atari_Development_Package/README.md) ; cross-assembler for 1802 assembly language
 - [MADS](https://mads.atari8.info/) ; powerful and modern cross assembler under constant development
@@ -38,10 +41,13 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [XASM](https://https://github.com/pfusik/xasm/) ; XASM is a 6502 cross-assembler with some syntax extensions. By default it generates binaries for Atari 8-bit computers.
 
 ## Development IDE
+
 - [WUDSN IDE](http://www.wudsn.com/index.php/ide) ; a cross development environment
 
 ## Books
+
 - [The Atari Assembler](http://www.atarimania.com/documents/The-Atari-Assembler.pdf) ; detailed and easy-to-read introduction to programming 6502-assembly on the Atari using Assembler/Editor.
 
 ## Tutorials
+
 - [Programming the Atari XL/XE](https://www.wudsn.com/index.php/productions-atari800/tutorials) ; a series of short video tutorials, available on YouTube and as download

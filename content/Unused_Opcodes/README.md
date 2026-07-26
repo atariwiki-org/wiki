@@ -12,12 +12,13 @@ About 45 minutes later I pinned it down:  FFxxyy performs exactly the same as th
      INC VARIABLE,X
      SBC VARIABLE,X
 ```
+
 I can substitute:
+
 ```
      .HS FF
      .DA VARIABLE
 ```
-
 
 You might wonder if I will ever find that sequence.  I did try writing a program to demonstrate its use.  It has the advantage of saving 3 bytes, and 4 clock cycles.  (The SBC instruction is executed DURING the 7 cycles of the INC instruction!)
 
@@ -46,7 +47,7 @@ The action most of the rest perform can be deduced by looking at the other opcod
 
 A few of the opcodes seem especially interesting and potentially useful.  For example, A3xx performs three steps:  first it loads xx into the X-register; then using this new value of X, it moves the byte addressed by (xx,X) into both the A- and X- registers.  Another way of looking at this one is to say that whatever value xx has is doubled; then the two pagezero bytes at 2*xx and 2*xx+1 are used as the address for loading the A- and X-registers.  You could use this for something, couldn't you?
 
-There are five instructions which form the logical product of the A- and X-registers (without disturbing either register) and store the result in memory.  If we call this new instruction "SAX", for "Store A&X", we have:
+There are five instructions which form the logical product of the A- and X-registers (without disturbing either register) and store the result in memory.  If we call this new instruction "SAX", for "Store A\&X", we have:
 
 ```
      83   SAX (z,X)             8F   SAX a
@@ -86,7 +87,6 @@ Opcodes 93, 9B, and 9E are really weird!  It took a lot of head-scratching to fi
           and "hea+1" and stores the result at "a,Y".
           Whew!
 ```
-
 
 ```
      9E   Forms the logical product of the X-register

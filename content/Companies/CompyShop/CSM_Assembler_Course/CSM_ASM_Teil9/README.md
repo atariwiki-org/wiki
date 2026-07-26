@@ -25,13 +25,14 @@ Daraus ergeben sich für die Sprungbefehle folgende Bedeutungen:
 BEQ - Sprung bei Gleichheit
 BNE - Sprung bei Ungleichheit
 
-BCS - Sprung wenn Register >= Daten
-BCC - Sprung wenn Register < Daten
+BCS - Sprung wenn Register \>= Daten
+BCC - Sprung wenn Register \< Daten
 
-BPL - Sprung wenn Register >= Daten
-BMI - Sprung wenn Register < Daten
+BPL - Sprung wenn Register \>= Daten
+BMI - Sprung wenn Register \< Daten
 
 Der Befehl CMP, der einen Vergleich zwischen dem Akku und dem Inhalt einer Adresse oder einer Zahl tätigt, kann wie folgt angewendet werden:
+
 ```
 CMP ADR       :ADR=16 bit Adresse
 CMP adr       :adr=8 bit Adresse
@@ -42,12 +43,15 @@ CMP (adr,X)
 CMP (adr),Y
 CMP adr,x     :adr=8 bit Adresse
 ```
+
 Für die Befehle CPX und CPY gibt es nur drei Adressierungsarten:
+
 ```
 CPX ADR       :ADR=16 bit Adresse
 CPX adr       :adr=8 bit Adresse
 CPX NO        :NO=8 bit Zahl
 ```
+
 Jetzt, wo Sie die Vergleichsbefehle kennengelernt haben, sollten Sie eigentlich schon hervorragend programmieren können, denn programmieren in Assembler heißt nichts anderes zu tun als Speicherstellen zu verändern, um dann die Inhalte zu vergleichen und aufgrund der Ergebnisse wieder Speicherstellen zu verändern...
 
 Nun ja. Ich werde dann doch lieber erst auf die Transportbefehle eingehen. Es gibt genau sechs Transportbefehle: TAX,TAY,TXA,TYA,TSX und TXS.
@@ -68,8 +72,8 @@ Die letzten beiden Befehle TSX und TXS haben eine besondere Bedeutung. Mit Ihnen
 Unter dem Stapel oder STACK versteht man einen bestimmten Speicherbereich, der bei drei Sachen benötigt wird:
 
 1. vorübergehende Datenspeicherung
-1. Adressenspeicherung bei Unterprogrammen
-1. Registerspeicherung bei Interrupts
+2. Adressenspeicherung bei Unterprogrammen
+3. Registerspeicherung bei Interrupts
 
 Der Stapel belegt bei den 6502-Rechnern immer die Page 1, das heißt er nimmt die Adressen 256 ($100) - 511 ($1FF) ein.
 
@@ -101,6 +105,7 @@ Bis dahin viel Spaß am Assembler.
 Ihr Uwe Röder
 CSM / 4.1989
 ---
+
 Der Artikel entstammt der Kursreihe „6502 Programmieren“ des Compy Shop Diskettenmagazins. Die Kursreihe besteht aus 14 Kursen, die im Laufe des Jahres 2011 in unregelmäßigen Abständen einzeln veröffentlicht werden, bzw. anschließend als Zusammenzug als ABBUC-Buch „6502 Programmieren“ erscheinen.
 Koordination: Volkert Barr (volkert@nivoba.de)
 Version 1.1 / 2011-01-23

@@ -2,11 +2,12 @@
 
 ### Meine Hardware
 
-*800XL - im Originalzustand
-*XC12
-*SDrive - Eigenbau \[ mit Unterstützung ;) \]
+\*800XL - im Originalzustand
+\*XC12
+\*SDrive - Eigenbau \[ mit Unterstützung ;) \]
 ---
-[gromit.jpg](attachments/gromit.jpg) 
+
+[gromit.jpg](attachments/gromit.jpg)
 Bester Freund von Wallace
 
 ---
@@ -20,6 +21,7 @@ Bester Freund von Wallace
 %%tab-InnenA1
 tab content  innen A1
 ---
+
 /%
 %%tab-InnenA2
 tab content innen A2
@@ -40,6 +42,7 @@ tab content aussen B
 /%
 
 ---
+
 </test>
 ---
 ACTION! TRUE/FALSE Beispiel
@@ -61,12 +64,19 @@ PROC main()
   FI   
 RETURN
 ```
+
 ---
+
 ## Backup
+
 Umleitungsseite erstellen: \[{SET alias='Name der Seite auf die umgeleitet werden soll'}\]
 Umleitungsseite finden   : Suche nach 'alias' = 70% Relevanz
 Umleitungsseite editieren: Link als Verknüpfung kopieren, in Browser als URL einfügen und "Wiki.jsp" durch "Edit.jsp" ersetzten. (Groß- und Kleinschreibung beachten)
+
 ### Neue Seiten
-[Assembler](../../Languages/Assembler/README.md) 
+
+[Assembler](../../Languages/Assembler/README.md)
+
 ### Alte Seiten
+
 [Interne Variablen](../../Languages/Action/Internal_Variables/README.md) - Magazin Article (german)

@@ -1,9 +1,8 @@
 # Forth Bridge - from BASIC to Forth
 
-adapted Version for [VolksForth](http://volksforth.sf.net) 
+adapted Version for [VolksForth](http://volksforth.sf.net)
 
-original version from the [Jupiter ACE Resource Site](http://www.jupiter-ace.co.uk/usermanual.html) 
-
+original version from the [Jupiter ACE Resource Site](http://www.jupiter-ace.co.uk/usermanual.html)
 
 ## Introduction
 
@@ -62,16 +61,17 @@ In FORTH, most words communicate via the (data) stack. They take their operands 
 BASIC uses infix notation. Instead of writing the operators in between the operands, {{2+3}} in FORTH you would say {{2 3 +}}.
 2 and 3 are both numbers and so are put on the stack and + is a FORTH word which takes two numbers off the stack and puts back their sum, in this case 5. This is just like a recipe where you list the ingredients and then put the instructions. It may seem strange to expect you to think about arithmetic in a different way - after all why can't the computer do it for you? But it does have its benefits. For instance, you don't need any parantheses in your calculations because there is never any ambiguity about which operation to do first. The operator just takes the operands it needs off the stack and puts the results back afterwards.
 
-So {{(2+4)*3}} becomes {{2 4 + *}} in postfix notation. There is a very common way of showing what words do to the stack. You list the operands that the word requires on the stack starting with the one lowest down and ending with the top. So with +, this is
+So {{(2+4)\*3}} becomes {{2 4 + \*}} in postfix notation. There is a very common way of showing what words do to the stack. You list the operands that the word requires on the stack starting with the one lowest down and ending with the top. So with +, this is
 
 ```
    (n,m - n+m) 
 operands  result
 ```
 
-A word can have any number of operands and leave any number of results. This makes it very easy to define your own functions. You don't have to declare a list of variables, you just write the definition bearing in mind that the numbers you want will be on the stack. e.g. to define a function which squares a number, in BASIC you would say {{DEF FN s(x)=x*x : REM x squared}} in FORTH, this becomes {{: SQUARE ( n - n squared) DUP * ;}}
+A word can have any number of operands and leave any number of results. This makes it very easy to define your own functions. You don't have to declare a list of variables, you just write the definition bearing in mind that the numbers you want will be on the stack. e.g. to define a function which squares a number, in BASIC you would say {{DEF FN s(x)=x\*x : REM x squared}} in FORTH, this becomes {{: SQUARE ( n - n squared) DUP \* ;}}
 
 DUP (n - n,n) makes a copy of the top number on the stack and puts that on the stack as well. FORTH has other stack-manipulation words for getting the numbers into the order you want. They are
+
 - ?DUP duplicates the top of the stack if it is non-zero.
 - DROP drops the top number from the stack.
 - OVER makes a copy of the second number down.
@@ -79,7 +79,7 @@ DUP (n - n,n) makes a copy of the top number on the stack and puts that on the s
 - ROLL moves a given number down to the top.
 - ROT moves the third number down to the top.
 - SWAP swaps the top two numbers.
-- * (n - n,n*m) takes the top two numbers of the stack and puts back their product.
+- * (n - n,n\*m) takes the top two numbers of the stack and puts back their product.
 
 Conventionally, FORTH works only with integers, usually two bytes long. There is also same double-length arithmetic which uses numbers four bytes long. With many programs, it is very easy to scale all the numbers up to integers for the calculations and then scale them back again. For instance, if you were dealing with money you would work in pence and convert back to pounds afterwards.
 
@@ -98,6 +98,7 @@ Conventionally, FORTH works only with integers, usually two bytes long. There is
 Notice how in FORTH, the limit of the loop is one more than in BASIC. This means that if you want to execute the loop n times starting at x then the limit is x+n, but in BASIC it is x+n-1. e.g.
 
 Basic:
+
 ```
 10 REM character set 
 20 FOR n = 0 TO 255 
@@ -106,6 +107,7 @@ Basic:
 ```
 
 Forth:
+
 ```
 : CHARS 
    256 0 DO 
@@ -123,6 +125,7 @@ The word I copies the current value of the loop counter to the stack, then EMIT 
 IF takes a number (condition) off the stack and if it is non-zero (true) it executes the part between IF and ELSE and then jumps to THEN, otherwise if the condition is zero (false) it jumps to ELSE and executes the ELSE ... THEN part. You can omit ELSE when there is nothing to be done if the condition is false. Notice how THEN doesn't come in the same place as in BASIC. The way to think of it in FORTH is if the condition is true, do something THEN get on with the rest of the program. e.g.
 
 Basic:
+
 ```
 10 REM balance 
 20 PRINT ABS (bal); 
@@ -136,6 +139,7 @@ Basic:
 ```
 
 Forth:
+
 ```
 : BALANCE ( balance - ) 
    DUP ABS . 
@@ -166,7 +170,6 @@ Forth:
 | RUN  |    | There is no direct equivalent in FORTH - you just name the word you want to run. |
 | SAVE  | SAVESYSTEM | SAVESYSTEM Saves the current dictionary as a dictionary file |
 
-
 ## Arrays
 
 FORTH doesn't have any array handling words of its own but it does allow you to set aide space in the dictionary for your own data. There is a word CREATE which puts a word name in the dictionary but nothing else. So CREATE ROW makes a word called ROW and when you type in 'ROW' it puts on the stack the address of the first byte in the dictionary after the definition of ROW. This may seem pointless, but there is another FORTH word, ALLOT which tags a specified number of bytes onto the end of the dictionary. This gives you a data field for your empty name, so if you now say 6 ALLOT you have made a 1-d array called ROW which is 6 bytes long. {{3 5 ROW + 1- C!}} stores 3 in the 5th element of ROW and {{5 ROW + 1- C@ }} reads it back again. (You need the 1- because the 1st element is at ROW+0.)
@@ -176,11 +179,13 @@ A two dimensional array is just a row of elements but the elements themselves ar
 Forth does not have READ, DATA and RESTORE (although you could mimic them if you wanted) but it does have something very much simpler which does just as well, namely the stack. Instead of a DATA statement, you have a word which puts all the data on the stack. e.g. {{{: DATA 5  0 7 2 1 4 ;}}}
 
 In BASIC this would be
+
 ```
 110 DATA 5,0,7,2,1,4
 ```
 
-One of the main uses for READ, DATA & RESTORE is for initialising arrays, so you can now define a word which will set up ROW (from the section on arrays)
+One of the main uses for READ, DATA \& RESTORE is for initialising arrays, so you can now define a word which will set up ROW (from the section on arrays)
+
 ```
 : INIT 
   DATA -1 5 DO 
@@ -189,6 +194,7 @@ One of the main uses for READ, DATA & RESTORE is for initialising arrays, so you
 ```
 
 or in BASIC
+
 ```
 120 FOR I = 1 to 6 
 130 READ R(I) 

@@ -9,7 +9,7 @@ These tutorials can be run from the disks. They allow to explore assembler progr
 
 ![](attachments/MCTUTOR.png)
 
-Disk: [MCTUTOR.ATR](attachments/MCTUTOR.ATR) 
+Disk: [MCTUTOR.ATR](attachments/MCTUTOR.ATR)
 
 ---
 
@@ -17,5 +17,4 @@ Disk: [MCTUTOR.ATR](attachments/MCTUTOR.ATR)
 
 ![](attachments/ASSTUTOR2.png)
 
-Disk: [ASSTUTO2.ATR](attachments/ASSTUTO2.ATR) 
-
+Disk: [ASSTUTO2.ATR](attachments/ASSTUTO2.ATR)

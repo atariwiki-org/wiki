@@ -2,11 +2,11 @@
 
 TODO: This is outdated and refers to the JSP Wiki!!
 
-__ First, you need an account on the AtariWiki__
+\_\_ First, you need an account on the AtariWiki\_\_
 
-__Still a working place, please stand by for more info in the future__
+**Still a working place, please stand by for more info in the future**
 
-Many tools are collected in this RTF file: [AtariWiki-Tools.rtf](attachments/AtariWiki-Tools.rtf) 
+Many tools are collected in this RTF file: [AtariWiki-Tools.rtf](attachments/AtariWiki-Tools.rtf)
 
 ```
 - Calculator after a little calculation<br>
@@ -21,27 +21,25 @@ ORG+$068B LDX #36
 
 - [Atari XF551](http://www.strotmann.de/~cas/Infothek/XF551formate/XF551Formate.pdf)
 
-
-
 ### 1) Auszeichnung (Formatierung) im Wiki sollte immer nach semantischen Kriterien erfolgen, d.h. danach *was* etwas ist (Ueberschrift,
+
 Quelltext, Link) und nicht danach *wie* etwas am Bildschirm dargestellt wird (Fett, Kursiv etc). Die Darstellung richtet sich nach der *Art* der
 Information. Wenn die Darstellung verbessert werden kann, dann koennen wir das Stylesheet des Wiki anpassen
 
 ### 2) ein Ziel des Wikis ist Informationen schnell findbar zu machen.
+
 Dazu zählt, die Informationen so aufzubereiten das Suchmaschinen die Daten gut finden koennen (Google, Bing, DuckDuckGo, Suchfunktion im Wiki ...).
 Umdas moeglich zu machen, sollten Inhalte moeglichst als Text-Artikel im Wiki erscheinen, weniger als Anhang.
 
 Beispiele:
 
- * ein MAC65 Programm lieber als Listing im Artikel anstatt als M65-Datei in Anhang
- * ein Basic Programm lieber als LST im Artikel als BAS-Datei im Anhang
- * Lieber eine TXT-Datei als eine DOC/PDF-Datei
- * ZIP, RAR, TAR-Archive auspacken und die einzelnen Dateien in den
+ \* ein MAC65 Programm lieber als Listing im Artikel anstatt als M65-Datei in Anhang
+ \* ein Basic Programm lieber als LST im Artikel als BAS-Datei im Anhang
+ \* Lieber eine TXT-Datei als eine DOC/PDF-Datei
+ \* ZIP, RAR, TAR-Archive auspacken und die einzelnen Dateien in den
 Anhang anstatt das ganze Archiv, Texte aus dem Archiv als Wiki-Artikel aufbereiten
 
-
 ## Skript-Beispiele:
-
 
 |
 
@@ -51,9 +49,10 @@ data.atariwiki.org/FLAC
 
 data.atariwiki.org/MOVIE
 
-
 ---
+
          = force a line break
+
 ```
 [link](../link/README.md)     = create a hyperlink to an internal WikiPage called 'Link'.
 [this_is_also_a_link](../this_is_also_a_link/README.md) = create a hyperlink to an internal WikiPage called
@@ -209,8 +208,8 @@ ORG+$068B LDX #36
           JMP 2777
 ```
 
-
 ## RELGEN.ACT
+
 ```
 * [Atari XF551|http://www.strotmann.de/~cas/Infothek/XF551formate/XF551Formate.pdf]
 

@@ -25,9 +25,8 @@ programs over a network in raw, un-encoded form are usually doomed to failure.
 Uuencode has become popular for encoding because it is fairly efficient:
 it encodes each group of three 8-bit bytes into only four bytes of printable
 characters.  Therefore, using uuencode, a file is expanded by a factor of only
-1.333 to one as the price of constraining the character set to be limited to
+1\.333 to one as the price of constraining the character set to be limited to
 printing characters only.
-
 
 ## 2.  USING UUDECODE VER. 1.2a:
 
@@ -72,7 +71,6 @@ count as established when the file was being uuencoded.
 That's about all there is to it.  Comments on this manual, as well as on any
 difficulties experienced with UUDECODE, should be directed to the author.
 
-
 ## 3.  WHAT UUENCODE AND UUDECODE REALLY DO TO THE DATA:
 
 The uuencoding process, used to create ASCII files of the type that UUDECODE
@@ -116,7 +114,6 @@ fewer bytes, pack each group of 6 bits in the low-order portion of each byte
 back into 8-bit packed binary form, and write the re-packed bytes out to a
 binary output file.
 
-
 ## 4.  PITFALLS:
 
 Unfortunately, as uuencode has been adopted wholesale for use in transmitting
@@ -133,7 +130,6 @@ beginning, which lists all the output characters from decimal 32 to 95, and
 for the uudecode program to capture the values received in their place and
 decode accordingly.  If they have not been mapped one-to-one, of course it can
 only throw up its hands in dismay and so inform you.
-
 
 ## 5.  CAPABILITIES OF UUDECODE VER. 1.2a:
 

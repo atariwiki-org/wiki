@@ -15,10 +15,10 @@ Wenn also aus dem unten gezeigten Quellcode ein fertiges COM-File werden soll:
 - das kompilierte Programm abspeichern
 - das Kompilat in z.B. BeWe-Softs Superpacker laden
 - aus der INIT-Adresse eine RUN-Adresse machen
-- CLR_80FF voranstellen mit INIT-Adresse voranstellen
+- CLR\_80FF voranstellen mit INIT-Adresse voranstellen
 - das Ganze als ERROR07.COM (oder ERROR.COM) abspeichern
 
-CLR_80FF ist eine kleine Maschinenroutine, die die Speicheradressen $80-$FF nullt. Ich habe festgestellt, daß die nach dem Laden eines DOS sehr oft nicht Null sind, weil sie als beliebte freie ZP-Adressen von so allerlei Zeugs benutzt werden.
+CLR\_80FF ist eine kleine Maschinenroutine, die die Speicheradressen $80-$FF nullt. Ich habe festgestellt, daß die nach dem Laden eines DOS sehr oft nicht Null sind, weil sie als beliebte freie ZP-Adressen von so allerlei Zeugs benutzt werden.
 
 Allerdings werden sie auch von ACTION! und ACTION!-Programmen benutzt und wenn man nicht peinlich darauf achtet, daß man in seinem ACTION!-Programm alle Variablen sauber initialisiert, dann wird aus z.B.
 
@@ -28,7 +28,7 @@ schon mal eine Schleife, die überhaupt nicht ausgeführt wird.
 
 Also hier noch mal ein Hinweis zur sauberen Variableninitialisierung:
 
-__Beispiel 1__
+**Beispiel 1**
 (so ist es schlecht, weil die Variable nur beim Kompilieren gesetzt wird):
 
 ```
@@ -37,7 +37,7 @@ BYTE I=[0]
 ...
 ```
 
-__Beispiel 2__
+**Beispiel 2**
 (so ist es viel besser, weil die Speicherstelle bei jedem Programmstart gesetzt wird):
 
 ```
@@ -50,7 +50,7 @@ PROC MAIN()
 RETURN
 ```
 
-__ERROR07.ACT__
+**ERROR07.ACT**
 Und hier nun das, worum es eigentlich geht:
 
 ```

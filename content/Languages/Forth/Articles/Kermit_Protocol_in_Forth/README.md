@@ -2,9 +2,9 @@
 
 original C=64 Sourcecode
 
-[ftp://kermit.columbia.edu/kermit/c/](ftp://kermit.columbia.edu/kermit/c/) 
+[ftp://kermit.columbia.edu/kermit/c/](ftp://kermit.columbia.edu/kermit/c/)
 
-About the Kermit Protcol, see [Kermit (protocol) in Wikipedia](http://en.wikipedia.org/wiki/Kermit_(protocol))
+About the Kermit Protcol, see [Kermit (protocol) in Wikipedia](<http://en.wikipedia.org/wiki/Kermit_(protocol)>)
 
 ## KERMIT C-64, v1.5
 
@@ -42,7 +42,6 @@ Floor, Watson Laboratory, 612 West 115th Street, New York, N.Y. 10025.
 For those near the University of Vermont, the USERS GUIDE can be
 purchased from the Academic Computing Center in the Cook Building.
 
-
 The file C644TH.SCR is an ASCII, printable file made from the FORTH screens
 of C64-KERMIT, v1.5 , with carriage returns added to its 40-character
 lines for printing, and with a few inter-screen heading lines added for
@@ -52,7 +51,6 @@ with other versions of FORTH, and some screens will be irrelevant to other
 systems, especially those dealing with I/O.  This file is meant to be used
 by knowledgeable FORTH programmers who wish to adapt and improve this
 KERMIT program for their own private systems.
-
 
 R. Detenbeck, Physics Dept., University of VT, Burlington, VT 05405
 
@@ -2785,4 +2783,3 @@ F8-? => SHOW THESE OPTIONS
                                         
                        
 ```
-

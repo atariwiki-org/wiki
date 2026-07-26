@@ -17,6 +17,7 @@ Unteres Nibble (Bits 0 bis 3)
 0 - Ausgabe von Leerzeilen auf dem Bildschirm. Das High-Nibble gibt in diesem Fall nur Auskunft über die Anzahl der Zeilen und den DLI. Ist Bit 7 gesetzt, so wird ein DLI ausgeführt. Die Bits 4 bis 6 geben Auskunft über die Anzahl der Zeilen:
 
 Bits 4 bis 6:
+
 ```
 000 - 1 Leerzeile
 001 - 2
@@ -33,6 +34,7 @@ Bits 4 bis 6:
 Ist Bit 7 gesetzt, so wird auch hier ein DLI ausgelöst. Ist Bit 6 gesetzt, so wird auf den nächsten VBI gewartet. Dieser Sprung sollte ganz am Ende einer Display-List stehen und zum Anfang der Display-List zurückspringen. Ist Bit 6 nicht gesetzt, so wird nur ein Sprung an einen anderen Speicherbereich durchgeführt, an welchem sich die Display-List fortsetzt. Dies muss teilweise erfolgen, da die Display-List keine 1 KB Grenze überschreiten darf.
 
 Es folgen nun die verschiedenen Grafikstufen. Es wird dabei immer angegeben wie viele Bytes pro Zeile benötigt werden, wie viele Farben zur Verfügung stehen und wie viele Bildschirmzeilen für eine Grafikzeile benötigt werden.
+
 ```
 2 - Text    40,2,8
 3 - Text    40,2,10
@@ -49,6 +51,7 @@ D - BitMap 160,4,2
 E - BitMap 160,4,1
 F - BitMap 320,2,1
 ```
+
 Die Bits des oberen Nibble (Bits 4 - 7) haben folgende Bedeutung:
 
 ```
@@ -60,7 +63,6 @@ Bit 7: gesetzt: DLI wird ausgelöst
 Soviel zu den einzelnen Befehlen. Es ist nicht zwingend vorgeschrieben die Bildschirmspeicheradresse ganz zu Anfang der DL zu laden. Dies kann auch ganz am Ende der DL geschehen. Wichtig ist nur, dass mindestens einmal im Verlaufe der DL die Bildschirmspeicheradresse geladen wird. Geschieht dies nicht, so führt das lediglich zu einem seltsamen Flackern irgendwelcher undefinierbarer Bildschirminhalte.
 
 Um in MS eine eigene Display-List zu benutzen bietet sich der Pseudo-Opcode .HX an, mit dessen Hilfe ich Hex-Werte in dem Programm ablegen kann. Eine ganz normale Display-List sieht in MS dann so aus:
-
 
 ```
 00010          .LI OFF
@@ -89,12 +91,15 @@ Um in MS eine eigene Display-List zu benutzen bietet sich der Pseudo-Opcode .HX 
 00240 ; SPRUNG AN DL-ANFANG
 00250 ---------------------------
 ```
+
 Das wäre eigentlich schon alles. Als MS-Programmierer muss man eigentlich nur darauf achten welchen Speicherbereich man belegt. Wenn man z.B. mehr als 24 Gr.0 Zeilen benutzt, so reicht der normale Speicherbereich ab BC20 oder 9C20 nicht mehr aus und man muss sowohl die DL als auch den Bildschirmspeicher woanders unterbringen. Zu beachten ist in diesem Fall unbedingt, dass eine DL keine 1KB Grenze überschreiten darf. Wichtig ist auch, dass vom Ende der DL an den Anfang zurückgesprungen wird. Die DL ist nämlich im Grunde genommen eine Endlosschleife, die pro Bildschirmaufbau (50 mal pro Sekunde) abgearbeitet wird.
 
-Falls die Informationen über die DL nicht ausreichen sollten kann, ich nur noch auf die vielen Berichte oder Lehrgänge verweisen, die bisher in unserem Magazin erschienen sind. Einige einfache Beispiele befinden sich auch im Anhang. Diese sind im Bibo-Assembler Format abgelegt.
----
+## Falls die Informationen über die DL nicht ausreichen sollten kann, ich nur noch auf die vielen Berichte oder Lehrgänge verweisen, die bisher in unserem Magazin erschienen sind. Einige einfache Beispiele befinden sich auch im Anhang. Diese sind im Bibo-Assembler Format abgelegt.
+
 ## Anhang
+
 ### Beispiel 1 (DL1.ASM)
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -125,6 +130,7 @@ Falls die Informationen über die DL nicht ausreichen sollten kann, ich nur noch
 ```
 
 ### Beispiel 2 (DL2.ASM)
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -154,6 +160,7 @@ Falls die Informationen über die DL nicht ausreichen sollten kann, ich nur noch
 ```
 
 ### Beispiel 3 (DL3.ASM)
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -182,6 +189,7 @@ Falls die Informationen über die DL nicht ausreichen sollten kann, ich nur noch
 ```
 
 ### Beispiel 4 (DL4.ASM)
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -210,6 +218,7 @@ Falls die Informationen über die DL nicht ausreichen sollten kann, ich nur noch
 ```
 
 ### Beispiel 5 (DL5.ASM)
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -236,4 +245,3 @@ Falls die Informationen über die DL nicht ausreichen sollten kann, ich nur noch
 00230          .DA DL
 00240 ------------------------------
 ```
-

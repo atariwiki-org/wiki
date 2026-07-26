@@ -6,6 +6,7 @@ Version 2.30p was a newer version to 2.30 to fix two problems.
 - If you have a multidrive system and you initialized a disk in a drive other than one, when booted, the disk will always come up with the number of the drive on which it was initialized. To prevent this problem, use D1: as the destination drive.
 
 The patch for DOS XL 2.30 to make it a 2.30p:
+
 ```
 OSS Disk Newsletter
 Fall 1986

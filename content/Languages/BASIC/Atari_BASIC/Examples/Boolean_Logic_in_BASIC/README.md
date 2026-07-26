@@ -2,7 +2,6 @@
 
 Reprinted from the A.C.E.C. BBS (614)-471-8559
 
-
 Boolean logic is a very useful, but often unused, function of most BASIC languages.  Boolean logic is a true/false comparison operation.
 Because it only returns a true or false value, it returns a 1 or a 0.
 
@@ -13,7 +12,7 @@ a true statement.  A false comparison will return a value of 0.
 You can also make variable assignments with boolean logic. If you say A=1=1 then A=1 because 1=1 would return a 1.  A short table
 might be helpful at this point:
 
-| __Statement__ | __Result__ |
+| **Statement** | **Result** |
 | A=1=1   |   A=1 |
 | A=1=2   |   A=0 |
 | A=2=1   |   A=0 |

@@ -18,13 +18,11 @@ TRM40 emulates an ADM-31, and TRM80 emulates an ADM3A.
 
 TRM40 control keys:
 
-
 || Key    || Function ||
 | ^bk sp | screen toggle |
 | ^3     | cursor display lock/unlock |
 | ^;     | left shift screen |
 | ^.     | right shift screen |
-
 
 ## Second disk option
 
@@ -72,13 +70,11 @@ in drive "2".   To specify a CPM file,  prefix the file name with
 "A:",  to  specify  a DOS file prefix the name  with  "2:".   The
 following commands can be used:
 
-
 || Key  || Function ||
 | A    | display a directory (specify "A:", or "2:") |
 | C    | copy a file (or files, wild cards supported) |
 | D    | delete a file |
 | H    | display help menu |
-
 
 When transferring a file from Atari format to CPM format, or vice
 versa, you will be asked for text file translation, answer yes if
@@ -89,9 +85,11 @@ return-line feed sequence (or vice versa).
 As an example, the following would be entered after a "C" command
 to copy an Atari file named "TEST.TXT" to a CPM file of the  same
 name:
+
 ```
         2:TEST.TXT,A:
 ```
+
 In this example, text translation would be desired (enter "Y").
 Note:  MYDOS style subdirectories are supported with ICDS.
 
@@ -103,6 +101,7 @@ disk  programs available on other non-Indus based CPM systems  to
 transfer data to an Indus compatable CPM disk.
 
 Double density:  40 tracks, 18 256-byte sectors per track
+
 ```
                 DW        36                ;# CPM RECS/TRK
                 DB        3,7,0             ;1K AU PARAMS
@@ -113,7 +112,9 @@ Double density:  40 tracks, 18 256-byte sectors per track
                 DW        2                 ;TRACK OFFSET
                                             ; interleave = 1
 ```
+
 Single density:  40 tracks, 18 128-bytes sectors per track
+
 ```
                 DW        18                ;# CPM RECS/TRK
                 DB        3,7,0             ;1K AU PARAMS

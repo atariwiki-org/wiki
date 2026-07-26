@@ -1,6 +1,5 @@
 # Accessing Sparta DOS from XForth
 
-
 ## Source Library SPARTA.F
 
 This is a library of the Basic Sparta DOS Access Routines
@@ -93,7 +92,8 @@ CR ." Sparta DOS Extensions loaded..." CR
 
 This can be used to create a new FORTH with is able to start a FORTH Sourcefile from the Sparta-DOS commandline.
 
-__Example__
+**Example**
+
 ```
 {{{
 ( LAUNCH FORTH Source from Sparta DOS )
@@ -113,7 +113,8 @@ __Example__
 
 This little test script prints the commandline contents. This also shows how to use the commands.
 
-__Usage:__ XFORTHS PARAM.F test1 test2 test3
+**Usage:** XFORTHS PARAM.F test1 test2 test3
+
 ```
 : SPARTA-TEST
   PARAMS
@@ -141,9 +142,9 @@ This Script saves the current FORTH image on memory to disk.
 To have an extended FORTH follow these steps:
 
 1. start XFORTH
-1. INCLUDE" D1:SPARTA.F"   -- includes the Sparta DOS Extensions
-1. INCLUDE" D1:LAUNCH.F"  -- includes the Launch feature
-1. INCLUDE" D1:MKFRTH.F"  -- saves the new FORTH as "XFORTHS.COM"
+2. INCLUDE" D1:SPARTA.F"   -- includes the Sparta DOS Extensions
+3. INCLUDE" D1:LAUNCH.F"  -- includes the Launch feature
+4. INCLUDE" D1:MKFRTH.F"  -- saves the new FORTH as "XFORTHS.COM"
 
 ```
 ( MAKEFORTH Script )
@@ -202,4 +203,3 @@ CR
 
 BASE !            ( restore BASE )
 ```
-

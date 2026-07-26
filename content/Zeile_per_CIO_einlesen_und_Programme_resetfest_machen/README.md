@@ -17,6 +17,7 @@ ICBLEN $348/$349 :maximale Anzahl
 ```
 
 Beispiel:
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -60,7 +61,6 @@ Beispiel:
 00400 ------------------------------
 ```
 
-
 Mehr Aufwand ist nicht erforderlich. Die Routine Output dient hier nur dazu, um die Daten wieder mit hilfe des Editors auszugeben, um die korrekte Funktion zu zeigen.
 
 Wenn Sie Zahleneingaben haben, müssen Sie je nachdem was Sie mit den Zahlen machen wollen die Floating-Point Routinen benutzen. Sie können den ASCII-Text umwandeln in Zahlen im 6-Byte Floating-Point-Format und diese Zahlen dann wieder in das zwei Byte Integer-Format verwandeln. Wie dies geht wurde in einer der vorherigen Ausgaben des Magazins erklärt, weshalb ich an dieser Stelle nicht weiter darauf eingehe.
@@ -68,11 +68,13 @@ Wenn Sie Zahleneingaben haben, müssen Sie je nachdem was Sie mit den Zahlen mac
 Nun zum Thema RESET-Schutz.
 
 Es gibt einige wichtige Speicherstellen in Bezug auf den Reset-Schutz. Dies sind folgende:
+
 ```
 $09      Boot?
 $0A/$0B  DOSVEC
 $0244    COLDST
 ```
+
 Die letzte Adresse kennen wohl die meisten User. Ist der Inhalt dieser Adresse ungleich 0, so wird beim Drücken von Reset neu gebootet.
 
 Um ein Programm vor Reset zu schützen ist also erst einmal unbedingt notwendig, diese Speicherstelle auf 0 zu setzen. Steht in der Speicherstelle Boot? eine 1, so wird nach einem Druck auf RESET der Vektor DOSVEC $A/$B benutzt. Diesen Vektor müssen wir also benutzen, damit unser Programm nach einem RESET wieder
@@ -87,6 +89,7 @@ Wir müssen also zuerst den Inhalt von DOSVEC in eine Zero-Page Adresse retten u
 Desweiteren müssen wir darauf achten, daß die Routine, die den Inhalt von DOSVEC rettet, nur genau einmal, nämlich ganz zu Beginn des Programmes, aufgerufen wird und dann nie wieder, auch nicht nach einem RESET. In einem solchen Falle würde nämlich unser eigener RESET Vektor geschützt werden. Die Reset-Routine würde sich dann immer wieder selbst aufrufen und das DOS wäre verloren.
 
 Beispiel:
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -125,7 +128,7 @@ Beispiel:
                eigentlichen
                Programmes.
 ```
+
 Eine solche Routine könnte dem eigentlichen Programm vorangestellt werden, um es wirksam zu schützen.
 
 Hier wird erst der Inhalt von DOSVEC gesichert und dann DOSVEC auf eine RESET-Routine gesetzt, die erst das "alte" DOS-Init aufruft und dann zum eigentlichen Programmstart S springt.
-

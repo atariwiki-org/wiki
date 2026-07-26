@@ -1,10 +1,11 @@
 # Video Stretch - Rubber visuals in ACTION!
 
 ### General Information
+
 Author: Lloyd Burchill
 Language: ACTION!
 Compiler/Interpreter: ACTION!
-Published: Antic Vol. 5 # (10/ 86)
+Published: Antic Vol. 5 \# (10/ 86)
 ---
 
 ''Stretch visual images like silly putty on any 8-bit Atari with at least 48K memory and a disk drive. Video Stretch requires the ACTION! language cartridge from Optimized Systems Software. (Disk subscribers this month will find a runtime version that doesn't require ACTION!) Paddle controllers are recommended.''
@@ -15,7 +16,7 @@ Outstanding new graphics possibilities are still being discovered on the Atari 8
 
 Video Stretch can be used for an impressive slide-show program, or just to see how your favorite screens look when warped all out of shape. In any case, the program demonstrates that the 8-bit Atari is still capable of surprising new feats.
 
-The program will work with its own Graphics 9 sample picture. Or you can use your own pictures made with Micro-Painter, Graphic Master and Computereyes. If you have none of these, use ''Rapid Graphics Converter'' (__Antic__, November 1985) to change your images into a compatible format.
+The program will work with its own Graphics 9 sample picture. Or you can use your own pictures made with Micro-Painter, Graphic Master and Computereyes. If you have none of these, use ''Rapid Graphics Converter'' (**Antic**, November 1985) to change your images into a compatible format.
 
 ### TRYING IT OUT
 
@@ -27,7 +28,7 @@ Carefully type in Listing 1, STRETCH.ACT, following the instructions in the ACTI
 
 If you have some 62-sector micro-screens to try it with, choose the L option from the main menu. The program will display any 62-sector file named D:PICTURE. You can change this default name by altering the filename in the Load() procedure.
 
-You may alter the program to accept any 192-line graphics mode. To make the program accept pictures created in Graphics 15, for example, just redefine IR at the beginning of the program as 14, and change the graphics call in Rubber_Band to Graphics(15). If you have a non-XL computer, Graphics(15) is not available. You can replace it with Graphics(8), and the display will fix itself as soon as Stretch() operates.
+You may alter the program to accept any 192-line graphics mode. To make the program accept pictures created in Graphics 15, for example, just redefine IR at the beginning of the program as 14, and change the graphics call in Rubber\_Band to Graphics(15). If you have a non-XL computer, Graphics(15) is not available. You can replace it with Graphics(8), and the display will fix itself as soon as Stretch() operates.
 
 Similar changes can be made to the program to make it work on any 192-line graphics mode, namely Graphics 8, 9,10, 11, 14, and 15. For the little-used Graphics 14, change a*40 in Sinit() to a*20.
 
@@ -52,6 +53,7 @@ Because the new display list is so long, your choice of places to put it is limi
 ---
 
 Listing 1.
+
 ```
 ;STRETCH
 ;BY LLOYD BURCHILL
@@ -241,5 +243,7 @@ od
 
 Return
 ```
+
 ---
-PDF: [videostretch.PDF](attachments/videostretch.PDF) 
+
+PDF: [videostretch.PDF](attachments/videostretch.PDF)

@@ -2,7 +2,6 @@
 
 von Uwe Röder, CSM APRIL 1990
 
-
 Diese Folge des Assembler-Lehrganges ist im Grunde genommen eine Neuauflage aus meiner Serie über die Fähigkeiten unseres Ataris.
 
 Da ich in der letzten Ausgabe auf die Programmierung von Display-Lists eingegangen bin, dachte ich, dass nun unbedingt auch die Programmierung des Display-List Interrupts folgen muss.
@@ -34,7 +33,6 @@ Hardwareregister: 53270-53274 ($D016-$D01A)
 
 Zeichensatz: 756 ($2F4)
 Hardwareregister: 54281 ($D409)
-
 
 Es ist weiterhin zu beachten, dass die Routine, die durch den DLI aufgerufen wird, nicht allzu lang ist, da sonst Probleme bei zeitkritischen Input/Output Operationen entstehen können. So kann zum Beispiel der Diskettenzugriff trotz Speedy und High-Speed-SIO unendlich langsam werden oder gar ganz den Geist aufgeben.
 
@@ -104,12 +102,13 @@ Sie finden im Anhang noch einige Beispiele dazu, doch will ich hier einmal ein s
 00610 ;ENDE DES DLI
 00620 ------------------------------
 ```
+
 Sie müssen sich also nur an das folgende einfache Schema halten:
 
 1. Bit 7 in Display-List setzen
-1. Interrupt sperren; NMIEN=0
-1. DLI-Adresse in VSDLST eintragen
-1. Interrupt freigeben; NMIEN=$C0
+2. Interrupt sperren; NMIEN=0
+3. DLI-Adresse in VSDLST eintragen
+4. Interrupt freigeben; NMIEN=$C0
 
 In der DLI-Routine ist nur zu beachten, dass die Prozessor-Register gerettet und nur die Hardwareregister verändert werden. Um Flackern von Farben etc. zu vermeiden, sollte vor einer Farbänderung ein beliebiger Wert in WSYNC geschrieben werden.
 
@@ -117,10 +116,12 @@ Also alles ganz einfach!!!
 
 Ich hoffe, Sie kommen mit allem klar. Wenn irgendwelche Unklarheiten existieren experimentieren Sie doch einfach mit den DEMO-Programmen. Sie sind im Bibo-Assemblerformat im Anhang.
 
-
 ---
+
 ## Anahng
+
 ### Beispiel 1 (DLI1.ASM)
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -187,6 +188,7 @@ Ich hoffe, Sie kommen mit allem klar. Wenn irgendwelche Unklarheiten existieren 
 ```
 
 ### Beispiel 2 (DLI2.ASM)
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -251,6 +253,7 @@ Ich hoffe, Sie kommen mit allem klar. Wenn irgendwelche Unklarheiten existieren 
 ```
 
 ### Beispiel 3 (DLI3.ASM)
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -332,6 +335,7 @@ Ich hoffe, Sie kommen mit allem klar. Wenn irgendwelche Unklarheiten existieren 
 ```
 
 ### Beispiel 4 (DLI4.ASM)
+
 ```
 00010          .LI OFF
 00020 ------------------------------
@@ -394,4 +398,3 @@ Ich hoffe, Sie kommen mit allem klar. Wenn irgendwelche Unklarheiten existieren 
 00590          RTI
 00600 ------------------------------
 ```
-

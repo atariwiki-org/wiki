@@ -3,6 +3,7 @@
 Copyright (C) 1982 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Digital Electronics PD](https://archive.org/details/DorsettAtariDigitalElectronics)
 
 This is an archive of the "Digital Electronics" educational program published by Dorsett Educational Systems, Inc. in 1982. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Digital Electronics
 Year: 1982
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 1.52 GB):
 - [pd14](http://data.atariwiki.org/FLAC/Digital_Electronics/pd14.flac)
 - [pd15](http://data.atariwiki.org/FLAC/Digital_Electronics/pd15.flac)
 - [pd16](http://data.atariwiki.org/FLAC/Digital_Electronics/pd16.flac)
+
 ## Images
+
 ![](attachments/pdA_.jpg)
 Dorsett Atari Digital Electronics - cassettes with uneven numbers
 

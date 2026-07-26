@@ -3,6 +3,7 @@
 Copyright (C) 1981 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Mathematics for Electronics](https://archive.org/details/DorsettAtariMathematicsForElectronics)
 
 This is an archive of the "Mathematics for Electronics" educational program published by Dorsett Educational Systems, Inc. in 1981. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Mathematics for Electronics
 Year: 1981
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 1.63 GB):
 - [me14](http://data.atariwiki.org/FLAC/Mathematics_for_Electronics/me14.flac)
 - [me15](http://data.atariwiki.org/FLAC/Mathematics_for_Electronics/me15.flac)
 - [me16](http://data.atariwiki.org/FLAC/Mathematics_for_Electronics/me16.flac)
+
 ## Images
+
 ![](attachments/meA_.jpg)
 Dorsett Atari Mathematics for Electronics - cassettes with uneven numbers
 

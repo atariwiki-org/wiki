@@ -4,7 +4,7 @@ General Information
 Author: Peter Finzel
 Language: ACTION!
 Compiler/Interpreter: ACTION!
-Published: ATARI Magazin #1 (01/02-87), ACTION! Center 1
+Published: ATARI Magazin \#1 (01/02-87), ACTION! Center 1
 ---
 
 Dieses erste Action!-Center befasst sich mit Grafikanimation auf den 8-Bit-Ataris.
@@ -26,30 +26,31 @@ Wir dürfen allerdings nicht den Action!-Befehl DRAWTO zum Linienzeichnen verwen
 
 Jetzt zu den Vektorobjekten. Ein solches wird im Programm in einem Byte-Array abgelegt. Das erste von je drei aufeinanderfolgenden Bytes bestimm, ob ein neuer Anfangspunkt festgelegt oder eine Linie gezogen werden soll. Das kann man sich bildlich so vorstellen, dass das Objekt auf kariertes Papier gezeichnet würde. Bei einer Null wird der Stift abgehoben und nur der neue Punkt angesteuert; eine Eins hingegen bedeutet, dass eine Linie vom letzten zum neuen Punkt gezogen wird. Ein Wert von $FF zeigt an, dass das Objekt fertig gezeichnet ist. Das zweite und dritte Byte geben die Koordinaten des neuen Punktes (zuerst X, dann Y) an.
 
-Im Programm wurde as Beispiel das Atari-Logo (im Array Atari_L) abgelegt. Zum Entwurf eines Objektes zeichnet man es auf kariertes Papier und überträgt die Koordinaten nach der oben geschilderten Methode in ein Byte-Array. Beim Entwurf sollte man sich an einer Grüße von 10 x 12 Kästchen (Höhe x Breite) halten, da sonst die Mitte des Objektes nicht richtig berechnet wird (oder die DEFINEs Mitte_X und Mitte_Y ändern)
+Im Programm wurde as Beispiel das Atari-Logo (im Array Atari\_L) abgelegt. Zum Entwurf eines Objektes zeichnet man es auf kariertes Papier und überträgt die Koordinaten nach der oben geschilderten Methode in ein Byte-Array. Beim Entwurf sollte man sich an einer Grüße von 10 x 12 Kästchen (Höhe x Breite) halten, da sonst die Mitte des Objektes nicht richtig berechnet wird (oder die DEFINEs Mitte\_X und Mitte\_Y ändern)
 
 Die Prozedur Draw() zeichnet ein gesamtes Objekt in einen HiRes-Bildschirm. Sie können dabei noch im Parameter VERGR angeben, um wie viel das Objekt vergrößert oder verkleinert werden soll. Ein Wert von 0 bis 9 verkleinert. 10 bildet die Originalgröße ab, während es bei höheren Werden vergrößert wird. Daneben können noch Werte zur Verschiebung in horizontaler und vertikaler Richtung angegeben werden.
 
 Animation kann mit der Routine Draw() erzeugt werden, indem man das Objekt zeichnet, dann den Bildschirm löscht und es an einem anderen Platz oder mit anderer Vergrößerung neu zeichnet. Der hässliche Nachteil dieser Methode ist nur, dass durch das dauernde Löschen und Neuzeichnen ein unruhiges und flimmerndes Bild entsteht, wodurch die Animation kaum mehr als solche erkennbar ist.
 
-Daher wurde im Programmbeispiel zu einer List gegriffen. Man verwendet zwei Bildschirme, von denen einer zur sehen ist, während der andere gelöscht und neu gezeichnet wird. Die Umschaltung der beiden Bildschirme erledigt die Prozedur Switch_Screen(). Durch diese Technik
+Daher wurde im Programmbeispiel zu einer List gegriffen. Man verwendet zwei Bildschirme, von denen einer zur sehen ist, während der andere gelöscht und neu gezeichnet wird. Die Umschaltung der beiden Bildschirme erledigt die Prozedur Switch\_Screen(). Durch diese Technik
 Wird die Animation fließend.
 
 Das Hauptprogramm nützt die Möglichkeiten der Draw()-Routine, um zwei Atari-Logos nebeneinander abwechselnd zu verkleinern und zu vergrößern. Der Effekt ist recht plastisch; je eines der beiden Fuji-Symbole scheint in der Tiefe des Raumes zu verschwinden, um danach wieder neu aufzutauchen.
 
 Das Programm verwendet einige Tricks und Kniffe, die Sie auch in eigenen Programmen gewinnbringend einsetzten können. Da wäre zunächst die Definition einiger Variablen in der Zero-Page. Mit zwei SET-Anweisungen wird Action! instruiert, die Definition von row bis hin zu yf in der Zero-Page ab der Speicherzelle $F0 vorzunehmen. So kann Action! diese Variable (vor allem dem Array-Zeiger row) wesentlich schneller ansprechen. Nach ihrer Definition wird die Adresse des Objectcodes durch zwei weitere SET-Befehle auf die Adresse $7000 verlegt.
 
-Mit den SET-Anweisungen kann man die Code-Erzeugung wie bei einem Assembler-Programm mit ORG (bzw. mit "*"=) steuern. Normalerweise würde das von Action! erzeugte Objektfile direkt nach dem Textfile abgelegt. Diese Methode würde sich beim vorliegenden Programm jedoch nicht anbieten, da eine Display-List definiert wird, die durch gewisse Einschränkungen des ANTIC-Bausteins keine 1 KByte-Grenze überschreiten darf. Legt man jedoch die Anfangsadresse fest auf $7000 und definieren die Display-List am Anfang des Programms wird dieses Problem vermieden.
+Mit den SET-Anweisungen kann man die Code-Erzeugung wie bei einem Assembler-Programm mit ORG (bzw. mit "\*"=) steuern. Normalerweise würde das von Action! erzeugte Objektfile direkt nach dem Textfile abgelegt. Diese Methode würde sich beim vorliegenden Programm jedoch nicht anbieten, da eine Display-List definiert wird, die durch gewisse Einschränkungen des ANTIC-Bausteins keine 1 KByte-Grenze überschreiten darf. Legt man jedoch die Anfangsadresse fest auf $7000 und definieren die Display-List am Anfang des Programms wird dieses Problem vermieden.
 
 Die Display-List wird einfach durch mehrere BYTE- und CARD-Definitionen erzeugt. Verwendet wird ein Modus, der GRAPHICS 6 entspricht (Auflösung 160 mal 96, zwei Farben). Natürlich könnte man in diesem Falle auch einen GRAPHICS-6-Aufruf benutzen, aber da wir später mit Page-Flipping arbeiten wollen, ist die erste Methode eleganter. Es genügt dann, der Variablen LMS einen anderen Wert zuweisen, um die Adresse des Videospeichers zu verändern.
 
-Anschließend folgen einige Byte-Arrays, die das Objekt sowie eine Adresstabelle enthalten. Letztere ist für die Fast_Plot()-Routine nötig, damit die Adresse der Zeilenanfänge möglichst schnell herausgefunden werden können. Auch hier ein Trick. Anstatt ein großes CARD-Feld zu verwenden, werden LSBs und MSBs der Adressen in getrennten Byte-Feldern aufbewahrt. Auf diese Weise kann der Zugriff viel schneller erfolgen.
+Anschließend folgen einige Byte-Arrays, die das Objekt sowie eine Adresstabelle enthalten. Letztere ist für die Fast\_Plot()-Routine nötig, damit die Adresse der Zeilenanfänge möglichst schnell herausgefunden werden können. Auch hier ein Trick. Anstatt ein großes CARD-Feld zu verwenden, werden LSBs und MSBs der Adressen in getrennten Byte-Feldern aufbewahrt. Auf diese Weise kann der Zugriff viel schneller erfolgen.
 
-Nun folgt die Fast_Plot()-Routine, in der auch einige wirkungsvolle Tricks versteckt sind. Schreibt man nämlich zwischen Namen und Parameterklammer ein "=*", so verzichtet Action! darauf, die Parameter in lokale Variablen abzulegen. Man kann das dann selbst mit einem kleinen Codeblock erledigen. Die beiden Parameter werden aus dem X- und Y-Register in einen reservierten Zero-Page-Speicherbereich von Action! gebracht. Da es nun nicht mehr weiß, wo die beiden zu finden sind, legt man zwei adressierte Variablen (im vorliegenden Fall X und Y) darauf. Der indirekte Zugriff auf den Videospeicher geschieht über den Array-Zeiger row, der mittels Adresstabellen aus LSB und MSB zusammengesetzt wird.
+Nun folgt die Fast\_Plot()-Routine, in der auch einige wirkungsvolle Tricks versteckt sind. Schreibt man nämlich zwischen Namen und Parameterklammer ein "=\*", so verzichtet Action! darauf, die Parameter in lokale Variablen abzulegen. Man kann das dann selbst mit einem kleinen Codeblock erledigen. Die beiden Parameter werden aus dem X- und Y-Register in einen reservierten Zero-Page-Speicherbereich von Action! gebracht. Da es nun nicht mehr weiß, wo die beiden zu finden sind, legt man zwei adressierte Variablen (im vorliegenden Fall X und Y) darauf. Der indirekte Zugriff auf den Videospeicher geschieht über den Array-Zeiger row, der mittels Adresstabellen aus LSB und MSB zusammengesetzt wird.
 
-Die LineTo()-Routine stammt aus dem Programm "[View 3D](../View_3D/README.md)" von Paul Chabot (Antic 6/85). Sie ist sehr schnell, da nur Additionen und Subtraktionen und die Fast_Plot()-Routine benutzt werden. die Prozedur Graphic_Init() aktiviert die Display-List und bereitet Adresstabelle und das Video-RAM vor, während Screen_Switch() zwischen den beiden Bildschirmen (die übrigens bei Adresse $8000 bzw. $8800 beginnen) hin- und herschalten kann.
+Die LineTo()-Routine stammt aus dem Programm "[View 3D](../View_3D/README.md)" von Paul Chabot (Antic 6/85). Sie ist sehr schnell, da nur Additionen und Subtraktionen und die Fast\_Plot()-Routine benutzt werden. die Prozedur Graphic\_Init() aktiviert die Display-List und bereitet Adresstabelle und das Video-RAM vor, während Screen\_Switch() zwischen den beiden Bildschirmen (die übrigens bei Adresse $8000 bzw. $8800 beginnen) hin- und herschalten kann.
 
 Damit wären wir am Ende des ersten Action!-Centers angelangt. Ich hoffe, es hat Ihnen gefallen und Sie haben einige neue Anregungen bekommen. Im nächsten Heft werden wir besprechen, wie man Interrupts in Action! programmieren kann. Ich würde mich freuen, wenn Sie wieder mit von der Partie sind.
+
 ```
 ;************************************
 ;      VEKTORGRAPHIK IN ACTION!
@@ -266,5 +267,7 @@ PROC Vektorgraphik()
   OD
 RETURN
 ```
+
 ---
-PDF: [vektoreninaction.PDF](attachments/vektoreninaction.PDF) 
+
+PDF: [vektoreninaction.PDF](attachments/vektoreninaction.PDF)

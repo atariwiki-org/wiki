@@ -3,6 +3,7 @@
 14-16. January 2005
 
 Participants:
+
 - Harry Reminder
 - Thomas Grasel
 - Carsten Strotmann
@@ -20,8 +21,3 @@ Participants:
 - Carsten writing the new USBTEST:  ![](attachments/DSCN0418.jpg)
 
 - USB Flashdrive in Atari XL:  ![](attachments/DSCN0419.jpg)
-
-
-
-
-

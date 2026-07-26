@@ -2,7 +2,7 @@
 
 by William F. Ragdale
 
-Source: [6502 Assembler in Forth (fig style)](Source_Code/README.md) 
+Source: [6502 Assembler in Forth (fig style)](Source_Code/README.md)
 
 ## INTRODUCTION
 
@@ -13,10 +13,10 @@ The author immodestly claims that this is the best FORTH assembler ever distribu
 Imagine having an assembler in 1300 bytes of object code with:
 
 1. User macros (like IF,UNTIL,) definable at any time.
-1. Literal values expressed in any numeric	base,	alterable at any time.
-1. Expressions using any resident computation capability.
-1. Nested control structures without labels, with error control.
-1. Assembler source itself in a portable high level language.
+2. Literal values expressed in any numeric	base,	alterable at any time.
+3. Expressions using any resident computation capability.
+4. Nested control structures without labels, with error control.
+5. Assembler source itself in a portable high level language.
 
 ## OVERVIEW
 
@@ -46,13 +46,16 @@ One must be careful to understand at what time a particular word definition exec
 The later execution of the generated code is called 'run-time'. This distinction is particularly important with the conditionals.	At assembly time each such word (i.e., IF,UNTIL, BEGIN, etc.) itself 'runs' to produce machine code which will later execute at what is labeled 'run-time' when its named code definition is used.
 
 ## AN EXAMPLE
+
 As a practical example, here's a simple call to the system monitor, via the NMI address vector (using the BRK opcode).
+
 ```
 CODE MON ( exit to monitor ) 
      BRK, 
 NEXT JMP, 
 END-CODE
 ```
+
 The word CODE is first encountered, and executed by Forth. CODE builds the following name "MON" into a dictionary header and calls ASSEMBLER as the CONTEXT vocabulary.
 
 The "(" is next found in FORTH and executed to skip til ")". This method skips over comments. Note that the name after CODE and the ")" after "(" must be on the same text line.
@@ -64,8 +67,8 @@ BRK, is next found. in the assembler as the op-code. When BRK,	executes, it asse
 Many assembler word names end in ",". The significance of this is:
 
 1. The comma shows the conclusion of a logical grouping that would be one line of classical assembly source code.
-1. "," compiles into the dictionary, thus a comma implies the point at which code is generated.
-1. The "," distinguishes op-codes from possible hex numbers ADC and ADD.
+2. "," compiles into the dictionary, thus a comma implies the point at which code is generated.
+3. The "," distinguishes op-codes from possible hex numbers ADC and ADD.
 
 ## NEXT
 
@@ -78,9 +81,10 @@ Most 6502 systems can resume execution after a break, since the monitor saves th
 ## SECURITY
 
 Numerous tests are made within the assembler for user errors:
+
 1. All parameters used in CODE definitions must be removed.
-1. Conditionals must be properly nested and paired.
-1. Address modes and operands must be allowable for the op-codes
+2. Conditionals must be properly nested and paired.
+3. Address modes and operands must be allowable for the op-codes
 
 These tests are accomplished by checking the stack position (in CSP) at the creation of the definition name and comparing it with the position at END-CODE. Legality of address modes and operands is insured by means of a bit mask associated with each operand.
 
@@ -179,6 +183,7 @@ These usually take an operand, which must already be on the stack. An address mo
 | one | memory   | z-page or absolute
 
 ## EXAMPLES
+
 Here are examples of Forth vs. conventional assembler. Note that the operand comes first, followed by any mode modifier, and	then the op-code mnemonic. This makes best use of the stack at assembly time. Also, each assembler word is set off by blanks, as is required for all Forth source text.
 
 ```

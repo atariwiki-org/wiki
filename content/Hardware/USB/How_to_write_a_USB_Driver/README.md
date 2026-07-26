@@ -6,7 +6,6 @@ I bought a new Logitech Rumblepad 2 USB today. Because there is currently no dri
 
 ![](attachments/LogitechRumblepad2USB.jpg)
 
-
 The Logitech Rumblepad 2 USB has one digital Joypad Controller, two analog Joystick Controller (Right Handle and Left Handle), 10 normal Buttons, a Mode Button amd a Mode LED, and a Button to change the Force Feedback Vibration Mode (long or short).
 
 ## Step 1: Examine the USB Packets
@@ -34,7 +33,8 @@ After playing around with the Device for a while (10 minutes), I know all(most) 
 - Byte 7: Bit 2 - Vibration Switch, Bit 3 - Mode Switch and LED
 - Byte 8: unknown
 
-The digital Joypad has a unique value for each direction_
+The digital Joypad has a unique value for each direction\_
+
 ```
 .
           up

@@ -23,9 +23,9 @@ This is a little utility showing some information useful during ACTION! developm
 - ACTION! Program Code Size
 - Last Sector IO Number
 
-Disk Image (ATR) with source and binary attached: [infoline.atr](attachments/infoline.atr) (ACTION!), [infoline_basic.atr](attachments/infoline_basic.atr) (BASIC)
+Disk Image (ATR) with source and binary attached: [infoline.atr](attachments/infoline.atr) (ACTION!), [infoline\_basic.atr](attachments/infoline_basic.atr) (BASIC)
 
-1.1.1 Source Code (BIBO Assembler)
+1\.1.1 Source Code (BIBO Assembler)
 
 ```
 00010			 .LI OFF

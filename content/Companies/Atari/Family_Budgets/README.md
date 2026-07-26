@@ -5,12 +5,15 @@ Copyright (C) 1982 Jerry Falkenhan and Atari, Inc.
 Family Budgets was first published via APX and later distributed from Atart itself. Please see Family Finances II (Budget) from [Atari Family Finances (CX421)](../Family_Finances/README.md) for further infos.
 
 ## ATR-Image
+
 - [Family Budgets (APX 20108)](attachments/Family_Budgets_APX_20108.atr) ; diskette image from the APX archive. Please use with the Basic cartridge and 32 KB RAM.
 
 ## Manual
+
 - [Family Budgets (APX 20108) manual](../../../../media/Companies/Atari/Family_Budgets/attachments/APX-20108_Family_Budget.pdf) ; size: 9.4 MB
 
 ## Images
+
 ![](attachments/Budget2.jpg)
 Family Budgets (APX 20108) startscreen
 
@@ -30,4 +33,5 @@ Family Budgets (APX 20108) screenshot 3
 Family Budgets (APX 20108) original diskette
 
 ## Credits
+
 Thank you so much Allan Bushman for bringing that artifact back to the light. We owe you so much.

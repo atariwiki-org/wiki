@@ -61,6 +61,7 @@ Carol B. Shaw, creator of River Raid, 3D Tic-Tac-Toe, Calculator and many other 
 Thank you so much Carol, you will be in our hearts forever! We will never forget you! :-)))
 
 ## Stephen D. Lawrow
+
 Stephen D. Lawrow wrote the MAC/65 Macro Assembler for the Atari. He is a living legend! His Assembler was even used for writing programs for the C64 computer.
 
 ![](attachments/Stephen_D_Lawrow.jpg)
@@ -189,13 +190,14 @@ ATARI FAQ
 
 ## Roland B. Wassenberg
 
-Roland is one of the main contributors to this wiki, he is tireless chasing for lost items, the 'Indiana Jones' of Atari history. Roland was essential in bringing back the Atari Calculator, parts of Action!, BUG/65 and many Atari application programs. Further, the 'Atari Educational System' program with big contributions from Allan Bushman and the complete 'Voice & Data Cassette' language program, which were never be possible without the contributions from Stefan Meyer and Peter Dell. He plays a major role in getting Atari source codes.
+Roland is one of the main contributors to this wiki, he is tireless chasing for lost items, the 'Indiana Jones' of Atari history. Roland was essential in bringing back the Atari Calculator, parts of Action!, BUG/65 and many Atari application programs. Further, the 'Atari Educational System' program with big contributions from Allan Bushman and the complete 'Voice \& Data Cassette' language program, which were never be possible without the contributions from Stefan Meyer and Peter Dell. He plays a major role in getting Atari source codes.
 
 ''Thank you Roland!''
 
 ## all the hardware people, without them, nothing would run anymore!
 
 ## Websites
+
 - Atarimania
 - AtariAge
 - atarionline.pl

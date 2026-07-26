@@ -1,27 +1,30 @@
 # U.S. History CX6001
+
 ## Content:
+
 ![](attachments/U.S._History_CX6001.jpg)
 Content of U.S. History CX6001
 
-
 ## Cassette-Images in FLAC-format:
-- [http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_A-Side_1.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_A-Side_1.flac) ; size: 143.0 MB ; thanks to Bill Lange this part could be complete restored! Bill, thank you so much for your help, we all owe you one. Please go ahead! :-)
 
-- [http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_A-Side_2.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_A-Side_2.flac) ; size: 195.0 MB
+- [http://data.atariwiki.org/FLAC/USH/U\_S\_History\_CX6001-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_A-Side_1.flac) ; size: 143.0 MB ; thanks to Bill Lange this part could be complete restored! Bill, thank you so much for your help, we all owe you one. Please go ahead! :-)
 
-- [http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_B-Side_1.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_B-Side_1.flac) ; size: 178.5 MB
+- [http://data.atariwiki.org/FLAC/USH/U\_S\_History\_CX6001-Cassette\_A-Side\_2.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_A-Side_2.flac) ; size: 195.0 MB
 
-- [http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_B-Side_2.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_B-Side_2.flac) ; size: 189.2 MB
+- [http://data.atariwiki.org/FLAC/USH/U\_S\_History\_CX6001-Cassette\_B-Side\_1.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_B-Side_1.flac) ; size: 178.5 MB
 
-- [http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_C-Side_1.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_C-Side_1.flac) ; size: 182.7 MB
+- [http://data.atariwiki.org/FLAC/USH/U\_S\_History\_CX6001-Cassette\_B-Side\_2.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_B-Side_2.flac) ; size: 189.2 MB
 
-- [http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_C-Side_2.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_C-Side_2.flac) ; size: 190.2 MB
+- [http://data.atariwiki.org/FLAC/USH/U\_S\_History\_CX6001-Cassette\_C-Side\_1.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_C-Side_1.flac) ; size: 182.7 MB
 
-- [http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_D-Side_1.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_D-Side_1.flac) ; size: 187.9 MB
+- [http://data.atariwiki.org/FLAC/USH/U\_S\_History\_CX6001-Cassette\_C-Side\_2.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_C-Side_2.flac) ; size: 190.2 MB
 
-- [http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_D-Side_2.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_D-Side_2.flac) ; size: 187.0 MB
+- [http://data.atariwiki.org/FLAC/USH/U\_S\_History\_CX6001-Cassette\_D-Side\_1.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_D-Side_1.flac) ; size: 187.9 MB
+
+- [http://data.atariwiki.org/FLAC/USH/U\_S\_History\_CX6001-Cassette\_D-Side\_2.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_D-Side_2.flac) ; size: 187.0 MB
 
 ## Images:
+
 ![](attachments/P01.jpg)
 U.S. History CX6001 - figure 1
 
@@ -75,4 +78,3 @@ U.S. History CX6001 - figure 17
 
 ![](attachments/P16.jpg)
 U.S. History CX6001 - figure 18
-

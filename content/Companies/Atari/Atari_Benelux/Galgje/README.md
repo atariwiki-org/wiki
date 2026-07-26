@@ -5,29 +5,36 @@ Galgje is the Dutch translation of Hangman and was published by Atari Internatio
 Side 1 of the cassette includes on screen instructions. Side 2 does not contain the instructions. Both sides use the dual audio format.
 
 ## CAS-Images:
-Side 1: [Galgje_side1.zip](attachments/Galgje_side1.zip) 
-Side 2: [Galgje_side2.zip](attachments/Galgje_side2.zip) 
+
+Side 1: [Galgje\_side1.zip](attachments/Galgje_side1.zip)
+Side 2: [Galgje\_side2.zip](attachments/Galgje_side2.zip)
 
 ## MP-3 files:
-Side 1: [Galgje_side1_Dual_Audio.mp3](../../../../../media/Companies/Atari/Atari_Benelux/Galgje/attachments/Galgje_side1_Dual_Audio.mp3) 
-Side 2: [Galgje_side2_Dual_Audio.mp3](../../../../../media/Companies/Atari/Atari_Benelux/Galgje/attachments/Galgje_side2_Dual_Audio.mp3) 
+
+Side 1: [Galgje\_side1\_Dual\_Audio.mp3](../../../../../media/Companies/Atari/Atari_Benelux/Galgje/attachments/Galgje_side1_Dual_Audio.mp3)
+Side 2: [Galgje\_side2\_Dual\_Audio.mp3](../../../../../media/Companies/Atari/Atari_Benelux/Galgje/attachments/Galgje_side2_Dual_Audio.mp3)
 
 ## FLAC files:
-Side 1: [http://data.atariwiki.org/FLAC/Galgje_side1.flac](http://data.atariwiki.org/FLAC/Galgje_side1.flac) 
-Side 2: [http://data.atariwiki.org/FLAC/Galgje_side2.flac](http://data.atariwiki.org/FLAC/Galgje_side2.flac) 
+
+Side 1: [http://data.atariwiki.org/FLAC/Galgje\_side1.flac](http://data.atariwiki.org/FLAC/Galgje_side1.flac)
+Side 2: [http://data.atariwiki.org/FLAC/Galgje\_side2.flac](http://data.atariwiki.org/FLAC/Galgje_side2.flac)
 
 ## Manual:
-[Galgje_manual.pdf](attachments/Galgje_manual.pdf) 
+
+[Galgje\_manual.pdf](attachments/Galgje_manual.pdf)
 
 ## Screenshots:
+
 ![](attachments/Galgje1.jpg)
 ![](attachments/Galgje2.jpg)
 ![](attachments/Galgje3.jpg)
 
 ## Cover:
+
 ![](attachments/Galgje_cover.jpg)
 Galgje Cover
 
 ## Media pictures:
+
 ![](attachments/Galgje_cassette.jpg)
 Galgje Cover

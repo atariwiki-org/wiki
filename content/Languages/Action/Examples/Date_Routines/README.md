@@ -61,7 +61,7 @@ or to obtain an unformatted
 string (as with StrD()).
 
 PROC PrintM(<String>,<mask>) and
-its variants *ME,*MD,and *MDE
+its variants \*ME,\*MD,and \*MDE
 can be used to print a date in
 any format desired, such as
 "mm-dd-yy".

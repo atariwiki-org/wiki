@@ -1,6 +1,7 @@
 # R.O.T.O.
 
 ### General Information
+
 Author: Mike Stortz
 Language: ACTION!
 Compiler/Interpreter: ACTION!
@@ -10,6 +11,7 @@ Published: Analog #31 (06/ 85)
 unable to find work in the programming field, he is working on about thirty projects at once, including
 a graphic arcade/adventure game.''
 ---
+
 1996: Kara Hyke leaves show business after losing out in a disputed Oscar award.
 1997: Kara Hyke enrolls at M.I.T.
 2010: Kara Hyke discovers semi-matter.
@@ -19,7 +21,6 @@ a graphic arcade/adventure game.''
 2065: Hamner scout ship attacks Arcadia and is driven off after extensive damage to the city. Work on the shield begins.
 Today: Hamner fleet attacks Arcadia...
 
-
 ''Deep in caverns under Arcadia, fuel cannisters of semi-matter ore to power the city's defensive shield
 have been cached away against the day when the aliens would return. Composed of mixed-charge matter,
 hyke (as it is called) is easily persuaded to annihilate itself in the manner of matter-antimatter reactions,
@@ -27,30 +28,32 @@ but is more easily stored.
 
 Now that the attack has begun, brave volunteer retrievers must don helipacks, fly down into the caves and bring up the ore, so that Arcadia may not fall.
 
-
-__R.O.T.O.__ is a game of coodination, reflexes, timing and a hint of strategy that should keep you going for
+**R.O.T.O.** is a game of coodination, reflexes, timing and a hint of strategy that should keep you going for
 a while before Arcadia can claim victory.
 
 Plug in your Action! cartridge and type in Listing 1. Action! is forgiving about case, spacing and line divisions, so you need not slavishly follow the format of the listing (which is compressed somewhat for purposes of publication).
 
-SAVE it before attempting to RUN it! If you try to run __R.O.T.O.__ from memory, the source code will be
-overwritten and ruined, causing much gnashing of teeth. Because __R.O.T.O.__ is so large, it must be compiled
+SAVE it before attempting to RUN it! If you try to run **R.O.T.O.** from memory, the source code will be
+overwritten and ruined, causing much gnashing of teeth. Because **R.O.T.O.** is so large, it must be compiled
 off of disk or cassette.
 
 ### For disk.
-After typing __R.O.T.O.__ in, save it with the command CTRL-W and type in the filename "ROTO.ACT" then RETURN. SHIFT-CLEAR the editor, enter the monitor with the CTRL-M command, enter C "ROTO.ACT" and RETURN. This will compile __R.O.T.O.__ into machine language. Now, save the compiled version by typing W "ROTO.AML" and RETURN. AML stands for Action! machine language. To run __R.O.T.O.__ now, just type R and RETURN. In the future, simply type CTRL-M to enter the monitor, D and RETURN to go to DOS, and then binary loading the file ROTO.AML from DOS by using the L command in DOS 2 or DOS 3—or type LOAD ROTO.AML if you have DOS-XL.
+
+After typing **R.O.T.O.** in, save it with the command CTRL-W and type in the filename "ROTO.ACT" then RETURN. SHIFT-CLEAR the editor, enter the monitor with the CTRL-M command, enter C "ROTO.ACT" and RETURN. This will compile **R.O.T.O.** into machine language. Now, save the compiled version by typing W "ROTO.AML" and RETURN. AML stands for Action! machine language. To run **R.O.T.O.** now, just type R and RETURN. In the future, simply type CTRL-M to enter the monitor, D and RETURN to go to DOS, and then binary loading the file ROTO.AML from DOS by using the L command in DOS 2 or DOS 3—or type LOAD ROTO.AML if you have DOS-XL.
 
 ### For cassette.
-Type in __R.O.T.O.__ and save it with the CTRL-W command. Do not use the "Screen Off?" option; it will upset the tape timing. Rewind your tape, press PLAY and RECORD, give the filename 'C:' and RETURN.
+
+Type in **R.O.T.O.** and save it with the CTRL-W command. Do not use the "Screen Off?" option; it will upset the tape timing. Rewind your tape, press PLAY and RECORD, give the filename 'C:' and RETURN.
 
 Go have lunch while the source code's being saved (about fifteen minutes). Come back, clear memory with the SHIFT CLEAR, and enter the monitor with the CTRL-M command.
 
-Rewind the tape containing the __R.O.T.O.__ source code, press PLAY, type in R "C:" and RETURN. Have some more lunch. The computer is rereading the source code, compiling il as it does. When it's finished compiling, the game will automatically start.
+Rewind the tape containing the **R.O.T.O.** source code, press PLAY, type in R "C:" and RETURN. Have some more lunch. The computer is rereading the source code, compiling il as it does. When it's finished compiling, the game will automatically start.
 
-In the future, you may play __R.O.T.O.__ by inserting the tape containing the source code into the recorder and typing the R "C:" command.
+In the future, you may play **R.O.T.O.** by inserting the tape containing the source code into the recorder and typing the R "C:" command.
 
 ### Playing R.O.T.O.
-After beginning, you should see the __R.O.T.O.__ logo and your man flying about it, while an explanatory message scrolls beneath. You may begin by pressing the START button or the fire button on joystick 1. You will see a portion of a cavernous network and four green blocks with Hs on them. This is the fuel intake.
+
+After beginning, you should see the **R.O.T.O.** logo and your man flying about it, while an explanatory message scrolls beneath. You may begin by pressing the START button or the fire button on joystick 1. You will see a portion of a cavernous network and four green blocks with Hs on them. This is the fuel intake.
 
 <pic>
 
@@ -76,21 +79,22 @@ On the other hand, if you wreck while hauling cannisters, you could deplete the 
 
 Remember which portions of the caverns you've mined out, and definitely recall the way back to the fuel intake. The cave network is generated randomly each game, so expect variety.
 
-__R.O.T.O.__ may end in five ways:
+**R.O.T.O.** may end in five ways:
 
 1. Most frequently, you run out of helipacks (while there are many volunteers, there are only three of the sophisticated flying apparatuses).
-1. The shield is battered down. This happens when you don't retrieve enough ore.
-1. A fuel cannister is shot.
-1. You carry more than ten cannisters at once.
-1. The least common ... Arcadia holds out, and the aliens are defeated — this time!
+2. The shield is battered down. This happens when you don't retrieve enough ore.
+3. A fuel cannister is shot.
+4. You carry more than ten cannisters at once.
+5. The least common ... Arcadia holds out, and the aliens are defeated — this time!
 
 ### That's it!
-Action! deserves a word of praise here. __R.O.T.O.__ was designed half in advance and half as I thought of another feature to put in. The excellent editor made even major reshuffling and splitting of routines easy.
+
+Action! deserves a word of praise here. **R.O.T.O.** was designed half in advance and half as I thought of another feature to put in. The excellent editor made even major reshuffling and splitting of routines easy.
 
 I shudder to think what I would have gone through using a conventional assembler. Even when the source code became too large to co-reside with the object code, I could compile off of my Axlon RAMDisk with little loss of development time.
 
-The author would appreciate any letters of business offers, extravagant praise, or, failing that, constructive commept. Have fun and save Arcadia!
----
+## The author would appreciate any letters of business offers, extravagant praise, or, failing that, constructive commept. Have fun and save Arcadia!
+
 ```
 ; R.O.T.O.  by Mike Stortz
 SET $000E=$4000
@@ -1049,5 +1053,7 @@ PROC Game()
   ZeroOut() Graphics(0)
 RETURN
 ```
+
 ---
-PDF: [roto_action.pdf](attachments/roto_action.pdf) 
+
+PDF: [roto\_action.pdf](attachments/roto_action.pdf)

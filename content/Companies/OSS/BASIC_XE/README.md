@@ -3,6 +3,7 @@
 Copyright (C) 1984 Optimized Systems Software, Inc. (OSS)
 
 ## Background
+
 Basic XE is the ultimate development of the original [Atari BASIC](../../../Languages/BASIC/Atari_BASIC/README.md) code, after its development was taken over by Optimized Systems Software (OSS).
 
 OSS released [BASIC XL](../Basic_XL/README.md) in 1984, adding many new features as well as the FAST command. FAST cached line numbers that were the target of jumps (GOTO and FOR/NEXT loops), addressing one of the two major reasons for the notoriously slow performance of Atari BASIC. The main addition to Basic XE, compared to Basic XL, was a solution to the other big problem in Atari BASIC, the low-performance math code.
@@ -14,44 +15,54 @@ With that exception, the changes between Basic XE and Basic XL are minor, mostly
 The release of [Turbo-BASIC XL](../../../Languages/BASIC/Turbo-BASIC_XL/README.md) at roughly the same time as Basic XE meant that Basic XE was largely forgotten in the market. TURBO-BASIC had all the features of Basic XE and many more, and also shipped with a compiler that not only made stand-alone programs but ran them dozens of times faster as well.
 
 ## BASIC XE source code
-- [BASIC_XE_4.2-1_master_with_DOS_2.0D.atr](attachments/BASIC_XE_4.2-1_master_with_DOS_2.0D.atr) ; please use with OSS MAC/65; Yotta-thanks to all who help us here
-- [BASIC_XE_4.2-2_slave_with_DOS_2.0D.atr](attachments/BASIC_XE_4.2-2_slave_with_DOS_2.0D.atr) ; please use with OSS MAC/65; Yotta-thanks to all who help us here
-- [BASIC_XE_4.2-3_fp_with_DOS_2.5.atr](attachments/BASIC_XE_4.2-3_fp_with_DOS_2.5.atr) ; please use with OSS MAC/65; Yotta-thanks to all who help us here
 
-To enable building BASIC XE 4.2 for M091 cartridges, a change has to be made in the D1:MASTER2 file: in line 290, change the value of _27128 to 1. Then follow the normal assembly steps. It results in an object file that loads the four banks to the $3000-$6FFF area in the "1M09" order. Retrieving the bank data in a correct order results in an M091 ROM image.
+- [BASIC\_XE\_4.2-1\_master\_with\_DOS\_2.0D.atr](attachments/BASIC_XE_4.2-1_master_with_DOS_2.0D.atr) ; please use with OSS MAC/65; Yotta-thanks to all who help us here
+- [BASIC\_XE\_4.2-2\_slave\_with\_DOS\_2.0D.atr](attachments/BASIC_XE_4.2-2_slave_with_DOS_2.0D.atr) ; please use with OSS MAC/65; Yotta-thanks to all who help us here
+- [BASIC\_XE\_4.2-3\_fp\_with\_DOS\_2.5.atr](attachments/BASIC_XE_4.2-3_fp_with_DOS_2.5.atr) ; please use with OSS MAC/65; Yotta-thanks to all who help us here
+
+To enable building BASIC XE 4.2 for M091 cartridges, a change has to be made in the D1:MASTER2 file: in line 290, change the value of \_27128 to 1. Then follow the normal assembly steps. It results in an object file that loads the four banks to the $3000-$6FFF area in the "1M09" order. Retrieving the bank data in a correct order results in an M091 ROM image.
 
 Thank you so much Tomasz 'Kr0tki' Krasuski for the info in building the runtime, we owe you so much. :-)))
+
 ## CAR-Image
-- [Basic_XE_4.1.car](attachments/Basic_XE_4.1.car)
-- [Basic_XE_4.2.car](attachments/Basic_XE_4.2.car) ; '034M'-version created by a good soul from AtariAge ; thank you so much good soul! :-)))
+
+- [Basic\_XE\_4.1.car](attachments/Basic_XE_4.1.car)
+- [Basic\_XE\_4.2.car](attachments/Basic_XE_4.2.car) ; '034M'-version created by a good soul from AtariAge ; thank you so much good soul! :-)))
 
 ## ROM-Images
-- [BASIC_XE_4.1.rom](attachments/BASIC_XE_4.1.rom)
-- [OSS_Basic_XE_7.2_universal.rom](attachments/OSS_Basic_XE_7.2_universal.rom) ; should work with SpartaDOS ; this is __not__ an official OSS-, ICD- nor FTe- product ; author unknown
+
+- [BASIC\_XE\_4.1.rom](attachments/BASIC_XE_4.1.rom)
+- [OSS\_Basic\_XE\_7.2\_universal.rom](attachments/OSS_Basic_XE_7.2_universal.rom) ; should work with SpartaDOS ; this is **not** an official OSS-, ICD- nor FTe- product ; author unknown
 
 ## BIN-Image
-- [Basic_XE_v4.2_1986-02-09Lawrow_Stephen_D.US034M.bin](attachments/Basic_XE_v4.2_1986-02-09Lawrow_Stephen_D.US034M.bin) ; '034M'-version created by a good soul from AtariAge ; thank you so much good soul! :-)))
-- [Basic_XE_v4.2_1986-02-09Lawrow_Stephen_D.US043M.bin](attachments/Basic_XE_v4.2_1986-02-09Lawrow_Stephen_D.US043M.bin) ; just runs in Altirra with OSS '043M' ; thank you so much Tomasz 'Kr0tki' Krasuski for building the 1st runtime, we owe you so much. :-)))
-- [Basic_XE_v4.2_1986-02-09OSSUSM091.bin](attachments/Basic_XE_v4.2_1986-02-09OSSUSM091.bin) ; 'M091'-version created by Tomasz 'Kr0tki' Krasuski; thank you so much Tomasz 'Kr0tki' Krasuski for building the runtime, we owe you so much. :-)))
+
+- [Basic\_XE\_v4.2\_1986-02-09Lawrow\_Stephen\_D.US034M.bin](attachments/Basic_XE_v4.2_1986-02-09Lawrow_Stephen_D.US034M.bin) ; '034M'-version created by a good soul from AtariAge ; thank you so much good soul! :-)))
+- [Basic\_XE\_v4.2\_1986-02-09Lawrow\_Stephen\_D.US043M.bin](attachments/Basic_XE_v4.2_1986-02-09Lawrow_Stephen_D.US043M.bin) ; just runs in Altirra with OSS '043M' ; thank you so much Tomasz 'Kr0tki' Krasuski for building the 1st runtime, we owe you so much. :-)))
+- [Basic\_XE\_v4.2\_1986-02-09OSSUSM091.bin](attachments/Basic_XE_v4.2_1986-02-09OSSUSM091.bin) ; 'M091'-version created by Tomasz 'Kr0tki' Krasuski; thank you so much Tomasz 'Kr0tki' Krasuski for building the runtime, we owe you so much. :-)))
 
 ## ATR-Image
-- [BASIC_XE_Extension_Disk.atr](attachments/BASIC_XE_Extension_Disk.atr) ; original BASIC XE Extension Disk, works with with version 4.1
-- [BASIC_XE_4.2_Extension_Disk_with_DOS_XL_v2.30p.atr](attachments/BASIC_XE_4.2_Extension_Disk_with_DOS_XL_v2.30p.atr) ; BASIC XE Extension Disk, works with with version 4.2 ; thank you so much drac030 from AtariAge, your work is very much appreciated! :-)
+
+- [BASIC\_XE\_Extension\_Disk.atr](attachments/BASIC_XE_Extension_Disk.atr) ; original BASIC XE Extension Disk, works with with version 4.1
+- [BASIC\_XE\_4.2\_Extension\_Disk\_with\_DOS\_XL\_v2.30p.atr](attachments/BASIC_XE_4.2_Extension_Disk_with_DOS_XL_v2.30p.atr) ; BASIC XE Extension Disk, works with with version 4.2 ; thank you so much drac030 from AtariAge, your work is very much appreciated! :-)
 - [Some example programs](attachments/BXL_BXE_programs.zip) ; thanks to Charlie Chaplin from AtariAge. :-)
 - [Basic XE Detokenizer Ver. 1.11 (4-6-89)](attachments/Basic_XE_Detokenizer_Ver._1.11_4-6-89_by_Psycho.atr)
 
 ## Manuals
+
 - [OSS-Basic XE Reference Manual](https://data.atariwiki.org/DOC/OSS_BASIC_XE_Reference_Manual.pdf) 39.0 MB, OCR, onesided, incredible quality made by GoodByteXL. Thank you so much GoodByteXL, you really make the best PDF-files available. Please go ahead with your outstanding work! :-)))
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ## XEP80 driver for BASIC XE
+
 - [xep80bxe.arc](attachments/xep80bxe.arc) ; this is the driver for the XEP80 to work with OSS BASIC XE (.COM file)
-- [XEP80_BASIC_XE.atr](attachments/XEP80_BASIC_XE.atr) ; same as above on an atr-image
+- [XEP80\_BASIC\_XE.atr](attachments/XEP80_BASIC_XE.atr) ; same as above on an atr-image
 
 ## Info
+
 - [Basic XE Information on Wikipedia](http://en.wikipedia.org/wiki/Optimized_Systems_Software#BASIC_XE)
 
 ## Images
+
 ![](attachments/BASIC_XE_4.2.jpg)
 OSS BASIC XE 4.2 - startscreen
 

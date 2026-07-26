@@ -3,6 +3,7 @@
 Copyright (C) 1981 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Reading-Development (Reading Comprehension) W](https://archive.org/details/DorsettAtariVocabularyDevelopmentW)
 
 This is an archive of the "Vocabulary Development (W)" educational program published by Dorsett Educational Systems, Inc. in 1981. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Vocabulary Development
 Year: 1981
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 879.8 MB):
 - [w14](http://data.atariwiki.org/FLAC/Reading-Comprehension_W/w14.flac)
 - [w15](http://data.atariwiki.org/FLAC/Reading-Comprehension_W/w15.flac)
 - [w16](http://data.atariwiki.org/FLAC/Reading-Comprehension_W/w16.flac)
+
 ## Images
+
 ![](attachments/wA_.jpg)
 Dorsett Atari Reading-Development (Reading Comprehension) - cassettes with uneven numbers
 

@@ -1,11 +1,10 @@
 # The Atari Accountant
 
-Copyright (C) 1981 by Atari, Inc. and BPI Systems, Inc. and Arthur Young & Co.
+Copyright (C) 1981 by Atari, Inc. and BPI Systems, Inc. and Arthur Young \& Co.
 
+The Atari Accountant brings sophisticated computerized accounting to the small business or professional person and has been priced at $1,499.85. Each of its three components, which are available separately, is priced at $499.95. They include systems for accounts and inventory control. All prices mentioned are manufacturer's suggested retail prices in the U.S. only. The three packages are: General Accounting System CX401, Accounts Receivable System CX402 and Inventory Control System CX403. Each package consists of several diskettes, please see below. The software **requires** an ATARI 800 Computer, [Atari 815 Dual Disk Drive](../Atari_Hardware/Atari_815/README.md), an Atari 850 Interface Module and an Atari 825 80-Column Printer. Minimum RAM requirement: 48 K
 
-The Atari Accountant brings sophisticated computerized accounting to the small business or professional person and has been priced at $1,499.85. Each of its three components, which are available separately, is priced at $499.95. They include systems for accounts and inventory control. All prices mentioned are manufacturer's suggested retail prices in the U.S. only. The three packages are: General Accounting System CX401, Accounts Receivable System CX402 and Inventory Control System CX403. Each package consists of several diskettes, please see below. The software __requires__ an ATARI 800 Computer, [Atari 815 Dual Disk Drive](../Atari_Hardware/Atari_815/README.md), an Atari 850 Interface Module and an Atari 825 80-Column Printer. Minimum RAM requirement: 48 K
-
-In sum The Atari Accountant Series consists out of 13 SSDD diskettes, which is equivalent to __26 SSSD diskettes__! This makes The Atari Accountant the most expansive Atari program of all times and the largest of it's time. Just box CX401 is found up to now only (2019). Any help in completing the 'The Atari Accountant' is very welcome, anytime, anyplace and everywhere.
+In sum The Atari Accountant Series consists out of 13 SSDD diskettes, which is equivalent to **26 SSSD diskettes**! This makes The Atari Accountant the most expansive Atari program of all times and the largest of it's time. Just box CX401 is found up to now only (2019). Any help in completing the 'The Atari Accountant' is very welcome, anytime, anyplace and everywhere.
 
 ![](attachments/328.jpg)
 The Atari Accountant - binder, top view ; thanks to Kay Savetz for taking the picture!
@@ -18,6 +17,7 @@ Before we intend to go further, you really have to read Bill Lange's incredible 
 The Atari Accountant - screenshot 1 taken from [Atari In-Store Demo Program (CXL4019, CX8117)](../In-Store_Demonstration_Program/README.md) on diskette only, not cartridge! ; thanks to Bill Lange for sharing this with the community!
 
 ## Requirements
+
 The prices are taken from lists published in 1981, please see below under ADs
 
 - Color TV or monitor, of course: take it as given ;-)
@@ -30,14 +30,14 @@ The prices are taken from lists published in 1981, please see below under ADs
 - Atari CX401 General Accounting: $499
 - Atari CX402 Accounts Receivable: $499
 - Atari CX403 Inventory Control: $499
-- Atari CX89 Color Monitor Cable, else Atari CX82 B&W Monitor Cable: $50
+- Atari CX89 Color Monitor Cable, else Atari CX82 B\&W Monitor Cable: $50
 - Atari CX86 Printer Cable: $42
 - a lot of Atari double density diskettes (CX8202) for storage: $21
 - a credit card, which can take all of the above :-)
 
 In sum: $4,870 as value from 1981. Assuming an inflation rate of 4 % over the decades (just multiply with 1.04), we come to:
 
-$4820 * 1.04 ^ (2019 - 1981) = $21,617.02
+$4820 \* 1.04 ^ (2019 - 1981) = $21,617.02
 
 of today’s money, which is in Euro: €19,140.27 (exchange rate from: 02/19/2019)
 
@@ -59,7 +59,6 @@ Estimated availability second quarter 1981
 ![](attachments/401.jpg)
 The Atari Accountant - screenshot 2 from General Accounting System; Thank you so much Bill Lange! Great finding! :-)
 
-
 ## CX402: Accounts Receivable System (4 SSDD Diskettes)
 
 The Accounts Receivable System is for businesses with a large volume of active accounts requiring either an open-item or balance forward system. With this program you can print statements and customer mailings automatically.
@@ -68,7 +67,6 @@ Estimated availability third quarter 1981
 
 ![](attachments/402.jpg)
 The Atari Accountant - screenshot 3 from Accounts Receivable System; Thank you so much Bill Lange! Great finding! :-)
-
 
 ## CX403: Inventory Control System (5 SSDD Diskettes)
 
@@ -80,20 +78,21 @@ Estimated availability third quarter 1981
 The Atari Accountant - screenshot 4 from Inventory Control System; Thank you so much Bill Lange! Great finding! :-)
 
 ## ATR images
-__- Originals (softsectored, one index hole):__ taken from a Happy ; __you need an Atari 815 Double Disk Drive to work with these images!__ Each sector #47 is not "feeling" that good... ;-)
 
-- [Data_Entry_Program_Diskette_CX8203-Original-v1.atr](attachments/Data_Entry_Program_Diskette_CX8203-Original-v1.atr) ; size: 184 KB ; version 1 of CX8203, please see description below (##)
-- [Data_Entry_Program_Diskette_CX8203-Original-v2.atr](attachments/Data_Entry_Program_Diskette_CX8203-Original-v2.atr) ; size: 184 KB ; version 2 of CX8203, please see description below (##)
-- [Posting_Program_Diskette_CX8204-Original.atr](attachments/Posting_Program_Diskette_CX8204-Original.atr) ; size: 184 KB ;
-- [The_Action_Sales_Co.-Master_Data_Diskette_CX8205-Original.atr](attachments/The_Action_Sales_Co.-Master_Data_Diskette_CX8205-Original.atr) ; size: 184 KB ;
-- [The_Action_Sales_Co._Training_Data_Diskette-CX8206-Original.atr](attachments/The_Action_Sales_Co._Training_Data_Diskette-CX8206-Original.atr) ; size: 184 KB ; please take into account, that the 'The Action Sales Co.-Training Data Diskette CX8206' is blank, please see page 2-1 in the User's Manual or page 33 in the pdf file for further information.
+**- Originals (softsectored, one index hole):** taken from a Happy ; **you need an Atari 815 Double Disk Drive to work with these images!** Each sector #47 is not "feeling" that good... ;-)
+
+- [Data\_Entry\_Program\_Diskette\_CX8203-Original-v1.atr](attachments/Data_Entry_Program_Diskette_CX8203-Original-v1.atr) ; size: 184 KB ; version 1 of CX8203, please see description below (##)
+- [Data\_Entry\_Program\_Diskette\_CX8203-Original-v2.atr](attachments/Data_Entry_Program_Diskette_CX8203-Original-v2.atr) ; size: 184 KB ; version 2 of CX8203, please see description below (##)
+- [Posting\_Program\_Diskette\_CX8204-Original.atr](attachments/Posting_Program_Diskette_CX8204-Original.atr) ; size: 184 KB ;
+- [The\_Action\_Sales\_Co.-Master\_Data\_Diskette\_CX8205-Original.atr](attachments/The_Action_Sales_Co.-Master_Data_Diskette_CX8205-Original.atr) ; size: 184 KB ;
+- [The\_Action\_Sales\_Co.\_Training\_Data\_Diskette-CX8206-Original.atr](attachments/The_Action_Sales_Co._Training_Data_Diskette-CX8206-Original.atr) ; size: 184 KB ; please take into account, that the 'The Action Sales Co.-Training Data Diskette CX8206' is blank, please see page 2-1 in the User's Manual or page 33 in the pdf file for further information.
 - [CX8202.atr](attachments/CX8202.atr) blank Atari DD diskette ; size: 184 KB
 
-(##) This is the(!) master example about the __lifetime of 5.25 in diskettes__. Kay Savetz did work very hard and extremely careful on the original diskettes. But sadly, we discovered destroyed sectors not the way we know for normal, but through aging! This means, we had data loss, not to recover under just any circumstances. Exactly, what was mentioned in the movie [Blade Runner 2049](https://www.imdb.com/title/tt1856101/?ref_=nv_sr_1). Please don't let that happen!!! Please support Farb and his passionate [team of preservation](http://a8preservation.com/#/guides/diskDumping), so we can provide these outstanding programs for generations to come!
+(##) This is the(!) master example about the **lifetime of 5.25 in diskettes**. Kay Savetz did work very hard and extremely careful on the original diskettes. But sadly, we discovered destroyed sectors not the way we know for normal, but through aging! This means, we had data loss, not to recover under just any circumstances. Exactly, what was mentioned in the movie [Blade Runner 2049](https://www.imdb.com/title/tt1856101/?ref_=nv_sr_1). Please don't let that happen!!! Please support Farb and his passionate [team of preservation](http://a8preservation.com/#/guides/diskDumping), so we can provide these outstanding programs for generations to come!
 
-On the other hand, we had gigantic luck in many ways. :-) First, Atari wisely delivered a backup diskette of major and important diskettes with the box, so we had 2 of them and second, we could find out, that the lost sectors due to aging are asked for in the program for protection purposes. Therefore, no sector with data was lost through aging, which contains data and third, we were able to copy good sectors from version 1 to damaged sectors from version 2 and vice versa! Therefore, this was very, very close! We say, it was 5 past 12! So, it is fair to say, that the __maximum lifetime of 5.25 in diskettes is 35 years__ under best storage conditions. Summarized, the time to act is now or never! Please join the team.
+On the other hand, we had gigantic luck in many ways. :-) First, Atari wisely delivered a backup diskette of major and important diskettes with the box, so we had 2 of them and second, we could find out, that the lost sectors due to aging are asked for in the program for protection purposes. Therefore, no sector with data was lost through aging, which contains data and third, we were able to copy good sectors from version 1 to damaged sectors from version 2 and vice versa! Therefore, this was very, very close! We say, it was 5 past 12! So, it is fair to say, that the **maximum lifetime of 5.25 in diskettes is 35 years** under best storage conditions. Summarized, the time to act is now or never! Please join the team.
 
-__- Working versions:__ created by DjayBee from AtariAge ; you __don't(!)__ need an Atari 815 Double Disk Drive to work with these images, hence these images can be used with 'normal' disk drives available supporting DD format! :-)
+**- Working versions:** created by DjayBee from AtariAge ; you **don't(!)** need an Atari 815 Double Disk Drive to work with these images, hence these images can be used with 'normal' disk drives available supporting DD format! :-)
 
 - [CX8201-Atari 815 Master Diskette](attachments/DOS_2.0D.atr) ; size: 184 KB
 - [CX8202-Blank Diskette](attachments/CX8202.atr) ; size: 184 KB
@@ -111,32 +110,32 @@ __- Working versions:__ created by DjayBee from AtariAge ; you __don't(!)__ need
 
 The below manuals can be refer to the amateur league, for ultra professional pdf files, AtariWiki highly recommends the created pdf files by GoodByteXL from AtariAge. You won't get better ones, worldwide! On the other hand, sometimes this requires to retype letter by letter the whole book...
 
-- [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-OCR-Index-Print.pdf](../../../../media/Companies/Atari/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Print.pdf) ; size: 22.4 MB (#) ; (*)
-- [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-OCR-Index-Screen.pdf](../../../../media/Companies/Atari/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Screen.pdf) ; size: 14.5 MB (#) ; (*)
-- [The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-Original.pdf) ; size: 1.87 GB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager's_Companion_Guide-OCR-Print.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager_s_Companion_Guide-OCR-Print.pdf) ; size: 3.7 MB (#) ; (**)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager's_Companion_Guide-OCR-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager_s_Companion_Guide-OCR-Screen.pdf) ; size: 2.8 MB (#) ; (**)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager's_Companion_Guide-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager's_Companion_Guide-Original.pdf) ; size: 705.5 MB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Atari_General_Accounting_System_Reference_Card-OCR-Print.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Atari_General_Accounting_System_Reference_Card-OCR-Print.pdf) ; size: 205 KB (#)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Atari_General_Accounting_System_Reference_Card-OCR-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Atari_General_Accounting_System_Reference_Card-OCR-Screen.pdf) ; size: 148 KB (#)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Atari_General_Accounting_System_Reference_Card-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-Atari_General_Accounting_System_Reference_Card-Original.pdf) ; size: 111.1 MB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Warranty_Repair_and_Register-OCR-Print.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Warranty_Repair_and_Register-OCR-Print.pdf) ; size: 347 KB (#)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Warranty_Repair_and_Register-OCR-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Warranty_Repair_and_Register-OCR-Screen.pdf) ; size: 239 KB (#)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Warranty,_Repair_&_Register-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-Warranty,_Repair_&_Register-Original.pdf) ; size: 11.2 MB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Print.pdf](../../../../media/Companies/Atari/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Print.pdf) ; size: 6.4 MB (#)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Screen.pdf) ; size: 1.7 MB (#)
-- [The_Atari_Accountant-General_Accounting_System_CX401-Binder-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-Binder-Original.pdf) ; size: 464.6 MB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)
-(#) big thank you to Kay Savetz for scanning all the pages at 600 dpi in color, great work ; we owe you one! :-)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-User's\_Manual-OCR-Index-Print.pdf](../../../../media/Companies/Atari/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Print.pdf) ; size: 22.4 MB (#) ; (\*)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-User's\_Manual-OCR-Index-Screen.pdf](../../../../media/Companies/Atari/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-User_s_Manual-OCR-Index-Screen.pdf) ; size: 14.5 MB (#) ; (\*)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-User's\_Manual-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-User's_Manual-Original.pdf) ; size: 1.87 GB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Business\_Manager's\_Companion\_Guide-OCR-Print.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager_s_Companion_Guide-OCR-Print.pdf) ; size: 3.7 MB (#) ; (\*\*)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Business\_Manager's\_Companion\_Guide-OCR-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager_s_Companion_Guide-OCR-Screen.pdf) ; size: 2.8 MB (#) ; (\*\*)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Business\_Manager's\_Companion\_Guide-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-Business_Manager's_Companion_Guide-Original.pdf) ; size: 705.5 MB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Atari\_General\_Accounting\_System\_Reference\_Card-OCR-Print.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Atari_General_Accounting_System_Reference_Card-OCR-Print.pdf) ; size: 205 KB (#)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Atari\_General\_Accounting\_System\_Reference\_Card-OCR-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Atari_General_Accounting_System_Reference_Card-OCR-Screen.pdf) ; size: 148 KB (#)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Atari\_General\_Accounting\_System\_Reference\_Card-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-Atari_General_Accounting_System_Reference_Card-Original.pdf) ; size: 111.1 MB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Warranty\_Repair\_and\_Register-OCR-Print.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Warranty_Repair_and_Register-OCR-Print.pdf) ; size: 347 KB (#)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Warranty\_Repair\_and\_Register-OCR-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Warranty_Repair_and_Register-OCR-Screen.pdf) ; size: 239 KB (#)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Warranty,_Repair_\&\_Register-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-Warranty,_Repair_&_Register-Original.pdf) ; size: 11.2 MB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Binder-OCR-Print.pdf](../../../../media/Companies/Atari/The_Atari_Accountant/attachments/The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Print.pdf) ; size: 6.4 MB (#)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Binder-OCR-Screen.pdf](attachments/The_Atari_Accountant-General_Accounting_System_CX401-Binder-OCR-Screen.pdf) ; size: 1.7 MB (#)
+- [The\_Atari\_Accountant-General\_Accounting\_System\_CX401-Binder-Original.pdf](https://data.atariwiki.org/DOC/The_Atari_Accountant-General_Accounting_System_CX401-Binder-Original.pdf) ; size: 464.6 MB ; please download only, if you intend to print it at a copy shop ; thank you ; (#)
+  (#) big thank you to Kay Savetz for scanning all the pages at 600 dpi in color, great work ; we owe you one! :-)
 
-(*) From 32 GB raw data down to the few MB shown above, with OCR, navigation menu, hyperlinks in the content and index pages. Each hyperlink has an invisible frame around the shown page number. In Adobe Reader the mouse pointer changes, when it is inside the invisible frame. Each formatted page number has the hyperlink to the shown number, so this makes the pdf file an edu-pdf file. Please take into account, that the manual has references to page xiii, which doesn't exist in the manual, to prohibit double page numbering. Therefore, page xiii matches to page 1, page xiv to page 2 and page xv to page 3. Further, there are up to 5 different hyperlinks in just one row, please see the colored arrows below:
+(\*) From 32 GB raw data down to the few MB shown above, with OCR, navigation menu, hyperlinks in the content and index pages. Each hyperlink has an invisible frame around the shown page number. In Adobe Reader the mouse pointer changes, when it is inside the invisible frame. Each formatted page number has the hyperlink to the shown number, so this makes the pdf file an edu-pdf file. Please take into account, that the manual has references to page xiii, which doesn't exist in the manual, to prohibit double page numbering. Therefore, page xiii matches to page 1, page xiv to page 2 and page xv to page 3. Further, there are up to 5 different hyperlinks in just one row, please see the colored arrows below:
 
 ![](attachments/up_to_5_links_in_one_row.jpg)
 The Atari Accountant - General Accounting System - CX401 - User's Manual - hyperlinks in the index pages with frames made visible
 
-(**) With OCR, navigation menu and hyperlinks in the content pages. Each hyperlink has an invisible frame around the shown page number. In Adobe Reader the mouse pointer changes, when it is inside the invisible frame. Each formatted page number has the hyperlink to the shown number, so this makes the pdf file an edu-pdf file. The Business Manager's Companion Guide was made by Arthur Young & Company, please the picture below:
+(\*\*) With OCR, navigation menu and hyperlinks in the content pages. Each hyperlink has an invisible frame around the shown page number. In Adobe Reader the mouse pointer changes, when it is inside the invisible frame. Each formatted page number has the hyperlink to the shown number, so this makes the pdf file an edu-pdf file. The Business Manager's Companion Guide was made by Arthur Young \& Company, please the picture below:
 
 ![](attachments/Arthur_Young_and_Company.jpg)
-The Atari Accountant - Business Manager's Companion Guide - description from Arthur Young & Company
+The Atari Accountant - Business Manager's Companion Guide - description from Arthur Young \& Company
 
 ## Afterword
 
@@ -174,13 +173,13 @@ AtariWiki would like to thank the following persons for the help in this very sp
 
 ## References
 
-- From Bill Lange's [website](http://atari8bitads.blogspot.com/search/label/Atari%20Accountant%20Series) we can take over a book, which describes more general information on the BPI Systems, Inc.’s family of accounting software, by [Dale N. Flanagan published by Tab Books in 1986](https://www.amazon.com/Practical-guide-BPI-accounting-system/dp/0830604960/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=). As of February 2019 a copy is available for just: __$1,858.85__
+- From Bill Lange's [website](http://atari8bitads.blogspot.com/search/label/Atari%20Accountant%20Series) we can take over a book, which describes more general information on the BPI Systems, Inc.’s family of accounting software, by [Dale N. Flanagan published by Tab Books in 1986](https://www.amazon.com/Practical-guide-BPI-accounting-system/dp/0830604960/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=). As of February 2019 a copy is available for just: **$1,858.85**
 
 - Further, again from Bill Lange: [Atari Home Computer Products Dealer Confidential Price List July 1982](https://archive.org/details/AtariHomeComputerProductsDealerConfidentialPriceListJul/page/n3)
 
 - [Discussion on AtariAge about The Atari Accountant Series](http://atariage.com/forums/topic/288603-after-38-yearsthe-atari-accountant-cx401-holy-grail-of-atari-is-back/)
 
-*[The Atari Accountant Series on atari8bit.net](https://atari8bit.net/the-atari-accountant/) 
+\*[The Atari Accountant Series on atari8bit.net](https://atari8bit.net/the-atari-accountant/)
 
 - [What's so specialabout the 815 on AtariAge](http://atariage.com/forums/topic/278709-whats-so-special-about-the-815/)
 
@@ -191,6 +190,7 @@ AtariWiki would like to thank the following persons for the help in this very sp
 - [Why inverted data? - Percom at88 s1pd](http://atariage.com/forums/topic/224072-percom-at88-s1pd/)
 
 ## Images
+
 ![](attachments/329.jpg)
 The Atari Accountant - binder, aft view ; thanks to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com) and Kay Savetz for scanning!
 
@@ -234,13 +234,13 @@ The Atari Accountant Diskette CX8206
 The Atari Accountant Diskette CX8202
 
 ![](attachments/Label.jpg)
-The Atari Accountant - Diskette Label ; Giga thanks goes to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com) 
+The Atari Accountant - Diskette Label ; Giga thanks goes to Curt Vendel from the [Atarimuseum.com](https://www.atarimuseum.com)
 
 ![](attachments/atari-815.png)
-The ATARI 815 Double Disk Drive ; The Atari 815 Dual Disk Drive was an absolute beast. It wasn’t just two Atari 810 single-sided, single-density (SSSD), 90K capacity, 5 ¼ inch drive mechanisms in one case, it was two single-sided, double-density (SSDD), 180K capacity drive mechanisms. It required Atari CX8202 certified double-density 5 ¼ floppy diskettes and the __Atari DOS 2.0D__ disk operating system.
+The ATARI 815 Double Disk Drive ; The Atari 815 Dual Disk Drive was an absolute beast. It wasn’t just two Atari 810 single-sided, single-density (SSSD), 90K capacity, 5 ¼ inch drive mechanisms in one case, it was two single-sided, double-density (SSDD), 180K capacity drive mechanisms. It required Atari CX8202 certified double-density 5 ¼ floppy diskettes and the **Atari DOS 2.0D** disk operating system.
 
 ![](attachments/DOS_II_2.0D.jpg)
-__Atari DOS 2.0D__ disk operating system - startscreen
+**Atari DOS 2.0D** disk operating system - startscreen
 
 ![](attachments/The_Atari_Accountant_CX401-1.jpg)
 The Atari Accountant - screenshot 1
@@ -249,6 +249,7 @@ The Atari Accountant - screenshot 1
 The Atari Accountant - screenshot 2
 
 ## ADs
+
 ![](attachments/Atari_Accountant.jpg)
 The Atari Accountant description
 

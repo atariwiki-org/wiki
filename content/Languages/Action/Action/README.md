@@ -3,6 +3,7 @@
 ## Information
 
 ### Background
+
 Action! is an Atari-specific programming language written by Clinton Parker and sold by Optimized Systems Software (OSS) in ROM cartridge form starting in August 1983. It is the only language other than [BASIC](../../BASIC/README.md) and [Assembler](../../Assembler/README.md) that had real popularity on the platform and saw any significant coverage in the Atari press; type-in programs and various technical articles were found in most magazines. In comparison, languages like [Forth](../../Forth/README.md) and [Atari LOGO](../../Logo/README.md) saw much less use and almost no press coverage.
 
 Reviewers at the time gushed about the system. They noted that practically every aspect was superior to anything available at the time; compiling was almost instantaneous, the resulting code ran almost as fast as hand-coded assembler, the full-screen editor was universally loved, and the entire system took up only 8k due to clever memory management. The only complaint, also universal, was the poor quality of the original manual set.
@@ -21,7 +22,6 @@ Generally, Action programs had performance on-par with reasonable-quality [Assem
 
 Action inspired several similar languages that differ largely in syntax and various features that they do or do not support. Examples include [PL65](../../PL65/README.md) and [QUICK](../../QUICK/README.md).
 
-
 ### Hello World
 
 ```
@@ -34,6 +34,7 @@ RETURN
 The {{;}} is a comment marker, which was a commonly used as the comment marker in assembler as well. The {{PROC}} is the start of a PROCedure, which ends (perhaps oddly) with {{RETURN}}. In Action, the last {{PROC}} in the program is the one that runs first, in this case "Hello". This is something of a mix between Pascal where the "global code" defines the program entry point, and C, where the function called "Main" is the entry point. The only line of code in this example is {{PrintE}}, which simply prints a string, while the more common {{PrintF}} is a formatted print similar to {{printf}} in C.
 
 Like assembler, it was common for variables to be specified at a particular address that mapped onto one of the Atari's "shadow registers" that were used to communicate between the hardware and user programs. Here is a simple variation on Hello World that demonstrates this concept, as well as a basic loop:
+
 ```
 ; Hello world in a loop
 PROC Hello()
@@ -50,11 +51,13 @@ CARD TIME
     PRINTF("Ran for %E %U jiffies",TIME)
 RETURN
 ```
+
 Note that the definitions of {{RTCLOK}} and {{CONSOL}} are not setting the values, but stating that they are at those memory locations. The syntax changes when those variables are accessed; the {{RTCLOK=0}} ''does'' set the value of that location. Also notice the syntax of loops, which work similarly to Pascal's {{BEGIN/END}} but use {{DO/OD}}.
 
 There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYTE}} but {{TIME}} is defined as a {{CARD}}, a 16-bit value. This is because the clock value is stored in three bytes, 18, 19 and 20. By defining {{TIME}} as a {{CARD}}, when that value is read it automatically reads two bytes, thereby getting a value from both 20 and 19. This solution ignores the third byte, but since the value is from 0 to 65535 jiffies, about 36 minutes, this can safely be ignored for a program that is likely to run for a few seconds. This solution avoids the need to read two bytes and manipulate them into a 16-bit value, something that is commonly found in BASIC programs.
 
 ### Manuals and Docs
+
 - [Action Manual](https://sourceforge.net/p/atari-action/code/ci/master/tree/JAC/doc/action-manual.pdf?format=raw) - The complete latest version of the manual in English. Created and updated by GoodByteXL. There is no better version worldwide! Thank you so much GoodByteXL. We are deep in your debt! :-)))
 - [Action Handbuch](https://sourceforge.net/p/atari-action/code/ci/master/tree/JAC/doc/action-manual-de.pdf?format=raw) - Das komplette, vollständige, restaurierte und überarbeitete Action Handbuch in Deutsch! Der totale Hammer, inkl. Editor, Monitor, Language, Compiler, Library, Run Time, Toolkit. Vollständig überarbeitete Version von GoodByteXL. So müssen PDF-Dateien aussehen, es gibt weltweit nichts vergleichbares. AtariWiki empfiehlt die PDF-Datei auf das Wärmste! Wer diese nicht lädt, ist selber schuld. Wir bedanken uns an dieser Stelle sehr, sehr herzlich bei GoodByteXL für seine lange andauernde und intensive Arbeit an diesem Werk, dass er hiermit der Atari-Gemeinschaft zur Verfügung stellt. GoodByteXL mega-Danke für Deine Arbeit, die Gemeinschaft steht tief in Deiner Schuld. :-)))
 - [The Action! Toolkit](../The_ACTION_Toolkit/README.md)
@@ -68,6 +71,7 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ### Tutorials
+
 - [Step-by-Step Tutorial: How to create a stand-alone ACTION! Program](../Articles/Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION_Program/README.md)
 - [Action! and BBS Express! PRO Tutorial](../Action_and_BBS_Express_PRO_Tutorial/README.md)
 - [Larry's Action! Tutorial](../Articles/Larrys_Action_Tutorial/README.md)
@@ -84,34 +88,39 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 ## Versions
 
 ### Latest Versions
+
 - [Action! Programming Language](https://sourceforge.net/projects/atari-action/) - The latest [sources](https://sourceforge.net/p/atari-action/code/ci/master/tree/) and [binaries](https://sourceforge.net/projects/atari-action/files/action.zip/download) for Action
 - Includes CAR-Images for OSS cartridges and for standard 16K cartridges
 - Includes executable language and editor "ACTION.COM" on ATR-Images for different DOS versions
 - Includes executable standalone editor "ACTIONED.COM" on ATR-Images for different DOS versions
-You can use it under SpartaDOS and DosXL with "D1:ACTIONED MYSRC.ACT" to directly load the "MYSRC.ACT" file into the editor. Further, this editor can even be used for BASIC, PASCAL, FORTH etc.
+  You can use it under SpartaDOS and DosXL with "D1:ACTIONED MYSRC.ACT" to directly load the "MYSRC.ACT" file into the editor. Further, this editor can even be used for BASIC, PASCAL, FORTH etc.
 
 ### Cross Compiler
+
 - [https://gury.atari8.info/effectus/](https://gury.atari8.info/effectus/) - Thank you soooo much Gury! That is totally incredible, we now can use high end editors, eclipse and have the results in a flash! We are deep in your debt! Thank you so much, really. :-)
 
 ### Original CAR-Images
-- [ACTION_Version_3.6_C_1983_ACS_034M.car](attachments/ACTION_Version_3.6_C_1983_ACS_034M.car)
-- [ACTION_Version_3.6_C_1983_ACS_M091.car](attachments/ACTION_Version_3.6_C_1983_ACS_M091.car)
+
+- [ACTION\_Version\_3.6\_C\_1983\_ACS\_034M.car](attachments/ACTION_Version_3.6_C_1983_ACS_034M.car)
+- [ACTION\_Version\_3.6\_C\_1983\_ACS\_M091.car](attachments/ACTION_Version_3.6_C_1983_ACS_M091.car)
 
 ### Original ROM-Images
-- [ACTION_Version_3.6_C_1983_ACS_034M.rom](attachments/ACTION_Version_3.6_C_1983_ACS_034M.rom)
-- [ACTION_Version_3.6_C_1983_ACS_M091.rom](attachments/ACTION_Version_3.6_C_1983_ACS_M091.rom)
+
+- [ACTION\_Version\_3.6\_C\_1983\_ACS\_034M.rom](attachments/ACTION_Version_3.6_C_1983_ACS_034M.rom)
+- [ACTION\_Version\_3.6\_C\_1983\_ACS\_M091.rom](attachments/ACTION_Version_3.6_C_1983_ACS_M091.rom)
 
 ### Original ATR-Images
-- [OSS_ACTION_Programmers_Aid_Disk_100.atr](attachments/OSS_ACTION_Programmers_Aid_Disk_100.atr) - Rebuild from damaged discs and files around the world
-- [The_ACTION!_Toolkit.atr](attachments/The_ACTION_Toolkit.atr)
-- [The_Action_RunTime_Disk-Original.atr](attachments/The_Action_RunTime_Disk-Original.atr) - Protected image copy of the original disk from a good soul from AtariAge
-- [The_ACTION!_RunTime_Disk.atr](attachments/The_Action_RunTime_Disk.atr) - Unprotected copy of the original disk from a good soul from AtariAge
+
+- [OSS\_ACTION\_Programmers\_Aid\_Disk\_100.atr](attachments/OSS_ACTION_Programmers_Aid_Disk_100.atr) - Rebuild from damaged discs and files around the world
+- [The\_ACTION!\_Toolkit.atr](attachments/The_ACTION_Toolkit.atr)
+- [The\_Action\_RunTime\_Disk-Original.atr](attachments/The_Action_RunTime_Disk-Original.atr) - Protected image copy of the original disk from a good soul from AtariAge
+- [The\_ACTION!\_RunTime\_Disk.atr](attachments/The_Action_RunTime_Disk.atr) - Unprotected copy of the original disk from a good soul from AtariAge
 - [Original Action! System Runtime Source](../Original_Action_System_Runtime_Source/README.md)
 - [Alternative Action! Runtime Source](../Articles/Alternative_Action_Runtime_Source/README.md)
 - [ACTION Runtime by Jeff Reister](../ACTION_Runtime_von_Jeff_Reister/README.md)
-- [OSS_ACTION_3.6_and_REAL_files_with_DOS_XL_2.30p_Color.atr](attachments/OSS_ACTION_3.6_and_REAL_files_with_DOS_XL_2.30p_Color.atr)
-- [TURBO-DOS_XE_with_ACTION_Disk_1.atr](attachments/TURBO-DOS_XE_with_ACTION_Disk_1.atr)
-- [TURBO-DOS_XE_with_ACTION_Disk_2.atr](attachments/TURBO-DOS_XE_with_ACTION_Disk_2.atr)
+- [OSS\_ACTION\_3.6\_and\_REAL\_files\_with\_DOS\_XL\_2.30p\_Color.atr](attachments/OSS_ACTION_3.6_and_REAL_files_with_DOS_XL_2.30p_Color.atr)
+- [TURBO-DOS\_XE\_with\_ACTION\_Disk\_1.atr](attachments/TURBO-DOS_XE_with_ACTION_Disk_1.atr)
+- [TURBO-DOS\_XE\_with\_ACTION\_Disk\_2.atr](attachments/TURBO-DOS_XE_with_ACTION_Disk_2.atr)
 
 ## Source Code
 
@@ -120,18 +129,19 @@ You can use it under SpartaDOS and DosXL with "D1:ACTIONED MYSRC.ACT" to directl
 at this point AtariWiki must give the highest award possible:
 
 - [Action! Source Code](../Action_Source_Code/README.md)
-Thank you so much Mr. Parker, we can't thank you enough for what you have done for us.
+  Thank you so much Mr. Parker, we can't thank you enough for what you have done for us.
 
 ![](attachments/Thank_you_Mr._Parker.jpg)
 Thank you so much Mr. Parker
 
 - [Action! Editor Source Code](https://sourceforge.net/p/atari-action/code/ci/master/tree/ALFRED/EDITOR/)
-Thank you Alfred from AtariAge for extracting the editor source code for generations to come. We are deep in your debt.
+  Thank you Alfred from AtariAge for extracting the editor source code for generations to come. We are deep in your debt.
 
 ![](attachments/Thank_you_Alfred.jpg)
 Thank you Alfred
 
 ### Functions
+
 - [Misc useful ACTION! Functions](../Examples/Misc_useful_ACTION_Functions/README.md) - (DIVERS.ACT)
 - [Chartest](../Examples/Chartest/README.md) - a group of routines which perform various functions and tests on characters.
 - [Fast Screen IO](../Examples/Fast_Screen_IO/README.md)
@@ -139,10 +149,10 @@ Thank you Alfred
 - [String Library](../Examples/String_Library_PSC/README.md) - (STRING.ACT)
 
 ### Mini-Runtime LIBs
+
 - [Intro zu den Mini-LIBs!](../Articles/_Intro/README.md) (Eine kleine Einführung zu den Mini-LIBs)
 - [Simple PRINT Runtime!](../Articles/_Intro/Simple_PRINT_Runtime/README.md) (Mini-LIB)
 - [ZERO and SETBLOCK!](../Articles/_Intro/ZERO_and_SETBLOCK/README.md) (RT Part)
-
 
 ### Examples
 
@@ -216,7 +226,7 @@ Thank you Alfred
 
 ### Missing Tools: Graphics Utilities Library and Shape Editor
 
-__As of 2020, just these two programs are still missing. They were published via OSS-BBS only! The number was: +1 (408) 438 - 6775. Any hint, any help is welcome at any time. We would really appreciate your help in that case.__
+**As of 2020, just these two programs are still missing. They were published via OSS-BBS only! The number was: +1 (408) 438 - 6775. Any hint, any help is welcome at any time. We would really appreciate your help in that case.**
 
 ![](attachments/Graphics_Utilities_Library_1.jpg)
 Graphics Utilities Library for ACTION! screen 1
@@ -233,10 +243,12 @@ OSS-BBS with the number: +1 (408) 438 - 6775 where the two missing programs were
 ## Articles in Magazines
 
 ### Advertisements
+
 ![](attachments/00_first_ad_in_compute_Jul1983.jpg)
-First Action ad in Compute July, 1983 ; please take into account: 128-column screen and for Apple II & Commodore 64. Thanks to GoodByteXL!
+First Action ad in Compute July, 1983 ; please take into account: 128-column screen and for Apple II \& Commodore 64. Thanks to GoodByteXL!
 
 ### Analog
+
 ||Title||Issue||Language||Comment
 |[Action Review](../Review_Action/README.md)|#16 (02/ 84)|en|Review
 |[An Introduction to ACTION](../Articles/An_Introduction_to_ACTION/README.md) |#17 + #18 (03+ 04/ 84)|en|Tutorial
@@ -256,6 +268,7 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[Zero Free in ACTION!](../ACTION_Zero_Free/README.md)|#54 (05/ 87) |en|Tool
 
 ### Antic
+
 ||Title||Issue||Language||Comment
 |[Interrupts in ACTION!](../Examples/Interrupts_in_Action/README.md)|Vol. 3 #3 (07/ 84)|en|
 |[Demo: Pretty](../Articles/Demo_Pretty/README.md)|Vol. 3 #7 (11/ 84)|en|Demo from Antic I/O-Board
@@ -272,6 +285,7 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[ACTION! Toolbox](../ACTION_Toolbox/README.md)|Vol. 7 #6 (10/ 88)|en|Lightning-fast command finder (Wordfind and Matchup)
 
 ### ATARI''magazin''
+
 ||Title||Issue||Language||Comment
 |[Schnelle Vektoren in ACTION!](../Examples/Schnelle_Vektoren_in_Action/README.md)|#1 (1-2/ 87)|de|Tutorial: Action!-Center Teil 1
 |[Schnelle Umwege in ACTION!](../Examples/Schnelle_Umwege_in_Action/README.md)|#2 (3-4/ 87)|de|Tutorial: Action!-Center Teil 2
@@ -279,10 +293,12 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[Was ist dran an Action!?](../Articles/Was_ist_dran_an_Action/README.md)|#4 (7-8/ 87)|de| Tutorial: Action!-Center Teil 4
 
 ### Atari Magazine
+
 ||Title||Issue||Language||Comment
 |[ACTION! Deel](../ACTION_Deel/README.md)| |nl|A collection of Action Articles
 
 ### CK Computer Kontakt
+
 ||Title||Issue||Language||Comment
 |[Musik in ACTION!](../Examples/Musik_in_ACTION/README.md) |#10/85|ge| Tutorial
 |[ACTION noch schneller](../Articles/ACTION_noch_schneller/README.md) |#6-7/86|ge| Tutorial

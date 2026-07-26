@@ -3,6 +3,7 @@
 (Basic taken from "Thomas E. Rowley - Atari Basic spielend lernen")
 
 ## Basic Version
+
 ```
 10 REM read a keypress
 20 PRINT "PRESS ANY KEY"
@@ -15,6 +16,7 @@
 ```
 
 ## volksForth version using direct memory access the same way as the BASIC example does
+
 ```
 : GETKEY ( read a keypress )
   ." Press any key" CR

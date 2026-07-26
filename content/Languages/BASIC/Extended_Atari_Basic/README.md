@@ -13,15 +13,18 @@ To use BASIC/XA, just type DOS when the READY prompt displays. The screen will c
 BASIC/XA was sold as a cassette version (APX-10177) and a as well as a diskette version (APX-20177).
 
 ## ATR Images
-- [APX-20177_BASIC-XA.atr](attachments/APX-20177_BASIC-XA.atr) ; Original APX-20177 diskette without DOS II and without MEM.SAV ; not bottable ; Many thanks to Allan Bushman!
-- [APX-20177_BASIC-XA_with_DOS_2.5_SD.atr](attachments/APX-20177_BASIC-XA_with_DOS_2.5_SD.atr) ; Original APX-20177 diskette with DOS II, but without MEM.SAV ; bottable
-- [APX-20177_BASIC-XA_with_DOS_2.5_ED.atr](attachments/APX-20177_BASIC-XA_with_DOS_2.5_ED.atr) ; Original APX-20177 diskette with DOS II and with MEM.SAV ; bottable, complete and ready to use
+
+- [APX-20177\_BASIC-XA.atr](attachments/APX-20177_BASIC-XA.atr) ; Original APX-20177 diskette without DOS II and without MEM.SAV ; not bottable ; Many thanks to Allan Bushman!
+- [APX-20177\_BASIC-XA\_with\_DOS\_2.5\_SD.atr](attachments/APX-20177_BASIC-XA_with_DOS_2.5_SD.atr) ; Original APX-20177 diskette with DOS II, but without MEM.SAV ; bottable
+- [APX-20177\_BASIC-XA\_with\_DOS\_2.5\_ED.atr](attachments/APX-20177_BASIC-XA_with_DOS_2.5_ED.atr) ; Original APX-20177 diskette with DOS II and with MEM.SAV ; bottable, complete and ready to use
 
 ## Manuals
-- [Extended Atari Basic-Basic-XA (APX-10177 & APX-20177) version 1.pdf](https://data.atariwiki.org/DOC/Extended Atari Basic-Basic-XA (APX-10177 & APX-20177) version 1.pdf) ; size: 5.6 MB ; Many thanks to Allan Bushman for scanning!
-- [Extended Atari Basic-Basic-XA (APX-10177 & APX-20177) version 5.pdf](https://data.atariwiki.org/DOC/Extended Atari Basic-Basic-XA (APX-10177 & APX-20177) version 5.pdf) ; size: 31.7 MB ; Many thanks to Allan Bushman for scanning!
+
+- \[Extended Atari Basic-Basic-XA (APX-10177 \& APX-20177) version 1.pdf\](https://data.atariwiki.org/DOC/Extended Atari Basic-Basic-XA (APX-10177 \& APX-20177) version 1.pdf) ; size: 5.6 MB ; Many thanks to Allan Bushman for scanning!
+- \[Extended Atari Basic-Basic-XA (APX-10177 \& APX-20177) version 5.pdf\](https://data.atariwiki.org/DOC/Extended Atari Basic-Basic-XA (APX-10177 \& APX-20177) version 5.pdf) ; size: 31.7 MB ; Many thanks to Allan Bushman for scanning!
 
 ## Pictures
+
 ![](attachments/Start_Screen.png)
 Start screen of EXTENDED ATARI BASIC (BASIC/XA)
 

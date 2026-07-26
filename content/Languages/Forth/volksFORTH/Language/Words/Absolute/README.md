@@ -1,11 +1,7 @@
-# __ABS__ "abs" ( n -- u )
-
-
+# **ABS** "abs" ( n -- u )
 
 ||Forth79||Forth83||ANSI||Forth200x
 |   X     |   X    |  X  |    X
-
-
 
 %%tabbedSection
 %%tab-english

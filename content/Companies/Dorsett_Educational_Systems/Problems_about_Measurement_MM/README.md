@@ -3,6 +3,7 @@
 Copyright (C) 1981 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Mathematics (Measurement) Problems about Measurement MM](https://archive.org/details/DorsettAtariMathematicsMeasurement)
 
 This is an archive of the "Mathematics for Measurement" educational program published by Dorsett Educational Systems, Inc. in 1981. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Mathematics (Measurement)
 Year: 1981
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -42,23 +43,25 @@ Mm16	Circle and bar graphs from Data
 
 Tracks (size in sum: 991.1 MB):
 
-- [mm1](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm1.flac)
-- [mm2](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm2.flac)
-- [mm3](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm3.flac)
-- [mm4](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm4.flac)
-- [mm5](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm5.flac)
-- [mm6](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm6.flac)
-- [mm7](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm7.flac)
-- [mm8](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm8.flac)
-- [mm9](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm9.flac)
-- [mm10](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm10.flac)
-- [mm11](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm11.flac)
-- [mm12](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm12.flac)
-- [mm13](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm13.flac)
-- [mm14](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm14.flac)
-- [mm15](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm15.flac)
-- [mm16](http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm16.flac)
+- [mm1](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm1.flac>)
+- [mm2](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm2.flac>)
+- [mm3](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm3.flac>)
+- [mm4](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm4.flac>)
+- [mm5](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm5.flac>)
+- [mm6](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm6.flac>)
+- [mm7](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm7.flac>)
+- [mm8](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm8.flac>)
+- [mm9](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm9.flac>)
+- [mm10](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm10.flac>)
+- [mm11](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm11.flac>)
+- [mm12](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm12.flac>)
+- [mm13](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm13.flac>)
+- [mm14](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm14.flac>)
+- [mm15](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm15.flac>)
+- [mm16](<http://data.atariwiki.org/FLAC/Mathematics_(Measurement)/mm16.flac>)
+
 ## Images
+
 ![](attachments/mmA_.jpg)
 Dorsett Atari Mathematics (Measurement) - cassettes with uneven numbers
 

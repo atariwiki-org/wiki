@@ -34,6 +34,7 @@ property leads to a sort of discontinuity around zero.  In this case, the
 remainder is either zero or it takes the sign of the dividend.  Figure 1a
 illustrates the quotient q as a function of a variable dividend, and a
 constant divisor 3.  We readily see the discontinuity near zero.  This may
+
 ```
  +-------------------------------------------------------+
  |                                                       |
@@ -65,16 +66,20 @@ constant divisor 3.  We readily see the discontinuity near zero.  This may
 
 be reasonably serious when this quotient function is used for plotting or
 moving robot arms.  The integer quotient needs an associated remainder:
+
 ```
    r = n - q * d
 ```
+
 where n is the numerator or dividend, d is the denominator or divisor, q is
 the quotient, and r is the remainder.  The remainder function for the
 constant divisor 3 is illustrated in Figure 1b.  If we look at the case of
 positive dividends and divisors, we observe the cyclic property that
+
 ```
    r(n+d) = r(n)
 ```
+
 In other word, the remainder usually has a repeating or cyclical property
 as the dividend changes.  For the remainder shown in Figure 1b, we see that
 this simple property is not maintained for dividends between -d and 0.
@@ -129,9 +134,11 @@ usually defined to take the value of the dividend for this case.  If
 infinities are not allowed in computer representations, and the product of
 any number and zero is always zero, then this definition preserves the
 equation
+
 ```
    n = q * d + r
 ```
+
 for all values of d, including zero.
 
 Alternative remainder functions include a positive modulus and a remainder
@@ -172,6 +179,7 @@ p. 127.
 (2) Robert Berkey, "Integer Division, Rounding and Remainders", 1982 FORML
 Conference Proceedings, San Jose, California: Forth Interest Group, 1983,
 pp. 13-23.
+
 ```
  +---------------------------------------------------------------+
  |                                                               |

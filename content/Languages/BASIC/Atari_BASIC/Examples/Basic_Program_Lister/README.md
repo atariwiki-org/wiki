@@ -2,6 +2,3 @@
 
 ![](attachments/BasicProgrammLister_1_0001.png)
 ![](attachments/BasicProgrammLister_2_0001.png)
-
-
-

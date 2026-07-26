@@ -5,9 +5,11 @@ Copyright (C) 1982 Atari, Inc.
 Atari Timewise:  Monthly calendar / diary program.  Timewise is an Atari program that helps active people organize and keep track of a full schedule of appointments by the day, week or monthly simply and automatically.  You can keep appointments such as doctor's, business meetings, sales calls, reorder dates, flight schedules, deadlines, theater events, birthdays, payment dates, anniversaries, lunches, dates, car maintenance for yourself, your entire family or all the people involved in a small business.  Each data disk can hold / print / search out up to 630 different appointments (32K memory), 1024 appointments with 48K of memory.  You can print current month calendar, future calendars and even blank calendar forms. Requires at least 32 KB of memory and the Atari Basic cartridge. Timewise is still affected by Y2K. Maybe someone out there can help us? :-)
 
 ## Manual
-- [Timewise_Manual.pdf](attachments/Timewise_Manual.pdf) ; size: 3.2 MB
+
+- [Timewise\_Manual.pdf](attachments/Timewise_Manual.pdf) ; size: 3.2 MB
 
 ## ATR-Images
+
 - [Timewise Master Diskette (Model DX5047)](attachments/Timewise.atr) ; Master Diskette, please use with Atari Basic cartridge
 - [Timewise Data Diskette](attachments/Data_Diskette.atr)
 
@@ -31,13 +33,11 @@ Atari Timewise - Appointments
 ![](attachments/Monthly_Calendar.jpg)
 Atari Timewise - Monthly Calendar
 
-
 ![](attachments/Add_New_Appointments.jpg)
 Atari Timewise - Add New Appointments
 
 ![](attachments/Inquire-Update_Appointments.jpg)
 Atari Timewise - Inquire-Update Appointments
-
 
 ![](attachments/File_Maintenance.jpg)
 Atari Timewise - File Maintenance
@@ -47,4 +47,3 @@ Atari Timewise - advertising 1
 
 ![](attachments/ad_2.png)
 Atari Timewise - advertising 2
-

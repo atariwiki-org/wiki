@@ -1,11 +1,7 @@
-# __2/__ "two-divide" or "two-slash" ( x1 -- x2 )
-
-
+# **2/** "two-divide" or "two-slash" ( x1 -- x2 )
 
 ||Forth79||Forth83||ANSI||Forth200x
 |       |   X    |  X  |    X
-
-
 
 %%tabbedSection
 %%tab-english

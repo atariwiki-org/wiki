@@ -3,6 +3,7 @@
 Copyright (C) 1981 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Industrial Solid-State Electronics PL](https://archive.org/details/DorsettAtariIndustrialSolid-StateElectronics)
 
 This is an archive of the "Industrial Solid - State Electronics" educational program published by Dorsett Educational Systems, Inc. in 1981. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Industrial Solid-State Electronics (Pl)
 Year: 1981
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 1.87 GB):
 - [pl14](http://data.atariwiki.org/FLAC/Industrial_Solid-State_Electronics/pl14.flac)
 - [pl15](http://data.atariwiki.org/FLAC/Industrial_Solid-State_Electronics/pl15.flac)
 - [pl16](http://data.atariwiki.org/FLAC/Industrial_Solid-State_Electronics/pl16.flac)
+
 ## Images
+
 ![](attachments/plA_.jpg)
 Dorsett Atari Industrial Solid-State Electronics - cassettes with uneven numbers
 

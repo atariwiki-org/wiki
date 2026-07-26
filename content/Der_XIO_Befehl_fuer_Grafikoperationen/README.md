@@ -7,9 +7,11 @@ Daß der Atari Grafikbefehle zum Zeichnen von Punkten und Linien besitzt, dürft
 Es existiert aber eine Möglichkeit, über den allgemein etwas unbekannten Befehl XIO eingeschränkt Flächen auszufüllen.
 
 Dieser Befehl lautet:
+
 ```
 XIO 18,#6,0,0,"S:"
 ```
+
 und ist identisch mit dem Turbo-Basic Befehl FILLTO.
 
 Zunächst muß die Füllfarbe festgelegt werden. Dies geschieht über POKE 765,X. X ist hierbei die Farbe, die auch bei
@@ -28,4 +30,3 @@ Beispiele:
 ![](attachments/xio.png)
 
 Auf der linken Seite ist die Fläche vor dem Füllen gezeichnet. Die Anfangs- und Endpunkte für das Füllen sind mit A und E gekennzeichnet. Rechts ist dann das Resultat zu sehen.
-

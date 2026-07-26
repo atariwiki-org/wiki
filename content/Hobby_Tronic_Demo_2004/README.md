@@ -2,7 +2,6 @@
 
 Unfinished work
 
-
 See discussion in ABBUC Programmers Forum at http://www.abbuc.de/
 
 Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos or from HTLoader or from BiboMon or similar.
@@ -936,6 +935,7 @@ Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos 
 00730 ------------------------------
 00740 ;
 ```
+
 ## Lose Parts: Blend Effect 1
 
 ```
@@ -1282,6 +1282,3 @@ Demo-Part "Maurer" (File HT1.COM) can be started from HTWORK.ATR with a Gamedos 
 01640          .BL 960,0
 01650 ------------------------------
 ```
-
-
-

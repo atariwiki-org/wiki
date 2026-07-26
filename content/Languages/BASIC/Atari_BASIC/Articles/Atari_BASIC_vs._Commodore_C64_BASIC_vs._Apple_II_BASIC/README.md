@@ -1,6 +1,7 @@
 # Atari BASIC vs. Commodore C64 BASIC vs. Apple II BASIC
 
 ## The main goal of this site is to show the user the different results from the BASIC language versions of Atari, Commodore C64 and Apple II.
+
 ### Atari BASIC:
 
 ![](attachments/Atari1.jpg)
@@ -20,5 +21,3 @@
 ![](attachments/Apple2.jpg)
 
 ![](attachments/Apple3.jpg)
-
-

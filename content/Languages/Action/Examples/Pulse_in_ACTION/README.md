@@ -6,4 +6,4 @@ ANALOG Issue 26
 
 ![](attachments/pulseinaction.gif)
 
-PDF: [pulseinaction.PDF](attachments/pulseinaction.PDF) 
+PDF: [pulseinaction.PDF](attachments/pulseinaction.PDF)

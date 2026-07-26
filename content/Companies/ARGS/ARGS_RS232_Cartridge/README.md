@@ -69,7 +69,7 @@ ist. Der Handler für das ARGS-Interface ist (bisher nur) teilweise
 kompatibel zum 850er.
 
 Man muß beim Datenaustausch immer bedenken, daß der Atari für Return den
-Wort 155 hat und nicht 13 (=> Wandlung !!!)
+Wort 155 hat und nicht 13 (=\> Wandlung !!!)
 
 ## Software Für das RS-232-Modul
 
@@ -81,17 +81,17 @@ die Sache leider etwas komplizierter, aber nicht unmöglich.
 
 Nun zur Software:
 
-- ARGSRS2.** R:-Handler mit hoher Kompatibilität zum 850-er Interface.
-Neue Version, Stand Juli 1994. Steht ab $2000 im Speicher und legt MEMLO
-hoch
-- ARGSRSM** (M=Mini) Auf das Nötigste reduzierter R:-Handler. Nur
-Veränderung der Baud-Festeinstellung von Wortlänge (8 Bit), Parität
-(keine) und Stopbits (1). Nur Hardwarehandshake und keine
-Zeichenwandlung von 155 in 13. Reicht aber z.B. für <nop>BobTerm völlig. Steht
-auch ob $2000 im Speicher.
+- ARGSRS2.\*\* R:-Handler mit hoher Kompatibilität zum 850-er Interface.
+  Neue Version, Stand Juli 1994. Steht ab $2000 im Speicher und legt MEMLO
+  hoch
+- ARGSRSM\*\* (M=Mini) Auf das Nötigste reduzierter R:-Handler. Nur
+  Veränderung der Baud-Festeinstellung von Wortlänge (8 Bit), Parität
+  (keine) und Stopbits (1). Nur Hardwarehandshake und keine
+  Zeichenwandlung von 155 in 13. Reicht aber z.B. für <nop>BobTerm völlig. Steht
+  auch ob $2000 im Speicher.
 - ARGSRSRE.COM (RE=RElocobel) Relocierbarer R:-handler (ARGSRSM s.o.),
-der sich ob MEMLOW in den Speicher legt und dann MEMLOW entsprechend
-erhöht.
+  der sich ob MEMLOW in den Speicher legt und dann MEMLOW entsprechend
+  erhöht.
 
 Weiche Programme laufen nun mit diesen Handlern? Pur jeden Fall alle die
 das 850-er Interface, voraussetzen und die Handler Sauber abfragen und
@@ -108,8 +108,7 @@ Es funktionieren nicht
 
 ## Steueraddressen
 
-Steueradressen: (CCTL + A3)
----
+## Steueradressen: (CCTL + A3)
 
 || ACIA  || Aufgabe	||  Atari-Bus (Modulschacht)
 | DATA	  | Ein-/Ausgabe  | $D508/54536
@@ -126,6 +125,7 @@ für die ARGS RS-232 Cart
 ## Treiber Quellen
 
 ### ARGSRS.SRC
+
 ```
 ***		 RS 232 HANDLER			 ***
 *** Fuer A.R.G.S. RS232 Interface ***
@@ -745,6 +745,7 @@ END		DFB 255
 ```
 
 ### ARGSRS2.SRC
+
 ```
 ***		 RS 232 HANDLER			 ***
 *** Fuer A.R.G.S. RS232 Interface ***
@@ -1352,6 +1353,7 @@ END		DFB 255
 ```
 
 ### ARGSRSM.SRC
+
 ```
 ***		 RS 232 HANDLER			 ***
 *** Fuer A.R.G.S. RS232 Interface ***
@@ -1736,4 +1738,3 @@ OBUF	  ASC 'Roland Buehler, Holger Pfeil, Pe'
 			ASC 'Com.II und meinem genialen Hirn.'
 END		DFB 255
 ```
-

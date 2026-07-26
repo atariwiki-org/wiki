@@ -22,7 +22,6 @@ VOL - Sound volume
 
 The comment show what is on the Stack
 
-
 ```
 : SOUND       ( CH# FREQ DIST VOL -- )
    SWAP       ( CH# FREQ VOL DIST -- we swap volume and distortion )
@@ -89,7 +88,6 @@ $D200 CONSTANT AUDBASE
   ROT OVER C! 1+ C! ;
 ```
 
-
 ```
 : hoover
   57 54  ( Sound values for hoover sound )
@@ -101,7 +99,6 @@ $D200 CONSTANT AUDBASE
   LOOP
   0 0 0 0 SOUND ;
 ```
-
 
 /%
 %%tab-german
@@ -133,6 +130,7 @@ $D200 CONSTANT AUDBASE
 ```
 
 Und nun kommt die Sirene in Forth:
+
 ```
 : SIRENE
   57 54  ( Sound Werte fuer Sirenentoene )
@@ -149,5 +147,3 @@ Das BASIC Programm benutzt 5 Variablen (LOW, HIGH, P, AGAIN, WAIT), das Forth Pr
 
 /%
 /%
-
-

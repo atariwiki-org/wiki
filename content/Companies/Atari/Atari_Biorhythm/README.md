@@ -9,9 +9,9 @@ The 'Biorhythm' theory states that human lives move in predictable wavelike patt
 (C) Intellectual  33 days
 
 There are three major areas to this chart to be observed:
-**__LOW__** **__CRITICAL__** **__PEAK__**
+****LOW**** ****CRITICAL**** ****PEAK****
 
-**__CRITICAL__**
+****CRITICAL****
 
 The day that the cycle switches from peak to low or low to peak is a critical day. It is defined as critical because you are neither up or down, but in a neutral state.
 
@@ -19,13 +19,13 @@ The day that the cycle switches from peak to low or low to peak is a critical da
 (B) Emotional cycle: Emotional outbursts are possible.
 (C) Intellectual cycle: Not as important by itself. It does coincide with the other two cycles and has a contributary effect.
 
-**__PEAK__**
+****PEAK****
 
 (A) During the 11-1/2 peak days, is a good time for intensive training in athletics or for any activity requiring physical stamina.
 (B) During the 14 peak days, both men and women are prone to cheerfulness, cooperation, and a positive outlook on life.
 (C) During the 16-1/2 peak days of this cycle, a person finds it easier to study, write creatively understand mathematics or pursue any intellectual efforts.
 
-**__LOW__**
+****LOW****
 
 (A) During the 16-1/2 low days, people are aware of a reduced vitality and endurance. In short, you will tire easily on these days.
 (B) During the 14 low days, people have tendencies toward moodiness and negativism.
@@ -41,15 +41,23 @@ After entry the biorhythm will proceed to printout. Use CONTROL 1 to halt printo
 
 20 characters on the screen
 40 characters on the printer
+
 ## Manual
-- [Atari_Biorhythm_CX4107.pdf](attachments/Atari_Biorhythm_CX4107.pdf) ; size: 1.3 MB ; thanks to Atarimania for the JPG-scans. :-)))
+
+- [Atari\_Biorhythm\_CX4107.pdf](attachments/Atari_Biorhythm_CX4107.pdf) ; size: 1.3 MB ; thanks to Atarimania for the JPG-scans. :-)))
+
 ## CAS-Images
-- [Biorhythm_8K_without_limit.cas](attachments/Biorhythm_8K_without_limit.cas) ; patched version without the Y2K-bug; __The German 8K-version is still missing, please help us. Thank you in advance.__
-- [Biorhythm_16K_-_2000.cas](attachments/Biorhythm_16K_-_2000.cas) ; version with the Y2K-bug, limited up to the year 2000
+
+- [Biorhythm\_8K\_without\_limit.cas](attachments/Biorhythm_8K_without_limit.cas) ; patched version without the Y2K-bug; **The German 8K-version is still missing, please help us. Thank you in advance.**
+- [Biorhythm\_16K\_-\_2000.cas](attachments/Biorhythm_16K_-_2000.cas) ; version with the Y2K-bug, limited up to the year 2000
+
 ## ATR-Images
-- [Atari_Biorhythmus_CX4107_--_XL_english_no_limit_no_BASIC.atr](attachments/Atari_Biorhythmus_CX4107_--_XL_english_no_limit_no_BASIC.atr) ; compiled Turbo-Basic XL version
-- [Atari_Biorhythmus_CX4107_und_DXG_5727_deutsch-englisch_Basic_komplett.atr](attachments/Atari_Biorhythmus_CX4107_und_DXG_5727_deutsch-englisch_Basic_komplett.atr) ; English and German version
+
+- [Atari\_Biorhythmus\_CX4107\_--\_XL\_english\_no\_limit\_no\_BASIC.atr](attachments/Atari_Biorhythmus_CX4107_--_XL_english_no_limit_no_BASIC.atr) ; compiled Turbo-Basic XL version
+- [Atari\_Biorhythmus\_CX4107\_und\_DXG\_5727\_deutsch-englisch\_Basic\_komplett.atr](attachments/Atari_Biorhythmus_CX4107_und_DXG_5727_deutsch-englisch_Basic_komplett.atr) ; English and German version
+
 ## Pictures
+
 ![](attachments/biorythm.jpg)
 Atari Biorhythm CX4107 - box ; thanks to rhod for scanning
 
@@ -60,4 +68,5 @@ Atari Biorhythm CX4107 - loadscreen
 Atari Biorhythm CX4107 - startscreen
 
 ## References
-AtariWiki highly recommends Wade's site regarding [Biorhythm](https://inverseatascii.info/2016/05/31/s2e17-atari-biorhythm-supplement/) 
+
+AtariWiki highly recommends Wade's site regarding [Biorhythm](https://inverseatascii.info/2016/05/31/s2e17-atari-biorhythm-supplement/)

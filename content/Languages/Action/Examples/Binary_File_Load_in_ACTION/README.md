@@ -1,7 +1,7 @@
 # Binary File Load in ACTION
 
 General Information
-Author: 	Carsten Strotmann & Matthias Drees
+Author: 	Carsten Strotmann \& Matthias Drees
 Language: 	ACTION!
 Compiler/Interpreter: 	ACTION!
 Published: 	19.02.90
@@ -51,8 +51,7 @@ PROC Bload_Init ()
  RETURN
 ```
 
-
-1.1 Another Version
+1\.1 Another Version
 
 ```
 ; This fragment loads an Action!

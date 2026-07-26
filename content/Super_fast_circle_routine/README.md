@@ -2,14 +2,11 @@
 
 ![](attachments/mojmikro_logo.png)
 
-
-Original from Posting on [AtariAge](http://www.atariage.com/forums/topic/161073-moj-mikro-magazine-listings-super-fast-circle-routine/) 
+Original from Posting on [AtariAge](http://www.atariage.com/forums/topic/161073-moj-mikro-magazine-listings-super-fast-circle-routine/)
 
 I present you super fast routine for drawing circles in graphics mode 8 and 8 + 16.
 
 [Moj Mikro](http://www.mojmikro.si/) magazine article listings are available as zipped file in download section. It contains ATR disk image file with Atari DOS system for using with disk based, real Atari machine or any Atari 8-bit emulator. To load Atari BASIC programs properly, Atari must be powered with Atari BASIC enabled, or you can try them with any compatible BASIC.
-
-
 
 You can try, use and modify the programs and routines for whatever purpose you want.
 
@@ -102,6 +99,7 @@ This routine uses very fast algorithm for drawing circles. It works in graphics 
 ![](attachments/circles_6.png) ![](attachments/circles_12.png)
 
 ### ATAMAS 2 Assembler Listing CIRCLE.LST
+
 ```
 *
 * FAST CIRCLE DRAWING ROUTINE
@@ -413,6 +411,7 @@ Algorithm is based on one from Croatian computer magazine Racunari (number 31). 
 The routine consists of two parts: main program for calculating X and Y coordinates and second part with PLOT routine for drawing (or erasing) pixels on X and Y coordinates. Calculation of coordinates is done for one eighth of the circle. Other seven parts are simply mirrored from original mentioned pattern. We take advantage of this fact, because circle is simetricly shaped. The routine uses Page Zero locations for variables for even faster execution. There are 17 of them.
 
 # Usage of the routine
+
 ```
 A=USR(30000,POK,X,Y,R)
 ```
@@ -446,6 +445,7 @@ Next example is demonstration of implementing mentioned circle algorithm in pure
 ![](attachments/circles_4.png)
 
 ### Basic Listing M8903282.LST
+
 ```
 1 REM *******************************
 2 REM PROGRAM  : FAST CIRCLE DRAWING
@@ -495,6 +495,7 @@ This is classic example for drawing circles from Atari BASIC using sine and cosi
 ![](attachments/circles_1.png)
 
 ### Basic Listing M8903281.LST
+
 ```
 1 REM *******************************
 2 REM PROGRAM  : SLOW CIRCLE DRAWING
@@ -516,6 +517,7 @@ This is classic example for drawing circles from Atari BASIC using sine and cosi
 Returning back to first program with the fastest way of drawing circles... There is one more thing to note. In case you want to use PLOT subroutine, which is part of the main circle routine, then read following explanation.
 
 PLOT routine is written so it can be used easily from Atari BASIC program independently from main circle routine, by using like this:
+
 ```
 A=USR(30179,POK,X,Y)
 ```

@@ -1,6 +1,5 @@
 # Speedlink Competition Pro USB
 
-
 Tested with a Speedlink Competition Pro USB. Might work with other digital gamepads. String descriptor returns "Gamepad".
 
 ## Description
@@ -10,7 +9,6 @@ Tested with a Speedlink Competition Pro USB. Might work with other digital gamep
 |  $11           |  2                 | Vertical Movement (up/down) | $271 (625)  | PADDL1 | JVERT     |
 |  $12           |  3                 | Buttons 1-4  | $272 (626)  | PADDL2 | JBUTTON     |
 
-
 ### Byte 3: Buttons
 
 || Bit  || Button  ||
@@ -18,7 +16,6 @@ Tested with a Speedlink Competition Pro USB. Might work with other digital gamep
 |  2   |   2     |
 |  3   |   3     |
 |  4   |   4     |
-
 
 ## Device dependent source
 
@@ -140,5 +137,3 @@ This Source must be included into the [Base USB HID Driver](../Hardware/USB/Base
 02150          RTS
 02160 ------------------------------
 ```
-
-

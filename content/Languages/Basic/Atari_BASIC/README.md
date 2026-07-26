@@ -1,6 +1,7 @@
 # Atari BASIC
 
 ### Background
+
 Atari BASIC is the "standard" BASIC dialect for the 8-bit series. It was originally sold separately as a (relatively expensive) 8k ROM cartridge. Starting with the 600XL/800XL, the ROMs were included inside the machine. There are three versions, the original version, retroactively known as Revision A, and the updated Revision B and C which fixed various bugs.
 
 Atari originally licensed the 6502-assembler code for Microsoft BASIC. This came in two versions, one that was about 7900 bytes that used a 32-bit (6-digit) floating-point number format, and another that was closer to 9000 that included an expanded floating-point format with a 40-bit (9-digit) numbers. The vast majority of 8-bit machines used the larger 9k/40-bit version, and then further expanded it with additional functions for BASIC input/output. For instance, the BASIC, character set and I/O in the early PET machines was supplied in a total of 16k of ROM.
@@ -19,6 +20,7 @@ The performance issues led to a profusion of 3rd party BASICs, some of which con
 Atari BASIC - Computing Language box
 
 ### Design notes
+
 Atari BASIC has some key differences with the more common MS-derived BASICs found on most contemporary machines. Generally, one can describe Atari BASIC's design philosophy as "modeless" and "orthogonal".
 
 Most BASICs of the era had the concept of "immediate mode" and "program mode", and some commands could only be used in one mode or the other. A good example in MS BASIC is the {{LIST}} command, which could only be used in immediate mode, at the "command line". Atari BASIC removed this limitation, one could write a program consisting of {{10 LIST}}.
@@ -28,6 +30,7 @@ Additionally, most BASICs had commands that read input or produced output, for e
 The most noticeable difference between Atari BASIC and MS-derived versions is the string handling. Atari BASIC used a greatly simplified system of character-arrays instead of the dynamic strings in MS. This meant that all strings had to be predefined using {{DIM}}, and their length could not be changed during run-time. There are a number of advantages to this approach, notably speed and lower memory usage, but this means conversion of standard programs from MS listings may be difficult.
 
 ### What's missing
+
 In addition to differences like string handling, Atari BASIC also lacked some of the less-used features found in MS BASIC. Among these are...
 
 - {{TAB}} and {{SPC}}, for formatting output
@@ -39,79 +42,86 @@ In addition to differences like string handling, Atari BASIC also lacked some of
 Most 3rd party BASICs for the Atari added many of these features, and more.
 
 ### What's new
+
 To allow BASIC programmers access to the advanced features of the system, Atari BASIC added commands for defining the GRAPHICS, changing COLORs, MOVEing and drawing a DRAWTO, playing SOUND, and others.
 
 ## Source Code
+
 ![](attachments/The_Atari_BASIC_Source_Book-Bill_Wilkinson-Kathleen_O_Brien-Paul_Laughton.jpg)
 [The Atari BASIC Source Book - Bill Wilkinson, Kathleen O'Brien and Paul Laughton](https://data.atariwiki.org/DOC/The_Atari_BASIC_Source_Book-Bill_Wilkinson-Kathleen_O'Brien-Paul_Laughton.pdf) ; size: 76.8 MB ; 316 pages
 
 ## ROM-Images
+
 ![](attachments/Cart_800er.jpg)
 Atari BASIC Cartridge - brown - Revison A
 
 ![](attachments/Cart_XE.jpg)
 Atari BASIC Cartridge - silver - Revison C ; Revision B was soldered in the machines only and therefore not available as a stand-alone cartridge
 
-- [Atari_BASIC_Rev._A.rom](attachments/Atari_BASIC_Rev._A.rom) ; ? PEEK(43234) should return: 162
-- [Atari_BASIC_Rev._B.rom](attachments/Atari_BASIC_Rev._B.rom) ; ? PEEK(43234) should return: 96
-- [Atari_BASIC_Rev._C.rom](attachments/Atari_BASIC_Rev._C.rom) ; ? PEEK(43234) should return: 234
-- [Monkey_Wrench_with_BASIC_Rev._C.rom](attachments/Monkey_Wrench_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
-- [Monkey_Wrench_II_OS-B_right_v1.rom](attachments/Monkey_Wrench_II_OS-B_right_v1.rom) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
-- [Monkey_Wrench_II_OS-B_right_v2.rom](attachments/Monkey_Wrench_II_OS-B_right_v2.rom) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
-- [Monkey_Wrench_II_OS-B_right_v1_with_BASIC_Rev._C.rom](attachments/Monkey_Wrench_II_OS-B_right_v1_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
-- [Monkey_Wrench_II_OS-B_right_v2_with_BASIC_Rev._C.rom](attachments/Monkey_Wrench_II_OS-B_right_v2_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
-- [Monkey_Wrench_II_XL_with_BASIC_Rev._C.rom](attachments/Monkey_Wrench_II_XL_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
+- [Atari\_BASIC\_Rev.\_A.rom](attachments/Atari_BASIC_Rev._A.rom) ; ? PEEK(43234) should return: 162
+- [Atari\_BASIC\_Rev.\_B.rom](attachments/Atari_BASIC_Rev._B.rom) ; ? PEEK(43234) should return: 96
+- [Atari\_BASIC\_Rev.\_C.rom](attachments/Atari_BASIC_Rev._C.rom) ; ? PEEK(43234) should return: 234
+- [Monkey\_Wrench\_with\_BASIC\_Rev.\_C.rom](attachments/Monkey_Wrench_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
+- [Monkey\_Wrench\_II\_OS-B\_right\_v1.rom](attachments/Monkey_Wrench_II_OS-B_right_v1.rom) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
+- [Monkey\_Wrench\_II\_OS-B\_right\_v2.rom](attachments/Monkey_Wrench_II_OS-B_right_v2.rom) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
+- [Monkey\_Wrench\_II\_OS-B\_right\_v1\_with\_BASIC\_Rev.\_C.rom](attachments/Monkey_Wrench_II_OS-B_right_v1_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
+- [Monkey\_Wrench\_II\_OS-B\_right\_v2\_with\_BASIC\_Rev.\_C.rom](attachments/Monkey_Wrench_II_OS-B_right_v2_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
+- [Monkey\_Wrench\_II\_XL\_with\_BASIC\_Rev.\_C.rom](attachments/Monkey_Wrench_II_XL_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
 
 To create one 16 KiB-ROM out of 2 8 KiB ROMs, use the following method:
 
-__Windows:__
+**Windows:**
 Go to the CMD shell and there to the directory, where the 2 files are, which should be combined, then type:
 
 copy /b monkey.rom+BASIC.rom allinone16k.rom
 
 and the resulting rom file can be found in the same directory.
 
-__Unix/Mac:__
+**Unix/Mac:**
 Start application shell/Terminal and then type cd and a blank. Drag the folder, in which the 2 files are, directly behind the blank. Check with typing ls -a, whether the 2 files can be seen. Then type:
 
-cat monkey.rom BASIC.rom > allinone16k.rom
+cat monkey.rom BASIC.rom \> allinone16k.rom
 
 and the resulting rom file can be found in the same directory.
 
 ## CAR-Images
-- [Atari_BASIC_Rev._A.car](attachments/Atari_BASIC_Rev._A.car) ; ? PEEK(43234) should return: 162
-- [Atari_BASIC_Rev._B.car](attachments/Atari_BASIC_Rev._B.car) ; ? PEEK(43234) should return: 96
-- [Atari_BASIC_Rev._C.car](attachments/Atari_BASIC_Rev._C.car) ; ? PEEK(43234) should return: 234
-- [The_Monkey_Wrench.car](attachments/The_Monkey_Wrench.car) Tool for better editing BASIC programs, version I
-- [The_Monkey_Wrench_II.car](attachments/The_Monkey_Wrench_II.car) Tool for better editing BASIC programs, version II v2
-- [Monkey_Wrench_with_BASIC_Rev._C.car](attachments/Monkey_Wrench_with_BASIC_Rev._C.car) ; both cartridges in just one 16 KiB file
-- [Monkey_Wrench_II_OS-B_right_v1.car](attachments/Monkey_Wrench_II_OS-B_right_v1.car) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
-- [Monkey_Wrench_II_OS-B_right_v2.car](attachments/Monkey_Wrench_II_OS-B_right_v2.car) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
-- [Monkey_Wrench_II_XL_with_BASIC_Rev._C.car](attachments/Monkey_Wrench_II_XL_with_BASIC_Rev._C.car) ; both cartridges in just one 16 KiB file. This is a patched BASIC, when initialized jumps to $8002 (right cartridge). Only this way it is runnig on a XL machine.
+
+- [Atari\_BASIC\_Rev.\_A.car](attachments/Atari_BASIC_Rev._A.car) ; ? PEEK(43234) should return: 162
+- [Atari\_BASIC\_Rev.\_B.car](attachments/Atari_BASIC_Rev._B.car) ; ? PEEK(43234) should return: 96
+- [Atari\_BASIC\_Rev.\_C.car](attachments/Atari_BASIC_Rev._C.car) ; ? PEEK(43234) should return: 234
+- [The\_Monkey\_Wrench.car](attachments/The_Monkey_Wrench.car) Tool for better editing BASIC programs, version I
+- [The\_Monkey\_Wrench\_II.car](attachments/The_Monkey_Wrench_II.car) Tool for better editing BASIC programs, version II v2
+- [Monkey\_Wrench\_with\_BASIC\_Rev.\_C.car](attachments/Monkey_Wrench_with_BASIC_Rev._C.car) ; both cartridges in just one 16 KiB file
+- [Monkey\_Wrench\_II\_OS-B\_right\_v1.car](attachments/Monkey_Wrench_II_OS-B_right_v1.car) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
+- [Monkey\_Wrench\_II\_OS-B\_right\_v2.car](attachments/Monkey_Wrench_II_OS-B_right_v2.car) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
+- [Monkey\_Wrench\_II\_XL\_with\_BASIC\_Rev.\_C.car](attachments/Monkey_Wrench_II_XL_with_BASIC_Rev._C.car) ; both cartridges in just one 16 KiB file. This is a patched BASIC, when initialized jumps to $8002 (right cartridge). Only this way it is runnig on a XL machine.
 
 ## Manuals
+
 - [Atari BASIC Reference Manual Rev. A (1980)](https://data.atariwiki.org/DOC/ATARI_BASIC_Reference_Manual.pdf) ; size: 77.7 MB ; 122 pages
 - [Atari BASIC Reference Manual-Product Update-C061038 Rev. A, Errata for the above manual (1982)](attachments/Atari_BASIC_Reference_Manual-Product_Update-C061038_Rev._A-c_1982_Atari_Inc.pdf) ; size: 4.2 MB ; 6 pages
 - [Atari BASIC Reference Manual Rev. C (1983)](https://data.atariwiki.org/DOC/Atari_BASIC_Reference_Manual_Rev._C.pdf) ; size: 47.9 MB ; 134 pages
-- [Atari BASIC - Bob_Albrecht, LeRoy Finkel and Jerald R. Brown (1979)](https://data.atariwiki.org/DOC/Atari_BASIC_1979.pdf) ; size: 80.9 MB ; OCR ; 348 pages
-- [Atari_BASIC-Richard_Haskell (1983)](https://data.atariwiki.org/DOC/Atari_BASIC_1983.pdf) ; size: 74.7 MB ; OCR ; 196 pages
-- [Atari BASIC-XL Edition - Bob_Albrecht, LeRoy Finkel and Jerald R. Brown (1985)](https://data.atariwiki.org/DOC/Atari_BASIC_XL_Edition-Bob_Albrecht,_LeRoy_Finkel_and_Jerald_R._Brown_1985.pdf) ; size: 86.5 MB ; OCR ; 404 pages
+- [Atari BASIC - Bob\_Albrecht, LeRoy Finkel and Jerald R. Brown (1979)](https://data.atariwiki.org/DOC/Atari_BASIC_1979.pdf) ; size: 80.9 MB ; OCR ; 348 pages
+- [Atari\_BASIC-Richard\_Haskell (1983)](https://data.atariwiki.org/DOC/Atari_BASIC_1983.pdf) ; size: 74.7 MB ; OCR ; 196 pages
+- [Atari BASIC-XL Edition - Bob\_Albrecht, LeRoy Finkel and Jerald R. Brown (1985)](https://data.atariwiki.org/DOC/Atari_BASIC_XL_Edition-Bob_Albrecht,_LeRoy_Finkel_and_Jerald_R._Brown_1985.pdf) ; size: 86.5 MB ; OCR ; 404 pages
 - [ATARI BASIC-Handbuch für Selbststudium und Praxis-BOB ALBRECHT, Le Roy Finkel, JERALD BROWN](https://data.atariwiki.org/DOC/ATARI_BASIC-Handbuch_fuer_Selbststudium_und_Praxis-BOB_ALBRECHT,_Le_Roy_Finkel,_JERALD_BROWN.pdf) ; Größe: 44,8 MB ; OCR ; 214 Doppelseiten
 - [ATARI BASIC Leitfaden](attachments/ATARI_BASIC_Leitfaden.pdf) ; Größe: 5,2 MB ; 11 Seiten
 - [Atari BASIC - Quick Reference Guide - Gilbert Held](../../../../media/Companies/Atari/Atari_BASIC/attachments/Atari_BASIC_Quick_Reference_Guide-Gilbert_Held.pdf) ; size: 10.4 MB ; 8 pages
 - [OSS Quick reference card for Atari BASIC](attachments/oss-quick-reference-card-BASIC-a-plus.pdf) ; size: 3.4 MB ; 8 pages ; thank you so much Bill Lange for finding this very rare cards. :-)
 - [Atari BASIC Referenz-Karten](attachments/Atari_BASIC_Referenz-Karten.pdf) ; Größe: 3,1 MB ; OCR ; 271 Seiten
 - [Atari BASIC Source Book (2006)](attachments/Atari_BASIC_Source_Book_2006.pdf) ; size: 10.4 MB ; OCR ; 80 pages ; converted 2006 by Andreas Bertelmann for ABBUC ; thank you Andreas
-- [Monkey_Wrench_-_Manual.pdf](http://data.atariwiki.org/DOC/Monkey_Wrench_-_Manual.pdf) ; size: 67.5 MB ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
-- [Monkey_Wrench_II_-_Manual.pdf](attachments/Monkey_Wrench_II_-_Manual.pdf) ; size: 2.5 MB ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
+- [Monkey\_Wrench\_-\_Manual.pdf](http://data.atariwiki.org/DOC/Monkey_Wrench_-_Manual.pdf) ; size: 67.5 MB ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
+- [Monkey\_Wrench\_II\_-\_Manual.pdf](attachments/Monkey_Wrench_II_-_Manual.pdf) ; size: 2.5 MB ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
 - [The major differences between the Monkey Wrench II and Monkey Wrench II-XL cartridges](attachments/Monkey_Wrench_II_XL_-_Notes.rtf) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
 
 ## Atari BASIC Keywords
+
 An incredible good site for all [Atari BASIC keywords](http://www.abbuc.de/software/133-software/softwarereferenz/309-atari-BASIC-referenz) ; thank you ABBUC, greatly appreciated! :-)
 ![](attachments/Atari_BASIC_Keywords.jpg)
 Atari BASIC Keywords
 
 ## Abbreviations
+
 | Command | Abbreviation |
 |---------|--------------|
 | BYE | B. |
@@ -161,6 +171,7 @@ Atari BASIC Keywords
 | XIO | X. |
 
 ## Atari BASIC Error Codes
+
 2 - INSUFFICIENT MEMORY
 3 - BAD VALUE
 4 - TOO MANY VARIABLES
@@ -183,24 +194,29 @@ Atari BASIC Keywords
 21 - LOAD FILE ERROR
 
 ## Atari BASIC Course: An Invitation to Programming 1-3
+
 - [An Invitation to Programming 1 - Fundamentals of Basic Programming (CX4101)](../../../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_1_CX4101/README.md)
 - [An Invitation to Programming 2 - Writing Programs one and two (CX4106)](../../../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_2_CX4106/README.md)
 - [An Invitation to Programming 3-Introduction to Sound and Graphics (CX4117)](../../../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_3_CX4117/README.md)
 
 ## Atari BASIC Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie fertig
+
 - [Programmieren leicht gemacht (TXG4110)](../../../Companies/Atari/Atari_Germany/Programmieren_leicht_gemacht_TXG4110/README.md)
 - [Noch mehr BASIC (TXG55007)](../../../Companies/Atari/Atari_Germany/Noch_mehr_BASIC_TXG55007/README.md)
 - [BASIC für Fortgeschrittene](../../../Companies/Atari/Atari_Germany/BASIC_fuer_Fortgeschrittene/README.md)
 
 ## BASIC 1x1 des Programmierens - ein BASIC-Lehrgang, einstmals gesendet auf Radio DDR II in der Computersendung REM, Begleitmaterial veröffentlicht als Kassettenbox. Mit einer Programm-Kassette für ATARI 800XL.
-- [Programm_Kassette.atr](attachments/Programm_Kassette.atr)
-- [BASIC 1x1 des Programmierens (Radio DDR II)/Kassetten 1 bis 6 (mp3)](https://k1.spdns.de/Vintage/Sinclair/82/Books/BASIC%201x1%20des%20Programmierens%20%5BRadio%20DDR%20II%5D/Kassetten%201%20bis%206%20(mp3)/)
+
+- [Programm\_Kassette.atr](attachments/Programm_Kassette.atr)
+- [BASIC 1x1 des Programmierens (Radio DDR II)/Kassetten 1 bis 6 (mp3)](<https://k1.spdns.de/Vintage/Sinclair/82/Books/BASIC%201x1%20des%20Programmierens%20%5BRadio%20DDR%20II%5D/Kassetten%201%20bis%206%20(mp3)/>)
 - [REM und DT64-Computerclub](http://www.kc85emu.de/scans/fa0589/REM.htm)
 
 ## Articles
+
 - [How to find the revision number of Atari BASIC](Articles/How_to_find_the_revision_number_of_Atari_BASIC/README.md)
 
 ## Source and Tools
+
 - [Program to measure 810 disk speed](Examples/RPM810/README.md) Program to measure 810 disk speed
 - [ST Mouse Driver for BASIC](Examples/ST_Mouse_Driver_for_BASIC/README.md)
 - [Boolean Logic in BASIC](Examples/Boolean_Logic_in_BASIC/README.md)
@@ -214,18 +230,21 @@ Atari BASIC Keywords
 - [Schnelle Player Bewegung in BASIC](Examples/Schnelle_Player_Bewegung_in_BASIC/README.md) (German)
 
 ## Tools
+
 - [Extended Atari Basic (APX-10177, APX-20177)](../Extended_Atari_BASIC/README.md)
 - [Toggle BASIC on/off from OS/A+ and DOS XL Command-Line](../../../Companies/OSS/Toggle_BASIC_On-Off_from_the_OS_APlus_and_DOS_XL_Command-Line/README.md)
-- [REV.B_TO_REV.C_CONVERTER.txt](attachments/REV.B_TO_REV.C_CONVERTER.txt) Atari BASIC Rev. B to Rev. C Converter as TXT file
+- [REV.B\_TO\_REV.C\_CONVERTER.txt](attachments/REV.B_TO_REV.C_CONVERTER.txt) Atari BASIC Rev. B to Rev. C Converter as TXT file
 - [RevB2C.atr](attachments/RevB2C.atr) Atari BASIC Rev. B to Rev. C Converter as ATR-image
 - [Infoline for BASIC and ACTION!](../../Action/Examples/Infoline/README.md) Infoline for BASIC and ACTION!
 
 ## References
+
 - [Atari BASIC Article in Wikipedia](http://en.wikipedia.org/wiki/ATARI_BASIC)
 - [Atari BASIC vs. Commodore C64 BASIC vs. Apple II BASIC](Articles/Atari_BASIC_vs._Commodore_C64_BASIC_vs._Apple_II_BASIC/README.md)
 - [Atari BASIC: the good, the bad and the ugly](https://web.archive.org/web/20070524044410/http://www3.sympatico.ca/maury/other_stuff/atari_BASIC.html)
 
 ## Pictures
+
 ![](attachments/Atari_BASIC_Reference_Manual_800_.jpg)
 [Atari BASIC Reference Manual Rev. A](https://data.atariwiki.org/DOC/ATARI_BASIC_Reference_Manual.pdf) ; size: 77.7 MB ; 122 pages
 
@@ -233,13 +252,13 @@ Atari BASIC Keywords
 [Atari BASIC Reference Manual Rev. C](https://data.atariwiki.org/DOC/Atari_BASIC_Reference_Manual_Rev._C.pdf) ; size: 47.9 MB ; 134 pages
 
 ![](attachments/Atari_BASIC_1979.jpg)
-[Atari BASIC - Bob_Albrecht, LeRoy Finkel and Jerald R. Brown (1979)](https://data.atariwiki.org/DOC/Atari_BASIC_1979.pdf) ; size: 80.9 MB ; OCR ; 348 pages
+[Atari BASIC - Bob\_Albrecht, LeRoy Finkel and Jerald R. Brown (1979)](https://data.atariwiki.org/DOC/Atari_BASIC_1979.pdf) ; size: 80.9 MB ; OCR ; 348 pages
 
 ![](attachments/Atari_BASIC-Richard_Haskell.jpg)
-[Atari_BASIC-Richard_Haskell.jpg (1983)](https://data.atariwiki.org/DOC/Atari_BASIC_1983.pdf) ; size: 74.7 MB ; OCR ; 196 pages
+[Atari\_BASIC-Richard\_Haskell.jpg (1983)](https://data.atariwiki.org/DOC/Atari_BASIC_1983.pdf) ; size: 74.7 MB ; OCR ; 196 pages
 
 ![](attachments/Atari_BASIC-XL-Edition.jpg)
-[Atari BASIC-XL Edition - Bob_Albrecht, LeRoy Finkel and Jerald R. Brown (1985)](https://data.atariwiki.org/DOC/Atari_BASIC_XL_Edition-Bob_Albrecht,_LeRoy_Finkel_and_Jerald_R._Brown_1985.pdf) ; size: 86.5 MB ; OCR ; 404 pages
+[Atari BASIC-XL Edition - Bob\_Albrecht, LeRoy Finkel and Jerald R. Brown (1985)](https://data.atariwiki.org/DOC/Atari_BASIC_XL_Edition-Bob_Albrecht,_LeRoy_Finkel_and_Jerald_R._Brown_1985.pdf) ; size: 86.5 MB ; OCR ; 404 pages
 
 ![](attachments/ATARI_BASIC-Handbuch_fuer_Selbststudium_und_Praxis-BOB_ALBRECHT_Le_Roy_Finkel_JERALD_BROWN-2.jpg)
 

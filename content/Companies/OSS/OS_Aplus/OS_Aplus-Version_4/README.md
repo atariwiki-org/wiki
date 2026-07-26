@@ -5,6 +5,7 @@ Copyright (C) 1984 Optimized Systems Software, OSS, Inc.
 ( information from the OS/A+ Version 4 Handbook )
 
 ## ATR image
+
 - [OSS DOS II+/D V:4.2M](attachments/OSS_DOS_IIplus_Version_4.2.atr)
 
 ## Version 4 File Structure
@@ -20,16 +21,15 @@ The OS/A+ random access file management system treats each disk under its contro
 There are several non-obvious advantages to this scheme, so bear with us as we try to explain some of them.
 
 1. We are able to handle disks with 128, 256, or-512 bytes per sector. (To be truthful, with 128-byte-per-sector drives, we would use pairs of sectors to emulate 256-byte sectors, since a 128-byte file map is not really adequate.)
-1. We allow each DISK DRIVE to be assigned its own "drive blocking factor". That means that a quadruple density floppy might have blocks consisting of two 256-byte sectors while a 10 MB disk might use blocks of four 512-byte sectors. Note that this concept of blocking factors is not new or unique: CP/M 2.2 allows blocking factors of IKB, 2KB, and 4KB, depending on disk size. We are simply a little more flexible.
-1. We allow each FILE to be assigned its own "file blocking factor". Thus, even on a floppy with 512-byte blocks, a given FILE may use 8 KByte blocks, thus guaranteeing at most one disk read to access any given sector of the file. (On the Apple II version of this product, where the drive blocking factor is perforce 1 for standard Apple drives, a file blocking factor of 8 -- 2 KByte blocks -essentially doubles random access speed.)
-1. Although not yet implemented nor planned for first release, the directory structure is set up in such a way that, if desired, we could implement multiple and/or hierarchical directories (ala UNIX, for example). Even CIO (on the Apple II) has been altered to support the concept of a default device and/or directory.
-1. Random access files are easy and practical. Unix-like "LSEEKs" are accomplished (via the "POINT" XIO call in section x.xx) to any byte of any file.
-1. Except for those rare programs that somehow depend on having 125 bytes of data per sector, current Atari application programs (including Atari BASIC and programs written thereunder) will notice NO CHANGE in their interface with the operating system. Of course, some of the currently unused options will be available to take advantage of such features as file blocking factors, but they will not be necessary to the proper functioning of the system.
+2. We allow each DISK DRIVE to be assigned its own "drive blocking factor". That means that a quadruple density floppy might have blocks consisting of two 256-byte sectors while a 10 MB disk might use blocks of four 512-byte sectors. Note that this concept of blocking factors is not new or unique: CP/M 2.2 allows blocking factors of IKB, 2KB, and 4KB, depending on disk size. We are simply a little more flexible.
+3. We allow each FILE to be assigned its own "file blocking factor". Thus, even on a floppy with 512-byte blocks, a given FILE may use 8 KByte blocks, thus guaranteeing at most one disk read to access any given sector of the file. (On the Apple II version of this product, where the drive blocking factor is perforce 1 for standard Apple drives, a file blocking factor of 8 -- 2 KByte blocks -essentially doubles random access speed.)
+4. Although not yet implemented nor planned for first release, the directory structure is set up in such a way that, if desired, we could implement multiple and/or hierarchical directories (ala UNIX, for example). Even CIO (on the Apple II) has been altered to support the concept of a default device and/or directory.
+5. Random access files are easy and practical. Unix-like "LSEEKs" are accomplished (via the "POINT" XIO call in section x.xx) to any byte of any file.
+6. Except for those rare programs that somehow depend on having 125 bytes of data per sector, current Atari application programs (including Atari BASIC and programs written thereunder) will notice NO CHANGE in their interface with the operating system. Of course, some of the currently unused options will be available to take advantage of such features as file blocking factors, but they will not be necessary to the proper functioning of the system.
 
 ### THE VERSION 4 VTOC
 
 In order to keep track of what blocks on a particular disk are available for use, the file manager maintains a special section on each disk known as the volume table of contents, or VTOC. The VTOC on a disk consists of 1 or more sectors which contain the bitmap (a long string of bits in which the Nth bit represents the Nth block on the disk). Each bit may be turned on or off to free or allocate (respectively) the block it represents. Note that the VTOC is the only data area on the disk allocated by sectors instead of blocks. The format of the VTOC is as follows:
-
 
 | hex offset  |  value   |
 |-------------|----------|
@@ -46,7 +46,6 @@ In order to keep track of what blocks on a particular disk are available for use
 | 35          | unused |
 | 36-37       | unused |
 | 38-         | disk block bit map |
-
 
 ### THE DIRECTORY
 
@@ -71,7 +70,6 @@ Format of directory sectors:
 | 3-A         | unused  |
 | B-          | directory entries (35 bytes each)  |
 
-
 Format of directory entries:
 
 | hex offset  |  value  |
@@ -81,11 +79,9 @@ Format of directory entries:
 | 3-20        | file name |
 | 21-22       | length of file in sectors |
 
-
 ### THE FILE MAP
 
 As previously mentioned OS/A+ version 4 utilizes a mapped file structure where special portions of a file point to the locations on the disk holding the actual data. These special sections comprise the file map, which is a singly linked list of disk blocks which contain pointers to the data blocks of a file. Each file map sector has the following format:
-
 
 | hex offset  |  value  |
 |-------------|---------|
@@ -105,7 +101,7 @@ The file manager requires a continuous block of memory from which to allocate bu
 The buffer space is allocated in this manner:
 
 1. When the system is booted (or reinitialized), space for each disk drive's VTOC is allocated. The space required for a given VTOC is its length in bytes.
-1. When a file is opened on a given disk drive, space is required to hold 2 of that drive's sectors.
+2. When a file is opened on a given disk drive, space is required to hold 2 of that drive's sectors.
 
 EXAMPLE: Suppose a system has 2 disks, both with 256-byte sectors. There will be 2 VTOC buffers (a VTOC is usually I sector long), so there's a total of 512 bytes. Each open file will have file map and data buffers, a total of 512 bytes per open file (two 256-byte sectors). Therefore, allowing for 3 open files at one time, there should be three 512-byte buffers for the files, plus the 512 bytes of buffer for the VTOCs, for a total of 8192 bytes (8 pages) of buffer space (i.e., SABYTE = 8).
 
@@ -127,7 +123,6 @@ In order to access a new drive, it must be installed into the disk drive table w
 | 9-10      | (set by file manager) |
 | 11        | file map sector size: $7A for 256 byte sectors; $F4 for 512 byte sectors |
 | 12-15     | (set by file manager) |
-
 
 As can be seen, the drive table entry contains the address of the routine to read and write sectors on the disk. This routine may be located anywhere in memory.
 
@@ -151,7 +146,6 @@ Each read/write sector routine receives its parameters through the Device Contro
 - Bytes 9-A: DCBSEC sector number--to be accessed in low, high order
 
 ## ATARI SYSTEM MEMORY MAP OS/A+ version 4:
-
 
 | location  | usage |
 |-----------|-------|

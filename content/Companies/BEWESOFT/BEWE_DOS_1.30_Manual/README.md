@@ -1,16 +1,16 @@
 # BEWE DOS 1.30 Manual
 
-# BW-DOS Version #30 - User Manual
+# BW-DOS Version \#30 - User Manual
 
 By  BEWESOFT
 (Released 12/95)
-
 
 ## INTRODUCTION
 
 BW-DOS is a disk operating system for 8-bit ATARI computers with at least 48kB RAM, and at least one disk drive. It is designed to be compatible with SpartaDOS, and to use as little memory as possible. In addition, several small bugs known from SpartaDOS are not in BW-DOS, especially problems with XF 55# BW-DOS may be used separately, or as a "junior version" for SpartaDOS users.
 
 BW-DOS may be freely used and distributed under following conditions:
+
 - Only the whole and unchanged master disk may be distributed,
 - It may not be sold, excepting little costs in PD services,
 - When used as a part of another software package, the whole package may be marked with a "(C)", sold etc.; in this case it's possible to exclude files from BW-DOS, but all distributed files still must be unchanged, and an information where the whole BW-DOS is available must be included.
@@ -34,7 +34,6 @@ Czech Republic
 
 If you have found some spelling or other errors in this manual, please forgive them... (I'm not very good on English.)
 
-
 ## SYNTAX DEFINITIONS
 
 In this manual there are examples, and syntax definitions for several commands. When it is between another text, it is written like: "example". Don't forget that you need to press the <RETURN> key after every command line. Following syntax is used in the examples and definitions:
@@ -51,11 +50,11 @@ lower case letters - It must be substituted by corresponding parameter, for exam
 
 (ON|OFF) - This tell you that you need to type "ON", or "OFF" (not both).
 
-name - Name of a file or directory. Names can be up to 8 characters long, and may contain upper case letters, numbers, and the "_" character. Any character, which is not allowed in the name, will terminate the whole specification of a file.
+name - Name of a file or directory. Names can be up to 8 characters long, and may contain upper case letters, numbers, and the "\_" character. Any character, which is not allowed in the name, will terminate the whole specification of a file.
 
-You can also use wild cards: "*" means that the rest of name may be any, and "?" means that a single character may be any. This is not possible while creating a new file or directory! Most of commands will work with the first selected file while using wild cards, but a few commands will work with every selected files (see descriptions for single commands).
+You can also use wild cards: "\*" means that the rest of name may be any, and "?" means that a single character may be any. This is not possible while creating a new file or directory! Most of commands will work with the first selected file while using wild cards, but a few commands will work with every selected files (see descriptions for single commands).
 
-For example "A*" will select files with any name which begins with "A", "?A*" is for every files with "A" at second place, and "TE?T" will select for example "TEST", "TEXT" etc.
+For example "A\*" will select files with any name which begins with "A", "?A\*" is for every files with "A" at second place, and "TE?T" will select for example "TEST", "TEXT" etc.
 
 ext - extension part of filename. It may be up to three characters long, and it shows type of the file. The extension may be any, but it is recommended to use standard extensions which are easy to understand, and some programs supports them automatically. Standard extensions are for example "COM" for a machine code program, "BAT" for a batch file, "BAS" for a program in Atari Basic, "TXT" for a text file, "DOC" for a documentation file (in fact a text file), "PIC" for a picture, and so on. It is recommended to use no extensions for directories.
 
@@ -65,20 +64,18 @@ device: - Specification of device, which is not a disk drive. For example "E:" f
 
 filename - Full name of a file - it is "name\[.ext\]". While writing a file, you can add "/A" after filename to add the new file at the end of old file with the same name. (Without of "/A" the new file will replace the old one.) A filename with wild cards in it may be also called as "filter".
 
-path - Specification of directory, in which the wanted file is. There are two kinds of path - Absolute: ">\[name\]\[>name\]...", and relative: "\[<\]\[<\]...\[name\]\[>name\]...". See explanation later in this manual for more details.
+path - Specification of directory, in which the wanted file is. There are two kinds of path - Absolute: "\>\[name\]\[\>name\]...", and relative: "\[\<\]\[\<\]...\[name\]\[\>name\]...". See explanation later in this manual for more details.
 
-file - This means full specification of file to work with. The syntax is "\[Dn:\]\[path>\]filename".
-
+file - This means full specification of file to work with. The syntax is "\[Dn:\]\[path\>\]filename".
 
 Every numbers are entered as hexadecimal numbers (without of the "$" identificator). File positions are up to 6 digits long, while memory adresses and sector numbers are up to 4 digits long.
-
 
 ## SYSTEM STRUCTURE
 
 In general, BW-DOS is divided into two parts:
 
 1. Resident part (the DOS itself) is loaded while booting, and it stay in the memory to provide basic functions of the system. (Like every other DOSes.) The resident part come from a file with extension "DOS", and it contains two large routines: Command Processor (CP), and File Management System (FMS). CP is the program which is waiting for your commands, executing some of them, and loading nonresident programs for the rest. FMS is used by every other programs (including the CP) to get access to files on the disk; it is organizing every data written on the disk.
-1. Nonresident part is divied into several small programs made to provide more functions. Such a program must be loaded from disk every time you want to use it, so you need to keep these programs on every disks where you need to use them, or on a disk in another drive (or in a RamDisk).
+2. Nonresident part is divied into several small programs made to provide more functions. Such a program must be loaded from disk every time you want to use it, so you need to keep these programs on every disks where you need to use them, or on a disk in another drive (or in a RamDisk).
 
 The structure described above results in two kinds of commands in the CP:
 
@@ -90,9 +87,8 @@ Commands may use parameters (for example filenames); you need to type parameters
 
 Every BW-DOS commands may be aborted by pressing the <ESC> key while the program is waiting for an answer from the user, or while displaying something in an endless loop.
 
-__IMPORTANT__
+**IMPORTANT**
 Never change a disk if there is a file open on it. That is while a batch file from the disk is working, while the HardCopy function is sending output into a file on the disk, while you are editing a file with HEXEDIT etc. In addition, while a file is open in write or update mode, don't press <RESET> and don't turn the computer off.
-
 
 ## DISKS AND DIRECTORIES
 
@@ -104,9 +100,9 @@ BW-DOS directories may contain up to 1424 files or directories, but it is recomm
 
 Working directory is directory, where all the files will be searched when no path is specified, or where the relative path have its begin. For each disk drive there is working directory, which is independent of another drives. Every disk change, <RESET>, jump through DOSINI vector, or booting up will set the main diectory as working.
 
-The path is used to specify in which directory the wanted file (or directory) is. Path is simply a list of directories you need to go through from working directory to the target directory. Single names (including filename after the path) are separated by the ">" character. There are two kinds of path: Absolute and relative. Absolute path begins with a single ">" character, and it begins in main directory, while relative path have no ">" at its begin, and it begins in working directory. In addition, at the begin of relative path there can be any number of "<" characters - each one tell BW-DOS to go into parent directory.
+The path is used to specify in which directory the wanted file (or directory) is. Path is simply a list of directories you need to go through from working directory to the target directory. Single names (including filename after the path) are separated by the "\>" character. There are two kinds of path: Absolute and relative. Absolute path begins with a single "\>" character, and it begins in main directory, while relative path have no "\>" at its begin, and it begins in working directory. In addition, at the begin of relative path there can be any number of "\<" characters - each one tell BW-DOS to go into parent directory.
 
-For example ">DATA>TEXTS>filename" means that the file is in directory "TEXTS", which is in directory "DATA" in main directory. "MUSIC>filename" means that the file is in directory "MUSIC", which is in the working directory. "<BASIC>filename" means that the file is in directory "BASIC", which is in the same directory, where the working directory is.
+For example "\>DATA\>TEXTS\>filename" means that the file is in directory "TEXTS", which is in directory "DATA" in main directory. "MUSIC\>filename" means that the file is in directory "MUSIC", which is in the working directory. "<BASIC>filename" means that the file is in directory "BASIC", which is in the same directory, where the working directory is.
 
 Special directory is "DOS" in the main directory. Every files for reading (or programs for starting), which are not in working directory, are searched in the "DOS" directory too. This works only when no path is specified!
 
@@ -115,6 +111,7 @@ It is recommended to place external commands, the DOS itself, and other commonly
 Besides of this, it's a very good idea to create separate directories for different file types, such as Basic programs, texts etc. (When you'll save everything to the main directory, it'll become very long soon - the access will be slow, and the listing will be almost unreadable.)
 
 ### DIR (internal command)
+
 ```
 DIR [Dn:][path>][filename]
 ```
@@ -131,6 +128,7 @@ TEST1    BAS   1231 11-06-94 16:32
 ```
 
 ### DIRS (Internal command)
+
 ```
 DIRS [Dn:][path>][filename]
 ```
@@ -144,6 +142,7 @@ This command provides the same function as "DIR", but the listing is in Atari DO
 ```
 
 ### CWD (Internal command)
+
 ```
 CWD [Dn:]path
 ```
@@ -151,9 +150,11 @@ CWD [Dn:]path
 This command will set the directory specified by path as working directory.
 
 ### Dn: (Internal function)
+
 You can change current drive number by typing the new "Dn:" instead of command. This drive number will be used when no "Dn:" is specified. Note that this only works in the CP!
 
 ### CREDIR (Internal command)
+
 ```
 CREDIR [Dn:][path>]name
 ```
@@ -161,12 +162,15 @@ CREDIR [Dn:][path>]name
 This command will make a new directory specified by "name". Note that you can't make a directory with the same name as a file in the same directory.
 
 ### DELDIR (Internal command)
+
 ```
 DELDIR [Dn:][path>]name
 ```
+
 This is the command for deleting directories. You can only delete an empty directory - if there are any files or directories in it, you need to remove them first. Never try to delete the working directory!
 
 ### AUTOCWD (Resident command)
+
 ```
 AUTOCWD [Dn:]path
 ```
@@ -174,16 +178,21 @@ AUTOCWD [Dn:]path
 When you are working with a program, which is protected against the <RESET> key (for example ATMAS II), you can't load/save your files after <RESET> easily, because the working directory was changed by the <RESET> to main directory. To prevent this problem, install AUTOCWD before starting the program. This command will do the same job as the "CWD" command after every <RESET> (or jump through DOSINI vector).
 
 ### DOSDRIVE (Resident command)
+
 ```
 DOSDRIVE n
 ```
+
 This command provides easy access to external commands placed for example in a RamDisk. With "DOSDRIVE" installed, you can call the external commands without of typing "Dn:" before each one. Every files for reading (and programs for starting) with no path specified will be searched on the drive "n" first (working, and then "DOS" directory). When the file isn't on your DOS-drive, then it'll be searched on the originally specified drive.
 
 ### CHKDSK (External command)
+
 ```
 CHKDSK [Dn:]
 ```
+
 This command will display a little info about the disk. It contains volume name, two internal numbers (sequential and random - used for disk identification), size of sectors, and total/free disk capacity in bytes. The listing looks like this:
+
 ```
       Volume: TESTDISK  21 138
 Bytes/sector: 128
@@ -192,17 +201,19 @@ Bytes/sector: 128
 ```
 
 ### CHVOL (External command)
+
 ```
 CHVOL [Dn:]name
 ```
-This command will change the volume name of disk.
 
+This command will change the volume name of disk.
 
 ## PROTECTION, ERASING, AND RENAMING
 
-Every file or directory may be protected. (This state is indicated by the "*" character before filename in the listing from "DIRS" command.) Protected files may not be changed or erased (but they can be renamed!), protected directories only may not be erased.
+Every file or directory may be protected. (This state is indicated by the "\*" character before filename in the listing from "DIRS" command.) Protected files may not be changed or erased (but they can be renamed!), protected directories only may not be erased.
 
 ### RENAME (Internal command)
+
 ```
 RENAME file filename
 ```
@@ -214,57 +225,68 @@ Use wildcards only if you know exactly, what are you doing! When you'll change t
 You can't rename directories with this command.
 
 ### ERASE (Internal command)
+
 ```
 ERASE file
 ```
+
 This is the command for erasing files. When you'll use wildcards, you can erase several files with one command, but better don't do it... Protected files and directories are invisible for this command.
 
 ### PROTECT / UNPROTECT (Internal command)
+
 ```
 PROTECT file
 UNPROTECT file
 ```
+
 The "PROTECT" command is protecting files, "UNPROTECT" is unprotecting files - that's clear. With wildcards you can (un)protect set of files. Both the commands can (un)protect directories too.
 
 ### UNERASE (External command)
+
 ```
 UNERASE file
 ```
+
 This command will try to restore specified file(s) after erasing them. This may be possible, because the files are not really erased by the "ERASE" command - they are only marked as free disk space to be used for other files in future. The unerasing process may be impossible if you saved anything to the disk after erasing the file; in this case even contents of a sucessfully unerased file may be wrong.
 
 It's better to make a serious decision before erasing a file, because the unerasing process will never be 100% safe!
 
 Don't use the UNERASE version older than #2 (the one with no version number included) - it contained a bug.
 
-
 ## COPYING
 
 If you want to copy files to another disk with only one disk drive, you need to use the menu program.
 
 ### TYPE (Internal command)
+
 ```
 TYPE file
 ```
+
 This command shows contents of a textfile (for example batch files). Since BW-DOS version #30, there isn't any limit on line length.
 
 ### COPY (external command)
+
 ```
 COPY [Dn:][path>][filename] [Dn:][path>][filename[/A]]
 ```
+
 This is the main command for copying files; it'll copy file(s) specified by the first parameter to file(s) specified by the second one. You can use any I/O device instead of "Dn:" (for example "COPY K: P:"; most of these devices will ignore any filenames).
 
 When copying disk files, you can use wild cards in both the filenames to copy a set of files, and save them with another names (see "RENAME" command). When no filename is specified, every files in directory will be copied (first parameter), or the files will get their original names (second parameter). NEVER try to copy a file to itself - this is the easiest way how to destroy a file!
 
 On the other I/O devices you can use wild cards and filenames also (with "COPY" version #2), but only in the case that your device handler supports filenames and directory reading. When the directory-listing supplied by the handler contains only one file, and the file isn't longer than free memory, then "COPY" will never open more than one file at a time - this is prepared for a future "Turbo tape" system.
 
-Examples: "COPY >DOS> D8:" - Copy the whole directory DOS to drive 8 (RamDisk). "COPY E: file" - Create a new textfile. Press <CONTROL>+<3> when you've entered the whole contents for new file. "COPY file P:" - Send file(s) to the printer.
+Examples: "COPY \>DOS\> D8:" - Copy the whole directory DOS to drive 8 (RamDisk). "COPY E: file" - Create a new textfile. Press <CONTROL>+\<3\> when you've entered the whole contents for new file. "COPY file P:" - Send file(s) to the printer.
 
 ### BACKUP (external command)
+
 ```
 BACKUP Dn: file [/S[max.sector][/D(S\|M\|D\|X)]][/Lmax.len.]
 BACKUP file Dn: [/F[X]]
 BACKUP Dn: Dn: [/S[max.sector][/D(S\|M\|D\|X)]][/F[X]]
 ```
+
 This command is there for making backup copies of whole disks. The first syntax is for copying the whole disk into file(s), second syntax is for restoring the disk back from file(s), and the third syntax is for copying directly from one disk to another. Filenames may not contain any extensions; if there is any, it will be overwritten. BACKUP will add its own extensions (serial number of the file).
 
 While copying from a disk (that is: not from file), it'll copy the whole contents of a BW-DOS compatible disk (only sectors marked as "in use" in the bitmap) unless you'll use the "/S" parameter.
@@ -280,22 +302,26 @@ Every unfinished copy is marked in a special way, so when you try to boot such a
 The current version #2 is improved a little, so it should recognize density in the "/S" mode also on other drives than XF 55#
 
 ### MOVE (external command)
+
 ```
 MOVE file [Dn:][path]
 ```
+
 This command allows you to move a file or subdirectory into another directory on the same disk quickly. The greatest difference between "COPY" and "MOVE" is that MOVE removes the file from source directory, and is much faster. It also doesn't need any free sectors on the disk, because it only moves the filename into an other directory - without of copying the file itself.
 
 ## FORMATTING AND RAMDISKS
 
 ### FORMAT (external command)
+
 ```
 FORMAT [Dn:]
 ```
+
 This is the main command for formatting disks, and installing BW-DOS. (Formatting must be the first thing done on a new disk.) The drive number specified as a parameter is used for searching DOS files, NOT for formatting! The program will ask you for necessary things, and then format the disk. This program may not be controlled from a batch file. RamDisks may not be formatted in this way.
 
 *!!!WARNING!!!* Formatting will erase every data on the disk - never mind if they are protected or not - and it may not be unerased anymore. The only protection against this is to place the write protect tab on your disk.
 
-The first question is which DOS version you wish to install on the formatted disk. You'll get a little menu with every DOS files found on the disk (files "X*.DOS" in directory "DOS", and in the main directory) - select the correct one, or press <N> for none. It is possible to install any version of BW-DOS, or any disk based version of SpartaDOS 2.x and later.
+The first question is which DOS version you wish to install on the formatted disk. You'll get a little menu with every DOS files found on the disk (files "X\*.DOS" in directory "DOS", and in the main directory) - select the correct one, or press <N> for none. It is possible to install any version of BW-DOS, or any disk based version of SpartaDOS 2.x and later.
 
 Next questions are for drive number, density, volume name, and if use the XF 551 high speed format or not. Note that you can only select a density, which is supported by your drive. (That is: Atari 810 - Single; Atari 1050 - Single or Medium; expanded Atari 1050 - Single, Medium, or Double; XF 551 - Single, Medium, Double, or Double sided Double density; other drive - see manual for the drive.)
 
@@ -308,6 +334,7 @@ After formatting it'll create BW-DOS disk structures, and if you've selected a D
 The last question is if you want to format another disk.
 
 ### RAMDISK (resident command)
+
 ```
 RAMDISK n[E][F] [file]
 ```
@@ -325,6 +352,7 @@ To re-format an existing RamDisk, change its configuration, or change the drive 
 Note that the resident part of RamDisk driver uses a part of extra RAM for itself, so any collision in the extra RAM may cause a lock up of SIO operations.
 
 ### XLRDISK (resident command)
+
 ```
 XLRDISK n[N]
 ```
@@ -336,21 +364,25 @@ Note that you can use this RamDisk only when you know that it'll not cause a col
 A little problem with the screen may be caused by this driver. It results in a little horizontal lines flasing on the screen during SIO operations, but it may not cause any damage.
 
 ### RAMBOX (resident command)
+
 ```
 RAMBOX n[F]
 ```
-This command provides the same function as "RAMDISK", but it uses the memory contained in the "RAMBOX" cartridge (by JRC, Czech republic). The parameter "E" and the configuration file isn't supported. Possible sizes of the RAMBOX memory are 32-4096kB.
 
+This command provides the same function as "RAMDISK", but it uses the memory contained in the "RAMBOX" cartridge (by JRC, Czech republic). The parameter "E" and the configuration file isn't supported. Possible sizes of the RAMBOX memory are 32-4096kB.
 
 ## SPECIAL COMMANDS
 
 ### CAR (internal command)
+
 ```
 CAR
 ```
+
 This command will jump to a program in cartridge, or to internal Basic (if enabled - only XL/XE). If you've not used an external command since you leaved the cartridge, your data (Basic program) will not be lost.
 
 ### BASIC (internal command)
+
 ```
 BASIC (ON\|OFF)
 ```
@@ -358,9 +390,11 @@ BASIC (ON\|OFF)
 This command can turn the internal Basic (XL/XE) on or off. With Basic off you have more free memory, and several programs works in this mode only. This command works only with no cartridge installed, and it'll allways erase data from user memory (Basic program).
 
 ### RUN (internal command)
+
 ```
 RUN [address]
 ```
+
 This command will start a program at given adress. With no parameter it'll restart the last loaded program, or the last program started with this command.
 
 This command is there for advanced users and programmers; a "RUN" with a wrong adress results in a system lock up, and it may even cause a data loss.
@@ -368,28 +402,31 @@ This command is there for advanced users and programmers; a "RUN" with a wrong a
 The "RUN" command may be used by everyone for a few purposes: "RUN" - Restart the last loaded program (but first look into the manual for your program to know if is it possible, or not); "RUN E477" - The same as turning the computer off and on, but this is much better for the hardware, and it will not erase data in RamDisk; "RUN E471" - This will jump to the Self test program, or to the menu of Q-MEG operating system (if installed).
 
 ### VERIFY (external command)
+
 ```
 VERIFY (ON\|OFF)
 ```
+
 With this command you can swith the "Write with verify" function on or off. The common state is "OFF" - this means that the sectors written to a disk are not verified. It allows the drive to write quickly. If you turn this function "ON", it'll read every sector after writing it, and compare the data. This results in a very slow writing; it may only be useful while using bad quality disks. (Better buy good disks!)
 
 ### BOOT (external command)
+
 ```
 BOOT file
 ```
 
 With this command you can specify a file to be loaded, while the system is booted up (when you turn the computer "on" with the disk in drive 1). Commonly it is a DOS file, but other files may be booted too - see the conditions below.
 
-The common use of this command is installing the DOS on a disk that was previously formatted with no DOS, or with an older version. To install a DOS on a disk, you should copy the "X*.DOS" file (the "DOS" directory is recommended), and then use the "BOOT" command to install it.
+The common use of this command is installing the DOS on a disk that was previously formatted with no DOS, or with an older version. To install a DOS on a disk, you should copy the "X\*.DOS" file (the "DOS" directory is recommended), and then use the "BOOT" command to install it.
 
-The booting process is done by a little loader, which is in sectors 1-3 on every BW-DOS (or SpartaDOS 2.x and later) disks. The file which is booted must be in the "DOS loadable" format, and it must contain a RUN adress. If there are not at least two bytes between end of file, and end of physical data sector (that is in Basic: "IF 128*INT((LNGTH+127)/128)-LNGTH<2"), then two zero bytes must be added as an EOF mark. The booted file may not be loaded into the area of $2E00-$317F, where is the loader itself. Note that the loader is different from the one found on SpartaDOS disks a little bit: If you are booting from a SpartaDOS disk, then no segments in the file - excepting the first one - may begin with the $FFFF header. Besides of this, the SpartaDOS loader is not fully compatible with the XF 551 disk drive.
+The booting process is done by a little loader, which is in sectors 1-3 on every BW-DOS (or SpartaDOS 2.x and later) disks. The file which is booted must be in the "DOS loadable" format, and it must contain a RUN adress. If there are not at least two bytes between end of file, and end of physical data sector (that is in Basic: "IF 128\*INT((LNGTH+127)/128)-LNGTH\<2"), then two zero bytes must be added as an EOF mark. The booted file may not be loaded into the area of $2E00-$317F, where is the loader itself. Note that the loader is different from the one found on SpartaDOS disks a little bit: If you are booting from a SpartaDOS disk, then no segments in the file - excepting the first one - may begin with the $FFFF header. Besides of this, the SpartaDOS loader is not fully compatible with the XF 551 disk drive.
 
 When you'll erase the file specified to be booted, an attempt to boot such a disk may give almost any result.
-
 
 ## BATCH FILES AND HARDCOPY
 
 ### -file (internal function)
+
 ```
 -file
 ```
@@ -397,6 +434,7 @@ When you'll erase the file specified to be booted, an attempt to boot such a dis
 This syntax will start a batch file. Batch file is in fact a text file, which contains a list of commands to be executed. Standard extension for a batch file is "BAT". When you start a batch file, the computer will read commands not from the keyboard, but from the batch file! This works not only in the CP, it works in most of other programs too (for example Atari Basic). There are of course exceptions - for example the menu program, several text editors etc.
 
 You can use batch files in two ways:
+
 * When you need to execute several "time eating" programs, put their list into a batch file, start it, and then you can for example go to the lunch - the computer will work on its own.
 * You can use batch files to write a simple "programs" for some tasks, for example to install RamDisk and copy selected external commands there etc.
 
@@ -415,6 +453,7 @@ For example, I need to do following things after booting the system: Install Ram
 Every error message in the CP will stop any batch file to prevent problems. The batch file will be also aborted by starting another one.
 
 ### PRINT (internal command)
+
 ```
 PRINT device:
 PRINT file
@@ -428,6 +467,7 @@ HardCopy function allows you to copy all the screen output from almost every pro
 This function is there especially for printing output from programs on a printer, but you can copy the output to any file/device.
 
 ### PAUSE
+
 ```
 PAUSE
 ```
@@ -436,8 +476,8 @@ This command may be used in a batch file only. It will wait for the <RETURN> key
 
 Don't forget, that you may not change a disk, on which is the working batch file.
 
-
 ### IF/ELSE/ENDIF (external commands)
+
 ```
 IF
 ELSE
@@ -462,6 +502,7 @@ It will display the line with question, and wait for an answer <Y> or <N>. If th
 It is possible to make much more complicated structures by starting another batch files inside an "IF", "ELSE", "ENDIF" block - but there isn't any way to return back into the first batch file, you can only start it from begin again.
 
 ### XBAT (external command)
+
 ```
 XBAT file [parameters]
 ```
@@ -469,6 +510,7 @@ XBAT file [parameters]
 This command will start a program (like the CP), but stop a batch file first. This may be necessary for starting some programs from a batch file - There are few programs which may not run with a batch file at the same time, because of collision in IOCB 5. (See technical notes for more info.)
 
 ### NEWED
+
 ```
 NEWED file [parameters]
 ```
@@ -476,17 +518,16 @@ NEWED file [parameters]
 This command starts the specified program, with the I/O redirection routines of BW-DOS temporary disabled. (The batch file and HardCopy will be "paused" when the specified program works.) This should be used while installing a new "E:" handler, such as the XEP 80, or different screen-output speeders.
 
 ### Comments (internal function)
+
 ```
 ;any comments
 ```
 
 You can add lines with comments into a batch file; such a line must begin with a ";" character.
 
-
 If you are a SpartaDOS user, you probably noticed that there is no "XDIV" command. That's because the HATABS table is in its original state while no batch file or HardCopy function is active.
 
 This means that you can start programs - which needs the "XDIV" in SpartaDOS - directly, and with the "XBAT" command you even can start such a program from a batch file. (In a limited fashion, you can also use "NEWED" to start some programs with a batch file "paused" only.)
-
 
 ## DATE AND TIME
 
@@ -496,8 +537,8 @@ Because of little memory available for the DOS, the BW-DOS's clock is not a real
 
 If you want to have a real clock in BW-DOS, you need to use some of the resident commands that are designed for this purpose.
 
-
 ### DATE/TIME (external command)
+
 ```
 DATE
 TIME
@@ -506,6 +547,7 @@ TIME
 These commands will display the current date/time from BW-DOS's clock, and allows you to enter a new value. Press <RETURN> to leave it unchanged.
 
 ### CLOCK (resident command)
+
 ```
 CLOCK ON
 ```
@@ -515,6 +557,7 @@ This is a software clock for BW-DOS. If you've entered the correct date/time (wi
 While installed, this clock will get the date/time from old clock; while removed (or a re-boot), the new date/time will be lost. This clock is based on the VBI interrupt, so it is possible that a few programs will stop it. It works on both PAL and NTSC machines.
 
 ### RTIME8 / ARGSRTC (Resident commands)
+
 ```
 RTIME8 [/R]
 ARGSRTC [/R]
@@ -526,17 +569,17 @@ Both the commands are drivers for a hardware real-time-clock. Such a device (mos
 
 With the "/R" parameter a reduced version will be installed. It allows only reading from the clock, setting a new date/time isn't possible in this mode. This option saves your memory-space.
 
-
 ## THE MENU
 
 ### MENU (external command)
+
 ```
 MENU [Dn:][/S(E\|N\|S\|D\|0)][/B(Y\|N)][/Q(Y\|N)]
 ```
 
 The menu program is a comfortable tool for operations with many selected files, for copying between two disks with only one disk drive, and for converting files from Atari DOS 2 format to BW-DOS and back.
 
-Every commands in the menu - excepting these ones for subdirectories - works on Atari DOS 2 compatible disks too. This function is only supported by the menu program, so it is NOT available in any other part of BW-DOS. Following Atari DOS 2 compatible formats are supported: Single density (DOS 2.0, DOS 2.5, BiboDOS, and others), Enhanced (Medium) density (DOS 2.5), and Double density (BiboDOS, and others). Note that in Atari DOS 2 alike systems there are different conditions for filenames, so when you are converting files to Atari DOS 2, make sure that there is no "_" character, and that the first character of the name is not a number.
+Every commands in the menu - excepting these ones for subdirectories - works on Atari DOS 2 compatible disks too. This function is only supported by the menu program, so it is NOT available in any other part of BW-DOS. Following Atari DOS 2 compatible formats are supported: Single density (DOS 2.0, DOS 2.5, BiboDOS, and others), Enhanced (Medium) density (DOS 2.5), and Double density (BiboDOS, and others). Note that in Atari DOS 2 alike systems there are different conditions for filenames, so when you are converting files to Atari DOS 2, make sure that there is no "\_" character, and that the first character of the name is not a number.
 
 While working with the menu, you'll see disk directory on your screen. It shows the same information as the listing provided by "DIR" command in the CP. If you are working with an Atari DOS 2 disk, there is no date/time information, and the length of files is not exact. Above the directory there is the current drive number and path. A little arrows on the top and bottom edge of the directory shows that the directory continues outside your screen. The menu program can work with max. 255 files in a directory.
 
@@ -604,7 +647,6 @@ This is the function for erasing files. Protected files may not be erased.
       Rename <R>
 ```
 
-
 This function gives new names to files. You can select more files, and then enter a filter as a new name to rename more files by single command (see description of "RENAME" command).
 
 ```
@@ -624,7 +666,7 @@ This function will copy the file pointed by cursor to the screen. It is the best
       Make text <I>
 ```
 
-With this function you can make small documentation files. Press <CONTROL>+<3> when you've finished the whole text. (This command will provide the same function as "COPY E: file" in the CP.)
+With this function you can make small documentation files. Press <CONTROL>+\<3\> when you've finished the whole text. (This command will provide the same function as "COPY E: file" in the CP.)
 
 ```
       Ainit <A>
@@ -657,11 +699,10 @@ All the selections may be also done from the CP, using parameters while starting
 
 These functions will select or deselect every files specified by entered filter.
 
-
-
 ## OTHER COMMANDS
 
 ### XFSIO (external command)
+
 ```
 XFSIO n[n][n][n]
 ```
@@ -673,6 +714,7 @@ The fast communication is 2.5 times faster than the standard, but it may only sa
 The keyboard is disabled during fast SIO operations to prevent problems.
 
 ### KEYBUFF (resident command)
+
 ```
 KEYBUFF ON
 ```
@@ -682,13 +724,12 @@ This resident command is a buffer for 32 keystrokes. This means that you can typ
 When the buffer is full, and you try to type the 33rd character, you'll hear a noise sound, and the last character will be ignored. You can clear the buffer any time by pressing <SHIFT>+<CONTROL>+<SPACE> (This may be useful for example when you just typed a command, but then an error message appear on the screen).
 
 ### ARGSPRN (resident command)
+
 ```
 ARGSPRN [/(N\|C\|L\|CL)]
 ```
 
 This is a driver for the printer port of the ARGS RTC/P V2 cartridge (by ARGS). The parameter changes the conversion of the ATASCII EOL character: "/N" is no conversion (for graphics print, or when your software already contains a conversion), "/C" sends the CR character (like other printer-interfaces do; you must set the "Auto-feed" feature to "on" on your printer), "/L" sends the LF character (the default; hopefully it will work with most of printers), and "/CL" sends both CR and LF (this is the correct PC-compatible mode, but it needs a few bytes more in memory, and it may also cause problems with graphics print).
-
-
 
 ## FOR PROGRAMMERS
 
@@ -697,29 +738,37 @@ Commands described in this chapter are there for advanced users and programmers,
 Some of external commands described in this chapter are marked as "low memory". This means that the commands are loading into the area of $480-$6FF, and they are not using the memory areas of $80-$FF, and MEMLO-MEMHI. Such a commands allows you to work with data or machine code programs in the main memory without of problems.
 
 ### LOAD (internal command)
+
 ```
 LOAD file
 ```
+
 This command will simply load a DOS loadable file (program), but don't start it. Any INIT or RUN adress will be ignored.
 
 ### SAVE  (External command, low memory)
+
 ```
 SAVE file start end [/A]
 ```
+
 This will save the memory area specified by "start" and "end" adresses as a DOS loadable file. With the "/A" parameter it will add another segment to an existing file.
 
 The difference between "/A" as a part of filename or as a separate parameter is that the separate "/A" will not place another $FFFF header into the file.
 
 ### BLOAD
+
 ```
 BLOAD file adress  [length]
 ```
+
 This is the command for loading data files (non DOS loadable) into memory. When no length is specified, the whole file will be loaded.
 
 ### OFFLOAD (External command, see description)
+
 ```
 OFFLOAD file [offset] [/(Q\|L)]
 ```
+
 This command is displaying structure of a DOS loadable file. The starting and ending adress, and the file position of the data block (after the header) will be displayed for each segment.
 
 With the "/L" parameter it'll really load the file into memory, and with "/Q" it'll ask you for each segment if load it or not. When an offset is specified, it will be added to loading adress of each segment.
@@ -727,43 +776,54 @@ With the "/L" parameter it'll really load the file into memory, and with "/Q" it
 This command works like the commands marked as "low memory" only while loading a file; while starting its work, this command uses a memory area starting at $6000.
 
 ### MEM (external command)
+
 ```
 MEM [/M]
 ```
+
 This command shows current MEMLO and MEMHI values. With the "/M" parameter it'll show the whole memory map (it'll only read SMEMLO (see COMTAB), MEMLO ($2E7), MEMHI ($2E5), and MEMTOP ($6A), other adresses are allways the same).
 
 ### DUMP (external command)
+
 ```
 DUMP file [position[ length]] [/A]
 ```
+
 This command will display contents of specified file as hexadecimal and ATASCII listing. With the "/A" parameter it'll change non printable characters (0-$1F and above $80) to printable ones - use this while printing the listing (see the "PRINT" command).
 
 When a position is specified, the listing will start from this position; with the length parameter it'll only display specified number of bytes.
 
-Press <CONTROL>+<1> to stop the listing for a while, or <ESC> to abort this command.
+Press <CONTROL>+\<1\> to stop the listing for a while, or <ESC> to abort this command.
 
 ### MDUMP  (External command, low memory)
+
 ```
 MDUMP adress [length] [/A]
 ```
+
 This command works in the same way as "DUMP"; it displays contents of memory.
 
 ### DISASS (external command)
+
 ```
 DISASS file [position]
 ```
-This command will list contents of specified file as an assembler listing. With a position specified, it'll start from this position. Press <CONTROL>+<1> to stop the listing for a while, or <ESC> to abort this command.
+
+This command will list contents of specified file as an assembler listing. With a position specified, it'll start from this position. Press <CONTROL>+\<1\> to stop the listing for a while, or <ESC> to abort this command.
 
 If you want to display a program code from memory, you need to save it to a disk file first. A RamDisk is very good for this purpose. For example to display a program code from memory area $8000-$9000 using a RamDisk installed as drive 8, you need to type:
+
 ```
 SAVE D8:TEMP.DAT 8000 9000
 DISASS D8:TEMP.DAT 6
 ```
 
 ### HEXEDIT (external command)
+
 ```
 HEXEDIT file [position]
 ```
+
 This command allows you to edit contents of a file. With a position specified, the editing will start from this position.
 
 It'll display position in the file and the old value, and you can enter new value (hexadecimal of course), or just press <RETURN> to leave it unchanged. Press <ESC> to quit this command.
@@ -773,6 +833,7 @@ Note that the only legal way to quit "HEXEDIT" is the <ESC> key! Because the edi
 It is possible to set the position greater than the length of file - in this case no old value will be displayed; once you'll enter any value, the file will get a new length. When you set the position far after the end of file, the part of file between old and new data will not be physically stored (non-allocated sectors) - it'll get a physical sector at the time of first access to such a place. Files with non-allocated sectors may not be read or copied in a normal way, because allocating a sector in a read-only mode isn't allowed.
 
 ### MEMEDIT (external command, low memory)
+
 ```
 MEMEDIT adress
 ```
@@ -780,13 +841,12 @@ MEMEDIT adress
 This command works in the same way as "HEXEDIT"; it allows you to edit contents of memory. Use this only if you know exactly, what are you doing - it is possible to cause the system to be corrupt, or even to lock up with this command.
 
 ### CUT (external command)
+
 ```
 CUT file1 file2 position [length]
 ```
+
 This command will save specified part of "file1" as "file2". When no length is specified, it'll save the maximum length - that is between "position" and the end of file.
-
-
-
 
 It is possible - for example - to divide DOS loadable files into single segments using "OFFLOAD" and "CUT", to cut off binary file headers from data files ("CUT file1 file2 6") etc.
 
@@ -795,14 +855,17 @@ It is possible - for example - to divide DOS loadable files into single segments
 There are two utility programs on the BW-DOS master disk: "Directory master", and "Micro SpartaDOS". They may be distributed separately, but this chapter from the manual must be included.
 
 ### DIRMAST (external programm)
+
 ```
 DIRMAST [Dn:][path] [/Q]
 ```
+
 This program allows you to change order of files in directory, and to add comments. It'll work with the directory specified as a parameter; with the "/Q" parameter it'll wait for changing the disk before starting its work.
 
 It'll display the whole directory (including erased files). You can move the cursor over the directory; to change order of files, simply pull a file out from the directory to left side of the screen, move it where you want, and insert it back into directory.
 
 Special commands may be executed by pressing letter keys:
+
 - <T> - change time for a single file;
 - <D> - change date;
 - <C> - create a line with comment;
@@ -811,9 +874,10 @@ Special commands may be executed by pressing letter keys:
 - <Q> - save the new directory.
 
 Characters displayed before the filename are following:
+
 - " " - a normal file;
-- "*" - a protected file;
-- ">" - a subdirectory;
+- "\*" - a protected file;
+- "\>" - a subdirectory;
 - """ - comment line,
 - "=" - erased file,
 - "?" - other (unknown) file status.
@@ -821,18 +885,21 @@ Characters displayed before the filename are following:
 Note: Don't use the comment lines too much, because such a lines may cause troubles with programs like "COPY", "MENU" etc. Never use control codes (for example <CONTROL>+<right>, <CONTROL>+<DELETE>, <TAB> etc.) in a comment line, because it'll cause terrible effects while listing such a directory. In addition, better don't use inverse video and graphics characters, because they may not be printed on a printer.
 
 ### MSDOS (External program, bootable)
+
 ```
 MSDOS
 ```
+
 The file "MSDOS.COM" contains the program called "Micro SpartaDOS version 2.3". This program is there for loading games and other programs, which needs a very low MEMLO value. It can only run a DOS loadable file; no other support for the loaded program will be provided.
 
 Micro SpartaDOS may be used in two ways:
+
 * As an utility program. Simply start it by typing "MSDOS" in the CP, when you need to start - for example - a game. To get back into BW-DOS, you need to boot it again.
 * As a separate DOS. Copy the file "MSDOS.COM" to the disk with games, and install it with the "BOOT" command. Then you can simply boot the disk.
 
 When you've started Micro-SpartaDOS, you'll see the main directory of disk in drive # If you've not used the "MSINI" program, you'll see only protected files. To see every files, press <ESC>. If there is a file "MSDOS.DAT" in the directory (see "MSINI"), then you'll see user defined names instead of the disk directory.
 
-You need to select the program to be started now - by pressing a letter key. When you select a subdirectory, a new menu will appear. Press "<" key to go into the parent directory, or ">" to go into the main directory. Use the ">" key when you've changed the disk.
+You need to select the program to be started now - by pressing a letter key. When you select a subdirectory, a new menu will appear. Press "\<" key to go into the parent directory, or "\>" to go into the main directory. Use the "\>" key when you've changed the disk.
 
 When the file is selected, it'll turn the internal Basic off (you needn't to hold the <OPTION> key down while booting), clear the memory, and the selected program will be started.
 
@@ -841,20 +908,20 @@ It'll try to use a high speed communication with the XF 551 or Speedy 1050 drive
 If you press the <RESET> key while a program started by Micro-SpartaDOS is working, it'll boot again - never mind if the program was protected against <RESET>, or not. It's clear, that this function can not work with really every programs!
 
 ### MSINI   (External program)
+
 ```
 MSINI
 ```
+
 This program provides the file "MSDOS.DAT" for the Micro-SpartaDOS. It'll ask you for the path, and then you can enter any names for every files in the directory. You can skip files - which you want not to be displayed - with the <ESC> key. At the end a new file "MSDOS.DAT" will be stored in the directory.
 
 Names in the "MSDOS.DAT" file may be up to 35 characters long, and may contain almost every ATASCII characters.
 
 Note that this program works only with drive number 1 - because the Micro-SpartaDOS itself works with drive 1 too.
 
-
 ### RECOMMENDED UTILITY
 
 There are lots of useful utility programs available from different sources; most of them works fine under BW-DOS. I want to mention a few programs, which are really useful in my opinion, and which I tested with BW-DOS.
-
 
 ### SuperArc / SuperUnArc (version 2.4) by Robert Puff
 
@@ -864,22 +931,19 @@ When you need any of such a files later, you can depack it to its original form 
 
 Both the programs are available for example on Mega Magazine number 7.
 
-
-### Super Packer (version #0) by Jiri Bernasek (BEWESOFT)
+### Super Packer (version \#0) by Jiri Bernasek (BEWESOFT)
 
 This program allows you to pack DOS loadable files (especially games). You'll get a file much shorter than the original, with exactly the same program in it!
 
 This program is available for example on Mega Magazine 7.
 
-### CleanUp (version #4) - this one is (C) 1994 FTe
+### CleanUp (version \#4) - this one is (C) 1994 FTe
 
 This program is a part of SpartaDOS toolkit, which was released as ShareWare. With this program you can fix several problems which may cause on BW-DOS disks.
 
 Note that the "Directory master" program may cause invalid filenames (comment lines), or (when used under SpartaDOS) the bad directory length; both the errors are not fatal. The format of BW-DOS RamDisks may be reported as bad by the "CleanUp" program.
 
 Unfortunately, this program contains a bug. To prevent problems, you should press <RESET> immediatelly after leaving "CLEANUP" (under both BW-DOS and SpartaDOS).
-
-
 
 ## BW-DOS FUNCTIONS IN BASIC
 
@@ -890,8 +954,8 @@ This chapter is there for programmers, so don't worry, when you don't understand
 ```
 OPEN #iocb,aux1,aux2,"Dn:[path>]filename"
 ```
-This command will open specified IOCB for access to the specified file on disk. The value of "aux1" may be:
 
+This command will open specified IOCB for access to the specified file on disk. The value of "aux1" may be:
 
 | Mode | Function |
 |    4 | Reading from the file. |
@@ -899,7 +963,6 @@ This command will open specified IOCB for access to the specified file on disk. 
 |    8 | Writing to the file. If the file exists already, it'll be replaced by the new file. When "/A" is added to the filename, it'll work in the same way as the mode 9. |
 |    9 | Append. The new data written to the file will be added at the end of an existing file. When the file doesn't exist, it'll be created first. |
 |   12 | Update. Data may be readed from and written to the file as necessary. |
-
 
 When you'll add 16 to the "aux1" value, you'll get direct access to the directory specified by "path"; the filename will be ignored. With 32 added to "aux1", you'll get the direct access to the subdirectory specified by "filename". (See the next chapter for information on the internal directory format.) This doesn't work with the mode 6.
 
@@ -918,16 +981,18 @@ These commands are sending data to the specified IOCB, or receiving data from th
 
 Note: It is much faster to send data as one large block. This may be done by CIO commands 7 and 11 in the assembler, or by commands "BGET" and "BPUT" in Turbo Basic.
 
-
 ```
 CLOSE #iocb
 ```
+
 This is the command for closing files. Every file must be closed after use.
 
 ```
 X=POS:Y=0:POINT #iocb,X,Y
 ```
+
 or
+
 ```
 Y=16*iocb:X=INT(POS/65536):POKE 846+Y,X:POS=POS-65536*X
 X=INT(POS/256):POKE 845+Y,X
@@ -955,6 +1020,7 @@ With this command you'll get the current position in a file, for which the IOCB 
 ```
 XIO 32,#iocb,0,0,"Dn:[path>]filename filename"
 ```
+
 This command will provide the same function as the "RENAME" command in the CP. The space character between old and new filename may be replaced by any character, which is not allowed in the filename - for example ","
 
 The IOCB must be closed before this operation.
@@ -1007,7 +1073,6 @@ Each segment contains header, and data block. The header provides the informatio
 
 When the file contains an executable program in machine code, INIT and RUN adresses may be defined. An INIT adress is defined by a segment, which is loading at the adress $2E2; adress for the RUN definition is $2E0. A subroutine at the defined adress will be executed immediatelly after loading the segment with INIT; the whole program will be started at the RUN adress while an EOF mark is found. When no RUN adress is defined, BW-DOS will use starting adress of the first segment as a RUN adress.
 
-
 ### TABLE IN PAGE 7
 
 In the (memory-) page 7 there is a little table, that shows version of the DOS, and allows machine code programs to use a few special functions:
@@ -1025,19 +1090,21 @@ In the (memory-) page 7 there is a little table, that shows version of the DOS, 
 
 This table allows machine code programs to get parameters from the CP, and to use many other features of BW-DOS. Adress of this table is stored in the "DOSVEC" vector (at $0A); numbers in the following description are relative positions in the table. Bytes, which are not mentioned in the description, are reserved for compatibility with several SpartaDOS versions; such a bytes may not be changed by any program!
 
-- -21: DWARM - This value will be stored to the adress 8 before starting a cartridge. It provides the information if the memory was changed by an external command (zero), or not ($FF).
-- -19: DECOUT - This is an output buffer for the "CONVDC" routine. It contains up to 8 characters long decimal representation of the number from "DECIN"; spaces may be added at the begin.  (This adress is compatible with SpartaDOS X only.)
-- -10: LSIO - There is the adress of main BW-DOS's SIO routine. This routine is used by BW-DOS for every disk operations; it have the same inputs and outputs as the standard SIO in ROM ($E459). After booting, this adress points to $E459; it may be changed by commands like RAMDISK, XLRDISK, RAMBOX, XFSIO etc.
-* -8: ECHOFLG - This is the index into "HATABS" for the HardCopy function; there is the value $FF, when the HardCopy function is not active. It is possible to get information, if the HardCopy function is active, by reading this byte.
-* -7: BATFLG - It is the same as "ECHOFLG"; this flag is used for batch files.
-*  -6: DECIN - Input for the "CONVDC" routine (3 bytes). (This adress is compatible with SpartaDOS X only.)
-* -2: WRTCMD - There is the SIO command used for every write operations. It is "P" for writting without of verify, or "W" for writting with verify. (Any other value may cause big troubles.) This byte is changed by the "VERIFY" command. It is recommended to use the SIO command from this byte for all write operations in every programs.
+- \-21: DWARM - This value will be stored to the adress 8 before starting a cartridge. It provides the information if the memory was changed by an external command (zero), or not ($FF).
+- \-19: DECOUT - This is an output buffer for the "CONVDC" routine. It contains up to 8 characters long decimal representation of the number from "DECIN"; spaces may be added at the begin.  (This adress is compatible with SpartaDOS X only.)
+- \-10: LSIO - There is the adress of main BW-DOS's SIO routine. This routine is used by BW-DOS for every disk operations; it have the same inputs and outputs as the standard SIO in ROM ($E459). After booting, this adress points to $E459; it may be changed by commands like RAMDISK, XLRDISK, RAMBOX, XFSIO etc.
+
+* \-8: ECHOFLG - This is the index into "HATABS" for the HardCopy function; there is the value $FF, when the HardCopy function is not active. It is possible to get information, if the HardCopy function is active, by reading this byte.
+* \-7: BATFLG - It is the same as "ECHOFLG"; this flag is used for batch files.
+*  \-6: DECIN - Input for the "CONVDC" routine (3 bytes). (This adress is compatible with SpartaDOS X only.)
+* \-2: WRTCMD - There is the SIO command used for every write operations. It is "P" for writting without of verify, or "W" for writting with verify. (Any other value may cause big troubles.) This byte is changed by the "VERIFY" command. It is recommended to use the SIO command from this byte for all write operations in every programs.
 *  +0: COMTAB - At this point, there is an instruction for starting the CP. You can use the instruction "JMP ($0A)" under any DOS; it will allways start a CP, DUP menu, or something like that.
 * +3: CRNAME - Here is an instruction, which jumps to the "CRNAME" routine. This routine will get the next parameter from command line in "LBUF", add a "Dn:" if none was specified, and place the result in "COMFNAM"
-* +6: DIVIO - here is the adress of "DIVIO" routine. This routine may be used to start a batch file or the HardCopy function. Before starting this routine, the complete filename ("device:" or "Dn:\[path>\]filename") must be placed in "COMFNAM", and the "Y" register must be set to 0 for the HardCopy function, or 1 for a batch file. This routine will return any errors in the "Y" register and "N" flag in the same way as CIO or SIO. (That's different from SpartaDOS 3.x)
+* +6: DIVIO - here is the adress of "DIVIO" routine. This routine may be used to start a batch file or the HardCopy function. Before starting this routine, the complete filename ("device:" or "Dn:\[path\>\]filename") must be placed in "COMFNAM", and the "Y" register must be set to 0 for the HardCopy function, or 1 for a batch file. This routine will return any errors in the "Y" register and "N" flag in the same way as CIO or SIO. (That's different from SpartaDOS 3.x)
 * +8: XDIVIO - There is the adress of "XDIVIO" routine. This routine may be used to stop a batch file or the HardCopy function. Before starting this routine, the "Y" register must be 0 for the HardCopy function, or 1 for a batch file.
 * +10: BUFOFF -  This is the position of next character in "LBUF" for the "CRNAME" routine.
 * +13: DATER /  +16: TIMER - This is the main variable for date and time (3+3 bytes). It is in the format "day, month, year; hour, min., sec." This variable is used by "GETTD" and "SETTD" routines, and while creating a file.
+
 - +19: ODATER / +22: OTIMER - This variable is in the same format as "DATER" and "TIMER"; it is used while copying files (see "TDOVER").
 - +25: TDOVER - This flag determines if the new created file will get the current date/time from BW-DOS's clock (0), or the date/time from "ODATER" and "OTIMER" ($FF). It is used especially while copying files to carry the date/time information. (Don't forget to clear this flag after use.)
 - +26: TRUN - Here is the RUN adress from the last file loaded by the CP (or with the XIO 40 command).
@@ -1089,7 +1156,6 @@ The rest of the map contains numbers of data sectors used for the file. There ar
 
 Data sectors are simply full of data.
 
-
 ### FORMAT OF DIRECTORIES
 
 Directories are in fact special files; they may be directly accessed by adding 16 or 32 to the "aux1" value while opening the file. The directories contains information about every files and subdirectories, 23 bytes each. (The numbers are positions in this - 23 bytes long - block.)
@@ -1131,11 +1197,9 @@ If a new "E:" handler is installed (the address in "HATABS" is changed by a prog
 
 Installation of new "E:" handlers should be done with the "NEWED" command to prevent the new handler from storing the address of BW-DOS's I/O redirection routines into its code instead of the original "E:" handler.
 
-
 ## COMPATIBILITY
 
 This chapter contains the information about compatibility between BW-DOS and other programs, and between BW-DOS and SpartaDOS. A few lines are also written about older BW-DOS versions. It may be useful, when there are troubles with function of the system.
-
 
 ### MEMORY
 
@@ -1145,7 +1209,6 @@ To look at the "MEMLO" value, use the "MEM" command. The MEMLO value provided by
 
 The maximum value of "MEMLO" is different for single programs. External commands of BW-DOS needs the MEMLO less than $3000, excepting MSDOS.COM, which needs MEMLO less than $2500. Most of other programs will work without of problems with the MEMLO less than $2000; see the manuals for single programs for the correct value.
 
-
 ### BATCH FILES AND HARDCOPY
 
 Any program, which uses the IOCB 5 for any other purpose than the CLOSE command, may not be started from a batch file without of the "XBAT" command. In addition, while running a program, which uses IOCB 4, the HardCopy function may not be used.
@@ -1154,13 +1217,11 @@ Both batch files and HardCopy functions must be disabled while starting a progra
 
 Any program that installs a new "E:" handler should be started with the "NEWED" command.
 
-
 ### INTERRUPTS
 
 BW-DOS itself uses no interrupts. Problems may be caused especially by the "KEYBUFF" command, which changes the vectors "VVBLKI" at $222 and "VKEYBD" at $208. In addition, "RAMDISK" and "XLRDISK" commands are disabling all the interrupts before any SIO operation; the DLI interrupt will not be enabled again.
 
 The commands mentioned here, especially the "KEYBUFF" command, may not be used with some programs - especially games.
-
 
 ### DISK FORMAT
 
@@ -1171,7 +1232,6 @@ Only SpartaDOS X (versions 4.x) can work with BW-DOS directories in full; older 
 The menu program supports Atari DOS 2 compatible disks too. You can use every disks created with Atari DOS 2.0 or DOS 2.5; other disks may be only used if they are compatible with this format. In addition, you can use Double density disks similar to the DOS 2.0 format - for example the ones created with BiboDOS or the "AINIT" command in SpartaDOS. Disks without of file number in data sectors - for example MYDOS high capacity disks, or BiboDOS 6.4 double sided disks - may not be used.
 
 BW-DOS #30 is handling the allocation pointers in the bootsector in a different way than older versions or SpartaDOS do. This may result in using different physical sectors for a file compared to these DOSes. Both the versions are fully compatible.
-
 
 ### OLDER BW-DOS VERSIONS
 
@@ -1186,7 +1246,6 @@ This chapter gives a list of Error codes (in decimal and hexadecimal numbers), a
 Not every listed errors have its origin in BW-DOS. There are also errors caused by CIO, SIO, and other device drivers. (For example screen, tape recorder etc.)
 
 The first two codes are not errors - BW-DOS returns these codes when everything is OK. You'll encounter these codes only while programing CIO calls in assembler or something like that.
-
 
 ||   Error code || Hex || Result ||  Description ||
 |        1 | $01 | OK |  This code is returned by all device handlers when no error occurs. |
@@ -1227,5 +1286,3 @@ The first two codes are not errors - BW-DOS returns these codes when everything 
 |      168 | $A8 | Not implemented.| BW-DOS didn't understand the command code. Please check the command code for CIO, or the XIO command. This error may also occur while trying to use a few special functions of SpartaDOS, which are not supported by BW-DOS.|
 |      169 | $A9 | Directory full.|  There is no more space for a new file in directory. BW-DOS directories may contain up to 1424 files, but it is much better to divide such a large number of files into several subdirectories.  Atari DOS 2 compatible disks (supported by the menu program only) may contain up to 64 files.|
 |      170 | $AA | File not found |   The specified file (or directory in the direct mode) doesn't exist. This error may also occur while trying to erase a protected file or subdirectory, or to rename a subdirectory.|
-
-

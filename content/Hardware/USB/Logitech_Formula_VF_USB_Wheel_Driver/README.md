@@ -1,6 +1,5 @@
 # Logitech Formula Vibration Feedback Wheel USB Driver
 
-
 Tested with a Logitec Formula Vibration Feedback Wheel USB. Other Logitech Wheels might work. Please send feedback.
 
 ## Description
@@ -14,7 +13,6 @@ Tested with a Logitec Formula Vibration Feedback Wheel USB. Other Logitech Wheel
 |  $14           |  5                 | Throttle | $275 (628)  | PADDL5 | RACCEL     |
 |  $15           |  6                 | Brake | $276 (628)  | PADDL6 | RBRAKE     |
 
-
 - Byte 1+2: Wheel movement ($000 = left, $200 = middle, $3FF= right)
 - Byte 2: Buttons 1-5
 - Byte 3: Buttons 6-12
@@ -23,6 +21,7 @@ Tested with a Logitec Formula Vibration Feedback Wheel USB. Other Logitech Wheel
 - Byte 6: Brake ($FF = Idle, $00= Brake)
 
 The digital Joypad (Byte 4) has a unique value for each direction:
+
 ```
           up
           0

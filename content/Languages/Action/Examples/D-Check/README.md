@@ -9,6 +9,6 @@ Published: 	ANALOG, July 1986
 
 ![](attachments/d_checkinaction.gif)
 
-PDF: [d_checkinaction.PDF](attachments/d_checkinaction.PDF) 
+PDF: [d\_checkinaction.PDF](attachments/d_checkinaction.PDF)
 
-DJVU: [d_checkinaction.djvu](attachments/d_checkinaction.djvu) 
+DJVU: [d\_checkinaction.djvu](attachments/d_checkinaction.djvu)

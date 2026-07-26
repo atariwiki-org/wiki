@@ -2,7 +2,7 @@
 
 Reprinted from A.C.E.C. BBS (614)-471-8559
 
-## Accessing & Using the CIOV
+## Accessing \& Using the CIOV
 
 The Central Input/Output Vector (CIOV) is how Atari BASIC accesses all of the peripherals (the disk drive, modem, screen, etc.). Performing various I/O functions from BASIC is easy since BASIC contains special commands to allow the user to access the CIOV easily. From machine language, however, it is quite a different story.  This Programming Guide will explain how to use and access the CIOV in your machine language programs.  It assumes a working knowledge of 6502 machine language.
 
@@ -46,6 +46,3 @@ Finally, simply JSR $E456 to call the CIOV.  The CIOV will do the rest.  When it
 One quick, and important note:  You must set ICAX1 when issuing the OPEN command.  ICAX1 should be set to the value for the type of operation you are going to do. That is, it should be 4 for READ access, 6 for directory access, 8 for write access, etc.  This works just like the corresponding codes in the BASIC OPEN command.
 
 That's basically it!  For general purpose I/O such as accessing disk files (or creating them), printing to the screen, and getting input from the user, this is all you need.  Some device-specific commands may require that you set some of the Auxillary bytes (such as NOTE, POINT, etc.) but that is not in the scope of this particular Programming Guide.  Look for another Programming Guide in the future that will explain some of the device-specific commands such as NOTE, POINT, RENAME, etc.
-
-
-

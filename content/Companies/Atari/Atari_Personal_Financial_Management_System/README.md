@@ -4,6 +4,7 @@ Copyright (C) 1981 Atari, Inc.
 
 Also as part in 'The Home Manager Kit' or 'The Home Manager' CX418 version 1
 Please check [atari8bitads.blogspot.de](http://atari8bitads.blogspot.de/2017/03/a-welcome-addition.html) from Bill Lange, which solves the mystery around the box. Great work Bill! Please go ahead, we really appreciate your help. :-)))
+
 ## ATR-Images:
 
 - [System Diskette I (Model CX8113)](attachments/Personal_Finance_Management_System_CX8113.atr)
@@ -17,27 +18,29 @@ The goal here would be to get rid of this, create a DD diskette, which holds bot
 
 At that point Mr. Bacardi has already taken over:
 
-- [Personal_Finance_Management_System_CX8113_SD-DOS_2.5.atr](attachments/Personal_Finance_Management_System_CX8113_SD-DOS_2.5.atr) ; a)
-- [Personal_Finance_Management_System_CX8114_MD-DOS_2.5.atr](attachments/Personal_Finance_Management_System_CX8114_MD-DOS_2.5.atr) ; b)
+- [Personal\_Finance\_Management\_System\_CX8113\_SD-DOS\_2.5.atr](attachments/Personal_Finance_Management_System_CX8113_SD-DOS_2.5.atr) ; a)
+- [Personal\_Finance\_Management\_System\_CX8114\_MD-DOS\_2.5.atr](attachments/Personal_Finance_Management_System_CX8114_MD-DOS_2.5.atr) ; b)
 
 and delivered us a SD image for the CX8113 type and a MD image for the CX8114 type.
 
 Have already started to bring both images on just one DD image:
 
-- [Personal_Finance_Management_System_CX8113-4_DD-DOS_2.0D.atr](attachments/Personal_Finance_Management_System_CX8113-4_DD-DOS_2.0D.atr) ; c)
+- [Personal\_Finance\_Management\_System\_CX8113-4\_DD-DOS\_2.0D.atr](attachments/Personal_Finance_Management_System_CX8113-4_DD-DOS_2.0D.atr) ; c)
 
 up to now, PFMS is not running with c). Who can help us?
 
 ## Manuals:
-- [Atari Personal Finance Management System-Instruction Manual](../../../../media/Companies/Atari/Atari_Personal_Financial_Management_System/attachments/Atari_Personal_Finance_Management_System-Instruction_Manual.pdf) ; size: 14.6 MB, 92 pages (*)
+
+- [Atari Personal Finance Management System-Instruction Manual](../../../../media/Companies/Atari/Atari_Personal_Financial_Management_System/attachments/Atari_Personal_Finance_Management_System-Instruction_Manual.pdf) ; size: 14.6 MB, 92 pages (\*)
 - [Atari Personal Finance Management System-Quick Reference Card](attachments/Atari_Personal_Finance_Management_System-Quick_Reference_Card.pdf) ; size: 1.4 MB
-(*) The manual is with OCR, navigation-links at the left, hyperlinks inside the content pages (pages v, vi and vii inside the manual, else pages 6 to 8 in the pdf file).
+  (\*) The manual is with OCR, navigation-links at the left, hyperlinks inside the content pages (pages v, vi and vii inside the manual, else pages 6 to 8 in the pdf file).
 
 ![](attachments/Manual_Cover.jpg)
 
 Atari Personal Finance Management System - Instruction Manual Cover
 
 ## Atari Personal Finance Management System CX406 box images:
+
 ![](attachments/Front.jpg)
 CX406 binder front 1  ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com
 
@@ -72,6 +75,7 @@ P.F.M.S. System Diskette I (Model CX8113)
 P.F.M.S. System Diskette II (Model CX8114)
 
 ## Atari Personal Finance Management System CX406 menu images:
+
 ![](attachments/1-Start.jpg)
 P.F.M.S. Startscreen
 

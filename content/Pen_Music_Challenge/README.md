@@ -4,9 +4,9 @@ The ABBUC Music challenge is a small game used during the ABBUC annual meeting i
 
 The program stores the score in PEN.DAT.
 
-All track names with an "*" appended are correct, all others are not correct.
+All track names with an "\*" appended are correct, all others are not correct.
 
-The program changes the default font to make the "*" invisible on the screen.
+The program changes the default font to make the "\*" invisible on the screen.
 
 This game was a quick hack, it is not necessary beautiful code. But it shows how to access the lightpen, how to store data and change a font using X-Forth.
 

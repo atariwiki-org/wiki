@@ -48,8 +48,8 @@ Let me relate to you a few of the "sayings" we used to use back when I
 was involved in the Forth world.
 
 1. Inside every large program there is a small program crying to get out.
-1. In any piece of code larger than 1K, it is always possible to save 1 byte.
-1. Never waste a cycle!
+2. In any piece of code larger than 1K, it is always possible to save 1 byte.
+3. Never waste a cycle!
 
 This was the nature of Forth, doing more with less. In these days of
 gigabyte RAM and multi-gigabyte disk, it seems kinda silly, but the
@@ -76,4 +76,3 @@ Best wishes,
 Henry Laxen
 
 Found on Slashdot, 31 Oct 2002
-

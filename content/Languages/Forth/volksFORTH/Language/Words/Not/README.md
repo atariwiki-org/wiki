@@ -1,11 +1,7 @@
-# __NOT__ "not" ( n1 -- n2 )
-
-
+# **NOT** "not" ( n1 -- n2 )
 
 ||Forth79||Forth83||ANSI||Forth200x
 |     X   |       |    |
-
-
 
 %%tabbedSection
 %%tab-english

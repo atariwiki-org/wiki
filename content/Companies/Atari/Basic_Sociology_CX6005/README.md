@@ -3,6 +3,7 @@
 Basic Sociology CX6005 is a really hard to find artifact with a rarity above 10. Therefore, we deeply want to say thank you Bill Lange for providing this treasure to the Atari community. We really owe you very much!
 
 ## Box
+
 ![](attachments/Basic_Sociology_CX6005-3.jpg)
 Basic Sociology CX6005 - box cover - thanks to Bill Lange for taking the picture
 
@@ -10,27 +11,30 @@ Basic Sociology CX6005 - box cover - thanks to Bill Lange for taking the picture
 Basic Sociology CX6005 - box content - thanks to Bill Lange for taking the picture
 
 ## Content
+
 ![](attachments/Basic_Sociology_CX6005.jpg)
 Content of Basic Sociology CX6005
 
 ## Cassette-Images in FLAC-format:
-- [http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_A-Side_1.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_A-Side_1.flac) ; size: 142.3 MB
 
-- [http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_A-Side_2.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_A-Side_2.flac) ; size: 136.5 MB
+- [http://data.atariwiki.org/FLAC/BS/Basic\_Sociology\_CX6005-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_A-Side_1.flac) ; size: 142.3 MB
 
-- [http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_B-Side_1.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_B-Side_1.flac) ; size: 125.4 MB
+- [http://data.atariwiki.org/FLAC/BS/Basic\_Sociology\_CX6005-Cassette\_A-Side\_2.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_A-Side_2.flac) ; size: 136.5 MB
 
-- [http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_B-Side_2.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_B-Side_2.flac) ; size: 127.9 MB
+- [http://data.atariwiki.org/FLAC/BS/Basic\_Sociology\_CX6005-Cassette\_B-Side\_1.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_B-Side_1.flac) ; size: 125.4 MB
 
-- [http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_C-Side_1.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_C-Side_1.flac) ; size: 111.4 MB
+- [http://data.atariwiki.org/FLAC/BS/Basic\_Sociology\_CX6005-Cassette\_B-Side\_2.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_B-Side_2.flac) ; size: 127.9 MB
 
-- [http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_C-Side_2.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_C-Side_2.flac) ; size: 106.5 MB
+- [http://data.atariwiki.org/FLAC/BS/Basic\_Sociology\_CX6005-Cassette\_C-Side\_1.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_C-Side_1.flac) ; size: 111.4 MB
 
-- [http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_D-Side_1.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_D-Side_1.flac) ; size: 125.7 MB
+- [http://data.atariwiki.org/FLAC/BS/Basic\_Sociology\_CX6005-Cassette\_C-Side\_2.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_C-Side_2.flac) ; size: 106.5 MB
 
-- [http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_D-Side_2.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_D-Side_2.flac) ; size: 162.3 MB
+- [http://data.atariwiki.org/FLAC/BS/Basic\_Sociology\_CX6005-Cassette\_D-Side\_1.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_D-Side_1.flac) ; size: 125.7 MB
+
+- [http://data.atariwiki.org/FLAC/BS/Basic\_Sociology\_CX6005-Cassette\_D-Side\_2.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_D-Side_2.flac) ; size: 162.3 MB
 
 ## Images:
+
 ![](attachments/BS01.jpg)
 Basic Sociology CX6005 - figure 01
 

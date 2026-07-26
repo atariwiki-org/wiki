@@ -21,9 +21,9 @@ XEP80.F This file adds commands to XFORTH to patch the current E: handler vector
 
 Step 1: launch XFORTH.ORG. XFORTH.ORG is a special version of XFORTH without startup banner.
 
-Step 2: Include XEP80.F -> INCLUDE" D:XEP80.F"
+Step 2: Include XEP80.F -\> INCLUDE" D:XEP80.F"
 
-Step 3: Save new XFORTH -> INCLUDE" D:MKFRTH.F"
+Step 3: Save new XFORTH -\> INCLUDE" D:MKFRTH.F"
 
 Step 4: Test new XFORTH
 

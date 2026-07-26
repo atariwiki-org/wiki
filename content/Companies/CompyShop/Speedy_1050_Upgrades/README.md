@@ -1,15 +1,19 @@
 # Speedy 1050
 
 ### Handbook
+
 - Speedy 1050 Anwenderhandbuch und ROM Listing [PDF, 7.7MB](../../../../media/Companies/CompyShop/CompyShop_Speedy_Upgrades/attachments/Speedy1050_Anwenderhandbuch_und_ROM_Listing.pdf) [DJVU, 1.9MB](attachments/Speedy1050_Anwenderhandbuch_und_ROM_Listing.djvu) (German)
 
 - [Speedy 1050 Handbuch](attachments/speedy1050handbuch.pdf) (German)
+
 - [Speedy 1050 Mini-Speedy Handbuch](attachments/speedyhandbuch.pdf) (German)
 
 ### Articles
+
 - [Das SPEEDY-System](Das_SPEEDY-System/README.md) (German, CompyShop Magazin}
 
 ### Code
+
 - [Custom Disk Format Routine](Custom_Disk_Format_Routine/README.md) (Atari 1050 with Compy Shop Speedy)
 - [Speedy Read Sector example](Read_Sector_Example/README.md)
 - [Write Sector example](Write_Sector_Example/README.md)

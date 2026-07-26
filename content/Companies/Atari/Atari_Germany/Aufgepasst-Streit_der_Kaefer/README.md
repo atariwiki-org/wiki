@@ -1,24 +1,29 @@
 # Aufgepaßt - Streit der Käfer (DXG 5710 bzw. TXG 9510)
 
-Copyright (C) 1983 Atari Elektronik-Vertriebsgesellschaft mbH & Milliken Publishing Co.
+Copyright (C) 1983 Atari Elektronik-Vertriebsgesellschaft mbH \& Milliken Publishing Co.
 
 Vielen lieben Dank an Florian Dingler und Dirk Tröger, ohne euch wäre diese seltene Software wahrscheinlich verloren gegangen.
 
 ## ATR-Image
-- [Aufgepasst-Streit_der_Kaefer_DXG_5710.atr](attachments/Aufgepasst-Streit_der_Kaefer_DXG_5710.atr)
+
+- [Aufgepasst-Streit\_der\_Kaefer\_DXG\_5710.atr](attachments/Aufgepasst-Streit_der_Kaefer_DXG_5710.atr)
 
 ## CAS-Images
-- [Aufgepasst-TXG_9510-Seite_A.cas](attachments/Aufgepasst-TXG_9510-Seite_A.cas)
-- [Streit_der_Kaefer-TXG_9510-Seite_B.cas](attachments/Streit_der_Kaefer-TXG_9510-Seite_B.cas)
+
+- [Aufgepasst-TXG\_9510-Seite\_A.cas](attachments/Aufgepasst-TXG_9510-Seite_A.cas)
+- [Streit\_der\_Kaefer-TXG\_9510-Seite\_B.cas](attachments/Streit_der_Kaefer-TXG_9510-Seite_B.cas)
 
 ## FLAC-Images
-- [Aufgepasst-TXG_9510-Seite_A.flac](../../../../../media/Companies/Atari/Atari_Germany/Aufgepasst-Streit_der_Kaefer/attachments/Aufgepasst-TXG_9510-Seite_A.flac) ; Größe: 12,6 MB
-- [Streit_der_Kaefer-TXG_9510-Seite_B.flac](../../../../../media/Companies/Atari/Atari_Germany/Aufgepasst-Streit_der_Kaefer/attachments/Streit_der_Kaefer-TXG_9510-Seite_B.flac) ; Größe: 13,6 MB
+
+- [Aufgepasst-TXG\_9510-Seite\_A.flac](../../../../../media/Companies/Atari/Atari_Germany/Aufgepasst-Streit_der_Kaefer/attachments/Aufgepasst-TXG_9510-Seite_A.flac) ; Größe: 12,6 MB
+- [Streit\_der\_Kaefer-TXG\_9510-Seite\_B.flac](../../../../../media/Companies/Atari/Atari_Germany/Aufgepasst-Streit_der_Kaefer/attachments/Streit_der_Kaefer-TXG_9510-Seite_B.flac) ; Größe: 13,6 MB
 
 ## Handbuch
-- [Aufgepasst-Streit_der_Kaefer_TXG_9510.pdf](../../../../../media/Companies/Atari/Atari_Germany/Aufgepasst-Streit_der_Kaefer/attachments/Aufgepasst-Streit_der_Kaefer_TXG_9510.pdf) ; Größe: 12 MB
+
+- [Aufgepasst-Streit\_der\_Kaefer\_TXG\_9510.pdf](../../../../../media/Companies/Atari/Atari_Germany/Aufgepasst-Streit_der_Kaefer/attachments/Aufgepasst-Streit_der_Kaefer_TXG_9510.pdf) ; Größe: 12 MB
 
 ## Bilder
+
 ![](attachments/Cover1a.jpg)
 Aufgepaßt-Streit der Käfer DXG 5710 - Box Vorderansicht
 

@@ -3,6 +3,7 @@
 Copyright (C) 1982 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Comprehension-Reading AB](https://archive.org/details/DorsettAtariReadingComprehensionAb)
 
 This is an archive of the "Reading Comprehension" (set ab) educational program published by Dorsett Educational Systems, Inc. in 1982. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Reading Comprehension (Ab)
 Year: 1982
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,9 +59,13 @@ Tracks (size in sum: 997.1 MB):
 - [ab14](http://data.atariwiki.org/FLAC/Reading-Comprehension_Ab/ab14.flac)
 - [ab15](http://data.atariwiki.org/FLAC/Reading-Comprehension_Ab/ab15.flac)
 - [ab16](http://data.atariwiki.org/FLAC/Reading-Comprehension_Ab/ab16.flac)
+
 ## Quiz for understanding
-- [Dorsett_Reading_Comprehension_Quiz_AB.pdf](attachments/Dorsett_Reading_Comprehension_Quiz_AB.pdf) ; size: 1.4 MB ; the only additional material available for the Dorsett program
+
+- [Dorsett\_Reading\_Comprehension\_Quiz\_AB.pdf](attachments/Dorsett_Reading_Comprehension_Quiz_AB.pdf) ; size: 1.4 MB ; the only additional material available for the Dorsett program
+
 ## Images
+
 ![](attachments/abA_.jpg)
 Dorsett Atari Comprehension-Reading AB - cassettes with uneven numbers
 

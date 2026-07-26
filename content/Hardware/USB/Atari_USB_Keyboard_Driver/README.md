@@ -448,4 +448,4 @@ first BETA Version, 15.9.2004
 
 ```
 
--- Carsten Strotmann
+\-- Carsten Strotmann

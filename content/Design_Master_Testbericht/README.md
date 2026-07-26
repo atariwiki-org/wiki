@@ -2,7 +2,6 @@
 
 ![](attachments/DesignmasterTest_0001.png)
 
-PDF: [DesignmasterTest.pdf](attachments/DesignmasterTest.pdf) 
+PDF: [DesignmasterTest.pdf](attachments/DesignmasterTest.pdf)
 
-DJVU: [DesignmasterTest.djvu](attachments/DesignmasterTest.djvu) 
-
+DJVU: [DesignmasterTest.djvu](attachments/DesignmasterTest.djvu)

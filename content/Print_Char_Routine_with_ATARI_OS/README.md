@@ -31,5 +31,3 @@ Taken from the Bibo Assembler Toolkit Disk.
 00280 *
 00290 ------------------------------
 ```
-
-

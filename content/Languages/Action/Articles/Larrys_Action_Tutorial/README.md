@@ -3,6 +3,7 @@
 by Larry SerflatenA monthly addition to the SPACE club Newsletter originally appearing from January 1995 through March 1996Permission is granted to distribute any portion or all of my monthly contribution
 
 ## 1. The Beginning
+
 So, you own an ATARI computer, now what?  To more than a few slap-happy owners, the answer is a robust;
 
 %%(text-align:center)
@@ -33,7 +34,7 @@ The ACTION! cartridge is currently available from CSS for $44.95 + $5 S/H.  Orde
 
 Occasionally, I must refer you to text in the manual.  I must also be brief.  You will find explanations here, when the manual is a bit hard to understand.  I will use the same keystroke and command notations as the Action! manual, whenever possible.  Because of different editions of the Action! manual, I will use the section headings when referring to text in the manual.  To find where the text is, I suggest you make book tabs that locate each of the Table of Contents' in the different parts of the manual.  On these tabs, print the name of the parts of the Action! system that the tables refer to.  You may want to make a big tab for the Error codes appendix, that seems to be the tab I used the most!
 
-Also, specifying a file name is dependent upon the DOS you are using.  A file name has 2 parts; 1) An 8 letter file name, and 2) A 3 letter file extension.  There are a few DOS's that allow sub-directories.  To allow for variances in the DOS types, the file NAME will include the both the name and extension.  The device ID, and/or each level of sub-directory will be named the file PATH.  The manual uses the term 'filespec' and in some cases 'filestring' to include both the file path and file name.  Using a Backus_Naur type method of declaration, the relationship between file spec, path, and name is as follows:
+Also, specifying a file name is dependent upon the DOS you are using.  A file name has 2 parts; 1) An 8 letter file name, and 2) A 3 letter file extension.  There are a few DOS's that allow sub-directories.  To allow for variances in the DOS types, the file NAME will include the both the name and extension.  The device ID, and/or each level of sub-directory will be named the file PATH.  The manual uses the term 'filespec' and in some cases 'filestring' to include both the file path and file name.  Using a Backus\_Naur type method of declaration, the relationship between file spec, path, and name is as follows:
 
 ```
 OPEN(chan, <filespec>, mode, aux2)
@@ -83,47 +84,40 @@ To correct the error, add the parenthesis after the word "stop" ("stop()") in th
 
 : - = This is the line to look for.
 : + = This is how it should be.
-: > = Correct the notes for this line
-
+: \> = Correct the notes for this line
 
 - MONITOR / RUN - Program Execution
-** >RUN "<filespec>" only works when used on programs saved from the Editor.  (When it is still in text form.)
-** -RUN PrintE() <RETURN>     does not work.
-** +XECUTE PrintE() <RETURN>  is correct.
-
+  \*\* \>RUN "<filespec>" only works when used on programs saved from the Editor.  (When it is still in text form.)
+  \*\* -RUN PrintE() <RETURN>     does not work.
+  \*\* +XECUTE PrintE() <RETURN>  is correct.
 
 - LANGUAGE / Arithmetic Expressions
-** >TECH NOTE Using '*', '/', or 'MOD' will not work correctly on large CARD values.
-** LANGUAGE / Record Manipulations
-** -TYPE idinfo=[[BYTE level,
-** -TYPE idinfo=[[BYTE level  (omit comma)
-
+  \*\* \>TECH NOTE Using '\*', '/', or 'MOD' will not work correctly on large CARD values.
+  \*\* LANGUAGE / Record Manipulations
+  \*\* -TYPE idinfo=\[\[BYTE level,
+  \*\* -TYPE idinfo=\[\[BYTE level  (omit comma)
 
 - LANGUAGE / Advanced use of Extended Types
-** >newrecord=idarray+(reccount*recordsize)
-** The pointer will point to the next record not the end of the array.
-** >In the main procedure;
-** -"mode=InputB()"  won't work correctly.
-** +"mode=GetD(7)"   works fine.
-
+  \*\* \>newrecord=idarray+(reccount\*recordsize)
+  \*\* The pointer will point to the next record not the end of the array.
+  \*\* \>In the main procedure;
+  \*\* -"mode=InputB()"  won't work correctly.
+  \*\* +"mode=GetD(7)"   works fine.
 
 - LIBRARY / The PUT Procedures
-** -PROC PutDE(BYTE channel, CHAR character)
-** +PROC PutDE(BYTE channel) will compile.
-
+  \*\* -PROC PutDE(BYTE channel, CHAR character)
+  \*\* +PROC PutDE(BYTE channel) will compile.
 
 - LIBRARY / BYTE color
-** >For Graphics(0) and text windows:
-** +Chr. luminance (color number = 1)
-** +Background (color number = 2)
-
+  \*\* \>For Graphics(0) and text windows:
+  \*\* +Chr. luminance (color number = 1)
+  \*\* +Background (color number = 2)
 
 - LIBRARY / PROC Fill
-** >col and row must be the numbers of the lower LEFT corner of the box.
-
+  \*\* \>col and row must be the numbers of the lower LEFT corner of the box.
 
 - LIBRARY / PROC SCopy
-** >The description is wrong, DEST should be dimensioned larger than source, or else identify an array with enough space.
+  \*\* \>The description is wrong, DEST should be dimensioned larger than source, or else identify an array with enough space.
 
 While in the Monitor, enter the line:
 
@@ -201,67 +195,64 @@ Next month, Vo-cab-u-lary!
 
 ## 5. Vocabulary
 
-Last month’s PrintF, in KEYBOARD TEST, does not need ^[[ between the ( and %C.  They got printed instead of the Esc character.
+Last month’s PrintF, in KEYBOARD TEST, does not need ^\[\[ between the ( and %C.  They got printed instead of the Esc character.
 
 In the LANGUAGE section of the ACTION! manual is a listing of the vocabulary of ACTION! system.  The words and symbols are listed in alphabetical order, I will list them by function;
 
-
 - DECLARATIONS-  Used in declaring the procedures, functions, or variables;
-** ARRAY  -Preceded by BYTE, CARD or INT to declare a list of data
-** BYTE   -Declares an 8 bit variable
-** CARD   -Declares a 16 bit variable
-** CHAR   -Same as BYTE
-** DEFINE -Allows substitution during compile
-** FUNC   -Preceded by BYTE, CARD or INT to indicate the start of a function
-** INCLUDE-Adds text from a file, to program
-** INT    -Declares a 15 bit variable with a sign bit as the 16th bit
-** MODULE -Indicates the start of global variable declarations
-** POINTER-Preceded by BYTE, CARD or INT to  declare a variable reference
-** PROC   -Indicates the start of a procedure
-** RETURN -Indicates the end of a procedure RETURN(x) the end of a function
-** SET    -Alters memory during compile
-** TYPE   -Declares a list of mixed data
-** =      -Used in DEFINE and SET to assign equality
-** $      -Indicates Hexadecimal notation
-** ^      -Contents of a Pointer
-** @      -Address of a variable
-** .      -TYPE reference
-** \[ \]    -Start / End of data block
-** "      -String contents (delimiter)
-** '      -Character conversion to value
-** ;      -Remarks (delimiter)
-
+  \*\* ARRAY  -Preceded by BYTE, CARD or INT to declare a list of data
+  \*\* BYTE   -Declares an 8 bit variable
+  \*\* CARD   -Declares a 16 bit variable
+  \*\* CHAR   -Same as BYTE
+  \*\* DEFINE -Allows substitution during compile
+  \*\* FUNC   -Preceded by BYTE, CARD or INT to indicate the start of a function
+  \*\* INCLUDE-Adds text from a file, to program
+  \*\* INT    -Declares a 15 bit variable with a sign bit as the 16th bit
+  \*\* MODULE -Indicates the start of global variable declarations
+  \*\* POINTER-Preceded by BYTE, CARD or INT to  declare a variable reference
+  \*\* PROC   -Indicates the start of a procedure
+  \*\* RETURN -Indicates the end of a procedure RETURN(x) the end of a function
+  \*\* SET    -Alters memory during compile
+  \*\* TYPE   -Declares a list of mixed data
+  \*\* =      -Used in DEFINE and SET to assign equality
+  \*\* $      -Indicates Hexadecimal notation
+  \*\* ^      -Contents of a Pointer
+  \*\* @      -Address of a variable
+  \*\* .      -TYPE reference
+  \*\* \[ \]    -Start / End of data block
+  \*\* "      -String contents (delimiter)
+  \*\* '      -Character conversion to value
+  \*\* ;      -Remarks (delimiter)
 
 - PROGRAM CONTROL-used to structure or control program execution;
-** DO     -Start of program loop
-** ELSE   -FALSE condition of IF, ELSEIF
-** ELSEIF -Dependant IF conditions
-** EXIT   -Exit from program loop
-** FI     -End of IF, THEN, ELSE conditions
-** FOR    -Enables loop parameters
-** IF     -Conditional expression
-** TO     -upper limit of FOR loop
-** UNTIL  -Conditional EXIT from loop
-** WHILE  -Conditional entrance to loop
-** ( )    -Precedence setting parenthesis
-
+  \*\* DO     -Start of program loop
+  \*\* ELSE   -FALSE condition of IF, ELSEIF
+  \*\* ELSEIF -Dependant IF conditions
+  \*\* EXIT   -Exit from program loop
+  \*\* FI     -End of IF, THEN, ELSE conditions
+  \*\* FOR    -Enables loop parameters
+  \*\* IF     -Conditional expression
+  \*\* TO     -upper limit of FOR loop
+  \*\* UNTIL  -Conditional EXIT from loop
+  \*\* WHILE  -Conditional entrance to loop
+  \*\* ( )    -Precedence setting parenthesis
 
 - OPERATORS- Used in program statements to alter or combine variables;
-** AND    -Logical AND
-** LSH    -Bit-wise left shift
-** MOD    -Remainder after division
-** OR     -Logical OR
-** RSH    -Bit-wise right shift
-** XOR !  -Bit-wise exclusive OR
-** + - * /-Plus / Minus / Times / Divide by
-** &      -Bit-wise AND
-** %      -Bit-wise OR
-** =      -Assigns equality
-** <> #   -Not equal to
-** >      -Greater than
-** >=     -Greater or equal to
-** <      -Less than
-** <=     -Less or equal to
+  \*\* AND    -Logical AND
+  \*\* LSH    -Bit-wise left shift
+  \*\* MOD    -Remainder after division
+  \*\* OR     -Logical OR
+  \*\* RSH    -Bit-wise right shift
+  \*\* XOR !  -Bit-wise exclusive OR
+  \*\* + - \* /-Plus / Minus / Times / Divide by
+  \*\* \&      -Bit-wise AND
+  \*\* %      -Bit-wise OR
+  \*\* =      -Assigns equality
+  \*\* \<\> #   -Not equal to
+  \*\* \>      -Greater than
+  \*\* \>=     -Greater or equal to
+  \*\* \<      -Less than
+  \*\* \<=     -Less or equal to
 
 ```
 MODULE BYTE ARRAY
@@ -290,7 +281,7 @@ Audio(1)=0   Audio(3)=0
 RETURN
 ```
 
-When you have this typed in, COMPILE it, then if there are no errors, WRITE the text file to disk.  You can alter the Notes and Delay times, but note_count must equal the number of elements in Notes and Delay.  If you make something good, write the compiled code, and send it to friends who can simply load it from DOS!
+When you have this typed in, COMPILE it, then if there are no errors, WRITE the text file to disk.  You can alter the Notes and Delay times, but note\_count must equal the number of elements in Notes and Delay.  If you make something good, write the compiled code, and send it to friends who can simply load it from DOS!
 
 Stay ACTive!
 
@@ -347,22 +338,23 @@ I am still looking to answer your own questions.  If you have any questions, sen
 Writing programs is hard work!  To get the most out of your efforts, take a little time to plan out your schedule.  The chart below will help you organized your program to allow you to create even large programs in a few short hours.  Typing and testing may take somewhat longer....
 
 ;PROGRAM DEVELOPMENT CHART:
+
 1. Decide what the inputs and outputs of the program will be.
-1. Outline the major tasks that need to be done in the order they are to be done.
-1. If there are many decisions to be made by the computer, develop a flowchart.
-1. Divide each task into its component parts and look for similarities.
-1. Group the similar tasks together to determine which can be combined.
-1. Develop a memory map of the computer, showing where in memory the different parts of the program are to reside.
-1. Type in/write the MAIN procedure first.  Fill out the rest of the program, testing each newly added routine for errors and accuracy.
+2. Outline the major tasks that need to be done in the order they are to be done.
+3. If there are many decisions to be made by the computer, develop a flowchart.
+4. Divide each task into its component parts and look for similarities.
+5. Group the similar tasks together to determine which can be combined.
+6. Develop a memory map of the computer, showing where in memory the different parts of the program are to reside.
+7. Type in/write the MAIN procedure first.  Fill out the rest of the program, testing each newly added routine for errors and accuracy.
 
 I will use this chart to write a function that will add two strings of numbers.  Assuming I have a game where a player may score in the millions.  I want a routine that will increase the score beyond the 65535 limit.
 
 1. For inputs, I will send it the current score, and a string containing the amount of increase: AddTo(score,"500") The output should be placed back into the score string before returning.
-1. I must first find the least significant digit of both strings, add these, store the result and calculate a carry if necessary.  I must then add, store, and carry the next set of digits, and the next, until there are no digits left to add.  Finally, the new value must be placed back into SCORE.
-1. There are not that many decisions, the flowchart can wait for another issue.
-1. This is a component task: increment.  There are repetitive tasks, but they are specifically related to adding two strings.  For now, I don't see any advantages to breaking them down, and writing them as separate routines.
-1. Nothing to group, its only one routine.
-1. SCORE and the other string are provided in the call, I will need a place to hold the results until the operation is done.  This string can simply be assigned a location by ACTION!
+2. I must first find the least significant digit of both strings, add these, store the result and calculate a carry if necessary.  I must then add, store, and carry the next set of digits, and the next, until there are no digits left to add.  Finally, the new value must be placed back into SCORE.
+3. There are not that many decisions, the flowchart can wait for another issue.
+4. This is a component task: increment.  There are repetitive tasks, but they are specifically related to adding two strings.  For now, I don't see any advantages to breaking them down, and writing them as separate routines.
+5. Nothing to group, its only one routine.
+6. SCORE and the other string are provided in the call, I will need a place to hold the results until the operation is done.  This string can simply be assigned a location by ACTION!
 
 ```
 PROC AddTo(BYTE ARRAY s1,s2)
@@ -437,11 +429,11 @@ RETURN
 This month, we will again use the PROGRAM DEVELOPMENT CHART to make a new routine that will multiply two strings.  As you might guess, we	will make use of the AddTo routine from last month!
 
 1. Like before, the routine will get two string parameters and store the result in the first parameter.
-1. To multiply, the 1st parameter must be added to itself as many times as are indicated in the ones digit of the 2nd parameter.  Moving to the tens digit of the 2nd parameter and a value that is ten times greater than what the 1st parameter was, we again add according to the value in the tens place, etc.
-1. Flowcharting comes later when there are more conditions to consider....
-1. We have a similarity, we need to add one string to another, and luckily it is already available.  (Reusable code!)
-1. This is only a routine, not too many similarities to try to group them yet.
-1. Again we can let ACTION! handle string memory assignments.
+2. To multiply, the 1st parameter must be added to itself as many times as are indicated in the ones digit of the 2nd parameter.  Moving to the tens digit of the 2nd parameter and a value that is ten times greater than what the 1st parameter was, we again add according to the value in the tens place, etc.
+3. Flowcharting comes later when there are more conditions to consider....
+4. We have a similarity, we need to add one string to another, and luckily it is already available.  (Reusable code!)
+5. This is only a routine, not too many similarities to try to group them yet.
+6. Again we can let ACTION! handle string memory assignments.
 
 ```
 DEFINE smax="100"
@@ -551,9 +543,9 @@ j=i+1
 RETURN
 ```
 
-After compiling this short procedure, use "* See" in the Monitor to see the compiled machine language code.
+After compiling this short procedure, use "\* See" in the Monitor to see the compiled machine language code.
 
-You can use the '*' (Dump) option in the Monitor to check out how the ACTION! system changes your text into machine language.  By typing in short programs, you can manually disassemble the code to help you learn machine language.  It will come in useful when you have larger programs that you want to optimize.  You can expect to cut out about half of the machine code that ACTION! uses, if you want to do some optimization.
+You can use the '\*' (Dump) option in the Monitor to check out how the ACTION! system changes your text into machine language.  By typing in short programs, you can manually disassemble the code to help you learn machine language.  It will come in useful when you have larger programs that you want to optimize.  You can expect to cut out about half of the machine code that ACTION! uses, if you want to do some optimization.
 
 That’s the ACTION! system, next month we take a brief look at the ATARI computer system.  After a few key points about the ATARI computer, we can then, finally, get to creating our own library.
 
@@ -617,10 +609,10 @@ One of my earliest questions was; Why won’t this program work without the cart
 I will save you the pain of pulling your hair out and tell you.  If you want to write programs that will run without the cartridge installed, you must follow these 5 rules;
 
 1. No errors.  Any error will halt your program.  You can tell if your program has an error by running it with the cartridge installed.  If it works OK, the Monitor message area will be clear when you exit from your program.
-1. No library calls.  You have to supply all the necessary code to run.  Any call to the library will generate an error when run without the cartridge.
-1. No more than 2 bytes of parameters in any function or procedure call.  More than 2 requires a little parameter saving routine found in the cartridge.  That’s 2 BYTEs or 1 CARD and no more.
-1. No MOD, multiplication, or division.  You can add and subtract to your heart’s content, but you can't try to multiply.  These also call a cartridge routine.
-1. No shift operations using a variable, or using a constant larger than 4.
+2. No library calls.  You have to supply all the necessary code to run.  Any call to the library will generate an error when run without the cartridge.
+3. No more than 2 bytes of parameters in any function or procedure call.  More than 2 requires a little parameter saving routine found in the cartridge.  That’s 2 BYTEs or 1 CARD and no more.
+4. No MOD, multiplication, or division.  You can add and subtract to your heart’s content, but you can't try to multiply.  These also call a cartridge routine.
+5. No shift operations using a variable, or using a constant larger than 4.
 
 If you follow these rules, your program should run without the cartridge.  The two rules I have had trouble with are 2, no library calls, and 4, no multiplication.  How can you read the keyboard if you can’t use OPEN(4,"K:",4,0)?  As shown earlier, you can monitor address 764.  How about opening a file?  Offsets depend on using multiplication for tabular data....
 
@@ -653,11 +645,13 @@ DO  FOR j=0 TO 200 STEP 50
 OD  OD
 RETURN
 ```
-The '=*' after the word MultiplyB simply means to omit the allocation of memory for the parameters.  Action! passes the parameters using the accumulator and X register. No reference was made in the function to either 'a' or 'x' so there is no need to reserve memory for them. The function obtained the values directly from the accumulator and X register.
+
+The '=\*' after the word MultiplyB simply means to omit the allocation of memory for the parameters.  Action! passes the parameters using the accumulator and X register. No reference was made in the function to either 'a' or 'x' so there is no need to reserve memory for them. The function obtained the values directly from the accumulator and X register.
 
 Although the MultiplyB routine will run without the cartridge, the Test routine calls a library procedure.  Guess what’s coming next issue!
 
 ## 12. Kilroy Strikes Again!
+
 These months sure take a long time, don't they?  This month we make use of the old MultiplyB routine and add a little more to your library!
 
 ```
@@ -699,6 +693,7 @@ UNTIL i=sa(0)
 OD 
 RETURN
 ```
+
 You might want to save this portion for later use, then type in the Test program to see it in use.  These and the test program will run, in object form, from DOS!  Make sure, then save them.
 
 MODULE simply lets the compiler know that you are declaring variables that you want available to ALL FOLLOWING routines.  Here we declare a variable to use the systems pointer to screen memory (savmsc), the cursor X position and, cursor Y position.
@@ -709,7 +704,7 @@ AscToInt is a routine that changes ASCII to Internal code.  This code is used by
 
 CLS is my ClearScreen routine.  Changing the 0 to some other value will fill the screen with a different character.
 
-EchoS will duplicate whatever is in quotes including non-printable characters.  To make it as fast as possible, I did not include any error checking or alter X or Y.  With 40 bytes in a line, 'dst' has to be Y*40 bytes from the top (savmsc).  It also has to be X number of spaces from the left edge, then offset by 1 to align with the incoming string.  If not offset, then 'dst(0)' would be at the X and Y position, but 'sa(0)' is not supposed to be printed, it holds the length of the string.  The first byte of the string is actually in sa(1).  Offsetting allows 'dst(1)' to be at the correct X and Y position, thereby setting up a means of direct (1 to 1, 2 to 2, etc.) assignments.
+EchoS will duplicate whatever is in quotes including non-printable characters.  To make it as fast as possible, I did not include any error checking or alter X or Y.  With 40 bytes in a line, 'dst' has to be Y\*40 bytes from the top (savmsc).  It also has to be X number of spaces from the left edge, then offset by 1 to align with the incoming string.  If not offset, then 'dst(0)' would be at the X and Y position, but 'sa(0)' is not supposed to be printed, it holds the length of the string.  The first byte of the string is actually in sa(1).  Offsetting allows 'dst(1)' to be at the correct X and Y position, thereby setting up a means of direct (1 to 1, 2 to 2, etc.) assignments.
 
 Using these routines as examples, perhaps you can write your own Echo, EchoB, EchoI, and EchoC.  I used echo because, I saw the name used in another program, to do about the same thing, and because it keeps it separate from Print and its options which provide error and boundary checks.  Of course you'll want to test them:
 
@@ -726,20 +721,22 @@ x=2 y=16
 ch=255
 RETURN
 ```
+
 Remember to set X and Y each time!
 
 ## 13. Details, Details, Details!
+
 Much of computer programming involves the use of expressions.  Action! supports arithmetic, bit-wise and, relational expressions.  Arithmetic operators, as their name implies, perform arithmetic functions.  Bit-wise operators are used to manipulate values on a bit-by-bit level.  Relational operators allow for combining variables or simple expressions to form much more complex expressions.
 
-Arithmetic operators (*, /, +, -, MOD) are fairly self evident.  Their use is the same as normal arithmetic!  To save space, and your valuable attention, I won’t try to explain how to use them!
+Arithmetic operators (\*, /, +, -, MOD) are fairly self evident.  Their use is the same as normal arithmetic!  To save space, and your valuable attention, I won’t try to explain how to use them!
 
-- The 'and' operator '& is often used to mask bits in a register, or limit the number of bits in an operation.
+- The 'and' operator '\& is often used to mask bits in a register, or limit the number of bits in an operation.
 - The 'or' operator '% is often used to add bits into a register.
 - The 'xor' operator '! has several uses, to toggle bits, subtract, and may be used to add and remove bits in a register.
 
 Masking is produced by 'and'ing a value with another value which contains each bit set that is desired in the result:
 : turn==+1
-: turn==&3 > insures turn will only count from 0 to 3 and then wrap around back to 0 again.  Using a mask value of 10 will not limit the count to 10.  It will limit turn to be either 0,2,8 or, 10, if that was desired....
+: turn==\&3 \> insures turn will only count from 0 to 3 and then wrap around back to 0 again.  Using a mask value of 10 will not limit the count to 10.  It will limit turn to be either 0,2,8 or, 10, if that was desired....
 
 The following is an example using a lot of bit-wise manipulation, it converts only alpha-numeric characters to their lower case normal video equivalents:
 
@@ -766,6 +763,7 @@ UNTIL A=255 OD
 ```
 
 These are the characters that will be accepted;
+
 ```
                NORMAL      INVERSE
    Numbers   $30 - $39    $BO - $B9
@@ -773,11 +771,11 @@ These are the characters that will be accepted;
    Low case  $61 - $7A    $E1 - $FA
 ```
 
-You might know that the only difference between normal and inverse is that bit 7 is set for the inverse video characters.  Once this bit is stripped away, we can limit our efforts to the values under the NORMAL column.  The high nibble (a nibble is 4 bits) of every Number is a 3.  We can test for that, then a test to be sure the low nibble is 9 or less will insure we have a number to work with.  Numbers need no translation, once we have one, we can simply pass it back.  Returning a&$3F will strip off the inverse bit of the incoming variable.
+You might know that the only difference between normal and inverse is that bit 7 is set for the inverse video characters.  Once this bit is stripped away, we can limit our efforts to the values under the NORMAL column.  The high nibble (a nibble is 4 bits) of every Number is a 3.  We can test for that, then a test to be sure the low nibble is 9 or less will insure we have a number to work with.  Numbers need no translation, once we have one, we can simply pass it back.  Returning a\&$3F will strip off the inverse bit of the incoming variable.
 
 There are several characters between 0 and $41, To insure no attempt is made to translate them, a simple 'less than' test will eliminate them.  Since the next statement after the IF/FI is a RETURN(32), valuable space can be saved by letting control 'fall through' out of the IF/IF condition as opposed to including a RETURN(32) after the THEN.
 
-We know the alphabet has only 26 letters.  In both CAPS and low case, the letter A has a lower nibble value of 1.  It stands to reason that the value for Z must be 25 steps up from the value of A. 26=$1A, so each bit of the low nibble is needed along with one bit of the upper nibble.  The command t=a&$1F strips away all attributes from 'a and gives us a value in the range of 0 to 31.  A previous test has taken care of values too low to use, so we know this is going to be a letter.  If this value is equal to or between 1 and 26, it must be a letter.  That test is performed, and if true, the value $60 is added to it to bring it up to the range of lower case letters.
+We know the alphabet has only 26 letters.  In both CAPS and low case, the letter A has a lower nibble value of 1.  It stands to reason that the value for Z must be 25 steps up from the value of A. 26=$1A, so each bit of the low nibble is needed along with one bit of the upper nibble.  The command t=a\&$1F strips away all attributes from 'a and gives us a value in the range of 0 to 31.  A previous test has taken care of values too low to use, so we know this is going to be a letter.  If this value is equal to or between 1 and 26, it must be a letter.  That test is performed, and if true, the value $60 is added to it to bring it up to the range of lower case letters.
 
 Next month; RELATIONAL operators.
 
@@ -869,13 +867,14 @@ The first relational operator is in the PickCard function.  In 4 decks of cards,
 Further discussion coming next month.
 
 ## 15. A Bit Of Digression
+
 Now that you have fully scrutinized the nifty routines I included in last month’s issue, you may have noticed that ShowCard was a function, yet used as a procedure.  This is completely acceptable.  When used this way, the value returned is ignored.  You can use the ShowCard function to find out the value of the card.  Aces thru Tens count as their pip value, while face cards count as ten.  If need be, the card itself can be used to determine suit, in the same manner as ShowCard.
 
 You might also wonder why the routines  that were just a few lines long, were not simply written into the Main procedure.  One reason is that Action! was designed to make use of RE-USEABLE code.  Any task that may be needed repeatedly should be in its own routine.  There is a limit to how many routines you can have, namely 1024 bytes for global variable and routine names.  The smaller names you use, the more of them you can use.  I have written several large programs and have yet to run out of room for the names.  I usually end up pressed for memory to hold all the needed code.  A second reason is that it makes for more readable code.  A different programmer may want to make use of your code.  By keeping routines small, focused, and well documented, other programmers may be better able to reuse your code.  It is much easier to read when there are few global variables, and each routine uses only the variables it needs to do its task.
 
 You may think Echo was a small routine, believe me, it isn't.  Translated to ML (Machine Language) it grows dramatically.  You can benefit from substituting your own optimized ML code for the tasks that are repeated often.  To show you how much difference there can be, I have supplied an optimized ML version of the AscToInt function.  This function is used several times in one EchoS call.  Each byte of code we save counts as one cycle for each letter in a string of characters.  This savings will result in increased response time.
 
-Load the old AscToInt routine into your Editor, compile it, and while still in the Monitor type; ? AscToInt <RETURN>.  Record the left most number to paper.  Now type; {{{* AscToInt <RETURN>}}} and get ready to stop the listing using the <CNTL><1> key combination.  Stop the list when you see a diamond after the equals sign, this is the RETURN byte.  Record the leftmost number here and subtract the first number from it.  I find it to be 48 bytes long, whereas, this new function does the same thing in only 27 bytes.  That works out to about 21 EXTRA cycles needed in the code written by Action!
+Load the old AscToInt routine into your Editor, compile it, and while still in the Monitor type; ? AscToInt <RETURN>.  Record the left most number to paper.  Now type; {{{\* AscToInt <RETURN>}}} and get ready to stop the listing using the <CNTL>\<1\> key combination.  Stop the list when you see a diamond after the equals sign, this is the RETURN byte.  Record the leftmost number here and subtract the first number from it.  I find it to be 48 bytes long, whereas, this new function does the same thing in only 27 bytes.  That works out to about 21 EXTRA cycles needed in the code written by Action!
 
 Assuming a 19 byte string, on only a half of a line of text, 400 cycles can be saved using the new routine.  Print just three lines of text and you can expect to gain over 2000 cycles!
 
@@ -897,13 +896,14 @@ BYTE FUNC AscTolnt=*(BYTE a)
  $60]        ;RTS
 ```
 
-I listed it in this form for those of you trying to optimize your own code.  You can compare the two routines, which operate in much the same fashion.  One bit of razzle-dazzle, you may notice I didn't clear or set the carry flag, even though I performed branches that depend upon it.  The CMP instruction affects the carry, if operand >= accumulator, carry is set.  Also 'SBC $1F' supposes it needed a borrow (Carry is clear) so it takes one away also.  The total subtracted from the accumulator is 32 ($20).
+I listed it in this form for those of you trying to optimize your own code.  You can compare the two routines, which operate in much the same fashion.  One bit of razzle-dazzle, you may notice I didn't clear or set the carry flag, even though I performed branches that depend upon it.  The CMP instruction affects the carry, if operand \>= accumulator, carry is set.  Also 'SBC $1F' supposes it needed a borrow (Carry is clear) so it takes one away also.  The total subtracted from the accumulator is 32 ($20).
 
 Zero page memory, used because of its high access speed, is not hard to find.  Making efficient use of it is another matter.  Action! uses $A0-$A1 to store returned values from functions, and, $A3-$AF to Store parameters.  I use $E0-$EF.
 
 Next month, flowcharts!
 
 ## 16. Caught In The Flow
+
 Many people know how to use a map.  Fewer people know how to make one.  The same could be said for a newspaper, toaster, baseball glove, microwave, or a flowchart.  They are all tools, used when we want to do a specific task.  When it comes time to order and list all the logical steps and branches of a new program, a flowchart is your tool to gain perspective.
 
 To demonstrate my point, I will play the role of plant manager, you are my shipping process engineer.  We are about to tool up for 12 different products of merchandise.  Our automatic shelves will accept any of the items from the end of a conveyor.  You are to design the conveyor system that will move each item to its proper shelf.  The products will arrive from the plant on one conveyor in random order.  Each of the 12 products are differentiated by either color, size or, weight.  You get to use scanners, scales, gates, and conveyors to build the warehouse storage system.
@@ -932,6 +932,7 @@ Most flowcharts consist of input/output blocks (slanted rectangles), decision bl
 When a user has to wait for the computer to finish processing, the computer is most often being slowed down by many iterations in a loop structured algorithm.  The programmer must use a good algorithm, coupled with the speed of machine language commands, to reduce the wait time.  Moving from flowcharts to actual machine code is part of the programming process and is the subject of the next issue.  Advanced users of ACTION! might want to "look in" and give me feedback and/or assistance!
 
 ## 17. Victory
+
 From the last issue:
 
 The 12 different boxes of product need 11 gates to provide 12 conveyors to the 12 automatic shelves.  My set of eleven tests began with a scale weighing out any package less than 15 Lbs.  If your solution has something different, that is perfectly acceptable, provided it meets the needs of the job.  Basically the first test should divide the group of products roughly in half, but it is not mandatory.  The important part is that it performs as required, and you can check that by using your flowchart to see where each box would get diverted to.  The criteria was that the boxes should end up on separate shelves.  You might imagine the supervisor may want to invest more cash into the system and ask you to add in the needed equipment to reject certain boxes which fail in a unique way, and return all rejects on a new conveyor to the plant.
@@ -945,14 +946,14 @@ As if to fly in the face of good advice, look back at issue #12's procedures.  H
 First the flowchart:
 
 1. Save STRING address
-1. Calculate DESTINATION address
-1. Initialize counter
-1. Load byte from STRING
-1. Save byte to DESTINATION
-1. Decrement counter
-1. Test for end condition
-1. Loop to "4" until done
-1. RETURN
+2. Calculate DESTINATION address
+3. Initialize counter
+4. Load byte from STRING
+5. Save byte to DESTINATION
+6. Decrement counter
+7. Test for end condition
+8. Loop to "4" until done
+9. RETURN
 
 Now the code:
 
@@ -1001,6 +1002,7 @@ As you can see, most of this procedure is spent setting up the parameters for th
 Were you wondering how to call a procedure using machine language?  You can also call ACTION! routines that you have written.  ACTION! passes variables using the A and X registers, and returns function values in $A0 and $A1.
 
 ## 18. Breaking The Record!
+
 BYTES, CARDS, POINTERS, and ARRAYS can be used for most of your programming.  There comes a time when you must work with a large amount of data, and a mixed set of BYTES, CARDS, and ARRAYS.  At times it makes sense to organize your data so that it may be easily processed, other times it makes just as much sense to organize your data for optimum use with files on a disk.  Records are used to help in both of these areas.
 
 Records allow a programmer to group the fundamental data types together (BYTES, CARDS, and INTEGERS).  The grouping must be declared before it is used.  The records become real useful when you set up a block of memory to hold an array of records.  This is no more than a BYTE array, which is divided into individual records, one record right after the other.  Each record can be accessed using a record POINTER, which steps through the array, in steps the size of one record.
@@ -1054,7 +1056,8 @@ printE("DAY   High   Low   Chg")
   OD
 RETURN
 ```
-You can read your manual to get further information on declaring records.  This program is nothing special, it creates a list of each day’s high and low temperature and indicates the change of the high temp from one day to the next.  Take note, there are two methods used to access the records.  Method #1 sets 'temp' to the start of the storage area (1a) and steps through each record by adding RECORD_SIZE to 'temp' (1b) each pass through the loop.  Method #2 calculates the proper location of each record (#2).  This random access method of locating each record is simple to use and works well for records that reside completely in memory.
+
+You can read your manual to get further information on declaring records.  This program is nothing special, it creates a list of each day’s high and low temperature and indicates the change of the high temp from one day to the next.  Take note, there are two methods used to access the records.  Method #1 sets 'temp' to the start of the storage area (1a) and steps through each record by adding RECORD\_SIZE to 'temp' (1b) each pass through the loop.  Method #2 calculates the proper location of each record (#2).  This random access method of locating each record is simple to use and works well for records that reside completely in memory.
 
 Because each record can be accessed in a uniform manner, the need for special data handling code is reduced.  To give you a little practice in using records, try to write a routine that would allow you to enter the data for this program.  You can have the user input the high and low temperatures, and the computer calculating the amount of change in high temperature from the previous day.  When you have that routine working, write a program to keep track of the time of the sun rising and setting each day.  Also keep track of how many hours of daylight there are in each day and the change in daylight hours from one day to the next.  The more practice you get, the better you become.
 
@@ -1186,9 +1189,11 @@ BYTE K=764
  OD
 RETURN
 ```
-As stated at the start of this monthly column, I intended to give you routines you can use, and a little insight into programming with ACTION!.  This issue gives you new PLOT and LOCATE routines that are faster than those supplied with ACTION!.  In addition to the clip and save section, part of the START_UP routine must be included to initialize the screen array.  You may remember it is faster for the computer to look up data in a table than it is to calculate the needed values every time.  This is what the array does in the PLOP and FIND procedures.
+
+As stated at the start of this monthly column, I intended to give you routines you can use, and a little insight into programming with ACTION!.  This issue gives you new PLOT and LOCATE routines that are faster than those supplied with ACTION!.  In addition to the clip and save section, part of the START\_UP routine must be included to initialize the screen array.  You may remember it is faster for the computer to look up data in a table than it is to calculate the needed values every time.  This is what the array does in the PLOP and FIND procedures.
 
 ## 20. Number Twenty!
+
 Last month’s program should have revealed the cookie-cutter approach by using an array of records.  Each worm had 4 pixel segments and its own direction of travel stored in a record.  The MOVE procedure handled all the worms in the same manner, which eased the programming task.  This same method can be used for other programs where you have many identical, or nearly identical, objects.  Some examples might include soldiers engaged in a war, rooms of a haunted castle, employee files, days in a calendar, and many, many more.
 
 Although you can’t directly declare a BYTE array in a record, you can coax ACTION! to store arrays in records.  This month you will see how you use and access a record that has a BYTE array in it.  The program asks you to enter three student names, with three test scores each.  It then displays the student name and average of the test scores, along with their grade.  At the bottom of the display, the records themselves are shown, with spaces inserted between the name, test scores, average, and grade.  This section shows you how the record would look (minus the spaces) if it were stored in a disk file.
@@ -1278,6 +1283,7 @@ RETURN
 This program runs funny, in that whenever the name is less than 10 characters long, the records still hold old data behind the student name.  See if you can fix this problem.  To see this effect, run the program and enter AAAAAAAAAA for the first name, then run it again and enter Z for the first name.  You will see that part of the name AAAAAAAAAA is still in memory.
 
 ## 21. Final Episode
+
 Up to now I have discussed the different aspects of a program for the computer.  Now it’s time to discuss how to turn those programs in the computer, to files on the disk for everyone to enjoy.
 
 After you have typed in a program, you are required to enter the Monitor to compile and run the program.  The Monitor will also save the compiled code to disk.  The file produced from the Monitors write command (W "D1:MYPROG.EXE") is executable from the disk.  After you have written a program file to the disk from the Monitor, you can then call up DOS and run the file from the command line prompt.  If you have supplied all of the necessary code for execution, you will be able to run the file even without the ACTION! cartridge installed.  Those files are the type of files you can send to your friends, who may not have the ACTION! cartridge.  For a discussion on how to get programs to run without the cartridge, refer back to my column #11.
@@ -1289,4 +1295,5 @@ The ATARI operating system also has two special addresses for use in handling th
 With all the routines and tips I have let you in on, you are now ready to undertake your own projects with confidence.  With just a little advanced planning, almost anything a computer can do, can be done using the ATARI.  It is up to you, the user of the computer, to put the computer to use.  It doesn’t do any work sitting on a shelf.  You don’t have to rely on some distant programmer to write the program you want to use, you can write it yourself.  It seems the younger generations pick up the new technology quicker than old folks, which is all the more reason to introduce young kids to the ATARI computer.  It is easy to use, and simple to program, providing a stepping stone to the larger machines for those kids who may want to pursue a career involving some aspect of programming a computer.  The bulk of computer programming is done by those who have a need.  The limits of what a computer can do is bound up only by the imagination of those people willing to attempt the programming of their computer.  My advice; reach for the stars!
 
 ## 22. Conclusion
+
 It has come time to close this column and move on. I want to thank Mike Schmidt our newsletter editor for the great job he has done organizing, printing, and mailing our club newsletter to all our members. All the people in the club who volunteer their time to help SPACE provide support for the ATARI community, deserve a hearty thanks. It’s the members, who support SPACE through membership and the purchase of DOMs, that are to be congratulated on keeping this group together for so long. Nice going. This is my last submission, I had a fun time, and I hope you gained a little more confidence in your own efforts.

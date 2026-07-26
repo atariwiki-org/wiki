@@ -14,20 +14,25 @@ Hierzu muss die Sprachbox mit zwei 1:1 Verlängerungskabeln mit den beiden Joyst
 Giga-Danke an Frank Asselheim für die Konservierung dieser sehr seltenen Software. Wir stehen alle tief in Deiner Schuld!
 
 ## ATR Image
+
 - [Sprachbox.atr](attachments/Sprachbox.atr) ; Original-Diskette mit BASIC- und ATMAS II-Programmen
 
 ## Literatur
+
 - [Bedienungsanleitung zur Sprachbox](attachments/Anleitung_Sprachbox_XL_XE.pdf) ; Größe: 3,3 MB ; Copyright (C) Verlag Werner Rätz, Jörg D. Lange, Andreas Binner und Harald Schönfeld
 - [Artikel aus dem ATARI Magazin 4/1988](attachments/Sprachbox.pdf) Größe: 883 KB ; Artikel aus dem "ATARI Magazin" Nr. 4/1988, Seiten 84 bis 86
 - [Artikel aus dem ATARI Magazin 4/1988 mit Schaltplan](attachments/Atari_Magazin_4-88-Sprachbox2-Abbuc115.pdf) ; Größe: 1,7 MB ; ; Artikel aus dem "ATARI Magazin" Nr. 4/1988, Seiten 84 bis 89 mit Schaltplan; Danke an den [ABBUC](http://www.abbuc.de) für das Sichern des Artikels in der Ausgabe #115. Ohne die Sicherung, insbesondere des Schaltplans, wäre die Sprachbox warscheinlich verloren gegangen. Vielen Dank!
 
 ## Schaltplan
+
 Im Atari Magazin 4/1988 ist ein Schaltplan der Sprachbox XL XE bereits vorgestellt, s. o., ferner arbeiten Guus Assmann und René Vetter an einer neuen Version dazu.
 
 ## Diskussion im Web
-- [http://www.abbuc.de/community/forum/viewtopic.php?f=7&t=9808](http://www.abbuc.de/community/forum/viewtopic.php?f=7&t=9808) ; Diskussion zur Sprachbox im ABBUC-Forum
+
+- [http://www.abbuc.de/community/forum/viewtopic.php?f=7\&t=9808](http://www.abbuc.de/community/forum/viewtopic.php?f=7&t=9808) ; Diskussion zur Sprachbox im ABBUC-Forum
 
 ## Bilder
+
 ![](attachments/Disketteninhalt.jpg)
 Sprachbox XL/XE - Inhaltsverzeichnis der Diskette
 

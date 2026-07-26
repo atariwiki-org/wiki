@@ -1,6 +1,5 @@
 # Kapitel 3: Arithmetik
 
-
 ## Stacknotation
 
 Im Folgenden werden hauptsächlich Worte in ihrer Einzelfunktion beschrieben. In dieser Form der Beschreibung, die Sie bereits kennengelernt haben, wird die Wirkung eines Wortes auf den Stack in Klammern angegeben, und zwar in folgender Form:
@@ -141,7 +140,9 @@ Der öffnenden runden Klammer folgt eine Aufzählung der Parameter. Dabei steht 
 
 Ein Wort SQRT, das die Quadratwurzel einer Integerzahl liefert, würde in FORTH so benannt und beschrieben:
 ```
+
 sqrt ( number -- sqrt )
+
 ```
 Wird dieses neue Wort aufgerufen, so werden alle darin enthaltenen Wörter ausgeführt, eventuell bereitgestellte Parameter bearbeitet und daraus resultierende Ergebnisse auf dem Stack übergeben.  
   

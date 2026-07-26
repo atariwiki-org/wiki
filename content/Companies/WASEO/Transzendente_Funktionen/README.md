@@ -2,7 +2,6 @@
 
 Die Programme sind exklusiv beim PD-Service des WASEO erhältlich, Diskette 1.000):
 
-
 Nach 45 Jahren ist es nun so weit, die transzendenten Funktionen für das Atari BASIC sind umgesetzt. Im Nachhinein fragt man sich natürlich, warum das so lange gedauert hat? Ferner werden viele Nicht-Atarianer davon noch nichts gehört haben. Im Anhang E des Atari Basic Reference Manuals findet man zwar die Beziehungen der jeweiligen Funktionen zu den implementierten Funktionen, wovon 2 jedoch fehlen und 3 nicht korrekt sind, auf der anderen Seite sind in Excel für den Mac 2019 immer noch 4 Funktionen nicht integriert.
 
 Der ABBUC ist immer daran interessiert seinen Mitgliedern vollständige Informationen zur Verfügung zu stellen, was hier an dieser Stelle nun passieren soll. Es reicht nicht die Gleichungen zu haben, man muss auch wissen, wie der Definitions- und Wertebereich aussieht, sonst kommt es zu unerwünschten Komplikationen.
@@ -14,6 +13,7 @@ Eingestehen muss ich aber auch, dass ich im Studium der Luft- und Raumfahrttechn
 Der ABBUC hat wieder einmal keine Mühen gescheut und bietet seinen Mitgliedern etwas ganz besonderes anlässlich der eintausensten PD-Diskette an: die kompletten transzendenten Funktionen, lauffähig in Atari BASIC programmiert. Neben den bereits bekannten: SIN, COS und ATN kommen jetzt noch 21 weitere Funktionen hinzu; hier die gesamte Übersicht in die jeweiligen Kategorien eingeordnet:
 
 ### Trigonometrische Funktionen:
+
 Sinus: SIN(X)
 Kosinus: COS(X)
 Tangens: TAN(X) = SIN(X) / COS(X)
@@ -22,6 +22,7 @@ Sekans: SEC(X) = 1 / COS(X)
 Kotangens: COT(X) = 1 / TAN(X) = COS(X) / SIN(X)
 
 ### Arkusfunktionen:
+
 Arkussinus: ARCSIN(X)
 Arkuskosinus: ARCCOS(X)
 Arkustangens: ARCTAN(X)
@@ -30,6 +31,7 @@ Arkussekans: ARCSEC(X) = ARCCOS(1 / X)
 Arkuskotangens: ARCCOT(X) = ARCTAN(1 / X)
 
 ### Hyperbelfunktionen:
+
 Hyperbolischer Sinus: SINH(X)
 Hyperbolischer Kosinus: COSH(X)
 Hyperbolischer Tangens: TANH(X)
@@ -38,6 +40,7 @@ Hyperbolischer Sekans: SECH(X) = 1 / COSHYP(X)
 Hyperbolischer Kotangens: COTH(X) = 1 / TANHYP(X)
 
 ### Areafunktionen:
+
 Areasinus Hyperbolicus: ARCSINH(X)
 Areakosinus Hyperbolicus: ARCCOSH(X)
 Areatangens Hyperbolicus: ARCTANH(X)

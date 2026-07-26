@@ -5,12 +5,11 @@ This approach to assembly language is meant to give the reader a practical basic
 Chris Crawford is a self taught programmer that was interested in developing a computer wargame (s) simulation.
 Here he approaches learning assembly language in an informal light-hearted way with personal comments and suggestions, throughout the technical material.
 
-__Download Disk__: [ASSTUTO1.ATR](attachments/ASSTUTO1.ATR) 
+**Download Disk**: [ASSTUTO1.ATR](attachments/ASSTUTO1.ATR)
 
 The material is covered in 8 sections consisting of these headings
 
 ---
-
 
 ---
 
@@ -49,11 +48,9 @@ The registers are simply on-board RAM.  The address bus controller is a device t
 
 Machine code is nothing more than a bunch of numbers that mean something to the CPU. It's hard to work with pure numbers, so we use a little code that makes it easier for us to understand the codes that the computer uses. This programmer- friendlier code is called assembly language, It is a direct, one-to-one translation of machine code. Here is an example of the two side by side:
 
-
 || Machine Code || Assembly Language
 | A9 05 | LDA #FINGERS
 | 133 $9C | STA COUNT
-
 
 The code on the right may not look very readable, but you must agree, it's far more readable than the code on the left. And they both mean exactly the same thing. Unfortunately, the computer cannot read the assembly code, only the machine code. Therefore, we need a translator program that will translate the easier-to-understand code on the right into the impossible-to-understand code on the left. This translator program is called an assembler.
 
@@ -106,7 +103,6 @@ In this lecture I will take up the problem of arithmetic on the 6502. I choose t
 Before we can do arithmetic, though, you must know a little bit about number systems. There are three that you must know: decimal, binary, and hexadecimal. Decimal is the standard numbers you have used since grade school. You count 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, and then you reach 0 again, so you put down a 1 in the tens place and resume counting from 0.
 
 Binary works the same way, except that there are only two digits, not ten. The two digits are 0 and 1. You count 0, then 1, then you reach 0 again, so you put down a 1 in the twos place and resume counting from 0. Thus, counting from 0 to ten in binary like this:
-
 
 || Decimal || Binary
 | 0 | 0
@@ -165,7 +161,7 @@ The code does the following: first it adds the two low values. If the addition r
 
 For subtraction, you use the SEC instruction ("Set Carry"). Otherwise, you handle subtraction the same way that you handle addition. In both addition and subtraction, though, the low bytes must be handled first, then the higher bytes in the proper order (lower to higher).
 
-# DECIMAL & SIGNED ARITHMETIC
+# DECIMAL \& SIGNED ARITHMETIC
 
 There are two variations on standard 6502 arithmetic. Both are so rarely used that I will not treat them here. The first is decimal arithmetic using the Decimal flag. This allows you to set up an automatic decimal adjust mode. This is useful in certain types of arithmetic, primarily BCD arithmetic.
 
@@ -259,7 +255,6 @@ Rotate instructions are a handy way to get a particular bit into the carry bit w
 
 The last instructions I will cover are the increment and decrement instructions. These allow you to add one (increment) or subtract one (decrement) from a memory location. These are not considered to be arithmetic operations so they do not affect the Carry flag, nor are they affected by it. You cannot increment or decrement the accumulator, only RAM locations.
 
-
 ## BRANCHING
 
 One of the most important ideas in computing is the concept of conditional execution. This is the ability of the program to execute different routines depending on conditions at the time of execution. The significance of this capability is best realized by considering how programs would operate in its absence. A program without conditional execution would not be able to change its program flow in response to conditions.
@@ -306,7 +301,7 @@ This code is supposed to branch to POSANSR if FISH is greater than GOAT. And ind
 
 Otherwise, you'll screw up someday. By the way, the correct branch to use in the above problem is BCS. Now for a catch with the branch instructions. A JMP instruction is a simple absolute jump -- you specify the target address and it goes there. The designers of the 6502 realized that the vast majority of branch instructions only go a short distance. They therefore decided to implement the branch instruction as a relative branch. The machine code doesn't specify the target of the branch, it only specifies an offset. In other words, instead of saying, "jump there", it says, "jump so many bytes forward or backward". The allowable range is 126 bytes forward or backward. Thus, you can't branch anywhere you want, only to nearby locations. If you must branch further, reverse the logic of the branch and use the branch to skip over a JMP statement.
 
-## INDEX REGISTERS & LOOPING
+## INDEX REGISTERS \& LOOPING
 
 We are now going to expand the model of the 6502 that you have been using. Until now, the 6502 I have described had nothing more than a status register, program counter, and accumulator. Now I am going to reveal the existence of two new registers in the 6502: the X- and Y-registers.
 
@@ -372,7 +367,7 @@ There is also a problem on choosing whether to BNE or BPL. BPL restricts you to 
 
 There are lots of other sneaky ways to terminate loops, but they fall into advanced topics.
 
-## SUBROUTINES & THE STACK
+## SUBROUTINES \& THE STACK
 
 We now take up the first topic in this series that is not absolutely essential to writing programs: subroutines. The loops and indexed addressing discussed in the previous lecture are truly essential: it is hardly possible to write a useful program that has no loops.
 
@@ -489,4 +484,3 @@ The 68000 has a linear address space 24 bits wide -- that's sixteen megabytes! T
 Finally, the 68000 has a number of advanced capabilities that make possible a number of special capabilities. I will describe just one stack frames. The 68000 makes it easy to set up a local, temporary stack when you enter a subroutine. Thus, subroutines can have their own local variables stored on the stack, accessed via a special stack pointer register. The 68000 will manage all the housekeeping necessary to keep such a system straight.
 
 Did I mention that 68000 has hardware multiply/divide?
-

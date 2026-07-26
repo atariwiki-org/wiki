@@ -1,6 +1,7 @@
 # Showstack
 
 ## Displaying Stack Contents
+
 The contents of the stack are normally invisible. However, properly visualizing
 the current stack contents is important for achieving the desired result. To
 show the stack contents with every  {{{ok}}} prompt, type: {{{showstack}}}
@@ -19,12 +20,11 @@ The topmost stack item is always shown as the last item in the list, immediately
 "ok" prompt. In the above example, the topmost stack
 item is 8.
 
-
-__showstack__ ( -- )
+**showstack** ( -- )
 
 Prints the content of the stack preceding the "ok" prompt.
 
-__noshowstack__ ( -- )
+**noshowstack** ( -- )
 
 Stops printing of the stack content
 
@@ -50,4 +50,3 @@ BASE ! ( restore base )
   
 
 ```
-

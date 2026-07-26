@@ -1,6 +1,7 @@
 # 6502 Programmieren - Teil 6
 
 ### von Reinhard Wilde
+
 Hallo Fans. Ich begrüße Euch nach kurzer Pause zum neuen Teil des Maschinensprache-Lehrgangs. Heute wollen wir uns weitere Maschinenbefehle anschauen.
 
 Diesmal habe ich die Rechenbefehle "ADC" und "SBC" ausgesucht.
@@ -26,6 +27,7 @@ Weitere Informationen über die Flags des Prozessor-Status-Registers findet Ihr 
 Nun also zum Befehl "ADC". Aus der Befehlsbezeichnung wird man unter Umständen nicht all zu schlau. Addiert den Inhalt der angegebenen Speicherstelle oder Konstante zum Wert im ACCU. War das Carry-Flag vor dem Aufruf des Befehls gesetzt, wird das Ergebnis noch um eins erhöht. Wenn während des Addierens der Wertebereich des ACCUs (0-255) überschritten wird, ist das Carry-Flag nach der Befehlsausführung gesetzt. Dadurch können auch Werte über 255 zusammengezählt werden. Das Ergebnis der Rechnung steht nach der Ausführung des "ADC"-Befehls im ACCU.
 
 Beispiel 1: 3+4=?
+
 ```
 00010     LDA #3
 00020     CLC
@@ -33,6 +35,7 @@ Beispiel 1: 3+4=?
 00040     STA $E0
 00050     RTS
 ```
+
 Zunächst laden wir den ACCU mit dem Wert 3. Dann muss das Carry-Flag gelöscht werden, damit ein zufällig gesetztes Carry-Flag nicht das Ergebnis verfälscht. Der "ADC"-Befehl addiert zu dem Wert 3 den Wert 4. Das Ergebnis, das sich im ACCU befindet, legen wir zum späteren Überprüfen in der Zeropage-Speicherstelle $E0 ab.
 
 Somit wäre unser erstes Rechenprogramm fertig. Das kurze Listing wird, wie üblich, im BIBO-Assembler eingegeben und nach dem Befehl "ASM" assembliert. Nach dem Assemblieren steht das Maschinenprogramm ab der Adresse $4000 im Speicher.
@@ -46,6 +49,7 @@ Wir haben aber noch eine wesentlich komfortablere Möglichkeit das Programm zu t
 Zurück zum Assembler kommt Ihr durch drücken der Tasten "Q" und "RETURN" oder "RESET".
 
 Beispiel 2: ?+?=?
+
 ```
 00010     LDA #$24
 00020     STA $E0
@@ -58,6 +62,7 @@ Beispiel 2: ?+?=?
 00090     STA $E2
 00100     RTS
 ```
+
 Im 2. Beispiel steht die eigentliche Rechenroutine in den Zeilen 60 bis 90. Dieses mal ist unser Programm etwas variabler. In Zeile 60 wird der ACCU mit dem Wert geladen, der in der Speicherstelle $E0 steht. In Zeile 80 zählt der Prozessor den Wert in der Speicherstelle $E1 zum Wert im ACCU hinzu. Das Ergebnis befindet sich wieder im ACCU und wird in Zeile 90 zu Testzwecken in die Speicherstelle $E2 geschrieben. Damit unsere zu addierenden Werte auch feststehen, werden diese in den Zeilen 10 bis 40 in die Speicherstellen $E0 und $E1 geschrieben.
 
 Das Semikolon in Zeile 50 hat keinen Einfluss auf das zu assemblierende Programm. Es hat die gleiche Bedeutung wie der Befehl "REM" in BASIC. Alle eventuell dahinter stehenden Zeichen (zum Beispiel Text oder erklärende Stichworte) ignoriert der Assembler. In diesem Fall dient das Semikolon der Übersichtlichkeit des Programmlistings.
@@ -65,6 +70,7 @@ Das Semikolon in Zeile 50 hat keinen Einfluss auf das zu assemblierende Programm
 Um die Aufgabe des Carry-Flags zu demonstrieren, müssen wir größere Zahlen als 255 miteinander addieren.
 
 Beispiel 3: $290+$380=?
+
 ```
 00010     LDA #$90
 00020     CLC
@@ -75,6 +81,7 @@ Beispiel 3: $290+$380=?
 00070     STA $E1
 00080     RTS
 ```
+
 Zuerst werden die niederwertigen Anteile beider Zahlen miteinander addiert - $90 + $80 ergibt $110. Da der ACCU aber nur 8 Bit Breite hat (eben 0-255) steht anschließend nur der niederwertige Anteil des Ergebnisses im ACCU, der Übertrag
 für die nächsthöhere Stelle wird daher im Carry-Flag vermerkt - die Eins.
 
@@ -83,6 +90,7 @@ Nun werden beide höherwertigen Anteile der Zahlen addiert, und da das Carry-Fla
 Soviel erst mal zum "ADC"-Befehl. Der "SBC"-Befehl arbeitet eigentlich nicht anders als der "ADC"-Befehl, nur dass vom ACCU subtrahiert. Das Carry-Flag wird hier entsprechend anders herum gewertet. Sollte ein Übertrag auf die nächsthöhere Stelle stattfinden, wird dies durch ein gelöschtes Carry-Flag gekennzeichnet.
 
 Beispiel 4: 8-3=?
+
 ```
 00010     LDA #8
 00020     SEC
@@ -90,9 +98,11 @@ Beispiel 4: 8-3=?
 00040     STA $E0
 00050     RTS
 ```
+
 Zuerst wird wieder der ACCU mit dem Wert 8 geladen. Um das Ergebnis nicht durch ein zufällig gelöschtes Carry-Flag zu verfälschen, muss dieses gesetzt werden. Dann wird vom Inhalt des ACCUs der Wert 3 subtrahiert und das Ergebnis wiederum in Speicherstelle $E0 abgelegt.
 
 Beispiel 5: ?-?=?
+
 ```
 00010     LDA #$C6
 00020     STA $E0
@@ -105,9 +115,11 @@ Beispiel 5: ?-?=?
 00090     STA $E2
 00100     RTS
 ```
+
 Wie in Beispiel 2 nimmt der Prozessor die beiden Werte wieder aus den Speicherstellen $E0 und $E1. Inhalt von $E0 minus dem Inhalt von $E1. Das Ergebnis wird zum überprüfen in Speicherstelle $E2 gespeichert.
 
 Beispiel 6: 25000-8000=?
+
 ```
 00010     LDA #25000
 00020     SEC
@@ -118,6 +130,7 @@ Beispiel 6: 25000-8000=?
 00070     STA $E1
 00080     RTS
 ```
+
 Hier lasse ich mir die nieder- und höherwertigen Anteile der in dezimaler Form angegebenen Zahlen vom Assembler ausrechnen. Das Doppelkreuz weist den Assembler an, nur den niederwertigen Anteil der Zahl hinter dem Befehl einzusetzen. Der Schrägstrich bedeutet, dass nur der höherwertige Anteil eingesetzt wird. Ich rechne hier wieder mit 16-Bit breiten Zahlen, deren Werte im Bereich von 0 bis 65535 liegen können.
 
 Die Arbeitsweise des Maschinenprogramms ist ähnlich der des Beispiels 3, nur dass hier subtrahiert wird. Zuerst wird also der niederwertige Anteil der Zahl 25000 geladen, vorsorglich das Carry-Flag gesetzt und der niederwertige Anteil der Zahl
@@ -132,6 +145,7 @@ Zum einwandfreien Verständnis der Rechenbefehle solltet Ihr ruhig die Werte hin
 Viel Spaß also bis zum nächsten Mal Euer R. Wilde.
 CSM / 12.1988
 ---
+
 Der Artikel entstammt der Kursreihe „6502 Programmieren“ des Compy Shop Diskettenmagazins. Die Kursreihe besteht aus 14 Kursen, die im Laufe des Jahres 2011 in unregelmäßigen Abständen einzeln veröffentlicht werden, bzw. anschließend als Zusammenzug als ABBUC-Buch „6502 Programmieren“ erscheinen.
 Koordination: Volkert Barr (volkert@nivoba.de)
 Version 1.1 / 2011-01-23

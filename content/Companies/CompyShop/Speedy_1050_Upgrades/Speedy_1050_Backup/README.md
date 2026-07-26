@@ -1,8 +1,9 @@
 # Speedy 1050 Backup
 
-[atari001.png](attachments/atari001.png) 
+[atari001.png](attachments/atari001.png)
 
 ## Disk Image
+
 - [biboass3.atr](attachments/biboass3.atr)
 
 ## Source
@@ -10,6 +11,7 @@
 - [BACKUP.pdf](attachments/BACKUP.pdf)
 
 ### BACKUP.ASM
+
 ```
 00010          .LI ON
 00020 ------------------------------

@@ -24,12 +24,14 @@ Die ersten drei Befehle INC, INX und INY dienen dem Inkrementieren von Speichers
 Der INC-Befehl bezieht sich hierbei aus schließlich auf Speicherstellen und kann in zwei Formen verwendet werden:
 
 ### INC ADR
+
 Der Wert der Adresse ADR wird um einserhöht und wieder in ADR abgelegt. Der ACCU, das X- und Y-Register werden sowohl hier als auch bei der gleich folgenden Adressierungsart nicht verändert. Je nach Ergebnis wird das Negativ- oder das Zero-
 Flag gesetzt.
 
 Das Negativ-Flag wird immer dann gesetzt, wenn das Ergebnis größer als $7F=127 ist, das Zero-Flag, wenn das Ergebnis gleich 0 ist.
 
 ### INC ADR,X
+
 Hier passiert im Grunde dasselbe wie bei INC ADR, nur dass die Adresse, deren Inhalt inkrementiert wird, ADR+X ist. Das heißt, dass zu der Adressangabe ADR der Inhalt des X-Registers addiert wird, um die endgültige Adressangabe zu erhalten.
 
 Die Befehle INX und INY inkrementieren das X- oder das Y-Register. Je nach Ergebnis werden wieder Negativ- oder Zero-Flag gesetzt. Der ACCU kann nicht auf diese Weise inkrementiert werden. Um den Inhalt des ACCU zu erhöhen oder zu vermindern muss der ADC oder der SBC Befehl benutzt werden, der in der letzten Folge des Kurses erklärt wurde.
@@ -41,6 +43,7 @@ Diese sechs vorgestellten Befehle werden sehr häufig in allen möglichen Schlei
 Die nächsten vier Befehle ASL, LSR, ROL, ROR bewirken eine Verschiebung der Bits in einem Byte nach links oder rechts. ASL ist die Kurzform für "arithmetic shift left", was einfach nur bedeutet, dass die Bits nach links geschoben werden. Der direkte Gegenbefehl ist LSR, "logical shift right", also nach rechts schieben.
 
 Beispiel: ASL
+
 ```
 vorher:
 Bit : 7 6 5 4 3 2 1 0
@@ -50,9 +53,11 @@ nachher:
 Bit : 7 6 5 4 3 2 1 0
 Wert: 0 1 1 0 1 0 1 0 Carry-Flag: 0
 ```
+
 Es wurden alle Bits um eine Position nach links verschoben. Bit 7, das eigentlich aus dem Byte 'herausgeschoben' wird, wird ins Carry-Flag übertragen. Bit 0 ist nach einer Verschiebung nach links immer 0.
 
 Beispiel: LSR
+
 ```
 vorher:
 Bit : 7 6 5 4 3 2 1 0
@@ -62,17 +67,21 @@ nachher:
 Bit : 7 6 5 4 3 2 1 0
 Wert: 0 1 0 0 1 1 0 0 Carry-Flag: 1
 ```
+
 Alle Bits wurden hier eine Position nach rechts verschoben. Bit 7 ist nach der Verschiebung immer 0. Das 'herausgeschobene' Bit 0 findet Aufnahme im Carry-Flag.
 
 ASL und LSR können auf den Akkumulator, auf Adressen und X-indizierte Adressen angewendet werden:
+
 ```
 ASL         LSR         (ACCU)
 ASL ADR     LSR ADR     (Adresse=ADR)
 ASL ADR,X   LSR ADR,X   (Adresse=ADR+X)
 ```
+
 Die Befehle ROL und ROR stehen für "rotate left" und "rotate right". Rotieren steht hier für eine besondere Art des Verschiebens. Die Besonderheit besteht darin, dass Bit 0 oder 7, die je nach Verschiebungsrichtung einfach gleich 0 gesetzt wurden, nun den Status des Carry-Flags zu Anfang der Verschiebung erhalten. Die Adressierungsarten entsprechen denen von ASL und LSR.
 
 Beispiel: ROL
+
 ```
 vorher:
 Bit : 7 6 5 4 3 2 1 0
@@ -82,7 +91,9 @@ nachher:
 Bit : 7 6 5 4 3 2 1 0
 Wert: 1 1 0 1 1 0 0 1 Carry-Flag: 0
 ```
+
 Beispiel: ROR
+
 ```
 vorher:
 Bit : 7 6 5 4 3 2 1 0
@@ -92,12 +103,14 @@ nachher:
 Bit : 7 6 5 4 3 2 1 0
 Wert: 1 1 1 0 0 1 1 1 Carry-Flag: 0
 ```
+
 Der Sinn in Verschiebungen überhaupt liegt darin begründet, dass sich Bytes so sehr leicht untersuchen lassen. Auch Rechenfunktionen lassen sich einfach mit den Verschiebebefehlen realisieren. Eine Verschiebung nach links (ASL, ROL) entspricht einer Multiplikation mit 2, zwei Verschiebungen eine Multiplikation mit 4, 3 = 8, 4 = 16 und so weiter. Eine Division mit den gleichen Faktoren lässt sich mit den Verschiebungen nach rechts (LSR, ROR) realisieren.
 
 Eine weitere Möglichkeit Bytes zu verarbeiten besteht in der logischen Verknüpfung von zwei Bytes. Bei den folgenden drei Verknüpfungsarten wird ein Byte des Speichers oder eine Konstante mit dem ACCU verknüpft. Das daraus folgende
 Ergebnis wird im ACCU abgelegt.
 
 ### AND
+
 ```
 Bit  : 7 6 5 4 3 2 1 0
 Wert1: 0 1 1 0 1 1 0 0
@@ -105,10 +118,12 @@ Wert2: 1 1 0 0 1 0 1 1
        ---------------
 Erg. : 0 1 0 0 1 0 0 0
 ```
+
 UND-Verknüpfung:
 Nur Bits, die bei beiden Werten gesetzt sind, sind auch bei dem Ergebnis gesetzt.
 
 ### ORA
+
 ```
 Bit  : 7 6 5 4 3 2 1 0
 Wert1: 0 0 1 1 0 1 1 0
@@ -116,10 +131,12 @@ Wert2: 0 1 0 1 0 0 1 0
        ---------------
 Erg. : 0 1 1 1 0 1 1 0
 ```
+
 ODER-Verknüpfung:
 Alle Bits, die bei dem einen oder anderen Wert gesetzt sind, sind auch bei dem Ergebnis gesetzt.
 
 ### EOR
+
 ```
 Bit  : 7 6 5 4 3 2 1 0
 Wert1: 0 1 1 0 0 1 1 0
@@ -127,6 +144,7 @@ Wert2: 0 1 0 0 1 1 0 1
        ---------------
 Erg. : 0 0 1 0 1 0 1 1
 ```
+
 EXCLUSIV-ODER-Verknüpfung:
 Wenn zwei Bits gleicher Nummer den gleichen Status aufweisen (0+0 oder 1+1), so ist der Status des Bits beim Ergebnis 0. Bei unterschiedlichen Belegungen (1+0 oder 0+1), ist das resultierende Bit 1.
 
@@ -147,6 +165,7 @@ In diesem Sinne bis nächsten Monat.
 Ihr Uwe Röder
 CSM / 2.1989
 ---
+
 Der Artikel entstammt der Kursreihe „6502 Programmieren“ des Compy Shop Diskettenmagazins. Die Kursreihe besteht aus 14 Kursen, die im Laufe des Jahres 2011 in unregelmäßigen Abständen einzeln veröffentlicht werden, bzw. anschließend als Zusammenzug als ABBUC-Buch „6502 Programmieren“ erscheinen.
 Koordination: Volkert Barr (volkert@nivoba.de)
 Version 1.1 / 2011-01-23

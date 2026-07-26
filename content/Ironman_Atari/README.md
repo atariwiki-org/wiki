@@ -2,7 +2,6 @@
 
 by Mark Schmelzenbach
 
-
 ## Introduction
 
 Welcome to "Ironman Atari", a collection of articles detailing new techniques in Atari 8-bit programming. Although the golden Age for Atari has long passed, several new programming methods have been discovered or rediscovered over the past decade. These new methods push and twist classic Atari iron in ways that might have surprised even Jay Miner himself.
@@ -15,19 +14,19 @@ All examples will be written for ATasm, a MAC/65 compatible assembler, and will 
 
 It is assumed that the reader is already familiar with the Atari computer platform and assembly language. Additional reference material is provided below:
 
-__Atari Graphics and Advanced Arcade Game Design__ , by Jeffrey Stanton and Dan Pinal. The full text of this book is available on-line at [http://www.atariarchives.org/agagd](http://www.atariarchives.org/agagd) 
+**Atari Graphics and Advanced Arcade Game Design** , by Jeffrey Stanton and Dan Pinal. The full text of this book is available on-line at [http://www.atariarchives.org/agagd](http://www.atariarchives.org/agagd)
 
-__Atari Hardware Manual Atari Roots, A Guide to Atari Assembly Language__, by Mark Andrews. The full text is available at [http://www.atariarchives.org/roots](http://www.atariarchives.org/roots) 
+**Atari Hardware Manual Atari Roots, A Guide to Atari Assembly Language**, by Mark Andrews. The full text is available at [http://www.atariarchives.org/roots](http://www.atariarchives.org/roots)
 
-__De Re Atari ? By Chris Crawford, Lane Winner, Jim Cox, Amy Chen, Jim Dunion, Kathleen Pitta, Bob Fraser, and Gus Makrea__. This is THE seminal work on the Atari home computer and should be considered required reading. The full text can be found on-line at [http://www.atariarchives.org/dere](http://www.atariarchives.org/dere) 
+**De Re Atari ? By Chris Crawford, Lane Winner, Jim Cox, Amy Chen, Jim Dunion, Kathleen Pitta, Bob Fraser, and Gus Makrea**. This is THE seminal work on the Atari home computer and should be considered required reading. The full text can be found on-line at [http://www.atariarchives.org/dere](http://www.atariarchives.org/dere)
 
-__Dr. C. Wacko's Miracle Guide to Designing and Programming Your Own Atari Computer Arcade Games, by Robert Kurcina, David L. Heller, and John F. Johnson__. This book can still be found on [http://www.amazon.com](http://www.amazon.com).
+**Dr. C. Wacko's Miracle Guide to Designing and Programming Your Own Atari Computer Arcade Games, by Robert Kurcina, David L. Heller, and John F. Johnson**. This book can still be found on [http://www.amazon.com](http://www.amazon.com).
 
-__Mapping the Atari! Revised Edition, by Ian Chadwick__. The full text can be found online at [http://www.atariarchives.org/mapping](http://www.atariarchives.org/mapping) 
+**Mapping the Atari! Revised Edition, by Ian Chadwick**. The full text can be found online at [http://www.atariarchives.org/mapping](http://www.atariarchives.org/mapping)
 
 Eventually, I would like to see this expand into a larger work with well-commented programs and games that demonstrate the advanced techniques described. It is not just technology that has advanced over the last 25 years, but also the sophistication of the gaming market. There are several games that exist today, particularly on handheld devices such as phones and the GBA/DS/PSP or the emerging Flash based minigame market that are not out of reach for the Atari 8-bit. All it takes is the knowledge to program and the time to do so. Here is to the next 25 years!
 
---Mark Schmelzenbach, ed.
+\--Mark Schmelzenbach, ed.
 
 Disclaimer: As always, errors inevitably creep into a work such as this. If you find an error or better yet, if you wish to submit an article for inclusion in a future release, please contact me.
 
@@ -40,6 +39,7 @@ The following is a list of my current programming environment. HTML links and sh
 Additional disclaimer: I am the author of ATasm and envisionPC.
 
 ### Hardware
+
 - Pentium 4 machine running Linux
 - SIO2PC cable: These cables can be purchased through the AtariAge store, from Steven Tucker, on eBay, or you can build your own.  This cable in conjunction with the proper software turns your PC into a fileserver for the real Atari computer.
 - AtariSIO version 0.2.0:  AtariSIO is a Linux kernel module and user-level program by Mattias Reichl that allows the use of a SIO2PC cable under Linux.  AtariSIO is available at [http://www.horus.com/~hias/atari](http://www.horus.com/~hias/atari)
@@ -48,34 +48,37 @@ Additional disclaimer: I am the author of ATasm and envisionPC.
 - Atari130XE  (NTSC, stock)
 
 ### Assemblers
+
 - EMACS as primary editor (vi on occasion)
 - ATasm v #5:  ATasm is highly compatible with the original OSS Mac/65 native compiler.  ATasm is written in C, and compiles without modification on any platform that has a GCC compiler.  ATasm has been specifically designed for the development of programs for the Atari home computer.  It can produces Atari native binary load object files, raw cartridge images, and can optionally target the machine state files produced by many emulators.  Binary load files can also be written to disk images for easy loading in other emulators or onto real hardware via SIO2PC.  It is available at [http://atasm.sourceforge.net](http://atasm.sourceforge.net)
 - Another popular assembler that is also Atari specific is XASM by Fox of Taquart. This assembler is compatible with JBW's Quick Assembler, which was the primary assembler used in Poland and other eastern European countries during the 1990s. XASM includes several pseudo-instructions (like mva) and pseudo-indexing modes. In addition, it can generate Atari native binary object files and has includes utilities to create boot disk images.  XASM can be found at [http://atariarea.krap.pl/x-asm/](http://atariarea.krap.pl/x-asm/)
 - If you are looking for a Linux assembler that is Quik Assembler compatible, try a program called Zooey, found at [http://atari8.sourceforge.net/zooey.html](http://atari8.sourceforge.net/zooey.html)
-- Another assembler worth considering is the MADS assembler, found at http://mads.atari8.info/;  The latest documentation is always provided in Polish, however there is an English translation of version 1.9.5 provided here: [http://mads.atari8.info/mads_eng.html](http://mads.atari8.info/mads_eng.html)
+- Another assembler worth considering is the MADS assembler, found at http://mads.atari8.info/;  The latest documentation is always provided in Polish, however there is an English translation of version 1.9.5 provided here: [http://mads.atari8.info/mads\_eng.html](http://mads.atari8.info/mads_eng.html)
 
 ### Compilers
+
 - Some projects have been written using cc65, a version of C that targets the 6502.  In addition to providing a high-level language, the project also provides an assembler and a powerful linker, allowing basic library management.  cc65 can be found at [http://www.cc65.org/](http://www.cc65.org/). Please note that cc65 is no longer developed, support slowed down and the website will lead you to other sites.
 
 ### Graphics editors
+
 - envisionPC is a font/map editing program similar to the original Envision program written for the Atari. It runs on an IBM PC (either Linux or DOS/Windows) and includes all source code.  It will load and save maps and character sets to disk images, MAC/65, and Action! formats.  It is available at [http://atari.miribilist.com/envision/index.html](http://atari.miribilist.com/envision/index.html)
 - gEnvision is another Envision-like program written for Linux written by Larry Richardson.  gEnvision will allow you to edit Atari character sets in either single or multicolor modes.  It will let you create character based "maps" of up to 256x256 characters.  It will save characters sets and maps as MAC/65 source code. gEnvision is available at [http://bellsouthpwp.net/r/i/rich5462](http://bellsouthpwp.net/r/i/rich5462)
 - graph2font is a conversion utility for full screen pictures.  Graph2Font has evolved into a full-featured graphics editor and conversion tool.  The latest version can be found at [http://g2f.atari8.info](http://g2f.atari8.info)
 - GIMP and a number of homebrew tools for graphics conversion
 
 ### Sound editors
+
 - RMT: RASTER Music Tracker (RMT) is a cross-platform tool for making music on a Windows PC. RMT uses Atari music routines written by Radek Sterba. The latest version (1.28) is available at [http://raster.infos.cz/atari/rmt/rmt.htm](http://raster.infos.cz/atari/rmt/rmt.htm). Please note that RMT is no longer supported due to Radek passing away.
 - sox: Sound eXchange : universal sound sample translator is a UNIX utility used to convert samples between formats.
 - Homebrew tools to convert .WAV to 4-bit samples playable on the Atari.
 
 ### Emulators
+
 - Atari800 #3.3 emulator:  This is free and portable Atari800/XL/XE/5200 emulator, originally written by David Firth and now developed by the Atari800 Development Team headed up by Petr Stehlik.  This is the primary emulator that I use.  It has a very nice monitor for debugging and recently has added cycle-exact emulation and greatly improved POKEY emulation. The Atari800 emulator is available at [http://atari800.sourceforge.net](http://atari800.sourceforge.net).
 - The Atari++ emulator is also an excellent emulator by Thomas Richter.  It was the first cycle-exact emulator and provides many useful functions including a very nice monitor and emulation of Flash cartridges.  Atari++ is available at [http://www.math.tu-berlin.de/~thor/atari++](http://www.math.tu-berlin.de/~thor/atari++)
 - Atari800Win Plus: This emulator is Windows only, but is considered one of the best emulators around.  It can be found at [http://www.a800win.atari-area.prv.pl](http://www.a800win.atari-area.prv.pl).
 
 Although cross-platform development has come a long way, always remember that it is vitally important to test your programs on the real machine.  Many of the techniques detailed within require cycle-exact timing and push the hardware in strange ways that emulators may or may not properly emulate.
-
-
 
 ## Graphics Modes
 
@@ -177,9 +180,9 @@ carefully placing the mode 9 pixels, HIP has an average bit-depth of HIP of 3.5 
 | mode 10  | mode 9
 | ...  | ...
 
-
 Since GTIA mode 9 obtains its background color from register 712 and mode 10 obtains
 its background color from register 704, it is easiest to assign the palette as follows:
+
 ```
 704 $00 708 $08 712 $00 
 705 $02 709 $0A 
@@ -192,7 +195,6 @@ the background color.  However, it simplifies the DLI routine as now only the GP
 register needs to be set instead of alternating the background registers on every line.  By
 selecting the above colors, a palette of 30 colors becomes available in HIP by selecting
 the appropriate color in each display list as detailed below:
-
 
 | 9     | #000  | #111  | #222  | #111  | #222  | #333  | #444  | #333  | #444  |
 | 10   | #000  | #000  | #000  | #222  | #222  | #222  | #222  | #444  | #444  |
@@ -207,11 +209,10 @@ the appropriate color in each display list as detailed below:
 | 10   | #EEE  | #EEE  | #EEE  |   |  |  |  |  |  |
 | HIP  | #D.5  | #E.0  | #E.5  |   |  |  |  |  |  |
 
-
 To display a HIP picture, a special display list set can be constructed that alternates
 between screens every frame.  In addition, two DLI routines need to be written: one to
 alternate between GTIA modes 9 and 10 and the other to alternate between modes 10 and
-9.  A simple display routine is included below.
+9\.  A simple display routine is included below.
 
 HIP pictures are difficult to create because the pixels cannot be independently set.  This is
 due to the fact that we are simulating a 160 pixel wide display by overlapping two offset
@@ -251,14 +252,12 @@ GTIA 9/10 line as shown in the figure below. Unfortunately, adding this extra li
 the vertical resolution and introduces dark lines. On the other hand, pixels are now
 square, which helps conversion.
 
-
 || DLIST ONE  || DLIST TWO  ||
 | mode 11  | mode 11  |
 | mode 9  | mode 10  |
 | mode 11  | mode 11  |
 | mode 10  | mode 9  |
 | ... |  ...  |
-
 
 TIP pictures can be converted manually from a 24-bit picture in following manner.  First,
 scale or crop the picture to an appropriate size (160x120).  Second, map the picture to the
@@ -275,7 +274,6 @@ many of the techniques described here).  As part of the source release, they hav
 conversion utilities including a HIP to TIP colorizer utility and a simple PCX to TIP
 converter.
 
-
 ### GTIA 9++
 
 This text is based on a translation of the original article published in Polish magazine
@@ -289,6 +287,7 @@ enough memory-bartprint that the entire screen can be updated in a single vertic
 (depending, of course, on the complexity of the drawing routines).  When Konop's mode
 is used in GTIA mode 9, it is also referred to as GTIA 9+.  Konop's mode is generated by
 creating a specialized display list.  Each mode line is generated by a the following:
+
 ```
 $0f line of mode 15 
 $00 blank line 
@@ -304,10 +303,10 @@ In addition to the cleaner looking display, GTIA++ has a few other advantages ov
 Konop's mode:
 
 1. The display list is significantly shorter.
-1. The display list only uses one LMS instruction, so instead of using two display lists for double-buffering, the screen-address in the DL can be directly altered.
-1. The height of each line mode can be easily modified (up to a height of 16 pixels).
-1. ANTIC takes less cycles to display a GTIA 9++ mode.  This comes as a trade off for some extra work for the CPU.  Although not much is required of the CPU, the work must be carefully synchronized with the display.  This means that a simple implementation of GTIA 9++ will not show significant savings.  A less naïve method can be written with additional programming effort.
-1. The method used can be used in other ANTIC modes to generate, for example, a hardware-supported 40x40 text-mode.  TMC 2.0 uses this technique to create a textmode screen of 40x39.  See the discussion at the end of this section for more details.
+2. The display list only uses one LMS instruction, so instead of using two display lists for double-buffering, the screen-address in the DL can be directly altered.
+3. The height of each line mode can be easily modified (up to a height of 16 pixels).
+4. ANTIC takes less cycles to display a GTIA 9++ mode.  This comes as a trade off for some extra work for the CPU.  Although not much is required of the CPU, the work must be carefully synchronized with the display.  This means that a simple implementation of GTIA 9++ will not show significant savings.  A less naïve method can be written with additional programming effort.
+5. The method used can be used in other ANTIC modes to generate, for example, a hardware-supported 40x40 text-mode.  TMC 2.0 uses this technique to create a textmode screen of 40x39.  See the discussion at the end of this section for more details.
 
 This new graphics mode was used to great affect in Taquart's ?Numen? demo in the Vector engine section.
 
@@ -333,6 +332,7 @@ display list instruction is fetched otherwise the DCTR is incremented and the li
 repeated.
 
 Consider the following display list, using ANTIC mode 8 and VSCROL set to 6:
+
 ```
 $28 line of mode 8, vertical scroll bit set 
 $08 line of mode 8, vertical scroll bit clear 
@@ -371,6 +371,7 @@ $0f line of mode 15, vertical scroll bit clear
 ```
 
 and the VSCROL register needs to be updated at the proper time.
+
 ```
 DCTR 
  13 @------------------------- 
@@ -402,8 +403,8 @@ window, consisting of only a few cycles, in which to write 13 into VSCROL.
 Manipulation of the VSCROL register can be done in three ways:
 
 1. using a DLI
-1. inside of unrolled effect code
-1. using a POKEY timer IRQ
+2. inside of unrolled effect code
+3. using a POKEY timer IRQ
 
 The first implementation is clearly the easiest, but it is also the slowest. The second
 implementation is optimal, but correctly timing code loops realistically constrains this to
@@ -417,6 +418,7 @@ be as small as possible.  Using a DLI every second mode line, (once every 8 scan
 is sufficient.  The DLI should be set for every line where the vertical scroll bit is clear.
 The easiest way to ensure proper synchronization is to use WSYNC. Then write 13 to
 VSCROL and followed by the 3.  The following code provides a simple kernel to do this:
+
 ```
          dli pha 
          sta WSYNC  ;($d40a) 
@@ -435,12 +437,12 @@ for screen data.  In addition, VSCROL must be updated which takes a further 6 cy
 For an entire screen 59 lines high the following costs are incurred:
 
 Narrow screen:
-Konop: 1+59*(6+64)+2+3=4136
-9++: 1+59*(1+32+6)+2+3=2307
+Konop: 1+59\*(6+64)+2+3=4136
+9++: 1+59\*(1+32+6)+2+3=2307
 
 Normal screen:
-Konop: 1+59*(6+80)+2+3=5080
-9++: 1+59*(1+40+6)+2+3=2779
+Konop: 1+59\*(6+80)+2+3=5080
+9++: 1+59\*(1+40+6)+2+3=2779
 
 This indicates that there is about a 6-7% gain in CPU time using GTIA 9++.
 
@@ -461,6 +463,7 @@ designed using an 8x6 font.  Then, set up a display list with alternating text l
 vertical scroll bit set.  Note that as the text lines alternate down the screen, sometimes the
 first 2 lines of the font are cut and sometimes the bottom two lines are cut.  This requres
 the use of two character sets.  The DLI from TMC 2.0 looks like the following:
+
 ```
          dli pla 
          sta WSYNC ;($d40a) 
@@ -497,8 +500,6 @@ Something about MCS and/or graph2font conversions
 - MCS demo
 - HIP converters
 
-
-
 ## Scrolling techniques
 
 ### MWP
@@ -532,8 +533,8 @@ MWP scrolling combines the strengths of traditional Atari scrolling and scrollin
 by on-demand screen generation.  The primary advantages are:
 
 1. The memory required for the displayed map is just over the requirement for one screen. Remember, however, that the logical source data still needs to be in memory. See the discussion of when to use MWP below for further information.
-1. Large amounts of data copying is not necessary, only one row or column buffer needs to be written at one time.
-1. Only 2 LMS commands in the display list
+2. Large amounts of data copying is not necessary, only one row or column buffer needs to be written at one time.
+3. Only 2 LMS commands in the display list
 
 Although MWP scrolling described here is for a character mode screen, the same
 principle can be applied to a bitmap screen.  In fact, it was during a discussion of
@@ -545,6 +546,7 @@ row be duplicated, one copy at the beginning of screen memory and the one at the
 screen memory.  This means that in order for a 3x3 display to be appropriately created
 there must be 4 rows in all.  For this example, suppose that screen memory begins at
 address $6000.  It then follows:
+
 ```
 Row 0: $6000-$6002 
 Row 1: $6003-$6005 
@@ -559,13 +561,13 @@ This display is shown in the following diagram.
 Notice that rows 0 and 3 are exact duplicates of each other.  This is necessary in order to
 properly perform wrapping from row 3 back to row #  This can be seen in figure 1B.
 Initially, the screen will start in the state shown in figure 1A.  If vertical scrolling is
-performed, the display list moves from 1A > 2A > 3A > 1A and so on.  The lowest row is
+performed, the display list moves from 1A \> 2A \> 3A \> 1A and so on.  The lowest row is
 hidden off-screen and is used as a buffer.  If row 0 or 3 is written into, then a copy must
 be made to rows 3 or 0 respectively.
 
 When scrolling horizontally, the entire sequence is cycled:
 
-1A > 1B >1C >2A >2B >2C >3A >3B >3C >1A and so on.  In this case, the rightmost
+1A \> 1B \>1C \>2A \>2B \>2C \>3A \>3B \>3C \>1A and so on.  In this case, the rightmost
 row is off of the screen and should be written into as a buffer.  Again, if data in row 0 or 3
 is modified, that modification needs to be reflected in the other row.
 
@@ -630,6 +632,7 @@ is fast enough to do this.  After a long break, the init procedure must be calle
 synchronization.
 
 Main proc:
+
 ```
           lda $d300 
           lsr a 
@@ -668,6 +671,7 @@ except for the following replacements: change xind to yind,;xcur to ycur; and ht
 vtab.
 
 The initialization routine is listed below:
+
 ```
 init 
           lda $d300
@@ -698,7 +702,6 @@ The tables referenced by the above code vary depending on the mouse being used.
 ||  || Amiga: || Atari ST: ||
 |htab:| 0,2,10,8 | 0,2,3,1|
 |vtab:| 0,1,5,4 |0,8,12,4 |
-
 
 Oddly, no emulator currently supports the use of a mouse, so this will only work on real
 hardware.
@@ -854,10 +857,8 @@ play_sample
 ```
 
 ### Digital Sample Links and Resources
+
 (Note: Update to Sheddy's new IRQ player)
-
-
-
 
 ## Trackers
 
@@ -878,7 +879,7 @@ instrument names, unused songs, and so on.
 ### TMC2
 
 The Theta Music Composer is a tracker that runs on native hardware.
-[http://jaskier.atari8.info/menu2/TMC2/TMC2.zip](http://jaskier.atari8.info/menu2/TMC2/TMC2.zip) 
+[http://jaskier.atari8.info/menu2/TMC2/TMC2.zip](http://jaskier.atari8.info/menu2/TMC2/TMC2.zip)
 
 ## Soft Sprites
 
@@ -906,10 +907,12 @@ set, the area of overlap for all players will be black. (Really?  Mapping the At
 this, but I do not remember this being the case)
 
 ### GTIA Gr. 9  overlay
+
 GPRIOR set to $50 in GTIA 9enables missile "OR" mode, in which overlapping missiles
 on GTIA mode 9 cause transparency effects.
 
 ### Reusing players
+
 Changing position, color AND shape of a single PM on a single line.
 
 ### Collision detection
@@ -922,15 +925,15 @@ Hardware registers no longer mean anything, use masks, bboxes, etc.
 
 xBIOS is almost like a programmers version of DOS. With it you can easily access files from your programs without using Atari DOS. It is smaller than DOS and therefore saves memory in your programs. You can even run programs from as low as $0200. xBIOS can read and write from/to existing files but can not write new files or directories from your programs.
 
-[Link to official xBIOS page (Polish)](http://xxl.atari.pl/) 
+[Link to official xBIOS page (Polish)](http://xxl.atari.pl/)
 
-[xBIOS Overview](../People/xxl/XBIOS/README.md) 
+[xBIOS Overview](../People/xxl/XBIOS/README.md)
 
 ## Advanced Graphical Tools
 
 ### Rastconverter
 
-[Rastaconverter](../Rastaconverter/README.md) is a Windows/Linux based utility which iteratively converts ordinary jpeg/gif/png files into executable files which display the pictures natively on the Atari 8-bit. Rastaconverter uses all the power of display list interrupts and player missile graphics to allow the maximum number of colours possible on the screen concurrently. [https://github.com/ilmenit/RastaConverter](https://github.com/ilmenit/RastaConverter) 
+[Rastaconverter](../Rastaconverter/README.md) is a Windows/Linux based utility which iteratively converts ordinary jpeg/gif/png files into executable files which display the pictures natively on the Atari 8-bit. Rastaconverter uses all the power of display list interrupts and player missile graphics to allow the maximum number of colours possible on the screen concurrently. [https://github.com/ilmenit/RastaConverter](https://github.com/ilmenit/RastaConverter)
 
 ## Hardware exotics
 

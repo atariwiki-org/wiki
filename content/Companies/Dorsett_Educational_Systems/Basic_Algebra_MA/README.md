@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Basic Algebra MA](https://archive.org/details/DorsettAtariMathematicsBasicAlgebra)
 
 This is an archive of the "Mathematics (Basic Algebra)" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Mathematics (Basic Algebra)
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -42,23 +43,25 @@ ma16	EQuations and Trigonometry
 
 Tracks (size in sum: 1.5 GB):
 
-- [ma1](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma1.flac)
-- [ma2](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma2.flac)
-- [ma3](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma3.flac)
-- [ma4](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma4.flac)
-- [ma5](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma5.flac)
-- [ma6](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma6.flac)
-- [ma7](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma7.flac)
-- [ma8](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma8.flac)
-- [ma9](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma9.flac)
-- [ma10](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma10.flac)
-- [ma11](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma11.flac)
-- [ma12](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma12.flac)
-- [ma13](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma13.flac)
-- [ma14](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma14.flac)
-- [ma15](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma15.flac)
-- [ma16](http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma16.flac)
+- [ma1](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma1.flac>)
+- [ma2](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma2.flac>)
+- [ma3](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma3.flac>)
+- [ma4](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma4.flac>)
+- [ma5](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma5.flac>)
+- [ma6](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma6.flac>)
+- [ma7](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma7.flac>)
+- [ma8](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma8.flac>)
+- [ma9](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma9.flac>)
+- [ma10](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma10.flac>)
+- [ma11](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma11.flac>)
+- [ma12](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma12.flac>)
+- [ma13](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma13.flac>)
+- [ma14](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma14.flac>)
+- [ma15](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma15.flac>)
+- [ma16](<http://data.atariwiki.org/FLAC/Mathematics_(Basic_Algebra)/ma16.flac>)
+
 ## Images
+
 ![](attachments/maA_.jpg)
 Dorsett Atari Basic Algebra - cassettes with uneven numbers
 

@@ -2,8 +2,8 @@
 
 Copyright (C) 1982 SYNAPSE Software and Steve Hales
 
-
 ## Introduction
+
 ![](attachments/Synapse.gif)
 SYNAPSE Software
 
@@ -33,6 +33,7 @@ Here is a summary of the most exciting features:
 Synassembler requires 48K of RAM and one disk drive to operate. Very large programs can now be developed, using the "INCLUDE" and "TARGET FILE" capabilities. These allow the assembly of multiple source files, and direct storage of object code on binary files.
 
 ## Review
+
 SynAssembler
 Synapse Software
 5327 Jacuzzi St., Suite 1
@@ -57,7 +58,8 @@ The Monitor is a full-featured : machine-language debugger. Memory can be displa
 Synassembler is a professional development tool for the experienced programmer as well as the beginner. It has an excellent Editor, a very fast Assembler capable of assembling programs of virtually unlimited size, and a Monitor that should serve well in finding the trickiest of bugs. It's a step above the Atari cartridge because of its speed and ability to include multiple source files. Synassembler does require 48K and you need a disk drive to take advantage of all its features. If you have the memory and the disk, it is a good value for the money.
 
 ## Origin
-SynAssembler is a port of the S-C Assembler II Version 4.0 from the Apple II. Information from [Apple Assembly Line V2N12](http://www.txbobsc.com/aal/1982/aal8209.html#a1) 
+
+SynAssembler is a port of the S-C Assembler II Version 4.0 from the Apple II. Information from [Apple Assembly Line V2N12](http://www.txbobsc.com/aal/1982/aal8209.html#a1)
 
 ''SYNASSEMBLER: Synapse Software has just started marketing a conversion of the S-C Assembler II Version 4.0 for the Atari 800 or 400. You need 48K RAM and at least one disk drive. The conversion was done by Steve Hales, of Livermore, California. He added global replace and copy commands, so this version falls somewhere between the Apple version 4.0 and the new Macro version. It assembles at about 6500 lines per minute, which is from 50 to over 100 times faster than the Atari ASM/ED program.
 
@@ -66,9 +68,10 @@ Since the Atari does not have nice monitor commands built-in, like the Apple doe
 The price is only $49.95 on disk. A ROM version is available by special order for $89.95. I will carry these, if you want to order from me.''
 
 The original sourcecode of S-C Assembler by Bob Sander-Cederlof can be found at
-[http://www.txbobsc.com/scsc/scdisassembler/index.html](http://www.txbobsc.com/scsc/scdisassembler/index.html) 
+[http://www.txbobsc.com/scsc/scdisassembler/index.html](http://www.txbobsc.com/scsc/scdisassembler/index.html)
 
-The Apple Assembly line (also by Bob Sander-Cederlof) contains additional information for the S-C Assembler: [http://www.txbobsc.com/aal/index.html](http://www.txbobsc.com/aal/index.html) 
+The Apple Assembly line (also by Bob Sander-Cederlof) contains additional information for the S-C Assembler: [http://www.txbobsc.com/aal/index.html](http://www.txbobsc.com/aal/index.html)
+
 ## Author
 
 Synapse Assembler has been written by Steve Hales. Steve Hales was and still is an Atari hero and living legend. Describing Steve is quite easy. If you compare Atari to the whole world, then Steve would be a global player. He has done so much for Atari and the community. Steve is already a member in the [Thanks](../../../Thanks/README.md) and carrier of the sigma, the highest award possible on the AtariWiki. We owe him so much! In 2015 he has given us the source code for Fort Apocalypse, further he has given us the source code listing from Star Raiders! Without his help they would be lost. Steve, tera-thanks to you, may you live long and prosper.
@@ -78,43 +81,53 @@ Synapse Assembler has been written by Steve Hales. Steve Hales was and still is 
 - [Interview with Ihor Wolosenko](http://mrbacardi.000space.com/games/Synapse/Ihor_Wolosenko.html) ; thanks to Mr. Bacardi
 
 ## Manual
+
 - [SynAssembler Manual](SynAssembler_Manual/README.md) ; online manual
 - [SynAssembler Manual](attachments/SynAssembler-Manual.pdf) ; size: 172 KB; pdf-file
 - [SynAssembler Manual](attachments/SynAssembler-Manual.doc) ; size: 197 KB; doc-file
 - [SynAssembler Manual](attachments/SynAssembler-Manual-OCR-Bookmarks.pdf) ; size: 225 KB; pdf-file with OCR and bookmarks
-- [SynAssembler-Original_Manual.pdf](../../../../media/Companies/Synapse_Software/SynAssembler/attachments/SynAssembler-Original_Manual.pdf) ; size: 6.8 MB ; 62 pages, thank you so much Allan Bushman for preserving this original manual! :-)))
+- [SynAssembler-Original\_Manual.pdf](../../../../media/Companies/Synapse_Software/SynAssembler/attachments/SynAssembler-Original_Manual.pdf) ; size: 6.8 MB ; 62 pages, thank you so much Allan Bushman for preserving this original manual! :-)))
 
 ## CAR-Images
+
 - [Synassembler.car](attachments/SynAssembler.car) ; cartridge image for Atari 400-800 with OS B
-- [Synassembler_XL.car](attachments/SynAssembler_XL.car) ; cartridge image for Atari XL-XE
+- [Synassembler\_XL.car](attachments/SynAssembler_XL.car) ; cartridge image for Atari XL-XE
 
 ## ROM-Images
+
 - [Synassembler.rom](attachments/SynAssembler.rom) ; rom image for Atari 400-800 with OS B; md5: e5dd9f57ff9b807d52a99869dfbfcc17
-- [Synassembler_XL.rom](attachments/SynAssembler_XL.rom) ; rom image for Atari XL-XE; md5: 7375df1158ad81f52160f417a49ff78e
+- [Synassembler\_XL.rom](attachments/SynAssembler_XL.rom) ; rom image for Atari XL-XE; md5: 7375df1158ad81f52160f417a49ff78e
 - [Synassemblerclassic.zip](attachments/SynAssemblerclassic.zip) ; rom images for Atari 400-800 with OS B with different themes
 - [SynassemblerXL-XE.zip](attachments/SynAssemblerXL-XE.zip) ; rom images for Atari XL-XE with different themes
 
 ## ATR-Image
+
 - [SynAssembler.atr](attachments/SynAssembler.atr) ; atr image for all Atari computers ; with special DOS for direct jump back to the program
-- [SynAssembler_XL.atr](attachments/SynAssembler_XL.atr) : atr image for XL/XE Atari computers ; with special DOS for direct jump back to the program
+- [SynAssembler\_XL.atr](attachments/SynAssembler_XL.atr) : atr image for XL/XE Atari computers ; with special DOS for direct jump back to the program
 - [Synapse page 6 utilities](attachments/Synapse_page_6_utility.atr) ; Synapse page 6 utilities
 
 ## XEX-File
-- [SynAssembler_XL.xex](attachments/SynAssembler_XL.xex) ; xex file for XL-XE Atari computers
+
+- [SynAssembler\_XL.xex](attachments/SynAssembler_XL.xex) ; xex file for XL-XE Atari computers
 
 ## SynAssembler on Atari XL/XE machines
+
 The original SynAssembler does not work on XL/XE machines, due to the use of direct jumps into the 400/800 OS.
 
 There is a basic program in [ANTIC VOL. 3, NO. 2 / JUNE 1984 / PAGE 38](http://www.atarimagazines.com/v3n2/explore.html) that patches the SynAssembler binary to run on XL/XE type machines.
-- [SynAssembler_patch_from_classic_to_XL-XE.atr](attachments/SynAssembler_patch_from_classic_to_XL-XE.atr) ; patch in BASIC
+
+- [SynAssembler\_patch\_from\_classic\_to\_XL-XE.atr](attachments/SynAssembler_patch_from_classic_to_XL-XE.atr) ; patch in BASIC
 
 ## Source Code
-- [SynAssembler_Source_Code.atr](attachments/SynAssembler_Source_Code.atr) ; source code of the SynAssembler in MAC/65 format with DOS 2.5 color; Thank you so much Steve Hales, we really appreciate your help for the community. :-)))
+
+- [SynAssembler\_Source\_Code.atr](attachments/SynAssembler_Source_Code.atr) ; source code of the SynAssembler in MAC/65 format with DOS 2.5 color; Thank you so much Steve Hales, we really appreciate your help for the community. :-)))
 
 ## Atari 8bit Equates files
+
 - [Synapse Assembler Atari 800 OS Equates](Synapse_Assembler_Atari_800_OS_Equates/README.md)
 
 ## Pictures and Themes
+
 ![](attachments/SynAssembler-Disk.jpg)
 SynAssembler diskette
 

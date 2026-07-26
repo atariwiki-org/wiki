@@ -28,7 +28,7 @@ A start at implementing support for the 65C02 opcodes is in the code, but
 what is there has not been tested very thouroughly and most of the opcodes
 and addressing modes are not in place yet.  Otherwise, the machine
 instructions are as any other standard 6502 assembler would expect.
-Expressions can include +, -, * and / operators as well as HIGH\[\] and LOW\[\]
+Expressions can include +, -, \* and / operators as well as HIGH\[\] and LOW\[\]
 functions to extract the high and low bytes of 16-bit numbers.  Brackets,
 \[ and \], may be used to group terms in an expression if necessary.  Symbols
 may have up to 11 characters, including upper and lower case letters,
@@ -54,9 +54,9 @@ DW      defines a word, low byte first, as if an indirect pointer
 DS      allocates a number of bytes without storing any data in them
 
 ORG     sets the location counter to a fixed address
-*=      same as ORG
+\*=      same as ORG
 EQU     defines a symbol to have a specific value
-=       same as EQU
+\=       same as EQU
 
 INCLUDE causes the file specified to be inserted at this point in the
 assembly (can be nested if the DOS supports sufficient numbers
@@ -76,7 +76,7 @@ LIST    a stub for future expansion
 MACRO   another stub (does nothing, not even generate an error)
 MEND    another stub
 
-Octal numbers, EQU, *=, and INIT and RUN addresses may have bugs in them --
+Octal numbers, EQU, \*=, and INIT and RUN addresses may have bugs in them --
 good luck.  Most of the rest has been debugged reasonably well.
 
 The END statement can have the following forms:
@@ -91,8 +91,6 @@ are asked)
 
 Charles Marslett
 8/21/85
-
-
 
 Release 1.1
 Changes since the first release:
@@ -124,7 +122,6 @@ symbols and some invalid addressing modes.
 Charles Marslett
 6/16/89
 
-
 Release 1.2
 Changes since the second release:
 
@@ -134,8 +131,13 @@ $0D followed by $0A or $0A followed by $0D).  ASM5.ASM was changed.
 
 Charles Marslett
 7/4/89
+
 ## ATR-Images
-- [A65_with_DOS_2.5.atr](attachments/A65_with_DOS_2.5.atr) ; A65 Assembler Version 1.2 with source code and DOS 2.5 ; Thank you so much Mr. Marslett for giving us the source code. :-)))
+
+- [A65\_with\_DOS\_2.5.atr](attachments/A65_with_DOS_2.5.atr) ; A65 Assembler Version 1.2 with source code and DOS 2.5 ; Thank you so much Mr. Marslett for giving us the source code. :-)))
+
 ## ZIP-Archive
-- [A65_12.ZIP](attachments/A65_12.ZIP) ; ZIP-file of A65 with source code, runtime and manual ; mirror from the original source [Wordmark](http://wordmark.org/mydos.html)
+
+- [A65\_12.ZIP](attachments/A65_12.ZIP) ; ZIP-file of A65 with source code, runtime and manual ; mirror from the original source [Wordmark](http://wordmark.org/mydos.html)
+
 ## 

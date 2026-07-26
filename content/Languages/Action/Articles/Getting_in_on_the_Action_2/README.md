@@ -1,16 +1,18 @@
 # Getting in on the Action! - Part 2
 
 ### General Information
+
 Author: Russ Wetmore
 Language: ACTION!
 Compiler/Interpreter: ACTION!
-Published: Analog #35 (10/ 85)
+Published: Analog \#35 (10/ 85)
 ---
 
-This article, both [Getting in on the Action! - Part 1](../Getting_in_on_the_Action_1/README.md) (__ANALOG Computing__, issue 32) and this month's segment, was written for advanced programmers. Don't feel badly if you've dabbled a little in Action! and can't make any sense out of the examples in this article. Some of the concepts are quite advanced and are mainly aimed at the experienced programmer who wants to squeeze more functionality out of the Action! cartridge.
+This article, both [Getting in on the Action! - Part 1](../Getting_in_on_the_Action_1/README.md) (**ANALOG Computing**, issue 32) and this month's segment, was written for advanced programmers. Don't feel badly if you've dabbled a little in Action! and can't make any sense out of the examples in this article. Some of the concepts are quite advanced and are mainly aimed at the experienced programmer who wants to squeeze more functionality out of the Action! cartridge.
 
 ### Modularizing.
-I recently completed a major undertaking in Action! - an integrated three-program package called __HomePak__. All together, these three programs take up about 64K of disk space, not counting the various global subprograms required. like an RS232 handler, character sets, etc.
+
+I recently completed a major undertaking in Action! - an integrated three-program package called **HomePak**. All together, these three programs take up about 64K of disk space, not counting the various global subprograms required. like an RS232 handler, character sets, etc.
 
 Two of the programs were too large to compile using standard methods. I faced an interesting decision: recode substantial portions of the program in assembly language (avoiding such being one major reason I did it in a high-level language to begin with) or leave out possible features in order to save space.
 
@@ -19,7 +21,9 @@ I hit upon another, option: compiling the program in pieces. In fact, this saved
 There's an "undocumented" feature of the Action! cart you need to know before you can do this. I'll describe it first.
 
 ### Compilation offset.
-In page 0, $B5-$B6 is used by the compiler as a compilation offset value. The three __HomePak__ programs reside at $3400, which is well above the $2404 address that the cart tells me is my LOMEM value. The manual tells you that you can do the following:
+
+In page 0, $B5-$B6 is used by the compiler as a compilation offset value. The three **HomePak** programs reside at $3400, which is well above the $2404 address that the cart tells me is my LOMEM value. The manual tells you that you can do the following:
+
 ```
 SET $491 = $3480}}}
 to set the base address to $3400, but this throws away a good 4K(!) of memory I need to compile to. A better way of handling it is to compile the program to the LOMEM address, but specify an offset to the compiler. That way, when the program gets written out to disk, it loads at the proper address. You can do this by putting a value in $B5-$B6 (using the set command), which is your base address minus the LOMEM address found at $491. Thus, if your LOMEM value is $2404, and you want your program to load at $4000. you'd put:
@@ -47,14 +51,17 @@ SET $B5 = $1BFC ;return offset to what
        ;it used to be 
 …
 ```
+
 Notice that I had to do two set statements, because the Action! compiler will always try to make a set value a byte, if it can. We need to set the card at $B5, so we need to set each byte of the card value.
 
 ### Getting down to it.
+
 Now we know how to tell Action! where we want our modules to reside. I generally have a file named GLOBALS.H, which is my header file with seldom-changed global variables. I compile this separately, to the desired base address of my whole program.
 
 Once the compilation is finished and I've written the program to a disk file, I use the debugging portion of the monitor to find the end addresses of those variables. (Once a program is compiled - and before any system errors occur - use the program variables in the monitor as you would constants.)
 
 Let's take an example. Type this in and save it to disk as EXAMPLE2:ACT:
+
 ```
 ; This is my global variable file
 
@@ -148,9 +155,11 @@ void main()
   PrintANumber(PrtNum, 5);
 }
 ```
+
 PrintANumber in the above example takes the address of a function as its argument, and executes it directly. Since the PrtNum routine (actually, the address of Prt Num) is passed, it is executed at the Prin-tANumber call in the main function.
 
 We can carry this concept a little further - by using arrays of addresses to functions. This gives us the tools we need to do our emulation of BASIC's ONxGOSUB function:
+
 ```
 /* Example 5 */
 
@@ -200,9 +209,11 @@ void main()
     (*routines[i])();
 }
 ```
-This little program does a lot. First, it executes a "for" loop for the values between 0 and 2. The "pointer" to the desired function is fetched (routines\[i\]). which is then executed directly. Routines[] is an "array of pointers" to functions, with three elements (numbered 0 to 2).
+
+This little program does a lot. First, it executes a "for" loop for the values between 0 and 2. The "pointer" to the desired function is fetched (routines\[i\]). which is then executed directly. Routines\[\] is an "array of pointers" to functions, with three elements (numbered 0 to 2).
 
 This example has the same function as BASIC's ONxGOSUB. The equivalent BASIC would be:
+
 ```
 0 REM BASIC version of C code
 10 FOR X=1 TO 3 20 ON X GO5UB 100,200,300

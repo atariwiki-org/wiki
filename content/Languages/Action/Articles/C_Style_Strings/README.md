@@ -67,83 +67,93 @@ of your program.
 The routines are as follows:
 
 ### PROC AtoC(BYTE ARRAY A,B)
-- This routine assumes that
-A is an Action! string and B is
-a BYTE ARRAY which is at least as
-big as A. It will convert the Action!
-string A to the same string in C
-style format, which it will store in
-B. A should not contain a null.
-(ATASCII 0 or ' ')
 
+- This routine assumes that
+  A is an Action! string and B is
+  a BYTE ARRAY which is at least as
+  big as A. It will convert the Action!
+  string A to the same string in C
+  style format, which it will store in
+  B. A should not contain a null.
+  (ATASCII 0 or ' ')
 
 ### PROC CtoA(BYTE ARRAY A,B)
+
 - This routine assumes A is a
-C style string, and converts it to
-an Action! string which it stores in
-B. The C style string should not be
-longer than 255 characters, otherwise
-only the first 255 characters will
-be converted.
+  C style string, and converts it to
+  an Action! string which it stores in
+  B. The C style string should not be
+  longer than 255 characters, otherwise
+  only the first 255 characters will
+  be converted.
 
 ### CARD FUNC AC(BYTE ARRAY A)
+
 - This routine converts the
-string A from an Action! string to a
-C style string. A should not contain
-a null.
+  string A from an Action! string to a
+  C style string. A should not contain
+  a null.
 
 ### CARD FUNC CA(BYTE ARRAY A)
+
 - This routine converts the
-string A from a C style string to an
-Action! string. A should not be
-longer than 255 characters.
+  string A from a C style string to an
+  Action! string. A should not be
+  longer than 255 characters.
 
 ### CARD FUNC CSLength(BYTE ARRAY A)
+
 - Returns the length of the
-C style string A. The NULL byte is
-not included in this figure.
+  C style string A. The NULL byte is
+  not included in this figure.
 
 ### PROC CPrint, CPrintE, CPrintDE, CPrintD
+
 - Print out a C style string.
-Any C style string of arbitrary
-length may be printed. Syntax is
-exactly the same as in the Action!
-manual.
+  Any C style string of arbitrary
+  length may be printed. Syntax is
+  exactly the same as in the Action!
+  manual.
 
 ### PROC CInputS, CInputSD, CInputMD
+
 - Input a C style string.
-Only strings of length less than or
-equal to 255 characters may be input.
-Syntax is as in Action! manual.
+  Only strings of length less than or
+  equal to 255 characters may be input.
+  Syntax is as in Action! manual.
 
 ### PROC COpen, CXIO
+
 - Open a channel or perform
-an XIO function where the filespec
-is a C style string. Only filespecs
-of length less than or equal to
-255 characters are permitted (but
-why you'd need more, I don't know!)
-Syntax as in Action! manual.
+  an XIO function where the filespec
+  is a C style string. Only filespecs
+  of length less than or equal to
+  255 characters are permitted (but
+  why you'd need more, I don't know!)
+  Syntax as in Action! manual.
 
 ### PROC CSCompare, CSCopy, CSCopyS, CSAssign
+
 - Compare or copy C style
-strings. Numerical arguments to
-these functions are CARDs rather
-than BYTEs, since C style strings are
-not limited to a length of 255
-characters. Syntax as in Action!
-manual.
+  strings. Numerical arguments to
+  these functions are CARDs rather
+  than BYTEs, since C style strings are
+  not limited to a length of 255
+  characters. Syntax as in Action!
+  manual.
 
 ### PROC CStrB, CStrC, CStrI
+
 - Convert a BYTE, CARD, or INT
-to a C style string. Syntax as in Action! manual.
+  to a C style string. Syntax as in Action! manual.
 
 ### BYTE/CARD/INT FUNC CValB, CValC, CValI
-- Convert a C style string to
-a BYTE, CARD, or INT. Syntax as in Action! manual.
 
+- Convert a C style string to
+  a BYTE, CARD, or INT. Syntax as in Action! manual.
 
 ## MISCELLANOUS NOTES: You may easily change the NULL
+
 byte to some value other than ATASCII
 0 by changing the NULL variable at
 the beginning of the CSTRINGS.ACT
@@ -152,9 +162,9 @@ CSCompare routine will not work
 correctly if you do so.
 
 The routines
-use BYTE ARRAY C_TMP(255) as a global
+use BYTE ARRAY C\_TMP(255) as a global
 temporary buffer, and thus no global
-variable of the name C_TMP is
+variable of the name C\_TMP is
 permitted.
 
 I hope these routines help you in
@@ -163,7 +173,7 @@ programming language.
 
 Thurs, Sept. 3, 1987.
 
--- John <nop>DiMarco
+\-- John <nop>DiMarco
 
 UUCP: jdd@csri.toronto.edu
 /%
@@ -231,7 +241,7 @@ Die Routinen:
 
 Wenn die NULL Variable am Anfang der Routinensammlung in einen anderen Wert als ATASCII 0 geändert wird, so wird die CSCompare Routine keine korrekten Werte liefern.
 
-Die Routinen benutzen eine BYTE ARRAY-Variable namens C_TEMP(255) als globalen temporären Puffer, daher darf keine weitere Variable dieses Namens deklariert werden.
+Die Routinen benutzen eine BYTE ARRAY-Variable namens C\_TEMP(255) als globalen temporären Puffer, daher darf keine weitere Variable dieses Namens deklariert werden.
 
 Ich hoffe, diese Routinen werden dir helfen, besseren Gebrauch von der Programmiersprache ACTION! zu machen.
 

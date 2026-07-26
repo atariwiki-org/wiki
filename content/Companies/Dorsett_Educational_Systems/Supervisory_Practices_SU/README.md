@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Supervisory Practices SU](https://archive.org/details/DorsettAtariSupervisoryPractices)
 
 This is an archive of the "Supervisory Practices" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Supervisory Practices
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -34,7 +35,7 @@ su8	Improving Performance--Motivation
 su9	Employee Discipline
 su10	Communications
 su11	Evaluating Employee Performance
-su12	Handling Complaints & Grievances
+su12	Handling Complaints \& Grievances
 su13	Compensating Employees
 su14	Selecting New Employees
 su15	The Supervisor and the Union
@@ -58,7 +59,9 @@ Tracks (size in sum: 1.77 GB):
 - [su14](http://data.atariwiki.org/FLAC/Supervisory_Practices/su14.flac)
 - [su15](http://data.atariwiki.org/FLAC/Supervisory_Practices/su15.flac)
 - [su16](http://data.atariwiki.org/FLAC/Supervisory_Practices/su16.flac)
+
 ## Images
+
 ![](attachments/suA_.jpg)
 Dorsett Atari Supervisory Practices - cassettes with uneven numbers
 

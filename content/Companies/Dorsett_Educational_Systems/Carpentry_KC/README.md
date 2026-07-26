@@ -1,6 +1,7 @@
 # Dorsett Atari Carpentry KC ; Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari Carpentry KC](https://archive.org/details/DorsettAtariCarpentry)
 
 This is an archive of the "Carpentry" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -15,7 +16,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Carpentry
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -56,7 +57,9 @@ Tracks (size in sum: 1.06 GB):
 - [kc14](http://data.atariwiki.org/FLAC/Carpentry/kc14.flac)
 - [kc15](http://data.atariwiki.org/FLAC/Carpentry/kc15.flac)
 - [kc16](http://data.atariwiki.org/FLAC/Carpentry/kc16.flac)
+
 ## Images
+
 ![](attachments/kcA_.jpg)
 Dorsett Atari Carpentry - cassettes with uneven numbers
 

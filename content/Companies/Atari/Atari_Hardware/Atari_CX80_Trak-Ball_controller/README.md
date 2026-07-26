@@ -11,5 +11,5 @@
 - Atari Trak-Ball Owner's Manual CX80 C061761
 - Atari CX80 Trakball Field Service Manual FD100750
 - Box/Owner's Manual by Atari, Inc. International Division
-![](attachments/Atari_Trak-Ball_CX80.jpg)
-Atari Trak-Ball controller CX80
+  ![](attachments/Atari_Trak-Ball_CX80.jpg)
+  Atari Trak-Ball controller CX80

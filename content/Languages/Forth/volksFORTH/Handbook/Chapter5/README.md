@@ -2,26 +2,27 @@
 
 ## Input/output commands in volksFORTH
 
-All input and output words (__KEY__ __EXPECT__ __EMIT__ __TYPE__ etc.) are vectorized in the people-FORTH, ie when called, the code field address of the associated command is taken from a table and executed. It is included in the system table wine named DISPLAY, which provides for the output to the screen terminal.
+All input and output words (**KEY** **EXPECT** **EMIT** **TYPE** etc.) are vectorized in the people-FORTH, ie when called, the code field address of the associated command is taken from a table and executed. It is included in the system table wine named DISPLAY, which provides for the output to the screen terminal.
 
 This method of vectorization offers significant benefits:
 
 - Nit-vectorization of the input can e.g. switch with one stroke of the keyboard on the input of a modem.
 - The output can vectorization with a new table, the total expenditure to another device (eg a printer) will be conducted without having to change the output commands themselves.
-- In a word (__DISPLAY__, __PRINT__) can all be changed spending habits. Is there such a (((print a list display))) will be issued a screen on a printer, and then falls back to the screen. So you need a new word, such PRINTERLIST to define.
+- In a word (**DISPLAY**, **PRINT**) can all be changed spending habits. Is there such a (((print a list display))) will be issued a screen on a printer, and then falls back to the screen. So you need a new word, such PRINTERLIST to define.
 
-A new table is created with the word __OUTPUT: __. The definition can output with (((view:)) look). __OUTPUT: __ Expected to issue a list of words, with must, be completed.
+A new table is created with the word \_\_OUTPUT: \_\_. The definition can output with (((view:)) look). \_\_OUTPUT: \_\_ Expected to issue a list of words, with must, be completed.
 
 Beipsiel:
+
 ```
 Output:> PRINTER
    pemit pcr ptype pdel PPAG pat pat? ;
 ```
 
-For a new table named __> PRINTER__ is created. With a later call to PRINTER__ __> is the address of this table in the Uservariable __OUTPUT__
-written. From now leads __EMIT__ from a __PEMIT__, a __PTYPE__ __TYPE__ etc.
+For a new table named **\> PRINTER** is created. With a later call to PRINTER\_\_ \_\_\> is the address of this table in the Uservariable **OUTPUT**
+written. From now leads **EMIT** from a **PEMIT**, a **PTYPE** **TYPE** etc.
 
-The order of words after __OUTPUT: __
+The order of words after \_\_OUTPUT: \_\_
 userEMIT userCR userType userdel Userpage userAT userAT?
 must necessarily be met. Accordingly, the input-vectorization is handled.
 
@@ -45,7 +46,7 @@ The state-FORTH has a number of constants which serve to improve readability:
 - [Outputkol](../../Language/Words/Outputkol/README.md)
 - [Area](../../Language/Words/Area/README.md)
 - [Areakol](../../Language/Words/Areakol/README.md)
-- [] Terminal
+- \[\] Terminal
 - [Window](../../Language/Words/Window/README.md)
 - [Full](../../Language/Words/Full/README.md)
 - [Curat?](../../Language/Words/Cursor-at-question/README.md)
@@ -69,7 +70,7 @@ The state-FORTH has a number of constants which serve to improve readability:
 - [At?](../../Language/Words/At-question/README.md)
 - [Col](../../Language/Words/Col/README.md)
 - [Row](../../Language/Words/Row/README.md)
-- [] Curoff
+- \[\] Curoff
 - [Curon](../../Language/Words/Curon/README.md)
 - [Curshape](../../Language/Words/Curshape/README.md)
 - [Printer](../../Language/Words/Printer/README.md)
@@ -79,7 +80,7 @@ The state-FORTH has a number of constants which serve to improve readability:
 
 ### Input / output of numbers
 
-The input of numbers is made in the interpretive mode via the keyboard, and basic input words are defined with __number__ __numbers__ and related words. For the issue of numbers again is the lack of typing of FORTH observed - for a specific data format (integer, unsigned, double) is appropriate in each case the operator to select.
+The input of numbers is made in the interpretive mode via the keyboard, and basic input words are defined with **number** **numbers** and related words. For the issue of numbers again is the lack of typing of FORTH observed - for a specific data format (integer, unsigned, double) is appropriate in each case the operator to select.
 
 - [.](../../Language/Words/Dot/README.md)
 - [U.](../../Language/Words/unsigned-dot/README.md)
@@ -91,19 +92,20 @@ The input of numbers is made in the interpretive mode via the keyboard, and basi
 ### Input / output via a port
 
 MS-DOS''''
+
 - [Pc @](../../Language/Words/port-char-fetch/README.md)
 - [PC!](../../Language/Words/Port-char-store/README.md)
 
 ### Enter characters
 
-In FORTH you will always designate a storage area, incorporated into the characters and strings. To do this you usually use a small, 80-character memory area called __PAD__. This note pad - so the German translation of pad used - no fixed memory area and is both the FORTH system and the programmers.
+In FORTH you will always designate a storage area, incorporated into the characters and strings. To do this you usually use a small, 80-character memory area called **PAD**. This note pad - so the German translation of pad used - no fixed memory area and is both the FORTH system and the programmers.
 
-Then I liked you with the text input buffer __TIB__ another important Speicherberelch imagine that ensures the reasonable use of the connected devices. Because the text input via the keyboard vorsichgeht relatively slow, the characters are collected here only in a free space, the buffer __TIB__, and then processed.
+Then I liked you with the text input buffer **TIB** another important Speicherberelch imagine that ensures the reasonable use of the connected devices. Because the text input via the keyboard vorsichgeht relatively slow, the characters are collected here only in a free space, the buffer **TIB**, and then processed.
 
 - [tib](../../Language/Words/tib/README.md)
 - [#tib](../../Language/Words/number-tib/README.md)
-- [>tob](../../Language/Words/to-tib/README.md)
-- [>in](../../Language/Words/to-in/README.md)
+- [\>tob](../../Language/Words/to-tib/README.md)
+- [\>in](../../Language/Words/to-in/README.md)
 - [pad](../../Language/Words/pad/README.md)
 - [input](../../Language/Words/input/README.md)
 - [keyboard](../../Language/Words/keyboard/README.md)
@@ -116,7 +118,7 @@ Then I liked you with the text input buffer __TIB__ another important Speicherbe
 - [(expect](../../Language/Words/paren-expect/README.md)
 - [expect](../../Language/Words/expect/README.md)
 - [span](../../Language/Words/span/README.md)
-- [>expect](../../Language/Words/to-expect/README.md)
+- [\>expect](../../Language/Words/to-expect/README.md)
 - [nullstring?](../../Language/Words/null-string-question/README.md)
 - [stop?](../../Language/Words/stop-question/README.md)
 - [source](../../Language/Words/source/README.md)

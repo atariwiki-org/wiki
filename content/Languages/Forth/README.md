@@ -1,13 +1,14 @@
 # Forth
 
 ### Background
+
 Forth is a concatenative, stack-based programming language.
 
 Stack-based languages simplify the language's parser considerably because the data for an instruction always appears in the source code before the instructions that will use it. To see why this helps, consider this typical line of [BASIC](../Basic/README.md):
 
-{{A = 10 + 20 * B}}
+{{A = 10 + 20 \* B}}
 
-To perform this line, the interpreter has to read the entire line, look up the value of B (let's say 3), realize that the * has to be performed before + and order the instructions correctly, and then finally convert those into instructions something like:
+To perform this line, the interpreter has to read the entire line, look up the value of B (let's say 3), realize that the \* has to be performed before + and order the instructions correctly, and then finally convert those into instructions something like:
 
 {{get(B,temp1)}} - get the value in B and store it in temp1
 {{multiply(20,temp1,temp2)}} - multiply that value by 20 and store the result in temp2
@@ -26,11 +27,12 @@ Notice that the stack-based version ''has no temporary values'', and only reads 
 Another key aspect of the language is Forth's inherently multitasking design. The program could set up separate stacks and feed different code into each one. The Forth kernel would run each of these stacks in turn, so all Forth programs had access to these features. This made writing multithreaded code very easy, so one could, for instance, have a thread reading the joystick as it moved, and then read that value in a game loop in another stack.
 
 ## Forth Standards
+
 - [FORTH 79 Standard](FORTH_79/README.md) (1979)
 - [Forth83](http://forth.sourceforge.net/standard/fst83/) (1983)
 - [ANSI Forth](http://www.taygeta.com/forth/dpans.html) (1994)
 - [Forth 200x](http://www.forth200x.org/forth200x.html) (2009)
-([Family tree](http://www.complang.tuwien.ac.at/forth/family-tree/))
+  ([Family tree](http://www.complang.tuwien.ac.at/forth/family-tree/))
 
 ## Forth Systems for the Atari
 
@@ -41,7 +43,7 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 - [ANTIC Forth](ANTIC_Forth/README.md)
 - [valFORTH](valFORTH/README.md)
 - [English Software Company FORTH](English_Software_Company_FORTH/README.md)
-** [Page 6 Review of ES Forth](http://page6.org/archive/issue_14/page_34.htm) 
+  \*\* [Page 6 Review of ES Forth](http://page6.org/archive/issue_14/page_34.htm)
 - [EXTENDED Atari fig-FORTH (APX-10029)](Extended_Atari_FIG-Forth_APX-20029/README.md)
 - [Mesa FORTH](Mesa_FORTH/README.md)
 - [QS FORTH](QS_Forth/README.md)
@@ -54,12 +56,12 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 - [SNAUT V. 1.2 - Ein FORTH 83 Compiler](SNAUT/README.md)
 - [Forth Compiler from Frank Ostrowski](Forth_Compiler_from_Frank_Ostrowski/README.md)
 - [Atari Coin Op FORTH](CoinOp_FORTH/README.md)
-- [Elcomp_Forth_DOS_25.atr](attachments/Elcomp_Forth_DOS_25.atr); Atari Version of Elcomp-Forth by E.Floegel & H.C.Wagner, 1982
+- [Elcomp\_Forth\_DOS\_25.atr](attachments/Elcomp_Forth_DOS_25.atr); Atari Version of Elcomp-Forth by E.Floegel \& H.C.Wagner, 1982
 - [Grafs Atari-Forth DOS 2.5.atr](attachments/Grafs_Atari-Forth_DOS_2.5.atr); from Andreas Graf ca. 1990
 - ATAFORTH; advertised as compatible with Atari-DOS; lost; from Dan Bloomquist, Nova Technology, 1982
 - pns-Forth (the author was probably Robert Gonsalves; by Pink Noise Studios, 1981) - at least versions 1.4 and 1.5 were available (''files to be amended'')
 - Colleen Forth; from Atari - Steve Calfee, Michael Albaugh and others, 1980 (''files to be amended'')
-** later ported to Fig standard and evolved into multiple Forths: 1.4S/Team Atari/ANTIC/1.4V/Coin-Op/Turbo4TH
+  \*\* later ported to Fig standard and evolved into multiple Forths: 1.4S/Team Atari/ANTIC/1.4V/Coin-Op/Turbo4TH
 - Nautilus Compiler - used at least to release game "Alien Garden" on Atari; the compiler was probably not available on the Atari itself; lost; by Nautilus Systems (Jerry Boutelle), 1981
 - Go-Forth (pForth?); released but lost; from Lawrence Rust - Bignose Software / SECS, ca. 1985
 - Fig Forth by Pulsar Software; lost or never released; 1988
@@ -97,6 +99,7 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 - [The Ultimate CASE Statement](Articles/The_Ultimate_CASE_Statement/README.md) by Wil Baden, VD 2 1987
 
 ## Tutorials
+
 - [Einführung in Forth-83](Tutorials/Einfuehrung_in_Forth_83/README.md)
 
 ## Videos and Screen Casts

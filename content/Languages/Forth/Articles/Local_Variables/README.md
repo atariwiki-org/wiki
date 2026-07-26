@@ -31,7 +31,7 @@ they can be implemented in assembly code for greater performance.
 Implementations that use the return stack use a set of specialized return
 stack words that are transparently inserted into the compiled code by
 immediate words.  These words automatically take into account changes in
-the depth of the return stack caused by DO-LOOPs, >R, R>, etc.  I also saw
+the depth of the return stack caused by DO-LOOPs, \>R, R\>, etc.  I also saw
 an object-oriented approach that defines stack frame objects with their
 own set of operators.  There are probably many more ways of doing it
 that I haven't seen yet.
@@ -41,7 +41,7 @@ board system dedicated to Forth, the East Coast Forth Board, I selected
 the following code as an example of implementing local variables.  It is
 the simplest possible implementation I could find (1 block of code).
 It was written by Wil Baden for the F83X Forth systems, but except for
-the word CELLS (which is just another word for "2*") it looks to me to
+the word CELLS (which is just another word for "2\*") it looks to me to
 be Forth-83 Standard.  It's not the prettiest Forth code in the world,
 but it should be easy enough to figure out by reading the text.
 

@@ -5,8 +5,8 @@ General Information
 Author: John Maris (prepared by Mathy v. Nisselroy)
 Assembler: Mac65
 Published: MegaMagazine 7
-Download: [https://www.mathyvannisselroy.nl/special%20stuff.htm](https://www.mathyvannisselroy.nl/special%20stuff.htm) 
-PDF: [mouse.pdf](attachments/mouse.pdf) 
+Download: [https://www.mathyvannisselroy.nl/special%20stuff.htm](https://www.mathyvannisselroy.nl/special%20stuff.htm)
+PDF: [mouse.pdf](attachments/mouse.pdf)
 
 ## Abstract
 
@@ -52,7 +52,7 @@ we can see a lot of mouse routines that work in an interrupt.
 Most of these routines are still slow, or you get a 'flying'
 cursor. If you move the mouse too fast, the cursor will move in
 reversed direction or will even NOT move. After I had seen these
-'f**king' routines I decided to publish my routine on Mega
+'f\*\*king' routines I decided to publish my routine on Mega
 Magazine [^7]() with some documentation, so everybody can use a
 better mouse routine. I've called it the 'TML Mouse Routine'. The
 routine is public domain, but it would be nice if you let me know
@@ -150,7 +150,7 @@ the routine. See you next time!
 
 [7]() Mega Magazine or just MegaZine: A disk magazine for the Atari 8-bit computer. Seven issues appeared, then they stopped.
 
-[8]( STICK (0) or STICK (1): an Atari BASIC command used to read
+\[8\]( STICK (0) or STICK (1): an Atari BASIC command used to read
 joystick ports pins 1 through 4.
 
 For those who wanna look at the code, the PIA that controls the joysticks in the Atari is located at $D300-$D303. Should the source use a different address between $D300 and $D3FF, just subtract 4 from this number until you get in the above-mentioned range. BTW, apart from the occasional SPACE and capital, I changed nothing about this text.

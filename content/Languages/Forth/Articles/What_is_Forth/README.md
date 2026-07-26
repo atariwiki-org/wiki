@@ -6,8 +6,6 @@ This text seems to be coming from the old F-PC homepage, and might be written by
 
 Revised 10/07/95
 
-
-
 ### Introduction to the Forth Programming Language
 
 - "I have yet to see a decent piece of software written in Forth. Let's face it. Forth stinks." --- John Dvorak, provocateur and columnist, InfoWorld, October 29, 1984.
@@ -71,17 +69,23 @@ Actually, 500-600 language elements is almost exactly the same as the combined n
 Two aspects of Forth that are frequently criticized are its cryptic names and its postfix ('or reverse Polish') syntax. To address the former: when the fundamental Forth names were assigned, 10 character-per-second Teletypes were common and so were minicomputer systems with 8 or 16 KB of RAM. Consequently, short names were highly desirable to conserve memory and keystrokes, and we ended up with symbols such as @ for a memory fetch, ! for a memory store, and so on. I won't make any attempt to defend the historical Forth namings; each language has its conventions, and Forth's are no stranger than some found in C, LISP, or APL. Readable, maintainable programs can be written in any language, as can write-only, unmaintainable programs. The secret of obtaining the former rather than the latter is good design, discipline, and documentation, not use of a particular language. At least in Forth, since it is extensible, you can rename any language element to anything you like!
 
 The complaints about about Forth's postfix syntax are more to the point, and deserve a more cogent response. In postfix systems, the arguments precede the operator; for example, to add 1 and 2 in Forth you would write:
+
 ```
 1 2 +
 ```
+
 whereas in C, which uses infix syntax, you would code:
+
 ```
 1 + 2
 ```
+
 and in LISP, which employs prefix syntax:
+
 ```
 + 1 2
 ```
+
 When recursive descent compilers for C and Pascal parse your pretty infix expressions, they transform the expressions into an intermediate postfix form before generating machine code. Forth is postfix to start with to shift the burden of expression evaluation onto the programmer, so that the compiler can be simpler, smaller, and faster. While postfix notation certainly takes some getting used to, the success of HP calculators indicates that postfix should not be considered a major barrier to learning Forth. It is interesting to note that (because the Forth compiler is extensible) an infix expression evaluator can easily be layered onto the compiler; several have been published, but Forth programmers have apparently not found them necessary or useful.
 
 ### The Forth Environment

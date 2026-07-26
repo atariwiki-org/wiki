@@ -1,7 +1,6 @@
 # Atari Assembler Editor
 
-Copyright (C) 1980 Atari, Inc. & Kathleen Ann O'Brien
-
+Copyright (C) 1980 Atari, Inc. \& Kathleen Ann O'Brien
 
 ### Background
 
@@ -13,9 +12,10 @@ The system ran entirely in RAM, meaning that both the source code and resulting 
 
 For larger programs, Atari also sold the [Atari Macro Assembler and Program-Text Editor (CX8121)](../Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md), which used a separate full-screen editor, saved files to disk, and included a linker. This was, however, both slow and expensive. As a result, many programmers were left wanting something more powerful than Assembler Editor (notably with macro support, which it lacked) but faster and less expensive than Macro Assembler. This led to a thriving market for 3rd party assemblers on the Atari platform.
 
-The Atari Assembler Editor cartridge was a program used to edit, compile and debug assembly language programs for the Atari 8-bit computers. It was programmed by Kathleen Ann O'Brien of Shepardson Microsystems, Inc., later founding member of OSS, Inc.. It was the first commercially available assembler for the Atari 8-bit computers ever. And yes, it was programmed by a woman. Showing once more, how far ahead of time SMI and OSS were. The program was a two-pass 6502 assembler, in an 8 KB cartridge. With the command __SIZE__, the user gets the info, how much space is free and the command __DOS__, exits the cartridge and jumps into the Disk Operating System (DOS).
+The Atari Assembler Editor cartridge was a program used to edit, compile and debug assembly language programs for the Atari 8-bit computers. It was programmed by Kathleen Ann O'Brien of Shepardson Microsystems, Inc., later founding member of OSS, Inc.. It was the first commercially available assembler for the Atari 8-bit computers ever. And yes, it was programmed by a woman. Showing once more, how far ahead of time SMI and OSS were. The program was a two-pass 6502 assembler, in an 8 KB cartridge. With the command **SIZE**, the user gets the info, how much space is free and the command **DOS**, exits the cartridge and jumps into the Disk Operating System (DOS).
 
-## Assembler Editor - revision A & B cartridges, outlook for revision C and maybe D
+## Assembler Editor - revision A \& B cartridges, outlook for revision C and maybe D
+
 There are two different versions of the cartridge which could be verified very easy, please see the md5 checksums below. AtariWiki dares to define them as revision A and B in analogy to the Atari Basic cartridge, which was delivered in three different versions. It is easy to find out, which version one has, just type in ASM and hit RETURN. If you have a revision A cartridge, no error message is shown, in case you have a revision B cartridge, the amount of errors are shown. Please see the two pictures below for an example:
 
 ![](attachments/Assembler_Editor_-_Revision_A.jpg)
@@ -24,37 +24,43 @@ Assembler Editor - revision A cartridge test result
 ![](attachments/Assembler_Editor_-_Revision_B.jpg)
 Assembler Editor - revision B cartridge test result
 
-__A binary compare of both cartridges did show, that there is much more different than that! Future investigations have to show, what else is different and how the user can profit of it.__
+**A binary compare of both cartridges did show, that there is much more different than that! Future investigations have to show, what else is different and how the user can profit of it.**
 
-__Revision C:__
+**Revision C:**
 In the future all bugs shoud be collected and if they can be fixed, a revision C is thinkable. Of course, this requires the source code of the program, which we sadly do not have, nor a license for. Maybe there will be a good soul out there, who will give it to us in the future? At least, the [Articles - section-Articles-SourceCode](../../../Articles/README.md#section-Articles-SourceCode) has shown, that there is always hope, unless we never give up. :-)
 
-__Revision D:__
+**Revision D:**
 If we go far ahead of this, then even an interbreed with the [Turbo-BASIC XL - section-TURBO-BASIC+XL-SourceCode](../../../Languages/BASIC/Turbo-BASIC_XL/README.md#section-TURBO-BASIC+XL-SourceCode) is thinkable. In 1985 this was done for the Atari Basic cartridge by Frank Ostrowski and because many code routines are similar, there is a great chance to achieve this. Of course, even a renaming of the cartrige is possible, AtariWiki suggest to call it: 'Atari Turbo-Assembler Editor'. ;-)
 
 ## CAR images
-- [Assembler_Editor_-_Revision_A.car](attachments/Assembler_Editor_-_Revision_A.car)
-- [Assembler_Editor_-_Revision_B.car](attachments/Assembler_Editor_-_Revision_B.car)
+
+- [Assembler\_Editor\_-\_Revision\_A.car](attachments/Assembler_Editor_-_Revision_A.car)
+- [Assembler\_Editor\_-\_Revision\_B.car](attachments/Assembler_Editor_-_Revision_B.car)
 
 ## ROM images
-- [Assembler_Editor_-_Revision_A.rom](attachments/Assembler_Editor_-_Revision_A.rom) ; md5 checksum: 13b6dfbcad3ee35f511209b790e04675
-- [Assembler_Editor_-_Revision_B.rom](attachments/Assembler_Editor_-_Revision_B.rom) ; md5 checksum: aaf134cca657e21e2ad692b03a3233e0
+
+- [Assembler\_Editor\_-\_Revision\_A.rom](attachments/Assembler_Editor_-_Revision_A.rom) ; md5 checksum: 13b6dfbcad3ee35f511209b790e04675
+- [Assembler\_Editor\_-\_Revision\_B.rom](attachments/Assembler_Editor_-_Revision_B.rom) ; md5 checksum: aaf134cca657e21e2ad692b03a3233e0
 
 ## BIN images
-- [Assembler_Editor_-_Revision_A.bin](attachments/Assembler_Editor_-_Revision_A.bin)
-- [Assembler_Editor_-_Revision_B.bin](attachments/Assembler_Editor_-_Revision_B.bin)
+
+- [Assembler\_Editor\_-\_Revision\_A.bin](attachments/Assembler_Editor_-_Revision_A.bin)
+- [Assembler\_Editor\_-\_Revision\_B.bin](attachments/Assembler_Editor_-_Revision_B.bin)
 
 ## ATR images
-- [Atari_Assembler_Editor_with_DOS_2.0S.atr](attachments/Atari_Assembler_Editor_with_DOS_2.0S.atr) ; Assembler Editor - Revision A & B with Atari DOS 2.0S
-- [Atari_Assembler_Editor_with_OSS_DOS_XL_2.30p_Color.atr](attachments/Atari_Assembler_Editor_with_OSS_DOS_XL_2.30p_Color.atr) ; Assembler Editor - Revision A & B with OSS DOS XL 2.30p Color
-- [Hello_World_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr](attachments/Hello_World_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr)
-- [Hello_World_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr](attachments/Hello_World_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr)
+
+- [Atari\_Assembler\_Editor\_with\_DOS\_2.0S.atr](attachments/Atari_Assembler_Editor_with_DOS_2.0S.atr) ; Assembler Editor - Revision A \& B with Atari DOS 2.0S
+- [Atari\_Assembler\_Editor\_with\_OSS\_DOS\_XL\_2.30p\_Color.atr](attachments/Atari_Assembler_Editor_with_OSS_DOS_XL_2.30p_Color.atr) ; Assembler Editor - Revision A \& B with OSS DOS XL 2.30p Color
+- [Hello\_World\_Source\_Code\_Atari\_Assembler-Editor\_with\_DOS\_2.0S\_SD.atr](attachments/Hello_World_Source_Code_Atari_Assembler-Editor_with_DOS_2.0S_SD.atr)
+- [Hello\_World\_Source\_Code\_Atari\_Assembler-Editor\_with\_DOS\_2.75\_SD.atr](attachments/Hello_World_Source_Code_Atari_Assembler-Editor_with_DOS_2.75_SD.atr)
 
 ## XEX files
-- [Assembler_Editor_-_Revision_A.xex](attachments/Assembler_Editor_-_Revision_A.xex) ; Assembler Editor - Revision A execution file
-- [Assembler_Editor_-_Revision_B.xex](attachments/Assembler_Editor_-_Revision_B.xex) ; Assembler Editor - Revision B execution file
+
+- [Assembler\_Editor\_-\_Revision\_A.xex](attachments/Assembler_Editor_-_Revision_A.xex) ; Assembler Editor - Revision A execution file
+- [Assembler\_Editor\_-\_Revision\_B.xex](attachments/Assembler_Editor_-_Revision_B.xex) ; Assembler Editor - Revision B execution file
 
 ## Manuals
+
 - [ATARI Assembler Editor User's Manual with OCR](../../../../media/Companies/Atari/Atari_Assembler_Editor/attachments/Atari_Assembler_Editor_User_s_Manual-OCR.pdf) ; size: 5.8 MB ; good quality
 - [ATARI Assembler Editor User's Manual](../../../../media/Companies/Atari/Atari_Assembler_Editor/attachments/Atari_Assembler_Editor_User_s_Manual.pdf)
 - [ATARI Assembler Editor User's Manual Update](attachments/ATARI_Assembler_Editor_User_s_Manual_Update.pdf)
@@ -62,16 +68,19 @@ If we go far ahead of this, then even an interbreed with the [Turbo-BASIC XL - s
 - [ATARI Assembler Editor User's Manual Errata 2](attachments/Atari_Assembler_Editor_cartridge_manual_errata.pdf) ; size: 238 KB
 - [ATARI Assembler Editor Reference Card](attachments/ATARI_Assembler_Editor_Reference_Card.pdf)
 - [ATARI Assembler Editor Command Summary](attachments/ATARI_Assembler_Editor_short.zip)
-- [The_Atari_Assembler_Editor_Reference.rtf](attachments/The_Atari_Assembler_Editor_Reference.rtf) ; The Atari Assembler Editor Reference by Matthew J. W. Ratcliff
-- [The_Atari_Assembler_Editor_bug_list.rtf](attachments/The_Atari_Assembler_Editor_bug_list.rtf) ; List of known bugs in the program, with description, solution, work around and source
+- [The\_Atari\_Assembler\_Editor\_Reference.rtf](attachments/The_Atari_Assembler_Editor_Reference.rtf) ; The Atari Assembler Editor Reference by Matthew J. W. Ratcliff
+- [The\_Atari\_Assembler\_Editor\_bug\_list.rtf](attachments/The_Atari_Assembler_Editor_bug_list.rtf) ; List of known bugs in the program, with description, solution, work around and source
 
 ![](attachments/The_Atari_Assembler.jpg)
+
 - [The Atari Atari Assembler Editor-Don Inman, Kurt Inman](http://www.atarimania.com/documents-atari-400-800-xl-xe-books_1_8.html) ; Mega-Thanks to Atarimania for hosting!!!
 
 ![](attachments/Der_Atari_Assembler.jpg)
+
 - [Der Atari Atari Assembler Editor-Don Inman, Kurt Inman](http://www.atarimania.com/documents-atari-400-800-xl-xe-books_1_8.html) ; Mega-Thanks to Atarimania for hosting!!!
 
 ## Hint
+
 If the user intends to resize the used memory, the command: 'LOMEM xxxx' must be the very first command after booting. Please see page 7 in the manual for further info. Otherwise the user will get an error:
 
 ![](attachments/LOMEM-SIZE-2.png)
@@ -83,6 +92,7 @@ LOMEM command - incorrect use
 Thanks to Sijmen Schouten for the hint. :-)
 
 ## Pictures
+
 ![](attachments/Der_Atari_Assembler_Cover.jpg)
 Atari Assembler Editor Box Cover - front
 
@@ -102,19 +112,21 @@ Atari Assembler Editor Box Cover - front German version
 Atari Assembler Editor Box Cover - back German version
 
 ## References
+
 - [http://ataripodcast.libsyn.com/antic-interview-21-the-atari-8-bit-podcast-kathleen-obrien-oss](http://ataripodcast.libsyn.com/antic-interview-21-the-atari-8-bit-podcast-kathleen-obrien-oss) ; ANTIC Interview 22 - The Atari 8-bit Podcast - with Kathleen Ann O'Brien from OSS, Inc.
 
-- [https://computingpioneers.com/index.php/Kathleen_O%27Brien](https://computingpioneers.com/index.php/Kathleen_O%27Brien) ; transcript of the interview above
+- [https://computingpioneers.com/index.php/Kathleen\_O%27Brien](https://computingpioneers.com/index.php/Kathleen_O%27Brien) ; transcript of the interview above
 
 - [http://a8preservation.com/#/software/title/%2Fapi%2Ftitles%2F587](http://a8preservation.com/#/software/title/%2Fapi%2Ftitles%2F587) ; Atari Assembler Editor on [a8preservation.com](http://a8preservation.com)
 
 - [http://www.atarimagazines.com/hi-res/v1n1/advanceduser.php](http://www.atarimagazines.com/hi-res/v1n1/advanceduser.php) ; Atari Assembler Editor in comparison to other assemblers by Russ Wetmore
 
-- [http://open-source.ma.web.id/IT/1634-1523/Atari-Assembler-Editor_5818_open-source-ma.html](http://open-source.ma.web.id/IT/1634-1523/Atari-Assembler-Editor_5818_open-source-ma.html) ; good info page about the Atari Assembler Editor including the Hello World! source code
+- [http://open-source.ma.web.id/IT/1634-1523/Atari-Assembler-Editor\_5818\_open-source-ma.html](http://open-source.ma.web.id/IT/1634-1523/Atari-Assembler-Editor_5818_open-source-ma.html) ; good info page about the Atari Assembler Editor including the Hello World! source code
 
 - [Atari Assembler Editor discussion on AtariAge](http://atariage.com/forums/topic/193906-atari-assembler-editor-cartridge-and-inline-comments/?hl=atari+assembler+editor#entry2463276) ; discussion on AtariAge about the Atari Assembler Editor
 
 ## Changing the editors color and background
+
 ![](attachments/Change_Editor_Color.jpg)
 Assembler Editor Cartridge - changing the editor's color and background to user desired colors for better editing
 
@@ -327,11 +339,13 @@ TYA Transfer Register Y to Accumulator
 ```
 
 ## Instruction Set (Operation Codes)
+
 ![](attachments/Instruction_Set_Operation_Codes-1.png)
 ![](attachments/Instruction_Set_Operation_Codes-2.png)
 Instruction Set (Operation Codes)
 
 ## Commands and error codes
+
 ![](attachments/Editor.jpg)
 Atari Assembler Editor - Editor commands
 

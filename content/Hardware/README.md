@@ -3,13 +3,15 @@
 # Atari Hardware
 
 ## Cartridges
+
 - [Blueprint of ACTION! Cart](../Companies/OSS/ACTION/Blueprint_of_ACTION_Cart/README.md)
 - [AtariMax EXEPACKER Files with bundled DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
 - [ARGS RS232 Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (deutsch)
 - [All you ever wanted to know about: Atari Cartridges](../Cartridges/README.md)
 
 ## Controllers
-- [Memory Map - Controller_topics](../Memory_Map/README.md#Controller_topics)
+
+- [Memory Map - Controller\_topics](../Memory_Map/README.md#Controller_topics)
 - [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md)
 - [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 - [Atari Trakball (CX22)](../Trackball/README.md)
@@ -19,6 +21,7 @@
 - [Atari CX85 Numerical Keypad](../Companies/Atari/Atari_Hardware/Atari_CX85/README.md)
 
 ## Computers
+
 - [Atari 400 - MISSING](../Companies/Atari/Atari_Hardware/Atari_400/README.md)
 - [Atari 800 - MISSING](../Companies/Atari/Atari_Hardware/Atari_800/README.md)
 - [Atari 1200XL- MISSING](../Companies/Atari/Atari_Hardware/Atari_1200XL/README.md)
@@ -30,7 +33,9 @@
 - [Atari XEGS - MISSING](../Companies/Atari/Atari_Hardware/Atari_XEGS/README.md)
 
 ## Disk Drives
+
 ### Atari Disk Drives
+
 - [Atari 810 Disk Drive](../Companies/Atari/Atari_Hardware/Atari_810/README.md)
 - [Atari 815 Dual Disk Drive](../Companies/Atari/Atari_Hardware/Atari_815/README.md)
 - [ATARI 1450XL HOME COMPUTER INTEGRAL DISK DRIVE SPECIFICATION](../Companies/Atari/Atari_Hardware/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
@@ -38,6 +43,7 @@
 - [Atari XF551 Disk Drive](../Companies/Atari/Atari_Hardware/Atari_XF551/README.md)
 
 ### Third Party Disk Drives
+
 - [Happy Computers Inc.](../Companies/Happy_Computers/README.md)
 - [CompyShop](../Companies/CompyShop/README.md)
 - [1050 Turbo Upgrade](../Companies/Bernhard_Engl/1050_Turbo/README.md)
@@ -45,25 +51,29 @@
 - [Floppy 2000](Disk_Drives/Floppy_2000/README.md)
 - [High-Density Disk Interface (HDI)](../People/Erhard_Puetz/HDI_Interface/README.md) (aka Floppy 3000)
 - [Indus GT DD Floppy Drive](../Companies/Indus_Systems/Indus_GT/README.md)
-** [Indus GT Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md) 
-** [Indus GT Field Service Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md) 
-** [Indus GT Firmware ROM Disassembly](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
+  \*\* [Indus GT Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md)
+  \*\* [Indus GT Field Service Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md)
+  \*\* [Indus GT Firmware ROM Disassembly](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
 - [ASTRA 2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
 - [Percom AT-88](../Companies/Percom/Percom_AT-88/README.md)
+
 ### Upgrades
 
 ## Interfaces
+
 - [Atari 850 - MISSING](../Companies/Atari/Atari_Hardware/Atari_850/README.md)
 - [TransKey-II](../TransKey-II/README.md)
 
 ## Modems
-- [Atari 830 - Acoustic_Modem - MISSING](../Companies/Atari/Atari_Hardware/Atari_830_Acoustic_Modem/README.md)
+
+- [Atari 830 - Acoustic\_Modem - MISSING](../Companies/Atari/Atari_Hardware/Atari_830_Acoustic_Modem/README.md)
 - [Atari 835 - Direct connect Modem - MISSING](../Companies/Atari/Atari_Hardware/Atari_835_Direct_connect_Modem/README.md)
 - [Atari 1030 - MISSING](../Companies/Atari/Atari_Hardware/Atari_1030/README.md)
 - [Atari XM301 Modem](../Companies/Atari/Atari_Hardware/Atari_XM301/README.md)
 - [Atari SX212 Modem](../Companies/Atari/Atari_Hardware/Atari_SX212/README.md)
 
 ## Printers
+
 - [Atari 820 - 40-Cloumn Printer - MISSING](../Companies/Atari/Atari_Hardware/Atari_820_40-column_printer/README.md)
 - [Atari 822 Thermal Printer](../Companies/Atari/Atari_Hardware/Atari_822_Thermal_Printer/README.md)
 - [Atari 825 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_Hardware/Atari_825_Dot_Matrix_Printer/README.md)
@@ -76,6 +86,7 @@
 - [Atari XDM121 Daisy Wheel Printer- MISSING](../Companies/Atari/Atari_Hardware/ATARI_XDM121_Daisy_Wheel_Printer/README.md)
 
 ## Tape Drives
+
 - [Atari 410 - MISSING](../Companies/Atari/Atari_Hardware/Atari_410/README.md)
 - [Atari 1010 - MISSING](../Companies/Atari/Atari_Hardware/Atari_1010/README.md)
 - [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
@@ -84,8 +95,10 @@
 - [All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
 
 ## Video Upgrades
+
 - [Atari XEP80](../Companies/Atari/Atari_Hardware/XEP80/README.md)
 
 ## Voicebox/Sprachbox
+
 - [Sprachbox (DXG5721)](../Companies/Atari/Atari_Germany/Atari_Germany_Hardware/Sprachbox/README.md)
 - [Sprachbox XL/XE](../Companies/Raetz_Eberle/Sprachbox-XL-XE/README.md)

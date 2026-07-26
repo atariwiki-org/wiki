@@ -1,11 +1,11 @@
 # Sneak Attack
 
 ### General Information
+
 Author: David Plotkin
 Language: ACTION!
 Compiler/Interpreter: ACTION!
 Published: Analog #36 (11/ 85)
-
 
 ''You knew it had been too quiet. Nothing had shown on the scanner for the whole watch. That in and of itself wasn't unusual, but intelligence had reported increased enemy activity. It seemed that a major move to capture and destroy the gunbases that protected the Interior was being planned.
 
@@ -47,10 +47,10 @@ I've been programming Atari home computers for four years. The very first video 
 
 I've always enjoyed Sabotage and several times tried to program something similar myself. I was never very successful, mostly because BASIC just isn't up to the job. But Action! is, and I think you'll enjoy this version of a venerable game.
 
-One more thing. The end is worth waiting for.
----
-''David Plotkin is a Project Engineer for Chevron U.S.A., with a Master's in Chemical Engineering. He bought his Atari in 1980 and is interested in programming and design of games, as well as word processing. His work has been seen in __ANALOG Computing__, __Compute!__ and other computer magazines.''
----
+## One more thing. The end is worth waiting for.
+
+## ''David Plotkin is a Project Engineer for Chevron U.S.A., with a Master's in Chemical Engineering. He bought his Atari in 1980 and is interested in programming and design of games, as well as word processing. His work has been seen in **ANALOG Computing**, **Compute!** and other computer magazines.''
+
 ```
 ; Sneak Attack by David Plotkin
 
@@ -896,5 +896,7 @@ BYTE time=20,lp,ch=764
   OD
 RETURN
 ```
+
 ---
-PDF: [sneak_attack.pdf](attachments/sneak_attack.pdf) 
+
+PDF: [sneak\_attack.pdf](attachments/sneak_attack.pdf)

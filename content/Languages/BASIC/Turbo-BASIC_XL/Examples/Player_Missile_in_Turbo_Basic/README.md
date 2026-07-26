@@ -19,7 +19,6 @@ Z= USR (PMMOVE, Player Number , Source Memory Address, Memory Size, Horizontal P
 
 Player Number can be 1 to 5
 
-
 ### MAC65 Assembler Code of PMMOVE.OBJ
 
 ```
@@ -156,7 +155,6 @@ Player Number can be 1 to 5
 2310     BNE PGCLRLOOP
 2320     RTS 
 ```
-
 
 ### Turbo Basic Demo
 

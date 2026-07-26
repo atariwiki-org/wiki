@@ -11,6 +11,7 @@
 |Harddisk|1|1|x|MFM|128|65.535|8 MB|8.388.496 2)
 |Harddisk|1|1|x|MFM|256|65.535|16 MB|16.776.592 3)
 |Harddisk|1|1|x|MFM|512|65.535|32 MB|33.553.936 4)
+
 1) XFD: subtract -16 Bytes (ATR Header), therefore add +384 Bytes! (XFD saves the full boot sector size / disksize, BUT it does not / cannot save the full sector data – these additional 384 bytes are simply empty!)
 
 2) full byte size / disksize (has 128 bytes boot sectors, thus no need to subtract 384 Bytes!)
@@ -18,8 +19,6 @@
 3) byte size minus boot sectors (has 256 byte boot sectors, thus 3x 128 bytes = 384 bytes already subtracted, since the Atari OS only allows 128 byte boot sectors from diskette! the real disksize is therefore 384 bytes larger, but that data is not transfered from the floppy to the computer! most A8 floppy drives would require a firmware change to read/transfer full 256 bytes bootsectors)
 
 4) harddisks can use full 512 bytes for bootsectors! floppy disks are still limited to 128 bytes bootsectors!
-
-
 
 ## Diskformats and DOS versions supporting them
 
@@ -43,17 +42,16 @@
 |[SuperDOS](../People/Paul_Nicholls/SuperDOS/README.md)|Y|Y|Y|Y|N|N|
 |DOS II+D 4.5|Y|Y|N|N|N|N|
 |DOS II+D 6.x|Y|Y|Y|N|N|N|
-|[XDOS](../People/Stefan Dorndorf/XDOS_2.43/README.md)|Y|Y|Y|Y|N|N|in 360k mode the two disksides are used as twofloppy drives (D1: and D2:) in XDOS!
+|\[XDOS\](../People/Stefan Dorndorf/XDOS\_2.43/README.md)|Y|Y|Y|Y|N|N|in 360k mode the two disksides are used as twofloppy drives (D1: and D2:) in XDOS!
 |KDOS 1.0|Y|N|N|N|N|N|
 |[OS/A+ Version 2.10](../Companies/OSS/OS_Aplus/OS_Aplus-Version_2/README.md)|Y|N|Y|N|N|N|
 |[DOS XL](../Companies/OSS/DOS_XL/README.md)|Y|N|Y|N|N|N|
 |[OS A+4.1](../OS_Aplus-Version_4)|N?|Y|Y|Y|Y|Y|OS A+4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
-
-
 ## Harddisk partition formats and DOS versions supporting them
 
 ### 128 Byte sectors (single density)
+
 ||Partition SizeSectors||512 K4.095||1 M8.191||2 M16.383||4 M32.767||8 M65.535||Remark
 |Top DOS 1.5 Prof|Y|Y|Y|Y|Y|Top DOS Prof. should support subdirs and harddisks,but I have no clue how! (manuals and information missing!)
 |MyDOS 4.5x|Y|Y|Y|Y|Y|
@@ -65,9 +63,8 @@
 |DOS XE|Y|Y|Y|Y|Y|DOS XE does support subdirs, but harddisks up to 16MB can only be used with sup8pdct's homebrew DOS XE formatter!
 |OS A+ 4.1|Y|Y|Y|Y|Y|OS A+ 4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
-
-
 ### 256 Byte sectors (double density)
+
 ||Partition SizeSectors||1 M4.095||2 M8.191||4 M16.383||8 M32.767||16 M65.535||Remark
 |Top DOS 1.5 Prof|Y|Y|Y|Y|Y|Top DOS Prof. should support subdirs and harddisks,but I have no clue how! (manuals and information missing!)
 |MyDOS 4.5x|Y|Y|Y|Y|Y|
@@ -79,8 +76,8 @@
 |DOS XE|Y|Y|Y|Y|Y|DOS XE does support subdirs, but harddisks up to 16MB can only be used with sup8pdct's homebrew DOS XE formatter!
 |OS A+ 4.1|Y|Y|Y|Y|Y|OS A+ 4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
-
 ### 512 Byte sectors (quad density)
+
 ||Partition SizeSectors||1 M2.047||2 M4.095||4 M8.191||8 M16.383||16 M32.767||32 M65.535||Remark
 |Top DOS 1.5 Prof|N|N|N|N|N|N|
 |MyDOS 4.5x|N|N|N|N|N|N|
@@ -92,6 +89,6 @@
 |DOS XE|N|N|N|N|N|N|
 |OS A+ 4.1|Y|Y|Y|Y|Y|?|OS A+ 4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
-
 ## Andere Quellen
+
 - [Diskettenformate.pdf](attachments/Diskettenformate.pdf) ; Thank you so much [Bernhard Pahl](http://www.b-pahl.de/atari8bit/8-Bit-Daten/8-Bit-Daten.html#disk) for providing this information! :-)

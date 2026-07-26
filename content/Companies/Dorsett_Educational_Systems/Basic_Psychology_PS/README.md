@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Atari Basic Psychology PS](https://archive.org/details/DorettAtariBasicPsychology)
 
 This is an archive of the "Basic Psychology" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: Basic Psychology
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 1.56 GB):
 - [ps14](http://data.atariwiki.org/FLAC/Basic_Psychology/ps14.flac)
 - [ps15](http://data.atariwiki.org/FLAC/Basic_Psychology/ps15.flac)
 - [ps16](http://data.atariwiki.org/FLAC/Basic_Psychology/ps16.flac)
+
 ## Images
+
 ![](attachments/psA_.jpg)
 Dorsett Atari Basic Psychology - cassettes with uneven numbers
 

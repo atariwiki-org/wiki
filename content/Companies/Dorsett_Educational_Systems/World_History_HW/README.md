@@ -3,6 +3,7 @@
 Copyright (C) 1983 Dorsett Educational Systems, Inc.
 
 ## Source from archive.org
+
 - [Dorsett Atari World History HW](https://archive.org/details/DorsettAtariWorldHistory)
 
 This is an archive of the "World History" educational program published by Dorsett Educational Systems, Inc. in 1983. This was originally packaged as a set of 8 cassette tapes for use with Atari 400 and 800 computers and the Educational System Master Cartridge.
@@ -17,7 +18,7 @@ The work of digitization and audio cleanup was done by Kay Savetz and Thomas Che
 
 Album: World History
 Year: 1983
-Original Format: Atari Educational System (Dorsett Talk & Teach)
+Original Format: Atari Educational System (Dorsett Talk \& Teach)
 Digital Format: Microsoft WAV, 2 channel, 16-bit 44100Hz sample rate
 Digitized by: Kay Savetz/Thomas Cherryhomes
 
@@ -58,7 +59,9 @@ Tracks (size in sum: 1.71 GB):
 - [hw14](http://data.atariwiki.org/FLAC/World_History/hw14.flac)
 - [hw15](http://data.atariwiki.org/FLAC/World_History/hw15.flac)
 - [hw16](http://data.atariwiki.org/FLAC/World_History/hw16.flac)
+
 ## Images
+
 ![](attachments/hwA_.jpg)
 Dorsett Atari World History - cassettes with uneven numbers
 

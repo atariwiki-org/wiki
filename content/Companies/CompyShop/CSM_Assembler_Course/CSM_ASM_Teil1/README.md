@@ -2,12 +2,10 @@
 
 ### von R. Wilde
 
-
 Zu Beginn dieses Maschinensprache-Lehrganges möchte ich Euch die wichtigsten
 Bauteile (IC's) des ATARI XL/XE und deren Funktion vorstellen. Danach erfolgt eine
 Aufgliederung des Speicherbereiches, in der nächsten Ausgabe dann die
 Zusammenfassung aller Maschinenbefehle.
-
 
 Viele der für Euch vielleicht unverständlichen Begriffe findet Ihr in dem Anhang
 "Begriffserläuterungen" genauer erklärt.
@@ -15,6 +13,7 @@ Alle Adressangaben sind in Hexadezimal mit vorangestelltem "$" gemacht. Dezimale
 Angaben sind mit einem "#" versehen.
 
 ## Der Mikroprozessor
+
 Der Mikroprozessor ist das Gehirn des Computers. Er interpretiert die im Speicher
 stehenden Zahlen als Befehle, die in diesem Lehrgang beschrieben werden sollen.
 Seine Tätigkeit besteht darin, zu rechnen und die Werte eines Registers (siehe unten)
@@ -34,6 +33,7 @@ des Computers. Sie beträgt ca. 1,78 Megahertz also ca. 1780000 Hz. (Abkürzung 
 Hertz = Schwingungen pro Sekunde).
 
 ## Der ANTIC
+
 Auch er zählt zu den Mikroprozessoren, da er ebenfalls die im Speicher stehenden
 Werte als Befehle interpretiert. Seine Aufgabe besteht zum einen darin, je nach
 Grafikmodus, die Werte im Bildschirmspeicher umzuwandeln und dem eigentlichen
@@ -45,6 +45,7 @@ Ligthpen (Lichtgriffel) ab.
 Das ANTIC-Programm wird als Display-List bezeichnet.
 
 ## Der GTIA
+
 Das ist der Grafikprozessor. Er erzeugt das Bild anhand der Daten, die er vom
 ANTIC erhält. Bei der Player-Missile-Grafik kann man dem GTIA die Grafikdaten
 auch direkt übergeben, ohne über den ANTIC zu gehen. Diese Methode verbraucht
@@ -52,11 +53,13 @@ aber sehr viel an Rechenzeit. Eine weitere Funktion des GTIA besteht in der Abfr
 der Triggereingänge und Konsolentaster (START, SELECT usw.)
 
 ## Der POKEY
+
 Der POKEY hat gleich mehrere wichtige Funktionen. Seine Aufgaben sind die
 Sounderzeugung, die Tastatur- und Paddleabfrage, sowie die serielle
 Datenübertragung.
 
 ## Der PIA
+
 Der PIA ist im Gegensatz zu den vorher beschriebenen IC's kein Spezialbaustein
 sondern ein normaler Portbaustein. Er dient zum einen der Joystickabfrage. Zum
 anderen hat er aber eine noch sehr wichtige Funktion. Über ihn können das
@@ -104,7 +107,6 @@ ATARI 800XL :
 
 ![](attachments/RAM_crop.JPG)
 
-
 Die älteren Modelle ATARI 400 und ATARI 800 besitzen im Adressbereich $C000
 bis $FFFF allerdings kein RAM (Der ATARI 400 auch im Speicherbereich $4000 bis
 $BFFF nicht). Daher kann bei diesen Modellen das ROM nicht weggeschaltet
@@ -114,6 +116,7 @@ ANTIC, das Selbsttest-ROM, welches bei Bedarf mittels einer Portleitung (PB7) de
 PIA über den RAM-Bereich $5000 bis $57FF eingeblendet wird.
 
 ## ANHANG – BEGRIFFSERKLÄRUNGEN
+
 Hier noch eine Beschreibung einiger Begriffe, die in diesem Teil des Lehrganges
 Verwendung fanden:
 ;IC's: Integrierte Schaltkreise. Das sind Bausteine, die wie plattgedrückte, auf der
@@ -135,6 +138,7 @@ sinnvolle Anwendung findet. Wie die Bezeichnung sagt, wird hier bis 16 (10+6)
 gezählt, bevor die nächst höhere Stelle raufgezählt wird. Da Zahlen über 9 nicht als
 eine Ziffer dargestellt werden können, verwendet man hier die Buchstaben A-F (A für
 10 und F für 15). Gezählt wird also folgendermaßen:
+
 ```
 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,10,11,12,
 13,14,15,16,17,18,19,1A,1B,1C,1D,1E,1F,
@@ -148,10 +152,10 @@ sich zumeist um dezimale Zahlen. Wer mit dieser Kurzbeschreibung noch nicht allz
 viel anfangen konnte, den verweise ich auf den Artikel "Zahlensysteme im
 Computer" der in der April Ausgabe des CSM erschienen ist.
 
-
 Bis zur nächsten Ausgabe Euer R. Wilde.
 CSM / 6.1988
 ---
+
 Der Artikel entstammt der Kursreihe „6502 Programmieren“ des Compy Shop
 Diskettenmagazins. Die Kursreihe besteht aus 14 Kursen, die im Laufe des Jahres 2011 in
 unregelmäßigen Abständen einzeln veröffentlicht werden, bzw. anschließend als Zusammenzug als

@@ -15,6 +15,7 @@ From ANTIC - The Atari Resource
 ### HOW TO USE THE HELP SYSTEM
 
 The information in the help system is organized into "screens". To move from screen to screen, you press the space bar, the letter keys A-Z, the RETURN key, and the ESC key. Most screens contain text for you to read. Press the space bar to move from one text screen to the next. When you reach the last text screen in a sequence, press the space bar to return to the previous menu. Some screens contain menus of topics. To select a topic, press one one of the letter keys A-Z. At any time, you may:
+
 - Press the RETURN key to go back to the previous menu.
 - Press the ESC key to go back to the main menu.
 - Press the BREAK key to exit from the help system and return to DOS.
@@ -24,19 +25,20 @@ The information in the help system is organized into "screens". To move from scr
 The DOS 4 Disk Operating System is a program which controls disk drives on Atari computers. DOS 4 can be configured to run a variety of different disk drives, single-density or double-density, and single-sided or double-sided. DOS 4 consists of three separate parts:
 
 1. The File Management System (FMS)
-1. The Command Processor (CP)
-1. The Disk Utility Package (DUP)
+2. The Command Processor (CP)
+3. The Disk Utility Package (DUP)
 
 The FMS remains in computer memory all the time, while the CP and DUP remain on the disk and are loaded into memory only when needed. The File Management System maintains the file structure on the disk. It performs disk input/output (I/O) commands like OPEN, CLOSE, INPUT, and PRINT. The DOS 4 FMS supports all the commands accepted by Atari DOS 2.0. Virtually all software written for DOS 2.0 or DOS 3 will also work on DOS 4.
 
 The Command Processor displays a menu of all the programs on a disk and runs any of them with a single keystroke. The CP also lets you examine the disk directory (a list of all the files on the disk) or run the cartridge (if a cartridge is installed). The Disk Utility Package performs a wide variety of manipulations on disk files, such as copying, locking and unlocking, renaming, and deleting. Among the most useful commands in the DUP are those which copy files from one disk to another or duplicate an entire disk even if you have only one disk drive.
 
 ### DISK DRIVE NUMBERS
+
 There are three different types of disk drive numbers:
 
 1. Physical drive numbers
-1. Logical drive numbers
-1. Unit numbers
+2. Logical drive numbers
+3. Unit numbers
 
 Physical drive numbers correspond to the actual pieces of hardware. They range from 1 to 8. Physical drive numbers are assigned first to disk drives on the parallel bus and second to disk drives on the serial bus. For example, if you have two parallel bus drives and three serial bus drives then the parallel bus drives are 1 and 2 and the serial bus drives are 3, 4, and 5. Logical drive numbers are numbers which appear in the names of disk files. There are ten different logical drive numbers, ranging from D0: to D9:. Any time the computer asks you to specify a disk drive, give the logical number of the drive. Normally, logical drive numbers D1: through D8: refer to physical drives 1 through 8 respectively, while logical drive numbers D0: and D9: are not supported.
 
@@ -49,8 +51,8 @@ Parallel bus drives determine their own unit numbers automatically.
 The data on a disk is organized into files. Each file has a name. To access a disk file, you must give its name so that DOS 4 will know which file you are referring to. The name of a disk file is always in the form of a file specification (or "filespec" for short). A filespec consists of three parts:
 
 1. A device specification
-1. A primary file name
-1. An optional extender
+2. A primary file name
+3. An optional extender
 
 The device specification indicates on which disk drive the file is locat. It consists of the uppercase letter "D", followed by a digit (0-9), followed by a colon.
 
@@ -64,17 +66,17 @@ Examples of valid filespecs are "D:MYPROG.BAS", "D:Chapter4.Txt", "D2:paper.7", 
 
 ### WILDCARDS
 
-There are two wildcard characters which may be used within file names (both the primary and the extender): the question mark "?" and the star "*".
+There are two wildcard characters which may be used within file names (both the primary and the extender): the question mark "?" and the star "\*".
 
 The question mark "?" matches any character (including a blank).
 
 Example, "D:WH?" matches "D:WHO" and "D:WHY" and "D:WH", but not "D:WHEN".
 
-The star "*" is equivalent to padding the rest of the field (primary or extender) with question marks.
+The star "\*" is equivalent to padding the rest of the field (primary or extender) with question marks.
 
-Example, "D:WH*" will match "D:WHO" and "D:WHEN" but not "D:WAVE".
+Example, "D:WH\*" will match "D:WHO" and "D:WHEN" but not "D:WAVE".
 
-filespec "D:*.BAS" will match all file names with extender ".BAS", and "D:*.*" will match anything.
+filespec "D:*.BAS" will match all file names with extender ".BAS", and "D:*.\*" will match anything.
 
 If a wildcard is used in a filespec in an OPEN or STATUS command, the first file in the disk directory which matches the filespec is used. In a RENAME, DELETE, LOCK, or UNLOCK command, the indicated operation is done on all files that match.
 
@@ -114,7 +116,6 @@ The OPEN command establishes a line of communication to a disk file. must OPEN a
 | 14 | VERIFY |
 | 8 | OUTPUT |
 
-
 The OPEN INPUT command takes the form {{{OPEN #iocb,4,0,filespec}}}. This command establishes a line of communication to the specified file
 (which must already exist) and allows you to read data from the file, beginning with the first byte of the file. A file open for input may be accessed with the GET, INPUT, NOTE, and POINT commands.
 
@@ -130,18 +131,18 @@ A file open for bad file input may be accessed by the GET, INPUT, and NOTE comma
 The OPEN DIRECTORY READ command takes the form {{{OPEN #iocb,6,0,filespec}}}. This command allows you to read the disk directory using the INPUT and GET commands. For each directory entry which matches the given filespec, DOS 4 returns an eighteen-character record of the following form:
 
 1. A star if the file is locked, or a blank if the file is not locked.
-1. A blank.
-1. Eight characters giving the primary file name, left justified and padded with blanks.
-1. Three characters giving the extender, left justified and padded with blanks.
-1. A blank.
-1. Three digits giving the number of sectors allocated to the file.
-1. A carriage return.
+2. A blank.
+3. Eight characters giving the primary file name, left justified and padded with blanks.
+4. Three characters giving the extender, left justified and padded with blanks.
+5. A blank.
+6. Three digits giving the number of sectors allocated to the file.
+7. A carriage return.
 
 Following the last such record, DOS 4 sends this 17-character record:
 
 1. Three digits giving the number of free sectors on the disk.
-1. The phrase " FREE SECTORS".
-1. A carriage return.
+2. The phrase " FREE SECTORS".
+3. A carriage return.
 
 If the disk has more than 999 sectors, then the numbers appearing in the directory are a fraction of the true sector counts. For Atari 1050
 drives in dual-density mode and for Percom-compatible drives in double-sided double-density mode, the numbers in the directory are half the true sector counts.
@@ -176,7 +177,7 @@ The GET command reads one byte from the disk file. In BASIC, this command takes 
 
 ## Input
 
-The INPUT command reads one or more records from the disk file. It takes the form {{{INPUT #iocb,var_1,...,var_n}}} where each "var" is either an arithmetic variable or a string variable.
+The INPUT command reads one or more records from the disk file. It takes the form {{{INPUT #iocb,var\_1,...,var\_n}}} where each "var" is either an arithmetic variable or a string variable.
 
 ## Put
 
@@ -184,7 +185,7 @@ The PUT command writes one byte of data to the disk file. In BASIC it takes the 
 
 ## Print
 
-The PRINT command writes a record to the disk file. It takes the form {{{PRINT #iocb;exp_1;...;exp_n}}} where each "exp" is either an arithmetic or a string expression. After "exp_1" through "exp_n" are written, a carriage return (which indicates end-of-record) is written; the carriage return can be suppressed by placing a semicolon after exp_n.
+The PRINT command writes a record to the disk file. It takes the form {{{PRINT #iocb;exp\_1;...;exp\_n}}} where each "exp" is either an arithmetic or a string expression. After "exp\_1" through "exp\_n" are written, a carriage return (which indicates end-of-record) is written; the carriage return can be suppressed by placing a semicolon after exp\_n.
 
 ## Status
 
@@ -210,15 +211,18 @@ In BASIC, the UNLOCK command takes the form {{{XIO 36,#iocb,0,0,filespec}}}. The
 ## Point and Note
 
 The POINT command allows you to perform random access by skipping from place to place within a file without reading all the data in between. In Atari BASIC, the POINT command should be given as the following three-line sequence:
+
 ```
 Q=INT(P/256)
 R=P-Q*256
 POINT #iocb,Q,R
 ```
+
 This tells DOS 4 that the next byte to be read or written is the byte in position P. If P was 0, the next byte read or written will be the first byte of the file; if P was 1, the next byte read or written will be the second byte of the file; and so on.
 
 The NOTE command tells the position within the file of the next byte to be read or written. In Atari BASIC, the NOTE command
 should be given as the following twoline sequence:
+
 ```
 NOTE #iocb,Q,R
 P=Q*256+R
@@ -317,7 +321,7 @@ The L. BINARY LOAD command loads a disk file into memory and runs it. The file m
 The M. RUN AT ADDRESS command runs a program beginning at an address you specify. The address must be given in hexadecimal.
 
 The O. DUPLICATE FILE command copies one or more files from one disk to another. It works with one or more disk drives. The command can be used to copy files from one kind of disk drive to another (say, from a single-density drive to a double-density drive or vice versa, or from a drive made by one manufacturer to a drive made by a different manufacturer). When you select this item, the DUP asks for the numbers of the source drive and of the destination drive (which default to "1,1" if you press RETURN). What happens next depends on whether or not you specify the same drive as both source and destination. If you specify two different drives then the DUP asks you for the names of the files to be duplicated. Respond by entering the names of one or more disk files, separated by commas (do not include device specifications). If wildcards are used in the file names, all files which match the given filespecs are copied. There is, however, one exception to the wildcard
-rules: an extender which contains a wildcard will not match an extender of ".SYS" or ".COM". For example, "*.*" refers to all files except those ending in ".SYS" or ".COM", while "*.COM" refers to all files whose names end in ".COM". When you have done this, the duplicate operation will proceed. If you specify the same drive as both source and destination, the DUP informs you that swapping is required and asks how many copies you want to make. Respond with a number from 1 to (The number defaults to 1 if you press RETURN.) When you specify the number of copies, you may place the option "/R" after the number (for example, you may type "3/R"). The /R option specifies that the drive is to be reconfigured each time disks are swapped. This makes it possible to move files between disks of different types (e.g., between single- and double-density disks) even if you have only one disk drive. If you choose the /R option, the DUP asks you to specify the drive configuration to be used for the source disk and the configuration to be used for the destination disk(s). Each time, DUP displays a menu of configurations to choose from. Next, the DUP asks for the names of the files to be copied. Respond by entering one or more file names, separated by commas, as previously described. The DUP then asks you to insert the source disk. When you have done so, it reads in as many of the specified source files as will fit into memory and then asks you insert the destination disk. Once you've done that, the data in memory is written out. If you requested more than one copy, the DUP asks you to insert the second destination disk and again the data in memory is written out. The DUP continues to ask for destination disks until it has written onto each of them. At this point, if all of the specified source disk files have been written then the operation ends. If not, the DUP asks you to reinsert the source disk, and the above steps are repeated until all of the specified files have been written onto each destination disk.
+rules: an extender which contains a wildcard will not match an extender of ".SYS" or ".COM". For example, "*.*" refers to all files except those ending in ".SYS" or ".COM", while "\*.COM" refers to all files whose names end in ".COM". When you have done this, the duplicate operation will proceed. If you specify the same drive as both source and destination, the DUP informs you that swapping is required and asks how many copies you want to make. Respond with a number from 1 to (The number defaults to 1 if you press RETURN.) When you specify the number of copies, you may place the option "/R" after the number (for example, you may type "3/R"). The /R option specifies that the drive is to be reconfigured each time disks are swapped. This makes it possible to move files between disks of different types (e.g., between single- and double-density disks) even if you have only one disk drive. If you choose the /R option, the DUP asks you to specify the drive configuration to be used for the source disk and the configuration to be used for the destination disk(s). Each time, DUP displays a menu of configurations to choose from. Next, the DUP asks for the names of the files to be copied. Respond by entering one or more file names, separated by commas, as previously described. The DUP then asks you to insert the source disk. When you have done so, it reads in as many of the specified source files as will fit into memory and then asks you insert the destination disk. Once you've done that, the data in memory is written out. If you requested more than one copy, the DUP asks you to insert the second destination disk and again the data in memory is written out. The DUP continues to ask for destination disks until it has written onto each of them. At this point, if all of the specified source disk files have been written then the operation ends. If not, the DUP asks you to reinsert the source disk, and the above steps are repeated until all of the specified files have been written onto each destination disk.
 
 The N. CONFIGURE DRIVE command does two things: it tells DOS 4 what kind of disk drive is in your system, and it tells the disk drive how it should configure itself (e.g., single-density mode or double-density mode). When you select this item, the DUP asks you which drive you want to configure. Respond by typing a number from 0 to 9 (if you are using the disk drive number redirection feature of DOS 4, this is a logical drive number, not a physical drive number). After you have specified the drive number, the DUP displays a menu of disk drive configurations, with a star placed next to the drive's current configuration (actually, the star indicates what DOS 4 thinks the current configuration is; the DUP does not interrogate the drive to find out what its actual configuration is). Respond by typing the letter listed next to the configuration that you want the drive to become. If you press RETURN without typing a letter, the DUP assumes that you want the drive to
 remain in its current configuration. For an Atari 810 disk drive, you must select configuration A. For an Atari 1050-compatible drive,
@@ -377,8 +381,8 @@ The CP will examine BLDFLG and issue an error message if the contents of BLDFLG 
 DOS 4 uses the same format for binary load files as Atari DOS 2.0 and DOS 3. A binary load file consists of one or more "segments", each of which gives the data to be loaded into a contiguous block of memory. A segment consists of three parts:
 
 1. A two-byte file type code, in which each byte contains $FF. This is required on the first segment in the file, but optional on subsequent segments.
-1. A four-byte header in which the first two bytes give the address where the first byte of the data block goes, and the last two bytes give the address where the last byte of the data block goes.
-1. A data block which contains one or more bytes of data to be loaded into memory.
+2. A four-byte header in which the first two bytes give the address where the first byte of the data block goes, and the last two bytes give the address where the last byte of the data block goes.
+3. A data block which contains one or more bytes of data to be loaded into memory.
 
 There are two memory locations which have special significance to the loader: INIVEC at $2E2,2 and RUNVEC at $2E0,2. Every time the loader finishes loading a segment, it checks to see if a non-zero address was loaded into INIVEC. If so, the loader immediately executes a subroutine call (JSR statement) to the address in INIVEC.
 
@@ -410,7 +414,6 @@ Memory location RRVECT at $7D1,3 contains a JMP instruction. The FMS executes a 
 
 ## DOS 4 MEMORY MAP
 
-
 || Memory Loc. || Function ||
 | $0A | CP Load And Run Vector |
 | $0C | FMS Init Vector |
@@ -422,7 +425,6 @@ Memory location RRVECT at $7D1,3 contains a JMP instruction. The FMS executes a 
 | $17FC-		| Sector Buffers |
 | $1BFC-$20FB | Command Processor  |
 | $20FC-$4FFB | Disk Utility Package |
-
 
 Note 1: DOS 4 assumes that the FMS Zero Page is not altered in between calls to the FMS.
 
@@ -441,7 +443,6 @@ CRTENV at $7D4,1 determines whether control goes to the CP or to the cartridge w
 REQEOL at $7D6,1 determines how strictly the FMS enforces the rules for filespecs. A value of $FF means that the rules are strictly enforced. In particular, each filespec must end with a carriage return. A value of $0B is the same as $FF, except that extra characters in the extender are ignored. A value of $00 relaxes the rules, which means that any invalid character is interpreted to mean end-of-filespec. The default value of REQEOL is $0B. Values other than $00, $0B, or $FF are not allowed.
 
 ## I/O ERROR CODES
-
 
 || Code || Message || Description ||
 | 128 | BREAK ABORT | You pressed the BREAK key during an I/O operation. This stops the operation. |
@@ -476,34 +477,33 @@ REQEOL at $7D6,1 determines how strictly the FMS enforces the rules for filespec
 | 176 | UNKNOWN DRIVE CONFIGURATION |The Disk Utility Package encountered a disk drive configuration it does not understand. |
 | 177 | UNABLE TO MERGE |The Disk Utility Package was unable to merge a Disk Configuration File because the file is not in the correct format, or there is insufficient memory, or the disk drive menu is already full. |
 
-
 ## CONFIGURING DOS 4 TO YOUR SYSTEM
 
 To configure DOS 4 to your system, perform steps 1-8 below:
 
 1. Load in the Disk Utility Packageby selecting DISKUTIL on the DOS 4 Command Processor menu.
-1. Select item N. CONFIGURE DRIVE.
-1. In response to the prompt "CONFIGURE DRIVE - DRIVE NUMBER?", type "1" to indicate drive ##
-1. A menu of disk drive configurations will appear on the screen. Type a letter to select the type of drive you have installed as drive #1 and the density in which you want to use it.
-1. For an Atari 810 (or equivalent) drive, you must select A.
-1. For an Atari 1050-compatible drive, you may select A for single-density operation, or B for dual-density operation.
-1. For a Percom-compatible drive, you may select C for single-sided single-density operation, or D for single-sided double-density operation. If the drive is double-sided, you may also select E for double-sided double-density operation.
-1. If you have more than one disk drive, use the N. CONFIGURE DRIVE command to configure each drive in your system.
-1. Insert a blank diskette in drive #1 and use the I. FORMAT DATA DISK command to format it.
-1. Use the H. WRITE DOS command to write out to drive #1 a version of DOS 4 which is configured to your system.
-1. Try to boot the system using the new system disk you just created.
+2. Select item N. CONFIGURE DRIVE.
+3. In response to the prompt "CONFIGURE DRIVE - DRIVE NUMBER?", type "1" to indicate drive ##
+4. A menu of disk drive configurations will appear on the screen. Type a letter to select the type of drive you have installed as drive #1 and the density in which you want to use it.
+5. For an Atari 810 (or equivalent) drive, you must select A.
+6. For an Atari 1050-compatible drive, you may select A for single-density operation, or B for dual-density operation.
+7. For a Percom-compatible drive, you may select C for single-sided single-density operation, or D for single-sided double-density operation. If the drive is double-sided, you may also select E for double-sided double-density operation.
+8. If you have more than one disk drive, use the N. CONFIGURE DRIVE command to configure each drive in your system.
+9. Insert a blank diskette in drive #1 and use the I. FORMAT DATA DISK command to format it.
+10. Use the H. WRITE DOS command to write out to drive #1 a version of DOS 4 which is configured to your system.
+11. Try to boot the system using the new system disk you just created.
 
 If it works, you're done. If not, then go back and try again. You now have a disk with a properly configured version of DOS 4. It contains the files QDOS.SYS, QDUP.SYS, CONFIG.SYS, and DISKUTIL.COM. If you want to copy the remaining DOS 4 files onto your new diskette, perform the steps below:
 
 1. Load the Disk Utility Package and select the O. DUPLICATE FILE command.
-1. When the prompt "DUP FILE - SOURCE_DRIVE,DEST_DRIVE" appears, press RETURN.
-1. When the prompt "SWAPPING REQUIRED - HOW MANY COPIES" appears, type "1/R" and press RETURN.
-1. The disk drive configuration menu will appear. Select the single-sided single-density choice (A or C) for the drive you have installed as drive ##
-1. The configuration menu will appear again. Press RETURN. (No choice is necessary.)
-1. In response to the prompt "GIVE NAME(S) OF FILE(S) TO MOVE", type "*.COM,*.*" and press RETURN.
-1. When "INSERT SOURCE DISK" appears, insert your original DOS 4 program disk in drive #1 and press RETURN.
-1. When "INSERT DESTINATION DISK" appears, insert your new system disk in drive #1 and press RETURN.
-1. Repeat steps 15 and 16 until the DUPLICATE FILE operation is finished.
+2. When the prompt "DUP FILE - SOURCE\_DRIVE,DEST\_DRIVE" appears, press RETURN.
+3. When the prompt "SWAPPING REQUIRED - HOW MANY COPIES" appears, type "1/R" and press RETURN.
+4. The disk drive configuration menu will appear. Select the single-sided single-density choice (A or C) for the drive you have installed as drive ##
+5. The configuration menu will appear again. Press RETURN. (No choice is necessary.)
+6. In response to the prompt "GIVE NAME(S) OF FILE(S) TO MOVE", type "*.COM,*.\*" and press RETURN.
+7. When "INSERT SOURCE DISK" appears, insert your original DOS 4 program disk in drive #1 and press RETURN.
+8. When "INSERT DESTINATION DISK" appears, insert your new system disk in drive #1 and press RETURN.
+9. Repeat steps 15 and 16 until the DUPLICATE FILE operation is finished.
 
 You now have a system disk which contains a version of DOS 4 that is correctly configured for your system, together with all the DOS 4 files. If you ever add a new disk drive to your system, you will have to repeat steps 1-8 above to create a version of DOS 4 which is customized to your new system configuration. By this time, you will probably have lots of disks containing your old version of DOS 4;
 it is safe to use the H. WRITE DOS command to overwrite the old version of DOS 4 with the new version.

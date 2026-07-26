@@ -1,9 +1,8 @@
 # A-LANG: WAYS TO IMPLEMENT COMPUTER LANGUAGES ON 6502s
 
-__David A. Wheeler__
+**David A. Wheeler**
 
 (original at [http://www.dwheeler.com/6502/a-lang.txt](http://www.dwheeler.com/6502/a-lang.txt) )
-
 
 Here are some of my ideas on how
 to create efficient and easy-to-use programming languages
@@ -18,7 +17,7 @@ I did create a partial prototype of some of these ideas, particularly
 some of the linking techniques.
 
 Still, this was an old problem that a friend of mine
-(Bob Pew) & I often hashed out.  Bob passed away just when I completed
+(Bob Pew) \& I often hashed out.  Bob passed away just when I completed
 writing the first draft of these ideas, and I was about to call
 him about my new ideas for this old puzzle we'd often chatted about.
 I miss him; perhaps this little file will serve as a small memorial to him.
@@ -29,7 +28,7 @@ Perhaps some reader of this file actually DOES decide to do this. If you do:
 
 Who knows; maybe the ideas of an "optimizing assembler" and
 "compiling linker" can be taken to other systems. It makes some sense,
-especially for systems where compilers are quickly written & can
+especially for systems where compilers are quickly written \& can
 generate assembly, so that poor compiler code can be made a little better.
 It's possible these ideas have been created before, especially on far
 older systems.
@@ -42,25 +41,25 @@ Sorry about that, but I think you'll still find them useful.
 File originally created 11-April-1994.
 This version (slightly revised) 12-Sep-2002.
 
-
 ## BACKGROUND/THE PROBLEM
 
 The 6502 is a weird beast with a very irregular instruction set.
-Bob Pew & I wanted a language that would be (a) faster to program in (than
+Bob Pew \& I wanted a language that would be (a) faster to program in (than
 assembly) but be (b) fast when running.  It needed to be pretty efficient.
 This turns out to be an intellectually challenging problem; below
 are (what I think are) some solutions.
 
 There are many odd things about the 6502 that make it hard to do this:
+
 + It's REALLY an 8-bit processor. It doesn't even have 16-bit
-data registers or instructions (many other 8-bit chips, like the Z80,
-at least had these). That means that, where possible, use
-8-bit manipulations instead of 16 or 32 bit data types.
+  data registers or instructions (many other 8-bit chips, like the Z80,
+  at least had these). That means that, where possible, use
+  8-bit manipulations instead of 16 or 32 bit data types.
 + Its instruction set is rather irregular and has a few
-odd addressing schemes (esp. "zero page").
+  odd addressing schemes (esp. "zero page").
 + Its built-in stack (for subroutines) is only 256 bytes long -
-possibly enough for storing the return address, but probably not
-big enough for storing data as well.
+  possibly enough for storing the return address, but probably not
+  big enough for storing data as well.
 
 A key to using the 6502 is to keep as much as possible in the "zero
 page." The zero page is the first 256 bytes of memory; the 6502 has
@@ -72,30 +71,31 @@ Loads and stores are faster to the zero page, and some operations
 ## THE SOLUTIONS
 
 I have developed 2 new (to my knowledge) solutions to this problem:
+
 1. Statically assign parameter and local variables in a special way.
-To do this, divide the work of compilation & linking
-in an unusual way (the linker does a ton of "compilation" work)
-to efficiently use 6502 resources, and
-in particular assign all local variables and parameters to static
-addresses. Global analysis is then used to assign addresses so that,
-in most cases, all copying between locations (e.g., between
-the addresses for parameters and addresses for local variables)
-are essentially optimized away.  This could probably be best utilized
-by creating a different language, so it then discusses a potential
-ASM+ & Simple, a pair of languages that squeeze as much
-efficiency out of the 6502 as reasonably possible.
-However, the approach could be used by C, etc., especially if the
-programmer is willing to accept certain conventions and extensions
-(e.g., extending C to support pass-by-reference like C++ and then writing
-6502 code that uses that extension in most cases).
-This approach can support recursion - even automatically - but there
-is a cost where the recursion occurs.
+   To do this, divide the work of compilation \& linking
+   in an unusual way (the linker does a ton of "compilation" work)
+   to efficiently use 6502 resources, and
+   in particular assign all local variables and parameters to static
+   addresses. Global analysis is then used to assign addresses so that,
+   in most cases, all copying between locations (e.g., between
+   the addresses for parameters and addresses for local variables)
+   are essentially optimized away.  This could probably be best utilized
+   by creating a different language, so it then discusses a potential
+   ASM+ \& Simple, a pair of languages that squeeze as much
+   efficiency out of the 6502 as reasonably possible.
+   However, the approach could be used by C, etc., especially if the
+   programmer is willing to accept certain conventions and extensions
+   (e.g., extending C to support pass-by-reference like C++ and then writing
+   6502 code that uses that extension in most cases).
+   This approach can support recursion - even automatically - but there
+   is a cost where the recursion occurs.
 2. Fixed location data stack.
-This would be easier to implement & would support recursion more easily.
-This approach wouldn't be as fast or small as the previous approach,
-but it would support a more traditional approach
-(linking could just link, compiling could just compile).
-This approach would be particularly good for FORTH-based languages.
+   This would be easier to implement \& would support recursion more easily.
+   This approach wouldn't be as fast or small as the previous approach,
+   but it would support a more traditional approach
+   (linking could just link, compiling could just compile).
+   This approach would be particularly good for FORTH-based languages.
 
 It's hard to argue that these are "always better", but I suspect
 they're better in at least some circumstances than other approaches.
@@ -103,7 +103,6 @@ Stack-based approaches that use a zero page two-byte pointer to an
 arbitrary stack are flexible, but SLOW on a 6502 and create large code sizes.
 Anyway, if you're implementing these kinds of systems, you might want
 to think about these ideas.
-
 
 ### SOLUTION 1: Overloaded static parameter/local addresses - ASM+ and Simple.
 
@@ -150,17 +149,17 @@ could be eliminated.
 Creating code when everything was implemented would go through
 the following steps (with product types in square brackets):
 
-\[Simple Code as ASCII text, created by a programmer\] ->
-Simple compiler. ->
-\[ASM+ Code as ASCII text\] ->
-Special preprocessor and/or done as part of the "linker" step ->
-~[List of procedures & what they call; also input/output params, globals,
-and a list of variable sizes which need allocation] ->
+\[Simple Code as ASCII text, created by a programmer\] -\>
+Simple compiler. -\>
+\[ASM+ Code as ASCII text\] -\>
+Special preprocessor and/or done as part of the "linker" step -\>
+~\[List of procedures \& what they call; also input/output params, globals,
+and a list of variable sizes which need allocation\] -\>
 
 (At this step "compilation" is done. Now to link:)
 
 Run "linker" across all ASM+ code - first determine what procedures call
-what & then do a topological sort. Then determine address locations
+what \& then do a topological sort. Then determine address locations
 of all variables (including variables used to pass data between
 procedures), trying to use zero page as much as possible.
 Generate a file of all address locations.
@@ -187,8 +186,8 @@ This is necessary to maximize zero page usage.
 The ASM+ assembler could fit in the restricted 6502 memory.
 The assembler would need to keep the macros, global definitions,
 jump addresses of procedures, and addresses for parameters in memory
-at all times; for each procedure definitions could be kept & then dropped.
-Code could come in & out via the disk.  Thus, this could be self-hosting.
+at all times; for each procedure definitions could be kept \& then dropped.
+Code could come in \& out via the disk.  Thus, this could be self-hosting.
 
 The procedure call system should be by-reference, since this is cheaper
 on a system without a stack and where "copies" aren't really copied.
@@ -200,7 +199,7 @@ Recursive calls can be handled, though expensively: copy the values that
 might be changed onto a stack and/or malloced area, call the recursive call,
 then pop the values off the stack.   This can be noticed at link time;
 by simply following the call tree you can see which calls
-"loop back", and wrap those calls with the commands to save & restore
+"loop back", and wrap those calls with the commands to save \& restore
 the variables covered by everything memory location possibly used "between".
 
 Implementation order: naturally not everything need be built at once.
@@ -228,7 +227,6 @@ Here's a sample ASM+ syntax:
 Results are always the left-hand-side argument (so that later Simple
 operations will look similar).
 
-
 ```
 I++  A    increment integer A.      INC A ; BNE .1 ; INC A+1 ; .1
 C++  A    increment character A.    INC A
@@ -250,7 +248,7 @@ also -=, *=, /*
 I:=I+I A,B,C
 ```
 
-also -, *, /, and for C as well.
+also -, \*, /, and for C as well.
 
 ```
 MEMCOPY
@@ -283,7 +281,6 @@ IN and INOUT parameters, then use CALL to call into it.
 A processor will examine ASM+ files to look for CALL, IN, OUT, INOUT,
 FUNC, and PROC commands.
 
-
 The first peephole optimization step would try to fold constants,
 combine copies together (so that they're all done at once), and combine
 separate macros into specialized combined macros (like the ones listed
@@ -295,7 +292,7 @@ of assembly instructions to eliminate extra work.
 For example: LDA #!XXX; STA ?A; LDA #?B; STA ?C ; LDA #!XXX becomes
 LDA #?B; STA ?C; LDA #!XXX; STA ?A;
 so loading sets of variables with constants is faster.
-For example, if the constants are <256 this would combine the high byte 0s.
+For example, if the constants are \<256 this would combine the high byte 0s.
 If the constants were identical (say 5), similar approaches could
 combine all the loads into pretty reasonable items.
 
@@ -309,21 +306,20 @@ special-case asm instructions, etc.
 As a quick-and-dirty implementation, lex/flex or a regular expression
 engine could be used to implement the peephole optimizations.
 
-
 Now for the "Simple" language.
 It is to generate the ASM+ language.
 It's designed to be simple to parse (probably by recursive descent or LL(1),
-since they're easy to build & small).
+since they're easy to build \& small).
 It would be easier to create if, at first, the language were VERY restricted.
 
-The syntax I've put down is very C-like, but with some Ada & Pascal
+The syntax I've put down is very C-like, but with some Ada \& Pascal
 influences. Ideally, with the "right" definition files or simple text
 preprocessing, it should compile on a stock compiler on other machines.
 
 The syntax should also fit within the target machine limits.
 For example, old Apple II's can't generate curly brackets ({}) or
-underscores (_). I would substitute the dollar sign ($) for _, and
-use [] instead of {} - again, to support self-hosting.
+underscores (\_). I would substitute the dollar sign ($) for \_, and
+use \[\] instead of {} - again, to support self-hosting.
 
 As far as parsing it goes, recursive descent is often easy to understand,
 but I suspect an LL(1) parser would be better (see Fisher, page 120).
@@ -331,7 +327,7 @@ Eventually it'd be good if Simple were written in itself, and using an
 LL(1) parser driver would mean that recursion wouldn't be necessary
 (which would be an expensive operation in Simple).
 Also, a table-driven parser would be much smaller (inserting comparisons
-everywhere would make the compiler large) & according to Fisher they
+everywhere would make the compiler large) \& according to Fisher they
 tend to be faster too (that's surprising).
 The table could be used to at least list what are legal tokens where
 an error occurs, and for LL(1) it's easy to add an automatic error repairer.
@@ -429,7 +425,7 @@ STA $13
 There's a lot of allocation operations in the intermediary code,
 but that makes sense.. the
 key to using the 6502 is to allocate scarce zero page resources, and
-the key to making a faster assembler is to allocate & deallocate
+the key to making a faster assembler is to allocate \& deallocate
 procedure space so all procedures can be assembled at one time.
 There needs to be a keyword that hints "put this in the zero page."
 The C "register" keyword isn't quite right, since it's perfectly
@@ -451,6 +447,7 @@ register where appropriate).
 Such keywords probably include ZPAGE, REG{A,X,Y}.
 Perhaps FOR REGX I := 10 DOWNTO 0 {by 2} DO ... ENDFOR;
 could become
+
 ```
 LDX #$0a
 ; if constant start, don't need to check here!
@@ -468,7 +465,6 @@ tightest loops are in separate subroutines called by others; that way,
 since they're lower in the tree, they're more likely to get zero
 pages assigned to them.
 
-
 CC65, a freeware C compiler for 6502s, has a "-static-locals" option.
 This option lets locals be in static locations, and they correctly
 note that this produces faster code but doesn't permit it to be
@@ -483,15 +479,14 @@ it uses the A and X registers as a register, and pushes parameters on
 a small stack through multiple JSR's (that are simple to implement as
 a compiler, but not really very efficient).
 
-
 Then a small text editor could be built, both to use these things
 (eventually the Simple compiler, linker, and ASM+ assembler
 should be self-hosted) and to show how to use these things.
 
 It would probably have a buffer module (for storing the text) and a
-display module (to take what's in the buffer & display it).
+display module (to take what's in the buffer \& display it).
 If text has been modified, move it to a line buffer internally so that
-inserts & deletes don't move everything.
+inserts \& deletes don't move everything.
 Allow cursor motions keys like wordstar (control ESDX), delete previous
 letter, move around like emacs, find (control-F?), and ESC back to a menu
 for saving, loading, cataloging, help.  Two option sets: one for normal
@@ -500,14 +495,13 @@ text vs. one for programs, and a general host-based one (shift key mod, etc).
 The key here is to have a basic, easy-to-use text editor; one didn't
 come with the Apples, oddly enough.
 
-
 ### SOLUTION 2: FIXED LOCATION DATA STACK
 
 This approach depends on fixing the location of the data stack,
 but spreads the lower and upper bytes to different locations
 (possibly different pages) instead of having the bytes be
 adjacent in the memory space.  It would work nicely for
-Forth, C, etc.  The trick is that the upper & lower bytes of multibyte
+Forth, C, etc.  The trick is that the upper \& lower bytes of multibyte
 values aren't stored contiguously in memory, but are instead "spread"
 into parallel pages; this trick increases the available space significantly,
 makes stack movement code faster, and increases safety.
@@ -518,14 +512,14 @@ allow 2-bytes of data on your stack.
 Though it's the normal 6502 convention, there's no REQUIREMENT to
 store 16-bit values in the order of "lower 8 bits", followed
 immediately by "upper 8 bits".
-The upper & lower bytes could be separated by a standard
+The upper \& lower bytes could be separated by a standard
 distance (e.g., 256 bytes) instead.
 
 If you create fixed positions for the array of "lower bytes" and
 the "upper bytes", as long as there aren't more than 256 elements, access
 is easy. Simply set the X or Y register to the index, then use
 the "address,X" or "address,Y" access mode to get or store the
-lower & upper byte of whatever you want.
+lower \& upper byte of whatever you want.
 Of course, the address+X shouldn't cross pages, since this would
 slow down access on an already slow machine.
 
@@ -535,8 +529,8 @@ that might use 2 pages.
 For data stacks (necessary for Forth, C, etc),
 this works out particularly well. This means that if you're
 willing to live with a 256-element data stack (not completely unreasonable),
-you can have a pretty clean & quick interface.
-Moving up & down the stack involves a single increment or decrement to
+you can have a pretty clean \& quick interface.
+Moving up \& down the stack involves a single increment or decrement to
 the X or Y register, the cheapest possible operation.
 You can also cheaply access operations "inside" the stack by selecting
 precomputed offsets, again making access MUCH easier.
@@ -556,7 +550,7 @@ wrong size! Type conversions between char, int, and long become no-ops,
 eliminating a set of dangerous mistakes.
 
 If you want the approach but can't live with only 256 data elements,
-you could check on each stack push & pop, and move (most of the) data
+you could check on each stack push \& pop, and move (most of the) data
 elements when the stack got full or empty.
 This is slower, obviously.
 
@@ -595,7 +589,7 @@ incrementing and decrementing instructions can only be used directly if X
 is used as the stack pointer; with Y it's more complicated.
 
 Here's a sample. For the stack, the X-reg points to the top of stack,
-growing downwards in memory.  Thus X starts large & get smaller as more
+growing downwards in memory.  Thus X starts large \& get smaller as more
 items get put onto it.  If it becomes 0, the stack is full.
 On decrementing X, you can check to see if it's become negative,
 or to be more paranoid you could declare an error if it's zero (X=0).
@@ -669,7 +663,7 @@ Also, implementing this scheme is _extremely_ easy, while doing "ASM+"
 right would take a LOT more work.
 
 If I were building a "language shop", this would be a good way to add
-a Forth & a C compiler to the "language collection."
+a Forth \& a C compiler to the "language collection."
 Programming languages which are often implemented using a
 stack-based language would fit this model easily too
 (Java, C#, Python, Perl, PHP, Pascal).
@@ -686,7 +680,7 @@ array of high bytes, making access easy.
 In fact, it seems like 2 macro languages could be developed -
 the ASM+ one above, based on fixed addresses, and a
 stack-based macro language, and lots of reuse could occur.
-The underlying assembler & peephole optmization system could be the
+The underlying assembler \& peephole optmization system could be the
 same, and the same 2nd-stage peephole optimizations might be used for both
 (though some optimizations would only be useful in one or the other).
 
@@ -762,13 +756,13 @@ STA HSTACK+1,X
 
 Again, note that implementing "E++" can't be done with the following
 code, since it doesn't use a legal addressing mode:
+
 ```
 INC LSTACK+1,Y        ; E++.  This addressing mode is not legal.
 ; Should use X instead of Y.
 BNE .1
 INC HSTACK+1,Y
 ```
-
 
 ## COMPARING THE TWO APPROACHES
 
@@ -813,7 +807,6 @@ INX                  ; pop the stack (once), leaving result on stack.
 Pulling up the 6502 opcodes (e.g., at
 http://www.6502.org/tutorials/6502opcodes.htm), we can compare the approaches.
 
-
 Approach #1 - all zero page:      13 bytes of code,  19 cycles to run
 no zero page:      19 bytes of code,  25 cycles to run
 Approach #2 - all zero page:      14 bytes of code,  26 cycles to run
@@ -837,13 +830,12 @@ In particular, approach #2 would be simpler for self-hosting.
 This solution #2 is also more traditional, so link times
 would be much smaller.
 
-
 ## Notes on creating other languages:
 
 A finalization system would be useful, since a number of
 allocation requests could be to compensate for the inability of
 the system to have large local variables.
-Heck, an automatic garbage collector might be fine - mark & sweep collectors
+Heck, an automatic garbage collector might be fine - mark \& sweep collectors
 wouldn't have much to do, since there's not much memory to sweep.
 
 Initialization and adjustment (like Ada 95) would be useful in
@@ -872,9 +864,7 @@ Even on the rare cases where Approach #1 has to do a copy, it's far less.
 Approach #2 even encourages this, because an error in typing is
 less catestrophic.
 
-
 ## REFERENCES:
 
-"Crafting a Compiler"" by Charles N. Fisher & Richard J. LeBlanc, Jr.
-1988. Benjamin/Cummings Publishing Company. Menlo Park, CA.
-
+"Crafting a Compiler"" by Charles N. Fisher \& Richard J. LeBlanc, Jr.
+1988\. Benjamin/Cummings Publishing Company. Menlo Park, CA.

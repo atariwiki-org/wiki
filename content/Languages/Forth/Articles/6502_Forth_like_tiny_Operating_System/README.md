@@ -1057,4 +1057,3 @@ ORG     $FFFA
 .WORD   IRQ             ; IRQ vector (and BRK vector)
 .END    BOOT
 ```
-

@@ -15,6 +15,7 @@ Stretch, squeeze, fold, flop, flip and roll your pictures
 A short while ago, Dave Oblad sent Antic a solution to "The Eight Queens Problem" (April, 1985). As an afterthought be included Display Master. We booted "Eight Queen" liked it, and will publish it in our next issue. But, when we looked at Display Master, it knocked us off our pneumatic computer stools. We think it will do the same for you.''–ANTIC ED.
 
 ---
+
 I was sitting in front of my Atari, which was flipping through a collection of picture files via the Fader program ("Fader II," Antic, May 1985) when I began thinking of those sophisticated special effects used on television, where a picture is squashed, stretched, or goes zooming off into infinity. I wondered if it might be possible to do something similar with my own picture files. So, I set down programming and only a few short weeks later I had Display Master.
 
 ### THE PROGRAM
@@ -48,10 +49,10 @@ Editing this sequence requires the use of 4 keys on the keyboard. Together they 
 
 \[-\] Minus key to back up a step.
 \[+\] Plus key to move forward a step.
-\[*\] Asterisk key to delete that step.
+\[\*\] Asterisk key to delete that step.
 \[=\] Equal key to begin execution.
 
-To install a new step simply select an option from 0 to 9 and type that key. The chosen manipulation will be inserted at the current step mumber. A small step window is displayed with the current step pointed to by a "greater than" symbol \[>\].
+To install a new step simply select an option from 0 to 9 and type that key. The chosen manipulation will be inserted at the current step mumber. A small step window is displayed with the current step pointed to by a "greater than" symbol \[\>\].
 
 For example, type the following sequence:
 
@@ -64,6 +65,7 @@ The pointer should now be pointing to step 14. Press the equal key \[=\] then \[
 If you don't have Micro-Painter; you can save Micro Illustrator files (the software that comes with KoalaPad, Atari Touch Tablet, etc.) by pressing \[INSERT\] while in Micro Illustrator. This will save your picture in a 62 sector, uncompacted file called PICTURE.
 
 Unfortunately, the last four bytes of Micro-Painter files contain color register values which will not be saved with this process. To add color to uncompressed Micro Illustrator files, RUN the BASIC program below after placing your color values in the variables in line 10, and you picture filename in line 20.
+
 ```
 20 OPEN #1,9,0,"D:PICTURE.PIC" 
 30 PUT #1,K712:PUT #1,K708:PUT #1,K709:PUT #1,K71O 

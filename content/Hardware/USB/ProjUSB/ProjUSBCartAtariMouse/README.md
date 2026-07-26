@@ -1,6 +1,5 @@
 # Generic USB Mouse Driver
 
-
 Tested with a Logitech Mouse USB. Might work with other mice.
 
 ## Description
@@ -12,17 +11,15 @@ Tested with a Logitech Mouse USB. Might work with other mice.
 |  $13           |  4                 | Wheel  | $06F3  | -- | MWHEEL     |
 
 - Byte 3: Buttons
-|| Bit  || Button  ||
-|  1   |   left     |
-|  2   |   right     |
-|  3   |   middle     |
-
+  || Bit  || Button  ||
+  |  1   |   left     |
+  |  2   |   right     |
+  |  3   |   middle     |
 
 - Byte 4 - Wheel
-|| Value  || Button  ||
-|  $FF (255)   |   up     |
-|  $01 (001)   |   down     |
-
+  || Value  || Button  ||
+  |  $FF (255)   |   up     |
+  |  $01 (001)   |   down     |
 
 ## Device dependent source
 
@@ -183,5 +180,3 @@ This Source must be included into the [Base USB HID Driver](../../BaseHIDDriver/
 02510          RTS
 02520 ------------------------------
 ```
-
-

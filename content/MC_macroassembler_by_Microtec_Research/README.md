@@ -11,12 +11,14 @@ and
 MCLINK.EXE
 
 ## EXE files
+
 - [MC.zip](attachments/MC.zip)
 
 ## References
+
 ---
 
-Usage: \[options\] \[sourcefile[[ \]]
+Usage: \[options\] \[sourcefile\[\[ \]\]
 
 Options are ("-" - disable, "+" or none - enable):
 

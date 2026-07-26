@@ -1,6 +1,7 @@
 # Quick Magazin 13
 
 ### Articles
+
 - Impressum/Anleitung
 - Tips, Tricks und Bugs
 - Mandelbrot-Menge
@@ -10,9 +11,11 @@
 - Minesweeper
 
 ### Sources
+
 - Mandelbrot
 - Editor-Farben
 - Minesweeper Demo
 
 ### Disk
+
 - [QMAG13.ATR](attachments/QMAG13.ATR)

@@ -29,7 +29,7 @@ CX418 The Home Manager
 CX418 v.2 Atari Family Finances
 CX419 The Bookkeeper
 CX420
-CX421 Atari Familien-Finanzen--von  Budget & Income & Atari Family Finances
+CX421 Atari Familien-Finanzen--von  Budget \& Income \& Atari Family Finances
 CX481 The Entertainer
 CX482 The Educator
 CX483 The Programmer

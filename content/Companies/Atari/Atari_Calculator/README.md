@@ -31,35 +31,47 @@ Atari Calculator description 1
 Atari Calculator description 2
 
 Please do not use MEM.SAV with DOS. Instead use the SAVEM as well as the LOADM command of Calculator to store and load the user memory to other programs and/or devices.
+
 ## Source Codes
-- [Atari Calculator source code](attachments/Colleen_Calculator_source_code.txt) ; size: 295 KB ; Thank you so much Atari_Ace from AtariAge for your help in creating the code. We really appreciate your help, please go ahead! :-)))
-- [Atari OS A Colleen Floating Point Routines](attachments/Colleen_Floating_Point_Routines.txt) ; size: 45 KB ; Thank you so much Atari_Ace from AtariAge for your help in creating the code. We really appreciate your help, please go ahead! :-)))
+
+- [Atari Calculator source code](attachments/Colleen_Calculator_source_code.txt) ; size: 295 KB ; Thank you so much Atari\_Ace from AtariAge for your help in creating the code. We really appreciate your help, please go ahead! :-)))
+- [Atari OS A Colleen Floating Point Routines](attachments/Colleen_Floating_Point_Routines.txt) ; size: 45 KB ; Thank you so much Atari\_Ace from AtariAge for your help in creating the code. We really appreciate your help, please go ahead! :-)))
+
 ## ROM-Image
-- [Atari_Calculator.rom](attachments/Atari_Calculator.rom) ; Thank you so much Peter Dell for creating the ROM file. That was really a big one! :-)))
+
+- [Atari\_Calculator.rom](attachments/Atari_Calculator.rom) ; Thank you so much Peter Dell for creating the ROM file. That was really a big one! :-)))
+
 ## ATR-Images
-Atari Calculator disk image: [Calculator.atr](attachments/Calculator.atr) 
-Atari Calculator disk image with CX85 driver: [Calculator-CX85.atr](attachments/Calculator-CX85.atr) 
-Atari Calculator disk images with colored versions: [Color.zip](attachments/Color.zip) 
-Atari Calculator disk image for the Commodore 64: [http://web.utanet.at/nkehrer/atari_calc.html](http://web.utanet.at/nkehrer/atari_calc.html) 
+
+Atari Calculator disk image: [Calculator.atr](attachments/Calculator.atr)
+Atari Calculator disk image with CX85 driver: [Calculator-CX85.atr](attachments/Calculator-CX85.atr)
+Atari Calculator disk images with colored versions: [Color.zip](attachments/Color.zip)
+Atari Calculator disk image for the Commodore 64: [http://web.utanet.at/nkehrer/atari\_calc.html](http://web.utanet.at/nkehrer/atari_calc.html)
 Incredible porting from Dr. N. Kehrer, creator of the Atari Asteroids Emulator. Highly recommended!
+
 ## Manuals
+
 In the content pages (page vii to xii in the manual or page 5 to 10 in the PDF-file) it is possible through a click on the line to directly jump to the desired page. The same is true for the index (page 187 to 190 in the manual or page 197 to 200 in the PDF-file). With the back button in Adobe Reader a direct jump from the desired page back to the content or index page is possible.
 
-Screen optimized manual (22 MB): [Atari_Calculator_Manual_Optimized.pdf](../../../../media/Companies/Atari/Atari_Calculator/attachments/Atari_Calculator_Manual_Optimized.pdf) 
+Screen optimized manual (22 MB): [Atari\_Calculator\_Manual\_Optimized.pdf](../../../../media/Companies/Atari/Atari_Calculator/attachments/Atari_Calculator_Manual_Optimized.pdf)
 
-Printer optimized manual (117 MB): [http://strotmann.de/~cas/download/atari/Atari_Calculator_Manual_Original.pdf.gz](http://strotmann.de/~cas/download/atari/Atari_Calculator_Manual_Original.pdf.gz) 
+Printer optimized manual (117 MB): [http://strotmann.de/~cas/download/atari/Atari\_Calculator\_Manual\_Original.pdf.gz](http://strotmann.de/~cas/download/atari/Atari_Calculator_Manual_Original.pdf.gz)
 
-Atari Calculator Cartridge Specifications from Carol Shaw from March 1979 (1.2 MB): [Atari_Calculator_Cartridge_Specifications.pdf](attachments/Atari_Calculator_Cartridge_Specifications.pdf) 
+Atari Calculator Cartridge Specifications from Carol Shaw from March 1979 (1.2 MB): [Atari\_Calculator\_Cartridge\_Specifications.pdf](attachments/Atari_Calculator_Cartridge_Specifications.pdf)
 
-Atari Calculator Cheat Sheet [Atari_Calculator-Cheat_Sheet.pdf](attachments/Atari_Calculator-Cheat_Sheet.pdf) from [inverseatascii](https://inverseatascii.info/) 
+Atari Calculator Cheat Sheet [Atari\_Calculator-Cheat\_Sheet.pdf](attachments/Atari_Calculator-Cheat_Sheet.pdf) from [inverseatascii](https://inverseatascii.info/)
 
-Atari Calculator on the 14th Vintage Computer Festival Europe: [Atari Calculator at VCFe 14 (2013 Munich)](../../../AtariCalculator-VCFe14/README.md) 
+Atari Calculator on the 14th Vintage Computer Festival Europe: [Atari Calculator at VCFe 14 (2013 Munich)](../../../AtariCalculator-VCFe14/README.md)
+
 ## References
-- [Atari Calculator source code](https://archive.org/details/ColleenCalculator) ; Thank you so much Harry & Kay for your help in getting the code. We really appreciate your help, please go ahead! :-)))
-- [Atari 400-800 Operating System Source Listing of the floating point routines](https://archive.org/details/ColleenFloatingPointRoutines) ; Thank you so much Harry & Kay for your help in getting the code. We really appreciate your help, please go ahead! :-)))
+
+- [Atari Calculator source code](https://archive.org/details/ColleenCalculator) ; Thank you so much Harry \& Kay for your help in getting the code. We really appreciate your help, please go ahead! :-)))
+- [Atari 400-800 Operating System Source Listing of the floating point routines](https://archive.org/details/ColleenFloatingPointRoutines) ; Thank you so much Harry \& Kay for your help in getting the code. We really appreciate your help, please go ahead! :-)))
 - [WUDSN-site for Atari Calculator](http://www.wudsn.com/index.php/productions-atari800/tools) ; Highly recommended, not only for Calculator! Thank you so much Peter Dell!
-- [AtariAge site on Calculator and Colleen Floating Point source codes](http://atariage.com/forums/topic/256541-colleen-floating-point-routines-and-colleen-calculator-source-code/) ; Thank you so much Atari_Ace from AtariAge for your help in creating the code. We really appreciate your help, please go ahead! :-)))
+- [AtariAge site on Calculator and Colleen Floating Point source codes](http://atariage.com/forums/topic/256541-colleen-floating-point-routines-and-colleen-calculator-source-code/) ; Thank you so much Atari\_Ace from AtariAge for your help in creating the code. We really appreciate your help, please go ahead! :-)))
+
 ## Images
+
 ![](attachments/Atari_Calculator2_.jpg)
 Boxcover from the Atari Calculator
 

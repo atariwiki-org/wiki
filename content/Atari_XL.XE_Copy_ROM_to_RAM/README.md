@@ -52,4 +52,3 @@ by Russ Gilbert, found in comp.sys.atari.8bit
 ```
 
 Russ Gilbert
-

@@ -1,19 +1,24 @@
 # 6502 Assembly Code
 
 ## Bitwise manipulations - Bit calculations
+
 - [Bitwise manipulations - Bit calculations](../Bitwise_manipulations_-_Bit_calculations/README.md)
 
 ## 6502 Assembly Code
-- [DEZ-HEX-BIN-OKT-PEN_ab_Excel_2016.xlsx](attachments/DEZ-HEX-BIN-OKT-PEN_ab_Excel_2016.xlsx)
+
+- [DEZ-HEX-BIN-OKT-PEN\_ab\_Excel\_2016.xlsx](attachments/DEZ-HEX-BIN-OKT-PEN_ab_Excel_2016.xlsx)
 
 ## Atari Assembler
+
 - [Assembler](../Languages/Assembler/README.md)
 
 ## Cross-Assembler
+
 - [WUSDN IDE](http://www.wudsn.com/index.php/ide) ; smartest assembler available
 - [ATASM](http://atari.miribilist.com/atasm/) ; Mac/65 compatible cross assembler
 
 ## Books
+
 - [Programming the 6502 by Rodnay Zaks](http://www.atarimania.com/documents-atari-400-800-xl-xe-books_1_8.html) ; Mega-Thanks to Atarimania for hosting!!!
 - [Programmierung des 6502 von Rodnay Zaks](http://www.atarimania.com/documents-atari-400-800-xl-xe-books_1_8.html) ; Mega-Thanks to Atarimania for hosting!!!
 - [6502 Applications by Rodnay Zaks](http://www.atarimania.com/documents-atari-400-800-xl-xe-books_1_8.html) ; Mega-Thanks to Atarimania for hosting!!!
@@ -87,12 +92,15 @@
 ## Courses
 
 ### Chris Crawford's Assembly language course
+
 - [Chris Crawford's - Assembly Language Course](../CHRIS_CRAWFORDS_-_ASSEMBLY_LANGUAGE_COURSE/README.md)
 
-### Assembly Course from Z*Magazine
-- [Assembly Language Course (from Z*Magazine)](../Assembly_Course_from_Z-Magazine/README.md)
+### Assembly Course from Z\*Magazine
+
+- [Assembly Language Course (from Z\*Magazine)](../Assembly_Course_from_Z-Magazine/README.md)
 
 ### Programming the Atari XL / XE - Assembly language course by Peter Dell
+
 - [Programming the Atari XL / XE - Peter Dell](http://ftp.pigwa.net/upload2/JAC!/tutorials/Programming%20the%20Atari%20XL_XE/)
 - [Introduction](http://ftp.pigwa.net/upload2/JAC!/tutorials/Programming%20the%20Atari%20XL_XE/Programming%20the%20Atari%20XL_XE%20-%20Introduction.mp4)
 - [Part 01 - Executables](http://ftp.pigwa.net/upload2/JAC!/tutorials/Programming%20the%20Atari%20XL_XE/Programming%20the%20Atari%20XL_XE%20-%20Part%2001%20-%20Executables.mp4)
@@ -113,6 +121,7 @@
 - [Part 16 - RMT and SAP Modules](http://ftp.pigwa.net/upload2/JAC!/tutorials/Programming%20the%20Atari%20XL_XE/Programming%20the%20Atari%20XL_XE%20-%20Part%2016%20-%20RMT%20and%20SAP%20Modules.mp4)
 
 ### WUDSN IDE Tutorial - Assembly IDE course by Peter Dell
+
 - [01 Introduction, Installation and Use](http://ftp.pigwa.net/upload2/JAC!/tutorials/WUDSN%20IDE/WUDSN%20IDE%20Tutorial%2001_%20Introduction,%20Installation%20and%20Use.mp4)
 - [02 Setting up Perspective, Views and Editors](http://ftp.pigwa.net/upload2/JAC!/tutorials/WUDSN%20IDE/WUDSN%20IDE%20Tutorial%2002_%20Setting%20up%20Perspective,%20Views%20and%20Editors.mp4)
 - [03 Setting up Editors and File Extensions correctly](http://ftp.pigwa.net/upload2/JAC!/tutorials/WUDSN%20IDE/WUDSN%20IDE%20Tutorial%2003_%20Setting%20up%20Editors%20and%20File%20Extensions%20correctly.mp4)
@@ -130,6 +139,7 @@
 - [15 New Features in Version 1.7.0](http://ftp.pigwa.net/upload2/JAC!/tutorials/WUDSN%20IDE/WUDSN%20IDE%20Tutorial%2015_%20New%20Features%20in%20Version%201.7.0.mp4)
 
 ## Kurse
+
 ### CompyShop Magazin-Assembler Kurs
 
 - [6502 Programmieren - Teil 1](../Companies/CompyShop/CSM_Assembler_Course/CSM_ASM_Teil1/README.md) - Grundlegendes
@@ -154,14 +164,17 @@
 - [Der Display-List-Interrupt](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist-Interrupts/README.md) - Displaylist-Interrupts
 
 ## DEC-HEX bis 255:
+
 ![](attachments/DEC-HEX_255.jpg)
 DEC-HEX bis 255
 
 ## Picture
+
 ![](attachments/6502_Assembly_Code_in_Sublime_Text.jpg)
 6502 assembly code in Sublime Text 2 with 6502 language plug-ins. One of today's best options to program in 6502 assembly in combination with [MADS](http://mads.atari8.info/).
 
 ## Instruction Set (Operation Codes)
+
 ![](attachments/Instruction_Set_Operation_Codes-1.png)
 ![](attachments/Instruction_Set_Operation_Codes-2.png)
 Instruction Set (Operation Codes)

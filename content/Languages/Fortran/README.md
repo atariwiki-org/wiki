@@ -1,6 +1,7 @@
 # Fortran
 
 ## Background
+
 Fortran is one of the earliest programming languages, and among the most influential. [BASIC](../Basic/README.md) is a simplified, interpreted version of Fortran, sharing many of its constructs and commands. As of 2016, there is still no Fortran for the Atari 8-bit home computers, which is very sad, because Fortran remains important in scientific programming.
 
 Fortran was intended to be used primarily for scientific mathematical processing, and it initially lacked any capability for strings and other common tasks. These were added over the years, and as a result the language began to grow. Early versions from the 1950s and 60s are quite small and could easily run on 8-bit machines, but later versions from the 1990s are more complex. The most practical version for 8-bit machines would be Fortran77, which would be very similar to most BASICs of the era.
@@ -10,13 +11,17 @@ Abacus Fortran for C64 was released in 1988. Here we have a program running nati
 However, there was a Fortran for the Apple II written in 6502 assembly language. Maybe there will be a time when we get the source code for this Apple version and can port this to the Atari? For a first step in this case, AtariWiki has collected information about Fortran for the Apple II, see below. So, if there is anyone out there, who is in the possession of the original Apple II source code of Fortran, please be so kind and give it to us. Thank you so much in advance.
 
 ## Infos
+
 ### (1):
+
 Released by Apple in 1980, Apple FORTRAN ran under the Pascal operating system. It cost $200 (in addition to the $495 required to get the Language System). Programs written in FORTRAN for other computers could run with little modification under Apple FORTRAN (if a user needed that ability). It compiled to a similar code as did Pascal programs, so was not any faster than Pascal. Apple’s version of FORTRAN had many bugs in it, though, and after its introduction in 1980 it was never upgraded. By September 1986 it had disappeared from their product catalogs.
 
 Another way for an Apple II user to get FORTRAN was to buy the Microsoft Z-80 Softcard for $345 and Microsoft FORTRAN for $200. This version of FORTRAN was more full-featured than Apple’s, and offered some advantages in usability. It did not require changing to the 16-sector disk controller ROMs (if you didn’t want to). Also, standard Microsoft BASIC (which was more advanced than Applesoft) was included in the Softcard package.
 
 In June of 1987, Pecan Software released FORTRAN for the IIGS. It ran under ProDOS 16 (GS/OS), but still used the UCSD Pascal disk format for its FORTRAN by creating a ProDOS file that then acted as a UCSD Volume.
+
 ### (2):
+
 Cabot FORTRAN 77
 Runs on Apple I(?), IIgs, Mac, MS-DOS, CP/M and Unix boxes. Claims the 'worldwide software licence (sic) for software products developed by the University of California, San Diego
 (UCSD).
@@ -33,7 +38,9 @@ Fax: 00 44 272 586023
 BBS: 00 44 272 583023
 
 Compuserve address: 100014,241
+
 ### (3):
+
 PRO FORTRAN-77
 Prospero Software
 190 Castlenau
@@ -54,24 +61,29 @@ Fortran-77 follows all the standard Fortran syntax, and you should have no troub
 But this is generally a very good implementation of Fortran-77. If you are a programming student or need to learn or use Fortran-77 in your college studies, this would be a worthwhile investment.
 
 ## FORTRAN via FujiNet adapter
+
 In January of 2021, Thomas Cherryhomes realized [FORTRAN on the Atari via the FujiNet adapter](https://www.youtube.com/watch?v=5XV_LuCw-JE). Thom, the community is sooo deep in your debt; we deeply thank you so much from the heart! :-)))
 
 ## Source Code
-__Who can help us with the source code of the Abacus Fortran for C64 and Apple II Fortran? AtariWiki really appreciates any help in this case. Thank you so much in advance. :-)__
+
+**Who can help us with the source code of the Abacus Fortran for C64 and Apple II Fortran? AtariWiki really appreciates any help in this case. Thank you so much in advance. :-)**
 
 ## Images (for the Commodore 64)
+
 - [Abacus Fortran for C64](https://www.lyonlabs.org/commodore/onrequest/collections.html) ; Thank you Lyonlabs for hosting! :-) We really appreciate your help
 
 ## Images (for the Apple II)
+
 - [Apple II Fortran Images](attachments/Apple_II-Fortran-Images.zip) ; size: 730 KB
-The SST was used to convert the disk FORT2 to the nib format. It is verified that it works with ApplePC v2.52. It is also a modified version corrected to work with APPLESTUFF (as you may recall, Apple Fortran uses the Apple Pascal architecture; APPLESTUFF is a library for turtle graphics and sound). If you want to format a new disk you would also need to get a copy of Pascal, APPLE 3.
+  The SST was used to convert the disk FORT2 to the nib format. It is verified that it works with ApplePC v2.52. It is also a modified version corrected to work with APPLESTUFF (as you may recall, Apple Fortran uses the Apple Pascal architecture; APPLESTUFF is a library for turtle graphics and sound). If you want to format a new disk you would also need to get a copy of Pascal, APPLE 3.
 - [Fortran Recipes 2.0 - source codes](attachments/Fortran_Recipes_2.0.zip) ; size: 294 KB
 
 ## Manuals
+
 - [ANSI Fortran 66](../../../media/Languages/Fortran/attachments/ANSI_FORTRAN_66.pdf) ; size: 10.9 MB
 - [Abacus Fortran for C64](https://www.lyonlabs.org/commodore/onrequest/collections.html) ; size: 29.7 MB ; Thank you Lyonlabs for hosting! :-) We really appreciate your help
 - [Apple II FORTRAN Language Reference Manual.pdf](../../../media/Languages/Fortran/attachments/Apple_II_FORTRAN_Language_Reference_Manual.pdf) ; size: 5.9 MB
-- [Apple II FORTRAN Language Reference Manual_OCR.pdf](attachments/Apple_II_FORTRAN_Language_Reference_Manual_OCR.pdf) ; size: 3.8 MB
+- [Apple II FORTRAN Language Reference Manual\_OCR.pdf](attachments/Apple_II_FORTRAN_Language_Reference_Manual_OCR.pdf) ; size: 3.8 MB
 - [Fortran 90 Reference Card.pdf](attachments/Fortran_90_Reference_Card.pdf) ; size: 193 KB
 - [IBM FORTRAN IV-Language 1973.pdf](../../../media/Languages/Fortran/attachments/IBM_FORTRAN_IV-Language_1973.pdf) ; size: 23.1 MB
 - [IBM Fortran coding form.pdf](attachments/IBM_Fortran_coding_form.pdf) ; size: 42 KB
@@ -85,12 +97,14 @@ The SST was used to convert the disk FORT2 to the nib format. It is verified tha
 - [Unisoft Fortran Language Reference Manual Sep. 83.pdf](../../../media/Languages/Fortran/attachments/Unisoft_FORTRAN_Language_Reference_Manual_Sepetember_1983.pdf) ; size: 6.8 MB
 
 ## References
+
 - [Fortran 77 Tutorial](https://en.wikibooks.org/w/index.php?title=Fortran_77_Tutorial&stable=1)
 - [Fortran Resources and Fortran 77/90/95 Compilers for Windows and Linux](http://www.personal.psu.edu/hdk/fortran.html)
 - [Fortran 77 on Atari 8-bit discussed at AtariAge](http://atariage.com/forums/topic/240546-fortran-77-on-atari-8-bit/?hl=+fortran)
 - [Disk images of Apple Fortran](https://mirrors.apple2.org.za/ftp.apple.asimov.net/images/programming/fortran/)
 
 ## Images
+
 ![](attachments/Fortran_acs_cover.jpg)
 Original Fortran from IBM
 
@@ -101,7 +115,7 @@ FORTRAN 77 functions
 Abacus FORTRAN for the Commodore C64 - Manual cover from 1988
 
 ![](attachments/Fortran-C64.jpg)
-Abacus FORTRAN for the Commodore C64 - from Bob Stover & Tim Adams from 1988
+Abacus FORTRAN for the Commodore C64 - from Bob Stover \& Tim Adams from 1988
 
 ![](attachments/abacus-fortran64-1.jpg)
 Abacus FORTRAN for the Commodore C64 - 1st startscreen from 1986

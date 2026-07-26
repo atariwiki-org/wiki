@@ -1,6 +1,7 @@
 # Quick Magazin 6
 
 ### Articles
+
 - Impressum/Anleitung/Jubilaeum
 - die Drucker-Library
 - die Maltafel-Library
@@ -10,6 +11,7 @@
 - der neue QUICK Editor V2.0
 
 ### Sources
+
 - Drucker-Lib Demo
 - Minigraf
 - QUICK Invade

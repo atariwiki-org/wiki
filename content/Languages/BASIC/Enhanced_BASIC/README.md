@@ -15,10 +15,8 @@ EhBASIC is free but not copyright free. For non commercial use there is only one
 
 - [Enhanced Basic (Source) for 6502 Machines](http://mycorner.no-ip.org/6502/ehbasic/index.html)
 
-You need Atasm Cross Assembler to compile the Source --> [http://atari.miribilist.com/atasm/](http://atari.miribilist.com/atasm/) 
+You need Atasm Cross Assembler to compile the Source --\> [http://atari.miribilist.com/atasm/](http://atari.miribilist.com/atasm/)
 
 ## Manual:
 
-[Enhanced_6502_BASIC_reference_manual.pdf](attachments/Enhanced_6502_BASIC_reference_manual.pdf) (550 KB)
-
-
+[Enhanced\_6502\_BASIC\_reference\_manual.pdf](attachments/Enhanced_6502_BASIC_reference_manual.pdf) (550 KB)

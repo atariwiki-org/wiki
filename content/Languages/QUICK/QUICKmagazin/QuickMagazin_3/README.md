@@ -1,6 +1,7 @@
 # Quick Magazin 3
 
 ### Articles
+
 - Impressum/Anleitung
 - das QUICK V2.0 System
 - neue Befehle der Version 2.0
@@ -11,6 +12,7 @@
 - DLI's in QUICK
 
 ### Sources
+
 - DLI-Demo
 - Rekursions-Demo
 - files for an update to V2.0

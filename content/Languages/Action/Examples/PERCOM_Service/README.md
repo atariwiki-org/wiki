@@ -11,7 +11,7 @@ Tool to configure Percom Block Drives. This Tool can be used to test Disk integr
 
 ![](attachments/percom.png)
 
-Download: [PERCOM.ATR](attachments/PERCOM.ATR) 
+Download: [PERCOM.ATR](attachments/PERCOM.ATR)
 
 Needs ACTION! Runtime package to compile a standalone Version. Disk with Source and compiled Version attached.
 
@@ -23,14 +23,13 @@ I wrote this Tool to configure the HDI 3 1/2" Disk drive designed by Erhard Püt
 
 ## How to use
 
-
 || Key	||  Description  ||
 | 1 - 4 | Read Percom Block from D1: - D4: and update display  |
 | T	  | change number of Tracks per Disc  |
 | S	  | change number of Sectors per Track  |
 | A	  | change modulation (FM or MFM)  |
 | R	  | change stepping rate  |
-| D	  | toggle doublesided <-> singlesides  |
+| D	  | toggle doublesided \<-\> singlesides  |
 | B	  | change Bytes per Sectors (normally 128 or 256)  |
 | V	  | change Drive active Flag / HD flag |
 | CTRL+F | Format selected Disk in configured Format (CAUTION!!!)  |

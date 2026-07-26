@@ -19,6 +19,7 @@ In graphics mode 15, the Atari 8-bit is capable of displaying 4 colours on a 160
 [Integrator](http://www.arsoft.netstrefa.pl/pliki_programy/Integrator3.10.zip) can be used to link Rastaconverter with other executables.
 
 ## Generator
+
 {{
 RastaConverterBeta5.1/Generator
 
@@ -26,7 +27,7 @@ RastaConverterBeta5.1/Generator
 
 ├── mads.exe
 
-├── no_name.asq
+├── no\_name.asq
 
-└── no_name.h
+└── no\_name.h
 }}

@@ -4,7 +4,7 @@ General Information
 
 Author: trub / DLT Ltd.
 Assembler: masm
-Download: [http://trub.atari8.info](http://trub.atari8.info) 
+Download: [http://trub.atari8.info](http://trub.atari8.info)
 
 The idea is to show an example how the SDX system libraries can be used dynamically. The code shows the way to call and use "PRINTF". Using this technique the resulting object file can be very small and 100% system compliant.
 

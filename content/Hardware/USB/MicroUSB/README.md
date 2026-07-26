@@ -6,7 +6,7 @@ The goal is to provide a common USB Solution for Homecomputer Systems and Microp
 
 This project supports the USB development with Tools, Development Systems and Information on the USB Protocol and Hardware.
 
-Files for the MicroUSB Project can also be downloaded from SourceForge -> [http://sourceforge.net/projects/microusb/files/](http://sourceforge.net/projects/microusb/files/) 
+Files for the MicroUSB Project can also be downloaded from SourceForge -\> [http://sourceforge.net/projects/microusb/files/](http://sourceforge.net/projects/microusb/files/)
 
 ### Hardware
 

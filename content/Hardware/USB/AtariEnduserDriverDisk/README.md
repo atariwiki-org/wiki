@@ -1,6 +1,5 @@
 # Atari USB Enduser Driver Disk
 
-
 A collection of USB Drivers for Users
 
 ## What is on the disk:
@@ -24,7 +23,6 @@ A collection of USB Drivers for Users
 
 For more detailed information on USB Device Descriptors pleas use the USB 1.1 Specification Documents at [www.usb.org](http://www.usb.org/developers/docs/).
 
-
 || Offset || Field  || Size  || Value  || Description  ||
 |  0  | bLength |  1  | Number  | Size of this descriptor in bytes |
 |  1  | bDescriptorType |  1  | Constant | DEVICE Descriptor Type  |
@@ -40,4 +38,3 @@ For more detailed information on USB Device Descriptors pleas use the USB 1.1 Sp
 |  15  | iProduct |  1   | Index | Index of string descriptor describing product  |
 |  16  | iSerialNumber |  1  | Index  | Index of string descriptor describing the device s serial number |
 |  17  | bNumConfigurations |  1  | Number | Number of possible configurations |
-

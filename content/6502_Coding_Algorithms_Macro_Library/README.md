@@ -24,8 +24,8 @@ The main routines sacrifice code size for speed
 and are coded without any iteration. Compact
 versions which use iteration are provided for
 some algorithms and have the same name as the
-original routine with a 'C' suffix (eg. _XFR32
-=> _XFR32C).
+original routine with a 'C' suffix (eg. \_XFR32
+\=\> \_XFR32C).
 
 Some of the macros use 65SC02 instructions for
 speed or to reduce the amount code generated if
@@ -34,7 +34,7 @@ the assembler will accept them.
 Where possible the macros detect optimizable
 cases and generate more efficient code.
 
-Bugs & Enhancments:
+Bugs \& Enhancments:
 
 If you find a bug I missed or have a new
 routine you would like to submit to the library
@@ -42,7 +42,7 @@ then mail me at:
 
 Andrew@obelisk.demon.co.uk
 
-fount at [http://www.obelisk.demon.co.uk/6502/algorithms.html](http://www.obelisk.demon.co.uk/6502/algorithms.html) 
+fount at [http://www.obelisk.demon.co.uk/6502/algorithms.html](http://www.obelisk.demon.co.uk/6502/algorithms.html)
 
 ---
 
@@ -1354,4 +1354,3 @@ _STRNCMP   MACRO VLA,VLB,LEN
 
       LIST
 ```
-

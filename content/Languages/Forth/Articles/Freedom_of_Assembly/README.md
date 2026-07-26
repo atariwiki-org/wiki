@@ -16,4 +16,4 @@ complexity, using a popular public domain Forth running under MS
 Windows. The third example shows how to create tools not available
 with conventional assemblers.
 
-Original: [http://galileo.phys.virginia.edu/classes/551.jvn.fall01/asmcise2.pdf](http://galileo.phys.virginia.edu/classes/551.jvn.fall01/asmcise2.pdf) 
+Original: [http://galileo.phys.virginia.edu/classes/551.jvn.fall01/asmcise2.pdf](http://galileo.phys.virginia.edu/classes/551.jvn.fall01/asmcise2.pdf)

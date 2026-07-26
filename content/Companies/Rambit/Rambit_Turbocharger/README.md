@@ -17,22 +17,27 @@ Rambit's function is to save consecutive areas of memory or single or compound f
 Multi-stage programs need to be changed to single-stage first. The instructions give a guide as to how to do this, but basically you have to use the Assembler/Editor cartridge with the utility to load the first stage in order to locate where the main section is to be loaded and from where it should be done. Once this has been accomplished, the main section is loaded with the 'L' command, and then you have to add the boot address information to the start of the program in memory.
 
 ## Flac-files
+
 Because the cassette uses the Rambit format, it is not possible to create cas- or atr-files of this tape. You can download the FLAC files and record them on a cassette.
-[Rambit-Cassette-Side_1.flac](../../../../media/Companies/Rambit/Rambit_Turbocharger/attachments/Rambit-Cassette-Side_1.flac) 
-[Rambit-Cassette-Side_2.flac](../../../../media/Companies/Rambit/Rambit_Turbocharger/attachments/Rambit-Cassette-Side_2.flac) 
+[Rambit-Cassette-Side\_1.flac](../../../../media/Companies/Rambit/Rambit_Turbocharger/attachments/Rambit-Cassette-Side_1.flac)
+[Rambit-Cassette-Side\_2.flac](../../../../media/Companies/Rambit/Rambit_Turbocharger/attachments/Rambit-Cassette-Side_2.flac)
 
 ## Manual
+
 Including schematics for the 1010 and XC12 data recorders.
-[Rambit_Manual.pdf](attachments/Rambit_Manual.pdf) 
+[Rambit\_Manual.pdf](attachments/Rambit_Manual.pdf)
 
 ## Pictures of the interface (right-click to save the larger images)
+
 ![](attachments/Rambit1.jpg)
 ![](attachments/Rambit2.jpg)
 ![](attachments/Rambit3.jpg)
 
 ## Mediapictures
+
 ![](attachments/Rambit_Cassette.jpg)
 Cassette of the Rambit Turbocharger
 
 ## Thank you
+
 Many thanks to Page6.org. Parts of the review have been used in this article.
