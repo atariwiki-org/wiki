@@ -111,7 +111,7 @@
 - [Atari Touch Tablet (CX77)](../Companies/Atari/Atari_Hardware/Atari_CX77_Touch_Tablet/README.md)
 - [Atari Trak-Ball controller (CX80)](../Companies/Atari/Atari_Hardware/Atari_CX80_Trak-Ball_controller/README.md)
 - [Atari CX85 Numerical Keypad](../Companies/Atari/Atari_Hardware/Atari_CX85/README.md)
-- [Atari Trackball](../Trackball/README.md)
+- [Atari Trakball (CX22)](../Trackball/README.md)
 - [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 
 ## Voiceboxes/Sprachbox
@@ -589,7 +589,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [SpartaDOS Construction Set Manual](../SpartaDOS/Sparta_DOS_Construction_Set_Manual/README.md)
 - [SpartaDos X Review](../SpartaDOS/SpartaDOS_X/SpartaDosXReview/README.md)
 - [SpartaDOS](../SpartaDOS/README.md)
-- [SuperDOS](../SuperDOS/README.md)
+- [SuperDOS](../People/Paul_Nicholls/SuperDOS/README.md)
 - [TOP-DOS](../TOP-DOS/README.md)
 - [Turbo-DOS XE](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md)
 - [XDOS](../People/Stefan Dorndorf/XDOS_2.43/README.md)
@@ -652,7 +652,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari DOS II 2.0S Assembly Source Listing](../Companies/Atari/Atari_DOS/Atari_DOS_II_Assembly_Source_Listing/README.md)
 - [Atari DOS 2.5 Source Code from OSS](../Companies/Atari/Atari_DOS/Atari_DOS_2.5_Source_Code/README.md)
 - [MyDOS 4.51 source code](attachments/Mydos451.zip)
-- [SuperDOS](../SuperDOS/README.md)
+- [SuperDOS](../People/Paul_Nicholls/SuperDOS/README.md)
 
 ### Drivers
 - [Atari CX85 Keypad Interrrupt Handler](../Companies/Atari/Atari_Hardware/Atari_CX85/Original_CX85_Keyboard_Handler/README.md)

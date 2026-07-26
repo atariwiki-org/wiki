@@ -197,7 +197,7 @@ Thank you Alfred
 - [Starburst in ACTION!](../Examples/Starburst/README.md)
 - [Symbol Table Lister for ACTION!](../Articles/Symbol_table_lister/README.md) ACS
 - [ACTION! Timer Programming](../Articles/Timer_Programming/README.md)
-- [Atari Trackball](../../../Trackball/README.md)
+- [Atari Trakball (CX22)](../../../Trackball/README.md)
 - [Using the RAM Under the OS ROM on XL and XE Computers](../../../Using_the_RAM_Under_the_OS_ROM_on_XL_and_XE_Computers/README.md)
 - [VT52 Terminal Emulator](../Articles/VT52_Terminal_Emulator/README.md)
 - [VTEmulator](../Articles/VTEmulator/README.md)
