@@ -1,7 +1,7 @@
 # Stefan Haubenthal
 
 ![](attachments/Koala.png)
-Meine Hardware: [Atari XEP80](../../Companies/Atari/XEP80/README.md), [CX21](http://atariki.krap.pl/index.php/CX21), [CX75](http://www.atariarchives.org/ecp/chapter_6.php) [https://www.atariarchives.org/creativeatari/Build_Your_Own_Light_Pen.php](https://www.atariarchives.org/creativeatari/Build_Your_Own_Light_Pen.php) 
+Meine Hardware: [Atari XEP80](../../Companies/Atari/Atari_Hardware/XEP80/README.md), [CX21](http://atariki.krap.pl/index.php/CX21), [CX75](http://www.atariarchives.org/ecp/chapter_6.php) [https://www.atariarchives.org/creativeatari/Build_Your_Own_Light_Pen.php](https://www.atariarchives.org/creativeatari/Build_Your_Own_Light_Pen.php) 
 
 [http://atariki.krap.pl/index.php/Strona_g%C5%82%C3%B3wna](http://atariki.krap.pl/index.php/Strona_g%C5%82%C3%B3wna) 
 

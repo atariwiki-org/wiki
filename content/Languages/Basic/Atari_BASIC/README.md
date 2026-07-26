@@ -188,7 +188,7 @@ Atari BASIC Keywords
 - [An Invitation to Programming 3-Introduction to Sound and Graphics (CX4117)](../../../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_3_CX4117/README.md)
 
 ## Atari BASIC Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie fertig
-- [Programmieren leicht gemacht (TXG4110)](../../../Companies/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)
+- [Programmieren leicht gemacht (TXG4110)](../../../Companies/Atari/Atari_Germany/Programmieren_leicht_gemacht_TXG4110/README.md)
 - [Noch mehr BASIC (TXG55007)](../../../Companies/Atari/Atari_Germany/Noch_mehr_BASIC_TXG55007/README.md)
 - [BASIC für Fortgeschrittene](../../../Companies/Atari/Atari_Germany/BASIC_fuer_Fortgeschrittene/README.md)
 

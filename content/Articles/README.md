@@ -31,24 +31,24 @@
 
 # Hardware
 ## Computer
-- [Atari 400 - MISSING](../Companies/Atari/Atari_400/README.md)
-- [Atari 800 - MISSING](../Companies/Atari/Atari_800/README.md)
-- [Atari 1200XL- MISSING](../Companies/Atari/Atari_1200XL/README.md)
-- [Atari 800XL - MISSING](../Companies/Atari/Atari_800XL/README.md)
-- [Atari 600XL - MISSING](../Companies/Atari/Atari_600XL/README.md)
-- [Atari 130XE - MISSING](../Companies/Atari/Atari_130XE/README.md)
-- [Atari 65XE - MISSING](../Companies/Atari/Atari_65XE/README.md)
-- [Atari 800XE- MISSING](../Companies/Atari/Atari_800XE/README.md)
-- [Atari XEGS - MISSING](../Companies/Atari/Atari_XEGS/README.md)
+- [Atari 400 - MISSING](../Companies/Atari/Atari_Hardware/Atari_400/README.md)
+- [Atari 800 - MISSING](../Companies/Atari/Atari_Hardware/Atari_800/README.md)
+- [Atari 1200XL- MISSING](../Companies/Atari/Atari_Hardware/Atari_1200XL/README.md)
+- [Atari 800XL - MISSING](../Companies/Atari/Atari_Hardware/Atari_800XL/README.md)
+- [Atari 600XL - MISSING](../Companies/Atari/Atari_Hardware/Atari_600XL/README.md)
+- [Atari 130XE - MISSING](../Companies/Atari/Atari_Hardware/Atari_130XE/README.md)
+- [Atari 65XE - MISSING](../Companies/Atari/Atari_Hardware/Atari_65XE/README.md)
+- [Atari 800XE- MISSING](../Companies/Atari/Atari_Hardware/Atari_800XE/README.md)
+- [Atari XEGS - MISSING](../Companies/Atari/Atari_Hardware/Atari_XEGS/README.md)
 
 ## Disk Drives
 
 ### Atari Disk Drives
-- [Atari 810 Disk Drive](../Companies/Atari/Atari_810/README.md)
-- [Atari 815 Dual Disk Drive](../Companies/Atari/Atari_815/README.md)
-- [ATARI 1450XL HOME COMPUTER INTEGRAL DISK DRIVE SPECIFICATION](../Companies/Atari/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
-- [Atari 1050 Drive](../Companies/Atari/Atari_1050/README.md)
-- [Atari XF551 Disk Drive](../Companies/Atari/Atari_XF551/README.md)
+- [Atari 810 Disk Drive](../Companies/Atari/Atari_Hardware/Atari_810/README.md)
+- [Atari 815 Dual Disk Drive](../Companies/Atari/Atari_Hardware/Atari_815/README.md)
+- [ATARI 1450XL HOME COMPUTER INTEGRAL DISK DRIVE SPECIFICATION](../Companies/Atari/Atari_Hardware/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
+- [Atari 1050 Drive](../Companies/Atari/Atari_Hardware/Atari_1050/README.md)
+- [Atari XF551 Disk Drive](../Companies/Atari/Atari_Hardware/Atari_XF551/README.md)
 
 ### Third Party Disk Drives
 - [ASTRA 2001](../Companies/Astra_Systems/ASTRA_2001/README.md)
@@ -70,48 +70,47 @@
 
 
 ## Tape Recorders
-- [Atari 410 - MISSING](../Companies/Atari/Atari_410/README.md)
-- [Atari 1010 - MISSING](../Companies/Atari/Atari_1010/README.md)
+- [Atari 410 - MISSING](../Companies/Atari/Atari_Hardware/Atari_410/README.md)
+- [Atari 1010 - MISSING](../Companies/Atari/Atari_Hardware/Atari_1010/README.md)
 - [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
-- [Atari XC11 - MISSING](../Companies/Atari/Atari_XC11/README.md)
-- [Atari XC12 - MISSING](../Companies/Atari/Atari_XC12/README.md)
+- [Atari XC11 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC11/README.md)
+- [Atari XC12 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC12/README.md)
 - [All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
 
 ## Printers
-- [Atari 820 - 40-Cloumn Printer - MISSING](../Companies/Atari/Atari_820_40-column_printer/README.md)
-- [Atari 822 Thermal Printer](../Companies/Atari/Atari_822_Thermal_Printer/README.md)
-- [Atari 825 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_825_Dot_Matrix_Printer/README.md)
-- [Atari 1020 Plotter - MISSING](../Companies/Atari/Atari_1020/README.md)
-- [Atari 1025 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_1025_Dot_Matrix_Printer/README.md)
-- [Atari 1027 -Letter Quality Printer - MISSING](../Companies/Atari/ATARI_1027_Letter_Quality_Printer/README.md)
-- [Atari 1027 Printer, OS Timeout Fix](../Companies/Atari/Atari_1027_Printer_-_OS_Timeout_Fix/README.md)
-- [Atari 1029 - Dot Matrix Printer - MISSING](../Companies/Atari/ATARI_1029_Dot_Matrix_Printer/README.md)
-- [Atari XMM801 - Dot Matrix Printer - MISSING](../Companies/Atari/ATARI_XMM801_Dot_Matrix_Printer/README.md)
+- [Atari 820 - 40-Cloumn Printer - MISSING](../Companies/Atari/Atari_Hardware/Atari_820_40-column_printer/README.md)
+- [Atari 822 Thermal Printer](../Companies/Atari/Atari_Hardware/Atari_822_Thermal_Printer/README.md)
+- [Atari 825 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_Hardware/Atari_825_Dot_Matrix_Printer/README.md)
+- [Atari 1020 Plotter - MISSING](../Companies/Atari/Atari_Hardware/Atari_1020/README.md)
+- [Atari 1025 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_Hardware/Atari_1025_Dot_Matrix_Printer/README.md)
+- [Atari 1027 -Letter Quality Printer - MISSING](../Companies/Atari/Atari_Hardware/ATARI_1027_Letter_Quality_Printer/README.md)
+- [Atari 1027 Printer, OS Timeout Fix](../Companies/Atari/Atari_Hardware/Atari_1027_Printer_-_OS_Timeout_Fix/README.md)
+- [Atari 1029 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_Hardware/ATARI_1029_Dot_Matrix_Printer/README.md)
+- [Atari XMM801 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_Hardware/ATARI_XMM801_Dot_Matrix_Printer/README.md)
 - [Atari XDM121 Daisy Wheel Printer- MISSING](../Companies/Atari/ATARI_XDM121_Daisy_Wheel_Printer/README.md)
 
 ## Modems
-- [Atari 830 - Acoustic_Modem - MISSING](../Companies/Atari/Atari_830_Acoustic_Modem/README.md)
-- [Atari 835 - Direct connect Modem - MISSING](../Companies/Atari/Atari_835_Direct_connect_Modem/README.md)
-- [Atari 1030 - MISSING](../Companies/Atari/Atari_1030/README.md)
-- [Atari 1030 Modem with ModemLink Telecommunications Program by Penril](../Companies/Atari/Atari_1030_Modem_with_ModemLink_Telecommunications_Program/README.md)
-- [Atari XM301 Modem](../Companies/Atari/ATARI_XM301/README.md)
-- [Atari_SX212 - MISSING](../Companies/Atari/Atari_SX212/README.md)
-- [Atari SX212 Modem](../Companies/Atari/Atari_SX212_Modem/README.md)
+- [Atari 830 - Acoustic_Modem - MISSING](../Companies/Atari/Atari_Hardware/Atari_830_Acoustic_Modem/README.md)
+- [Atari 835 - Direct connect Modem - MISSING](../Companies/Atari/Atari_Hardware/Atari_835_Direct_connect_Modem/README.md)
+- [Atari 1030 - MISSING](../Companies/Atari/Atari_Hardware/Atari_1030/README.md)
+- [Atari 1030 Modem with ModemLink Telecommunications Program by Penril](../Companies/Atari/Atari_Hardware/Atari_1030_Modem_with_ModemLink_Telecommunications_Program/README.md)
+- [Atari XM301 Modem](../Companies/Atari/Atari_Hardware/Atari_XM301/README.md)
+- [Atari SX212 Modem](../Companies/Atari/Atari_SX212/README.md)
 
 ## Interfaces
-- [Atari 850 - MISSING](../Companies/Atari/Atari_850/README.md)
+- [Atari 850 - MISSING](../Companies/Atari/Atari_Hardware/Atari_850/README.md)
 - [TransKey-II](../TransKey-II/README.md)
 - [ARGS RS232 Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (German)
 
 ## Video Upgrades
-- [Atari XEP80](../Companies/Atari/XEP80/README.md)
+- [Atari XEP80](../Companies/Atari/Atari_Hardware/XEP80/README.md)
 - [Driver for a PC Hercules Monochrome graphics card inside the ARGS PBI-ISA Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface/README.md)
 
 ## Controllers
-- [Atari Light Pen CX70](../Companies/Atari/Atari_CX70_Light_Pen/README.md)
-- [Atari Touch Tablet (CX77)](../Companies/Atari/Atari_CX77_Touch_Tablet/README.md)
-- [Atari Trak-Ball controller (CX80)](../Companies/Atari/Atari_CX80_Trak-Ball_controller/README.md)
-- [Atari CX85 Numerical Keypad](../Companies/Atari/Atari_CX85/README.md)
+- [Atari Light Pen CX70](../Companies/Atari/Atari_Hardware/Atari_CX70_Light_Pen/README.md)
+- [Atari Touch Tablet (CX77)](../Companies/Atari/Atari_Hardware/Atari_CX77_Touch_Tablet/README.md)
+- [Atari Trak-Ball controller (CX80)](../Companies/Atari/Atari_Hardware/Atari_CX80_Trak-Ball_controller/README.md)
+- [Atari CX85 Numerical Keypad](../Companies/Atari/Atari_Hardware/Atari_CX85/README.md)
 - [Atari Trackball](../Trackball/README.md)
 - [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 
@@ -128,7 +127,7 @@
 
 ## Others
 - [ARGS ISA PC Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/README.md)
-- [ATARI 1450XL HOME COMPUTER INTEGRAL DISK DRIVE SPECIFICATION](../Companies/Atari/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
+- [ATARI 1450XL HOME COMPUTER INTEGRAL DISK DRIVE SPECIFICATION](../Companies/Atari/Atari_Hardware/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
 - [Bank Switching (Bankumschaltung)](../Bank_Switching/README.md)
 - [SDrive-MAX by KBr](../SDrive-MAX/README.md)
 - [The MicroUSB Project](../Hardware/USB/MicroUSB/README.md)
@@ -408,7 +407,7 @@ All of the following have no page yet
 #### Programmierhilfen
 - [Atari's Programmierhilfen-Diskette Nr. 1](../Companies/Atari/Atari_Germany/Ataris_Programmierhilfen-Diskette_Nr.1/README.md)
 - [Atari's Programmierhilfen-Diskette Nr. 2](../Companies/Atari/Atari_Germany/Ataris_Programmierhilfen-Diskette_Nr.2/README.md)
-- [Programmieren leicht gemacht (TXG4110)](../Companies/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)
+- [Programmieren leicht gemacht (TXG4110)](../Companies/Atari/Atari_Germany/Programmieren_leicht_gemacht_TXG4110/README.md)
 - [Kurs 2: Noch mehr BASIC](../Noch_mehr_BASIC_RXG_55007/README.md)
 - [BASIC für Fortgeschrittene](../Companies/Atari/Atari_Germany/BASIC_fuer_Fortgeschrittene/README.md)
 - [Super Sort (DXG 5730)](../Companies/Atari/Atari_Germany/Super_Sort/README.md)
@@ -620,7 +619,7 @@ Atari Basic Course: An Invitation to Programming 1-3:
 - [An Invitation to Programming 3-Introduction to Sound and Graphics (CX4117)](../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_3_CX4117/README.md)
 
 Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie fertig
-- [Programmieren leicht gemacht (TXG4110)](../Companies/Atari/Programmieren_leicht_gemacht_TXG4110/README.md)
+- [Programmieren leicht gemacht (TXG4110)](../Companies/Atari/Atari_Germany/Programmieren_leicht_gemacht_TXG4110/README.md)
 - [Kurs 2: Noch mehr BASIC-Lernen Sie BASIC mit Dagmar Berghoff-TXG 55007](../Noch_mehr_BASIC_TXG_55007/README.md)
 - [BASIC für Fortgeschrittene](../Companies/Atari/Atari_Germany/BASIC_fuer_Fortgeschrittene/README.md)
 
@@ -649,14 +648,14 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 ### Disk Operating Systems (DOS)
 - [Atari DOS 2.0S Source Code](http://data.atariwiki.org/DOC/Inside_Atari_DOS_GBXL.pdf) ; Inside Atari DOS-Bill Wilkinson ; size: 39.8 MB
 - [Atari 810 DOS Utilities Source Listing (DOS II)](http://ftp.pigwa.net/stuff/collections/Atari%20documents/Technical%20Documents/) ; size: 46 MB
-- [Atari 815 Dual Disk Controller](../Companies/Atari/Atari_815/Atari_815_DUAL_DISK_CONTROLLER/README.md)
+- [Atari 815 Dual Disk Controller](../Companies/Atari/Atari_Hardware/Atari_815/Atari_815_DUAL_DISK_CONTROLLER/README.md)
 - [Atari DOS II 2.0S Assembly Source Listing](../Companies/Atari/Atari_DOS/Atari_DOS_II_Assembly_Source_Listing/README.md)
 - [Atari DOS 2.5 Source Code from OSS](../Companies/Atari/Atari_DOS/Atari_DOS_2.5_Source_Code/README.md)
 - [MyDOS 4.51 source code](attachments/Mydos451.zip)
 - [SuperDOS](../SuperDOS/README.md)
 
 ### Drivers
-- [Atari CX85 Keypad Interrrupt Handler](../Companies/Atari/Atari_CX85/Original_CX85_Keyboard_Handler/README.md)
+- [Atari CX85 Keypad Interrrupt Handler](../Companies/Atari/Atari_Hardware/Atari_CX85/Original_CX85_Keyboard_Handler/README.md)
 
 ### Games (in the sequence the authors released the sources to the public)
 - [Eastern Front (1941)](../Companies/Atari/Atari_Corporation_UK/Eastern_Front_1941/README.md) ; 1981 from Chris Crawford
