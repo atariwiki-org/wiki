@@ -21,7 +21,7 @@ Both words need (=consume) the address on the stack.
 @  ( addr -- 16b )
 C@ ( addr --  8b )
 ```
-In the Atari, Memory location 632 ([STICK0](../../../../../Memory_Map/README.md#STICK0)/$278) is the shadow register for the first joystick port ([PORTA](../../../../../Memory_Map/README.md#PORTA)/54016).
+In the Atari, Memory location 632 ([Memory Map - STICK0](../../../../../Memory_Map/README.md#STICK0)/$278) is the shadow register for the first joystick port ([Memory Map - PORTA](../../../../../Memory_Map/README.md#PORTA)/54016).
 So the above BASIC example would be in FORTH:
 
 ```
@@ -41,7 +41,7 @@ The counterparts to @ (FETCH) and C@ (C-FETCH) are ! (STORE) and C! (C-STORE). T
 C!  (  8b addr -- )
 ```
 
-The below BASIC line changes the background color of the screen to black, writing the value 0 in memory location 709 ([COLOR1](../../../../../Memory_Map/README.md#COLOR1)):
+The below BASIC line changes the background color of the screen to black, writing the value 0 in memory location 709 ([Memory Map - COLOR1](../../../../../Memory_Map/README.md#COLOR1)):
 
 ```
 100 POKE 709,0

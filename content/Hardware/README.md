@@ -9,7 +9,7 @@
 - [All you ever wanted to know about: Atari Cartridges](../Cartridges/README.md)
 
 ## Controllers
-- [Controller_topics](../Memory_Map/README.md#Controller_topics)
+- [Memory Map - Controller_topics](../Memory_Map/README.md#Controller_topics)
 - [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md)
 - [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md) Interface
 - [Atari Trackball](../Trackball/README.md)
