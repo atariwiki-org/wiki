@@ -87,7 +87,7 @@
 - [Atari 1027 Printer, OS Timeout Fix](../Companies/Atari/Atari_Hardware/Atari_1027_Printer_-_OS_Timeout_Fix/README.md)
 - [Atari 1029 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_Hardware/ATARI_1029_Dot_Matrix_Printer/README.md)
 - [Atari XMM801 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_Hardware/ATARI_XMM801_Dot_Matrix_Printer/README.md)
-- [Atari XDM121 Daisy Wheel Printer- MISSING](../Companies/Atari/ATARI_XDM121_Daisy_Wheel_Printer/README.md)
+- [Atari XDM121 Daisy Wheel Printer- MISSING](../Companies/Atari/Atari_Hardware/ATARI_XDM121_Daisy_Wheel_Printer/README.md)
 
 ## Modems
 - [Atari 830 - Acoustic_Modem - MISSING](../Companies/Atari/Atari_Hardware/Atari_830_Acoustic_Modem/README.md)
@@ -95,7 +95,7 @@
 - [Atari 1030 - MISSING](../Companies/Atari/Atari_Hardware/Atari_1030/README.md)
 - [Atari 1030 Modem with ModemLink Telecommunications Program by Penril](../Companies/Atari/Atari_Hardware/Atari_1030_Modem_with_ModemLink_Telecommunications_Program/README.md)
 - [Atari XM301 Modem](../Companies/Atari/Atari_Hardware/Atari_XM301/README.md)
-- [Atari SX212 Modem](../Companies/Atari/Atari_SX212/README.md)
+- [Atari SX212 Modem](../Companies/Atari/Atari_Hardware/Atari_SX212/README.md)
 
 ## Interfaces
 - [Atari 850 - MISSING](../Companies/Atari/Atari_Hardware/Atari_850/README.md)
@@ -443,7 +443,7 @@ All of the following have no page yet
 - [Schluck / Richtungspfeile TXG 9502](../Companies/Atari/Atari_Germany/Schluck-Richtungspfeile/README.md)
 - [Ufos / Blitzschnell (DXG 5711 bzw. TXG 9511)](../Companies/Atari/Atari_Germany/Ufos-Blitzschnell/README.md)
 - [Himmel Schreiber (RX8059, DXG 5704)](../Companies/Atari/Atari_Germany/Himmel_Schreiber/README.md)
-- [Buchstabenlotterie (DXG 5705)](../Companies/Atari/Buchstaben_Lotterie/README.md)
+- [Buchstabenlotterie (DXG 5705)](../Companies/Atari/Atari_Germany/Buchstaben_Lotterie/README.md)
 
 ### Textverarbeitung
 - [Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Germany/Atari_Schreiber/README.md)
@@ -534,7 +534,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Compilation A (TXP7100)](../Companies/Atari/Atari_Corporation_UK/Compilation_A/README.md)
 - [Compilation B (TXP7101)](../Companies/Atari/Atari_Corporation_UK/Compilation_B/README.md)
 - [Compilation C (TXP7000)](../Companies/Atari/Atari_Corporation_UK/Compilation_C/README.md)
-- [Computer Chess & European Countries and Capitals](../Companies/Atari/Computer_Chess_and_European_Countries_and_Capitals/README.md)
+- [Computer Chess & European Countries and Capitals](../Companies/Atari/Atari_Corporation_UK/Computer_Chess_and_European_Countries_and_Capitals/README.md)
 - [Cygnus X1 - (TX 9051)](../Companies/Atari/Atari_Corporation_UK/Cygnus_X1/README.md)
 - [Eastern Front (1941)](../Companies/Atari/Atari_Corporation_UK/Eastern_Front_1941/README.md)
 - [Heartache (cassette TX 9046)](../Companies/Atari/Atari_Corporation_UK/Heartache/README.md)
@@ -559,7 +559,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 ## Demos
 - [Atari In-Store Demo Program (CXL4019, CX8117)](../Companies/Atari/In-Store_Demonstration_Program/README.md)
 - [Atari Demonstration Program](../Companies/Atari/Atari_Demonstration_Program/README.md)
-- [GTIA Demonstration Diskette (APX-20104)](../Companies/Atari/GTIA_Demonstration_Diskette_APX-20104/README.md)
+- [GTIA Demonstration Diskette (APX-20104)](../Companies/Atari/Atari_Program_Exchange_APX_Software/GTIA_Demonstration_Diskette_APX-20104/README.md)
 - [Fandal's demo site](http://a8.fandal.cz/demos.php?name=A&butt_details_x=&from=150)
 - [Atarionline demo site](http://atarionline.pl/v01/index.php?ct=demos)
 - [Atari Home Computers-Demo Ball](../Atari_Home_Computers-Demo_Ball/README.md)

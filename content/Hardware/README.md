@@ -61,7 +61,7 @@
 - [Atari 835 - Direct connect Modem - MISSING](../Companies/Atari/Atari_Hardware/Atari_835_Direct_connect_Modem/README.md)
 - [Atari 1030 - MISSING](../Companies/Atari/Atari_Hardware/Atari_1030/README.md)
 - [Atari XM301 Modem](../Companies/Atari/Atari_Hardware/Atari_XM301/README.md)
-- [Atari SX212 Modem](../Companies/Atari/Atari_SX212/README.md)
+- [Atari SX212 Modem](../Companies/Atari/Atari_Hardware/Atari_SX212/README.md)
 
 ## Printers
 - [Atari 820 - 40-Cloumn Printer - MISSING](../Companies/Atari/Atari_Hardware/Atari_820_40-column_printer/README.md)
@@ -73,7 +73,7 @@
 - [Atari 1027 Printer, OS Timeout Fix](../Companies/Atari/Atari_Hardware/Atari_1027_Printer_-_OS_Timeout_Fix/README.md)
 - [Atari 1029 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_Hardware/ATARI_1029_Dot_Matrix_Printer/README.md)
 - [Atari XMM801 - Dot Matrix Printer - MISSING](../Companies/Atari/Atari_Hardware/ATARI_XMM801_Dot_Matrix_Printer/README.md)
-- [Atari XDM121 Daisy Wheel Printer- MISSING](../Companies/Atari/ATARI_XDM121_Daisy_Wheel_Printer/README.md)
+- [Atari XDM121 Daisy Wheel Printer- MISSING](../Companies/Atari/Atari_Hardware/ATARI_XDM121_Daisy_Wheel_Printer/README.md)
 
 ## Tape Drives
 - [Atari 410 - MISSING](../Companies/Atari/Atari_Hardware/Atari_410/README.md)

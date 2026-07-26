@@ -9,5 +9,5 @@ The Atari 810 is rather large compared to other companies' disk drives and has a
 The case design was conceived by Kevin McKinsey of Atari's Home Computer Industrial Design group. The case is interesting in that the top and bottom covers are actually the same part, assembled to form the top and bottom sides. Adhesive labels on the back of the 810 would block unused ports on the topside of the cover.
 
 ## Manuals
-- [The Atari 810 Disk Drive](../../../../../media/Companies/Atari/Atari_810/attachments/The_Atari_810_Disk_Drive.pdf)
-- [Das Atari 810 Plattenlaufwerk](../../../../../media/Companies/Atari/Atari_810/attachments/Das_Atari_810_Plattenlaufwerk.pdf)
+- [The Atari 810 Disk Drive](../../../../../media/Companies/Atari/Atari_Hardware/Atari_810/attachments/The_Atari_810_Disk_Drive.pdf)
+- [Das Atari 810 Plattenlaufwerk](../../../../../media/Companies/Atari/Atari_Hardware/Atari_810/attachments/Das_Atari_810_Plattenlaufwerk.pdf)

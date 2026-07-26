@@ -188,8 +188,8 @@ Thank you Alfred
 - [MiniDOS](../Examples/MiniDOS/README.md)
 - [Multi Player Animation](../Examples/Multi_Player_Animation/README.md)
 - [OS Vectors](../../../OS_Vectors/README.md)
-- [Percom Block](../../../PERCOM_Block_Manipulation/README.md)
-- [Percom Service](../../../PERCOM_Service/README.md) -- Disk Format Configuration
+- [Percom Block](../Examples/PERCOM_Block_Manipulation/README.md)
+- [Percom Service](../Examples/PERCOM_Service/README.md) -- Disk Format Configuration
 - [Printing Routine for Epson Printer](../../../Printing_Routine_for_Epson_Printer/README.md)
 - [Query Console Keys](../../../Query_Console_Keys/README.md)
 - [SIO CIO Routine](../../../SIO_CIO_Routine/README.md)
