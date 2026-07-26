@@ -1,26 +1,27 @@
-# Atari Trackball
+# Atari Trakball (CX22)
 
 Taming your machine with a mouse has long been a dream of the ATARI 8-bitters.
 The mouse had its origins around the 1960's, but did see much use until the
 1980's when the Mac,ST and Amiga were unveiled. The mouse was also used by the
 engineering world as an input device for graphics workstations in the late
-70's.  The Track-ball is a close relative to the Mouse. A track-ball is
+70's.  The Track-ball is a close relative to the Mouse. A trakball is
 basically the same device flipped over allowing the hand position the ball
 directly.
 
 The Old ATARI did have some foresight in developing input devices for the 8-bit
 machines. The TrackBall is one of them.  The Track-ball allows smooth tracking
-of 2 dimensional motion and its associated velocity. Atari Basic is too slow
-so it can not be read with atari basic.  Faster languages such ACTION and
+of 2 dimensional motion and its associated velocity. Atari BASIC is too slow
+so it can not be read with Atari BASIC.  Faster languages such ACTION and
 Assembly can read the velocity vectors directly from the joystick registers.
 (mention something about which bits represent the direction and speed.)
-One thing the Atari Trak Ball lacks is a separate button that can function as
+One thing the Atari Trakball lacks is a separate button that can function as
 the left mouse button. Since the mouse and the Track-ball are virtually the
-same device it should be possible to read and ST mouse using the Trak-ball read
+same device it should be possible to read and ST mouse using the trakball read
 code.  The 8-bits can read the ST left mouse if a pull-up resistor is added to
 pin 6.
 
 Here's the pinout on the ST mouse.
+
 ```
 _____________
 \ 1 2 3 4 5 /
@@ -38,10 +39,11 @@ _____________
 9- Joystick 1 Fire/Right Mouse button.
 ```
 
-I have included 3 programs that demostrate the trak-balls ability to read
+I have included 3 programs that demostrate the trakball's ability to read
 direction and velocity.  One program is written in basic with a short assemble
-used to read the T-ball input vector. The other 2 programs are written in
+used to read the trakball input vector. The other 2 programs are written in
 ACTION!
+
 ```
                                           |  |  |
 Mike Buford                               |  |  |  8-bits Forever/
