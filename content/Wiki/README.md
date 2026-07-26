@@ -17,6 +17,7 @@ This is an open-source tool for checking Markdown files written in Python.
 
 You can run the tool by executing the scripts in the "/bin" folder.
 - `CheckMarkdown-Loop.bat`
+- `CheckMarkdown.sh`
 
 ## AtariWikiTool
 
