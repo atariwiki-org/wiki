@@ -79,7 +79,7 @@ Well, concerning Physics, we may be able to restore Ph16 from the Atari version 
 
 •) __Atari Statistics II CX8112 Disk__ (was it ever finished?)
 
-•) __[Atari Pascal (APX-20102)](../Companies/Atari/Atari_Pascal_APX-20102/README.md)__
+•) __[Atari Pascal (APX-20102)](../Companies/Atari/Atari_Program_Exchange_APX_Software/Atari_Pascal_APX-20102/README.md)__
 - CXL4017 Pascal (cartridge, planned, but never released)
 - CX8109 Pascal (planned, but never released, because 128 KB RAM and 2 disk drives were needed)
 - CX8110 Pascal Database (planned, but never released, because 128 KB RAM and 2 disk drives were needed)

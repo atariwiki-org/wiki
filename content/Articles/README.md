@@ -370,7 +370,7 @@ All of the following have no page yet
 - [Super Biorythmes (Disk: DF 4001, Cassette: TF 4001)](../Super_Biorhythmus/README.md)
 ```
 
-### Germany - Atari Deutschland GmbH
+### [Germany - Atari Deutschland GmbH](../Companies/Atari/Atari_Germany/README.md)
 
 #### Business
 - [Terminkalender](../Companies/Atari/Atari_Germany/Terminkalender/README.md)

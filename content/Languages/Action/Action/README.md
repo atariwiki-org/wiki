@@ -275,7 +275,7 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 ||Title||Issue||Language||Comment
 |[Schnelle Vektoren in ACTION!](../Examples/Schnelle_Vektoren_in_Action/README.md)|#1 (1-2/ 87)|de|Tutorial: Action!-Center Teil 1
 |[Schnelle Umwege in ACTION!](../Examples/Schnelle_Umwege_in_Action/README.md)|#2 (3-4/ 87)|de|Tutorial: Action!-Center Teil 2
-|[Interne_Variablen](../Interne_Variablen/README.md)|#3 (5-6/ 87)|de|Tutorial: Action!-Center Teil 3
+|[Interne Variablen](../Internal_Variables/README.md)|#3 (5-6/ 87)|de|Tutorial: Action!-Center Teil 3
 |[Was ist dran an Action!?](../Articles/Was_ist_dran_an_Action/README.md)|#4 (7-8/ 87)|de| Tutorial: Action!-Center Teil 4
 
 ### Atari Magazine

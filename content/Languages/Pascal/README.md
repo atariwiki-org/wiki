@@ -8,7 +8,7 @@ Kyan Pascal is the most advanced Pascal compiler for the Atari 8-bit computers. 
 
 ## Atari Pascal
 
-- [Atari Pascal (APX-20102)](../../Companies/Atari/Atari_Pascal_APX-20102/README.md)
+- [Atari Pascal (APX-20102)](../../Companies/Atari/Atari_Program_Exchange_APX_Software/Atari_Pascal_APX-20102/README.md)
 - [Atari Pascal (AED80018)](../../Companies/Atari/Atari_Pascal_AED80018/README.md)
 
 ## Draper Pascal
