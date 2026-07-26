@@ -5,7 +5,7 @@
 
 # Cassette
 - [Casette Boot](../Boot_from_Cassette/README.md)
-- [Atari Datasette XC12 Turbo 6000 Baud Interface](../Atari_Datasette_XC12_Turbo_6000_Baud_Interface/README.md)
+- [Atari Datasette XC12 Turbo 6000 Baud Interface](../Hardware/Atari_Datasette_XC12_Turbo_6000_Baud_Interface/README.md)
 - [Rambit](../Companies/Rambit/README.md)
 - [CAS to WAV and WAV to CAS](../CAS_to_WAV_and_WAV_to_CAS/README.md)
 
@@ -397,7 +397,7 @@ All of the following have no page yet
 - [Tipp Trainer (TXG 9512)](../Companies/Atari/Atari_Germany/Tipp_Trainer/README.md)
 - [Städte_und_Länder](../Staedte_und_Laender/README.md)
 - [Europäische_Städte_und_Länder](../Europaeische_Staedte_und_Laender/README.md)
-- [Rechtschreibtrainer (DXG 5713)](../Rechtschreibtrainer/README.md)
+- [Rechtschreibtrainer (DXG 5713)](../Companies/Atari/Atari_Germany/Rechtschreibtrainer/README.md)
 
 #### Musik
 - [Music_Composer](../Music_Composer/README.md)
@@ -604,7 +604,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Der XIO-Befehl für Dateioperationen](../Der_XIO_Befehl_fuer_Dateioperationen/README.md)
 - [Der XIO Befehl für Grafikoperationen](../Der_XIO_Befehl_fuer_Grafikoperationen/README.md)
 - Other [DOS-Topics](../DOS_topics/README.md)
-- [R-Time8 Manual](../RTime8_Manual/README.md)
+- [R-Time8 Manual](../Companies/ICD/RTime8_Manual/README.md)
 - [XIO Command Codes for the DOS Handler (D:)](../XIO_Command_Codes_DOS_Handler/README.md)
 
 ## Games
