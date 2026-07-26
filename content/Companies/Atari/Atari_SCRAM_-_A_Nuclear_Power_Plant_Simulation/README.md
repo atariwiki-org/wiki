@@ -7,7 +7,7 @@ Here are some visions for further developments:
  - [A similar program like the above for zero-point bombs using the Casimir effect](http://en.wikipedia.org/wiki/Casimir_effect)
 
 ## Manual:
-- [Atari_CX4123-Scram-A_Nuclear_Power_Plant_Simulation-Manual.pd](../../../../media/Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/attachments/Atari_CX4123-Scram-A_Nuclear_Power_Plant_Simulation-Manual.pdf)
+- [Atari_CX4123-Scram-A_Nuclear_Power_Plant_Simulation-Manual.pd](../../../../media/Companies/Atari/Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/attachments/Atari_CX4123-Scram-A_Nuclear_Power_Plant_Simulation-Manual.pdf)
 
 ## ATR-Images:
 - [Scram_24K-Version_english_Basic.atr](attachments/Scram_24K-Version_english_Basic.atr) CX4123
