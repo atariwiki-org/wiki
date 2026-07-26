@@ -11,7 +11,7 @@ Besides the above, the intention of the Atari Wiki FAQ is to provide the reader 
 - [make wav-files from an Atari cassette](https://atarinside.dyndns.org/blog/index.php/tutorial-how-to-dump-an-old-atari-cassettetape-to-a-cas-or-wav-file/) ; mega-thanks to AtarInside for the great tutorial! :-)
 - [Convert red pages from manuals into white pages](../General/Convert_red_pages_from_manuals_into_white_pages/README.md)
 - [remove yellowing from an old Atari case](http://atariage.com/forums/topic/138244-how-to-remove-yellowing-from-an-old-atari-case/)
-- [find the revision number of Atari Assembler Editor](../Companies/Atari/Atari_Assembler_Editor/README.md#section-Atari+Assembler+Editor-AssemblerEditorRevisionABCartridgesOutlookForRevisionCAndMaybeD)
+- [Atari Assembler Editor - section-Atari+Assembler+Editor-AssemblerEditorRevisionABCartridgesOutlookForRevisionCAndMaybeD](../Companies/Atari/Atari_Assembler_Editor/README.md#section-Atari+Assembler+Editor-AssemblerEditorRevisionABCartridgesOutlookForRevisionCAndMaybeD)
 - [How to find the revision number of Atari BASIC](../Languages/BASIC/Atari_BASIC/Articles/How_to_find_the_revision_number_of_Atari_Basic/README.md)
 - [How to find the revision number of ACTION!](../Languages/Action/How_to_find_the_revision_number_of_ACTION/README.md)
 - [Toggle BASIC on/off from OS/A+ and DOS XL Command-Line](../Companies/OSS/Toggle_BASIC_On-Off_from_the_OS_APlus_and_DOS_XL_Command-Line/README.md)

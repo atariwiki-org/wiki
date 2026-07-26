@@ -6,7 +6,7 @@
 # Cassette
 - [Casette Boot](../Boot_from_Cassette/README.md)
 - [Atari Datasette XC12 Turbo 6000 Baud Interface](../Atari_Datasette_XC12_Turbo_6000_Baud_Interface/README.md)
-- [Rambit Turbocharger for Atari Datarecorders](../Rambit/README.md)
+- [Rambit Turbocharger for Atari Datarecorders](../Companies/Rambit/README.md)
 - [CAS to WAV and WAV to CAS](../CAS_to_WAV_and_WAV_to_CAS/README.md)
 
 # Emulator
@@ -600,7 +600,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Disk drive formats / Laufwerksformate](../Laufwerksformate/README.md)
 - [Ram-Disk_under_OS-ROM_for_XL_XE](../Ram-Disk_under_OS-ROM_for_XL_XE/README.md) - Article from German "Happy Computer" magazine
 - [CIO Tutorial](../CIOV_Tutorial/README.md)
-- [File Suffix for Atari disk files](../File_Suffix/README.md)
+- [File Extensions of Atari disk files](../File_Suffix/README.md)
 - [DOS_Command_Processor](../DOS_Command_Processor/README.md)
 - [Der XIO-Befehl für Dateioperationen](../Der_XIO_Befehl_fuer_Dateioperationen/README.md)
 - [Der XIO Befehl für Grafikoperationen](../Der_XIO_Befehl_fuer_Grafikoperationen/README.md)

@@ -18,8 +18,8 @@ Multi-stage programs need to be changed to single-stage first. The instructions 
 
 ## Flac-files
 Because the cassette uses the Rambit format, it is not possible to create cas- or atr-files of this tape. You can download the FLAC files and record them on a cassette.
-[Rambit-Cassette-Side_1.flac](../../media/Rambit/attachments/Rambit-Cassette-Side_1.flac) 
-[Rambit-Cassette-Side_2.flac](../../media/Rambit/attachments/Rambit-Cassette-Side_2.flac) 
+[Rambit-Cassette-Side_1.flac](../../../../media/Companies/Rambit/Rambit_Turbocharger/attachments/Rambit-Cassette-Side_1.flac) 
+[Rambit-Cassette-Side_2.flac](../../../../media/Companies/Rambit/Rambit_Turbocharger/attachments/Rambit-Cassette-Side_2.flac) 
 
 ## Manual
 Including schematics for the 1010 and XC12 data recorders.
