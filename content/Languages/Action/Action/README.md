@@ -68,7 +68,7 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ### Tutorials
-- [Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION_Program](../Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION_Program/README.md)
+- [Step-by-Step Tutorial: How to create a stand-alone ACTION! Program](../Articles/Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION_Program/README.md)
 - [Action! and BBS Express! PRO Tutorial](../Action_and_BBS_Express_PRO_Tutorial/README.md)
 - [Larry's Action! Tutorial](../Articles/Larrys_Action_Tutorial/README.md)
 - [How to setup an ACTION! Development Disk](../Examples/How_to_setup_an_ACTION_Development_Disk/README.md)
@@ -269,7 +269,7 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 |[Killer Chess](../Articles/Killer_Chess/README.md)|Vol. 6 #10 (02/ 88)|en|Game
 |[Reardoor](../Articles/Reardoor/README.md)|Vol. 6 #10 (02/ 88)|en|Game
 |[Frog from Antic Vol. 6 #10 February 1988](../Articles/Frog/README.md)|Vol. 6 #10 (02/ 88)|en|Game
-|[ACTION!_Toolbox](../ACTION_Toolbox/README.md)|Vol. 7 #6 (10/ 88)|en|Lightning-fast command finder (Wordfind and Matchup)
+|[ACTION! Toolbox](../ACTION_Toolbox/README.md)|Vol. 7 #6 (10/ 88)|en|Lightning-fast command finder (Wordfind and Matchup)
 
 ### ATARI''magazin''
 ||Title||Issue||Language||Comment

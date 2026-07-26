@@ -1,4 +1,9 @@
 # Atari Elektronik Vertriebsgesellschaft GmbH
 
-Germany
+Country: Germany
+
+[Atari Computer System Software-Katalog](attachments/Atari-Catalog-1983-Deutschland.pdf)
+
+Thanks to [AtariInside!](https://www.atarinside.com/blog/wp-content/uploads/2018/10/Atari-Catalog-1983-Deutschland.pdf).
+
 

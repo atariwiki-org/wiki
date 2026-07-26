@@ -1,6 +1,6 @@
 # ATAMON (DXG 5724)
 
-Copyright © 1983 ATARI Elektronik Vertriebs GmbH – Bebelallee 10 – 2000 Hamburg 60
+Copyright (C) 1983 ATARI Elektronik Vertriebs GmbH – Bebelallee 10 – 2000 Hamburg 60
 
 ATAMON is a system monitor that shows the registers and the flags of the 6502 processor in their current state. See the screenshot below. Version 1.0 from J. Rued was long available in the community, but version 1.3 was first found in 2019.
 
@@ -25,7 +25,7 @@ ATAMON DXG 5724 Diskette ; thank you so much [ATARInside](https://www.atarinside
 ATAMON DXG 5724 screenshot from version 1.0 from J. Rued
 
 ![](attachments/ATAMON_1.3.jpg)
-ATAMON DXG 5724 screenshot from version 1.3 from [ATARInside](https://www.atarinside.com/blog/index.php/atarinside-items/atamon/) ; thank you so much [ATARInside](https://www.atarinside.com/blog/index.php/atarinside-items/atamon/) for your great help to the German Atari community, we really appreciate your help very much!
+ATAMON DXG 5724 screenshot from version 1.3 from [ATARInside](https://www.atarinside.com/blog/index.php/atarinside-items/atamon/) ; thank you so much ATARInside for your great help to the German Atari community, we really appreciate your help very much!
 
 ![](attachments/ATAMON_2000-2FFF.jpg)
 ATAMON DXG 5724 - loading from $2000 to $2FFF hex
