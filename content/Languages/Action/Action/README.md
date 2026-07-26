@@ -62,13 +62,13 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - [ACTION! Reference Card](../ACTION_Reference_Card/README.md)
 - [ACTION! error codes](../ACTION_error_codes/README.md)
 - [Aktion mit Action!](../Articles/Aktion_mit_ACTION/README.md) - Report about the ACTION! Programming Language from the German Magazin "Happy Computer"
-- [Action!_Bugsheet_3](../Action_Bugsheet_3/README.md)
+- [ACTION! BUG SHEET #3 - part 1 to 6](../Action_Bugsheet/README.md)
 - [Fix for the Bugs in divide in ACTION!](../Articles/Fix_for_the_Bugs_in_divide_in_ACTION/README.md)
 - [Fix for PrintF Routine](../Fix_for_Bug_in_PrintF/README.md)
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ### Tutorials
-- [Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION_Program](../Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION!_Program/README.md)
+- [Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION_Program](../Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION_Program/README.md)
 - [Action! and BBS Express! PRO Tutorial](../Action_and_BBS_Express_PRO_Tutorial/README.md)
 - [Larry's Action! Tutorial](../Articles/Larrys_Action_Tutorial/README.md)
 - [How to setup an ACTION! Development Disk](../Examples/How_to_setup_an_ACTION_Development_Disk/README.md)
@@ -105,7 +105,7 @@ You can use it under SpartaDOS and DosXL with "D1:ACTIONED MYSRC.ACT" to directl
 - [OSS_ACTION_Programmers_Aid_Disk_100.atr](attachments/OSS_ACTION_Programmers_Aid_Disk_100.atr) - Rebuild from damaged discs and files around the world
 - [The_ACTION!_Toolkit.atr](attachments/The_ACTION_Toolkit.atr)
 - [The_Action_RunTime_Disk-Original.atr](attachments/The_Action_RunTime_Disk-Original.atr) - Protected image copy of the original disk from a good soul from AtariAge
-- [The_ACTION!_RunTime_Disk.atr](attachments/The_ACTION_RunTime_Disk.atr) - Unprotected copy of the original disk from a good soul from AtariAge
+- [The_ACTION!_RunTime_Disk.atr](attachments/The_Action_RunTime_Disk.atr) - Unprotected copy of the original disk from a good soul from AtariAge
 - [Original Action! System Runtime Source](../Original_Action_System_Runtime_Source/README.md)
 - [Alternative Action! Runtime Source](../Articles/Alternative_Action_Runtime_Source/README.md)
 - [ACTION Runtime by Jeff Reister](../ACTION_Runtime_von_Jeff_Reister/README.md)
