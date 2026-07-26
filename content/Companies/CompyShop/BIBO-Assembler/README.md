@@ -155,7 +155,7 @@ biboass_build002.atr freshly build from source and installed on XDOS 2.42N. Runs
 - [Disable BREAK Key (for BASIC USR call)](../../../Disable_BREAK_key/README.md)
 - [Simple XOR encoding (for BASIC USR Call)](../../../Simple_XOR_encoding/README.md)
 - [Bitwise AND, OR, XOR and NOT for BASIC (USR Call)](../../../Bitwise_AND_OR_XOR_and_NOT/README.md)
-- [High Density Interface](../../../HDISource/README.md) - High Density Interface (PC FLoppy Interface with Speedy like OS)
+- [High Density Interface](../../../People/Erhard_Puetz/HDI_Interface/HDISource/README.md) - High Density Interface (PC FLoppy Interface with Speedy like OS)
 - [SIO2USB Clock Utility](../../../SIO2USB_Clock_Utility/README.md)
 - [Simple Disk Formatter](../../../Simple_Disk_Formatter/README.md)
 - [SIO Sector Read for Atari BASIC](../../../SIO_Sector_Read_for_Atari_Basic/README.md)

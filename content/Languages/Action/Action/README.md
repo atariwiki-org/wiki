@@ -134,7 +134,7 @@ Thank you Alfred
 ### Functions
 - [Misc useful ACTION! Functions](../Examples/Misc_useful_ACTION_Functions/README.md) - (DIVERS.ACT)
 - [Chartest](../Examples/Chartest/README.md) - a group of routines which perform various functions and tests on characters.
-- [Fast Screen IO](../../../Fast_Screen_IO/README.md)
+- [Fast Screen IO](../Examples/Fast_Screen_IO/README.md)
 - [Player Missile Module](../../../Player_Missile/README.md)
 - [String Library](../Examples/String_Library_PSC/README.md) - (STRING.ACT)
 
@@ -148,7 +148,7 @@ Thank you Alfred
 
 - [A Pseudo Assembler in Action!](../A_pseudo_Assembler_in_Action/README.md)
 - [ACTION! Logo](../ACTION_Logo/README.md) ACS
-- [ATARI Rainbow Effect](../../../ATARI_Rainbow_effect/README.md)
+- [ATARI Rainbow Effect](../Examples/ATARI_Rainbow_effect/README.md)
 - [Access Sparta DOSCommand Line Parameters](../../../Access_SpartaDOS_commandline_parameters/README.md)
 - [Atari Fuji Logo in ACTION](../Examples/Atari_Fuji_Logo_in_ACTION/README.md)
 - [Atari Picture Mirror Tool](../Examples/Atari_Picture_Mirror_Tool/README.md)

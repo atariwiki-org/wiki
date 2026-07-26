@@ -72,10 +72,10 @@
 ## Tape Recorders
 - [Atari 410 - MISSING](../Companies/Atari/Atari_Hardware/Atari_410/README.md)
 - [Atari 1010 - MISSING](../Companies/Atari/Atari_Hardware/Atari_1010/README.md)
-- [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
 - [Atari XC11 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC11/README.md)
 - [Atari XC12 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC12/README.md)
-- [All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
+- [All about Cassette Tapes from 1979.pdf](../Voice_and_Data_Cassettes/attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
+- [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
 
 ## Printers
 - [Atari 820 - 40-Cloumn Printer - MISSING](../Companies/Atari/Atari_Hardware/Atari_820_40-column_printer/README.md)

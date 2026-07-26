@@ -1,4 +1,4 @@
-# Blitzrechnen in Atari BASIC:
+# Blitzrechnen in Atari BASIC
 
 Das Progrmm ist exklusiv beim PD-Service des WASEO erhältlich, Diskette #1.000.
 
