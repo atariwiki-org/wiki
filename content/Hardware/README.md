@@ -92,7 +92,7 @@
 - [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
 - [Atari XC11 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC11/README.md)
 - [Atari XC12 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC12/README.md)
-- [All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
+- [All about Cassette Tapes from 1979.pdf](../Voice_and_Data_Cassettes/attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
 
 ## Video Upgrades
 

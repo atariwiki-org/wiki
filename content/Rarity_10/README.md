@@ -29,7 +29,7 @@ Further, we are looking for:
 
 Many thanks to kr0tki, who found the trace showing that OS 255 is for real!
 On page 8 of:
-[All about Cassette Tapes from 1979.pdf](attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
+[All about Cassette Tapes from 1979.pdf](../Voice_and_Data_Cassettes/attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
 we find:
 ![](attachments/Page_8_from_All_about_Cassette_Tapes_1979.jpg)
 Page 8 of: 'All about Cassette Tapes from 1979'
