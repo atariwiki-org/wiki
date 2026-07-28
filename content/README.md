@@ -2392,7 +2392,7 @@
   
  - [How to create new pages in the Atari Wiki](Wiki/How_to_create_new_pages_in_the_Atari_Wiki/README.md)
    
- - [How to get Wiki edit permissions](Wiki/How_to_get_Wiki_edit_permissions/README.md)
+ - [How to get Wiki edit permissions?](Wiki/How_to_get_Wiki_edit_permissions/README.md)
    
  - [Atari Wiki Manifesto](Wiki/Manifesto/README.md)
    
