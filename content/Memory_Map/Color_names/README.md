@@ -23,16 +23,16 @@
 
 ## Luminance
 
-|Luminance Value|Description
-|---------------|-----------
-|0 $0| dark|%%( color: #000 ; background-color : #000 ) black %%
-|2 $2| |%%( color: #222 ; background-color : #222 ) black %%
-|4 $4| |%%( color: #444 ; background-color : #444 ) black %%
-|6 $6| |%%( color: #666 ; background-color : #666 ) black %%
-|8 $8| |%%( color: #888 ; background-color : #888 ) black %%
-|10 $A| |%%( color: #aaa ; background-color : #aaa ) black %%
-|12 $C| |%%( color: #ccc ; background-color : #ccc ) black %%
-|14 $E|light|%%( color: #eee ; background-color : #eee ) black %%
+|Luminance Value|Description| Visualization 
+|---------------|-----------|---------------
+|0 $0| dark| <p style="color:#000">███</p>
+|2 $2| | <p style="color:#222">███</p>
+|4 $4| | <p style="color:#444">███</p>
+|6 $6| | <p style="color:#666">███</p>
+|8 $8| | <p style="color:#888">███</p>
+|10 $A| |  <p style="color:#aaa">███</p>
+|12 $C| | <p style="color:#ccc">███</p>
+|14 $E|light| <p style="color:#eee">███</p>
 
 ## Compute a color value
 
