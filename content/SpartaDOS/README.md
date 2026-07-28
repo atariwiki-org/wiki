@@ -6,6 +6,7 @@ SpartaDOS is a completely different command-line DOS modeled after MS-DOS, thoug
 
 DOS 2 Equivalents:
 The following is a list of the commands from the AtariDOS 2.0S menu and their equivalents in SpartaDOS X:
+
 - A-DISK DIRECTORY **DIR and DIRS**
 - B-RUN CARTRIDGE **BASIC for internal BASIC in XL/XE computers, CAR for an external cartridge**
 - C-COPY FILE **COPY**
@@ -97,7 +98,7 @@ Greatly enhanced/expanded compared to disk- based SpartaDOS; completely
 different source code. Several versions produced:
 
 | Version| Date      |Vendor|
-|--------|-----------|------- 
+|--------|-----------|-------
 |  4.22  | 11-05-95  | released by Fine Tooned Engineering (FTe) |
 |  4.21  | 7-10-89   | released by ICD |
 |  4.20  | 2-06-89   | released by ICD |

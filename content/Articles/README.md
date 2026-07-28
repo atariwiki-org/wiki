@@ -564,7 +564,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [Atari Grafieken](../Companies/Atari/Atari_Benelux/Atari_Grafieken/README.md)
 - [Atari Kaartsysteem](../Companies/Atari/Atari_Benelux/Atari_Kaartsysteem/README.md)
 - [Atari Statistieken](../Companies/Atari/Atari_Benelux/Atari_Statistieken/README.md)
-- [Huishoud-Boek (Disk: DXN 421)](../Companies/Atari/Atari_Benelux/Huishoud-Boek/README.md)
+- [Huishoud-Boek (DXN 421)](../Companies/Atari/Atari_Benelux/Huishoud-Boek/README.md)
 
 #### Algemene Ontwikkeling
 

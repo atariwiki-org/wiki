@@ -124,7 +124,7 @@
      
    - [Galgje](Companies/Atari/Atari_Benelux/Galgje/README.md)
      
-   - [Huishoud-Boek (Disk: DXN 421)](Companies/Atari/Atari_Benelux/Huishoud-Boek/README.md)
+   - [Huishoud-Boek (DXN 421)](Companies/Atari/Atari_Benelux/Huishoud-Boek/README.md)
      
    - [Koninkrijk](Companies/Atari/Atari_Benelux/Koninkrijk/README.md)
      

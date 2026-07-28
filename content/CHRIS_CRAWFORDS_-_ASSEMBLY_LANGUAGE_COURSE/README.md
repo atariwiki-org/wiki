@@ -5,12 +5,11 @@ This approach to assembly language is meant to give the reader a practical basic
 Chris Crawford is a self taught programmer that was interested in developing a computer wargame (s) simulation.
 Here he approaches learning assembly language in an informal light-hearted way with personal comments and suggestions, throughout the technical material.
 
-
 ## ATR Image
+
 - [ASSTUTO1.ATR](attachments/ASSTUTO1.ATR)
 
 The material is covered in 8 sections consisting of these headings
-
 
 ## WHY LEARN ASSEMBLY LANGUAGE?
 

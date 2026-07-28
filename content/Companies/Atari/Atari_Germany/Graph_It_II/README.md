@@ -8,17 +8,14 @@ Copyright (C) 1983 Atari Elektronik-Vertriebsgesellschaft mbH
 
 ## Bilder
 
-||Box-Vorderansicht||Box-Rückansicht
-| ![](attachments/Graph_it_TXG9517_front_cover.jpg) | ![](attachments/Graph_it_TXG9517_back_cover.jpg)
+- Box-Vorderansicht<br>![](attachments/Graph_it_TXG9517_front_cover.jpg) 
+- Box-Rückansicht<br>![](attachments/Graph_it_TXG9517_back_cover.jpg)
 
-||Seite 1
-| ![](attachments/Graph_it_TXG9517_cassettes_side1.jpg)
+- Seite 1<br>![](attachments/Graph_it_TXG9517_cassettes_side1.jpg)
 
-||Seite 2
-| ![](attachments/Graph_it_TXG9517_cassettes_side2.jpg)
+- Seite 2<br>![](attachments/Graph_it_TXG9517_cassettes_side2.jpg)
 
-||Handbuch
-| [Graph It II-Handuch](attachments/Graph_it_TXG9517_manual.jpg)
+- Handbuch<br>|![](attachments/Graph_it_TXG9517_manual.jpg)
 
 ## Danksagung
 

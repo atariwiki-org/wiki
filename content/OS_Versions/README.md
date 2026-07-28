@@ -16,7 +16,8 @@ PRINT PEEK(65528)
 /%
 and press the RETURN key
 
-||Value||OS Version||CRC 32||MD5||ROMs
+| Value | OS Version | CRC 32 | MD5 | ROMs
+|-------|------------|--------|-----|-----
 |255|First 800 OS NTSC ; please further see [Rarity 10 and above up to impossible](../Rarity_10/README.md)|?|?|**we are still searching for this. Please help us ;-)**
 |221|400/800 OS Rev. A NTSC|c1b3bb02|a3c1585b5d19719f8acfa2b093bea75f|CO12499A, CO14599A, CO12399B
 |214|400/800 OS Rev. A PAL|72b3fed4|eb1f32f5d9f382db1bbfb8d7f9cb343a|CO15199, CO15299, CO12399B
@@ -27,8 +28,6 @@ and press the RETURN key
 
 If you have an XL or XE Computer, type
 
-%%prettify
-
 ```
 PRINT PEEK(65527)
 ```
@@ -36,7 +35,8 @@ PRINT PEEK(65527)
 /%
 and press the RETURN key
 
-||Value||Version
+| Value | Version
+|-------|-------
 |10|XL/XE OS Rev 10
 |11|XL/XE OS Rev 11
 |1|XL/XE OS Rev 1

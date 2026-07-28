@@ -19,20 +19,19 @@
 
 ## Images
 
-![](attachments/XEP80-Label.jpg)
-Original Atari XEP80 Boot Disk DX5087 Label (C) 1987 Atari
+- Original Atari XEP80 Boot Disk DX5087 Label (C) 1987 Atari<br>![](attachments/XEP80-Label.jpg)
 
 # The XEP 80 - Part 1
 
-by Erhard Pütz (aka Atreju aka Floppydoc)
+by Erhard Pütz (aka Atreju aka Floppydoc),
 prepared and translated by Mathy v. Nisselroy
 
 Ever since the 1993 ABBUC Annual meeting (Jahreshauptversammlung) I've been working with the XEP 80 and gained quite a bit of knowledge
 and experience.  I've used the XEP under BASIC, MAC65, BobTerm and from DOS to read texts.
 
-At this time I want to ask everybody who's got information not mentioned in the manual, to send it to me.  I'm especially interested in Information about the Hardware.  Like, what graphicsprocessor as used?
+At this time I want to ask everybody who's got information not mentioned in the manual, to send it to me.  I'm especially interested in Information about the Hardware.  Like, what graphics processor as used?
 
-While working with the XEP some very annoying things cought my attention.  First there is this constant need to switch video plugs. Really nerve recking is readjusting of screen height, horizontal screen position and brightness.  The height of the screen is almost right when the XEP is working in the American TV-standard with 50 Hz. But then the screen flickers and who knows how long the monitor will put up with the imposed 60 Hz.  I once read that the higher screen frequency increases the current in the coils (Comment by Mathy: I don't quite know what these coils are called in English, but the direct the electronic beams that draw the picture on your cathode ray tube (according to this booklet I have)).  This increases the load on both the electronics, which might not be designed handle this higher current, and the coils, which might burn out.
+While working with the XEP some very annoying things caught my attention.  First there is this constant need to switch video plugs. Really nerve recking is  readjusting of the screen height, horizontal screen position and brightness.  The height of the screen is almost right when the XEP is working in the American TV-standard with 50 Hz. But then the screen flickers and who knows how long the monitor will put up with the imposed 60 Hz.  I once read that the higher screen frequency increases the current in the coils (Comment by Mathy: I don't quite know what these coils are called in English, but the direct the electronic beams that draw the picture on your cathode ray tube (according to this booklet I have)).  This increases the load on both the electronics, which might not be designed handle this higher current, and the coils, which might burn out.
 
 After switching to 50 Hz though, the screen is significantly higher than the standard XL/XE screen, pushing both upper and lower parts of the graphics off the screen.  And the characters look really course.  Once readjusted, one is rewarded with a good 80 character screen.
 
@@ -150,9 +149,10 @@ The day before yesterday was the day that I decided to show off my newly gained 
 
 For $40E0 on, we have 13 bytes, with which the XEP is initialized:
 
-|| value || function ||
+| value | function |
+|-----|------------|
 | $D9 |    Cursor always on |
-| $D4 |    Use ATASCII characterset |
+| $D4 |    Use ATASCII character set |
 | $DE |    Bright characters on dark background |
 | $D3 |    Burst mode, no cursor data is send back |
 | $60 |    Left Margin 0 low nibble |
@@ -169,9 +169,10 @@ Since all this trail and error stuff started to annoy me, I "just for a minute" 
 
 ## DEEPER DUNGEONS
 
-The videocontroller inside the XEP 80 is a 48 pin chip.  It's data bus is 16 bits wide on the video side.  This way, two RAMs could be read simultaniously, one containing the text that should be displayed and another containing the text attributes.  There are eight possible attributes:
+The video controller inside the XEP 80 is a 48 pin chip.  It's data bus is 16 bits wide on the video side.  This way, two RAMs could be read simultaniously, one containing the text that should be displayed and another containing the text attributes.  There are eight possible attributes:
 
-|| attribute || display ||
+| Attribute  | Display |
+|------------|-----------|
 | Inverse   | A character plus it's surrounding area is display "Inverse" |
 | Halve Bright  | The character in displayed with a lower brightness. Other options are a higher brightness and even color. |
 | Flickering    | On, Off, On, Off |
@@ -179,18 +180,18 @@ The videocontroller inside the XEP 80 is a 48 pin chip.  It's data bus is 16 bit
 | Double Width  | Text in double wide.  The next line can't be displayed though, so we have to leave a blank line between two lines of character |
 | Underlined    | An apparently freely defined character is mixed in. This can be the "underline" character or an "overline" or "strait through the middle" character or whatever you want |
 | Hidden        |  The text is not displayed at all.  This attribute should also be set when using a double height character, so the controller knows that this is the bottom halve of the double height haracter. |
-| Graphics      | Since this is an attribute, text and blockgraphics can be mixed at will.  Except double height, all other attributes can be used at the same time |
+| Graphics      | Since this is an attribute, text and block graphics can be mixed at will.  Except double height, all other attributes can be used at the same time |
 
 And then there is the Graphics mode of the XEP 80.  Just like the subject of block graphics, it's a very broad subject and will not be
 discussed here.
 
 ## THE LIGHT PEN
 
-The controller offers the option of connecting a lightpen to it.  Via interrupts, the horizontal and vertical positions are stored into two registers.  HPEN is 7 bit wide (128 positions) and VPEN is 5 bit wide (32 positions).  Since this does not provide us with a very high resolution, we can forget about drawing with a light pen.
+The controller offers the option of connecting a light pen to it.  Via interrupts, the horizontal and vertical positions are stored into two registers.  HPEN is 7 bit wide (128 positions) and VPEN is 5 bit wide (32 positions).  Since this does not provide us with a very high resolution, we can forget about drawing with a light pen.
 
 ## THE SERIAL INTERFACE
 
-Here we find a UART (Universal Asynchronus Receiver Transmitter), that, in it's addresses and functions, equals the good old 6551 so much, that I'm assuming it is.  With a 4 bit pre-devider, the system clock (12MHz in the XEP 80) is devided into one of 16 steps. These steps are 3.4, 4, 4.5, ... ,11.  The actual baudrate devider is 11 bits wide and is further devided by 16 at the output.  In the XEP 80 the baudrate is set to 15625.  The mathematics could however also look like this:
+Here we find a UART (Universal Asynchronous Receiver Transmitter), that, in it's addresses and functions, equals the good old 6551 so much, that I'm assuming it is.  With a 4 bit pre-devider, the system clock (12MHz in the XEP 80) is divided into one of 16 steps. These steps are 3.4, 4, 4.5, ... ,11.  The actual baudrate divider is 11 bits wide and is further divided by 16 at the output.  In the XEP 80 the baudrate is set to 15625.  The mathematics could however also look like this:
 
 ```
 12 MHz     : 6.5 = approximately 1.8432 MHz
