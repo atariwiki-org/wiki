@@ -1,17 +1,16 @@
 # Chris Crawford's - Assembly Language Course
 
-This approach to assembly language is meant to give the reader a practical basic concept of what assembly language is and how it relates to the atari computer.
+This approach to assembly language is meant to give the reader a practical basic concept of what assembly language is and how it relates to the Atari computer.
 
 Chris Crawford is a self taught programmer that was interested in developing a computer wargame (s) simulation.
 Here he approaches learning assembly language in an informal light-hearted way with personal comments and suggestions, throughout the technical material.
 
-**Download Disk**: [ASSTUTO1.ATR](attachments/ASSTUTO1.ATR)
+
+## ATR Image
+- [ASSTUTO1.ATR](attachments/ASSTUTO1.ATR)
 
 The material is covered in 8 sections consisting of these headings
 
----
-
----
 
 ## WHY LEARN ASSEMBLY LANGUAGE?
 
@@ -48,7 +47,8 @@ The registers are simply on-board RAM.  The address bus controller is a device t
 
 Machine code is nothing more than a bunch of numbers that mean something to the CPU. It's hard to work with pure numbers, so we use a little code that makes it easier for us to understand the codes that the computer uses. This programmer- friendlier code is called assembly language, It is a direct, one-to-one translation of machine code. Here is an example of the two side by side:
 
-|| Machine Code || Assembly Language
+| Machine Code | Assembly Language|
+|--------------|------------------|
 | A9 05 | LDA #FINGERS
 | 133 $9C | STA COUNT
 
@@ -104,7 +104,8 @@ Before we can do arithmetic, though, you must know a little bit about number sys
 
 Binary works the same way, except that there are only two digits, not ten. The two digits are 0 and 1. You count 0, then 1, then you reach 0 again, so you put down a 1 in the twos place and resume counting from 0. Thus, counting from 0 to ten in binary like this:
 
-|| Decimal || Binary
+| Decimal | Binary |
+|         |        |
 | 0 | 0
 | 1 | 1
 | 2 | 10
@@ -179,7 +180,7 @@ A great deal of programming involves the use of Boolean logic. This is a standar
 
 Where algebra deals with numbers, Boolean logic deals with propositions. A proposition is just a statement such as "Fred eats worms". It can take only two possible values -- True or False. In our programs we seldom bother with broad and glorious propositions such as "Love is the universal language of truth" or "War is the extension of policy by other means". Instead, we normally deal with propositions such as "The joystick trigger has been pressed", or "There is a diskette in the disk drive".
 
-When we use Boolean logic with a computer, we may think in terms of true and false, but the computer is actually working with 1's and 0's. We use the following convention: a 1 corresponds to a Boolean value of "true", while a 0 correspons to a Boolean "false". Using this system we can represent propositions inside the computer. However, programming requires more than the mere representation of data; we must also be able to manipulate that data. This brings us to the Boolean operators. There are four common Boolean operations necessary for most programming practices.
+When we use Boolean logic with a computer, we may think in terms of true and false, but the computer is actually working with 1's and 0's. We use the following convention: a 1 corresponds to a Boolean value of "true", while a 0 corresponds to a Boolean "false". Using this system we can represent propositions inside the computer. However, programming requires more than the mere representation of data; we must also be able to manipulate that data. This brings us to the Boolean operators. There are four common Boolean operations necessary for most programming practices.
 
 # NOT
 
