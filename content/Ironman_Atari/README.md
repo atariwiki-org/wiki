@@ -173,7 +173,8 @@ shown below in figure ??.  By appropriately selecting the GTIA mode 10 palette a
 carefully placing the mode 9 pixels, HIP has an average bit-depth of HIP of 3.5 bits.
 (GTIA mode 9 has 4 bits, GTIA mode 10 has 3).
 
-|| DLIST ONE || DLIST TWO
+| DLIST ONE | DLIST TWO |
+|-----------|-----------|
 | mode 9  | mode 10
 | mode 10  | mode 9
 | mode 9  | mode 10
@@ -212,7 +213,7 @@ the appropriate color in each display list as detailed below:
 To display a HIP picture, a special display list set can be constructed that alternates
 between screens every frame.  In addition, two DLI routines need to be written: one to
 alternate between GTIA modes 9 and 10 and the other to alternate between modes 10 and
-9\.  A simple display routine is included below.
+9.  A simple display routine is included below.
 
 HIP pictures are difficult to create because the pixels cannot be independently set.  This is
 due to the fact that we are simulating a 160 pixel wide display by overlapping two offset
@@ -236,7 +237,7 @@ HIP pictures.  Fortunately, this can be fixed with judicious use of Player/Missi
 Remember that register 704 is set to the background color.  Register 704 is also used as the color for player 0 and its missile.  By setting the shape of player 0 and missile 0 to a
 solid strip, they can be used as borders.  This provides the picture solid frame.
 There is a simple extension to the HIP format to provide color instead of only allowing a
-monochrome pallet.  This is known as the RIP (Rocky Interlace Picture) file format.  RIP
+monochrome pallete.  This is known as the RIP (Rocky Interlace Picture) file format.  RIP
 allows modification of the color registers on each GTIA 10 lines. This allows for non-
 monochrome pictures, but RIP pictures selection is not straight-forward.
 
@@ -252,7 +253,8 @@ GTIA 9/10 line as shown in the figure below. Unfortunately, adding this extra li
 the vertical resolution and introduces dark lines. On the other hand, pixels are now
 square, which helps conversion.
 
-|| DLIST ONE  || DLIST TWO  ||
+| DLIST ONE  | DLIST TWO  |
+|------------|------------|
 | mode 11  | mode 11  |
 | mode 9  | mode 10  |
 | mode 11  | mode 11  |
@@ -699,9 +701,10 @@ i4       sty yind
 
 The tables referenced by the above code vary depending on the mouse being used.
 
-||  || Amiga: || Atari ST: ||
-|htab:| 0,2,10,8 | 0,2,3,1|
-|vtab:| 0,1,5,4 |0,8,12,4 |
+|     | Amiga    | Atari ST |
+|-----|----------|----------|
+|htab | 0,2,10,8 | 0,2,3,1  |
+|vtab | 0,1,5,4  | 0,8,12,4 |
 
 Oddly, no emulator currently supports the use of a mouse, so this will only work on real
 hardware.
