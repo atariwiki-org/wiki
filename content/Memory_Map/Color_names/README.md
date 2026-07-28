@@ -25,14 +25,14 @@
 
 |Luminance Value|Description| Visualization 
 |---------------|-----------|---------------
-|0 $0| dark| <p style="color:#000">███</p>
-|2 $2| | <p style="color:#222">███</p>
-|4 $4| | <p style="color:#444">███</p>
-|6 $6| | <p style="color:#666">███</p>
-|8 $8| | <p style="color:#888">███</p>
-|10 $A| |  <p style="color:#aaa">███</p>
-|12 $C| | <p style="color:#ccc">███</p>
-|14 $E|light| <p style="color:#eee">███</p>
+|0 $0| dark| <div style="color:#000">███</div>
+|2 $2| | <div style="color:#222">███</div>
+|4 $4| | <div style="color:#444">███</div>
+|6 $6| | <div style="color:#666">███</div>
+|8 $8| | <div style="color:#888">███</div>
+|10 $A| |  <div style="color:#aaa">███</div>
+|12 $C| | <div style="color:#ccc">███</div>
+|14 $E|light| <div style="color:#eee">███</div>
 
 ## Compute a color value
 
