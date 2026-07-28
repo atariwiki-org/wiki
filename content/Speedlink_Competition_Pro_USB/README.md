@@ -5,7 +5,7 @@ Tested with a Speedlink Competition Pro USB. Might work with other digital gamep
 ## Description
 
 | USB Register | Byte of HID Packet | Function | Atari Memory Shadow | original Label | new USB label |
-|-
+|-|-
 |  $10           |  1                 | Horizontal Movement (left/right)  | $270 (624)  | PADDL0 | JHORIZ     |
 |  $11           |  2                 | Vertical Movement (up/down) | $271 (625)  | PADDL1 | JVERT     |
 |  $12           |  3                 | Buttons 1-4  | $272 (626)  | PADDL2 | JBUTTON     |
