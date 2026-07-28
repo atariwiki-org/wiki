@@ -107,7 +107,8 @@ The OPEN command establishes a line of communication to a disk file. must OPEN a
 
 "Aux1" is a code number with the following meanings. Select the desired topic for further information:
 
-|| value || IO direction ||
+| Value | IO Direction |
+|---|---------------------
 | 4 | INPUT |
 | 9 | APPEND |
 | 5 | BAD FILE INPUT |
@@ -414,7 +415,8 @@ Memory location RRVECT at $7D1,3 contains a JMP instruction. The FMS executes a 
 
 ## DOS 4 MEMORY MAP
 
-|| Memory Loc. || Function ||
+| Memory Location | Function |
+|-----------------|----------|
 | $0A | CP Load And Run Vector |
 | $0C | FMS Init Vector |
 | $1A- | DUP Zero Page |
@@ -444,7 +446,8 @@ REQEOL at $7D6,1 determines how strictly the FMS enforces the rules for filespec
 
 ## I/O ERROR CODES
 
-|| Code || Message || Description ||
+| Code | Message | Description |
+|-----|----------|-------------|
 | 128 | BREAK ABORT | You pressed the BREAK key during an I/O operation. This stops the operation. |
 | 129 | IOCB ALREADY OPEN | You tried to give an OPEN command to an IOCB which is already open. |
 | 130 | NONEXISTENT DEVICE |You did not give a correct device specification (D0: through D9:). |
