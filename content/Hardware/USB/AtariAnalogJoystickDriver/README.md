@@ -14,7 +14,8 @@ Signals from original Joystick in Port A will overwrite USB Joystick compatibili
 
 ### USB Analog Joystick Mode
 
-|| Label    || Mem   || Values ||
+| Label    | Address| Values |
+|----------|-------|------------
 | USBHORZ  | $0270 | horizontal values (127-0 left move, 128 = no move, 129-255 right move) |
 | USBVERT  | $0271 | vertical values (127-0 up move, 128 = no move, 129-255 down move) |
 | USBTRIG0 | $0272 | Buttons 1-8 (each bit, bit set = Button pressed) |

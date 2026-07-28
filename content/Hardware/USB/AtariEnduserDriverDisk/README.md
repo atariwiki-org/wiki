@@ -4,7 +4,8 @@ A collection of USB Drivers for Users
 
 ## What is on the disk
 
-|| Filename || Comment ||
+| Filename | Comment
+|----------|-------------------
 | DOS.SYS | Atari Dos 2.5 FMS |
 | DUP.SYS | Atari Dos 2.5 DUP |
 | BIBOASS.COM | Bibo Assembler |
@@ -23,7 +24,8 @@ A collection of USB Drivers for Users
 
 For more detailed information on USB Device Descriptors pleas use the USB 1.1 Specification Documents at [www.usb.org](http://www.usb.org/developers/docs/).
 
-|| Offset || Field  || Size  || Value  || Description  ||
+| Offset | Field | Size  | Value  | Description
+|--------|-------|-------|--------|------------
 |  0  | bLength |  1  | Number  | Size of this descriptor in bytes |
 |  1  | bDescriptorType |  1  | Constant | DEVICE Descriptor Type  |
 |  2  | bcdUSB |  2  | BCD USB Specification Release Number in Binary-Coded Decimal (i.e., 2.10 is 210H). | This field identifies the release of the USB Specification with which the device and its descriptors are compliant. |
