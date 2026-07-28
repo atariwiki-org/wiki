@@ -1,10 +1,11 @@
 # Logitech Formula Vibration Feedback Wheel USB Driver
 
-Tested with a Logitec Formula Vibration Feedback Wheel USB. Other Logitech Wheels might work. Please send feedback.
+Tested with a Logitech Formula Vibration Feedback Wheel USB. Other Logitech Wheels might work. Please send feedback.
 
 ## Description
 
-|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||
+| USB Register   | Byte of HID Packet | Function                    | Atari Memory Shadow | Original Label | New USB label |
+|----------------|--------------------|-----------------------------|---------------------|----------------|---------------|
 |  $10           |  1                 | Wheel movement Low Byte  | $270 (624)  | PADDL0 | RWHEELL     |
 |  $11           |  2  (Bit 0-2)  | Wheel movement High Byte | $271 (625)  | PADDL1 | RWHEELH     |
 |  $11           |  2  (Bit 3-7)  | Buttons 1-5  | $272 (626)  | PADDL2 | RBUTTON1     |

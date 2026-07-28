@@ -4,7 +4,8 @@ Tested with a Logitec Rumblepad 2 USB. Other Logitech analog Joypad might work. 
 
 ## Description
 
-|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||
+| USB Register   | Byte of HID Packet | Function                    | Atari Memory Shadow | Original Label | New USB label |
+|----------------|--------------------|-----------------------------|---------------------|----------------|---------------|
 |  $10           |  1                 | left handle horiz movement  | $270 (624)  | PADDL0 | RPADLHH     |
 |  $11           |  2                 | left handle vertic movement | $271 (625)  | PADDL1 | RPADLHV     |
 |  $12           |  3                 | right handle horiz movement  | $272 (626)  | PADDL2 | RPADRHH     |

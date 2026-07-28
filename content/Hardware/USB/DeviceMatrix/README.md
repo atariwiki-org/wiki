@@ -1,6 +1,7 @@
 # Atari USB Cart compatibility matrix
 
-|| USB Device                                  || Status || Driver / Device Info   || Games / Applications ||
+| USB Device                                  | Status | Driver / Device Info   | Games / Applications |
+|---------------------------------------------|--------|------------------------|----------------------|
 | **Joysticks** | | | |
 | Logitech USB Wingman Precision                | working  | [Digital Joypad Driver](../Digital_Joypad_Driver/README.md)  | Boulder Dash (Version 1) |
 | Logitech USB Attack 3 Joystick                | working  | [Atari USB analog Joystick Driver](../AtariAnalogJoystickDriver/README.md)  | -- |

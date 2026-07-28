@@ -4,20 +4,23 @@ Tested with a Logitech Mouse USB. Might work with other mice.
 
 ## Description
 
-|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||
+| USB Register   | Byte of HID Packet | Function                    | Atari Memory Shadow | Original Label | New USB label |
+|----------------|--------------------|-----------------------------|---------------------|----------------|---------------|
 |  $10           |  1                 | Buttons  | $06F2  | -- | MBUTTON     |
 |  $11           |  2                 | Vertical displacement (up/down) | $06F1  | -- | MVERT     |
 |  $12           |  3                 | Horizontal displacement (left/right)  | $06F0  | -- | MHORIZ     |
 |  $13           |  4                 | Wheel  | $06F3  | -- | MWHEEL     |
 
 - Byte 3: Buttons
-  || Bit  || Button  ||
+  | Bit  | Button  |
+  |------|---------|
   |  1   |   left     |
   |  2   |   right     |
   |  3   |   middle     |
 
 - Byte 4 - Wheel
-  || Value  || Button  ||
+  | Value  | Button  |
+  |--------|---------|
   |  $FF (255)   |   up     |
   |  $01 (001)   |   down     |
 

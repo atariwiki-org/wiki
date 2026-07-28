@@ -249,7 +249,8 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 
 ### Analog
 
-||Title||Issue||Language||Comment
+|Title|Issue|Language|Comment
+|-----|-----|--------|-------
 |[Action Review](../Review_Action/README.md)|#16 (02/ 84)|en|Review
 |[An Introduction to ACTION](../Articles/An_Introduction_to_ACTION/README.md) |#17 + #18 (03+ 04/ 84)|en|Tutorial
 |[Stars 3-D](../../../Stars_in_3D/README.md)|#20 (07/ 84)|en|Demo
@@ -269,7 +270,8 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 
 ### Antic
 
-||Title||Issue||Language||Comment
+|Title|Issue|Language|Comment
+|-----|-----|--------|-------
 |[Interrupts in ACTION!](../Examples/Interrupts_in_Action/README.md)|Vol. 3 #3 (07/ 84)|en|
 |[Demo: Pretty](../Articles/Demo_Pretty/README.md)|Vol. 3 #7 (11/ 84)|en|Demo from Antic I/O-Board
 |[Splash in ACTION](../Examples/SPLASH_in_ACTION/README.md)|Vol. 3 #12 (04/ 85)|en|Demo
@@ -286,7 +288,8 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 
 ### ATARI''magazin''
 
-||Title||Issue||Language||Comment
+|Title|Issue|Language|Comment
+|-----|-----|--------|-------
 |[Schnelle Vektoren in ACTION!](../Examples/Schnelle_Vektoren_in_Action/README.md)|#1 (1-2/ 87)|de|Tutorial: Action!-Center Teil 1
 |[Schnelle Umwege in ACTION!](../Examples/Schnelle_Umwege_in_Action/README.md)|#2 (3-4/ 87)|de|Tutorial: Action!-Center Teil 2
 |[Interne Variablen](../Internal_Variables/README.md)|#3 (5-6/ 87)|de|Tutorial: Action!-Center Teil 3
@@ -294,11 +297,13 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 
 ### Atari Magazine
 
-||Title||Issue||Language||Comment
+|Title|Issue|Language|Comment
+|-----|-----|--------|-------
 |[ACTION! Deel](../ACTION_Deel/README.md)| |nl|A collection of Action Articles
 
 ### CK Computer Kontakt
 
-||Title||Issue||Language||Comment
+|Title|Issue|Language|Comment
+|-----|-----|--------|-------
 |[Musik in ACTION!](../Examples/Musik_in_ACTION/README.md) |#10/85|ge| Tutorial
 |[ACTION noch schneller](../Articles/ACTION_noch_schneller/README.md) |#6-7/86|ge| Tutorial

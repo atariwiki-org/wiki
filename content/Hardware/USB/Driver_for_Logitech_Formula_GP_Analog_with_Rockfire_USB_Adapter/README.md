@@ -20,9 +20,10 @@ Features:
 
 ## Description
 
-|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||
+| USB Register   | Byte of HID Packet | Function        | Atari Memory Shadow  | Original Label | New USB Label |
+|----------------|--------------------|-----------------|----------------------|----------------|----------------
 |  $10           |  1                 | Wheel movement  | $270 (624)  | PADDL0 | LWHEEL     |
-|  $11           |  2                 | Buttons 1-6 | $271 (625)  | PADDL1 | LBUTTON     |
+|  $11           |  2                 | Buttons 1-6     | $271 (625)  | PADDL1 | LBUTTON     |
 
 - Byte 1: Wheel movement (\< $25 = left, $26-$2F = middle, \>$30 = right)
 - Byte 2: Buttons 1-6

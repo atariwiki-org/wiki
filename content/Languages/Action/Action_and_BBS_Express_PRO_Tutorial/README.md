@@ -59,7 +59,7 @@ Why is the PrintE() line indented? In Action!, indention and capitalization do n
 
 Lastly, is the word "RETURN".  This signifies the end of a procedure. When it occurs at the end of the "main" procedure, your program returns control back to the Action! cartridge.
 
-How do you run this program?  When it is typed into the editor exactly as shown, you press the CONTROL key, the SHIFT key and the M key at the same time (I will abbreviate this as <C><S>M).
+How do you run this program?  When it is typed into the editor exactly as shown, you press the CONTROL key, the SHIFT key and the M key at the same time (I will abbreviate this as `<C><S>M`).
 
 You will hear a buzz and the screen will go blank.  There will be a inverse line at the top of the screen. You are now in the MONITOR mode.  From here you must Compile your program.
 
@@ -84,7 +84,7 @@ In the last lesson, we went over how to compile and run a Action! program.
 We also learned that the last PROC in a program is the first one that
 is run.  Finally, we learned our first Action! library PROC - PrintE.
 
-Now we are going to cover varibles. In Action!, you must know what type
+Now we are going to cover variables. In Action!, you must know what type
 of values a variable will take on before you can use it.  This is so
 the compiler can set aside the right amount of space for that variable.
 
@@ -120,7 +120,8 @@ point package is the thing that really slows BASIC down.
 
 So we have this chart:
 
-|| name ||  size in bytes  ||  low val. ||   high val
+| name |  size in bytes  |  low value | high value
+|------|-----------|----------|---------
 | BYTE |     1     |    0     |      255
 | INT  |     2     |  -32768  |    32767
 | CARD |     2     |    0     |   65535
@@ -178,7 +179,8 @@ INT  i
 
 Just declaring some dummy variables.
 
-||Example     ||  Description
+|Example     | Description
+|------------|--------------
 |i=InputI()  |  input a INT
 |c=InputC()  |  input a CARD
 |b=InputB()  |  input a BYTE
@@ -218,13 +220,12 @@ or
 total_price = (price * tax) + price
 ```
 
-This brings us to our next subject,
-expressions.
+This brings us to our next subject, expressions.
 
-Action! supports the following
-operators.
+Action! supports the following operators.
 
-|| Operator || Description
+| Operator | Description
+|-------|-------------------
 |     - | as in negative numbers. Remember only INT can be negative.
 |     \* | multiply
 |     / | divide. This is integer division because Action! doesn't have real numbers. So when you take 5/2 it is equal to 2 NOT 2.5
@@ -241,7 +242,7 @@ good about now.  This sample program
 is a little too long for you to have
 to type in to your editor.  So I
 guess this is a good time to say that
-when this occures, the sample program
+when this occurs, the sample program
 will be called APROG.301
 
 This means it is a program with the
@@ -249,7 +250,7 @@ ATUTOR series.  It goes with lesson
 3 and it is the 01 (first) program.
 
 To load the program into your Action!
-editor, you press <control><shift><R>
+editor, you press `<C><S>R`
 at the same time.  The bottom line
 of the editor will print "Read?"
 
@@ -559,7 +560,7 @@ of Action! programs many times faster
 and easier.
 
 In this file, when I use something
-like this: <C><S>M
+like this: `<C><S>M`
 That means to press the Control, the
 Shift and the M keys at the same
 time.  And we all know that doing
@@ -577,10 +578,10 @@ commands.  They are very important.
 
 I guess we should dive right in with
 some editor commands.  You already
-know <C><S>R and <C><S>W for reading
+know `<C><S>R` and `<C><S>W` for reading
 and writing to and from the editor.
 
-Pressing <C><S>- and <C><S>= (these
+Pressing `<C><S>-` and `<C><S>=` (these
 are the arrow keys) will jump you
 around the editor 1 screen at a time.
 You can really get around the editor
@@ -588,7 +589,7 @@ fast using these.
 
 If you are looking for a certain
 word or words in you Action! program,
-the editor has the <C><S>F command.
+the editor has the `<C><S>F` command.
 Action! will ask you for the string
 to search for.  And zip you are there
 or a not found message appear.  This
@@ -598,7 +599,7 @@ the end of your file, no matter
 what you search for you won't find it
 because there is nothing below it.
 
-<C><S>S will also find a string of
+`<C><S>S` will also find a string of
 characters but it will also replace
 it with another string.  This will
 come in very handy when we start
@@ -620,25 +621,25 @@ The next occurrence it will find is the
 
 If you change a existing line but have
 not yet pressed the RETURN key,
-<C><S>U will restore it back as good
+`<C><S>U` will restore it back as good
 as new.
 
 To delete a line just press
 <SHIFT><DELETE>.  To delete a bunch of
 line just hold this key down.  Oh no!
 You just deleted the wrong line, well
-<C><S>P will put the entire block of
+`<C><S>P` will put the entire block of
 deleted lines back.
 
 This is also how you move and copy
 blocks of text.  Just delete them,
 and go to where you want to appear.
-Press <C><S>P and it is moved.
+Press `<C><S>P` and it is moved.
 
 If you just want a copy somewhere
-else, make sure you <C><S>P it in
+else, make sure you `<C><S>P` it in
 the same spot where you deleted
-it, the move and <C><S>P again.
+it, the move and `<C><S>P` again.
 
 To erase you file, <Shift><Clear>
 does the trick.

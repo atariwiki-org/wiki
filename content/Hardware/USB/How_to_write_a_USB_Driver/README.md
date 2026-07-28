@@ -76,15 +76,16 @@ DEVICE   .IN "D:device.SRC"
 
 ## Step 3: The Device Driver
 
-The Device dependet part will be included into the basic part. The Device dependent part has two main functions:
+The device-dependent part will be included into the basic part. The Device dependent part has two main functions:
 
-- print out device dependet messages
+- print out device-dependent messages
 - copy the USB HID Register values in Atari Shadow Register
 - simulate legacy Atari Controller (Joystick, Keyboard, Paddle)
 
 We only need to change the Device dependent part of the driver. First we must device where to store the shadow registers for the native USB Device functions. These Registers will be copied from the USB Controller Memory into the Atari Memory. The USB HID Registers start at the USB Controller Memory Location $10. I've choosen to store the USB Register Values into the Memory Locations for Paddles ($270-$277).
 
-|| USB Register || Byte of HID Packet || Function || Atari Memory Shadow || original Label || new USB label ||
+|| USB Register  | Byte of HID Packet | Function | Atari Memory Shadow | Original Label | New USB label |
+|----------------|--------------------|-----------------------------|-------------|--------|
 |  $10           |  1                 | left handle horiz movement  | $270 (624)  | PADDL0 | RPADLHH     |
 |  $11           |  2                 | left handle vertic movement | $271 (625)  | PADDL1 | RPADLHV     |
 |  $12           |  3                 | right handle horiz movement  | $272 (626)  | PADDL2 | RPADRHH     |
@@ -140,7 +141,7 @@ STA RPADMODE
 RTS
 ```
 
-Code to print the Device dependet messages. These Subroutines will be called by the Base driver upon initialization:
+Code to print the device-dependent messages. These Subroutines will be called by the Base driver upon initialization:
 
 ```
 PRINTDEVICE
