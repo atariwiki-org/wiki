@@ -1,6 +1,7 @@
 # Disk formats / Diskettenformate
 
-||Format||Sides||Tracks/Diskside||KBit||Recording||Bytes/Sector||Sector/Track||Disksize||ATR Size 1)
+|Format|Sides|Tracks/Disk Side|KBit|Recording|Bytes/Sector|Sector/Track|Disk Size|ATR Size 1)
+|------|-----|----------------|----|---------|------------|------------|---------|---------
 |Single SD|1|40|125|FM|128|18|90 KB|92.176 2)
 |Medium/Enhanced MD|1|40|250|MFM|128|26|130 KB|133.136 2)
 |Double DD|1|40|250|MFM|256|18|180 KB|183.952 3)
@@ -22,7 +23,8 @@
 
 ## Diskformats and DOS versions supporting them
 
-||DOS||90KB||130KB||180KB||360KB||720KB||1.440KB||Remark
+|DOS|90KB|130KB|180KB|360KB|720KB|1.440KB|Remark
+|---|----|-----|-----|-----|-----|-------|------
 |[Atari DOS 1](../Companies/Atari/Atari_DOS/Atari_DOS_1/README.md)|Y|N|N|N|N|N|
 |[Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)  SmartDOS|Y|N|Y|N|N|N|DOS 2.0s can read 180k after a Reset; DOS 2.0d can read 90k after a Reset!  DOS.SYS of SmartDOS is based on DOS 2.0! (Rainbow DOS and Black DOSare merely DUP.SYS replacements for DOS 2.0s or DOS 2.0d, there are many others...)
 |[Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)|Y|Y|N|N|N|N|
@@ -52,7 +54,8 @@
 
 ### 128 Byte sectors (single density)
 
-||Partition SizeSectors||512 K4.095||1 M8.191||2 M16.383||4 M32.767||8 M65.535||Remark
+|Partition<br>>SizeSectors|512 K<br>4.095|1 M<br>8.191|2 M<br>16.383|4 M<br>32.767|8 M<br>65.535|Remark
+|---|----|-----|-----|-----|-----|-------|------
 |Top DOS 1.5 Prof|Y|Y|Y|Y|Y|Top DOS Prof. should support subdirs and harddisks,but I have no clue how! (manuals and information missing!)
 |MyDOS 4.5x|Y|Y|Y|Y|Y|
 |SpartaDOS 3.2x/3.3x|Y|Y|Y|Y|Y|
@@ -65,7 +68,7 @@
 
 ### 256 Byte sectors (double density)
 
-||Partition SizeSectors||1 M4.095||2 M8.191||4 M16.383||8 M32.767||16 M65.535||Remark
+||Partition SizeSectors|1 M4.095|2 M8.191|4 M16.383|8 M32.767|16 M65.535|Remark
 |Top DOS 1.5 Prof|Y|Y|Y|Y|Y|Top DOS Prof. should support subdirs and harddisks,but I have no clue how! (manuals and information missing!)
 |MyDOS 4.5x|Y|Y|Y|Y|Y|
 |SpartaDOS 3.2x/3.3x|Y|Y|Y|Y|Y|
@@ -78,7 +81,7 @@
 
 ### 512 Byte sectors (quad density)
 
-||Partition SizeSectors||1 M2.047||2 M4.095||4 M8.191||8 M16.383||16 M32.767||32 M65.535||Remark
+||Partition SizeSectors|1 M2.047|2 M4.095|4 M8.191|8 M16.383|16 M32.767|32 M65.535|Remark
 |Top DOS 1.5 Prof|N|N|N|N|N|N|
 |MyDOS 4.5x|N|N|N|N|N|N|
 |SpartaDOS 3.2x/3.3x|N|N|N|N|N|N|
