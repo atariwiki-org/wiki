@@ -54,7 +54,7 @@
 
 ### 128 Byte sectors (single density)
 
-|Partition Size \/<br>Sectors|512&nbsp;K<br>4.095|1&nbsp;M<br>8.191|2&nbsp;M<br>16.383|4&nbsp;M<br>32.767|8&nbsp;M<br>65.535|Remark
+|Partition Size /<br>Sectors|512 K<br>4.095|1 M<br>8.191|2 M<br>16.383|4 M<br>32.767|8 M<br>65.535|Remark
 |---|----|-----|-----|-----|-----|------
 |Top DOS 1.5 Prof|Y|Y|Y|Y|Y|Top DOS Prof. should support subdirs and harddisks,but I have no clue how! (manuals and information missing!)
 |MyDOS 4.5x|Y|Y|Y|Y|Y|
@@ -68,7 +68,7 @@
 
 ### 256 Byte sectors (double density)
 
-|Partition Size \/<br>Sectors|1&nbsp;M<br>4.095|2&nbsp;M<br>8.191|4&nbsp;M<br>16.383|8&nbsp;M<br>32.767|16&nbsp;M<br>65.535|Remark
+|Partition Size /<br>Sectors|1 M<br>4.095|2 M<br>8.191|4 M<br>16.383|8 M<br>32.767|16 M<br>65.535|Remark
 |---|----|-----|-----|-----|-----|------
 |Top DOS 1.5 Prof|Y|Y|Y|Y|Y|Top DOS Prof. should support subdirs and harddisks,but I have no clue how! (manuals and information missing!)
 |MyDOS 4.5x|Y|Y|Y|Y|Y|
@@ -82,7 +82,7 @@
 
 ### 512 Byte sectors (quad density)
 
-|Partition Size \/<br>Sectors|2&nbsp;M<br>4.095|4&nbsp;M<br>8.191|8&nbsp;M<br>16.383|16&nbsp;M<br>32.767|32&nbsp;M<br>65.535|Remark
+|Partition Size /<br>Sectors|2 M<br>4.095|4 M<br>8.191|8 M<br>16.383|16 M<br>32.767|32 M<br>65.535|Remark
 |---|----|-----|-----|-----|-----|------
 |Top DOS 1.5 Prof|N|N|N|N|N|N|
 |MyDOS 4.5x|N|N|N|N|N|N|

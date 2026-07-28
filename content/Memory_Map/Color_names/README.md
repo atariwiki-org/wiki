@@ -2,7 +2,8 @@
 
 ## Chroma
 
-||Hue Value dec||Hue hex||Color from ... to ||Name
+|Hue Value dec|Hue hex|Color from ... to |Name
+|-------------|-------|------------------|----
 |0 |$0|black to white|Black
 |1 |$1|brown to gold|Rust
 |2 |$2|orange to yellow|Red-orange
@@ -22,7 +23,8 @@
 
 ## Luminance
 
-||Luminance Value||Description
+|Luminance Value|Description
+|---------------|-----------
 |0 $0| dark|%%( color: #000 ; background-color : #000 ) black %%
 |2 $2| |%%( color: #222 ; background-color : #222 ) black %%
 |4 $4| |%%( color: #444 ; background-color : #444 ) black %%
@@ -44,12 +46,14 @@ Color = $HL
 
 ### Binary
 
-||Bit||7||6||5||4||3||2||1||0
+|Bit|7|6|5|4|3|2|1|
+|---|-|-|-|-|-|-|-|
 |Color Value |H|H|H|H|L|L|L|L
 
 ## Color Table
 
-|| ||$00||$02||$04||$06||$08||$0A||$0C||$0E
+| |$00|$02|$04|$06|$08|$0A|$0C|$0E
+|-|---|---|---|---|---|---|---|---
 |$00| %%( color: #000 ; background-color : #000 ) black%% |%%( color: #222 ; background-color : #222 ) black%%  |%%( color: #444 ; background-color : #444 ) black%%  |%%( color: #666 ; background-color : #666 ) black%%  |%%( color: #888 ; background-color : #888 ) black%%  |%%( color: #AAA ; background-color : #AAA ) black%%  |%%( color: #CCC ; background-color : #CCC ) black%%  |%%( color: #EEE ; background-color : #EEE ) black%%
 |$10| %%( color: #444400 ; background-color : #444400 ) black%% |%%( color: #646410 ; background-color : #646410 ) black%%  |%%( color: #848424 ; background-color : #848424 ) black%%  |%%( color: #A0A034 ; background-color : #A0A034 ) black%%  |%%( color: #B8B840 ; background-color : #B8B840 ) black%%  |%%( color: #D0D050 ; background-color : #D0D050 ) black%%  |%%( color: #E8E85C ; background-color : #E8E85C ) black%%  |%%( color: #FCFC68 ; background-color : #FCFC68 ) black%%
 |$20| %%( color: #702800 ; background-color : #702800 ) black%% |%%( color: #844414 ; background-color : #844414 ) black%%  |%%( color: #985C28 ; background-color : #985C28 ) black%%  |%%( color: #AC783C ; background-color : #AC783C ) black%%  |%%( color: #BC8C4C ; background-color : #BC8C4C ) black%%  |%%( color: #CCA05C ; background-color : #CCA05C ) black%%  |%%( color: #DCB468 ; background-color : #DCB468 ) black%%  |%%( color: #E8CC7C ; background-color : #E8CC7C ) black%%
