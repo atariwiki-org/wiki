@@ -2,11 +2,11 @@
 
 This  document explains the specifics of your Indus GT based  CPM 2.2  system.   The  CPM system runs in the Indus GT  disk  drive,  which  contains a Z80 microprocessor,  and 64K of ram (thanks  to  the  ram charger).   The Indus drive in turn,  communicates  with  your Atari computer.   Most of the time,  the Atari computer acts  as a terminal,  but is also used to send data to the printer, and  also  to operate a second disk drive.   The basic nature of  this  environment  is that the Indus is the boss,  and the Atari is the  slave processor in a network based system.
 
-## Requirements:
+## Requirements
 
 Indus  GT  disk drive with 64K ramcharger  board,  configured  as drive 1;  an Atari home computer with at least 48K.  Optionally a second  double  density capable drive,  and an  Atari  compatable printer (or 850 interface connected to a printer).
 
-## Boot up:
+## Boot up
 
 Insert the terminal disk into the Indus drive and boot the  Atari (with Basic disabled if an XL or XE type computer).  You will see  a menu "A: TRM40", and "B: TRM80".  TRM40 is a 40 column terminal  program  suitable  for  TV's,  TRM80  is  an  80  column  usually  requiring some type of monitor.   Press the "A" key for TRM40  or  "B" for TRM80.
 

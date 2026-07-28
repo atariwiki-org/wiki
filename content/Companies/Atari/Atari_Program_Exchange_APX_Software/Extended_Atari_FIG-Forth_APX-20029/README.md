@@ -11,7 +11,7 @@ Earlier versions of this Forth were sold or otherwise distributed by the Author:
 - "NMV Forth" (or: "NWV Forth"); lost
 - "S*P*A*C*E Forth" ("s*p*a*c*e fig4th 1.1") ''(files to be amended)''
 
-## Official add-ons:
+## Official add-ons
 
 - fun-FORTH (APX-20146) - with manual ''(files to be amended / linked)''
 - FORTH Turtle Graphics Plus (APX-20157) - with manual ''(files to be amended / linked)''

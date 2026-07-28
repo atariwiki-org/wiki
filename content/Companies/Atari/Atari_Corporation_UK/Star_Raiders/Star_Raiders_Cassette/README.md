@@ -4,25 +4,25 @@ Atari Corp UK rereleased this cartridge game as a budget cassette in 1987. In co
 
 The manual is in English, French and Italian.
 
-## CAS-Image:
+## CAS-Image
 
 Release 1987: [Star\_Raiders\_87.cas](attachments/Star_Raiders_87.cas)
 
-## Manual:
+## Manual
 
 Release 1987: see cover picture
 
-## Screenshots:
+## Screenshots
 
 ![](attachments/Star_Raiders_87_Screenshot1.jpg)
 ![](attachments/Star_Raiders_87_Screenshot2.jpg)
 ![](attachments/Star_Raiders_87_Screenshot3.jpg)
 
-## Cover:
+## Cover
 
 ![](attachments/Star_Raiders_87_cover.jpg)
 Star Raiders Cover 1987 rerelease
 
-## Media pictures:
+## Media pictures
 
 ![](attachments/Star_Raiders_87_cassette.jpg)

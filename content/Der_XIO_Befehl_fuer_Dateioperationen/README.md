@@ -21,7 +21,7 @@ können Sie bereits vom BASIC aus viele Probleme im Zusammenhang mit Disketten-O
 
 Die Anwendung dieser Befehle ist sehr leicht. Wir werden Ihnen an Hand einiger Beispiele die Anwendung dieser Befehle erklären. Für alle nachfolgenden Beispiele kann eine IOCB-Nummer von 1 bis 7 verwendet werden.
 
-## DAS ÖFFNEN EINER DATEI:
+## DAS ÖFFNEN EINER DATEI
 
 Bevor wir mit den I/O Befehlen arbeiten können, müssen wir dem Betriebssystem mitteilen, was wir vor haben. Das machen wir über den OPEN Befehl. Die Syntax ist recht einfach:
 
@@ -101,7 +101,7 @@ Namen "ADRESS.BAS".
 
 Mit dem XIO Befehl sind wir in der Lage, DOS Befehle direkt auszuführen. Wir haben mit Hilfe des XIO Befehles direkten Zugriff auf bestimmte DOS Routinen. Da wir in diesem Artikel alle drei DOS Arten besprechen wollen, werden wir die Spezialfunktionen des BIBO-DOS besonders hervorheben. Wie Sie gleich sehen werden, ist die Anwendung des XIO Befehles sehr leicht. Sie müssen nur die einzelnen Befehle und ihre genaue Funktion kennen. Dann können Sie vom BASIC aus Dateien umbennen, löschen, zurückholen usw. Wichtig ist, daß der Datenkanal, mit dem Sie mit dem XIO Befehl arbeiten wollen, vor Aufruf des XIO Befehles geschlossen sein muß. Sie können das an unseren Beispielprogrammen deutlich sehen. Aber beginnen wir mit dem Befehl 32, DATEI UMBENNEN:
 
-### DATEI UMBENNENEN (RENAME):
+### DATEI UMBENNENEN (RENAME)
 
 Die Anwendung ist dieselbe wie beim DOS. Sie rufen die RENAME Funktion mit dem XIO Befehl 32 auf. Danach kommt die
 Datenkanalnummer, mit der Sie arbeiten wollen, gefolgt von zwei in dieser Funktion unwichtigen Bytes. Anschließend der alte Dateiname, gefolgt von dem neuen. Getrennt werden die beiden Namen durch ein Komma. Der neue Name darf auf keinen Fall auf der Diskette schon einmal vorhanden sein!
@@ -113,7 +113,7 @@ XIO 32,#IOCB,0,0,"Dn:ALT.EXT,NEU.EXT"
 Nach Ausführung der Funktion wird der Datenkanal automatisch vom DOS wieder geschlossen. Sie brauchen sich darum
 also nicht zu kümmern!
 
-### DATEI LÖSCHEN (ERASE):
+### DATEI LÖSCHEN (ERASE)
 
 Auch hier ist die Anwendung wieder dieselbe wie beim DOS. Sie rufen die ERASE Funktion mit dem XIO Befehl 33, gefolgt von der Datenkanalnummer, und den zwei in dieser Funktion unwichtigen Bytes. Anschließend der Name der Datei, die gelöscht werden soll.
 
@@ -123,7 +123,7 @@ XIO 33,#IOCB,0,0,"Dn:NAME.EXT"
 
 Auch nach Ausführung dieser Funktion wird der Datenkanal automatisch vom DOS wieder geschlossen.
 
-### DATEI ZURÜCKHOLEN (UNERASE):
+### DATEI ZURÜCKHOLEN (UNERASE)
 
 Das BIBO-DOS bietet Ihnen die Möglichkeit, eine aus Versehen gelöschte Datei wieder "zurückzuholen". Ein zurückholen
 einer Datei ist aber nur möglich, wenn der Directory-Eintrag noch vorhanden ist und die Daten der Datei noch nicht
@@ -135,7 +135,7 @@ XIO 34,#IOCB,0,0,"Dn:NAME.EXT"
 
 Wichtig ist, daß der angegebene Name mit dem der gelöschten Datei übereinstimmt!
 
-### DATEI SICHERN (PROTECT):
+### DATEI SICHERN (PROTECT)
 
 Mit dem XIO Befehl 35 können Sie eine Datei, oder mehrere Dateien, gegen ein unbeabsichtigtes löschen schützen.
 Beispiel:
@@ -146,7 +146,7 @@ XIO 35,#IOCB,0,0,"Dn:NAME.EXT"
 
 Auch nach Ausführung dieser Funktion wird der Datenkanal automatisch vom DOS wieder geschlossen.
 
-### DATEI FREIGEBEN (UNPROTECT):
+### DATEI FREIGEBEN (UNPROTECT)
 
 Das genaue Gegenteil des Befehles 35 stellt der XIO Befehl 36 dar. Mit diesem Befehl geben Sie eine Datei, oder
 mehrere Dateien, frei. Dadurch können diese Dateien gelöscht oder überschrieben werden. Beispiel:
@@ -157,7 +157,7 @@ XIO 36,#IOCB,0,0,"Dn:NAME.EXT"
 
 Auch hier wird nach Ausführung der Funktion der Datenkanal automatisch vom DOS wieder geschlossen.
 
-### DISKETTE FORMATIEREN (FORMAT):
+### DISKETTE FORMATIEREN (FORMAT)
 
 Als letzter der XIO Befehle haben wir einen etwas komplizierteren Befehl. Es ist auch der einzige, bei dem AUX2 eine
 Rolle spielt. Es ist der FORMAT Befehl 254. Sehen wir uns zuerst die Syntax an:
@@ -183,7 +183,7 @@ Sie es vom Inhaltsverzeichnis der Magazin Diskette aus starten, arbeiten einige 
 
 Als letztes kommen wir nun zu zwei BASIC Befehlen, mit denen Sie in der Lage sind, Daten direkt auf die Diskette zu schreiben, oder direkt von der Diskette zu lesen. Sie können mit diesen Befehlen die Position von einzelnen Daten auf der Diskette bestimmen, bzw. ermitteln.
 
-### FILEPOSITION SETZEN (POINT):
+### FILEPOSITION SETZEN (POINT)
 
 ```
 XIO 37,#IOCB,0,0,"Dn:"
@@ -202,7 +202,7 @@ POKE 845+IOCB*16,Sector (High-Byte)
 POKE 844+IOCB*16,Sector (Low-Byte) 
 ```
 
-### FILEPOSITION ERMITTELN (NOTE):
+### FILEPOSITION ERMITTELN (NOTE)
 
 ```
 XIO 38,#IOCB,0,0,"Dn:"

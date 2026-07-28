@@ -7,21 +7,21 @@ Here are some visions for further developments:
  - [A program like: NUKEMAP from Alex Wellerstein](http://nuclearsecrecy.com/nukemap/)
  - [A similar program like the above for zero-point bombs using the Casimir effect](http://en.wikipedia.org/wiki/Casimir_effect)
 
-## Manual:
+## Manual
 
 - [Atari\_CX4123-Scram-A\_Nuclear\_Power\_Plant\_Simulation-Manual.pd](../../../../media/Companies/Atari/Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/attachments/Atari_CX4123-Scram-A_Nuclear_Power_Plant_Simulation-Manual.pdf)
 
-## ATR-Images:
+## ATR-Images
 
 - [Scram\_24K-Version\_english\_Basic.atr](attachments/Scram_24K-Version_english_Basic.atr) CX4123
 - [Scram\_24K-Version\_deutsch\_Basic.atr](attachments/Scram_24K-Version_deutsch_Basic.atr) TXG4123
 
-## CAS-Images:
+## CAS-Images
 
 - [SCRAM\_16K.cas](attachments/SCRAM_16K.cas)
 - [SCRAM\_24K.cas](attachments/SCRAM_24K.cas)
 
-## Images:
+## Images
 
 ![](attachments/scram_k7.jpg)
 Box cover of SCRAM

@@ -12,7 +12,7 @@ Atari Basic or even TurboBasic is way too slow to process the low level data sen
 
 The ML routine below will read the information from the Atari ST mouse, will paint a mouse cursor until one of the mouse buttons are pressed (with an unmodified Atari ST mouse you can only read one mouse button from an A8, but it is possible to modify an Atari ST mouse in a way that the A8 can read both mouse buttons and the mouse is still usable on an Atari ST).
 
-### Usage:
+### Usage
 
 you load the ML routine MOUSE.COM (from DOS as "AUTORUN.SYS" or from TurboBasic with BLOAD "D:MOUSE.COM")
 

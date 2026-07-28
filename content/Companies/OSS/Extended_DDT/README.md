@@ -1,10 +1,10 @@
 # Extended DDT (1985)
 
-## ATR-Images:
+## ATR-Images
 
 - [Extended\_DDT\_A.atr](attachments/Extended_DDT_A.atr)
 - [Extended\_DDT\_B.atr](attachments/Extended_DDT_B.atr)
 
-## Manual:
+## Manual
 
 - [Extended DDT User's Guide-Jim Dunion](attachments/Extended_DDT_Users_Guide-Jim_Dunion.txt) ; Extended DDT User's Guide-Manual from 1985

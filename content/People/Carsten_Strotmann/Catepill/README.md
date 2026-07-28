@@ -13,7 +13,7 @@ unfinished Game with Level Editor
 
 written in ACTION!
 
-## Game Idea:
+## Game Idea
 
 Catapill is Sokoban on steroids: you drive the small catepill around in a huge warehouse and must complete missions
 

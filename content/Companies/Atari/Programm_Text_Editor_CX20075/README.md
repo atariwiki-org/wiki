@@ -22,7 +22,7 @@ Atari Program-Text Editor 1.0 - Startbildschirm
 ![](attachments/APX.jpg)
 Atari Program-Text Editor 1.0 - Disketten-Info
 
-## Source Code des EDITOR CUSTOMIZING MANAGER in BASIC als txt-Datei mit der Anleitung in deutsch, was angepasst werden kann:
+## Source Code des EDITOR CUSTOMIZING MANAGER in BASIC als txt-Datei mit der Anleitung in deutsch, was angepasst werden kann
 
 - [EDITOR\_CUSTOMIZING\_MANAGER.txt](attachments/EDITOR_CUSTOMIZING_MANAGER.txt)
 

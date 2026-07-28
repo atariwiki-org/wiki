@@ -13,7 +13,7 @@ The HDI has been developed in 1991 by Erhard Pütz (FloppyDoc).
 
 [HDI-CAS.jpg](attachments/HDI-CAS.jpg)
 
-## Manual:
+## Manual
 
 HDI Manual: [HDI\_Manual.pdf](attachments/HDI_Manual.pdf)
 

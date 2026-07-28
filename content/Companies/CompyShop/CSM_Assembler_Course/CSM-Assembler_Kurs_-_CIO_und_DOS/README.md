@@ -133,9 +133,9 @@ So, dies sollte mal wieder reichen. Ich hoffe Sie sind mit dem Artikel klargekom
 
 ---
 
-## Anhang:
+## Anhang
 
-### Beispiel:
+### Beispiel
 
 ```
 00010          .LI OFF

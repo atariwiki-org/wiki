@@ -1,6 +1,6 @@
 # Programs that require a memory expansions
 
-## "Games" that support more than 64k RAM:
+## "Games" that support more than 64k RAM
 
 - Adalmar - Falk Buettner, 64k Ramdisk, block E [^1]() (german language!)
 - A.R. - The Dungeon - Philipp Price/Datasoft, 64k, block E
@@ -13,7 +13,7 @@
 - Problem Jasia - Mirage, 64k , block E
 - \[The Amazing\] Spiderman - Questprobe, 64k , block E
 
-## "Games" that require more than 64k RAM:
+## "Games" that require more than 64k RAM
 
 - Absolute Zero (solitaire) - J.R. Chicko, 64k , block E
 - Airball - ??? / Atari, 256k, 26AE \& 8ACE, [^2]()

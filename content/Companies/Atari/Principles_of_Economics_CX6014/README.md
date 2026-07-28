@@ -1,11 +1,11 @@
 # Principles of Economics (CX6014)
 
-## Content:
+## Content
 
 ![](attachments/Principles_of_Economics-CX6014.jpg)
 Content of Principles of Economics CX6014
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 - [http://data.atariwiki.org/FLAC/PE/Principles\_of\_Economics\_CX6014-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/PE/Principles_of_Economics_CX6014-Cassette_A-Side_1.flac) ; size: 174.7 MB
 
@@ -23,7 +23,7 @@ Content of Principles of Economics CX6014
 
 - [http://data.atariwiki.org/FLAC/PE/Principles\_of\_Economics\_CX6014-Cassette\_D-Side\_2.flac](http://data.atariwiki.org/FLAC/PE/Principles_of_Economics_CX6014-Cassette_D-Side_2.flac) ; size: 180.6 MB
 
-## Images:
+## Images
 
 ![](attachments/PE01.jpg)
 Principles of Economics CX6014 - figure 1

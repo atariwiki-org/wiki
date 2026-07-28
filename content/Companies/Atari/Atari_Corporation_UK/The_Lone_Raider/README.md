@@ -4,35 +4,35 @@ The Lone Raider is a game that was released by Atari Inc. Software Products Divi
 
 Both releases use the dual audio format on side 1 of the cassette.
 
-## CAS-Images:
+## CAS-Images
 
 Release 1983: [The\_Lone\_Raider\_83.cas](attachments/The_Lone_Raider_83.cas)
 Release 1985: [The\_Lone\_Raider\_85.cas](attachments/The_Lone_Raider_85.cas)
 
-## FLAC files:
+## FLAC files
 
 Release 1983: [http://data.atariwiki.org/FLAC/The\_Lone\_Raider\_83.flac](http://data.atariwiki.org/FLAC/The_Lone_Raider_83.flac)
 Release 1985: [http://data.atariwiki.org/FLAC/The\_Lone\_Raider\_85.flac](http://data.atariwiki.org/FLAC/The_Lone_Raider_85.flac)
 
-## Manual:
+## Manual
 
 Release 1983: [The\_Lone\_Raider\_Manual\_83.pdf](attachments/The_Lone_Raider_Manual_83.pdf)
 Release 1985: see cover picture
 
-## Screenshots:
+## Screenshots
 
 ![](attachments/The_Lone_Raider_Screenshot1.jpg)
 ![](attachments/The_Lone_Raider_Screenshot2.jpg)
 ![](attachments/The_Lone_Raider_Screenshot3.jpg)
 
-## Cover:
+## Cover
 
 ![](attachments/The_Lone_Raider_cover.jpg)
 The Lone Raider Cover 1983 release
 ![](attachments/The_Lone_Raider_Atarisoft_cover.jpg)
 The Lone Raider Cover 1985 rerelease
 
-## Media pictures:
+## Media pictures
 
 ![](attachments/The_Lone_Raider_cassette.jpg)
 Cassette of the 1983 release

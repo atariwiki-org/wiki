@@ -9,7 +9,7 @@ Besides the KryoFlux stuff, please see the link above, you need this incredible 
 - [a8rawconv-0.9-mac.zip](attachments/a8rawconv-0.9-mac.zip) ; thank you Farb from AtariAge for compiling the software for the Mac. Now, the Mac users are in game, too. :-)
   To convert existing raw files to an atx image, you have to do the following on a:
 
-## - PC:
+## - PC
 
 Similar to the receipt for the Mac, but instead please use the following in the command shell:
 
@@ -19,7 +19,7 @@ Where 'D:Atari...' is the path to the folder of the raw files and the program a8
 
 Thank you so much FloppyDoc for your help in this! We really appreciate your contribution very much.
 
-## - Mac:
+## - Mac
 
 Go to the Terminal app, copy all raw files in one folder of your choice. Copy a8rawconv in that folder. Type "cd" a blank in Terminal and drag \& drop the folder into the Terminal app. Press return. Afterwards type in:
 
@@ -33,6 +33,6 @@ and press return again. If everything was done well, you should receive a proper
 
 Would be cool, if someone can write the PC instructions here. Thank you in advance. :-)
 
-## Manual:
+## Manual
 
 - [manual.rtf](attachments/manual.rtf) ; Copyright (C) 2014-2015 Avery Lee, All Rights Reserved

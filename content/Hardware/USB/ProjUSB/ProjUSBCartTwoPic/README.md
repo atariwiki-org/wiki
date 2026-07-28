@@ -20,7 +20,7 @@ Design by Harry Reminder and Thomas Grasel
 - USB\_Cart\_11.png:
   ![](attachments/USB_Cart_11.png)
 
-## The blueprint version 1.1 need two changes:
+## The blueprint version 1.1 need two changes
 
 - the USB Controller Reset-Pin must be connected to a reset-circuit
 - the mode-pins of the USB-Controller must be connected to ground

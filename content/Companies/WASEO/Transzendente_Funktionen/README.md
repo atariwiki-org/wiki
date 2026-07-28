@@ -12,7 +12,7 @@ Eingestehen muss ich aber auch, dass ich im Studium der Luft- und Raumfahrttechn
 
 Der ABBUC hat wieder einmal keine Mühen gescheut und bietet seinen Mitgliedern etwas ganz besonderes anlässlich der eintausensten PD-Diskette an: die kompletten transzendenten Funktionen, lauffähig in Atari BASIC programmiert. Neben den bereits bekannten: SIN, COS und ATN kommen jetzt noch 21 weitere Funktionen hinzu; hier die gesamte Übersicht in die jeweiligen Kategorien eingeordnet:
 
-### Trigonometrische Funktionen:
+### Trigonometrische Funktionen
 
 Sinus: SIN(X)
 Kosinus: COS(X)
@@ -21,7 +21,7 @@ Kosekans: CSC(X) = 1 / SIN(X)
 Sekans: SEC(X) = 1 / COS(X)
 Kotangens: COT(X) = 1 / TAN(X) = COS(X) / SIN(X)
 
-### Arkusfunktionen:
+### Arkusfunktionen
 
 Arkussinus: ARCSIN(X)
 Arkuskosinus: ARCCOS(X)
@@ -30,7 +30,7 @@ Arkuskosekans: ARCCSC(X) = ARCSIN(1 / X)
 Arkussekans: ARCSEC(X) = ARCCOS(1 / X)
 Arkuskotangens: ARCCOT(X) = ARCTAN(1 / X)
 
-### Hyperbelfunktionen:
+### Hyperbelfunktionen
 
 Hyperbolischer Sinus: SINH(X)
 Hyperbolischer Kosinus: COSH(X)
@@ -39,7 +39,7 @@ Hyperbolischer Kosekans: CSCH(X) = 1 / SINHYP(X)
 Hyperbolischer Sekans: SECH(X) = 1 / COSHYP(X)
 Hyperbolischer Kotangens: COTH(X) = 1 / TANHYP(X)
 
-### Areafunktionen:
+### Areafunktionen
 
 Areasinus Hyperbolicus: ARCSINH(X)
 Areakosinus Hyperbolicus: ARCCOSH(X)

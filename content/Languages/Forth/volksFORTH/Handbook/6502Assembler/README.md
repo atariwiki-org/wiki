@@ -99,7 +99,7 @@ Increments a 16-bit pointer by 1 wdec decremented analogously.
 
 Increments a 16-bit pointer by 2 2dec decremented analogously.
 
-### C:
+### C
 
 Turns off the assembler and Forth compiler makes it possible to machine code in Forth-versa. A counterpart is not present.
 

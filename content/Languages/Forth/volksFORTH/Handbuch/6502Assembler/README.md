@@ -99,7 +99,7 @@ Inkrementiert einen 16-Bit-Zeiger um 1. wdec dekrementiert analog.
 
 Inkrementiert einen 16-Bit-Zeiger um 2. 2dec dekrementiert analog.
 
-### ;c:
+### ;c
 
 Schaltet den Assembler ab und den Forth-Compiler an Damit ist es möglich, von Maschinencode in Forth überzuwechseln. Ein Gegenstuck ist nicht vorhanden.
 

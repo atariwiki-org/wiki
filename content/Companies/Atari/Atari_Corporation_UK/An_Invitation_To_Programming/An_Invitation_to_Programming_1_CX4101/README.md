@@ -1,6 +1,6 @@
 # An Invitation to Programming 1 - Fundamentals of Basic Programming (CX4101)
 
-## ATR-Images:
+## ATR-Images
 
 [An\_Invitation\_to\_Programming\_Side\_1\_Lessons\_1-3.atr](attachments/An_Invitation_to_Programming_Side_1_Lessons_1-3.atr) Lessons 1-3 disk
 
@@ -8,29 +8,29 @@
 
 [Programmieren\_leicht\_gemacht\_TXG4110\_Basic.atr](attachments/Programmieren_leicht_gemacht_TXG4110_Basic.atr) Programmieren leicht gemacht-Lernen Sie BASIC mit Dagmar Berghoff-TXG4110
 
-## Manuals:
+## Manuals
 
 [An\_Invitation\_to\_Programming\_1-Screen\_Version.pdf](attachments/An_Invitation_to_Programming_1-Screen_Version.pdf) (897 KB) (C) 1979 Atari
 
 [An\_Invitation\_to\_Programming\_CX4101.pdf](attachments/An_Invitation_to_Programming_CX4101.pdf) (573 KB) (C) 1985 Atari
 
-## FLAC-Images:
+## FLAC-Images
 
 - [http://data.atariwiki.org/FLAC/IP1/An\_Invitation\_to\_Programming-CX4101-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/IP1/An_Invitation_to_Programming-CX4101-Cassette_A-Side_1.flac) ; size: 176.0 MB
 
 - [http://data.atariwiki.org/FLAC/IP1/An\_Invitation\_to\_Programming-CX4101-Cassette\_A-Side\_2.flac](http://data.atariwiki.org/FLAC/IP1/An_Invitation_to_Programming-CX4101-Cassette_A-Side_2.flac) ; size: 142.1 MB
 
-## Box-Pictures:
+## Box-Pictures
 
 ![](attachments/An_Invitation_to_Programming_1-1.jpg) (C) 1981 Atari
 
 ![](attachments/An_Invitation_to_Programming_1-2.jpg) (C) 1981 Atari
 
-## Autor:
+## Autor
 
 Derzeit leider noch unbekannt. :-(
 
-## Danksagung:
+## Danksagung
 
 Ohne die folgenden Personen wäre dieses Projekt nicht möglich gewesen, ihnen gilt daher der Dank:
 

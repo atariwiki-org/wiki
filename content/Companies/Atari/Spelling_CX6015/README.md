@@ -1,11 +1,11 @@
 # Spelling CX6015
 
-## Content:
+## Content
 
 ![](attachments/Spelling-CX6015.jpg)
 Content of Spelling CX6015
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 - [http://data.atariwiki.org/FLAC/S/Spelling\_CX6015-Cassette\_A\_Side\_1.flac](http://data.atariwiki.org/FLAC/S/Spelling_CX6015-Cassette_A_Side_1.flac) ; size: 104.3 MB
 

@@ -163,7 +163,7 @@
 - [Assembler für Fortgeschrittene: Displaylist](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist/README.md) - Displaylist
 - [Der Display-List-Interrupt](../Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_Displaylist-Interrupts/README.md) - Displaylist-Interrupts
 
-## DEC-HEX bis 255:
+## DEC-HEX bis 255
 
 ![](attachments/DEC-HEX_255.jpg)
 DEC-HEX bis 255

@@ -5,7 +5,7 @@ Copyright (C) 1981 Atari, Inc.
 Also as part in 'The Home Manager Kit' or 'The Home Manager' CX418 version 1
 Please check [atari8bitads.blogspot.de](http://atari8bitads.blogspot.de/2017/03/a-welcome-addition.html) from Bill Lange, which solves the mystery around the box. Great work Bill! Please go ahead, we really appreciate your help. :-)))
 
-## ATR-Images:
+## ATR-Images
 
 - [System Diskette I (Model CX8113)](attachments/Personal_Finance_Management_System_CX8113.atr)
 - [System Diskette II (Model CX8114)](attachments/Personal_Finance_Management_System_CX8114.atr)
@@ -29,7 +29,7 @@ Have already started to bring both images on just one DD image:
 
 up to now, PFMS is not running with c). Who can help us?
 
-## Manuals:
+## Manuals
 
 - [Atari Personal Finance Management System-Instruction Manual](../../../../media/Companies/Atari/Atari_Personal_Financial_Management_System/attachments/Atari_Personal_Finance_Management_System-Instruction_Manual.pdf) ; size: 14.6 MB, 92 pages (\*)
 - [Atari Personal Finance Management System-Quick Reference Card](attachments/Atari_Personal_Finance_Management_System-Quick_Reference_Card.pdf) ; size: 1.4 MB
@@ -39,7 +39,7 @@ up to now, PFMS is not running with c). Who can help us?
 
 Atari Personal Finance Management System - Instruction Manual Cover
 
-## Atari Personal Finance Management System CX406 box images:
+## Atari Personal Finance Management System CX406 box images
 
 ![](attachments/Front.jpg)
 CX406 binder front 1  ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com
@@ -74,7 +74,7 @@ P.F.M.S. System Diskette I (Model CX8113)
 ![](attachments/CX8114.jpg)
 P.F.M.S. System Diskette II (Model CX8114)
 
-## Atari Personal Finance Management System CX406 menu images:
+## Atari Personal Finance Management System CX406 menu images
 
 ![](attachments/1-Start.jpg)
 P.F.M.S. Startscreen
@@ -124,7 +124,7 @@ P.F.M.S. Forecaster Method Menu
 ![](attachments/14-End_of_Personal_Financial_Management_System.jpg)
 P.F.M.S. End of Personal Financial Management System
 
-## Atari Personal Finance Management System CX406 advertising images:
+## Atari Personal Finance Management System CX406 advertising images
 
 From Atari FAQ 1980: January:
 ...Personal Finance (never shipped as introduced; possibly eventually shipped as: Personal Financial Management System). Also, list prices for the 400 and 800 packages increased to US$630 and US$1,080 (up from US$550 and US$1,000)

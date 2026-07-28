@@ -32,7 +32,7 @@ The Home Filing Manager is a database program Atari provided in 1982
 
 - [Inverseatascii analysis on the The Home Filing Manager](https://inverseatascii.info/2015/11/10/s2e04-atari-home-filing-manager/) ; highly recommended! Thank you Wade Ripkowski! As always, a great job!
 
-## Images:
+## Images
 
 ![](attachments/Atari_Home_Filing_Manager_V1_d7.jpg)
 The Home Filing Manager CX8129, front of the box; thanks to Atarimania for providing!

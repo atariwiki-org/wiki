@@ -3,7 +3,7 @@
 The Atari Calculator is an advanced non-programmable as well as programmable calculator that supports RPN, ALG and ALGN calculation modes. Calculator goes far beyond the limits of Atari Basic’s mathematical capabilities, precision and has no bugs.
 Calculator has 100 memory registers, additionally a 42 number stack and is fully programmable up to 3072 bytes. Programs and memory registers can each be stored separately on disk or tape. It was the 'Mathematica', 'Maple', Mathcad' etc. of its time.
 
-## FEATURES OF THE ATARI CALCULATOR:
+## FEATURES OF THE ATARI CALCULATOR
 
 - Built in 145 functions often used in science and finance
 - The ability of hardcopy output using any of the ATARI printers

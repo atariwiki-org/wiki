@@ -15,7 +15,7 @@
 
 ```
 
-## 1.  PURPOSE:
+## 1.  PURPOSE
 
 Uudecode is the decoder for uuencode, a program widely used on unix systems to
 encode binary files into printing ASCII characters for transmission over
@@ -28,7 +28,7 @@ characters.  Therefore, using uuencode, a file is expanded by a factor of only
 1\.333 to one as the price of constraining the character set to be limited to
 printing characters only.
 
-## 2.  USING UUDECODE VER. 1.2a:
+## 2.  USING UUDECODE VER. 1.2a
 
 UUDECODE VER. 1.2a is normally sent by e-mail as an Atari BASIC ".LST" file.
 This means that it consists of only printing characters itself, and can be
@@ -71,7 +71,7 @@ count as established when the file was being uuencoded.
 That's about all there is to it.  Comments on this manual, as well as on any
 difficulties experienced with UUDECODE, should be directed to the author.
 
-## 3.  WHAT UUENCODE AND UUDECODE REALLY DO TO THE DATA:
+## 3.  WHAT UUENCODE AND UUDECODE REALLY DO TO THE DATA
 
 The uuencoding process, used to create ASCII files of the type that UUDECODE
 is designed to decode, is easy to describe.  Each group of three input bytes,
@@ -114,7 +114,7 @@ fewer bytes, pack each group of 6 bits in the low-order portion of each byte
 back into 8-bit packed binary form, and write the re-packed bytes out to a
 binary output file.
 
-## 4.  PITFALLS:
+## 4.  PITFALLS
 
 Unfortunately, as uuencode has been adopted wholesale for use in transmitting
 binary files across networks, it has turned out that not all network hosts are
@@ -131,7 +131,7 @@ for the uudecode program to capture the values received in their place and
 decode accordingly.  If they have not been mapped one-to-one, of course it can
 only throw up its hands in dismay and so inform you.
 
-## 5.  CAPABILITIES OF UUDECODE VER. 1.2a:
+## 5.  CAPABILITIES OF UUDECODE VER. 1.2a
 
 UUDECODE Ver. 1.2a as described by this manual includes masking to correct the
 most common character translation problems, i.e. those which result in encoded

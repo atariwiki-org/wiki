@@ -1,6 +1,6 @@
 # An Invitation to Programming 2 - Writing Programs one and two (CX4106)
 
-## ATR-Images:
+## ATR-Images
 
 - [An\_Invitation\_to\_Programming\_2\_Cass\_A\_Side\_1.atr](attachments/An_Invitation_to_Programming_2_Cass_A_Side_1.atr) ; size: 92,2 kB
 
@@ -10,11 +10,11 @@
 
 - [An\_Invitation\_to\_Programming\_2\_Cass\_B\_Side\_2.atr](attachments/An_Invitation_to_Programming_2_Cass_B_Side_2.atr) ; size: 92,2 kB
 
-## Manual:
+## Manual
 
 - [An\_Invitation\_to\_Programming\_2-Screen\_Version.pdf](../../../../../../media/Companies/Atari/An_Invitation_to_Programming_2_CX4106/attachments/An_Invitation_to_Programming_2-Screen_Version.pdf) ; size: 5.4 MB
 
-## FLAC-Images:
+## FLAC-Images
 
 - [http://data.atariwiki.org/FLAC/IP2/An\_Invitation\_to\_Programming-CX4106-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/IP2/An_Invitation_to_Programming-CX4106-Cassette_A-Side_1.flac) ; size: 186.5 MB
 
@@ -24,15 +24,15 @@
 
 - [http://data.atariwiki.org/FLAC/IP2/An\_Invitation\_to\_Programming-CX4106-Cassette\_B-Side\_2.flac](http://data.atariwiki.org/FLAC/IP2/An_Invitation_to_Programming-CX4106-Cassette_B-Side_2.flac) ; size: 146.4 MB
 
-## Box-Pictures:
+## Box-Pictures
 
 ![](attachments/An_Invitation_to_Programming_2.jpg) (C) 1981 Atari
 
-## Autor:
+## Autor
 
 Derzeit leider noch unbekannt. :-(
 
-## Danksagung:
+## Danksagung
 
 Ohne die folgenden Personen wäre dieses Projekt nicht möglich gewesen, ihnen gilt daher der Dank:
 

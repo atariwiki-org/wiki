@@ -38,7 +38,7 @@ Port: 8005 (ASCII Protocol)
 - \[The TUTOR Language by Bruce Arne Sherwood (1978)\](https://data.atariwiki.org/DOC/The TUTOR Language 1978 ocr.pdf) ; size: 14.7 MB ; 288 pages with OCR
 - [The Plato IV Architecture by Jack Stifle (1972)](attachments/The_Plato_IV_Architecture_by_Jack_Stifle_1972.pdf) ; size: 2.6 MB ; 24 pages
 
-## PLATO-Servers:
+## PLATO-Servers
 
 - [https://cyber1.org/index.asp](https://cyber1.org/index.asp)
 - [https://www.irata.online/](https://www.irata.online/)

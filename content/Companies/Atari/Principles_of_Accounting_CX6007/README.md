@@ -1,11 +1,11 @@
 # Principles of Accounting - CX6007
 
-## Content:
+## Content
 
 ![](attachments/Principles_of_Accounting-CX6007.jpg)
 Content of Principles of Accounting CX6007
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 - [http://data.atariwiki.org/FLAC/PA/Principles\_of\_Accounting\_CX6007-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/PA/Principles_of_Accounting_CX6007-Cassette_A-Side_1.flac) ; size: 76.4 MB
 

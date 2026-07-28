@@ -12,7 +12,7 @@ In spite of these limitations, MS BASIC had a number of advantages over Atari BA
 
 The disk-based version was later replaced by [Microsoft BASIC II (DX5046)](../Microsoft_BASIC_II/README.md), which used a ROM cartridge for the key parts of the language, and put extensions on a separate floppy disk.
 
-## Pictures:
+## Pictures
 
 ![](attachments/Atari_Microsoft_BASIC_I.jpg)
 Atari Microsoft BASIC box

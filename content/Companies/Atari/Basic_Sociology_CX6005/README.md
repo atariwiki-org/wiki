@@ -15,7 +15,7 @@ Basic Sociology CX6005 - box content - thanks to Bill Lange for taking the pictu
 ![](attachments/Basic_Sociology_CX6005.jpg)
 Content of Basic Sociology CX6005
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 - [http://data.atariwiki.org/FLAC/BS/Basic\_Sociology\_CX6005-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_A-Side_1.flac) ; size: 142.3 MB
 
@@ -33,7 +33,7 @@ Content of Basic Sociology CX6005
 
 - [http://data.atariwiki.org/FLAC/BS/Basic\_Sociology\_CX6005-Cassette\_D-Side\_2.flac](http://data.atariwiki.org/FLAC/BS/Basic_Sociology_CX6005-Cassette_D-Side_2.flac) ; size: 162.3 MB
 
-## Images:
+## Images
 
 ![](attachments/BS01.jpg)
 Basic Sociology CX6005 - figure 01

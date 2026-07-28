@@ -26,7 +26,7 @@ Atari Super Biorhythmus - französisches Bildschirmfoto 2; vielen lieben Dank an
 ![](attachments/Super_Biorythmes.jpg)
 Atari Super Biorhythmus ; französische Werbeanzeige ; vielen lieben Dank an Marsupilami von Atariage
 
-## Danksagung:
+## Danksagung
 
 Ohne die folgende Person wäre dieses Projekt nicht möglich gewesen, ihm gilt daher unser Dank:
 

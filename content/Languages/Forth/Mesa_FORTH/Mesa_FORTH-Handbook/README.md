@@ -394,7 +394,7 @@ tell what is part of the  screen, and what is information shown  by
 the  editor.   The  bottom  of  the  display will show what special
 editor commands are available.
 
-### Standard editing commands:
+### Standard editing commands
 
 While you  are in  the editor,  any character  you type  (except
 special control  characters) while  be entered  into the  screen at

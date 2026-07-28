@@ -561,7 +561,7 @@ WORDS              Displays the names of the definitions in the
 
 ---
 
-## Further reading:
+## Further reading
 
 - FORTH-83 Standard, a publication of the Forth Standards Team.
 - "When a Page is not a Page: Forth-83 and Vocabularies". Goerge W. Shaw II, Dr. Dobb's Journal, September 1983, page 90.

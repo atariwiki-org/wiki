@@ -908,7 +908,7 @@ For NTSC-ATARIs use the following values defining the respective notes (distorti
 |4|60|57|53|50|47|45|42|40|37|35|33|31
 |5|29|27|26|24|23|22|20|19|18|17|16|15
 
-## Use [AUDC1](#AUDC1) to set distortion and volume for channel 1.
+## Use[AUDC1](#AUDC1) to set distortion and volume for channel 1.
 
 see also: [Sound\_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE)
 
@@ -945,7 +945,7 @@ For NTSC-ATARIs use the following values defining the respective notes (distorti
 |4|60|57|53|50|47|45|42|40|37|35|33|31
 |5|29|27|26|24|23|22|20|19|18|17|16|15
 
-## Use [AUDC2](#AUDC2) to set distortion and volume for channel 2.
+## Use[AUDC2](#AUDC2) to set distortion and volume for channel 2.
 
 see also: [Sound\_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE)
 
@@ -982,7 +982,7 @@ For NTSC-ATARIs use the following values defining the respective notes (distorti
 |4|60|57|53|50|47|45|42|40|37|35|33|31
 |5|29|27|26|24|23|22|20|19|18|17|16|15
 
-## Use [AUDC3](#AUDC3) to set distortion and volume for channel 3.
+## Use[AUDC3](#AUDC3) to set distortion and volume for channel 3.
 
 see also: [Sound\_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE)
 
@@ -1019,7 +1019,7 @@ For NTSC-ATARIs use the following values defining the respective notes (distorti
 |4|60|57|53|50|47|45|42|40|37|35|33|31
 |5|29|27|26|24|23|22|20|19|18|17|16|15
 
-## Use [AUDC4](#AUDC4) to set distortion and volume for channel 4.
+## Use[AUDC4](#AUDC4) to set distortion and volume for channel 4.
 
 see also: [Sound\_Topics](#Sound_Topics), [AUDCTL](#AUDCTL), [STIMER](#KBCODE)
 
@@ -3904,7 +3904,7 @@ This memory location is the shadow register of [DMACTL](#DMACTL) (54272; $D400).
 
 Bit #5 can therefore be used to control the entire direct memory access of the ANTIC. Bit #4 is used to switch between single-line P/M resolution and two-line resolution. The specification of the character width for the display playfield refers to the graphic mode 0. The numbers of characters correspond to 192, 160 or 128 color cycles. In total, the ANTIC can display 238 color cycles (including the border), but only about 174 of these are visible, depending on the TV/monitor. Therefore, not all 48 characters are completely visible when a wide display field is switched on (or the image extends beyond the edge of the monitor).
 
-## To switch on the Display List Interrupt see [NMIEN](#NMIEN).
+## To switch on the Display List Interrupt see[NMIEN](#NMIEN).
 
 /%
 %%tab-deutsch
@@ -3928,7 +3928,7 @@ Diese Speicherzelle ist das Schattenregister zu [DMACTL](#DMACTL) (54272; $D400)
 
 Mit Bit fünf kann man also den gesamten direkten Speicherzugriff des ANTIC kontrollieren. Das Bit vier dient dem Umschalten zwischen einzeiliger P/M-Auflösung und zweizeiliger Auflösung. Die Angabe der Zeichenbreite für das Anzeigefeld bezieht sich auf die Grafikstufe Null. Die Anzahlen der Zeichen entsprechen 192, 160 oder 128 Farbpunkten. Insgesamt kann der ANTIC 238 Farbpunkte (einschließlich des Randes) darstellen, davon sind jedoch je nach Fernseher/Monitor nur ca. 174 sichtbar. Es sind deshalb beim Einschalten eines breiten Anzeigefeldes nicht alle 48 Zeichen vollständig sichtbar (bzw. das Bild geht über den Rand des Monitors hinaus).
 
-## Zum Einschalten des Display List Interrupts siehe [NMIEN](#NMIEN).
+## Zum Einschalten des Display List Interrupts siehe[NMIEN](#NMIEN).
 
 /%
 
@@ -3968,7 +3968,7 @@ next: [IRQEN](#IRQEN),[IRQST](#IRQEN)
 
 Sets an interrupt vector or system timer vector.
 
-## Usage:
+## Usage
 
 Assembler
 

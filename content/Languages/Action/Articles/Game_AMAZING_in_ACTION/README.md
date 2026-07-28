@@ -49,7 +49,7 @@ The picture itself is generated using **Drawpic** from Artworx. Drawpic turns th
 
 **MOVEMAN** reads the joystick and moves your player. It checks to see if you can move in the direction you want. If not, then you continue in the direction you are traveling. Thus, you can push the stick in the desired direction before you get to an intersection and then move in that direction when you hit the intersection.
 
-## ''Avid ACTION! programmer David Plotkin is a veteran of the **Antic** program submission procedure and, on the side, a chemical engineer for Standard Oil of California.''
+## ''Avid ACTION! programmer David Plotkin is a veteran of the**Antic** program submission procedure and, on the side, a chemical engineer for Standard Oil of California.''
 
 ```
 ;    AMAZING

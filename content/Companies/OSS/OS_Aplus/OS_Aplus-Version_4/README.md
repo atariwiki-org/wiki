@@ -145,7 +145,7 @@ Each read/write sector routine receives its parameters through the Device Contro
 - Bytes 8-9: machine dependent (unused on Apple)
 - Bytes 9-A: DCBSEC sector number--to be accessed in low, high order
 
-## ATARI SYSTEM MEMORY MAP OS/A+ version 4:
+## ATARI SYSTEM MEMORY MAP OS/A+ version 4
 
 | location  | usage |
 |-----------|-------|

@@ -1,6 +1,6 @@
 # Atari Educational System Lesson Cassettes
 
-## Images:
+## Images
 
 ![](attachments/Atari_Educational_System_CXL_4001-1.jpg)
 Atari Educational System CXL 4001 - 1
@@ -20,18 +20,18 @@ Dorsett 'Talk and Teach System' (C) Copyright 1983 by Dorsett Educational System
 ![](attachments/Overview.jpg)
 Overview of the Atari Educational System Programs
 
-## All available images in one archive:
+## All available images in one archive
 
 [edu.zip](attachments/edu.zip) size: 25 KB
 
-## References:
+## References
 
 - [Atari\_Educational\_System-Talk\_and\_Teach-Cassette\_Courseware\_Catalog.pdf](attachments/Atari_Educational_System-Talk_and_Teach-Cassette_Courseware_Catalog.pdf)
 - [Atarimuseum.com](http://www.atarimuseum.com/atarieducation/education-menu/edu-menu.htm)
 - [Atarisource.com](http://www.atarisource.com/collection.htm)
 - [A library for encoding cassette tapes in the Atari Educational System (AKA Dorsett) format](https://github.com/tschak909/eduencode)
 
-## Very important:
+## Very important
 
 AtariWiki highly recommends the findings of tschak909 from AtariAge. Please take a look, what he has found:
 
@@ -67,7 +67,7 @@ Lloyd G. Dorsett, the founder, has proven, that the Atari can do much more than 
 ![](attachments/part3.jpg)
 Popular Science, January 1983, page 99
 
-## Examples:
+## Examples
 
 ![](attachments/Basic_Electricity_CX6016_.jpg)
 Basic Electricity CX6016
@@ -88,7 +88,7 @@ Basic Electricity CX6016, U.S. Government CX6002, Great Classics CX6009 and othe
 ![](attachments/Business_Communications_CX6010-Principles_of_Accounting_CX6007.jpg)
 Business Communications CX6010-Principles of Accounting CX6007
 
-## Outlook:
+## Outlook
 
 So you think you now have the complete Atari Educational System program? Think again:
 

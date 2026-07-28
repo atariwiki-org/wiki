@@ -1,6 +1,6 @@
 # Conversational ITALIAN (CX4125)
 
-## ATR-Images:
+## ATR-Images
 
 made out of the FLAC-Images:
 
@@ -24,11 +24,11 @@ made out of the FLAC-Images:
 
 - [Conversational\_ITALIAN-CX4125-Unit\_10-Cassette\_E-Side\_2.atr](attachments/Conversational_ITALIAN-CX4125-Unit_10-Cassette_E-Side_2.atr) Unit 10 disk
 
-## Manual:
+## Manual
 
 [ATARI\_Conversational\_Italian.pdf](../../../../media/Companies/Atari/Atari_Proofreader/Conversational_ITALIAN_CX4125/attachments/ATARI_Conversational_Italian.pdf) ; size: 24.6 MB; (C) 1981 Atari
 
-## FLAC-Images:
+## FLAC-Images
 
 - [http://data.atariwiki.org/FLAC/ITALIAN/Conversational\_ITALIAN-CX4125-Unit\_1-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/ITALIAN/Conversational_ITALIAN-CX4125-Unit_1-Cassette_A-Side_1.flac) ; size: 141.9 MB ; Unit 1 cassette
 
@@ -50,17 +50,17 @@ made out of the FLAC-Images:
 
 - [http://data.atariwiki.org/FLAC/ITALIAN/Conversational\_ITALIAN-CX4125-Unit\_10-Cassette\_E-Side\_2.flac](http://data.atariwiki.org/FLAC/ITALIAN/Conversational_ITALIAN-CX4125-Unit_10-Cassette_E-Side_2.flac) ; size: 144.1 MB ; Unit 10 cassette
 
-## Box-Pictures:
+## Box-Pictures
 
 ![](attachments/ATARI_Conversational_Italian.jpg) (C) 1981 Atari
 
 ![](attachments/ATARI_Conversational_ITALIAN_CX4125-2.jpg) (C) 1981 Atari
 
-## Autor:
+## Autor
 
 Derzeit leider noch unbekannt. :-(
 
-## Danksagung:
+## Danksagung
 
 Ohne die folgenden Personen wäre dieses Projekt nicht möglich gewesen, ihnen gilt daher der Dank:
 

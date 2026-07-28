@@ -2,12 +2,12 @@
 
 Copyright (C) Atari 1988.
 
-## Manual:
+## Manual
 
 - [Atari DOS XE Owner's manual](attachments/Atari_DOS_XE_Owners_manual.txt) TXT file
 - [Atari DOS XE Owner's manual](attachments/Atari_DOS_XE_Owners_manual.pdf) PDF file
 
-## ATR-Images:
+## ATR-Images
 
 - [Atari\_DOS\_XE\_Version\_1.00\_90K.atr](attachments/Atari_DOS_XE_Version_1.00_90K.atr) Atari DOS XE Masterdisk on a 90K image file
 - [Atari\_DOS\_XE\_Version\_1.00\_360K.atr](attachments/Atari_DOS_XE_Version_1.00_360K.atr) Atari DOS XE Masterdisk on a 360K image file
@@ -19,7 +19,7 @@ Copyright (C) Atari 1988.
 - [DOS\_XE\_Docs\_C.atr](attachments/DOS_XE_Docs_C.atr) Documentation of DOS XE - Part C - TXT file
 - [DOS\_XE\_Docs\_D.atr](attachments/DOS_XE_Docs_D.atr) Documentation of DOS XE - Part D - TXT file
 
-## Pictures:
+## Pictures
 
 ![](attachments/XF551_under_DOS_XE.jpg)
 Atari XF551 under DOS XE

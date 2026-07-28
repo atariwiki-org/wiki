@@ -35,13 +35,13 @@ Atari Microsoft BASIC II ad
 
 ## Atari Microsoft BASIC Cross-Reference Utility - APX Catalog Number 20125 by Fred Thorlin System Software; Many thanks to bob1200xl from AtariAge for sharing it with us!
 
-## ATR Image:
+## ATR Image
 
 - [Atari Microsoft BASIC Cross-Reference Utility](http://www.atarimania.com/utility-atari-400-800-xl-xe-microsoft-BASIC-cross-reference-utility_30054.html)
 
 Atari Microsoft BASIC Cross-Reference Utility
 
-## References:
+## References
 
 - [Wikipedia: Microsoft BASIC I](https://en.wikipedia.org/wiki/Microsoft_BASIC)
 - [Wikipedia: Atari Microsoft BASIC I](https://en.wikipedia.org/wiki/Atari_Microsoft_BASIC)

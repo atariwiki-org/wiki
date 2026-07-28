@@ -1,11 +1,11 @@
 # U.S. History CX6001
 
-## Content:
+## Content
 
 ![](attachments/U.S._History_CX6001.jpg)
 Content of U.S. History CX6001
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 - [http://data.atariwiki.org/FLAC/USH/U\_S\_History\_CX6001-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_A-Side_1.flac) ; size: 143.0 MB ; thanks to Bill Lange this part could be complete restored! Bill, thank you so much for your help, we all owe you one. Please go ahead! :-)
 
@@ -23,7 +23,7 @@ Content of U.S. History CX6001
 
 - [http://data.atariwiki.org/FLAC/USH/U\_S\_History\_CX6001-Cassette\_D-Side\_2.flac](http://data.atariwiki.org/FLAC/USH/U_S_History_CX6001-Cassette_D-Side_2.flac) ; size: 187.0 MB
 
-## Images:
+## Images
 
 ![](attachments/P01.jpg)
 U.S. History CX6001 - figure 1

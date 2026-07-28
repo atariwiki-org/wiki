@@ -6,7 +6,7 @@ Da das Programm in Basic geschrieben worden ist, darf der Leser sich ruhig anges
 
 Das Handbuch in elektronischer Form (PDF-Datei, s. u.) entspricht dem originalen Handbuch, jedoch wurden alle bekannten Fehler beseitigt sowie Formeln ergänzt bzw. richtig gestellt. Ferner sind jeweils im Inhaltsverzeichnis, als auch am Seitenrand Hyperlinks gesetzt.
 
-## Kurzübersicht zu Statistics I:
+## Kurzübersicht zu Statistics I
 
 - Derzeit können nur einfache Berechnungen durchgeführt werden.
 
@@ -40,7 +40,7 @@ Das Handbuch in elektronischer Form (PDF-Datei, s. u.) entspricht dem originalen
 
 - Durch drücken der "Option"-Taste kann man die Ergebnisse ausdrucken lassen.
 
-### ATR- und CAS-Images:
+### ATR- und CAS-Images
 
 Atari Statistics I CX4103 (deutsch) (Disk Version) Disketten-Image: [Atari\_Statistik\_I\_Rev\_1.2\_CX4103\_Disk\_Version\_deutsch\_Basic.atr](attachments/Atari_Statistik_I_Rev_1.2_CX4103_Disk_Version_deutsch_Basic.atr)
 
@@ -54,13 +54,13 @@ Atari Statistics I CX4103 (englisch) (Cassette Version-Autorun) Disketten-Image:
 
 Atari Statistics I CX4103 (englisch) (Complete Cassette Import) Disketten-Image: [Atari\_Statistics\_I\_Rev\_1.2\_CX4103\_Complete\_Cassette\_Import\_Basic.atr](attachments/Atari_Statistics_I_Rev_1.2_CX4103_Complete_Cassette_Import_Basic.atr)
 
-### Handbücher:
+### Handbücher
 
 Für den Bildschirm optimiertes Handbuch (englisch) als PDF-Datei (2,6 MB): [Statistics\_I\_CX4103\_Screen\_Version.pdf](attachments/Statistics_I_CX4103_Screen_Version.pdf)
 
 Für den Drucker optimiertes Handbuch (englisch) als PDF-Datei (592,8 MB): [Statistics\_I\_CX4103\_Print\_Version.pdf](../../../../media/Companies/Atari/Atari_Statistics_I/attachments/Statistics_I_CX4103_Print_Version.pdf)
 
-### Bilder:
+### Bilder
 
 ![](attachments/Statistics_I.jpg)
 Boxcover von Statistics I (englisch)
@@ -119,11 +119,11 @@ Grafische Darstellung eines Beipiels aus dem Statistics I-Handbuch mittels der S
 ![](attachments/Statistics_I_22.jpg)
 Grafische Darstellung eines Beipiels aus dem Statistics I-Handbuch mittels der Software: "Graph It" - Diagramm 3
 
-## Autor:
+## Autor
 
 Derzeit leider noch unbekannt. :-(
 
-## Danksagung:
+## Danksagung
 
 Ohne die folgenden Personen wäre dieses Projekt nicht möglich gewesen, ihnen gilt daher der Dank:
 
@@ -132,6 +132,6 @@ Ohne die folgenden Personen wäre dieses Projekt nicht möglich gewesen, ihnen g
 - Bradley Koda
 - Benjamin Daniel Smith
 
-## Wartung:
+## Wartung
 
 Diese Seite wird von Roland B. Wassenberg verwaltet. Motto: "See you all out there in the galaxy" :-)

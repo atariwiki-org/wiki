@@ -64,7 +64,7 @@ In Comlist1 the Increment is five - meaning that a new command begins every five
 
 Carefully type in Listing One, TOOLBOX.ACT, and store a copy to disk before you compile and run it.
 
-## The sample **Caller()** procedure shows you how to use **Wordfind()** and **Matchup()**. In this example, Comlist, the command list, is "DOG CAT COW MULE". When run, the program asks you to type one of the four Words in the command list. Then the program finds the Word in the command list and prints the word and its position in the string.
+## The sample**Caller()** procedure shows you how to use **Wordfind()** and **Matchup()**. In this example, Comlist, the command list, is "DOG CAT COW MULE". When run, the program asks you to type one of the four Words in the command list. Then the program finds the Word in the command list and prints the word and its position in the string.
 
 ## ''Kevin Sherratt is a full-time science fiction writer and part-time programmer from London, Ontario. He is currently working on an 800XL text adventure game. This is his first appearance in Antic.''
 

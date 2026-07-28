@@ -17,7 +17,7 @@ So I tested serveral game-dos. (btw, thanks to Matthias Reichl for the new GPL R
 
 So I wrote 3SDOS. It's 384 Bytes long and fits into the first 3 bootsectors. With this, the basic-cassette program works! And it has 4k free space.
 
-## Limitations:
+## Limitations
 
 - only read operations
 - "open file" and "get byte" CIO commands

@@ -12,7 +12,7 @@ However, there was a Fortran for the Apple II written in 6502 assembly language.
 
 ## Infos
 
-### (1):
+### (1)
 
 Released by Apple in 1980, Apple FORTRAN ran under the Pascal operating system. It cost $200 (in addition to the $495 required to get the Language System). Programs written in FORTRAN for other computers could run with little modification under Apple FORTRAN (if a user needed that ability). It compiled to a similar code as did Pascal programs, so was not any faster than Pascal. Apple’s version of FORTRAN had many bugs in it, though, and after its introduction in 1980 it was never upgraded. By September 1986 it had disappeared from their product catalogs.
 
@@ -20,7 +20,7 @@ Another way for an Apple II user to get FORTRAN was to buy the Microsoft Z-80 So
 
 In June of 1987, Pecan Software released FORTRAN for the IIGS. It ran under ProDOS 16 (GS/OS), but still used the UCSD Pascal disk format for its FORTRAN by creating a ProDOS file that then acted as a UCSD Volume.
 
-### (2):
+### (2)
 
 Cabot FORTRAN 77
 Runs on Apple I(?), IIgs, Mac, MS-DOS, CP/M and Unix boxes. Claims the 'worldwide software licence (sic) for software products developed by the University of California, San Diego
@@ -39,7 +39,7 @@ BBS: 00 44 272 583023
 
 Compuserve address: 100014,241
 
-### (3):
+### (3)
 
 PRO FORTRAN-77
 Prospero Software

@@ -14,17 +14,17 @@ Another notable feature of Basic XL was the AUTORUN system. This was a small run
 
 Basic XL was widely lauded in the press, and some stated it should be renamed Atari BASIC and built into every machine. However, the release of [Turbo-BASIC XL](../../../Languages/BASIC/Turbo-BASIC_XL/README.md) a year later largely ended the market for Basic XL. A further expansion, [BASIC XE](../Basic_XE/README.md), never became very popular.
 
-## CAR-Images:
+## CAR-Images
 
 - [OSS Basic XL 1.02 cartridge](attachments/OSSBasicXL102.car)
 - [OSS Basic XL 1.03 cartridge](attachments/OSSBasicXL103.car) latest cartridge from OSS
 
-## ROM-Images:
+## ROM-Images
 
 - [OSS Basic XL 1.02 rom image](attachments/OSSBasicXL102.rom)
 - [OSS Basic XL 1.03 rom image](attachments/OSSBasicXL103.rom) latest rom image from OSS
 
-## ATR-Images:
+## ATR-Images
 
 - [BASIC\_XL\_Toolkit\_1.02-Disk-Side\_A-Original.atr](attachments/BASIC_XL_Toolkit_1.02-Disk-Side_A-Original.atr) including AUTORUN maker ; thank you so much 'kind soul' for your outstanding help with the finding and preserving of this lost software package even OSS didn't had anymore! We are so deep in your debt! Great work, thank you so much!
 - [BASIC\_XL\_Toolkit\_1.02-Disk-Side\_B-Original.atr](attachments/BASIC_XL_Toolkit_1.02-Disk-Side_B-Original.atr) including EXTEND (BASIC XL is enlarged with 4K additional code!) ; thank you so much 'kind soul' for your outstanding help with the finding and preserving of this lost software package even OSS didn't had anymore! We are so deep in your debt! Great work, thank you so much!
@@ -49,7 +49,7 @@ ROM version 1.02 works with extensions from toolkit 1.02 and 1.03 without errors
 - [OSS-The\_Basic\_XL\_Toolkit-Including\_the\_BASIC\_XL\_Runtime\_Package-Reference\_Manual.pdf](../../../../media/Companies/OSS/BASIC_XL/attachments/OSS-The_BASIC_XL_Toolkit-Including_the_BASIC_XL_Runtime_Package-Reference_Manual.pdf) ; 42 double-pages, OCR
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
-## Source Code for OSS Basic XL version 1.02 from February 5th, 1985:
+## Source Code for OSS Basic XL version 1.02 from February 5th, 1985
 
 - [BASICXL102.zip](attachments/BASICXL102.zip) ; thank you so much for your help in this bob1200xl from AtariAge, that is such a great contribution, we really appreciate your help in that case. You will always be in our hearts and we will never forget you.
   ![](attachments/Thank_you_bob1200xl.jpg)

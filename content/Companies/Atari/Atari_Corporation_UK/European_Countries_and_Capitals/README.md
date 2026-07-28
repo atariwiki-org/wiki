@@ -4,33 +4,33 @@ Atari Corp UK rereleased this educational game under the label "Atarisoft" as a 
 
 Both sides use the dual audio format.
 
-## CAS-Image:
+## CAS-Image
 
 Release 1985: [European\_Countries\_Capitals\_85.cas](attachments/European_Countries_Capitals_85.cas)
 
-## ATR file:
+## ATR file
 
 Release 1985: [European\_Countries\_Capitals\_85.ATR](attachments/European_Countries_Capitals_85.ATR)
 
-## FLAC file:
+## FLAC file
 
 Release 1985: [http://data.atariwiki.org/FLAC/European\_Countries\_Capitals\_85.flac](http://data.atariwiki.org/FLAC/European_Countries_Capitals_85.flac)
 
-## Manual:
+## Manual
 
 Release 1985: see cover picture
 
-## Screenshots:
+## Screenshots
 
 ![](attachments/European_Countries_Capitals_85_Screenshot1.jpg)
 ![](attachments/European_Countries_Capitals_85_Screenshot2.jpg)
 ![](attachments/European_Countries_Capitals_85_Screenshot3.jpg)
 
-## Cover:
+## Cover
 
 ![](attachments/European_Countries_Capitals_85_cover.jpg)
 European Countries and Captials Cover 1985 rerelease
 
-## Media pictures:
+## Media pictures
 
 ![](attachments/European_Countries_Capitals_85_cassette.jpg)

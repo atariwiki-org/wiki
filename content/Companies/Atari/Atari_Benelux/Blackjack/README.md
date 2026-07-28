@@ -4,37 +4,37 @@ Blackjack is the Dutch translation of the US version of Blackjack and was publis
 
 Side 1 of the cassette includes on screen instructions. Side 2 does not contain the instructions. Both sides use the dual audio format.
 
-## CAS-Images:
+## CAS-Images
 
 Side 1: [Blackjack\_side1.cas](attachments/Blackjack_side1.cas)
 Side 2: [Blackjack\_side2.cas](attachments/Blackjack_side2.cas)
 
-## ATR-files:
+## ATR-files
 
 Side 1:[Blackjack\_side1.atr](attachments/Blackjack_side1.atr)
 Side 2:[Blackjack\_side2.atr](attachments/Blackjack_side2.atr)
 
-## Flac-files:
+## Flac-files
 
 Side 1:[http://data.atariwiki.org/FLAC/Blackjack\_side1.flac](http://data.atariwiki.org/FLAC/Blackjack_side1.flac)
 Side 2:[http://data.atariwiki.org/FLAC/Blackjack\_side2.flac](http://data.atariwiki.org/FLAC/Blackjack_side2.flac)
 
-## Manual:
+## Manual
 
 [Blackjack\_manual.pdf](attachments/Blackjack_manual.pdf)
 
-## Screenshots:
+## Screenshots
 
 ![](attachments/blackjackscreenshot1.jpg)
 ![](attachments/blackjackscreenshot2.jpg)
 ![](attachments/blackjackscreenshot3.jpg)
 
-## Cover:
+## Cover
 
 ![](attachments/Blackjack_cover.jpg)
 Blackjack Cover
 
-## Media pictures:
+## Media pictures
 
 ![](attachments/Blackjack_cassette.jpg)
 Blackjack Cassette

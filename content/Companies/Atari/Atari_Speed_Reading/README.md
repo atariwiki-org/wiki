@@ -73,7 +73,7 @@ Voice \& Data track of a typical Voice \& Data - Atari cassette ; thanks to tsch
 
 The voice layer is at the top, the data layer at the bottom. With Audacity it is possible to separate the 2 layers. For Atari users with a Mac, this is important, because the emulator Atari800MacX in version 4.6.0 from Mark Grebe is not ready to read in WAV-files. Mark will take a look at that, when he has finished his PhD. Up to that time the Mac users must have that separation in order to use Voice \& Data cassettes.
 
-## Images:
+## Images
 
 ![](attachments/Atari_Speed_Reading_CX4126-7.jpg)
 Atari Speed Reading cassettes

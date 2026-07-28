@@ -4,32 +4,32 @@ Atari Statistieken is the Dutch translation of Statistics one and was published 
 
 The cassette contains two versions. Side one is for cassette based storage, side two is for disk based storage.
 
-## CAS-Images:
+## CAS-Images
 
 Side 1: [Atari\_statistieken\_side1.zip](attachments/Atari_statistieken_side1.zip)
 Side 2: [Atari\_statistieken\_side2.zip](attachments/Atari_statistieken_side2.zip)
 
-## FLAC-Files:
+## FLAC-Files
 
 Side 1: [http://data.atariwiki.org/FLAC/Atari\_Statistieken\_side1.flac](http://data.atariwiki.org/FLAC/Atari_Statistieken_side1.flac)
 Side 2: [http://data.atariwiki.org/FLAC/Atari\_Statistieken\_side2.flac](http://data.atariwiki.org/FLAC/Atari_Statistieken_side2.flac)
 
-## Manual:
+## Manual
 
 [Atari\_Statistieken\_manual.pdf](attachments/Atari_Statistieken_manual.pdf)
 
-## Screenshots:
+## Screenshots
 
 ![](attachments/Atari_Statistieken1.jpg)
 ![](attachments/Atari_Statistieken2.jpg)
 ![](attachments/Atari_Statistieken3.jpg)
 
-## Cover:
+## Cover
 
 ![](attachments/Atari_Statistieken_cover.jpg)
 Atari Statistieken Cover
 
-## Media pictures:
+## Media pictures
 
 ![](attachments/Atari_Statistieken_cassette.jpg)
 Atari Statistieken Cassette

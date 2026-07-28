@@ -2,12 +2,12 @@
 
 Donated by Kay Savetz; Kay, thank you so much to bring this artifact from the dark to the light! We really appreciate your help! :-)))
 
-## Content:
+## Content
 
 ![](attachments/Great_Classics_CX6009.jpg)
 Content of Great Classics CX6009
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 - [http://data.atariwiki.org/FLAC/GC/Great\_Classics\_CX6009-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/GC/Great_Classics_CX6009-Cassette_A-Side_1.flac) ; size: 142.6 MB
 
@@ -25,7 +25,7 @@ Content of Great Classics CX6009
 
 - [http://data.atariwiki.org/FLAC/GC/Great\_Classics\_CX6009-Cassette\_D-Side\_2.flac](http://data.atariwiki.org/FLAC/GC/Great_Classics_CX6009-Cassette_D-Side_2.flac) ; size: 150.9 MB
 
-## Images:
+## Images
 
 ![](attachments/1.jpg)
 Classics CX6009 - Startscreen

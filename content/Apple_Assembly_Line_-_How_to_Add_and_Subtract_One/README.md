@@ -11,7 +11,7 @@ I suppose there are as many ways to do it as there are programmers.  Some are sh
 
 Adding one to a number is called "incrementing", and subtracting one is called "decrementing".  The 6502 has two instructions for these two functions: INC and DEC.  (For the moment I will overlook the four instructions for doing the same to the X and Y registers:  INX, INY, DEX, and DEY.)  It is easy to see how to use them on single-byte values; with a little more trouble we can also use them for values of two or more bytes.
 
-## Single-Byte Values:
+## Single-Byte Values
 
 Here are five different ways to increment a single byte:
 
@@ -67,7 +67,7 @@ Method 5:  Use the DEC instruction
 
 There are times when any of the above may be justified, depending on the state of the A-register and the Carry Status bit.
 
-## Multi-Byte Values:
+## Multi-Byte Values
 
 Incrementing a two-byte value is a very common practice in 6502 programs.  Here are two methods:
 

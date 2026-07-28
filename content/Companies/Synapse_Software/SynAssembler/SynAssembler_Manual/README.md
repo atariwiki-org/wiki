@@ -330,7 +330,7 @@ The VAL command will evaluate any legal operand expression, and print the value 
         OK.
 ```
 
-### DOS commands:
+### DOS commands
 
 **LOAD** and **SAVE** commands:
 
@@ -532,29 +532,29 @@ Source programs are entered a line at a time, with a five digit line number iden
 
 Although the fields are not restricted to begin in any particular columns, it is convenient to enter them in this way for neatness. Therefore tab stops are built in to the SynAssembler at columns 9, 13, and 21.
 
-### LABEL FIELD:
+### LABEL FIELD
 
 May be left blank, or may contain a label of from one to 32 characters. The first character of a label must be a letter; remaining characters may be either letters or numbers. Labels are used to name places in your program to which you will branch, as well as constants and variables.
 
 The standard tab settings leave enough room for only 9 character labels; however, you can go ahead and use 32 characters as long as there is at least one space between the label and the opcode. If you like, you may type labels on a separate line, with the opcode and the following fields left blank. The label will be defined as the current value of the location counter. There are some examples of this in various listings throughout the manuals and in the example source code on the disk.
 
-### OPCODE FIELD:
+### OPCODE FIELD
 
 Contains a three-letter machine language mnemonic opcode, or assembler directive. However, opcodes may begin in any column after at least one blank from a label or two blanks from a line number.
 
-### OPERAND FIELD:
+### OPERAND FIELD
 
 Usually contains an operand expression of some sort. Some of the 6502 instructions have no written operand, such as NOP, BRK, DEX, and others. In these cases the comment field may be started right after the opcode. Four of the opcodes (ROL, ROR, ASL, and LSR) may be used both with and without an operand. If no operand is present, you must type at least TWO blanks before a comment with these four opcodes.
 
-### COMMENT FIELD:
+### COMMENT FIELD
 
 Comments are separated from the operand field by at least one blank. Actually, comments may begin earlier or later on the line, just so at least one blank separates them from the operand expression.
 
-### COMMENT LINES:
+### COMMENT LINES
 
 Full lines of comments may be entered by typing an asterisk or a semi-colon (;) in the first column of the label field. This type of comment is useful in separating various routines from each other, and labeling their contents. It is analogous to the REM statement in BASIC.
 
-### LABELS:
+### LABELS
 
 One to nine characters; the first character must be a letter, while the others may be either letters or digits. Labels must be defined somewhere in the program if they are to be used in an expression. In some cases they must be defined prior to use in expressions to prevent an undefined or ambiguous location counter. For example, if the expression in the operand field of an origin (".OR") directive is not defined prior to use, the assembler will not know how to define any subsequent labels.
 
@@ -562,7 +562,7 @@ A problem can occur if you postpone the definition of page-zero variables until 
 
 There are two types of labels used in SynAssembler: normal labels and local labels.
 
-### NORMAL LABELS:
+### NORMAL LABELS
 
 The first character of a normal label must be a letter; subsequent characters may be letters, digits, or the period character (".") The period is useful for making long labels readable. For example, the subroutine used to read the next source line might be named "read.next.source.line".
 
@@ -580,7 +580,7 @@ Tab stops are set up within the editor assuming that most of your labels will be
         01080        RTS
 ```
 
-### LOCAL LABELS:
+### LOCAL LABELS
 
 SynAssembler introduces a new kind of label called "local labels". The main purpose for the local labels is to make programs more readable by reducing the number of label names you must invent. As a side effect, local labels save considerable space in the symbol table during assembly; they only reqire two bytes each. The use of local labels also encourages structured programming habits.
 
@@ -626,11 +626,11 @@ Operand expressions are written using terms and operators. The valid operators a
 
 Any number in the range from 0 through 65535, written in the normal way.
 
-## HEXIDECIMAL NUMBERS:
+## HEXIDECIMAL NUMBERS
 
 Any number in the range from $0 through $FFFF. Hexidecimal numbers are indicated by a preceding dollar sign ($), and may have from one to four digits. Beware of leaving out the dollar sign; the assembler may be quite satisfied to think of your hexadecimal number as a decimal one if you omit the ($). In some cases even a number with letters in it, such as 23AB, may be acceptable; it may be interpreted as decimal 23 and a comment "AB".
 
-## BINARY NUMBERS:
+## BINARY NUMBERS
 
 Any number in the range from 00000000 to 11111111. Binary numbers are indicated by the preceding percent (%) sign.
 NUMBERS EXAMPLE:
@@ -995,7 +995,7 @@ Zynapse monitor
 [*] Ok.
 ```
 
-### STEP EXAMPLE:
+### STEP EXAMPLE
 
 ```
 [*] Ok.
@@ -1027,7 +1027,7 @@ A=14  X=00 Y=00 P=30 S=FD
 [*] Ok.
 ```
 
-### TRACE EXAMPLE:
+### TRACE EXAMPLE
 
 ```
 Ok.

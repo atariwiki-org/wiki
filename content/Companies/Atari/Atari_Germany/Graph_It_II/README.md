@@ -2,7 +2,7 @@
 
 Copyright (C) 1983 Atari Elektronik-Vertriebsgesellschaft mbH
 
-## Kassetten-Images:
+## Kassetten-Images
 
 [Graph It II](attachments/Graph_It_TXG_9517.zip) ; Kassette bitte mit dem Befehl CLOAD und dem Basic-Modul laden
 

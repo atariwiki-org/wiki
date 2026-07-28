@@ -14,7 +14,7 @@ Altirra is without any doubt the(!) standard for Atari emulators as of 2018. Pha
 
 ### For PCs: please use the link in the reference for downloading Altirra native for your system
 
-### For MACs:
+### For MACs
 
 - [32 bit version](http://atariage.com/forums/topic/278822-altirra-30-mac-wine-port/#entry4029638) ; macOS \<= 10.12.x Sierra and below
 - [64 bit version](http://atariage.com/forums/topic/278822-altirra-30-mac-wine-port/#entry4029663) ; macOS \>= 10.13.x High Sierra

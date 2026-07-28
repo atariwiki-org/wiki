@@ -9,25 +9,25 @@ This software pack consists of two cassettes and contains 4 basic programs:
 - Polaire Grafieken
 - 3 Dimensionale Diagrammen
 
-## CAS-Images:
+## CAS-Images
 
 Cassette 1, side 1: [Atari\_Grafieken\_cass1\_side1.cas](attachments/Atari_Grafieken_cass1_side1.cas)
 Cassette 1, side 2: [Atari\_Grafieken\_cass1\_side2.cas](attachments/Atari_Grafieken_cass1_side2.cas)
 Cassette 2, side 1: [Atari\_Grafieken\_cass2\_side1.cas](attachments/Atari_Grafieken_cass2_side1.cas)
 Cassette 2, side 2: [Atari\_Grafieken\_cass2\_side2.cas](attachments/Atari_Grafieken_cass2_side2.cas)
 
-## FLAC-files:
+## FLAC-files
 
 [http://data.atariwiki.org/FLAC/Atari\_Grafieken\_cass1\_side1.flac](http://data.atariwiki.org/FLAC/Atari_Grafieken_cass1_side1.flac)
 [http://data.atariwiki.org/FLAC/Atari\_Grafieken\_cass1\_side2.flac](http://data.atariwiki.org/FLAC/Atari_Grafieken_cass1_side2.flac)
 [http://data.atariwiki.org/FLAC/Atari\_Grafieken\_cass2\_side1.flac](http://data.atariwiki.org/FLAC/Atari_Grafieken_cass2_side1.flac)
 [http://data.atariwiki.org/FLAC/Atari\_Grafieken\_cass2\_side2.flac](http://data.atariwiki.org/FLAC/Atari_Grafieken_cass2_side2.flac)
 
-## Manual:
+## Manual
 
 [Atari\_Grafieken\_manual.pdf](../../../../../media/Companies/Atari/Atari_Benelux/Atari_Grafieken/attachments/Atari_Grafieken_manual.pdf)
 
-## Screenshots:
+## Screenshots
 
 ![](attachments/Atari_Grafieken_Staaf-Cirkel_loading.jpg)
 ![](attachments/Atari_Grafieken_Staaf-Cirkel.jpg)
@@ -38,12 +38,12 @@ Cassette 2, side 2: [Atari\_Grafieken\_cass2\_side2.cas](attachments/Atari_Grafi
 ![](attachments/Atari_Grafieken_3d_loading.jpg)
 ![](attachments/Atari_Grafieken_3d.jpg)
 
-## Cover:
+## Cover
 
 ![](attachments/Atari_Grafieken_cover.jpg)
 Atari Grafieken Cover
 
-## Media pictures:
+## Media pictures
 
 ![](attachments/Atari_Grafieken_cassette1.jpg)
 Atari Grafieken Cassette 1

@@ -1,6 +1,6 @@
 # Conversational FRENCH (CX4119)
 
-## ATR-Images:
+## ATR-Images
 
 made out of the FLAC-Images:
 
@@ -24,11 +24,11 @@ made out of the FLAC-Images:
 
 - [Conversational\_FRENCH-CX4119-Unit\_10-Cassette\_E-Side\_2.atr](attachments/Conversational_FRENCH-CX4119-Unit_10-Cassette_E-Side_2.atr) Unit 10 disk
 
-## Manual:
+## Manual
 
 [ATARI\_Conversational\_French.pdf](../../../../media/Companies/Atari/Conversational_FRENCH_CX4119/attachments/ATARI_Conversational_French.pdf) ; size: 24.2 MB; (C) 1980 Atari
 
-## FLAC-Images:
+## FLAC-Images
 
 - [http://data.atariwiki.org/FLAC/FRENCH/Conversational\_FRENCH-CX4119-Unit\_1-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/FRENCH/Conversational_FRENCH-CX4119-Unit_1-Cassette_A-Side_1.flac) ; size: 133.0 MB ; Unit 1 cassette
 
@@ -50,7 +50,7 @@ made out of the FLAC-Images:
 
 - [http://data.atariwiki.org/FLAC/FRENCH/Conversational\_FRENCH-CX4119-Unit\_10-Cassette\_E-Side\_2.flac](http://data.atariwiki.org/FLAC/FRENCH/Conversational_FRENCH-CX4119-Unit_10-Cassette_E-Side_2.flac) ; size: 137.7 MB ; Unit 10 cassette
 
-## Pictures:
+## Pictures
 
 ![](attachments/ATARI_Conversational_French.jpg) Box cover (C) 1980 Atari
 
@@ -60,11 +60,11 @@ made out of the FLAC-Images:
 
 ![](attachments/Conversational_FRENCH-CX4119-3.jpg) First screen
 
-## Autor:
+## Autor
 
 up to now unknown :-(
 
-## Credits:
+## Credits
 
 Without the following persons that project would never be realized, thank you all:
 

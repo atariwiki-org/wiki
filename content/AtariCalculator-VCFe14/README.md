@@ -1,6 +1,6 @@
 # Atari Calculator at VCFe 14 (2013 Munich)
 
-## Slides:
+## Slides
 
 - PowerPoint: [Vortrag\_Wassenberg\_PowerPoint\_2004\_Mac.ppt](../../media/AtariCalculator-VCFe14/attachments/Vortrag_Wassenberg_PowerPoint_2004_Mac.ppt)
 - PDF: [Vortrag\_Wassenberg.pdf](../../media/AtariCalculator-VCFe14/attachments/Vortrag_Wassenberg.pdf)

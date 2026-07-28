@@ -5,7 +5,7 @@
 ![](attachments/Counseling_Procedures_CX6006.jpg)
 Content of Counseling Procedures CX6006
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 - [http://data.atariwiki.org/FLAC/CP/Counseling\_Procedures\_CX6006-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/CP/Counseling_Procedures_CX6006-Cassette_A-Side_1.flac) ; size: 154.9 MB
 
@@ -23,7 +23,7 @@ Content of Counseling Procedures CX6006
 
 - [http://data.atariwiki.org/FLAC/CP/Counseling\_Procedures\_CX6006-Cassette\_D-Side\_2.flac](http://data.atariwiki.org/FLAC/CP/Counseling_Procedures_CX6006-Cassette_D-Side_2.flac) ; size: 163.7 MB
 
-## Images:
+## Images
 
 ![](attachments/P01.jpg)
 Counseling Procedures CX6006 - figure 1

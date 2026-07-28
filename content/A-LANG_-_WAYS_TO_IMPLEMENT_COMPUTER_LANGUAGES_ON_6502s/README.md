@@ -830,7 +830,7 @@ In particular, approach #2 would be simpler for self-hosting.
 This solution #2 is also more traditional, so link times
 would be much smaller.
 
-## Notes on creating other languages:
+## Notes on creating other languages
 
 A finalization system would be useful, since a number of
 allocation requests could be to compensate for the inability of
@@ -864,7 +864,7 @@ Even on the rare cases where Approach #1 has to do a copy, it's far less.
 Approach #2 even encourages this, because an error in typing is
 less catestrophic.
 
-## REFERENCES:
+## REFERENCES
 
 "Crafting a Compiler"" by Charles N. Fisher \& Richard J. LeBlanc, Jr.
 1988\. Benjamin/Cummings Publishing Company. Menlo Park, CA.

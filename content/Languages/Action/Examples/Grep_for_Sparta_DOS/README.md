@@ -13,7 +13,7 @@ Download: [grep.atr](attachments/grep.atr)
 
 This is the first, very limited alpha version.
 
-## Limitations:
+## Limitations
 
 - Some bugs
 - only works on Sparta DOS 32GX
@@ -22,7 +22,7 @@ This is the first, very limited alpha version.
 - only case sensitive
 - no parameter checking
 
-## To-Do:
+## To-Do
 
 - Case insensitive search
 - parameter checking
@@ -31,7 +31,7 @@ This is the first, very limited alpha version.
 - trim RUNTIME part
 - use generic Sparta DOS Library
 
-## Usage:
+## Usage
 
 ```
 grep filename searchstring

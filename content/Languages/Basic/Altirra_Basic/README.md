@@ -12,32 +12,32 @@ The other main source of slowness in Atari BASIC was the floating point (FP) rou
 
 Atari Wiki is proud to have the license to publish Avery Lee's outstanding Altirra Basic. Avery has done a marvelous job in creating this Basic. Further, he has published the source code, too. :-) Avery, the Atari community say thank you so much for your contribution, we all appreciate very much. Please go ahead with your fantastic work.
 
-## CAR-Image:
+## CAR-Image
 
 Altirra BASIC 1.29: [atbasic.car](attachments/atbasic.car) ; size: 12 KB
 
-## BIN-Image:
+## BIN-Image
 
 Altirra BASIC 1.29: [atbasic.bin](attachments/atbasic.bin) ; size: 8 KB
 
-## ATR-Image:
+## ATR-Image
 
 Altirra BASIC 1.29: [Altirra\_Basic\_1.29\_with\_DOS\_II\_2.5.atr](attachments/Altirra_Basic_1.29_with_DOS_II_2.5.atr) ; ATR-Image with DOS 2.5 and Altirra BASIC 1.29 as AUTORUN.SYS file
 Altirra BASIC 1.54: [Additions.atr](attachments/Additions.atr) ; plus additions from Avery's site. Thank you so much Avery! :-))) We really(!) need your work. :-)))
 
-## Images:
+## Images
 
 ![](attachments/Altirra1.jpg)
 Altirra BASIC 1.29 after starting from the ATR-image
 ![](attachments/Altirra2.jpg)
 Sectors needed for Altirra BASIC 1.29 on the SD-ATR-image above
 
-## Reference:
+## Reference
 
 The original, actual version and the source code of Altirra Basic can be found can be found here:
 [Altirra at virtualdub.org](http://www.virtualdub.org/altirra.html)
 The source code itself is published within the Altirra source code package (src/ATBasic/\*). For the license please see at the top of the page.
 
-## Manual:
+## Manual
 
 please stand by

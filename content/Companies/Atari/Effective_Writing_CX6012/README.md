@@ -1,11 +1,11 @@
 # Effective Writing CX6012
 
-## Content:
+## Content
 
 ![](attachments/Effective_Writing_CX6012.jpg)
 Content of Effective Writing CX6012
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 - [http://data.atariwiki.org/FLAC/EW/Effective\_Writing\_CX6012\_Cassette\_A\_Side\_1.flac](http://data.atariwiki.org/FLAC/EW/Effective_Writing_CX6012_Cassette_A_Side_1.flac) ; size: 178.2 MB
 
@@ -23,7 +23,7 @@ Content of Effective Writing CX6012
 
 - [http://data.atariwiki.org/FLAC/EW/Effective\_Writing\_CX6012\_Cassette\_D\_Side\_2.flac](http://data.atariwiki.org/FLAC/EW/Effective_Writing_CX6012_Cassette_D_Side_2.flac) ; size: 184.4 MB
 
-## Images:
+## Images
 
 ![](attachments/P01.jpg)
 Effective Writing CX6012 - figure 1

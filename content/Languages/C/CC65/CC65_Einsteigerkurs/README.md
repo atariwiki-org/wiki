@@ -4,7 +4,7 @@ Seit einiger Zeit gibt es im Internet einen C-Compiler für Rechner mit dem 6502
 
 Im ersten Teil dieses Kurse geht es um die Installation des CC65 Compilers und das Einrichten einer Entwicklungsumgebung. Diese wird mit dem "Hello World" Programm aus den Beispieldateien getestet.
 
-## Voraussetzungen:
+## Voraussetzungen
 
 Der CC65 Compiler ist ein sogenannter "CrossCompiler", d.h. er läuft nicht auf Rechnern für die er später die Programme erzeugt. Man braucht neben einem Atari 8-Bit Rechner noch einen anderen Computer, auf dem der CC65 Compiler läuft. Dieser Rechner kann ein normaler Intel-kompatibler PC (386 und höher) mit den Betriebssystemen DOS, Windows 9x/NT/2000/XP, OS/2 oder Linux sein. Da sich der CC65 auf fast jedem Standard-Unix übersetzen lässt, kann als Übersetzungssystem auch ein Atari ST, Amiga oder Apple mit Unix (z. B. NetBSD) oder MacOS Xbenutzt werden. In dieses Kurs gehe ich von einem PC Betriebssystem mit DOS-ählicher Kommandozeile (DOS, Windows, OS/2) aus.
 
@@ -60,7 +60,7 @@ Alles geklappt? Nein? Ok, es gab möglicherweise die Fehlermeldung "Error: Canno
 
 Nachdem wir nun diesen Fehler umgangen haben können wir die Übersetzung erneut starten. Wir führen wieder "cl65 -t atari hello.c" aus und finden, wenn alles klappt, zwei neue Dateien im Verzeichnis: "hello.o" und "hello". "hello.o" ist die Objektdatei vor der Bearbeitung durch den Linker, d.h. ohne den atarispezifischen Ladevorspann in der Datei, welche dem DOS angibt, an welcher Stelle im Speicher das Programm geladen wird und wo es gestartet wird. "hello" ist das fertige Programm, wir können es ohne weiteres in "hello.com" umbenennen.
 
-## Programm ausprobieren:
+## Programm ausprobieren
 
 Ich benutze hier zum Test des Programms den XFormer Atari Emulator. Es kann jedoch auch ein anderer Atari Emulator oder ein original Atari Rechner benutzt werden. Der Befehl "xformer dos25.xfd hello.com" startet den Atari mit einer DOS 2.5 Diskette in Laufwerk 1 und dem neuen Programm in Laufwerk 2. Nun mit "L" und der Eingabe "D2:HELLO.COM" das Programm gestartet. Es sollte ein schwarzer Bildschirm mit weissem Rand und dem Text "Hello world!" zu lesen sein.
 

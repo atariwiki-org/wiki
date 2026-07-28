@@ -1,6 +1,6 @@
 # Differences between Atari BASIC Dialects
 
-# Vergleich der Verschiedenen Basic Dialekte:
+# Vergleich der Verschiedenen Basic Dialekte
 
 %%tabbedSection
 %%tab-English

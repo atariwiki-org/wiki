@@ -1,11 +1,11 @@
 # World History (Western) (CX6004)
 
-## Content:
+## Content
 
 ![](attachments/World_History_Western_CX6004.jpg)
 Content of World History (Western) CX6004
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 - [http://data.atariwiki.org/FLAC/WHW/World\_History\_(Western)\_CX6004-Cassette\_A-Side\_1.flac](<http://data.atariwiki.org/FLAC/WHW/World_History_(Western)_CX6004-Cassette_A-Side_1.flac>) ; size: 151.2 MB
 
@@ -23,7 +23,7 @@ Content of World History (Western) CX6004
 
 - [http://data.atariwiki.org/FLAC/WHW/World\_History\_(Western)\_CX6004-Cassette\_D-Side\_2.flac](<http://data.atariwiki.org/FLAC/WHW/World_History_(Western)_CX6004-Cassette_D-Side_2.flac>) ; size: 173.5 MB
 
-## Images:
+## Images
 
 ![](attachments/P01.jpg)
 World History (Western) CX6004 - figure 1

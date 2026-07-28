@@ -49,7 +49,7 @@ I've always enjoyed Sabotage and several times tried to program something simila
 
 ## One more thing. The end is worth waiting for.
 
-## ''David Plotkin is a Project Engineer for Chevron U.S.A., with a Master's in Chemical Engineering. He bought his Atari in 1980 and is interested in programming and design of games, as well as word processing. His work has been seen in **ANALOG Computing**, **Compute!** and other computer magazines.''
+## ''David Plotkin is a Project Engineer for Chevron U.S.A., with a Master's in Chemical Engineering. He bought his Atari in 1980 and is interested in programming and design of games, as well as word processing. His work has been seen in**ANALOG Computing**, **Compute!** and other computer magazines.''
 
 ```
 ; Sneak Attack by David Plotkin

@@ -286,7 +286,7 @@ Data will be poked from the Integer Basic program:
 
 by Steve Wozniak
 
-### Description:
+### Description
 
 While writing APPLE BASIC for a 6502 microprocessor, I repeatedly encountered a variant of MURPHY'S LAW. Briefly stated, any routine operating on 16-bit data will require at least twice the code that it should. Programs making extensive use of 16-bit pointers (such as compilers, editors, and assemblers) are included in this category. In my case, even the addition of a few double-byte instructions to the 6502 would have only slightly alleviated the problem. What I really needed was a 6502/RCA 1800 hybrid - an abundance of 16-bit registers and excellent pointer capability.
 
@@ -315,7 +315,7 @@ SWEET 16 is intended as a 6502 enhancement package, not a stand alone processor.
 
 NOTE:  Registers A, X, Y, P, and S are not disturbed by SWEET 16.
 
-### Instruction Descriptions:
+### Instruction Descriptions
 
 The SWEET 16 opcode listing is short and uncomplicated. Excepting relative branch displacements, hand assembly is trivial. All register opcodes are formed by combining two Hex digits, one for the opcode and one to specify a register. For example, opcodes 15 and 45 both specify register R5 while codes 23, 27, and 29 are all ST ops. Most register ops are assigned in complementary pairs to facilitate remembering them. Therefore, LD ans ST are opcodes 2N and 3N respectively, while LD @ and ST @ are codes 4N and 5N.
 
@@ -323,7 +323,7 @@ Opcodes 0 to C (Hex) are assigned to the thirteen non-register ops. Except for R
 
 If a specified branch condition is met by the prior register op result, the displacement is added to the PC effecting a branch. Except for the BR (Branch always) and BS (Branch to a Subroutine), the branch opcodes are assigned in complementary pairs, rendering them easily remembered for hand coding. For example, Branch if Plus and Branch if Minus are opcodes 4 and 5 while Branch if Zero and Branch if NonZero are opcodes 6 and 7.
 
-### SWEET 16 Opcode Summary:
+### SWEET 16 Opcode Summary
 
 Register OPS-
 
@@ -366,7 +366,7 @@ Non-register OPS-
      0F                       (Unassigned)
 ```
 
-### Register Instructions:
+### Register Instructions
 
 SET:
 
@@ -670,7 +670,7 @@ EXAMPLE:  (Clear 9 bytes beginning at location A034)
      07 FC             BNZ  LOOP2          ;Loop until Zero
 ```
 
-### Non-Register Instructions:
+### Non-Register Instructions
 
 RETURN TO 6502 MODE:
 
@@ -828,7 +828,7 @@ to 3000-3007)
      0B               RS                  ;Return
 ```
 
-### Theory of Operation:
+### Theory of Operation
 
 SWEET 16 execution mode begins with a subroutine call to SW16. All 6502 registers are saved at this time, to be restored when a SWEET 16 RTN instruction returns control to the 6502. If you can tolerate indefinate 6502 register contents upon exit, approximately 30 usec may be saved by entering at SW16 + 3. Because this might cause an inadvertant switch from Hex to Decimal mode, it is advisable to enter at SW16 the first time through.
 
@@ -851,7 +851,7 @@ the opcode. By assigning all the entries to a common page, only a single byte to
 
 To save code, the subroutine entry address (minus 1) is pushed onto the stack, high-order byte first. A 6502 RTS (return from subroutine) is used to pop the address off the stack and into the 6502 PC (after incrementing by 1). The net result is that the desired subroutine is reached by executing a subroutine return instruction!
 
-### Opcode Subroutines:
+### Opcode Subroutines
 
 The register op routines make use of the 6502 'zero page indexed by X' and 'indexed by X direct' addressing modes to access the specified registers and indirect data. The 'result' of most register ops is left in the specified register and can be sensed by subsequent branch instructions, since the register specification is saved in the high-order byte of R14. This specification is changed to indicate R0 (ACC) for ADD and SUB instructions and R13 for the CPR (compare) instruction.
 
@@ -867,11 +867,11 @@ The BK op actually executes a 6502 break instruction (BRK), transferring control
 
 Any number of subroutine levels may be implemented within SWEET 16 code via the BS (Branch to Subroutine) and RS (Return from Subroutine) instructions. The user must initialize and otherwise not disturb R12 if the SWEET 16 subroutine capability is used since it is utilized as the automatic return stack pointer.
 
-### Memory Allocation:
+### Memory Allocation
 
 The only storage that must be allocated for SWEET 16 variables are 32 consecutive locations in page zero for the SWEET 16 registers, four locations to save the 6502 register contents, and a few levels of the 6502 subroutine return address stack. if you don't need to preserve the 6502 register contents, delete the SAVE and RESTORE subroutines and the corresponding subroutine calls. This will free the four page zero locations ASAV, XSAV, YSAV, and PSAV.
 
-### User Modifications:
+### User Modifications
 
 You may wish to add some of your own instructions to this implementation of SWEET 16. If you use the unassigned opcodes $0E and $0F, remember that SWEET 16 treats these as 2-byte instructions. You may wish to handle the break instruction as a SWEET 16 call, saving two bytes of code each time you transfer into SWEET 16 mode. Or you may wish to use the SWEET 16 BK (break) op as a 'CHAROUT' call in the interrupt handler. You can perform absolute jumps within SWEET 16 by loading the ACC (R0) with the address you wish to jump to (minus 1) and executing a ST R15 instruction.
 

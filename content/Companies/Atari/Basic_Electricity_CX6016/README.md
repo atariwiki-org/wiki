@@ -2,17 +2,17 @@
 
 Donated by Allan Bushman: Allan, thousand thanks from the Atari community for your outstanding help! :-)
 
-## Boxcover:
+## Boxcover
 
 ![](attachments/Basic_Electricity_CX6016_.jpg)
 Boxcover of Basic Electricity CX6016
 
-## Content:
+## Content
 
 ![](attachments/Official_content.jpg)
 Content of Basic Electricity CX6016
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 ![](attachments/Lesson_A_Side_1-Properties-Units_and_Symbols.jpg)
 Properties, Units \& Symbols
@@ -54,7 +54,7 @@ Reactance, Circuits
 
 - [http://data.atariwiki.org/FLAC/BE/Lesson\_D\_Side\_2-Reactance\_Circuits.flac](http://data.atariwiki.org/FLAC/BE/Lesson_D_Side_2-Reactance_Circuits.flac) ; size: 144.3 MB
 
-## Images:
+## Images
 
 ![](attachments/BE01.jpg)
 Basic Electricity CX6016 - figure 1

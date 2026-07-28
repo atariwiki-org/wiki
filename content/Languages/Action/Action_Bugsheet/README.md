@@ -831,7 +831,7 @@ with the following lines:
 
 First of all, you need to know which version of the manual you have. If Part III is the Language, then you have the first version of the manual. Otherwise, you have the second (newest) version. Unfortunately, both manuals contain content as well as typographical errors. We'll skip the typos and concentrate on the content errors, since typos don't impair your understanding of the language (although you may wonder where we learned to spell).
 
-### VERSION 1 ERRATA:
+### VERSION 1 ERRATA
 
 PAGE   ERROR
 
@@ -913,7 +913,7 @@ Also, error 62 is error 61, and 54 \& 56 do not exist.
 
 197    In the PrintF statement, %D should be changed to %U.
 
-### VERSION 2 ERRATA:
+### VERSION 2 ERRATA
 
 PAGE   ERROR
 

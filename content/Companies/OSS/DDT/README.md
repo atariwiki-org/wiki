@@ -2,7 +2,7 @@
 
 Copyright (C) 1982, 1983 by James J. Dunion and Optimized Systems Software, Inc.
 
-## ATR-Image:
+## ATR-Image
 
 - [DDT-Dunions\_Debugging\_Tool.atr](attachments/DDT-Dunions_Debugging_Tool.atr) ATR-Image of the Debugger
 
@@ -12,10 +12,10 @@ Loading instructions:
 - type SHELL1.OBJ
 - press RETURN
 
-## Manual:
+## Manual
 
 - [Dunion's Debugging Tool (DDT) Rev. 1.0 manual](attachments/DDT_1.0_Manual.pdf) (C) 1984 by James J. Dunion and Optimized Systems Software, Inc.
 
-## Source Code:
+## Source Code
 
 - [DDT\_Source\_Code.txt](attachments/DDT_Source_Code.txt)

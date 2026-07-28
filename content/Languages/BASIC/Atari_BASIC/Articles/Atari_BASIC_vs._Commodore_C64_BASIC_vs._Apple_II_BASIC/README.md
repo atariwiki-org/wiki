@@ -2,7 +2,7 @@
 
 ## The main goal of this site is to show the user the different results from the BASIC language versions of Atari, Commodore C64 and Apple II.
 
-### Atari BASIC:
+### Atari BASIC
 
 ![](attachments/Atari1.jpg)
 
@@ -10,11 +10,11 @@
 
 ![](attachments/Atari3.jpg)
 
-### Commodore C64 BASIC:
+### Commodore C64 BASIC
 
 ![](attachments/C64.jpg)
 
-### Apple II BASIC:
+### Apple II BASIC
 
 ![](attachments/Apple1.jpg)
 

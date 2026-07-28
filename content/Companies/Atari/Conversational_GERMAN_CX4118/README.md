@@ -1,6 +1,6 @@
 # Conversational GERMAN (CX4118)
 
-## ATR-Images:
+## ATR-Images
 
 made out of the FLAC-Images:
 
@@ -24,11 +24,11 @@ made out of the FLAC-Images:
 
 - [Conversational\_GERMAN-CX4118-Unit\_10-Cassette\_E-Side\_2.atr](attachments/Conversational_GERMAN-CX4118-Unit_10-Cassette_E-Side_2.atr) Unit 10 disk
 
-## Manual:
+## Manual
 
 [ATARI\_Conversational\_German.pdf](../../../../media/Companies/Atari/Atari_Personal_Financial_Management_System/Conversational_GERMAN_CX4118/attachments/ATARI_Conversational_German.pdf) ; size: 22.9 MB; (C) 1980 Atari
 
-## FLAC-Images:
+## FLAC-Images
 
 - [http://data.atariwiki.org/FLAC/GERMAN/Conversational\_GERMAN-CX4118-Unit\_1-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/GERMAN/Conversational_GERMAN-CX4118-Unit_1-Cassette_A-Side_1.flac) ; size: 133.0 MB ; Unit 1 cassette
 
@@ -50,17 +50,17 @@ made out of the FLAC-Images:
 
 - [http://data.atariwiki.org/FLAC/GERMAN/Conversational\_GERMAN-CX4118-Unit\_10-Cassette\_E-Side\_2.flac](http://data.atariwiki.org/FLAC/GERMAN/Conversational_GERMAN-CX4118-Unit_10-Cassette_E-Side_2.flac) ; size: 127.2 MB ; Unit 10 cassette
 
-## Box-Pictures:
+## Box-Pictures
 
 ![](attachments/ATARI_Conversational_German.jpg) (C) 1980 Atari
 
 ![](attachments/ATARI_Conversational_GERMAN_CX4118-6.jpg) (C) 1980 Atari
 
-## Autor:
+## Autor
 
 Derzeit leider noch unbekannt. :-(
 
-## Danksagung:
+## Danksagung
 
 Ohne die folgenden Personen wäre dieses Projekt nicht möglich gewesen, ihnen gilt daher der Dank:
 

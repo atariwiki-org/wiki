@@ -19,7 +19,7 @@ von Andreas Graf,
 
 Diplomphysiker, ehem. wissenschaftlicher Mitarbeiter an der Akademie der Wissenschaften der DDR. Er beschäftigte sich mit Systemsoftwareentwicklung für spezielle Rechnersysteme und schrieb den Bascoder für die ATARI-Typen XL und XE, wobei auch ein spezieller BASIC-Interpreter entstand. Weiter fertigte er die hier vorliegende Beschreibung des Bascoders an.
 
-## Anleitung für Atari:
+## Anleitung für Atari
 
 - [atari\_basicode.pdf](../../media/BASICODE/attachments/atari_basicode.pdf) ; aus:"BASICODE mit Programmen auf Schallplatte für Heimcomputer", Prof. Völz, 1990, 208 S. \& 1 Datenplatte
 
@@ -27,7 +27,7 @@ Diplomphysiker, ehem. wissenschaftlicher Mitarbeiter an der Akademie der Wissens
 
 - [xdos\_basicode\_v11.atr](attachments/xdos_basicode_v11.atr) ; Atari-Bascoder V1.1 von Andreas Graf
 
-### Ladeanweisung:
+### Ladeanweisung
 
 Bitte die Diskette mit OPTION booten. Danach LOAD"D:ROOT:BC3" eingeben. Nach dem READY ist BASICODE betriebsbereit. Nun kann mit LOAD"D:\*.BC3 ein BASICODE-3 Programm geladen und mit RUN gestartet werden. Um wieder ins DOS zu gelangen bitte POKE 9,1 eigeben und RESET drücken. Einen DOS-Befehl gibt es leider nicht. Um sich das Directory einer Diskette anzusehen, ist etwas Programmcode erforderlich. Einfach Zeile 15 mit folgendem Code hinzufügen:
 

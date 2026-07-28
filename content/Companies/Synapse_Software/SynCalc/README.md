@@ -138,7 +138,7 @@ The disk contains a boot loader in the sectors 1-8 and two versions of the progr
 1B72: STA $85}}
 ... load main part
 
-## Findings from Mike Silva:
+## Findings from Mike Silva
 
 Zero page
 

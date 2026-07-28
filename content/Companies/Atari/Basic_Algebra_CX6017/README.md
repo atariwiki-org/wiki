@@ -1,11 +1,11 @@
 # Basic Algebra (CX6017)
 
-## Content:
+## Content
 
 ![](attachments/Basic_Algebra_CX6017.jpg)
 Content of Basic Algebra CX6017
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 - [http://data.atariwiki.org/FLAC/BA/Basic\_Algebra\_CX6017-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/BA/Basic_Algebra_CX6017-Cassette_A-Side_1.flac) ; size: 183.3 MB
 

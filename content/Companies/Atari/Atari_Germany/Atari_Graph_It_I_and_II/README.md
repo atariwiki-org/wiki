@@ -18,9 +18,9 @@ Erst in 2017 konnten die folgenden Entdeckungen gemacht werden und in die Seite 
 
 Nach derzeitigem Stand sieht es so aus, als ob Atari bei allen Kassettenprogrammen, welche ein derartiges Cover hatten, gänzlich auf ein Vorladeprogramm verzichtet hat.
 
-## Kurzübersicht zu Graph It:
+## Kurzübersicht zu Graph It
 
-### a) Balkendiagramme:
+### a) Balkendiagramme
 
 - Die Beschreibung des Diagramms darf maximal 20 Zeichen lang sein.
 - Es sind maximal 32 Spalten darstellbar.
@@ -30,7 +30,7 @@ Nach derzeitigem Stand sieht es so aus, als ob Atari bei allen Kassettenprogramm
 - Die Darstellung der Ordinate (y-Achse) ist stets wissenschaftlich und wird immer mit "E" angezeigt.
 - Die Darstellung der Abszisse (x-Achse) wird hingegen linear wiedergegeben.
 
-### b) Kreisdiagramme:
+### b) Kreisdiagramme
 
 - Kreisdiagramme dürfen maximal 12 Teile (Segmente) enthalten.
 - Die Beschreibung des Diagramms (oben) bzw. des Untertitels (unten) darf maximal 20 Zeichen lang sein.
@@ -38,19 +38,19 @@ Nach derzeitigem Stand sieht es so aus, als ob Atari bei allen Kassettenprogramm
 - Sofern ein Kreissegment weniger als 1/14 des Gesamtkreises einnimmt, wird dieser Teil als "ETC." dargestellt.
 - Bei vorliegenden Daten können die Prozentanteile der Segmente jeweils automatisch ermittelt werden.
 
-### c) Parametrische Polar-Diagramme:
+### c) Parametrische Polar-Diagramme
 
 - Benötigt wird der Start- und Endwert von Winkel sowie Radius.
 - Optional kann eine Autoskalierung erfolgen.
 
-### d) 2D-Diagramme:
+### d) 2D-Diagramme
 
 - Es können maximal 3 Plots, Kurven, etc. gleichzeitig dargestellt werden.
 - Vier verschiedene Plotgeschwindigkeiten sind verfügbar.
 - Unabhängig davon lässt sich die Plotgeschwindigkeit erhöhen, indem man in den Gleichungen statt: x^2 einfach x\*x verwendet.
 - Optional ist eine automatische Skalierung der Ordinate (y-Achse) möglich.
 
-### e) 3D-Diagramme:
+### e) 3D-Diagramme
 
 - Zwei verschiedene Plotgeschwindigkeiten sind verfügbar.
 - Optional können verborgene Linien entfernt werden.
@@ -67,7 +67,7 @@ Für c) bis e) einschließlich gilt:
 
 - Mit dem Joystick kann man sich x-, y- und z-Werte anzeigen lassen sowie die Steigung bzw. den Winkel Theta (T) bei Polar-Diagrammen.
 
-## CAS-Images:
+## CAS-Images
 
 (englisch):
 
@@ -90,7 +90,7 @@ Für c) bis e) einschließlich gilt:
 - [Graph\_It\_II\_TXG\_9517\_Kassette\_B\_Seite\_1.cas](attachments/Graph_It_II_TXG_9517_Kassette_B_Seite_1.cas) ; bitte mit BASIC-Modul starten, dann den Befehl "CLOAD" eingeben und 2 x RETURN drücken
 - [Graph\_It\_II\_TXG\_9517\_Kassette\_B\_Seite\_2.cas](attachments/Graph_It_II_TXG_9517_Kassette_B_Seite_2.cas) ; bitte mit BASIC-Modul starten, dann den Befehl "CLOAD" eingeben und 2 x RETURN drücken
 
-## ATR-Images:
+## ATR-Images
 
 Atari Graph It CX4109 (englisch, 1980) alle Kassetten-Images auf einem Disk-Image **ohne** Vorprogramm: [Atari\_Graph\_It\_CX4109\_Basic.atr](attachments/Atari_Graph_It_CX4109_Basic.atr)
 Atari Graph It CX4109 (englisch, 1980) alle Kassetten-Images auf einem Disk-Image **mit** Vorprogramm: [Atari\_Graph\_It\_CX4109\_Basic\_Complete\_Cassette\_Import.atr](attachments/Atari_Graph_It_CX4109_Basic_Complete_Cassette_Import.atr)
@@ -103,18 +103,18 @@ Enhancements to Graph It, APX-20074 (englisch, 1982) (C) Howard D. Siebenrock
 
 Atari Graph It TXG9517 (deutsch, 1983) alle Kassetten-Images auf einem Disk-Image **ohne** Vorprogramm: [Graph\_It\_TXG\_9517\_C\_1983\_by\_Atari\_Deutschland\_GMBH.atr](attachments/Graph_It_TXG_9517_C_1983_by_Atari_Deutschland_GMBH.atr)
 
-## Handbücher:
+## Handbücher
 
 Für den Bildschirm optimiertes Handbuch (englisch) als PDF-Datei (3,1 MB): [Graph\_It\_CX4109\_Screen\_Version.pdf](attachments/Graph_It_CX4109_Screen_Version.pdf)
 Für den Drucker optimiertes Handbuch (englisch) als PDF-Datei (849,6 MB): [Graph\_It\_CX4109\_Print\_Version.pdf](../../../../../media/Companies/Atari/Atari_Germany/Atari_Graph_It_I_and_II/attachments/Graph_It_CX4109_Print_Version.pdf)
 
-## Source Codes:
+## Source Codes
 
 1. Version von 1980: [1Balken-alt-190\_lines.txt](attachments/1Balken-alt-190_lines.txt) ; vom Unterprogramm: Kreis- und Balkendiagramme; 69 Sektoren ; 190 Zeilen Code
 2. Version von 1982: [3Balken-HOWARD-274\_lines.txt](attachments/3Balken-HOWARD-274_lines.txt) ; vom Unterprogramm: Kreis- und Balkendiagramme; 92 Sektoren ; 274 Zeilen Code
 3. Version von 1983: [2Balken-neu-237\_lines.txt](attachments/2Balken-neu-237_lines.txt) ; vom Unterprogramm: Kreis- und Balkendiagramme; 81 Sektoren ; 237 Zeilen Code
 
-## Bilder:
+## Bilder
 
 ![](attachments/Cover.jpg)
 Boxcover 1 von Graph It (englisch) 1980
@@ -206,12 +206,12 @@ Graph It II- Kassette B - Seite 1 - 3D-Grafiken ; Danke an Mr. Bacardi!
 ![](attachments/Polar_tape_b_side_2.jpg)
 Graph It II- Kassette B - Seite 2 - Polardarstellung ; Danke an Mr. Bacardi!
 
-## Autoren:
+## Autoren
 
 Version 1980: [Lane Winner](http://www.atarimania.com/list_utilities_atari-400-800-xl-xe-winner-lane_team_2574_8_U.html)
 Version 1982-1983: [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](../../Enhancements_to_Graph_It/README.md)
 
-## Danksagung:
+## Danksagung
 
 Ohne die folgenden Personen wäre dieses Projekt nicht möglich gewesen, ihnen gilt daher der Dank:
 

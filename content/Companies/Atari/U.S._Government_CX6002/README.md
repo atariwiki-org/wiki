@@ -1,16 +1,16 @@
 # U.S. Government (CX6002)
 
-## Boxcover:
+## Boxcover
 
 ![](attachments/U.S._Government_CX6002-Cover.jpg)
 Boxcover of U.S. Government CX6002
 
-## Content:
+## Content
 
 ![](attachments/U.S._Government_CX6002-Content.jpg)
 Content of U.S. Government CX6002
 
-## Cassette-Images in FLAC-format:
+## Cassette-Images in FLAC-format
 
 - [http://data.atariwiki.org/FLAC/US/U\_S\_Government\_CX6002-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/US/U_S_Government_CX6002-Cassette_A-Side_1.flac) ; size: 176.1 MB
 
@@ -28,7 +28,7 @@ Content of U.S. Government CX6002
 
 - [http://data.atariwiki.org/FLAC/US/U\_S\_Government\_CX6002-Cassette\_D-Side\_2.flac](http://data.atariwiki.org/FLAC/US/U_S_Government_CX6002-Cassette_D-Side_2.flac) ; size: 184.6 MB
 
-## Images:
+## Images
 
 ![](attachments/USG-5.jpg)
 U.S. Government CX6002 - figure 1

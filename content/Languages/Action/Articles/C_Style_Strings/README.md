@@ -237,7 +237,7 @@ Die Routinen:
 
 - wandelt einen 'C'-String in eine numerische Variable um
 
-## Anmerkungen:
+## Anmerkungen
 
 Wenn die NULL Variable am Anfang der Routinensammlung in einen anderen Wert als ATASCII 0 geändert wird, so wird die CSCompare Routine keine korrekten Werte liefern.
 

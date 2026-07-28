@@ -1,10 +1,10 @@
 # Atari's Programmierhilfen-Diskette Nr. 2
 
-## ATR-Image:
+## ATR-Image
 
 [Ataris\_Programmierhilfen-Diskette\_Nr.2.atr](attachments/Ataris_Programmierhilfen-Diskette_Nr.2.atr)
 
-## Pictures:
+## Pictures
 
 ![](attachments/Ataris_Programmierhilfen-Diskette_Nr.2.jpg)
 Ataris Programmierhilfen-Diskette Nr.2

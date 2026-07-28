@@ -1,6 +1,6 @@
 # Huishoud-Boek (Disk: DXN 421)
 
-## Disk-Image:
+## Disk-Image
 
 [Huishoudboek\_DXN\_421.zip](attachments/Huishoudboek_DXN_421.zip)
 

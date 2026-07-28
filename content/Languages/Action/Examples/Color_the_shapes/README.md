@@ -87,7 +87,7 @@ Among the things that I haven't done is explain how some of the data is generate
 
 This game is a good example of two things. The first is that Action! makes structured programming very easy. The second is that, with good simple logic on the overall design of a program, it can be split into smaller and smaller parts. Each part can be further divided into parts that are easily programmed.
 
-## I hope you enjoy **Color the Shapes**. My daughter and I had fun inventing it. It's a good game of logic from which you can learn about programming.
+## I hope you enjoy**Color the Shapes**. My daughter and I had fun inventing it. It's a good game of logic from which you can learn about programming.
 
 ## ''Sol Guber has been programming for his Atari 800 for five years now. The idea for this game came from his seven-year-old daughter Rebecca, to whom computers are a natural part of life.''
 

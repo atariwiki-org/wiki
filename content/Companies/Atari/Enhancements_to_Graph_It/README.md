@@ -33,7 +33,7 @@ For retrieving stored plots on disk back again, please load the specific program
 
 Please take into account, that Enhancements to Graph It is from 1982, but with the option of short retrieving stored slides, we here have a first outlook for the need of a presentation program, we now all know as PowerPoint. The creation of a 3D-plot in Enhancements to Graph It can take up to several hours. Retrieving the result can be done in seconds. Again, this shows one more time, what your Atari can do for you! :-)
 
-## Images:
+## Images
 
 ![](attachments/Intro.jpg)
 Enhancements to Graph It - Intro Screen
@@ -41,23 +41,23 @@ Enhancements to Graph It - Intro Screen
 ![](attachments/Original_Disk_Content.jpg)
 Enhancements to Graph It - Original Disk Content
 
-## ATR-Images:
+## ATR-Images
 
 - [Saved\_Plots.atr](attachments/Saved_Plots.atr) ; all plots from the original Graph It manual, this time with Enhancements to Graph It; stored in suffix-format below
 - [Atari Graph It I \& II (CX4109 (Englisch), TXG9517 (deutsch))](../Atari_Germany/Atari_Graph_It_I_and_II/README.md) ; all cassettes are on one atr-diskette-image
 - [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock-Original.atr](http://gury.atari8.info/details_software/1026.php) ; the original APX-diskette-image on Bostjan Gorisek's great site
 - [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock-Working.atr](attachments/Enhancements_to_Graph_It_APX-20074_C_1982_Howard_D._Siebenrock-Working.atr) ; working, already merged program on an atr-image
 
-## Manuals:
+## Manuals
 
 - [Atari Graph It I \& II (CX4109 (Englisch), TXG9517 (deutsch))](../Atari_Germany/Atari_Graph_It_I_and_II/README.md) ; please see here for the original, corrected and bug free Graph It-manual
 - [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock](attachments/Enhancements_to_Graph_It_APX-20074_C_1982_Howard_D._Siebenrock.pdf) ; size: 7.8 MB
 
-## ZIP-Images:
+## ZIP-Images
 
 - [Screenshots.zip](attachments/Screenshots.zip) all plots from the original Graph It manual, this time with Enhancements to Graph It and in JPG-format; size: 1.4 MB
 
-## Suffix:
+## Suffix
 
 Suffix '\*' Delete Files
 Suffix 'D2D' XY Plot-File
@@ -68,7 +68,7 @@ Suffix 'DPL' Polar Plot-File
 
 ## Author: If you would like to contact the author: 9309 W. 98 Court Westminster, CO 80020, U.S.A.
 
-## Acknowledgments:
+## Acknowledgments
 
 - Howard D. Siebenrock
 - Allan from AtariAge
@@ -79,7 +79,7 @@ Suffix 'DPL' Polar Plot-File
 - Carsten Strotmann
 - Bostjan Gorisek
 
-## Examples:
+## Examples
 
 ![](attachments/02._Sales_Increase.jpg)
 Enhancements to Graph It - Sales Increase

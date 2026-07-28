@@ -2,7 +2,7 @@
 
 A collection of USB Drivers for Users
 
-## What is on the disk:
+## What is on the disk
 
 || Filename || Comment ||
 | DOS.SYS | Atari Dos 2.5 FMS |

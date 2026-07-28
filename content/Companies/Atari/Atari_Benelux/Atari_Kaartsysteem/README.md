@@ -6,35 +6,35 @@ The package contains two disks. One program disk and one data disk.
 
 > > > Many thanks to **Freddy Offenga** for supplying the atr-files and the pictures!
 
-## ATR-Images:
+## ATR-Images
 
 Disk 1: [Atari\_Kaartsysteem\_Programmadiskette\_DX415A.atr](attachments/Atari_Kaartsysteem_Programmadiskette_DX415A.atr)
 Disk 2: [Atari\_Kaartsysteem\_Data\_Diskette\_1\_DXN415B.atr](attachments/Atari_Kaartsysteem_Data_Diskette_1_DXN415B.atr)
 
-## Manual picture:
+## Manual picture
 
 ![](attachments/kaartsysteem_handleiding.jpg)
 
-## Manual:
+## Manual
 
 [Kaartsysteem\_Manual.pdf](attachments/Kaartsysteem_Manual.pdf)
 
-## Screenshots:
+## Screenshots
 
 ![](attachments/kaartsysteem_screenshot1.jpg)
 ![](attachments/kaartsysteem_screenshot2.jpg)
 
-## Cover:
+## Cover
 
 ![](attachments/kaartsysteem_inlay.jpg)
 Atari Kaartsysteem Cover
 
-## Inside of the box:
+## Inside of the box
 
 ![](attachments/kaartsysteem_binnenkant.jpg)
 Atari Kaartsysteem inside
 
-## Media pictures:
+## Media pictures
 
 ![](attachments/kaartsysteem_disk_1.jpg)
 Atari Kaartsysteem Disk 1
