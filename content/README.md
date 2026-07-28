@@ -2250,7 +2250,9 @@
    
   - [SuperDOS](People/Paul_Nicholls/SuperDOS/README.md)
     
-  - [XDOS](<People/Stefan Dorndorf/XDOS_2.43/README.md>)
+  - [Happy-Computer DOS II+/D](People/Stefan_Dorndorf/Happy-Computer_DOS_II_D/README.md)
+    
+  - [XDOS](People/Stefan_Dorndorf/XDOS/README.md)
     
  - [Stefan Haubenthal](People/Stefan_Haubenthal/README.md)
    
