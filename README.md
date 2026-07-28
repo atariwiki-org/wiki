@@ -42,6 +42,10 @@ The following replacement rules apply.
 - If Part-numbers are known, the are given in parentheses, with comma-separated numbers
 - Do not add colons at the end of a heading line.
 
+## Article Wording
+
+The aim of the AtariWiki is to provide information in an accurate and well-readable form. It is not a pure historic archive and does not  reproduce old content 1:1 if it has typos or errors. Therefore, also original documents that are converted into articles will contains such corrections without further indictation.
+
 ````
 # Title (CX1235, TX23456)
 
