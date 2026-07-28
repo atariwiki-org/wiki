@@ -1,6 +1,6 @@
 # XIO Command Codes for the DOS Handler (D:)
 
-| code  | Atari DOS 2.5       | MyDOS              | BeweDOS            | TurboDOS           | XDOS               | BiboDos            | SpartaDOS 2.3/3.2, Real.DOS[^3]() | SpartaDOS X[^4]() | SuperDOS
+| code  | Atari DOS 2.5       | MyDOS              | BeweDOS            | TurboDOS           | XDOS               | BiboDos            | SpartaDOS 2.3/3.2, Real.DOS [^3] | SpartaDOS X[^4] | SuperDOS
 |-|-|-|-|-|-|-|-|-|-|
 |  3     | OPEN                | OPEN                | OPEN                | OPEN                | OPEN                | OPEN                | OPEN                | OPEN                | OPEN
 |  5     | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD          | GET RECORD
@@ -58,7 +58,7 @@ We need an update on this list for
 - Ron Hamilton for finding the Error in Command "PUT RECORD"
 - Konrad M. Kokoszkiewicz
 
-[1]() Note und Point - der absolute Sector und das Byte innerhalb des Sectors müssen angegeben werden/ werden zurück gegeben.
-[2]() Note und Point - das Byteoffset innerhalb der geöffneten Datei müssen angegeben werden/ werden zurück gegeben.
-[3]() Real.DOS is based on SpartaDOS 3.3
-[4]() See Atariki [Lista funkcji specjalnych CIO według urządzeń](http://atariki.krap.pl/index.php/Lista_funkcji_specjalnych_CIO_według_urządzeń)
+[^1]: Note und Point - der absolute Sector und das Byte innerhalb des Sectors müssen angegeben werden/ werden zurück gegeben.
+[^2]: Note und Point - das Byteoffset innerhalb der geöffneten Datei müssen angegeben werden/ werden zurück gegeben.
+[^3]: Real.DOS is based on SpartaDOS 3.3
+[^4]: See Atariki [Lista funkcji specjalnych CIO według urządzeń](http://atariki.krap.pl/index.php/Lista_funkcji_specjalnych_CIO_według_urządzeń)
