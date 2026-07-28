@@ -18,4 +18,4 @@ A small, fast command-line [DOS](../../../DOS/README.md), that does not require 
 ## Pictures
 
 - XDOS 2.4N and YASH 1.0 for SIO2USB<br>![](attachments/XDOSYASH.png)
-- XDOS 2.4N and YASH 1.0 for SIO2USB<br>![](attachments/XDOS251.png)
+- XDOS 2.51<br>![](attachments/XDOS251.png)
