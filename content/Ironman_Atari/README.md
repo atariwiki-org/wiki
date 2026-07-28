@@ -53,7 +53,7 @@ Additional disclaimer: I am the author of ATasm and envisionPC.
 - ATasm v #5:  ATasm is highly compatible with the original OSS Mac/65 native compiler.  ATasm is written in C, and compiles without modification on any platform that has a GCC compiler.  ATasm has been specifically designed for the development of programs for the Atari home computer.  It can produces Atari native binary load object files, raw cartridge images, and can optionally target the machine state files produced by many emulators.  Binary load files can also be written to disk images for easy loading in other emulators or onto real hardware via SIO2PC.  It is available at [http://atasm.sourceforge.net](http://atasm.sourceforge.net)
 - Another popular assembler that is also Atari specific is XASM by Fox of Taquart. This assembler is compatible with JBW's Quick Assembler, which was the primary assembler used in Poland and other eastern European countries during the 1990s. XASM includes several pseudo-instructions (like mva) and pseudo-indexing modes. In addition, it can generate Atari native binary object files and has includes utilities to create boot disk images.  XASM can be found at [http://atariarea.krap.pl/x-asm/](http://atariarea.krap.pl/x-asm/)
 - If you are looking for a Linux assembler that is Quik Assembler compatible, try a program called Zooey, found at [http://atari8.sourceforge.net/zooey.html](http://atari8.sourceforge.net/zooey.html)
-- Another assembler worth considering is the MADS assembler, found at http://mads.atari8.info/;  The latest documentation is always provided in Polish, however there is an English translation of version 1.9.5 provided here: [http://mads.atari8.info/mads\_eng.html](http://mads.atari8.info/mads_eng.html)
+- Another assembler worth considering is the MADS assembler, found at http://mads.atari8.info/;  The latest documentation is always provided in Polish, however there is an English translation of version 1.9.5 provided [here](http://mads.atari8.info/mads_eng.html).
 
 ### Compilers
 
@@ -212,8 +212,8 @@ the appropriate color in each display list as detailed below:
 
 To display a HIP picture, a special display list set can be constructed that alternates
 between screens every frame.  In addition, two DLI routines need to be written: one to
-alternate between GTIA modes 9 and 10 and the other to alternate between modes 10 and
-9.  A simple display routine is included below.
+alternate between GTIA modes 9 and 10 and the other to alternate between modes 10 and 9.
+A simple display routine is included below.
 
 HIP pictures are difficult to create because the pixels cannot be independently set.  This is
 due to the fact that we are simulating a 160 pixel wide display by overlapping two offset
