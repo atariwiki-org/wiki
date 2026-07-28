@@ -54,7 +54,7 @@
 
 ### 128 Byte sectors (single density)
 
-|Partition<br>>SizeSectors|512 K<br>4.095|1 M<br>8.191|2 M<br>16.383|4 M<br>32.767|8 M<br>65.535|Remark
+|Partition<br>SizeSectors|512 K<br>4.095|1 M<br>8.191|2 M<br>16.383|4 M<br>32.767|8 M<br>65.535|Remark
 |---|----|-----|-----|-----|-----|-------|------
 |Top DOS 1.5 Prof|Y|Y|Y|Y|Y|Top DOS Prof. should support subdirs and harddisks,but I have no clue how! (manuals and information missing!)
 |MyDOS 4.5x|Y|Y|Y|Y|Y|
