@@ -1,26 +1,26 @@
 # SpartaDOS
 
-SpartaDOS is a completely different command-line DOS modelled after MS-DOS, though it is perfectly capable of reading all Atari DOS and MyDOS disks. There are many versions available. Hopefully this list will help keep them all straight. SpartaDOS X is further developed via the [SpartaDOS X Upgrade Project](http://sdx.atari8.info/index.php)
+SpartaDOS is a completely different command-line DOS modeled after MS-DOS, though it is perfectly capable of reading all Atari DOS and MyDOS disks. There are many versions available. Hopefully this list will help keep them all straight. SpartaDOS X is further developed via the [SpartaDOS X Upgrade Project](http://sdx.atari8.info/index.php)
 
 **Hint: In emulators please choose: 'No PBI Expansion', otherwise SpartaDOS may not work correct.**
 
 DOS 2 Equivalents:
 The following is a list of the commands from the AtariDOS 2.0S menu and their equivalents in SpartaDOS X:
-A-DISK DIRECTORY **DIR and DIRS**
-B-RUN CARTRIDGE **BASIC for internal BASIC in XL/XE computers, CAR for an external cartridge**
-C-COPY FILE **COPY**
-D-DELETE FILE **ERASE, DELETE or DEL**
-E-RENAME FILE **RENAME or REN**
-F-LOCK FILE **ATR +P**
-G-UNLOCK FILE **ATR -P**
-H-WRITE DOS **not needed - SDX boots from cartridge**
-I-FORMAT DISK **FORMAT**
-J-DUPLICATE DISK **COPY or MENU**
-K-BINARY SAVE **SAVE**
-L-BINARY LOAD **program name, LOAD**
-M-RUN AT ADDRESS **External command RUN from SDXTK**
-N-CREATE MEM.SAV **SET CAR and SET BASIC**
-O-DUPLICATE FILE **MENU**
+- A-DISK DIRECTORY **DIR and DIRS**
+- B-RUN CARTRIDGE **BASIC for internal BASIC in XL/XE computers, CAR for an external cartridge**
+- C-COPY FILE **COPY**
+- D-DELETE FILE **ERASE, DELETE or DEL**
+- E-RENAME FILE **RENAME or REN**
+- F-LOCK FILE **ATR +P**
+- G-UNLOCK FILE **ATR -P**
+- H-WRITE DOS **not needed - SDX boots from cartridge**
+- I-FORMAT DISK **FORMAT**
+- J-DUPLICATE DISK **COPY or MENU**
+- K-BINARY SAVE **SAVE**
+- L-BINARY LOAD **program name, LOAD**
+- M-RUN AT ADDRESS **External command RUN from SDXTK**
+- N-CREATE MEM.SAV **SET CAR and SET BASIC**
+- O-DUPLICATE FILE **MENU**
 
 ## CAR Images
 
@@ -96,7 +96,8 @@ specific development of the 3.3 versions.
 Greatly enhanced/expanded compared to disk- based SpartaDOS; completely
 different source code. Several versions produced:
 
-||Version||Datei||vendor||
+| Version| Date      |Vendor|
+|--------|-----------|------- 
 |  4.22  | 11-05-95  | released by Fine Tooned Engineering (FTe) |
 |  4.21  | 7-10-89   | released by ICD |
 |  4.20  | 2-06-89   | released by ICD |
