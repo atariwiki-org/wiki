@@ -25,14 +25,14 @@
 
 |Luminance Value|Description| Visualization 
 |---------------|-----------|---------------
-|0 $0| dark| $\color{#000}███$
-|2 $2| | $\color{#222}{\textsf{███}}$
-|4 $4| | <div style="color:#444">███</div>
-|6 $6| | <div style="color:#666">███</div>
-|8 $8| | <div style="color:#888">███</div>
-|10 $A| |  <div style="color:#aaa">███</div>
-|12 $C| | <div style="color:#ccc">███</div>
-|14 $E|light| <div style="color:#eee">███</div>
+|0 $0| dark | $\color{#000000}███$
+|2 $2|      | $\color{#202020}███$
+|4 $4|      | $\color{#404040}███$
+|6 $6|      | $\color{#606060}███$
+|8 $8|      | $\color{#808080}███$
+|10 $A|     | $\color{#a0a0a0}███$
+|12 $C|     | $\color{#c0c0c0}███$
+|14 $E|light| $\color{#e0e0e0}███$
 
 ## Compute a color value
 
