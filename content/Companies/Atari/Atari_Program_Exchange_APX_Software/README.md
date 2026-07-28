@@ -31,7 +31,8 @@ APX-Catalog, Winter 1981
 
 ## Manuals (191/254) 75 %
 
-|| # || APX-Serial-Number|| Name|| Category|| Image|| Info
+| # | APX-Serial-Number | Name | Category | Image | Info
+|---|-------------------|------|----------|-------|-----
 | 1| APX-10043 \& APX-20043| [747\_Landing\_Simulator](http://data.atariwiki.org/DATA/APX_747_Landing_Simulator.pdf)|         |          |
 | 2| APX-10227 \& APX-20227| [Advanced\_Fingerspelling](http://data.atariwiki.org/DATA/APX_Advanced_Fingerspelling.pdf)|         |          |
 | 3|             APX-20022| [Alien\_Egg](http://data.atariwiki.org/DATA/APX_Alien_Egg.pdf)|         |          |
