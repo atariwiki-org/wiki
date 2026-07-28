@@ -42,10 +42,10 @@ Low quality
 
 ## Cover
 
-||Box front cover||Box back cover
-|![](attachments/Programmere_Deel2_front.jpg)| ![](attachments/Programmere_Deel2_back.jpg)
+- Box front cover<br>![](attachments/Programmere_Deel2_front.jpg)
+- Box back cover<br>![](attachments/Programmere_Deel2_back.jpg)
 
-Box contains of 2 cassettes: TXN4106/A \& TXN4106/B
+The Box contains of 2 cassettes: TXN4106/A and TXN4106/B
 
 ## Media pictures
 

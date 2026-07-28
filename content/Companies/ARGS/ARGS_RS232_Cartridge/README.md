@@ -110,7 +110,8 @@ Es funktionieren nicht
 
 ## Steueradressen: (CCTL + A3)
 
-|| ACIA  || Aufgabe	||  Atari-Bus (Modulschacht)
+| ACIA  | Aufgabe	|  Atari-Bus (Modulschacht)
+|       |           |
 | DATA	  | Ein-/Ausgabe  | $D508/54536
 | STATUS	| IRQ, Fehler, DSR, DCD  | $D509/54537
 | COMMAND  | Parität, Echo, IRQ, RTS | $D50A/54538
