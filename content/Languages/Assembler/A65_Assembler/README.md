@@ -4,6 +4,7 @@ Copyright (C) 1984, 1986, 1989 by Charles W. Marslett
 
 All rights reserved. Permission granted to copy, modify or execute this program for noncommercial purposes only.
 
+````
 A65 (A very simple 6502 assembler)
 
 The A65 assembler is modeled after the Atari MACRO Assembler (AMAC) that
@@ -54,9 +55,9 @@ DW      defines a word, low byte first, as if an indirect pointer
 DS      allocates a number of bytes without storing any data in them
 
 ORG     sets the location counter to a fixed address
-\*=      same as ORG
+*=      same as ORG
 EQU     defines a symbol to have a specific value
-\=       same as EQU
+=       same as EQU
 
 INCLUDE causes the file specified to be inserted at this point in the
 assembly (can be nested if the DOS supports sufficient numbers
@@ -131,6 +132,7 @@ $0D followed by $0A or $0A followed by $0D).  ASM5.ASM was changed.
 
 Charles Marslett
 7/4/89
+````
 
 ## ATR-Images
 
@@ -139,5 +141,3 @@ Charles Marslett
 ## ZIP-Archive
 
 - [A65\_12.ZIP](attachments/A65_12.ZIP) ; ZIP-file of A65 with source code, runtime and manual ; mirror from the original source [Wordmark](http://wordmark.org/mydos.html)
-
-## 

@@ -2406,13 +2406,5 @@
   
 - [XIO Command Codes for the DOS Handler (D:)](XIO_Command_Codes_DOS_Handler/README.md)
   
- - [](XIO_Command_Codes_DOS_Handler/.vs/README.md)
-   
-  - [](XIO_Command_Codes_DOS_Handler/.vs/XIO_Command_Codes_DOS_Handler.slnx/README.md)
-    
-   - [](XIO_Command_Codes_DOS_Handler/.vs/XIO_Command_Codes_DOS_Handler.slnx/FileContentIndex/README.md)
-     
-   - [](XIO_Command_Codes_DOS_Handler/.vs/XIO_Command_Codes_DOS_Handler.slnx/v18/README.md)
-     
 - [6502 Programmieren, Teil 13](Zeile_per_CIO_einlesen_und_Programme_resetfest_machen/README.md)
   

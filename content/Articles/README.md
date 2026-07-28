@@ -264,7 +264,7 @@
 ### Games
 
 - [Caverns of Mars (CX8130)](../Companies/Atari/Caverns_of_Mars_CX8130/README.md)
-- [Computer\_Chess\_CXL\_4009](../Companies/Atari/Computer_Chess_CXL_4009/README.md)
+- [Computer Chess (CXL 4009)](../Companies/Atari/Computer_Chess_CXL_4009/README.md)
 - [Galaxian (CXL4024)](../Companies/Atari/Galaxian_CXL4024/README.md)
 
 ### Learning
