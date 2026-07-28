@@ -20,7 +20,7 @@ If you own an Atari 400 or 800 in the PAL version, please do us a favor and ente
 
 
 
-### OPERATING SYSTEM 255 for Atari 400/800
+### Atari OS 255 for te  Atari 400/800
 
 Many thanks to kr0tki, who found the trace showing that OS 255 is for real!
 On page 8 of:
@@ -32,32 +32,29 @@ Page 8 of: 'All about Cassette Tapes from 1979'
 
 ## Missing Atari Inc. Software
 
-### [The Atari Accountant](../Companies/Atari/The_Atari_Accountant/README.md) 
-Two parts are missing:
-- Accounts Receivable System (CX402), (4 SSDD Diskettes)
-- Inventory Control System (CX403), (5 SSDD Diskettes)
 
-### [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md)
-Three parts are missing:
-Atari Dow Jones Investment Evaluator (CX8124)
-Atari Dow Jones Investment Evaluator (CX8125)
-Atari Dow Jones Investment Evaluator (CX8127)
+### Atari Assembler Editor Cartridge Source Code
+
+### Atari Editor (CX8105)
+Maybe replaced by the Atari Program Text Editor?
+
+### [Atari FutureMakers - Through the Star Bridge (DX5076)](http://www.atarimania.com/game-atari-400-800-xl-xe-futuremakers-through-the-star-bridge_6419.html)
+Copyright (C) 1984 Atari, Inc. Many, many thanks to Hans Reutter for the info, Allan Bushman for the high resolution grab and Atarimania for hosting!
+
+### [Atari FutureMakers - This Is Ground Control (DX5077) ](http://www.atarimania.com/game-atari-400-800-xl-xe-futuremakers-this-is-ground-control_6420.html)
+Copyright (C) 1984 Atari, Inc. Many, many thanks to Hans Reutter for the info, Allan Bushman for the high resolution grab and Atarimania for hosting!
+
+### [Atari Force - Liberator](<https://www.emuparadise.me/M.A.M.E._-_Multiple_Arcade_Machine_Emulator_ROMs/Liberator_(set_1)/14238>)
+Copyright (C) 1982 Atari, Inc.
+
 
 ### [Atari Home Finance](../Companies/Atari/Atari_Home_Finance/README.md)
 
 ### [Atari Learning System Software](../Companies/Atari/Atari_Learning_System_Software/README.md) 
 Completely missing!
 
-
-### Atari Assembler Editor Cartridge Source Code
-
 ### Atari Macro Assembler (AMAC) and Program Text Editor Source Code
 
-### Atari Editor CX8105
-Maybe replaced by the Atari Program Text Editor?
-
-### Atari Statistics II CX8112 Disk 
-Was it ever finished?
 
 ### [Atari Pascal (APX-20102)](../Companies/Atari/Atari_Program_Exchange_APX_Software/Atari_Pascal_APX-20102/README.md)
 
@@ -67,14 +64,33 @@ Was it ever finished?
 - CX8115 Pascal-Native Code (planned, but never released, because 128 KB RAM and 2 disk drives were needed)
 - CX8116 Pascal-Linker (planned, but never released, because 128 KB RAM and 2 disk drives were needed)
 
+### Atari Statistics II (CX8112) Disk 
+Was it ever finished?
+
+### Atari Pole Position II
+title by Namco; never shipped, but exists!)
+
+### [The Atari Accountant](../Companies/Atari/The_Atari_Accountant/README.md) 
+Two parts are missing:
+- Accounts Receivable System (CX402), (4 SSDD Diskettes)
+- Inventory Control System (CX403), (5 SSDD Diskettes)
+
+### [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md)
+Three parts are missing:
+- Atari Dow Jones Investment Evaluator (CX8124)
+- Atari Dow Jones Investment Evaluator (CX8125)
+- Atari Dow Jones Investment Evaluator (CX8127)
+
+
 ## Missing German Atari Software
 
-### Atari Datenbank (DXG 5723) Copyright (C) 1983 Atari Elektronik Vertriebs GmbH
+### Atari Datenbank (DXG 5723)
+Copyright (C) 1983 Atari Elektronik Vertriebs GmbH
 
 Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. Es kann sich jedoch um die deutsche Version von SynFile+ handeln, die exklusiv für Atari entwickelt wurde. Das Jahr 1983 stimmt. Ferner wird das Basic-Modul benötigt; auch das stimmt hier. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)
 
 ![](attachments/Atari_Datenbank_DXG_5723_c_1983.jpg)
-Atari Datenbank DXG 5723 Copyright (c)) 1983 Atari Elektronik Vertriebs GmbH ; Quelle: Atari ComputerSysteme--Software-Katalog (1983)
+Atari Datenbank (DXG 5723) Copyright (c)) 1983 Atari Elektronik Vertriebs GmbH ; Quelle: Atari ComputerSysteme--Software-Katalog (1983)
 
 ### Atari Music Spiele
 Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferner ist noch nicht einmal eine Boxenhülle als Bild vorhanden. In keinem Katalog, in keiner Preisliste und in keinem Handbuch wurde hierzu eine Spur gefunden! Dennoch stammt die Information aus einer sehr seriösen Quelle, die wir ernst nehmen. Sollte jemand im Besitz dieser Software sein, würden wir uns über eine Rückmeldung sehr, sehr freuen. :-)
@@ -83,23 +99,23 @@ Hierzu ist zu sagen, dass bis heute keine Version öffentlich bekannt ist. Ferne
 Wurde es je fertig?
 
 
-### Missing Dorsett Education Tapes
+## Missing Dorsett Educational Systems Tapes
 
 Some tapes were severely damaged and therefore couldn't be digitized. If anyone is in possession of the following tapes, please give us a message or a post [here](http://atariage.com/forums/topic/251713-desperate-call-for-help-on-missing-dorsett-tapes/). We really need your help and appreciate just any hint on the programs, who seem to be lost in time, like tears in rain.
 
-The left ones to digitize are as follows:
+The ones left to be digitizde are below.
 
-- General Shop Practices
-    - Oa1: Tool Identification Lesson, Part 1
-    - Oa7: Discussion of a Two-Cycle Engine
-    - Oa8: Use of Micrometers and Calipers
+### General Shop Practices
+- Oa1: Tool Identification Lesson, Part 1
+- Oa7: Discussion of a Two-Cycle Engine
+- Oa8: Use of Micrometers and Calipers
 
-- Health Services Career:
-    - Hc5: Medical History
-    - Hc6: Extended Care
+### Health Services Career
+- Hc5: Medical History
+- Hc6: Extended Care
 
-- Physics:
-    - Ph16: Theory of Relativity
+### Physics
+- Ph16: Theory of Relativity
 
 Well, concerning Physics, we may be able to restore Ph16 from the Atari version of that course, Physics CX6008? Just loud thinking...
 
@@ -108,15 +124,19 @@ Well, concerning Physics, we may be able to restore Ph16 from the Atari version 
 
 ### McStuff Co. OSS BUG/65 revision 1.1
 
+### OSS Action! Graphics Utilities Library and Shape Editor for [Action!](../Languages/Action/README.md)
+
+### OSS BASIC A+ Source Code
+
+### OSS BUG/65 Source Code
 
 ### OSS BUGV4FIX.COM
 File needed to patch BUG/65 to work with DOS XL 4
 
-### OSS BUG/65 Source Code
-
 ### OSS EASMD Source Code
 
-### OSS BASIC A+ Source Code
+### OSS MAC/65 MACDO.M65 
+File published by OSS via BBS
 
 ### OSS Newsletters
 We already have:
@@ -130,12 +150,7 @@ OSS Newsletter - Winter 1987
 ### OSS Newsletters disks 
 All are missing
 
-### OSS MAC/65 MACDO.M65 
-File published by OSS via BBS
 
-### OSS Action! Graphics Utilities Library and Shape Editor for [Action!](../Languages/Action/README.md)
-
----
 ## Missing Synapse Software
 
 ### SynMail
@@ -149,14 +164,19 @@ was finished according to Steve Hales, but after SynCalc und SynFile+ never sold
 
 
 ### VisiDex
+
 An information organization and retrieval program which lets the user file and recall any type of information. It prints out lists, notes, and memos; and keeps track of a daily calendar, alerting the user to upcoming events. According to 'The Atari User's Encyclopedia from The Book Company, page 232, this software exists. So, somewhere out there, it may exists...
 
 ### VisiFile
+
 A comprehensive electronic filing system that makes it simple to organize, maintain, and effectively use all the information a business needs. It will accurately store, search, sort, retrieve, display, calculate, and print reports, lists, and mailing
 lists. According to 'The Atari User's Encyclopedia from The Book Company, page 232, this software exists. So, somewhere out there, it may exists...
----
+
 
 ## Missing Other Software
+
+### Forth Compiler from Frank Ostrowski 
+Seems to be lost in time, until a friend of Frank may give it to the community?
 
 ### Kyan Pascal
 The community with the help of all has made great progress regarding Kyan Pascal. Tom Eckmann, CEO of Kyan Pascal, was so nice to us, by giving Kyan Pascal into PD. To complete Kyan Pascal, we need your help again. The missing list is as follows:
@@ -169,26 +189,7 @@ The community with the help of all has made great progress regarding Kyan Pascal
 
 Please take into account: the System Utilities Toolkit for Kyan Pascal version 2.x is labeled as Version 1.00, while the content is 2.x! Therefore, if you have any original diskette from Kyan Pascal, please let us know. Thank you so much in advance. :-)
 
-
-### Forth Compiler from Frank Ostrowski 
-Seems to be lost in time, until a friend of Frank may give it to the community?
-
-
-### Atari Pole Position II
-title by Namco; never shipped, but exists!)
-
-## [Atari FutureMakers-Through the Star Bridge (DX5076) (C) 1984 Atari, Inc.](http://www.atarimania.com/game-atari-400-800-xl-xe-futuremakers-through-the-star-bridge_6419.html)
-Many, many thanks to Hans Reutter for the info, Allan Bushman for the high resolution grab and Atarimania for hosting!
-
-## [Atari FutureMakers-This Is Ground Control (DX5077) (C) 1984 Atari, Inc.](http://www.atarimania.com/game-atari-400-800-xl-xe-futuremakers-this-is-ground-control_6420.html)
-Many, many thanks to Hans Reutter for the info, Allan Bushman for the high resolution grab and Atarimania for hosting!
-
-## [Atari Force - Liberator (C) 1982 Atari, Inc.](<https://www.emuparadise.me/M.A.M.E._-_Multiple_Arcade_Machine_Emulator_ROMs/Liberator_(set_1)/14238>)
-
-## [Pursuit of the Pink Panther](http://www.atarimania.com/game-atari-400-800-xl-xe-pursuit-of-the-pink-panther_4177.html)
-Copyright (C) 1983 NAP Consumer Electronics, Licensed from MGM/UA with the music from Henry Mancini!!!
-
-## [Phoenix for Atari 800](https://ataritools.fr.gd/1-_-PHOENIX-PROJECT.htm)
+### [Phoenix for Atari 800](https://ataritools.fr.gd/1-_-PHOENIX-PROJECT.htm)
 
 ![](attachments/Phoenix-400_800-Box-Front.jpg)
 Phoenix for the Atari box
@@ -208,17 +209,15 @@ Phoenix - fig. 3
 ![](attachments/Phoenix_4.bmp)
 Phoenix - fig. 4
 
----
+### [Pursuit of the Pink Panther](http://www.atarimania.com/game-atari-400-800-xl-xe-pursuit-of-the-pink-panther_4177.html)
+Copyright (C) 1983 NAP Consumer Electronics, Licensed from MGM/UA with the music from Henry Mancini!!!
 
-### Success with Math - CBS Software - Decimals - Addition and Subtraction
+### Success with Math - CBS Software 
 
-### Success with Math - CBS Software - Subtracting Mixed Fractions
+- Decimals - Addition and Subtraction
+- Subtracting Mixed Fractions
 
----
+### [WWF-Club-Spiel](../WWF-Club-Spiel/README.md)
 
-
-Und als Letztes noch das Modul, welches für den WDR hergestellt worden ist:
-
-### WWF-Club-Spiel
-A cartridge used by German Television in the 80's for a call-in game via telephone - programmer has lived in Hattingen/Germany
+A cartridge used by German Television (WDR, Westdeutscher Rundfunk)in the 80's for a call-in game via telephone - programmer has lived in Hattingen/Germany
 
