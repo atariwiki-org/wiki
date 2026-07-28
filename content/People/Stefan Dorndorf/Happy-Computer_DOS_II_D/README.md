@@ -8,11 +8,11 @@ Happy-Computer DOS, short Happy-DOS is a DOS 2.0S compatible disk operating syst
 
 Published in issue 3/1986 of German magazine Happy Computer as "Listing of the Month".
 
-Copyright (C) 1986 by [Markt & Technik Verlag AG](http://www.mut.de/).
+Copyright (C) 1986 by [Markt \& Technik Verlag AG](http://www.mut.de/).
 
 ## ATR-Image
 
-- [HAPPYDOS.atr](attachments/HAPPYDOS.atr)
+- [HAPPYDOS.atr](attachments/HAPPYDOS.atr), thanks to [Thomas Meyer](https://www.tmeyer.de/atari/happydos/index.html)
 
 ````
 This documentation should be accompanied by the file HAPPYDOS.ATR
