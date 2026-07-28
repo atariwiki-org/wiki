@@ -26,7 +26,7 @@
 |Luminance Value|Description| Visualization 
 |---------------|-----------|---------------
 |0 $0| dark| $\color{#000}███$
-|2 $2| | $\color{#222}███$
+|2 $2| | $\color{#222}{\textsf{███}}$
 |4 $4| | <div style="color:#444">███</div>
 |6 $6| | <div style="color:#666">███</div>
 |8 $8| | <div style="color:#888">███</div>
