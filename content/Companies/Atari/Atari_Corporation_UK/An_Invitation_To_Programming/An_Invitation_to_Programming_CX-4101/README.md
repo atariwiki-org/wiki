@@ -14,8 +14,8 @@
 
 ## Audio Files
 
-[CX4101\_A\_Side\_1.flac](../../../../../../media/Companies/Atari/An_Invitation_to_Programming_CX-4101/attachments/CX4101_A_Side_1.flac) (179 MB - FLAC)
-[CX4101\_A\_Side\_2.flac](../../../../../../media/Companies/Atari/An_Invitation_to_Programming_CX-4101/attachments/CX4101_A_Side_2.flac) (137 MB - FLAC)
+[CX4101\_A\_Side\_1.flac](../../../../../../media/Companies/Atari/Atari_Corporation_UK/An_Invitation_to_Programming/An_Invitation_to_Programming_CX-4101/attachments/CX4101_A_Side_1.flac) (179 MB - FLAC)
+[CX4101\_A\_Side\_2.flac](../../../../../../media/Companies/Atari/Atari_Corporation_UK/An_Invitation_to_Programming/An_Invitation_to_Programming_CX-4101/attachments/CX4101_A_Side_2.flac) (137 MB - FLAC)
 
 ## Box-Pictures
 

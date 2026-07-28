@@ -772,6 +772,8 @@
     
    - [Kyan Pascal Error $89 (137)](Companies/Kyan_Software/Kyan_Pascal/Kyan_Pascal_Error_$89_137/README.md)
      
+  - [Edit 6502](Companies/LJK_Enterprises_Inc/Edit_6502/README.md)
+    
    - [Blueprint of ACTION! Cart](Companies/OSS/ACTION/Blueprint_of_ACTION_Cart/README.md)
      
   - [BASIC A+](Companies/OSS/BASIC_Aplus/README.md)
@@ -891,8 +893,6 @@
 - [DOS-Topics](DOS_topics/README.md)
   
 - [DT-80](DT-80/README.md)
-  
-- [Edit 6502](Edit_6502/README.md)
   
 - [Enhancements to Basic 2.1](Enhancements_to_Basic_2.1/README.md)
   

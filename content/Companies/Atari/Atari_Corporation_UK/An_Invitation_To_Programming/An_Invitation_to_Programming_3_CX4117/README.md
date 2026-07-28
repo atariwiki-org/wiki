@@ -12,7 +12,7 @@
 
 ## Manual
 
-- [An\_Invitation\_to\_Programming\_3-Screen\_Version.pdf](../../../../../../media/Companies/Atari/An_Invitation_to_Programming_3_CX4117/attachments/An_Invitation_to_Programming_3-Screen_Version.pdf) ; size: 5.5 MB
+- [An\_Invitation\_to\_Programming\_3-Screen\_Version.pdf](../../../../../../media/Companies/Atari/Atari_Corporation_UK/An_Invitation_to_Programming/An_Invitation_to_Programming_3_CX4117/attachments/An_Invitation_to_Programming_3-Screen_Version.pdf) ; size: 5.5 MB
 
 ## FLAC-Images
 

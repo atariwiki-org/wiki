@@ -26,7 +26,7 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [DataSoft Datasm-65 2.0](../../Companies/DataSoft/DataSoft_Datasm-65/README.md) (1981)
 - [Dunion's Debugging Tool (DDT) Rev. 1.0](../../Companies/OSS/DDT/README.md) (1982)
 - [OSS EASMD Version 1.0](../../Companies/OSS/EASMD/README.md) (1981)
-- [Edit 6502](../../Edit_6502/README.md) (1981)
+- [Edit 6502](../../Companies/LJK_Enterprises_Inc/Edit_6502/README.md) (1981)
 - [Extended DDT (1985)](../../Companies/OSS/Extended_DDT/README.md) (1985)
 - [MAC/65 Macro Assembler](MAC65/README.md) (1982)
 - [MAE Assembler](MAE_Assembler/README.md) (1996)

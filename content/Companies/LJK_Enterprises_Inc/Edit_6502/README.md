@@ -14,7 +14,7 @@ Very fast Assembler, Editor and Monitor for Atari 400 and 800 under OS B
 
 ## Manual
 
-- [Edit\_6502\_Manual.pdf](../../media/Edit_6502/attachments/Edit_6502_Manual.pdf) ; size: 18.7 MB ; thank you so much bcombee from AtariAge to bring this lost to believe manual to the light! Big thank you!
+- [Edit\_6502\_Manual.pdf](../../../../media/Companies/LJK_Enterprises_Inc/Edit_6502/attachments/Edit_6502_Manual.pdf) ; size: 18.7 MB ; thank you so much bcombee from AtariAge to bring this lost to believe manual to the light! Big thank you!
 
 ## Reference
 

@@ -12,7 +12,7 @@
 
 ## Manual
 
-- [An\_Invitation\_to\_Programming\_2-Screen\_Version.pdf](../../../../../../media/Companies/Atari/An_Invitation_to_Programming_2_CX4106/attachments/An_Invitation_to_Programming_2-Screen_Version.pdf) ; size: 5.4 MB
+- [An\_Invitation\_to\_Programming\_2-Screen\_Version.pdf](../../../../../../media/Companies/Atari/Atari_Corporation_UK/An_Invitation_to_Programming/An_Invitation_to_Programming_2_CX4106/attachments/An_Invitation_to_Programming_2-Screen_Version.pdf) ; size: 5.4 MB
 
 ## FLAC-Images
 

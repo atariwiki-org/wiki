@@ -25,7 +25,7 @@ For up-to-date software, please see [Thom's IRATA online site](https://www.irata
 - [PLATOTerm 1.0-Atari](https://github.com/tschak909/platoterm64/releases/download/PLATOTerm-1.0/PLATOTerm-1_0-Atari.atr); same as above, but on GitHub as source for the latest versions
 - [PLATOTerm 1.0-Atari](attachments/PLATOTerm-1_0-Atari.atr) ; PLATOTerm 1.0 on an ATR image, thank you so much Thom! Great work! :-)
 - [Pterm 5.0.8 for PC](attachments/pterm-5.0.8.exe.zip) ; PTerm 5.0.8 for use with a PC, thank you so much, Thom! Great work! :-)
-- [Pterm 5.0.8 for macOS](../../media/PLATO/attachments/pterm-5.0.9.dmg) ; PTerm 5.0.8 for use with macOS, thank you so much Thom! Great work! :-)
+- [Pterm 5.0.8 for macOS](../../media/Services/PLATO/attachments/pterm-5.0.9.dmg) ; PTerm 5.0.8 for use with macOS, thank you so much Thom! Great work! :-)
 
 To connect to IRATA.ONLINE, use the following connection information:
 Host: IRATA.ONLINE
