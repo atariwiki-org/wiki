@@ -54,8 +54,6 @@
   
 - [Bank Switching (Bankumschaltung)](Bank_Switching/README.md)
   
-- [BASICODE](BASICODE/README.md)
-  
 - [BASIC USR Machine Language Call Simulation for ACTION](BASIC_USR_Machine_Language_Call_Simulation_for_ACTION/README.md)
   
 - [Bitwise AND, OR, XOR and NOT for BASIC (USR Call)](Bitwise_AND_OR_XOR_and_NOT/README.md)
@@ -2216,6 +2214,10 @@
   
 - [ABBUC Music Challenge 2003](Pen_Music_Challenge/README.md)
   
+ - [Andreas Graf](People/Andreas_Graf/README.md)
+   
+  - [BASICODE](People/Andreas_Graf/BASICODE/README.md)
+    
  - [Avery Lee (phaeron)](People/Avery_Lee/README.md)
    
   - [Altirra](People/Avery_Lee/Altirra/README.md)

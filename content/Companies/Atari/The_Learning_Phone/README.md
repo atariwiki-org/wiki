@@ -13,7 +13,7 @@ $24.95, 16K cartridge
 
 ## Manuals
 
-- [The Learning Phone-User's Guide.pdf](../../../../media/The_Learning_Phone/attachments/The_Learning_Phone.pdf) ; size: 7.7 MB ; Thank you so much Atarimania!
+- [The Learning Phone-User's Guide.pdf](../../../../media/Companies/Atari/The_Learning_Phone/attachments/The_Learning_Phone.pdf) ; size: 7.7 MB ; Thank you so much Atarimania!
 - [PLATO\_Homelink\_Program\_Titles.pdf](attachments/PLATO_Homelink_Program_Titles.pdf) ; size: 980 KB ; Thank you so much Atarimania!
 - [Telephone\_Numbers\_for\_Accessing\_PLATO\_Homelink\_Service.pdf](attachments/Telephone_Numbers_for_Accessing_PLATO_Homelink_Service.pdf) ; size: 476 KB ; Thank you so much Atarimania!
 - [PLATO\_Service\_Offerings.pdf](attachments/PLATO_Service_Offerings.pdf) ; size: 637 KB ; Thank you so much Atarimania!

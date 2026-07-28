@@ -18,8 +18,8 @@ Ein Beispiel der Tagesschau mit der wundervollen Dagmar Berghoff finden Sie weit
 
 ## FLAC-Images
 
-- [Programmieren\_leicht\_gemacht\_TXG4110-Seite\_A-deutsch.flac](../../../../../media/Software/Atari/Programmieren_leicht_gemacht_TXG4110/attachments/Programmieren_leicht_gemacht_TXG4110-Seite_A-deutsch.flac) ; Teil 1 von 2 ; Größe: 190 MB
-- [Programmieren\_leicht\_gemacht\_TXG4110-Seite\_B-deutsch.flac](../../../../../media/Software/Atari/Programmieren_leicht_gemacht_TXG4110/attachments/Programmieren_leicht_gemacht_TXG4110-Seite_B-deutsch.flac) ; Teil 2 von 2 ; Größe: 144 MB
+- [Programmieren\_leicht\_gemacht\_TXG4110-Seite\_A-deutsch.flac](../../../../../media/Companies/Atari/Atari_Germany/Programmieren_leicht_gemacht_TXG4110/attachments/Programmieren_leicht_gemacht_TXG4110-Seite_A-deutsch.flac) ; Teil 1 von 2 ; Größe: 190 MB
+- [Programmieren\_leicht\_gemacht\_TXG4110-Seite\_B-deutsch.flac](../../../../../media/Companies/Atari/Atari_Germany/Programmieren_leicht_gemacht_TXG4110/attachments/Programmieren_leicht_gemacht_TXG4110-Seite_B-deutsch.flac) ; Teil 2 von 2 ; Größe: 144 MB
 - \[Programmieren leicht gemacht -  Seite 1 Teil 1.flac\](https://data.atariwiki.org/FLAC/Programmieren leicht gemacht -  Seite 1 Teil 1.flac) ; Größe: 180,8 MB ; Vielen lieben Dank an Dirk Tröger für die Neudigitalisierung in besserer Qualität! Wir stehen tief in Deiner Schuld!
 - \[Programmieren leicht gemacht -  Seite 1 Teil 2.flac\](https://data.atariwiki.org/FLAC/Programmieren leicht gemacht -  Seite 1 Teil 2.flac); Größe: 87,1 MB ; Vielen lieben Dank an Dirk Tröger für die Neudigitalisierung in besserer Qualität! Wir stehen tief in Deiner Schuld!
 - \[Programmieren leicht gemacht -  Seite 1 Teil 3.flac\](https://data.atariwiki.org/FLAC/Programmieren leicht gemacht -  Seite 1 Teil 3.flac); Größe: 63,9 MB ; Vielen lieben Dank an Dirk Tröger für die Neudigitalisierung in besserer Qualität! Wir stehen tief in Deiner Schuld!

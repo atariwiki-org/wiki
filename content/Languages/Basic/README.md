@@ -21,7 +21,7 @@ Development continues; [Altirra BASIC](Altirra_BASIC/README.md), [BASIC++](BASIC
 - [Integer BASIC](../../Companies/OSS/Integer_BASIC/README.md)
 - [Turbo-BASIC XL](Turbo-BASIC_XL/README.md)
 - [Hypra-Soft-BASIC](Hypra-Soft-BASIC/README.md)
-- [BASICODE](../../BASICODE/README.md)
+- [BASICODE](../../People/Andreas_Graf/BASICODE/README.md)
 - [Altirra BASIC](Altirra_BASIC/README.md)
 - [U-Basic](U-BASIC/README.md)
 - [CTH FastBasic](Atari_BASIC/CTH-FastBasic/README.md)
