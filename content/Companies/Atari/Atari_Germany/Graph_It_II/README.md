@@ -4,18 +4,19 @@ Copyright (C) 1983 Atari Elektronik-Vertriebsgesellschaft mbH
 
 ## Kassetten-Images
 
-[Graph It II](attachments/Graph_It_TXG_9517.zip) ; Kassette bitte mit dem Befehl CLOAD und dem Basic-Modul laden
+- [Graph It II](attachments/Graph_It_TXG_9517.zip) ; Kassette bitte mit dem Befehl CLOAD und dem Basic-Modul laden
 
 ## Bilder
 
-- Box-Vorderansicht<br>![](attachments/Graph_it_TXG9517_front_cover.jpg) 
+- Box-Vorderansicht<br>![](attachments/Graph_it_TXG9517_front_cover.jpg)
+
 - Box-Rückansicht<br>![](attachments/Graph_it_TXG9517_back_cover.jpg)
 
 - Seite 1<br>![](attachments/Graph_it_TXG9517_cassettes_side1.jpg)
 
 - Seite 2<br>![](attachments/Graph_it_TXG9517_cassettes_side2.jpg)
 
-- Handbuch<br>|![](attachments/Graph_it_TXG9517_manual.jpg)
+- Handbuch<br>![](attachments/Graph_it_TXG9517_manual.jpg)
 
 ## Danksagung
 

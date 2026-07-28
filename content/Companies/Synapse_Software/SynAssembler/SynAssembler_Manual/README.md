@@ -82,7 +82,8 @@ There are three types of commands in the SynAssembler: EDITING commands DOS comm
 
 There are seventeen editing commands in the SynAssembler. All editing commands may be abbreviated to the first three letters if you so desire.
 
-|| command || description
+| Command | Description|
+|---------|------------|
 | ASM	| Assemble source program, put object program into memory, and produce assembly listing.
 | COPy	| Duplicates specified lines in the source.
 | DELete	| Delete specified line.

@@ -1247,7 +1247,8 @@ Not every listed errors have its origin in BW-DOS. There are also errors caused 
 
 The first two codes are not errors - BW-DOS returns these codes when everything is OK. You'll encounter these codes only while programing CIO calls in assembler or something like that.
 
-||   Error code || Hex || Result ||  Description ||
+|   Error Code | Hex | Result |  Description |
+|--------------|-----|--------|--------------|
 |        1 | $01 | OK |  This code is returned by all device handlers when no error occurs. |
 |        3 | $03 | Last byte read |  This code is returned by BW-DOS instead of the code 1 ("OK"), in the case that the last byte of the file was read. Next reading will return the error-code 136 ("End of file") - except that you're working in the "update" mode (aux1=12). This code will not be returned in the directory-listing mode (aux1=6). This code have no connection with the error 3 returned by Basic or other programs. |
 |      128 | $80 | BREAK abort. | The user did press the <BREAK> key during an input/output operation. |

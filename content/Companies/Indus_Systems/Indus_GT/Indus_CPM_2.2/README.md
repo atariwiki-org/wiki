@@ -4,7 +4,7 @@ This  document explains the specifics of your Indus GT based  CPM 2.2  system.  
 
 ## Requirements
 
-Indus  GT  disk drive with 64K ramcharger  board,  configured  as drive 1;  an Atari home computer with at least 48K.  Optionally a second  double  density capable drive,  and an  Atari  compatable printer (or 850 interface connected to a printer).
+Indus  GT  disk drive with 64K ramcharger  board,  configured  as drive 1;  an Atari home computer with at least 48K.  Optionally a second  double  density capable drive,  and an  Atari  compatible printer (or 850 interface connected to a printer).
 
 ## Boot up
 
@@ -18,7 +18,8 @@ TRM40 emulates an ADM-31, and TRM80 emulates an ADM3A.
 
 TRM40 control keys:
 
-|| Key    || Function ||
+| Key    | Function |
+|--------|----------|
 | ^bk sp | screen toggle |
 | ^3     | cursor display lock/unlock |
 | ^;     | left shift screen |
@@ -61,7 +62,7 @@ disk.
 
 ### ICDS.COM
 
-ICDS  is  used  to copy files to/from  an  Atari  DOS  compatable
+ICDS  is  used  to copy files to/from  an  Atari  DOS  compatible
 diskette.   The  Atari DOS diskette must be a double density (256
 byte sectors) disk,  such as XLDOS or MYDOS.   ICDS is similar to
 Atari DOS,  with the addition that CPM disks are supported.   Run
@@ -70,7 +71,8 @@ in drive "2".   To specify a CPM file,  prefix the file name with
 "A:",  to  specify  a DOS file prefix the name  with  "2:".   The
 following commands can be used:
 
-|| Key  || Function ||
+| Key  | Function |
+|------|----------|
 | A    | display a directory (specify "A:", or "2:") |
 | C    | copy a file (or files, wild cards supported) |
 | D    | delete a file |
@@ -98,7 +100,7 @@ density and single density disks used by Indus CPM.  These tables
 are the disk parameter blocks used by CPM to organize the data on
 a  disk.   This  information should be used to configure  "alien"
 disk  programs available on other non-Indus based CPM systems  to
-transfer data to an Indus compatable CPM disk.
+transfer data to an Indus compatible CPM disk.
 
 Double density:  40 tracks, 18 256-byte sectors per track
 
