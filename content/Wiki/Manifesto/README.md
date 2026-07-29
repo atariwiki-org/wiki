@@ -19,6 +19,6 @@ All content in the Wiki is licensed under [Creative Commons](http://creativecomm
 The Wiki is operated by Carsten Strotmann (cas@strotmann.de).
 
 
-|A|B|
-|-|-|
-|1|2|
+| A |B|
+|---|-|
+| 1 |2|
