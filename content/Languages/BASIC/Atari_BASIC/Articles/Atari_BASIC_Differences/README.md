@@ -1,36 +1,33 @@
 # Differences between Atari BASIC Dialects
 
-# Vergleich der Verschiedenen Basic Dialekte
+## Vergleich der Verschiedenen Basic Dialekte
 
-%%tabbedSection
-%%tab-English
+
 Even the name of the command is the same, the syntax used in different basic dialects is different. The table below shows the different commands available in the Basic dialects.
-/%
-%%tab-Deutsch
+
 Trotz gleichlautendem Befehl, kann die Syntax der einzelnen Dialekte abweichen!
-/%
-/%
+
 
 ### Eigenschaften
 
-|                        || ATARI-Basic|| Turbo-Basic 1.5|| BASIC A+ || BASIC-XL || BASIC-XE|| MS-BASIC
-|\_\_Year                \_\_ | 1979        | 1985            | 1983      | 1984      | 1985     | 1981
-|\_\_Size                \_\_ | 8k          |                 | 16k       | 16k       | 27k      |
-|\_\_Size in RAM         \_\_ | 8k          |                 | 15k       | 8k        | 8k       |
-|\_\_Compiler            \_\_ |             | x               | -         | -         | -        | -
-|\_\_Runtime             \_\_ |             | x               | -         | x         | -        | -
-|\_\_Unlimited Strings   \_\_ | x           | x               |           |           |          |
-|\_\_String Array        \_\_ |             |                 |           |           | x        | x
-|\_\_Number of Variables \_\_ | 128         |                 |           |           | 128      |
-|\_\_Parameter passing   \_\_ | -           | -               |           |           | x        |
-|\_\_Local variables     \_\_ | -           | -               |           |           | x        |
+|                     | ATARI-Basic | Turbo-Basic 1.5 | BASIC A+  | BASIC-XL  | BASIC-XE| MS-BASIC
+|Year                 | 1979        | 1985            | 1983      | 1984      | 1985     | 1981
+|Size                 | 8k          |                 | 16k       | 16k       | 27k      |
+|Size in RAM          | 8k          |                 | 15k       | 8k        | 8k       |
+|Compiler             |             | x               | -         | -         | -        | -
+|Runtime              |             | x               | -         | x         | -        | -
+|Unlimited Strings    | x           | x               |           |           |          |
+|String Array         |             |                 |           |           | x        | x
+|Number of Variables  | 128         |                 |           |           | 128      |
+|Parameter passing    | -           | -               |           |           | x        |
+|Local variables      | -           | -               |           |           | x        |
 |**Lowercase characters** | -           | x               | x         | x         | x        |
-|\_\_Reverse characters  \_\_ | -           | x               | x         | x         | x        |
+|Reverse characters   | -           | x               | x         | x         | x        |
 
 ### Befehlsübersicht
 
-|| ATARI-Basic|| Turbo-Basic 1.5|| BASIC A+|| BASIC-XL|| BASIC-XE|| MS-BASIC
-| -| -| | | |
+| ATARI-Basic | Turbo-Basic 1.5 | BASIC A+ | BASIC-XL | BASIC-XE| MS-BASIC
+|-| -|-|-|-|
 | | !| | | |
 | | %GET| | | |
 | | %PUT| | | |

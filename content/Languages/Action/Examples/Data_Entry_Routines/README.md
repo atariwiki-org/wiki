@@ -11,7 +11,8 @@ Description: Universal string input routine, offering full control over keyboard
 
 Calling parameters:
 
-|| FIELD	|| The field buffer. ||
+| FIELD	| The field buffer
+|-------|------------------
 | MIN	|  Minimum number of characters for valid response, 0-MAX. |
 | MAX	|  Maximum number of characters, 1-36.	|
 | TYPEC	|  Type Code (see below) |
@@ -20,12 +21,14 @@ Calling parameters:
 | ROW	|  Screen display vertical position for input echo, 1-22. |
 | ERRPTR | Pointer variable to pass error code on record aborts (Ctrl-Z) or XIT's (above). |
 
-Note:	User entry of ESC will restart field entry,  or exit (see above).  Entry of Ctrl-Z aborts record. The routine uses the BYTE FUNC	Fetch() to obtain the 	keystokes, allowing timeout control.
+Note:	User entry of ESC will restart field entry,  or exit (see above).  Entry of Ctrl-Z aborts record. The routine uses the BYTE FUNC Fetch() to obtain the 	keystrokes, allowing timeout control.
 
 (Note: no range check is provided on the numeric response)
 
 Type Codes
-|| code || type ||
+
+| Code | Type |
+|--|------------------
 |1 | Alphanumeric	|
 |2 | Force Upper Case	 |
 |3 | Signed integer	|
@@ -34,7 +37,7 @@ Type Codes
 |6 | Unsigned real	|
 |7 | Yes/No check |
 
-### EntryS
+### ENTRYS.LIB Source Code
 
 ```
 ;************************************

@@ -70,4 +70,4 @@
 |27|Illegal TYPE syntax.
 |28|Illegal RETURN.
 |61|Out of Symbol Table space.
-|128|BREAK key was used to stop program execution. \*Go
+|128|BREAK key was used to stop program execution. (\*GO)
