@@ -48,6 +48,8 @@ ATARI-BASICODE startscreen
 
 ## In BASICODE gültige Befehle
 
+| ...... | ...... | ...... | ...... | ...... | ......
+|-----|---|---|---| ---- | ---
 | ABS | AND | ASC | ATN | CHR$ | COS
 | DATA | DIM | EXP | FOR | GOSUB | GOTO
 | IF | INPUT | INT | LEFT$ | LEN | LET
@@ -146,34 +148,36 @@ Nimmt bei nicht rein numerischen Argumenten in verschiedenen Rechnern unterschie
 
 Die rechts stehenden BASIC-Befehle zeigen Ähnlichkeiten auf und sollen den Überblick erleichtern. Sie wurden in erster Linie aus dem KC-BASIC gewählt.
 
-| 20 Programmstart, System\_Reset, Variable löschen usw.| CLEAR
-|100 Text-Modus einschalten und Bildschirm löschen| CLS
-|110 Cursor auf die Position HO,VE| LOCATE
-|120 Cursor-Position in HO,VE zurückholen| VGET, POS
-|150 Auffälliges Anzeigen von SR$; rechts und links 3 Spaces| kein
-|200 Daten einer eventuell gedrückten Taste in IN$ und IN| INKEY$
-|210 wie 200, jedoch mit Warten auf Tastendruck| kein
-|220 Holen des Zeichens aus Schirmposition HO,VE auf IN| VGET$
-|250 Erzeugen eines kurzen Aufmerksamkeitstones| BEEP
-|260 Zufallsvariable in RV mit 0\<=RV\<1| RND
-|270 Ausführen von garbage collection und Speicherplatz in FR| FRE(X)
-|280 Aus- bzw. Einschalten der STOP/BRK-Taste FR=0 bzw. 1| kein
-|300 SR wird ohne Space in SR$ gewandelt| STR$
-|310 wie 300, jedoch als Zahl mit CT und CN formatiert| USING
-|330 Alle Kleinbuchstaben in SR$ in Großbuchstaben wandeln| kein
-|350 Übergabe von SR$ an den Drucker| PRINT#2
-|360 In neue Zeile mit Drucker (CRLF)| kein
-|400 Erzeugung eines Tons gemäß SV,SD und SP| SOUND
-|450 Warten von maximal SD*0.1s auf einen Tastendruck| PAUSE
-|500 Eröffnen eines File mit Namen NF$ gemäß NF| OPEN
-|540 Aus dem File wird ein String an IN$ übergeben| LOAD*
-|560 SR$ wird in das File geschrieben| SAVE\*
-|580 man schließe den Bestand mit Code NF ab| CLOSE
-|600 Graphischen Betrieb und Bildschirm löschen| SREEN
-|620 Setzen eines Punktes in die Position HO,VE mit Farbe CN| PSET
-|630 Zeichnen einer Linie zum Punkt HO,VE in Farbe CN| LINE
-|650 SR$ an der Position HO,VE anzeigen(Grafik-Mode)| kein
-|950 Beenden des BASICODE-Mode| END
+| Zeile | Routine | Statement
+|--|-|-
+| 20 | Programmstart, System\_Reset, Variable löschen usw.| CLEAR
+|100 | Text-Modus einschalten und Bildschirm löschen| CLS
+|110 | Cursor auf die Position HO,VE| LOCATE
+|120 | Cursor-Position in HO,VE zurückholen| VGET, POS
+|150 | Auffälliges Anzeigen von SR$; rechts und links 3 Spaces| kein
+|200 | Daten einer eventuell gedrückten Taste in IN$ und IN| INKEY$
+|210 | wie 200, jedoch mit Warten auf Tastendruck| kein
+|220 | Holen des Zeichens aus Schirmposition HO,VE auf IN| VGET$
+|250 | Erzeugen eines kurzen Aufmerksamkeitstones| BEEP
+|260 | Zufallsvariable in RV mit 0\<=RV\<1| RND
+|270 | Ausführen von garbage collection und Speicherplatz in FR| FRE(X)
+|280 | Aus- bzw. Einschalten der STOP/BRK-Taste FR=0 bzw. 1| kein
+|300 | SR wird ohne Space in SR$ gewandelt| STR$
+|310 | wie 300, jedoch als Zahl mit CT und CN formatiert| USING
+|330 | Alle Kleinbuchstaben in SR$ in Großbuchstaben wandeln| kein
+|350 | Übergabe von SR$ an den Drucker| PRINT#2
+|360 | In neue Zeile mit Drucker (CRLF)| kein
+|400 | Erzeugung eines Tons gemäß SV,SD und SP| SOUND
+|450 | Warten von maximal SD*0.1s auf einen Tastendruck| PAUSE
+|500 | Eröffnen eines File mit Namen NF$ gemäß NF| OPEN
+|540 | Aus dem File wird ein String an IN$ übergeben| LOAD*
+|560 | SR$ wird in das File geschrieben| SAVE\*
+|580 | man schließe den Bestand mit Code NF ab| CLOSE
+|600 | Graphischen Betrieb und Bildschirm löschen| SREEN
+|620 | Setzen eines Punktes in die Position HO,VE mit Farbe CN| PSET
+|630 | Zeichnen einer Linie zum Punkt HO,VE in Farbe CN| LINE
+|650 | SR$ an der Position HO,VE anzeigen(Grafik-Mode)| kein
+|950 | Beenden des BASICODE-Mode| END
 
 ## In BASICODE verbotene Variablen
 
