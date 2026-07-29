@@ -145,7 +145,8 @@ Das neue Turbo-Basic XL 1.5 Handbuch. Das Buch wurde langjährigen Mitgliedern a
 
 ## Abbreviations
 
-|| Command || Abbreviation
+| Command | Abbreviation
+|---------|--------------
 | # | #
 | %GET | %G.
 | %PUT | %.

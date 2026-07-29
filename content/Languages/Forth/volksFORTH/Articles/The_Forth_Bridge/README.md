@@ -83,7 +83,8 @@ DUP (n - n,n) makes a copy of the top number on the stack and puts that on the s
 
 Conventionally, FORTH works only with integers, usually two bytes long. There is also same double-length arithmetic which uses numbers four bytes long. With many programs, it is very easy to scale all the numbers up to integers for the calculations and then scale them back again. For instance, if you were dealing with money you would work in pence and convert back to pounds afterwards.
 
-|| Basic ||volksForth||Description||
+| BASIC |volksForth|Description
+|-------|----------|----------
 | ABS  |  ABS  | returns absolute value |
 | AND  |  AND  | This is a bitwise Boolean AND (BASIC varies) so, e.g. 42 23 AND leaves 2 on the stack. |
 | ASC  |  ASCII | get ASCII Code of Character |
@@ -117,7 +118,8 @@ Forth:
 
 The word I copies the current value of the loop counter to the stack, then EMIT prints the character with that ASCII value.
 
-||Basic|| volksForth||Description
+| BASIC |volksForth|Description
+|-------|----------|----------
 | GOSUB  |            | Subroutines are replaced by words in Forth. To call one, you type in its name
 | GOTO   |            | FORTH doesn't have explicit GOTO statements but several constructions have them implicitly. The most important is IF ... ELSE ... THEN - see IF. The following also contain GOTO's BEGIN ... n UNTIL which repeats until n is non-zero. BEGIN...n WHILE ... REPEAT which repeats while n is non-zero. DO ... LOOP and DO ... +LOOP - see FOR
 | IF ... THEN | IF ... ELSE ... THEN  |
@@ -152,7 +154,8 @@ Forth:
       THEN ; 
 ```
 
-||Basic||volksForth|| Description||
+| BASIC |volksForth|Description
+|-------|----------|----------
 | INKEY$ |  KEY? / KEY | KEY? Reads the keyboard and puts 0 on the stack if no key (or more than one key) was pressed. KEY read the ASCII value of the key pressed. |
 | INPUT |   | FORTH does not have one word which translates INPUT. Instead there are several words which cover all the different uses of INPUT. QUERY clears the input buffer then waits for you to type in things. WORD takes text out of the input buffer up as far as an ASCII delimitor. NUMBER takes a number out of the input buffer. |
 | LET |   | FORTH has variables just as BASIC does but you have to declare them before using them (like DIM and arrays). The word which does this is.... VARIABLE which puts the variable name in the dictionary along with space for a 2-byte number. e.g. VARIABLE SCORE Sets up a variable called 'SCORE'. You update its value with the word ! (pronounced 'store'). e.g. {{100 SCORE !}} makes 100 the value in STORE. You can put the current value of the variable on the stack using the word @ (pronounced 'Fetch') e.g. {{SCORE @}} puts 100 on the stack.  See also the section on arrays for use of the FORTH word CREATE. |

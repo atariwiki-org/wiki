@@ -172,7 +172,8 @@ BIT,
 
 These usually take an operand, which must already be on the stack. An address mode may also be specified. If non is given, the op-code uses z-page or absolute addressing. The address modes are determined by:
 
-|| Symbol || Mode || Operand
+| Symbol | Mode | Operand
+|--------|------|---------
 | .A  | accumulator | none
 | #   | immediate   | 8 bits only
 | ,X  | indexed X   | z-page or absolute

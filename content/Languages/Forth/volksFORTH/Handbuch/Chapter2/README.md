@@ -151,7 +151,8 @@ Sie werden nach der Eingabe des dreibuchstabigen Kürzels gefragt. Dieses Kürze
 
 Beim Editieren stehen Ihnen folgende Funktionen zur Verfügung:
 
-|| Taste || Funktion
+| Taste | Funktion
+|-------|---------
 | F1 | gibt Hilfestellung für den Editor
 | ESC | verlässt den Editor mit dem sofortigen Abspeichern der Änderungen.
 | CTRL-U | (undo) macht alle Änderungen rückgängig, die noch nicht auf Disk zurückgeschrieben wurden.
@@ -347,9 +348,10 @@ Natürlich können Sie 'Ihr' System auch unter einem anderen Namen abspeichern. 
 
 Im Übrigen empfehlen wir bei allen Zahlen über 9 dringend die Benutzung der so genannten Prefixe,
 
-|| prefix || Zahlensystem
+| Präfix | Zahlensystem
+|--------|--------------
 | $      | für Hexadezimal-,
-| \&      | für Dezimal- und
+| \&     | für Dezimal- und
 | %      | für Binarzahlen.
 
 Man vermeldet so, dass irgendwelche Dateien nicht - oder noch schlimmer, falsch - kompiliert werden, weil man gerade im anderen Zahlensystem ist. Außerdem Ist es möglich, hexadezimale und dezimale Zahlen beliebig zu kombinieren. Je nachdem, was gerade sinnvoller ist. In den Quellentexten finden Sie genug entsprechende Beispiele.
@@ -378,7 +380,8 @@ Im Printer-Interface sind einige Worte zur Ausgabe eines formatierten Listings e
 
 ### Glossar
 
-|| wort || Stack-Kommentar || Beschreibung
+| Wort | Stack-Kommentar | Beschreibung
+|------|-----------------|-------------
 | pthru | ( von bis -- ) | druckt die angegebenen Blöcke immer zu sechst auf einer Seite aus.
 | document | ( von bis -- ) | arbeitet wie **pthru**, druckt aber jeweils drei Quelltextblöcke und drei Kommentarblöcke auf einer Seite aus
 | listing | ( -- ) | erstellt ein Listing der gesamten Datei, indem jeweils drei Quelltextblöcke und drei Kommentar-Blöcke auf einer Seite ausgedruckt werden
