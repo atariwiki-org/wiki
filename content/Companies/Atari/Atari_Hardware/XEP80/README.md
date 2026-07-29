@@ -149,21 +149,21 @@ The day before yesterday was the day that I decided to show off my newly gained 
 
 For $40E0 on, we have 13 bytes, with which the XEP is initialized:
 
-| value | function |
-|-----|------------|
-| $D9 |    Cursor always on |
-| $D4 |    Use ATASCII character set |
-| $DE |    Bright characters on dark background |
-| $D3 |    Burst mode, no cursor data is send back |
-| $60 |    Left Margin 0 low nibble |
-| $70 |    Left Margin 0 Hi nibble |
-| $AF |    Right Margin low nibble 15 + 4\*16 Hi nibble = 79 |
-| $B4 |    Right Margin hi nibble |
-| $00 |    Horizontal cursor position = 0 |
-| $80 |    vertical cursor position = 0 |
-| $D0 |    Erase List flag |
-| $C5 |    Fill RAM with SPACE-characters |
-| $DC |    Set Scroll window to X-cursor position |
+| value | function
+|-------|----------
+| $D9   | Cursor always on
+| $D4   | Use ATASCII character set
+| $DE   | Bright characters on dark background
+| $D3   | Burst mode, no cursor data is send back
+| $60   | Left Margin 0 low nibble
+| $70   | Left Margin 0 Hi nibble
+| $AF   | Right Margin low nibble 15 + 4\*16 Hi nibble = 79
+| $B4   | Right Margin hi nibble
+| $00   | Horizontal cursor position = 0
+| $80   | vertical cursor position = 0
+| $D0   | Erase List flag
+| $C5   | Fill RAM with SPACE-characters
+| $DC   | Set Scroll window to X-cursor position
 
 Since all this trail and error stuff started to annoy me, I "just for a minute" reassembled the driver, so I now  a fairly readable file to work with.  This means I'm gonna write more articles about the XEP 80. Since I was able to delve up more information about the XEP 80, I can already tell you:  the 19200 baud are in reachable distance and I seem to be on a hot trail with my suspiciouns about the 6551 SIO chip from the first article (I think).
 
@@ -171,16 +171,16 @@ Since all this trail and error stuff started to annoy me, I "just for a minute" 
 
 The video controller inside the XEP 80 is a 48 pin chip.  It's data bus is 16 bits wide on the video side.  This way, two RAMs could be read simultaniously, one containing the text that should be displayed and another containing the text attributes.  There are eight possible attributes:
 
-| Attribute  | Display |
-|------------|-----------|
-| Inverse   | A character plus it's surrounding area is display "Inverse" |
-| Halve Bright  | The character in displayed with a lower brightness. Other options are a higher brightness and even color. |
-| Flickering    | On, Off, On, Off |
-| Double Height | Text in double height, internally some conditions have to be met though. |
-| Double Width  | Text in double wide.  The next line can't be displayed though, so we have to leave a blank line between two lines of character |
-| Underlined    | An apparently freely defined character is mixed in. This can be the "underline" character or an "overline" or "strait through the middle" character or whatever you want |
-| Hidden        |  The text is not displayed at all.  This attribute should also be set when using a double height character, so the controller knows that this is the bottom halve of the double height haracter. |
-| Graphics      | Since this is an attribute, text and block graphics can be mixed at will.  Except double height, all other attributes can be used at the same time |
+| Attribute | Display
+|-----------|---------
+| Inverse   | A character plus it's surrounding area is display "Inverse"
+| Halve Bright | The character in displayed with a lower brightness. Other options are a higher brightness and even color.
+| Flickering | On, Off, On, Off
+| Double Height | Text in double height, internally some conditions have to be met though.
+| Double Width | Text in double wide.  The next line can't be displayed though, so we have to leave a blank line between two lines of character
+| Underlined | An apparently freely defined character is mixed in. This can be the "underline" character or an "overline" or "strait through the middle" character or whatever you want
+| Hidden    | The text is not displayed at all.  This attribute should also be set when using a double height character, so the controller knows that this is the bottom halve of the double height haracter.
+| Graphics  | Since this is an attribute, text and block graphics can be mixed at will.  Except double height, all other attributes can be used at the same time
 
 And then there is the Graphics mode of the XEP 80.  Just like the subject of block graphics, it's a very broad subject and will not be
 discussed here.

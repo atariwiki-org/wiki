@@ -159,6 +159,6 @@ Bob Sander-Cederlof
 
 ---
 
-Bob Sander-Cederlof | 19.11.2007 at 03:57 PM
+Bob Sander-Cederlof \| 19.11.2007 at 03:57 PM
 
 Thank you for republishing my article. The Apple Assembly Line newsletter was published from monthly October 1980 through May 1988. All the issues are available online at [http://www.txbobsc.com/aal/](http://www.txbobsc.com/aal/)

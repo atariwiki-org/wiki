@@ -145,5 +145,5 @@ The part which used to be coded in SWEET-16 was lines 1690-1880.  The SWEET-16 v
 
 Comment:
 
-Bob Sander-Cederlof | 19.11.2007 at 03:59 PM
+Bob Sander-Cederlof \| 19.11.2007 at 03:59 PM
 Thank you for republishing my article. The Apple Assembly Line newsletter was published from monthly October 1980 through May 1988. All the issues are available online at http://www.txbobsc.com/aal/
