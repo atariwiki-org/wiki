@@ -174,14 +174,14 @@ These usually take an operand, which must already be on the stack. An address mo
 
 | Symbol | Mode | Operand
 |--------|------|---------
-| .A  | accumulator | none
-| #   | immediate   | 8 bits only
-| ,X  | indexed X   | z-page or absolute
-| ,Y  | indexed Y   | z-page or absolute
-| X)  | indexed indirect X | z-page only
-| )Y  | indirect index Y   | z-page only
-| )   | indirect | absolute only
-| one | memory   | z-page or absolute
+| .A     | accumulator | none
+| #      |  immediate | 8 bits only
+| ,X     |  indexed X | z-page or absolute
+| ,Y     |  indexed Y | z-page or absolute
+| X)     | indexed indirect X | z-page only
+| )Y     | indirect index Y | z-page only
+| )      |  indirect |  absolute only
+| one    |  memory | z-page or absolute
 
 ## EXAMPLES
 
