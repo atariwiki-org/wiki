@@ -1,5 +1,8 @@
 # Memory Map
 
+TODO: Convert tables to MD
+````
+
 [Differences Atari 400/800 - 1200XL - 600/800XL](#DiffOldOs2XL/)
 
 ### Page 0
@@ -4267,7 +4270,8 @@ next: [PORTA](#PORTA) of PIA
 
 ### SKREST
 
-|Read/Write||ADR||HEXADR||NAME||Description||OS
+|Read/Write|ADR|HEXADR|NAME|Description|OS
+|----------|---|----- |----|-----------|--
 |Read|53770|$D20A|RANDOM|random number generator|all
 |Write|53770|$D20A|SKREST|serial status register reset|all
 
@@ -4816,7 +4820,8 @@ next: [GRACTL](#GRACTL)
 
 ### VDSLST
 
-||R/W||ADR||HEXADR||NAME||DESCRIPTION||OS||DEFAULT VALUE
+|Read/Write|ADR|HEXADR|NAME|Description|OS| Default Value
+|----------|---|----- |----|-----------|--|--------------
 |read/write |512,513|$0200,$0201|VDSLST|Vector to Display List Interrupt routine|both|59315/$E7B3 (a RTI instruction)
 
 Attention:
@@ -5068,3 +5073,5 @@ To activate special functions in a display line, add the value as stated below
 ---
 
 see also: [Display List Topics](#Displaylist_topics), [VDSLST](#VDSLST), [VSCROL](#VSCROL), [HSCROL](#HSCROL), [4-color-characters](#4_color_character), [Table\_of\_Modes\_and\_Screen\_Format](#Table_of_Modes_and_Screen_Format)
+
+````
