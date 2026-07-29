@@ -17,12 +17,12 @@ PRINT PEEK(65528)
 and press the RETURN key
 
 | Value | OS Version | CRC 32 | MD5 | ROMs
-|-------|------------|--------|-----|-----
-|255|First 800 OS NTSC ; please further see [Rarity 10 and above up to impossible](../Rarity_10/README.md)|?|?|**we are still searching for this. Please help us ;-)**
-|221|400/800 OS Rev. A NTSC|c1b3bb02|a3c1585b5d19719f8acfa2b093bea75f|CO12499A, CO14599A, CO12399B
-|214|400/800 OS Rev. A PAL|72b3fed4|eb1f32f5d9f382db1bbfb8d7f9cb343a|CO15199, CO15299, CO12399B
-|243|400/800 OS Rev. B NTSC|0e86d61d|4177f386a3bac989a981d3fe3388cb6c|CO12499B, CO14599B, 12399B
-|34|400/800 OS Rev. B PAL; please further see [Rarity 10 and above up to impossible](../Rarity_10/README.md)|0c913dfc|89d5e5f4713267667ab713449944f8a9 Kr0tki-Version|**we are still searching for this. Please help us ;-)**
+|-------|------------|--------|-----|------
+| 255   | First 800 OS NTSC ; please further see [Rarity 10 and above up to impossible](../Rarity_10/README.md) | ?      | ?   | **we are still searching for this. Please help us ;-)**
+| 221   | 400/800 OS Rev. A NTSC | c1b3bb02 | a3c1585b5d19719f8acfa2b093bea75f | CO12499A, CO14599A, CO12399B
+| 214   | 400/800 OS Rev. A PAL | 72b3fed4 | eb1f32f5d9f382db1bbfb8d7f9cb343a | CO15199, CO15299, CO12399B
+| 243   | 400/800 OS Rev. B NTSC | 0e86d61d | 4177f386a3bac989a981d3fe3388cb6c | CO12499B, CO14599B, 12399B
+| 34    | 400/800 OS Rev. B PAL; please further see [Rarity 10 and above up to impossible](../Rarity_10/README.md) | 0c913dfc | 89d5e5f4713267667ab713449944f8a9 Kr0tki-Version | **we are still searching for this. Please help us ;-)**
 
 ## For ATARI XL and XE Computers
 
@@ -36,13 +36,13 @@ PRINT PEEK(65527)
 and press the RETURN key
 
 | Value | Version
-|-------|-------
-|10|XL/XE OS Rev 10
-|11|XL/XE OS Rev 11
-|1|XL/XE OS Rev 1
-|2|XL/XE OS Rev 2
-|3|XL/XE OS Rev 3
-|59|XL/XE OS Rev 3B (Arabic)
-|4|XL/XE OS Rev 4
+|-------|---------
+| 10    | XL/XE OS Rev 10
+| 11    | XL/XE OS Rev 11
+| 1     | XL/XE OS Rev 1
+| 2     | XL/XE OS Rev 2
+| 3     | XL/XE OS Rev 3
+| 59    | XL/XE OS Rev 3B (Arabic)
+| 4     | XL/XE OS Rev 4
 
 see also [How to find the revision number of Atari BASIC](../Languages/BASIC/Atari_BASIC/Articles/How_to_find_the_revision_number_of_Atari_Basic/README.md)

@@ -314,7 +314,7 @@ just load S2UTIME.COM. On BW-DOS you first need to load the Clock Driver "CLOCK 
 
 ---
 
-Stefan Haubenthal | 22.04.2008 at 03:13 PM
+Stefan Haubenthal \| 22.04.2008 at 03:13 PM
 Short optimization:
 
 01900 INY 01910 INY 01920 INY 01930 LDA SDBASE,Y
@@ -323,7 +323,7 @@ Short optimization:
 
 ---
 
-Carsten Strotmann | 25.04.2008 at 03:30 PM
+Carsten Strotmann \| 25.04.2008 at 03:30 PM
 
 Hello Stefan,
 

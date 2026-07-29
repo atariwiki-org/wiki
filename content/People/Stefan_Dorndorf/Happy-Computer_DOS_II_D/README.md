@@ -1,8 +1,8 @@
 # Happy-Computer DOS II+/D
 
-|Autor          |Stefan Dorndorf|
-|---------------|---------------|
-|Current Version| V4.5M         |
+| Autor | Stefan Dorndorf
+|-------|-----------------
+| Current Version | V4.5M
 
 Happy-Computer DOS, short Happy-DOS is a DOS 2.0S compatible disk operating system in a single file (37 disk blocks), with a built-in RAM disk.
 
