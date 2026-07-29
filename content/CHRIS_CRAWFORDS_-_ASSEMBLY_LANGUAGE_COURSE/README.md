@@ -104,7 +104,7 @@ Before we can do arithmetic, though, you must know a little bit about number sys
 Binary works the same way, except that there are only two digits, not ten. The two digits are 0 and 1. You count 0, then 1, then you reach 0 again, so you put down a 1 in the twos place and resume counting from 0. Thus, counting from 0 to ten in binary like this:
 
 | Decimal | Binary |
-|         |        |
+|----|----|
 | 0 | 0
 | 1 | 1
 | 2 | 10
