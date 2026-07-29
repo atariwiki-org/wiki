@@ -84,16 +84,16 @@ The device-dependent part will be included into the basic part. The Device depen
 
 We only need to change the Device dependent part of the driver. First we must device where to store the shadow registers for the native USB Device functions. These Registers will be copied from the USB Controller Memory into the Atari Memory. The USB HID Registers start at the USB Controller Memory Location $10. I've choosen to store the USB Register Values into the Memory Locations for Paddles ($270-$277).
 
-|  USB Register  | Byte of HID Packet | Function | Atari Memory Shadow | Original Label | New USB label |
-|----------------|--------------------|-----------------------------|-------------|--------|
-|  $10           |  1                 | left handle horiz movement  | $270 (624)  | PADDL0 | RPADLHH     |
-|  $11           |  2                 | left handle vertic movement | $271 (625)  | PADDL1 | RPADLHV     |
-|  $12           |  3                 | right handle horiz movement  | $272 (626)  | PADDL2 | RPADRHH     |
-|  $13           |  4                 | right handle vertic movement | $273 (627)  | PADDL3 | RPADRHV     |
-|  $14           |  5 Bit 0-4         | digital Joypad | $274 (628)  | PADDL4 | RPADDJY     |
-|  $14           |  5 Bit 5-7         | Button 1-4 | $275 (629)  | PADDL5 | RPADBUT1  |
-|  $15           |  6                 | Button 5-10 | $276 (630)  | PADDL6 | RPADBUT2  |
-|  $16           |  7                 | Mode Button Status | $277 (631)  | PADDL7 | RPADMODE  |
+\|  USB Register  \| Byte of HID Packet \| Function \| Atari Memory Shadow \| Original Label \| New USB label \|
+\|----------------\|--------------------\|-----------------------------\|-------------\|--------\|
+\|  $10           \|  1                 \| left handle horiz movement  \| $270 (624)  \| PADDL0 \| RPADLHH     \|
+\|  $11           \|  2                 \| left handle vertic movement \| $271 (625)  \| PADDL1 \| RPADLHV     \|
+\|  $12           \|  3                 \| right handle horiz movement  \| $272 (626)  \| PADDL2 \| RPADRHH     \|
+\|  $13           \|  4                 \| right handle vertic movement \| $273 (627)  \| PADDL3 \| RPADRHV     \|
+\|  $14           \|  5 Bit 0-4         \| digital Joypad \| $274 (628)  \| PADDL4 \| RPADDJY     \|
+\|  $14           \|  5 Bit 5-7         \| Button 1-4 \| $275 (629)  \| PADDL5 \| RPADBUT1  \|
+\|  $15           \|  6                 \| Button 5-10 \| $276 (630)  \| PADDL6 \| RPADBUT2  \|
+\|  $16           \|  7                 \| Mode Button Status \| $277 (631)  \| PADDL7 \| RPADMODE  \|
 
 Accessing the USB Controller Memory is wasy. Load the X-Index Register with the USB Memory Location to access (0-255) and jump to subroutine REGFETCH. REGFETCH will return with the value of that memory location in the Accu (A) Register. This value is then stored into the Atari Shadow register. Because we are running in an VBI, we will overwrite all values the Atari OS has written into this registers.
 

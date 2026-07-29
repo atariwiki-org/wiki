@@ -4,15 +4,15 @@ Tested with a Logitech Formula Vibration Feedback Wheel USB. Other Logitech Whee
 
 ## Description
 
-| USB Register   | Byte of HID Packet | Function                    | Atari Memory Shadow | Original Label | New USB label |
-|----------------|--------------------|-----------------------------|---------------------|----------------|---------------|
-|  $10           |  1                 | Wheel movement Low Byte  | $270 (624)  | PADDL0 | RWHEELL     |
-|  $11           |  2  (Bit 0-2)  | Wheel movement High Byte | $271 (625)  | PADDL1 | RWHEELH     |
-|  $11           |  2  (Bit 3-7)  | Buttons 1-5  | $272 (626)  | PADDL2 | RBUTTON1     |
-|  $12           |  3                 | Buttons 6-12 | $273 (627)  | PADDL3 | RBUTTON2     |
-|  $13           |  4                 | Joypad cross | $274 (628)  | PADDL4 | RWHPAD     |
-|  $14           |  5                 | Throttle | $275 (628)  | PADDL5 | RACCEL     |
-|  $15           |  6                 | Brake | $276 (628)  | PADDL6 | RBRAKE     |
+| USB Register | Byte of HID Packet | Function | Atari Memory Shadow | Original Label | New USB label
+|--------------|--------------------|----------|---------------------|----------------|---------------
+| $10          | 1                  | Wheel movement Low Byte | $270 (624)          | PADDL0         | RWHEELL
+| $11          | 2  (Bit 0-2)       | Wheel movement High Byte | $271 (625)          | PADDL1         | RWHEELH
+| $11          | 2  (Bit 3-7)       | Buttons 1-5 | $272 (626)          | PADDL2         | RBUTTON1
+| $12          | 3                  | Buttons 6-12 | $273 (627)          | PADDL3         | RBUTTON2
+| $13          | 4                  | Joypad cross | $274 (628)          | PADDL4         | RWHPAD
+| $14          | 5                  | Throttle | $275 (628)          | PADDL5         | RACCEL
+| $15          | 6                  | Brake    | $276 (628)          | PADDL6         | RBRAKE
 
 - Byte 1+2: Wheel movement ($000 = left, $200 = middle, $3FF= right)
 - Byte 2: Buttons 1-5

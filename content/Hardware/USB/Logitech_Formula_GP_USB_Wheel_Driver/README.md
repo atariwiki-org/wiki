@@ -4,13 +4,13 @@ Tested with a Logitech Formula GP Wheel USB. Other Logitech Wheels might work. P
 
 ## Description
 
-| USB Register   | Byte of HID Packet | Function                    | Atari Memory Shadow | Original Label | New USB label |
-|----------------|--------------------|-----------------------------|---------------------|----------------|---------------|
-|  $10           |  1                 | Wheel movement  | $270 (624)  | PADDL0 | LWHEEL     |
-|  $11           |  2                 | Buttons 1-6 | $271 (625)  | PADDL1 | LBUTTON     |
-|  $12           |  3                 | Acceleration (Brake and Throttle)  | $272 (626)  | PADDL2 | LACCEL     |
-|  $13           |  4                 | Throttle | $273 (627)  | PADDL3 | LTHROTL     |
-|  $14           |  5                 | Brake | $274 (628)  | PADDL4 | LBRAKE     |
+| USB Register | Byte of HID Packet | Function | Atari Memory Shadow | Original Label | New USB label
+|--------------|--------------------|----------|---------------------|----------------|---------------
+| $10          | 1                  | Wheel movement | $270 (624)          | PADDL0         | LWHEEL
+| $11          | 2                  | Buttons 1-6 | $271 (625)          | PADDL1         | LBUTTON
+| $12          | 3                  | Acceleration (Brake and Throttle) | $272 (626)          | PADDL2         | LACCEL
+| $13          | 4                  | Throttle | $273 (627)          | PADDL3         | LTHROTL
+| $14          | 5                  | Brake    | $274 (628)          | PADDL4         | LBRAKE
 
 - Byte 1: Wheel movement ($00 = left, $80 = middle, $FF= right)
 - Byte 2: Buttons 1-6

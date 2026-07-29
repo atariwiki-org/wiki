@@ -4,16 +4,16 @@ Tested with a Logitec Rumblepad 2 USB. Other Logitech analog Joypad might work. 
 
 ## Description
 
-| USB Register   | Byte of HID Packet | Function                    | Atari Memory Shadow | Original Label | New USB label |
-|----------------|--------------------|-----------------------------|---------------------|----------------|---------------|
-|  $10           |  1                 | left handle horiz movement  | $270 (624)  | PADDL0 | RPADLHH     |
-|  $11           |  2                 | left handle vertic movement | $271 (625)  | PADDL1 | RPADLHV     |
-|  $12           |  3                 | right handle horiz movement  | $272 (626)  | PADDL2 | RPADRHH     |
-|  $13           |  4                 | right handle vertic movement | $273 (627)  | PADDL3 | RPADRHV     |
-|  $14           |  5 Bit 0-4         | digital Joypad | $274 (628)  | PADDL4 | RPADDJY     |
-|  $14           |  5 Bit 5-7         | Button 1-4 | $275 (629)  | PADDL5 | RPADBUT1  |
-|  $15           |  6                 | Button 5-10 | $276 (630)  | PADDL6 | RPADBUT2  |
-|  $16           |  7                 | Mode Button Status | $277 (631)  | PADDL7 | RPADMODE  |
+| USB Register | Byte of HID Packet | Function | Atari Memory Shadow | Original Label | New USB label
+|--------------|--------------------|----------|---------------------|----------------|---------------
+| $10          | 1                  | left handle horiz movement | $270 (624)          | PADDL0         | RPADLHH
+| $11          | 2                  | left handle vertic movement | $271 (625)          | PADDL1         | RPADLHV
+| $12          | 3                  | right handle horiz movement | $272 (626)          | PADDL2         | RPADRHH
+| $13          | 4                  | right handle vertic movement | $273 (627)          | PADDL3         | RPADRHV
+| $14          | 5 Bit 0-4          | digital Joypad | $274 (628)          | PADDL4         | RPADDJY
+| $14          | 5 Bit 5-7          | Button 1-4 | $275 (629)          | PADDL5         | RPADBUT1
+| $15          | 6                  | Button 5-10 | $276 (630)          | PADDL6         | RPADBUT2
+| $16          | 7                  | Mode Button Status | $277 (631)          | PADDL7         | RPADMODE
 
 - Byte 1: left handle horizontal movement ($00 = left, $80 = middle, $FF= right)
 - Byte 2: left handle vertical movement ($00 = up, $80 = middle, $FF= down)
