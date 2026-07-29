@@ -10,7 +10,8 @@ Trotz gleichlautendem Befehl, kann die Syntax der einzelnen Dialekte abweichen!
 
 ### Eigenschaften
 
-|                     | ATARI-Basic | Turbo-Basic 1.5 | BASIC A+  | BASIC-XL  | BASIC-XE| MS-BASIC
+|                     | ATARI-Basic | Turbo-Basic 1.5 | BASIC A+  | BASIC-XL  | BASIC-XE | MS-BASIC
+|---------------------|-------------|-----------------|-----------|-----------|----------|---------
 |Year                 | 1979        | 1985            | 1983      | 1984      | 1985     | 1981
 |Size                 | 8k          |                 | 16k       | 16k       | 27k      |
 |Size in RAM          | 8k          |                 | 15k       | 8k        | 8k       |
@@ -21,13 +22,13 @@ Trotz gleichlautendem Befehl, kann die Syntax der einzelnen Dialekte abweichen!
 |Number of Variables  | 128         |                 |           |           | 128      |
 |Parameter passing    | -           | -               |           |           | x        |
 |Local variables      | -           | -               |           |           | x        |
-|**Lowercase characters** | -           | x               | x         | x         | x        |
+|Lowercase characters | -           | x               | x         | x         | x        |
 |Reverse characters   | -           | x               | x         | x         | x        |
 
 ### Befehlsübersicht
 
 | ATARI-Basic | Turbo-Basic 1.5 | BASIC A+ | BASIC-XL | BASIC-XE| MS-BASIC
-|-| -|-|-|-|
+|-------------|---------------|-|----------|----------|---------|----------
 | | !| | | |
 | | %GET| | | |
 | | %PUT| | | |
