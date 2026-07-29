@@ -1,8 +1,8 @@
 # **u/mod** "u-divide-mod" ( u1 u2 -- u3 u4 )
 
-|Forth79|Forth83|ANSI|Forth200x|
-|-|-|-|-
-|    X    |        |     |
+| Forth79 | Forth83 | ANSI | Forth200x
+|---------|---------|------|-----------
+| X       |         |      | 
 
 %%tabbedSection
 %%tab-english

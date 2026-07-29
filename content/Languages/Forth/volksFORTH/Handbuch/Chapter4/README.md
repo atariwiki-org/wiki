@@ -303,7 +303,7 @@ Die Vorwärtsreferenzen werden nicht über den Stack aufgelöst, sondern über e
 
 **Anwendungshinweis**:
 
-Wenn diese Definitionen außerhalb der Zusammenstellung des Arbeitssystems zugeladen werden, sollten nach dem Compilieren die Namen der mit | als headerless markierten Worte mit **clear** entfernt werden.
+Wenn diese Definitionen außerhalb der Zusammenstellung des Arbeitssystems zugeladen werden, sollten nach dem Compilieren die Namen der mit \| als headerless markierten Worte mit **clear** entfernt werden.
 
 Das Beispiel einer Tastatuabfrage auf CTRL-Tasten zeigt (MS-DOS), wie dieses CASE-Konstrukt einzusetzen ist. Wichtig ist hierbei, daß das **OF** selbst die Gleichheit der beiden vorliegenden Werte prüft und in diesem Fall die Anweisungen zwischen **OF** und **ENDOF** ausführt.
 
@@ -444,7 +444,7 @@ Die Verbindung von Tabelle und Zugriffsprozedur wird von dem Wort :Does\> vorgen
     (does>  corrent @  context !  hide 0 ] ;
 ```
 
-Dieses Wort **:DOES\>** weist dem letzten über **Create** definierten Wort einen Laufzeit-Teil zu. Dieses Wort wurde von Klaus Schleisiek programmiert auch hier gilt der Hinweis, nach dem Kompilieren das mit | als headerless deklarierte Wort durch **clear** zu löschen.
+Dieses Wort **:DOES\>** weist dem letzten über **Create** definierten Wort einen Laufzeit-Teil zu. Dieses Wort wurde von Klaus Schleisiek programmiert auch hier gilt der Hinweis, nach dem Kompilieren das mit \| als headerless deklarierte Wort durch **clear** zu löschen.
 
 ```
 Create: Auswertung.8

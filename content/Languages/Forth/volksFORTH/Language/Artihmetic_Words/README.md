@@ -1,12 +1,12 @@
 # VolksForth Arithmetic
 
-- [**1+** “one-plus” ( n1 | u1 -- n2 | u2 )](../Words/one-plus/README.md)
-- [**1-** "one-minus" ( n1 | u1 -- n2 | u2 )](../Words/one-minus/README.md)
-- [**2+** "two-plus" ( n1 | u1 -- n2 | u2 )](../Words/two-plus/README.md)
-- [**2-** "two-minus" ( n1 | u1 -- n2 | u2 )](../Words/two-minus/README.md)
+- [**1+** “one-plus” ( n1 \| u1 -- n2 \| u2 )](../Words/one-plus/README.md)
+- [**1-** "one-minus" ( n1 \| u1 -- n2 \| u2 )](../Words/one-minus/README.md)
+- [**2+** "two-plus" ( n1 \| u1 -- n2 \| u2 )](../Words/two-plus/README.md)
+- [**2-** "two-minus" ( n1 \| u1 -- n2 \| u2 )](../Words/two-minus/README.md)
 - [**2\*** "two-times" ( x1 -- x2 )](../Words/two-times/README.md)
 - [**2/** "two-divide" or "two-slash" ( x1 -- x2 )](../Words/two-divide/README.md)
-- [**3+** "three-plus" ( n1 | u1 -- n2 | u2 )](../Words/three-plus/README.md)
+- [**3+** "three-plus" ( n1 \| u1 -- n2 \| u2 )](../Words/three-plus/README.md)
 - [**ABS** "abs" ( n -- u )](../Words/absolute/README.md)
 - [**NOT** "not" ( n1 -- n2 )](../Words/not/README.md)
 - [**NEGATE** "negate" ( n1 -- n2 )](../Words/negate/README.md)

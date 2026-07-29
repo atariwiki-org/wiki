@@ -12,8 +12,8 @@ Integer division in which the remainder carries the sign of the divisor or is ze
 Examples:
 
 | Dividend | Divisor | Remainder | Quotient
-|--------|---------|---------|-
-|   10   |     7   |     3   |       1
-|   -10  |      7  |      4  |       -2
-|    10  |     -7  |     -4  |       -2
-|   -10  |     -7  |     -3  |        1
+|----------|---------|-----------|----------
+| 10       | 7       | 3         | 1
+| -10      | 7       | 4         | -2
+| 10       | -7      | -4        | -2
+| -10      | -7      | -3        | 1

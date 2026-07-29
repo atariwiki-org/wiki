@@ -1,8 +1,8 @@
 # **NOT** "not" ( n1 -- n2 )
 
-|Forth79|Forth83|ANSI|Forth200x|
-|-|-|-|-
-|     X   |       |    |
+| Forth79 | Forth83 | ANSI | Forth200x
+|---------|---------|------|-----------
+| X       |         |      | 
 
 %%tabbedSection
 %%tab-english
