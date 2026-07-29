@@ -17,3 +17,8 @@ The AtariWiki is not an official project of the Atari Bit Byter User Club ([ABBU
 All content in the Wiki is licensed under [Creative Commons](http://creativecommons.org/) ShareAlike License unless otherwise noted.
 
 The Wiki is operated by Carsten Strotmann (cas@strotmann.de).
+
+
+|A|B|
+|-|-|
+|1|2|
