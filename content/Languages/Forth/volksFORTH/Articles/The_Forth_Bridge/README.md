@@ -83,18 +83,18 @@ DUP (n - n,n) makes a copy of the top number on the stack and puts that on the s
 
 Conventionally, FORTH works only with integers, usually two bytes long. There is also same double-length arithmetic which uses numbers four bytes long. With many programs, it is very easy to scale all the numbers up to integers for the calculations and then scale them back again. For instance, if you were dealing with money you would work in pence and convert back to pounds afterwards.
 
-| BASIC |volksForth|Description
-|-------|----------|----------
-| ABS  |  ABS  | returns absolute value |
-| AND  |  AND  | This is a bitwise Boolean AND (BASIC varies) so, e.g. 42 23 AND leaves 2 on the stack. |
-| ASC  |  ASCII | get ASCII Code of Character |
-| POS  |  ATXY  | set Cursos Position |
-| CHR$ |  EMIT  | Prints out the character whose ASCII value is on the stack. e.g. {{PRINT CHR$(32)}} or {{32 EMIT}} prints a space |
-| DATA |       | see Arrays below |
-| Procedure | : | Functions are defined as words (see the introduction) |
-| DIM  |     | See section on arrays below |
-| FOR n= x TO y NEXT | y+1 x DO ...... LOOP | |
-| FOR n = x TO y STEP z NEXT | y+1 x DO ...... z +LOOP  | |
+| BASIC | volksForth | Description
+|-------|------------|-------------
+| ABS   | ABS        | returns absolute value
+| AND   | AND        | This is a bitwise Boolean AND (BASIC varies) so, e.g. 42 23 AND leaves 2 on the stack.
+| ASC   | ASCII      | get ASCII Code of Character
+| POS   | ATXY       | set Cursos Position
+| CHR$  | EMIT       | Prints out the character whose ASCII value is on the stack. e.g. {{PRINT CHR$(32)}} or {{32 EMIT}} prints a space
+| DATA  |            | see Arrays below
+| Procedure | :          | Functions are defined as words (see the introduction)
+| DIM   |            | See section on arrays below
+| FOR n= x TO y NEXT | y+1 x DO ...... LOOP | 
+| FOR n = x TO y STEP z NEXT | y+1 x DO ...... z +LOOP | 
 
 Notice how in FORTH, the limit of the loop is one more than in BASIC. This means that if you want to execute the loop n times starting at x then the limit is x+n, but in BASIC it is x+n-1. e.g.
 
@@ -118,11 +118,11 @@ Forth:
 
 The word I copies the current value of the loop counter to the stack, then EMIT prints the character with that ASCII value.
 
-| BASIC |volksForth|Description
-|-------|----------|----------
-| GOSUB  |            | Subroutines are replaced by words in Forth. To call one, you type in its name
-| GOTO   |            | FORTH doesn't have explicit GOTO statements but several constructions have them implicitly. The most important is IF ... ELSE ... THEN - see IF. The following also contain GOTO's BEGIN ... n UNTIL which repeats until n is non-zero. BEGIN...n WHILE ... REPEAT which repeats while n is non-zero. DO ... LOOP and DO ... +LOOP - see FOR
-| IF ... THEN | IF ... ELSE ... THEN  |
+| BASIC | volksForth | Description
+|-------|------------|-------------
+| GOSUB |            | Subroutines are replaced by words in Forth. To call one, you type in its name
+| GOTO  |            | FORTH doesn't have explicit GOTO statements but several constructions have them implicitly. The most important is IF ... ELSE ... THEN - see IF. The following also contain GOTO's BEGIN ... n UNTIL which repeats until n is non-zero. BEGIN...n WHILE ... REPEAT which repeats while n is non-zero. DO ... LOOP and DO ... +LOOP - see FOR
+| IF ... THEN | IF ... ELSE ... THEN | 
 
 IF takes a number (condition) off the stack and if it is non-zero (true) it executes the part between IF and ELSE and then jumps to THEN, otherwise if the condition is zero (false) it jumps to ELSE and executes the ELSE ... THEN part. You can omit ELSE when there is nothing to be done if the condition is false. Notice how THEN doesn't come in the same place as in BASIC. The way to think of it in FORTH is if the condition is true, do something THEN get on with the rest of the program. e.g.
 
@@ -154,24 +154,24 @@ Forth:
       THEN ; 
 ```
 
-| BASIC |volksForth|Description
-|-------|----------|----------
-| INKEY$ |  KEY? / KEY | KEY? Reads the keyboard and puts 0 on the stack if no key (or more than one key) was pressed. KEY read the ASCII value of the key pressed. |
-| INPUT |   | FORTH does not have one word which translates INPUT. Instead there are several words which cover all the different uses of INPUT. QUERY clears the input buffer then waits for you to type in things. WORD takes text out of the input buffer up as far as an ASCII delimitor. NUMBER takes a number out of the input buffer. |
-| LET |   | FORTH has variables just as BASIC does but you have to declare them before using them (like DIM and arrays). The word which does this is.... VARIABLE which puts the variable name in the dictionary along with space for a 2-byte number. e.g. VARIABLE SCORE Sets up a variable called 'SCORE'. You update its value with the word ! (pronounced 'store'). e.g. {{100 SCORE !}} makes 100 the value in STORE. You can put the current value of the variable on the stack using the word @ (pronounced 'Fetch') e.g. {{SCORE @}} puts 100 on the stack.  See also the section on arrays for use of the FORTH word CREATE. |
-| LIST  | SEE <word> |  Lists a word you have defined in terms of its component words. |
-| USR   | CALL   | executes the machine code starting at the address on the stack, so $E477 CALL is what the CPU does when it is switched on. (on an Atari 8bit) |
-| NEXT  |  | See FOR FORTH LOOP +LOOP |
-| NOT   | 0=  | This takes the top number off the stack and leaves 1 if it was zero and 0 otherwise. Some versions of FORTH also have a word NOT which is identical to 0=. |
-| OR  |  OR  | Bitwise Boolean OR |
-| PEEK | C@  | Fetches the byte stored in the address on the stack. C@ stands for 'character fetch' as it was designed for reading 1-byte ASCII codes instead of 2-bytes variables @ (see LET) fetches the value stored in the 2 bytes starting at the address on the stack. |
-| POKE | C! | Stores the second number on the stack in the byte at the address at the top of the stack. ! Stores the second number on the stack in the pair of bytes starting at the address at the top of the stack. (See LET too.) |
-| PRINT | .  | Prints the number at the top of the stack on the screen. {{."}} Prints the subsequent characters on the screen. See introduction. e.g. {{PRINT "Hello"}} is in Forth  {{." Hello" }}; {{TYPE}} Prints out a given number of bytes starting at a given address as ASCII characters. |
-| REM | (  | Treats text up to ) as a comment and ignores it. |
-| RESTORE  |   | See below |
-| RETURN |    | Not needed in FORTH  |
-| RUN  |    | There is no direct equivalent in FORTH - you just name the word you want to run. |
-| SAVE  | SAVESYSTEM | SAVESYSTEM Saves the current dictionary as a dictionary file |
+| BASIC | volksForth | Description
+|-------|------------|-------------
+| INKEY$ | KEY? / KEY | KEY? Reads the keyboard and puts 0 on the stack if no key (or more than one key) was pressed. KEY read the ASCII value of the key pressed.
+| INPUT |            | FORTH does not have one word which translates INPUT. Instead there are several words which cover all the different uses of INPUT. QUERY clears the input buffer then waits for you to type in things. WORD takes text out of the input buffer up as far as an ASCII delimitor. NUMBER takes a number out of the input buffer.
+| LET   |            | FORTH has variables just as BASIC does but you have to declare them before using them (like DIM and arrays). The word which does this is.... VARIABLE which puts the variable name in the dictionary along with space for a 2-byte number. e.g. VARIABLE SCORE Sets up a variable called 'SCORE'. You update its value with the word ! (pronounced 'store'). e.g. {{100 SCORE !}} makes 100 the value in STORE. You can put the current value of the variable on the stack using the word @ (pronounced 'Fetch') e.g. {{SCORE @}} puts 100 on the stack.  See also the section on arrays for use of the FORTH word CREATE.
+| LIST  | SEE <word> | Lists a word you have defined in terms of its component words.
+| USR   | CALL       | executes the machine code starting at the address on the stack, so $E477 CALL is what the CPU does when it is switched on. (on an Atari 8bit)
+| NEXT  |            | See FOR FORTH LOOP +LOOP
+| NOT   | 0=         | This takes the top number off the stack and leaves 1 if it was zero and 0 otherwise. Some versions of FORTH also have a word NOT which is identical to 0=.
+| OR    | OR         | Bitwise Boolean OR
+| PEEK  | C@         | Fetches the byte stored in the address on the stack. C@ stands for 'character fetch' as it was designed for reading 1-byte ASCII codes instead of 2-bytes variables @ (see LET) fetches the value stored in the 2 bytes starting at the address on the stack.
+| POKE  | C!         | Stores the second number on the stack in the byte at the address at the top of the stack. ! Stores the second number on the stack in the pair of bytes starting at the address at the top of the stack. (See LET too.)
+| PRINT | .          | Prints the number at the top of the stack on the screen. {{."}} Prints the subsequent characters on the screen. See introduction. e.g. {{PRINT "Hello"}} is in Forth  {{." Hello" }}; {{TYPE}} Prints out a given number of bytes starting at a given address as ASCII characters.
+| REM   | (          | Treats text up to ) as a comment and ignores it.
+| RESTORE |            | See below
+| RETURN |            | Not needed in FORTH
+| RUN   |            | There is no direct equivalent in FORTH - you just name the word you want to run.
+| SAVE  | SAVESYSTEM | SAVESYSTEM Saves the current dictionary as a dictionary file
 
 ## Arrays
 
