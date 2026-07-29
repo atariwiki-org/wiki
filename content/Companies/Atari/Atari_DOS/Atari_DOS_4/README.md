@@ -107,15 +107,15 @@ The OPEN command establishes a line of communication to a disk file. must OPEN a
 
 "Aux1" is a code number with the following meanings. Select the desired topic for further information:
 
-| Value | IO Direction |
-|---|---------------------
-| 4 | INPUT |
-| 9 | APPEND |
-| 5 | BAD FILE INPUT |
-| 12 | UPDATE |
-| 6 | DIRECTORY READ |
-| 14 | VERIFY |
-| 8 | OUTPUT |
+| Value | IO Direction
+|-------|--------------
+| 4     | INPUT
+| 9     | APPEND
+| 5     | BAD FILE INPUT
+| 12    | UPDATE
+| 6     | DIRECTORY READ
+| 14    | VERIFY
+| 8     | OUTPUT
 
 The OPEN INPUT command takes the form {{{OPEN #iocb,4,0,filespec}}}. This command establishes a line of communication to the specified file
 (which must already exist) and allows you to read data from the file, beginning with the first byte of the file. A file open for input may be accessed with the GET, INPUT, NOTE, and POINT commands.
@@ -415,18 +415,18 @@ Memory location RRVECT at $7D1,3 contains a JMP instruction. The FMS executes a 
 
 ## DOS 4 MEMORY MAP
 
-| Memory Location | Function |
-|-----------------|----------|
-| $0A | CP Load And Run Vector |
-| $0C | FMS Init Vector |
-| $1A- | DUP Zero Page |
-| $43- | FMS Zero Page |
-| $2E0- $2E1 | Binary Load Run Vector |
-| $2E2- $2E3 | Binary Load Init Vector |
-| $701-$17FB | File Management System |
-| $17FC-		| Sector Buffers |
-| $1BFC-$20FB | Command Processor  |
-| $20FC-$4FFB | Disk Utility Package |
+| Memory Location | Function
+|-----------------|----------
+| $0A             | CP Load And Run Vector
+| $0C             | FMS Init Vector
+| $1A-            | DUP Zero Page
+| $43-            | FMS Zero Page
+| $2E0- $2E1      | Binary Load Run Vector
+| $2E2- $2E3      | Binary Load Init Vector
+| $701-$17FB      | File Management System
+| $17FC-          | Sector Buffers
+| $1BFC-$20FB     | Command Processor
+| $20FC-$4FFB     | Disk Utility Package
 
 Note 1: DOS 4 assumes that the FMS Zero Page is not altered in between calls to the FMS.
 
@@ -446,39 +446,39 @@ REQEOL at $7D6,1 determines how strictly the FMS enforces the rules for filespec
 
 ## I/O ERROR CODES
 
-| Code | Message | Description |
-|-----|----------|-------------|
-| 128 | BREAK ABORT | You pressed the BREAK key during an I/O operation. This stops the operation. |
-| 129 | IOCB ALREADY OPEN | You tried to give an OPEN command to an IOCB which is already open. |
-| 130 | NONEXISTENT DEVICE |You did not give a correct device specification (D0: through D9:). |
-| 131 | IOCB WRITE ONLY |You tried to do a GET or INPUT command to an IOCB which was opened for output only. |
-| 132 | INVALID COMMAND | You gave an I/O command which is not recognized by the Central Input/Output System (CIO). |
-| 133 | DEVICE OR FILE NOT OPEN |You tried to GET, INPUT, PUT, or PRINT to an IOCB which is not open. |
-| 134 | BAD IOCB NUMBER | You gave an invalid IOCB number.  |
-| 135 | IOCB READ ONLY | You tried to PUT or PRINT to an IOCB which was opened for input only. |
-| 136 | END OF FILE | You tried to read or write past the end of the file. |
-| 137 | TRUNCATED RECORD | During an INPUT (or GET RECORD) operation, the input buffer filled before end-of-record was found. |
-| 138 | DEVICE TIMEOUT | The device does not respond. indicate a drive which is not turned on or not connected. Also may indicate an incorrect disk drive configuration. |
-| 139 | DEVICE DOES NOT ACKNOWLEDGE  | An error in the serial I/O system. May indicate a malfunctioning piece of hardware. Also may indicate an incorrect disk drive configuration. |
-| 140 | SERIAL BUS INPUT FRAMING ERROR  | Hardware malfunction. |
-| 142 | SERIAL BUS OVERRUN  | Hardware malfunction. |
-| 143 | CHECKSUM ERROR | Serial bus communications are garbled. May indicate an incorrect disk drive configuration. May also indicate a hardware malfunction. |
-| 144 | DEVICE DONE ERROR | You attempted to write on a write-protected disk. Also may indicate that the disk drive needs adjustment. Also may indicate an incorrect disk drive configuration. |
-| 146 | FUNCTION NOT IMPLEMENTED | You gave DOS 4 an invalid command (for example, attempting to give a POINT command to a file open for output). |
-| 160 | DRIVE NUMBER ERROR | You specified a disk drive number which is not supported. |
-| 161 | TOO MANY OPEN FILES | There are no free sector buffers available. |
-| 162 | DISK FULL | There are no more free sectors on the disk. Use another disk. |
-| 164 | DISK MAP ERROR | The control information on the disk is messed up. May indicate an incorrect configuration, or an attempt to read a disk that was written by another DOS. |
-| 165 | FILE NAME ERROR |You gave an invalid file name. |
-| 166 | POINT DATA ERROR |The data you gave in a POINT statement is too big (i.e., you tried to point past the end of the file). |
-| 167 | FILE LOCKED | You tried to overwrite or delete a file which is currently locked. |
-| 169 | DIRECTORY FULL | You tried to create a new file on a disk whose directory is already full. |
-| 170 | FILE NOT FOUND | You tried to access a disk file which does not exist. |
-| 173 | BAD SECTORS AT FORMAT TIME | Bad sectors were found on the disk while it was being formatted. |
-| 174 | SOFTWARE VERIFY ERROR | Output sent to a disk file which is open for verify did not match the contents of the file. |
-| 175 | BAD LOAD FILE | An attempt was made to load a disk file which is not in the standard binary load format. |
-| 176 | UNKNOWN DRIVE CONFIGURATION |The Disk Utility Package encountered a disk drive configuration it does not understand. |
-| 177 | UNABLE TO MERGE |The Disk Utility Package was unable to merge a Disk Configuration File because the file is not in the correct format, or there is insufficient memory, or the disk drive menu is already full. |
+| Code | Message | Description
+|------|---------|-------------
+| 128  | BREAK ABORT | You pressed the BREAK key during an I/O operation. This stops the operation.
+| 129  | IOCB ALREADY OPEN | You tried to give an OPEN command to an IOCB which is already open.
+| 130  | NONEXISTENT DEVICE | You did not give a correct device specification (D0: through D9:).
+| 131  | IOCB WRITE ONLY | You tried to do a GET or INPUT command to an IOCB which was opened for output only.
+| 132  | INVALID COMMAND | You gave an I/O command which is not recognized by the Central Input/Output System (CIO).
+| 133  | DEVICE OR FILE NOT OPEN | You tried to GET, INPUT, PUT, or PRINT to an IOCB which is not open.
+| 134  | BAD IOCB NUMBER | You gave an invalid IOCB number.
+| 135  | IOCB READ ONLY | You tried to PUT or PRINT to an IOCB which was opened for input only.
+| 136  | END OF FILE | You tried to read or write past the end of the file.
+| 137  | TRUNCATED RECORD | During an INPUT (or GET RECORD) operation, the input buffer filled before end-of-record was found.
+| 138  | DEVICE TIMEOUT | The device does not respond. indicate a drive which is not turned on or not connected. Also may indicate an incorrect disk drive configuration.
+| 139  | DEVICE DOES NOT ACKNOWLEDGE | An error in the serial I/O system. May indicate a malfunctioning piece of hardware. Also may indicate an incorrect disk drive configuration.
+| 140  | SERIAL BUS INPUT FRAMING ERROR | Hardware malfunction.
+| 142  | SERIAL BUS OVERRUN | Hardware malfunction.
+| 143  | CHECKSUM ERROR | Serial bus communications are garbled. May indicate an incorrect disk drive configuration. May also indicate a hardware malfunction.
+| 144  | DEVICE DONE ERROR | You attempted to write on a write-protected disk. Also may indicate that the disk drive needs adjustment. Also may indicate an incorrect disk drive configuration.
+| 146  | FUNCTION NOT IMPLEMENTED | You gave DOS 4 an invalid command (for example, attempting to give a POINT command to a file open for output).
+| 160  | DRIVE NUMBER ERROR | You specified a disk drive number which is not supported.
+| 161  | TOO MANY OPEN FILES | There are no free sector buffers available.
+| 162  | DISK FULL | There are no more free sectors on the disk. Use another disk.
+| 164  | DISK MAP ERROR | The control information on the disk is messed up. May indicate an incorrect configuration, or an attempt to read a disk that was written by another DOS.
+| 165  | FILE NAME ERROR | You gave an invalid file name.
+| 166  | POINT DATA ERROR | The data you gave in a POINT statement is too big (i.e., you tried to point past the end of the file).
+| 167  | FILE LOCKED | You tried to overwrite or delete a file which is currently locked.
+| 169  | DIRECTORY FULL | You tried to create a new file on a disk whose directory is already full.
+| 170  | FILE NOT FOUND | You tried to access a disk file which does not exist.
+| 173  | BAD SECTORS AT FORMAT TIME | Bad sectors were found on the disk while it was being formatted.
+| 174  | SOFTWARE VERIFY ERROR | Output sent to a disk file which is open for verify did not match the contents of the file.
+| 175  | BAD LOAD FILE | An attempt was made to load a disk file which is not in the standard binary load format.
+| 176  | UNKNOWN DRIVE CONFIGURATION | The Disk Utility Package encountered a disk drive configuration it does not understand.
+| 177  | UNABLE TO MERGE | The Disk Utility Package was unable to merge a Disk Configuration File because the file is not in the correct format, or there is insufficient memory, or the disk drive menu is already full.
 
 ## CONFIGURING DOS 4 TO YOUR SYSTEM
 
