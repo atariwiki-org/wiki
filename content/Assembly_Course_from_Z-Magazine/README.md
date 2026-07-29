@@ -42,10 +42,10 @@ The registers are simply on-board RAM.  The address bus controller is a device t
 Machine code is nothing more than a bunch of numbers that mean something to the CPU.  It's hard to work with pure numbers, so we use a little code that makes it easier for us to understand the codes that the computer uses.  This programmer-friendlier code is called assembly
 language,  It is a direct, one-to- one  translation of machine code. Here is an example of the two side by side:
 
-| Machine Code  | Assembly Language |
-|----|-----|
-| A9   05       | LDA    #FINGERS   |
-| 133  $9C      | STA COUNT         |
+| Machine Code | Assembly Language
+|--------------|-------------------
+| A9   05      | LDA    #FINGERS
+| 133  $9C     | STA COUNT
 
 The code on the right may not look very readable, but you must agree, it's far more readable than the code on the left.  And they both mean exactlthe same thing.
 
@@ -109,19 +109,19 @@ Decimal is the standard numbeat you have used since grade school.  You count 0, 
 
 Binary works the same way, except that there are only two digits, not ten.  The two digits are 0 and 1.  You count 0, then 1, then you reach 0 again, so you put down a 1 in the twos place and resume counting from 0. Thus, counting from 0 to ten in binary like this:
 
-|   *Decimal* |    *Binary*  |
-|---|----|
-|       0     |         0  |
-|       1     |         1  |
-|       2     |        10  |
-|       3     |        11  |
-|       4     |       100  |
-|       5     |       101  |
-|       6     |       110  |
-|       7     |       111  |
-|       8     |      1000  |
-|       9     |      1001  |
-|       10    |      1010  |
+| *Decimal* | *Binary*
+|---------|--------
+| 0       | 0
+| 1       | 1
+| 2       | 10
+| 3       | 11
+| 4       | 100
+| 5       | 101
+| 6       | 110
+| 7       | 111
+| 8       | 1000
+| 9       | 1001
+| 10      | 1010
 
 In binary, instead of having ones, tens, and hundreds places, we have ones, twos, fours and eights places.  It takes a lot more digits to express a number in binary, but then again, we have only the two numberals 0 and 1 to work with, so what does one expect?
 

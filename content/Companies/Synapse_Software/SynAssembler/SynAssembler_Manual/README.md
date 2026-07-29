@@ -82,25 +82,25 @@ There are three types of commands in the SynAssembler: EDITING commands DOS comm
 
 There are seventeen editing commands in the SynAssembler. All editing commands may be abbreviated to the first three letters if you so desire.
 
-| Command | Description|
-|---------|------------|
-| ASM	| Assemble source program, put object program into memory, and produce assembly listing.
-| COPy	| Duplicates specified lines in the source.
-| DELete	| Delete specified line.
-| FINd	| List all lines containing the specified string.
-| HIDe	| Changes the HIMEM pointer to 'hide' current source code prior to a MERge command.
-| INCrement	| Set the line # increment for automatic line numbering.
-| LISt	| List the source program or specified lines of source code.
-| MEMory	| Display the beginning and ending address.
-| MERge	| Use with HIDe to join source programs.
-| MOVe	| Moves a line of source code from one specified location to another.
-| NEW	| Delete the entire source program.
-| RENumber	| Renumber all or specified lines of source code.
-| REPlace	| Replace a specified string with another specified string.
-| REStore	| Restores HIMEM pointer after HIDe and MERge.
-| RUN	| Begins execution of your object program.
-| VAL	| Evaluates an operand expression and prints the value in hexadecimal.
-| MON	| Exit the editor and enter the monitor.
+| Command | Description
+|---------|-------------
+| ASM     | Assemble source program, put object program into memory, and produce assembly listing.
+| COPy    | Duplicates specified lines in the source.
+| DELete  | Delete specified line.
+| FINd    | List all lines containing the specified string.
+| HIDe    | Changes the HIMEM pointer to 'hide' current source code prior to a MERge command.
+| INCrement | Set the line # increment for automatic line numbering.
+| LISt    | List the source program or specified lines of source code.
+| MEMory  | Display the beginning and ending address.
+| MERge   | Use with HIDe to join source programs.
+| MOVe    | Moves a line of source code from one specified location to another.
+| NEW     | Delete the entire source program.
+| RENumber | Renumber all or specified lines of source code.
+| REPlace | Replace a specified string with another specified string.
+| REStore | Restores HIMEM pointer after HIDe and MERge.
+| RUN     | Begins execution of your object program.
+| VAL     | Evaluates an operand expression and prints the value in hexadecimal.
+| MON     | Exit the editor and enter the monitor.
 
 # EDITING COMMAND DETAIL
 
@@ -865,22 +865,22 @@ Another method is to enter the monitor and use the monitor move command (addr1 a
 
 The MOS Technology 6502 microprocessor used in the ATARI has many great features; one of the greatest is its variety of addressing modes. There are thirteen different modes in all, though no single opcode can use every one of them. The chart in the appendix shows which modes can be used with each opcode. But first, here is a chart showing an example of each mode and the way it is written in assembly language.
 
-|       MODE             |   EXAMPLE
-|---------|------------|
-|       Implied          |   DEX          at least two blanks
-|       Accumulator	 |  ROL          before comments begin
-|       Relative	 |          BNE expr
-|       Immediate        |   LDA #expr
-|                        |   LDA /expr
-|       Zero Page        |   LDA expr
-|       Absolute         |   LDA expr     Assembler uses
-|       Zero Page,X      |   LDA expr,X   Zero Page form
-|       Absolute,X       |   LDA expr,X   if possible;
-|       Zero Page,Y      |   LDA expr,Y   if not, it uses
-|       Absolute,Y       |   LDA expr,Y   Absolute form.
-|       (Zero Page,X)    |   LDA (expr,X)
-|       (Zero Page),Y    |   LDA (expr),Y
-|       (Absolute)       |   JMP (expr)
+| MODE | EXAMPLE
+|------|---------
+| Implied | DEX          at least two blanks
+| Accumulator | ROL          before comments begin
+| Relative | BNE expr
+| Immediate | LDA #expr
+|      | LDA /expr
+| Zero Page | LDA expr
+| Absolute | LDA expr     Assembler uses
+| Zero Page,X | LDA expr,X   Zero Page form
+| Absolute,X | LDA expr,X   if possible;
+| Zero Page,Y | LDA expr,Y   if not, it uses
+| Absolute,Y | LDA expr,Y   Absolute form.
+| (Zero Page,X) | LDA (expr,X)
+| (Zero Page),Y | LDA (expr),Y
+| (Absolute) | JMP (expr)
 
 For a full explanation of the modes and how to use them, I refer you to the MOS Tecnology Hardware and Programming Manuals, as well as the other references mentioned in the bibliography in Appendix IV.
 

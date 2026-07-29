@@ -8,11 +8,11 @@ MAPPER liest jeden Sektor einer Single-Density Diskette ein, und gibt Ihnen durc
 
 Folgende Symbole werden verwendet:
 
-| \* | belegter Sektor
-|   | (Leerzeichen) leerer Sektor
-| M | Missing Sector (s. Text)
-| C | CRC-Error (s. Text)
-| B | Sonstiger 'Bad-Sector'
+\| \* \| belegter Sektor
+\|   \| (Leerzeichen) leerer Sektor
+\| M \| Missing Sector (s. Text)
+\| C \| CRC-Error (s. Text)
+\| B \| Sonstiger 'Bad-Sector'
 
 Sie erhalten Informationen, ob ein Sektor leer oder belegt ist, oderob es sich um einen sog. 'BAD SECTOR'
 handelt. Die letzteren geben beim Lesen einen ERROR 144, der gerne fuer den Kopierschutz hergenommen wird.

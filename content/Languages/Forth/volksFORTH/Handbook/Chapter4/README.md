@@ -57,8 +57,8 @@ Diese Worte be used outside of colon definitions and replace the''''needs of ear
 
 - have
 - exit
-- ?exit|question-exit
-- 0=exit|zero-equals-exit
+- ?exit\|question-exit
+- 0=exit\|zero-equals-exit
 - if
 - .IF
 - then
@@ -66,9 +66,9 @@ Diese Worte be used outside of colon definitions and replace the''''needs of ear
 - else
 - .ELSE
 - do
-- ?do|question-do
+- ?do\|question-do
 - loop
-- +loop|plus-loop
+- +loop\|plus-loop
 - I
 - J
 - leave
@@ -80,7 +80,7 @@ Diese Worte be used outside of colon definitions and replace the''''needs of ear
 - while
 - execute
 - perform
-- case?|case-question
+- case?\|case-question
 - stop
 
 # Words for error handling
@@ -95,15 +95,15 @@ is-depth (n -)
 IS-DEPTH review the stack on a given number of stack elements (depth point).
 
 - Abort
-- 'Abort | tick-abort
-- Abort "|-abort quote
-- Error | error-quote
+- 'Abort \| tick-abort
+- Abort "\|-abort quote
+- Error \| error-quote
 - ErrorHandler
-- (Error | couples-error
-- R # | r-sharp
+- (Error \| couples-error
+- R # \| r-sharp
 - Scr
 - Quit
-- ? Pairs | question-pairs
+- ? Pairs \| question-pairs
 
 # Fallunterscheidung in FORTH
 
@@ -303,7 +303,7 @@ The forward references are not resolved on the stack, but on a linked list. The 
 
 **Anwendungshinweis**:
 
-If these definitions are loaded outside the compilation of the work system should be removed with the | as headerless selected words with **clear** after compiling the names.
+If these definitions are loaded outside the compilation of the work system should be removed with the \| as headerless selected words with **clear** after compiling the names.
 
 The example of a Tastatuabfrage on CTRL-key shows (MS-DOS), is how to use this CASE construct. It is important that the **OF** even checks the equality of the two present values and executes the instructions in this case between **OF** and **ENDOF**.
 
@@ -444,7 +444,7 @@ The combination of table and access procedure is carried out by the word: Does\>
     (Does> corrent @ context! Hide 0]; 
 ```
 
-This word \_\_: DOES\> \_\_ points to the last word on **Create** defined a runtime part. This word was programmed by Klaus Schleisiek also applies to point out after compiling to remove this with | headerless as declared by word **clear**.
+This word \_\_: DOES\> \_\_ points to the last word on **Create** defined a runtime part. This word was programmed by Klaus Schleisiek also applies to point out after compiling to remove this with \| headerless as declared by word **clear**.
 
 ```
 Create: Auswertung.8 
