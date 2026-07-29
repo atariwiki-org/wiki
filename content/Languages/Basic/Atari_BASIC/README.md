@@ -122,53 +122,53 @@ Atari BASIC Keywords
 
 ## Abbreviations
 
-| Command | Abbreviation |
-|---------|--------------|
-| BYE | B. |
-| CLOAD | CLOA. |
-| CLOSE | CL. |
-| COLOR | C. |
-| CONT | CON. |
-| CSAVE | CS. |
-| DATA | D. |
-| DEG | DE. |
-| DIM | DI. |
-| DOS | DO. |
-| DRAWTO | DR. |
-| ENTER | E. |
-| FOR | F. |
-| GET | GE. |
-| GOTO | G. |
-| GOSUB | GOS. |
-| GRAPHICS | GR. |
-| INPUT | I. |
-| LET | LE. |
-| LIST | L. |
-| LOAD | LO. |
-| LOCATE | LOC. |
-| LPRINT | LP. |
-| NEXT | N. |
-| NOTE | NO. |
-| OPEN | O. |
-| PLOT | PL. |
-| POINT | P. |
-| POKE | POK. |
-| POSITION | POS. |
-| PRINT | PR. |
-| PUT | PU. |
-| RAD | RA. |
-| READ | REA. |
-| REM | . |
-| RESTORE | RES. |
-| RETURN | RET. |
-| RUN | RU. |
-| SAVE | S. |
-| SETCOLOR | SE. |
-| SOUND | SO. |
-| STATUS | ST. |
-| STOP | STO. |
-| TRAP | T. |
-| XIO | X. |
+| Command | Abbreviation
+|---------|--------------
+| BYE     | B.
+| CLOAD   | CLOA.
+| CLOSE   | CL.
+| COLOR   | C.
+| CONT    | CON.
+| CSAVE   | CS.
+| DATA    | D.
+| DEG     | DE.
+| DIM     | DI.
+| DOS     | DO.
+| DRAWTO  | DR.
+| ENTER   | E.
+| FOR     | F.
+| GET     | GE.
+| GOTO    | G.
+| GOSUB   | GOS.
+| GRAPHICS | GR.
+| INPUT   | I.
+| LET     | LE.
+| LIST    | L.
+| LOAD    | LO.
+| LOCATE  | LOC.
+| LPRINT  | LP.
+| NEXT    | N.
+| NOTE    | NO.
+| OPEN    | O.
+| PLOT    | PL.
+| POINT   | P.
+| POKE    | POK.
+| POSITION | POS.
+| PRINT   | PR.
+| PUT     | PU.
+| RAD     | RA.
+| READ    | REA.
+| REM     | .
+| RESTORE | RES.
+| RETURN  | RET.
+| RUN     | RU.
+| SAVE    | S.
+| SETCOLOR | SE.
+| SOUND   | SO.
+| STATUS  | ST.
+| STOP    | STO.
+| TRAP    | T.
+| XIO     | X.
 
 ## Atari BASIC Error Codes
 
