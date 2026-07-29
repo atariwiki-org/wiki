@@ -1,6 +1,6 @@
 # **MAX** "maximum" ( n1 n2 -- n3 )
 
-||Forth79||Forth83||ANSI||Forth200x
+|Forth79|Forth83|ANSI|Forth200x||-|-|-|-
 |   x     |   X    |  X  |    X
 
 %%tabbedSection

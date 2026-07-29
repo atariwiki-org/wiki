@@ -2,11 +2,9 @@
 
 ## Vergleich der Verschiedenen Basic Dialekte
 
-
 Even the name of the command is the same, the syntax used in different basic dialects is different. The table below shows the different commands available in the Basic dialects.
 
 Trotz gleichlautendem Befehl, kann die Syntax der einzelnen Dialekte abweichen!
-
 
 ### Eigenschaften
 

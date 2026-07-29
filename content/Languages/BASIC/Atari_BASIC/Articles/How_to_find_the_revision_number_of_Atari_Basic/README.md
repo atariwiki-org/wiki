@@ -6,7 +6,6 @@ With the BASIC cartridge put into your 400/800 or BASIC switched on, type (e.g. 
 ? PEEK(43234) 
 ```
 
-
 and then press RETURN.
 
 The computer will print the result.

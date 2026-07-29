@@ -1,6 +1,6 @@
 # **/mod** "divide-mod" ( n1 n2 -- n3 n4 )
 
-||Forth79||Forth83||ANSI||Forth200x
+|Forth79|Forth83|ANSI|Forth200x||-|-|-|-
 |   X     |   X    |  X  |    X
 
 %%tabbedSection
