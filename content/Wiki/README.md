@@ -7,10 +7,11 @@ General information about usage and structure of the Wiki.
 For simple changes, you can use the direct editing in the GitHub web interface.
 
 For local editing you can use
-| OS   | Tool | Comment |
-|------|------|---------|
-|All   | Eclipse with Eclipse Mylyn WikiText | Preview does not render everything correctly|
-|macOS | https://macdown.uranusjr.com/       |                                             |
+
+| OS | Tool | Comment
+|----|------|---------
+| All | Eclipse with Eclipse Mylyn WikiText | Preview does not render everything correctly
+| macOS | https://macdown.uranusjr.com/ | 
 
 # Wiki Consistency
 
