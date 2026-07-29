@@ -43,6 +43,7 @@ Machine code is nothing more than a bunch of numbers that mean something to the 
 language,  It is a direct, one-to- one  translation of machine code. Here is an example of the two side by side:
 
 | Machine Code  | Assembly Language |
+|----|-----|
 | A9   05       | LDA    #FINGERS   |
 | 133  $9C      | STA COUNT         |
 
@@ -76,7 +77,7 @@ This instruction loads the accumulator with the contents of the memory location 
 
 LDA #value (Load the Accumulator with value)
 
-This is much like the earlier statment; it loads the accumulator with a number, only the number loaded is specified immediately rather than stored in a memory location. Thus, the command LDA # 9 will put a 9 into the accumulator.
+This is much like the earlier statement; it loads the accumulator with a number, only the number loaded is specified immediately rather than stored in a memory location. Thus, the command LDA # 9 will put a 9 into the accumulator.
 
 STA address (Store the Accumulator into address)
 
@@ -109,6 +110,7 @@ Decimal is the standard numbeat you have used since grade school.  You count 0, 
 Binary works the same way, except that there are only two digits, not ten.  The two digits are 0 and 1.  You count 0, then 1, then you reach 0 again, so you put down a 1 in the twos place and resume counting from 0. Thus, counting from 0 to ten in binary like this:
 
 |   *Decimal* |    *Binary*  |
+|---|----|
 |       0     |         0  |
 |       1     |         1  |
 |       2     |        10  |
