@@ -866,6 +866,7 @@ Another method is to enter the monitor and use the monitor move command (addr1 a
 The MOS Technology 6502 microprocessor used in the ATARI has many great features; one of the greatest is its variety of addressing modes. There are thirteen different modes in all, though no single opcode can use every one of them. The chart in the appendix shows which modes can be used with each opcode. But first, here is a chart showing an example of each mode and the way it is written in assembly language.
 
 |       MODE             |   EXAMPLE
+|---------|------------|
 |       Implied          |   DEX          at least two blanks
 |       Accumulator	 |  ROL          before comments begin
 |       Relative	 |          BNE expr
