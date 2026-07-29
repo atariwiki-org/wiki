@@ -1,17 +1,17 @@
 # Disk formats / Diskettenformate
 
-|Format|Sides|Tracks/Disk Side|KBit|Recording|Bytes/Sector|Sector/Track|Disk Size|ATR Size 1)
-|------|-----|----------------|----|---------|------------|------------|---------|---------
-|Single SD|1|40|125|FM|128|18|90 KB|92.176 2)
-|Medium/Enhanced MD|1|40|250|MFM|128|26|130 KB|133.136 2)
-|Double DD|1|40|250|MFM|256|18|180 KB|183.952 3)
-|Quad DS/DD/40 Tracks|2|40|250|MFM|256|18|360 KB|368.272 3)
-|Octo DS/DD/80 Tracks|2|80|250|MFM|256|18|720 KB|736.912 3)
-|High|2|80|500|MFM|256|36|1.440 KB|1.474.192 3)
-|Extra High|2|80|1.000|MFM|256|72|2.880 KB|2.948.752 3)
-|Harddisk|1|1|x|MFM|128|65.535|8 MB|8.388.496 2)
-|Harddisk|1|1|x|MFM|256|65.535|16 MB|16.776.592 3)
-|Harddisk|1|1|x|MFM|512|65.535|32 MB|33.553.936 4)
+| Format | Sides | Tracks/Disk Side | KBit | Recording | Bytes/Sector | Sector/Track | Disk Size | ATR Size 1)
+|--------|-------|------------------|------|-----------|--------------|--------------|-----------|-------------
+| Single SD | 1     | 40               | 125  | FM        | 128          | 18           | 90 KB     | 92.176 2)
+| Medium/Enhanced MD | 1     | 40               | 250  | MFM       | 128          | 26           | 130 KB    | 133.136 2)
+| Double DD | 1     | 40               | 250  | MFM       | 256          | 18           | 180 KB    | 183.952 3)
+| Quad DS/DD/40 Tracks | 2     | 40               | 250  | MFM       | 256          | 18           | 360 KB    | 368.272 3)
+| Octo DS/DD/80 Tracks | 2     | 80               | 250  | MFM       | 256          | 18           | 720 KB    | 736.912 3)
+| High   | 2     | 80               | 500  | MFM       | 256          | 36           | 1.440 KB  | 1.474.192 3)
+| Extra High | 2     | 80               | 1.000 | MFM       | 256          | 72           | 2.880 KB  | 2.948.752 3)
+| Harddisk | 1     | 1                | x    | MFM       | 128          | 65.535       | 8 MB      | 8.388.496 2)
+| Harddisk | 1     | 1                | x    | MFM       | 256          | 65.535       | 16 MB     | 16.776.592 3)
+| Harddisk | 1     | 1                | x    | MFM       | 512          | 65.535       | 32 MB     | 33.553.936 4)
 
 1) XFD: subtract -16 Bytes (ATR Header), therefore add +384 Bytes! (XFD saves the full boot sector size / disksize, BUT it does not / cannot save the full sector data – these additional 384 bytes are simply empty!)
 
@@ -23,76 +23,76 @@
 
 ## Diskformats and DOS versions supporting them
 
-|DOS|90KB|130KB|180KB|360KB|720KB|1.440KB|Remark
-|---|----|-----|-----|-----|-----|-------|------
-|[Atari DOS 1](../Companies/Atari/Atari_DOS/Atari_DOS_1/README.md)|Y|N|N|N|N|N|
-|[Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)  SmartDOS|Y|N|Y|N|N|N|DOS 2.0s can read 180k after a Reset; DOS 2.0d can read 90k after a Reset!  DOS.SYS of SmartDOS is based on DOS 2.0! (Rainbow DOS and Black DOSare merely DUP.SYS replacements for DOS 2.0s or DOS 2.0d, there are many others...)
-|[Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)|Y|Y|N|N|N|N|
-|[Atari Dos 3](../Companies/Atari/Atari_DOS/Atari_DOS_3/README.md)|Y|Y|N|N|N|N|
-|[Atari DOS 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md)|Y|N|Y|Y|N|N|
-|[Atari DOS XE](../Companies/Atari/Atari_DOS/Atari_DOS_XE/README.md)|Y|Y|Y|Y|N|N|
-|[BIBO-DOS](../Companies/CompyShop/BIBO-DOS/README.md)|Y|Y|Y|Y|N|N|
-|[Turbo-DOS XE](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md)|Y|Y|Y|Y|N|N|
-|[TOP-DOS](../TOP-DOS/README.md)|Y|Y|Y|Y|?|N|
-|Mach DOS 3.7|Y|N|Y|Y|N|N|
-|[MyDOS](../DOS/MyDOS/README.md)|Y|Y|Y|Y|Y|N|MyDOS requires a special / external formatter to format 1440 KB- one is available e.g. with the CSS Black Box or the CSS Floppyboard,maybe there are also some other external formatters...?!?
-|[SpartaDOS](../SpartaDOS/README.md)|Y|Y|Y|Y|Y|Y|
-|Real DOS 2.x|Y|Y|Y|Y|Y|Y|
-|BeweDOS 1.x|Y|Y|Y|Y|N|N|a 720k or 1440k disk must be formatted with SpartaDOS orSDX or Real DOS, then Bewe DOS can be copied onto it!
-|[SpartaDOS](../SpartaDOS/README.md)|Y|Y|Y|Y|Y|Y|
-|[Lite DOS 2.x/3.X](http://www.mr-atari.com/Mr.Atari/LiteDOS/)|Y|Y|Y|Y|Y|?|
-|[SuperDOS](../People/Paul_Nicholls/SuperDOS/README.md)|Y|Y|Y|Y|N|N|
-|DOS II+D 4.5|Y|Y|N|N|N|N|
-|DOS II+D 6.x|Y|Y|Y|N|N|N|
-|\[XDOS\](../People/Stefan Dorndorf/XDOS\_2.43/README.md)|Y|Y|Y|Y|N|N|in 360k mode the two disksides are used as twofloppy drives (D1: and D2:) in XDOS!
-|KDOS 1.0|Y|N|N|N|N|N|
-|[OS/A+ Version 2.10](../Companies/OSS/OS_Aplus/OS_Aplus-Version_2/README.md)|Y|N|Y|N|N|N|
-|[DOS XL](../Companies/OSS/DOS_XL/README.md)|Y|N|Y|N|N|N|
-|[OS A+4.1](../OS_Aplus-Version_4)|N?|Y|Y|Y|Y|Y|OS A+4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
+| DOS | 90KB | 130KB | 180KB | 360KB | 720KB | 1.440KB | Remark
+|-----|------|-------|-------|-------|-------|---------|--------
+| [Atari DOS 1](../Companies/Atari/Atari_DOS/Atari_DOS_1/README.md) | Y    | N     | N     | N     | N     | N       | 
+| [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)  SmartDOS | Y    | N     | Y     | N     | N     | N       | DOS 2.0s can read 180k after a Reset; DOS 2.0d can read 90k after a Reset!  DOS.SYS of SmartDOS is based on DOS 2.0! (Rainbow DOS and Black DOSare merely DUP.SYS replacements for DOS 2.0s or DOS 2.0d, there are many others...)
+| [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md) | Y    | Y     | N     | N     | N     | N       | 
+| [Atari Dos 3](../Companies/Atari/Atari_DOS/Atari_DOS_3/README.md) | Y    | Y     | N     | N     | N     | N       | 
+| [Atari DOS 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md) | Y    | N     | Y     | Y     | N     | N       | 
+| [Atari DOS XE](../Companies/Atari/Atari_DOS/Atari_DOS_XE/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
+| [BIBO-DOS](../Companies/CompyShop/BIBO-DOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
+| [Turbo-DOS XE](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
+| [TOP-DOS](../TOP-DOS/README.md) | Y    | Y     | Y     | Y     | ?     | N       | 
+| Mach DOS 3.7 | Y    | N     | Y     | Y     | N     | N       | 
+| [MyDOS](../DOS/MyDOS/README.md) | Y    | Y     | Y     | Y     | Y     | N       | MyDOS requires a special / external formatter to format 1440 KB- one is available e.g. with the CSS Black Box or the CSS Floppyboard,maybe there are also some other external formatters...?!?
+| [SpartaDOS](../SpartaDOS/README.md) | Y    | Y     | Y     | Y     | Y     | Y       | 
+| Real DOS 2.x | Y    | Y     | Y     | Y     | Y     | Y       | 
+| BeweDOS 1.x | Y    | Y     | Y     | Y     | N     | N       | a 720k or 1440k disk must be formatted with SpartaDOS orSDX or Real DOS, then Bewe DOS can be copied onto it!
+| [SpartaDOS](../SpartaDOS/README.md) | Y    | Y     | Y     | Y     | Y     | Y       | 
+| [Lite DOS 2.x/3.X](http://www.mr-atari.com/Mr.Atari/LiteDOS/) | Y    | Y     | Y     | Y     | Y     | ?       | 
+| [SuperDOS](../People/Paul_Nicholls/SuperDOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
+| DOS II+D 4.5 | Y    | Y     | N     | N     | N     | N       | 
+| DOS II+D 6.x | Y    | Y     | Y     | N     | N     | N       | 
+| \[XDOS\](../People/Stefan Dorndorf/XDOS\_2.43/README.md) | Y    | Y     | Y     | Y     | N     | N       | in 360k mode the two disksides are used as twofloppy drives (D1: and D2:) in XDOS!
+| KDOS 1.0 | Y    | N     | N     | N     | N     | N       | 
+| [OS/A+ Version 2.10](../Companies/OSS/OS_Aplus/OS_Aplus-Version_2/README.md) | Y    | N     | Y     | N     | N     | N       | 
+| [DOS XL](../Companies/OSS/DOS_XL/README.md) | Y    | N     | Y     | N     | N     | N       | 
+| [OS A+4.1](../OS_Aplus-Version_4) | N?   | Y     | Y     | Y     | Y     | Y       | OS A+4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
 ## Harddisk partition formats and DOS versions supporting them
 
 ### 128 Byte sectors (single density)
 
-|Partition Size /<br>Sectors|512 K<br>4.095|1 M<br>8.191|2 M<br>16.383|4 M<br>32.767|8 M<br>65.535|Remark
-|---|----|-----|-----|-----|-----|------
-|Top DOS 1.5 Prof|Y|Y|Y|Y|Y|Top DOS Prof. should support subdirs and harddisks,but I have no clue how! (manuals and information missing!)
-|MyDOS 4.5x|Y|Y|Y|Y|Y|
-|SpartaDOS 3.2x/3.3x|Y|Y|Y|Y|Y|
-|RealDOS 2.x|Y|Y|Y|Y|Y|
-|MyDOS 4.5x|Y|Y|Y|Y|Y|
-|BeweDOS 1.x|Y|Y|Y|Y|Y|harddisk must be formatted with Sparta DOS or SDX or Real DOS,then Bewe DOS can be copied onto it!
-|LiteDOS 2.x/3.x|Y|Y|Y|Y|Y|
-|DOS XE|Y|Y|Y|Y|Y|DOS XE does support subdirs, but harddisks up to 16MB can only be used with sup8pdct's homebrew DOS XE formatter!
-|OS A+ 4.1|Y|Y|Y|Y|Y|OS A+ 4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
+| Partition Size /<br>Sectors | 512 K<br>4.095 | 1 M<br>8.191 | 2 M<br>16.383 | 4 M<br>32.767 | 8 M<br>65.535 | Remark
+|-----------------------------|----------------|--------------|---------------|---------------|---------------|--------
+| Top DOS 1.5 Prof            | Y              | Y            | Y             | Y             | Y             | Top DOS Prof. should support subdirs and harddisks,but I have no clue how! (manuals and information missing!)
+| MyDOS 4.5x                  | Y              | Y            | Y             | Y             | Y             | 
+| SpartaDOS 3.2x/3.3x         | Y              | Y            | Y             | Y             | Y             | 
+| RealDOS 2.x                 | Y              | Y            | Y             | Y             | Y             | 
+| MyDOS 4.5x                  | Y              | Y            | Y             | Y             | Y             | 
+| BeweDOS 1.x                 | Y              | Y            | Y             | Y             | Y             | harddisk must be formatted with Sparta DOS or SDX or Real DOS,then Bewe DOS can be copied onto it!
+| LiteDOS 2.x/3.x             | Y              | Y            | Y             | Y             | Y             | 
+| DOS XE                      | Y              | Y            | Y             | Y             | Y             | DOS XE does support subdirs, but harddisks up to 16MB can only be used with sup8pdct's homebrew DOS XE formatter!
+| OS A+ 4.1                   | Y              | Y            | Y             | Y             | Y             | OS A+ 4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
 ### 256 Byte sectors (double density)
 
-|Partition Size /<br>Sectors|1 M<br>4.095|2 M<br>8.191|4 M<br>16.383|8 M<br>32.767|16 M<br>65.535|Remark
-|---|----|-----|-----|-----|-----|------
-|Top DOS 1.5 Prof|Y|Y|Y|Y|Y|Top DOS Prof. should support subdirs and harddisks,but I have no clue how! (manuals and information missing!)
-|MyDOS 4.5x|Y|Y|Y|Y|Y|
-|SpartaDOS 3.2x/3.3x|Y|Y|Y|Y|Y|
-|RealDOS 2.x|Y|Y|Y|Y|Y|
-|BeweDOS 1.x|Y|Y|Y|Y|Y|harddisk must be formatted with Sparta DOS or SDX or Real DOS,then Bewe DOS can be copied onto it!
-|SDX 4.x|Y|Y|Y|Y|Y|
-|LiteDOS 2.x/3.x|Y|Y|Y|Y|Y|
-|DOS XE|Y|Y|Y|Y|Y|DOS XE does support subdirs, but harddisks up to 16MB can only be used with sup8pdct's homebrew DOS XE formatter!
-|OS A+ 4.1|Y|Y|Y|Y|Y|OS A+ 4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
+| Partition Size /<br>Sectors | 1 M<br>4.095 | 2 M<br>8.191 | 4 M<br>16.383 | 8 M<br>32.767 | 16 M<br>65.535 | Remark
+|-----------------------------|--------------|--------------|---------------|---------------|----------------|--------
+| Top DOS 1.5 Prof            | Y            | Y            | Y             | Y             | Y              | Top DOS Prof. should support subdirs and harddisks,but I have no clue how! (manuals and information missing!)
+| MyDOS 4.5x                  | Y            | Y            | Y             | Y             | Y              | 
+| SpartaDOS 3.2x/3.3x         | Y            | Y            | Y             | Y             | Y              | 
+| RealDOS 2.x                 | Y            | Y            | Y             | Y             | Y              | 
+| BeweDOS 1.x                 | Y            | Y            | Y             | Y             | Y              | harddisk must be formatted with Sparta DOS or SDX or Real DOS,then Bewe DOS can be copied onto it!
+| SDX 4.x                     | Y            | Y            | Y             | Y             | Y              | 
+| LiteDOS 2.x/3.x             | Y            | Y            | Y             | Y             | Y              | 
+| DOS XE                      | Y            | Y            | Y             | Y             | Y              | DOS XE does support subdirs, but harddisks up to 16MB can only be used with sup8pdct's homebrew DOS XE formatter!
+| OS A+ 4.1                   | Y            | Y            | Y             | Y             | Y              | OS A+ 4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
 ### 512 Byte sectors (quad density)
 
-|Partition Size /<br>Sectors|2 M<br>4.095|4 M<br>8.191|8 M<br>16.383|16 M<br>32.767|32 M<br>65.535|Remark
-|---|----|-----|-----|-----|-----|------
-|Top DOS 1.5 Prof|N|N|N|N|N|N|
-|MyDOS 4.5x|N|N|N|N|N|N|
-|SpartaDOS 3.2x/3.3x|N|N|N|N|N|N|
-|RealDOS 2.x|N|N|N|N|N|N|
-|BeweDOS 1.x|N|N|N|N|N|N|
-|SDX 4.x|Y|Y|Y|Y|Y|Y|
-|LiteDOS 2.x/3.x|N|N|N|N|N|N|
-|DOS XE|N|N|N|N|N|N|
-|OS A+ 4.1|Y|Y|Y|Y|Y|?|OS A+ 4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
+| Partition Size /<br>Sectors | 2 M<br>4.095 | 4 M<br>8.191 | 8 M<br>16.383 | 16 M<br>32.767 | 32 M<br>65.535 | Remark
+|-----------------------------|--------------|--------------|---------------|----------------|----------------|--------
+| Top DOS 1.5 Prof            | N            | N            | N             | N              | N              | N
+| MyDOS 4.5x                  | N            | N            | N             | N              | N              | N
+| SpartaDOS 3.2x/3.3x         | N            | N            | N             | N              | N              | N
+| RealDOS 2.x                 | N            | N            | N             | N              | N              | N
+| BeweDOS 1.x                 | N            | N            | N             | N              | N              | N
+| SDX 4.x                     | Y            | Y            | Y             | Y              | Y              | Y
+| LiteDOS 2.x/3.x             | N            | N            | N             | N              | N              | N
+| DOS XE                      | N            | N            | N             | N              | N              | N
+| OS A+ 4.1                   | Y            | Y            | Y             | Y              | Y              | ?
 
 ## Andere Quellen
 

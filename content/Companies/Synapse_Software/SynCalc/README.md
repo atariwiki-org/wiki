@@ -33,10 +33,10 @@ The 1985 version should be free of bugs, further, it was sold with a templates d
 
 Appears to be based on the 1983 version. All "STA $CFFF" bank select statements are replaced by "JSR $0101", pointing to a small subroutine that maps the Axlon bank number to and XE bank in PORTB.
 
-|Port B |FF|EF|EB|E7|E3|AF|AB|A7|A3|8F|8B|87|83|FF|FF|
-|-------|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
-|Model  | 800/XL |130 XE |130 XE | 130 XE | 130 XE  | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | n/a | n/a
-| Total RAM (k) | 48/64  |128    |128    | 128    | 128     | 192   | 192   | 192   | 192   | 256   | 256   | 256   | 256   | n/a | n/a
+| Port B | FF | EF | EB | E7 | E3 | AF | AB | A7 | A3 | 8F | 8B | 87 | 83 | FF | FF
+|--------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----
+| Model  | 800/XL | 130 XE | 130 XE | 130 XE | 130 XE | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | RAMBO | n/a | n/a
+| Total RAM (k) | 48/64 | 128 | 128 | 128 | 128 | 192 | 192 | 192 | 192 | 256 | 256 | 256 | 256 | n/a | n/a
 
 See also [http://atariage.com/forums/topic/208094-who-can-crack-this-one](http://atariage.com/forums/topic/208094-who-can-crack-this-one).
 
@@ -88,24 +88,24 @@ See also [http://atariage.com/forums/topic/208094-who-can-crack-this-one](http:/
 **From p. 9 of the documenation:**
 "NOTE: The memory indicator will be nnn/NNN where nnn = amount of memory used in K bytes and NNN = total amount of memory available in K bytes (1 K byte is equal to 1024 characters). When you notice that the memory indicator shows that the worksheet is becoming full, you should save the worksheet to disk and then reload it. This may free up additional memory space. The amount of memory will vary according to the configuration of your computer."
 
-| Hardware | Base RAM | Expansion | Free Memory in 1983 Version | Free Memory in 1985 Version | Free Memory in 1993 Version |
-|--------------|-----|--------------|------|------|---- |
-| Atari 800    | 48k | none         |  21k |  21k | n/a
-| Atari 800    | 52k | none         |  25k |  25k | n/a
-| Atari 800    | 48k | 64k Axlon    |  69k |  69k | n/a
-| Atari 800    | 48k | 128k Axlon   | 133k | 133k | n/a
-| Atari 800    | 48k | 256k Axlon   | 245k | 245k | n/a
-| Atari 800    | 48k | 512k Axlon   | 245k | 245k | n/a
-| Atari 800    | 48k | 1024k Axlon  | 245k | 245k | n/a
-| Atari 800    | 48k | 2048k Axlon  | 245k | 245k | n/a
-| Atari 800    | 48k | 4096k Axlon  | 245k | 245k | n/a
-| Atari 800 XL | 64k | none         |  21k |  21k |  21k
-| Atari 800 XL | 64k | 256k Rambo   |  21k |  84k | 213k
-| Atari 800 XL | 64k | 256k Compy   |  21k |  84k | 149k
-| Atari 800 XL | 64k | 512k Rambo   |  21k |  84k | 213k
-| Atari 800 XL | 64k | 512k Compy   |  21k |  84k | 149k
-| Atari 800 XL | 64k | 1024k Rambo  |  21k |  84k | 213k
-| Atari 130 XE | 64k | 64k Atari    |  21k |  84k |  85k
+| Hardware | Base RAM | Expansion | Free Memory in 1983 Version | Free Memory in 1985 Version | Free Memory in 1993 Version
+|----------|----------|-----------|-----------------------------|-----------------------------|-----------------------------
+| Atari 800 | 48k      | none      | 21k                         | 21k                         | n/a
+| Atari 800 | 52k      | none      | 25k                         | 25k                         | n/a
+| Atari 800 | 48k      | 64k Axlon | 69k                         | 69k                         | n/a
+| Atari 800 | 48k      | 128k Axlon | 133k                        | 133k                        | n/a
+| Atari 800 | 48k      | 256k Axlon | 245k                        | 245k                        | n/a
+| Atari 800 | 48k      | 512k Axlon | 245k                        | 245k                        | n/a
+| Atari 800 | 48k      | 1024k Axlon | 245k                        | 245k                        | n/a
+| Atari 800 | 48k      | 2048k Axlon | 245k                        | 245k                        | n/a
+| Atari 800 | 48k      | 4096k Axlon | 245k                        | 245k                        | n/a
+| Atari 800 XL | 64k      | none      | 21k                         | 21k                         | 21k
+| Atari 800 XL | 64k      | 256k Rambo | 21k                         | 84k                         | 213k
+| Atari 800 XL | 64k      | 256k Compy | 21k                         | 84k                         | 149k
+| Atari 800 XL | 64k      | 512k Rambo | 21k                         | 84k                         | 213k
+| Atari 800 XL | 64k      | 512k Compy | 21k                         | 84k                         | 149k
+| Atari 800 XL | 64k      | 1024k Rambo | 21k                         | 84k                         | 213k
+| Atari 130 XE | 64k      | 64k Atari | 21k                         | 84k                         | 85k
 
 The disk contains a boot loader in the sectors 1-8 and two versions of the program. The first version starts at sector 18 ($12) supports the Axlon compatiable memory expansions with the banking register $CFFF. The second version starts at sector 62 ($3E) and  supports the XE compatible memory expansions with the banking register $D301 (PORTB). In both cases, the extended memory is banked in at $4000. If an extended memory bank at $4000 is available for the banking value $E3 during the boot process, the second version is loaded.
 
