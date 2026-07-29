@@ -28,7 +28,7 @@ Trotz gleichlautendem Befehl, kann die Syntax der einzelnen Dialekte abweichen!
 ### Befehlsübersicht
 
 | ATARI-Basic | Turbo-Basic 1.5 | BASIC A+ | BASIC-XL | BASIC-XE| MS-BASIC
-|-------------|---------------|-|----------|----------|---------|----------
+|-------------|-----------------|----------|----------|---------|----------
 | | !| | | |
 | | %GET| | | |
 | | %PUT| | | |
