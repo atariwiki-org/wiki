@@ -720,7 +720,7 @@ See also:
 
 ### AUDC1
 
-||Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
+|Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
 |---|-----|----|----|----|---
 |Read|53761|$D201|POT1|Pot/paddle 1|625|all
 |Write|53761|$D201|AUDC1| Audio channel 1 control|none|all
@@ -752,7 +752,7 @@ next: [AUDF2](#AUDF2)
 
 ### AUDC2
 
-||Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
+|Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
 |---|-----|----|----|----|---
 |Read|53763|$D203|POT3|Pot/paddle 3|627|all
 |Write|53763|$D203|AUDC2| Audio channel 2 control|none|all
@@ -784,7 +784,7 @@ next: [AUDF3](#AUDF3)
 
 ### AUDC3
 
-||Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
+|Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
 |---|-----|----|----|----|---
 |Read|53765|$D205|POT5|Pot/paddle 5|629|all
 |Write|53765|$D205|AUDC3| Audio channel 3 control|none|all
@@ -816,7 +816,7 @@ next: [AUDF4](#AUDF4)
 
 ### AUDC4
 
-||Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
+|Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
 |---|-----|----|----|----|---
 |Read|53767|$D207|POT7|Pot/paddle 7|631|all
 |Write|53767|$D207|AUDC4| Audio channel 4 control|none|all
@@ -848,7 +848,7 @@ next: [AUDCTL](#AUDCTL)
 
 ### AUDCTL
 
-||Read/Write||ADR||HEXADR||NAME||Description||OS
+|Read/Write||ADR||HEXADR||NAME||Description||OS
 |Read|53768|$D208|ALLPOT|Audio control|all
 |Write|53768|$D208|AUDCTL|Pot Port State|all
 
@@ -889,7 +889,7 @@ next: [STIMER](#KBCODE),[KBCODE](#KBCODE)
 
 ### AUDF1
 
-||Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
+|Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
 |---|-----|----|----|----|---
 |Read|53760|$D200|POT0|Pot/paddle 0|624|all
 |Write|53760|$D200|AUDF1| Audio channel 1 frequency |none|all
@@ -927,7 +927,7 @@ next: [AUDC1](#AUDC1)
 
 ### AUDF2
 
-||Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
+|Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
 |---|-----|----|----|----|---
 |Read|53762|$D202|POT2|Pot/paddle 2|626|all
 |Write|53762|$D202|AUDF2| Audio channel 2 frequency |none|all
@@ -965,7 +965,7 @@ next: [AUDC2](#AUDC2)
 
 ### AUDF3
 
-||Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
+|Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
 |---|-----|----|----|----|---
 |Read|53764|$D204|POT4|Pot/paddle 4|628|all
 |Write|53764|$D204|AUDF3| Audio channel 3 frequency |none|all
@@ -1003,7 +1003,7 @@ next: [AUDC3](#AUDC3)
 
 ### AUDF4
 
-||Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
+|Read/Write|ADR|HEXADR|NAME|Description|shadow|OS
 |---|-----|----|----|----|---
 |Read|53766|$D206|POT6|Pot/paddle 6|630|all
 |Write|53766|$D206|AUDF4| Audio channel 4 frequency |none|all
@@ -3607,7 +3607,7 @@ next: [PACTL](#PACTL)
 
 ### POTGO
 
-||Read/Write||ADR||HEXADR||NAME||Description||OS
+|Read/Write||ADR||HEXADR||NAME||Description||OS
 |Write|53771|$D20B|POTGO|Start Pot reading sequence|all
 
 Start the POT scan sequence. You must read your POT values first and then start the scan sequence, since POTGO resets the POT registers to zero. Written by the stage two VBLANK sequence.
@@ -4006,7 +4006,7 @@ next: [SDLSTL](#SDLSTL),[SDLSTH](#SDLSTL)
 
 ### SEROUT
 
-||Read/Write||ADR||HEXADR||NAME||Description||OS
+|Read/Write||ADR||HEXADR||NAME||Description||OS
 |Read|53773|$D20D|SERIN|Serial Port Data Output|all
 |Write|53773|$D20D|SEROUT|Serial Port Data Input|all
 
@@ -4267,7 +4267,7 @@ next: [PORTA](#PORTA) of PIA
 
 ### SKREST
 
-||Read/Write||ADR||HEXADR||NAME||Description||OS
+|Read/Write||ADR||HEXADR||NAME||Description||OS
 |Read|53770|$D20A|RANDOM|random number generator|all
 |Write|53770|$D20A|SKREST|serial status register reset|all
 
