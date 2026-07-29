@@ -665,11 +665,12 @@ The documentation for PMG.ACT states that you may read the contents of PMHpos to
 ### 6.  REAL NUMBER ROUTINES
 
 There are two discrepancies in PROCedure names in the REAL.ACT library as compared to the REAL.DOC documentation, as follow:
-|Name in .DOC|Name in .ACT
-|----|---------
-|StrR|RealToStr
-|ValR|StrToReal
-We suggest that you change the source code in REAL.ACT to reflect the names given in the documentation (rather than vice versa), since this makes the names appear compatibile with the library's other number-string conversion routines.
+
+| Name in .DOC | Name in .ACT
+|--------------|--------------
+| StrR         | RealToStr
+| ValR         | StrToReal
+| We suggest that you change the source code in REAL.ACT to reflect the names given in the documentation (rather than vice versa), since this makes the names appear compatibile with the library's other number-string conversion routines. | 
 
 ### 7.  REAL NUMBER ROUTINES
 
@@ -741,22 +742,24 @@ The program called MUSIC.DEM will not work as is on older 400/800 machines. This
 ### 1.  REAL ROUTINES
 
 There are two discrepancies in PROCedure names in the REAL.ACT library as compared to the REAL.DOC documentation, as follow:
-|Name in .DOC|Name in .ACT
-|----|----------
-|StrR|RealToStr
-|ValR|StrToReal
-We suggest that you change the source code in REAL.ACT to reflect the names given in the documentation (rather than vice versa), since this makes the names appear compatibile with the library's other number-string conversion routines.
+
+| Name in .DOC | Name in .ACT
+|--------------|--------------
+| StrR         | RealToStr
+| ValR         | StrToReal
+| We suggest that you change the source code in REAL.ACT to reflect the names given in the documentation (rather than vice versa), since this makes the names appear compatibile with the library's other number-string conversion routines. | 
 
 ### 2.  SORT ROUTINES
 
 There are four discrepancies in PROCecure names in the SORT.ACT library as compared to the SORT.ACT documentation, as follows:
-|Name in .DOC|Name in .ACT
-|----|----------
-|SortB|BSort
-|SortC|CSort
-|SortI|ISort
-|SortS|SSort
-Please change your disk file to agree with your manual.
+
+| Name in .DOC | Name in .ACT
+|--------------|--------------
+| SortB        | BSort
+| SortC        | CSort
+| SortI        | ISort
+| SortS        | SSort
+| Please change your disk file to agree with your manual. | 
 
 ### 3.  PRINTF
 
