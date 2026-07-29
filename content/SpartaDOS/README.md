@@ -97,14 +97,14 @@ specific development of the 3.3 versions.
 Greatly enhanced/expanded compared to disk- based SpartaDOS; completely
 different source code. Several versions produced:
 
-| Version | Date | Vendor
-|---------|-----:|--------
-| 4.22    | 11-05-95 | released by Fine Tooned Engineering (FTe)
-| 4.21    | 7-10-89 | released by ICD
-| 4.20    | 2-06-89 | released by ICD
-| 4.19    | 1-16-89 | released by ICD
-| 4.18    | 10-29-88 | released by ICD
-| 4.17    | ?-?-88 | released by ICD
+| Version | Date (MM/DD/YYYY) | Vendor
+|---------|-------------------|--------
+| 4.22    | 11-05-1995        | released by Fine Tooned Engineering (FTe)
+| 4.21    | 07-10-1989        | released by ICD
+| 4.20    | 02-06-1989        | released by ICD
+| 4.19    | 01-16-1989        | released by ICD
+| 4.18    | 10-29-1988        | released by ICD
+| 4.17    | ??-??-1988        | released by ICD
 
 ## References
 
