@@ -790,7 +790,8 @@ a string in "quotes." If PrintF is
 used like this, it is just like
 Print.
 
-|| command    ||         output
+| Command           |    output
+|-------------------|----------
 | PrintF("Hello")   |    Hello
 | Print("Hello")    |    Hello
 
@@ -896,11 +897,12 @@ Here is a list of special characters
 and how they output the data in the
 list.
 
-|| format char || description
+| Format Char | Description
+|----|-------------
 | %I | INT
 | %U | CARD (the U stands for Unsigned) and BYTE
 | %C | print as a character
-| %H | a Hexdecimal number
+| %H | a hexadecimal number
 | %E | the RETURN character
 | %% | output the percent sign
 | %S | output as a string (we'll cover this in a later lesson)
@@ -1614,7 +1616,8 @@ The next number is the command.  Use
 this chart to find out which command
 to use.
 
-|| Access || Value
+|  Access           | Value
+|-------------------|-------
 | Input Only        | 4
 | Output Only       | 8
 | Input and output  | 12
@@ -1672,7 +1675,8 @@ exactly the same.
 
 Here are the output PROCs.
 
-|| Proc || output
+| Proc      | Output
+|-----------|-------
 | PrintD    | string
 | PrintDE   | string with CR
 | PrintBD   | BYTE

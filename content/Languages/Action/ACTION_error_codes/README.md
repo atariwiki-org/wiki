@@ -1,9 +1,9 @@
 # ACTION! error codes
 
-%%tabbedSection
-%%tab-Fehler-Codes
+## Fehlernummern
 
-||Nr.||Bedeutung
+|Nr.|Bedeutung
+|-|-
 |0|Kein System-Speicher mehr
 |1|Im String fehlt ein "
 |2|Verschachtelte DEFINEs sind nicht zulässig
@@ -35,9 +35,11 @@
 |28|Nicht zulässiges RETURN
 |61|Kein Speicher mehr für die Symboltabelle
 |128|<BREAK>-Taste wurde zum Programmabruch benutzt (\*GO)
-/%
-%%tab-Error\_Codes
-||#||Error codes
+
+## Error Codes
+
+|#| Meaning
+|-|-
 |0|Out of system memory.
 |1|Missing " (double quote) " in a string.
 |2|Nested Defines. You cannot nest the Define directive.
@@ -69,5 +71,3 @@
 |28|Illegal RETURN.
 |61|Out of Symbol Table space.
 |128|BREAK key was used to stop program execution. \*Go
-/%
-/%
