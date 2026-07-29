@@ -249,61 +249,61 @@ First Action ad in Compute July, 1983 ; please take into account: 128-column scr
 
 ### Analog
 
-|Title|Issue|Language|Comment
-|-----|-----|--------|-------
-|[Action Review](../Review_Action/README.md)|#16 (02/ 84)|en|Review
-|[An Introduction to ACTION](../Articles/An_Introduction_to_ACTION/README.md) |#17 + #18 (03+ 04/ 84)|en|Tutorial
-|[Stars 3-D](../../../Stars_in_3D/README.md)|#20 (07/ 84)|en|Demo
-|[Bounce in ACTION](../Examples/Bounce_in_ACTION/README.md)|#20 (07/ 84)|en|Game
-|[PULSE Game in ACTION!](../Examples/Pulse_in_ACTION/README.md)|#26 (01/ 85)|en|Demo
-|[More Fun with Bounce](../Examples/More_Fun_with_Bounce/README.md)|#27 (02/ 85)|en|Game
-|[Demon Birds](../Examples/Demon_Birds/README.md)|#28 (03/ 85)|en|Game
-|[R.O.T.O.](../../../Roto/README.md)|#31 (06/ 85)|en|Game
-|[Color the shapes](../Examples/Color_the_shapes/README.md)|#32 (07/ 85)|en|game
-|[Getting in on the Action! - Part 1](../Articles/Getting_in_on_the_Action_1/README.md)|#32 (07/ 85)|en|Tutorial
-|[Getting in on the Action! - Part 2](../Articles/Getting_in_on_the_Action_2/README.md)|#35 (10/ 85)|en|Tutorial
-|[Sneak Attack](../Sneak_attack/README.md)|#36 (11/ 85)|en|Game
-|[Air Hockey](../Examples/Air_hockey/README.md)|#38 (01/ 86)|en|Game
-|[D:Check in ACTION!](../Examples/D-Check/README.md)|#44 (07/ 86)|en|Tool
-|[Trails](../Articles/Trails/README.md)|#50 (01/ 87)|en|Tool for using the KoalaPad in ACTION!
-|[Zero Free in ACTION!](../ACTION_Zero_Free/README.md)|#54 (05/ 87) |en|Tool
+| Title | Issue | Language | Comment
+|-------|-------|----------|---------
+| [Action Review](../Review_Action/README.md) | #16 (02/ 84) | en       | Review
+| [An Introduction to ACTION](../Articles/An_Introduction_to_ACTION/README.md) | #17 + #18 (03+ 04/ 84) | en       | Tutorial
+| [Stars 3-D](../../../Stars_in_3D/README.md) | #20 (07/ 84) | en       | Demo
+| [Bounce in ACTION](../Examples/Bounce_in_ACTION/README.md) | #20 (07/ 84) | en       | Game
+| [PULSE Game in ACTION!](../Examples/Pulse_in_ACTION/README.md) | #26 (01/ 85) | en       | Demo
+| [More Fun with Bounce](../Examples/More_Fun_with_Bounce/README.md) | #27 (02/ 85) | en       | Game
+| [Demon Birds](../Examples/Demon_Birds/README.md) | #28 (03/ 85) | en       | Game
+| [R.O.T.O.](../../../Roto/README.md) | #31 (06/ 85) | en       | Game
+| [Color the shapes](../Examples/Color_the_shapes/README.md) | #32 (07/ 85) | en       | game
+| [Getting in on the Action! - Part 1](../Articles/Getting_in_on_the_Action_1/README.md) | #32 (07/ 85) | en       | Tutorial
+| [Getting in on the Action! - Part 2](../Articles/Getting_in_on_the_Action_2/README.md) | #35 (10/ 85) | en       | Tutorial
+| [Sneak Attack](../Sneak_attack/README.md) | #36 (11/ 85) | en       | Game
+| [Air Hockey](../Examples/Air_hockey/README.md) | #38 (01/ 86) | en       | Game
+| [D:Check in ACTION!](../Examples/D-Check/README.md) | #44 (07/ 86) | en       | Tool
+| [Trails](../Articles/Trails/README.md) | #50 (01/ 87) | en       | Tool for using the KoalaPad in ACTION!
+| [Zero Free in ACTION!](../ACTION_Zero_Free/README.md) | #54 (05/ 87) | en       | Tool
 
 ### Antic
 
-|Title|Issue|Language|Comment
-|-----|-----|--------|-------
-|[Interrupts in ACTION!](../Examples/Interrupts_in_Action/README.md)|Vol. 3 #3 (07/ 84)|en|
-|[Demo: Pretty](../Articles/Demo_Pretty/README.md)|Vol. 3 #7 (11/ 84)|en|Demo from Antic I/O-Board
-|[Splash in ACTION](../Examples/SPLASH_in_ACTION/README.md)|Vol. 3 #12 (04/ 85)|en|Demo
-|[Game AMAZING in ACTION](../Articles/Game_AMAZING_in_ACTION/README.md)|Vol. 4 #1  (05/ 85)|en|Game
-|[View 3D](../Examples/View_3D/README.md)|Vol. 4 #2 (06/ 85)|en|Tool
-|[DARK STAR](../Articles/Dark_Star/README.md)|Vol. 4 #3 (07/ 85)|en|Game: Zapping Aliens With Radioactive Waste
-|[Display Master](../Examples/Display_Master/README.md)|Vol. 4 #4 (08/ 85)|en|
-|[8 QUEENS ACTION!](../Articles/Eight_Queens/README.md)|Vol. 4 #5 (09/ 85)|en|92 chess solutions in 40 seconds
-|[Video Stretch - Rubber visuals in ACTION!](../Articles/Video_Stretch/README.md)|Vol. 5 #6 (10/ 86)|en|Tool
-|[Killer Chess](../Articles/Killer_Chess/README.md)|Vol. 6 #10 (02/ 88)|en|Game
-|[Reardoor](../Articles/Reardoor/README.md)|Vol. 6 #10 (02/ 88)|en|Game
-|[Frog from Antic Vol. 6 #10 February 1988](../Articles/Frog/README.md)|Vol. 6 #10 (02/ 88)|en|Game
-|[ACTION! Toolbox](../ACTION_Toolbox/README.md)|Vol. 7 #6 (10/ 88)|en|Lightning-fast command finder (Wordfind and Matchup)
+| Title | Issue | Language | Comment
+|-------|-------|----------|---------
+| [Interrupts in ACTION!](../Examples/Interrupts_in_Action/README.md) | Vol. 3 #3 (07/ 84) | en       | 
+| [Demo: Pretty](../Articles/Demo_Pretty/README.md) | Vol. 3 #7 (11/ 84) | en       | Demo from Antic I/O-Board
+| [Splash in ACTION](../Examples/SPLASH_in_ACTION/README.md) | Vol. 3 #12 (04/ 85) | en       | Demo
+| [Game AMAZING in ACTION](../Articles/Game_AMAZING_in_ACTION/README.md) | Vol. 4 #1  (05/ 85) | en       | Game
+| [View 3D](../Examples/View_3D/README.md) | Vol. 4 #2 (06/ 85) | en       | Tool
+| [DARK STAR](../Articles/Dark_Star/README.md) | Vol. 4 #3 (07/ 85) | en       | Game: Zapping Aliens With Radioactive Waste
+| [Display Master](../Examples/Display_Master/README.md) | Vol. 4 #4 (08/ 85) | en       | 
+| [8 QUEENS ACTION!](../Articles/Eight_Queens/README.md) | Vol. 4 #5 (09/ 85) | en       | 92 chess solutions in 40 seconds
+| [Video Stretch - Rubber visuals in ACTION!](../Articles/Video_Stretch/README.md) | Vol. 5 #6 (10/ 86) | en       | Tool
+| [Killer Chess](../Articles/Killer_Chess/README.md) | Vol. 6 #10 (02/ 88) | en       | Game
+| [Reardoor](../Articles/Reardoor/README.md) | Vol. 6 #10 (02/ 88) | en       | Game
+| [Frog from Antic Vol. 6 #10 February 1988](../Articles/Frog/README.md) | Vol. 6 #10 (02/ 88) | en       | Game
+| [ACTION! Toolbox](../ACTION_Toolbox/README.md) | Vol. 7 #6 (10/ 88) | en       | Lightning-fast command finder (Wordfind and Matchup)
 
 ### ATARI''magazin''
 
-|Title|Issue|Language|Comment
-|-----|-----|--------|-------
-|[Schnelle Vektoren in ACTION!](../Examples/Schnelle_Vektoren_in_Action/README.md)|#1 (1-2/ 87)|de|Tutorial: Action!-Center Teil 1
-|[Schnelle Umwege in ACTION!](../Examples/Schnelle_Umwege_in_Action/README.md)|#2 (3-4/ 87)|de|Tutorial: Action!-Center Teil 2
-|[Interne Variablen](../Internal_Variables/README.md)|#3 (5-6/ 87)|de|Tutorial: Action!-Center Teil 3
-|[Was ist dran an Action!?](../Articles/Was_ist_dran_an_Action/README.md)|#4 (7-8/ 87)|de| Tutorial: Action!-Center Teil 4
+| Title | Issue | Language | Comment
+|-------|-------|----------|---------
+| [Schnelle Vektoren in ACTION!](../Examples/Schnelle_Vektoren_in_Action/README.md) | #1 (1-2/ 87) | de       | Tutorial: Action!-Center Teil 1
+| [Schnelle Umwege in ACTION!](../Examples/Schnelle_Umwege_in_Action/README.md) | #2 (3-4/ 87) | de       | Tutorial: Action!-Center Teil 2
+| [Interne Variablen](../Internal_Variables/README.md) | #3 (5-6/ 87) | de       | Tutorial: Action!-Center Teil 3
+| [Was ist dran an Action!?](../Articles/Was_ist_dran_an_Action/README.md) | #4 (7-8/ 87) | de       | Tutorial: Action!-Center Teil 4
 
 ### Atari Magazine
 
-|Title|Issue|Language|Comment
-|-----|-----|--------|-------
-|[ACTION! Deel](../ACTION_Deel/README.md)| |nl|A collection of Action Articles
+| Title | Issue | Language | Comment
+|-------|-------|----------|---------
+| [ACTION! Deel](../ACTION_Deel/README.md) |       | nl       | A collection of Action Articles
 
 ### CK Computer Kontakt
 
-|Title|Issue|Language|Comment
-|-----|-----|--------|-------
-|[Musik in ACTION!](../Examples/Musik_in_ACTION/README.md) |#10/85|ge| Tutorial
-|[ACTION noch schneller](../Articles/ACTION_noch_schneller/README.md) |#6-7/86|ge| Tutorial
+| Title | Issue | Language | Comment
+|-------|-------|----------|---------
+| [Musik in ACTION!](../Examples/Musik_in_ACTION/README.md) | #10/85 | ge       | Tutorial
+| [ACTION noch schneller](../Articles/ACTION_noch_schneller/README.md) | #6-7/86 | ge       | Tutorial
