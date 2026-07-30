@@ -42,13 +42,9 @@ Anhang anstatt das ganze Archiv, Texte aus dem Archiv als Wiki-Artikel aufbereit
 
 ## Skript-Beispiele
 
-|
-
-data.atariwiki.org/DATA
-
-data.atariwiki.org/FLAC
-
-data.atariwiki.org/MOVIE
+- data.atariwiki.org/DATA
+- data.atariwiki.org/FLAC
+- data.atariwiki.org/MOVIE
 
 ---
 
