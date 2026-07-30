@@ -28,8 +28,6 @@
   
 - [Atari 8-bit FQA](Atari8bitfaq/README.md)
   
-- [Atari Calculator at VCFe 14 (2013 Munich)](AtariCalculator-VCFe14/README.md)
-  
 - [AtariMax EXEPACKER Files with bundled DOS](AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
   
 - [Atari ATASCII Table](Atari_ATASCII_Table/README.md)
@@ -832,6 +830,8 @@
     
   - [ATR8000](Companies/Software_Publishers/ATR8000/README.md)
     
+  - [DT-80](Companies/Software_Publishers/DT-80/README.md)
+    
  - [Synapse Software](Companies/Synapse_Software/README.md)
    
   - [Blue Max](Companies/Synapse_Software/Blue_Max/README.md)
@@ -891,8 +891,6 @@
 - [DOS Setup](DOS_Setup/README.md)
   
 - [DOS-Topics](DOS_topics/README.md)
-  
-- [DT-80](DT-80/README.md)
   
 - [Enhancements to Basic 2.1](Enhancements_to_Basic_2.1/README.md)
   
@@ -978,6 +976,8 @@
      
    - [DeviceDescriptors - MISSING](Hardware/USB/ProjUSB/USBStorageDevInfoTrageDataboxIII/README.md)
      
+  - [Speedlink Competition Pro USB](Hardware/USB/Speedlink_Competition_Pro_USB/README.md)
+    
   - [USB Cartridge](Hardware/USB/USB_Cartridge/README.md)
     
   - [USB Steering Wheel Driver](Hardware/USB/USB_Steering_Wheel_Driver/README.md)
@@ -2250,6 +2250,8 @@
    
   - [SuperDOS](People/Paul_Nicholls/SuperDOS/README.md)
     
+  - [Atari Calculator at VCFe 14 (2013 Munich)](People/Roland_Wassenberg/AtariCalculator-VCFe14/README.md)
+    
   - [Happy-Computer DOS II+/D](People/Stefan_Dorndorf/Happy-Computer_DOS_II_D/README.md)
     
   - [XDOS](People/Stefan_Dorndorf/XDOS/README.md)
@@ -2347,8 +2349,6 @@
  - [SpartaDOS Construction Set Manual](SpartaDOS/Sparta_DOS_Construction_Set_Manual/README.md)
    
 - [SpeedCalc](SpeedCalc/README.md)
-  
-- [Speedlink Competition Pro USB](Speedlink_Competition_Pro_USB/README.md)
   
 - [Stars 3-D](Stars_in_3D/README.md)
   

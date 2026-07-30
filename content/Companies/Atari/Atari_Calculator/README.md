@@ -61,7 +61,7 @@ Atari Calculator Cartridge Specifications from Carol Shaw from March 1979 (1.2 M
 
 Atari Calculator Cheat Sheet [Atari\_Calculator-Cheat\_Sheet.pdf](attachments/Atari_Calculator-Cheat_Sheet.pdf) from [inverseatascii](https://inverseatascii.info/)
 
-Atari Calculator on the 14th Vintage Computer Festival Europe: [Atari Calculator at VCFe 14 (2013 Munich)](../../../AtariCalculator-VCFe14/README.md)
+Atari Calculator on the 14th Vintage Computer Festival Europe: [Atari Calculator at VCFe 14 (2013 Munich)](../../../People/Roland_Wassenberg/AtariCalculator-VCFe14/README.md)
 
 ## References
 
