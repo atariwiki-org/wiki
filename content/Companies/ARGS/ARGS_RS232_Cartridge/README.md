@@ -21,9 +21,11 @@ und übernimmt alle nötigen Funktionen für die, Datenübertragung.
 
 Bauteile
 
-| 1 | ACIA 6551(A) + Quarz 1.8432 |
-| 1 | MAX 232 (oder Ersatz-Typ) |
-| 4 | Elko 22 MikroF |
+| Anzahl | Typ
+|--------|-----
+| 1      | ACIA 6551(A) + Quarz 1.8432
+| 1      | MAX 232 (oder Ersatz-Typ)
+| 4      | Elko 22 MikroF
 
 ## Bauplanbeschreibung und Bedienung
 
@@ -47,8 +49,10 @@ Hardwareinterrupt verzichten.
 Nullmodenbetrieb: Die Standard-Leitungen Für eine serielle
 Datenübertragung  sind
 
-| TxD  | Datensenden |
-| RxD  | Datenempfang  Masse/Ground |
+| Leitung | Funktion
+|---------|----------
+| TxD     | Datensenden
+| RxD     | Datenempfang  Masse/Ground
 
 Alle Informationen werden über diese Leitungen ausgetauscht.
 
@@ -108,16 +112,14 @@ Es funktionieren nicht
 
 ## Steueraddressen
 
-## Steueradressen: (CCTL + A3)
+## Steueradressen (CCTL + A3)
 
-| ACIA  | Aufgabe	|  Atari-Bus (Modulschacht)
-|       |           |
-| DATA	  | Ein-/Ausgabe  | $D508/54536
-| STATUS	| IRQ, Fehler, DSR, DCD  | $D509/54537
-| COMMAND  | Parität, Echo, IRQ, RTS | $D50A/54538
-| DATA	  | Baud, Stopbit, Wortlänge | $D5OB/54539
-
----
+| ACIA | Aufgabe | Atari-Bus (Modulschacht)
+|------|---------|--------------------------
+| DATA | Ein-/Ausgabe | $D508/54536
+| STATUS | IRQ, Fehler, DSR, DCD | $D509/54537
+| COMMAND | Parität, Echo, IRQ, RTS | $D50A/54538
+| DATA | Baud, Stopbit, Wortlänge | $D5OB/54539
 
 ## Platinen Layout ( Main.GuusAssmann )
 
