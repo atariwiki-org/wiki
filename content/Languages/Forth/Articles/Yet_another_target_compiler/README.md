@@ -3,12 +3,11 @@
 Yet Another Target Compiler by Eric S. Johansson
 
 January 6, 1987
-Yet Another Target Compiler                                     Page 2
 
 ## FORTH TARGET CODE GENERATOR
 
 This paper describes an alternative method for generating  stand-alone
-applications  in forth.  Important aspects of this new code generation
+applications  in FORTH.  Important aspects of this new code generation
 method include
 
 - freedom  from  the  ambiguities  and  restrictions  of   meta compilers.
@@ -21,7 +20,7 @@ method include
 
 Forth is a language strongly  bound  to  its  local  environment. This  has  the  advantage of making the compiler very simple.  It also has  the  disadvantage  of  making  it  VERY   difficult   to   create applications for any environment other than the local one.
 
-To date, making forth compile to a target environment  has  takenone  of  two paths:  using a meta compiler or using the target machine to create an executable image.
+To date, making forth compile to a target environment  has taken one  of  two paths:  using a meta compiler or using the target machine to create an executable image.
 
 Before looking at compiling for target environments, let's review how forth generates code in local environments.
 
@@ -47,11 +46,11 @@ Things get even stranger with defining words.  They  provide  the compile  time 
 The first part  of  of  the  constant  definition  executes  when defining  a  constant.  Defining a constant creates a dictionary entry consisting of the constant name and the value of  the  constant.   The second  part  of  the  constant  definition  executes when the program
 references constant.  It places the value of a constant on the stack.
 
-Forth  compilers  localize  code  generation  complexity  to  the definition   implementing  the  function.   The  nature  of  the  code generation complexity determines which method of  code  generation  isappropriate for the application.
+Forth  compilers  localize  code  generation  complexity  to  the definition   implementing  the  function.   The  nature  of  the  code generation complexity determines which method of  code  generation  is appropriate for the application.
 
 ## Meta Compilers
 
-A meta compiler is a  single  pass  compiler  written  in  forth, producing  code  for the target environment.  Major problems with meta compilers revolve around the requirement for two sets  of  applicationsource  code,  one  set  for  local  compiling  and the other for meta
+A meta compiler is a  single  pass  compiler  written  in  forth, producing  code  for the target environment.  Major problems with meta compilers revolve around the requirement for two sets  of  application source  code,  one  set  for  local  compiling  and the other for meta
 compiling.  Which source code to use depends on which environment  theapplication  is  compiled  for,  local or target.  Two sources for one
 application can cause many headaches in  application  development  and maintenance.
 
@@ -84,11 +83,11 @@ What options does that leave a programmer.  Either the programmer puts  up with 
 
 Forth applications and  systems  development  need  to  take  the output of the forth compiler, unbind it from the local environment and then bind it to the target environment.  Why should it be so hard?
 
-Most of the problems with meta compilation seem to  be  a  direct result  of  forth  not  being  a simple incremental compiler.  A forth definition can  change  its  contents  anytime  until  the  definition completes  compiling.   Immediate  words  and defining words make this behavior possible.
+Most of the problems with meta compilation seem to  be  a  direct result  of  forth  not  being  a simple incremental compiler.  A forth definition can  change  its  contents  any time  until  the  definition completes  compiling.   Immediate  words  and defining words make this behavior possible.
 
 Making forth a multi-pass compiler  solves  problems  created  by immediate  and  defining  words  in  a  single  pass compiler.  Target compilation becomes much simpler.  The first pass compiles  code  into the  dictionary  and  keeps  track of the data it compiles, the second pass unbinds the output of pass 1 from the local environment, and  the third pass binds the output of pass 2 to the target environment.
 
-### Problems Fixed And Why -
+### Problems Fixed And Why
 
 Now target code is almost as easy to  create  and  use  as  local code.  But questions arise:  Why does it (a multi-pass compiler) work? How does it eliminate the ambiguities and restrictions present in meta compilers?   How  do forward references get handled?  How is it easier to  connect  forth  generated  code  to  code  generated  with   other languages?
 
@@ -133,7 +132,7 @@ When  pass  2  produces  symbolic  output,  it  creates  symbolic references  to
 Linkage to code created by other  programming  languages  becomeseasier  when  pass 3 is an assembler.  Linkage routines can be created in  assembler  and  translate  forth's  calling  sequence  to  anotherlanguages  calling sequence and back.  The linkage routines are joined
 with the application during pass 3.
 
-### Interactions Between The Three Passes -
+### Interactions Between The Three Passes
 
 Traditionally, in a multi-pass compiler, a compiler pass finishes executing  before  handing control to the next pass.  Because forth is an incremental compiler, the three passes interact  in  the  following fashion.
 
@@ -150,7 +149,7 @@ Forth definitions are complete when next definition  starts.   At that  time,  a
 
 When the second pass is done, control  is  returned  to  the  the first pass and next definition is compiled.
 
-## Pass 1 Description -
+## Pass 1 Description
 
 The first pass of a multi-pass forth  compiler  is  no  different from a normal forth compiler except for tracking compiled data and its data type.
 
@@ -158,7 +157,7 @@ Forth normally ignores data types.  It knows about 8 bit, 16 bit, and  32 bit in
 
 It is relatively easy to change forth to record data types.   The changes  to  the compiler are minimal and are described under compiler changes.  Most of the time forth  correctly  records  data  types  but there  are  a  few  situations  where  it  won't.   At those times the programmer must explicitly state the type of data compiled.
 
-## Pass 2 Description -
+## Pass 2 Description
 
 The second pass of the compiler "knows" things  about  the  forth
 environment  it  is  working  in.  It knows how the compiler generates
@@ -187,7 +186,7 @@ code and fig-forth style headers and the third pass  syntax.   If  the
 target  environment  changes,  the back end must change to accommodate
 them.
 
-## Pass 3 Description -
+## Pass 3 Description
 
 The third pass converts the output of the  second  pass  into  an
 executable  image.   The  third pass can be either a linker or a macro
@@ -196,7 +195,7 @@ assembler with the proper macros.
 If an assembler exists without macro capability, the second  pass
 back end can be modified to do the macro expansion for the third pass.
 
-## Data Types And The Code They Generate -
+## Data Types And The Code They Generate
 
 The data types logged are 8 bit and 16 bit  integers,  addresses,
 execution tokens, and multi-byte storage allocations.
@@ -209,11 +208,9 @@ transformed into a list of 8-bit integers.
 Data types  that  are  not  explicitly  logged  are  strings  and
 integers  other  than  8  and  16 bit integers (i.e.  double, quad, or
 longer  integers).   Strings   are   considered   multi-byte   storage
-Yet Another Target Compiler                                     Page 9
-
-allocations.   Longer  integers  are  either  recorded  as  multi-byte
+Yet Another Target Compiler allocations. 
+Longer  integers  are  either  recorded  as  multi-byte
 storage or as multi-integer storage.
-Yet Another Target Compiler                                    Page 10
 
 ### MODULES
 
@@ -264,15 +261,16 @@ returns the data type and the address that data type refers to.
 "mark\_it" is used  by  ",",  "c,",  "a,"  "e,"  and  "allot"  for
 recording  every  data  type in a data type log.  "allot" also records
 the amount of storage allocated.
-Yet Another Target Compiler                                    Page 11
 
 Recording data types uses the word "mark\_it".  A typical  use  of
 "mark\_it" follows:
 
+```
 : (i,)
 integer\_mark mark\_it
 (,)
 ;
+```
 
 "integer\_mark" is a constant used as an integer data  type  marker  in
 the  data  type log.  "mark\_it" places each data type mark in a buffer
@@ -309,12 +307,11 @@ code only (the tail end).
 
 ## Converting Definition To Symbolic Code
 
-# Definitions And Data Types Logged -
+# Definitions And Data Types Logged
 
 As stated earlier, every definition creates a list of data  types
 associated  with that definition.  This section shows the relationship
 of data types logged and the code compiled.
-Yet Another Target Compiler                                    Page 12
 
 What follows is an example of a simple definition.  It multiplies
 by  two  by  adding  the  input  to itself.  The picture describes the
@@ -346,40 +343,42 @@ tokens.    They   represent  byte  and  integer  storage  allocations.
 Representing different sized integers explicitly enhances  the  code's
 ability to be independent of byte order.
 
-2\.3.1.1  Example Of A Simple Definition And Logged Data Types -
+### Example Of A Simple Definition And Logged Data Types
 
-: 2\*   dup +  ;
+```
+
+: 2*   dup +  ;
 
 definition       data type log
 
 +-------!!!     +--!!!
-header --\> |    2     |     | s 3 |
+header --> |    2     |     | s 3 |
 +-------!!!     ~     ~
 |    2     |     .     .
-|    \*     |     ~     ~
+|    *     |     ~     ~
 +-------!!!     +--!!!
-link   --\> | ptr to   |     | a   |
+link   --> | ptr to   |     | a   |
 field      | prev dfn |     | s 2 |
 +-------!!!     +--!!!
-code   --\> | ptr to   |     | a   |
+code   --> | ptr to   |     | a   |
 field      | : code   |     | s 2 |
 +-------!!!     +--!!!
-body of--\> | dup      |     | e   |
+body of--> | dup      |     | e   |
 dfn        | token    |     | s 2 |
 +-------!!!     +--!!!
 | +        |     | e   |
 | token    |     | s 2 |
-Yet Another Target Compiler                                    Page 13
 
 +-------!!!     +--!!!
 | ;s       |     | e   |
 |token     |     | s 2 |
 +-------!!!     +--!!!
+```
 
 The definition breaks into two separate parts, the header and the
 "executable" code.
 
-# Intermediate Level Code Generation -
+# Intermediate Level Code Generation
 
 Deciding when to convert the code compiled by the first pass into
 a  form  usable  by the third pass is critical.  Too early or late and
@@ -399,44 +398,52 @@ code  looks  at the data type and converts the data to the proper form
 for pass 3 consumption.
 
 Actual code output from pass 2  is  extremely  dependent  on  the
-syntax  of  pass 3 therefor, any specifics of code output are based on
+syntax  of  pass 3 therefore, any specifics of code output are based on
 the current implementation (6502 itc fig-forth).
 
 Integers generate signed hex numbers, bytes generate unsigned hex
 numbers.   For  example,  a  literal  constant generates the following
 code.
+
+```
 +------!!!   +--!!!
-... 01F ...  -- generates --\>   | literal |   | e   |
+... 01F ...  -- generates -->   | literal |   | e   |
 | token   |   | s 2 |
 +------!!!   +--!!!
 |   00    |   | i   |
 |   1f    |   | s 2 |
 +------!!!   +--!!!
+```
 
 which generates for pass 3,
 
+```
 @resolve.exec zliteral,0
 .word $1f
+```
 
 The code consists of a macro  invocation  of  the  forth  literal
 "instruction" followed by the integer value.
-Yet Another Target Compiler                                    Page 14
 
 Control flow constructs generate forth  branch  instructions  and
 branch addresses.  The "if" statement generates the following code.
 
-... if ...  -- generates --\>    +------!!!     +--!!!
+```
+... if ...  -- generates -->    +------!!!     +--!!!
 | 0branch |     | e   |
 | token   |     | s 2 |
 +------!!!     +--!!!
 | branch  |     | a   |
 | address |     | s 2 |
 +------!!!     +--!!!
+```
 
 which generates for pass 3.
 
+```
 @resolve.exec z0branch,0
 @resolve.addr <dfn containing if>, <dfn start-branch addr>
+```
 
 The address following the  branch  token  references  an  address
 within the current definition.
@@ -445,7 +452,7 @@ The il code generator is broken into two parts.  The front end is
 the machine independent part and the back end is the machine dependent
 part.
 
-2\.3.2.1  Intermediate Level Code Generator Front End -
+### Intermediate Level Code Generator Front End
 
 The il code generator front end is  machine  independent  to  the
 extent that it is independent of the type of cpu it is running on.  It
@@ -465,13 +472,12 @@ Execution   tokens   are   converted   back   to    symbols    by
 "expand\_address".  Integers, bytes, and allocated storage are  handled
 by "expand\_integer", "expand\_byte", and "expand\_storage".
 
-2\.3.2.2  Intermediate Level Code Generator Back End -
+### Intermediate Level Code Generator Back End
 
 The il code generator back end is a collection of  routines  that
 converts  numbers  and  strings  into the pass 3 required syntax.  The
 current pass 3 is MAC/65, a macro assembler sold by Optimized  Systems
 Software for the Atari 8-bit line of PC's.
-Yet Another Target Compiler                                    Page 15
 
 The requirements placed upon the il code generator back  end  are
 as follows:
@@ -509,7 +515,7 @@ format for the target machine and header production control.
 A large attempt was made to keep the il code generator  back  end
 reasonably independent of MAC/65 or any assembler.
 
-2\.3.2.3  Macros Used In Pass 3 -
+### Macros Used In Pass 3
 
 To make pass 3 processing easier with MAC/65, a series of  macros
 were created.  These macros take care of many aspects of forth headers
@@ -523,7 +529,6 @@ and forth code creation.  The macros are described briefly below:
 - @fudge.dict adjusts the dictionary to prevent ITC forth on  a
   6502  processor  from  having  a  CFA  that  straddles a page
   boundary.
-  Yet Another Target Compiler                                    Page 16
 
 - @resolve.cfa creates a CFA for a definition.
 
@@ -531,7 +536,6 @@ and forth code creation.  The macros are described briefly below:
 
 - @resolve.exec creates an execution token in memory.
 
-Yet Another Target Compiler                                    Page 17
 
 ### PRODUCING AN APPLICATION FOR A TARGET MACHINE
 
@@ -545,28 +549,26 @@ executable image on an Atari 8-bit computer.
 Producing an  application  for  a  target  machine  is  not  very
 difficult.  The process follows the steps outlined below.
 
-1. An application is developed in the local forth environment.
+  1. An application is developed in the local forth environment.
 
-2.  After it works locally, the target compiler is loaded and the
+  2.  After it works locally, the target compiler is loaded and the
     application is compiled with the target compiler.
 
-3.  The target compiler produces a file containing  the  il  code
+  3.  The target compiler produces a file containing  the  il  code
     form of the application.
 
-4.  The il code,  a  forth  kernel,  and  any  external  language
+  4.  The il code,  a  forth  kernel,  and  any  external  language
     linkages are run through the pass 3 tool (an assembler and if
     needed a linker)
 
-5.  if an error  listing  indicates  any  missing  routines,  the
+  5.  if an error  listing  indicates  any  missing  routines,  the
     missing  routines  are added to the kernel (if assembler) and
     repeat step 4 or to the application  (if  forth)  and  repeat
     step 2.
 
-6.  when a  clean  pass  3  is  achieved,  the  executable  image
+  6.  when a  clean  pass  3  is  achieved,  the  executable  image
     produced   should  work  exactly  as  it  did  in  the  local
     (original) environment.
-
-Yet Another Target Compiler                                    Page 18
 
 ### WHY YATC IS NOT JUST A FANCY DECOMPILER
 
@@ -587,8 +589,6 @@ following:
 - This target compiler "learns" about all  new  defining  words
   can  output  the  code  they  generate without changes to the
   target compiler.
-
-Yet Another Target Compiler                                    Page 19
 
 ### CODING TRICKS AND OTHER THINGS THAT WON'T WORK
 
@@ -613,7 +613,6 @@ maintainable.
 Another area where the target compiler will not work properly all
 the  time  is  in  the  area  of  vocabularies.  Currently, the target
 compiler restricts the application to one vocabulary.
-Yet Another Target Compiler                                    Page 20
 
 ### GLOSSARY OF EXTERNAL WORDS
 
@@ -621,12 +620,16 @@ This glossary describes  externally  visible  words  provided  by  the
 target  compiler.  All other words are internal to the target compiler
 and should not be depended on by other applications.
 
-start\_target\_compiler ( --- )
+```
+start_target_compiler ( --- )
+```
 
 Start up the target compiler.  Headers are  produced  and  target
 compiler output is directed to the console device.
 
-"start\_target\_compiler ( fn adr --- )
+```
+start_target_compiler ( fn adr --- )
+```
 
 input:  fn adr; address of os specific legal filename
 
@@ -634,61 +637,66 @@ Start up the target compiler.  Headers are  produced  and  target
 compiler  output  is  directed  to  the  file  specified  by the input
 filename.
 
-end\_target\_compiler ( --- )
+```
+end_target_compiler ( --- )
+```
 
 Clean up target  compiling.   Print  any  remaining  intermediate
 level code and close file if open.
 
+```
 near ( --- )
+```
 
 Stop compiling for far (target) environment and only  compile  in
 near (local) environment.
 
+```
 far ( --- )
+```
 
 Resume compiling for far (target) and near (local) environment.
 
+```
 heads ( --- )
+```
 
 Turn on header production for target compiled definitions.
 
+```
 tails ( --- )
+```
 
 Turn off  header  production  for  target  compiled  definitions.
 Produce only the "tail" end (the code part of a definition.
 
+```
 a, ( addr --- )
+```
 
 Allocate space for an address in  dictionary  and  place  address
 found on top of stack in that allocation.
 
+```
 e, ( execution token --- )
+```
 
 Allocate space for an execution token  in  dictionary  and  place
 execution token found on top of stack in that allocation.
-Yet Another Target Compiler                                    Page 21
 
 ### REFERENCES
 
-John J.   Cassady,  "METAFORTH,  A  metacompiler  for  fig-forth"
-Mountain View Press, (1980)
+- John J.   Cassady,  "METAFORTH,  A  metacompiler  for  fig-forth" Mountain View Press, (1980)
 
-Henry Laxen, "Meta Compiling 1", Forth Dimensions, (Vol 4, Number
-6\), PP 19-22.
+- Henry Laxen, "Meta Compiling 1", Forth Dimensions, (Vol 4, Number 6), PP 19-22.
 
-Henry Laxen, "Meta Compiling 2", Forth Dimensions, (Vol 5, Number
-2\), PP 23-24.
+- Henry Laxen, "Meta Compiling 2", Forth Dimensions, (Vol 5, Number 2), PP 23-24.
 
-Henry Laxen, 'Meta Compiling 3", Forth Dimensions, (Vol 5, Number
-3\), PP 31-32.
+- Henry Laxen, 'Meta Compiling 3", Forth Dimensions, (Vol 5, Number 3), PP 31-32.
 
-A.  P.  Haley, H.  P.  Oakford, and C.  L.   Stephens  "In  Sitsu
-Development  -  The  ideal complement to Cross Target Compilers", 1985
-FORMAL Conferences Proceedings, (October 1985), PP 391-398.
+- A.  P.  Haley, H.  P.  Oakford, and C.  L.   Stephens  "In  Sitsu Development  -  The  ideal complement to Cross Target Compilers", 1985 ORMAL Conferences Proceedings, (October 1985), PP 391-398.
 
-Randy  M.   Dumse,  "The  R65F11  and  F68K   Single-Chip   Forth
-Computers",  The Journal of Forth Application and Research, (Volume 2,
-Number 1, 1984), PP 11-21.
+- Randy  M.   Dumse,  "The  R65F11  and  F68K   Single-Chip   Forth Computers",  The Journal of Forth Application and Research, (Volume 2, Number 1, 1984), PP 11-21.
 
 ```
 ;-----------------------------------------------------------------
