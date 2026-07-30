@@ -13,7 +13,7 @@ You can also make variable assignments with boolean logic. If you say `A=1=1` th
 might be helpful at this point:
 
 | Statement | Result
-|-------------|----------
+|-----------|--------
 | `A=1=1`   | `A=1`
 | `A=1=2`   | `A=0`
 | `A=2=1`   | `A=0`
@@ -41,7 +41,7 @@ As you can see, it is a little more complex but the idea is the same. Just do th
 Again, just like normal math operations: Parentheses come first. So it is very simple:
 
 | Statement | Is Equivalent To
-|-------------|--------------------
+|-----------|------------------
 | `A=B=C=D` | `A=B=(C=D)`
 | `A=B=C=D=E` | `A=B=(C=(D=E))`
 | `A=B=C=D=E=F` | `A=B=(C=(D=(E=F)))`
