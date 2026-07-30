@@ -1468,7 +1468,7 @@
       
     - [](Languages/Forth/volksFORTH/Handbook/6502Assembler/README.md)
       
-    - [Chapter 1: volksFORTH Version 3.90 Manual (work in progress)](Languages/Forth/volksFORTH/Handbook/Chapter1/README.md)
+    - [Chapter 1: volksFORTH Version 3.90 Manual](Languages/Forth/volksFORTH/Handbook/Chapter1/README.md)
       
     - [volkFORTH - Handbook - Chapter 2](Languages/Forth/volksFORTH/Handbook/Chapter2/README.md)
       
@@ -1478,7 +1478,7 @@
       
     - [Chapter 5: Input / Output in volksFORTH](Languages/Forth/volksFORTH/Handbook/Chapter5/README.md)
       
-    - [Chapter 6: Strings (strings) in volksFORTH](Languages/Forth/volksFORTH/Handbook/Chapter6/README.md)
+    - [Chapter 6: Strings in volksFORTH](Languages/Forth/volksFORTH/Handbook/Chapter6/README.md)
       
     - [VolksForth 6502 Assembler](Languages/Forth/volksFORTH/Handbuch/6502Assembler/README.md)
       

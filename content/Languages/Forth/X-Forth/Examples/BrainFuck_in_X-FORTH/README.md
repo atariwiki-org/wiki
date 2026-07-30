@@ -8,7 +8,7 @@ Published: 	2003
 
 ### BrainF\*ck
 
-BF is a very minimalistic language, with only eight commando's, yet it is (theoretically) powerfull enough to compute anything that can be computed (with a Turing Machine). The language operates on an array of memory cells each containing an initially zero integer value. There is a memory pointer which initially points to the first memory cell.
+BF is a very minimalistic language, with only eight commando's, yet it is (theoretically) powerful enough to compute anything that can be computed (with a Turing Machine). The language operates on an array of memory cells each containing an initially zero integer value. There is a memory pointer which initially points to the first memory cell.
 
 ## Resources
 
