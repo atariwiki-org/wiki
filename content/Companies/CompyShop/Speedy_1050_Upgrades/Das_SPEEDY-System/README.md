@@ -49,8 +49,8 @@ Mit Hilfe ihrer Happy 810 wurde die Arbeitsgeschwindigkeit der 810 verdreifacht.
 
 Es gab dann noch einige andere Floppy-Speeder, aber keiner erreichte den Bekanntheitsgrad der Happy. Als da waren zum Beispiel:
 
-|Aus Amerika:	| Archiver 810
-|Aus Deutschland:	| Clone a Disc
+- Aus Amerika:	Archiver 810
+- Aus Deutschland: Clone a Disc
 
 Die Happy 810 war ein großer Erfolg für Happy Computer Inc. Wen wunderts also, daß, etwa ein Jahr nach dem Erscheinen der ersten Atari 1050 Laufwerke, Happy Computer Inc. die ersten Happy 1050 auslieferte. Nun wurde durch die Happy 1050 nicht nur die Arbeitsgeschwindigkeit verdreifacht, sondern auch der Speicherplatz von 127 kByte auf 180 kByte erhöht. Das Problem mit dem Trackbuffer blieb den Happy 1050 Besitzern aber erhalten. Besonders bei manchen DOS-Arten.
 
