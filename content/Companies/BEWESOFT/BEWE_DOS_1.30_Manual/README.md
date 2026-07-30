@@ -957,13 +957,13 @@ OPEN #iocb,aux1,aux2,"Dn:[path>]filename"
 
 This command will open specified IOCB for access to the specified file on disk. The value of "aux1" may be:
 
-| Mode | Function |
-|------|----
-|    4 | Reading from the file. |
-|    6 | Reading the directory listing. When the "aux2" value is greater than 127, the listing will be in the same format as provided by "DIR" command in the CP; with "aux2" less than 128 it'll be in the format of "DIRS" command. You may not open more than one directory listing at the same time. |
-|    8 | Writing to the file. If the file exists already, it'll be replaced by the new file. When "/A" is added to the filename, it'll work in the same way as the mode 9. |
-|    9 | Append. The new data written to the file will be added at the end of an existing file. When the file doesn't exist, it'll be created first. |
-|   12 | Update. Data may be readed from and written to the file as necessary. |
+| Mode | Function
+|------|----------
+| 4    | Reading from the file.
+| 6    | Reading the directory listing. When the "aux2" value is greater than 127, the listing will be in the same format as provided by "DIR" command in the CP; with "aux2" less than 128 it'll be in the format of "DIRS" command. You may not open more than one directory listing at the same time.
+| 8    | Writing to the file. If the file exists already, it'll be replaced by the new file. When "/A" is added to the filename, it'll work in the same way as the mode 9.
+| 9    | Append. The new data written to the file will be added at the end of an existing file. When the file doesn't exist, it'll be created first.
+| 12   | Update. Data may be readed from and written to the file as necessary.
 
 When you'll add 16 to the "aux1" value, you'll get direct access to the directory specified by "path"; the filename will be ignored. With 32 added to "aux1", you'll get the direct access to the subdirectory specified by "filename". (See the next chapter for information on the internal directory format.) This doesn't work with the mode 6.
 
@@ -1248,43 +1248,43 @@ Not every listed errors have its origin in BW-DOS. There are also errors caused 
 
 The first two codes are not errors - BW-DOS returns these codes when everything is OK. You'll encounter these codes only while programing CIO calls in assembler or something like that.
 
-|   Error Code | Hex | Result |  Description |
-|--------------|-----|--------|--------------|
-|        1 | $01 | OK |  This code is returned by all device handlers when no error occurs. |
-|        3 | $03 | Last byte read |  This code is returned by BW-DOS instead of the code 1 ("OK"), in the case that the last byte of the file was read. Next reading will return the error-code 136 ("End of file") - except that you're working in the "update" mode (aux1=12). This code will not be returned in the directory-listing mode (aux1=6). This code have no connection with the error 3 returned by Basic or other programs. |
-|      128 | $80 | BREAK abort. | The user did press the <BREAK> key during an input/output operation. |
-|      129 | $81 | IOCB already open. | This error is probably caused by a mistake in program. |
-|      130 | $82 | Nonexistent device. | The specified device does not exist. Please check if the corresponding handler is installed. If you are accessing a disk file, try to add "Dn:" before the filename - this is allways necessary while accessing a file from your own programs. |
-|      131 | $83 | IOCB write only. | |
-|      132 | $84 | Invalid CIO command. | |
-|      133 | $85 | IOCB not open. | |
-|      134 | $86 | Bad IOCB number. | |
-|      135 | $87 | IOCB read only. | These errors may be caused by a mistake in program. |
-|      136 | $88 | End of file. | This is not a real error; this code indicates, that there are no more bytes left to read in the file. |
-|      137 | $89 | Truncated record. | The line in a file is longer than buffer for it; this may occur while reading an incorrect type of file. |
-|      138 | $8A | Device timeout. |  The device is not connected correctly, it is turned off, or it doesn't exist. Check drive number while accessing a disk drive. |
-|      139 | $8B | Device NAK. | The device didn't understand. This may occur for example while using programs for modified drives with a standard disk drive.|
-|      140 | $8C | Serial frame error. | This error may be caused by tape recorder, or by damaged input/output device, computer, or cables.|
-|      141 | $8D | Out of screen. | The position of cursor is out of screen.|
-|      142 | $8E | Serial bus overrun.| |
-|      143 | $8F | Checksum error. | These errors may be caused by tape recorder, or by damaged input/output device, computer, or cables.|
-|      144 | $90 | Device done error.| The device can't execute the command. The most common reasons are: Write protect tab placed on the disk while writting; a non formatted disk, or no disk in the drive; bad sector on the disk.|
-|      145 | $91 | Illegal screen mode.| The selected screen mode doesn't exist.|
-|      146 | $92 | Function not implemented. | This error may be caused by actions like reading data from the printer or writting to the keyboard. |
-|      147 | $93 | Insufficient RAM.| The selected screen mode needs more memory than available.|
-|      148 | $94 | Bad disk format.| The disk is not a BW-DOS compatible disk. You can only use disks created with the "FORMAT" command in BW-DOS, or with SpartaDOS 2.x and later.|
-|      150 | $96 | Directory not found.|  A directory specified in the path doesn't exist.|
-|      151 | $97 | May not replace.|  A new opened file have the same name as a subdirectory in the same directory, or a new created subdirectory have the same name as another file/subdirectory in the same directory.|
-|      152 | $98 | Bad load file.| The file is not a DOS loadable program-file.|
-|      156 | $9C | Cartridge error.| The "CAR" command didn't found any cartridge, or a wrong parameter was used in the "BASIC" command.|
-|      160 | $A0 | Drive number error.| The specified number of disk drive is not supported. BW-DOS only supports drives 1, 2, 3, 4, and 8.|
-|      161 | $A1 | Too many files open.| The number of files open at the same time is too high. BW-DOS may open 5 files at the same time, but only one of them may be a directory listing (aux1=6).|
-|      162 | $A2 | Disk full.| There are no more sectors left on the disk, so you need to use anoter one. The part of file, which was written before this error, is not completed, so it must be erased.|
-|      163 | $A3 | Illegal wild card.|  A wild card was used while creating a new file or directory.|
-|      164 | $A4 | File protected.| The file may not be changed, because it is protected.|
-|      165 | $A5 | Bad filename.|  Please check the file specification.|
-|      166 | $A6 | Bad file position| The file position given to the POINT function is greater than 8 megabytes, or it is greater than length of file when it is open in a read only mode (aux1=4). This error may also occur when you try to copy a file, which contains non-allocated sectors.  While working with Atari DOS 2 comaptible disks using the menu program, this error indicates that the file-number in a sector is incorrect. This may be caused by a non-compatible disk format, or by a corrupt disk structure.|
-|      167 | $A7 | Directory not empty| The directory specified in the "DELDIR" command is not empty, so it may not be deleted.|
-|      168 | $A8 | Not implemented.| BW-DOS didn't understand the command code. Please check the command code for CIO, or the XIO command. This error may also occur while trying to use a few special functions of SpartaDOS, which are not supported by BW-DOS.|
-|      169 | $A9 | Directory full.|  There is no more space for a new file in directory. BW-DOS directories may contain up to 1424 files, but it is much better to divide such a large number of files into several subdirectories.  Atari DOS 2 compatible disks (supported by the menu program only) may contain up to 64 files.|
-|      170 | $AA | File not found |   The specified file (or directory in the direct mode) doesn't exist. This error may also occur while trying to erase a protected file or subdirectory, or to rename a subdirectory.|
+| Error Code | Hex | Result | Description
+|------------|-----|--------|-------------
+| 1          | $01 | OK     | This code is returned by all device handlers when no error occurs.
+| 3          | $03 | Last byte read | This code is returned by BW-DOS instead of the code 1 ("OK"), in the case that the last byte of the file was read. Next reading will return the error-code 136 ("End of file") - except that you're working in the "update" mode (aux1=12). This code will not be returned in the directory-listing mode (aux1=6). This code have no connection with the error 3 returned by Basic or other programs.
+| 128        | $80 | BREAK abort. | The user did press the <BREAK> key during an input/output operation.
+| 129        | $81 | IOCB already open. | This error is probably caused by a mistake in program.
+| 130        | $82 | Nonexistent device. | The specified device does not exist. Please check if the corresponding handler is installed. If you are accessing a disk file, try to add "Dn:" before the filename - this is allways necessary while accessing a file from your own programs.
+| 131        | $83 | IOCB write only. | 
+| 132        | $84 | Invalid CIO command. | 
+| 133        | $85 | IOCB not open. | 
+| 134        | $86 | Bad IOCB number. | 
+| 135        | $87 | IOCB read only. | These errors may be caused by a mistake in program.
+| 136        | $88 | End of file. | This is not a real error; this code indicates, that there are no more bytes left to read in the file.
+| 137        | $89 | Truncated record. | The line in a file is longer than buffer for it; this may occur while reading an incorrect type of file.
+| 138        | $8A | Device timeout. | The device is not connected correctly, it is turned off, or it doesn't exist. Check drive number while accessing a disk drive.
+| 139        | $8B | Device NAK. | The device didn't understand. This may occur for example while using programs for modified drives with a standard disk drive.
+| 140        | $8C | Serial frame error. | This error may be caused by tape recorder, or by damaged input/output device, computer, or cables.
+| 141        | $8D | Out of screen. | The position of cursor is out of screen.
+| 142        | $8E | Serial bus overrun. | 
+| 143        | $8F | Checksum error. | These errors may be caused by tape recorder, or by damaged input/output device, computer, or cables.
+| 144        | $90 | Device done error. | The device can't execute the command. The most common reasons are: Write protect tab placed on the disk while writting; a non formatted disk, or no disk in the drive; bad sector on the disk.
+| 145        | $91 | Illegal screen mode. | The selected screen mode doesn't exist.
+| 146        | $92 | Function not implemented. | This error may be caused by actions like reading data from the printer or writting to the keyboard.
+| 147        | $93 | Insufficient RAM. | The selected screen mode needs more memory than available.
+| 148        | $94 | Bad disk format. | The disk is not a BW-DOS compatible disk. You can only use disks created with the "FORMAT" command in BW-DOS, or with SpartaDOS 2.x and later.
+| 150        | $96 | Directory not found. | A directory specified in the path doesn't exist.
+| 151        | $97 | May not replace. | A new opened file have the same name as a subdirectory in the same directory, or a new created subdirectory have the same name as another file/subdirectory in the same directory.
+| 152        | $98 | Bad load file. | The file is not a DOS loadable program-file.
+| 156        | $9C | Cartridge error. | The "CAR" command didn't found any cartridge, or a wrong parameter was used in the "BASIC" command.
+| 160        | $A0 | Drive number error. | The specified number of disk drive is not supported. BW-DOS only supports drives 1, 2, 3, 4, and 8.
+| 161        | $A1 | Too many files open. | The number of files open at the same time is too high. BW-DOS may open 5 files at the same time, but only one of them may be a directory listing (aux1=6).
+| 162        | $A2 | Disk full. | There are no more sectors left on the disk, so you need to use anoter one. The part of file, which was written before this error, is not completed, so it must be erased.
+| 163        | $A3 | Illegal wild card. | A wild card was used while creating a new file or directory.
+| 164        | $A4 | File protected. | The file may not be changed, because it is protected.
+| 165        | $A5 | Bad filename. | Please check the file specification.
+| 166        | $A6 | Bad file position | The file position given to the POINT function is greater than 8 megabytes, or it is greater than length of file when it is open in a read only mode (aux1=4). This error may also occur when you try to copy a file, which contains non-allocated sectors.  While working with Atari DOS 2 comaptible disks using the menu program, this error indicates that the file-number in a sector is incorrect. This may be caused by a non-compatible disk format, or by a corrupt disk structure.
+| 167        | $A7 | Directory not empty | The directory specified in the "DELDIR" command is not empty, so it may not be deleted.
+| 168        | $A8 | Not implemented. | BW-DOS didn't understand the command code. Please check the command code for CIO, or the XIO command. This error may also occur while trying to use a few special functions of SpartaDOS, which are not supported by BW-DOS.
+| 169        | $A9 | Directory full. | There is no more space for a new file in directory. BW-DOS directories may contain up to 1424 files, but it is much better to divide such a large number of files into several subdirectories.  Atari DOS 2 compatible disks (supported by the menu program only) may contain up to 64 files.
+| 170        | $AA | File not found | The specified file (or directory in the direct mode) doesn't exist. This error may also occur while trying to erase a protected file or subdirectory, or to rename a subdirectory.
