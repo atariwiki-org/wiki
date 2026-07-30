@@ -2072,6 +2072,8 @@
    
 - [Newsletters](Newsletters/README.md)
   
+- [People](People/README.md)
+  
  - [Andreas Graf](People/Andreas_Graf/README.md)
    
   - [BASICODE](People/Andreas_Graf/BASICODE/README.md)
@@ -2108,6 +2110,8 @@
    
   - [SuperDOS](People/Paul_Nicholls/SuperDOS/README.md)
     
+ - [Peter Dell](People/Peter_Dell/README.md)
+   
   - [Atari Calculator at VCFe 14 (2013 Munich)](People/Roland_Wassenberg/AtariCalculator-VCFe14/README.md)
     
   - [Happy-Computer DOS II+/D](People/Stefan_Dorndorf/Happy-Computer_DOS_II_D/README.md)
