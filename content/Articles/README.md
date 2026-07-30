@@ -205,7 +205,7 @@
 ### Business
 
 - [Atari Timewise (DX5047) (Basic)](../Companies/Atari/Atari_Timewise/README.md)
-- [The\_Atari\_Accountant\_Series](../The_Atari_Accountant_Series/README.md)
+- [The\_Atari\_Accountant\_Series](../Companies/Atari/The_Atari_Accountant/README.md)
 - [The Bookkeeper CX414](../Companies/Atari/The_Bookkeeper/README.md)
 - [Atari The Home Filing Manager (CX8129)](../Companies/Atari/The_Home_Filing_Manager/README.md)
 - [Atari Home Accounting System](../Companies/Atari/Atari_Home_Accounting_System/README.md)
@@ -786,14 +786,14 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari Basic Source Code 3](attachments/AtariBasic.src)
 - [BASIC A+](../Companies/OSS/BASIC_Aplus/README.md)
 - [BASIC XL](../Companies/OSS/BASIC_XL/README.md)
-- [OSS Basic XE](BASIC_XE)
-- [OSS Integer Basic](Integer_BASIC)
+- [OSS Basic XE](../Companies/OSS/BASIC_XE/README.md)
+- [OSS Integer Basic](../Companies/OSS/Integer_BASIC/README.md)
 - [Microsoft Basic](http://www.pagetable.com/?p=46)
 - [Microsoft BASIC for 6502-Original Source Code from 1978](https://github.com/brajeshwar/Microsoft-BASIC-for-6502-Original-Source-Code-1978)
 - [ATARI BASIC FOR GCC](../Languages/BASIC/Atari_BASIC/Atari_BASIC_for_GCC/README.md)
 - [Turbo-BASIC XL](../Languages/BASIC/Turbo-BASIC_XL/README.md)
-- [Altirra Basic](Altirra_BASIC)
-- [Basic++](BASIC_plus_plus)
+- [Altirra Basic](../Languages/BASIC/Altirra_BASIC/README.md)
+- [Basic++](../Languages/BASIC/BASIC_plus_plus/README.md)
 
 #### C
 
