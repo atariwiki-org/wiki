@@ -32,8 +32,7 @@ Ihr denkt jetzt bestimmt, ja, das war in der Vergangenheit, so etwas passiert ni
 
 Ihr meint, das ist schlimm? Es kommt noch dicker! Nicht nur, dass falsch oder auch gar nicht berechnet wurde, nein, es gibt darüber hinaus noch jede Menge an verschiedenen Operatoren für ein die gleiche Operation:
 
-\[Liste von Operatoren für den Rest einer Division
-|https://de.wikipedia.org/wiki/Liste\_von\_Operatoren\_f%C3%BCr\_den\_Rest\_einer\_Division\] ; unterschiedliche Operatoren für die Modulo-Funktion
+- [Liste von Operatoren für den Rest einer Division](https://de.wikipedia.org/wiki/Liste_von_Operatoren_f%C3%BCr_den_Rest_einer_Division); unterschiedliche Operatoren für die Modulo-Funktion
 
 damit es den Anwendern auch richtig schön schwer gemacht wird.
 
@@ -41,10 +40,10 @@ Wir hier beim ABBUC wollen uns daher auf: „MOD“ als Operator einigen.
 
 Wer exakte Ergebnisse haben möchte, kann sich auch an den kostenlosen „Mathe-Prof.“ im Internet wenden:
 
-[Beispiel für 5 MOD 10](https://www.wolframalpha.com/input/?i=5+mod+10) ; MOD-Funktion bei WolframAlpha am Beispiel von 5 MOD 10
+- [Beispiel für 5 MOD 10](https://www.wolframalpha.com/input/?i=5+mod+10) ; MOD-Funktion bei WolframAlpha am Beispiel von 5 MOD 10
 
 dort ist bereits ein Beispiel eingefügt.
 
 Wir wünschen viel Spaß beim Rechnen,
 
-GBXL \& Luckybuck
+GBXL und Luckybuck
