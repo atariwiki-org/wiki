@@ -74,7 +74,7 @@
 - [Custom Disk Format Routine](../Companies/CompyShop/Speedy_1050_Upgrades/Custom_Disk_Format_Routine/README.md) (Atari 1050 with Compy Shop Speedy)
 - [Indus GT Field Service Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md)\* [Indus GT Firmware ROM Disassembly](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
 - [Indus GT Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md)
-- [Floppy 2000](../Hardware/Disk_Drives/Floppy_2000/README.md)
+- [Floppy 2000](../Companies/Klaus_Peters/Floppy_2000/README.md)
 - [High-Density Disk Interface (HDI)](../People/Erhard_Puetz/HDI_Interface/README.md) (aka Floppy 3000)
 
 ## Tape Recorders
@@ -83,7 +83,7 @@
 - [Atari 1010 - MISSING](../Companies/Atari/Atari_Hardware/Atari_1010/README.md)
 - [Atari XC11 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC11/README.md)
 - [Atari XC12 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC12/README.md)
-- [All about Cassette Tapes from 1979.pdf](../Voice_and_Data_Cassettes/attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
+- [All about Cassette Tapes from 1979.pdf](..//Companies/Atari/Atari_Hardware/Voice_and_Data_Cassettes/attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
 - [Bugfix for the Cassette Handler](../Todos/Bugfix_for_the_Cassette_Handler/README.md)
 
 ## Printers
@@ -240,7 +240,7 @@
 ### Diagnostics
 
 - [Atari 400-800 Stand Alone System Test](../Companies/Atari/Atari_400-800_Stand_Alone_System_Test/README.md)
-- [Super\_SALT](../CPU_Super_SALT/README.md)
+- [Super\_SALT](../CPS_Super_SALT/README.md)
 - [ATARI Diagnostic Test Tape (FD100008)](../Companies/Atari/Atari_Diagnostic_Test_Tape/README.md)
 - [AUSTRO.RECOVER](../Companies/AUSTRO.COM/AUSTRO.RECOVER/README.md)
 
@@ -304,7 +304,7 @@
 
 - BCALC - MISSING
 - Calc Magic - MISSING
-- [VisiCalc (Visual Calculator)](../VisiCalc/README.md)
+- [VisiCalc (Visual Calculator)](../Companies/VisiCorp/VisiCalc/README.md)
 - [SpeedCalc](../Todos/SpeedCalc/README.md)
 - [SynCalc](../Companies/Synapse_Software/SynCalc/README.md)
 
@@ -464,7 +464,7 @@ All of the following have no page yet
 
 #### Programmiersprachen
 
-- [Editor](../Editor/README.md)
+- [Atari Assembler Editor](..//Companies/Atari/Atari_Assembler_Editor/Companies/Atari/Atari_Assembler_Editor)
 - [Atari Macro Assembler and Program-Text Editor (CX8121)](../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md)
 - [Microsoft Basic Handbook](..//Languages/BASIC/Microsoft_BASIC/README.md)
 - [Pascal for the Atari](../Languages/Pascal/README.md)
@@ -654,7 +654,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [OS/A+ Professional Version 2.12](../Companies/OSS/OS_Aplus/OS_Aplus_Professional-Version_2.12/README.md)
 - [OS/A+ Version 4 / OSS DOS II+ Version 4.2](../Companies/OSS/OS_Aplus/OS_Aplus-Version_4/README.md)
 - [DOS XL](../Companies/OSS/DOS_XL/README.md)
-- [SmartDOS](../SmartDOS/README.md)
+- [SmartDOS](../Companies/Rana_Systems/SmartDOS/README.md)
 - [SpartaDOS Construction Set Manual](../Companies/ICD/SpartaDOS/Sparta_DOS_Construction_Set_Manual/README.md)
 - [SpartaDos X Review](../Companies/ICD/SpartaDOS/SpartaDOS_X/SpartaDosXReview/README.md)
 - [SpartaDOS](../Companies/ICD/SpartaDOS/README.md)
@@ -679,7 +679,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 
 ## Games
 
-## [Voice and Data Cassettes](../Voice_and_Data_Cassettes/README.md)
+## [Voice and Data Cassettes](../Companies/Atari/Atari_Hardware/Voice_and_Data_Cassettes/README.md)
 
 - [Atari Educational System Lesson Cassettes](../Companies/Atari/Atari_Educational_System/Atari_Educational_System_Lesson_Cassettes/README.md)
 - [Dorsett Educational System Lesson Cassettes](../Companies/Dorsett_Educational_Systems/Dorsett_Educational_System_Lesson_Cassettes/README.md)

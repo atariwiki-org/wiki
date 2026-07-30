@@ -346,6 +346,8 @@
      
    - [Atari XMM801 - Dot Matrix Printer - MISSING](Companies/Atari/Atari_Hardware/ATARI_XMM801_Dot_Matrix_Printer/README.md)
      
+   - [Voice and Data Cassettes](Companies/Atari/Atari_Hardware/Voice_and_Data_Cassettes/README.md)
+     
    - [Atari XEP80](Companies/Atari/Atari_Hardware/XEP80/README.md)
      
   - [Atari Home Accounting System](Companies/Atari/Atari_Home_Accounting_System/README.md)
@@ -724,6 +726,10 @@
      
    - [INDUS GT - PUT SYNCHROMESH IN HIGH GEAR](Companies/Indus_Systems/Indus_GT/Indus_GT_Synchromesh/README.md)
      
+ - [Klaus Peters](Companies/Klaus_Peters/README.md)
+   
+  - [Floppy 2000](Companies/Klaus_Peters/Floppy_2000/README.md)
+    
   - [Kyan Pascal](Companies/Kyan_Software/Kyan_Pascal/README.md)
     
    - [Kyan Pascal Error $89 (137)](Companies/Kyan_Software/Kyan_Pascal/Kyan_Pascal_Error_$89_137/README.md)
@@ -788,6 +794,10 @@
    
   - [Rambit Turbocharger for Atari Datarecorders](Companies/Rambit/Rambit_Turbocharger/README.md)
     
+ - [Rana Systems](Companies/Rana_Systems/README.md)
+   
+  - [SmartDOS](Companies/Rana_Systems/SmartDOS/README.md)
+    
   - [Turbo-DOS XE](Companies/Reitershan_Computertechnik/Turbo-DOS/README.md)
     
   - [ATR8000](Companies/Software_Publishers/ATR8000/README.md)
@@ -807,6 +817,10 @@
    - [SynAssembler Manual](Companies/Synapse_Software/SynAssembler/SynAssembler_Manual/README.md)
      
   - [SynCalc](Companies/Synapse_Software/SynCalc/README.md)
+    
+ - [VisiCorp](Companies/VisiCorp/README.md)
+   
+  - [VisiCalc (Visual Calculator)](Companies/VisiCorp/VisiCalc/README.md)
     
  - [Westdeutscher Rundfunk (WDR)](Companies/WDR/README.md)
    
@@ -842,8 +856,6 @@
   
  - [Atari Datasette XC12 Turbo 6000 Baud Interface](Hardware/Atari_Datasette_XC12_Turbo_6000_Baud_Interface/README.md)
    
-  - [Floppy 2000](Hardware/Disk_Drives/Floppy_2000/README.md)
-    
   - [Atari USB analog Joystick Driver](Hardware/USB/AtariAnalogJoystickDriver/README.md)
     
   - [Atari USB Enduser Driver Disk](Hardware/USB/AtariEnduserDriverDisk/README.md)
@@ -2130,8 +2142,6 @@
   
  - [PLATO (Programmed Logic for Automated Teaching Operation)](Services/PLATO/README.md)
    
-- [SmartDOS](SmartDOS/README.md)
-  
 - [Software](Software/README.md)
   
  - [Atari](Software/Atari/README.md)
@@ -2414,10 +2424,6 @@
    
  - [6502 Programmieren, Teil 13](Todos/Zeile_per_CIO_einlesen_und_Programme_resetfest_machen/README.md)
    
-- [VisiCalc (Visual Calculator)](VisiCalc/README.md)
-  
-- [Voice and Data Cassettes](Voice_and_Data_Cassettes/README.md)
-  
 - [Wiki](Wiki/README.md)
   
  - [How to create new pages in the Atari Wiki](Wiki/How_to_create_new_pages_in_the_Atari_Wiki/README.md)

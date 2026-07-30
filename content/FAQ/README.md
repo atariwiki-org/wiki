@@ -18,7 +18,7 @@ Besides the above, the intention of the Atari Wiki FAQ is to provide the reader 
 - [Toggle BASIC on/off from OS/A+ and DOS XL Command-Line](../Companies/OSS/Toggle_BASIC_On-Off_from_the_OS_APlus_and_DOS_XL_Command-Line/README.md)
 - [Create a theme for editing](../Todos/Create_a_theme_for_editing/README.md)
 - [Create a BIN file out of a HEX file](../General/Create_a_BIN_file_out_of_a_HEX_file/README.md)
-- [Voice and Data Cassettes](../Voice_and_Data_Cassettes/README.md)
+- [Voice and Data Cassettes](../Companies/Atari/Atari_Hardware/Voice_and_Data_Cassettes/README.md)
 - [Create an ATX image from KryoFlux raw files](../Todos/Create_an_atx_image_from_KryoFlux_raw_files/README.md)
 - [Make protected BASIC code visible](../Languages/BASIC/Atari_BASIC/Articles/Make_Protected_BASIC_Code_Visible/README.md)
 - [Check and compare files with a Mac in the Terminal app](../General/Check_and_compare_files_with_a_Mac_in_the_Terminal_app/README.md)

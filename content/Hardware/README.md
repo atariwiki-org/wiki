@@ -48,7 +48,7 @@
 - [CompyShop](../Companies/CompyShop/README.md)
 - [1050 Turbo Upgrade](../Companies/Bernhard_Engl/1050_Turbo/README.md)
 - [XF551 Indexlochabfrage - Indexhole Detection Upgrade](../Todos/XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
-- [Floppy 2000](Disk_Drives/Floppy_2000/README.md)
+- [Floppy 2000](../Companies/Klaus_Peters/Floppy_2000/README.md)
 - [High-Density Disk Interface (HDI)](../People/Erhard_Puetz/HDI_Interface/README.md) (aka Floppy 3000)
 - [Indus GT DD Floppy Drive](../Companies/Indus_Systems/Indus_GT/README.md)
   \*\* [Indus GT Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md)
@@ -92,7 +92,7 @@
 - [Bugfix for the Cassette Handler](../Todos/Bugfix_for_the_Cassette_Handler/README.md)
 - [Atari XC11 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC11/README.md)
 - [Atari XC12 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC12/README.md)
-- [All about Cassette Tapes from 1979.pdf](../Voice_and_Data_Cassettes/attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
+- [All about Cassette Tapes from 1979.pdf](Voice_and_Data_Cassettes/attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
 
 ## Video Upgrades
 
