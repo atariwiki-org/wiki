@@ -279,7 +279,7 @@
 
 ### Music
 
-- [Music\_Composer\_CXL\_4007\](../Companies/Atari/Music_Composer_CXL4007/README.md)
+- [Music\_Composer\_CXL\_4007](../Companies/Atari/Music_Composer_CXL4007/README.md)
 - [Atari Music I - MISSING](../Companies/Atari/Atari_Music_I/README.md)
 - [Atari Music II - MISSING](../Companies/Atari/Atari_Music_II/README.md)
 - [Musica ; Copyright (C) 1985 by Steve Hales](../Todos/Musica/README.md)
@@ -302,15 +302,15 @@
 
 ### Spreadsheets
 
-- [BCALC - MISSING]
-- [Calc Magic - MISSING]
+- BCALC - MISSING
+- Calc Magic - MISSING
 - [VisiCalc (Visual Calculator)](../VisiCalc/README.md)
 - [SpeedCalc](../Todos/SpeedCalc/README.md)
 - [SynCalc](../Companies/Synapse_Software/SynCalc/README.md)
 
 ### Tools
 
-- [ATA\_MON\_DXG\_5724](../Companies/Atari/Atari_Germany/ATAMON_DXG_5724/README.md)
+- [ATAMON (DXG 5724)](../Companies/Atari/Atari_Germany/ATAMON_DXG_5724/README.md)
 
 ### Utilities
 
@@ -419,7 +419,7 @@ All of the following have no page yet
 #### Business
 
 - [Terminkalender](../Companies/Atari/Atari_Germany/Terminkalender/README.md)
-- [Buchhaltung - MISSING]
+- Buchhaltung - MISSING
 - [Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md)
 - [Graph It II (TXG9517)](../Companies/Atari/Atari_Germany/Graph_It_II/README.md)
 - [Zinsen und Tilgung (TXG5114)](../Companies/Atari/Atari_Germany/Zinsen_und_Tilgung/README.md)
@@ -433,40 +433,40 @@ All of the following have no page yet
 - [Atari Bundesligatabellen (DXG 55005)](../Companies/Atari/Atari_Germany/Bundesligatabelle/README.md)
 - [Disketten-Bibliothek (DXG 5720)](../Companies/Atari/Atari_Germany/Diskettenbibliothek/README.md)
 - [Karteikartenprogramm (DXG 415)](../Companies/Atari/Atari_Germany/Karteikartenprogramm/README.md)
-- [Vereinsverwaltung- MISSING]
-- [Sport-Lexikon - MISSING]
+- Vereinsverwaltung- MISSING
+- Sport-Lexikon - MISSING
 
 #### Grafik
 
-- [Paint - MISSING]
+- Paint - MISSING
 
 #### Lernen
 
 - [Tipp Trainer (TXG 9512)](../Companies/Atari/Atari_Germany/Tipp_Trainer/README.md)
 - [Städte und Länder](../Staedte_und_Laender/README.md)
-- [Europäische Städte und Länder - MISSING]
+- Europäische Städte und Länder - MISSING
 - [Rechtschreibtrainer (DXG 5713)](../Companies/Atari/Atari_Germany/Rechtschreibtrainer/README.md)
 
 #### Musik
 
-- [Music\_Composer](../Companies/Atari/Music_Composer_CXL4007/README.md)
-- [Music\_I](../Companies/Atari/Atari_Music_I/README.md)
-- [Music\_II](../Companies/Atari/Atari_Music_II/README.md)
+- [Music Composer (CXL4007)](../Companies/Atari/Music_Composer_CXL4007/README.md)
+- [Atari Music I - MISSING](../Companies/Atari/Atari_Music_I/README.md)
+- [Atari Music II - MISSING](../Companies/Atari/Atari_Music_II/README.md)
 
 #### Programmierhilfen
 
 - [Atari's Programmierhilfen-Diskette Nr. 1](../Companies/Atari/Atari_Germany/Ataris_Programmierhilfen-Diskette_Nr.1/README.md)
 - [Atari's Programmierhilfen-Diskette Nr. 2](../Companies/Atari/Atari_Germany/Ataris_Programmierhilfen-Diskette_Nr.2/README.md)
 - [Programmieren leicht gemacht (TXG4110)](../Companies/Atari/Atari_Germany/Programmieren_leicht_gemacht_TXG4110/README.md)
-- [Kurs 2: Noch mehr BASIC](../Atari/Atari_Germany/Noch_mehr_BASIC_TXG55007/README.md)
+- [Kurs 2: Noch mehr BASIC](../Companies/Atari/Atari_Germany/Noch_mehr_BASIC_TXG55007/README.md)
 - [BASIC für Fortgeschrittene](../Companies/Atari/Atari_Germany/BASIC_fuer_Fortgeschrittene/README.md)
 - [Super Sort (DXG 5730)](../Companies/Atari/Atari_Germany/Super_Sort/README.md)
 
 #### Programmiersprachen
 
 - [Editor](../Editor/README.md)
-- [Macro\_Assembler](../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md)
-- [Mikrosoft\_Basic\_aka\_Microsoft\_Basic\_II](..//Languages/BASIC/Microsoft_BASIC/README.md)
+- [Atari Macro Assembler and Program-Text Editor (CX8121)](../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md)
+- [Microsoft Basic Handbook](..//Languages/BASIC/Microsoft_BASIC/README.md)
 - [Pascal for the Atari](../Languages/Pascal/README.md)
 - [Pilot](../Companies/Atari/PILOT/README.md/README.md)
 - [Atari LOGO](../Languages/Logo/README.md)
@@ -476,16 +476,16 @@ All of the following have no page yet
 - [WWF-Club-Spiel](../Companies/WDR/WWF-Club-Spiel/README.md)
 - [Fehler ABC (TXG 9514)](../Companies/Atari/Atari_Germany/Fehler_abc/README.md)
 - [747 Flug-Simulator (CX 6140)](../Companies/Atari/Atari_Germany/747_Flug-Simulator/README.md)
-- [Scram](../Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/README.md)
-- [Karriere - MISSING]
-- [Yokyu II - Globetrotter - MISSING]
-- [Atlantis - MISSING]
-- [Nadral - MISSING]
-- [Time Bandit - MISSING]
-- [Cavelord - MISSING]
-- [Wuerfel - Kniffel - MISSING]
-- [Abenteuer im Weltraum - MISSING]
-- [Schloss des Grauens - MISSING]
+- [Scram](../Companies/Atari/Atari_SCRAM_-_A_Nuclear_Power_Plant_Simulation/README.md)
+- Karriere - MISSING
+- Yokyu II - Globetrotter - MISSING
+- Atlantis - MISSING
+- Nadral - MISSING
+- Time Bandit - MISSING
+- Cavelord - MISSING
+- Wuerfel - Kniffel - MISSING
+- Abenteuer im Weltraum - MISSING
+- Schloss des Grauens - MISSING
 
 ### Spielend lernen mit Atari-Programmen
 
@@ -661,7 +661,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [SuperDOS](../People/Paul_Nicholls/SuperDOS/README.md)
 - [TOP-DOS](../Companies/Eclipse_Software/TOP-DOS/README.md)
 - [Turbo-DOS XE](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md)
-- \[XDOS\](../People/Stefan Dorndorf/XDOS\_2.43/README.md)
+- [XDOS](../People/Stefan Dorndorf/XDOS_2.43/README.md)
 
 ### DOS-Related Information
 
