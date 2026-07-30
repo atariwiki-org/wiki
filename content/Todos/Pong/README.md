@@ -1,4 +1,4 @@
-# Pong
+# Pong (ANALOG, 1986)
 
 Copyright (C) 1986 ANALOG Computing \& Gary S. Domrow
 
