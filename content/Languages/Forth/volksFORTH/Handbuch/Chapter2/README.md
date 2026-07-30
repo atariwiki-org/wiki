@@ -23,6 +23,8 @@ Das Auffälligste an der volksFORTH-Oberfläche ist die inverse Statuszelle In d
 
 Diese Statuszeile zeigt von links nach rechts folgende Informationen, wobei "/" für "oder" steht,
 
+| Information | Beschreibung
+|-|-
 | \<2/8/10/16\>  |  die zur Zeit gültige Zahlenbasis (dezimal)
 | s <xx>  | nennt die Anzahl der Zahlenwerte, die zum Verarbeiten bereitliegen
 | Dic <xxxx>  | nennt den freien Speicherplatz
@@ -33,6 +35,8 @@ Diese Statuszeile zeigt von links nach rechts folgende Informationen, wobei "/" 
 
 Zur Orientierung Im Arbeitssystem stellt das volksFORTH einige standardkonforme Wörter zur Verfügung:
 
+| Wort | Beschreibung
+|-|-
 | words | zeigt Ihnen die Befehlsliste von FORTH, die verfügbaren Wörter. Diese Liste stoppt bei einem Tastendruck mit der Ausgabe oder bricht bei einem <ESC> ab.
 | files | **MS-DOS**: zeigt alle im System angelegten logischen Datei-Variablen, die zugehörigen Handle Nummern, Datum und Uhrzeit des letzten Zugriffs und ihre entsprechenden physikalischen DOS-Dateien. Eine solche FORTH-Datei wird allein durch die Nennung ihres Namens angemeldet. Die MSDOS-Dateien im Directory werden mit **dir** angezeigt.
 | path  | **MS-DOS**: informiert über eine vollständige Pfadunterstützung nach dem MSDOS-Prinzip, allerdings vollkommen unabhängig davon. Ist kein Suchpfad gesetzt. so gibt **path** nichts aus.
@@ -255,6 +259,8 @@ ein, so werden während des Ladens diese Meldungen ausgegeben. Das Wort **.(** l
 
 Eine Besonderheit von volksFORTH ist, dass selbst im Editor Funktionen des Interpreters/Compilers zur Verfügung stehen. Dieses Interpretieren und Kompilieren im Editor nennt sich Showload.
 
+| Taste | Beschreibung
+|-|-
 | CTRL-F | (fix) sucht und zeigt das Wort rechts vom Cursor, ohne den Editor zu verlassen.
 | CTRL-L | (showload) lädt den Screen ab Cursorposition.
 
@@ -419,6 +425,8 @@ Leider sind im Moment im volksFORTH noch deutsche und engllsche Fehlermeldungen 
 
 Die wichtigsten Befehle noch einmal im überblick:
 
+| Wort | Beschreibung
+|-|-
 | status | steuert die Status-Zelle
 | words  | zeigt die gerade verfügbaren Befehle an
 | files | zeigt die angemeldeten Dateien
