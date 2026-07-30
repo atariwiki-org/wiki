@@ -112,12 +112,12 @@
 
 - [Atari 850 - MISSING](../Companies/Atari/Atari_Hardware/Atari_850/README.md)
 - [TransKey-II](../TransKey-II/README.md)
-- [ARGS RS232 Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (German)
+- [ARGS RS232 Cartridge](../Companies/ABBUC/ARGS/ARGS_RS232_Cartridge/README.md) (German)
 
 ## Video Upgrades
 
 - [Atari XEP80](../Companies/Atari/Atari_Hardware/XEP80/README.md)
-- [Driver for a PC Hercules Monochrome graphics card inside the ARGS PBI-ISA Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface/README.md)
+- [Driver for a PC Hercules Monochrome graphics card inside the ARGS PBI-ISA Interface](../Companies/ABBUC/ARGS/ARGS_ISA_PC_Interface/Hercules_Graphic_Card_inside_the_ARGS_PBI-ISA_Interface/README.md)
 
 ## Controllers
 
@@ -137,13 +137,13 @@
 
 - [Blueprint of ACTION! Cart](../Companies/OSS/ACTION/Blueprint_of_ACTION_Cart/README.md)
 - [AtariMax EXEPACKER Files with bundled DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
-- [ARGS RS232 Cartridge](../Companies/ARGS/ARGS_RS232_Cartridge/README.md) (deutsch)
+- [ARGS RS232 Cartridge](../Companies/ABBUC/ARGS/ARGS_RS232_Cartridge/README.md) (deutsch)
 - [The!Cart](../TheCart/README.md)
 - [All you ever wanted to know about: Atari Cartridges](../Cartridges/README.md)
 
 ## Others
 
-- [ARGS ISA PC Interface](../Companies/ARGS/ARGS_ISA_PC_Interface/README.md)
+- [ARGS ISA PC Interface](../Companies/ABBUC/ARGS/ARGS_ISA_PC_Interface/README.md)
 - [ATARI 1450XL HOME COMPUTER INTEGRAL DISK DRIVE SPECIFICATION](../Companies/Atari/Atari_Hardware/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
 - [Bank Switching (Bankumschaltung)](../Bank_Switching/README.md)
 - [SDrive-MAX by KBr](../SDrive-MAX/README.md)
