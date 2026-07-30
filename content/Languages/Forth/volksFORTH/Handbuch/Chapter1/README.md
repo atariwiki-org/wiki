@@ -1,4 +1,4 @@
-# Handbuch volksFORTH Version 3.90
+# Kapitl 1: volksFORTH Version 3.90 Handbuch
 
 (c) 1985-2010 FORTH-Gesellschaft e.V. Bernd Pennemann. Georg Rehfeld. Dietrich Weineck Klaus Schielslek. Jörg Staben. Klaus Kohl. Carsten Strotmann
 
@@ -125,4 +125,4 @@ Diesem Handbuch zum volksFORTH83 Ist sowohl als Nachschlagewerk als auch als Leh
 
 Beschreibungen erfolgen in Proportionalschrift mit Randausgleich. **FORTH-Befehle** werden Im Text durch Fettschrift hervorgehoben. {{{Eingaben}}} und {{{Programmlistinqs}}} verwenden eine nichtproportionale Schriftart. _Ausgaben_ des FORTH-Interpreter/Compiler sind unterstrichen.
 
-Weiter mit [volkFORTH - Handbook - Chapter 2](../Chapter2/README.md).
+Weiter mit [Kapitel 2: Einstieg in volksFORTH](../Chapter2/README.md).

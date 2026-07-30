@@ -2,6 +2,7 @@
 
 ## Source
 
+- [VolksForth on GitHub](https://github.com/forth-ev/VolksForth)
 - [VolksForth Kernel Source Code](Language/Kernel_Source_Code/README.md)
 - [Atari 8bit VolksForth Memory Map](Language/Memory_Map_Atari_8bit/README.md)
 
@@ -22,7 +23,7 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 
 - [Chapter 1: volksFORTH Version 3.90 Manual](Handbook/Chapter1/README.md)
 
-- [volkFORTH - Handbook - Chapter 2](Handbook/Chapter2/README.md)
+- [Chapter 2: Introduction to volksFORTH](Handbook/Chapter2/README.md)
 
 - [Chapter 3: Arithmetic](Handbook/Chapter3/README.md)
 
@@ -36,17 +37,17 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 
 ## volksFORTH Handbuch (German)
 
-- [Handbuch volksFORTH Version 3.90](Handbuch/Chapter1/README.md)
+- [Kapitl 1: volksFORTH Version 3.90 Handbuch](Handbuch/Chapter1/README.md)
 
-- [volkFORTH - Handbook - Chapter 2](Handbuch/Chapter2/README.md)
+- [Kapitel 2: Einstieg in volksFORTH](Handbuch/Chapter2/README.md)
 
 - [Kapitel 3: Arithmetik](Handbuch/Chapter3/README.md)
 
 - [Programm-Strukturen](Handbuch/Chapter4/README.md)
 
-- [Ein-/Ausgabe in volksFORTH](Handbuch/Chapter5/README.md)
+- [Kapitel 4: Ein-/Ausgabe in volksFORTH](Handbuch/Chapter5/README.md)
 
-- [Zeichenketten (Strings) in volksFORTH](Handbuch/Chapter6/README.md)
+- [Kapitel 6: Zeichenketten (Strings) in volksFORTH](Handbuch/Chapter6/README.md)
 
 - [VolksForth 6502 Assembler](Handbuch/6502Assembler/README.md)
 

@@ -1470,7 +1470,7 @@
       
     - [Chapter 1: volksFORTH Version 3.90 Manual](Languages/Forth/volksFORTH/Handbook/Chapter1/README.md)
       
-    - [volkFORTH - Handbook - Chapter 2](Languages/Forth/volksFORTH/Handbook/Chapter2/README.md)
+    - [Chapter 2: Introduction to volksFORTH](Languages/Forth/volksFORTH/Handbook/Chapter2/README.md)
       
     - [Chapter 3: Arithmetic](Languages/Forth/volksFORTH/Handbook/Chapter3/README.md)
       
@@ -1482,17 +1482,17 @@
       
     - [VolksForth 6502 Assembler](Languages/Forth/volksFORTH/Handbuch/6502Assembler/README.md)
       
-    - [Handbuch volksFORTH Version 3.90](Languages/Forth/volksFORTH/Handbuch/Chapter1/README.md)
+    - [Kapitl 1: volksFORTH Version 3.90 Handbuch](Languages/Forth/volksFORTH/Handbuch/Chapter1/README.md)
       
-    - [volkFORTH - Handbook - Chapter 2](Languages/Forth/volksFORTH/Handbuch/Chapter2/README.md)
+    - [Kapitel 2: Einstieg in volksFORTH](Languages/Forth/volksFORTH/Handbuch/Chapter2/README.md)
       
     - [Kapitel 3: Arithmetik](Languages/Forth/volksFORTH/Handbuch/Chapter3/README.md)
       
     - [Programm-Strukturen](Languages/Forth/volksFORTH/Handbuch/Chapter4/README.md)
       
-    - [Ein-/Ausgabe in volksFORTH](Languages/Forth/volksFORTH/Handbuch/Chapter5/README.md)
+    - [Kapitel 4: Ein-/Ausgabe in volksFORTH](Languages/Forth/volksFORTH/Handbuch/Chapter5/README.md)
       
-    - [Zeichenketten (Strings) in volksFORTH](Languages/Forth/volksFORTH/Handbuch/Chapter6/README.md)
+    - [Kapitel 6: Zeichenketten (Strings) in volksFORTH](Languages/Forth/volksFORTH/Handbuch/Chapter6/README.md)
       
     - [VolksForth 32-bit words](Languages/Forth/volksFORTH/Language/32bit_Words/README.md)
       
