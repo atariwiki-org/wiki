@@ -240,7 +240,7 @@
 ### Diagnostics
 
 - [Atari 400-800 Stand Alone System Test](../Companies/Atari/Atari_400-800_Stand_Alone_System_Test/README.md)
-- [Super\_SALT](../Companies/Atari/CPS_SuperSALT/README.md)
+- [CPS Super SALT](../Companies/Atari/CPS_SuperSALT/README.md)
 - [ATARI Diagnostic Test Tape (FD100008)](../Companies/Atari/Atari_Diagnostic_Test_Tape/README.md)
 - [AUSTRO.RECOVER](../Companies/AUSTRO.COM/AUSTRO.RECOVER/README.md)
 
@@ -767,10 +767,8 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari Macro Assembler and Program-Text Editor (CX8121)](../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md)
 - [OSS EASMD Version 1.0](../Companies/OSS/EASMD/README.md)
 - [OSS BUG/65](attachments/BUG-65_FROM_3000.txt)
-- [OSS MAC/65](Mac65)
-- [OSS MAC XL](Mac65)
-- [OSS MAC XE](Mac65)
-- [OSS DDT](DDT)
+- [MAC/65 Macro Assembler](../Companies/OSS/MAC65/README.md)
+- [OSS DDT](../Companies/OSS/DDT/README.md)
 - [Synapse Assembler 'SynAssembler' by Steve Hales.](../Companies/Synapse_Software/SynAssembler/README.md)
 - [A65 Assembler](../Languages/Assembler/A65_Assembler/README.md)
 - [Bibo-Assembler](attachments/BIBO.asm)
