@@ -768,7 +768,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [OSS EASMD Version 1.0](../Companies/OSS/EASMD/README.md)
 - [OSS BUG/65](attachments/BUG-65_FROM_3000.txt)
 - [MAC/65 Macro Assembler](../Companies/OSS/MAC65/README.md)
-- [OSS DDT](../Companies/OSS/DDT/README.md)
+- [Dunion's Debugging Tool (DDT) Rev. 1.0](../Companies/OSS/DDT/README.md)
 - [Synapse Assembler 'SynAssembler' by Steve Hales.](../Companies/Synapse_Software/SynAssembler/README.md)
 - [A65 Assembler](../Languages/Assembler/A65_Assembler/README.md)
 - [Bibo-Assembler](attachments/BIBO.asm)
@@ -795,7 +795,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 
 #### C
 
-- [OSS TINY-C+ Version 1.1](C#section-C-ATRImages)
+- [OSS TINY-C+ Version 1.1](../Languages/C/README.md#section-C-ATRImages)
 
 ### Forth
 
