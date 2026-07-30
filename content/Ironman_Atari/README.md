@@ -18,7 +18,7 @@ It is assumed that the reader is already familiar with the Atari computer platfo
 
 **Atari Hardware Manual Atari Roots, A Guide to Atari Assembly Language**, by Mark Andrews. The full text is available at [http://www.atariarchives.org/roots](http://www.atariarchives.org/roots)
 
-**De Re Atari ? By Chris Crawford, Lane Winner, Jim Cox, Amy Chen, Jim Dunion, Kathleen Pitta, Bob Fraser, and Gus Makrea**. This is THE seminal work on the Atari home computer and should be considered required reading. The full text can be found on-line at [http://www.atariarchives.org/dere](http://www.atariarchives.org/dere)
+**De Re Atari by Chris Crawford, Lane Winner, Jim Cox, Amy Chen, Jim Dunion, Kathleen Pitta, Bob Fraser, and Gus Makrea**. This is THE seminal work on the Atari home computer and should be considered required reading. The full text can be found on-line at [http://www.atariarchives.org/dere](https://www.atariarchives.org/dere/)
 
 **Dr. C. Wacko's Miracle Guide to Designing and Programming Your Own Atari Computer Arcade Games, by Robert Kurcina, David L. Heller, and John F. Johnson**. This book can still be found on [http://www.amazon.com](http://www.amazon.com).
 
@@ -32,7 +32,7 @@ Disclaimer: As always, errors inevitably creep into a work such as this. If you 
 
 ## Programming Environment
 
-The Atari programming environment has changed dramatically over the last 25 years. Most development work now can be done cross-platform by mere mortals on a PC instead of on specialized mainframes or squinting at a flickering television on the actual Atari hardware. This opens up new realms previously unavailable. Numeric tables and graphics can be precalculated using today's big muscle CPUs to be used by the native Atari. Large projects can be assembled in less than a second instead of listening to the old floppy drive grind away for a quarter of an hour. The assemble/test/debug cycle is greatly reduced by using an emulator instead of waiting for the real iron to reset. This allows for quick itertaion, testing and development of ideas.
+The Atari programming environment has changed dramatically over the last 25 years. Most development work now can be done cross-platform by mere mortals on a PC instead of on specialized mainframes or squinting at a flickering television on the actual Atari hardware. This opens up new realms previously unavailable. Numeric tables and graphics can be precalculated using today's big muscle CPUs to be used by the native Atari. Large projects can be assembled in less than a second instead of listening to the old floppy drive grind away for a quarter of an hour. The assemble/test/debug cycle is greatly reduced by using an emulator instead of waiting for the real iron to reset. This allows for quick iteration, testing and development of ideas.
 
 The following is a list of my current programming environment. HTML links and short descriptions of each item are provided below. I work under Linux, so most of the items below are heavily UNIX based rather than Windows. Many of the UNIX tools either work on the Macintosh or can be ported with a bit of effort. There are some excellent Windows-only tools, but I do not use these.
 
@@ -51,7 +51,7 @@ Additional disclaimer: I am the author of ATasm and envisionPC.
 
 - EMACS as primary editor (vi on occasion)
 - ATasm v #5:  ATasm is highly compatible with the original OSS Mac/65 native compiler.  ATasm is written in C, and compiles without modification on any platform that has a GCC compiler.  ATasm has been specifically designed for the development of programs for the Atari home computer.  It can produces Atari native binary load object files, raw cartridge images, and can optionally target the machine state files produced by many emulators.  Binary load files can also be written to disk images for easy loading in other emulators or onto real hardware via SIO2PC.  It is available at [http://atasm.sourceforge.net](http://atasm.sourceforge.net)
-- Another popular assembler that is also Atari specific is XASM by Fox of Taquart. This assembler is compatible with JBW's Quick Assembler, which was the primary assembler used in Poland and other eastern European countries during the 1990s. XASM includes several pseudo-instructions (like mva) and pseudo-indexing modes. In addition, it can generate Atari native binary object files and has includes utilities to create boot disk images.  XASM can be found at [http://atariarea.krap.pl/x-asm/](http://atariarea.krap.pl/x-asm/)
+- Another popular assembler that is also Atari specific is XASM by Fox of Taquart. This assembler is compatible with JBW's Quick Assembler, which was the primary assembler used in Poland and other eastern European countries during the 1990s. XASM includes several pseudo-instructions (like "mva") and pseudo-indexing modes. In addition, it can generate Atari native binary object files and has includes utilities to create boot disk images.  XASM can be found at [http://atariarea.krap.pl/x-asm/](http://atariarea.krap.pl/x-asm/)
 - If you are looking for a Linux assembler that is Quik Assembler compatible, try a program called Zooey, found at [http://atari8.sourceforge.net/zooey.html](http://atari8.sourceforge.net/zooey.html)
 - Another assembler worth considering is the MADS assembler, found at http://mads.atari8.info/;  The latest documentation is always provided in Polish, however there is an English translation of version 1.9.5 provided [here](http://mads.atari8.info/mads_eng.html).
 
@@ -173,13 +173,13 @@ shown below in figure ??.  By appropriately selecting the GTIA mode 10 palette a
 carefully placing the mode 9 pixels, HIP has an average bit-depth of HIP of 3.5 bits.
 (GTIA mode 9 has 4 bits, GTIA mode 10 has 3).
 
-| DLIST ONE | DLIST TWO |
-|-----------|-----------|
-| mode 9  | mode 10
-| mode 10  | mode 9
-| mode 9  | mode 10
-| mode 10  | mode 9
-| ...  | ...
+| DLIST ONE | DLIST TWO
+|-----------|-----------
+| mode 9    | mode 10
+| mode 10   | mode 9
+| mode 9    | mode 10
+| mode 10   | mode 9
+| ...       | ...
 
 Since GTIA mode 9 obtains its background color from register 712 and mode 10 obtains
 its background color from register 704, it is easiest to assign the palette as follows:
@@ -197,18 +197,20 @@ register needs to be set instead of alternating the background registers on ever
 selecting the above colors, a palette of 30 colors becomes available in HIP by selecting
 the appropriate color in each display list as detailed below:
 
-| 9     | #000  | #111  | #222  | #111  | #222  | #333  | #444  | #333  | #444  |
-| 10   | #000  | #000  | #000  | #222  | #222  | #222  | #222  | #444  | #444  |
-| HIP  | #0.0   | #0.5  | ##0    | ##5  | #2.0  | #2.5  | #3.0  | #3.5  | #4.0  |
-| 9     | #555  | #666  | #555  | #666  | #777  | #888  | #777  | #888  | #999  |
-| 10   | #444  | #444  | #666  | #666  | #666  | #666  | #888  | #888  | #888  |
-| HIP  | #4.5   | #5.0  | #5.5    | #6.0  | #6.5  | #7.0  | #7.5  | #8.0  | #8.5  |
-| 9     | #AAA | #999  | #AAA  | #BBB  | #CCC  | #BBB  | #CCC  | #DDD  | #EEE  |
-| 10   | #888  | #AAA  | #AAA | #AAA  | #AAA  | #CCC  | #CCC  | #CCC  | #CCC  |
-| HIP  | #9.0   | #9.5  | #A.0    | #A.5  | #B.0  | #B.5  | #C.0  | #C.5  | #D.0  |
-| 9     | #DDD | #EEE  | #FFF  |   |  |  |  |  |  |
-| 10   | #EEE  | #EEE  | #EEE  |   |  |  |  |  |  |
-| HIP  | #D.5  | #E.0  | #E.5  |   |  |  |  |  |  |
+| Mode | Color | Color | Color | Color | Color | Color | Color | Color | Color
+|------|-------|-------|-------|-------|-------|-------|-------|-------|-------
+| 9    | 0     | 1     | 2     | 1     | 2     | 3     | 4     | 3     | 4
+| 10   | 0     | 0     | 0     | 2     | 2     | 2     | 2     | 4     | 4
+| HIP  | 0.0   | 0.5   | 1     | 1.5   | 2.0   | 2.5   | 3.0   | 3.5   | 4.0
+| 9    | 5     | 6     | 5     | 6     | 7     | 8     | 7     | 8     | 9
+| 10   | 4     | 4     | 6     | 6     | 6     | 6     | 8     | 8     | 8
+| HIP  | 4.5   | 5.0   | 5.5   | 6.0   | 6.5   | 7.0   | 7.5   | 8.0   | 8.5
+| 9    | A     | 9     | A     | B     | C     | B     | C     | D     | E
+| 10   | 8     | A     | A     | A     | A     | C     | C     | C     | C
+| HIP  | 9.0   | 9.5   | A.0   | A.5   | B.0   | B.5   | C.0   | C.5   | D.0
+| 9    | D     | E     | F     |       |       |       |       |       | 
+| 10   | E     | E     | E     |       |       |       |       |       | 
+| HIP  | D.5   | E.0   | E.5   |       |       |       |       |       | 
 
 To display a HIP picture, a special display list set can be constructed that alternates
 between screens every frame.  In addition, two DLI routines need to be written: one to
@@ -234,7 +236,9 @@ HIP .. 00 11 22 33 ..
 There is another drawback that is a result of interlacing pictures, a single HIP pixel
 vertical line is impossible.  This is seen as a wavy borders on the vertical edges of most
 HIP pictures.  Fortunately, this can be fixed with judicious use of Player/Missiles.
-Remember that register 704 is set to the background color.  Register 704 is also used as the color for player 0 and its missile.  By setting the shape of player 0 and missile 0 to a
+Remember that register 704 is set to the background color.
+Register 704 is also used as the color for player 0 and its missile.
+By setting the shape of player 0 and missile 0 to a
 solid strip, they can be used as borders.  This provides the picture solid frame.
 There is a simple extension to the HIP format to provide color instead of only allowing a
 monochrome pallete.  This is known as the RIP (Rocky Interlace Picture) file format.  RIP
@@ -253,13 +257,13 @@ GTIA 9/10 line as shown in the figure below. Unfortunately, adding this extra li
 the vertical resolution and introduces dark lines. On the other hand, pixels are now
 square, which helps conversion.
 
-| DLIST ONE  | DLIST TWO  |
-|------------|------------|
-| mode 11  | mode 11  |
-| mode 9  | mode 10  |
-| mode 11  | mode 11  |
-| mode 10  | mode 9  |
-| ... |  ...  |
+| DLIST ONE | DLIST TWO
+|-----------|-----------
+| mode 11   | mode 11
+| mode 9    | mode 10
+| mode 11   | mode 11
+| mode 10   | mode 9
+| ...       | ...
 
 TIP pictures can be converted manually from a 24-bit picture in following manner.  First,
 scale or crop the picture to an appropriate size (160x120).  Second, map the picture to the
@@ -271,7 +275,7 @@ problematic, but a reasonable method is to take the shade of every second pixel 
 from the first) for mode 9, and the other pixels' for mode 10. Use all four bits for GTIA 9
 shades and ignore the lowest bit for mode 10.
 
-Taquart has released the source to their incredible ?Numen? demo (which demonstrates
+Taquart has released the source to their incredible "Numen" demo (which demonstrates
 many of the techniques described here).  As part of the source release, they have a few
 conversion utilities including a HIP to TIP colorizer utility and a simple PCX to TIP
 converter.
@@ -701,10 +705,10 @@ i4       sty yind
 
 The tables referenced by the above code vary depending on the mouse being used.
 
-|     | Amiga    | Atari ST |
-|-----|----------|----------|
-|htab | 0,2,10,8 | 0,2,3,1  |
-|vtab | 0,1,5,4  | 0,8,12,4 |
+|  | Amiga | Atari ST
+|---|-------|----------
+| htab | 0,2,10,8 | 0,2,3,1
+| vtab | 0,1,5,4 | 0,8,12,4
 
 Oddly, no emulator currently supports the use of a mouse, so this will only work on real
 hardware.
