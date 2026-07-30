@@ -2204,11 +2204,12 @@ POINTER manipulations.
 
 That's it!
 
-label | use
-info    | The name we gave our POINTER
-company | The ARRAY we used to reserve memory.
-counter | This is the record number we wish to look at. Since we have 6 employees this will be a number from 0 to 5.  This can be a constant like 3 or a variable like in a FOR loop.
-size    | The number of bytes in a record in our DEFINE line.
+| label | use
+|-------|-----
+| info  | The name we gave our POINTER
+| company | The ARRAY we used to reserve memory.
+| counter | This is the record number we wish to look at. Since we have 6 employees this will be a number from 0 to 5.  This can be a constant like 3 or a variable like in a FOR loop.
+| size  | The number of bytes in a record in our DEFINE line.
 
 Ok, so how do you use it?  Easy...
 If we want to enter employee number 3's information.
@@ -2422,10 +2423,11 @@ mm/dd/yy.
 
 How big to we want each field?
 
-field    |         size in bytes
-firstname       |      11
-lastname        |      14
-date            |      9
+|field    |         size in bytes
+|-|-
+|firstname       |      11
+|lastname        |      14
+|date            |      9
 
 Try to declare your sizes 1 bigger
 because strings go from 0 to 1 less
@@ -2669,13 +2671,14 @@ subject.  I will just list the BASIC
 graphics command and their Action!
 equivalents.
 
-BASIC   |         Action!
-GRAPHICS 0      | Graphics(0)
-SETCOLOR 1,0,0  | SetColor(1,0,0)
-COLOR 2         | color=2
-POSITION 3,4    | Position(3,4)
-PLOT 10,10      | Plot(10,10)
-DRAWTO 20,20    | DrawTo(20,20)
+|BASIC   |         Action!
+|-|-
+|GRAPHICS 0      | Graphics(0)
+|SETCOLOR 1,0,0  | SetColor(1,0,0)
+|COLOR 2         | color=2
+|POSITION 3,4    | Position(3,4)
+|PLOT 10,10      | Plot(10,10)
+|DRAWTO 20,20    | DrawTo(20,20)
 
 I have not listed all the routines
 in the Action! library.  There are
