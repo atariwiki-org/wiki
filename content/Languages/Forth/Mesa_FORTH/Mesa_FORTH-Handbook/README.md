@@ -711,7 +711,7 @@ The third column indicates the source of the word.  The values for this column a
 
 ### Stack Manipulation
 
-| Word| Description|Forth|Description
+| Word| Operands|Forth|Description
 |-|-|-|-|
 | -DUP  |( n --\> n ? )               |fig|Duplicate only if non-zero|
 | \>R    |( n --\> )                   |fig|Move top item to "return stack" for temporary storage (use caution)|
@@ -726,16 +726,16 @@ The third column indicates the source of the word.  The values for this column a
 
 ### Number Bases
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 | BASE    | ( --\> addr )             |fig|System variable containing number base.|
 | DECIMAL | ( --\> )                  |fig|Set decimal base.|
 | HEX     | ( --\> )                  |fig|Set hexadecimal base.|
 
 ### Arithmetic and Logical
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |\*       |( n1 n2 --\> prod )            |fig|Multiply.|
 |*/      |( n1 n2 n3 --\> quot )         |fig|Multiply, then divide (n1*n2/n3), using double-precision intermediate.|
 |*/MOD   |( n1 n2 n3 --\> rem quot )     |fig|Multiply, then divide (n1*n2/n3), using double-precision intermediate.|
@@ -765,8 +765,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### Comparison
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |0\<            |( n --\> f )                   |fig|True if number is negative.|
 |0=            |( n --\> f )                   |fig|True if top number zero (i.e., reverses truth value).|
 |\<             |( n1 n2 --\> f )               |fig|True if n1 less than n2.|
@@ -775,8 +775,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### Memory
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |!             |( n addr --\> )                |fig|Store word value at address in memory.|
 |+!            |( n addr --\> )                |fig|Add number to value of word at address in memory.|
 |\<CMOVE        |( from to n --\> )             |SYS|Like CMOVE, except bytes moved starting at high address first.|
@@ -791,8 +791,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### Control Structures
 
-| Control Structure| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |BEGIN  ...UNTIL        |until: ( f --\> )              |fig|Loop back to BEGIN until true at UNTIL.|
 |BEGIN  ...REPEAT       |while: ( f --\> )              |fig|Loop while true at WHILE.     ...WHILE.|
 |DO...+LOOP    |do: ( end+1 start --\> )  +loop: ( n--\> )     |fig|Like DO...LOOP, except adds stack value to index at end of loop.|
@@ -804,8 +804,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### Terminal Input-Output
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |.             |( n --\> )                     |fig|Print number.|
 |."            |( --\> )                       |fig|Print message (terminated by ").|
 |.R            |( n fieldwidth --\> )          |fig|Print number, right-justified in field.|
@@ -831,8 +831,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### Input-Output Formatting
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |#             |( d --\> d )                   |fig|Convert next digit of double-precision number and add character to output string.|
 |#\>            |( d --\> addr u )              |fig|Terminate output string (ready for TYPE).|
 |#S            |( d --\> 0 0 )                 |fig|Convert all significant digits of double-precision number to output string.|
@@ -843,8 +843,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### Disk Handling
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |B/BUF         |( --\> n )                    |FIG|System constant giving disk block size in bytes|
 |B/SCR         |( --\> n )                    |FIG|System constant giving blocks per editing screen|
 |BLK           |( --\> addr )                 |FIG|System variable containing current block number|
@@ -862,8 +862,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### Defining Words
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |: xxx       f pointer to context vocabulary (searched first)|
 |CURRENT       |( --\> addr )                 |FIG|Returns address of pointer to current vocabulary (where new definitions are put)|
 |DEFINITIONS   |( --\> )                      |FIG|Sets CURRENT vocabulary to CONTEXT|
@@ -873,8 +873,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### Miscellaneous and System
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |' xxx         |( --\> addr )                 |FIG|Find address of xxx in dictionary; if used in definition, compile address|
 |(             |( --\> )                      |FIG|Begin comment, terminated by right paren on same line; space after (|
 |,             |( n --\> )                    |FIG|Compile a number into the dictionary|
@@ -894,8 +894,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### String Functions
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |" text"       |( -$\> $ )                    |SYS|Pushes a string constant on top of the str ng stack|
 |""            |( -$\> $ )                    |SYS|Push the empty string on top of the string stack|
 |!            |( vaddr --\> )  ( $ -$\> )     |SYS|Store the string at the top of the string stack into the string variable|
@@ -925,8 +925,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### ATARI Input/Output(CIO) Functions
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |#0            |( --\> )                      |SYS|Iocb offset for #0|
 |#3            |( --\> )                      |SYS|Iocb offset for #3|
 |#4            |( --\> )                      |SYS|Iocb offset for #4|
@@ -951,8 +951,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### ATARI Forth File Functions
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |LOAD         |( filespec -$\> )             |SYS|Open the file as DR1, select DR1, and load the file (starting at screen 1)|
 |SETDR0       |( filespec -$\> )             |SYS|Open the file as DR0|
 |SETDR1       |( filespec -$\> )             |SYS|Open the file as DR1|
@@ -963,8 +963,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### General ATARI Input/Output Functions
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |COLOR         |( color --\> )                |SYS|Selects color to use|
 |CVTSTK        |( n1 --\> n2 )                |SYS|Converts joystick value to a more usable number (0=nothing, 1=up, 2=up-right, 3=right, 4=down-right, 5=down, 6=down-left, 7=left, 8=up-left)|
 |DR.           |( x y --\> )                  |SYS|Draws a line from the current position to the X-Y coord.|
@@ -979,8 +979,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### ATARI Disk Handler Functions
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |COPY          |( --\> )                       |DISK|Makes a bit copy of a disk from drive 1 to drive 2.  It reports the status of each read and write on the screen.  It will not abort if it should encounter read errors (say from a missing sector on the disk)|
 |DMP           |( sector --\> )               |DISK| Reads a disk sector into a buffer at hex 8000.  It reads the sector from drive 2.  The sector is then dumped to the screen|
 |GETSECTOR     |( drive addr sector --\> status ) |DISK| Performs a get of the sector on the indicated disk drive (1,2,3,4).  The sector (128 bytes) will be read in starting at the address.  The sector number (1 to 720) indicates the disk sector.  The status of the read will be returned on the stack|
@@ -988,8 +988,8 @@ The third column indicates the source of the word.  The values for this column a
 
 ### ATARI DOS Functions
 
-| Word| Description|
-|-|-|
+| Word| Operands|Forth|Description
+|-|-|-|-|
 |DELETE        |( filespec -$\> )             |DOS|  Deletes the file(s).  .Warning. there will be no confirmation like normal DOS|
 |DIR           |( filespec -$\> )             |DOS|  Lists a directory of the given file(s)|
 |FORGET DOS    |( --\> )                      |DOS|  Used to forget DOS (after it has been loaded)|
