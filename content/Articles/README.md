@@ -200,7 +200,7 @@
 
 # Software
 
-## [Applications](../Applications/README.md)
+## Application
 
 ### Business
 
@@ -240,7 +240,7 @@
 ### Diagnostics
 
 - [Atari 400-800 Stand Alone System Test](../Companies/Atari/Atari_400-800_Stand_Alone_System_Test/README.md)
-- [Super\_SALT](../CPS_Super_SALT/README.md)
+- [Super\_SALT](../Companies/Atari/CPS_SuperSALT/README.md)
 - [ATARI Diagnostic Test Tape (FD100008)](../Companies/Atari/Atari_Diagnostic_Test_Tape/README.md)
 - [AUSTRO.RECOVER](../Companies/AUSTRO.COM/AUSTRO.RECOVER/README.md)
 
@@ -468,7 +468,7 @@ All of the following have no page yet
 - [Atari Macro Assembler and Program-Text Editor (CX8121)](../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md)
 - [Microsoft Basic Handbook](..//Languages/BASIC/Microsoft_BASIC/README.md)
 - [Pascal for the Atari](../Languages/Pascal/README.md)
-- [Pilot](../Companies/Atari/PILOT/README.md/README.md)
+- [PILOT](../Companies/Atari/PILOT/README.md)
 - [Atari LOGO](../Languages/Logo/README.md)
 
 ### Spiele
@@ -694,7 +694,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 
 - [Programmieren leicht gemacht (TXG4110)](../Companies/Atari/Atari_Germany/Programmieren_leicht_gemacht_TXG4110/README.md)
 
-- [Kurs 2: Noch mehr BASIC-Lernen Sie BASIC mit Dagmar Berghoff-TXG 55007](../Noch_mehr_BASIC_TXG_55007/README.md)
+- [Noch mehr BASIC (TXG55007)](../Companies/Atari/Atari_Germany/Noch_mehr_BASIC_TXG55007/README.md)
 
 - [BASIC für Fortgeschrittene](../Companies/Atari/Atari_Germany/BASIC_fuer_Fortgeschrittene/README.md)
 
