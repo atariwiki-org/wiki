@@ -524,21 +524,21 @@ convenience.
 
 The functions provided are:
 
-| Function    | Description  |
-|-|-|
-| CLOSE    | close file/device   |
-| GET      | get character(byte)  |
-| GETBUF   | get buffer from file/device  |
-| GETREC   | get record (terminated by End-Of-Line)  |
-| JSRCIO   | call CIO (assumes IOCB set-up)  |
-| NOTE     | note position in disk file  |
-| OPEN     | open file/device   |
-| POINT    | point to position in disk file   |
-| PUT      | write character(byte)   |
-| PUTBUF   | write buffer to file/device   |
-| PUTREC   | write record (terminated by End-Of-Line)  |
-| STATUS   | return status of file/device  |
-| XIO      | call CIO (like BASIC XIO)  |
+| Function | Description
+|----------|-------------
+| CLOSE    | close file/device
+| GET      | get character(byte)
+| GETBUF   | get buffer from file/device
+| GETREC   | get record (terminated by End-Of-Line)
+| JSRCIO   | call CIO (assumes IOCB set-up)
+| NOTE     | note position in disk file
+| OPEN     | open file/device
+| POINT    | point to position in disk file
+| PUT      | write character(byte)
+| PUTBUF   | write buffer to file/device
+| PUTREC   | write record (terminated by End-Of-Line)
+| STATUS   | return status of file/device
+| XIO      | call CIO (like BASIC XIO)
 
 For a detailed description of OPEN, CLOSE, NOTE, POINT, and  XIO
 refer to the ATARI BASIC manual.  The calling sequence and  meaning
@@ -589,18 +589,18 @@ Words  have  been  defined  to  access  the sound, graphics, and
 joystick  functions  provided  by  the  ATARI O.S.  These words are
 similar to the ATARI BASIC commands providing the same features:
 
-| Word| Description|
-|-|-|
-| COLOR | selects color  |
-| DR. | draws line (DRAWTO)  |
-| GR. | opens screen for graphics (GRAPHICS)  |
-| LOC. | locates color at point (LOCATE)  |
-| PL. | plots point (PLOT)  |
-| POS. | positions graphics cursor (POSITION)  |
-| SE. | sets color register (SETCOLOR)  |
-| SO. | sets voice for sound (SOUND)  |
-| STICK | tests joystick position  |
-| STRIG | tests joystick trigger  |
+| Word | Description
+|------|-------------
+| COLOR | selects color
+| DR.  | draws line (DRAWTO)
+| GR.  | opens screen for graphics (GRAPHICS)
+| LOC. | locates color at point (LOCATE)
+| PL.  | plots point (PLOT)
+| POS. | positions graphics cursor (POSITION)
+| SE.  | sets color register (SETCOLOR)
+| SO.  | sets voice for sound (SOUND)
+| STICK | tests joystick position
+| STRIG | tests joystick trigger
 
 An additional  word (CVTSTK)  has been  provided to  convert the
 joystick position values to something more meaningful.
@@ -620,15 +620,15 @@ The Text Formatter  reads a file  generated using the  MesaForth
 Editor (i.e., a  Forth file of  screens with no  carriage returns).
 It looks  for a  small set  of commands  starting in  column 1 of a line:
 
-| Word| Description|
-|-|-|
-| .BREAK | pause on screen (so it can be read)  |
-| .CENTER text | center text on line  |
-| .END | end of file  |
-| .FILL | begin filling of text (right-margin justify)  |
-| .NOFILL | end filling of text |
-| .PAGE | force a start of a new page (clear screen)  |
-| . | force a blank line  |
+| Word | Description
+|------|-------------
+| .BREAK | pause on screen (so it can be read)
+| .CENTER text | center text on line
+| .END | end of file
+| .FILL | begin filling of text (right-margin justify)
+| .NOFILL | end filling of text
+| .PAGE | force a start of a new page (clear screen)
+| .    | force a blank line
 
 Use the  text formatter  to generate  instructions for  programs
 you  have  written.   You  call  the  text  formatter  (after it is
@@ -685,315 +685,315 @@ The normal stack is  described with --\>, the  string stack is described  by -$\
 item in a list.  The  input items reflect the stack  before the word is executed.   The output items indicate the  stack state
 after the word is executed.  The operands are defined as follows:
 
-| Operand| Description|
-|-|-|
-| n, n1, ... | 16-bit signed integer numbers  |
-| d, d1, ... | 32-bit signed integer numbers  |
-| u          | 16-bit unsigned integer number |
-| addr       | 16-bit address  |
-| b          | 8-bit byte  |
-| c          | 8-bit ATASCII character  |
-| f          | boolean flag (0 is false)  |
-| iocb       | offset of I/O control block (i.e., hex 00, 10, 20, ...)  |
+| Operand | Description
+|---------|-------------
+| n, n1, ... | 16-bit signed integer numbers
+| d, d1, ... | 32-bit signed integer numbers
+| u       | 16-bit unsigned integer number
+| addr    | 16-bit address
+| b       | 8-bit byte
+| c       | 8-bit ATASCII character
+| f       | boolean flag (0 is false)
+| iocb    | offset of I/O control block (i.e., hex 00, 10, 20, ...)
 
 The third column indicates the source of the word.  The values for this column are:
 
-| Source| Description|
-|-|-|
-| fig | fig-Forth word in normal Forth object file |
-| ext | MesaForth extensions in Forth object file |
-| SYS | in SYSTEM.4TH, words usually needed  |
-| DISK | in DISK.4TH, disk handler interface  |
-| DOS | in DOS.4TH, ATARI DOS words |
-| EDIT | in EDIT.4TH, Forth screen editor |
-| FORM | in FORMAT.4TH, text-formatting words for use in program HELP files |
-| TURN | in TURNKEY.4TH, saves current Forth words for turnkey operation |
+| Source | Description
+|--------|-------------
+| fig    | fig-Forth word in normal Forth object file
+| ext    | MesaForth extensions in Forth object file
+| SYS    | in SYSTEM.4TH, words usually needed
+| DISK   | in DISK.4TH, disk handler interface
+| DOS    | in DOS.4TH, ATARI DOS words
+| EDIT   | in EDIT.4TH, Forth screen editor
+| FORM   | in FORMAT.4TH, text-formatting words for use in program HELP files
+| TURN   | in TURNKEY.4TH, saves current Forth words for turnkey operation
 
 ### Stack Manipulation
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-| -DUP  |( n --\> n ? )               |fig|Duplicate only if non-zero|
-| \>R    |( n --\> )                   |fig|Move top item to "return stack" for temporary storage (use caution)|
-| DUP   |( n --\> n n )               |fig|Duplicate top of stack|
-| DROP  |( n --\> )                   |fig|Throw away top of stack|
-| OVER  |( n1 n2 --\> n1 n2 n1 )      |fig|Make copy of second item on top|
-| PICK  |( nm...n1 --\> nm...n1 nm )  |ext|Pick the mth item into the stack and copy it to the top of the stack|
-| R\>    |( --\> n )                   |fig|Retrieve item from return stack|
-| R     |( --\> n )                   |fig|Copy top of return stack onto stack|
-| ROT   |( n1 n2 n3 --\> n2 n3 n1 )   |fig|Rotate third item to top|
-| SWAP  |( n1 n2 --\> n2 n1 )         |fig|Reverse top two stack items|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| -DUP | ( n --\> n ? ) | fig   | Duplicate only if non-zero
+| \>R   | ( n --\> ) | fig   | Move top item to "return stack" for temporary storage (use caution)
+| DUP  | ( n --\> n n ) | fig   | Duplicate top of stack
+| DROP | ( n --\> ) | fig   | Throw away top of stack
+| OVER | ( n1 n2 --\> n1 n2 n1 ) | fig   | Make copy of second item on top
+| PICK | ( nm...n1 --\> nm...n1 nm ) | ext   | Pick the mth item into the stack and copy it to the top of the stack
+| R\>   | ( --\> n ) | fig   | Retrieve item from return stack
+| R    | ( --\> n ) | fig   | Copy top of return stack onto stack
+| ROT  | ( n1 n2 n3 --\> n2 n3 n1 ) | fig   | Rotate third item to top
+| SWAP | ( n1 n2 --\> n2 n1 ) | fig   | Reverse top two stack items
 
 ### Number Bases
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-| BASE    | ( --\> addr )             |fig|System variable containing number base.|
-| DECIMAL | ( --\> )                  |fig|Set decimal base.|
-| HEX     | ( --\> )                  |fig|Set hexadecimal base.|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| BASE | ( --\> addr ) | fig   | System variable containing number base.
+| DECIMAL | ( --\> )  | fig   | Set decimal base.
+| HEX  | ( --\> )  | fig   | Set hexadecimal base.
 
 ### Arithmetic and Logical
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|\*       |( n1 n2 --\> prod )            |fig|Multiply.|
-|*/      |( n1 n2 n3 --\> quot )         |fig|Multiply, then divide (n1*n2/n3), using double-precision intermediate.|
-|*/MOD   |( n1 n2 n3 --\> rem quot )     |fig|Multiply, then divide (n1*n2/n3), using double-precision intermediate.|
-|+       |( n1 n2 --\> sum )             |fig|Add.|
-|-       |( n1 n2 --\> diff )            |fig|Subtract (n1-n2).|
-|/       |( n1 n2 --\> quot )            |fig|Divide (n1/n2).|
-|/MOD    |( n1 n2 --\> rem quot )        |fig|Divide (n1/n2), giving both remainder and quotient.|
-|1+      |( n --\> n+1 )                 |fig|Increment number by 1.|
-|2+      |( n --\> n+2 )                 |fig|Increment number by 2.|
-|ABS     |( n --\> absolute )            |fig|Absolute value of n.|
-|AND     |( n1 n2 --\> and )             |fig|Logical AND (bitwise).|
-|D+      |( d1 d2 --\> sum )             |fig|Add double-precision numbers.|
-|D+-     |( d1 n --\> d2 )               |fig|Apply the sign of n to d1, leaving it as d2.|
-|DABS    |( d --\> absolute )            |fig|Absolute value of double precision number.|
-|DMINUS  |( d --\> -d )                  |fig|Change sign of double-precision number.|
-|M\*      |( n1 n2 --\> d )               |fig|Multiplies two numbers, producing a double-precision number.|
-|M/      |( d n1 --\> rem quot )         |fig|Divide double precision number by single precision number, producing single-precision numbers.|
-|M/MOD   |( ud1 u2 --\> u3 ud4 )         |fig|Unsigned divide of double-precision number, producing single precision remainder(u3) and double-precision quotient(ud4).|
-|MAX     |( n1 n2 --\> max )             |fig|Maximum of n1 and n2.|
-|MIN     |( n1 n2 --\> min )             |fig|Minimum of n1 and n2.|
-|MINUS   |( n --\> -n )                  |fig|Change sign of number.|
-|MOD     |( n1 n2 --\> rem )             |fig|Modulo (i.e. remainder of n1/n2).|
-|OR      |( n1 n2 --\> or )              |fig|Logical OR (bitwise).|
-|U\*      |( u1 u2 --\> ud )              |fig|Unsigned multiplication of two numbers, producing unsigned double-precision number.|
-|U/      |( ud u1 --\> u2 u3 )           |fig|Unsigned divide of double-precision number by single-precision number, producing unsigned remainder (u2) and quotient (u3)|
-|XOR     |( n1 n2 --\> xor )             |fig|Logical exclusive OR (bitwise).|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| \*    | ( n1 n2 --\> prod ) | fig   | Multiply.
+| \*/   | ( n1 n2 n3 --\> quot ) | fig   | Multiply, then divide (n1\*n2/n3), using double-precision intermediate.
+| \*/MOD | ( n1 n2 n3 --\> rem quot ) | fig   | Multiply, then divide (n1\*n2/n3), using double-precision intermediate.
+| +    | ( n1 n2 --\> sum ) | fig   | Add.
+| -    | ( n1 n2 --\> diff ) | fig   | Subtract (n1-n2).
+| /    | ( n1 n2 --\> quot ) | fig   | Divide (n1/n2).
+| /MOD | ( n1 n2 --\> rem quot ) | fig   | Divide (n1/n2), giving both remainder and quotient.
+| 1+   | ( n --\> n+1 ) | fig   | Increment number by 1.
+| 2+   | ( n --\> n+2 ) | fig   | Increment number by 2.
+| ABS  | ( n --\> absolute ) | fig   | Absolute value of n.
+| AND  | ( n1 n2 --\> and ) | fig   | Logical AND (bitwise).
+| D+   | ( d1 d2 --\> sum ) | fig   | Add double-precision numbers.
+| D+-  | ( d1 n --\> d2 ) | fig   | Apply the sign of n to d1, leaving it as d2.
+| DABS | ( d --\> absolute ) | fig   | Absolute value of double precision number.
+| DMINUS | ( d --\> -d ) | fig   | Change sign of double-precision number.
+| M\*   | ( n1 n2 --\> d ) | fig   | Multiplies two numbers, producing a double-precision number.
+| M/   | ( d n1 --\> rem quot ) | fig   | Divide double precision number by single precision number, producing single-precision numbers.
+| M/MOD | ( ud1 u2 --\> u3 ud4 ) | fig   | Unsigned divide of double-precision number, producing single precision remainder(u3) and double-precision quotient(ud4).
+| MAX  | ( n1 n2 --\> max ) | fig   | Maximum of n1 and n2.
+| MIN  | ( n1 n2 --\> min ) | fig   | Minimum of n1 and n2.
+| MINUS | ( n --\> -n ) | fig   | Change sign of number.
+| MOD  | ( n1 n2 --\> rem ) | fig   | Modulo (i.e. remainder of n1/n2).
+| OR   | ( n1 n2 --\> or ) | fig   | Logical OR (bitwise).
+| U\*   | ( u1 u2 --\> ud ) | fig   | Unsigned multiplication of two numbers, producing unsigned double-precision number.
+| U/   | ( ud u1 --\> u2 u3 ) | fig   | Unsigned divide of double-precision number by single-precision number, producing unsigned remainder (u2) and quotient (u3)
+| XOR  | ( n1 n2 --\> xor ) | fig   | Logical exclusive OR (bitwise).
 
 ### Comparison
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|0\<            |( n --\> f )                   |fig|True if number is negative.|
-|0=            |( n --\> f )                   |fig|True if top number zero (i.e., reverses truth value).|
-|\<             |( n1 n2 --\> f )               |fig|True if n1 less than n2.|
-|=             |( n1 n2 --\> f )               |fig|True if n1 equals n2.|
-|\>             |( n1 n2 --\> f )               |fig|True if n1 greater than n2.|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| 0\<   | ( n --\> f ) | fig   | True if number is negative.
+| 0=   | ( n --\> f ) | fig   | True if top number zero (i.e., reverses truth value).
+| \<    | ( n1 n2 --\> f ) | fig   | True if n1 less than n2.
+| =    | ( n1 n2 --\> f ) | fig   | True if n1 equals n2.
+| \>    | ( n1 n2 --\> f ) | fig   | True if n1 greater than n2.
 
 ### Memory
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|!             |( n addr --\> )                |fig|Store word value at address in memory.|
-|+!            |( n addr --\> )                |fig|Add number to value of word at address in memory.|
-|\<CMOVE        |( from to n --\> )             |SYS|Like CMOVE, except bytes moved starting at high address first.|
-|?             |( addr --\> )                  |fig|Print numeric value of word at address in memory.|
-|@             |( addr --\> n )                |fig|Fetch one word from memory at indicated address.|
-|BLANKS        |( addr u --\> )                |fig|Fill u bytes in memory with blanks.|
-|C!            |( b addr --\> )                |fig|Store byte value at address in memory.|
-|C@            |( addr --\> b )                |fig|Fetch one byte at address from memory.|
-|CMOVE         |( from to u --\> )             |fig|Move u bytes in memory.|
-|ERASE         |( addr u --\> )                |fig|Fill u bytes in memory with zeroes.|
-|FILL          |( addr u b --\> )              |fig|Fill u bytes in memory with a byte value.|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| !    | ( n addr --\> ) | fig   | Store word value at address in memory.
+| +!   | ( n addr --\> ) | fig   | Add number to value of word at address in memory.
+| \<CMOVE | ( from to n --\> ) | SYS   | Like CMOVE, except bytes moved starting at high address first.
+| ?    | ( addr --\> ) | fig   | Print numeric value of word at address in memory.
+| @    | ( addr --\> n ) | fig   | Fetch one word from memory at indicated address.
+| BLANKS | ( addr u --\> ) | fig   | Fill u bytes in memory with blanks.
+| C!   | ( b addr --\> ) | fig   | Store byte value at address in memory.
+| C@   | ( addr --\> b ) | fig   | Fetch one byte at address from memory.
+| CMOVE | ( from to u --\> ) | fig   | Move u bytes in memory.
+| ERASE | ( addr u --\> ) | fig   | Fill u bytes in memory with zeroes.
+| FILL | ( addr u b --\> ) | fig   | Fill u bytes in memory with a byte value.
 
 ### Control Structures
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|BEGIN  ...UNTIL        |until: ( f --\> )              |fig|Loop back to BEGIN until true at UNTIL.|
-|BEGIN  ...REPEAT       |while: ( f --\> )              |fig|Loop while true at WHILE.     ...WHILE.|
-|DO...+LOOP    |do: ( end+1 start --\> )  +loop: ( n--\> )     |fig|Like DO...LOOP, except adds stack value to index at end of loop.|
-|DO...LOOP     |do: ( end+1 start --\> )       |fig|Set up loop, given index range.|
-|I             |( --\> index )                 |fig|Place current index value on stack.|
-|IF...(true)  ...ENDIF  |if: ( f --\> )        |fig|If top of stack is true (non-zero), execute.|
-|IF...(true)  ELSE...(false) ...ENDIF  |if: ( f --\> )   |fig|Like IF...ENDIF, except if false, the ELSE clause is executed.|
-|LEAVE         |( --\> )                       |fig|Terminate loop at next LOOP or +LOOP.|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| BEGIN  ...UNTIL | until: ( f --\> ) | fig   | Loop back to BEGIN until true at UNTIL.
+| BEGIN  ...REPEAT | while: ( f --\> ) | fig   | Loop while true at WHILE.     ...WHILE.
+| DO...+LOOP | do: ( end+1 start --\> )  +loop: ( n--\> ) | fig   | Like DO...LOOP, except adds stack value to index at end of loop.
+| DO...LOOP | do: ( end+1 start --\> ) | fig   | Set up loop, given index range.
+| I    | ( --\> index ) | fig   | Place current index value on stack.
+| IF...(true)  ...ENDIF | if: ( f --\> ) | fig   | If top of stack is true (non-zero), execute.
+| IF...(true)  ELSE...(false) ...ENDIF | if: ( f --\> ) | fig   | Like IF...ENDIF, except if false, the ELSE clause is executed.
+| LEAVE | ( --\> )  | fig   | Terminate loop at next LOOP or +LOOP.
 
 ### Terminal Input-Output
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|.             |( n --\> )                     |fig|Print number.|
-|."            |( --\> )                       |fig|Print message (terminated by ").|
-|.R            |( n fieldwidth --\> )          |fig|Print number, right-justified in field.|
-|?TERMINAL     |( --\> f )                     |fig|True if terminal break request present.|
-|BELL          |( --\> )                       |SYS|Ring console bell.|
-|BL            |( --\> n )                     |fig|Leaves the .ATASCII. value of blank on the stack.|
-|COUNT         |( addr --\> addr+1 u )         |fig|Change length-byte string to TYPE form.|
-|CR            |( --\> )                       |fig|Do a carriage return.|
-|D.            |( d --\> )                     |fig|Print double-precision number.|
-|D.R           |( d fieldwidth --\> )          |fig|Print double-precision number, right-justified in field.|
-|DUMP          |( addr u --\> )                |SYS|Dump u .bytes. starting at address.|
-|EMIT          |( c --\> )                     |fig|Type character c.|
-|EXPECT        |( addr n --\> )                |fig|Read n characters (or until a carriage return) from input to address.|
-|KEY           |( --\> c )                     |fig|Read key, put .ATASCII. value on stack.|
-|PR-OFF        |( --\> )                       |SYS|Turn the printer off (for terminal I/O).|
-|PR-ON         |( --\> )                       |SYS|Turn the printer on (for terminal I/O).  All output from TYPE, EMIT, etc. will appear on the screen and the printer.  All keyboard input will also be echoed on the printer.|
-|SPACE         |( --\> )                       |fig|Type a space.|
-|SPACES        |( n --\> )                     |fig|Type n spaces.|
-|SPEMIT        |( c --\> )                     |SYS|Allows special characters to be sent to the screen.|
-|TYPE          |( addr u --\> )                |fig|Type string of u characters starting at address.|
-|U.            |( u --\> )                     |SYS|Type the unsigned number.|
-|WORD          |( c --\> )                     |fig|Read one word from input stream, stopping at character c (usually blank).|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| .    | ( n --\> ) | fig   | Print number.
+| ."   | ( --\> )  | fig   | Print message (terminated by ").
+| .R   | ( n fieldwidth --\> ) | fig   | Print number, right-justified in field.
+| ?TERMINAL | ( --\> f ) | fig   | True if terminal break request present.
+| BELL | ( --\> )  | SYS   | Ring console bell.
+| BL   | ( --\> n ) | fig   | Leaves the .ATASCII. value of blank on the stack.
+| COUNT | ( addr --\> addr+1 u ) | fig   | Change length-byte string to TYPE form.
+| CR   | ( --\> )  | fig   | Do a carriage return.
+| D.   | ( d --\> ) | fig   | Print double-precision number.
+| D.R  | ( d fieldwidth --\> ) | fig   | Print double-precision number, right-justified in field.
+| DUMP | ( addr u --\> ) | SYS   | Dump u .bytes. starting at address.
+| EMIT | ( c --\> ) | fig   | Type character c.
+| EXPECT | ( addr n --\> ) | fig   | Read n characters (or until a carriage return) from input to address.
+| KEY  | ( --\> c ) | fig   | Read key, put .ATASCII. value on stack.
+| PR-OFF | ( --\> )  | SYS   | Turn the printer off (for terminal I/O).
+| PR-ON | ( --\> )  | SYS   | Turn the printer on (for terminal I/O).  All output from TYPE, EMIT, etc. will appear on the screen and the printer.  All keyboard input will also be echoed on the printer.
+| SPACE | ( --\> )  | fig   | Type a space.
+| SPACES | ( n --\> ) | fig   | Type n spaces.
+| SPEMIT | ( c --\> ) | SYS   | Allows special characters to be sent to the screen.
+| TYPE | ( addr u --\> ) | fig   | Type string of u characters starting at address.
+| U.   | ( u --\> ) | SYS   | Type the unsigned number.
+| WORD | ( c --\> ) | fig   | Read one word from input stream, stopping at character c (usually blank).
 
 ### Input-Output Formatting
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|#             |( d --\> d )                   |fig|Convert next digit of double-precision number and add character to output string.|
-|#\>            |( d --\> addr u )              |fig|Terminate output string (ready for TYPE).|
-|#S            |( d --\> 0 0 )                 |fig|Convert all significant digits of double-precision number to output string.|
-|\<#            |( --\> )                       |fig|Start output string.|
-|HOLD          |( c --\> )                     |fig|Insert .ATASCII. character into output string.|
-|NUMBER        |( addr - d )                  |fig|Convert string at address to double-precision number.|
-|SIGN          |( n d --\> d )                 |fig|Insert sign of n into output string.|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| #    | ( d --\> d ) | fig   | Convert next digit of double-precision number and add character to output string.
+| #\>   | ( d --\> addr u ) | fig   | Terminate output string (ready for TYPE).
+| #S   | ( d --\> 0 0 ) | fig   | Convert all significant digits of double-precision number to output string.
+| \<#   | ( --\> )  | fig   | Start output string.
+| HOLD | ( c --\> ) | fig   | Insert .ATASCII. character into output string.
+| NUMBER | ( addr - d ) | fig   | Convert string at address to double-precision number.
+| SIGN | ( n d --\> d ) | fig   | Insert sign of n into output string.
 
 ### Disk Handling
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|B/BUF         |( --\> n )                    |FIG|System constant giving disk block size in bytes|
-|B/SCR         |( --\> n )                    |FIG|System constant giving blocks per editing screen|
-|BLK           |( --\> addr )                 |FIG|System variable containing current block number|
-|BLOCK         |( block --\> addr )           |FIG|Read disk block to memory address|
-|DR0           |( --\> )                      |FIG|Selects use of .file. 0 for LIST, LOAD, and .EDIT.|
-|DR1           |( --\> )                      |FIG|Selects use of .file. 1 for LIST, LOAD, and .EDIT.|
-|EMPTY-BUFFERS |( --\> )                      |FIG|Erase all buffers|
-|FLUSH         |( --\> )                      |FIG|Write all updated buffers to disk|
-|INDEX         |( from to --\> )              |FIG|Lists the first line of the screens indicated|
-|LIST          |( screen --\> )               |FIG|List a disk screen (.512 bytes.)|
-|LOAD          |( screen --\> )               |FIG|Load disk screen (compile or execute)|
-|PLIST         |( strt end --\> )             |SYS|List the screens from strt to end to the printer (and screen)|
-|SCR           |( --\> addr )                 |FIG|System variable containing current screen number|
-|UPDATE        |( --\> )                      |FIG|Mark last buffer accessed as updated|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| B/BUF | ( --\> n ) | FIG   | System constant giving disk block size in bytes
+| B/SCR | ( --\> n ) | FIG   | System constant giving blocks per editing screen
+| BLK  | ( --\> addr ) | FIG   | System variable containing current block number
+| BLOCK | ( block --\> addr ) | FIG   | Read disk block to memory address
+| DR0  | ( --\> )  | FIG   | Selects use of .file. 0 for LIST, LOAD, and .EDIT.
+| DR1  | ( --\> )  | FIG   | Selects use of .file. 1 for LIST, LOAD, and .EDIT.
+| EMPTY-BUFFERS | ( --\> )  | FIG   | Erase all buffers
+| FLUSH | ( --\> )  | FIG   | Write all updated buffers to disk
+| INDEX | ( from to --\> ) | FIG   | Lists the first line of the screens indicated
+| LIST | ( screen --\> ) | FIG   | List a disk screen (.512 bytes.)
+| LOAD | ( screen --\> ) | FIG   | Load disk screen (compile or execute)
+| PLIST | ( strt end --\> ) | SYS   | List the screens from strt to end to the printer (and screen)
+| SCR  | ( --\> addr ) | FIG   | System variable containing current screen number
+| UPDATE | ( --\> )  | FIG   | Mark last buffer accessed as updated
 
 ### Defining Words
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|: xxx       f pointer to context vocabulary (searched first)|
-|CURRENT       |( --\> addr )                 |FIG|Returns address of pointer to current vocabulary (where new definitions are put)|
-|DEFINITIONS   |( --\> )                      |FIG|Sets CURRENT vocabulary to CONTEXT|
-|FORTH         |( --\> )                      |FIG|Main Forth vocabulary (execution of FORTH sets CONTEXT vocabulary)|
-|VLIST         |( --\> )                      |FIG|Print names of all words in CONTEXT vocabulary|
-|VOCABULARY    |( --\> )                      |FIG|Create new vocabulary named xxx|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| : xxx       f pointer to context vocabulary (searched first) |          |       | 
+| CURRENT | ( --\> addr ) | FIG   | Returns address of pointer to current vocabulary (where new definitions are put)
+| DEFINITIONS | ( --\> )  | FIG   | Sets CURRENT vocabulary to CONTEXT
+| FORTH | ( --\> )  | FIG   | Main Forth vocabulary (execution of FORTH sets CONTEXT vocabulary)
+| VLIST | ( --\> )  | FIG   | Print names of all words in CONTEXT vocabulary
+| VOCABULARY | ( --\> )  | FIG   | Create new vocabulary named xxx
 
 ### Miscellaneous and System
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|' xxx         |( --\> addr )                 |FIG|Find address of xxx in dictionary; if used in definition, compile address|
-|(             |( --\> )                      |FIG|Begin comment, terminated by right paren on same line; space after (|
-|,             |( n --\> )                    |FIG|Compile a number into the dictionary|
-|ABORT         |( --\> )                      |FIG|Error termination of operation|
-|ADDBLKS       |( 0/1 n --\> )                |EDIT|Adds n blocks (screens) to the end of DR0(0) or DR1(1)|
-|ALLOT         |( --\> )                      |FIG|Leave a gap of n bytes in the dictionary|
-|COLD          |( --\> )                      |FIG|Performs a system cold start (erases application program and restarts)|
-|EDIT          |( n --\> )                    |EDIT|Enters screen editor for screen n of the current file (DR0/DR1)|
-|FORGET xxx    |( --\> )                      |FIG|Forget all definitions back to and including xxx|
-|FORMAT        |( filespec -$\> )             |FORM|Read the file, and format the text on the screen or printer|
-|FREE          |( --\> n )                    |SYS|Returns the number of free bytes left in memory|
-|HERE          |( --\> addr )                 |FIG|Returns address of next unused byte in the dictionary|
-|IN            |( --\> addr )                 |FIG|System variable containing offset into input buffer (used by WORD)|
-|NEW-ABORT     |( --\> )                      |SYS|This word is used when compiling another word that is to be executed on a warm-reset (like the SYSTEM RESET key).  This word should be the very first word in a colon definition.  The remainder of the new word definition will be executed each warm-restart|
-|PAD           |( --\> addr )                 |FIG|Returns address of scratch area (usually 68 bytes beyond HERE)|
-|SP@           |( n --\> )                    |FIG|Returns address of top stack item|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| ' xxx | ( --\> addr ) | FIG   | Find address of xxx in dictionary; if used in definition, compile address
+| (    | ( --\> )  | FIG   | Begin comment, terminated by right paren on same line; space after (
+| ,    | ( n --\> ) | FIG   | Compile a number into the dictionary
+| ABORT | ( --\> )  | FIG   | Error termination of operation
+| ADDBLKS | ( 0/1 n --\> ) | EDIT  | Adds n blocks (screens) to the end of DR0(0) or DR1(1)
+| ALLOT | ( --\> )  | FIG   | Leave a gap of n bytes in the dictionary
+| COLD | ( --\> )  | FIG   | Performs a system cold start (erases application program and restarts)
+| EDIT | ( n --\> ) | EDIT  | Enters screen editor for screen n of the current file (DR0/DR1)
+| FORGET xxx | ( --\> )  | FIG   | Forget all definitions back to and including xxx
+| FORMAT | ( filespec -$\> ) | FORM  | Read the file, and format the text on the screen or printer
+| FREE | ( --\> n ) | SYS   | Returns the number of free bytes left in memory
+| HERE | ( --\> addr ) | FIG   | Returns address of next unused byte in the dictionary
+| IN   | ( --\> addr ) | FIG   | System variable containing offset into input buffer (used by WORD)
+| NEW-ABORT | ( --\> )  | SYS   | This word is used when compiling another word that is to be executed on a warm-reset (like the SYSTEM RESET key).  This word should be the very first word in a colon definition.  The remainder of the new word definition will be executed each warm-restart
+| PAD  | ( --\> addr ) | FIG   | Returns address of scratch area (usually 68 bytes beyond HERE)
+| SP@  | ( n --\> ) | FIG   | Returns address of top stack item
 
 ### String Functions
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|" text"       |( -$\> $ )                    |SYS|Pushes a string constant on top of the str ng stack|
-|""            |( -$\> $ )                    |SYS|Push the empty string on top of the string stack|
-|!            |( vaddr --\> )  ( $ -$\> )     |SYS|Store the string at the top of the string stack into the string variable|
-|+            |( $1 $2 -$\> $1+$2 )          |SYS|Concatenate the top two strings on the string stack|
-|+!           |( vaddr --\> )  ( $ -$\> )     |SYS|Concatenate the top string of the string stack onto the end of the string variable|
-|.            |( $ -$\> )                    |SYS|Type the string at the top of the string stack|
-|\<            |( --\> f )  ( $1 $2 -$\> )     |SYS|Compare the top two strings on the string stack and return true if $1 \< $2|
-|=            |( --\> f )  ( $1 $2 -$\> )     |SYS|Compare the top two strings on the string stack and return true if $1 = $2|
-|@            |( vaddr --\> )  ( -$\> $ )     |SYS|Fetch the string from the string variable, and place it on top of the string stack|
-|COMPARE      |( --\> n ) ( $1 $2 -$\> )      |SYS|Compare the top two strings on top of the string stack.  Return 1, 0, -1|
-|DROP         |( $2 $1 -$\> $2 )             |SYS|Drop top value from string stack|
-|DUP          |( $1 -$\> $1 $1 )             |SYS|Duplicate the string at the top of the string stack|
-|EXTRACT      |( vaddr offset char --\> offset true ) ( -$\> wd )  --\> false ) ( -$\> )       |SYS|  Extracts substrings from a string, starting at the offset within the string looking for the next occurrence of the character.  If there is another of the character (or a substring between the offset and the end of the string variable), then true is returned along with the new offset.  Otherwise false is returned.  This function is useful to extract words from a sentence.|
-|FETCH        |( addr len --\> ) ( -$\> $ )   |SYS|Fetch the string starting at the address, with its length as indicated, and place it on the top of the string stack|
-|FILL         |( n c --\> ) ( -$\> $ )        |SYS|Create a string at the top of the string stack which has n characters (c)|
-|LEN          |( --\> n )                    |SYS|Return length of the string on top of the string stack|
-|P!           |( --\> )                      |SYS|Reset string stack pointer|
-|P@           |( --\> n )                    |SYS|Returns value of string stack pointer|
-|P2           |( --\> n )                    |SYS|Return the address of the 2nd string on the string stack (the string below the top string)|
-|STORE        |( addr max --\> actlen ) ( $ -$\> )  |SYS|Store the string on top of the string stack at the indicated address.  The string will be stored up to the indicated maximum, the actual length of the string stored will be returned on top of the stack|
-|SWAP         |( $1 $2 -$\> $2 $1 )          |SYS|Swap the top two strings on the string stack|
-|VARFILL      |( vaddr c --\> )              |SYS|Fill the string variable with the character (c)|
-|VARIABLE xx  |( len --\> )                  |SYS|Creates a string variable with maximum length as indicated|
-|VARLEN       |( vaddr --\> len )            |SYS|Return the length of the string currently in the string variable|
-|VARMAX       |( vaddr --\> max )            |SYS|Return the maximum string length of the string variable|
-|*$*           |( --\> )                      |SYS|Variable containing the size of the string stack (512 byte default)|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| " text" | ( -$\> $ ) | SYS   | Pushes a string constant on top of the str ng stack
+| ""   | ( -$\> $ ) | SYS   | Push the empty string on top of the string stack
+| !    | ( vaddr --\> )  ( $ -$\> ) | SYS   | Store the string at the top of the string stack into the string variable
+| +    | ( $1 $2 -$\> $1+$2 ) | SYS   | Concatenate the top two strings on the string stack
+| +!   | ( vaddr --\> )  ( $ -$\> ) | SYS   | Concatenate the top string of the string stack onto the end of the string variable
+| .    | ( $ -$\> ) | SYS   | Type the string at the top of the string stack
+| \<    | ( --\> f )  ( $1 $2 -$\> ) | SYS   | Compare the top two strings on the string stack and return true if $1 \< $2
+| =    | ( --\> f )  ( $1 $2 -$\> ) | SYS   | Compare the top two strings on the string stack and return true if $1 = $2
+| @    | ( vaddr --\> )  ( -$\> $ ) | SYS   | Fetch the string from the string variable, and place it on top of the string stack
+| COMPARE | ( --\> n ) ( $1 $2 -$\> ) | SYS   | Compare the top two strings on top of the string stack.  Return 1, 0, -1
+| DROP | ( $2 $1 -$\> $2 ) | SYS   | Drop top value from string stack
+| DUP  | ( $1 -$\> $1 $1 ) | SYS   | Duplicate the string at the top of the string stack
+| EXTRACT | ( vaddr offset char --\> offset true ) ( -$\> wd )  --\> false ) ( -$\> ) | SYS   | Extracts substrings from a string, starting at the offset within the string looking for the next occurrence of the character.  If there is another of the character (or a substring between the offset and the end of the string variable), then true is returned along with the new offset.  Otherwise false is returned.  This function is useful to extract words from a sentence.
+| FETCH | ( addr len --\> ) ( -$\> $ ) | SYS   | Fetch the string starting at the address, with its length as indicated, and place it on the top of the string stack
+| FILL | ( n c --\> ) ( -$\> $ ) | SYS   | Create a string at the top of the string stack which has n characters (c)
+| LEN  | ( --\> n ) | SYS   | Return length of the string on top of the string stack
+| P!   | ( --\> )  | SYS   | Reset string stack pointer
+| P@   | ( --\> n ) | SYS   | Returns value of string stack pointer
+| P2   | ( --\> n ) | SYS   | Return the address of the 2nd string on the string stack (the string below the top string)
+| STORE | ( addr max --\> actlen ) ( $ -$\> ) | SYS   | Store the string on top of the string stack at the indicated address.  The string will be stored up to the indicated maximum, the actual length of the string stored will be returned on top of the stack
+| SWAP | ( $1 $2 -$\> $2 $1 ) | SYS   | Swap the top two strings on the string stack
+| VARFILL | ( vaddr c --\> ) | SYS   | Fill the string variable with the character (c)
+| VARIABLE xx | ( len --\> ) | SYS   | Creates a string variable with maximum length as indicated
+| VARLEN | ( vaddr --\> len ) | SYS   | Return the length of the string currently in the string variable
+| VARMAX | ( vaddr --\> max ) | SYS   | Return the maximum string length of the string variable
+| *$*    | ( --\> )  | SYS   | Variable containing the size of the string stack (512 byte default)
 
 ### ATARI Input/Output(CIO) Functions
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|#0            |( --\> )                      |SYS|Iocb offset for #0|
-|#3            |( --\> )                      |SYS|Iocb offset for #3|
-|#4            |( --\> )                      |SYS|Iocb offset for #4|
-|#5            |( --\> )                      |SYS|Iocb offset for #5|
-|#6            |( --\> )                      |SYS|Iocb offset for #6|
-|FILE         |( --\> addr ) ( $ -$\> $+EOL ) |SYS|Makes the string at the top of the string stack into a file name (terminated by an EOL) and returns the starting address on top of the stack.  This file name can now be used by CIO functions (OPEN, XIO)|
-|(STAT)        |( --\> n )                    |ext|Status of previous CIO call|
-|?DISKERROR    |( --\> )                      |ext|Aborts and prints an error message if the previous CIO operation had an error|
-|CLOSE         |( iocb --\> )                 |ext|Closes file using iocb|
-|GET           |( iocb --\> b )               |ext|Gets a single byte using the given iocb.  Check (STAT) for End-Of-File|
-|GETBUF        |( iocb addr len --\> actlen ) |ext|Performs a get buffer operation using the indicated iocb.  The buffer starts at the indicated address and has the indicated length.  The transfer will end when the buffer is full, or the end-of-file is reached.  The actual length of the data transferred will be returned on the stack|
-|GETREC        |( iocb addr len --\> actlen ) |ext|Same as GETBUF, except the transfer will be terminated at an EOL (End Of Line).  This is a get record operation|
-|JSRCIO        |( iocb cmd --\> )             |ext|Performs a call to the Operating System CIO routine.  Iocb is the I/O Control block offset and cmd is the CIO command code.  The status is stored in (STAT)|
-|NOTE          |( iocb --\> sector disp )     |ext|Notes position in disk file|
-|OPEN          |( iocb aux1 aux2 nameaddr --\> )   |ext|Opens file using iocb, 2 auxilliary bytes (see CIO), and name (terminated by EOL)|
-|POINT         |( iocb sector disp --\> )     |ext|Points to position in disk file|
-|PUT           |( iocb b --\> )               |ext|Output a single byte using the iocb|
-|PUTBUF        |( iocb addr len --\> )        |ext|Outputs the buffer using the iocb.  The buffer starts at the indicated address and has the given length.|
-|PUTREC        |( iocb addr len --\> )        |ext|Outputs the record starting at the address, with given length.  The record will be terminated by an EOL|
-|STATUS        |( iocb --\> status )          |ext|Performs a status I/O operation using given iocb|
-|XIO           |( cmd iocb aux1 aux2 addr  --\> )   |SYS|Sames as BASIC XIO function.  Calls CIO|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| #0   | ( --\> )  | SYS   | Iocb offset for #0
+| #3   | ( --\> )  | SYS   | Iocb offset for #3
+| #4   | ( --\> )  | SYS   | Iocb offset for #4
+| #5   | ( --\> )  | SYS   | Iocb offset for #5
+| #6   | ( --\> )  | SYS   | Iocb offset for #6
+| FILE | ( --\> addr ) ( $ -$\> $+EOL ) | SYS   | Makes the string at the top of the string stack into a file name (terminated by an EOL) and returns the starting address on top of the stack.  This file name can now be used by CIO functions (OPEN, XIO)
+| (STAT) | ( --\> n ) | ext   | Status of previous CIO call
+| ?DISKERROR | ( --\> )  | ext   | Aborts and prints an error message if the previous CIO operation had an error
+| CLOSE | ( iocb --\> ) | ext   | Closes file using iocb
+| GET  | ( iocb --\> b ) | ext   | Gets a single byte using the given iocb.  Check (STAT) for End-Of-File
+| GETBUF | ( iocb addr len --\> actlen ) | ext   | Performs a get buffer operation using the indicated iocb.  The buffer starts at the indicated address and has the indicated length.  The transfer will end when the buffer is full, or the end-of-file is reached.  The actual length of the data transferred will be returned on the stack
+| GETREC | ( iocb addr len --\> actlen ) | ext   | Same as GETBUF, except the transfer will be terminated at an EOL (End Of Line).  This is a get record operation
+| JSRCIO | ( iocb cmd --\> ) | ext   | Performs a call to the Operating System CIO routine.  Iocb is the I/O Control block offset and cmd is the CIO command code.  The status is stored in (STAT)
+| NOTE | ( iocb --\> sector disp ) | ext   | Notes position in disk file
+| OPEN | ( iocb aux1 aux2 nameaddr --\> ) | ext   | Opens file using iocb, 2 auxilliary bytes (see CIO), and name (terminated by EOL)
+| POINT | ( iocb sector disp --\> ) | ext   | Points to position in disk file
+| PUT  | ( iocb b --\> ) | ext   | Output a single byte using the iocb
+| PUTBUF | ( iocb addr len --\> ) | ext   | Outputs the buffer using the iocb.  The buffer starts at the indicated address and has the given length.
+| PUTREC | ( iocb addr len --\> ) | ext   | Outputs the record starting at the address, with given length.  The record will be terminated by an EOL
+| STATUS | ( iocb --\> status ) | ext   | Performs a status I/O operation using given iocb
+| XIO  | ( cmd iocb aux1 aux2 addr  --\> ) | SYS   | Sames as BASIC XIO function.  Calls CIO
 
 ### ATARI Forth File Functions
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|LOAD         |( filespec -$\> )             |SYS|Open the file as DR1, select DR1, and load the file (starting at screen 1)|
-|SETDR0       |( filespec -$\> )             |SYS|Open the file as DR0|
-|SETDR1       |( filespec -$\> )             |SYS|Open the file as DR1|
-|LOAD-ED       |( --\> )                      |SYS|Load the screen editor from EDITOR.4TH|
-|LOAD-DOS      |( --\> )                      |SYS|Load the DOS utilities from DOS.4TH|
-|LOAD-TURN     |( --\> )                      |SYS|Load the turnkey software generator from TURNKEY.4TH|
-|TURNKEY       |( filespec -$\> )             |SYS|Save the current loaded Forth words (including the entire Forth program, but not including the DOS from DOS.SYS)|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| LOAD | ( filespec -$\> ) | SYS   | Open the file as DR1, select DR1, and load the file (starting at screen 1)
+| SETDR0 | ( filespec -$\> ) | SYS   | Open the file as DR0
+| SETDR1 | ( filespec -$\> ) | SYS   | Open the file as DR1
+| LOAD-ED | ( --\> )  | SYS   | Load the screen editor from EDITOR.4TH
+| LOAD-DOS | ( --\> )  | SYS   | Load the DOS utilities from DOS.4TH
+| LOAD-TURN | ( --\> )  | SYS   | Load the turnkey software generator from TURNKEY.4TH
+| TURNKEY | ( filespec -$\> ) | SYS   | Save the current loaded Forth words (including the entire Forth program, but not including the DOS from DOS.SYS)
 
 ### General ATARI Input/Output Functions
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|COLOR         |( color --\> )                |SYS|Selects color to use|
-|CVTSTK        |( n1 --\> n2 )                |SYS|Converts joystick value to a more usable number (0=nothing, 1=up, 2=up-right, 3=right, 4=down-right, 5=down, 6=down-left, 7=left, 8=up-left)|
-|DR.           |( x y --\> )                  |SYS|Draws a line from the current position to the X-Y coord.|
-|GR.           |( mode --\> )                 |SYS|Opens screen for graphics I/O using iocb #6|
-|LOC.          |( x y --\> value )            |SYS|Sets the cursor to the X-Y coord. and determines the color of that point|
-|PL.           |( x y --\> )                  |SYS|Sets the cursor to the X-Y coord. and plots the point|
-|POS.          |( x y --\> )                  |SYS|Sets cursor to the X-Y coord.|
-|SE.           |( reg hue lum --\> )          |SYS|Sets a color register to the indicated hue and luminosity|
-|SO.           |( voice pitch dist vol --\> ) |SYS|Sets the voice to the desired pitch, distortion and volume|
-|STICK         |( port --\> )                 |SYS|Reads the indicated joystick port (0,1,2,3)|
-|STRIG         |( port --\> f )               |SYS|Reads joystick trigger port, returns true if trigger not pushed|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| COLOR | ( color --\> ) | SYS   | Selects color to use
+| CVTSTK | ( n1 --\> n2 ) | SYS   | Converts joystick value to a more usable number (0=nothing, 1=up, 2=up-right, 3=right, 4=down-right, 5=down, 6=down-left, 7=left, 8=up-left)
+| DR.  | ( x y --\> ) | SYS   | Draws a line from the current position to the X-Y coord.
+| GR.  | ( mode --\> ) | SYS   | Opens screen for graphics I/O using iocb #6
+| LOC. | ( x y --\> value ) | SYS   | Sets the cursor to the X-Y coord. and determines the color of that point
+| PL.  | ( x y --\> ) | SYS   | Sets the cursor to the X-Y coord. and plots the point
+| POS. | ( x y --\> ) | SYS   | Sets cursor to the X-Y coord.
+| SE.  | ( reg hue lum --\> ) | SYS   | Sets a color register to the indicated hue and luminosity
+| SO.  | ( voice pitch dist vol --\> ) | SYS   | Sets the voice to the desired pitch, distortion and volume
+| STICK | ( port --\> ) | SYS   | Reads the indicated joystick port (0,1,2,3)
+| STRIG | ( port --\> f ) | SYS   | Reads joystick trigger port, returns true if trigger not pushed
 
 ### ATARI Disk Handler Functions
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|COPY          |( --\> )                       |DISK|Makes a bit copy of a disk from drive 1 to drive 2.  It reports the status of each read and write on the screen.  It will not abort if it should encounter read errors (say from a missing sector on the disk)|
-|DMP           |( sector --\> )               |DISK| Reads a disk sector into a buffer at hex 8000.  It reads the sector from drive 2.  The sector is then dumped to the screen|
-|GETSECTOR     |( drive addr sector --\> status ) |DISK| Performs a get of the sector on the indicated disk drive (1,2,3,4).  The sector (128 bytes) will be read in starting at the address.  The sector number (1 to 720) indicates the disk sector.  The status of the read will be returned on the stack|
-|PUTSECTOR     |( drive addr sector --\> status )|DISK| Writes a sector to disk.  Similar to GETSECTOR|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| COPY | ( --\> )  | DISK  | Makes a bit copy of a disk from drive 1 to drive 2.  It reports the status of each read and write on the screen.  It will not abort if it should encounter read errors (say from a missing sector on the disk)
+| DMP  | ( sector --\> ) | DISK  | Reads a disk sector into a buffer at hex 8000.  It reads the sector from drive 2.  The sector is then dumped to the screen
+| GETSECTOR | ( drive addr sector --\> status ) | DISK  | Performs a get of the sector on the indicated disk drive (1,2,3,4).  The sector (128 bytes) will be read in starting at the address.  The sector number (1 to 720) indicates the disk sector.  The status of the read will be returned on the stack
+| PUTSECTOR | ( drive addr sector --\> status ) | DISK  | Writes a sector to disk.  Similar to GETSECTOR
 
 ### ATARI DOS Functions
 
-| Word| Operands|Forth|Description
-|-|-|-|-|
-|DELETE        |( filespec -$\> )             |DOS|  Deletes the file(s).  .Warning. there will be no confirmation like normal DOS|
-|DIR           |( filespec -$\> )             |DOS|  Lists a directory of the given file(s)|
-|FORGET DOS    |( --\> )                      |DOS|  Used to forget DOS (after it has been loaded)|
-|LOCK          |( filespec -$\> )             |DOS|  Locks the file(s)|
-|RENAME        |( " Dn:file,file" -$\> )      |DOS|  Renames file(s)|
-|SCRCOPY       |( strt end --\> )  ( filespec -$\> ) |DOS|  Creates a new file, copying screens from the current file (DR0/DR1) to the new file|
-|UNLOCK        |( filespec -$\> )             |DOS|  Unlocks the file(s)|
+| Word | Operands | Forth | Description
+|------|----------|-------|-------------
+| DELETE | ( filespec -$\> ) | DOS   | Deletes the file(s).  .Warning. there will be no confirmation like normal DOS
+| DIR  | ( filespec -$\> ) | DOS   | Lists a directory of the given file(s)
+| FORGET DOS | ( --\> )  | DOS   | Used to forget DOS (after it has been loaded)
+| LOCK | ( filespec -$\> ) | DOS   | Locks the file(s)
+| RENAME | ( " Dn:file,file" -$\> ) | DOS   | Renames file(s)
+| SCRCOPY | ( strt end --\> )  ( filespec -$\> ) | DOS   | Creates a new file, copying screens from the current file (DR0/DR1) to the new file
+| UNLOCK | ( filespec -$\> ) | DOS   | Unlocks the file(s)
