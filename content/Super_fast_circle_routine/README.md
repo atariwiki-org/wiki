@@ -416,11 +416,13 @@ The routine consists of two parts: main program for calculating X and Y coordina
 A=USR(30000,POK,X,Y,R)
 ```
 
-| 30000 | Starting address of the calling routine
-| POK  | 1 (draw the circle), 0 (erase the circle)
-| X | X coordinate of the circle
-| Y | Y coordinate of the circle
-| R | Radius of the circle
+| Parameter | Description
+|-----------|-------------
+| 30000     | Starting address of the calling routine
+| POK       | 1 (draw the circle), 0 (erase the circle)
+| X         | X coordinate of the circle
+| Y         | Y coordinate of the circle
+| R         | Radius of the circle
 
 The routine is not relocatable. If you want to relocate it anyway, use assembler of your choice and assemble it to another location or amend the DATA tables in Atari BASIC program demonstration.
 
@@ -522,9 +524,9 @@ PLOT routine is written so it can be used easily from Atari BASIC program indepe
 A=USR(30179,POK,X,Y)
 ```
 
-| POK | 1 (drawing a pixel), 0 (erasing a pixel)
-| X | X coordinate of the pixel
-| Y | Y coordinate of the pixel
+\| POK \| 1 (drawing a pixel), 0 (erasing a pixel)
+\| X \| X coordinate of the pixel
+\| Y \| Y coordinate of the pixel
 
 The routine alone is not any faster than normal PLOT command from Atari BASIC, because USR command takes approximately 75% of whole execution. But, used as part of the main circle routine it does not matter anymore, because it is integrated in one larger entity. There the execution is very fast, with no overhead. PLOT routine is here for you to examine anyway. You never know if you will maybe need it in the future.
 
