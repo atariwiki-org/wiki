@@ -43,7 +43,7 @@ That's all! Enjoy! :-)
 - [Lineares Gleichungssystem 2 x 2](attachments/LGS2.atr) ; Lineares Gleichungssystem-Löser ist ein BASIC-Programm zur Lösung von 2 x 2 - Gleichungssystemen von der Zeitschrift Chip.
 - [APROX.atr](attachments/APROX.atr) ; Programm APROX von der Zeitschrift Chip zur Gleichungsfindung auf Basis von Wertepaaren.
 - [GRAPH.atr](attachments/GRAPH.atr) ; Programm GRAPH von der Zeitschrift Chip zur Darstellung von Funktionsgraphen.
-- [QGleich.atr](attachments/QGleich.atr) ; Programm QGleich von der Zeitschrift Chip zur Lösung von quadratischen Gleichungen inklusive komplexer Lösungen außerhalb der Menge |R in der komplexen Ebene |C.
+- [QGleich.atr](attachments/QGleich.atr) ; Programm QGleich von der Zeitschrift Chip zur Lösung von quadratischen Gleichungen inklusive komplexer Lösungen außerhalb der Menge ℝ in der komplexen Ebene ℂ.
 - [Integral.atr](attachments/Integral.atr) ; Programm Integral von der Zeitschrift Chip zur numerischen Berechnung von bestimmten Integralen.
 - [NULL.atr](attachments/NULL.atr) ; Programm NULL von der Zeitschrift Chip zur Auffindung von Nullstellen (Regula Falsi) von Funktionen.
 - [PRIM.atr](attachments/PRIM.atr) ; Programm PRIM von der Zeitschrift Chip zur Primfaktorzerlegung von Zahlen.
