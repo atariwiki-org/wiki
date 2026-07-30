@@ -795,7 +795,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 
 #### C
 
-- [OSS TINY-C+ Version 1.1](../Languages/C/README.md#section-C-ATRImages)
+- [C - section-C-ATRImages](../Languages/C/README.md#section-C-ATRImages)
 
 ### Forth
 
