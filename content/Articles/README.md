@@ -473,7 +473,7 @@ All of the following have no page yet
 
 ### Spiele
 
-- [WWF-Club-Spiel](../WWF-Club-Spiel/README.md)
+- [WWF-Club-Spiel](../Companies/WDR/WWF-Club-Spiel/README.md)
 - [Fehler ABC (TXG 9514)](../Companies/Atari/Atari_Germany/Fehler_abc/README.md)
 - [747 Flug-Simulator (CX 6140)](../Companies/Atari/Atari_Germany/747_Flug-Simulator/README.md)
 - [Scram](../Scram/README.md)

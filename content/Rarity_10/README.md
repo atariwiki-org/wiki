@@ -228,6 +228,6 @@ Copyright (C) 1983 NAP Consumer Electronics, Licensed from MGM/UA with the music
 - Decimals - Addition and Subtraction
 - Subtracting Mixed Fractions
 
-### [WWF-Club-Spiel](../WWF-Club-Spiel/README.md)
+### [WWF-Club-Spiel](../Companies/WDR/WWF-Club-Spiel/README.md)
 
 A cartridge used by German Television (WDR, Westdeutscher Rundfunk)in the 80's for a call-in game via telephone - programmer has lived in Hattingen/Germany

@@ -37,7 +37,7 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [ATASM](https://atari.miribilist.com/atasm/) ; MAC/65 compatible cross assembler
 - [APX-20051 Cosmatic Atari Development Package](../../Companies/Atari/Atari_Program_Exchange_APX_Software/APX-20051_Cosmatic_Atari_Development_Package/README.md) ; cross-assembler for 1802 assembly language
 - [MADS](https://mads.atari8.info/) ; powerful and modern cross assembler under constant development
-- [MC macroassembler by Microtec Research](../../MC_macroassembler_by_Microtec_Research/README.md) ; often found in Atari source code listings, therefore at least used by Atari, Inc.
+- [MC macroassembler by Microtec Research](../../Companies/Microtec_Research/MC_macroassembler_by_Microtec_Research/README.md) ; often found in Atari source code listings, therefore at least used by Atari, Inc.
 - [XASM](https://https://github.com/pfusik/xasm/) ; XASM is a 6502 cross-assembler with some syntax extensions. By default it generates binaries for Atari 8-bit computers.
 
 ## Development IDE
