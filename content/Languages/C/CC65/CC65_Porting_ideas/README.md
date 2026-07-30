@@ -5,23 +5,20 @@
 Original Distribution Info
 
 ```
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 My contact information:
 
-Ga.per Raj.ek
+Gaper Rajek
 gape.korn@volja.net
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program title:
 
 Address Book v1.0
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 File description:
 
-Adress.c        - application main file
+Adress.c   - application main file
 Adress.dat - user information
-Help.dat        - help file
+Help.dat   - help file
 ```
 
 ## Banner in C
@@ -178,13 +175,15 @@ mancala \<player 1 lookahead\> \<player 2 lookahead\>
 
 where lookahead of 0 means a human plays.  Player 1 is the top row, player 2 is the bottom.  For example.
 
-| | |   | |
-|mancala |0 |2   |means you go first, and the computer looks ahead 2 moves.|
-|mancala |4 |0   |means you go second, and the computer looks ahead 4 moves.|
-|mancala |3 |3   |Watch the computer play itself!|
-|mancala |7 |1   |Watch how badly a smart computer beats a dumb one!|
+| Command | Player 1 lookahead | Player 2 lookahead | Meaning
+|---------|--------------------|--------------------|---------
+| mancala | 0                  | 2                  | Means you go first, and the computer looks ahead 2 moves.
+| mancala | 4                  | 0                  | Means you go second, and the computer looks ahead 4 moves.
+| mancala | 3                  | 3                  | Watch the computer play itself!
+| mancala | 7                  | 1                  | Watch how badly a smart computer beats a dumb one!
 
 ABOUT THE PROGRAM
+
 ab.c is the alpha-beta search engine.  It doesn't prune or extend the searches of interesting paths.
 
 mancala.c is the "hooks" for the search engine and the user interface
@@ -343,11 +342,9 @@ But how about adding some graphical "sugar"?
 
 More on the game:
 
-http://obelix.ee.duth.gr/~apostolo/TowersOfHanoi/
-
-http://www.cut-the-knot.com/recurrence/hanoi.shtml
-
-http://www.mazeworks.com/hanoi/index.htm
+- http://obelix.ee.duth.gr/~apostolo/TowersOfHanoi/
+- http://www.cut-the-knot.com/recurrence/hanoi.shtml
+- http://www.mazeworks.com/hanoi/index.htm
 
 ## Mienv and Tierra in C
 
@@ -578,11 +575,10 @@ directory), but you do so at your peril.
 
 Hi and Assalamu Alaikum
 
-Space Dirt is a small DOS based game .
-The objectives are simple
-1\.Clean the space dirt
-2\.Hit the dirt making UFO ( or what ever u call it ) from behind
-3\.Take the help of the colored pills appearing at random
+Space Dirt is a small DOS based game. The objectives are simple
+  1. Clean the space dirt
+  2. Hit the dirt making UFO ( or what ever u call it ) from behind
+  3. Take the help of the colored pills appearing at random
 
 Can be of a great help for beginners in cpp graphics.
 Use it , abuse it I don't mind !!!!
