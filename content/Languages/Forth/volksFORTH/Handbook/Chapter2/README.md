@@ -21,16 +21,20 @@ The most striking thing about the state-FORTH-surface is the inverse status cell
 
 This status bar shows from left to right following information, where "/" for "or" position,
 
+| Information | Description
+|-------------|-------------
 | \<2/8/10/16\> | the currently valid number basis (decimal)
-| S <xx> | indicates the number of values, the readily available for processing
-| Dic <xxxx> | is called the free space
-| Scr <xx> | is the number of the current code block
-|: A / C: | is the current drive (MS-DOS)
+| S <xx>      | indicates the number of values, the readily available for processing
+| Dic <xxxx>  | is called the free space
+| Scr <xx>    | is the number of the current code block
+| : A / C:    | is the current drive (MS-DOS)
 | <name>. <ext> | Displays the name of the file being edited. Files in MS-DOS both a name and a three-letter identifier <name>, <ext> the extension, including files can be created without extension.
 | FORTH FORTH FORTH | displays the current search order according to the vocabulary concept. An example is the assembly language commands: These are located in a vocabulary called **ASSEMBLER** **assembler words** and shows them the instruction set of the assembler. Please pay attention to the right side of the status line. where now see **assembler forth forth** is. But since you now - still - do not want to use assembly language instructions, please switch with **forth** the search priority to go back. The status line shows again the familiar **forth forth** forth.
 
 For orientation in the working system is the state-standards-FORTH some words are available:
 
+| Word | Description
+|------|-------------
 | Words | command shows you the list of FORTH, the available words. The list stops at a key press with the issue or comes to an ESC.
 | Files | **MS-DOS**: shows all created in the system logical file variables that are associated handle numbers, date and time of last access and its corresponding physical DOS files. Such FORTH file is signed only by the mention of her name. The MSDOS files in the directory are displayed with **dir**.
 | Path | **MS-DOS** to date: a full Pfadunterstützung after MSDOS principle, but completely independent of it. If no path set. so there **path** nothing.
@@ -144,8 +148,9 @@ MS-DOS''''
 
 When editing, the following functions:
 
-| | Key | | function
-| F1 | gives assistance to the Editor
+| Key | Function
+|-----|----------
+| F1  | gives assistance to the Editor
 | ESC | leaves the editor with the immediate saving the changes.
 | CTRL-U | (undo) makes all changes, which have not yet written back to disk.
 | CTRL-E | leaves the editor without an immediate saving.
@@ -158,14 +163,14 @@ When editing, the following functions:
 | CTRL-PgUp | fits within a cell, the lower right part of the cell to the top line a (join).
 | TAB | moves the cursor in front of a large tab.
 | SHIFT-TAB | moves the cursor back a little tab.
-| F2 | search and replace (/) expects a string to be searched, and a string to be inserted instead. If a match is found, can be replaced by R (replace) the search string, abort with <cr> the search or search with any other key to the next match. In this way, can the source texts can also search for a string. As a replacement string is then entered <CR>.
-| F3 | bring a cell in the cell buffer and deletes it in the Screen.
-| F5 | bring a copy of a cell in the row buffer.
-| F7 | inserts the cell from the cell buffer in the screen.
-| F4 | F3 as, only for a single character.
-| F6 | F5 like, but for a single character.
-| F8 | F7 corresponds, based on a character.
-| F9 | exchanges the current file (**isfile**) with the background file (**fromfile**). Press F9 again swapped again referring to the old state is restored. This function is useful when you edit a file that can be in between but with CRTL-F to display a word. It turns F9 (= fswap) restore the old file distribution, which has been amended by the **fix**.
+| F2  | search and replace (/) expects a string to be searched, and a string to be inserted instead. If a match is found, can be replaced by R (replace) the search string, abort with <cr> the search or search with any other key to the next match. In this way, can the source texts can also search for a string. As a replacement string is then entered <CR>.
+| F3  | bring a cell in the cell buffer and deletes it in the Screen.
+| F5  | bring a copy of a cell in the row buffer.
+| F7  | inserts the cell from the cell buffer in the screen.
+| F4  | F3 as, only for a single character.
+| F6  | F5 like, but for a single character.
+| F8  | F7 corresponds, based on a character.
+| F9  | exchanges the current file (**isfile**) with the background file (**fromfile**). Press F9 again swapped again referring to the old state is restored. This function is useful when you edit a file that can be in between but with CRTL-F to display a word. It turns F9 (= fswap) restore the old file distribution, which has been amended by the **fix**.
 | SHIFT-F9 | switches to the comment text (shadow screens) and at the next press back.
 | F10 | puts the current screen briefly aside to him to work on with a press of F9 again. If you refuse the copy features a state-FORTH **copy** or **convey** with the message''TARGET BLOCK NOT EMPTY''because **isfile** and **fromfile** are different, F10 turn causes confusion.
 
@@ -246,6 +251,8 @@ one has to be returned during the loading of these declarations. The word **.(**
 
 A special feature of state-FORTH, is that even in the editor functions of the interpreter / compiler is available. This interpretation and compilation in the editor called Showload.
 
+| Key | Description
+|-----|-------------
 | CTRL-F | (fix) is looking for and displays the word to the right of the cursor without leaving the editor.
 | CTRL-L | (showload) loads the screen from the cursor position.
 
@@ -334,10 +341,11 @@ Of course you can 'save your' system under a different name. You can also change
 
 In addition, we recommend to all figures on nine urgent use of the so-called prefixes,
 
-| | Prefix | | Number System
-| $ | For hexadecimal,
-| \& | For decimal and
-|% | For binary numbers.
+| Prefix | Number System
+|--------|---------------
+| $      | For hexadecimal,
+| \&      | For decimal and
+| %      | For binary numbers.
 
 It is reported so that any files are not compiled - or even worse, wrong - because you're just another number in the system. Moreover, it is possible to combine hexadecimal and decimal numbers as desired. Depending on what makes more sense now. In the source texts, see enough examples of this.
 
@@ -365,13 +373,14 @@ The Printer Interface few words about the issue of a formatted listings are incl
 
 ### Glossary
 
-| | Word | | stack comment | | Description
-| Pthru | (up -) | always prints the specified blocks to six on a page.
+| Word | Stack comment | Description
+|------|---------------|-------------
+| Pthru | (up -)        | always prints the specified blocks to six on a page.
 | Document | (from working to -) | **pthru** as prints, but three blocks and three comment blocks of code on a page
-| Listing | (-) | created a listing of the entire file by three code blocks, and three comment blocks are printed on one page
-| Plist | (scr # -) | print out a block on the specified printer
-| Scr | (- addr) | is a variable that contains the number of screens being edited. Compare (pre) r #, list, (error (/ pre)
-| R # | (- addr) | is a variable that contains the distance of the label being edited from the beginning of the currently edited screens.
+| Listing | (-)           | created a listing of the entire file by three code blocks, and three comment blocks are printed on one page
+| Plist | (scr # -)     | print out a block on the specified printer
+| Scr  | (- addr)      | is a variable that contains the number of screens being edited. Compare (pre) r #, list, (error (/ pre)
+| R #  | (- addr)      | is a variable that contains the distance of the label being edited from the beginning of the currently edited screens.
 
 ### Printer adjustment
 
@@ -399,17 +408,19 @@ Unfortunately at the moment still in the people-FORTH German and error messages 
 
 The most important commands again at a glance:
 
-| Status | status controls the cell
-| Words | displays the currently available commands
-| Files | displays the registered files
-| Path | modified or call the file search path
-| Order | search order of the command lists the groups on
-| Vocs | lists all available command groups
-| View | displays and
-| Fix | edited the text a specific word
-| Help | shows - if any - the comment text of a word
-| Full | the Blidschirmfenster switches to full size |
-| Page | deletes the current window / screen
-| Index | non - resident - the contents of a block file shows |
-| List | displays the contents of a screen.
+| Command | Description
+|---------|-------------
+| Status  | status controls the cell
+| Words   | displays the currently available commands
+| Files   | displays the registered files
+| Path    | modified or call the file search path
+| Order   | search order of the command lists the groups on
+| Vocs    | lists all available command groups
+| View    | displays and
+| Fix     | edited the text a specific word
+| Help    | shows - if any - the comment text of a word
+| Full    | the screen  switches to full size
+| Page    | deletes the current window / screen
+| Index   | non - resident - the contents of a block file shows
+| List    | displays the contents of a screen.
 | Include | command loads a whole group or part of the program
