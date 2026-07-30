@@ -762,6 +762,16 @@
    
   - [R-Time8 Manual](Companies/ICD/RTime8_Manual/README.md)
     
+  - [SpartaDOS](Companies/ICD/SpartaDOS/README.md)
+    
+   - [SpartDOS X](Companies/ICD/SpartaDOS/SpartaDOS_X/README.md)
+     
+    - [SpartaDos X Review](Companies/ICD/SpartaDOS/SpartaDOS_X/SpartaDosXReview/README.md)
+      
+    - [SDX Hello World](Companies/ICD/SpartaDOS/SpartaDOS_X/Sparta_DOS_X_Hello_World/README.md)
+      
+   - [SpartaDOS Construction Set Manual](Companies/ICD/SpartaDOS/Sparta_DOS_Construction_Set_Manual/README.md)
+     
   - [Indus GT DD Floppy Drive](Companies/Indus_Systems/Indus_GT/README.md)
     
    - [Indus CPM 2.2](Companies/Indus_Systems/Indus_GT/Indus_CPM_2.2/README.md)
@@ -2351,16 +2361,6 @@
 - [Software](Software/README.md)
   
  - [Atari](Software/Atari/README.md)
-   
-- [SpartaDOS](SpartaDOS/README.md)
-  
- - [SpartDOS X](SpartaDOS/SpartaDOS_X/README.md)
-   
-  - [SpartaDos X Review](SpartaDOS/SpartaDOS_X/SpartaDosXReview/README.md)
-    
-  - [SDX Hello World](SpartaDOS/SpartaDOS_X/Sparta_DOS_X_Hello_World/README.md)
-    
- - [SpartaDOS Construction Set Manual](SpartaDOS/Sparta_DOS_Construction_Set_Manual/README.md)
    
 - [SpeedCalc](SpeedCalc/README.md)
   

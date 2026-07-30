@@ -36,10 +36,10 @@
 | [TOP-DOS](../Companies/Eclipse_Software/TOP-DOS/README.md) | Y    | Y     | Y     | Y     | ?     | N       | 
 | Mach DOS 3.7 | Y    | N     | Y     | Y     | N     | N       | 
 | [MyDOS](../DOS/MyDOS/README.md) | Y    | Y     | Y     | Y     | Y     | N       | MyDOS requires a special / external formatter to format 1440 KB- one is available e.g. with the CSS Black Box or the CSS Floppyboard,maybe there are also some other external formatters...?!?
-| [SpartaDOS](../SpartaDOS/README.md) | Y    | Y     | Y     | Y     | Y     | Y       | 
+| [SpartaDOS](../Companies/ICD/SpartaDOS/README.md) | Y    | Y     | Y     | Y     | Y     | Y       | 
 | Real DOS 2.x | Y    | Y     | Y     | Y     | Y     | Y       | 
 | BeweDOS 1.x | Y    | Y     | Y     | Y     | N     | N       | a 720k or 1440k disk must be formatted with SpartaDOS orSDX or Real DOS, then Bewe DOS can be copied onto it!
-| [SpartaDOS](../SpartaDOS/README.md) | Y    | Y     | Y     | Y     | Y     | Y       | 
+| [SpartaDOS](../Companies/ICD/SpartaDOS/README.md) | Y    | Y     | Y     | Y     | Y     | Y       | 
 | [Lite DOS 2.x/3.X](http://www.mr-atari.com/Mr.Atari/LiteDOS/) | Y    | Y     | Y     | Y     | Y     | ?       | 
 | [SuperDOS](../People/Paul_Nicholls/SuperDOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
 | DOS II+D 4.5 | Y    | Y     | N     | N     | N     | N       | 

@@ -28,8 +28,8 @@ In der Regel besteht das DOS aus zwei Teilen:
 - [MyDOS](MyDOS/README.md)
 - [OS/A+](../Companies/OSS/OS_Aplus/README.md)
 - [RealDOS](RealDOS/README.md)
-- [SpartaDOS](../SpartaDOS/README.md)
-- [SpartDOS X](../SpartaDOS/SpartaDOS_X/README.md)
+- [SpartaDOS](../Companies/ICD/SpartaDOS/README.md)
+- [SpartDOS X](../Companies/ICD/SpartaDOS/SpartaDOS_X/README.md)
 - [Turbo Tape DOS - MISSING](TTDOS/README.md) also known as Turbo Tape DOS
 - \[XDOS\](../People/Stefan Dorndorf/XDOS\_2.43/README.md) of 2009 by Stefan Dorndorf
 
