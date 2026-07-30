@@ -2,7 +2,7 @@
 
 Copyright (C) 1985 by First Byte
 
-**Enhancements to Basic** adds a number of editing and debugging commands to [Atari BASIC](../Languages/BASIC/Atari_BASIC/README.md), as well as offering direct access to some disk functions without having to exit out of BASIC to DOS. It is very similar to The Monkey Wrench in concept, but is loaded from disk rather than the right cartridge slot, which did not exist on most machines.
+**Enhancements to Basic** adds a number of editing and debugging commands to [Atari BASIC](../../Languages/BASIC/Atari_BASIC/README.md), as well as offering direct access to some disk functions without having to exit out of BASIC to DOS. It is very similar to The Monkey Wrench in concept, but is loaded from disk rather than the right cartridge slot, which did not exist on most machines.
 
 Among its editing commands are autonumbering (NUM), renumbering (REN) and deleting a block of lines (!DEL, to make sure it's not a typo). It adds the VERify command to ensure a store program can be successfully read. LVAR lists the variables in a program, SVAR searches the program for any line that uses a given variable name, and CVAR changes the name of a variable throughout the program.
 

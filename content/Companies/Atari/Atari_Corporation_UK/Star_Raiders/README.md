@@ -22,7 +22,7 @@ The Atari community has already started to bring the listing to files, please se
 
 ## CAS Image
 
-- [Star\_Raiders-needs\_binary\_load\_program\_from\_cassette.cas](attachments/Star_Raiders-needs_binary_load_program_from_cassette.cas) ; cas version of Star Raiders, sold in the late 80's. Needs a [Casette Boot](../../../../Boot_from_Cassette/README.md) to read in. Thank you so much FloppyDoc for creating the cas file. Stefan for creating the wav file and Mathy for the hardware to make the job possible. :-)
+- [Star\_Raiders-needs\_binary\_load\_program\_from\_cassette.cas](attachments/Star_Raiders-needs_binary_load_program_from_cassette.cas) ; cas version of Star Raiders, sold in the late 80's. Needs a [Casette Boot](../../../../Todos/Boot_from_Cassette/README.md) to read in. Thank you so much FloppyDoc for creating the cas file. Stefan for creating the wav file and Mathy for the hardware to make the job possible. :-)
 
 ## Further information
 

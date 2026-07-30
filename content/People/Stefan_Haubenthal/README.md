@@ -7,7 +7,7 @@ Meine Hardware: [Atari XEP80](../../Companies/Atari/Atari_Hardware/XEP80/README.
 
 [Converting FIG-FORTH Programs to FORTH-83](../../Languages/Forth/Articles/Converting_FIG-Forth_Programs_to_Forth-83/README.md)
 
-[Rastaconverter](../../Rastaconverter/README.md) [PLATO (Programmed Logic for Automated Teaching Operation)](../../PLATO/README.md) [C/65 Manual](../../Languages/C/C65_Manual/README.md)
+[Rastaconverter](../../Todos/Rastaconverter/README.md) [PLATO (Programmed Logic for Automated Teaching Operation)](../../Services/PLATO/README.md) [C/65 Manual](../../Languages/C/C65_Manual/README.md)
 
 ## Turbotape
 

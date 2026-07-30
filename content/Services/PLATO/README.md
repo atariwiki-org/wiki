@@ -9,7 +9,7 @@ PLATO (Programmed Logic for Automatic Teaching Operations) was the first general
 
 ## ROM image
 
-- [The Learning Phone (RX8080)](../Companies/Atari/The_Learning_Phone/README.md) ; original Atari software for PLATO on cartridge and with manuals
+- [The Learning Phone (RX8080)](../../Companies/Atari/The_Learning_Phone/README.md) ; original Atari software for PLATO on cartridge and with manuals
 - [The\_Learning\_Phone-patched.rom](attachments/The_Learning_Phone-patched.rom) ; thank you so much AtariAge
 - [Learning\_Phone\_2400\_baud\_alt\_character\_set.rom](attachments/Learning_Phone_2400_baud_alt_character_set.rom) ; thank you so much AtariAge
 
@@ -25,7 +25,7 @@ For up-to-date software, please see [Thom's IRATA online site](https://www.irata
 - [PLATOTerm 1.0-Atari](https://github.com/tschak909/platoterm64/releases/download/PLATOTerm-1.0/PLATOTerm-1_0-Atari.atr); same as above, but on GitHub as source for the latest versions
 - [PLATOTerm 1.0-Atari](attachments/PLATOTerm-1_0-Atari.atr) ; PLATOTerm 1.0 on an ATR image, thank you so much Thom! Great work! :-)
 - [Pterm 5.0.8 for PC](attachments/pterm-5.0.8.exe.zip) ; PTerm 5.0.8 for use with a PC, thank you so much, Thom! Great work! :-)
-- [Pterm 5.0.8 for macOS](../../media/Services/PLATO/attachments/pterm-5.0.9.dmg) ; PTerm 5.0.8 for use with macOS, thank you so much Thom! Great work! :-)
+- [Pterm 5.0.8 for macOS](../../../media/Services/PLATO/attachments/pterm-5.0.9.dmg) ; PTerm 5.0.8 for use with macOS, thank you so much Thom! Great work! :-)
 
 To connect to IRATA.ONLINE, use the following connection information:
 Host: IRATA.ONLINE

@@ -6,4 +6,4 @@ An IBM keyboard and mouse to Atari interface via POKEY/GTIA connection
 
 ---
 
-See also: [Memory Map - Keyboard\_Topics](../Memory_Map/README.md#Keyboard_Topics)
+See also: [Memory Map - Keyboard\_Topics](../../Memory_Map/README.md#Keyboard_Topics)

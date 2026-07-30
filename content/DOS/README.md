@@ -43,4 +43,4 @@ In der Regel besteht das DOS aus zwei Teilen:
 
 ---
 
-see also [DOS-Topics](../DOS_topics/README.md)
+see also [DOS-Topics](../Todos/DOS_topics/README.md)

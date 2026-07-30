@@ -32,7 +32,7 @@ Development continues; [Altirra BASIC](Altirra_BASIC/README.md), [BASIC++](BASIC
 ## Basic related
 
 - Ken's Super BASIC - loadable extensions for Atari BASIC, no longer available.
-- [Enhancements to Basic 2.1](../../Enhancements_to_Basic_2.1/README.md)
+- [Enhancements to Basic 2.1](../../Todos/Enhancements_to_Basic_2.1/README.md)
 - [TURBAN - TURboBAsic Nifty](Turbo-BASIC_XL/TURBAN/README.md) ; TURboBAsic Nifty. Smartest IDE for BASIC for the Atari.
 
 ## Basic references

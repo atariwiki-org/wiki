@@ -5,16 +5,16 @@
 ## Cartridges
 
 - [Blueprint of ACTION! Cart](../Companies/OSS/ACTION/Blueprint_of_ACTION_Cart/README.md)
-- [AtariMax EXEPACKER Files with bundled DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
+- [AtariMax EXEPACKER Files with bundled DOS](../Todos/AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
 - [ARGS RS232 Cartridge](../Companies/ABBUC/ARGS/ARGS_RS232_Cartridge/README.md) (deutsch)
-- [All you ever wanted to know about: Atari Cartridges](../Cartridges/README.md)
+- [All you ever wanted to know about: Atari Cartridges](../Todos/Cartridges/README.md)
 
 ## Controllers
 
 - [Memory Map - Controller\_topics](../Memory_Map/README.md#Controller_topics)
-- [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md)
-- [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md) Interface
-- [Atari Trakball (CX22)](../Trackball/README.md)
+- [How to query the MultiJoy Interface](../Todos/How_to_query_the_MultiJoy_Interface/README.md)
+- [How to query the MultiJoy Interface](../Todos/How_to_query_the_MultiJoy_Interface/README.md) Interface
+- [Atari Trakball (CX22)](../Todos/Trackball/README.md)
 - [Atari Light Pen CX70](../Companies/Atari/Atari_Hardware/Atari_CX70_Light_Pen/README.md)
 - [Atari Touch Tablet (CX77)](../Companies/Atari/Atari_Hardware/Atari_CX77_Touch_Tablet/README.md)
 - [Atari Trak-Ball controller (CX80)](../Companies/Atari/Atari_Hardware/Atari_CX80_Trak-Ball_controller/README.md)
@@ -47,7 +47,7 @@
 - [Happy Computers Inc.](../Companies/Happy_Computers/README.md)
 - [CompyShop](../Companies/CompyShop/README.md)
 - [1050 Turbo Upgrade](../Companies/Bernhard_Engl/1050_Turbo/README.md)
-- [XF551 Indexlochabfrage - Indexhole Detection Upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
+- [XF551 Indexlochabfrage - Indexhole Detection Upgrade](../Todos/XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
 - [Floppy 2000](Disk_Drives/Floppy_2000/README.md)
 - [High-Density Disk Interface (HDI)](../People/Erhard_Puetz/HDI_Interface/README.md) (aka Floppy 3000)
 - [Indus GT DD Floppy Drive](../Companies/Indus_Systems/Indus_GT/README.md)
@@ -62,7 +62,7 @@
 ## Interfaces
 
 - [Atari 850 - MISSING](../Companies/Atari/Atari_Hardware/Atari_850/README.md)
-- [TransKey-II](../TransKey-II/README.md)
+- [TransKey-II](../Todos/TransKey-II/README.md)
 
 ## Modems
 
@@ -89,7 +89,7 @@
 
 - [Atari 410 - MISSING](../Companies/Atari/Atari_Hardware/Atari_410/README.md)
 - [Atari 1010 - MISSING](../Companies/Atari/Atari_Hardware/Atari_1010/README.md)
-- [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
+- [Bugfix for the Cassette Handler](../Todos/Bugfix_for_the_Cassette_Handler/README.md)
 - [Atari XC11 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC11/README.md)
 - [Atari XC12 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC12/README.md)
 - [All about Cassette Tapes from 1979.pdf](../Voice_and_Data_Cassettes/attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB

@@ -1,14 +1,14 @@
 # Articles
 
-- [3-D Printer Files](../3D_Printer_Files/README.md)
-- [SIO plug](../SIO_plug/README.md)
+- [3-D Printer Files](../Todos/3D_Printer_Files/README.md)
+- [SIO plug](../Todos/SIO_plug/README.md)
 
 # Cassette
 
-- [Casette Boot](../Boot_from_Cassette/README.md)
+- [Casette Boot](../Todos/Boot_from_Cassette/README.md)
 - [Atari Datasette XC12 Turbo 6000 Baud Interface](../Hardware/Atari_Datasette_XC12_Turbo_6000_Baud_Interface/README.md)
 - [Rambit](../Companies/Rambit/README.md)
-- [CAS to WAV and WAV to CAS](../CAS_to_WAV_and_WAV_to_CAS/README.md)
+- [CAS to WAV and WAV to CAS](../Todos/CAS_to_WAV_and_WAV_to_CAS/README.md)
 
 # Emulator
 
@@ -21,17 +21,17 @@
 
 # Generic Information
 
-- [Atari ATASCII Table](../Atari_ATASCII_Table/README.md)
-- [OS Diffs Atari 800 \<-\> Atari XL/XE Series](../OS/Atari_OS/DiffOldOs2XL/README.md)
-- [Ironman Atari - A Compilation of Advanced Atari 8-bit Programming Techniques](../Ironman_Atari/README.md) A compilation of advanced Atari 8-bit programming techniques
+- [Atari ATASCII Table](../Todos/Atari_ATASCII_Table/README.md)
+- [OS Diffs Atari 800 \<-\> Atari XL/XE Series](../Todos/OS/Atari_OS/DiffOldOs2XL/README.md)
+- [Ironman Atari - A Compilation of Advanced Atari 8-bit Programming Techniques](../Todos/Ironman_Atari/README.md) A compilation of advanced Atari 8-bit programming techniques
 - [Mode, Setcolor, Color Table](../Languages/BASIC/Atari_BASIC/Mode_Setcolor_Color_Table/README.md)
 - [Memory Map - Table\_of\_Modes\_and\_Screen\_Format](../Memory_Map/README.md#Table_of_Modes_and_Screen_Format)
-- [Unleash the power of Ataris CPU](../Unleash_the_power_of_Ataris_CPU/README.md)
+- [Unleash the power of Ataris CPU](../Todos/Unleash_the_power_of_Ataris_CPU/README.md)
 
 # Graphics
 
-- [Design Master Review](../Design_Master_Testbericht/README.md) (German)
-- [Multi Player Animator](../Multi_Player_Animator/README.md) (German)
+- [Design Master Review](../Todos/Design_Master_Testbericht/README.md) (German)
+- [Multi Player Animator](../Todos/Multi_Player_Animator/README.md) (German)
 
 # Hardware
 
@@ -70,7 +70,7 @@
 - [Happy Computers Inc.](../Companies/Happy_Computers/README.md)
 - [Speedy 1050](../Companies/CompyShop/Speedy_1050_Upgrades/README.md)
 - [1050 Turbo Upgrade](../Companies/Bernhard_Engl/1050_Turbo/README.md)
-- [XF551 Indexlochabfrage - Indexhole Detection Upgrade](../XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
+- [XF551 Indexlochabfrage - Indexhole Detection Upgrade](../Todos/XF551_Indexlochabfrage_-_Indexhole_Detection_upgrade/README.md)
 - [Custom Disk Format Routine](../Companies/CompyShop/Speedy_1050_Upgrades/Custom_Disk_Format_Routine/README.md) (Atari 1050 with Compy Shop Speedy)
 - [Indus GT Field Service Manual](../Companies/Indus_Systems/Indus_GT/Indus_GT_Field_Service_Manual/README.md)\* [Indus GT Firmware ROM Disassembly](../Companies/Indus_Systems/Indus_GT/Indus_GT_Firmware_ROM_Source/README.md) (Disassembly)
 - [Indus GT Schematics](../Companies/Indus_Systems/Indus_GT/Indus_GT_Schematics/README.md)
@@ -84,7 +84,7 @@
 - [Atari XC11 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC11/README.md)
 - [Atari XC12 - MISSING](../Companies/Atari/Atari_Hardware/Atari_XC12/README.md)
 - [All about Cassette Tapes from 1979.pdf](../Voice_and_Data_Cassettes/attachments/All_about_Cassette_Tapes_1979.pdf) ; size: 741 KB
-- [Bugfix for the Cassette Handler](../Bugfix_for_the_Cassette_Handler/README.md)
+- [Bugfix for the Cassette Handler](../Todos/Bugfix_for_the_Cassette_Handler/README.md)
 
 ## Printers
 
@@ -111,7 +111,7 @@
 ## Interfaces
 
 - [Atari 850 - MISSING](../Companies/Atari/Atari_Hardware/Atari_850/README.md)
-- [TransKey-II](../TransKey-II/README.md)
+- [TransKey-II](../Todos/TransKey-II/README.md)
 - [ARGS RS232 Cartridge](../Companies/ABBUC/ARGS/ARGS_RS232_Cartridge/README.md) (German)
 
 ## Video Upgrades
@@ -125,8 +125,8 @@
 - [Atari Touch Tablet (CX77)](../Companies/Atari/Atari_Hardware/Atari_CX77_Touch_Tablet/README.md)
 - [Atari Trak-Ball controller (CX80)](../Companies/Atari/Atari_Hardware/Atari_CX80_Trak-Ball_controller/README.md)
 - [Atari CX85 Numerical Keypad](../Companies/Atari/Atari_Hardware/Atari_CX85/README.md)
-- [Atari Trakball (CX22)](../Trackball/README.md)
-- [How to query the MultiJoy Interface](../How_to_query_the_MultiJoy_Interface/README.md) Interface
+- [Atari Trakball (CX22)](../Todos/Trackball/README.md)
+- [How to query the MultiJoy Interface](../Todos/How_to_query_the_MultiJoy_Interface/README.md) Interface
 
 ## Voiceboxes/Sprachbox
 
@@ -136,17 +136,17 @@
 ## Cartridges
 
 - [Blueprint of ACTION! Cart](../Companies/OSS/ACTION/Blueprint_of_ACTION_Cart/README.md)
-- [AtariMax EXEPACKER Files with bundled DOS](../AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
+- [AtariMax EXEPACKER Files with bundled DOS](../Todos/AtariMax_EXEPACKER_Files_with_bundled_DOS/README.md)
 - [ARGS RS232 Cartridge](../Companies/ABBUC/ARGS/ARGS_RS232_Cartridge/README.md) (deutsch)
-- [The!Cart](../TheCart/README.md)
-- [All you ever wanted to know about: Atari Cartridges](../Cartridges/README.md)
+- [The!Cart](../Todos/TheCart/README.md)
+- [All you ever wanted to know about: Atari Cartridges](../Todos/Cartridges/README.md)
 
 ## Others
 
 - [ARGS ISA PC Interface](../Companies/ABBUC/ARGS/ARGS_ISA_PC_Interface/README.md)
 - [ATARI 1450XL HOME COMPUTER INTEGRAL DISK DRIVE SPECIFICATION](../Companies/Atari/Atari_Hardware/ATARI_1450XL_HOME_COMPUTER_INTEGRAL_DISK_DRIVE_SPECIFICATION/README.md)
-- [Bank Switching (Bankumschaltung)](../Bank_Switching/README.md)
-- [SDrive-MAX by KBr](../SDrive-MAX/README.md)
+- [Bank Switching (Bankumschaltung)](../Todos/Bank_Switching/README.md)
+- [SDrive-MAX by KBr](../Todos/SDrive-MAX/README.md)
 - [The MicroUSB Project](../Hardware/USB/MicroUSB/README.md)
 
 # History
@@ -171,7 +171,7 @@
 
 # [Newsletters](../Newsletters/README.md)
 
-# [PLATO (Programmed Logic for Automated Teaching Operation)](../PLATO/README.md)
+# [PLATO (Programmed Logic for Automated Teaching Operation)](../Services/PLATO/README.md)
 
 # [Podcasts](../Podcasts/README.md)
 
@@ -184,10 +184,10 @@
 # Programming
 
 - [Atari\_8-Bit\_Error-Codes.pdf](attachments/Atari_8-Bit_Error-Codes.pdf) ; Error-Codes for ACTION!, Atari Assembler Cartridge, Atari BASIC \& OSS BASIC XL/XE, DOS or other Operating System, MAC/65 and Microsoft BASIC II
-- [ASCII-Tabelle](../ASCII-Tabelle/README.md)
+- [ASCII-Tabelle](../Todos/ASCII-Tabelle/README.md)
 - [DEZ-HEX-BIN-OKT-PEN\_Excel\_2016.xlsx](attachments/DEZ-HEX-BIN-OKT-PEN_Excel_2016.xlsx) ; Excel sheet for number conversions ; base conversions require Excel 2016
-- [OpCodes for 6502, 65C02 and 65C816 microprocessors](../OpCodes/README.md)
-- [CIO SPECIAL Command Filter](../CIO_Special_Command_Filter/README.md)
+- [OpCodes for 6502, 65C02 and 65C816 microprocessors](../Todos/OpCodes/README.md)
+- [CIO SPECIAL Command Filter](../Todos/CIO_Special_Command_Filter/README.md)
 - [Atari Password](http://www.atarimagazines.com/compute/issue73/atari_password.php)
 
 # Rarity 10 and above up to impossible
@@ -221,7 +221,7 @@
   - [Stock Analysis (CX8107)](../Companies/Atari/Stock_Analysis/README.md)
   - [Stock Charting (CX8108)](../Companies/Atari/Stock_Charting/README.md)
 - [Atari Personal Financial Management System (P.F.M.S.) CX406](../Companies/Atari/Atari_Personal_Financial_Management_System/README.md)
-- [Atari Rechner Simulation mit UPN](../Atari_Rechner_Simulation_mit_UPN/README.md)
+- [Atari Rechner Simulation mit UPN](../Todos/Atari_Rechner_Simulation_mit_UPN/README.md)
 - [Atari Silent Butler (DX5082)](../Companies/Atari/Atari_Silent_Butler/README.md)
 - [Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md)
 - [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md)
@@ -230,7 +230,7 @@
 - [Family Cash Flow (APX-20080)](../Companies/Atari/Family_Cash_Flow/README.md)
 - [Atari Family Finances (CX421)](../Companies/Atari/Family_Finances/README.md)
 - [Home Inventory](../Companies/Atari/Home_Inventory/README.md)
-- [RPN Calculator](../RPN_Calculator/README.md)
+- [RPN Calculator](../Todos/RPN_Calculator/README.md)
 
 ### Databases
 
@@ -282,11 +282,11 @@
 - Music\_Composer\_CXL\_4007\](../Music\_Composer\_CXL\_4007/README.md)
 - [Atari Music I - MISSING](../Companies/Atari/Atari_Music_I/README.md)
 - [Atari Music II - MISSING](../Companies/Atari/Atari_Music_II/README.md)
-- [Musica ; Copyright (C) 1985 by Steve Hales](../Musica/README.md)
+- [Musica ; Copyright (C) 1985 by Steve Hales](../Todos/Musica/README.md)
 
 ### Remote Data Transfer
 
-- [Atari Bildschirmtext (BTX)](../ATARI_Bildschirmtext_BTX/README.md)
+- [Atari Bildschirmtext (BTX)](../Todos/ATARI_Bildschirmtext_BTX/README.md)
 - [ATARI TELELINK II](../Companies/Atari/ATARI_TELELINK_II/README.md)
 - [ATARI TELELINK I](../Companies/Atari/ATARI_TELELINK_I/README.md)
 - [The Communicator II (CX488)](../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/ATARI_The_Communicator_II/README.md)
@@ -305,7 +305,7 @@
 - [BCALC](../BCALC/README.md)
 - [Calc\_Magic](../Calc_Magic/README.md)
 - [VisiCalc (Visual Calculator)](../VisiCalc/README.md)
-- [SpeedCalc](../SpeedCalc/README.md)
+- [SpeedCalc](../Todos/SpeedCalc/README.md)
 - [SynCalc](../Companies/Synapse_Software/SynCalc/README.md)
 
 ### Tools
@@ -630,7 +630,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 - [GTIA Demonstration Diskette (APX-20104)](../Companies/Atari/Atari_Program_Exchange_APX_Software/GTIA_Demonstration_Diskette_APX-20104/README.md)
 - [Fandal's demo site](http://a8.fandal.cz/demos.php?name=A&butt_details_x=&from=150)
 - [Atarionline demo site](http://atarionline.pl/v01/index.php?ct=demos)
-- [Atari Home Computers-Demo Ball](../Atari_Home_Computers-Demo_Ball/README.md)
+- [Atari Home Computers-Demo Ball](../Todos/Atari_Home_Computers-Demo_Ball/README.md)
 
 ## Disk Operating Systems (DOS)
 
@@ -665,17 +665,17 @@ The below broken links will be filled up with content in the future, meanwhile, 
 
 ### DOS-Related Information
 
-- [Disk formats / Diskettenformate](../Diskettenformate/README.md)
-- [Disk drive formats / Laufwerksformate](../Laufwerksformate/README.md)
-- [Ram-Disk\_under\_OS-ROM\_for\_XL\_XE](../Ram-Disk_under_OS-ROM_for_XL_XE/README.md) - Article from German "Happy Computer" magazine
-- [CIO Tutorial](../CIOV_Tutorial/README.md)
-- [File Extensions of Atari disk files](../File_Suffix/README.md)
-- [DOS\_Command\_Processor](../DOS_Command_Processor/README.md)
-- [Der XIO-Befehl für Dateioperationen](../Der_XIO_Befehl_fuer_Dateioperationen/README.md)
-- [Der XIO Befehl für Grafikoperationen](../Der_XIO_Befehl_fuer_Grafikoperationen/README.md)
-- Other [DOS-Topics](../DOS_topics/README.md)
+- [Disk formats / Diskettenformate](../Todos/Diskettenformate/README.md)
+- [Disk drive formats / Laufwerksformate](../Todos/Laufwerksformate/README.md)
+- [Ram-Disk\_under\_OS-ROM\_for\_XL\_XE](../Todos/Ram-Disk_under_OS-ROM_for_XL_XE/README.md) - Article from German "Happy Computer" magazine
+- [CIO Tutorial](../Todos/CIOV_Tutorial/README.md)
+- [File Extensions of Atari disk files](../Todos/File_Suffix/README.md)
+- [DOS\_Command\_Processor](../Todos/DOS_Command_Processor/README.md)
+- [Der XIO-Befehl für Dateioperationen](../Todos/Der_XIO_Befehl_fuer_Dateioperationen/README.md)
+- [Der XIO Befehl für Grafikoperationen](../Todos/Der_XIO_Befehl_fuer_Grafikoperationen/README.md)
+- Other [DOS-Topics](../Todos/DOS_topics/README.md)
 - [R-Time8 Manual](../Companies/ICD/RTime8_Manual/README.md)
-- [XIO Command Codes for the DOS Handler (D:)](../XIO_Command_Codes_DOS_Handler/README.md)
+- [XIO Command Codes for the DOS Handler (D:)](../Todos/XIO_Command_Codes_DOS_Handler/README.md)
 
 ## Games
 
@@ -722,7 +722,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 
 # Source Code
 
-\*[Intention of the source code chapter](../Intention_of_the_source_code_chapter/README.md)
+\*[Intention of the source code chapter](../Todos/Intention_of_the_source_code_chapter/README.md)
 
 ### Applications
 
@@ -755,9 +755,9 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Preppie!](attachments/Preppie.zip) ; 2015 from Russ Wetmore
 - [Preppie! II](attachments/Preppie_II.zip) ; 2015 from Russ Wetmore
 - [Blue Max](../Companies/Synapse_Software/Blue_Max/README.md) ; 2016 from Bob Polin
-- [Pong](../Pong/README.md) ; 1986 from Gary S. Domrow
+- [Pong (ANALOG, 1986)](../Todos/Pong/README.md) ; 1986 from Gary S. Domrow
 - [ATARI 800 CHECKERS DISPLAY BY C. SHAW 3/31/80](../Companies/Atari/Checkers_Display/README.md) ; 2017 from Carol Shaw
-- [PAC-MAN Source Code](../PAC-MAN/README.md)
+- [PAC-MAN Source Code](../Todos/PAC-MAN/README.md)
 
 ### Programming Languages
 
@@ -781,7 +781,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 
 ### BASIC
 
-- [Atari Basic Source Code 1](https://atariwiki.org/wiki/attach/The%20Atari%20Basic%20Source%20Book/How-atari-basic-works-p3.html) from [The Atari Basic Source Book](../The_Atari_Basic_Source_Book/README.md)
+- [Atari Basic Source Code 1](https://atariwiki.org/wiki/attach/The%20Atari%20Basic%20Source%20Book/How-atari-basic-works-p3.html) from [The Atari Basic Source Book](../Todos/The_Atari_Basic_Source_Book/README.md)
 - [Atari Basic Source Code 2](attachments/ataribas.asm)
 - [Atari Basic Source Code 3](attachments/AtariBasic.src)
 - [BASIC A+](../Companies/OSS/BASIC_Aplus/README.md)
@@ -822,9 +822,9 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 
 - Atari 400-800 Operating System Source Listing Rev. A - C017893 (1981) ; [pdf-file](https://data.atariwiki.org/DOC/Atari_400-800_OS_A_Source_Listing-C017893_%281981%29.pdf)
 - [Source listings for all Atari OS revisions](attachments/a8-os-rom-2018-09-23.7z) ; size: 205 KB ; [Source](http://atariage.com/forums/topic/201133-os-source-code-all-revisions/?p=4118825)
-- [Atari 800 OS Source Listing](../OS/Atari_OS/Atari_800_ROM_OS_Source_Listing/README.md) ; [ASM-file](attachments/Atari_800_OS_Rev.B.asm)
+- [Atari 800 OS Source Listing](../Todos/OS/Atari_OS/Atari_800_ROM_OS_Source_Listing/README.md) ; [ASM-file](attachments/Atari_800_OS_Rev.B.asm)
 - Atari XL Operating System Source Listing ; [Rev. 2 ASM-file](attachments/Atari_XL_OS_Rev.2.asm) ; [Rev. 11 ASM-file](attachments/Atari_XL_OS_Rev.11.asm)
 - Carol Shaw's more accurate Colleen Floating Point Routines - ultimately not used in the OS: [asm file](attachments/Colleen_Floating_Point_Routines_Source_Code.asm), [text file](attachments/Colleen_Floating_Point_Routines.txt), [original document](https://archive.org/details/ColleenFloatingPointRoutines); see [Atari Calculator (CX8102)](../Companies/Atari/Atari_Calculator/README.md) for more info
-- [FAST FLOATING POINT source code for the ATARI](../OS/Floating_Point_ROM/FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md)
+- [FAST FLOATING POINT source code for the ATARI](../Todos/OS/Floating_Point_ROM/FAST_FLOATING_POINT_source_code_for_the_ATARI/README.md)
 - [Atari OS Rev. A \& B (1979) \& Rev. 2 (1983) (Atari) (NTSC \& PAL) (400-800-XL-XE) with FAST FLOATING POINT from above](attachments/Atari_OS_Rev._A_and_B_1979_Rev_2_1983_Atari_NTSC_and_PAL_400-800-XL-XE_with_FastFP.zip)
 - [Backus–Naur Form (BNF)](../Languages/BASIC/Atari_BASIC/Backus-Naur_form/README.md)

@@ -25,29 +25,29 @@
 
 | DOS | 90KB | 130KB | 180KB | 360KB | 720KB | 1.440KB | Remark
 |-----|------|-------|-------|-------|-------|---------|--------
-| [Atari DOS 1](../Companies/Atari/Atari_DOS/Atari_DOS_1/README.md) | Y    | N     | N     | N     | N     | N       | 
-| [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)  SmartDOS | Y    | N     | Y     | N     | N     | N       | DOS 2.0s can read 180k after a Reset; DOS 2.0d can read 90k after a Reset!  DOS.SYS of SmartDOS is based on DOS 2.0! (Rainbow DOS and Black DOSare merely DUP.SYS replacements for DOS 2.0s or DOS 2.0d, there are many others...)
-| [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md) | Y    | Y     | N     | N     | N     | N       | 
-| [Atari Dos 3](../Companies/Atari/Atari_DOS/Atari_DOS_3/README.md) | Y    | Y     | N     | N     | N     | N       | 
-| [Atari DOS 4 (aka ANTIC DOS aka QDOS)](../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md) | Y    | N     | Y     | Y     | N     | N       | 
-| [Atari DOS XE](../Companies/Atari/Atari_DOS/Atari_DOS_XE/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
-| [BIBO-DOS](../Companies/CompyShop/BIBO-DOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
-| [Turbo-DOS XE](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
-| [TOP-DOS](../Companies/Eclipse_Software/TOP-DOS/README.md) | Y    | Y     | Y     | Y     | ?     | N       | 
+| [Atari DOS 1](../../Companies/Atari/Atari_DOS/Atari_DOS_1/README.md) | Y    | N     | N     | N     | N     | N       | 
+| [Atari DOS 2 or DOS II Version 2.x](../../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)  SmartDOS | Y    | N     | Y     | N     | N     | N       | DOS 2.0s can read 180k after a Reset; DOS 2.0d can read 90k after a Reset!  DOS.SYS of SmartDOS is based on DOS 2.0! (Rainbow DOS and Black DOSare merely DUP.SYS replacements for DOS 2.0s or DOS 2.0d, there are many others...)
+| [Atari DOS 2 or DOS II Version 2.x](../../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md) | Y    | Y     | N     | N     | N     | N       | 
+| [Atari Dos 3](../../Companies/Atari/Atari_DOS/Atari_DOS_3/README.md) | Y    | Y     | N     | N     | N     | N       | 
+| [Atari DOS 4 (aka ANTIC DOS aka QDOS)](../../Companies/Atari/Atari_DOS/Atari_DOS_4/README.md) | Y    | N     | Y     | Y     | N     | N       | 
+| [Atari DOS XE](../../Companies/Atari/Atari_DOS/Atari_DOS_XE/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
+| [BIBO-DOS](../../Companies/CompyShop/BIBO-DOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
+| [Turbo-DOS XE](../../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
+| [TOP-DOS](../../Companies/Eclipse_Software/TOP-DOS/README.md) | Y    | Y     | Y     | Y     | ?     | N       | 
 | Mach DOS 3.7 | Y    | N     | Y     | Y     | N     | N       | 
-| [MyDOS](../DOS/MyDOS/README.md) | Y    | Y     | Y     | Y     | Y     | N       | MyDOS requires a special / external formatter to format 1440 KB- one is available e.g. with the CSS Black Box or the CSS Floppyboard,maybe there are also some other external formatters...?!?
-| [SpartaDOS](../Companies/ICD/SpartaDOS/README.md) | Y    | Y     | Y     | Y     | Y     | Y       | 
+| [MyDOS](../../DOS/MyDOS/README.md) | Y    | Y     | Y     | Y     | Y     | N       | MyDOS requires a special / external formatter to format 1440 KB- one is available e.g. with the CSS Black Box or the CSS Floppyboard,maybe there are also some other external formatters...?!?
+| [SpartaDOS](../../Companies/ICD/SpartaDOS/README.md) | Y    | Y     | Y     | Y     | Y     | Y       | 
 | Real DOS 2.x | Y    | Y     | Y     | Y     | Y     | Y       | 
 | BeweDOS 1.x | Y    | Y     | Y     | Y     | N     | N       | a 720k or 1440k disk must be formatted with SpartaDOS orSDX or Real DOS, then Bewe DOS can be copied onto it!
-| [SpartaDOS](../Companies/ICD/SpartaDOS/README.md) | Y    | Y     | Y     | Y     | Y     | Y       | 
+| [SpartaDOS](../../Companies/ICD/SpartaDOS/README.md) | Y    | Y     | Y     | Y     | Y     | Y       | 
 | [Lite DOS 2.x/3.X](http://www.mr-atari.com/Mr.Atari/LiteDOS/) | Y    | Y     | Y     | Y     | Y     | ?       | 
-| [SuperDOS](../People/Paul_Nicholls/SuperDOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
+| [SuperDOS](../../People/Paul_Nicholls/SuperDOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
 | DOS II+D 4.5 | Y    | Y     | N     | N     | N     | N       | 
 | DOS II+D 6.x | Y    | Y     | Y     | N     | N     | N       | 
 | \[XDOS\](../People/Stefan Dorndorf/XDOS\_2.43/README.md) | Y    | Y     | Y     | Y     | N     | N       | in 360k mode the two disksides are used as twofloppy drives (D1: and D2:) in XDOS!
 | KDOS 1.0 | Y    | N     | N     | N     | N     | N       | 
-| [OS/A+ Version 2.10](../Companies/OSS/OS_Aplus/OS_Aplus-Version_2/README.md) | Y    | N     | Y     | N     | N     | N       | 
-| [DOS XL](../Companies/OSS/DOS_XL/README.md) | Y    | N     | Y     | N     | N     | N       | 
+| [OS/A+ Version 2.10](../../Companies/OSS/OS_Aplus/OS_Aplus-Version_2/README.md) | Y    | N     | Y     | N     | N     | N       | 
+| [DOS XL](../../Companies/OSS/DOS_XL/README.md) | Y    | N     | Y     | N     | N     | N       | 
 | [OS A+4.1](../OS_Aplus-Version_4) | N?   | Y     | Y     | Y     | Y     | Y       | OS A+4.1 was advertised being capable of 128 BpS,256 BpS and 512 BpS, any format from 128 KB to approx. 15,6 MB!
 
 ## Harddisk partition formats and DOS versions supporting them
