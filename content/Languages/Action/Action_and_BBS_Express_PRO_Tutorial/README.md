@@ -120,11 +120,11 @@ point package is the thing that really slows BASIC down.
 
 So we have this chart:
 
-| name |  size in bytes  |  low value | high value
-|------|-----------|----------|---------
-| BYTE |     1     |    0     |      255
-| INT  |     2     |  -32768  |    32767
-| CARD |     2     |    0     |   65535
+| name | size in bytes | low value | high value
+|------|---------------|----------:|-----------:
+| BYTE | 1             | 0         | 255
+| INT  | 2             | -32768    | 32767
+| CARD | 2             | 0         | 65535
 
 Ok, so how do you use them? Here is a sample program.
 
@@ -179,19 +179,19 @@ INT  i
 
 Just declaring some dummy variables.
 
-|Example     | Description
-|------------|--------------
-|i=InputI()  |  input a INT
-|c=InputC()  |  input a CARD
-|b=InputB()  |  input a BYTE
-|Print("hi") |  print string without the carriage return
-|PrintE("hi")|  print the string with the carriage return
-|PrintB(b)   |  print a BYTE without the CR
-|PrintBE(b)  |  print a BYTE with a CR
-|PrintC(c)   |  print a CARD without a  CR
-|PrintCE(c)  |  print a CARD with a CR
-|PrintI(i)   |  print a INT without a carriage return
-|PrintIE(i)  |  print a INT with a CR
+| Example | Description
+|---------|-------------
+| i=InputI() | input a INT
+| c=InputC() | input a CARD
+| b=InputB() | input a BYTE
+| Print("hi") | print string without the carriage return
+| PrintE("hi") | print the string with the carriage return
+| PrintB(b) | print a BYTE without the CR
+| PrintBE(b) | print a BYTE with a CR
+| PrintC(c) | print a CARD without a  CR
+| PrintCE(c) | print a CARD with a CR
+| PrintI(i) | print a INT without a carriage return
+| PrintIE(i) | print a INT with a CR
 
 Next we will go into expressions and the IF statement.
 
@@ -225,13 +225,13 @@ This brings us to our next subject, expressions.
 Action! supports the following operators.
 
 | Operator | Description
-|-------|-------------------
-|     - | as in negative numbers. Remember only INT can be negative.
-|     \* | multiply
-|     / | divide. This is integer division because Action! doesn't have real numbers. So when you take 5/2 it is equal to 2 NOT 2.5
-|   MOD | This is the remainder when you divide. 5 MOD 2 equals 1 because 5/2=2 with a remainder of 1
-|     + | addition
-|     - | subtraction
+|----------|-------------
+| -        | as in negative numbers. Remember only INT can be negative.
+| \*        | multiply
+| /        | divide. This is integer division because Action! doesn't have real numbers. So when you take 5/2 it is equal to 2 NOT 2.5
+| MOD      | This is the remainder when you divide. 5 MOD 2 equals 1 because 5/2=2 with a remainder of 1
+| +        | addition
+| -        | subtraction
 
 Action! also has a number of bit-wise
 operators but we will cover those
@@ -476,7 +476,7 @@ say your program has to input a
 large number.  And the next numbers
 are divided into the bug number
 until the answer gets down below 10.
- But if the user inputs a 0 to
+But if the user inputs a 0 to
 divide into, the is very bad since
 a division by 0 doesn't exist.
 
@@ -789,10 +789,10 @@ a string in "quotes." If PrintF is
 used like this, it is just like
 Print.
 
-| Command           |    output
-|-------------------|----------
-| PrintF("Hello")   |    Hello
-| Print("Hello")    |    Hello
+| Command | output
+|---------|--------
+| PrintF("Hello") | Hello
+| Print("Hello") | Hello
 
 But if some special characters appear
 inside the "quotes", PrintF can do
@@ -897,14 +897,14 @@ and how they output the data in the
 list.
 
 | Format Char | Description
-|----|-------------
-| %I | INT
-| %U | CARD (the U stands for Unsigned) and BYTE
-| %C | print as a character
-| %H | a hexadecimal number
-| %E | the RETURN character
-| %% | output the percent sign
-| %S | output as a string (we'll cover this in a later lesson)
+|-------------|-------------
+| %I          | INT
+| %U          | CARD (the U stands for Unsigned) and BYTE
+| %C          | print as a character
+| %H          | a hexadecimal number
+| %E          | the RETURN character
+| %%          | output the percent sign
+| %S          | output as a string (we'll cover this in a later lesson)
 
 So what is wrong with PrintF? Well,
 it can only print to the screen.
@@ -1615,13 +1615,13 @@ The next number is the command.  Use
 this chart to find out which command
 to use.
 
-|  Access           | Value
-|-------------------|-------
-| Input Only        | 4
-| Output Only       | 8
-| Input and output  | 12
-| Append to end of file          | 9
-| Disk drive directory        | 6
+| Access | Value
+|--------|-------
+| Input Only | 4
+| Output Only | 8
+| Input and output | 12
+| Append to end of file | 9
+| Disk drive directory | 6
 
 Since a K: device can only do input,
 the number "4" is an easy choice.
@@ -1674,16 +1674,16 @@ exactly the same.
 
 Here are the output PROCs.
 
-| Proc      | Output
-|-----------|-------
-| PrintD    | string
-| PrintDE   | string with CR
-| PrintBD   | BYTE
-| PrintBDE  | BYTE with CR
-| PrintCD   | CARD
-| PrintCDE  | CARD with CR
-| PrintID   | INT
-| PrintIDE  | INT with CR
+| Proc | Output
+|------|--------
+| PrintD | string
+| PrintDE | string with CR
+| PrintBD | BYTE
+| PrintBDE | BYTE with CR
+| PrintCD | CARD
+| PrintCDE | CARD with CR
+| PrintID | INT
+| PrintIDE | INT with CR
 
 The input statements are close to the
 normal input FUNCs as well.
@@ -2423,11 +2423,11 @@ mm/dd/yy.
 
 How big to we want each field?
 
-|field    |         size in bytes
-|-|-
-|firstname       |      11
-|lastname        |      14
-|date            |      9
+| field | size in bytes
+|-------|---------------
+| firstname | 11
+| lastname | 14
+| date  | 9
 
 Try to declare your sizes 1 bigger
 because strings go from 0 to 1 less
@@ -2671,14 +2671,14 @@ subject.  I will just list the BASIC
 graphics command and their Action!
 equivalents.
 
-|BASIC   |         Action!
-|-|-
-|GRAPHICS 0      | Graphics(0)
-|SETCOLOR 1,0,0  | SetColor(1,0,0)
-|COLOR 2         | color=2
-|POSITION 3,4    | Position(3,4)
-|PLOT 10,10      | Plot(10,10)
-|DRAWTO 20,20    | DrawTo(20,20)
+| BASIC | Action!
+|-------|---------
+| GRAPHICS 0 | Graphics(0)
+| SETCOLOR 1,0,0 | SetColor(1,0,0)
+| COLOR 2 | color=2
+| POSITION 3,4 | Position(3,4)
+| PLOT 10,10 | Plot(10,10)
+| DRAWTO 20,20 | DrawTo(20,20)
 
 I have not listed all the routines
 in the Action! library.  There are
