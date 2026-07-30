@@ -13,13 +13,13 @@ Due to the flexible cross-compiler, it was easy to use real assembler primitives
 
 # Target
 
-| Target | Status |
-|-|-
-| MISC | Ready! |
-| 6502 | Ready! |
-| C165 | in development |
-| PSC1000 | in development |
-| 8086  | in development |
+| Target | Status
+|--------|--------
+| MISC   | Ready!
+| 6502   | Ready!
+| C165   | in development
+| PSC1000 | in development
+| 8086   | in development
 
 # Resources
 

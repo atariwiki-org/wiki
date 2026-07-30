@@ -576,6 +576,7 @@ directory), but you do so at your peril.
 Hi and Assalamu Alaikum
 
 Space Dirt is a small DOS based game. The objectives are simple
+
   1. Clean the space dirt
   2. Hit the dirt making UFO ( or what ever u call it ) from behind
   3. Take the help of the colored pills appearing at random

@@ -208,7 +208,7 @@ transformed into a list of 8-bit integers.
 Data types  that  are  not  explicitly  logged  are  strings  and
 integers  other  than  8  and  16 bit integers (i.e.  double, quad, or
 longer  integers).   Strings   are   considered   multi-byte   storage
-Yet Another Target Compiler allocations. 
+Yet Another Target Compiler allocations.
 Longer  integers  are  either  recorded  as  multi-byte
 storage or as multi-integer storage.
 
@@ -536,7 +536,6 @@ and forth code creation.  The macros are described briefly below:
 
 - @resolve.exec creates an execution token in memory.
 
-
 ### PRODUCING AN APPLICATION FOR A TARGET MACHINE
 
 The target compiler takes text files as input and  produces  text
@@ -552,23 +551,23 @@ difficult.  The process follows the steps outlined below.
   1. An application is developed in the local forth environment.
 
   2.  After it works locally, the target compiler is loaded and the
-    application is compiled with the target compiler.
+      application is compiled with the target compiler.
 
   3.  The target compiler produces a file containing  the  il  code
-    form of the application.
+      form of the application.
 
   4.  The il code,  a  forth  kernel,  and  any  external  language
-    linkages are run through the pass 3 tool (an assembler and if
-    needed a linker)
+      linkages are run through the pass 3 tool (an assembler and if
+      needed a linker)
 
   5.  if an error  listing  indicates  any  missing  routines,  the
-    missing  routines  are added to the kernel (if assembler) and
-    repeat step 4 or to the application  (if  forth)  and  repeat
-    step 2.
+      missing  routines  are added to the kernel (if assembler) and
+      repeat step 4 or to the application  (if  forth)  and  repeat
+      step 2.
 
   6.  when a  clean  pass  3  is  achieved,  the  executable  image
-    produced   should  work  exactly  as  it  did  in  the  local
-    (original) environment.
+      produced   should  work  exactly  as  it  did  in  the  local
+      (original) environment.
 
 ### WHY YATC IS NOT JUST A FANCY DECOMPILER
 
