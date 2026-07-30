@@ -31,10 +31,12 @@ OPEN #IOCB,AUX1,AUX2,"Dn:NAME.EXT"
 
 IOCB gibt die von Ihnen gewünschte Datenkanalnummer an. In der Regel werden Sie die Nummer 1 oder 2 benutzen. Sie können aber aus insgesamt 7 verschiedenen Kanalnummern wählen. Das Betriebssystem stellt insgesamt 8 Datenkanäle zur Verfügung, aber einer wird ständig vom EDITOR des BASIC benutzt. Also bleiben Ihnen 7 Kanäle übrig.
 
-AUX1 gibt die Art des Zugriffs auf die zu öffnende Datei an. Beim BIBO-DOS gibt es 6 verschiedene Befehle:
+AUX1 gibt die Art des Zugriffs auf die zu öffnende Datei an. Beim BIBO-DOS gibt es 6 verschiedene Werte:
 
-| 4 | Die Datei kann nur gelesen werden.
-| 6 | Das Directory der Diskette soll gelesen werden.
+| Wert | Bedeutung
+|------|-----------
+| 4    | Die Datei kann nur gelesen werden.
+| 6    | Das Directory der Diskette soll gelesen werden.
 
 Beispiel:
 
@@ -49,8 +51,10 @@ Beispiel:
 80 PRINT FILE$
 ```
 
-| 7 | Das Spezial-Directory mit anzeige der gelöschten und fehlerhaften Dateien soll gelesen werden. Dieses ist eine Spezialfunktion des BIBO-DOS und nicht im DOS 2 oder 2.5 implementiert. Anwendung wie bei zuvor beschrieben.
-| 8 | Die Datei soll geschrieben werden. Eine Datei mit gleichen Namen wird gelöscht.
+| Wert | Bedeutung
+|------|-----------
+| 7    | Das Spezial-Directory mit anzeige der gelöschten und fehlerhaften Dateien soll gelesen werden. Dieses ist eine Spezialfunktion des BIBO-DOS und nicht im DOS 2 oder 2.5 implementiert. Anwendung wie bei zuvor beschrieben.
+| 8    | Die Datei soll geschrieben werden. Eine Datei mit gleichen Namen wird gelöscht.
 
 Bei diesem Befehl gibt es eine Besonderheit. Sie können das DOS.SYS einfach durch einen OPEN Befehl auf eine Diskette schreiben. Probieren Sie mal:
 
@@ -72,8 +76,10 @@ Anschließend bitte nicht vegessen:
 CLOSE #1
 ```
 
-| 9 | Append Modus. Es sollen Daten an eine vorhandene Datei angehängt werden.
-| 12 | Update Modus. Es können von der angegebenen Datei Daten gelesen und in diese Datei Daten geschrieben (angehängt) werden.
+| Wert | Bedeutung
+|------|-----------
+|  9   | Append Modus. Es sollen Daten an eine vorhandene Datei angehängt werden.
+| 12   | Update Modus. Es können von der angegebenen Datei Daten gelesen und in diese Datei Daten geschrieben (angehängt) werden.
 
 AUX2 wird weder vom BIBO-DOS noch vom DOS 2 oder DOS 2.5 benutzt und ist immer 0 (Null).
 
@@ -170,10 +176,12 @@ Mit diesem XIO Befehl kann eine Diskette in Laufwerk n formatiert werden. Wir da
 eine Besonderheit. Der Wert in AUX2 bestimmt die Dichte (DENSITY) der zu formatierenden Diskette. Dies gilt aber
 nur beim BIBODOS. Hier die Werte für AUX2:
 
-| AUX2 | 0 Single Density
-| AUX2 | 1 Double Density. Funktioniert natürlich nur auf erweiterten Diskettenlaufwerken.
-| AUX2 | 2 Medium Density (DOS 2.5 kompatibel).
-| AUX2 | 128 Clear Disk. Die Diskette wird nicht formatiert, es werden nur die VTOC, die Directory-Sektoren und die Bootsektoren neu geschrieben.
+| Wert | Bedeutung
+|------|-----------
+| 0    | Single Density
+| 1    | Double Density. Funktioniert natürlich nur auf erweiterten Diskettenlaufwerken.
+| 2    | Medium Density (DOS 2.5 kompatibel).
+| 128  | Clear Disk. Die Diskette wird nicht formatiert, es werden nur die VTOC, die Directory-Sektoren und die Bootsektoren neu geschrieben.
 
 Soll mit dem BIBO-DOS die Ramdisk formatiert werden, ist der Wert in AUX2 nicht von Bedeutung. Die Ramdisk wird immer in der konfigurierten Größe formatiert. Insofern verhält sich der XIO Befehl 254, genau wie alle anderen, genauso wie sein Gegenstück "I" im DUP-Menü des BIBO-DOS.
 
