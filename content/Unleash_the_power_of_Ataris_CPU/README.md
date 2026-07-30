@@ -22,14 +22,14 @@ The first thing to measure was how long this loop executes with no ANTIC DMA act
 I hope you have learned a little bit more about the Atari computer and how the ANTIC DMA interferes with the 6502 CPU. You may in fact someday be able to unleash that latent power within during a computer chess tournament, and when someone asks how in the world you did it you can smile and say - me and my DMA.
 
 | graphics mode | execution seconds | % increase (over no-DMA)
-|---------------|-------------------|-------------------------
-| NO DMA  |  148 |
-| GRAPHICS 0 | 216 | 46
-| GRAPHICS 1 | 188 | 27
-| GRAPHICS 2 | 186 | 26
-| GRAPHICS 3 | 163 | 10
-| GRAPHICS 4 | 164 | 11
-| GRAPHICS 5 | 167 | 13
-| GRAPHICS 6 | 173 | 17
-| GRAPHICS 7 | 185 | 25
-| GRAPHICS 8 | 218 | 47
+|---------------|-------------------|--------------------------
+| NO DMA        | 148               | 
+| GRAPHICS 0    | 216               | 46
+| GRAPHICS 1    | 188               | 27
+| GRAPHICS 2    | 186               | 26
+| GRAPHICS 3    | 163               | 10
+| GRAPHICS 4    | 164               | 11
+| GRAPHICS 5    | 167               | 13
+| GRAPHICS 6    | 173               | 17
+| GRAPHICS 7    | 185               | 25
+| GRAPHICS 8    | 218               | 47
