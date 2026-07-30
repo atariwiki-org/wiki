@@ -1,0 +1,106 @@
+       The Battle of The Basic's
+              (C) 1992
+             By Tom Hunt
+         All rights reserved
+
+      This article may be freely distributed, and included in user's groups newsletters, and electronic magazines.
+
+     There seems to be a universal language among computer users. It's the basic programming language. Almost everybody had dabbled with basic, at one time or another. There are alot of other programming languages available for the Atari 800/XL/E. Like C, Action!, Pascal, Logo, Pilot, Assembly, and AVUE. But Basic remains popular, even today.
+
+      Basics come in two major flavors. The first being the interpretive type, and the second being the type that compiles the Basic source program. For those of you who are unfamiliar with these terms, an interpreter gets a chunk of tokenized program, and interprets it, one chunk at a time. Almost like a human language interpreter, it must translate the source code into something the computer's CPU can understand. And more importantly, it does this while your program is running! A compiler, on the other hand, will translate your Basic program into something your computer's CPU can understand, called machine language. It does this once, and saves the compiled Basic program out to disk, usually with a ".COM" or ".OBJ" file extension. Occasionally you will find a compiler which generates what is known as pseudo-code, or "p-code". But since none of the Basics reviewed here uses pseudo-code, we won't cover that here.
+
+The Basic's reviewed in this article are as follows:
+
+Interpreters:
+
+Atari Basic Revision C
+Basic XE    
+Turbo Basic XL 1.4
+CTH FastBasic 2.0
+Turbo Basic 3.2q
+
+Compilers:
+
+MMG Compiler
+Turbo Basic XL
+
+
+     In this article I will attempt to touch upon several of the most popular Basic language programs, and briefly describe what I feel are each one's strong points. I will also be describing how each of them performed a simple benchmark program I made. First of all, about the benchmark program.
+
+     The benchmark program I made was no scientific marvel. It made no attempt to measure "drhystones" or "whetstones", which are pretty alien to most Basic users. Instead, I made my program access certain functions of Basic, which your own programs would most likely be accessing. The program also benchmarked how long it took each Basic to perform a GOSUB loop, and a FOR/TO/NEXT loop. Here's a list of the functions and tests which my benchmark program tested these Basic's with.
+
+LOOP TEST,   500 ITERATIONS
+
+GOSUB TEST,  400 ITERATIONS
+
+SIN(X) TEST, 50 ITERATIONS
+
+COS(X) TEST, 100 ITERATIONS
+
+SQR(X) TEST, 30 ITERATIONS
+
+ATN(X) TEST, 30 ITERATIONS
+
+2^X TEST,    30 ITERATIONS
+
+X/.2 TEST,   200 ITERATIONS
+
+     The benchmark program used the real-time clock inside my 800XL to time how long it took for each Basic to perform each test, along with the amount of time to run all the tests together. The total time to run all the tests is interesting, because since the results of each test were printed out to the screen, it indicates how efficient each Basic's print-to-screen routine is. The following table is formatted for 80 columns, and shows the average total time each Basic used to run through the entire benchmark program. The time recorded is in jiffies, or 60ths of a second.
+
+-------------------------------------------------------------------------------
+                 Average Total Time Test For Interpreted Basic        
+-------------------------------------------------------------------------------
+BASIC USED    | ATARI | BASIC XE | CTHFB | TB XL | TB 3.2Q |
+                            |   1889|               455|        778|      364|          364|
+
+-------------------------------------------------------------------------------
+                 Average Total Time Test For Compiled Basic        
+-------------------------------------------------------------------------------
+COMPILER USED | MMG | TB XL|
+                                      | 1416|   300|
+
+      Now for a brief examination about each interpreted Basic performed.
+
+ATARI BASIC
+
+     The version of Atari Basic used was revision C. Results of the benchmark program shouldn't differ if ran on revision B. Atari Basic came in last in the benchmark test. Didn't surprise you, did it? However, I don't want to "beat up" on good old Atari Basic too bad. You have to remember when it was designed, and that it fits neatly into 8k of memory. 
+
+BASIC XE
+
+     This is a Basic sold by ICD, and before that by OSS. It has many fine features which weren't accessed by the benchmark program. One of these features is the fact that it can use banked ram on machines with more than 64k. For running the benchmark program, it had all extension loaded in, and FAST was set to ON. It finished second.
+
+CTH FASTBASIC
+
+     This is a shareware Basic, sold by my company, CTH Enterprises. It came in third. It features a built-in screen accelerator, and a built-in fast floating point math package. It should be noted that the numerical results printed out as the result of each individual test varied from the other Basic's. This is because of the custom fast floating point package. It is more accurate than any of the other Basics tested.
+
+TURBO BASIC XL, and
+TURBO BASIC 3.2q
+
+     These two Basic's tied for first place! Turbo Basic XL will only run on XL/E computers. It uses the ram that is underneath the operating system rom, in the $C000 through $FFFF address area. Unfortunately, Sparta dos 3.2d also wants to use this area for itself, making Turbo Basic XL incompatible with it.
+
+     Turbo Basic 3.2q is a variation of Turbo Basic 400/800, originally written for the old Atari 400's and 800's. The 3.2q version was made so that it is fully compatible with Sparta dos 3.2d. It supports all the same functions that Turbo Basic XL has, except for the BRUN and BLOAD functions. However, these can be easily done with XIO's.
+
+      Now for a brief examination about how the compiled Basic's performed.
+
+
+MMG COMPILER
+
+     When program compilation starts, you have the option of including either the integer or the floating point math package into your program. Integer math is much faster than floating point math. However, integer math cannot handle functions that require a floating decimal point, such as many of the individual tests within the benchmark program require. To be fair, if I had made a benchmark program based upon integer math, and had included the integer math package into the compiled code, the MMG compiled Basic program would have fared much better. But in real world programs, floating point math is used more often than integer math. That's why I included floating point math functions into the benchmark program.
+
+     One of the big advantages of using the MMG compiler, is that it produces object code which will run under any dos. Another advantage is if you actually DO have a program which only uses integer math. You can include the integer math package into your compiled code, producing a very fast running program.
+
+TURBO BASIC XL
+
+     This is the winner, in the compiler category. It came in at a blazing 300 jiffies for the average run time of the entire benchmark program. There is one major detraction from this otherwise excellent compiler. Neither the compiler, or the compiled code it produces, will run under Sparta dos 3.2d. It functions just fine under Sparta dos X, MyDos, and Atari dos 2.0/2.5. 
+
+     So, which basic is the best? It depends upon what you want to do. I'm sure that it is fairly obvious that each Basic has its own strong points, and their own weaknesses. But for all out speed, Turbo Basic wins, hands down!
+
+-------------------------------------------------------------------------------
+
+     If you would like to download the benchmark program, you may do so from the bbs listed at the end of this article. 
+
+Closer To Home BBS
+419-368-4413
+24 Hours/7 Days
+300/1200/2400
+
