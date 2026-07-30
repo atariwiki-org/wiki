@@ -14,11 +14,11 @@ BF is a very minimalistic language, with only eight commando's, yet it is (theor
 
 - Tom Hunt has another [BF implementation](http://cth.dtdns.net/mouse/) for the A8 written in CC65 (see bottom of page).
 - A new Atari BrainFuck was written by Pawel "Cosi" Piatkowski, [Announcement in Polish](http://atarionline.pl/v01/index.phtml?subaction=showfull&id=1216645285&archive=&start_from=&ucat=1&ct=nowinki), download of atr with English manual and program file [here](http://atarionline.pl/v01/index.phtml?ct=utils&sub=4.+Programowanie&tg=Brainfuck#Brainfuck).
-- [Wikipedia Entry on BrainF\*ck|http://www.wikipedia.org/wiki/Brainfuck\_programming\_language]()
-- [The BrainF\*ck Archive|http://esoteric.sange.fi/brainfuck/]()
-- [A Page about BrainF\*ck|http://home.planet.nl/~faase009/Ha\_BF.html]()
-- [Another Page about BrainF\*ck|http://www.catseye.mb.ca/esoteric/bf/]()
-- [Deutsche Infos zu BrainF\*ck|http://www.loaderror.org/bf.htm]()
+- [Wikipedia Entry on BrainF\*ck|(http://www.wikipedia.org/wiki/Brainfuck\_programming\_language]()
+- [The BrainF\*ck Archive|(http://esoteric.sange.fi/brainfuck/)
+- [A Page about BrainF\*ck|(http://home.planet.nl/~faase009/Ha\_BF.html)
+- [Another Page about BrainF\*ck|(http://www.catseye.mb.ca/esoteric/bf/)
+- [Deutsche Infos zu BrainF\*ck|(http://www.loaderror.org/bf.htm)
 
 ## How to use
 
