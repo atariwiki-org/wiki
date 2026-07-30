@@ -291,20 +291,19 @@ might be: 4=7.  This is false.
 Here is a list of the Action!
 relationals:
 
-a=b tells if a and b are equal
+- a=b tells if a and b are equal
 
-a\<\>b tests to see if a and b are
-not equal
+-  a\<\>b tests to see if a and b are not equal
 
-a#b the same as a\<\>b
+-  a#b the same as a\<\>b
 
-a\>b is a greater than b
+-  a\>b is a greater than b
 
-a\>=b is a greater than or equal to b
+-  a\>=b is a greater than or equal to b
 
-a\<b test to see if a is less than b
+-  a\<b test to see if a is less than b
 
-a\<=b is a less than or equal to b
+-  a\<=b is a less than or equal to b
 
 The are 2 more, AND and OR and I will
 cover them in the next tutorial.
@@ -337,7 +336,7 @@ The statements between the IF and the
 FI should be indented a few spaces
 to show that they are dependent on
 the IF statement.  And it also makes
-it alot easier to read!
+it a lot easier to read!
 
 try this program:
 
@@ -476,8 +475,8 @@ The command name is EXIT.  Lets
 say your program has to input a
 large number.  And the next numbers
 are divided into the bug number
-until the answer gets down below
-10\.  But if the user inputs a 0 to
+until the answer gets down below 10.
+ But if the user inputs a 0 to
 divide into, the is very bad since
 a division by 0 doesn't exist.
 
