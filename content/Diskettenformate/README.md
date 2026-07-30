@@ -33,7 +33,7 @@
 | [Atari DOS XE](../Companies/Atari/Atari_DOS/Atari_DOS_XE/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
 | [BIBO-DOS](../Companies/CompyShop/BIBO-DOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
 | [Turbo-DOS XE](../Companies/Reitershan_Computertechnik/Turbo-DOS/README.md) | Y    | Y     | Y     | Y     | N     | N       | 
-| [TOP-DOS](../TOP-DOS/README.md) | Y    | Y     | Y     | Y     | ?     | N       | 
+| [TOP-DOS](../Companies/Eclipse_Software/TOP-DOS/README.md) | Y    | Y     | Y     | Y     | ?     | N       | 
 | Mach DOS 3.7 | Y    | N     | Y     | Y     | N     | N       | 
 | [MyDOS](../DOS/MyDOS/README.md) | Y    | Y     | Y     | Y     | Y     | N       | MyDOS requires a special / external formatter to format 1440 KB- one is available e.g. with the CSS Black Box or the CSS Floppyboard,maybe there are also some other external formatters...?!?
 | [SpartaDOS](../SpartaDOS/README.md) | Y    | Y     | Y     | Y     | Y     | Y       | 

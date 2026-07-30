@@ -2,7 +2,7 @@
 
 Copyright (C) ECLISPSE SOFTWARE \& Richard K. Bennett
 
-TOP-DOS was created by Richard K. Bennett of [ECLISPSE SOFTWARE](../Eclipse_Software/README.md( as a result of the experience with its predecessor, DOS-MOD. With all its professional features, TOP-DOS should be compatible with all your ATARI software.
+TOP-DOS was created by Richard K. Bennett of [Eclipse Software](../README.md) as a result of the experience with its predecessor, DOS-MOD. With all its professional features, TOP-DOS should be compatible with all your ATARI software.
 
 ## Manual
 

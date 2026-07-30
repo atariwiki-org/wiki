@@ -748,6 +748,10 @@
     
   - [Dorsett Atari World History HW](Companies/Dorsett_Educational_Systems/World_History_HW/README.md)
     
+ - [Eclipse Software](Companies/Eclipse_Software/README.md)
+   
+  - [TOP-DOS](Companies/Eclipse_Software/TOP-DOS/README.md)
+    
  - [Happy Computers Inc.](Companies/Happy_Computers/README.md)
    
   - [Atmas I - Editor and Macroassembler](Companies/Hofacker/Atmas_I/README.md)
@@ -2379,8 +2383,6 @@
 - [The!Cart](TheCart/README.md)
   
 - [The Atari Basic Source Book](The_Atari_Basic_Source_Book/README.md)
-  
-- [TOP-DOS](TOP-DOS/README.md)
   
 - [Atari Trakball (CX22)](Trackball/README.md)
   
