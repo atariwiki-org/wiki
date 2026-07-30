@@ -13,6 +13,8 @@ Due to the flexible cross-compiler, it was easy to use real assembler primitives
 
 # Target
 
+| Target | Status |
+|-|-
 | MISC | Ready! |
 | 6502 | Ready! |
 | C165 | in development |

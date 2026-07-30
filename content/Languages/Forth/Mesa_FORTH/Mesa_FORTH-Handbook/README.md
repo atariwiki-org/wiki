@@ -524,6 +524,8 @@ convenience.
 
 The functions provided are:
 
+| Function    | Description  |
+|-|-
 | CLOSE    | close file/device   |
 | GET      | get character(byte)  |
 | GETBUF   | get buffer from file/device  |
@@ -587,6 +589,8 @@ Words  have  been  defined  to  access  the sound, graphics, and
 joystick  functions  provided  by  the  ATARI O.S.  These words are
 similar to the ATARI BASIC commands providing the same features:
 
+| Word| Description|
+|-|-
 | COLOR | selects color  |
 | DR. | draws line (DRAWTO)  |
 | GR. | opens screen for graphics (GRAPHICS)  |
