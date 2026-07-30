@@ -2232,7 +2232,7 @@
    
  - [Disk formats / Diskettenformate](Todos/Diskettenformate/README.md)
    
- - [](Todos/DOS_Command_Processor/README.md)
+ - [DOS Command Processor](Todos/DOS_Command_Processor/README.md)
    
  - [DOS Setup](Todos/DOS_Setup/README.md)
    
@@ -2330,7 +2330,7 @@
    
  - [Query Console Keys](Todos/Query_Console_Keys/README.md)
    
- - [](Todos/Ram-Disk_under_OS-ROM_for_XL_XE/README.md)
+ - [Ram-Disk under OS-ROM for XL XE](Todos/Ram-Disk_under_OS-ROM_for_XL_XE/README.md)
    
  - [RAM Move Routine for BASIC](Todos/RAM_Move_Routine_for_Basic/README.md)
    

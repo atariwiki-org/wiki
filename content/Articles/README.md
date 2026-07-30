@@ -205,7 +205,7 @@
 ### Business
 
 - [Atari Timewise (DX5047) (Basic)](../Companies/Atari/Atari_Timewise/README.md)
-- [The\_Atari\_Accountant\_Series](../Companies/Atari/The_Atari_Accountant/README.md)
+- [The Atari Accountant](../Companies/Atari/The_Atari_Accountant/README.md)
 - [The Bookkeeper CX414](../Companies/Atari/The_Bookkeeper/README.md)
 - [Atari The Home Filing Manager (CX8129)](../Companies/Atari/The_Home_Filing_Manager/README.md)
 - [Atari Home Accounting System](../Companies/Atari/Atari_Home_Accounting_System/README.md)
@@ -240,7 +240,7 @@
 ### Diagnostics
 
 - [Atari 400-800 Stand Alone System Test](../Companies/Atari/Atari_400-800_Stand_Alone_System_Test/README.md)
-- [Super\_SALT](../Super_SALT/README.md)
+- [Super\_SALT](../CPU_Super_SALT/README.md)
 - [ATARI Diagnostic Test Tape (FD100008)](../Companies/Atari/Atari_Diagnostic_Test_Tape/README.md)
 - [AUSTRO.RECOVER](../Companies/AUSTRO.COM/AUSTRO.RECOVER/README.md)
 
@@ -443,7 +443,7 @@ All of the following have no page yet
 #### Lernen
 
 - [Tipp Trainer (TXG 9512)](../Companies/Atari/Atari_Germany/Tipp_Trainer/README.md)
-- [Städte und Länder](../Staedte_und_Laender/README.md)
+- Städte und Länder - MISSING
 - Europäische Städte und Länder - MISSING
 - [Rechtschreibtrainer (DXG 5713)](../Companies/Atari/Atari_Germany/Rechtschreibtrainer/README.md)
 
@@ -667,10 +667,10 @@ The below broken links will be filled up with content in the future, meanwhile, 
 
 - [Disk formats / Diskettenformate](../Todos/Diskettenformate/README.md)
 - [Disk drive formats / Laufwerksformate](../Todos/Laufwerksformate/README.md)
-- [Ram-Disk\_under\_OS-ROM\_for\_XL\_XE](../Todos/Ram-Disk_under_OS-ROM_for_XL_XE/README.md) - Article from German "Happy Computer" magazine
+- [Ram-Disk under OS-ROM for XL XE](../Todos/Ram-Disk_under_OS-ROM_for_XL_XE/README.md) - Article from German "Happy Computer" magazine
 - [CIO Tutorial](../Todos/CIOV_Tutorial/README.md)
 - [File Extensions of Atari disk files](../Todos/File_Suffix/README.md)
-- [DOS\_Command\_Processor](../Todos/DOS_Command_Processor/README.md)
+- [DOS Command Processor](../Todos/DOS_Command_Processor/README.md)
 - [Der XIO-Befehl für Dateioperationen](../Todos/Der_XIO_Befehl_fuer_Dateioperationen/README.md)
 - [Der XIO Befehl für Grafikoperationen](../Todos/Der_XIO_Befehl_fuer_Grafikoperationen/README.md)
 - Other [DOS-Topics](../Todos/DOS_topics/README.md)
@@ -764,7 +764,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 #### Assembler/Debugger
 
 - [Atari Assembler Editor](../Companies/Atari/Atari_Assembler_Editor/README.md)
-- [Atari Macro Assembler and Program Text Editor (AMAC)](../AMAC/README.md)
+- [Atari Macro Assembler and Program-Text Editor (CX8121)](../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md)
 - [OSS EASMD Version 1.0](../Companies/OSS/EASMD/README.md)
 - [OSS BUG/65](attachments/BUG-65_FROM_3000.txt)
 - [OSS MAC/65](Mac65)
@@ -786,14 +786,14 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 - [Atari Basic Source Code 3](attachments/AtariBasic.src)
 - [BASIC A+](../Companies/OSS/BASIC_Aplus/README.md)
 - [BASIC XL](../Companies/OSS/BASIC_XL/README.md)
-- [OSS Basic XE](../Companies/OSS/BASIC_XE/README.md)
-- [OSS Integer Basic](../Companies/OSS/Integer_BASIC/README.md)
+- [BASIC XE](../Companies/OSS/BASIC_XE/README.md)
+- [Integer BASIC](../Companies/OSS/Integer_BASIC/README.md)
 - [Microsoft Basic](http://www.pagetable.com/?p=46)
 - [Microsoft BASIC for 6502-Original Source Code from 1978](https://github.com/brajeshwar/Microsoft-BASIC-for-6502-Original-Source-Code-1978)
 - [ATARI BASIC FOR GCC](../Languages/BASIC/Atari_BASIC/Atari_BASIC_for_GCC/README.md)
 - [Turbo-BASIC XL](../Languages/BASIC/Turbo-BASIC_XL/README.md)
-- [Altirra Basic](../Languages/BASIC/Altirra_BASIC/README.md)
-- [Basic++](../Languages/BASIC/BASIC_plus_plus/README.md)
+- [Altirra BASIC](../Languages/BASIC/Altirra_BASIC/README.md)
+- [BASIC++](../Languages/BASIC/BASIC_plus_plus/README.md)
 
 #### C
 
