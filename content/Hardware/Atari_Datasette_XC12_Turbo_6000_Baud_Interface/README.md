@@ -8,8 +8,8 @@ After the "CHAOS LOADER" started put in your Turbo Software cassette and press P
 
 There are several utilities to transfer files between normal cassette and turbo system or floppy station and turbo system:
 
-- Turbo-Cas-Trans: (TURBTRAN.COM TURBOCC.CAS) transfers turbo files to normal (600 baud) cassette files
-- Cas-Turbo-Trans: (CCTURBO.COM) transfers normal cassette files to turbo files
+- Turbo-Cas-Trans: (TURBTRAN.COM TURBOCC.CAS) transfers Turbo files to normal (600 baud) cassette files
+- Cas-Turbo-Trans: (CCTURBO.COM) transfers normal cassette files to Turbo files
 - Turbo-Disk-Trans: (TDTRANS.COM TD2.COM TD3.COM) copies files from Turbo to Disk
 - Disk-Turbo-Trans: (DT2.COM DTTRANS.COM DTTRANS2.COM) copies files from Disk to Turbo
 
@@ -30,9 +30,11 @@ All the software is provided on a disk. The .COM files must usually be loaded fr
 ## Table of Software used with the Turbo interface and maximum baud rates
 
 still missing...
+
 | # | Program name | max. Baud rate
-| 1| Atari Datasette | 600
-| 2| ... | 6000
+|---|--------------|----------------
+| 1 | Atari Datasette | 600
+| 2 | ...          | 6000
 
 ## Parts
 
