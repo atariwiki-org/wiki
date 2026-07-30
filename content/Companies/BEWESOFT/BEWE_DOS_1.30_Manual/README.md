@@ -48,7 +48,7 @@ lower case letters - It must be substituted by corresponding parameter, for exam
 
 \[parameter\] - This means that the parameter may be used, but if you needn't it, you can simply skip this one, and type rest of the example. (Don't type the characters "\[" and "\]" !)
 
-(ON|OFF) - This tell you that you need to type "ON", or "OFF" (not both).
+(ON\|OFF) - This tell you that you need to type "ON", or "OFF" (not both).
 
 name - Name of a file or directory. Names can be up to 8 characters long, and may contain upper case letters, numbers, and the "\_" character. Any character, which is not allowed in the name, will terminate the whole specification of a file.
 
@@ -282,9 +282,9 @@ Examples: "COPY \>DOS\> D8:" - Copy the whole directory DOS to drive 8 (RamDisk)
 ### BACKUP (external command)
 
 ```
-BACKUP Dn: file [/S[max.sector][/D(S\|M\|D\|X)]][/Lmax.len.]
+BACKUP Dn: file [/S[max.sector][/D(S|M|D|X)]][/Lmax.len.]
 BACKUP file Dn: [/F[X]]
-BACKUP Dn: Dn: [/S[max.sector][/D(S\|M\|D\|X)]][/F[X]]
+BACKUP Dn: Dn: [/S[max.sector][/D(S|M|D|X)]][/F[X]]
 ```
 
 This command is there for making backup copies of whole disks. The first syntax is for copying the whole disk into file(s), second syntax is for restoring the disk back from file(s), and the third syntax is for copying directly from one disk to another. Filenames may not contain any extensions; if there is any, it will be overwritten. BACKUP will add its own extensions (serial number of the file).
@@ -384,7 +384,7 @@ This command will jump to a program in cartridge, or to internal Basic (if enabl
 ### BASIC (internal command)
 
 ```
-BASIC (ON\|OFF)
+BASIC ()
 ```
 
 This command can turn the internal Basic (XL/XE) on or off. With Basic off you have more free memory, and several programs works in this mode only. This command works only with no cartridge installed, and it'll allways erase data from user memory (Basic program).
@@ -404,7 +404,7 @@ The "RUN" command may be used by everyone for a few purposes: "RUN" - Restart th
 ### VERIFY (external command)
 
 ```
-VERIFY (ON\|OFF)
+VERIFY ()
 ```
 
 With this command you can swith the "Write with verify" function on or off. The common state is "OFF" - this means that the sectors written to a disk are not verified. It allows the drive to write quickly. If you turn this function "ON", it'll read every sector after writing it, and compare the data. This results in a very slow writing; it may only be useful while using bad quality disks. (Better buy good disks!)
@@ -574,7 +574,7 @@ With the "/R" parameter a reduced version will be installed. It allows only read
 ### MENU (external command)
 
 ```
-MENU [Dn:][/S(E\|N\|S\|D\|0)][/B(Y\|N)][/Q(Y\|N)]
+MENU [Dn:][/S(E|N|S|D|0)][/B(Y|N)][/Q(Y|N)]
 ```
 
 The menu program is a comfortable tool for operations with many selected files, for copying between two disks with only one disk drive, and for converting files from Atari DOS 2 format to BW-DOS and back.
@@ -726,7 +726,7 @@ When the buffer is full, and you try to type the 33rd character, you'll hear a n
 ### ARGSPRN (resident command)
 
 ```
-ARGSPRN [/(N\|C\|L\|CL)]
+ARGSPRN [/(N|C|L|CL)]
 ```
 
 This is a driver for the printer port of the ARGS RTC/P V2 cartridge (by ARGS). The parameter changes the conversion of the ATASCII EOL character: "/N" is no conversion (for graphics print, or when your software already contains a conversion), "/C" sends the CR character (like other printer-interfaces do; you must set the "Auto-feed" feature to "on" on your printer), "/L" sends the LF character (the default; hopefully it will work with most of printers), and "/CL" sends both CR and LF (this is the correct PC-compatible mode, but it needs a few bytes more in memory, and it may also cause problems with graphics print).
@@ -766,7 +766,7 @@ This is the command for loading data files (non DOS loadable) into memory. When 
 ### OFFLOAD (External command, see description)
 
 ```
-OFFLOAD file [offset] [/(Q\|L)]
+OFFLOAD file [offset] [/(Q|L)]
 ```
 
 This command is displaying structure of a DOS loadable file. The starting and ending adress, and the file position of the data block (after the header) will be displayed for each segment.
@@ -958,6 +958,7 @@ OPEN #iocb,aux1,aux2,"Dn:[path>]filename"
 This command will open specified IOCB for access to the specified file on disk. The value of "aux1" may be:
 
 | Mode | Function |
+|------|----
 |    4 | Reading from the file. |
 |    6 | Reading the directory listing. When the "aux2" value is greater than 127, the listing will be in the same format as provided by "DIR" command in the CP; with "aux2" less than 128 it'll be in the format of "DIRS" command. You may not open more than one directory listing at the same time. |
 |    8 | Writing to the file. If the file exists already, it'll be replaced by the new file. When "/A" is added to the filename, it'll work in the same way as the mode 9. |
