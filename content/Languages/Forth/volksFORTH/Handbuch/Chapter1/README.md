@@ -1,6 +1,5 @@
 # Handbuch volksFORTH Version 3.90
 
-
 (c) 1985-2010 FORTH-Gesellschaft e.V. Bernd Pennemann. Georg Rehfeld. Dietrich Weineck Klaus Schielslek. Jörg Staben. Klaus Kohl. Carsten Strotmann
 
 Die Autoren haben sich In diesem Handbuch um eine vollständige und akkurate Darstellung bemüht. Die Im Handbuch enthaltenen Informationen dienen jedoch allein der Produktbeschreibung und sind nicht als zugesicherte Eigenschaften im Rechtssinne aufzufassen. Etwaige Schadensersatzansprüche gegen die Autoren gleich aus welchem Rechtsgrund sind ausgeschlossen. Es wird keine Gewähr übernommen dass die angegebenen Verfahren frei von Schutzrechten Dritter sind.

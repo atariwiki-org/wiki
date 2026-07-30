@@ -24,24 +24,24 @@ Das Auffälligste an der volksFORTH-Oberfläche ist die inverse Statuszelle In d
 Diese Statuszeile zeigt von links nach rechts folgende Informationen, wobei "/" für "oder" steht,
 
 | Information | Beschreibung
-|-|-
-| \<2/8/10/16\>  |  die zur Zeit gültige Zahlenbasis (dezimal)
-| s <xx>  | nennt die Anzahl der Zahlenwerte, die zum Verarbeiten bereitliegen
+|-------------|--------------
+| \<2/8/10/16\> | die zur Zeit gültige Zahlenbasis (dezimal)
+| s <xx>      | nennt die Anzahl der Zahlenwerte, die zum Verarbeiten bereitliegen
 | Dic <xxxx>  | nennt den freien Speicherplatz
-| Scr <xx>  | Ist die Nummer des aktuellen Quelltextblocks
-| A: / C:  | gibt das aktuelle Laufwerk an (MS-DOS)
+| Scr <xx>    | Ist die Nummer des aktuellen Quelltextblocks
+| A: / C:     | gibt das aktuelle Laufwerk an (MS-DOS)
 | \<name\>.\<ext\> | zeigt den Namen der Datei, die gerade bearbeitet wird. Dateien haben im MS-DOS sowohl einen Namen <name> als auch eine dreibuchstabige Kennung, die Extension <ext>, wobei auch Dateien ohne Extension angelegt werden können.
 | FORTH FORTH  FORTH | zeigt die aktuelle Suchreihenfolge gemäß dem Vokabularkonzept. Ein Beispiel dafür sind die Assembler-Befehle: Diese befinden sich In einem Vokabular namens **ASSEMBLER** und **assembler words** zeigt ihnen den Befehlsvorrat des Assemblers an. Achten Sie bitte auf die rechte Seite der Statuszeile. wo jetzt **assembler forth forth** zu sehen ist. Da Sie aber jetzt - noch - keine Assembler-Befehle einsetzen wollen, schalten Sie bitte mit **forth** die Suchlaufpriorität wieder um. Die Statuszeile zeigt wieder das gewohnte **forth forth forth** .
 
 Zur Orientierung Im Arbeitssystem stellt das volksFORTH einige standardkonforme Wörter zur Verfügung:
 
 | Wort | Beschreibung
-|-|-
+|------|--------------
 | words | zeigt Ihnen die Befehlsliste von FORTH, die verfügbaren Wörter. Diese Liste stoppt bei einem Tastendruck mit der Ausgabe oder bricht bei einem <ESC> ab.
 | files | **MS-DOS**: zeigt alle im System angelegten logischen Datei-Variablen, die zugehörigen Handle Nummern, Datum und Uhrzeit des letzten Zugriffs und ihre entsprechenden physikalischen DOS-Dateien. Eine solche FORTH-Datei wird allein durch die Nennung ihres Namens angemeldet. Die MSDOS-Dateien im Directory werden mit **dir** angezeigt.
-| path  | **MS-DOS**: informiert über eine vollständige Pfadunterstützung nach dem MSDOS-Prinzip, allerdings vollkommen unabhängig davon. Ist kein Suchpfad gesetzt. so gibt **path** nichts aus.
+| path | **MS-DOS**: informiert über eine vollständige Pfadunterstützung nach dem MSDOS-Prinzip, allerdings vollkommen unabhängig davon. Ist kein Suchpfad gesetzt. so gibt **path** nichts aus.
 | order | beschreibt die Suchreihenfolge In den Befehlsverzeichnissen (Vokabular).
-| vocs  | nennt alle diese Unterverzeichnisse (vocabularies).
+| vocs | nennt alle diese Unterverzeichnisse (vocabularies).
 
 ## Arbeiten mit Programm- und Datenfiles (MS-DOS / ATARI-ST / CP/M )
 
@@ -156,30 +156,30 @@ Sie werden nach der Eingabe des dreibuchstabigen Kürzels gefragt. Dieses Kürze
 Beim Editieren stehen Ihnen folgende Funktionen zur Verfügung:
 
 | Taste | Funktion
-|-------|---------
-| F1 | gibt Hilfestellung für den Editor
-| ESC | verlässt den Editor mit dem sofortigen Abspeichern der Änderungen.
+|-------|----------
+| F1    | gibt Hilfestellung für den Editor
+| ESC   | verlässt den Editor mit dem sofortigen Abspeichern der Änderungen.
 | CTRL-U | (undo) macht alle Änderungen rückgängig, die noch nicht auf Disk zurückgeschrieben wurden.
 | CTRL-E | verlässt den Editor ohne sofortiges Abspeichern.
 | CTRL-F | (fix) sucht das Wort rechts vom Cursor, ohne den Editor zu verlassen.
 | CTLR-L | (showioad) lädt den Screen ab Cursorposition.
 | CTRL-N | fügt an Cursorposition eine neue Zelle ein.
 | CTRL-PgDn | splittet Innerhalb einer Zelle diese Zeile.
-| CTRL-S  | (Scr#) zeigt die Nummer des gerade editierten Screens auf dem Stack ab: z.B. für ein folgendes load oder plist.
+| CTRL-S | (Scr#) zeigt die Nummer des gerade editierten Screens auf dem Stack ab: z.B. für ein folgendes load oder plist.
 | CTRL-Y | löscht die Zelle an Cursorposition
 | CTRL-PgUp | fügt innerhalb einer Zelle den rechten Teil der unteren Zelle an die obere Zeile ein (join).
-| TAB | bewegt den Cursor einen großen Tabulator vor.
+| TAB   | bewegt den Cursor einen großen Tabulator vor.
 | SHIFT-TAB | bewegt den Cursor einen kleinen Tabulator zurück.
-| F2 | (suchen/ersetzen) erwartet eine Zeichenkette, die gesucht werden soll und eine Zeichenkette, die statt dessen eingefügt werden soll. Wird eins Übereinstimmung gefunden, kann man mit R (replace) die gefundene Zeichenkette ersetzen, mit <cr> den Suchvorgang abbrechen oder mit jeder anderen Taste die nächste Übereinstimmung suchen. Auf diese Weise kann man die Quellentexte auch nach einer Zeichenkette durchsuchen lassen. Als Ersatz-String wird dann <CR> eingegeben.
-| F3 | bringt eine Zelle In den Zellenpuffer und löscht sie im Screen.
-| F5 | bringt die Kopie einer Zelle In den Zeilenpuffer.
-| F7 | fügt die Zelle aus dem Zellenpuffer In den Screen ein.
-| F4 | wie F3, nur für ein einzelnes Zeichen.
-| F6 | wie F5, jedoch für ein einzelnes Zeichen.
-| F8 | entspricht F7, bezogen auf ein Zeichen.
-| F9 | vertauscht die aktuelle Datei (**isfile**) mit der Hintergrunddatei (**fromfile**). Erneutes F9-Drücken vertauscht erneut und stellt damit den alten Zustand wieder her. Diese Funktion ist dann sinnvoll, wenn Sie eine Datei bearbeiten, sich zwischendurch aber mit CRTL-F ein Wort anzeigen lassen. Dann stellt F9 (=fswap) die alte Dateiverteilung wieder her, die sich durch das **fix** geändert hat.
+| F2    | (suchen/ersetzen) erwartet eine Zeichenkette, die gesucht werden soll und eine Zeichenkette, die statt dessen eingefügt werden soll. Wird eins Übereinstimmung gefunden, kann man mit R (replace) die gefundene Zeichenkette ersetzen, mit <cr> den Suchvorgang abbrechen oder mit jeder anderen Taste die nächste Übereinstimmung suchen. Auf diese Weise kann man die Quellentexte auch nach einer Zeichenkette durchsuchen lassen. Als Ersatz-String wird dann <CR> eingegeben.
+| F3    | bringt eine Zelle In den Zellenpuffer und löscht sie im Screen.
+| F5    | bringt die Kopie einer Zelle In den Zeilenpuffer.
+| F7    | fügt die Zelle aus dem Zellenpuffer In den Screen ein.
+| F4    | wie F3, nur für ein einzelnes Zeichen.
+| F6    | wie F5, jedoch für ein einzelnes Zeichen.
+| F8    | entspricht F7, bezogen auf ein Zeichen.
+| F9    | vertauscht die aktuelle Datei (**isfile**) mit der Hintergrunddatei (**fromfile**). Erneutes F9-Drücken vertauscht erneut und stellt damit den alten Zustand wieder her. Diese Funktion ist dann sinnvoll, wenn Sie eine Datei bearbeiten, sich zwischendurch aber mit CRTL-F ein Wort anzeigen lassen. Dann stellt F9 (=fswap) die alte Dateiverteilung wieder her, die sich durch das **fix** geändert hat.
 | SHIFT-F9 | schaltet auf die Kommentartexte (shadowscreens) um und beim nächsten Drücken wieder zurück.
-| F10 | legt den aktuellen Screen kurz beiseite, um ihn dann mit einem Druck auf F9 wieder bearbeiten zu können. Sollte Ihnen das volksFORTH eine der Kopierfunktionen **copy** oder **convey** mit der Meldung ''TARGET BLOCK NOT EMPTY'' verweigern, weil **isfile** und **fromfile** unterschiedlich sind, so sorgt F10 wieder für klare Verhältnisse.
+| F10   | legt den aktuellen Screen kurz beiseite, um ihn dann mit einem Druck auf F9 wieder bearbeiten zu können. Sollte Ihnen das volksFORTH eine der Kopierfunktionen **copy** oder **convey** mit der Meldung ''TARGET BLOCK NOT EMPTY'' verweigern, weil **isfile** und **fromfile** unterschiedlich sind, so sorgt F10 wieder für klare Verhältnisse.
 
 Noch ein Hinweis zum Editor:
 
@@ -260,7 +260,7 @@ ein, so werden während des Ladens diese Meldungen ausgegeben. Das Wort **.(** l
 Eine Besonderheit von volksFORTH ist, dass selbst im Editor Funktionen des Interpreters/Compilers zur Verfügung stehen. Dieses Interpretieren und Kompilieren im Editor nennt sich Showload.
 
 | Taste | Beschreibung
-|-|-
+|-------|--------------
 | CTRL-F | (fix) sucht und zeigt das Wort rechts vom Cursor, ohne den Editor zu verlassen.
 | CTRL-L | (showload) lädt den Screen ab Cursorposition.
 
@@ -357,7 +357,7 @@ Im Übrigen empfehlen wir bei allen Zahlen über 9 dringend die Benutzung der so
 | Präfix | Zahlensystem
 |--------|--------------
 | $      | für Hexadezimal-,
-| \&     | für Dezimal- und
+| \&      | für Dezimal- und
 | %      | für Binarzahlen.
 
 Man vermeldet so, dass irgendwelche Dateien nicht - oder noch schlimmer, falsch - kompiliert werden, weil man gerade im anderen Zahlensystem ist. Außerdem Ist es möglich, hexadezimale und dezimale Zahlen beliebig zu kombinieren. Je nachdem, was gerade sinnvoller ist. In den Quellentexten finden Sie genug entsprechende Beispiele.
@@ -387,13 +387,13 @@ Im Printer-Interface sind einige Worte zur Ausgabe eines formatierten Listings e
 ### Glossar
 
 | Wort | Stack-Kommentar | Beschreibung
-|------|-----------------|-------------
-| pthru | ( von bis -- ) | druckt die angegebenen Blöcke immer zu sechst auf einer Seite aus.
-| document | ( von bis -- ) | arbeitet wie **pthru**, druckt aber jeweils drei Quelltextblöcke und drei Kommentarblöcke auf einer Seite aus
-| listing | ( -- ) | erstellt ein Listing der gesamten Datei, indem jeweils drei Quelltextblöcke und drei Kommentar-Blöcke auf einer Seite ausgedruckt werden
-| plist | ( scr# -- ) | druckt einen angegebenen Block auf dem Drucker aus
-| scr | ( -- addr ) | Ist eine Variable, die die Nummer des gerade editierten Screens enthält. Vergleiche {pre}r#, list, (error{/pre}
-| r# | ( -- addr ) | ist eine Variable, die den Abstand des gerade editierten Zeichens von Anfang des gerade editierten Screens enthält.
+|------|-----------------|--------------
+| pthru | ( von bis -- )  | druckt die angegebenen Blöcke immer zu sechst auf einer Seite aus.
+| document | ( von bis -- )  | arbeitet wie **pthru**, druckt aber jeweils drei Quelltextblöcke und drei Kommentarblöcke auf einer Seite aus
+| listing | ( -- )          | erstellt ein Listing der gesamten Datei, indem jeweils drei Quelltextblöcke und drei Kommentar-Blöcke auf einer Seite ausgedruckt werden
+| plist | ( scr# -- )     | druckt einen angegebenen Block auf dem Drucker aus
+| scr  | ( -- addr )     | Ist eine Variable, die die Nummer des gerade editierten Screens enthält. Vergleiche {pre}r#, list, (error{/pre}
+| r#   | ( -- addr )     | ist eine Variable, die den Abstand des gerade editierten Zeichens von Anfang des gerade editierten Screens enthält.
 
 ## Druckeranpassung
 
@@ -426,18 +426,18 @@ Leider sind im Moment im volksFORTH noch deutsche und engllsche Fehlermeldungen 
 Die wichtigsten Befehle noch einmal im überblick:
 
 | Wort | Beschreibung
-|-|-
+|------|--------------
 | status | steuert die Status-Zelle
-| words  | zeigt die gerade verfügbaren Befehle an
+| words | zeigt die gerade verfügbaren Befehle an
 | files | zeigt die angemeldeten Dateien
 | path | verändert oder nennt den Datei-Suchpfad
 | order | listet die Suchreihenfolge der Befehlsgruppen auf
 | vocs | nennt alle verfügbaren Befehlsgruppen
 | view | zeigt und
-| fix | editiert den Quellentext eines bestimmten Wortes
+| fix  | editiert den Quellentext eines bestimmten Wortes
 | help | zeigt - wenn vorhanden - den Kommentartext eines Wort
-| full | schaltet das Blidschirmfenster auf die volle Größe  |
+| full | schaltet das Blidschirmfenster auf die volle Größe
 | page | löscht das aktuelle Fenster / den Bildschirm
-| index | - nicht resident - zeigt den Inhalt einer Block-Datei |
+| index | - nicht resident - zeigt den Inhalt einer Block-Datei
 | list | zeigt den Inhalt eines Screens.
 | include | lädt eine ganze Befehlsgruppe oder einen Programmteil

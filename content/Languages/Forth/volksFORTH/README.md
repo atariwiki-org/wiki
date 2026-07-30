@@ -20,7 +20,7 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 
 ## volksFORTH Handbook (English)
 
-- [Chapter 1: volksFORTH Version 3.90 Manual (work in progress)](Handbook/Chapter1/README.md)
+- [Chapter 1: volksFORTH Version 3.90 Manual](Handbook/Chapter1/README.md)
 
 - [volkFORTH - Handbook - Chapter 2](Handbook/Chapter2/README.md)
 
@@ -30,7 +30,7 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 
 - [Chapter 5: Input / Output in volksFORTH](Handbook/Chapter5/README.md)
 
-- [Chapter 6: Strings (strings) in volksFORTH](Handbook/Chapter6/README.md)
+- [Chapter 6: Strings in volksFORTH](Handbook/Chapter6/README.md)
 
 - [6502 Assembler](Handbook/6502Assembler/README.md)
 
