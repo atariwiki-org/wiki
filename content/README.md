@@ -726,6 +726,10 @@
      
    - [INDUS GT - PUT SYNCHROMESH IN HIGH GEAR](Companies/Indus_Systems/Indus_GT/Indus_GT_Synchromesh/README.md)
      
+ - [Integrated Logic System](Companies/Integrated_Logic_System/README.md)
+   
+  - [RealDOS](Companies/Integrated_Logic_System/RealDOS/README.md)
+    
  - [Klaus Peters](Companies/Klaus_Peters/README.md)
    
   - [Floppy 2000](Companies/Klaus_Peters/Floppy_2000/README.md)
@@ -829,8 +833,6 @@
 - [DOS](DOS/README.md)
   
  - [MyDOS](DOS/MyDOS/README.md)
-   
- - [MyPicoDos](DOS/MyPicoDos/README.md)
    
  - [RealDOS](DOS/RealDOS/README.md)
    
@@ -2118,6 +2120,10 @@
      
  - [Gromit](People/Gromit/README.md)
    
+ - [Matthias Reichl](People/Mathias_Reichel/README.md)
+   
+  - [MyPicoDos](People/Mathias_Reichel/MyPicoDos/README.md)
+    
  - [Paul Nicholls](People/Paul_Nicholls/README.md)
    
   - [SuperDOS](People/Paul_Nicholls/SuperDOS/README.md)
@@ -2144,8 +2150,6 @@
    
 - [Software](Software/README.md)
   
- - [Atari](Software/Atari/README.md)
-   
 - [Thanks](Thanks/README.md)
   
  - [3-D Printer Files](Todos/3D_Printer_Files/README.md)
@@ -2426,11 +2430,17 @@
    
 - [Wiki](Wiki/README.md)
   
+ - [How to contribute?](Wiki/How_to_contribute/README.md)
+   
  - [How to create new pages in the Atari Wiki](Wiki/How_to_create_new_pages_in_the_Atari_Wiki/README.md)
    
  - [How to get Wiki edit permissions?](Wiki/How_to_get_Wiki_edit_permissions/README.md)
    
  - [Atari Wiki Manifesto](Wiki/Manifesto/README.md)
+   
+ - [Title in Titlecase (CX1235, TX23456)](Wiki/Wiki_Example_Article/README.md)
+   
+ - [AtariWiki](Wiki/Wiki_Heading/README.md)
    
  - [Todos](Wiki/Wiki_Todos/README.md)
    

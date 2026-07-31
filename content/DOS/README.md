@@ -2,7 +2,7 @@
 
 %%tabbedSection
 %%tab-english
-The Disk Operating System, short DOS, is a file management system for the [Atari](../Software/Atari/README.md). It's main function is the management of storage such as floppy disk or harddisks. It contains the necessary driver functions for the computer to communicate with the disk-drives or other peripheral devices.
+The Disk Operating System, short DOS, is a file management system for the [Atari](../Companies/Atari/README.md). It's main function is the management of storage such as floppy disk or harddisks. It contains the necessary driver functions for the computer to communicate with the disk-drives or other peripheral devices.
 
 Some Disk Operating Systems consist of two parts,
 In der Regel besteht das DOS aus zwei Teilen:
@@ -10,7 +10,7 @@ In der Regel besteht das DOS aus zwei Teilen:
 ;DUP.SYS:\_\_D\_\_isk \_\_U\_\_tility \_\_P\_\_ackage - exposes the low level functions in a user friendly interface to the user. It also contains some high level functions not available in the FMS, such as disk copy.
 /%
 %%tab-deutsch
-Das Disk Operating System kurz DOS ein Betriebssystem für den [Atari](../Software/Atari/README.md) , dessen Hauptaufgabe die Verwaltung von Speichermedien wie Disketten und Festplatten ist. Es ermöglicht die Kommunikation zwischen Computer und Diskettenstation oder anderen Peripheriegeräten.
+Das Disk Operating System kurz DOS ein Betriebssystem für den [Atari](../Companies/Atari/README.md) , dessen Hauptaufgabe die Verwaltung von Speichermedien wie Disketten und Festplatten ist. Es ermöglicht die Kommunikation zwischen Computer und Diskettenstation oder anderen Peripheriegeräten.
 
 In der Regel besteht das DOS aus zwei Teilen:
 ;DOS.SYS: bietet die Funktionalität für das Anlegen, Umbenennen, Löschen und Lesen von Dateien sowie das Formatieren von Disketten.
@@ -35,7 +35,7 @@ In der Regel besteht das DOS aus zwei Teilen:
 
 ## Game Disk Operating Systems for the Atari
 
-- [MyPicoDos](MyPicoDos/README.md) by HiassofT
+- [MyPicoDos](../People/Mathias_Reichel/MyPicoDos/README.md) by HiassofT
 - MicroDOS by Dennis Keathley
 - NanoDos (NDOS) by Stephan Baucke
 - MicroSpartaDos (MSDOS) by Pawel 'pirx' Kalinowski
