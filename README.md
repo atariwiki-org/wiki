@@ -62,5 +62,6 @@ The aim of the AtariWiki is to provide information in an accurate and well-reada
 ## Attachments
 
 - Use the article's folder name also as prefix for the attachment file name. This way attachment file names are unique with the Wiki and references can be automatically adapted by the AtariWikiTool
-- Use lower-case file extension, e.g. ".atr", not ".atr"
+- Use lower-case file extension, e.g. ".atr", not ".ATR"
+- Upload attachments as individual files if possible, and not a one large ZIP archive with many files.
 
