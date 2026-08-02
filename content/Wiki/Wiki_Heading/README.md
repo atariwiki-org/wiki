@@ -5,4 +5,4 @@ This is the new AtariWiki, the successor to [https://atariwiki.org/wiki](https:/
 © 2010-2026 AtariWiki
 All content in the Wiki is licensed under [Creative Commons Share Alike License](https://creativecommons.org/licenses/by-sa/2.5/), unless otherwise noted.
 
-See [How to contribute to AtariWiki?](../How_to_contribute/README.md) to if you have content that should be added or would like to edit articles yourself.
+See [How to contribute?](../How_to_contribute/README.md) to if you have content that should be added or would like to edit articles yourself.
