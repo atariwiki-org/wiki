@@ -15,14 +15,14 @@ See [Basic writing and formatting syntax](https://docs.github.com/en/get-started
 |-----------------------------|-------------|
 | bin/                        | Tools for checking the consistency |
 | content/                    | Content root folder                |
-| content/\<topic\>             | Topic folder, use title case, use replacement rules given below|
-| content/\<topic\>/attachments | Topic attachments folder, use only for attachments smaller than 5 MB that are not ´*.avi´,´*.flac´,´*.mp3´,´*.mp4´,´*.wav´. |
-| media/\<topic\>/attachments | Topic media attachments folder, use for attachments with 5 MB or more and for ´*.avi´,´*.flac´,´*.mp3´,´*.mp4´,´*.wav´. This folder is not part of the repository to keeps the size manageable. |
+| content/\<article\>             | Article folder, use title case, use replacement rules given below|
+| content/\<article\>/attachments | Article attachments folder, use only for attachments smaller than 5 MB that are not ´*.avi´,´*.flac´,´*.mp3´,´*.mp4´,´*.wav´. |
+| media/\<article\>/attachments | Topic media attachments folder, use for attachments with 5 MB or more and for ´*.avi´,´*.flac´,´*.mp3´,´*.mp4´,´*.wav´. This folder is not part of the repository to keep its size manageable. |
 
 
 ## Replacement Rules
 
-The topic name become folder names, attachment names become filenames.
+The topic names become folder names, attachment names become filenames.
 Therefore, no special characters shall be used in topic and attachment names.
 The following replacement rules apply. 
 
@@ -39,19 +39,29 @@ The following replacement rules apply.
 
 - The title is of type "heading 1"
 - The copyright follows, separated by a single empty line.
-- If Part-numbers are known, the are given in parentheses, with comma-separated numbers
+- If Part-numbers are known, they are given in parentheses, with comma-separated numbers
 - Do not add colons at the end of a heading line.
 
-## Article Wording
-
-The aim of the AtariWiki is to provide information in an accurate and well-readable form. It is not a pure historic archive and does not  reproduce old content 1:1 if it has typos or errors. Therefore, also original documents that are converted into articles will contains such corrections without further indictation.
-
 ````
-# Title (CX1235, TX23456)
+# Example Title (CX1235, TX23456)
 
 Copyright (C) <year> <company>.
 
 <Description>
 
-## ATR-Files
+## ATR Files
+- [Example.atr](attachments/Example.atr)
+
 ````
+
+## Article Wording
+
+The aim of the AtariWiki is to provide information in an accurate and well-readable form. It is not a pure historic archive and does not  reproduce old content 1:1 if it has typos or errors. Therefore, also original documents that are converted into articles will contains such corrections without further indictation.
+
+
+## Attachments
+
+- Use the article's folder name also as prefix for the attachment file name. This way attachment file names are unique with the Wiki and references can be automatically adapted by the AtariWikiTool
+- Use lower-case file extension, e.g. ".atr", not ".ATR"
+- Upload attachments as individual files if possible, and not a one large ZIP archive with many files.
+
