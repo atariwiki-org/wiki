@@ -362,8 +362,6 @@
       
     - [Atari Macro Assembler and Program-Text Editor (CX8121)](Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md)
       
-    - [Atari Macro Assembler (AMAC) DXG8126](Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121_TODO/README.md)
-      
     - [Atari Music I - MISSING](Companies/Atari/Atari_Music_I/README.md)
       
     - [Atari Music II - MISSING](Companies/Atari/Atari_Music_II/README.md)

@@ -1,20 +1,19 @@
 # Atari Macro Assembler (AMAC) DXG8126
 
-Copyright (C) 1981-1983 ATARI, Inc. \& ATARI Elektronik Vertriebsgesellschaft mbH bzw. GmbH  
-Der Atari Macro Assembler ist eine Auskopplung aus dem ATARI CAMAC Assembler Ver 1.0A, welcher wiederum eine Auskoppelung aus dem 6502 Macro Assemblers der Firma [Sorcim](https://en.wikipedia.org/wiki/Sorcim) ist. Sorcim überließ Atari ihren 6502 Macro Assembler in Sublizenz. AMAC, wie der Macro Assembler für den Atari Privatanwender auch genannt wird, war der erste Assembler für den Atari, der in der Lage war, Macros zu verarbeiten. Er war sehr erfolgreich, weil lange Zeit nichts besseres auf dem Markt war.
-
-AMAC war aber nicht der erste Assembler für den Atari. Diese Ehre gebührt allein Kathleen Ann O'Brien mit dem von ihr entwickelten [Atari Assembler Editor](../Atari_Assembler_Editor/README.md), welcher neben dem Assembler auch über einen Editor und Debugger verfügte und als Steckmodul verfügbar war.
-
-Nur der Macro Assembler selber als Programm wäre schwierig zu verkaufen gewesen, daher wurde das Programm noch durch einen Editor ergänzt. Hier kam der universelle [Programm\_Text\_Editor](../Programm_Text_Editor/README.md) von Mike Lorenzen zum Einsatz, mit dem man nicht nur Programme in Assembler schreiben konnte, sondern auch in anderen Programmiersprachen sowie einfache Texte verarbeiten konnte. Das Programm war jedoch nicht in AMAC integriert, sondern nur als separates Programm verfügbar und musste jeweils neu gestartet werden. Diese Vorgehensweise machte das Arbeiten mit dem AMAC etwas umständlich, insbesondere, wenn als drittes Programm dann noch ein Debugger hinzu kommt. War man aber auf Macro angewiesen, so kam man am AMAC nicht vorbei.
-
-Obschon der AMAC von ATARI Elektronik Vertriebsgesellschaft GmbH in Deutschland verkauft wurde, waren sowohl er, als auch der [Programm\_Text\_Editor](../Programm_Text_Editor/README.md) in englischer Sprache! Lediglich das Konfigurationsprogramm für den [Programm\_Text\_Editor](../Programm_Text_Editor/README.md) war in deutscher Sprache als Basic-Programm verfügbar. Es sei daher an dieser Stelle in Frage gestellt, ob es sich hierbei somit wirklich um ein "deutsches" Programmpaket handelt. Dies insbesondere deshalb, weil der AMAC und der [Programm\_Text\_Editor](../Programm_Text_Editor/README.md) jeweils separat verkauft wurden. In der deutschen Version des AMAC war zwar der [Programm\_Text\_Editor](../Programm_Text_Editor/README.md) enthalten, jedoch völlig ohne jegliches Konfigurationsprogramm!
-
-Interessant macht das Programm jedoch die Tatsache, dass der AMAC mit einem deutschen DOS ausgeliefert worden ist. Genauer gesagt mit dem "Disk Betriebssystem II Version D2.0S". Das ist heute schwer zu finden. Es hat jedoch keinerlei Vorteile gegenüber der englischen Originalfassung. Ferner liegt der Diskette eine Datei namens "SYSTEXT" bei, welche wiederum auf der englischen, originalen Diskette fehlte! In der Datei: "SYSTEXT" sind die "Operating System Equates" und "Hardware Registers" als Mnemonics mit ihren hexadezimalen Entsprechungen enthalten. Das macht das Arbeiten mit dem AMAC einfacher und spart Zeit. Ganz besonders soll jedoch das Handbuch in deutscher Sprache hervorgehoben werden, das immerhin einen Umfang von 50 Seiten hat. Damals wurden alle Seiten in rot-schwarz von Atari Deutschland verkauft, um das Fotokopieren nahezu unmöglich zu machen. Mit den heute zur Verfügung stehenden Werkzeugen, z. B. Photoshop, kann man jedoch die rot gefärbten Seiten digital nach weiß färben und somit das Handbuch normal lesbar machen. Eine Anleitung dazu ist mit der deutschen Photoshop-Version CS4 in Form eines Clips [hier](../../../General/Convert_red_pages_from_manuals_into_white_pages/README.md) erstellt worden. Die Technik lässt sich auf modernere Versionen sinngemäß übertragen. Ferner war AtariWiki sich auch nicht zu schade, bei einem derartigen Umfang des Handbuchs, OCR zum Einsatz zu bringen.
-
-Ferner gibt es vom AMAC noch verschiedene Versionen, daher stellt AtariWiki nunmehr eine AMAC ultimate Fassung als ATR-Image zur Verfügung, in der alle Versionen, der Editor, das deutsche Konfigurationsgrogramm und die Datei: "SYSTEXT" enthalten sind. Somit fehlt dann nur noch ein Debugger. Hier ergeht die Empfehlung klar für den [BUG/65](../../OSS/BUG65/README.md) bzw. für [AMOEBA 3.0](../AMOEBA/README.md). AMOEBA wurde erst 2017 durch Zufall entdeckt und passt nicht nur optisch in diese Reihe, sondern auch zeitlich. AMOEBA wurde ebenfalls von einer Frau, Amy Chen, programmiert. Auch diese Tatsache kam erst 2017 an die Öffentlichkeit.
-
-## CAMAC
-
+Copyright (C) 1981-1983 ATARI, Inc. & ATARI Elektronik Vertriebsgesellschaft mbH bzw. GmbH  
+Der Atari Macro Assembler ist eine Auskopplung aus dem ATARI CAMAC Assembler Ver 1.0A, welcher wiederum eine Auskoppelung aus dem 6502 Macro Assemblers der Firma [Sorcim](https://en.wikipedia.org/wiki/Sorcim) ist. Sorcim überließ Atari ihren 6502 Macro Assembler in Sublizenz. AMAC, wie der Macro Assembler für den Atari Privatanwender auch genannt wird, war der erste Assembler für den Atari, der in der Lage war, Macros zu verarbeiten. Er war sehr erfolgreich, weil lange Zeit nichts besseres auf dem Markt war.  
+  
+AMAC war aber nicht der erste Assembler für den Atari. Diese Ehre gebührt allein Kathleen Ann O'Brien mit dem von ihr entwickelten [Atari_Assembler_Editor](../Atari_Assembler_Editor/README.md), welcher neben dem Assembler auch über einen Editor und Debugger verfügte und als Steckmodul verfügbar war.  
+  
+Nur der Macro Assembler selber als Programm wäre schwierig zu verkaufen gewesen, daher wurde das Programm noch durch einen Editor ergänzt. Hier kam der universelle [Programm_Text_Editor](../Programm_Text_Editor/README.md) von Mike Lorenzen zum Einsatz, mit dem man nicht nur Programme in Assembler schreiben konnte, sondern auch in anderen Programmiersprachen sowie einfache Texte verarbeiten konnte. Das Programm war jedoch nicht in AMAC integriert, sondern nur als separates Programm verfügbar und musste jeweils neu gestartet werden. Diese Vorgehensweise machte das Arbeiten mit dem AMAC etwas umständlich, insbesondere, wenn als drittes Programm dann noch ein Debugger hinzu kommt. War man aber auf Macro angewiesen, so kam man am AMAC nicht vorbei.  
+  
+Obschon der AMAC von ATARI Elektronik Vertriebsgesellschaft GmbH in Deutschland verkauft wurde, waren sowohl er, als auch der [Programm_Text_Editor](../Programm_Text_Editor/README.md) in englischer Sprache! Lediglich das Konfigurationsprogramm für den [Programm_Text_Editor](../Programm_Text_Editor/README.md) war in deutscher Sprache als Basic-Programm verfügbar. Es sei daher an dieser Stelle in Frage gestellt, ob es sich hierbei somit wirklich um ein "deutsches" Programmpaket handelt. Dies insbesondere deshalb, weil der AMAC und der [Programm_Text_Editor](../Programm_Text_Editor/README.md) jeweils separat verkauft wurden. In der deutschen Version des AMAC war zwar der [Programm_Text_Editor](../Programm_Text_Editor/README.md) enthalten, jedoch völlig ohne jegliches Konfigurationsprogramm!  
+  
+Interessant macht das Programm jedoch die Tatsache, dass der AMAC mit einem deutschen DOS ausgeliefert worden ist. Genauer gesagt mit dem "Disk Betriebssystem II Version D2.0S". Das ist heute schwer zu finden. Es hat jedoch keinerlei Vorteile gegenüber der englischen Originalfassung. Ferner liegt der Diskette eine Datei namens "SYSTEXT" bei, welche wiederum auf der englischen, originalen Diskette fehlte! In der Datei: "SYSTEXT" sind die "Operating System Equates" und "Hardware Registers" als Mnemonics mit ihren hexadezimalen Entsprechungen enthalten. Das macht das Arbeiten mit dem AMAC einfacher und spart Zeit. Ganz besonders soll jedoch das Handbuch in deutscher Sprache hervorgehoben werden, das immerhin einen Umfang von 50 Seiten hat. Damals wurden alle Seiten in rot-schwarz von Atari Deutschland verkauft, um das Fotokopieren nahezu unmöglich zu machen. Mit den heute zur Verfügung stehenden Werkzeugen, z. B. Photoshop, kann man jedoch die rot gefärbten Seiten digital nach weiß färben und somit das Handbuch normal lesbar machen. Eine Anleitung dazu ist mit der deutschen Photoshop-Version CS4 in Form eines Clips [hier](../Convert_red_pages_from_manuals_into_white_pages/README.md) erstellt worden. Die Technik lässt sich auf modernere Versionen sinngemäß übertragen. Ferner war AtariWiki sich auch nicht zu schade, bei einem derartigen Umfang des Handbuchs, OCR zum Einsatz zu bringen.  
+  
+Ferner gibt es vom AMAC noch verschiedene Versionen, daher stellt AtariWiki nunmehr eine AMAC ultimate Fassung als ATR-Image zur Verfügung, in der alle Versionen, der Editor, das deutsche Konfigurationsgrogramm und die Datei: "SYSTEXT" enthalten sind. Somit fehlt dann nur noch ein Debugger. Hier ergeht die Empfehlung klar für den [BUG/65](../Bug65/README.md) bzw. für [AMOEBA](../AMOEBA/README.md). AMOEBA wurde erst 2017 durch Zufall entdeckt und passt nicht nur optisch in diese Reihe, sondern auch zeitlich. AMOEBA wurde ebenfalls von einer Frau, Amy Chen, programmiert. Auch diese Tatsache kam erst 2017 an die Öffentlichkeit.  
+  
+## CAMAC  
 ```
 **** Atari S/W Development HCD1 / BATCH OUTPUT FILE ****
 
@@ -80,94 +79,80 @@ USER 'NORDIN' LOGGED OFF 	19-JAN-84	10:12:07
 * LIST FILE EMPTY, WILL NOT BE PRINTED
 ****
 ```
-
-## ATR-Images
-
-- [Atari\_Macro\_Assembler\_DXG\_8126-Original.atr](attachments/Atari_Macro_Assembler_DXG_8126-Original.atr) ; originale, deutsche SD-Diskette mit deutschem DOS II D2.0S ; das Original wurde ohne Kopierschutz ausgeliefert, s.u., mit dem Programm Text Editor aber **ohne** dem dazugehörigen Konfigurationsprogramm (Basic)!
-- [Atari\_Macro\_Assembler\_DXG\_8126-ohne\_Schutz-ultimativ.atr](attachments/Atari_Macro_Assembler_DXG_8126-ohne_Schutz-ultimativ.atr) ; ultimative MD-Diskette mit deutschem DOS II 2.5 ; ohne Kopierschutz ; mit AMAC Version A, C, D ; mit Programm Text Editor sowie dem dazugehörigen Konfigurationsprogramm in deutsch (Basic) ; mit Datei: "SYSTEXT" ; mit AMOEBA ; mit BUG/65 Version 2.0 relozierbar ; mit BUG/65 Version 2.0 nicht relozierbar und Startadresse: $9C00 ; mit BUG/65 Patch für DOS 4 (Basic) ; mit Datei: AUTORUN.SYS bzw. COLOR.OBJ zum Anpassen der Farbe
-
-## Handbücher
-
-- [ATARI Macro Assembler (AMAC) DXG 8126 Handbuch (deutsch)](../../../../media/Companies/Atari/Macro_Assembler/attachments/Atari_Macro_Assemble__DXG_8126-OCR.pdf) ; Größe: 7,4 MB ; mit Texterkennung OCR (deutsch)
-
-- [SYSTEXT.txt](attachments/SYSTEXT.txt) ; Ausdruck der "Operating System Equates" und "Hardware Registers" als Mnemonics mit ihren hexadezimalen Entsprechungen in einer Text-Datei  (englisch)
-
-- [Atari\_Macro\_Assembler\_and\_Program-Text\_Editor.pdf](../../../../media/Companies/Atari/Atari_Assembler_Editor/attachments/Atari_Macro_Assembler_and_Program-Text_Editor.pdf) ; Größe: 12,4 MB ; Hanbuch für den Assembler und Editor (englisch)
-
-- [Atari\_Macro\_Assembler.pdf](../../../../media/Companies/Atari/Macro_Assembler/attachments/Atari_Macro_Assembler.pdf) ; Größe: 10,2 MB ; Hanbuch für den Assembler (englisch)
-
-- [Atari\_Program\_Text\_Editor.pdf](../../../../media/Companies/Atari/Macro_Assembler/attachments/Atari_Program_Text_Editor.pdf) ; Größe: 10,4 MB ; Hanbuch für den Editor (englisch)
-
-- [Atari\_Macro\_Assembler\_Product\_Information\_Sheet\_II.pdf](attachments/Atari_Macro_Assembler_Product_Information_Sheet_II.pdf) ; Größe: 1,6 MB ; Informationsblatt II zum ATARI Macro Assembler (AMAC) vom 14.06.1983 (englisch)
-
-- [Atari Macro Assembler Reference Card-OCR](attachments/Atari_Macro_Assembler_Reference_Card-OCR.pdf)
-
-- [Atari Program-Text Editor Reference Card-OCR](attachments/Atari_Program-Text_Editor_Reference_Card-OCR.pdf)
-
-## Manual online
-
-- [The AMAC Atari Macro Assembler](http://www.mixinc.net/atari/amac.htm) englisch, von Nick Kennedy, sehr zu empfehlen! :-)))
-
-## Kopierschutz
-
-Die originale Diskette enthält einen Kopierschutz. Im ersten Sektor des Programms AMAC befindet sich die folgende Zeichenkette:
-
-E2 02 E3 02 **00** 26
-
-ersetzt man diese durch die nachfolgende Zeichenkette:
-
-E2 02 E3 02 **26** 26
-
-so wird der Kopierschutz umgangen und AMAC kann verwendet werden.
-
+  
+## ATR-Images  
+- [Atari_Macro_Assembler_DXG_8126-Original.atr](attachments/Atari_Macro_Assembler_DXG_8126-Original.atr) ; originale, deutsche SD-Diskette mit deutschem DOS II D2.0S ; das Original wurde ohne Kopierschutz ausgeliefert, s.u., mit dem Programm Text Editor aber __ohne__ dem dazugehörigen Konfigurationsprogramm (Basic)!  
+- [Atari_Macro_Assembler_DXG_8126-ohne_Schutz-ultimativ.atr](attachments/Atari_Macro_Assembler_DXG_8126-ohne_Schutz-ultimativ.atr) ; ultimative MD-Diskette mit deutschem DOS II 2.5 ; ohne Kopierschutz ; mit AMAC Version A, C, D ; mit Programm Text Editor sowie dem dazugehörigen Konfigurationsprogramm in deutsch (Basic) ; mit Datei: "SYSTEXT" ; mit AMOEBA ; mit BUG/65 Version 2.0 relozierbar ; mit BUG/65 Version 2.0 nicht relozierbar und Startadresse: $9C00 ; mit BUG/65 Patch für DOS 4 (Basic) ; mit Datei: AUTORUN.SYS bzw. COLOR.OBJ zum Anpassen der Farbe  
+  
+## Handbücher  
+- [ATARI Macro Assembler (AMAC) DXG 8126 Handbuch (deutsch)](attachments/Atari_Macro_Assemble__DXG_8126-OCR.pdf) ; Größe: 7,4 MB ; mit Texterkennung OCR (deutsch)  
+- [SYSTEXT.txt](attachments/SYSTEXT.txt) ; Ausdruck der "Operating System Equates" und "Hardware Registers" als Mnemonics mit ihren hexadezimalen Entsprechungen in einer Text-Datei  (englisch)  
+  
+- [Atari_Macro_Assembler_and_Program-Text_Editor.pdf](attachments/Atari_Macro_Assembler_and_Program-Text_Editor.pdf) ; Größe: 12,4 MB ; Hanbuch für den Assembler und Editor (englisch)  
+- [Atari_Macro_Assembler.pdf](attachments/Atari_Macro_Assembler.pdf) ; Größe: 10,2 MB ; Hanbuch für den Assembler (englisch)  
+- [Atari_Program_Text_Editor.pdf](attachments/Atari_Program_Text_Editor.pdf) ; Größe: 10,4 MB ; Hanbuch für den Editor (englisch)  
+- [Atari_Macro_Assembler_Product_Information_Sheet_II.pdf](attachments/Atari_Macro_Assembler_Product_Information_Sheet_II.pdf) ; Größe: 1,6 MB ; Informationsblatt II zum ATARI Macro Assembler (AMAC) vom 14.06.1983 (englisch)  
+- [Atari Macro Assembler Reference Card-OCR](attachments/Atari_Macro_Assembler_Reference_Card-OCR.pdf)  
+- [Atari Program-Text Editor Reference Card-OCR](attachments/Atari_Program-Text_Editor_Reference_Card-OCR.pdf)  
+  
+## Manual online  
+- [The AMAC Atari Macro Assembler](http://www.mixinc.net/atari/amac.htm) englisch, von Nick Kennedy, sehr zu empfehlen! :-)))  
+  
+## Kopierschutz  
+Die originale Diskette enthält einen Kopierschutz. Im ersten Sektor des Programms AMAC befindet sich die folgende Zeichenkette:  
+  
+E2 02 E3 02 __00__ 26  
+  
+ersetzt man diese durch die nachfolgende Zeichenkette:  
+  
+E2 02 E3 02 __26__ 26  
+  
+so wird der Kopierschutz umgangen und AMAC kann verwendet werden.  
+  
 Konkret sieht das so aus:  
 ![](attachments/AMAC_%28original%2Cprotected%29-Protection-Code-EN.png)  
-Atari Macro Assembler Diskette (englisch, vom Original) - Quelltext des Kopierschutzes für den AMAC (ist im 1. Sektor des Programms auf der Diskette zu finden). Der Schutz ist genau genommen gar keiner. Er war scheinbar ursprünglich darauf ausgelegt, auf einen defekten Sektor zu prüfen. Wie es aussieht wurde dann vor der Auslieferung entschieden dies doch nicht zu tun. Vermutlich weil es bei einem DOS Programm keinen Sinn hat, auf bestimmte Sektoren zu prüfen. Um das Programm nicht ganz neu assemblieren zu müssen, wurde der Code so angepasst, dass auf Sektor 0 gelesen wird. Diesen gibt es nicht und die Logik verhält sich so, als hätte sie den defekten Sektor gefunden.
-
+Atari Macro Assembler Diskette (englisch, vom Original) - Quelltext des Kopierschutzes für den AMAC (ist im 1. Sektor des Programms auf der Diskette zu finden). Der Schutz ist genau genommen gar keiner. Er war scheinbar ursprünglich darauf ausgelegt, auf einen defekten Sektor zu prüfen. Wie es aussieht wurde dann vor der Auslieferung entschieden dies doch nicht zu tun. Vermutlich weil es bei einem DOS Programm keinen Sinn hat, auf bestimmte Sektoren zu prüfen. Um das Programm nicht ganz neu assemblieren zu müssen, wurde der Code so angepasst, dass auf Sektor 0 gelesen wird. Diesen gibt es nicht und die Logik verhält sich so, als hätte sie den defekten Sektor gefunden.  
+  
 ![](attachments/AMAC_%28original%2Cunprotected%29-Protection-Code-DE.png)  
-Atari Macro Assembler Diskette (deutsch, vom Original) - der Quelltext des Kopierschutzes für den AMAC wurde entfernt, s. Bild oben, stattdessen wurden NOP-Befehle eingesetzt sowie Befehle zur Änderung der Farbe und des Hintergrundes, s. Bild weiter unten. Vielen lieben Dank an JAC! von AtariAge für die Analyse.
-
-## Film
-
-- [Atari\_Macro\_Assembler.mp4](../../../../media/Companies/Atari/Macro_Assembler/attachments/Atari_Macro_Assembler.mp4) ; Beispielfilm für die Anwendung des Atari Macro Assemblers
-
-## Bilder
-
+Atari Macro Assembler Diskette (deutsch, vom Original) - der Quelltext des Kopierschutzes für den AMAC wurde entfernt, s. Bild oben, stattdessen wurden NOP-Befehle eingesetzt sowie Befehle zur Änderung der Farbe und des Hintergrundes, s. Bild weiter unten. Vielen lieben Dank an JAC! von AtariAge für die Analyse.  
+  
+## Film  
+- [Atari_Macro_Assembler.mp4](attachments/Atari_Macro_Assembler.mp4) ; Beispielfilm für die Anwendung des Atari Macro Assemblers  
+  
+## Bilder  
 ![](attachments/Atari_CAMAC_Assembler_Ver_1.0A.jpg)  
-Atari CAMAC Assembler Ver 1.0A - Ausdruck eines Assemblerprogramms von Harry B. Stewart in der Atari Zentrale in Sunnyvale
-
+Atari CAMAC Assembler Ver 1.0A - Ausdruck eines Assemblerprogramms von Harry B. Stewart in der Atari Zentrale in Sunnyvale  
+  
 ![](attachments/Macro_Assembler_a.jpg)  
-ATARI Macro Assembler (AMAC) DXG 8126 - Boxvorderseite
-
+ATARI Macro Assembler (AMAC) DXG 8126 - Boxvorderseite  
+  
 ![](attachments/Macro_Assembler_b.jpg)  
-ATARI Macro Assembler (AMAC) DXG 8126 - Boxrückseite
-
+ATARI Macro Assembler (AMAC) DXG 8126 - Boxrückseite  
+  
 ![](attachments/Diskette8126.jpg)  
-ATARI Macro Assembler (AMAC) DXG 8126 - Diskette
-
+ATARI Macro Assembler (AMAC) DXG 8126 - Diskette  
+  
 ![](attachments/ATARI_Macro_Assembler_Ver_1.0A.jpg)  
-ATARI Macro Assembler (AMAC) DXG 8126 - Startbildschirm der deutschen Version mit deaktiviertem Schutz und anderer Farbe als das US-Original
-
+ATARI Macro Assembler (AMAC) DXG 8126 - Startbildschirm der deutschen Version mit deaktiviertem Schutz und anderer Farbe als das US-Original  
+  
 ![](attachments/ATARI_Macro_Assembler_Ver_1.0A-ohne_Schutz.jpg)  
-ATARI Macro Assembler (AMAC) DXG 8126 - Startbildschirm der US-Version mit deaktiviertem Schutz
-
+ATARI Macro Assembler (AMAC) DXG 8126 - Startbildschirm der US-Version mit deaktiviertem Schutz  
+  
 ![](attachments/Program-Text_Edior_Version_1.0.jpg)  
-ATARI Macro Assembler (AMAC) DXG 8126 - Program-Text Editor Startbildschirm
-
+ATARI Macro Assembler (AMAC) DXG 8126 - Program-Text Editor Startbildschirm  
+  
 ![](attachments/AMOEBA_Version_3.0.jpg)  
-AMOEBA Version 3.0 - Startbildschirm
-
+AMOEBA Version 3.0 - Startbildschirm  
+  
 ![](attachments/BUG-65_Version_2.0.jpg)  
-BUG/65 Version 2.0 - Startbildschirm
-
-## Reference Cards
-
+BUG/65 Version 2.0 - Startbildschirm  
+  
+## Reference Cards  
 ![](attachments/Atari_Program-Text_Editor_Reference_Card.jpg)  
-Atari Program-Text Editor - Reference Card
-
+Atari Program-Text Editor - Reference Card  
+  
 ![](attachments/Atari_Macro_Assembler_Reference_Card.jpg)  
-Atari Macro Assembler - Reference Card
-
-## Danksagung
-
-AtariWiki bedankt sich ganz herzlich bei Dirk Tröger! :-) Hätte er diese Software nicht gerettet, wäre sie wohl für immer verloren gegangen. Mega-Danke Dirk!!! :-)))
+Atari Macro Assembler - Reference Card  
+  
+## Danksagung  
+AtariWiki bedankt sich ganz herzlich bei Dirk Tröger! :-) Hätte er diese Software nicht gerettet, wäre sie wohl für immer verloren gegangen. Mega-Danke Dirk!!! :-)))  
