@@ -17,7 +17,7 @@ For local editing you can use any text editor.
 
 GitHub is suitable for text field and small binary files. It is unsuitable for large binary files.
 Therefore, AtariWiki keep such large binary files in a dedicated folder "media" that is no part of the GitHub repository.
-This folder is instead synchronized with a shared folder on the [Nextcloud server](http://www.abbuc.social/internet/4443-nextcloud.html) of the [ABBUC](../Companies/ABBUC/README.md).
+This folder is instead synchronized with a shared folder on the [Nextcloud server](http://www.abbuc.social/internet/4443-nextcloud.html) of the [A.B.B.U.C.](../Companies/ABBUC/README.md).
 The URL of the shared folder "All files \> atariwiki \> media" is [https://cloud.abbuc.social/apps/files/files/337187?dir=/atariwiki/media](https://cloud.abbuc.social/apps/files/files/337187?dir=/atariwiki/media).
 
 - Configure Nextcloud on macOS
