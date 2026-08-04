@@ -362,6 +362,8 @@
       
     - [Atari Macro Assembler and Program-Text Editor (CX8121)](Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md)
       
+    - [Atari Macro Assembler (AMAC) DXG8126](Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121_TODO/README.md)
+      
     - [Atari Music I - MISSING](Companies/Atari/Atari_Music_I/README.md)
       
     - [Atari Music II - MISSING](Companies/Atari/Atari_Music_II/README.md)
@@ -422,7 +424,7 @@
       
     - [ATARI 800 CHECKERS DISPLAY BY C. SHAW 3/31/80](Companies/Atari/Checkers_Display/README.md)
       
-    - [](Companies/Atari/Commercials/README.md)
+    - [Commercials](Companies/Atari/Commercials/README.md)
       
     - [Computer Chess (CXL 4009)](Companies/Atari/Computer_Chess_CXL_4009/README.md)
       
@@ -528,7 +530,7 @@
       
     - [BIBO-DOS](Companies/CompyShop/BIBO-DOS/README.md)
       
-    - [](Companies/CompyShop/CSM_Assembler_Course/README.md)
+    - [CSM\_Assembler\_Course](Companies/CompyShop/CSM_Assembler_Course/README.md)
       
       - [Assembler für Fortgeschrittene: CIO und DOS](Companies/CompyShop/CSM_Assembler_Course/CSM-Assembler_Kurs_-_CIO_und_DOS/README.md)
         
@@ -918,7 +920,7 @@
       
     - [USB Steering Wheel Driver](Hardware/USB/USB_Steering_Wheel_Driver/README.md)
       
-- [](Languages/README.md)
+- [Languages](Languages/README.md)
   
   - [Action!](Languages/Action/README.md)
     
@@ -1390,7 +1392,7 @@
           
         - [String Extensions for VolksForth](Languages/Forth/volksFORTH/Extensions/String_Extensions/README.md)
           
-        - [](Languages/Forth/volksFORTH/Handbook/6502Assembler/README.md)
+        - [6502Assembler](Languages/Forth/volksFORTH/Handbook/6502Assembler/README.md)
           
         - [Chapter 1: volksFORTH Version 3.90 Manual](Languages/Forth/volksFORTH/Handbook/Chapter1/README.md)
           
@@ -1434,517 +1436,517 @@
           
         - [VolksForth StackOperations](Languages/Forth/volksFORTH/Language/Stack_Operations/README.md)
           
-          - [](Languages/Forth/volksFORTH/Language/Words/-s_number/README.md)
+          - [-s\_number](Languages/Forth/volksFORTH/Language/Words/-s_number/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/abort/README.md)
+          - [abort](Languages/Forth/volksFORTH/Language/Words/abort/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/abort-quote/README.md)
+          - [abort-quote](Languages/Forth/volksFORTH/Language/Words/abort-quote/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Absolute/README.md)
+          - [Absolute](Languages/Forth/volksFORTH/Language/Words/Absolute/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Accumulate/README.md)
+          - [Accumulate](Languages/Forth/volksFORTH/Language/Words/Accumulate/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/And/README.md)
+          - [And](Languages/Forth/volksFORTH/Language/Words/And/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/append/README.md)
+          - [append](Languages/Forth/volksFORTH/Language/Words/append/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/area/README.md)
+          - [area](Languages/Forth/volksFORTH/Language/Words/area/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/areakol/README.md)
+          - [areakol](Languages/Forth/volksFORTH/Language/Words/areakol/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/asciz/README.md)
+          - [asciz](Languages/Forth/volksFORTH/Language/Words/asciz/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/at/README.md)
+          - [at](Languages/Forth/volksFORTH/Language/Words/at/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/at-question/README.md)
+          - [at-question](Languages/Forth/volksFORTH/Language/Words/at-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Attach/README.md)
+          - [Attach](Languages/Forth/volksFORTH/Language/Words/Attach/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/begin/README.md)
+          - [begin](Languages/Forth/volksFORTH/Language/Words/begin/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/bl/README.md)
+          - [bl](Languages/Forth/volksFORTH/Language/Words/bl/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Bounds/README.md)
+          - [Bounds](Languages/Forth/volksFORTH/Language/Words/Bounds/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Capital/README.md)
+          - [Capital](Languages/Forth/volksFORTH/Language/Words/Capital/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Capitalitze/README.md)
+          - [Capitalitze](Languages/Forth/volksFORTH/Language/Words/Capitalitze/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Caps/README.md)
+          - [Caps](Languages/Forth/volksFORTH/Language/Words/Caps/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/case-question/README.md)
+          - [case-question](Languages/Forth/volksFORTH/Language/Words/case-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/catt/README.md)
+          - [catt](Languages/Forth/volksFORTH/Language/Words/catt/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/characters-per-column/README.md)
+          - [characters-per-column](Languages/Forth/volksFORTH/Language/Words/characters-per-column/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/characters-per-display/README.md)
+          - [characters-per-display](Languages/Forth/volksFORTH/Language/Words/characters-per-display/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/characters-per-line/README.md)
+          - [characters-per-line](Languages/Forth/volksFORTH/Language/Words/characters-per-line/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/characters-per-row/README.md)
+          - [characters-per-row](Languages/Forth/volksFORTH/Language/Words/characters-per-row/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/charout/README.md)
+          - [charout](Languages/Forth/volksFORTH/Language/Words/charout/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Clear_stack/README.md)
+          - [Clear\_stack](Languages/Forth/volksFORTH/Language/Words/Clear_stack/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/col/README.md)
+          - [col](Languages/Forth/volksFORTH/Language/Words/col/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/comment/README.md)
+          - [comment](Languages/Forth/volksFORTH/Language/Words/comment/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/compile-string/README.md)
+          - [compile-string](Languages/Forth/volksFORTH/Language/Words/compile-string/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Convert/README.md)
+          - [Convert](Languages/Forth/volksFORTH/Language/Words/Convert/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/counted/README.md)
+          - [counted](Languages/Forth/volksFORTH/Language/Words/counted/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/cr/README.md)
+          - [cr](Languages/Forth/volksFORTH/Language/Words/cr/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/curoff/README.md)
+          - [curoff](Languages/Forth/volksFORTH/Language/Words/curoff/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/curon/README.md)
+          - [curon](Languages/Forth/volksFORTH/Language/Words/curon/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/curshape/README.md)
+          - [curshape](Languages/Forth/volksFORTH/Language/Words/curshape/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/cursor-at-question/README.md)
+          - [cursor-at-question](Languages/Forth/volksFORTH/Language/Words/cursor-at-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/cursor-store/README.md)
+          - [cursor-store](Languages/Forth/volksFORTH/Language/Words/cursor-store/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/cut-string/README.md)
+          - [cut-string](Languages/Forth/volksFORTH/Language/Words/cut-string/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/d-absolute/README.md)
+          - [d-absolute](Languages/Forth/volksFORTH/Language/Words/d-absolute/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/d-equal/README.md)
+          - [d-equal](Languages/Forth/volksFORTH/Language/Words/d-equal/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/d-equals-zero/README.md)
+          - [d-equals-zero](Languages/Forth/volksFORTH/Language/Words/d-equals-zero/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/d-less-than/README.md)
+          - [d-less-than](Languages/Forth/volksFORTH/Language/Words/d-less-than/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/d-minus/README.md)
+          - [d-minus](Languages/Forth/volksFORTH/Language/Words/d-minus/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/d-negate/README.md)
+          - [d-negate](Languages/Forth/volksFORTH/Language/Words/d-negate/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/d-plus/README.md)
+          - [d-plus](Languages/Forth/volksFORTH/Language/Words/d-plus/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/d-times/README.md)
+          - [d-times](Languages/Forth/volksFORTH/Language/Words/d-times/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/del/README.md)
+          - [del](Languages/Forth/volksFORTH/Language/Words/del/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Depth/README.md)
+          - [Depth](Languages/Forth/volksFORTH/Language/Words/Depth/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Detract/README.md)
+          - [Detract](Languages/Forth/volksFORTH/Language/Words/Detract/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/digit-question/README.md)
+          - [digit-question](Languages/Forth/volksFORTH/Language/Words/digit-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/display/README.md)
+          - [display](Languages/Forth/volksFORTH/Language/Words/display/README.md)
             
           - [Divide](Languages/Forth/volksFORTH/Language/Words/Divide/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Divide-mod/README.md)
+          - [Divide-mod](Languages/Forth/volksFORTH/Language/Words/Divide-mod/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/do/README.md)
+          - [do](Languages/Forth/volksFORTH/Language/Words/do/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/dos-s/README.md)
+          - [dos-s](Languages/Forth/volksFORTH/Language/Words/dos-s/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/dot/README.md)
+          - [dot](Languages/Forth/volksFORTH/Language/Words/dot/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/dot-comment/README.md)
+          - [dot-comment](Languages/Forth/volksFORTH/Language/Words/dot-comment/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/dot-right-justified/README.md)
+          - [dot-right-justified](Languages/Forth/volksFORTH/Language/Words/dot-right-justified/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/dot-string/README.md)
+          - [dot-string](Languages/Forth/volksFORTH/Language/Words/dot-string/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/double-dot/README.md)
+          - [double-dot](Languages/Forth/volksFORTH/Language/Words/double-dot/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/double-dot-right-justified/README.md)
+          - [double-dot-right-justified](Languages/Forth/volksFORTH/Language/Words/double-dot-right-justified/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Dpl/README.md)
+          - [Dpl](Languages/Forth/volksFORTH/Language/Words/Dpl/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Drop/README.md)
+          - [Drop](Languages/Forth/volksFORTH/Language/Words/Drop/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Dup/README.md)
+          - [Dup](Languages/Forth/volksFORTH/Language/Words/Dup/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/dup-question/README.md)
+          - [dup-question](Languages/Forth/volksFORTH/Language/Words/dup-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/else/README.md)
+          - [else](Languages/Forth/volksFORTH/Language/Words/else/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/emit/README.md)
+          - [emit](Languages/Forth/volksFORTH/Language/Words/emit/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/empty-keys/README.md)
+          - [empty-keys](Languages/Forth/volksFORTH/Language/Words/empty-keys/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/end-comment/README.md)
+          - [end-comment](Languages/Forth/volksFORTH/Language/Words/end-comment/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/endloop/README.md)
+          - [endloop](Languages/Forth/volksFORTH/Language/Words/endloop/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Equals/README.md)
+          - [Equals](Languages/Forth/volksFORTH/Language/Words/Equals/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/error-quote/README.md)
+          - [error-quote](Languages/Forth/volksFORTH/Language/Words/error-quote/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/errorhandler/README.md)
+          - [errorhandler](Languages/Forth/volksFORTH/Language/Words/errorhandler/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Even/README.md)
+          - [Even](Languages/Forth/volksFORTH/Language/Words/Even/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/execute/README.md)
+          - [execute](Languages/Forth/volksFORTH/Language/Words/execute/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/exit/README.md)
+          - [exit](Languages/Forth/volksFORTH/Language/Words/exit/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/expect/README.md)
+          - [expect](Languages/Forth/volksFORTH/Language/Words/expect/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/False/README.md)
+          - [False](Languages/Forth/volksFORTH/Language/Words/False/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/find/README.md)
+          - [find](Languages/Forth/volksFORTH/Language/Words/find/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/full/README.md)
+          - [full](Languages/Forth/volksFORTH/Language/Words/full/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Greater-than/README.md)
+          - [Greater-than](Languages/Forth/volksFORTH/Language/Words/Greater-than/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/have/README.md)
+          - [have](Languages/Forth/volksFORTH/Language/Words/have/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Hold/README.md)
+          - [Hold](Languages/Forth/volksFORTH/Language/Words/Hold/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/I/README.md)
+          - [I](Languages/Forth/volksFORTH/Language/Words/I/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/if/README.md)
+          - [if](Languages/Forth/volksFORTH/Language/Words/if/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/input/README.md)
+          - [input](Languages/Forth/volksFORTH/Language/Words/input/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/inputkol/README.md)
+          - [inputkol](Languages/Forth/volksFORTH/Language/Words/inputkol/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/interpret/README.md)
+          - [interpret](Languages/Forth/volksFORTH/Language/Words/interpret/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/J/README.md)
+          - [J](Languages/Forth/volksFORTH/Language/Words/J/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/key/README.md)
+          - [key](Languages/Forth/volksFORTH/Language/Words/key/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/key-question/README.md)
+          - [key-question](Languages/Forth/volksFORTH/Language/Words/key-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/keyboard/README.md)
+          - [keyboard](Languages/Forth/volksFORTH/Language/Words/keyboard/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/leave/README.md)
+          - [leave](Languages/Forth/volksFORTH/Language/Words/leave/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Less-than/README.md)
+          - [Less-than](Languages/Forth/volksFORTH/Language/Words/Less-than/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/lines-per-screen/README.md)
+          - [lines-per-screen](Languages/Forth/volksFORTH/Language/Words/lines-per-screen/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/list/README.md)
+          - [list](Languages/Forth/volksFORTH/Language/Words/list/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/list-store/README.md)
+          - [list-store](Languages/Forth/volksFORTH/Language/Words/list-store/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/long-type/README.md)
+          - [long-type](Languages/Forth/volksFORTH/Language/Words/long-type/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/loop/README.md)
+          - [loop](Languages/Forth/volksFORTH/Language/Words/loop/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/m-divide-mod/README.md)
+          - [m-divide-mod](Languages/Forth/volksFORTH/Language/Words/m-divide-mod/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/m-times/README.md)
+          - [m-times](Languages/Forth/volksFORTH/Language/Words/m-times/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/match/README.md)
+          - [match](Languages/Forth/volksFORTH/Language/Words/match/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Maximum/README.md)
+          - [Maximum](Languages/Forth/volksFORTH/Language/Words/Maximum/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Minimum/README.md)
+          - [Minimum](Languages/Forth/volksFORTH/Language/Words/Minimum/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Minus/README.md)
+          - [Minus](Languages/Forth/volksFORTH/Language/Words/Minus/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/minus-trailing/README.md)
+          - [minus-trailing](Languages/Forth/volksFORTH/Language/Words/minus-trailing/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Mod/README.md)
+          - [Mod](Languages/Forth/volksFORTH/Language/Words/Mod/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/name/README.md)
+          - [name](Languages/Forth/volksFORTH/Language/Words/name/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Negate/README.md)
+          - [Negate](Languages/Forth/volksFORTH/Language/Words/Negate/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Nip/README.md)
+          - [Nip](Languages/Forth/volksFORTH/Language/Words/Nip/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Not/README.md)
+          - [Not](Languages/Forth/volksFORTH/Language/Words/Not/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/null-string-question/README.md)
+          - [null-string-question](Languages/Forth/volksFORTH/Language/Words/null-string-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Number/README.md)
+          - [Number](Languages/Forth/volksFORTH/Language/Words/Number/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/number-backspace/README.md)
+          - [number-backspace](Languages/Forth/volksFORTH/Language/Words/number-backspace/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/number-bell/README.md)
+          - [number-bell](Languages/Forth/volksFORTH/Language/Words/number-bell/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/number-carriage-return/README.md)
+          - [number-carriage-return](Languages/Forth/volksFORTH/Language/Words/number-carriage-return/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/number-escape/README.md)
+          - [number-escape](Languages/Forth/volksFORTH/Language/Words/number-escape/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/number-greater/README.md)
+          - [number-greater](Languages/Forth/volksFORTH/Language/Words/number-greater/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/number-linefeed/README.md)
+          - [number-linefeed](Languages/Forth/volksFORTH/Language/Words/number-linefeed/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/number-question/README.md)
+          - [number-question](Languages/Forth/volksFORTH/Language/Words/number-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/number-s/README.md)
+          - [number-s](Languages/Forth/volksFORTH/Language/Words/number-s/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/number-tib/README.md)
+          - [number-tib](Languages/Forth/volksFORTH/Language/Words/number-tib/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/One-minus/README.md)
+          - [One-minus](Languages/Forth/volksFORTH/Language/Words/One-minus/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/One-plus/README.md)
+          - [One-plus](Languages/Forth/volksFORTH/Language/Words/One-plus/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Or/README.md)
+          - [Or](Languages/Forth/volksFORTH/Language/Words/Or/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/output/README.md)
+          - [output](Languages/Forth/volksFORTH/Language/Words/output/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/outputkol/README.md)
+          - [outputkol](Languages/Forth/volksFORTH/Language/Words/outputkol/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Over/README.md)
+          - [Over](Languages/Forth/volksFORTH/Language/Words/Over/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/pad/README.md)
+          - [pad](Languages/Forth/volksFORTH/Language/Words/pad/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/page/README.md)
+          - [page](Languages/Forth/volksFORTH/Language/Words/page/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-at/README.md)
+          - [paren-at](Languages/Forth/volksFORTH/Language/Words/paren-at/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-at-question/README.md)
+          - [paren-at-question](Languages/Forth/volksFORTH/Language/Words/paren-at-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-carriage-return/README.md)
+          - [paren-carriage-return](Languages/Forth/volksFORTH/Language/Words/paren-carriage-return/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-decode/README.md)
+          - [paren-decode](Languages/Forth/volksFORTH/Language/Words/paren-decode/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-delete/README.md)
+          - [paren-delete](Languages/Forth/volksFORTH/Language/Words/paren-delete/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-emit/README.md)
+          - [paren-emit](Languages/Forth/volksFORTH/Language/Words/paren-emit/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-error/README.md)
+          - [paren-error](Languages/Forth/volksFORTH/Language/Words/paren-error/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-expect/README.md)
+          - [paren-expect](Languages/Forth/volksFORTH/Language/Words/paren-expect/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-find/README.md)
+          - [paren-find](Languages/Forth/volksFORTH/Language/Words/paren-find/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-key/README.md)
+          - [paren-key](Languages/Forth/volksFORTH/Language/Words/paren-key/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-key-question/README.md)
+          - [paren-key-question](Languages/Forth/volksFORTH/Language/Words/paren-key-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-page/README.md)
+          - [paren-page](Languages/Forth/volksFORTH/Language/Words/paren-page/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/paren-type/README.md)
+          - [paren-type](Languages/Forth/volksFORTH/Language/Words/paren-type/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/parse/README.md)
+          - [parse](Languages/Forth/volksFORTH/Language/Words/parse/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/perform/README.md)
+          - [perform](Languages/Forth/volksFORTH/Language/Words/perform/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Pick/README.md)
+          - [Pick](Languages/Forth/volksFORTH/Language/Words/Pick/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Place/README.md)
+          - [Place](Languages/Forth/volksFORTH/Language/Words/Place/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Plus/README.md)
+          - [Plus](Languages/Forth/volksFORTH/Language/Words/Plus/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/plus-loop/README.md)
+          - [plus-loop](Languages/Forth/volksFORTH/Language/Words/plus-loop/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/plus-print/README.md)
+          - [plus-print](Languages/Forth/volksFORTH/Language/Words/plus-print/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/port-char-fetch/README.md)
+          - [port-char-fetch](Languages/Forth/volksFORTH/Language/Words/port-char-fetch/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/port-char-store/README.md)
+          - [port-char-store](Languages/Forth/volksFORTH/Language/Words/port-char-store/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/print/README.md)
+          - [print](Languages/Forth/volksFORTH/Language/Words/print/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/printer/README.md)
+          - [printer](Languages/Forth/volksFORTH/Language/Words/printer/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/query/README.md)
+          - [query](Languages/Forth/volksFORTH/Language/Words/query/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/question-carriage-return/README.md)
+          - [question-carriage-return](Languages/Forth/volksFORTH/Language/Words/question-carriage-return/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/question-do/README.md)
+          - [question-do](Languages/Forth/volksFORTH/Language/Words/question-do/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/question-exit/README.md)
+          - [question-exit](Languages/Forth/volksFORTH/Language/Words/question-exit/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/question-pairs/README.md)
+          - [question-pairs](Languages/Forth/volksFORTH/Language/Words/question-pairs/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/question-quote/README.md)
+          - [question-quote](Languages/Forth/volksFORTH/Language/Words/question-quote/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/quit/README.md)
+          - [quit](Languages/Forth/volksFORTH/Language/Words/quit/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/quote-literal/README.md)
+          - [quote-literal](Languages/Forth/volksFORTH/Language/Words/quote-literal/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/r-sharp/README.md)
+          - [r-sharp](Languages/Forth/volksFORTH/Language/Words/r-sharp/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Red/README.md)
+          - [Red](Languages/Forth/volksFORTH/Language/Words/Red/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/red-minus/README.md)
+          - [red-minus](Languages/Forth/volksFORTH/Language/Words/red-minus/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/repeat/README.md)
+          - [repeat](Languages/Forth/volksFORTH/Language/Words/repeat/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/restorevideo/README.md)
+          - [restorevideo](Languages/Forth/volksFORTH/Language/Words/restorevideo/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Roll/README.md)
+          - [Roll](Languages/Forth/volksFORTH/Language/Words/Roll/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/row/README.md)
+          - [row](Languages/Forth/volksFORTH/Language/Words/row/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/s-p/README.md)
+          - [s-p](Languages/Forth/volksFORTH/Language/Words/s-p/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/s-p-store/README.md)
+          - [s-p-store](Languages/Forth/volksFORTH/Language/Words/s-p-store/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/s-zero/README.md)
+          - [s-zero](Languages/Forth/volksFORTH/Language/Words/s-zero/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/savevideo/README.md)
+          - [savevideo](Languages/Forth/volksFORTH/Language/Words/savevideo/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Scan/README.md)
+          - [Scan](Languages/Forth/volksFORTH/Language/Words/Scan/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/scr/README.md)
+          - [scr](Languages/Forth/volksFORTH/Language/Words/scr/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Search/README.md)
+          - [Search](Languages/Forth/volksFORTH/Language/Words/Search/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/setpage/README.md)
+          - [setpage](Languages/Forth/volksFORTH/Language/Words/setpage/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Sign/README.md)
+          - [Sign](Languages/Forth/volksFORTH/Language/Words/Sign/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Skip/README.md)
+          - [Skip](Languages/Forth/volksFORTH/Language/Words/Skip/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/source/README.md)
+          - [source](Languages/Forth/volksFORTH/Language/Words/source/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/space/README.md)
+          - [space](Languages/Forth/volksFORTH/Language/Words/space/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/spaces/README.md)
+          - [spaces](Languages/Forth/volksFORTH/Language/Words/spaces/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/span/README.md)
+          - [span](Languages/Forth/volksFORTH/Language/Words/span/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/standard-input-output/README.md)
+          - [standard-input-output](Languages/Forth/volksFORTH/Language/Words/standard-input-output/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/stop/README.md)
+          - [stop](Languages/Forth/volksFORTH/Language/Words/stop/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/stop-question/README.md)
+          - [stop-question](Languages/Forth/volksFORTH/Language/Words/stop-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/string/README.md)
+          - [string](Languages/Forth/volksFORTH/Language/Words/string/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Swap/README.md)
+          - [Swap](Languages/Forth/volksFORTH/Language/Words/Swap/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/terminal/README.md)
+          - [terminal](Languages/Forth/volksFORTH/Language/Words/terminal/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/then/README.md)
+          - [then](Languages/Forth/volksFORTH/Language/Words/then/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Three-plus/README.md)
+          - [Three-plus](Languages/Forth/volksFORTH/Language/Words/Three-plus/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/tib/README.md)
+          - [tib](Languages/Forth/volksFORTH/Language/Words/tib/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/tick-abort/README.md)
+          - [tick-abort](Languages/Forth/volksFORTH/Language/Words/tick-abort/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Times/README.md)
+          - [Times](Languages/Forth/volksFORTH/Language/Words/Times/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Times-divide/README.md)
+          - [Times-divide](Languages/Forth/volksFORTH/Language/Words/Times-divide/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Times-divide-mod/README.md)
+          - [Times-divide-mod](Languages/Forth/volksFORTH/Language/Words/Times-divide-mod/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/tipp/README.md)
+          - [tipp](Languages/Forth/volksFORTH/Language/Words/tipp/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/to-asciz/README.md)
+          - [to-asciz](Languages/Forth/volksFORTH/Language/Words/to-asciz/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/to-expect/README.md)
+          - [to-expect](Languages/Forth/volksFORTH/Language/Words/to-expect/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/to-in/README.md)
+          - [to-in](Languages/Forth/volksFORTH/Language/Words/to-in/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/to-tib/README.md)
+          - [to-tib](Languages/Forth/volksFORTH/Language/Words/to-tib/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/to-type/README.md)
+          - [to-type](Languages/Forth/volksFORTH/Language/Words/to-type/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/True/README.md)
+          - [True](Languages/Forth/volksFORTH/Language/Words/True/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Two-divide/README.md)
+          - [Two-divide](Languages/Forth/volksFORTH/Language/Words/Two-divide/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/two-drop/README.md)
+          - [two-drop](Languages/Forth/volksFORTH/Language/Words/two-drop/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/two-dup/README.md)
+          - [two-dup](Languages/Forth/volksFORTH/Language/Words/two-dup/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Two-minus/README.md)
+          - [Two-minus](Languages/Forth/volksFORTH/Language/Words/Two-minus/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/two-over/README.md)
+          - [two-over](Languages/Forth/volksFORTH/Language/Words/two-over/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Two-plus/README.md)
+          - [Two-plus](Languages/Forth/volksFORTH/Language/Words/Two-plus/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/two-swap/README.md)
+          - [two-swap](Languages/Forth/volksFORTH/Language/Words/two-swap/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Two-times/README.md)
+          - [Two-times](Languages/Forth/volksFORTH/Language/Words/Two-times/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Type/README.md)
+          - [Type](Languages/Forth/volksFORTH/Language/Words/Type/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/u-d-divide-mod/README.md)
+          - [u-d-divide-mod](Languages/Forth/volksFORTH/Language/Words/u-d-divide-mod/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/U-divide-mod/README.md)
+          - [U-divide-mod](Languages/Forth/volksFORTH/Language/Words/U-divide-mod/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/u-greater-than/README.md)
+          - [u-greater-than](Languages/Forth/volksFORTH/Language/Words/u-greater-than/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/u-less-than/README.md)
+          - [u-less-than](Languages/Forth/volksFORTH/Language/Words/u-less-than/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/u-m-divide-mod/README.md)
+          - [u-m-divide-mod](Languages/Forth/volksFORTH/Language/Words/u-m-divide-mod/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/u-m-times/README.md)
+          - [u-m-times](Languages/Forth/volksFORTH/Language/Words/u-m-times/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/U-maximum/README.md)
+          - [U-maximum](Languages/Forth/volksFORTH/Language/Words/U-maximum/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/U-minimum/README.md)
+          - [U-minimum](Languages/Forth/volksFORTH/Language/Words/U-minimum/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Under/README.md)
+          - [Under](Languages/Forth/volksFORTH/Language/Words/Under/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/unsigned-dot/README.md)
+          - [unsigned-dot](Languages/Forth/volksFORTH/Language/Words/unsigned-dot/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/unsigned-dot-right-justified/README.md)
+          - [unsigned-dot-right-justified](Languages/Forth/volksFORTH/Language/Words/unsigned-dot-right-justified/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/until/README.md)
+          - [until](Languages/Forth/volksFORTH/Language/Words/until/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Upper/README.md)
+          - [Upper](Languages/Forth/volksFORTH/Language/Words/Upper/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Uwithin/README.md)
+          - [Uwithin](Languages/Forth/volksFORTH/Language/Words/Uwithin/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/video-fetch/README.md)
+          - [video-fetch](Languages/Forth/volksFORTH/Language/Words/video-fetch/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/while/README.md)
+          - [while](Languages/Forth/volksFORTH/Language/Words/while/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/window/README.md)
+          - [window](Languages/Forth/volksFORTH/Language/Words/window/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/word/README.md)
+          - [word](Languages/Forth/volksFORTH/Language/Words/word/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Xor/README.md)
+          - [Xor](Languages/Forth/volksFORTH/Language/Words/Xor/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Zero-equals/README.md)
+          - [Zero-equals](Languages/Forth/volksFORTH/Language/Words/Zero-equals/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/zero-equals-exit/README.md)
+          - [zero-equals-exit](Languages/Forth/volksFORTH/Language/Words/zero-equals-exit/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/zero-greater/README.md)
+          - [zero-greater](Languages/Forth/volksFORTH/Language/Words/zero-greater/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/zero-less/README.md)
+          - [zero-less](Languages/Forth/volksFORTH/Language/Words/zero-less/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/Zero-noequal/README.md)
+          - [Zero-noequal](Languages/Forth/volksFORTH/Language/Words/Zero-noequal/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_Comment/README.md)
+          - [\_Comment](Languages/Forth/volksFORTH/Language/Words/_Comment/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_Compile-string/README.md)
+          - [\_Compile-string](Languages/Forth/volksFORTH/Language/Words/_Compile-string/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_cut-string/README.md)
+          - [\_cut-string](Languages/Forth/volksFORTH/Language/Words/_cut-string/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_Digit-question/README.md)
+          - [\_Digit-question](Languages/Forth/volksFORTH/Language/Words/_Digit-question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_Dot-comment/README.md)
+          - [\_Dot-comment](Languages/Forth/volksFORTH/Language/Words/_Dot-comment/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_Dot-string/README.md)
+          - [\_Dot-string](Languages/Forth/volksFORTH/Language/Words/_Dot-string/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_ELSE/README.md)
+          - [\_ELSE](Languages/Forth/volksFORTH/Language/Words/_ELSE/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_End-comment/README.md)
+          - [\_End-comment](Languages/Forth/volksFORTH/Language/Words/_End-comment/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_IF/README.md)
+          - [\_IF](Languages/Forth/volksFORTH/Language/Words/_IF/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_minus-trailing/README.md)
+          - [\_minus-trailing](Languages/Forth/volksFORTH/Language/Words/_minus-trailing/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_Null-string_question/README.md)
+          - [\_Null-string\_question](Languages/Forth/volksFORTH/Language/Words/_Null-string_question/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_Number/README.md)
+          - [\_Number](Languages/Forth/volksFORTH/Language/Words/_Number/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_Number-greater/README.md)
+          - [\_Number-greater](Languages/Forth/volksFORTH/Language/Words/_Number-greater/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_paren-find/README.md)
+          - [\_paren-find](Languages/Forth/volksFORTH/Language/Words/_paren-find/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_Question-quote/README.md)
+          - [\_Question-quote](Languages/Forth/volksFORTH/Language/Words/_Question-quote/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_quote-literal/README.md)
+          - [\_quote-literal](Languages/Forth/volksFORTH/Language/Words/_quote-literal/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_String/README.md)
+          - [\_String](Languages/Forth/volksFORTH/Language/Words/_String/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_THEN/README.md)
+          - [\_THEN](Languages/Forth/volksFORTH/Language/Words/_THEN/README.md)
             
-          - [](Languages/Forth/volksFORTH/Language/Words/_to-type/README.md)
+          - [\_to-type](Languages/Forth/volksFORTH/Language/Words/_to-type/README.md)
             
         - [Accessing Memory (PEEK and POKE)](Languages/Forth/volksFORTH/Tutorial/Accessing_Memory/README.md)
           
@@ -1980,7 +1982,7 @@
           
         - [Sieve of Eratosthenes Benchmark](Languages/Forth/X-Forth/Examples/ProjXForthSieve/README.md)
           
-        - [](Languages/Forth/X-Forth/Examples/XEP80_Driver_for_X-FORTH/README.md)
+        - [XEP80\_Driver\_for\_X-FORTH](Languages/Forth/X-Forth/Examples/XEP80_Driver_for_X-FORTH/README.md)
           
   - [Fortran](Languages/Fortran/README.md)
     
@@ -2014,7 +2016,7 @@
       
     - [Draper Pascal](Languages/Pascal/Draper_Pascal/README.md)
       
-    - [](Languages/Pascal/Kyan_Pascal/README.md)
+    - [Kyan\_Pascal](Languages/Pascal/Kyan_Pascal/README.md)
       
         - [CIO Library for Kyan Pascal](Languages/Pascal/Kyan_Pascal/Examples/CIO_Library_for_Kyan_Pascal/README.md)
           
