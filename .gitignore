@@ -3,7 +3,7 @@
 .vs/
 
 /media/
-AtariWikiChecker.log
-AtariWikiChecker.md
-CheckResult.*
+/media
+
+/results
 

@@ -18,7 +18,7 @@ See [Basic writing and formatting syntax](https://docs.github.com/en/get-started
 | content/\<article\>             | Article folder, use title case, use replacement rules given below|
 | content/\<article\>/attachments | Article attachments folder, use only for attachments smaller than 5 MB that are not ´*.avi´,´*.flac´,´*.mp3´,´*.mp4´,´*.wav´. |
 | media/\<article\>/attachments | Topic media attachments folder, use for attachments with 5 MB or more and for ´*.avi´,´*.flac´,´*.mp3´,´*.mp4´,´*.wav´. This folder is not part of the repository to keep its size manageable. |
-
+| results/ | Result of check runs via the tools in the "bin" folder. This folder is not part of the repository, but is created automatically locally if required.
 
 ## Replacement Rules
 

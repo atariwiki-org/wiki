@@ -2,7 +2,7 @@
 cd "$(dirname "$0")"
 cd ..
 mkdir -p results
-RESULT=results/CheckResult
+RESULT=results/markdown-checker
 rm -f ${RESULT}.md
 
 if ! command -v markdown-checker  >/dev/null 2>&1
@@ -26,5 +26,6 @@ fi
 
 markdown-checker . -f check_broken_paths -o ${RESULT} 2>${RESULT}.tmp
 fgrep --ignore-case --invert-match volksFORTH ${RESULT}.tmp >${RESULT}.log
+rm -f ${RESULT}.tmp 
 
 ls -l ${RESULT}.md
