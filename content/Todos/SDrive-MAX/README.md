@@ -61,7 +61,7 @@ SDrive-MAX - at start up with no atr image selected 2
 - [Elegoo Uno R3 2,8" TFT Touchscreen mit SD Karten Slot für Arduino UNO R3 Bibliotheken auf CD Mitgeliefert](https://www.amazon.de/dp/B01EUVJYME)
 - [SDrive-MAX at HiassofT's Atari 8bit world](http://www.horus.com/~hias/atari/#sdrive)
 - [microSD card from Amazon](https://www.amazon.de/SanDisk-Ultra-microSDHC-Speicherkarte-Adapter/dp/B073S8LQSL/ref=sr_1_1?s=computers&ie=UTF8&qid=1515100616&sr=1-1&keywords=sandisk+32gb+micro+sd)
-- [Projektvorstellung: SDrive-MAX im forum64.de](https://www.forum64.de/index.php?thread/78122-projektvorstellung-sdrive-max/&pageNo=1&s=df14a241abb82ff64d6c22ce1db8c392dec474ba) ; German language ; please use: [translate.google](https://translate.google.de/) in case of problems. Alexa, Siri or even the Star Trek universal translator from 1967 do not work at the moment, but AtariWiki has an eye on it. ;-)
+- [Projektvorstellung: SDrive-MAX im forum64.de](https://www.forum64.de/index.php?thread/78122-projektvorstellung-sdrive-max/) ; German language ; please use: [translate.google](https://translate.google.de/) in case of problems. Alexa, Siri or even the Star Trek universal translator from 1967 do not work at the moment, but AtariWiki has an eye on it. ;-)
 - [http://www.abbuc.de/community/forum/viewtopic.php?f=15\&t=9451](http://www.abbuc.de/community/forum/viewtopic.php?f=15&t=9451) ; German language ; instructions for setting up a SDrive-MAX from Sascha Kriegel. Incredible infos, a must read. Thank you so much Sascha, AtariWiki is deep in your debt.
 
 ## Credits

@@ -1,0 +1,33 @@
+markdown-checker -f check_broken_urls content\Articles\README.md ^
+ content\Companies\Atari\Atari_Benelux\Programmeren..._Hoe_Doe_Je_Dat\Programmeren..._Hoe_Doe_Je_Dat_Deel_3\README.md ^
+ content\Companies\Atari\Atari_Corporation_UK\Star_Raiders\README.md ^
+ content\Companies\Atari\Atari_Corporation_UK\Star_Raiders\Star_Raiders_source_code_by_Lorenz_Wiest\README.md ^
+ content\Companies\Atari\Atari_Program_Exchange_APX_Software\README.md ^
+ content\Companies\Atari\Atari_Program_Exchange_APX_Software\Enhancements_to_Graph_It\README.md ^
+ content\Companies\Atari\Stock_Charting\README.md ^
+ content\Companies\Dorsett_Educational_Systems\Health_Services_Career_HC\README.md ^
+ content\Companies\Dorsett_Educational_Systems\Industrial_Solid-State_Electronics_PL\README.md ^
+ content\Companies\ICD\SpartaDOS\README.md ^
+ content\Companies\Indus_Systems\Indus_GT\README.md ^
+ content\Companies\Raetz_Eberle\Sprachbox-XL-XE\README.md ^
+ content\Companies\WDR\WWF-Club-Spiel\README.md ^
+ content\Hardware\USB\Interesting_USB_Devices\README.md ^
+ content\Languages\Action\SourceCodeDisk1\README.md ^
+ content\Languages\BASIC\Atari_BASIC\README.md ^
+ content\Languages\BASIC\Turbo-BASIC_XL\README.md ^
+ content\Languages\CHIP-8\README.md ^
+ content\Languages\Forth\README.md ^
+ content\Languages\Forth\Articles\Implementations_of_NEXT_on_6502\README.md ^
+ content\Languages\Forth\volksFORTH\Extensions\Mini-OOF\README.md ^
+ content\Languages\Forth\volksFORTH\Handbuch\Chapter2\README.md ^
+ content\Languages\WSFN\README.md ^
+ content\Magazines\README.md ^
+ content\Rarity_10\README.md ^
+ content\Todos\6502_Assembly_Code\README.md ^
+ content\Todos\Diskettenformate\README.md ^
+ content\Todos\How_to_query_the_MultiJoy_Interface\README.md ^
+ content\Todos\Ironman_Atari\README.md ^
+ content\Todos\Laufwerksformate\README.md ^
+ content\Todos\SDrive-MAX\README.md ^
+ content\Wiki\README.md
+-o CheckMarkdownURLs.md

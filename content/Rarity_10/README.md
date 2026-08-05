@@ -10,7 +10,7 @@ Below are the products AtariWiki is looking for. Besides this, the worldwide com
 
 There are more than rumors about this OS type; please see here:
 
-[Atari XL OS full searchable](http://mixinc.net/atari/books/XL-OS_Full_Searchable.pdf) size: 14.8 MB
+Atari_XL_Addendum-Atari_Home_Computer_System-Operating_System_Manual.pdf](../media/Atari_XL_Addendum-Atari_Home_Computer_System-Operating_System_Manual.pdf) size: 14.8 MB
 
 Page 31 of the PDF file, or page 28 of the manual itself.
 
