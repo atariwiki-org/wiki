@@ -29,26 +29,7 @@ Certainly some games could be played with it and I believe it can be also put in
 
 \-- Main.JosefAugustin - 02 Apr 2006
 
-## USB Skateboard
-
-[Can be found here](<http://www.ergenic.com/english_version/gameboard-pc(uk).htm>)
-[and here](http://www.alfadata.com/pc/skateboard.html).
-
-Imagine playing Master of the Lamps with it! :)
-
-\-- Main.JosefAugustin - 25 May 2005
-
-## USB Desk Free 3D Keyboard
-
-[Alpha Grip 3D Keyboard/Mouse](http://alphagrip.com/index.html)
-
-Desk-Free Keyboard device. Interesting....
-
-![](attachments/agfrontsmall.jpg)
-![](attachments/agcentertopsmall3.jpg)
-![](attachments/agtoprightsmall.jpg)
-
-## USB foldable and changable Keyboard
+## USB foldable and changeable Keyboard
 
 [Ideazon Keyboard](http://www.ideazon.com)
 

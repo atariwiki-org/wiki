@@ -37,10 +37,12 @@ This is an open-source tool for checking Markdown files written in Python.
 - In the terminal, run `pip install markdown-checker` to install and
 - In the terminal, run `pip install --upgrade markdown-checker` to update an existing installation.
 
-You can run the tool by executing the scripts in the "/bin" folder.
+You can run the tool to check the local file references by executing the scripts in the "/bin" folder.
 
 - `CheckMarkdown-Loop.bat`
 - `CheckMarkdown.sh`
+
+The markdown-check an also detect broken remote URLs. See the command line options for details.
 
 ## [AtariWikiTool](https://github.com/atariwiki-org/wiki-tools)
 
@@ -71,4 +73,10 @@ Planned features:
 - Cross-Reference for articles and attachments
 - Index of attachments by size
 - Detect duplicate attachment files to reduce the overall size
-- Take size of the table cell content inthe table body also into account for determination of table column width.
+- Take size of the table cell content in the table body also into account for determination of table column width.
+
+## [Wayback Machine](https://web.archive.org/)
+
+The[Wayback Machine](https://web.archive.org/) is a website archiving service provided by the Internet Archive. If the Wiki contains a link to a website that no longer exists, you can use an indirect link via the Wayback Machine to bring it back. For example "http://www.retrobits.net/atari/indus.shtml" is no longer in existence. But that last preserved version of the page is available at [Archive of http://retrobits.net/atari/indus.shtml in 11/2025](https://web.archive.org/web/20251126154650/http://retrobits.net/atari/indus.shtml).
+
+

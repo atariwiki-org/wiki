@@ -26,7 +26,7 @@ The Atari community has already started to bring the listing to files, please se
 
 ## Further information
 
-- [Doug Neubauer's Star Raiders site](http://dougneubauer.com/starraiders/)
+- [Doug Neubauer's Star Raiders site](https://en.wikipedia.org/wiki/Star_Raiders)
 - [Interview with Doug Neubauer by Lee Pappas](http://www.atarihq.com/othersec/library/neubauer.html)
 - [Interview with Doug Neubauer](http://www.dadgum.com/halcyon/BOOK/NEUBAUER.HTM)
 - [Eastereggs](http://www.digitpress.com/eastereggs/a48starraiders.htm)

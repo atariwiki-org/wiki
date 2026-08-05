@@ -61,9 +61,8 @@ Additional disclaimer: I am the author of ATasm and envisionPC.
 
 ### Graphics editors
 
-- envisionPC is a font/map editing program similar to the original Envision program written for the Atari. It runs on an IBM PC (either Linux or DOS/Windows) and includes all source code.  It will load and save maps and character sets to disk images, MAC/65, and Action! formats.  It is available at [http://atari.miribilist.com/envision/index.html](http://atari.miribilist.com/envision/index.html)
-- gEnvision is another Envision-like program written for Linux written by Larry Richardson.  gEnvision will allow you to edit Atari character sets in either single or multicolor modes.  It will let you create character based "maps" of up to 256x256 characters.  It will save characters sets and maps as MAC/65 source code. gEnvision is available at [http://bellsouthpwp.net/r/i/rich5462](http://bellsouthpwp.net/r/i/rich5462)
-- graph2font is a conversion utility for full screen pictures.  Graph2Font has evolved into a full-featured graphics editor and conversion tool.  The latest version can be found at [http://g2f.atari8.info](http://g2f.atari8.info)
+- envisionPC is a font/map editing program similar to the original Envision program written for the Atari. It runs on an IBM PC (either Linux or DOS/Windows) and includes all source code.  It will load and save maps and character sets to disk images, MAC/65, and Action! formats.  It is available at [http://atari.miribilist.com/envision/index.html](https://atari.miribilist.com/envision/)
+- Graph2Font (G2F) is a conversion utility for full screen pictures.  Graph2Font has evolved into a full-featured graphics editor and conversion tool.  The latest version can be found at [http://g2f.atari8.info](http://g2f.atari8.info)
 - GIMP and a number of homebrew tools for graphics conversion
 
 ### Sound editors
@@ -88,7 +87,7 @@ The first three techniques related in this section rely on ?bugs? in the GTIA ch
 original CTIA chip did not have GTIA modes 9,10,1#  However, in early 1982 Atari
 began shipping with GTIA chip which provided 3 new graphics modes.  It appears that
 the GTIA was originally slated to be shipped with the original units but there were
-manufacturing issues that delayed production (see Atari History sec?)  The new GTIA
+manufacturing issues that delayed production (see Atari History section?)  The new GTIA
 modes can be selected by setting the display list to ANTIC mode f (graphics 8), and then
 setting the GPRIOR register appropriately.
 

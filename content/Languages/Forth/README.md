@@ -29,7 +29,8 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 ## Forth Standards
 
 - [FORTH 79 Standard](FORTH_79/README.md) (1979)
-- [Forth83](http://forth.sourceforge.net/standard/fst83/) (1983)
+- [Forth83](https://www.complang.tuwien.ac.at/forth/fth83std/FORTH83.TXT) 1983
+- [Forth83 at SourceForge](http://forth.sourceforge.net/standard/fst83/) (1983)
 - [ANSI Forth](http://www.taygeta.com/forth/dpans.html) (1994)
 - [Forth 200x](http://www.forth200x.org/forth200x.html) (2009)
   ([Family tree](http://www.complang.tuwien.ac.at/forth/family-tree/))

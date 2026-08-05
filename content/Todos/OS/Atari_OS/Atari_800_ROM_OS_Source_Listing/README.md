@@ -1,5 +1,7 @@
 # Atari 800 OS Source Listing
 
+See also [XL-OS_Full_Searchable.pdf](attachments/XL-OS_Full_Searchable.pdf).
+
 ```
  LIST X
 ; THIS IS THE MODIFIED SEPTEMBER ATARI 400/800 COMPUTER OPERATING

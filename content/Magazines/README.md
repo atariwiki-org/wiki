@@ -30,10 +30,10 @@ An American Atari magazine.
 
 [View at AtariMagazines.com](http://www.atarimagazines.com/compute/)
 
-### Pro(c) Atari
+### Pro(C) Atari
 
-Pro(c) Atari is a magazine which has been printed and distributed in both English and German since 2014. In 2017 Pro(c) Atari is planning two issues only in English.
+Pro(c) Atari was a magazine which was been printed and distributed in both English and German since 2014. In 2017 Pro(c) Atari is planning two issues only in English. Pro(c) and the related webiste closed in 2026.
 
 The main emphasis of the magazine is to look at nostalgia for old games, however it also looks at new homebrew games and demos.
 
-[Official Website](http://www.proc-atari.de)
+[Archive of the Official Website on 08/2025](https://web.archive.org/web/20250805135643/https://proc-atari.de/)

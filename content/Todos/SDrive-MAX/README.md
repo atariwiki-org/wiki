@@ -4,8 +4,8 @@
 
 SDrive-MAX by [KBr](http://www.kbrnet.de/projekte/sdrive-max/index.html) is an incredible smart device, which is highly recommended by AtariWiki. All data is stored on a mircoSD card (up to 32 GB and FAT32 format). The device offers the user 4 drives at one time and is connected to the Atari with a SIO cable. No further power supply is needed. Please ignore the power plug:
 
-![](attachments/power.jpg)
-SDrive-MAX - power plug
+- SDrive-MAX - power plug<br>![](attachments/power.jpg)
+
 
 when dealing with the Atari over SIO and/or PC/Mac over USB. It can really damage the device! Please don't use USB and SIO at the same time! With version 0.5 SDrive-MAX can handle now ATX- and CAS-images! It can't be better! Now, Atari users on real hardware can deal with protected disk images. Of course, ATX support is currently limited and not all ATX files are supported. In 0.5, images with weak bits or timing based protection (e. g. skew alignment or duplicate sectors based on drive timing) will not work correctly. Version 0.6 will have support for weak bits but still won't support timing based protection. Maybe, timing-based problems can be solved in the future, but we have to see, due to the limited resources on the device. Thank you so much Farb from AtariAge for providing us with this information. Further, all stuff on just a single microSD card! That offers for the community to build a 'master microSD card image' for all. Just a host is still needed.
 
@@ -53,7 +53,7 @@ SDrive-MAX - at start up with no atr image selected 2
 ## References
 
 - [Original SDrive-Max website](http://www.kbrnet.de/projekte/sdrive-max/index.html)
-- [Arduino Uno Rev.3 Mikrocontroller Board](https://www.amazon.de/gp/product/B008GRTSV6/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+- [Arduino Uno Rev.3 Mikrocontroller Board](https://www.amazon.de/gp/product/B008GRTSV6/)
 - [USB cable from Amazon](https://www.amazon.de/gp/product/B00NH11KIK/ref=s9_acsd_top_hd_bw_bT6cqN_c_x_7_w?pf_rd_m=A3JWKAKR8XB7XF&pf_rd_s=merchandised-search-4&pf_rd_r=GYNZKVVH3837VRC6W9AT&pf_rd_t=101&pf_rd_p=ced6bd00-8db1-5cd0-929d-1e6181b0bb2b&pf_rd_i=430093031)
 - [Bundel Acryl Gehäuse \& UNO R3 ATmega 328P Board CH340G USB Chip](https://www.amazon.de/dp/B0178HYJWW)
 - [CrossPack for AVR® Development](https://www.obdev.at/products/crosspack/download.html)

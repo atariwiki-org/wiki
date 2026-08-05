@@ -55,11 +55,11 @@ STAR RAIDERS 8KB ROM Genome Sequence ; thank you so much Lorenz, that is totally
 
 - [Original post of the source code](http://atariage.com/forums/topic/243904-star-raiders-source-code-to-be-released/page-9#entry3422364)
 - [AtariAge Forum - Fully documented, reverse-engineered STAR RAIDERS source code available](http://atariage.com/forums/topic/251001-fully-documented-reverse-engineered-star-raiders-source-code-available/)
-- [Link at github of the source code](https://github.com/lwiest/StarRaiders)
+- [Link at GitHub of the source code](https://github.com/lwiest/StarRaiders)
 - [Wikipedia 'Star Raiders'](https://en.wikipedia.org/wiki/Star_Raiders#Source_code)
 - [ANTIC The Atari 8-bit Podcast](http://ataripodcast.libsyn.com/webpage/2016/02/21)
 - [Star Raiders Tribute Page](http://www.sonic.net/~nbs/star-raiders/)
-- [Brainwagon - Deconstructing the Classic Atari Game: Star Raiders](http://brainwagon.org/2013/11/17/deconstructing-the-classic-atari-game-star-raiders/)
+- [Brainwagon - Deconstructing the Classic Atari Game: Star Raiders](https://brainwagon.org/blog/2013-11-17-deconstructing-the-classic-atari-game-star-raiders.html)
 - [Article 'Reverse Engineering Star Raiders', PoC GTFO 0x13, p. 5-20, October 2016](https://archive.org/details/pocorgtfo13)
 
 ## Source Code Listing

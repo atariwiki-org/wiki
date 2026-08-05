@@ -27,14 +27,12 @@ Requires 24 KB minimum of RAM, Atari Basic and Atari Disk drive.
 
 ## Very important
 
-The original program could not handle todays high stock volumes. Therefore, Wade Ripkowski did a deep investigation into the source code, could find out, what has to be changed and offered us a version, which works even toady (please see above). Thank you so much Wade for preserving and adapting the program to the modern times! For further information, please visit Wade's site:
+The original program could not handle todays high stock volumes. Therefore, Wade Ripkowski did a deep investigation into the source code, could find out, what has to be changed and offered us a version, which works even today (please see above). Thank you so much Wade for preserving and adapting the program to the modern times! For further information, please visit Wade's site:
 
 - [Inverse ATASCII](http://inverseatascii.info/2015/02/10/s1e10-atari-stock-charting/)
   Highly recommended! As well as his podcast:
 - [Inverse ATASCII podcast](https://itunes.apple.com/de/podcast/inverse-atascii/id919358656?mt=2)
-- [Inverse ATASCII feed](http://feeds.feedburner.com/InverseAtascii)
-  ![](attachments/Inverse_ATASCII.jpg)
-  Inverse ATASCII podcast logo
+- Inverse ATASCII podcast logo<br> ![](attachments/Inverse_ATASCII.jpg)
 
 ## Box
 

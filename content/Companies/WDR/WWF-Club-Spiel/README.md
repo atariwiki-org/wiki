@@ -15,4 +15,4 @@ Das WWF-Club-Spiel wurde in der Fernsehsendung: "WWF-Club" des WDR als Call-In-S
 
 - [WWF-Club (1980-1990)](https://de.wikipedia.org/wiki/WWF_Club)
 - [WDR Computerclub (1981-2003)](https://de.wikipedia.org/wiki/WDR_Computerclub)
-- [filmpool entertainment GmbH](http://www.filmpool.de/nobeo-studiosproduzentenhaus.html)
+- [filmpool entertainment GmbH](https://filmpool-entertainment.de/))

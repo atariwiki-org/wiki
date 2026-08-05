@@ -45,7 +45,7 @@ Enhancements to Graph It - Original Disk Content
 
 - [Saved\_Plots.atr](attachments/Saved_Plots.atr) ; all plots from the original Graph It manual, this time with Enhancements to Graph It; stored in suffix-format below
 - [Atari Graph It I \& II (CX4109 (Englisch), TXG9517 (deutsch))](../Atari_Germany/Atari_Graph_It_I_and_II/README.md) ; all cassettes are on one atr-diskette-image
-- [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock-Original.atr](http://gury.atari8.info/details_software/1026.php) ; the original APX-diskette-image on Bostjan Gorisek's great site
+- [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock-Original.atr](https://gury.atari8.info/detail.php?id=6789&src=1) ; the original APX-diskette-image on Bostjan Gorisek's great site
 - [Enhancements to Graph It, APX-20074 (C) 1982 Howard D. Siebenrock-Working.atr](attachments/Enhancements_to_Graph_It_APX-20074_C_1982_Howard_D._Siebenrock-Working.atr) ; working, already merged program on an atr-image
 
 ## Manuals

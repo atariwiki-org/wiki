@@ -2,10 +2,10 @@
 
 ## General Information
 
-The MultiJoy is an adapter to connect 8 or 16 Joysticks to a ATARI 8Bit (600XL, 800XL, 130XE, ...). The MultiJoy was designed by Radek Sterba (RASTER). You can find detail Information on this adapter on [Radeks website](http://www.infos.cz/raster/atari/hw/multijoy.htm)
+The MultiJoy is an adapter to connect 8 or 16 Joysticks to a ATARI 8Bit (600XL, 800XL, 130XE, ...). The MultiJoy was designed by Radek Sterba (RASTER). You can find detail Information on this adapter on [Radeks website](http://raster.atariportal.cz/hw/multijoy.htm)
 
 Mathy van Nisselroy has information about MultiJoy Games on
-his [site](http://www.mathyvannisselroy.nl/special%20stuff.htm)
+his [site](https://www.mathyvannisselroy.nl/special%20stuff.htm)
 
 ## Assembler / Machine Language
 

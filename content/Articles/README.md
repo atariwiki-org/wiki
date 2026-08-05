@@ -152,10 +152,10 @@
 # History
 
 - [The Atari FAQ](https://mcurrent.name/atari-8-bit/faq.txt)
-- [The Atari Years](https://dougneubauer.com/atari/#headnumber3)
-- [Atari Historie](http://www.abbuc.de/atari/atarihistorie)
-- [Videospielgeschichten](https://www.videospielgeschichten.de/tag/atari-history-reihe/)
-- [The 10 most important video games of all time](https://www.nytimes.com/2007/03/12/arts/design/12vide.html?_r=2&oref=slogin)
+- [The Atari Years](https://dougneubauer1.wordpress.com/atari/)
+- [Atari Historie - TODO](http://www.abbuc.de/atari/atarihistorie)
+- [Videospielgeschichten](https://videospielgeschichten.de/tag/atari-history-reihe/)
+- [The 10 most important video games of all time](https://www.nytimes.com/2007/03/12/arts/design/12vide.html), login with free account required
 
 # Literature
 
@@ -179,7 +179,7 @@
 
 - [Atari 8-bit Software Preservation Initiative](http://a8preservation.com/#/home)
 - [KryoFlux Personal](https://kryoflux.com/)
-- [SuperCard Pro](http://www.cbmstuff.com/proddetail.php?prod=scp)
+- [SuperCard Pro](https://www.cbmstuff.com/index.php?route=product/product&product_id=52)
 
 # Programming
 

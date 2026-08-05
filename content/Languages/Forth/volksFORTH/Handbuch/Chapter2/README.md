@@ -1,7 +1,5 @@
 # Kapitel 2: Einstieg in volksFORTH
 
-[Google Machine Translation](http://translate.google.de/translate?js=y&prev=_t&hl=de&ie=UTF-8&layout=1&eotf=1&u=http%3A%2F%2Fwiki.strotmann.de%2Fwiki%2FWiki.jsp%3Fpage%3DVFHandbuchKapitel2&sl=de&tl=en)
-
 Damit Sie sofort beginnen können, wird in diesem Kapitel beschrieben,
 
 - wie man das System startet

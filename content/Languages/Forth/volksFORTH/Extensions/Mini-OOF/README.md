@@ -119,10 +119,6 @@ s" fat bar" bar init
 bar draw
 ```
 
-## Larger Example
-
-Gerry Jackson wrote a larger example, [LexGen](http://www.qlikz.org/forth/index.html). This example extends Mini-OOF slightly, but it shows that with these small changes, Mini-OOF can be used for real-world applications.
-
 ## Mini-OOF for VolksForth
 
 ```

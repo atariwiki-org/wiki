@@ -66,7 +66,7 @@ As you can see, WSFN code can become almost unreadable even in simple examples!
 - [AtariAge site of WSFN](http://atariage.com/forums/topic/258767-atari-wsfn-source-code/)
 - [Atari 8-bit forever entry of WSFN](http://gury.atari8.info/software/1007.php)
 - [atariarchives.org entry of WSFN](http://www.atariarchives.org/APX/showinfo.php?cat=20026)
-- [Canada's Videogame Museum's entry of WSFN](http://www.pcmuseum.ca/details.asp?id=39356&type=software)
+- [Archive Canada's Videogame Museum's entry of WSFN on 10/2019](https://web.archive.org/web/20191004055546/http://www.pcmuseum.ca/details.asp?id=39356&type=Software)
 - [Alchetron entry of WSFN](<https://alchetron.com/WSFN-(programming-language)-5071974-W>)
 
 ## Pictures

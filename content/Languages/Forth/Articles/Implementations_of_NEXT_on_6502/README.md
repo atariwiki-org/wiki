@@ -45,7 +45,7 @@ NEXT  LDY   #1
 L816E  JMP  (TMP)
 ```
 
-See [http://groups.google.de/group/comp.lang.forth/browse\_thread/thread/19f7f2102e020583/8d1b52cf069d1258](http://groups.google.de/group/comp.lang.forth/browse_thread/thread/19f7f2102e020583/8d1b52cf069d1258)
+See [https://groups.google.com/g/comp.lang.forth/c/GffyEC4CBYM](https://groups.google.com/g/comp.lang.forth/c/GffyEC4CBYM)
 
 ### FOCO65
 

@@ -2,11 +2,11 @@
 
 ### Turn your Atari into a Ferrari
 
-By far one of the most popular aftermarket drives for the Atari 8-bit computers was the Indus GT. Sold in a Big black case with psu and manuals, it really was a great looking and even better performing Drive. The styling with the LED readout, and dust cover door, half height profile and all black finish, made it a sexy choice for sure. With an option to install an S-Ram Charger, it literally turned the Floppy drive into a Z80 CP/M computer that you then used your Atari as a terminal to access. A version of CP/M 2.2 was included with the upgrade.[Indus CPM 2.2](Indus_CPM_2.2/README.md)
+By far one of the most popular aftermarket drives for the Atari 8-bit computers was the Indus GT. Sold in a Big black case with PSU and manuals, it really was a great looking and even better performing Drive. The styling with the LED readout, and dust cover door, half height profile and all black finish, made it a sexy choice for sure. With an option to install an S-Ram Charger, it literally turned the Floppy drive into a Z80 CP/M computer that you then used your Atari as a terminal to access. A version of CP/M 2.2 was included with the upgrade.[Indus CPM 2.2](Indus_CPM_2.2/README.md)
 
 A great manual came with the drive, and other manuals were also made available which made this a very popular drive because of its support.
 
 - [Indus GT Field Service Manual](Indus_GT_Field_Service_Manual/README.md)
-- [Indus GT resource page](http://www.retrobits.net/atari/indus.shtml) ; A Great Page with complete resources for the drive. :-)))
+- [Archive of Indus GT resource page on 11/2025](https://web.archive.org/web/20251126154650/http://retrobits.net/atari/indus.shtml) ; A Great Page with complete resources for the drive. :-)))
   ![](attachments/indusad1.jpg)
   ![](attachments/indus-gt-25-floppy-disk-drive-atari_1.jpg)

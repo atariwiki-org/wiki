@@ -82,6 +82,6 @@ The START key of the Atari switches off the slowdown of the CHIP-8 programs, so 
 ## Misc
 
 - Awesome CHIP-8 [https://chip-8.github.io/links/](https://chip-8.github.io/links/)
-- Chip-8 bei Tindie [https://www.tindie.com/stores/chip8/](https://www.tindie.com/stores/chip8/)
+- Chip-8 bei Tindie [Archive of https://www.tindie.com/stores/chip8/ on 05/2024](https://web.archive.org/web/20240504112353/https://www.tindie.com/products/cb2micro/cb2-microcomputer/)
 - BUILD YOUR OWN CHIP-8 COMPUTER [https://chip-8.com/build-your-own-computer](https://chip-8.com/build-your-own-computer)
 - CB2 microcomputer [https://www.tindie.com/products/cb2micro/cb2-microcomputer/](https://www.tindie.com/products/cb2micro/cb2-microcomputer/)
