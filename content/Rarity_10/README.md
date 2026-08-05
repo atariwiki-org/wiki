@@ -105,7 +105,7 @@ Wurde es je fertig?
 
 ## Missing Dorsett Educational Systems Tapes
 
-Some tapes were severely damaged and therefore couldn't be digitized. If anyone is in possession of the following tapes, please give us a message or a post [here](http://atariage.com/forums/topic/251713-desperate-call-for-help-on-missing-dorsett-tapes/). We really need your help and appreciate just any hint on the programs, who seem to be lost in time, like tears in rain.
+Some tapes were severely damaged and therefore couldn't be digitized. If anyone is in possession of the following tapes, please give us a message or a post [here](https://forums.atariage.com/topic/251713-desperate-call-for-help-on-missing-dorsett-tapes/). We really need your help and appreciate just any hint on the programs, who seem to be lost in time, like tears in rain.
 
 The ones left to be digitizde are below.
 

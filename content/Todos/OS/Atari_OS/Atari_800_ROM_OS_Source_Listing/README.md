@@ -1,6 +1,6 @@
 # Atari 800 OS Source Listing
 
-See also [XL-OS\_Full\_Searchable.pdf](attachments/XL-OS_Full_Searchable.pdf).
+See also [Atari_XL_Addendum-Atari_Home_Computer_System-Operating_System_Manual.pdf](../media/attachments/Atari_XL_Addendum-Atari_Home_Computer_System-Operating_System_Manual.pdf).
 
 ```
  LIST X
