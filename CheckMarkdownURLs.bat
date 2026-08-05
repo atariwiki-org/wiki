@@ -22,12 +22,10 @@ markdown-checker -f check_broken_urls content\Articles\README.md ^
  content\Languages\Forth\volksFORTH\Handbuch\Chapter2\README.md ^
  content\Languages\WSFN\README.md ^
  content\Magazines\README.md ^
- content\Rarity_10\README.md ^
  content\Todos\6502_Assembly_Code\README.md ^
  content\Todos\Diskettenformate\README.md ^
- content\Todos\How_to_query_the_MultiJoy_Interface\README.md ^
  content\Todos\Ironman_Atari\README.md ^
  content\Todos\Laufwerksformate\README.md ^
  content\Todos\SDrive-MAX\README.md ^
- content\Wiki\README.md
--o CheckMarkdownURLs.md
+ content\Wiki\README.md ^
+-o CheckMarkdownURLs 2>CheckMarkdownURLs.log

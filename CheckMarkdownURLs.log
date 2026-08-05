@@ -1,0 +1,173 @@
+\U0001f62d Found 28 issues in the following files:
+\u26a0 29 links had warnings:
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Articles\README.md', line 156
+http://www.abbuc.de/atari/atarihistorie is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Articles\README.md', line 158
+https://www.nytimes.com/2007/03/12/arts/design/12vide.html could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Articles\README.md', line 822
+http://atariage.com/forums/topic/201133-os-source-code-all-revisions/?p=4118825 could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Benelux\Programmeren..._Hoe_Doe_Je_Dat\Programmeren..._Hoe_Doe_Je_Dat_Deel_3\README.md', line 29
+http://data.atariwiki.org/FLAC/Programmeren_Hoe_Doe_Je_Dat_deel3_cass1a.flac is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Benelux\Programmeren..._Hoe_Doe_Je_Dat\Programmeren..._Hoe_Doe_Je_Dat_Deel_3\README.md', line 30
+http://data.atariwiki.org/FLAC/Programmeren_Hoe_Doe_Je_Dat_deel3_cass1b.flac is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Benelux\Programmeren..._Hoe_Doe_Je_Dat\Programmeren..._Hoe_Doe_Je_Dat_Deel_3\README.md', line 31
+http://data.atariwiki.org/FLAC/Programmeren_Hoe_Doe_Je_Dat_deel3_cass2a.flac is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Benelux\Programmeren..._Hoe_Doe_Je_Dat\Programmeren..._Hoe_Doe_Je_Dat_Deel_3\README.md', line 32
+http://data.atariwiki.org/FLAC/Programmeren_Hoe_Doe_Je_Dat_deel3_cass2b.flac is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Corporation_UK\Star_Raiders\README.md', line 29
+https://en.wikipedia.org/wiki/Star_Raiders could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Corporation_UK\Star_Raiders\README.md', line 33
+http://atariage.com/forums/topic/243904-star-raiders-source-code-to-be-released/page-1 could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Corporation_UK\Star_Raiders\README.md', line 35
+http://atariage.com/forums/topic/184398-star-raiders-dual-anyone-heard-of-this-title/ could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Corporation_UK\Star_Raiders\Star_Raiders_source_code_by_Lorenz_Wiest\README.md', line 56
+http://atariage.com/forums/topic/243904-star-raiders-source-code-to-be-released/page-9#entry3422364 could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Corporation_UK\Star_Raiders\Star_Raiders_source_code_by_Lorenz_Wiest\README.md', line 57
+http://atariage.com/forums/topic/251001-fully-documented-reverse-engineered-star-raiders-source-code-available/ could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Corporation_UK\Star_Raiders\Star_Raiders_source_code_by_Lorenz_Wiest\README.md', line 59
+https://en.wikipedia.org/wiki/Star_Raiders#Source_code could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Program_Exchange_APX_Software\README.md', line 88
+http://data.atariwiki.org/DATA/DEEP_BLUE_C_COMPILER.txt is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Atari\Atari_Program_Exchange_APX_Software\README.md', line 138
+http://data.atariwiki.org/DATA/APX_loadngo.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Dorsett_Educational_Systems\Health_Services_Career_HC\README.md', line 54
+http://data.atariwiki.org/FLAC/Health_Services_Career/hc5.flac is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Dorsett_Educational_Systems\Health_Services_Career_HC\README.md', line 55
+http://data.atariwiki.org/FLAC/Health_Services_Career/hc6.flac is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Dorsett_Educational_Systems\Industrial_Solid-State_Electronics_PL\README.md', line 7
+https://archive.org/details/DorsettAtariIndustrialSolid-StateElectronics is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\ICD\SpartaDOS\README.md', line 111
+https://en.wikipedia.org/wiki/SpartaDOS_X could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\Raetz_Eberle\Sprachbox-XL-XE\README.md', line 32
+http://www.abbuc.de/community/forum/viewtopic.php?f=7&t=9808 is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\WDR\WWF-Club-Spiel\README.md', line 16
+https://de.wikipedia.org/wiki/WWF_Club could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Companies\WDR\WWF-Club-Spiel\README.md', line 17
+https://de.wikipedia.org/wiki/WDR_Computerclub could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Hardware\USB\Interesting_USB_Devices\README.md', line 5
+http://www.xbitlabs.com/news/video/display/20040607023341.html could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Hardware\USB\Interesting_USB_Devices\README.md', line 16
+http://www.usb2vga.de/ could not be reached due to a network error.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Hardware\USB\Interesting_USB_Devices\README.md', line 87
+http://www.fairtronic.de/produkte.html could not be reached due to a network error.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\README.md', line 103
+https://data.atariwiki.org/DOC/Atari_BASIC_Reference_Manual_Rev._C.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\README.md', line 104
+https://data.atariwiki.org/DOC/Atari_BASIC_1979.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\README.md', line 105
+https://data.atariwiki.org/DOC/Atari_BASIC_1983.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\README.md', line 119
+http://www.abbuc.de/software/133-software/softwarereferenz/309-atari-BASIC-referenz is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\README.md', line 252
+https://data.atariwiki.org/DOC/Atari_BASIC_Reference_Manual_Rev._C.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\README.md', line 255
+https://data.atariwiki.org/DOC/Atari_BASIC_1979.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\README.md', line 258
+https://data.atariwiki.org/DOC/Atari_BASIC_1983.pdf is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Atari_BASIC\README.md', line 242
+http://en.wikipedia.org/wiki/ATARI_BASIC could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\README.md', line 33
+http://atariki.krap.pl/index.php/Turbo_BASIC_XL is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\README.md', line 34
+http://atariki.krap.pl/index.php/Tokeny_Turbo_BASIC_XL is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\README.md', line 142
+http://www.abbuc.de/mitgliedschaft/shop/literatur is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\README.md', line 144
+http://www.abbuc.de/mitgliedschaft/shop/literatur is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\README.md', line 27
+https://en.wikipedia.org/wiki/Turbo-BASIC_XL could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\README.md', line 28
+https://de.wikipedia.org/wiki/Turbo-BASIC_XL could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\README.md', line 67
+http://atariage.com/forums/topic/266070-turbobasic-xl-v15-mads-source-disassembly/ could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\README.md', line 68
+http://atariage.com/forums/topic/265869-turbo-basic-xl-source-code-now-in-pd-and-online/page-3#entry3770028 could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\CHIP-8\README.md', line 87
+https://www.tindie.com/products/cb2micro/cb2-microcomputer/ is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\CHIP-8\README.md', line 71
+https://forums.atariage.com/topic/82003-chip8-emulator-version-10/ could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\Forth\README.md', line 33
+http://forth.sourceforge.net/standard/fst83/ is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\Forth\volksFORTH\Extensions\Mini-OOF\README.md', line 5
+http://www.jwdt.com/~paysan/mini-oof.html could not be reached due to a network error.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\WSFN\README.md', line 7
+https://en.wikipedia.org/wiki/Tiny_BASIC could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\WSFN\README.md', line 61
+https://en.wikipedia.org/wiki/WSFN_(programming_language) could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\WSFN\README.md', line 66
+http://atariage.com/forums/topic/258767-atari-wsfn-source-code/ could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\6502_Assembly_Code\README.md', line 41
+http://homepage.mac.com/randyhyde/webster.cs.ucr.edu/A2%20Hyde%206502%20Asm%20Lang.pdf could not be reached due to a network error.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\6502_Assembly_Code\README.md', line 43
+http://en.wikibooks.org/wiki/6502_Assembly could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\Ironman_Atari\README.md', line 23
+http://www.amazon.com could not be reached due to a network error.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\Ironman_Atari\README.md', line 77
+http://www.math.tu-berlin.de/~thor/atari++ could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\SDrive-MAX\README.md', line 57
+https://www.amazon.de/dp/B0178HYJWW is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\SDrive-MAX\README.md', line 64
+http://www.abbuc.de/community/forum/viewtopic.php?f=15&t=9451 is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\SDrive-MAX\README.md', line 76
+http://www.abbuc.de/community/forum/viewtopic.php?f=15&t=9451 is broken.
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\SDrive-MAX\README.md', line 63
+https://www.forum64.de/index.php?thread/78122-projektvorstellung-sdrive-max/ could not be verified (access was forbidden by the server).
+
+	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Wiki\README.md', line 47
+https://github.com/atariwiki-org/wiki-tools is broken.
+
