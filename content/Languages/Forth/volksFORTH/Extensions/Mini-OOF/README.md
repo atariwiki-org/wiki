@@ -2,7 +2,7 @@
 
 by Bernd Paysan
 
-Link: [http://www.jwdt.com/~paysan/mini-oof.html](http://www.jwdt.com/~paysan/mini-oof.html)
+Link: [archive of http://www.jwdt.com/~paysan/mini-oof.html in 09/2010](https://web.archive.org/web/20100905062716/http://www.jwdt.com/~paysan/mini-oof.html)
 
 Object oriented system with late binding typically use a "vtable"-approach: the first variable in each object is a pointer to a table, which contains the methods as function pointers. This vtable may contain some other information, too.
 

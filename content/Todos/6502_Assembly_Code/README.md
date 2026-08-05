@@ -38,7 +38,7 @@
 - [Programmieren in Maschinensprache mit dem 6502-E. Flögel](https://archive.org/details/ProgrammierenInMaschinenspracheMitDem6502)
 - [6502 ASSEMBLER-Kurs für Beginner-Andreas Dripke](attachments/6502-Assembler-Kurs_fuer_Beginner-Andreas_Dripke-Print-OCR.pdf) ; Mega-Thanks to 8bitjunkie for donating and Stefan Höhl for scanning the whole book!!!
 - [6502 Assembly Language Programming](ftp://ftp.apple.asimov.net/pub/apple_II/documentation/programming/6502assembly/6502%20Assembly%20Language%20Programming.pdf) (PDF)
-- [6502 Assembly Language by Randy Hyde](http://homepage.mac.com/randyhyde/webster.cs.ucr.edu/A2%20Hyde%206502%20Asm%20Lang.pdf) (PDF)
+- [6502 Assembly Language by Randy Hyde](https://www.plantation-productions.com/Webster/A2%20Hyde%206502%20Asm%20Lang.pdf) (PDF)
 - [Using 6502 Assembly Language by Randy Hyde](http://www.appleoldies.ca/anix/Using-6502-Assembly-Language-by-Randy-Hyde.pdf) (PDF)
 - [WikiBook 6502 Assembly](http://en.wikibooks.org/wiki/6502_Assembly)
 - [6502 Assembly Language Subroutines 1](ftp://ftp.apple.asimov.net/pub/apple_II/documentation/programming/6502assembly/6502%20Assembly%20Lanuage%20Rountines%20part%201.pdf)
