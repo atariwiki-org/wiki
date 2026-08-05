@@ -225,7 +225,7 @@
 - [Atari Silent Butler (DX5082)](../Companies/Atari/Atari_Silent_Butler/README.md)
 - [Atari Statistics I (CX4103)](../Companies/Atari/Atari_Statistics_I/README.md)
 - [The Dow Jones Investment Evaluator (CX412)](../Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md)
-- [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](../Companies/Atari/Enhancements_to_Graph_It/README.md)
+- [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](../Companies/Atari/Atari_Program_Exchange_APX_Software/Enhancements_to_Graph_It/README.md)
 - [Family Budgets (APX-20108)](../Companies/Atari/Family_Budgets/README.md)
 - [Family Cash Flow (APX-20080)](../Companies/Atari/Family_Cash_Flow/README.md)
 - [Atari Family Finances (CX421)](../Companies/Atari/Family_Finances/README.md)

@@ -386,6 +386,8 @@
         
       - [Atari Pascal (APX-20102)](Companies/Atari/Atari_Program_Exchange_APX_Software/Atari_Pascal_APX-20102/README.md)
         
+      - [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](Companies/Atari/Atari_Program_Exchange_APX_Software/Enhancements_to_Graph_It/README.md)
+        
       - [EXTENDED Atari fig-FORTH, Cassette: APX-10029, Diskette: APX-20029 (Atari Program Exchange)](Companies/Atari/Atari_Program_Exchange_APX_Software/Extended_Atari_FIG-Forth_APX-20029/README.md)
         
       - [GTIA Demonstration Diskette (APX-20104)](Companies/Atari/Atari_Program_Exchange_APX_Software/GTIA_Demonstration_Diskette_APX-20104/README.md)
@@ -449,8 +451,6 @@
     - [CPS Super SALT](Companies/Atari/CPS_SuperSALT/README.md)
       
     - [Effective Writing CX6012](Companies/Atari/Effective_Writing_CX6012/README.md)
-      
-    - [Enhancements to Graph It, Rev 1.3 - 11-13-81 - APX-20074](Companies/Atari/Enhancements_to_Graph_It/README.md)
       
     - [Family Budgets (APX-20108)](Companies/Atari/Family_Budgets/README.md)
       
@@ -1180,7 +1180,7 @@
       
     - [Sneak Attack](Languages/Action/Sneak_attack/README.md)
       
-    - [ACTION! Source code disk](Languages/Action/SourceCodeDisk1/README.md)
+    - [ACTION! Source Code Disk](Languages/Action/SourceCodeDisk1/README.md)
       
     - [The Action! Run Time Package](Languages/Action/The_Action_Run_Time_Package/README.md)
       

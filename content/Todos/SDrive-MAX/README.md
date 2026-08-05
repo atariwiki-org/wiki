@@ -6,7 +6,6 @@ SDrive-MAX by [KBr](http://www.kbrnet.de/projekte/sdrive-max/index.html) is an i
 
 - SDrive-MAX - power plug<br>![](attachments/power.jpg)
 
-
 when dealing with the Atari over SIO and/or PC/Mac over USB. It can really damage the device! Please don't use USB and SIO at the same time! With version 0.5 SDrive-MAX can handle now ATX- and CAS-images! It can't be better! Now, Atari users on real hardware can deal with protected disk images. Of course, ATX support is currently limited and not all ATX files are supported. In 0.5, images with weak bits or timing based protection (e. g. skew alignment or duplicate sectors based on drive timing) will not work correctly. Version 0.6 will have support for weak bits but still won't support timing based protection. Maybe, timing-based problems can be solved in the future, but we have to see, due to the limited resources on the device. Thank you so much Farb from AtariAge for providing us with this information. Further, all stuff on just a single microSD card! That offers for the community to build a 'master microSD card image' for all. Just a host is still needed.
 
 And last but not least: **Thank you soooooo much Klaus! You really, really rock! Go ahead and a Tera-Thank-You in the name of the community! Incredible and outstanding work! We are as deep as the Mariana Trench in our debt! :-))))**

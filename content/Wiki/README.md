@@ -78,5 +78,3 @@ Planned features:
 ## [Wayback Machine](https://web.archive.org/)
 
 The[Wayback Machine](https://web.archive.org/) is a website archiving service provided by the Internet Archive. If the Wiki contains a link to a website that no longer exists, you can use an indirect link via the Wayback Machine to bring it back. For example "http://www.retrobits.net/atari/indus.shtml" is no longer in existence. But that last preserved version of the page is available at [Archive of http://retrobits.net/atari/indus.shtml in 11/2025](https://web.archive.org/web/20251126154650/http://retrobits.net/atari/indus.shtml).
-
-
