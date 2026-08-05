@@ -15,7 +15,6 @@ markdown-checker -f check_broken_urls content\Articles\README.md ^
  content\Languages\Action\SourceCodeDisk1\README.md ^
  content\Languages\BASIC\Atari_BASIC\README.md ^
  content\Languages\BASIC\Turbo-BASIC_XL\README.md ^
- content\Languages\CHIP-8\README.md ^
  content\Languages\Forth\README.md ^
  content\Languages\Forth\Articles\Implementations_of_NEXT_on_6502\README.md ^
  content\Languages\Forth\volksFORTH\Extensions\Mini-OOF\README.md ^

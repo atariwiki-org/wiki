@@ -1,5 +1,5 @@
-\U0001f62d Found 28 issues in the following files:
-\u26a0 29 links had warnings:
+\U0001f62d Found 27 issues in the following files:
+\u26a0 26 links had warnings:
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Articles\README.md', line 156
 http://www.abbuc.de/atari/atarihistorie is broken.
 
@@ -118,22 +118,16 @@ https://en.wikipedia.org/wiki/Turbo-BASIC_XL could not be verified (access was f
 https://de.wikipedia.org/wiki/Turbo-BASIC_XL could not be verified (access was forbidden by the server).
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\README.md', line 67
-http://atariage.com/forums/topic/266070-turbobasic-xl-v15-mads-source-disassembly/ could not be verified (access was forbidden by the server).
+https://forums.atariage.com/topic/266070-turbobasic-xl-v15-mads-source-disassembly/ could not be verified (access was forbidden by the server).
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\BASIC\Turbo-BASIC_XL\README.md', line 68
-http://atariage.com/forums/topic/265869-turbo-basic-xl-source-code-now-in-pd-and-online/page-3#entry3770028 could not be verified (access was forbidden by the server).
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\CHIP-8\README.md', line 87
-https://www.tindie.com/products/cb2micro/cb2-microcomputer/ is broken.
+https://forums.atariage.com/topic/265869-turbo-basic-xl-source-code-now-in-pd-and-online/page/3/#findComment-3770000 could not be verified (access was forbidden by the server).
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\CHIP-8\README.md', line 71
 https://forums.atariage.com/topic/82003-chip8-emulator-version-10/ could not be verified (access was forbidden by the server).
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\Forth\README.md', line 33
 http://forth.sourceforge.net/standard/fst83/ is broken.
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\Forth\volksFORTH\Extensions\Mini-OOF\README.md', line 5
-http://www.jwdt.com/~paysan/mini-oof.html could not be reached due to a network error.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\WSFN\README.md', line 7
 https://en.wikipedia.org/wiki/Tiny_BASIC could not be verified (access was forbidden by the server).
@@ -144,14 +138,8 @@ https://en.wikipedia.org/wiki/WSFN_(programming_language) could not be verified 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Languages\WSFN\README.md', line 66
 http://atariage.com/forums/topic/258767-atari-wsfn-source-code/ could not be verified (access was forbidden by the server).
 
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\6502_Assembly_Code\README.md', line 41
-http://homepage.mac.com/randyhyde/webster.cs.ucr.edu/A2%20Hyde%206502%20Asm%20Lang.pdf could not be reached due to a network error.
-
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\6502_Assembly_Code\README.md', line 43
 http://en.wikibooks.org/wiki/6502_Assembly could not be verified (access was forbidden by the server).
-
-	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\Ironman_Atari\README.md', line 23
-http://www.amazon.com could not be reached due to a network error.
 
 	File 'C:\jac\system\WWW\Programming\Repositories\atariwiki\wiki\content\Todos\Ironman_Atari\README.md', line 77
 http://www.math.tu-berlin.de/~thor/atari++ could not be verified (access was forbidden by the server).
