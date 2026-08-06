@@ -8,14 +8,14 @@ Standardmäßig arbeitet FORTH mit counted Strings, die lediglich durch eine Adr
 
 So sieht der String FORTH an der Adresse addr im Speicher unter FORTH aus.
 
-- [."](../../Language/Words/dot-string/README.md)
-- ["](../../Language/Words/string/README.md)
-- [,"](../../Language/Words/compile-string/README.md)
-- [nullstring?](../../Language/Words/null-string-question/README.md)
-- ["lit](../../Language/Words/quote-literal/README.md)
-- [.(](../../Language/Words/dot-comment/README.md)
-- [(](../../Language/Words/comment/README.md)
-- [)](../../Language/Words/end-comment/README.md) - dies ist kein Forth Wort, sondern ein Stoppzeichen
+- [."](../../volksFORTH_Language/Words/dot-string/README.md)
+- ["](../../volksFORTH_Language/Words/string/README.md)
+- [,"](../../volksFORTH_Language/Words/compile-string/README.md)
+- [nullstring?](../../volksFORTH_Language/Words/null-string-question/README.md)
+- ["lit](../../volksFORTH_Language/Words/quote-literal/README.md)
+- [.(](../../volksFORTH_Language/Words/dot-comment/README.md)
+- [(](../../volksFORTH_Language/Words/comment/README.md)
+- [)](../../volksFORTH_Language/Words/end-comment/README.md) - dies ist kein Forth Wort, sondern ein Stoppzeichen
 
 ## String-Manipulationen
 
@@ -27,29 +27,29 @@ Keine Stringvariable? - Benutze:
 : String:  Create dup , 0 c, allot DOES> 1+ count ;
 ```
 
-- [caps](../../Language/Words/caps/README.md)
-- [capital](../../Language/Words/capital/README.md)
-- [upper](../../Language/Words/upper/README.md)
-- [capitalitze](../../Language/Words/capitalitze/README.md)
-- [/string](../../Language/Words/cut-string/README.md)
-- [-trailing](../../Language/Words/minus-trailing/README.md)
-- [scan](../../Language/Words/scan/README.md)
-- [skip](../../Language/Words/skip/README.md)
-- [?"](../../Language/Words/question-quote/README.md)
-- [bounds](../../Language/Words/bounds/README.md)
-- [type](../../Language/Words/type/README.md)
-- [\>type](../../Language/Words/to-type/README.md)
-- [place](../../Language/Words/place/README.md)
-- [attach](../../Language/Words/attach/README.md)
-- [append](../../Language/Words/append/README.md)
-- [detract](../../Language/Words/detract/README.md)
-- [match](../../Language/Words/match/README.md)
-- [search](../../Language/Words/search/README.md)
+- [caps](../../volksFORTH_Language/Words/Caps/README.md)
+- [capital](../../volksFORTH_Language/Words/Capital/README.md)
+- [upper](../../volksFORTH_Language/Words/Upper/README.md)
+- [capitalitze](../../volksFORTH_Language/Words/Capitalitze/README.md)
+- [/string](../../volksFORTH_Language/Words/cut-string/README.md)
+- [-trailing](../../volksFORTH_Language/Words/minus-trailing/README.md)
+- [scan](../../volksFORTH_Language/Words/Scan/README.md)
+- [skip](../../volksFORTH_Language/Words/Skip/README.md)
+- [?"](../../volksFORTH_Language/Words/question-quote/README.md)
+- [bounds](../../volksFORTH_Language/Words/Bounds/README.md)
+- [type](../../volksFORTH_Language/Words/Type/README.md)
+- [\>type](../../volksFORTH_Language/Words/to-type/README.md)
+- [place](../../volksFORTH_Language/Words/Place/README.md)
+- [attach](../../volksFORTH_Language/Words/Attach/README.md)
+- [append](../../volksFORTH_Language/Words/append/README.md)
+- [detract](../../volksFORTH_Language/Words/Detract/README.md)
+- [match](../../volksFORTH_Language/Words/match/README.md)
+- [search](../../volksFORTH_Language/Words/Search/README.md)
 
 ## Im Dictionary
 
-- [(find](../../Language/Words/paren-find/README.md)
-- [find](../../Language/Words/find/README.md)
+- [(find](../../volksFORTH_Language/Words/paren-find/README.md)
+- [find](../../volksFORTH_Language/Words/find/README.md)
 
 ## 0-terminated Strings
 
@@ -57,20 +57,20 @@ Es gibt noch eine weitere Darstellungsform für Strings, die beispielsweise für
 
 ![](attachments/zero-term-string.png)
 
-- [asciz](../../Language/Words/asciz/README.md)
-- [\>asciz](../../Language/Words/to-asciz/README.md)
-- [counted](../../Language/Words/counted/README.md)
+- [asciz](../../volksFORTH_Language/Words/asciz/README.md)
+- [\>asciz](../../volksFORTH_Language/Words/to-asciz/README.md)
+- [counted](../../volksFORTH_Language/Words/counted/README.md)
 
 ## Konvertierungen: Strings -- Zahlen
 
 ### String in Zahlen wandeln
 
-- [digit?](../../Language/Words/digit-question/README.md)
-- [accumulate](../../Language/Words/accumulate/README.md)
-- [convert](../../Language/Words/convert/README.md)
-- [number?](../../Language/Words/number-question/README.md)
-- [number](../../Language/Words/number/README.md)
-- [dpl](../../Language/Words/dpl/README.md)
+- [digit?](../../volksFORTH_Language/Words/digit-question/README.md)
+- [accumulate](../../volksFORTH_Language/Words/Accumulate/README.md)
+- [convert](../../volksFORTH_Language/Words/Convert/README.md)
+- [number?](../../volksFORTH_Language/Words/number-question/README.md)
+- [number](../../volksFORTH_Language/Words/Number/README.md)
+- [dpl](../../volksFORTH_Language/Words/Dpl/README.md)
 
 Ein Beispiel der Umwandlung von Zeichen in Zahlen:
 
@@ -102,8 +102,8 @@ So kann der Anwender das übergebene Flag auswerten und die doppelt genaue Zahl 
 
 ### Zahlen in Strings wandeln
 
-- [#](../../Language/Words/number/README.md)
-- [#s](../../Language/Words/number-s/README.md)
-- [hold](../../Language/Words/hold/README.md)
-- [sign](../../Language/Words/sign/README.md)
-- [#\>](../../Language/Words/number-greater/README.md)
+- [#](../../volksFORTH_Language/Words/Number/README.md)
+- [#s](../../volksFORTH_Language/Words/number-s/README.md)
+- [hold](../../volksFORTH_Language/Words/Hold/README.md)
+- [sign](../../volksFORTH_Language/Words/Sign/README.md)
+- [#\>](../../volksFORTH_Language/Words/number-greater/README.md)
