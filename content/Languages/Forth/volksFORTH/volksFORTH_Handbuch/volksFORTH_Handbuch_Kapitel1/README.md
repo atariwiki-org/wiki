@@ -1,4 +1,4 @@
-# Kapitl 1: volksFORTH Version 3.90 Handbuch
+# Kapitel 1: volksFORTH Version 3.90 Handbuch
 
 (c) 1985-2010 FORTH-Gesellschaft e.V. Bernd Pennemann. Georg Rehfeld. Dietrich Weineck Klaus Schielslek. Jörg Staben. Klaus Kohl. Carsten Strotmann
 
@@ -8,7 +8,7 @@ Unser Dank gilt der gesamten FORTH-Gemeinschaft, insbesondere Charles Moore, Mic
 
 ## Prolog
 
-volksFORTH83 ist eine Sprache, die in verschiedener Hinsicht ungewöhnlich ist. Denn FORTH selbst ist nicht nur eine Sprache, sondern ein im Prinzip grenzenloses Programmiersystem. Eines der Hauptmerkmale des Programmiersystems FORTH Ist seine Modalität. Diese Modularität wird durch die kleinste Einheit eines FORTH-Systems, das WORT, gewährleistet.
+volksFORTH83 ist eine Sprache, die in verschiedener Hinsicht ungewöhnlich ist. Denn FORTH selbst ist nicht nur eine Sprache, sondern ein im Prinzip grenzenloses Programmiersystem. Eines der Hauptmerkmale des Programmiersystems FORTH ist seine Modalität. Diese Modularität wird durch die kleinste Einheit eines FORTH-Systems, das WORT, gewährleistet.
 
 In FORTH werden die Begriffe Prozedur, Routine, Programm, Definition und Befehl alle gleichbedeutend mit Wort gebraucht. FORTH besteht also, wie jede andere natürliche Sprache auch, aus Wörtern.
 

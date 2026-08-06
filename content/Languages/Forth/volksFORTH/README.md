@@ -21,35 +21,35 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 
 ## volksFORTH Handbook (English)
 
-- [Chapter 1: volksFORTH Version 3.90 Manual](Handbook/Chapter1/README.md)
+- [Chapter 1: volksFORTH Version 3.90 Manual](volksFORTH_Handbook/volksFORTH_Handbook_Chapter1/README.md)
 
-- [Chapter 2: Introduction to volksFORTH](Handbook/Chapter2/README.md)
+- [Chapter 2: Introduction to volksFORTH](volksFORTH_Handbook/volksFORTH_Handbook_Chapter2/README.md)
 
-- [Chapter 3: Arithmetic](Handbook/Chapter3/README.md)
+- [Chapter 3: Arithmetic](volksFORTH_Handbook/volksFORTH_Handbook_Chapter3/README.md)
 
-- [Chapter 4: Program Structures](Handbook/Chapter4/README.md)
+- [Chapter 4: Program Structures](volksFORTH_Handbook/volksFORTH_Handbook_Chapter4/README.md)
 
-- [Chapter 5: Input / Output in volksFORTH](Handbook/Chapter5/README.md)
+- [Chapter 5: Input / Output in volksFORTH](volksFORTH_Handbook/volksFORTH_Handbook_Chapter5/README.md)
 
-- [Chapter 6: Strings in volksFORTH](Handbook/Chapter6/README.md)
+- [Chapter 6: Strings in volksFORTH](volksFORTH_Handbook/volksFORTH_Handbook_Chapter6/README.md)
 
-- [6502 Assembler](Handbook/6502Assembler/README.md)
+- [6502 Assembler](volksFORTH_Handbook/volksFORTH_Handbook_6502Assembler/README.md)
 
 ## volksFORTH Handbuch (German)
 
-- [Kapitl 1: volksFORTH Version 3.90 Handbuch](Handbuch/Chapter1/README.md)
+- [Kapitl 1: volksFORTH Version 3.90 Handbuch](volksFORTH_Handbuch/Chapter1/README.md)
 
-- [Kapitel 2: Einstieg in volksFORTH](Handbuch/Chapter2/README.md)
+- [Kapitel 2: Einstieg in volksFORTH](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel2/README.md)
 
-- [Kapitel 3: Arithmetik](Handbuch/Chapter3/README.md)
+- [Kapitel 3: Arithmetik](Handbuch/volksFORTH_volksFORTH_Handbuch_Kapitel3/README.md)
 
-- [Programm-Strukturen](Handbuch/Chapter4/README.md)
+- [Programm-Strukturen](Handbuch/volksFORTH_volksFORTH_Handbuch_Kapitel4/README.md)
 
-- [Kapitel 4: Ein-/Ausgabe in volksFORTH](Handbuch/Chapter5/README.md)
+- [Kapitel 4: Ein-/Ausgabe in volksFORTH](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel5/README.md)
 
-- [Kapitel 6: Zeichenketten (Strings) in volksFORTH](Handbuch/Chapter6/README.md)
+- [Kapitel 6: Zeichenketten (Strings) in volksFORTH](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel6/README.md)
 
-- [VolksForth 6502 Assembler](Handbuch/6502Assembler/README.md)
+- [VolksForth 6502 Assembler](volksFORTH_Handbuch/volksFORTH_Handbuch_6502Assembler/README.md)
 
 ## volksFORTH extensions
 
