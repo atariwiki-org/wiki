@@ -1,20 +1,13 @@
 # VolksForth 6502 Assembler
 
-(work in progress, translation pending)
-
 See also: [A 6502 Assembler in FORTH](../../../Articles/A_6502_Assembler_in_FORTH/README.md)
 
-%%tabbedSection
-%%tab-english
-tab content 1
-/%
-%%tab-deutsch
 
 ## Der 6502-Assembler
 
 Im Folgenden werden die Konzepte des 6502-Assemblers für VolksForth dargestellt. Es wird kein vollständiges Glossar angegeben, da die Mnemonics des Assemblers allen Maschinensprache-Programmierern vertraut sein dürften. Eine genaue Darstellung der Funktionsweise findet sich in den [A 6502 Assembler in FORTH](../../../Articles/A_6502_Assembler_in_FORTH/README.md)  . Im Folgenden werden eine kurze Zusammenfassung sowie Änderungen gegenüber dem Original dargestellt.
 
-Die Funktionsweise des Adressinterpreters sowie der Routine NEXT wird in [Kapitel 2: Einstieg in volksFORTH](../Chapter2/README.md) dargestellt. Der 6502-Assembler gestattet strukturierte Programmierung. Die Strukturelemente sind analog zu den Kontrollstrukturen des Forth aufgebaut, tragen jedoch andere Namen, um die Verwechselungsgefahr zu verringern und die Übersichtlichkeit zu erhöhen.
+Die Funktionsweise des Adressinterpreters sowie der Routine NEXT wird in [Kapitel 2: Einstieg in volksFORTH](../volksFORTH_Handbuch_Kapitel2/README.md) dargestellt. Der 6502-Assembler gestattet strukturierte Programmierung. Die Strukturelemente sind analog zu den Kontrollstrukturen des Forth aufgebaut, tragen jedoch andere Namen, um die Verwechselungsgefahr zu verringern und die Übersichtlichkeit zu erhöhen.
 
 Ein Beispiel:
 
@@ -235,6 +228,3 @@ Makro.	Schaltet bei Ausführung auf eine andere Speicherbank. Die genaue Wirkung
 **Commodore**
 
 Makro.	Schaltet bei Ausführung auf eine Speicherbank mit Systemroutinen und führt einen Sprung zu addr aus. Die genaue Wirkungsweise ist Maschinenabhängig.
-
-/%
-/%
