@@ -33,7 +33,7 @@ To find and fix problems, two tools exist.
 This is an open-source tool for checking Markdown files written in Python.
 
 - On macOS: Make sure to remove previous installation of Python installed via `brew`.
-  Run `brew list` to see which version of Python is installed, for example `python@3.9`. 
+  Run `brew list` to see which version of Python is installed, for example `python@3.9`.
   Run `brew uninstall --ignore-dependencies python@3.9`.
 - Install Python from [https://www.python.org/](https://www.python.org/). At the end of the installation you must add the path to the Python binary folder to your PATH environment variable. On macOS, this can be done via running the `Update Shell Profile.command`.
 - Install pip from [https://pip.pypa.io/en/stable/installation/](https://pip.pypa.io/en/stable/installation/).
