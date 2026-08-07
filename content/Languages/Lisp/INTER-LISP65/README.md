@@ -27,4 +27,4 @@ INTER-LISP/65 V2.1 for the Atari 8-bit computer
 
 # Examples
 
-- [Towers of Hanoi](Examples/Towers_of_Hanoi/README.md)
+- [Towers of Hanoi](INTER-LISP65_Examples/Towers_of_Hanoi/README.md)

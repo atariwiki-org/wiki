@@ -68,9 +68,9 @@ Any help of any kind, even just hints or infos to complete the above site is ver
 
 - [Bitwise AND for Kyan Pascal](../../../Languages/Forth/Kyan_Pascal/Extensions/Bitwise_AND/README.md)
 - [Invert Char at X/Y Position](../../../Languages/Assembler/Examples/Invert_Char_at_X.Y_Position/README.md)
-- [CIO Library for Kyan Pascal](../../../Languages/Pascal/Kyan_Pascal/Examples/CIO_Library_for_Kyan_Pascal/README.md)
-- [CIO Library with NOTE and POINT for Kyan Pascal](../../../Languages/Pascal/Kyan_Pascal/Examples/CIO_Library_with_NOTE_and_POINT_for_Kyan_Pascal/README.md)
-- [HEAD Tool](../../../Languages/Pascal/Kyan_Pascal/Examples/HEAD_Tool/README.md)
+- [CIO Library for Kyan Pascal](../../../Languages/Pascal/Kyan_Pascal/Kyan_Pascal_Examples/CIO_Library_for_Kyan_Pascal/README.md)
+- [CIO Library with NOTE and POINT for Kyan Pascal](../../../Languages/Pascal/Kyan_Pascal/Kyan_Pascal_Examples/CIO_Library_with_NOTE_and_POINT_for_Kyan_Pascal/README.md)
+- [HEAD Tool](../../../Languages/Pascal/Kyan_Pascal/Kyan_Pascal_Examples/HEAD_Tool/README.md)
 
 ### External Information
 

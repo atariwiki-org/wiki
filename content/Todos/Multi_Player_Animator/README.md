@@ -228,7 +228,7 @@ COPY     LDA (ZREG1),Y
 
 ## MPA in ACTION!
 
-- [Multi Player Animation](../../Languages/Action/Examples/Multi_Player_Animation/README.md)
+- [Multi Player Animation](../../Languages/Action/ACTION_Examples/Multi_Player_Animation/README.md)
 
 ## PDF and Disk Images
 

@@ -91,6 +91,6 @@ OSS C/65 Cover
 
 ### Examples
 
-- [3dMaze](Examples/3dMaze/README.md) A 3D Maze Program by Stefan Haubenthal
-- [Graphics 15+](Examples/Graphics_15plus/README.md) - This is a small example on how to use Graphics 15+ with CC65
-- [Greed](Examples/Greed/README.md) - a Game in CC65
+- [3dMaze](C_Examples/3dMaze/README.md) A 3D Maze Program by Stefan Haubenthal
+- [Graphics 15+](C_Examples/Graphics_15plus/README.md) - This is a small example on how to use Graphics 15+ with CC65
+- [Greed](C_Examples/Greed/README.md) - a Game in CC65

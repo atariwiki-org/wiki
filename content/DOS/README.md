@@ -27,7 +27,7 @@ In der Regel besteht das DOS aus zwei Teilen:
 - [BEWE DOS 1.30 Manual](../Companies/BEWESOFT/BEWE_DOS_1.30_Manual/README.md) of 1995
 - [MyDOS](MyDOS/README.md)
 - [OS/A+](../Companies/OSS/OS_Aplus/README.md)
-- [RealDOS](RealDOS/README.md)
+- [RealDOS](../Companies/Integrated_Logic_System/RealDOS/README.md)
 - [SpartaDOS](../Companies/ICD/SpartaDOS/README.md)
 - [SpartDOS X](../Companies/ICD/SpartaDOS/SpartaDOS_X/README.md)
 - [Turbo Tape DOS - MISSING](TTDOS/README.md) also known as Turbo Tape DOS

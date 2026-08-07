@@ -2,7 +2,7 @@
 
 by William F. Ragdale
 
-Source: [6502 Assembler in Forth (fig style)](Source_Code/README.md)
+Source: [6502 Assembler in Forth (fig style)](A_6502_Assembler_in_FORTH_Source_Code/README.md)
 
 ## INTRODUCTION
 
@@ -13,7 +13,7 @@ The author immodestly claims that this is the best FORTH assembler ever distribu
 Imagine having an assembler in 1300 bytes of object code with:
 
 1. User macros (like IF,UNTIL,) definable at any time.
-2. Literal values expressed in any numeric	base,	alterable at any time.
+2. Literal values expressed in any numeric base, alterable at any time.
 3. Expressions using any resident computation capability.
 4. Nested control structures without labels, with error control.
 5. Assembler source itself in a portable high level language.
