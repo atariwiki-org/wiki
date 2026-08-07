@@ -28,7 +28,7 @@ Atari BASIC Source Code als txt-Datei mit der Anleitung in Deutsch, was angepass
 
 - [EDITOR\_CUSTOMIZING\_MANAGER.txt](attachments/EDITOR_CUSTOMIZING_MANAGER.txt)
 
-## Reference Cards
+## Reference Card
 
 - Atari Program-Text Editor - Reference Card<br>![](attachments/Atari_Program-Text_Editor_Reference_Card.jpg)
 

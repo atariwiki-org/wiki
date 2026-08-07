@@ -8,4 +8,10 @@ The same program was included in [Atari Macro Assembler and Program-Text Editor 
 
 It remains to be verified whether it was also used for PASCAL. However, given its widespread use, there is a very high probability that it is indeed the Atari "CX8105 Editor". To date, no one has seen it, nor is there any trace of it. Atari was known for occasionally renaming things, so with a bit of luck, this case could be closed. Atariwiki would be very grateful for any further information. :-)))
 
-A German version is available as [Atari Programm Text Editor](../Atari_Programm_Text Editor/README.md).
+A German version is available as [Atari Programm Text Editor](../Atari_Programm_Text_Editor/README.md).
+
+
+## Reference Card
+
+- Atari Program-Text Editor - Reference Card<br>![](attachments/Atari_Program-Text_Editor_Reference_Card.jpg)
+
