@@ -45,7 +45,7 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 - [valFORTH](valFORTH/README.md)
 - [English Software Company FORTH](English_Software_Company_FORTH/README.md)
   \*\* [Page 6 Review of ES Forth](http://page6.org/archive/issue_14/page_34.htm)
-- [EXTENDED Atari fig-FORTH (APX-10029)](Extended_Atari_FIG-Forth_APX-20029/README.md)
+- [EXTENDED Atari fig-FORTH, Cassette: APX-10029, Diskette: APX-20029 (Atari Program Exchange)](../../Companies/Atari/Atari_Program_Exchange_APX_Software/Extended_Atari_FIG-Forth_APX-20029/README.md)
 - [Mesa FORTH](Mesa_FORTH/README.md)
 - [QS FORTH](QS_Forth/README.md)
 - [Grafik FORTH](Graphic_Forth/README.md) - A ANTIC / Fig-FORTH 1.4s Version with special Graphics Extensions.
@@ -101,7 +101,7 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 
 ## Tutorials
 
-- [Einführung in Forth-83](Tutorials/Einfuehrung_in_Forth_83/README.md)
+- [Einführung in Forth-83](FORTH_Tutorials/Einfuehrung_in_Forth_83/README.md)
 
 ## Videos and Screen Casts
 

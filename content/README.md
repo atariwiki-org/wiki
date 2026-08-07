@@ -1334,7 +1334,7 @@
       
     - [English Software Company FORTH](Languages/Forth/English_Software_Company_FORTH/README.md)
       
-    - [EXTENDED Atari fig-FORTH (APX-10029)](Languages/Forth/Extended_Atari_FIG-Forth_APX-20029/README.md)
+    - [EXTENDED Atari fig-FORTH (APX-10029) Overview](Languages/Forth/Extended_Atari_FIG-FORTH_Overview/README.md)
       
     - [FigForth](Languages/Forth/FigForth/README.md)
       
@@ -1406,6 +1406,10 @@
         
     - [Forth Compiler from Frank Ostrowski](Languages/Forth/Forth_Compiler_from_Frank_Ostrowski/README.md)
       
+    - [Tutorials](Languages/Forth/FORTH_Tutorials/README.md)
+      
+      - [Einführung in Forth-83](Languages/Forth/FORTH_Tutorials/Einfuehrung_in_Forth_83/README.md)
+        
     - [GnuFORTH EC](Languages/Forth/GNU_Forth_EC/README.md)
       
     - [Grafik FORTH](Languages/Forth/Graphic_Forth/README.md)
@@ -1422,10 +1426,6 @@
         
     - [SNAUT V. 1.2 - Ein FORTH 83 Compiler](Languages/Forth/SNAUT/README.md)
       
-    - [Tutorials](Languages/Forth/Tutorials/README.md)
-      
-      - [Einführung in Forth-83](Languages/Forth/Tutorials/Einfuehrung_in_Forth_83/README.md)
-        
     - [valFORTH](Languages/Forth/valFORTH/README.md)
       
     - [volksFORTH](Languages/Forth/volksFORTH/README.md)
@@ -2084,11 +2084,11 @@
     
   - [Pascal for the Atari](Languages/Pascal/README.md)
     
-    - [Atari Pascal (APX-20102)](Languages/Pascal/Atari_Pascal_APX-20102/README.md)
+    - [Atari Pascal (APX-20102) Overview](Languages/Pascal/Atari_Pascal_APX-20102_Overview/README.md)
       
     - [CLSN Pascal Overview](Languages/Pascal/CLSN_Pascal_Overview/README.md)
       
-    - [Draper Pascal](Languages/Pascal/Draper_Pascal/README.md)
+    - [Draper Pascal](Languages/Pascal/Draper_Pascal_Overview/README.md)
       
     - [Kyan\_Pascal\_Overview](Languages/Pascal/Kyan_Pascal_Overview/README.md)
       
