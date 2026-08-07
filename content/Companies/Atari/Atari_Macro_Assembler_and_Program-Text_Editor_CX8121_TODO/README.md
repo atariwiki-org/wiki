@@ -121,10 +121,10 @@ E2 02 E3 02 **26** 26
 so wird der Kopierschutz umgangen und AMAC kann verwendet werden.
 
 Konkret sieht das so aus:
-![](attachments/AMAC_original,protected-Protection-Code-EN.png)
+![](attachments/AMAC_original_protected-Protection-Code-EN.png)
 Atari Macro Assembler Diskette (englisch, vom Original) - Quelltext des Kopierschutzes für den AMAC (ist im 1. Sektor des Programms auf der Diskette zu finden). Der Schutz ist genau genommen gar keiner. Er war scheinbar ursprünglich darauf ausgelegt, auf einen defekten Sektor zu prüfen. Wie es aussieht wurde dann vor der Auslieferung entschieden dies doch nicht zu tun. Vermutlich weil es bei einem DOS Programm keinen Sinn hat, auf bestimmte Sektoren zu prüfen. Um das Programm nicht ganz neu assemblieren zu müssen, wurde der Code so angepasst, dass auf Sektor 0 gelesen wird. Diesen gibt es nicht und die Logik verhält sich so, als hätte sie den defekten Sektor gefunden.
 
-![](attachments/AMAC_original,unprotected-Protection-Code-DE.png)
+![](attachments/AMAC_original_unprotected-Protection-Code-DE.png)
 Atari Macro Assembler Diskette (deutsch, vom Original) - der Quelltext des Kopierschutzes für den AMAC wurde entfernt, s. Bild oben, stattdessen wurden NOP-Befehle eingesetzt sowie Befehle zur Änderung der Farbe und des Hintergrundes, s. Bild weiter unten. Vielen lieben Dank an JAC! von AtariAge für die Analyse.
 
 ## Film
