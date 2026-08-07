@@ -5,7 +5,7 @@ Meine Hardware: [Atari XEP80](../../Companies/Atari/Atari_Hardware/XEP80/README.
 
 [http://atariki.krap.pl/index.php/Strona\_g%C5%82%C3%B3wna](http://atariki.krap.pl/index.php/Strona_g%C5%82%C3%B3wna)
 
-[Converting FIG-FORTH Programs to FORTH-83](../../Languages/Forth/Articles/Converting_FIG-Forth_Programs_to_Forth-83/README.md)
+[Converting FIG-FORTH Programs to FORTH-83](../../Languages/Forth/FORTH_Articles/Converting_FIG-Forth_Programs_to_Forth-83/README.md)
 
 [Rastaconverter](../../Todos/Rastaconverter/README.md) [PLATO (Programmed Logic for Automated Teaching Operation)](../../Services/PLATO/README.md) [C/65 Manual](../../Languages/C/C65_Manual/README.md)
 

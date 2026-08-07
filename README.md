@@ -21,13 +21,13 @@ See [Basic writing and formatting syntax](https://docs.github.com/en/get-started
 | results/ | Result of check runs via the tools in the "bin" folder. This folder is not part of the repository, but is created automatically locally if required.
 
 Folder names shall be unique within the repository to enable automatic link correction. Therefore the following standardize suffixes are used.
-.
+
 | Folder Suffix               | Description | Example 
 |-----------------------------|-------------|--------
 | \_Articles                  | Examples    | Atari_BASIC\_Articles
 | \_Examples                  | Examples    | Turbo-BASIC\_XL\_Examples
 | \_Overview                  | Overview    | CLSN\_Pascal\_Overview
-| \Source\_Code               | Overview    | QS_FORTH\Source_Code
+| \_Source\_Code              | Source Code | QS_FORTH\Source_Code
 
 ## Replacement Rules
 
@@ -47,8 +47,8 @@ The following replacement rules apply.
 ## Article Formatting
 
 - The title is of type "heading 1"
-- The copyright follows, separated by a single empty line.
 - If Part-numbers are known, they are given in parentheses, with comma-separated numbers
+- The copyright follows, separated by a single empty line.
 - Do not add colons at the end of a heading line.
 
 ````
@@ -65,7 +65,7 @@ Copyright (C) <year> <company>.
 
 ## Article Wording
 
-The aim of the AtariWiki is to provide information in an accurate and well-readable form. It is not a pure historic archive and does not  reproduce old content 1:1 if it has typos or errors. Therefore, also original documents that are converted into articles will contains such corrections without further indictation.
+The aim of the AtariWiki is to provide information in an accurate and well-readable form. It is not a pure historic archive and does not  reproduce old content 1:1 if it has typos or errors. Therefore, also original documents that are converted into articles will contains such corrections without further indication.
 
 
 ## Attachments

@@ -77,27 +77,27 @@ Another key aspect of the language is Forth's inherently multitasking design. Th
 
 ## Forth Articles
 
-- [What is Forth?](Articles/What_is_Forth/README.md)?
-- [Converting FIG-FORTH Programs to FORTH-83](Articles/Converting_FIG-Forth_Programs_to_Forth-83/README.md)
-- [Forth Code Size](Articles/Forth_Code_Size/README.md)
-- [A 6502 Assembler in FORTH](Articles/A_6502_Assembler_in_FORTH/README.md) by William F. Ragdale, FOURTH DIMENSIONS Vol 3, 5p, 143ff
-- [Some Debugging Sourcecode found on a BBC Micro Fig-Forth Disk](Articles/Some_Debugging_Sourcecode_found_on_a_BBC_Micro_Fig-Forth_Disk/README.md)
-- [6502 Disassembler](Articles/6502_DISASSEMBLER/README.md) in Forth
-- [Kermit in FORTH](Articles/Kermit_Protocol_in_Forth/README.md)
-- [6502 Forth-like tiny Operating System](Articles/6502_Forth_like_tiny_Operating_System/README.md)
-- [APPLE II QForth](Articles/APPLE_II_QForth/README.md)
-- [Henry Laxen on Slashdot 2002](Articles/Henry_Laxen_on_Slashdot_2002/README.md)
-- [Yet Another Target Compiler](Articles/Yet_another_target_compiler/README.md)
-- [Collection of Forth Macro definitions](Articles/Forth_Macros/README.md)
-- [Collection of Source on local variables](Articles/Local_Variables/README.md)
-- [Freedom of Assembly](Articles/Freedom_of_Assembly/README.md) by Julian V. Noble
-- [Forth sorting routines](Articles/Forth_Sorting_Routines/README.md)
-- [Forth memory allocator](Articles/Forth_Memory_Allocator/README.md)
-- [Forth Database design](Articles/Forth_Database_design/README.md) "ELEMENTS OF DATA BASE DESIGN" by Glen B. Haydon
-- [Signed Integer Division](Articles/Signed_Integer_Division/README.md) by Robert L. Smith
-- [From PASCAL to FORTH](Articles/From_PASCAL_to_FORTH/README.md) by Leonard Morgenstern
-- [Implementations of NEXT in Forth Systems for the 6502 CPU](Articles/Implementations_of_NEXT_on_6502/README.md)
-- [The Ultimate CASE Statement](Articles/The_Ultimate_CASE_Statement/README.md) by Wil Baden, VD 2 1987
+- [What is Forth?](FORTH_Articles/What_is_Forth/README.md)?
+- [Converting FIG-FORTH Programs to FORTH-83](FORTH_Articles/Converting_FIG-Forth_Programs_to_Forth-83/README.md)
+- [Forth Code Size](FORTH_Articles/Forth_Code_Size/README.md)
+- [A 6502 Assembler in FORTH](FORTH_Articles/A_6502_Assembler_in_FORTH/README.md) by William F. Ragdale, FOURTH DIMENSIONS Vol 3, 5p, 143ff
+- [Some Debugging Sourcecode found on a BBC Micro Fig-Forth Disk](FORTH_Articles/Some_Debugging_Sourcecode_found_on_a_BBC_Micro_Fig-Forth_Disk/README.md)
+- [6502 Disassembler](FORTH_Articles/6502_Disassembler/README.md) in Forth
+- [Kermit in FORTH](FORTH_Articles/Kermit_Protocol_in_Forth/README.md)
+- [6502 Forth-like tiny Operating System](FORTH_Articles/6502_Forth_like_tiny_Operating_System/README.md)
+- [APPLE II QForth](FORTH_Articles/APPLE_II_QForth/README.md)
+- [Henry Laxen on Slashdot 2002](FORTH_Articles/Henry_Laxen_on_Slashdot_2002/README.md)
+- [Yet Another Target Compiler](FORTH_Articles/Yet_another_target_compiler/README.md)
+- [Collection of Forth Macro definitions](FORTH_Articles/Forth_Macros/README.md)
+- [Collection of Source on local variables](FORTH_Articles/Local_Variables/README.md)
+- [Freedom of Assembly](FORTH_Articles/Freedom_of_Assembly/README.md) by Julian V. Noble
+- [Forth sorting routines](FORTH_Articles/Forth_Sorting_Routines/README.md)
+- [Forth memory allocator](FORTH_Articles/Forth_Memory_Allocator/README.md)
+- [Forth Database design](FORTH_Articles/Forth_Database_Design/README.md) "ELEMENTS OF DATA BASE DESIGN" by Glen B. Haydon
+- [Signed Integer Division](FORTH_Articles/Signed_Integer_Division/README.md) by Robert L. Smith
+- [From PASCAL to FORTH](FORTH_Articles/From_PASCAL_to_FORTH/README.md) by Leonard Morgenstern
+- [Implementations of NEXT in Forth Systems for the 6502 CPU](FORTH_Articles/Implementations_of_NEXT_on_6502/README.md)
+- [The Ultimate CASE Statement](FORTH_Articles/The_Ultimate_CASE_Statement/README.md) by Wil Baden, VD 2 1987
 
 ## Tutorials
 

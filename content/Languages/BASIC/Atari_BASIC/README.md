@@ -213,21 +213,21 @@ Atari BASIC Keywords
 
 ## Articles
 
-- [How to find the revision number of Atari BASIC](Articles/How_to_find_the_revision_number_of_Atari_BASIC/README.md)
+- [How to find the revision number of Atari BASIC](Atari_BASIC_Articles/How_to_find_the_revision_number_of_Atari_Basic/README.md)
 
 ## Source and Tools
 
-- [Program to measure 810 disk speed](Examples/RPM810/README.md) Program to measure 810 disk speed
-- [ST Mouse Driver for BASIC](Examples/ST_Mouse_Driver_for_BASIC/README.md)
-- [Boolean Logic in BASIC](Examples/Boolean_Logic_in_BASIC/README.md)
-- [Atari BASIC Special Clear Screen (German)](Examples/Atari_BASIC_Special_Clear_Screen/README.md) (german)
-- [Basic Fast Stack and Fast Jump](Examples/BASIC_Fast_Stack_and_Fast_Jump/README.md)
-- [Page Flip Routine for BASIC](Examples/Page_Flip_Routine_for_BASIC/README.md)
+- [Program to measure 810 disk speed](Atari_BASIC_Examples/RPM810/README.md) Program to measure 810 disk speed
+- [ST Mouse Driver for BASIC](Atari_BASIC_Examples/ST_Mouse_Driver_for_Basic/README.md)
+- [Boolean Logic in BASIC](Atari_BASIC_Examples/Boolean_Logic_in_BASIC/README.md)
+- [Atari BASIC Special Clear Screen (German)](Atari_BASIC_Examples/Atari_BASIC_Special_Clear_Screen/README.md) (german)
+- [Basic Fast Stack and Fast Jump](Atari_BASIC_Examples/Basic_Fast_Stack_and_Fast_Jump/README.md)
+- [Page Flip Routine for BASIC](Atari_BASIC_Examples/Page_Flip_Routine_for_Basic/README.md)
 - [RAM Move Routine for BASIC](../../../Todos/RAM_Move_Routine_for_Basic/README.md)
-- [BASIC Program Lister](Examples/BASIC_Program_Lister/README.md)
-- [UUDecoder](Examples/UUDecoder/README.md)
-- [Create DATA Statements from binary load files](Examples/Create_Data-Statements_from_binary_load_files/README.md)
-- [Schnelle Player Bewegung in BASIC](Examples/Schnelle_Player_Bewegung_in_BASIC/README.md) (German)
+- [BASIC Program Lister](Atari_BASIC_Examples/Basic_Program_Lister/README.md)
+- [UUDecoder](Atari_BASIC_Examples/UUDecoder/README.md)
+- [Create DATA Statements from binary load files](Atari_BASIC_Examples/Create_Data-Statements_from_binary_load_files/README.md)
+- [Schnelle Player Bewegung in BASIC](Atari_BASIC_Examples/Schnelle_Player_Bewegung_in_Basic/README.md) (German)
 
 ## Tools
 
@@ -240,7 +240,7 @@ Atari BASIC Keywords
 ## References
 
 - [Atari BASIC Article in Wikipedia](http://en.wikipedia.org/wiki/ATARI_BASIC)
-- [Atari BASIC vs. Commodore C64 BASIC vs. Apple II BASIC](Articles/Atari_BASIC_vs._Commodore_C64_BASIC_vs._Apple_II_BASIC/README.md)
+- [Atari BASIC vs. Commodore C64 BASIC vs. Apple II BASIC](Atari_BASIC_Articles/Atari_BASIC_vs._Commodore_C64_BASIC_vs._Apple_II_BASIC/README.md)
 - [Atari BASIC: the good, the bad and the ugly](https://web.archive.org/web/20070524044410/http://www3.sympatico.ca/maury/other_stuff/atari_BASIC.html)
 
 ## Pictures

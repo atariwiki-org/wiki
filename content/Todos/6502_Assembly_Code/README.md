@@ -69,7 +69,7 @@
 - [6502 opcodes - complete list](http://www.6502.org/tutorials/6502opcodes.html)
 - [6502 Coding Algorithms Macro Library](../6502_Coding_Algorithms_Macro_Library/README.md)
 - [6502 Relocator](../6502_Relocator/README.md)
-- [ATARI Basic Autorun Loader](../../Languages/BASIC/Atari_BASIC/Examples/Atari_BASIC_Autorun_Loader/README.md)
+- [ATARI Basic Autorun Loader](../../Languages/BASIC/Atari_BASIC/Atari_BASIC_Examples/Atari_BASIC_Autorun_Loader/README.md)
 - [Enhanced 6502 BASIC By Lee Davison.](../../Languages/BASIC/Enhanced_BASIC/README.md) ; 2-line BASIC for 6502 Computers
 - [Bootloader with Sectorcounter](../../Languages/Assembler/Examples/Bootloader_with_Sectorcounter/README.md)
 - [Atari 800 OS Source Listing](../OS/Atari_OS/Atari_800_ROM_OS_Source_Listing/README.md)
@@ -81,7 +81,7 @@
 - [Small DOS 2.5 COM-File loader for Demo](../Small_DOS_2.5_COM-File_loader_for_Demo/README.md)
 - [Hobbytronic Demo 2004/2005](../Hobby_Tronic_Demo_2004/README.md)
 - [Toggle BASIC on/off from OS/A+ and DOS XL Command-Line](../../Companies/OSS/Toggle_BASIC_On-Off_from_the_OS_APlus_and_DOS_XL_Command-Line/README.md)
-- [Page Flip Routine for BASIC](../../Languages/BASIC/Atari_BASIC/Examples/Page_Flip_Routine_for_Basic/README.md)
+- [Page Flip Routine for BASIC](../../Languages/BASIC/Atari_BASIC/Atari_BASIC_Examples/Page_Flip_Routine_for_Basic/README.md)
 - [RAM Move Routine for BASIC](../RAM_Move_Routine_for_Basic/README.md)
 - [Atari 6502 System Equations and Macros](../Atari_System_Equates_and_Macros/README.md)
 - [PSC Simple Debugger](../A_simple_6502_debugger/README.md)

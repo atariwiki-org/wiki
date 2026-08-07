@@ -26,9 +26,9 @@ Afair, XTB had been created by Thorsten Karwoth. He is also the author of Atari 
 
 - [Wikipedia: Turbo-BASIC XL (English)](https://en.wikipedia.org/wiki/Turbo-BASIC_XL)
 - [Wikipedia: Turbo-BASIC XL (Deutsch)](https://de.wikipedia.org/wiki/Turbo-BASIC_XL)
-- [Multi Zoom Master](Examples/Multi_Zoom_Master/README.md) Graphics Program by Carsten Strotmann
-- [Player Missile in Turbo-BASIC](Examples/Player_Missile_in_Turbo_Basic/README.md)
-- [Simple Blitter Routine](Examples/Simple_Blitter/README.md)
+- [Multi Zoom Master](Turbo-BASIC_XL_Examples/Multi_Zoom_Master/README.md) Graphics Program by Carsten Strotmann
+- [Player Missile in Turbo-BASIC](Turbo-BASIC_XL_Examples/Player_Missile_in_Turbo_Basic/README.md)
+- [Simple Blitter Routine](Turbo-BASIC_XL_Examples/Simple_Blitter/README.md)
 - [http://seriouscomputerist.altervista.org/pages/language/language.basic.htm](http://seriouscomputerist.altervista.org/pages/language/language.basic.htm) ; highly recommended!
 - [http://atariki.krap.pl/index.php/Turbo\_BASIC\_XL](http://atariki.krap.pl/index.php/Turbo_BASIC_XL) ; Turbo-BASIC XL description in Polish ; highly recommended!
 - [http://atariki.krap.pl/index.php/Tokeny\_Turbo\_BASIC\_XL](http://atariki.krap.pl/index.php/Tokeny_Turbo_BASIC_XL); Turbo-BASIC XL tokens in Polish ; highly recommended!

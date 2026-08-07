@@ -37,6 +37,6 @@ Development continues; [Altirra BASIC](Altirra_BASIC/README.md), [BASIC++](BASIC
 
 ## Basic references
 
-- [Differences between Atari BASIC Dialects](Atari_BASIC/Articles/Atari_BASIC_Differences/README.md)
+- [Differences between Atari BASIC Dialects](Atari_BASIC/Atari_BASIC_Articles/Atari_BASIC_Differences/README.md)
 - [The Battle of The Basic's by Tom Hunt 1992](attachments/The_Battle_of_The_Basic_s-Tom_Hunt.txt)
 - Some thoughts on the "[The Ultimate Basic](Ultimate_BASIC/README.md)"
