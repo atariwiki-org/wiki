@@ -2206,6 +2206,10 @@
     
     - [MyPicoDos](People/Mathias_Reichel/MyPicoDos/README.md)
       
+  - [Norm Draper](People/Norm_Draper/README.md)
+    
+    - [Draper Pascal](People/Norm_Draper/Draper_Pascal/README.md)
+      
   - [Paul Nicholls](People/Paul_Nicholls/README.md)
     
     - [SuperDOS](People/Paul_Nicholls/SuperDOS/README.md)
