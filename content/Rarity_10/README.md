@@ -130,7 +130,7 @@ Well, concerning Physics, we may be able to restore Ph16 from the Atari version 
 
 ### McStuff Co. OSS BUG/65 revision 1.1
 
-### OSS Action! Graphics Utilities Library and Shape Editor for[Action!](../Languages/Action/README.md)
+### OSS Action! Graphics Utilities Library and Shape Editor for[ACTION](../Companies/OSS/ACTION/README.md)
 
 ### OSS BASIC A+ Source Code
 

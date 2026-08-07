@@ -75,7 +75,7 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - [Step-by-Step Tutorial: How to create a stand-alone ACTION! Program](ACTION_Articles/Step-by-Step_Tutorial_-_How_to_create_a_stand-alone_ACTION_Program/README.md)
 - [Action! and BBS Express! PRO Tutorial](Action_and_BBS_Express_PRO_Tutorial/README.md)
 - [Larry's Action! Tutorial](ACTION_Articles/Larrys_Action_Tutorial/README.md)
-- [How to setup an ACTION! Development Disk](ACTION_Examples/How_to_setup_an_ACTION_Development_Disk/README.md)
+- [How to set up an ACTION! Development Disk](ACTION_Examples/How_to_setup_an_ACTION_Development_Disk/README.md)
 - [Action! Programming for Atari 8-bit Computers](https://www.youtube.com/watch?v=yQ8ABW8rY40&list=PL5FYYzC9Hpgog9GPsJRtshMP0wpHrxb2J) video tutorial series
 - [Learning Atari Action!](http://atariaction.tumblr.com/) blog
 

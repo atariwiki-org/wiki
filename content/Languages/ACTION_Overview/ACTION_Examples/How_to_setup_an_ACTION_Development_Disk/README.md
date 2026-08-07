@@ -1,6 +1,6 @@
-# How to setup an ACTION! Development Disk
+# How to set up an ACTION! Development Disk
 
-Each Programmer has its own ideas how a development environment should look like. On this page you can find some ideas. If you are an ACTION! programmer, feel free to add your favorite setup to this page:
+Each Programmer has their own ideas about what a development environment should look like. On this page you can find some ideas. If you are an ACTION! programmer, feel free to add your favorite setup to this page:
 
 ## ACTION! Setup
 
@@ -8,8 +8,8 @@ Each Programmer has its own ideas how a development environment should look like
 2. Next I copy a DOS, mostly Stefan Dorndorfs DOS II+ or XDOS. If I write a PGM for MyDos or Sparta/Bewe, I use that DOS.
 3. then I copy the essential tools
 4. the Runtime Source --\> [Original Action! System Runtime Source](../../Original_Action_System_Runtime_Source/README.md) and [Alternative Action! Runtime Source](../../ACTION_Articles/Alternative_Action_Runtime_Source/README.md)
-5. the [Infoline for BASIC and ACTION!](../Infoline/README.md) Tool which gives two additional Screenlines with Information on the ACTION! System
-6. some of the Library Routines I need from --\> [Action!](../../Action/README.md)
+5. the [Infoline for BASIC and ACTION!](../Infoline/README.md) Tool, which gives two additional Screenlines with Information on the ACTION! System
+6. some of the Library Routines I need from --\> [ACTION](../../../../Companies/OSS/ACTION/README.md)
 
 That's all. Nothing special here :)
 

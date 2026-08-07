@@ -28,7 +28,7 @@ In recent years, a number of cross-compilers have appeared. These allow you to d
 - [OSS EASMD Version 1.0](../../Companies/OSS/EASMD/README.md) (1981)
 - [Edit 6502](../../Companies/LJK_Enterprises_Inc/Edit_6502/README.md) (1981)
 - [Extended DDT (1985)](../../Companies/OSS/Extended_DDT/README.md) (1985)
-- [MAC/65 Macro Assembler](MAC65/README.md) (1982)
+- [MAC/65 Macro Assembler](../../Companies/OSS/MAC65/README.md) (1982)
 - [MAE Assembler](MAE_Assembler/README.md) (1996)
 - [Synapse Assembler 'SynAssembler' by Steve Hales.](../../Companies/Synapse_Software/SynAssembler/README.md) (1982)
 

@@ -79,4 +79,4 @@ Umleitungsseite editieren: Link als Verknüpfung kopieren, in Browser als URL ei
 
 ### Alte Seiten
 
-[Interne Variablen](../../Languages/Action/Internal_Variables/README.md) - Magazin Article (german)
+[Interne Variablen](../../Languages/ACTION_Overview/Internal_Variables/README.md) - Magazin Article (german)

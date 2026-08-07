@@ -775,7 +775,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 
 #### Action!
 
-- [Action!](../Languages/Action/README.md)
+- [ACTION](../Companies/OSS/ACTION/README.md)
 
 ### BASIC
 

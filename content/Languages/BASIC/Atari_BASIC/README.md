@@ -235,7 +235,7 @@ Atari BASIC Keywords
 - [Toggle BASIC on/off from OS/A+ and DOS XL Command-Line](../../../Companies/OSS/Toggle_BASIC_On-Off_from_the_OS_APlus_and_DOS_XL_Command-Line/README.md)
 - [REV.B\_TO\_REV.C\_CONVERTER.txt](attachments/REV.B_TO_REV.C_CONVERTER.txt) Atari BASIC Rev. B to Rev. C Converter as TXT file
 - [RevB2C.atr](attachments/RevB2C.atr) Atari BASIC Rev. B to Rev. C Converter as ATR-image
-- [Infoline for BASIC and ACTION!](../../Action/ACTION_Examples/Infoline/README.md) Infoline for BASIC and ACTION!
+- [Infoline for BASIC and ACTION!](../../ACTION_Overview/ACTION_Examples/Infoline/README.md) Infoline for BASIC and ACTION!
 
 ## References
 
