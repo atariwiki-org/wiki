@@ -1,4 +1,4 @@
-# Atari Macro Assembler and Program-Text Editor (CX8121)
+# Atari Macro Assembler (AMAC) and Program-Text Editor (CX8121)
 
 ## ATR- and ATX-Images
 

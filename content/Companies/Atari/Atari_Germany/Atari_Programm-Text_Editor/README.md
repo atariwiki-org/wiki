@@ -54,19 +54,19 @@ Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Info
 
 ## Bilder
 
-![](attachments/Box_Front_.jpg)
+![](attachments/Box_Front.jpg)
 Atari Program-Text Editor 1.0 - Box-Cover
 
-![](attachments/Box_Rueck_.jpg)
+![](attachments/Box_Rueck.jpg)
 Atari Program-Text Editor 1.0 - Box-Rückansicht
 
-![](attachments/Box_offen_.jpg)
+![](attachments/Box_offen.jpg)
 Atari Program-Text Editor 1.0 - Box geöffnet
 
-![](attachments/Diskette1_.jpg)
+![](attachments/Diskette1.jpg)
 Atari Program-Text Editor 1.0 - Diskette - Bild 1
 
-![](attachments/Diskette2_.jpg)
+![](attachments/Diskette2.jpg)
 Atari Program-Text Editor 1.0 - Diskette - Bild 2
 
 ![](attachments/Label.jpg)

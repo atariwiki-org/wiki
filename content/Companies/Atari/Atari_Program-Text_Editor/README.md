@@ -10,8 +10,6 @@ It remains to be verified whether it was also used for PASCAL. However, given it
 
 A German version is available as [Atari Programm Text Editor](../Atari_Programm_Text_Editor/README.md).
 
-
 ## Reference Card
 
 - Atari Program-Text Editor - Reference Card<br>![](attachments/Atari_Program-Text_Editor_Reference_Card.jpg)
-
