@@ -208,6 +208,10 @@
           
       - [Atari Graph It I \& II (CX4109 (Englisch), TXG9517 (deutsch))](Companies/Atari/Atari_Germany/Atari_Graph_It_I_and_II/README.md)
         
+      - [Atari Macro Assembler (AMAC) and Programm-Text Editor (DXG8126)](Companies/Atari/Atari_Germany/Atari_Macro_Assembler_und_Programm-Text_Editor/README.md)
+        
+      - [Atari Program Text Editor (DXG20075)](Companies/Atari/Atari_Germany/Atari_Programm-Text_Editor/README.md)
+        
       - [Atari Schreiber (RXG/DXG 8036)](Companies/Atari/Atari_Germany/Atari_Schreiber/README.md)
         
       - [Aufgepaßt - Streit der Käfer (DXG 5710 bzw. TXG 9510)](Companies/Atari/Atari_Germany/Aufgepasst-Streit_der_Kaefer/README.md)
@@ -372,9 +376,7 @@
       
     - [Atari Learning System Software](Companies/Atari/Atari_Learning_System_Software/README.md)
       
-    - [Atari Macro Assembler and Program-Text Editor (CX8121)](Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md)
-      
-    - [Atari Macro Assembler (AMAC) DXG8126](Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121_TODO/README.md)
+    - [Atari Macro Assembler (AMAC) and Program-Text Editor (CX8121)](Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor/README.md)
       
     - [Atari Music I - MISSING](Companies/Atari/Atari_Music_I/README.md)
       
@@ -385,8 +387,6 @@
     - [Atari Personal Financial Management System (P.F.M.S.) CX406](Companies/Atari/Atari_Personal_Financial_Management_System/README.md)
       
     - [Atari Program-Text Editor (APX-20075, CX20075, CX8105?)](Companies/Atari/Atari_Program-Text_Editor/README.md)
-      
-    - [Atari Program Text Editor (DXG20075)](Companies/Atari/Atari_Programm-Text_Editor/README.md)
       
     - [Atari Program Exchange (APX) Software](Companies/Atari/Atari_Program_Exchange_APX_Software/README.md)
       

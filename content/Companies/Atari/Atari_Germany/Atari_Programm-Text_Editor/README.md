@@ -6,9 +6,9 @@ Mega-Danke an Marc Brings (Sleeπ) für den Erhalt der Software. :-) Wir sind ti
 
 Der Atari Program-Text Editor 1.0 von Mike Lorenzen ist ein universeller Text-Editor, der für alle Programmiersprachen verwendet werden kann. Mit Hilfe des Programms: "MEDITCM.BAS" auf dem ATR-Image unten, ist es möglich den Editor auf seine persönlichen Bedürfnisse zuzuschneiden. Man kann auch eine andere Farbe wählen sowie spezifische Tabulator-Stopps setzen, siehe Anleitung.
 
-Der Atari Program-Text Editor wurde auch als APX-Programm [Atari Program-Text Editor (APX-20075, CX20075, CX8105?)](../Atari_Program-Text_Editor/README.md) verkauft. Atari übernahm diesen anscheinend und änderte lediglich die Bezeichnung in CX20075. Die hier vorliegende deutsche Version hat in der Datei: "DISKNAME.DAT" noch die Bezeichnung: "APX-20075".
+Der Atari Program-Text Editor wurde auch als APX-Programm [Atari Program-Text Editor (APX-20075, CX20075, CX8105?)](../../Atari_Program-Text_Editor/README.md) verkauft. Atari übernahm diesen anscheinend und änderte lediglich die Bezeichnung in CX20075. Die hier vorliegende deutsche Version hat in der Datei: "DISKNAME.DAT" noch die Bezeichnung: "APX-20075".
 
-Der exakt gleiche Editor wurde auch mit dem [Atari Macro Assembler and Program-Text Editor (CX8121)](../Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md) verkauft.
+Der exakt gleiche Editor wurde auch mit dem [Atari Macro Assembler (AMAC) and Program-Text Editor (CX8121)](../../Atari_Macro_Assembler_and_Program-Text_Editor/README.md) verkauft.
 
 ## ATR-Image
 
@@ -30,7 +30,7 @@ Atari BASIC Source Code als txt-Datei mit der Anleitung in Deutsch, was angepass
 
 ## Reference Card
 
-- Atari Program-Text Editor - Reference Card<br>![](attachments/Atari_Program-Text_Editor_Reference_Card.jpg)
+- Atari Program-Text Editor - Reference Card<br>![](../../Atari_Program-Text_Editor/attachments/Atari_Program-Text_Editor_Reference_Card.jpg)
 
 ## Bilder des EDITOR CUSTOMIZING MANAGER
 
@@ -57,10 +57,10 @@ Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Info
 ![](attachments/Box_Front.jpg)
 Atari Program-Text Editor 1.0 - Box-Cover
 
-![](attachments/Box_Rueck.jpg)
+![](attachments/Box_Back.jpg)
 Atari Program-Text Editor 1.0 - Box-Rückansicht
 
-![](attachments/Box_offen.jpg)
+![](attachments/Box_Open.jpg)
 Atari Program-Text Editor 1.0 - Box geöffnet
 
 ![](attachments/Diskette1.jpg)

@@ -19,7 +19,7 @@
 
 - [Atari Macro Assembler Reference Card-Original-OCR](attachments/Atari_Macro_Assembler_Reference_Card-OCR.pdf) ; size: 54 KB
 
-- [Atari Program-Text Editor-Original](../../../../media/Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/attachments/Atari_Program-Text_Editor.pdf) ; size: 10.4 MB
+- [Atari Program-Text Editor-Original](../../../../media/Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor/attachments/Atari_Program-Text_Editor.pdf) ; size: 10.4 MB
 
 - [Atari Program-Text Editor-Original-OCR](attachments/Atari_Program-Text_Editor-OCR.pdf) ; size: 2.2 MB
 
@@ -29,7 +29,7 @@
 
 - [Atari\_Macro\_Assembler\_and\_Program-Text\_Editor.pdf](../../../../media/Companies/Atari/Atari_Assembler_Editor/attachments/Atari_Macro_Assembler_and_Program-Text_Editor.pdf)
 
-- [Atari\_Macro\_Assembler\_and\_Program-Text\_Editor\_manual.zip](../../../../media/Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/attachments/Atari_Macro_Assembler_and_Program-Text_Editor_manual.zip)
+- [Atari\_Macro\_Assembler\_and\_Program-Text\_Editor\_manual.zip](../../../../media/Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor/attachments/Atari_Macro_Assembler_and_Program-Text_Editor_manual.zip)
 
 - [EDITOR\_CUSTOMIZING\_MANAGER.pdf](attachments/EDITOR_CUSTOMIZING_MANAGER.pdf)
 

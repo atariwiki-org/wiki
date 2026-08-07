@@ -320,6 +320,7 @@
 
 - [Atari Word Processor (CX404) and Atari Word Processor Demonstration Data Kit (CX8128)](../Companies/Atari/Atari_Word_Processor/README.md)
 - [Atari Writer 8036](../Companies/Atari/Atari_Writer/README.md)
+- [Atari Program-Text Editor (APX-20075, CX20075, CX8105?)](../Companies/Atari/Atari_Program-Text_Editor/README.md)
 - [Atari Proofreader (AX2033)](../Companies/Atari/Atari_Proofreader/README.md)
 - [Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Germany/Atari_Schreiber/README.md)
 - [The Writer's Tool](../Companies/OSS/The_Writer_s_Tool/README.md)
@@ -464,8 +465,8 @@ All of the following have no page yet
 
 #### Programmiersprachen
 
-- [Atari Assembler Editor](..//Companies/Atari/Atari_Assembler_Editor/Companies/Atari/Atari_Assembler_Editor)
-- [Atari Macro Assembler and Program-Text Editor (CX8121)](../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md)
+- [Atari Assembler Editor](../Companies/Atari/Atari_Assembler_Editor/Companies/Atari/Atari_Assembler_Editor)
+- [Atari Macro Assembler (AMAC) and Program-Text Editor (CX8121)](../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor/README.md)
 - [Microsoft Basic Handbook](..//Languages/BASIC/Microsoft_BASIC/README.md)
 - [Pascal for the Atari](../Languages/Pascal/README.md)
 - [PILOT](../Companies/Atari/PILOT/README.md)
@@ -501,7 +502,7 @@ All of the following have no page yet
 ### Textverarbeitung
 
 - [Atari Schreiber (RXG/DXG 8036)](../Companies/Atari/Atari_Germany/Atari_Schreiber/README.md)
-- [Programm Text Editor (CX20075) bzw. APX-20075 bzw. DXG20075(?) bzw. CX8105 Editor(?)](../Companies/Atari/Programm_Text_Editor_CX20075/README.md)
+- [Atari Program Text Editor (DXG20075)](../Companies/Atari/Atari_Germany/Atari_Programm-Text_Editor/README.md)
 
 ### Unterhaltung
 
@@ -764,7 +765,7 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 #### Assembler/Debugger
 
 - [Atari Assembler Editor](../Companies/Atari/Atari_Assembler_Editor/README.md)
-- [Atari Macro Assembler and Program-Text Editor (CX8121)](../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor_CX8121/README.md)
+- [Atari Macro Assembler (AMAC) and Program-Text Editor (CX8121)](../Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor/README.md)
 - [OSS EASMD Version 1.0](../Companies/OSS/EASMD/README.md)
 - [OSS BUG/65](attachments/BUG-65_FROM_3000.txt)
 - [MAC/65 Macro Assembler](../Companies/OSS/MAC65/README.md)
