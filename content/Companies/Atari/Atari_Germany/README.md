@@ -2,7 +2,7 @@
 
 Country: Germany
 
-[Atari Deutschland on AtariInside](Atari Deutschlandhttps://www.atarinside.com/blog/index.php/atari-deutschland)
+[Atari Deutschland on AtariInside](https://www.atarinside.com/blog/index.php/atari-deutschland)
 
 [Atari Computer System Software-Katalog 1983](attachments/Atari-Catalog-1983-Deutschland.pdf)
 

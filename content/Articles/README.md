@@ -349,7 +349,7 @@
 
 ## Country-Specific Atari Software
 
-### France - [P.E.C.F. Atari](../Atari_France/README.md)
+### France -[P.E.C.F. Atari](../Companies/Atari/Atari_France/README.md)
 
 ```
 All of the following have no page yet
@@ -414,7 +414,7 @@ All of the following have no page yet
 - [Super Biorythmes (Disk: DF 4001, Cassette: TF 4001)](../Super_Biorhythmus/README.md)
 ```
 
-### Germany - [Atari Elektronik Vertriebsgesellschaft GmbH](../Companies/Atari/Atari_Germany/README.md)
+### Germany -[Atari Elektronik Vertriebsgesellschaft GmbH](../Companies/Atari/Atari_Germany/README.md)
 
 #### Business
 
@@ -515,7 +515,7 @@ All of the following have no page yet
 - [Atari DOS 2 or DOS II Version 2.x](../Companies/Atari/Atari_DOS/Atari_DOS_2/README.md)
 - [Disk Fixer (DXG 5729)](../Companies/Atari/Atari_Germany/Disk_Fixer/README.md)
 
-### Italy - [Atari Italia S.p.A.](../Atari_Italia/README.md)
+### Italy -[Atari Italia S.p.A.](../Companies/Atari/Atari_Italia/README.md)
 
 The below broken links will be filled up with content in the future, meanwhile, please visit the incredible work from pioneers in that field:
 
@@ -549,7 +549,7 @@ The below broken links will be filled up with content in the future, meanwhile, 
 *[Utility 2 - (Disk: DXT 5726)](../Utility_2/README.md) 
 ```
 
-### Netherlands - [Atari (Benelux) B.V.](../Atari_Benelux/README.md)
+### Netherlands -[Atari (Benelux) B.V.](../Companies/Atari/Atari_Benelux/README.md)
 
 #### Programmeren
 

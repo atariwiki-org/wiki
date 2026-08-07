@@ -188,6 +188,8 @@
       
     - [Atari European Countries \& Capitals CX4114 ; Copyright (C) 1980 Atari, Inc.](Companies/Atari/Atari_European_Countries_and_Capitals/README.md)
       
+    - [P.E.C.F. Atari](Companies/Atari/Atari_France/README.md)
+      
     - [Atari Elektronik Vertriebsgesellschaft GmbH](Companies/Atari/Atari_Germany/README.md)
       
       - [747 Flug-Simulator (CX 6140)](Companies/Atari/Atari_Germany/747_Flug-Simulator/README.md)
@@ -364,6 +366,8 @@
       
     - [Atari Investment Analysis Series](Companies/Atari/Atari_Investment_Analysis_Series/README.md)
       
+    - [Atari Italia S.p.A.](Companies/Atari/Atari_Italia/README.md)
+      
     - [Atari Kingdom CX4102](Companies/Atari/Atari_Kingdom/README.md)
       
     - [Atari Learning System Software](Companies/Atari/Atari_Learning_System_Software/README.md)
@@ -379,6 +383,10 @@
     - [Atari Pascal (AED80018)](Companies/Atari/Atari_Pascal_AED80018/README.md)
       
     - [Atari Personal Financial Management System (P.F.M.S.) CX406](Companies/Atari/Atari_Personal_Financial_Management_System/README.md)
+      
+    - [Atari Program-Text Editor (APX-20075, CX20075, CX8105?)](Companies/Atari/Atari_Program-Text_Editor/README.md)
+      
+    - [Atari Program Text Editor (DXG20075)](Companies/Atari/Atari_Programm-Text_Editor/README.md)
       
     - [Atari Program Exchange (APX) Software](Companies/Atari/Atari_Program_Exchange_APX_Software/README.md)
       
@@ -483,8 +491,6 @@
     - [Principles of Accounting - CX6007](Companies/Atari/Principles_of_Accounting_CX6007/README.md)
       
     - [Principles of Economics (CX6014)](Companies/Atari/Principles_of_Economics_CX6014/README.md)
-      
-    - [Programm Text Editor (CX20075) bzw. APX-20075 bzw. DXG20075(?) bzw. CX8105 Editor(?)](Companies/Atari/Programm_Text_Editor_CX20075/README.md)
       
     - [Spelling CX6015](Companies/Atari/Spelling_CX6015/README.md)
       
