@@ -20,6 +20,15 @@ See [Basic writing and formatting syntax](https://docs.github.com/en/get-started
 | media/\<article\>/attachments | Topic media attachments folder, use for attachments with 5 MB or more and for ´*.avi´,´*.flac´,´*.mp3´,´*.mp4´,´*.wav´. This folder is not part of the repository to keep its size manageable. |
 | results/ | Result of check runs via the tools in the "bin" folder. This folder is not part of the repository, but is created automatically locally if required.
 
+Folder names shall be unique within the repository to enable automatic link correction. Therefore the following standardize suffixes are used.
+.
+| Folder Suffix               | Description | Example 
+|-----------------------------|-------------|--------
+| \_Articles                  | Examples    | Atari_BASIC\_Articles
+| \_Examples                  | Examples    | Turbo-BASIC\_XL\_Examples
+| \_Overview                  | Overview    | CLSN\_Pascal\_Overview
+| \Source\_Code               | Overview    | QS_FORTH\Source_Code
+
 ## Replacement Rules
 
 The topic names become folder names, attachment names become filenames.

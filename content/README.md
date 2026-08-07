@@ -800,7 +800,7 @@
       
       - [MAC/65 Handbook](Companies/OSS/MAC65/MAC65Handbook/README.md)
         
-    - [OSS Newsletters](Companies/OSS/OSS_Newletters/README.md)
+    - [OSS Newsletters](Companies/OSS/OSS_Newsletters/README.md)
       
     - [OS/A+](Companies/OSS/OS_Aplus/README.md)
       

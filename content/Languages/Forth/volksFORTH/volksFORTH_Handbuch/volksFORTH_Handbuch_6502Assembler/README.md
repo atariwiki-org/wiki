@@ -2,7 +2,6 @@
 
 See also: [A 6502 Assembler in FORTH](../../../Articles/A_6502_Assembler_in_FORTH/README.md)
 
-
 ## Der 6502-Assembler
 
 Im Folgenden werden die Konzepte des 6502-Assemblers für VolksForth dargestellt. Es wird kein vollständiges Glossar angegeben, da die Mnemonics des Assemblers allen Maschinensprache-Programmierern vertraut sein dürften. Eine genaue Darstellung der Funktionsweise findet sich in den [A 6502 Assembler in FORTH](../../../Articles/A_6502_Assembler_in_FORTH/README.md)  . Im Folgenden werden eine kurze Zusammenfassung sowie Änderungen gegenüber dem Original dargestellt.
