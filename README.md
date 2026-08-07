@@ -29,6 +29,8 @@ Folder names shall be unique within the repository to enable automatic link corr
 | \_Overview                  | Overview    | CLSN\_Pascal\_Overview
 | \_Source\_Code              | Source Code | QS_FORTH\Source_Code
 
+Do not include part names (CX.., TX.. DX..) in the folder name. The same program be be available as cartridge, cassette and disk and the product names typically unique. Country-specific versions of the same program typically have a localized name that is also already unique.
+
 ## Replacement Rules
 
 The topic names become folder names, attachment names become filenames.
