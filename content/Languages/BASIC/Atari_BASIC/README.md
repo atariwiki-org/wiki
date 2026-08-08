@@ -62,10 +62,8 @@ Atari BASIC Cartridge - silver - Revison C ; Revision B was soldered in the mach
 - [Atari\_BASIC\_Rev.\_B.rom](attachments/Atari_BASIC_Rev._B.rom) ; ? PEEK(43234) should return: 96
 - [Atari\_BASIC\_Rev.\_C.rom](attachments/Atari_BASIC_Rev._C.rom) ; ? PEEK(43234) should return: 234
 - [Monkey\_Wrench\_with\_BASIC\_Rev.\_C.rom](attachments/Monkey_Wrench_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
-- [Monkey\_Wrench\_II\_OS-B\_right\_v1.rom](attachments/Monkey_Wrench_II_OS-B_right_v1.rom) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
-- [Monkey\_Wrench\_II\_OS-B\_right\_v2.rom](attachments/Monkey_Wrench_II_OS-B_right_v2.rom) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
-- [Monkey\_Wrench\_II\_OS-B\_right\_v1\_with\_BASIC\_Rev.\_C.rom](attachments/Monkey_Wrench_II_OS-B_right_v1_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
-- [Monkey\_Wrench\_II\_OS-B\_right\_v2\_with\_BASIC\_Rev.\_C.rom](attachments/Monkey_Wrench_II_OS-B_right_v2_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
+- [Monkey\_Wrench\_II\_OS-B\_Right\_vV\_with\_BASIC\_Rev.\_C.rom](attachments/Monkey_Wrench_II_OS-B_Right_V1_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
+- [Monkey\_Wrench\_II\_OS-B\_Right\_V2\_with\_BASIC\_Rev.\_C.rom](attachments/Monkey_Wrench_II_OS-B_Right_V2_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
 - [Monkey\_Wrench\_II\_XL\_with\_BASIC\_Rev.\_C.rom](attachments/Monkey_Wrench_II_XL_with_BASIC_Rev._C.rom) ; both roms in just one 16 KiB file
 
 To create one 16 KiB-ROM out of 2 8 KiB ROMs, use the following method:
@@ -90,7 +88,6 @@ and the resulting rom file can be found in the same directory.
 - [Atari\_BASIC\_Rev.\_B.car](attachments/Atari_BASIC_Rev._B.car) ; ? PEEK(43234) should return: 96
 - [Atari\_BASIC\_Rev.\_C.car](attachments/Atari_BASIC_Rev._C.car) ; ? PEEK(43234) should return: 234
 - [The\_Monkey\_Wrench.car](attachments/The_Monkey_Wrench.car) Tool for better editing BASIC programs, version I
-- [The\_Monkey\_Wrench\_II.car](attachments/The_Monkey_Wrench_II.car) Tool for better editing BASIC programs, version II v2
 - [Monkey\_Wrench\_with\_BASIC\_Rev.\_C.car](attachments/Monkey_Wrench_with_BASIC_Rev._C.car) ; both cartridges in just one 16 KiB file
 - [Monkey\_Wrench\_II\_OS-B\_right\_v1.car](attachments/Monkey_Wrench_II_OS-B_right_v1.car) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
 - [Monkey\_Wrench\_II\_OS-B\_right\_v2.car](attachments/Monkey_Wrench_II_OS-B_right_v2.car) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
@@ -112,7 +109,7 @@ and the resulting rom file can be found in the same directory.
 - [Atari BASIC Source Book (2006)](attachments/Atari_BASIC_Source_Book_2006.pdf) ; size: 10.4 MB ; OCR ; 80 pages ; converted 2006 by Andreas Bertelmann for ABBUC ; thank you Andreas
 - [Monkey\_Wrench\_-\_Manual.pdf](http://data.atariwiki.org/DOC/Monkey_Wrench_-_Manual.pdf) ; size: 67.5 MB ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
 - [Monkey\_Wrench\_II\_-\_Manual.pdf](attachments/Monkey_Wrench_II_-_Manual.pdf) ; size: 2.5 MB ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
-- [The major differences between the Monkey Wrench II and Monkey Wrench II-XL cartridges](attachments/Monkey_Wrench_II_XL_-_Notes.rtf) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
+- [The major differences between the Monkey Wrench II and Monkey Wrench II-XL cartridges](attachments/Monkey_Wrench_II_XL-Notes.rtf) ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
 
 ## Atari BASIC Keywords
 
@@ -207,7 +204,7 @@ Atari BASIC Keywords
 
 ## BASIC 1x1 des Programmierens - ein BASIC-Lehrgang, einstmals gesendet auf Radio DDR II in der Computersendung REM, Begleitmaterial veröffentlicht als Kassettenbox. Mit einer Programm-Kassette für ATARI 800XL.
 
-- [Programm\_Kassette.atr](attachments/Programm_Kassette.atr)
+- [Programm-Kassette.atr](attachments/Programm-Kassette.atr)
 - [BASIC 1x1 des Programmierens (Radio DDR II)/Kassetten 1 bis 6 (mp3)](<https://k1.spdns.de/Vintage/Sinclair/82/Books/BASIC%201x1%20des%20Programmierens%20%5BRadio%20DDR%20II%5D/Kassetten%201%20bis%206%20(mp3)/>)
 - [REM und DT64-Computerclub](http://www.kc85emu.de/scans/fa0589/REM.htm)
 
