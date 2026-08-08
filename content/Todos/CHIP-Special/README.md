@@ -6,10 +6,10 @@ Die Spezialausgaben der Zeitschrift CHIP enthielten stets sehr gute BASIC-Progra
 
 ## Zeitschriften
 
-- [CHIP-Special\_1](../../../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_1.pdf) ; CHIP-Special 1 - Ausgabe. Größe: 20,1 MB; sehr zu empfehlen! :-)))
-- [CHIP-Special\_2](../../../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_2.pdf) ; CHIP-Special 2 - Ausgabe. Größe: 20,0 MB; sehr zu empfehlen! :-)))
-- [CHIP-Special\_3](../../../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_3.pdf) ; CHIP-Special 3 - Ausgabe. Größe: 23,8 MB; sehr zu empfehlen! :-)))
-- [CHIP-Special\_4](../../../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_4.pdf) ; CHIP-Special 4 - Ausgabe. Größe: 29,5 MB; sehr zu empfehlen! :-)))
+- [CHIP-Special\_1](../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_1.pdf) ; CHIP-Special 1 - Ausgabe. Größe: 20,1 MB; sehr zu empfehlen! :-)))
+- [CHIP-Special\_2](../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_2.pdf) ; CHIP-Special 2 - Ausgabe. Größe: 20,0 MB; sehr zu empfehlen! :-)))
+- [CHIP-Special\_3](../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_3.pdf) ; CHIP-Special 3 - Ausgabe. Größe: 23,8 MB; sehr zu empfehlen! :-)))
+- [CHIP-Special\_4](../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_4.pdf) ; CHIP-Special 4 - Ausgabe. Größe: 29,5 MB; sehr zu empfehlen! :-)))
 
 ## ATR-Images
 
