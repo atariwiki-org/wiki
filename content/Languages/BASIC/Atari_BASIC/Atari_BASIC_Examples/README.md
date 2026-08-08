@@ -28,12 +28,12 @@ That's all! Enjoy! :-)
 - [Logarithmen Berechnung in Atari BASIC](../../../../Companies/ABBUC/WASEO/Logarithmen/README.md) ; Logarithmen Berechnung von LOGe, LOG10 und LOG2 zurückgeführt auf die 4 Grundrechenarten
 - [Fakultät in Atari BASIC](../../../../Companies/ABBUC/WASEO/Fakultat/README.md) ; Berechnung der Fakultät mit Werten von 0 bis 68
 - [Transzendente Funktionen in Atari BASIC](../../../../Companies/ABBUC/WASEO/Transzendente_Funktionen/README.md) ; Alle transzendenten Funktionen! 21 Funktionen mehr als im Atari BASIC
-- [Teil 5: KOMBI.atr](attachments/KOMBI.atr) ; Kombinatorik: Permutationen, Kombinationen und Variationen ; demnächst hier
-- [Teil 6: PROZENT.atr](attachments/PROZENT.atr) ; %-Rechnung ; demnächst hier
-- [Teil 7: PRRP.atr](attachments/PRRP.atr) ; P-\>R und R-\>P ; demnächst hier
-- [Teil 8: DMSDD.atr](attachments/DMSDD.atr) ; DMS-\>DD \& DD-\>DMS ; demnächst hier
-- [Teil 9: KGVGGT.atr](attachments/KGVGGT.atr) ; KGV \& GGT ; demnächst hier
-- [Teil 10: EXPX.atr](attachments/EXPX.atr) ; EXP(x) ; demnächst hier
+- [Teil 5: KOMBI.atr] ; Kombinatorik: Permutationen, Kombinationen und Variationen ; demnächst hier
+- [Teil 6: PROZENT.atr] ; %-Rechnung ; demnächst hier
+- [Teil 7: PRRP.atr] ; P-\>R und R-\>P ; demnächst hier
+- [Teil 8: DMSDD.atr] ; DMS-\>DD \& DD-\>DMS ; demnächst hier
+- [Teil 9: KGVGGT.atr] ; KGV \& GGT ; demnächst hier
+- [Teil 10: EXPX.atr] ; EXP(x) ; demnächst hier
 
 ## ATR-Images
 
