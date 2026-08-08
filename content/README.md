@@ -2072,6 +2072,8 @@
     
   - [6502 Programmieren, Teil 13](Todos/Zeile_per_CIO_einlesen_und_Programme_resetfest_machen/README.md)
     
+- [Tutorials](Tutorials/README.md)
+
 - [Wiki](Wiki/README.md)
   
   - [How to contribute?](Wiki/How_to_contribute/README.md)

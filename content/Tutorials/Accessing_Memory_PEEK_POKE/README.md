@@ -1,4 +1,4 @@
-# Accessing Memory – PEEK & POKE
+# Accessing Memory – PEEK and POKE
 
 ## - MISSING
 
