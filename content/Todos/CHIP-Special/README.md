@@ -6,24 +6,22 @@ Die Spezialausgaben der Zeitschrift CHIP enthielten stets sehr gute BASIC-Progra
 
 ## Zeitschriften
 
-- [CHIP-Special\_1](../CHIP-Special_1/README.md) ; CHIP-Special 1 - Ausgabe. Size: xx.yy MB; highly recommended! :-)))
-- [CHIP-Special\_2](../CHIP-Special_2/README.md) ; CHIP-Special 2 - Ausgabe. Size: xx.yy MB; highly recommended! :-)))
-- [CHIP-Special\_3](../CHIP-Special_3/README.md) ; CHIP-Special 3 - Ausgabe. Size: xx.yy MB; highly recommended! :-)))
-- [CHIP-Special\_4](../CHIP-Special_4/README.md) ; CHIP-Special 4 - Ausgabe. Size: xx.yy MB; highly recommended! :-)))
+- [CHIP-Special\_1](../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_1.pdf) ; CHIP-Special 1 - Ausgabe. Größe: 20,1 MB; sehr zu empfehlen! :-)))
+- [CHIP-Special\_2](../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_2.pdf) ; CHIP-Special 2 - Ausgabe. Größe: 20,0 MB; sehr zu empfehlen! :-)))
+- [CHIP-Special\_3](../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_3.pdf) ; CHIP-Special 3 - Ausgabe. Größe: 23,8 MB; sehr zu empfehlen! :-)))
+- [CHIP-Special\_4](../../../media/Todos/CHIP-Special/attachments/ABBUC_A8_CHIP-Special_4.pdf) ; CHIP-Special 4 - Ausgabe. Größe: 29,5 MB; sehr zu empfehlen! :-)))
 
 ## ATR-Images
 
-- [Chip\_Special\_1a.atr](attachments/Chip_Special_1a.atr) ; ATR-Image mit den Programmen der ersten Spezialausgabe der Zeitschrift CHIP. Größe: xx,yy KB. Vielen lieben Dank an alle, die hierzu beigetragen haben, s. Tabelle unten.
+- [Chip\_Special\_1a.atr](attachments/Chip_Special_1a.atr) ; ATR-Image mit den Programmen der ersten Spezialausgabe der Zeitschrift CHIP. Größe: 133 KB. Vielen lieben Dank an alle, die hierzu beigetragen haben, s. Tabelle unten.
 
-- [Chip\_Special\_1b.atr](attachments/Chip_Special_1b.atr) ; ATR-Image mit den Programmen der ersten Spezialausgabe der Zeitschrift CHIP. Größe: xx,yy KB. Vielen lieben Dank an alle, die hierzu beigetragen haben, s. Tabelle unten.
+- [Chip\_Special\_1b.atr](attachments/Chip_Special_1b.atr) ; ATR-Image mit den Programmen der ersten Spezialausgabe der Zeitschrift CHIP. Größe: 133 KB. Vielen lieben Dank an alle, die hierzu beigetragen haben, s. Tabelle unten.
 
 - [Chip\_Special\_2a.atr](attachments/Chip_Special_2a.atr)
 
 - [Chip\_Special\_2b.atr](attachments/Chip_Special_2b.atr)
 
-- [Chip\_Special\_3a.atr](attachments/Chip_Special_3a.atr)
-
-- [Chip\_Special\_3b.atr](attachments/Chip_Special_3b.atr)
+- [Chip\_Special\_3.atr](attachments/Chip_Special_3.atr)
 
 - [Chip\_Special\_4a.atr](attachments/Chip_Special_4a.atr)
 
@@ -34,6 +32,6 @@ Die Spezialausgaben der Zeitschrift CHIP enthielten stets sehr gute BASIC-Progra
 | # | Seite | Kategorie | Name | fertig? | Abtipphelden
 |---|-------|-----------|------|---------|--------------
 | 1 | alle  |           |      | ja      | Mr. Bacardi, Sleepy, Florian, etc...
-| 2 | 10    |           |      |         | 
-| 3 | 20    |           |      |         | 
-| 4 | 30    |           |      |         | 
+| 2 | 10    |           |      |         |
+| 3 | 20    |           |      |         |
+| 4 | 30    |           |      |         |
