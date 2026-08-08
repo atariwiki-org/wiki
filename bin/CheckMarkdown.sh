@@ -25,7 +25,7 @@ then
 fi
 
 markdown-checker . -f check_broken_paths -o ${RESULT} 2>${RESULT}.tmp
-fgrep --ignore-case --invert-match volksFORTH ${RESULT}.tmp >${RESULT}.log
-rm -f ${RESULT}.tmp 
+fgrep --ignore-case ${RESULT}.tmp >${RESULT}.log
+rm -f ${RESULT}.tmp
 
 ls -l ${RESULT}.md
