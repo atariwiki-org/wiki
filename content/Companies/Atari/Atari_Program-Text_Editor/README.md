@@ -10,6 +10,18 @@ It remains to be verified whether it was also used for PASCAL. However, given it
 
 A German version is available as [Atari Program Text Editor (DXG20075)](../Atari_Germany/Atari_Programm-Text_Editor/README.md).
 
+## Manuals
+
+- [Atari Program-Text Editor-Original-OCR](attachments/Atari_Program-Text_Editor-OCR.pdf) ; size: 2.2 MB
+
+- [Atari Program-Text Editor-Original-OCR-Screen](attachments/Atari_Program-Text_Editor-OCR-Screen.pdf) ; size: 1.2 MB
+
+- [Atari Program-Text Editor Reference Card-Original-OCR](attachments/Atari_Program-Text_Editor_Reference_Card-OCR.pdf) ; size: 52 KB
+
+- [EDITOR\_CUSTOMIZING\_MANAGER.pdf](attachments/EDITOR_CUSTOMIZING_MANAGER.pdf)
+
+- [EDITOR\_CUSTOMIZING\_MANAGER.txt](attachments/EDITOR_CUSTOMIZING_MANAGER.txt)
+
 ## Reference Card
 
 - Atari Program-Text Editor - Reference Card<br>![](attachments/Atari_Program-Text_Editor_Reference_Card.jpg)

@@ -1636,7 +1636,7 @@
       
     - [Draper Pascal](Languages/Pascal/Draper_Pascal_Overview/README.md)
       
-    - [Kyan\_Pascal\_Overview](Languages/Pascal/Kyan_Pascal_Overview/README.md)
+    - [Kyan Pascal Examples](Languages/Pascal/Kyan_Pascal_Overview/README.md)
       
       - [Examples](Languages/Pascal/Kyan_Pascal_Overview/Kyan_Pascal_Examples/README.md)
         

@@ -89,15 +89,15 @@ USER 'NORDIN' LOGGED OFF 	19-JAN-84	10:12:07
 
 ## Handbücher
 
-- [ATARI Macro Assembler (AMAC) DXG 8126 Handbuch (deutsch)](../../../../../media/Companies/Atari/Macro_Assembler/attachments/Atari_Macro_Assemble__DXG_8126-OCR.pdf) ; Größe: 7,4 MB ; mit Texterkennung OCR (deutsch)
+- [ATARI Macro Assembler (AMAC) DXG 8126 Handbuch (deutsch)](../../../../../media/Companies/Atari/Atari_Macro_Assembler/attachments/Atari_Macro_Assembler_DXG_8126-OCR.pdf) ; Größe: 7,4 MB ; mit Texterkennung OCR (deutsch)
 
 - [SYSTEXT.txt](attachments/SYSTEXT.txt) ; Ausdruck der "Operating System Equates" und "Hardware Registers" als Mnemonics mit ihren hexadezimalen Entsprechungen in einer Text-Datei  (englisch)
 
 - [Atari\_Macro\_Assembler\_and\_Program-Text\_Editor.pdf](../../../../../media/Companies/Atari/Atari_Assembler_Editor/attachments/Atari_Macro_Assembler_and_Program-Text_Editor.pdf) ; Größe: 12,4 MB ; Hanbuch für den Assembler und Editor (englisch)
 
-- [Atari\_Macro\_Assembler.pdf](../../../../../media/Companies/Atari/Macro_Assembler/attachments/Atari_Macro_Assembler.pdf) ; Größe: 10,2 MB ; Hanbuch für den Assembler (englisch)
+- [Atari\_Macro\_Assembler.pdf](../../../../../media/Companies/Atari/Atari_Macro_Assembler/attachments/Atari_Macro_Assembler.pdf) ; Größe: 10,2 MB ; Hanbuch für den Assembler (englisch)
 
-- [Atari\_Program\_Text\_Editor.pdf](../../../../../media/Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor/attachments/Atari_Program-Text_Editor.pdf) ; Größe: 10,4 MB ; Hanbuch für den Editor (englisch)
+- [Atari\_Program\_Text\_Editor.pdf](../../../../../media/Companies/Atari/Atari_Program-Text_Editor/attachments/Atari_Program-Text_Editor.pdf) ; Größe: 10,4 MB ; Hanbuch für den Editor (englisch)
 
 - [Atari\_Macro\_Assembler\_Product\_Information\_Sheet\_II.pdf](attachments/Atari_Macro_Assembler_Product_Information_Sheet_II.pdf) ; Größe: 1,6 MB ; Informationsblatt II zum ATARI Macro Assembler (AMAC) vom 14.06.1983 (englisch)
 
@@ -130,7 +130,7 @@ Atari Macro Assembler Diskette (deutsch, vom Original) - der Quelltext des Kopie
 
 ## Film
 
-- [Atari\_Macro\_Assembler.mp4](../../../../../media/Companies/Atari/Macro_Assembler/attachments/Atari_Macro_Assembler.mp4) ; Beispielfilm für die Anwendung des Atari Macro Assemblers
+- [Atari\_Macro\_Assembler.mp4](../../../../../media/Companies/Atari/Atari_Macro_Assembler/attachments/Atari_Macro_Assembler.mp4) ; Beispielfilm für die Anwendung des Atari Macro Assemblers
 
 ## Bilder
 
