@@ -12,20 +12,17 @@ Copyright (C) 1985 Kyan Software
 - [Kyan\_Pascal\_10.atr](attachments/Kyan_Pascal_10.atr) ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
 - [Kyan Pascal 1.1 A](attachments/Kyan_Pascal_1.1_A.atr) ; thanks to Serious Computerist
 - [Kyan\_Pascal\_1.1 B](attachments/Kyan_Pascal_1.1_B.atr) ; thanks to Serious Computerist
-- [Kyan\_Pascal\_1.1\_1987.atr](attachments/Kyan_Pascal_1.1_1987.atr) ; highly likely that 1987 is wrong
 - [Kyan\_Pascal\_2.02\_1986\_side\_1.atr](attachments/Kyan_Pascal_2.02_1986_side_1.atr) ; thanks to Mr. Bacardi
 - [Kyan\_Pascal\_2.02\_1986\_side\_1.atr](attachments/Kyan_Pascal_2.02_1986_side_1.atr) ; thanks to Mr. Bacardi
-- [Kyan\_Pascal\_2.02-01.atr](attachments/Kyan_Pascal_2.02-01.atr) ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
-- [Kyan\_Pascal\_2.02-02.atr](attachments/Kyan_Pascal_2.02-02.atr) ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
 - [Kyan Pascal 2.04 with utilities](attachments/Kyan_Pascal_2.04_with_utilities.zip) ; 4 ATRs in one zip-file; Version 2.02 and 2.04 are binary identical, thanks to GoodByteXL for checking
 - [Kyan\_Pascal\_System\_Utilities\_Demo\_Programs.atr](attachments/Kyan_Pascal_System_Utilities_Demo_Programs.atr) ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
 - [Kyan\_Pascal\_System\_Utilities\_V1.00\_Side1.atr](attachments/Kyan_Pascal_System_Utilities_V1.00_Side1.atr) ; thanks to a kind soul from the midwest, we really appreciate your help for the whole community! Please go ahead, we really need your help!
 - [Kyan\_Pascal-ToolKit\_I\_System\_Utilities\_A.atr](attachments/Kyan_Pascal-ToolKit_I_System_Utilities_A.atr) ; thanks to Serious Computerist
 - [Kyan\_Pascal-ToolKit\_I\_System\_Utilities\_B.atr](attachments/Kyan_Pascal-ToolKit_I_System_Utilities_B.atr) ; thanks to Serious Computerist
-- [Kyan\_Pascal\_Utils\_s1.atr](attachments/Kyan_Pascal_Utils_s1.atr) ; Toolkit System Utilities part 1
-- [Kyan\_Pascal\_Utils\_s2.atr](attachments/Kyan_Pascal_Utils_s2.atr) ; Toolkit System Utilities part 2
+- [Kyan\_Pascal\_Utils\_s1.atr](attachments/Kyan_Pascal-ToolKit_I_System_Utilities_A.atr) ; Toolkit System Utilities part 1
+- [Kyan\_Pascal\_Utils\_s2.atr](attachments/Kyan_Pascal-ToolKit_I_System_Utilities_B.atr) ; Toolkit System Utilities part 2
 - [Kyan Pascal Utilities with missing sector 451 (file REPEAT.I)](attachments/KYANUTILS1.ATR) ; Kyan Pascal Utilities with missing sector 451 (file REPEAT.I) ; thanks to [Atari\_Ace](https://atariage.com/forums/topic/262217-lets-make-kyan-pascal-great-again-atari-first/?do=findComment&comment=4673610) from AtariAge
-- [Kyan Pascal - Advanced Graphics Toolkit](attachments/Kyan_Pascal_Toolkit_III.atr) ; Kyan Pascal - Advanced Graphics Toolkit for Kyan Pascal Version 2.xx
+- [Kyan Pascal - Advanced Graphics Toolkit](attachments/Kyan_Pascal-Toolkit_III.atr) ; Kyan Pascal - Advanced Graphics Toolkit for Kyan Pascal Version 2.xx
 - [Kyan\_Pascal\_Tutorial\_s1.atr](attachments/Kyan_Pascal_Tutorial_s1.atr)
 - [Kyan\_Pascal\_Tutorial\_s2.atr](attachments/Kyan_Pascal_Tutorial_s2.atr)
 - [Kyan\_Pascal\_Tutorial\_s3.atr](attachments/Kyan_Pascal_Tutorial_s3.atr)
