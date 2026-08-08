@@ -2076,7 +2076,7 @@
 
   - [Accessing_Memory_PEEK_POKE](Tutorials/Accessing_Memory_PEEK_POKE/README.md)
 
-  - [Accessing_Memory_PEEK_POKE](Tutorials/Accessing_Memory_PEEK_POKE/README.md)
+  - [Read_a_word_ie_Input_Command](Tutorials/Read_a_word_ie_Input_Command/README.md)
 
 - [Wiki](Wiki/README.md)
 
