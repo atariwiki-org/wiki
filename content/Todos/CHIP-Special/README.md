@@ -32,6 +32,6 @@ Die Spezialausgaben der Zeitschrift CHIP enthielten stets sehr gute BASIC-Progra
 | # | Seite | Kategorie | Name | fertig? | Abtipphelden
 |---|-------|-----------|------|---------|--------------
 | 1 | alle  |           |      | ja      | Mr. Bacardi, Sleepy, Florian, etc...
-| 2 | 10    |           |      |         |
-| 3 | 20    |           |      |         |
-| 4 | 30    |           |      |         |
+| 2 | 10    |           |      |         | 
+| 3 | 20    |           |      |         | 
+| 4 | 30    |           |      |         | 

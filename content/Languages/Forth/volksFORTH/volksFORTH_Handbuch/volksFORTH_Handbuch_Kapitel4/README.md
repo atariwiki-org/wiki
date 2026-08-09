@@ -55,33 +55,33 @@ have <word> not .IF <action1> .ELSE <action2> .THEN
 
 Diese Worte werden außerhalb von Colon-Definitionen eingesetzt und ersetzen das ''needs'' früherer Versionen.
 
-- [have](../../volksFORTH_Language/Words/have/README.md)
-- [exit](../../volksFORTH_Language/Words/exit/README.md)
-- [?exit](../../volksFORTH_Language/Words/question-exit/README.md)
-- [0=exit](../../volksFORTH_Language/Words/zero-equals-exit/README.md)
-- [if](../../volksFORTH_Language/Words/if/README.md)
-- [.IF](../../volksFORTH_Language/Words/_IF/README.md)
-- [then](../../volksFORTH_Language/Words/then/README.md)
-- [.THEN](../../volksFORTH_Language/Words/_THEN/README.md)
-- [else](../../volksFORTH_Language/Words/else/README.md)
-- [.ELSE](../../volksFORTH_Language/Words/_ELSE/README.md)
-- [do](../../volksFORTH_Language/Words/do/README.md)
-- [?do](../../volksFORTH_Language/Words/question-do/README.md)
-- [loop](../../volksFORTH_Language/Words/loop/README.md)
-- [+loop](../../volksFORTH_Language/Words/plus-loop/README.md)
-- [I](../../volksFORTH_Language/Words/I/README.md)
-- [J](../../volksFORTH_Language/Words/J/README.md)
-- [leave](../../volksFORTH_Language/Words/leave/README.md)
-- [endloop](../../volksFORTH_Language/Words/endloop/README.md)
-- [bounds](../../volksFORTH_Language/Words/Bounds/README.md)
-- [begin](../../volksFORTH_Language/Words/begin/README.md)
-- [repeat](../../volksFORTH_Language/Words/repeat/README.md)
-- [until](../../volksFORTH_Language/Words/until/README.md)
-- [while](../../volksFORTH_Language/Words/while/README.md)
-- [execute](../../volksFORTH_Language/Words/execute/README.md)
-- [perform](../../volksFORTH_Language/Words/perform/README.md)
-- [case?](../../volksFORTH_Language/Words/case-question/README.md)
-- [stop](../../volksFORTH_Language/Words/stop/README.md)
+- have
+- exit
+- ?exit
+- 0=exit
+- if
+- .IF
+- then
+- .THEN
+- else
+- .ELSE
+- do
+- ?do
+- loop See [Loops in Forth](../../volksFORTH_Tutorial/Loops/README.md)
+- +loop
+- I
+- J
+- leave
+- endloop
+- bounds
+- begin
+- repeat
+- until
+- while
+- execute
+- perform
+- case?
+- stop
 
 # Worte zur Fehlerbehandlung
 
@@ -94,16 +94,16 @@ is-depth ( n — )
 
 IS-DEPTH überprüft den Stack auf eine gegebene Anzahl Stackelemente (depth) hin.
 
-- [abort](../../volksFORTH_Language/Words/abort/README.md)
-- ['abort](../../volksFORTH_Language/Words/tick-abort/README.md)
-- [abort"](../../volksFORTH_Language/Words/abort-quote/README.md)
-- [error"](../../volksFORTH_Language/Words/error-quote/README.md)
-- [errorhandler](../../volksFORTH_Language/Words/errorhandler/README.md)
-- [(error](../../volksFORTH_Language/Words/paren-error/README.md)
-- [r#](../../volksFORTH_Language/Words/r-sharp/README.md)
-- [scr](../../volksFORTH_Language/Words/scr/README.md)
-- [quit](../../volksFORTH_Language/Words/quit/README.md)
-- [?pairs](../../volksFORTH_Language/Words/question-pairs/README.md)
+- abort
+- 'abort
+- abort"
+- error"
+- errorhandler
+- error
+- r#
+- scr
+- quit
+- ?pairs
 
 # Fallunterscheidung in FORTH
 

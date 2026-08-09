@@ -37,13 +37,13 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 
 ## volksFORTH Handbuch (German)
 
-- [Kapitl 1: volksFORTH Version 3.90 Handbuch](volksFORTH_Handbuch/Chapter1/README.md)
+- [Kapitel 1: volksFORTH Version 3.90 Handbuch](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel1/README.md)
 
 - [Kapitel 2: Einstieg in volksFORTH](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel2/README.md)
 
 - [Kapitel 3: Arithmetik](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel3/README.md)
 
-- [Programm-Strukturen](volksFORTH_Handbuch/volksFORTH_volksFORTH_Handbuch_Kapitel4/README.md)
+- [Programm-Strukturen](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel4/README.md)
 
 - [Kapitel 4: Ein-/Ausgabe in volksFORTH](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel5/README.md)
 
@@ -74,14 +74,14 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 - [Plot\_and\_DrawTo\_using\_the\_CIO\_OS\_ROM](volksFORTH_Tutorial/Plot_and_DrawTo_using_the_CIO_OS_ROM/README.md); TODO Create
 - [Clear Screen](volksFORTH_Tutorial/Clear_Screen/README.md)
 - [Reading the keyboard from VolksForth](../../../Todos/Read_keyboard/README.md)
-- [Read\_a\_word\_ie\_Input\_Command](Tutorial/Read_a_word_ie_Input_Command/README.md); TODO Create
+- [Read a word ie Input Command](volksFORTH_Tutorial/Read_a_word_ie_Input_Command/README.md); TODO Create
 - [Loops in Forth](volksFORTH_Tutorial/Loops/README.md)
 - Sound
   - [Sound in Forth](volksFORTH_Tutorial/Sound/README.md)
   - [Sound and storing](volksFORTH_Tutorial/Sound2/README.md)
 - [Read\_Joysticks](volksFORTH_Tutorial/Read_Joysticks/README.md)
 - [Position Cursor](volksFORTH_Tutorial/Position_Command/README.md) -- position the cursor on the screen
-- [Accessing\_Memory\_PEEK\_POKE](Tutorial/Accessing_Memory_PEEK_POKE/README.md)
+- [Accessing Memory – PEEK and POKE](volksFORTH_Tutorial/Accessing_Memory_PEEK_POKE/README.md)
 - [Graphics](volksFORTH_Tutorial/Graphics/README.md) Command (Setting a graphics mode using the CIO OS ROM); TODO Create
 - [Setcolor](volksFORTH_Tutorial/Setcolor/README.md) Command; TODO Create
 - [Creating Random numbers](volksFORTH_Tutorial/Random/README.md) command

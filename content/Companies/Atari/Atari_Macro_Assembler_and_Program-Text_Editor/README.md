@@ -27,7 +27,6 @@
 
 - [Atari\_Macro\_Assembler\_and\_Program-Text\_Editor\_manual.zip](../../../../media/Companies/Atari/Atari_Macro_Assembler_and_Program-Text_Editor/attachments/Atari_Macro_Assembler_and_Program-Text_Editor_manual.zip)
 
-
 - [Atari Macro Assembler DXG 8126](https://data.atariwiki.org/DOC/Atari_Macro_Assembler_DXG_8126.pdf) ; 53.7 MB ; German version ; Mega-Thanks to Dirk Tröger (Yellow Man) for giving us this ultra rare manual! :-)))
 
 ## Manual online
@@ -58,5 +57,3 @@
 
 - Atari Macro Assembler Disk - source code of the disk protection for AMAC (in 1st sector of the app)<br>
   Thank you so much JAC! from AtariAge, we really owe you so much. God bless you.<br>![](attachments/AMAC_original_protected-Protection-Code-EN.png)
-
-

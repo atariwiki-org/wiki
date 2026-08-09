@@ -10,7 +10,9 @@ then
     echo "Command 'markdown-checker' could not be found."
     if ! command -v python3  >/dev/null 2>&1
     then
-        echo "Command 'python3' could not be found. Install from https://www.python.org/downloads/,"
+        echo "Command 'python3' could not be found. Install from https://www.python.org/downloads/".
+        echo "Make sure all previously installed versions, e.g. installed via brew are uninstalled first."
+        echo "Also make sure that the new Python bin folder is included in the PATH."
         exit 1
     fi
     if ! command -v pip >/dev/null 2>&1
@@ -24,6 +26,5 @@ then
     exit 1
 fi
 
-markdown-checker . -f check_broken_paths -o ${RESULT} 2>${RESULT}.tmp
+markdown-checker . -f check_broken_paths -o ${RESULT} 2>${RESULT}.log
 ls -l ${RESULT}.md
-
