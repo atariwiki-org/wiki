@@ -1,4 +1,4 @@
-# Kapitel 4: Ein-/Ausgabe in volksFORTH
+# Kapitel 5: Ein-/Ausgabe in volksFORTH
 
 ## Ein-/Ausgabebefehle in volksFORTH
 
@@ -30,71 +30,71 @@ muss unbedingt eingehalten werden. Entsprechend wird die Input-Vektorisierung ge
 
 Das volksFORTH verfügt über eine Reihe von Konstanten, die der besseren Lesbarkeit dienen:
 
-- [c/row](../../volksFORTH_Language/Words/characters-per-row/README.md)
-- [c/col](../../volksFORTH_Language/Words/characters-per-column/README.md)
-- [c/dis](../../volksFORTH_Language/Words/characters-per-display/README.md)
-- [c/l](../../volksFORTH_Language/Words/characters-per-line/README.md)
-- [l/s](../../volksFORTH_Language/Words/lines-per-screen/README.md)
-- [bl](../../volksFORTH_Language/Words/bl/README.md)
-- [#esc](../../volksFORTH_Language/Words/number-escape/README.md)
-- [#cr](../../volksFORTH_Language/Words/number-carriage-return/README.md)
-- [#lf](../../volksFORTH_Language/Words/number-linefeed/README.md)
-- [#bel](../../volksFORTH_Language/Words/number-bell/README.md)
-- [#bs](../../volksFORTH_Language/Words/number-backspace/README.md)
-- [standardi/o](../../volksFORTH_Language/Words/standard-input-output/README.md)
-- [inputkol](../../volksFORTH_Language/Words/inputkol/README.md)
-- [outputkol](../../volksFORTH_Language/Words/outputkol/README.md)
-- [area](../../volksFORTH_Language/Words/area/README.md)
-- [areakol](../../volksFORTH_Language/Words/areakol/README.md)
-- [terminal](../../volksFORTH_Language/Words/terminal/README.md)
-- [window](../../volksFORTH_Language/Words/window/README.md)
-- [full](../../volksFORTH_Language/Words/full/README.md)
-- [curat?](../../volksFORTH_Language/Words/cursor-at-question/README.md)
-- [cur!](../../volksFORTH_Language/Words/cursor-store/README.md)
-- [setpage](../../volksFORTH_Language/Words/setpage/README.md)
-- [video@](../../volksFORTH_Language/Words/video-fetch/README.md)
-- [savevideo](../../volksFORTH_Language/Words/savevideo/README.md)
-- [restorevideo](../../volksFORTH_Language/Words/restorevideo/README.md)
-- [catt](../../volksFORTH_Language/Words/catt/README.md)
-- [list](../../volksFORTH_Language/Words/list/README.md)
-- [(page](../../volksFORTH_Language/Words/paren-page/README.md)
-- [page](../../volksFORTH_Language/Words/page/README.md)
-- [(del](../../volksFORTH_Language/Words/paren-delete/README.md)
-- [del](../../volksFORTH_Language/Words/del/README.md)
-- [(cr](../../volksFORTH_Language/Words/paren-carriage-return/README.md)
-- [cr](../../volksFORTH_Language/Words/cr/README.md)
-- [?cr](../../volksFORTH_Language/Words/question-carriage-return/README.md)
-- [(at](../../volksFORTH_Language/Words/paren-at/README.md)
-- [(at?](../../volksFORTH_Language/Words/paren-at-question/README.md)
-- [at](../../volksFORTH_Language/Words/at/README.md)
-- [at?](../../volksFORTH_Language/Words/at-question/README.md)
-- [col](../../volksFORTH_Language/Words/col/README.md)
-- [row](../../volksFORTH_Language/Words/row/README.md)
-- [curoff](../../volksFORTH_Language/Words/curoff/README.md)
-- [curon](../../volksFORTH_Language/Words/curon/README.md)
-- [curshape](../../volksFORTH_Language/Words/curshape/README.md)
-- [printer](../../volksFORTH_Language/Words/printer/README.md)
-- [print](../../volksFORTH_Language/Words/print/README.md)
-- [+print](../../volksFORTH_Language/Words/plus-print/README.md)
-- [lst!](../../volksFORTH_Language/Words/list-store/README.md)
+- c/row ; TODO Create
+- c/col ; TODO Create
+- c/dis ; TODO Create
+- c/l ; TODO Create
+- l/s ; TODO Create
+- bl ; TODO Create
+- #esc ; TODO Create
+- #cr ; TODO Create
+- #lf ; TODO Create
+- #bel ; TODO Create
+- #bs ; TODO Create
+- standardi/o ; TODO Create
+- inputkol ; TODO Create
+- outputkol ; TODO Create
+- area ; TODO Create
+- areakol ; TODO Create
+- terminal ; TODO Create
+- window ; TODO Create
+- full ; TODO Create
+- curat? ; TODO Create
+- cur! ; TODO Create
+- setpage ; TODO Create
+- video@ ; TODO Create
+- savevideo ; TODO Create
+- restorevideo ; TODO Create
+- catt ; TODO Create
+- list ; TODO Create
+- (page ; TODO Create
+- page ; TODO Create
+- (del ; TODO Create
+- del ; TODO Create
+- (cr ; TODO Create
+- cr ; TODO Create
+- ?cr ; TODO Create
+- (at ; TODO Create
+- (at? ; TODO Create
+- at ; TODO Create
+- at? ; TODO Create
+- col ; TODO Create
+- row ; TODO Create
+- curoff ; TODO Create
+- curon ; TODO Create
+- curshape ; TODO Create
+- printer ; TODO Create
+- print ; TODO Create
+- +print ; TODO Create
+- lst! ; TODO Create
 
 ## Ein-/Ausgabe von Zahlen
 
 Die Eingabe von Zahlen erfolgt im interpretativen Modus über die Tastatur, wobei grundlegende Eingabeworte mit **number** **numbers** und den verwandten Worten definiert werden. Bei der Ausgabe von Zahlen ist wieder die fehlende Typisierung von FORTH zu beachten — für ein bestimmtes Datenformat (integer, unsigned, double) ist jeweils der geeignete Operator auszuwählen.
 
-- [.](../../volksFORTH_Language/Words/dot/README.md)
-- [u.](../../volksFORTH_Language/Words/unsigned-dot/README.md)
-- [d.](../../volksFORTH_Language/Words/double-dot/README.md)
-- [.r](../../volksFORTH_Language/Words/dot-right-justified/README.md)
-- [u.r](../../volksFORTH_Language/Words/unsigned-dot-right-justified/README.md)
-- [d.r](../../volksFORTH_Language/Words/double-dot-right-justified/README.md)
+- . ; Words/dot ; TODO Create
+- u. ; Words/unsigned-dot ; TODO Create
+- d. ; Words/double-dot ; TODO Create
+- .r ; Words/dot-right-justified ; TODO Create
+- u.r ; Words/unsigned-dot-right-justified ; TODO Create
+- d.r ; Words/double-dot-right-justified ; TODO Create
 
 ## Ein-/Ausgabe über einen Port
 
 ''MS-DOS''
 
-- [pc@](../../volksFORTH_Language/Words/port-char-fetch/README.md)
-- [pc!](../../volksFORTH_Language/Words/port-char-store/README.md)
+- pc@ ; Words/port-char-fetch ; TODO Create
+- pc! ; Words/port-char-store ; TODO Create
 
 ## Eingabe von Zeichen
 
@@ -102,42 +102,43 @@ In FORTH wird man immer einen Speicherbereich benennen, in dem Zeichen und Zeich
 
 Dann mochte ich Ihnen mit dem Texteingabe-Puffer **TIB** einen weiteren wichtigen Speicherbereich vorstellen, der den vernünftigen Umgang mit den angeschlossenen Geräten sicherstellt. Weil die Texteingabe über die Tastatur relativ langsam vorsichgeht, werden die Zeichen hier erst in einem freien Speicherbereich, dem Pufferspeicher **TIB**, gesammelt und dann abgearbeitet.
 
-- [tib](../../volksFORTH_Language/Words/tib/README.md)
-- [#tib](../../volksFORTH_Language/Words/number-tib/README.md)
-- [\>tob](../../volksFORTH_Language/Words/to-tib/README.md)
-- [\>in](../../volksFORTH_Language/Words/to-in/README.md)
-- [pad](../../volksFORTH_Language/Words/pad/README.md)
-- [input](../../volksFORTH_Language/Words/input/README.md)
-- [keyboard](../../volksFORTH_Language/Words/keyboard/README.md)
-- [empty-keys](../../volksFORTH_Language/Words/empty-keys/README.md)
-- [(key?](../../volksFORTH_Language/Words/paren-key-question/README.md)
-- [key?](../../volksFORTH_Language/Words/key-question/README.md)
-- [(key](../../volksFORTH_Language/Words/paren-key/README.md)
-- [key](../../volksFORTH_Language/Words/key/README.md)
-- [(decode](../../volksFORTH_Language/Words/paren-decode/README.md)
-- [(expect](../../volksFORTH_Language/Words/paren-expect/README.md)
-- [expect](../../volksFORTH_Language/Words/expect/README.md)
-- [span](../../volksFORTH_Language/Words/span/README.md)
-- [\>expect](../../volksFORTH_Language/Words/to-expect/README.md)
-- [nullstring?](../../volksFORTH_Language/Words/null-string-question/README.md)
-- [stop?](../../volksFORTH_Language/Words/stop-question/README.md)
-- [source](../../volksFORTH_Language/Words/source/README.md)
-- [word](../../volksFORTH_Language/Words/word/README.md)
-- [parse](../../volksFORTH_Language/Words/parse/README.md)
-- [name](../../volksFORTH_Language/Words/name/README.md)
-- [find](../../volksFORTH_Language/Words/find/README.md)
-- [execute](../../volksFORTH_Language/Words/execute/README.md)
-- [perform](../../volksFORTH_Language/Words/perform/README.md)
-- [query](../../volksFORTH_Language/Words/query/README.md)
-- [interpret](../../volksFORTH_Language/Words/interpret/README.md)
-- [output](../../volksFORTH_Language/Words/output/README.md)
-- [display](../../volksFORTH_Language/Words/display/README.md)
-- [(emit](../../volksFORTH_Language/Words/paren-emit/README.md)
-- [emit](../../volksFORTH_Language/Words/emit/README.md)
-- [charout](../../volksFORTH_Language/Words/charout/README.md)
-- [tipp](../../volksFORTH_Language/Words/tipp/README.md)
-- [(type](../../volksFORTH_Language/Words/paren-type/README.md)
-- [type](../../volksFORTH_Language/Words/Type/README.md)
-- [ltype](../../volksFORTH_Language/Words/long-type/README.md)
-- [space](../../volksFORTH_Language/Words/space/README.md)
-- [spaces](../../volksFORTH_Language/Words/spaces/README.md)
+- tib ; TODO Create
+- #tib ; TODO Create
+- \>tob ; TODO Create
+- \>in ; TODO Create
+- pad ; TODO Create
+- input ; TODO Create
+- keyboard ; TODO Create
+- empty-keys ; TODO Create
+- (key? ; TODO Create
+- key? ; TODO Create
+- (key ; TODO Create
+- key ; TODO Create
+- (decode ; TODO Create
+- (expect ; TODO Create
+- expect ; TODO Create
+- span ; TODO Create
+- \>expect ; TODO Create
+- nullstring? ; TODO Create
+- stop? ; TODO Create
+- source ; TODO Create
+- word ; TODO Create
+- parse ; TODO Create
+- name ; TODO Create
+- find ; TODO Create
+- execute ; TODO Create
+- perform ; TODO Create
+- query ; TODO Create
+- interpret ; TODO Create
+- output ; TODO Create
+- display ; TODO Create
+- (emit ; TODO Create
+- emit ; TODO Create
+- charout ; TODO Create
+- tipp ; TODO Create
+- (type ; TODO Create
+- type ; TODO Create
+- ltype ; TODO Create
+- space ; TODO Create
+- spaces ; TODO Create
+

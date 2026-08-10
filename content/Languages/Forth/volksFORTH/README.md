@@ -43,9 +43,9 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 
 - [Kapitel 3: Arithmetik](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel3/README.md)
 
-- [Programm-Strukturen](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel4/README.md)
+- [Kapitel 4: Programm-Strukturen](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel4/README.md)
 
-- [Kapitel 4: Ein-/Ausgabe in volksFORTH](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel5/README.md)
+- [Kapitel 5: Ein-/Ausgabe in volksFORTH](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel5/README.md)
 
 - [Kapitel 6: Zeichenketten (Strings) in volksFORTH](volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel6/README.md)
 
@@ -63,15 +63,15 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 ## volksFORTH Tutorial
 
 - [Relocating](volksFORTH_Tutorial/Relocating/README.md)
-- [Adding\_comments](volksFORTH_Tutorial/Adding_comments/README.md); TODO Create
+- Adding\_comments ; TODO Create
 - [Saveexe](volksFORTH_Tutorial/Saveexe/README.md)
 - [Working with files (translation pending)](volksFORTH_Tutorial/Working_with_files/README.md)
-- [Reading\_binary\_files](volksFORTH_Tutorial/Reading_binary_files/README.md); TODO Create
-- [Writing\_binary\_files](volksFORTH_Tutorial/Writing_binary_files/README.md); TODO Create
-- [Reading\_text\_files](volksFORTH_Tutorial/Reading_text_files/README.md); TODO Create
-- [Writing\_text\_files](volksFORTH_Tutorial/Writing_text_files/README.md); TODO Create
-- [Assembler\_CODE](volksFORTH_Tutorial/Assembler_CODE/README.md); TODO Create
-- [Plot\_and\_DrawTo\_using\_the\_CIO\_OS\_ROM](volksFORTH_Tutorial/Plot_and_DrawTo_using_the_CIO_OS_ROM/README.md); TODO Create
+- Reading\_binary\_files ; TODO Create
+- Writing\_binary\_files ; TODO Create
+- Reading\_text\_files ; TODO Create
+- Writing\_text\_files ; TODO Create
+- Assembler\_CODE ; TODO Create
+- Plot\_and\_DrawTo\_using\_the\_CIO\_OS\_ROM ; TODO Create
 - [Clear Screen](volksFORTH_Tutorial/Clear_Screen/README.md)
 - [Reading the keyboard from VolksForth](../../../Todos/Read_keyboard/README.md)
 - [Read a word ie Input Command](volksFORTH_Tutorial/Read_a_word_ie_Input_Command/README.md); TODO Create
@@ -79,14 +79,14 @@ This is a list of all Forth words contained in the volksFORTH distribution. The 
 - Sound
   - [Sound in Forth](volksFORTH_Tutorial/Sound/README.md)
   - [Sound and storing](volksFORTH_Tutorial/Sound2/README.md)
-- [Read\_Joysticks](volksFORTH_Tutorial/Read_Joysticks/README.md)
+- Read\_Joysticks  ; TODO Create
 - [Position Cursor](volksFORTH_Tutorial/Position_Command/README.md) -- position the cursor on the screen
 - [Accessing Memory – PEEK and POKE](volksFORTH_Tutorial/Accessing_Memory_PEEK_POKE/README.md)
-- [Graphics](volksFORTH_Tutorial/Graphics/README.md) Command (Setting a graphics mode using the CIO OS ROM); TODO Create
-- [Setcolor](volksFORTH_Tutorial/Setcolor/README.md) Command; TODO Create
+- Graphics Command (Setting a graphics mode using the CIO OS ROM) ; TODO Create
+- Setcolor Command ; TODO Create
 - [Creating Random numbers](volksFORTH_Tutorial/Random/README.md) command
-- [Color](volksFORTH_Tutorial/Color/README.md) command; TODO Create
-- [Locate](volksFORTH_Tutorial/Locate/README.md) command; TODO Create
-- [String\_handling](volksFORTH_Tutorial/String_handling/README.md)
-- [Control\_Structures](volksFORTH_Tutorial/Control_Structures/README.md) - Loops; TODO Create
-- [Making\_decisions\_-\_IF\_etc](volksFORTH_Tutorial/Making_decisions_-_IF_etc/README.md); TODO Create
+- Color command ; TODO Create
+- Locate command ; TODO Create
+- String\_handling ; TODO Create
+- Control\_Structures - Loops ; TODO Create
+- Making\_decisions\_-\_IF\_etc ; TODO Create
