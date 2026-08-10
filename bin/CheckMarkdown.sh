@@ -27,4 +27,7 @@ then
 fi
 
 markdown-checker . -f check_broken_paths -o ${RESULT} 2>${RESULT}.log
-ls -l ${RESULT}.md
+
+if [ -f "$f" ] ; then
+	ls -l ${RESULT}.md
+fi

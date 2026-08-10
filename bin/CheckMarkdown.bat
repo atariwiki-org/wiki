@@ -7,5 +7,4 @@ set RESULT=results\CheckResult
 if exist %RESULT%.md del %RESULT%.md
 markdown-checker.exe . -f check_broken_paths -o %RESULT% 2>%RESULT%.log
 
-dir %RESULT%.md
-
+if exist  %RESULT%.md dir %RESULT%.md
