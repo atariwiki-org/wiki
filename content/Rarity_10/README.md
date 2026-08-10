@@ -1,4 +1,4 @@
-# Rarity 10 and above up to impossible![](attachments/rarity_10.png)
+# Rarity 10 and above up to impossible!
 
 This chapter is intended to provide an overview of programs that must exist but seem to be lost over the decades. If you have any hint, idea or whatever else to help us to digitize this for generations to come, please let us know.
 
