@@ -11,7 +11,7 @@ For local editing you can use any text editor.
 | OS | Tool | Comment
 |----|------|---------
 | All | [Eclipse](https://www.eclipse.org/downloads/packages/release/) with Eclipse Mylyn WikiText | Preview does not render everything correctly in 4.26 and link navigation crashes in 4.40.
-| macOS | [MacDown](https://macdown.uranusjr.com/) | 
+| macOS | [MacDown](https://macdown.uranusjr.com/) |
 
 # Large Media Files
 
@@ -53,19 +53,19 @@ This is a Java-based tool specifically written to support the AtariWiki.
 It has the following features:
 
 - Link
-  
+
     - Find broken relative file links to articles and attachments.
     - Find and list alternative paths to fix broken relative links.
     - Automatically correct paths if there is only one alternative path.
     - Update the link texts for all links pointing to an article based on the heading in the target article.
 
 - Formatting
-  
+
     - Check the presence of the correctly formatted heading `# <Title>` in every article.
     - Format tables headings and table separator lines automatically based on the required column width
 
 - Indexing
-  
+
     - Automatically generate a full table of contents page based on the folder structure.
 
 Planned features:
