@@ -25,7 +25,7 @@
 - [OS Diffs Atari 800 \<-\> Atari XL/XE Series](../Todos/OS/Atari_OS/DiffOldOs2XL/README.md)
 - [Ironman Atari - A Compilation of Advanced Atari 8-bit Programming Techniques](../Todos/Ironman_Atari/README.md) A compilation of advanced Atari 8-bit programming techniques
 - [Mode, Setcolor, Color Table](../Languages/BASIC/Atari_BASIC/Mode_Setcolor_Color_Table/README.md)
-- [Memory Map - Table\_of\_Modes\_and\_Screen\_Format](../Memory_Map/README.md#Table_of_Modes_and_Screen_Format)
+- [Memory Map - Table_of_Modes_and_Screen_Format](../Memory_Map/README.md#Table_of_Modes_and_Screen_Format)
 - [Unleash the power of Ataris CPU](../Todos/Unleash_the_power_of_Ataris_CPU/README.md)
 
 # Graphics
