@@ -1494,9 +1494,9 @@
           
         - [Kapitel 3: Arithmetik](Languages/Forth/volksFORTH/volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel3/README.md)
           
-        - [Programm-Strukturen](Languages/Forth/volksFORTH/volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel4/README.md)
+        - [Kapitel 4: Programm-Strukturen](Languages/Forth/volksFORTH/volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel4/README.md)
           
-        - [Kapitel 4: Ein-/Ausgabe in volksFORTH](Languages/Forth/volksFORTH/volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel5/README.md)
+        - [Kapitel 5: Ein-/Ausgabe in volksFORTH](Languages/Forth/volksFORTH/volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel5/README.md)
           
         - [Kapitel 6: Zeichenketten (Strings) in volksFORTH](Languages/Forth/volksFORTH/volksFORTH_Handbuch/volksFORTH_Handbuch_Kapitel6/README.md)
           

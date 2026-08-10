@@ -2,8 +2,7 @@
 
 TODO: Convert tables to MD
 
-````
-
+```
 [Differences Atari 400/800 - 1200XL - 600/800XL](#DiffOldOs2XL/)
 
 ### Page 0
@@ -629,6 +628,7 @@ The color of each pixel (4 in a line instead of the usual 8) depends on the bit 
 character "A" (code=65) would be displayed as
 
 ```
+
 00000000 BAK BAK BAK BAK
 00011000 BAK PF0 PF1 BAK
 00111100 BAK PF2 PF2 BAK compare with line 3 below
@@ -637,27 +637,29 @@ character "A" (code=65) would be displayed as
 01111110 PF0 PF2 PF2 PF1 compare with line 6 below
 01100110 PF0 PF1 PF0 PF1
 00000000 BAK BAK BAK BAK
-```
 
+```
 character "inverse A" (code=193, Bit 7 set because inverse video is on!) would be displayed as
 
 ```
+
 00000000 BAK BAK BAK BAK
 00011000 BAK PF0 PF1 BAK
 00111100 BAK PF3 PF3 BAK compare with line 3 above
 01100110 PF0 PF1 PF0 PF1
-01100110 PF0 PF1 PF0 PF1 
+01100110 PF0 PF1 PF0 PF1
 01111110 PF0 PF3 PF3 PF0 compare with line 6 above
 01100110 PF0 PF1 PF0 PF1
 00000000 BAK BAK BAK BAK
-```
 
+```
 To try this, type (works only on an ATARI XL or XE):
 
 ```
-GRAPHICS 13:? #6;"A A A":? #6;"A A A":REM the second 3 "A"s are inverse video!
-```
 
+GRAPHICS 13:? #6;"A A A":? #6;"A A A":REM the second 3 "A"s are inverse video!
+
+```
 ## ![](#attachments/GR13DEMO.png)
 
 see also: [Color topics](#Color_topics)
@@ -681,17 +683,18 @@ Ein temporärer Speicher, der vom Bildschirm-Handler genutzt wird. Hier ein Anwe
 Temporary storage locations for the screen handler. Here is an example in [Action!](#OS_Vectors)
 
 ```
+
 PROC JMP =$F2AD ()
 
 PROC Jump (CARD adr)
 
-  CARD addr=$64
-  addr=adr
-  JMP ()
+CARD addr=$64
+addr=adr
+JMP ()
 
 RETURN
-```
 
+```
 ### ALLPOT
 
 ALLPOT
@@ -1515,14 +1518,16 @@ See also:
 ### SIO-Connector
 
 ```
-     __________________________ 
-    /                          \ 
-   /   2   4   6   8   10  12   \ 
-  /                              \
- /   1   3   5   7   9   11  13   \
-/__________________________________\
-```
 
+     __________________________
+    /                          \
+
+/   2   4   6   8   10  12     
+/                                
+/   1   3   5   7   9   11  13     
+/\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\
+
+```
 ||lower row||upper row
 |1 Clock Input|2 Clock Output
 |3 Data Input|4 Ground
@@ -1541,14 +1546,16 @@ Notes:
 ### Joystick-Connector
 
 ```
-_________________________
-\                       /
- \  1   2   3   4   5  /
-  \                   /  
-   \  6   7   8   9  /
-    \_______________/ 
-```
 
+_________________________
+
+\\                       /
+\\  1   2   3   4   5  /
+\\                   /
+\\  6   7   8   9  /
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_/
+
+```
 ||lower row||upper row
 |1 Up|6 Trigger
 |2 Down|7 +5V DC
@@ -1563,13 +1570,14 @@ _________________________
 ### Monitor Connector
 
 ```
-   3 o           o 1
+
+3 o           o 1
 
     5 o         o 4
            o
            2
-```
 
+```
 5 PIN DIN 180° (DIN41524) FEMALE at the computer.
 
 ||Pin||Description
@@ -1584,15 +1592,16 @@ _________________________
 not on 400, 800, 1200XL
 
 ```
+
     7 o         o 6
 
-  3 o             o 1
+3 o             o 1
 
     5 o         o 4
            o
            2
-```
 
+```
 7 PIN DIN 'C' FEMALE at the computer.
 ||Pin||	 Description
 |1| +5V
@@ -1617,12 +1626,13 @@ Power consumption
 on all machines; "Left Cartridge" on 800
 
 ```
-A B C D E F H J K L M N P R S 
-o o o o o o o o o o o o o o o
-o o o o o o o o o o o o o o o
-1                           15 
-```
 
+A B C D E F H J K L M N P R S
+o o o o o o o o o o o o o o o
+o o o o o o o o o o o o o o o
+1                           15
+
+```
 ||upper row||lower row
 |1. \_S4 Chip Select $8000 to $9FFF |A. RD4 ROM present $8000 to $9FFF
 |2. A3 CPU Address bus line |B. GND Ground
@@ -1644,12 +1654,13 @@ o o o o o o o o o o o o o o o
 ### Right Cartridge (800 only)
 
 ```
+
 A B C D E F H J K L M N P R S
 o o o o o o o o o o o o o o o
 o o o o o o o o o o o o o o o
-1                           15 
-```
+1                           15
 
+```
 ||upper row||lower row
 |1. R/\_W CPU read/write late |A. B02,Phi2 CPU Phase 2 clock
 |2. A3 CPU Address bus line |B. GND Ground
@@ -1673,12 +1684,13 @@ o o o o o o o o o o o o o o o
 only on 130XE, 800XE and later 65XE versions
 
 ```
-  A B C D E F H 
-  o o o o o o o 
-  o o o o o o o 
-  1 2 3 4 5 6 7 
-```
 
+A B C D E F H
+o o o o o o o
+o o o o o o o
+1 2 3 4 5 6 7
+
+```
 ||upper row ||lower row
 |A. Reserved | 1. \_EXTSEL External Select
 |B. \_IRQ Interrupt request | 2. \_RST Reset output
@@ -1694,12 +1706,13 @@ only on 130XE, 800XE and later 65XE versions
 only on 600XL and 800XL
 
 ```
-1                                               49 
+
+1                                               49
 o o o o o o o o o o o o o o o o o o o o o o o o o   (upper side of PCB)
 o o o o o o o o o o o o o o o o o o o o o o o o o   (lower side of PCB)
 2                                               50
-```
 
+```
 ||upper row||lower row
 |1. GND Ground |2. \_EXTSEL External Select
 |3. A0 CPU Address bus line |4. A1 CPU Address bus line
@@ -1748,11 +1761,12 @@ see [topic\_list](#topic_list)
 Used to look up if any of the 3 console keys (START, SELECT, OPTION) has been pressed (RESET is not a console key, neither is [HELP](#HELPFG))
 
 ```
+
 START    Bit 0    PEEK(53279)=6
 SELECT   Bit 1    PEEK(53279)=5
 OPTION   Bit 2    PEEK(53279)=3
-```
 
+```
 ## Write
 
 The built in speaker clicks (only on 400/800 computers)
@@ -2883,6 +2897,7 @@ Ein Metronom-Programm aus dem De Re Atari (Seite 123) nutzt diese Speicherzelle:
 %%prettify
 
 ```
+
 5 ? " ":REM Bildschirm löschen
 6 REM Routine zum Setzen einer Metronom-Rate.
 7 REM Von M. Ekbers für Carla.
@@ -2890,14 +2905,15 @@ Ein Metronom-Programm aus dem De Re Atari (Seite 123) nutzt diese Speicherzelle:
 20 TOP=l0:FOR J=l TO TOP:NEXT J:REM Verzögerungs-Schleife
 50 IF STICK(0)=l3 THEN X=X+1:REM Nach oben = schneller
 51 IF STICK (0)=14 THEN X=X-1:REM Nach unten = langsamer
-52 IF X<l THEN X=1:REM X darf niemals kleiner als 1 oder
-53 IF X>255 THEN X=255:REM grösser als 255 sein.
+52 IF X\<l THEN X=1:REM X darf niemals kleiner als 1 oder
+53 IF X\>255 THEN X=255:REM grösser als 255 sein.
 54 REM
 56 ?"";INT(3600/X);" Schläge pro Minute "
 60 POKE 0,X:REM In Speicherstelle $0000 steht die Rate
 70 NEXT I:REM für die folgende Assembler-Routine.
--------------------------------------------------------------
-40 *=$600
+---
+
+40 \*=$600
 50 ; Metronom-Routine...benutzt $0000 zum Uebersetzen d. Rate.
 60 ;
 70 AUDF1 = $D200 Audio Frequenz-Register
@@ -2914,7 +2930,7 @@ Ein Metronom-Programm aus dem De Re Atari (Seite 123) nutzt diese Speicherzelle:
 0180 INIT
 0190 ; Setzen des Timer-Vektors
 0200 ;
-0210 LDA #CNTINT&255
+0210 LDA #CNTINT\&255
 0220 STA CDTMA2
 0230 LDA #CNTINT/256
 0240 STA CDTMA2+1
@@ -2949,11 +2965,11 @@ Ein Metronom-Programm aus dem De Re Atari (Seite 123) nutzt diese Speicherzelle:
 0530 LDA #2 Setzen von Timer 2
 0540 JSR SETVBV System-Routine zum Setzen
 0550 RTS der Timer
-0560 *=$2E2
+0560 \*=$2E2
 0570 .WORD START
 0580 .END
-```
 
+```
 /%
 
 ### LMARGN
@@ -3355,6 +3371,7 @@ In addition, in normal "legal" use (system interrupts on), shadow-registers must
 It is worth noting, that PMG is drawn by ANTIC (GTIA is fed with bytes read by ANTIC DMA), thus some registers belong to ANTIC, some to GTIA.
 
 ```
+
         org $4000
         ; to avoid blink, here should be a loop waiting for interrupt
         lda #%111110    ; obligatory, double line, no missle DMA;
@@ -3366,24 +3383,25 @@ It is worth noting, that PMG is drawn by ANTIC (GTIA is fed with bytes read by A
         lda #1          ; default is good for this example, may be skipped
         sta $26f        ; first PM then PF
         lda #%11        ; obligatory
-        sta $D01D       ; GRACTL -set both players and missles        
+        sta $D01D       ; GRACTL -set both players and missles
         lda #2          ; default is good for this example, may be skipped
         sta $D008       ; SIZEP
         lda #$2f        ; this is the color of the
         sta $2c0        ; PCOLR0, surely may be skipped.
-
+    
         ldx #7
         ; let's display 'A' letter
-show
-        lda $e108,x     ; get 'A' letter rows from char generator 
-        sta $8440,x     ; store it in PLAYER0 memory chunk.
-        dex
-        bpl show        ; do it eight times
-end
-        bne end         ; wait for eternity.
-        }}}
-```
 
+show
+lda $e108,x     ; get 'A' letter rows from char generator
+sta $8440,x     ; store it in PLAYER0 memory chunk.
+dex
+bpl show        ; do it eight times
+end
+bne end         ; wait for eternity.
+}}}
+
+```
 ### PM\_topics
 
 # Player Missile Topics
@@ -3443,11 +3461,12 @@ Read or write data from the control ports (joystick ports), depending on how the
 Example:
 
 ```
-PACTL=PACTL && %11111011 ;set Bit 2 to 0
+
+PACTL=PACTL \&\& %11111011 ;set Bit 2 to 0
 PORTA=%11110000          ;set Port 2 to output/write, Port 1 is input/read
 PACTL=PACTL %% %00000100 ;set Bit 2 to 1
-```
 
+```
 ||Bit||Function||Description||Joystick direction||Paddletrigger
 |7|PA7|Joystick Port 2 Pin 4|Right|Paddle 4 [PTRIG3](#PTRIG3)
 |6|PA6|Joystick Port 2 Pin 3|Left|Paddle 3 [PTRIG2](#PTRIG2)
@@ -3481,11 +3500,12 @@ Read or write data from the control ports (joystick ports), depending on how the
 Example:
 
 ```
-PACTL=PACTL && %11111011 ;set Bit 2 to 0
+
+PACTL=PACTL \&\& %11111011 ;set Bit 2 to 0
 PORTA=%11110000          ;set Port 2 to output/write, Port 1 is input/read
 PACTL=PACTL %% %00000100 ;set Bit 2 to 1
-```
 
+```
 ||Bit||Function||Description||Joystick direction||Paddletrigger
 |7|PA7|Joystick Port 4 Pin 4|Right|Paddle 8 [PTRIG7](#PTRIG7)
 |6|PA6|Joystick Port 4 Pin 3|Left|Paddle 7 [PTRIG6](#PTRIG6)
@@ -3862,9 +3882,10 @@ This is initially the same value as in location 740. PEEK(740) / 4 or PEEK(106) 
 You can fool the computer into thinking you have less memory than you actually have, thus reserving a relatively safe area for data (for your new character set or player/missile characters, for example) or machine language subroutines by:
 
 ```
-see also: [TRAMSZ], [MEMTOP]
-```
 
+see also: [TRAMSZ](), [MEMTOP]()
+
+```
 ### README.md
 
 ### RMARGN
@@ -4043,19 +4064,21 @@ Sets an interrupt vector or system timer vector.
 Assembler
 
 ```
+
 LDX MSB
 LDY LSB
 LDA (value see table below)
 JSR $E45C
-```
 
+```
 Action!
 
 ```
-PROC SETVBV=*$E45C(BYTE VECTOR,MSB,LSB)
-RETURN
-```
 
+PROC SETVBV=\*$E45C(BYTE VECTOR,MSB,LSB)
+RETURN
+
+```
 ||Register||Value
 |X|MSB
 |Y|LSB
@@ -4321,11 +4344,12 @@ see also: [topic\_list](#topic_list)
 767    $02FF    SSFLAG
 
 ```
+
 Value
 $00    0      screen output not stopped
 $FF    255    screen output stopped
-```
 
+```
 Set to zero by RESET and powerup.
 
 ### SSKCTL
@@ -4666,12 +4690,13 @@ Hilfsprgramm für das Reservieren von Speicherplatz:
 %%prettify
 
 ```
-10 ANZPAGE = 1 : REM ANZAHL DER ZU RESERVIERENDEN SEITEN
-20 SIZE = (PEEK(106) - ANZPAGE) * 256
-30 IF SIZE <= PEEK(144) + PEEK(145) * 256 THEN PRINT "PROGRAMM ZU GROSS!"
-40 END 
-```
 
+10 ANZPAGE = 1 : REM ANZAHL DER ZU RESERVIERENDEN SEITEN
+20 SIZE = (PEEK(106) - ANZPAGE) \* 256
+30 IF SIZE \<= PEEK(144) + PEEK(145) \* 256 THEN PRINT "PROGRAMM ZU GROSS!"
+40 END
+
+```
 /%
 
 ---
@@ -4834,24 +4859,26 @@ Attention:
 ## Example for saving and restoring the processor registers
 
 ```
-     ;we need to push to stack, first A, then X, then Y
- PHA ;push ACCU to Stack
- TXA ;transfer X to ACCU
- PHA ;push ACCU (now X) to Stack
- TYA ;transfer Y to ACCU
- PHA ;push ACCU (now Y) to Stack
-     ;
-     ;... routine goes in here ...
-     ;
-     ;now we need to pull from stack first Y, then X, then A
- PLA ;pull Y from STACK to ACCU
- TAY ;transfer ACCU to Y
- PLA ;pull X from STACK to ACCU
- TAX ;transfer ACCU to X
- PLA ;pull ACCU from STACK
- RTI ;end interrupt routine with ReTurn from Interrupt
-```
 
+     ;we need to push to stack, first A, then X, then Y
+
+PHA ;push ACCU to Stack
+TXA ;transfer X to ACCU
+PHA ;push ACCU (now X) to Stack
+TYA ;transfer Y to ACCU
+PHA ;push ACCU (now Y) to Stack
+;
+;... routine goes in here ...
+;
+;now we need to pull from stack first Y, then X, then A
+PLA ;pull Y from STACK to ACCU
+TAY ;transfer ACCU to Y
+PLA ;pull X from STACK to ACCU
+TAX ;transfer ACCU to X
+PLA ;pull ACCU from STACK
+RTI ;end interrupt routine with ReTurn from Interrupt
+
+```
 ## Example for setting your interrupt routine
 
 - Set bit 7 in the [display list](#display_list_instruction_table) line you want the interrupt to occur
@@ -4873,7 +4900,8 @@ If this location is set to a value other than zero, the ANTIC starts displaying 
 This register should not be altered while ANTIC is drawing the screen. It has to be changed during vertical blank interrupt to get good results.
 
 ```
-VSCROL=0  VSCROL=2 
+
+VSCROL=0  VSCROL=2
 ........  ..####..
 ...##...  .##..##.
 ..####..  .######.
@@ -4891,8 +4919,8 @@ VSCROL=0  VSCROL=2
 .##..##.  ........
 .##..##.  ........
 ........  ........
-```
 
+```
 If there are several consecutive lines set for vertical fine scrolling (display list instruction with bit 5 set to "1"), the last line to be scrolled has to have bit 5 set to 0, to inhibit lines "jumping" into the screen.
 
 ---
@@ -5075,4 +5103,4 @@ To activate special functions in a display line, add the value as stated below
 
 see also: [Display List Topics](#Displaylist_topics), [VDSLST](#VDSLST), [VSCROL](#VSCROL), [HSCROL](#HSCROL), [4-color-characters](#4_color_character), [Table\_of\_Modes\_and\_Screen\_Format](#Table_of_Modes_and_Screen_Format)
 
-````
+```

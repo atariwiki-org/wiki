@@ -32,7 +32,7 @@ Keine Stringvariable? - Benutze:
 - upper ; Words/Upper ; TODO Create
 - capitalitze ; Words/Capitalitze ; TODO Create
 - /string ; Words/cut-string ; TODO Create
-- -trailing ; Words/minus-trailing ; TODO Create
+- \-trailing ; Words/minus-trailing ; TODO Create
 - scan ; Words/Scan ; TODO Create
 - skip ; Words/Skip ; TODO Create
 - ?" ; Words/question-quote ; TODO Create
@@ -103,8 +103,7 @@ So kann der Anwender das übergebene Flag auswerten und die doppelt genaue Zahl 
 ### Zahlen in Strings wandeln
 
 - # ; Words/Number ; TODO Create
-- #s ; Words/number-s ; TODO Create
+- \#s ; Words/number-s ; TODO Create
 - hold ; Words/Hold ; TODO Create
 - sign ; Words/Sign ; TODO Create
-- #\> ; Words/number-greater ; TODO Create
-
+- \#\> ; Words/number-greater ; TODO Create

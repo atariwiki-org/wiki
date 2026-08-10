@@ -14,7 +14,7 @@ Copyright (C) 1986 by [Markt \& Technik Verlag AG](http://www.mut.de/).
 
 - [HAPPYDOS.atr](attachments/HAPPYDOS.atr), thanks to [Thomas Meyer](https://www.tmeyer.de/atari/happydos/index.html)
 
-````
+```
 This documentation should be accompanied by the file HAPPYDOS.ATR
 with the files DOS.SYS and HAPPYDOS.BAS (original BASIC loader
 from the magazine) on it.
@@ -206,4 +206,4 @@ Different error messages from DOS 2.0:
  ERROR 172 (Not a Happy-DOS file)
    Error when appending data to a program file in DOS 2.0 format.
    Error when using JOB on a non-Happy-DOS disk.
-````
+```

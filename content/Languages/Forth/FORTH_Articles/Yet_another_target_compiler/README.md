@@ -346,7 +346,6 @@ ability to be independent of byte order.
 ### Example Of A Simple Definition And Logged Data Types
 
 ```
-
 : 2*   dup +  ;
 
 definition       data type log

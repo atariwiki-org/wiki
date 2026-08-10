@@ -16,7 +16,7 @@ Die Zahlenkombination 52/24/52 beschreibt die maximalen Geschwindigkeiten des La
 * Kompatibilität: Unter Windows 10 und Windows 11 wird das Laufwerk in der Regel über generische Plug-and-Play-Treiber sofort als CD-Laufwerk erkannt. Für das eigentliche Brennen von Musik oder Daten ist jedoch eine separate Brennsoftware (wie z.B. das kostenlose CDBurnerXP oder ImgBurn) erforderlich. \[4\]
 * Einschränkung: Bitte beachte, dass dieses Laufwerk keine DVDs oder Blu-rays lesen oder beschreiben kann – es ist rein auf das CD-Format spezialisiert. \[4\]
 
-------------------------------
+---
 
 \[1\] [https://www.cnet.com](https://www.cnet.com/reviews/52x-24x-52x-external-cd-rw-drive-usb-2-0-1-1-review/)<br/>
 \[2\] [https://atariwiki.org](https://atariwiki.org/wiki/Wiki.jsp?page=DeviceMatrix)<br/>

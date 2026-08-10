@@ -293,17 +293,17 @@ relationals:
 
 - a=b tells if a and b are equal
 
--  a\<\>b tests to see if a and b are not equal
+- a\<\>b tests to see if a and b are not equal
 
--  a#b the same as a\<\>b
+- a#b the same as a\<\>b
 
--  a\>b is a greater than b
+- a\>b is a greater than b
 
--  a\>=b is a greater than or equal to b
+- a\>=b is a greater than or equal to b
 
--  a\<b test to see if a is less than b
+- a\<b test to see if a is less than b
 
--  a\<=b is a less than or equal to b
+- a\<=b is a less than or equal to b
 
 The are 2 more, AND and OR and I will
 cover them in the next tutorial.

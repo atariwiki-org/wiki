@@ -68,7 +68,7 @@ Thunderdome, kept by SysOp Fox-1:
 [Archive of http://www7.brinkster.com/atari/ataridl/sdsys.htm in 2003](https://web.archive.org/web/20030608092624/http://www7.brinkster.com/atari/ataridl/sdsys.htm)
 
 One source of SpartaDOS documentation is Russ Gilbert's page at:
-[Archive of http://my.en.com/~russg/ in 2004 ](https://web.archive.org/web/20040429015607/http://my.en.com/~russg//)
+[Archive of http://my.en.com/~russg/ in 2004](https://web.archive.org/web/20040429015607/http://my.en.com/~russg//)
 
 ## SpartaDOS Pro 3.3a, 3.3b, and 3.3c - 1994-
 

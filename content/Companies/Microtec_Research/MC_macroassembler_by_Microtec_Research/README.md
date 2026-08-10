@@ -10,7 +10,7 @@ There are 2 EXE files: MCASM.EXE and MCLINK.EXE
 
 ## References
 
-````
+```
 Usage: [options] [sourcefile[[ ]]
 
 Options are ("-" - disable, "+" or none - enable):
@@ -26,6 +26,6 @@ Options are ("-" - disable, "+" or none - enable):
 /Zx         - assign temporary directory (has no effect with /T-)
 /Kn         - assign COM port (1-4) for key device (default is /K1)
 /H or /?    - show this information
-````
+```
 
 Command line argument order and case are both don't care. Missing source file will be prompted.

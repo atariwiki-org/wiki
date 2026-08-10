@@ -10,7 +10,7 @@ Below are the products AtariWiki is looking for. Besides this, the worldwide com
 
 There are more than rumors about this OS type; please see here:
 
-[	Atari\_XL\_Addendum-Atari\_Home\_Computer\_System-Operating\_System\_Manual.pdf](../../media/Todos/OS/Atari_OS/attachments/Atari_XL_Addendum-Atari_Home_Computer_System-Operating_System_Manual.pdf) size: 14.8 MB
+[Atari\_XL\_Addendum-Atari\_Home\_Computer\_System-Operating\_System\_Manual.pdf](../../media/Todos/OS/Atari_OS/attachments/Atari_XL_Addendum-Atari_Home_Computer_System-Operating_System_Manual.pdf) size: 14.8 MB
 
 Page 31 of the PDF file, or page 28 of the manual itself.
 
@@ -37,7 +37,7 @@ Maybe replaced by the Atari Program Text Editor?
 
 Copyright (C) 1984 Atari, Inc. Many, many thanks to Hans Reutter for the info, Allan Bushman for the high resolution grab and Atarimania for hosting!
 
-### [Atari FutureMakers - This Is Ground Control (DX5077) ](http://www.atarimania.com/game-atari-400-800-xl-xe-futuremakers-this-is-ground-control_6420.html)
+### [Atari FutureMakers - This Is Ground Control (DX5077)](http://www.atarimania.com/game-atari-400-800-xl-xe-futuremakers-this-is-ground-control_6420.html)
 
 Copyright (C) 1984 Atari, Inc. Many, many thanks to Hans Reutter for the info, Allan Bushman for the high resolution grab and Atarimania for hosting!
 

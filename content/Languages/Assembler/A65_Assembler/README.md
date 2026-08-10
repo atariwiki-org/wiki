@@ -4,7 +4,7 @@ Copyright (C) 1984, 1986, 1989 by Charles W. Marslett
 
 All rights reserved. Permission granted to copy, modify or execute this program for noncommercial purposes only.
 
-````
+```
 A65 (A very simple 6502 assembler)
 
 The A65 assembler is modeled after the Atari MACRO Assembler (AMAC) that
@@ -132,7 +132,7 @@ $0D followed by $0A or $0A followed by $0D).  ASM5.ASM was changed.
 
 Charles Marslett
 7/4/89
-````
+```
 
 ## ATR-Images
 

@@ -36,11 +36,11 @@ Das volksFORTH verfügt über eine Reihe von Konstanten, die der besseren Lesbar
 - c/l ; TODO Create
 - l/s ; TODO Create
 - bl ; TODO Create
-- #esc ; TODO Create
-- #cr ; TODO Create
-- #lf ; TODO Create
-- #bel ; TODO Create
-- #bs ; TODO Create
+- \#esc ; TODO Create
+- \#cr ; TODO Create
+- \#lf ; TODO Create
+- \#bel ; TODO Create
+- \#bs ; TODO Create
 - standardi/o ; TODO Create
 - inputkol ; TODO Create
 - outputkol ; TODO Create
@@ -103,7 +103,7 @@ In FORTH wird man immer einen Speicherbereich benennen, in dem Zeichen und Zeich
 Dann mochte ich Ihnen mit dem Texteingabe-Puffer **TIB** einen weiteren wichtigen Speicherbereich vorstellen, der den vernünftigen Umgang mit den angeschlossenen Geräten sicherstellt. Weil die Texteingabe über die Tastatur relativ langsam vorsichgeht, werden die Zeichen hier erst in einem freien Speicherbereich, dem Pufferspeicher **TIB**, gesammelt und dann abgearbeitet.
 
 - tib ; TODO Create
-- #tib ; TODO Create
+- \#tib ; TODO Create
 - \>tob ; TODO Create
 - \>in ; TODO Create
 - pad ; TODO Create
@@ -141,4 +141,3 @@ Dann mochte ich Ihnen mit dem Texteingabe-Puffer **TIB** einen weiteren wichtige
 - ltype ; TODO Create
 - space ; TODO Create
 - spaces ; TODO Create
-
