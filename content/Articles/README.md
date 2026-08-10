@@ -192,7 +192,7 @@
 
 # Rarity 10 and above up to impossible
 
-- [Rarity 10 and above up to impossible](../Rarity_10/README.md)
+- [Rarity 10 and above up to impossible!](../Rarity_10/README.md)
 
 # Related to Atari
 

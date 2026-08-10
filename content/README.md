@@ -1796,7 +1796,7 @@
       
 - [Podcasts](Podcasts/README.md)
   
-- [Rarity 10 and above up to impossible](Rarity_10/README.md)
+- [Rarity 10 and above up to impossible!](Rarity_10/README.md)
   
 - [Services](Services/README.md)
   
