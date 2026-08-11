@@ -102,7 +102,7 @@ So kann der Anwender das übergebene Flag auswerten und die doppelt genaue Zahl 
 
 ### Zahlen in Strings wandeln
 
-- # ; Words/Number ; TODO Create
+- \# ; Words/Number ; TODO Create
 - \#s ; Words/number-s ; TODO Create
 - hold ; Words/Hold ; TODO Create
 - sign ; Words/Sign ; TODO Create
