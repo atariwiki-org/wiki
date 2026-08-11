@@ -4,7 +4,7 @@
 
 Kyan Pascal is the most advanced Pascal compiler for the Atari 8-bit computers. Kyan Pascal is also available for the Apple II.
 
-- [Kyan Pascal Examples](Kyan_Pascal_Overview/README.md).
+- [Kyan Pascal Overview](Kyan_Pascal_Overview/README.md).
 
 ## Atari Pascal
 

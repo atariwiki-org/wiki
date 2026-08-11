@@ -46,8 +46,6 @@ More manuals are available on [The Internet Archive](https://archive.org/search.
 
 ## Images
 
-![](attachments/valForth1.1-start.jpg)
-valFORTH startscreen
+- valFORTH start screen<brt>![](attachments/valForth1.1-start.jpg)
 
-![](attachments/fig-FORTH_1.4S_1.jpg)
-fig-FORTH 1.4S startscreen
+- fig-FORTH 1.4S startscreen<br>![](attachments/fig-FORTH_1.4S_1.jpg)
