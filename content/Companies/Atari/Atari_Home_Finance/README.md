@@ -1,4 +1,4 @@
-# Atari Home Finance
+# Atari Home Finance (CXL8001)
 
 with Checkbook Cartridge CXL8001 showing Personal Finance after starting: status: unclear
 
