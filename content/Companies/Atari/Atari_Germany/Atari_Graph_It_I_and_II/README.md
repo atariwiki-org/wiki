@@ -105,8 +105,11 @@ Atari Graph It TXG9517 (deutsch, 1983) alle Kassetten-Images auf einem Disk-Imag
 
 ## Handbücher
 
-Für den Bildschirm optimiertes Handbuch (englisch) als PDF-Datei (3,1 MB): [Graph\_It\_CX4109\_Screen\_Version.pdf](attachments/Graph_It_CX4109_Screen_Version.pdf)
-Für den Drucker optimiertes Handbuch (englisch) als PDF-Datei (849,6 MB): [Graph\_It\_CX4109\_Print\_Version.pdf](../../../../../media/Companies/Atari/Atari_Germany/Atari_Graph_It_I_and_II/attachments/Graph_It_CX4109_Print_Version.pdf)
+Für den Bildschirm optimiertes Handbuch (englisch, OCR) als PDF-Datei (1,7 MB):  
+[Graph\_It\_CX4109\_Screen\_Version.pdf](../../../../../media/Companies/Atari/Atari_Germany/Atari_Graph_It_I_and_II/attachments/Graph_It_CX4109–Screen–OCR.pdf)
+
+Für den Drucker optimiertes Handbuch (englisch, OCR) als PDF-Datei (20,3 MB):  
+[Graph\_It\_CX4109\_Print\_Version.pdf](../../../../../media/Companies/Atari/Atari_Germany/Atari_Graph_It_I_and_II/attachments/Graph_It_CX4109–Print–OCR.pdf)
 
 ## Source Codes
 

@@ -56,9 +56,9 @@ Atari Statistics I CX4103 (englisch) (Complete Cassette Import) Disketten-Image:
 
 ### Handbücher
 
-Für den Bildschirm optimiertes Handbuch (englisch) als PDF-Datei (2,6 MB): [Statistics\_I\_CX4103\_Screen\_Version.pdf](attachments/Statistics_I_CX4103_Screen_Version.pdf)
+Für den Bildschirm optimiertes Handbuch (englisch, OCR) als PDF-Datei (1,5 MB): [Statistics\_I\_CX4103\_Screen\_Version.pdf](../../../../media/Companies/Atari/Atari_Statistics_I/attachments/Statistics_I_CX4103–Screen–OCR.pdf)
 
-Für den Drucker optimiertes Handbuch (englisch) als PDF-Datei (592,8 MB): [Statistics\_I\_CX4103\_Print\_Version.pdf](../../../../media/Companies/Atari/Atari_Statistics_I/attachments/Statistics_I_CX4103_Print_Version.pdf)
+Für den Drucker optimiertes Handbuch (englisch, OCR) als PDF-Datei (9,1 MB): [Statistics\_I\_CX4103\_Print\_Version.pdf](../../../../media/Companies/Atari/Atari_Statistics_I/attachments/Statistics_I_CX4103–Print–OCR.pdf)
 
 ### Bilder
 
