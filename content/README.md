@@ -366,7 +366,7 @@
         
     - [Atari Home Accounting System](Companies/Atari/Atari_Home_Accounting_System/README.md)
       
-    - [Atari Home Finance](Companies/Atari/Atari_Home_Finance/README.md)
+    - [Atari Home Finance (CXL8001)](Companies/Atari/Atari_Home_Finance/README.md)
       
     - [Atari Investment Analysis Series](Companies/Atari/Atari_Investment_Analysis_Series/README.md)
       
@@ -1308,7 +1308,7 @@
       
       - [TURBAN - TURboBAsic Nifty](Languages/BASIC/Turbo-BASIC_XL/TURBAN/README.md)
         
-      - [Examples](Languages/BASIC/Turbo-BASIC_XL/Turbo-BASIC_XL_Examples/README.md)
+      - [Turbo-BASCI XL Examples](Languages/BASIC/Turbo-BASIC_XL/Turbo-BASIC_XL_Examples/README.md)
         
         - [Multi Zoom Master](Languages/BASIC/Turbo-BASIC_XL/Turbo-BASIC_XL_Examples/Multi_Zoom_Master/README.md)
           
@@ -1520,57 +1520,57 @@
           
         - [Words](Languages/Forth/volksFORTH/volksFORTH_Language/Words/README.md)
           
-          - [Absolute](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Absolute/README.md)
+          - [ABS "abs" ( n -- u )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Absolute/README.md)
             
           - [Divide](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Divide/README.md)
             
-          - [Divide-mod](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Divide-mod/README.md)
+          - [/mod "divide-mod" ( n1 n2 -- n3 n4 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Divide-mod/README.md)
             
-          - [Even](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Even/README.md)
+          - [EVEN "even" ( u1 -- u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Even/README.md)
             
-          - [False](Languages/Forth/volksFORTH/volksFORTH_Language/Words/False/README.md)
+          - [false  ( -- 0 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/False/README.md)
             
-          - [Maximum](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Maximum/README.md)
+          - [MAX "maximum" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Maximum/README.md)
             
-          - [Minimum](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Minimum/README.md)
+          - [MIN "minimum" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Minimum/README.md)
             
-          - [Minus](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Minus/README.md)
+          - [- "minus" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Minus/README.md)
             
-          - [Mod](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Mod/README.md)
+          - [MOD "modulo" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Mod/README.md)
             
-          - [Negate](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Negate/README.md)
+          - [NEGATE "negate" ( n1 -- n2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Negate/README.md)
             
-          - [Not](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Not/README.md)
+          - [NOT "not" ( n1 -- n2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Not/README.md)
             
-          - [One-minus](Languages/Forth/volksFORTH/volksFORTH_Language/Words/One-minus/README.md)
+          - [1- "one-minus" ( n1 \| u1 -- n2 \| u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/One-minus/README.md)
             
-          - [One-plus](Languages/Forth/volksFORTH/volksFORTH_Language/Words/One-plus/README.md)
+          - [1+ “one-plus” ( n1 \| u1 -- n2 \| u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/One-plus/README.md)
             
-          - [Plus](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Plus/README.md)
+          - [+ "plus" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Plus/README.md)
             
-          - [Three-plus](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Three-plus/README.md)
+          - [3+ "three-plus" ( n1 \| u1 -- n2 \| u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Three-plus/README.md)
             
-          - [Times](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Times/README.md)
+          - [\* "times" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Times/README.md)
             
-          - [Times-divide](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Times-divide/README.md)
+          - [\*/ "times-divide" ( n1 n2 n3 -- n4 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Times-divide/README.md)
             
-          - [Times-divide-mod](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Times-divide-mod/README.md)
+          - [\*/mod "times-divide-mod" ( n1 n2 n3 -- n4 n5 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Times-divide-mod/README.md)
             
-          - [True](Languages/Forth/volksFORTH/volksFORTH_Language/Words/True/README.md)
+          - [true  ( -- -1 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/True/README.md)
             
-          - [Two-divide](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-divide/README.md)
+          - [2/ "two-divide" or "two-slash" ( x1 -- x2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-divide/README.md)
             
-          - [Two-minus](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-minus/README.md)
+          - [2- "two-minus" ( n1 \| u1 -- n2 \| u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-minus/README.md)
             
-          - [Two-plus](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-plus/README.md)
+          - [2+ "two-plus" ( n1 \| u1 -- n2 \| u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-plus/README.md)
             
-          - [Two-times](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-times/README.md)
+          - [2\* "two-times" ( x1 -- x2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-times/README.md)
             
-          - [U-divide-mod](Languages/Forth/volksFORTH/volksFORTH_Language/Words/U-divide-mod/README.md)
+          - [u/mod "u-divide-mod" ( u1 u2 -- u3 u4 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/U-divide-mod/README.md)
             
-          - [U-maximum](Languages/Forth/volksFORTH/volksFORTH_Language/Words/U-maximum/README.md)
+          - [umax "unsinged-maximum" ( u1 u2 -- u3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/U-maximum/README.md)
             
-          - [U-minimum](Languages/Forth/volksFORTH/volksFORTH_Language/Words/U-minimum/README.md)
+          - [UMIN "unsigned-minimum" ( u1 u2 -- u3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/U-minimum/README.md)
             
       - [volksFORTH Tutorial](Languages/Forth/volksFORTH/volksFORTH_Tutorial/README.md)
         
@@ -1628,7 +1628,7 @@
         
       - [Inter-LISP commands](Languages/Lisp/INTER-LISP65/INTER-LISP65-Commands/README.md)
         
-      - [Examples](Languages/Lisp/INTER-LISP65/INTER-LISP65_Examples/README.md)
+      - [INTER-LIST65 Examples](Languages/Lisp/INTER-LISP65/INTER-LISP65_Examples/README.md)
         
         - [Towers of Hanoi](Languages/Lisp/INTER-LISP65/INTER-LISP65_Examples/Towers_of_Hanoi/README.md)
           
@@ -1652,7 +1652,7 @@
       
     - [Draper Pascal](Languages/Pascal/Draper_Pascal_Overview/README.md)
       
-    - [Kyan Pascal Examples](Languages/Pascal/Kyan_Pascal_Overview/README.md)
+    - [Kyan Pascal Overview](Languages/Pascal/Kyan_Pascal_Overview/README.md)
       
       - [Kyan Pascal Examples](Languages/Pascal/Kyan_Pascal_Overview/Kyan_Pascal_Examples/README.md)
         

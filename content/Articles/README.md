@@ -214,7 +214,7 @@
 
 - [Atari Calculator (CX8102)](../Companies/Atari/Atari_Calculator/README.md)
 - [Atari Graph It I \& II (CX4109 (Englisch), TXG9517 (deutsch))](../Companies/Atari/Atari_Germany/Atari_Graph_It_I_and_II/README.md)
-- [Atari Home Finance](../Companies/Atari/Atari_Home_Finance/README.md)
+- [Atari Home Finance (CXL8001)](../Companies/Atari/Atari_Home_Finance/README.md)
 - [Atari Investment Analysis Series](../Companies/Atari/Atari_Investment_Analysis_Series/README.md)
   - [Bond Analysis CX8106](../Companies/Atari/Bond_Analysis/README.md)
   - [Mortgage \& Loan Analysis (CX4115)](../Companies/Atari/Mortgage_and_Loan_Analysis/README.md)

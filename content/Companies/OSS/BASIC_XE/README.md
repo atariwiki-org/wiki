@@ -42,14 +42,14 @@ Thank you so much Tomasz 'Kr0tki' Krasuski for the info in building the runtime,
 
 ## ATR-Image
 
-- [BASIC\_XE\_Extension\_Disk.atr](attachments/BASIC_XE_Extension_Disk.atr) ; original BASIC XE Extension Disk, works with with version 4.1
+- [BASIC\_XE\_Extension\_Disk.atr](attachments/BASIC_XE_Extension_Disk.atr) ; original BASIC XE Extension Disk, works with version 4.1
 - [BASIC\_XE\_4.2\_Extension\_Disk\_with\_DOS\_XL\_v2.30p.atr](attachments/BASIC_XE_4.2_Extension_Disk_with_DOS_XL_v2.30p.atr) ; BASIC XE Extension Disk, works with with version 4.2 ; thank you so much drac030 from AtariAge, your work is very much appreciated! :-)
 - [Some example programs](attachments/BXL_BXE_programs.zip) ; thanks to Charlie Chaplin from AtariAge. :-)
 - [Basic XE Detokenizer Ver. 1.11 (4-6-89)](attachments/Basic_XE_Detokenizer_Ver._1.11_4-6-89_by_Psycho.atr)
 
 ## Manuals
 
-- [OSS-Basic XE Reference Manual](https://data.atariwiki.org/DOC/OSS_BASIC_XE_Reference_Manual.pdf) 39.0 MB, OCR, onesided, incredible quality made by GoodByteXL. Thank you so much GoodByteXL, you really make the best PDF-files available. Please go ahead with your outstanding work! :-)))
+- [OSS-Basic XE Reference Manual](https://data.atariwiki.org/DOC/OSS_BASIC_XE_Reference_Manual.pdf) 39.0 MB, OCR, one-sided, incredible quality made by GoodByteXL. Thank you so muc, GoodByteXL; you really make the best PDF files available. Please go ahead with your outstanding work! :-)))
 - [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ## XEP80 driver for BASIC XE
@@ -63,8 +63,6 @@ Thank you so much Tomasz 'Kr0tki' Krasuski for the info in building the runtime,
 
 ## Images
 
-![](attachments/BASIC_XE_4.2.jpg)
-OSS BASIC XE 4.2 - startscreen
+- OSS BASIC XE 4.2 - start screen<br>![](attachments/BASIC_XE_4.2.jpg)
 
-![](attachments/BasicXE.png)
-OSS BASIC XE 4.2 - manual cover
+- OSS BASIC XE 4.2 - manual cover<br>![](attachments/BasicXE.png)
