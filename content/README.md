@@ -1518,60 +1518,8 @@
           
         - [VolksForth StackOperations](Languages/Forth/volksFORTH/volksFORTH_Language/Stack_Operations/README.md)
           
-        - [Words](Languages/Forth/volksFORTH/volksFORTH_Language/Words/README.md)
+        - [VolksFORTH Words](Languages/Forth/volksFORTH/volksFORTH_Language/Words/README.md)
           
-          - [ABS "abs" ( n -- u )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Absolute/README.md)
-            
-          - [Divide](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Divide/README.md)
-            
-          - [/mod "divide-mod" ( n1 n2 -- n3 n4 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Divide-mod/README.md)
-            
-          - [EVEN "even" ( u1 -- u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Even/README.md)
-            
-          - [false  ( -- 0 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/False/README.md)
-            
-          - [MAX "maximum" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Maximum/README.md)
-            
-          - [MIN "minimum" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Minimum/README.md)
-            
-          - [- "minus" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Minus/README.md)
-            
-          - [MOD "modulo" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Mod/README.md)
-            
-          - [NEGATE "negate" ( n1 -- n2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Negate/README.md)
-            
-          - [NOT "not" ( n1 -- n2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Not/README.md)
-            
-          - [1- "one-minus" ( n1 \| u1 -- n2 \| u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/One-minus/README.md)
-            
-          - [1+ “one-plus” ( n1 \| u1 -- n2 \| u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/One-plus/README.md)
-            
-          - [+ "plus" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Plus/README.md)
-            
-          - [3+ "three-plus" ( n1 \| u1 -- n2 \| u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Three-plus/README.md)
-            
-          - [\* "times" ( n1 n2 -- n3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Times/README.md)
-            
-          - [\*/ "times-divide" ( n1 n2 n3 -- n4 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Times-divide/README.md)
-            
-          - [\*/mod "times-divide-mod" ( n1 n2 n3 -- n4 n5 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Times-divide-mod/README.md)
-            
-          - [true  ( -- -1 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/True/README.md)
-            
-          - [2/ "two-divide" or "two-slash" ( x1 -- x2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-divide/README.md)
-            
-          - [2- "two-minus" ( n1 \| u1 -- n2 \| u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-minus/README.md)
-            
-          - [2+ "two-plus" ( n1 \| u1 -- n2 \| u2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-plus/README.md)
-            
-          - [2\* "two-times" ( x1 -- x2 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/Two-times/README.md)
-            
-          - [u/mod "u-divide-mod" ( u1 u2 -- u3 u4 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/U-divide-mod/README.md)
-            
-          - [umax "unsinged-maximum" ( u1 u2 -- u3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/U-maximum/README.md)
-            
-          - [UMIN "unsigned-minimum" ( u1 u2 -- u3 )](Languages/Forth/volksFORTH/volksFORTH_Language/Words/U-minimum/README.md)
-            
       - [volksFORTH Tutorial](Languages/Forth/volksFORTH/volksFORTH_Tutorial/README.md)
         
         - [Accessing Memory (PEEK and POKE)](Languages/Forth/volksFORTH/volksFORTH_Tutorial/Accessing_Memory/README.md)
@@ -1778,6 +1726,10 @@
       
   - [Peter Dell](People/Peter_Dell/README.md)
     
+  - [Peter Prodehl (Dr. Irata)](People/Peter_Prodehl/README.md)
+    
+    - [Addition](People/Peter_Prodehl/Addition/README.md)
+      
   - [Roland Wassenberg](People/Roland_Wassenberg/README.md)
     
     - [Atari Calculator at VCFe 14 (2013 Munich)](People/Roland_Wassenberg/AtariCalculator-VCFe14/README.md)
