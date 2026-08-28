@@ -2,7 +2,7 @@
 
 Die AtariSprachbox ist eine für den Atari angepasste Version der "VoiceBox" von "TheAlienGroup" die es auch für andere Computersysteme gab. Sie wird über ein SIO-Kabel an den Atari angeschlossen und über ein Netzteil mit Strom versorgt.
 
-Siehe auch [Sprachbox-XL-XE](../../../../Raetz_Eberle/Sprachbox-XL-XE/README.md).
+Siehe auch [Sprachbox XL/XE](../../../../Raetz_Eberle/Sprachbox-XL-XE/README.md).
 
 ## ATR-Image
 
