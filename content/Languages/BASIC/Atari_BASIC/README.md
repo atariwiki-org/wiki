@@ -104,7 +104,6 @@ and the resulting rom file can be found in the same directory.
 - [ATARI BASIC-Handbuch für Selbststudium und Praxis-BOB ALBRECHT, Le Roy Finkel, JERALD BROWN](https://data.atariwiki.org/DOC/ATARI_BASIC-Handbuch_fuer_Selbststudium_und_Praxis-BOB_ALBRECHT,_Le_Roy_Finkel,_JERALD_BROWN.pdf) ; Größe: 44,8 MB ; OCR ; 214 Doppelseiten
 - [ATARI BASIC Leitfaden](attachments/ATARI_BASIC_Leitfaden.pdf) ; Größe: 5,2 MB ; 11 Seiten
 - [Atari BASIC - Quick Reference Guide - Gilbert Held](../../../../media/Companies/Atari/Atari_BASIC/attachments/Atari_BASIC_Quick_Reference_Guide-Gilbert_Held.pdf) ; size: 10.4 MB ; 8 pages
-- [OSS Quick reference card for Atari BASIC](attachments/oss-quick-reference-card-BASIC-a-plus.pdf) ; size: 3.4 MB ; 8 pages ; thank you so much Bill Lange for finding this very rare cards. :-)
 - [Atari BASIC Referenz-Karten](attachments/Atari_BASIC_Referenz-Karten.pdf) ; Größe: 3,1 MB ; OCR ; 271 Seiten
 - [Atari BASIC Source Book (2006)](attachments/Atari_BASIC_Source_Book_2006.pdf) ; size: 10.4 MB ; OCR ; 80 pages ; converted 2006 by Andreas Bertelmann for ABBUC ; thank you Andreas
 - [Monkey\_Wrench\_-\_Manual.pdf](http://data.atariwiki.org/DOC/Monkey_Wrench_-_Manual.pdf) ; size: 67.5 MB ; thanks to [serious computerist](http://seriouscomputerist.altervista.org/pages/utility/utility.atari.htm), we really appreciate! :-)
