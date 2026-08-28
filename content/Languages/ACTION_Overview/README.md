@@ -68,7 +68,6 @@ There is a clever trick in this code. Note that {{RTCLOK}} is defined as a {{BYT
 - [ACTION! BUG SHEET #3 - part 1 to 6](Action_Bugsheet/README.md)
 - [Fix for the Bugs in divide in ACTION!](ACTION_Articles/Fix_for_the_Bugs_in_divide_in_ACTION/README.md)
 - [Fix for PrintF Routine](Fix_for_Bug_in_PrintF/README.md)
-- [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ### Tutorials
 

@@ -12,7 +12,7 @@ Frog is a game from the Antic magazine, published in February 1988
 
 ## Ad
 
-- [Antic\_Feb\_88\_Reardoor.pdf](attachments/Antic_Feb_88_Reardoor.pdf) ; size: 1.4 MB ; Thank you very much GoodByteXL!
+- [Antic\_Feb\_88\_Reardoor.pdf](../../../../Companies/Antic_Publishing/Antic_Magazine/Antic_Magazine_1988_02/attachments/Antic_Magazine_1988-02-Frog-Reardoor.pdf) ; size: 1.4 MB ; Thank you very much GoodByteXL!
 
 ## Source Code
 

@@ -16,7 +16,7 @@ Copyright (C) 1986 E. Reuss \& Compy-Shop
 
 ## Handbook
 
-- [BiboAssembler Handbuch (German)](attachments/biboass.pdf)
+- [BiboAssembler Handbuch (German)](attachments/BIBO-Assembler.pdf)
 - [BiboAssembler Handbuch (German, HTML)](https://hintermueller.de/biboassembler.html)
 
 The BiboAssembler is a fast and compact Assembler for the Atari 8-Bit. The Assembler is available as File- and as Module-Version (Cartridge). The File-Version includes also a small Machine-Language Monitor.
@@ -135,7 +135,7 @@ biboass_build002.atr freshly build from source and installed on XDOS 2.42N. Runs
 
 ## Manual
 
-- [BIBO Assembler manual](attachments/BIBO_Assembler.pdf) ; size: 296 KB ; BIBO-ASSEMBLER HANDBUCH
+- [BIBO Assembler manual](attachments/BIBO-Assembler.pdf) ; size: 296 KB ; BIBO-ASSEMBLER HANDBUCH
 
 ## Accessories
 

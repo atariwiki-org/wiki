@@ -32,6 +32,12 @@
         
       - [Transzendente Funktionen in Atari BASIC](Companies/ABBUC/WASEO/Transzendente_Funktionen/README.md)
         
+  - [Antic Publishing](Companies/Antic_Publishing/README.md)
+    
+    - [Antic Magazine](Companies/Antic_Publishing/Antic_Magazine/README.md)
+      
+      - [Antic Magazine Issue February 1988](Companies/Antic_Publishing/Antic_Magazine/Antic_Magazine_1988_02/README.md)
+        
   - [Astra Systems Inc., Santa Ana, California.](Companies/Astra_Systems/README.md)
     
     - [ASTRA 2001](Companies/Astra_Systems/ASTRA_2001/README.md)
