@@ -289,7 +289,7 @@
 - [Atari Bildschirmtext (BTX)](../Todos/ATARI_Bildschirmtext_BTX/README.md)
 - [ATARI TELELINK II](../Companies/Atari/ATARI_TELELINK_II/README.md)
 - [ATARI TELELINK I](../Companies/Atari/ATARI_TELELINK_I/README.md)
-- [The Communicator II (CX488)](../Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/ATARI_The_Communicator_II/README.md)
+- [The Communicator II (CX488)](../Companies/Atari/ATARI_The_Communicator_II/README.md)
 - [The Learning Phone (RX8080)](../Companies/Atari/The_Learning_Phone/README.md)
 - [AUSTRO.PHONE](../Companies/AUSTRO.COM/AUSTRO.PHONE/README.md)
 

@@ -104,8 +104,6 @@
           
         - [An Invitation to Programming 1 (CX4101)](Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_CX-4101/README.md)
           
-        - [The Communicator II (CX488)](Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/ATARI_The_Communicator_II/README.md)
-          
       - [Atari Compilation (TX 9043)](Companies/Atari/Atari_Corporation_UK/Atari_Compilation/README.md)
         
       - [Black Lamp (TX 9049)](Companies/Atari/Atari_Corporation_UK/Black_Lamp/README.md)
@@ -415,6 +413,8 @@
     - [ATARI TELELINK I](Companies/Atari/ATARI_TELELINK_I/README.md)
       
     - [ATARI TELELINK II](Companies/Atari/ATARI_TELELINK_II/README.md)
+      
+    - [The Communicator II (CX488)](Companies/Atari/ATARI_The_Communicator_II/README.md)
       
     - [The Dow Jones Investment Evaluator (CX412)](Companies/Atari/Atari_The_Dow_Jones_Investment_Evaluator/README.md)
       
