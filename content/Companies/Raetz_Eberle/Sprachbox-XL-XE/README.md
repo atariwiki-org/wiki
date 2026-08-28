@@ -20,8 +20,7 @@ Giga-Danke an Frank Asselheim für die Konservierung dieser sehr seltenen Softwa
 ## Literatur
 
 - [Bedienungsanleitung zur Sprachbox](attachments/Anleitung_Sprachbox_XL_XE.pdf) ; Größe: 3,3 MB ; Copyright (C) Verlag Werner Rätz, Jörg D. Lange, Andreas Binner und Harald Schönfeld
-- [Artikel aus dem ATARI Magazin 4/1988](attachments/Sprachbox.pdf) Größe: 883 KB ; Artikel aus dem "ATARI Magazin" Nr. 4/1988, Seiten 84 bis 86
-- [Artikel aus dem ATARI Magazin 4/1988 mit Schaltplan](attachments/Atari_Magazin_4-88-Sprachbox2-Abbuc115.pdf) ; Größe: 1,7 MB ; ; Artikel aus dem "ATARI Magazin" Nr. 4/1988, Seiten 84 bis 89 mit Schaltplan; Danke an den [ABBUC](http://www.abbuc.de) für das Sichern des Artikels in der Ausgabe #115. Ohne die Sicherung, insbesondere des Schaltplans, wäre die Sprachbox warscheinlich verloren gegangen. Vielen Dank!
+- [Artikel aus dem ATARI Magazin 4/1988 mit Schaltplan](attachments/Atari_Magazin_4-88-Sprachbox-Abbuc_115.pdf) ; Größe: 1,7 MB ; ; Artikel aus dem "ATARI Magazin" Nr. 4/1988, Seiten 84 bis 89 mit Schaltplan; Danke an den [ABBUC](http://www.abbuc.de) für das Sichern des Artikels in der Ausgabe #115. Ohne die Sicherung, insbesondere des Schaltplans, wäre die Sprachbox warscheinlich verloren gegangen. Vielen Dank!
 
 ## Schaltplan
 
