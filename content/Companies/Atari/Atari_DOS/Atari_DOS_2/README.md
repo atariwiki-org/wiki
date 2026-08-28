@@ -18,8 +18,6 @@ There were many variations with DOS 2. Here are just the most used ones.
 - [360KB.atr](attachments/360KB.atr) ; blank formatted disk with double density and double sided: 360 KB (Atari XF 551 only)
 - [SSDD128\_DOS\_XE.atr](attachments/SSDD128_DOS_XE.atr) ; blank formatted disk with double density and single sided: 180 KB, with 128 byte header for Atari DOS XE
 - [SSDD256\_DOS\_XE.atr](attachments/SSDD256_DOS_XE.atr) ; blank formatted disk with double density and single sided: 180 KB, with 256 byte header for Atari DOS XE
-- [720K\_MyDOS-2.atr](attachments/720K_MyDOS-2.atr) ; blank formatted disk for MyDOS: 720 KB
-- [720K\_SpartaDOS.atr](attachments/720K_SpartaDOS.atr) ; blank formatted disk SpartaDOS: 720 KB
 
 ## Manuals
 

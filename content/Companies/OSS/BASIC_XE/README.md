@@ -50,7 +50,6 @@ Thank you so much Tomasz 'Kr0tki' Krasuski for the info in building the runtime,
 ## Manuals
 
 - [OSS-Basic XE Reference Manual](https://data.atariwiki.org/DOC/OSS_BASIC_XE_Reference_Manual.pdf) 39.0 MB, OCR, one-sided, incredible quality made by GoodByteXL. Thank you so muc, GoodByteXL; you really make the best PDF files available. Please go ahead with your outstanding work! :-)))
-- [Optimized Systems Software, Inc. - SOFTWARE LICENSE AGREEMENT](attachments/Optimized_Systems_Software_Software_License_Agreement.pdf) ; thanks to Atarimania
 
 ## XEP80 driver for BASIC XE
 

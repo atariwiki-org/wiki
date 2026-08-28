@@ -809,7 +809,6 @@ Atari Basic Kurs (deutsch): Teil 1 und 2 sind vorhanden, Teil 3 wurde leider nie
 ### Pilot
 
 - [Atari Pilot](https://atariwiki.org/wiki/attach/Pilot/Atari_PILOT_source_code.txt)
-- [Atari Pilot II or Super Pilot](attachments/p2mads.txt)
 
 ### Quick
 
