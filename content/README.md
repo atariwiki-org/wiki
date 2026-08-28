@@ -1816,8 +1816,6 @@
     
   - [Bank Switching (Bankumschaltung)](Todos/Bank_Switching/README.md)
     
-  - [BASIC Code](Todos/BASIC_Code/README.md)
-    
   - [BASIC USR Machine Language Call Simulation for ACTION](Todos/BASIC_USR_Machine_Language_Call_Simulation_for_ACTION/README.md)
     
   - [Bitwise AND, OR, XOR and NOT for BASIC (USR Call)](Todos/Bitwise_AND_OR_XOR_and_NOT/README.md)

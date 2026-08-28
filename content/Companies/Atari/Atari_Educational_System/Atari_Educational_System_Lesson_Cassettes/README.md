@@ -69,7 +69,7 @@ Popular Science, January 1983, page 99
 
 ## Examples
 
-![](attachments/Basic_Electricity_CX6016_.jpg)
+![](../../Basic_Electricity_CX6016/attachments/Basic_Electricity_CX6016.jpg)
 Basic Electricity CX6016
 
 ![](attachments/Atari_Educational_System_Lesson-Counseling_Procedures_CX6006.jpg)
