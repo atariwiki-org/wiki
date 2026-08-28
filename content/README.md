@@ -40,6 +40,8 @@
     
     - [AMOEBA 3.0](Companies/Atari/AMOEBA/README.md)
       
+    - [An Invitation to Programming (CX-4101)](Companies/Atari/An_Invitation_to_Programming/README.md)
+      
     - [Atari 400-800 Stand Alone System Test](Companies/Atari/Atari_400-800_Stand_Alone_System_Test/README.md)
       
     - [Atari Assembler Editor](Companies/Atari/Atari_Assembler_Editor/README.md)
@@ -101,8 +103,6 @@
         - [An Invitation to Programming 2 - Writing Programs one and two (CX4106)](Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_2_CX4106/README.md)
           
         - [An Invitation to Programming 3-Introduction to Sound and Graphics (CX4117)](Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_3_CX4117/README.md)
-          
-        - [An Invitation to Programming 1 (CX4101)](Companies/Atari/Atari_Corporation_UK/An_Invitation_To_Programming/An_Invitation_to_Programming_CX-4101/README.md)
           
       - [Atari Compilation (TX 9043)](Companies/Atari/Atari_Corporation_UK/Atari_Compilation/README.md)
         

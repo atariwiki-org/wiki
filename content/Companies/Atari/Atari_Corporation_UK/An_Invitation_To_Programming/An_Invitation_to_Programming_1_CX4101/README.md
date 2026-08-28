@@ -6,19 +6,15 @@
 
 [An\_Invitation\_to\_Programming\_Side\_2\_Lessons\_4-6.atr](attachments/An_Invitation_to_Programming_Side_2_Lessons_4-6.atr) Lessons 4-6 disk
 
-[Programmieren\_leicht\_gemacht\_TXG4110\_Basic.atr](attachments/Programmieren_leicht_gemacht_TXG4110_Basic.atr) Programmieren leicht gemacht-Lernen Sie BASIC mit Dagmar Berghoff-TXG4110
-
 ## Manuals
 
-[An\_Invitation\_to\_Programming\_1-Screen\_Version.pdf](attachments/An_Invitation_to_Programming_1-Screen_Version.pdf) (897 KB) (C) 1979 Atari
-
-[An\_Invitation\_to\_Programming\_CX4101.pdf](attachments/An_Invitation_to_Programming_CX4101.pdf) (573 KB) (C) 1985 Atari
+- [An\_Invitation\_to\_Programming\_CX4101.pdf](attachments/An_Invitation_to_Programming_CX4101.pdf) (573 KB) (C) 1985 Atari
 
 ## FLAC-Images
 
-- [http://data.atariwiki.org/FLAC/IP1/An\_Invitation\_to\_Programming-CX4101-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/IP1/An_Invitation_to_Programming-CX4101-Cassette_A-Side_1.flac) ; size: 176.0 MB
+- [CX4101\_A\_Side\_1.flac](../../../../../../media/Companies/Atari/Atari_Corporation_UK/An_Invitation_to_Programming/An_Invitation_to_Programming_CX-4101/attachments/CX4101_A_Side_1.flac) (179 MB - FLAC)
 
-- [http://data.atariwiki.org/FLAC/IP1/An\_Invitation\_to\_Programming-CX4101-Cassette\_A-Side\_2.flac](http://data.atariwiki.org/FLAC/IP1/An_Invitation_to_Programming-CX4101-Cassette_A-Side_2.flac) ; size: 142.1 MB
+- [CX4101\_A\_Side\_2.flac](../../../../../../media/Companies/Atari/Atari_Corporation_UK/An_Invitation_to_Programming/An_Invitation_to_Programming_CX-4101/attachments/CX4101_A_Side_2.flac) (137 MB - FLAC)
 
 ## Box-Pictures
 
@@ -38,4 +34,3 @@ Ohne die folgenden Personen wäre dieses Projekt nicht möglich gewesen, ihnen g
 - Benjamin Daniel Smith
 - Stefan Meyer
 - Carsten Strotmann
-- Mr. Bacardi
