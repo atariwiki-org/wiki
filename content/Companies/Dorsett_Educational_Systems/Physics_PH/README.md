@@ -64,8 +64,6 @@ Tracks (size in sum: 1.46 GB):
 
 ## Images
 
-![](attachments/phA_.jpg)
-Dorsett Atari Physics - cassettes with uneven numbers
+- Dorsett Atari Physics - cassettes with uneven numbers<br>![](attachments/phA_.jpg)
 
-![](attachments/phB_.jpg)
-Dorsett Atari Physics - cassettes with even numbers
+- Dorsett Atari Physics - cassettes with even numbers<br>![](attachments/phB_.jpg)

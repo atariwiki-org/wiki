@@ -60,8 +60,6 @@ Tracks (size in sum: 765.4 MB):
 
 ## Images
 
-![](attachments/mgA_.jpg)
-Dorsett Atari Mathematics (Geometry) - cassettes with uneven numbers
+- Dorsett Atari Mathematics (Geometry) - cassettes with uneven numbers<br>![](attachments/mgA_.jpg)
 
-![](attachments/mgB_.jpg)
-Dorsett Atari Mathematics (Geometry) - cassettes with even numbers
+- Dorsett Atari Mathematics (Geometry) - cassettes with even numbers<br>![](attachments/mgB_.jpg)

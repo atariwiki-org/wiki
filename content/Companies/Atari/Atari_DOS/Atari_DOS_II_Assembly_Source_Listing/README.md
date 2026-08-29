@@ -73,8 +73,6 @@ DISK OPERATING SYSTEM (DOS) 19/08/80
 
 ## Images
 
-![](attachments/Atari_DOS_II_Assembly_Source_Listing_3.jpg)
-Atari DOS II 2.0S Assembly Source Listing - Cover 1
+- Atari DOS II 2.0S Assembly Source Listing - Cover 1<br>![](attachments/Atari_DOS_II_Assembly_Source_Listing_3.jpg)
 
-![](attachments/Atari_DOS_II_Assembly_Source_Listing_2.jpg)
-Atari DOS II 2.0S Assembly Source Listing - Cover 2
+- Atari DOS II 2.0S Assembly Source Listing - Cover 2<br>![](attachments/Atari_DOS_II_Assembly_Source_Listing_2.jpg)

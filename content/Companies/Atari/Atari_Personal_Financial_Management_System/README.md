@@ -41,130 +41,91 @@ Atari Personal Finance Management System - Instruction Manual Cover
 
 ## Atari Personal Finance Management System CX406 box images
 
-![](attachments/Front.jpg)
-CX406 binder front 1  ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com
+- CX406 binder front 1  ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com<br>![](attachments/Front.jpg)
 
-![](attachments/Binder_7.jpg)
-CX406 binder front 2
+- CX406 binder front 2<br>![](attachments/Binder_7.jpg)
 
-![](attachments/Binder_1.jpg)
-CX406 binder front 3
+- CX406 binder front 3<br>![](attachments/Binder_1.jpg)
 
-![](attachments/Back3.jpg)
-CX406 binder back 1 ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com
+- CX406 binder back 1 ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com<br>![](attachments/Back3.jpg)
 
-![](attachments/Back_2.jpg)
-CX406 binder back 2
+- CX406 binder back 2<br>![](attachments/Back_2.jpg)
 
-![](attachments/Side.jpg)
-CX406 binder side view
+- CX406 binder side view<br>![](attachments/Side.jpg)
 
-![](attachments/Content.jpg)
-CX406 binder cover ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com
+- CX406 binder cover ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com<br>![](attachments/Content.jpg)
 
-![](attachments/Seperators_2.jpg)
-CX406 binder - seperators
+- CX406 binder - seperators<br>![](attachments/Seperators_2.jpg)
 
-![](attachments/Disks.jpg)
-CX406 Diskette Holder ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com
+- CX406 Diskette Holder ; Giga thanks goes to Curt Vendel from: www.atarimuseum.com<br>![](attachments/Disks.jpg)
 
-![](attachments/CX8113.jpg)
-P.F.M.S. System Diskette I (Model CX8113)
+- P.F.M.S. System Diskette I (Model CX8113)<br>![](attachments/CX8113.jpg)
 
-![](attachments/CX8114.jpg)
-P.F.M.S. System Diskette II (Model CX8114)
+- P.F.M.S. System Diskette II (Model CX8114)<br>![](attachments/CX8114.jpg)
 
 ## Atari Personal Finance Management System CX406 menu images
 
-![](attachments/1-Start.jpg)
-P.F.M.S. Startscreen
+- P.F.M.S. Startscreen<br>![](attachments/1-Start.jpg)
 
-![](attachments/2-Main_Menu.jpg)
-P.F.M.S. Main Menu
+- P.F.M.S. Main Menu<br>![](attachments/2-Main_Menu.jpg)
 
-![](attachments/2-Main_Menu__.jpg)
-P.F.M.S. Main Menu with location of the modules on the two system diskettes
+- P.F.M.S. Main Menu with location of the modules on the two system diskettes<br>![](attachments/2-Main_Menu__.jpg)
 
-![](attachments/3-Note.jpg)
-P.F.M.S. Note
+- P.F.M.S. Note<br>![](attachments/3-Note.jpg)
 
-![](attachments/4-Insert_the_new_data_diskette.jpg)
-P.F.M.S. Insert the new data diskette
+- P.F.M.S. Insert the new data diskette<br>![](attachments/4-Insert_the_new_data_diskette.jpg)
 
-![](attachments/5-Insert_the_data_diskette.jpg)
-P.F.M.S. Insert the data diskette
+- P.F.M.S. Insert the data diskette<br>![](attachments/5-Insert_the_data_diskette.jpg)
 
-![](attachments/6-Insert_the_other_system_diskette.jpg)
-P.F.M.S. Insert the other system diskette
+- P.F.M.S. Insert the other system diskette<br>![](attachments/6-Insert_the_other_system_diskette.jpg)
 
-![](attachments/7-Record_Keeper_Functions.jpg)
-P.F.M.S. Record Keeper Functions
+- P.F.M.S. Record Keeper Functions<br>![](attachments/7-Record_Keeper_Functions.jpg)
 
-![](attachments/8-Budget_Manager_Menu.jpg)
-P.F.M.S. Budget Manager Menu
+- P.F.M.S. Budget Manager Menu<br>![](attachments/8-Budget_Manager_Menu.jpg)
 
-![](attachments/9-Checkbook_Balancer.jpg)
-P.F.M.S. Checkbook Balancer
+- P.F.M.S. Checkbook Balancer<br>![](attachments/9-Checkbook_Balancer.jpg)
 
-![](attachments/Check.jpg)
-P.F.M.S. Check
+- P.F.M.S. Check<br>![](attachments/Check.jpg)
 
-![](attachments/10-Checkbook_Balancer_Menu.jpg)
-P.F.M.S. Checkbook Balancer Menu
+- P.F.M.S. Checkbook Balancer Menu<br>![](attachments/10-Checkbook_Balancer_Menu.jpg)
 
-![](attachments/11-Statement_Balance.jpg)
-P.F.M.S. Statement Balance
+- P.F.M.S. Statement Balance<br>![](attachments/11-Statement_Balance.jpg)
 
-![](attachments/12-Budget_Analyzer_Menu.jpg)
-P.F.M.S. Budget Analyzer Menu
+- P.F.M.S. Budget Analyzer Menu<br>![](attachments/12-Budget_Analyzer_Menu.jpg)
 
-![](attachments/13-Forecaster_Method_Menu.jpg)
-P.F.M.S. Forecaster Method Menu
+- P.F.M.S. Forecaster Method Menu<br>![](attachments/13-Forecaster_Method_Menu.jpg)
 
-![](attachments/14-End_of_Personal_Financial_Management_System.jpg)
-P.F.M.S. End of Personal Financial Management System
+- P.F.M.S. End of Personal Financial Management System<br>![](attachments/14-End_of_Personal_Financial_Management_System.jpg)
 
 ## Atari Personal Finance Management System CX406 advertising images
 
 From Atari FAQ 1980: January:
 ...Personal Finance (never shipped as introduced; possibly eventually shipped as: Personal Financial Management System). Also, list prices for the 400 and 800 packages increased to US$630 and US$1,080 (up from US$550 and US$1,000)
 
-![](attachments/CXL4012-Atari_Personal_Finance_CXL4012_Cartridge.jpg)
-Personal Finance: CXL4012 ; estimated as an cartridge before July 1980
+- Personal Finance: CXL4012 ; estimated as an cartridge before July 1980<br>![](attachments/CXL4012-Atari_Personal_Finance_CXL4012_Cartridge.jpg)
 
-![](attachments/CXL4012-Missile_Command_Cartridge.jpg)
-CXL4012 cartridge was Missile Command for real later in time
+- CXL4012 cartridge was Missile Command for real later in time<br>![](attachments/CXL4012-Missile_Command_Cartridge.jpg)
 
 ![](attachments/Advertise_2.jpg)
-![](attachments/Advertise_3.jpg)
-P.F.M.S. advertising image 1 - 11/1981
+- P.F.M.S. advertising image 1 - 11/1981<br>![](attachments/Advertise_3.jpg)
 
-![](attachments/Mid_1982-3.jpg)
-P.F.M.S. advertising image 2 - mid 1982
+- P.F.M.S. advertising image 2 - mid 1982<br>![](attachments/Mid_1982-3.jpg)
 
-![](attachments/Advertise_4.jpg)
-P.F.M.S. advertising image 3 - first quarter 1983
+- P.F.M.S. advertising image 3 - first quarter 1983<br>![](attachments/Advertise_4.jpg)
 
-![](attachments/Advertise_6.jpg)
-P.F.M.S. advertising image 4
+- P.F.M.S. advertising image 4<br>![](attachments/Advertise_6.jpg)
 
-![](attachments/Advertise_1.jpg)
-P.F.M.S. Example
+- P.F.M.S. Example<br>![](attachments/Advertise_1.jpg)
 
-![](attachments/MACE_Newsletter_Feb_1982_0022.jpg)
-ATARI Personal Financial Management System review in the February 1982 M.A.C.E. Newsletter, page 23
+- ATARI Personal Financial Management System review in the February 1982 M.A.C.E. Newsletter, page 23<br>![](attachments/MACE_Newsletter_Feb_1982_0022.jpg)
 
-![](attachments/MACE_Newsletter_Feb_1982_0023.jpg)
-ATARI Personal Financial Management System review in the February 1982 M.A.C.E. Newsletter, page 24
+- ATARI Personal Financial Management System review in the February 1982 M.A.C.E. Newsletter, page 24<br>![](attachments/MACE_Newsletter_Feb_1982_0023.jpg)
 
-![](attachments/AtariPersonalFinanceRecall.png)
-ATARI Personal Financial Management System recall in the August 1982 M.A.C.E. Newsletter
+- ATARI Personal Financial Management System recall in the August 1982 M.A.C.E. Newsletter<br>![](attachments/AtariPersonalFinanceRecall.png)
 
-![](attachments/Atari-8bit-ad.jpg)
-ATARI Personal Financial Management System ad from 1982
+- ATARI Personal Financial Management System ad from 1982<br>![](attachments/Atari-8bit-ad.jpg)
 
-![](attachments/home-manager-kit.png)
-ATARI Personal Financial Management System as part of The Home Manager Kit
+- ATARI Personal Financial Management System as part of The Home Manager Kit<br>![](attachments/home-manager-kit.png)
 
 ## Thanks
 

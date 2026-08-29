@@ -85,5 +85,4 @@ Bob, we are so deep in your debt. Thank you so much again. :-)
 
 ## Image
 
-![](attachments/BASIC_XL.png)
-OSS BASIC XL - manual cover
+- OSS BASIC XL - manual cover<br>![](attachments/BASIC_XL.png)

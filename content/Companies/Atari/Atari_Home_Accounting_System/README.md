@@ -6,8 +6,7 @@ In 2018 we found evidence, thanks to Bill Lange, that this package, which is the
 
 ## Picture
 
-![](attachments/Atari_Home_Accounting_System.jpg)
-[Atari Home Accounting System introduced in InfoWorld from 10/19/1981](https://books.google.de/books?id=Gj0EAAAAMBAJ&pg=PA37&lpg=PA37&dq=Atari+Home+Accounting+System&source=bl&ots=Yb0lxfzFtB&sig=riKw6-YyKVlovhim-pywBjUhGH4&hl=de&sa=X&ved=0ahUKEwihs_bg3rrRAhUXdFAKHT4xCf8Q6AEIIzAB#v=onepage&q=Atari%20Home%20Accounting%20System&f=false)
+- [Atari Home Accounting System introduced in InfoWorld from 10/19/1981](https://books.google.de/books?id=Gj0EAAAAMBAJ&pg=PA37&lpg=PA37&dq=Atari+Home+Accounting+System&source=bl&ots=Yb0lxfzFtB&sig=riKw6-YyKVlovhim-pywBjUhGH4&hl=de&sa=X&ved=0ahUKEwihs_bg3rrRAhUXdFAKHT4xCf8Q6AEIIzAB#v=onepage&q=Atari%20Home%20Accounting%20System&f=false)<br>![](attachments/Atari_Home_Accounting_System.jpg)
 
 ## Reference
 

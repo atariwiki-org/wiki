@@ -15,29 +15,20 @@ This two disk program, Family Cash Flow, Family Budget, will help you itemize an
 
 ## Images
 
-![](attachments/Family_Finances.jpg)
-Family Finances I (Cash Flow) Program-Data Diskette CX8141 (Basic)
+- Family Finances I (Cash Flow) Program-Data Diskette CX8141 (Basic)<br>![](attachments/Family_Finances.jpg)
 
-![](attachments/Family_Budgets_1.jpg)
-Family Finances II (Budget) Program-Data Diskette CX8142 (Basic)
+- Family Finances II (Budget) Program-Data Diskette CX8142 (Basic)<br>![](attachments/Family_Budgets_1.jpg)
 
-![](attachments/Atari_Family_Finances_manual.jpg)
-Family Finances manual
+- Family Finances manual<br>![](attachments/Atari_Family_Finances_manual.jpg)
 
-![](attachments/Family_Finances_1.jpg)
-Family Finances box cover
+- Family Finances box cover<br>![](attachments/Family_Finances_1.jpg)
 
-![](attachments/Family_Finances_2.jpg)
-Family Finances box content
+- Family Finances box content<br>![](attachments/Family_Finances_2.jpg)
 
-![](attachments/Family_Finances_II_Budget_Program-Data_Diskette_CX8142.jpg)
-Family Finances I (Cash Flow) Program-Data Diskette CX8141
+- Family Finances I (Cash Flow) Program-Data Diskette CX8141<br>![](attachments/Family_Finances_II_Budget_Program-Data_Diskette_CX8142.jpg)
 
-![](attachments/Family_Finances_I_Cash_Flow_Program-Data_Diskette_CX8141.jpg)
-Family Finances II (Budget) Program-Data Diskette CX8142
+- Family Finances II (Budget) Program-Data Diskette CX8142<br>![](attachments/Family_Finances_I_Cash_Flow_Program-Data_Diskette_CX8141.jpg)
 
-![](attachments/Family_Finances_Ad.jpg)
-Family Finances advertisement
+- Family Finances advertisement<br>![](attachments/Family_Finances_Ad.jpg)
 
-![](attachments/Family_Finances_replaces_PFMS.jpg)
-Family Finances should replace [Atari Personal Financial Management System (P.F.M.S.) CX406](../Atari_Personal_Financial_Management_System/README.md) ; compare for yourself
+- Family Finances should replace [Atari Personal Financial Management System (P.F.M.S.) CX406](../Atari_Personal_Financial_Management_System/README.md) ; compare for yourself<br>![](attachments/Family_Finances_replaces_PFMS.jpg)

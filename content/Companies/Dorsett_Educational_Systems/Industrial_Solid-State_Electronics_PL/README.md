@@ -62,8 +62,6 @@ Tracks (size in sum: 1.87 GB):
 
 ## Images
 
-![](attachments/plA_.jpg)
-Dorsett Atari Industrial Solid-State Electronics - cassettes with uneven numbers
+- Dorsett Atari Industrial Solid-State Electronics - cassettes with uneven numbers<br>![](attachments/plA_.jpg)
 
-![](attachments/plB_.jpg)
-Dorsett Atari Industrial Solid-State Electronics - cassettes with even numbers
+- Dorsett Atari Industrial Solid-State Electronics - cassettes with even numbers<br>![](attachments/plB_.jpg)

@@ -7,26 +7,18 @@
 
 ## Bilder
 
-![](attachments/Cover.jpg)
-Artikelverwaltung - Box Cover
+- Artikelverwaltung - Box Cover<br>![](attachments/Cover.jpg)
 
-![](attachments/Artikelverwaltung1.jpg)
-Artikelverwaltung - Bildschirmfoto 1
+- Artikelverwaltung - Bildschirmfoto 1<br>![](attachments/Artikelverwaltung1.jpg)
 
-![](attachments/Artikelverwaltung2.jpg)
-Artikelverwaltung - Bildschirmfoto 2
+- Artikelverwaltung - Bildschirmfoto 2<br>![](attachments/Artikelverwaltung2.jpg)
 
-![](attachments/Artikelverwaltung3.jpg)
-Artikelverwaltung - Bildschirmfoto 3
+- Artikelverwaltung - Bildschirmfoto 3<br>![](attachments/Artikelverwaltung3.jpg)
 
-![](attachments/Artikelverwaltung4.jpg)
-Artikelverwaltung - Bildschirmfoto 4
+- Artikelverwaltung - Bildschirmfoto 4<br>![](attachments/Artikelverwaltung4.jpg)
 
-![](attachments/Artikelverwaltung5.jpg)
-Artikelverwaltung - Bildschirmfoto 5
+- Artikelverwaltung - Bildschirmfoto 5<br>![](attachments/Artikelverwaltung5.jpg)
 
-![](attachments/Artikelverwaltung6.jpg)
-Artikelverwaltung - Bildschirmfoto 6
+- Artikelverwaltung - Bildschirmfoto 6<br>![](attachments/Artikelverwaltung6.jpg)
 
-![](attachments/Artikelverwaltung7.jpg)
-Artikelverwaltung - Bildschirmfoto 7
+- Artikelverwaltung - Bildschirmfoto 7<br>![](attachments/Artikelverwaltung7.jpg)

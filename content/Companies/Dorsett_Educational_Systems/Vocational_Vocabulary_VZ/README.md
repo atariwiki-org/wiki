@@ -62,8 +62,6 @@ Tracks (size in sum: 932.5 MB):
 
 ## Images
 
-![](attachments/vzA_.jpg)
-Dorsett Atari Vocational Vocabulary VZ - cassettes with uneven numbers
+- Dorsett Atari Vocational Vocabulary VZ - cassettes with uneven numbers<br>![](attachments/vzA_.jpg)
 
-![](attachments/vzB_.jpg)
-Dorsett Atari Vocational Vocabulary VZ - cassettes with even numbers
+- Dorsett Atari Vocational Vocabulary VZ - cassettes with even numbers<br>![](attachments/vzB_.jpg)

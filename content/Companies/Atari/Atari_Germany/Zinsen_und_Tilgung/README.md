@@ -15,71 +15,50 @@ Atari Zinsen und Tilgung ist die deutsche Version von [Mortgage \& Loan Analysis
 
 ## Box-Bilder
 
-![](attachments/Box-front.jpg)
-Zinsen und Tilgung TXG5114 - Vorderseite der Box
+- Zinsen und Tilgung TXG5114 - Vorderseite der Box<br>![](attachments/Box-front.jpg)
 
-![](attachments/Box-back.jpg)
-Zinsen und Tilgung TXG5114 - Rückseite der Box
+- Zinsen und Tilgung TXG5114 - Rückseite der Box<br>![](attachments/Box-back.jpg)
 
 ## Bilder
 
-![](attachments/ATARI.jpg)
-Zinsen und Tilgung TXG5114 - erstes Bild beim Starten
+- Zinsen und Tilgung TXG5114 - erstes Bild beim Starten<br>![](attachments/ATARI.jpg)
 
-![](attachments/Control_Data_Corporation.jpg)
-Zinsen und Tilgung TXG5114 - zweites Bild beim Starten: Hinweis auf die Control Data Corporation (Entwickler des Programms)
+- Zinsen und Tilgung TXG5114 - zweites Bild beim Starten: Hinweis auf die Control Data Corporation (Entwickler des Programms)<br>![](attachments/Control_Data_Corporation.jpg)
 
-![](attachments/Zinsen_und_Tilgung1.jpg)
-Zinsen und Tilgung TXG5114 - drittes Bild beim Starten
+- Zinsen und Tilgung TXG5114 - drittes Bild beim Starten<br>![](attachments/Zinsen_und_Tilgung1.jpg)
 
 ## Bildschirmfotos
 
-![](attachments/Zinsen_und_Tilgung_00.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 01
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 01<br>![](attachments/Zinsen_und_Tilgung_00.jpg)
 
-![](attachments/Zinsen_und_Tilgung_01.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 02
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 02<br>![](attachments/Zinsen_und_Tilgung_01.jpg)
 
-![](attachments/Zinsen_und_Tilgung_02.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 03
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 03<br>![](attachments/Zinsen_und_Tilgung_02.jpg)
 
-![](attachments/Zinsen_und_Tilgung_03.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 04
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 04<br>![](attachments/Zinsen_und_Tilgung_03.jpg)
 
-![](attachments/Zinsen_und_Tilgung_04.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 05
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 05<br>![](attachments/Zinsen_und_Tilgung_04.jpg)
 
-![](attachments/Zinsen_und_Tilgung_05.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 06
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 06<br>![](attachments/Zinsen_und_Tilgung_05.jpg)
 
-![](attachments/Zinsen_und_Tilgung_06.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 07
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 07<br>![](attachments/Zinsen_und_Tilgung_06.jpg)
 
-![](attachments/Zinsen_und_Tilgung_07.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 08
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 08<br>![](attachments/Zinsen_und_Tilgung_07.jpg)
 
-![](attachments/Zinsen_und_Tilgung_08.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 09
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 09<br>![](attachments/Zinsen_und_Tilgung_08.jpg)
 
-![](attachments/Zinsen_und_Tilgung_09.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 10
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 10<br>![](attachments/Zinsen_und_Tilgung_09.jpg)
 
-![](attachments/Zinsen_und_Tilgung_10.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 11
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 11<br>![](attachments/Zinsen_und_Tilgung_10.jpg)
 
-![](attachments/Zinsen_und_Tilgung_11.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 12
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 12<br>![](attachments/Zinsen_und_Tilgung_11.jpg)
 
-![](attachments/Zinsen_und_Tilgung_12.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 13
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 13<br>![](attachments/Zinsen_und_Tilgung_12.jpg)
 
-![](attachments/Zinsen_und_Tilgung_13.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 14
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 14<br>![](attachments/Zinsen_und_Tilgung_13.jpg)
 
-![](attachments/Zinsen_und_Tilgung_14.jpg)
-Zinsen und Tilgung TXG5114 - Bildschirmfoto 15
+- Zinsen und Tilgung TXG5114 - Bildschirmfoto 15<br>![](attachments/Zinsen_und_Tilgung_14.jpg)
 
 ## CDC-Logo
 
-![](attachments/CDC-Logo.png)
-Control Data Corporation - Logo ; Copyright (C) 1980
+- Control Data Corporation - Logo ; Copyright (C) 1980<br>![](attachments/CDC-Logo.png)

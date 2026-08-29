@@ -52,8 +52,7 @@ Die vorliegende Version 1.0 des Programms macht z. Z. noch die Eingabe im Winkel
 
 Ich habe das Programm mit großer Sorgfalt geschrieben sowie nach bestem Wissen und Gewissen umgesetzt, dennoch kann ich nicht ausschließen, dass es noch Bugs hat und möchte es daher erst einmal zur Diskussion stellen. Ganz dringend ist darauf zu achten, dass der Definitions- und Wertebereich jeweils eingehalten wird. Dazu habe ich eine [PDF-Datei](attachments/Transzendent.pdf) erstellt, die ziemlich lang ist, jedoch dem Anwender einen guten Überblick verschafft.
 
-![](attachments/Transzendent.png)
-Transzendente Funktionen für Atari BASIC
+- Transzendente Funktionen für Atari BASIC<br>![](attachments/Transzendent.png)
 
 Für insbesondere negative Kritik hinsichtlich Fehler wäre ich sehr dankbar, um ggf. eine Version 1.1 zu erstellen, sonst bleibt es zunächst bei der Version 1.0. Wie heisst es doch so schön? Wissenschaft ist immer Irrtum auf dem letzten Stand. ;-)
 

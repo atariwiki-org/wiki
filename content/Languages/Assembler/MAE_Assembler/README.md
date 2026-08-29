@@ -35,5 +35,4 @@ Two pass 6502/65816 assembler with integrated editor/monitor. Extra RAM supporte
 
 ## Pictures
 
-![](attachments/MAE-Start.jpg)
-MAE Assembler 1.1 start screen
+- MAE Assembler 1.1 start screen<br>![](attachments/MAE-Start.jpg)

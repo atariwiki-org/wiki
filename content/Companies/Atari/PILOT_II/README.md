@@ -7,8 +7,7 @@ AED80043 48K Diskette; Copyright (C) 1982 Atari, Inc.
 The PILOT II, or Super PILOT, was never shipped or released to the general public. It was used in the Atari summer camps for educational purposes and delivered on diskette only. Therefore, we deeply thank Kay Savetz again for his outstanding help. Kay, we owe you so much; endless thanks for bringing this lost-to-be-believed language to light. You will never be forgotten! :-)))
 
 For the normal PILOT commands, please see [PILOT](../PILOT/README.md), here, we would just like to introduce the new commands in PILOT II:
-![](attachments/PILOT_II-v44-1983-05-26-Help.jpg)
-PILOT II commands of version 44
+- PILOT II commands of version 44<br>![](attachments/PILOT_II-v44-1983-05-26-Help.jpg)
 
 ## Source Code
 

@@ -1192,11 +1192,9 @@ Greetings, your FloppyDoc
 
 # Diagrams
 
-![](attachments/Atari_XEP80_diagram1.jpg)
-Atari XEP80 diagram 1 ; thank you so much Jerzy Sobola for your help! Greatly appreciated!
+- Atari XEP80 diagram 1 ; thank you so much Jerzy Sobola for your help! Greatly appreciated!<br>![](attachments/Atari_XEP80_diagram1.jpg)
 
-![](attachments/Atari_XEP80_diagram2.gif)
-Atari XEP80 diagram 2
+- Atari XEP80 diagram 2<br>![](attachments/Atari_XEP80_diagram2.gif)
 
 # References
 

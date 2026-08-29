@@ -62,8 +62,6 @@ Tracks (size in sum: 1.52 GB):
 
 ## Images
 
-![](attachments/pdA_.jpg)
-Dorsett Atari Digital Electronics - cassettes with uneven numbers
+- Dorsett Atari Digital Electronics - cassettes with uneven numbers<br>![](attachments/pdA_.jpg)
 
-![](attachments/pdB_.jpg)
-Dorsett Atari Digital Electronics - cassettes with even numbers
+- Dorsett Atari Digital Electronics - cassettes with even numbers<br>![](attachments/pdB_.jpg)

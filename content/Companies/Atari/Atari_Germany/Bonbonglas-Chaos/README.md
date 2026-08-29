@@ -6,8 +6,6 @@ Aus der Serie: "Spielend lernen mit Atari" ist dies die einzige noch fehlende So
 
 ## Bilder
 
-![](attachments/bonbonglas_chaos_k7_1.jpg)
-Bonbonglas-Chaos DXG 5706 bzw. TXG 9506 - Box Vorderansicht - Danke an Atarimania für die Bilder :-)
+- Bonbonglas-Chaos DXG 5706 bzw. TXG 9506 - Box Vorderansicht - Danke an Atarimania für die Bilder :-)<br>![](attachments/bonbonglas_chaos_k7_1.jpg)
 
-![](attachments/bonbonglas_chaos_k7_2.jpg)
-Bonbonglas-Chaos DXG 5706 bzw. TXG 9506 - Box Rückansicht - Danke an Atarimania für die Bilder :-)
+- Bonbonglas-Chaos DXG 5706 bzw. TXG 9506 - Box Rückansicht - Danke an Atarimania für die Bilder :-)<br>![](attachments/bonbonglas_chaos_k7_2.jpg)

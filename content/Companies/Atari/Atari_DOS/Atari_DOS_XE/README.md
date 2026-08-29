@@ -21,5 +21,4 @@ Copyright (C) Atari 1988.
 
 ## Pictures
 
-![](attachments/XF551_under_DOS_XE.jpg)
-Atari XF551 under DOS XE
+- Atari XF551 under DOS XE<br>![](attachments/XF551_under_DOS_XE.jpg)

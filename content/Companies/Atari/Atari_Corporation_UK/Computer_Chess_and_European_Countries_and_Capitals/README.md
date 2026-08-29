@@ -6,8 +6,7 @@ This tape is a compilation of Computer Chess and European Countries and Capitals
 
 ## Cover
 
-![](attachments/Chess_European_countries_cass_AtariUK.jpg)
-Black Lamp cover
+- Black Lamp cover<br>![](attachments/Chess_European_countries_cass_AtariUK.jpg)
 
 ## CAS Images
 
@@ -16,29 +15,21 @@ Side 2: European Countries and Capitals [European\_Countries\_and\_Capitals\_ACC
 
 ## Manual
 
-![](attachments/Chess_European_countries_instructions.jpg)
-Computer Chess - European Countries and Capitals manual
+- Computer Chess - European Countries and Capitals manual<br>![](attachments/Chess_European_countries_instructions.jpg)
 
 ## Media pictures
 
-![](attachments/chess_a.jpg)
-Side A Chess
-![](attachments/eur_countries_b.jpg)
-Side B European Countries and Capitals
+- Side A Chess<br>![](attachments/chess_a.jpg)
+- Side B European Countries and Capitals<br>![](attachments/eur_countries_b.jpg)
 
 ## Screenshots
 
-![](attachments/Chess_screenshot1.jpg)
-Computer Chess - screenshot 1
+- Computer Chess - screenshot 1<br>![](attachments/Chess_screenshot1.jpg)
 
-![](attachments/Chess_screenshot2.jpg)
-Computer Chess - screenshot 2
+- Computer Chess - screenshot 2<br>![](attachments/Chess_screenshot2.jpg)
 
-![](attachments/eur_countries_screenshot1.jpg)
-European Countries and Capitals - screenshot 1
+- European Countries and Capitals - screenshot 1<br>![](attachments/eur_countries_screenshot1.jpg)
 
-![](attachments/eur_countries_screenshot2.jpg)
-European Countries and Capitals - screenshot 2
+- European Countries and Capitals - screenshot 2<br>![](attachments/eur_countries_screenshot2.jpg)
 
-![](attachments/eur_countries_screenshot3.jpg)
-European Countries and Capitals - screenshot 3
+- European Countries and Capitals - screenshot 3<br>![](attachments/eur_countries_screenshot3.jpg)

@@ -35,8 +35,6 @@ Leider haben wir derzeit kein Handbuch von AUSTRO.DOS, insbesondere kein Origina
 
 ## Bilder
 
-![](attachments/AUSTRO.DOS_3.14.jpg)
-AUSTRO.DOS - Startbildschirm von Version 3.14
+- AUSTRO.DOS - Startbildschirm von Version 3.14<br>![](attachments/AUSTRO.DOS_3.14.jpg)
 
-![](attachments/AUSTRO.DOS_3.14_Menu.jpg)
-AUSTRO.DOS - Hilfsmenu von Version 3.14
+- AUSTRO.DOS - Hilfsmenu von Version 3.14<br>![](attachments/AUSTRO.DOS_3.14_Menu.jpg)

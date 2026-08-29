@@ -62,8 +62,6 @@ Tracks (size in sum: 1.8 GB):
 
 ## Images
 
-![](attachments/soA_.jpg)
-Dorsett Atari Basic Sociology - cassettes with uneven numbers
+- Dorsett Atari Basic Sociology - cassettes with uneven numbers<br>![](attachments/soA_.jpg)
 
-![](attachments/soB_.jpg)
-Dorsett Atari Basic Sociology - cassettes with even numbers
+- Dorsett Atari Basic Sociology - cassettes with even numbers<br>![](attachments/soB_.jpg)

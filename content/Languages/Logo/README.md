@@ -2,13 +2,11 @@
 
 ## Start Screen
 
-![](attachments/Atari_LOGO_1983_LCSI.jpg)
-Atari LOGO (C) 1983 LCSI
+- Atari LOGO (C) 1983 LCSI<br>![](attachments/Atari_LOGO_1983_LCSI.jpg)
 
 ## ROM-Images
 
-![](attachments/Atari_LOGO.gif)
-Atari LOGO RX8032 (C) 1983 Logo Computer Systems, Inc. (LCSI), All Rights Reserved
+- Atari LOGO RX8032 (C) 1983 Logo Computer Systems, Inc. (LCSI), All Rights Reserved<br>![](attachments/Atari_LOGO.gif)
 
 - [Atari\_LOGO.rom](attachments/Atari_LOGO.rom)
 
@@ -46,7 +44,5 @@ Atari LOGO RX8032 (C) 1983 Logo Computer Systems, Inc. (LCSI), All Rights Reserv
 
 ## Box Pictures
 
-![](attachments/Atari_LOGO-Box-Front.jpg)
-Box Atari LOGO front
-![](attachments/Atari_LOGO-Box-Back.jpg)
-Box Atari LOGO back
+- Box Atari LOGO front<br>![](attachments/Atari_LOGO-Box-Front.jpg)
+- Box Atari LOGO back<br>![](attachments/Atari_LOGO-Box-Back.jpg)

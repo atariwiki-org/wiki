@@ -62,8 +62,6 @@ Tracks (size in sum: 1.18 GB):
 
 ## Images
 
-![](attachments/uesA_.jpg)
-Dorsett Atari Spanish-English U-ES - cassettes with uneven numbers
+- Dorsett Atari Spanish-English U-ES - cassettes with uneven numbers<br>![](attachments/uesA_.jpg)
 
-![](attachments/uesB_.jpg)
-Dorsett Atari Spanish-English U-ES - cassettes with even numbers
+- Dorsett Atari Spanish-English U-ES - cassettes with even numbers<br>![](attachments/uesB_.jpg)

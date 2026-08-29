@@ -18,17 +18,13 @@ First sold C compiler by OSS. This compiler was used to compile itself! First tr
 
 ### Pictures
 
-![](attachments/TINY-C_.jpg)
-OSS TINY-C+ Version 1.1 program startscreen
+- OSS TINY-C+ Version 1.1 program startscreen<br>![](attachments/TINY-C_.jpg)
 
-![](attachments/DIR.jpg)
-OSS TINY-C+ Version 1.1 directory of program disk
+- OSS TINY-C+ Version 1.1 directory of program disk<br>![](attachments/DIR.jpg)
 
-![](attachments/tiny-C_Title.jpg)
-OSS tiny-c manual cover
+- OSS tiny-c manual cover<br>![](attachments/tiny-C_Title.jpg)
 
-![](attachments/tiny-c.jpg)
-OSS tiny-c ad
+- OSS tiny-c ad<br>![](attachments/tiny-c.jpg)
 
 ## OSS C/65 Copyright (C) 1982 OSS, Inc.
 
@@ -52,8 +48,7 @@ C programming language for the Atari. A subset of C, C/65 only generated assembl
 
 ### Picture
 
-![](attachments/c65-front.png)
-OSS C/65 Cover
+- OSS C/65 Cover<br>![](attachments/c65-front.png)
 
 ## Deep Blue C
 

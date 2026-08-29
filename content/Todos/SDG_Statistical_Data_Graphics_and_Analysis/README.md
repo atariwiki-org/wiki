@@ -16,17 +16,12 @@ Gigantisches Statistik-Paket für den Atari. Es nicht zu kennen, ist eine Bildun
 
 ## Pictures
 
-![](attachments/SDG.jpg)
-SDG-Logo
+- SDG-Logo<br>![](attachments/SDG.jpg)
 
-![](attachments/Annexes.jpg)
-Annexes from SDG
+- Annexes from SDG<br>![](attachments/Annexes.jpg)
 
-![](attachments/Formula.jpg)
-Used formulas in SDG
+- Used formulas in SDG<br>![](attachments/Formula.jpg)
 
-![](attachments/Notation.jpg)
-Notations in SDG
+- Notations in SDG<br>![](attachments/Notation.jpg)
 
-![](attachments/Regression.jpg)
-Regression in SDG
+- Regression in SDG<br>![](attachments/Regression.jpg)

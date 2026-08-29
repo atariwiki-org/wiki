@@ -19,41 +19,29 @@ Anyway, as an owner of an orignal copy of VisiCalc, we are free to publish our o
 
 ## Pictures
 
-![](attachments/Visicalc.jpg)
-Visicalc - box cover from 1981
+- Visicalc - box cover from 1981<br>![](attachments/Visicalc.jpg)
 
-![](attachments/Science3.jpg)
-Typical spreadsheet from Visicalc with a lot of basic functions
+- Typical spreadsheet from Visicalc with a lot of basic functions<br>![](attachments/Science3.jpg)
 
-![](attachments/LOOKUP.jpg)
-Typical spreadsheet from Visicalc with the LOOKUP function
+- Typical spreadsheet from Visicalc with the LOOKUP function<br>![](attachments/LOOKUP.jpg)
 
-![](attachments/NPV.jpg)
-Typical spreadsheet from Visicalc with the NPV function
+- Typical spreadsheet from Visicalc with the NPV function<br>![](attachments/NPV.jpg)
 
-![](attachments/Linear.jpg)
-Typical spreadsheet from Visicalc with a linear function and split windows
+- Typical spreadsheet from Visicalc with a linear function and split windows<br>![](attachments/Linear.jpg)
 
-![](attachments/LN.jpg)
-Typical spreadsheet from Visicalc with a logarithmic function and split windows
+- Typical spreadsheet from Visicalc with a logarithmic function and split windows<br>![](attachments/LN.jpg)
 
-![](attachments/EXP.jpg)
-Typical spreadsheet from Visicalc with an exponential function and split windows
+- Typical spreadsheet from Visicalc with an exponential function and split windows<br>![](attachments/EXP.jpg)
 
-![](attachments/SIN1.jpg)
-Typical spreadsheet from Visicalc with a sine function and split windows 1
+- Typical spreadsheet from Visicalc with a sine function and split windows 1<br>![](attachments/SIN1.jpg)
 
-![](attachments/SIN2.jpg)
-Typical spreadsheet from Visicalc with a sine function and split windows 2 ; please take into account that negative values from column B are not shown in column C
+- Typical spreadsheet from Visicalc with a sine function and split windows 2 ; please take into account that negative values from column B are not shown in column C<br>![](attachments/SIN2.jpg)
 
-![](attachments/Forensics.jpg)
-Typical spreadsheet from Visicalc with the [forensics test](http://www.datamath.org/Forensics.htm) - VisiCalc has passed all! :-))) ; Thank you so much Joerg from [Datamath](http://www.datamath.org) for your help in this case. Please go ahead with your outstanding work. We really appreciate your help. :-)))
+- Typical spreadsheet from Visicalc with the [forensics test](http://www.datamath.org/Forensics.htm) - VisiCalc has passed all! :-))) ; Thank you so much Joerg from [Datamath](http://www.datamath.org) for your help in this case. Please go ahead with your outstanding work. We really appreciate your help. :-)))<br>![](attachments/Forensics.jpg)
 
-![](attachments/TI-LogBug.jpg)
-Typical spreadsheet from Visicalc to test for a potential [LN bug](http://www.datamath.org/Story/LogarithmBug.htm) ; Up to row 11 all calculations are correct! We thank Joerg from [Datamath](http://www.datamath.org) for his help in this case. Please go ahead with your outstanding work. We really appreciate your help. :-)))
+- Typical spreadsheet from Visicalc to test for a potential [LN bug](http://www.datamath.org/Story/LogarithmBug.htm) ; Up to row 11 all calculations are correct! We thank Joerg from [Datamath](http://www.datamath.org) for his help in this case. Please go ahead with your outstanding work. We really appreciate your help. :-)))<br>![](attachments/TI-LogBug.jpg)
 
-![](attachments/EXP-Approach.jpg)
-Typical spreadsheet from Visicalc for an approximation of the [EXP function](http://www.datamath.org/Story/LogarithmBug.htm). Of course, the test must fail, due to the limits of VisiCalc ; a value of 1E11(!) is required for a first good approach ; Thank you so much Joerg from [Datamath](http://www.datamath.org) for your help in this case. Please go ahead with your outstanding work. We really appreciate your help. :-)))
+- Typical spreadsheet from Visicalc for an approximation of the [EXP function](http://www.datamath.org/Story/LogarithmBug.htm). Of course, the test must fail, due to the limits of VisiCalc ; a value of 1E11(!) is required for a first good approach ; Thank you so much Joerg from [Datamath](http://www.datamath.org) for your help in this case. Please go ahead with your outstanding work. We really appreciate your help. :-)))<br>![](attachments/EXP-Approach.jpg)
 
 ## References
 

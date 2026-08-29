@@ -14,22 +14,16 @@ Das Handbuch wird noch gesucht, jede Hilfe dies wiederherzustellen ist stets seh
 
 ## Hauptmenu
 
-![](attachments/Haushalts-Planung.jpg)
-Atari Haushalts-Planung - Hauptmenu
+- Atari Haushalts-Planung - Hauptmenu<br>![](attachments/Haushalts-Planung.jpg)
 
 ## Screenshots
 
-![](attachments/Haushalts-Planung-1.jpg)
-Atari Haushalts-Planung - Screenshot 1
+- Atari Haushalts-Planung - Screenshot 1<br>![](attachments/Haushalts-Planung-1.jpg)
 
-![](attachments/Haushalts-Planung-2.jpg)
-Atari Haushalts-Planung - Screenshot 2
+- Atari Haushalts-Planung - Screenshot 2<br>![](attachments/Haushalts-Planung-2.jpg)
 
-![](attachments/Haushalts-Planung-3.jpg)
-Atari Haushalts-Planung - Screenshot 3
+- Atari Haushalts-Planung - Screenshot 3<br>![](attachments/Haushalts-Planung-3.jpg)
 
-![](attachments/Haushalts-Planung-4.jpg)
-Atari Haushalts-Planung - Screenshot 4
+- Atari Haushalts-Planung - Screenshot 4<br>![](attachments/Haushalts-Planung-4.jpg)
 
-![](attachments/Haushalts-Planung-5.jpg)
-Atari Haushalts-Planung - Screenshot 5
+- Atari Haushalts-Planung - Screenshot 5<br>![](attachments/Haushalts-Planung-5.jpg)

@@ -4,8 +4,7 @@ Donated by Kay Savetz; Kay, thank you so much to bring this artifact from the da
 
 ## Content
 
-![](attachments/Great_Classics_CX6009.jpg)
-Content of Great Classics CX6009
+- Content of Great Classics CX6009<br>![](attachments/Great_Classics_CX6009.jpg)
 
 ## Cassette-Images in FLAC-format
 
@@ -27,38 +26,26 @@ Content of Great Classics CX6009
 
 ## Images
 
-![](attachments/1.jpg)
-Classics CX6009 - Startscreen
+- Classics CX6009 - Startscreen<br>![](attachments/1.jpg)
 
-![](attachments/2.jpg)
-Classics CX6009 - Example 1
+- Classics CX6009 - Example 1<br>![](attachments/2.jpg)
 
-![](attachments/3.jpg)
-Classics CX6009 - Example 3
+- Classics CX6009 - Example 3<br>![](attachments/3.jpg)
 
-![](attachments/4.jpg)
-Classics CX6009 - Example 5
+- Classics CX6009 - Example 5<br>![](attachments/4.jpg)
 
-![](attachments/5.jpg)
-Classics CX6009 - Example 7
+- Classics CX6009 - Example 7<br>![](attachments/5.jpg)
 
-![](attachments/6.jpg)
-Classics CX6009 - Example 9
+- Classics CX6009 - Example 9<br>![](attachments/6.jpg)
 
-![](attachments/7.jpg)
-Classics CX6009 - Example 11
+- Classics CX6009 - Example 11<br>![](attachments/7.jpg)
 
-![](attachments/8.jpg)
-Classics CX6009 - Example 12-1
+- Classics CX6009 - Example 12-1<br>![](attachments/8.jpg)
 
-![](attachments/9.jpg)
-Classics CX6009 - Example 12-2
+- Classics CX6009 - Example 12-2<br>![](attachments/9.jpg)
 
-![](attachments/10.jpg)
-Classics CX6009 - Example 13
+- Classics CX6009 - Example 13<br>![](attachments/10.jpg)
 
-![](attachments/11.jpg)
-Classics CX6009 - Example 15
+- Classics CX6009 - Example 15<br>![](attachments/11.jpg)
 
-![](attachments/12.jpg)
-Classics CX6009 - Endscreen
+- Classics CX6009 - Endscreen<br>![](attachments/12.jpg)

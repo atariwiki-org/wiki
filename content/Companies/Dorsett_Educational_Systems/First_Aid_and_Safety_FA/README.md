@@ -64,8 +64,6 @@ Tracks (size in sum: 1.68 GB):
 
 ## Images
 
-![](attachments/faA_.jpg)
-Dorsett Atari First Aid and Safety - cassettes with uneven numbers
+- Dorsett Atari First Aid and Safety - cassettes with uneven numbers<br>![](attachments/faA_.jpg)
 
-![](attachments/faB_.jpg)
-Dorsett Atari First Aid and Safety - cassettes with even numbers
+- Dorsett Atari First Aid and Safety - cassettes with even numbers<br>![](attachments/faB_.jpg)

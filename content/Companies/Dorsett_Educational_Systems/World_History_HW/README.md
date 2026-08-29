@@ -62,8 +62,6 @@ Tracks (size in sum: 1.71 GB):
 
 ## Images
 
-![](attachments/hwA_.jpg)
-Dorsett Atari World History - cassettes with uneven numbers
+- Dorsett Atari World History - cassettes with uneven numbers<br>![](attachments/hwA_.jpg)
 
-![](attachments/hwB_.jpg)
-Dorsett Atari World History - cassettes with even numbers
+- Dorsett Atari World History - cassettes with even numbers<br>![](attachments/hwB_.jpg)

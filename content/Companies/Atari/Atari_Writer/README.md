@@ -80,20 +80,14 @@ As of 2018, there is still much chaos regarding AtariWriter. We have a normal ve
 
 ## Pictures
 
-![](attachments/Atari_Writer_Startscreen_1982.jpg)
-Atari Writer - Startscreen 1982
+- Atari Writer - Startscreen 1982<br>![](attachments/Atari_Writer_Startscreen_1982.jpg)
 
-![](attachments/Atari_Writer_Main_Menu_1982.jpg)
-Atari Writer - Main Menu 1982
+- Atari Writer - Main Menu 1982<br>![](attachments/Atari_Writer_Main_Menu_1982.jpg)
 
-![](attachments/Atari_Writer_-_empty_document.jpg)
-Atari Writer - empty document
+- Atari Writer - empty document<br>![](attachments/Atari_Writer_-_empty_document.jpg)
 
-![](attachments/Atari_Writer_Plus_1985.jpg)
-Atari Writer Plus - Startscreen 1985
+- Atari Writer Plus - Startscreen 1985<br>![](attachments/Atari_Writer_Plus_1985.jpg)
 
-![](attachments/Atari_Writer_Plus_with_Proofreader_Main_Menu.jpg)
-Atari Writer Plus with Proofreader - Main Menu
+- Atari Writer Plus with Proofreader - Main Menu<br>![](attachments/Atari_Writer_Plus_with_Proofreader_Main_Menu.jpg)
 
-![](attachments/Atari_Writer_Proofreader_Disk_Content.jpg)
-Atari Writer Plus - Proofreader Disk Content
+- Atari Writer Plus - Proofreader Disk Content<br>![](attachments/Atari_Writer_Proofreader_Disk_Content.jpg)

@@ -1,10 +1,8 @@
 # Musica ; Copyright (C) 1985 by Steve Hales
 
-![](attachments/Musica.jpg)
-Musica by Steve Hales-Intro. Thank you so much Steve Hales! :-)
+- Musica by Steve Hales-Intro. Thank you so much Steve Hales! :-)<br>![](attachments/Musica.jpg)
 
-![](attachments/Editor.jpg)
-Musica by Steve Hales-Editor. Thank you so much Steve Hales! :-)
+- Musica by Steve Hales-Editor. Thank you so much Steve Hales! :-)<br>![](attachments/Editor.jpg)
 
 ## ATR image
 

@@ -28,65 +28,46 @@ Loading instructions:
 
 ## Box
 
-![](attachments/Box1.jpg)
-Atari Energy Czar CX4121 - Box front
+- Atari Energy Czar CX4121 - Box front<br>![](attachments/Box1.jpg)
 
-![](attachments/Box2.jpg)
-Atari Energy Czar CX4121 - Box back
+- Atari Energy Czar CX4121 - Box back<br>![](attachments/Box2.jpg)
 
 ## Screenshots
 
-![](attachments/Atari_Energy_Czar_CX4121-01.jpg)
-Atari Energy Czar CX4121 - Screenshot 1
+- Atari Energy Czar CX4121 - Screenshot 1<br>![](attachments/Atari_Energy_Czar_CX4121-01.jpg)
 
-![](attachments/Atari_Energy_Czar_CX4121-02.jpg)
-Atari Energy Czar CX4121 - Screenshot 2
+- Atari Energy Czar CX4121 - Screenshot 2<br>![](attachments/Atari_Energy_Czar_CX4121-02.jpg)
 
-![](attachments/Atari_Energy_Czar_CX4121-03.jpg)
-Atari Energy Czar CX4121 - Screenshot 3
+- Atari Energy Czar CX4121 - Screenshot 3<br>![](attachments/Atari_Energy_Czar_CX4121-03.jpg)
 
-![](attachments/Atari_Energy_Czar_CX4121-04.jpg)
-Atari Energy Czar CX4121 - Screenshot 4
+- Atari Energy Czar CX4121 - Screenshot 4<br>![](attachments/Atari_Energy_Czar_CX4121-04.jpg)
 
-![](attachments/Atari_Energy_Czar_CX4121-05.jpg)
-Atari Energy Czar CX4121 - Screenshot 5
+- Atari Energy Czar CX4121 - Screenshot 5<br>![](attachments/Atari_Energy_Czar_CX4121-05.jpg)
 
-![](attachments/Atari_Energy_Czar_CX4121-06.jpg)
-Atari Energy Czar CX4121 - Screenshot 6
+- Atari Energy Czar CX4121 - Screenshot 6<br>![](attachments/Atari_Energy_Czar_CX4121-06.jpg)
 
-![](attachments/Atari_Energy_Czar_CX4121-07.jpg)
-Atari Energy Czar CX4121 - Screenshot 7
+- Atari Energy Czar CX4121 - Screenshot 7<br>![](attachments/Atari_Energy_Czar_CX4121-07.jpg)
 
-![](attachments/Atari_Energy_Czar_CX4121-08.jpg)
-Atari Energy Czar CX4121 - Screenshot 8
+- Atari Energy Czar CX4121 - Screenshot 8<br>![](attachments/Atari_Energy_Czar_CX4121-08.jpg)
 
-![](attachments/Atari_Energy_Czar_CX4121-09.jpg)
-Atari Energy Czar CX4121 - Screenshot 9
+- Atari Energy Czar CX4121 - Screenshot 9<br>![](attachments/Atari_Energy_Czar_CX4121-09.jpg)
 
-![](attachments/Atari_Energy_Czar_CX4121-10.jpg)
-Atari Energy Czar CX4121 - Screenshot 10
+- Atari Energy Czar CX4121 - Screenshot 10<br>![](attachments/Atari_Energy_Czar_CX4121-10.jpg)
 
-![](attachments/Atari_Energy_Czar_CX4121-11.jpg)
-Atari Energy Czar CX4121 - Screenshot 11
+- Atari Energy Czar CX4121 - Screenshot 11<br>![](attachments/Atari_Energy_Czar_CX4121-11.jpg)
 
-![](attachments/Atari_Energy_Czar_CX4121-12.jpg)
-Atari Energy Czar CX4121 - Screenshot 12
+- Atari Energy Czar CX4121 - Screenshot 12<br>![](attachments/Atari_Energy_Czar_CX4121-12.jpg)
 
 ## Source Code
 
-![](attachments/Energy_Czar-Source_Code.png)
-Atari Energy Czar CX4121 - Source Code. Thanks to Bill Lange for making this. [Source](http://erasmatazz.com/library/source-code/source-code-for-energy-czar.html)
+- Atari Energy Czar CX4121 - Source Code. Thanks to Bill Lange for making this. [Source](http://erasmatazz.com/library/source-code/source-code-for-energy-czar.html)<br>![](attachments/Energy_Czar-Source_Code.png)
 
 ## Advertisements
 
-![](attachments/advertise1.jpg)
-Atari Energy Czar CX4121 - Advertisement 1
+- Atari Energy Czar CX4121 - Advertisement 1<br>![](attachments/advertise1.jpg)
 
-![](attachments/advertise2.jpg)
-Atari Energy Czar CX4121 - Advertisement 2
+- Atari Energy Czar CX4121 - Advertisement 2<br>![](attachments/advertise2.jpg)
 
-![](attachments/advertise3.jpg)
-Atari Energy Czar CX4121 - Advertisement 3
+- Atari Energy Czar CX4121 - Advertisement 3<br>![](attachments/advertise3.jpg)
 
-![](attachments/advertise4.jpg)
-Atari Energy Czar CX4121 - Advertisement 4
+- Atari Energy Czar CX4121 - Advertisement 4<br>![](attachments/advertise4.jpg)

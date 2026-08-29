@@ -37,20 +37,15 @@ Too large to fit on a 8k ROM, the product was sold on disk only. Because BASIC A
 
 ## Images
 
-![](attachments/3.00.jpg)
-OSS BASIC A+ version 3.00
+- OSS BASIC A+ version 3.00<br>![](attachments/3.00.jpg)
 
-![](attachments/3.02.png)
-OSS BASIC A+ version 3.02
+- OSS BASIC A+ version 3.02<br>![](attachments/3.02.png)
 
-![](attachments/3.03.png)
-OSS BASIC A+ version 3.03
+- OSS BASIC A+ version 3.03<br>![](attachments/3.03.png)
 
-![](attachments/3.04.jpg)
-OSS BASIC A+ version 3.04
+- OSS BASIC A+ version 3.04<br>![](attachments/3.04.jpg)
 
-![](attachments/3.05.jpg)
-OSS BASIC A+ version 3.05
+- OSS BASIC A+ version 3.05<br>![](attachments/3.05.jpg)
 
 ## Review
 

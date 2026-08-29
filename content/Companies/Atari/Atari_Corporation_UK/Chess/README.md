@@ -17,10 +17,8 @@ See cover picture
 
 ## Cover
 
-![](attachments/Chess_UKC1004_cover.jpg)
-Chess Cover 1985 rerelease
+- Chess Cover 1985 rerelease<br>![](attachments/Chess_UKC1004_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Chess_UKC1004_cassette.jpg)
-Cassette of the 1985 rerelease
+- Cassette of the 1985 rerelease<br>![](attachments/Chess_UKC1004_cassette.jpg)

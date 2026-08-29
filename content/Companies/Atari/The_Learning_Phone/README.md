@@ -27,11 +27,8 @@ $24.95, 16K cartridge
 
 ## Pictures
 
-![](attachments/The_Learning_Phone-Front.jpg)
-The Learning Phone Box
+- The Learning Phone Box<br>![](attachments/The_Learning_Phone-Front.jpg)
 
-![](attachments/The_Learning_Phone-Cart.jpg)
-The Learning Phone - cartridge RX8080
+- The Learning Phone - cartridge RX8080<br>![](attachments/The_Learning_Phone-Cart.jpg)
 
-![](attachments/Welcome_to_The_Learning_Phone_2400_Baud.png)
-Successful connection at 2400 baud with The Learning Phone software
+- Successful connection at 2400 baud with The Learning Phone software<br>![](attachments/Welcome_to_The_Learning_Phone_2400_Baud.png)

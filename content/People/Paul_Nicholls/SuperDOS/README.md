@@ -22,14 +22,10 @@ SuperDOS is a really smart DOS coming from Australia. It was programed by Paul N
 
 ## Pictures
 
-![](attachments/Intro.jpg)
-SuperDOS intro startscreen
+- SuperDOS intro startscreen<br>![](attachments/Intro.jpg)
 
-![](attachments/SuperDOS_2.9.jpg)
-SuperDOS version 2.9 startscreen
+- SuperDOS version 2.9 startscreen<br>![](attachments/SuperDOS_2.9.jpg)
 
-![](attachments/SuperDOS_4.3.jpg)
-SuperDOS version 4.3 startscreen
+- SuperDOS version 4.3 startscreen<br>![](attachments/SuperDOS_4.3.jpg)
 
-![](attachments/SUPERDOSv5.1.jpg)
-SuperDOS version 5.1 startscreen
+- SuperDOS version 5.1 startscreen<br>![](attachments/SUPERDOSv5.1.jpg)

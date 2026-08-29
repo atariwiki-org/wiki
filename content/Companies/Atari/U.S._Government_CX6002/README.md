@@ -2,13 +2,11 @@
 
 ## Boxcover
 
-![](attachments/U.S._Government_CX6002-Cover.jpg)
-Boxcover of U.S. Government CX6002
+- Boxcover of U.S. Government CX6002<br>![](attachments/U.S._Government_CX6002-Cover.jpg)
 
 ## Content
 
-![](attachments/U.S._Government_CX6002-Content.jpg)
-Content of U.S. Government CX6002
+- Content of U.S. Government CX6002<br>![](attachments/U.S._Government_CX6002-Content.jpg)
 
 ## Cassette-Images in FLAC-format
 
@@ -30,14 +28,10 @@ Content of U.S. Government CX6002
 
 ## Images
 
-![](attachments/USG-5.jpg)
-U.S. Government CX6002 - figure 1
+- U.S. Government CX6002 - figure 1<br>![](attachments/USG-5.jpg)
 
-![](attachments/USG-6.jpg)
-U.S. Government CX6002 - figure 2
+- U.S. Government CX6002 - figure 2<br>![](attachments/USG-6.jpg)
 
-![](attachments/USG-7.jpg)
-U.S. Government CX6002 - figure 3
+- U.S. Government CX6002 - figure 3<br>![](attachments/USG-7.jpg)
 
-![](attachments/USG-8.jpg)
-U.S. Government CX6002 - figure 4
+- U.S. Government CX6002 - figure 4<br>![](attachments/USG-8.jpg)

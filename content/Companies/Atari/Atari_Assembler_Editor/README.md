@@ -18,11 +18,9 @@ The Atari Assembler Editor cartridge was a program used to edit, compile and deb
 
 There are two different versions of the cartridge which could be verified very easy, please see the md5 checksums below. AtariWiki dares to define them as revision A and B in analogy to the Atari Basic cartridge, which was delivered in three different versions. It is easy to find out, which version one has, just type in ASM and hit RETURN. If you have a revision A cartridge, no error message is shown, in case you have a revision B cartridge, the amount of errors are shown. Please see the two pictures below for an example:
 
-![](attachments/Assembler_Editor_-_Revision_A.jpg)
-Assembler Editor - revision A cartridge test result
+- Assembler Editor - revision A cartridge test result<br>![](attachments/Assembler_Editor_-_Revision_A.jpg)
 
-![](attachments/Assembler_Editor_-_Revision_B.jpg)
-Assembler Editor - revision B cartridge test result
+- Assembler Editor - revision B cartridge test result<br>![](attachments/Assembler_Editor_-_Revision_B.jpg)
 
 **A binary compare of both cartridges did show, that there is much more different than that! Future investigations have to show, what else is different and how the user can profit of it.**
 
@@ -83,33 +81,25 @@ If we go far ahead of this, then even an interbreed with the [Turbo-BASIC XL - s
 
 If the user intends to resize the used memory, the command: 'LOMEM xxxx' must be the very first command after booting. Please see page 7 in the manual for further info. Otherwise the user will get an error:
 
-![](attachments/LOMEM-SIZE-2.png)
-LOMEM command - correct use
+- LOMEM command - correct use<br>![](attachments/LOMEM-SIZE-2.png)
 
-![](attachments/LOMEM-SIZE-1.png)
-LOMEM command - incorrect use
+- LOMEM command - incorrect use<br>![](attachments/LOMEM-SIZE-1.png)
 
 Thanks to Sijmen Schouten for the hint. :-)
 
 ## Pictures
 
-![](attachments/Der_Atari_Assembler_Cover.jpg)
-Atari Assembler Editor Box Cover - front
+- Atari Assembler Editor Box Cover - front<br>![](attachments/Der_Atari_Assembler_Cover.jpg)
 
-![](attachments/assembler_editor_cart_2.jpg)
-Atari Assembler Editor Box Cover - back
+- Atari Assembler Editor Box Cover - back<br>![](attachments/assembler_editor_cart_2.jpg)
 
-![](attachments/assembler_editor_cart_3.jpg)
-Assembler Editor Cartridge - Revision A
+- Assembler Editor Cartridge - Revision A<br>![](attachments/assembler_editor_cart_3.jpg)
 
-![](attachments/Assembler_Editor_Brown_front.jpg)
-Assembler Editor Cartridge - Revision B
+- Assembler Editor Cartridge - Revision B<br>![](attachments/Assembler_Editor_Brown_front.jpg)
 
-![](attachments/assembler_editor_d_cart_1.jpg)
-Atari Assembler Editor Box Cover - front German version
+- Atari Assembler Editor Box Cover - front German version<br>![](attachments/assembler_editor_d_cart_1.jpg)
 
-![](attachments/assembler_editor_d_cart_2.jpg)
-Atari Assembler Editor Box Cover - back German version
+- Atari Assembler Editor Box Cover - back German version<br>![](attachments/assembler_editor_d_cart_2.jpg)
 
 ## References
 
@@ -127,8 +117,7 @@ Atari Assembler Editor Box Cover - back German version
 
 ## Changing the editors color and background
 
-![](attachments/Change_Editor_Color.jpg)
-Assembler Editor Cartridge - changing the editor's color and background to user desired colors for better editing
+- Assembler Editor Cartridge - changing the editor's color and background to user desired colors for better editing<br>![](attachments/Change_Editor_Color.jpg)
 
 ## Hello World! Source Code for the Atari Assembler Editor
 
@@ -341,25 +330,18 @@ TYA Transfer Register Y to Accumulator
 ## Instruction Set (Operation Codes)
 
 ![](attachments/Instruction_Set_Operation_Codes-1.png)
-![](attachments/Instruction_Set_Operation_Codes-2.png)
-Instruction Set (Operation Codes)
+- Instruction Set (Operation Codes)<br>![](attachments/Instruction_Set_Operation_Codes-2.png)
 
 ## Commands and error codes
 
-![](attachments/Editor.jpg)
-Atari Assembler Editor - Editor commands
+- Atari Assembler Editor - Editor commands<br>![](attachments/Editor.jpg)
 
-![](attachments/Assembler.jpg)
-Atari Assembler Editor - Assembler commands
+- Atari Assembler Editor - Assembler commands<br>![](attachments/Assembler.jpg)
 
-![](attachments/Debugger.jpg)
-Atari Assembler Editor - Debugger commands
+- Atari Assembler Editor - Debugger commands<br>![](attachments/Debugger.jpg)
 
-![](attachments/Assembler_Editor_Error_Codes_001-139.jpg)
-Atari Assembler Editor - Error Codes 001-139
+- Atari Assembler Editor - Error Codes 001-139<br>![](attachments/Assembler_Editor_Error_Codes_001-139.jpg)
 
-![](attachments/Assembler_Editor_Error_Codes_140-165.jpg)
-Atari Assembler Editor - Error Codes 140-165
+- Atari Assembler Editor - Error Codes 140-165<br>![](attachments/Assembler_Editor_Error_Codes_140-165.jpg)
 
-![](attachments/Error_Codes_2-171.jpg)
-Atari Assembler Editor - Error Codes 2-171
+- Atari Assembler Editor - Error Codes 2-171<br>![](attachments/Error_Codes_2-171.jpg)

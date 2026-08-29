@@ -71,20 +71,14 @@ As you can see, WSFN code can become almost unreadable even in simple examples!
 
 ## Pictures
 
-![](attachments/ATAExtendedWSFN-1-750.jpg)
-Extended WSFN APX-20026 box - front
+- Extended WSFN APX-20026 box - front<br>![](attachments/ATAExtendedWSFN-1-750.jpg)
 
-![](attachments/ATAExtendedWSFN-2-750.jpg)
-Extended WSFN APX-20026 box - back
+- Extended WSFN APX-20026 box - back<br>![](attachments/ATAExtendedWSFN-2-750.jpg)
 
-![](attachments/APX_Extended_WSFN_diskette.jpg)
-Extended WSFN Diskette APX-20026
+- Extended WSFN Diskette APX-20026<br>![](attachments/APX_Extended_WSFN_diskette.jpg)
 
-![](attachments/APX_Extended_WSFN_3.gif)
-Extended WSFN - example #1
+- Extended WSFN - example #1<br>![](attachments/APX_Extended_WSFN_3.gif)
 
-![](attachments/APX_Extended_WSFN_2.gif)
-Extended WSFN - example #1
+- Extended WSFN - example #1<br>![](attachments/APX_Extended_WSFN_2.gif)
 
-![](attachments/Extended_WSFN_ad.jpg)
-Extended WSFN APX-20026 box - ad
+- Extended WSFN APX-20026 box - ad<br>![](attachments/Extended_WSFN_ad.jpg)

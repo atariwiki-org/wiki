@@ -13,37 +13,26 @@ Atari Timewise:  Monthly calendar / diary program.  Timewise is an Atari program
 - [Timewise Master Diskette (Model DX5047)](attachments/Timewise.atr) ; Master Diskette, please use with Atari Basic cartridge
 - [Timewise Data Diskette](attachments/Data_Diskette.atr)
 
-![](attachments/DIR.jpg)
-Timewise Master Diskette (Model DX5047) - Diskette directory under normal DOS II Version 2.0S
+- Timewise Master Diskette (Model DX5047) - Diskette directory under normal DOS II Version 2.0S<br>![](attachments/DIR.jpg)
 
 ## Images
 
-![](attachments/Loading.jpg)
-Atari Timewise at starting
+- Atari Timewise at starting<br>![](attachments/Loading.jpg)
 
-![](attachments/Insert_Data_Disk.jpg)
-Atari Timewise - Insert Data Disk call
+- Atari Timewise - Insert Data Disk call<br>![](attachments/Insert_Data_Disk.jpg)
 
-![](attachments/Main_Menu.jpg)
-Atari Timewise - Main Menu
+- Atari Timewise - Main Menu<br>![](attachments/Main_Menu.jpg)
 
-![](attachments/Appointments.jpg)
-Atari Timewise - Appointments
+- Atari Timewise - Appointments<br>![](attachments/Appointments.jpg)
 
-![](attachments/Monthly_Calendar.jpg)
-Atari Timewise - Monthly Calendar
+- Atari Timewise - Monthly Calendar<br>![](attachments/Monthly_Calendar.jpg)
 
-![](attachments/Add_New_Appointments.jpg)
-Atari Timewise - Add New Appointments
+- Atari Timewise - Add New Appointments<br>![](attachments/Add_New_Appointments.jpg)
 
-![](attachments/Inquire-Update_Appointments.jpg)
-Atari Timewise - Inquire-Update Appointments
+- Atari Timewise - Inquire-Update Appointments<br>![](attachments/Inquire-Update_Appointments.jpg)
 
-![](attachments/File_Maintenance.jpg)
-Atari Timewise - File Maintenance
+- Atari Timewise - File Maintenance<br>![](attachments/File_Maintenance.jpg)
 
-![](attachments/ad_1.png)
-Atari Timewise - advertising 1
+- Atari Timewise - advertising 1<br>![](attachments/ad_1.png)
 
-![](attachments/ad_2.png)
-Atari Timewise - advertising 2
+- Atari Timewise - advertising 2<br>![](attachments/ad_2.png)

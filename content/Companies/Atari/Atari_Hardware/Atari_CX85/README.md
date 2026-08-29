@@ -44,10 +44,8 @@
 
 ## Images
 
-![](attachments/CX85_1.jpg)
-Atari CX85 Numerical Keypad - Diskette - front side
+- Atari CX85 Numerical Keypad - Diskette - front side<br>![](attachments/CX85_1.jpg)
 
-![](attachments/CX85_2.jpg)
-Atari CX85 Numerical Keypad - Diskette - back side
+- Atari CX85 Numerical Keypad - Diskette - back side<br>![](attachments/CX85_2.jpg)
 
 ![](attachments/The_Atari_CX85_Master_Diskette_CX8139.jpg)

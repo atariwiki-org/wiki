@@ -6,8 +6,7 @@ Black Lamp is a platform game, originally published by Firebird Software for the
 
 ## Cover
 
-![](attachments/Black_Lamp_cass.jpg)
-Black Lamp cover
+- Black Lamp cover<br>![](attachments/Black_Lamp_cass.jpg)
 
 ## CAS Image
 
@@ -20,16 +19,12 @@ Black Lamp manual [Black\_lamp\_manual.pdf](attachments/Black_lamp_manual.pdf)
 
 ## Media pictures
 
-![](attachments/black_lamp_tape.jpg)
-Black Lamp cassette
+- Black Lamp cassette<br>![](attachments/black_lamp_tape.jpg)
 
 ## Screenshots
 
-![](attachments/Black_Lamp_screenshot1.jpg)
-Black Lamp - screenshot 1
+- Black Lamp - screenshot 1<br>![](attachments/Black_Lamp_screenshot1.jpg)
 
-![](attachments/Black_Lamp_screenshot2.jpg)
-Black Lamp - screenshot 2
+- Black Lamp - screenshot 2<br>![](attachments/Black_Lamp_screenshot2.jpg)
 
-![](attachments/Black_Lamp_screenshot3.jpg)
-Black Lamp - screenshot 3
+- Black Lamp - screenshot 3<br>![](attachments/Black_Lamp_screenshot3.jpg)

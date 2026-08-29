@@ -23,39 +23,29 @@ Atari Kingdom CX4102 is one of the first simulation game from Atari with a short
 
 ## Box-Images
 
-![](attachments/Atari_Kingdom_Cover_1.jpg)
-Atari Kingdom CX4102 box cover
+- Atari Kingdom CX4102 box cover<br>![](attachments/Atari_Kingdom_Cover_1.jpg)
 
-![](attachments/Atari_Kingdom_Back_1.jpg)
-Atari Kingdom CX4102 box back
+- Atari Kingdom CX4102 box back<br>![](attachments/Atari_Kingdom_Back_1.jpg)
 
 ## Screenshots
 
-![](attachments/1.jpg)
-Atari Kingdom CX4102 1st screen - beginning of loading
+- Atari Kingdom CX4102 1st screen - beginning of loading<br>![](attachments/1.jpg)
 
-![](attachments/2.jpg)
-Atari Kingdom CX4102 2nd loading from cassette side A with instructions
+- Atari Kingdom CX4102 2nd loading from cassette side A with instructions<br>![](attachments/2.jpg)
 
-![](attachments/3.jpg)
-Atari Kingdom CX4102 instruction side 1 of 2
+- Atari Kingdom CX4102 instruction side 1 of 2<br>![](attachments/3.jpg)
 
-![](attachments/4.jpg)
-Atari Kingdom CX4102 instruction side 2 of 2
+- Atari Kingdom CX4102 instruction side 2 of 2<br>![](attachments/4.jpg)
 
-![](attachments/5.jpg)
-Atari Kingdom CX4102 main screen - 1st start
+- Atari Kingdom CX4102 main screen - 1st start<br>![](attachments/5.jpg)
 
 ## Advertising
 
-![](attachments/Advertising1.jpg)
-Atari Kingdom CX4102 Advertising 1
+- Atari Kingdom CX4102 Advertising 1<br>![](attachments/Advertising1.jpg)
 
-![](attachments/Advertising4.png)
-Atari Kingdom CX4102 Advertising 2
+- Atari Kingdom CX4102 Advertising 2<br>![](attachments/Advertising4.png)
 
-![](attachments/Advertising3.jpg)
-Atari Kingdom CX4102 Advertising 3
+- Atari Kingdom CX4102 Advertising 3<br>![](attachments/Advertising3.jpg)
 
 ## Messages from the source code
 

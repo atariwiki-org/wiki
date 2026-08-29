@@ -24,167 +24,114 @@ As a final note, it is important that the investor understand exactly the data w
 
 ## Images
 
-![](attachments/Cover.jpg)
-Stock Analysis CX8107
+- Stock Analysis CX8107<br>![](attachments/Cover.jpg)
 
-![](attachments/Disc_Content.jpg)
-Stock Analysis CX8107 - Diskette Content
+- Stock Analysis CX8107 - Diskette Content<br>![](attachments/Disc_Content.jpg)
 
-![](attachments/Start.jpg)
-Stock Analysis CX8107 - Loading - 1st screen
+- Stock Analysis CX8107 - Loading - 1st screen<br>![](attachments/Start.jpg)
 
-![](attachments/Hauptmenu.jpg)
-Stock Analysis CX8107 - Main Menu
+- Stock Analysis CX8107 - Main Menu<br>![](attachments/Hauptmenu.jpg)
 
 ## Portfolio Analysis
 
-![](attachments/Portfolio_Analysis_01.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 01
+- Stock Analysis CX8107 - Portfolio Analysis - screen 01<br>![](attachments/Portfolio_Analysis_01.jpg)
 
-![](attachments/Portfolio_Analysis_02.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 02
+- Stock Analysis CX8107 - Portfolio Analysis - screen 02<br>![](attachments/Portfolio_Analysis_02.jpg)
 
-![](attachments/Portfolio_Analysis_03.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 03
+- Stock Analysis CX8107 - Portfolio Analysis - screen 03<br>![](attachments/Portfolio_Analysis_03.jpg)
 
-![](attachments/Portfolio_Analysis_04.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 04
+- Stock Analysis CX8107 - Portfolio Analysis - screen 04<br>![](attachments/Portfolio_Analysis_04.jpg)
 
-![](attachments/Portfolio_Analysis_05.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 05
+- Stock Analysis CX8107 - Portfolio Analysis - screen 05<br>![](attachments/Portfolio_Analysis_05.jpg)
 
-![](attachments/Portfolio_Analysis_06.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 06
+- Stock Analysis CX8107 - Portfolio Analysis - screen 06<br>![](attachments/Portfolio_Analysis_06.jpg)
 
-![](attachments/Portfolio_Analysis_07.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 07
+- Stock Analysis CX8107 - Portfolio Analysis - screen 07<br>![](attachments/Portfolio_Analysis_07.jpg)
 
-![](attachments/Portfolio_Analysis_08.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 08
+- Stock Analysis CX8107 - Portfolio Analysis - screen 08<br>![](attachments/Portfolio_Analysis_08.jpg)
 
-![](attachments/Portfolio_Analysis_09.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 09
+- Stock Analysis CX8107 - Portfolio Analysis - screen 09<br>![](attachments/Portfolio_Analysis_09.jpg)
 
-![](attachments/Portfolio_Analysis_10.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 10
+- Stock Analysis CX8107 - Portfolio Analysis - screen 10<br>![](attachments/Portfolio_Analysis_10.jpg)
 
-![](attachments/Portfolio_Analysis_11.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 11
+- Stock Analysis CX8107 - Portfolio Analysis - screen 11<br>![](attachments/Portfolio_Analysis_11.jpg)
 
-![](attachments/Portfolio_Analysis_12.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 12
+- Stock Analysis CX8107 - Portfolio Analysis - screen 12<br>![](attachments/Portfolio_Analysis_12.jpg)
 
-![](attachments/Portfolio_Analysis_13.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 13
+- Stock Analysis CX8107 - Portfolio Analysis - screen 13<br>![](attachments/Portfolio_Analysis_13.jpg)
 
-![](attachments/Portfolio_Analysis_14.jpg)
-Stock Analysis CX8107 - Portfolio Analysis - screen 14
+- Stock Analysis CX8107 - Portfolio Analysis - screen 14<br>![](attachments/Portfolio_Analysis_14.jpg)
 
 ## Stock Rate of Return
 
-![](attachments/Stock_Rate_of_Return_01.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 01
+- Stock Analysis CX8107 - Stock Rate of Return - screen 01<br>![](attachments/Stock_Rate_of_Return_01.jpg)
 
-![](attachments/Stock_Rate_of_Return_02.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 02
+- Stock Analysis CX8107 - Stock Rate of Return - screen 02<br>![](attachments/Stock_Rate_of_Return_02.jpg)
 
-![](attachments/Stock_Rate_of_Return_03.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 03
+- Stock Analysis CX8107 - Stock Rate of Return - screen 03<br>![](attachments/Stock_Rate_of_Return_03.jpg)
 
-![](attachments/Stock_Rate_of_Return_04.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 04
+- Stock Analysis CX8107 - Stock Rate of Return - screen 04<br>![](attachments/Stock_Rate_of_Return_04.jpg)
 
-![](attachments/Stock_Rate_of_Return_05.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 05
+- Stock Analysis CX8107 - Stock Rate of Return - screen 05<br>![](attachments/Stock_Rate_of_Return_05.jpg)
 
-![](attachments/Stock_Rate_of_Return_06.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 06
+- Stock Analysis CX8107 - Stock Rate of Return - screen 06<br>![](attachments/Stock_Rate_of_Return_06.jpg)
 
-![](attachments/Stock_Rate_of_Return_07.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 07
+- Stock Analysis CX8107 - Stock Rate of Return - screen 07<br>![](attachments/Stock_Rate_of_Return_07.jpg)
 
-![](attachments/Stock_Rate_of_Return_08.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 08
+- Stock Analysis CX8107 - Stock Rate of Return - screen 08<br>![](attachments/Stock_Rate_of_Return_08.jpg)
 
-![](attachments/Stock_Rate_of_Return_09.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 09
+- Stock Analysis CX8107 - Stock Rate of Return - screen 09<br>![](attachments/Stock_Rate_of_Return_09.jpg)
 
-![](attachments/Stock_Rate_of_Return_10.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 10
+- Stock Analysis CX8107 - Stock Rate of Return - screen 10<br>![](attachments/Stock_Rate_of_Return_10.jpg)
 
-![](attachments/Stock_Rate_of_Return_11.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 12
+- Stock Analysis CX8107 - Stock Rate of Return - screen 12<br>![](attachments/Stock_Rate_of_Return_11.jpg)
 
-![](attachments/Stock_Rate_of_Return_12.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 12
+- Stock Analysis CX8107 - Stock Rate of Return - screen 12<br>![](attachments/Stock_Rate_of_Return_12.jpg)
 
-![](attachments/Stock_Rate_of_Return_13.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 13
+- Stock Analysis CX8107 - Stock Rate of Return - screen 13<br>![](attachments/Stock_Rate_of_Return_13.jpg)
 
-![](attachments/Stock_Rate_of_Return_14.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 14
+- Stock Analysis CX8107 - Stock Rate of Return - screen 14<br>![](attachments/Stock_Rate_of_Return_14.jpg)
 
-![](attachments/Stock_Rate_of_Return_15.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 15
+- Stock Analysis CX8107 - Stock Rate of Return - screen 15<br>![](attachments/Stock_Rate_of_Return_15.jpg)
 
-![](attachments/Stock_Rate_of_Return_16.jpg)
-Stock Analysis CX8107 - Stock Rate of Return - screen 16
+- Stock Analysis CX8107 - Stock Rate of Return - screen 16<br>![](attachments/Stock_Rate_of_Return_16.jpg)
 
 ## Stock Dividend Analysis
 
-![](attachments/Stock_Dividend_Analysis_01.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 01
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 01<br>![](attachments/Stock_Dividend_Analysis_01.jpg)
 
-![](attachments/Stock_Dividend_Analysis_02.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 02
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 02<br>![](attachments/Stock_Dividend_Analysis_02.jpg)
 
-![](attachments/Stock_Dividend_Analysis_03.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 03
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 03<br>![](attachments/Stock_Dividend_Analysis_03.jpg)
 
-![](attachments/Stock_Dividend_Analysis_04.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 04
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 04<br>![](attachments/Stock_Dividend_Analysis_04.jpg)
 
-![](attachments/Stock_Dividend_Analysis_05.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 05
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 05<br>![](attachments/Stock_Dividend_Analysis_05.jpg)
 
-![](attachments/Stock_Dividend_Analysis_06.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 06
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 06<br>![](attachments/Stock_Dividend_Analysis_06.jpg)
 
-![](attachments/Stock_Dividend_Analysis_07.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 07
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 07<br>![](attachments/Stock_Dividend_Analysis_07.jpg)
 
-![](attachments/Stock_Dividend_Analysis_08.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 08
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 08<br>![](attachments/Stock_Dividend_Analysis_08.jpg)
 
-![](attachments/Stock_Dividend_Analysis_09.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 09
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 09<br>![](attachments/Stock_Dividend_Analysis_09.jpg)
 
-![](attachments/Stock_Dividend_Analysis_10.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 10
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 10<br>![](attachments/Stock_Dividend_Analysis_10.jpg)
 
-![](attachments/Stock_Dividend_Analysis_11.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 11
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 11<br>![](attachments/Stock_Dividend_Analysis_11.jpg)
 
-![](attachments/Stock_Dividend_Analysis_12.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 12
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 12<br>![](attachments/Stock_Dividend_Analysis_12.jpg)
 
-![](attachments/Stock_Dividend_Analysis_13.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 13
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 13<br>![](attachments/Stock_Dividend_Analysis_13.jpg)
 
-![](attachments/Stock_Dividend_Analysis_14.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 14
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 14<br>![](attachments/Stock_Dividend_Analysis_14.jpg)
 
-![](attachments/Stock_Dividend_Analysis_15.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 15
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 15<br>![](attachments/Stock_Dividend_Analysis_15.jpg)
 
-![](attachments/Stock_Dividend_Analysis_16.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 16
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 16<br>![](attachments/Stock_Dividend_Analysis_16.jpg)
 
-![](attachments/Stock_Dividend_Analysis_17.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 17
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 17<br>![](attachments/Stock_Dividend_Analysis_17.jpg)
 
-![](attachments/Stock_Dividend_Analysis_18.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 18
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 18<br>![](attachments/Stock_Dividend_Analysis_18.jpg)
 
-![](attachments/Stock_Dividend_Analysis_19.jpg)
-Stock Analysis CX8107 - Stock Dividend Analysis - screen 19
+- Stock Analysis CX8107 - Stock Dividend Analysis - screen 19<br>![](attachments/Stock_Dividend_Analysis_19.jpg)

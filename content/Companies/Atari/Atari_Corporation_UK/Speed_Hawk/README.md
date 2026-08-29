@@ -18,10 +18,8 @@ See cover picture
 
 ## Cover
 
-![](attachments/Speed_Hawk_cover.jpg)
-Speed Hawk cover
+- Speed Hawk cover<br>![](attachments/Speed_Hawk_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Speed_Hawk_cass.jpg)
-Speed Hawk cassette
+- Speed Hawk cassette<br>![](attachments/Speed_Hawk_cass.jpg)

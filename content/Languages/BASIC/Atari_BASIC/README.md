@@ -16,8 +16,7 @@ In order to fit the code into a 8k ROM, two major pieces of code were moved out 
 
 The performance issues led to a profusion of 3rd party BASICs, some of which continue to be developed to this day. By replacing the math libraries and fixing these two loop issues, speed improves on the order of 3 to 5 times in most programs, and this is a common feature of 3rd party BASICs like [Turbo-BASIC XL](../Turbo-BASIC_XL/README.md) and [Altirra BASIC](../Altirra_BASIC/README.md). For even higher performance, [FastBasic](../FastBASIC/README.md) uses a p-code system that can be quickly interpreted.
 
-![](attachments/Atari_BASIC-Box.jpg)
-Atari BASIC - Computing Language box
+- Atari BASIC - Computing Language box<br>![](attachments/Atari_BASIC-Box.jpg)
 
 ### Design notes
 
@@ -47,16 +46,13 @@ To allow BASIC programmers access to the advanced features of the system, Atari 
 
 ## Source Code
 
-![](attachments/The_Atari_BASIC_Source_Book-Bill_Wilkinson-Kathleen_O_Brien-Paul_Laughton.jpg)
-[The Atari BASIC Source Book - Bill Wilkinson, Kathleen O'Brien and Paul Laughton](https://data.atariwiki.org/DOC/The_Atari_BASIC_Source_Book-Bill_Wilkinson-Kathleen_O'Brien-Paul_Laughton.pdf) ; size: 76.8 MB ; 316 pages
+- [The Atari BASIC Source Book - Bill Wilkinson, Kathleen O'Brien and Paul Laughton](https://data.atariwiki.org/DOC/The_Atari_BASIC_Source_Book-Bill_Wilkinson-Kathleen_O'Brien-Paul_Laughton.pdf) ; size: 76.8 MB ; 316 pages<br>![](attachments/The_Atari_BASIC_Source_Book-Bill_Wilkinson-Kathleen_O_Brien-Paul_Laughton.jpg)
 
 ## ROM-Images
 
-![](attachments/Cart_800er.jpg)
-Atari BASIC Cartridge - brown - Revison A
+- Atari BASIC Cartridge - brown - Revison A<br>![](attachments/Cart_800er.jpg)
 
-![](attachments/Cart_XE.jpg)
-Atari BASIC Cartridge - silver - Revison C ; Revision B was soldered in the machines only and therefore not available as a stand-alone cartridge
+- Atari BASIC Cartridge - silver - Revison C ; Revision B was soldered in the machines only and therefore not available as a stand-alone cartridge<br>![](attachments/Cart_XE.jpg)
 
 - [Atari\_BASIC\_Rev.\_A.rom](attachments/Atari_BASIC_Rev._A.rom) ; ? PEEK(43234) should return: 162
 - [Atari\_BASIC\_Rev.\_B.rom](attachments/Atari_BASIC_Rev._B.rom) ; ? PEEK(43234) should return: 96
@@ -113,8 +109,7 @@ and the resulting rom file can be found in the same directory.
 ## Atari BASIC Keywords
 
 An incredible good site for all [Atari BASIC keywords](http://www.abbuc.de/software/133-software/softwarereferenz/309-atari-BASIC-referenz) ; thank you ABBUC, greatly appreciated! :-)
-![](attachments/Atari_BASIC_Keywords.jpg)
-Atari BASIC Keywords
+- Atari BASIC Keywords<br>![](attachments/Atari_BASIC_Keywords.jpg)
 
 ## Abbreviations
 
@@ -241,30 +236,22 @@ Atari BASIC Keywords
 
 ## Pictures
 
-![](attachments/Atari_BASIC_Reference_Manual_800_.jpg)
-[Atari BASIC Reference Manual Rev. A](https://data.atariwiki.org/DOC/ATARI_BASIC_Reference_Manual.pdf) ; size: 77.7 MB ; 122 pages
+- [Atari BASIC Reference Manual Rev. A](https://data.atariwiki.org/DOC/ATARI_BASIC_Reference_Manual.pdf) ; size: 77.7 MB ; 122 pages<br>![](attachments/Atari_BASIC_Reference_Manual_800_.jpg)
 
-![](attachments/Atari_BASIC_Reference_Manual_XE.jpg)
-[Atari BASIC Reference Manual Rev. C](https://data.atariwiki.org/DOC/Atari_BASIC_Reference_Manual_Rev._C.pdf) ; size: 47.9 MB ; 134 pages
+- [Atari BASIC Reference Manual Rev. C](https://data.atariwiki.org/DOC/Atari_BASIC_Reference_Manual_Rev._C.pdf) ; size: 47.9 MB ; 134 pages<br>![](attachments/Atari_BASIC_Reference_Manual_XE.jpg)
 
-![](attachments/Atari_BASIC_1979.jpg)
-[Atari BASIC - Bob\_Albrecht, LeRoy Finkel and Jerald R. Brown (1979)](https://data.atariwiki.org/DOC/Atari_BASIC_1979.pdf) ; size: 80.9 MB ; OCR ; 348 pages
+- [Atari BASIC - Bob\_Albrecht, LeRoy Finkel and Jerald R. Brown (1979)](https://data.atariwiki.org/DOC/Atari_BASIC_1979.pdf) ; size: 80.9 MB ; OCR ; 348 pages<br>![](attachments/Atari_BASIC_1979.jpg)
 
-![](attachments/Atari_BASIC-Richard_Haskell.jpg)
-[Atari\_BASIC-Richard\_Haskell.jpg (1983)](https://data.atariwiki.org/DOC/Atari_BASIC_1983.pdf) ; size: 74.7 MB ; OCR ; 196 pages
+- [Atari\_BASIC-Richard\_Haskell.jpg (1983)](https://data.atariwiki.org/DOC/Atari_BASIC_1983.pdf) ; size: 74.7 MB ; OCR ; 196 pages<br>![](attachments/Atari_BASIC-Richard_Haskell.jpg)
 
-![](attachments/Atari_BASIC-XL-Edition.jpg)
-[Atari BASIC-XL Edition - Bob\_Albrecht, LeRoy Finkel and Jerald R. Brown (1985)](https://data.atariwiki.org/DOC/Atari_BASIC_XL_Edition-Bob_Albrecht,_LeRoy_Finkel_and_Jerald_R._Brown_1985.pdf) ; size: 86.5 MB ; OCR ; 404 pages
+- [Atari BASIC-XL Edition - Bob\_Albrecht, LeRoy Finkel and Jerald R. Brown (1985)](https://data.atariwiki.org/DOC/Atari_BASIC_XL_Edition-Bob_Albrecht,_LeRoy_Finkel_and_Jerald_R._Brown_1985.pdf) ; size: 86.5 MB ; OCR ; 404 pages<br>![](attachments/Atari_BASIC-XL-Edition.jpg)
 
 ![](attachments/ATARI_BASIC-Handbuch_fuer_Selbststudium_und_Praxis-BOB_ALBRECHT_Le_Roy_Finkel_JERALD_BROWN-2.jpg)
 
 [ATARI BASIC-Handbuch für Selbststudium und Praxis-BOB ALBRECHT, Le Roy Finkel, JERALD BROWN](https://data.atariwiki.org/DOC/ATARI_BASIC-Handbuch_fuer_Selbststudium_und_Praxis-BOB_ALBRECHT,_Le_Roy_Finkel,_JERALD_BROWN.pdf) ; Größe: 44,8 MB ; OCR ; 214 Doppelseiten
 
-![](attachments/Atari_BASIC_Reference_Guide_XL.jpg)
-[ATARI BASIC Leitfaden](attachments/ATARI_BASIC_Leitfaden.pdf) ; Größe: 5,2 MB ; 11 Seiten
+- [ATARI BASIC Leitfaden](attachments/ATARI_BASIC_Leitfaden.pdf) ; Größe: 5,2 MB ; 11 Seiten<br>![](attachments/Atari_BASIC_Reference_Guide_XL.jpg)
 
-![](attachments/Atari_BASIC_Quick_Reference_Guide-Gilbert_Held.jpg)
-[Atari BASIC - Quick Reference Guide - Gilbert Held](../../../../media/Companies/Atari/Atari_BASIC/attachments/Atari_BASIC_Quick_Reference_Guide-Gilbert_Held.pdf) ; size: 10.4 MB ; 8 pages
+- [Atari BASIC - Quick Reference Guide - Gilbert Held](../../../../media/Companies/Atari/Atari_BASIC/attachments/Atari_BASIC_Quick_Reference_Guide-Gilbert_Held.pdf) ; size: 10.4 MB ; 8 pages<br>![](attachments/Atari_BASIC_Quick_Reference_Guide-Gilbert_Held.jpg)
 
-![](attachments/Atari_BASIC_Referenz-Karten3.jpg)
-[Atari BASIC Referenz-Karten](attachments/Atari_BASIC_Referenz-Karten.pdf) ; Größe: 3,1 MB ; OCR ; 271 Seiten
+- [Atari BASIC Referenz-Karten](attachments/Atari_BASIC_Referenz-Karten.pdf) ; Größe: 3,1 MB ; OCR ; 271 Seiten<br>![](attachments/Atari_BASIC_Referenz-Karten3.jpg)

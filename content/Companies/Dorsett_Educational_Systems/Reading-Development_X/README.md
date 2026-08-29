@@ -62,14 +62,10 @@ Tracks (size in sum: 907 MB):
 
 ## Images
 
-![](attachments/xA_.jpg)
-Dorsett Atari Reading-Development (Reading Comprehension) X - cassettes with uneven numbers
+- Dorsett Atari Reading-Development (Reading Comprehension) X - cassettes with uneven numbers<br>![](attachments/xA_.jpg)
 
-![](attachments/xB_.jpg)
-Dorsett Atari Reading-Development (Reading Comprehension) X - cassettes with even numbers
+- Dorsett Atari Reading-Development (Reading Comprehension) X - cassettes with even numbers<br>![](attachments/xB_.jpg)
 
-![](attachments/xC_.jpg)
-Dorsett Atari Reading-Development (Reading Comprehension) X - top view
+- Dorsett Atari Reading-Development (Reading Comprehension) X - top view<br>![](attachments/xC_.jpg)
 
-![](attachments/xD_.jpg)
-Dorsett Atari Reading-Development (Reading Comprehension) X - side view
+- Dorsett Atari Reading-Development (Reading Comprehension) X - side view<br>![](attachments/xD_.jpg)

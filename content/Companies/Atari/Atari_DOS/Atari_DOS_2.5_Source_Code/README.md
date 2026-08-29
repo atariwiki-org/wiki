@@ -75,8 +75,7 @@ Then type:
 LOAD #D2:FMS.M65
 ASM
 You should receive the following figure:
-![](attachments/DOS.jpg)
-Successful assembled source code for the creation of DOS.SYS
+- Successful assembled source code for the creation of DOS.SYS<br>![](attachments/DOS.jpg)
 
 Then insert either the dossrc\_b-w.atr image or leave the dossrc-w.atr image in drive 2 (D2:):
 
@@ -84,8 +83,7 @@ Then type:
 LOAD #D2:DUP.M65
 ASM
 You should receive the following figure:
-![](attachments/DUP.jpg)
-Successful assembled source code for the creation of DUP.SYS
+- Successful assembled source code for the creation of DUP.SYS<br>![](attachments/DUP.jpg)
 
 Congratulations! You have created the object code for building DOS 2.5. :-)))
 On how to go on further, please read the recipe above.

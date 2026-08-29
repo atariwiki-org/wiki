@@ -19,57 +19,40 @@ The program will ask for the input values one at a time. One to ten values may b
 
 ## Box-Image
 
-![](attachments/Cover.jpg)
-Mortgage \& Loan Analysis CX4115
+- Mortgage \& Loan Analysis CX4115<br>![](attachments/Cover.jpg)
 
 ## Cassette-Images
 
-![](attachments/tape_cover.jpg)
-Mortgage \& Loan Analysis CX4115 - front of cassette
+- Mortgage \& Loan Analysis CX4115 - front of cassette<br>![](attachments/tape_cover.jpg)
 
-![](attachments/tape_back.jpg)
-Mortgage \& Loan Analysis CX4115 - back of cassette
+- Mortgage \& Loan Analysis CX4115 - back of cassette<br>![](attachments/tape_back.jpg)
 
 ## Screenshots
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-01.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 1
+- Mortgage \& Loan Analysis CX4115 - screenshot 1<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-01.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-02.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 2
+- Mortgage \& Loan Analysis CX4115 - screenshot 2<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-02.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-03.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 3
+- Mortgage \& Loan Analysis CX4115 - screenshot 3<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-03.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-04.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 4
+- Mortgage \& Loan Analysis CX4115 - screenshot 4<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-04.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-05.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 5
+- Mortgage \& Loan Analysis CX4115 - screenshot 5<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-05.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-06.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 6
+- Mortgage \& Loan Analysis CX4115 - screenshot 6<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-06.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-07.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 7
+- Mortgage \& Loan Analysis CX4115 - screenshot 7<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-07.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-08.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 8
+- Mortgage \& Loan Analysis CX4115 - screenshot 8<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-08.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-09.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 9
+- Mortgage \& Loan Analysis CX4115 - screenshot 9<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-09.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-10.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 10
+- Mortgage \& Loan Analysis CX4115 - screenshot 10<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-10.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-11.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 11
+- Mortgage \& Loan Analysis CX4115 - screenshot 11<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-11.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-12.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 12
+- Mortgage \& Loan Analysis CX4115 - screenshot 12<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-12.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-13.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 13
+- Mortgage \& Loan Analysis CX4115 - screenshot 13<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-13.jpg)
 
-![](attachments/Mortgage_and_Loan_Analysis_CX4115-14.jpg)
-Mortgage \& Loan Analysis CX4115 - screenshot 14
+- Mortgage \& Loan Analysis CX4115 - screenshot 14<br>![](attachments/Mortgage_and_Loan_Analysis_CX4115-14.jpg)

@@ -12,8 +12,6 @@ Copyright (C) 1983 Atari Elektronik-Vertriebsgesellschaft mbH
 
 ## Bilder
 
-![](attachments/Golf_Balkenrechnen_a.jpg)
-Golf-Balkenrechnen DXG 5703 - Box Vorderansicht
+- Golf-Balkenrechnen DXG 5703 - Box Vorderansicht<br>![](attachments/Golf_Balkenrechnen_a.jpg)
 
-![](attachments/Golf_Balkenrechnen_b.jpg)
-Golf-Balkenrechnen DXG 5703 - Box Rückansicht
+- Golf-Balkenrechnen DXG 5703 - Box Rückansicht<br>![](attachments/Golf_Balkenrechnen_b.jpg)

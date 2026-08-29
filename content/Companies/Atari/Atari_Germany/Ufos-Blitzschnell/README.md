@@ -19,26 +19,18 @@ Vielen lieben Dank an Helmut Weidner, ohne ihn wäre diese seltene Software wahr
 
 ## Bilder
 
-![](attachments/Ufos-Blitzschnell_TXG_9511-Front.jpg)
-Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Box Vorderansicht
+- Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Box Vorderansicht<br>![](attachments/Ufos-Blitzschnell_TXG_9511-Front.jpg)
 
-![](attachments/Ufos-Blitzschnell_TXG_9511-Back.jpg)
-Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Box Rückansicht
+- Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Box Rückansicht<br>![](attachments/Ufos-Blitzschnell_TXG_9511-Back.jpg)
 
-![](attachments/UFOs.jpg)
-Ufos-Startbildschirm
+- Ufos-Startbildschirm<br>![](attachments/UFOs.jpg)
 
-![](attachments/Blitzschnell.jpg)
-Blitzschnell-Startbildschirm
+- Blitzschnell-Startbildschirm<br>![](attachments/Blitzschnell.jpg)
 
-![](attachments/Screen1.jpg)
-Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Bildschirmfoto 1
+- Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Bildschirmfoto 1<br>![](attachments/Screen1.jpg)
 
-![](attachments/Screen2.jpg)
-Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Bildschirmfoto 2
+- Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Bildschirmfoto 2<br>![](attachments/Screen2.jpg)
 
-![](attachments/Screen3.jpg)
-Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Bildschirmfoto 3
+- Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Bildschirmfoto 3<br>![](attachments/Screen3.jpg)
 
-![](attachments/Screen4.jpg)
-Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Bildschirmfoto 4
+- Ufos-Blitzschnell DXG 5711 bzw. TXG 9511 - Bildschirmfoto 4<br>![](attachments/Screen4.jpg)

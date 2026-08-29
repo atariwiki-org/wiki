@@ -8,5 +8,4 @@ Copyright (C) 1984 by John Chenoweth \& Ron Bieber, distributed by Rana Systems,
 
 ## Picture
 
-![](attachments/SmartDOS_.jpg)
-SmartDOS startscreen
+- SmartDOS startscreen<br>![](attachments/SmartDOS_.jpg)

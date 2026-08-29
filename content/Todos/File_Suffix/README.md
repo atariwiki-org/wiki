@@ -1,7 +1,6 @@
 # File Extensions of Atari disk files
 
-![](attachments/Suffix.jpg)
-File extensions taken from the Atari Disk Operating System II-Reference Manual, page 19
+- File extensions taken from the Atari Disk Operating System II-Reference Manual, page 19<br>![](attachments/Suffix.jpg)
 
 | Extension | Description
 |-----------|-------------

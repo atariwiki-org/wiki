@@ -8,8 +8,7 @@ A powerful, individual, adaptable debugger for Atari 8-bit computers.
 
 ## Image
 
-![](attachments/Bug-65.jpg)
-Bug/65 Version 2.0 (C) 1982 McStuff Company and Optimized Systems Software, Inc.
+- Bug/65 Version 2.0 (C) 1982 McStuff Company and Optimized Systems Software, Inc.<br>![](attachments/Bug-65.jpg)
 
 ## BUG/65 Disassembly
 

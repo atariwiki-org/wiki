@@ -2,8 +2,7 @@
 
 ## Content
 
-![](attachments/World_History_Western_CX6004.jpg)
-Content of World History (Western) CX6004
+- Content of World History (Western) CX6004<br>![](attachments/World_History_Western_CX6004.jpg)
 
 ## Cassette-Images in FLAC-format
 
@@ -25,11 +24,8 @@ Content of World History (Western) CX6004
 
 ## Images
 
-![](attachments/P01.jpg)
-World History (Western) CX6004 - figure 1
+- World History (Western) CX6004 - figure 1<br>![](attachments/P01.jpg)
 
-![](attachments/P02.jpg)
-World History (Western) CX6004 - figure 2
+- World History (Western) CX6004 - figure 2<br>![](attachments/P02.jpg)
 
-![](attachments/P03.jpg)
-World History (Western) CX6004 - figure 3
+- World History (Western) CX6004 - figure 3<br>![](attachments/P03.jpg)

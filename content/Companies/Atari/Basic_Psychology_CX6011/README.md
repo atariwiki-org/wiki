@@ -4,105 +4,78 @@ Basic Psychology CX6011 is a really hard to find artifact with a rarity above 10
 
 ## Box-images
 
-![](attachments/Basic_Psychology_CX6011-1.jpg)
-Basic Psychology CX6011 - box content - thanks to Bill Lange for taking the picture
+- Basic Psychology CX6011 - box content - thanks to Bill Lange for taking the picture<br>![](attachments/Basic_Psychology_CX6011-1.jpg)
 
-![](attachments/Atari_Basic_Psychology_Front.jpg)
-Basic Psychology CX6011 - box cover- thanks to Allan Bushmann for taking the picture
+- Basic Psychology CX6011 - box cover- thanks to Allan Bushmann for taking the picture<br>![](attachments/Atari_Basic_Psychology_Front.jpg)
 
-![](attachments/Atari_Basic_Psychology_Back.jpg)
-Basic Psychology CX6011 - box back- thanks to Allan Bushmann for taking the picture
+- Basic Psychology CX6011 - box back- thanks to Allan Bushmann for taking the picture<br>![](attachments/Atari_Basic_Psychology_Back.jpg)
 
 ## Content
 
-![](attachments/Basic_Psychology_CX6011.jpg)
-Content of Basic Psychology CX6011
+- Content of Basic Psychology CX6011<br>![](attachments/Basic_Psychology_CX6011.jpg)
 
 ## Cassette-images in FLAC-format
 
-![](attachments/Atari_Basic_Psychology_Tape_A_Side_1.jpg)
-Basic Psychology CX6011 - Cassette A-Side 1 - thanks to Allan Bushmann for taking the picture
+- Basic Psychology CX6011 - Cassette A-Side 1 - thanks to Allan Bushmann for taking the picture<br>![](attachments/Atari_Basic_Psychology_Tape_A_Side_1.jpg)
 
 - [http://data.atariwiki.org/FLAC/BP/Basic\_Psychology\_CX6011-Cassette\_A-Side\_1.flac](http://data.atariwiki.org/FLAC/BP/Basic_Psychology_CX6011-Cassette_A-Side_1.flac) ; size: 169.5 MB
 
-![](attachments/Atari_Basic_Psychology_Tape_A_Side_2.jpg)
-Basic Psychology CX6011 - Cassette A-Side 2 - thanks to Allan Bushmann for taking the picture
+- Basic Psychology CX6011 - Cassette A-Side 2 - thanks to Allan Bushmann for taking the picture<br>![](attachments/Atari_Basic_Psychology_Tape_A_Side_2.jpg)
 
 - [http://data.atariwiki.org/FLAC/BP/Basic\_Psychology\_CX6011-Cassette\_A-Side\_2.flac](http://data.atariwiki.org/FLAC/BP/Basic_Psychology_CX6011-Cassette_A-Side_2.flac) ; size: 137.1 MB
 
-![](attachments/Atari_Basic_Psychology_Tape_B_Side_1.jpg)
-Basic Psychology CX6011 - Cassette B-Side 1 - thanks to Allan Bushmann for taking the picture
+- Basic Psychology CX6011 - Cassette B-Side 1 - thanks to Allan Bushmann for taking the picture<br>![](attachments/Atari_Basic_Psychology_Tape_B_Side_1.jpg)
 
 - [http://data.atariwiki.org/FLAC/BP/Basic\_Psychology\_CX6011-Cassette\_B-Side\_1.flac](http://data.atariwiki.org/FLAC/BP/Basic_Psychology_CX6011-Cassette_B-Side_1.flac) ; size: 139.8 MB
 
-![](attachments/Atari_Basic_Psychology_Tape_B_Side_2.jpg)
-Basic Psychology CX6011 - Cassette B-Side 2 - thanks to Allan Bushmann for taking the picture
+- Basic Psychology CX6011 - Cassette B-Side 2 - thanks to Allan Bushmann for taking the picture<br>![](attachments/Atari_Basic_Psychology_Tape_B_Side_2.jpg)
 
 - [http://data.atariwiki.org/FLAC/BP/Basic\_Psychology\_CX6011-Cassette\_B-Side\_2.flac](http://data.atariwiki.org/FLAC/BP/Basic_Psychology_CX6011-Cassette_B-Side_2.flac) ; size: 130.9 MB
 
-![](attachments/Atari_Basic_Psychology_Tape_C_Side_1.jpg)
-Basic Psychology CX6011 - Cassette C-Side 1 - thanks to Allan Bushmann for taking the picture
+- Basic Psychology CX6011 - Cassette C-Side 1 - thanks to Allan Bushmann for taking the picture<br>![](attachments/Atari_Basic_Psychology_Tape_C_Side_1.jpg)
 
 - [http://data.atariwiki.org/FLAC/BP/Basic\_Psychology\_CX6011-Cassette\_C-Side\_1.flac](http://data.atariwiki.org/FLAC/BP/Basic_Psychology_CX6011-Cassette_C-Side_1.flac) ; size: 171.4 MB
 
-![](attachments/Atari_Basic_Psychology_Tape_C_Side_2.jpg)
-Basic Psychology CX6011 - Cassette C-Side 2 - thanks to Allan Bushmann for taking the picture
+- Basic Psychology CX6011 - Cassette C-Side 2 - thanks to Allan Bushmann for taking the picture<br>![](attachments/Atari_Basic_Psychology_Tape_C_Side_2.jpg)
 
 - [http://data.atariwiki.org/FLAC/BP/Basic\_Psychology\_CX6011-Cassette\_C-Side\_2.flac](http://data.atariwiki.org/FLAC/BP/Basic_Psychology_CX6011-Cassette_C-Side_2.flac) ; size: 179.3 MB
 
-![](attachments/Atari_Basic_Psychology_Tape_D_Side_1.jpg)
-Basic Psychology CX6011 - Cassette D-Side 1 - thanks to Allan Bushmann for taking the picture
+- Basic Psychology CX6011 - Cassette D-Side 1 - thanks to Allan Bushmann for taking the picture<br>![](attachments/Atari_Basic_Psychology_Tape_D_Side_1.jpg)
 
 - [http://data.atariwiki.org/FLAC/BP/Basic\_Psychology\_CX6011-Cassette\_D-Side\_1.flac](http://data.atariwiki.org/FLAC/BP/Basic_Psychology_CX6011-Cassette_D-Side_1.flac) ; size: 172.5 MB
 
-![](attachments/Atari_Basic_Psychology_Tape_D_Side_2.jpg)
-Basic Psychology CX6011 - Cassette D-Side 2 - thanks to Allan Bushmann for taking the picture
+- Basic Psychology CX6011 - Cassette D-Side 2 - thanks to Allan Bushmann for taking the picture<br>![](attachments/Atari_Basic_Psychology_Tape_D_Side_2.jpg)
 
 - [http://data.atariwiki.org/FLAC/BP/Basic\_Psychology\_CX6011-Cassette\_D-Side\_2.flac](http://data.atariwiki.org/FLAC/BP/Basic_Psychology_CX6011-Cassette_D-Side_2.flac) ; size: 173.8 MB
 
 ## Screenshots
 
-![](attachments/BP01.jpg)
-Basic Psychology CX6011 - figure 01
+- Basic Psychology CX6011 - figure 01<br>![](attachments/BP01.jpg)
 
-![](attachments/BP02.jpg)
-Basic Psychology CX6011 - figure 02
+- Basic Psychology CX6011 - figure 02<br>![](attachments/BP02.jpg)
 
-![](attachments/BP03.jpg)
-Basic Psychology CX6011 - figure 03
+- Basic Psychology CX6011 - figure 03<br>![](attachments/BP03.jpg)
 
-![](attachments/BP04.jpg)
-Basic Psychology CX6011 - figure 04
+- Basic Psychology CX6011 - figure 04<br>![](attachments/BP04.jpg)
 
-![](attachments/BP05.jpg)
-Basic Psychology CX6011 - figure 05
+- Basic Psychology CX6011 - figure 05<br>![](attachments/BP05.jpg)
 
-![](attachments/BP06.jpg)
-Basic Psychology CX6011 - figure 06
+- Basic Psychology CX6011 - figure 06<br>![](attachments/BP06.jpg)
 
-![](attachments/BP07.jpg)
-Basic Psychology CX6011 - figure 07
+- Basic Psychology CX6011 - figure 07<br>![](attachments/BP07.jpg)
 
-![](attachments/BP08.jpg)
-Basic Psychology CX6011 - figure 08
+- Basic Psychology CX6011 - figure 08<br>![](attachments/BP08.jpg)
 
-![](attachments/BP09.jpg)
-Basic Psychology CX6011 - figure 09
+- Basic Psychology CX6011 - figure 09<br>![](attachments/BP09.jpg)
 
-![](attachments/BP10.jpg)
-Basic Psychology CX6011 - figure 10
+- Basic Psychology CX6011 - figure 10<br>![](attachments/BP10.jpg)
 
-![](attachments/BP11.jpg)
-Basic Psychology CX6011 - figure 11
+- Basic Psychology CX6011 - figure 11<br>![](attachments/BP11.jpg)
 
-![](attachments/BP12.jpg)
-Basic Psychology CX6011 - figure 12
+- Basic Psychology CX6011 - figure 12<br>![](attachments/BP12.jpg)
 
-![](attachments/BP13.jpg)
-Basic Psychology CX6011 - figure 13
+- Basic Psychology CX6011 - figure 13<br>![](attachments/BP13.jpg)
 
-![](attachments/BP14.jpg)
-Basic Psychology CX6011 - figure 14
+- Basic Psychology CX6011 - figure 14<br>![](attachments/BP14.jpg)
 
-![](attachments/BP15.jpg)
-Basic Psychology CX6011 - figure 15
+- Basic Psychology CX6011 - figure 15<br>![](attachments/BP15.jpg)

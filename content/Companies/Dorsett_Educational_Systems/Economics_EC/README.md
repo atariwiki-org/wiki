@@ -62,8 +62,6 @@ Tracks (size in sum: 1.64 GB):
 
 ## Images
 
-![](attachments/ecA_.jpg)
-Dorsett Atari Economics - cassettes with uneven numbers
+- Dorsett Atari Economics - cassettes with uneven numbers<br>![](attachments/ecA_.jpg)
 
-![](attachments/ecB_.jpg)
-Dorsett Atari Economics - cassettes with even numbers
+- Dorsett Atari Economics - cassettes with even numbers<br>![](attachments/ecB_.jpg)

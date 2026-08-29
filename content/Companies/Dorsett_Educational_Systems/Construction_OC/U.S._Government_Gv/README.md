@@ -62,8 +62,6 @@ Tracks (size in sum: 1.68 GB):
 
 ## Images
 
-![](attachments/gvA_.jpg)
-Dorsett Atari U.S. Government - cassettes with uneven numbers
+- Dorsett Atari U.S. Government - cassettes with uneven numbers<br>![](attachments/gvA_.jpg)
 
-![](attachments/gvB_.jpg)
-Dorsett Atari U.S. Government - cassettes with even numbers
+- Dorsett Atari U.S. Government - cassettes with even numbers<br>![](attachments/gvB_.jpg)

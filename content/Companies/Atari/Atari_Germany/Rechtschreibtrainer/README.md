@@ -14,8 +14,7 @@ Diese Software schien verloren, doch dank Marceau Mallard von [Atarinside](http:
 
 ## Bild
 
-![](attachments/cover.jpg)
-Rechtschreibtrainer DXG 5713 - Box (Vorder- und Rückansicht) ; Vielen lieben Dank Marceau Mallard von [Atarinside](http://atarinside.dyndns.org/blog/index.php/atarinside-items/rechtschreibtrainer/)
+- Rechtschreibtrainer DXG 5713 - Box (Vorder- und Rückansicht) ; Vielen lieben Dank Marceau Mallard von [Atarinside](http://atarinside.dyndns.org/blog/index.php/atarinside-items/rechtschreibtrainer/)<br>![](attachments/cover.jpg)
 
 ## Referenzen
 

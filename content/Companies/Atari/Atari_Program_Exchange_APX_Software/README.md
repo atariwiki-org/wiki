@@ -26,8 +26,7 @@
 - [APX-Catalog, Fall 1983](https://data.atariwiki.org/DOC/APX/APX_Catalog_Fall_1983.pdf) ; size: 69.8 MB ; 72 pages ; thanks to Allan Bushmann and archive.org :-)))
 - [APX-Catalog, Winter 1983](https://data.atariwiki.org/DOC/APX/APX_Catalog_Winter_1983.pdf) ; size: 9.2 MB ; 9 pages ; thanks to Allan Bushmann and archive.org :-)))
 
-![](attachments/APX_Catalog_Winter_1981_Cover.jpg)
-APX-Catalog, Winter 1981
+- APX-Catalog, Winter 1981<br>![](attachments/APX_Catalog_Winter_1981_Cover.jpg)
 
 ## Manuals (191/254) 75 %
 

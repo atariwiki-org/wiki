@@ -12,14 +12,10 @@ Copyright (C) 1983 Atari Elektronik Vertriebsgesellschaft mbH
 
 ## Bilder
 
-![](attachments/Box.jpg)
-Atari Tipp Trainer TXG 9512 - Box: Vorderansicht
+- Atari Tipp Trainer TXG 9512 - Box: Vorderansicht<br>![](attachments/Box.jpg)
 
-![](attachments/tipp_trainer_atari_germany_1.gif)
-Atari Tipp Trainer TXG 9512 - Startbildschirm
+- Atari Tipp Trainer TXG 9512 - Startbildschirm<br>![](attachments/tipp_trainer_atari_germany_1.gif)
 
-![](attachments/tipp_trainer_atari_germany_2.gif)
-Atari Tipp Trainer TXG 9512 - Programmbeispiel 1
+- Atari Tipp Trainer TXG 9512 - Programmbeispiel 1<br>![](attachments/tipp_trainer_atari_germany_2.gif)
 
-![](attachments/tipp_trainer_atari_germany_3.gif)
-Atari Tipp Trainer TXG 9512 - Programmbeispiel 2
+- Atari Tipp Trainer TXG 9512 - Programmbeispiel 2<br>![](attachments/tipp_trainer_atari_germany_3.gif)

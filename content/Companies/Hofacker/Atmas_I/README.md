@@ -12,11 +12,8 @@ Elcomp / Hofacker ATMAS Editor and Macro Assembler program with free program des
 
 ## Pictures
 
-![](attachments/ATMAS_I-3_.jpg)
-Atmas I - Editor and Macroassembler - Box Cover
+- Atmas I - Editor and Macroassembler - Box Cover<br>![](attachments/ATMAS_I-3_.jpg)
 
-![](attachments/ATMAS_I-5_.jpg)
-Atmas I - Editor and Macroassembler - Program Disk
+- Atmas I - Editor and Macroassembler - Program Disk<br>![](attachments/ATMAS_I-5_.jpg)
 
-![](attachments/ATMAS_I-6_.jpg)
-Atmas I - Editor and Macroassembler - Box Back
+- Atmas I - Editor and Macroassembler - Box Back<br>![](attachments/ATMAS_I-6_.jpg)

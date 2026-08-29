@@ -20,5 +20,4 @@ Built-in DOS commands include DIR, LOCK, UNLOCK, RENAME and !ERASE.
 
 ## Image
 
-![](attachments/Enhancements_to_Basic_2.1.jpg)
-Enhancements to Basic 2.1
+- Enhancements to Basic 2.1<br>![](attachments/Enhancements_to_Basic_2.1.jpg)

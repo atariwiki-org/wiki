@@ -62,8 +62,6 @@ Tracks (size in sum: 1.63 GB):
 
 ## Images
 
-![](attachments/meA_.jpg)
-Dorsett Atari Mathematics for Electronics - cassettes with uneven numbers
+- Dorsett Atari Mathematics for Electronics - cassettes with uneven numbers<br>![](attachments/meA_.jpg)
 
-![](attachments/meB_.jpg)
-Dorsett Atari Mathematics for Electronics - cassettes with even numbers
+- Dorsett Atari Mathematics for Electronics - cassettes with even numbers<br>![](attachments/meB_.jpg)

@@ -35,11 +35,9 @@ Please take into account, that Enhancements to Graph It is from 1982, but with t
 
 ## Images
 
-![](attachments/Intro.jpg)
-Enhancements to Graph It - Intro Screen
+- Enhancements to Graph It - Intro Screen<br>![](attachments/Intro.jpg)
 
-![](attachments/Original_Disk_Content.jpg)
-Enhancements to Graph It - Original Disk Content
+- Enhancements to Graph It - Original Disk Content<br>![](attachments/Original_Disk_Content.jpg)
 
 ## ATR-Images
 
@@ -81,41 +79,28 @@ Suffix 'DPL' Polar Plot-File
 
 ## Examples
 
-![](attachments/02._Sales_Increase.jpg)
-Enhancements to Graph It - Sales Increase
+- Enhancements to Graph It - Sales Increase<br>![](attachments/02._Sales_Increase.jpg)
 
-![](attachments/03._Five_Month_Budget.jpg)
-Enhancements to Graph It - Five Month Budget
+- Enhancements to Graph It - Five Month Budget<br>![](attachments/03._Five_Month_Budget.jpg)
 
-![](attachments/04._Federal_Reserve.jpg)
-Enhancements to Graph It - Federal Reserve
+- Enhancements to Graph It - Federal Reserve<br>![](attachments/04._Federal_Reserve.jpg)
 
-![](attachments/11._Flower-Polar_Plot-1.jpg)
-Enhancements to Graph It - Flower-Polar Plot-1
+- Enhancements to Graph It - Flower-Polar Plot-1<br>![](attachments/11._Flower-Polar_Plot-1.jpg)
 
-![](attachments/12._Flower-Polar_Plot-2.jpg)
-Enhancements to Graph It - Flower-Polar Plot-2
+- Enhancements to Graph It - Flower-Polar Plot-2<br>![](attachments/12._Flower-Polar_Plot-2.jpg)
 
-![](attachments/13._Flower-Polar_Plot-3.jpg)
-Enhancements to Graph It - Flower-Polar Plot-3
+- Enhancements to Graph It - Flower-Polar Plot-3<br>![](attachments/13._Flower-Polar_Plot-3.jpg)
 
-![](attachments/19._3D-Plot-1.jpg)
-Enhancements to Graph It - 3D-Plot-1
+- Enhancements to Graph It - 3D-Plot-1<br>![](attachments/19._3D-Plot-1.jpg)
 
-![](attachments/20._3D-Plot-2.jpg)
-Enhancements to Graph It - 3D-Plot-2
+- Enhancements to Graph It - 3D-Plot-2<br>![](attachments/20._3D-Plot-2.jpg)
 
-![](attachments/21._3D-Plot-3.jpg)
-Enhancements to Graph It - 3D-Plot-3
+- Enhancements to Graph It - 3D-Plot-3<br>![](attachments/21._3D-Plot-3.jpg)
 
-![](attachments/22._3D-Plot-4.jpg)
-Enhancements to Graph It - 3D-Plot-4
+- Enhancements to Graph It - 3D-Plot-4<br>![](attachments/22._3D-Plot-4.jpg)
 
-![](attachments/Two_Dimensional_Plots-1.jpg)
-Enhancements to Graph It - Two Dimensional Plots-1
+- Enhancements to Graph It - Two Dimensional Plots-1<br>![](attachments/Two_Dimensional_Plots-1.jpg)
 
-![](attachments/Two_Dimensional_Plots-2.jpg)
-Enhancements to Graph It - Two Dimensional Plots-2
+- Enhancements to Graph It - Two Dimensional Plots-2<br>![](attachments/Two_Dimensional_Plots-2.jpg)
 
-![](attachments/Two_Dimensional_Plots-3.jpg)
-Enhancements to Graph It - Two Dimensional Plots-3
+- Enhancements to Graph It - Two Dimensional Plots-3<br>![](attachments/Two_Dimensional_Plots-3.jpg)

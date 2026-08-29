@@ -31,23 +31,16 @@ Version 2.25
 
 ## Images
 
-![](attachments/The_Writer_s_Tool-Description.jpg)
-The Writer's Tool - Description
+- The Writer's Tool - Description<br>![](attachments/The_Writer_s_Tool-Description.jpg)
 
-![](attachments/The_Writer_s_Tool-Binder.jpg)
-The Writer's Tool - Binder
+- The Writer's Tool - Binder<br>![](attachments/The_Writer_s_Tool-Binder.jpg)
 
-![](attachments/The_Writer_s_Tool-Cart_Orange.jpg)
-The Writer's Tool - Orange Cartridge
+- The Writer's Tool - Orange Cartridge<br>![](attachments/The_Writer_s_Tool-Cart_Orange.jpg)
 
-![](attachments/The_Writer_s_Tool-Master_Disk.jpg)
-The Writer's Tool - Master Disk
+- The Writer's Tool - Master Disk<br>![](attachments/The_Writer_s_Tool-Master_Disk.jpg)
 
-![](attachments/The_Writer_s_Tool-Dictionary_Disk.jpg)
-The Writer's Tool - Dictionary Disk
+- The Writer's Tool - Dictionary Disk<br>![](attachments/The_Writer_s_Tool-Dictionary_Disk.jpg)
 
-![](attachments/The_Writer_s_Tool-Version_2.25.jpg)
-The Writer's Tool - Version 2.25
+- The Writer's Tool - Version 2.25<br>![](attachments/The_Writer_s_Tool-Version_2.25.jpg)
 
-![](attachments/The_Writer_s_Tool-Free_RAM.jpg)
-The Writer's Tool - maximum free RAM for writing: 23,071 bytes
+- The Writer's Tool - maximum free RAM for writing: 23,071 bytes<br>![](attachments/The_Writer_s_Tool-Free_RAM.jpg)

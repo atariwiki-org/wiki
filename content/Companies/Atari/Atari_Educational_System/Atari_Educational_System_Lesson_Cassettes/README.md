@@ -2,23 +2,17 @@
 
 ## Images
 
-![](attachments/Atari_Educational_System_CXL_4001-1.jpg)
-Atari Educational System CXL 4001 - 1
+- Atari Educational System CXL 4001 - 1<br>![](attachments/Atari_Educational_System_CXL_4001-1.jpg)
 
-![](attachments/Atari_Educational_System_CXL_4001-2.jpg)
-Atari Educational System CXL 4001 - 2
+- Atari Educational System CXL 4001 - 2<br>![](attachments/Atari_Educational_System_CXL_4001-2.jpg)
 
-![](attachments/Educational_System_Cartridge.jpg)
-Atari Educational System Master Cartridge CXL4001
+- Atari Educational System Master Cartridge CXL4001<br>![](attachments/Educational_System_Cartridge.jpg)
 
-![](attachments/Atari_Educational_System-Start.jpg)
-Atari Educational System Master Cartridge CXL4001 at Startup (C) Copyright Atari 1979
+- Atari Educational System Master Cartridge CXL4001 at Startup (C) Copyright Atari 1979<br>![](attachments/Atari_Educational_System-Start.jpg)
 
-![](attachments/Dorsett.jpg)
-Dorsett 'Talk and Teach System' (C) Copyright 1983 by Dorsett Educational Systems, Inc.
+- Dorsett 'Talk and Teach System' (C) Copyright 1983 by Dorsett Educational Systems, Inc.<br>![](attachments/Dorsett.jpg)
 
-![](attachments/Overview.jpg)
-Overview of the Atari Educational System Programs
+- Overview of the Atari Educational System Programs<br>![](attachments/Overview.jpg)
 
 ## All available images in one archive
 
@@ -64,33 +58,26 @@ Lloyd G. Dorsett, the founder, has proven, that the Atari can do much more than 
 
 ![](attachments/part1.jpg)
 ![](attachments/part2.jpg)
-![](attachments/part3.jpg)
-Popular Science, January 1983, page 99
+- Popular Science, January 1983, page 99<br>![](attachments/part3.jpg)
 
 ## Examples
 
 ![](../../Basic_Electricity_CX6016/attachments/Basic_Electricity_CX6016.jpg)
 Basic Electricity CX6016
 
-![](attachments/Atari_Educational_System_Lesson-Counseling_Procedures_CX6006.jpg)
-Counseling Procedures CX6006
+- Counseling Procedures CX6006<br>![](attachments/Atari_Educational_System_Lesson-Counseling_Procedures_CX6006.jpg)
 
-![](attachments/1.jpg)
-U.S. History CX6001, Business Communications CX6010, Basic Psychology CX6011
+- U.S. History CX6001, Business Communications CX6010, Basic Psychology CX6011<br>![](attachments/1.jpg)
 World History (Western) CX6004, Spelling CX6015, U.S. Government CX6002
 
-![](attachments/2.jpg)
-Basic Algebra CX6017, Effective Writing CX6012
+- Basic Algebra CX6017, Effective Writing CX6012<br>![](attachments/2.jpg)
 
-![](attachments/Atari_Educational_System_Lesson_Cassettes-Kay_Savetz2.jpg)
-Basic Electricity CX6016, U.S. Government CX6002, Great Classics CX6009 and others ; thank you Kay Savetz for giving us the pictures. :-)
+- Basic Electricity CX6016, U.S. Government CX6002, Great Classics CX6009 and others ; thank you Kay Savetz for giving us the pictures. :-)<br>![](attachments/Atari_Educational_System_Lesson_Cassettes-Kay_Savetz2.jpg)
 
-![](attachments/Business_Communications_CX6010-Principles_of_Accounting_CX6007.jpg)
-Business Communications CX6010-Principles of Accounting CX6007
+- Business Communications CX6010-Principles of Accounting CX6007<br>![](attachments/Business_Communications_CX6010-Principles_of_Accounting_CX6007.jpg)
 
 ## Outlook
 
 So you think you now have the complete Atari Educational System program? Think again:
 
-![](attachments/45packages.jpg)
-The 'remaining' ones from the Dorsett Educational System program for the Atari. The NeverEnding Story is a fantasy film, but The NeverEnding: "Thank you Kay Savetz" is for real! Kay, if there is an Atari walk of fame, be sure, you deserve a star under the top 10 there!
+- The 'remaining' ones from the Dorsett Educational System program for the Atari. The NeverEnding Story is a fantasy film, but The NeverEnding: "Thank you Kay Savetz" is for real! Kay, if there is an Atari walk of fame, be sure, you deserve a star under the top 10 there!<br>![](attachments/45packages.jpg)

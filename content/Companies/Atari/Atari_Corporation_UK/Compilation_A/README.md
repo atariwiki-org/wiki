@@ -29,10 +29,8 @@ See cover picture
 
 ## Cover
 
-![](attachments/Compilation_A_TXP7100_cover.jpg)
-Compilation A TXP7100 cover
+- Compilation A TXP7100 cover<br>![](attachments/Compilation_A_TXP7100_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Compilation_A_TXP7100_cass.jpg)
-Compilation A TXP7100 cassette
+- Compilation A TXP7100 cassette<br>![](attachments/Compilation_A_TXP7100_cass.jpg)

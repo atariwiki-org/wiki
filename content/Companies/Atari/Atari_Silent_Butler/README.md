@@ -55,306 +55,206 @@ Silent Butler is simple to use and is functionally adequate for home needs. But 
 
 ## Box
 
-![](attachments/ATASilentButler-1-750.jpg)
-Atari Silent Butler - box front
+- Atari Silent Butler - box front<br>![](attachments/ATASilentButler-1-750.jpg)
 
-![](attachments/ATASilentButler-2-750.jpg)
-Atari Silent Butler - box back
+- Atari Silent Butler - box back<br>![](attachments/ATASilentButler-2-750.jpg)
 
 ## Diskettes
 
-![](attachments/Program_Disk_.jpg)
-Atari Silent Butler - Program Disk
+- Atari Silent Butler - Program Disk<br>![](attachments/Program_Disk_.jpg)
 
-![](attachments/Record_Disk_.jpg)
-Atari Silent Butler - Record Disk
+- Atari Silent Butler - Record Disk<br>![](attachments/Record_Disk_.jpg)
 
-![](attachments/Program_Disk-Label_.jpg)
-Atari Silent Butler - Program Disk Label
+- Atari Silent Butler - Program Disk Label<br>![](attachments/Program_Disk-Label_.jpg)
 
-![](attachments/Record_Disk-Label_.jpg)
-Atari Silent Butler - Record Disk Label
+- Atari Silent Butler - Record Disk Label<br>![](attachments/Record_Disk-Label_.jpg)
 
 ## Screenshots
 
-![](attachments/Screenshot01.jpg)
-Atari Silent Butler - Screenshot 01 from SD-Program-Disk
+- Atari Silent Butler - Screenshot 01 from SD-Program-Disk<br>![](attachments/Screenshot01.jpg)
 
-![](attachments/Screenshot02.jpg)
-Atari Silent Butler - Screenshot 02 from MD-Program-Disk
+- Atari Silent Butler - Screenshot 02 from MD-Program-Disk<br>![](attachments/Screenshot02.jpg)
 
-![](attachments/Screenshot03.jpg)
-Atari Silent Butler - Screenshot 03
+- Atari Silent Butler - Screenshot 03<br>![](attachments/Screenshot03.jpg)
 
-![](attachments/Screenshot04.jpg)
-Atari Silent Butler - Screenshot 04
+- Atari Silent Butler - Screenshot 04<br>![](attachments/Screenshot04.jpg)
 
-![](attachments/Screenshot05.jpg)
-Atari Silent Butler - Screenshot 05
+- Atari Silent Butler - Screenshot 05<br>![](attachments/Screenshot05.jpg)
 
-![](attachments/Screenshot06.jpg)
-Atari Silent Butler - Screenshot 06
+- Atari Silent Butler - Screenshot 06<br>![](attachments/Screenshot06.jpg)
 
-![](attachments/Screenshot07.jpg)
-Atari Silent Butler - Screenshot 07
+- Atari Silent Butler - Screenshot 07<br>![](attachments/Screenshot07.jpg)
 
-![](attachments/Screenshot08.jpg)
-Atari Silent Butler - Screenshot 08
+- Atari Silent Butler - Screenshot 08<br>![](attachments/Screenshot08.jpg)
 
-![](attachments/Screenshot09.jpg)
-Atari Silent Butler - Screenshot 09
+- Atari Silent Butler - Screenshot 09<br>![](attachments/Screenshot09.jpg)
 
-![](attachments/Screenshot10.jpg)
-Atari Silent Butler - Screenshot 10
+- Atari Silent Butler - Screenshot 10<br>![](attachments/Screenshot10.jpg)
 
-![](attachments/Screenshot11.jpg)
-Atari Silent Butler - Screenshot 11
+- Atari Silent Butler - Screenshot 11<br>![](attachments/Screenshot11.jpg)
 
-![](attachments/Screenshot12.jpg)
-Atari Silent Butler - Screenshot 12
+- Atari Silent Butler - Screenshot 12<br>![](attachments/Screenshot12.jpg)
 
-![](attachments/Screenshot13.jpg)
-Atari Silent Butler - Screenshot 13
+- Atari Silent Butler - Screenshot 13<br>![](attachments/Screenshot13.jpg)
 
-![](attachments/Screenshot14.jpg)
-Atari Silent Butler - Screenshot 14
+- Atari Silent Butler - Screenshot 14<br>![](attachments/Screenshot14.jpg)
 
-![](attachments/Screenshot15.jpg)
-Atari Silent Butler - Screenshot 15
+- Atari Silent Butler - Screenshot 15<br>![](attachments/Screenshot15.jpg)
 
-![](attachments/Screenshot16.jpg)
-Atari Silent Butler - Screenshot 16
+- Atari Silent Butler - Screenshot 16<br>![](attachments/Screenshot16.jpg)
 
-![](attachments/Screenshot17.jpg)
-Atari Silent Butler - Screenshot 17
+- Atari Silent Butler - Screenshot 17<br>![](attachments/Screenshot17.jpg)
 
-![](attachments/Screenshot18.jpg)
-Atari Silent Butler - Screenshot 18
+- Atari Silent Butler - Screenshot 18<br>![](attachments/Screenshot18.jpg)
 
-![](attachments/Screenshot19.jpg)
-Atari Silent Butler - Screenshot 19
+- Atari Silent Butler - Screenshot 19<br>![](attachments/Screenshot19.jpg)
 
-![](attachments/Screenshot20.jpg)
-Atari Silent Butler - Screenshot 20
+- Atari Silent Butler - Screenshot 20<br>![](attachments/Screenshot20.jpg)
 
-![](attachments/Screenshot21.jpg)
-Atari Silent Butler - Screenshot 21
+- Atari Silent Butler - Screenshot 21<br>![](attachments/Screenshot21.jpg)
 
-![](attachments/Screenshot22.jpg)
-Atari Silent Butler - Screenshot 22
+- Atari Silent Butler - Screenshot 22<br>![](attachments/Screenshot22.jpg)
 
-![](attachments/Screenshot23.jpg)
-Atari Silent Butler - Screenshot 23
+- Atari Silent Butler - Screenshot 23<br>![](attachments/Screenshot23.jpg)
 
-![](attachments/Screenshot24.jpg)
-Atari Silent Butler - Screenshot 24
+- Atari Silent Butler - Screenshot 24<br>![](attachments/Screenshot24.jpg)
 
-![](attachments/Screenshot25.jpg)
-Atari Silent Butler - Screenshot 25
+- Atari Silent Butler - Screenshot 25<br>![](attachments/Screenshot25.jpg)
 
-![](attachments/Screenshot26.jpg)
-Atari Silent Butler - Screenshot 26
+- Atari Silent Butler - Screenshot 26<br>![](attachments/Screenshot26.jpg)
 
-![](attachments/Screenshot27.jpg)
-Atari Silent Butler - Screenshot 27
+- Atari Silent Butler - Screenshot 27<br>![](attachments/Screenshot27.jpg)
 
-![](attachments/Screenshot28.jpg)
-Atari Silent Butler - Screenshot 28
+- Atari Silent Butler - Screenshot 28<br>![](attachments/Screenshot28.jpg)
 
-![](attachments/Screenshot29.jpg)
-Atari Silent Butler - Screenshot 29
+- Atari Silent Butler - Screenshot 29<br>![](attachments/Screenshot29.jpg)
 
-![](attachments/Screenshot30.jpg)
-Atari Silent Butler - Screenshot 30
+- Atari Silent Butler - Screenshot 30<br>![](attachments/Screenshot30.jpg)
 
-![](attachments/Screenshot31.jpg)
-Atari Silent Butler - Screenshot 31
+- Atari Silent Butler - Screenshot 31<br>![](attachments/Screenshot31.jpg)
 
-![](attachments/Screenshot32.jpg)
-Atari Silent Butler - Screenshot 32
+- Atari Silent Butler - Screenshot 32<br>![](attachments/Screenshot32.jpg)
 
-![](attachments/Screenshot33.jpg)
-Atari Silent Butler - Screenshot 33
+- Atari Silent Butler - Screenshot 33<br>![](attachments/Screenshot33.jpg)
 
-![](attachments/Screenshot34.jpg)
-Atari Silent Butler - Screenshot 34
+- Atari Silent Butler - Screenshot 34<br>![](attachments/Screenshot34.jpg)
 
-![](attachments/Screenshot35.jpg)
-Atari Silent Butler - Screenshot 35
+- Atari Silent Butler - Screenshot 35<br>![](attachments/Screenshot35.jpg)
 
-![](attachments/Screenshot36.jpg)
-Atari Silent Butler - Screenshot 36
+- Atari Silent Butler - Screenshot 36<br>![](attachments/Screenshot36.jpg)
 
-![](attachments/Screenshot37.jpg)
-Atari Silent Butler - Screenshot 37
+- Atari Silent Butler - Screenshot 37<br>![](attachments/Screenshot37.jpg)
 
-![](attachments/Screenshot38.jpg)
-Atari Silent Butler - Screenshot 38
+- Atari Silent Butler - Screenshot 38<br>![](attachments/Screenshot38.jpg)
 
-![](attachments/Screenshot39.jpg)
-Atari Silent Butler - Screenshot 39
+- Atari Silent Butler - Screenshot 39<br>![](attachments/Screenshot39.jpg)
 
-![](attachments/Screenshot40.jpg)
-Atari Silent Butler - Screenshot 40
+- Atari Silent Butler - Screenshot 40<br>![](attachments/Screenshot40.jpg)
 
-![](attachments/Screenshot41.jpg)
-Atari Silent Butler - Screenshot 41
+- Atari Silent Butler - Screenshot 41<br>![](attachments/Screenshot41.jpg)
 
-![](attachments/Screenshot42.jpg)
-Atari Silent Butler - Screenshot 42
+- Atari Silent Butler - Screenshot 42<br>![](attachments/Screenshot42.jpg)
 
-![](attachments/Screenshot43.jpg)
-Atari Silent Butler - Screenshot 43
+- Atari Silent Butler - Screenshot 43<br>![](attachments/Screenshot43.jpg)
 
-![](attachments/Screenshot44.jpg)
-Atari Silent Butler - Screenshot 44
+- Atari Silent Butler - Screenshot 44<br>![](attachments/Screenshot44.jpg)
 
-![](attachments/Screenshot45.jpg)
-Atari Silent Butler - Screenshot 45
+- Atari Silent Butler - Screenshot 45<br>![](attachments/Screenshot45.jpg)
 
-![](attachments/Screenshot46.jpg)
-Atari Silent Butler - Screenshot 46
+- Atari Silent Butler - Screenshot 46<br>![](attachments/Screenshot46.jpg)
 
-![](attachments/Screenshot47.jpg)
-Atari Silent Butler - Screenshot 47
+- Atari Silent Butler - Screenshot 47<br>![](attachments/Screenshot47.jpg)
 
-![](attachments/Screenshot48.jpg)
-Atari Silent Butler - Screenshot 48
+- Atari Silent Butler - Screenshot 48<br>![](attachments/Screenshot48.jpg)
 
-![](attachments/Screenshot49.jpg)
-Atari Silent Butler - Screenshot 49
+- Atari Silent Butler - Screenshot 49<br>![](attachments/Screenshot49.jpg)
 
-![](attachments/Screenshot50.jpg)
-Atari Silent Butler - Screenshot 50
+- Atari Silent Butler - Screenshot 50<br>![](attachments/Screenshot50.jpg)
 
-![](attachments/Screenshot51.jpg)
-Atari Silent Butler - Screenshot 51
+- Atari Silent Butler - Screenshot 51<br>![](attachments/Screenshot51.jpg)
 
-![](attachments/Screenshot52.jpg)
-Atari Silent Butler - Screenshot 52
+- Atari Silent Butler - Screenshot 52<br>![](attachments/Screenshot52.jpg)
 
-![](attachments/Screenshot53.jpg)
-Atari Silent Butler - Screenshot 53
+- Atari Silent Butler - Screenshot 53<br>![](attachments/Screenshot53.jpg)
 
-![](attachments/Screenshot54.jpg)
-Atari Silent Butler - Screenshot 54
+- Atari Silent Butler - Screenshot 54<br>![](attachments/Screenshot54.jpg)
 
-![](attachments/Screenshot55.jpg)
-Atari Silent Butler - Screenshot 55
+- Atari Silent Butler - Screenshot 55<br>![](attachments/Screenshot55.jpg)
 
-![](attachments/Screenshot56.jpg)
-Atari Silent Butler - Screenshot 56
+- Atari Silent Butler - Screenshot 56<br>![](attachments/Screenshot56.jpg)
 
-![](attachments/Screenshot57.jpg)
-Atari Silent Butler - Screenshot 57
+- Atari Silent Butler - Screenshot 57<br>![](attachments/Screenshot57.jpg)
 
-![](attachments/Screenshot58.jpg)
-Atari Silent Butler - Screenshot 58
+- Atari Silent Butler - Screenshot 58<br>![](attachments/Screenshot58.jpg)
 
-![](attachments/Screenshot59.jpg)
-Atari Silent Butler - Screenshot 59
+- Atari Silent Butler - Screenshot 59<br>![](attachments/Screenshot59.jpg)
 
-![](attachments/Screenshot60.jpg)
-Atari Silent Butler - Screenshot 60
+- Atari Silent Butler - Screenshot 60<br>![](attachments/Screenshot60.jpg)
 
-![](attachments/Screenshot61.jpg)
-Atari Silent Butler - Screenshot 61
+- Atari Silent Butler - Screenshot 61<br>![](attachments/Screenshot61.jpg)
 
-![](attachments/Screenshot62.jpg)
-Atari Silent Butler - Screenshot 62
+- Atari Silent Butler - Screenshot 62<br>![](attachments/Screenshot62.jpg)
 
-![](attachments/Screenshot63.jpg)
-Atari Silent Butler - Screenshot 63
+- Atari Silent Butler - Screenshot 63<br>![](attachments/Screenshot63.jpg)
 
-![](attachments/Screenshot64.jpg)
-Atari Silent Butler - Screenshot 64
+- Atari Silent Butler - Screenshot 64<br>![](attachments/Screenshot64.jpg)
 
-![](attachments/Screenshot65.jpg)
-Atari Silent Butler - Screenshot 65
+- Atari Silent Butler - Screenshot 65<br>![](attachments/Screenshot65.jpg)
 
-![](attachments/Screenshot66.jpg)
-Atari Silent Butler - Screenshot 66
+- Atari Silent Butler - Screenshot 66<br>![](attachments/Screenshot66.jpg)
 
-![](attachments/Screenshot67.jpg)
-Atari Silent Butler - Screenshot 67
+- Atari Silent Butler - Screenshot 67<br>![](attachments/Screenshot67.jpg)
 
-![](attachments/Screenshot68.jpg)
-Atari Silent Butler - Screenshot 68
+- Atari Silent Butler - Screenshot 68<br>![](attachments/Screenshot68.jpg)
 
-![](attachments/Screenshot69.jpg)
-Atari Silent Butler - Screenshot 69
+- Atari Silent Butler - Screenshot 69<br>![](attachments/Screenshot69.jpg)
 
-![](attachments/Screenshot70.jpg)
-Atari Silent Butler - Screenshot 70
+- Atari Silent Butler - Screenshot 70<br>![](attachments/Screenshot70.jpg)
 
-![](attachments/Screenshot71.jpg)
-Atari Silent Butler - Screenshot 71
+- Atari Silent Butler - Screenshot 71<br>![](attachments/Screenshot71.jpg)
 
-![](attachments/Screenshot72.jpg)
-Atari Silent Butler - Screenshot 72
+- Atari Silent Butler - Screenshot 72<br>![](attachments/Screenshot72.jpg)
 
-![](attachments/Screenshot73.jpg)
-Atari Silent Butler - Screenshot 73
+- Atari Silent Butler - Screenshot 73<br>![](attachments/Screenshot73.jpg)
 
-![](attachments/Screenshot74.jpg)
-Atari Silent Butler - Screenshot 74
+- Atari Silent Butler - Screenshot 74<br>![](attachments/Screenshot74.jpg)
 
-![](attachments/Screenshot75.jpg)
-Atari Silent Butler - Screenshot 75
+- Atari Silent Butler - Screenshot 75<br>![](attachments/Screenshot75.jpg)
 
-![](attachments/Screenshot76.jpg)
-Atari Silent Butler - Screenshot 76
+- Atari Silent Butler - Screenshot 76<br>![](attachments/Screenshot76.jpg)
 
-![](attachments/Screenshot77.jpg)
-Atari Silent Butler - Screenshot 77
+- Atari Silent Butler - Screenshot 77<br>![](attachments/Screenshot77.jpg)
 
-![](attachments/Screenshot78.jpg)
-Atari Silent Butler - Screenshot 78
+- Atari Silent Butler - Screenshot 78<br>![](attachments/Screenshot78.jpg)
 
-![](attachments/Screenshot79.jpg)
-Atari Silent Butler - Screenshot 79
+- Atari Silent Butler - Screenshot 79<br>![](attachments/Screenshot79.jpg)
 
-![](attachments/Screenshot80.jpg)
-Atari Silent Butler - Screenshot 80
+- Atari Silent Butler - Screenshot 80<br>![](attachments/Screenshot80.jpg)
 
-![](attachments/Screenshot81.jpg)
-Atari Silent Butler - Screenshot 81
+- Atari Silent Butler - Screenshot 81<br>![](attachments/Screenshot81.jpg)
 
-![](attachments/Screenshot82.jpg)
-Atari Silent Butler - Screenshot 82
+- Atari Silent Butler - Screenshot 82<br>![](attachments/Screenshot82.jpg)
 
-![](attachments/Screenshot83.jpg)
-Atari Silent Butler - Screenshot 83
+- Atari Silent Butler - Screenshot 83<br>![](attachments/Screenshot83.jpg)
 
-![](attachments/Screenshot84.jpg)
-Atari Silent Butler - Screenshot 84
+- Atari Silent Butler - Screenshot 84<br>![](attachments/Screenshot84.jpg)
 
-![](attachments/Screenshot85.jpg)
-Atari Silent Butler - Screenshot 85
+- Atari Silent Butler - Screenshot 85<br>![](attachments/Screenshot85.jpg)
 
-![](attachments/Screenshot86.jpg)
-Atari Silent Butler - Screenshot 86
+- Atari Silent Butler - Screenshot 86<br>![](attachments/Screenshot86.jpg)
 
-![](attachments/Screenshot87.jpg)
-Atari Silent Butler - Screenshot 87
+- Atari Silent Butler - Screenshot 87<br>![](attachments/Screenshot87.jpg)
 
-![](attachments/Screenshot88.jpg)
-Atari Silent Butler - Screenshot 88
+- Atari Silent Butler - Screenshot 88<br>![](attachments/Screenshot88.jpg)
 
-![](attachments/Screenshot89.jpg)
-Atari Silent Butler - Screenshot 89
+- Atari Silent Butler - Screenshot 89<br>![](attachments/Screenshot89.jpg)
 
-![](attachments/Screenshot90.jpg)
-Atari Silent Butler - Screenshot 90
+- Atari Silent Butler - Screenshot 90<br>![](attachments/Screenshot90.jpg)
 
-![](attachments/Screenshot91.jpg)
-Atari Silent Butler - Screenshot 91
+- Atari Silent Butler - Screenshot 91<br>![](attachments/Screenshot91.jpg)
 
-![](attachments/Screenshot92.jpg)
-Atari Silent Butler - Screenshot 92
+- Atari Silent Butler - Screenshot 92<br>![](attachments/Screenshot92.jpg)
 
-![](attachments/Screenshot93.jpg)
-Atari Silent Butler - Screenshot 93
+- Atari Silent Butler - Screenshot 93<br>![](attachments/Screenshot93.jpg)
 
-![](attachments/Screenshot94.jpg)
-Atari Silent Butler - Screenshot 94
+- Atari Silent Butler - Screenshot 94<br>![](attachments/Screenshot94.jpg)

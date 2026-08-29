@@ -33,8 +33,7 @@ Have fun.
 
 ## Settings
 
-![](attachments/Wine-Settings.jpg)
-Wine-Settings for Altirra 3.0.0 with respect to Avery Lee in the minimum requirred size possible; double click ready for macOS
+- Wine-Settings for Altirra 3.0.0 with respect to Avery Lee in the minimum requirred size possible; double click ready for macOS<br>![](attachments/Wine-Settings.jpg)
 
 ## Thanks
 

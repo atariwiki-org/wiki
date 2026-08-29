@@ -2,8 +2,7 @@
 
 ## Content
 
-![](attachments/Supervisory_Skills_CX6003.jpg)
-Content of Supervisory Skills CX6003
+- Content of Supervisory Skills CX6003<br>![](attachments/Supervisory_Skills_CX6003.jpg)
 
 ## Cassette-Images in FLAC-format
 

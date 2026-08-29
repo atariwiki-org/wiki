@@ -29,10 +29,8 @@ See cover picture
 
 ## Cover
 
-![](attachments/Compilation_C_TXP7000_cover.jpg)
-Compilation C TXP7000 cover
+- Compilation C TXP7000 cover<br>![](attachments/Compilation_C_TXP7000_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Compilation_C_TXP7000_cass.jpg)
-Compilation C TXP7000 cassette
+- Compilation C TXP7000 cassette<br>![](attachments/Compilation_C_TXP7000_cass.jpg)

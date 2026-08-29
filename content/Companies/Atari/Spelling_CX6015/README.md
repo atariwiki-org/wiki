@@ -2,8 +2,7 @@
 
 ## Content
 
-![](attachments/Spelling-CX6015.jpg)
-Content of Spelling CX6015
+- Content of Spelling CX6015<br>![](attachments/Spelling-CX6015.jpg)
 
 ## Cassette-Images in FLAC-format
 

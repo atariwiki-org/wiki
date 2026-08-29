@@ -29,10 +29,8 @@ See cover picture
 
 ## Cover
 
-![](attachments/Atari_Compilation_TX9043_cover.jpg)
-Atari Compilation TX9043 cover
+- Atari Compilation TX9043 cover<br>![](attachments/Atari_Compilation_TX9043_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Atari_Compilation_TX9043_cass.jpg)
-Atari Compilation TX9043 cassette
+- Atari Compilation TX9043 cassette<br>![](attachments/Atari_Compilation_TX9043_cass.jpg)

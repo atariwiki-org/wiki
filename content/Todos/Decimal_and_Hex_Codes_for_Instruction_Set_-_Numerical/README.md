@@ -2,5 +2,4 @@
 
 ## Image
 
-![](attachments/6502_opcodes.gif)
-Decimal and Hex Codes for Instruction Set - Numerical
+- Decimal and Hex Codes for Instruction Set - Numerical<br>![](attachments/6502_opcodes.gif)

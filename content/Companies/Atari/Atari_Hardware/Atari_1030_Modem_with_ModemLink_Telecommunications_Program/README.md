@@ -29,8 +29,7 @@ Atari 1030 Modem with:
 
 ## Image
 
-![](attachments/Atari_1030-Modemlink.jpg)
-Atari 1030 Modem with ModemLink Telecommunications Program - startscreen
+- Atari 1030 Modem with ModemLink Telecommunications Program - startscreen<br>![](attachments/Atari_1030-Modemlink.jpg)
 
 ## Review
 

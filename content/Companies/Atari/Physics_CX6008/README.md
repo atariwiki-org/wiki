@@ -2,13 +2,11 @@
 
 ## Box
 
-![](attachments/Physics_CX6008-BOX.jpg)
-Physics CX6008 box
+- Physics CX6008 box<br>![](attachments/Physics_CX6008-BOX.jpg)
 
 ## Content
 
-![](attachments/Physics_CX6008.jpg)
-Physics CX6008 content
+- Physics CX6008 content<br>![](attachments/Physics_CX6008.jpg)
 
 ## Cassette-Images in FLAC-format
 

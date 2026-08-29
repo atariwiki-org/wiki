@@ -122,11 +122,9 @@ E2 02 E3 02 **26** 26
 so wird der Kopierschutz umgangen und AMAC kann verwendet werden.
 
 Konkret sieht das so aus:
-![](attachments/AMAC_original_protected-Protection-Code-EN.png)
-Atari Macro Assembler Diskette (englisch, vom Original) - Quelltext des Kopierschutzes für den AMAC (ist im 1. Sektor des Programms auf der Diskette zu finden). Der Schutz ist genau genommen gar keiner. Er war scheinbar ursprünglich darauf ausgelegt, auf einen defekten Sektor zu prüfen. Wie es aussieht wurde dann vor der Auslieferung entschieden dies doch nicht zu tun. Vermutlich weil es bei einem DOS Programm keinen Sinn hat, auf bestimmte Sektoren zu prüfen. Um das Programm nicht ganz neu assemblieren zu müssen, wurde der Code so angepasst, dass auf Sektor 0 gelesen wird. Diesen gibt es nicht und die Logik verhält sich so, als hätte sie den defekten Sektor gefunden.
+- Atari Macro Assembler Diskette (englisch, vom Original) - Quelltext des Kopierschutzes für den AMAC (ist im 1. Sektor des Programms auf der Diskette zu finden). Der Schutz ist genau genommen gar keiner. Er war scheinbar ursprünglich darauf ausgelegt, auf einen defekten Sektor zu prüfen. Wie es aussieht wurde dann vor der Auslieferung entschieden dies doch nicht zu tun. Vermutlich weil es bei einem DOS Programm keinen Sinn hat, auf bestimmte Sektoren zu prüfen. Um das Programm nicht ganz neu assemblieren zu müssen, wurde der Code so angepasst, dass auf Sektor 0 gelesen wird. Diesen gibt es nicht und die Logik verhält sich so, als hätte sie den defekten Sektor gefunden.<br>![](attachments/AMAC_original_protected-Protection-Code-EN.png)
 
-![](attachments/AMAC_original_unprotected-Protection-Code-DE.png)
-Atari Macro Assembler Diskette (deutsch, vom Original) - der Quelltext des Kopierschutzes für den AMAC wurde entfernt, s. Bild oben, stattdessen wurden NOP-Befehle eingesetzt sowie Befehle zur Änderung der Farbe und des Hintergrundes, s. Bild weiter unten. Vielen lieben Dank an JAC! von AtariAge für die Analyse.
+- Atari Macro Assembler Diskette (deutsch, vom Original) - der Quelltext des Kopierschutzes für den AMAC wurde entfernt, s. Bild oben, stattdessen wurden NOP-Befehle eingesetzt sowie Befehle zur Änderung der Farbe und des Hintergrundes, s. Bild weiter unten. Vielen lieben Dank an JAC! von AtariAge für die Analyse.<br>![](attachments/AMAC_original_unprotected-Protection-Code-DE.png)
 
 ## Film
 
@@ -134,40 +132,29 @@ Atari Macro Assembler Diskette (deutsch, vom Original) - der Quelltext des Kopie
 
 ## Bilder
 
-![](attachments/Atari_CAMAC_Assembler_Ver_1.0A.jpg)
-Atari CAMAC Assembler Ver 1.0A - Ausdruck eines Assemblerprogramms von Harry B. Stewart in der Atari Zentrale in Sunnyvale
+- Atari CAMAC Assembler Ver 1.0A - Ausdruck eines Assemblerprogramms von Harry B. Stewart in der Atari Zentrale in Sunnyvale<br>![](attachments/Atari_CAMAC_Assembler_Ver_1.0A.jpg)
 
-![](attachments/Macro_Assembler_a.jpg)
-ATARI Macro Assembler (AMAC) DXG 8126 - Boxvorderseite
+- ATARI Macro Assembler (AMAC) DXG 8126 - Boxvorderseite<br>![](attachments/Macro_Assembler_a.jpg)
 
-![](attachments/Macro_Assembler_b.jpg)
-ATARI Macro Assembler (AMAC) DXG 8126 - Boxrückseite
+- ATARI Macro Assembler (AMAC) DXG 8126 - Boxrückseite<br>![](attachments/Macro_Assembler_b.jpg)
 
-![](attachments/Diskette8126.jpg)
-ATARI Macro Assembler (AMAC) DXG 8126 - Diskette
+- ATARI Macro Assembler (AMAC) DXG 8126 - Diskette<br>![](attachments/Diskette8126.jpg)
 
-![](attachments/ATARI_Macro_Assembler_Ver_1.0A.jpg)
-ATARI Macro Assembler (AMAC) DXG 8126 - Startbildschirm der deutschen Version mit deaktiviertem Schutz und anderer Farbe als das US-Original
+- ATARI Macro Assembler (AMAC) DXG 8126 - Startbildschirm der deutschen Version mit deaktiviertem Schutz und anderer Farbe als das US-Original<br>![](attachments/ATARI_Macro_Assembler_Ver_1.0A.jpg)
 
-![](attachments/ATARI_Macro_Assembler_Ver_1.0A-ohne_Schutz.jpg)
-ATARI Macro Assembler (AMAC) DXG 8126 - Startbildschirm der US-Version mit deaktiviertem Schutz
+- ATARI Macro Assembler (AMAC) DXG 8126 - Startbildschirm der US-Version mit deaktiviertem Schutz<br>![](attachments/ATARI_Macro_Assembler_Ver_1.0A-ohne_Schutz.jpg)
 
-![](attachments/Program-Text_Edior_Version_1.0.jpg)
-ATARI Macro Assembler (AMAC) DXG 8126 - Program-Text Editor Startbildschirm
+- ATARI Macro Assembler (AMAC) DXG 8126 - Program-Text Editor Startbildschirm<br>![](attachments/Program-Text_Edior_Version_1.0.jpg)
 
-![](attachments/AMOEBA_Version_3.0.jpg)
-AMOEBA Version 3.0 - Startbildschirm
+- AMOEBA Version 3.0 - Startbildschirm<br>![](attachments/AMOEBA_Version_3.0.jpg)
 
-![](attachments/BUG-65_Version_2.0.jpg)
-BUG/65 Version 2.0 - Startbildschirm
+- BUG/65 Version 2.0 - Startbildschirm<br>![](attachments/BUG-65_Version_2.0.jpg)
 
 ## Reference Cards
 
-![](attachments/Atari_Program-Text_Editor_Reference_Card.jpg)
-Atari Program-Text Editor - Reference Card
+- Atari Program-Text Editor - Reference Card<br>![](attachments/Atari_Program-Text_Editor_Reference_Card.jpg)
 
-![](attachments/Atari_Macro_Assembler_Reference_Card.jpg)
-Atari Macro Assembler - Reference Card
+- Atari Macro Assembler - Reference Card<br>![](attachments/Atari_Macro_Assembler_Reference_Card.jpg)
 
 ## Danksagung
 

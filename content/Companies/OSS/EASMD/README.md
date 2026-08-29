@@ -21,14 +21,10 @@ Thank you so much, Allan Bushman, for providing us with this rare-to-find progra
 
 ## Images
 
-![](attachments/Start.jpg)
-Startscreen of OSS EASMD version 1.0
+- Startscreen of OSS EASMD version 1.0<br>![](attachments/Start.jpg)
 
-![](attachments/Editor.jpg)
-Command summary of the Editor from OSS EASMD version 1.0
+- Command summary of the Editor from OSS EASMD version 1.0<br>![](attachments/Editor.jpg)
 
-![](attachments/Assembler.jpg)
-Command summary of the Assembler from OSS EASMD version 1.0
+- Command summary of the Assembler from OSS EASMD version 1.0<br>![](attachments/Assembler.jpg)
 
-![](attachments/Debugger.jpg)
-Command summary of the Debugger from OSS EASMD version 1.0
+- Command summary of the Debugger from OSS EASMD version 1.0<br>![](attachments/Debugger.jpg)

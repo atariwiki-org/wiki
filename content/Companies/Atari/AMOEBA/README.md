@@ -10,17 +10,13 @@ AMOEBA is an Atari internal prototype debugger. It is incredible good, it shows 
 
 ## Images
 
-![](attachments/disk_.jpg)
-AMOEBA original Atari diskette - for Atari internal use only - not for publication ; prototype ; serial # 21
+- AMOEBA original Atari diskette - for Atari internal use only - not for publication ; prototype ; serial # 21<br>![](attachments/disk_.jpg)
 
-![](attachments/Startscreen2_.jpg)
-AMOEBA 3.0 startscreen, relocatable at start
+- AMOEBA 3.0 startscreen, relocatable at start<br>![](attachments/Startscreen2_.jpg)
 
-![](attachments/hex.jpg)
-AMOEBA in hex editing mode. Please take into account the status of the flags! :-)))
+- AMOEBA in hex editing mode. Please take into account the status of the flags! :-)))<br>![](attachments/hex.jpg)
 
-![](attachments/trace.jpg)
-AMOEBA in trace mode
+- AMOEBA in trace mode<br>![](attachments/trace.jpg)
 
 ## References
 

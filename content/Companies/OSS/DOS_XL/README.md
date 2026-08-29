@@ -8,8 +8,7 @@ DOS XL from OSS is the successor of OS/A+, also known as DOS II+. It is a comman
 
 ## Image
 
-![](attachments/DOS_XL_Cover.jpg)
-DOS XL manual cover
+- DOS XL manual cover<br>![](attachments/DOS_XL_Cover.jpg)
 
 ## Manuals
 

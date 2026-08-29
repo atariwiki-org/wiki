@@ -66,17 +66,12 @@ Tracks (size in sum: 997.1 MB):
 
 ## Images
 
-![](attachments/abA_.jpg)
-Dorsett Atari Comprehension-Reading AB - cassettes with uneven numbers
+- Dorsett Atari Comprehension-Reading AB - cassettes with uneven numbers<br>![](attachments/abA_.jpg)
 
-![](attachments/abB_.jpg)
-Dorsett Atari Comprehension-Reading AB - cassettes with even numbers
+- Dorsett Atari Comprehension-Reading AB - cassettes with even numbers<br>![](attachments/abB_.jpg)
 
-![](attachments/ab1983A_.jpg)
-Dorsett Atari Comprehension-Reading AB - opened cassette box
+- Dorsett Atari Comprehension-Reading AB - opened cassette box<br>![](attachments/ab1983A_.jpg)
 
-![](attachments/ab1983C_.jpg)
-Dorsett Atari Comprehension-Reading AB - Courseware book - figure #1
+- Dorsett Atari Comprehension-Reading AB - Courseware book - figure #1<br>![](attachments/ab1983C_.jpg)
 
-![](attachments/ab1983D_.jpg)
-Dorsett Atari Comprehension-Reading AB - Courseware book - figure #2
+- Dorsett Atari Comprehension-Reading AB - Courseware book - figure #2<br>![](attachments/ab1983D_.jpg)

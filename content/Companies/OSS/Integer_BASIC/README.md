@@ -37,5 +37,4 @@ Who is making a manual for OSS Integer BASIC?
 
 ## Picture
 
-![](attachments/IBASIC1-1.jpg)
-OSS Integer BASIC - start screen
+- OSS Integer BASIC - start screen<br>![](attachments/IBASIC1-1.jpg)

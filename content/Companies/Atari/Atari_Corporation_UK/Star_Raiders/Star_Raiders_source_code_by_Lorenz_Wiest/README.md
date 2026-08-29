@@ -40,8 +40,7 @@ The picture below shows the 'genome sequence' of the reverse engineered STAR RAI
 - Data (lookup tables, texts, etc.) is in alternating shades of green.
 - Bitmap data (Player-Missile shapes and character set) is in alternating shades of purple and the solid line of a byte is replaced by its actual bit pattern.
 
-![](attachments/GenomeSequence.png)
-STAR RAIDERS 8KB ROM Genome Sequence ; thank you so much Lorenz, that is totally incredible! :-)
+- STAR RAIDERS 8KB ROM Genome Sequence ; thank you so much Lorenz, that is totally incredible! :-)<br>![](attachments/GenomeSequence.png)
 
 ### ColorSheets
 

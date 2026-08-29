@@ -8,8 +8,7 @@ Copyright (C) 1983 Atari, Inc.
 
 ## Image
 
-![](attachments/CPS_SuperSALT-1983.jpg)
-CPS SUPER SALT 400/800/XL Diagnostic ; Part #FD100335; Revision A
+- CPS SUPER SALT 400/800/XL Diagnostic ; Part #FD100335; Revision A<br>![](attachments/CPS_SuperSALT-1983.jpg)
 
 ## Manual
 

@@ -97,11 +97,9 @@ Kyan Macro Assembler
 
 ### Pictures
 
-![](attachments/Disk_2_02.jpg)
-Kyan Pascal 2.02 side 1 diskette; thanks to Mr. Bacardi
+- Kyan Pascal 2.02 side 1 diskette; thanks to Mr. Bacardi<br>![](attachments/Disk_2_02.jpg)
 
-![](attachments/Ad.jpg)
-Kyan Pascal 2.0 ad with toolkits taken from Compute #071 of 1986
+- Kyan Pascal 2.0 ad with toolkits taken from Compute #071 of 1986<br>![](attachments/Ad.jpg)
 
 ### References
 

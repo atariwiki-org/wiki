@@ -13,8 +13,7 @@ Copyright (C) 1991 by Torsten Karwoth
 
 ## Image
 
-![](attachments/Startscreen.jpg)
-130XE+ Makroassembler - Startscreen
+- 130XE+ Makroassembler - Startscreen<br>![](attachments/Startscreen.jpg)
 
 ## Thank you
 

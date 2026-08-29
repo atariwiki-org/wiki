@@ -2,8 +2,7 @@
 
 Copyright (C) 1982 by Special Systems Software.
 
-![](attachments/INTER-LISP65.png)
-INTER-LISP/65 V2.1 for the Atari 8-bit computer
+- INTER-LISP/65 V2.1 for the Atari 8-bit computer<br>![](attachments/INTER-LISP65.png)
 
 ## Manuals
 

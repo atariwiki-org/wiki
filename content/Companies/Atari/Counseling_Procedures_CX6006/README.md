@@ -2,8 +2,7 @@
 
 ## Content
 
-![](attachments/Counseling_Procedures_CX6006.jpg)
-Content of Counseling Procedures CX6006
+- Content of Counseling Procedures CX6006<br>![](attachments/Counseling_Procedures_CX6006.jpg)
 
 ## Cassette-Images in FLAC-format
 
@@ -25,38 +24,26 @@ Content of Counseling Procedures CX6006
 
 ## Images
 
-![](attachments/P01.jpg)
-Counseling Procedures CX6006 - figure 1
+- Counseling Procedures CX6006 - figure 1<br>![](attachments/P01.jpg)
 
-![](attachments/P02.jpg)
-Counseling Procedures CX6006 - figure 2
+- Counseling Procedures CX6006 - figure 2<br>![](attachments/P02.jpg)
 
-![](attachments/P03.jpg)
-Counseling Procedures CX6006 - figure 3
+- Counseling Procedures CX6006 - figure 3<br>![](attachments/P03.jpg)
 
-![](attachments/P04.jpg)
-Counseling Procedures CX6006 - figure 4
+- Counseling Procedures CX6006 - figure 4<br>![](attachments/P04.jpg)
 
-![](attachments/P05.jpg)
-Counseling Procedures CX6006 - figure 5
+- Counseling Procedures CX6006 - figure 5<br>![](attachments/P05.jpg)
 
-![](attachments/P06.jpg)
-Counseling Procedures CX6006 - figure 6
+- Counseling Procedures CX6006 - figure 6<br>![](attachments/P06.jpg)
 
-![](attachments/P07.jpg)
-Counseling Procedures CX6006 - figure 7
+- Counseling Procedures CX6006 - figure 7<br>![](attachments/P07.jpg)
 
-![](attachments/P08.jpg)
-Counseling Procedures CX6006 - figure 8
+- Counseling Procedures CX6006 - figure 8<br>![](attachments/P08.jpg)
 
-![](attachments/P09.jpg)
-Counseling Procedures CX6006 - figure 9
+- Counseling Procedures CX6006 - figure 9<br>![](attachments/P09.jpg)
 
-![](attachments/P10.jpg)
-Counseling Procedures CX6006 - figure 10
+- Counseling Procedures CX6006 - figure 10<br>![](attachments/P10.jpg)
 
-![](attachments/P11.jpg)
-Counseling Procedures CX6006 - figure 11
+- Counseling Procedures CX6006 - figure 11<br>![](attachments/P11.jpg)
 
-![](attachments/P12.jpg)
-Counseling Procedures CX6006 - figure 12
+- Counseling Procedures CX6006 - figure 12<br>![](attachments/P12.jpg)

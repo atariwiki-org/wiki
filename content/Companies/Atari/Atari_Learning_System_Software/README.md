@@ -4,11 +4,9 @@ Copyright (C) Atari and Minnesota Educational Computing Consortium (MECC)
 
 AtariWiki would like to thank all the users who upload these program packages and [Atarimania](http://www.atarimania.com) for hosting the files. Thank you all so much, we really appreciate your help, as always. :-)
 
-![](attachments/Logo.jpg)
-The logo of the Atari Learning System Software
+- The logo of the Atari Learning System Software<br>![](attachments/Logo.jpg)
 
-![](attachments/Atari_Expeditions.gif)
-The logo of the Minnesota Educational Computing Consortium (MECC)
+- The logo of the Minnesota Educational Computing Consortium (MECC)<br>![](attachments/Atari_Expeditions.gif)
 
 ## Content of the Educational Program
 
@@ -124,5 +122,4 @@ Status 2017: 11/85 packages: 12.94 % finished over all; 11/68 packages: 16.12 % 
 
 ## Images
 
-![](attachments/Graphing.jpg)
-AED80058 Graphing
+- AED80058 Graphing<br>![](attachments/Graphing.jpg)

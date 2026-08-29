@@ -60,8 +60,6 @@ Tracks (size in sum: 1.06 GB):
 
 ## Images
 
-![](attachments/kcA_.jpg)
-Dorsett Atari Carpentry - cassettes with uneven numbers
+- Dorsett Atari Carpentry - cassettes with uneven numbers<br>![](attachments/kcA_.jpg)
 
-![](attachments/kcB_.jpg)
-Dorsett Atari Carpentry - cassettes with even numbers
+- Dorsett Atari Carpentry - cassettes with even numbers<br>![](attachments/kcB_.jpg)

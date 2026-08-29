@@ -14,8 +14,6 @@ Das Handbuch wird noch gesucht, jede Hilfe dies wiederherzustellen ist stets seh
 
 ## Bilder
 
-![](attachments/Haushaltsbuch_1.jpg)
-Atari  Haushalts-Buch Startbildschirm
+- Atari  Haushalts-Buch Startbildschirm<br>![](attachments/Haushaltsbuch_1.jpg)
 
-![](attachments/Haushaltsbuch_2.jpg)
-Atari  Haushalts-Buch Hauptmenu
+- Atari  Haushalts-Buch Hauptmenu<br>![](attachments/Haushaltsbuch_2.jpg)

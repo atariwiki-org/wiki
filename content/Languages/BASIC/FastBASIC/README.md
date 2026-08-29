@@ -28,11 +28,9 @@ FastBasic is a truly unique approach to the BASIC language on the Atari, a must-
 
 ## Pictures
 
-![](attachments/fastbasic1.jpg)
-dmsc FastBasic - startscreen
+- dmsc FastBasic - startscreen<br>![](attachments/fastbasic1.jpg)
 
-![](attachments/fastbasic2.jpg)
-dmsc FastBasic - 1st menu
+- dmsc FastBasic - 1st menu<br>![](attachments/fastbasic2.jpg)
 
 ## References
 

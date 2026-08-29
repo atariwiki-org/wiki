@@ -8,8 +8,7 @@ Die deutsche Atari-Gemeinschaft bedankt sich hiermit auf das Herzlichste bei Ata
 
 ## Bild
 
-![](attachments/BASIC_fuer_Fortgeschrittene.jpg)
-Einzige vorhandene Spur von: **BASIC für Fortgeschrittene**, vorgesehen für den Oktober 1984. Der Hinweis hierzu befindet sich auf der Rückseite der Box des 2. Kurses: [Noch mehr BASIC (TXG55007)](../Noch_mehr_BASIC_TXG55007/README.md)
+- Einzige vorhandene Spur von: **BASIC für Fortgeschrittene**, vorgesehen für den Oktober 1984. Der Hinweis hierzu befindet sich auf der Rückseite der Box des 2. Kurses: [Noch mehr BASIC (TXG55007)](../Noch_mehr_BASIC_TXG55007/README.md)<br>![](attachments/BASIC_fuer_Fortgeschrittene.jpg)
 
 ## Nachweise
 

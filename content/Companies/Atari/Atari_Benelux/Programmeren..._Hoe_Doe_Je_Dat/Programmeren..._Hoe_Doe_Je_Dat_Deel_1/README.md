@@ -34,5 +34,4 @@ Programmeren... Hoe Doe Je Dat (Deel 1) is the Dutch translation of An Invitatio
 
 ## Mediapictures
 
-![](attachments/Programmeren_Hoe_Doe_Je_Dat_1_cassette.jpg)
-Programmeren... Hoe doe je dat (Deel 1) Cassette 1
+- Programmeren... Hoe doe je dat (Deel 1) Cassette 1<br>![](attachments/Programmeren_Hoe_Doe_Je_Dat_1_cassette.jpg)

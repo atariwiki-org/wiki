@@ -130,14 +130,12 @@ at this point AtariWiki must give the highest award possible:
 - [Action! Source Code](Action_Source_Code/README.md)
   Thank you so much Mr. Parker, we can't thank you enough for what you have done for us.
 
-![](attachments/Thank_you_Mr._Parker.jpg)
-Thank you so much Mr. Parker
+- Thank you so much Mr. Parker<br>![](attachments/Thank_you_Mr._Parker.jpg)
 
 - [Action! Editor Source Code](https://sourceforge.net/p/atari-action/code/ci/master/tree/ALFRED/EDITOR/)
   Thank you Alfred from AtariAge for extracting the editor source code for generations to come. We are deep in your debt.
 
-![](attachments/Thank_you_Alfred.jpg)
-Thank you Alfred
+- Thank you Alfred<br>![](attachments/Thank_you_Alfred.jpg)
 
 ### Functions
 
@@ -227,24 +225,19 @@ Thank you Alfred
 
 **As of 2020, just these two programs are still missing. They were published via OSS-BBS only! The number was: +1 (408) 438 - 6775. Any hint, any help is welcome at any time. We would really appreciate your help in that case.**
 
-![](attachments/Graphics_Utilities_Library_1.jpg)
-Graphics Utilities Library for ACTION! screen 1
+- Graphics Utilities Library for ACTION! screen 1<br>![](attachments/Graphics_Utilities_Library_1.jpg)
 
-![](attachments/Graphics_Utilities_Library_2.jpg)
-Graphics Utilities Library for ACTION! screen 2
+- Graphics Utilities Library for ACTION! screen 2<br>![](attachments/Graphics_Utilities_Library_2.jpg)
 
-![](attachments/Shape_Editor_and_Animator.jpg)
-Shape Editor and Animator for ACTION!
+- Shape Editor and Animator for ACTION!<br>![](attachments/Shape_Editor_and_Animator.jpg)
 
-![](attachments/OSS-BBS_.jpg)
-OSS-BBS with the number: +1 (408) 438 - 6775 where the two missing programs were published only!
+- OSS-BBS with the number: +1 (408) 438 - 6775 where the two missing programs were published only!<br>![](attachments/OSS-BBS_.jpg)
 
 ## Articles in Magazines
 
 ### Advertisements
 
-![](attachments/00_first_ad_in_compute_Jul1983.jpg)
-First Action ad in Compute July, 1983 ; please take into account: 128-column screen and for Apple II \& Commodore 64. Thanks to GoodByteXL!
+- First Action ad in Compute July, 1983 ; please take into account: 128-column screen and for Apple II \& Commodore 64. Thanks to GoodByteXL!<br>![](attachments/00_first_ad_in_compute_Jul1983.jpg)
 
 ### Analog
 

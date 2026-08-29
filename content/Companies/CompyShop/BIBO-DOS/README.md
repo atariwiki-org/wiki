@@ -15,17 +15,13 @@ Copyright (C) 1988 Compy-Shop, Erwin Reuß \& J. Kruszona
 
 ### Images
 
-![](attachments/BiboDos_5.4RN_en.jpg)
-BIBO-DOS 5.4RF - startscreen English
+- BIBO-DOS 5.4RF - startscreen English<br>![](attachments/BiboDos_5.4RN_en.jpg)
 
-![](attachments/BiboDos_5.4RF_de.jpg)
-BIBO-DOS 5.4RF - startscreen German
+- BIBO-DOS 5.4RF - startscreen German<br>![](attachments/BiboDos_5.4RF_de.jpg)
 
-![](attachments/6.jpg)
-BIBO-DOS 6.4RF - startscreen
+- BIBO-DOS 6.4RF - startscreen<br>![](attachments/6.jpg)
 
-![](attachments/7.jpg)
-BIBO-DOS 7.0 - startscreen
+- BIBO-DOS 7.0 - startscreen<br>![](attachments/7.jpg)
 
 ## References
 

@@ -40,14 +40,11 @@ And last but not least: **Thank you soooooo much Klaus! You really, really rock!
 
 ## Pictures
 
-![](attachments/SDrive-complete.jpg)
-SDrive-MAX - complete with touch pen
+- SDrive-MAX - complete with touch pen<br>![](attachments/SDrive-complete.jpg)
 
-![](attachments/SDrivev0.5.jpg)
-SDrive-MAX - at start up with no atr image selected 1
+- SDrive-MAX - at start up with no atr image selected 1<br>![](attachments/SDrivev0.5.jpg)
 
-![](attachments/Startscreen.jpg)
-SDrive-MAX - at start up with no atr image selected 2
+- SDrive-MAX - at start up with no atr image selected 2<br>![](attachments/Startscreen.jpg)
 
 ## References
 

@@ -26,17 +26,13 @@ Disk 2: [Atari\_Kaartsysteem\_Data\_Diskette\_1\_DXN415B.atr](attachments/Atari_
 
 ## Cover
 
-![](attachments/kaartsysteem_inlay.jpg)
-Atari Kaartsysteem Cover
+- Atari Kaartsysteem Cover<br>![](attachments/kaartsysteem_inlay.jpg)
 
 ## Inside of the box
 
-![](attachments/kaartsysteem_binnenkant.jpg)
-Atari Kaartsysteem inside
+- Atari Kaartsysteem inside<br>![](attachments/kaartsysteem_binnenkant.jpg)
 
 ## Media pictures
 
-![](attachments/kaartsysteem_disk_1.jpg)
-Atari Kaartsysteem Disk 1
-![](attachments/kaartsysteem_disk_2.jpg)
-Atari Kaartsysteem Disk 2
+- Atari Kaartsysteem Disk 1<br>![](attachments/kaartsysteem_disk_1.jpg)
+- Atari Kaartsysteem Disk 2<br>![](attachments/kaartsysteem_disk_2.jpg)

@@ -8,8 +8,6 @@
 
 ## Bilder
 
-![](attachments/Schluck-Richtungspfeile-Box-Front.jpg)
-Schluck-Richtungspfeile TXG 9502 - Box Vorderansicht
+- Schluck-Richtungspfeile TXG 9502 - Box Vorderansicht<br>![](attachments/Schluck-Richtungspfeile-Box-Front.jpg)
 
-![](attachments/Schluck-Richtungspfeile-Box-Back.jpg)
-Schluck-Richtungspfeile TXG 9502 - Box Rückansicht
+- Schluck-Richtungspfeile TXG 9502 - Box Rückansicht<br>![](attachments/Schluck-Richtungspfeile-Box-Back.jpg)

@@ -49,53 +49,37 @@ See [QUICKmagazin](QUICKmagazin/README.md).
 
 ## Pictures
 
-![](attachments/RAINDORF_SOFT.jpg)
-RAINDORF SOFT Logo
+- RAINDORF SOFT Logo<br>![](attachments/RAINDORF_SOFT.jpg)
 
-![](attachments/QUICK_Logo.png)
-QUICK Logo
+- QUICK Logo<br>![](attachments/QUICK_Logo.png)
 
-![](attachments/Disk.jpg)
-QUICK Disk ; Verlag W. Raetz oder Rätz, Postfach 1640, 7510 (alte PLZ) Bretten , 75015 (neue PLZ) Bretten ; thank you Atarimania! :-)
+- QUICK Disk ; Verlag W. Raetz oder Rätz, Postfach 1640, 7510 (alte PLZ) Bretten , 75015 (neue PLZ) Bretten ; thank you Atarimania! :-)<br>![](attachments/Disk.jpg)
 
-![](attachments/Handbuch.jpg)
-QUICK Handbuch ; thank you Atarimania! :-)
+- QUICK Handbuch ; thank you Atarimania! :-)<br>![](attachments/Handbuch.jpg)
 
-![](attachments/QUICK-Shell-V1.1.jpg)
-QUICK-Shell V1.1
+- QUICK-Shell V1.1<br>![](attachments/QUICK-Shell-V1.1.jpg)
 
-![](attachments/Editor.jpg)
-QUICK Editor V1.3
+- QUICK Editor V1.3<br>![](attachments/Editor.jpg)
 
-![](attachments/QUICK-Compiler-V1.6.jpg)
-QUICK-Compiler V1.6
+- QUICK-Compiler V1.6<br>![](attachments/QUICK-Compiler-V1.6.jpg)
 
-![](attachments/QUICKmagazin.jpg)
-Das QUICKmagazin
+- Das QUICKmagazin<br>![](attachments/QUICKmagazin.jpg)
 
-![](attachments/QUICKmagazin1.jpg)
-QUICKmagazin Ausgabe 1
+- QUICKmagazin Ausgabe 1<br>![](attachments/QUICKmagazin1.jpg)
 
-![](attachments/QUICKmagazin2.jpg)
-QUICKmagazin Ausgabe 2
+- QUICKmagazin Ausgabe 2<br>![](attachments/QUICKmagazin2.jpg)
 
-![](attachments/QUICKmagazin3.jpg)
-QUICKmagazin Ausgabe 3
+- QUICKmagazin Ausgabe 3<br>![](attachments/QUICKmagazin3.jpg)
 
-![](attachments/Fehlerteufel.jpg)
-QUICKmagazin Fehlerteufel
+- QUICKmagazin Fehlerteufel<br>![](attachments/Fehlerteufel.jpg)
 
-![](attachments/Aederungen_in_Programmen.jpg)
-QUICKmagazin - program changes
+- QUICKmagazin - program changes<br>![](attachments/Aederungen_in_Programmen.jpg)
 
-![](attachments/Aederungen_im_Compiler.jpg)
-QUICKmagazin - compiler changes
+- QUICKmagazin - compiler changes<br>![](attachments/Aederungen_im_Compiler.jpg)
 
-![](attachments/Das_neue_QUICK-System_Version_2.0.jpg)
-The new QUICK-System Version 2.0
+- The new QUICK-System Version 2.0<br>![](attachments/Das_neue_QUICK-System_Version_2.0.jpg)
 
-![](attachments/Die_neuen_Befehle_in_QUICK_V2.0.jpg)
-The new commands in QUICK V2.0
+- The new commands in QUICK V2.0<br>![](attachments/Die_neuen_Befehle_in_QUICK_V2.0.jpg)
 
 ## Ads
 
@@ -103,5 +87,4 @@ We thank Fred Meijer from [Atarimuseum in the Netherlands](http://www.atarimuseu
 
 - [QUICK flyers](attachments/QUICK_flyers.pdf) ; size: 963 KB
 
-![](attachments/QUICK_ad.jpg)
-QUICK ad Christmas 1991
+- QUICK ad Christmas 1991<br>![](attachments/QUICK_ad.jpg)

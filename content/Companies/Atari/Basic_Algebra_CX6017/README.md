@@ -2,8 +2,7 @@
 
 ## Content
 
-![](attachments/Basic_Algebra_CX6017.jpg)
-Content of Basic Algebra CX6017
+- Content of Basic Algebra CX6017<br>![](attachments/Basic_Algebra_CX6017.jpg)
 
 ## Cassette-Images in FLAC-format
 

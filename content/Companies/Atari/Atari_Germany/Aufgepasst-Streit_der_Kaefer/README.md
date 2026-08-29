@@ -24,29 +24,20 @@ Vielen lieben Dank an Florian Dingler und Dirk Tröger, ohne euch wäre diese se
 
 ## Bilder
 
-![](attachments/Cover1a.jpg)
-Aufgepaßt-Streit der Käfer DXG 5710 - Box Vorderansicht
+- Aufgepaßt-Streit der Käfer DXG 5710 - Box Vorderansicht<br>![](attachments/Cover1a.jpg)
 
-![](attachments/Cover1b.jpg)
-Aufgepaßt-Streit der Käfer TXG 9510 - Box Vorderansicht - Dank an Atarimania für das Bild
+- Aufgepaßt-Streit der Käfer TXG 9510 - Box Vorderansicht - Dank an Atarimania für das Bild<br>![](attachments/Cover1b.jpg)
 
-![](attachments/Cover2.jpg)
-Aufgepaßt-Streit der Käfer TXG 9510 - Box Rückansicht - Dank an Atarimania für das Bild
+- Aufgepaßt-Streit der Käfer TXG 9510 - Box Rückansicht - Dank an Atarimania für das Bild<br>![](attachments/Cover2.jpg)
 
-![](attachments/Aufgepasst-TXG_9510-Seite_A.jpg)
-Aufgepaßt-Streit der Käfer TXG 9510 - Seite 1
+- Aufgepaßt-Streit der Käfer TXG 9510 - Seite 1<br>![](attachments/Aufgepasst-TXG_9510-Seite_A.jpg)
 
-![](attachments/Streit_der_Kaefer-TXG_9510-Seite_B.jpg)
-Aufgepaßt-Streit der Käfer TXG 9510 - Seite 2
+- Aufgepaßt-Streit der Käfer TXG 9510 - Seite 2<br>![](attachments/Streit_der_Kaefer-TXG_9510-Seite_B.jpg)
 
-![](attachments/Aufgepasst-TXG_9510-Seite_A-1.jpg)
-Aufgepaßt-Bildschirmfoto 1
+- Aufgepaßt-Bildschirmfoto 1<br>![](attachments/Aufgepasst-TXG_9510-Seite_A-1.jpg)
 
-![](attachments/Aufgepasst-TXG_9510-Seite_A-2.jpg)
-Aufgepaßt-Bildschirmfoto 2
+- Aufgepaßt-Bildschirmfoto 2<br>![](attachments/Aufgepasst-TXG_9510-Seite_A-2.jpg)
 
-![](attachments/Streit_der_Kaefer-TXG_9510-Seite_B-1.jpg)
-Streit der Käfer-Bildschirmfoto 1
+- Streit der Käfer-Bildschirmfoto 1<br>![](attachments/Streit_der_Kaefer-TXG_9510-Seite_B-1.jpg)
 
-![](attachments/Streit_der_Kaefer-TXG_9510-Seite_B-2.jpg)
-Streit der Käfer-Bildschirmfoto 2
+- Streit der Käfer-Bildschirmfoto 2<br>![](attachments/Streit_der_Kaefer-TXG_9510-Seite_B-2.jpg)

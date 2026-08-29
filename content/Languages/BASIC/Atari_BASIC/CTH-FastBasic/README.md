@@ -20,5 +20,4 @@ I suggest that you run CTH FastBasic only on completed programs, not programs un
 
 ## Picture
 
-![](attachments/Start_Screen.jpg)
-Closer To Home FastBasic - start screen
+- Closer To Home FastBasic - start screen<br>![](attachments/Start_Screen.jpg)

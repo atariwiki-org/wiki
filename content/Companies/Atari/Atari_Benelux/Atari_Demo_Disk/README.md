@@ -13,19 +13,14 @@ Alternate Side A: [DEMODSKC.ATR](attachments/DEMODSKC.ATR)
 
 ## Screen Shots
 
-![](attachments/bnl_screenshot1.jpg)
-Atari Benelux Demo Disk Side A
-![](attachments/bnl_screenshot2.jpg)
-Atari Benelux Demo Disk Side B
-![](attachments/bnl_screenshot3.jpg)
-Atari Benelux Demo Disk Side "C"
+- Atari Benelux Demo Disk Side A<br>![](attachments/bnl_screenshot1.jpg)
+- Atari Benelux Demo Disk Side B<br>![](attachments/bnl_screenshot2.jpg)
+- Atari Benelux Demo Disk Side "C"<br>![](attachments/bnl_screenshot3.jpg)
 
 ## Media picture
 
-![](attachments/atari_benelux_demo_disk.jpg)
-Atari Benelux Demo Disk label
+- Atari Benelux Demo Disk label<br>![](attachments/atari_benelux_demo_disk.jpg)
 
 ## Media picture
 
-![](attachments/atari_computershow2.jpg)
-Atari Benelux Computer Show on Tour
+- Atari Benelux Computer Show on Tour<br>![](attachments/atari_computershow2.jpg)

@@ -4,16 +4,13 @@ Basic Sociology CX6005 is a really hard to find artifact with a rarity above 10.
 
 ## Box
 
-![](attachments/Basic_Sociology_CX6005-3.jpg)
-Basic Sociology CX6005 - box cover - thanks to Bill Lange for taking the picture
+- Basic Sociology CX6005 - box cover - thanks to Bill Lange for taking the picture<br>![](attachments/Basic_Sociology_CX6005-3.jpg)
 
-![](attachments/Basic_Sociology_CX6005-5.jpg)
-Basic Sociology CX6005 - box content - thanks to Bill Lange for taking the picture
+- Basic Sociology CX6005 - box content - thanks to Bill Lange for taking the picture<br>![](attachments/Basic_Sociology_CX6005-5.jpg)
 
 ## Content
 
-![](attachments/Basic_Sociology_CX6005.jpg)
-Content of Basic Sociology CX6005
+- Content of Basic Sociology CX6005<br>![](attachments/Basic_Sociology_CX6005.jpg)
 
 ## Cassette-Images in FLAC-format
 
@@ -35,56 +32,38 @@ Content of Basic Sociology CX6005
 
 ## Images
 
-![](attachments/BS01.jpg)
-Basic Sociology CX6005 - figure 01
+- Basic Sociology CX6005 - figure 01<br>![](attachments/BS01.jpg)
 
-![](attachments/BS02.jpg)
-Basic Sociology CX6005 - figure 02
+- Basic Sociology CX6005 - figure 02<br>![](attachments/BS02.jpg)
 
-![](attachments/BS03.jpg)
-Basic Sociology CX6005 - figure 03
+- Basic Sociology CX6005 - figure 03<br>![](attachments/BS03.jpg)
 
-![](attachments/BS04.jpg)
-Basic Sociology CX6005 - figure 04
+- Basic Sociology CX6005 - figure 04<br>![](attachments/BS04.jpg)
 
-![](attachments/BS05.jpg)
-Basic Sociology CX6005 - figure 05
+- Basic Sociology CX6005 - figure 05<br>![](attachments/BS05.jpg)
 
-![](attachments/BS06.jpg)
-Basic Sociology CX6005 - figure 06
+- Basic Sociology CX6005 - figure 06<br>![](attachments/BS06.jpg)
 
-![](attachments/BS07.jpg)
-Basic Sociology CX6005 - figure 07
+- Basic Sociology CX6005 - figure 07<br>![](attachments/BS07.jpg)
 
-![](attachments/BS08.jpg)
-Basic Sociology CX6005 - figure 08
+- Basic Sociology CX6005 - figure 08<br>![](attachments/BS08.jpg)
 
-![](attachments/BS09.jpg)
-Basic Sociology CX6005 - figure 09
+- Basic Sociology CX6005 - figure 09<br>![](attachments/BS09.jpg)
 
-![](attachments/BS10.jpg)
-Basic Sociology CX6005 - figure 10
+- Basic Sociology CX6005 - figure 10<br>![](attachments/BS10.jpg)
 
-![](attachments/BS11.jpg)
-Basic Sociology CX6005 - figure 11
+- Basic Sociology CX6005 - figure 11<br>![](attachments/BS11.jpg)
 
-![](attachments/BS12.jpg)
-Basic Sociology CX6005 - figure 12
+- Basic Sociology CX6005 - figure 12<br>![](attachments/BS12.jpg)
 
-![](attachments/BS13.jpg)
-Basic Sociology CX6005 - figure 13
+- Basic Sociology CX6005 - figure 13<br>![](attachments/BS13.jpg)
 
-![](attachments/BS14.jpg)
-Basic Sociology CX6005 - figure 14
+- Basic Sociology CX6005 - figure 14<br>![](attachments/BS14.jpg)
 
-![](attachments/BS15.jpg)
-Basic Sociology CX6005 - figure 15
+- Basic Sociology CX6005 - figure 15<br>![](attachments/BS15.jpg)
 
-![](attachments/BS16.jpg)
-Basic Sociology CX6005 - figure 16
+- Basic Sociology CX6005 - figure 16<br>![](attachments/BS16.jpg)
 
-![](attachments/BS17.jpg)
-Basic Sociology CX6005 - figure 17
+- Basic Sociology CX6005 - figure 17<br>![](attachments/BS17.jpg)
 
-![](attachments/BS18.jpg)
-Basic Sociology CX6005 - figure 18
+- Basic Sociology CX6005 - figure 18<br>![](attachments/BS18.jpg)

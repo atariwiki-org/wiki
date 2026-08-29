@@ -32,17 +32,12 @@ Im Atari Magazin 4/1988 ist ein Schaltplan der Sprachbox XL XE bereits vorgestel
 
 ## Bilder
 
-![](attachments/Disketteninhalt.jpg)
-Sprachbox XL/XE - Inhaltsverzeichnis der Diskette
+- Sprachbox XL/XE - Inhaltsverzeichnis der Diskette<br>![](attachments/Disketteninhalt.jpg)
 
-![](attachments/sprachboxxlxl1.jpg)
-Sprachbox XL/XE - Bild 1
+- Sprachbox XL/XE - Bild 1<br>![](attachments/sprachboxxlxl1.jpg)
 
-![](attachments/sprachboxxlxl2_.jpg)
-Sprachbox XL/XE - Bild 2
+- Sprachbox XL/XE - Bild 2<br>![](attachments/sprachboxxlxl2_.jpg)
 
-![](attachments/sprachboxxlxl3.jpg)
-Sprachbox XL/XE - Bild 3
+- Sprachbox XL/XE - Bild 3<br>![](attachments/sprachboxxlxl3.jpg)
 
-![](attachments/sprachboxxlxl4.jpg)
-Sprachbox XL/XE - Bild 4
+- Sprachbox XL/XE - Bild 4<br>![](attachments/sprachboxxlxl4.jpg)

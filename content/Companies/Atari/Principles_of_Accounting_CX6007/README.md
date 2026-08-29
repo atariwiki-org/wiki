@@ -2,8 +2,7 @@
 
 ## Content
 
-![](attachments/Principles_of_Accounting-CX6007.jpg)
-Content of Principles of Accounting CX6007
+- Content of Principles of Accounting CX6007<br>![](attachments/Principles_of_Accounting-CX6007.jpg)
 
 ## Cassette-Images in FLAC-format
 

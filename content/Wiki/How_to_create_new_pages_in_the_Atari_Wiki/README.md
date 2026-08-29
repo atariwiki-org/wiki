@@ -176,12 +176,10 @@ Falls eckige Klammern ([]) in einer Seite erforderlich sind, ohne einen Link erz
 
 
 ### Pictures
-![](attachments/Assembler+Editor+Brown+front.jpg)
-Assembler Editor Cartridge
+- Assembler Editor Cartridge<br>![](attachments/Assembler+Editor+Brown+front.jpg)
 
 
-![](attachments/Atari_Calculator4.jpg)
-Calculator after a little calculation
+- Calculator after a little calculation<br>![](attachments/Atari_Calculator4.jpg)
 
 
 ![](attachments/img.jpg)

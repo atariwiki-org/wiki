@@ -45,20 +45,14 @@ AUSTRO.TEXT gehört zu den besten Textverarbeitungsprogrammen für den Atari. At
 
 ## Bilder
 
-![](attachments/AUSTRO.TEXT.png)
-AUSTRO.TEXT - Startscreen von Version 1.30
+- AUSTRO.TEXT - Startscreen von Version 1.30<br>![](attachments/AUSTRO.TEXT.png)
 
-![](attachments/Installationsmenu_AUSTRO.TEXT.png)
-AUSTRO.TEXT - Installationsmenu von Version 1.30
+- AUSTRO.TEXT - Installationsmenu von Version 1.30<br>![](attachments/Installationsmenu_AUSTRO.TEXT.png)
 
-![](attachments/Diskette.jpg)
-AUSTRO.TEXT - Diskette von Version 1.30
+- AUSTRO.TEXT - Diskette von Version 1.30<br>![](attachments/Diskette.jpg)
 
-![](attachments/Cover.jpg)
-AUSTRO.TEXT - Handbuch - Vorderseite - Vielen Dank an GBXL für das Scannen des Handbuches
+- AUSTRO.TEXT - Handbuch - Vorderseite - Vielen Dank an GBXL für das Scannen des Handbuches<br>![](attachments/Cover.jpg)
 
-![](attachments/Back.jpg)
-AUSTRO.TEXT - Handbuch - Rückseite - Vielen Dank an GBXL für das Scannen des Handbuches
+- AUSTRO.TEXT - Handbuch - Rückseite - Vielen Dank an GBXL für das Scannen des Handbuches<br>![](attachments/Back.jpg)
 
-![](attachments/Side.jpg)
-AUSTRO.TEXT - Handbuch - Seitenansicht - Vielen Dank an GBXL für das Scannen des Handbuches
+- AUSTRO.TEXT - Handbuch - Seitenansicht - Vielen Dank an GBXL für das Scannen des Handbuches<br>![](attachments/Side.jpg)

@@ -31,10 +31,8 @@ Side 2: [koninkrijk\_sdual\_audio\_side2.mp3](../../../../../media/Companies/Ata
 
 ## Cover
 
-![](attachments/koninkrijk_cover.jpg)
-Koninkrijk Cover
+- Koninkrijk Cover<br>![](attachments/koninkrijk_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Koninkrijk_cassette.jpg)
-Koninkrijk Cassette
+- Koninkrijk Cassette<br>![](attachments/Koninkrijk_cassette.jpg)

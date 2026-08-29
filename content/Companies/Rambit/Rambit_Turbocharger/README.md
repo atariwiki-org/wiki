@@ -35,8 +35,7 @@ Including schematics for the 1010 and XC12 data recorders.
 
 ## Mediapictures
 
-![](attachments/Rambit_Cassette.jpg)
-Cassette of the Rambit Turbocharger
+- Cassette of the Rambit Turbocharger<br>![](attachments/Rambit_Cassette.jpg)
 
 ## Thank you
 

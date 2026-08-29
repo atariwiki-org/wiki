@@ -29,10 +29,8 @@ See cover picture
 
 ## Cover
 
-![](attachments/Atari_Compilation_TXP7101_cover.jpg)
-Compilation A TXP7100 cover
+- Compilation A TXP7100 cover<br>![](attachments/Atari_Compilation_TXP7101_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Atari_Compilation_TXP7101_Cass.jpg)
-Compilation A TXP7100 cassette
+- Compilation A TXP7100 cassette<br>![](attachments/Atari_Compilation_TXP7101_Cass.jpg)

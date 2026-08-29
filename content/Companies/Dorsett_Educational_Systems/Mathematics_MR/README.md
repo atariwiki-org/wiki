@@ -62,8 +62,6 @@ Tracks (size in sum: 1.34 GB):
 
 ## Images
 
-![](attachments/mrA_.jpg)
-Dorsett Atari Mathematics (Money Problems) Reading-Mathematics MR - cassettes with uneven numbers
+- Dorsett Atari Mathematics (Money Problems) Reading-Mathematics MR - cassettes with uneven numbers<br>![](attachments/mrA_.jpg)
 
-![](attachments/mrB_.jpg)
-Dorsett Atari Mathematics (Money Problems) Reading-Mathematics MR - cassettes with even numbers
+- Dorsett Atari Mathematics (Money Problems) Reading-Mathematics MR - cassettes with even numbers<br>![](attachments/mrB_.jpg)

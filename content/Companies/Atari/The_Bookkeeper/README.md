@@ -50,14 +50,10 @@ In 1982 Atari, Inc. decided to migrate The Atari Accountant into The Atari Bookk
 
 ## Images
 
-![](attachments/The_Bookkeeper-Box-Front.jpg)
-The Bookkeeper box CX414 front
+- The Bookkeeper box CX414 front<br>![](attachments/The_Bookkeeper-Box-Front.jpg)
 
-![](attachments/The_Bookkeeper-Box-Front.jpg)
-The Bookkeeper box CX414 back
+- The Bookkeeper box CX414 back<br>![](attachments/The_Bookkeeper-Box-Front.jpg)
 
-![](attachments/The_Bookkeeper-Disks_1.jpg)
-The Bookkeeper box CX414 Diskettes CX8131 and CX8133
+- The Bookkeeper box CX414 Diskettes CX8131 and CX8133<br>![](attachments/The_Bookkeeper-Disks_1.jpg)
 
-![](attachments/The_Bookkeeper-Disks_2.jpg)
-The Bookkeeper box CX414 Diskettes CX8132 and CX8134
+- The Bookkeeper box CX414 Diskettes CX8132 and CX8134<br>![](attachments/The_Bookkeeper-Disks_2.jpg)

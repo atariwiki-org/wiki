@@ -4,8 +4,7 @@ Copyright (C) 1982 SYNAPSE Software and Steve Hales
 
 ## Introduction
 
-![](attachments/Synapse.gif)
-SYNAPSE Software
+- SYNAPSE Software<br>![](attachments/Synapse.gif)
 
 SYNASSEMBLER is a convenient and powerful tool for software development on the Atari computer system. The assembler uses standard 6502 mnemonics and syntax, and includes many useful features for creating, editing, assembling and testing your assembly language programs. Now assembly language programming is almost as easy as programming in BASIC.
 
@@ -128,32 +127,23 @@ There is a basic program in [ANTIC VOL. 3, NO. 2 / JUNE 1984 / PAGE 38](http://w
 
 ## Pictures and Themes
 
-![](attachments/SynAssembler-Disk.jpg)
-SynAssembler diskette
+- SynAssembler diskette<br>![](attachments/SynAssembler-Disk.jpg)
 
-![](attachments/SynAssembler.jpg)
-SynAssembler startscreen-original after starting with $CA in $02C5 and $C2 in $02C6
+- SynAssembler startscreen-original after starting with $CA in $02C5 and $C2 in $02C6<br>![](attachments/SynAssembler.jpg)
 
-![](attachments/SynAssembler-Background-Blue.jpg)
-SynAssembler after starting with $CA in $02C5 and $94 in $02C6
+- SynAssembler after starting with $CA in $02C5 and $94 in $02C6<br>![](attachments/SynAssembler-Background-Blue.jpg)
 
-![](attachments/SynAssembler-Background-Dark_Blue.jpg)
-SynAssembler after starting with $CA in $02C5 and $90 in $02C6
+- SynAssembler after starting with $CA in $02C5 and $90 in $02C6<br>![](attachments/SynAssembler-Background-Dark_Blue.jpg)
 
-![](attachments/SynAssembler-Background-Black.jpg)
-SynAssembler after starting with $0F in $02C5 and $00 in $02C6
+- SynAssembler after starting with $0F in $02C5 and $00 in $02C6<br>![](attachments/SynAssembler-Background-Black.jpg)
 
-![](attachments/SynAssembler-Background-White.jpg)
-SynAssembler after starting with $00 in $02C5 and $0F in $02C6
+- SynAssembler after starting with $00 in $02C5 and $0F in $02C6<br>![](attachments/SynAssembler-Background-White.jpg)
 
-![](attachments/SynAssembler-Background-Red.jpg)
-SynAssembler after starting with $CA in $02C5 and $34 in $02C6
+- SynAssembler after starting with $CA in $02C5 and $34 in $02C6<br>![](attachments/SynAssembler-Background-Red.jpg)
 
-![](attachments/SynAssembler-Background-Pink.jpg)
-SynAssembler after starting with $CA in $02C5 and $46 in $02C6
+- SynAssembler after starting with $CA in $02C5 and $46 in $02C6<br>![](attachments/SynAssembler-Background-Pink.jpg)
 
-![](attachments/SynAssembler-Background-Yellow.jpg)
-SynAssembler after starting with $CA in $02C5 and $FF in $02C6
+- SynAssembler after starting with $CA in $02C5 and $FF in $02C6<br>![](attachments/SynAssembler-Background-Yellow.jpg)
 
 ## Help File
 

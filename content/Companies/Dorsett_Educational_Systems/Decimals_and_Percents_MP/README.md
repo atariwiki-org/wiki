@@ -62,8 +62,6 @@ Tracks (size in sum: 1.02 GB):
 
 ## Images
 
-![](attachments/mpA_.jpg)
-Dorsett Atari Mathematics (Decimals and Percents) - cassettes with uneven numbers
+- Dorsett Atari Mathematics (Decimals and Percents) - cassettes with uneven numbers<br>![](attachments/mpA_.jpg)
 
-![](attachments/mpB_.jpg)
-Dorsett Atari Mathematics (Decimals and Percents) - cassettes with even numbers
+- Dorsett Atari Mathematics (Decimals and Percents) - cassettes with even numbers<br>![](attachments/mpB_.jpg)

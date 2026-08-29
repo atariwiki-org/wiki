@@ -6,8 +6,7 @@
 
 ## Pictures
 
-![](attachments/Ataris_Programmierhilfen-Diskette_Nr.1.jpg)
-Ataris Programmierhilfen-Diskette Nr.1
+- Ataris Programmierhilfen-Diskette Nr.1<br>![](attachments/Ataris_Programmierhilfen-Diskette_Nr.1.jpg)
 
 ### Danksagung
 

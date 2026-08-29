@@ -37,5 +37,4 @@ The Atari community has already started to bring the listing to files, please se
 
 ## Final end of a Commander Mission
 
-![](attachments/StarRaiders_animated.gif)
-Final end of a Commander Mission
+- Final end of a Commander Mission<br>![](attachments/StarRaiders_animated.gif)

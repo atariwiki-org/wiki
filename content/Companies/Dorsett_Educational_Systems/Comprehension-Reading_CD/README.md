@@ -62,8 +62,6 @@ Tracks (size in sum: 1.44 GB):
 
 ## Images
 
-![](attachments/cdA_.jpg)
-Dorsett Atari Comprehension-Reading CD - cassettes with uneven numbers
+- Dorsett Atari Comprehension-Reading CD - cassettes with uneven numbers<br>![](attachments/cdA_.jpg)
 
-![](attachments/cdB_.jpg)
-Dorsett Atari Comprehension-Reading CD - cassettes with even numbers
+- Dorsett Atari Comprehension-Reading CD - cassettes with even numbers<br>![](attachments/cdB_.jpg)

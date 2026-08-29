@@ -58,14 +58,11 @@ After entry the biorhythm will proceed to printout. Use CONTROL 1 to halt printo
 
 ## Pictures
 
-![](attachments/biorythm.jpg)
-Atari Biorhythm CX4107 - box ; thanks to rhod for scanning
+- Atari Biorhythm CX4107 - box ; thanks to rhod for scanning<br>![](attachments/biorythm.jpg)
 
-![](attachments/Program1.gif)
-Atari Biorhythm CX4107 - loadscreen
+- Atari Biorhythm CX4107 - loadscreen<br>![](attachments/Program1.gif)
 
-![](attachments/Program2.gif)
-Atari Biorhythm CX4107 - startscreen
+- Atari Biorhythm CX4107 - startscreen<br>![](attachments/Program2.gif)
 
 ## References
 

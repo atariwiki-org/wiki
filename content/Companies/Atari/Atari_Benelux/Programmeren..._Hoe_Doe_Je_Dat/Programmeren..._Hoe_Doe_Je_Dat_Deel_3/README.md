@@ -43,12 +43,9 @@ Low quality.
 
 ## Cover
 
-![](attachments/Programmeren_Hoe_Doe_Je_Dat_3_cover.jpg)
-Programmeren... Hoe doe je dat (Deel 3) Cover
+- Programmeren... Hoe doe je dat (Deel 3) Cover<br>![](attachments/Programmeren_Hoe_Doe_Je_Dat_3_cover.jpg)
 
 ## Mediapictures
 
-![](attachments/Programmeren_Hoe_Doe_Je_Dat_3_cassette1.jpg)
-Programmeren... Hoe doe je dat (Deel 3) Cassette 1
-![](attachments/Programmeren_Hoe_Doe_Je_Dat_3_cassette2.jpg)
-Programmeren... Hoe doe je dat (Deel 3) Cassette 2
+- Programmeren... Hoe doe je dat (Deel 3) Cassette 1<br>![](attachments/Programmeren_Hoe_Doe_Je_Dat_3_cassette1.jpg)
+- Programmeren... Hoe doe je dat (Deel 3) Cassette 2<br>![](attachments/Programmeren_Hoe_Doe_Je_Dat_3_cassette2.jpg)

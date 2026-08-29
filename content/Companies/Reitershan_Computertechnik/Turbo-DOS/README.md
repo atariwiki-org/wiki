@@ -13,5 +13,4 @@ Copyright (C) 1990 Herbert Barth, Frank Bruchhäuser und Martin Reitershan Compu
 
 ## Image
 
-![](attachments/Startscreen.jpg)
-Turbo-DOS XE - startscreen
+- Turbo-DOS XE - startscreen<br>![](attachments/Startscreen.jpg)

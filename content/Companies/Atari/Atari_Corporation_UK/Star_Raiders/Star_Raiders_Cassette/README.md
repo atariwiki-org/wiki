@@ -20,8 +20,7 @@ Release 1987: see cover picture
 
 ## Cover
 
-![](attachments/Star_Raiders_87_cover.jpg)
-Star Raiders Cover 1987 rerelease
+- Star Raiders Cover 1987 rerelease<br>![](attachments/Star_Raiders_87_cover.jpg)
 
 ## Media pictures
 

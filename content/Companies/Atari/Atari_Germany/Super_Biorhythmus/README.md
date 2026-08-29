@@ -8,23 +8,17 @@ Zu Atari Super Biorhythmus fehlt bislang jede Spur, lediglich ein Bild aus Frank
 
 ## Bilder
 
-![](attachments/Super_Biorythme-TF_4001-Cover.jpg)
-Französische Atari Super Biorhythmus Box ; vielen lieben Dank an Marsupilami von Atariage
+- Französische Atari Super Biorhythmus Box ; vielen lieben Dank an Marsupilami von Atariage<br>![](attachments/Super_Biorythme-TF_4001-Cover.jpg)
 
-![](attachments/Super_Biorythme-TF_4001-Side.jpg)
-Französische Atari Super Biorhythmus Box - Seitenansicht; vielen lieben Dank an Marsupilami von Atariage
+- Französische Atari Super Biorhythmus Box - Seitenansicht; vielen lieben Dank an Marsupilami von Atariage<br>![](attachments/Super_Biorythme-TF_4001-Side.jpg)
 
-![](attachments/Super_Biorythme-TF_4001-Cassette.jpg)
-Atari Super Biorhythmus - Französische Kassette; vielen lieben Dank an Marsupilami von Atariage
+- Atari Super Biorhythmus - Französische Kassette; vielen lieben Dank an Marsupilami von Atariage<br>![](attachments/Super_Biorythme-TF_4001-Cassette.jpg)
 
-![](attachments/Super_Biorythme-Screen_1.png)
-Atari Super Biorhythmus - französisches Bildschirmfoto 1; vielen lieben Dank an Marsupilami von Atariage
+- Atari Super Biorhythmus - französisches Bildschirmfoto 1; vielen lieben Dank an Marsupilami von Atariage<br>![](attachments/Super_Biorythme-Screen_1.png)
 
-![](attachments/Super_Biorythme-Screen_2.png)
-Atari Super Biorhythmus - französisches Bildschirmfoto 2; vielen lieben Dank an Marsupilami von Atariage
+- Atari Super Biorhythmus - französisches Bildschirmfoto 2; vielen lieben Dank an Marsupilami von Atariage<br>![](attachments/Super_Biorythme-Screen_2.png)
 
-![](attachments/Super_Biorythmes.jpg)
-Atari Super Biorhythmus ; französische Werbeanzeige ; vielen lieben Dank an Marsupilami von Atariage
+- Atari Super Biorhythmus ; französische Werbeanzeige ; vielen lieben Dank an Marsupilami von Atariage<br>![](attachments/Super_Biorythmes.jpg)
 
 ## Danksagung
 

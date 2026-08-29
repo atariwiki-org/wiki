@@ -1,14 +1,12 @@
 # Make protected BASIC code visible
 
 Sometimes Atari BASIC is protected and the user isn't able to see inside the source code. This is a main disadvantage, especially, when the original code is damaged. In order to preserve the software genuine, there is a need to solve this problem.
-![](attachments/Quelltext.jpg)
-List-Protected BASIC code from the German BASIC course: '[Noch mehr BASIC (TXG55007)](../../../../../Companies/Atari/Atari_Germany/Noch_mehr_BASIC_TXG55007/README.md)'
+- List-Protected BASIC code from the German BASIC course: '[Noch mehr BASIC (TXG55007)](../../../../../Companies/Atari/Atari_Germany/Noch_mehr_BASIC_TXG55007/README.md)'<br>![](attachments/Quelltext.jpg)
 
 Luckily, living legend Avery Lee, the creator of the Atari [Altirra](http://www.virtualdub.org/altirra.html) emulator, has implemented 2 routines, which do the job in a marvelous way. :-)
 
 Given the fact the user has already just loaded in the BASIC code without executing, then just the F8 key has to be pressed to force an interrupt:
-![](attachments/Debug_.jpg)
-Forcing an interrupt in the Atari [Altirra](https://www.virtualdub.org/altirra.html) emulator
+- Forcing an interrupt in the Atari [Altirra](https://www.virtualdub.org/altirra.html) emulator<br>![](attachments/Debug_.jpg)
 
 Afterwards, in the Console window, just type in these 2 lines:
 

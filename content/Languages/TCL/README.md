@@ -2,8 +2,7 @@
 
 Copyright (C) 1985-1990 by David Firth
 
-![](attachments/TCL.png)
-Test Computer Language, Version 2.2
+- Test Computer Language, Version 2.2<br>![](attachments/TCL.png)
 
 This language has been designed for the programmer with an in-depth knowledge of ATARI's 8 bit computers. It may also be useful to know a little 6502 machine code in order to extend the functionality of the language via user defined functions and procedures.
 
@@ -34,16 +33,13 @@ ASM,,#D:TCL.COM
 
 ## Example
 
-![](attachments/TCL-Example3.png)
-Colour program in TCL source code
+- Colour program in TCL source code<br>![](attachments/TCL-Example3.png)
 
 ## Pictures
 
-![](attachments/TCL-Breakout3.png)
-Break Out in TCL - picture 1
+- Break Out in TCL - picture 1<br>![](attachments/TCL-Breakout3.png)
 
-![](attachments/TCL-Breakout4.png)
-Break Out in TCL - picture 2
+- Break Out in TCL - picture 2<br>![](attachments/TCL-Breakout4.png)
 
 ## Reference
 

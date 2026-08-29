@@ -18,10 +18,8 @@ See cover picture
 
 ## Cover
 
-![](attachments/Twilight_World_cover.jpg)
-Twilight World cover
+- Twilight World cover<br>![](attachments/Twilight_World_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Twilight_World_cass.jpg)
-Twilight World cassette
+- Twilight World cassette<br>![](attachments/Twilight_World_cass.jpg)

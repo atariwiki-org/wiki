@@ -62,8 +62,6 @@ Tracks (size in sum: 1.93 GB):
 
 ## Images
 
-![](attachments/paA_.jpg)
-Dorsett Atari Principles of Accounting - cassettes with uneven numbers
+- Dorsett Atari Principles of Accounting - cassettes with uneven numbers<br>![](attachments/paA_.jpg)
 
-![](attachments/paB_.jpg)
-Dorsett Atari Principles of Accounting - cassettes with even numbers
+- Dorsett Atari Principles of Accounting - cassettes with even numbers<br>![](attachments/paB_.jpg)

@@ -10,23 +10,16 @@ Atari Familien Finanzen ist die deutsche Version der US-Version von Budget \& In
 
 ## Bilder
 
-![](attachments/Intro2.jpg)
-Familien Finanzen - erstes Bild während des Ladens
+- Familien Finanzen - erstes Bild während des Ladens<br>![](attachments/Intro2.jpg)
 
-![](attachments/Familien-Finanzen1.jpg)
-Familien Finanzen - Hauptmenü
+- Familien Finanzen - Hauptmenü<br>![](attachments/Familien-Finanzen1.jpg)
 
-![](attachments/Familien-Finanzen2.jpg)
-Familien Finanzen - Übersicht
+- Familien Finanzen - Übersicht<br>![](attachments/Familien-Finanzen2.jpg)
 
-![](attachments/Familien-Finanzen3.jpg)
-Familien Finanzen - Ausgaben
+- Familien Finanzen - Ausgaben<br>![](attachments/Familien-Finanzen3.jpg)
 
-![](attachments/Familien-Finanzen4.jpg)
-Familien Finanzen - Einnahmen 1
+- Familien Finanzen - Einnahmen 1<br>![](attachments/Familien-Finanzen4.jpg)
 
-![](attachments/Familien-Finanzen5.jpg)
-Familien Finanzen - Einnahmen 2
+- Familien Finanzen - Einnahmen 2<br>![](attachments/Familien-Finanzen5.jpg)
 
-![](attachments/Familien-Finanzen6.jpg)
-Familien Finanzen - Eingabefeld
+- Familien Finanzen - Eingabefeld<br>![](attachments/Familien-Finanzen6.jpg)

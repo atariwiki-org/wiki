@@ -40,8 +40,7 @@ Another question is how far do we want to extend it? With modern bank-switching 
 
 ## Pictures
 
-![](attachments/Crossbreeding.jpg)
-Ultimate Basic trough crossbreeding?
+- Ultimate Basic trough crossbreeding?<br>![](attachments/Crossbreeding.jpg)
 
 ## References
 

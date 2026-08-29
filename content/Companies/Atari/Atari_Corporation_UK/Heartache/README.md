@@ -20,10 +20,8 @@ See cover picture
 
 ## Cover
 
-![](attachments/Heartache_TX9046_cover.jpg)
-Heartache cover
+- Heartache cover<br>![](attachments/Heartache_TX9046_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Heartache_TX9046_cass.jpg)
-Heartache cassette
+- Heartache cassette<br>![](attachments/Heartache_TX9046_cass.jpg)

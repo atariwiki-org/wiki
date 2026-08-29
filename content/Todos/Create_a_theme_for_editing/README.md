@@ -8,68 +8,46 @@ In order to find a right theme for editing, please see the below code for making
 
 ## Pictures
 
-![](attachments/Theme_01.jpg)
-Theme 01
+- Theme 01<br>![](attachments/Theme_01.jpg)
 
-![](attachments/Theme_02.jpg)
-Theme 02
+- Theme 02<br>![](attachments/Theme_02.jpg)
 
-![](attachments/Theme_03.jpg)
-Theme 03
+- Theme 03<br>![](attachments/Theme_03.jpg)
 
-![](attachments/Theme_04.jpg)
-Theme 04
+- Theme 04<br>![](attachments/Theme_04.jpg)
 
-![](attachments/Theme_05.jpg)
-Theme 05
+- Theme 05<br>![](attachments/Theme_05.jpg)
 
-![](attachments/Theme_06.jpg)
-Theme 06
+- Theme 06<br>![](attachments/Theme_06.jpg)
 
-![](attachments/Theme_07.jpg)
-Theme 07
+- Theme 07<br>![](attachments/Theme_07.jpg)
 
-![](attachments/Theme_08.jpg)
-Theme 08
+- Theme 08<br>![](attachments/Theme_08.jpg)
 
-![](attachments/Theme_09.jpg)
-Theme 09
+- Theme 09<br>![](attachments/Theme_09.jpg)
 
-![](attachments/Theme_10.jpg)
-Theme 10
+- Theme 10<br>![](attachments/Theme_10.jpg)
 
-![](attachments/Theme_11.jpg)
-Theme 11
+- Theme 11<br>![](attachments/Theme_11.jpg)
 
-![](attachments/Theme_12.jpg)
-Theme 12
+- Theme 12<br>![](attachments/Theme_12.jpg)
 
-![](attachments/Theme_13.jpg)
-Theme 13
+- Theme 13<br>![](attachments/Theme_13.jpg)
 
-![](attachments/Theme_14.jpg)
-Theme 14
+- Theme 14<br>![](attachments/Theme_14.jpg)
 
-![](attachments/Theme_15.jpg)
-Theme 15
+- Theme 15<br>![](attachments/Theme_15.jpg)
 
-![](attachments/Theme_16.jpg)
-Theme 16
+- Theme 16<br>![](attachments/Theme_16.jpg)
 
-![](attachments/Theme_17.jpg)
-Theme 17
+- Theme 17<br>![](attachments/Theme_17.jpg)
 
-![](attachments/Theme_18.jpg)
-Theme 18
+- Theme 18<br>![](attachments/Theme_18.jpg)
 
-![](attachments/Theme_19.jpg)
-Theme 19
+- Theme 19<br>![](attachments/Theme_19.jpg)
 
-![](attachments/Theme_20.jpg)
-Theme 20
+- Theme 20<br>![](attachments/Theme_20.jpg)
 
-![](attachments/Theme_21.jpg)
-Theme 21
+- Theme 21<br>![](attachments/Theme_21.jpg)
 
-![](attachments/Theme_22.jpg)
-Theme 22
+- Theme 22<br>![](attachments/Theme_22.jpg)

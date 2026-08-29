@@ -11,8 +11,7 @@ Diese Software schien verloren, doch dank Marceau Mallard von [Atarinside](http:
 
 ## Bild
 
-![](attachments/cover.jpg)
-Disketten-Bibliothek DXG 5720 - Box (Vorder- und Rückansicht) ; Vielen lieben Dank Marceau Mallard von [Atarinside](http://atarinside.dyndns.org/blog/index.php/atarinside-items/disketten-bibliothek/)
+- Disketten-Bibliothek DXG 5720 - Box (Vorder- und Rückansicht) ; Vielen lieben Dank Marceau Mallard von [Atarinside](http://atarinside.dyndns.org/blog/index.php/atarinside-items/disketten-bibliothek/)<br>![](attachments/cover.jpg)
 
 ## Referenzen
 

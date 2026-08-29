@@ -60,14 +60,11 @@ Not yet available in English, please try to help yourself with the German versio
 
 ## Pictures
 
-![](attachments/Beispielcode-Basic-Monokai.jpg)
-Code example with theme: 'Basic-Monokai' in Sublime Text 2
+- Code example with theme: 'Basic-Monokai' in Sublime Text 2<br>![](attachments/Beispielcode-Basic-Monokai.jpg)
 
-![](attachments/Special_Characters_43.jpg)
-43 special characters in the Atari font
+- 43 special characters in the Atari font<br>![](attachments/Special_Characters_43.jpg)
 
-![](attachments/Sublime_Text-TURBAN-Special_Characters.jpg)
-Sublime Text - TURBAN special characters
+- Sublime Text - TURBAN special characters<br>![](attachments/Sublime_Text-TURBAN-Special_Characters.jpg)
 
 ## Recommended editors
 
@@ -99,8 +96,7 @@ TURBAN - \_\_TUR\_\_bo\_\_BA\_\_sic \_\_N\_\_ifty
 
 TURboBAsic Nifty (TURBAN) würde man ins Deutsche als TURBO-BASIC XL elegant übersetzen. Was hat es damit auf sich? Kurz und knapp erklärt handelt es sich hierbei um das bekannte TURBO-BASIC XL, nur eben mit der Technik des 21. Jahrhunderts. Dazu waren mehrere Autoren erforderlich, da es sich um die gemeinsame Anwendung verschiedener Programme zu einem funktionierenden Ganzen handelt. Es sind immer wieder diese Gemeinschaftsproduktionen, die Atari sowie die Gemeinschaft so stark machen und die Freude am Hobby so lange erhalten. Man sagt, ein Bild sagt mehr als tausend Worte:
 
-![](attachments/Beispielcode-Basic-Monokai.jpg)
-Beispielcode mit dem Farbschema: Basic-Monokai in Sublime Text 2
+- Beispielcode mit dem Farbschema: Basic-Monokai in Sublime Text 2<br>![](attachments/Beispielcode-Basic-Monokai.jpg)
 
 Im vorstehenden Bild ist ein Quelltext von TURBO-BASIC XL im Editor "Sublime Text 2" dargestellt. Hierbei wurde das Farbschema "Basic-Monokai" verwendet, um die verschiedenen Parameter entsprechend hervorzuheben. Die Programme werden nämlich nicht, wie gewohnt im Atari BASIC- oder TURBO-BASIC XL-Editor geschrieben, sondern auf modernen, aktuellen Hochleistungseditoren, wie z. B. die plattformübergreifenden Programme: [Sublime Text](https://www.sublimetext.com/) oder [UltraEdit](https://www.ultraedit.com/). Es gibt auch kostenfreie Editoren wie z. B. [Geany](https://www.geany.org/Download/Releases). Hat man nun den Quelltext eingegeben, drückt man eine Taste und startet somit ein Skript, dass das Programm in Atari BASIC oder TURBO-BASIC XL blitzschnell übersetzt, als Datei für den Atari erzeugt, auf ein ATR-Image schreibt, um anschließend vom Emulator nach Wunsch geöffnet und automatisch gestartet werden zu können! Hat man hierbei einen Fehler gemacht, gibt es eine Rückmeldung in welcher Zeile des Quelltextes das passierte (1. Spalte im Bild oben, die grauen Zahlen). In der 2. Spalte sind die eigentlichen Zeilennummerierungen des BASIC-Programms zu sehen. Schön zu sehen sind die farblichen Unterscheidungen sowie das Einrücken von Schleifen. Das Kopieren und Einfügen geht selbstverständlich auch sehr elegant mit den modernen Editoren. Nachstehend werden einige Editoren vorgestellt:
 
@@ -152,11 +148,9 @@ Zur Zeit nur im englischen Reiter für Windows 10
 
 ## Bilder
 
-![](attachments/Special_Characters_43.jpg)
-43 Spezialzeichen im Atari Zeichensatz
+- 43 Spezialzeichen im Atari Zeichensatz<br>![](attachments/Special_Characters_43.jpg)
 
-![](attachments/Sublime_Text-TURBAN-Special_Characters.jpg)
-Alle Spezialzeichen in Sublime Text: TURBAN Spezialzeichen
+- Alle Spezialzeichen in Sublime Text: TURBAN Spezialzeichen<br>![](attachments/Sublime_Text-TURBAN-Special_Characters.jpg)
 
 /%
 %%tab-français

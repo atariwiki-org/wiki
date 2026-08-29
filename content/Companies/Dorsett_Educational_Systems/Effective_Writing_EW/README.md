@@ -62,8 +62,6 @@ Tracks (size in sum: 1.81 GB):
 
 ## Images
 
-![](attachments/ewA_.jpg)
-Dorsett Atari Effective Writing - cassettes with uneven numbers
+- Dorsett Atari Effective Writing - cassettes with uneven numbers<br>![](attachments/ewA_.jpg)
 
-![](attachments/ewB_.jpg)
-Dorsett Atari Effective Writing - cassettes with even numbers
+- Dorsett Atari Effective Writing - cassettes with even numbers<br>![](attachments/ewB_.jpg)

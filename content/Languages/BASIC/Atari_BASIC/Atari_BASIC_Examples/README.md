@@ -63,32 +63,22 @@ Im Folgenden werden Beispiele zu den oben aufgeführten Programmen vorgestellt, 
 
 ## Bilder
 
-![](attachments/Graphen.jpg)
-Grundlegende Graphentypen, die zur Gleichungsfindung bei Regressionen verwendet werden. Erstellt mit Mathematica.
+- Grundlegende Graphentypen, die zur Gleichungsfindung bei Regressionen verwendet werden. Erstellt mit Mathematica.<br>![](attachments/Graphen.jpg)
 
-![](attachments/XSin1X.jpg)
-Beispiel des Programms GRAPH mit der Funktion: Y = X\*SIN(1/X) jeweils in den Grenzen von -0,02 bis 0,02.
+- Beispiel des Programms GRAPH mit der Funktion: Y = X\*SIN(1/X) jeweils in den Grenzen von -0,02 bis 0,02.<br>![](attachments/XSin1X.jpg)
 
-![](attachments/Aprox.jpg)
-APROX - Startbildschirm des Programms APROX von der Zeitschrift Chip zur Gleichungsfindung auf Basis von Wertepaaren.
+- APROX - Startbildschirm des Programms APROX von der Zeitschrift Chip zur Gleichungsfindung auf Basis von Wertepaaren.<br>![](attachments/Aprox.jpg)
 
-![](attachments/Beispiel1.jpg)
-Lineares Gleichungssystem 3 x 3 des Programms LGS3 von der Zeitschrift Chip Beispiel 1.
+- Lineares Gleichungssystem 3 x 3 des Programms LGS3 von der Zeitschrift Chip Beispiel 1.<br>![](attachments/Beispiel1.jpg)
 
-![](attachments/Beispiel2.jpg)
-Lineares Gleichungssystem 3 x 3 des Programms LGS3 von der Zeitschrift Chip Beispiel 2.
+- Lineares Gleichungssystem 3 x 3 des Programms LGS3 von der Zeitschrift Chip Beispiel 2.<br>![](attachments/Beispiel2.jpg)
 
-![](attachments/Beispiel3.jpg)
-Lineares Gleichungssystem 3 x 3 des Programms LGS3 von der Zeitschrift Chip Beispiel 3.
+- Lineares Gleichungssystem 3 x 3 des Programms LGS3 von der Zeitschrift Chip Beispiel 3.<br>![](attachments/Beispiel3.jpg)
 
-![](attachments/Beispiel4.jpg)
-Lineares Gleichungssystem 3 x 3 des Programms LGS3 von der Zeitschrift Chip Beispiel 4.
+- Lineares Gleichungssystem 3 x 3 des Programms LGS3 von der Zeitschrift Chip Beispiel 4.<br>![](attachments/Beispiel4.jpg)
 
-![](attachments/Runden.jpg)
-Routine zum Runden, um den Bug in Atari Basic Revision A zu behben: Y=INT((Y+5.0E-03)\*100)/100
+- Routine zum Runden, um den Bug in Atari Basic Revision A zu behben: Y=INT((Y+5.0E-03)\*100)/100<br>![](attachments/Runden.jpg)
 
-![](attachments/Runden-Beispiel.jpg)
-Beispiel für den Bug in Atari Basic Revision A - ohne und mit Runden
+- Beispiel für den Bug in Atari Basic Revision A - ohne und mit Runden<br>![](attachments/Runden-Beispiel.jpg)
 
-![](attachments/Primzahlen.jpg)
-Primzahlen bis 97
+- Primzahlen bis 97<br>![](attachments/Primzahlen.jpg)

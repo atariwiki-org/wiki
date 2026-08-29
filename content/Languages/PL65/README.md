@@ -37,20 +37,15 @@ Here's a working disk image of PL65 for anyone who wants to try what must be the
 
 ## Picture
 
-![](attachments/Manual-Disk.jpg)
-PL65 manual and disk
+- PL65 manual and disk<br>![](attachments/Manual-Disk.jpg)
 
-![](attachments/Disk-sticker.jpg)
-PL65 disk sticker
+- PL65 disk sticker<br>![](attachments/Disk-sticker.jpg)
 
-![](attachments/PL65-Start-Screen.jpg)
-PL65 start screen
+- PL65 start screen<br>![](attachments/PL65-Start-Screen.jpg)
 
-![](attachments/Manual.jpg)
-PL65 manual cover
+- PL65 manual cover<br>![](attachments/Manual.jpg)
 
-![](attachments/Manual-Example.jpg)
-PL65 manual example
+- PL65 manual example<br>![](attachments/Manual-Example.jpg)
 
 ## Movies
 

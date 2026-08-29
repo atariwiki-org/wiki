@@ -3,8 +3,7 @@
 In order to do calculations on the lowest level of machine language, it is a good idea to use some tools for this kind of work. AtariWiki introduces some of them:
 
 For dealing with bits and operations, please use the following conversion table:
-![](attachments/XOR.jpg)
-Conversion table for bits with used operations
+- Conversion table for bits with used operations<br>![](attachments/XOR.jpg)
 
 ## Recommendations
 

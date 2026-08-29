@@ -17,7 +17,6 @@ More information on QS FORTH is needed; please help us. QS FORTH works with OS B
 
 ## Picture
 
-![](attachments/QS-FORTH_1.0.jpg)
-QS-FORTH 1.0 start screen
+- QS-FORTH 1.0 start screen<br>![](attachments/QS-FORTH_1.0.jpg)
 
 ''A variation called Beginner Forth was available (prompt: "BEG Forth 1.0").''

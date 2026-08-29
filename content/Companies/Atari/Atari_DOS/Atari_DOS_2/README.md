@@ -34,5 +34,4 @@ There were many variations with DOS 2. Here are just the most used ones.
 
 ## Image
 
-![](attachments/atari-400-800-dos.jpg)
-Disk Operating System II (DOS II) - Reference Manual - Cover
+- Disk Operating System II (DOS II) - Reference Manual - Cover<br>![](attachments/atari-400-800-dos.jpg)

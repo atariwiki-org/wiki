@@ -4,8 +4,7 @@ Atari Classic TrueType Font created by [Mark L. Simonson](http://www2.bitstream.
 
 Thank you so much Mark, we really would like to thank you for your work. Especially for the German version. The German users are really happy about it and appreciate your contribution very much. Please go ahead!
 
-![](attachments/ico_goteam.gif)
-Thank you in the name of Germany!
+- Thank you in the name of Germany!<br>![](attachments/ico_goteam.gif)
 
 ## Fonts
 
@@ -16,26 +15,19 @@ Thank you in the name of Germany!
 
 ## Pictures
 
-![](attachments/version2set.gif)
-Version 2 character set
+- Version 2 character set<br>![](attachments/version2set.gif)
 
-![](attachments/chunky.gif)
-Atari Classic Chunky
+- Atari Classic Chunky<br>![](attachments/chunky.gif)
 
-![](attachments/smooth.gif)
-Atari Classic Smooth
+- Atari Classic Smooth<br>![](attachments/smooth.gif)
 
-![](attachments/xsmooth.gif)
-Atari Classic Extrasmooth
+- Atari Classic Extrasmooth<br>![](attachments/xsmooth.gif)
 
-![](attachments/atascii.gif)
-Old ATASCII font - version 1.2
+- Old ATASCII font - version 1.2<br>![](attachments/atascii.gif)
 
-![](attachments/Regular.jpg)
-Atari Classic Regular ; thank you so much Mark!
+- Atari Classic Regular ; thank you so much Mark!<br>![](attachments/Regular.jpg)
 
-![](attachments/German.jpg)
-Atari Classic Regular with German special letters ; thank you so much Mark!
+- Atari Classic Regular with German special letters ; thank you so much Mark!<br>![](attachments/German.jpg)
 
 ## References
 

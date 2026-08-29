@@ -24,11 +24,9 @@ Calculator has 100 memory registers, additionally a 42 number stack and is fully
 
 The Calculator requires 24K of RAM.
 
-![](attachments/Calculator_selling.jpg)
-Atari Calculator description 1
+- Atari Calculator description 1<br>![](attachments/Calculator_selling.jpg)
 
-![](attachments/Atari_Calculator_description.jpg)
-Atari Calculator description 2
+- Atari Calculator description 2<br>![](attachments/Atari_Calculator_description.jpg)
 
 Please do not use MEM.SAV with DOS. Instead use the SAVEM as well as the LOADM command of Calculator to store and load the user memory to other programs and/or devices.
 
@@ -72,56 +70,39 @@ Atari Calculator on the 14th Vintage Computer Festival Europe: [Atari Calculator
 
 ## Images
 
-![](attachments/Atari_Calculator2_.jpg)
-Boxcover from the Atari Calculator
+- Boxcover from the Atari Calculator<br>![](attachments/Atari_Calculator2_.jpg)
 
-![](attachments/calculator_cart.jpg)
-Atari Calculator cartridge: The Atari Calculator was originally scheduled as a cartridge. Because Atari did not manage it to sell this in 1979 and on top needed 2 more years to publish it on diskette in 1981, we decided to honor the author of Calculator, Carol Shaw, with the creation of a cartridge label, which matches best the design of those times. The next free CXL-number was assigned so, but you as the reader know, it should have been a CXL-number with a double zero "00" ;-). The creation of the label, its accuracy, its colors etc. would not have been possible without [Oliver Rapp](http://des-or-mad.net). Oliver, we all thank you so much! Please go ahead with your outstanding work in graphics and design.
+- Atari Calculator cartridge: The Atari Calculator was originally scheduled as a cartridge. Because Atari did not manage it to sell this in 1979 and on top needed 2 more years to publish it on diskette in 1981, we decided to honor the author of Calculator, Carol Shaw, with the creation of a cartridge label, which matches best the design of those times. The next free CXL-number was assigned so, but you as the reader know, it should have been a CXL-number with a double zero "00" ;-). The creation of the label, its accuracy, its colors etc. would not have been possible without [Oliver Rapp](http://des-or-mad.net). Oliver, we all thank you so much! Please go ahead with your outstanding work in graphics and design.<br>![](attachments/calculator_cart.jpg)
 
-![](attachments/Atari_Calculator3.jpg)
-Calculator after starting with $CA in $02C5 and $34 in $02C6
+- Calculator after starting with $CA in $02C5 and $34 in $02C6<br>![](attachments/Atari_Calculator3.jpg)
 
-![](attachments/Atari_Calculator4.jpg)
-Calculator after a little calculation
+- Calculator after a little calculation<br>![](attachments/Atari_Calculator4.jpg)
 
-![](attachments/Modi.jpg)
-The different modes of Calculator
+- The different modes of Calculator<br>![](attachments/Modi.jpg)
 
-![](attachments/Programmmodus3.jpg)
-Calculator in programming mode
+- Calculator in programming mode<br>![](attachments/Programmmodus3.jpg)
 
-![](attachments/Programmmodus4.jpg)
-Calculator after return from programming mode
+- Calculator after return from programming mode<br>![](attachments/Programmmodus4.jpg)
 
-![](attachments/Color.jpg)
-Calculator with $00 in $02C5 and $0F in $02C6
+- Calculator with $00 in $02C5 and $0F in $02C6<br>![](attachments/Color.jpg)
 
-![](attachments/Color2_.jpg)
-Calculator with $0F in $02C5 and $00 in $02C6
+- Calculator with $0F in $02C5 and $00 in $02C6<br>![](attachments/Color2_.jpg)
 
-![](attachments/Atari_Blue.jpg)
-"Atari Blue"-Calculator with $94 in $02C6
+- "Atari Blue"-Calculator with $94 in $02C6<br>![](attachments/Atari_Blue.jpg)
 
-![](attachments/Dark_Blue.jpg)
-Calculator with $90 in $02C6
+- Calculator with $90 in $02C6<br>![](attachments/Dark_Blue.jpg)
 
-![](attachments/Green.jpg)
-Calculator with $C3 in $02C6
+- Calculator with $C3 in $02C6<br>![](attachments/Green.jpg)
 
-![](attachments/Pink.jpg)
-Calculator with $46 in $02C6
+- Calculator with $46 in $02C6<br>![](attachments/Pink.jpg)
 
-![](attachments/Yellow.jpg)
-Calculator with $FF in $02C6
+- Calculator with $FF in $02C6<br>![](attachments/Yellow.jpg)
 
-![](attachments/Genauigkeit1.jpg)
-Precision of Calculator against Atari Basic
+- Precision of Calculator against Atari Basic<br>![](attachments/Genauigkeit1.jpg)
 
-![](attachments/Genauigkeit2.jpg)
-Precision of Calculator against different Basic versions
+- Precision of Calculator against different Basic versions<br>![](attachments/Genauigkeit2.jpg)
 
-![](attachments/C64.jpg)
-Precision of Commodore 64 Basic V2
+- Precision of Commodore 64 Basic V2<br>![](attachments/C64.jpg)
 
 ![](attachments/Genauigkeit_Calculator.jpg) ![](attachments/Genauigkeit_Visicalc.jpg) ![](attachments/Genauigkeit_Speedcalc.jpg)
 Precision of Calculator (1979) in comparison with Visicalc (1980) and SpeedCalc (1986)
@@ -129,19 +110,14 @@ Precision of Calculator (1979) in comparison with Visicalc (1980) and SpeedCalc 
 ![](attachments/SumCal.jpg) ![](attachments/SumExcel2011.jpg)
 Precision of Calculator (1979) in comparison with MS Excel PC (2010) Mac (2011) (German edition) ; In late 2015 Microsoft finally fixed the problem. Thank you Microsoft. :-)
 
-![](attachments/Programm2.jpg)
-Calculator program example no. 2
+- Calculator program example no. 2<br>![](attachments/Programm2.jpg)
 
-![](attachments/Anzahl_Befehle.jpg)
-Number of commands: Atari Basic (Rev. A) vs. Atari Calculator
+- Number of commands: Atari Basic (Rev. A) vs. Atari Calculator<br>![](attachments/Anzahl_Befehle.jpg)
 
-![](attachments/Calculator_original_source_code_listing.jpg)
-Calculator original source code listing (1979)
+- Calculator original source code listing (1979)<br>![](attachments/Calculator_original_source_code_listing.jpg)
 
-![](attachments/Floating_Point_Routines_original.jpg)
-Colleen original Floating Point Routines listing (1979)
+- Colleen original Floating Point Routines listing (1979)<br>![](attachments/Floating_Point_Routines_original.jpg)
 
-![](attachments/Carol.jpg)
-Image of Carol Shaw when starting the cartridge
+- Image of Carol Shaw when starting the cartridge<br>![](attachments/Carol.jpg)
 
 Author: Carol Shaw, creator of River Raid, 3D Tic-Tac-Toe and many other programs. Thanks Carol Shaw.

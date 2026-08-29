@@ -17,26 +17,18 @@ Bitte beachten Sie, dass die deutsche Version noch den Y2K-Bug enthält und dahe
 
 ## Bilder
 
-![](attachments/Cover_1-D.jpg)
-Atari Biorhythmus DXG 5727 - Box - Vorderseite - Dank an Atarimania für den Scan
+- Atari Biorhythmus DXG 5727 - Box - Vorderseite - Dank an Atarimania für den Scan<br>![](attachments/Cover_1-D.jpg)
 
-![](attachments/Cover_2-D.jpg)
-Atari Biorhythmus DXG 5727 - Box - Rückseite - Dank an Atarimania für den Scan
+- Atari Biorhythmus DXG 5727 - Box - Rückseite - Dank an Atarimania für den Scan<br>![](attachments/Cover_2-D.jpg)
 
-![](attachments/Biorhythmus1_.jpg)
-Atari Biorhythmus TXG 4107 - Kassette - Seite 1
+- Atari Biorhythmus TXG 4107 - Kassette - Seite 1<br>![](attachments/Biorhythmus1_.jpg)
 
-![](attachments/Biorhythmus2_.jpg)
-Atari Biorhythmus TXG 4107 - Kassette - Seite 2
+- Atari Biorhythmus TXG 4107 - Kassette - Seite 2<br>![](attachments/Biorhythmus2_.jpg)
 
-![](attachments/Screen1.jpg)
-Atari Biorhythmus - Bild 1
+- Atari Biorhythmus - Bild 1<br>![](attachments/Screen1.jpg)
 
-![](attachments/Screen2.jpg)
-Atari Biorhythmus - Bild 2
+- Atari Biorhythmus - Bild 2<br>![](attachments/Screen2.jpg)
 
-![](attachments/Screen4.jpg)
-Atari Biorhythmus - Bild 3
+- Atari Biorhythmus - Bild 3<br>![](attachments/Screen4.jpg)
 
-![](attachments/Screen3.jpg)
-Atari Biorhythmus - Bild 4
+- Atari Biorhythmus - Bild 4<br>![](attachments/Screen3.jpg)

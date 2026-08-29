@@ -130,23 +130,17 @@ CAS-Images mit den einzuladenden Basic-Programmen von Teil A bis D jeweils einsc
 
 ## Bilder
 
-![](attachments/Noch_mehr_Basic_a.jpg)
-Noch mehr BASIC - TXG 55007 - Box - Seite 1
+- Noch mehr BASIC - TXG 55007 - Box - Seite 1<br>![](attachments/Noch_mehr_Basic_a.jpg)
 
-![](attachments/Noch_mehr_Basic_b.jpg)
-Noch mehr BASIC - TXG 55007 - Box - Seite 2
+- Noch mehr BASIC - TXG 55007 - Box - Seite 2<br>![](attachments/Noch_mehr_Basic_b.jpg)
 
-![](attachments/Info_.jpg)
-Noch mehr BASIC - TXG 55007 - Info
+- Noch mehr BASIC - TXG 55007 - Info<br>![](attachments/Info_.jpg)
 
-![](attachments/Noch_mehr_Basic-Preloader.jpg)
-Noch mehr BASIC - TXG 55007 - Vorladeprogramm zum Kurs
+- Noch mehr BASIC - TXG 55007 - Vorladeprogramm zum Kurs<br>![](attachments/Noch_mehr_Basic-Preloader.jpg)
 
-![](attachments/Lektion1.jpg)
-Noch mehr BASIC - TXG 55007 - Lektion Eins
+- Noch mehr BASIC - TXG 55007 - Lektion Eins<br>![](attachments/Lektion1.jpg)
 
-![](attachments/Lektion2.jpg)
-Noch mehr BASIC - TXG 55007 - Lektion Zwei
+- Noch mehr BASIC - TXG 55007 - Lektion Zwei<br>![](attachments/Lektion2.jpg)
 
 ## Film
 

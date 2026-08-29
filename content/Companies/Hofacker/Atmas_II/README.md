@@ -16,17 +16,12 @@ Copyright (C) by Peter Finzel
 
 ## Bilder
 
-![](attachments/Cover.jpg)
-ATMAS II Box - Vorderseite - danke an Atarimania! :-)
+- ATMAS II Box - Vorderseite - danke an Atarimania! :-)<br>![](attachments/Cover.jpg)
 
-![](attachments/Back.jpg)
-ATMAS II Box - Rückseite - danke an Atarimania! :-)
+- ATMAS II Box - Rückseite - danke an Atarimania! :-)<br>![](attachments/Back.jpg)
 
-![](attachments/Atmas2_disk.jpg)
-ATMAS II Diskette - danke an Atarimania! :-)
+- ATMAS II Diskette - danke an Atarimania! :-)<br>![](attachments/Atmas2_disk.jpg)
 
-![](attachments/ATMAS-II-48K.jpg)
-ATMAS II Startbildschirm bei zuwenig RAM
+- ATMAS II Startbildschirm bei zuwenig RAM<br>![](attachments/ATMAS-II-48K.jpg)
 
-![](attachments/ATMAS-II-Toolbox.jpg)
-ATMAS-II-Toolbox - Startbildschirm
+- ATMAS-II-Toolbox - Startbildschirm<br>![](attachments/ATMAS-II-Toolbox.jpg)

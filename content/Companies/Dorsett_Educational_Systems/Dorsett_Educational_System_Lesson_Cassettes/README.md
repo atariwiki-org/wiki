@@ -5,11 +5,9 @@ Thanks to Michael Current, Thomas Cherryhomes, and Kay Savetz, it was possible t
 
 ## Image
 
-![](attachments/45packages.jpg)
-The 'remaining' ones from the Dorsett Educational System program for the Atari. The NeverEnding Story is a fantasy film, but The NeverEnding: "Thank you Kay Savetz" is for real! Kay, if there is an Atari walk of fame, be sure, you deserve a star under the top 10 there!
+- The 'remaining' ones from the Dorsett Educational System program for the Atari. The NeverEnding Story is a fantasy film, but The NeverEnding: "Thank you Kay Savetz" is for real! Kay, if there is an Atari walk of fame, be sure, you deserve a star under the top 10 there!<br>![](attachments/45packages.jpg)
 
-![](attachments/Dorsett_Educational_Systems_Graphic.jpg)
-Dorsett Educational Systems - Graphic - thanks Kay for scanning
+- Dorsett Educational Systems - Graphic - thanks Kay for scanning<br>![](attachments/Dorsett_Educational_Systems_Graphic.jpg)
 
 ## Courses
 
@@ -113,5 +111,4 @@ Just loud thinking...
 
 ### WORKING WITH FRACTIONS MF
 
-![](attachments/Fractions.jpg)
-Sadly, we lost on ebay and are not able to offer it. :-(
+- Sadly, we lost on ebay and are not able to offer it. :-(<br>![](attachments/Fractions.jpg)

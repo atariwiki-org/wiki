@@ -36,76 +36,52 @@ The original program could not handle todays high stock volumes. Therefore, Wade
 
 ## Box
 
-![](attachments/Cover.jpg)
-Stock Charting CX8108 - box cover - thank you Wade Ripkowski for the high quality scan
+- Stock Charting CX8108 - box cover - thank you Wade Ripkowski for the high quality scan<br>![](attachments/Cover.jpg)
 
-![](attachments/Back.jpg)
-Stock Charting CX8108 - box back - thank you Wade Ripkowski for the high quality scan
+- Stock Charting CX8108 - box back - thank you Wade Ripkowski for the high quality scan<br>![](attachments/Back.jpg)
 
-![](attachments/CX8108_Diskette.jpg)
-Stock Charting - CX8108 Program Diskette - thank you Allan Bushman for the high quality scan
+- Stock Charting - CX8108 Program Diskette - thank you Allan Bushman for the high quality scan<br>![](attachments/CX8108_Diskette.jpg)
 
-![](attachments/CX8111_Diskette.jpg)
-Stock Charting - CX8111 Blank Diskette - thank you Wade Ripkowski for the high quality scan
+- Stock Charting - CX8111 Blank Diskette - thank you Wade Ripkowski for the high quality scan<br>![](attachments/CX8111_Diskette.jpg)
 
-![](attachments/Disc_Content.jpg)
-Stock Charting CX8108 Program Diskette - content
+- Stock Charting CX8108 Program Diskette - content<br>![](attachments/Disc_Content.jpg)
 
-![](attachments/MSFT.jpg)
-Stock Charting CX8108 - MSFT chart diagram made with Wade Ripkowski's data
+- Stock Charting CX8108 - MSFT chart diagram made with Wade Ripkowski's data<br>![](attachments/MSFT.jpg)
 
-![](attachments/picture07.jpg)
-Stock Charting CX8108 - References/Sources 1 ; where do we have that again?
+- Stock Charting CX8108 - References/Sources 1 ; where do we have that again?<br>![](attachments/picture07.jpg)
 
-![](attachments/picture08.jpg)
-Stock Charting CX8108 - References/Sources 2 ; where do we have that again?
+- Stock Charting CX8108 - References/Sources 2 ; where do we have that again?<br>![](attachments/picture08.jpg)
 
-![](attachments/Startscreen.jpg)
-Stock Charting CX8108 - Startscreen from Wade Ripkowski's version
+- Stock Charting CX8108 - Startscreen from Wade Ripkowski's version<br>![](attachments/Startscreen.jpg)
 
 ## Screenshots
 
-![](attachments/screenshot01.jpg)
-Stock Charting CX8108 - Screenshot 01
+- Stock Charting CX8108 - Screenshot 01<br>![](attachments/screenshot01.jpg)
 
-![](attachments/screenshot02.jpg)
-Stock Charting CX8108 - Screenshot 02
+- Stock Charting CX8108 - Screenshot 02<br>![](attachments/screenshot02.jpg)
 
-![](attachments/screenshot03.jpg)
-Stock Charting CX8108 - Screenshot 03
+- Stock Charting CX8108 - Screenshot 03<br>![](attachments/screenshot03.jpg)
 
-![](attachments/screenshot04.jpg)
-Stock Charting CX8108 - Screenshot 04
+- Stock Charting CX8108 - Screenshot 04<br>![](attachments/screenshot04.jpg)
 
-![](attachments/screenshot05.jpg)
-Stock Charting CX8108 - Screenshot 05
+- Stock Charting CX8108 - Screenshot 05<br>![](attachments/screenshot05.jpg)
 
-![](attachments/screenshot06.jpg)
-Stock Charting CX8108 - Screenshot 06
+- Stock Charting CX8108 - Screenshot 06<br>![](attachments/screenshot06.jpg)
 
-![](attachments/screenshot07.jpg)
-Stock Charting CX8108 - Screenshot 07
+- Stock Charting CX8108 - Screenshot 07<br>![](attachments/screenshot07.jpg)
 
-![](attachments/screenshot08.jpg)
-Stock Charting CX8108 - Screenshot 08
+- Stock Charting CX8108 - Screenshot 08<br>![](attachments/screenshot08.jpg)
 
-![](attachments/screenshot09.jpg)
-Stock Charting CX8108 - Screenshot 09
+- Stock Charting CX8108 - Screenshot 09<br>![](attachments/screenshot09.jpg)
 
-![](attachments/screenshot10.jpg)
-Stock Charting CX8108 - Screenshot 10
+- Stock Charting CX8108 - Screenshot 10<br>![](attachments/screenshot10.jpg)
 
-![](attachments/screenshot11.jpg)
-Stock Charting CX8108 - Screenshot 11
+- Stock Charting CX8108 - Screenshot 11<br>![](attachments/screenshot11.jpg)
 
-![](attachments/screenshot12.jpg)
-Stock Charting CX8108 - Screenshot 12
+- Stock Charting CX8108 - Screenshot 12<br>![](attachments/screenshot12.jpg)
 
-![](attachments/screenshot13.jpg)
-Stock Charting CX8108 - Screenshot 13
+- Stock Charting CX8108 - Screenshot 13<br>![](attachments/screenshot13.jpg)
 
-![](attachments/screenshot14.jpg)
-Stock Charting CX8108 - Screenshot 14
+- Stock Charting CX8108 - Screenshot 14<br>![](attachments/screenshot14.jpg)
 
-![](attachments/screenshot15.jpg)
-Stock Charting CX8108 - Screenshot 15
+- Stock Charting CX8108 - Screenshot 15<br>![](attachments/screenshot15.jpg)

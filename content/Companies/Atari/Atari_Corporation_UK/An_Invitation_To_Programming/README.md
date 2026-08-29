@@ -31,10 +31,8 @@ See cover picture
 
 ## Cover
 
-![](attachments/An_Invitation_To_Programming_UK85_cover.jpg)
-An Invitation to Programming Cover UK 1985 rerelease
+- An Invitation to Programming Cover UK 1985 rerelease<br>![](attachments/An_Invitation_To_Programming_UK85_cover.jpg)
 
 ## Media pictures
 
-![](attachments/An_Invitation_To_Programming_UK85_cass.jpg)
-An Invitation to Programming Cassette UK 1985 re-release
+- An Invitation to Programming Cassette UK 1985 re-release<br>![](attachments/An_Invitation_To_Programming_UK85_cass.jpg)

@@ -39,32 +39,23 @@ coming soon...
 
 ## Pictures
 
-![](attachments/XL-XE-Cover.jpg)
-Eastern Front 1941 - XL-XE-Cover of the box ; thank you very much Atarimania for the picture
+- Eastern Front 1941 - XL-XE-Cover of the box ; thank you very much Atarimania for the picture<br>![](attachments/XL-XE-Cover.jpg)
 
-![](attachments/cart.jpg)
-Eastern Front 1941 - image of the RX8039 cartridge from 1987, required for the scenario editor ; thank you very much Atarimania for the picture
+- Eastern Front 1941 - image of the RX8039 cartridge from 1987, required for the scenario editor ; thank you very much Atarimania for the picture<br>![](attachments/cart.jpg)
 
-![](attachments/Eastern_Front_85_Screenshot1.jpg)
-Eastern Front 1941 - 1981 version from Chris Crawford - Screenshot 1
+- Eastern Front 1941 - 1981 version from Chris Crawford - Screenshot 1<br>![](attachments/Eastern_Front_85_Screenshot1.jpg)
 
-![](attachments/Eastern_Front_85_Screenshot2.jpg)
-Eastern Front 1941 - 1981 version from Chris Crawford - Screenshot 2
+- Eastern Front 1941 - 1981 version from Chris Crawford - Screenshot 2<br>![](attachments/Eastern_Front_85_Screenshot2.jpg)
 
-![](attachments/1982_Atari.jpg)
-Eastern Front 1941 - 1982 version from Atari, Inc. - Screenshot 3
+- Eastern Front 1941 - 1982 version from Atari, Inc. - Screenshot 3<br>![](attachments/1982_Atari.jpg)
 
-![](attachments/Eastern_Front_1941_Scenario_Editor.jpg)
-Eastern Front 1941 - scenario editor ; Copyright (C) 1983 by Chris Crawford
+- Eastern Front 1941 - scenario editor ; Copyright (C) 1983 by Chris Crawford<br>![](attachments/Eastern_Front_1941_Scenario_Editor.jpg)
 
-![](attachments/Cover.jpg)
-Eastern Front 1941 - cover of the source code manual from APX-20095
+- Eastern Front 1941 - cover of the source code manual from APX-20095<br>![](attachments/Cover.jpg)
 
-![](attachments/Eastern_Front_85_cover.jpg)
-Eastern Front 1941 - cassette cover of the 1985 rerelease
+- Eastern Front 1941 - cassette cover of the 1985 rerelease<br>![](attachments/Eastern_Front_85_cover.jpg)
 
-![](attachments/Eastern_front_85_cassette.jpg)
-Eastern Front 1941 - image of the cassette from the 1985 rerelease
+- Eastern Front 1941 - image of the cassette from the 1985 rerelease<br>![](attachments/Eastern_front_85_cassette.jpg)
 
 ## References
 

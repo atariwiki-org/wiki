@@ -47,22 +47,19 @@ So, jetzt mal ein bischen weg von der Theorie. Ich habe auf dem Atari mal den RO
 
 Mit dem Debugger BUG/65 schauen wir uns jetzt mal die Stellen an:
 
-![](attachments/00.png)
-Werte der letzten Stellen der 4 Bänke im BUG/65 Version 2.0 betrachtet
+- Werte der letzten Stellen der 4 Bänke im BUG/65 Version 2.0 betrachtet<br>![](attachments/00.png)
 
 Es handelt sich also um ein Modul vom Typ M091. Demzufolge müßten als Adresen für die Bankumschaltungen $D500, $D501 und $D509 verwendet werden.
 
 Hier die Bilder mit dem Suchergebnis:
 
-![](attachments/01.png)
-Adresen für die Bankumschaltungen eines Moduls vom Typ M091 in den Speicherstellen $D500, $D501 und $D509 im BUG/65 Version 2.0
+- Adresen für die Bankumschaltungen eines Moduls vom Typ M091 in den Speicherstellen $D500, $D501 und $D509 im BUG/65 Version 2.0<br>![](attachments/01.png)
 
 Wie man sieht, liegen alle Fundstellen im Bereich $4000 - $4FFF. Das ist die Masterbank. Macht ja auch Sinn, denn diese Bank ist immer an, solange nicht das ganze Modul aus ist, denn das kann man über die Adresse $D508 ausschalten.
 
 Schauen wir uns mal noch so ein oder zwei Fundstellen an. Bitte beachten, daß hier das Disassemblieren ein Byte vor der Fundstelle anfangen muß, damit man den eigentlichen Befehl mitbekommt:
 
-![](attachments/02.png)
-Fundstellen für die Bankumschaltungen eines Moduls vom Typ M091 im BUG/65 Version 2.0
+- Fundstellen für die Bankumschaltungen eines Moduls vom Typ M091 im BUG/65 Version 2.0<br>![](attachments/02.png)
 
 Hier wird in allen Fällen der 6502-Mikroprozessorbefehl STA verwendet (Befehl zum Schreiben in das CPU-Register A).
 

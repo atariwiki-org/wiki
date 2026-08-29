@@ -62,8 +62,6 @@ Tracks (size in sum: 2.26 GB):
 
 ## Images
 
-![](attachments/buA_.jpg)
-Dorsett Atari Business Communications - cassettes with uneven numbers
+- Dorsett Atari Business Communications - cassettes with uneven numbers<br>![](attachments/buA_.jpg)
 
-![](attachments/buA_.jpg)
-Dorsett Atari Business Communications - cassettes with even numbers
+- Dorsett Atari Business Communications - cassettes with even numbers<br>![](attachments/buA_.jpg)

@@ -6,8 +6,6 @@
 
 ## Picture
 
-![](attachments/APX_GTIA_Demo_d7.jpg)
-GTIA Demonstration Diskette APX-20104
+- GTIA Demonstration Diskette APX-20104<br>![](attachments/APX_GTIA_Demo_d7.jpg)
 
-![](attachments/APX_GTIA_Demo.gif)
-GTIA Demonstration picture from the program
+- GTIA Demonstration picture from the program<br>![](attachments/APX_GTIA_Demo.gif)

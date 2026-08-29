@@ -39,94 +39,64 @@ Tracks (size in sum: 1.01 GB):
 
 ## Images
 
-![](attachments/AM.jpg)
-Dorsett Atari Auto Mechanics package - front view
+- Dorsett Atari Auto Mechanics package - front view<br>![](attachments/AM.jpg)
 
-![](attachments/kaA_.jpg)
-Dorsett Atari Auto Mechanics - cassettes with uneven numbers
+- Dorsett Atari Auto Mechanics - cassettes with uneven numbers<br>![](attachments/kaA_.jpg)
 
-![](attachments/kaB_.jpg)
-Dorsett Atari Auto Mechanics - cassettes with even numbers
+- Dorsett Atari Auto Mechanics - cassettes with even numbers<br>![](attachments/kaB_.jpg)
 
 ## Screenshots
 
-![](attachments/Auto_Mechanics_01.jpg)
-Dorsett Atari Auto Mechanics - screenshot 01
+- Dorsett Atari Auto Mechanics - screenshot 01<br>![](attachments/Auto_Mechanics_01.jpg)
 
-![](attachments/Auto_Mechanics_02.jpg)
-Dorsett Atari Auto Mechanics - screenshot 02
+- Dorsett Atari Auto Mechanics - screenshot 02<br>![](attachments/Auto_Mechanics_02.jpg)
 
-![](attachments/Auto_Mechanics_03.jpg)
-Dorsett Atari Auto Mechanics - screenshot 03
+- Dorsett Atari Auto Mechanics - screenshot 03<br>![](attachments/Auto_Mechanics_03.jpg)
 
-![](attachments/Auto_Mechanics_04.jpg)
-Dorsett Atari Auto Mechanics - screenshot 04
+- Dorsett Atari Auto Mechanics - screenshot 04<br>![](attachments/Auto_Mechanics_04.jpg)
 
-![](attachments/Auto_Mechanics_05.jpg)
-Dorsett Atari Auto Mechanics - screenshot 05
+- Dorsett Atari Auto Mechanics - screenshot 05<br>![](attachments/Auto_Mechanics_05.jpg)
 
-![](attachments/Auto_Mechanics_06.jpg)
-Dorsett Atari Auto Mechanics - screenshot 06
+- Dorsett Atari Auto Mechanics - screenshot 06<br>![](attachments/Auto_Mechanics_06.jpg)
 
-![](attachments/Auto_Mechanics_07.jpg)
-Dorsett Atari Auto Mechanics - screenshot 07
+- Dorsett Atari Auto Mechanics - screenshot 07<br>![](attachments/Auto_Mechanics_07.jpg)
 
-![](attachments/Auto_Mechanics_08.jpg)
-Dorsett Atari Auto Mechanics - screenshot 08
+- Dorsett Atari Auto Mechanics - screenshot 08<br>![](attachments/Auto_Mechanics_08.jpg)
 
-![](attachments/Auto_Mechanics_09.jpg)
-Dorsett Atari Auto Mechanics - screenshot 09
+- Dorsett Atari Auto Mechanics - screenshot 09<br>![](attachments/Auto_Mechanics_09.jpg)
 
-![](attachments/Auto_Mechanics_10.jpg)
-Dorsett Atari Auto Mechanics - screenshot 10
+- Dorsett Atari Auto Mechanics - screenshot 10<br>![](attachments/Auto_Mechanics_10.jpg)
 
-![](attachments/Auto_Mechanics_11.jpg)
-Dorsett Atari Auto Mechanics - screenshot 11
+- Dorsett Atari Auto Mechanics - screenshot 11<br>![](attachments/Auto_Mechanics_11.jpg)
 
-![](attachments/Auto_Mechanics_12.jpg)
-Dorsett Atari Auto Mechanics - screenshot 12
+- Dorsett Atari Auto Mechanics - screenshot 12<br>![](attachments/Auto_Mechanics_12.jpg)
 
-![](attachments/Auto_Mechanics_13.jpg)
-Dorsett Atari Auto Mechanics - screenshot 13
+- Dorsett Atari Auto Mechanics - screenshot 13<br>![](attachments/Auto_Mechanics_13.jpg)
 
-![](attachments/Auto_Mechanics_14.jpg)
-Dorsett Atari Auto Mechanics - screenshot 14
+- Dorsett Atari Auto Mechanics - screenshot 14<br>![](attachments/Auto_Mechanics_14.jpg)
 
-![](attachments/Auto_Mechanics_15.jpg)
-Dorsett Atari Auto Mechanics - screenshot 15
+- Dorsett Atari Auto Mechanics - screenshot 15<br>![](attachments/Auto_Mechanics_15.jpg)
 
-![](attachments/Auto_Mechanics_16.jpg)
-Dorsett Atari Auto Mechanics - screenshot 16
+- Dorsett Atari Auto Mechanics - screenshot 16<br>![](attachments/Auto_Mechanics_16.jpg)
 
-![](attachments/Auto_Mechanics_17.jpg)
-Dorsett Atari Auto Mechanics - screenshot 17
+- Dorsett Atari Auto Mechanics - screenshot 17<br>![](attachments/Auto_Mechanics_17.jpg)
 
-![](attachments/Auto_Mechanics_18.jpg)
-Dorsett Atari Auto Mechanics - screenshot 18
+- Dorsett Atari Auto Mechanics - screenshot 18<br>![](attachments/Auto_Mechanics_18.jpg)
 
-![](attachments/Auto_Mechanics_19.jpg)
-Dorsett Atari Auto Mechanics - screenshot 19
+- Dorsett Atari Auto Mechanics - screenshot 19<br>![](attachments/Auto_Mechanics_19.jpg)
 
-![](attachments/Auto_Mechanics_20.jpg)
-Dorsett Atari Auto Mechanics - screenshot 20
+- Dorsett Atari Auto Mechanics - screenshot 20<br>![](attachments/Auto_Mechanics_20.jpg)
 
-![](attachments/Auto_Mechanics_21.jpg)
-Dorsett Atari Auto Mechanics - screenshot 21
+- Dorsett Atari Auto Mechanics - screenshot 21<br>![](attachments/Auto_Mechanics_21.jpg)
 
-![](attachments/Auto_Mechanics_22.jpg)
-Dorsett Atari Auto Mechanics - screenshot 22
+- Dorsett Atari Auto Mechanics - screenshot 22<br>![](attachments/Auto_Mechanics_22.jpg)
 
-![](attachments/Auto_Mechanics_23.jpg)
-Dorsett Atari Auto Mechanics - screenshot 23
+- Dorsett Atari Auto Mechanics - screenshot 23<br>![](attachments/Auto_Mechanics_23.jpg)
 
-![](attachments/Auto_Mechanics_24.jpg)
-Dorsett Atari Auto Mechanics - screenshot 24
+- Dorsett Atari Auto Mechanics - screenshot 24<br>![](attachments/Auto_Mechanics_24.jpg)
 
-![](attachments/Auto_Mechanics_25.jpg)
-Dorsett Atari Auto Mechanics - screenshot 25
+- Dorsett Atari Auto Mechanics - screenshot 25<br>![](attachments/Auto_Mechanics_25.jpg)
 
-![](attachments/Auto_Mechanics_26.jpg)
-Dorsett Atari Auto Mechanics - screenshot 26
+- Dorsett Atari Auto Mechanics - screenshot 26<br>![](attachments/Auto_Mechanics_26.jpg)
 
-![](attachments/Auto_Mechanics_27.jpg)
-Dorsett Atari Auto Mechanics - screenshot 27
+- Dorsett Atari Auto Mechanics - screenshot 27<br>![](attachments/Auto_Mechanics_27.jpg)

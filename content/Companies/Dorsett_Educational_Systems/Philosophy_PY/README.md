@@ -62,8 +62,6 @@ Tracks (size in sum: 1.84 GB):
 
 ## Images
 
-![](attachments/pyA_.jpg)
-Dorsett Atari Philosophy - cassettes with uneven numbers
+- Dorsett Atari Philosophy - cassettes with uneven numbers<br>![](attachments/pyA_.jpg)
 
-![](attachments/pyB_.jpg)
-Dorsett Atari Philosophy - cassettes with even numbers
+- Dorsett Atari Philosophy - cassettes with even numbers<br>![](attachments/pyB_.jpg)

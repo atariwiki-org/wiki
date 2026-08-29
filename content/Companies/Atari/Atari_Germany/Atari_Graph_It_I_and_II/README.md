@@ -119,95 +119,65 @@ Für den Drucker optimiertes Handbuch (englisch, OCR) als PDF-Datei (20,3 MB):
 
 ## Bilder
 
-![](attachments/Cover.jpg)
-Boxcover 1 von Graph It (englisch) 1980
+- Boxcover 1 von Graph It (englisch) 1980<br>![](attachments/Cover.jpg)
 
-![](attachments/Back.jpg)
-Boxrückseite 1 von Graph It (englisch) 1980
+- Boxrückseite 1 von Graph It (englisch) 1980<br>![](attachments/Back.jpg)
 
-![](attachments/front.jpg)
-Boxcover 2 von Graph It II (deutsch) 1983 ; Danke an Mr. Bacardi!
+- Boxcover 2 von Graph It II (deutsch) 1983 ; Danke an Mr. Bacardi!<br>![](attachments/front.jpg)
 
-![](attachments/back.jpg)
-Boxrückseite 2 von Graph It II (deutsch) 1983 ; Danke an Mr. Bacardi!
+- Boxrückseite 2 von Graph It II (deutsch) 1983 ; Danke an Mr. Bacardi!<br>![](attachments/back.jpg)
 
-![](attachments/Graph_It.jpg)
-Cover vom Handbuch von Graph It (englisch) 1980
+- Cover vom Handbuch von Graph It (englisch) 1980<br>![](attachments/Graph_It.jpg)
 
-![](attachments/manual.jpg)
-Cover vom Handbuch von Graph It II (deutsch) 1983 ; Danke an Mr. Bacardi!
+- Cover vom Handbuch von Graph It II (deutsch) 1983 ; Danke an Mr. Bacardi!<br>![](attachments/manual.jpg)
 
-![](attachments/Graph_It-Intro.jpg)
-Graph It-Intro
+- Graph It-Intro<br>![](attachments/Graph_It-Intro.jpg)
 
-![](attachments/Graph_It_01.jpg)
-Beispiel für ein Balkendiagramm
+- Beispiel für ein Balkendiagramm<br>![](attachments/Graph_It_01.jpg)
 
-![](attachments/Graph_It_03.jpg)
-Beispiel für ein Balkendiagramm mit dreigeteilten Balken
+- Beispiel für ein Balkendiagramm mit dreigeteilten Balken<br>![](attachments/Graph_It_03.jpg)
 
-![](attachments/Graph_It_02.jpg)
-Beispiel für ein Kreisdiagramm
+- Beispiel für ein Kreisdiagramm<br>![](attachments/Graph_It_02.jpg)
 
-![](attachments/Graph_It_04.jpg)
-Beispiel für ein Polardiagramm 1
+- Beispiel für ein Polardiagramm 1<br>![](attachments/Graph_It_04.jpg)
 
-![](attachments/Graph_It_07.jpg)
-Beispiel für ein Polardiagramm 2
+- Beispiel für ein Polardiagramm 2<br>![](attachments/Graph_It_07.jpg)
 
-![](attachments/Graph_It_08.jpg)
-Beispiel für ein Polardiagramm 3
+- Beispiel für ein Polardiagramm 3<br>![](attachments/Graph_It_08.jpg)
 
-![](attachments/Graph_It_10.jpg)
-Beispiel für ein Polardiagramm 4
+- Beispiel für ein Polardiagramm 4<br>![](attachments/Graph_It_10.jpg)
 
-![](attachments/Graph_It_11.jpg)
-Beispiel für ein Polardiagramm 5
+- Beispiel für ein Polardiagramm 5<br>![](attachments/Graph_It_11.jpg)
 
-![](attachments/Graph_It_21.jpg)
-Beispiel für ein 2D-Diagramm mit der Funktion: y=x\*sin(1/x) - Zoom 1
+- Beispiel für ein 2D-Diagramm mit der Funktion: y=x\*sin(1/x) - Zoom 1<br>![](attachments/Graph_It_21.jpg)
 
-![](attachments/Graph_It_25.jpg)
-Beispiel für ein 2D-Diagramm mit der Funktion: y=x\*sin(1/x) - Zoom 2
+- Beispiel für ein 2D-Diagramm mit der Funktion: y=x\*sin(1/x) - Zoom 2<br>![](attachments/Graph_It_25.jpg)
 
-![](attachments/Graph_It_05.jpg)
-Beispiel für ein 2D-Diagramm mit 2 Funktionen-1
+- Beispiel für ein 2D-Diagramm mit 2 Funktionen-1<br>![](attachments/Graph_It_05.jpg)
 
-![](attachments/Graph_It_06.jpg)
-Beispiel für ein 2D-Diagramm mit 2 Funktionen-2
+- Beispiel für ein 2D-Diagramm mit 2 Funktionen-2<br>![](attachments/Graph_It_06.jpg)
 
-![](attachments/Graph_It_13.jpg)
-Beispiel für ein 3D-Diagramm-1
+- Beispiel für ein 3D-Diagramm-1<br>![](attachments/Graph_It_13.jpg)
 
-![](attachments/Graph_It_14.jpg)
-Beispiel für ein 3D-Diagramm-2
+- Beispiel für ein 3D-Diagramm-2<br>![](attachments/Graph_It_14.jpg)
 
-![](attachments/Graph_It_18.jpg)
-Beispiel für ein 3D-Diagramm-3
+- Beispiel für ein 3D-Diagramm-3<br>![](attachments/Graph_It_18.jpg)
 
-![](attachments/A1.jpg)
-Graph It - Cassette A - side 1 - Bar Charts and Pie Graphs
+- Graph It - Cassette A - side 1 - Bar Charts and Pie Graphs<br>![](attachments/A1.jpg)
 
-![](attachments/A2.jpg)
-Graph It - Cassette A - side 2 - Two-Dimensional X, Y Plots
+- Graph It - Cassette A - side 2 - Two-Dimensional X, Y Plots<br>![](attachments/A2.jpg)
 
-![](attachments/B1.jpg)
-Graph It - Cassette B - side 1 - Polar Plots
+- Graph It - Cassette B - side 1 - Polar Plots<br>![](attachments/B1.jpg)
 
-![](attachments/B2.jpg)
-Graph It - Cassette B - side 2 - Three-Dimensional X, Y, Z Plots
+- Graph It - Cassette B - side 2 - Three-Dimensional X, Y, Z Plots<br>![](attachments/B2.jpg)
 
-![](attachments/xy__tape_a_side_1.jpg)
-Graph It II- Kassette A - Seite 1 - 2D-Grafiken ; Danke an Mr. Bacardi!
+- Graph It II- Kassette A - Seite 1 - 2D-Grafiken ; Danke an Mr. Bacardi!<br>![](attachments/xy__tape_a_side_1.jpg)
 
-![](attachments/Balken-Kreis_tape_a_side_2.jpg)
-Graph It II- Kassette A - Seite 2 - Balken- und Kreisdiagramme ; Danke an Mr. Bacardi!
+- Graph It II- Kassette A - Seite 2 - Balken- und Kreisdiagramme ; Danke an Mr. Bacardi!<br>![](attachments/Balken-Kreis_tape_a_side_2.jpg)
 
-![](attachments/xyz_tape_b_side_1.jpg)
-Graph It II- Kassette B - Seite 1 - 3D-Grafiken ; Danke an Mr. Bacardi!
+- Graph It II- Kassette B - Seite 1 - 3D-Grafiken ; Danke an Mr. Bacardi!<br>![](attachments/xyz_tape_b_side_1.jpg)
 
-![](attachments/Polar_tape_b_side_2.jpg)
-Graph It II- Kassette B - Seite 2 - Polardarstellung ; Danke an Mr. Bacardi!
+- Graph It II- Kassette B - Seite 2 - Polardarstellung ; Danke an Mr. Bacardi!<br>![](attachments/Polar_tape_b_side_2.jpg)
 
 ## Autoren
 

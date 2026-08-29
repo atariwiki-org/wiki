@@ -3,8 +3,7 @@
 Copyright (C) 1980 Atari, Inc.
 
 The Atari Telelink I cartridge was used to establish a remote connection, for example to a bulletin board system. Further, a modem was necessary.
-![](attachments/image1.jpg)
-ATARI TELELINK I advertising
+- ATARI TELELINK I advertising<br>![](attachments/image1.jpg)
 
 ## Manual
 
@@ -21,8 +20,6 @@ ATARI TELELINK I advertising
 
 ## Images
 
-![](attachments/Telelink_I.jpg)
-ATARI TELELINK I cartridge
+- ATARI TELELINK I cartridge<br>![](attachments/Telelink_I.jpg)
 
-![](attachments/Telelink_I.jpg)
-ATARI TELELINK I startscreen
+- ATARI TELELINK I startscreen<br>![](attachments/Telelink_I.jpg)

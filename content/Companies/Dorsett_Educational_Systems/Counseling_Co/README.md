@@ -62,8 +62,6 @@ Tracks (size in sum: 1.59 GB):
 
 ## Images
 
-![](attachments/coA_.jpg)
-Dorsett Atari Counseling Procedures - cassettes with uneven numbers
+- Dorsett Atari Counseling Procedures - cassettes with uneven numbers<br>![](attachments/coA_.jpg)
 
-![](attachments/coB_.jpg)
-Dorsett Atari Counseling Procedures - cassettes with even numbers
+- Dorsett Atari Counseling Procedures - cassettes with even numbers<br>![](attachments/coB_.jpg)

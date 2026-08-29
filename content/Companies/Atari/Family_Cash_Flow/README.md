@@ -14,22 +14,17 @@ The Family Cash Flow (APX-20080) manual is still missing, please help us to rest
 
 ## Mainmenu
 
-![](attachments/Family_Cash_Flow_APX-20080.jpg)
-Family Cash Flow (APX-20080) - Mainmenu
+- Family Cash Flow (APX-20080) - Mainmenu<br>![](attachments/Family_Cash_Flow_APX-20080.jpg)
 
 ## Screenshots
 
-![](attachments/family_cash_flow.gif)
-Family Cash Flow (APX-20080) - screenshot 1
+- Family Cash Flow (APX-20080) - screenshot 1<br>![](attachments/family_cash_flow.gif)
 
-![](attachments/family_cash_flow_2.gif)
-Family Cash Flow (APX-20080) - screenshot 2
+- Family Cash Flow (APX-20080) - screenshot 2<br>![](attachments/family_cash_flow_2.gif)
 
-![](attachments/family_cash_flow_3.gif)
-Family Cash Flow (APX-20080) - screenshot 3
+- Family Cash Flow (APX-20080) - screenshot 3<br>![](attachments/family_cash_flow_3.gif)
 
-![](attachments/family_cash_flow_4.gif)
-Family Cash Flow (APX-20080) - screenshot 4
+- Family Cash Flow (APX-20080) - screenshot 4<br>![](attachments/family_cash_flow_4.gif)
 
 ## Credits
 

@@ -62,8 +62,6 @@ Tracks (size in sum: 887.1 MB):
 
 ## Images
 
-![](attachments/esl-part2-A_.jpg)
-Dorsett Atari English as a second Language ESL 17-32 - cassettes with uneven numbers
+- Dorsett Atari English as a second Language ESL 17-32 - cassettes with uneven numbers<br>![](attachments/esl-part2-A_.jpg)
 
-![](attachments/esl-part2-B_.jpg)
-Dorsett Atari English as a second Language ESL 17-32 - cassettes with even numbers
+- Dorsett Atari English as a second Language ESL 17-32 - cassettes with even numbers<br>![](attachments/esl-part2-B_.jpg)

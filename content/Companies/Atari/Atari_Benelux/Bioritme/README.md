@@ -31,10 +31,8 @@ Side 2:[http://data.atariwiki.org/FLAC/Bioritme\_side2.flac](http://data.atariwi
 
 ## Cover
 
-![](attachments/Bioritme_cover.jpg)
-Bioritme Cover
+- Bioritme Cover<br>![](attachments/Bioritme_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Bioritme_cassette.jpg)
-Bioritme Cassette
+- Bioritme Cassette<br>![](attachments/Bioritme_cassette.jpg)

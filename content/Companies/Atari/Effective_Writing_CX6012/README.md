@@ -2,8 +2,7 @@
 
 ## Content
 
-![](attachments/Effective_Writing_CX6012.jpg)
-Content of Effective Writing CX6012
+- Content of Effective Writing CX6012<br>![](attachments/Effective_Writing_CX6012.jpg)
 
 ## Cassette-Images in FLAC-format
 
@@ -25,11 +24,8 @@ Content of Effective Writing CX6012
 
 ## Images
 
-![](attachments/P01.jpg)
-Effective Writing CX6012 - figure 1
+- Effective Writing CX6012 - figure 1<br>![](attachments/P01.jpg)
 
-![](attachments/P02.jpg)
-Effective Writing CX6012 - figure 2
+- Effective Writing CX6012 - figure 2<br>![](attachments/P02.jpg)
 
-![](attachments/P03.jpg)
-Effective Writing CX6012 - figure 3
+- Effective Writing CX6012 - figure 3<br>![](attachments/P03.jpg)

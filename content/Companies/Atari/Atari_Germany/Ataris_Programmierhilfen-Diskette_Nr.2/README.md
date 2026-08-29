@@ -6,5 +6,4 @@
 
 ## Pictures
 
-![](attachments/Ataris_Programmierhilfen-Diskette_Nr.2.jpg)
-Ataris Programmierhilfen-Diskette Nr.2
+- Ataris Programmierhilfen-Diskette Nr.2<br>![](attachments/Ataris_Programmierhilfen-Diskette_Nr.2.jpg)

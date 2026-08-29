@@ -6,5 +6,4 @@
 
 ## Image
 
-![](attachments/RPN_Calculator.jpg)
-RPN Calculator - Source unknown
+- RPN Calculator - Source unknown<br>![](attachments/RPN_Calculator.jpg)

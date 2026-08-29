@@ -31,10 +31,8 @@ Side 2: [http://data.atariwiki.org/FLAC/Galgje\_side2.flac](http://data.atariwik
 
 ## Cover
 
-![](attachments/Galgje_cover.jpg)
-Galgje Cover
+- Galgje Cover<br>![](attachments/Galgje_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Galgje_cassette.jpg)
-Galgje Cover
+- Galgje Cover<br>![](attachments/Galgje_cassette.jpg)

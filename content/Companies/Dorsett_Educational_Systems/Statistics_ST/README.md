@@ -62,8 +62,6 @@ Tracks (size in sum: 1.4 GB):
 
 ## Images
 
-![](attachments/stA_.jpg)
-Dorsett Atari Statistics ST - cassettes with uneven numbers
+- Dorsett Atari Statistics ST - cassettes with uneven numbers<br>![](attachments/stA_.jpg)
 
-![](attachments/stB_.jpg)
-Dorsett Atari Statistics ST - cassettes with even numbers
+- Dorsett Atari Statistics ST - cassettes with even numbers<br>![](attachments/stB_.jpg)

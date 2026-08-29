@@ -20,26 +20,19 @@ After 31(!) years, we can offer you this part of Atari history, believed to be l
 
 ## Pictures
 
-![](attachments/SNAUT_Package1_.jpg)
-SNAUT - folder
+- SNAUT - folder<br>![](attachments/SNAUT_Package1_.jpg)
 
-![](attachments/SNAUT_Package2.jpg)
-SNAUT - folder content
+- SNAUT - folder content<br>![](attachments/SNAUT_Package2.jpg)
 
-![](attachments/SNAUT_Diskette.jpg)
-SNAUT - diskette
+- SNAUT - diskette<br>![](attachments/SNAUT_Diskette.jpg)
 
-![](attachments/SNAUT_HB-Cover.jpg)
-SNAUT - cover of the manual
+- SNAUT - cover of the manual<br>![](attachments/SNAUT_HB-Cover.jpg)
 
-![](attachments/Startbildschirm.jpg)
-SNAUT - start screen
+- SNAUT - start screen<br>![](attachments/Startbildschirm.jpg)
 
-![](attachments/Inhaltsverzeichnis.jpg)
-SNAUT - disk content
+- SNAUT - disk content<br>![](attachments/Inhaltsverzeichnis.jpg)
 
-![](attachments/snaut.jpg)
-SNAUT - advertisement from the German magazine Computer Kontakt (CK) from February / March 1987 ; Thanks to Mr. Bacardi for this information!
+- SNAUT - advertisement from the German magazine Computer Kontakt (CK) from February / March 1987 ; Thanks to Mr. Bacardi for this information!<br>![](attachments/snaut.jpg)
 
 ## References
 

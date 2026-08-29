@@ -8,8 +8,6 @@
 
 ## Bilder
 
-![](attachments/Beeil_dich_Verdreht_a.jpg)
-Beeil Dich-Verdreht TXG 9501 - Box Vorderansicht
+- Beeil Dich-Verdreht TXG 9501 - Box Vorderansicht<br>![](attachments/Beeil_dich_Verdreht_a.jpg)
 
-![](attachments/Beeil_dich_Verdreht_b.jpg)
-Beeil Dich-Verdreht TXG 9501 - Box Rückansicht
+- Beeil Dich-Verdreht TXG 9501 - Box Rückansicht<br>![](attachments/Beeil_dich_Verdreht_b.jpg)

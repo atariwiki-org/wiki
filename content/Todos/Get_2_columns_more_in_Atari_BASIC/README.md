@@ -7,5 +7,4 @@ POKE 82,2
 
 ## Image
 
-![](attachments/Poke82.jpg)
-Atari BASIC with POKE 82 on and off
+- Atari BASIC with POKE 82 on and off<br>![](attachments/Poke82.jpg)

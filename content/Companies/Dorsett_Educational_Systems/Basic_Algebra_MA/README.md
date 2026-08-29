@@ -62,8 +62,6 @@ Tracks (size in sum: 1.5 GB):
 
 ## Images
 
-![](attachments/maA_.jpg)
-Dorsett Atari Basic Algebra - cassettes with uneven numbers
+- Dorsett Atari Basic Algebra - cassettes with uneven numbers<br>![](attachments/maA_.jpg)
 
-![](attachments/maB_.jpg)
-Dorsett Atari Basic Algebra - cassettes with even numbers
+- Dorsett Atari Basic Algebra - cassettes with even numbers<br>![](attachments/maB_.jpg)

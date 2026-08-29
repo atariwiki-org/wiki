@@ -67,8 +67,6 @@ Tracks (size in sum: 1.18 GB):
 
 ## Images
 
-![](attachments/oaA_.jpg)
-Dorsett Atari General Shop - cassettes with uneven numbers
+- Dorsett Atari General Shop - cassettes with uneven numbers<br>![](attachments/oaA_.jpg)
 
-![](attachments/oaB_.jpg)
-Dorsett Atari General Shop - cassettes with even numbers
+- Dorsett Atari General Shop - cassettes with even numbers<br>![](attachments/oaB_.jpg)

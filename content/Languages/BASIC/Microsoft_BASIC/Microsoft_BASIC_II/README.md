@@ -8,26 +8,19 @@ Atari Microsoft BASIC II is a powerful programming language that uses simple Eng
 
 ## Pictures
 
-![](attachments/Atari_Microsoft_BASIC_II-Programming_Language.jpg)
-Atari Microsoft BASIC II box cover
+- Atari Microsoft BASIC II box cover<br>![](attachments/Atari_Microsoft_BASIC_II-Programming_Language.jpg)
 
-![](attachments/Atari_Microsoft_BASIC_II_Cartridge.jpg)
-Atari Microsoft BASIC II cartridge RX8035
+- Atari Microsoft BASIC II cartridge RX8035<br>![](attachments/Atari_Microsoft_BASIC_II_Cartridge.jpg)
 
-![](attachments/Microsoft_BASIC_II_Disk.jpg)
-Atari Microsoft BASIC II Diskette DX5046 - 1
+- Atari Microsoft BASIC II Diskette DX5046 - 1<br>![](attachments/Microsoft_BASIC_II_Disk.jpg)
 
-![](attachments/Atari_Microsoft_BASIC_II_Diskette_DX5046.jpg)
-Atari Microsoft BASIC II Diskette DX5046 - 2
+- Atari Microsoft BASIC II Diskette DX5046 - 2<br>![](attachments/Atari_Microsoft_BASIC_II_Diskette_DX5046.jpg)
 
-![](attachments/Microsoft_BASIC_II_D-Box-Cover.jpg)
-Atari Microsoft BASIC II box - German RXG 7075; please note **Mikrosoft** instead of **Microsoft** on some boxes, but the content is unaltered!
+- Atari Microsoft BASIC II box - German RXG 7075; please note **Mikrosoft** instead of **Microsoft** on some boxes, but the content is unaltered!<br>![](attachments/Microsoft_BASIC_II_D-Box-Cover.jpg)
 
-![](attachments/Atari_Microsoft_Basic_II_V2.0_C_1982_Microsoft.jpg)
-Atari Microsoft BASIC II V2.0 start screen
+- Atari Microsoft BASIC II V2.0 start screen<br>![](attachments/Atari_Microsoft_Basic_II_V2.0_C_1982_Microsoft.jpg)
 
-![](attachments/Atari_Microsoft_BASIC_II.jpg)
-Atari Microsoft BASIC II ad
+- Atari Microsoft BASIC II ad<br>![](attachments/Atari_Microsoft_BASIC_II.jpg)
 
 ## Manual
 

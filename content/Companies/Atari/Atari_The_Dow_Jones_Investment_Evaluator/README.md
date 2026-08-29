@@ -14,21 +14,15 @@
 
 ## Images
 
-![](attachments/Dow_Jones_Information_Services-User_s_Guide.jpg)
-Dow Jones Information Services-User's Guide - Cover
-![](attachments/Dow_Jones_Investment_Evaluator_1.jpg)
-Dow Jones Investment Evaluator CX412 - description 1
+- Dow Jones Information Services-User's Guide - Cover<br>![](attachments/Dow_Jones_Information_Services-User_s_Guide.jpg)
+- Dow Jones Investment Evaluator CX412 - description 1<br>![](attachments/Dow_Jones_Investment_Evaluator_1.jpg)
 
-![](attachments/Dow_Jones_Investment_Evaluator_2.jpg)
-Dow Jones Investment Evaluator CX412 - description 2
+- Dow Jones Investment Evaluator CX412 - description 2<br>![](attachments/Dow_Jones_Investment_Evaluator_2.jpg)
 
 ## Remote Services
 
-![](attachments/Dow_Jones-News-Retrieval_Service.jpg)
-Dow Jones - News-Retrieval Service. From Atari Special Additions - Volume 1 - Winter 1982
+- Dow Jones - News-Retrieval Service. From Atari Special Additions - Volume 1 - Winter 1982<br>![](attachments/Dow_Jones-News-Retrieval_Service.jpg)
 
-![](attachments/The_Source.jpg)
-The Source. From Atari Special Additions - Volume 1 - Winter 1982
+- The Source. From Atari Special Additions - Volume 1 - Winter 1982<br>![](attachments/The_Source.jpg)
 
-![](attachments/Compuserve_Information_Service.jpg)
-Compuserve Information Service. From Atari Special Additions - Volume 1 - Winter 1982
+- Compuserve Information Service. From Atari Special Additions - Volume 1 - Winter 1982<br>![](attachments/Compuserve_Information_Service.jpg)

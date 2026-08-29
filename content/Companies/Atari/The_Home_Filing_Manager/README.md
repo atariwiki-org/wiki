@@ -34,23 +34,16 @@ The Home Filing Manager is a database program Atari provided in 1982
 
 ## Images
 
-![](attachments/Atari_Home_Filing_Manager_V1_d7.jpg)
-The Home Filing Manager CX8129, front of the box; thanks to Atarimania for providing!
+- The Home Filing Manager CX8129, front of the box; thanks to Atarimania for providing!<br>![](attachments/Atari_Home_Filing_Manager_V1_d7.jpg)
 
-![](attachments/Atari_Home_Filing_Manager_V1_d7_2.jpg)
-The Home Filing Manager CX8129, back of the box; thanks to Atarimania for providing!
+- The Home Filing Manager CX8129, back of the box; thanks to Atarimania for providing!<br>![](attachments/Atari_Home_Filing_Manager_V1_d7_2.jpg)
 
-![](attachments/Different_Boxes.jpg)
-The Home Filing Manager CX8129, different boxes, same program
+- The Home Filing Manager CX8129, different boxes, same program<br>![](attachments/Different_Boxes.jpg)
 
-![](attachments/content.jpg)
-The Home Filing Manager CX8129, content of the box
+- The Home Filing Manager CX8129, content of the box<br>![](attachments/content.jpg)
 
-![](attachments/Atari_Home_Filing_Manager_V1_d7_3.jpg)
-The Home Filing Manager, Program Diskette CX8129
+- The Home Filing Manager, Program Diskette CX8129<br>![](attachments/Atari_Home_Filing_Manager_V1_d7_3.jpg)
 
-![](attachments/Atari_Home_Filing_Manager_V1_d7_4.jpg)
-The Home Filing Manager, Formatted Diskette II-CX8111
+- The Home Filing Manager, Formatted Diskette II-CX8111<br>![](attachments/Atari_Home_Filing_Manager_V1_d7_4.jpg)
 
-![](attachments/HFM-Startscreen.jpg)
-The Home Filing Manager CX8129, startscreen
+- The Home Filing Manager CX8129, startscreen<br>![](attachments/HFM-Startscreen.jpg)

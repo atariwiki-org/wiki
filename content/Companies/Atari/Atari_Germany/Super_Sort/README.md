@@ -10,8 +10,7 @@ Diese Software schien verloren, doch dank Marceau Mallard von [Atarinside](http:
 
 ## Bild
 
-![](attachments/cover.jpg)
-Super Sort DXG 5730 - Box (Vorder- und Rückansicht) ; Vielen lieben Dank Marceau Mallard von [Atarinside](http://atarinside.dyndns.org/blog/index.php/atarinside-items/super-sort/)
+- Super Sort DXG 5730 - Box (Vorder- und Rückansicht) ; Vielen lieben Dank Marceau Mallard von [Atarinside](http://atarinside.dyndns.org/blog/index.php/atarinside-items/super-sort/)<br>![](attachments/cover.jpg)
 
 ## Referenzen
 

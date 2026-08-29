@@ -224,20 +224,14 @@ Please take into account: the System Utilities Toolkit for Kyan Pascal version 2
 
 ### [Phoenix for Atari 800](https://ataritools.fr.gd/1-_-PHOENIX-PROJECT.htm)
 
-![](attachments/Phoenix-400_800-Box-Front.jpg)
-Phoenix for the Atari box
+- Phoenix for the Atari box<br>![](attachments/Phoenix-400_800-Box-Front.jpg)
 
-![](attachments/Phoenix.jpg)
-Phoenix (Original)
+- Phoenix (Original)<br>![](attachments/Phoenix.jpg)
 
-![](attachments/Phoenix_1.bmp)
-Phoenix - fig. 1
+- Phoenix - fig. 1<br>![](attachments/Phoenix_1.bmp)
 
-![](attachments/Phoenix_2.bmp)
-Phoenix - fig. 2
+- Phoenix - fig. 2<br>![](attachments/Phoenix_2.bmp)
 
-![](attachments/Phoenix_3.jpg)
-Phoenix - fig. 3
+- Phoenix - fig. 3<br>![](attachments/Phoenix_3.jpg)
 
-![](attachments/Phoenix_4.bmp)
-Phoenix - fig. 4
+- Phoenix - fig. 4<br>![](attachments/Phoenix_4.bmp)

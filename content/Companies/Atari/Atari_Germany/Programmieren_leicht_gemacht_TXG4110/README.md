@@ -36,20 +36,15 @@ Ein Beispiel der Tagesschau mit der wundervollen Dagmar Berghoff finden Sie weit
 
 ## Bilder
 
-![](attachments/Programmieren_leicht_gemacht_TXG_4110-Box.jpg)
-Programmieren leicht gemacht - TXG 4110 - Box-Cover, Vorder- und Rückseite ; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)
+- Programmieren leicht gemacht - TXG 4110 - Box-Cover, Vorder- und Rückseite ; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)<br>![](attachments/Programmieren_leicht_gemacht_TXG_4110-Box.jpg)
 
-![](attachments/Programmieren_leicht_gemacht_TXG_4110-_Kassette.jpg)
-Programmieren leicht gemacht - TXG 4110 - Kassetten-Oberseite; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)
+- Programmieren leicht gemacht - TXG 4110 - Kassetten-Oberseite; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)<br>![](attachments/Programmieren_leicht_gemacht_TXG_4110-_Kassette.jpg)
 
-![](attachments/Startbildschirm.jpg)
-Programmieren leicht gemacht - TXG 4110 - Startbildschirm; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)
+- Programmieren leicht gemacht - TXG 4110 - Startbildschirm; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)<br>![](attachments/Startbildschirm.jpg)
 
-![](attachments/Erstes_Bild.jpg)
-Programmieren leicht gemacht - TXG 4110 - Eröffnungsbild; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)
+- Programmieren leicht gemacht - TXG 4110 - Eröffnungsbild; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)<br>![](attachments/Erstes_Bild.jpg)
 
-![](attachments/Beispiel.jpg)
-Programmieren leicht gemacht - TXG 4110 - Beispielbild; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)
+- Programmieren leicht gemacht - TXG 4110 - Beispielbild; Vielen lieben Dank an: Marsupilami von Atariage [Atarinside](https://atarinside.dyndns.org/blog/index.php/atari-deutschland/)<br>![](attachments/Beispiel.jpg)
 
 ## Filme
 

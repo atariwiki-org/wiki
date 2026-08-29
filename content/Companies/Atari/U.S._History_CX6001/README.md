@@ -2,8 +2,7 @@
 
 ## Content
 
-![](attachments/U.S._History_CX6001.jpg)
-Content of U.S. History CX6001
+- Content of U.S. History CX6001<br>![](attachments/U.S._History_CX6001.jpg)
 
 ## Cassette-Images in FLAC-format
 
@@ -25,56 +24,38 @@ Content of U.S. History CX6001
 
 ## Images
 
-![](attachments/P01.jpg)
-U.S. History CX6001 - figure 1
+- U.S. History CX6001 - figure 1<br>![](attachments/P01.jpg)
 
-![](attachments/P02.jpg)
-U.S. History CX6001 - figure 2
+- U.S. History CX6001 - figure 2<br>![](attachments/P02.jpg)
 
-![](attachments/P03.jpg)
-U.S. History CX6001 - figure 3
+- U.S. History CX6001 - figure 3<br>![](attachments/P03.jpg)
 
-![](attachments/P03-2.jpg)
-U.S. History CX6001 - figure 4
+- U.S. History CX6001 - figure 4<br>![](attachments/P03-2.jpg)
 
-![](attachments/P03-3.jpg)
-U.S. History CX6001 - figure 5
+- U.S. History CX6001 - figure 5<br>![](attachments/P03-3.jpg)
 
-![](attachments/P04.jpg)
-U.S. History CX6001 - figure 6
+- U.S. History CX6001 - figure 6<br>![](attachments/P04.jpg)
 
-![](attachments/P05.jpg)
-U.S. History CX6001 - figure 7
+- U.S. History CX6001 - figure 7<br>![](attachments/P05.jpg)
 
-![](attachments/P06.jpg)
-U.S. History CX6001 - figure 8
+- U.S. History CX6001 - figure 8<br>![](attachments/P06.jpg)
 
-![](attachments/P07.jpg)
-U.S. History CX6001 - figure 9
+- U.S. History CX6001 - figure 9<br>![](attachments/P07.jpg)
 
-![](attachments/P08.jpg)
-U.S. History CX6001 - figure 10
+- U.S. History CX6001 - figure 10<br>![](attachments/P08.jpg)
 
-![](attachments/P09.jpg)
-U.S. History CX6001 - figure 11
+- U.S. History CX6001 - figure 11<br>![](attachments/P09.jpg)
 
-![](attachments/P10.jpg)
-U.S. History CX6001 - figure 12
+- U.S. History CX6001 - figure 12<br>![](attachments/P10.jpg)
 
-![](attachments/P11.jpg)
-U.S. History CX6001 - figure 13
+- U.S. History CX6001 - figure 13<br>![](attachments/P11.jpg)
 
-![](attachments/P12.jpg)
-U.S. History CX6001 - figure 14
+- U.S. History CX6001 - figure 14<br>![](attachments/P12.jpg)
 
-![](attachments/P13.jpg)
-U.S. History CX6001 - figure 15
+- U.S. History CX6001 - figure 15<br>![](attachments/P13.jpg)
 
-![](attachments/P14.jpg)
-U.S. History CX6001 - figure 16
+- U.S. History CX6001 - figure 16<br>![](attachments/P14.jpg)
 
-![](attachments/P15.jpg)
-U.S. History CX6001 - figure 17
+- U.S. History CX6001 - figure 17<br>![](attachments/P15.jpg)
 
-![](attachments/P16.jpg)
-U.S. History CX6001 - figure 18
+- U.S. History CX6001 - figure 18<br>![](attachments/P16.jpg)

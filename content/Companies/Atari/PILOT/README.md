@@ -37,14 +37,12 @@ There are several Atari Products related to PILOT:
 
 ## Images
 
-![](attachments/PILOT.gif)
-PILOT Cartridge CXL4018 - 1st screen after booting
+- PILOT Cartridge CXL4018 - 1st screen after booting<br>![](attachments/PILOT.gif)
 
 !\[\](attachments/PILOT\_Educators\_Package-Binder-Font.jpg
 PILOT Educators Package binder - front - thanks to Allan Bushman for scanning
 
-![](attachments/PILOT_Educators_Package-Binder-Back.jpg)
-PILOT Educators Package binder - back - thanks to Allan Bushman for scanning
+- PILOT Educators Package binder - back - thanks to Allan Bushman for scanning<br>![](attachments/PILOT_Educators_Package-Binder-Back.jpg)
 
 ## Source Code
 
@@ -73,8 +71,7 @@ PILOT Educators Package binder - back - thanks to Allan Bushman for scanning
 
 ## ROM-Images
 
-![](attachments/PILOT-Cartridge.jpg)
-PILOT Cartridge CXL4018
+- PILOT Cartridge CXL4018<br>![](attachments/PILOT-Cartridge.jpg)
 
 - [PILOT.rom](attachments/PILOT.rom)
 
@@ -101,25 +98,21 @@ The package includes two Demonstration Program Cassettes:
 
 - **PILOT Cassette CX4113 A:**
 
-![](attachments/PILOT_Educators_Package-Cassette_A-Side_1.jpg)
-PILOT Programs for Children - cassette A, side 1 - thanks to Allan Bushman for scanning
+- PILOT Programs for Children - cassette A, side 1 - thanks to Allan Bushman for scanning<br>![](attachments/PILOT_Educators_Package-Cassette_A-Side_1.jpg)
 
 - [PILOT\_Educators\_Package-Cassette\_A-Side\_1.cas](attachments/PILOT_Educators_Package-Cassette_A-Side_1.cas)
 
-![](attachments/PILOT_Educators_Package-Cassette_A-Side_2.jpg)
-A PILOT Teaching Program - cassette A, side 2 - thanks to Allan Bushman for scanning
+- A PILOT Teaching Program - cassette A, side 2 - thanks to Allan Bushman for scanning<br>![](attachments/PILOT_Educators_Package-Cassette_A-Side_2.jpg)
 
 - [PILOT\_Educators\_Package-Cassette\_A-Side\_2.cas](attachments/PILOT_Educators_Package-Cassette_A-Side_2.cas)
 
 - **PILOT Cassette CX4113 B:**
 
-![](attachments/PILOT_Educators_Package-Cassette_B-Side_1.jpg)
-PILOT "Turtle Graphics" Demonstration - cassette B, side 1 - thanks to Allan Bushman for scanning
+- PILOT "Turtle Graphics" Demonstration - cassette B, side 1 - thanks to Allan Bushman for scanning<br>![](attachments/PILOT_Educators_Package-Cassette_B-Side_1.jpg)
 
 - [PILOT\_Educators\_Package-Cassette\_B-Side\_1.cas](attachments/PILOT_Educators_Package-Cassette_B-Side_1.cas)
 
-![](attachments/PILOT_Educators_Package-Cassette_A-Side_1.jpg)
-PILOT Do-It-Yourself Slide Show - cassette B, side 2 - thanks to Allan Bushman for scanning
+- PILOT Do-It-Yourself Slide Show - cassette B, side 2 - thanks to Allan Bushman for scanning<br>![](attachments/PILOT_Educators_Package-Cassette_A-Side_1.jpg)
 
 - [PILOT\_Educators\_Package-Cassette\_B-Side\_2.cas](attachments/PILOT_Educators_Package-Cassette_B-Side_2.cas)
 
@@ -127,31 +120,17 @@ Both cassettes contain only program data, not audio! Therefore, we prefer to hav
 
 ## PILOT Cassettes CX4113 Program Pictures
 
-![](attachments/PILOT_Cassettes_CX4113-01.jpg)
-PILOT Demonstration Program Cassettes CX4113-01
-![](attachments/PILOT_Cassettes_CX4113-02.jpg)
-PILOT Demonstration Program Cassettes CX4113-02
-![](attachments/PILOT_Cassettes_CX4113-03.jpg)
-PILOT Demonstration Program Cassettes CX4113-03
-![](attachments/PILOT_Cassettes_CX4113-04.jpg)
-PILOT Demonstration Program Cassettes CX4113-04
-![](attachments/PILOT_Cassettes_CX4113-05.jpg)
-PILOT Demonstration Program Cassettes CX4113-05
-![](attachments/PILOT_Cassettes_CX4113-06.jpg)
-PILOT Demonstration Program Cassettes CX4113-06
-![](attachments/PILOT_Cassettes_CX4113-07.jpg)
-PILOT Demonstration Program Cassettes CX4113-07
-![](attachments/PILOT_Cassettes_CX4113-08.jpg)
-PILOT Demonstration Program Cassettes CX4113-08
-![](attachments/PILOT_Cassettes_CX4113-09.jpg)
-PILOT Demonstration Program Cassettes CX4113-09
-![](attachments/PILOT_Cassettes_CX4113-10.jpg)
-PILOT Demonstration Program Cassettes CX4113-10
-![](attachments/PILOT_Cassettes_CX4113-11.jpg)
-PILOT Demonstration Program Cassettes CX4113-11
-![](attachments/PILOT_Cassettes_CX4113-12.jpg)
-PILOT Demonstration Program Cassettes CX4113-12
-![](attachments/PILOT_Cassettes_CX4113-13.jpg)
-PILOT Demonstration Program Cassettes CX4113-13
-![](attachments/PILOT_Cassettes_CX4113-14.jpg)
-PILOT Demonstration Program Cassettes CX4113-14
+- PILOT Demonstration Program Cassettes CX4113-01<br>![](attachments/PILOT_Cassettes_CX4113-01.jpg)
+- PILOT Demonstration Program Cassettes CX4113-02<br>![](attachments/PILOT_Cassettes_CX4113-02.jpg)
+- PILOT Demonstration Program Cassettes CX4113-03<br>![](attachments/PILOT_Cassettes_CX4113-03.jpg)
+- PILOT Demonstration Program Cassettes CX4113-04<br>![](attachments/PILOT_Cassettes_CX4113-04.jpg)
+- PILOT Demonstration Program Cassettes CX4113-05<br>![](attachments/PILOT_Cassettes_CX4113-05.jpg)
+- PILOT Demonstration Program Cassettes CX4113-06<br>![](attachments/PILOT_Cassettes_CX4113-06.jpg)
+- PILOT Demonstration Program Cassettes CX4113-07<br>![](attachments/PILOT_Cassettes_CX4113-07.jpg)
+- PILOT Demonstration Program Cassettes CX4113-08<br>![](attachments/PILOT_Cassettes_CX4113-08.jpg)
+- PILOT Demonstration Program Cassettes CX4113-09<br>![](attachments/PILOT_Cassettes_CX4113-09.jpg)
+- PILOT Demonstration Program Cassettes CX4113-10<br>![](attachments/PILOT_Cassettes_CX4113-10.jpg)
+- PILOT Demonstration Program Cassettes CX4113-11<br>![](attachments/PILOT_Cassettes_CX4113-11.jpg)
+- PILOT Demonstration Program Cassettes CX4113-12<br>![](attachments/PILOT_Cassettes_CX4113-12.jpg)
+- PILOT Demonstration Program Cassettes CX4113-13<br>![](attachments/PILOT_Cassettes_CX4113-13.jpg)
+- PILOT Demonstration Program Cassettes CX4113-14<br>![](attachments/PILOT_Cassettes_CX4113-14.jpg)

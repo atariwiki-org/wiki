@@ -62,8 +62,6 @@ Tracks (size in sum: 1.43 GB):
 
 ## Images
 
-![](attachments/peA_.jpg)
-Dorsett Atari Basic Electricity - cassettes with uneven numbers
+- Dorsett Atari Basic Electricity - cassettes with uneven numbers<br>![](attachments/peA_.jpg)
 
-![](attachments/peB_.jpg)
-Dorsett Atari Basic Electricity - cassettes with even numbers
+- Dorsett Atari Basic Electricity - cassettes with even numbers<br>![](attachments/peB_.jpg)

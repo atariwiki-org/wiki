@@ -62,8 +62,6 @@ Tracks (size in sum: 1.69 GB):
 
 ## Images
 
-![](attachments/ofA_.jpg)
-Dorsett Atari Office Careers - cassettes with uneven numbers
+- Dorsett Atari Office Careers - cassettes with uneven numbers<br>![](attachments/ofA_.jpg)
 
-![](attachments/ofB_.jpg)
-Dorsett Atari Office Careers - cassettes with even numbers
+- Dorsett Atari Office Careers - cassettes with even numbers<br>![](attachments/ofB_.jpg)

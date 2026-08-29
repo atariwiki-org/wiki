@@ -109,11 +109,9 @@ BF5F: 60                RTS
 
 Die große Frage ist immer, wieviele Seiten lassen sich mit dem Atari Schreiber in einem Dokument bearbeiten? Dazu muss zunächst der freie Speicher ermittelt werden. Dafür gibt es 2 Optionen. Einmal den Schreiber als a) Disketten-Version und einmal als b) ROM-Version. In beiden Fällen muss die gelbe OPTION-Taste und die Taste F gedrückt werden:
 
-![](attachments/Atari_Schreiber-freier_Platz_mit_DOS1.jpg)
-Atari Schreiber - a) freier Speicher mit geladenem DOS
+- Atari Schreiber - a) freier Speicher mit geladenem DOS<br>![](attachments/Atari_Schreiber-freier_Platz_mit_DOS1.jpg)
 
-![](attachments/Atari_Schreiber-freier_Platz_mit_ROM_ohne_DOS.jpg)
-Atari Schreiber - b) freier Speicher ohne geladenem DOS, nur ROM-Modul und Speicherung auf Kassette
+- Atari Schreiber - b) freier Speicher ohne geladenem DOS, nur ROM-Modul und Speicherung auf Kassette<br>![](attachments/Atari_Schreiber-freier_Platz_mit_ROM_ohne_DOS.jpg)
 
 In Version a) stehen somit 20.446 Bytes zur Verfügung und in Version b) 26.075 Bytes. Zum Vergleich: beim [The Writer's Tool](../../../OSS/The_Writer_s_Tool/README.md) stehen dem Anwender in Version a) 23.071 Bytes zur Verfügung. Hätte Atari es geschafft, statt eines 16-KiB-ROMs ein Bank Switching-ROM zu bauen, dass lediglich 8 KiB Speicher benötigt, wären weitere 8.192 Bytes zur Verfügung gewesen.
 
@@ -128,68 +126,48 @@ Zu bedenken ist, dass es sich hierbei um reinen Text handelt, keine Grafiken, ke
 
 ## Bilder
 
-![](attachments/Atari_Schreiber-Boxhuelle-RXG_8036.jpg)
-Atari Schreiber - Boxhülle für die ROM-Version - Mega-Danke an [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber-2/) für den guten Scan und danke fürs Weiterleiten an uns. Gute Arbeit! Bitte weiter so. :-)
+- Atari Schreiber - Boxhülle für die ROM-Version - Mega-Danke an [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber-2/) für den guten Scan und danke fürs Weiterleiten an uns. Gute Arbeit! Bitte weiter so. :-)<br>![](attachments/Atari_Schreiber-Boxhuelle-RXG_8036.jpg)
 
-![](attachments/Atari_Schreiber_DXG_8036-Cover.jpg)
-Atari Schreiber - Boxhülle für die Disketten-Version - Mega-Danke an [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber/) für den guten Scan und danke fürs Weiterleiten an uns. Gute Arbeit! Bitte weiter so. :-)
+- Atari Schreiber - Boxhülle für die Disketten-Version - Mega-Danke an [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber/) für den guten Scan und danke fürs Weiterleiten an uns. Gute Arbeit! Bitte weiter so. :-)<br>![](attachments/Atari_Schreiber_DXG_8036-Cover.jpg)
 
-![](attachments/Atari_Schreiber_Diskversion.jpg)
-Atari Schreiber - Hülle für die deutsche Disketten-Version inkl. Umlaute ; bitte beachten: ATARI Corp. (Deutschland) GmbH, Frankfurter Str. 89-91, 6096 Raunheim, PLZ heute: 65479 ; dies scheint die absolut letzte Version des Atari Schreibers von 1985 zu sein. Mega-Danke an GoodByteXL von AtariAge! :-)))
+- Atari Schreiber - Hülle für die deutsche Disketten-Version inkl. Umlaute ; bitte beachten: ATARI Corp. (Deutschland) GmbH, Frankfurter Str. 89-91, 6096 Raunheim, PLZ heute: 65479 ; dies scheint die absolut letzte Version des Atari Schreibers von 1985 zu sein. Mega-Danke an GoodByteXL von AtariAge! :-)))<br>![](attachments/Atari_Schreiber_Diskversion.jpg)
 
-![](attachments/Box.png)
-Atari Schreiber - Inhalt der Box zur deutschen Disketten-Version ; vielen lieben Dank an GoodByteXL von AtariAge! :-)))
+- Atari Schreiber - Inhalt der Box zur deutschen Disketten-Version ; vielen lieben Dank an GoodByteXL von AtariAge! :-)))<br>![](attachments/Box.png)
 
-![](attachments/Atari-Schreiber-CART-RXG-8036.jpg)
-Atari Schreiber - ROM - Mega-Danke an [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber-2/) für den guten Scan und danke fürs Weiterleiten an uns. Gute Arbeit! Bitte weiter so. :-)
+- Atari Schreiber - ROM - Mega-Danke an [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber-2/) für den guten Scan und danke fürs Weiterleiten an uns. Gute Arbeit! Bitte weiter so. :-)<br>![](attachments/Atari-Schreiber-CART-RXG-8036.jpg)
 
-![](attachments/Keyboard_Stickers.jpg)
-Atari Schreiber - Tastatur-Aufkleber für die deutsche Version inkl. Umlaute ; Vielen lieben Dank an [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber/)
+- Atari Schreiber - Tastatur-Aufkleber für die deutsche Version inkl. Umlaute ; Vielen lieben Dank an [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber/)<br>![](attachments/Keyboard_Stickers.jpg)
 
-![](attachments/Atari_Schreiber-Diskette2.jpg)
-Atari Schreiber Diskette - Version 1 - von [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber/), vielen lieben Dank fürs Scannen
+- Atari Schreiber Diskette - Version 1 - von [Atarinside](https://atarinside.dyndns.org/blog/index.php/atarinside-items/atari-schreiber/), vielen lieben Dank fürs Scannen<br>![](attachments/Atari_Schreiber-Diskette2.jpg)
 
-![](attachments/Atari_Schreiber_Diskette.jpg)
-Atari Schreiber Diskette - Version 2
+- Atari Schreiber Diskette - Version 2<br>![](attachments/Atari_Schreiber_Diskette.jpg)
 
 ![](../../../../../media/Companies/Atari/Atari_Germany/Atari_Schreiber/attachments/Atari_Schreiber_Diskette.png)
 Atari Schreiber Diskette - Version 3 ; vielen lieben Dank an GoodByteXL von AtariAge! :-)))
 
-![](attachments/Schreiber_Intro.jpg)
-Atari Schreiber - Startbildschirm 1983
+- Atari Schreiber - Startbildschirm 1983<br>![](attachments/Schreiber_Intro.jpg)
 
-![](attachments/Startscreen1985.jpg)
-Atari Schreiber - Startbildschirm 1985
+- Atari Schreiber - Startbildschirm 1985<br>![](attachments/Startscreen1985.jpg)
 
-![](attachments/Schreiber_Main.jpg)
-Atari Schreiber - Hauptmenü vom ATR-Image
+- Atari Schreiber - Hauptmenü vom ATR-Image<br>![](attachments/Schreiber_Main.jpg)
 
-![](attachments/Schreiber_Main_ATX.jpg)
-Atari Schreiber - Hauptmenü vom ATX-Image
+- Atari Schreiber - Hauptmenü vom ATX-Image<br>![](attachments/Schreiber_Main_ATX.jpg)
 
-![](attachments/Inhaltsverzeichnis.jpg)
-Atari Schreiber - Inhaltsverzeichnis vom Hauptmenü aus aufgerufen mit eingelegter leerer Diskette mit DOS
+- Atari Schreiber - Inhaltsverzeichnis vom Hauptmenü aus aufgerufen mit eingelegter leerer Diskette mit DOS<br>![](attachments/Inhaltsverzeichnis.jpg)
 
-![](attachments/Atari_Schreiber_-_leeres_Dokument.jpg)
-Atari Schreiber - leeres Dokument
+- Atari Schreiber - leeres Dokument<br>![](attachments/Atari_Schreiber_-_leeres_Dokument.jpg)
 
-![](attachments/Referenz-Karten_001.png)
-Atari Schreiber - Referenz-Karten, Seite 1
+- Atari Schreiber - Referenz-Karten, Seite 1<br>![](attachments/Referenz-Karten_001.png)
 
-![](attachments/Referenz-Karten_002.png)
-Atari Schreiber - Referenz-Karten, Seite 2
+- Atari Schreiber - Referenz-Karten, Seite 2<br>![](attachments/Referenz-Karten_002.png)
 
-![](attachments/Referenz-Karten_003.png)
-Atari Schreiber - Referenz-Karten, Seite 3
+- Atari Schreiber - Referenz-Karten, Seite 3<br>![](attachments/Referenz-Karten_003.png)
 
-![](attachments/Referenz-Karten_004.png)
-Atari Schreiber - Referenz-Karten, Seite 4
+- Atari Schreiber - Referenz-Karten, Seite 4<br>![](attachments/Referenz-Karten_004.png)
 
-![](attachments/Referenz-Karten_005.png)
-Atari Schreiber - Referenz-Karten, Seite 5
+- Atari Schreiber - Referenz-Karten, Seite 5<br>![](attachments/Referenz-Karten_005.png)
 
-![](attachments/Referenz-Karten_006.png)
-Atari Schreiber - Referenz-Karten, Seite 6
+- Atari Schreiber - Referenz-Karten, Seite 6<br>![](attachments/Referenz-Karten_006.png)
 
 - Atari Adresse nach dem Umzug von Hamburg nach Raunheim in 1985<br>
   ![](attachments/Raunheim.jpg)

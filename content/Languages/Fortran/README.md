@@ -105,23 +105,16 @@ In January of 2021, Thomas Cherryhomes realized [FORTRAN on the Atari via the Fu
 
 ## Images
 
-![](attachments/Fortran_acs_cover.jpg)
-Original Fortran from IBM
+- Original Fortran from IBM<br>![](attachments/Fortran_acs_cover.jpg)
 
-![](attachments/Funktionen-F77.jpg)
-FORTRAN 77 functions
+- FORTRAN 77 functions<br>![](attachments/Funktionen-F77.jpg)
 
-![](attachments/Fortran-Abacus.jpg)
-Abacus FORTRAN for the Commodore C64 - Manual cover from 1988
+- Abacus FORTRAN for the Commodore C64 - Manual cover from 1988<br>![](attachments/Fortran-Abacus.jpg)
 
-![](attachments/Fortran-C64.jpg)
-Abacus FORTRAN for the Commodore C64 - from Bob Stover \& Tim Adams from 1988
+- Abacus FORTRAN for the Commodore C64 - from Bob Stover \& Tim Adams from 1988<br>![](attachments/Fortran-C64.jpg)
 
-![](attachments/abacus-fortran64-1.jpg)
-Abacus FORTRAN for the Commodore C64 - 1st startscreen from 1986
+- Abacus FORTRAN for the Commodore C64 - 1st startscreen from 1986<br>![](attachments/abacus-fortran64-1.jpg)
 
-![](attachments/abacus-fortran64-2.jpg)
-Abacus FORTRAN for the Commodore C64 - Main Menu from 1986
+- Abacus FORTRAN for the Commodore C64 - Main Menu from 1986<br>![](attachments/abacus-fortran64-2.jpg)
 
-![](attachments/Apple-FORTRAN-Manual-cover.jpg)
-Apple FORTRAN Manual cover from 1980
+- Apple FORTRAN Manual cover from 1980<br>![](attachments/Apple-FORTRAN-Manual-cover.jpg)

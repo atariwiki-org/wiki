@@ -14,23 +14,17 @@ Family Budgets was first published via APX and later distributed from Atart itse
 
 ## Images
 
-![](attachments/Budget2.jpg)
-Family Budgets (APX 20108) startscreen
+- Family Budgets (APX 20108) startscreen<br>![](attachments/Budget2.jpg)
 
-![](attachments/Family_Budgets_2.jpg)
-Family Budgets (APX 20108) main menu
+- Family Budgets (APX 20108) main menu<br>![](attachments/Family_Budgets_2.jpg)
 
-![](attachments/Family_Budgets_2.gif)
-Family Budgets (APX 20108) screenshot 1
+- Family Budgets (APX 20108) screenshot 1<br>![](attachments/Family_Budgets_2.gif)
 
-![](attachments/Family_Budgets_3.gif)
-Family Budgets (APX 20108) screenshot 2
+- Family Budgets (APX 20108) screenshot 2<br>![](attachments/Family_Budgets_3.gif)
 
-![](attachments/Family_Budgets_4.gif)
-Family Budgets (APX 20108) screenshot 3
+- Family Budgets (APX 20108) screenshot 3<br>![](attachments/Family_Budgets_4.gif)
 
-![](attachments/Diskette.jpg)
-Family Budgets (APX 20108) original diskette
+- Family Budgets (APX 20108) original diskette<br>![](attachments/Diskette.jpg)
 
 ## Credits
 

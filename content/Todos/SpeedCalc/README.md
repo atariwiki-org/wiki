@@ -2,8 +2,7 @@
 
 for Atari ; Copyright (C) COMPUTE! and Kevin Martin \& Charles Brannon, Program Editor
 
-![](attachments/SpeedCalc-Start_Screen.jpg)
-SpeedCalc Start screen
+- SpeedCalc Start screen<br>![](attachments/SpeedCalc-Start_Screen.jpg)
 
 ## Introduction
 
@@ -209,8 +208,7 @@ C (hold down the OPTION console key and CTRL, then press C). The table lists all
 and the figure shows the keyboard layout with a description of what each key does. We'll be discussing each command
 in more detail below.
 
-![](attachments/Keyboard.jpg)
-SpeedCalc - Keyboard
+- SpeedCalc - Keyboard<br>![](attachments/Keyboard.jpg)
 
 ...
 
@@ -237,8 +235,6 @@ SpeedCalc - Keyboard
 
 ## Images
 
-![](attachments/SpeedCalc-Precision-1.jpg)
-Speedcalc - precision 1
+- Speedcalc - precision 1<br>![](attachments/SpeedCalc-Precision-1.jpg)
 
-![](attachments/SpeedCalc-Precision-2.jpg)
-Speedcalc - precision 2
+- Speedcalc - precision 2<br>![](attachments/SpeedCalc-Precision-2.jpg)

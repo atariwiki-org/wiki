@@ -62,8 +62,6 @@ Tracks (size in sum: 1.56 GB):
 
 ## Images
 
-![](attachments/psA_.jpg)
-Dorsett Atari Basic Psychology - cassettes with uneven numbers
+- Dorsett Atari Basic Psychology - cassettes with uneven numbers<br>![](attachments/psA_.jpg)
 
-![](attachments/psB_.jpg)
-Dorsett Atari Basic Psychology - cassettes with even numbers
+- Dorsett Atari Basic Psychology - cassettes with even numbers<br>![](attachments/psB_.jpg)

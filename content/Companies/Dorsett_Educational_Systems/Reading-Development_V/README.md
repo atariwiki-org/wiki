@@ -62,8 +62,6 @@ Tracks (size in sum: 968.9 MB):
 
 ## Images
 
-![](attachments/vA_.jpg)
-Dorsett Atari Effective Writing - cassettes with uneven numbers
+- Dorsett Atari Effective Writing - cassettes with uneven numbers<br>![](attachments/vA_.jpg)
 
-![](attachments/vB_.jpg)
-Dorsett Atari Effective Writing - cassettes with even numbers
+- Dorsett Atari Effective Writing - cassettes with even numbers<br>![](attachments/vB_.jpg)

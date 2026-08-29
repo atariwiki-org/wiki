@@ -20,10 +20,8 @@ See cover picture
 
 ## Cover
 
-![](attachments/Pole_Position_TX8043_cover.jpg)
-Pole Position TX8034 cover
+- Pole Position TX8034 cover<br>![](attachments/Pole_Position_TX8043_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Pole_Position_TX8043_cassette.jpg)
-Pole Position TX8034 cassette
+- Pole Position TX8034 cassette<br>![](attachments/Pole_Position_TX8043_cassette.jpg)

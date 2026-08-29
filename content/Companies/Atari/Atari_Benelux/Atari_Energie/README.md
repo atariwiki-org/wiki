@@ -32,10 +32,8 @@ Low quality
 
 ## Cover
 
-![](attachments/Atari_Energie_cover.jpg)
-Atari Energie Cover
+- Atari Energie Cover<br>![](attachments/Atari_Energie_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Atari_Energie_cassette.jpg)
-Atari Energie Cassette
+- Atari Energie Cassette<br>![](attachments/Atari_Energie_cassette.jpg)

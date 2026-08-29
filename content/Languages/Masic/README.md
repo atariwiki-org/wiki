@@ -42,11 +42,8 @@ in Bearbeitung...
 
 ## Bilder
 
-![](attachments/Cover.jpg)
-Vorderseite der MASIC-Box
+- Vorderseite der MASIC-Box<br>![](attachments/Cover.jpg)
 
-![](attachments/Back2.jpg)
-Rückseite der MASIC-Box
+- Rückseite der MASIC-Box<br>![](attachments/Back2.jpg)
 
-![](attachments/Diskette2.jpg)
-Diskette der MASIC-Software
+- Diskette der MASIC-Software<br>![](attachments/Diskette2.jpg)

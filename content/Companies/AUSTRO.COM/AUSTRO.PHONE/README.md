@@ -36,17 +36,12 @@ Nach aktuellen Stand konnte folgende Software aus dem Hause AUSTRO.COM ermittelt
 
 ## Bilder
 
-![](attachments/AUSTRO.PHONE.png)
-AUSTRO.PHONE - Startscreen von Version 1.03
+- AUSTRO.PHONE - Startscreen von Version 1.03<br>![](attachments/AUSTRO.PHONE.png)
 
-![](attachments/Installationsmenu_AUSTRO.PHONE.png)
-AUSTRO.PHONE - Installationsmenu von Version 1.03
+- AUSTRO.PHONE - Installationsmenu von Version 1.03<br>![](attachments/Installationsmenu_AUSTRO.PHONE.png)
 
-![](attachments/AUSTRO.Phone_Menu.jpg)
-AUSTRO.PHONE - Hauptmenu von Version 1.03
+- AUSTRO.PHONE - Hauptmenu von Version 1.03<br>![](attachments/AUSTRO.Phone_Menu.jpg)
 
-![](attachments/AUSTRO.Phone_DIR.jpg)
-AUSTRO.PHONE - Inhaltsverzeichnis von Version 1.03
+- AUSTRO.PHONE - Inhaltsverzeichnis von Version 1.03<br>![](attachments/AUSTRO.Phone_DIR.jpg)
 
-![](attachments/AUTOEXE.BAT-Phone.jpg)
-AUSTRO.PHONE - Inhalt der AUTOEXEC.BAT-Datei von Version 1.03
+- AUSTRO.PHONE - Inhalt der AUTOEXEC.BAT-Datei von Version 1.03<br>![](attachments/AUTOEXE.BAT-Phone.jpg)

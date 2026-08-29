@@ -16,11 +16,9 @@ Der exakt gleiche Editor wurde auch mit dem [Atari Macro Assembler (AMAC) and Pr
 
 ## Startbild
 
-![](attachments/Start.jpg)
-Atari Program-Text Editor 1.0 - Startbildschirm
+- Atari Program-Text Editor 1.0 - Startbildschirm<br>![](attachments/Start.jpg)
 
-![](attachments/APX-DISKNAME.jpg)
-Atari Program-Text Editor 1.0 - Disketten-Info
+- Atari Program-Text Editor 1.0 - Disketten-Info<br>![](attachments/APX-DISKNAME.jpg)
 
 ## Editor Customizing Manager
 
@@ -34,40 +32,28 @@ Atari BASIC Source Code als txt-Datei mit der Anleitung in Deutsch, was angepass
 
 ## Bilder des EDITOR CUSTOMIZING MANAGER
 
-![](attachments/Anleitung1.jpg)
-Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Anleitung - Bild 1
+- Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Anleitung - Bild 1<br>![](attachments/Anleitung1.jpg)
 
-![](attachments/Anleitung2.jpg)
-Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Anleitung - Bild 2
+- Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Anleitung - Bild 2<br>![](attachments/Anleitung2.jpg)
 
-![](attachments/Anleitung3.jpg)
-Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Anleitung - Bild 3
+- Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Anleitung - Bild 3<br>![](attachments/Anleitung3.jpg)
 
-![](attachments/Anleitung4.jpg)
-Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Anleitung - Bild 4
+- Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Anleitung - Bild 4<br>![](attachments/Anleitung4.jpg)
 
-![](attachments/Anleitung5.jpg)
-Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Anleitung - Bild 5
+- Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Anleitung - Bild 5<br>![](attachments/Anleitung5.jpg)
 
-![](attachments/Info.jpg)
-Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Info
+- Atari Program-Text Editor 1.0 - EDITOR CUSTOMIZING MANAGER - Info<br>![](attachments/Info.jpg)
 
 ## Bilder
 
-![](attachments/Box_Front.jpg)
-Atari Program-Text Editor 1.0 - Box-Cover
+- Atari Program-Text Editor 1.0 - Box-Cover<br>![](attachments/Box_Front.jpg)
 
-![](attachments/Box_Back.jpg)
-Atari Program-Text Editor 1.0 - Box-Rückansicht
+- Atari Program-Text Editor 1.0 - Box-Rückansicht<br>![](attachments/Box_Back.jpg)
 
-![](attachments/Box_Open.jpg)
-Atari Program-Text Editor 1.0 - Box geöffnet
+- Atari Program-Text Editor 1.0 - Box geöffnet<br>![](attachments/Box_Open.jpg)
 
-![](attachments/Diskette1.jpg)
-Atari Program-Text Editor 1.0 - Diskette - Bild 1
+- Atari Program-Text Editor 1.0 - Diskette - Bild 1<br>![](attachments/Diskette1.jpg)
 
-![](attachments/Diskette2.jpg)
-Atari Program-Text Editor 1.0 - Diskette - Bild 2
+- Atari Program-Text Editor 1.0 - Diskette - Bild 2<br>![](attachments/Diskette2.jpg)
 
-![](attachments/Label.jpg)
-Atari Program-Text Editor 1.0 - Diskettenaufkleber
+- Atari Program-Text Editor 1.0 - Diskettenaufkleber<br>![](attachments/Label.jpg)

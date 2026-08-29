@@ -4,11 +4,9 @@ Diese Software schien verloren, doch dank Marceau Mallard von [Atarinside](http:
 
 ## Bild
 
-![](attachments/box-cover.jpg)
-fehler abc TXG 9514 - Box (Vorder- und Rückansicht) ; Vielen lieben Dank Marceau Mallard von [Atarinside](http://atarinside.dyndns.org/blog/index.php/atarinside-items/fehler-abc-deutsch-english/)
+- fehler abc TXG 9514 - Box (Vorder- und Rückansicht) ; Vielen lieben Dank Marceau Mallard von [Atarinside](http://atarinside.dyndns.org/blog/index.php/atarinside-items/fehler-abc-deutsch-english/)<br>![](attachments/box-cover.jpg)
 
-![](attachments/fehler_abc.jpg)
-fehler abc TXG 9514 - Box
+- fehler abc TXG 9514 - Box<br>![](attachments/fehler_abc.jpg)
 
 ## Referenzen
 

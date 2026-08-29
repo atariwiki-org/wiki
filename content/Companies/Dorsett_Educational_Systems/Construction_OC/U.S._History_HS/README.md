@@ -62,8 +62,6 @@ Tracks (size in sum: 1.74 GB):
 
 ## Images
 
-![](attachments/hsA_.jpg)
-Dorsett Atari U.S. History HS - cassettes with uneven numbers
+- Dorsett Atari U.S. History HS - cassettes with uneven numbers<br>![](attachments/hsA_.jpg)
 
-![](attachments/hsB_.jpg)
-Dorsett Atari U.S. History HS - cassettes with even numbers
+- Dorsett Atari U.S. History HS - cassettes with even numbers<br>![](attachments/hsB_.jpg)

@@ -9,17 +9,14 @@ The Atari 815 Double Disk Drive is capable of dealing with single sided diskette
 However, the 815 encoded the data bits on the disks binary inverted, compared to every other double density Atari compatible disk drive, so even though you can hopefully sector copy each 180 KB side. Header, gaps and so on are not inverted. The next step is to XOR every data bit in the resulting ATR image to get a usable disk. Bingo, that is all! :-)
 
 Please take into account the conversion table for dealing with bits:
-![](attachments/XOR.jpg)
-Conversion table for bits
+- Conversion table for bits<br>![](attachments/XOR.jpg)
 
 So, with this in mind and the outstanding program: [xorfiles.exe copyright (c) 2002 by Nir Sofer](http://www.nirsoft.net/utils/xorfiles.html), a PC user is able to convert the 815 atr to a readable 'normal' disk we used all years long. In order to do this, the user needs a DD formatted atr disk image, full of $FFs. Luckily, Joachim Baßmann has made this very special diskette for us, please see below in the Downloads chapter. Thank you so much Joachim, for all you have done for the community, we owe you so much. :-) Please go ahead!
 
 Hex-Dump of the FF.atr:
-![](attachments/HEX-Dump1.jpg)
-Hex-Dump of the FF.atr - first sector; please take into account the marked row 1 (first 16 hex bytes) has to be unchanged
+- Hex-Dump of the FF.atr - first sector; please take into account the marked row 1 (first 16 hex bytes) has to be unchanged<br>![](attachments/HEX-Dump1.jpg)
 
-![](attachments/HEX-Dump2.jpg)
-Hex-Dump of the FF.atr - last sector
+- Hex-Dump of the FF.atr - last sector<br>![](attachments/HEX-Dump2.jpg)
 
 ## Downloads
 

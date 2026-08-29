@@ -66,8 +66,6 @@ Tracks (size in sum: 1.26 GB):
 
 ## Images
 
-![](attachments/hcA_.jpg)
-Dorsett Atari Health Services Career - cassettes with uneven numbers
+- Dorsett Atari Health Services Career - cassettes with uneven numbers<br>![](attachments/hcA_.jpg)
 
-![](attachments/hcB_.jpg)
-Dorsett Atari Health Services Career - cassettes with even numbers
+- Dorsett Atari Health Services Career - cassettes with even numbers<br>![](attachments/hcB_.jpg)

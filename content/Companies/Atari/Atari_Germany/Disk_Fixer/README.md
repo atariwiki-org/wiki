@@ -14,8 +14,7 @@ Diese Software schien verloren, doch dank Marceau Mallard von [Atarinside](http:
 
 ## Bild
 
-![](attachments/cover.jpg)
-Disk Fixer DXG 5729 - Box (Vorder- und Rückansicht) ; Vielen lieben Dank Marceau Mallard von [Atarinside](http://atarinside.dyndns.org/blog/index.php/atarinside-items/disk-fixer/)
+- Disk Fixer DXG 5729 - Box (Vorder- und Rückansicht) ; Vielen lieben Dank Marceau Mallard von [Atarinside](http://atarinside.dyndns.org/blog/index.php/atarinside-items/disk-fixer/)<br>![](attachments/cover.jpg)
 
 ## Referenzen
 

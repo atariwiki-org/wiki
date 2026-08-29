@@ -10,17 +10,12 @@ Two pass 6502 assembler
 
 ## Pictures
 
-![](attachments/DATASM_01.jpg)
-DataSoft Datasm/65 - picture 1 ; courtesy from [videogames-orbit](https://www.ebay.de/usr/videogames-orbit?_trksid=p2047675.l2559); thank you so much for bringing this artifact out of dark into the light, we realy appreciate your help! Please go ahead. :-)
+- DataSoft Datasm/65 - picture 1 ; courtesy from [videogames-orbit](https://www.ebay.de/usr/videogames-orbit?_trksid=p2047675.l2559); thank you so much for bringing this artifact out of dark into the light, we realy appreciate your help! Please go ahead. :-)<br>![](attachments/DATASM_01.jpg)
 
-![](attachments/DATASM_02.jpg)
-DataSoft Datasm/65 - picture 2 ; courtesy from [videogames-orbit](https://www.ebay.de/usr/videogames-orbit?_trksid=p2047675.l2559); thank you so much for bringing this artifact out of dark into the light, we realy appreciate your help! Please go ahead. :-)
+- DataSoft Datasm/65 - picture 2 ; courtesy from [videogames-orbit](https://www.ebay.de/usr/videogames-orbit?_trksid=p2047675.l2559); thank you so much for bringing this artifact out of dark into the light, we realy appreciate your help! Please go ahead. :-)<br>![](attachments/DATASM_02.jpg)
 
-![](attachments/DATASM_03_.jpg)
-DataSoft Datasm/65 - picture 3 ; courtesy from [videogames-orbit](https://www.ebay.de/usr/videogames-orbit?_trksid=p2047675.l2559); thank you so much for bringing this artifact out of dark into the light, we realy appreciate your help! Please go ahead. :-)
+- DataSoft Datasm/65 - picture 3 ; courtesy from [videogames-orbit](https://www.ebay.de/usr/videogames-orbit?_trksid=p2047675.l2559); thank you so much for bringing this artifact out of dark into the light, we realy appreciate your help! Please go ahead. :-)<br>![](attachments/DATASM_03_.jpg)
 
-![](attachments/DATASM_04.jpg)
-DataSoft Datasm/65 - picture 4 ; courtesy from [videogames-orbit](https://www.ebay.de/usr/videogames-orbit?_trksid=p2047675.l2559); thank you so much for bringing this artifact out of dark into the light, we realy appreciate your help! Please go ahead. :-)
+- DataSoft Datasm/65 - picture 4 ; courtesy from [videogames-orbit](https://www.ebay.de/usr/videogames-orbit?_trksid=p2047675.l2559); thank you so much for bringing this artifact out of dark into the light, we realy appreciate your help! Please go ahead. :-)<br>![](attachments/DATASM_04.jpg)
 
-![](attachments/DATASM_05_.jpg)
-DataSoft Datasm/65 - picture 5 ; courtesy from [videogames-orbit](https://www.ebay.de/usr/videogames-orbit?_trksid=p2047675.l2559); thank you so much for bringing this artifact out of dark into the light, we realy appreciate your help! Please go ahead. :-)
+- DataSoft Datasm/65 - picture 5 ; courtesy from [videogames-orbit](https://www.ebay.de/usr/videogames-orbit?_trksid=p2047675.l2559); thank you so much for bringing this artifact out of dark into the light, we realy appreciate your help! Please go ahead. :-)<br>![](attachments/DATASM_05_.jpg)

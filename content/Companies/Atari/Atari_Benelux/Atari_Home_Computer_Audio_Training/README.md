@@ -8,16 +8,12 @@ Atari Home Computer Audio Training: [Atari\_Audio\_Training.mp3](../../../../../
 
 ## Covers
 
-![](attachments/Atari_Audio_Training_cass.jpg)
-Atari Home Computer Audio Training Cover
+- Atari Home Computer Audio Training Cover<br>![](attachments/Atari_Audio_Training_cass.jpg)
 
-![](attachments/Snelstart_cass.jpg)
-Original Aackosoft Cover
+- Original Aackosoft Cover<br>![](attachments/Snelstart_cass.jpg)
 
 ## Media pictures
 
-![](attachments/Atari_Audio_Training_cassette.jpg)
-Atari Home Computer Audio Training Cassette
+- Atari Home Computer Audio Training Cassette<br>![](attachments/Atari_Audio_Training_cassette.jpg)
 
-![](attachments/Atari_Audio_Training_Aacko_cassette.jpg)
-Atari Home Computer Audio Training Cassette original Aackosoft version
+- Atari Home Computer Audio Training Cassette original Aackosoft version<br>![](attachments/Atari_Audio_Training_Aacko_cassette.jpg)

@@ -19,10 +19,8 @@ See cover picture
 
 ## Cover
 
-![](attachments/Slingshot_TX9044_cover.jpg)
-Slingshot cover
+- Slingshot cover<br>![](attachments/Slingshot_TX9044_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Slingshot_TX9044_cass.jpg)
-Slingshot cassette
+- Slingshot cassette<br>![](attachments/Slingshot_TX9044_cass.jpg)

@@ -2,16 +2,13 @@
 
 From the ATARI 1010 Cassette Recorder Field Service Manual we find on page 3-1 the existence of ATARI Diagnostic Test Tape (FD100008). On page 3-5 we find the instructions on how to do the READ/WRITE verify test on the ATARI 1010 Cassette Recorder.
 
-![](attachments/Cover.png)
-ATARI 1010 Cassette Recorder Field Service Manual
+- ATARI 1010 Cassette Recorder Field Service Manual<br>![](attachments/Cover.png)
 
-![](attachments/Page_23.png)
-ATARI 1010 Cassette Recorder Field Service Manual page 3-5 ; instructions on how to do the READ/WRITE verify test on the ATARI 1010 Cassette Recorder
+- ATARI 1010 Cassette Recorder Field Service Manual page 3-5 ; instructions on how to do the READ/WRITE verify test on the ATARI 1010 Cassette Recorder<br>![](attachments/Page_23.png)
 
 Besides an ATARI computer and a BASIC cartridge, we need the above mentioned test tape and an blank cassette tape. Here, we can use a 'normal' one, else the official ATARI Blank Cassette Tape (FD100009). Please see the pictures below.
 
-![](attachments/Bild1.jpg)
-ATARI Diagnostic Test Tape (FD100008) sealed
+- ATARI Diagnostic Test Tape (FD100008) sealed<br>![](attachments/Bild1.jpg)
 
 ## CAS-File
 
@@ -36,23 +33,16 @@ coming soon
 
 ## Pictures
 
-![](attachments/Fred1.jpg)
-ATARI 410 Diagnostic Tape (FD100008) ; box and tape ; thanks to [Fred Meijer](https://www.atarimuseum.nl)
+- ATARI 410 Diagnostic Tape (FD100008) ; box and tape ; thanks to [Fred Meijer](https://www.atarimuseum.nl)<br>![](attachments/Fred1.jpg)
 
-![](attachments/Fred2.jpg)
-ATARI 410 Diagnostic Tape (FD100008) ; box ; thanks to [Fred Meijer](https://www.atarimuseum.nl)
+- ATARI 410 Diagnostic Tape (FD100008) ; box ; thanks to [Fred Meijer](https://www.atarimuseum.nl)<br>![](attachments/Fred2.jpg)
 
-![](attachments/Fred3.jpg)
-ATARI 410 Diagnostic Tape (FD100008) ; tape front ; thanks to [Fred Meijer](https://www.atarimuseum.nl)
+- ATARI 410 Diagnostic Tape (FD100008) ; tape front ; thanks to [Fred Meijer](https://www.atarimuseum.nl)<br>![](attachments/Fred3.jpg)
 
-![](attachments/Fred4.jpg)
-ATARI 410 Diagnostic Tape (FD100008) ; tape back ; thanks to [Fred Meijer](https://www.atarimuseum.nl)
+- ATARI 410 Diagnostic Tape (FD100008) ; tape back ; thanks to [Fred Meijer](https://www.atarimuseum.nl)<br>![](attachments/Fred4.jpg)
 
-![](attachments/Fred5.jpg)
-ATARI 410 Scratch Tape (FD100009) ; box ; thanks to [Fred Meijer](https://www.atarimuseum.nl)
+- ATARI 410 Scratch Tape (FD100009) ; box ; thanks to [Fred Meijer](https://www.atarimuseum.nl)<br>![](attachments/Fred5.jpg)
 
-![](attachments/Fred6.jpg)
-ATARI 410 Scratch Tape (FD100009) ; tape front ; thanks to [Fred Meijer](https://www.atarimuseum.nl)
+- ATARI 410 Scratch Tape (FD100009) ; tape front ; thanks to [Fred Meijer](https://www.atarimuseum.nl)<br>![](attachments/Fred6.jpg)
 
-![](attachments/Fred7.jpg)
-ATARI 410 Scratch Tape (FD100009) ; tape back ; thanks to [Fred Meijer](https://www.atarimuseum.nl)
+- ATARI 410 Scratch Tape (FD100009) ; tape back ; thanks to [Fred Meijer](https://www.atarimuseum.nl)<br>![](attachments/Fred7.jpg)

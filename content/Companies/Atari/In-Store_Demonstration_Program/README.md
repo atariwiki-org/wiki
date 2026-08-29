@@ -24,14 +24,11 @@ Copyright (C) 1982 Atari, Inc. and Mike Albaugh
 
 ## Pictures
 
-![](attachments/atari-instore-demo-box-front_.jpg)
-Atari In-Store Demo Program CXL4019 - box front - thanks to Bill Lange for scanning and sharing with us! :-)
+- Atari In-Store Demo Program CXL4019 - box front - thanks to Bill Lange for scanning and sharing with us! :-)<br>![](attachments/atari-instore-demo-box-front_.jpg)
 
-![](attachments/atari-instore-demo-box-back_.jpg)
-Atari In-Store Demo Program CXL4019 - box back - thanks to Bill Lange for scanning and sharing with us! :-)
+- Atari In-Store Demo Program CXL4019 - box back - thanks to Bill Lange for scanning and sharing with us! :-)<br>![](attachments/atari-instore-demo-box-back_.jpg)
 
-![](attachments/CXL4019-2.jpg)
-Atari In-Store Demo Program CXL4019 - cartridges; thank you so much FULS from AtariAge for scanning and sharing with us! :-)
+- Atari In-Store Demo Program CXL4019 - cartridges; thank you so much FULS from AtariAge for scanning and sharing with us! :-)<br>![](attachments/CXL4019-2.jpg)
 
 ## Youtube
 

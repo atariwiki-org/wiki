@@ -14,5 +14,4 @@ BASIC++ with OS++ from Thomas Richter is one of the very, very rare Atari BASICs
 
 ## Picture
 
-![](attachments/Start_Screen.jpg)
-BASIC++ start screen
+- BASIC++ start screen<br>![](attachments/Start_Screen.jpg)

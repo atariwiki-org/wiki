@@ -25,11 +25,8 @@ BASIC/XA was sold as a cassette version (APX-10177) and a as well as a diskette 
 
 ## Pictures
 
-![](attachments/Start_Screen.png)
-Start screen of EXTENDED ATARI BASIC (BASIC/XA)
+- Start screen of EXTENDED ATARI BASIC (BASIC/XA)<br>![](attachments/Start_Screen.png)
 
-![](attachments/DOS.png)
-DOS menu of EXTENDED ATARI BASIC (BASIC/XA) with the option to go to the main DOS
+- DOS menu of EXTENDED ATARI BASIC (BASIC/XA) with the option to go to the main DOS<br>![](attachments/DOS.png)
 
-![](attachments/Thomas_Newton.png)
-Thomas D. Newton, author of EXTENDED ATARI BASIC (BASIC/XA)
+- Thomas D. Newton, author of EXTENDED ATARI BASIC (BASIC/XA)<br>![](attachments/Thomas_Newton.png)

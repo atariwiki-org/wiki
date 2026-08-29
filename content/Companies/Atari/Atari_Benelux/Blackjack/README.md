@@ -31,10 +31,8 @@ Side 2:[http://data.atariwiki.org/FLAC/Blackjack\_side2.flac](http://data.atariw
 
 ## Cover
 
-![](attachments/Blackjack_cover.jpg)
-Blackjack Cover
+- Blackjack Cover<br>![](attachments/Blackjack_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Blackjack_cassette.jpg)
-Blackjack Cassette
+- Blackjack Cassette<br>![](attachments/Blackjack_cassette.jpg)

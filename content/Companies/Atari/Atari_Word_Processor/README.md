@@ -12,8 +12,7 @@
 
 ## ATR-Images
 
-![](attachments/Diskette_Labels.jpg)
-Diskette Labels
+- Diskette Labels<br>![](attachments/Diskette_Labels.jpg)
 
 - [The ATARI Word Processor Program Master Diskette CX8119.atx](attachments/The_ATARI_Word_Processor_Program_Master_Diskette_CX8119.atx) ; verified atx image of the untouched original diskette including protection. Thank you so much Farb from AtariAge for finding out. We really appreciate your help! Please go ahead. :-)))
 - [The\_ATARI\_Word\_Processor-Version\_1.0-ATR\_build\_from\_ATX.atr](attachments/The_ATARI_Word_Processor-Version_1.0-ATR_build_from_ATX.atr) ; atr image build from the above atx image. Thank you so much DjayBee from AtariAge for finding out, doing the investigation and building a version ready for all emulators. We really appreciate your help! Please go ahead. :-)))
@@ -25,8 +24,7 @@ Diskette Labels
 
 ## Cassette (WAV- and FLAC format) from the original cassette, which contains audio content only
 
-![](attachments/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_1.jpg)
-The Atari Word Processor Audio Master Cassette CX4122 Side 1
+- The Atari Word Processor Audio Master Cassette CX4122 Side 1<br>![](attachments/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_1.jpg)
 
 - [The\_Atari\_Word\_Processor\_Audio\_Master\_Cassette\_CX4122\_Side\_1.wav](../../../../media/Companies/Atari/Atari_Word_Processor/attachments/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_1.wav) Size: 30.5 MB ; wav-file from Allan Bushman, thank you so much Allan!
 - [The\_Atari\_Word\_Processor\_Audio\_Master\_Cassette\_CX4122\_Side\_2.wav](../../../../media/Companies/Atari/Atari_Word_Processor/attachments/The_Atari_Word_Processor_Audio_Master_Cassette_CX4122_Side_2.wav) Size: 22.7 MB ; wav-file from Allan Bushman, thank you so much Allan!
@@ -77,35 +75,25 @@ CTRL X 	 DELETE LINE
 
 ## Pictures
 
-![](attachments/The_Atari_Wordprocessor_1.0.jpg)
-The Atari Wordprocessor 1.0
+- The Atari Wordprocessor 1.0<br>![](attachments/The_Atari_Wordprocessor_1.0.jpg)
 
-![](attachments/The_AtariWriter_Wordprocessor_CX404-62_pages.jpg)
-The Atari Wordprocessor CX404 - space for 62 pages on a SSSD disk with DOS II 2.0S
+- The Atari Wordprocessor CX404 - space for 62 pages on a SSSD disk with DOS II 2.0S<br>![](attachments/The_AtariWriter_Wordprocessor_CX404-62_pages.jpg)
 
-![](attachments/Atari_Word_Processor-Box-CX404.jpg)
-The Atari Wordprocessor CX404-Box
+- The Atari Wordprocessor CX404-Box<br>![](attachments/Atari_Word_Processor-Box-CX404.jpg)
 
-![](attachments/AtariWriter_Wordprocessor_CX404-4.jpg)
-The Atari Wordprocessor CX404-1
+- The Atari Wordprocessor CX404-1<br>![](attachments/AtariWriter_Wordprocessor_CX404-4.jpg)
 
-![](attachments/AtariWriter_Wordprocessor_CX404-5.jpg)
-The Atari Wordprocessor CX404-2
+- The Atari Wordprocessor CX404-2<br>![](attachments/AtariWriter_Wordprocessor_CX404-5.jpg)
 
-![](attachments/Atari_Word_Processor-Training_Manual.jpg)
-The Atari Wordprocessor CX404-Training Manual
+- The Atari Wordprocessor CX404-Training Manual<br>![](attachments/Atari_Word_Processor-Training_Manual.jpg)
 
-![](attachments/Accessories_Required.jpg)
-Accessories Required
+- Accessories Required<br>![](attachments/Accessories_Required.jpg)
 
-![](attachments/The_Atari_Word_Processor_Program_Master_Diskette_CX8119.jpg)
-The Atari Word Processor Program Master Diskette CX8119 ; from Allan Bushman, thank you so much Allan!
+- The Atari Word Processor Program Master Diskette CX8119 ; from Allan Bushman, thank you so much Allan!<br>![](attachments/The_Atari_Word_Processor_Program_Master_Diskette_CX8119.jpg)
 
-![](attachments/The_Atari_Word_Processor_Demonstration_Data_Kit_CX8128_diskette.jpg)
-The Atari Word Processor Demonstration Data Kit CX8128 diskette ; from Allan Bushman, thank you so much Allan!
+- The Atari Word Processor Demonstration Data Kit CX8128 diskette ; from Allan Bushman, thank you so much Allan!<br>![](attachments/The_Atari_Word_Processor_Demonstration_Data_Kit_CX8128_diskette.jpg)
 
-![](attachments/The_Atari_Word_Processor_Demonstration_Data_Kit_CX8128_box.jpg)
-The Atari Word Processor Demonstration Data Kit CX8128 box ; Giga-thanks goes to Tempest from AtariAge for bringing that artifact from the darkness to the light! We owe you a lot!
+- The Atari Word Processor Demonstration Data Kit CX8128 box ; Giga-thanks goes to Tempest from AtariAge for bringing that artifact from the darkness to the light! We owe you a lot!<br>![](attachments/The_Atari_Word_Processor_Demonstration_Data_Kit_CX8128_box.jpg)
 
 ## Reference
 

@@ -16,5 +16,4 @@ With the game Pong from 1972 it all begun. Here we have a clone of the game from
 
 ## Picture
 
-![](attachments/Pong.jpg)
-First lines from the source code of Pong from 1986 from ANALOG Computing and Gary S. Domrow
+- First lines from the source code of Pong from 1986 from ANALOG Computing and Gary S. Domrow<br>![](attachments/Pong.jpg)

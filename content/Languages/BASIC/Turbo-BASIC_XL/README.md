@@ -39,17 +39,13 @@ Afair, XTB had been created by Thorsten Karwoth. He is also the author of Atari 
 
 ## Pictures form Frank Ostrowski
 
-![](attachments/Frank_Ostrowski_1.jpg)
-Frank Ostrowski around 1985
+- Frank Ostrowski around 1985<br>![](attachments/Frank_Ostrowski_1.jpg)
 
-![](attachments/Frank_Ostrowski_2.jpg)
-Article of Frank Ostrowski's Turbo-Basic XL from 12/1985
+- Article of Frank Ostrowski's Turbo-Basic XL from 12/1985<br>![](attachments/Frank_Ostrowski_2.jpg)
 
-![](attachments/Frank_Ostrowski_3.jpg)
-Frank Ostrowski and his boss in the mid 80's
+- Frank Ostrowski and his boss in the mid 80's<br>![](attachments/Frank_Ostrowski_3.jpg)
 
-![](attachments/Frank_Ostrowski_4.jpg)
-Frank Ostrowski in the late 80's taken from ST World Magazine - Jan 1990 - Issue 47 scanned by Lonny Pursell
+- Frank Ostrowski in the late 80's taken from ST World Magazine - Jan 1990 - Issue 47 scanned by Lonny Pursell<br>![](attachments/Frank_Ostrowski_4.jpg)
 
 ## Source Code
 
@@ -249,38 +245,26 @@ Das neue Turbo-Basic XL 1.5 Handbuch. Das Buch wurde langjährigen Mitgliedern a
 
 ## Images
 
-![](attachments/Happy_Computer_2-1986-TurboBASIC_XL-Original_Disketten-Diskette-1.png)
-Happy Computer 2-1986-TurboBASIC (XL)-Original Diskette (1/2)-Diskette
+- Happy Computer 2-1986-TurboBASIC (XL)-Original Diskette (1/2)-Diskette<br>![](attachments/Happy_Computer_2-1986-TurboBASIC_XL-Original_Disketten-Diskette-1.png)
 
-![](attachments/Happy_Computer_2-1986-TurboBASIC_XL-Original_Disketten-Diskette-2.png)
-Happy Computer 2-1986-TurboBASIC (XL)-Original Diskette (2/2)
+- Happy Computer 2-1986-TurboBASIC (XL)-Original Diskette (2/2)<br>![](attachments/Happy_Computer_2-1986-TurboBASIC_XL-Original_Disketten-Diskette-2.png)
 
-![](attachments/Frost_Basic-MandT_Software.jpg)
-Frost BASIC 1.4 - start screen ; this was the predecessor of Turbo-BASIC XL 1.5 for the 400/800 machines, but was later published than Turbo-BASIC XL 1.5 itself. The characters after 1985 are, by all means, no mistake. Indeed, they match perfectly with: 'M\&T SOFTWARE', which means: 'Markt und Technik Software'. Please look for yourself in the [Atari ATASCII Table](../../../Todos/Atari_ATASCII_Table/README.md). :-)
+- Frost BASIC 1.4 - start screen ; this was the predecessor of Turbo-BASIC XL 1.5 for the 400/800 machines, but was later published than Turbo-BASIC XL 1.5 itself. The characters after 1985 are, by all means, no mistake. Indeed, they match perfectly with: 'M\&T SOFTWARE', which means: 'Markt und Technik Software'. Please look for yourself in the [Atari ATASCII Table](../../../Todos/Atari_ATASCII_Table/README.md). :-)<br>![](attachments/Frost_Basic-MandT_Software.jpg)
 
-![](attachments/Startscreen-2.jpg)
-Turbo-BASIC XL - startscreen
+- Turbo-BASIC XL - startscreen<br>![](attachments/Startscreen-2.jpg)
 
-![](attachments/TURBO-BASIC_XL_1.5_Compiler_1.1_Runtime_and_Linker.jpg)
-Turbo-BASIC XL - Turbo-BASIC XL 1.5, Compiler 1.1, Runtime and Linker in just one single cartridge
+- Turbo-BASIC XL - Turbo-BASIC XL 1.5, Compiler 1.1, Runtime and Linker in just one single cartridge<br>![](attachments/TURBO-BASIC_XL_1.5_Compiler_1.1_Runtime_and_Linker.jpg)
 
-![](attachments/TURBO-BASIC_XL_1.6.jpg)
-Turbo-BASIC XL - Turbo-BASIC XL 1.6 ; thank you so much THOR! We appreciate your help, especially with Basic++
+- Turbo-BASIC XL - Turbo-BASIC XL 1.6 ; thank you so much THOR! We appreciate your help, especially with Basic++<br>![](attachments/TURBO-BASIC_XL_1.6.jpg)
 
-![](attachments/TURBO-BASIC_XL_2.0.jpg)
-Turbo-BASIC XL - Turbo-BASIC XL 2.0 ; (C) 1990 LASER software
+- Turbo-BASIC XL - Turbo-BASIC XL 2.0 ; (C) 1990 LASER software<br>![](attachments/TURBO-BASIC_XL_2.0.jpg)
 
-![](attachments/TURBO-BASIC_XL_2.1.jpg)
-Turbo-BASIC XL - TT-BASIC XL 2.11 ; with TURBO 2000 SYSTEM; (C) 1988 J. Richter
+- Turbo-BASIC XL - TT-BASIC XL 2.11 ; with TURBO 2000 SYSTEM; (C) 1988 J. Richter<br>![](attachments/TURBO-BASIC_XL_2.1.jpg)
 
-![](attachments/Turbo_Basic_Version_3.2q.jpg)
-Turbo-BASIC XL 3.2q for SpartaDOS, Startscreen ; (C) 1992 Tom Hunt
+- Turbo-BASIC XL 3.2q for SpartaDOS, Startscreen ; (C) 1992 Tom Hunt<br>![](attachments/Turbo_Basic_Version_3.2q.jpg)
 
-![](attachments/TURBO-BASIC_XL-Compiler_Version_1.1_Intro.jpg)
-Turbo-BASIC XL - Turbo-BASIC XL Compiler Version 1.1 - intro
+- Turbo-BASIC XL - Turbo-BASIC XL Compiler Version 1.1 - intro<br>![](attachments/TURBO-BASIC_XL-Compiler_Version_1.1_Intro.jpg)
 
-![](attachments/TURBO-BASIC_XL-Compiler_Version_1.1_main.jpg)
-Turbo-BASIC XL - Turbo-BASIC XL Compiler Version 1.1 - main
+- Turbo-BASIC XL - Turbo-BASIC XL Compiler Version 1.1 - main<br>![](attachments/TURBO-BASIC_XL-Compiler_Version_1.1_main.jpg)
 
-![](attachments/Ron_Fetzer.jpg)
-Ron Fetzer
+- Ron Fetzer<br>![](attachments/Ron_Fetzer.jpg)

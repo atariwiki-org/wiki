@@ -27,10 +27,8 @@ Altirra BASIC 1.54: [Additions.atr](attachments/Additions.atr) ; plus additions 
 
 ## Images
 
-![](attachments/Altirra1.jpg)
-Altirra BASIC 1.29 after starting from the ATR-image
-![](attachments/Altirra2.jpg)
-Sectors needed for Altirra BASIC 1.29 on the SD-ATR-image above
+- Altirra BASIC 1.29 after starting from the ATR-image<br>![](attachments/Altirra1.jpg)
+- Sectors needed for Altirra BASIC 1.29 on the SD-ATR-image above<br>![](attachments/Altirra2.jpg)
 
 ## Reference
 

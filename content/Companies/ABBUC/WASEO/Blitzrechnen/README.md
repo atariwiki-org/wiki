@@ -36,5 +36,4 @@ Luckybuck
 
 Anhang:
 
-![](attachments/Blitzrechner-Wuerfel.png)
-Blitzrechner-Würfel vom [HNF-Museumsshop](https://www.hnf.de/besuch/shop-imbiss/museumsshop.html)
+- Blitzrechner-Würfel vom [HNF-Museumsshop](https://www.hnf.de/besuch/shop-imbiss/museumsshop.html)<br>![](attachments/Blitzrechner-Wuerfel.png)

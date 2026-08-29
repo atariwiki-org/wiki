@@ -62,62 +62,43 @@ Für den Drucker optimiertes Handbuch (englisch, OCR) als PDF-Datei (9,1 MB): [S
 
 ### Bilder
 
-![](attachments/Statistics_I.jpg)
-Boxcover von Statistics I (englisch)
+- Boxcover von Statistics I (englisch)<br>![](attachments/Statistics_I.jpg)
 
-![](attachments/Statistics_I_01.jpg)
-Startbildschirm der Diskettenversion von Statistics I (deutsch)
+- Startbildschirm der Diskettenversion von Statistics I (deutsch)<br>![](attachments/Statistics_I_01.jpg)
 
-![](attachments/Statistics_I_02.jpg)
-Eingabe-Editor für die Datenpunkte mit 48K RAM
+- Eingabe-Editor für die Datenpunkte mit 48K RAM<br>![](attachments/Statistics_I_02.jpg)
 
-![](attachments/Statistics_I_03.jpg)
-Eingabe-Editor mit verschiedenen Datenpunkten
+- Eingabe-Editor mit verschiedenen Datenpunkten<br>![](attachments/Statistics_I_03.jpg)
 
-![](attachments/Statistics_I_04.jpg)
-Wiedergabe der eingegebenen Datenpunkte mit Editiermöglichkeit
+- Wiedergabe der eingegebenen Datenpunkte mit Editiermöglichkeit<br>![](attachments/Statistics_I_04.jpg)
 
-![](attachments/Statistics_I_05.jpg)
-Darstellung der Gesamtergebnisse aller verfügbaren Variablen einer Datenbasis von Statistics I in der Revision 1.2
+- Darstellung der Gesamtergebnisse aller verfügbaren Variablen einer Datenbasis von Statistics I in der Revision 1.2<br>![](attachments/Statistics_I_05.jpg)
 
-![](attachments/Statistics_I_08.jpg)
-Weitere Darstellung von Gesamtergebnissen aller verfügbaren Variablen einer anderen Datenbasis
+- Weitere Darstellung von Gesamtergebnissen aller verfügbaren Variablen einer anderen Datenbasis<br>![](attachments/Statistics_I_08.jpg)
 
-![](attachments/Statistics_I_06.jpg)
-Abspeicherung einer Datenbasis mit dem Namen: "CUSTOMER"
+- Abspeicherung einer Datenbasis mit dem Namen: "CUSTOMER"<br>![](attachments/Statistics_I_06.jpg)
 
-![](attachments/Statistics_I_09.jpg)
-Fenster bei der Initialisierung der Berechnungen
+- Fenster bei der Initialisierung der Berechnungen<br>![](attachments/Statistics_I_09.jpg)
 
-![](attachments/Statistics_I_10.jpg)
-Fenster bei der Berechnung - Phase 1
+- Fenster bei der Berechnung - Phase 1<br>![](attachments/Statistics_I_10.jpg)
 
-![](attachments/Statistics_I_11.jpg)
-Fenster bei der Berechnung - Phase 2
+- Fenster bei der Berechnung - Phase 2<br>![](attachments/Statistics_I_11.jpg)
 
-![](attachments/Statistics_I_12.jpg)
-Fenster bei der Berechnung - Phase 3
+- Fenster bei der Berechnung - Phase 3<br>![](attachments/Statistics_I_12.jpg)
 
-![](attachments/Statistics_I_13.jpg)
-Fenster bei der Berechnung - Phase 4
+- Fenster bei der Berechnung - Phase 4<br>![](attachments/Statistics_I_13.jpg)
 
-![](attachments/Statistics_I_14.jpg)
-Fenster bei der Berechnung - Phase 5
+- Fenster bei der Berechnung - Phase 5<br>![](attachments/Statistics_I_14.jpg)
 
-![](attachments/Statistics_I_07.jpg)
-Fenster bei der Berechnung - Phase 6
+- Fenster bei der Berechnung - Phase 6<br>![](attachments/Statistics_I_07.jpg)
 
-![](attachments/Statistics_I_16.jpg)
-Laden der Datenbasis: "CUSTOMER" von Diskette
+- Laden der Datenbasis: "CUSTOMER" von Diskette<br>![](attachments/Statistics_I_16.jpg)
 
-![](attachments/Statistics_I_20.jpg)
-Grafische Darstellung eines Beipiels aus dem Statistics I-Handbuch mittels der Software: "Graph It" - Diagramm 1
+- Grafische Darstellung eines Beipiels aus dem Statistics I-Handbuch mittels der Software: "Graph It" - Diagramm 1<br>![](attachments/Statistics_I_20.jpg)
 
-![](attachments/Statistics_I_21.jpg)
-Grafische Darstellung eines Beipiels aus dem Statistics I-Handbuch mittels der Software: "Graph It" - Diagramm 2
+- Grafische Darstellung eines Beipiels aus dem Statistics I-Handbuch mittels der Software: "Graph It" - Diagramm 2<br>![](attachments/Statistics_I_21.jpg)
 
-![](attachments/Statistics_I_22.jpg)
-Grafische Darstellung eines Beipiels aus dem Statistics I-Handbuch mittels der Software: "Graph It" - Diagramm 3
+- Grafische Darstellung eines Beipiels aus dem Statistics I-Handbuch mittels der Software: "Graph It" - Diagramm 3<br>![](attachments/Statistics_I_22.jpg)
 
 ## Autor
 

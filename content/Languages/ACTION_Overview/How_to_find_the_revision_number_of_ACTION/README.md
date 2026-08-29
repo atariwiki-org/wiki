@@ -4,8 +4,6 @@ The ACTION! cartridge itself has gone through a couple of changes since its firs
 
 ## Pictures
 
-![](attachments/Action_version1.jpg)
-ACTION! - monitor mode with typed in "?$B000"
+- ACTION! - monitor mode with typed in "?$B000"<br>![](attachments/Action_version1.jpg)
 
-![](attachments/Action_version2.jpg)
-ACTION! - monitor mode result after typed in "?$B000" ; here version 3.6 was in use
+- ACTION! - monitor mode result after typed in "?$B000" ; here version 3.6 was in use<br>![](attachments/Action_version2.jpg)

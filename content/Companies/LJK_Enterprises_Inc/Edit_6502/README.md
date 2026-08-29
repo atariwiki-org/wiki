@@ -22,8 +22,6 @@ Very fast Assembler, Editor and Monitor for Atari 400 and 800 under OS B
 
 ## Pictures
 
-![](attachments/Edit_6502-1.jpg)
-EDIT 6502 commands
+- EDIT 6502 commands<br>![](attachments/Edit_6502-1.jpg)
 
-![](attachments/Edit_6502-2.jpg)
-Description of EDIT 6502
+- Description of EDIT 6502<br>![](attachments/Edit_6502-2.jpg)

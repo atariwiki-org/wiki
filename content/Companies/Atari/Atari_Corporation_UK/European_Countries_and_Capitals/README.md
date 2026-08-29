@@ -28,8 +28,7 @@ Release 1985: see cover picture
 
 ## Cover
 
-![](attachments/European_Countries_Capitals_85_cover.jpg)
-European Countries and Captials Cover 1985 rerelease
+- European Countries and Captials Cover 1985 rerelease<br>![](attachments/European_Countries_Capitals_85_cover.jpg)
 
 ## Media pictures
 

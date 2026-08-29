@@ -62,8 +62,6 @@ Tracks (size in sum: 842 MB):
 
 ## Images
 
-![](attachments/spA_.jpg)
-Dorsett Atari Spelling SP - cassettes with uneven numbers
+- Dorsett Atari Spelling SP - cassettes with uneven numbers<br>![](attachments/spA_.jpg)
 
-![](attachments/spB_.jpg)
-Dorsett Atari Spelling SP - cassettes with even numbers
+- Dorsett Atari Spelling SP - cassettes with even numbers<br>![](attachments/spB_.jpg)

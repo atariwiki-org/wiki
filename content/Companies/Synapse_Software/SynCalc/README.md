@@ -6,8 +6,7 @@ SynCalc from Synapse and programmed by Mike Silva is the(!) spreadsheet for the 
 
 In 2016 Mike Silva gave SynCalc into public domain including source code! Mr. Silva, the Atari community is forever in your debt! Thank you so much, we really appreciate your help. You are now in the hall of fame.
 
-![](attachments/Thank_you_Mike_Silva.jpg)
-Thank you Mike Silva!!!
+- Thank you Mike Silva!!!<br>![](attachments/Thank_you_Mike_Silva.jpg)
 
 Further credit goes to Brian Lee, the product manager, who was very involved in guiding the look-and-feel and the overall functionality of the program. Thanky you so much Mr. Lee, we really appreciate your help, then and now. :-)
 
@@ -191,14 +190,11 @@ The cell data stack grows downward from $7FFF on a 48k machine.  By testing othe
 ## Problems when importing VisiCalc files ; findings from luckybuck
 
 SynCalc holds an import program, called: 'VC-\>SC' in order to read in files from the VisiCalc program. All versions(!) out there, except the original ones are not able to import properly VisiCalc files! The SynCalc program tries to load a convert program from the original program disk. If this fails, you get the following pictures:
-![](attachments/1.jpg)
-SynCalc VC-\>SC option selected
+- SynCalc VC-\>SC option selected<br>![](attachments/1.jpg)
 
-![](attachments/2.jpg)
-SynCalc asking for the program master disk
+- SynCalc asking for the program master disk<br>![](attachments/2.jpg)
 
-![](attachments/3.jpg)
-SynCalc failed to load a program from the program master disk
+- SynCalc failed to load a program from the program master disk<br>![](attachments/3.jpg)
 
 Further, if you have really hard VisiCalc spreadsheets and the 1985 version even in original form fails to import, try the 1983 version, which works like a charm in these very rare cases.
 
@@ -221,11 +217,9 @@ a) SC for worksheets
 b) DIF for data interchange files (or values)
 c) TXT for reporting
 Thank you Wade Ripdubski for finding out and sharing your knowledge with us. :-)))
-![](attachments/files.png)
-SynCalc file syntax
+- SynCalc file syntax<br>![](attachments/files.png)
 
-![](attachments/rating.png)
-SynCalc rating from Wade Ripdubski (InverseATASCII). AtariWiki fully admits that rating. Mike Silva has done a men's jpb. Shaft's score would be a 10 out of 10.
+- SynCalc rating from Wade Ripdubski (InverseATASCII). AtariWiki fully admits that rating. Mike Silva has done a men's jpb. Shaft's score would be a 10 out of 10.<br>![](attachments/rating.png)
 Please also take a look at Wade's site: [SynCalc at InverseATASCII](http://inverseatascii.info/2016/02/23/s2e08-synapse-software-syncalc/) ; highly recommended!
 
 ## References
@@ -240,62 +234,42 @@ Please also take a look at Wade's site: [SynCalc at InverseATASCII](http://inver
 
 ## Images
 
-![](attachments/1Startscreen.gif)
-SynCalc startscreen ; thanks to Atarimania
+- SynCalc startscreen ; thanks to Atarimania<br>![](attachments/1Startscreen.gif)
 
-![](attachments/2Start.gif)
-SynCalc start of program ; thanks to Atarimania
+- SynCalc start of program ; thanks to Atarimania<br>![](attachments/2Start.gif)
 
-![](attachments/3popup.gif)
-SynCalc pop up window ; thanks to Atarimania
+- SynCalc pop up window ; thanks to Atarimania<br>![](attachments/3popup.gif)
 
-![](attachments/SynCalc_requires_48k_of_RAM.jpg)
-SynCalc requires 48k of RAM and all cartridges removed
+- SynCalc requires 48k of RAM and all cartridges removed<br>![](attachments/SynCalc_requires_48k_of_RAM.jpg)
 
-![](attachments/max.jpg)
-Maximum RAM in KB available for SynCalc regardless how many is installed
+- Maximum RAM in KB available for SynCalc regardless how many is installed<br>![](attachments/max.jpg)
 
-![](attachments/Synapse_Syncalc_with_128K.jpg)
-Synapse Syncalc with 128 KB RAM startscreen with 85 KB RAM free
+- Synapse Syncalc with 128 KB RAM startscreen with 85 KB RAM free<br>![](attachments/Synapse_Syncalc_with_128K.jpg)
 
-![](attachments/RAM-Vertelung_markiert.jpg)
-Synapse Syncalc with different machines and different free RAM
+- Synapse Syncalc with different machines and different free RAM<br>![](attachments/RAM-Vertelung_markiert.jpg)
 
-![](attachments/1983-1.jpg)
-SynCalc 1983 version-front of box ; thanks to Atarimania
+- SynCalc 1983 version-front of box ; thanks to Atarimania<br>![](attachments/1983-1.jpg)
 
-![](attachments/1983-2.jpg)
-SynCalc 1983 version-back of box ; thanks to Atarimania
+- SynCalc 1983 version-back of box ; thanks to Atarimania<br>![](attachments/1983-2.jpg)
 
-![](attachments/1983-3.jpg)
-SynCalc 1983 version-diskette ; thanks to Atarimania
+- SynCalc 1983 version-diskette ; thanks to Atarimania<br>![](attachments/1983-3.jpg)
 
-![](attachments/SynCalc_128K-1.jpg)
-SynCalc 1985 version-front of box
+- SynCalc 1985 version-front of box<br>![](attachments/SynCalc_128K-1.jpg)
 
-![](attachments/SynCalc_128K-2.jpg)
-SynCalc 1985 version-back of box
+- SynCalc 1985 version-back of box<br>![](attachments/SynCalc_128K-2.jpg)
 
-![](attachments/SynCalc_128K-3.jpg)
-SynCalc 1985 version-side of box
+- SynCalc 1985 version-side of box<br>![](attachments/SynCalc_128K-3.jpg)
 
-![](attachments/SynCalc-Templates_Disk-1.jpg)
-SynCalc Templates Diskette - image 1 ; thanks to Atarimania
+- SynCalc Templates Diskette - image 1 ; thanks to Atarimania<br>![](attachments/SynCalc-Templates_Disk-1.jpg)
 
-![](attachments/SynCalc-Templates_Disk-2.jpg)
-SynCalc Templates Diskette - image 2 ; thanks to Atarimania
+- SynCalc Templates Diskette - image 2 ; thanks to Atarimania<br>![](attachments/SynCalc-Templates_Disk-2.jpg)
 
-![](attachments/SynCalc-Templates_Disk-5.jpg)
-SynCalc Templates Diskette - image 3 ; thanks to RHOD
+- SynCalc Templates Diskette - image 3 ; thanks to RHOD<br>![](attachments/SynCalc-Templates_Disk-5.jpg)
 
-![](attachments/SynCalc-Templates_Disk-4.jpg)
-SynCalc Templates Diskette - ad 1
+- SynCalc Templates Diskette - ad 1<br>![](attachments/SynCalc-Templates_Disk-4.jpg)
 
-![](attachments/SynCalc-Templates_Disk-3.jpg)
-SynCalc Templates Diskette - ad 2
+- SynCalc Templates Diskette - ad 2<br>![](attachments/SynCalc-Templates_Disk-3.jpg)
 
-![](attachments/SynCalc-1985-Ad.jpg)
-SynCalc ad ; thanks to Atarimania
+- SynCalc ad ; thanks to Atarimania<br>![](attachments/SynCalc-1985-Ad.jpg)
 
-![](attachments/SynCalc_Ad.jpg)
-SynCalc ad from eBay
+- SynCalc ad from eBay<br>![](attachments/SynCalc_Ad.jpg)

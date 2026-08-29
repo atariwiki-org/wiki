@@ -62,8 +62,6 @@ Tracks (size in sum: 1.77 GB):
 
 ## Images
 
-![](attachments/suA_.jpg)
-Dorsett Atari Supervisory Practices - cassettes with uneven numbers
+- Dorsett Atari Supervisory Practices - cassettes with uneven numbers<br>![](attachments/suA_.jpg)
 
-![](attachments/suB_.jpg)
-Dorsett Atari Supervisory Practices - cassettes with even numbers
+- Dorsett Atari Supervisory Practices - cassettes with even numbers<br>![](attachments/suB_.jpg)

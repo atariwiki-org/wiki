@@ -165,16 +165,13 @@
 
 ## DEC-HEX bis 255
 
-![](attachments/DEC-HEX_255.jpg)
-DEC-HEX bis 255
+- DEC-HEX bis 255<br>![](attachments/DEC-HEX_255.jpg)
 
 ## Picture
 
-![](attachments/6502_Assembly_Code_in_Sublime_Text.jpg)
-6502 assembly code in Sublime Text 2 with 6502 language plug-ins. One of today's best options to program in 6502 assembly in combination with [MADS](http://mads.atari8.info/).
+- 6502 assembly code in Sublime Text 2 with 6502 language plug-ins. One of today's best options to program in 6502 assembly in combination with [MADS](http://mads.atari8.info/).<br>![](attachments/6502_Assembly_Code_in_Sublime_Text.jpg)
 
 ## Instruction Set (Operation Codes)
 
 ![](attachments/Instruction_Set_Operation_Codes-1.png)
-![](attachments/Instruction_Set_Operation_Codes-2.png)
-Instruction Set (Operation Codes)
+- Instruction Set (Operation Codes)<br>![](attachments/Instruction_Set_Operation_Codes-2.png)

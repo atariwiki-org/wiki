@@ -62,14 +62,10 @@ Tracks (size in sum: 1.33 GB):
 
 ## Images
 
-![](attachments/mnA_.jpg)
-Dorsett Atari Mathematics (Numbers) Working with Numbers MN - cassettes with uneven numbers
+- Dorsett Atari Mathematics (Numbers) Working with Numbers MN - cassettes with uneven numbers<br>![](attachments/mnA_.jpg)
 
-![](attachments/mnB_.jpg)
-Dorsett Atari Mathematics (Numbers) Working with Numbers MN - cassettes with even numbers
+- Dorsett Atari Mathematics (Numbers) Working with Numbers MN - cassettes with even numbers<br>![](attachments/mnB_.jpg)
 
-![](attachments/mnC_.jpg)
-Dorsett Atari Mathematics (Numbers) Working with Numbers MN - top view
+- Dorsett Atari Mathematics (Numbers) Working with Numbers MN - top view<br>![](attachments/mnC_.jpg)
 
-![](attachments/mnD_.jpg)
-Dorsett Atari Mathematics (Numbers) Working with Numbers MN - bottom view
+- Dorsett Atari Mathematics (Numbers) Working with Numbers MN - bottom view<br>![](attachments/mnD_.jpg)

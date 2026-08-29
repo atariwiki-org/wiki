@@ -15,20 +15,14 @@ Thanks to Wade Ripkowski of the InverseAtascii podcast for the manual and disk s
 
 ## Images
 
-![](attachments/Diskette.jpg)
-Home Inventory - Diskette
+- Home Inventory - Diskette<br>![](attachments/Diskette.jpg)
 
-![](attachments/APX_Home_Inventory_1.gif)
-Home Inventory - screenshot 1
+- Home Inventory - screenshot 1<br>![](attachments/APX_Home_Inventory_1.gif)
 
-![](attachments/APX_Home_Inventory_2.gif)
-Home Inventory - screenshot 2
+- Home Inventory - screenshot 2<br>![](attachments/APX_Home_Inventory_2.gif)
 
-![](attachments/APX_Home_Inventory_3.gif)
-Home Inventory - screenshot 3
+- Home Inventory - screenshot 3<br>![](attachments/APX_Home_Inventory_3.gif)
 
-![](attachments/APX_Home_Inventory_4.gif)
-Home Inventory - screenshot 4
+- Home Inventory - screenshot 4<br>![](attachments/APX_Home_Inventory_4.gif)
 
-![](attachments/APX_Home_Inventory_5.gif)
-Home Inventory - screenshot 5
+- Home Inventory - screenshot 5<br>![](attachments/APX_Home_Inventory_5.gif)

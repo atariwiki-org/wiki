@@ -6,8 +6,7 @@ This compilation contains 2 disks with The Home Filing Manager, The Pay-Off and 
 
 ## Cover
 
-![](attachments/Software_pack_disk.jpg)
-Software Pack cover
+- Software Pack cover<br>![](attachments/Software_pack_disk.jpg)
 
 ## ATX Images
 
@@ -22,18 +21,13 @@ Software Pack manual [software\_pack\_manual.pdf](attachments/software_pack_manu
 
 ## Media picture
 
-![](attachments/disk1.jpg)
-Software Pack disk 1
-![](attachments/disk2.jpg)
-Software Pack disk 2
+- Software Pack disk 1<br>![](attachments/disk1.jpg)
+- Software Pack disk 2<br>![](attachments/disk2.jpg)
 
 ## Screenshots
 
-![](attachments/software_pack_screenshot1.jpg)
-Software Pack - screenshot 1
+- Software Pack - screenshot 1<br>![](attachments/software_pack_screenshot1.jpg)
 
-![](attachments/software_pack_screenshot2.jpg)
-Software Pack - screenshot 2
+- Software Pack - screenshot 2<br>![](attachments/software_pack_screenshot2.jpg)
 
-![](attachments/software_pack_screenshot3.jpg)
-Software Pack - screenshot 3
+- Software Pack - screenshot 3<br>![](attachments/software_pack_screenshot3.jpg)

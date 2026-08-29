@@ -53,8 +53,7 @@ Ihr denkt, das war es jetzt? Weit gefehlt! Wir wären nicht der ABBUC, wenn wir 
 
 Der Algorithmus kann bzgl. der Präzision eingestellt werden. Hier habe ich 8 Stellen Genauigkeit eingerichtet, die in den meisten Fällen auch reichen. Wer nun mehr Ziffern verwenden möchte, sei auf die Arbeiten von Dieter Gretzschel (Old-Man-Tower) verwiesen. Bzgl. des dekadischen Logarithmus kann dazu folgendes Bild verwendet werden:
 
-![](attachments/Logarhitmus-Berechnung.png)
-Logarhitmus-Berechnung: Schritt für Schritt, Stelle um Stelle
+- Logarhitmus-Berechnung: Schritt für Schritt, Stelle um Stelle<br>![](attachments/Logarhitmus-Berechnung.png)
 
 was pro Iterationsschritt eine Stelle an Genauigkeit erzielt und somit beliebige Genauigkeit ermöglicht! Wieder einmal bewahrheitet sich: 8 Bit sind genug. ;-)
 

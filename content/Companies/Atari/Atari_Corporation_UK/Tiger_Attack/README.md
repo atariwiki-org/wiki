@@ -6,8 +6,7 @@ Tiger Attack is an shoot 'm up game developed by Arena Developments and released
 
 ## Cover
 
-![](attachments/Tiger_Attack_Cover_.jpg)
-Tiger Attack - cover
+- Tiger Attack - cover<br>![](attachments/Tiger_Attack_Cover_.jpg)
 
 ## CAS-Image
 
@@ -15,24 +14,18 @@ Side 1: [Tiger\_Attack\_TX9045.cas](attachments/Tiger_Attack_TX9045.cas)
 
 ## Manual
 
-![](attachments/Tiger_Attack_Manual2.jpg)
-Tiger Attack - manual side 1
+- Tiger Attack - manual side 1<br>![](attachments/Tiger_Attack_Manual2.jpg)
 
-![](attachments/Tiger_Attack_Manual3.jpg)
-Tiger Attack - manual side 2
+- Tiger Attack - manual side 2<br>![](attachments/Tiger_Attack_Manual3.jpg)
 
 ## Media pictures
 
-![](attachments/Tiger_Attack_tape.jpg)
-Tiger Attack - cassette
+- Tiger Attack - cassette<br>![](attachments/Tiger_Attack_tape.jpg)
 
 ## Screenshots
 
-![](attachments/tiger_sh1.jpg)
-Tiger Attack - screenshot 1
+- Tiger Attack - screenshot 1<br>![](attachments/tiger_sh1.jpg)
 
-![](attachments/tiger_sh2.jpg)
-Tiger Attack - screenshot 2
+- Tiger Attack - screenshot 2<br>![](attachments/tiger_sh2.jpg)
 
-![](attachments/tiger_sh3.jpg)
-Tiger Attack - screenshot 3
+- Tiger Attack - screenshot 3<br>![](attachments/tiger_sh3.jpg)

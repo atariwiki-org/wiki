@@ -23,11 +23,8 @@ Here are some visions for further developments:
 
 ## Images
 
-![](attachments/scram_k7.jpg)
-Box cover of SCRAM
+- Box cover of SCRAM<br>![](attachments/scram_k7.jpg)
 
-![](attachments/Scram_box.jpg)
-Box content of SCRAM
+- Box content of SCRAM<br>![](attachments/Scram_box.jpg)
 
-![](attachments/scram_2.gif)
-SCRAM running on the Atari
+- SCRAM running on the Atari<br>![](attachments/scram_2.gif)

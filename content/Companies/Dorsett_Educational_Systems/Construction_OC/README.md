@@ -62,8 +62,6 @@ Tracks (size in sum: 1.12 GB):
 
 ## Images
 
-![](attachments/ocA_.jpg)
-Dorsett Atari Construction - cassettes with uneven numbers
+- Dorsett Atari Construction - cassettes with uneven numbers<br>![](attachments/ocA_.jpg)
 
-![](attachments/ocB_.jpg)
-Dorsett Atari Construction - cassettes with even numbers
+- Dorsett Atari Construction - cassettes with even numbers<br>![](attachments/ocB_.jpg)

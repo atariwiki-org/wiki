@@ -2,8 +2,7 @@
 
 Copyright (C) 1982 by Atari.
 
-![](attachments/Atari_Pascal.jpg)
-Atari Pascal Version 1.0 (c) 1982 by Atari.
+- Atari Pascal Version 1.0 (c) 1982 by Atari.<br>![](attachments/Atari_Pascal.jpg)
 
 Atari Pascal is a program released by Atari in 1982. It was the first version of Pascal available for the Atari 8-bit computers.
 Because it was released through Atari Program Exchange, Atari Pascal was unsupported by Atari. It also required two disk drives.

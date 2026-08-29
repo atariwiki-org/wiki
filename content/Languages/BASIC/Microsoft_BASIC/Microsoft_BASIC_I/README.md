@@ -14,20 +14,15 @@ The disk-based version was later replaced by [Microsoft BASIC II (DX5046)](../Mi
 
 ## Pictures
 
-![](attachments/Atari_Microsoft_BASIC_I.jpg)
-Atari Microsoft BASIC box
+- Atari Microsoft BASIC box<br>![](attachments/Atari_Microsoft_BASIC_I.jpg)
 
-![](attachments/Atari_Microsoft_BASIC_I_Instruction_Manual.jpg)
-Atari Microsoft BASIC I Instruction Manual
+- Atari Microsoft BASIC I Instruction Manual<br>![](attachments/Atari_Microsoft_BASIC_I_Instruction_Manual.jpg)
 
-![](attachments/Atari_Microsoft_BASIC-CX8126_Disk_2.jpg)
-Atari Microsoft BASIC I Diskette CX8126 - image 1
+- Atari Microsoft BASIC I Diskette CX8126 - image 1<br>![](attachments/Atari_Microsoft_BASIC-CX8126_Disk_2.jpg)
 
-![](attachments/Atari_Microsoft_BASIC_I_Diskette_CX8126.jpg)
-Atari Microsoft BASIC I Diskette CX8126 - image 2
+- Atari Microsoft BASIC I Diskette CX8126 - image 2<br>![](attachments/Atari_Microsoft_BASIC_I_Diskette_CX8126.jpg)
 
-![](attachments/Atari_800_BASIC_V1.0_C_1981_Microsoft.jpg)
-Atari 800 Microsoft BASIC V1.0 start screen
+- Atari 800 Microsoft BASIC V1.0 start screen<br>![](attachments/Atari_800_BASIC_V1.0_C_1981_Microsoft.jpg)
 
 ## Manual
 
@@ -41,8 +36,7 @@ Atari 800 Microsoft BASIC V1.0 start screen
 
 ## Picture
 
-![](attachments/ATARI_Microsoft_BASIC_Cross-Reference_Utility.jpg)
-Atari Microsoft BASIC Cross-Reference Utility
+- Atari Microsoft BASIC Cross-Reference Utility<br>![](attachments/ATARI_Microsoft_BASIC_Cross-Reference_Utility.jpg)
 
 ## References
 

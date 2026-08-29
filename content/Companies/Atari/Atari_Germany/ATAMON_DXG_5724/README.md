@@ -19,23 +19,17 @@ ATAMON is a system monitor that shows the registers and the flags of the 6502 pr
 
 ## Pictures
 
-![](attachments/ATAMON_DXG_5724_1983.jpg)
-ATAMON DXG 5724 catalog ad ; Source: Atari ComputerSysteme - Software-Katalog (1983)
+- ATAMON DXG 5724 catalog ad ; Source: Atari ComputerSysteme - Software-Katalog (1983)<br>![](attachments/ATAMON_DXG_5724_1983.jpg)
 
-![](attachments/ATAMON_DXG_5724-Disk.jpg)
-ATAMON DXG 5724 Diskette ; thank you so much [ATARInside](https://www.atarinside.com/blog/index.php/atarinside-items/atamon/) for your great help to the German Atari community, we really appreciate your help very much!
+- ATAMON DXG 5724 Diskette ; thank you so much [ATARInside](https://www.atarinside.com/blog/index.php/atarinside-items/atamon/) for your great help to the German Atari community, we really appreciate your help very much!<br>![](attachments/ATAMON_DXG_5724-Disk.jpg)
 
-![](attachments/ATAMON_1.0.jpg)
-ATAMON DXG 5724 screenshot from version 1.0 from J. Rued
+- ATAMON DXG 5724 screenshot from version 1.0 from J. Rued<br>![](attachments/ATAMON_1.0.jpg)
 
-![](attachments/ATAMON_1.3.jpg)
-ATAMON DXG 5724 screenshot from version 1.3 from [ATARInside](https://www.atarinside.com/blog/index.php/atarinside-items/atamon/) ; thank you so much ATARInside for your great help to the German Atari community, we really appreciate your help very much!
+- ATAMON DXG 5724 screenshot from version 1.3 from [ATARInside](https://www.atarinside.com/blog/index.php/atarinside-items/atamon/) ; thank you so much ATARInside for your great help to the German Atari community, we really appreciate your help very much!<br>![](attachments/ATAMON_1.3.jpg)
 
-![](attachments/ATAMON_2000-2FFF.jpg)
-ATAMON DXG 5724 - loading from $2000 to $2FFF hex
+- ATAMON DXG 5724 - loading from $2000 to $2FFF hex<br>![](attachments/ATAMON_2000-2FFF.jpg)
 
-![](attachments/ATAMON_Data.jpg)
-ATAMON DXG 5724 - data found in the ATAMON file ; due to the lack of a manual still
+- ATAMON DXG 5724 - data found in the ATAMON file ; due to the lack of a manual still<br>![](attachments/ATAMON_Data.jpg)
 
 ## Thanks
 

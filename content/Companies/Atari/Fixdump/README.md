@@ -14,8 +14,6 @@ Fixdump 2.0SD aka Disk Fixer, Rev. 2.0 is a tool for repairing Atari diskettes
 
 ## Images
 
-![](attachments/Startscreen.jpg)
-Fixdump 2.0SD - Startscreen
+- Fixdump 2.0SD - Startscreen<br>![](attachments/Startscreen.jpg)
 
-![](attachments/APX-Info.jpg)
-Fixdump 2.0SD - APX info from file: DISKNAME.DAT via screen from DOS
+- Fixdump 2.0SD - APX info from file: DISKNAME.DAT via screen from DOS<br>![](attachments/APX-Info.jpg)

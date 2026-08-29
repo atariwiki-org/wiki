@@ -6,5 +6,4 @@
 
 ## Image
 
-![](attachments/Atari_Touch_Tablet_CX77.jpg)
-Atari Touch Tablet CX77
+- Atari Touch Tablet CX77<br>![](attachments/Atari_Touch_Tablet_CX77.jpg)

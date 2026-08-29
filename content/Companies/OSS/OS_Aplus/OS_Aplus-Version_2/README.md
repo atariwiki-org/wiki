@@ -74,5 +74,4 @@ Table: Structure of the VTOC Sector
 
 ## Picture
 
-![](attachments/OS_Aplus-Version_2-Disk.jpg)
-OS/A+ Version 2 diskette; thanks to Atarimania! :-)
+- OS/A+ Version 2 diskette; thanks to Atarimania! :-)<br>![](attachments/OS_Aplus-Version_2-Disk.jpg)

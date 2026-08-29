@@ -20,11 +20,8 @@ The Atari Telelink II cartridge was sold in the USA only. It is a very special c
 
 ## Images
 
-![](attachments/Telelink_II.jpg)
-ATARI TELELINK II cartridge
+- ATARI TELELINK II cartridge<br>![](attachments/Telelink_II.jpg)
 
-![](attachments/Telelink_II-1.jpg)
-ATARI TELELINK II startscreen with BIN-image
+- ATARI TELELINK II startscreen with BIN-image<br>![](attachments/Telelink_II-1.jpg)
 
-![](attachments/Telelink_II-2.jpg)
-ATARI TELELINK II startscreen with ROM-image
+- ATARI TELELINK II startscreen with ROM-image<br>![](attachments/Telelink_II-2.jpg)

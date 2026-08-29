@@ -15,20 +15,14 @@ Copyright (C) 1984 Atari Elektronik-Vertriebsgesellschaft mbH
 
 ## Bilder
 
-![](attachments/Start.jpg)
-Bundesligatabelle DXG-55005 - Startbildschirm
+- Bundesligatabelle DXG-55005 - Startbildschirm<br>![](attachments/Start.jpg)
 
-![](attachments/Bundesligatabelle.jpg)
-Bundesligatabelle von AXIS Komputerkunst - Startbildschirm
+- Bundesligatabelle von AXIS Komputerkunst - Startbildschirm<br>![](attachments/Bundesligatabelle.jpg)
 
-![](attachments/Bundesliga_Tabellen_a.jpg)
-Bundesligatabelle DXG-55005 - Box-Voderseite
+- Bundesligatabelle DXG-55005 - Box-Voderseite<br>![](attachments/Bundesliga_Tabellen_a.jpg)
 
-![](attachments/Bundesliga_Tabellen_b.jpg)
-Bundesligatabelle DXG-55005 - Box-Rückseite
+- Bundesligatabelle DXG-55005 - Box-Rückseite<br>![](attachments/Bundesliga_Tabellen_b.jpg)
 
-![](attachments/Diskette55005-1.jpg)
-Bundesligatabelle DXG-55005 - Diskette 55005-1
+- Bundesligatabelle DXG-55005 - Diskette 55005-1<br>![](attachments/Diskette55005-1.jpg)
 
-![](attachments/Diskette55005-2.jpg)
-Bundesligatabelle DXG-55005 - Diskette 55005-2
+- Bundesligatabelle DXG-55005 - Diskette 55005-2<br>![](attachments/Diskette55005-2.jpg)

@@ -40,12 +40,9 @@ Cassette 2, side 2: [Atari\_Grafieken\_cass2\_side2.cas](attachments/Atari_Grafi
 
 ## Cover
 
-![](attachments/Atari_Grafieken_cover.jpg)
-Atari Grafieken Cover
+- Atari Grafieken Cover<br>![](attachments/Atari_Grafieken_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Atari_Grafieken_cassette1.jpg)
-Atari Grafieken Cassette 1
-![](attachments/Atari_Grafieken_cassette2.jpg)
-Atari Grafieken Cassette 2
+- Atari Grafieken Cassette 1<br>![](attachments/Atari_Grafieken_cassette1.jpg)
+- Atari Grafieken Cassette 2<br>![](attachments/Atari_Grafieken_cassette2.jpg)

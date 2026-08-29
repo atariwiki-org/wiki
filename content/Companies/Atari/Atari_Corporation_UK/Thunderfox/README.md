@@ -6,8 +6,7 @@ Thunderfox is a shoot'em up game released by Atari Corp. UK on cassette tape in 
 
 ## Cover
 
-![](attachments/Thunderfox_cass.jpg)
-Thunderfox cover
+- Thunderfox cover<br>![](attachments/Thunderfox_cass.jpg)
 
 ## CAS Image
 
@@ -15,21 +14,16 @@ Side 1: [Thunderfox\_TX9041.cas](attachments/Thunderfox_TX9041.cas)
 
 ## Manual
 
-![](attachments/Thunderfox_instructions.jpg)
-Thunderfox manual
+- Thunderfox manual<br>![](attachments/Thunderfox_instructions.jpg)
 
 ## Media picture
 
-![](attachments/Thunderfox_tape.jpg)
-Thunderfox tape
+- Thunderfox tape<br>![](attachments/Thunderfox_tape.jpg)
 
 ## Screenshots
 
-![](attachments/thunderfox_screenshot1.jpg)
-Thunderfox - screenshot 1
+- Thunderfox - screenshot 1<br>![](attachments/thunderfox_screenshot1.jpg)
 
-![](attachments/thunderfox_screenshot2.jpg)
-Thunderfoxf - screenshot 2
+- Thunderfoxf - screenshot 2<br>![](attachments/thunderfox_screenshot2.jpg)
 
-![](attachments/thunderfox_screenshot3.jpg)
-Thunderfox - screenshot 3
+- Thunderfox - screenshot 3<br>![](attachments/thunderfox_screenshot3.jpg)

@@ -28,29 +28,20 @@ Mega-Dank and CharlieChaplin von AtariAge, der dieses Programm für die Communit
 
 ## Bilder
 
-![](attachments/Inhalt.jpg)
-Hypra-Soft-Basic - Inhalt einer Diskette
+- Hypra-Soft-Basic - Inhalt einer Diskette<br>![](attachments/Inhalt.jpg)
 
-![](attachments/Loading_Hypra-Soft-Basic_V1.0.jpg)
-Hypra-Soft-Basic - Erstes Bild beim Laden von Hypra-Soft-Basic
+- Hypra-Soft-Basic - Erstes Bild beim Laden von Hypra-Soft-Basic<br>![](attachments/Loading_Hypra-Soft-Basic_V1.0.jpg)
 
-![](attachments/Startbildschirm.jpg)
-Hypra-Soft-Basic - Startbildschirm
+- Hypra-Soft-Basic - Startbildschirm<br>![](attachments/Startbildschirm.jpg)
 
-![](attachments/DIR.jpg)
-Hypra-Soft-Basic - Disketteninhalt
+- Hypra-Soft-Basic - Disketteninhalt<br>![](attachments/DIR.jpg)
 
-![](attachments/Power-Root-Log.jpg)
-Hypra-Soft-Basic - Potenz - Wurzel - natürlicher Lo­g­a­rith­mus
+- Hypra-Soft-Basic - Potenz - Wurzel - natürlicher Lo­g­a­rith­mus<br>![](attachments/Power-Root-Log.jpg)
 
-![](attachments/SIN-LOG-ADD-COS.jpg)
-Hypra-Soft-Basic - SIN - LOG - Addition - COS
+- Hypra-Soft-Basic - SIN - LOG - Addition - COS<br>![](attachments/SIN-LOG-ADD-COS.jpg)
 
-![](attachments/CLOG.jpg)
-Hypra-Soft-Basic - dekadischer Lo­g­a­rith­mus zur Basis Zehn. Kann durch den natürlichen Lo­g­a­rith­mus folgendermaßen ersetzt werden: LOG(gesuchter Wert) / LOG(Basis). Hier wäre der Wert der Basis gleich 10.
+- Hypra-Soft-Basic - dekadischer Lo­g­a­rith­mus zur Basis Zehn. Kann durch den natürlichen Lo­g­a­rith­mus folgendermaßen ersetzt werden: LOG(gesuchter Wert) / LOG(Basis). Hier wäre der Wert der Basis gleich 10.<br>![](attachments/CLOG.jpg)
 
-![](attachments/TAN_in_DEG.jpg)
-Hypra-Soft-Basic - Tangens im DEG-Modus
+- Hypra-Soft-Basic - Tangens im DEG-Modus<br>![](attachments/TAN_in_DEG.jpg)
 
-![](attachments/TAN_in_RAD.jpg)
-Hypra-Soft-Basic - Tangens im RAD-Modus
+- Hypra-Soft-Basic - Tangens im RAD-Modus<br>![](attachments/TAN_in_RAD.jpg)

@@ -8,5 +8,4 @@ Copyright (C) 1982 Atari, Inc.
 
 ## Picture
 
-![](attachments/Atari_400-800_Stand_Alone_System_Test.jpg)
-Atari 400/800 Stand Alone System Test, Revision 2.05
+- Atari 400/800 Stand Alone System Test, Revision 2.05<br>![](attachments/Atari_400-800_Stand_Alone_System_Test.jpg)

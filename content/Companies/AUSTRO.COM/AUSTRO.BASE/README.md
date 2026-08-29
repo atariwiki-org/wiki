@@ -36,14 +36,10 @@ Nach aktuellen Stand konnte folgende Software aus dem Hause AUSTRO.COM ermittelt
 
 ## Bilder
 
-![](attachments/AUSTRO.BASE.png)
-AUSTRO.BASE - Startscreen von Version 1.50
+- AUSTRO.BASE - Startscreen von Version 1.50<br>![](attachments/AUSTRO.BASE.png)
 
-![](attachments/Cover.jpg)
-AUSTRO.BASE - Handbuch - Vorderseite - Vielen Dank an GBXL für das Scannen des Handbuches
+- AUSTRO.BASE - Handbuch - Vorderseite - Vielen Dank an GBXL für das Scannen des Handbuches<br>![](attachments/Cover.jpg)
 
-![](attachments/Back.jpg)
-AUSTRO.BASE - Handbuch - Rückseite - Vielen Dank an GBXL für das Scannen des Handbuches
+- AUSTRO.BASE - Handbuch - Rückseite - Vielen Dank an GBXL für das Scannen des Handbuches<br>![](attachments/Back.jpg)
 
-![](attachments/Side.jpg)
-AUSTRO.BASE - Handbuch - Seitenansicht - Vielen Dank an GBXL für das Scannen des Handbuches
+- AUSTRO.BASE - Handbuch - Seitenansicht - Vielen Dank an GBXL für das Scannen des Handbuches<br>![](attachments/Side.jpg)

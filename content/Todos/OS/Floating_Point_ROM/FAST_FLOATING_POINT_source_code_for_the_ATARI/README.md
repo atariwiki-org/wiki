@@ -8,8 +8,7 @@ Please don't misunderstand this work, it is 'just' fast or even up to 3.5 times 
 
 ## Picture
 
-![](attachments/Fastchip.jpg)
-Ad from Newell Industries from 1981:
+- Ad from Newell Industries from 1981:<br>![](attachments/Fastchip.jpg)
 
 ## ATR image
 

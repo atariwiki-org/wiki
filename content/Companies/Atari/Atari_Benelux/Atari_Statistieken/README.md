@@ -26,10 +26,8 @@ Side 2: [http://data.atariwiki.org/FLAC/Atari\_Statistieken\_side2.flac](http://
 
 ## Cover
 
-![](attachments/Atari_Statistieken_cover.jpg)
-Atari Statistieken Cover
+- Atari Statistieken Cover<br>![](attachments/Atari_Statistieken_cover.jpg)
 
 ## Media pictures
 
-![](attachments/Atari_Statistieken_cassette.jpg)
-Atari Statistieken Cassette
+- Atari Statistieken Cassette<br>![](attachments/Atari_Statistieken_cassette.jpg)

@@ -16,5 +16,4 @@ Siehe auch [Sprachbox XL/XE](../../../../Raetz_Eberle/Sprachbox-XL-XE/README.md)
 
 ## Bilder
 
-![](attachments/Sprachbox.jpg)
-Atari Sprachbox DXG5721 - Boxinhalt
+- Atari Sprachbox DXG5721 - Boxinhalt<br>![](attachments/Sprachbox.jpg)

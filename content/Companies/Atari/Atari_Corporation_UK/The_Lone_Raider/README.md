@@ -27,14 +27,10 @@ Release 1985: see cover picture
 
 ## Cover
 
-![](attachments/The_Lone_Raider_cover.jpg)
-The Lone Raider Cover 1983 release
-![](attachments/The_Lone_Raider_Atarisoft_cover.jpg)
-The Lone Raider Cover 1985 rerelease
+- The Lone Raider Cover 1983 release<br>![](attachments/The_Lone_Raider_cover.jpg)
+- The Lone Raider Cover 1985 rerelease<br>![](attachments/The_Lone_Raider_Atarisoft_cover.jpg)
 
 ## Media pictures
 
-![](attachments/The_Lone_Raider_cassette.jpg)
-Cassette of the 1983 release
-![](attachments/The_Lone_Raider_Atarisoft_cassette.jpg)
-Cassette of the 1985 rerelease
+- Cassette of the 1983 release<br>![](attachments/The_Lone_Raider_cassette.jpg)
+- Cassette of the 1985 rerelease<br>![](attachments/The_Lone_Raider_Atarisoft_cassette.jpg)

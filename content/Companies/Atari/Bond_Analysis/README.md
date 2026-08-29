@@ -26,147 +26,102 @@ As a final note, it is important that the investor understand exactly the data w
 
 ## Box
 
-![](attachments/Cover.jpg)
-Bond Analysis CX8106 - box cover - thank you Allan Bushman for the high quality scan
+- Bond Analysis CX8106 - box cover - thank you Allan Bushman for the high quality scan<br>![](attachments/Cover.jpg)
 
-![](attachments/Back.jpg)
-Bond Analysis CX8106 - box back - thank you Allan Bushman for the high quality scan
+- Bond Analysis CX8106 - box back - thank you Allan Bushman for the high quality scan<br>![](attachments/Back.jpg)
 
-![](attachments/Diskette.jpg)
-Bond Analysis CX8106 - Diskette - thank you Allan Bushman for the high quality scan
+- Bond Analysis CX8106 - Diskette - thank you Allan Bushman for the high quality scan<br>![](attachments/Diskette.jpg)
 
-![](attachments/Disc_Content.jpg)
-Bond Analysis CX8106 - Content
+- Bond Analysis CX8106 - Content<br>![](attachments/Disc_Content.jpg)
 
 ## Screenshots
 
-![](attachments/Loading.jpg)
-Bond Analysis CX8106 - Loading screen
+- Bond Analysis CX8106 - Loading screen<br>![](attachments/Loading.jpg)
 
-![](attachments/Startscreen.jpg)
-Bond Analysis CX8106 - Startscreen
+- Bond Analysis CX8106 - Startscreen<br>![](attachments/Startscreen.jpg)
 
 ## BOND YIELD INTRO
 
-![](attachments/BOND_YIELD_INTRO01.jpg)
-Bond Analysis CX8106 - BOND YIELD INTRO 01
+- Bond Analysis CX8106 - BOND YIELD INTRO 01<br>![](attachments/BOND_YIELD_INTRO01.jpg)
 
-![](attachments/BOND_YIELD_INTRO02.jpg)
-Bond Analysis CX8106 - BOND YIELD INTRO 02
+- Bond Analysis CX8106 - BOND YIELD INTRO 02<br>![](attachments/BOND_YIELD_INTRO02.jpg)
 
-![](attachments/BOND_YIELD_INTRO03.jpg)
-Bond Analysis CX8106 - BOND YIELD INTRO 03
+- Bond Analysis CX8106 - BOND YIELD INTRO 03<br>![](attachments/BOND_YIELD_INTRO03.jpg)
 
-![](attachments/BOND_YIELD_INTRO04.jpg)
-Bond Analysis CX8106 - BOND YIELD INTRO 04
+- Bond Analysis CX8106 - BOND YIELD INTRO 04<br>![](attachments/BOND_YIELD_INTRO04.jpg)
 
 ## BOND YIELD
 
-![](attachments/BOND_YIELD01.jpg)
-Bond Analysis CX8106 - BOND YIELD 01
+- Bond Analysis CX8106 - BOND YIELD 01<br>![](attachments/BOND_YIELD01.jpg)
 
-![](attachments/BOND_YIELD02.jpg)
-Bond Analysis CX8106 - BOND YIELD 02
+- Bond Analysis CX8106 - BOND YIELD 02<br>![](attachments/BOND_YIELD02.jpg)
 
-![](attachments/BOND_YIELD03.jpg)
-Bond Analysis CX8106 - BOND YIELD 03
+- Bond Analysis CX8106 - BOND YIELD 03<br>![](attachments/BOND_YIELD03.jpg)
 
-![](attachments/BOND_YIELD04.jpg)
-Bond Analysis CX8106 - BOND YIELD 04
+- Bond Analysis CX8106 - BOND YIELD 04<br>![](attachments/BOND_YIELD04.jpg)
 
-![](attachments/BOND_YIELD05.jpg)
-Bond Analysis CX8106 - BOND YIELD 05
+- Bond Analysis CX8106 - BOND YIELD 05<br>![](attachments/BOND_YIELD05.jpg)
 
-![](attachments/BOND_YIELD10.jpg)
-Bond Analysis CX8106 - BOND YIELD 06
+- Bond Analysis CX8106 - BOND YIELD 06<br>![](attachments/BOND_YIELD10.jpg)
 
-![](attachments/BOND_YIELD11.jpg)
-Bond Analysis CX8106 - BOND YIELD 07
+- Bond Analysis CX8106 - BOND YIELD 07<br>![](attachments/BOND_YIELD11.jpg)
 
-![](attachments/BOND_YIELD12.jpg)
-Bond Analysis CX8106 - BOND YIELD 08
+- Bond Analysis CX8106 - BOND YIELD 08<br>![](attachments/BOND_YIELD12.jpg)
 
-![](attachments/BOND_YIELD13.jpg)
-Bond Analysis CX8106 - BOND YIELD 09
+- Bond Analysis CX8106 - BOND YIELD 09<br>![](attachments/BOND_YIELD13.jpg)
 
-![](attachments/BOND_YIELD14.jpg)
-Bond Analysis CX8106 - BOND YIELD 10
+- Bond Analysis CX8106 - BOND YIELD 10<br>![](attachments/BOND_YIELD14.jpg)
 
-![](attachments/BOND_YIELD15.jpg)
-Bond Analysis CX8106 - BOND YIELD 11
+- Bond Analysis CX8106 - BOND YIELD 11<br>![](attachments/BOND_YIELD15.jpg)
 
-![](attachments/BOND_YIELD16.jpg)
-Bond Analysis CX8106 - BOND YIELD 12
+- Bond Analysis CX8106 - BOND YIELD 12<br>![](attachments/BOND_YIELD16.jpg)
 
-![](attachments/BOND_YIELD17.jpg)
-Bond Analysis CX8106 - BOND YIELD 13
+- Bond Analysis CX8106 - BOND YIELD 13<br>![](attachments/BOND_YIELD17.jpg)
 
-![](attachments/BOND_YIELD18.jpg)
-Bond Analysis CX8106 - BOND YIELD 14
+- Bond Analysis CX8106 - BOND YIELD 14<br>![](attachments/BOND_YIELD18.jpg)
 
 ## BOND PRICE AND INTEREST INTRO
 
-![](attachments/BOND_PRICE_AND_INTEREST_INTRO01.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 01
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 01<br>![](attachments/BOND_PRICE_AND_INTEREST_INTRO01.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST_INTRO02.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 02
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 02<br>![](attachments/BOND_PRICE_AND_INTEREST_INTRO02.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST_INTRO03.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 03
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 03<br>![](attachments/BOND_PRICE_AND_INTEREST_INTRO03.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST_INTRO04.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 04
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 04<br>![](attachments/BOND_PRICE_AND_INTEREST_INTRO04.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST_INTRO05.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 05
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 05<br>![](attachments/BOND_PRICE_AND_INTEREST_INTRO05.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST_INTRO06.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 06
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST INTRO 06<br>![](attachments/BOND_PRICE_AND_INTEREST_INTRO06.jpg)
 
 ## BOND PRICE AND INTEREST
 
-![](attachments/BOND_PRICE_AND_INTEREST01.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 01
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 01<br>![](attachments/BOND_PRICE_AND_INTEREST01.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST02.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 02
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 02<br>![](attachments/BOND_PRICE_AND_INTEREST02.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST03.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 03
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 03<br>![](attachments/BOND_PRICE_AND_INTEREST03.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST04.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 04
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 04<br>![](attachments/BOND_PRICE_AND_INTEREST04.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST05.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 05
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 05<br>![](attachments/BOND_PRICE_AND_INTEREST05.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST06.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 06
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 06<br>![](attachments/BOND_PRICE_AND_INTEREST06.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST07.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 07
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 07<br>![](attachments/BOND_PRICE_AND_INTEREST07.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST08.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 08
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 08<br>![](attachments/BOND_PRICE_AND_INTEREST08.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST09.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 09
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 09<br>![](attachments/BOND_PRICE_AND_INTEREST09.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST10.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 10
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 10<br>![](attachments/BOND_PRICE_AND_INTEREST10.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST11.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 11
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 11<br>![](attachments/BOND_PRICE_AND_INTEREST11.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST12.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 12
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 12<br>![](attachments/BOND_PRICE_AND_INTEREST12.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST13.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 13
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 13<br>![](attachments/BOND_PRICE_AND_INTEREST13.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST14.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 14
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 14<br>![](attachments/BOND_PRICE_AND_INTEREST14.jpg)
 
-![](attachments/BOND_PRICE_AND_INTEREST15.jpg)
-Bond Analysis CX8106 - BOND PRICE AND INTEREST 15
+- Bond Analysis CX8106 - BOND PRICE AND INTEREST 15<br>![](attachments/BOND_PRICE_AND_INTEREST15.jpg)

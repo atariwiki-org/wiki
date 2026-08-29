@@ -18,17 +18,12 @@ Diese deutsche Lernsoftware scheint verloren in der Zeit. Jeder Hinweis auf sie,
 
 ## Bilder
 
-![](attachments/Himmel_Schreiber_Cover.jpg)
-Box-Cover der deutschen Himmel Schreiber-Version
+- Box-Cover der deutschen Himmel Schreiber-Version<br>![](attachments/Himmel_Schreiber_Cover.jpg)
 
-![](attachments/Himmel_Schreiber_Beschreibung.jpg)
-Beschreibung der deutschen Himmel Schreiber-Version
+- Beschreibung der deutschen Himmel Schreiber-Version<br>![](attachments/Himmel_Schreiber_Beschreibung.jpg)
 
-![](attachments/sky_writer_cart.jpg)
-Box-Cover der englischen Version von Himmel Schreiber unter dem Namen: Sky Writer ; vielen lieben Dank an Atarimania
+- Box-Cover der englischen Version von Himmel Schreiber unter dem Namen: Sky Writer ; vielen lieben Dank an Atarimania<br>![](attachments/sky_writer_cart.jpg)
 
-![](attachments/sky_writer.gif)
-Bildschirmfoto 1 der englischen Version Sky Writer
+- Bildschirmfoto 1 der englischen Version Sky Writer<br>![](attachments/sky_writer.gif)
 
-![](attachments/sky_writer_2.gif)
-Bildschirmfoto 2 der englischen Version Sky Writer
+- Bildschirmfoto 2 der englischen Version Sky Writer<br>![](attachments/sky_writer_2.gif)

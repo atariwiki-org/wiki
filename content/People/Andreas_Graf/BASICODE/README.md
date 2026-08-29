@@ -43,8 +43,7 @@ Diese kann dann mit Goto 15 angesprungen werden und stört den weiteren BASICODE
 
 ## Images
 
-![](attachments/screen.jpg)
-ATARI-BASICODE startscreen
+- ATARI-BASICODE startscreen<br>![](attachments/screen.jpg)
 
 ## In BASICODE gültige Befehle
 

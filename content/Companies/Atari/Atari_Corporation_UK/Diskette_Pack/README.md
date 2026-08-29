@@ -6,8 +6,7 @@ This compilation contains 2 disks with The Home Filing Manager, The Pay-Off and 
 
 ## Cover
 
-![](attachments/diskette_pack.jpg)
-Diskette Pack cover
+- Diskette Pack cover<br>![](attachments/diskette_pack.jpg)
 
 ## Images
 
@@ -21,18 +20,13 @@ Diskette Pack manual [diskette\_pack\_manual.pdf](attachments/diskette_pack_manu
 
 ## Media picture
 
-![](attachments/Diskette_Pack_disk1.jpg)
-Diskette Pack disk 1
-![](attachments/Diskette_Pack_disk2.jpg)
-Diskette Pack disk 2
+- Diskette Pack disk 1<br>![](attachments/Diskette_Pack_disk1.jpg)
+- Diskette Pack disk 2<br>![](attachments/Diskette_Pack_disk2.jpg)
 
 ## Screenshots
 
-![](attachments/diskette_pack_screenshot1.jpg)
-Diskette Pack - screenshot 1
+- Diskette Pack - screenshot 1<br>![](attachments/diskette_pack_screenshot1.jpg)
 
-![](attachments/diskette_pack_screenshot2.jpg)
-Diskette Pack - screenshot 2
+- Diskette Pack - screenshot 2<br>![](attachments/diskette_pack_screenshot2.jpg)
 
-![](attachments/diskette_pack_screenshot3.jpg)
-Diskette Pack - screenshot 3
+- Diskette Pack - screenshot 3<br>![](attachments/diskette_pack_screenshot3.jpg)

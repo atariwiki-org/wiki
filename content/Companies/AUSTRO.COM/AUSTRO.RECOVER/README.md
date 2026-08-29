@@ -38,17 +38,12 @@ Da wir leider von AUSTRO.RECOVER keine originale Diskette haben, sondern ledigli
 
 ## Bilder
 
-![](attachments/Austro_Recover1.jpg)
-AUSTRO.RECOVER 1.00 - Hauptmenu
+- AUSTRO.RECOVER 1.00 - Hauptmenu<br>![](attachments/Austro_Recover1.jpg)
 
-![](attachments/Austro_Recover2.jpg)
-AUSTRO.RECOVER 1.00 - Hilfsmenu
+- AUSTRO.RECOVER 1.00 - Hilfsmenu<br>![](attachments/Austro_Recover2.jpg)
 
-![](attachments/Austro_Recover3.jpg)
-AUSTRO.RECOVER 1.00 - Start des Hauptprogramms
+- AUSTRO.RECOVER 1.00 - Start des Hauptprogramms<br>![](attachments/Austro_Recover3.jpg)
 
-![](attachments/AUSTRO.RECOVER_DIR.jpg)
-AUSTRO.RECOVER 1.00 - Inhaltsverzeichnis
+- AUSTRO.RECOVER 1.00 - Inhaltsverzeichnis<br>![](attachments/AUSTRO.RECOVER_DIR.jpg)
 
-![](attachments/AUTOEXE.BAT-Recover.jpg)
-AUSTRO.RECOVER 1.00 - Inhalt der AUTOEXEC.BAT-Datei
+- AUSTRO.RECOVER 1.00 - Inhalt der AUTOEXEC.BAT-Datei<br>![](attachments/AUTOEXE.BAT-Recover.jpg)

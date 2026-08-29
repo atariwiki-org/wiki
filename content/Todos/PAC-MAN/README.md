@@ -32,44 +32,30 @@ Sometimes wonders just happen, this can't be more true, than for the source code
 
 ## Screenshots
 
-![](attachments/Datasoft.jpg)
-Datasoft, Inc. info for PAC-MAN with included sequencies
+- Datasoft, Inc. info for PAC-MAN with included sequencies<br>![](attachments/Datasoft.jpg)
 
-![](attachments/Opening.jpg)
-Opening for PAC-MAN with included sequencies
+- Opening for PAC-MAN with included sequencies<br>![](attachments/Opening.jpg)
 
-![](attachments/Bonus.jpg)
-Bonus from PAC-MAN with included sequencies
+- Bonus from PAC-MAN with included sequencies<br>![](attachments/Bonus.jpg)
 
-![](attachments/Characters1.jpg)
-Characters 1 from PAC-MAN with included sequencies
+- Characters 1 from PAC-MAN with included sequencies<br>![](attachments/Characters1.jpg)
 
-![](attachments/Characters2.jpg)
-Characters 2 from PAC-MAN with included sequencies
+- Characters 2 from PAC-MAN with included sequencies<br>![](attachments/Characters2.jpg)
 
-![](attachments/Characters3.jpg)
-Characters 3 from PAC-MAN with included sequencies
+- Characters 3 from PAC-MAN with included sequencies<br>![](attachments/Characters3.jpg)
 
-![](attachments/Screen1.jpg)
-Screenshot 1 from PAC-MAN with included sequencies
+- Screenshot 1 from PAC-MAN with included sequencies<br>![](attachments/Screen1.jpg)
 
-![](attachments/Screen2.jpg)
-Screenshot 2 from PAC-MAN with included sequencies
+- Screenshot 2 from PAC-MAN with included sequencies<br>![](attachments/Screen2.jpg)
 
-![](attachments/Screen3.jpg)
-Screenshot 3 from PAC-MAN with included sequencies
+- Screenshot 3 from PAC-MAN with included sequencies<br>![](attachments/Screen3.jpg)
 
-![](attachments/Screen4.jpg)
-Screenshot 4 from PAC-MAN with included sequencies
+- Screenshot 4 from PAC-MAN with included sequencies<br>![](attachments/Screen4.jpg)
 
-![](attachments/Screen5.jpg)
-Screenshot 5 from PAC-MAN with included sequencies
+- Screenshot 5 from PAC-MAN with included sequencies<br>![](attachments/Screen5.jpg)
 
-![](attachments/Screen6.jpg)
-Screenshot 6 from PAC-MAN with included sequencies
+- Screenshot 6 from PAC-MAN with included sequencies<br>![](attachments/Screen6.jpg)
 
-![](attachments/Screen7.jpg)
-Screenshot 7 from PAC-MAN with included sequencies
+- Screenshot 7 from PAC-MAN with included sequencies<br>![](attachments/Screen7.jpg)
 
-![](attachments/Screen8.jpg)
-Screenshot 8 from PAC-MAN with included sequencies
+- Screenshot 8 from PAC-MAN with included sequencies<br>![](attachments/Screen8.jpg)

@@ -12,17 +12,12 @@ Copyright (C) 1987 Keith Ledbetter and Atari Corp. with portions from OSS and AC
 
 ## Images
 
-![](attachments/sx_express_d7.jpg)
-Atari SX212 Modem - box cover - thanks to Atarimania
+- Atari SX212 Modem - box cover - thanks to Atarimania<br>![](attachments/sx_express_d7.jpg)
 
-![](attachments/sx_express_d7_2.jpg)
-Atari SX212 Modem - box back - thanks to Atarimania
+- Atari SX212 Modem - box back - thanks to Atarimania<br>![](attachments/sx_express_d7_2.jpg)
 
-![](attachments/sx_express.gif)
-Atari SX212 Modem - screenshot 1 - thanks to Atarimania
+- Atari SX212 Modem - screenshot 1 - thanks to Atarimania<br>![](attachments/sx_express.gif)
 
-![](attachments/sx_express_3.gif)
-Atari SX212 Modem - screenshot 2 - thanks to Atarimania
+- Atari SX212 Modem - screenshot 2 - thanks to Atarimania<br>![](attachments/sx_express_3.gif)
 
-![](attachments/sx_express_2.gif)
-Atari SX212 Modem - screenshot 3 - thanks to Atarimania
+- Atari SX212 Modem - screenshot 3 - thanks to Atarimania<br>![](attachments/sx_express_2.gif)

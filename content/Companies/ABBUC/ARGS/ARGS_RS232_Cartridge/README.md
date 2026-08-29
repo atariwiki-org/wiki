@@ -29,8 +29,7 @@ Bauteile
 
 ## Bauplanbeschreibung und Bedienung
 
-![](attachments/ARGSRS232.png)
-Bauplan in voller Größe in den Anhängen!
+- Bauplan in voller Größe in den Anhängen!<br>![](attachments/ARGSRS232.png)
 
 Die Schaltung lehnt sich teilweise an das RS232-Interface des
 Atari-Magazins an (Atari Magazin 12/88). Dort sind auch weitere

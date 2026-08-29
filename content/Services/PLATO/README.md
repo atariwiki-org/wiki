@@ -90,65 +90,45 @@ Port: 8005 (ASCII Protocol)
 
 ## Pictures
 
-![](attachments/PlatoTerm-Box.jpg)
-PlatoTerm box 1 created by Steve "Mr. Robot" Boswell. Incredible work, Steve; your art is outstanding and stands by excellent. Please go ahead; we really love your work!
+- PlatoTerm box 1 created by Steve "Mr. Robot" Boswell. Incredible work, Steve; your art is outstanding and stands by excellent. Please go ahead; we really love your work!<br>![](attachments/PlatoTerm-Box.jpg)
 
-![](attachments/PLATOTERM_Box_Cover.png)
-PlatoTerm box 2 created by Steve "Mr. Robot" Boswell. Incredible work, Steve; your art is outstanding and stands by excellent. Please go ahead; we really love your work!
+- PlatoTerm box 2 created by Steve "Mr. Robot" Boswell. Incredible work, Steve; your art is outstanding and stands by excellent. Please go ahead; we really love your work!<br>![](attachments/PLATOTERM_Box_Cover.png)
 
-![](attachments/Cart_Label.jpg)
-PLATO cartridge label created by Steve "Mr. Robot" Boswell. Incredible work, Steve; your art is outstanding and stands by excellent. Please go ahead, we really love your work!
+- PLATO cartridge label created by Steve "Mr. Robot" Boswell. Incredible work, Steve; your art is outstanding and stands by excellent. Please go ahead, we really love your work!<br>![](attachments/Cart_Label.jpg)
 
-![](attachments/Plato_Educational_Courseware_Control_Data_1983_ad.jpg)
-PLATO Educational Courseware ad from Control Data from 1983
+- PLATO Educational Courseware ad from Control Data from 1983<br>![](attachments/Plato_Educational_Courseware_Control_Data_1983_ad.jpg)
 
-![](attachments/Screenshot-Thom1.jpg)
-PLATO terminal emulation of different computers running in parallel on just one computer
+- PLATO terminal emulation of different computers running in parallel on just one computer<br>![](attachments/Screenshot-Thom1.jpg)
 
-![](attachments/Terminal.jpg)
-PLATO terminal emulation on original Atari hardware connected to Cyber1
+- PLATO terminal emulation on original Atari hardware connected to Cyber1<br>![](attachments/Terminal.jpg)
 
-![](attachments/wi232-6.jpg)
-Adapter for the Atari 850 interface needed to run PLATO on original Atari hardware with connection to modern routers
+- Adapter for the Atari 850 interface needed to run PLATO on original Atari hardware with connection to modern routers<br>![](attachments/wi232-6.jpg)
 
-![](attachments/Befehle.png)
-PLATO terminal commands
+- PLATO terminal commands<br>![](attachments/Befehle.png)
 
-![](attachments/Cyber_1.png)
-PLATO terminal connected to Cyber1
+- PLATO terminal connected to Cyber1<br>![](attachments/Cyber_1.png)
 
-![](attachments/Berzerk.png)
-Game Berzerk on a PLATO terminal
+- Game Berzerk on a PLATO terminal<br>![](attachments/Berzerk.png)
 
-![](attachments/Cyberserv.org-Command_Mode.png)
-Cyberserv.org - Command Mode
+- Cyberserv.org - Command Mode<br>![](attachments/Cyberserv.org-Command_Mode.png)
 
-![](attachments/FORTRAN_via_PLATO.png)
-Introduction to FORTRAN arithmetic on PLATO
+- Introduction to FORTRAN arithmetic on PLATO<br>![](attachments/FORTRAN_via_PLATO.png)
 
-![](attachments/Games.png)
-Games on PLATO
+- Games on PLATO<br>![](attachments/Games.png)
 
-![](attachments/Grafiken.png)
-Graphics on PLATO
+- Graphics on PLATO<br>![](attachments/Grafiken.png)
 
-![](attachments/IRATA.ONLINE-Main_Menu-Atari.png)
-IRATA.ONLINE - Main Menu with Atari logo
+- IRATA.ONLINE - Main Menu with Atari logo<br>![](attachments/IRATA.ONLINE-Main_Menu-Atari.png)
 
-![](attachments/IRATA.ONLINE.png)
-IRATA.ONLINE - established a successful connection
+- IRATA.ONLINE - established a successful connection<br>![](attachments/IRATA.ONLINE.png)
 
-![](attachments/Schiffe_versenken_2.png)
-Battleships on PLATO
+- Battleships on PLATO<br>![](attachments/Schiffe_versenken_2.png)
 
-![](attachments/Spiele-Checkers.png)
-Checkers on PLATO
+- Checkers on PLATO<br>![](attachments/Spiele-Checkers.png)
 
-![](attachments/Text.png)
-Normal text on PLATO
+- Normal text on PLATO<br>![](attachments/Text.png)
 
-![](attachments/Tutor.png)
-Example for the Tutor language to create sites for PLATO
+- Example for the Tutor language to create sites for PLATO<br>![](attachments/Tutor.png)
 
 /%
 

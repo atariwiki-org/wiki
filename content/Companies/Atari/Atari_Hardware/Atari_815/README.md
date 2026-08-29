@@ -15,8 +15,7 @@
 
 ![](attachments/815-2.jpg)
 
-![](attachments/815-info_1981.jpg)
-Atari Personal Computer-Product Catalog 1981, page 20
+- Atari Personal Computer-Product Catalog 1981, page 20<br>![](attachments/815-info_1981.jpg)
 
 ![](attachments/815-3.jpg)
 
@@ -28,5 +27,4 @@ Atari Personal Computer-Product Catalog 1981, page 20
 
 ![](attachments/Atari815-3.JPG)
 
-![](attachments/ebay-815er.jpg)
-Atari 815 - ebay 2017
+- Atari 815 - ebay 2017<br>![](attachments/ebay-815er.jpg)
